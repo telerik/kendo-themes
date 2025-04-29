@@ -261,10 +261,10 @@ The following table lists the available variables for customization.
     <td>Map</td>
     <td><code>(
     "base": $kendo-chip-base-bg,
-    "error": map.get( $kendo-theme-colors, "error" ),
-    "info": map.get( $kendo-theme-colors, "info" ),
-    "warning": map.get( $kendo-theme-colors, "warning" ),
-    "success": map.get( $kendo-theme-colors, "success" )
+    "error": k-color(error),
+    "info": k-color(info),
+    "warning": k-color(warning),
+    "success": k-color(success)
 )</code></td>
     <td><ul><li>base: var(--kendo-color-base, #dee2e6)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>success: var(--kendo-color-success, #198754)</li></ul></td>
 </tr>
@@ -385,7 +385,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -395,7 +395,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-on-surface ), $kendo-chip-solid-text)</code></td>
+    <td><code>k-color(base-on-surface)</code></td>
     <td><code>var(--kendo-color-base-on-surface, #212529)</code></td>
 </tr>
 <tr>
@@ -435,7 +435,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-contrast-legacy( $kendo-chip-outline-hover-bg ))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
 </tr>
 <tr>

@@ -80,8 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial)</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Calendar.</div></div>
@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial)</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Calendar.</div></div>
@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial)</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Calendar.</div></div>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-header-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-header-text</td>
     <td>String</td>
     <td><code>$kendo-calendar-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the calendar header.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-header-border</td>
     <td>String</td>
     <td><code>$kendo-calendar-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the calendar header.</div></div>
@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-caption-color</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -460,7 +460,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-today-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -470,7 +470,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-today-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -480,7 +480,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-today-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -490,7 +490,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-today-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-120 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -520,8 +520,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-week-number-text</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td><code>var(--kendo-subtle-text, inherit)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the calendar week number cell.</div></div>
@@ -540,8 +540,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-other-month-text</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-text, inherit )</code></td>
-    <td><code>var(--kendo-disabled-text, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the other months calendar cells.</div></div>
@@ -570,8 +570,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the calendar cells when hovered.</div></div>
@@ -580,8 +580,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-text, inherit )</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the calendar cells when hovered.</div></div>
@@ -590,8 +590,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-selected-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-bg, inherit )</code></td>
-    <td><code>var(--kendo-selected-bg, inherit)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected calendar cell.</div></div>
@@ -600,8 +600,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-selected-text</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-text, inherit )</code></td>
-    <td><code>var(--kendo-selected-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected calendar cell.</div></div>
@@ -610,8 +610,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-selected-border</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-border, inherit )</code></td>
-    <td><code>var(--kendo-selected-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border-alt) 76%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border-alt, #323130) 76%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected calendar cell.</div></div>
@@ -621,7 +621,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-selected-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-calendar-cell-selected-border</code></td>
-    <td><code>(inset 0 0 0 1px var(--kendo-selected-border, inherit))</code></td>
+    <td><code>(inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-border-alt, #323130) 76%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected calendar cell.</div></div>
@@ -630,8 +630,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-selected-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-selected-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-subtle-active)</code></td>
+    <td><code>var(--kendo-color-base-subtle-active, #d2d0ce)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected calendar cell when hovered.</div></div>
@@ -640,8 +640,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-selected-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-hover-text, inherit )</code></td>
-    <td><code>var(--kendo-selected-hover-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected calendar cell when hovered.</div></div>
@@ -650,7 +650,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
+    <td><code>inset 0 0 0 1px k-color(base-emphasis)</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -690,7 +690,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-navigation-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -701,7 +701,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-navigation-text</td>
     <td>String</td>
     <td><code>$kendo-calendar-header-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the navigation in the infinite Calendar.</div></div>
@@ -711,7 +711,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-navigation-border</td>
     <td>String</td>
     <td><code>$kendo-calendar-header-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the navigation in the infinite Calendar.</div></div>
@@ -720,7 +720,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-navigation-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-link-hover-text</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -780,7 +780,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-range-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
@@ -800,7 +800,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-range-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
@@ -810,7 +810,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-start-range-hover-shadow</td>
     <td>List</td>
-    <td><code>inset 1px -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset 0 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>inset 1px -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis)</code></td>
     <td><code>(inset 1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -820,7 +820,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-mid-range-hover-shadow</td>
     <td>List</td>
-    <td><code>inset 0 -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset 0 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>inset 0 -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis)</code></td>
     <td><code>(inset 0 -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -830,7 +830,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-end-range-hover-shadow</td>
     <td>List</td>
-    <td><code>inset -1px -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset 0 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>inset -1px -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis)</code></td>
     <td><code>(inset -1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -840,7 +840,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-start-end-range-hover-shadow</td>
     <td>List</td>
-    <td><code>inset 1px -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset -1px 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>inset 1px -1px 0 0 k-color(base-emphasis), inset -1px 1px 0 0 k-color(base-emphasis)</code></td>
     <td><code>(inset 1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset -1px 1px 0 0 var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>

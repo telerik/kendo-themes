@@ -335,7 +335,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>
@@ -355,7 +355,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-hover-bg</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #dddddd)</code></td>
 </tr>
 <tr>
@@ -365,7 +365,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-hover-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>
@@ -375,7 +375,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-hover-border</td>
     <td>String</td>
-    <td><code>$kendo-hover-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
@@ -385,7 +385,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-hover-gradient</td>
     <td>Null</td>
-    <td><code>$kendo-hover-gradient</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -395,7 +395,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
@@ -405,7 +405,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-selected-text</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -415,7 +415,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-selected-border</td>
     <td>String</td>
-    <td><code>$kendo-selected-border</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
@@ -425,7 +425,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-selected-gradient</td>
     <td>Null</td>
-    <td><code>$kendo-selected-gradient</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -455,7 +455,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-loadmore-text</td>
     <td>String</td>
-    <td><code>$kendo-link-text</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
@@ -485,7 +485,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-loadmore-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-link-hover-text</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #e05100)</code></td>
 </tr>
 <tr>
@@ -515,7 +515,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-loadmore-focus-text</td>
     <td>String</td>
-    <td><code>$kendo-link-hover-text</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #e05100)</code></td>
 </tr>
 <tr>

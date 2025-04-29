@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-tile-focus-outline</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-tile-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>inset 0 0 0 2px k-color(app-surface)</code></td>
     <td><code>(inset 0 0 0 2px var(--kendo-color-app-surface, #ffffff))</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-tile-hover-outline</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 10%, transparent), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 10%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent)</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-tile-hover-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px $kendo-color-palette-tile-hover-outline, inset 0 0 0 4px if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>inset 0 0 0 2px $kendo-color-palette-tile-hover-outline, inset 0 0 0 4px k-color(app-surface)</code></td>
     <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent), inset 0 0 0 4px var(--kendo-color-app-surface, #ffffff))</code></td>
 </tr>
 <tr>

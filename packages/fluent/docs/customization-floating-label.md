@@ -190,8 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-invalid-text</td>
     <td>String</td>
-    <td><code>var( --kendo-invalid-text, #{$kendo-invalid-text} )</code></td>
-    <td><code>var(--kendo-invalid-text, var(--kendo-color-error-on-surface, #a4262c))</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>var(--kendo-color-error-on-surface, #a4262c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The invalid text color of the Floating Label.</div></div>

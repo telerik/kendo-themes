@@ -187,7 +187,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-tooltip-brand-colors</td>
     <td>Map</td>
     <td><code>(
-    secondary: if($kendo-enable-color-system, secondary, neutral),
+    secondary: secondary,
     tertiary: tertiary,
     success: success,
     warning: warning,
@@ -493,8 +493,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the action sheet.</div></div>
@@ -503,8 +503,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the action sheet.</div></div>
@@ -513,8 +513,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the action sheet.</div></div>
@@ -623,8 +623,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-header-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the action sheet header.</div></div>
@@ -663,8 +663,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-subtitle-text</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td><code>var(--kendo-subtle-text, inherit)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the action sheet subtitle.</div></div>
@@ -703,8 +703,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-footer-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the action sheet footer.</div></div>
@@ -773,7 +773,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-item-icon-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-110 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -813,8 +813,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-item-description-text</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td><code>var(--kendo-subtle-text, inherit)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the action sheet item description.</div></div>
@@ -823,8 +823,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-item-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover background color of the action sheet item.</div></div>
@@ -833,8 +833,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-item-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-text, inherit )</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover text color of the action sheet item.</div></div>
@@ -904,7 +904,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-actionsheet-item-focus-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-actionsheet-item-hover-bg</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus and hover background color of the action sheet item.</div></div>
@@ -914,7 +914,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-actionsheet-item-focus-hover-text</td>
     <td>String</td>
     <td><code>$kendo-actionsheet-item-hover-text</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus and hover text color of the action sheet item.</div></div>
@@ -934,7 +934,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-actionsheet-item-disabled-bg</td>
     <td>String</td>
     <td><code>$kendo-actionsheet-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Disabled background color of the action sheet item.</div></div>
@@ -943,8 +943,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-item-disabled-text</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-text, inherit )</code></td>
-    <td><code>var(--kendo-disabled-text, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Disabled text color of the action sheet item.</div></div>
@@ -952,9 +952,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-actionsheet-item-disabled-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-disabled-border, inherit )</code></td>
-    <td><code>var(--kendo-disabled-border, inherit)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Disabled border color of the action sheet item.</div></div>
@@ -1143,8 +1143,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-appbar-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AppBar.</div></div>
@@ -1153,7 +1153,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-appbar-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -1163,8 +1163,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-appbar-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AppBar.</div></div>
@@ -1178,7 +1178,7 @@ The following table lists the available variables for customizing the Fluent the
     error: error,
     success: success,
     info: info,
-    secondary: if($kendo-enable-color-system, secondary, neutral),
+    secondary: secondary,
     tertiary: tertiary,
  )</code></td>
     <td><ul><li>primary: primary</li><li>error: error</li><li>success: success</li><li>info: info</li><li>secondary: secondary</li><li>tertiary: tertiary</li></ul></td>
@@ -1279,7 +1279,7 @@ The following table lists the available variables for customizing the Fluent the
     error: error,
     success: success,
     info: info,
-    secondary: if($kendo-enable-color-system, secondary, neutral),
+    secondary: secondary,
     tertiary: tertiary,
  )</code></td>
     <td><ul><li>primary: primary</li><li>error: error</li><li>success: success</li><li>info: info</li><li>secondary: secondary</li><li>tertiary: tertiary</li></ul></td>
@@ -1321,8 +1321,8 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-badge-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Badge.</div></div>
@@ -1331,8 +1331,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-badge-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Badge.</div></div>
@@ -1341,8 +1341,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-badge-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Badge.</div></div>
@@ -1558,7 +1558,7 @@ The following table lists the available variables for customizing the Fluent the
     error: error,
     success: success,
     info: info,
-    secondary: if($kendo-enable-color-system, secondary, neutral),
+    secondary: secondary,
     tertiary: tertiary,
  )</code></td>
     <td><ul><li>primary: primary</li><li>error: error</li><li>success: success</li><li>info: info</li><li>secondary: secondary</li><li>tertiary: tertiary</li></ul></td>
@@ -1915,7 +1915,7 @@ The following table lists the available variables for customizing the Fluent the
     error: error,
     success: success,
     info: info,
-    secondary: if($kendo-enable-color-system, secondary, neutral),
+    secondary: secondary,
     tertiary: tertiary,
  )</code></td>
     <td><ul><li>primary: primary</li><li>error: error</li><li>success: success</li><li>info: info</li><li>secondary: secondary</li><li>tertiary: tertiary</li></ul></td>
@@ -2097,8 +2097,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Breadcrumb</div></div>
@@ -2127,7 +2127,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 1px if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>0 0 0 1px color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
     <td><code>(0 0 0 1px color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
 </tr>
 <tr>
@@ -2267,8 +2267,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, initial )</code></td>
-    <td><code>var(--kendo-hover-bg, initial)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered breadcrumb link</div></div>
@@ -2277,7 +2277,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -2287,8 +2287,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-hover-border</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-border, initial )</code></td>
-    <td><code>var(--kendo-hover-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 10%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered breadcrumb link</div></div>
@@ -2297,8 +2297,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-active-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-bg, initial )</code></td>
-    <td><code>var(--kendo-selected-bg, initial)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active breadcrumb link</div></div>
@@ -2307,8 +2307,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-active-text</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-text, initial )</code></td>
-    <td><code>var(--kendo-selected-text, initial)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the active breadcrumb link</div></div>
@@ -2317,7 +2317,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-active-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
@@ -2337,7 +2337,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-focus-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -2357,8 +2357,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-focus-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, initial )</code></td>
-    <td><code>var(--kendo-hover-bg, initial)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus and hover background color of the Breadcrumb link</div></div>
@@ -2377,8 +2377,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-disabled-text</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-text, initial )</code></td>
-    <td><code>var(--kendo-disabled-text, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled breadcrumb link</div></div>
@@ -2397,8 +2397,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-selected-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected the Breadcrumb link</div></div>
@@ -2407,7 +2407,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-selected-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -2468,7 +2468,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-breadcrumb-root-link-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-breadcrumb-link-hover-bg</code></td>
-    <td><code>var(--kendo-hover-bg, initial)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered breadcrumb root link</div></div>
@@ -2488,7 +2488,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-breadcrumb-root-link-hover-border</td>
     <td>String</td>
     <td><code>$kendo-breadcrumb-link-hover-border</code></td>
-    <td><code>var(--kendo-hover-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered breadcrumb root link</div></div>
@@ -2498,7 +2498,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-breadcrumb-root-link-active-bg</td>
     <td>String</td>
     <td><code>$kendo-breadcrumb-link-active-bg</code></td>
-    <td><code>var(--kendo-selected-bg, initial)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active breadcrumb root link</div></div>
@@ -2508,7 +2508,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-breadcrumb-root-link-active-text</td>
     <td>String</td>
     <td><code>$kendo-breadcrumb-link-active-text</code></td>
-    <td><code>var(--kendo-selected-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the active breadcrumb root link</div></div>
@@ -2558,7 +2558,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-breadcrumb-root-link-focus-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-breadcrumb-link-focus-hover-bg</code></td>
-    <td><code>var(--kendo-hover-bg, initial)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus and hover background color of the Breadcrumb root link</div></div>
@@ -2568,7 +2568,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-breadcrumb-root-link-disabled-text</td>
     <td>String</td>
     <td><code>$kendo-breadcrumb-link-disabled-text</code></td>
-    <td><code>var(--kendo-disabled-text, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled breadcrumb root link</div></div>
@@ -3071,8 +3071,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial)</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Calendar.</div></div>
@@ -3081,8 +3081,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial)</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Calendar.</div></div>
@@ -3091,8 +3091,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial)</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Calendar.</div></div>
@@ -3131,7 +3131,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-header-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -3142,7 +3142,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-calendar-header-text</td>
     <td>String</td>
     <td><code>$kendo-calendar-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the calendar header.</div></div>
@@ -3152,7 +3152,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-calendar-header-border</td>
     <td>String</td>
     <td><code>$kendo-calendar-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the calendar header.</div></div>
@@ -3381,7 +3381,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-caption-color</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -3451,7 +3451,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-today-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -3461,7 +3461,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-today-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -3471,7 +3471,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-today-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -3481,7 +3481,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-today-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-120 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -3511,8 +3511,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-week-number-text</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td><code>var(--kendo-subtle-text, inherit)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the calendar week number cell.</div></div>
@@ -3531,8 +3531,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-other-month-text</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-text, inherit )</code></td>
-    <td><code>var(--kendo-disabled-text, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the other months calendar cells.</div></div>
@@ -3561,8 +3561,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-cell-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the calendar cells when hovered.</div></div>
@@ -3571,8 +3571,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-cell-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-text, inherit )</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the calendar cells when hovered.</div></div>
@@ -3581,8 +3581,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-cell-selected-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-bg, inherit )</code></td>
-    <td><code>var(--kendo-selected-bg, inherit)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected calendar cell.</div></div>
@@ -3591,8 +3591,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-cell-selected-text</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-text, inherit )</code></td>
-    <td><code>var(--kendo-selected-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected calendar cell.</div></div>
@@ -3601,8 +3601,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-cell-selected-border</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-border, inherit )</code></td>
-    <td><code>var(--kendo-selected-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border-alt) 76%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border-alt, #323130) 76%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected calendar cell.</div></div>
@@ -3612,7 +3612,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-calendar-cell-selected-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-calendar-cell-selected-border</code></td>
-    <td><code>(inset 0 0 0 1px var(--kendo-selected-border, inherit))</code></td>
+    <td><code>(inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-border-alt, #323130) 76%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected calendar cell.</div></div>
@@ -3621,8 +3621,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-cell-selected-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-selected-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-subtle-active)</code></td>
+    <td><code>var(--kendo-color-base-subtle-active, #d2d0ce)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected calendar cell when hovered.</div></div>
@@ -3631,8 +3631,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-cell-selected-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-hover-text, inherit )</code></td>
-    <td><code>var(--kendo-selected-hover-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected calendar cell when hovered.</div></div>
@@ -3641,7 +3641,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-cell-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
+    <td><code>inset 0 0 0 1px k-color(base-emphasis)</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -3681,7 +3681,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-navigation-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -3692,7 +3692,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-calendar-navigation-text</td>
     <td>String</td>
     <td><code>$kendo-calendar-header-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the navigation in the infinite Calendar.</div></div>
@@ -3702,7 +3702,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-calendar-navigation-border</td>
     <td>String</td>
     <td><code>$kendo-calendar-header-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the navigation in the infinite Calendar.</div></div>
@@ -3711,7 +3711,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-navigation-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-link-hover-text</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -3771,7 +3771,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-range-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
@@ -3791,7 +3791,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-range-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
@@ -3801,7 +3801,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-start-range-hover-shadow</td>
     <td>List</td>
-    <td><code>inset 1px -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset 0 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>inset 1px -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis)</code></td>
     <td><code>(inset 1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -3811,7 +3811,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-mid-range-hover-shadow</td>
     <td>List</td>
-    <td><code>inset 0 -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset 0 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>inset 0 -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis)</code></td>
     <td><code>(inset 0 -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -3821,7 +3821,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-end-range-hover-shadow</td>
     <td>List</td>
-    <td><code>inset -1px -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset 0 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>inset -1px -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis)</code></td>
     <td><code>(inset -1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -3831,7 +3831,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-start-end-range-hover-shadow</td>
     <td>List</td>
-    <td><code>inset 1px -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset -1px 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>inset 1px -1px 0 0 k-color(base-emphasis), inset -1px 1px 0 0 k-color(base-emphasis)</code></td>
     <td><code>(inset 1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset -1px 1px 0 0 var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -4136,8 +4136,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-captcha-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Captcha.</div></div>
@@ -4146,8 +4146,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-captcha-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Captcha.</div></div>
@@ -4156,8 +4156,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-captcha-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Captcha.</div></div>
@@ -4316,8 +4316,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Card.</div></div>
@@ -4326,8 +4326,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Card.</div></div>
@@ -4336,8 +4336,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Card.</div></div>
@@ -4357,7 +4357,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-card-focus-bg</td>
     <td>String</td>
     <td><code>$kendo-card-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Card.</div></div>
@@ -4376,8 +4376,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-focus-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Card.</div></div>
@@ -4476,7 +4476,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-header-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -4666,7 +4666,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-subtitle-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -4806,8 +4806,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-inactive-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-bg, initial )</code></td>
-    <td><code>var(--kendo-disabled-bg, initial)</code></td>
+    <td><code>k-color(base-subtle)</code></td>
+    <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inactive background color of the chart component.</div></div>
@@ -4836,7 +4836,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-chart-wizard-icon-area-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -4846,7 +4846,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-wizard-icon-area-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), k-get-theme-color-var( primary-20 ))</code></td>
+    <td><code>k-color(primary-subtle)</code></td>
     <td><code>var(--kendo-color-primary-subtle, #deecf9)</code></td>
 </tr>
 <tr>
@@ -4876,7 +4876,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-wizard-icon-area-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color( primary-emphasis ), k-get-theme-color-var( primary-130 ))</code></td>
+    <td><code>inset 0 0 0 1px k-color(primary-emphasis)</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-primary-emphasis, #004578))</code></td>
 </tr>
 <tr>
@@ -4896,7 +4896,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-wizard-chart-type-selected-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -4966,7 +4966,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-series-a</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-a ), k-get-theme-color-var( series-a-100 ))</code></td>
+    <td><code>k-color(series-a)</code></td>
     <td><code>var(--kendo-color-series-a, #0099bc)</code></td>
 </tr>
 <tr>
@@ -4976,7 +4976,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-series-b</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-b ), k-get-theme-color-var( series-b-100 ))</code></td>
+    <td><code>k-color(series-b)</code></td>
     <td><code>var(--kendo-color-series-b, #e74856)</code></td>
 </tr>
 <tr>
@@ -4986,7 +4986,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-series-c</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-c ), k-get-theme-color-var( series-c-100 ))</code></td>
+    <td><code>k-color(series-c)</code></td>
     <td><code>var(--kendo-color-series-c, #ffb900)</code></td>
 </tr>
 <tr>
@@ -4996,7 +4996,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-series-d</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-d ), k-get-theme-color-var( series-d-100 ))</code></td>
+    <td><code>k-color(series-d)</code></td>
     <td><code>var(--kendo-color-series-d, #0078d7)</code></td>
 </tr>
 <tr>
@@ -5006,7 +5006,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-series-e</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-e ), k-get-theme-color-var( series-e-100 ))</code></td>
+    <td><code>k-color(series-e)</code></td>
     <td><code>var(--kendo-color-series-e, #8764b8)</code></td>
 </tr>
 <tr>
@@ -5016,7 +5016,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-series-f</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-f ), k-get-theme-color-var( series-f-100 ))</code></td>
+    <td><code>k-color(series-f)</code></td>
     <td><code>var(--kendo-color-series-f, #00cc6a)</code></td>
 </tr>
 <tr>
@@ -5126,7 +5126,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-major-lines</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
@@ -5136,7 +5136,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-minor-lines</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
@@ -5176,8 +5176,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the chart component.</div></div>
@@ -5186,8 +5186,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the chart component.</div></div>
@@ -5196,8 +5196,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the chart component.</div></div>
@@ -5206,7 +5206,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-tooltip-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -5216,7 +5216,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-tooltip-color-inverse</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -5226,7 +5226,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-crosshair-background</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -5236,7 +5236,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-crosshair-shared-tooltip-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -5246,8 +5246,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-crosshair-shared-tooltip-background</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the chart shared crosshair tooltip.</div></div>
@@ -5266,7 +5266,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-notes-background</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
@@ -5296,7 +5296,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-handle-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -5307,7 +5307,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-chart-handle-text</td>
     <td>String</td>
     <td><code>$kendo-chart-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the chart handle.</div></div>
@@ -5326,8 +5326,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-handle-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, initial )</code></td>
-    <td><code>var(--kendo-hover-bg, initial)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the chart handle.</div></div>
@@ -5336,8 +5336,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-handle-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-text, initial )</code></td>
-    <td><code>var(--kendo-hover-text, initial)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the chart handle.</div></div>
@@ -5346,8 +5346,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-handle-hover-border</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-border, initial )</code></td>
-    <td><code>var(--kendo-hover-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 10%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover border color of the chart handle.</div></div>
@@ -5356,7 +5356,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-error-bars-background</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( error ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #c2666b)</code></td>
 </tr>
 <tr>
@@ -5376,8 +5376,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-selection-border-color</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the selection handle of the chart component.</div></div>
@@ -5426,8 +5426,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treemap-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the treemap.</div></div>
@@ -5436,8 +5436,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treemap-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the treemap.</div></div>
@@ -5446,8 +5446,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treemap-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the treemap.</div></div>
@@ -5456,7 +5456,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treemap-title-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -5466,7 +5466,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treemap-title-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -5476,8 +5476,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treemap-title-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the treemap title.</div></div>
@@ -5486,7 +5486,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-overlay-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(app-surface), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -5516,7 +5516,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-no-data-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -5566,8 +5566,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-link-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-link-hover-text, inherit )</code></td>
-    <td><code>var(--kendo-link-hover-text, inherit)</code></td>
+    <td><code>k-color(primary-hover)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the Chat bubble links.</div></div>
@@ -5576,8 +5576,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-link-text</td>
     <td>String</td>
-    <td><code>var( --kendo-link-text, inherit )</code></td>
-    <td><code>var(--kendo-link-text, inherit)</code></td>
+    <td><code>k-color(primary)</code></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat bubble links.</div></div>
@@ -5766,8 +5766,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-timestamp-text</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td><code>var(--kendo-subtle-text, inherit)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat timestamp.</div></div>
@@ -5967,7 +5967,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-chat-toolbar-text</td>
     <td>String</td>
     <td><code>$kendo-toolbar-text</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat Toolbar.</div></div>
@@ -6026,7 +6026,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -6036,7 +6036,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -6046,7 +6046,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
@@ -6056,8 +6056,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-bubble-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat bubble.</div></div>
@@ -6066,8 +6066,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-bubble-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat bubble.</div></div>
@@ -6077,7 +6077,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-chat-bubble-border</td>
     <td>String</td>
     <td><code>$kendo-chat-bubble-bg</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat bubble.</div></div>
@@ -6116,7 +6116,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-alt-bubble-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -6126,8 +6126,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-alt-bubble-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat alt bubble.</div></div>
@@ -6186,7 +6186,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-quick-reply-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -6196,7 +6196,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-quick-reply-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -6206,7 +6206,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-quick-reply-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -6216,8 +6216,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-quick-reply-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Chat quick reply.</div></div>
@@ -6226,7 +6226,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-quick-reply-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -6306,7 +6306,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -6326,7 +6326,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, #323130)</code></td>
 </tr>
 <tr>
@@ -6346,7 +6346,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color( neutral, 130 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -6366,7 +6366,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-checked-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -6376,7 +6376,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-checked-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -6396,7 +6396,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-hover-checked-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -6406,7 +6406,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-hover-checked-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -6446,7 +6446,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-focus-outline</td>
     <td>List</td>
-    <td><code>1px solid if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>1px solid k-color(base-emphasis)</code></td>
     <td><code>(1px solid var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -6466,7 +6466,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-indeterminate-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color( primary, 100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -6476,7 +6476,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-indeterminate-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -6496,7 +6496,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-hover-indeterminate-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color( primary, 110 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -6506,7 +6506,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-hover-indeterminate-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -6526,7 +6526,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -6536,7 +6536,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-disabled-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -6546,7 +6546,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-disabled-checked-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -6556,7 +6556,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-disabled-checked-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -6566,7 +6566,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-disabled-checked-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, transparent, k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>transparent</code></td>
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
@@ -6586,7 +6586,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-disabled-indeterminate-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color( neutral, 60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -6596,7 +6596,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-disabled-indeterminate-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -6616,7 +6616,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-invalid-text</td>
     <td>String</td>
-    <td><code>$kendo-invalid-text</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
     <td><code>var(--kendo-color-error-on-surface, #a4262c)</code></td>
 </tr>
 <tr>
@@ -6626,7 +6626,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-invalid-border</td>
     <td>String</td>
-    <td><code>$kendo-invalid-border</code></td>
+    <td><code>k-color(error-emphasis)</code></td>
     <td><code>var(--kendo-color-error-emphasis, #a4262c)</code></td>
 </tr>
 <tr>
@@ -6786,7 +6786,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-ripple-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -6886,8 +6886,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chip-disabled-text</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-text, inherit )</code></td>
-    <td><code>var(--kendo-disabled-text, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Chip.</div></div>
@@ -6896,8 +6896,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chip-solid-disabled-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-bg, transparent )</code></td>
-    <td><code>var(--kendo-disabled-bg, transparent)</code></td>
+    <td><code>k-color(base-subtle)</code></td>
+    <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the solid disabled Chip.</div></div>
@@ -6905,9 +6905,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-chip-solid-disabled-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-disabled-border, inherit )</code></td>
-    <td><code>var(--kendo-disabled-border, inherit)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the solid disabled Chip.</div></div>
@@ -6916,7 +6916,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chip-outline-disabled-bg</td>
     <td>String</td>
-    <td><code>var( $kendo-component-bg, transparent )</code></td>
+    <td><code>var( k-color(surface-alt), transparent )</code></td>
     <td><code>var(var(--kendo-color-surface-alt, #ffffff), transparent)</code></td>
 </tr>
 <tr>
@@ -6926,7 +6926,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chip-outline-disabled-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), k-get-theme-color-var( neutral-90 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -8214,8 +8214,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ColorEditor.</div></div>
@@ -8224,8 +8224,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ColorEditor.</div></div>
@@ -8234,8 +8234,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ColorEditor.</div></div>
@@ -8254,7 +8254,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 10%, transparent), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 10%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent)</code></td>
 </tr>
 <tr>
@@ -8816,8 +8816,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ColorGradient.</div></div>
@@ -8826,8 +8826,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ColorGradient.</div></div>
@@ -8836,8 +8836,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ColorGradient.</div></div>
@@ -8976,7 +8976,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 10%, transparent), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 10%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent)</code></td>
 </tr>
 <tr>
@@ -9096,7 +9096,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-canvas-rectangle-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
@@ -9136,7 +9136,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-slider-border-width</td>
     <td>Number</td>
-    <td><code>if($kendo-enable-color-system, 0, 1px)</code></td>
+    <td><code>0</code></td>
     <td><code>0</code></td>
 </tr>
 <tr>
@@ -9146,7 +9146,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-slider-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
@@ -9256,7 +9256,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-draghandle-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -9276,7 +9276,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -9286,7 +9286,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-shadow</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
@@ -9296,7 +9296,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-draghandle-hover-shadow</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
@@ -9366,8 +9366,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-input-label-text</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td><code>var(--kendo-subtle-text, inherit)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ColorGradient input labels.</div></div>
@@ -9627,7 +9627,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-palette-tile-focus-outline</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
@@ -9637,7 +9637,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-palette-tile-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>inset 0 0 0 2px k-color(app-surface)</code></td>
     <td><code>(inset 0 0 0 2px var(--kendo-color-app-surface, #ffffff))</code></td>
 </tr>
 <tr>
@@ -9647,7 +9647,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-palette-tile-hover-outline</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 10%, transparent), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 10%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent)</code></td>
 </tr>
 <tr>
@@ -9657,7 +9657,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-palette-tile-hover-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px $kendo-color-palette-tile-hover-outline, inset 0 0 0 4px if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>inset 0 0 0 2px $kendo-color-palette-tile-hover-outline, inset 0 0 0 4px k-color(app-surface)</code></td>
     <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent), inset 0 0 0 4px var(--kendo-color-app-surface, #ffffff))</code></td>
 </tr>
 <tr>
@@ -9780,7 +9780,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-preview-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -9790,7 +9790,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-preview-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -9800,7 +9800,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-preview-no-color-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -9810,7 +9810,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-preview-no-color-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( error-on-surface ), k-get-theme-color( error, 190 ))</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
     <td><code>var(--kendo-color-error-on-surface, #a4262c)</code></td>
 </tr>
 <tr>
@@ -9860,8 +9860,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dialog-titlebar-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Dialog titlebar.</div></div>
@@ -9870,8 +9870,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dialog-titlebar-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Dialog titlebar.</div></div>
@@ -9880,8 +9880,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dialog-titlebar-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Dialog titlebar.</div></div>
@@ -10040,8 +10040,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-manager-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the DockManager component.</div></div>
@@ -10090,8 +10090,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-manager-pane-header-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the pane header in the DockManager component.</div></div>
@@ -10100,7 +10100,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-manager-pane-header-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -10220,7 +10220,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-manager-unpinned-container-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -10250,7 +10250,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-indicator-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -10260,7 +10260,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-indicator-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -10310,7 +10310,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-indicator-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -10320,7 +10320,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-indicator-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -10360,7 +10360,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-manager-dock-preview-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 20%, transparent), color-mix(in srgb, k-get-theme-color-var( primary-100 ) 20%, transparent))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 20%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #0078d4) 20%, transparent)</code></td>
 </tr>
 <tr>
@@ -10370,7 +10370,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-manager-dock-preview-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -10500,8 +10500,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drag-clue-text</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-text, inherit )</code></td>
-    <td><code>var(--kendo-selected-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the drag clue.</div></div>
@@ -10510,8 +10510,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drag-clue-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-bg, inherit )</code></td>
-    <td><code>var(--kendo-selected-bg, inherit)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the drag clue.</div></div>
@@ -10520,8 +10520,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drag-clue-border</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-border, inherit )</code></td>
-    <td><code>var(--kendo-selected-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border-alt) 76%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border-alt, #323130) 76%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the drag clue.</div></div>
@@ -10610,7 +10610,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drop-hint-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -10640,8 +10640,8 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-drawer-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Drawer.</div></div>
@@ -10650,8 +10650,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Drawer.</div></div>
@@ -10660,8 +10660,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Drawer.</div></div>
@@ -10740,7 +10740,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-scrollbar-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), k-get-theme-color-var( neutral-90 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -10750,7 +10750,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-scrollbar-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-40 ))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
@@ -10770,7 +10770,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-scrollbar-hover-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 60%, transparent), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 60%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 60%, transparent)</code></td>
 </tr>
 <tr>
@@ -10880,7 +10880,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-ripple-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -10891,7 +10891,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-drawer-item-bg</td>
     <td>String</td>
     <td><code>$kendo-drawer-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Drawer item.</div></div>
@@ -10901,7 +10901,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-drawer-item-text</td>
     <td>String</td>
     <td><code>$kendo-drawer-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Drawer item.</div></div>
@@ -10910,7 +10910,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-icon-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -10921,7 +10921,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-drawer-item-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-drawer-item-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Drawer item.</div></div>
@@ -10930,7 +10930,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -10940,7 +10940,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-hover-icon-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -10951,7 +10951,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-drawer-item-focus-bg</td>
     <td>String</td>
     <td><code>$kendo-drawer-item-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Drawer item.</div></div>
@@ -10961,7 +10961,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-drawer-item-focus-text</td>
     <td>String</td>
     <td><code>$kendo-drawer-item-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Drawer item.</div></div>
@@ -10970,7 +10970,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
+    <td><code>inset 0 0 0 1px k-color(base-emphasis)</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -11000,8 +11000,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-selected-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-bg, initial )</code></td>
-    <td><code>var(--kendo-selected-bg, initial)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Drawer item.</div></div>
@@ -11010,7 +11010,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-selected-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -11020,7 +11020,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-selected-icon-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-active ), k-get-theme-color-var( primary-120 ))</code></td>
+    <td><code>k-color(primary-active)</code></td>
     <td><code>var(--kendo-color-primary-active, #005a9e)</code></td>
 </tr>
 <tr>
@@ -11030,8 +11030,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-selected-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-selected-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-subtle-active)</code></td>
+    <td><code>var(--kendo-color-base-subtle-active, #d2d0ce)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered Drawer item.</div></div>
@@ -11040,8 +11040,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-selected-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-hover-text, inherit )</code></td>
-    <td><code>var(--kendo-selected-hover-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected and hovered Drawer item.</div></div>
@@ -11190,7 +11190,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dropzone-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -11200,8 +11200,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dropzone-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the dropzone.</div></div>
@@ -11210,8 +11210,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dropzone-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the DropZone.</div></div>
@@ -11230,7 +11230,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dropzone-icon-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-90 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -11240,7 +11240,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dropzone-icon-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -11281,7 +11281,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-dropzone-hint-text</td>
     <td>String</td>
     <td><code>$kendo-dropzone-text</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the DropZone hint.</div></div>
@@ -11320,8 +11320,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dropzone-note-text</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td><code>var(--kendo-subtle-text, inherit)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the DropZone note.</div></div>
@@ -11390,8 +11390,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Editor.</div></div>
@@ -11400,8 +11400,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Editor.</div></div>
@@ -11410,8 +11410,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around Editor.</div></div>
@@ -11440,8 +11440,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-content-outline-color</td>
     <td>String</td>
-    <td><code>var( --kendo-body-text, initial )</code></td>
-    <td><code>var(--kendo-body-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the Editor's content.</div></div>
@@ -11470,7 +11470,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-selected-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -11480,7 +11480,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -11490,7 +11490,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-highlighted-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 55%, transparent), k-get-theme-color-var( primary-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 55%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #0078d4) 55%, transparent)</code></td>
 </tr>
 <tr>
@@ -11520,7 +11520,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-resize-handle-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -11530,7 +11530,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-resize-handle-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -11540,7 +11540,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-selectednode-outline-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -11550,8 +11550,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-inline-td-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Inline Editor data cell.</div></div>
@@ -11560,8 +11560,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-inline-hover-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover border color of the Inline Editor.</div></div>
@@ -11580,8 +11580,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-ct-popup-text</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-text, initial )</code></td>
-    <td><code>var(--kendo-selected-text, initial)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected cells in the Insert table popup.</div></div>
@@ -11590,8 +11590,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-ct-popup-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-bg, initial )</code></td>
-    <td><code>var(--kendo-selected-bg, initial)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected cells in the Insert table popup.</div></div>
@@ -11600,8 +11600,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-ct-popup-border</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-border, initial )</code></td>
-    <td><code>var(--kendo-selected-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border-alt) 76%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border-alt, #323130) 76%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected cells in the Insert table popup.</div></div>
@@ -11710,8 +11710,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ExpansionPanel.</div></div>
@@ -11720,7 +11720,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -11730,8 +11730,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ExpansionPanel.</div></div>
@@ -11740,7 +11740,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
     <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
 </tr>
 <tr>
@@ -11750,8 +11750,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-expanded-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the expanded ExpansionPanel.</div></div>
@@ -11760,8 +11760,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-disabled-text</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-text, initial )</code></td>
-    <td><code>var(--kendo-disabled-text, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled ExpansionPanel.</div></div>
@@ -11770,8 +11770,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-disabled-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-bg, initial )</code></td>
-    <td><code>var(--kendo-disabled-bg, initial)</code></td>
+    <td><code>k-color(base-subtle)</code></td>
+    <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled ExpansionPanel.</div></div>
@@ -11810,7 +11810,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-focus-outline</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
@@ -11820,8 +11820,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-focus-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused ExpansionPanel.</div></div>
@@ -11830,7 +11830,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0px 0px 0px 2px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
+    <td><code>inset 0px 0px 0px 2px k-color(base-emphasis)</code></td>
     <td><code>(inset 0px 0px 0px 2px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -11860,7 +11860,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-header-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -11880,7 +11880,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-header-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
@@ -11890,7 +11890,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-title-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -11900,8 +11900,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-header-sub-title-text</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, initial )</code></td>
-    <td><code>var(--kendo-subtle-text, initial)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ExpansionPanel sub-title.</div></div>
@@ -11921,7 +11921,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-expander-indicator-text</td>
     <td>String</td>
     <td><code>var( --kendo-expander-text, #{$kendo-expander-text} )</code></td>
-    <td><code>var(--kendo-expander-text, var(--kendo-component-text, initial))</code></td>
+    <td><code>var(--kendo-expander-text, var(--kendo-color-on-app-surface, #323130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ExpansionPanel indicator.</div></div>
@@ -12020,8 +12020,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-file-manager-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, transparent )</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager.</div></div>
@@ -12030,8 +12030,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-file-manager-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager.</div></div>
@@ -12040,8 +12040,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-file-manager-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager.</div></div>
@@ -12071,7 +12071,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-file-manager-toolbar-text</td>
     <td>String</td>
     <td><code>$kendo-toolbar-text</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager Toolbar.</div></div>
@@ -12081,7 +12081,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-file-manager-toolbar-border</td>
     <td>String</td>
     <td><code>$kendo-toolbar-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager Toolbar.</div></div>
@@ -12300,8 +12300,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-file-manager-listview-item-icon-text</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td><code>var(--kendo-subtle-text, inherit)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager ListView item icon.</div></div>
@@ -12510,8 +12510,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-file-manager-preview-icon-text</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td><code>var(--kendo-subtle-text, inherit)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager preview icon.</div></div>
@@ -12600,8 +12600,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-filter-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Filter.</div></div>
@@ -12610,7 +12610,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-filter-preview-field-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -12620,7 +12620,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-filter-preview-operator-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -12630,8 +12630,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-filter-line-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the line that connects the Filter items.</div></div>
@@ -12640,7 +12640,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-filter-toolbar-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
@@ -13085,7 +13085,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -13095,8 +13095,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the FAB item.</div></div>
@@ -13105,7 +13105,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -13115,8 +13115,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-text, inherit )</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered FAB item.</div></div>
@@ -13125,8 +13125,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered FAB item.</div></div>
@@ -13135,7 +13135,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -13145,7 +13145,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-focus-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -13155,8 +13155,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-focus-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused FAB item.</div></div>
@@ -13165,7 +13165,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -13175,8 +13175,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-active-text</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-text, inherit )</code></td>
-    <td><code>var(--kendo-selected-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the active FAB item.</div></div>
@@ -13185,8 +13185,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-active-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-bg, inherit )</code></td>
-    <td><code>var(--kendo-selected-bg, inherit)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active FAB item.</div></div>
@@ -13195,7 +13195,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-active-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -13385,8 +13385,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-floating-label-invalid-text</td>
     <td>String</td>
-    <td><code>var( --kendo-invalid-text, #{$kendo-invalid-text} )</code></td>
-    <td><code>var(--kendo-invalid-text, var(--kendo-color-error-on-surface, #a4262c))</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>var(--kendo-color-error-on-surface, #a4262c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The invalid text color of the Floating Label.</div></div>
@@ -13535,8 +13535,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-form-legend-border-color</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Form legend.</div></div>
@@ -13635,7 +13635,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-form-hint-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -13686,7 +13686,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-form-separator-border-color</td>
     <td>String</td>
     <td><code>$kendo-form-legend-border-color</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Form separator.</div></div>
@@ -13755,8 +13755,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-forms-invalid-color</td>
     <td>String</td>
-    <td><code>var( --kendo-invalid-text, initial )</code></td>
-    <td><code>var(--kendo-invalid-text, initial)</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>var(--kendo-color-error-on-surface, #a4262c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The invalid text color of the Form.</div></div>
@@ -13855,7 +13855,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fieldset-legend-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -13955,8 +13955,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt.</div></div>
@@ -13965,8 +13965,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt.</div></div>
@@ -13975,8 +13975,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt.</div></div>
@@ -13985,7 +13985,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-nonwork-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 4%, transparent), rgba( $kendo-color-black, .04 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 4%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 4%, transparent)</code></td>
 </tr>
 <tr>
@@ -14035,7 +14035,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-line-selected-fill</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-active ), k-get-theme-color-var( primary-120 ))</code></td>
+    <td><code>k-color(primary-active)</code></td>
     <td><code>var(--kendo-color-primary-active, #005a9e)</code></td>
 </tr>
 <tr>
@@ -14065,7 +14065,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-dot-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -14075,7 +14075,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-dot-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -14085,7 +14085,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-dot-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -14095,7 +14095,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-dot-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -14106,7 +14106,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-gantt-milestone-bg</td>
     <td>String</td>
     <td><code>$kendo-gantt-text</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt milestone.</div></div>
@@ -14116,7 +14116,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-gantt-milestone-border</td>
     <td>String</td>
     <td><code>$kendo-gantt-text</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt milestone.</div></div>
@@ -14125,7 +14125,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-milestone-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -14135,7 +14135,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-milestone-selected-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -14145,7 +14145,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-summary-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -14155,7 +14155,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-summary-progress-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -14165,7 +14165,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-summary-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-subtle-active ), k-get-theme-color-var( primary-50 ))</code></td>
+    <td><code>k-color(primary-subtle-active)</code></td>
     <td><code>var(--kendo-color-primary-subtle-active, #abd1ef)</code></td>
 </tr>
 <tr>
@@ -14175,7 +14175,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-summary-progress-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -14215,7 +14215,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -14225,7 +14225,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -14245,7 +14245,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-progress-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -14255,7 +14255,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-progress-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -14265,7 +14265,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-subtle-active ), k-get-theme-color-var( primary-50 ))</code></td>
+    <td><code>k-color(primary-subtle-active)</code></td>
     <td><code>var(--kendo-color-primary-subtle-active, #abd1ef)</code></td>
 </tr>
 <tr>
@@ -14275,7 +14275,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-selected-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -14295,7 +14295,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-progress-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -14475,7 +14475,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-planned-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -14485,7 +14485,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-planned-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -14495,7 +14495,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-planned-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -14505,7 +14505,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-delayed-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -14515,7 +14515,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-delayed-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( error-emphasis ), k-get-theme-color-var( error-160 ))</code></td>
+    <td><code>k-color(error-emphasis)</code></td>
     <td><code>var(--kendo-color-error-emphasis, #a4262c)</code></td>
 </tr>
 <tr>
@@ -14525,7 +14525,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-delayed-bg-lighter</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( error ), k-get-theme-color-var( error-110))</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #c2666b)</code></td>
 </tr>
 <tr>
@@ -14535,7 +14535,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-delayed-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( error-on-subtle ), k-get-theme-color-var( error-190 ))</code></td>
+    <td><code>k-color(error-on-subtle)</code></td>
     <td><code>var(--kendo-color-error-on-subtle, #420f12)</code></td>
 </tr>
 <tr>
@@ -14545,7 +14545,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-advanced-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( success-emphasis ), k-get-theme-color-var( success-160 ))</code></td>
+    <td><code>k-color(success-emphasis)</code></td>
     <td><code>var(--kendo-color-success-emphasis, #107c10)</code></td>
 </tr>
 <tr>
@@ -14555,7 +14555,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-advanced-bg-lighter</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( success ), k-get-theme-color-var( success-110 ))</code></td>
+    <td><code>k-color(success)</code></td>
     <td><code>var(--kendo-color-success, #55a554)</code></td>
 </tr>
 <tr>
@@ -14565,7 +14565,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-advanced-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( success-on-subtle ), k-get-theme-color-var( success-190 ))</code></td>
+    <td><code>k-color(success-on-subtle)</code></td>
     <td><code>var(--kendo-color-success-on-subtle, #063206)</code></td>
 </tr>
 <tr>
@@ -14575,7 +14575,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-action-on-offset-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -14615,8 +14615,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-validation-tooltip-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt validation Tooltip.</div></div>
@@ -14625,7 +14625,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-validation-tooltip-valid-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( success ), k-get-theme-color-var( success-100 ))</code></td>
+    <td><code>k-color(success)</code></td>
     <td><code>var(--kendo-color-success, #55a554)</code></td>
 </tr>
 <tr>
@@ -14635,7 +14635,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-validation-tooltip-invalid-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( error ), k-get-theme-color-var( error-100 ))</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #c2666b)</code></td>
 </tr>
 <tr>
@@ -14886,7 +14886,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-bg</td>
     <td>String</td>
     <td><code>$kendo-table-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid.</div></div>
@@ -14896,7 +14896,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-text</td>
     <td>String</td>
     <td><code>$kendo-table-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid.</div></div>
@@ -14906,7 +14906,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-border</td>
     <td>String</td>
     <td><code>$kendo-table-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid.</div></div>
@@ -14936,7 +14936,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-alt-text</td>
     <td>String</td>
     <td><code>$kendo-table-alt-row-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of alternating rows in Grid.</div></div>
@@ -14946,7 +14946,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-alt-border</td>
     <td>String</td>
     <td><code>$kendo-table-alt-row-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of alternating rows in Grid.</div></div>
@@ -14956,7 +14956,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-table-hover-bg</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hover rows in Grid.</div></div>
@@ -14966,7 +14966,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-hover-text</td>
     <td>String</td>
     <td><code>$kendo-table-hover-text</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hover rows in Grid.</div></div>
@@ -14976,7 +14976,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-hover-border</td>
     <td>String</td>
     <td><code>$kendo-table-hover-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hover rows in Grid.</div></div>
@@ -14996,7 +14996,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-selected-text</td>
     <td>String</td>
     <td><code>$kendo-table-selected-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected rows in Grid.</div></div>
@@ -15006,7 +15006,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-selected-border</td>
     <td>String</td>
     <td><code>$kendo-table-selected-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected rows in Grid.</div></div>
@@ -15026,7 +15026,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-selected-hover-text</td>
     <td>String</td>
     <td><code>$kendo-table-selected-hover-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered selected rows in Grid.</div></div>
@@ -15036,7 +15036,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-selected-hover-border</td>
     <td>String</td>
     <td><code>$kendo-table-selected-hover-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered selected rows in Grid.</div></div>
@@ -15106,7 +15106,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-header-bg</td>
     <td>String</td>
     <td><code>$kendo-table-header-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of Grid header.</div></div>
@@ -15126,7 +15126,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-header-border</td>
     <td>String</td>
     <td><code>$kendo-table-header-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of Grid header.</div></div>
@@ -15135,7 +15135,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-header-icon-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -15146,7 +15146,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-footer-bg</td>
     <td>String</td>
     <td><code>$kendo-table-footer-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container">
@@ -15166,7 +15166,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-footer-border</td>
     <td>String</td>
     <td><code>$kendo-table-footer-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of Grid footer.</div></div>
@@ -15186,7 +15186,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-selection-aggregates-text</td>
     <td>String</td>
     <td><code>$kendo-grid-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid selection aggregates container.</div></div>
@@ -15196,7 +15196,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-selection-aggregates-border</td>
     <td>String</td>
     <td><code>$kendo-grid-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid selection aggregates container.</div></div>
@@ -15256,7 +15256,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-grouping-header-text</td>
     <td>String</td>
     <td><code>$kendo-toolbar-text</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid grouping header.</div></div>
@@ -15266,7 +15266,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-grouping-header-border</td>
     <td>String</td>
     <td><code>$kendo-toolbar-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid grouping header.</div></div>
@@ -15286,7 +15286,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-grouping-row-bg</td>
     <td>String</td>
     <td><code>$kendo-table-group-row-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid grouping row.</div></div>
@@ -15306,7 +15306,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-grouping-row-border</td>
     <td>String</td>
     <td><code>$kendo-table-group-row-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid grouping row.</div></div>
@@ -15445,7 +15445,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-sort-indicator-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -15455,7 +15455,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-sort-indicator-order-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -15465,7 +15465,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-sorted-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -15545,8 +15545,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-group-indicator-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid group indicator.</div></div>
@@ -15555,8 +15555,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-group-indicator-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid group indicator.</div></div>
@@ -15565,7 +15565,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-group-indicator-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -15575,7 +15575,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-group-indicator-icon-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -15605,7 +15605,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-group-drop-hint-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -15625,8 +15625,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-sticky-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid sticky cell.</div></div>
@@ -15636,7 +15636,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-sticky-text</td>
     <td>String</td>
     <td><code>$kendo-grid-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid sticky cell.</div></div>
@@ -15645,7 +15645,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-sticky-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 80%, transparent), k-get-theme-color-var( neutral-90 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 80%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 80%, transparent)</code></td>
 </tr>
 <tr>
@@ -15656,7 +15656,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-sticky-alt-bg</td>
     <td>String</td>
     <td><code>$kendo-grid-sticky-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The alt background color of the Grid sticky cell.</div></div>
@@ -15666,7 +15666,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-sticky-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-grid-hover-bg</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid sticky cell.</div></div>
@@ -15676,7 +15676,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-sticky-header-bg</td>
     <td>String</td>
     <td><code>$kendo-grid-header-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid sticky header.</div></div>
@@ -15706,7 +15706,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-sticky-footer-bg</td>
     <td>String</td>
     <td><code>$kendo-grid-header-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid sticky footer.</div></div>
@@ -15716,7 +15716,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-sticky-footer-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-grid-hover-bg</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid sticky footer.</div></div>
@@ -15745,7 +15745,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-sticky-selected-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, $kendo-grid-sticky-selected-bg, $kendo-grid-selected-hover-bg)</code></td>
+    <td><code>$kendo-grid-sticky-selected-bg</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #0078d4) 13%, transparent)</code></td>
 </tr>
 <tr>
@@ -15815,8 +15815,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-column-menu-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid column menu.</div></div>
@@ -15825,8 +15825,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-column-menu-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid column menu.</div></div>
@@ -15835,8 +15835,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-column-menu-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid column menu.</div></div>
@@ -16085,8 +16085,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-column-menu-group-header-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid column menu group.</div></div>
@@ -16095,8 +16095,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-column-menu-group-header-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid column menu group.</div></div>
@@ -16105,8 +16105,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-column-menu-group-header-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit)</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid column menu group.</div></div>
@@ -16175,7 +16175,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-row-resizer-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), k-get-theme-color-var( neutral-90 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -16185,7 +16185,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-row-resizer-active-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -16275,8 +16275,8 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-image-editor-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the imageeditor.</div></div>
@@ -16285,8 +16285,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the imageeditor.</div></div>
@@ -16295,7 +16295,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
@@ -16385,7 +16385,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-content-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 23%, transparent), k-get-theme-color-var( neutral-50 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 23%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 23%, transparent)</code></td>
 </tr>
 <tr>
@@ -16425,8 +16425,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-action-pane-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor action pane background color.</div></div>
@@ -16505,7 +16505,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-crop-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -16855,7 +16855,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-solid-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -16865,7 +16865,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-solid-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -16875,7 +16875,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-solid-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -16885,7 +16885,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-solid-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -16905,7 +16905,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-solid-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, #323130)</code></td>
 </tr>
 <tr>
@@ -16935,7 +16935,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-solid-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -16975,7 +16975,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-solid-disabled-text</td>
     <td>String</td>
-    <td><code>$kendo-disabled-text</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -16985,7 +16985,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-solid-disabled-bg</td>
     <td>String</td>
-    <td><code>$kendo-disabled-bg</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
@@ -16995,7 +16995,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-solid-disabled-border</td>
     <td>Color</td>
-    <td><code>$kendo-disabled-border</code></td>
+    <td><code>transparent</code></td>
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
@@ -17005,7 +17005,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17015,7 +17015,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17025,7 +17025,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -17035,7 +17035,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17045,7 +17045,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17055,7 +17055,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, #323130)</code></td>
 </tr>
 <tr>
@@ -17065,7 +17065,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-focus-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17075,7 +17075,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17085,7 +17085,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -17125,7 +17125,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-disabled-text</td>
     <td>String</td>
-    <td><code>$kendo-disabled-text</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -17145,7 +17145,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-disabled-border</td>
     <td>String</td>
-    <td><code>$kendo-disabled-text</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -17155,7 +17155,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17165,7 +17165,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17175,7 +17175,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -17185,7 +17185,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17195,7 +17195,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17205,7 +17205,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, #323130)</code></td>
 </tr>
 <tr>
@@ -17215,7 +17215,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-focus-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17225,7 +17225,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17235,7 +17235,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -17275,7 +17275,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-disabled-text</td>
     <td>String</td>
-    <td><code>$kendo-disabled-text</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -17295,7 +17295,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-disabled-border</td>
     <td>String</td>
-    <td><code>$kendo-disabled-text</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -17305,7 +17305,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17315,7 +17315,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17325,7 +17325,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-130 ))!default</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -17335,7 +17335,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17345,7 +17345,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17355,7 +17355,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, #323130)</code></td>
 </tr>
 <tr>
@@ -17365,7 +17365,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-focus-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17375,7 +17375,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17385,7 +17385,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -17425,7 +17425,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-disabled-text</td>
     <td>String</td>
-    <td><code>$kendo-disabled-text</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -17435,7 +17435,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 9%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 9%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 9%, transparent)</code></td>
 </tr>
 <tr>
@@ -17445,7 +17445,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-disabled-border</td>
     <td>Color</td>
-    <td><code>$kendo-disabled-border</code></td>
+    <td><code>transparent</code></td>
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
@@ -17455,7 +17455,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17475,7 +17475,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17485,7 +17485,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17495,7 +17495,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17515,7 +17515,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-focus-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17525,7 +17525,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17535,7 +17535,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -17545,7 +17545,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-hover-focus-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17555,7 +17555,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-hover-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17565,7 +17565,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-hover-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -17575,7 +17575,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-disabled-text</td>
     <td>String</td>
-    <td><code>$kendo-disabled-text</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -17605,7 +17605,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17625,7 +17625,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -17635,7 +17635,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17645,7 +17645,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
@@ -17655,7 +17655,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, #323130)</code></td>
 </tr>
 <tr>
@@ -17665,7 +17665,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-focus-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -17675,7 +17675,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17685,7 +17685,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -17725,7 +17725,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-disabled-text</td>
     <td>String</td>
-    <td><code>$kendo-disabled-text</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -17923,7 +17923,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-prefix-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
@@ -17933,7 +17933,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-suffix-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
@@ -17943,8 +17943,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-separator-text</td>
     <td>String</td>
-    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
-    <td><code>var(--kendo-neutral-30, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Input separator.</div></div>
@@ -17953,8 +17953,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-prefix-text</td>
     <td>String</td>
-    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
-    <td><code>var(--kendo-neutral-130, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border-alt) 76%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border-alt, #323130) 76%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input prefix.</div></div>
@@ -17963,8 +17963,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-suffix-text</td>
     <td>String</td>
-    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
-    <td><code>var(--kendo-neutral-130, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border-alt) 76%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border-alt, #323130) 76%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input suffix.</div></div>
@@ -17973,8 +17973,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-prefix-disabled-text</td>
     <td>String</td>
-    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
-    <td><code>var(--kendo-neutral-60, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Input prefix.</div></div>
@@ -17983,8 +17983,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-suffix-disabled-text</td>
     <td>String</td>
-    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
-    <td><code>var(--kendo-neutral-60, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Input suffix.</div></div>
@@ -17993,8 +17993,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-invalid-border</td>
     <td>String</td>
-    <td><code>var( --kendo-invalid-border, #{$kendo-invalid-border} )</code></td>
-    <td><code>var(--kendo-invalid-border, var(--kendo-color-error-emphasis, #a4262c))</code></td>
+    <td><code>k-color(error-emphasis)</code></td>
+    <td><code>var(--kendo-color-error-emphasis, #a4262c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid Input components.</div></div>
@@ -18003,8 +18003,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-invalid-text</td>
     <td>String</td>
-    <td><code>var( --kendo-invalid-text, #{$kendo-invalid-text} )</code></td>
-    <td><code>var(--kendo-invalid-text, var(--kendo-color-error-on-surface, #a4262c))</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>var(--kendo-color-error-on-surface, #a4262c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the invalid Input components.</div></div>
@@ -18013,7 +18013,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-placeholder-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -18033,7 +18033,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-clear-value-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -18313,7 +18313,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-icon-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -18391,8 +18391,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, transparent )</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the List component.</div></div>
@@ -18401,8 +18401,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the List component.</div></div>
@@ -18411,8 +18411,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the List component.</div></div>
@@ -18421,7 +18421,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-header-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -18431,7 +18431,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-header-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -18461,7 +18461,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -18471,7 +18471,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -18481,7 +18481,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
@@ -18491,7 +18491,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -18501,7 +18501,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -18511,7 +18511,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-focus-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -18521,7 +18521,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
+    <td><code>inset 0 0 0 1px k-color(base-emphasis)</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -18531,7 +18531,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-get-theme-color-var( neutral-40 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
@@ -18541,7 +18541,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-selected-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -18551,7 +18551,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-selected-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-get-theme-color-var( neutral-50 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
@@ -18561,7 +18561,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-selected-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -18571,7 +18571,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -18581,7 +18581,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), k-get-theme-color-var( neutral-90 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -18591,7 +18591,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-group-item-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -18601,7 +18601,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-group-item-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -18631,7 +18631,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-option-label-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -18641,7 +18641,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-option-label-disabled-text</td>
     <td>String</td>
-    <td><code>$kendo-disabled-text</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -18651,7 +18651,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-no-data-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -18761,8 +18761,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listbox-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ListBox.</div></div>
@@ -18771,8 +18771,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listbox-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, transparent )</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ListBox.</div></div>
@@ -18781,8 +18781,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listbox-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ListBox.</div></div>
@@ -18801,7 +18801,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listbox-drop-hint-border-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -18871,8 +18871,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listgroup-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, transparent )</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the listgroup component.</div></div>
@@ -18881,8 +18881,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listgroup-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the listgroup component.</div></div>
@@ -18891,8 +18891,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listgroup-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the listgroup component.</div></div>
@@ -19081,8 +19081,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listview-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ListView.</div></div>
@@ -19091,8 +19091,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listview-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ListView.</div></div>
@@ -19101,8 +19101,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listview-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ListView.</div></div>
@@ -19132,7 +19132,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-listview-header-border</td>
     <td>String</td>
     <td><code>$kendo-listview-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ListView header.</div></div>
@@ -19171,7 +19171,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listview-item-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
@@ -19481,8 +19481,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-container-panel-border-color</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the container panel.</div></div>
@@ -19501,7 +19501,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-container-panel-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -19633,7 +19633,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>Map</td>
     <td><code>(
     primary: primary,
-    secondary: if($kendo-enable-color-system, secondary, neutral),
+    secondary: secondary,
     tertiary: tertiary,
     error: error,
     success: success,
@@ -19679,8 +19679,8 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-loading-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Loading indicator.</div></div>
@@ -19769,8 +19769,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, transparent )</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Map.</div></div>
@@ -19779,8 +19779,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Map.</div></div>
@@ -19789,7 +19789,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -19879,7 +19879,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-navigator-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -19889,7 +19889,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-navigator-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -19899,7 +19899,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-navigator-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -19969,7 +19969,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-attribution-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -19979,7 +19979,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-marker-fill</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -20049,8 +20049,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-media-player-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the MediaPlayer.</div></div>
@@ -20059,8 +20059,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-media-player-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the MediaPlayer.</div></div>
@@ -20069,8 +20069,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-media-player-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the MediaPlayer.</div></div>
@@ -20079,7 +20079,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-media-player-overlay-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
@@ -20089,7 +20089,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-media-player-quality-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -20129,7 +20129,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-media-player-titlebar-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 40%, transparent), rgba( $kendo-color-black, .4 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 40%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 40%, transparent)</code></td>
 </tr>
 <tr>
@@ -20140,7 +20140,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-media-player-titlebar-text</td>
     <td>String</td>
     <td><code>$kendo-media-player-bg</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the MediaPlayer title.</div></div>
@@ -20219,8 +20219,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-text</td>
     <td>String</td>
-    <td><code>var( --kendo-body-text, inherit )</code></td>
-    <td><code>var(--kendo-body-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Menu.</div></div>
@@ -20300,7 +20300,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-menu-item-text</td>
     <td>String</td>
     <td><code>$kendo-menu-text</code></td>
-    <td><code>var(--kendo-body-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of Menu item.</div></div>
@@ -20319,8 +20319,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-item-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-text, inherit )</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered Menu item.</div></div>
@@ -20329,8 +20329,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-item-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, initial )</code></td>
-    <td><code>var(--kendo-hover-bg, initial)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered Menu item.</div></div>
@@ -20340,7 +20340,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-menu-item-active-text</td>
     <td>String</td>
     <td><code>$kendo-menu-item-hover-text</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of active Menu item.</div></div>
@@ -20349,8 +20349,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-item-active-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-bg, initial )</code></td>
-    <td><code>var(--kendo-selected-bg, initial)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of active Menu item.</div></div>
@@ -20360,7 +20360,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-menu-item-focus-text</td>
     <td>String</td>
     <td><code>$kendo-menu-item-text</code></td>
-    <td><code>var(--kendo-body-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of focused Menu item.</div></div>
@@ -20379,8 +20379,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-item-focus-outline</td>
     <td>String</td>
-    <td><code>var( --kendo-focus-outline, none )</code></td>
-    <td><code>var(--kendo-focus-outline, none)</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
+    <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline of focused Menu item.</div></div>
@@ -20389,8 +20389,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-item-disabled-text</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-text, initial )</code></td>
-    <td><code>var(--kendo-disabled-text, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of disabled Menu item.</div></div>
@@ -20519,8 +20519,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Menu popup.</div></div>
@@ -20698,7 +20698,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-menu-popup-item-focus-text</td>
     <td>String</td>
     <td><code>$kendo-menu-item-text</code></td>
-    <td><code>var(--kendo-body-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of focused Menu items.</div></div>
@@ -20717,7 +20717,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-item-focus-outline</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
@@ -20767,8 +20767,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-scroll-button-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, $kendo-component-bg )</code></td>
-    <td><code>var(--kendo-component-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of Menu scroll buttons.</div></div>
@@ -20777,8 +20777,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-scroll-button-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, $kendo-component-border )</code></td>
-    <td><code>var(--kendo-component-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of Menu scroll buttons.</div></div>
@@ -20807,7 +20807,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-icon-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -20937,8 +20937,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-message-box-link-text</td>
     <td>String</td>
-    <td><code>var( --kendo-link-text, initial )</code></td>
-    <td><code>var(--kendo-link-text, initial)</code></td>
+    <td><code>k-color(primary)</code></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the message box links.</div></div>
@@ -20947,8 +20947,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-message-box-link-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-link-hover-text, initial )</code></td>
-    <td><code>var(--kendo-link-hover-text, initial)</code></td>
+    <td><code>k-color(primary-hover)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover text color of the message box links.</div></div>
@@ -21087,8 +21087,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-notification-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Notification.</div></div>
@@ -21097,8 +21097,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-notification-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Notification.</div></div>
@@ -21107,8 +21107,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-notification-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Notification.</div></div>
@@ -21147,8 +21147,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-notification-icon-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Notification icon.</div></div>
@@ -21163,7 +21163,7 @@ The following table lists the available variables for customizing the Fluent the
     warning: warning,
     success: success,
     info: info,
-    secondary: if($kendo-enable-color-system, secondary, neutral),
+    secondary: secondary,
     tertiary: tertiary,
 )</code></td>
     <td><ul><li>primary: primary</li><li>error: error</li><li>warning: warning</li><li>success: success</li><li>info: info</li><li>secondary: secondary</li><li>tertiary: tertiary</li></ul></td>
@@ -21405,8 +21405,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the OrgChart.</div></div>
@@ -21415,8 +21415,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the OrgChart.</div></div>
@@ -21425,8 +21425,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the OrgChart.</div></div>
@@ -21505,7 +21505,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-node-group-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -21515,7 +21515,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-node-group-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -21525,7 +21525,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-node-group-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
@@ -21536,7 +21536,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-orgchart-node-group-focus-border</td>
     <td>String</td>
     <td><code>$kendo-card-focus-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused OrgChart node group.</div></div>
@@ -21605,8 +21605,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-node-group-subtitle-text</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td><code>var(--kendo-subtle-text, inherit)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart node group subtitle.</div></div>
@@ -21785,7 +21785,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-line-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
@@ -21915,8 +21915,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer.</div></div>
@@ -21925,8 +21925,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer.</div></div>
@@ -21935,8 +21935,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PDFViewer.</div></div>
@@ -21945,7 +21945,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-canvas-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -21955,8 +21955,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-canvas-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the PDF viewer canvas.</div></div>
@@ -21965,8 +21965,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-canvas-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PDFViewer canvas.</div></div>
@@ -21985,8 +21985,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-page-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer page.</div></div>
@@ -21995,8 +21995,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-page-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )!default</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer page.</div></div>
@@ -22005,8 +22005,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-page-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PDFViewer page.</div></div>
@@ -22075,8 +22075,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-search-panel-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer search panel.</div></div>
@@ -22085,8 +22085,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-search-panel-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer search panel.</div></div>
@@ -22095,8 +22095,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-search-panel-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )!default</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PDFViewer search panel.</div></div>
@@ -22145,8 +22145,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-search-highlight-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer highlight.</div></div>
@@ -22195,7 +22195,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-highlight-annotation-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -22205,7 +22205,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-highlight-annotation-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -22215,7 +22215,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-free-text-annotation-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -22385,7 +22385,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -22395,8 +22395,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Pager.</div></div>
@@ -22405,8 +22405,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Pager.</div></div>
@@ -22426,7 +22426,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-pager-focus-text</td>
     <td>String</td>
     <td><code>var( --kendo-pager-text, #{$kendo-pager-text})</code></td>
-    <td><code>var(--kendo-pager-text, var(--kendo-component-text, inherit))</code></td>
+    <td><code>var(--kendo-pager-text, var(--kendo-color-on-app-surface, #323130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Pager.</div></div>
@@ -22435,7 +22435,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -22495,7 +22495,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-sizes-label-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -22505,7 +22505,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-info-label-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -22911,8 +22911,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panel-text</td>
     <td>String</td>
-    <td><code>var(--kendo-component-text, #{$kendo-component-text})</code></td>
-    <td><code>var(--kendo-component-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Panel.</div></div>
@@ -22921,8 +22921,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panel-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-component-bg, #{$kendo-component-bg})</code></td>
-    <td><code>var(--kendo-component-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Panel.</div></div>
@@ -22931,8 +22931,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panel-border</td>
     <td>String</td>
-    <td><code>var(--kendo-component-border, #{$kendo-component-border})</code></td>
-    <td><code>var(--kendo-component-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the Panel.</div></div>
@@ -23131,8 +23131,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PanelBar.</div></div>
@@ -23141,8 +23141,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PanelBar.</div></div>
@@ -23151,8 +23151,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PanelBar.</div></div>
@@ -23162,7 +23162,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-header-bg</td>
     <td>String</td>
     <td><code>var( --kendo-panelbar-bg, #{$kendo-panelbar-bg} )</code></td>
-    <td><code>var(--kendo-panelbar-bg, var(--kendo-component-bg, initial))</code></td>
+    <td><code>var(--kendo-panelbar-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PanelBar header.</div></div>
@@ -23172,7 +23172,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-header-text</td>
     <td>String</td>
     <td><code>var( --kendo-panelbar-text, #{$kendo-panelbar-text} )</code></td>
-    <td><code>var(--kendo-panelbar-text, var(--kendo-component-text, initial))</code></td>
+    <td><code>var(--kendo-panelbar-text, var(--kendo-color-on-app-surface, #323130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PanelBar header.</div></div>
@@ -23191,8 +23191,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-header-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered PanelBar header.</div></div>
@@ -23201,7 +23201,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-header-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -23262,7 +23262,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-header-hover-focus-bg</td>
     <td>String</td>
     <td><code>$kendo-panelbar-header-hover-bg</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused and hovered PanelBar header.</div></div>
@@ -23291,8 +23291,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-header-selected-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-bg, inherit )</code></td>
-    <td><code>var(--kendo-selected-bg, inherit)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected PanelBar header.</div></div>
@@ -23301,7 +23301,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-header-selected-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -23321,7 +23321,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-selected-marker</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -23332,7 +23332,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-header-selected-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-panelbar-header-selected-bg</code></td>
-    <td><code>var(--kendo-selected-bg, inherit)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered PanelBar header.</div></div>
@@ -23362,7 +23362,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-header-selected-focus-bg</td>
     <td>String</td>
     <td><code>$kendo-panelbar-header-selected-bg</code></td>
-    <td><code>var(--kendo-selected-bg, inherit)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and focused PanelBar header.</div></div>
@@ -23392,7 +23392,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-header-selected-hover-focus-bg</td>
     <td>String</td>
     <td><code>$kendo-panelbar-header-selected-hover-bg</code></td>
-    <td><code>var(--kendo-selected-bg, inherit)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected, hovered and focused PanelBar header.</div></div>
@@ -23451,8 +23451,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-item-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered PanelBar items.</div></div>
@@ -23461,7 +23461,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-item-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -23522,7 +23522,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-item-hover-focus-bg</td>
     <td>String</td>
     <td><code>$kendo-panelbar-item-hover-bg</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused and hovered PanelBar items.</div></div>
@@ -23551,8 +23551,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-item-selected-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-bg, inherit )</code></td>
-    <td><code>var(--kendo-selected-bg, inherit)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected PanelBar items.</div></div>
@@ -23561,7 +23561,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-item-selected-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -23582,7 +23582,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-item-selected-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-panelbar-item-selected-bg</code></td>
-    <td><code>var(--kendo-selected-bg, inherit)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered PanelBar items.</div></div>
@@ -23612,7 +23612,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-item-selected-focus-bg</td>
     <td>String</td>
     <td><code>$kendo-panelbar-item-selected-bg</code></td>
-    <td><code>var(--kendo-selected-bg, inherit)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and focused PanelBar items.</div></div>
@@ -23642,7 +23642,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-item-selected-hover-focus-bg</td>
     <td>String</td>
     <td><code>$kendo-panelbar-item-selected-hover-bg</code></td>
-    <td><code>var(--kendo-selected-bg, inherit)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected, hovered and focused PanelBar items.</div></div>
@@ -23771,8 +23771,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid.</div></div>
@@ -23781,8 +23781,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid.</div></div>
@@ -23791,8 +23791,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid.</div></div>
@@ -23802,7 +23802,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-pivotgrid-alt-border</td>
     <td>String</td>
     <td><code>$kendo-pivotgrid-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The alt border color of the PivotGrid.</div></div>
@@ -23861,8 +23861,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-headers-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid header.</div></div>
@@ -23871,7 +23871,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-headers-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -23881,8 +23881,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-headers-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid header.</div></div>
@@ -23891,7 +23891,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-total-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
@@ -23901,8 +23901,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-total-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid total cells.</div></div>
@@ -23911,8 +23911,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-total-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid total cells.</div></div>
@@ -23921,8 +23921,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the PivotGrid.</div></div>
@@ -23951,8 +23951,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-selected-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-bg, inherit )</code></td>
-    <td><code>var(--kendo-selected-bg, inherit)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected background color of the PivotGrid.</div></div>
@@ -24131,8 +24131,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-configurator-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid configurator.</div></div>
@@ -24141,7 +24141,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-configurator-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -24151,8 +24151,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-configurator-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )!default</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid configurator.</div></div>
@@ -24161,8 +24161,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-configurator-header-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid configurator header.</div></div>
@@ -24171,8 +24171,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-configurator-header-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid configurator header.</div></div>
@@ -24291,8 +24291,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-calculated-field-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid calculated field.</div></div>
@@ -24301,8 +24301,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-calculated-field-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid calculated field.</div></div>
@@ -24311,8 +24311,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-calculated-field-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid calculated field.</div></div>
@@ -24331,8 +24331,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-calculated-field-header-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid calculated field header.</div></div>
@@ -24451,8 +24451,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-popover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Popover.</div></div>
@@ -24461,8 +24461,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-popover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Popover.</div></div>
@@ -24471,8 +24471,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-popover-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Popover.</div></div>
@@ -24532,7 +24532,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-popover-header-text</td>
     <td>String</td>
     <td><code>$kendo-dialog-titlebar-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Popover header.</div></div>
@@ -24542,7 +24542,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-popover-header-bg</td>
     <td>String</td>
     <td><code>$kendo-dialog-titlebar-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Popover header.</div></div>
@@ -24552,7 +24552,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-popover-header-border</td>
     <td>String</td>
     <td><code>$kendo-dialog-titlebar-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Popover header.</div></div>
@@ -24761,8 +24761,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-popup-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the popup.</div></div>
@@ -24771,8 +24771,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-popup-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the popup.</div></div>
@@ -24781,8 +24781,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-popup-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the popup.</div></div>
@@ -24921,7 +24921,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
@@ -24931,8 +24931,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ProgressBar.</div></div>
@@ -24961,7 +24961,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-value-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -24971,8 +24971,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-value-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The progress text color of the ProgressBar.</div></div>
@@ -25021,7 +25021,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 6%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 6%, transparent)</code></td>
 </tr>
 <tr>
@@ -25031,7 +25031,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), k-get-theme-color-var( neutral-90 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -25051,7 +25051,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-value-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), k-get-theme-color-var( primary-30 ))</code></td>
+    <td><code>k-color(primary-subtle)</code></td>
     <td><code>var(--kendo-color-primary-subtle, #deecf9)</code></td>
 </tr>
 <tr>
@@ -25061,7 +25061,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-indeterminate-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
@@ -25072,7 +25072,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-progressbar-indeterminate-text</td>
     <td>String</td>
     <td><code>$kendo-progressbar-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the indeterminate ProgressBar.</div></div>
@@ -25081,7 +25081,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-indeterminate-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
@@ -25091,7 +25091,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-indeterminate-gradient-horizontal</td>
     <td>String</td>
-    <td><code>linear-gradient(270deg, if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-30 )) 15%, if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) 50%, if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-30 )) 85%)</code></td>
+    <td><code>linear-gradient(270deg, k-color(base-subtle) 15%, k-color(primary) 50%, k-color(base-subtle) 85%)</code></td>
     <td><code>linear-gradient(270deg, var(--kendo-color-base-subtle, #edebe9) 15%, var(--kendo-color-primary, #0078d4) 50%, var(--kendo-color-base-subtle, #edebe9) 85%)</code></td>
 </tr>
 <tr>
@@ -25101,8 +25101,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-indeterminate-gradient-vertical</td>
     <td>String</td>
-    <td><code>linear-gradient(180deg, if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-30 )) 15%, if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) 50%, if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-30 )) 85%)</code></td>
-    <td><code>linear-gradient(180deg, var(--kendo-color-base-subtle, #edebe9) 15%, var(--kendo-color-primary, #0078d4) 50%, var(--kendo-color-base-subtle, #edebe9) 85%)</code></td>
+    <td><code>linear-gradient(180deg, k-color(base-subtle) 15%, k-color(primary) 50% k-color(base-subtle) 85%)</code></td>
+    <td><code>linear-gradient(180deg, var(--kendo-color-base-subtle, #edebe9) 15%, var(--kendo-color-primary, #0078d4) 50% var(--kendo-color-base-subtle, #edebe9) 85%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the vertical indeterminate ProgressBar.</div></div>
@@ -25131,8 +25131,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-chunk-border</td>
     <td>String</td>
-    <td><code>var( --kendo-body-bg, initial )</code></td>
-    <td><code>var(--kendo-body-bg, initial)</code></td>
+    <td><code>k-color(app-surface)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the chunk ProgressBar.</div></div>
@@ -25141,7 +25141,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-circular-progressbar-arc-stroke</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -25181,8 +25181,8 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-prompt-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt.</div></div>
@@ -25191,8 +25191,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt.</div></div>
@@ -25201,8 +25201,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AIPrompt.</div></div>
@@ -25211,8 +25211,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-header-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt header.</div></div>
@@ -25221,8 +25221,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-header-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt header.</div></div>
@@ -25231,8 +25231,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-header-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AIPrompt header.</div></div>
@@ -25271,8 +25271,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-content-text</td>
     <td>String</td>
-    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
-    <td><code>var(--kendo-neutral-190, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt content.</div></div>
@@ -25281,8 +25281,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-content-bg</td>
     <td>String</td>
-    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
-    <td><code>var(--kendo-neutral-10, inherit)</code></td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt content.</div></div>
@@ -25291,8 +25291,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-content-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text border of the AIPrompt content.</div></div>
@@ -25341,8 +25341,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-suggestion-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt suggestion container.</div></div>
@@ -25351,8 +25351,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-suggestion-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt suggestion container.</div></div>
@@ -25361,8 +25361,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-suggestion-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AIPrompt suggestion container.</div></div>
@@ -25450,7 +25450,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -25470,7 +25470,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, #323130)</code></td>
 </tr>
 <tr>
@@ -25490,7 +25490,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color( neutral, 130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -25520,7 +25520,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-checked-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -25530,7 +25530,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-checked-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -25550,7 +25550,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-hover-checked-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -25560,7 +25560,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-hover-checked-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -25590,7 +25590,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-focus-outline</td>
     <td>List</td>
-    <td><code>1px solid if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>1px solid k-color(base-emphasis)</code></td>
     <td><code>(1px solid var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -25620,7 +25620,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -25630,7 +25630,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-disabled-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -25680,7 +25680,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-invalid-text</td>
     <td>String</td>
-    <td><code>$kendo-invalid-text</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
     <td><code>var(--kendo-color-error-on-surface, #a4262c)</code></td>
 </tr>
 <tr>
@@ -25690,7 +25690,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-invalid-border</td>
     <td>String</td>
-    <td><code>$kendo-invalid-border</code></td>
+    <td><code>k-color(error-emphasis)</code></td>
     <td><code>var(--kendo-color-error-emphasis, #a4262c)</code></td>
 </tr>
 <tr>
@@ -25810,7 +25810,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-ripple-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -25910,7 +25910,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-rating-item-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -25920,7 +25920,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-rating-item-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -25970,7 +25970,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-rating-item-selected-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -25980,7 +25980,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-rating-item-selected-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-active ), k-get-theme-color-var( primary-120 ))</code></td>
+    <td><code>k-color(primary-active)</code></td>
     <td><code>var(--kendo-color-primary-active, #005a9e)</code></td>
 </tr>
 <tr>
@@ -26050,8 +26050,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler.</div></div>
@@ -26060,8 +26060,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Scheduler.</div></div>
@@ -26070,8 +26070,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Scheduler.</div></div>
@@ -26080,7 +26080,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), k-get-theme-color-var( primary-20 ))</code></td>
+    <td><code>k-color(primary-subtle)</code></td>
     <td><code>var(--kendo-color-primary-subtle, #deecf9)</code></td>
 </tr>
 <tr>
@@ -26091,7 +26091,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-scheduler-selected-text</td>
     <td>String</td>
     <td><code>$kendo-scheduler-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected row in Scheduler.</div></div>
@@ -26101,7 +26101,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-scheduler-selected-border</td>
     <td>String</td>
     <td><code>$kendo-scheduler-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected row in Scheduler.</div></div>
@@ -26121,7 +26121,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-scheduler-toolbar-text</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-text, $kendo-toolbar-text )</code></td>
-    <td><code>var(--kendo-toolbar-text, var(--kendo-component-text, inherit))</code></td>
+    <td><code>var(--kendo-toolbar-text, var(--kendo-color-on-app-surface, #323130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Scheduler ToolBar.</div></div>
@@ -26131,7 +26131,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-scheduler-toolbar-border</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-border, $kendo-toolbar-border )</code></td>
-    <td><code>var(--kendo-toolbar-border, var(--kendo-component-border, initial))</code></td>
+    <td><code>var(--kendo-toolbar-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Scheduler ToolBar.</div></div>
@@ -26161,7 +26161,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-scheduler-footer-text</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-text, $kendo-toolbar-text )</code></td>
-    <td><code>var(--kendo-toolbar-text, var(--kendo-component-text, inherit))</code></td>
+    <td><code>var(--kendo-toolbar-text, var(--kendo-color-on-app-surface, #323130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Scheduler footer.</div></div>
@@ -26171,7 +26171,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-scheduler-footer-border</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-border, $kendo-toolbar-border )</code></td>
-    <td><code>var(--kendo-toolbar-border, var(--kendo-component-border, initial))</code></td>
+    <td><code>var(--kendo-toolbar-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Scheduler footer.</div></div>
@@ -26240,7 +26240,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-event-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -26250,7 +26250,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-event-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -26290,8 +26290,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-event-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Scheduler event.</div></div>
@@ -26300,8 +26300,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-event-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-text, inherit )</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Scheduler event.</div></div>
@@ -26310,8 +26310,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-event-hover-border</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-border, inherit )</code></td>
-    <td><code>var(--kendo-hover-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 10%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Scheduler event.</div></div>
@@ -26340,7 +26340,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-event-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-active ), k-get-theme-color-var( primary-120 ))</code></td>
+    <td><code>k-color(primary-active)</code></td>
     <td><code>var(--kendo-color-primary-active, #005a9e)</code></td>
 </tr>
 <tr>
@@ -26450,7 +26450,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-nonwork-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -26490,7 +26490,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-othermonth-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -26580,7 +26580,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-yearview-indicator-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -26590,7 +26590,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-yearview-indicator-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -26630,7 +26630,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-tooltip-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -26640,7 +26640,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-tooltip-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -26790,7 +26790,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-marquee-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -26860,8 +26860,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ScrollView.</div></div>
@@ -26870,8 +26870,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView.</div></div>
@@ -26880,8 +26880,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ScrollView.</div></div>
@@ -26900,7 +26900,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-pagebutton-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -26920,7 +26920,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-pagebutton-primary-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -26940,7 +26940,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-pagebutton-hover-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 1px if($kendo-enable-color-system, k-color( base ), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>0 0 0 1px k-color(base)</code></td>
     <td><code>(0 0 0 1px var(--kendo-color-base, #ffffff))</code></td>
 </tr>
 <tr>
@@ -26950,7 +26950,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-pagebutton-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>0 0 0 1px k-color(base-emphasis)</code></td>
     <td><code>(0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -26960,7 +26960,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-pagebutton-primary-hover-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px if($kendo-enable-color-system, k-color( base ), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>0 0 0 2px k-color(base)</code></td>
     <td><code>(0 0 0 2px var(--kendo-color-base, #ffffff))</code></td>
 </tr>
 <tr>
@@ -26970,7 +26970,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-pagebutton-primary-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>0 0 0 2px k-color(base-emphasis)</code></td>
     <td><code>(0 0 0 2px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -27020,7 +27020,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-navigation-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -27050,7 +27050,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-navigation-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>0 0 0 1px k-color(base-emphasis)</code></td>
     <td><code>(0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -27130,7 +27130,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-searchbox-icon-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -27250,7 +27250,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-signature-line-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( info ) 40%, transparent), rgba( k-get-theme-color( info, 100 ), .4 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(info) 40%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-info, #0a7eff) 40%, transparent)</code></td>
 </tr>
 <tr>
@@ -27260,7 +27260,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-signature-line-disabled-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -27406,7 +27406,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-skeleton-item-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 23%, transparent), k-get-theme-color-var( neutral-50 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 23%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 23%, transparent)</code></td>
 </tr>
 <tr>
@@ -27416,7 +27416,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-skeleton-wave-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base ), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>k-color(base)</code></td>
     <td><code>var(--kendo-color-base, #ffffff)</code></td>
 </tr>
 <tr>
@@ -27536,7 +27536,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-track-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
@@ -27556,7 +27556,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-track-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
@@ -27576,7 +27576,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-track-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
@@ -27596,7 +27596,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-selection-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -27656,8 +27656,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-thumb-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, transparent )</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider thumb.</div></div>
@@ -27676,7 +27676,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-thumb-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -27697,7 +27697,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-slider-thumb-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-slider-thumb-bg</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Slider thumb.</div></div>
@@ -27716,7 +27716,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-thumb-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-120 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -27737,7 +27737,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-slider-thumb-active-bg</td>
     <td>String</td>
     <td><code>$kendo-slider-thumb-hover-bg</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Slider thumb.</div></div>
@@ -27756,7 +27756,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-thumb-active-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-active ), k-get-theme-color-var( primary-130 ))</code></td>
+    <td><code>k-color(primary-active)</code></td>
     <td><code>var(--kendo-color-primary-active, #005a9e)</code></td>
 </tr>
 <tr>
@@ -27777,7 +27777,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-slider-thumb-focus-bg</td>
     <td>String</td>
     <td><code>$kendo-slider-thumb-hover-bg</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Slider thumb.</div></div>
@@ -27816,7 +27816,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 70%, transparent), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 70%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 70%, transparent)</code></td>
 </tr>
 <tr>
@@ -27826,7 +27826,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-track-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 6%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 6%, transparent)</code></td>
 </tr>
 <tr>
@@ -27836,7 +27836,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-selection-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), k-get-theme-color-var( neutral-90 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -27846,7 +27846,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-thumb-disabled-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -28046,7 +28046,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-split-button-arrow-delimiter-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -28130,8 +28130,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitter-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Splitter.</div></div>
@@ -28140,8 +28140,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitter-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Splitter.</div></div>
@@ -28150,8 +28150,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitter-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Splitter.</div></div>
@@ -28220,7 +28220,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitbar-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -28230,8 +28230,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitbar-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Splitter split bar.</div></div>
@@ -28240,7 +28240,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitbar-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
@@ -28251,7 +28251,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-splitbar-hover-text</td>
     <td>String</td>
     <td><code>$kendo-splitbar-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the Splitter split bar.</div></div>
@@ -28260,7 +28260,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitbar-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -28270,8 +28270,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitbar-selected-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected text color of the Splitter split bar.</div></div>
@@ -28350,8 +28350,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet.</div></div>
@@ -28360,8 +28360,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Spreadsheet.</div></div>
@@ -28370,8 +28370,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet.</div></div>
@@ -28380,7 +28380,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-primary-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -28390,7 +28390,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-primary-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -28400,7 +28400,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-header-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -28421,7 +28421,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-spreadsheet-header-border</td>
     <td>String</td>
     <td><code>$kendo-table-header-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet header.</div></div>
@@ -28430,7 +28430,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-table-header-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -28451,7 +28451,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-spreadsheet-table-header-border</td>
     <td>String</td>
     <td><code>$kendo-spreadsheet-header-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet table headers.</div></div>
@@ -28460,7 +28460,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-selected-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-on-subtle ), k-get-theme-color-var( primary-160 ))</code></td>
+    <td><code>k-color(primary-on-subtle)</code></td>
     <td><code>var(--kendo-color-primary-on-subtle, #001c30)</code></td>
 </tr>
 <tr>
@@ -28470,7 +28470,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-subtle-active ), k-get-theme-color-var( primary-30 ))</code></td>
+    <td><code>k-color(primary-subtle-active)</code></td>
     <td><code>var(--kendo-color-primary-subtle-active, #abd1ef)</code></td>
 </tr>
 <tr>
@@ -28480,7 +28480,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-selected-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -28691,7 +28691,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-spreadsheet-single-selection-border</td>
     <td>String</td>
     <td><code>$kendo-spreadsheet-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet single selection.</div></div>
@@ -28711,7 +28711,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-spreadsheet-active-cell-bg</td>
     <td>String</td>
     <td><code>$kendo-spreadsheet-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet active cell.</div></div>
@@ -28771,7 +28771,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-spreadsheet-auto-fill-punch-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, $kendo-spreadsheet-bg 50%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-component-bg, initial) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-surface-alt, #ffffff) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet auto fill punch.</div></div>
@@ -28831,7 +28831,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-spreadsheet-cell-editor-bg</td>
     <td>String</td>
     <td><code>$kendo-spreadsheet-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet cell editor.</div></div>
@@ -28841,7 +28841,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-spreadsheet-cell-editor-text</td>
     <td>String</td>
     <td><code>$kendo-spreadsheet-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Spreadsheet cell editor.</div></div>
@@ -28860,7 +28860,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-resize-handle-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -28870,7 +28870,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-cell-comment-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -28880,7 +28880,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-cell-dirty-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( error ), k-get-theme-color-var( error-100 ))</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #c2666b)</code></td>
 </tr>
 <tr>
@@ -28950,7 +28950,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -28960,7 +28960,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -28970,7 +28970,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -28980,7 +28980,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -28990,7 +28990,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
@@ -29000,7 +29000,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -29010,7 +29010,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-active-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -29020,8 +29020,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-active-bg</td>
     <td>String</td>
-    <td><code>f($kendo-enable-color-system, k-color( base-active ), k-get-theme-color-var( neutral-30 ))</code></td>
-    <td><code>f(true, var(--kendo-color-base-active, #edebe9), var(--kendo-neutral-30, inherit))</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Spreadsheet filter Button.</div></div>
@@ -29030,7 +29030,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-active-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -29040,7 +29040,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-menu-icon-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -29050,7 +29050,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-error-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( error-on-subtle ), k-get-theme-color-var( error-190 ))</code></td>
+    <td><code>k-color(error-on-subtle)</code></td>
     <td><code>var(--kendo-color-error-on-subtle, #420f12)</code></td>
 </tr>
 <tr>
@@ -29120,8 +29120,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-preview-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the Spreadsheet image Dialog preview.</div></div>
@@ -29160,8 +29160,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-overlay-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Spreadsheet image Dialog preview.</div></div>
@@ -29210,8 +29210,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-drawing-handle-border-color</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-bg, initial )</code></td>
-    <td><code>var(--kendo-selected-bg, initial)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet drawing handle.</div></div>
@@ -29220,7 +29220,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-drawing-handle-outline-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -29230,7 +29230,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-drawing-handle-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -29370,8 +29370,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper.</div></div>
@@ -29530,8 +29530,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper indicator.</div></div>
@@ -29540,8 +29540,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper indicator.</div></div>
@@ -29550,7 +29550,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -29560,8 +29560,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, initial )</code></td>
-    <td><code>var(--kendo-hover-bg, initial)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Stepper indicator.</div></div>
@@ -29570,8 +29570,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-text, initial )</code></td>
-    <td><code>var(--kendo-hover-text, initial)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Stepper indicator.</div></div>
@@ -29590,8 +29590,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-disabled-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-bg, initial )</code></td>
-    <td><code>var(--kendo-disabled-bg, initial)</code></td>
+    <td><code>k-color(base-subtle)</code></td>
+    <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Stepper indicator.</div></div>
@@ -29600,8 +29600,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-disabled-text</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-text, initial)</code></td>
-    <td><code>var(--kendo-disabled-text, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Stepper indicator.</div></div>
@@ -29609,9 +29609,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-stepper-indicator-disabled-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-disabled-border, initial )</code></td>
-    <td><code>var(--kendo-disabled-border, initial)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled Stepper indicator.</div></div>
@@ -29620,7 +29620,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-done-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -29630,7 +29630,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-done-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), $kendo-color-white)</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -29650,7 +29650,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-done-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -29680,7 +29680,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-done-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 22%, transparent), k-get-theme-color-var( primary-30 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 22%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #0078d4) 22%, transparent)</code></td>
 </tr>
 <tr>
@@ -29690,8 +29690,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-done-disabled-text</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-text, initial )</code></td>
-    <td><code>var(--kendo-disabled-text, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's disabled done indicator.</div></div>
@@ -29699,9 +29699,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-stepper-indicator-done-disabled-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-disabled-border, initial )</code></td>
-    <td><code>var(--kendo-disabled-border, initial)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's disabled done indicator.</div></div>
@@ -29710,7 +29710,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-current-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-active ), k-get-theme-color-var( primary-120 ))</code></td>
+    <td><code>k-color(primary-active)</code></td>
     <td><code>var(--kendo-color-primary-active, #005a9e)</code></td>
 </tr>
 <tr>
@@ -29781,7 +29781,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-stepper-indicator-current-disabled-text</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-disabled-text</code></td>
-    <td><code>var(--kendo-disabled-text, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's disabled current indicator.</div></div>
@@ -29789,9 +29789,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-stepper-indicator-current-disabled-border</td>
-    <td>String</td>
+    <td>Color</td>
     <td><code>$kendo-stepper-indicator-done-disabled-border</code></td>
-    <td><code>var(--kendo-disabled-border, initial)</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's disabled current indicator.</div></div>
@@ -29810,7 +29810,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-label-success-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( success-on-surface ), k-get-theme-color-var( success-190 ))</code></td>
+    <td><code>k-color(success-on-surface)</code></td>
     <td><code>var(--kendo-color-success-on-surface, #107c10)</code></td>
 </tr>
 <tr>
@@ -29820,7 +29820,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-label-error-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( error-on-surface ), k-get-theme-color-var( error-190 ))</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
     <td><code>var(--kendo-color-error-on-surface, #a4262c)</code></td>
 </tr>
 <tr>
@@ -29831,7 +29831,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-stepper-label-hover-text</td>
     <td>String</td>
     <td><code>$kendo-stepper-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Stepper label.</div></div>
@@ -29840,8 +29840,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-label-disabled-text</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-text, initial )</code></td>
-    <td><code>var(--kendo-disabled-text, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Stepper label.</div></div>
@@ -29860,7 +29860,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-optional-label-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -30014,7 +30014,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-focus-ring</td>
     <td>List</td>
-    <td><code>1px solid if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>1px solid k-color(base-emphasis)</code></td>
     <td><code>(1px solid var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -30024,8 +30024,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-track-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, transparent )</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the Switch is not checked.</div></div>
@@ -30034,8 +30034,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-track-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the Switch is not checked.</div></div>
@@ -30044,7 +30044,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-track-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -30054,8 +30054,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-track-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, transparent )</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the hovered Switch is not checked.</div></div>
@@ -30064,8 +30064,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-track-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the hovered Switch is not checked.</div></div>
@@ -30074,7 +30074,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-track-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, #323130)</code></td>
 </tr>
 <tr>
@@ -30084,8 +30084,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-track-focus-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, transparent )</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the focused Switch is not checked.</div></div>
@@ -30094,8 +30094,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-track-focus-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the focused Switch is not checked.</div></div>
@@ -30104,7 +30104,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-track-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -30114,8 +30114,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-track-disabled-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, transparent )</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the disabled Switch is not checked.</div></div>
@@ -30124,8 +30124,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-track-disabled-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the disabled Switch is not checked.</div></div>
@@ -30134,7 +30134,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-track-disabled-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -30144,7 +30144,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-thumb-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -30164,7 +30164,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-thumb-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -30174,7 +30174,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-thumb-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -30194,7 +30194,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-thumb-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, #323130)</code></td>
 </tr>
 <tr>
@@ -30204,7 +30204,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-thumb-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -30224,7 +30224,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-thumb-disabled-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -30234,7 +30234,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -30244,7 +30244,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -30264,7 +30264,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -30274,7 +30274,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -30294,7 +30294,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -30304,7 +30304,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-focus-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -30324,7 +30324,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -30334,7 +30334,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -30344,7 +30344,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-disabled-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, transparent, $kendo-switch-on-track-disabled-bg)</code></td>
+    <td><code>transparent</code></td>
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
@@ -30354,7 +30354,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-thumb-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -30384,7 +30384,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-thumb-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -30414,7 +30414,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-thumb-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -30434,7 +30434,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-thumb-disabled-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 6%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 6%, transparent)</code></td>
 </tr>
 <tr>
@@ -30562,8 +30562,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-table-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tables.</div></div>
@@ -30572,8 +30572,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-table-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tables.</div></div>
@@ -30582,8 +30582,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-table-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tables.</div></div>
@@ -30593,7 +30593,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-header-bg</td>
     <td>String</td>
     <td><code>$kendo-table-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of table headers.</div></div>
@@ -30602,7 +30602,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-table-header-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -30613,7 +30613,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-header-border</td>
     <td>String</td>
     <td><code>$kendo-table-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of table headers.</div></div>
@@ -30663,7 +30663,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-footer-bg</td>
     <td>String</td>
     <td><code>$kendo-table-header-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of table footers.</div></div>
@@ -30683,7 +30683,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-footer-border</td>
     <td>String</td>
     <td><code>$kendo-table-header-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of table footers.</div></div>
@@ -30693,7 +30693,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-group-row-bg</td>
     <td>String</td>
     <td><code>$kendo-table-header-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of group rows in table.</div></div>
@@ -30713,7 +30713,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-group-row-border</td>
     <td>String</td>
     <td><code>$kendo-table-header-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of group rows in table.</div></div>
@@ -30723,7 +30723,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-group-label-text</td>
     <td>String</td>
     <td><code>$kendo-list-bg</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of group label in table.</div></div>
@@ -30733,7 +30733,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-group-label-bg</td>
     <td>String</td>
     <td><code>$kendo-list-text</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of group label in table.</div></div>
@@ -30753,7 +30753,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-alt-row-text</td>
     <td>String</td>
     <td><code>$kendo-table-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of alternating rows in table.</div></div>
@@ -30763,7 +30763,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-alt-row-border</td>
     <td>String</td>
     <td><code>$kendo-table-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of alternating rows in table.</div></div>
@@ -30772,8 +30772,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-table-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered rows in table.</div></div>
@@ -30782,8 +30782,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-table-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-text, inherit )</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered rows in table.</div></div>
@@ -30793,7 +30793,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-hover-border</td>
     <td>String</td>
     <td><code>$kendo-table-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered rows in table.</div></div>
@@ -30842,7 +30842,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-table-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 13%, transparent), k-get-theme-color-var( primary-20 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 13%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #0078d4) 13%, transparent)</code></td>
 </tr>
 <tr>
@@ -30853,7 +30853,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-selected-text</td>
     <td>String</td>
     <td><code>$kendo-table-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected rows in table.</div></div>
@@ -30863,7 +30863,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-selected-border</td>
     <td>String</td>
     <td><code>$kendo-table-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in table.</div></div>
@@ -30872,7 +30872,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-table-selected-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 26%, transparent), k-get-theme-color-var( primary-30 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 26%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #0078d4) 26%, transparent)</code></td>
 </tr>
 <tr>
@@ -30883,7 +30883,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-selected-hover-text</td>
     <td>String</td>
     <td><code>$kendo-table-selected-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover text color of selected rows in table.</div></div>
@@ -30893,7 +30893,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-selected-hover-border</td>
     <td>String</td>
     <td><code>$kendo-table-selected-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover border color of selected rows in table.</div></div>
@@ -30903,7 +30903,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-cell-row-span-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-table-border</code></td>
-    <td><code>(inset 0 0 0 1px var(--kendo-component-border, initial))</code></td>
+    <td><code>(inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the row spanned cells.</div></div>
@@ -31102,8 +31102,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TabStrip.</div></div>
@@ -31242,8 +31242,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-item-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TabStrip items.</div></div>
@@ -31262,8 +31262,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-item-disabled-text</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-text, initial )</code></td>
-    <td><code>var(--kendo-disabled-text, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled TabStrip items.</div></div>
@@ -31281,9 +31281,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-tabstrip-item-disabled-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-disabled-border, initial )</code></td>
-    <td><code>var(--kendo-disabled-border, initial)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled TabStrip items.</div></div>
@@ -31312,8 +31312,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-item-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered TabStrip items.</div></div>
@@ -31322,8 +31322,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-item-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-text, inherit )</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered TabStrip items.</div></div>
@@ -31332,8 +31332,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-item-hover-border</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered TabStrip items.</div></div>
@@ -31342,8 +31342,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-item-selected-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, transparent )</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected TabStrip items.</div></div>
@@ -31352,7 +31352,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-item-selected-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -31362,7 +31362,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-item-selected-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -31392,7 +31392,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-item-dragging-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -31412,7 +31412,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-indicator-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -31452,8 +31452,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-content-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, transparent )</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TabStrip content.</div></div>
@@ -31462,8 +31462,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-content-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TabStrip content.</div></div>
@@ -31482,8 +31482,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-content-focus-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused TabStrip content.</div></div>
@@ -31512,7 +31512,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-scroll-overlay</td>
     <td>List</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), rgba( $kendo-color-white, 0)), if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0))</code></td>
+    <td><code>k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
     <td><code>(var(--kendo-color-app-surface, #ffffff), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
 </tr>
 <tr>
@@ -31651,8 +31651,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard.</div></div>
@@ -31661,8 +31661,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard.</div></div>
@@ -31671,8 +31671,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard.</div></div>
@@ -31771,7 +31771,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-column-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -31781,8 +31781,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-column-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard column.</div></div>
@@ -31812,7 +31812,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-taskboard-column-focus-text</td>
     <td>String</td>
     <td><code>$kendo-taskboard-column-text</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused TaskBoard column.</div></div>
@@ -31821,7 +31821,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-column-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -31881,8 +31881,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-column-header-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard column header.</div></div>
@@ -31961,8 +31961,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-pane-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard pane.</div></div>
@@ -31971,8 +31971,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-pane-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard pane.</div></div>
@@ -31981,8 +31981,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-pane-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard pane.</div></div>
@@ -32032,7 +32032,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-taskboard-pane-header-text</td>
     <td>String</td>
     <td><code>$kendo-taskboard-pane-text</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard pane header.</div></div>
@@ -32121,7 +32121,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-card-selected-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -32181,7 +32181,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-drag-placeholder-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 23%, transparent), k-get-theme-color-var( neutral-50 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 23%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 23%, transparent)</code></td>
 </tr>
 <tr>
@@ -32191,8 +32191,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-drag-placeholder-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard Card placeholder.</div></div>
@@ -32231,7 +32231,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tile-layout-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -32281,8 +32281,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tile-layout-hint-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the TileLayout hint.</div></div>
@@ -32401,8 +32401,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-time-selector-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the time-selector.</div></div>
@@ -32411,8 +32411,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-time-selector-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the time-selector.</div></div>
@@ -32421,8 +32421,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-time-selector-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the time-selector.</div></div>
@@ -32531,8 +32531,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-time-list-title-text</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td><code>var(--kendo-subtle-text, inherit)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the time-selector titles.</div></div>
@@ -32542,7 +32542,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-time-list-title-focus-text</td>
     <td>String</td>
     <td><code>$kendo-time-selector-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the focused time-selector titles.</div></div>
@@ -32592,7 +32592,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-time-list-highlight-bg</td>
     <td>String</td>
     <td><code>$kendo-time-selector-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the selected item in the time-selector.</div></div>
@@ -32602,7 +32602,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-time-list-highlight-border</td>
     <td>String</td>
     <td><code>$kendo-time-selector-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the selected item in the time-selector.</div></div>
@@ -32880,7 +32880,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-track-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -32890,7 +32890,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-track-border-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
@@ -32910,8 +32910,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-bg, initial )</code></td>
-    <td><code>var(--kendo-disabled-bg, initial)</code></td>
+    <td><code>k-color(base-subtle)</code></td>
+    <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Timeline arrow.</div></div>
@@ -32920,8 +32920,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-text</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-text, initial )</code></td>
-    <td><code>var(--kendo-disabled-text, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Timeline arrow.</div></div>
@@ -32929,9 +32929,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-disabled-border, initial)</code></td>
-    <td><code>var(--kendo-disabled-border, initial)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled Timeline arrow.</div></div>
@@ -33040,7 +33040,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-flag-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -33050,8 +33050,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-flag-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Timeline flag.</div></div>
@@ -33100,8 +33100,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-card-header-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline's Card header.</div></div>
@@ -33110,7 +33110,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-card-header-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -33120,7 +33120,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-card-body-scroll-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
@@ -33130,8 +33130,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-card-body-scroll-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline's Card body scroll.</div></div>
@@ -33140,8 +33140,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-card-scroll-thumb-hover</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-border, initial )</code></td>
-    <td><code>var(--kendo-hover-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 10%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Timeline's hovered card scroll thumb.</div></div>
@@ -33150,8 +33150,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-date-body-text</td>
     <td>String</td>
-    <td><code>var( --kendo-body-text, initial )</code></td>
-    <td><code>var(--kendo-body-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Timeline date body.</div></div>
@@ -33250,7 +33250,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-circle-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -33480,7 +33480,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -33490,8 +33490,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Toolbar.</div></div>
@@ -33500,8 +33500,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the Toolbar.</div></div>
@@ -33510,7 +33510,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-scroll-overlay</td>
     <td>List</td>
-    <td><code>$kendo-toolbar-bg, if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0))</code></td>
+    <td><code>$kendo-toolbar-bg, color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
     <td><code>(var(--kendo-color-surface, #faf9f8), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
 </tr>
 <tr>
@@ -33550,7 +33550,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-outline-scroll-overlay</td>
     <td>List</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white), if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0))</code></td>
+    <td><code>k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
     <td><code>(var(--kendo-color-app-surface, #ffffff), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
 </tr>
 <tr>
@@ -33571,7 +33571,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-toolbar-flat-border</td>
     <td>String</td>
     <td><code>$kendo-toolbar-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the flat Toolbar.</div></div>
@@ -33590,7 +33590,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-flat-scroll-overlay</td>
     <td>List</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white), if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0))</code></td>
+    <td><code>k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
     <td><code>(var(--kendo-color-app-surface, #ffffff), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
 </tr>
 <tr>
@@ -33640,7 +33640,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-item-focus-outline-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
@@ -33809,7 +33809,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tooltip-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -33819,8 +33819,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tooltip-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default text color of the Tooltip.</div></div>
@@ -33849,7 +33849,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tooltip-button-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130, initial ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -33880,7 +33880,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-treelist-footer-row-bg</td>
     <td>String</td>
     <td><code>$kendo-grid-hover-bg</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TreeList footer row.</div></div>
@@ -34138,8 +34138,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TreeView.</div></div>
@@ -34168,8 +34168,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-item-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TreeView items.</div></div>
@@ -34188,8 +34188,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-item-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered TreeView items.</div></div>
@@ -34198,8 +34198,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-item-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-text, inherit )</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered TreeView items.</div></div>
@@ -34229,7 +34229,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-treeview-item-focus-text</td>
     <td>String</td>
     <td><code>$kendo-treeview-item-text</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of focused TreeView items.</div></div>
@@ -34248,7 +34248,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>inset 0 0 0 1px k-color(base-emphasis)</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -34258,8 +34258,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-item-selected-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-bg, inherit )</code></td>
-    <td><code>var(--kendo-selected-bg, inherit)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected TreeView items.</div></div>
@@ -34268,8 +34268,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-item-selected-text</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-text, inherit )</code></td>
-    <td><code>var(--kendo-selected-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected TreeView items.</div></div>
@@ -34298,8 +34298,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-item-disabled-text</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-text, inherit )</code></td>
-    <td><code>var(--kendo-disabled-text, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of disabled TreeView items.</div></div>
@@ -34328,8 +34328,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-loadmore-text</td>
     <td>String</td>
-    <td><code>var( --kendo-link-text, initial )</code></td>
-    <td><code>var(--kendo-link-text, initial)</code></td>
+    <td><code>k-color(primary)</code></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Load More button in the TreeView</div></div>
@@ -34358,8 +34358,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-loadmore-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-link-hover-text, initial )</code></td>
-    <td><code>var(--kendo-link-hover-text, initial)</code></td>
+    <td><code>k-color(primary-hover)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Load More button in the TreeView.</div></div>
@@ -34388,8 +34388,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-loadmore-focus-text</td>
     <td>String</td>
-    <td><code>var( --kendo-link-hover-text, initial )</code></td>
-    <td><code>var(--kendo-link-hover-text, initial)</code></td>
+    <td><code>k-color(primary-hover)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Load More button in the TreeView.</div></div>
@@ -35167,8 +35167,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-code-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial)</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the code tag.</div></div>
@@ -35177,8 +35177,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-code-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial)</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the code tag.</div></div>
@@ -35187,8 +35187,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-code-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial)</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the code tag.</div></div>
@@ -35756,8 +35756,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Upload.</div></div>
@@ -35766,8 +35766,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Upload.</div></div>
@@ -35776,8 +35776,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Upload.</div></div>
@@ -35806,7 +35806,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-dropzone-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -35816,7 +35816,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-dropzone-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
@@ -35826,7 +35826,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-dropzone-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
@@ -35836,8 +35836,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-dropzone-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Upload dropzone.</div></div>
@@ -35846,8 +35846,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-status-text</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td><code>var(--kendo-subtle-text, inherit)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Upload status message.</div></div>
@@ -35916,8 +35916,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-icon-color</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td><code>var(--kendo-subtle-text, inherit)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the uploaded items icon.</div></div>
@@ -35936,7 +35936,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-progress-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -35946,7 +35946,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-success-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( success-on-surface ), k-get-theme-color-var( success-190 ))</code></td>
+    <td><code>k-color(success-on-surface)</code></td>
     <td><code>var(--kendo-color-success-on-surface, #107c10)</code></td>
 </tr>
 <tr>
@@ -35956,7 +35956,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-success-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( success-on-surface ), k-get-theme-color-var( success-190 ))</code></td>
+    <td><code>k-color(success-on-surface)</code></td>
     <td><code>var(--kendo-color-success-on-surface, #107c10)</code></td>
 </tr>
 <tr>
@@ -35966,7 +35966,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-error-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( error-on-surface ), k-get-theme-color-var( error-190 ))</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
     <td><code>var(--kendo-color-error-on-surface, #a4262c)</code></td>
 </tr>
 <tr>
@@ -35976,7 +35976,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-error-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( error-on-surface ), k-get-theme-color-var( error-190 ))</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
     <td><code>var(--kendo-color-error-on-surface, #a4262c)</code></td>
 </tr>
 <tr>
@@ -36226,8 +36226,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Window.</div></div>
@@ -36236,8 +36236,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Window.</div></div>
@@ -36246,7 +36246,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -36276,8 +36276,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-titlebar-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Window titlebar.</div></div>
@@ -36286,7 +36286,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-titlebar-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -36296,7 +36296,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-titlebar-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -36462,8 +36462,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-wizard-content-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Wizard content.</div></div>
@@ -36472,8 +36472,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-wizard-content-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Wizard content.</div></div>
@@ -36502,7 +36502,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-wizard-step-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>

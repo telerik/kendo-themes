@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-appbar-light-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-light</code></td>
+    <td><code>k-color(light)</code></td>
     <td><code>var(--kendo-color-light, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-appbar-light-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-light ), k-contrast-legacy( $kendo-color-light ))</code></td>
+    <td><code>k-color(on-light)</code></td>
     <td><code>var(--kendo-color-on-light, #000000)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-appbar-dark-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-dark</code></td>
+    <td><code>k-color(dark)</code></td>
     <td><code>var(--kendo-color-dark, #3d3d3d)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-appbar-dark-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-dark ), k-contrast-legacy( $kendo-color-dark ))</code></td>
+    <td><code>k-color(on-dark)</code></td>
     <td><code>var(--kendo-color-on-dark, #ffffff)</code></td>
 </tr>
 <tr>

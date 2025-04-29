@@ -79,7 +79,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -99,7 +99,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, #323130)</code></td>
 </tr>
 <tr>
@@ -119,7 +119,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color( neutral, 130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -149,7 +149,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-checked-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -159,7 +159,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-checked-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -179,7 +179,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-hover-checked-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -189,7 +189,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-hover-checked-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
 </tr>
 <tr>
@@ -219,7 +219,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-focus-outline</td>
     <td>List</td>
-    <td><code>1px solid if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>1px solid k-color(base-emphasis)</code></td>
     <td><code>(1px solid var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -249,7 +249,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -259,7 +259,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-disabled-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 28%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent)</code></td>
 </tr>
 <tr>
@@ -309,7 +309,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-invalid-text</td>
     <td>String</td>
-    <td><code>$kendo-invalid-text</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
     <td><code>var(--kendo-color-error-on-surface, #a4262c)</code></td>
 </tr>
 <tr>
@@ -319,7 +319,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-invalid-border</td>
     <td>String</td>
-    <td><code>$kendo-invalid-border</code></td>
+    <td><code>k-color(error-emphasis)</code></td>
     <td><code>var(--kendo-color-error-emphasis, #a4262c)</code></td>
 </tr>
 <tr>
@@ -439,7 +439,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-ripple-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
