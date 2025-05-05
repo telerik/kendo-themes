@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-flat-hover-border</td>
     <td>String</td>
     <td><code>$kendo-picker-hover-border</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat hovered Picker components.</div></div>

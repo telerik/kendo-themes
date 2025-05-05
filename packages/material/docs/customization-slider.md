@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-slider-button-offset</td>
-    <td>Number</td>
-    <td><code>22px</code></td>
-    <td><code>22px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(5.5)</code></td>
+    <td><code>var(--kendo-spacing-5\.5, 1.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the Slider Buttons.</div></div>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-slider-button-size</td>
-    <td>Number</td>
-    <td><code>36px</code></td>
-    <td><code>36px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(9)</code></td>
+    <td><code>var(--kendo-spacing-9, 2.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Slider Buttons.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-slider-button-spacing</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>($kendo-slider-button-size + $kendo-slider-button-offset)</code></td>
-    <td><code>58px</code></td>
+    <td><code>var(--kendo-spacing-9, 2.25rem)var(--kendo-spacing-5\.5, 1.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Slider Buttons.</div></div>
@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-slider-track-thickness</td>
-    <td>Number</td>
-    <td><code>2px</code></td>
-    <td><code>2px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thickness of the Slider track.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-slider-draghandle-size</td>
-    <td>Number</td>
-    <td><code>14px</code></td>
-    <td><code>14px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(5)</code></td>
+    <td><code>var(--kendo-spacing-5, 1.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Slider drag handle.</div></div>
@@ -169,9 +169,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-slider-draghandle-active-size</td>
-    <td>Number</td>
-    <td><code>20px</code></td>
-    <td><code>20px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(5)</code></td>
+    <td><code>var(--kendo-spacing-5, 1.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the active Slider drag handle.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-draghandle-bg</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider drag handle.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-draghandle-border</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Slider drag handle.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-draghandle-hover-bg</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Slider drag handle.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-draghandle-hover-border</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Slider drag handle.</div></div>
@@ -258,10 +258,20 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-slider-draghandle-hover-shadow</td>
+    <td>List</td>
+    <td><code>0 0 0 k-spacing(2.5) color-mix(in srgb, k-color(primary) 8%, transparent)</code></td>
+    <td><code>(0 0 0 var(--kendo-spacing-2\.5, 0.625rem) color-mix(in srgb, var(--kendo-color-primary, #65558F) 8%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-slider-draghandle-pressed-bg</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Slider drag handle.</div></div>
@@ -281,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-draghandle-pressed-border</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active Slider drag handle.</div></div>
@@ -300,8 +310,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 11px color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
-    <td><code>(0 0 0 11px color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 25%, transparent))</code></td>
+    <td><code>0 0 0 k-spacing(2.5) color-mix(in srgb, k-color(primary) 20%, transparent)</code></td>
+    <td><code>(0 0 0 var(--kendo-spacing-2\.5, 0.625rem) color-mix(in srgb, var(--kendo-color-primary, #65558F) 20%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Slider drag handle.</div></div>
@@ -351,7 +361,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-track-bg</td>
     <td>String</td>
     <td><code>k-color(primary-subtle)</code></td>
-    <td><code>var(--kendo-color-primary-subtle, #d1d5ee)</code></td>
+    <td><code>var(--kendo-color-primary-subtle, #E9DDFF)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider track.</div></div>
@@ -361,7 +371,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-selection-bg</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider's track selection.</div></div>
@@ -395,6 +405,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background image of the vertical Slider tick.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-tick-marker-bg</td>
+    <td>String</td>
+    <td><code>k-color(primary-emphasis)</code></td>
+    <td><code>var(--kendo-color-primary-emphasis, #B6A6D7)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider tick marker.</div></div>
     </td>
 </tr>
 </tbody>

@@ -138,6 +138,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-button-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-normal, normal )</code></td>
+    <td><code>var(--kendo-font-weight-normal, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-button-font-size</td>
     <td>String</td>
     <td><code>var( --kendo-font-size, inherit )</code></td>

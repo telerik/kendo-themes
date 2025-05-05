@@ -128,6 +128,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-time-selector-header-title-text</td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the title in the time-selector header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-time-selector-header-time-now-text</td>
+    <td>String</td>
+    <td><code>k-color(primary)</code></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the time now in the time-selector header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-time-selector-header-time-now-hover-text</td>
+    <td>String</td>
+    <td><code>k-color(primary-hover)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the time now in the time-selector header.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-time-list-separator-display</td>
     <td>String</td>
     <td><code>none</code></td>

@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-editor-placeholder-text</td>
     <td>String</td>
     <td><code>$kendo-input-placeholder-text</code></td>
-    <td><code>var(--kendo-color-subtle, #757575)</code></td>
+    <td><code>var(--kendo-color-subtle, #49454F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Еditor placeholder.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-editor-selected-bg</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected background color of the Editor.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-editor-highlighted-bg</td>
     <td>String</td>
     <td><code>k-color(primary-subtle)</code></td>
-    <td><code>var(--kendo-color-primary-subtle, #d1d5ee)</code></td>
+    <td><code>var(--kendo-color-primary-subtle, #E9DDFF)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The highlighted background color of the Editor.</div></div>
@@ -179,9 +179,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-editor-selectednode-outline-color</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #88ccff"></span><code>#88ccff</code></td>
-    <td><span class="color-preview" style="background-color: #88ccff"></span><code>#88ccff</code></td>
+    <td>String</td>
+    <td><code>k-color(primary)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the Editor's selected node.</div></div>
@@ -190,8 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-inline-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the inline Editor.</div></div>
@@ -200,8 +200,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-inline-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
-    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the inline Editor.</div></div>
@@ -230,8 +230,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-content-padding</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Editor content.</div></div>

@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-rating-container-margin-x</td>
-    <td>Calculation</td>
-    <td><code>calc( #{k-spacing(2)} / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-2, 0.5rem) / 2)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Rating container.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-rating-item-padding-x</td>
-    <td>Calculation</td>
-    <td><code>calc( #{k-spacing(2)} / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-2, 0.5rem) / 2)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Rating item.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-rating-label-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-line-height-lg</code></td>
-    <td><code>1.5</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Rating label.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-rating-icon-text</td>
     <td>String</td>
     <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle, #757575)</code></td>
+    <td><code>var(--kendo-color-subtle, #49454F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Rating icon.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-rating-icon-selected-text</td>
     <td>String</td>
     <td><code>k-color(primary-active)</code></td>
-    <td><code>var(--kendo-color-primary-active, #354498)</code></td>
+    <td><code>var(--kendo-color-primary-active, #7866A2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Rating icon.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-rating-icon-hover-text</td>
     <td>String</td>
     <td><code>k-color(primary-active)</code></td>
-    <td><code>var(--kendo-color-primary-active, #354498)</code></td>
+    <td><code>var(--kendo-color-primary-active, #7866A2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Rating icon.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-rating-icon-focus-text</td>
     <td>String</td>
     <td><code>k-color(primary-active)</code></td>
-    <td><code>var(--kendo-color-primary-active, #354498)</code></td>
+    <td><code>var(--kendo-color-primary-active, #7866A2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Rating icon.</div></div>

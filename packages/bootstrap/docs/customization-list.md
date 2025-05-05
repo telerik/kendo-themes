@@ -128,6 +128,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-filter-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-list-filter-padding</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the List filter, when no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-filter-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-list-filter-padding</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the List filter, when no size is set.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-item-padding-x</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -228,6 +248,46 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-item-group-label-sm-font-size</td>
+    <td>Number</td>
+    <td><code>.75em</code></td>
+    <td><code>0.75em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the List item group label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-group-label-sm-line-height</td>
+    <td>String</td>
+    <td><code>inherit</code></td>
+    <td><code>inherit</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line-height of the List item group label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-group-label-sm-padding-x</td>
+    <td>Number</td>
+    <td><code>.5em</code></td>
+    <td><code>0.5em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the List item group label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-group-label-sm-padding-y</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the List item group label.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -245,7 +305,13 @@ The following table lists the available variables for customization.
         group-item-padding-x: $kendo-list-sm-group-item-padding-x,
         group-item-padding-y: $kendo-list-sm-group-item-padding-y,
         group-item-font-size: null,
-        group-item-line-height: null
+        group-item-line-height: null,
+        item-group-label-padding-x: $kendo-list-item-group-label-sm-padding-x,
+        item-group-label-padding-y: $kendo-list-item-group-label-sm-padding-y,
+        item-group-label-font-size: $kendo-list-item-group-label-sm-font-size,
+        item-group-label-line-height: $kendo-list-item-group-label-sm-line-height,
+        filter-padding-x: $kendo-list-sm-filter-padding-x,
+        filter-padding-y: $kendo-list-sm-filter-padding-y
     ),
     md: (
         font-size: $kendo-list-md-font-size,
@@ -261,7 +327,13 @@ The following table lists the available variables for customization.
         group-item-padding-x: $kendo-list-md-group-item-padding-x,
         group-item-padding-y: $kendo-list-md-group-item-padding-y,
         group-item-font-size: null,
-        group-item-line-height: null
+        group-item-line-height: null,
+        item-group-label-padding-x: $kendo-list-item-group-label-md-padding-x,
+        item-group-label-padding-y: $kendo-list-item-group-label-md-padding-y,
+        item-group-label-font-size: $kendo-list-item-group-label-md-font-size,
+        item-group-label-line-height: $kendo-list-item-group-label-md-line-height,
+        filter-padding-x: $kendo-list-md-filter-padding-x,
+        filter-padding-y: $kendo-list-md-filter-padding-y
     ),
     lg: (
         font-size: $kendo-list-lg-font-size,
@@ -277,10 +349,16 @@ The following table lists the available variables for customization.
         group-item-padding-x: $kendo-list-lg-group-item-padding-x,
         group-item-padding-y: $kendo-list-lg-group-item-padding-y,
         group-item-font-size: null,
-        group-item-line-height: null
+        group-item-line-height: null,
+        item-group-label-padding-x: $kendo-list-item-group-label-lg-padding-x,
+        item-group-label-padding-y: $kendo-list-item-group-label-lg-padding-y,
+        item-group-label-font-size: $kendo-list-item-group-label-lg-font-size,
+        item-group-label-line-height: $kendo-list-item-group-label-lg-line-height,
+        filter-padding-x: $kendo-list-lg-filter-padding-x,
+        filter-padding-y: $kendo-list-lg-filter-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286,"header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","group-item-font-size":null,"group-item-line-height":null</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-1, 0.25rem)","group-item-font-size":null,"group-item-line-height":null</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","group-item-font-size":null,"group-item-line-height":null</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286,"header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","group-item-font-size":null,"group-item-line-height":null,"item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"0.75em","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4, 1rem)","filter-padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-1, 0.25rem)","group-item-font-size":null,"group-item-line-height":null,"item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"0.75em","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4, 1rem)","filter-padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","group-item-font-size":null,"group-item-line-height":null,"item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"0.75em","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4, 1rem)","filter-padding-y":"var(--kendo-spacing-4, 1rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the List.</div></div>

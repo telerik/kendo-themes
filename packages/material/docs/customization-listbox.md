@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-listbox-font-size</td>
     <td>String</td>
     <td><code>$kendo-list-md-font-size</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var(--kendo-font-size-lg, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the ListBox.</div></div>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-listbox-line-height</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-list-md-line-height</code></td>
-    <td><code>1.4285714286</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the ListBox.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-listbox-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ListBox.</div></div>
@@ -120,8 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listbox-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>k-color(app-surface)</code></td>
+    <td><code>var(--kendo-color-app-surface, #FEFBFF)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ListBox.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-listbox-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ListBox.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-listbox-item-padding-y</td>
     <td>String</td>
     <td><code>$kendo-list-md-item-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The block padding of the ListBox item.</div></div>

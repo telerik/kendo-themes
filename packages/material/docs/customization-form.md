@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-form-spacer</td>
-    <td>Calculation</td>
-    <td><code>calc( #{k-spacing(4)} * 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-4, 1rem) * 2)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(8)</code></td>
+    <td><code>var(--kendo-spacing-8, 2rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the inline Form.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-form-legend-border-color</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Form legend.</div></div>
@@ -281,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-form-separator-border-color</td>
     <td>String</td>
     <td><code>$kendo-form-legend-border-color</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Form separator.</div></div>
@@ -289,9 +289,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-horizontal-form-label-padding-top</td>
-    <td>Calculation</td>
-    <td><code>calc( #{k-spacing(2.5)} / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-2\.5, 0.625rem) / 2)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5, 0.625rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top padding of the label in the horizontal Form.</div></div>
@@ -421,7 +421,7 @@ The following table lists the available variables for customization.
     <td>$kendo-fieldset-font-size</td>
     <td>Number</td>
     <td><code>$kendo-h4-font-size</code></td>
-    <td><code>34px</code></td>
+    <td><code>32px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Form fieldset.</div></div>

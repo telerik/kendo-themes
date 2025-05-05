@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ColorGradient.</div></div>
@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface, #F7F3FA)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ColorGradient.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ColorGradient.</div></div>
@@ -281,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-focus-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused ColorGradient.</div></div>
@@ -291,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-focus-shadow</td>
     <td>String</td>
     <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3, 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 4px 0px rgba(0, 0, 0, 0.14))</code></td>
+    <td><code>var(--kendo-elevation-3, 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient.</div></div>
@@ -581,7 +581,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-draghandle-shadow</td>
     <td>String</td>
     <td><code>k-elevation(2)</code></td>
-    <td><code>var(--kendo-elevation-2, 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 3px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.14))</code></td>
+    <td><code>var(--kendo-elevation-2, 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>
@@ -641,7 +641,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-input-label-text</td>
     <td>String</td>
     <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle, #757575)</code></td>
+    <td><code>var(--kendo-color-subtle, #49454F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ColorGradient input labels.</div></div>

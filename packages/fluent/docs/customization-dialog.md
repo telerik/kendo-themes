@@ -168,6 +168,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-dialog-bg</td>
+    <td>String</td>
+    <td><code>k-color(app-surface)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Dialog.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-dialog-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-box-shadow-depth-8, none )</code></td>

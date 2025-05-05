@@ -408,6 +408,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-menu-icon-padding-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Menu icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-icon-padding-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Menu icon.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-menu-separator-margin-inline</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>

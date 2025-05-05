@@ -1724,6 +1724,16 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-button-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-normal, normal )</code></td>
+    <td><code>var(--kendo-font-weight-normal, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-button-font-size</td>
     <td>Number</td>
     <td><code>$kendo-font-size</code></td>
@@ -2295,6 +2305,16 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-border-radius</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border-radius of the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-cell-size</td>
     <td>Number</td>
     <td><code>38px</code></td>
@@ -2715,6 +2735,26 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-today-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-bold, normal )</code></td>
+    <td><code>var(--kendo-font-weight-bold, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the current day in the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-today-box-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the current day in the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-week-number-bg</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -2992,6 +3032,26 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered items in the Calendar navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-navigation-marker-text</td>
+    <td>String</td>
+    <td><code>currentColor</code></td>
+    <td><code>currentColor</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the marker in the Calendar navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-range-bg</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Calendar range selection.</div></div>
     </td>
 </tr>
 <tr>
@@ -5477,6 +5537,16 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-chip-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-normal, normal )</code></td>
+    <td><code>var(--kendo-font-weight-normal, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Chip.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chip-font-size</td>
     <td>String</td>
     <td><code>var( --kendo-font-size, inherit )</code></td>
@@ -5809,6 +5879,36 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the selected outline Chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-disabled-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the disabled Chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-disabled-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the disabled Chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-disabled-border</td>
+    <td>Null</td>
+    <td><code>$kendo-chip-disabled-bg</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the disabled Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -8357,6 +8457,16 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-dialog-bg</td>
+    <td>String</td>
+    <td><code>k-color(app-surface)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Dialog.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-dialog-theme-colors</td>
     <td>Map</td>
     <td><code>(
@@ -8901,6 +9011,26 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-drawer-items-padding-x</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Drawer items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-items-padding-y</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Drawer items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-drawer-item-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
@@ -8918,6 +9048,16 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-item-spacing</td>
+    <td>String</td>
+    <td><code>$kendo-drawer-item-padding-x</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items in the Drawer item.</div></div>
     </td>
 </tr>
 <tr>
@@ -8941,6 +9081,16 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-drawer-item-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight, normal )</code></td>
+    <td><code>var(--kendo-font-weight, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-drawer-item-level-padding-x</td>
     <td>String</td>
     <td><code>$kendo-drawer-item-padding-x</code></td>
@@ -8958,6 +9108,16 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The count of the Drawer item levels.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-item-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Drawer item.</div></div>
     </td>
 </tr>
 <tr>
@@ -9068,6 +9228,16 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected and hovered Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-selected-focus-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and focused Drawer item.</div></div>
     </td>
 </tr>
 </tbody>
@@ -13940,6 +14110,26 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-filter-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-list-filter-padding</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the List filter, when no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-filter-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-list-filter-padding</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the List filter, when no size is set.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-item-padding-x</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -14040,6 +14230,46 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-item-group-label-sm-font-size</td>
+    <td>Number</td>
+    <td><code>.75em</code></td>
+    <td><code>0.75em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the List item group label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-group-label-sm-line-height</td>
+    <td>String</td>
+    <td><code>inherit</code></td>
+    <td><code>inherit</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line-height of the List item group label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-group-label-sm-padding-x</td>
+    <td>Number</td>
+    <td><code>.5em</code></td>
+    <td><code>0.5em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the List item group label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-group-label-sm-padding-y</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the List item group label.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -14057,7 +14287,13 @@ The following table lists the available variables for customizing the Bootstrap 
         group-item-padding-x: $kendo-list-sm-group-item-padding-x,
         group-item-padding-y: $kendo-list-sm-group-item-padding-y,
         group-item-font-size: null,
-        group-item-line-height: null
+        group-item-line-height: null,
+        item-group-label-padding-x: $kendo-list-item-group-label-sm-padding-x,
+        item-group-label-padding-y: $kendo-list-item-group-label-sm-padding-y,
+        item-group-label-font-size: $kendo-list-item-group-label-sm-font-size,
+        item-group-label-line-height: $kendo-list-item-group-label-sm-line-height,
+        filter-padding-x: $kendo-list-sm-filter-padding-x,
+        filter-padding-y: $kendo-list-sm-filter-padding-y
     ),
     md: (
         font-size: $kendo-list-md-font-size,
@@ -14073,7 +14309,13 @@ The following table lists the available variables for customizing the Bootstrap 
         group-item-padding-x: $kendo-list-md-group-item-padding-x,
         group-item-padding-y: $kendo-list-md-group-item-padding-y,
         group-item-font-size: null,
-        group-item-line-height: null
+        group-item-line-height: null,
+        item-group-label-padding-x: $kendo-list-item-group-label-md-padding-x,
+        item-group-label-padding-y: $kendo-list-item-group-label-md-padding-y,
+        item-group-label-font-size: $kendo-list-item-group-label-md-font-size,
+        item-group-label-line-height: $kendo-list-item-group-label-md-line-height,
+        filter-padding-x: $kendo-list-md-filter-padding-x,
+        filter-padding-y: $kendo-list-md-filter-padding-y
     ),
     lg: (
         font-size: $kendo-list-lg-font-size,
@@ -14089,10 +14331,16 @@ The following table lists the available variables for customizing the Bootstrap 
         group-item-padding-x: $kendo-list-lg-group-item-padding-x,
         group-item-padding-y: $kendo-list-lg-group-item-padding-y,
         group-item-font-size: null,
-        group-item-line-height: null
+        group-item-line-height: null,
+        item-group-label-padding-x: $kendo-list-item-group-label-lg-padding-x,
+        item-group-label-padding-y: $kendo-list-item-group-label-lg-padding-y,
+        item-group-label-font-size: $kendo-list-item-group-label-lg-font-size,
+        item-group-label-line-height: $kendo-list-item-group-label-lg-line-height,
+        filter-padding-x: $kendo-list-lg-filter-padding-x,
+        filter-padding-y: $kendo-list-lg-filter-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286,"header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","group-item-font-size":null,"group-item-line-height":null</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-1, 0.25rem)","group-item-font-size":null,"group-item-line-height":null</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","group-item-font-size":null,"group-item-line-height":null</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286,"header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","group-item-font-size":null,"group-item-line-height":null,"item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"0.75em","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4, 1rem)","filter-padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-1, 0.25rem)","group-item-font-size":null,"group-item-line-height":null,"item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"0.75em","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4, 1rem)","filter-padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","group-item-font-size":null,"group-item-line-height":null,"item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"0.75em","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4, 1rem)","filter-padding-y":"var(--kendo-spacing-4, 1rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the List.</div></div>
@@ -15859,6 +16107,26 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-menu-icon-padding-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Menu icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-icon-padding-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Menu icon.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-menu-separator-margin-inline</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -16336,6 +16604,26 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Notification.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-actions-padding-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Notification actions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-actions-padding-y</td>
+    <td>Null</td>
+    <td><code>$kendo-notification-actions-padding-x</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Notification actions.</div></div>
     </td>
 </tr>
 <tr>
@@ -23258,6 +23546,16 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-slider-draghandle-hover-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-slider-draghandle-pressed-bg</td>
     <td>String</td>
     <td><code>k-color(primary-active)</code></td>
@@ -23395,6 +23693,16 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background image of the vertical Slider tick.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-tick-marker-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider tick marker.</div></div>
     </td>
 </tr>
 </tbody>
@@ -25622,6 +25930,46 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-switch-off-thumb-disabled-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the disabled Switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-thumb-disabled-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the disabled Switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-thumb-disabled-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the disabled Switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-thumb-disabled-gradient</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the disabled Switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-switch-on-track-bg</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
@@ -25869,6 +26217,46 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the hovered Switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-thumb-disabled-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the disabled Switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-thumb-disabled-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the disabled Switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-thumb-disabled-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the disabled Switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-thumb-disabled-gradient</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the disabled Switch is checked.</div></div>
     </td>
 </tr>
 </tbody>

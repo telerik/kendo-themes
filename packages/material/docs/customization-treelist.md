@@ -30,8 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-treelist-footer-row-bg</td>
     <td>String</td>
-    <td><code>$kendo-grid-selected-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 12%, transparent)</code></td>
+    <td><code>$kendo-grid-header-bg</code></td>
+    <td><code>var(--kendo-color-surface, #F7F3FA)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TreeList footer row.</div></div>

@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>k-color(app-surface)</code></td>
+    <td><code>var(--kendo-color-app-surface, #FEFBFF)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Map.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-map-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Map.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-map-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Map.</div></div>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-navigator-width</td>
     <td>Calculation</td>
-    <td><code>calc( calc( #{$kendo-icon-size} * 3) + calc( #{$kendo-map-navigator-padding} * 2 ) )</code></td>
+    <td><code>calc( #{$kendo-icon-size} * 3 + #{$kendo-map-navigator-padding} * 2 )</code></td>
     <td><code>calc(16px * 3 + var(--kendo-spacing-0\.5, 0.125rem) * 2)</code></td>
 </tr>
 <tr>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-map-zoom-control-button-padding-x</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-button-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>calc(var(--kendo-spacing-4\.5, 1.125rem) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Map zoom control.</div></div>
@@ -169,9 +169,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-map-zoom-control-button-padding-y</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-map-zoom-control-button-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>calc(var(--kendo-spacing-4\.5, 1.125rem) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Map zoom control.</div></div>
@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-map-attribution-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(app-surface) 80%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 80%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-app-surface, #FEFBFF) 80%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Map attribution.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-map-marker-fill</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fill color of the Map marker.</div></div>

@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-progressbar-bg</td>
     <td>String</td>
     <td><code>k-color(primary-subtle)</code></td>
-    <td><code>var(--kendo-color-primary-subtle, #d1d5ee)</code></td>
+    <td><code>var(--kendo-color-primary-subtle, #E9DDFF)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ProgressBar.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-progressbar-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ProgressBar.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-progressbar-value-bg</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The progress background color of the ProgressBar.</div></div>
@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-value-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The progress text color of the ProgressBar.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-progressbar-indeterminate-bg</td>
     <td>String</td>
     <td><code>$kendo-progressbar-bg</code></td>
-    <td><code>var(--kendo-color-primary-subtle, #d1d5ee)</code></td>
+    <td><code>var(--kendo-color-primary-subtle, #E9DDFF)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the indeterminate ProgressBar.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-progressbar-indeterminate-text</td>
     <td>String</td>
     <td><code>$kendo-progressbar-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the indeterminate ProgressBar.</div></div>
@@ -220,8 +220,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-chunk-border</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface, #F7F3FA)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the chunk ProgressBar.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-circular-progressbar-arc-stroke</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The arc stroke color of the circular ProgressBar.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-circular-progressbar-scale-stroke</td>
     <td>String</td>
     <td><code>$kendo-progressbar-bg</code></td>
-    <td><code>var(--kendo-color-primary-subtle, #d1d5ee)</code></td>
+    <td><code>var(--kendo-color-primary-subtle, #E9DDFF)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The scale stroke background color of the circular ProgressBar.</div></div>

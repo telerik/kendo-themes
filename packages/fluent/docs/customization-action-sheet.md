@@ -608,6 +608,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-adaptive-actionsheet-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-lg</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the adaptive action sheet.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-adaptive-actionsheet-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height, inherit )</code></td>
+    <td><code>var(--kendo-line-height, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the adaptive action sheet.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-adaptive-actionsheet-header-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>

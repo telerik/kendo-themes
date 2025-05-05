@@ -28,26 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-calendar-weekend-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the weekend cells in the Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-navigation-hover-text</td>
-    <td>String</td>
-    <td><code>k-color(secondary-hover)</code></td>
-    <td><code>var(--kendo-color-secondary-hover, #d31857)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered items in the Calendar navigation.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-list-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -65,7 +45,13 @@ The following table lists the available variables for customization.
         group-item-padding-x: $kendo-list-sm-group-item-padding-x,
         group-item-padding-y: $kendo-list-sm-group-item-padding-y,
         group-item-font-size: null,
-        group-item-line-height: null
+        group-item-line-height: null,
+        item-group-label-padding-x: $kendo-list-item-group-label-sm-padding-x,
+        item-group-label-padding-y: $kendo-list-item-group-label-sm-padding-y,
+        item-group-label-font-size: $kendo-list-item-group-label-sm-font-size,
+        item-group-label-line-height: $kendo-list-item-group-label-sm-line-height,
+        filter-padding-x: $kendo-list-sm-filter-padding-x,
+        filter-padding-y: $kendo-list-sm-filter-padding-y
     ),
     md: (
         font-size: $kendo-list-md-font-size,
@@ -81,7 +67,13 @@ The following table lists the available variables for customization.
         group-item-padding-x: $kendo-list-md-group-item-padding-x,
         group-item-padding-y: $kendo-list-md-group-item-padding-y,
         group-item-font-size: null,
-        group-item-line-height: null
+        group-item-line-height: null,
+        item-group-label-padding-x: $kendo-list-item-group-label-md-padding-x,
+        item-group-label-padding-y: $kendo-list-item-group-label-md-padding-y,
+        item-group-label-font-size: $kendo-list-item-group-label-md-font-size,
+        item-group-label-line-height: $kendo-list-item-group-label-md-line-height,
+        filter-padding-x: $kendo-list-md-filter-padding-x,
+        filter-padding-y: $kendo-list-md-filter-padding-y
     ),
     lg: (
         font-size: $kendo-list-lg-font-size,
@@ -97,10 +89,16 @@ The following table lists the available variables for customization.
         group-item-padding-x: $kendo-list-lg-group-item-padding-x,
         group-item-padding-y: $kendo-list-lg-group-item-padding-y,
         group-item-font-size: null,
-        group-item-line-height: null
+        group-item-line-height: null,
+        item-group-label-padding-x: $kendo-list-item-group-label-lg-padding-x,
+        item-group-label-padding-y: $kendo-list-item-group-label-lg-padding-y,
+        item-group-label-font-size: $kendo-list-item-group-label-lg-font-size,
+        item-group-label-line-height: $kendo-list-item-group-label-lg-line-height,
+        filter-padding-x: $kendo-list-lg-filter-padding-x,
+        filter-padding-y: $kendo-list-lg-filter-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":1.4285714285714286,"header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","group-item-font-size":null,"group-item-line-height":null</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":1.4285714285714286,"header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-2, 0.5rem)","group-item-font-size":null,"group-item-line-height":null</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":1.5,"header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","group-item-font-size":null,"group-item-line-height":null</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","group-item-font-size":null,"group-item-line-height":null,"item-group-label-padding-x":"var(--kendo-spacing-1, 0.25rem)","item-group-label-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","item-group-label-font-size":"var(--kendo-font-size-sm, inherit)","item-group-label-line-height":"var(--kendo-line-height-xs, inherit)","filter-padding-x":"var(--kendo-spacing-4, 1rem)","filter-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)"</li><li>md: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-3, 0.75rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-3, 0.75rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-2, 0.5rem)","group-item-font-size":null,"group-item-line-height":null,"item-group-label-padding-x":"var(--kendo-spacing-1, 0.25rem)","item-group-label-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","item-group-label-font-size":"var(--kendo-font-size-sm, inherit)","item-group-label-line-height":"var(--kendo-line-height-xs, inherit)","filter-padding-x":"var(--kendo-spacing-4, 1rem)","filter-padding-y":"var(--kendo-spacing-1, 0.25rem)"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-4, 1rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-4, 1rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","group-item-font-size":null,"group-item-line-height":null,"item-group-label-padding-x":"var(--kendo-spacing-1, 0.25rem)","item-group-label-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","item-group-label-font-size":"var(--kendo-font-size-sm, inherit)","item-group-label-line-height":"var(--kendo-line-height-xs, inherit)","filter-padding-x":"var(--kendo-spacing-4, 1rem)","filter-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the List.<br /> @group list</div></div>
@@ -109,8 +107,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-selected-focus-text</td>
     <td>String</td>
-    <td><code>k-color(secondary)</code></td>
-    <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
+    <td><code>inherit</code></td>
+    <td><code>inherit</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected and focused TreeView items.<br /> @group treeview</div></div>
@@ -118,9 +116,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-item-selected-focus-bg</td>
-    <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 7%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 7%, transparent)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected and focused TreeView items.<br /> @group treeview</div></div>

@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-listview-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ListView.</div></div>
@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface, #F7F3FA)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ListView.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-listview-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ListView.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-listview-item-selected-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(primary)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected ListView items.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-listview-item-selected-bg</td>
-    <td>String</td>
-    <td><code>k-color(base-active)</code></td>
-    <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected ListView items.</div></div>
@@ -179,9 +179,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-listview-item-focus-bg</td>
-    <td>String</td>
-    <td><code>k-color(base-active)</code></td>
-    <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused ListView items.</div></div>
@@ -199,9 +199,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-listview-item-focus-shadow</td>
-    <td>String</td>
-    <td><code>unset</code></td>
-    <td><code>unset</code></td>
+    <td>List</td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 20%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #1D1B20) 20%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ListView items.</div></div>

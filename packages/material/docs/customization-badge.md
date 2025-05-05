@@ -169,9 +169,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-badge-line-height</td>
-    <td>Number</td>
-    <td><code>1</code></td>
-    <td><code>1</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-xs, normal )</code></td>
+    <td><code>var(--kendo-line-height-xs, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights used along with the $kendo-font-size variable.</div></div>
@@ -179,9 +179,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-badge-sm-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-badge-line-height</code></td>
-    <td><code>1</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-xs, normal )</code></td>
+    <td><code>var(--kendo-line-height-xs, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the small Badge.</div></div>
@@ -189,9 +189,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-badge-md-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-badge-line-height</code></td>
-    <td><code>1</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-xs, normal )</code></td>
+    <td><code>var(--kendo-line-height-xs, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the medium Badge.</div></div>
@@ -199,9 +199,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-badge-lg-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-badge-line-height</code></td>
-    <td><code>1</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-xs, normal )</code></td>
+    <td><code>var(--kendo-line-height-xs, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the large Badge.</div></div>
@@ -210,8 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-min-width</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-badge-line-height * 1em} + calc( #{$kendo-badge-padding-y} * 2 ) + #{$kendo-badge-border-width * 2})</code></td>
-    <td><code>calc(1em + var(--kendo-spacing-1, 0.25rem) * 2 + 2px)</code></td>
+    <td><code>calc( #{$kendo-badge-line-height } * 1em + calc( #{$kendo-badge-padding-y} * 2 ) + #{$kendo-badge-border-width * 2})</code></td>
+    <td><code>calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the circular Badge.</div></div>
@@ -220,8 +220,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-sm-min-width</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-badge-sm-line-height * 1em} + calc( #{$kendo-badge-sm-padding-y} * 2 ) + #{$kendo-badge-border-width * 2} )</code></td>
-    <td><code>calc(1em + var(--kendo-spacing-0\.5, 0.125rem) * 2 + 2px)</code></td>
+    <td><code>calc( #{$kendo-badge-sm-line-height } * 1em + calc( #{$kendo-badge-sm-padding-y} * 2 ) + #{$kendo-badge-border-width * 2} )</code></td>
+    <td><code>calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-0\.5, 0.125rem) * 2 + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the small circular Badge.</div></div>
@@ -230,8 +230,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-md-min-width</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-badge-md-line-height * 1em} + calc( #{$kendo-badge-md-padding-y} * 2 ) + #{$kendo-badge-border-width * 2} )</code></td>
-    <td><code>calc(1em + var(--kendo-spacing-1, 0.25rem) * 2 + 2px)</code></td>
+    <td><code>calc( #{$kendo-badge-md-line-height } * 1em + calc( #{$kendo-badge-md-padding-y} * 2 ) + #{$kendo-badge-border-width * 2} )</code></td>
+    <td><code>calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the medium circular Badge.</div></div>
@@ -240,8 +240,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-lg-min-width</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-badge-lg-line-height * 1em} + calc( #{$kendo-badge-lg-padding-y} * 2 ) + #{$kendo-badge-border-width * 2} )</code></td>
-    <td><code>calc(1em + var(--kendo-spacing-1\.5, 0.375rem) * 2 + 2px)</code></td>
+    <td><code>calc( #{$kendo-badge-lg-line-height  } * 1em + calc( #{$kendo-badge-lg-padding-y} * 2 ) + #{$kendo-badge-border-width * 2} )</code></td>
+    <td><code>calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1\.5, 0.375rem) * 2 + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the large circular Badge.</div></div>
@@ -273,7 +273,7 @@ The following table lists the available variables for customization.
         min-width: $kendo-badge-lg-min-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-0\\.5, 0.125rem)","padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","font-size":"var(--kendo-font-size-xs, inherit)","line-height":1,"min-width":"calc(1em + var(--kendo-spacing-0\\.5, 0.125rem) * 2 + 2px)"</li><li>md: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size-xs, inherit)","line-height":1,"min-width":"calc(1em + var(--kendo-spacing-1, 0.25rem) * 2 + 2px)"</li><li>lg: "padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","font-size":"var(--kendo-font-size-xs, inherit)","line-height":1,"min-width":"calc(1em + var(--kendo-spacing-1\\.5, 0.375rem) * 2 + 2px)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-0\\.5, 0.125rem)","padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","font-size":"var(--kendo-font-size-xs, inherit)","line-height":"var(--kendo-line-height-xs, normal)","min-width":"calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-0\\.5, 0.125rem) * 2 + 2px)"</li><li>md: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size-xs, inherit)","line-height":"var(--kendo-line-height-xs, normal)","min-width":"calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 2px)"</li><li>lg: "padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","font-size":"var(--kendo-font-size-xs, inherit)","line-height":"var(--kendo-line-height-xs, normal)","min-width":"calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1\\.5, 0.375rem) * 2 + 2px)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Badge.</div></div>
