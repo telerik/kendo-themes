@@ -10,9 +10,15 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
-    <div id="test-area" class="k-d-grid k-grid-cols-2">
+    <style>
+        #test-area {
+            max-width: 1240px;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2 k-gap-4">
         <section>
-            <span>Month View</span>
+            <div>Month View</div>
             <div class="k-calendar-range k-calendar k-calendar-md">
                 <div class="k-calendar-header">
                     <button class="k-calendar-title k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
@@ -304,7 +310,7 @@
             </div>
         </section>
         <section>
-            <span>Month View with Week Numbers</span>
+            <div>Month View with Week Numbers</div>
             <div class="k-calendar-range k-calendar k-calendar-md k-week-number">
                 <div class="k-calendar-header">
                     <button class="k-calendar-title k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
@@ -610,7 +616,7 @@
             </div>
         </section>
         <section>
-            <span>Year View</span>
+            <div>Year View</div>
             <div class="k-calendar-range k-calendar k-calendar-md">
                 <div class="k-calendar-header">
                     <button class="k-calendar-title k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
@@ -734,7 +740,7 @@
             </div>
         </section>
         <section>
-            <span>Decade View</span>
+            <div>Decade View</div>
             <div class="k-calendar-range k-calendar k-calendar-md">
                 <div class="k-calendar-header">
                     <button class="k-calendar-title k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
@@ -850,7 +856,7 @@
             </div>
         </section>
         <section>
-            <span>Century View</span>
+            <div>Century View</div>
             <div class="k-calendar-range k-calendar k-calendar-md">
                 <div class="k-calendar-header">
                     <button class="k-calendar-title k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md k-disabled">
@@ -966,7 +972,7 @@
             </div>
         </section>
         <section>
-            <span>With Footer</span>
+            <div>With Footer</div>
             <div class="k-calendar-range k-calendar k-calendar-md">
                 <div class="k-calendar-header">
                     <button class="k-calendar-title k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
