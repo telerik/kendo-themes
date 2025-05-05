@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v10.6.0...v11.0.0-dev.0) (2025-05-05)
+
+
+### Features
+
+* drop legacy color system support ([57a4ed2](https://github.com/telerik/kendo-themes/commit/57a4ed29c7dd321c15138a59409a8254c3ae644f))
+
+
+### BREAKING CHANGES
+
+* With R2 2025, the legacy color
+system is no longer supported. The new color
+system is now the default and only option.
+To learn more about this change, please refer
+to the dedicated breaking change article in the
+Progress Design System documentation.
+
+
+
+
+
 # [10.6.0](https://github.com/telerik/kendo-themes/compare/v10.6.0-dev.6...v10.6.0) (2025-04-28)
 
 **Note:** Version bump only for package @progress/kendo-theme-bootstrap
