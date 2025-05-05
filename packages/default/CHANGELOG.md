@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v11.0.0-dev.0...v11.0.0-dev.1) (2025-05-05)
+
+
+### Bug Fixes
+
+* **coloreditor:** update color gradient canvas sizes ([0d8aed6](https://github.com/telerik/kendo-themes/commit/0d8aed6f090ad9f491d8a0654626bbe65258fa30))
+
+
+### Features
+
+* **material:** update styles to Material 3 design guidelines ([4bcf754](https://github.com/telerik/kendo-themes/commit/4bcf7543af925ce78257ce09303d76ebcf5fedf9))
+
+
+### BREAKING CHANGES
+
+* **material:** Starting with the R2 2025 release, the Telerik and
+Kendo UI Material theme will align with Material 3 design guidelines.
+As a result, the theme will no longer follow Material 2 standards for
+metrics, layouts, fonts, elevation, and typography. To learn more about
+this change, please refer to the dedicated breaking change article in
+the Progress Design System documentation.
+
+In order to apply Material 2 colors in your application, try out the
+bundled Material 2 color swatch - it maintains a similar color palette
+while benefiting from the modern Material 3 guidelines.
+
+
+
+
+
 # [11.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v10.6.0...v11.0.0-dev.0) (2025-05-05)
 
 
