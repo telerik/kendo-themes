@@ -24,7 +24,7 @@
     .k-disabled {
         .k-color-preview-mask::before {
             @include fill(
-                $bg: k-color( base-subtle )
+                $bg: k-color(base-subtle)
             );
         }
     }

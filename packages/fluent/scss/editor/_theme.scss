@@ -80,7 +80,7 @@
 
         .k-disabled:not(.k-selected) {
             @include fill (
-                $bg: k-color( base-subtle ),
+                $bg: k-color(base-subtle),
                 $border: transparent
             );
         }

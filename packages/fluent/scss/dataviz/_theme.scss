@@ -99,10 +99,10 @@
 
         // Leaf
         .k-leaf {
-            @include fill( $color: k-color( surface-alt ) );
+            @include fill( $color: k-color(surface-alt) );
         }
         .k-leaf.k-inverse {
-            @include fill( $color: k-color( on-app-surface ) );
+            @include fill( $color: k-color(on-app-surface) );
         }
         .k-leaf:hover,
         .k-leaf.k-hover {

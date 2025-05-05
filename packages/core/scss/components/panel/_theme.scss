@@ -14,9 +14,9 @@
 
         > .k-header {
             @include fill(
-                k-color( on-app-surface ),
-                k-color( surface-alt ),
-                k-color( border )
+                k-color(on-app-surface),
+                k-color(surface-alt),
+                k-color(border)
             );
         }
     }

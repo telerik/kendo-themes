@@ -156,7 +156,7 @@ $kendo-panelbar-header-selected-focus-gradient: null !default;
 
 /// The background color of the selected, hovered and focused PanelBar header.
 /// @group panelbar
-$kendo-panelbar-header-selected-hover-focus-bg: color-mix(in srgb, k-color( secondary ), k-color( secondary-emphasis )) !default;
+$kendo-panelbar-header-selected-hover-focus-bg: color-mix(in srgb, k-color(secondary), k-color(secondary-emphasis)) !default;
 /// The text color of the selected, hovered and focused PanelBar header.
 /// @group panelbar
 $kendo-panelbar-header-selected-hover-focus-text: null !default;

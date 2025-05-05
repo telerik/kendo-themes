@@ -170,9 +170,9 @@
         .k-scheduler-content .k-scheduler-row:hover,
         .k-scheduler-content .k-scheduler-row.k-hover {
             @include fill(
-                k-color( on-app-surface ),
-                k-color( base-hover ),
-                k-color( border ),
+                k-color(on-app-surface),
+                k-color(base-hover),
+                k-color(border),
                 null
             );
         }

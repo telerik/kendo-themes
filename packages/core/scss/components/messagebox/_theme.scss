@@ -11,15 +11,15 @@
         .k-messagebox-#{$color-name} {
             @if $color-name == "inverse" {
                 @include fill(
-                    k-color( dark-on-subtle ),
-                    k-color( dark-subtle ),
-                    k-color( dark-hover )
+                    k-color(dark-on-subtle),
+                    k-color(dark-subtle),
+                    k-color(dark-hover)
                 );
             } @else {
                 @include fill(
-                    k-color( #{$color-name}-on-subtle ),
-                    k-color( #{$color-name}-subtle ),
-                    k-color( #{$color-name}-emphasis )
+                    k-color(#{$color-name}-on-subtle),
+                    k-color(#{$color-name}-subtle),
+                    k-color(#{$color-name}-emphasis)
                 );
             }
         }

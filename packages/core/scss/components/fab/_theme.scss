@@ -95,7 +95,7 @@
     .k-fab-item.k-focus .k-fab-item-text,
     .k-fab-item.k-focus .k-fab-item-icon {
         @if $kendo-enable-focus-contrast {
-            @include box-shadow( inset 0 0 0 2px k-color( on-app-surface ));
+            @include box-shadow( inset 0 0 0 2px k-color(on-app-surface));
         } @else {
             outline: $kendo-fab-item-outline-style $kendo-fab-item-outline-width $kendo-fab-item-outline-color;
         }

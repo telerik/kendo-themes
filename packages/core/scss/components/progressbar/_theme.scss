@@ -36,7 +36,7 @@
 
     .k-progressbar-indeterminate {
         @include fill( $kendo-progressbar-indeterminate-text, $kendo-progressbar-indeterminate-bg, $kendo-progressbar-indeterminate-border );
-        @include striped-gradient( color-mix(in srgb, k-color( base-emphasis ) 55%, transparent) );
+        @include striped-gradient( color-mix(in srgb, k-color(base-emphasis) 55%, transparent) );
         background-size: $kendo-progressbar-height $kendo-progressbar-height;
         animation: kendo-progressbar-indeterminate-animation $kendo-progressbar-animation-timing;
     }

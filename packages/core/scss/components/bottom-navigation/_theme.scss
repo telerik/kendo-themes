@@ -10,17 +10,17 @@
     @each $name, $color in $kendo-bottom-navigation-theme-colors {
         .k-bottom-nav-solid-#{$name} {
             @include fill(
-                $color: color-mix(in srgb, k-color( on-#{$name} ) 65%, transparent),
+                $color: color-mix(in srgb, k-color(on-#{$name}) 65%, transparent),
                 $bg: $color
             );
 
             .k-bottom-nav-item.k-focus,
             .k-bottom-nav-item:focus {
-                @include fill( $bg: color-mix(in srgb, k-color( on-#{$name} ) 12.5%, transparent));
+                @include fill( $bg: color-mix(in srgb, k-color(on-#{$name}) 12.5%, transparent));
             }
 
             .k-bottom-nav-item.k-selected {
-                @include fill( $color: k-color( on-#{$name} ));
+                @include fill( $color: k-color(on-#{$name}));
             }
         }
         // TODO: remove when suites update class names
@@ -40,12 +40,12 @@
 
             .k-bottom-nav-item.k-focus,
             .k-bottom-nav-item:focus {
-                @include fill( $bg: color-mix(in srgb, k-color( on-app-surface ) 5%, transparent));
+                @include fill( $bg: color-mix(in srgb, k-color(on-app-surface) 5%, transparent));
             }
 
             .k-bottom-nav-item.k-selected {
                 @if $name == "secondary" or $name == "light" {
-                    @include fill( $color: k-color( #{$name} ));
+                    @include fill( $color: k-color(#{$name}));
                 } @else {
                     @include fill( $color: $color );
                 }

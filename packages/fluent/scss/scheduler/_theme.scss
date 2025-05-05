@@ -165,9 +165,9 @@
         .k-scheduler-content .k-scheduler-row:hover,
         .k-scheduler-content .k-scheduler-row.k-hover {
             @include fill(
-                k-color( on-base ),
-                k-color( base-hover ),
-                color-mix(in srgb, k-color( border ) 10%, transparent)
+                k-color(on-base),
+                k-color(base-hover),
+                color-mix(in srgb, k-color(border) 10%, transparent)
             );
         }
 

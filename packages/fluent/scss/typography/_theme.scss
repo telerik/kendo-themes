@@ -4,8 +4,8 @@
 @mixin kendo-typography--theme() {
     .k-body {
         @include fill(
-            k-color( on-app-surface ),
-            k-color( app-surface )
+            k-color(on-app-surface),
+            k-color(app-surface)
         );
     }
 

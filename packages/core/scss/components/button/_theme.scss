@@ -110,7 +110,7 @@
                 &:focus,
                 &.k-focus {
                     @if ( $kendo-solid-button-shadow ) {
-                        @include focus-indicator( 0 0 $kendo-solid-button-shadow-blur $kendo-solid-button-shadow-spread color-mix(in srgb, k-color( $name ) ( $kendo-solid-button-shadow-opacity * 100% ), transparent), true, true );
+                        @include focus-indicator( 0 0 $kendo-solid-button-shadow-blur $kendo-solid-button-shadow-spread color-mix(in srgb, k-color($name) ( $kendo-solid-button-shadow-opacity * 100% ), transparent), true, true );
                     }
                 }
 
@@ -150,7 +150,7 @@
 
 
     // Outline button
-    @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": k-color( on-app-surface ) ) ) {
+    @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": k-color(on-app-surface) ) ) {
         .k-button-outline-#{$name} {
             @include box-shadow( none );
             border-color: currentColor;
@@ -162,13 +162,13 @@
             &.k-hover {
                 @if $name == "base" {
                     @include fill(
-                        k-color( base ),
-                        k-color( on-base ),
-                        k-color( on-base )
+                        k-color(base),
+                        k-color(on-base),
+                        k-color(on-base)
                     );
                 } @else {
                     @include fill(
-                        k-color( on-#{$name} ),
+                        k-color(on-#{$name}),
                         $color,
                         $color
                     );
@@ -180,9 +180,9 @@
             &.k-focus {
                 @if $kendo-outline-button-shadow {
                     @if $name == "base" {
-                        @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread color-mix(in srgb, k-color( on-app-surface ) ( $kendo-outline-button-shadow-opacity * 100% ), transparent), true, true );
+                        @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread color-mix(in srgb, k-color(on-app-surface ) ( $kendo-outline-button-shadow-opacity * 100% ), transparent), true, true );
                     } @else {
-                        @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread color-mix(in srgb, k-color( $name ) ( $kendo-outline-button-shadow-opacity * 100% ), transparent), true, true );
+                        @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread color-mix(in srgb, k-color($name ) ( $kendo-outline-button-shadow-opacity * 100% ), transparent), true, true );
                     }
                 }
             }
@@ -192,13 +192,13 @@
             &.k-active {
                 @if $name == "base" {
                     @include fill(
-                        k-color( base ),
-                        k-color( on-base ),
-                        k-color( on-base )
+                        k-color(base ),
+                        k-color(on-base ),
+                        k-color(on-base )
                     );
                 } @else {
                     @include fill(
-                        k-color( on-#{$name} ),
+                        k-color(on-#{$name} ),
                         $color,
                         $color
                     );
@@ -209,13 +209,13 @@
             &.k-selected {
                 @if $name == "base" {
                     @include fill(
-                        k-color( base ),
-                        k-color( on-base ),
-                        k-color( on-base )
+                        k-color(base ),
+                        k-color(on-base ),
+                        k-color(on-base )
                     );
                 } @else {
                     @include fill(
-                        k-color( on-#{$name} ),
+                        k-color(on-#{$name} ),
                         $color,
                         $color
                     );
@@ -250,7 +250,7 @@
 
 
     // Link button
-    @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": k-color( on-app-surface ) ) ) {
+    @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": k-color(on-app-surface ) ) ) {
         .k-button-link-#{$name} {
             color: $color;
 
@@ -269,9 +269,9 @@
             &.k-focus {
                 @if ( $kendo-link-button-shadow ) {
                     @if $name == "base" {
-                        @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread color-mix(in srgb, k-color( on-app-surface ) ( $kendo-link-button-shadow-opacity * 100% ), transparent), true, true );
+                        @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread color-mix(in srgb, k-color(on-app-surface ) ( $kendo-link-button-shadow-opacity * 100% ), transparent), true, true );
                     } @else {
-                        @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread color-mix(in srgb, k-color( $name ) ( $kendo-link-button-shadow-opacity * 100% ), transparent), true, true );
+                        @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread color-mix(in srgb, k-color($name ) ( $kendo-link-button-shadow-opacity * 100% ), transparent), true, true );
                     }
                 }
             }
@@ -305,7 +305,7 @@
 
 
     // Clear button
-    @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": k-color( on-app-surface ) ) ) {
+    @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": k-color(on-app-surface ) ) ) {
         .k-button-clear-#{$name} {
             color: k-color(#{$name}-on-surface);
 

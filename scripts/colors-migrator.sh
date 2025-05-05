@@ -104,126 +104,126 @@ migrate_scss() {
         if [ "$migrate_variable_usage" = true ]; then
 
             updated_scss_content=$(echo "$updated_scss_content" | sed -E '
-                s/\$kendo-color-([^;]+)-([0-9]+)/k-color( \1, \2 )/g;
-                s/\$kendo-color-([^;]+)-contrast/k-color( on-\1 )/g;
-                s/\$kendo-color-primary/k-color( primary )/g;
-                s/\$kendo-color-secondary/k-color( secondary )/g;
-                s/\$kendo-color-tertiary/k-color( tertiary )/g;
-                s/\$kendo-color-info/k-color( info )/g;
-                s/\$kendo-color-success/k-color( success )/g;
-                s/\$kendo-color-warning/k-color( warning )/g;
-                s/\$kendo-color-error/k-color( error )/g;
-                s/\$kendo-color-light/k-color( light )/g;
-                s/\$kendo-color-dark/k-color( dark )/g;
-                s/\$kendo-color-inverse/k-color( inverse )/g;
-                s/\$kendo-body-bg/k-color( app-surface )/g;
-                s/\$kendo-body-text/k-color( on-app-surface )/g;
-                s/\$kendo-subtle-text/k-color( subtle )/g;
-                s/\$kendo-app-text/k-color( on-app-surface )/g;
-                s/\$kendo-app-border/k-color( border )/g;
-                s/\$kendo-component-bg/k-color( surface-alt )/g;
-                s/\$kendo-component-text/k-color( on-app-surface )/g;
-                s/\$kendo-component-border/k-color( border )/g;
-                s/\$kendo-base-text/k-color( on-app-surface )/g;
-                s/\$kendo-base-border/k-color( border )/g;
-                s/\$kendo-hover-border/k-color( border )/g;
-                s/\$kendo-selected-hover-border/k-color( border )/g;
-                s/\$kendo-component-header-text/k-color( on-app-surface )/g;
-                s/\$kendo-component-header-border/k-color( border )/g;
-                s/\$kendo-disabled-text/k-color( on-app-surface )/g;
+                s/\$kendo-color-([^;]+)-([0-9]+)/k-color(\1,\2)/g;
+                s/\$kendo-color-([^;]+)-contrast/k-color(on-\1)/g;
+                s/\$kendo-color-primary/k-color(primary)/g;
+                s/\$kendo-color-secondary/k-color(secondary)/g;
+                s/\$kendo-color-tertiary/k-color(tertiary)/g;
+                s/\$kendo-color-info/k-color(info)/g;
+                s/\$kendo-color-success/k-color(success)/g;
+                s/\$kendo-color-warning/k-color(warning)/g;
+                s/\$kendo-color-error/k-color(error)/g;
+                s/\$kendo-color-light/k-color(light)/g;
+                s/\$kendo-color-dark/k-color(dark)/g;
+                s/\$kendo-color-inverse/k-color(inverse)/g;
+                s/\$kendo-body-bg/k-color(app-surface)/g;
+                s/\$kendo-body-text/k-color(on-app-surface)/g;
+                s/\$kendo-subtle-text/k-color(subtle)/g;
+                s/\$kendo-app-text/k-color(on-app-surface)/g;
+                s/\$kendo-app-border/k-color(border)/g;
+                s/\$kendo-component-bg/k-color(surface-alt)/g;
+                s/\$kendo-component-text/k-color(on-app-surface)/g;
+                s/\$kendo-component-border/k-color(border)/g;
+                s/\$kendo-base-text/k-color(on-app-surface)/g;
+                s/\$kendo-base-border/k-color(border)/g;
+                s/\$kendo-hover-border/k-color(border)/g;
+                s/\$kendo-selected-hover-border/k-color(border)/g;
+                s/\$kendo-component-header-text/k-color(on-app-surface)/g;
+                s/\$kendo-component-header-border/k-color(border)/g;
+                s/\$kendo-disabled-text/k-color(on-app-surface)/g;
             ')
 
             if [ "$theme" = 'default' ]; then
                 updated_scss_content=$(echo "$updated_scss_content" | sed -E '
-                    s/\$kendo-app-bg/k-color( surface )/g;
-                    s/\$kendo-link-text/k-color( primary )/g;
-                    s/\$kendo-link-hover-text/k-color( primary-hover )/g;
-                    s/\$kendo-base-bg/k-color( surface )/g;
-                    s/\$kendo-hover-bg/k-color( base-hover )/g;
-                    s/\$kendo-hover-text/k-color( on-app-surface )/g;
-                    s/\$kendo-selected-bg/k-color( primary )/g;
-                    s/\$kendo-selected-text/k-color( on-primary )/g;
-                    s/\$kendo-selected-border/k-color( border )/g;
-                    s/\$kendo-selected-hover-bg/k-color( primary-hover )/g;
-                    s/\$kendo-selected-hover-text/k-color( on-primary )/g;
-                    s/\$kendo-component-header-bg/k-color( surface )/g;
-                    s/\$kendo-invalid-text/k-color( error )/g;
-                    s/\$kendo-invalid-border/k-color( error )/g;
+                    s/\$kendo-app-bg/k-color(surface)/g;
+                    s/\$kendo-link-text/k-color(primary)/g;
+                    s/\$kendo-link-hover-text/k-color(primary-hover)/g;
+                    s/\$kendo-base-bg/k-color(surface)/g;
+                    s/\$kendo-hover-bg/k-color(base-hover)/g;
+                    s/\$kendo-hover-text/k-color(on-app-surface)/g;
+                    s/\$kendo-selected-bg/k-color(primary)/g;
+                    s/\$kendo-selected-text/k-color(on-primary)/g;
+                    s/\$kendo-selected-border/k-color(border)/g;
+                    s/\$kendo-selected-hover-bg/k-color(primary-hover)/g;
+                    s/\$kendo-selected-hover-text/k-color(on-primary)/g;
+                    s/\$kendo-component-header-bg/k-color(surface)/g;
+                    s/\$kendo-invalid-text/k-color(error)/g;
+                    s/\$kendo-invalid-border/k-color(error)/g;
                 ')
             fi
 
             if [ "$theme" = 'bootstrap' ]; then
                 updated_scss_content=$(echo "$updated_scss_content" | sed -E '
-                    s/\$kendo-app-bg/k-color( surface )/g;
-                    s/\$kendo-link-text/k-color( primary )/g;
-                    s/\$kendo-link-hover-text/k-color( primary-hover )/g;
-                    s/\$kendo-base-bg/k-color( surface )/g;
-                    s/\$kendo-hover-bg/k-color( base-subtle-hover )/g;
-                    s/\$kendo-hover-text/k-color( on-app-surface )/g;
-                    s/\$kendo-selected-bg/k-color( primary )/g;
-                    s/\$kendo-selected-text/k-color( on-primary )/g;
-                    s/\$kendo-selected-border/k-color( primary )/g;
-                    s/\$kendo-selected-hover-bg/k-color( primary-hover )/g;
-                    s/\$kendo-selected-hover-text/k-color( on-primary )/g;
-                    s/\$kendo-component-header-bg/k-color( surface )/g;
-                    s/\$kendo-invalid-text/k-color( error )/g;
-                    s/\$kendo-invalid-border/k-color( error )/g;
+                    s/\$kendo-app-bg/k-color(surface)/g;
+                    s/\$kendo-link-text/k-color(primary)/g;
+                    s/\$kendo-link-hover-text/k-color(primary-hover)/g;
+                    s/\$kendo-base-bg/k-color(surface)/g;
+                    s/\$kendo-hover-bg/k-color(base-subtle-hover)/g;
+                    s/\$kendo-hover-text/k-color(on-app-surface)/g;
+                    s/\$kendo-selected-bg/k-color(primary)/g;
+                    s/\$kendo-selected-text/k-color(on-primary)/g;
+                    s/\$kendo-selected-border/k-color(primary)/g;
+                    s/\$kendo-selected-hover-bg/k-color(primary-hover)/g;
+                    s/\$kendo-selected-hover-text/k-color(on-primary)/g;
+                    s/\$kendo-component-header-bg/k-color(surface)/g;
+                    s/\$kendo-invalid-text/k-color(error)/g;
+                    s/\$kendo-invalid-border/k-color(error)/g;
                 ')
             fi
 
             if [ "$theme" = 'material' ]; then
                 updated_scss_content=$(echo "$updated_scss_content" | sed -E '
-                    s/\$kendo-app-bg/k-color( app-surface )/g;
-                    s/\$kendo-link-text/k-color( secondary )/g;
-                    s/\$kendo-link-hover-text/k-color( secondary-hover )/g;
-                    s/\$kendo-base-bg/k-color( app-surface )/g;
-                    s/\$kendo-hover-bg/k-color( base-hover )/g;
-                    s/\$kendo-hover-text/k-color( on-app-surface )/g;
-                    s/\$kendo-selected-bg/k-color( secondary )/g;
-                    s/\$kendo-selected-text/k-color( on-secondary )/g;
-                    s/\$kendo-selected-border/k-color( border )/g;
-                    s/\$kendo-selected-hover-bg/k-color( secondary-hover )/g;
-                    s/\$kendo-selected-hover-text/k-color( on-secondary )/g;
-                    s/\$kendo-component-header-bg/k-color( app-surface )/g;
-                    s/\$kendo-invalid-text/k-color( error )/g;
-                    s/\$kendo-invalid-border/k-color( error )/g;
+                    s/\$kendo-app-bg/k-color(app-surface)/g;
+                    s/\$kendo-link-text/k-color(secondary)/g;
+                    s/\$kendo-link-hover-text/k-color(secondary-hover)/g;
+                    s/\$kendo-base-bg/k-color(app-surface)/g;
+                    s/\$kendo-hover-bg/k-color(base-hover)/g;
+                    s/\$kendo-hover-text/k-color(on-app-surface)/g;
+                    s/\$kendo-selected-bg/k-color(secondary)/g;
+                    s/\$kendo-selected-text/k-color(on-secondary)/g;
+                    s/\$kendo-selected-border/k-color(border)/g;
+                    s/\$kendo-selected-hover-bg/k-color(secondary-hover)/g;
+                    s/\$kendo-selected-hover-text/k-color(on-secondary)/g;
+                    s/\$kendo-component-header-bg/k-color(app-surface)/g;
+                    s/\$kendo-invalid-text/k-color(error)/g;
+                    s/\$kendo-invalid-border/k-color(error)/g;
                 ')
             fi
 
             if [ "$theme" = 'classic' ]; then
                 updated_scss_content=$(echo "$updated_scss_content" | sed -E '
-                    s/\$kendo-app-bg/k-color( app-surface )/g;
-                    s/\$kendo-link-text/k-color( primary )/g;
-                    s/\$kendo-link-hover-text/k-color( primary-hover )/g;
-                    s/\$kendo-base-bg/k-color( surface )/g;
-                    s/\$kendo-hover-bg/k-color( base-hover )/g;
-                    s/\$kendo-hover-text/k-color( on-app-surface )/g;
-                    s/\$kendo-selected-bg/k-color( primary )/g;
-                    s/\$kendo-selected-text/k-color( on-primary )/g;
-                    s/\$kendo-selected-border/k-color( primary )/g;
-                    s/\$kendo-selected-hover-bg/k-color( primary-hover )/g;
-                    s/\$kendo-selected-hover-text/k-color( on-primary )/g;
-                    s/\$kendo-component-header-bg/k-color( surface )/g;
-                    s/\$kendo-invalid-text/k-color( error )/g;
-                    s/\$kendo-invalid-border/k-color( error )/g;
+                    s/\$kendo-app-bg/k-color(app-surface)/g;
+                    s/\$kendo-link-text/k-color(primary)/g;
+                    s/\$kendo-link-hover-text/k-color(primary-hover)/g;
+                    s/\$kendo-base-bg/k-color(surface)/g;
+                    s/\$kendo-hover-bg/k-color(base-hover)/g;
+                    s/\$kendo-hover-text/k-color(on-app-surface)/g;
+                    s/\$kendo-selected-bg/k-color(primary)/g;
+                    s/\$kendo-selected-text/k-color(on-primary)/g;
+                    s/\$kendo-selected-border/k-color(primary)/g;
+                    s/\$kendo-selected-hover-bg/k-color(primary-hover)/g;
+                    s/\$kendo-selected-hover-text/k-color(on-primary)/g;
+                    s/\$kendo-component-header-bg/k-color(surface)/g;
+                    s/\$kendo-invalid-text/k-color(error)/g;
+                    s/\$kendo-invalid-border/k-color(error)/g;
                 ')
             fi
 
             if [ "$theme" = 'fluent' ]; then
                 updated_scss_content=$(echo "$updated_scss_content" | sed -E '
-                    s/\$kendo-link-text/k-color( primary )/g;
-                    s/\$kendo-link-hover-text/k-color( primary-hover )/g;
-                    s/\$kendo-hover-bg/k-color( base-hover )/g;
-                    s/\$kendo-hover-text/k-color( on-base )/g;
-                    s/\$kendo-selected-bg/k-color( base-active )/g;
-                    s/\$kendo-selected-text/k-color( on-base )/g;
-                    s/\$kendo-selected-border/color-mix(in srgb, core.k-color( border-alt ) 76%, transparent)/g;
-                    s/\$kendo-selected-hover-bg/k-color( base-subtle-active )/g;
-                    s/\$kendo-selected-hover-text/k-color( on-base )/g;
-                    s/\$kendo-invalid-text/k-color( error-on-surface )/g;
-                    s/\$kendo-invalid-border/k-color( error-emphasis )/g;
-                    s/\$kendo-focus-outline/k-color( base-emphasis )/g;
-                    s/\$kendo-disabled-bg/k-color( base-subtle )/g;
+                    s/\$kendo-link-text/k-color(primary)/g;
+                    s/\$kendo-link-hover-text/k-color(primary-hover)/g;
+                    s/\$kendo-hover-bg/k-color(base-hover)/g;
+                    s/\$kendo-hover-text/k-color(on-base)/g;
+                    s/\$kendo-selected-bg/k-color(base-active)/g;
+                    s/\$kendo-selected-text/k-color(on-base)/g;
+                    s/\$kendo-selected-border/color-mix(in srgb, core.k-color(border-alt) 76%, transparent)/g;
+                    s/\$kendo-selected-hover-bg/k-color(base-subtle-active)/g;
+                    s/\$kendo-selected-hover-text/k-color(on-base)/g;
+                    s/\$kendo-invalid-text/k-color(error-on-surface)/g;
+                    s/\$kendo-invalid-border/k-color(error-emphasis)/g;
+                    s/\$kendo-focus-outline/k-color(base-emphasis)/g;
+                    s/\$kendo-disabled-bg/k-color(base-subtle)/g;
                 ')
             fi
 

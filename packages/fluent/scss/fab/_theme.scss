@@ -186,8 +186,8 @@
         &:disabled .k-fab-item-text,
         &.k-disabled .k-fab-item-text {
             @include disabled(
-                color-mix(in srgb, k-color( on-app-surface ) 46%, transparent),
-                k-color( base-subtle ),
+                color-mix(in srgb, k-color(on-app-surface) 46%, transparent),
+                k-color(base-subtle),
                 transparent
             );
         }
