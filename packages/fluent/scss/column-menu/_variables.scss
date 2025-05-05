@@ -44,4 +44,4 @@ $kendo-column-menu-sizes: (
 $kendo-group-menu-item-action-hover-bg: color-mix(in srgb, currentColor 5%, transparent) !default;
 $kendo-group-menu-item-action-selected-bg: color-mix(in srgb, currentColor 8%, transparent) !default;
 $kendo-group-menu-item-add-action-text: k-color(primary) !default;
-$kendo-group-menu-item-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-group-menu-item-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;

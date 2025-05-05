@@ -51,7 +51,7 @@ $kendo-expander-header-border: null !default;
 
 /// The background color of the hovered ExpansionPanel header.
 /// @group expander
-$kendo-expander-header-hover-bg: color-mix(in srgb, k-color( on-app-surface ) 8%, transparent)  !default;
+$kendo-expander-header-hover-bg: color-mix(in srgb, k-color(on-app-surface) 8%, transparent)  !default;
 /// The background color of the focused ExpansionPanel header.
 /// @group expander
 $kendo-expander-header-focus-bg: null !default;

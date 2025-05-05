@@ -36,7 +36,7 @@ $kendo-tile-layout-hint-border-radius: k-border-radius(md) !default;
 $kendo-tile-layout-hint-border: k-color(border) !default;
 /// The background color of the TileLayout hint.
 /// @group tile-layout
-$kendo-tile-layout-hint-bg: color-mix(in srgb, k-color( surface-alt ) .2, transparent ) !default;
+$kendo-tile-layout-hint-bg: color-mix(in srgb, k-color(surface-alt) .2, transparent ) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/tilelayout/_variables.scss" with (

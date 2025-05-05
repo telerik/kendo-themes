@@ -99,10 +99,10 @@ $kendo-menu-item-focus-shadow: inset 0 0 0 2px color-mix(in srgb, currentColor 2
 
 /// The background color of selected Menu item.
 /// @group menu
-$kendo-menu-item-selected-bg: k-color( secondary ) !default;
+$kendo-menu-item-selected-bg: k-color(secondary) !default;
 /// The text color of selected Menu item.
 /// @group menu
-$kendo-menu-item-selected-text: k-color( on-secondary ) !default;
+$kendo-menu-item-selected-text: k-color(on-secondary) !default;
 /// The border color of selected Menu item.
 /// @group menu
 $kendo-menu-item-selected-border: null !default;
@@ -125,7 +125,7 @@ $kendo-menu-scroll-button-gradient: null !default;
 
 /// The background color of hovered Menu scroll buttons.
 /// @group menu
-$kendo-menu-scroll-button-hover-bg: color-mix(in srgb, k-color( on-app-surface ) 8%, transparent) !default;
+$kendo-menu-scroll-button-hover-bg: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
 /// The text color of hovered Menu scroll buttons.
 /// @group menu
 $kendo-menu-scroll-button-hover-text: $kendo-menu-item-hover-text !default;

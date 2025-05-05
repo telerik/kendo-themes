@@ -117,7 +117,7 @@ $kendo-chip-theme-colors: (
 $kendo-chip-solid-bg: k-color(base-subtle) !default;
 /// The base text color of the solid Chip.
 /// @group chip
-$kendo-chip-solid-text: k-color( base-on-subtle ) !default;
+$kendo-chip-solid-text: k-color(base-on-subtle) !default;
 /// The base border color of the solid Chip.
 /// @group chip
 $kendo-chip-solid-border: $kendo-chip-solid-bg !default;

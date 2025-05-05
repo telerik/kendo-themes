@@ -11,7 +11,7 @@
 
             @if ($name == "info") {
                 @include fill (
-                    $color: k-color( on-app-surface ),
+                    $color: k-color(on-app-surface),
                     $border: $color
                 );
 
@@ -19,7 +19,7 @@
                 &.k-hover,
                 &.k-selected {
                     @include fill(
-                        k-color( on-app-surface ),
+                        k-color(on-app-surface),
                         $color,
                         $color
                     );

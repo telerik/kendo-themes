@@ -218,8 +218,8 @@
         .k-hierarchy-cell .k-icon {
             &:hover {
                 @include fill(
-                    $color: k-color( on-base ),
-                    $bg: k-color( base-hover )
+                    $color: k-color(on-base),
+                    $bg: k-color(base-hover)
                 );
             }
             &:focus,
@@ -228,8 +228,8 @@
             }
             &.k-active {
                 @include fill(
-                    $color: k-color( on-base ),
-                    $bg: k-color( base-active )
+                    $color: k-color(on-base),
+                    $bg: k-color(base-active)
                 );
             }
         }
@@ -410,7 +410,7 @@
             &.k-disabled .k-link,
             &.k-disabled .k-icon {
                 @include disabled(
-                    color-mix(in srgb, k-color( on-app-surface ) 46%, transparent)
+                    color-mix(in srgb, k-color(on-app-surface) 46%, transparent)
                 );
             }
         }
@@ -422,7 +422,7 @@
         .k-listgroup-item {
             &.k-disabled {
                 @include disabled(
-                    $bg: k-color( base-subtle )
+                    $bg: k-color(base-subtle)
                 );
             }
         }

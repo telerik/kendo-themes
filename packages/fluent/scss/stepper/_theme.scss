@@ -34,7 +34,7 @@
             .k-step-link:focus  {
                 // Labels only
                 .k-step-label:only-child {
-                    @include box-shadow( inset 0 0 0 var( --kendo-stepper-indicator-focus-size, #{$kendo-stepper-indicator-focus-size} ) color-mix(in srgb, k-color( border ) 16%, transparent) );
+                    @include box-shadow( inset 0 0 0 var( --kendo-stepper-indicator-focus-size, #{$kendo-stepper-indicator-focus-size} ) color-mix(in srgb, k-color(border) 16%, transparent) );
                 }
             }
 
@@ -44,7 +44,7 @@
                 .k-step-indicator {
                     @include fill(
                         var( --kendo-stepper-indicator-disabled-text, #{$kendo-stepper-indicator-disabled-text} ),
-                        k-color( app-surface ),
+                        k-color(app-surface),
                         var( --kendo-stepper-indicator-disabled-border, #{$kendo-stepper-indicator-disabled-border} )
                     );
 
@@ -66,13 +66,13 @@
             );
         }
         .k-step-indicator::after {
-            @include box-shadow( inset 0 0 0 var( --kendo-stepper-indicator-focus-size, #{$kendo-stepper-indicator-focus-size} ) k-color( surface-alt ) );
+            @include box-shadow( inset 0 0 0 var( --kendo-stepper-indicator-focus-size, #{$kendo-stepper-indicator-focus-size} ) k-color(surface-alt) );
         }
         .k-step-label:only-child {
             @include fill(
-                k-color( on-app-surface ),
-                k-color( surface-alt ),
-                color-mix(in srgb, k-color( border ) 16%, transparent)
+                k-color(on-app-surface),
+                k-color(surface-alt),
+                color-mix(in srgb, k-color(border) 16%, transparent)
             );
         }
 
@@ -110,7 +110,7 @@
                 .k-step-indicator {
                     @include fill(
                         var( --kendo-stepper-indicator-done-disabled-text, #{$kendo-stepper-indicator-done-disabled-text} ),
-                        k-color( app-surface ),
+                        k-color(app-surface ),
                         var( --kendo-stepper-indicator-done-disabled-border, #{$kendo-stepper-indicator-done-disabled-border} )
                     );
 
@@ -159,7 +159,7 @@
                 .k-step-indicator {
                     @include fill(
                         var( --kendo-stepper-indicator-current-disabled-text, #{$kendo-stepper-indicator-current-disabled-text} ),
-                        k-color( app-surface ),
+                        k-color(app-surface),
                         var( --kendo-stepper-indicator-current-disabled-border, #{$kendo-stepper-indicator-current-disabled-border} )
                     );
 

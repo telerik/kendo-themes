@@ -83,7 +83,7 @@
 
             &:focus,
             &.k-focus {
-                @include focus-indicator( 0 0 $kendo-chat-quick-reply-shadow-blur $kendo-chat-quick-reply-shadow-spread color-mix(in srgb, k-color( 'primary' ) ( $kendo-chat-quick-reply-shadow-opacity * 100% ), transparent), true, true );
+                @include focus-indicator( 0 0 $kendo-chat-quick-reply-shadow-blur $kendo-chat-quick-reply-shadow-spread color-mix(in srgb, k-color(primary) ( $kendo-chat-quick-reply-shadow-opacity * 100% ), transparent), true, true );
             }
         }
     }

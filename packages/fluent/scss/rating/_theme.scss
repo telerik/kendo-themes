@@ -37,7 +37,7 @@
 
         &.k-disabled {
             @include disabled(
-                color-mix(in srgb, k-color( on-app-surface ) 46%, transparent),
+                color-mix(in srgb, k-color(on-app-surface) 46%, transparent),
                 inherit,
                 transparent
             );
