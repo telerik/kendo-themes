@@ -342,6 +342,46 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-switch-off-thumb-disabled-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the disabled Switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-thumb-disabled-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the disabled Switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-thumb-disabled-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the disabled Switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-thumb-disabled-gradient</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the disabled Switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-switch-on-track-bg</td>
     <td>String</td>
     <td><code>k-color(surface-alt)</code></td>
@@ -589,6 +629,46 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the hovered Switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-thumb-disabled-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the disabled Switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-thumb-disabled-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the disabled Switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-thumb-disabled-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the disabled Switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-thumb-disabled-gradient</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the disabled Switch is checked.</div></div>
     </td>
 </tr>
 </tbody>

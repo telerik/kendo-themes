@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-wizard-padding-x</td>
-    <td>Calculation</td>
-    <td><code>calc( #{k-spacing(4)} * 1.25 )</code></td>
-    <td><code>calc(var(--kendo-spacing-4, 1rem) * 1.25)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(5)</code></td>
+    <td><code>var(--kendo-spacing-5, 1.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Wizard.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-wizard-padding-y</td>
-    <td>Calculation</td>
+    <td>String</td>
     <td><code>$kendo-wizard-padding-x</code></td>
-    <td><code>calc(var(--kendo-spacing-4, 1rem) * 1.25)</code></td>
+    <td><code>var(--kendo-spacing-5, 1.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Wizard.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-wizard-content-padding-x</td>
-    <td>Calculation</td>
-    <td><code>calc( #{k-spacing(4)} * 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-4, 1rem) * 2)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(8)</code></td>
+    <td><code>var(--kendo-spacing-8, 2rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Wizard content.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-wizard-content-padding-y</td>
-    <td>Calculation</td>
-    <td><code>calc( #{k-spacing(1)} * 8 )</code></td>
-    <td><code>calc(var(--kendo-spacing-1, 0.25rem) * 8)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(8)</code></td>
+    <td><code>var(--kendo-spacing-8, 2rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Wizard content.</div></div>

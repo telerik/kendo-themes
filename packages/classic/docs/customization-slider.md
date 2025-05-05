@@ -258,6 +258,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-slider-draghandle-hover-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-slider-draghandle-pressed-bg</td>
     <td>String</td>
     <td><code>k-color(primary-active)</code></td>
@@ -395,6 +405,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background image of the vertical Slider tick.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-tick-marker-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider tick marker.</div></div>
     </td>
 </tr>
 </tbody>

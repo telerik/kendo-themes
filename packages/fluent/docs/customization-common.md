@@ -28,16 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-adaptive-actionsheet-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-lg</code></td>
-    <td><code>1rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the adaptive action sheet.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-card-brand-colors</td>
     <td>List</td>
     <td><code>( primary, error, warning, success, info )</code></td>

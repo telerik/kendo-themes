@@ -118,6 +118,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-filter-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the List filter, when no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-filter-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-list-filter-padding-x</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the List filter, when no size is set.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-sm-item-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
@@ -278,7 +298,9 @@ The following table lists the available variables for customization.
         group-item-padding-x: $kendo-list-sm-group-item-padding-x,
         group-item-padding-y: $kendo-list-sm-group-item-padding-y,
         group-item-font-size: $kendo-list-sm-group-item-font-size,
-        group-item-line-height: $kendo-list-sm-group-item-line-height
+        group-item-line-height: $kendo-list-sm-group-item-line-height,
+        filter-padding-x: $kendo-list-sm-filter-padding-x,
+        filter-padding-y: $kendo-list-sm-filter-padding-y
     ),
     md: (
         font-size: $kendo-list-md-font-size,
@@ -297,7 +319,9 @@ The following table lists the available variables for customization.
         group-item-padding-x: $kendo-list-md-group-item-padding-x,
         group-item-padding-y: $kendo-list-md-group-item-padding-y,
         group-item-font-size: $kendo-list-md-group-item-font-size,
-        group-item-line-height: $kendo-list-md-group-item-line-height
+        group-item-line-height: $kendo-list-md-group-item-line-height,
+        filter-padding-x: $kendo-list-md-filter-padding-x,
+        filter-padding-y: $kendo-list-md-filter-padding-y
     ),
     lg: (
         font-size: $kendo-list-lg-font-size,
@@ -316,10 +340,12 @@ The following table lists the available variables for customization.
         group-item-padding-x: $kendo-list-lg-group-item-padding-x,
         group-item-padding-y: $kendo-list-lg-group-item-padding-y,
         group-item-font-size: $kendo-list-lg-group-item-font-size,
-        group-item-line-height: $kendo-list-lg-group-item-line-height
+        group-item-line-height: $kendo-list-lg-group-item-line-height,
+        filter-padding-x: $kendo-list-lg-filter-padding-x,
+        filter-padding-y: $kendo-list-lg-filter-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","header-font-size":"var(--kendo-font-size, inherit)","header-line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","item-font-size":"var(--kendo-font-size, inherit)","item-line-height":"var(--kendo-line-height, normal)","item-group-label-padding-x":"var(--kendo-spacing-0\\.5, 0.125rem)","item-group-label-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","group-item-padding-x":"var(--kendo-spacing-2, 0.5rem)","group-item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","group-item-font-size":"var(--kendo-font-size, inherit)","group-item-line-height":"var(--kendo-line-height, normal)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","header-font-size":"var(--kendo-font-size, inherit)","header-line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","item-font-size":"var(--kendo-font-size, inherit)","item-line-height":"var(--kendo-line-height, normal)","item-group-label-padding-x":"var(--kendo-spacing-1, 0.25rem)","item-group-label-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","group-item-padding-x":"var(--kendo-spacing-2, 0.5rem)","group-item-padding-y":"var(--kendo-spacing-2, 0.5rem)","group-item-font-size":"var(--kendo-font-size, inherit)","group-item-line-height":"var(--kendo-line-height, normal)"</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","header-font-size":"var(--kendo-font-size, inherit)","header-line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","item-font-size":"var(--kendo-font-size, inherit)","item-line-height":"var(--kendo-line-height, normal)","item-group-label-padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","item-group-label-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","group-item-padding-x":"var(--kendo-spacing-2, 0.5rem)","group-item-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","group-item-font-size":"var(--kendo-font-size, inherit)","group-item-line-height":"var(--kendo-line-height, normal)"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","header-font-size":"var(--kendo-font-size, inherit)","header-line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","item-font-size":"var(--kendo-font-size, inherit)","item-line-height":"var(--kendo-line-height, normal)","item-group-label-padding-x":"var(--kendo-spacing-0\\.5, 0.125rem)","item-group-label-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","group-item-padding-x":"var(--kendo-spacing-2, 0.5rem)","group-item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","group-item-font-size":"var(--kendo-font-size, inherit)","group-item-line-height":"var(--kendo-line-height, normal)","filter-padding-x":"var(--kendo-spacing-2, 0.5rem)","filter-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","header-font-size":"var(--kendo-font-size, inherit)","header-line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","item-font-size":"var(--kendo-font-size, inherit)","item-line-height":"var(--kendo-line-height, normal)","item-group-label-padding-x":"var(--kendo-spacing-1, 0.25rem)","item-group-label-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","group-item-padding-x":"var(--kendo-spacing-2, 0.5rem)","group-item-padding-y":"var(--kendo-spacing-2, 0.5rem)","group-item-font-size":"var(--kendo-font-size, inherit)","group-item-line-height":"var(--kendo-line-height, normal)","filter-padding-x":"var(--kendo-spacing-2, 0.5rem)","filter-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","header-font-size":"var(--kendo-font-size, inherit)","header-line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","item-font-size":"var(--kendo-font-size, inherit)","item-line-height":"var(--kendo-line-height, normal)","item-group-label-padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","item-group-label-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","group-item-padding-x":"var(--kendo-spacing-2, 0.5rem)","group-item-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","group-item-font-size":"var(--kendo-font-size, inherit)","group-item-line-height":"var(--kendo-line-height, normal)","filter-padding-x":"var(--kendo-spacing-2, 0.5rem)","filter-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the List.</div></div>

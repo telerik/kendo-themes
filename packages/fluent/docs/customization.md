@@ -32,16 +32,6 @@ The following table lists the available variables for customizing the Fluent the
     </tr>
 </thead>
 <tbody><tr>
-    <td>$kendo-adaptive-actionsheet-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-lg</code></td>
-    <td><code>1rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the adaptive action sheet.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-card-brand-colors</td>
     <td>List</td>
     <td><code>( primary, error, warning, success, info )</code></td>
@@ -958,6 +948,26 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Disabled border color of the action sheet item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-adaptive-actionsheet-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-lg</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the adaptive action sheet.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-adaptive-actionsheet-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height, inherit )</code></td>
+    <td><code>var(--kendo-line-height, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the adaptive action sheet.</div></div>
     </td>
 </tr>
 <tr>
@@ -3059,6 +3069,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-border-radius</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border-radius of the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-cell-size</td>
     <td>Number</td>
     <td><code>28px</code></td>
@@ -3499,6 +3519,26 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-today-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-bold, normal )</code></td>
+    <td><code>var(--kendo-font-weight-bold, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the current day in the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-today-box-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the current day in the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-week-number-bg</td>
     <td>String</td>
     <td><code>inherit</code></td>
@@ -3716,6 +3756,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered items in the calendar navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-navigation-marker-text</td>
+    <td>String</td>
+    <td><code>currentColor</code></td>
+    <td><code>currentColor</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the marker in the Calendar navigation.</div></div>
     </td>
 </tr>
 <tr>
@@ -7024,6 +7074,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-chip-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-normal, normal )</code></td>
+    <td><code>var(--kendo-font-weight-normal, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Chip.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chip-sm-font-size</td>
     <td>String</td>
     <td><code>var( --kendo-font-size, inherit )</code></td>
@@ -9988,6 +10048,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-dialog-bg</td>
+    <td>String</td>
+    <td><code>k-color(app-surface)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Dialog.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-dialog-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-box-shadow-depth-8, none )</code></td>
@@ -10778,6 +10848,26 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-drawer-items-padding-x</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Drawer items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-items-padding-y</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Drawer items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-drawer-item-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
@@ -10795,6 +10885,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-item-spacing</td>
+    <td>String</td>
+    <td><code>$kendo-drawer-item-padding-x</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items in the Drawer item.</div></div>
     </td>
 </tr>
 <tr>
@@ -10818,6 +10918,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-drawer-item-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight, normal )</code></td>
+    <td><code>var(--kendo-font-weight, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-drawer-item-level-padding-x</td>
     <td>String</td>
     <td><code>$kendo-drawer-item-padding-x</code></td>
@@ -10835,6 +10945,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The count of the Drawer item levels.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-item-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Drawer item.</div></div>
     </td>
 </tr>
 <tr>
@@ -11045,6 +11165,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected and hovered Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-item-selected-focus-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and focused Drawer item.</div></div>
     </td>
 </tr>
 </tbody>
@@ -18181,6 +18311,26 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-filter-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the List filter, when no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-filter-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-list-filter-padding-x</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the List filter, when no size is set.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-sm-item-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
@@ -18341,7 +18491,9 @@ The following table lists the available variables for customizing the Fluent the
         group-item-padding-x: $kendo-list-sm-group-item-padding-x,
         group-item-padding-y: $kendo-list-sm-group-item-padding-y,
         group-item-font-size: $kendo-list-sm-group-item-font-size,
-        group-item-line-height: $kendo-list-sm-group-item-line-height
+        group-item-line-height: $kendo-list-sm-group-item-line-height,
+        filter-padding-x: $kendo-list-sm-filter-padding-x,
+        filter-padding-y: $kendo-list-sm-filter-padding-y
     ),
     md: (
         font-size: $kendo-list-md-font-size,
@@ -18360,7 +18512,9 @@ The following table lists the available variables for customizing the Fluent the
         group-item-padding-x: $kendo-list-md-group-item-padding-x,
         group-item-padding-y: $kendo-list-md-group-item-padding-y,
         group-item-font-size: $kendo-list-md-group-item-font-size,
-        group-item-line-height: $kendo-list-md-group-item-line-height
+        group-item-line-height: $kendo-list-md-group-item-line-height,
+        filter-padding-x: $kendo-list-md-filter-padding-x,
+        filter-padding-y: $kendo-list-md-filter-padding-y
     ),
     lg: (
         font-size: $kendo-list-lg-font-size,
@@ -18379,10 +18533,12 @@ The following table lists the available variables for customizing the Fluent the
         group-item-padding-x: $kendo-list-lg-group-item-padding-x,
         group-item-padding-y: $kendo-list-lg-group-item-padding-y,
         group-item-font-size: $kendo-list-lg-group-item-font-size,
-        group-item-line-height: $kendo-list-lg-group-item-line-height
+        group-item-line-height: $kendo-list-lg-group-item-line-height,
+        filter-padding-x: $kendo-list-lg-filter-padding-x,
+        filter-padding-y: $kendo-list-lg-filter-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","header-font-size":"var(--kendo-font-size, inherit)","header-line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","item-font-size":"var(--kendo-font-size, inherit)","item-line-height":"var(--kendo-line-height, normal)","item-group-label-padding-x":"var(--kendo-spacing-0\\.5, 0.125rem)","item-group-label-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","group-item-padding-x":"var(--kendo-spacing-2, 0.5rem)","group-item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","group-item-font-size":"var(--kendo-font-size, inherit)","group-item-line-height":"var(--kendo-line-height, normal)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","header-font-size":"var(--kendo-font-size, inherit)","header-line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","item-font-size":"var(--kendo-font-size, inherit)","item-line-height":"var(--kendo-line-height, normal)","item-group-label-padding-x":"var(--kendo-spacing-1, 0.25rem)","item-group-label-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","group-item-padding-x":"var(--kendo-spacing-2, 0.5rem)","group-item-padding-y":"var(--kendo-spacing-2, 0.5rem)","group-item-font-size":"var(--kendo-font-size, inherit)","group-item-line-height":"var(--kendo-line-height, normal)"</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","header-font-size":"var(--kendo-font-size, inherit)","header-line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","item-font-size":"var(--kendo-font-size, inherit)","item-line-height":"var(--kendo-line-height, normal)","item-group-label-padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","item-group-label-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","group-item-padding-x":"var(--kendo-spacing-2, 0.5rem)","group-item-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","group-item-font-size":"var(--kendo-font-size, inherit)","group-item-line-height":"var(--kendo-line-height, normal)"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","header-font-size":"var(--kendo-font-size, inherit)","header-line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","item-font-size":"var(--kendo-font-size, inherit)","item-line-height":"var(--kendo-line-height, normal)","item-group-label-padding-x":"var(--kendo-spacing-0\\.5, 0.125rem)","item-group-label-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","group-item-padding-x":"var(--kendo-spacing-2, 0.5rem)","group-item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","group-item-font-size":"var(--kendo-font-size, inherit)","group-item-line-height":"var(--kendo-line-height, normal)","filter-padding-x":"var(--kendo-spacing-2, 0.5rem)","filter-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","header-font-size":"var(--kendo-font-size, inherit)","header-line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","item-font-size":"var(--kendo-font-size, inherit)","item-line-height":"var(--kendo-line-height, normal)","item-group-label-padding-x":"var(--kendo-spacing-1, 0.25rem)","item-group-label-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","group-item-padding-x":"var(--kendo-spacing-2, 0.5rem)","group-item-padding-y":"var(--kendo-spacing-2, 0.5rem)","group-item-font-size":"var(--kendo-font-size, inherit)","group-item-line-height":"var(--kendo-line-height, normal)","filter-padding-x":"var(--kendo-spacing-2, 0.5rem)","filter-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","header-font-size":"var(--kendo-font-size, inherit)","header-line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","item-font-size":"var(--kendo-font-size, inherit)","item-line-height":"var(--kendo-line-height, normal)","item-group-label-padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","item-group-label-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","group-item-padding-x":"var(--kendo-spacing-2, 0.5rem)","group-item-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","group-item-font-size":"var(--kendo-font-size, inherit)","group-item-line-height":"var(--kendo-line-height, normal)","filter-padding-x":"var(--kendo-spacing-2, 0.5rem)","filter-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the List.</div></div>
@@ -21082,6 +21238,26 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Notification.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-actions-padding-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Notification actions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-actions-padding-y</td>
+    <td>Null</td>
+    <td><code>$kendo-notification-actions-padding-x</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Notification actions.</div></div>
     </td>
 </tr>
 <tr>
@@ -32456,6 +32632,36 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the time-selector header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-time-selector-header-title-text</td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the title in the time-selector header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-time-selector-header-time-now-text</td>
+    <td>String</td>
+    <td><code>k-color(primary)</code></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the time now in the time-selector header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-time-selector-header-time-now-hover-text</td>
+    <td>String</td>
+    <td><code>k-color(primary-hover)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #106ebe)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the time now in the time-selector header.</div></div>
     </td>
 </tr>
 <tr>

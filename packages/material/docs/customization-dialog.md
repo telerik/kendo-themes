@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dialog-buttongroup-padding-x</td>
     <td>String</td>
     <td><code>$kendo-actions-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Dialog action buttons.</div></div>
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dialog-buttongroup-padding-y</td>
     <td>String</td>
     <td><code>$kendo-actions-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Dialog action buttons.</div></div>
@@ -80,8 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dialog-buttongroup-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the top border of the Dialog action buttons.</div></div>
@@ -98,6 +98,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-dialog-bg</td>
+    <td>String</td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface, #F7F3FA)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Dialog.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-dialog-theme-colors</td>
     <td>Map</td>
     <td><code>(
@@ -105,7 +115,7 @@ The following table lists the available variables for customization.
     "light": k-color(light),
     "dark": k-color(dark)
 )</code></td>
-    <td><ul><li>primary: var(--kendo-color-primary, #3f51b5)</li><li>light: var(--kendo-color-light, #f5f5f5)</li><li>dark: var(--kendo-color-dark, #424242)</li></ul></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #65558F)</li><li>light: var(--kendo-color-light, #F7F3FA)</li><li>dark: var(--kendo-color-dark, #322F35)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Dialog.</div></div>

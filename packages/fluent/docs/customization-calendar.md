@@ -68,6 +68,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-border-radius</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border-radius of the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-cell-size</td>
     <td>Number</td>
     <td><code>28px</code></td>
@@ -508,6 +518,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-today-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-bold, normal )</code></td>
+    <td><code>var(--kendo-font-weight-bold, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the current day in the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-today-box-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the current day in the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-week-number-bg</td>
     <td>String</td>
     <td><code>inherit</code></td>
@@ -725,6 +755,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered items in the calendar navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-navigation-marker-text</td>
+    <td>String</td>
+    <td><code>currentColor</code></td>
+    <td><code>currentColor</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the marker in the Calendar navigation.</div></div>
     </td>
 </tr>
 <tr>
