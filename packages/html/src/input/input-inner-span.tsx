@@ -35,7 +35,7 @@ export const InputInnerSpan = (
             {valueIcon}
             {!valueIcon && valueIconName && <Icon className="k-input-value-icon" icon={valueIconName} />}
             {showValue && !value && placeholder}
-            {showValue && value && <span className="k-input-value-text">{value}</span>}
+            {showValue && <span className="k-input-value-text">{value}</span>}
         </span>
     );
 };
