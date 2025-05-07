@@ -5,19 +5,15 @@ on:
     branches:
       - develop
 
+env:
+  COMMENT_TITLE: "## Dist Size Report"
+  UPDATING_MESSAGE: "Calculating... ⚠️"
+
 jobs:
-  compare-dist-sizes:
+  post-status-comment:
+    name: Post Status Comment
     runs-on: ubuntu-latest
-    env:
-      COMMENT_TITLE: "## Dist Size Comparison"
-      UPDATING_MESSAGE: "Calculating... ⚠️"
-
     steps:
-      - name: Checkout PR branch
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
       - name: Post status PR comment
         uses: actions/github-script@v6
         with:
@@ -49,6 +45,16 @@ jobs:
               });
             }
 
+  calculate-pr-dist:
+    name: Calculate PR Dist Sizes
+    runs-on: ubuntu-latest
+    needs: post-status-comment
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Setup node
         id: setup-node
         uses: actions/setup-node@v4
@@ -67,55 +73,116 @@ jobs:
         run: |
           npm ci --no-audit --no-fund
 
-      - name: Generate and compare dist sizes
+      - name: Calculate dist sizes for PR
         run: |
-          echo "Generating dist for PR branch..."
           npx nx reset
           npm run sass:dist
 
-          echo "Calculating sizes for PR branch..."
           for folder in ./packages/*/dist; do
             theme=$(basename $(dirname "$folder"))
             pr_size=$(du -sb "$folder" | awk '{printf "%.2f", $1/1024/1024}')
             echo "$theme:$pr_size" >> pr-sizes.txt
           done
 
-          echo "Checking out develop branch..."
+      - name: Upload PR sizes
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr-sizes
+          path: pr-sizes.txt
+
+  calculate-develop-dist:
+    name: Calculate Develop Dist Sizes
+    runs-on: ubuntu-latest
+    needs: post-status-comment
+    steps:
+      - name: Checkout develop branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v4
+        with:
+            node-version: 20.x
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v4
+        with:
+            path: node_modules
+            key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: |
+            npm ci --no-audit --no-fund
+
+      - name: Calculate dist sizes for Develop
+        run: |
           git fetch origin develop
           git checkout origin/develop
-
-          echo "Generating dist for develop branch..."
           npx nx reset
           npm run sass:dist
 
-          echo "Comparing sizes..."
+          for folder in ./packages/*/dist; do
+            theme=$(basename $(dirname "$folder"))
+            develop_size=$(du -sb "$folder" | awk '{printf "%.2f", $1/1024/1024}')
+            echo "$theme:$develop_size" >> develop-sizes.txt
+          done
+
+      - name: Upload develop sizes
+        uses: actions/upload-artifact@v4
+        with:
+          name: develop-sizes
+          path: develop-sizes.txt
+
+  compare-sizes:
+    name: Compare Dist Sizes
+    runs-on: ubuntu-latest
+    needs:
+      - calculate-pr-dist
+      - calculate-develop-dist
+    steps:
+      - name: Download PR sizes
+        uses: actions/download-artifact@v4
+        with:
+          name: pr-sizes
+
+      - name: Download Develop sizes
+        uses: actions/download-artifact@v4
+        with:
+          name: develop-sizes
+
+      - name: Compare sizes
+        run: |
           echo "| Package | Develop (MB) | PR (MB) | Difference (MB) |" > size-comparison.md
           echo "|--------------|-------------------|--------------|-----------------|" >> size-comparison.md
-
-          for folder in ./packages/*/dist; do
-          theme=$(basename $(dirname "$folder"))
-          develop_size=$(du -sb "$folder" | awk '{printf "%.2f", $1/1024/1024}')
-          pr_size=$(grep "^$theme:" pr-sizes.txt | cut -d':' -f2 || echo "N/A")
-          if [ "$pr_size" != "N/A" ]; then
-            diff_size=$(awk "BEGIN {print $pr_size - $develop_size}")
-            if awk "BEGIN {exit ($diff_size > 0 ? 0 : 1)}"; then
-              arrow="🔼"
-            elif awk "BEGIN {exit ($diff_size < 0 ? 0 : 1)}"; then
-              arrow="🔽"
-            else
-              arrow=""
-            fi
-            echo "| $theme | $develop_size | $pr_size | $diff_size $arrow |" >> size-comparison.md
-          else
-            echo "| $theme | $develop_size | N/A | Removed |" >> size-comparison.md
-          fi
-          done
 
           for entry in $(cat pr-sizes.txt); do
             theme=$(echo "$entry" | cut -d':' -f1)
             pr_size=$(echo "$entry" | cut -d':' -f2)
-            if [ ! -d "./packages/$theme/dist" ]; then
+            develop_size=$(grep "^$theme:" develop-sizes.txt | cut -d':' -f2 || echo "N/A")
+            if [ "$develop_size" != "N/A" ]; then
+              diff_size=$(awk "BEGIN {print $pr_size - $develop_size}")
+              if awk "BEGIN {exit ($diff_size > 0 ? 0 : 1)}"; then
+                arrow="🔼"
+              elif awk "BEGIN {exit ($diff_size < 0 ? 0 : 1)}"; then
+                arrow="🔽"
+              else
+                arrow=""
+              fi
+              echo "| $theme | $develop_size | $pr_size | $diff_size $arrow |" >> size-comparison.md
+            else
               echo "| $theme | N/A | $pr_size | New Folder |" >> size-comparison.md
+            fi
+          done
+
+          for entry in $(cat develop-sizes.txt); do
+            theme=$(echo "$entry" | cut -d':' -f1)
+            develop_size=$(echo "$entry" | cut -d':' -f2)
+            if ! grep -q "^$theme:" pr-sizes.txt; then
+              echo "| $theme | $develop_size | N/A | Removed |" >> size-comparison.md
             fi
           done
 
