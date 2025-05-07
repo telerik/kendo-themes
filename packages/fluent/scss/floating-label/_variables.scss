@@ -49,6 +49,31 @@ $kendo-floating-label-focus-offset-y: 0 !default;
 /// @group floating-label
 $kendo-floating-label-transition: .2s ease-out !default;
 
+/// The transformation scale of the Border Floating Label.
+/// @group floating-label
+$kendo-floating-label-pos-border-scale: 1 !default;
+
+// The transformation scale of the focused Border Floating Label.
+/// @group floating-label
+$kendo-floating-label-pos-border-focus-scale: .85 !default;
+
+/// The horizontal offset of the focused Border Floating Label.
+/// @group floating-label
+$kendo-floating-label-pos-border-focus-offset-x: k-spacing(2) !default;
+
+/// The padding of the focused Border Floating Label.
+/// @group floating-label
+$kendo-floating-label-pos-border-focus-padding: null !default;
+
+/// The transformation scale of the Inside Floating Label.
+/// @group floating-label
+$kendo-floating-label-pos-inside-scale: 1 !default;
+
+/// The transformation scale of the focused Inside Floating Label.
+/// @group floating-label
+$kendo-floating-label-pos-inside-focus-scale: .85 !default;
+
+
 /// The background color of the Floating Label.
 /// @group floating-label
 $kendo-floating-label-bg: inherit !default;
@@ -68,3 +93,14 @@ $kendo-floating-label-focus-text: inherit !default;
 /// The invalid text color of the Floating Label.
 /// @group floating-label
 $kendo-floating-label-invalid-text: k-color(error-on-surface) !default;
+
+/// The background color of the focused Border Floating Label.
+/// @group floating-label
+$kendo-floating-label-pos-border-focus-bg: k-color(surface-alt) !default;
+/// The text color of the focused Border Floating Label.
+/// @group floating-label
+$kendo-floating-label-pos-border-focus-text: null !default;
+
+/// The text color of the focused Inside Floating Label.
+/// @group floating-label
+$kendo-floating-label-pos-inside-focus-text: null !default;
