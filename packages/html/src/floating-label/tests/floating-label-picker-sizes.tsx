@@ -1,10 +1,10 @@
 import { FloatingLabelNormal } from '..';
+import { DropdownList } from '../../dropdownlist';
 import { Input } from '../../input';
-import { TextboxNormal, TextboxPrefix } from '../../textbox';
 
 const styles = `
     #test-area {
-        grid-template-columns: 80px repeat(3, 1fr);
+        grid-template-columns: 100px repeat(3, 1fr);
     }
 
     .k-floating-label-container {
@@ -22,32 +22,32 @@ export default () =>(
             <span>medium</span>
             <span>large</span>
 
-            <span>textbox</span>
+            <span>DropdownList</span>
 
             {Input.options.size.map((size) => (
                 <div>
                     <FloatingLabelNormal label="Label">
-                        <TextboxNormal size={size}/>
+                        <DropdownList size={size}/>
                     </FloatingLabelNormal>
                 </div>
             ))}
 
-            <span>textbox border</span>
+            <span>DropdownList border</span>
 
             {Input.options.size.map((size) => (
                 <div>
                     <FloatingLabelNormal label="Label" position="border">
-                        <TextboxNormal size={size}/>
+                        <DropdownList size={size}/>
                     </FloatingLabelNormal>
                 </div>
             ))}
 
-            <span>textbox inside</span>
+            <span>DropdownList inside</span>
 
             {Input.options.size.map((size) => (
                 <div>
                     <FloatingLabelNormal label="Label" position="inside">
-                        <TextboxNormal size={size}/>
+                        <DropdownList size={size}/>
                     </FloatingLabelNormal>
                 </div>
             ))}
@@ -56,17 +56,17 @@ export default () =>(
 
             <div>
                 <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "33px" }} label="Label">
-                    <TextboxPrefix size="small"/>
+                    <DropdownList size="small"/>
                 </FloatingLabelNormal>
             </div>
             <div>
                 <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "37px" }} label="Label">
-                    <TextboxPrefix />
+                    <DropdownList />
                 </FloatingLabelNormal>
             </div>
             <div>
                 <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "41px" }} label="Label">
-                    <TextboxPrefix size="large"/>
+                    <DropdownList size="large"/>
                 </FloatingLabelNormal>
             </div>
 
@@ -74,17 +74,17 @@ export default () =>(
 
             <div>
                 <FloatingLabelNormal style={{ "--kendo-floating-label-offset-y": "20px" }} label="Label">
-                    <TextboxNormal size="small"/>
+                    <DropdownList size="small"/>
                 </FloatingLabelNormal>
             </div>
             <div>
                 <FloatingLabelNormal style={{ "--kendo-floating-label-offset-y": "20px" }} label="Label">
-                    <TextboxNormal />
+                    <DropdownList />
                 </FloatingLabelNormal>
             </div>
             <div>
                 <FloatingLabelNormal style={{ "--kendo-floating-label-offset-y": "20px" }} label="Label">
-                    <TextboxNormal size="large"/>
+                    <DropdownList size="large"/>
                 </FloatingLabelNormal>
             </div>
 

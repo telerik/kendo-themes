@@ -13,14 +13,18 @@ const states = [
 
 const options = {};
 
-const defaultOptions = {};
-
 export type FloatingLabelState = { [K in (typeof states)[number]]?: boolean };
 
 export type KendoFloatingLabelProps = {
     label?: string;
     optional?: boolean;
+    position?: 'outside' | 'inside'  | 'border';
 };
+
+const defaultOptions = {
+    position: 'outside'
+};
+
 
 export const FloatingLabel = (
     props: FloatingLabelState & KendoFloatingLabelProps & React.HTMLAttributes<HTMLSpanElement>
@@ -34,6 +38,7 @@ export const FloatingLabel = (
         empty,
         label,
         optional,
+        position = defaultOptions.position,
         ...other
     } = props;
 
@@ -43,6 +48,7 @@ export const FloatingLabel = (
             className={classNames(
                 props.className,
                 FLOATINGLABEL_CLASSNAME,
+                position && `k-label-position-${position}`,
                 stateClassNames(FLOATINGLABEL_CLASSNAME, { hover, focus, disabled, empty, valid, invalid }),
             )}
         >
