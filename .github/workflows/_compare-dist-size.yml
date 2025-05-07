@@ -1,0 +1,144 @@
+name: Compare Dist Size
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  compare-dist-sizes:
+    runs-on: ubuntu-latest
+    env:
+      COMMENT_TITLE: "## Dist Size Comparison"
+      UPDATING_MESSAGE: "Calculating... ⚠️"
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Post status PR comment
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+            });
+
+            const botComment = comments.find(comment =>
+              comment.user.login === 'github-actions[bot]' &&
+              comment.body.startsWith(process.env.COMMENT_TITLE)
+            );
+
+            if (botComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: `${process.env.COMMENT_TITLE}\n\n${process.env.UPDATING_MESSAGE}`,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.pull_request.number,
+                body: `${process.env.COMMENT_TITLE}\n\n${process.env.UPDATING_MESSAGE}`,
+              });
+            }
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: |
+          npm ci --no-audit --no-fund
+
+      - name: Generate and compare dist sizes
+        run: |
+          echo "Generating dist for PR branch..."
+          npx nx reset
+          npm run sass:dist
+
+          echo "Calculating sizes for PR branch..."
+          for folder in ./packages/*/dist; do
+            theme=$(basename $(dirname "$folder"))
+            pr_size=$(du -sb "$folder" | awk '{printf "%.2f", $1/1024/1024}')
+            echo "$theme:$pr_size" >> pr-sizes.txt
+          done
+
+          echo "Checking out develop branch..."
+          git fetch origin develop
+          git checkout origin/develop
+
+          echo "Generating dist for develop branch..."
+          npx nx reset
+          npm run sass:dist
+
+          echo "Comparing sizes..."
+          echo "| Package | Develop (MB) | PR (MB) | Difference (MB) |" > size-comparison.md
+          echo "|--------------|-------------------|--------------|-----------------|" >> size-comparison.md
+
+          for folder in ./packages/*/dist; do
+          theme=$(basename $(dirname "$folder"))
+          develop_size=$(du -sb "$folder" | awk '{printf "%.2f", $1/1024/1024}')
+          pr_size=$(grep "^$theme:" pr-sizes.txt | cut -d':' -f2 || echo "N/A")
+          if [ "$pr_size" != "N/A" ]; then
+            diff_size=$(awk "BEGIN {print $pr_size - $develop_size}")
+            if awk "BEGIN {exit ($diff_size > 0 ? 0 : 1)}"; then
+              arrow="🔼"
+            elif awk "BEGIN {exit ($diff_size < 0 ? 0 : 1)}"; then
+              arrow="🔽"
+            else
+              arrow=""
+            fi
+            echo "| $theme | $develop_size | $pr_size | $diff_size $arrow |" >> size-comparison.md
+          else
+            echo "| $theme | $develop_size | N/A | Removed |" >> size-comparison.md
+          fi
+          done
+
+          for entry in $(cat pr-sizes.txt); do
+            theme=$(echo "$entry" | cut -d':' -f1)
+            pr_size=$(echo "$entry" | cut -d':' -f2)
+            if [ ! -d "./packages/$theme/dist" ]; then
+              echo "| $theme | N/A | $pr_size | New Folder |" >> size-comparison.md
+            fi
+          done
+
+      - name: Update PR comment
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const table = fs.readFileSync('size-comparison.md', 'utf8');
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+            });
+
+            const botComment = comments.find(comment =>
+              comment.user.login === 'github-actions[bot]' &&
+              comment.body.startsWith(process.env.COMMENT_TITLE)
+            );
+
+            await github.rest.issues.updateComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: botComment.id,
+              body: `${process.env.COMMENT_TITLE}\n\n${table}`,
+            });
