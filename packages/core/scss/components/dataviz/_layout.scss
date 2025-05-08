@@ -460,8 +460,8 @@
         series-29: $kendo-series-29,
         series-30: $kendo-series-30,
 
-        gauge-pointer: k-color(primary),
-        gauge-track: k-color(base-emphasis),
+        gauge-pointer: $kendo-gauge-pointer-bg,
+        gauge-track: $kendo-gauge-track-bg,
 
         chart-font-size: $kendo-chart-font-size,
         chart-title-font-size: $kendo-chart-title-font-size,
@@ -557,9 +557,8 @@
         chart-series-29: $kendo-series-29,
         chart-series-30: $kendo-series-30,
 
-        chart-gauge-pointer: k-color(primary),
-        chart-gauge-track: k-color(base-emphasis)
-
+        chart-gauge-pointer: $kendo-gauge-pointer-bg,
+        chart-gauge-track: $kendo-gauge-track-bg
     );
 
     .k-chart,

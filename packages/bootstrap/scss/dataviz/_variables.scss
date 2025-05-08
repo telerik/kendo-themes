@@ -159,6 +159,10 @@ $kendo-chart-no-data-font-size: var( --kendo-font-size-lg, inherit ) !default;
 $kendo-chart-no-data-font-weight: var( --kendo-font-weight, normal ) !default;
 $kendo-chart-no-data-padding-y: k-spacing( 25 ) !default;
 
+// Gauge
+$kendo-gauge-pointer-bg: k-color(primary) !default;
+$kendo-gauge-track-bg: k-color(base-emphasis) !default;
+
 
 @forward "@progress/kendo-theme-core/scss/components/dataviz/_variables.scss" with (
     $kendo-series-a: $kendo-series-a,
@@ -268,5 +272,7 @@ $kendo-chart-no-data-padding-y: k-spacing( 25 ) !default;
     $kendo-treemap-border: $kendo-treemap-border,
     $kendo-treemap-title-text: $kendo-treemap-title-text,
     $kendo-treemap-title-bg: $kendo-treemap-title-bg,
-    $kendo-treemap-title-border: $kendo-treemap-title-border
+    $kendo-treemap-title-border: $kendo-treemap-title-border,
+    $kendo-gauge-pointer-bg: $kendo-gauge-pointer-bg,
+    $kendo-gauge-track-bg: $kendo-gauge-track-bg
 );

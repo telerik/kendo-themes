@@ -261,3 +261,11 @@ $kendo-chart-no-data-text: k-color(on-app-surface) !default;
 /// The vertical padding of the Chart no data message.
 /// @group charts
 $kendo-chart-no-data-padding-y: k-spacing( 25 ) !default;
+
+// Gauge
+/// Color of the Gauge Pointer.
+/// @group charts
+$kendo-gauge-pointer-bg: $kendo-series-f !default;
+/// Color of the Gauge Track.
+/// @group charts
+$kendo-gauge-track-bg: k-color(base-emphasis) !default;
