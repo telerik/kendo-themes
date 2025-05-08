@@ -12,6 +12,13 @@
         }
     }
 
+    .k-label-position-border,
+    .k-label-position-inside {
+        > .k-floating-label {
+            transform-origin: left center;
+        }
+    }
+
     [dir="rtl"] .k-floating-label-container,
     .k-rtl .k-floating-label-container,
     .k-floating-label-container[dir="rtl"] {
@@ -19,6 +26,17 @@
             transform-origin: right bottom;
         }
 
+    }
+
+    [dir="rtl"] .k-label-position-border,
+    .k-rtl .k-label-position-border,
+    .k-label-position-border[dir="rtl"]
+    [dir="rtl"] .k-label-position-inside,
+    .k-rtl .k-label-position-inside,
+    .k-label-position-inside[dir="rtl"] {
+        > .k-floating-label {
+            transform-origin: right center;
+        }
     }
 
 }

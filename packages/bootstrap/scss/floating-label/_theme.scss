@@ -1,6 +1,26 @@
+@use "../core/_index.scss" as *;
+@use "../input/_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/floating-label/_theme.scss" as *;
 
 
 @mixin kendo-floating-label--theme() {
     @include kendo-floating-label--theme-base();
+
+    .k-label-position-inside {
+        > .k-picker + .k-floating-label,
+        &.k-focus > .k-picker +.k-floating-label,
+        &:focus-within > .k-picker + .k-floating-label {
+            @include fill (
+                $color: $kendo-picker-text
+            );
+        }
+
+        // Fix for picker outline hover
+        > .k-picker-outline:hover + .k-floating-label,
+        > .k-picker-outline.k-hover + .k-floating-label {
+            @include fill (
+                $color: $kendo-picker-outline-hover-text
+            );
+        }
+    }
 }
