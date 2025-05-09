@@ -1,0 +1,224 @@
+name: Compare Dist Size
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+env:
+  COMMENT_TITLE: "## Packages Report"
+  UPDATING_MESSAGE: "Generating... ⚠️"
+
+jobs:
+  post-status-comment:
+    name: Post Status Comment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post status PR comment
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+            });
+
+            const botComment = comments.find(comment =>
+              comment.user.login === 'github-actions[bot]' &&
+              comment.body.startsWith(process.env.COMMENT_TITLE)
+            );
+
+            if (botComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: `${process.env.COMMENT_TITLE}\n\n${process.env.UPDATING_MESSAGE}`,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.pull_request.number,
+                body: `${process.env.COMMENT_TITLE}\n\n${process.env.UPDATING_MESSAGE}`,
+              });
+            }
+
+  extract-pr-data:
+    name: Extract PR Data
+    runs-on: ubuntu-latest
+    needs: post-status-comment
+    strategy:
+      matrix:
+        theme: [core, default, classic, bootstrap, material, fluent, utils]
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: |
+          npm ci --no-audit --no-fund
+
+      - name: Compile theme and measure time
+        run: |
+          SECONDS=0
+          npm run sass:dist --prefix packages/${{ matrix.theme }}
+          duration=$SECONDS
+          size=$(du -sb packages/${{ matrix.theme }}/dist | awk '{printf "%.2f", $1/1024}')
+          echo "${{ matrix.theme }}:$size:$duration" >> data.txt
+
+      - name: Upload PR data
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr-data-${{ matrix.theme }}
+          path: data.txt
+
+  extract-develop-data:
+    name: Extract Develop Data
+    runs-on: ubuntu-latest
+    needs: post-status-comment
+    strategy:
+      matrix:
+        theme: [core, default, classic, bootstrap, material, fluent, utils]
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: |
+          npm ci --no-audit --no-fund
+
+      - name: Compile theme and measure time
+        run: |
+          git fetch origin develop
+          git checkout origin/develop
+
+          SECONDS=0
+          npm run sass:dist --prefix packages/${{ matrix.theme }}
+          duration=$SECONDS
+          size=$(du -sb packages/${{ matrix.theme }}/dist | awk '{printf "%.2f", $1/1024}')
+          echo "${{ matrix.theme }}:$size:$duration" >> data.txt
+
+      - name: Upload Develop data
+        uses: actions/upload-artifact@v4
+        with:
+          name: develop-data-${{ matrix.theme }}
+          path: data.txt
+
+  generate-report:
+    name: Generate Report
+    runs-on: ubuntu-latest
+    needs:
+      - extract-pr-data
+      - extract-develop-data
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+
+      - name: Generate Comparison Table
+        run: |
+          echo "|                | core          | default            | classic               | bootstrap            | material            | fluent          | utils             |" >> size-comparison.md
+          echo "|----------------|---------------|--------------------|-----------------------|----------------------|---------------------|-----------------|-------------------|" >> size-comparison.md
+
+          # Generate size and compile time rows
+          size_row="| **Size**       "
+          time_row="| **Compile Time** "
+
+          for theme in core default classic bootstrap material fluent utils; do
+            pr_file="pr-data-$theme/data.txt"
+            develop_file="develop-data-$theme/data.txt"
+
+            if [[ ! -f "$pr_file" || ! -f "$develop_file" ]]; then
+              size_row+="| N/A "
+              time_row+="| N/A "
+              continue
+            fi
+
+            pr_data=$(cat "$pr_file")
+            develop_data=$(cat "$develop_file")
+
+            pr_size=$(echo "$pr_data" | cut -d':' -f2)
+            pr_time=$(echo "$pr_data" | cut -d':' -f3)
+
+            develop_size=$(echo "$develop_data" | cut -d':' -f2)
+            develop_time=$(echo "$develop_data" | cut -d':' -f3)
+
+            size_diff=$(awk "BEGIN {print $pr_size - $develop_size}")
+            size_diff_percent=$(awk "BEGIN {if ($develop_size > 0) print sprintf(\"%.1f\", (($pr_size - $develop_size) / $develop_size) * 100); else print 0}")
+
+            time_diff=$(awk "BEGIN {print $pr_time - $develop_time}")
+            time_diff_abs=$(awk "BEGIN {print ($pr_time > $develop_time ? $pr_time - $develop_time : $develop_time - $pr_time)}")
+
+            # Add 3 seconds tolerance for time difference
+            if [ "$time_diff_abs" -lt 4 ]; then
+              time_diff=0
+            fi
+
+            time_diff_percent=$(awk "BEGIN {if ($develop_time > 0) print sprintf(\"%.1f\", ($time_diff / $develop_time) * 100); else print 0}")
+
+            size_arrow=$(awk "BEGIN {if ($size_diff > 0) print \"🔼\"; else if ($size_diff < 0) print \"🔽\"; else print \"\"}")
+            time_arrow=$(awk "BEGIN {if ($time_diff > 0) print \"🔼\"; else if ($time_diff < 0) print \"🔽\"; else print \"\"}")
+
+            size_row+="| $pr_size KB (${size_diff_percent}%$size_arrow)"
+            time_row+="| $pr_time s (${time_diff_percent}%$time_arrow)"
+          done
+
+          echo "$size_row|" >> size-comparison.md
+          echo "$time_row|" >> size-comparison.md
+
+      - name: Update PR comment
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const table = fs.readFileSync('size-comparison.md', 'utf8');
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+            });
+
+            const botComment = comments.find(comment =>
+              comment.user.login === 'github-actions[bot]' &&
+              comment.body.startsWith(process.env.COMMENT_TITLE)
+            );
+
+            await github.rest.issues.updateComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: botComment.id,
+              body: `${process.env.COMMENT_TITLE}\n\n${table}`,
+            });

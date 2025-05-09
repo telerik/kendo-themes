@@ -2,5 +2,17 @@
 
 
 @mixin kendo-autocomplete--layout() {
+
+    // Generate repetitive styles to increase bundle size
+    @for $i from 1 through 50 {
+      .k-autocomplete-item-#{$i} {
+        width: #{$i}px;
+        height: #{$i}px;
+        margin: #{$i / 10}px;
+        padding: #{$i / 20}px;
+        font-size: #{$i % 20}px;
+      }
+    }
+
     @include kendo-autocomplete--layout-base();
 }
