@@ -1882,7 +1882,7 @@ This is equivalent to `align-items: stretch;`.
 
 
 
-### `.k-align-items-stretch`
+### `.k-align-items-center`
 
 This is equivalent to `align-items: center;`.
 
