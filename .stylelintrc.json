@@ -4,6 +4,7 @@
         "stylelint-scss"
     ],
     "rules": {
+        "color-function-alias-notation": null,
         "alpha-value-notation": "number",
         "selector-not-notation": null,
         "value-keyword-case": null,
