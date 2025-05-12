@@ -5583,6 +5583,26 @@ The following table lists the available variables for customizing the Fluent the
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chart no data message.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-gauge-pointer-bg</td>
+    <td>String</td>
+    <td><code>$kendo-series-f</code></td>
+    <td><code>var(--kendo-color-series-f, #00cc6a)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the Gauge Pointer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gauge-track-bg</td>
+    <td>String</td>
+    <td><code>k-color(base-emphasis)</code></td>
+    <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the Gauge Track.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
