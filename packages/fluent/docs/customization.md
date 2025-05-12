@@ -9106,11 +9106,41 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-canvas-rectangle-height</td>
     <td>Number</td>
-    <td><code>100%</code></td>
-    <td><code>100%</code></td>
+    <td><code>184px</code></td>
+    <td><code>184px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the ColorGradient canvas hsv rectangle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-sm-canvas-rectangle-height</td>
+    <td>Number</td>
+    <td><code>160px</code></td>
+    <td><code>160px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the small ColorGradient canvas hsv rectangle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-canvas-rectangle-height</td>
+    <td>Number</td>
+    <td><code>$kendo-color-gradient-canvas-rectangle-height</code></td>
+    <td><code>184px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the medium ColorGradient canvas hsv rectangle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-canvas-rectangle-height</td>
+    <td>Number</td>
+    <td><code>254px</code></td>
+    <td><code>254px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the large ColorGradient canvas hsv rectangle.</div></div>
     </td>
 </tr>
 <tr>
@@ -9206,8 +9236,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-slider-vertical-size</td>
     <td>Number</td>
-    <td><code>100%</code></td>
-    <td><code>100%</code></td>
+    <td><code>$kendo-color-gradient-canvas-rectangle-height</code></td>
+    <td><code>184px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ColorGradient vertical slider.</div></div>
@@ -9231,6 +9261,36 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background image of the ColorGradient alpha slider.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-sm-slider-vertical-size</td>
+    <td>Number</td>
+    <td><code>$kendo-color-gradient-sm-canvas-rectangle-height</code></td>
+    <td><code>160px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small ColorGradient vertical slider.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-slider-vertical-size</td>
+    <td>Number</td>
+    <td><code>$kendo-color-gradient-md-canvas-rectangle-height</code></td>
+    <td><code>184px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium ColorGradient vertical slider.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-slider-vertical-size</td>
+    <td>Number</td>
+    <td><code>$kendo-color-gradient-lg-canvas-rectangle-height</code></td>
+    <td><code>254px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large ColorGradient vertical slider.</div></div>
     </td>
 </tr>
 <tr>
@@ -9449,6 +9509,8 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>(
     sm: (
         width: $kendo-color-gradient-sm-width,
+        vertical-slider-height: $kendo-color-gradient-sm-slider-vertical-size,
+        rectangle-height: $kendo-color-gradient-sm-canvas-rectangle-height,
         input-width: $kendo-color-gradient-sm-input-width,
         spacing: $kendo-color-gradient-sm-spacing,
         canvas-spacing: $kendo-color-gradient-sm-canvas-spacing,
@@ -9457,6 +9519,8 @@ The following table lists the available variables for customizing the Fluent the
     ),
     md: (
         width: $kendo-color-gradient-md-width,
+        vertical-slider-height: $kendo-color-gradient-md-slider-vertical-size,
+        rectangle-height: $kendo-color-gradient-md-canvas-rectangle-height,
         input-width: $kendo-color-gradient-md-input-width,
         spacing: $kendo-color-gradient-md-spacing,
         canvas-spacing: $kendo-color-gradient-md-canvas-spacing,
@@ -9465,6 +9529,8 @@ The following table lists the available variables for customizing the Fluent the
     ),
     lg: (
         width: $kendo-color-gradient-lg-width,
+        vertical-slider-height: $kendo-color-gradient-lg-slider-vertical-size,
+        rectangle-height: $kendo-color-gradient-lg-canvas-rectangle-height,
         input-width: $kendo-color-gradient-lg-input-width,
         spacing: $kendo-color-gradient-lg-spacing,
         canvas-spacing: $kendo-color-gradient-lg-canvas-spacing,
@@ -9472,7 +9538,7 @@ The following table lists the available variables for customizing the Fluent the
         padding-y: $kendo-color-gradient-lg-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "width":"236px","input-width":"43px","spacing":"var(--kendo-spacing-4, 1rem)","canvas-spacing":"var(--kendo-spacing-2, 0.5rem)","padding-x":"calc(var(--kendo-spacing-4, 1rem) / 2)","padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>md: "width":"260px","input-width":"48px","spacing":"var(--kendo-spacing-4, 1rem)","canvas-spacing":"var(--kendo-spacing-2, 0.5rem)","padding-x":"calc(var(--kendo-spacing-4, 1rem) / 2)","padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>lg: "width":"362px","input-width":"68px","spacing":"var(--kendo-spacing-4\\.5, 1.125rem)","canvas-spacing":"var(--kendo-spacing-4, 1rem)","padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-4, 1rem)"</li></ul></td>
+    <td><ul><li>sm: "width":"236px","vertical-slider-height":"160px","rectangle-height":"160px","input-width":"43px","spacing":"var(--kendo-spacing-4, 1rem)","canvas-spacing":"var(--kendo-spacing-2, 0.5rem)","padding-x":"calc(var(--kendo-spacing-4, 1rem) / 2)","padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>md: "width":"260px","vertical-slider-height":"184px","rectangle-height":"184px","input-width":"48px","spacing":"var(--kendo-spacing-4, 1rem)","canvas-spacing":"var(--kendo-spacing-2, 0.5rem)","padding-x":"calc(var(--kendo-spacing-4, 1rem) / 2)","padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>lg: "width":"362px","vertical-slider-height":"254px","rectangle-height":"254px","input-width":"68px","spacing":"var(--kendo-spacing-4\\.5, 1.125rem)","canvas-spacing":"var(--kendo-spacing-4, 1rem)","padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-4, 1rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorGradient.</div></div>
