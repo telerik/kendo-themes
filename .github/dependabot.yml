@@ -10,8 +10,6 @@ updates:
     allow:
       - dependency-name: "*"
         dependency-type: "direct"
-    reviewers:
-      - "telerik/kendo-front-end"
     groups:
       dev-dependencies:
         patterns:
