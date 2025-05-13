@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/telerik/kendo-themes/compare/v11.0.1-dev.0...v11.0.1) (2025-05-13)
+
+
+### Bug Fixes
+
+* **color-gradient:** revert slider and hsv rectangle fixed height ([d519107](https://github.com/telerik/kendo-themes/commit/d5191072acdce50831199a45d83598b414ac7210))
+* **material:** update gauge track color ([f73142e](https://github.com/telerik/kendo-themes/commit/f73142edc0f5cc486dc53e20ef2e37e6c8e63111))
+
+
+
+
+
 ## [11.0.1-dev.0](https://github.com/telerik/kendo-themes/compare/v11.0.0...v11.0.1-dev.0) (2025-05-12)
 
 **Note:** Version bump only for package @progress/kendo-theme-core
