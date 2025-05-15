@@ -28,7 +28,7 @@ export default () => (
             <span>resolutions &lt;= 500</span>
 
             <section>
-                <PagerInput pageTitleInfo={false} refresh={false} info={false} />
+                <PagerInput responsive={true} pageTitleInfo={false} refresh={false} info={false} />
                 <ActionSheet
                     adaptive
                     header={
@@ -49,7 +49,7 @@ export default () => (
             </section>
 
             <section>
-                <PagerInput pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
+                <PagerInput responsive={true} pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
                 <ActionSheet
                     adaptive
                     fullscreen

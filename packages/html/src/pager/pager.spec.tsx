@@ -19,6 +19,7 @@ export type KendoPagerOptions = {
 };
 
 export type KendoPagerProps = KendoPagerOptions & {
+    responsive?: boolean;
     pagerSizeInfo?: boolean;
     pageTitleInfo?: boolean;
     maxPagesInfo?: boolean;
@@ -36,6 +37,7 @@ export type KendoPagerProps = KendoPagerOptions & {
 export type KendoPagerState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
+    responsive: true,
     size: Size.medium,
     pagerSizeInfo: true,
     pageTitleInfo: true,
@@ -56,6 +58,7 @@ export const Pager = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        responsive = defaultOptions.responsive,
         size = defaultOptions.size,
         pagerSizeInfo = defaultOptions.pagerSizeInfo,
         pageTitleInfo = defaultOptions.pageTitleInfo,
@@ -107,7 +110,10 @@ export const Pager = (
                 stateClassNames(PAGER_CLASSNAME, {
                     focus,
                     disabled,
-                })
+                }),
+                {
+                    ['k-pager-responsive']: responsive
+                }
             )}>
             <div
                 className={classNames(

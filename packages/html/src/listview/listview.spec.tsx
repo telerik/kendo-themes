@@ -1,4 +1,4 @@
-import { Pager } from '../pager';
+import { PagerNormal } from '../pager';
 import { classNames, stateClassNames, States } from '../misc';
 
 export const LISTVIEW_CLASSNAME = `k-listview`;
@@ -52,7 +52,7 @@ export const ListView = (
         ...other
     } = props;
 
-    const pager = <Pager className={`k-listview-pager k-listview-pager-${ pagerPosition }`} />;
+    const pager = <PagerNormal className={`k-listview-pager k-listview-pager-${ pagerPosition }`} />;
 
     const loader = <>
         <div className="k-loading-mask" style={{ height: '100%', width: '100%' }}>
