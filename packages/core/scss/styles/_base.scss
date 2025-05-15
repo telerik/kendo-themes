@@ -6,9 +6,7 @@
 @mixin kendo-core--styles--base() {
 
     // Disabled state
-    .k-disabled,
-    [disabled],
-    :disabled {
+    .k-disabled {
         @include disabled(
             $color: var(--kendo-disabled-text, unset),
             $bg: var(--kendo-disabled-bg, unset),
