@@ -5,6 +5,10 @@ const styles = `
     .k-floating-label-container {
         width: 100%;
     }
+
+    .k-picker-outline {
+        border-color: transparent;
+    }
 `;
 
 export default () =>(
