@@ -10,14 +10,16 @@ updates:
     allow:
       - dependency-name: "*"
         dependency-type: "direct"
-    reviewers:
-      - "telerik/kendo-front-end"
     groups:
       dev-dependencies:
         patterns:
           - "*"
         exclude-patterns:
           - "sass*"
+          - "@progress/kendo-svg-icons"
       sass-dependencies:
         patterns:
           - "sass*"
+      kendo-icons-dependencies:
+        patterns:
+          - "@progress/kendo-svg-icons"
