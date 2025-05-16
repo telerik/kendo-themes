@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.2](https://github.com/telerik/kendo-themes/compare/v11.0.1...v11.0.2) (2025-05-15)
+
+
+### Bug Fixes
+
+* **html:** add nowrap class to pager responsive ([177cd9e](https://github.com/telerik/kendo-themes/commit/177cd9eb2ac2ee317054ee74569456aa1c6150ca))
+
+
+
+
+
 ## [11.0.1](https://github.com/telerik/kendo-themes/compare/v11.0.1-dev.0...v11.0.1) (2025-05-13)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

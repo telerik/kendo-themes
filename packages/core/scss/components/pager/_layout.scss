@@ -31,6 +31,9 @@
         }
     }
 
+    .k-pager-responsive {
+        flex-wrap: nowrap;
+    }
 
     // Base pager section
     %base-pager-section {

@@ -1,7 +1,7 @@
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Combobox } from '../../combobox';
-import { Pager } from '../../pager';
+import { PagerInput } from '../../pager';
 import { PDFViewerNormal } from '../../pdf-viewer';
 import { Toolbar } from '../../toolbar';
 
@@ -18,7 +18,7 @@ export default () =>(
             <PDFViewerNormal
                 toolbar={
                     <Toolbar resizable>
-                        <Pager type="input" pageSizes={false} refresh={false} info={false} />
+                        <PagerInput pageSizes={false} refresh={false} info={false} />
                         <span className="k-spacer"></span>
                         <ButtonGroup fillMode="flat">
                             <Button fillMode="flat" className="k-group-start" icon="zoom-out" />
