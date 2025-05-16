@@ -1,4 +1,4 @@
-import { PagerNormal, PagerInput } from "../../pager";
+import { PagerResponsive, PagerInput } from "..";
 
 
 const styles = `
@@ -9,7 +9,6 @@ const styles = `
 
     /* These styles are used to test the pager items hiding order threshold */
     #test-area > .k-pager {
-        flex-wrap: nowrap;
         width: min-content;
     }
 `;
@@ -22,19 +21,19 @@ export default () => (
             <span className="k-colspan-2 k-text-center">Adaptive Pager Items Hiding Order</span>
 
             <span>Numeric - 0</span>
-            <PagerNormal />
+            <PagerResponsive />
             <span>Input - 0</span>
-            <PagerInput />
+            <PagerInput responsive={true} />
             <span>1</span>
-            <PagerInput refresh={false} />
+            <PagerInput refresh={false} responsive={true} />
             <span>2</span>
-            <PagerInput refresh={false} info={false} />
+            <PagerInput refresh={false} info={false} responsive={true} />
             <span>3</span>
-            <PagerInput pageTitleInfo={false} refresh={false} info={false} />
+            <PagerInput pageTitleInfo={false} refresh={false} info={false} responsive={true} />
             <span>4</span>
-            <PagerInput pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} />
+            <PagerInput pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} responsive={true} />
             <span>5</span>
-            <PagerInput pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
+            <PagerInput pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} responsive={true} />
         </div>
     </>
 );

@@ -3,7 +3,7 @@ import { Button } from "../../button";
 import { ButtonGroup } from "../../button-group";
 import { Combobox } from "../../combobox";
 import { MenuButton } from "../../menu-button";
-import { Pager } from "../../pager";
+import { PagerInput } from "../../pager";
 import { Toolbar, ToolbarSeparator } from "../../toolbar";
 
 export const PDFViewerBlank = (props) => (
@@ -12,7 +12,7 @@ export const PDFViewerBlank = (props) => (
             <Toolbar resizable fillMode="flat">
                 <MenuButton disabled icon="menu" fillMode="flat" showArrow={false} />
                 <ToolbarSeparator />
-                <Pager disabled type="input" pageSizes={false} refresh={false} info={false} />
+                <PagerInput disabled pageSizes={false} refresh={false} info={false} />
                 <span className="k-spacer"></span>
                 <ButtonGroup fillMode="flat">
                     <Button disabled fillMode="flat" className="k-group-start" icon="zoom-out" />

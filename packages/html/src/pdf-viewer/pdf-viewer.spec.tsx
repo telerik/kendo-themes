@@ -4,7 +4,7 @@ import { Combobox } from '../combobox';
 import { DropzoneNormal } from '../dropzone';
 import { MenuButton } from '../menu-button';
 import { classNames, stateClassNames, States, } from '../misc';
-import { Pager } from '../pager';
+import { PagerInput } from '../pager';
 import { Textbox } from '../textbox';
 import { Toolbar, ToolbarSeparator } from '../toolbar';
 import { UploadNormal } from '../upload';
@@ -31,7 +31,7 @@ const defaultToolbar =
     <Toolbar resizable fillMode="flat">
         <MenuButton icon="menu" fillMode="flat" showArrow={false} />
         <ToolbarSeparator />
-        <Pager type="input" pageSizes={false} refresh={false} info={false} />
+        <PagerInput pageSizes={false} refresh={false} info={false} />
         <span className="k-spacer"></span>
         <ButtonGroup fillMode="flat">
             <Button fillMode="flat" className="k-group-start" icon="zoom-out" />
