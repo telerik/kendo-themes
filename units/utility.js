@@ -35,18 +35,25 @@ function compileSassString(sassString) {
  * @param {boolean} testCustomizations - Toggles the module's customizations test.
  */
 function testKendoModule(module, map, cssVariablePrefix, testCustomizations = true) {
-    const modulePrettyValue = data.variables.filter((item) => item.context.name === map)[0].prettyValue;
-    const uniqueValues = Object.fromEntries(Object.entries(modulePrettyValue).map(([key]) => [key, `test-${module}-${key.toString()}`]));
+    let uniqueValues;
+    let configuration = "";
 
-    const configuration = `
-        $${map}: (
-            ${Object.entries(uniqueValues)
-                .map(([key, value]) => `${key}: '${value}',`)
-                .join("\n")}
-        )`;
+    if (testCustomizations) {
+        const modulePrettyValue = data.variables.filter((item) => item.context.name === map)[0].prettyValue;
+        uniqueValues = Object.fromEntries(Object.entries(modulePrettyValue).map(([key]) => [key, `test-${module}-${key.toString()}`]));
+
+        const customizations = `
+            $${map}: (
+                ${Object.entries(uniqueValues)
+                    .map(([key, value]) => `${key}: '${value}',`)
+                    .join("\n")}
+            )`;
+
+        configuration = ` with (${customizations})`;
+    }
 
     const result = compileSassString(`
-        @use 'index.scss' as * with (${configuration});
+        @use 'index.scss' as *${configuration};
         @include core-styles();
     `);
 
@@ -54,7 +61,6 @@ function testKendoModule(module, map, cssVariablePrefix, testCustomizations = tr
 
     // Module Testing Template
     describe(module, () => {
-
         it("should compile", () => {
             expect(result).toBeDefined();
         });
@@ -85,26 +91,33 @@ function testKendoModule(module, map, cssVariablePrefix, testCustomizations = tr
  * Tests a kendo component using a jest testing template.
  * @param {string} component - The component's name.
  * @param {string} group - The component's group name.
- * @param {string} className - The component's className.
+ * @param {string | string[]} className - The component's className.
  * @param {string[]} dependencyClasses - The component's dependencies classNames.
  * @param {string[]} variableExceptions - The component's excluded from test variables.
  * @param {boolean} testCustomizations - Toggles the component's variable customizations test.
  */
 // eslint-disable-next-line max-params
 function testKendoComponent(component, group, className, dependencyClasses, variableExceptions, testCustomizations = true) {
-    const componentVariables = data.variables
-        .filter((item) => item.group[0] === group && item.resolvedType !== "Map")
-        .map((item) => item.context.name)
-        .filter((item) => !variableExceptions?.includes(item));
+    let uniqueValues;
+    let configuration = "";
 
-    const uniqueValues = Object.fromEntries(componentVariables.map((item) => [item, `test-${item}`]));
+    if (testCustomizations) {
+        const componentVariables = data.variables
+            .filter((item) => item.group[0] === group && item.resolvedType !== "Map")
+            .map((item) => item.context.name)
+            .filter((item) => !variableExceptions?.includes(item));
 
-    const configuration = Object.entries(uniqueValues)
-        .map(([key, value]) => `$${key}: ${value},`)
-        .join("\n");
+        uniqueValues = Object.fromEntries(componentVariables.map((item) => [item, `test-${item}`]));
+
+        const customizations = Object.entries(uniqueValues)
+            .map(([key, value]) => `$${key}: ${value},`)
+            .join("\n");
+
+        configuration = ` with (${customizations})`;
+    }
 
     const result = compileSassString(`
-        @use 'index.scss' as * with (${configuration});
+        @use 'index.scss' as *${configuration};
         @include kendo-${component}--styles();
     `);
 
@@ -112,18 +125,20 @@ function testKendoComponent(component, group, className, dependencyClasses, vari
 
     // Component Testing Template
     describe(component, () => {
-
         it("should compile", () => {
             expect(result).toBeDefined();
         });
 
         className &&
             it("should compile with component selector styles", () => {
-                try {
-                    expect(result).toContain(`.${className} {`);
-                } catch {
-                    throw new Error(`Missing ".${className}" selector in the result.`);
-                }
+                const classNames = Array.isArray(className) ? className : [className];
+                classNames.forEach((name) => {
+                    try {
+                        expect(result).toContain(`.${name} `);
+                    } catch {
+                        throw new Error(`Missing ".${name}" selector in the result.`);
+                    }
+                });
             });
 
         testCustomizations &&
@@ -141,7 +156,7 @@ function testKendoComponent(component, group, className, dependencyClasses, vari
             it("should compile with component dependency selectors styles", () => {
                 dependencyClasses.forEach((className) => {
                     try {
-                        expect(result).toContain(`.${className} {`);
+                        expect(result).toContain(`.${className} `);
                     } catch {
                         throw new Error(`Missing ".${className}" dependency selector in the result.`);
                     }
