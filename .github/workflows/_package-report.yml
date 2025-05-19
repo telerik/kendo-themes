@@ -11,6 +11,7 @@ env:
 
 jobs:
   post-status-comment:
+    if: github.actor != 'dependabot[bot]'
     name: Post Status Comment
     runs-on: ubuntu-latest
     steps:
