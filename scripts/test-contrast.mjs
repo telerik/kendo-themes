@@ -200,6 +200,10 @@ const calculateContrast = (a, b) => {
 };
 
 const getRGBFromRGBA = (foregroundColor, backgroundColor) => {
+
+    // Blend the foreground color with the background color
+    // based on the alpha value of the foreground color
+
     const r1 = foregroundColor.r;
     const g1 = foregroundColor.g;
     const b1 = foregroundColor.b;
@@ -260,6 +264,7 @@ const selfAndBackground = async(el, parent) => {
     let outlineOffset = await el.getCssValue('outlineOffset');
     let temp, par, decomposed;
 
+    // If background is fully transparent, get the background of the parent element
     if (background === 'rgba(0, 0, 0, 0)') {
         par = await parent.findElement(By.xpath('..'));
         background = await par.getCssValue('backgroundColor');
@@ -274,6 +279,8 @@ const selfAndBackground = async(el, parent) => {
         }
     }
 
+    // If background is semi-transparent, blend it with the parent background
+    // to get the actual solid background color
     if (background.indexOf('rgba') > -1 && background !== 'rgba(255, 255, 255, 1)') {
         let parentParent = await (par || parent).findElement(By.xpath('..'));
         let parentBackground = await parentParent.getCssValue('backgroundColor');
@@ -287,11 +294,15 @@ const selfAndBackground = async(el, parent) => {
         background = 'rgb(' + decomposed.r + ', ' + decomposed.g + ', ' + decomposed.b + ')';
     }
 
+    // If element background is semi-transparent, blend it with the background
+    // to get the actual solid element background color
     if (self.indexOf('rgba') > -1 && self !== 'rgba(255, 255, 255, 1)') {
         decomposed = getRGBFromRGBA(decomposeColor(self), decomposeColor(background));
         self = 'rgb(' + decomposed.r + ', ' + decomposed.g + ', ' + decomposed.b + ')';
     }
 
+    // If element background is fully transparent, use the background color
+    // of the parent element instead
     if (self === 'rgba(0, 0, 0, 0)') {
         self = background;
     }
@@ -316,21 +327,31 @@ const selfAndBackground = async(el, parent) => {
         return { self: self, background: self };
     }
 
+    // If there is border which is not transparent, use it for contrast calculation
     if (borderWidth !== '0px' && border !== 'rgba(0, 0, 0, 0)') {
+
+        // Handle the case where the border contains multiple colors
+        // and remove the transparent color
         if (border.split('rgb').length > 2) {
             border = border.replace('rgba(0, 0, 0, 0)', '').trim();
             border = 'rgb' + border.split('rgb')[1].trim();
         }
 
+        // If there is an inset box-shadow
+        // use the background color of the element for contrast calculation
         if (boxShadow.indexOf('inset') > -1) {
             background = self;
         }
 
+        // Use the border color for contrast calculation
         self = getRGBFromRGBA(decomposeColor(border), self);
     } else if (boxShadow.indexOf('inset') > -1) {
+        // If there is an inset box-shadow, use the background color of the element
         temp = background;
         background = self;
 
+        // If the outline offset is 0 and the box-shadow is inset,
+        // use the background color of the parent for contrast calculation
         if (outlineOffset === '0px') {
             self = temp;
         }
@@ -456,6 +477,8 @@ const getFocusReport = async(el, browser) => {
     let elReport = {};
     let key;
 
+    // Check for self and background contrast of the focused element
+    // where the contrast ratio should be at least 3:1
     if (!elContrast ||
         elContrast.selfContrast >= 3 && elContrast.backgroundContrast >= 3) {
         return null;
@@ -505,16 +528,25 @@ const getContrastViolations = async() => {
     for (let i = 0; i < chunk.length; i++) {
         const [ filePath, url ] = chunk[i];
 
-        await browser.navigateTo(url);
+        try {
+            await browser.navigateTo(url);
+        } catch (err) {
+            // eslint-disable-next-line no-console
+            console.error(`Failed to navigate to ${url}:`, err);
+            continue;
+        }
 
         // eslint-disable-next-line no-console
         console.log(`Analyzing ${filePath}...`);
 
         if (EXCLUDED_PAGES_TEXT.indexOf(filePath) === -1) {
 
+            // Axe-core checks for contrast ratio for all elements
             const axe = new AxeBuilder(browser.driver);
+            // WCAG 2.1 Level A and AA requirements
             axe.withRules([ 'color-contrast' ]);
             const output = await axe.analyze();
+            // WCAG 2.1 Level AAA requirements
             axe.withRules([ 'color-contrast-enhanced' ]);
             const enhanced = await axe.analyze();
 
@@ -531,6 +563,8 @@ const getContrastViolations = async() => {
             }
         }
 
+        // Custom logic for checking focused elements
+        // since axe-core does not test for focus indicator contrast
         const focusedElements = await browser.driver.findElements(By.className('k-focus'));
 
         for (let el of focusedElements) {
@@ -594,12 +628,19 @@ const printViolations = (result) => {
 
     if (count.violations > 0 || count.focus > 0) {
         /* eslint-disable no-console */
-        console.log("Focus contrast WCAG violations:");
-        console.dir(result.focusContrast, { depth: 3 });
-        console.log("Text contrast WCAG AA errors:");
-        console.dir(result.violations, { depth: 5 });
 
         console.error('A11y contrast checks fail.');
+
+        if(count.focus > 0) {
+            console.log("Focus contrast WCAG violations:");
+            console.dir(result.focusContrast, { depth: 3 });
+        }
+
+        if(count.violations > 0) {
+            console.log("Text contrast WCAG AA errors:");
+            console.dir(result.violations, { depth: 5 });
+        }
+
         process.exit(1);
     }
 };
