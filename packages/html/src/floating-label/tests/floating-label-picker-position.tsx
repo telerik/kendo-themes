@@ -13,7 +13,6 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-4">
             <div />
             <div>Solid</div>
-            <div>Outline</div>
 
 
             <div>Outside Small</div>
