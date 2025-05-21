@@ -11,10 +11,9 @@ export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-4">
-            <span />
-            <span>Solid Focus</span>
-            <span>Outline Focus</span>
-            <span>Flat Focus</span>
+            <div />
+            <div>Solid</div>
+            <div>Outline</div>
 
 
             <div>Outside Small</div>
