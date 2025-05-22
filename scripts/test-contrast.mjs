@@ -249,7 +249,9 @@ const getContrast = ( col, self, background ) => {
 
     return {
         selfContrast,
-        backgroundContrast
+        backgroundContrast,
+        colorWithAlfa: JSON.stringify(colorWithAlfa),
+        self: JSON.stringify(self)
     };
 };
 

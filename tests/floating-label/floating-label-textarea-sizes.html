@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            grid-template-columns: 80px repeat(3, 1fr);
+        }
+        .k-floating-label-container {
+            width: 100%;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid">
+        <span>with/input</span>
+        <span>small</span>
+        <span>medium</span>
+        <span>large</span>
+        <span>textarea</span>
+        <div>
+            <span class="k-floating-label-container k-label-position-outside k-empty">
+                <span class="k-textarea !k-flex-col k-input k-input-sm k-input-solid k-rounded-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-label-position-outside k-empty">
+                <span class="k-textarea !k-flex-col k-input k-input-md k-input-solid k-rounded-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-label-position-outside k-empty">
+                <span class="k-textarea !k-flex-col k-input k-input-lg k-input-solid k-rounded-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <span>textarea border</span>
+        <div>
+            <span class="k-floating-label-container k-label-position-border k-empty">
+                <span class="k-textarea !k-flex-col k-input k-input-sm k-input-solid k-rounded-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-label-position-border k-empty">
+                <span class="k-textarea !k-flex-col k-input k-input-md k-input-solid k-rounded-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-label-position-border k-empty">
+                <span class="k-textarea !k-flex-col k-input k-input-lg k-input-solid k-rounded-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <span>textarea inside</span>
+        <div>
+            <span class="k-floating-label-container k-label-position-inside k-empty">
+                <span class="k-textarea !k-flex-col k-input k-input-sm k-input-solid k-rounded-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-label-position-inside k-empty">
+                <span class="k-textarea !k-flex-col k-input k-input-md k-input-solid k-rounded-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-label-position-inside k-empty">
+                <span class="k-textarea !k-flex-col k-input k-input-lg k-input-solid k-rounded-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <span>(custom) horizontal offset</span>
+        <div>
+            <span class="k-floating-label-container k-label-position-outside k-empty" style="--kendo-floating-label-offset-x: 33px;">
+                <span class="k-textarea !k-flex-col k-input k-input-sm k-input-solid k-rounded-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-label-position-outside k-empty" style="--kendo-floating-label-offset-x: 37px;">
+                <span class="k-textarea !k-flex-col k-input k-input-md k-input-solid k-rounded-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-label-position-outside k-empty" style="--kendo-floating-label-offset-x: 41px;">
+                <span class="k-textarea !k-flex-col k-input k-input-lg k-input-solid k-rounded-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <span>(custom) vertical offset</span>
+        <div>
+            <span class="k-floating-label-container k-label-position-outside k-empty" style="--kendo-floating-label-offset-y: 46px;">
+                <span class="k-textarea !k-flex-col k-input k-input-sm k-input-solid k-rounded-md">
+                    <span class="k-input-prefix k-input-prefix-horizontal">
+                        <span class="k-icon k-svg-icon k-svg-i-comment">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M448 32H64c-17.6 0-32 14.4-32 32v416l96-96h320c17.6 0 32-14.4 32-32V64c0-17.6-14.4-32-32-32m0 319.942a1 1 0 0 1-.058.058H114.745L64 402.745V64.057a1 1 0 0 1 .057-.057h383.885q.031.027.058.057z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-input-separator k-input-separator-horizontal"></span>
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-label-position-outside k-empty" style="--kendo-floating-label-offset-y: 50px;">
+                <span class="k-textarea !k-flex-col k-input k-input-md k-input-solid k-rounded-md">
+                    <span class="k-input-prefix k-input-prefix-horizontal">
+                        <span class="k-icon k-svg-icon k-svg-i-comment">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M448 32H64c-17.6 0-32 14.4-32 32v416l96-96h320c17.6 0 32-14.4 32-32V64c0-17.6-14.4-32-32-32m0 319.942a1 1 0 0 1-.058.058H114.745L64 402.745V64.057a1 1 0 0 1 .057-.057h383.885q.031.027.058.057z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-input-separator k-input-separator-horizontal"></span>
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-label-position-outside k-empty" style="--kendo-floating-label-offset-y: 65px;">
+                <span class="k-textarea !k-flex-col k-input k-input-lg k-input-solid k-rounded-md">
+                    <span class="k-input-prefix k-input-prefix-horizontal">
+                        <span class="k-icon k-svg-icon k-svg-i-comment">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M448 32H64c-17.6 0-32 14.4-32 32v416l96-96h320c17.6 0 32-14.4 32-32V64c0-17.6-14.4-32-32-32m0 319.942a1 1 0 0 1-.058.058H114.745L64 402.745V64.057a1 1 0 0 1 .057-.057h383.885q.031.027.058.057z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-input-separator k-input-separator-horizontal"></span>
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
