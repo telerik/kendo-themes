@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.3-dev.1](https://github.com/telerik/kendo-themes/compare/v11.0.3-dev.0...v11.0.3-dev.1) (2025-05-26)
+
+
+### Bug Fixes
+
+* **switch:** $kendo-switch-on-thumb-disabled-border variable is not applying ([113ea9b](https://github.com/telerik/kendo-themes/commit/113ea9bdd6234d5e56154d157ce64962c9883a94))
+
+
+
+
+
 ## [11.0.3-dev.0](https://github.com/telerik/kendo-themes/compare/v11.0.2...v11.0.3-dev.0) (2025-05-19)
 
 **Note:** Version bump only for package @progress/kendo-theme-classic
