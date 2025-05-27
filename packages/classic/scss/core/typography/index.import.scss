@@ -138,7 +138,9 @@ $_default-font-weights: (
     normal: $kendo-font-weight-normal,
     medium: $kendo-font-weight-medium,
     semibold: $kendo-font-weight-semibold,
-    bold: $kendo-font-weight-bold
+    bold: $kendo-font-weight-bold,
+    extra-bold: $kendo-font-weight-extra-bold,
+    "black": $kendo-font-weight-black
 ) !default;
 
 $_default-letter-spacings: (
