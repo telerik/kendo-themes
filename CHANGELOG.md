@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.3-dev.2](https://github.com/telerik/kendo-themes/compare/v11.0.3-dev.1...v11.0.3-dev.2) (2025-06-02)
+
+
+### Bug Fixes
+
+* add missing default typography font-weight values ([64c532c](https://github.com/telerik/kendo-themes/commit/64c532c6bfa37d5a8bc7a4daee4e78d2cd3cee1f))
+
+
+
+
+
 ## [11.0.3-dev.1](https://github.com/telerik/kendo-themes/compare/v11.0.3-dev.0...v11.0.3-dev.1) (2025-05-26)
 
 
