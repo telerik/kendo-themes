@@ -1,6 +1,5 @@
 // Slider
 $kendo-slider-size: null !default;
-$kendo-slider-tick-size: null !default;
 $kendo-slider-alt-size: null !default;
 
 $kendo-slider-font-family: null !default;
@@ -9,14 +8,11 @@ $kendo-slider-line-height: null !default;
 
 $kendo-slider-button-offset: null !default;
 $kendo-slider-button-size: null !default;
-$kendo-slider-button-spacing: null !default;
-$kendo-slider-button-focus-shadow: null !default;
 
 $kendo-slider-track-thickness: null !default;
 $kendo-slider-draghandle-size: null !default;
 $kendo-slider-draghandle-border-width: null !default;
 $kendo-slider-draghandle-active-scale: null !default;
-$kendo-slider-draghandle-active-size: null !default;
 
 $kendo-slider-draghandle-bg: null !default;
 $kendo-slider-draghandle-text: null !default;
@@ -47,5 +43,3 @@ $kendo-slider-disabled-opacity: null !default;
 
 $kendo-slider-tick-horizontal-image: "data:image/gif;base64,R0lGODlhAQC0AIABALi4uAAAACH5BAEAAAEALAAAAAABALQAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
 $kendo-slider-tick-vertical-image: "data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
-
-$kendo-slider-tick-marker-bg: null !default;

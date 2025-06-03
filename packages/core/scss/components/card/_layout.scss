@@ -187,7 +187,7 @@
     .k-card-actions {
         padding-block: $kendo-card-actions-padding-y;
         padding-inline: $kendo-card-actions-padding-x;
-        border-width: 0;
+        border-width: $kendo-card-actions-border-width;
         border-style: solid;
         border-color: inherit;
         overflow: hidden;

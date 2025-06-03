@@ -67,8 +67,6 @@ $kendo-grid-header-font-size: null !default;
 $kendo-grid-header-first-border: null !default;
 $kendo-grid-header-menu-icon-spacing: null !default;
 
-$kendo-grid-filterable-icon-spacing: null !default;
-
 $kendo-grid-toolbar-border-width: null !default;
 
 $kendo-grid-cell-horizontal-border-width: null !default;
@@ -81,27 +79,20 @@ $kendo-grid-border: null !default;
 $kendo-grid-header-bg: null !default;
 $kendo-grid-header-text: null !default;
 $kendo-grid-header-border: null !default;
-$kendo-grid-header-gradient: null !default;
 
 $kendo-grid-footer-bg: null !default;
 $kendo-grid-footer-text: null !default;
 $kendo-grid-footer-border: null !default;
 
 $kendo-grid-alt-bg: null !default;
-$kendo-grid-alt-text: null !default;
-$kendo-grid-alt-border: null !default;
 
 $kendo-grid-hover-bg: null !default;
 $kendo-grid-hover-text: null !default;
-$kendo-grid-hover-border: null !default;
 
 $kendo-grid-selected-bg: null !default;
 $kendo-grid-selected-text: null !default;
-$kendo-grid-selected-border: null !default;
 
 $kendo-grid-highlighted-bg: null !default;
-$kendo-grid-highlighted-text: null !default;
-$kendo-grid-highlighted-border: null !default;
 $kendo-grid-highlighted-font-weight: null !default;
 
 $kendo-grid-selected-highlighted-bg: null !default;
@@ -129,8 +120,6 @@ $kendo-grid-sorting-index-spacing-x: null !default;
 $kendo-grid-focus-shadow: null !default;
 
 $kendo-grid-command-cell-button-spacing: null !default;
-// be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
-$kendo-grid-command-cell-padding-y: null !default;
 
 // Must be solid colors
 $kendo-grid-sticky-bg: null !default;
