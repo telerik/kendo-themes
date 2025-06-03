@@ -35,10 +35,6 @@ $kendo-rating-label-margin-y: k-spacing(1) !default;
 /// @group rating
 $kendo-rating-label-line-height: var( --kendo-line-height-lg, normal ) !default;
 
-/// The size of the Rating icon.
-/// @group rating
-$kendo-rating-icon-size: ($kendo-icon-size * 1.5) !default;
-
 /// The text color of the Rating icon.
 /// @group rating
 $kendo-rating-icon-text: k-color(on-app-surface) !default;
@@ -69,7 +65,6 @@ $kendo-rating-icon-focus-selected-shadow: k-elevation(1) !default;
     $kendo-rating-label-margin-x: $kendo-rating-label-margin-x,
     $kendo-rating-label-margin-y: $kendo-rating-label-margin-y,
     $kendo-rating-label-line-height: $kendo-rating-label-line-height,
-    $kendo-rating-icon-size: $kendo-rating-icon-size,
     $kendo-rating-icon-text: $kendo-rating-icon-text,
     $kendo-rating-icon-selected-text: $kendo-rating-icon-selected-text,
     $kendo-rating-icon-hover-text: $kendo-rating-icon-hover-text,

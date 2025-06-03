@@ -6,9 +6,6 @@
 /// The width of the border around the FAB.
 /// @group floating-action-button
 $kendo-fab-border-width: 1px !default;
-/// The border radius of the FAB.
-/// @group floating-action-button
-$kendo-fab-border-radius: k-border-radius(md) !default;
 
 /// The font family of the FAB.
 /// @group floating-action-button
@@ -184,7 +181,6 @@ $kendo-fab-item-outline-color: rgba(0, 0, 0, .08) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/fab/_variables.scss" with (
     $kendo-fab-border-width: $kendo-fab-border-width,
-    $kendo-fab-border-radius: $kendo-fab-border-radius,
     $kendo-fab-font-family: $kendo-fab-font-family,
     $kendo-fab-font-size: $kendo-fab-font-size,
     $kendo-fab-line-height: $kendo-fab-line-height,

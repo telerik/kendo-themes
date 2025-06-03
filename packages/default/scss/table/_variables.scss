@@ -158,15 +158,9 @@ $kendo-table-selected-border: null !default;
 /// Background color of highlighted rows in table.
 /// @group table
 $kendo-table-highlighted-bg: color-mix(in srgb, k-color(warning) 25%, transparent) !default;
-/// Text color of highlighted rows in table.
-/// @group table
-$kendo-table-highlighted-text: null !default;
 /// The font weight of highlighted rows in table.
 /// @group table
 $kendo-table-highlighted-font-weight: var( --kendo-font-weight-bold, bold ) !default;
-/// Border color of highlighted rows in table.
-/// @group table
-$kendo-table-highlighted-border: null !default;
 
 /// Background color of selected highlighted rows in table.
 /// @group table
@@ -218,9 +212,7 @@ $kendo-table-cell-row-span-shadow: inset 0 0 0 1px $kendo-table-border !default;
     $kendo-table-selected-text: $kendo-table-selected-text,
     $kendo-table-selected-border: $kendo-table-selected-border,
     $kendo-table-highlighted-bg: $kendo-table-highlighted-bg,
-    $kendo-table-highlighted-text: $kendo-table-highlighted-text,
     $kendo-table-highlighted-font-weight: $kendo-table-highlighted-font-weight,
-    $kendo-table-highlighted-border: $kendo-table-highlighted-border,
     $kendo-table-selected-highlighted-bg: $kendo-table-selected-highlighted-bg,
     $kendo-table-cell-row-span-shadow: $kendo-table-cell-row-span-shadow
 );

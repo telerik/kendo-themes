@@ -157,10 +157,6 @@ $kendo-timeline-circle-height: 16px !default;
 /// @group timeline
 $kendo-timeline-circle-bg: k-color(primary) !default;
 
-/// The horizontal padding of the Timeline collapse arrow.
-/// @group timeline
-$kendo-timeline-collapse-arrow-padding-x: k-spacing(2) !default;
-
 /// The width of the Timeline event.
 /// @group timeline
 $kendo-timeline-event-width: 400px !default;
@@ -218,7 +214,6 @@ $kendo-timeline-event-min-height-calc: calc(2 * (#{$kendo-timeline-track-event-o
     $kendo-timeline-circle-width: $kendo-timeline-circle-width,
     $kendo-timeline-circle-height: $kendo-timeline-circle-height,
     $kendo-timeline-circle-bg: $kendo-timeline-circle-bg,
-    $kendo-timeline-collapse-arrow-padding-x: $kendo-timeline-collapse-arrow-padding-x,
     $kendo-timeline-event-width: $kendo-timeline-event-width,
     $kendo-timeline-event-height: $kendo-timeline-event-height,
     $kendo-timeline-event-min-height-calc: $kendo-timeline-event-min-height-calc
