@@ -80,9 +80,6 @@ $kendo-popover-callout-border-width: $kendo-popover-border-width !default;
 /// The border style of the Popover callout.
 /// @group popover
 $kendo-popover-callout-border-style: $kendo-popover-border-style !default;
-/// The background color of the Popover callout.
-/// @group popover
-$kendo-popover-callout-bg: $kendo-popover-bg !default;
 /// The border color of the Popover callout.
 /// @group popover
 $kendo-popover-callout-border: $kendo-popover-border !default;
@@ -113,6 +110,5 @@ $kendo-popover-callout-border: $kendo-popover-border !default;
     $kendo-popover-callout-height: $kendo-popover-callout-height,
     $kendo-popover-callout-border-width: $kendo-popover-callout-border-width,
     $kendo-popover-callout-border-style: $kendo-popover-callout-border-style,
-    $kendo-popover-callout-bg: $kendo-popover-callout-bg,
     $kendo-popover-callout-border: $kendo-popover-callout-border
 );

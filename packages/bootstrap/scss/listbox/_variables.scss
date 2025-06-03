@@ -37,19 +37,9 @@ $kendo-listbox-bg: k-color(app-surface) !default;
 /// @group listbox
 $kendo-listbox-border: k-color(border) !default;
 
-/// The inline padding of the ListBox item.
-/// @group listbox
-$kendo-listbox-item-padding-x: null !default;
-/// The block padding of the ListBox item.
-/// @group listbox
-$kendo-listbox-item-padding-y: null !default;
-
 /// The width of the ListBox drop hint.
 /// @group listbox
 $kendo-listbox-drop-hint-width: 1px !default;
-/// The width of the border around the ListBox drop hint.
-/// @group listbox
-$kendo-listbox-drop-hint-border-width: null !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/listbox/_variables.scss" with (
@@ -64,8 +54,5 @@ $kendo-listbox-drop-hint-border-width: null !default;
     $kendo-listbox-text: $kendo-listbox-text,
     $kendo-listbox-bg: $kendo-listbox-bg,
     $kendo-listbox-border: $kendo-listbox-border,
-    $kendo-listbox-item-padding-x: $kendo-listbox-item-padding-x,
-    $kendo-listbox-item-padding-y: $kendo-listbox-item-padding-y,
-    $kendo-listbox-drop-hint-width: $kendo-listbox-drop-hint-width,
-    $kendo-listbox-drop-hint-border-width: $kendo-listbox-drop-hint-border-width
+    $kendo-listbox-drop-hint-width: $kendo-listbox-drop-hint-width
 );
