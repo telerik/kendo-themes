@@ -4,12 +4,6 @@
 
 // Panelbar
 
-/// The horizontal padding of the PanelBar.
-/// @group panelbar
-$kendo-panelbar-padding-x: k-spacing(0) !default;
-/// The vertical padding of the PanelBar.
-/// @group panelbar
-$kendo-panelbar-padding-y: k-spacing(0) !default;
 /// The font family of the PanelBar.
 /// @group panelbar
 $kendo-panelbar-font-family: var( --kendo-font-family, inherit ) !default;
@@ -275,8 +269,6 @@ $kendo-panelbar-header-expanded-border: null !default;
 $kendo-panelbar-header-expanded-gradient: null !default;
 
 @forward "@progress/kendo-theme-core/scss/components/panelbar/_variables.scss" with (
-    $kendo-panelbar-padding-x: $kendo-panelbar-padding-x,
-    $kendo-panelbar-padding-y: $kendo-panelbar-padding-y,
     $kendo-panelbar-font-family: $kendo-panelbar-font-family,
     $kendo-panelbar-font-size: $kendo-panelbar-font-size,
     $kendo-panelbar-line-height: $kendo-panelbar-line-height,

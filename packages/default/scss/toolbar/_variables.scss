@@ -59,9 +59,6 @@ $kendo-toolbar-lg-separator-height: $kendo-button-lg-calc-size !default;
 /// The width of the border around the Toolbar.
 /// @group toolbar
 $kendo-toolbar-border-width: 1px !default;
-/// The border radius of the Toolbar.
-/// @group toolbar
-$kendo-toolbar-border-radius: null !default;
 
 /// The font family of the Toolbar.
 /// @group toolbar
@@ -98,9 +95,6 @@ $kendo-toolbar-outline-text: $kendo-button-text !default;
 /// The color of the border around the outline Toolbar.
 /// @group toolbar
 $kendo-toolbar-outline-border: color-mix(in srgb, k-color(on-base) 50%, transparent) !default;
-/// The gradient of the outline Toolbar.
-/// @group toolbar
-$kendo-toolbar-outline-gradient: null !default;
 /// The box shadow of the outline Toolbar.
 /// @group toolbar
 $kendo-toolbar-outline-shadow: null !default;
@@ -117,15 +111,9 @@ $kendo-toolbar-flat-text: null !default;
 /// The color of the border around the flat Toolbar.
 /// @group toolbar
 $kendo-toolbar-flat-border: $kendo-toolbar-border !default;
-/// The gradient of the flat Toolbar.
-/// @group toolbar
-$kendo-toolbar-flat-gradient: null !default;
 /// The box shadow of the flat Toolbar.
 /// @group toolbar
 $kendo-toolbar-flat-shadow: null !default;
-/// Border width of the flat Toolbar.
-/// @group toolbar
-$kendo-toolbar-flat-border-width: 1px !default;
 /// The left and right scroll overlay of the flat Toolbar.
 /// @group toolbar
 $kendo-toolbar-flat-scroll-overlay: k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent) !default;
@@ -196,7 +184,6 @@ $kendo-toolbar-sizes: (
     $kendo-toolbar-md-separator-height: $kendo-toolbar-md-separator-height,
     $kendo-toolbar-lg-separator-height: $kendo-toolbar-lg-separator-height,
     $kendo-toolbar-border-width: $kendo-toolbar-border-width,
-    $kendo-toolbar-border-radius: $kendo-toolbar-border-radius,
     $kendo-toolbar-font-family: $kendo-toolbar-font-family,
     $kendo-toolbar-font-size: $kendo-toolbar-font-size,
     $kendo-toolbar-line-height: $kendo-toolbar-line-height,
@@ -208,15 +195,12 @@ $kendo-toolbar-sizes: (
     $kendo-toolbar-scroll-overlay: $kendo-toolbar-scroll-overlay,
     $kendo-toolbar-outline-text: $kendo-toolbar-outline-text,
     $kendo-toolbar-outline-border: $kendo-toolbar-outline-border,
-    $kendo-toolbar-outline-gradient: $kendo-toolbar-outline-gradient,
     $kendo-toolbar-outline-shadow: $kendo-toolbar-outline-shadow,
     $kendo-toolbar-outline-border-width: $kendo-toolbar-outline-border-width,
     $kendo-toolbar-outline-scroll-overlay: $kendo-toolbar-outline-scroll-overlay,
     $kendo-toolbar-flat-text: $kendo-toolbar-flat-text,
     $kendo-toolbar-flat-border: $kendo-toolbar-flat-border,
-    $kendo-toolbar-flat-gradient: $kendo-toolbar-flat-gradient,
     $kendo-toolbar-flat-shadow: $kendo-toolbar-flat-shadow,
-    $kendo-toolbar-flat-border-width: $kendo-toolbar-flat-border-width,
     $kendo-toolbar-flat-scroll-overlay: $kendo-toolbar-flat-scroll-overlay,
     $kendo-toolbar-separator-border: $kendo-toolbar-separator-border,
     $kendo-toolbar-input-width: $kendo-toolbar-input-width,

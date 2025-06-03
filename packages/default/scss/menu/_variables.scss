@@ -168,16 +168,10 @@ $kendo-menu-popup-padding-y: null !default;
 /// @group menu
 $kendo-menu-popup-border-width: $kendo-popup-border-width !default;
 
-/// The font sizes of the Menu popup.
-/// @group menu
-$kendo-menu-popup-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-menu-popup-sm-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-menu-popup-md-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-menu-popup-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
 
-/// The line heights used along with $kendo-font-size.
-/// @group menu
-$kendo-menu-popup-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-menu-popup-sm-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-menu-popup-md-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-menu-popup-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
@@ -325,11 +319,9 @@ $kendo-menu-popup-item-focus-shadow: $kendo-menu-item-focus-shadow !default;
     $kendo-menu-popup-padding-x: $kendo-menu-popup-padding-x,
     $kendo-menu-popup-padding-y: $kendo-menu-popup-padding-y,
     $kendo-menu-popup-border-width: $kendo-menu-popup-border-width,
-    $kendo-menu-popup-font-size: $kendo-menu-popup-font-size,
     $kendo-menu-popup-sm-font-size: $kendo-menu-popup-sm-font-size,
     $kendo-menu-popup-md-font-size: $kendo-menu-popup-md-font-size,
     $kendo-menu-popup-lg-font-size: $kendo-menu-popup-lg-font-size,
-    $kendo-menu-popup-line-height: $kendo-menu-popup-line-height,
     $kendo-menu-popup-sm-line-height: $kendo-menu-popup-sm-line-height,
     $kendo-menu-popup-md-line-height: $kendo-menu-popup-md-line-height,
     $kendo-menu-popup-lg-line-height: $kendo-menu-popup-lg-line-height,

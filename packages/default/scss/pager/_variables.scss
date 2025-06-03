@@ -16,9 +16,6 @@ $kendo-pager-md-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the large Pager.
 /// @group pager
 $kendo-pager-lg-padding-x: k-spacing(2.5) !default;
-/// The vertical padding of the Pager.
-/// @group pager
-$kendo-pager-padding-y: $kendo-pager-padding-x !default;
 /// The vertical padding of the small Pager.
 /// @group pager
 $kendo-pager-sm-padding-y: $kendo-pager-sm-padding-x !default;
@@ -77,60 +74,13 @@ $kendo-pager-focus-bg: null !default;
 /// The box shadow of the focused Pager.
 /// @group pager
 $kendo-pager-focus-shadow: $kendo-focus-shadow !default;
-/// The spacing between the sections of the Pager.
-/// @group pager
-$kendo-pager-section-spacing: null !default;
 
 /// The border width of the Pager items.
 /// @group pager
 $kendo-pager-item-border-width: 0px !default;
-/// The border radius of the Pager items.
-/// @group pager
-$kendo-pager-item-border-radius: null !default;
 /// The spacing around the Pager items.
 /// @group pager
 $kendo-pager-item-spacing: null !default;
-/// The background color of the Pager items.
-/// @group pager
-$kendo-pager-item-bg: null !default;
-/// The text color of the Pager items.
-/// @group pager
-$kendo-pager-item-text: null !default;
-/// The border color of the Pager items.
-/// @group pager
-$kendo-pager-item-border: null !default;
-
-/// The background color of the hovered Pager items.
-/// @group pager
-$kendo-pager-item-hover-bg: $kendo-list-item-hover-bg !default;
-/// The text color of the hovered Pager items.
-/// @group pager
-$kendo-pager-item-hover-text: $kendo-list-item-hover-text !default;
-/// The border color of the hovered Pager items.
-/// @group pager
-$kendo-pager-item-hover-border: null !default;
-/// The background color of the selected Pager items.
-/// @group pager
-$kendo-pager-item-selected-bg: $kendo-list-item-selected-bg !default;
-/// The text color of the selected Pager items.
-/// @group pager
-$kendo-pager-item-selected-text: $kendo-list-item-selected-text !default;
-/// The border color of the selected Pager items.
-/// @group pager
-$kendo-pager-item-selected-border: null !default;
-/// The opacity of the focused Pager items.
-/// @group pager
-$kendo-pager-item-focus-opacity: null !default;
-/// The background color of the focused Pager items.
-/// @group pager
-$kendo-pager-item-focus-bg: transparent !default;
-/// The box shadow of the focused Pager items.
-/// @group pager
-$kendo-pager-item-focus-shadow: $kendo-list-item-focus-shadow !default;
-
-/// The border radius of the Pager numbers.
-/// @group pager
-$kendo-pager-number-border-radius: null !default;
 
 /// The width of the Inputs in the Pager.
 /// @group pager
@@ -177,7 +127,6 @@ $kendo-pager-sizes: (
     $kendo-pager-sm-padding-x: $kendo-pager-sm-padding-x,
     $kendo-pager-md-padding-x: $kendo-pager-md-padding-x,
     $kendo-pager-lg-padding-x: $kendo-pager-lg-padding-x,
-    $kendo-pager-padding-y: $kendo-pager-padding-y,
     $kendo-pager-sm-padding-y: $kendo-pager-sm-padding-y,
     $kendo-pager-md-padding-y: $kendo-pager-md-padding-y,
     $kendo-pager-lg-padding-y: $kendo-pager-lg-padding-y,
@@ -196,23 +145,8 @@ $kendo-pager-sizes: (
     $kendo-pager-border: $kendo-pager-border,
     $kendo-pager-focus-bg: $kendo-pager-focus-bg,
     $kendo-pager-focus-shadow: $kendo-pager-focus-shadow,
-    $kendo-pager-section-spacing: $kendo-pager-section-spacing,
     $kendo-pager-item-border-width: $kendo-pager-item-border-width,
-    $kendo-pager-item-border-radius: $kendo-pager-item-border-radius,
     $kendo-pager-item-spacing: $kendo-pager-item-spacing,
-    $kendo-pager-item-bg: $kendo-pager-item-bg,
-    $kendo-pager-item-text: $kendo-pager-item-text,
-    $kendo-pager-item-border: $kendo-pager-item-border,
-    $kendo-pager-item-hover-bg: $kendo-pager-item-hover-bg,
-    $kendo-pager-item-hover-text: $kendo-pager-item-hover-text,
-    $kendo-pager-item-hover-border: $kendo-pager-item-hover-border,
-    $kendo-pager-item-selected-bg: $kendo-pager-item-selected-bg,
-    $kendo-pager-item-selected-text: $kendo-pager-item-selected-text,
-    $kendo-pager-item-selected-border: $kendo-pager-item-selected-border,
-    $kendo-pager-item-focus-opacity: $kendo-pager-item-focus-opacity,
-    $kendo-pager-item-focus-bg: $kendo-pager-item-focus-bg,
-    $kendo-pager-item-focus-shadow: $kendo-pager-item-focus-shadow,
-    $kendo-pager-number-border-radius: $kendo-pager-number-border-radius,
     $kendo-pager-input-width: $kendo-pager-input-width,
     $kendo-pager-sm-dropdown-width: $kendo-pager-sm-dropdown-width,
     $kendo-pager-md-dropdown-width: $kendo-pager-md-dropdown-width,

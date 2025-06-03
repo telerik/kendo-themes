@@ -132,27 +132,18 @@ $kendo-color-editor-sm-views-padding-y: $kendo-color-editor-spacer !default;
 /// The horizontal padding of the small ColorEditor views container.
 /// @group color-editor
 $kendo-color-editor-sm-views-padding-x: $kendo-color-editor-views-padding-y !default;
-/// The spacing of the small ColorEditor views container.
-/// @group color-editor
-$kendo-color-editor-sm-views-gap: $kendo-color-editor-spacer !default;
 /// The vertical padding of the medium ColorEditor views container.
 /// @group color-editor
 $kendo-color-editor-md-views-padding-y: $kendo-color-editor-views-padding-y !default;
 /// The horizontal padding of the medium ColorEditor views container.
 /// @group color-editor
 $kendo-color-editor-md-views-padding-x: $kendo-color-editor-views-padding-x !default;
-/// The spacing of the medium ColorEditor views container.
-/// @group color-editor
-$kendo-color-editor-md-views-gap: $kendo-color-editor-views-gap !default;
 /// The vertical padding of the large ColorEditor views container.
 /// @group color-editor
 $kendo-color-editor-lg-views-padding-y: k-spacing(4.5) !default;
 /// The horizontal padding of the large ColorEditor views container.
 /// @group color-editor
 $kendo-color-editor-lg-views-padding-x: k-spacing(4.5) !default;
-/// The spacing of the large ColorEditor views container.
-/// @group color-editor
-$kendo-color-editor-lg-views-gap: k-spacing(4.5) !default;
 
 /// The outline color of the focused ColorGradient.
 /// @group color-editor
@@ -242,13 +233,10 @@ $kendo-color-editor-sizes: (
     $kendo-color-editor-views-gap: $kendo-color-editor-views-gap,
     $kendo-color-editor-sm-views-padding-y: $kendo-color-editor-sm-views-padding-y,
     $kendo-color-editor-sm-views-padding-x: $kendo-color-editor-sm-views-padding-x,
-    $kendo-color-editor-sm-views-gap: $kendo-color-editor-sm-views-gap,
     $kendo-color-editor-md-views-padding-y: $kendo-color-editor-md-views-padding-y,
     $kendo-color-editor-md-views-padding-x: $kendo-color-editor-md-views-padding-x,
-    $kendo-color-editor-md-views-gap: $kendo-color-editor-md-views-gap,
     $kendo-color-editor-lg-views-padding-y: $kendo-color-editor-lg-views-padding-y,
     $kendo-color-editor-lg-views-padding-x: $kendo-color-editor-lg-views-padding-x,
-    $kendo-color-editor-lg-views-gap: $kendo-color-editor-lg-views-gap,
     $kendo-color-editor-color-gradient-focus-outline-color: $kendo-color-editor-color-gradient-focus-outline-color,
     $kendo-color-editor-color-gradient-focus-outline: $kendo-color-editor-color-gradient-focus-outline,
     $kendo-color-editor-color-gradient-focus-outline-offset: $kendo-color-editor-color-gradient-focus-outline-offset,
