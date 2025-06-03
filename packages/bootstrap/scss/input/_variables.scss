@@ -149,13 +149,6 @@ $kendo-input-focus-border: k-color(primary-emphasis) !default;
 /// @group input
 $kendo-input-focus-shadow: 0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent) !default;
 
-/// The background color of the selected Input components.
-/// @group input
-$kendo-input-selected-bg: null !default;
-/// The text color of the selected Input components.
-/// @group input
-$kendo-input-selected-text: null !default;
-
 /// The background color of the disabled Input components.
 /// @group input
 $kendo-input-disabled-bg: null !default;
@@ -257,16 +250,9 @@ $kendo-input-clear-value-hover-text: null !default;
 /// @group input
 $kendo-input-clear-value-hover-opacity: 1 !default;
 
-/// The vertical margin of the clear value icon.
-/// @group input
-$kendo-input-values-margin-y: k-spacing(0.5) !default;
-/// The horizontal margin of the clear value icon.
-/// @group input
-$kendo-input-values-margin-x: $kendo-input-values-margin-y !default;
-
 /// The width of the Input button.
 /// @group input
-$kendo-input-button-width: unset !default;
+$kendo-input-button-width: null !default;
 /// The border width of the Input button.
 /// @group input
 $kendo-input-button-border-width: 1px !default;
@@ -280,9 +266,6 @@ $kendo-input-spinner-icon-offset: null !default;
 /// The color of the Input separator.
 /// @group input
 $kendo-input-separator-text: k-color(border) !default;
-/// The opacity of the Input separator.
-/// @group input
-$kendo-input-separator-opacity: .5 !default;
 
 /// The text color of the Input prefix.
 /// @group input
@@ -335,13 +318,13 @@ $kendo-picker-hover-shadow: $kendo-button-hover-shadow !default;
 $kendo-picker-focus-bg: $kendo-button-active-bg !default;
 /// The text color of the focused Picker components.
 /// @group picker
-$kendo-picker-focus-text: $kendo-button-focus-text !default;
+$kendo-picker-focus-text: null !default;
 /// The border color of the focused Picker components.
 /// @group picker
-$kendo-picker-focus-border: $kendo-button-focus-border !default;
+$kendo-picker-focus-border: k-color(base-active) !default;
 /// The gradient of the focused Picker components.
 /// @group picker
-$kendo-picker-focus-gradient: $kendo-button-focus-gradient !default;
+$kendo-picker-focus-gradient: null !default;
 /// The shadow of the focused Picker components.
 /// @group picker
 $kendo-picker-focus-shadow: $kendo-button-focus-shadow !default;
@@ -491,8 +474,6 @@ $kendo-use-input-spinner-icon-offset: false !default;
     $kendo-input-focus-text: $kendo-input-focus-text,
     $kendo-input-focus-border: $kendo-input-focus-border,
     $kendo-input-focus-shadow: $kendo-input-focus-shadow,
-    $kendo-input-selected-bg: $kendo-input-selected-bg,
-    $kendo-input-selected-text: $kendo-input-selected-text,
     $kendo-input-disabled-bg: $kendo-input-disabled-bg,
     $kendo-input-disabled-text: $kendo-input-disabled-text,
     $kendo-input-disabled-border: $kendo-input-disabled-border,
@@ -524,14 +505,11 @@ $kendo-use-input-spinner-icon-offset: false !default;
     $kendo-input-clear-value-opacity: $kendo-input-clear-value-opacity,
     $kendo-input-clear-value-hover-text: $kendo-input-clear-value-hover-text,
     $kendo-input-clear-value-hover-opacity: $kendo-input-clear-value-hover-opacity,
-    $kendo-input-values-margin-y: $kendo-input-values-margin-y,
-    $kendo-input-values-margin-x: $kendo-input-values-margin-x,
     $kendo-input-button-width: $kendo-input-button-width,
     $kendo-input-button-border-width: $kendo-input-button-border-width,
     $kendo-input-spinner-width: $kendo-input-spinner-width,
     $kendo-input-spinner-icon-offset: $kendo-input-spinner-icon-offset,
     $kendo-input-separator-text: $kendo-input-separator-text,
-    $kendo-input-separator-opacity: $kendo-input-separator-opacity,
     $kendo-input-prefix-text: $kendo-input-prefix-text,
     $kendo-input-suffix-text: $kendo-input-suffix-text,
     $kendo-input-invalid-border: $kendo-input-invalid-border,

@@ -6,11 +6,6 @@
 /// @group badge
 $kendo-badge-border-width: 1px !default;
 
-/// The border radius of the Badge.
-/// @group badge
-$kendo-badge-border-radius: k-spacing(1.5) !default;
-
-
 /// The horizontal padding of the Badge.
 /// @group badge
 $kendo-badge-padding-x: .65em !default;
@@ -39,7 +34,7 @@ $kendo-badge-lg-padding-y: calc( $kendo-badge-padding-y * 1.5 ) !default;
 
 /// The font sizes of the Badge.
 /// @group badge
-$kendo-badge-font-size: $kendo-font-size * .75 !default;
+$kendo-badge-font-size: calc( $kendo-font-size * .75)  !default;
 /// The font size of the small Badge.
 /// @group badge
 $kendo-badge-sm-font-size: $kendo-badge-font-size !default;
@@ -117,7 +112,6 @@ $kendo-badge-theme-colors: (
 
 @forward "@progress/kendo-theme-core/scss/components/badge/_variables.scss" with (
     $kendo-badge-border-width: $kendo-badge-border-width,
-    $kendo-badge-border-radius: $kendo-badge-border-radius,
     $kendo-badge-padding-x: $kendo-badge-padding-x,
     $kendo-badge-sm-padding-x: $kendo-badge-sm-padding-x,
     $kendo-badge-md-padding-x: $kendo-badge-md-padding-x,

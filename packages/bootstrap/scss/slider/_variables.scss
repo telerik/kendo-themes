@@ -6,9 +6,6 @@
 /// The default size of the Slider.
 /// @group slider
 $kendo-slider-size: 200px !default;
-/// The default size of the Slider tick.
-/// @group slider
-$kendo-slider-tick-size: null !default;
 /// The default size of the Slider's track wrap.
 /// @group slider
 $kendo-slider-alt-size: 30px !default;
@@ -29,12 +26,6 @@ $kendo-slider-button-offset: 10px !default;
 /// The size of the Slider Buttons.
 /// @group slider
 $kendo-slider-button-size: ($kendo-slider-alt-size - 2) !default;
-/// The spacing of the Slider Buttons.
-/// @group slider
-$kendo-slider-button-spacing: ($kendo-slider-button-size + $kendo-slider-button-offset) !default;
-/// The shadow of the focused Slider Buttons.
-/// @group slider
-$kendo-slider-button-focus-shadow: $kendo-button-focus-shadow !default;
 
 /// The thickness of the Slider track.
 /// @group slider
@@ -48,9 +39,6 @@ $kendo-slider-draghandle-border-width: 1px !default;
 /// The transition scale of the active Slider drag handle.
 /// @group slider
 $kendo-slider-draghandle-active-scale: 1 !default;
-/// The size of the active Slider drag handle.
-/// @group slider
-$kendo-slider-draghandle-active-size: null !default;
 
 /// The background color of the Slider drag handle.
 /// @group slider
@@ -128,26 +116,18 @@ $kendo-slider-tick-horizontal-image: "data:image/gif;base64,R0lGODlhAQC0AIABALi4
 /// @group slider
 $kendo-slider-tick-vertical-image: "data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
 
-/// The background color of the Slider tick marker.
-/// @group slider
-$kendo-slider-tick-marker-bg: null !default;
-
 @forward "@progress/kendo-theme-core/scss/components/slider/_variables.scss" with (
     $kendo-slider-size: $kendo-slider-size,
-    $kendo-slider-tick-size: $kendo-slider-tick-size,
     $kendo-slider-alt-size: $kendo-slider-alt-size,
     $kendo-slider-font-family: $kendo-slider-font-family,
     $kendo-slider-font-size: $kendo-slider-font-size,
     $kendo-slider-line-height: $kendo-slider-line-height,
     $kendo-slider-button-offset: $kendo-slider-button-offset,
     $kendo-slider-button-size: $kendo-slider-button-size,
-    $kendo-slider-button-spacing: $kendo-slider-button-spacing,
-    $kendo-slider-button-focus-shadow: $kendo-slider-button-focus-shadow,
     $kendo-slider-track-thickness: $kendo-slider-track-thickness,
     $kendo-slider-draghandle-size: $kendo-slider-draghandle-size,
     $kendo-slider-draghandle-border-width: $kendo-slider-draghandle-border-width,
     $kendo-slider-draghandle-active-scale: $kendo-slider-draghandle-active-scale,
-    $kendo-slider-draghandle-active-size: $kendo-slider-draghandle-active-size,
     $kendo-slider-draghandle-bg: $kendo-slider-draghandle-bg,
     $kendo-slider-draghandle-text: $kendo-slider-draghandle-text,
     $kendo-slider-draghandle-border: $kendo-slider-draghandle-border,
@@ -170,6 +150,5 @@ $kendo-slider-tick-marker-bg: null !default;
     $kendo-slider-selection-bg: $kendo-slider-selection-bg,
     $kendo-slider-disabled-opacity: $kendo-slider-disabled-opacity,
     $kendo-slider-tick-horizontal-image: $kendo-slider-tick-horizontal-image,
-    $kendo-slider-tick-vertical-image: $kendo-slider-tick-vertical-image,
-    $kendo-slider-tick-marker-bg: $kendo-slider-tick-marker-bg
+    $kendo-slider-tick-vertical-image: $kendo-slider-tick-vertical-image
 );
