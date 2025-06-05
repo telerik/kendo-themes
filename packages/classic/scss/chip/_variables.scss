@@ -71,8 +71,8 @@ $kendo-chip-lg-line-height: $kendo-chip-line-height !default;
 
 /// The calculated height of the Chip.
 /// @group chip
-$kendo-chip-calc-size: calc( #{$kendo-chip-line-height * 1em} + calc( #{$kendo-chip-padding-y} * 2 ) + #{$kendo-chip-border-width * 2} ) !default;
-$kendo-chip-sm-calc-size: calc( #{$kendo-chip-sm-line-height * 1em} + calc( #{$kendo-chip-sm-padding-y} * 2 ) + #{$kendo-chip-border-width * 2} ) !default;
+$kendo-chip-calc-size: calc( #{$kendo-chip-line-height} * 1em + calc( #{$kendo-chip-padding-y} * 2 ) + #{$kendo-chip-border-width} * 2 ) !default;
+$kendo-chip-sm-calc-size: calc( #{$kendo-chip-sm-line-height} * 1em + calc( #{$kendo-chip-sm-padding-y} * 2 ) + #{$kendo-chip-border-width} * 2 ) !default;
 
 /// The map with the sizes of the Chip.
 /// @group chip
@@ -130,27 +130,15 @@ $kendo-chip-solid-gradient: $kendo-button-gradient !default;
 /// The base background color of the focused solid Chip.
 /// @group chip
 $kendo-chip-solid-focus-bg: null !default;
-/// The base text color of the focused solid Chip.
-/// @group chip
-$kendo-chip-solid-focus-text: null !default;
 
 /// The base background color of the hovered solid Chip.
 /// @group chip
 $kendo-chip-solid-hover-bg: $kendo-button-hover-bg !default;
-/// The base text color of the hovered solid Chip.
-/// @group chip
-$kendo-chip-solid-hover-text: null !default;
 
 /// The base background color of the selected solid Chip
 /// @group chip
 $kendo-chip-solid-selected-bg: $kendo-button-active-bg !default;
-/// The base text color of the selected solid Chip.
-/// @group chip
-$kendo-chip-solid-selected-text: null !default;
 
-/// The base background color of the outline Chip.
-/// @group chip
-$kendo-chip-outline-bg: k-color(surface-alt) !default;
 /// The base text color of the outline Chip.
 /// @group chip
 $kendo-chip-outline-text: k-color(base-on-surface) !default;
@@ -228,12 +216,8 @@ $kendo-chip-list-sizes: (
     $kendo-chip-solid-shadow: $kendo-chip-solid-shadow,
     $kendo-chip-solid-gradient: $kendo-chip-solid-gradient,
     $kendo-chip-solid-focus-bg: $kendo-chip-solid-focus-bg,
-    $kendo-chip-solid-focus-text: $kendo-chip-solid-focus-text,
     $kendo-chip-solid-hover-bg: $kendo-chip-solid-hover-bg,
-    $kendo-chip-solid-hover-text: $kendo-chip-solid-hover-text,
     $kendo-chip-solid-selected-bg: $kendo-chip-solid-selected-bg,
-    $kendo-chip-solid-selected-text: $kendo-chip-solid-selected-text,
-    $kendo-chip-outline-bg: $kendo-chip-outline-bg,
     $kendo-chip-outline-text: $kendo-chip-outline-text,
     $kendo-chip-outline-border: $kendo-chip-outline-border,
     $kendo-chip-outline-shadow: $kendo-chip-outline-shadow,

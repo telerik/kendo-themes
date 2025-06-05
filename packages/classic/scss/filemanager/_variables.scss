@@ -127,15 +127,6 @@ $kendo-file-manager-listview-item-icon-text: k-color(subtle) !default;
 /// The border color of the FileManager ListView item icon.
 /// @group file-manager
 $kendo-file-manager-listview-item-icon-border: null !default;
-/// Background color of the FileManager selected ListView item icon.
-/// @group file-manager
-$kendo-file-manager-listview-item-icon-selected-bg: null !default;
-/// Text color of the FileManager selected ListView item icon.
-/// @group file-manager
-$kendo-file-manager-listview-item-icon-selected-text: inherit !default;
-/// Border color of the FileManager selected ListView item icon.
-/// @group file-manager
-$kendo-file-manager-listview-item-icon-selected-border: null !default;
 
 /// The background color of the FileManager Grid.
 /// @group file-manager
@@ -226,9 +217,6 @@ $kendo-file-manager-preview-icon-border: null !default;
     $kendo-file-manager-listview-item-icon-bg: $kendo-file-manager-listview-item-icon-bg,
     $kendo-file-manager-listview-item-icon-text: $kendo-file-manager-listview-item-icon-text,
     $kendo-file-manager-listview-item-icon-border: $kendo-file-manager-listview-item-icon-border,
-    $kendo-file-manager-listview-item-icon-selected-bg: $kendo-file-manager-listview-item-icon-selected-bg,
-    $kendo-file-manager-listview-item-icon-selected-text: $kendo-file-manager-listview-item-icon-selected-text,
-    $kendo-file-manager-listview-item-icon-selected-border: $kendo-file-manager-listview-item-icon-selected-border,
     $kendo-file-manager-grid-bg: $kendo-file-manager-grid-bg,
     $kendo-file-manager-grid-text: $kendo-file-manager-grid-text,
     $kendo-file-manager-grid-border: $kendo-file-manager-grid-border,

@@ -188,18 +188,6 @@ $kendo-button-selected-gradient: $kendo-button-active-gradient !default;
 /// @group button
 $kendo-button-selected-shadow: $kendo-button-active-shadow !default;
 
-/// The base background of the focused Button.
-/// @group button
-$kendo-button-focus-bg: null !default;
-/// The base text color of the focused Button.
-/// @group button
-$kendo-button-focus-text: null !default;
-/// The base border color of the focused Button.
-/// @group button
-$kendo-button-focus-border: null !default;
-/// The base background gradient of the focused Button.
-/// @group button
-$kendo-button-focus-gradient: null !default;
 /// The base shadow of the focused Button.
 /// @group button
 $kendo-button-focus-shadow: 0 0 4px 0 color-mix(in srgb, k-color(border) 75%, transparent) !default;
@@ -324,10 +312,6 @@ $kendo-button-transition: color .2s ease-in-out !default;
     $kendo-button-selected-border: $kendo-button-selected-border,
     $kendo-button-selected-gradient: $kendo-button-selected-gradient,
     $kendo-button-selected-shadow: $kendo-button-selected-shadow,
-    $kendo-button-focus-bg: $kendo-button-focus-bg,
-    $kendo-button-focus-text: $kendo-button-focus-text,
-    $kendo-button-focus-border: $kendo-button-focus-border,
-    $kendo-button-focus-gradient: $kendo-button-focus-gradient,
     $kendo-button-focus-shadow: $kendo-button-focus-shadow,
     $kendo-button-disabled-bg: $kendo-button-disabled-bg,
     $kendo-button-disabled-text: $kendo-button-disabled-text,
