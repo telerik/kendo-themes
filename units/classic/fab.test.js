@@ -11,8 +11,6 @@ const expected = [
     "kendo-fab-padding-x", // Variable customizations work, but is used by another variable.
     "kendo-fab-padding-y", // Variable customizations work, but is used by another variable.
 ];
-const unexpected = [
-    "kendo-fab-border-radius", // Variable customizations do not work.
-];
+const unexpected = [];
 
 testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);
