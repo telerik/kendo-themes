@@ -12,7 +12,6 @@ const expected = [
     "kendo-fab-padding-y", // Variable customizations work, but is used by another variable.
 ];
 const unexpected = [
-    "kendo-fab-border-radius", // Variable customizations do not work.
     "kendo-fab-border-width", // Variable customizations do not work.
 ];
 

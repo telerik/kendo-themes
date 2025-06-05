@@ -16,8 +16,6 @@ const expected = [
     "kendo-badge-border-width", // Variable customizations work, but is used by another variable.
 ];
 
-const unexpected = [
-    "kendo-badge-border-radius", // Variable customizations do not work.
-];
+const unexpected = [];
 
 testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);
