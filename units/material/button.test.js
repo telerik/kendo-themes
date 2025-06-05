@@ -16,12 +16,6 @@ const expected = [
     "kendo-button-inner-calc-size", // Variable customizations work, but is used by another variable.
 ];
 
-const unexpected = [
-    "kendo-button-focus-bg", // Variable customizations do not work.
-    "kendo-button-focus-text", // Variable customizations do not work.
-    "kendo-button-focus-border", // Variable customizations do not work.
-    "kendo-button-focus-gradient", // Variable customizations do not work.
-    "kendo-button-transition", // Variable is not forwarded properly and its customizations does not work.
-];
+const unexpected = [];
 
 testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);
