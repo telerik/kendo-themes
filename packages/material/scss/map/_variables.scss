@@ -36,22 +36,9 @@ $kendo-map-navigator-padding: k-spacing(0.5) !default;
 /// The width of the Map navigator.
 /// @group map
 $kendo-map-navigator-width: calc( #{$kendo-icon-size} * 3 + #{$kendo-map-navigator-padding} * 2 ) !default;
-/// The height of the Map navigator.
-/// @group map
-$kendo-map-navigator-height: $kendo-map-navigator-width !default;
 /// The border width of the Map navigator.
 /// @group map
 $kendo-map-navigator-border-width: 1px !default;
-
-/// The margin of the Map zoom control.
-/// @group map
-$kendo-map-zoom-control-margin: k-spacing(4) !default;
-/// The horizontal padding of the Map zoom control.
-/// @group map
-$kendo-map-zoom-control-button-padding-x: $kendo-button-padding-y !default;
-/// The vertical padding of the Map zoom control.
-/// @group map
-$kendo-map-zoom-control-button-padding-y: $kendo-map-zoom-control-button-padding-x !default;
 
 /// The horizontal padding of the Map attribution.
 /// @group map
@@ -83,11 +70,7 @@ $kendo-map-marker-images: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAB
     $kendo-map-navigator-margin: $kendo-map-navigator-margin,
     $kendo-map-navigator-padding: $kendo-map-navigator-padding,
     $kendo-map-navigator-width: $kendo-map-navigator-width,
-    $kendo-map-navigator-height: $kendo-map-navigator-height,
     $kendo-map-navigator-border-width: $kendo-map-navigator-border-width,
-    $kendo-map-zoom-control-margin: $kendo-map-zoom-control-margin,
-    $kendo-map-zoom-control-button-padding-x: $kendo-map-zoom-control-button-padding-x,
-    $kendo-map-zoom-control-button-padding-y: $kendo-map-zoom-control-button-padding-y,
     $kendo-map-attribution-padding-x: $kendo-map-attribution-padding-x,
     $kendo-map-attribution-padding-y: $kendo-map-attribution-padding-y,
     $kendo-map-attribution-font-size: $kendo-map-attribution-font-size,

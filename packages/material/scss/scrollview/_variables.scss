@@ -76,9 +76,6 @@ $kendo-scrollview-navigation-default-opacity: .7 !default;
 /// The hover opacity of the ScrollView navigation.
 /// @group scrollview
 $kendo-scrollview-navigation-hover-opacity: 1 !default;
-/// The hover background color of the ScrollView navigation arrows.
-/// @group scrollview
-$kendo-scrollview-navigation-hover-span-bg: null !default;
 
 /// The background color of the ScrollView pager in light mode.
 /// @group scrollview
@@ -118,7 +115,6 @@ $kendo-scrollview-transition-timing-function: ease-in-out !default;
     $kendo-scrollview-navigation-bg: $kendo-scrollview-navigation-bg,
     $kendo-scrollview-navigation-default-opacity: $kendo-scrollview-navigation-default-opacity,
     $kendo-scrollview-navigation-hover-opacity: $kendo-scrollview-navigation-hover-opacity,
-    $kendo-scrollview-navigation-hover-span-bg: $kendo-scrollview-navigation-hover-span-bg,
     $kendo-scrollview-light-bg: $kendo-scrollview-light-bg,
     $kendo-scrollview-dark-bg: $kendo-scrollview-dark-bg,
     $kendo-scrollview-transition-duration: $kendo-scrollview-transition-duration,

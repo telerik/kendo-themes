@@ -38,9 +38,6 @@ $kendo-orgchart-node-gap: $kendo-orgchart-spacer !default;
 /// The spacing of the OrgChart group.
 /// @group orgchart
 $kendo-orgchart-group-gap: $kendo-orgchart-spacer !default;
-/// The spacing of the OrgChart node container.
-/// @group orgchart
-$kendo-orgchart-node-container-gap: $kendo-orgchart-spacer !default;
 
 /// The vertical padding of the OrgChart node group.
 /// @group orgchart
@@ -94,12 +91,6 @@ $kendo-orgchart-node-group-subtitle-text: rgba( black, .54 ) !default;
 /// The width of the OrgChart Card.
 /// @group orgchart
 $kendo-orgchart-card-width: 300px !default;
-/// The vertical padding of the OrgChart Card.
-/// @group orgchart
-$kendo-orgchart-card-padding-y: $kendo-card-padding-y !default;
-/// The horizontal padding of the OrgChart Card.
-/// @group orgchart
-$kendo-orgchart-card-padding-x: $kendo-orgchart-card-padding-y !default;
 /// The border width of the OrgChart Card.
 /// @group orgchart
 $kendo-orgchart-card-border-width: null !default;
@@ -161,7 +152,6 @@ $kendo-orgchart-line-v-height: k-spacing(6) !default;
     $kendo-orgchart-border: $kendo-orgchart-border,
     $kendo-orgchart-node-gap: $kendo-orgchart-node-gap,
     $kendo-orgchart-group-gap: $kendo-orgchart-group-gap,
-    $kendo-orgchart-node-container-gap: $kendo-orgchart-node-container-gap,
     $kendo-orgchart-node-group-padding-y: $kendo-orgchart-node-group-padding-y,
     $kendo-orgchart-node-group-padding-x: $kendo-orgchart-node-group-padding-x,
     $kendo-orgchart-node-group-border-width: $kendo-orgchart-node-group-border-width,
@@ -178,8 +168,6 @@ $kendo-orgchart-line-v-height: k-spacing(6) !default;
     $kendo-orgchart-node-group-subtitle-margin-bottom: $kendo-orgchart-node-group-subtitle-margin-bottom,
     $kendo-orgchart-node-group-subtitle-text: $kendo-orgchart-node-group-subtitle-text,
     $kendo-orgchart-card-width: $kendo-orgchart-card-width,
-    $kendo-orgchart-card-padding-y: $kendo-orgchart-card-padding-y,
-    $kendo-orgchart-card-padding-x: $kendo-orgchart-card-padding-x,
     $kendo-orgchart-card-border-width: $kendo-orgchart-card-border-width,
     $kendo-orgchart-card-shadow: $kendo-orgchart-card-shadow,
     $kendo-orgchart-card-focus-shadow: $kendo-orgchart-card-focus-shadow,

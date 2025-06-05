@@ -111,9 +111,6 @@ $kendo-chat-toolbar-padding-x: $kendo-toolbar-md-padding-x !default;
 /// The vertical padding of the Chat Toolbar.
 /// @group chat
 $kendo-chat-toolbar-padding-y: $kendo-toolbar-md-padding-y !default;
-/// The spacing of the Chat Toolbar.
-/// @group chat
-$kendo-chat-toolbar-spacing: $kendo-toolbar-md-spacing !default;
 /// The background color of the Chat Toolbar.
 /// @group chat
 $kendo-chat-toolbar-bg: $kendo-toolbar-bg !default;
@@ -249,7 +246,6 @@ $kendo-chat-quick-reply-shadow-opacity: 0 !default;
     $kendo-chat-avatar-spacing: $kendo-chat-avatar-spacing,
     $kendo-chat-toolbar-padding-x: $kendo-chat-toolbar-padding-x,
     $kendo-chat-toolbar-padding-y: $kendo-chat-toolbar-padding-y,
-    $kendo-chat-toolbar-spacing: $kendo-chat-toolbar-spacing,
     $kendo-chat-toolbar-bg: $kendo-chat-toolbar-bg,
     $kendo-chat-toolbar-text: $kendo-chat-toolbar-text,
     $kendo-chat-toolbar-border: $kendo-chat-toolbar-border,

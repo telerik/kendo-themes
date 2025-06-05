@@ -130,9 +130,6 @@ $kendo-radio-disabled-checked-text: $kendo-radio-disabled-text !default;
 /// @group radio
 $kendo-radio-disabled-checked-border: $kendo-radio-disabled-border !default;
 
-/// The background color of the invalid RadioButton.
-/// @group radio
-$kendo-radio-invalid-bg: $kendo-checkbox-invalid-bg !default;
 /// The color of the invalid RadioButton.
 /// @group radio
 $kendo-radio-invalid-text: $kendo-checkbox-invalid-text !default;
@@ -223,7 +220,6 @@ $kendo-radio-ripple-opacity: .2 !default;
     $kendo-radio-disabled-checked-bg: $kendo-radio-disabled-checked-bg,
     $kendo-radio-disabled-checked-text: $kendo-radio-disabled-checked-text,
     $kendo-radio-disabled-checked-border: $kendo-radio-disabled-checked-border,
-    $kendo-radio-invalid-bg: $kendo-radio-invalid-bg,
     $kendo-radio-invalid-text: $kendo-radio-invalid-text,
     $kendo-radio-invalid-border: $kendo-radio-invalid-border,
     $kendo-radio-indicator-type: $kendo-radio-indicator-type,

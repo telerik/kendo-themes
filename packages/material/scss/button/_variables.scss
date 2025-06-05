@@ -189,18 +189,9 @@ $kendo-button-selected-gradient: none !default;
 /// @group button
 $kendo-button-selected-shadow: null !default;
 
-/// The base background of the focused Button.
-/// @group button
-$kendo-button-focus-bg: k-color(base-active) !default;
-/// The base text color of the focused Button.
-/// @group button
-$kendo-button-focus-text: k-color(on-base) !default;
 /// The base border color of the focused Button.
 /// @group button
 $kendo-button-focus-border: k-color(base-emphasis) !default;
-/// The base background gradient of focused Button.
-/// @group button
-$kendo-button-focus-gradient: null !default;
 /// The base shadow of the focused Button.
 /// @group button
 $kendo-button-focus-shadow: null !default;
@@ -303,7 +294,7 @@ $kendo-button-transition: box-shadow 280ms cubic-bezier( .4, 0, .2, 1 ) !default
     $kendo-button-md-inner-calc-size: $kendo-button-md-inner-calc-size,
     $kendo-button-lg-inner-calc-size: $kendo-button-lg-inner-calc-size,
     $kendo-button-sizes: $kendo-button-sizes,
-    $kendo-button-transition: $kendo-transition,
+    $kendo-button-transition: $kendo-button-transition,
     $kendo-button-theme-colors: $kendo-button-theme-colors,
     $kendo-button-bg: $kendo-button-bg,
     $kendo-button-text: $kendo-button-text,
@@ -325,10 +316,6 @@ $kendo-button-transition: box-shadow 280ms cubic-bezier( .4, 0, .2, 1 ) !default
     $kendo-button-selected-border: $kendo-button-selected-border,
     $kendo-button-selected-gradient: $kendo-button-selected-gradient,
     $kendo-button-selected-shadow: $kendo-button-selected-shadow,
-    $kendo-button-focus-bg: $kendo-button-focus-bg,
-    $kendo-button-focus-text: $kendo-button-focus-text,
-    $kendo-button-focus-border: $kendo-button-focus-border,
-    $kendo-button-focus-gradient: $kendo-button-focus-gradient,
     $kendo-button-focus-shadow: $kendo-button-focus-shadow,
     $kendo-button-disabled-bg: $kendo-button-disabled-bg,
     $kendo-button-disabled-text: $kendo-button-disabled-text,
