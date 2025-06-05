@@ -19,12 +19,6 @@ const expected = [
     "kendo-input-spinner-width", // Variable customizations work but needs "kendo-use-input-spinner-width" variable to be true.
 ];
 
-const unexpected = [
-    "kendo-input-selected-bg", // Variable customizations do not work.
-    "kendo-input-selected-text", // Variable customizations do not work.
-    "kendo-input-separator-opacity", // Variable customizations do not work.
-    "kendo-input-values-margin-x", // Variable customizations do not work.
-    "kendo-input-values-margin-y", // Variable is used by "kendo-input-values-margin-x" variable and its customizations does not work.
-];
+const unexpected = [];
 
 testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);
