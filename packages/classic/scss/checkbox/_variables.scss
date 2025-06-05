@@ -130,9 +130,6 @@ $kendo-checkbox-disabled-checked-text: null !default;
 /// @group checkbox
 $kendo-checkbox-disabled-checked-border: null !default;
 
-/// The background color of an invalid CheckBox.
-/// @group checkbox
-$kendo-checkbox-invalid-bg: null !default;
 /// The text color of an invalid CheckBox.
 /// @group checkbox
 $kendo-checkbox-invalid-text: k-color(error) !default;
@@ -229,7 +226,6 @@ $kendo-checkbox-ripple-opacity: .25 !default;
     $kendo-checkbox-disabled-checked-bg: $kendo-checkbox-disabled-checked-bg,
     $kendo-checkbox-disabled-checked-text: $kendo-checkbox-disabled-checked-text,
     $kendo-checkbox-disabled-checked-border: $kendo-checkbox-disabled-checked-border,
-    $kendo-checkbox-invalid-bg: $kendo-checkbox-invalid-bg,
     $kendo-checkbox-invalid-text: $kendo-checkbox-invalid-text,
     $kendo-checkbox-invalid-border: $kendo-checkbox-invalid-border,
     $kendo-checkbox-indicator-type: $kendo-checkbox-indicator-type,

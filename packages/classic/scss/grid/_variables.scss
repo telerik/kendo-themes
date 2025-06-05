@@ -139,8 +139,6 @@ $kendo-grid-header-font-size: null !default;
 $kendo-grid-header-first-border: 1px !default;
 $kendo-grid-header-menu-icon-spacing: $kendo-icon-spacing !default;
 
-$kendo-grid-filterable-icon-spacing: calc( #{$kendo-button-calc-size} + #{$kendo-grid-header-menu-icon-spacing} ) !default;
-
 $kendo-grid-toolbar-border-width: $kendo-grid-border-width !default;
 
 $kendo-grid-cell-horizontal-border-width: $kendo-table-cell-horizontal-border-width !default;
@@ -165,9 +163,6 @@ $kendo-grid-header-text: $kendo-table-header-text !default;
 /// The border color of Grid header.
 /// @group grid
 $kendo-grid-header-border: $kendo-table-header-border !default;
-/// The background gradient of Grid header.
-/// @group grid
-$kendo-grid-header-gradient: $kendo-table-header-gradient !default;
 
 /// The background color of Grid footer.
 /// @group grid
@@ -182,12 +177,6 @@ $kendo-grid-footer-border: $kendo-grid-header-border !default;
 /// The background color of the Grid alternating rows.
 /// @group grid
 $kendo-grid-alt-bg: $kendo-table-alt-row-bg !default;
-/// The text color of the Grid alternating rows.
-/// @group grid
-$kendo-grid-alt-text: $kendo-table-alt-row-text !default;
-/// The border color of the Grid alternating rows.
-/// @group grid
-$kendo-grid-alt-border: $kendo-table-alt-row-border !default;
 
 /// The background color of hovered Grid rows.
 /// @group grid
@@ -195,9 +184,6 @@ $kendo-grid-hover-bg: $kendo-table-hover-bg !default;
 /// The text color of hovered Grid rows.
 /// @group grid
 $kendo-grid-hover-text: $kendo-table-hover-text !default;
-/// The border color of hovered Grid rows.
-/// @group grid
-$kendo-grid-hover-border: $kendo-table-hover-border !default;
 
 /// The background color of selected Grid rows.
 /// @group grid
@@ -205,19 +191,10 @@ $kendo-grid-selected-bg: $kendo-table-selected-bg !default;
 /// The text color of selected Grid rows.
 /// @group grid
 $kendo-grid-selected-text: $kendo-table-selected-text !default;
-/// The border color of selected Grid rows.
-/// @group grid
-$kendo-grid-selected-border: $kendo-table-selected-border !default;
 
 /// The background color of highlighted Grid rows.
 /// @group grid
 $kendo-grid-highlighted-bg: $kendo-table-highlighted-bg !default;
-/// The text color of highlighted Grid rows.
-/// @group grid
-$kendo-grid-highlighted-text: $kendo-table-highlighted-text !default;
-/// The border color of highlighted Grid rows.
-/// @group grid
-$kendo-grid-highlighted-border: $kendo-table-highlighted-border !default;
 /// The font weight of highlighted Grid rows.
 /// @group grid
 $kendo-grid-highlighted-font-weight: $kendo-table-highlighted-font-weight !default;
@@ -262,8 +239,6 @@ $kendo-grid-grouping-row-text: $kendo-grid-text !default;
 $kendo-grid-focus-shadow: $kendo-table-focus-shadow !default;
 
 $kendo-grid-command-cell-button-spacing: k-spacing(2) !default;
-// be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
-$kendo-grid-command-cell-padding-y: calc( #{$kendo-grid-cell-padding-y} - (#{$kendo-button-calc-size} - #{$kendo-line-height-em}) / 2 ) !default;
 
 // Must be solid colors
 $kendo-grid-sticky-bg: $kendo-grid-bg !default;
@@ -394,7 +369,6 @@ $kendo-grid-row-resizer-height: k-spacing(0.5) !default;
     $kendo-grid-header-font-size: $kendo-grid-header-font-size,
     $kendo-grid-header-first-border: $kendo-grid-header-first-border,
     $kendo-grid-header-menu-icon-spacing: $kendo-grid-header-menu-icon-spacing,
-    $kendo-grid-filterable-icon-spacing: $kendo-grid-filterable-icon-spacing,
     $kendo-grid-toolbar-border-width: $kendo-grid-toolbar-border-width,
     $kendo-grid-cell-horizontal-border-width: $kendo-grid-cell-horizontal-border-width,
     $kendo-grid-cell-vertical-border-width: $kendo-grid-cell-vertical-border-width,
@@ -404,22 +378,15 @@ $kendo-grid-row-resizer-height: k-spacing(0.5) !default;
     $kendo-grid-header-bg: $kendo-grid-header-bg,
     $kendo-grid-header-text: $kendo-grid-header-text,
     $kendo-grid-header-border: $kendo-grid-header-border,
-    $kendo-grid-header-gradient: $kendo-grid-header-gradient,
     $kendo-grid-footer-bg: $kendo-grid-footer-bg,
     $kendo-grid-footer-text: $kendo-grid-footer-text,
     $kendo-grid-footer-border: $kendo-grid-footer-border,
     $kendo-grid-alt-bg: $kendo-grid-alt-bg,
-    $kendo-grid-alt-text: $kendo-grid-alt-text,
-    $kendo-grid-alt-border: $kendo-grid-alt-border,
     $kendo-grid-hover-bg: $kendo-grid-hover-bg,
     $kendo-grid-hover-text: $kendo-grid-hover-text,
-    $kendo-grid-hover-border: $kendo-grid-hover-border,
     $kendo-grid-selected-bg: $kendo-grid-selected-bg,
     $kendo-grid-selected-text: $kendo-grid-selected-text,
-    $kendo-grid-selected-border: $kendo-grid-selected-border,
     $kendo-grid-highlighted-bg: $kendo-grid-highlighted-bg,
-    $kendo-grid-highlighted-text: $kendo-grid-highlighted-text,
-    $kendo-grid-highlighted-border: $kendo-grid-highlighted-border,
     $kendo-grid-highlighted-font-weight: $kendo-grid-highlighted-font-weight,
     $kendo-grid-selected-highlighted-bg: $kendo-grid-selected-highlighted-bg,
     $kendo-grid-selection-aggregates-bg: $kendo-grid-selection-aggregates-bg,
@@ -440,7 +407,6 @@ $kendo-grid-row-resizer-height: k-spacing(0.5) !default;
     $kendo-grid-grouping-row-text: $kendo-grid-grouping-row-text,
     $kendo-grid-focus-shadow: $kendo-grid-focus-shadow,
     $kendo-grid-command-cell-button-spacing: $kendo-grid-command-cell-button-spacing,
-    $kendo-grid-command-cell-padding-y: $kendo-grid-command-cell-padding-y,
     $kendo-grid-sticky-bg: $kendo-grid-sticky-bg,
     $kendo-grid-sticky-text: $kendo-grid-sticky-text,
     $kendo-grid-sticky-border: $kendo-grid-sticky-border,
