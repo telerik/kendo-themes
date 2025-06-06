@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, Size } from '../misc';
+import { classNames, optionClassNames, responsiveClassNames, Size } from '../misc';
 import { FormField } from './form-field';
 import { Fieldset } from './fieldset';
 
@@ -18,9 +18,9 @@ export type KendoFormProps = KendoFormOptions & {
     orientation?: string;
     layout?: string;
     formButtons?: React.JSX.Element | string;
-    cols?: number;
-    gapX?: number;
-    gapY?: number;
+    cols?: string | number | Array<Record<string, number | string>>;
+    gapX?: string | number | Array<Record<string, number | string>>;
+    gapY?: string | number | Array<Record<string, number | string>>;
     tag?: string;
     children?: React.JSX.Element | React.JSX.Element[];
 };
@@ -50,6 +50,12 @@ export const Form = (
     const Parent = ({ tag, className, children }) => ( tag === 'form' ? <form className={className}>{children}</form> : <div className={className}>{children}</div> );
 
     const formChildren: React.JSX.Element | React.JSX.Element[] = [];
+
+     const formGridClasses: string[] = [
+        ...(cols ? responsiveClassNames('k-grid-cols', cols) : []),
+        ...(gapX ? responsiveClassNames('k-gap-x', gapX) : []),
+        ...(gapY ? responsiveClassNames('k-gap-y', gapY) : []),
+    ];
 
     if (children) {
         if ( Array.isArray(children) ) {
@@ -85,11 +91,7 @@ export const Form = (
                 <div className={classNames(
                     'k-form-layout',
                     'k-d-grid',
-                    {
-                        [`k-grid-cols-${cols}`]: cols,
-                        [`k-gap-x-${gapX}`]: gapX,
-                        [`k-gap-y-${gapY}`]: gapY
-                    }
+                    ...formGridClasses
                 )}>
                     {formChildren}
                 </div>

@@ -1,4 +1,4 @@
-import { classNames, stateClassNames, States } from '../misc';
+import { classNames, stateClassNames, responsiveClassNames, States } from '../misc';
 
 export const FORMFIELD_CLASSNAME = 'k-form-field';
 
@@ -16,11 +16,10 @@ export type KendoFormFieldProps = {
     info?: null | string;
     disabled?: boolean;
     dir?: "ltr" | "rtl";
-    colSpan?: string ;
+    colSpan?: string | number | Array<Record<string, number | string>>;
 };
 
 export type KendoFormFieldState = { [K in (typeof states)[number]]?: boolean };
-
 
 export const FormField = (
     props: KendoFormFieldProps &
@@ -46,9 +45,7 @@ export const FormField = (
                 FORMFIELD_CLASSNAME,
                 props.className,
                 stateClassNames(FORMFIELD_CLASSNAME, { disabled }),
-                {
-                    [`k-col-span-${colSpan}`]: colSpan
-                }
+                ...(colSpan ? responsiveClassNames('k-col-span', colSpan) : []),
             )} dir={dir}>
             {label &&
                             <label className={classNames(
