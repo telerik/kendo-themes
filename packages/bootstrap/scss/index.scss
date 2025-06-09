@@ -117,6 +117,7 @@
 @forward "./otp/_index.scss";
 @forward "./column-menu/_index.scss";
 @forward "./marquee/_index.scss";
+@forward "./speech-to-text-button/_index.scss";
 
 
 // Use component modules
@@ -164,9 +165,9 @@
 
 // Native forms
 @use "./button/_index.scss" as *;
-
 @use "./split-button/_index.scss" as *;
 @use "./menu-button/_index.scss" as *;
+@use "./speech-to-text-button/_index.scss" as *;
 @use "./input/_index.scss" as *;
 @use "./textbox/_index.scss" as *;
 @use "./textarea/_index.scss" as *;
@@ -339,9 +340,9 @@
 
     // Native forms
     @include kendo-button--styles();
-
     @include kendo-split-button--styles();
     @include kendo-menu-button--styles();
+    @include kendo-speech-to-text-button--styles();
     @include kendo-input--styles();
     @include kendo-textbox--styles();
     @include kendo-textarea--styles();
