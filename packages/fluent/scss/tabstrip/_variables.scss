@@ -184,13 +184,6 @@ $kendo-tabstrip-content-border: transparent !default;
 /// @group tabstrip
 $kendo-tabstrip-content-focus-border: k-color(on-app-surface) !default;
 
-/// The horizontal button padding of the scrollable TabStrip.
-/// @group tabstrip
-$kendo-tabstrip-scrollable-button-padding-x: k-spacing(1) !default;
-// The vertical button padding of the scrollable TabStrip.
-/// @group tabstrip
-$kendo-tabstrip-scrollable-button-padding-y: k-spacing(1) !default;
-
 /// The left and right scroll overlay of the TabStrip.
 /// @group tabstrip
 $kendo-tabstrip-scroll-overlay: k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent) !default;

@@ -63,18 +63,12 @@ $kendo-calendar-footer-padding-x: k-spacing(1) !default;
 /// @group calendar
 $kendo-calendar-footer-padding-y: k-spacing(1) !default;
 
-/// The font size of the calendar cell.
-/// @group calendar
-$kendo-calendar-cell-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The horizontal padding of the calendar cell.
 /// @group calendar
 $kendo-calendar-cell-padding-x: k-spacing(1.5) !default;
 /// The vertical padding of the calendar cell.
 /// @group calendar
 $kendo-calendar-cell-padding-y: $kendo-calendar-cell-padding-x !default;
-/// The line height of the calendar cell.
-/// @group calendar
-$kendo-calendar-cell-line-height: $kendo-calendar-line-height !default;
 /// The border radius of the calendar cell.
 /// @group calendar
 $kendo-calendar-cell-border-radius: var( --kendo-border-radius-md, 0) !default;
@@ -97,9 +91,6 @@ $kendo-calendar-header-cell-font-size: var( --kendo-font-size-sm, inherit ) !def
 /// The line height of the calendar header cell.
 /// @group calendar
 $kendo-calendar-header-cell-line-height: 2 !default;
-/// The background color of the calendar header cell.
-/// @group calendar
-$kendo-calendar-header-cell-bg: inherit !default;
 /// The text color of the calendar header cell.
 /// @group calendar
 $kendo-calendar-header-cell-text: inherit !default;
@@ -182,13 +173,6 @@ $kendo-calendar-other-month-bg: inherit !default;
 /// The text color of the other months calendar cells.
 /// @group calendar
 $kendo-calendar-other-month-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
-
-/// The background color of the calendar cells.
-/// @group calendar
-$kendo-calendar-cell-bg: inherit !default;
-/// The text color of the calendar cells.
-/// @group calendar
-$kendo-calendar-cell-text: inherit !default;
 
 /// The background color of the calendar cells when hovered.
 /// @group calendar

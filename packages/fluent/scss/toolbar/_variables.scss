@@ -90,9 +90,6 @@ $kendo-toolbar-flat-text: null !default;
 /// The color of the border around the flat Toolbar.
 /// @group toolbar
 $kendo-toolbar-flat-border: $kendo-toolbar-border !default;
-/// Border width of the flat Toolbar.
-/// @group toolbar
-$kendo-toolbar-flat-border-width: 1px !default;
 /// The left and right scroll overlay of the flat Toolbar.
 /// @group toolbar
 $kendo-toolbar-flat-scroll-overlay: k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent) !default;

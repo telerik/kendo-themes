@@ -5,10 +5,6 @@
 
 // Checkbox
 
-/// The border radius of the CheckBox.
-/// @group checkbox
-$kendo-checkbox-border-radius: null !default;
-
 /// The border width of the CheckBox.
 /// @group checkbox
 $kendo-checkbox-border-width: 1px !default;
@@ -139,9 +135,6 @@ $kendo-checkbox-disabled-indeterminate-text: color-mix(in srgb, k-color(on-app-s
 /// @group checkbox
 $kendo-checkbox-disabled-indeterminate-border: color-mix(in srgb, k-color(on-app-surface) 28%, transparent) !default;
 
-/// The background color of an invalid CheckBox.
-/// @group checkbox
-$kendo-checkbox-invalid-bg: $kendo-checkbox-bg !default;
 /// The text color of an invalid CheckBox.
 /// @group checkbox
 $kendo-checkbox-invalid-text: k-color(error-on-surface) !default;
@@ -175,9 +168,6 @@ $kendo-checkbox-checked-image: k-escape-svg( url("data:image/svg+xml,<svg xmlns=
 /// The image of the indeterminate CheckBox indicator.
 /// @group checkbox
 $kendo-checkbox-indeterminate-image: k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='3' y='3' width='10' height='10' rx='2' fill='#0078d4'/></svg>") ) !default;
-/// The image of the hovered and checked CheckBox indicator.
-/// @group checkbox
-$kendo-checkbox-hover-checked-image: k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#ffffff' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") ) !default;
 /// The image of the hovered and indeterminate CheckBox indicator.
 /// @group checkbox
 $kendo-checkbox-hover-indeterminate-image: k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='3' y='3' width='10' height='10' rx='2' fill='#106ebe'/></svg>") ) !default;

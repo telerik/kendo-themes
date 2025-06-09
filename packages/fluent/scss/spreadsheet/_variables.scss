@@ -29,9 +29,6 @@ $kendo-spreadsheet-border: color-mix(in srgb, k-color(border) 16%, transparent) 
 /// The primary border color of the Spreadsheet.
 /// @group spreadsheet
 $kendo-spreadsheet-primary-border: k-color(primary) !default;
-/// The primary background color of the Spreadsheet.
-/// @group spreadsheet
-$kendo-spreadsheet-primary-bg: k-color(primary) !default;
 
 /// The background color of the Spreadsheet header.
 /// @group spreadsheet
@@ -53,9 +50,6 @@ $kendo-spreadsheet-table-header-text: $kendo-spreadsheet-header-text !default;
 /// @group spreadsheet
 $kendo-spreadsheet-table-header-border: $kendo-spreadsheet-header-border !default;
 
-/// The text color of the selected Spreadsheet.
-/// @group spreadsheet
-$kendo-spreadsheet-selected-text: k-color(primary-on-subtle) !default;
 /// The background color of the selected Spreadsheet.
 /// @group spreadsheet
 $kendo-spreadsheet-selected-bg: k-color(primary-subtle-active) !default;
@@ -251,10 +245,6 @@ $kendo-spreadsheet-filter-button-active-border: k-color(border) !default;
 /// The color of the Spreadsheet Menu icon.
 /// @group spreadsheet
 $kendo-spreadsheet-filter-menu-icon-color: k-color(primary) !default;
-
-/// The border color of the Spreadsheet error.
-/// @group spreadsheet
-$kendo-spreadsheet-error-border: k-color(error-on-subtle) !default;
 
 /// The border style of the Spreadsheet image Dialog.
 /// @group spreadsheet

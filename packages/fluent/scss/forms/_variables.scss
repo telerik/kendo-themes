@@ -13,15 +13,6 @@ $kendo-form-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Form.
 /// @group form
 $kendo-form-line-height: var( --kendo-line-height, normal ) !default;
-/// The line height of the Form in em units.
-/// @group form
-$kendo-form-line-height-em: $kendo-line-height-em !default;
-/// The line height of the small Form.
-/// @group form
-$kendo-form-sm-line-height: var( --kendo-line-height-sm, normal ) !default;
-/// The line height of the large Form.
-/// @group form
-$kendo-form-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
 
 /// The margin of the Form fieldset.
 /// @group form
@@ -71,10 +62,6 @@ $kendo-form-label-margin-bottom: k-spacing(2) !default;
 /// The font weight of the form label
 /// @group form
 $kendo-form-label-font-weight: var( --kendo-font-weight-bold, inherit ) !default;
-
-/// The horizontal margin of the Form buttons.
-/// @group form
-$kendo-form-button-margin-x: k-spacing(2) !default;
 
 /// The font size of the Form hint.
 /// @group form
@@ -153,29 +140,10 @@ $kendo-label-optional-font-style: normal !default;
 /// The margin of the Form fieldset.
 /// @group form
 $kendo-fieldset-margin: k-spacing(7.5) !default;
-/// The font size of the Form fieldset.
-/// @group form
-$kendo-fieldset-font-size: var( --kendo-font-size-xl, inherit ) !default;
 
-/// The background color of the Form fieldset.
-/// @group form
-$kendo-fieldset-bg: transparent !default;
-/// The text color of the Form fieldset.
-/// @group form
-$kendo-fieldset-text: inherit !default;
-/// The border color of the Form fieldset.
-/// @group form
-$kendo-fieldset-border: initial !default;
-
-/// The background color of the Form legend.
-/// @group form
-$kendo-fieldset-legend-bg: transparent !default;
 /// The text color of the Form legend.
 /// @group form
 $kendo-fieldset-legend-text: k-color(subtle) !default;
-/// The border color of the Form legend.
-/// @group form
-$kendo-fieldset-legend-border: initial !default;
 
 /// The sizes map for the Form.
 /// @group form
