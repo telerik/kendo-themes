@@ -63,9 +63,6 @@ $kendo-card-header-font-size: var( --kendo-font-size-lg, inherit ) !default;
 /// Тhe font family of the Card header.
 /// @group card
 $kendo-card-header-font-family: var( --kendo-font-family, inherit ) !default;
-/// The font weight of the Card header.
-/// @group card
-$kendo-card-header-font-weight: var( --kendo-font-weight, initial ) !default;
 /// The line height of the Card header.
 /// @group card
 $kendo-card-header-line-height: var( --kendo-line-height, normal ) !default;
@@ -122,7 +119,7 @@ $kendo-card-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
 $kendo-card-title-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font weight of the Card title.
 /// @group card
-$kendo-card-title-font-weight: $kendo-card-header-font-weight !default;
+$kendo-card-title-font-weight: var( --kendo-font-weight, initial ) !default;
 /// The line height of the Card title.
 /// @group card
 $kendo-card-title-line-height: var( --kendo-line-height, normal ) !default;

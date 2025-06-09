@@ -2,12 +2,6 @@
 @use "../core/_index.scss" as *;
 @use "../list/_variables.scss" as *;
 
-/// The horizontal padding of the PanelBar.
-/// @group panelbar
-$kendo-panelbar-padding-x: k-spacing(0) !default;
-/// The vertical padding of the PanelBar.
-/// @group panelbar
-$kendo-panelbar-padding-y: k-spacing(0) !default;
 /// The font family of the PanelBar.
 /// @group panelbar
 $kendo-panelbar-font-family: var( --kendo-font-family, inherit ) !default;

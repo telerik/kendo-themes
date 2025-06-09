@@ -42,9 +42,6 @@ $kendo-map-navigator-padding: k-spacing(0.5) !default;
 /// The width of the Map navigator.
 /// @group map
 $kendo-map-navigator-width: calc( var( --kendo-icon-size, 1rem) * 3 + calc( #{$kendo-map-navigator-padding} * 2) ) !default;
-/// The height of the Map navigator.
-/// @group map
-$kendo-map-navigator-height: $kendo-map-navigator-width !default;
 /// The border width of the Map navigator.
 /// @group map
 $kendo-map-navigator-border-width: 1px !default;
@@ -61,12 +58,6 @@ $kendo-map-navigator-border: k-color(border) !default;
 /// The margin of the Map zoom control.
 /// @group map
 $kendo-map-zoom-control-margin: k-spacing(4) !default;
-/// The horizontal padding of the Map zoom control.
-/// @group map
-$kendo-map-zoom-control-button-padding-x: $kendo-button-md-padding-y !default;
-/// The vertical padding of the Map zoom control.
-/// @group map
-$kendo-map-zoom-control-button-padding-y: $kendo-map-zoom-control-button-padding-x !default;
 
 /// The horizontal padding of the Map attribution.
 /// @group map

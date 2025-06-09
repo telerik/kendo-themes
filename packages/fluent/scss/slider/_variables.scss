@@ -37,18 +37,6 @@ $kendo-slider-track-bg: k-color(base-emphasis) !default;
 /// The border color of the Slider track.
 /// @group slider
 $kendo-slider-track-border: inherit !default;
-/// The background color of the hovered Slider track.
-/// @group slider
-$kendo-slider-track-hover-bg: k-color(base-emphasis) !default;
-/// The border color of the hovered Slider track.
-/// @group slider
-$kendo-slider-track-hover-border: inherit !default;
-/// The background color of the focused Slider track.
-/// @group slider
-$kendo-slider-track-focus-bg: k-color(base-emphasis) !default;
-/// The border color of the focused Slider track.
-/// @group slider
-$kendo-slider-track-focus-border: inherit !default;
 
 /// The background color of the Slider's track selection.
 /// @group slider
@@ -66,9 +54,6 @@ $kendo-slider-thumb-border-radius: 999em !default;
 /// The transition scale of the active Slider thumb.
 /// @group slider
 $kendo-slider-thumb-active-scale: null !default;
-/// The size of the active Slider thumb.
-/// @group slider
-$kendo-slider-thumb-active-size: null !default;
 
 /// The background color of the Slider thumb.
 /// @group slider

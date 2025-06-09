@@ -130,19 +130,13 @@ $kendo-menu-popup-padding-y: $kendo-popup-padding-y !default;
 /// @group menu
 $kendo-menu-popup-border-width: $kendo-popup-border-width !default;
 
-/// The font sizes of the Menu popup.
-/// @group menu
-$kendo-menu-popup-font-size: var( --kendo-font-size, inherit ) !default;
-$kendo-menu-popup-sm-font-size: $kendo-menu-popup-font-size !default;
-$kendo-menu-popup-md-font-size: $kendo-menu-popup-font-size !default;
+$kendo-menu-popup-sm-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-menu-popup-md-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-menu-popup-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
 
-/// The line heights used along with $kendo-font-size.
-/// @group menu
-$kendo-menu-popup-line-height: var( --kendo-line-height, 30px ) !default;
-$kendo-menu-popup-sm-line-height: $kendo-menu-popup-line-height !default;
-$kendo-menu-popup-md-line-height: $kendo-menu-popup-line-height !default;
-$kendo-menu-popup-lg-line-height: $kendo-menu-popup-line-height !default;
+$kendo-menu-popup-sm-line-height: var( --kendo-line-height, 30px ) !default;
+$kendo-menu-popup-md-line-height: var( --kendo-line-height, 30px ) !default;
+$kendo-menu-popup-lg-line-height: var( --kendo-line-height, 30px ) !default;
 
 /// The background color of the Menu popup.
 /// @group menu
@@ -181,12 +175,6 @@ $kendo-menu-popup-lg-item-icon-margin-start: k-spacing(0) !default;
 $kendo-menu-popup-sm-item-icon-margin-end: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-sm-item-padding-x}) ) !default;
 $kendo-menu-popup-item-icon-md-margin-end: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-md-item-padding-x}) ) !default;
 $kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-lg-item-padding-x}) ) !default;
-
-/// The base shadow of focused Menu item in popup.
-/// @group menu
-$kendo-menu-popup-focus-outline-offset: $kendo-menu-item-focus-outline-offset !default;
-$kendo-menu-popup-focus-outline-width: $kendo-menu-item-focus-outline-width !default;
-$kendo-menu-popup-focus-outline-style: $kendo-menu-item-focus-outline-style !default;
 
 /// The spacing between the Menu items in popup.
 /// @group menu
@@ -238,12 +226,6 @@ $kendo-menu-popup-item-hover-text: $kendo-list-item-hover-text !default;
 /// @group menu
 $kendo-menu-popup-item-hover-bg: $kendo-list-item-hover-bg !default;
 
-/// The text color of focused Menu items.
-/// @group menu
-$kendo-menu-popup-item-focus-text: $kendo-menu-item-text !default;
-/// The background color of focused Menu items.
-/// @group menu
-$kendo-menu-popup-item-focus-bg: $kendo-menu-item-bg !default;
 /// The outline of focused Menu items.
 /// @group menu
 $kendo-menu-popup-item-focus-outline: k-color(base-emphasis) !default;

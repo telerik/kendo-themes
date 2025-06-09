@@ -26,18 +26,6 @@ $kendo-chip-avatar-flex-basis: 1em !default;
 /// The text color of the disabled Chip.
 /// @group chip
 $kendo-chip-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
-/// The background color of the solid disabled Chip.
-/// @group chip
-$kendo-chip-solid-disabled-bg: k-color(base-subtle) !default;
-/// The border color of the solid disabled Chip.
-/// @group chip
-$kendo-chip-solid-disabled-border: transparent !default;
-/// The background color of the outline disabled Chip.
-/// @group chip
-$kendo-chip-outline-disabled-bg: var( k-color(surface-alt), transparent ) !default;
-/// The border color of the outline disabled Chip.
-/// @group chip
-$kendo-chip-outline-disabled-border: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
 
 /// The offset of the outline focused Chip.
 /// @group chip
