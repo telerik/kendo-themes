@@ -4,8 +4,8 @@
 @mixin kendo-fab--layout() {
 
     .k-fab {
-        padding-inline: var( --INTERNAL--kendo-fab-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-fab-padding-y, 0 );
+        padding-inline: var( --kendo-fab-padding-x, 0 );
+        padding-block: var( --kendo-fab-padding-y, 0 );
         border-width: 0;
         border-style: solid;
         border-color: transparent;
@@ -71,8 +71,8 @@
         $_padding-y: map.get( $size-props, padding-y );
 
         .k-fab-#{$size} {
-            --INTERNAL--kendo-fab-padding-x: var( --kendo-fab-#{$size}-padding-x, #{$_padding-x} );
-            --INTERNAL--kendo-fab-padding-y: var( --kendo-fab-#{$size}-padding-y, #{$_padding-y} );
+            --kendo-fab-padding-x: var( --kendo-fab-#{$size}-padding-x, #{$_padding-x} );
+            --kendo-fab-padding-y: var( --kendo-fab-#{$size}-padding-y, #{$_padding-y} );
         }
     }
 

@@ -10,8 +10,8 @@
         max-width: none;
         border-width: var( --kendo-table-border-width, #{$kendo-table-border-width} );
         border-style: solid;
-        font-size: var( --INTERNAL--kendo-table-font-size, var( --kendo-font-size, inherit ) );
-        line-height: var( --INTERNAL--kendo-table-line-height, var( --kendo-line-height, inherit ) );
+        font-size: var( --kendo-table-font-size, var( --kendo-font-size, inherit ) );
+        line-height: var( --kendo-table-line-height, var( --kendo-line-height, inherit ) );
         text-align: start;
         border-collapse: collapse;
         border-spacing: 0;
@@ -45,8 +45,8 @@
 
     .k-table-th,
     .k-table-td {
-        padding-inline: var( --INTERNAL--kendo-table-cell-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-table-cell-padding-y, 0 );
+        padding-inline: var( --kendo-table-cell-padding-x, 0 );
+        padding-block: var( --kendo-table-cell-padding-y, 0 );
         border-block-width: var( --kendo-table-cell-horizontal-border-width, #{$kendo-table-cell-horizontal-border-width} );
         border-inline-width: var( --kendo-table-cell-vertical-border-width, #{$kendo-table-cell-vertical-border-width} );
         border-style: solid;
@@ -166,8 +166,8 @@
 
             &::before {
                 content: "\200b";
-                padding-inline: var( --INTERNAL--kendo-table-group-row-padding-x, 0 );
-                padding-block: var( --INTERNAL--kendo-table-group-row-padding-y, 0 );
+                padding-inline: var( --kendo-table-group-row-padding-x, 0 );
+                padding-block: var( --kendo-table-group-row-padding-y, 0 );
                 width: 0;
                 display: block;
                 overflow: hidden;
@@ -199,9 +199,9 @@
             overflow: visible; // stylelint-disable-line declaration-no-important
 
             > span {
-                padding-inline: var( --INTERNAL--kendo-table-group-label-padding-x, 0 );
-                padding-block: var( --INTERNAL--kendo-table-group-label-padding-y, 0 );
-                font-size: var( --INTERNAL--kendo-table-group-label-font-size, 1rem );
+                padding-inline: var( --kendo-table-group-label-padding-x, 0 );
+                padding-block: var( --kendo-table-group-label-padding-y, 0 );
+                font-size: var( --kendo-table-group-label-font-size, 1rem );
                 position: absolute;
                 inset-block-start: 0;
                 inset-inline-end: 0;
@@ -270,25 +270,25 @@
         $_group-label-font-size: map.get( $size-props, group-label-font-size );
 
         .k-table-#{$size} {
-            --INTERNAL--kendo-table-font-size: var( --kendo-table-#{size}-font-size, #{$_font-size} );
-            --INTERNAL--kendo-table-line-height: var( --kendo-table-#{size}-line-height, #{$_line-height} );
+            --kendo-table-font-size: var( --kendo-table-#{size}-font-size, #{$_font-size} );
+            --kendo-table-line-height: var( --kendo-table-#{size}-line-height, #{$_line-height} );
         }
 
         .k-table-#{$size} .k-table-th,
         .k-table-#{$size} .k-table-td {
-            --INTERNAL--kendo-table-cell-padding-x: var( --kendo-table-#{$size}-cell-padding-x, #{$_cell-padding-x} );
-            --INTERNAL--kendo-table-cell-padding-y: var( --kendo-table-#{$size}-cell-padding-y, #{$_cell-padding-y} );
+            --kendo-table-cell-padding-x: var( --kendo-table-#{$size}-cell-padding-x, #{$_cell-padding-x} );
+            --kendo-table-cell-padding-y: var( --kendo-table-#{$size}-cell-padding-y, #{$_cell-padding-y} );
         }
 
         .k-table-#{$size} .k-table-list .k-table-group-td > span {
-            --INTERNAL--kendo-table-group-label-padding-x: var( --kendo-table-#{$size}-group-label-padding-x, #{$_group-label-padding-x} );
-            --INTERNAL--kendo-table-group-label-padding-y: var( --kendo-table-#{$size}-group-label-padding-y, #{$_group-label-padding-y} );
-            --INTERNAL--kendo-table-group-label-font-size: var( --kendo-table-#{$size}-group-label-padding-y, #{$_group-label-font-size} );
+            --kendo-table-group-label-padding-x: var( --kendo-table-#{$size}-group-label-padding-x, #{$_group-label-padding-x} );
+            --kendo-table-group-label-padding-y: var( --kendo-table-#{$size}-group-label-padding-y, #{$_group-label-padding-y} );
+            --kendo-table-group-label-font-size: var( --kendo-table-#{$size}-group-label-padding-y, #{$_group-label-font-size} );
         }
 
         .k-table-#{$size} .k-table-list .k-table-group-row::before {
-            --INTERNAL--kendo-table-group-row-padding-x: var( --kendo-table-#{$size}-group-row-padding-x, #{$_group-row-padding-x} );
-            --INTERNAL--kendo-table-group-row-padding-y: var( --kendo-table-#{$size}-group-row-padding-y, #{$_group-row-padding-y} );
+            --kendo-table-group-row-padding-x: var( --kendo-table-#{$size}-group-row-padding-x, #{$_group-row-padding-x} );
+            --kendo-table-group-row-padding-y: var( --kendo-table-#{$size}-group-row-padding-y, #{$_group-row-padding-y} );
         }
     }
 

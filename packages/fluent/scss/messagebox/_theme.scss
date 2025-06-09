@@ -5,13 +5,9 @@
 @mixin kendo-messagebox--theme() {
 
     .k-messagebox {
-        --INTERNAL--kendo-messagebox-text: var( --kendo-messagebox-text );
-        --INTERNAL--kendo-messagebox-bg: var( --kendo-messagebox-bg );
-        --INTERNAL--kendo-messagebox-border: var( --kendo-messagebox-border );
-
-        color: var( --INTERNAL--kendo-messagebox-text, initial );
-        background-color: var( --INTERNAL--kendo-messagebox-bg, initial );
-        border-color: var( --INTERNAL--kendo-messagebox-border, initial );
+        color: var( --kendo-messagebox-text, initial );
+        background-color: var( --kendo-messagebox-bg, initial );
+        border-color: var( --kendo-messagebox-border, initial );
 
         a {
             @include fill(

@@ -5,13 +5,9 @@
 @mixin kendo-appbar--theme() {
 
     .k-appbar {
-        --INTERNAL--kendo-appbar-text: var( --kendo-appbar-text, #{$kendo-appbar-text} );
-        --INTERNAL--kendo-appbar-bg: var( --kendo-appbar-bg, #{$kendo-appbar-bg} );
-        --INTERNAL--kendo-appbar-border: var( --kendo-appbar-border, #{$kendo-appbar-border} );
-
-        color: var( --INTERNAL--kendo-appbar-text, inherit );
-        background-color: var( --INTERNAL--kendo-appbar-bg, inherit );
-        border-color: var( --INTERNAL--kendo-appbar-border, inherit );
+        color: var( --kendo-appbar-text, #{$kendo-appbar-text} );
+        background-color: var( --kendo-appbar-bg, #{$kendo-appbar-bg} );
+        border-color: var( --kendo-appbar-border, #{$kendo-appbar-border} );
     }
 
     .k-appbar-inherit {

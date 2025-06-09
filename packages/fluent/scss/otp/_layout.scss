@@ -10,7 +10,7 @@
         width: min-content;
         align-items: center;
         flex-direction: row;
-        gap: var( --INTERNAL--kendo-otp-gap, 0 );
+        gap: var(--kendo-otp-gap, 0 );
 
         .k-otp-input > .k-input-inner {
             text-align: center;
@@ -24,7 +24,7 @@
         $_input-width: map.get($size-props, input-width);
 
         .k-otp-#{$size} {
-            --INTERNAL--kendo-otp-gap: var( --kendo-otp-#{$size}-gap, #{$_gap} );
+            --kendo-otp-gap: var( --kendo-otp-#{$size}-gap, #{$_gap} );
 
             .k-otp-input {
                 min-width: $_input-width;

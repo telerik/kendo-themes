@@ -5,29 +5,21 @@
 @mixin kendo-bottom-navigation--theme() {
 
     .k-bottom-nav {
-        --INTERNAL--kendo-bottom-nav-text: var( --kendo-bottom-nav-text );
-        --INTERNAL--kendo-bottom-nav-bg: var( --kendo-bottom-nav-bg );
-        --INTERNAL--kendo-bottom-nav-border: var( --kendo-bottom-nav-border );
-
-        border-color: var( --INTERNAL--kendo-bottom-nav-border, initial );
-        color: var( --INTERNAL--kendo-bottom-nav-text, inherit );
-        background-color: var( --INTERNAL--kendo-bottom-nav-bg, initial );
+        color: var( --kendo-bottom-nav-text, inherit );
+        background-color: var( --kendo-bottom-nav-bg, initial );
+        border-color: var( --kendo-bottom-nav-border, initial );
     }
 
     .k-bottom-nav-item {
-        --INTERNAL--kendo-bottom-nav-item-text: var( --kendo-bottom-nav-item-text );
-        --INTERNAL--kendo-bottom-nav-item-bg: var( --kendo-bottom-nav-item-bg );
-        --INTERNAL--kendo-bottom-nav-item-border: var( --kendo-bottom-nav-item-border );
-
-        border-color: var( --INTERNAL--kendo-bottom-nav-item-border, initial );
-        color: var( --INTERNAL--kendo-bottom-nav-item-text, inherit );
-        background-color: var( --INTERNAL--kendo-bottom-nav-item-bg, initial );
+        color: var( --kendo-bottom-nav-item-text, inherit );
+        background-color: var( --kendo-bottom-nav-item-bg, initial );
+        border-color: var( --kendo-bottom-nav-item-border, initial );
 
         &:focus,
         &.k-focus {
-            --INTERNAL--kendo-bottom-nav-item-text: var( --kendo-bottom-nav-item-focus-text );
-            --INTERNAL--kendo-bottom-nav-item-bg: var( --kendo-bottom-nav-item-focus-bg );
-            --INTERNAL--kendo-bottom-nav-item-border: var( --kendo-bottom-nav-item-focus-border );
+            color: var( --kendo-bottom-nav-item-focus-text, inherit );
+            background-color: var( --kendo-bottom-nav-item-focus-bg, initial );
+            border-color: var( --kendo-bottom-nav-item-focus-border, initial );
         }
 
         &:focus::after,
@@ -36,16 +28,16 @@
         }
 
         &.k-selected {
-            --INTERNAL--kendo-bottom-nav-item-text: var( --kendo-bottom-nav-item-selected-text );
-            --INTERNAL--kendo-bottom-nav-item-bg: var( --kendo-bottom-nav-item-selected-bg );
-            --INTERNAL--kendo-bottom-nav-item-border: var( --kendo-bottom-nav-item-selected-border );
+            color: var( --kendo-bottom-nav-item-selected-text, inherit );
+            background-color: var( --kendo-bottom-nav-item-selected-bg, initial );
+            border-color: var( --kendo-bottom-nav-item-selected-border, initial );
         }
 
         &:disabled,
         &.k-disabled{
-            --INTERNAL--kendo-bottom-nav-item-text: var( --kendo-bottom-nav-item-disabled-text );
-            --INTERNAL--kendo-bottom-nav-item-bg: var( --kendo-bottom-nav-item-disabled-bg );
-            --INTERNAL--kendo-bottom-nav-item-border: var( --kendo-bottom-nav-item-disabled-border );
+            color: var( --kendo-bottom-nav-item-disabled-text, inherit );
+            background-color: var( --kendo-bottom-nav-item-disabled-bg, initial );
+            border-color: var( --kendo-bottom-nav-item-disabled-border, initial );
         }
     }
 
