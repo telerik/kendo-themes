@@ -5,26 +5,22 @@
 @mixin kendo-chip--theme() {
 
     .k-chip {
-        --INTERNAL-kendo-chip-text: var( --kendo-chip-text );
-        --INTERNAL-kendo-chip-bg: var( --kendo-chip-bg );
-        --INTERNAL-kendo-chip-border: var( --kendo-chip-border );
-
-        border-color: var( --INTERNAL-kendo-chip-border, initial );
-        color: var( --INTERNAL-kendo-chip-text, initial );
-        background-color: var( --INTERNAL-kendo-chip-bg, initial );
+        border-color: var( --kendo-chip-border, initial );
+        color: var( --kendo-chip-text, initial );
+        background-color: var( --kendo-chip-bg, initial );
 
         &:hover,
         &.k-hover {
-            --INTERNAL-kendo-chip-text: var( --kendo-chip-hover-text );
-            --INTERNAL-kendo-chip-bg: var( --kendo-chip-hover-bg );
-            --INTERNAL-kendo-chip-border: var( --kendo-chip-hover-border );
+            --kendo-chip-text: var( --kendo-chip-hover-text );
+            --kendo-chip-bg: var( --kendo-chip-hover-bg );
+            --kendo-chip-border: var( --kendo-chip-hover-border );
         }
 
         &:focus,
         &.k-focus {
-            --INTERNAL-kendo-chip-text: var( --kendo-chip-focus-text );
-            --INTERNAL-kendo-chip-bg: var( --kendo-chip-focus-bg );
-            --INTERNAL-kendo-chip-border: var( --kendo-chip-focus-border );
+            --kendo-chip-text: var( --kendo-chip-focus-text );
+            --kendo-chip-bg: var( --kendo-chip-focus-bg );
+            --kendo-chip-border: var( --kendo-chip-focus-border );
         }
 
         &.k-chip-outline:focus::after,
@@ -33,16 +29,16 @@
         }
 
         &.k-selected {
-            --INTERNAL-kendo-chip-text: var( --kendo-chip-selected-text );
-            --INTERNAL-kendo-chip-bg: var( --kendo-chip-selected-bg );
-            --INTERNAL-kendo-chip-border: var( --kendo-chip-selected-border );
+            --kendo-chip-text: var( --kendo-chip-selected-text );
+            --kendo-chip-bg: var( --kendo-chip-selected-bg );
+            --kendo-chip-border: var( --kendo-chip-selected-border );
         }
 
         &:disabled,
         &.k-disabled {
-            --INTERNAL-kendo-chip-text: var( --kendo-chip-disabled-text );
-            --INTERNAL-kendo-chip-bg: var( --kendo-chip-disabled-bg );
-            --INTERNAL-kendo-chip-border: var( --kendo-chip-disabled-border );
+            --kendo-chip-text: var( --kendo-chip-disabled-text );
+            --kendo-chip-bg: var( --kendo-chip-disabled-bg );
+            --kendo-chip-border: var( --kendo-chip-disabled-border );
         }
 
     }

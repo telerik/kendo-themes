@@ -14,35 +14,35 @@
         > .k-panelbar-header {
 
             &.k-expanded.k-level-0 > .k-link  {
-                --INTERNAL--kendo-panelbar-header-text: var( --kendo-panelbar-header-expanded-text, #{$kendo-panelbar-header-expanded-text} );
-                --INTERNAL--kendo-panelbar-header-bg: var( --kendo-panelbar-header-expanded-bg, #{$kendo-panelbar-header-expanded-bg} );
-                --INTERNAL--kendo-panelbar-header-border: var( --kendo-panelbar-header-expanded-bg, #{$kendo-panelbar-header-expanded-bg} );
+                --kendo-panelbar-header-text: var( --kendo-panelbar-header-expanded-text, #{$kendo-panelbar-header-expanded-text} );
+                --kendo-panelbar-header-bg: var( --kendo-panelbar-header-expanded-bg, #{$kendo-panelbar-header-expanded-bg} );
+                --kendo-panelbar-header-border: var( --kendo-panelbar-header-expanded-bg, #{$kendo-panelbar-header-expanded-bg} );
 
                 // Hover
                 &:hover,
                 &.k-hover {
-                    --INTERNAL--kendo-panelbar-header-text: var( --kendo-panelbar-header-hover-text, #{$kendo-panelbar-header-hover-text} );
-                    --INTERNAL--kendo-panelbar-header-bg: var( --kendo-panelbar-header-hover-bg, #{$kendo-panelbar-header-hover-bg} );
-                    --INTERNAL--kendo-panelbar-header-border: var( --kendo-panelbar-header-hover-border, #{$kendo-panelbar-header-hover-border} );
+                    --kendo-panelbar-header-text: var( --kendo-panelbar-header-hover-text, #{$kendo-panelbar-header-hover-text} );
+                    --kendo-panelbar-header-bg: var( --kendo-panelbar-header-hover-bg, #{$kendo-panelbar-header-hover-bg} );
+                    --kendo-panelbar-header-border: var( --kendo-panelbar-header-hover-border, #{$kendo-panelbar-header-hover-border} );
                 }
 
                 &.k-selected {
-                    --INTERNAL--kendo-panelbar-header-text: var( --kendo-panelbar-header-selected-text, #{$kendo-panelbar-header-selected-text} );
-                    --INTERNAL--kendo-panelbar-header-bg: var( --kendo-panelbar-header-selected-bg, #{$kendo-panelbar-header-selected-bg} );
-                    --INTERNAL--kendo-panelbar-header-border: var( --kendo-panelbar-header-selected-border, #{$kendo-panelbar-header-selected-border} );
+                    --kendo-panelbar-header-text: var( --kendo-panelbar-header-selected-text, #{$kendo-panelbar-header-selected-text} );
+                    --kendo-panelbar-header-bg: var( --kendo-panelbar-header-selected-bg, #{$kendo-panelbar-header-selected-bg} );
+                    --kendo-panelbar-header-border: var( --kendo-panelbar-header-selected-border, #{$kendo-panelbar-header-selected-border} );
                 }
             }
 
             // Normal
             > .k-link {
-                --INTERNAL--kendo-panelbar-header-text: var( --kendo-panelbar-header-text, #{$kendo-panelbar-header-text} );
-                --INTERNAL--kendo-panelbar-header-bg: var( --kendo-panelbar-header-bg, #{$kendo-panelbar-header-bg} );
-                --INTERNAL--kendo-panelbar-header-border: var( --kendo-panelbar-header-border, #{$kendo-panelbar-header-border} );
+                --kendo-panelbar-header-text: var( --kendo-panelbar-header-text, #{$kendo-panelbar-header-text} );
+                --kendo-panelbar-header-bg: var( --kendo-panelbar-header-bg, #{$kendo-panelbar-header-bg} );
+                --kendo-panelbar-header-border: var( --kendo-panelbar-header-border, #{$kendo-panelbar-header-border} );
 
                 @include fill(
-                    var( --INTERNAL--kendo-panelbar-header-text, inherit ),
-                    var( --INTERNAL--kendo-panelbar-header-bg, inherit ),
-                    var( --INTERNAL--kendo-panelbar-header-border, inherit )
+                    var( --kendo-panelbar-header-text, inherit ),
+                    var( --kendo-panelbar-header-bg, inherit ),
+                    var( --kendo-panelbar-header-border, inherit )
                 );
 
                 .k-icon,
@@ -53,34 +53,34 @@
                 // Hover
                 &:hover,
                 &.k-hover {
-                    --INTERNAL--kendo-panelbar-header-text: var( --kendo-panelbar-header-hover-text, #{$kendo-panelbar-header-hover-text} );
-                    --INTERNAL--kendo-panelbar-header-bg: var( --kendo-panelbar-header-hover-bg, #{$kendo-panelbar-header-hover-bg} );
-                    --INTERNAL--kendo-panelbar-header-border: var( --kendo-panelbar-header-hover-border, #{$kendo-panelbar-header-hover-border} );
+                    --kendo-panelbar-header-text: var( --kendo-panelbar-header-hover-text, #{$kendo-panelbar-header-hover-text} );
+                    --kendo-panelbar-header-bg: var( --kendo-panelbar-header-hover-bg, #{$kendo-panelbar-header-hover-bg} );
+                    --kendo-panelbar-header-border: var( --kendo-panelbar-header-hover-border, #{$kendo-panelbar-header-hover-border} );
                 }
 
                 // Focus
                 &:focus,
                 &.k-focus {
-                    --INTERNAL--kendo-panelbar-header-text: var( --kendo-panelbar-header-focus-text, #{$kendo-panelbar-header-focus-text} );
-                    --INTERNAL--kendo-panelbar-header-bg: var( --kendo-panelbar-header-focus-bg, #{$kendo-panelbar-header-focus-bg} );
-                    --INTERNAL--kendo-panelbar-header-border: var( --kendo-panelbar-header-focus-border, #{$kendo-panelbar-header-focus-border} );
+                    --kendo-panelbar-header-text: var( --kendo-panelbar-header-focus-text, #{$kendo-panelbar-header-focus-text} );
+                    --kendo-panelbar-header-bg: var( --kendo-panelbar-header-focus-bg, #{$kendo-panelbar-header-focus-bg} );
+                    --kendo-panelbar-header-border: var( --kendo-panelbar-header-focus-border, #{$kendo-panelbar-header-focus-border} );
 
                     box-shadow: var( --kendo-panelbar-header-focus-shadow, #{$kendo-panelbar-header-focus-shadow} );
 
                     // Focus & Hover
                     &:hover,
                     &.k-hover {
-                        --INTERNAL--kendo-panelbar-header-text: var( --kendo-panelbar-header-hover-focus-text, #{$kendo-panelbar-header-hover-focus-text} );
-                        --INTERNAL--kendo-panelbar-header-bg: var( --kendo-panelbar-header-hover-focus-bg, #{$kendo-panelbar-header-hover-focus-bg} );
-                        --INTERNAL--kendo-panelbar-header-border: var( --kendo-panelbar-header-hover-focus-border, #{$kendo-panelbar-header-hover-focus-border} );
+                        --kendo-panelbar-header-text: var( --kendo-panelbar-header-hover-focus-text, #{$kendo-panelbar-header-hover-focus-text} );
+                        --kendo-panelbar-header-bg: var( --kendo-panelbar-header-hover-focus-bg, #{$kendo-panelbar-header-hover-focus-bg} );
+                        --kendo-panelbar-header-border: var( --kendo-panelbar-header-hover-focus-border, #{$kendo-panelbar-header-hover-focus-border} );
                     }
                 }
 
                 // Selected
                 &.k-selected {
-                    --INTERNAL--kendo-panelbar-header-text: var( --kendo-panelbar-header-selected-text, #{$kendo-panelbar-header-selected-text} );
-                    --INTERNAL--kendo-panelbar-header-bg: var( --kendo-panelbar-header-selected-bg, #{$kendo-panelbar-header-selected-bg} );
-                    --INTERNAL--kendo-panelbar-header-border: var( --kendo-panelbar-header-selected-border, #{$kendo-panelbar-header-selected-border} );
+                    --kendo-panelbar-header-text: var( --kendo-panelbar-header-selected-text, #{$kendo-panelbar-header-selected-text} );
+                    --kendo-panelbar-header-bg: var( --kendo-panelbar-header-selected-bg, #{$kendo-panelbar-header-selected-bg} );
+                    --kendo-panelbar-header-border: var( --kendo-panelbar-header-selected-border, #{$kendo-panelbar-header-selected-border} );
 
                     .k-icon,
                     .k-panelbar-item-icon {
@@ -94,31 +94,31 @@
                     // Selected Hover
                     &:hover,
                     &.k-hover {
-                        --INTERNAL--kendo-panelbar-header-text: var( --kendo-panelbar-header-selected-hover-text, #{$kendo-panelbar-header-selected-hover-text} );
-                        --INTERNAL--kendo-panelbar-header-bg: var( --kendo-panelbar-header-selected-hover-bg, #{$kendo-panelbar-header-selected-hover-bg} );
-                        --INTERNAL--kendo-panelbar-header-border: var( --kendo-panelbar-header-selected-hover-border, #{$kendo-panelbar-header-selected-hover-border} );
+                        --kendo-panelbar-header-text: var( --kendo-panelbar-header-selected-hover-text, #{$kendo-panelbar-header-selected-hover-text} );
+                        --kendo-panelbar-header-bg: var( --kendo-panelbar-header-selected-hover-bg, #{$kendo-panelbar-header-selected-hover-bg} );
+                        --kendo-panelbar-header-border: var( --kendo-panelbar-header-selected-hover-border, #{$kendo-panelbar-header-selected-hover-border} );
                     }
 
                     // Selected Focus
                     &:focus,
                     &.k-focus {
-                        --INTERNAL--kendo-panelbar-header-text: var( --kendo-panelbar-header-selected-focus-text, #{$kendo-panelbar-header-selected-focus-text} );
-                        --INTERNAL--kendo-panelbar-header-bg: var( --kendo-panelbar-header-selected-focus-bg, #{$kendo-panelbar-header-selected-focus-bg} );
-                        --INTERNAL--kendo-panelbar-header-border: var( --kendo-panelbar-header-selected-focus-border, #{$kendo-panelbar-header-selected-focus-border} );
+                        --kendo-panelbar-header-text: var( --kendo-panelbar-header-selected-focus-text, #{$kendo-panelbar-header-selected-focus-text} );
+                        --kendo-panelbar-header-bg: var( --kendo-panelbar-header-selected-focus-bg, #{$kendo-panelbar-header-selected-focus-bg} );
+                        --kendo-panelbar-header-border: var( --kendo-panelbar-header-selected-focus-border, #{$kendo-panelbar-header-selected-focus-border} );
 
                         // Selected Focus & Hover
                         &:hover,
                         &.k-hover {
-                            --INTERNAL--kendo-panelbar-header-text: var( --kendo-panelbar-header-selected-hover-focus-text, #{$kendo-panelbar-header-selected-hover-focus-text} );
-                            --INTERNAL--kendo-panelbar-header-bg: var( --kendo-panelbar-header-selected-hover-focus-bg, #{$kendo-panelbar-header-selected-hover-focus-bg} );
-                            --INTERNAL--kendo-panelbar-header-border: var( --kendo-panelbar-header-selected-hover-focus-border, #{$kendo-panelbar-header-selected-hover-focus-border} );
+                            --kendo-panelbar-header-text: var( --kendo-panelbar-header-selected-hover-focus-text, #{$kendo-panelbar-header-selected-hover-focus-text} );
+                            --kendo-panelbar-header-bg: var( --kendo-panelbar-header-selected-hover-focus-bg, #{$kendo-panelbar-header-selected-hover-focus-bg} );
+                            --kendo-panelbar-header-border: var( --kendo-panelbar-header-selected-hover-focus-border, #{$kendo-panelbar-header-selected-hover-focus-border} );
                         }
                     }
                 }
 
                 &:disabled,
                 &.k-disabled {
-                    --INTERNAL--kendo-panelbar-header-text: var( --kendo-disabled-text, inherit );
+                    --kendo-panelbar-header-text: var( --kendo-disabled-text, inherit );
 
                     .k-icon,
                     .k-panelbar-item-icon {
@@ -132,7 +132,7 @@
                 background-color: transparent;
 
                 > .k-link {
-                    --INTERNAL--kendo-panelbar-header-text: var( --kendo-disabled-text, inherit );
+                    --kendo-panelbar-header-text: var( --kendo-disabled-text, inherit );
                 }
 
                 .k-icon,
@@ -150,9 +150,9 @@
             > .k-link {
 
                 @include fill(
-                    var( --INTERNAL--kendo-panelbar-item-text, inherit ),
-                    var( --INTERNAL--kendo-panelbar-item-bg, inherit ),
-                    var( --INTERNAL--kendo-panelbar-item-border, inherit )
+                    var( --kendo-panelbar-item-text, inherit ),
+                    var( --kendo-panelbar-item-bg, inherit ),
+                    var( --kendo-panelbar-item-border, inherit )
                 );
 
                 .k-icon,
@@ -162,31 +162,31 @@
 
                 &:hover,
                 &.k-hover {
-                    --INTERNAL--kendo-panelbar-item-text: var( --kendo-panelbar-item-hover-text, #{$kendo-panelbar-item-hover-text} );
-                    --INTERNAL--kendo-panelbar-item-bg: var( --kendo-panelbar-item-hover-bg, #{$kendo-panelbar-item-hover-bg} );
-                    --INTERNAL--kendo-panelbar-item-border: var( --kendo-panelbar-item-hover-border, #{$kendo-panelbar-item-hover-border} );
+                    --kendo-panelbar-item-text: var( --kendo-panelbar-item-hover-text, #{$kendo-panelbar-item-hover-text} );
+                    --kendo-panelbar-item-bg: var( --kendo-panelbar-item-hover-bg, #{$kendo-panelbar-item-hover-bg} );
+                    --kendo-panelbar-item-border: var( --kendo-panelbar-item-hover-border, #{$kendo-panelbar-item-hover-border} );
                 }
 
                 &:focus,
                 &.k-focus {
-                    --INTERNAL--kendo-panelbar-item-text: var( --kendo-panelbar-item-focus-text, #{$kendo-panelbar-item-focus-text} );
-                    --INTERNAL--kendo-panelbar-item-bg: var( --kendo-panelbar-item-focus-bg, #{$kendo-panelbar-item-focus-bg} );
-                    --INTERNAL--kendo-panelbar-item-border: var( --kendo-panelbar-item-focus-border, #{$kendo-panelbar-item-focus-border} );
+                    --kendo-panelbar-item-text: var( --kendo-panelbar-item-focus-text, #{$kendo-panelbar-item-focus-text} );
+                    --kendo-panelbar-item-bg: var( --kendo-panelbar-item-focus-bg, #{$kendo-panelbar-item-focus-bg} );
+                    --kendo-panelbar-item-border: var( --kendo-panelbar-item-focus-border, #{$kendo-panelbar-item-focus-border} );
 
                     box-shadow: var( --kendo-panelbar-item-focus-shadow, #{$kendo-panelbar-item-focus-shadow} );
 
                     &:hover,
                     &.k-hover {
-                        --INTERNAL--kendo-panelbar-item-text: var( --kendo-panelbar-item-hover-focus-text, #{$kendo-panelbar-item-hover-focus-text} );
-                        --INTERNAL--kendo-panelbar-item-bg: var( --kendo-panelbar-item-hover-focus-bg, #{$kendo-panelbar-item-hover-focus-bg} );
-                        --INTERNAL--kendo-panelbar-item-border: var( --kendo-panelbar-item-hover-focus-border, #{$kendo-panelbar-item-hover-focus-border} );
+                        --kendo-panelbar-item-text: var( --kendo-panelbar-item-hover-focus-text, #{$kendo-panelbar-item-hover-focus-text} );
+                        --kendo-panelbar-item-bg: var( --kendo-panelbar-item-hover-focus-bg, #{$kendo-panelbar-item-hover-focus-bg} );
+                        --kendo-panelbar-item-border: var( --kendo-panelbar-item-hover-focus-border, #{$kendo-panelbar-item-hover-focus-border} );
                     }
                 }
 
                 &.k-selected {
-                    --INTERNAL--kendo-panelbar-item-text: var( --kendo-panelbar-item-selected-text, #{$kendo-panelbar-item-selected-text} );
-                    --INTERNAL--kendo-panelbar-item-bg: var( --kendo-panelbar-item-selected-bg, #{$kendo-panelbar-item-selected-bg} );
-                    --INTERNAL--kendo-panelbar-item-border: var( --kendo-panelbar-item-selected-border, #{$kendo-panelbar-item-selected-border} );
+                    --kendo-panelbar-item-text: var( --kendo-panelbar-item-selected-text, #{$kendo-panelbar-item-selected-text} );
+                    --kendo-panelbar-item-bg: var( --kendo-panelbar-item-selected-bg, #{$kendo-panelbar-item-selected-bg} );
+                    --kendo-panelbar-item-border: var( --kendo-panelbar-item-selected-border, #{$kendo-panelbar-item-selected-border} );
 
                     &::before {
                         background-color: var( --kendo-panelbar-selected-marker, #{$kendo-panelbar-selected-marker} );
@@ -194,29 +194,29 @@
 
                     &:hover,
                     &.k-hover {
-                        --INTERNAL--kendo-panelbar-item-text: var( --kendo-panelbar-item-selected-hover-text, #{$kendo-panelbar-item-selected-hover-text} );
-                        --INTERNAL--kendo-panelbar-item-bg: var( --kendo-panelbar-item-selected-hover-bg, #{$kendo-panelbar-item-selected-hover-bg} );
-                        --INTERNAL--kendo-panelbar-item-border: var( --kendo-panelbar-item-selected-hover-border, #{$kendo-panelbar-item-selected-hover-border} );
+                        --kendo-panelbar-item-text: var( --kendo-panelbar-item-selected-hover-text, #{$kendo-panelbar-item-selected-hover-text} );
+                        --kendo-panelbar-item-bg: var( --kendo-panelbar-item-selected-hover-bg, #{$kendo-panelbar-item-selected-hover-bg} );
+                        --kendo-panelbar-item-border: var( --kendo-panelbar-item-selected-hover-border, #{$kendo-panelbar-item-selected-hover-border} );
                     }
 
                     &:focus,
                     &.k-focus {
-                        --INTERNAL--kendo-panelbar-item-text: var( --kendo-panelbar-item-selected-focus-text, #{$kendo-panelbar-item-selected-focus-text} );
-                        --INTERNAL--kendo-panelbar-item-bg: var( --kendo-panelbar-item-selected-focus-bg, #{$kendo-panelbar-item-selected-focus-bg} );
-                        --INTERNAL--kendo-panelbar-item-border: var( --kendo-panelbar-item-selected-focus-border, #{$kendo-panelbar-item-selected-focus-border} );
+                        --kendo-panelbar-item-text: var( --kendo-panelbar-item-selected-focus-text, #{$kendo-panelbar-item-selected-focus-text} );
+                        --kendo-panelbar-item-bg: var( --kendo-panelbar-item-selected-focus-bg, #{$kendo-panelbar-item-selected-focus-bg} );
+                        --kendo-panelbar-item-border: var( --kendo-panelbar-item-selected-focus-border, #{$kendo-panelbar-item-selected-focus-border} );
 
                         // Selected Focus & Hover
                         &:hover,
                         &.k-hover {
-                            --INTERNAL--kendo-panelbar-item-text: var( --kendo-panelbar-item-selected-hover-focus-text, #{$kendo-panelbar-item-selected-hover-focus-text} );
-                            --INTERNAL--kendo-panelbar-item-bg: var( --kendo-panelbar-item-selected-hover-focus-bg, #{$kendo-panelbar-item-selected-hover-focus-bg} );
-                            --INTERNAL--kendo-panelbar-item-border: var( --kendo-panelbar-item-selected-hover-focus-border, #{$kendo-panelbar-item-selected-hover-focus-border} );
+                            --kendo-panelbar-item-text: var( --kendo-panelbar-item-selected-hover-focus-text, #{$kendo-panelbar-item-selected-hover-focus-text} );
+                            --kendo-panelbar-item-bg: var( --kendo-panelbar-item-selected-hover-focus-bg, #{$kendo-panelbar-item-selected-hover-focus-bg} );
+                            --kendo-panelbar-item-border: var( --kendo-panelbar-item-selected-hover-focus-border, #{$kendo-panelbar-item-selected-hover-focus-border} );
                         }
                     }
                 }
 
                 &.k-disabled {
-                    --INTERNAL--kendo-panelbar-item-text: var( --kendo-disabled-text, inherit );
+                    --kendo-panelbar-item-text: var( --kendo-disabled-text, inherit );
 
                     .k-icon,
                     .k-panelbar-item-icon {
@@ -230,7 +230,7 @@
                 background-color: transparent;
 
                 > .k-link {
-                    --INTERNAL--kendo-panelbar-item-text: var( --kendo-disabled-text, inherit );
+                    --kendo-panelbar-item-text: var( --kendo-disabled-text, inherit );
                 }
 
                 .k-icon,

@@ -6,15 +6,15 @@
 
     // Chip
     .k-chip {
-        padding-inline: var( --INTERNAL-kendo-chip-padding-x, 0 );
-        padding-block: var( --INTERNAL-kendo-chip-padding-y, 0 );
+        padding-inline: var( --kendo-chip-padding-x, 0 );
+        padding-block: var( --kendo-chip-padding-y, 0 );
         border-width: var( --kendo-chip-border-width, #{ $kendo-chip-border-width } );
         border-style: solid;
         outline: 0;
         font-family: var( --kendo-chip-font-family, #{ $kendo-chip-font-family } );
         font-weight: var( --kendo-chip-font-weight, #{ $kendo-chip-font-weight } ) ;
-        font-size: var( --INTERNAL-kendo-chip-font-size, 1rem );
-        line-height: var( --INTERNAL-kendo-chip-line-height, normal );
+        font-size: var( --kendo-chip-font-size, 1rem );
+        line-height: var( --kendo-chip-line-height, normal );
         display: inline-flex;
         flex-flow: row nowrap;
         align-items: center;
@@ -146,10 +146,10 @@
         $_line-height: map.get( $size-props, line-height );
 
         .k-chip-#{$size} {
-            --INTERNAL-kendo-chip-padding-x: #{ $_padding-x };
-            --INTERNAL-kendo-chip-padding-y: #{ $_padding-y };
-            --INTERNAL-kendo-chip-font-size: #{ $_font-size };
-            --INTERNAL-kendo-chip-line-height: #{ $_line-height };
+            --kendo-chip-padding-x: #{ $_padding-x };
+            --kendo-chip-padding-y: #{ $_padding-y };
+            --kendo-chip-font-size: #{ $_font-size };
+            --kendo-chip-line-height: #{ $_line-height };
 
             .k-chip-action {
                 padding: $_padding-y;

@@ -8,8 +8,8 @@
     .k-checkbox {
         margin: 0;
         padding: 0;
-        width: var( --INTERNAL--kendo-checkbox-width, 1em );
-        height: var( --INTERNAL--kendo-checkbox-height, 1em );
+        width: var( --kendo-checkbox-width, 1em );
+        height: var( --kendo-checkbox-height, 1em );
         line-height: initial;
         border-width: var( --kendo-checkbox-border-width, #{$kendo-checkbox-border-width} );
         border-style: solid;
@@ -30,8 +30,8 @@
     .k-checkbox::before {
         @if $kendo-checkbox-indicator-type == "pseudo" {
             content: "";
-            width: var( --INTERNAL--kendo-checkbox-indicator-size, 1em );
-            height: var( --INTERNAL--kendo-checkbox-indicator-size, 1em );
+            width: var( --kendo-checkbox-indicator-size, 1em );
+            height: var( --kendo-checkbox-indicator-size, 1em );
             border-width: 0;
             border-radius: var( --kendo-checkbox-indicator-border-radius );
             background-color: currentColor;
@@ -47,7 +47,7 @@
             width: 1em;
             height: 1em;
             font-family: var( --kendo-checkbox-glyph-font-family, #{ $kendo-checkbox-glyph-font-family } );
-            font-size: var( --INTERNAL--kendo-checkbox-glyph-size, 1em );
+            font-size: var( --kendo-checkbox-glyph-size, 1em );
             line-height: 1;
             transform: translate(-50%, -50%) scale(0);
             overflow: hidden;
@@ -61,7 +61,7 @@
             display: block;
             width: 100%;
             height: 100%;
-            mask-size: var( --INTERNAL--kendo-checkbox-indicator-size, 100% );
+            mask-size: var( --kendo-checkbox-indicator-size, 100% );
             mask-position: center;
             mask-repeat: no-repeat;
         }
@@ -130,14 +130,14 @@
             &::before {
                 background-color: currentColor;
                 mask-image: var( --kendo-checkbox-indeterminate-image, #{ $kendo-checkbox-indeterminate-image } );
-                mask-size: var( --INTERNAL--kendo-checkbox-indeterminate-size, 100% );
+                mask-size: var( --kendo-checkbox-indeterminate-size, 100% );
             }
         }
 
         @if $kendo-checkbox-indicator-type == "pseudo" {
             &::before {
-                width: var( --INTERNAL--kendo-checkbox-indeterminate-size, 1em );
-                height: var( --INTERNAL--kendo-checkbox-indeterminate-size, 1em );
+                width: var( --kendo-checkbox-indeterminate-size, 1em );
+                height: var( --kendo-checkbox-indeterminate-size, 1em );
                 transform: translate(-50%, -50%) scale(1);
             }
         }
@@ -272,8 +272,8 @@
     .k-ripple-container {
         .k-checkbox::after {
             content: "";
-            width: var( --INTERNAL--kendo-ripple-size-width, 300% );
-            height: var( --INTERNAL--kendo-ripple-size-height, 300% );
+            width: var( --kendo-ripple-size-width, 300% );
+            height: var( --kendo-ripple-size-height, 300% );
             display: block;
             position: absolute;
             left: 50%;
@@ -307,17 +307,17 @@
         $_ripple-size: map.get( $size-props, ripple-size );
 
         .k-checkbox-#{$size} {
-            --INTERNAL--kendo-checkbox-width: #{$_size};
-            --INTERNAL--kendo-checkbox-height: #{$_size};
-            --INTERNAL--kendo-checkbox-glyph-size: #{$_glyph-size};
-            --INTERNAL--kendo-checkbox-indicator-size: #{$_indicator-size};
-            --INTERNAL--kendo-checkbox-indeterminate-size: #{$_indeterminate-size};
+            --kendo-checkbox-width: #{$_size};
+            --kendo-checkbox-height: #{$_size};
+            --kendo-checkbox-glyph-size: #{$_glyph-size};
+            --kendo-checkbox-indicator-size: #{$_indicator-size};
+            --kendo-checkbox-indeterminate-size: #{$_indeterminate-size};
         }
 
         .k-ripple-container {
             .k-checkbox-#{size}::after {
-                --INTERNAL--kendo-ripple-size-width: #{ $_ripple-size };
-                --INTERNAL--kendo-ripple-size-height: #{ $_ripple-size };
+                --kendo-ripple-size-width: #{ $_ripple-size };
+                --kendo-ripple-size-height: #{ $_ripple-size };
             }
         }
     }

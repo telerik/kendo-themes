@@ -8,8 +8,8 @@
     // Base
     .k-toolbar {
         margin: 0;
-        padding-inline: var( --INTERNAL--kendo-toolbar-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-toolbar-padding-y, 0 );
+        padding-inline: var( --kendo-toolbar-padding-x, 0 );
+        padding-block: var( --kendo-toolbar-padding-y, 0 );
         border-width: var( --kendo-toolbar-border-width, #{$kendo-toolbar-border-width} );
         border-style: solid;
         box-sizing: border-box;
@@ -20,7 +20,7 @@
         list-style: none;
         display: flex;
         flex-flow: row wrap;
-        gap: var( --INTERNAL--kendo-toolbar-spacing, 0 );
+        gap: var( --kendo-toolbar-spacing, 0 );
         align-items: center;
         justify-content: flex-start;
         position: relative;
@@ -32,7 +32,7 @@
         &::before {
             content: "";
             height: $kendo-button-inner-calc-size;
-            margin-inline-start: calc( var( --INTERNAL--kendo-toolbar-spacing, 0 ) * -1 );
+            margin-inline-start: calc( var( --kendo-toolbar-spacing, 0 ) * -1 );
         }
 
         &.k-toolbar-resizable {
@@ -42,7 +42,7 @@
         &.k-toolbar-scrollable {
             flex-wrap: nowrap;
             position: relative;
-            margin-inline-start: calc( var( --INTERNAL--kendo-toolbar-spacing, 0 ) * -1 );
+            margin-inline-start: calc( var( --kendo-toolbar-spacing, 0 ) * -1 );
         }
 
         &.k-toolbar-scrollable-overlay {
@@ -57,7 +57,7 @@
             }
 
             &::before {
-                inset-inline-start: var( --INTERNAL--kendo-toolbar-spacing, 0 );
+                inset-inline-start: var( --kendo-toolbar-spacing, 0 );
             }
 
             &::after {
@@ -77,7 +77,7 @@
             vertical-align: middle;
 
             > label {
-                margin-inline-end: var( --INTERNAL--kendo-toolbar-spacing, 0 );
+                margin-inline-end: var( --kendo-toolbar-spacing, 0 );
                 align-self: center;
             }
         }
@@ -100,7 +100,7 @@
         // Overflow separator
         .k-toolbar-separator.k-toolbar-button-separator {
             margin-inline-start: auto;
-            height: var( --INTERNAL--kendo-toolbar-separator-height, 100% );
+            height: var( --kendo-toolbar-separator-height, 100% );
 
             + .k-toolbar-overflow-button {
                 margin-inline-start: 0;
@@ -134,7 +134,7 @@
     .k-toolbar-items {
         display: flex;
         flex-flow: row nowrap;
-        gap: var( --INTERNAL--kendo-toolbar-spacing, 0 );
+        gap: var( --kendo-toolbar-spacing, 0 );
         align-items: center;
         justify-content: flex-start;
         flex: 1 1 auto;
@@ -159,9 +159,9 @@
     .k-toolbar-items-list {
         display: flex;
         flex-flow: row wrap;
-        padding-inline: var( --INTERNAL--kendo-toolbar-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-toolbar-padding-y, 0 );
-        gap: var( --INTERNAL--kendo-toolbar-spacing, 0 );
+        padding-inline: var( --kendo-toolbar-padding-x, 0 );
+        padding-block: var( --kendo-toolbar-padding-y, 0 );
+        gap: var( --kendo-toolbar-spacing, 0 );
         align-items: center;
         justify-content: flex-start;
         flex: 1 1 auto;
@@ -198,10 +198,10 @@
 
         .k-toolbar-#{$size},
         .k-toolbar-items-list-#{$size} {
-            --INTERNAL--kendo-toolbar-padding-x: var( --kendo-toolbar-#{$size}-padding-x, #{$_padding-x} );
-            --INTERNAL--kendo-toolbar-padding-y: var( --kendo-toolbar-#{$size}-padding-y, #{$_padding-y} );
-            --INTERNAL--kendo-toolbar-spacing: var( --kendo-toolbar-#{$size}-spacing, #{$_spacing} );
-            --INTERNAL--kendo-toolbar-separator-height: var( --kendo-toolbar-#{$size}-separator-height, #{$_separator-height} );
+            --kendo-toolbar-padding-x: var( --kendo-toolbar-#{$size}-padding-x, #{$_padding-x} );
+            --kendo-toolbar-padding-y: var( --kendo-toolbar-#{$size}-padding-y, #{$_padding-y} );
+            --kendo-toolbar-spacing: var( --kendo-toolbar-#{$size}-spacing, #{$_spacing} );
+            --kendo-toolbar-separator-height: var( --kendo-toolbar-#{$size}-separator-height, #{$_separator-height} );
         }
     }
 

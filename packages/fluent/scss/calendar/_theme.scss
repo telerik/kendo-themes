@@ -32,53 +32,50 @@
 
 
         .k-calendar-td {
-            --INTERNAL--kendo-calendar-cell-text: var( --kendo-calendar-cell-text );
-            --INTERNAL--kendo-calendar-cell-bg: var( --kendo-calendar-cell-bg );
-
             @include fill(
-                var( --INTERNAL--kendo-calendar-cell-text, inherit ),
-                var( --INTERNAL--kendo-calendar-cell-bg, inherit )
+                var( --kendo-calendar-cell-text, inherit ),
+                var( --kendo-calendar-cell-bg, inherit )
             );
 
             .k-link {
-                --INTERNAL--kendo-calendar-cell-link-text: var( --kendo-calendar-cell-link-text );
-                --INTERNAL--kendo-calendar-cell-link-bg: var( --kendo-calendar-cell-link-bg );
-                --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-cell-link-shadow );
+                color: var( --kendo-calendar-cell-link-text );
+                background-color: var( --kendo-calendar-cell-link-bg );
+                box-shadow: var( --kendo-calendar-cell-link-shadow );
 
                 @include fill(
-                    var( --INTERNAL--kendo-calendar-cell-link-text, inherit ),
-                    var( --INTERNAL--kendo-calendar-cell-link-bg, inherit )
+                    var( --kendo-calendar-cell-link-text, inherit ),
+                    var( --kendo-calendar-cell-link-bg, inherit )
                 );
 
-                box-shadow: var( --INTERNAL--kendo-calendar-cell-link-shadow, none );
+                box-shadow: var( --kendo-calendar-cell-link-shadow, none );
             }
 
             &:hover .k-link,
             &.k-hover .k-link {
-                --INTERNAL--kendo-calendar-cell-link-text: var( --kendo-calendar-cell-hover-text, #{$kendo-calendar-cell-hover-text} );
-                --INTERNAL--kendo-calendar-cell-link-bg: var( --kendo-calendar-cell-hover-bg, #{$kendo-calendar-cell-hover-bg} );
+                color: var( --kendo-calendar-cell-hover-text, #{$kendo-calendar-cell-hover-text} );
+                background-color: var( --kendo-calendar-cell-hover-bg, #{$kendo-calendar-cell-hover-bg} );
             }
 
             &:focus .k-link,
             &.k-focus .k-link {
-                --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-cell-focus-shadow, #{$kendo-calendar-cell-focus-shadow} );
+                box-shadow: var( --kendo-calendar-cell-focus-shadow, #{$kendo-calendar-cell-focus-shadow} );
             }
 
             &.k-selected .k-link{
-                --INTERNAL--kendo-calendar-cell-link-text: var( --kendo-calendar-cell-selected-text, #{$kendo-calendar-cell-selected-text} );
-                --INTERNAL--kendo-calendar-cell-link-bg: var( --kendo-calendar-cell-selected-bg, #{$kendo-calendar-cell-selected-bg} );
-                --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-cell-selected-shadow, #{$kendo-calendar-cell-selected-shadow} );
+                color: var( --kendo-calendar-cell-selected-text, #{$kendo-calendar-cell-selected-text} );
+                background-color: var( --kendo-calendar-cell-selected-bg, #{$kendo-calendar-cell-selected-bg} );
+                box-shadow: var( --kendo-calendar-cell-selected-shadow, #{$kendo-calendar-cell-selected-shadow} );
             }
 
             &.k-selected:hover .k-link,
             &.k-selected.k-hover .k-link {
-                --INTERNAL--kendo-calendar-cell-link-text: var( --kendo-calendar-cell-selected-hover-text, #{$kendo-calendar-cell-selected-hover-text} );
-                --INTERNAL--kendo-calendar-cell-link-bg: var( --kendo-calendar-cell-selected-hover-bg, #{$kendo-calendar-cell-selected-hover-bg} );
+                color: var( --kendo-calendar-cell-selected-hover-text, #{$kendo-calendar-cell-selected-hover-text} );
+                background-color: var( --kendo-calendar-cell-selected-hover-bg, #{$kendo-calendar-cell-selected-hover-bg} );
             }
 
             &.k-selected:focus .k-link,
             &.k-selected.k-focus .k-link {
-                --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-cell-selected-focus-shadow, #{$kendo-calendar-cell-selected-focus-shadow} );
+                box-shadow: var( --kendo-calendar-cell-selected-focus-shadow, #{$kendo-calendar-cell-selected-focus-shadow} );
             }
 
             &.k-disabled {
@@ -158,7 +155,7 @@
 
             &.k-range-start:hover .k-link,
             &.k-range-start.k-hover .k-link {
-                --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-end-range-hover-shadow, #{$kendo-calendar-end-range-hover-shadow} );
+                box-shadow: var( --kendo-calendar-end-range-hover-shadow, #{$kendo-calendar-end-range-hover-shadow} );
 
             }
 
@@ -166,14 +163,14 @@
             &.k-range-mid:last-child.k-hover .k-link,
             &.k-range-end:hover .k-link,
             &.k-range-end.k-hover .k-link {
-                --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-start-range-hover-shadow, #{$kendo-calendar-start-range-hover-shadow} );
+                box-shadow: var( --kendo-calendar-start-range-hover-shadow, #{$kendo-calendar-start-range-hover-shadow} );
             }
 
             &.k-range-mid:first-child:hover .k-link,
             &.k-range-mid:first-child.k-hover .k-link,
             &.k-alt + .k-range-mid:hover .k-link,
             &.k-alt + .k-range-mid.k-hover .k-link {
-                --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-end-range-hover-shadow, #{$kendo-calendar-end-range-hover-shadow} );
+                box-shadow: var( --kendo-calendar-end-range-hover-shadow, #{$kendo-calendar-end-range-hover-shadow} );
             }
         }
     }
@@ -215,31 +212,31 @@
 
         &.k-range-start:hover .k-link,
         &.k-range-start.k-hover .k-link {
-            --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-start-range-hover-shadow, #{$kendo-calendar-start-range-hover-shadow} );
+            box-shadow: var( --kendo-calendar-start-range-hover-shadow, #{$kendo-calendar-start-range-hover-shadow} );
 
         }
 
         &.k-range-mid:hover .k-link,
         &.k-range-mid.k-hover .k-link {
-            --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-mid-range-hover-shadow, #{$kendo-calendar-mid-range-hover-shadow} );
+            box-shadow: var( --kendo-calendar-mid-range-hover-shadow, #{$kendo-calendar-mid-range-hover-shadow} );
         }
 
         &.k-range-mid:last-child:hover .k-link,
         &.k-range-mid:last-child.k-hover .k-link,
         &.k-range-end:hover .k-link,
         &.k-range-end.k-hover .k-link {
-            --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-end-range-hover-shadow, #{$kendo-calendar-end-range-hover-shadow} );
+            box-shadow: var( --kendo-calendar-end-range-hover-shadow, #{$kendo-calendar-end-range-hover-shadow} );
         }
 
         &.k-range-mid:first-child:hover .k-link,
         &.k-range-mid:first-child.k-hover .k-link,
         &.k-alt + .k-range-mid:hover .k-link,
         &.k-alt + .k-range-mid.k-hover .k-link {
-            --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-start-range-hover-shadow, #{$kendo-calendar-start-range-hover-shadow} );
+            box-shadow: var( --kendo-calendar-start-range-hover-shadow, #{$kendo-calendar-start-range-hover-shadow} );
         }
 
         &.k-range-start.k-range-end:hover .k-link {
-            --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-start-end-range-hover-shadow, #{$kendo-calendar-start-end-range-hover-shadow} );
+            box-shadow: var( --kendo-calendar-start-end-range-hover-shadow, #{$kendo-calendar-start-end-range-hover-shadow} );
         }
     }
 

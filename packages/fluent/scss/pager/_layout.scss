@@ -6,8 +6,8 @@
 @mixin kendo-pager--layout() {
 
     .k-pager {
-        padding-inline: var( --INTERNAL--kendo-pager-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-pager-padding-y, 0 );
+        padding-inline: var( --kendo-pager-padding-x, 0 );
+        padding-block: var( --kendo-pager-padding-y, 0 );
         border-width: var( --kendo-pager-border-width, #{$kendo-pager-border-width} );
         border-style: solid;
         box-sizing: border-box;
@@ -19,7 +19,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: var( --INTERNAL--kendo-pager-spacing, 0 );
+        gap: var( --kendo-pager-spacing, 0 );
         position: relative;
         overflow: hidden;
         cursor: default;
@@ -90,7 +90,7 @@
         }
 
         .k-button {
-            --INTERNAL--kendo-button-padding-x: var( --INTERNAL--kendo-button-padding-y );
+            padding-inline: var( --kendo-button-padding-y );
 
             .k-button-text {
                 min-width: calc( var( --kendo-line-height ) * 1em );
@@ -163,9 +163,9 @@
         $_item-group-spacing: map.get($size-props, item-group-spacing);
 
         .k-pager-#{$size} {
-            --INTERNAL--kendo-pager-padding-x: var( --kendo-pager-#{$size}-padding-x, #{$_padding-x} );
-            --INTERNAL--kendo-pager-padding-y: var( --kendo-pager-#{$size}-padding-y, #{$_padding-y} );
-            --INTERNAL--kendo-pager-spacing: var( --kendo-pager-#{$size}-spacing, #{$_item-group-spacing} );
+            --kendo-pager-padding-x: var( --kendo-pager-#{$size}-padding-x, #{$_padding-x} );
+            --kendo-pager-padding-y: var( --kendo-pager-#{$size}-padding-y, #{$_padding-y} );
+            --kendo-pager-spacing: var( --kendo-pager-#{$size}-spacing, #{$_item-group-spacing} );
 
             .k-pager-input,
             select.k-dropdown-list {
