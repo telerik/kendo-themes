@@ -6,7 +6,8 @@ const states = [
     States.hover,
     States.focus,
     States.selected,
-    States.disabled
+    States.disabled,
+    States.highlighted
 ];
 
 export type KendoTableRowProps = {
@@ -25,6 +26,7 @@ export const TableRow = (
         hover,
         focus,
         selected,
+        highlighted,
         disabled,
         alt,
         ...other
@@ -44,6 +46,7 @@ export const TableRow = (
                     focus,
                     disabled,
                     selected,
+                    highlighted,
                 })
             )}
         >
