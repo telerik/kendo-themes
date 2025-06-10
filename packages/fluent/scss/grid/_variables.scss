@@ -512,3 +512,34 @@ $kendo-grid-row-resizer-active-bg: k-color(primary) !default;
 /// The height of the Grid row resize indicator.
 /// @group grid
 $kendo-grid-row-resizer-height: k-spacing(0.5) !default;
+
+/// The horizontal padding of the Grid stack layout cells.
+/// @group grid
+$kendo-grid-stack-cell-padding-x: k-spacing(2) !default;
+/// The vertical padding of the Grid stack layout cells.
+/// @group grid
+$kendo-grid-stack-cell-padding-y: k-spacing(1.5) !default;
+/// The column gap of the Grid stack layout.
+/// @group grid
+$kendo-grid-stack-column-gap: k-spacing(1) !default;
+/// The column gap of the editable Grid stack layout.
+/// @group grid
+$kendo-grid-stack-editable-column-gap: k-spacing(2) !default;
+/// The width of the hierarchy column in the Grid stack layout.
+/// @group grid
+$kendo-grid-stack-hierarchy-col-width: k-spacing(2) !default;
+/// The font size of the Grid stack layout column header.
+/// @group grid
+$kendo-grid-stack-header-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// The font weight of the Grid stack layout column header.
+/// @group grid
+$kendo-grid-stack-header-font-weight: var( --kendo-font-weight-bold, inherit ) !default;
+/// The height of the Grid stack layout expandable row shadow.
+/// @group grid
+$kendo-grid-stack-expandable-shadow-height: k-spacing(2.5) !default;
+/// The color of the Grid stack layout column header.
+/// @group grid
+$kendo-grid-stack-header-color: k-color(subtle) !default;
+/// The Grid stack layout expandable row shadow.
+/// @group grid
+$kendo-grid-stack-expandable-shadow: k-elevation(2) !default;

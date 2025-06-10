@@ -313,6 +313,40 @@ $kendo-grid-row-resizer-active-bg: k-color(primary) !default;
 /// @group grid
 $kendo-grid-row-resizer-height: k-spacing(0.5) !default;
 
+/// The horizontal padding of the Grid stack layout cells.
+/// @group grid
+$kendo-grid-stack-cell-padding-x: k-spacing(2) !default;
+/// The vertical padding of the Grid stack layout cells.
+/// @group grid
+$kendo-grid-stack-cell-padding-y: k-spacing(1.5) !default;
+
+/// The column gap of the Grid stack layout.
+/// @group grid
+$kendo-grid-stack-column-gap: k-spacing(1) !default;
+/// The column gap of the editable Grid stack layout.
+/// @group grid
+$kendo-grid-stack-editable-column-gap: k-spacing(2) !default;
+
+/// The width of the hierarchy column in the Grid stack layout.
+/// @group grid
+$kendo-grid-stack-hierarchy-col-width: k-spacing(2) !default;
+
+/// The font size of the Grid stack layout column header.
+/// @group grid
+$kendo-grid-stack-header-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// The font weight of the Grid stack layout column header.
+/// @group grid
+$kendo-grid-stack-header-font-weight: var( --kendo-font-weight-bold, bold ) !default;
+/// The height of the Grid stack layout expandable row shadow.
+/// @group grid
+$kendo-grid-stack-expandable-shadow-height: k-spacing(2.5) !default;
+
+/// The color of the Grid stack layout column header.
+/// @group grid
+$kendo-grid-stack-header-color: k-color(subtle) !default;
+/// The Grid stack layout expandable row shadow.
+/// @group grid
+$kendo-grid-stack-expandable-shadow: k-elevation(2) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/grid/_variables.scss" with (
     $kendo-grid-border-width: $kendo-grid-border-width,
@@ -408,15 +442,15 @@ $kendo-grid-row-resizer-height: k-spacing(0.5) !default;
     $kendo-grid-focus-shadow: $kendo-grid-focus-shadow,
     $kendo-grid-command-cell-button-spacing: $kendo-grid-command-cell-button-spacing,
     $kendo-grid-sticky-bg: $kendo-grid-sticky-bg,
+    $kendo-grid-sticky-hover-bg: $kendo-grid-sticky-hover-bg,
+    $kendo-grid-sticky-alt-bg: $kendo-grid-sticky-alt-bg,
     $kendo-grid-sticky-text: $kendo-grid-sticky-text,
     $kendo-grid-sticky-border: $kendo-grid-sticky-border,
-    $kendo-grid-sticky-alt-bg: $kendo-grid-sticky-alt-bg,
     $kendo-grid-sticky-header-bg: $kendo-grid-sticky-header-bg,
     $kendo-grid-sticky-header-text: $kendo-grid-sticky-header-text,
     $kendo-grid-sticky-header-border: $kendo-grid-sticky-header-border,
     $kendo-grid-sticky-footer-bg: $kendo-grid-sticky-footer-bg,
     $kendo-grid-sticky-footer-hover-bg: $kendo-grid-sticky-footer-hover-bg,
-    $kendo-grid-sticky-hover-bg: $kendo-grid-sticky-hover-bg,
     $kendo-grid-column-menu-width: $kendo-grid-column-menu-width,
     $kendo-grid-column-menu-max-width: $kendo-grid-column-menu-max-width,
     $kendo-grid-filter-menu-check-all-border-bottom-width: $kendo-grid-filter-menu-check-all-border-bottom-width,
@@ -450,5 +484,15 @@ $kendo-grid-row-resizer-height: k-spacing(0.5) !default;
     $kendo-grid-group-footer-second-cell-border: $kendo-grid-group-footer-second-cell-border,
     $kendo-grid-row-resizer-hover-bg: $kendo-grid-row-resizer-hover-bg,
     $kendo-grid-row-resizer-active-bg: $kendo-grid-row-resizer-active-bg,
-    $kendo-grid-row-resizer-height: $kendo-grid-row-resizer-height
+    $kendo-grid-row-resizer-height: $kendo-grid-row-resizer-height,
+    $kendo-grid-stack-cell-padding-x: $kendo-grid-stack-cell-padding-x,
+    $kendo-grid-stack-cell-padding-y: $kendo-grid-stack-cell-padding-y,
+    $kendo-grid-stack-column-gap: $kendo-grid-stack-column-gap,
+    $kendo-grid-stack-editable-column-gap: $kendo-grid-stack-editable-column-gap,
+    $kendo-grid-stack-hierarchy-col-width: $kendo-grid-stack-hierarchy-col-width,
+    $kendo-grid-stack-header-font-size: $kendo-grid-stack-header-font-size,
+    $kendo-grid-stack-header-font-weight: $kendo-grid-stack-header-font-weight,
+    $kendo-grid-stack-expandable-shadow-height: $kendo-grid-stack-expandable-shadow-height,
+    $kendo-grid-stack-header-color: $kendo-grid-stack-header-color,
+    $kendo-grid-stack-expandable-shadow: $kendo-grid-stack-expandable-shadow
 );

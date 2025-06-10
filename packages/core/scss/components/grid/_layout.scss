@@ -264,7 +264,7 @@
         }
 
 
-        // Grouping, hierarcy
+        // Grouping, hierarchy
         .k-group-col,
         .k-hierarchy-col {
             padding: 0;
@@ -473,7 +473,7 @@
             width: $kendo-grid-group-drop-hint-line-size;
             height: calc(100% - #{$kendo-grid-group-drop-hint-size});
             top: $kendo-grid-group-drop-hint-size;
-            inset-inline-start: calc( #{$kendo-grid-group-drop-hint-size} - #{math.div( $kendo-grid-group-drop-hint-line-size, 2 )} );
+            inset-inline-start: calc( #{$kendo-grid-group-drop-hint-size} - #{$kendo-grid-group-drop-hint-line-size} / 2 );
         }
     }
 
@@ -690,7 +690,9 @@
         display: flex;
         justify-content: flex-end;
         gap: $kendo-grid-selection-aggregates-spacing;
+        flex-wrap: wrap;
     }
+
     .k-selection-aggregates-item-value {
         font-weight: $kendo-grid-selection-aggregates-font-weight;
     }
@@ -1069,6 +1071,97 @@
             }
         }
 
+    }
+
+    // Grid stack layout
+    .k-grid-stack {
+        .k-table-td,
+        .k-grid-edit-row .k-table-td {
+            padding-inline: $kendo-grid-stack-cell-padding-x;
+            padding-block: $kendo-grid-stack-cell-padding-y;
+        }
+
+        // Grouping, hierarchy
+        .k-group-col,
+        .k-hierarchy-col {
+            width: $kendo-grid-stack-hierarchy-col-width;
+        }
+
+        .k-grouping-row {
+            p {
+                gap: k-spacing(1);
+            }
+
+            .k-icon {
+                padding: k-spacing(1);
+                margin: 0;
+            }
+        }
+
+        // Grouping aggregates
+        .k-grid-grouping-aggregates {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 0;
+            padding-inline-start: k-spacing(1);
+        }
+
+        .k-grouping-aggregates-item-text {
+            font-weight: normal;
+        }
+
+        .k-grouping-aggregates-item-value {
+            font-weight: $kendo-grid-selection-aggregates-font-weight;
+        }
+    }
+
+    .k-grid-stack-row {
+        display: grid;
+        gap: $kendo-grid-stack-column-gap;
+    }
+
+    .k-grid-edit-row .k-grid-stack-row {
+        gap: $kendo-grid-stack-editable-column-gap;
+    }
+
+    .k-grid-stack-header {
+        font-size: $kendo-grid-stack-header-font-size;
+        font-weight: $kendo-grid-stack-header-font-weight;
+    }
+
+     // Command cell
+    .k-grid-stack-cell.k-command-cell {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        grid-column: 1 / -1;
+    }
+
+    .k-grid-stack-expandable .k-table-td {
+        position: relative;
+        padding-inline: $kendo-grid-stack-cell-padding-x;
+        padding-block: $kendo-grid-stack-cell-padding-y;
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: $kendo-grid-stack-expandable-shadow-height;
+            box-shadow: $kendo-grid-stack-expandable-shadow;
+            top: calc( -1 * #{$kendo-grid-stack-expandable-shadow-height} );
+            left: 0;
+        }
+    }
+
+    .k-drag-cell .k-grid-stack-content {
+        display: flex;
+        align-items: center;
+        gap: k-spacing(2);
+        padding-block: k-spacing(2.5);
+        user-select: none;
+        touch-action: none;
     }
 
 

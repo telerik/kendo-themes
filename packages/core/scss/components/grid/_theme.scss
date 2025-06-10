@@ -451,6 +451,11 @@
         color: $kendo-grid-sorting-indicator-text;
     }
 
+    // Grid stack layout
+    .k-grid-stack-header {
+        @include fill( $color: $kendo-grid-stack-header-color );
+    }
+
 }
 
 
