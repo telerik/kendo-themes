@@ -288,7 +288,7 @@ export default () =>(
                                         </GanttTask>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-selected" style={{ height: "40px" }}>
+                                <TableRow className="k-master-row" selected style={{ height: "40px" }}>
                                     <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />

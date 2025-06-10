@@ -2,7 +2,7 @@ import { Icon } from '../../icon';
 import { GridNormal, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridFooter, GridFooterTable } from '../../grid';
 import { TableRow, TableThead, TableTbody, TableTfoot, TableTd } from '../../table';
 
-export default () =>(
+export default () => (
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <span>Interaction States</span>
@@ -65,10 +65,10 @@ export default () =>(
                                             <TableTd>10 boxes x 20 bags</TableTd>
                                         </TableRow>
                                         <TableRow className="k-master-row" alt>
-                                            <TableTd className="k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}>
+                                            <TableTd className="k-grid-content-sticky" selected style={{ left: '0px', right: "240px" }}>
                                                 <Icon icon="unpin" />
                                             </TableTd>
-                                            <TableTd className="k-selected">2</TableTd>
+                                            <TableTd selected>2</TableTd>
                                             <TableTd>Drag Selection Alt</TableTd>
                                             <TableTd className="k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$19.00</TableTd>
                                             <TableTd className="k-grid-content-sticky" style={{ left: "180px", right: '0px' }}>17</TableTd>
@@ -77,10 +77,10 @@ export default () =>(
                                             <TableTd>24 - 12 oz bottles</TableTd>
                                         </TableRow>
                                         <TableRow className="k-master-row">
-                                            <TableTd className="k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}>
+                                            <TableTd className="k-grid-content-sticky" selected style={{ left: '0px', right: "240px" }}>
                                                 <Icon icon="unpin" />
                                             </TableTd>
-                                            <TableTd className="k-selected">3</TableTd>
+                                            <TableTd selected>3</TableTd>
                                             <TableTd>Drag Selection</TableTd>
                                             <TableTd className="k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$10.00</TableTd>
                                             <TableTd className="k-grid-content-sticky" style={{ left: "180px", right: '0px' }}>13</TableTd>
@@ -88,8 +88,8 @@ export default () =>(
                                             <TableTd>false</TableTd>
                                             <TableTd>12 - 550 ml bottles</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-selected" alt>
-                                            <TableTd className="k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}>
+                                        <TableRow className="k-master-row" selected alt>
+                                            <TableTd className="k-grid-content-sticky" selected style={{ left: '0px', right: "240px" }}>
                                                 <Icon icon="unpin" />
                                             </TableTd>
                                             <TableTd>4</TableTd>
@@ -100,8 +100,8 @@ export default () =>(
                                             <TableTd>false</TableTd>
                                             <TableTd>48 - 6 oz jars</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-selected">
-                                            <TableTd className="k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}>
+                                        <TableRow className="k-master-row" selected>
+                                            <TableTd className="k-grid-content-sticky" selected style={{ left: '0px', right: "240px" }}>
                                                 <Icon icon="unpin" />
                                             </TableTd>
                                             <TableTd>5</TableTd>
@@ -113,10 +113,10 @@ export default () =>(
                                             <TableTd>36 boxes</TableTd>
                                         </TableRow>
                                         <TableRow className="k-master-row k-hover" alt>
-                                            <TableTd className="k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}>
+                                            <TableTd className="k-grid-content-sticky" selected style={{ left: '0px', right: "240px" }}>
                                                 <Icon icon="unpin" />
                                             </TableTd>
-                                            <TableTd className="k-selected">6</TableTd>
+                                            <TableTd selected>6</TableTd>
                                             <TableTd>Drag Selection Alt Hover</TableTd>
                                             <TableTd className="k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$25.00</TableTd>
                                             <TableTd className="k-grid-content-sticky" style={{ left: "180px", right: '0px' }}>120</TableTd>
@@ -125,10 +125,10 @@ export default () =>(
                                             <TableTd>12 - 8 oz jars</TableTd>
                                         </TableRow>
                                         <TableRow className="k-master-row k-hover">
-                                            <TableTd className="k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}>
+                                            <TableTd className="k-grid-content-sticky" selected style={{ left: '0px', right: "240px" }}>
                                                 <Icon icon="unpin" />
                                             </TableTd>
-                                            <TableTd className="k-selected">7</TableTd>
+                                            <TableTd selected>7</TableTd>
                                             <TableTd>Drag Selection Hover</TableTd>
                                             <TableTd className="k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$30.00</TableTd>
                                             <TableTd className="k-grid-content-sticky" style={{ left: "180px", right: '0px' }}>15</TableTd>
