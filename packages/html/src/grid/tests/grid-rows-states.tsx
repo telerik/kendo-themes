@@ -13,9 +13,13 @@ const styles = `
         left: 100px;
         top: 50px;
     }
+
+    #test-area {
+        max-width: 1240px;
+    }
 `;
 
-export default () =>(
+export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
@@ -33,9 +37,11 @@ export default () =>(
                                     <label className="k-checkbox-label"></label>
                                 </TableTh>
                                 <TableTh className="k-header">Base</TableTh>
-                                <TableTh className="k-header k-sorted">Sorted</TableTh>
-                                <TableTh className="k-header">Focus</TableTh>
-                                <TableTh className="k-header">Selected</TableTh>
+                                <TableTh className="k-header k-sorted">Sorted Column</TableTh>
+                                <TableTh className="k-header">Focused Cell</TableTh>
+                                <TableTh className="k-header">Selected Cell</TableTh>
+                                <TableTh className="k-header">Highlighted Cell</TableTh>
+                                <TableTh className="k-header">Selected Highlighted Cell</TableTh>
                             </TableRow>
                         </TableThead>
                         <TableTbody>
@@ -44,107 +50,231 @@ export default () =>(
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
                                 </TableTd>
-                                <TableTd>Normal row</TableTd>
+                                <TableTd>Row</TableTd>
                                 <TableTd>Sorted</TableTd>
-                                <TableTd className="k-focus">Focus</TableTd>
-                                <TableTd className="k-selected">Selected</TableTd>
+                                <TableTd focus>Focused Cell</TableTd>
+                                <TableTd selected>Selected Cell</TableTd>
+                                <TableTd highlighted>Highlighted Cell</TableTd>
+                                <TableTd selected highlighted>Selected + Highlighted Cell</TableTd>
                             </TableRow>
                             <TableRow alt>
                                 <TableTd>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
                                 </TableTd>
-                                <TableTd>Alt row</TableTd>
+                                <TableTd>Alt Row</TableTd>
                                 <TableTd>Sorted</TableTd>
-                                <TableTd className="k-focus">Alt + Focus</TableTd>
-                                <TableTd className="k-selected">Alt + Selected</TableTd>
+                                <TableTd focus>Focused Cell</TableTd>
+                                <TableTd selected>Selected Cell</TableTd>
+                                <TableTd highlighted>Highlighted Cell</TableTd>
+                                <TableTd selected highlighted>Selected + Highlighted Cell</TableTd>
                             </TableRow>
                         </TableTbody>
                         <TableTbody>
-                            <TableRow className="k-hover">
+                            <TableRow hover>
                                 <TableTd>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
                                 </TableTd>
+                                <TableTd>Hovered Row</TableTd>
                                 <TableTd>Sorted</TableTd>
-                                <TableTd>Hovered row</TableTd>
-                                <TableTd className="k-focus">Hover + Focus</TableTd>
-                                <TableTd className="k-selected">Hover + Selected</TableTd>
+                                <TableTd focus>Focused Cell</TableTd>
+                                <TableTd selected>Selected Cell</TableTd>
+                                <TableTd highlighted>Highlighted Cell</TableTd>
+                                <TableTd selected highlighted>Selected + Highlighted Cell</TableTd>
                             </TableRow>
-                            <TableRow className="k-hover" alt>
+                            <TableRow hover alt>
                                 <TableTd>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
                                 </TableTd>
-                                <TableTd>Alt hovered row</TableTd>
+                                <TableTd>Alt + Hovered Row</TableTd>
                                 <TableTd>Sorted</TableTd>
-                                <TableTd className="k-focus">Alt + Hover + Focus</TableTd>
-                                <TableTd className="k-selected">Alt + Hover + Selected</TableTd>
+                                <TableTd focus>Focused Cell</TableTd>
+                                <TableTd selected>Selected Cell</TableTd>
+                                <TableTd highlighted>Highlighted Cell</TableTd>
+                                <TableTd selected highlighted>Selected + Highlighted Cell</TableTd>
                             </TableRow>
                         </TableTbody>
                         <TableTbody>
-                            <TableRow className="k-focus">
+                            <TableRow focus>
                                 <TableTd>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
                                 </TableTd>
-                                <TableTd>Focused row</TableTd>
+                                <TableTd>Focused Row</TableTd>
                                 <TableTd>Sorted</TableTd>
                                 <TableTd>N/A</TableTd>
-                                <TableTd className="k-selected">Focus + Selected</TableTd>
+                                <TableTd selected>Selected Cell</TableTd>
+                                <TableTd highlighted>Highlighted Cell</TableTd>
+                                <TableTd selected highlighted>Selected + Highlighted Cell</TableTd>
                             </TableRow>
-                            <TableRow className="k-focus" alt>
+                            <TableRow focus alt>
                                 <TableTd>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
                                 </TableTd>
-                                <TableTd>Alt focused row</TableTd>
+                                <TableTd>Alt + Focused Row</TableTd>
                                 <TableTd>Sorted</TableTd>
                                 <TableTd>N/A</TableTd>
-                                <TableTd className="k-selected">Alt + Focus + Selected</TableTd>
+                                <TableTd selected>Selected Cell</TableTd>
+                                <TableTd highlighted>Highlighted Cell</TableTd>
+                                <TableTd selected highlighted>Selected + Highlighted Cell</TableTd>
                             </TableRow>
                         </TableTbody>
                         <TableTbody>
-                            <TableRow className="k-selected">
+                            <TableRow selected>
                                 <TableTd>
                                     <Checkbox checked />
                                     <label className="k-checkbox-label"></label>
                                 </TableTd>
-                                <TableTd>Selected row</TableTd>
+                                <TableTd>Selected Row</TableTd>
                                 <TableTd>Sorted</TableTd>
-                                <TableTd className="k-focus">Selected + Focus</TableTd>
+                                <TableTd focus>Focused Cell</TableTd>
+                                <TableTd>N/A</TableTd>
+                                <TableTd highlighted>Highlighted Cell</TableTd>
+                                <TableTd selected highlighted>Selected + Highlighted Cell</TableTd>
+                            </TableRow>
+                            <TableRow selected alt>
+                                <TableTd>
+                                    <Checkbox checked />
+                                    <label className="k-checkbox-label"></label>
+                                </TableTd>
+                                <TableTd>Alt + Selected Row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd focus>Focused Cell</TableTd>
+                                <TableTd>N/A</TableTd>
+                                <TableTd highlighted>Highlighted Cell</TableTd>
+                                <TableTd selected highlighted>Selected + Highlighted Cell</TableTd>
+                            </TableRow>
+                        </TableTbody>
+                        <TableTbody>
+                            <TableRow hover selected>
+                                <TableTd>
+                                    <Checkbox checked />
+                                    <label className="k-checkbox-label"></label>
+                                </TableTd>
+                                <TableTd>Hover + Selected Row Row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd focus>Focused Cell</TableTd>
+                                <TableTd>N/A</TableTd>
+                                <TableTd highlighted>Highlighted Cell</TableTd>
+                                <TableTd selected highlighted>Selected + Highlighted Cell</TableTd>
+                            </TableRow>
+                            <TableRow hover selected alt>
+                                <TableTd>
+                                    <Checkbox checked />
+                                    <label className="k-checkbox-label"></label>
+                                </TableTd>
+                                <TableTd>Alt + Hover + Selected Row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd focus>Focused Cell</TableTd>
+                                <TableTd>N/A</TableTd>
+                                <TableTd highlighted>Highlighted Cell</TableTd>
+                                <TableTd selected highlighted>Selected + Highlighted Cell</TableTd>
+                            </TableRow>
+                        </TableTbody>
+                        <TableTbody>
+                            <TableRow highlighted>
+                                <TableTd>
+                                    <Checkbox />
+                                    <label className="k-checkbox-label"></label>
+                                </TableTd>
+                                <TableTd>Highlighted Row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd focus>Focused Cell</TableTd>
+                                <TableTd selected>Selected Cell</TableTd>
+                                <TableTd>N/A</TableTd>
+                                <TableTd selected highlighted>Selected + Highlighted Cell</TableTd>
+                            </TableRow>
+                            <TableRow highlighted alt>
+                                <TableTd>
+                                    <Checkbox />
+                                    <label className="k-checkbox-label"></label>
+                                </TableTd>
+                                <TableTd>Alt + Highlighted Row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd focus>Focused Cell</TableTd>
+                                <TableTd selected>Selected Cell</TableTd>
+                                <TableTd>N/A</TableTd>
+                                <TableTd selected highlighted>Selected + Highlighted Cell</TableTd>
+                            </TableRow>
+                        </TableTbody>
+                        <TableTbody>
+                            <TableRow hover highlighted>
+                                <TableTd>
+                                    <Checkbox />
+                                    <label className="k-checkbox-label"></label>
+                                </TableTd>
+                                <TableTd>Hover + Highlighted Row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd focus>Focused Cell</TableTd>
+                                <TableTd selected>Selected Cell</TableTd>
+                                <TableTd>N/A</TableTd>
+                                <TableTd selected highlighted>Selected + Highlighted Cell</TableTd>
+                            </TableRow>
+                            <TableRow hover highlighted alt>
+                                <TableTd>
+                                    <Checkbox />
+                                    <label className="k-checkbox-label"></label>
+                                </TableTd>
+                                <TableTd>Alt + Hover + Highlighted Row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd focus>Focused Cell</TableTd>
+                                <TableTd selected>Selected Cell</TableTd>
+                                <TableTd>N/A</TableTd>
+                                <TableTd selected highlighted>Selected + Highlighted Cell</TableTd>
+                            </TableRow>
+                        </TableTbody>
+                        <TableTbody>
+                            <TableRow selected highlighted>
+                                <TableTd>
+                                    <Checkbox checked />
+                                    <label className="k-checkbox-label"></label>
+                                </TableTd>
+                                <TableTd>Highlighted + Selected Row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd focus>Focused Cell</TableTd>
+                                <TableTd selected>Selected Cell</TableTd>
+                                <TableTd highlighted>Highlighted Cell</TableTd>
                                 <TableTd>N/A</TableTd>
                             </TableRow>
-                            <TableRow className="k-selected" alt>
+                            <TableRow selected highlighted alt>
                                 <TableTd>
                                     <Checkbox checked />
                                     <label className="k-checkbox-label"></label>
                                 </TableTd>
-                                <TableTd>Alt selected row</TableTd>
+                                <TableTd>Alt + Highlighted + Selected Row</TableTd>
                                 <TableTd>Sorted</TableTd>
-                                <TableTd className="k-focus">Alt + Selected + Focus</TableTd>
+                                <TableTd focus>Focused Cell</TableTd>
+                                <TableTd selected>Selected Cell</TableTd>
+                                <TableTd highlighted>Highlighted Cell</TableTd>
                                 <TableTd>N/A</TableTd>
                             </TableRow>
                         </TableTbody>
                         <TableTbody>
-                            <TableRow className="k-hover k-selected">
+                            <TableRow hover selected highlighted>
                                 <TableTd>
                                     <Checkbox checked />
                                     <label className="k-checkbox-label"></label>
                                 </TableTd>
-                                <TableTd>Hover + Selected row</TableTd>
+                                <TableTd>Hover + Highlighted + Selected Row</TableTd>
                                 <TableTd>Sorted</TableTd>
-                                <TableTd className="k-focus">Hover + Selected + Focus</TableTd>
+                                <TableTd focus>Focused Cell</TableTd>
+                                <TableTd selected>Selected Cell</TableTd>
+                                <TableTd highlighted>Highlighted Cell</TableTd>
                                 <TableTd>N/A</TableTd>
                             </TableRow>
-                            <TableRow className="k-hover k-selected" alt>
+                            <TableRow hover selected highlighted alt>
                                 <TableTd>
                                     <Checkbox checked />
                                     <label className="k-checkbox-label"></label>
                                 </TableTd>
-                                <TableTd>Alt + Hover selected row</TableTd>
+                                <TableTd>Alt + Hover + Highlighted + Selected Row</TableTd>
                                 <TableTd>Sorted</TableTd>
-                                <TableTd className="k-focus">Alt + Hover + Selected + Focus</TableTd>
+                                <TableTd focus>Focused Cell</TableTd>
+                                <TableTd selected>Selected Cell</TableTd>
+                                <TableTd highlighted>Highlighted Cell</TableTd>
                                 <TableTd>N/A</TableTd>
                             </TableRow>
                         </TableTbody>
