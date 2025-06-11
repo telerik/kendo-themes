@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        section {
+            padding: 20px;
+            border: 1px dashed gray;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid">
+        <span>Responsive Forms</span>
+        <section>
+            <form class="k-form k-form-md">
+                <div class="k-form-layout k-d-grid k-grid-cols-sm-1 k-grid-cols-md-2 k-grid-cols-lg-3 k-gap-x-2 k-gap-x-lg-4 k-gap-y-3 k-gap-y-lg-6">
+                    <fieldset class="k-form-fieldset k-col-span-sm-2 k-col-span-lg-1">
+                        <legend class="k-form-legend">Personal Information</legend>
+                        <div class="k-form-layout k-d-grid k-grid-cols-1 k-gap-y-3">
+                            <div class="k-form-field">
+                                <label class="k-label k-form-label">First Name</label>
+                                <div class="k-form-field-wrap">
+                                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                        <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="John">
+                                        <span class="k-clear-value">
+                                            <span class="k-icon k-svg-icon k-svg-i-x">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-form-field">
+                                <label class="k-label k-form-label">Last Name</label>
+                                <div class="k-form-field-wrap">
+                                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                        <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Doe">
+                                        <span class="k-clear-value">
+                                            <span class="k-icon k-svg-icon k-svg-i-x">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-form-field">
+                                <label class="k-label k-form-label">Email</label>
+                                <div class="k-form-field-wrap">
+                                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                        <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="john.doe@email.com">
+                                        <span class="k-clear-value">
+                                            <span class="k-icon k-svg-icon k-svg-i-x">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="k-form-fieldset">
+                        <legend class="k-form-legend">Shipping Address</legend>
+                        <div class="k-form-layout k-d-grid k-grid-cols-sm-1 k-grid-cols-md-2 k-gap-x-4 k-gap-y-3">
+                            <div class="k-form-field k-col-span-2 k-col-span-sm-1">
+                                <label class="k-label k-form-label">Country</label>
+                                <div class="k-form-field-wrap">
+                                    <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                        <span class="k-input-inner">
+                                            <span class="k-input-value-text">France</span>
+                                        </span>
+                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M256 352 128 160h256z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-form-field k-col-span-2 k-col-span-sm-1">
+                                <label class="k-label k-form-label">City</label>
+                                <div class="k-form-field-wrap">
+                                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                        <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-form-field k-col-span-2">
+                                <label class="k-label k-form-label">Address Line</label>
+                                <div class="k-form-field-wrap">
+                                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                        <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="k-form-fieldset">
+                        <legend class="k-form-legend">Billing Address</legend>
+                        <div class="k-form-layout k-d-grid k-grid-cols-1 k-grid-cols-md-2 k-gap-x-4 k-gap-y-3">
+                            <div class="k-form-field k-col-span-2 k-col-span-sm-1">
+                                <label class="k-label k-form-label">Country</label>
+                                <div class="k-form-field-wrap">
+                                    <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                        <span class="k-input-inner">
+                                            <span class="k-input-value-text">France</span>
+                                        </span>
+                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M256 352 128 160h256z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-form-field k-col-span-2 k-col-span-sm-1">
+                                <label class="k-label k-form-label">City</label>
+                                <div class="k-form-field-wrap">
+                                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                        <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-form-field k-col-span-2">
+                                <label class="k-label k-form-label">Address Line</label>
+                                <div class="k-form-field-wrap">
+                                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                        <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="k-form-buttons">
+                    <button class="k-form-submit k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                        <span class="k-button-text">Submit</span>
+                    </button>
+                    <button class="k-form-clear k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Clear</span>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
