@@ -1,51 +1,116 @@
-import { ChatMessage, ChatMessageGroup, ChatNormal, ChatWithOptions, ChatWithToolbar } from '..';
+import { ChatHeader, ChatMessage, ChatNormal, ChatTimestamp, ChatMessageGroup } from '..';
 
 
 const styles = `
     .k-chat {
-        height: 250px;
-    }
-
-    /* needed for test */
-    .k-chat .k-chat-bubble {
-        white-space: normal;
+        min-height: 370px;
+        min-width: auto;
     }
 `;
 
 export default () =>(
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-2">
+        <div id="test-area" className="k-d-grid k-grid-cols-3">
             <span>Chat normal</span>
-            <span>Chat with option button</span>
+            <span>Link in sender message</span>
+            <span>Link in receiver message</span>
             <section>
                 <ChatNormal dir="rtl">
-                    <div className="k-timestamp">Day, Month 7, 2023</div>
                     <ChatMessageGroup>
-                        <ChatMessage className="k-only" />
+                        <ChatMessage />
+                    </ChatMessageGroup>
+                </ChatNormal>
+            </section>
+            <section>
+                <ChatNormal dir="rtl">
+                    <ChatMessageGroup type="sender" avatar={null}>
+                        <ChatMessage text={
+                            <>
+                                Here you go, mate<br />
+                                <a href="https://www.myportfolio.com/alex_barton" target="_blank" rel="noopener noreferrer">
+                                    www.myportfolio.com/alex_barton
+                                </a>
+                                <br />
+                                Let me know if you have any problem opening it.
+                            </>
+                        } />
+                    </ChatMessageGroup>
+                </ChatNormal>
+            </section>
+            <section>
+                <ChatNormal dir="rtl">
+                    <ChatMessageGroup avatar={null}>
+                        <ChatMessage text={
+                            <>
+                                Here you go, mate<br />
+                                <a href="https://www.myportfolio.com/alex_barton" target="_blank" rel="noopener noreferrer">
+                                    www.myportfolio.com/alex_barton
+                                </a>
+                                <br />
+                                Let me know if you have any problem opening it.
+                            </>
+                        } />
                     </ChatMessageGroup>
                 </ChatNormal>
             </section>
 
+            <span>Chat with Header</span>
+            <span>Chat with Time stamp</span>
+            <span>Chat with Header and Time stamp</span>
             <section>
-                <ChatWithOptions dir="rtl">
-                    <div className="k-timestamp">Day, Month 7, 2023</div>
+                <ChatNormal dir="rtl" header={
+                    <ChatHeader>
+                        Alex
+                    </ChatHeader>
+                }>
                     <ChatMessageGroup>
-                        <ChatMessage className="k-only" />
+                        <ChatMessage />
                     </ChatMessageGroup>
-                </ChatWithOptions>
+                </ChatNormal>
+            </section>
+            <section>
+                <ChatNormal dir="rtl">
+                    <ChatTimestamp>Day, Month 7, 2023</ChatTimestamp>
+                    <ChatMessageGroup>
+                        <ChatMessage />
+                    </ChatMessageGroup>
+                    <ChatTimestamp>Day, Month 7, 2023</ChatTimestamp>
+                    <ChatMessageGroup type="sender">
+                        <ChatMessage />
+                    </ChatMessageGroup>
+                </ChatNormal>
+            </section>
+            <section>
+                <ChatNormal dir="rtl" header={
+                    <ChatHeader>
+                        Alex
+                    </ChatHeader>
+                }>
+                    <ChatTimestamp>Day, Month 7, 2023</ChatTimestamp>
+                    <ChatMessageGroup>
+                        <ChatMessage />
+                    </ChatMessageGroup>
+                    <ChatMessageGroup type="sender">
+                        <ChatMessage />
+                    </ChatMessageGroup>
+                </ChatNormal>
             </section>
 
-            <span>Chat with toolbar</span>
+            <span>Chat with typing indicator</span>
+            <span></span>
             <span></span>
 
             <section>
-                <ChatWithToolbar dir="rtl">
-                    <div className="k-timestamp">Day, Month 7, 2023</div>
-                    <ChatMessageGroup>
-                        <ChatMessage className="k-only" />
+                <ChatNormal dir="rtl">
+                    <ChatTimestamp>Day, Month 7, 2023</ChatTimestamp>
+                    <ChatMessageGroup type="sender">
+                        <ChatMessage />
                     </ChatMessageGroup>
-                </ChatWithToolbar>
+                    <ChatMessageGroup>
+                        <ChatMessage typing />
+                    </ChatMessageGroup>
+                </ChatNormal>
             </section>
 
         </div>
