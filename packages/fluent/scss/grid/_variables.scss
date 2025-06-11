@@ -443,16 +443,6 @@ $kendo-grid-sticky-footer-bg: $kendo-grid-header-bg !default;
 /// @group grid
 $kendo-grid-sticky-footer-hover-bg: $kendo-grid-hover-bg !default;
 
-/// The background color of the selected Grid sticky cells.
-/// @group grid
-$kendo-grid-sticky-selected-bg: $kendo-grid-selected-bg !default;
-/// The background color of the selected alt Grid sticky cells.
-/// @group grid
-$kendo-grid-sticky-selected-alt-bg: $kendo-grid-sticky-selected-bg !default;
-/// The background color of the hovered selected Grid sticky cells.
-/// @group grid
-$kendo-grid-sticky-selected-hover-bg: $kendo-grid-sticky-selected-bg !default;
-
 /// The horizontal padding of the Grid filter menu container.
 /// @group grid
 $kendo-filter-menu-container-padding-y: k-spacing(3) !default;

@@ -132,13 +132,13 @@ $kendo-grid-command-cell-button-spacing: null !default;
 // be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
 $kendo-grid-command-cell-padding-y: null !default;
 
-// Must be a solid color
+// Must be solid colors
 $kendo-grid-sticky-bg: null !default;
+$kendo-grid-sticky-alt-bg: null !default;
+$kendo-grid-sticky-hover-bg: null !default;
+
 $kendo-grid-sticky-text: null !default;
 $kendo-grid-sticky-border: null !default;
-
-// Must be a solid color
-$kendo-grid-sticky-alt-bg: null !default;
 
 $kendo-grid-sticky-header-bg: null !default;
 $kendo-grid-sticky-header-text: null !default;
@@ -146,13 +146,6 @@ $kendo-grid-sticky-header-border: null !default;
 
 $kendo-grid-sticky-footer-bg: null !default;
 $kendo-grid-sticky-footer-hover-bg: null !default;
-
-$kendo-grid-sticky-selected-bg: null !default;
-$kendo-grid-sticky-selected-alt-bg: null !default;
-
-// Must be a solid color
-$kendo-grid-sticky-hover-bg: null !default;
-$kendo-grid-sticky-selected-hover-bg: null !default;
 
 $kendo-grid-column-menu-width: null !default;
 $kendo-grid-column-menu-max-width: null !default;
