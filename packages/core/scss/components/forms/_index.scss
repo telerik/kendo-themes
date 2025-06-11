@@ -21,5 +21,14 @@
         @include kendo-utils--flex-grid--gap();
         @include kendo-utils--flex-grid--grid-template-columns();
         @include kendo-utils--flex-grid--grid-column-start-end();
+
+        // Responsive utils
+        @each $key, $val in $kendo-breakpoints {
+            @include kendo-breakpoint-up($key) {
+                @include kendo-utils--flex-grid--gap--responsive($key);
+                @include kendo-utils--flex-grid--grid-template-columns--responsive($key);
+                @include kendo-utils--flex-grid--grid-column-start-end--responsive($key);
+            }
+        }
     }
 }
