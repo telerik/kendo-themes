@@ -176,6 +176,23 @@ $kendo-table-selected-text: $kendo-table-text !default;
 /// @group table
 $kendo-table-selected-border: $kendo-table-border !default;
 
+/// Background color of highlighted rows in table.
+/// @group table
+$kendo-table-highlighted-bg: color-mix(in srgb, k-color(warning) 13%, transparent) !default;
+/// Text color of highlighted rows in table.
+/// @group table
+$kendo-table-highlighted-text: $kendo-table-text !default;
+/// The font weight of highlighted rows in table.
+/// @group table
+$kendo-table-highlighted-font-weight: var( --kendo-font-weight-semibold, bold ) !default;
+/// Border color of highlighted rows in table.
+/// @group table
+$kendo-table-highlighted-border: $kendo-table-border !default;
+
+/// Background color of selected highlighted rows in table.
+/// @group table
+$kendo-table-selected-highlighted-bg: color-mix(in srgb, color-mix(in srgb, k-color(primary), k-color(warning)) 23%, transparent) !default;
+
 /// Hover background color of selected rows in table.
 /// @group table
 $kendo-table-selected-hover-bg: color-mix(in srgb, k-color(primary) 26%, transparent) !default;

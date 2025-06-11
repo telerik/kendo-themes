@@ -100,6 +100,24 @@
             border-block-color: var( --kendo-grid-selected-border, #{$kendo-grid-selected-border} );
         }
 
+        // Highlighted state
+        td.k-highlighted,
+        .k-table-row.k-highlighted > td,
+        .k-table-td.k-highlighted,
+        .k-table-row.k-highlighted > .k-table-td {
+            @include  fill( $bg: var( --kendo-grid-highlighted-bg, #{$kendo-grid-highlighted-bg} ));
+        }
+
+        // Highlighted Selected state
+        td.k-highlighted.k-selected,
+        .k-table-row.k-highlighted.k-selected > td,
+        .k-table-td.k-highlighted.k-selected,
+        .k-table-row.k-highlighted.k-selected > .k-table-td,
+        .k-table-row.k-highlighted > .k-table-td.k-selected,
+        .k-table-row.k-selected > .k-table-td.k-highlighted {
+            @include fill( $bg: var( --kendo-grid-selected-highlighted-bg, #{$kendo-grid-selected-highlighted-bg} ));
+        }
+
         // Focused state
         td:focus,
         td.k-focus,

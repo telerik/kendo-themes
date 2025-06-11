@@ -42,8 +42,25 @@
         .k-table-td.k-selected,
         .k-table-row.k-selected > td,
         .k-table-row.k-selected > .k-table-td {
-            color: $kendo-grid-selected-text;
-            background-color: $kendo-grid-selected-bg;
+            @include fill( $kendo-grid-selected-text, $kendo-grid-selected-bg );
+        }
+
+        // Highlighted state
+        td.k-highlighted,
+        .k-table-row.k-highlighted > td,
+        .k-table-td.k-highlighted,
+        .k-table-row.k-highlighted > .k-table-td {
+            @include fill( $bg: $kendo-grid-highlighted-bg );
+        }
+
+        // Highlighted Selected state
+        td.k-highlighted.k-selected,
+        .k-table-row.k-highlighted.k-selected > td,
+        .k-table-td.k-highlighted.k-selected,
+        .k-table-row.k-highlighted.k-selected > .k-table-td,
+        .k-table-row.k-highlighted > .k-table-td.k-selected,
+        .k-table-row.k-selected > .k-table-td.k-highlighted {
+            @include fill( $bg: $kendo-grid-selected-highlighted-bg );
         }
 
         // Focused state

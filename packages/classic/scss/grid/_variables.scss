@@ -209,6 +209,23 @@ $kendo-grid-selected-text: $kendo-table-selected-text !default;
 /// @group grid
 $kendo-grid-selected-border: $kendo-table-selected-border !default;
 
+/// The background color of highlighted Grid rows.
+/// @group grid
+$kendo-grid-highlighted-bg: $kendo-table-highlighted-bg !default;
+/// The text color of highlighted Grid rows.
+/// @group grid
+$kendo-grid-highlighted-text: $kendo-table-highlighted-text !default;
+/// The border color of highlighted Grid rows.
+/// @group grid
+$kendo-grid-highlighted-border: $kendo-table-highlighted-border !default;
+/// The font weight of highlighted Grid rows.
+/// @group grid
+$kendo-grid-highlighted-font-weight: $kendo-table-highlighted-font-weight !default;
+
+/// The background color of selected highlighted Grid rows.
+/// @group grid
+$kendo-grid-selected-highlighted-bg: $kendo-table-selected-highlighted-bg !default;
+
 /// The background color of the Grid selection aggregates container.
 /// @group grid
 $kendo-grid-selection-aggregates-bg: $kendo-grid-header-bg !default;
@@ -406,6 +423,11 @@ $kendo-grid-row-resizer-height: k-spacing(0.5) !default;
     $kendo-grid-selected-bg: $kendo-grid-selected-bg,
     $kendo-grid-selected-text: $kendo-grid-selected-text,
     $kendo-grid-selected-border: $kendo-grid-selected-border,
+    $kendo-grid-highlighted-bg: $kendo-grid-highlighted-bg,
+    $kendo-grid-highlighted-text: $kendo-grid-highlighted-text,
+    $kendo-grid-highlighted-border: $kendo-grid-highlighted-border,
+    $kendo-grid-highlighted-font-weight: $kendo-grid-highlighted-font-weight,
+    $kendo-grid-selected-highlighted-bg: $kendo-grid-selected-highlighted-bg,
     $kendo-grid-selection-aggregates-bg: $kendo-grid-selection-aggregates-bg,
     $kendo-grid-selection-aggregates-text: $kendo-grid-selection-aggregates-text,
     $kendo-grid-selection-aggregates-border: $kendo-grid-selection-aggregates-border,
