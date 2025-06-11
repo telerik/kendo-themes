@@ -12,13 +12,14 @@ const options = {};
 const defaultOptions = {
     author: "Bruv",
     avatar: "/packages/html/assets/avatar.jpg",
-    alt: false
+    type: "receiver"
 };
 
 export type KendoChatMessageGroupProps = {
-    alt?: boolean;
-    author?: string;
+    type?: "receiver" | "sender";
+    author?: null | string;
     avatar?: null | string;
+    fullWidth?: boolean;
 };
 
 export type KendoChatMessageGroupState = { [K in (typeof states)[number]]?: boolean };
@@ -29,10 +30,11 @@ export const ChatMessageGroup = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        alt = defaultOptions.alt,
+        type = defaultOptions.type,
         author = defaultOptions.author,
         avatar = defaultOptions.avatar,
         selected,
+        fullWidth,
         ...other
     } = props;
 
@@ -44,13 +46,16 @@ export const ChatMessageGroup = (
                 props.className,
                 stateClassNames( CHATMESSAGEGROUP_CLASSNAME, { selected } ),
                 {
-                    'k-alt': alt,
-                    'k-no-avatar': !avatar
+                    [`${CHATMESSAGEGROUP_CLASSNAME}-${type}`]: type,
+                    'k-no-avatar': !avatar,
+                    [`${CHATMESSAGEGROUP_CLASSNAME}-full-width`]: fullWidth
                 }
             )}>
-            { author && <p className="k-author">{author}</p> }
             { avatar && <Avatar type="image"><img src={avatar} /></Avatar> }
-            {props.children}
+            <div className="k-message-group-content">
+                { author && <span className="k-message-author">{author}</span> }
+                {props.children}
+            </div>
         </div>
     );
 };

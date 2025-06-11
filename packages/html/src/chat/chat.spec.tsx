@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
-import { Button } from '../button';
-import { Textbox } from '../textbox';
+import { Textarea } from '../textarea';
+import { IconButton } from '../button';
+import { ChatSendButton } from './';
 
 const CHAT_CLASSNAME = 'k-chat';
 
@@ -8,28 +9,41 @@ const states = [];
 
 const options = {};
 
-const defaultOptions = {
-    showToolbar: true,
-    showMessageBox: true,
-    showMoreButton: true
-};
-
 export type KendoChatProps = {
+    header?: React.JSX.Element;
     dir?: "ltr" | "rtl",
-    showToolbar?: boolean,
-    showMessageBox?: boolean,
-    showMoreButton?: boolean,
+    suggestedActions?: React.JSX.Element,
+    files?: React.JSX.Element,
+    pinned?: string | React.JSX.Element,
+    replied?: string | React.JSX.Element,
+    generating?: boolean;
+    tools?: React.JSX.Element | React.JSX.Element[];
+    value?: string;
 }
+
+const defaultTools = <>
+    <IconButton key="microphone-outline" icon="microphone-outline" fillMode="clear" />
+    <IconButton key="paperclip" icon="paperclip" fillMode="clear" />
+</>;
+
+const defaultOptions = {
+    tools: defaultTools,
+};
 
 export const Chat = (
     props: KendoChatProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        header,
         dir,
-        showToolbar,
-        showMessageBox = defaultOptions.showMessageBox,
-        showMoreButton,
+        suggestedActions,
+        files,
+        pinned,
+        replied,
+        generating,
+        tools = defaultOptions.tools,
+        value,
         ...other
     } = props;
 
@@ -40,40 +54,40 @@ export const Chat = (
                 CHAT_CLASSNAME,
                 props.className
             )} dir={dir}>
+            {header}
+            {pinned}
             <div className="k-message-list k-avatars">
                 <div className="k-message-list-content">
                     {props.children}
                 </div>
             </div>
-            { showMessageBox &&
-                <Textbox
+            <div className="k-message-box-wrapper">
+                {suggestedActions}
+                <Textarea
                     className="k-message-box"
-                    placeholder="Type a message..."
+                    placeholder="Type a message"
+                    value={value}
+                    prefixSeparator={false}
+                    suffixSeparator={false}
+                    rows={1}
+                    resize="none"
+                    prefix={
+                        files || replied ?
+                            <>
+                                {replied}
+                                {files}
+                            </>
+                            : undefined
+                    }
                     suffix={
                         <>
-                            { showMoreButton && <Button fillMode="flat" icon="more-horizontal"></Button> }
-                            <Button fillMode="flat" icon="paper-plane" className="k-chat-send"></Button>
+                            {tools}
+                            <span className="k-spacer" />
+                            <ChatSendButton generating={generating} disabled={!value && !generating} />
                         </>
                     }
                 />
-            }
-            { showToolbar &&
-                <div className="k-chat-toolbar k-toolbar">
-                    <Button className={classNames("k-scroll-button", "k-scroll-button-left", dir === 'rtl' ? "" : "k-hidden")} icon="chevron-left" />
-                    <div className="k-toolbar-group k-button-list">
-                        <Button icon="arrow-rotate-cw"></Button>
-                        <Button icon="gear"></Button>
-                        <Button icon="wrench"></Button>
-                        <Button icon="plus"></Button>
-                        <Button icon="search"></Button>
-                        <Button icon="star"></Button>
-                        <Button icon="bell"></Button>
-                        <Button icon="question-circle"></Button>
-                        <Button icon="trash"></Button>
-                    </div>
-                    <Button className={classNames("k-scroll-button", "k-scroll-button-right", dir === 'rtl' && "k-hidden")} icon="chevron-right" />
-                </div>
-            }
+            </div>
         </div>
 
     );
