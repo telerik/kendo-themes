@@ -436,6 +436,56 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-table-highlighted-bg</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(warning) 13%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-warning, #ffc80a) 13%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of highlighted rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-highlighted-text</td>
+    <td>String</td>
+    <td><code>$kendo-table-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of highlighted rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-highlighted-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-semibold, bold )</code></td>
+    <td><code>var(--kendo-font-weight-semibold, bold)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of highlighted rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-highlighted-border</td>
+    <td>String</td>
+    <td><code>$kendo-table-border</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of highlighted rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-selected-highlighted-bg</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, color-mix(in srgb, k-color(primary), k-color(warning)) 23%, transparent)</code></td>
+    <td><code>color-mix(in srgb, color-mix(in srgb, var(--kendo-color-primary, #0078d4), var(--kendo-color-warning, #ffc80a)) 23%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected highlighted rows in table.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-table-selected-hover-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(primary) 26%, transparent)</code></td>
