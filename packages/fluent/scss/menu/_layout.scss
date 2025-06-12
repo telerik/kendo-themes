@@ -167,8 +167,8 @@
 
     // Sub menu
     .k-menu-group {
-        font-size: var( --INTERNAL--kendo-group-font-size, inherit );
-        line-height: var( --INTERNAL--kendo-group-line-height, normal );
+        font-size: var( --kendo-group-font-size, inherit );
+        line-height: var( --kendo-group-line-height, normal );
         margin: 0;
         padding: 0;
         list-style: none;
@@ -178,14 +178,14 @@
         position: absolute;
 
         .k-menu-link {
-            padding-inline-start: var( --INTERNAL--kendo-menu-popup-item-padding-x );
-            padding-inline-end: var( --INTERNAL--kendo-menu-popup-item-padding-end );
-            padding-block: var( --INTERNAL--kendo-menu-popup-item-padding-y );
+            padding-inline-start: var( --kendo-menu-popup-item-padding-x );
+            padding-inline-end: var( --kendo-menu-popup-item-padding-end );
+            padding-block: var( --kendo-menu-popup-item-padding-y );
         }
 
         .k-menu-expand-arrow {
-            margin-inline-start: var( --INTERNAL--kendo-menu-popup-item-icon-margin-start );
-            margin-inline-end: var( --INTERNAL--kendo-menu-popup-item-icon-margin-end );
+            margin-inline-start: var( --kendo-menu-popup-item-icon-margin-start );
+            margin-inline-end: var( --kendo-menu-popup-item-icon-margin-end );
         }
 
         .k-separator {
@@ -236,18 +236,18 @@
         $_arrow-margin-inline-end: map.get( $size-pops, arrow-margin-inline-end );
 
         .k-menu-group-#{$size} {
-            --INTERNAL--kendo-group-font-size: var( --kendo-menu-popup-font-size-#{$size}, #{$_group-font-size} );
-            --INTERNAL--kendo-group-line-height: var( --kendo-menu-popup-line-height-#{$size}, #{$_group-line-height} );
+            --kendo-group-font-size: var( --kendo-menu-popup-font-size-#{$size}, #{$_group-font-size} );
+            --kendo-group-line-height: var( --kendo-menu-popup-line-height-#{$size}, #{$_group-line-height} );
 
             .k-menu-link {
-                --INTERNAL--kendo-menu-popup-item-padding-x: var( --kendo-menu-popup-item-padding-x-#{$size}, #{$_link-padding-x} );
-                --INTERNAL--kendo-menu-popup-item-padding-y: var( --kendo-menu-popup-item-padding-y-#{$size}, #{$_link-padding-y} );
-                --INTERNAL--kendo-menu-popup-item-padding-end: var( --kendo-menu-popup-item-padding-end-#{$size}, #{$_link-padding-inline-end} );
+                --kendo-menu-popup-item-padding-x: var( --kendo-menu-popup-item-padding-x-#{$size}, #{$_link-padding-x} );
+                --kendo-menu-popup-item-padding-y: var( --kendo-menu-popup-item-padding-y-#{$size}, #{$_link-padding-y} );
+                --kendo-menu-popup-item-padding-end: var( --kendo-menu-popup-item-padding-end-#{$size}, #{$_link-padding-inline-end} );
             }
 
             .k-menu-expand-arrow {
-                --INTERNAL--kendo-menu-popup-item-icon-margin-start: var( --kendo-menu-popup-item-icon-margin-start-#{$size}, #{$_arrow-margin-inline-start} );
-                --INTERNAL--kendo-menu-popup-item-icon-margin-end: var( --kendo-menu-popup-item-icon-margin-end-#{$size}, #{$_arrow-margin-inline-end} );
+                --kendo-menu-popup-item-icon-margin-start: var( --kendo-menu-popup-item-icon-margin-start-#{$size}, #{$_arrow-margin-inline-start} );
+                --kendo-menu-popup-item-icon-margin-end: var( --kendo-menu-popup-item-icon-margin-end-#{$size}, #{$_arrow-margin-inline-end} );
             }
 
         }

@@ -6,16 +6,12 @@
     .k-tooltip {
         @include box-shadow( var( --kendo-tooltip-shadow, #{$kendo-tooltip-shadow} ) );
 
-        --INTERNAL--kendo-tooltip-text: var( --kendo-tooltip-text, #{$kendo-tooltip-text} );
-        --INTERNAL--kendo-tooltip-bg: var( --kendo-tooltip-bg, #{$kendo-tooltip-bg} );
-        --INTERNAL--kendo-tooltip-border: var( --kendo-tooltip-border, #{$kendo-tooltip-border} );
-
-            color: var( --INTERNAL--kendo-tooltip-text, initial );
-            background-color: var( --INTERNAL--kendo-tooltip-bg, initial );
-            border-color: var( --INTERNAL--kendo-tooltip-border, initial );
+        color: var( --kendo-tooltip-text, #{$kendo-tooltip-text} );
+        background-color: var( --kendo-tooltip-bg, #{$kendo-tooltip-bg} );
+        border-color: var( --kendo-tooltip-border, #{$kendo-tooltip-border} );
 
         .k-callout {
-            color: var( --INTERNAL--kendo-tooltip-bg, initial );
+            color: var( --kendo-tooltip-bg, #{$kendo-tooltip-bg} );
         }
     }
 

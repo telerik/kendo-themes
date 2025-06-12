@@ -17,8 +17,8 @@
         border-style: solid;
         outline: 0;
         font-family: var( --kendo-input-font-family, #{$kendo-input-font-family} );
-        font-size: var( --INTERNAL--kendo-input-font-size, inherit );
-        line-height: var( --INTERNAL--kendo-input-line-height, #{$kendo-line-height-md} );
+        font-size: var( --kendo-input-font-size, inherit );
+        line-height: var( --kendo-input-line-height, #{$kendo-line-height-md} );
         font-weight: var( --kendo-input-font-weight, #{$kendo-input-font-weight} );
         text-align: start;
         box-shadow: none;
@@ -97,8 +97,8 @@
     .k-input {}
     input.k-input,
     textarea.k-textarea {
-        padding-inline: var( --INTERNAL--kendo-input-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-input-padding-y, 0 );
+        padding-inline: var( --kendo-input-padding-x, 0 );
+        padding-block: var( --kendo-input-padding-y, 0 );
     }
     textarea.k-textarea {
         overflow: auto;
@@ -110,8 +110,8 @@
         cursor: pointer;
     }
     select.k-picker {
-        padding-inline: var( --INTERNAL--kendo-input-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-input-padding-y,  0 );
+        padding-inline: var( --kendo-input-padding-x, 0 );
+        padding-block: var( --kendo-input-padding-y,  0 );
         appearance: auto;
         align-items: center;
     }
@@ -119,8 +119,8 @@
 
     // Input inner
     .k-input-inner {
-        padding-inline: var( --INTERNAL--kendo-input-padding-x, #{$kendo-input-md-padding-x} );
-        padding-block: var( --INTERNAL--kendo-input-padding-y, #{$kendo-input-md-padding-y} );
+        padding-inline: var( --kendo-input-padding-x, #{$kendo-input-md-padding-x} );
+        padding-block: var( --kendo-input-padding-y, #{$kendo-input-md-padding-y} );
         width: 100%;
         border: 0;
         outline: 0;
@@ -183,7 +183,7 @@
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-        gap: calc( var( --INTERNAL--kendo-input-padding-y, 0 ) / 2 );
+        gap: calc( var( --kendo-input-padding-y, 0 ) / 2 );
         cursor: text;
     }
     .k-input-values .k-chip-list {
@@ -310,8 +310,8 @@
     .k-input-icon,
     .k-input-validation-icon,
     .k-input-loading-icon {
-        padding-inline: var( --INTERNAL--kendo-input-padding-y, #{$kendo-input-md-padding-y} );
-        padding-block: var( --INTERNAL--kendo-input-padding-y, #{$kendo-input-md-padding-y} );
+        padding-inline: var( --kendo-input-padding-y, #{$kendo-input-md-padding-y} );
+        padding-block: var( --kendo-input-padding-y, #{$kendo-input-md-padding-y} );
         flex: none;
         align-self: center;
         display: inline-flex;
@@ -371,8 +371,8 @@
 
     // Clear value
     .k-clear-value {
-        width: var( --INTERNAL--kendo-input-icon-size, min-content );
-        height: var( --INTERNAL--kendo-input-icon-size, min-content );
+        width: var( --kendo-input-icon-size, min-content );
+        height: var( --kendo-input-icon-size, min-content );
         outline: 0;
         color: var( --kendo-input-clear-value-text, #{$kendo-input-clear-value-text} );
         flex: none;
@@ -395,8 +395,8 @@
 
     // Input button
     .k-input-button {
-        padding-inline:  var( --INTERNAL--kendo-input-button-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-input-button-padding-y, 0 );
+        padding-inline:  var( --kendo-input-button-padding-x, 0 );
+        padding-block: var( --kendo-input-button-padding-y, 0 );
         border-width: 0;
         border-radius: 0;
         border-color: inherit;
@@ -431,12 +431,12 @@
 
         .k-spinner-increase,
         .k-spinner-decrease {
-            padding-inline: var( --INTERNAL--kendo-input-button-padding-x, 0 );
-            padding-block: var( --INTERNAL--kendo-input-button-padding-y, 0 );
+            padding-inline: var( --kendo-input-button-padding-x, 0 );
+            padding-block: var( --kendo-input-button-padding-y, 0 );
             border-width: 0;
             border-inline-start-width: var( --kendo-input-button-border-width, 1px );
             border-radius: 0;
-            border-color: var( --INTERNAL--kendo-input-border, inherit );
+            border-color: var( --kendo-input-border, inherit );
             flex: 1 1 50%;
             box-shadow: none;
             position: relative;
@@ -532,13 +532,13 @@
 
         .k-input-#{$size},
         .k-picker-#{$size} {
-            --INTERNAL--kendo-input-font-size: #{$_font-size};
-            --INTERNAL--kendo-input-line-height: #{$_line-height};
-            --INTERNAL--kendo-input-padding-x: #{$_padding-x};
-            --INTERNAL--kendo-input-padding-y: #{$_padding-y};
-            --INTERNAL--kendo-input-button-padding-x: #{$_button-padding-x};
-            --INTERNAL--kendo-input-button-padding-y: #{$_button-padding-y};
-            --INTERNAL--kendo-input-icon-size: #{$_icon-size};
+            --kendo-input-font-size: #{$_font-size};
+            --kendo-input-line-height: #{$_line-height};
+            --kendo-input-padding-x: #{$_padding-x};
+            --kendo-input-padding-y: #{$_padding-y};
+            --kendo-input-button-padding-x: #{$_button-padding-x};
+            --kendo-input-button-padding-y: #{$_button-padding-y};
+            --kendo-input-icon-size: #{$_icon-size};
 
             .k-input-button {
                 width: if( $kendo-use-input-button-width, var( --kendo-input-button-width, #{$_button-width} ), auto );

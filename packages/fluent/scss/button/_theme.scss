@@ -4,38 +4,32 @@
 
 @mixin kendo-button--theme() {
     .k-button {
-        --INTERNAL--kendo-button-text: var( --kendo-button-text );
-        --INTERNAL--kendo-button-bg: var( --kendo-button-bg );
-        --INTERNAL--kendo-button-border: var( --kendo-button-border );
-        --INTERNAL--kendo-button-gradient: var( --kendo-button-gradient );
-        --INTERNAL--kendo-button-shadow: var( --kendo-button-shadow );
-
-        border-color: var( --INTERNAL--kendo-button-border, initial );
-        color: var( --INTERNAL--kendo-button-text, inherit );
-        background-color: var( --INTERNAL--kendo-button-bg, initial );
+        color: var( --kendo-button-text, inherit );
+        background-color: var( --kendo-button-bg, initial );
+        border-color: var( --kendo-button-border, initial );
         background-image: linear-gradient(
-            var( --INTERNAL--kendo-button-gradient, transparent, transparent )
+            var( --kendo-button-gradient, transparent, transparent )
         );
-        box-shadow: var( --INTERNAL--kendo-button-shadow, none );
+        box-shadow: var( --kendo-button-shadow, none );
 
         &:hover,
         &.k-hover {
-            --INTERNAL--kendo-button-text: var( --kendo-button-hover-text );
-            --INTERNAL--kendo-button-bg: var( --kendo-button-hover-bg );
-            --INTERNAL--kendo-button-border: var( --kendo-button-hover-border );
+            color: var( --kendo-button-hover-text );
+            background-color: var( --kendo-button-hover-bg );
+            border-color: var( --kendo-button-hover-border );
         }
 
         &:focus,
         &.k-focus {
-            --INTERNAL--kendo-button-text: var( --kendo-button-focus-text );
-            --INTERNAL--kendo-button-bg: var( --kendo-button-focus-bg );
-            --INTERNAL--kendo-button-border: var( --kendo-button-focus-border );
+            color: var( --kendo-button-focus-text );
+            background-color: var( --kendo-button-focus-bg );
+            border-color: var( --kendo-button-focus-border );
 
             &:hover,
             &.k-hover {
-                --INTERNAL--kendo-button-text: var( --kendo-button-focus-hover-text );
-                --INTERNAL--kendo-button-bg: var( --kendo-button-focus-hover-bg );
-                --INTERNAL--kendo-button-border: var( --kendo-button-focus-hover-border );
+                color: var( --kendo-button-focus-hover-text );
+                background-color: var( --kendo-button-focus-hover-bg );
+                border-color: var( --kendo-button-focus-hover-border );
             }
         }
 
@@ -46,28 +40,28 @@
 
         &:active,
         &.k-active {
-            --INTERNAL--kendo-button-text: var( --kendo-button-active-text );
-            --INTERNAL--kendo-button-bg: var( --kendo-button-active-bg );
-            --INTERNAL--kendo-button-border: var( --kendo-button-active-border );
+            color: var( --kendo-button-active-text );
+            background-color: var( --kendo-button-active-bg );
+            border-color: var( --kendo-button-active-border );
 
             &:hover,
             &.k-hover {
-                --INTERNAL--kendo-button-text: var( --kendo-button-active-hover-text );
-                --INTERNAL--kendo-button-bg: var( --kendo-button-active-hover-bg );
-                --INTERNAL--kendo-button-border: var( --kendo-button-active-hover-border );
+                color: var( --kendo-button-active-hover-text );
+                background-color: var( --kendo-button-active-hover-bg );
+                border-color: var( --kendo-button-active-hover-border );
             }
         }
 
         &.k-selected {
-            --INTERNAL--kendo-button-text: var( --kendo-button-selected-text );
-            --INTERNAL--kendo-button-bg: var( --kendo-button-selected-bg );
-            --INTERNAL--kendo-button-border: var( --kendo-button-selected-border );
+            color: var( --kendo-button-selected-text );
+            background-color: var( --kendo-button-selected-bg );
+            border-color: var( --kendo-button-selected-border );
 
             &:hover,
             &.k-hover {
-                --INTERNAL--kendo-button-text: var( --kendo-button-selected-hover-text );
-                --INTERNAL--kendo-button-bg: var( --kendo-button-selected-hover-bg );
-                --INTERNAL--kendo-button-border: var( --kendo-button-selected-hover-border );
+                color: var( --kendo-button-selected-hover-text );
+                background-color: var( --kendo-button-selected-hover-bg );
+                border-color: var( --kendo-button-selected-hover-border );
             }
         }
     }
@@ -76,9 +70,9 @@
     .k-button.k-disabled,
     .k-disabled .k-button,
     :disabled .k-button {
-        --INTERNAL--kendo-button-text: var( --kendo-button-disabled-text );
-        --INTERNAL--kendo-button-bg: var( --kendo-button-disabled-bg );
-        --INTERNAL--kendo-button-border: var( --kendo-button-disabled-border );
+        color: var( --kendo-button-disabled-text );
+        background-color: var( --kendo-button-disabled-bg );
+        border-color: var( --kendo-button-disabled-border );
     }
 
     @each $fill-mode, $theme-colors in $kendo-button-theme-colors {
@@ -157,6 +151,10 @@
     .k-button-group.k-disabled,
     .k-button-group[disabled] {
         background-color: inherit;
+    }
+
+    .k-button-flat-base.k-disabled {
+        color: color-mix(in srgb, k-color(on-app-surface) 46%, transparent);
     }
 
 }
