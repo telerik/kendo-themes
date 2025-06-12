@@ -8,6 +8,7 @@ export type KendoFieldsetProps = {
     cols?: number;
     gapX?: number;
     gapY?: number;
+    colSpan?: string | number;
 };
 
 export const Fieldset = (
@@ -19,11 +20,17 @@ export const Fieldset = (
         layout,
         cols,
         gapX,
-        gapY
+        gapY,
+        colSpan
     } = props;
 
     return (
-        <fieldset className={classNames(FIELDSET_CLASSNAME)}>
+        <fieldset className={classNames(
+            FIELDSET_CLASSNAME,
+            {
+                [`k-col-span-${colSpan}`]: colSpan
+            }
+        )}>
             { legend && <legend className="k-form-legend">{legend}</legend> }
             { layout === 'grid' ?
                 <div className={classNames(
