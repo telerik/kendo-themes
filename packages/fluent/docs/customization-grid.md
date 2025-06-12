@@ -378,6 +378,56 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-highlighted-bg</td>
+    <td>String</td>
+    <td><code>$kendo-table-highlighted-bg</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-warning, #ffc80a) 13%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of highlighted Grid rows.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-highlighted-text</td>
+    <td>String</td>
+    <td><code>$kendo-table-highlighted-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of highlighted Grid rows.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-highlighted-border</td>
+    <td>String</td>
+    <td><code>$kendo-table-highlighted-border</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of highlighted Grid rows.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-highlighted-font-weight</td>
+    <td>String</td>
+    <td><code>$kendo-table-highlighted-font-weight</code></td>
+    <td><code>var(--kendo-font-weight-semibold, bold)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of highlighted Grid rows.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-selected-highlighted-bg</td>
+    <td>String</td>
+    <td><code>$kendo-table-selected-highlighted-bg</code></td>
+    <td><code>color-mix(in srgb, color-mix(in srgb, var(--kendo-color-primary, #0078d4), var(--kendo-color-warning, #ffc80a)) 23%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected highlighted Grid rows.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-selected-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-table-selected-hover-bg</code></td>
@@ -1085,36 +1135,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid sticky footer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-sticky-selected-bg</td>
-    <td>String</td>
-    <td><code>$kendo-grid-selected-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary, #0078d4) 13%, transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Grid sticky cells.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-sticky-selected-alt-bg</td>
-    <td>String</td>
-    <td><code>$kendo-grid-sticky-selected-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary, #0078d4) 13%, transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected alt Grid sticky cells.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-sticky-selected-hover-bg</td>
-    <td>String</td>
-    <td><code>$kendo-grid-sticky-selected-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary, #0078d4) 13%, transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered selected Grid sticky cells.</div></div>
     </td>
 </tr>
 <tr>

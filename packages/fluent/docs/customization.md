@@ -15163,6 +15163,56 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-highlighted-bg</td>
+    <td>String</td>
+    <td><code>$kendo-table-highlighted-bg</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-warning, #ffc80a) 13%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of highlighted Grid rows.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-highlighted-text</td>
+    <td>String</td>
+    <td><code>$kendo-table-highlighted-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of highlighted Grid rows.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-highlighted-border</td>
+    <td>String</td>
+    <td><code>$kendo-table-highlighted-border</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of highlighted Grid rows.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-highlighted-font-weight</td>
+    <td>String</td>
+    <td><code>$kendo-table-highlighted-font-weight</code></td>
+    <td><code>var(--kendo-font-weight-semibold, bold)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of highlighted Grid rows.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-selected-highlighted-bg</td>
+    <td>String</td>
+    <td><code>$kendo-table-selected-highlighted-bg</code></td>
+    <td><code>color-mix(in srgb, color-mix(in srgb, var(--kendo-color-primary, #0078d4), var(--kendo-color-warning, #ffc80a)) 23%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected highlighted Grid rows.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-selected-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-table-selected-hover-bg</code></td>
@@ -15870,36 +15920,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid sticky footer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-sticky-selected-bg</td>
-    <td>String</td>
-    <td><code>$kendo-grid-selected-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary, #0078d4) 13%, transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Grid sticky cells.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-sticky-selected-alt-bg</td>
-    <td>String</td>
-    <td><code>$kendo-grid-sticky-selected-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary, #0078d4) 13%, transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected alt Grid sticky cells.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-sticky-selected-hover-bg</td>
-    <td>String</td>
-    <td><code>$kendo-grid-sticky-selected-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary, #0078d4) 13%, transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered selected Grid sticky cells.</div></div>
     </td>
 </tr>
 <tr>
@@ -31063,6 +31083,56 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-highlighted-bg</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(warning) 13%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-warning, #ffc80a) 13%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of highlighted rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-highlighted-text</td>
+    <td>String</td>
+    <td><code>$kendo-table-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of highlighted rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-highlighted-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-semibold, bold )</code></td>
+    <td><code>var(--kendo-font-weight-semibold, bold)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of highlighted rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-highlighted-border</td>
+    <td>String</td>
+    <td><code>$kendo-table-border</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of highlighted rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-selected-highlighted-bg</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, color-mix(in srgb, k-color(primary), k-color(warning)) 23%, transparent)</code></td>
+    <td><code>color-mix(in srgb, color-mix(in srgb, var(--kendo-color-primary, #0078d4), var(--kendo-color-warning, #ffc80a)) 23%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected highlighted rows in table.</div></div>
     </td>
 </tr>
 <tr>

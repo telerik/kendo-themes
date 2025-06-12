@@ -389,6 +389,14 @@
         .k-drag-cell {
             cursor: move;
         }
+
+        // Highlighted state
+        td.k-highlighted,
+        .k-table-row.k-highlighted > td,
+        .k-table-td.k-highlighted,
+        .k-table-row.k-highlighted > .k-table-td {
+            font-weight: $kendo-grid-highlighted-font-weight;
+        }
     }
 
     .k-grid-resizable {
