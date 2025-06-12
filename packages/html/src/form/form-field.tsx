@@ -16,7 +16,7 @@ export type KendoFormFieldProps = {
     info?: null | string;
     disabled?: boolean;
     dir?: "ltr" | "rtl";
-    colSpan?: string ;
+    colSpan?: string | number;
 };
 
 export type KendoFormFieldState = { [K in (typeof states)[number]]?: boolean };
