@@ -6,16 +6,11 @@
 
     // Card
     .k-card {
-        --INTERNAL--kendo-card-text: var( --kendo-card-text, #{$kendo-card-text} );
-        --INTERNAL--kendo-card-bg: var( --kendo-card-bg, #{$kendo-card-bg} );
-        --INTERNAL--kendo-card-border: var( --kendo-card-border, #{$kendo-card-border} );
-        --INTERNAL--kendo-card-shadow: var( --kendo-card-shadow, #{$kendo-card-shadow} );
+        color: var( --kendo-card-text, #{$kendo-card-text} );
+        background-color: var( --kendo-card-bg, #{$kendo-card-bg} );
+        border-color: var( --kendo-card-border, #{$kendo-card-border} );
 
-        color: var( --INTERNAL--kendo-card-text, initial );
-        background-color: var( --INTERNAL--kendo-card-bg, initial );
-        border-color: var( --INTERNAL--kendo-card-border, initial );
-
-        @include box-shadow( var( --INTERNAL--kendo-card-shadow, none ) );
+        @include box-shadow( var( --kendo-card-shadow, #{$kendo-card-shadow} ) );
 
         .k-card-inner {
             background-color: inherit;
@@ -24,14 +19,14 @@
 
         &:focus,
         &.k-focus {
-            --INTERNAL--kendo-card-text: var( --kendo-card-focus-text, #{$kendo-card-focus-text} );
-            --INTERNAL--kendo-card-bg: var( --kendo-card-focus-bg, #{$kendo-card-focus-bg} );
-            --INTERNAL--kendo-card-border: var( --kendo-card-focus-border, #{$kendo-card-focus-border} );
-            --INTERNAL--kendo-card-shadow: var( --kendo-card-focus-shadow, #{$kendo-card-focus-shadow} );
+            color: var( --kendo-card-focus-text, #{$kendo-card-focus-text} );
+            background-color: var( --kendo-card-focus-bg, #{$kendo-card-focus-bg} );
+            border-color: var( --kendo-card-focus-border, #{$kendo-card-focus-border} );
+            box-shadow: var( --kendo-card-focus-shadow, #{$kendo-card-focus-shadow} );
         }
 
         &.k-selected {
-            --INTERNAL--kendo-card-shadow: var( --kendo-card-focus-shadow, #{$kendo-card-focus-shadow} );
+            box-shadow: var( --kendo-card-focus-shadow, #{$kendo-card-focus-shadow} );
         }
 
         .k-hr {

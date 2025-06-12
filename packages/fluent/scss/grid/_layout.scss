@@ -72,8 +72,8 @@
         td,
         .k-table-td {
             border-width: 0;
-            padding-inline: var( --INTERNAL--kendo-grid-cell-padding-x, 0 );
-            padding-block: var( --INTERNAL--kendo-grid-cell-padding-y, 0 );
+            padding-inline: var( --kendo-grid-cell-padding-x, 0 );
+            padding-block: var( --kendo-grid-cell-padding-y, 0 );
             border-style: solid;
             border-color: inherit;
             outline: 0;
@@ -101,8 +101,8 @@
         }
 
         .k-table-th {
-            padding-inline: var( --INTERNAL--kendo-grid-header-padding-x, 0 );
-            padding-block: var( --INTERNAL--kendo-grid-header-padding-y, 0 );
+            padding-inline: var( --kendo-grid-header-padding-x, 0 );
+            padding-block: var( --kendo-grid-header-padding-y, 0 );
             border-block-end-width: var( --kendo-grid-header-border-width-y, #{$kendo-grid-header-border-width-y} );
             border-inline-start-width: var( --kendo-grid-header-border-width-x, #{$kendo-grid-header-border-width-x} );
             white-space: nowrap;
@@ -160,7 +160,7 @@
         }
 
         .k-grouping-row .k-icon {
-            margin-inline-start: calc( ( var( --kendo-icon-size, 1rem ) / 2 ) - var( --INTERNAL--kendo-grid-cell-padding-x, 0 ) );
+            margin-inline-start: calc( ( var( --kendo-icon-size, 1rem ) / 2 ) - var( --kendo-grid-cell-padding-x, 0 ) );
             margin-inline-end: calc( var( --kendo-icon-size, 1rem ) / 2 );
             text-decoration: none;
         }
@@ -185,7 +185,7 @@
 
             > .k-icon {
                 padding-inline: 0;
-                padding-block: var( --INTERNAL--kendo-grid-cell-padding-y, 0 );
+                padding-block: var( --kendo-grid-cell-padding-y, 0 );
                 display: inline-block;
                 outline: 0;
             }
@@ -280,15 +280,15 @@
 
     // Grouping header
     .k-grouping-header {
-        padding-inline: var( --INTERNAL--kendo-grid-grouping-header-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-grid-grouping-header-padding-y, 0 );
+        padding-inline: var( --kendo-grid-grouping-header-padding-x, 0 );
+        padding-block: var( --kendo-grid-grouping-header-padding-y, 0 );
         border-width: 0 0 1px;
         border-style: solid;
         border-color: inherit;
         white-space: normal;
         display: flex;
         align-items: center;
-        gap: var( --INTERNAL--kendo-grid-grouping-header-padding-y, 0 );
+        gap: var( --kendo-grid-grouping-header-padding-y, 0 );
         position: relative;
         flex-wrap: wrap;
 
@@ -297,7 +297,7 @@
             height: $kendo-chip-calc-size;
             display: inline-block;
             vertical-align: middle;
-            margin-left: calc( var( --INTERNAL--kendo-grid-grouping-header-padding-y, 0 ) * -1 );
+            margin-left: calc( var( --kendo-grid-grouping-header-padding-y, 0 ) * -1 );
         }
 
         .k-chip-list {
@@ -317,7 +317,7 @@
 
     .k-grouping-dropclue {
         width: calc( var( --kendo-grid-group-drop-hint-size, #{$kendo-grid-group-drop-hint-size} ) * 2 );
-        height: var( --INTERNAL--kendo-grid-group-drop-hint-height, 1rem );
+        height: var( --kendo-grid-group-drop-hint-height, 1rem );
         position: absolute;
         top: var( --kendo-grid-group-drop-hint-top, #{$kendo-grid-group-drop-hint-top} );
         box-sizing: content-box;
@@ -419,10 +419,10 @@
         }
 
         .k-table-th > .k-link {
-            margin-block: calc( var( --INTERNAL--kendo-grid-header-padding-y, 0 ) * -1 );
-            margin-inline: calc( var( --INTERNAL--kendo-grid-header-padding-x, 0 ) * -1 );
-            padding-block: var( --INTERNAL--kendo-grid-header-padding-y, 0 );
-            padding-inline: var( --INTERNAL--kendo-grid-header-padding-x, 0 );
+            margin-block: calc( var( --kendo-grid-header-padding-y, 0 ) * -1 );
+            margin-inline: calc( var( --kendo-grid-header-padding-x, 0 ) * -1 );
+            padding-block: var( --kendo-grid-header-padding-y, 0 );
+            padding-inline: var( --kendo-grid-header-padding-x, 0 );
             line-height: inherit;
             display: block;
             overflow: hidden;
@@ -442,20 +442,20 @@
         .k-grid-filter,
         .k-header-column-menu,
         .k-grid-header-menu {
-            padding-block: var(--INTERNAL--kendo-button-padding-y, 0 );
-            padding-inline: var(--INTERNAL--kendo-button-padding-y, 0 );
-            width: var(--INTERNAL--kendo-button-calc-size, auto );
-            height: var(--INTERNAL--kendo-button-calc-size, auto );
+            padding-block: var(--kendo-button-padding-y, 0 );
+            padding-inline: var(--kendo-button-padding-y, 0 );
+            width: var(--kendo-button-calc-size, auto );
+            height: var(--kendo-button-calc-size, auto );
             box-sizing: border-box;
             outline: 0;
-            line-height: var(--INTERNAL--kendo-button-line-height, normal );
+            line-height: var(--kendo-button-line-height, normal );
             display: flex;
             align-items: center;
             align-content: center;
             justify-content: center;
             position: absolute;
             inset-inline-end: var( --kendo-grid-header-menu-spacing, #{$kendo-grid-header-menu-spacing} );
-            inset-block-end: calc( var( --INTERNAL--kendo-grid-header-padding-y, 0 ) + ( #{$kendo-line-height-em} / 2 ) - ( #{$kendo-button-inner-calc-size} / 2 ) );
+            inset-block-end: calc( var( --kendo-grid-header-padding-y, 0 ) + ( #{$kendo-line-height-em} / 2 ) - ( #{$kendo-button-inner-calc-size} / 2 ) );
             z-index: 1;
 
             &:hover {
@@ -490,8 +490,8 @@
     .k-resizer-wrap {
         display: block;
         width: 100%;
-        padding-block-start: calc( var( --INTERNAL--kendo-grid-edit-cell-padding-x, 0 ) - #{$kendo-grid-row-resizer-height} );
-        padding-block-end: var( --INTERNAL--kendo-grid-edit-cell-padding-x, 0 );
+        padding-block-start: calc( var( --kendo-grid-edit-cell-padding-x, 0 ) - #{$kendo-grid-row-resizer-height} );
+        padding-block-end: var( --kendo-grid-edit-cell-padding-x, 0 );
         position: absolute;
         background: none;
         cursor: row-resize;
@@ -547,8 +547,8 @@
         td,
         .k-table-td,
         .k-table-th {
-            padding-inline: var( --INTERNAL--kendo-grid-filter-cell-padding-x, 0 );
-            padding-block: var( --INTERNAL--kendo-grid-filter-cell-padding-y, 0 );
+            padding-inline: var( --kendo-grid-filter-cell-padding-x, 0 );
+            padding-block: var( --kendo-grid-filter-cell-padding-y, 0 );
             border-width: 0 0 var( --kendo-grid-cell-border-width-y, #{$kendo-grid-cell-border-width-y} ) var( --kendo-grid-cell-border-width-x, #{$kendo-grid-cell-border-width-x} );
             white-space: nowrap;
         }
@@ -575,7 +575,7 @@
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
-            gap: calc( var( --INTERNAL--kendo-grid-cell-padding-y, 0 ) / 2 );
+            gap: calc( var( --kendo-grid-cell-padding-y, 0 ) / 2 );
             flex: 1 1 auto;
 
             > .k-button {
@@ -640,8 +640,8 @@
     .k-grid .k-command-cell,
     .k-grid .k-grid-edit-row td,
     .k-grid .k-grid-edit-row .k-table-td {
-        padding-inline: var( --INTERNAL--kendo-grid-edit-cell-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-grid-edit-cell-padding-y, 0 );
+        padding-inline: var( --kendo-grid-edit-cell-padding-x, 0 );
+        padding-block: var( --kendo-grid-edit-cell-padding-y, 0 );
         text-overflow: clip;
     }
 
@@ -686,8 +686,8 @@
 
     // Selection Aggregates
     .k-selection-aggregates {
-        padding-inline: var( --INTERNAL--kendo-grid-selection-aggregates-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-grid-selection-aggregates-padding-y, 0 );
+        padding-inline: var( --kendo-grid-selection-aggregates-padding-x, 0 );
+        padding-block: var( --kendo-grid-selection-aggregates-padding-y, 0 );
         border-width: var( --kendo-grid-selection-aggregates-border-width, #{$kendo-grid-selection-aggregates-border-width} ) 0 0;
         border-style: solid;
         line-height: var( --kendo-grid-selection-aggregates-line-height, #{$kendo-grid-selection-aggregates-line-height} );
@@ -942,8 +942,8 @@
     }
 
     .k-table-th > .k-cell-inner {
-        margin-block: calc( var( --INTERNAL--kendo-grid-header-padding-y, 0 ) * -1 );
-        margin-inline: calc( var( --INTERNAL--kendo-grid-header-padding-x, 0 ) * -1 );
+        margin-block: calc( var( --kendo-grid-header-padding-y, 0 ) * -1 );
+        margin-inline: calc( var( --kendo-grid-header-padding-x, 0 ) * -1 );
     }
 
     .k-filterable {
@@ -962,8 +962,8 @@
         overflow: hidden;
 
         > .k-link {
-            padding-inline: var( --INTERNAL--kendo-grid-header-padding-x, 0 );
-            padding-block: var( --INTERNAL--kendo-grid-header-padding-y, 0 );
+            padding-inline: var( --kendo-grid-header-padding-x, 0 );
+            padding-block: var( --kendo-grid-header-padding-y, 0 );
             width: auto;
             display: flex;
             flex-flow: row nowrap;
@@ -1031,22 +1031,22 @@
 
         .k-grid .k-grid-#{$size},
         .k-grid-#{$size} {
-            --INTERNAL--kendo-grid-header-padding-x: var( --kendo-grid-header-padding-x-#{$size}, #{$_header-padding-x} );
-            --INTERNAL--kendo-grid-header-padding-y: var( --kendo-grid-header-padding-y-#{$size}, #{$_header-padding-y} );
-            --INTERNAL--kendo-grid-grouping-header-padding-x: var( --kendo-grid-grouping-header-padding-x-#{$size}, #{$_grouping-header-padding-x} );
-            --INTERNAL--kendo-grid-grouping-header-padding-y: var( --kendo-grid-grouping-header-padding-y-#{$size}, #{$_grouping-header-padding-y} );
-            --INTERNAL--kendo-grid-cell-padding-x: var( --kendo-grid-cell-padding-x-#{$size}, #{$_cell-padding-x} );
-            --INTERNAL--kendo-grid-cell-padding-y: var( --kendo-grid-cell-padding-y-#{$size}, #{$_cell-padding-y} );
-            --INTERNAL--kendo-grid-filter-cell-padding-x: var( --kendo-grid-filter-cell-padding-x-#{$size}, #{$_filter-cell-padding-x} );
-            --INTERNAL--kendo-grid-filter-cell-padding-y: var( --kendo-grid-filter-cell-padding-y-#{$size}, #{$_filter-cell-padding-y} );
-            --INTERNAL--kendo-grid-edit-cell-padding-x: var( --kendo-grid-edit-cell-padding-x-#{$size}, #{$_edit-cell-padding-x} );
-            --INTERNAL--kendo-grid-edit-cell-padding-y: var( --kendo-grid-edit-cell-padding-y-#{$size}, #{$_edit-cell-padding-y} );
-            --INTERNAL--kendo-button-padding-y: var( --kendo-button-padding-y-#{$size}, #{$_button-padding-y} );
-            --INTERNAL--kendo-button-calc-size: var( --kendo-button-calc-size-#{$size}, #{$_button-calc-size} );
-            --INTERNAL--kendo-button-line-height: var( --kendo-button-line-height-#{$size}, #{$_button-line-height} );
-            --INTERNAL--kendo-grid-group-drop-hint-height: var( --kendo-group-dropclue-height-#{$size}, #{$_group-dropclue-height} );
-            --INTERNAL--kendo-grid-selection-aggregates-padding-x: var( --kendo-grid-selection-aggregates-padding-x-#{$size}, #{$_selection-aggregates-padding-x} );
-            --INTERNAL--kendo-grid-selection-aggregates-padding-y: var( --kendo-grid-selection-aggregates-padding-y-#{$size}, #{$_selection-aggregates-padding-y} );
+            --kendo-grid-header-padding-x: var( --kendo-grid-header-padding-x-#{$size}, #{$_header-padding-x} );
+            --kendo-grid-header-padding-y: var( --kendo-grid-header-padding-y-#{$size}, #{$_header-padding-y} );
+            --kendo-grid-grouping-header-padding-x: var( --kendo-grid-grouping-header-padding-x-#{$size}, #{$_grouping-header-padding-x} );
+            --kendo-grid-grouping-header-padding-y: var( --kendo-grid-grouping-header-padding-y-#{$size}, #{$_grouping-header-padding-y} );
+            --kendo-grid-cell-padding-x: var( --kendo-grid-cell-padding-x-#{$size}, #{$_cell-padding-x} );
+            --kendo-grid-cell-padding-y: var( --kendo-grid-cell-padding-y-#{$size}, #{$_cell-padding-y} );
+            --kendo-grid-filter-cell-padding-x: var( --kendo-grid-filter-cell-padding-x-#{$size}, #{$_filter-cell-padding-x} );
+            --kendo-grid-filter-cell-padding-y: var( --kendo-grid-filter-cell-padding-y-#{$size}, #{$_filter-cell-padding-y} );
+            --kendo-grid-edit-cell-padding-x: var( --kendo-grid-edit-cell-padding-x-#{$size}, #{$_edit-cell-padding-x} );
+            --kendo-grid-edit-cell-padding-y: var( --kendo-grid-edit-cell-padding-y-#{$size}, #{$_edit-cell-padding-y} );
+            --kendo-button-padding-y: var( --kendo-button-padding-y-#{$size}, #{$_button-padding-y} );
+            --kendo-button-calc-size: var( --kendo-button-calc-size-#{$size}, #{$_button-calc-size} );
+            --kendo-button-line-height: var( --kendo-button-line-height-#{$size}, #{$_button-line-height} );
+            --kendo-grid-group-drop-hint-height: var( --kendo-group-dropclue-height-#{$size}, #{$_group-dropclue-height} );
+            --kendo-grid-selection-aggregates-padding-x: var( --kendo-grid-selection-aggregates-padding-x-#{$size}, #{$_selection-aggregates-padding-x} );
+            --kendo-grid-selection-aggregates-padding-y: var( --kendo-grid-selection-aggregates-padding-y-#{$size}, #{$_selection-aggregates-padding-y} );
         }
     }
 

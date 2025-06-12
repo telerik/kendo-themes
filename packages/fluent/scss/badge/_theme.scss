@@ -5,13 +5,9 @@
 @mixin kendo-badge--theme() {
 
     .k-badge {
-        --INTERNAL--kendo-badge-text: var( --kendo-badge-text, #{$kendo-badge-text} );
-        --INTERNAL--kendo-badge-bg: var( --kendo-badge-bg, #{$kendo-badge-bg} );
-        --INTERNAL--kendo-badge-border: var( --kendo-badge-border, #{$kendo-badge-border} );
-
-        color: var( --INTERNAL--kendo-badge-text, initial );
-        background-color: var( --INTERNAL--kendo-badge-bg, initial );
-        border-color: var( --INTERNAL--kendo-badge-border, initial );
+        color: var( --kendo-badge-text, #{$kendo-badge-text} );
+        background-color: var( --kendo-badge-bg, #{$kendo-badge-bg} );
+        border-color: var( --kendo-badge-border, #{$kendo-badge-border} );
     }
 
     .k-badge-outline {

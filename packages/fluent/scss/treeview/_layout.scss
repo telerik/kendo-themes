@@ -11,8 +11,8 @@
         box-sizing: border-box;
         outline: 0;
         font-family: var( --kendo-treeview-font-family, #{$kendo-treeview-font-family} );
-        font-size: var( --INTERNAL--kendo-treeview-font-size, 1rem );
-        line-height: var( --INTERNAL--kendo-treeview-line-height, normal );
+        font-size: var( --kendo-treeview-font-size, 1rem );
+        line-height: var( --kendo-treeview-line-height, normal );
         display: block;
         cursor: default;
         overflow: auto;
@@ -107,8 +107,8 @@
     // Treeview leaf
     .k-treeview-leaf {
         @include border-radius( var( --kendo-treeview-item-border-radius, #{$kendo-treeview-item-border-radius} ) );
-        padding-inline: var( --INTERNAL--kendo-treeview-item-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-treeview-item-padding-y, 0 );
+        padding-inline: var( --kendo-treeview-item-padding-x, 0 );
+        padding-block: var( --kendo-treeview-item-padding-y, 0 );
         border: $kendo-treeview-item-border-width solid transparent;
         text-decoration: none;
         display: inline-flex;
@@ -150,12 +150,12 @@
         $_item-padding-y: map.get( $size-props, item-padding-y );
 
         .k-treeview-#{$size} {
-            --INTERNAL--kendo-treeview-font-size: var( --kendo-treeview-#{$size}-font-size, #{$_font-size} );
-            --INTERNAL--kendo-treeview-line-height: var( --kendo-treeview-#{$size}-line-height, #{$_line-height} );
+            --kendo-treeview-font-size: var( --kendo-treeview-#{$size}-font-size, #{$_font-size} );
+            --kendo-treeview-line-height: var( --kendo-treeview-#{$size}-line-height, #{$_line-height} );
 
             .k-treeview-leaf {
-                --INTERNAL--kendo-treeview-item-padding-x: var( --kendo-treeview-#{$size}-item-padding-x, #{$_item-padding-x} );
-                --INTERNAL--kendo-treeview-item-padding-y: var( --kendo-treeview-#{$size}-item-padding-y, #{$_item-padding-y} );
+                --kendo-treeview-item-padding-x: var( --kendo-treeview-#{$size}-item-padding-x, #{$_item-padding-x} );
+                --kendo-treeview-item-padding-y: var( --kendo-treeview-#{$size}-item-padding-y, #{$_item-padding-y} );
             }
         }
     }

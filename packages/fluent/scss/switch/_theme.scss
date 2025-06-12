@@ -24,25 +24,17 @@
 
         // Normal state
         .k-switch-track {
-            --INTERNAL--kendo-switch-off-track-text: var( --kendo-switch-off-track-text, #{$kendo-switch-off-track-text} );
-            --INTERNAL--kendo-switch-off-track-bg: var( --kendo-switch-off-track-bg, #{$kendo-switch-off-track-bg} );
-            --INTERNAL--kendo-switch-off-track-border: var( --kendo-switch-off-track-border, #{$kendo-switch-off-track-border} );
-
             @include fill(
-                var( --INTERNAL--kendo-switch-off-track-text, inherit ),
-                var( --INTERNAL--kendo-switch-off-track-bg, transparent ),
-                var( --INTERNAL--kendo-switch-off-track-border, inherit )
+                var( --kendo-switch-off-track-text, #{$kendo-switch-off-track-text} ),
+                var( --kendo-switch-off-track-bg, #{$kendo-switch-off-track-bg} ),
+                var( --kendo-switch-off-track-border, #{$kendo-switch-off-track-border} )
             );
         }
         .k-switch-thumb {
-            --INTERNAL--kendo-switch-off-thumb-text: var( --kendo-switch-off-thumb-text, #{$kendo-switch-off-thumb-text} );
-            --INTERNAL--kendo-switch-off-thumb-bg: var( --kendo-switch-off-thumb-bg, #{$kendo-switch-off-thumb-bg} );
-            --INTERNAL--kendo-switch-off-thumb-border: var( --kendo-switch-off-thumb-border, #{$kendo-switch-off-thumb-border} );
-
             @include fill(
-                var( --INTERNAL--kendo-switch-off-thumb-text, inherit ),
-                var( --INTERNAL--kendo-switch-off-thumb-bg, transparent ),
-                var( --INTERNAL--kendo-switch-off-thumb-border, inherit )
+                var( --kendo-switch-off-thumb-text, #{$kendo-switch-off-thumb-text} ),
+                var( --kendo-switch-off-thumb-bg, #{$kendo-switch-off-thumb-bg} ),
+                var( --kendo-switch-off-thumb-border, #{$kendo-switch-off-thumb-border} )
             );
         }
 
@@ -50,15 +42,15 @@
         &:hover,
         &.k-hover {
             .k-switch-track {
-                --INTERNAL--kendo-switch-off-track-text: var( --kendo-switch-off-track-hover-text, #{$kendo-switch-off-track-hover-text} );
-                --INTERNAL--kendo-switch-off-track-bg: var( --kendo-switch-off-track-hover-bg, #{$kendo-switch-off-track-hover-bg} );
-                --INTERNAL--kendo-switch-off-track-border: var( --kendo-switch-off-track-hover-border, #{$kendo-switch-off-track-hover-border} );
+                --kendo-switch-off-track-text: var( --kendo-switch-off-track-hover-text, #{$kendo-switch-off-track-hover-text} );
+                --kendo-switch-off-track-bg: var( --kendo-switch-off-track-hover-bg, #{$kendo-switch-off-track-hover-bg} );
+                --kendo-switch-off-track-border: var( --kendo-switch-off-track-hover-border, #{$kendo-switch-off-track-hover-border} );
             }
 
             .k-switch-thumb {
-                --INTERNAL--kendo-switch-off-thumb-text: var( --kendo-switch-off-thumb-hover-text, #{$kendo-switch-off-thumb-hover-text} );
-                --INTERNAL--kendo-switch-off-thumb-bg: var( --kendo-switch-off-thumb-hover-bg, #{$kendo-switch-off-thumb-hover-bg} );
-                --INTERNAL--kendo-switch-off-thumb-border: var( --kendo-switch-off-thumb-hover-border, #{$kendo-switch-off-thumb-hover-border} );
+                --kendo-switch-off-thumb-text: var( --kendo-switch-off-thumb-hover-text, #{$kendo-switch-off-thumb-hover-text} );
+                --kendo-switch-off-thumb-bg: var( --kendo-switch-off-thumb-hover-bg, #{$kendo-switch-off-thumb-hover-bg} );
+                --kendo-switch-off-thumb-border: var( --kendo-switch-off-thumb-hover-border, #{$kendo-switch-off-thumb-hover-border} );
             }
         }
 
@@ -66,9 +58,9 @@
         &:focus,
         &.k-focus {
             .k-switch-track {
-                --INTERNAL--kendo-switch-off-track-text: var( --kendo-switch-off-track-focus-text, #{$kendo-switch-off-track-focus-text} );
-                --INTERNAL--kendo-switch-off-track-bg: var( --kendo-switch-off-track-focus-bg, #{$kendo-switch-off-track-focus-bg} );
-                --INTERNAL--kendo-switch-off-track-border: var( --kendo-switch-off-track-focus-border, #{$kendo-switch-off-track-focus-border} );
+                --kendo-switch-off-track-text: var( --kendo-switch-off-track-focus-text, #{$kendo-switch-off-track-focus-text} );
+                --kendo-switch-off-track-bg: var( --kendo-switch-off-track-focus-bg, #{$kendo-switch-off-track-focus-bg} );
+                --kendo-switch-off-track-border: var( --kendo-switch-off-track-focus-border, #{$kendo-switch-off-track-focus-border} );
             }
         }
 
@@ -76,15 +68,15 @@
         &:disabled,
         &.k-disabled {
             .k-switch-track {
-                --INTERNAL--kendo-switch-off-track-text: var( --kendo-switch-off-track-disabled-text, #{$kendo-switch-off-track-disabled-text} );
-                --INTERNAL--kendo-switch-off-track-bg: var( --kendo-switch-off-track-disabled-bg, #{$kendo-switch-off-track-disabled-bg} );
-                --INTERNAL--kendo-switch-off-track-border: var( --kendo-switch-off-track-disabled-border, #{$kendo-switch-off-track-disabled-border} );
+                --kendo-switch-off-track-text: var( --kendo-switch-off-track-disabled-text, #{$kendo-switch-off-track-disabled-text} );
+                --kendo-switch-off-track-bg: var( --kendo-switch-off-track-disabled-bg, #{$kendo-switch-off-track-disabled-bg} );
+                --kendo-switch-off-track-border: var( --kendo-switch-off-track-disabled-border, #{$kendo-switch-off-track-disabled-border} );
             }
 
             .k-switch-thumb {
-                --INTERNAL--kendo-switch-off-thumb-text: var( --kendo-switch-off-thumb-disabled-text, #{$kendo-switch-off-thumb-disabled-text} );
-                --INTERNAL--kendo-switch-off-thumb-bg: var( --kendo-switch-off-thumb-disabled-bg, #{$kendo-switch-off-thumb-disabled-bg} );
-                --INTERNAL--kendo-switch-off-thumb-border: var( --kendo-switch-off-thumb-disabled-border, #{$kendo-switch-off-thumb-disabled-border} );
+                --kendo-switch-off-thumb-text: var( --kendo-switch-off-thumb-disabled-text, #{$kendo-switch-off-thumb-disabled-text} );
+                --kendo-switch-off-thumb-bg: var( --kendo-switch-off-thumb-disabled-bg, #{$kendo-switch-off-thumb-disabled-bg} );
+                --kendo-switch-off-thumb-border: var( --kendo-switch-off-thumb-disabled-border, #{$kendo-switch-off-thumb-disabled-border} );
             }
         }
 
@@ -99,25 +91,17 @@
 
         // Normal state
         .k-switch-track {
-            --INTERNAL--kendo-switch-on-track-text: var( --kendo-switch-on-track-text, #{$kendo-switch-on-track-text} );
-            --INTERNAL--kendo-switch-on-track-bg: var( --kendo-switch-on-track-bg, #{$kendo-switch-on-track-bg} );
-            --INTERNAL--kendo-switch-on-track-border: var( --kendo-switch-on-track-border, #{$kendo-switch-on-track-border} );
-
             @include fill(
-                var( --INTERNAL--kendo-switch-on-track-text, inherit ),
-                var( --INTERNAL--kendo-switch-on-track-bg, transparent ),
-                var( --INTERNAL--kendo-switch-on-track-border, inherit )
+                var( --kendo-switch-on-track-text, #{$kendo-switch-on-track-text} ),
+                var( --kendo-switch-on-track-bg, #{$kendo-switch-on-track-bg} ),
+                var( --kendo-switch-on-track-border, #{$kendo-switch-on-track-border} )
             );
         }
         .k-switch-thumb {
-            --INTERNAL--kendo-switch-on-thumb-text: var( --kendo-switch-on-thumb-text, #{$kendo-switch-on-thumb-text} );
-            --INTERNAL--kendo-switch-on-thumb-bg: var( --kendo-switch-on-thumb-bg, #{$kendo-switch-on-thumb-bg} );
-            --INTERNAL--kendo-switch-on-thumb-border: var( --kendo-switch-on-thumb-border, #{$kendo-switch-on-thumb-border} );
-
             @include fill(
-                var( --INTERNAL--kendo-switch-on-thumb-text, inherit ),
-                var( --INTERNAL--kendo-switch-on-thumb-bg, transparent ),
-                var( --INTERNAL--kendo-switch-on-thumb-border, inherit )
+                var( --kendo-switch-on-thumb-text, #{$kendo-switch-on-thumb-text} ),
+                var( --kendo-switch-on-thumb-bg, #{$kendo-switch-on-thumb-bg} ),
+                var( --kendo-switch-on-thumb-border, #{$kendo-switch-on-thumb-border} )
             );
         }
 
@@ -125,15 +109,15 @@
         &:hover,
         &.k-hover {
             .k-switch-track {
-                --INTERNAL--kendo-switch-on-track-text: var( --kendo-switch-on-track-hover-text, #{$kendo-switch-on-track-hover-text} );
-                --INTERNAL--kendo-switch-on-track-bg: var( --kendo-switch-on-track-hover-bg, #{$kendo-switch-on-track-hover-bg} );
-                --INTERNAL--kendo-switch-on-track-border: var( --kendo-switch-on-track-hover-border, #{$kendo-switch-on-track-hover-border} );
+                --kendo-switch-on-track-text: var( --kendo-switch-on-track-hover-text, #{$kendo-switch-on-track-hover-text} );
+                --kendo-switch-on-track-bg: var( --kendo-switch-on-track-hover-bg, #{$kendo-switch-on-track-hover-bg} );
+                --kendo-switch-on-track-border: var( --kendo-switch-on-track-hover-border, #{$kendo-switch-on-track-hover-border} );
             }
 
             .k-switch-thumb {
-                --INTERNAL--kendo-switch-on-thumb-text: var( --kendo-switch-on-thumb-hover-text, #{$kendo-switch-on-thumb-hover-text} );
-                --INTERNAL--kendo-switch-on-thumb-bg: var( --kendo-switch-on-thumb-hover-bg, #{$kendo-switch-on-thumb-hover-bg} );
-                --INTERNAL--kendo-switch-on-thumb-border: var( --kendo-switch-on-thumb-hover-border, #{$kendo-switch-on-thumb-hover-border} );
+                --kendo-switch-on-thumb-text: var( --kendo-switch-on-thumb-hover-text, #{$kendo-switch-on-thumb-hover-text} );
+                --kendo-switch-on-thumb-bg: var( --kendo-switch-on-thumb-hover-bg, #{$kendo-switch-on-thumb-hover-bg} );
+                --kendo-switch-on-thumb-border: var( --kendo-switch-on-thumb-hover-border, #{$kendo-switch-on-thumb-hover-border} );
             }
         }
 
@@ -141,9 +125,9 @@
         &:focus,
         &.k-focus {
             .k-switch-track {
-                --INTERNAL--kendo-switch-on-track-text: var( --kendo-switch-on-track-focus-text, #{$kendo-switch-on-track-focus-text} );
-                --INTERNAL--kendo-switch-on-track-bg: var( --kendo-switch-on-track-focus-bg, #{$kendo-switch-on-track-focus-bg} );
-                --INTERNAL--kendo-switch-on-track-border: var( --kendo-switch-on-track-focus-border, #{$kendo-switch-on-track-focus-border} );
+                --kendo-switch-on-track-text: var( --kendo-switch-on-track-focus-text, #{$kendo-switch-on-track-focus-text} );
+                --kendo-switch-on-track-bg: var( --kendo-switch-on-track-focus-bg, #{$kendo-switch-on-track-focus-bg} );
+                --kendo-switch-on-track-border: var( --kendo-switch-on-track-focus-border, #{$kendo-switch-on-track-focus-border} );
             }
         }
 
@@ -151,15 +135,15 @@
         &:disabled,
         &.k-disabled {
             .k-switch-track {
-                --INTERNAL--kendo-switch-on-track-text: var( --kendo-switch-on-track-disabled-text, #{$kendo-switch-on-track-disabled-text} );
-                --INTERNAL--kendo-switch-on-track-bg: var( --kendo-switch-on-track-disabled-bg, #{$kendo-switch-on-track-disabled-bg} );
-                --INTERNAL--kendo-switch-on-track-border: var( --kendo-switch-on-track-disabled-border, #{$kendo-switch-on-track-disabled-border} );
+                --kendo-switch-on-track-text: var( --kendo-switch-on-track-disabled-text, #{$kendo-switch-on-track-disabled-text} );
+                --kendo-switch-on-track-bg: var( --kendo-switch-on-track-disabled-bg, #{$kendo-switch-on-track-disabled-bg} );
+                --kendo-switch-on-track-border: var( --kendo-switch-on-track-disabled-border, #{$kendo-switch-on-track-disabled-border} );
             }
 
             .k-switch-thumb {
-                --INTERNAL--kendo-switch-on-thumb-text: var( --kendo-switch-on-thumb-disabled-text, #{$kendo-switch-on-thumb-disabled-text} );
-                --INTERNAL--kendo-switch-on-thumb-bg: var( --kendo-switch-on-thumb-disabled-bg, #{$kendo-switch-on-thumb-disabled-bg} );
-                --INTERNAL--kendo-switch-on-thumb-border: var( --kendo-switch-on-thumb-disabled-border, #{$kendo-switch-on-thumb-disabled-border} );
+                --kendo-switch-on-thumb-text: var( --kendo-switch-on-thumb-disabled-text, #{$kendo-switch-on-thumb-disabled-text} );
+                --kendo-switch-on-thumb-bg: var( --kendo-switch-on-thumb-disabled-bg, #{$kendo-switch-on-thumb-disabled-bg} );
+                --kendo-switch-on-thumb-border: var( --kendo-switch-on-thumb-disabled-border, #{$kendo-switch-on-thumb-disabled-border} );
             }
         }
 

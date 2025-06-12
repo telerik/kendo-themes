@@ -6,15 +6,10 @@
 
     // Theme
     .k-notification {
-        --INTERNAL--kendo-notification-text: var( --kendo-notification-text, #{$kendo-notification-text} );
-        --INTERNAL--kendo-notification-bg: var( --kendo-notification-bg, #{$kendo-notification-bg} );
-        --INTERNAL--kendo-notification-border: var( --kendo-notification-border, #{$kendo-notification-border} );
-        --INTERNAL--kendo-notification-box-shadow: var( --kendo-notification-box-shadow, #{$kendo-notification-box-shadow} );
-
-        color: var( --INTERNAL--kendo-notification-text, initial );
-        background-color: var( --INTERNAL--kendo-notification-bg, initial );
-        border-color: var( --INTERNAL--kendo-notification-border, initial );
-        box-shadow: var( --INTERNAL--kendo-notification-box-shadow, none );
+        color: var( --kendo-notification-text, #{$kendo-notification-text} );
+        background-color: var( --kendo-notification-bg, #{$kendo-notification-bg} );
+        border-color: var( --kendo-notification-border, #{$kendo-notification-border} );
+        box-shadow: var( --kendo-notification-box-shadow, #{$kendo-notification-box-shadow} );
     }
 
     @each $theme-color, $color-props in $kendo-notification-theme-colors {

@@ -69,14 +69,15 @@
     // Time list highlight
     .k-time-highlight,
     .k-time-list-highlight {
-        --INTERNAL--kendo-time-list-title-height: var( --kendo-time-list-title-height, #{$kendo-time-list-title-height} );
+        --kendo-time-list-title-height: #{$kendo-time-list-title-height};
+
         width: 100%;
         height: var( --kendo-time-list-highlight-height, $kendo-time-list-highlight-height );
         border-width: var( --kendo-time-list-highlight-border-width, $kendo-time-list-highlight-border-width );
         border-style: solid;
         box-sizing: border-box;
         position: absolute;
-        top: calc( 50% + var( --INTERNAL--kendo-time-list-title-height ) / 2);
+        top: calc( 50% + var( --kendo-time-list-title-height ) / 2);
         left: 0;
         right: 0;
         transform: translateY(-50%);
@@ -110,14 +111,15 @@
         &.k-focus {
             &::before,
             &::after {
-                --INTERNAL--kendo-time-list-title-highlight-height: var( --kendo-time-list-highlight-height, #{$kendo-time-list-highlight-height} );
+                --kendo-time-list-highlight-height: #{$kendo-time-list-highlight-height};
+
                 display: block;
                 content: "\200b";
                 position: absolute;
                 width: 100%;
                 left: 0;
                 pointer-events: none;
-                height: calc( 50% - ( var( --INTERNAL--kendo-time-list-title-highlight-height ) / 2) );
+                height: calc( 50% - ( var( --kendo-time-list-highlight-height ) / 2) );
                 box-sizing: border-box;
                 border-width: 0;
                 border-style: solid;
@@ -197,7 +199,8 @@
 
     // Time separator
     .k-time-separator {
-        --INTERNAL--kendo-time-list-title-height: var( --kendo-time-list-title-height, #{$kendo-time-list-title-height} );
+        --kendo-time-list-tile-height: #{$kendo-time-list-title-height};
+
         width: 0;
         height: var( --kendo-time-list-highlight-height, $kendo-time-list-highlight-height );
         align-self: center;
@@ -206,7 +209,7 @@
         align-items: center;
         position: relative;
         z-index: 11;
-        top: calc( var( --INTERNAL--kendo-time-list-title-height ) / 2);
+        top: calc( var( --kendo-time-list-title-height ) / 2);
     }
 
 

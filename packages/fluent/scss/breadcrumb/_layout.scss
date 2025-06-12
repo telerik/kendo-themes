@@ -15,8 +15,8 @@
         box-sizing: border-box;
         outline: 0;
         font-family: var( --kendo-breadcrumb-font-family, #{$kendo-breadcrumb-font-family} );
-        font-size: var( --INTERNAL--kendo-breadcrumb-font-size, #{$kendo-breadcrumb-font-size} );
-        line-height: var( --INTERNAL--kendo-breadcrumb-line-height, #{$kendo-breadcrumb-line-height} );
+        font-size: var( --kendo-breadcrumb-font-size, #{$kendo-breadcrumb-font-size} );
+        line-height: var( --kendo-breadcrumb-line-height, #{$kendo-breadcrumb-line-height} );
         display: flex;
         flex-direction: row;
         -webkit-touch-callout: none;
@@ -68,8 +68,8 @@
     .k-breadcrumb-link,
     .k-breadcrumb-root-link {
         @include border-radius( var( --kendo-breadcrumb-border-radius, #{$kendo-breadcrumb-link-border-radius} ) );
-        padding-inline: var( --INTERNAL--kendo-breadcrumb-link-padding-x, #{$kendo-breadcrumb-link-padding-x} );
-        padding-block: var( --INTERNAL--kendo-breadcrumb-link-padding-y, #{$kendo-breadcrumb-link-padding-y} );
+        padding-inline: var( --kendo-breadcrumb-link-padding-x, #{$kendo-breadcrumb-link-padding-x} );
+        padding-block: var( --kendo-breadcrumb-link-padding-y, #{$kendo-breadcrumb-link-padding-y} );
         color: var( --kendo-breadcrumb-link-initial-text, #{$kendo-breadcrumb-link-initial-text} );
         text-decoration: none;
         white-space: nowrap;
@@ -99,8 +99,8 @@
     }
 
     .k-breadcrumb-icon-link {
-        padding-inline: var( --INTERNAL--kendo-breadcrumb-icon-link-padding-x, #{$kendo-breadcrumb-icon-link-padding-x} );
-        padding-block: var( --INTERNAL--kendo-breadcrumb-icon-link-padding-y, #{$kendo-breadcrumb-icon-link-padding-y} );
+        padding-inline: var( --kendo-breadcrumb-icon-link-padding-x, #{$kendo-breadcrumb-icon-link-padding-x} );
+        padding-block: var( --kendo-breadcrumb-icon-link-padding-y, #{$kendo-breadcrumb-icon-link-padding-y} );
     }
 
 
@@ -132,20 +132,20 @@
 
         // Breadcrumb sizes
         .k-breadcrumb-#{$size} {
-            --INTERNAL--kendo-breadcrumb-font-size: var( --kendo-breadcrumb-#{$size}-font-size, #{$_font-size} );
-            --INTERNAL--kendo-breadcrumb-line-height: var( --kendo-breadcrumb-#{$size}-line-height, #{$_line-height} );
+            --kendo-breadcrumb-font-size: var( --kendo-breadcrumb-#{$size}-font-size, #{$_font-size} );
+            --kendo-breadcrumb-line-height: var( --kendo-breadcrumb-#{$size}-line-height, #{$_line-height} );
 
             // Breadcrumb links
             .k-breadcrumb-link,
             .k-breadcrumb-root-link {
-                --INTERNAL--kendo-breadcrumb-link-padding-x: var( --kendo-breadcrumb-#{$size}-link-padding-x, #{$_link-padding-x} );
-                --INTERNAL--kendo-breadcrumb-link-padding-y: var( --kendo-breadcrumb-#{$size}-link-padding-y, #{$_link-padding-y} );
+                --kendo-breadcrumb-link-padding-x: var( --kendo-breadcrumb-#{$size}-link-padding-x, #{$_link-padding-x} );
+                --kendo-breadcrumb-link-padding-y: var( --kendo-breadcrumb-#{$size}-link-padding-y, #{$_link-padding-y} );
             }
 
             // Breadcrumb icon links
             .k-breadcrumb-icon-link {
-                --INTERNAL--kendo-breadcrumb-icon-link-padding-x: var( --kendo-breadcrumb-#{$size}-icon-link-padding-x, #{$_icon-link-padding-x} );
-                --INTERNAL--kendo-breadcrumb-icon-link-padding-y: var( --kendo-breadcrumb-#{$size}-icon-link-padding-y, #{$_icon-link-padding-y} );
+                --kendo-breadcrumb-icon-link-padding-x: var( --kendo-breadcrumb-#{$size}-icon-link-padding-x, #{$_icon-link-padding-x} );
+                --kendo-breadcrumb-icon-link-padding-y: var( --kendo-breadcrumb-#{$size}-icon-link-padding-y, #{$_icon-link-padding-y} );
             }
         }
     }
