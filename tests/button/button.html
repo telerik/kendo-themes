@@ -12,7 +12,8 @@
 <body id="app" class="k-body">
     <style>
         #test-area {
-            grid-template-columns: 120px repeat(6, 1fr);
+            grid-template-columns: 120px repeat(7, 1fr);
+            max-width: 1240px;
         }
 
     </style>
@@ -23,6 +24,7 @@
         <span>Focus</span>
         <span>Active</span>
         <span>Selected</span>
+        <span>Selected+Focus</span>
         <span>Disabled</span>
         <span>base</span>
         <span>
@@ -48,6 +50,11 @@
         <span>
             <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
                 <span class="k-button-text">Selected</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus k-selected">
+                <span class="k-button-text">Selected+Focus</span>
             </button>
         </span>
         <span>
@@ -104,6 +111,16 @@
                     </svg>
                 </span>
                 <span class="k-button-text">Selected</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus k-selected">
+                <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+                <span class="k-button-text">Selected+Focus</span>
             </button>
         </span>
         <span>
@@ -163,6 +180,15 @@
             </button>
         </span>
         <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus k-selected k-icon-button">
+                <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span>
             <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled k-icon-button">
                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -195,6 +221,11 @@
         <span>
             <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-selected">
                 <span class="k-button-text">Selected</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-focus k-selected">
+                <span class="k-button-text">Selected+Focus</span>
             </button>
         </span>
         <span>
@@ -254,6 +285,16 @@
             </button>
         </span>
         <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-focus k-selected">
+                <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+                <span class="k-button-text">Selected+Focus</span>
+            </button>
+        </span>
+        <span>
             <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-disabled">
                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -302,6 +343,15 @@
         </span>
         <span>
             <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-selected k-icon-button">
+                <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-focus k-selected k-icon-button">
                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>

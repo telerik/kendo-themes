@@ -2,7 +2,8 @@ import { IconButton, IconTextButton, TextButton } from '../../button';
 
 const styles = `
     #test-area {
-        grid-template-columns: 120px repeat(6, 1fr);
+        grid-template-columns: 120px repeat(7, 1fr);
+        max-width: 1240px;
     }
 `;
 
@@ -17,6 +18,7 @@ export default () => (
             <span>Focus</span>
             <span>Active</span>
             <span>Selected</span>
+            <span>Selected+Focus</span>
             <span>Disabled</span>
 
             <span>base</span>
@@ -25,6 +27,7 @@ export default () => (
             <span><TextButton focus={true}>Focus</TextButton></span>
             <span><TextButton active={true}>Active</TextButton></span>
             <span><TextButton selected={true}>Selected</TextButton></span>
+            <span><TextButton selected={true} focus={true}>Selected+Focus</TextButton></span>
             <span><TextButton disabled={true}>Disabled</TextButton></span>
 
             <span>^ text + icon</span>
@@ -33,6 +36,7 @@ export default () => (
             <span><IconTextButton focus={true}>Focus</IconTextButton></span>
             <span><IconTextButton active={true}>Active</IconTextButton></span>
             <span><IconTextButton selected={true}>Selected</IconTextButton></span>
+            <span><IconTextButton selected={true} focus={true}>Selected+Focus</IconTextButton></span>
             <span><IconTextButton disabled={true}>Disabled</IconTextButton></span>
 
             <span>^ icon</span>
@@ -41,6 +45,7 @@ export default () => (
             <span><IconButton focus={true}></IconButton></span>
             <span><IconButton active={true}></IconButton></span>
             <span><IconButton selected={true}></IconButton></span>
+            <span><IconButton selected={true} focus={true}></IconButton></span>
             <span><IconButton disabled={true}></IconButton></span>
 
             <span>primary</span>
@@ -49,6 +54,7 @@ export default () => (
             <span><TextButton themeColor="primary" focus={true}>Focus</TextButton></span>
             <span><TextButton themeColor="primary" active={true}>Active</TextButton></span>
             <span><TextButton themeColor="primary" selected={true}>Selected</TextButton></span>
+            <span><TextButton themeColor="primary" selected={true} focus={true}>Selected+Focus</TextButton></span>
             <span><TextButton themeColor="primary" disabled={true}>Disabled</TextButton></span>
 
             <span>^ text + icon</span>
@@ -57,6 +63,7 @@ export default () => (
             <span><IconTextButton themeColor="primary" focus={true}>Focus</IconTextButton></span>
             <span><IconTextButton themeColor="primary" active={true}>Active</IconTextButton></span>
             <span><IconTextButton themeColor="primary" selected={true}>Selected</IconTextButton></span>
+            <span><IconTextButton themeColor="primary" selected={true} focus={true}>Selected+Focus</IconTextButton></span>
             <span><IconTextButton themeColor="primary" disabled={true}>Disabled</IconTextButton></span>
 
             <span>^ icon</span>
@@ -65,6 +72,7 @@ export default () => (
             <span><IconButton themeColor="primary" focus={true}></IconButton></span>
             <span><IconButton themeColor="primary" active={true}></IconButton></span>
             <span><IconButton themeColor="primary" selected={true}></IconButton></span>
+            <span><IconButton themeColor="primary" selected={true} focus={true}></IconButton></span>
             <span><IconButton themeColor="primary" disabled={true}></IconButton></span>
         </div>
     </>
