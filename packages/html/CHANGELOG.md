@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v11.0.3-dev.3...v11.1.0-dev.0) (2025-06-12)
+
+
+### Features
+
+* **html:** add grid highlighted state ([d51e944](https://github.com/telerik/kendo-themes/commit/d51e944d277a1b37b24b85fd21941ce4867c4216))
+
+
+
+
+
 ## [11.0.3-dev.3](https://github.com/telerik/kendo-themes/compare/v11.0.3-dev.2...v11.0.3-dev.3) (2025-06-09)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

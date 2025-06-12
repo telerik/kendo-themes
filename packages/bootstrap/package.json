@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-bootstrap",
   "description": "Bootstrap theme for Kendo UI",
-  "version": "11.0.3-dev.3",
+  "version": "11.1.0-dev.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -53,8 +53,8 @@
   },
   "dependencies": {
     "@progress/kendo-svg-icons": "^4.1.0",
-    "@progress/kendo-theme-core": "11.0.3-dev.3",
-    "@progress/kendo-theme-utils": "11.0.3-dev.3"
+    "@progress/kendo-theme-core": "11.1.0-dev.0",
+    "@progress/kendo-theme-utils": "11.1.0-dev.0"
   },
   "directories": {
     "doc": "docs",

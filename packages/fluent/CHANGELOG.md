@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v11.0.3-dev.3...v11.1.0-dev.0) (2025-06-12)
+
+
+### Bug Fixes
+
+* **grid:** streamline grid state styles ([3702b51](https://github.com/telerik/kendo-themes/commit/3702b51926f2acc8da51a9d48fc6d5c2f4a227e0))
+
+
+### Features
+
+* **grid:** add highlight state styles ([ac739eb](https://github.com/telerik/kendo-themes/commit/ac739eb4fa332e454d3c4998403984bc74e98109))
+
+
+
+
+
 ## [11.0.3-dev.3](https://github.com/telerik/kendo-themes/compare/v11.0.3-dev.2...v11.0.3-dev.3) (2025-06-09)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent

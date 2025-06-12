@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v11.0.3-dev.3...v11.1.0-dev.0) (2025-06-12)
+
+
+### Bug Fixes
+
+* **button:** focus and selected states lack clear visual differentiation ([9e87069](https://github.com/telerik/kendo-themes/commit/9e870695b4b4aaa4e9cd34d6f8ab712c3a03bf93))
+* **grid:** streamline grid state styles ([3702b51](https://github.com/telerik/kendo-themes/commit/3702b51926f2acc8da51a9d48fc6d5c2f4a227e0))
+* **material:** use correct colors for marquee ([a98ef1c](https://github.com/telerik/kendo-themes/commit/a98ef1cd46dc78af7356aa4f2b9ca21d29685da3))
+
+
+### Features
+
+* **grid:** add highlight state styles ([ac739eb](https://github.com/telerik/kendo-themes/commit/ac739eb4fa332e454d3c4998403984bc74e98109))
+* **html:** add grid highlighted state ([d51e944](https://github.com/telerik/kendo-themes/commit/d51e944d277a1b37b24b85fd21941ce4867c4216))
+
+
+
+
+
 ## [11.0.3-dev.3](https://github.com/telerik/kendo-themes/compare/v11.0.3-dev.2...v11.0.3-dev.3) (2025-06-09)
 
 **Note:** Version bump only for package kendo-themes.repo
