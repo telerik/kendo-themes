@@ -7,15 +7,15 @@
 
     // Button
     .k-button {
-        padding-inline: var( --INTERNAL--kendo-button-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-button-padding-y, 0 );
+        padding-inline: var( --kendo-button-padding-x, 0 );
+        padding-block: var( --kendo-button-padding-y, 0 );
         border-width: var( --kendo-button-border-width, #{$kendo-button-border-width} );
         border-style: solid;
         box-sizing: border-box;
         font-family: var( --kendo-button-font-family, #{$kendo-button-font-family} );
-        font-size: var( --INTERNAL--kendo-button-font-size, 1rem );
+        font-size: var( --kendo-button-font-size, 1rem );
         font-weight: var( --kendo-button-font-weight, #{$kendo-button-font-weight} );
-        line-height: var( --INTERNAL--kendo-button-line-height, normal );
+        line-height: var( --kendo-button-line-height, normal );
         text-align: center;
         white-space: nowrap;
         text-decoration: none;
@@ -81,15 +81,15 @@
         $_icon-button-padding: calc( #{$_padding-x} / 2 );
 
         .k-button-#{$size} {
-            --INTERNAL--kendo-button-padding-x: var( --kendo-button-#{$size}-padding-x, #{$_padding-x} );
-            --INTERNAL--kendo-button-padding-y: var( --kendo-button-#{$size}-padding-y, #{$_padding-y} );
-            --INTERNAL--kendo-button-font-size: var( --kendo-button-#{$size}-font-size, #{$_font-size} );
-            --INTERNAL--kendo-button-line-height: var( --kendo-button-#{$size}-line-height, #{$_line-height} );
+            --kendo-button-padding-x: var( --kendo-button-#{$size}-padding-x, #{$_padding-x} );
+            --kendo-button-padding-y: var( --kendo-button-#{$size}-padding-y, #{$_padding-y} );
+            --kendo-button-font-size: var( --kendo-button-#{$size}-font-size, #{$_font-size} );
+            --kendo-button-line-height: var( --kendo-button-#{$size}-line-height, #{$_line-height} );
         }
 
         .k-icon-button.k-button-#{$size} {
-            --INTERNAL--kendo-button-padding-x: var( --kendo-icon-button-#{$size}-padding-y, #{$_padding-y} );
-            --INTERNAL--kendo-button-padding-y: var( --kendo-icon-button-#{$size}-padding-y, #{$_padding-y} );
+            --kendo-button-padding-x: var( --kendo-icon-button-#{$size}-padding-y, #{$_padding-y} );
+            --kendo-button-padding-y: var( --kendo-icon-button-#{$size}-padding-y, #{$_padding-y} );
 
             .k-button-icon {
                 min-width: calc( #{$_font-size} * #{$_line-height} );
@@ -256,10 +256,6 @@
                     opacity: .05;
                 }
             }
-        }
-
-        &.k-disabled {
-            color: color-mix(in srgb, k-color(on-app-surface) 46%, transparent);
         }
     }
 

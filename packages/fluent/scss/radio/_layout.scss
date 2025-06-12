@@ -7,8 +7,8 @@
 
     .k-radio {
         @include border-radius( $kendo-radio-border-radius );
-        width: var( --INTERNAL--kendo-radio-width, 1em );
-        height: var( --INTERNAL--kendo-radio-height, 1em );
+        width: var( --kendo-radio-width, 1em );
+        height: var( --kendo-radio-height, 1em );
         margin: 0;
         padding: 0;
         line-height: initial;
@@ -32,8 +32,8 @@
     .k-radio::before {
         @if $kendo-radio-indicator-type == "pseudo" {
             content: "";
-            width: var( --INTERNAL--kendo-radio-indicator-size, 1em );
-            height: var( --INTERNAL--kendo-radio-indicator-size, 1em );
+            width: var( --kendo-radio-indicator-size, 1em );
+            height: var( --kendo-radio-indicator-size, 1em );
             border-width: 0;
             border-radius: var( --kendo-radio-indicator-border-radius, #{$kendo-radio-indicator-border-radius} );
             background-color: currentColor;
@@ -49,7 +49,7 @@
             width: 1em;
             height: 1em;
             font-family: var( --kendo-radio-glyph-font-family, #{$kendo-radio-glyph-font-family} );
-            font-size: var( --INTERNAL--kendo-radio-glyph-size, 1em );
+            font-size: var( --kendo-radio-glyph-size, 1em );
             line-height: 1;
             transform: scale(0) translate(-50%, -50%);
             overflow: hidden;
@@ -63,7 +63,7 @@
             display: block;
             width: 100%;
             height: 100%;
-            mask-size: var( --INTERNAL--kendo-checkbox-indicator-size, 100% );
+            mask-size: var( --kendo-checkbox-indicator-size, 100% );
             mask-repeat: no-repeat;
         }
     }
@@ -228,8 +228,8 @@
     .k-ripple-container {
         .k-radio::after {
             content: "";
-            width: var( --INTERNAL--kendo-radio-ripple-width, 300% );
-            height: var( --INTERNAL--kendo-radio-ripple-height, 300% );
+            width: var( --kendo-radio-ripple-width, 300% );
+            height: var( --kendo-radio-ripple-height, 300% );
             display: block;
             position: absolute;
             left: 50%;
@@ -262,16 +262,16 @@
         $_ripple-size: map.get( $size-props, ripple-size );
 
         .k-radio-#{$size} {
-            --INTERNAL--kendo-radio-width: #{$_size};
-            --INTERNAL--kendo-radio-height: #{$_size};
-            --INTERNAL--kendo-radio-glyph-size: #{$_glyph-size};
-            --INTERNAL--kendo-radio-indicator-size: #{$_indicator-size};
+            --kendo-radio-width: #{$_size};
+            --kendo-radio-height: #{$_size};
+            --kendo-radio-glyph-size: #{$_glyph-size};
+            --kendo-radio-indicator-size: #{$_indicator-size};
         }
 
         .k-ripple-container {
             .k-radio-#{$size}::after {
-                --INTERNAL--kendo-radio-ripple-width: #{ $_ripple-size };
-                --INTERNAL--kendo-radio-ripple-height: #{ $_ripple-size };
+                --kendo-radio-ripple-width: #{ $_ripple-size };
+                --kendo-radio-ripple-height: #{ $_ripple-size };
             }
         }
     }

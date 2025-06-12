@@ -4,21 +4,17 @@
 @mixin kendo-pager--theme() {
 
     .k-pager {
-        --INTERNAL--kendo-pager-text: var( --kendo-pager-text, #{$kendo-pager-text} );
-        --INTERNAL--kendo-pager-bg: var( --kendo-pager-bg, #{$kendo-pager-bg} );
-        --INTERNAL--kendo-pager-border: var( --kendo-pager-border, #{$kendo-pager-border} );
-
         @include fill(
-            var( --INTERNAL--kendo-pager-text, inherit ),
-            var( --INTERNAL--kendo-pager-bg, transparent),
-            var( --INTERNAL--kendo-pager-border, inherit )
+            var( --kendo-pager-text, #{$kendo-pager-text} ),
+            var( --kendo-pager-bg, #{$kendo-pager-bg} ),
+            var( --kendo-pager-border, #{$kendo-pager-border} )
         );
 
         &:focus,
         &.k-focus {
-            --INTERNAL--kendo-pager-text: var( --kendo-pager-focus-text, #{$kendo-pager-focus-text} );
-            --INTERNAL--kendo-pager-bg: var( --kendo-pager-focus-bg, #{$kendo-pager-focus-bg} );
-            --INTERNAL--kendo-pager-border: var( --kendo-pager-focus-border, #{$kendo-pager-focus-border} );
+            --kendo-pager-text: var( --kendo-pager-focus-text, #{$kendo-pager-focus-text} );
+            --kendo-pager-bg: var( --kendo-pager-focus-bg, #{$kendo-pager-focus-bg} );
+            --kendo-pager-border: var( --kendo-pager-focus-border, #{$kendo-pager-focus-border} );
         }
     }
 

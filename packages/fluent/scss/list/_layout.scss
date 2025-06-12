@@ -21,8 +21,8 @@
         padding: 0;
         box-sizing: border-box;
         font-family: var( --kendo-list-font-family, #{$kendo-list-font-family} );
-        font-size: var( --INTERNAL--kendo-list-font-size, 1rem );
-        line-height: var( --INTERNAL--kendo-list-line-height, normal );
+        font-size: var( --kendo-list-font-size, 1rem );
+        line-height: var( --kendo-list-line-height, normal );
         display: flex;
         flex-flow: column nowrap;
         outline: none;
@@ -46,13 +46,13 @@
 
     // List header
     .k-list-group-sticky-header {
-        padding-inline: var( --INTERNAL--kendo-list-header-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-list-header-padding-y, 0 );
+        padding-inline: var( --kendo-list-header-padding-x, 0 );
+        padding-block: var( --kendo-list-header-padding-y, 0 );
         border-width: 0;
         border-width: var( --kendo-list-header-border-width, #{$kendo-list-header-border-width} );
         border-style: solid;
-        font-size: var( --INTERNAL--kendo-list-header-font-size, 1rem );
-        line-height: var( --INTERNAL--kendo-list-header-line-height, normal );
+        font-size: var( --kendo-list-header-font-size, 1rem );
+        line-height: var( --kendo-list-header-line-height, normal );
         font-weight: var( --kendo-list-header-font-weight, #{$kendo-list-header-font-weight} );
         white-space: nowrap;
         display: flex;
@@ -89,11 +89,11 @@
 
     // List item
     .k-list-item {
-        padding-inline: var( --INTERNAL--kendo-list-item-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-list-item-padding-y, 0 );
+        padding-inline: var( --kendo-list-item-padding-x, 0 );
+        padding-block: var( --kendo-list-item-padding-y, 0 );
         border: 0;
-        font-size: var( --INTERNAL--kendo-list-item-font-size, 1rem );
-        line-height: var( --INTERNAL--kendo-list-item-line-height, normal );
+        font-size: var( --kendo-list-item-font-size, 1rem );
+        line-height: var( --kendo-list-item-line-height, normal );
         outline: none;
         cursor: pointer;
         display: flex;
@@ -138,13 +138,13 @@
 
     // List group item
     .k-list-group-item {
-        padding-inline: var( --INTERNAL--kendo-list-group-item-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-list-group-item-padding-y, 0 );
+        padding-inline: var( --kendo-list-group-item-padding-x, 0 );
+        padding-block: var( --kendo-list-group-item-padding-y, 0 );
         border-width: 0;
         border-width: var( --kendo-list-group-item-border-width, #{$kendo-list-group-item-border-width} );
         border-style: solid;
-        font-size: var( --INTERNAL--kendo-list-group-item-font-size, 1rem );
-        line-height: var( --INTERNAL--kendo-list-group-item-line-height, normal );
+        font-size: var( --kendo-list-group-item-font-size, 1rem );
+        line-height: var( --kendo-list-group-item-line-height, normal );
         font-weight: var( --kendo-list-group-item-font-weight, #{$kendo-list-group-item-font-weight} );
         cursor: default;
         display: flex;
@@ -158,9 +158,9 @@
 
     // List item group label
     .k-list-item-group-label {
-        padding-inline: var( --INTERNAL--kendo-list-item-group-label-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-list-item-group-label-padding-y, 0 );
-        font-size: var( --INTERNAL--kendo-list-item-group-label-font-size, 1rem );
+        padding-inline: var( --kendo-list-item-group-label-padding-x, 0 );
+        padding-block: var( --kendo-list-item-group-label-padding-y, 0 );
+        font-size: var( --kendo-list-item-group-label-font-size, 1rem );
         position: absolute;
         top: 0;
         inset-inline-end: 0;
@@ -225,14 +225,14 @@
 
 
         .k-list-#{$size} {
-            --INTERNAL--kendo-list-font-size: var( --kendo-list-#{$size}-font-size, #{$_font-size} );
-            --INTERNAL--kendo-list-line-height: var( --kendo-list-#{$size}-line-height, #{$_line-height} );
+            --kendo-list-font-size: var( --kendo-list-#{$size}-font-size, #{$_font-size} );
+            --kendo-list-line-height: var( --kendo-list-#{$size}-line-height, #{$_line-height} );
 
             .k-list-group-sticky-header {
-                --INTERNAL--kendo-list-header-padding-x: var( --kendo-list-#{$size}-header-padding-x, #{$_header-padding-x} );
-                --INTERNAL--kendo-list-header-padding-y: var( --kendo-list-#{$size}-header-padding-y, #{$_header-padding-y} );
-                --INTERNAL--kendo-list-header-font-size: var( --kendo-list-#{$size}-header-font-size, #{$_header-font-size} );
-                --INTERNAL--kendo-list-header-line-height: var( --kendo-list-#{$size}-header-line-height, #{$_header-line-height} );
+                --kendo-list-header-padding-x: var( --kendo-list-#{$size}-header-padding-x, #{$_header-padding-x} );
+                --kendo-list-header-padding-y: var( --kendo-list-#{$size}-header-padding-y, #{$_header-padding-y} );
+                --kendo-list-header-font-size: var( --kendo-list-#{$size}-header-font-size, #{$_header-font-size} );
+                --kendo-list-header-line-height: var( --kendo-list-#{$size}-header-line-height, #{$_header-line-height} );
             }
 
             .k-list-filter {
@@ -241,23 +241,23 @@
             }
 
             .k-list-item {
-                --INTERNAL--kendo-list-item-padding-x: var( --kendo-list-#{$size}-item-padding-x, #{$_item-padding-x} );
-                --INTERNAL--kendo-list-item-padding-y: var( --kendo-list-#{$size}-item-padding-y, #{$_item-padding-y} );
-                --INTERNAL--kendo-list-item-font-size: var( --kendo-list-#{$size}-item-font-size, #{$_item-font-size} );
-                --INTERNAL--kendo-list-item-line-height: var( --kendo-list-#{$size}-item-line-height, #{$_item-line-height} );
+                --kendo-list-item-padding-x: var( --kendo-list-#{$size}-item-padding-x, #{$_item-padding-x} );
+                --kendo-list-item-padding-y: var( --kendo-list-#{$size}-item-padding-y, #{$_item-padding-y} );
+                --kendo-list-item-font-size: var( --kendo-list-#{$size}-item-font-size, #{$_item-font-size} );
+                --kendo-list-item-line-height: var( --kendo-list-#{$size}-item-line-height, #{$_item-line-height} );
             }
 
             .k-list-group-item {
-                --INTERNAL--kendo-list-group-item-padding-x: var( --kendo-list-#{$size}-group-item-padding-x, #{$_group-item-padding-x} );
-                --INTERNAL--kendo-list-group-item-padding-y: var( --kendo-list-#{$size}-group-item-padding-y, #{$_group-item-padding-y} );
-                --INTERNAL--kendo-list-group-item-font-size: var( --kendo-list-#{$size}-group-item-font-size, #{$_group-item-font-size} );
-                --INTERNAL--kendo-list-group-item-line-height: var( --kendo-list-#{$size}-group-item-line-height, #{$_group-item-line-height} );
+                --kendo-list-group-item-padding-x: var( --kendo-list-#{$size}-group-item-padding-x, #{$_group-item-padding-x} );
+                --kendo-list-group-item-padding-y: var( --kendo-list-#{$size}-group-item-padding-y, #{$_group-item-padding-y} );
+                --kendo-list-group-item-font-size: var( --kendo-list-#{$size}-group-item-font-size, #{$_group-item-font-size} );
+                --kendo-list-group-item-line-height: var( --kendo-list-#{$size}-group-item-line-height, #{$_group-item-line-height} );
             }
 
             .k-list-item-group-label {
-                --INTERNAL--kendo-list-item-group-label-padding-x: var( --kendo-list-#{$size}-item-group-label-padding-x, #{$_item-group-label-padding-x} );
-                --INTERNAL--kendo-list-item-group-label-padding-y: var( --kendo-list-#{$size}-item-group-label-padding-y, #{$_item-group-label-padding-y} );
-                --INTERNAL--kendo-list-item-group-label-font-size: var( --kendo-list-#{$size}-item-group-label-font-size, #{$_item-group-label-font-size} );
+                --kendo-list-item-group-label-padding-x: var( --kendo-list-#{$size}-item-group-label-padding-x, #{$_item-group-label-padding-x} );
+                --kendo-list-item-group-label-padding-y: var( --kendo-list-#{$size}-item-group-label-padding-y, #{$_item-group-label-padding-y} );
+                --kendo-list-item-group-label-font-size: var( --kendo-list-#{$size}-item-group-label-font-size, #{$_item-group-label-font-size} );
             }
         }
     }

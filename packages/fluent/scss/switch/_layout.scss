@@ -6,10 +6,10 @@
 
     .k-switch {
         box-sizing: border-box;
-        width: var( --INTERNAL--kendo-switch-width, auto );
-        height: var( --INTERNAL--kendo-switch-height, auto );
+        width: var( --kendo-switch-width, auto );
+        height: var( --kendo-switch-height, auto );
         font-family: var( --kendo-switch-font-family, #{$kendo-switch-font-family} );
-        font-size: var( --INTERNAL--kendo-switch-font-size, 1rem );
+        font-size: var( --kendo-switch-font-size, 1rem );
         outline: 0;
         display: inline-flex;
         align-items: center;
@@ -22,10 +22,10 @@
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         &.k-switch-on .k-switch-thumb-wrap {
-            inset-inline-start: calc( 100% - ( var( --INTERNAL--kendo-switch-thumb-width, auto ) / 2 ) - var( --INTERNAL--kendo-switch-thumb-offset, 0 ) );
+            inset-inline-start: calc( 100% - ( var( --kendo-switch-thumb-width, auto ) / 2 ) - var( --kendo-switch-thumb-offset, 0 ) );
         }
         &.k-switch-off .k-switch-thumb-wrap {
-            inset-inline-start: calc( ( var( --INTERNAL--kendo-switch-thumb-width, auto ) / 2 ) + var( --INTERNAL--kendo-switch-thumb-offset, 0 ) );
+            inset-inline-start: calc( ( var( --kendo-switch-thumb-width, auto ) / 2 ) + var( --kendo-switch-thumb-offset, 0 ) );
         }
 
         *,
@@ -64,8 +64,8 @@
 
     // Switch track
     .k-switch-track {
-        width: var( --INTERNAL--kendo-switch-width, auto );
-        height: var( --INTERNAL--kendo-switch-height, auto );
+        width: var( --kendo-switch-width, auto );
+        height: var( --kendo-switch-height, auto );
         border-width: var( --kendo-switch-track-border-width, #{$kendo-switch-track-border-width} );
         border-style: if( $kendo-switch-track-border-width == null, null, solid );
         outline: 0;
@@ -87,8 +87,8 @@
         top: 50%;
     }
     .k-switch-thumb {
-        width: var( --INTERNAL--kendo-switch-thumb-width, auto );
-        height: var( --INTERNAL--kendo-switch-thumb-height, auto );
+        width: var( --kendo-switch-thumb-width, auto );
+        height: var( --kendo-switch-thumb-height, auto );
         border-width: var( --kendo-switch-thumb-border-width, #{$kendo-switch-thumb-border-width} );
         border-style: if( $kendo-switch-thumb-border-width == null, null, solid );
         display: block;
@@ -109,10 +109,10 @@
         overflow: hidden;
     }
     .k-switch-label-on {
-        inset-inline-start: var( --INTERNAL--kendo-switch-label-offset, 0 );
+        inset-inline-start: var( --kendo-switch-label-offset, 0 );
     }
     .k-switch-label-off {
-        inset-inline-end: var( --INTERNAL--kendo-switch-label-offset, 0 );
+        inset-inline-end: var( --kendo-switch-label-offset, 0 );
     }
 
 
@@ -128,22 +128,22 @@
         $_label-offset: map.get( $size-props, label-offset );
 
         .k-switch-#{$size} {
-            --INTERNAL--kendo-switch-width: var( --kendo-switch-#{$size}-width, #{$_track-width} );
-            --INTERNAL--kendo-switch-height: var( --kendo-switch-#{$size}-height, #{$_track-height} );
-            --INTERNAL--kendo-switch-font-size: var( --kendo-switch-#{$size}-font-size, #{$_font-size} );
+            --kendo-switch-width: var( --kendo-switch-#{$size}-width, #{$_track-width} );
+            --kendo-switch-height: var( --kendo-switch-#{$size}-height, #{$_track-height} );
+            --kendo-switch-font-size: var( --kendo-switch-#{$size}-font-size, #{$_font-size} );
 
             .k-switch-label-on,
             .k-switch-label-off {
-                --INTERNAL--kendo-switch-label-offset: var( --kendo-switch-#{$size}-label-offset, #{$_label-offset} );
+                --kendo-switch-label-offset: var( --kendo-switch-#{$size}-label-offset, #{$_label-offset} );
             }
 
             .k-switch-thumb,
             .k-switch-thumb-wrap {
-                --INTERNAL--kendo-switch-thumb-width: var( --kendo-switch-#{$size}-thumb-width, #{$_thumb-width} );
-                --INTERNAL--kendo-switch-thumb-height: var( --kendo-switch-#{$size}-thumb-height, #{$_thumb-height} );
+                --kendo-switch-thumb-width: var( --kendo-switch-#{$size}-thumb-width, #{$_thumb-width} );
+                --kendo-switch-thumb-height: var( --kendo-switch-#{$size}-thumb-height, #{$_thumb-height} );
             }
             .k-switch-thumb-wrap {
-                --INTERNAL--kendo-switch-thumb-offset: var( --kendo-switch-#{$size}-thumb-offset, #{$_thumb-offset} );
+                --kendo-switch-thumb-offset: var( --kendo-switch-#{$size}-thumb-offset, #{$_thumb-offset} );
             }
         }
 
