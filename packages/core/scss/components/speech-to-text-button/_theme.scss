@@ -1,0 +1,7 @@
+@mixin kendo-speech-to-text-button--theme-base() {
+    .k-speech-to-text-button {}
+}
+
+@mixin kendo-speech-to-text-button--theme() {
+    @include kendo-speech-to-text-button--theme-base();
+}

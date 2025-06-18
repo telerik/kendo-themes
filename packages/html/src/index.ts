@@ -26,6 +26,7 @@ export * from './button/index';
 export * from './button-group/index';
 export * from './menu-button/index';
 export * from './split-button/index';
+export * from './speech-to-text-button/index';
 export * from './textbox/index';
 export * from './textarea/index';
 export * from './checkbox/index';

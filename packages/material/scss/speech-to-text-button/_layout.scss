@@ -1,0 +1,5 @@
+@use "@progress/kendo-theme-core/scss/components/speech-to-text-button/_layout.scss" as *;
+
+@mixin kendo-speech-to-text-button--layout() {
+    @include kendo-speech-to-text-button--layout-base();
+}

@@ -1,0 +1,26 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-speech-to-text-button--layout-base() {
+
+    .k-speech-to-text-button {
+        &.k-listening {
+            animation: k-speech-to-text-button-listening 1.5s ease-in-out 0.5s infinite;
+        }
+    }
+
+    @keyframes k-speech-to-text-button-listening {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: $kendo-speech-to-text-button-listening-opacity;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+@mixin kendo-speech-to-text-button--layout() {
+    @include kendo-speech-to-text-button--layout-base();
+}
