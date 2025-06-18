@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v11.1.0-dev.1...v11.1.0-dev.2) (2025-06-18)
+
+
+### Features
+
+* **html:** add form grid layout template ([96cd330](https://github.com/telerik/kendo-themes/commit/96cd330438fd97f8671d49cb596e4d38cdd996d3))
+* **html:** add speech-to-text-button spec and templates ([db123b8](https://github.com/telerik/kendo-themes/commit/db123b8f05d39e3603573d7ca21dde372aba314b))
+* **html:** allow usage of colspan in formfield ([1f4e971](https://github.com/telerik/kendo-themes/commit/1f4e971bc3fddc5f86cde968307eee4a8bd2f337))
+
+
+
+
+
 # [11.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v11.1.0-dev.0...v11.1.0-dev.1) (2025-06-16)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

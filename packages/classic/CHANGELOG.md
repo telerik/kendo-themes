@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v11.1.0-dev.1...v11.1.0-dev.2) (2025-06-18)
+
+
+### Features
+
+* add speech-to-text-button styles ([ea22243](https://github.com/telerik/kendo-themes/commit/ea222435c219045a40f3157c18effd6dad826199))
+
+
+
+
+
 # [11.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v11.1.0-dev.0...v11.1.0-dev.1) (2025-06-16)
 
 **Note:** Version bump only for package @progress/kendo-theme-classic
