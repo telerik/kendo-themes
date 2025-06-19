@@ -262,6 +262,7 @@
 
     // Diagram
     .k-diagram {
+        display: block;
         height: 600px;
     }
 
@@ -381,6 +382,7 @@
 
     // Gauge
     .k-gauge {
+        display: block;
         text-align: start;
         position: relative;
     }
