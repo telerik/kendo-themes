@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v11.1.0-dev.2...v11.1.0-dev.3) (2025-06-23)
+
+
+### Bug Fixes
+
+* **charts:** add display properties to diagram and gauge ([66f8230](https://github.com/telerik/kendo-themes/commit/66f8230cc42e95b1bc56102acd529cc7ea67b318))
+
+
+
+
+
 # [11.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v11.1.0-dev.1...v11.1.0-dev.2) (2025-06-18)
 
 
