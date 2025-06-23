@@ -138,16 +138,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-orgchart-node-container-spacing</td>
-    <td>String</td>
-    <td><code>$kendo-orgchart-spacer</code></td>
-    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the OrgChart node container.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-orgchart-node-group-padding-y</td>
     <td>String</td>
     <td><code>$kendo-orgchart-spacer</code></td>

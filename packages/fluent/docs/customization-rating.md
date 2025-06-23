@@ -108,16 +108,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-rating-item-focus-text</td>
-    <td>String</td>
-    <td><code>$kendo-rating-item-text</code></td>
-    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Rating item.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-rating-item-focus-outline-width</td>
     <td>Number</td>
     <td><code>1px</code></td>

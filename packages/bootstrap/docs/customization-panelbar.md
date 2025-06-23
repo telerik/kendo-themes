@@ -28,26 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-panelbar-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(0)</code></td>
-    <td><code>var(--kendo-spacing-0, 0px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PanelBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-panelbar-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(0)</code></td>
-    <td><code>var(--kendo-spacing-0, 0px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PanelBar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-panelbar-font-family</td>
     <td>String</td>
     <td><code>var( --kendo-font-family, inherit )</code></td>

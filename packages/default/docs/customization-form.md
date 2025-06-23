@@ -58,36 +58,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-form-line-height-em</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-form-line-height} * 1em )</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Form in em units.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-form-sm-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-line-height-sm, normal )</code></td>
-    <td><code>var(--kendo-line-height-sm, normal)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Form.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-form-lg-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-line-height-lg, normal )</code></td>
-    <td><code>var(--kendo-line-height-lg, normal)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large Form.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-form-fieldset-margin</td>
     <td>List</td>
     <td><code>2em 0 0</code></td>
@@ -195,16 +165,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the Form label.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-form-button-margin-x</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Form buttons.</div></div>
     </td>
 </tr>
 <tr>
@@ -368,16 +328,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-forms-invalid-color</td>
-    <td>String</td>
-    <td><code>k-color(error)</code></td>
-    <td><code>var(--kendo-color-error, #f31700)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The invalid text color of the Form.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-label-optional-margin-x</td>
     <td>String</td>
     <td><code>k-spacing(1.5)</code></td>
@@ -415,46 +365,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form fieldset.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fieldset-font-size</td>
-    <td>Calculation</td>
-    <td><code>$kendo-h4-font-size</code></td>
-    <td><code>calc(var(--kendo-font-size, 0.875rem) * 2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Form fieldset.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fieldset-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Form fieldset.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fieldset-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Form fieldset.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fieldset-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Form fieldset.</div></div>
     </td>
 </tr>
 <tr>
@@ -498,16 +408,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-fieldset-legend-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Form legend.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-fieldset-legend-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
@@ -515,16 +415,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Form legend.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fieldset-legend-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Form legend.</div></div>
     </td>
 </tr>
 <tr>

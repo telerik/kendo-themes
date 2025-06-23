@@ -98,46 +98,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-solid-disabled-bg</td>
-    <td>String</td>
-    <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the solid disabled Chip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chip-solid-disabled-border</td>
-    <td>Color</td>
-    <td><code>transparent</code></td>
-    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the solid disabled Chip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chip-outline-disabled-bg</td>
-    <td>String</td>
-    <td><code>var( k-color(surface-alt), transparent )</code></td>
-    <td><code>var(var(--kendo-color-surface-alt, #ffffff), transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline disabled Chip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chip-outline-disabled-border</td>
-    <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline disabled Chip.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-chip-focus-offset</td>
     <td>String</td>
     <td><code>k-spacing(0.5)</code></td>

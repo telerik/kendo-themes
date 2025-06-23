@@ -438,16 +438,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-editor-sm-views-gap</td>
-    <td>String</td>
-    <td><code>$kendo-color-editor-spacer</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the small ColorEditor views container.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-editor-md-views-padding-y</td>
     <td>String</td>
     <td><code>$kendo-color-editor-views-padding-y</code></td>
@@ -468,16 +458,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-editor-md-views-gap</td>
-    <td>String</td>
-    <td><code>$kendo-color-editor-views-gap</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the medium ColorEditor views container.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-editor-lg-views-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(4.5)</code></td>
@@ -495,16 +475,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large ColorEditor views container.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-editor-lg-views-gap</td>
-    <td>String</td>
-    <td><code>k-spacing(4.5)</code></td>
-    <td><code>var(--kendo-spacing-4\.5, 1.125rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the large ColorEditor views container.</div></div>
     </td>
 </tr>
 <tr>

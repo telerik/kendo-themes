@@ -38,16 +38,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-badge-border-radius</td>
-    <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
-    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Badge.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-badge-padding-x</td>
     <td>Number</td>
     <td><code>.65em</code></td>
@@ -130,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-font-size</td>
     <td>Number</td>
-    <td><code>$kendo-font-size * .75</code></td>
+    <td><code>calc( $kendo-font-size * .75)</code></td>
     <td><code>0.75rem</code></td>
 </tr>
 <tr>

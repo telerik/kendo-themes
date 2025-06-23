@@ -108,16 +108,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-spreadsheet-primary-bg</td>
-    <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The primary background color of the Spreadsheet.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-spreadsheet-header-bg</td>
     <td>String</td>
     <td><code>k-color(surface)</code></td>
@@ -175,16 +165,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet table headers.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-selected-text</td>
-    <td>String</td>
-    <td><code>k-color(primary-on-subtle)</code></td>
-    <td><code>var(--kendo-color-primary-on-subtle, #001c30)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Spreadsheet.</div></div>
     </td>
 </tr>
 <tr>
@@ -765,16 +745,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Spreadsheet Menu icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-error-border</td>
-    <td>String</td>
-    <td><code>k-color(error-on-subtle)</code></td>
-    <td><code>var(--kendo-color-error-on-subtle, #420f12)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet error.</div></div>
     </td>
 </tr>
 <tr>

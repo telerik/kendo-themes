@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-header-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-grid-padding-x</code></td>
+    <td><code>$kendo-table-md-cell-padding-x</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-header-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-grid-padding-y</code></td>
+    <td><code>$kendo-table-md-cell-padding-y</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -208,16 +208,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-header-gradient</td>
-    <td>Null</td>
-    <td><code>$kendo-table-header-gradient</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of Grid header.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-footer-bg</td>
     <td>String</td>
     <td><code>$kendo-table-footer-bg</code></td>
@@ -268,16 +258,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-alt-border</td>
-    <td>Null</td>
-    <td><code>$kendo-table-alt-row-border</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid alternating rows.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-table-hover-bg</code></td>
@@ -295,16 +275,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered Grid rows.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-hover-border</td>
-    <td>Null</td>
-    <td><code>$kendo-table-hover-border</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered Grid rows.</div></div>
     </td>
 </tr>
 <tr>
@@ -328,16 +298,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-selected-border</td>
-    <td>Null</td>
-    <td><code>$kendo-table-selected-border</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected Grid rows.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-highlighted-bg</td>
     <td>String</td>
     <td><code>$kendo-table-highlighted-bg</code></td>
@@ -345,26 +305,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of highlighted Grid rows.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-highlighted-text</td>
-    <td>Null</td>
-    <td><code>$kendo-table-highlighted-text</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of highlighted Grid rows.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-highlighted-border</td>
-    <td>Null</td>
-    <td><code>$kendo-table-highlighted-border</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of highlighted Grid rows.</div></div>
     </td>
 </tr>
 <tr>

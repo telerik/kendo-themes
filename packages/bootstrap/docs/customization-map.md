@@ -128,16 +128,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-map-navigator-height</td>
-    <td>Calculation</td>
-    <td><code>$kendo-map-navigator-width</code></td>
-    <td><code>calc(1rem * 3 + var(--kendo-spacing-0\.5, 0.125rem) * 2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Map navigator.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-map-navigator-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -145,36 +135,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Map navigator.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-map-zoom-control-margin</td>
-    <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Map zoom control.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-map-zoom-control-button-padding-x</td>
-    <td>String</td>
-    <td><code>$kendo-button-padding-y</code></td>
-    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Map zoom control.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-map-zoom-control-button-padding-y</td>
-    <td>String</td>
-    <td><code>$kendo-map-zoom-control-button-padding-x</code></td>
-    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Map zoom control.</div></div>
     </td>
 </tr>
 <tr>

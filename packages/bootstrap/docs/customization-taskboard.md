@@ -188,16 +188,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-taskboard-content-padding-x</td>
-    <td>String</td>
-    <td><code>$kendo-taskboard-content-padding-y</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard content.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-taskboard-column-container-spacing-y</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-taskboard-spacer} * .75 )</code></td>

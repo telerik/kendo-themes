@@ -208,16 +208,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-calendar-cell-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
-    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the calendar cell.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-calendar-cell-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(1.5)</code></td>
@@ -235,16 +225,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the calendar cell.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-cell-line-height</td>
-    <td>String</td>
-    <td><code>$kendo-calendar-line-height</code></td>
-    <td><code>var(--kendo-line-height, normal)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the calendar cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -315,16 +295,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the calendar header cell.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-header-cell-bg</td>
-    <td>String</td>
-    <td><code>inherit</code></td>
-    <td><code>inherit</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the calendar header cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -575,26 +545,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the other months calendar cells.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-cell-bg</td>
-    <td>String</td>
-    <td><code>inherit</code></td>
-    <td><code>inherit</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the calendar cells.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-cell-text</td>
-    <td>String</td>
-    <td><code>inherit</code></td>
-    <td><code>inherit</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the calendar cells.</div></div>
     </td>
 </tr>
 <tr>
