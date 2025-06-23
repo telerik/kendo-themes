@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the paragraph.<br /> @group typography</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the paragraph.<br /> @group typography-component</div></div>
     </td>
 </tr>
 </tbody>

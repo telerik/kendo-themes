@@ -108,26 +108,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-slider-button-spacing</td>
-    <td>String</td>
-    <td><code>($kendo-slider-button-size + $kendo-slider-button-offset)</code></td>
-    <td><code>var(--kendo-spacing-9, 2.25rem)var(--kendo-spacing-5\.5, 1.375rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Slider Buttons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-slider-button-focus-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Slider Buttons.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-slider-track-thickness</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -165,16 +145,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition scale of the active Slider drag handle.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-slider-draghandle-active-size</td>
-    <td>String</td>
-    <td><code>k-spacing(5)</code></td>
-    <td><code>var(--kendo-spacing-5, 1.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the active Slider drag handle.</div></div>
     </td>
 </tr>
 <tr>

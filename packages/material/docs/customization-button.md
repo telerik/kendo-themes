@@ -499,26 +499,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-focus-bg</td>
-    <td>String</td>
-    <td><code>k-color(base-active)</code></td>
-    <td><code>var(--kendo-color-base-active, #DED8E0)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the focused Button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-button-focus-text</td>
-    <td>String</td>
-    <td><code>k-color(on-base)</code></td>
-    <td><code>var(--kendo-color-on-base, #4A4459)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the focused Button.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-button-focus-border</td>
     <td>String</td>
     <td><code>k-color(base-emphasis)</code></td>
@@ -526,16 +506,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the focused Button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-button-focus-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of focused Button.</div></div>
     </td>
 </tr>
 <tr>

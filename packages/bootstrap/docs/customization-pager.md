@@ -68,16 +68,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-padding-y</td>
-    <td>String</td>
-    <td><code>$kendo-pager-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Pager.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-pager-sm-padding-y</td>
     <td>String</td>
     <td><code>$kendo-pager-sm-padding-x</code></td>
@@ -258,16 +248,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-section-spacing</td>
-    <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Pager sections.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-pager-item-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -308,16 +288,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-item-text</td>
-    <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Pager items.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-pager-item-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
@@ -328,36 +298,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-item-hover-bg</td>
-    <td>String</td>
-    <td><code>k-color(base-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-base-subtle-hover, #dee2e6)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Pager items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pager-item-hover-text</td>
-    <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover, #0c64e4)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Pager items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pager-item-hover-border</td>
-    <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Pager items.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-pager-item-selected-bg</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
@@ -365,66 +305,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Pager items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pager-item-selected-text</td>
-    <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Pager items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pager-item-selected-border</td>
-    <td>String</td>
-    <td><code>$kendo-pager-item-selected-bg</code></td>
-    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected Pager items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pager-item-focus-opacity</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the focused Pager items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pager-item-focus-bg</td>
-    <td>String</td>
-    <td><code>$kendo-pager-item-bg</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Pager items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pager-item-focus-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 3px color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
-    <td><code>(0 0 0 3px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Pager items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pager-number-border-radius</td>
-    <td>Number</td>
-    <td><code>0px</code></td>
-    <td><code>0px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Pager numbers.</div></div>
     </td>
 </tr>
 <tr>

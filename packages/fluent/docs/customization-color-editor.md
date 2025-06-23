@@ -448,16 +448,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-editor-sm-views-spacing</td>
-    <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the small ColorEditor views container.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-editor-md-views-padding-y</td>
     <td>String</td>
     <td><code>$kendo-color-editor-views-padding-y</code></td>
@@ -475,16 +465,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium ColorEditor views container.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-editor-md-views-spacing</td>
-    <td>String</td>
-    <td><code>$kendo-color-editor-views-spacing</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the medium ColorEditor views container.</div></div>
     </td>
 </tr>
 <tr>
@@ -508,16 +488,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-editor-lg-views-spacing</td>
-    <td>String</td>
-    <td><code>k-spacing(4.5)</code></td>
-    <td><code>var(--kendo-spacing-4\.5, 1.125rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the large ColorEditor views container.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-editor-footer-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
@@ -525,16 +495,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ColorEditor footer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-editor-footer-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the ColorEditor footer.</div></div>
     </td>
 </tr>
 <tr>

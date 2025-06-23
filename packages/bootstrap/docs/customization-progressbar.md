@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-progressbar-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size * .75</code></td>
-    <td><code>0.75rem</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-xs, inherit )</code></td>
+    <td><code>var(--kendo-font-size-xs, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the ProgressBar.</div></div>
@@ -205,26 +205,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the indeterminate ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-indeterminate-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the indeterminate ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-chunk-border</td>
-    <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the chunk ProgressBar.</div></div>
     </td>
 </tr>
 <tr>

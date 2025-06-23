@@ -397,16 +397,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-highlighted-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of highlighted rows in table.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-table-highlighted-font-weight</td>
     <td>String</td>
     <td><code>var( --kendo-font-weight-bold, bold )</code></td>
@@ -414,16 +404,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of highlighted rows in table.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-highlighted-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of highlighted rows in table.</div></div>
     </td>
 </tr>
 <tr>

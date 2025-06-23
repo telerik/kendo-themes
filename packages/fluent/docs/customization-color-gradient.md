@@ -298,16 +298,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-gradient-focus-shadow</td>
-    <td>String</td>
-    <td><code>var( --kendo-box-shadow-depth-3, none )</code></td>
-    <td><code>var(--kendo-box-shadow-depth-3, none)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-gradient-canvas-border-width</td>
     <td>Number</td>
     <td><code>0</code></td>
@@ -415,16 +405,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ColorGradient canvas hsv rectangle.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-gradient-canvas-draghandle-shadow</td>
-    <td>String</td>
-    <td><code>var( --kendo-box-shadow-depth-2, none )</code></td>
-    <td><code>var(--kendo-box-shadow-depth-2, none)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>

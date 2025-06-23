@@ -38,16 +38,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-border-radius</td>
-    <td>Calculation</td>
-    <td><code>calc( #{k-border-radius(md)} / 2 )</code></td>
-    <td><code>calc(var(--kendo-border-radius-md, 0.375rem) / 2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the FAB.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-fab-font-family</td>
     <td>String</td>
     <td><code>var( --kendo-font-family, inherit )</code></td>

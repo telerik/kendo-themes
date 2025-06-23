@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-picker-focus-bg</td>
     <td>Null</td>
-    <td><code>$kendo-button-focus-bg</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-picker-focus-text</td>
     <td>Null</td>
-    <td><code>$kendo-button-focus-text</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-picker-focus-border</td>
     <td>Null</td>
-    <td><code>$kendo-button-focus-border</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-picker-focus-gradient</td>
     <td>Null</td>
-    <td><code>$kendo-button-focus-gradient</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>

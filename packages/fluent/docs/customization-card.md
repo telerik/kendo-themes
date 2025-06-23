@@ -218,16 +218,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-card-header-font-weight</td>
-    <td>String</td>
-    <td><code>var( --kendo-font-weight, initial )</code></td>
-    <td><code>var(--kendo-font-weight, initial)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Card header.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-card-header-line-height</td>
     <td>String</td>
     <td><code>var( --kendo-line-height, normal )</code></td>
@@ -400,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-title-font-weight</td>
     <td>String</td>
-    <td><code>$kendo-card-header-font-weight</code></td>
+    <td><code>var( --kendo-font-weight, initial )</code></td>
     <td><code>var(--kendo-font-weight, initial)</code></td>
 </tr>
 <tr>

@@ -358,26 +358,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes of the Menu popup.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-popup-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-line-height, 30px )</code></td>
-    <td><code>var(--kendo-line-height, 30px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights used along with $kendo-font-size.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-menu-popup-bg</td>
     <td>String</td>
     <td><code>k-color(surface-alt)</code></td>
@@ -455,16 +435,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the Menu item expand icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-popup-focus-outline-offset</td>
-    <td>Calculation</td>
-    <td><code>$kendo-menu-item-focus-outline-offset</code></td>
-    <td><code>calc(var(--kendo-spacing-0\.5, 0.125rem) * -1)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused Menu item in popup.</div></div>
     </td>
 </tr>
 <tr>
@@ -553,26 +523,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered Menu item in popup.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-popup-item-focus-text</td>
-    <td>String</td>
-    <td><code>$kendo-menu-item-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of focused Menu items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-popup-item-focus-bg</td>
-    <td>Color</td>
-    <td><code>$kendo-menu-item-bg</code></td>
-    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of focused Menu items.</div></div>
     </td>
 </tr>
 <tr>

@@ -167,16 +167,6 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the ListBox drop hint.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-listbox-drop-hint-border-width</td>
-    <td>Number</td>
-    <td><code>2px</code></td>
-    <td><code>2px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the ListBox drop hint.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 

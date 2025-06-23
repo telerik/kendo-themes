@@ -393,26 +393,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-selected-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Input components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-input-selected-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Input components.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-input-disabled-bg</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -723,26 +703,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-values-margin-y</td>
-    <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
-    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the clear value icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-input-values-margin-x</td>
-    <td>String</td>
-    <td><code>$kendo-input-values-margin-y</code></td>
-    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the clear value icon.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-input-button-width</td>
     <td>String</td>
     <td><code>unset</code></td>
@@ -790,16 +750,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Input separator.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-input-separator-opacity</td>
-    <td>Number</td>
-    <td><code>.5</code></td>
-    <td><code>0.5</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Input separator.</div></div>
     </td>
 </tr>
 <tr>

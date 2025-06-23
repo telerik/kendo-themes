@@ -138,16 +138,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-orgchart-node-container-gap</td>
-    <td>String</td>
-    <td><code>$kendo-orgchart-spacer</code></td>
-    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the OrgChart node container.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-orgchart-node-group-padding-y</td>
     <td>String</td>
     <td><code>$kendo-orgchart-spacer</code></td>
@@ -305,26 +295,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the OrgChart Card.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-orgchart-card-padding-y</td>
-    <td>String</td>
-    <td><code>$kendo-card-padding-y</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the OrgChart Card.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-orgchart-card-padding-x</td>
-    <td>String</td>
-    <td><code>$kendo-orgchart-card-padding-y</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OrgChart Card.</div></div>
     </td>
 </tr>
 <tr>

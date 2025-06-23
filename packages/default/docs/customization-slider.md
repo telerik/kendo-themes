@@ -38,16 +38,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-slider-tick-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Slider tick.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-slider-alt-size</td>
     <td>Number</td>
     <td><code>30px</code></td>
@@ -108,26 +98,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-slider-button-spacing</td>
-    <td>Number</td>
-    <td><code>($kendo-slider-button-size + $kendo-slider-button-offset)</code></td>
-    <td><code>38px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Slider Buttons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-slider-button-focus-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Slider Buttons.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-slider-track-thickness</td>
     <td>Number</td>
     <td><code>4px</code></td>
@@ -165,16 +135,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition scale of the active Slider drag handle.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-slider-draghandle-active-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the active Slider drag handle.</div></div>
     </td>
 </tr>
 <tr>
@@ -405,16 +365,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background image of the vertical Slider tick.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-slider-tick-marker-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider tick marker.</div></div>
     </td>
 </tr>
 </tbody>

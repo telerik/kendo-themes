@@ -418,36 +418,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-file-manager-listview-item-icon-selected-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the FileManager selected ListView item icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-file-manager-listview-item-icon-selected-text</td>
-    <td>String</td>
-    <td><code>inherit</code></td>
-    <td><code>inherit</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the FileManager selected ListView item icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-file-manager-listview-item-icon-selected-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the FileManager selected ListView item icon.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-file-manager-grid-bg</td>
     <td>Null</td>
     <td><code>null</code></td>
