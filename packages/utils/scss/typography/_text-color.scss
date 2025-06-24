@@ -1,4 +1,249 @@
-// TODO: docs
+/// Sets the text color to the app surface color.
+/// @example color: var(--kendo-color-app-surface, #fafafa);
+/// @name .k-text-app-surface
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the on app surface color.
+/// @example color: var(--kendo-color-on-app-surface, #424242);
+/// @name .k-text-on-app-surface
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the subtle color.
+/// @example color: var(--kendo-color-subtle, #666666);
+/// @name .k-text-subtle
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the surface color.
+/// @example color: var(--kendo-color-surface, #ffffff);
+/// @name .k-text-surface
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the surface alt color.
+/// @example color: var(--kendo-color-surface-alt, #f5f5f5);
+/// @name .k-text-surface-alt
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the border color.
+/// @example color: var(--kendo-color-border, #d9d9d9);
+/// @name .k-text-border
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the border alt color.
+/// @example color: var(--kendo-color-border-alt, #e0e0e0);
+/// @name .k-text-border-alt
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the base subtle color.
+/// @example color: var(--kendo-color-base-subtle, #f0f0f0);
+/// @name .k-text-base-subtle
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the base emphasis color.
+/// @example color: var(--kendo-color-base-emphasis, #000000);
+/// @name .k-text-base-emphasis
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the primary subtle color.
+/// @example color: var(--kendo-color-primary-subtle, #e3f2fd);
+/// @name .k-text-primary-subtle
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the primary color.
+/// @example color: var(--kendo-color-primary, #2196f3);
+/// @name .k-text-primary
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the primary emphasis color.
+/// @example color: var(--kendo-color-primary-emphasis, #1976d2);
+/// @name .k-text-primary-emphasis
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the secondary subtle color.
+/// @example color: var(--kendo-color-secondary-subtle, #f3e5f5);
+/// @name .k-text-secondary-subtle
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the secondary color.
+/// @example color: var(--kendo-color-secondary, #9c27b0);
+/// @name .k-text-secondary
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the secondary emphasis color.
+/// @example color: var(--kendo-color-secondary-emphasis, #7b1fa2);
+/// @name .k-text-secondary-emphasis
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the tertiary subtle color.
+/// @example color: var(--kendo-color-tertiary-subtle, #fff3e0);
+/// @name .k-text-tertiary-subtle
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the tertiary color.
+/// @example color: var(--kendo-color-tertiary, #ff9800);
+/// @name .k-text-tertiary
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the tertiary emphasis color.
+/// @example color: var(--kendo-color-tertiary-emphasis, #f57c00);
+/// @name .k-text-tertiary-emphasis
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the info subtle color.
+/// @example color: var(--kendo-color-info-subtle, #e1f5fe);
+/// @name .k-text-info-subtle
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the info color.
+/// @example color: var(--kendo-color-info, #00bcd4);
+/// @name .k-text-info
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the info emphasis color.
+/// @example color: var(--kendo-color-info-emphasis, #0097a7);
+/// @name .k-text-info-emphasis
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the success subtle color.
+/// @example color: var(--kendo-color-success-subtle, #e8f5e8);
+/// @name .k-text-success-subtle
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the success color.
+/// @example color: var(--kendo-color-success, #4caf50);
+/// @name .k-text-success
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the success emphasis color.
+/// @example color: var(--kendo-color-success-emphasis, #388e3c);
+/// @name .k-text-success-emphasis
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the warning subtle color.
+/// @example color: var(--kendo-color-warning-subtle, #fff8e1);
+/// @name .k-text-warning-subtle
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the warning color.
+/// @example color: var(--kendo-color-warning, #ff9800);
+/// @name .k-text-warning
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the warning emphasis color.
+/// @example color: var(--kendo-color-warning-emphasis, #f57c00);
+/// @name .k-text-warning-emphasis
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the error subtle color.
+/// @example color: var(--kendo-color-error-subtle, #ffebee);
+/// @name .k-text-error-subtle
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the error color.
+/// @example color: var(--kendo-color-error, #f44336);
+/// @name .k-text-error
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the error emphasis color.
+/// @example color: var(--kendo-color-error-emphasis, #d32f2f);
+/// @name .k-text-error-emphasis
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the light subtle color.
+/// @example color: var(--kendo-color-light-subtle, #f8f9fa);
+/// @name .k-text-light-subtle
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the light color.
+/// @example color: var(--kendo-color-light, #f8f9fa);
+/// @name .k-text-light
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the light emphasis color.
+/// @example color: var(--kendo-color-light-emphasis, #dee2e6);
+/// @name .k-text-light-emphasis
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the dark subtle color.
+/// @example color: var(--kendo-color-dark-subtle, #6c757d);
+/// @name .k-text-dark-subtle
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the dark color.
+/// @example color: var(--kendo-color-dark, #343a40);
+/// @name .k-text-dark
+/// @group text-color
+/// @contextType css
+
+/// Sets the text color to the dark emphasis color.
+/// @example color: var(--kendo-color-dark-emphasis, #212529);
+/// @name .k-text-dark-emphasis
+/// @group text-color
+/// @contextType css
+
+/// This is equivalent to `color: inherit;`.
+/// @example color: inherit;
+/// @name .k-text-inherit
+/// @group text-color
+/// @contextType css
+
+/// This is equivalent to `color: currentColor;`.
+/// @example color: currentColor;
+/// @name .k-text-current
+/// @group text-color
+/// @contextType css
+
+/// This is equivalent to `color: transparent;`.
+/// @example color: transparent;
+/// @name .k-text-transparent
+/// @group text-color
+/// @contextType css
+
+/// This is equivalent to `color: black;`.
+/// @example color: black;
+/// @name .k-text-black
+/// @group text-color
+/// @contextType css
+
+/// This is equivalent to `color: white;`.
+/// @example color: white;
+/// @name .k-text-white
+/// @group text-color
+/// @contextType css
+
 @use "sass:map";
 @use "../_globals.scss" as *;
 

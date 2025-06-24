@@ -1,3 +1,27 @@
+/// Sets line height to extra small value.
+/// @example line-height: var(--kendo-line-height-xs, 1);
+/// @name .k-line-height-xs
+/// @group line-height
+/// @contextType css
+
+/// Sets line height to small value.
+/// @example line-height: var(--kendo-line-height-sm, 1.25);
+/// @name .k-line-height-sm
+/// @group line-height
+/// @contextType css
+
+/// Sets line height to medium value.
+/// @example line-height: var(--kendo-line-height-md, 1.4285714286);
+/// @name .k-line-height-md
+/// @group line-height
+/// @contextType css
+
+/// Sets line height to large value.
+/// @example line-height: var(--kendo-line-height-lg, 1.5);
+/// @name .k-line-height-lg
+/// @group line-height
+/// @contextType css
+
 @use "@progress/kendo-theme-core/scss/index.scss" as *;
 @use "../_globals.scss" as *;
 

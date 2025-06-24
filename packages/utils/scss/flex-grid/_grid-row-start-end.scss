@@ -1,19 +1,429 @@
 /// This is equivalent to `grid-row-start: 1;`.
 /// @example grid-row-start: 1;
 /// @name .k-row-start-1
-/// @group grid-row-start
+/// @group grid-row
 /// @contextType css
 
-/// This is equivalent to `grid-row-start: -1;`.
-/// @example grid-row-start: -1;
-/// @name .k-row-start--1
-/// @group grid-row-start
+/// This is equivalent to `grid-row-start: 2;`.
+/// @example grid-row-start: 2;
+/// @name .k-row-start-2
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 3;`.
+/// @example grid-row-start: 3;
+/// @name .k-row-start-3
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 4;`.
+/// @example grid-row-start: 4;
+/// @name .k-row-start-4
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 5;`.
+/// @example grid-row-start: 5;
+/// @name .k-row-start-5
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 6;`.
+/// @example grid-row-start: 6;
+/// @name .k-row-start-6
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 7;`.
+/// @example grid-row-start: 7;
+/// @name .k-row-start-7
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 8;`.
+/// @example grid-row-start: 8;
+/// @name .k-row-start-8
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 9;`.
+/// @example grid-row-start: 9;
+/// @name .k-row-start-9
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 10;`.
+/// @example grid-row-start: 10;
+/// @name .k-row-start-10
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 11;`.
+/// @example grid-row-start: 11;
+/// @name .k-row-start-11
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 12;`.
+/// @example grid-row-start: 12;
+/// @name .k-row-start-12
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 13;`.
+/// @example grid-row-start: 13;
+/// @name .k-row-start-13
+/// @group grid-row
 /// @contextType css
 
 /// This is equivalent to `grid-row-start: auto;`.
 /// @example grid-row-start: auto;
 /// @name .k-row-start-auto
-/// @group grid-row-start
+/// @group grid-row
+/// @contextType css
+
+// ============================================================================
+// Grid row Span Utilities
+// ============================================================================
+
+/// This is equivalent to `grid-row: span 1 / span 1;`.
+/// @example grid-row: span 1 / span 1;
+/// @name .k-row-span-1
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-span: span 2 / span 2;`.
+/// @example grid-row-span: span 2 / span 2;
+/// @name .k-row-span-2
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-span: span 3 / span 3;`.
+/// @example grid-row-span: span 3 / span 3;
+/// @name .k-row-span-3
+/// @group grid-row
+
+/// @contextType css
+/// This is equivalent to `grid-row-start: span 4 / span 4;`.
+/// @example grid-row-start: span 4 / span 4;
+/// @name .k-row-span-4
+/// @group grid-row
+/// @contextType css
+/// This is equivalent to `grid-row-start: span 5 / span 5;`.
+/// @example grid-row-start: span 5 / span 5;
+/// @name .k-row-span-5
+/// @group grid-row
+/// @contextType css
+/// This is equivalent to `grid-row-start: span 6 / span 6;`.
+/// @example grid-row-start: span 6 / span 6;
+/// @name .k-row-span-6
+/// @group grid-row
+/// @contextType css
+/// This is equivalent to `grid-row-start: span 7 / span 7;`.
+/// @example grid-row-start: span 7 / span 7;
+/// @name .k-row-span-7
+/// @group grid-row
+/// @contextType css
+/// This is equivalent to `grid-row-start: span 8 / span 8;`.
+/// @example grid-row-start: span 8 / span 8;
+/// @name .k-row-span-8
+/// @group grid-row
+/// @contextType css
+/// This is equivalent to `grid-row-start: span 9 / span 9;`.
+/// @example grid-row-start: span 9 / span 9;
+/// @name .k-row-span-9
+/// @group grid-row
+/// @contextType css
+/// This is equivalent to `grid-row-start: span 10 / span 10;`.
+/// @example grid-row-start: span 10 / span 10;
+/// @name .k-row-span-10
+/// @group grid-row
+/// @contextType css
+/// This is equivalent to `grid-row-start: span 11 / span 11;`.
+/// @example grid-row-start: span 11 / span 11;
+/// @name .k-row-span-11
+/// @group grid-row
+/// @contextType css
+/// This is equivalent to `grid-row-start: span 12 / span 12;`.
+/// @example grid-row-start: span 12 / span 12;
+/// @name .k-row-span-12
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row: 1 / -1;`.
+/// @example grid-row: 1 / -1;
+/// @name .k-row-span-full
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row: auto;`.
+/// @example grid-row: auto;
+/// @name .k-row-span-auto
+/// @group grid-row
+/// @contextType css
+
+// ============================================================================
+// Grid row End Utilities
+// ============================================================================
+
+/// This is equivalent to `grid-row-end: 1;`.
+/// @example grid-row-end: 1;
+/// @name .k-row-end-1
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 2;`.
+/// @example grid-row-end: 2;
+/// @name .k-row-end-2
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 3;`.
+/// @example grid-row-end: 3;
+/// @name .k-row-end-3
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 4;`.
+/// @example grid-row-end: 4;
+/// @name .k-row-end-4
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 5;`.
+/// @example grid-row-end: 5;
+/// @name .k-row-end-5
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 6;`.
+/// @example grid-row-end: 6;
+/// @name .k-row-end-6
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 7;`.
+/// @example grid-row-end: 7;
+/// @name .k-row-end-7
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 8;`.
+/// @example grid-row-end: 8;
+/// @name .k-row-end-8
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 9;`.
+/// @example grid-row-end: 9;
+/// @name .k-row-end-9
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 10;`.
+/// @example grid-row-end: 10;
+/// @name .k-row-end-10
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 11;`.
+/// @example grid-row-end: 11;
+/// @name .k-row-end-11
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 12;`.
+/// @example grid-row-end: 12;
+/// @name .k-row-end-12
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 13;`.
+/// @example grid-row-end: 13;
+/// @name .k-row-end-13
+/// @group grid-row
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: auto;`.
+/// @example grid-row-end: auto;
+/// @name .k-row-end-auto
+/// @group grid-row
+/// @contextType css
+
+// ============================================================================
+// Responsive Grid row Start Utilities
+// ============================================================================
+
+/// This is equivalent to `grid-row-start: 1; for the specific breakpoint`.
+/// @example grid-row-start: 1;
+/// @name .k-row-start-{xs|sm|md|lg|xl|xxl}-1
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 2; for the specific breakpoint`.
+/// @example grid-row-start: 2;
+/// @name .k-row-start-{xs|sm|md|lg|xl|xxl}-2
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 3; for the specific breakpoint`.
+/// @example grid-row-start: 3;
+/// @name .k-row-start-{xs|sm|md|lg|xl|xxl}-3
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 4; for the specific breakpoint`.
+/// @example grid-row-start: 4;
+/// @name .k-row-start-{xs|sm|md|lg|xl|xxl}-4
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 5; for the specific breakpoint`.
+/// @example grid-row-start: 5;
+/// @name .k-row-start-{xs|sm|md|lg|xl|xxl}-5
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 6; for the specific breakpoint`.
+/// @example grid-row-start: 6;
+/// @name .k-row-start-{xs|sm|md|lg|xl|xxl}-6
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 7; for the specific breakpoint`.
+/// @example grid-row-start: 7;
+/// @name .k-row-start-{xs|sm|md|lg|xl|xxl}-7
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 8; for the specific breakpoint`.
+/// @example grid-row-start: 8;
+/// @name .k-row-start-{xs|sm|md|lg|xl|xxl}-8
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 9; for the specific breakpoint`.
+/// @example grid-row-start: 9;
+/// @name .k-row-start-{xs|sm|md|lg|xl|xxl}-9
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 10; for the specific breakpoint`.
+/// @example grid-row-start: 10;
+/// @name .k-row-start-{xs|sm|md|lg|xl|xxl}-10
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 11; for the specific breakpoint`.
+/// @example grid-row-start: 11;
+/// @name .k-row-start-{xs|sm|md|lg|xl|xxl}-11
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 12; for the specific breakpoint`.
+/// @example grid-row-start: 12;
+/// @name .k-row-start-{xs|sm|md|lg|xl|xxl}-12
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: 13; for the specific breakpoint`.
+/// @example grid-row-start: 13;
+/// @name .k-row-start-{xs|sm|md|lg|xl|xxl}-13
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: auto; for the specific breakpoint`.
+/// @example grid-row-start: auto;
+/// @name .k-row-start-auto
+/// @group grid-row-responsive
+/// @contextType css
+
+// ============================================================================
+// Responsive Grid row End Utilities
+// ============================================================================
+
+/// This is equivalent to `grid-row-end: 1; for the specific breakpoint`.
+/// @example grid-row-end: 1;
+/// @name .k-row-end-{xs|sm|md|lg|xl|xxl}-1
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 2; for the specific breakpoint`.
+/// @example grid-row-end: 2;
+/// @name .k-row-end-{xs|sm|md|lg|xl|xxl}-12
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 3; for the specific breakpoint`.
+/// @example grid-row-end: 3;
+/// @name .k-row-end-{xs|sm|md|lg|xl|xxl}-13
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 4; for the specific breakpoint`.
+/// @example grid-row-end: 4;
+/// @name .k-row-end-{xs|sm|md|lg|xl|xxl}-14
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 5; for the specific breakpoint`.
+/// @example grid-row-end: 5;
+/// @name .k-row-end-{xs|sm|md|lg|xl|xxl}-15
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 6; for the specific breakpoint`.
+/// @example grid-row-end: 6;
+/// @name .k-row-end-{xs|sm|md|lg|xl|xxl}-16
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 7; for the specific breakpoint`.
+/// @example grid-row-end: 7;
+/// @name .k-row-end-{xs|sm|md|lg|xl|xxl}-17
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 8; for the specific breakpoint`.
+/// @example grid-row-end: 8;
+/// @name .k-row-end-{xs|sm|md|lg|xl|xxl}-18
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 9; for the specific breakpoint`.
+/// @example grid-row-end: 9;
+/// @name .k-row-end-{xs|sm|md|lg|xl|xxl}-19
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 10; for the specific breakpoint`.
+/// @example grid-row-end: 10;
+/// @name .k-row-end-{xs|sm|md|lg|xl|xxl}-10
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 11; for the specific breakpoint`.
+/// @example grid-row-end: 11;
+/// @name .k-row-end-{xs|sm|md|lg|xl|xxl}-11
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 12; for the specific breakpoint`.
+/// @example grid-row-end: 12;
+/// @name .k-row-end-{xs|sm|md|lg|xl|xxl}-12
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: 13; for the specific breakpoint`.
+/// @example grid-row-end: 13;
+/// @name .k-row-end-{xs|sm|md|lg|xl|xxl}-13
+/// @group grid-row-responsive
+/// @contextType css
+
+/// This is equivalent to `grid-row-end: auto; for the specific breakpoint`.
+/// @example grid-row-end: auto;
+/// @name .k-row-end-{xs|sm|md|lg|xl|xxl}-1auto
+/// @group grid-row-responsive
 /// @contextType css
 
 @use "sass:map";

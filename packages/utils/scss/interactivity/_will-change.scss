@@ -1,4 +1,26 @@
-// TODO: docs
+/// This is equivalent to `will-change: auto;`.
+/// @example will-change: auto;
+/// @name .k-will-change-auto
+/// @group will-change
+/// @contextType css
+
+/// This is equivalent to `will-change: scroll-position;`.
+/// @example will-change: scroll-position;
+/// @name .k-will-change-scroll
+/// @group will-change
+/// @contextType css
+
+/// This is equivalent to `will-change: contents;`.
+/// @example will-change: contents;
+/// @name .k-will-change-contents
+/// @group will-change
+/// @contextType css
+
+/// This is equivalent to `will-change: transform;`.
+/// @example will-change: transform;
+/// @name .k-will-change-transform
+/// @group will-change
+/// @contextType css
 
 @use "sass:map";
 @use "../_globals.scss" as *;

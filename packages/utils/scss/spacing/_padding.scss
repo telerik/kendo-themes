@@ -1,6 +1,6 @@
 /// This is equivalent to `padding: 0;`.
 /// @example padding: 0;
-/// @name .k-p-0
+/// @name .k-p-{0-30}
 /// @group padding
 /// @contextType css
 
@@ -10,9 +10,15 @@
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding: 0.25rem;`.
-/// @example padding: 0.25rem;
-/// @name .k-p-1
+/// This is equivalent to `padding: 0.125rem;`.
+/// @example padding: 0.125rem;
+/// @name .k-p-0\.5
+/// @group padding
+/// @contextType css
+
+/// This is equivalent to `padding: 0.125rem;`.
+/// @example padding: 0.125rem;
+/// @name .k-p-{xs|sm|md|lg|xl|xxl}-0\.5
 /// @group padding
 /// @contextType css
 
@@ -66,7 +72,7 @@
 
 /// This is equivalent to `padding-top: 0;`.
 /// @example padding-top: 0;
-/// @name .k-pt-0
+/// @name .k-pt-{0-30}
 /// @group padding
 /// @contextType css
 
@@ -76,9 +82,9 @@
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-top: 0.25rem;`.
-/// @example padding-top: 0.25rem;
-/// @name .k-pt-1
+/// This is equivalent to `padding-top: 0.125rem;`.
+/// @example padding-top: 0.125rem;
+/// @name .k-pt-0\.5
 /// @group padding
 /// @contextType css
 
@@ -132,7 +138,7 @@
 
 /// This is equivalent to `padding-right: 0;`.
 /// @example padding-right: 0;
-/// @name .k-pr-0
+/// @name .k-pr-{0-30}
 /// @group padding
 /// @contextType css
 
@@ -142,9 +148,9 @@
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-right: 0.25rem;`.
-/// @example padding-right: 0.25rem;
-/// @name .k-pr-1
+/// This is equivalent to `padding-right: 0.125rem;`.
+/// @example padding-right: 0.125rem;
+/// @name .k-pr-0\.5
 /// @group padding
 /// @contextType css
 
@@ -198,7 +204,7 @@
 
 /// This is equivalent to `padding-bottom: 0;`.
 /// @example padding-bottom: 0;
-/// @name .k-pb-0
+/// @name .k-pb-{0-30}
 /// @group padding
 /// @contextType css
 
@@ -208,9 +214,9 @@
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-bottom: 0.25rem;`.
-/// @example padding-bottom: 0.25rem;
-/// @name .k-pb-1
+/// This is equivalent to `padding-bottom: 0.125rem;`.
+/// @example padding-bottom: 0.125rem;
+/// @name .k-pb-0\.5
 /// @group padding
 /// @contextType css
 
@@ -264,7 +270,7 @@
 
 /// This is equivalent to `padding-left: 0;`.
 /// @example padding-left: 0;
-/// @name .k-pl-0
+/// @name .k-pl-{0-30}
 /// @group padding
 /// @contextType css
 
@@ -274,9 +280,9 @@
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-left: 0.25rem;`.
-/// @example padding-left: 0.25rem;
-/// @name .k-pl-1
+/// This is equivalent to `padding-left: 0.125rem;`.
+/// @example padding-left: 0.125rem;
+/// @name .k-pl-0\.5
 /// @group padding
 /// @contextType css
 
@@ -330,7 +336,7 @@
 
 /// This is equivalent to `padding-inline: 0;`.
 /// @example padding-inline: 0;
-/// @name .k-px-0
+/// @name .k-px-{0-30}
 /// @group padding
 /// @contextType css
 
@@ -340,9 +346,9 @@
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-inline: 0.25rem;`.
-/// @example padding-inline: 0.25rem;
-/// @name .k-px-1
+/// This is equivalent to `padding-inline: 0.125rem;`.
+/// @example padding-inline: 0.125rem;
+/// @name .k-px-0\.5
 /// @group padding
 /// @contextType css
 
@@ -396,7 +402,7 @@
 
 /// This is equivalent to `padding-block: 0;`.
 /// @example padding-block: 0;
-/// @name .k-py-0
+/// @name .k-py-{0-30}
 /// @group padding
 /// @contextType css
 
@@ -406,9 +412,9 @@
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-block: 0.25rem;`.
-/// @example padding-block: 0.25rem;
-/// @name .k-py-1
+/// This is equivalent to `padding-block: 0.125rem;`.
+/// @example padding-block: 0.125rem;
+/// @name .k-py-0\.5
 /// @group padding
 /// @contextType css
 
@@ -458,6 +464,141 @@
 /// @example padding-block: auto;
 /// @name .k-py-auto
 /// @group padding
+/// @contextType css
+
+// ============================================================================
+// Responsive Padding Utilities
+// ============================================================================
+/// This is equivalent to `padding-inline: 0;`.
+/// @example padding-inline: 0;
+/// @name .k-px-{xs|sm|md|lg|xl|xxl}-{0-30}
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-inline: 1px;`.
+/// @example padding-inline: 1px;
+/// @name .k-px-{xs|sm|md|lg|xl|xxl}-1px
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-inline: 0.125rem;`.
+/// @example padding-inline: 0.125rem;
+/// @name .k-px-{xs|sm|md|lg|xl|xxl}-0\.5
+/// @group padding
+/// @contextType css
+
+/// This is equivalent to `padding-inline: 0.25rem;`.
+/// @example padding-inline: 0.25rem;
+/// @name .k-px-{xs|sm|md|lg|xl|xxl}-xs
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-inline: 0.5rem;`.
+/// @example padding-inline: 0.5rem;
+/// @name .k-px-{xs|sm|md|lg|xl|xxl}-sm
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-inline: 0.75rem;`.
+/// @example padding-inline: 0.75rem;
+/// @name .k-px-{xs|sm|md|lg|xl|xxl}-md
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-inline: 1rem;`.
+/// @example padding-inline: 1rem;
+/// @name .k-px-{xs|sm|md|lg|xl|xxl}-lg
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-inline: 1.5rem;`.
+/// @example padding-inline: 1.5rem;
+/// @name .k-px-{xs|sm|md|lg|xl|xxl}-xl
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-inline: 0.125rem;`.
+/// @example padding-inline: 0.125rem;
+/// @name .k-px-{xs|sm|md|lg|xl|xxl}-thin
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-inline: 1px;`.
+/// @example padding-inline: 1px;
+/// @name .k-px-{xs|sm|md|lg|xl|xxl}-hair
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-inline: auto;`.
+/// @example padding-inline: auto;
+/// @name .k-px-{xs|sm|md|lg|xl|xxl}-auto
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-block: 0;`.
+/// @example padding-block: 0;
+/// @name .k-py-{xs|sm|md|lg|xl|xxl}-{0-30}
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-block: 1px;`.
+/// @example padding-block: 1px;
+/// @name .k-py-{xs|sm|md|lg|xl|xxl}-1px
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-block: 0.125rem;`.
+/// @example padding-block: 0.125rem;
+/// @name .k-py-{xs|sm|md|lg|xl|xxl}-0\.5
+/// @group padding
+/// @contextType css
+
+/// This is equivalent to `padding-block: 0.25rem;`.
+/// @example padding-block: 0.25rem;
+/// @name .k-py-{xs|sm|md|lg|xl|xxl}-xs
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-block: 0.5rem;`.
+/// @example padding-block: 0.5rem;
+/// @name .k-py-{xs|sm|md|lg|xl|xxl}-sm
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-block: 0.75rem;`.
+/// @example padding-block: 0.75rem;
+/// @name .k-py-{xs|sm|md|lg|xl|xxl}-md
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-block: 1rem;`.
+/// @example padding-block: 1rem;
+/// @name .k-py-{xs|sm|md|lg|xl|xxl}-lg
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-block: 1.5rem;`.
+/// @example padding-block: 1.5rem;
+/// @name .k-py-{xs|sm|md|lg|xl|xxl}-xl
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-block: 0.125rem;`.
+/// @example padding-block: 0.125rem;
+/// @name .k-py-{xs|sm|md|lg|xl|xxl}-thin
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-block: 1px;`.
+/// @example padding-block: 1px;
+/// @name .k-py-{xs|sm|md|lg|xl|xxl}-hair
+/// @group padding-responsive
+/// @contextType css
+
+/// This is equivalent to `padding-block: auto;`.
+/// @example padding-block: auto;
+/// @name .k-py-{xs|sm|md|lg|xl|xxl}-auto
+/// @group padding-responsive
 /// @contextType css
 
 @use "sass:map";

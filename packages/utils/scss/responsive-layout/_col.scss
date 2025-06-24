@@ -1,3 +1,175 @@
+/// Creates a flexible column that grows to fill available space.
+/// @example flex: 1 0 0%;
+/// @name .k-col
+/// @group col
+/// @contextType css
+
+/// Sets column width to 1% of container.
+/// @example flex: 0 0 auto; width: 1%;
+/// @name .k-col-size-{1-100}
+/// @group col
+/// @contextType css
+
+/// Sets column width to 8.3333% of container (1/12).
+/// @example flex: 0 0 auto; width: 8.3333%;
+/// @name .k-col-size-8-3
+/// @group col
+/// @contextType css
+
+/// Sets column width to 9.0909% of container (1/11).
+/// @example flex: 0 0 auto; width: 9.0909%;
+/// @name .k-col-size-9-1
+/// @group col
+/// @contextType css
+
+/// Sets column width to 11.1111% of container (1/9).
+/// @example flex: 0 0 auto; width: 11.1111%;
+/// @name .k-col-size-11-1
+/// @group col
+/// @contextType css
+
+/// Sets column width to 12.5% of container (1/8).
+/// @example flex: 0 0 auto; width: 12.5%;
+/// @name .k-col-size-12-5
+/// @group col
+/// @contextType css
+
+/// Sets column width to 14.2857% of container (1/7).
+/// @example flex: 0 0 auto; width: 14.2857%;
+/// @name .k-col-size-14-3
+/// @group col
+/// @contextType css
+
+/// Sets column width to 16.6666% of container (1/6).
+/// @example flex: 0 0 auto; width: 16.6666%;
+/// @name .k-col-size-16-7
+/// @group col
+/// @contextType css
+
+/// Sets column width to 33.3333% of container (1/3).
+/// @example flex: 0 0 auto; width: 33.3333%;
+/// @name .k-col-size-33-3
+/// @group col
+/// @contextType css
+
+/// Sets column width to 41.6666% of container (5/12).
+/// @example flex: 0 0 auto; width: 41.6666%;
+/// @name .k-col-size-41-6
+/// @group col
+/// @contextType css
+
+/// Sets column width to 58.3333% of container (7/12).
+/// @example flex: 0 0 auto; width: 58.3333%;
+/// @name .k-col-size-58-3
+/// @group col
+/// @contextType css
+
+/// Sets column width to 66.6666% of container (2/3).
+/// @example flex: 0 0 auto; width: 66.6666%;
+/// @name .k-col-size-66-6
+/// @group col
+/// @contextType css
+
+/// Sets column width to 83.3333% of container (5/6).
+/// @example flex: 0 0 auto; width: 83.3333%;
+/// @name .k-col-size-83-3
+/// @group col
+/// @contextType css
+
+/// Sets column width to 91.6666% of container (11/12).
+/// @example flex: 0 0 auto; width: 91.6666%;
+/// @name .k-col-size-91-6
+/// @group col
+/// @contextType css
+
+// ============================================================================
+// Responsive Gap Utilities
+// ============================================================================
+
+/// Creates a flexible column that grows to fill available space for specific breakpoint.
+/// @example flex: 1 0 0%;
+/// @name .k-col-{sm|md|lg|xl|xxl}
+/// @group col
+/// @contextType css
+
+/// Sets column width to 1% of container for specific breakpoint.
+/// @example flex: 0 0 auto; width: 1%;
+/// @name .k-col-{sm|md|lg|xl|xxl}-size-{1-100}
+/// @group col
+/// @contextType css
+
+/// Sets column width to 8.3333% of container (1/12) for specific breakpoint.
+/// @example flex: 0 0 auto; width: 8.3333%;
+/// @name .k-col-{sm|md|lg|xl|xxl}-size-8-3
+/// @group col
+/// @contextType css
+
+/// Sets column width to 9.0909% of container (1/11) for specific breakpoint.
+/// @example flex: 0 0 auto; width: 9.0909%;
+/// @name .k-col-{sm|md|lg|xl|xxl}-size-9-1
+/// @group col
+/// @contextType css
+
+/// Sets column width to 11.1111% of container (1/9) for specific breakpoint.
+/// @example flex: 0 0 auto; width: 11.1111%;
+/// @name .k-col-{sm|md|lg|xl|xxl}-size-11-1
+/// @group col
+/// @contextType css
+
+/// Sets column width to 12.5% of container (1/8) for specific breakpoint.
+/// @example flex: 0 0 auto; width: 12.5%;
+/// @name .k-col-{sm|md|lg|xl|xxl}-size-12-5
+/// @group col
+/// @contextType css
+
+/// Sets column width to 14.2857% of container (1/7) for specific breakpoint.
+/// @example flex: 0 0 auto; width: 14.2857%;
+/// @name .k-col-{sm|md|lg|xl|xxl}-size-14-3
+/// @group col
+/// @contextType css
+
+/// Sets column width to 16.6666% of container (1/6) for specific breakpoint.
+/// @example flex: 0 0 auto; width: 16.6666%;
+/// @name .k-col-{sm|md|lg|xl|xxl}-size-16-7
+/// @group col
+/// @contextType css
+
+/// Sets column width to 33.3333% of container (1/3) for specific breakpoint.
+/// @example flex: 0 0 auto; width: 33.3333%;
+/// @name .k-col-{sm|md|lg|xl|xxl}-size-33-3
+/// @group col
+/// @contextType css
+
+/// Sets column width to 41.6666% of container (5/12) for specific breakpoint.
+/// @example flex: 0 0 auto; width: 41.6666%;
+/// @name .k-col-{sm|md|lg|xl|xxl}-size-41-6
+/// @group col
+/// @contextType css
+
+/// Sets column width to 58.3333% of container (7/12) for specific breakpoint.
+/// @example flex: 0 0 auto; width: 58.3333%;
+/// @name .k-col-{sm|md|lg|xl|xxl}-size-58-3
+/// @group col
+/// @contextType css
+
+/// Sets column width to 66.6666% of container (2/3) for specific breakpoint.
+/// @example flex: 0 0 auto; width: 66.6666%;
+/// @name .k-col-{sm|md|lg|xl|xxl}-size-66-6
+/// @group col
+/// @contextType css
+
+/// Sets column width to 83.3333% of container (5/6) for specific breakpoint.
+/// @example flex: 0 0 auto; width: 83.3333%;
+/// @name .k-col-{sm|md|lg|xl|xxl}-size-83-3
+/// @group col
+/// @contextType css
+
+/// Sets column width to 91.6666% of container (11/12) for specific breakpoint.
+/// @example flex: 0 0 auto; width: 91.6666%;
+/// @name .k-col-{sm|md|lg|xl|xxl}-size-91-6
+/// @group col
+/// @contextType css
+
 @use "../_globals.scss" as *;
 
 @mixin kendo-utils--responsive-layout--col() {

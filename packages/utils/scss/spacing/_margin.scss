@@ -1,6 +1,12 @@
+/// This is equivalent to `margin: -0.25rem;`.
+/// @example margin: -0.25rem;
+/// @name .k-m--{1-30}
+/// @group margin
+/// @contextType css
+
 /// This is equivalent to `margin: 0;`.
 /// @example margin: 0;
-/// @name .k-m-0
+/// @name .k-m-{0-30}
 /// @group margin
 /// @contextType css
 
@@ -10,21 +16,21 @@
 /// @group margin
 /// @contextType css
 
-/// This is equivalent to `margin: 0.25rem;`.
-/// @example margin: 0.25rem;
-/// @name .k-m-1
-/// @group margin
-/// @contextType css
-
 /// This is equivalent to `margin: -1px;`.
 /// @example margin: -1px;
 /// @name .k-m--1px
 /// @group margin
 /// @contextType css
 
-/// This is equivalent to `margin: -0.25rem;`.
-/// @example margin: -0.25rem;
-/// @name .k-m--1
+/// This is equivalent to `margin: 0.125rem;`.
+/// @example margin: 0.125rem;
+/// @name .k-m-0\.5
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin: -0.125rem;`.
+/// @example margin: -0.125rem;
+/// @name .k-m--0\.5
 /// @group margin
 /// @contextType css
 
@@ -76,9 +82,15 @@
 /// @group margin
 /// @contextType css
 
+/// This is equivalent to `margin-top: -0.25rem;`.
+/// @example margin-top: -0.25rem;
+/// @name .k-mt--{1-30}
+/// @group margin
+/// @contextType css
+
 /// This is equivalent to `margin-top: 0;`.
 /// @example margin-top: 0;
-/// @name .k-mt-0
+/// @name .k-mt-{0-30}
 /// @group margin
 /// @contextType css
 
@@ -88,21 +100,21 @@
 /// @group margin
 /// @contextType css
 
-/// This is equivalent to `margin-top: 0.25rem;`.
-/// @example margin-top: 0.25rem;
-/// @name .k-mt-1
-/// @group margin
-/// @contextType css
-
 /// This is equivalent to `margin-top: -1px;`.
 /// @example margin-top: -1px;
 /// @name .k-mt--1px
 /// @group margin
 /// @contextType css
 
-/// This is equivalent to `margin-top: -0.25rem;`.
-/// @example margin-top: -0.25rem;
-/// @name .k-mt--1
+/// This is equivalent to `margin-top: 0.125rem;`.
+/// @example margin-top: 0.125rem;
+/// @name .k-mt-0\.5
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-top: -0.125rem;`.
+/// @example margin-top: -0.125rem;
+/// @name .k-mt--0\.5
 /// @group margin
 /// @contextType css
 
@@ -154,9 +166,15 @@
 /// @group margin
 /// @contextType css
 
+/// This is equivalent to `margin-right: -0.25rem;`.
+/// @example margin-right: -0.25rem;
+/// @name .k-mr--{1-30}
+/// @group margin
+/// @contextType css
+
 /// This is equivalent to `margin-right: 0;`.
 /// @example margin-right: 0;
-/// @name .k-mr-0
+/// @name .k-mr-{0-30}
 /// @group margin
 /// @contextType css
 
@@ -166,21 +184,21 @@
 /// @group margin
 /// @contextType css
 
-/// This is equivalent to `margin-right: 0.25rem;`.
-/// @example margin-right: 0.25rem;
-/// @name .k-mr-1
-/// @group margin
-/// @contextType css
-
 /// This is equivalent to `margin-right: -1px;`.
 /// @example margin-right: -1px;
 /// @name .k-mr--1px
 /// @group margin
 /// @contextType css
 
-/// This is equivalent to `margin-right: -0.25rem;`.
-/// @example margin-right: -0.25rem;
-/// @name .k-mr--1
+/// This is equivalent to `margin-right: 0.125rem;`.
+/// @example margin-right: 0.125rem;
+/// @name .k-mt-0\.5
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-right: -0.125rem;`.
+/// @example margin-right: -0.125rem;
+/// @name .k-mt--0\.5
 /// @group margin
 /// @contextType css
 
@@ -232,9 +250,15 @@
 /// @group margin
 /// @contextType css
 
+/// This is equivalent to `margin-bottom: -0.25rem;`.
+/// @example margin-bottom: -0.25rem;
+/// @name .k-mb--{1-30}
+/// @group margin
+/// @contextType css
+
 /// This is equivalent to `margin-bottom: 0;`.
 /// @example margin-bottom: 0;
-/// @name .k-mb-0
+/// @name .k-mb-{0-30}
 /// @group margin
 /// @contextType css
 
@@ -244,23 +268,24 @@
 /// @group margin
 /// @contextType css
 
-/// This is equivalent to `margin-bottom: 0.25rem;`.
-/// @example margin-bottom: 0.25rem;
-/// @name .k-mb-1
-/// @group margin
-/// @contextType css
-
 /// This is equivalent to `margin-bottom: -1px;`.
 /// @example margin-bottom: -1px;
 /// @name .k-mb--1px
 /// @group margin
 /// @contextType css
 
-/// This is equivalent to `margin-bottom: -0.25rem;`.
-/// @example margin-bottom: -0.25rem;
-/// @name .k-mb--1
+/// This is equivalent to `margin-bottom: 0.125rem;`.
+/// @example margin-bottom: 0.125rem;
+/// @name .k-mb-0\.5
 /// @group margin
 /// @contextType css
+
+/// This is equivalent to `margin-bottom: -0.125rem;`.
+/// @example margin-bottom: -0.125rem;
+/// @name .k-mb--0\.5
+/// @group margin
+/// @contextType css
+
 
 /// This is equivalent to `margin-bottom: 0.25rem;`.
 /// @example margin-bottom: 0.25rem;
@@ -310,9 +335,15 @@
 /// @group margin
 /// @contextType css
 
+/// This is equivalent to `margin-left: -0.25rem;`.
+/// @example margin-left: -0.25rem;
+/// @name .k-ml--{1-30}
+/// @group margin
+/// @contextType css
+
 /// This is equivalent to `margin-left: 0;`.
 /// @example margin-left: 0;
-/// @name .k-ml-0
+/// @name .k-ml-{0-30}
 /// @group margin
 /// @contextType css
 
@@ -322,21 +353,21 @@
 /// @group margin
 /// @contextType css
 
-/// This is equivalent to `margin-left: 0.25rem;`.
-/// @example margin-left: 0.25rem;
-/// @name .k-ml-1
-/// @group margin
-/// @contextType css
-
 /// This is equivalent to `margin-left: -1px;`.
 /// @example margin-left: -1px;
 /// @name .k-ml--1px
 /// @group margin
 /// @contextType css
 
-/// This is equivalent to `margin-left: -0.25rem;`.
-/// @example margin-left: -0.25rem;
-/// @name .k-ml--1
+/// This is equivalent to `margin-left: 0.125rem;`.
+/// @example margin-left: 0.125rem;
+/// @name .k-ml-0\.5
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-left: -0.125rem;`.
+/// @example margin-left: -0.125rem;
+/// @name .k-ml--0\.5
 /// @group margin
 /// @contextType css
 
@@ -388,9 +419,15 @@
 /// @group margin
 /// @contextType css
 
+/// This is equivalent to `margin-inline: -0.25rem;`.
+/// @example margin-inline: -0.25rem;
+/// @name .k-mx--{1-30}
+/// @group margin
+/// @contextType css
+
 /// This is equivalent to `margin-inline: 0;`.
 /// @example margin-inline: 0;
-/// @name .k-mx-0
+/// @name .k-mx-{0-30}
 /// @group margin
 /// @contextType css
 
@@ -400,21 +437,21 @@
 /// @group margin
 /// @contextType css
 
-/// This is equivalent to `margin-inline: 0.25rem;`.
-/// @example margin-inline: 0.25rem;
-/// @name .k-mx-1
-/// @group margin
-/// @contextType css
-
 /// This is equivalent to `margin-inline: -1px;`.
 /// @example margin-inline: -1px;
 /// @name .k-mx--1px
 /// @group margin
 /// @contextType css
 
-/// This is equivalent to `margin-inline: -0.25rem;`.
-/// @example margin-inline: -0.25rem;
-/// @name .k-mx--1
+/// This is equivalent to `margin-inline: 0.125rem;`.
+/// @example margin-inline: 0.125rem;
+/// @name .k-mx-0\.5
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-inline: -0.125rem;`.
+/// @example margin-inline: -0.125rem;
+/// @name .k-mx--0\.5
 /// @group margin
 /// @contextType css
 
@@ -466,9 +503,15 @@
 /// @group margin
 /// @contextType css
 
+/// This is equivalent to `margin-block: -0.25rem;`.
+/// @example margin-block: -0.25rem;
+/// @name .k-my--{1-30}
+/// @group margin
+/// @contextType css
+
 /// This is equivalent to `margin-block: 0;`.
 /// @example margin-block: 0;
-/// @name .k-my-0
+/// @name .k-my-{0-30}
 /// @group margin
 /// @contextType css
 
@@ -478,21 +521,21 @@
 /// @group margin
 /// @contextType css
 
-/// This is equivalent to `margin-block: 0.25rem;`.
-/// @example margin-block: 0.25rem;
-/// @name .k-my-1
-/// @group margin
-/// @contextType css
-
 /// This is equivalent to `margin-block: -1px;`.
 /// @example margin-block: -1px;
 /// @name .k-my--1px
 /// @group margin
 /// @contextType css
 
-/// This is equivalent to `margin-block: -0.25rem;`.
-/// @example margin-block: -0.25rem;
-/// @name .k-my--1
+/// This is equivalent to `margin-block: 0.125rem;`.
+/// @example margin-block: 0.125rem;
+/// @name .k-my-0\.5
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-block: -0.125rem;`.
+/// @example margin-block: -0.125rem;
+/// @name .k-my--0\.5
 /// @group margin
 /// @contextType css
 
