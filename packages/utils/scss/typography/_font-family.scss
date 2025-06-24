@@ -1,3 +1,27 @@
+/// Sets the font family to the default sans-serif font stack.
+/// @example font-family: var(--kendo-font-family-sans-serif, inherit);
+/// @name .k-font-family-sans-serif
+/// @group font-family
+/// @contextType css
+
+/// Sets the font family to the default monospace font stack.
+/// @example font-family: var(--kendo-font-family-monospace, inherit);
+/// @name .k-font-family-monospace
+/// @group font-family
+/// @contextType css
+
+/// Sets the font family to the default sans font stack.
+/// @example font-family: var(--kendo-font-family-sans, inherit);
+/// @name .k-font-family-sans
+/// @group font-family
+/// @contextType css
+
+/// Sets the font family to the default serif font stack.
+/// @example font-family: var(--kendo-font-family-serif, inherit);
+/// @name .k-font-family-serif
+/// @group font-family
+/// @contextType css
+
 @use "@progress/kendo-theme-core/scss/index.scss" as *;
 @use "../_globals.scss" as *;
 

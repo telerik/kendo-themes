@@ -22,6 +22,34 @@
 /// @group flex-direction
 /// @contextType css
 
+// ============================================================================
+// Responsive Flex Direction Utilities
+// ============================================================================
+
+/// This is equivalent to `flex-direction: row; for the specific breakpoint`.
+/// @example flex-direction: row;
+/// @name .k-flex-{xs|sm|md|lg|xl|xxl}-row
+/// @group flex-direction-responsive
+/// @contextType css
+
+/// This is equivalent to `flex-direction: row-reverse; for the specific breakpoint`.
+/// @example flex-direction: row-reverse;
+/// @name .k-flex-{xs|sm|md|lg|xl|xxl}-row-reverse
+/// @group flex-direction-responsive
+/// @contextType css
+
+/// This is equivalent to `flex-direction: column; for the specific breakpoint`.
+/// @example flex-direction: column;
+/// @name .k-flex-{xs|sm|md|lg|xl|xxl}-col
+/// @group flex-direction-responsive
+/// @contextType css
+
+/// This is equivalent to `flex-direction: column-reverse; for the specific breakpoint`.
+/// @example flex-direction: column-reverse;
+/// @name .k-flex-{xs|sm|md|lg|xl|xxl}-col-reverse
+/// @group flex-direction-responsive
+/// @contextType css
+
 @use "sass:map";
 @use "../_globals.scss" as *;
 

@@ -1,12 +1,18 @@
 /// This is equivalent to `font-style: italic;`.
-/// @example font-style: italic;
-/// @name .k-font-italic
+/// @example font-style: var(--kendo-font-style-italic, italic);
+/// @name .k-font-style-italic
 /// @group font-style
 /// @contextType css
 
 /// This is equivalent to `font-style: normal;`.
-/// @example font-style: normal;
-/// @name .k-font-non-italic
+/// @example font-style: var(--kendo-font-style-non-italic, normal);
+/// @name .k-font-style-non-italic
+/// @group font-style
+/// @contextType css
+
+/// This is equivalent to `font-style: oblique;`.
+/// @example font-style: var(--kendo-font-style-oblique, oblique);
+/// @name .k-font-style-oblique
 /// @group font-style
 /// @contextType css
 

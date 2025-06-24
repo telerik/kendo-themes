@@ -22,6 +22,222 @@
 /// @group background-color
 /// @contextType css
 
+/// Sets the background color to the app surface color.
+/// @example background-color: var(--kendo-color-app-surface, #fafafa);
+/// @name .k-bg-app-surface
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the on app surface color.
+/// @example background-color: var(--kendo-color-on-app-surface, #424242);
+/// @name .k-bg-on-app-surface
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the subtle color.
+/// @example background-color: var(--kendo-color-subtle, #666666);
+/// @name .k-bg-subtle
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the surface color.
+/// @example background-color: var(--kendo-color-surface, #ffffff);
+/// @name .k-bg-surface
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the surface alt color.
+/// @example background-color: var(--kendo-color-surface-alt, #f5f5f5);
+/// @name .k-bg-surface-alt
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the border color.
+/// @example background-color: var(--kendo-color-border, #d9d9d9);
+/// @name .k-bg-border
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the border alt color.
+/// @example background-color: var(--kendo-color-border-alt, #e0e0e0);
+/// @name .k-bg-border-alt
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the base subtle color.
+/// @example background-color: var(--kendo-color-base-subtle, #f0f0f0);
+/// @name .k-bg-base-subtle
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the base emphasis color.
+/// @example background-color: var(--kendo-color-base-emphasis, #000000);
+/// @name .k-bg-base-emphasis
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the primary subtle color.
+/// @example background-color: var(--kendo-color-primary-subtle, #e3f2fd);
+/// @name .k-bg-primary-subtle
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the primary color.
+/// @example background-color: var(--kendo-color-primary, #2196f3);
+/// @name .k-bg-primary
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the primary emphasis color.
+/// @example background-color: var(--kendo-color-primary-emphasis, #1976d2);
+/// @name .k-bg-primary-emphasis
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the secondary subtle color.
+/// @example background-color: var(--kendo-color-secondary-subtle, #f3e5f5);
+/// @name .k-bg-secondary-subtle
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the secondary color.
+/// @example background-color: var(--kendo-color-secondary, #9c27b0);
+/// @name .k-bg-secondary
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the secondary emphasis color.
+/// @example background-color: var(--kendo-color-secondary-emphasis, #7b1fa2);
+/// @name .k-bg-secondary-emphasis
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the tertiary subtle color.
+/// @example background-color: var(--kendo-color-tertiary-subtle, #fff3e0);
+/// @name .k-bg-tertiary-subtle
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the tertiary color.
+/// @example background-color: var(--kendo-color-tertiary, #ff9800);
+/// @name .k-bg-tertiary
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the tertiary emphasis color.
+/// @example background-color: var(--kendo-color-tertiary-emphasis, #f57c00);
+/// @name .k-bg-tertiary-emphasis
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the info subtle color.
+/// @example background-color: var(--kendo-color-info-subtle, #e1f5fe);
+/// @name .k-bg-info-subtle
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the info color.
+/// @example background-color: var(--kendo-color-info, #00bcd4);
+/// @name .k-bg-info
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the info emphasis color.
+/// @example background-color: var(--kendo-color-info-emphasis, #0097a7);
+/// @name .k-bg-info-emphasis
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the success subtle color.
+/// @example background-color: var(--kendo-color-success-subtle, #e8f5e8);
+/// @name .k-bg-success-subtle
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the success color.
+/// @example background-color: var(--kendo-color-success, #4caf50);
+/// @name .k-bg-success
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the success emphasis color.
+/// @example background-color: var(--kendo-color-success-emphasis, #388e3c);
+/// @name .k-bg-success-emphasis
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the warning subtle color.
+/// @example background-color: var(--kendo-color-warning-subtle, #fff8e1);
+/// @name .k-bg-warning-subtle
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the warning color.
+/// @example background-color: var(--kendo-color-warning, #ff9800);
+/// @name .k-bg-warning
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the warning emphasis color.
+/// @example background-color: var(--kendo-color-warning-emphasis, #f57c00);
+/// @name .k-bg-warning-emphasis
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the error subtle color.
+/// @example background-color: var(--kendo-color-error-subtle, #ffebee);
+/// @name .k-bg-error-subtle
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the error color.
+/// @example background-color: var(--kendo-color-error, #f44336);
+/// @name .k-bg-error
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the error emphasis color.
+/// @example background-color: var(--kendo-color-error-emphasis, #d32f2f);
+/// @name .k-bg-error-emphasis
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the light subtle color.
+/// @example background-color: var(--kendo-color-light-subtle, #f8f9fa);
+/// @name .k-bg-light-subtle
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the light color.
+/// @example background-color: var(--kendo-color-light, #f8f9fa);
+/// @name .k-bg-light
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the light emphasis color.
+/// @example background-color: var(--kendo-color-light-emphasis, #dee2e6);
+/// @name .k-bg-light-emphasis
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the dark subtle color.
+/// @example background-color: var(--kendo-color-dark-subtle, #6c757d);
+/// @name .k-bg-dark-subtle
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the dark color.
+/// @example background-color: var(--kendo-color-dark, #343a40);
+/// @name .k-bg-dark
+/// @group background-color
+/// @contextType css
+
+/// Sets the background color to the dark emphasis color.
+/// @example background-color: var(--kendo-color-dark-emphasis, #212529);
+/// @name .k-bg-dark-emphasis
+/// @group background-color
+/// @contextType css
+
 @use "sass:map";
 @use "../_globals.scss" as *;
 

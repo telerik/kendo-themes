@@ -1,3 +1,16 @@
+/// Visually hides an element while keeping it accessible to screen readers.
+/// This class should be assigned to elements which should be visually hidden, but remain accessible for screen readers.
+/// @example margin: -1px; padding: 0; width: 1px; height: 1px; border-width: 0; overflow: hidden; clip: rect(0, 0, 0, 0); position: absolute;
+/// @name .k-sr-only
+/// @group screen-readers
+/// @contextType css
+
+/// Reverses the effect of .k-sr-only, making the element visible again.
+/// @example margin: 0; padding: 0; width: auto; height: auto; border-width: 0; overflow: visible; clip: auto; position: static;
+/// @name .k-not-sr-only
+/// @group screen-readers
+/// @contextType css
+
 // Register
 @use "@progress/kendo-theme-core/scss/mixins/_import-once.scss" as *;
 @use "../_globals.scss" as *;

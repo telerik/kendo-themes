@@ -1,6 +1,6 @@
 /// This is equivalent to `gap: 0;`.
 /// @example gap: 0;
-/// @name .k-gap-0
+/// @name .k-gap-{0-30}
 /// @group gap
 /// @contextType css
 
@@ -10,9 +10,9 @@
 /// @group gap
 /// @contextType css
 
-/// This is equivalent to `gap: 0.25rem;`.
-/// @example gap: 0.25rem;
-/// @name .k-gap-1
+/// This is equivalent to `gap: 0.125rem;`.
+/// @example gap: 0.125rem;
+/// @name .k-gap-0\.5
 /// @group gap
 /// @contextType css
 
@@ -60,7 +60,7 @@
 
 /// This is equivalent to `column-gap: 0;`.
 /// @example column-gap: 0;
-/// @name .k-gap-x-0
+/// @name .k-gap-x-{0-30}
 /// @group gap
 /// @contextType css
 
@@ -70,9 +70,9 @@
 /// @group gap
 /// @contextType css
 
-/// This is equivalent to `column-gap: 0.25rem;`.
-/// @example column-gap: 0.25rem;
-/// @name .k-gap-x-1
+/// This is equivalent to `column-gap: 0.125rem;`.
+/// @example column-gap: 0.125rem;
+/// @name .k-gap-x-0\.5
 /// @group gap
 /// @contextType css
 
@@ -120,7 +120,7 @@
 
 /// This is equivalent to `row-gap: 0;`.
 /// @example row-gap: 0;
-/// @name .k-gap-y-0
+/// @name .k-gap-y-{0-30}
 /// @group gap
 /// @contextType css
 
@@ -130,9 +130,9 @@
 /// @group gap
 /// @contextType css
 
-/// This is equivalent to `row-gap: 0.25rem;`.
-/// @example row-gap: 0.25rem;
-/// @name .k-gap-y-1
+/// This is equivalent to `row-gap: 0.125rem;`.
+/// @example row-gap: 0.125rem;
+/// @name .k-gap-y-0\.5
 /// @group gap
 /// @contextType css
 
@@ -176,6 +176,190 @@
 /// @example row-gap: 1px;
 /// @name .k-gap-y-hair
 /// @group gap
+/// @contextType css
+
+// ============================================================================
+// Responsive Gap Utilities
+// ============================================================================
+
+/// This is equivalent to `gap: 0;`.
+/// @example gap: 0;
+/// @name .k-gap-{xs|sm|md|lg|xl|xxl}-{0-30}
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `gap: 1px;`.
+/// @example gap: 1px;
+/// @name .k-gap-{xs|sm|md|lg|xl|xxl}-1px
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `gap: 0.125rem;`.
+/// @example gap: 0.25rem;
+/// @name .k-gap-{xs|sm|md|lg|xl|xxl}-0\.5
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `gap: 0.25rem;`.
+/// @example gap: 0.25rem;
+/// @name .k-gap-{xs|sm|md|lg|xl|xxl}-xs
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `gap: 0.5rem;`.
+/// @example gap: 0.5rem;
+/// @name .k-gap-{xs|sm|md|lg|xl|xxl}-sm
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `gap: 0.75rem;`.
+/// @example gap: 0.75rem;
+/// @name .k-gap-{xs|sm|md|lg|xl|xxl}-md
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `gap: 1rem;`.
+/// @example gap: 1rem;
+/// @name .k-gap-{xs|sm|md|lg|xl|xxl}-lg
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `gap: 1.5rem;`.
+/// @example gap: 1.5rem;
+/// @name .k-gap-{xs|sm|md|lg|xl|xxl}-xl
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `gap: 0.125rem;`.
+/// @example gap: 0.125rem;
+/// @name .k-gap-{xs|sm|md|lg|xl|xxl}-thin
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `gap: 1px;`.
+/// @example gap: 1px;
+/// @name .k-gap-hair-{xs|sm|md|lg|xl|xxl}
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `column-gap: 0;`.
+/// @example column-gap: 0;
+/// @name .k-gap-x-{xs|sm|md|lg|xl|xxl}-{0-30}
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `column-gap: 1px;`.
+/// @example column-gap: 1px;
+/// @name .k-gap-x-{xs|sm|md|lg|xl|xxl}-1px
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `column-gap: 0.125rem;`.
+/// @example column-gap: 0.125rem;
+/// @name .k-gap-x-{xs|sm|md|lg|xl|xxl}-0\.5
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `column-gap: 0.25rem;`.
+/// @example column-gap: 0.25rem;
+/// @name .k-gap-x-{xs|sm|md|lg|xl|xxl}-xs
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `column-gap: 0.5rem;`.
+/// @example column-gap: 0.5rem;
+/// @name .k-gap-x-{xs|sm|md|lg|xl|xxl}-sm
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `column-gap: 0.75rem;`.
+/// @example column-gap: 0.75rem;
+/// @name .k-gap-x-{xs|sm|md|lg|xl|xxl}-md
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `column-gap: 1rem;`.
+/// @example column-gap: 1rem;
+/// @name .k-gap-x-{xs|sm|md|lg|xl|xxl}-lg
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `column-gap: 1.5rem;`.
+/// @example column-gap: 1.5rem;
+/// @name .k-gap-x-{xs|sm|md|lg|xl|xxl}-xl
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `column-gap: 0.125rem;`.
+/// @example column-gap: 0.125rem;
+/// @name .k-gap-x-{xs|sm|md|lg|xl|xxl}-thin
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `column-gap: 1px;`.
+/// @example column-gap: 1px;
+/// @name .k-gap-x-{xs|sm|md|lg|xl|xxl}-hair
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `row-gap: 0;`.
+/// @example row-gap: 0;
+/// @name .k-gap-y-{xs|sm|md|lg|xl|xxl}-{0-30}
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `row-gap: 1px;`.
+/// @example row-gap: 1px;
+/// @name .k-gap-y-{xs|sm|md|lg|xl|xxl}-1px
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `row-gap: 0.125rem;`.
+/// @example row-gap: 0.125rem;
+/// @name .k-gap-y-{xs|sm|md|lg|xl|xxl}-0\.5
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `row-gap: 0.25rem;`.
+/// @example row-gap: 0.25rem;
+/// @name .k-gap-y-{xs|sm|md|lg|xl|xxl}-xs
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `row-gap: 0.5rem;`.
+/// @example row-gap: 0.5rem;
+/// @name .k-gap-y-{xs|sm|md|lg|xl|xxl}-sm
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `row-gap: 0.75rem;`.
+/// @example row-gap: 0.75rem;
+/// @name .k-gap-y-{xs|sm|md|lg|xl|xxl}-md
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `row-gap: 1rem;`.
+/// @example row-gap: 1rem;
+/// @name .k-gap-y-{xs|sm|md|lg|xl|xxl}-lg
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `row-gap: 1.5rem;`.
+/// @example row-gap: 1.5rem;
+/// @name .k-gap-y-{xs|sm|md|lg|xl|xxl}-xl
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `row-gap: 0.125rem;`.
+/// @example row-gap: 0.125rem;
+/// @name .k-gap-y-{xs|sm|md|lg|xl|xxl}-thin
+/// @group gap-responsive
+/// @contextType css
+
+/// This is equivalent to `row-gap: 1px;`.
+/// @example row-gap: 1px;
+/// @name .k-gap-y-{xs|sm|md|lg|xl|xxl}-hair
+/// @group gap-responsive
 /// @contextType css
 
 @use "sass:map";
