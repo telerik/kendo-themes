@@ -2141,9 +2141,9 @@ This is equivalent to `background-clip: content-box;`.
 
 
 
-### `.k-bg-white`
+### `.k-bg-dark-emphasis`
 
-This is equivalent to `background-color: white;`.
+Sets the background color to the dark emphasis color.
 
 
 
@@ -2165,6 +2165,258 @@ This is equivalent to `background-color: transparent;`.
 ### `.k-bg-black`
 
 This is equivalent to `background-color: black;`.
+
+
+
+
+### `.k-bg-white`
+
+This is equivalent to `background-color: white;`.
+
+
+
+
+### `.k-bg-app-surface`
+
+Sets the background color to the app surface color.
+
+
+
+
+### `.k-bg-on-app-surface`
+
+Sets the background color to the on app surface color.
+
+
+
+
+### `.k-bg-subtle`
+
+Sets the background color to the subtle color.
+
+
+
+
+### `.k-bg-surface`
+
+Sets the background color to the surface color.
+
+
+
+
+### `.k-bg-surface-alt`
+
+Sets the background color to the surface alt color.
+
+
+
+
+### `.k-bg-border`
+
+Sets the background color to the border color.
+
+
+
+
+### `.k-bg-border-alt`
+
+Sets the background color to the border alt color.
+
+
+
+
+### `.k-bg-base-subtle`
+
+Sets the background color to the base subtle color.
+
+
+
+
+### `.k-bg-base-emphasis`
+
+Sets the background color to the base emphasis color.
+
+
+
+
+### `.k-bg-primary-subtle`
+
+Sets the background color to the primary subtle color.
+
+
+
+
+### `.k-bg-primary`
+
+Sets the background color to the primary color.
+
+
+
+
+### `.k-bg-primary-emphasis`
+
+Sets the background color to the primary emphasis color.
+
+
+
+
+### `.k-bg-secondary-subtle`
+
+Sets the background color to the secondary subtle color.
+
+
+
+
+### `.k-bg-secondary`
+
+Sets the background color to the secondary color.
+
+
+
+
+### `.k-bg-secondary-emphasis`
+
+Sets the background color to the secondary emphasis color.
+
+
+
+
+### `.k-bg-tertiary-subtle`
+
+Sets the background color to the tertiary subtle color.
+
+
+
+
+### `.k-bg-tertiary`
+
+Sets the background color to the tertiary color.
+
+
+
+
+### `.k-bg-tertiary-emphasis`
+
+Sets the background color to the tertiary emphasis color.
+
+
+
+
+### `.k-bg-info-subtle`
+
+Sets the background color to the info subtle color.
+
+
+
+
+### `.k-bg-info`
+
+Sets the background color to the info color.
+
+
+
+
+### `.k-bg-info-emphasis`
+
+Sets the background color to the info emphasis color.
+
+
+
+
+### `.k-bg-success-subtle`
+
+Sets the background color to the success subtle color.
+
+
+
+
+### `.k-bg-success`
+
+Sets the background color to the success color.
+
+
+
+
+### `.k-bg-success-emphasis`
+
+Sets the background color to the success emphasis color.
+
+
+
+
+### `.k-bg-warning-subtle`
+
+Sets the background color to the warning subtle color.
+
+
+
+
+### `.k-bg-warning`
+
+Sets the background color to the warning color.
+
+
+
+
+### `.k-bg-warning-emphasis`
+
+Sets the background color to the warning emphasis color.
+
+
+
+
+### `.k-bg-error-subtle`
+
+Sets the background color to the error subtle color.
+
+
+
+
+### `.k-bg-error`
+
+Sets the background color to the error color.
+
+
+
+
+### `.k-bg-error-emphasis`
+
+Sets the background color to the error emphasis color.
+
+
+
+
+### `.k-bg-light-subtle`
+
+Sets the background color to the light subtle color.
+
+
+
+
+### `.k-bg-light`
+
+Sets the background color to the light color.
+
+
+
+
+### `.k-bg-light-emphasis`
+
+Sets the background color to the light emphasis color.
+
+
+
+
+### `.k-bg-dark-subtle`
+
+Sets the background color to the dark subtle color.
+
+
+
+
+### `.k-bg-dark`
+
+Sets the background color to the dark color.
 
 
 
@@ -2267,9 +2519,9 @@ This is equivalent to `border-collapse: collapse;`.
 
 
 
-### `.k-border-white`
+### `.k-border-dark-emphasis`
 
-This is equivalent to `border-color: white;`.
+Sets the border color to the dark emphasis color.
 
 
 
@@ -2298,6 +2550,258 @@ This is equivalent to `border-color: transparent;`.
 ### `.k-border-black`
 
 This is equivalent to `border-color: black;`.
+
+
+
+
+### `.k-border-white`
+
+This is equivalent to `border-color: white;`.
+
+
+
+
+### `.k-border-app-surface`
+
+Sets the border color to the app surface color.
+
+
+
+
+### `.k-border-on-app-surface`
+
+Sets the border color to the on app surface color.
+
+
+
+
+### `.k-border-subtle`
+
+Sets the border color to the subtle color.
+
+
+
+
+### `.k-border-surface`
+
+Sets the border color to the surface color.
+
+
+
+
+### `.k-border-surface-alt`
+
+Sets the border color to the surface alt color.
+
+
+
+
+### `.k-border-border`
+
+Sets the border color to the border color.
+
+
+
+
+### `.k-border-border-alt`
+
+Sets the border color to the border alt color.
+
+
+
+
+### `.k-border-base-subtle`
+
+Sets the border color to the base subtle color.
+
+
+
+
+### `.k-border-base-emphasis`
+
+Sets the border color to the base emphasis color.
+
+
+
+
+### `.k-border-primary-subtle`
+
+Sets the border color to the primary subtle color.
+
+
+
+
+### `.k-border-primary`
+
+Sets the border color to the primary color.
+
+
+
+
+### `.k-border-primary-emphasis`
+
+Sets the border color to the primary emphasis color.
+
+
+
+
+### `.k-border-secondary-subtle`
+
+Sets the border color to the secondary subtle color.
+
+
+
+
+### `.k-border-secondary`
+
+Sets the border color to the secondary color.
+
+
+
+
+### `.k-border-secondary-emphasis`
+
+Sets the border color to the secondary emphasis color.
+
+
+
+
+### `.k-border-tertiary-subtle`
+
+Sets the border color to the tertiary subtle color.
+
+
+
+
+### `.k-border-tertiary`
+
+Sets the border color to the tertiary color.
+
+
+
+
+### `.k-border-tertiary-emphasis`
+
+Sets the border color to the tertiary emphasis color.
+
+
+
+
+### `.k-border-info-subtle`
+
+Sets the border color to the info subtle color.
+
+
+
+
+### `.k-border-info`
+
+Sets the border color to the info color.
+
+
+
+
+### `.k-border-info-emphasis`
+
+Sets the border color to the info emphasis color.
+
+
+
+
+### `.k-border-success-subtle`
+
+Sets the border color to the success subtle color.
+
+
+
+
+### `.k-border-success`
+
+Sets the border color to the success color.
+
+
+
+
+### `.k-border-success-emphasis`
+
+Sets the border color to the success emphasis color.
+
+
+
+
+### `.k-border-warning-subtle`
+
+Sets the border color to the warning subtle color.
+
+
+
+
+### `.k-border-warning`
+
+Sets the border color to the warning color.
+
+
+
+
+### `.k-border-warning-emphasis`
+
+Sets the border color to the warning emphasis color.
+
+
+
+
+### `.k-border-error-subtle`
+
+Sets the border color to the error subtle color.
+
+
+
+
+### `.k-border-error`
+
+Sets the border color to the error color.
+
+
+
+
+### `.k-border-error-emphasis`
+
+Sets the border color to the error emphasis color.
+
+
+
+
+### `.k-border-light-subtle`
+
+Sets the border color to the light subtle color.
+
+
+
+
+### `.k-border-light`
+
+Sets the border color to the light color.
+
+
+
+
+### `.k-border-light-emphasis`
+
+Sets the border color to the light emphasis color.
+
+
+
+
+### `.k-border-dark-subtle`
+
+Sets the border color to the dark subtle color.
+
+
+
+
+### `.k-border-dark`
+
+Sets the border color to the dark color.
 
 
 
@@ -3254,13 +3758,6 @@ This is equivalent to `clear: both;`.
 
 
 
-### `.k-col-size-100`
-
-Sets column width to 100% of container.
-
-
-
-
 ### `.k-col`
 
 Creates a flexible column that grows to fill available space.
@@ -3268,44 +3765,9 @@ Creates a flexible column that grows to fill available space.
 
 
 
-### `.k-col-size-1`
+### `.k-col-size-{1-100}`
 
 Sets column width to 1% of container.
-
-
-
-
-### `.k-col-size-2`
-
-Sets column width to 2% of container.
-
-
-
-
-### `.k-col-size-3`
-
-Sets column width to 3% of container.
-
-
-
-
-### `.k-col-size-4`
-
-Sets column width to 4% of container.
-
-
-
-
-### `.k-col-size-5`
-
-Sets column width to 5% of container.
-
-
-
-
-### `.k-col-size-6`
-
-Sets column width to 6% of container.
 
 
 
@@ -3320,13 +3782,6 @@ Sets column width to 8.3333% of container (1/12).
 ### `.k-col-size-9-1`
 
 Sets column width to 9.0909% of container (1/11).
-
-
-
-
-### `.k-col-size-10`
-
-Sets column width to 10% of container.
 
 
 
@@ -3359,20 +3814,6 @@ Sets column width to 16.6666% of container (1/6).
 
 
 
-### `.k-col-size-20`
-
-Sets column width to 20% of container.
-
-
-
-
-### `.k-col-size-25`
-
-Sets column width to 25% of container.
-
-
-
-
 ### `.k-col-size-33-3`
 
 Sets column width to 33.3333% of container (1/3).
@@ -3383,13 +3824,6 @@ Sets column width to 33.3333% of container (1/3).
 ### `.k-col-size-41-6`
 
 Sets column width to 41.6666% of container (5/12).
-
-
-
-
-### `.k-col-size-50`
-
-Sets column width to 50% of container.
 
 
 
@@ -3408,13 +3842,6 @@ Sets column width to 66.6666% of container (2/3).
 
 
 
-### `.k-col-size-75`
-
-Sets column width to 75% of container.
-
-
-
-
 ### `.k-col-size-83-3`
 
 Sets column width to 83.3333% of container (5/6).
@@ -3429,9 +3856,100 @@ Sets column width to 91.6666% of container (11/12).
 
 
 
-### `.k-col-gap-hair`
+### `.k-col-{sm|md|lg|xl|xxl}`
 
-Sets column gap to hair spacing.
+Creates a flexible column that grows to fill available space for specific breakpoint.
+
+
+
+
+### `.k-col-{sm|md|lg|xl|xxl}-size-{1-100}`
+
+Sets column width to 1% of container for specific breakpoint.
+
+
+
+
+### `.k-col-{sm|md|lg|xl|xxl}-size-8-3`
+
+Sets column width to 8.3333% of container (1/12) for specific breakpoint.
+
+
+
+
+### `.k-col-{sm|md|lg|xl|xxl}-size-9-1`
+
+Sets column width to 9.0909% of container (1/11) for specific breakpoint.
+
+
+
+
+### `.k-col-{sm|md|lg|xl|xxl}-size-11-1`
+
+Sets column width to 11.1111% of container (1/9) for specific breakpoint.
+
+
+
+
+### `.k-col-{sm|md|lg|xl|xxl}-size-12-5`
+
+Sets column width to 12.5% of container (1/8) for specific breakpoint.
+
+
+
+
+### `.k-col-{sm|md|lg|xl|xxl}-size-14-3`
+
+Sets column width to 14.2857% of container (1/7) for specific breakpoint.
+
+
+
+
+### `.k-col-{sm|md|lg|xl|xxl}-size-16-7`
+
+Sets column width to 16.6666% of container (1/6) for specific breakpoint.
+
+
+
+
+### `.k-col-{sm|md|lg|xl|xxl}-size-33-3`
+
+Sets column width to 33.3333% of container (1/3) for specific breakpoint.
+
+
+
+
+### `.k-col-{sm|md|lg|xl|xxl}-size-41-6`
+
+Sets column width to 41.6666% of container (5/12) for specific breakpoint.
+
+
+
+
+### `.k-col-{sm|md|lg|xl|xxl}-size-58-3`
+
+Sets column width to 58.3333% of container (7/12) for specific breakpoint.
+
+
+
+
+### `.k-col-{sm|md|lg|xl|xxl}-size-66-6`
+
+Sets column width to 66.6666% of container (2/3) for specific breakpoint.
+
+
+
+
+### `.k-col-{sm|md|lg|xl|xxl}-size-83-3`
+
+Sets column width to 83.3333% of container (5/6) for specific breakpoint.
+
+
+
+
+### `.k-col-{sm|md|lg|xl|xxl}-size-91-6`
+
+Sets column width to 91.6666% of container (11/12) for specific breakpoint.
 
 
 
@@ -3754,6 +4272,342 @@ Sets column gap to extra large spacing.
 ### `.k-col-gap-thin`
 
 Sets column gap to thin spacing.
+
+
+
+
+### `.k-col-gap-hair`
+
+Sets column gap to hair spacing.
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-7`
+
+Sets column gap to 1.75rem (28px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-0`
+
+Sets column gap to 0 pixels.
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-1px`
+
+Sets column gap to 1 pixel.
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-0\.5`
+
+Sets column gap to 0.125rem (2px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-1`
+
+Sets column gap to 0.25rem (4px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-1\.5`
+
+Sets column gap to 0.375rem (6px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-2`
+
+Sets column gap to 0.5rem (8px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-2\.5`
+
+Sets column gap to 0.625rem (10px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-3`
+
+Sets column gap to 0.75rem (12px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-3\.5`
+
+Sets column gap to 0.875rem (14px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-4`
+
+Sets column gap to 1rem (16px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-4\.5`
+
+Sets column gap to 1.125rem (18px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-5`
+
+Sets column gap to 1.25rem (20px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-5\.5`
+
+Sets column gap to 1.375rem (22px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-6`
+
+Sets column gap to 1.5rem (24px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-6\.5`
+
+Sets column gap to 1.625rem (26px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-7\.5`
+
+Sets column gap to 1.875rem (30px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-8`
+
+Sets column gap to 2rem (32px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-9`
+
+Sets column gap to 2.25rem (36px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-10`
+
+Sets column gap to 2.5rem (40px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-11`
+
+Sets column gap to 2.75rem (44px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-12`
+
+Sets column gap to 3rem (48px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-13`
+
+Sets column gap to 3.25rem (52px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-14`
+
+Sets column gap to 3.5rem (56px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-15`
+
+Sets column gap to 3.75rem (60px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-16`
+
+Sets column gap to 4rem (64px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-17`
+
+Sets column gap to 4.25rem (68px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-18`
+
+Sets column gap to 4.5rem (72px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-19`
+
+Sets column gap to 4.75rem (76px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-20`
+
+Sets column gap to 5rem (80px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-21`
+
+Sets column gap to 5.25rem (84px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-22`
+
+Sets column gap to 5.5rem (88px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-23`
+
+Sets column gap to 5.75rem (92px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-24`
+
+Sets column gap to 6rem (96px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-25`
+
+Sets column gap to 7rem (112px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-26`
+
+Sets column gap to 8rem (128px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-27`
+
+Sets column gap to 9rem (144px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-28`
+
+Sets column gap to 10rem (160px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-29`
+
+Sets column gap to 11rem (176px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-30`
+
+Sets column gap to 12rem (192px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-xs`
+
+Sets column gap to extra small spacing.
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-sm`
+
+Sets column gap to small spacing.
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-md`
+
+Sets column gap to medium spacing.
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-lg`
+
+Sets column gap to large spacing.
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-xl`
+
+Sets column gap to extra large spacing.
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-thin`
+
+Sets column gap to thin spacing.
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-hair`
+
+Sets column gap to hair spacing.
 
 
 
@@ -4150,170 +5004,30 @@ This is equivalent to `flex-direction: column-reverse;`.
 
 
 
-### `.k-flex-xxl-col-reverse`
+### `.k-flex-{xs|sm|md|lg|xl|xxl}-row`
 
-Responsive: Sets flex-direction to column-reverse on xxl screens and up.
+This is equivalent to `flex-direction: row; for the specific breakpoint`.
 
 
 
 
-### `.k-flex-xs-row`
+### `.k-flex-{xs|sm|md|lg|xl|xxl}-row-reverse`
 
-Responsive: Sets flex-direction to row on xs screens and up.
+This is equivalent to `flex-direction: row-reverse; for the specific breakpoint`.
 
 
 
 
-### `.k-flex-xs-row-reverse`
+### `.k-flex-{xs|sm|md|lg|xl|xxl}-col`
 
-Responsive: Sets flex-direction to row-reverse on xs screens and up.
+This is equivalent to `flex-direction: column; for the specific breakpoint`.
 
 
 
 
-### `.k-flex-xs-col`
+### `.k-flex-{xs|sm|md|lg|xl|xxl}-col-reverse`
 
-Responsive: Sets flex-direction to column on xs screens and up.
-
-
-
-
-### `.k-flex-xs-col-reverse`
-
-Responsive: Sets flex-direction to column-reverse on xs screens and up.
-
-
-
-
-### `.k-flex-sm-row`
-
-Responsive: Sets flex-direction to row on sm screens and up.
-
-
-
-
-### `.k-flex-sm-row-reverse`
-
-Responsive: Sets flex-direction to row-reverse on sm screens and up.
-
-
-
-
-### `.k-flex-sm-col`
-
-Responsive: Sets flex-direction to column on sm screens and up.
-
-
-
-
-### `.k-flex-sm-col-reverse`
-
-Responsive: Sets flex-direction to column-reverse on sm screens and up.
-
-
-
-
-### `.k-flex-md-row`
-
-Responsive: Sets flex-direction to row on md screens and up.
-
-
-
-
-### `.k-flex-md-row-reverse`
-
-Responsive: Sets flex-direction to row-reverse on md screens and up.
-
-
-
-
-### `.k-flex-md-col`
-
-Responsive: Sets flex-direction to column on md screens and up.
-
-
-
-
-### `.k-flex-md-col-reverse`
-
-Responsive: Sets flex-direction to column-reverse on md screens and up.
-
-
-
-
-### `.k-flex-lg-row`
-
-Responsive: Sets flex-direction to row on lg screens and up.
-
-
-
-
-### `.k-flex-lg-row-reverse`
-
-Responsive: Sets flex-direction to row-reverse on lg screens and up.
-
-
-
-
-### `.k-flex-lg-col`
-
-Responsive: Sets flex-direction to column on lg screens and up.
-
-
-
-
-### `.k-flex-lg-col-reverse`
-
-Responsive: Sets flex-direction to column-reverse on lg screens and up.
-
-
-
-
-### `.k-flex-xl-row`
-
-Responsive: Sets flex-direction to row on xl screens and up.
-
-
-
-
-### `.k-flex-xl-row-reverse`
-
-Responsive: Sets flex-direction to row-reverse on xl screens and up.
-
-
-
-
-### `.k-flex-xl-col`
-
-Responsive: Sets flex-direction to column on xl screens and up.
-
-
-
-
-### `.k-flex-xl-col-reverse`
-
-Responsive: Sets flex-direction to column-reverse on xl screens and up.
-
-
-
-
-### `.k-flex-xxl-row`
-
-Responsive: Sets flex-direction to row on xxl screens and up.
-
-
-
-
-### `.k-flex-xxl-row-reverse`
-
-Responsive: Sets flex-direction to row-reverse on xxl screens and up.
-
-
-
-
-### `.k-flex-xxl-col`
-
-Responsive: Sets flex-direction to column on xxl screens and up.
+This is equivalent to `flex-direction: column-reverse; for the specific breakpoint`.
 
 
 
@@ -4535,7 +5249,7 @@ This is equivalent to `font-weight: 800;`.
 
 
 
-### `.k-gap-0`
+### `.k-gap-{0-30}`
 
 This is equivalent to `gap: 0;`.
 
@@ -4549,9 +5263,9 @@ This is equivalent to `gap: 1px;`.
 
 
 
-### `.k-gap-1`
+### `.k-gap-0\.5`
 
-This is equivalent to `gap: 0.25rem;`.
+This is equivalent to `gap: 0.125rem;`.
 
 
 
@@ -4605,7 +5319,7 @@ This is equivalent to `gap: 1px;`.
 
 
 
-### `.k-gap-x-0`
+### `.k-gap-x-{0-30}`
 
 This is equivalent to `column-gap: 0;`.
 
@@ -4619,9 +5333,9 @@ This is equivalent to `column-gap: 1px;`.
 
 
 
-### `.k-gap-x-1`
+### `.k-gap-x-0\.5`
 
-This is equivalent to `column-gap: 0.25rem;`.
+This is equivalent to `column-gap: 0.125rem;`.
 
 
 
@@ -4675,7 +5389,7 @@ This is equivalent to `column-gap: 1px;`.
 
 
 
-### `.k-gap-y-0`
+### `.k-gap-y-{0-30}`
 
 This is equivalent to `row-gap: 0;`.
 
@@ -4689,9 +5403,9 @@ This is equivalent to `row-gap: 1px;`.
 
 
 
-### `.k-gap-y-1`
+### `.k-gap-y-0\.5`
 
-This is equivalent to `row-gap: 0.25rem;`.
+This is equivalent to `row-gap: 0.125rem;`.
 
 
 
@@ -4745,221 +5459,212 @@ This is equivalent to `row-gap: 1px;`.
 
 
 
-### `/// Responsive: Sets gap to 0 at xs+ breakpoint.
-/// @example gap: var(--kendo-spacing-0, 0px);
-/// @name .k-gap-xs-0
-/// @group gap-responsive
-/// @contextType css
+### `.k-gap-{xs|sm|md|lg|xl|xxl}-{0-30}`
 
-/// Responsive: Sets gap to 1px at xs+ breakpoint.
-/// @example gap: var(--kendo-spacing-1px, 1px);
-/// @name .k-gap-xs-1px
-/// @group gap-responsive
-/// @contextType css
+This is equivalent to `gap: 0;`.
 
-/// Responsive: Sets gap to numeric spacing at xs+ breakpoint.
-/// Numeric values range from 0.5 to 30 (0.125rem to 12rem).
-/// @example gap: var(--kendo-spacing-1, 0.25rem); // .k-gap-xs-1
-/// @example gap: var(--kendo-spacing-4, 1rem); // .k-gap-xs-4
-/// @example gap: var(--kendo-spacing-8, 2rem); // .k-gap-xs-8
-/// @name .k-gap-xs-`
 
-Responsive gap utilities apply gap at specific breakpoints and up.
-Pattern: .k-gap-{breakpoint}-{size}
-Available breakpoints: xs, sm, md, lg, xl, xxl
-Available sizes: 0, 1px, 0.5-30 (numeric), xs, sm, md, lg, xl, thin, hair
 
 
+### `.k-gap-{xs|sm|md|lg|xl|xxl}-1px`
 
+This is equivalent to `gap: 1px;`.
 
-### `.k-gap-xs-0`
 
-Responsive: Sets gap to 0 at xs+ breakpoint.
 
 
+### `.k-gap-{xs|sm|md|lg|xl|xxl}-0\.5`
 
+This is equivalent to `gap: 0.125rem;`.
 
-### `.k-gap-xs-1px`
 
-Responsive: Sets gap to 1px at xs+ breakpoint.
 
 
+### `.k-gap-{xs|sm|md|lg|xl|xxl}-xs`
 
+This is equivalent to `gap: 0.25rem;`.
 
-### `.k-gap-xs-{1-30}`
 
-Responsive: Sets gap to numeric spacing at xs+ breakpoint.
-Numeric values range from 0.5 to 30 (0.125rem to 12rem).
 
 
+### `.k-gap-{xs|sm|md|lg|xl|xxl}-sm`
 
+This is equivalent to `gap: 0.5rem;`.
 
-### `.k-gap-xs-{xs|sm|md|lg|xl}`
 
-Responsive: Sets gap to named spacing at xs+ breakpoint.
 
 
+### `.k-gap-{xs|sm|md|lg|xl|xxl}-md`
 
+This is equivalent to `gap: 0.75rem;`.
 
-### `.k-gap-xs-{thin|hair}`
 
-Responsive: Sets gap to special spacing at xs+ breakpoint.
 
 
+### `.k-gap-{xs|sm|md|lg|xl|xxl}-lg`
 
+This is equivalent to `gap: 1rem;`.
 
-### `.k-gap-sm-{size}`
 
-Responsive: Gap utilities for sm+ breakpoint.
-Same size options as xs+ but applied at sm breakpoint and up.
 
 
+### `.k-gap-{xs|sm|md|lg|xl|xxl}-xl`
 
+This is equivalent to `gap: 1.5rem;`.
 
-### `.k-gap-md-{size}`
 
-Responsive: Gap utilities for md+ breakpoint.
-Same size options as xs+ but applied at md breakpoint and up.
 
 
+### `.k-gap-{xs|sm|md|lg|xl|xxl}-thin`
 
+This is equivalent to `gap: 0.125rem;`.
 
-### `.k-gap-lg-{size}`
 
-Responsive: Gap utilities for lg+ breakpoint.
-Same size options as xs+ but applied at lg breakpoint and up.
 
 
+### `.k-gap-hair-{xs|sm|md|lg|xl|xxl}`
 
+This is equivalent to `gap: 1px;`.
 
-### `.k-gap-xl-{size}`
 
-Responsive: Gap utilities for xl+ breakpoint.
-Same size options as xs+ but applied at xl breakpoint and up.
 
 
+### `.k-gap-x-{xs|sm|md|lg|xl|xxl}-{0-30}`
 
+This is equivalent to `column-gap: 0;`.
 
-### `.k-gap-xxl-{size}`
 
-Responsive: Gap utilities for xxl+ breakpoint.
-Same size options as xs+ but applied at xxl breakpoint and up.
 
 
+### `.k-gap-x-{xs|sm|md|lg|xl|xxl}-1px`
 
+This is equivalent to `column-gap: 1px;`.
 
-### `/// Responsive: Sets column-gap to 0 at xs+ breakpoint.
-/// @example column-gap: var(--kendo-spacing-0, 0px);
-/// @name .k-gap-x-xs-0
-/// @group gap-responsive
-/// @contextType css
 
-/// Responsive: Sets column-gap to numeric spacing at xs+ breakpoint.
-/// Numeric values range from 0.5 to 30 (0.125rem to 12rem).
-/// @example column-gap: var(--kendo-spacing-1, 0.25rem); // .k-gap-x-xs-1
-/// @example column-gap: var(--kendo-spacing-4, 1rem); // .k-gap-x-xs-4
-/// @example column-gap: var(--kendo-spacing-8, 2rem); // .k-gap-x-xs-8
-/// @name .k-gap-x-xs-`
 
-Responsive column-gap utilities apply column-gap at specific breakpoints and up.
-Pattern: .k-gap-x-{breakpoint}-{size}
-Available breakpoints: xs, sm, md, lg, xl, xxl
-Available sizes: 0, 1px, 0.5-30 (numeric), xs, sm, md, lg, xl, thin, hair
 
+### `.k-gap-x-{xs|sm|md|lg|xl|xxl}-0\.5`
 
+This is equivalent to `column-gap: 0.125rem;`.
 
 
-### `.k-gap-x-xs-0`
 
-Responsive: Sets column-gap to 0 at xs+ breakpoint.
 
+### `.k-gap-x-{xs|sm|md|lg|xl|xxl}-xs`
 
+This is equivalent to `column-gap: 0.25rem;`.
 
 
-### `.k-gap-x-xs-{1-30}`
 
-Responsive: Sets column-gap to numeric spacing at xs+ breakpoint.
-Numeric values range from 0.5 to 30 (0.125rem to 12rem).
 
+### `.k-gap-x-{xs|sm|md|lg|xl|xxl}-sm`
 
+This is equivalent to `column-gap: 0.5rem;`.
 
 
-### `.k-gap-x-xs-{xs|sm|md|lg|xl}`
 
-Responsive: Sets column-gap to named spacing at xs+ breakpoint.
 
+### `.k-gap-x-{xs|sm|md|lg|xl|xxl}-md`
 
+This is equivalent to `column-gap: 0.75rem;`.
 
 
-### `.k-gap-x-xs-{thin|hair}`
 
-Responsive: Sets column-gap to special spacing at xs+ breakpoint.
 
+### `.k-gap-x-{xs|sm|md|lg|xl|xxl}-lg`
 
+This is equivalent to `column-gap: 1rem;`.
 
 
-### `.k-gap-x-{sm|md|lg|xl|xxl}-{size}`
 
-Responsive: Column-gap utilities for other breakpoints.
-Same size options as xs+ but applied at respective breakpoints and up.
 
+### `.k-gap-x-{xs|sm|md|lg|xl|xxl}-xl`
 
+This is equivalent to `column-gap: 1.5rem;`.
 
 
-### `/// Responsive: Sets row-gap to 0 at xs+ breakpoint.
-/// @example row-gap: var(--kendo-spacing-0, 0px);
-/// @name .k-gap-y-xs-0
-/// @group gap-responsive
-/// @contextType css
 
-/// Responsive: Sets row-gap to numeric spacing at xs+ breakpoint.
-/// Numeric values range from 0.5 to 30 (0.125rem to 12rem).
-/// @example row-gap: var(--kendo-spacing-1, 0.25rem); // .k-gap-y-xs-1
-/// @example row-gap: var(--kendo-spacing-4, 1rem); // .k-gap-y-xs-4
-/// @example row-gap: var(--kendo-spacing-8, 2rem); // .k-gap-y-xs-8
-/// @name .k-gap-y-xs-`
 
-Responsive row-gap utilities apply row-gap at specific breakpoints and up.
-Pattern: .k-gap-y-{breakpoint}-{size}
-Available breakpoints: xs, sm, md, lg, xl, xxl
-Available sizes: 0, 1px, 0.5-30 (numeric), xs, sm, md, lg, xl, thin, hair
+### `.k-gap-x-{xs|sm|md|lg|xl|xxl}-thin`
 
+This is equivalent to `column-gap: 0.125rem;`.
 
 
 
-### `.k-gap-y-xs-0`
 
-Responsive: Sets row-gap to 0 at xs+ breakpoint.
+### `.k-gap-x-{xs|sm|md|lg|xl|xxl}-hair`
 
+This is equivalent to `column-gap: 1px;`.
 
 
 
-### `.k-gap-y-xs-{1-30}`
 
-Responsive: Sets row-gap to numeric spacing at xs+ breakpoint.
-Numeric values range from 0.5 to 30 (0.125rem to 12rem).
+### `.k-gap-y-{xs|sm|md|lg|xl|xxl}-{0-30}`
 
+This is equivalent to `row-gap: 0;`.
 
 
 
-### `.k-gap-y-xs-{xs|sm|md|lg|xl}`
 
-Responsive: Sets row-gap to named spacing at xs+ breakpoint.
+### `.k-gap-y-{xs|sm|md|lg|xl|xxl}-1px`
 
+This is equivalent to `row-gap: 1px;`.
 
 
 
-### `.k-gap-y-xs-{thin|hair}`
 
-Responsive: Sets row-gap to special spacing at xs+ breakpoint.
+### `.k-gap-y-{xs|sm|md|lg|xl|xxl}-0\.5`
 
+This is equivalent to `row-gap: 0.125rem;`.
 
 
 
-### `.k-gap-y-{sm|md|lg|xl|xxl}-{size}`
 
-Responsive: Row-gap utilities for other breakpoints.
-Same size options as xs+ but applied at respective breakpoints and up.
+### `.k-gap-y-{xs|sm|md|lg|xl|xxl}-xs`
+
+This is equivalent to `row-gap: 0.25rem;`.
+
+
+
+
+### `.k-gap-y-{xs|sm|md|lg|xl|xxl}-sm`
+
+This is equivalent to `row-gap: 0.5rem;`.
+
+
+
+
+### `.k-gap-y-{xs|sm|md|lg|xl|xxl}-md`
+
+This is equivalent to `row-gap: 0.75rem;`.
+
+
+
+
+### `.k-gap-y-{xs|sm|md|lg|xl|xxl}-lg`
+
+This is equivalent to `row-gap: 1rem;`.
+
+
+
+
+### `.k-gap-y-{xs|sm|md|lg|xl|xxl}-xl`
+
+This is equivalent to `row-gap: 1.5rem;`.
+
+
+
+
+### `.k-gap-y-{xs|sm|md|lg|xl|xxl}-thin`
+
+This is equivalent to `row-gap: 0.125rem;`.
+
+
+
+
+### `.k-gap-y-{xs|sm|md|lg|xl|xxl}-hair`
+
+This is equivalent to `row-gap: 1px;`.
 
 
 
@@ -5062,101 +5767,100 @@ This is equivalent to `grid-auto-rows: max-content;`.
 
 
 
-### `/// This is equivalent to `grid-column-end: 1;`.
-/// @example grid-column-end: 1;
-/// @name .k-col-end-1
-/// @group grid-column-end
-/// @contextType css
+### `.k-col-start-1`
 
-/// Grid column end utilities for values 2-13.
-/// @example grid-column-end: 2; // .k-col-end-2
-/// @example grid-column-end: 6; // .k-col-end-6
-/// @example grid-column-end: 13; // .k-col-end-13
-/// @name .k-col-end-`
-
-Grid column end utilities control where an element ends in the grid.
+This is equivalent to `grid-column-start: 1;`.
 
 
 
 
-### `.k-col-end-1`
+### `.k-col-start-2`
 
-This is equivalent to `grid-column-end: 1;`.
-
-
-
-
-### `.k-col-end-{2-13}`
-
-Grid column end utilities for values 2-13.
+This is equivalent to `grid-column-start: 2;`.
 
 
 
 
-### `.k-col-end-auto`
+### `.k-col-start-3`
 
-This is equivalent to `grid-column-end: auto;`.
-
-
-
-
-### `/// Responsive: Grid column span utilities for xs+ breakpoint.
-/// Pattern: .k-col-span-`
-
-Responsive grid column utilities apply at specific breakpoints and up.
-Available breakpoints: xs, sm, md, lg, xl, xxl
+This is equivalent to `grid-column-start: 3;`.
 
 
 
 
-### `.k-col-span-xs-{1-12|full|auto}`
+### `.k-col-start-4`
 
-Responsive: Grid column span utilities for xs+ breakpoint.
-Pattern: .k-col-span-{breakpoint}-{value}
-Available values: 1-12, full, auto
+This is equivalent to `grid-column-start: 4;`.
 
 
 
 
-### `.k-col-start-xs-{1-13|auto}`
+### `.k-col-start-5`
 
-Responsive: Grid column start utilities for xs+ breakpoint.
-Pattern: .k-col-start-{breakpoint}-{value}
-Available values: 1-13, auto
+This is equivalent to `grid-column-start: 5;`.
 
 
 
 
-### `.k-col-end-xs-{1-13|auto}`
+### `.k-col-start-6`
 
-Responsive: Grid column end utilities for xs+ breakpoint.
-Pattern: .k-col-end-{breakpoint}-{value}
-Available values: 1-13, auto
+This is equivalent to `grid-column-start: 6;`.
 
 
 
 
-### `.k-col-{span|start|end}-{sm|md|lg|xl|xxl}-{value}`
+### `.k-col-start-7`
 
-Responsive: Grid column utilities for other breakpoints.
-Same value options as xs+ but applied at respective breakpoints and up.
-
+This is equivalent to `grid-column-start: 7;`.
 
 
 
-### `/// This is equivalent to `grid-column: span 1 / span 1;`.
-/// @example grid-column: span 1 / span 1;
-/// @name .k-col-span-1
-/// @group grid-column-span
-/// @contextType css
 
-/// Grid column span utilities for values 2-12.
-/// @example grid-column: span 2 / span 2; // .k-col-span-2
-/// @example grid-column: span 6 / span 6; // .k-col-span-6
-/// @example grid-column: span 12 / span 12; // .k-col-span-12
-/// @name .k-col-span-`
+### `.k-col-start-8`
 
-Grid column span utilities control how many columns an element spans.
+This is equivalent to `grid-column-start: 8;`.
+
+
+
+
+### `.k-col-start-9`
+
+This is equivalent to `grid-column-start: 9;`.
+
+
+
+
+### `.k-col-start-10`
+
+This is equivalent to `grid-column-start: 10;`.
+
+
+
+
+### `.k-col-start-11`
+
+This is equivalent to `grid-column-start: 11;`.
+
+
+
+
+### `.k-col-start-12`
+
+This is equivalent to `grid-column-start: 12;`.
+
+
+
+
+### `.k-col-start-13`
+
+This is equivalent to `grid-column-start: 13;`.
+
+
+
+
+### `.k-col-start-auto`
+
+This is equivalent to `grid-column-start: auto;`.
 
 
 
@@ -5168,9 +5872,16 @@ This is equivalent to `grid-column: span 1 / span 1;`.
 
 
 
-### `.k-col-span-{2-12}`
+### `.k-col-span-2`
 
-Grid column span utilities for values 2-12.
+This is equivalent to `grid-column-span: span 2 / span 2;`.
+
+
+
+
+### `.k-col-span-3`
+
+This is equivalent to `grid-column-span: span 3 / span 3;`.
 
 
 
@@ -5189,140 +5900,429 @@ This is equivalent to `grid-column: auto;`.
 
 
 
-### `.k-col-start-1`
+### `.k-col-end-1`
 
-This is equivalent to `grid-column-start: 1;`.
-
-
+This is equivalent to `grid-column-end: 1;`.
 
 
-### `.k-col-start--1`
 
-This is equivalent to `grid-column-start: -1;`.
+
+### `.k-col-end-2`
+
+This is equivalent to `grid-column-end: 2;`.
+
+
+
+
+### `.k-col-end-3`
+
+This is equivalent to `grid-column-end: 3;`.
+
+
+
+
+### `.k-col-end-4`
+
+This is equivalent to `grid-column-end: 4;`.
+
+
+
+
+### `.k-col-end-5`
+
+This is equivalent to `grid-column-end: 5;`.
+
+
+
+
+### `.k-col-end-6`
+
+This is equivalent to `grid-column-end: 6;`.
+
+
+
+
+### `.k-col-end-7`
+
+This is equivalent to `grid-column-end: 7;`.
+
+
+
+
+### `.k-col-end-8`
+
+This is equivalent to `grid-column-end: 8;`.
+
+
+
+
+### `.k-col-end-9`
+
+This is equivalent to `grid-column-end: 9;`.
+
+
+
+
+### `.k-col-end-10`
+
+This is equivalent to `grid-column-end: 10;`.
+
+
+
+
+### `.k-col-end-11`
+
+This is equivalent to `grid-column-end: 11;`.
+
+
+
+
+### `.k-col-end-12`
+
+This is equivalent to `grid-column-end: 12;`.
+
+
+
+
+### `.k-col-end-13`
+
+This is equivalent to `grid-column-end: 13;`.
+
+
+
+
+### `.k-col-end-auto`
+
+This is equivalent to `grid-column-end: auto;`.
+
+
+
+
+### `.k-col-start-{xs|sm|md|lg|xl|xxl}-1`
+
+This is equivalent to `grid-column-start: 1; for the specific breakpoint`.
+
+
+
+
+### `.k-col-start-{xs|sm|md|lg|xl|xxl}-2`
+
+This is equivalent to `grid-column-start: 2; for the specific breakpoint`.
+
+
+
+
+### `.k-col-start-{xs|sm|md|lg|xl|xxl}-3`
+
+This is equivalent to `grid-column-start: 3; for the specific breakpoint`.
+
+
+
+
+### `.k-col-start-{xs|sm|md|lg|xl|xxl}-4`
+
+This is equivalent to `grid-column-start: 4; for the specific breakpoint`.
+
+
+
+
+### `.k-col-start-{xs|sm|md|lg|xl|xxl}-5`
+
+This is equivalent to `grid-column-start: 5; for the specific breakpoint`.
+
+
+
+
+### `.k-col-start-{xs|sm|md|lg|xl|xxl}-6`
+
+This is equivalent to `grid-column-start: 6; for the specific breakpoint`.
+
+
+
+
+### `.k-col-start-{xs|sm|md|lg|xl|xxl}-7`
+
+This is equivalent to `grid-column-start: 7; for the specific breakpoint`.
+
+
+
+
+### `.k-col-start-{xs|sm|md|lg|xl|xxl}-8`
+
+This is equivalent to `grid-column-start: 8; for the specific breakpoint`.
+
+
+
+
+### `.k-col-start-{xs|sm|md|lg|xl|xxl}-9`
+
+This is equivalent to `grid-column-start: 9; for the specific breakpoint`.
+
+
+
+
+### `.k-col-start-{xs|sm|md|lg|xl|xxl}-10`
+
+This is equivalent to `grid-column-start: 10; for the specific breakpoint`.
+
+
+
+
+### `.k-col-start-{xs|sm|md|lg|xl|xxl}-11`
+
+This is equivalent to `grid-column-start: 11; for the specific breakpoint`.
+
+
+
+
+### `.k-col-start-{xs|sm|md|lg|xl|xxl}-12`
+
+This is equivalent to `grid-column-start: 12; for the specific breakpoint`.
+
+
+
+
+### `.k-col-start-{xs|sm|md|lg|xl|xxl}-13`
+
+This is equivalent to `grid-column-start: 13; for the specific breakpoint`.
 
 
 
 
 ### `.k-col-start-auto`
 
-This is equivalent to `grid-column-start: auto;`.
+This is equivalent to `grid-column-start: auto; for the specific breakpoint`.
 
 
 
 
-### `/// Grid column start utilities for values 2-13.
-/// @example grid-column-start: 2; // .k-col-start-2
-/// @example grid-column-start: 6; // .k-col-start-6
-/// @example grid-column-start: 13; // .k-col-start-13
-/// @name .k-col-start-`
+### `.k-col-span-{xs|sm|md|lg|xl|xxl}-1`
 
-Grid column start utilities control where an element starts in the grid.
+This is equivalent to `grid-column: span 1 / span 1; for the specific breakpoint`.
 
 
 
 
-### `.k-col-start-{2-13}`
+### `.k-col-span-{xs|sm|md|lg|xl|xxl}-2`
 
-Grid column start utilities for values 2-13.
-
-
-
-
-### `/// This is equivalent to `grid-row-end: 1;`.
-/// @example grid-row-end: 1;
-/// @name .k-row-end-1
-/// @group grid-row-end
-/// @contextType css
-
-/// Grid row end utilities for values 2-13.
-/// @example grid-row-end: 2; // .k-row-end-2
-/// @example grid-row-end: 6; // .k-row-end-6
-/// @example grid-row-end: 13; // .k-row-end-13
-/// @name .k-row-end-`
-
-Grid row end utilities control where an element ends in the grid.
+This is equivalent to `grid-column-span: span 2 / span 2; for the specific breakpoint`.
 
 
 
 
-### `.k-row-end-1`
+### `.k-col-span-{xs|sm|md|lg|xl|xxl}-3`
 
-This is equivalent to `grid-row-end: 1;`.
-
-
-
-
-### `.k-row-end-{2-13}`
-
-Grid row end utilities for values 2-13.
+This is equivalent to `grid-column-span: span 3 / span 3; for the specific breakpoint`.
 
 
 
 
-### `.k-row-end-auto`
+### `.k-col-span-{xs|sm|md|lg|xl|xxl}-full`
 
-This is equivalent to `grid-row-end: auto;`.
-
-
-
-
-### `/// Responsive: Grid row span utilities for xs+ breakpoint.
-/// Pattern: .k-row-span-`
-
-Responsive grid row utilities apply at specific breakpoints and up.
-Available breakpoints: xs, sm, md, lg, xl, xxl
+This is equivalent to `grid-column: 1 / -1; for the specific breakpoint`.
 
 
 
 
-### `.k-row-span-xs-{1-12|full|auto}`
+### `.k-col-span-{xs|sm|md|lg|xl|xxl}-auto`
 
-Responsive: Grid row span utilities for xs+ breakpoint.
-Pattern: .k-row-span-{breakpoint}-{value}
-Available values: 1-12, full, auto
+This is equivalent to `grid-column: auto; for the specific breakpoint`.
 
 
 
 
-### `.k-row-start-xs-{1-13|auto}`
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-1`
 
-Responsive: Grid row start utilities for xs+ breakpoint.
-Pattern: .k-row-start-{breakpoint}-{value}
-Available values: 1-13, auto
+This is equivalent to `grid-column-end: 1; for the specific breakpoint`.
 
 
 
 
-### `.k-row-end-xs-{1-13|auto}`
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-12`
 
-Responsive: Grid row end utilities for xs+ breakpoint.
-Pattern: .k-row-end-{breakpoint}-{value}
-Available values: 1-13, auto
+This is equivalent to `grid-column-end: 2; for the specific breakpoint`.
 
 
 
 
-### `.k-row-{span|start|end}-{sm|md|lg|xl|xxl}-{value}`
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-13`
 
-Responsive: Grid row utilities for other breakpoints.
-Same value options as xs+ but applied at respective breakpoints and up.
-
+This is equivalent to `grid-column-end: 3; for the specific breakpoint`.
 
 
 
-### `/// This is equivalent to `grid-row: span 1 / span 1;`.
-/// @example grid-row: span 1 / span 1;
-/// @name .k-row-span-1
-/// @group grid-row-span
-/// @contextType css
 
-/// Grid row span utilities for values 2-12.
-/// @example grid-row: span 2 / span 2; // .k-row-span-2
-/// @example grid-row: span 6 / span 6; // .k-row-span-6
-/// @example grid-row: span 12 / span 12; // .k-row-span-12
-/// @name .k-row-span-`
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-14`
 
-Grid row span utilities control how many rows an element spans.
+This is equivalent to `grid-column-end: 4; for the specific breakpoint`.
+
+
+
+
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-15`
+
+This is equivalent to `grid-column-end: 5; for the specific breakpoint`.
+
+
+
+
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-16`
+
+This is equivalent to `grid-column-end: 6; for the specific breakpoint`.
+
+
+
+
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-17`
+
+This is equivalent to `grid-column-end: 7; for the specific breakpoint`.
+
+
+
+
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-18`
+
+This is equivalent to `grid-column-end: 8; for the specific breakpoint`.
+
+
+
+
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-19`
+
+This is equivalent to `grid-column-end: 9; for the specific breakpoint`.
+
+
+
+
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-10`
+
+This is equivalent to `grid-column-end: 10; for the specific breakpoint`.
+
+
+
+
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-11`
+
+This is equivalent to `grid-column-end: 11; for the specific breakpoint`.
+
+
+
+
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-12`
+
+This is equivalent to `grid-column-end: 12; for the specific breakpoint`.
+
+
+
+
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-13`
+
+This is equivalent to `grid-column-end: 13; for the specific breakpoint`.
+
+
+
+
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-1auto`
+
+This is equivalent to `grid-column-end: auto; for the specific breakpoint`.
+
+
+
+
+### `.k-row-start-1`
+
+This is equivalent to `grid-row-start: 1;`.
+
+
+
+
+### `.k-row-start-2`
+
+This is equivalent to `grid-row-start: 2;`.
+
+
+
+
+### `.k-row-start-3`
+
+This is equivalent to `grid-row-start: 3;`.
+
+
+
+
+### `.k-row-start-4`
+
+This is equivalent to `grid-row-start: 4;`.
+
+
+
+
+### `.k-row-start-5`
+
+This is equivalent to `grid-row-start: 5;`.
+
+
+
+
+### `.k-row-start-6`
+
+This is equivalent to `grid-row-start: 6;`.
+
+
+
+
+### `.k-row-start-7`
+
+This is equivalent to `grid-row-start: 7;`.
+
+
+
+
+### `.k-row-start-8`
+
+This is equivalent to `grid-row-start: 8;`.
+
+
+
+
+### `.k-row-start-9`
+
+This is equivalent to `grid-row-start: 9;`.
+
+
+
+
+### `.k-row-start-10`
+
+This is equivalent to `grid-row-start: 10;`.
+
+
+
+
+### `.k-row-start-11`
+
+This is equivalent to `grid-row-start: 11;`.
+
+
+
+
+### `.k-row-start-12`
+
+This is equivalent to `grid-row-start: 12;`.
+
+
+
+
+### `.k-row-start-13`
+
+This is equivalent to `grid-row-start: 13;`.
+
+
+
+
+### `.k-row-start-auto`
+
+This is equivalent to `grid-row-start: auto;`.
 
 
 
@@ -5334,9 +6334,16 @@ This is equivalent to `grid-row: span 1 / span 1;`.
 
 
 
-### `.k-row-span-{2-12}`
+### `.k-row-span-2`
 
-Grid row span utilities for values 2-12.
+This is equivalent to `grid-row-span: span 2 / span 2;`.
+
+
+
+
+### `.k-row-span-3`
+
+This is equivalent to `grid-row-span: span 3 / span 3;`.
 
 
 
@@ -5355,41 +6362,296 @@ This is equivalent to `grid-row: auto;`.
 
 
 
-### `.k-row-start-1`
+### `.k-row-end-1`
 
-This is equivalent to `grid-row-start: 1;`.
-
-
+This is equivalent to `grid-row-end: 1;`.
 
 
-### `.k-row-start--1`
 
-This is equivalent to `grid-row-start: -1;`.
+
+### `.k-row-end-2`
+
+This is equivalent to `grid-row-end: 2;`.
+
+
+
+
+### `.k-row-end-3`
+
+This is equivalent to `grid-row-end: 3;`.
+
+
+
+
+### `.k-row-end-4`
+
+This is equivalent to `grid-row-end: 4;`.
+
+
+
+
+### `.k-row-end-5`
+
+This is equivalent to `grid-row-end: 5;`.
+
+
+
+
+### `.k-row-end-6`
+
+This is equivalent to `grid-row-end: 6;`.
+
+
+
+
+### `.k-row-end-7`
+
+This is equivalent to `grid-row-end: 7;`.
+
+
+
+
+### `.k-row-end-8`
+
+This is equivalent to `grid-row-end: 8;`.
+
+
+
+
+### `.k-row-end-9`
+
+This is equivalent to `grid-row-end: 9;`.
+
+
+
+
+### `.k-row-end-10`
+
+This is equivalent to `grid-row-end: 10;`.
+
+
+
+
+### `.k-row-end-11`
+
+This is equivalent to `grid-row-end: 11;`.
+
+
+
+
+### `.k-row-end-12`
+
+This is equivalent to `grid-row-end: 12;`.
+
+
+
+
+### `.k-row-end-13`
+
+This is equivalent to `grid-row-end: 13;`.
+
+
+
+
+### `.k-row-end-auto`
+
+This is equivalent to `grid-row-end: auto;`.
+
+
+
+
+### `.k-row-start-{xs|sm|md|lg|xl|xxl}-1`
+
+This is equivalent to `grid-row-start: 1; for the specific breakpoint`.
+
+
+
+
+### `.k-row-start-{xs|sm|md|lg|xl|xxl}-2`
+
+This is equivalent to `grid-row-start: 2; for the specific breakpoint`.
+
+
+
+
+### `.k-row-start-{xs|sm|md|lg|xl|xxl}-3`
+
+This is equivalent to `grid-row-start: 3; for the specific breakpoint`.
+
+
+
+
+### `.k-row-start-{xs|sm|md|lg|xl|xxl}-4`
+
+This is equivalent to `grid-row-start: 4; for the specific breakpoint`.
+
+
+
+
+### `.k-row-start-{xs|sm|md|lg|xl|xxl}-5`
+
+This is equivalent to `grid-row-start: 5; for the specific breakpoint`.
+
+
+
+
+### `.k-row-start-{xs|sm|md|lg|xl|xxl}-6`
+
+This is equivalent to `grid-row-start: 6; for the specific breakpoint`.
+
+
+
+
+### `.k-row-start-{xs|sm|md|lg|xl|xxl}-7`
+
+This is equivalent to `grid-row-start: 7; for the specific breakpoint`.
+
+
+
+
+### `.k-row-start-{xs|sm|md|lg|xl|xxl}-8`
+
+This is equivalent to `grid-row-start: 8; for the specific breakpoint`.
+
+
+
+
+### `.k-row-start-{xs|sm|md|lg|xl|xxl}-9`
+
+This is equivalent to `grid-row-start: 9; for the specific breakpoint`.
+
+
+
+
+### `.k-row-start-{xs|sm|md|lg|xl|xxl}-10`
+
+This is equivalent to `grid-row-start: 10; for the specific breakpoint`.
+
+
+
+
+### `.k-row-start-{xs|sm|md|lg|xl|xxl}-11`
+
+This is equivalent to `grid-row-start: 11; for the specific breakpoint`.
+
+
+
+
+### `.k-row-start-{xs|sm|md|lg|xl|xxl}-12`
+
+This is equivalent to `grid-row-start: 12; for the specific breakpoint`.
+
+
+
+
+### `.k-row-start-{xs|sm|md|lg|xl|xxl}-13`
+
+This is equivalent to `grid-row-start: 13; for the specific breakpoint`.
 
 
 
 
 ### `.k-row-start-auto`
 
-This is equivalent to `grid-row-start: auto;`.
+This is equivalent to `grid-row-start: auto; for the specific breakpoint`.
 
 
 
 
-### `/// Grid row start utilities for values 2-13.
-/// @example grid-row-start: 2; // .k-row-start-2
-/// @example grid-row-start: 6; // .k-row-start-6
-/// @example grid-row-start: 13; // .k-row-start-13
-/// @name .k-row-start-`
+### `.k-row-end-{xs|sm|md|lg|xl|xxl}-1`
 
-Grid row start utilities control where an element starts in the grid.
+This is equivalent to `grid-row-end: 1; for the specific breakpoint`.
 
 
 
 
-### `.k-row-start-{2-13}`
+### `.k-row-end-{xs|sm|md|lg|xl|xxl}-12`
 
-Grid row start utilities for values 2-13.
+This is equivalent to `grid-row-end: 2; for the specific breakpoint`.
+
+
+
+
+### `.k-row-end-{xs|sm|md|lg|xl|xxl}-13`
+
+This is equivalent to `grid-row-end: 3; for the specific breakpoint`.
+
+
+
+
+### `.k-row-end-{xs|sm|md|lg|xl|xxl}-14`
+
+This is equivalent to `grid-row-end: 4; for the specific breakpoint`.
+
+
+
+
+### `.k-row-end-{xs|sm|md|lg|xl|xxl}-15`
+
+This is equivalent to `grid-row-end: 5; for the specific breakpoint`.
+
+
+
+
+### `.k-row-end-{xs|sm|md|lg|xl|xxl}-16`
+
+This is equivalent to `grid-row-end: 6; for the specific breakpoint`.
+
+
+
+
+### `.k-row-end-{xs|sm|md|lg|xl|xxl}-17`
+
+This is equivalent to `grid-row-end: 7; for the specific breakpoint`.
+
+
+
+
+### `.k-row-end-{xs|sm|md|lg|xl|xxl}-18`
+
+This is equivalent to `grid-row-end: 8; for the specific breakpoint`.
+
+
+
+
+### `.k-row-end-{xs|sm|md|lg|xl|xxl}-19`
+
+This is equivalent to `grid-row-end: 9; for the specific breakpoint`.
+
+
+
+
+### `.k-row-end-{xs|sm|md|lg|xl|xxl}-10`
+
+This is equivalent to `grid-row-end: 10; for the specific breakpoint`.
+
+
+
+
+### `.k-row-end-{xs|sm|md|lg|xl|xxl}-11`
+
+This is equivalent to `grid-row-end: 11; for the specific breakpoint`.
+
+
+
+
+### `.k-row-end-{xs|sm|md|lg|xl|xxl}-12`
+
+This is equivalent to `grid-row-end: 12; for the specific breakpoint`.
+
+
+
+
+### `.k-row-end-{xs|sm|md|lg|xl|xxl}-13`
+
+This is equivalent to `grid-row-end: 13; for the specific breakpoint`.
+
+
+
+
+### `.k-row-end-{xs|sm|md|lg|xl|xxl}-1auto`
+
+This is equivalent to `grid-row-end: auto; for the specific breakpoint`.
 
 
 
@@ -5408,9 +6670,72 @@ This is equivalent to `grid-template-columns: repeat(2, minmax(0, 1fr));`.
 
 
 
-### `.k-grid-cols-{3-12}`
+### `.k-grid-cols-3`
 
-Grid template columns utilities for values 3-12.
+This is equivalent to `grid-template-columns: repeat(3, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-cols-4`
+
+This is equivalent to `grid-template-columns: repeat(4, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-cols-5`
+
+This is equivalent to `grid-template-columns: repeat(5, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-cols-6`
+
+This is equivalent to `grid-template-columns: repeat(6, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-cols-7`
+
+This is equivalent to `grid-template-columns: repeat(7, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-cols-8`
+
+This is equivalent to `grid-template-columns: repeat(8, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-cols-9`
+
+This is equivalent to `grid-template-columns: repeat(9, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-cols-10`
+
+This is equivalent to `grid-template-columns: repeat(10, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-cols-11`
+
+This is equivalent to `grid-template-columns: repeat(11, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-cols-12`
+
+This is equivalent to `grid-template-columns: repeat(12, minmax(0, 1fr));`.
 
 
 
@@ -5422,33 +6747,93 @@ This is equivalent to `grid-template-columns: none;`.
 
 
 
-### `/// Responsive: Grid template columns utilities for xs+ breakpoint.
-/// @example grid-template-columns: repeat(1, minmax(0, 1fr)); // .k-grid-cols-xs-1
-/// @example grid-template-columns: repeat(3, minmax(0, 1fr)); // .k-grid-cols-xs-3
-/// @example grid-template-columns: repeat(6, minmax(0, 1fr)); // .k-grid-cols-xs-6
-/// @example grid-template-columns: repeat(12, minmax(0, 1fr)); // .k-grid-cols-xs-12
-/// @example grid-template-columns: none; // .k-grid-cols-xs-none
-/// @name .k-grid-cols-xs-`
+### `.k-grid-cols-none`
 
-Responsive grid template columns utilities apply at specific breakpoints and up.
-Pattern: .k-grid-cols-{breakpoint}-{value}
-Available breakpoints: xs, sm, md, lg, xl, xxl
-Available values: 1-12, none
+This is equivalent to `grid-template-columns: none;`.
 
 
 
 
-### `.k-grid-cols-xs-{1-12|none}`
+### `.k-grid-cols-{xs|sm|md|lg|xl|xxl}-1`
 
-Responsive: Grid template columns utilities for xs+ breakpoint.
-
-
+This is equivalent to `grid-template-columns: repeat(1, minmax(0, 1fr)); for the specific breakpoint`.
 
 
-### `.k-grid-cols-{sm|md|lg|xl|xxl}-{1-12|none}`
 
-Responsive: Grid template columns utilities for other breakpoints.
-Same value options as xs+ but applied at respective breakpoints and up.
+
+### `.k-grid-cols-{xs|sm|md|lg|xl}-1|xxl2`
+
+This is equivalent to `grid-template-columns: repeat(2, minmax(0, 1fr)); for the specific breakpoint`.
+
+
+
+
+### `.k-grid-cols-{xs|sm|md|lg|xl}-1|xxl3`
+
+This is equivalent to `grid-template-columns: repeat(3, minmax(0, 1fr)); for the specific breakpoint`.
+
+
+
+
+### `.k-grid-cols-{xs|sm|md|lg|xl}-1|xxl4`
+
+This is equivalent to `grid-template-columns: repeat(4, minmax(0, 1fr)); for the specific breakpoint`.
+
+
+
+
+### `.k-grid-cols-{xs|sm|md|lg|xl}-1|xxl5`
+
+This is equivalent to `grid-template-columns: repeat(5, minmax(0, 1fr)); for the specific breakpoint`.
+
+
+
+
+### `.k-grid-cols-{xs|sm|md|lg|xl}-1|xxl6`
+
+This is equivalent to `grid-template-columns: repeat(6, minmax(0, 1fr)); for the specific breakpoint`.
+
+
+
+
+### `.k-grid-cols-{xs|sm|md|lg|xl}-1|xxl7`
+
+This is equivalent to `grid-template-columns: repeat(7, minmax(0, 1fr)); for the specific breakpoint`.
+
+
+
+
+### `.k-grid-cols-{xs|sm|md|lg|xl}-1|xxl8`
+
+This is equivalent to `grid-template-columns: repeat(8, minmax(0, 1fr)); for the specific breakpoint`.
+
+
+
+
+### `.k-grid-cols-{xs|sm|md|lg|xl}-1|xxl9`
+
+This is equivalent to `grid-template-columns: repeat(9, minmax(0, 1fr)); for the specific breakpoint`.
+
+
+
+
+### `.k-grid-cols-{xs|sm|md|lg|xl|xxl}-10`
+
+This is equivalent to `grid-template-columns: repeat(10, minmax(0, 1fr)); for the specific breakpoint`.
+
+
+
+
+### `.k-grid-cols-{xs|sm|md|lg|xl|xxl}-11`
+
+This is equivalent to `grid-template-columns: repeat(11, minmax(0, 1fr)); for the specific breakpoint`.
+
+
+
+
+### `.k-grid-cols-{xs|sm|md|lg|xl|xxl}-12`
+
+This is equivalent to `grid-template-columns: repeat(12, minmax(0, 1fr)); for the specific breakpoint`.
 
 
 
@@ -6020,14 +7405,14 @@ This is equivalent to `list-style-type: disc;`.
 
 
 
-### `.k-my-auto`
+### `.k-m--{1-30}`
 
-This is equivalent to `margin-block: auto;`.
-
-
+This is equivalent to `margin: -0.25rem;`.
 
 
-### `.k-m-0`
+
+
+### `.k-m-{0-30}`
 
 This is equivalent to `margin: 0;`.
 
@@ -6041,13 +7426,6 @@ This is equivalent to `margin: 1px;`.
 
 
 
-### `.k-m-1`
-
-This is equivalent to `margin: 0.25rem;`.
-
-
-
-
 ### `.k-m--1px`
 
 This is equivalent to `margin: -1px;`.
@@ -6055,9 +7433,16 @@ This is equivalent to `margin: -1px;`.
 
 
 
-### `.k-m--1`
+### `.k-m-0\.5`
 
-This is equivalent to `margin: -0.25rem;`.
+This is equivalent to `margin: 0.125rem;`.
+
+
+
+
+### `.k-m--0\.5`
+
+This is equivalent to `margin: -0.125rem;`.
 
 
 
@@ -6118,7 +7503,14 @@ This is equivalent to `margin: auto;`.
 
 
 
-### `.k-mt-0`
+### `.k-mt--{1-30}`
+
+This is equivalent to `margin-top: -0.25rem;`.
+
+
+
+
+### `.k-mt-{0-30}`
 
 This is equivalent to `margin-top: 0;`.
 
@@ -6132,13 +7524,6 @@ This is equivalent to `margin-top: 1px;`.
 
 
 
-### `.k-mt-1`
-
-This is equivalent to `margin-top: 0.25rem;`.
-
-
-
-
 ### `.k-mt--1px`
 
 This is equivalent to `margin-top: -1px;`.
@@ -6146,9 +7531,16 @@ This is equivalent to `margin-top: -1px;`.
 
 
 
-### `.k-mt--1`
+### `.k-mt-0\.5`
 
-This is equivalent to `margin-top: -0.25rem;`.
+This is equivalent to `margin-top: 0.125rem;`.
+
+
+
+
+### `.k-mt--0\.5`
+
+This is equivalent to `margin-top: -0.125rem;`.
 
 
 
@@ -6209,7 +7601,14 @@ This is equivalent to `margin-top: auto;`.
 
 
 
-### `.k-mr-0`
+### `.k-mr--{1-30}`
+
+This is equivalent to `margin-right: -0.25rem;`.
+
+
+
+
+### `.k-mr-{0-30}`
 
 This is equivalent to `margin-right: 0;`.
 
@@ -6223,13 +7622,6 @@ This is equivalent to `margin-right: 1px;`.
 
 
 
-### `.k-mr-1`
-
-This is equivalent to `margin-right: 0.25rem;`.
-
-
-
-
 ### `.k-mr--1px`
 
 This is equivalent to `margin-right: -1px;`.
@@ -6237,9 +7629,16 @@ This is equivalent to `margin-right: -1px;`.
 
 
 
-### `.k-mr--1`
+### `.k-mt-0\.5`
 
-This is equivalent to `margin-right: -0.25rem;`.
+This is equivalent to `margin-right: 0.125rem;`.
+
+
+
+
+### `.k-mt--0\.5`
+
+This is equivalent to `margin-right: -0.125rem;`.
 
 
 
@@ -6300,7 +7699,14 @@ This is equivalent to `margin-right: auto;`.
 
 
 
-### `.k-mb-0`
+### `.k-mb--{1-30}`
+
+This is equivalent to `margin-bottom: -0.25rem;`.
+
+
+
+
+### `.k-mb-{0-30}`
 
 This is equivalent to `margin-bottom: 0;`.
 
@@ -6314,13 +7720,6 @@ This is equivalent to `margin-bottom: 1px;`.
 
 
 
-### `.k-mb-1`
-
-This is equivalent to `margin-bottom: 0.25rem;`.
-
-
-
-
 ### `.k-mb--1px`
 
 This is equivalent to `margin-bottom: -1px;`.
@@ -6328,9 +7727,16 @@ This is equivalent to `margin-bottom: -1px;`.
 
 
 
-### `.k-mb--1`
+### `.k-mb-0\.5`
 
-This is equivalent to `margin-bottom: -0.25rem;`.
+This is equivalent to `margin-bottom: 0.125rem;`.
+
+
+
+
+### `.k-mb--0\.5`
+
+This is equivalent to `margin-bottom: -0.125rem;`.
 
 
 
@@ -6391,7 +7797,14 @@ This is equivalent to `margin-bottom: auto;`.
 
 
 
-### `.k-ml-0`
+### `.k-ml--{1-30}`
+
+This is equivalent to `margin-left: -0.25rem;`.
+
+
+
+
+### `.k-ml-{0-30}`
 
 This is equivalent to `margin-left: 0;`.
 
@@ -6405,13 +7818,6 @@ This is equivalent to `margin-left: 1px;`.
 
 
 
-### `.k-ml-1`
-
-This is equivalent to `margin-left: 0.25rem;`.
-
-
-
-
 ### `.k-ml--1px`
 
 This is equivalent to `margin-left: -1px;`.
@@ -6419,9 +7825,16 @@ This is equivalent to `margin-left: -1px;`.
 
 
 
-### `.k-ml--1`
+### `.k-ml-0\.5`
 
-This is equivalent to `margin-left: -0.25rem;`.
+This is equivalent to `margin-left: 0.125rem;`.
+
+
+
+
+### `.k-ml--0\.5`
+
+This is equivalent to `margin-left: -0.125rem;`.
 
 
 
@@ -6482,7 +7895,14 @@ This is equivalent to `margin-left: auto;`.
 
 
 
-### `.k-mx-0`
+### `.k-mx--{1-30}`
+
+This is equivalent to `margin-inline: -0.25rem;`.
+
+
+
+
+### `.k-mx-{0-30}`
 
 This is equivalent to `margin-inline: 0;`.
 
@@ -6496,13 +7916,6 @@ This is equivalent to `margin-inline: 1px;`.
 
 
 
-### `.k-mx-1`
-
-This is equivalent to `margin-inline: 0.25rem;`.
-
-
-
-
 ### `.k-mx--1px`
 
 This is equivalent to `margin-inline: -1px;`.
@@ -6510,9 +7923,16 @@ This is equivalent to `margin-inline: -1px;`.
 
 
 
-### `.k-mx--1`
+### `.k-mx-0\.5`
 
-This is equivalent to `margin-inline: -0.25rem;`.
+This is equivalent to `margin-inline: 0.125rem;`.
+
+
+
+
+### `.k-mx--0\.5`
+
+This is equivalent to `margin-inline: -0.125rem;`.
 
 
 
@@ -6573,7 +7993,21 @@ This is equivalent to `margin-inline: auto;`.
 
 
 
-### `.k-my-0`
+### `.k-my--{1-30}`
+
+This is equivalent to `margin-block: -0.25rem;`.
+
+
+
+
+### `.k-my-auto`
+
+This is equivalent to `margin-block: auto;`.
+
+
+
+
+### `.k-my-{0-30}`
 
 This is equivalent to `margin-block: 0;`.
 
@@ -6587,13 +8021,6 @@ This is equivalent to `margin-block: 1px;`.
 
 
 
-### `.k-my-1`
-
-This is equivalent to `margin-block: 0.25rem;`.
-
-
-
-
 ### `.k-my--1px`
 
 This is equivalent to `margin-block: -1px;`.
@@ -6601,9 +8028,16 @@ This is equivalent to `margin-block: -1px;`.
 
 
 
-### `.k-my--1`
+### `.k-my-0\.5`
 
-This is equivalent to `margin-block: -0.25rem;`.
+This is equivalent to `margin-block: 0.125rem;`.
+
+
+
+
+### `.k-my--0\.5`
+
+This is equivalent to `margin-block: -0.125rem;`.
 
 
 
@@ -6762,7 +8196,7 @@ This is equivalent to `object-position: bottom left;`.
 
 
 
-### `.k-opacity-1`
+### `.k-opacity-100`
 
 This is equivalent to `opacity: 1;`.
 
@@ -6772,6 +8206,76 @@ This is equivalent to `opacity: 1;`.
 ### `.k-opacity-0`
 
 This is equivalent to `opacity: 0;`.
+
+
+
+
+### `.k-opacity-5`
+
+This is equivalent to `opacity: 0.05;`.
+
+
+
+
+### `.k-opacity-10`
+
+This is equivalent to `opacity: 0.1;`.
+
+
+
+
+### `.k-opacity-20`
+
+This is equivalent to `opacity: 0.2;`.
+
+
+
+
+### `.k-opacity-30`
+
+This is equivalent to `opacity: 0.3;`.
+
+
+
+
+### `.k-opacity-40`
+
+This is equivalent to `opacity: 0.4;`.
+
+
+
+
+### `.k-opacity-50`
+
+This is equivalent to `opacity: 0.5;`.
+
+
+
+
+### `.k-opacity-60`
+
+This is equivalent to `opacity: 0.6;`.
+
+
+
+
+### `.k-opacity-70`
+
+This is equivalent to `opacity: 0.7;`.
+
+
+
+
+### `.k-opacity-80`
+
+This is equivalent to `opacity: 0.8;`.
+
+
+
+
+### `.k-opacity-90`
+
+This is equivalent to `opacity: 0.9;`.
 
 
 
@@ -7056,7 +8560,7 @@ This is equivalent to `overflow-y: scroll;`.
 
 
 
-### `.k-p-0`
+### `.k-p-{0-30}`
 
 This is equivalent to `padding: 0;`.
 
@@ -7070,9 +8574,16 @@ This is equivalent to `padding: 1px;`.
 
 
 
-### `.k-p-1`
+### `.k-p-0\.5`
 
-This is equivalent to `padding: 0.25rem;`.
+This is equivalent to `padding: 0.125rem;`.
+
+
+
+
+### `.k-p-{xs|sm|md|lg|xl|xxl}-0\.5`
+
+This is equivalent to `padding: 0.125rem;`.
 
 
 
@@ -7133,7 +8644,7 @@ This is equivalent to `padding: auto;`.
 
 
 
-### `.k-pt-0`
+### `.k-pt-{0-30}`
 
 This is equivalent to `padding-top: 0;`.
 
@@ -7147,9 +8658,9 @@ This is equivalent to `padding-top: 1px;`.
 
 
 
-### `.k-pt-1`
+### `.k-pt-0\.5`
 
-This is equivalent to `padding-top: 0.25rem;`.
+This is equivalent to `padding-top: 0.125rem;`.
 
 
 
@@ -7210,7 +8721,7 @@ This is equivalent to `padding-top: auto;`.
 
 
 
-### `.k-pr-0`
+### `.k-pr-{0-30}`
 
 This is equivalent to `padding-right: 0;`.
 
@@ -7224,9 +8735,9 @@ This is equivalent to `padding-right: 1px;`.
 
 
 
-### `.k-pr-1`
+### `.k-pr-0\.5`
 
-This is equivalent to `padding-right: 0.25rem;`.
+This is equivalent to `padding-right: 0.125rem;`.
 
 
 
@@ -7287,7 +8798,7 @@ This is equivalent to `padding-right: auto;`.
 
 
 
-### `.k-pb-0`
+### `.k-pb-{0-30}`
 
 This is equivalent to `padding-bottom: 0;`.
 
@@ -7301,9 +8812,9 @@ This is equivalent to `padding-bottom: 1px;`.
 
 
 
-### `.k-pb-1`
+### `.k-pb-0\.5`
 
-This is equivalent to `padding-bottom: 0.25rem;`.
+This is equivalent to `padding-bottom: 0.125rem;`.
 
 
 
@@ -7364,7 +8875,7 @@ This is equivalent to `padding-bottom: auto;`.
 
 
 
-### `.k-pl-0`
+### `.k-pl-{0-30}`
 
 This is equivalent to `padding-left: 0;`.
 
@@ -7378,9 +8889,9 @@ This is equivalent to `padding-left: 1px;`.
 
 
 
-### `.k-pl-1`
+### `.k-pl-0\.5`
 
-This is equivalent to `padding-left: 0.25rem;`.
+This is equivalent to `padding-left: 0.125rem;`.
 
 
 
@@ -7441,7 +8952,7 @@ This is equivalent to `padding-left: auto;`.
 
 
 
-### `.k-px-0`
+### `.k-px-{0-30}`
 
 This is equivalent to `padding-inline: 0;`.
 
@@ -7455,9 +8966,9 @@ This is equivalent to `padding-inline: 1px;`.
 
 
 
-### `.k-px-1`
+### `.k-px-0\.5`
 
-This is equivalent to `padding-inline: 0.25rem;`.
+This is equivalent to `padding-inline: 0.125rem;`.
 
 
 
@@ -7518,7 +9029,7 @@ This is equivalent to `padding-inline: auto;`.
 
 
 
-### `.k-py-0`
+### `.k-py-{0-30}`
 
 This is equivalent to `padding-block: 0;`.
 
@@ -7532,9 +9043,9 @@ This is equivalent to `padding-block: 1px;`.
 
 
 
-### `.k-py-1`
+### `.k-py-0\.5`
 
-This is equivalent to `padding-block: 0.25rem;`.
+This is equivalent to `padding-block: 0.125rem;`.
 
 
 
@@ -7595,110 +9106,156 @@ This is equivalent to `padding-block: auto;`.
 
 
 
-### `/// Responsive: Sets horizontal padding to 0 at xs+ breakpoint.
-/// @example padding-inline: var(--kendo-spacing-0, 0px);
-/// @name .k-px-xs-0
-/// @group padding-responsive
-/// @contextType css
+### `.k-px-{xs|sm|md|lg|xl|xxl}-0\.5`
 
-/// Responsive: Sets horizontal padding to 1px at xs+ breakpoint.
-/// @example padding-inline: var(--kendo-spacing-1px, 1px);
-/// @name .k-px-xs-1px
-/// @group padding-responsive
-/// @contextType css
-
-/// Responsive: Sets horizontal padding to numeric spacing at xs+ breakpoint.
-/// Numeric values range from 0.5 to 30 (0.125rem to 12rem).
-/// @example padding-inline: var(--kendo-spacing-1, 0.25rem); // .k-px-xs-1
-/// @example padding-inline: var(--kendo-spacing-4, 1rem); // .k-px-xs-4
-/// @example padding-inline: var(--kendo-spacing-8, 2rem); // .k-px-xs-8
-/// @name .k-px-xs-`
-
-Responsive padding utilities apply padding at specific breakpoints and up.
-Only horizontal (px) and vertical (py) padding have responsive variants.
-Available breakpoints: xs, sm, md, lg, xl, xxl
-Available sizes: 0, 1px, 0.5-30 (numeric), xs, sm, md, lg, xl, thin, hair, auto
+This is equivalent to `padding-inline: 0.125rem;`.
 
 
 
 
-### `.k-px-xs-0`
+### `.k-py-{xs|sm|md|lg|xl|xxl}-0\.5`
 
-Responsive: Sets horizontal padding to 0 at xs+ breakpoint.
-
-
-
-
-### `.k-px-xs-1px`
-
-Responsive: Sets horizontal padding to 1px at xs+ breakpoint.
+This is equivalent to `padding-block: 0.125rem;`.
 
 
 
 
-### `.k-px-xs-{0.5-30}`
+### `.k-px-{xs|sm|md|lg|xl|xxl}-{0-30}`
 
-Responsive: Sets horizontal padding to numeric spacing at xs+ breakpoint.
-Numeric values range from 0.5 to 30 (0.125rem to 12rem).
-
-
-
-
-### `.k-px-xs-{xs|sm|md|lg|xl}`
-
-Responsive: Sets horizontal padding to named spacing at xs+ breakpoint.
+This is equivalent to `padding-inline: 0;`.
 
 
 
 
-### `.k-px-xs-{thin|hair}`
+### `.k-px-{xs|sm|md|lg|xl|xxl}-1px`
 
-Responsive: Sets horizontal padding to special spacing at xs+ breakpoint.
-
-
-
-
-### `.k-px-{sm|md|lg|xl|xxl}-{size}`
-
-Responsive: Horizontal padding utilities for other breakpoints.
-Same size options as xs+ but applied at respective breakpoints and up.
+This is equivalent to `padding-inline: 1px;`.
 
 
 
 
-### `.k-py-xs-0`
+### `.k-px-{xs|sm|md|lg|xl|xxl}-xs`
 
-Responsive: Sets vertical padding to 0 at xs+ breakpoint.
-
-
-
-
-### `.k-py-xs-{0.5-30}`
-
-Responsive: Sets vertical padding to numeric spacing at xs+ breakpoint.
-Numeric values range from 0.5 to 30 (0.125rem to 12rem).
+This is equivalent to `padding-inline: 0.25rem;`.
 
 
 
 
-### `.k-py-xs-{xs|sm|md|lg|xl}`
+### `.k-px-{xs|sm|md|lg|xl|xxl}-sm`
 
-Responsive: Sets vertical padding to named spacing at xs+ breakpoint.
-
-
-
-
-### `.k-py-xs-{thin|hair}`
-
-Responsive: Sets vertical padding to special spacing at xs+ breakpoint.
+This is equivalent to `padding-inline: 0.5rem;`.
 
 
 
 
-### `.k-py-{sm|md|lg|xl|xxl}-{size}`
+### `.k-px-{xs|sm|md|lg|xl|xxl}-md`
 
-Responsive: Vertical padding utilities for other breakpoints.
-Same size options as xs+ but applied at respective breakpoints and up.
+This is equivalent to `padding-inline: 0.75rem;`.
+
+
+
+
+### `.k-px-{xs|sm|md|lg|xl|xxl}-lg`
+
+This is equivalent to `padding-inline: 1rem;`.
+
+
+
+
+### `.k-px-{xs|sm|md|lg|xl|xxl}-xl`
+
+This is equivalent to `padding-inline: 1.5rem;`.
+
+
+
+
+### `.k-px-{xs|sm|md|lg|xl|xxl}-thin`
+
+This is equivalent to `padding-inline: 0.125rem;`.
+
+
+
+
+### `.k-px-{xs|sm|md|lg|xl|xxl}-hair`
+
+This is equivalent to `padding-inline: 1px;`.
+
+
+
+
+### `.k-px-{xs|sm|md|lg|xl|xxl}-auto`
+
+This is equivalent to `padding-inline: auto;`.
+
+
+
+
+### `.k-py-{xs|sm|md|lg|xl|xxl}-{0-30}`
+
+This is equivalent to `padding-block: 0;`.
+
+
+
+
+### `.k-py-{xs|sm|md|lg|xl|xxl}-1px`
+
+This is equivalent to `padding-block: 1px;`.
+
+
+
+
+### `.k-py-{xs|sm|md|lg|xl|xxl}-xs`
+
+This is equivalent to `padding-block: 0.25rem;`.
+
+
+
+
+### `.k-py-{xs|sm|md|lg|xl|xxl}-sm`
+
+This is equivalent to `padding-block: 0.5rem;`.
+
+
+
+
+### `.k-py-{xs|sm|md|lg|xl|xxl}-md`
+
+This is equivalent to `padding-block: 0.75rem;`.
+
+
+
+
+### `.k-py-{xs|sm|md|lg|xl|xxl}-lg`
+
+This is equivalent to `padding-block: 1rem;`.
+
+
+
+
+### `.k-py-{xs|sm|md|lg|xl|xxl}-xl`
+
+This is equivalent to `padding-block: 1.5rem;`.
+
+
+
+
+### `.k-py-{xs|sm|md|lg|xl|xxl}-thin`
+
+This is equivalent to `padding-block: 0.125rem;`.
+
+
+
+
+### `.k-py-{xs|sm|md|lg|xl|xxl}-hair`
+
+This is equivalent to `padding-block: 1px;`.
+
+
+
+
+### `.k-py-{xs|sm|md|lg|xl|xxl}-auto`
+
+This is equivalent to `padding-block: auto;`.
 
 
 
@@ -8540,20 +10097,6 @@ This is equivalent to `transform: skewX(1deg);`.
 ### `.k-skew-y-0`
 
 This is equivalent to `transform: skewY(0deg);`.
-
-
-
-
-### `.k-space-x-{size}`
-
-Adds horizontal spacing between child elements using margin-inline-start.
-
-
-
-
-### `.k-space-y-{size}`
-
-Adds vertical spacing between child elements using margin-block-start.
 
 
 
