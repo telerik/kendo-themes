@@ -5984,6 +5984,69 @@ This is equivalent to `grid-column-span: span 3 / span 3;`.
 
 
 
+### `.k-col-span-4`
+
+This is equivalent to `grid-column-start: span 4 / span 4;`.
+
+
+
+
+### `.k-col-span-5`
+
+This is equivalent to `grid-column-start: span 5 / span 5;`.
+
+
+
+
+### `.k-col-span-6`
+
+This is equivalent to `grid-column-start: span 6 / span 6;`.
+
+
+
+
+### `.k-col-span-7`
+
+This is equivalent to `grid-column-start: span 7 / span 7;`.
+
+
+
+
+### `.k-col-span-8`
+
+This is equivalent to `grid-column-start: span 8 / span 8;`.
+
+
+
+
+### `.k-col-span-9`
+
+This is equivalent to `grid-column-start: span 9 / span 9;`.
+
+
+
+
+### `.k-col-span-10`
+
+This is equivalent to `grid-column-start: span 10 / span 10;`.
+
+
+
+
+### `.k-col-span-11`
+
+This is equivalent to `grid-column-start: span 11 / span 11;`.
+
+
+
+
+### `.k-col-span-12`
+
+This is equivalent to `grid-column-start: span 12 / span 12;`.
+
+
+
+
 ### `.k-col-span-full`
 
 This is equivalent to `grid-column: 1 / -1;`.
@@ -6215,6 +6278,69 @@ This is equivalent to `grid-column-span: span 3 / span 3; for the specific break
 
 
 
+### `.k-col-span-{xs|sm|md|lg|xl|xxl}-4`
+
+This is equivalent to `grid-column-start: span 4 / span 4; for the specific breakpoint`.
+
+
+
+
+### `.k-col-span-{xs|sm|md|lg|xl|xxl}-5`
+
+This is equivalent to `grid-column-start: span 5 / span 5; for the specific breakpoint`.
+
+
+
+
+### `.k-col-span-{xs|sm|md|lg|xl|xxl}-6`
+
+This is equivalent to `grid-column-start: span 6 / span 6; for the specific breakpoint`.
+
+
+
+
+### `.k-col-span-{xs|sm|md|lg|xl|xxl}-7`
+
+This is equivalent to `grid-column-start: span 7 / span 7; for the specific breakpoint`.
+
+
+
+
+### `.k-col-span-{xs|sm|md|lg|xl|xxl}-8`
+
+This is equivalent to `grid-column-start: span 8 / span 8; for the specific breakpoint`.
+
+
+
+
+### `.k-col-span-{xs|sm|md|lg|xl|xxl}-9`
+
+This is equivalent to `grid-column-start: span 9 / span 9; for the specific breakpoint`.
+
+
+
+
+### `.k-col-span-{xs|sm|md|lg|xl|xxl}-10`
+
+This is equivalent to `grid-column-start: span 10 / span 10; for the specific breakpoint`.
+
+
+
+
+### `.k-col-span-{xs|sm|md|lg|xl|xxl}-11`
+
+This is equivalent to `grid-column-start: span 11 / span 11; for the specific breakpoint`.
+
+
+
+
+### `.k-col-span-{xs|sm|md|lg|xl|xxl}-12`
+
+This is equivalent to `grid-column-start: span 12 / span 12; for the specific breakpoint`.
+
+
+
+
 ### `.k-col-span-{xs|sm|md|lg|xl|xxl}-full`
 
 This is equivalent to `grid-column: 1 / -1; for the specific breakpoint`.
@@ -6442,6 +6568,69 @@ This is equivalent to `grid-row-span: span 2 / span 2;`.
 ### `.k-row-span-3`
 
 This is equivalent to `grid-row-span: span 3 / span 3;`.
+
+
+
+
+### `.k-row-span-4`
+
+This is equivalent to `grid-row-start: span 4 / span 4;`.
+
+
+
+
+### `.k-row-span-5`
+
+This is equivalent to `grid-row-start: span 5 / span 5;`.
+
+
+
+
+### `.k-row-span-6`
+
+This is equivalent to `grid-row-start: span 6 / span 6;`.
+
+
+
+
+### `.k-row-span-7`
+
+This is equivalent to `grid-row-start: span 7 / span 7;`.
+
+
+
+
+### `.k-row-span-8`
+
+This is equivalent to `grid-row-start: span 8 / span 8;`.
+
+
+
+
+### `.k-row-span-9`
+
+This is equivalent to `grid-row-start: span 9 / span 9;`.
+
+
+
+
+### `.k-row-span-10`
+
+This is equivalent to `grid-row-start: span 10 / span 10;`.
+
+
+
+
+### `.k-row-span-11`
+
+This is equivalent to `grid-row-start: span 11 / span 11;`.
+
+
+
+
+### `.k-row-span-12`
+
+This is equivalent to `grid-row-start: span 12 / span 12;`.
 
 
 
@@ -6747,7 +6936,7 @@ This is equivalent to `grid-row-end: 13; for the specific breakpoint`.
 
 
 
-### `.k-row-end-{xs|sm|md|lg|xl|xxl}-1auto`
+### `.k-row-end-{xs|sm|md|lg|xl|xxl}-auto`
 
 This is equivalent to `grid-row-end: auto; for the specific breakpoint`.
 
