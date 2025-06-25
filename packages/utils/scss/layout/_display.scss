@@ -82,6 +82,94 @@
 /// @group display
 /// @contextType css
 
+// ============================================================================
+// Responsive Display Utilities
+// ============================================================================
+
+/// This is equivalent to `display: none;`.
+/// @example display: none;
+/// @name .k-d-{xs|md|lg|xl|xxl}-none
+/// @group display-responsive
+/// @contextType css
+
+/// This is equivalent to `display: contents;`.
+/// @example display: contents;
+/// @name .k-d-{xs|md|lg|xl|xxl}-contents
+/// @group display-responsive
+/// @contextType css
+
+/// This is equivalent to `display: block;`.
+/// @example display: block;
+/// @name .k-d-{xs|md|lg|xl|xxl}-block
+/// @group display-responsive
+/// @contextType css
+
+/// This is equivalent to `display: inline;`.
+/// @example display: inline;
+/// @name .k-d-{xs|md|lg|xl|xxl}-inline
+/// @group display-responsive
+/// @contextType css
+
+/// This is equivalent to `display: inline-block;`.
+/// @example display: inline-block;
+/// @name .k-d-{xs|md|lg|xl|xxl}-inline-block
+/// @group display-responsive
+/// @contextType css
+
+/// This is equivalent to `display: flex;`.
+/// @example display: flex;
+/// @name .k-d-{xs|md|lg|xl|xxl}-flex
+/// @group display-responsive
+/// @contextType css
+
+/// This is equivalent to `display: inline-flex;`.
+/// @example display: inline-flex;
+/// @name .k-d-{xs|md|lg|xl|xxl}-inline-flex
+/// @group display-responsive
+/// @contextType css
+
+/// This is equivalent to `display: grid`. It defines the element as a grid container and establishes a new grid formatting context for its contents.
+/// @example display: grid
+/// @name .k-d-{xs|md|lg|xl|xxl}-grid
+/// @group display-responsive
+/// @contextType css
+
+/// This is equivalent to `display: inline-grid`. It defines the element as a grid container and establishes a new grid formatting context for its contents.
+/// @example display: inline-grid
+/// @name .k-d-{xs|md|lg|xl|xxl}-inline-grid
+/// @group display-responsive
+/// @contextType css
+
+/// This is equivalent to `display: table;`.
+/// @example display: table;
+/// @name .k-d-{xs|md|lg|xl|xxl}-table
+/// @group display-responsive
+/// @contextType css
+
+/// This is equivalent to `display: inline-table;`.
+/// @example display: inline-table;
+/// @name .k-d-{xs|md|lg|xl|xxl}-inline-table
+/// @group display-responsive
+/// @contextType css
+
+/// This is equivalent to `display: list-item;`.
+/// @example display: list-item;
+/// @name .k-d-{xs|md|lg|xl|xxl}-list-item
+/// @group display-responsive
+/// @contextType css
+
+/// This is equivalent to `display: table-row;`.
+/// @example display: table-row;
+/// @name .k-d-{xs|md|lg|xl|xxl}-table-row
+/// @group display-responsive
+/// @contextType css
+
+/// This is equivalent to `display: table-cell;`.
+/// @example display: table-cell;
+/// @name .k-d-{xs|md|lg|xl|xxl}-table-cell
+/// @group display-responsive
+/// @contextType css
+
 @use "sass:map";
 @use "../_globals.scss" as *;
 
