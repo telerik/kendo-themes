@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v11.1.0-dev.3...v11.1.0-dev.4) (2025-06-25)
+
+**Note:** Version bump only for package @progress/kendo-theme-bootstrap
+
+
+
+
+
 # [11.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v11.1.0-dev.2...v11.1.0-dev.3) (2025-06-23)
 
 **Note:** Version bump only for package @progress/kendo-theme-bootstrap
