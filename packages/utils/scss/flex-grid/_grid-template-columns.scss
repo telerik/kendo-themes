@@ -88,49 +88,49 @@
 
 /// This is equivalent to `grid-template-columns: repeat(2, minmax(0, 1fr)); for the specific breakpoint`.
 /// @example grid-template-columns: repeat(2, minmax(0, 1fr));
-/// @name .k-grid-cols-{xs|sm|md|lg|xl}-1|xxl2
+/// @name .k-grid-cols-{xs|sm|md|lg|xl|xxl}-2
 /// @group grid-template-columns-responsive
 /// @contextType css
 
 /// This is equivalent to `grid-template-columns: repeat(3, minmax(0, 1fr)); for the specific breakpoint`.
 /// @example grid-template-columns: repeat(3, minmax(0, 1fr));
-/// @name .k-grid-cols-{xs|sm|md|lg|xl}-1|xxl3
+/// @name .k-grid-cols-{xs|sm|md|lg|xl|xxl}-3
 /// @group grid-template-columns-responsive
 /// @contextType css
 
 /// This is equivalent to `grid-template-columns: repeat(4, minmax(0, 1fr)); for the specific breakpoint`.
 /// @example grid-template-columns: repeat(4, minmax(0, 1fr));
-/// @name .k-grid-cols-{xs|sm|md|lg|xl}-1|xxl4
+/// @name .k-grid-cols-{xs|sm|md|lg|xl|xxl}-4
 /// @group grid-template-columns-responsive
 /// @contextType css
 
 /// This is equivalent to `grid-template-columns: repeat(5, minmax(0, 1fr)); for the specific breakpoint`.
 /// @example grid-template-columns: repeat(5, minmax(0, 1fr));
-/// @name .k-grid-cols-{xs|sm|md|lg|xl}-1|xxl5
+/// @name .k-grid-cols-{xs|sm|md|lg|xl|xxl}-5
 /// @group grid-template-columns-responsive
 /// @contextType css
 
 /// This is equivalent to `grid-template-columns: repeat(6, minmax(0, 1fr)); for the specific breakpoint`.
 /// @example grid-template-columns: repeat(6, minmax(0, 1fr));
-/// @name .k-grid-cols-{xs|sm|md|lg|xl}-1|xxl6
+/// @name .k-grid-cols-{xs|sm|md|lg|xl|xxl}-6
 /// @group grid-template-columns-responsive
 /// @contextType css
 
 /// This is equivalent to `grid-template-columns: repeat(7, minmax(0, 1fr)); for the specific breakpoint`.
 /// @example grid-template-columns: repeat(7, minmax(0, 1fr));
-/// @name .k-grid-cols-{xs|sm|md|lg|xl}-1|xxl7
+/// @name .k-grid-cols-{xs|sm|md|lg|xl|xxl}-7
 /// @group grid-template-columns-responsive
 /// @contextType css
 
 /// This is equivalent to `grid-template-columns: repeat(8, minmax(0, 1fr)); for the specific breakpoint`.
 /// @example grid-template-columns: repeat(8, minmax(0, 1fr));
-/// @name .k-grid-cols-{xs|sm|md|lg|xl}-1|xxl8
+/// @name .k-grid-cols-{xs|sm|md|lg|xl|xxl}-8
 /// @group grid-template-columns-responsive
 /// @contextType css
 
 /// This is equivalent to `grid-template-columns: repeat(9, minmax(0, 1fr)); for the specific breakpoint`.
 /// @example grid-template-columns: repeat(9, minmax(0, 1fr));
-/// @name .k-grid-cols-{xs|sm|md|lg|xl}-1|xxl9
+/// @name .k-grid-cols-{xs|sm|md|lg|xl|xxl}-9
 /// @group grid-template-columns-responsive
 /// @contextType css
 
@@ -150,12 +150,6 @@
 /// @example grid-template-columns: repeat(12, minmax(0, 1fr));
 /// @name .k-grid-cols-{xs|sm|md|lg|xl|xxl}-12
 /// @group grid-template-columns-responsive
-/// @contextType css
-
-/// This is equivalent to `grid-template-columns: none;`.
-/// @example grid-template-columns: none;
-/// @name .k-grid-cols-none
-/// @group grid-template-columns
 /// @contextType css
 
 @use "sass:map";
