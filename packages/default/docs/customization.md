@@ -12764,6 +12764,106 @@ The following table lists the available variables for customizing the Default th
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Grid row resize indicator.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-grid-stack-cell-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid stack layout cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-stack-cell-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid stack layout cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-stack-column-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The column gap of the Grid stack layout.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-stack-editable-column-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The column gap of the editable Grid stack layout.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-stack-hierarchy-col-width</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the hierarchy column in the Grid stack layout.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-stack-header-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Grid stack layout column header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-stack-header-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-bold, bold )</code></td>
+    <td><code>var(--kendo-font-weight-bold, bold)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Grid stack layout column header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-stack-expandable-shadow-height</td>
+    <td>String</td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5, 0.625rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Grid stack layout expandable row shadow.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-stack-header-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #666666)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Grid stack layout column header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-stack-expandable-shadow</td>
+    <td>String</td>
+    <td><code>k-elevation(2)</code></td>
+    <td><code>var(--kendo-elevation-2, 0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Grid stack layout expandable row shadow.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
