@@ -28,6 +28,222 @@
 /// @group outline-color
 /// @contextType css
 
+/// Sets the border color to the app surface color.
+/// @example outline-color: var(--kendo-color-app-surface, #fafafa);
+/// @name .k-outline-app-surface
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the on app surface color.
+/// @example outline-color: var(--kendo-color-on-app-surface, #424242);
+/// @name .k-outline-on-app-surface
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the subtle color.
+/// @example outline-color: var(--kendo-color-subtle, #666666);
+/// @name .k-outline-subtle
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the surface color.
+/// @example outline-color: var(--kendo-color-surface, #ffffff);
+/// @name .k-outline-surface
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the surface alt color.
+/// @example outline-color: var(--kendo-color-surface-alt, #f5f5f5);
+/// @name .k-outline-surface-alt
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the border color.
+/// @example outline-color: var(--kendo-color-border, #d9d9d9);
+/// @name .k-outline-border
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the border alt color.
+/// @example outline-color: var(--kendo-color-outline-alt, #e0e0e0);
+/// @name .k-outline-alt
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the base subtle color.
+/// @example outline-color: var(--kendo-color-base-subtle, #f0f0f0);
+/// @name .k-outline-base-subtle
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the base emphasis color.
+/// @example outline-color: var(--kendo-color-base-emphasis, #000000);
+/// @name .k-outline-base-emphasis
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the primary subtle color.
+/// @example outline-color: var(--kendo-color-primary-subtle, #e3f2fd);
+/// @name .k-outline-primary-subtle
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the primary color.
+/// @example outline-color: var(--kendo-color-primary, #2196f3);
+/// @name .k-outline-primary
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the primary emphasis color.
+/// @example outline-color: var(--kendo-color-primary-emphasis, #1976d2);
+/// @name .k-outline-primary-emphasis
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the secondary subtle color.
+/// @example outline-color: var(--kendo-color-secondary-subtle, #f3e5f5);
+/// @name .k-outline-secondary-subtle
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the secondary color.
+/// @example outline-color: var(--kendo-color-secondary, #9c27b0);
+/// @name .k-outline-secondary
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the secondary emphasis color.
+/// @example outline-color: var(--kendo-color-secondary-emphasis, #7b1fa2);
+/// @name .k-outline-secondary-emphasis
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the tertiary subtle color.
+/// @example outline-color: var(--kendo-color-tertiary-subtle, #fff3e0);
+/// @name .k-outline-tertiary-subtle
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the tertiary color.
+/// @example outline-color: var(--kendo-color-tertiary, #ff9800);
+/// @name .k-outline-tertiary
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the tertiary emphasis color.
+/// @example outline-color: var(--kendo-color-tertiary-emphasis, #f57c00);
+/// @name .k-outline-tertiary-emphasis
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the info subtle color.
+/// @example outline-color: var(--kendo-color-info-subtle, #e1f5fe);
+/// @name .k-outline-info-subtle
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the info color.
+/// @example outline-color: var(--kendo-color-info, #00bcd4);
+/// @name .k-outline-info
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the info emphasis color.
+/// @example outline-color: var(--kendo-color-info-emphasis, #0097a7);
+/// @name .k-outline-info-emphasis
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the success subtle color.
+/// @example outline-color: var(--kendo-color-success-subtle, #e8f5e8);
+/// @name .k-outline-success-subtle
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the success color.
+/// @example outline-color: var(--kendo-color-success, #4caf50);
+/// @name .k-outline-success
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the success emphasis color.
+/// @example outline-color: var(--kendo-color-success-emphasis, #388e3c);
+/// @name .k-outline-success-emphasis
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the warning subtle color.
+/// @example outline-color: var(--kendo-color-warning-subtle, #fff8e1);
+/// @name .k-outline-warning-subtle
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the warning color.
+/// @example outline-color: var(--kendo-color-warning, #ff9800);
+/// @name .k-outline-warning
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the warning emphasis color.
+/// @example outline-color: var(--kendo-color-warning-emphasis, #f57c00);
+/// @name .k-outline-warning-emphasis
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the error subtle color.
+/// @example outline-color: var(--kendo-color-error-subtle, #ffebee);
+/// @name .k-outline-error-subtle
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the error color.
+/// @example outline-color: var(--kendo-color-error, #f44336);
+/// @name .k-outline-error
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the error emphasis color.
+/// @example outline-color: var(--kendo-color-error-emphasis, #d32f2f);
+/// @name .k-outline-error-emphasis
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the light subtle color.
+/// @example outline-color: var(--kendo-color-light-subtle, #f8f9fa);
+/// @name .k-outline-light-subtle
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the light color.
+/// @example outline-color: var(--kendo-color-light, #f8f9fa);
+/// @name .k-outline-light
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the light emphasis color.
+/// @example outline-color: var(--kendo-color-light-emphasis, #dee2e6);
+/// @name .k-outline-light-emphasis
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the dark subtle color.
+/// @example outline-color: var(--kendo-color-dark-subtle, #6c757d);
+/// @name .k-outline-dark-subtle
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the dark color.
+/// @example outline-color: var(--kendo-color-dark, #343a40);
+/// @name .k-outline-dark
+/// @group outline-color
+/// @contextType css
+
+/// Sets the border color to the dark emphasis color.
+/// @example outline-color: var(--kendo-color-dark-emphasis, #212529);
+/// @name .k-outline-dark-emphasis
+/// @group outline-color
+/// @contextType css
+
 @use "sass:map";
 @use "../_globals.scss" as *;
 
