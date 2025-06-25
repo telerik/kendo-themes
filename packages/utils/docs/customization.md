@@ -4283,13 +4283,6 @@ Sets column gap to hair spacing.
 
 
 
-### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-7`
-
-Sets column gap to 1.75rem (28px at 16px base).
-
-
-
-
 ### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-0`
 
 Sets column gap to 0 pixels.
@@ -4391,6 +4384,13 @@ Sets column gap to 1.5rem (24px at 16px base).
 ### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-6\.5`
 
 Sets column gap to 1.625rem (26px at 16px base).
+
+
+
+
+### `.k-col-gap-{xs|sm|md|lg|xl|xxl}-7`
+
+Sets column gap to 1.75rem (28px at 16px base).
 
 
 
@@ -4731,13 +4731,6 @@ This is equivalent to `cursor: default;`.
 
 
 
-### `.k-d-table-cell`
-
-This is equivalent to `display: table-cell;`.
-
-
-
-
 ### `.k-d-none`
 
 This is equivalent to `display: none;`.
@@ -4825,6 +4818,111 @@ This is equivalent to `display: list-item;`.
 ### `.k-d-table-row`
 
 This is equivalent to `display: table-row;`.
+
+
+
+
+### `.k-d-table-cell`
+
+This is equivalent to `display: table-cell;`.
+
+
+
+
+### `.k-d-{xs|md|lg|xl|xxl}-none`
+
+This is equivalent to `display: none;`.
+
+
+
+
+### `.k-d-{xs|md|lg|xl|xxl}-contents`
+
+This is equivalent to `display: contents;`.
+
+
+
+
+### `.k-d-{xs|md|lg|xl|xxl}-block`
+
+This is equivalent to `display: block;`.
+
+
+
+
+### `.k-d-{xs|md|lg|xl|xxl}-inline`
+
+This is equivalent to `display: inline;`.
+
+
+
+
+### `.k-d-{xs|md|lg|xl|xxl}-inline-block`
+
+This is equivalent to `display: inline-block;`.
+
+
+
+
+### `.k-d-{xs|md|lg|xl|xxl}-flex`
+
+This is equivalent to `display: flex;`.
+
+
+
+
+### `.k-d-{xs|md|lg|xl|xxl}-inline-flex`
+
+This is equivalent to `display: inline-flex;`.
+
+
+
+
+### `.k-d-{xs|md|lg|xl|xxl}-grid`
+
+This is equivalent to `display: grid`. It defines the element as a grid container and establishes a new grid formatting context for its contents.
+
+
+
+
+### `.k-d-{xs|md|lg|xl|xxl}-inline-grid`
+
+This is equivalent to `display: inline-grid`. It defines the element as a grid container and establishes a new grid formatting context for its contents.
+
+
+
+
+### `.k-d-{xs|md|lg|xl|xxl}-table`
+
+This is equivalent to `display: table;`.
+
+
+
+
+### `.k-d-{xs|md|lg|xl|xxl}-inline-table`
+
+This is equivalent to `display: inline-table;`.
+
+
+
+
+### `.k-d-{xs|md|lg|xl|xxl}-list-item`
+
+This is equivalent to `display: list-item;`.
+
+
+
+
+### `.k-d-{xs|md|lg|xl|xxl}-table-row`
+
+This is equivalent to `display: table-row;`.
+
+
+
+
+### `.k-d-{xs|md|lg|xl|xxl}-table-cell`
+
+This is equivalent to `display: table-cell;`.
 
 
 
@@ -6089,7 +6187,7 @@ This is equivalent to `grid-column-start: 13; for the specific breakpoint`.
 
 
 
-### `.k-col-start-auto`
+### `.k-col-start-{xs|sm|md|lg|xl|xxl}-auto`
 
 This is equivalent to `grid-column-start: auto; for the specific breakpoint`.
 
@@ -6138,56 +6236,56 @@ This is equivalent to `grid-column-end: 1; for the specific breakpoint`.
 
 
 
-### `.k-col-end-{xs|sm|md|lg|xl|xxl}-12`
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-2`
 
 This is equivalent to `grid-column-end: 2; for the specific breakpoint`.
 
 
 
 
-### `.k-col-end-{xs|sm|md|lg|xl|xxl}-13`
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-3`
 
 This is equivalent to `grid-column-end: 3; for the specific breakpoint`.
 
 
 
 
-### `.k-col-end-{xs|sm|md|lg|xl|xxl}-14`
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-4`
 
 This is equivalent to `grid-column-end: 4; for the specific breakpoint`.
 
 
 
 
-### `.k-col-end-{xs|sm|md|lg|xl|xxl}-15`
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-5`
 
 This is equivalent to `grid-column-end: 5; for the specific breakpoint`.
 
 
 
 
-### `.k-col-end-{xs|sm|md|lg|xl|xxl}-16`
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-6`
 
 This is equivalent to `grid-column-end: 6; for the specific breakpoint`.
 
 
 
 
-### `.k-col-end-{xs|sm|md|lg|xl|xxl}-17`
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-7`
 
 This is equivalent to `grid-column-end: 7; for the specific breakpoint`.
 
 
 
 
-### `.k-col-end-{xs|sm|md|lg|xl|xxl}-18`
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-8`
 
 This is equivalent to `grid-column-end: 8; for the specific breakpoint`.
 
 
 
 
-### `.k-col-end-{xs|sm|md|lg|xl|xxl}-19`
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-9`
 
 This is equivalent to `grid-column-end: 9; for the specific breakpoint`.
 
@@ -6222,7 +6320,7 @@ This is equivalent to `grid-column-end: 13; for the specific breakpoint`.
 
 
 
-### `.k-col-end-{xs|sm|md|lg|xl|xxl}-1auto`
+### `.k-col-end-{xs|sm|md|lg|xl|xxl}-auto`
 
 This is equivalent to `grid-column-end: auto; for the specific breakpoint`.
 
@@ -6747,13 +6845,6 @@ This is equivalent to `grid-template-columns: none;`.
 
 
 
-### `.k-grid-cols-none`
-
-This is equivalent to `grid-template-columns: none;`.
-
-
-
-
 ### `.k-grid-cols-{xs|sm|md|lg|xl|xxl}-1`
 
 This is equivalent to `grid-template-columns: repeat(1, minmax(0, 1fr)); for the specific breakpoint`.
@@ -6761,56 +6852,56 @@ This is equivalent to `grid-template-columns: repeat(1, minmax(0, 1fr)); for the
 
 
 
-### `.k-grid-cols-{xs|sm|md|lg|xl}-1|xxl2`
+### `.k-grid-cols-{xs|sm|md|lg|xl|xxl}-2`
 
 This is equivalent to `grid-template-columns: repeat(2, minmax(0, 1fr)); for the specific breakpoint`.
 
 
 
 
-### `.k-grid-cols-{xs|sm|md|lg|xl}-1|xxl3`
+### `.k-grid-cols-{xs|sm|md|lg|xl|xxl}-3`
 
 This is equivalent to `grid-template-columns: repeat(3, minmax(0, 1fr)); for the specific breakpoint`.
 
 
 
 
-### `.k-grid-cols-{xs|sm|md|lg|xl}-1|xxl4`
+### `.k-grid-cols-{xs|sm|md|lg|xl|xxl}-4`
 
 This is equivalent to `grid-template-columns: repeat(4, minmax(0, 1fr)); for the specific breakpoint`.
 
 
 
 
-### `.k-grid-cols-{xs|sm|md|lg|xl}-1|xxl5`
+### `.k-grid-cols-{xs|sm|md|lg|xl|xxl}-5`
 
 This is equivalent to `grid-template-columns: repeat(5, minmax(0, 1fr)); for the specific breakpoint`.
 
 
 
 
-### `.k-grid-cols-{xs|sm|md|lg|xl}-1|xxl6`
+### `.k-grid-cols-{xs|sm|md|lg|xl|xxl}-6`
 
 This is equivalent to `grid-template-columns: repeat(6, minmax(0, 1fr)); for the specific breakpoint`.
 
 
 
 
-### `.k-grid-cols-{xs|sm|md|lg|xl}-1|xxl7`
+### `.k-grid-cols-{xs|sm|md|lg|xl|xxl}-7`
 
 This is equivalent to `grid-template-columns: repeat(7, minmax(0, 1fr)); for the specific breakpoint`.
 
 
 
 
-### `.k-grid-cols-{xs|sm|md|lg|xl}-1|xxl8`
+### `.k-grid-cols-{xs|sm|md|lg|xl|xxl}-8`
 
 This is equivalent to `grid-template-columns: repeat(8, minmax(0, 1fr)); for the specific breakpoint`.
 
 
 
 
-### `.k-grid-cols-{xs|sm|md|lg|xl}-1|xxl9`
+### `.k-grid-cols-{xs|sm|md|lg|xl|xxl}-9`
 
 This is equivalent to `grid-template-columns: repeat(9, minmax(0, 1fr)); for the specific breakpoint`.
 
@@ -6855,6 +6946,76 @@ This is equivalent to `grid-template-rows: repeat(1, minmax(0, 1fr));`.
 ### `.k-grid-rows-2`
 
 This is equivalent to `grid-template-rows: repeat(2, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-rows-3`
+
+This is equivalent to `grid-template-rows: repeat(3, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-rows-4`
+
+This is equivalent to `grid-template-rows: repeat(4, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-rows-5`
+
+This is equivalent to `grid-template-rows: repeat(5, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-rows-6`
+
+This is equivalent to `grid-template-rows: repeat(6, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-rows-7`
+
+This is equivalent to `grid-template-rows: repeat(7, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-rows-8`
+
+This is equivalent to `grid-template-rows: repeat(8, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-rows-9`
+
+This is equivalent to `grid-template-rows: repeat(9, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-rows-10`
+
+This is equivalent to `grid-template-rows: repeat(10, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-rows-11`
+
+This is equivalent to `grid-template-rows: repeat(11, minmax(0, 1fr));`.
+
+
+
+
+### `.k-grid-rows-12`
+
+This is equivalent to `grid-template-rows: repeat(12, minmax(0, 1fr));`.
 
 
 
@@ -8287,7 +8448,7 @@ This is equivalent to `order: 0;`.
 
 
 
-### `.k-order-first`
+### `.k-order-{1-12}`
 
 This is equivalent to `order: 1;`.
 
@@ -8308,9 +8469,9 @@ This is equivalent to `order: 9999;`.
 
 
 
-### `.k-outline-white`
+### `.k-outline-dark-emphasis`
 
-This is equivalent to `outline-color: white;`.
+Sets the border color to the dark emphasis color.
 
 
 
@@ -8339,6 +8500,258 @@ This is equivalent to `outline-color: transparent;`.
 ### `.k-outline-black`
 
 This is equivalent to `outline-color: black;`.
+
+
+
+
+### `.k-outline-white`
+
+This is equivalent to `outline-color: white;`.
+
+
+
+
+### `.k-outline-app-surface`
+
+Sets the border color to the app surface color.
+
+
+
+
+### `.k-outline-on-app-surface`
+
+Sets the border color to the on app surface color.
+
+
+
+
+### `.k-outline-subtle`
+
+Sets the border color to the subtle color.
+
+
+
+
+### `.k-outline-surface`
+
+Sets the border color to the surface color.
+
+
+
+
+### `.k-outline-surface-alt`
+
+Sets the border color to the surface alt color.
+
+
+
+
+### `.k-outline-border`
+
+Sets the border color to the border color.
+
+
+
+
+### `.k-outline-alt`
+
+Sets the border color to the border alt color.
+
+
+
+
+### `.k-outline-base-subtle`
+
+Sets the border color to the base subtle color.
+
+
+
+
+### `.k-outline-base-emphasis`
+
+Sets the border color to the base emphasis color.
+
+
+
+
+### `.k-outline-primary-subtle`
+
+Sets the border color to the primary subtle color.
+
+
+
+
+### `.k-outline-primary`
+
+Sets the border color to the primary color.
+
+
+
+
+### `.k-outline-primary-emphasis`
+
+Sets the border color to the primary emphasis color.
+
+
+
+
+### `.k-outline-secondary-subtle`
+
+Sets the border color to the secondary subtle color.
+
+
+
+
+### `.k-outline-secondary`
+
+Sets the border color to the secondary color.
+
+
+
+
+### `.k-outline-secondary-emphasis`
+
+Sets the border color to the secondary emphasis color.
+
+
+
+
+### `.k-outline-tertiary-subtle`
+
+Sets the border color to the tertiary subtle color.
+
+
+
+
+### `.k-outline-tertiary`
+
+Sets the border color to the tertiary color.
+
+
+
+
+### `.k-outline-tertiary-emphasis`
+
+Sets the border color to the tertiary emphasis color.
+
+
+
+
+### `.k-outline-info-subtle`
+
+Sets the border color to the info subtle color.
+
+
+
+
+### `.k-outline-info`
+
+Sets the border color to the info color.
+
+
+
+
+### `.k-outline-info-emphasis`
+
+Sets the border color to the info emphasis color.
+
+
+
+
+### `.k-outline-success-subtle`
+
+Sets the border color to the success subtle color.
+
+
+
+
+### `.k-outline-success`
+
+Sets the border color to the success color.
+
+
+
+
+### `.k-outline-success-emphasis`
+
+Sets the border color to the success emphasis color.
+
+
+
+
+### `.k-outline-warning-subtle`
+
+Sets the border color to the warning subtle color.
+
+
+
+
+### `.k-outline-warning`
+
+Sets the border color to the warning color.
+
+
+
+
+### `.k-outline-warning-emphasis`
+
+Sets the border color to the warning emphasis color.
+
+
+
+
+### `.k-outline-error-subtle`
+
+Sets the border color to the error subtle color.
+
+
+
+
+### `.k-outline-error`
+
+Sets the border color to the error color.
+
+
+
+
+### `.k-outline-error-emphasis`
+
+Sets the border color to the error emphasis color.
+
+
+
+
+### `.k-outline-light-subtle`
+
+Sets the border color to the light subtle color.
+
+
+
+
+### `.k-outline-light`
+
+Sets the border color to the light color.
+
+
+
+
+### `.k-outline-light-emphasis`
+
+Sets the border color to the light emphasis color.
+
+
+
+
+### `.k-outline-dark-subtle`
+
+Sets the border color to the dark subtle color.
+
+
+
+
+### `.k-outline-dark`
+
+Sets the border color to the dark color.
 
 
 
@@ -8575,13 +8988,6 @@ This is equivalent to `padding: 1px;`.
 
 
 ### `.k-p-0\.5`
-
-This is equivalent to `padding: 0.125rem;`.
-
-
-
-
-### `.k-p-{xs|sm|md|lg|xl|xxl}-0\.5`
 
 This is equivalent to `padding: 0.125rem;`.
 
@@ -9106,20 +9512,6 @@ This is equivalent to `padding-block: auto;`.
 
 
 
-### `.k-px-{xs|sm|md|lg|xl|xxl}-0\.5`
-
-This is equivalent to `padding-inline: 0.125rem;`.
-
-
-
-
-### `.k-py-{xs|sm|md|lg|xl|xxl}-0\.5`
-
-This is equivalent to `padding-block: 0.125rem;`.
-
-
-
-
 ### `.k-px-{xs|sm|md|lg|xl|xxl}-{0-30}`
 
 This is equivalent to `padding-inline: 0;`.
@@ -9130,6 +9522,13 @@ This is equivalent to `padding-inline: 0;`.
 ### `.k-px-{xs|sm|md|lg|xl|xxl}-1px`
 
 This is equivalent to `padding-inline: 1px;`.
+
+
+
+
+### `.k-px-{xs|sm|md|lg|xl|xxl}-0\.5`
+
+This is equivalent to `padding-inline: 0.125rem;`.
 
 
 
@@ -9200,6 +9599,13 @@ This is equivalent to `padding-block: 0;`.
 ### `.k-py-{xs|sm|md|lg|xl|xxl}-1px`
 
 This is equivalent to `padding-block: 1px;`.
+
+
+
+
+### `.k-py-{xs|sm|md|lg|xl|xxl}-0\.5`
+
+This is equivalent to `padding-block: 0.125rem;`.
 
 
 
