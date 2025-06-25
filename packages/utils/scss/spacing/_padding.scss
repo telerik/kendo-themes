@@ -16,12 +16,6 @@
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding: 0.125rem;`.
-/// @example padding: 0.125rem;
-/// @name .k-p-{xs|sm|md|lg|xl|xxl}-0\.5
-/// @group padding
-/// @contextType css
-
 /// This is equivalent to `padding: 0.25rem;`.
 /// @example padding: 0.25rem;
 /// @name .k-p-xs
@@ -484,7 +478,7 @@
 /// This is equivalent to `padding-inline: 0.125rem;`.
 /// @example padding-inline: 0.125rem;
 /// @name .k-px-{xs|sm|md|lg|xl|xxl}-0\.5
-/// @group padding
+/// @group padding-responsive
 /// @contextType css
 
 /// This is equivalent to `padding-inline: 0.25rem;`.
@@ -550,7 +544,7 @@
 /// This is equivalent to `padding-block: 0.125rem;`.
 /// @example padding-block: 0.125rem;
 /// @name .k-py-{xs|sm|md|lg|xl|xxl}-0\.5
-/// @group padding
+/// @group padding-responsive
 /// @contextType css
 
 /// This is equivalent to `padding-block: 0.25rem;`.
