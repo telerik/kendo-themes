@@ -34,7 +34,8 @@ export type KendoTextareaOptions = {
 export type KendoTextareaProps = KendoTextareaOptions & {
     prefix?: React.JSX.Element;
     suffix?: React.JSX.Element;
-    separators?: boolean;
+    prefixSeparator?: boolean;
+    suffixSeparator?: boolean;
     rows?: number;
     value?: string;
     placeholder?: string;
@@ -51,7 +52,8 @@ const defaultOptions = {
     flow: "vertical",
     affixesOrientation: "horizontal",
     resize: "both",
-    separators: true
+    prefixSeparator: true,
+    suffixSeparator: true
 } as const;
 
 export const Textarea = (
@@ -63,7 +65,8 @@ export const Textarea = (
         size = defaultOptions.size,
         rounded = defaultOptions.rounded,
         fillMode = defaultOptions.fillMode,
-        separators = defaultOptions.separators,
+        prefixSeparator = defaultOptions.prefixSeparator,
+        suffixSeparator = defaultOptions.prefixSeparator,
         affixesOrientation = defaultOptions.affixesOrientation,
         flow = defaultOptions.flow,
         resize = defaultOptions.resize,
@@ -114,7 +117,7 @@ export const Textarea = (
                     direction={affixesOrientation} >
                     {prefix}
                 </InputPrefix>
-                {separators && <InputSeparator direction={flow === "horizontal" ? "vertical" : "horizontal"}/>}
+                {prefixSeparator && <InputSeparator direction={flow === "horizontal" ? "vertical" : "horizontal"}/>}
             </>
             }
             <InputInnerTextarea
@@ -134,7 +137,7 @@ export const Textarea = (
             />
             {suffix &&
             <>
-                {separators && <InputSeparator direction={flow === "horizontal" ? "vertical" : "horizontal"}/>}
+                {suffixSeparator && <InputSeparator direction={flow === "horizontal" ? "vertical" : "horizontal"}/>}
                 <InputSuffix
                     className={classNames({
                         ["!k-align-items-start"]: flow === affixesOrientation
