@@ -3,7 +3,6 @@ import { Button } from '../../button';
 import { Icon } from '../../icon';
 import { TableTbody, TableRow, TableTd, TableThead } from '../../table';
 
-
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
@@ -54,7 +53,7 @@ export default () =>(
                                         <TableTd>Sig Jeannel</TableTd>
                                         <TableTd>Human Resources Assistant III</TableTd>
                                         <TableTd>
-                                            <div className="k-text-center">
+                                            <div className="k-grid-toggle">
                                                 <Icon icon="row-collapse" />
                                             </div>
                                         </TableTd>
@@ -77,7 +76,7 @@ export default () =>(
                                         <TableTd>Sig Jeannel</TableTd>
                                         <TableTd>Human Resources Assistant III</TableTd>
                                         <TableTd>
-                                            <div className="k-text-center">
+                                            <div className="k-grid-toggle">
                                                 <Icon icon="row-expand" />
                                             </div>
                                         </TableTd>
