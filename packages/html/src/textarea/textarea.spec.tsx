@@ -57,7 +57,7 @@ const defaultOptions = {
 export const Textarea = (
     props: KendoTextareaProps &
         KendoTextareaState &
-        React.HTMLAttributes<HTMLSpanElement>
+        Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>
 ) => {
     const {
         size = defaultOptions.size,
