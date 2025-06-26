@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0-dev.6](https://github.com/telerik/kendo-themes/compare/v11.1.0-dev.5...v11.1.0-dev.6) (2025-06-26)
+
+
+### Features
+
+* **grid:** add styles for grid stack layout ([a1d8e3e](https://github.com/telerik/kendo-themes/commit/a1d8e3e059f14f8a348f9baf9a70d9565c52c0e4))
+* **html:** add tests and templates for grid-stack-layout ([f988f61](https://github.com/telerik/kendo-themes/commit/f988f6169e2bbf6ed30dec689d652a997f3fc7d5))
+
+
+
+
+
 # [11.1.0-dev.5](https://github.com/telerik/kendo-themes/compare/v11.1.0-dev.4...v11.1.0-dev.5) (2025-06-25)
 
 **Note:** Version bump only for package kendo-themes.repo
