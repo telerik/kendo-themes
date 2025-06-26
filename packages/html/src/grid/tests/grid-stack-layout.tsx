@@ -45,6 +45,9 @@ export default () =>(
                     <GridContainer>
                         <GridContent>
                             <GridTable>
+                                <colgroup>
+                                    <col />
+                                </colgroup>
                                 <TableTbody>
                                     <TableRow className="k-master-row">
                                         <TableTd>
@@ -73,6 +76,9 @@ export default () =>(
                     <GridContainer>
                         <GridContent>
                             <GridTable>
+                                <colgroup>
+                                    <col />
+                                </colgroup>
                                 <TableTbody>
                                     <TableRow className="k-master-row k-grid-edit-row">
                                         <TableTd>
