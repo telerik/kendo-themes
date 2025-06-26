@@ -1143,6 +1143,19 @@
         touch-action: none;
     }
 
+    // Expandable data row
+    .k-grid-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+
+        .k-icon {
+            pointer-events: auto;
+            cursor: pointer;
+        }
+    }
+
     // PDF export
     .k-loading-pdf-mask {
         position: absolute;
