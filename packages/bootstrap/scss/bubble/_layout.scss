@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/bubble/_layout.scss" as *;
+
+
+@mixin kendo-bubble--layout() {
+    @include kendo-bubble--layout-base();
+}

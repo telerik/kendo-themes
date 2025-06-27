@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/bubble/_theme.scss" as *;
+
+
+@mixin kendo-bubble--theme() {
+    @include kendo-bubble--theme-base();
+}

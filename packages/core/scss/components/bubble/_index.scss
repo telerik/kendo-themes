@@ -1,0 +1,16 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-bubble--styles() {
+    @include import-once( "bubble" ) {
+        @include core-styles();
+        @include kendo-bubble--layout();
+        @include kendo-bubble--theme();
+    }
+}
