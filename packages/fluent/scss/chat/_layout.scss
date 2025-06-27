@@ -1,56 +1,66 @@
 @use "sass:math";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "../bubble/_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/chat/_layout.scss" as *;
 
 @mixin kendo-chat--layout() {
     @include kendo-chat--layout-base();
 
-    .k-chat {
-        .k-quick-reply {
-            position: relative;
+    // Message group
+    .k-chat-message-group {
 
-            &:focus::after,
-            &.k-focus::after {
-                content: "";
-                position: absolute;
-                border: medium none;
-                border-radius: var(--kendo-border-radius-full, 9999px);
-                inset: $kendo-chat-quick-reply-focus-offset;
-                outline-width: $kendo-chat-quick-reply-focus-outline-width;
-                outline-style: $kendo-chat-quick-reply-focus-outline-style;
-                z-index: 1;
+        .k-chat-file-wrapper {
+            min-width: 0;
+            max-width: 100%;
+
+        }
+
+    }
+
+    .k-message-group-sender {
+
+        .k-chat-bubble {
+
+            &:focus,
+            &.k-focus {
+                outline-style: solid;
+                outline-width: calc( (#{$kendo-bubble-border-width} * 2 ));
+                outline-offset: calc( (#{$kendo-bubble-border-width} * 2 ) * -1);
             }
         }
 
-        .k-card-deck-scrollwrap > .k-card-deck {
-            // hide scrollbar in chat
-            margin-block-end: calc( -1 * #{$kendo-chat-card-deck-scrollbar-size} );
-            padding-bottom: $kendo-chat-card-deck-scrollbar-size;
+    }
+
+
+    // Bubble
+    .k-chat-bubble {
+
+        a {
+            font-weight: normal;
         }
     }
 
-    .k-card-subtitle {
-        font-weight: var( --kendo-font-weight, initial );
-    }
+    // Message states
+    .k-message:has(.k-selected) {
 
-    .k-chat-toolbar,
-    .k-chat .k-toolbar-box {
-        gap: $kendo-chat-toolbar-spacing;
-
-        .k-scroll-button {
-            padding-block: 0px;
-            padding-inline: $kendo-chat-scroll-button-padding;
-        }
-
-    }
-
-    .k-rtl,
-    [dir="rtl"] {
-        .k-message-box {
-            .k-button {
-                transform: scaleX(-1);
-            }
+        .k-message-time,
+        .k-message-status {
+            gap: $kendo-chat-bubble-spacing;
         }
     }
+
+    .k-chat .k-card-deck {
+        margin-inline: calc( #{$kendo-chat-message-list-padding-x} * -1 );
+        padding-block-start: $kendo-chat-message-list-padding-y;
+        padding-block-end: $kendo-chat-message-list-padding-y;
+        padding-inline: $kendo-chat-message-list-padding-x;
+
+    }
+
+    .k-chat .k-card-deck-scrollwrap {
+        margin-inline: calc( #{$kendo-chat-message-list-padding-x} * -1 );
+        padding-inline: $kendo-chat-message-list-padding-x;
+    }
+
 }

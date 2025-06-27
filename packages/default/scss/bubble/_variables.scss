@@ -1,0 +1,93 @@
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
+/// The border radius of the Bubble.
+/// @group bubble
+$kendo-bubble-border-radius: k-border-radius(xxl) !default;
+/// The small border radius of the Bubble.
+/// @group bubble
+$kendo-bubble-border-radius-sm: k-border-radius(xs) !default;
+/// The vertical padding of the Bubble.
+/// @group bubble
+$kendo-bubble-padding-y: k-spacing(2) !default;
+/// The horizontal padding of the Bubble.
+/// @group bubble
+$kendo-bubble-padding-x: k-spacing(3) !default;
+/// The border width of the Bubble.
+/// @group bubble
+$kendo-bubble-border-width: 1px !default;
+/// The border style of the Bubble.
+/// @group bubble
+$kendo-bubble-border-style: solid !default;
+/// The line height of the Bubble.
+/// @group bubble
+$kendo-bubble-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The text color of the Bubble.
+/// @group bubble
+$kendo-bubble-text: k-color(on-app-surface) !default;
+/// The background color of the Bubble.
+/// @group bubble
+$kendo-bubble-bg: k-color(base-subtle) !default;
+/// The border color of the Bubble.
+/// @group bubble
+$kendo-bubble-border: $kendo-bubble-bg !default;
+/// The shadow of the Bubble.
+/// @group bubble
+$kendo-bubble-shadow: none !default;
+
+/// The background color of the hover Bubble.
+/// @group bubble
+$kendo-bubble-hover-bg: k-color(base-subtle-hover) !default;
+/// The border color of the active Bubble.
+/// @group bubble
+$kendo-bubble-hover-border: $kendo-bubble-hover-bg !default;
+/// The background color of the active Bubble.
+/// @group bubble
+$kendo-bubble-active-bg: k-color(base-subtle-active) !default;
+/// The border color of the active Bubble.
+/// @group bubble
+$kendo-bubble-active-border: $kendo-bubble-active-bg !default;
+/// The background color of the focused Bubble.
+/// @group bubble
+$kendo-bubble-focus-bg: k-color(base-subtle) !default;
+/// The border color of the focused Bubble.
+/// @group bubble
+$kendo-bubble-focus-border: $kendo-bubble-focus-bg !default;
+/// The box shadow of the focused Bubble.
+/// @group bubble
+$kendo-bubble-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
+
+/// The spacing between content and icon in expandable Bubble.
+/// @group bubble
+$kendo-bubble-expandable-spacing: $kendo-bubble-padding-x !default;
+/// The horizontal padding of the expandable Bubble icon.
+/// @group bubble
+$kendo-bubble-expandable-icon-padding-x: k-spacing(2.5) !default;
+/// The vertical padding of the expandable Bubble icon.
+/// @group bubble
+$kendo-bubble-expandable-icon-padding-y: k-spacing(2.5) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/bubble/_variables.scss" with (
+    $kendo-bubble-border-radius: $kendo-bubble-border-radius,
+    $kendo-bubble-border-radius-sm: $kendo-bubble-border-radius-sm,
+    $kendo-bubble-padding-y: $kendo-bubble-padding-y,
+    $kendo-bubble-padding-x: $kendo-bubble-padding-x,
+    $kendo-bubble-border-width: $kendo-bubble-border-width,
+    $kendo-bubble-border-style: $kendo-bubble-border-style,
+    $kendo-bubble-line-height: $kendo-bubble-line-height,
+    $kendo-bubble-text: $kendo-bubble-text,
+    $kendo-bubble-bg: $kendo-bubble-bg,
+    $kendo-bubble-border: $kendo-bubble-border,
+    $kendo-bubble-shadow: $kendo-bubble-shadow,
+    $kendo-bubble-hover-bg: $kendo-bubble-hover-bg,
+    $kendo-bubble-hover-border: $kendo-bubble-hover-border,
+    $kendo-bubble-active-bg: $kendo-bubble-active-bg,
+    $kendo-bubble-active-border: $kendo-bubble-active-border,
+    $kendo-bubble-focus-bg: $kendo-bubble-focus-bg,
+    $kendo-bubble-focus-border: $kendo-bubble-focus-border,
+    $kendo-bubble-focus-shadow: $kendo-bubble-focus-shadow,
+    $kendo-bubble-expandable-spacing: $kendo-bubble-expandable-spacing,
+    $kendo-bubble-expandable-icon-padding-x: $kendo-bubble-expandable-icon-padding-x,
+    $kendo-bubble-expandable-icon-padding-y: $kendo-bubble-expandable-icon-padding-y,
+);

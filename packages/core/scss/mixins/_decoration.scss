@@ -14,8 +14,3 @@
         @include linear-gradient( $gradient );
     }
 }
-
-// TODO: Remove as we have the same mixin in _gradient.scss
-// @mixin repeating-striped-gradient( $color: rgba(255,255,255,.15), $background: #FFF, $angle: 45deg, $largeStep: 2px, $smallStep: 1px) {
-//     background-image: repeating-linear-gradient($angle, $background, $background $smallStep, $color $smallStep, $color $largeStep);
-// }

@@ -13,81 +13,111 @@
             $kendo-chat-bg,
             $kendo-chat-border
         );
+    }
 
+    // Message meta
+    .k-timestamp {
+        @include fill(
+            $kendo-chat-timestamp-text,
+            $kendo-chat-timestamp-bg
+        );
 
-        // Message meta
-        .k-timestamp {
-            @include fill(
-                $kendo-chat-timestamp-text,
-                $kendo-chat-timestamp-bg
-            );
+        &::before,
+        &::after {
+            background-color: $kendo-chat-timestamp-separator-bg;
         }
-        .k-author {
-            font-weight: bold;
-        }
+    }
 
+    // Message status
+    .k-message-status {
+        @include fill(
+            $kendo-chat-status-text
+        );
+    }
 
-        // Bubbles
-        .k-chat-bubble {
-            @include fill(
-                $kendo-chat-bubble-text,
-                $kendo-chat-bubble-bg,
-                $kendo-chat-bubble-border
-            );
-            @include box-shadow( $kendo-chat-bubble-shadow );
-            transition: $kendo-transition;
-            order: -1;
+    // Bubbles
+    .k-message-group-sender .k-chat-bubble {
+        @include fill(
+            $kendo-chat-alt-bubble-text,
+            $kendo-chat-alt-bubble-bg,
+            $kendo-chat-alt-bubble-border
+        );
 
-            a { color: k-color(primary); }
-            a:hover { color: k-color(primary-hover); }
-        }
-        .k-chat-bubble:hover {
-            @include box-shadow( $kendo-chat-bubble-hover-shadow );
-        }
-        .k-selected .k-chat-bubble {
-            @include box-shadow( $kendo-chat-bubble-selected-shadow );
-        }
+        @include box-shadow( $kendo-chat-alt-bubble-shadow );
 
-        .k-alt .k-chat-bubble {
-            @include fill(
-                $kendo-chat-alt-bubble-text,
-                $kendo-chat-alt-bubble-bg,
-                $kendo-chat-alt-bubble-border
-            );
-            @include box-shadow( $kendo-chat-alt-bubble-shadow );
-        }
-        .k-alt .k-chat-bubble:hover {
-            @include box-shadow( $kendo-chat-alt-bubble-hover-shadow );
-        }
-        .k-alt .k-selected .k-chat-bubble {
-            @include box-shadow( $kendo-chat-alt-bubble-selected-shadow );
+        &:active,
+        &.k-active,
+        &.k-selected {
+            @include fill( $bg: $kendo-chat-alt-bubble-active-bg, $border: $kendo-chat-alt-bubble-active-border );
         }
 
+        &:focus,
+        &.k-focus {
+            @include fill( $bg: $kendo-chat-alt-bubble-focus-bg, $border: $kendo-chat-alt-bubble-focus-border );
+            @include focus-indicator( $kendo-chat-alt-bubble-focus-shadow, true, true );
+        }
 
-        // Quick replies
-        .k-quick-reply {
-            @include fill(
-                $kendo-chat-quick-reply-text,
-                $kendo-chat-quick-reply-bg,
-                $kendo-chat-quick-reply-border
-            );
+        &:hover,
+        &.k-hover {
+            @include fill( $bg: $kendo-chat-alt-bubble-hover-bg, $border: $kendo-chat-alt-bubble-hover-border );
+        }
+    }
 
-            &:hover,
-            &.k-hover {
-                @include fill(
-                    $kendo-chat-quick-reply-hover-text,
-                    $kendo-chat-quick-reply-hover-bg,
-                    $kendo-chat-quick-reply-hover-border
-                );
-            }
+    // Typing indicator
+    .k-typing-indicator {
+        @include fill(
+            $kendo-chat-typing-indicator-text
+        );
+    }
 
-            &:focus,
-            &.k-focus {
-                @include focus-indicator( 0 0 $kendo-chat-quick-reply-shadow-blur $kendo-chat-quick-reply-shadow-spread color-mix(in srgb, k-color(primary) ( $kendo-chat-quick-reply-shadow-opacity * 100% ), transparent), true, true );
+    // Chat attachment
+    .k-chat-file {
+        border-color: transparent;
+    }
+
+    .k-chat-file-deleted {
+        @include fill(
+            k-color(error-on-subtle),
+            k-color(error-subtle),
+            k-color(error-subtle)
+        );
+    }
+
+    // Attachment within Textarea prefix
+    .k-message-box-wrapper .k-chat-file {
+        @include fill(
+            $kendo-chat-file-text,
+            $kendo-chat-file-bg,
+            $kendo-chat-file-border
+        );
+    }
+
+    // Message reference
+    .k-message-reference {
+        @include fill(
+            $kendo-chat-message-reference-text,
+            $kendo-chat-message-reference-bg
+        );
+    }
+
+    .k-message-reference-sender {
+        .k-message-reference-content {
+            &::before {
+                background-color: $kendo-chat-message-reference-marker-alt-bg;
             }
         }
     }
 
+    .k-message-reference-content {
+        &::before {
+            background-color: $kendo-chat-message-reference-marker-bg;
+        }
+    }
+
+    // Pinned message
+    .k-message-pinned {
+        border-color: $kendo-chat-message-pinned-border-color;
+    }
 
     // Toolbar
     .k-chat-toolbar,
