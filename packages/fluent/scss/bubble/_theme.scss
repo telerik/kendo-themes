@@ -1,0 +1,31 @@
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-bubble--theme() {
+    .k-bubble {
+        @include fill(
+            $kendo-bubble-text,
+            $kendo-bubble-bg,
+            $kendo-bubble-border
+        );
+        @include box-shadow( $kendo-bubble-shadow );
+
+        &:active,
+        &.k-active,
+        &.k-selected {
+            @include fill( $bg: $kendo-bubble-active-bg, $border: $kendo-bubble-active-border );
+        }
+
+        &:focus,
+        &.k-focus {
+            box-shadow: inset 0 0 0 #{$kendo-bubble-border-width} k-color(app-surface),
+                        inset 0 0 0 calc( #{$kendo-bubble-border-width} * 2 ) k-color(base-emphasis);
+        }
+
+        &:hover,
+        &.k-hover {
+            @include fill( $bg: $kendo-bubble-hover-bg, $border: $kendo-bubble-hover-border );
+        }
+    }
+
+}

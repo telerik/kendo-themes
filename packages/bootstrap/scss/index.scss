@@ -16,6 +16,7 @@
 @forward "./virtual-scroller/_index.scss";
 @forward "./no-data/_index.scss";
 @forward "./suggestion/_index.scss";
+@forward "./bubble/_index.scss";
 @forward "./avatar/_index.scss";
 @forward "./badge/_index.scss";
 @forward "./color-preview/_index.scss";
@@ -24,6 +25,7 @@
 @forward "./time-marker/_index.scss";
 @forward "./tooltip/_index.scss";
 @forward "./button/_index.scss";
+@forward "./speech-to-text-button/_index.scss";
 @forward "./input/_index.scss";
 @forward "./floating-label/_index.scss";
 @forward "./textbox/_index.scss";
@@ -146,6 +148,7 @@
 @use "./virtual-scroller/_index.scss" as *;
 @use "./no-data/_index.scss" as *;
 @use "./suggestion/_index.scss" as *;
+@use "./bubble/_index.scss" as *;
 @use "./column-menu/_index.scss" as *;
 
 // Indicators
@@ -319,6 +322,7 @@
     @include kendo-virtual-scroller--styles();
     @include kendo-no-data--styles();
     @include kendo-suggestion--styles();
+    @include kendo-bubble--styles();
     @include kendo-column-menu--styles();
 
 

@@ -1,28 +1,133 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
-@use "@progress/kendo-theme-core/scss/components/chat/_theme.scss" as *;
+@use "../bubble/_variables.scss" as *;
 
 @mixin kendo-chat--theme() {
     @include kendo-chat--theme-base();
 
     .k-chat {
-        .k-chat-bubble {
-            transition: $kendo-chat-transition;
+        @include fill(
+            var( --kendo-chat-text, #{ $kendo-chat-text } ),
+            var( --kendo-chat-bg, #{ $kendo-chat-bg } ),
+            var( --kendo-chat-border, #{ $kendo-chat-border } )
+        );
+    }
 
-            a { color: $kendo-chat-link-text };
-            a:hover { color: $kendo-chat-link-hover-text };
+    // Message meta
+    .k-timestamp {
+        @include fill(
+            var( --kendo-chat-timestamp-text, #{ $kendo-chat-timestamp-text } ),
+            var( --kendo-chat-timestamp-bg, #{ $kendo-chat-timestamp-bg } )
+        );
+
+        &::before,
+        &::after {
+            background-color: $kendo-chat-timestamp-separator-bg;
+        }
+    }
+
+    .k-message-status {
+        @include fill(
+            $kendo-chat-status-text
+        );
+    }
+
+    // Bubbles
+    .k-message-group-sender .k-chat-bubble {
+        @include fill(
+            var( --kendo-chat-alt-bubble-text, #{ $kendo-chat-alt-bubble-text } ),
+            var( --kendo-chat-alt-bubble-bg, #{ $kendo-chat-alt-bubble-bg } ),
+            var( --kendo-chat-alt-bubble-border, #{ $kendo-chat-alt-bubble-border } )
+        );
+        @include box-shadow( var( --kendo-chat-alt-bubble-shadow, #{ $kendo-chat-alt-bubble-shadow } ) );
+
+        &:active,
+        &.k-active,
+        &.k-selected {
+            @include fill( $bg: $kendo-chat-alt-bubble-active-bg, $border: $kendo-chat-alt-bubble-active-border );
         }
 
-        .k-quick-reply {
-            &:focus,
-            &.k-focus {
-                box-shadow: none;
-            }
+        &:focus,
+        &.k-focus {
+            outline-color: $kendo-chat-alt-bubble-focus-border;
+            box-shadow: inset 0 0 0 calc( #{$kendo-bubble-border-width} * 2 ) k-color(app-surface);
+        }
 
-            &:focus::after,
-            &.k-focus::after {
-                outline-color: $kendo-chat-quick-reply-focus-outline-color;
+        &:hover,
+        &.k-hover {
+            @include fill( $bg: $kendo-chat-alt-bubble-hover-bg, $border: $kendo-chat-alt-bubble-hover-border );
+        }
+    }
+
+    .k-typing-indicator {
+        @include fill(
+            $kendo-chat-typing-indicator-text
+        );
+    }
+
+    .k-chat-file {
+        border-color: transparent;
+    }
+
+    .k-chat-file-deleted {
+        @include fill(
+            k-color(error-on-subtle),
+            k-color(error-subtle),
+            k-color(error-subtle)
+        );
+    }
+
+    .k-message-reference {
+        @include fill(
+            $kendo-chat-message-reference-text,
+            $kendo-chat-message-reference-bg,
+        );
+    }
+
+    // File within Textarea prefix
+    .k-message-box-wrapper .k-chat-file {
+        @include fill(
+            $kendo-chat-file-text,
+            $kendo-chat-file-bg,
+            $kendo-chat-file-border
+        );
+    }
+
+    // Message reference
+    .k-message-reference {
+        @include fill(
+            $kendo-chat-message-reference-text,
+            $kendo-chat-message-reference-bg
+        );
+    }
+
+    .k-message-reference-sender {
+        .k-message-reference-content {
+            &::before {
+                background-color: $kendo-chat-message-reference-marker-alt-bg;
             }
         }
     }
+
+    .k-message-reference-content {
+        &::before {
+            background-color: $kendo-chat-message-reference-marker-bg;
+        }
+    }
+
+    // Pinned message
+    .k-message-pinned {
+        border-color: $kendo-chat-message-pinned-border-color;
+    }
+
+    // Toolbar
+    .k-chat-toolbar,
+    .k-chat .k-toolbar-box {
+        @include fill(
+            var( --kendo-chat-toolbar-text, #{ $kendo-chat-toolbar-text } ),
+            var( --kendo-chat-toolbar-bg, #{ $kendo-chat-toolbar-bg } ),
+            var( --kendo-chat-toolbar-border, #{ $kendo-chat-toolbar-border } )
+        );
+    }
+
 }

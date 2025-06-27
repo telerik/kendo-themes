@@ -1,0 +1,62 @@
+@use "./_variables.scss" as *;
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
+
+@use "../../spacing/index.import.scss" as *;
+
+@mixin kendo-bubble--layout-base() {
+    .k-bubble {
+        @include border-radius( $kendo-bubble-border-radius );
+        border-end-start-radius: $kendo-bubble-border-radius-sm;
+        padding-block: $kendo-bubble-padding-y;
+        padding-inline: $kendo-bubble-padding-x;
+        border-width: $kendo-bubble-border-width;
+        border-style: $kendo-bubble-border-style;
+        line-height: $kendo-bubble-line-height;
+        display: flex;
+        box-sizing: border-box;
+        word-wrap: break-word;
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+        
+        &:hover,
+        &.k-hover {
+            cursor: pointer;
+        }
+    }
+
+    .k-bubble-expandable {
+        align-items: flex-start;
+        white-space: nowrap;
+        overflow: hidden;
+
+        &.k-expanded {
+            white-space: normal
+        }
+
+        .k-bubble-content {
+            flex: 1 1 0%;
+            min-width: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .k-bubble-expandable-indicator {
+            padding-inline: $kendo-bubble-expandable-icon-padding-x;
+            padding-block: $kendo-bubble-expandable-icon-padding-y;
+            margin-top: calc( #{$kendo-bubble-padding-y} * -1);
+            margin-right: calc( #{$kendo-bubble-padding-x} * -1);
+            margin-bottom: calc( ( #{$kendo-bubble-padding-x} / 2 ) * -1);
+            display: flex;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+@mixin kendo-bubble--layout() {
+    @include kendo-bubble--layout-base();
+}

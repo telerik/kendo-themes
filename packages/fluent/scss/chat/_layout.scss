@@ -1,48 +1,497 @@
 @use "sass:math";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
-@use "@progress/kendo-theme-core/scss/components/chat/_layout.scss" as *;
+@use "../bubble/_variables.scss" as *;
 
 @mixin kendo-chat--layout() {
     @include kendo-chat--layout-base();
 
     .k-chat {
-        .k-quick-reply {
-            position: relative;
+        min-width: var( --kendo-chat-width, #{ $kendo-chat-width } );
+        min-height: var( --kendo-chat-height, #{ $kendo-chat-height } );
+        max-height: 100%;
+        border-width: var( --kendo-chat-border-width, #{ $kendo-chat-border-width } );
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: var( --kendo-chat-font-family, #{ $kendo-chat-font-family } );
+        font-size: var( --kendo-chat-font-size, #{ $kendo-chat-font-size } );
+        line-height: var( --kendo-chat-line-height, #{ $kendo-chat-line-height } );
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+    }
 
-            &:focus::after,
-            &.k-focus::after {
-                content: "";
-                position: absolute;
-                border: medium none;
-                border-radius: var(--kendo-border-radius-full, 9999px);
-                inset: $kendo-chat-quick-reply-focus-offset;
-                outline-width: $kendo-chat-quick-reply-focus-outline-width;
-                outline-style: $kendo-chat-quick-reply-focus-outline-style;
-                z-index: 1;
+    // Chat header
+    .k-chat-header {
+        flex-shrink: 0;
+    }
+
+    // Message list
+    .k-message-list {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        align-items: flex-start;
+        overflow-x: hidden;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+    }
+    .k-message-list-content {
+        padding-inline: var( --kendo-chat-message-list-padding-x, #{ $kendo-chat-message-list-padding-x } );
+        padding-block: var( --kendo-chat-message-list-padding-y, #{ $kendo-chat-message-list-padding-y } );
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: hidden;
+
+        > * + * {
+            margin-block-start: var( --kendo-chat-message-list-spacing, #{ $kendo-chat-message-list-spacing } );
+        }
+    }
+
+    // Message
+    .k-message-group {
+        max-width: $kendo-chat-message-max-width;
+        background: none;
+        box-sizing: border-box;
+        display: flex;
+        column-gap: $kendo-chat-message-gap;
+        flex-shrink: 0;
+        position: relative;
+
+        .k-message + .k-message {
+            margin-top: $kendo-chat-bubble-spacing;
+        }
+
+        .k-avatar {
+            align-self: flex-end;
+        }
+
+        // Add margin to the avatar when the last message is selected
+        // so that the avatar is aligned to the bubble and not to the status
+        &:has(.k-message-group-content .k-message:last-child .k-chat-bubble.k-selected + .k-message-status) .k-avatar {
+            margin-bottom: calc($kendo-chat-message-meta-line-height * $kendo-chat-message-meta-font-size + $kendo-chat-bubble-spacing);
+            transition: margin .2s ease-in-out;
+        }
+
+        .k-chat-file-wrapper {
+            padding: 0;
+            gap: 0;
+            min-width: 0;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .k-chat-file {
+            width: 100%;
+        }
+    }
+
+    .k-message-group-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        max-width: 100%;
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .k-chat-message-toolbar {
+        border: 0;
+        padding: k-spacing(1px);
+        place-self: start;
+    }
+
+    .k-chat-download-button-wrapper {
+        width: 100%;
+        box-sizing: border-box;
+        padding-inline: $kendo-chat-file-download-padding-x;
+        padding-block-end: $kendo-chat-file-download-padding-y;
+        border-radius: 0 0 k-border-radius(md) k-border-radius(md);
+        text-align: left;
+    }
+
+    .k-message-group-sender {
+        align-self: flex-end;
+        flex-direction: row-reverse;
+
+        .k-chat-bubble {
+            place-self: flex-end;
+
+            &:focus,
+            &.k-focus {
+                outline-style: solid;
+                outline-width: calc( (#{$kendo-bubble-border-width} * 2 ));
+                outline-offset: calc( (#{$kendo-bubble-border-width} * 2 ) * -1);
             }
         }
 
-        .k-card-deck-scrollwrap > .k-card-deck {
-            // hide scrollbar in chat
-            margin-block-end: calc( -1 * #{$kendo-chat-card-deck-scrollbar-size} );
-            padding-bottom: $kendo-chat-card-deck-scrollbar-size;
+        .k-message-group-content {
+            align-items: flex-end;
+        }
+
+        .k-message-status {
+            align-self: flex-end;
+        }
+
+        .k-message:last-of-type .k-chat-bubble {
+            border-end-start-radius: $kendo-bubble-border-radius;
+            border-end-end-radius: $kendo-bubble-border-radius-sm;
         }
     }
 
-    .k-card-subtitle {
-        font-weight: var( --kendo-font-weight, initial );
+    // Message
+    .k-message {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        transition: margin .2s ease-in-out;
+        outline: none;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+
+        .k-chat-message-link {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .k-chat-bubble {
+            border-end-start-radius: var( --kendo-bubble-border-radius, #{ $kendo-bubble-border-radius } );
+        }
+
+        &:last-of-type .k-chat-bubble {
+            border-end-start-radius: var( --kendo-bubble-border-radius-sm, #{ $kendo-bubble-border-radius-sm } );
+        }
     }
 
-    .k-chat-toolbar,
-    .k-chat .k-toolbar-box {
-        gap: $kendo-chat-toolbar-spacing;
+    .k-chat-bubble-text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+
+    // Full-width message
+    .k-message-group-full-width {
+        width: 100%;
+        max-width: 100%;
+
+        .k-message,
+        .k-chat-bubble {
+            width: 100%;
+        }
+    }
+
+    // Expandable messages
+    .k-chat-bubble.k-bubble-expandable {
+        .k-bubble-content {
+            height: auto;
+            transition: height 2s ease;
+        }
+    }
+
+    .k-chat-bubble.k-expanded {
+        white-space: normal;
+    }
+
+    .k-chat-bubble.k-bubble-expandable:not(.k-expanded) {
+        .k-bubble-content {
+            height: calc( $kendo-chat-line-height * $kendo-chat-font-size);
+        }
+    }
+
+    // Message meta
+    .k-message-time,
+    .k-message-status {
+        font-size: $kendo-chat-message-meta-font-size;
+        line-height: $kendo-chat-message-meta-line-height;
+        white-space: nowrap;
+        pointer-events: none;
+        transition: height .2s ease-in-out;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .k-message-time {
+        place-self: center;
+    }
+
+    .k-message-status {
+        display: inline-flex;
+        align-items: center;
+        gap: $kendo-chat-message-status-gap;
+    }
+
+
+    // Bubble
+    .k-chat-bubble {
+        width: fit-content;
+        max-width: 100%;
+        overflow: hidden;
+        overflow-wrap: break-word;
+        word-break: normal;
+        text-align: start;
+
+        .k-bubble-content {
+            overflow: hidden;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: $kendo-chat-message-gap;
+            transition: height .2s ease-in-out;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+    }
+
+    .k-bubble-content {
+        .k-message-reference {
+            border-radius: k-border-radius(md);
+        }
+    }
+
+    // Message states
+    .k-message:has(.k-selected) {
+        gap: $kendo-chat-bubble-spacing;
+
+        .k-message-time,
+        .k-message-status {
+            height: calc($kendo-chat-message-meta-line-height * $kendo-chat-message-meta-font-size);
+            gap: $kendo-chat-bubble-spacing;
+        }
+    }
+
+    .k-message-error,
+    .k-message-sending {
+        margin-block-end: var( --kendo-chat-item-spacing-y, #{ $kendo-chat-item-spacing-y } );
+
+        .k-message-status {
+            height: calc($kendo-chat-message-meta-line-height * $kendo-chat-message-meta-font-size);
+        }
+    }
+
+    // Message reference
+    .k-message-reference {
+        padding-inline: $kendo-chat-message-reference-padding-x;
+        padding-block: $kendo-chat-message-reference-padding-y;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        position: relative;
+        white-space: nowrap;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: var( --kendo-chat-font-family, #{ $kendo-chat-font-family } );
+        font-size: var( --kendo-chat-font-size, #{ $kendo-chat-font-size } );
+        line-height: var( --kendo-chat-line-height, #{ $kendo-chat-line-height } );
+
+        > .k-icon {
+            flex-shrink: 0;
+        }
+    }
+
+    .k-message-reference-content {
+        padding-block: calc( #{$kendo-chat-message-reference-padding-y} / 2 );
+        padding-inline-start: calc( 3 * $kendo-chat-message-reference-padding-x);
+        padding-inline-end: calc( #{$kendo-chat-message-reference-padding-x} / 2 );
+        box-sizing: border-box;
+        position: relative;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        &::before {
+            display: inline-block;
+            content: "";
+            position: absolute;
+            left: $kendo-chat-message-reference-padding-x;
+            height: calc( 100% - #{$kendo-chat-message-reference-padding-y} );
+            width: 2px;
+        }
+    }
+
+    .k-message-pinned {
+        border-bottom-width: $kendo-chat-message-pinned-border-width;
+        border-bottom-style: $kendo-chat-message-pinned-border-style;
+        cursor: pointer;
+    }
+
+    .k-message-removed {
+        font-style: italic;
+    }
+
+    // Author
+    .k-message-author {
+        font-size: $kendo-chat-author-font-size;
+        line-height: $kendo-chat-author-line-height;
+        font-weight: bold;
+        margin-bottom: calc( #{$kendo-chat-bubble-spacing} / 2);
+    }
+
+    // Timestamp
+    .k-timestamp {
+        font-size: var( --kendo-chat-timestamp-font-size, #{ $kendo-chat-timestamp-font-size } );
+        line-height: var( --kendo-chat-timestamp-line-height, #{ $kendo-chat-timestamp-line-height } );
+        text-transform: var( --kendo-chat-timestamp-transform, #{ $kendo-chat-timestamp-transform } );
+        text-align: center;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        gap: var( --kendo-chat-timestamp-separator-spacing, #{ $kendo-chat-timestamp-separator-spacing } );
+
+        &::before,
+        &::after {
+            display: inline-flex;
+            content: "";
+            height: 1px;
+            flex: 1;
+        }
+    }
+
+    .k-message-box-wrapper {
+        padding-inline: $kendo-chat-padding-x;
+        padding-block-end: $kendo-chat-padding-y;
+        display: flex;
+        flex-direction: column;
+        gap: $kendo-chat-padding-y;
+
+        .k-chat-file-wrapper {
+            flex-direction: row;
+        }
+    }
+
+    // Message box
+    .k-message-box {
+        width: 100%;
+        box-sizing: border-box;
+        flex-shrink: 0;
+
+        .k-input-prefix-horizontal {
+            display: inline-block;
+        }
 
         .k-scroll-button {
             padding-block: 0px;
             padding-inline: $kendo-chat-scroll-button-padding;
         }
 
+        .k-input-prefix,
+        .k-input-suffix {
+            width: 100%;
+            padding: k-spacing(1);
+        }
+    }
+
+    .k-chat-bubble,
+    .k-message-box {
+        .k-message-reference {
+            padding-inline: calc( #{$kendo-chat-message-reference-padding-x} / 2);
+            padding-block: calc( #{$kendo-chat-message-reference-padding-y} / 2);
+        }
+    }
+
+    .k-chat-file-wrapper {
+        display: flex;
+        flex-flow: column wrap;
+        padding-inline: $kendo-chat-file-padding-x;
+        padding-block: $kendo-chat-file-padding-y;
+        margin: 0;
+        gap: $kendo-chat-file-gap;
+        width: 100%;
+        box-sizing: border-box;
+        min-width: 0;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .k-chat-file {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        box-sizing: border-box;
+        gap: $kendo-chat-file-gap;
+        border-width: $kendo-chat-file-border-width;
+        border-style: $kendo-chat-file-border-style;
+        padding-inline: $kendo-chat-file-padding-x;
+        padding-block: $kendo-chat-file-padding-y;
+        border-radius: $kendo-chat-file-border-radius;
+
+        >.k-icon {
+            flex-shrink: 0;
+        }
+
+        .k-chat-file-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: start;
+            flex: 1;
+            overflow: hidden;
+            min-width: 0;
+            max-width: 100%;
+            text-overflow: ellipsis;
+        }
+
+        .k-chat-file-name {
+            font-weight: bold;
+            font-size: var( --kendo-font-size-sm, inherit);
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .k-chat-file-size,
+        .k-chat-file-status {
+            font-size: var( --kendo-font-size-xs, inherit);
+        }
+    }
+
+    .k-chat-file-download-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .k-message-box-wrapper,
+    .k-message-group-full-width,
+    .k-message:has(.k-bubble-expandable) + .k-chat-file-wrapper {
+        .k-chat-file {
+            width: $kendo-chat-file-width;
+        }
+    }
+
+    .k-message-group {
+        .k-chat-file + .k-chat-file:not(.k-chat-file-deleted) {
+            padding-top: 0;
+        }
+    }
+
+    // Upload
+    .k-chat-upload {
+        .k-external-dropzone {
+            height: auto;
+        }
+
+        .k-upload {
+            margin-top: k-spacing(6);
+        }
+
+        .k-upload-files {
+            max-height: k-spacing(25);
+        }
     }
 
     .k-rtl,
@@ -53,4 +502,93 @@
             }
         }
     }
+
 }
+
+@mixin kendo-chat-card--layout() {
+    .k-chat .k-card-list {
+        margin: $kendo-chat-bubble-spacing 0 0;
+    }
+
+    .k-message-group-sender + .k-card-list,
+    .k-message-group-sender + kendo-chat-message-attachments.k-card-list {
+        align-self: flex-end;
+    }
+
+    .k-chat .k-card-deck {
+        max-width: calc( 100% + calc( #{ $kendo-chat-message-list-padding-y} * 2 ) ); // prevent overflowing in the parent element
+        box-sizing: border-box;
+        margin-inline: calc( var( --kendo-chat-message-list-padding-x, #{ $kendo-chat-message-list-padding-x } ) * -1 );
+        padding-block-start: var( --kendo-chat-message-list-padding-y, #{ $kendo-chat-message-list-padding-y } );
+        padding-block-end: var( --kendo-chat-message-list-padding-y, #{ $kendo-chat-message-list-padding-y } );
+        padding-inline: var( --kendo-chat-message-list-padding-x, #{ $kendo-chat-message-list-padding-x } );
+        overflow: hidden;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+    .k-chat .k-card-deck .k-card {
+        width: 200px;
+    }
+
+    .k-chat .k-card-deck-scrollwrap {
+        margin-inline: calc( var( --kendo-chat-message-list-padding-x, #{ $kendo-chat-message-list-padding-x } ) * -1 );
+        padding-inline: var( --kendo-chat-message-list-padding-x, #{ $kendo-chat-message-list-padding-x } );
+    }
+
+    .k-chat .k-card-deck-scrollwrap > .k-card-deck {
+        // hide scrollbar in chat
+        margin-block-end: calc( var( --kendo-card-deck-scrollbar-size, #{ $kendo-card-deck-scrollbar-size } ) * -1 );
+        padding-bottom: var( --kendo-card-deck-scrollbar-size, #{ $kendo-card-deck-scrollbar-size } );
+    }
+
+    // Deck
+    .k-chat .k-card-deck .k-card-wrap {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+        flex: 0 0 auto;
+        padding-bottom: 5px; // accommodate for focused box shadow on OSX
+
+        .k-card {
+            flex: 0 0 auto;
+        }
+
+        &.k-selected {
+            background: none;
+        }
+    }
+
+}
+
+@mixin kendo-chat-typing-indicator--layout() {
+    // Typing indicator
+    .k-typing-indicator {
+        display: inline-flex;
+        gap: k-spacing(1);
+        flex-flow: row nowrap;
+
+        span {
+            width: k-spacing(2);
+            height: k-spacing(2);
+            border-radius: 50%;
+            flex: 0 0 k-spacing(2);
+            background-color: currentColor;
+            opacity: .25;
+            @for $i from 1 through 3 {
+                &:nth-of-type(#{$i}) {
+                    animation: 1s k-animation-blink infinite ($i * .3333s);
+                }
+            }
+        }
+
+        @keyframes k-animation-blink {
+            50% {
+                opacity: .5;
+            }
+        }
+
+    }
+
+}
+
+@mixin kendo-chat-toolbar--layout() {}
