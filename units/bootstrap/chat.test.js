@@ -8,9 +8,9 @@ const className = "k-chat";
 const dependencyClassNames = ["k-input", "k-card", "k-svg-icon", "k-toolbar"];
 
 const expected = [
-    "kendo-chat-quick-reply-shadow-opacity", // Variable customizations work, but is used by another variable.
     "kendo-chat-padding-x", // Variable customizations work, but is used by another variable.
-    "kendo-chat-padding-y" // Variable customizations work, but is used by another variable.
+    "kendo-chat-padding-y", // Variable customizations work, but is used by another variable.
+    "kendo-chat-item-spacing-x", // Variable customizations work, but is used by another variable.
 ];
 
 const unexpected = [];
