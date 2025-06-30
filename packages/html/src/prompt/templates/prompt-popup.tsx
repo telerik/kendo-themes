@@ -3,6 +3,8 @@ import { IconTextButton, IconButton } from "../../button";
 import { Toolbar } from "../../toolbar";
 import { Prompt, PromptHeader, PromptFooter, PromptContent, PromptView } from "..";
 import { Popup } from "../../popup";
+import { SpeechToTextButton } from "../../speech-to-text-button";
+import { Textarea } from "../../textarea";
 
 export const PromptInPopup = (props) => (
     <Popup className="k-prompt-popup">
@@ -19,7 +21,18 @@ export const PromptInPopup = (props) => (
                 </Toolbar>
             </PromptHeader>
             <PromptContent>
-                <PromptView showSearch></PromptView>
+                <PromptView>
+                    <Textarea
+                        resize="y"
+                        rows={1}
+                        placeholder="Ask or generate content with AI"
+                        suffix={
+                            <>
+                                <SpeechToTextButton fillMode="flat" />
+                            </>
+                        }
+                    />
+                </PromptView>
             </PromptContent>
             <PromptFooter>
                 <ActionButtons className="k-prompt-actions" alignment="start">

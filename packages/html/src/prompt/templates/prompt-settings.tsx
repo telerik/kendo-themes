@@ -2,7 +2,9 @@ import { ActionButtons } from "../../action-buttons";
 import { IconTextButton, IconButton } from "../../button";
 import { ChipList, Chip } from "../../chip";
 import { Toolbar } from "../../toolbar";
-import { Prompt, PromptHeader, PromptFooter, PromptContent, PromptSetting, PromptView } from "..";
+import { Prompt, PromptHeader, PromptFooter, PromptContent, PromptSetting, PromptView, PromptExpander } from "..";
+import { SpeechToTextButton } from "../../speech-to-text-button";
+import { Textarea } from "../../textarea";
 
 export const PromptSettings = (props) => (
     <Prompt {...props}>
@@ -14,30 +16,37 @@ export const PromptSettings = (props) => (
             </Toolbar>
         </PromptHeader>
         <PromptContent>
-            <PromptView
-                showSearch
-                settings={
-                    <>
-                        <PromptSetting>
+            <PromptView>
+                <Textarea
+                    resize="y"
+                    rows={1}
+                    placeholder="Ask or generate content with AI"
+                    suffix={
+                        <>
+                            <SpeechToTextButton fillMode="flat" />
+                        </>
+                    }
+                />
+                <PromptExpander expanded title="Settings">
+                    <PromptSetting>
                         Length:
-                            <ChipList>
-                                <Chip text="Small" />
-                                <Chip text="Medium" />
-                                <Chip text="Large" />
-                            </ChipList>
-                        </PromptSetting>
-                        <PromptSetting>
+                        <ChipList>
+                            <Chip text="Small" />
+                            <Chip text="Medium" />
+                            <Chip text="Large" />
+                        </ChipList>
+                    </PromptSetting>
+                    <PromptSetting>
                         Tone:
-                            <ChipList>
-                                <Chip text="Professional" />
-                                <Chip text="Friendly" />
-                                <Chip text="Casual" />
-                                <Chip text="Straightforward" />
-                                <Chip text="Confident" />
-                            </ChipList>
-                        </PromptSetting>
-                    </>
-                }>
+                        <ChipList>
+                            <Chip text="Professional" />
+                            <Chip text="Friendly" />
+                            <Chip text="Casual" />
+                            <Chip text="Straightforward" />
+                            <Chip text="Confident" />
+                        </ChipList>
+                    </PromptSetting>
+                </PromptExpander>
             </PromptView>
         </PromptContent>
         <PromptFooter>
