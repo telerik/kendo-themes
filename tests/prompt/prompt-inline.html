@@ -11,6 +11,9 @@
 </head>
 <body id="app" class="k-body">
     <style>
+        #test-area {
+            max-width: 1200px;
+        }
         #test-area>section {
             height: 300px;
         }
@@ -24,7 +27,7 @@
         <span>Inline Prompt Opened Menu</span>
         <section>
             <div class="k-animation-container k-animation-container-shown">
-                <div class="k-child-animation-container" style="width: 420px;">
+                <div class="k-child-animation-container" style="width: 550px;">
                     <div class="k-prompt-popup k-popup">
                         <div class="k-prompt">
                             <div class="k-prompt-content">
@@ -32,6 +35,14 @@
                                     <div class="k-card">
                                         <div class="k-card-body" style="max-height: 150px; overflow-y: auto;">Suggested response content from external service may be presented here so it could update or inserted after a selection, or just discarded.</div>
                                         <div class="k-actions k-actions-start k-actions-horizontal k-card-actions">
+                                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="k-button-text">Copy</span>
+                                            </button>
                                             <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-insert-bottom">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -58,19 +69,27 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                                        <span class="k-input-prefix k-input-prefix-horizontal">
+                                    <span class="k-textarea !k-flex-row k-input k-input-md k-input-solid k-rounded-md">
+                                        <span class="k-input-prefix !k-align-items-start k-input-prefix-horizontal">
                                             <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-sparkles">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-menu">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m320 32 54.3 137.7L512 224l-137.7 54.3L320 416l-54.3-137.7L128 224l137.7-54.3zM94 350 0 384l94 34 34 94 34-94 94-34-94-34-34-94zM70.6 70.6 0 96l70.5 25.5L96 192l25.5-70.5L192 96l-70.5-25.5L96 0 70.5 70.5Z"></path>
+                                                        <path d="M480 32v96H32V32zM32 192v96h448v-96zm448 160H32v96h448z"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <button class="k-speech-to-text-button k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-microphone-outline">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M309.09 480H202.9c-10.17 0-18.42-7.16-18.42-16s8.25-16 18.42-16h34.68v-45.63c-69.58-4.63-104.35-35.33-121.47-61.4-19.89-30.3-20.12-60.58-20.12-61.85 0-8.84 8.25-16 18.42-16s18.38 7.13 18.42 15.94c0 .54.51 24.23 15.96 47.08 20.11 29.75 56.18 44.84 107.21 44.84s87.1-15.08 107.21-44.84c15.54-22.99 15.95-46.84 15.96-47.08 0-8.84 8.25-15.97 18.42-15.97s18.42 7.2 18.42 16.03c0 1.27-.23 31.55-20.12 61.85-17.12 26.08-51.89 56.77-121.47 61.4V448h34.68c10.17 0 18.42 7.16 18.42 16s-8.25 16-18.42 16zM256 341.33c-35.88 0-63.73-14.09-78.42-39.67-10.48-18.25-10.79-36-10.79-37.96V109.63c0-1.96.3-19.7 10.79-37.96C192.27 46.09 220.12 32 256 32s63.73 14.09 78.42 39.67c10.48 18.25 10.79 36 10.79 37.96V263.7c0 1.96-.3 19.7-10.79 37.96-14.69 25.58-42.54 39.67-78.42 39.67M256 64c-21.71 0-36.43 6.92-44.99 21.16-7.13 11.85-7.38 24.44-7.38 24.57v153.98s.25 12.62 7.38 24.47c8.56 14.24 23.28 21.16 44.99 21.16s36.43-6.92 44.99-21.16c7.13-11.85 7.38-24.44 7.38-24.57V109.63s-.25-12.62-7.38-24.47C292.43 70.92 277.71 64 256 64"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                         </span>
-                                        <input class="k-input-inner" placeholder="Edit, generate or explain ..." autocomplete="off" type="text" value="">
-                                        <span class="k-input-suffix k-input-suffix-horizontal">
-                                            <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                        <span class="k-input-separator k-input-separator-vertical"></span>
+                                        <textarea class="!k-overflow-auto k-resize-none k-input-inner" placeholder="Placeholder ..." rows="1"></textarea>
+                                        <span class="k-input-suffix !k-align-items-start k-input-suffix-horizontal">
+                                            <button class="k-prompt-send k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-disabled k-icon-button">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-paper-plane">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M469.783 271.879 54.329 446.734c-13.149 5.534-26.266-8.042-21.225-21.967l48.3-133.404c2.16-5.966 7.298-10.169 13.326-10.901C312.468 256 239.85 263.839 312.468 256c-72.618-7.839 0 0-217.739-24.462-6.027-.732-11.165-4.935-13.325-10.901l-48.3-133.404C28.063 73.308 41.18 59.732 54.33 65.266l415.454 174.855c13.623 5.734 13.623 26.024 0 31.758"></path>
@@ -88,7 +107,7 @@
         </section>
         <section>
             <div class="k-animation-container k-animation-container-shown">
-                <div class="k-child-animation-container" style="width: 420px;">
+                <div class="k-child-animation-container" style="width: 550px;">
                     <div class="k-prompt-popup k-popup">
                         <div class="k-prompt">
                             <div class="k-prompt-content">
@@ -96,6 +115,14 @@
                                     <div class="k-card">
                                         <div class="k-card-body" style="max-height: 150px; overflow-y: auto;">Suggested response content from external service may be presented here so it could update or inserted after a selection, or just discarded.</div>
                                         <div class="k-actions k-actions-start k-actions-horizontal k-card-actions">
+                                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="k-button-text">Copy</span>
+                                            </button>
                                             <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-insert-bottom">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -122,19 +149,27 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                                        <span class="k-input-prefix k-input-prefix-horizontal">
+                                    <span class="k-textarea !k-flex-row k-input k-input-md k-input-solid k-rounded-md">
+                                        <span class="k-input-prefix !k-align-items-start k-input-prefix-horizontal">
                                             <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-sparkles">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-menu">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m320 32 54.3 137.7L512 224l-137.7 54.3L320 416l-54.3-137.7L128 224l137.7-54.3zM94 350 0 384l94 34 34 94 34-94 94-34-94-34-34-94zM70.6 70.6 0 96l70.5 25.5L96 192l25.5-70.5L192 96l-70.5-25.5L96 0 70.5 70.5Z"></path>
+                                                        <path d="M480 32v96H32V32zM32 192v96h448v-96zm448 160H32v96h448z"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <button class="k-speech-to-text-button k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-microphone-outline">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M309.09 480H202.9c-10.17 0-18.42-7.16-18.42-16s8.25-16 18.42-16h34.68v-45.63c-69.58-4.63-104.35-35.33-121.47-61.4-19.89-30.3-20.12-60.58-20.12-61.85 0-8.84 8.25-16 18.42-16s18.38 7.13 18.42 15.94c0 .54.51 24.23 15.96 47.08 20.11 29.75 56.18 44.84 107.21 44.84s87.1-15.08 107.21-44.84c15.54-22.99 15.95-46.84 15.96-47.08 0-8.84 8.25-15.97 18.42-15.97s18.42 7.2 18.42 16.03c0 1.27-.23 31.55-20.12 61.85-17.12 26.08-51.89 56.77-121.47 61.4V448h34.68c10.17 0 18.42 7.16 18.42 16s-8.25 16-18.42 16zM256 341.33c-35.88 0-63.73-14.09-78.42-39.67-10.48-18.25-10.79-36-10.79-37.96V109.63c0-1.96.3-19.7 10.79-37.96C192.27 46.09 220.12 32 256 32s63.73 14.09 78.42 39.67c10.48 18.25 10.79 36 10.79 37.96V263.7c0 1.96-.3 19.7-10.79 37.96-14.69 25.58-42.54 39.67-78.42 39.67M256 64c-21.71 0-36.43 6.92-44.99 21.16-7.13 11.85-7.38 24.44-7.38 24.57v153.98s.25 12.62 7.38 24.47c8.56 14.24 23.28 21.16 44.99 21.16s36.43-6.92 44.99-21.16c7.13-11.85 7.38-24.44 7.38-24.57V109.63s-.25-12.62-7.38-24.47C292.43 70.92 277.71 64 256 64"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                         </span>
-                                        <input class="k-input-inner" placeholder="Edit, generate or explain ..." autocomplete="off" type="text" value="">
-                                        <span class="k-input-suffix k-input-suffix-horizontal">
-                                            <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                        <span class="k-input-separator k-input-separator-vertical"></span>
+                                        <textarea class="!k-overflow-auto k-resize-none k-input-inner" placeholder="Placeholder ..." rows="1"></textarea>
+                                        <span class="k-input-suffix !k-align-items-start k-input-suffix-horizontal">
+                                            <button class="k-prompt-send k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-disabled k-icon-button">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-paper-plane">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M469.783 271.879 54.329 446.734c-13.149 5.534-26.266-8.042-21.225-21.967l48.3-133.404c2.16-5.966 7.298-10.169 13.326-10.901C312.468 256 239.85 263.839 312.468 256c-72.618-7.839 0 0-217.739-24.462-6.027-.732-11.165-4.935-13.325-10.901l-48.3-133.404C28.063 73.308 41.18 59.732 54.33 65.266l415.454 174.855c13.623 5.734 13.623 26.024 0 31.758"></path>
@@ -170,7 +205,7 @@
                                             <path d="M113.2 206.2q-11.1 9.3-24.6 13.5c-13.5 4.2-19.3 4.2-31 4.2-8.4 0-16.1-1-23.1-2.9s-13.1-4.9-18.2-8.8-9.1-8.8-12-14.6C1.4 192 0 185.2 0 177.5c0-18.9 8.1-32.9 24.4-41.9s40.9-13.5 74-13.5h13.7c0-2.6 0-5.3-.1-8.2s-.3-5.4-.7-7.6c-.8-7.6-3.5-13.2-8-17-4.5-3.7-11.8-5.6-21.7-5.6-10.4 0-18.1 1.9-23.3 5.8s-7.8 9.5-7.8 16.8H7c2.4-32.7 27.8-49 76.3-49 6.6 0 12.6.2 17.9.6s10.2 1.1 14.6 2c4.4 1 8.6 2.2 12.5 3.7s7.6 3.4 11.4 5.7c3.5 2.2 6.4 4.7 9 7.4 2.5 2.8 4.6 6.1 6.4 9.9 1.7 3.9 3 8.3 3.8 13.3s1.2 10.8 1.2 17.4V224h-46.8zm-1-58H96.8c-16.2 0-28.4 2-36.5 5.9s-12.2 10.6-12.2 20.2q0 10.95 7.5 16.2c7.5 5.25 11.5 5.2 19.4 5.2 7.6 0 14.6-1.5 21.2-4.5s11.9-6.9 15.8-11.7v-31.3zm125.2-61.6c5.5-7.2 12.3-12.8 20.2-16.7S274 64 283.1 64c10.2 0 19.2 1.9 26.8 5.7 7.7 3.8 14.1 9.2 19.3 16.3s9.1 15.7 11.7 25.9 4 21.6 4 34.3-1.2 19-4.3 29.4c-3 10.4-7.6 17.9-13.3 25.2q-8.55 10.95-20.7 17.1c-12.15 6.15-17.3 6.1-27.5 6.1-17.5 0-31.9-5.2-43.3-15.6V224H192V0h45.4zm0 91.7c4.4 4.1 9.1 7.2 14.1 9.4 5 2.1 10.5 3.2 16.5 3.2 9.8 0 17.4-4.3 22.7-12.8 5.3-8.6 7.9-14.7 7.9-31.8 0-32.7-9.6-49-28.7-49-6.2 0-12 1.9-17.4 5.6s-10.5 9-15.1 15.8zM442.2 224c-12.4 0-23.4-1.8-33.3-5.4-9.8-3.6-18.1-8.8-25-15.6-6.8-6.8-12-15.2-15.7-25.1s-5.5-21.3-5.5-34 1.8-24 5.5-33.9 8.9-18.2 15.9-25.1q10.35-10.35 25.2-15.6 14.85-5.4 33.6-5.4 30 0 48 14.1c18 14.1 19 23 21 40.9h-41c-1-7-3.9-12.7-8.8-16.9s-11.2-6.3-19.2-6.3c-10.2 0-18.4 3.9-24.5 11.6s-9.2 19.9-9.2 36.6c0 16.5 3.1 28.7 9.2 36.5s14.3 11.7 24.5 11.7c7.9 0 14.4-2.1 19.3-6.3s7.8-9.8 8.7-16.9h41c-2.5 17.7-9.7 31.2-21.5 40.7-11.6 9.6-27.7 14.4-48.2 14.4m69.8 0L224 512 64 352l64-64 96 96z"></path>
                                         </svg>
                                     </span>
-                                    <span class="k-menu-link-text">Fix mistakes</span>
+                                    <span class="k-menu-link-text">Fix spelling</span>
                                 </span>
                             </li>
                             <li class="k-menu-item k-item">
@@ -192,16 +227,6 @@
                             </li>
                             <li class="k-menu-item k-item">
                                 <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-spell-checker">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M113.2 206.2q-11.1 9.3-24.6 13.5c-13.5 4.2-19.3 4.2-31 4.2-8.4 0-16.1-1-23.1-2.9s-13.1-4.9-18.2-8.8-9.1-8.8-12-14.6C1.4 192 0 185.2 0 177.5c0-18.9 8.1-32.9 24.4-41.9s40.9-13.5 74-13.5h13.7c0-2.6 0-5.3-.1-8.2s-.3-5.4-.7-7.6c-.8-7.6-3.5-13.2-8-17-4.5-3.7-11.8-5.6-21.7-5.6-10.4 0-18.1 1.9-23.3 5.8s-7.8 9.5-7.8 16.8H7c2.4-32.7 27.8-49 76.3-49 6.6 0 12.6.2 17.9.6s10.2 1.1 14.6 2c4.4 1 8.6 2.2 12.5 3.7s7.6 3.4 11.4 5.7c3.5 2.2 6.4 4.7 9 7.4 2.5 2.8 4.6 6.1 6.4 9.9 1.7 3.9 3 8.3 3.8 13.3s1.2 10.8 1.2 17.4V224h-46.8zm-1-58H96.8c-16.2 0-28.4 2-36.5 5.9s-12.2 10.6-12.2 20.2q0 10.95 7.5 16.2c7.5 5.25 11.5 5.2 19.4 5.2 7.6 0 14.6-1.5 21.2-4.5s11.9-6.9 15.8-11.7v-31.3zm125.2-61.6c5.5-7.2 12.3-12.8 20.2-16.7S274 64 283.1 64c10.2 0 19.2 1.9 26.8 5.7 7.7 3.8 14.1 9.2 19.3 16.3s9.1 15.7 11.7 25.9 4 21.6 4 34.3-1.2 19-4.3 29.4c-3 10.4-7.6 17.9-13.3 25.2q-8.55 10.95-20.7 17.1c-12.15 6.15-17.3 6.1-27.5 6.1-17.5 0-31.9-5.2-43.3-15.6V224H192V0h45.4zm0 91.7c4.4 4.1 9.1 7.2 14.1 9.4 5 2.1 10.5 3.2 16.5 3.2 9.8 0 17.4-4.3 22.7-12.8 5.3-8.6 7.9-14.7 7.9-31.8 0-32.7-9.6-49-28.7-49-6.2 0-12 1.9-17.4 5.6s-10.5 9-15.1 15.8zM442.2 224c-12.4 0-23.4-1.8-33.3-5.4-9.8-3.6-18.1-8.8-25-15.6-6.8-6.8-12-15.2-15.7-25.1s-5.5-21.3-5.5-34 1.8-24 5.5-33.9 8.9-18.2 15.9-25.1q10.35-10.35 25.2-15.6 14.85-5.4 33.6-5.4 30 0 48 14.1c18 14.1 19 23 21 40.9h-41c-1-7-3.9-12.7-8.8-16.9s-11.2-6.3-19.2-6.3c-10.2 0-18.4 3.9-24.5 11.6s-9.2 19.9-9.2 36.6c0 16.5 3.1 28.7 9.2 36.5s14.3 11.7 24.5 11.7c7.9 0 14.4-2.1 19.3-6.3s7.8-9.8 8.7-16.9h41c-2.5 17.7-9.7 31.2-21.5 40.7-11.6 9.6-27.7 14.4-48.2 14.4m69.8 0L224 512 64 352l64-64 96 96z"></path>
-                                        </svg>
-                                    </span>
-                                    <span class="k-menu-link-text">Polish formatting</span>
-                                </span>
-                            </li>
-                            <li class="k-menu-item k-item">
-                                <span class="k-link k-menu-link">
                                     <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-col-resize">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M128 255h64v33h-64v64.6L0 271.9l128-80.7zm96 225h64V32h-64zm288-207.9-128-80.7V256h-64v33h64v63.9z"></path>
@@ -215,6 +240,16 @@
                                             </svg>
                                         </span>
                                     </span>
+                                </span>
+                            </li>
+                            <li class="k-menu-item k-item">
+                                <span class="k-link k-menu-link">
+                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-spell-checker">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M113.2 206.2q-11.1 9.3-24.6 13.5c-13.5 4.2-19.3 4.2-31 4.2-8.4 0-16.1-1-23.1-2.9s-13.1-4.9-18.2-8.8-9.1-8.8-12-14.6C1.4 192 0 185.2 0 177.5c0-18.9 8.1-32.9 24.4-41.9s40.9-13.5 74-13.5h13.7c0-2.6 0-5.3-.1-8.2s-.3-5.4-.7-7.6c-.8-7.6-3.5-13.2-8-17-4.5-3.7-11.8-5.6-21.7-5.6-10.4 0-18.1 1.9-23.3 5.8s-7.8 9.5-7.8 16.8H7c2.4-32.7 27.8-49 76.3-49 6.6 0 12.6.2 17.9.6s10.2 1.1 14.6 2c4.4 1 8.6 2.2 12.5 3.7s7.6 3.4 11.4 5.7c3.5 2.2 6.4 4.7 9 7.4 2.5 2.8 4.6 6.1 6.4 9.9 1.7 3.9 3 8.3 3.8 13.3s1.2 10.8 1.2 17.4V224h-46.8zm-1-58H96.8c-16.2 0-28.4 2-36.5 5.9s-12.2 10.6-12.2 20.2q0 10.95 7.5 16.2c7.5 5.25 11.5 5.2 19.4 5.2 7.6 0 14.6-1.5 21.2-4.5s11.9-6.9 15.8-11.7v-31.3zm125.2-61.6c5.5-7.2 12.3-12.8 20.2-16.7S274 64 283.1 64c10.2 0 19.2 1.9 26.8 5.7 7.7 3.8 14.1 9.2 19.3 16.3s9.1 15.7 11.7 25.9 4 21.6 4 34.3-1.2 19-4.3 29.4c-3 10.4-7.6 17.9-13.3 25.2q-8.55 10.95-20.7 17.1c-12.15 6.15-17.3 6.1-27.5 6.1-17.5 0-31.9-5.2-43.3-15.6V224H192V0h45.4zm0 91.7c4.4 4.1 9.1 7.2 14.1 9.4 5 2.1 10.5 3.2 16.5 3.2 9.8 0 17.4-4.3 22.7-12.8 5.3-8.6 7.9-14.7 7.9-31.8 0-32.7-9.6-49-28.7-49-6.2 0-12 1.9-17.4 5.6s-10.5 9-15.1 15.8zM442.2 224c-12.4 0-23.4-1.8-33.3-5.4-9.8-3.6-18.1-8.8-25-15.6-6.8-6.8-12-15.2-15.7-25.1s-5.5-21.3-5.5-34 1.8-24 5.5-33.9 8.9-18.2 15.9-25.1q10.35-10.35 25.2-15.6 14.85-5.4 33.6-5.4 30 0 48 14.1c18 14.1 19 23 21 40.9h-41c-1-7-3.9-12.7-8.8-16.9s-11.2-6.3-19.2-6.3c-10.2 0-18.4 3.9-24.5 11.6s-9.2 19.9-9.2 36.6c0 16.5 3.1 28.7 9.2 36.5s14.3 11.7 24.5 11.7c7.9 0 14.4-2.1 19.3-6.3s7.8-9.8 8.7-16.9h41c-2.5 17.7-9.7 31.2-21.5 40.7-11.6 9.6-27.7 14.4-48.2 14.4m69.8 0L224 512 64 352l64-64 96 96z"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="k-menu-link-text">Polish formatting</span>
                                 </span>
                             </li>
                             <li class="k-menu-item k-item k-last">
@@ -238,7 +273,7 @@
                     </div>
                 </div>
             </div>
-            <div class="k-animation-container k-animation-container-shown" style="left: 689px; top: 353px;">
+            <div class="k-animation-container k-animation-container-shown" style="left: 777px; top: 353px;">
                 <div class="k-child-animation-container">
                     <div class="k-menu-popup k-popup">
                         <ul class="k-context-menu k-menu-group k-menu-group-md">
@@ -271,7 +306,7 @@
         <span></span>
         <section>
             <div class="k-animation-container k-animation-container-shown">
-                <div class="k-child-animation-container" style="width: 420px;">
+                <div class="k-child-animation-container" style="width: 550px;">
                     <div class="k-prompt-popup k-popup">
                         <div class="k-prompt">
                             <div class="k-prompt-content">
@@ -279,6 +314,14 @@
                                     <div class="k-card">
                                         <div class="k-card-body" style="max-height: 150px; overflow-y: auto;">Lorem ipsum odor amet, consectetuer adipiscing elit. Aliquet orci gravida taciti vestibulum litora justo volutpat cursus. Sed lectus quisque nibh maximus mattis vivamus non venenatis congue. Vulputate tristique urna molestie natoque rutrum aliquam aptent. Accumsan ex quisque mollis suspendisse duis amet id. Metus suscipit tincidunt neque neque torquent justo litora nisi nostra. Vivamus porttitor fermentum class sollicitudin; litora fermentum per.Accumsan ornare quisque conubia montes hac interdum. Potenti mauris pharetra iaculis nam a. Elit scelerisque rhoncus accumsan inceptos malesuada habitant pulvinar condimentum curabitur. Sit potenti massa praesent id sodales cras duis. Erat augue litora interdum convallis, rhoncus blandit. Maecenas elementum quisque lacinia erat maximus sem tincidunt dis. Convallis potenti class turpis curabitur taciti diam vehicula.</div>
                                         <div class="k-actions k-actions-start k-actions-horizontal k-card-actions">
+                                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="k-button-text">Copy</span>
+                                            </button>
                                             <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-insert-bottom">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -305,19 +348,73 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                                        <span class="k-input-prefix k-input-prefix-horizontal">
+                                    <span class="k-textarea !k-flex-row k-input k-input-md k-input-solid k-rounded-md">
+                                        <span class="k-input-prefix !k-align-items-start k-input-prefix-horizontal">
                                             <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-sparkles">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-menu">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m320 32 54.3 137.7L512 224l-137.7 54.3L320 416l-54.3-137.7L128 224l137.7-54.3zM94 350 0 384l94 34 34 94 34-94 94-34-94-34-34-94zM70.6 70.6 0 96l70.5 25.5L96 192l25.5-70.5L192 96l-70.5-25.5L96 0 70.5 70.5Z"></path>
+                                                        <path d="M480 32v96H32V32zM32 192v96h448v-96zm448 160H32v96h448z"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <button class="k-speech-to-text-button k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-microphone-outline">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M309.09 480H202.9c-10.17 0-18.42-7.16-18.42-16s8.25-16 18.42-16h34.68v-45.63c-69.58-4.63-104.35-35.33-121.47-61.4-19.89-30.3-20.12-60.58-20.12-61.85 0-8.84 8.25-16 18.42-16s18.38 7.13 18.42 15.94c0 .54.51 24.23 15.96 47.08 20.11 29.75 56.18 44.84 107.21 44.84s87.1-15.08 107.21-44.84c15.54-22.99 15.95-46.84 15.96-47.08 0-8.84 8.25-15.97 18.42-15.97s18.42 7.2 18.42 16.03c0 1.27-.23 31.55-20.12 61.85-17.12 26.08-51.89 56.77-121.47 61.4V448h34.68c10.17 0 18.42 7.16 18.42 16s-8.25 16-18.42 16zM256 341.33c-35.88 0-63.73-14.09-78.42-39.67-10.48-18.25-10.79-36-10.79-37.96V109.63c0-1.96.3-19.7 10.79-37.96C192.27 46.09 220.12 32 256 32s63.73 14.09 78.42 39.67c10.48 18.25 10.79 36 10.79 37.96V263.7c0 1.96-.3 19.7-10.79 37.96-14.69 25.58-42.54 39.67-78.42 39.67M256 64c-21.71 0-36.43 6.92-44.99 21.16-7.13 11.85-7.38 24.44-7.38 24.57v153.98s.25 12.62 7.38 24.47c8.56 14.24 23.28 21.16 44.99 21.16s36.43-6.92 44.99-21.16c7.13-11.85 7.38-24.44 7.38-24.57V109.63s-.25-12.62-7.38-24.47C292.43 70.92 277.71 64 256 64"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                         </span>
-                                        <input class="k-input-inner" placeholder="Edit, generate or explain ..." autocomplete="off" type="text" value="">
-                                        <span class="k-input-suffix k-input-suffix-horizontal">
+                                        <span class="k-input-separator k-input-separator-vertical"></span>
+                                        <textarea class="!k-overflow-auto k-resize-none k-input-inner" placeholder="Placeholder ..." rows="1"></textarea>
+                                        <span class="k-input-suffix !k-align-items-start k-input-suffix-horizontal">
+                                            <button class="k-prompt-send k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-disabled k-icon-button">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-paper-plane">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M469.783 271.879 54.329 446.734c-13.149 5.534-26.266-8.042-21.225-21.967l48.3-133.404c2.16-5.966 7.298-10.169 13.326-10.901C312.468 256 239.85 263.839 312.468 256c-72.618-7.839 0 0-217.739-24.462-6.027-.732-11.165-4.935-13.325-10.901l-48.3-133.404C28.063 73.308 41.18 59.732 54.33 65.266l415.454 174.855c13.623 5.734 13.623 26.024 0 31.758"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <span></span>
+        <span>Inline Prompt Input Only</span>
+        <span></span>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container" style="width: 550px;">
+                    <div class="k-prompt-popup k-popup">
+                        <div class="k-prompt">
+                            <div class="k-prompt-content">
+                                <div class="k-prompt-view">
+                                    <span class="k-textarea !k-flex-row k-input k-input-md k-input-solid k-rounded-md">
+                                        <span class="k-input-prefix !k-align-items-start k-input-prefix-horizontal">
                                             <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-menu">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M480 32v96H32V32zM32 192v96h448v-96zm448 160H32v96h448z"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <button class="k-speech-to-text-button k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-microphone-outline">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M309.09 480H202.9c-10.17 0-18.42-7.16-18.42-16s8.25-16 18.42-16h34.68v-45.63c-69.58-4.63-104.35-35.33-121.47-61.4-19.89-30.3-20.12-60.58-20.12-61.85 0-8.84 8.25-16 18.42-16s18.38 7.13 18.42 15.94c0 .54.51 24.23 15.96 47.08 20.11 29.75 56.18 44.84 107.21 44.84s87.1-15.08 107.21-44.84c15.54-22.99 15.95-46.84 15.96-47.08 0-8.84 8.25-15.97 18.42-15.97s18.42 7.2 18.42 16.03c0 1.27-.23 31.55-20.12 61.85-17.12 26.08-51.89 56.77-121.47 61.4V448h34.68c10.17 0 18.42 7.16 18.42 16s-8.25 16-18.42 16zM256 341.33c-35.88 0-63.73-14.09-78.42-39.67-10.48-18.25-10.79-36-10.79-37.96V109.63c0-1.96.3-19.7 10.79-37.96C192.27 46.09 220.12 32 256 32s63.73 14.09 78.42 39.67c10.48 18.25 10.79 36 10.79 37.96V263.7c0 1.96-.3 19.7-10.79 37.96-14.69 25.58-42.54 39.67-78.42 39.67M256 64c-21.71 0-36.43 6.92-44.99 21.16-7.13 11.85-7.38 24.44-7.38 24.57v153.98s.25 12.62 7.38 24.47c8.56 14.24 23.28 21.16 44.99 21.16s36.43-6.92 44.99-21.16c7.13-11.85 7.38-24.44 7.38-24.57V109.63s-.25-12.62-7.38-24.47C292.43 70.92 277.71 64 256 64"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </span>
+                                        <span class="k-input-separator k-input-separator-vertical"></span>
+                                        <textarea class="!k-overflow-auto k-resize-none k-input-inner" placeholder="Placeholder ..." rows="1"></textarea>
+                                        <span class="k-input-suffix !k-align-items-start k-input-suffix-horizontal">
+                                            <button class="k-prompt-send k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-disabled k-icon-button">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-paper-plane">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M469.783 271.879 54.329 446.734c-13.149 5.534-26.266-8.042-21.225-21.967l48.3-133.404c2.16-5.966 7.298-10.169 13.326-10.901C312.468 256 239.85 263.839 312.468 256c-72.618-7.839 0 0-217.739-24.462-6.027-.732-11.165-4.935-13.325-10.901l-48.3-133.404C28.063 73.308 41.18 59.732 54.33 65.266l415.454 174.855c13.623 5.734 13.623 26.024 0 31.758"></path>
