@@ -51,6 +51,7 @@
         align-self: stretch;
     }
 
+    // Remove when k-suggestion is adopted
     .k-prompt-suggestion {
         border-width: 1px;
         border-style: solid;
@@ -70,6 +71,10 @@
         margin: 0;
     }
 
+    // Stop FAB
+    .k-prompt-stop-fab {
+        z-index: 1;
+    }
 }
 
 
