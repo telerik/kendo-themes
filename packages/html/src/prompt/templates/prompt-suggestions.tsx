@@ -1,7 +1,10 @@
 import { ActionButtons } from "../../action-buttons";
 import { IconTextButton, IconButton } from "../../button";
 import { Toolbar } from "../../toolbar";
-import { Prompt, PromptHeader, PromptFooter, PromptContent, PromptSuggestion, PromptView } from "..";
+import { Prompt, PromptHeader, PromptFooter, PromptContent, PromptView, PromptExpander } from "..";
+import { SpeechToTextButton } from "../../speech-to-text-button";
+import { Textarea } from "../../textarea";
+import { SuggestionGroup, Suggestion } from "../../suggestion";
 
 
 export const PromptSuggestions = (props) => (
@@ -14,15 +17,24 @@ export const PromptSuggestions = (props) => (
             </Toolbar>
         </PromptHeader>
         <PromptContent>
-            <PromptView
-                showSearch
-                suggestions={
-                    <>
-                        <PromptSuggestion>Suggestion 1</PromptSuggestion>
-                        <PromptSuggestion>Suggestion 2</PromptSuggestion>
-                        <PromptSuggestion>Suggestion 3</PromptSuggestion>
-                    </>
-                }>
+            <PromptView>
+                <Textarea
+                    resize="y"
+                    rows={1}
+                    placeholder="Ask or generate content with AI"
+                    suffix={
+                        <>
+                            <SpeechToTextButton fillMode="flat" />
+                        </>
+                    }
+                />
+                <PromptExpander expanded title="Prompt Suggestions">
+                    <SuggestionGroup scrollable={false}>
+                        <Suggestion text="Suggestion 1" />
+                        <Suggestion text="Suggestion 2" />
+                        <Suggestion text="Suggestion 3" />
+                    </SuggestionGroup>
+                </PromptExpander>
             </PromptView>
         </PromptContent>
         <PromptFooter>
