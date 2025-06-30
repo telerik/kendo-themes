@@ -1,6 +1,7 @@
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../utils/_index.scss" as *;
+@use "../speech-to-text-button/_index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
@@ -11,6 +12,7 @@
 @mixin kendo-prompt--styles() {
     @include import-once( "prompt" ) {
         @include core-styles();
+        @include kendo-speech-to-text-button--styles();
         @include kendo-prompt--layout();
         @include kendo-prompt--theme();
         @include kendo-utils--flex-grid--flex-direction();

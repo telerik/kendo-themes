@@ -71,4 +71,7 @@
         margin: 0;
     }
 
+    .k-generating {
+        animation: k-speech-to-text-button-listening 1.5s ease-in-out 0.5s infinite;
+    }
 }
