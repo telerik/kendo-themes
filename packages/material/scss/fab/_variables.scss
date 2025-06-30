@@ -165,6 +165,10 @@ $kendo-fab-item-disabled-shadow: $kendo-fab-disabled-shadow !default;
 /// @group floating-action-button
 $kendo-fab-item-active-shadow: $kendo-fab-active-shadow !default;
 
+/// Тhe opacity of the generating FAB.
+/// @group floating-action-button
+$kendo-fab-generating-opacity: 60% !default;
+
 @forward "@progress/kendo-theme-core/scss/components/fab/_variables.scss" with (
     $kendo-fab-border-width: $kendo-fab-border-width,
     $kendo-fab-font-family: $kendo-fab-font-family,
@@ -206,5 +210,6 @@ $kendo-fab-item-active-shadow: $kendo-fab-active-shadow !default;
     $kendo-fab-item-icon-border: $kendo-fab-item-icon-border,
     $kendo-fab-item-shadow: $kendo-fab-item-shadow,
     $kendo-fab-item-disabled-shadow: $kendo-fab-item-disabled-shadow,
-    $kendo-fab-item-active-shadow: $kendo-fab-item-active-shadow
+    $kendo-fab-item-active-shadow: $kendo-fab-item-active-shadow,
+    $kendo-fab-generating-opacity: $kendo-fab-generating-opacity
 );

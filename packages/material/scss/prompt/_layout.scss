@@ -4,6 +4,7 @@
 @mixin kendo-prompt--layout() {
     @include kendo-prompt--layout-base();
 
+    // Remove when k-suggestion is adopted
     .k-prompt-suggestion {
         border: 0;
     }

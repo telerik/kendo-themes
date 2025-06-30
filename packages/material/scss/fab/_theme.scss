@@ -46,6 +46,29 @@
         }
     }
 
+    // Generating state
+    .k-fab-solid-primary.k-generating {
+        animation: k-fab-generating 1.5s ease-in-out 0.5s infinite;
+    }
+
+    @keyframes k-fab-generating {
+        0% {
+            color: k-color(primary-on-subtle);
+            background-color: k-color(primary-subtle-active);
+            border: k-color(primary-subtle-active);
+        }
+        50% {
+            color: color-mix(in srgb, k-color(primary-on-subtle) $kendo-fab-generating-opacity, k-color(surface-alt));
+            background-color: color-mix(in srgb, k-color(primary-subtle-active) $kendo-fab-generating-opacity, k-color(surface-alt));
+            border: color-mix(in srgb, k-color(primary-subtle-active) $kendo-fab-generating-opacity, k-color(surface-alt));
+        }
+        100% {
+            color: k-color(primary-on-subtle);
+            background-color: k-color(primary-subtle-active);
+            border: k-color(primary-subtle-active);
+        }
+    }
+
     // Disabled state
     @each $name, $color in $kendo-fab-theme-colors {
         .k-disabled.k-fab-solid-#{$name},

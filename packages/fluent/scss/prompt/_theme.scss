@@ -27,6 +27,7 @@
         );
     }
 
+    // Remove when k-suggestion is adopted
     .k-prompt-suggestion {
         @include fill(
             var( --kendo-prompt-suggestion-text, #{$kendo-prompt-suggestion-text} ),
