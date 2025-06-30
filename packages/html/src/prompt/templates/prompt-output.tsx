@@ -1,7 +1,7 @@
 import { ActionButtons } from "../../action-buttons";
 import { IconTextButton, IconButton } from "../../button";
 import { Toolbar } from "../../toolbar";
-import { Prompt, PromptContent, PromptHeader, PromptView } from "..";
+import { Prompt, PromptContent, PromptHeader, PromptStopFloatingActionButton, PromptView } from "..";
 import { Card, CardHeader, CardBody } from "../../card";
 
 export const PromptOutput = (props) => (
@@ -16,6 +16,7 @@ export const PromptOutput = (props) => (
             </Toolbar>
         </PromptHeader>
         <PromptContent>
+            <PromptStopFloatingActionButton />
             <PromptView>
                 <div className="k-card-list">
                     <Card>
