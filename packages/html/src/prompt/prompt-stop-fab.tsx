@@ -34,10 +34,11 @@ export const PromptStopFloatingActionButton = (
                 PROMPT_STOP_FAB_CLASS,
                 {
                     ['k-generating']: generating,
-                }
+                },
+                'k-z-10'
             )}
             // TODO add styles for z-index
-            style={{ bottom: "16px", right: "16px", zIndex: 1 }}
+            style={{ bottom: "16px", right: "16px"}}
             position="bottom-end"
             icon={generating ? 'stop-sm' : icon}
             active={generating}
