@@ -185,3 +185,7 @@ $kendo-fab-item-active-bg: k-color(base-active) !default;
 /// The border color of the active FAB item.
 /// @group floating-action-button
 $kendo-fab-item-active-border: k-color(border) !default;
+
+/// Тhe opacity of the generating FAB.
+/// @group floating-action-button
+$kendo-fab-generating-opacity: 60% !default;

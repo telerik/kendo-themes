@@ -43,6 +43,32 @@
             @include box-shadow($kendo-fab-active-shadow);
             border-color: k-color(#{$name}-subtle-active);
             background-color: k-color(#{$name}-subtle-active);
+
+            // Generating
+            &.k-generating {
+                animation: k-fab-generating-#{$name} 1.5s ease-in-out 0.5s infinite;
+            }
+
+            @keyframes k-fab-generating-#{$name} {
+                0% {
+                    color: k-color(#{$name}-on-subtle);
+                    background-color: k-color(#{$name}-subtle-active);
+                    border: k-color(#{$name}-subtle-active);
+                    outline-color:k-color(#{$name}-subtle-active);
+                }
+                50% {
+                    color: color-mix(in srgb, k-color(#{$name}-on-subtle) $kendo-fab-generating-opacity, k-color(surface-alt));
+                    background-color: color-mix(in srgb, k-color(#{$name}-subtle-active) $kendo-fab-generating-opacity, k-color(surface-alt));
+                    border: color-mix(in srgb, k-color(#{$name}-subtle-active) $kendo-fab-generating-opacity, k-color(surface-alt));
+                    outline-color: color-mix(in srgb, k-color(#{$name}-subtle-active) $kendo-fab-generating-opacity, k-color(surface-alt));
+                }
+                100% {
+                    color: k-color(#{$name}-on-subtle);
+                    background-color: k-color(#{$name}-subtle-active);
+                    border: k-color(#{$name}-subtle-active);
+                    outline-color: k-color(#{$name}-subtle-active);
+                }
+            }
         }
     }
 
