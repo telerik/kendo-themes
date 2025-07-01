@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/suggestion/_layout.scss" as *;
+
+
+@mixin kendo-suggestion--layout() {
+    @include kendo-suggestion--layout-base();
+}

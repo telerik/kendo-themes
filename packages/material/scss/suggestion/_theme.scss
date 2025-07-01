@@ -1,0 +1,16 @@
+@use "./_variables.scss" as *;
+@use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/suggestion/_theme.scss" as *;
+
+@mixin kendo-suggestion--theme() {
+    @include kendo-suggestion--theme-base();
+
+    .k-suggestion {
+        &:focus,
+        &.k-focus {
+            outline-offset: -2px;
+            outline: 1px solid $kendo-suggestion-border;
+            box-shadow: inset 0 0 0 2px k-color(surface-alt);
+        }
+    }
+}

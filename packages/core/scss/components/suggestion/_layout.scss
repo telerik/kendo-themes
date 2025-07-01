@@ -1,0 +1,53 @@
+@use "./_variables.scss" as *;
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
+
+@use "../../spacing/index.import.scss" as *;
+
+@mixin kendo-suggestion--layout-base() {
+    .k-suggestion-scrollwrap {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        gap: $kendo-suggestion-spacing;
+
+        .k-suggestion-group {
+            padding-block: $kendo-suggestion-padding-y;
+            flex: 1 1 auto;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+
+    .k-suggestion-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $kendo-suggestion-spacing;
+
+    }
+    .k-suggestion {
+        @include border-radius( $kendo-suggestion-border-radius );
+        padding-block: $kendo-suggestion-padding-y;
+        padding-inline: $kendo-suggestion-padding-x;
+        box-sizing: border-box;
+        border-width: $kendo-suggestion-border-width;
+        border-style: $kendo-suggestion-border-style;
+        line-height: $kendo-suggestion-line-height;
+        flex: 0 0 auto;
+        transition-property: color, background-color, border-color;
+        transition-duration: .2s;
+        transition-timing-function: ease-in-out;
+        cursor: pointer;
+        outline: none;
+    }
+
+
+}
+
+@mixin kendo-suggestion--layout() {
+    @include kendo-suggestion--layout-base();
+}

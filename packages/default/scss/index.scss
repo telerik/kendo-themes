@@ -15,6 +15,7 @@
 @forward "./stacklayout/_index.scss";
 @forward "./virtual-scroller/_index.scss";
 @forward "./no-data/_index.scss";
+@forward "./suggestion/_index.scss";
 @forward "./avatar/_index.scss";
 @forward "./badge/_index.scss";
 @forward "./color-preview/_index.scss";
@@ -143,6 +144,7 @@
 @use "./table/_index.scss" as *;
 @use "./virtual-scroller/_index.scss" as *;
 @use "./no-data/_index.scss" as *;
+@use "./suggestion/_index.scss" as *;
 @use "./column-menu/_index.scss" as *;
 
 
@@ -317,6 +319,7 @@
     @include kendo-table--styles();
     @include kendo-virtual-scroller--styles();
     @include kendo-no-data--styles();
+    @include kendo-suggestion--styles();
     @include kendo-column-menu--styles();
 
 
