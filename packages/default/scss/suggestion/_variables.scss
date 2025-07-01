@@ -1,0 +1,93 @@
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
+/// The vertical padding of the Suggestion wrapper.
+/// @group suggestion
+$kendo-suggestion-padding-y: k-spacing(2) !default;
+/// The horizontal padding of the Suggestion wrapper.
+/// @group suggestion
+$kendo-suggestion-padding-x: k-spacing(3) !default;
+/// The horizontal padding of the Suggestion wrapper.
+/// @group suggestion
+$kendo-suggestion-spacing: k-spacing(2) !default;
+/// The border width of the Suggestion.
+/// @group suggestion
+$kendo-suggestion-border-width: 1px !default;
+/// The border style of the Suggestion.
+/// @group suggestion
+$kendo-suggestion-border-style: solid !default;
+
+/// The line height of the Suggestion.
+/// @group suggestion
+$kendo-suggestion-line-height: var( --kendo-line-height, normal ) !default;
+/// The border radius of the Suggestion.
+/// @group suggestion
+$kendo-suggestion-border-radius: k-border-radius(xxl) !default;
+
+/// The background color of the Suggestion.
+/// @group suggestion
+$kendo-suggestion-bg: k-color(base-subtle) !default;
+/// The text color of the Suggestion.
+/// @group suggestion
+$kendo-suggestion-text: k-color(base-on-subtle) !default;
+/// The border color of the Suggestion.
+/// @group suggestion
+$kendo-suggestion-border: k-color(base-emphasis) !default;
+
+/// The background color of the hovered Suggestion.
+/// @group suggestion
+$kendo-suggestion-hover-bg: k-color(base-subtle-hover) !default;
+/// The text color of the hovered Suggestion.
+/// @group suggestion
+$kendo-suggestion-hover-text: k-color(base-on-subtle) !default;
+/// The border color of the hovered Suggestion.
+/// @group suggestion
+$kendo-suggestion-hover-border: k-color(base-emphasis) !default;
+
+/// The background color of the active Suggestion.
+/// @group suggestion
+$kendo-suggestion-active-bg: k-color(base-subtle-active) !default;
+/// The text color of the active Suggestion.
+/// @group suggestion
+$kendo-suggestion-active-text: k-color(base-on-subtle) !default;
+/// The border color of the active Suggestion.
+/// @group suggestion
+$kendo-suggestion-active-border: k-color(base-emphasis) !default;
+
+/// The shadow blur of the focused Suggestion.
+/// @group suggestion
+$kendo-suggestion-focus-shadow-blur: 0 !default;
+/// The shadow spread of the focused Suggestion.
+/// @group suggestion
+$kendo-suggestion-focus-shadow-spread: 2px !default;
+/// The shadow color of the focused Suggestion.
+/// @group suggestion
+$kendo-suggestion-focus-shadow-color: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
+
+$kendo-suggestion-theme-colors: (
+    "primary": k-color(primary),
+    "secondary": k-color(secondary)
+) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/suggestion/_variables.scss" with (
+    $kendo-suggestion-padding-y: $kendo-suggestion-padding-y,
+    $kendo-suggestion-padding-x: $kendo-suggestion-padding-x,
+    $kendo-suggestion-spacing: $kendo-suggestion-spacing,
+    $kendo-suggestion-border-width: $kendo-suggestion-border-width,
+    $kendo-suggestion-border-style: $kendo-suggestion-border-style,
+    $kendo-suggestion-line-height: $kendo-suggestion-line-height,
+    $kendo-suggestion-border-radius: $kendo-suggestion-border-radius,
+    $kendo-suggestion-bg: $kendo-suggestion-bg,
+    $kendo-suggestion-text: $kendo-suggestion-text,
+    $kendo-suggestion-border: $kendo-suggestion-border,
+    $kendo-suggestion-hover-bg: $kendo-suggestion-hover-bg,
+    $kendo-suggestion-hover-text: $kendo-suggestion-hover-text,
+    $kendo-suggestion-hover-border: $kendo-suggestion-hover-border,
+    $kendo-suggestion-active-bg: $kendo-suggestion-active-bg,
+    $kendo-suggestion-active-text: $kendo-suggestion-active-text,
+    $kendo-suggestion-active-border: $kendo-suggestion-active-border,
+    $kendo-suggestion-focus-shadow-blur: $kendo-suggestion-focus-shadow-blur,
+    $kendo-suggestion-focus-shadow-spread: $kendo-suggestion-focus-shadow-spread,
+    $kendo-suggestion-focus-shadow-color: $kendo-suggestion-focus-shadow-color,
+    $kendo-suggestion-theme-colors: $kendo-suggestion-theme-colors
+);
