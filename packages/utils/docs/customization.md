@@ -6838,7 +6838,7 @@ This is equivalent to `grid-row-start: 13; for the specific breakpoint`.
 
 
 
-### `.k-row-start-auto`
+### `.k-row-start-{xs|sm|md|lg|xl|xxl}-auto`
 
 This is equivalent to `grid-row-start: auto; for the specific breakpoint`.
 
