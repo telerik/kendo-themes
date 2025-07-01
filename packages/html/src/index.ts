@@ -11,6 +11,7 @@ export * from './input/index';
 export * from './popup/index';
 export * from './list/index';
 export * from './nodata/index';
+export * from './suggestion/index';
 
 // Indicators
 export * from './avatar/index';
