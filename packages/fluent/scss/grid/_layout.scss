@@ -1322,6 +1322,12 @@
     }
     // stylelint-enable declaration-no-important
 
+    // Grid assistant window
+    .k-grid-assistant-window .k-window-content {
+        padding: 0;
+        @include border-bottom-radius( inherit );
+    }
+
     // Column menu
     .k-column-menu-popup,
     .k-grid-columnmenu-popup {
