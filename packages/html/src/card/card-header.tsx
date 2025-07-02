@@ -6,14 +6,14 @@ import { CardTitle } from './card-title';
 export const CARDHEADER_CLASSNAME = `k-card-header`;
 
 export type KendoCardHeaderProps = {
-    title?: string;
-    subtitle?: string;
+    title?: string | React.JSX.Element;
+    subtitle?: string | React.JSX.Element;
     details?: boolean;
 };
 
 export const CardHeader = (
     props: KendoCardHeaderProps &
-        React.HTMLAttributes<HTMLDivElement>
+        Omit<React.HTMLAttributes<HTMLDivElement>, 'title'>
 ) => {
     const {
         title,
