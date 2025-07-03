@@ -11,4 +11,4 @@ const expected = [];
 
 const unexpected = [];
 
-testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);
+testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected], false);
