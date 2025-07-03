@@ -119,6 +119,10 @@ $kendo-button-link-focus-offset: 0 !default;
 /// @group button
 $kendo-button-link-focus-outline-width: 1px !default;
 
+/// The opacity of the pulsing animation for the generating Button.
+/// @group button
+$kendo-button-pulsing-opacity: .6 !default;
+
 // The theme variations for the Button.
 
 $kendo-button-brand-colors: (
