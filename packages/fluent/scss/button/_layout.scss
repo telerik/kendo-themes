@@ -302,6 +302,23 @@
         }
     }
 
+    // Button generating state
+    .k-button.k-generating {
+        animation: k-button-pulsing 1.5s ease-in-out 0.5s infinite;
+    }
+
+    @keyframes k-button-pulsing {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: $kendo-button-pulsing-opacity;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
 
     // Button group
     .k-button-group {

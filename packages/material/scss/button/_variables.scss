@@ -212,6 +212,10 @@ $kendo-button-disabled-gradient: null !default;
 /// @group button
 $kendo-button-disabled-shadow: null !default;
 
+/// The opacity of the pulsing animation for the generating Button.
+/// @group button
+$kendo-button-pulsing-opacity: .6 !default;
+
 // Solid Button
 $kendo-solid-button-gradient: none !default;
 $kendo-solid-button-shade-function: "k-try-shade" !default;
@@ -322,6 +326,7 @@ $kendo-button-transition: box-shadow 280ms cubic-bezier( .4, 0, .2, 1 ) !default
     $kendo-button-disabled-border: $kendo-button-disabled-border,
     $kendo-button-disabled-gradient: $kendo-button-disabled-gradient,
     $kendo-button-disabled-shadow: $kendo-button-disabled-shadow,
+    $kendo-button-pulsing-opacity: $kendo-button-pulsing-opacity,
     $kendo-solid-button-gradient: $kendo-solid-button-gradient,
     $kendo-solid-button-shade-function: $kendo-solid-button-shade-function,
     $kendo-solid-button-shade-text-amount: $kendo-solid-button-shade-text-amount,
