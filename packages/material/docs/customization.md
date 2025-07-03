@@ -2282,6 +2282,16 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
+    <td>$kendo-button-pulsing-opacity</td>
+    <td>Number</td>
+    <td><code>.6</code></td>
+    <td><code>0.6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the pulsing animation for the generating Button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-flat-button-hover-opacity</td>
     <td>Number</td>
     <td><code>.08</code></td>
@@ -23206,36 +23216,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Spacing map.</div></div>
-    </td>
-</tr>
-</tbody>
-</table>
-
-### SpeechToTextButton
-
-<table class="theme-variables">
-    <colgroup>
-    <col style="width: 200px; white-space:nowrap;" />
-    <col />
-    <col />
-    <col />
-</colgroup>
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Default value</th>
-        <th>Computed value</th>
-    </tr>
-</thead>
-<tbody><tr>
-    <td>$kendo-speech-to-text-button-listening-opacity</td>
-    <td>Number</td>
-    <td><code>0.6</code></td>
-    <td><code>0.6</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity applied to the listening SpeechToTextButton</div></div>
     </td>
 </tr>
 </tbody>
