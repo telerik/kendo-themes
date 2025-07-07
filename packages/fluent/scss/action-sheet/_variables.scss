@@ -1,225 +1,225 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
-/// Horizontal padding of the action sheet.
+/// The horizontal padding of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-padding-x: k-spacing(0) !default;
-/// Vertical padding of the action sheet.
+/// The vertical padding of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-padding-y: k-spacing(0) !default;
-/// Width of the action sheet.
+/// The width of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-width: 360px !default;
-/// Maximum width of the action sheet.
+/// The maximum width of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-max-width: 100% !default;
-/// Height of the action sheet.
+/// The height of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-height: 60vh !default;
-/// Maximum height of the action sheet.
+/// The maximum height of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-max-height: 60vh !default;
 
-/// Border width around the action sheet.
+/// The border width around the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-border-width: 0px !default;
-/// Border radius of the action sheet.
+/// The border radius of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-border-radius: 0px !default;
 
-/// Font size of the action sheet.
+/// The font size of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-font-size: var( --kendo-font-size, inherit ) !default;
-/// Font family of the action sheet.
+/// The font family of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-font-family: var( --kendo-font-family, inherit ) !default;
-/// Line height of the action sheet.
+/// The line height of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-line-height: var( --kendo-line-height, inherit ) !default;
 
-/// Background color of the action sheet.
+/// The background color of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-bg: k-color(surface-alt) !default;
-/// Text color of the action sheet.
+/// The text color of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-text: k-color(on-app-surface) !default;
-/// Border color of the action sheet.
+/// The border color of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
-/// Box shadow of the action sheet.
+/// The box shadow of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-shadow: var( --kendo-box-shadow-depth-7, none ) !default;
 
-/// Horizontal padding of the action sheet header.
+/// The horizontal padding of the ActionSheet header.
 /// @group action-sheet
 $kendo-actionsheet-header-padding-x: k-spacing(4) !default;
-/// Vertical padding of the action sheet header.
+/// The vertical padding of the ActionSheet header.
 /// @group action-sheet
 $kendo-actionsheet-header-padding-y: k-spacing(2) !default;
-/// Border width of the action sheet header.
+/// The border width of the ActionSheet header.
 /// @group action-sheet
 $kendo-actionsheet-header-border-width: 1px !default;
-/// Font size of the action sheet header.
+/// The font size of the ActionSheet header.
 /// @group action-sheet
 $kendo-actionsheet-header-font-size: inherit !default;
-/// Font family of the action sheet header.
+/// The font family of the ActionSheet header.
 /// @group action-sheet
 $kendo-actionsheet-header-font-family: inherit !default;
-/// Line height of the action sheet header.
+/// The line height of the ActionSheet header.
 /// @group action-sheet
 $kendo-actionsheet-header-line-height: inherit !default;
-/// Spacing between the action sheet header groups.
+/// The spacing between the ActionSheet header groups.
 /// @group action-sheet
 $kendo-actionsheet-header-gap: k-spacing(4) !default;
 
 
-/// Background color of the action sheet header.
+/// The background color of the ActionSheet header.
 /// @group action-sheet
 $kendo-actionsheet-header-bg: inherit !default;
-/// Text color of the action sheet header.
+/// The text color of the ActionSheet header.
 /// @group action-sheet
 $kendo-actionsheet-header-text: inherit !default;
-/// Border color of the action sheet header.
+/// The border color of the ActionSheet header.
 /// @group action-sheet
 $kendo-actionsheet-header-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
-/// Box shadow of the action sheet header.
+/// The box shadow of the ActionSheet header.
 /// @group action-sheet
 $kendo-actionsheet-header-shadow: none !default;
 
-/// Font size of the action sheet subtitle.
+/// The font size of the ActionSheet subtitle.
 /// @group action-sheet
 $kendo-actionsheet-subtitle-font-size: var( --kendo-font-size-sm, inherit ) !default;
-/// Line height of the action sheet subtitle.
+/// The line height of the ActionSheet subtitle.
 /// @group action-sheet
 $kendo-actionsheet-subtitle-line-height: var( --kendo-line-height-sm, inherit ) !default;
-/// Text color of the action sheet subtitle.
+/// The text color of the ActionSheet subtitle.
 /// @group action-sheet
 $kendo-actionsheet-subtitle-text: k-color(subtle) !default;
 
-/// Border width of the action sheet footer.
+/// The border width of the ActionSheet footer.
 /// @group action-sheet
 $kendo-actionsheet-footer-border-width: 1px !default;
 
-/// Background color of the action sheet footer.
+/// The background color of the ActionSheet footer.
 /// @group action-sheet
 $kendo-actionsheet-footer-bg: null !default;
-/// Text color of the action sheet footer.
+/// The text color of the ActionSheet footer.
 /// @group action-sheet
 $kendo-actionsheet-footer-text: null !default;
-/// Border color of the action sheet footer.
+/// The border color of the ActionSheet footer.
 /// @group action-sheet
 $kendo-actionsheet-footer-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
-/// Box shadow of the action sheet footer.
+/// The box shadow of the ActionSheet footer.
 /// @group action-sheet
 $kendo-actionsheet-footer-shadow: null !default;
 
-/// Minimum height of the action sheet item.
+/// The minimum height of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-min-height: 40px !default;
-/// Horiozontal padding of the action sheet item.
+/// The horizontal padding of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-padding-x: k-spacing(4) !default;
-/// Vertical padding of the action sheet item.
+/// The vertical padding of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-padding-y: k-spacing(2) !default;
-/// Border around the action sheet item.
+/// The border width around the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-border-width: 1px !default;
-/// Spacing between the icon and the text in the action sheet item.
+/// The spacing between the icon and the text in the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-spacing: k-spacing(2) !default;
 
-/// Color of the action sheet item icon.
+/// The color of the ActionSheet item icon.
 /// @group action-sheet
 $kendo-actionsheet-item-icon-color: k-color(primary) !default;
 
-/// Font weight of the action sheet item text.
+/// The font weight of the ActionSheet item text.
 /// @group action-sheet
 $kendo-actionsheet-item-title-font-weight: inherit !default;
-/// Transform of the action sheet item text.
+/// The transform of the ActionSheet item text.
 /// @group action-sheet
 $kendo-actionsheet-item-title-text-transform: none !default;
 
-/// Font size of the action sheet item description.
+/// The font size of the ActionSheet item description.
 /// @group action-sheet
 $kendo-actionsheet-item-description-font-size: var( --kendo-font-size-sm, inherit ) !default;
-/// Color of the action sheet item description.
+/// The color of the ActionSheet item description.
 /// @group action-sheet
 $kendo-actionsheet-item-description-text: k-color(subtle) !default;
 
-/// Hover background color of the action sheet item.
+/// The hover background color of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-hover-bg: k-color(base-hover) !default;
-/// Hover text color of the action sheet item.
+/// The hover text color of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-hover-text: k-color(on-base) !default;
-/// Hover border color of the action sheet item.
+/// The hover border color of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-hover-border: inherit !default;
 
-/// Focus background color of the action sheet item.
+/// The focus background color of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-focus-bg: inherit !default;
-/// Focus text color of the action sheet item.
+/// The focus text color of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-focus-text: inherit !default;
-/// Focus border color of the action sheet item.
+/// The focus border color of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-focus-border: inherit !default;
-/// Focus outline color of the action sheet item.
+/// The focus outline color of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-focus-outline: var( --kendo-outline-color, inherit ) !default;
-/// Focus outline width of the action sheet item.
+/// The focus outline width of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-focus-outline-width: 1px !default;
 
-/// Focus and hover background color of the action sheet item.
+/// The focus and hover background color of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-focus-hover-bg: $kendo-actionsheet-item-hover-bg !default;
-/// Focus and hover text color of the action sheet item.
+/// The focus and hover text color of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-focus-hover-text: $kendo-actionsheet-item-hover-text !default;
-/// Focus and hover border color of the action sheet item.
+/// The focus and hover border color of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-focus-hover-border: $kendo-actionsheet-item-hover-border !default;
 
-/// Disabled background color of the action sheet item.
+/// The disabled background color of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-disabled-bg: $kendo-actionsheet-bg !default;
-/// Disabled text color of the action sheet item.
+/// The disabled text color of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
-/// Disabled border color of the action sheet item.
+/// The disabled border color of the ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-disabled-border: transparent !default;
 
 
 // Adaptive Actionsheet
 
-/// Font size of the adaptive action sheet.
+/// The font size of the adaptive ActionSheet.
 /// @group action-sheet
 $kendo-adaptive-actionsheet-font-size: $kendo-font-size-lg !default;
-/// The line height of the adaptive action sheet.
+/// The line height of the adaptive ActionSheet.
 /// @group action-sheet
 $kendo-adaptive-actionsheet-line-height: var( --kendo-line-height, inherit ) !default;
 
-/// Vertical padding of the adaptive action sheet titlebar.
+/// The vertical padding of the adaptive ActionSheet titlebar.
 /// @group action-sheet
 $kendo-adaptive-actionsheet-header-padding-y: k-spacing(4) !default;
-/// Horizontal padding of the adaptive action sheet titlebar.
+/// The horizontal padding of the adaptive ActionSheet titlebar.
 /// @group action-sheet
 $kendo-adaptive-actionsheet-header-padding-x: $kendo-adaptive-actionsheet-header-padding-y !default;
 
-/// Vertical padding of the adaptive action sheet content.
+/// The vertical padding of the adaptive ActionSheet content.
 /// @group action-sheet
 $kendo-adaptive-actionsheet-content-padding-y: k-spacing(2) !default;
-/// Horizontal padding of the adaptive action sheet content.
+/// The horizontal padding of the adaptive ActionSheet content.
 /// @group action-sheet
 $kendo-adaptive-actionsheet-content-padding-x: k-spacing(4) !default;
 
-/// Vertical padding of the adaptive action sheet footer.
+/// The vertical padding of the adaptive ActionSheet footer.
 /// @group action-sheet
 $kendo-adaptive-actionsheet-footer-padding-y: k-spacing(2) !default;
-/// Horizontal padding of the adaptive action sheet footer.
+/// The horizontal padding of the adaptive ActionSheet footer.
 /// @group action-sheet
 $kendo-adaptive-actionsheet-footer-padding-x: k-spacing(4) !default;
