@@ -11091,6 +11091,16 @@ The following table lists the available variables for customizing the Material t
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the active FAB item.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-fab-generating-opacity</td>
+    <td>Number</td>
+    <td><code>60%</code></td>
+    <td><code>60%</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Тhe opacity of the generating FAB.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
