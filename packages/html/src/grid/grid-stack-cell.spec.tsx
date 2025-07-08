@@ -1,5 +1,6 @@
 import { classNames, States, stateClassNames } from "../misc";
 
+import { KendoComponent } from '../_types/component';
 const GRIDSTACKCELL_CLASSNAME = `k-grid-stack-cell`;
 
 const states = [
@@ -17,7 +18,7 @@ export type KendoGridStackCellProps = {
 
 export type KendoGridStackCellState = { [K in (typeof states)[number]]?: boolean };
 
-export const GridStackCell = (
+export const GridStackCell: KendoComponent<KendoGridStackCellProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGridStackCellProps &
         KendoGridStackCellState &
         React.HTMLAttributes<HTMLDivElement>

@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, Size } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const GRID_CLASSNAME = 'k-grid';
 
 const states = [];
@@ -27,7 +28,7 @@ const defaultOptions = {
     pagerPosition: 'bottom'
 };
 
-export const Grid = (
+export const Grid: KendoComponent<KendoGridProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGridProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

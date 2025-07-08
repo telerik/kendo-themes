@@ -13,6 +13,7 @@ import { Popup } from '../popup';
 import { CalendarNormal } from '../calendar';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 
+import { KendoComponent } from '../_types/component';
 export const DATEPICKER_CLASSNAME = `k-datepicker`;
 
 const states = [
@@ -59,7 +60,7 @@ export type KendoDatePickerProps = KendoDatePickerOptions & {
 
 export type KendoDatePickerState = { [K in (typeof states)[number]]?: boolean };
 
-export const DatePicker = (
+export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDatePickerProps &
         KendoDatePickerState &
         React.HTMLAttributes<HTMLSpanElement>

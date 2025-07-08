@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const SEPARATOR_CLASSNAME = `k-separator`;
 
 export type KendoMenuSeparatorProps = {
@@ -10,7 +11,7 @@ const defaultOptions = {
     orientation: 'horizontal'
 };
 
-export const MenuSeparator = (
+export const MenuSeparator: KendoComponent<KendoMenuSeparatorProps & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoMenuSeparatorProps &
         React.HTMLAttributes<HTMLLIElement>
 ) => {

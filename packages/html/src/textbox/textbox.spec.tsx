@@ -1,4 +1,5 @@
 import { classNames, States, Size, Roundness, FillMode } from '../misc';
+import { KendoComponent } from '../_types/component';
 import {
     Input,
     InputPrefix,
@@ -58,7 +59,7 @@ const defaultOptions = {
     separators: true
 };
 
-export const Textbox = (
+export const Textbox: KendoComponent<KendoTextboxProps & KendoTextboxState & Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>> = (
     props: KendoTextboxProps &
         KendoTextboxState &
         Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>

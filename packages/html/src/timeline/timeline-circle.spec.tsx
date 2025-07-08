@@ -1,8 +1,9 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const TIMELINECIRCLE_CLASSNAME = `k-timeline-circle`;
 
-export const TimelineCircle = (
+export const TimelineCircle: KendoComponent<React.HTMLAttributes<HTMLSpanElement>> = (
     props: React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
@@ -20,5 +21,7 @@ export const TimelineCircle = (
         </span>
     );
 };
+
+TimelineCircle.className = TIMELINECIRCLE_CLASSNAME;
 
 export default TimelineCircle;

@@ -2,6 +2,7 @@ import { Button } from '../button';
 import { List } from '../list';
 import { classNames, optionClassNames, stateClassNames, States, Size } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const LISTBOX_CLASSNAME = `k-listbox`;
 
 const states = [
@@ -30,7 +31,7 @@ const defaultOptions = {
     actionsPosition: 'left'
 } as const;
 
-export const ListBox = (
+export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoListBoxProps &
         KendoListBoxState &
         React.HTMLAttributes<HTMLDivElement>

@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 import SchedulerView from './scheduler-view.spec';
 
+import { KendoComponent } from '../_types/component';
 const SCHEDULER_CLASSNAME = 'k-scheduler';
 
 const states = [];
@@ -16,7 +17,7 @@ export type KendoSchedulerProps = {
     layout?: "table" | "flex";
 };
 
-export const Scheduler = (
+export const Scheduler: KendoComponent<KendoSchedulerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSchedulerProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {

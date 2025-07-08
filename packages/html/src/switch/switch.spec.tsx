@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, stateClassNames, States, Size, Roundness } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const SWITCH_CLASSNAME = `k-switch`;
 
 const states = [
@@ -34,7 +35,7 @@ const defaultOptions = {
     thumbRounded: Roundness.full
 };
 
-export const Switch = (
+export const Switch: KendoComponent<KendoSwitchProps & KendoSwitchState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoSwitchProps &
         KendoSwitchState &
         React.HTMLAttributes<HTMLSpanElement>

@@ -1,5 +1,6 @@
 import { classNames, stateClassNames, States } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const FLOATINGLABEL_CLASSNAME = `k-floating-label-container`;
 
 const states = [
@@ -22,7 +23,7 @@ export type KendoFloatingLabelProps = {
     optional?: boolean;
 };
 
-export const FloatingLabel = (
+export const FloatingLabel: KendoComponent<FloatingLabelState & KendoFloatingLabelProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: FloatingLabelState & KendoFloatingLabelProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {

@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const SKELETON_CLASSNAME = `k-skeleton`;
 
 const states = [];
@@ -17,7 +18,7 @@ const defaultOptions = {
     animation: 'pulse'
 };
 
-export const Skeleton = (
+export const Skeleton: KendoComponent<KendoSkeletonProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoSkeletonProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {

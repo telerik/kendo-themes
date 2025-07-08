@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { Window, KendoWindowProps } from '../window';
 
 
+import { KendoComponent } from '../_types/component';
 export const CHARTWIZARD_CLASSNAME = `k-chart-wizard`;
 
 const states = [];
@@ -10,7 +11,7 @@ const options = {};
 
 const defaultOptions = {};
 
-export const ChartWizard = (
+export const ChartWizard: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoWindowProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

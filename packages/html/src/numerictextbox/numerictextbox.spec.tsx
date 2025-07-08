@@ -12,6 +12,7 @@ import {
 import { SpinButton } from '../spinbutton';
 
 
+import { KendoComponent } from '../_types/component';
 export const NUMERICTEXTBOX_CLASSNAME = `k-numerictextbox`;
 
 const states = [
@@ -58,7 +59,7 @@ const defaultOptions = {
     separators: true
 };
 
-export const NumericTextbox = (
+export const NumericTextbox: KendoComponent<KendoNumericTextboxProps & KendoNumericTextboxState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoNumericTextboxProps &
         KendoNumericTextboxState &
         React.HTMLAttributes<HTMLSpanElement>

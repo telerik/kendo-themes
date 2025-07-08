@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const GANTT_CLASSNAME = 'k-gantt';
 
 const states = [];
@@ -13,7 +14,7 @@ export type KendoGanttProps = {
 
 const defaultOptions = {};
 
-export const Gantt = (
+export const Gantt: KendoComponent<KendoGanttProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGanttProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

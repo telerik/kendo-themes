@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const GANTTTASKWDOT_CLASSNAME = 'k-task-dot';
 
 const states = [];
@@ -14,7 +15,7 @@ const defaultOptions = {
     position: "start"
 };
 
-export const GanttTaskDot = (
+export const GanttTaskDot: KendoComponent<KendoGanttTaskDotProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGanttTaskDotProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

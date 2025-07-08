@@ -2,6 +2,7 @@ import { classNames, optionClassNames, Size } from '../misc';
 import { CalendarNavigation } from '.';
 import { CalendarInfiniteView, KendoCalendarInfiniteViewProps } from './calendar-infinite-view.spec';
 
+import { KendoComponent } from '../_types/component';
 const CALENDARINFINITE_CLASSNAME = 'k-calendar-infinite';
 
 const options = {
@@ -51,7 +52,7 @@ const defaultOptions = {
     navigationMarkerConfig: defaultMarkerConfig
 } as const;
 
-export const CalendarInfinite = (
+export const CalendarInfinite: KendoComponent<KendoCalendarInfiniteProps & KendoCalendarInfiniteOptions & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoCalendarInfiniteProps & KendoCalendarInfiniteOptions &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import Icon from '../icon/icon.spec';
 
 
+import { KendoComponent } from '../_types/component';
 const className = 'k-task';
 
 const states = [];
@@ -20,7 +21,7 @@ export type KendoSchedulerTaskProps = {
     closable?: boolean;
 };
 
-export const SchedulerTask = (
+export const SchedulerTask: KendoComponent<KendoSchedulerTaskProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSchedulerTaskProps
         & React.HTMLAttributes<HTMLDivElement>
 ) => {

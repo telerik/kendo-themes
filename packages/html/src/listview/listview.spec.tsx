@@ -1,6 +1,7 @@
 import { PagerNormal } from '../pager';
 import { classNames, stateClassNames, States } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const LISTVIEW_CLASSNAME = `k-listview`;
 
 const states = [
@@ -32,7 +33,7 @@ const defaultOptions = {
     pagerPosition: 'bottom'
 };
 
-export const ListView = (
+export const ListView: KendoComponent<KendoListViewProps & KendoListViewState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoListViewProps &
         KendoListViewState &
         React.HTMLAttributes<HTMLDivElement>

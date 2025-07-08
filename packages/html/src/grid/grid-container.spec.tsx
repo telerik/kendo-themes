@@ -1,8 +1,9 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const className = `k-grid-container`;
 
-export const GridContainer = (
+export const GridContainer: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => (
     <div
@@ -15,3 +16,4 @@ export const GridContainer = (
     </div>
 );
 
+GridContainer.className = className;

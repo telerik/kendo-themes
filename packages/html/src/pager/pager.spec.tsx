@@ -3,6 +3,7 @@ import { DropdownList } from '../dropdownlist';
 import { NumericTextbox } from '../numerictextbox';
 import { classNames, optionClassNames, stateClassNames, States, Size } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const PAGER_CLASSNAME = `k-pager`;
 
 const states = [
@@ -52,7 +53,7 @@ const defaultOptions = {
     currentPage: 1,
 } as const;
 
-export const Pager = (
+export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPagerProps &
         KendoPagerState &
         React.HTMLAttributes<HTMLDivElement>

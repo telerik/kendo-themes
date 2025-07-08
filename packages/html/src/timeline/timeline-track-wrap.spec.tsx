@@ -2,9 +2,10 @@ import { classNames } from '../misc';
 import { Button } from '../button';
 import { TimelineTrack } from '../timeline';
 
+import { KendoComponent } from '../_types/component';
 export const TIMELINETRACKWRAP_CLASSNAME = `k-timeline-track-wrap`;
 
-export const TimelineTrackWrap = (
+export const TimelineTrackWrap: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
@@ -27,5 +28,7 @@ export const TimelineTrackWrap = (
         </div>
     );
 };
+
+TimelineTrackWrap.className = TIMELINETRACKWRAP_CLASSNAME;
 
 export default TimelineTrackWrap;

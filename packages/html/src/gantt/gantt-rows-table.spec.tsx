@@ -1,9 +1,10 @@
 import { classNames } from '../misc';
 import { Table, KendoTableOptions } from '../table';
 
+import { KendoComponent } from '../_types/component';
 export const GANTTROWSTABLE_CLASSNAME = `k-gantt-rows`;
 
-export const GanttRowsTable = (
+export const GanttRowsTable: KendoComponent<KendoTableOptions & React.HTMLAttributes<HTMLTableElement>> = (
     props: KendoTableOptions &
         React.HTMLAttributes<HTMLTableElement>
 ) => (
@@ -18,3 +19,5 @@ export const GanttRowsTable = (
         {props.children}
     </Table>
 );
+
+GanttRowsTable.className = GANTTROWSTABLE_CLASSNAME;
