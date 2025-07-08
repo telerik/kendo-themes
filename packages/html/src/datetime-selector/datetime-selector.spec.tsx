@@ -5,6 +5,7 @@ import { CalendarNormal } from '../calendar';
 import { TimeSelector, TimeSelectorHeader } from '../time-selector';
 import { classNames, optionClassNames, Size } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const DATETIMESELECTOR_CLASSNAME = `k-datetime-wrap`;
 
 const states = [];
@@ -29,7 +30,7 @@ const defaultOptions = {
     actionButtons: true
 } as const;
 
-export const DateTimeSelector = (
+export const DateTimeSelector: KendoComponent<KendoDateTimeSelectorProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDateTimeSelectorProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

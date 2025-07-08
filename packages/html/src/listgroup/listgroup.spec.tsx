@@ -1,6 +1,7 @@
 import ListGroupItem from './listgroup-item.spec';
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const LISTGROUP_CLASSNAME = `k-listgroup`;
 
 const states = [];
@@ -16,7 +17,7 @@ const defaultOptions = {
     dir: 'ltr'
 };
 
-export const ListGroup = (
+export const ListGroup: KendoComponent<KendoListGroupOptions & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoListGroupOptions &
         React.HTMLAttributes<HTMLUListElement>
 ) => {

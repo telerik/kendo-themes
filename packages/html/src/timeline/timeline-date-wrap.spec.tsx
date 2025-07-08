@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const TIMELINEDATEWRAP_CLASSNAME = `k-timeline-date-wrap`;
 
 const states = [];
@@ -14,7 +15,7 @@ const defaultOptions = {
     date: "May 25, 2008",
 };
 
-export const TimelineDateWrap = (
+export const TimelineDateWrap: KendoComponent<KendoDateWrapProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDateWrapProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

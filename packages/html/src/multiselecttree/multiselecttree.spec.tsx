@@ -13,6 +13,7 @@ import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 import { TreeviewGroup, TreeviewItem, Treeview } from '../treeview';
 
+import { KendoComponent } from '../_types/component';
 export const MULTISELECTTREE_CLASSNAME = `k-multiselecttree`;
 
 const states = [
@@ -63,7 +64,7 @@ const defaultOptions = {
     fillMode: Input.defaultOptions.fillMode
 };
 
-export const MultiSelectTree = (
+export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMultiSelectTreeState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoMultiSelectTreeProps &
         KendoMultiSelectTreeState &
         React.HTMLAttributes<HTMLSpanElement>

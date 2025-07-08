@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, Size } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const GROUPMENU_CLASSNAME = `k-group-menu`;
 
 const states = [];
@@ -16,7 +17,7 @@ const defaultOptions = {
     size: Size.medium
 };
 
-export const GroupMenu = (
+export const GroupMenu: KendoComponent<KendoGroupMenuOptions & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGroupMenuOptions &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

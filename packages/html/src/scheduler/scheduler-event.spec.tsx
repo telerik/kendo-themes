@@ -1,6 +1,7 @@
 import { classNames, States, stateClassNames } from '../misc';
 import { Icon } from '../icon';
 
+import { KendoComponent } from '../_types/component';
 const className = 'k-event';
 
 const states = [
@@ -29,7 +30,7 @@ export type KendoSchedulerEventProps = {
     eventSuffix?: React.JSX.Element | null;
 };
 
-export const SchedulerEvent = (
+export const SchedulerEvent: KendoComponent<KendoSchedulerEventProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSchedulerEventProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

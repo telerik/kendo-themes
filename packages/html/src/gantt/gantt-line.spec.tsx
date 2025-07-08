@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const GANTTLINE_CLASSNAME = 'k-gantt-line';
 
 const states = [];
@@ -14,7 +15,7 @@ const defaultOptions = {
     orientation: "horizontal"
 };
 
-export const GanttLine = (
+export const GanttLine: KendoComponent<KendoGanttLineProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGanttLineProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

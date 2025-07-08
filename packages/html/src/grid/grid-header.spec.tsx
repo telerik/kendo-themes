@@ -1,12 +1,13 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const className = `k-grid-header`;
 
 export type KendoGridHeaderProps = {
     draggable?: boolean;
 };
 
-export const GridHeader = (
+export const GridHeader: KendoComponent<KendoGridHeaderProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGridHeaderProps &
     React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -31,3 +32,5 @@ export const GridHeader = (
         </div>
     );
 };
+
+GridHeader.className = className;

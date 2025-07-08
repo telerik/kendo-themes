@@ -3,6 +3,7 @@ import { Textbox } from '../textbox';
 import { SkeletonRectangle } from '../skeleton';
 import { classNames, stateClassNames, States } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const CAPTCHA_CLASSNAME = `k-captcha`;
 
 const states = [
@@ -25,7 +26,7 @@ export type KendoCaptchaProps = {
 
 export type KendoCaptchaState = { [K in (typeof states)[number]]?: boolean };
 
-export const Captcha = (
+export const Captcha: KendoComponent<KendoCaptchaProps & KendoCaptchaState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoCaptchaProps &
         KendoCaptchaState &
         React.HTMLAttributes<HTMLDivElement>

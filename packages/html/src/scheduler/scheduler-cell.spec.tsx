@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const className = 'k-scheduler-cell';
 
 const states = [];
@@ -16,7 +17,7 @@ export type KendoSchedulerCellProps = {
     rowspan?: number;
 }
 
-export const SchedulerCell = (
+export const SchedulerCell: KendoComponent<KendoSchedulerCellProps & ( | ( React.AllHTMLAttributes<HTMLDivElement> & { as: 'div' } ) | ( React.HTMLAttributes<HTMLTableCellElement> & { as: 'th' |'td' } ) )> = (
     props: KendoSchedulerCellProps & (
     | ( React.AllHTMLAttributes<HTMLDivElement> & { as: 'div' } )
     | ( React.HTMLAttributes<HTMLTableCellElement> & { as: 'th' |'td' } )

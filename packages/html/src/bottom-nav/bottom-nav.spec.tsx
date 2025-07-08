@@ -1,5 +1,6 @@
 import { classNames, stateClassNames, optionClassNames, FillMode, ThemeColor, States } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const BOTTOM_NAV_CLASSNAME = 'k-bottom-nav';
 
 const states = [
@@ -43,7 +44,7 @@ const defaultOptions = {
     border: false
 };
 
-export const BottomNav = (
+export const BottomNav: KendoComponent<KendoBottomNavProps & KendoBottomNavState & React.HTMLAttributes<HTMLElement>> = (
     props: KendoBottomNavProps &
         KendoBottomNavState &
         React.HTMLAttributes<HTMLElement>

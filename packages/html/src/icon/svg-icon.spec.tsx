@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, Size, ThemeColor } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const SVGICON_CLASSNAME = `k-icon k-svg-icon`;
 
 const states = [];
@@ -42,7 +43,7 @@ const defaultOptions = {
     viewBox: '0 0 24 24'
 };
 
-export const SvgIcon = (
+export const SvgIcon: KendoComponent<SvgIconProps & React.HTMLAttributes<HTMLOrSVGElement>> = (
     props: SvgIconProps & React.HTMLAttributes<HTMLOrSVGElement>
 ) => {
     const {

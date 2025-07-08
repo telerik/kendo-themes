@@ -1,6 +1,7 @@
 import { CalendarInfiniteTable, CalendarTableHead, CalendarHeader } from '.';
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const CALENDARINFINITEVIEW_CLASSNAME = `k-calendar-view`;
 
 export type KendoCalendarInfiniteViewProps = {
@@ -22,7 +23,7 @@ const defaultOptions = {
 };
 
 
-export const CalendarInfiniteView = (
+export const CalendarInfiniteView: KendoComponent<KendoCalendarInfiniteViewProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoCalendarInfiniteViewProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 import { Button } from '../button';
 
+import { KendoComponent } from '../_types/component';
 export const SUGGESTIONGROUP_CLASSNAME = `k-suggestion-group`;
 
 const states = [];
@@ -17,7 +18,7 @@ const defaultOptions = {
     scrollable: true
 };
 
-export const SuggestionGroup = (
+export const SuggestionGroup: KendoComponent<KendoSuggestionGroupProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSuggestionGroupProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

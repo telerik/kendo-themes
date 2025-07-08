@@ -1,6 +1,7 @@
 import { TreeviewGroup, TreeviewItem } from '../treeview';
 import { classNames, optionClassNames, Size } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const TREEVIEW_CLASSNAME = `k-treeview`;
 
 const states = [];
@@ -24,7 +25,7 @@ const defaultOptions = {
     size: Size.medium
 };
 
-export const Treeview = (
+export const Treeview: KendoComponent<KendoTreeviewProps & KendoTreeviewState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTreeviewProps &
         KendoTreeviewState &
         React.HTMLAttributes<HTMLDivElement>

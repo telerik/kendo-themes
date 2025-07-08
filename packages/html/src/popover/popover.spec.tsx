@@ -1,6 +1,7 @@
 import { classNames, kendoThemeMaps } from '../misc';
 import { Popup } from '../popup';
 
+import { KendoComponent } from '../_types/component';
 export const POPOVER_CLASSNAME = `k-popover`;
 
 const states = [];
@@ -16,7 +17,7 @@ export type KendoPopoverProps = {
 };
 
 
-export const Popover = (
+export const Popover: KendoComponent<KendoPopoverProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPopoverProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

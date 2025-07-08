@@ -1,12 +1,13 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const TIMELINEFLAG_CLASSNAME = `k-timeline-flag`;
 
 export type KendoTimelineFlagOptions = {
     content?: string;
 };
 
-export const TimelineFlag = (
+export const TimelineFlag: KendoComponent<KendoTimelineFlagOptions & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoTimelineFlagOptions &
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
@@ -27,5 +28,7 @@ export const TimelineFlag = (
         </span>
     );
 };
+
+TimelineFlag.className = TIMELINEFLAG_CLASSNAME;
 
 export default TimelineFlag;

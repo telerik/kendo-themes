@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const STEPPER_CLASSNAME = 'k-stepper';
 
 const states = [];
@@ -13,7 +14,7 @@ export type KendoStepperProps = {
 
 const defaultOptions = {};
 
-export const Stepper = (
+export const Stepper: KendoComponent<KendoStepperProps & React.HTMLAttributes<HTMLElement>> = (
     props: KendoStepperProps & React.HTMLAttributes<HTMLElement>
 ) => {
     const {

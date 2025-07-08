@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const CHECKBOXGROUP_CLASSNAME = `k-checkbox-list`;
 
 const states = [];
@@ -14,7 +15,7 @@ const defaultOptions = {
     layout: 'vertical',
 };
 
-export const CheckboxGroup = (
+export const CheckboxGroup: KendoComponent<KendoCheckboxGroupProps & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoCheckboxGroupProps &
         React.HTMLAttributes<HTMLUListElement>
 ) => {

@@ -1,9 +1,10 @@
 import { classNames } from '../misc';
 import { Pager, KendoPagerProps } from '../pager';
 
+import { KendoComponent } from '../_types/component';
 const className = `k-grid-pager`;
 
-export const GridPager = (
+export const GridPager: KendoComponent<KendoPagerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPagerProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => (
@@ -17,3 +18,5 @@ export const GridPager = (
         {props.children}
     </Pager>
 );
+
+GridPager.className = className;

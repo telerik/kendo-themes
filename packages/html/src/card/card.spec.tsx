@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, stateClassNames, States, ThemeColor } from '../misc';
 import { CardCallout } from './card-callout';
 
+import { KendoComponent } from '../_types/component';
 export const CARD_CLASSNAME = `k-card`;
 
 const states = [
@@ -33,7 +34,7 @@ export type KendoCardProps = KendoCardOptions & {
 
 export type KendoCardState = { [K in (typeof states)[number]]?: boolean };
 
-export const Card = (
+export const Card: KendoComponent<KendoCardProps & KendoCardState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoCardProps &
         KendoCardState &
         React.HTMLAttributes<HTMLDivElement>

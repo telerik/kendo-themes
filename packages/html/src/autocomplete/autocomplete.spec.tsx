@@ -14,6 +14,7 @@ import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action
 import { List, ListCustomValue, ListItem } from '../list';
 import { Button } from '../button';
 
+import { KendoComponent } from '../_types/component';
 export const AUTOCOMPLETE_CLASSNAME = `k-autocomplete`;
 
 const states = [
@@ -63,7 +64,7 @@ const defaultOptions = {
     separators: true
 };
 
-export const Autocomplete = (
+export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocompleteState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoAutocompleteProps &
         KendoAutocompleteState &
         React.HTMLAttributes<HTMLSpanElement>

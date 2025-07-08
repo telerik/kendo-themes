@@ -15,6 +15,7 @@ import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 import { List, ListCustomValue, ListItem } from '../list';
 
+import { KendoComponent } from '../_types/component';
 export const MULTISELECT_CLASSNAME = `k-multiselect`;
 
 const states = [
@@ -67,7 +68,7 @@ const defaultOptions = {
     separators: true
 };
 
-export const MultiSelect = (
+export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelectState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoMultiSelectProps &
         KendoMultiSelectState &
         React.HTMLAttributes<HTMLSpanElement>

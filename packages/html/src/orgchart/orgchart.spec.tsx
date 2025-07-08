@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const ORGCHART_CLASSNAME = `k-orgchart`;
 
 const states = [];
@@ -16,7 +17,7 @@ const defaultOptions = {
     height: '300px',
 };
 
-export const Orgchart = (
+export const Orgchart: KendoComponent<KendoOrgchartProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoOrgchartProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

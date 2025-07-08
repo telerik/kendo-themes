@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const ANIMATION_CONTAINER_CLASSNAME = `k-animation-container`;
 
 const states = [];
@@ -19,7 +20,7 @@ const defaultOptions = {
     positionMode: "absolute"
 };
 
-export const AnimationContainer = (
+export const AnimationContainer: KendoComponent<KendoAnimationContainerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props:
         KendoAnimationContainerProps &
         React.HTMLAttributes<HTMLDivElement>

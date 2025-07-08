@@ -6,6 +6,7 @@ import { SplitButton } from '../split-button';
 import { Switch } from '../switch';
 import { Searchbox } from '../searchbox';
 
+import { KendoComponent } from '../_types/component';
 const FILEMANAGER_CLASSNAME = 'k-filemanager';
 
 const states = [
@@ -47,7 +48,7 @@ const defaultOptions = {
     toolbar: defaultToolbar,
 };
 
-export const FileManager = (
+export const FileManager: KendoComponent<KendoFileManagerProps & KendoFileManagerState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoFileManagerProps &
         KendoFileManagerState &
         React.HTMLAttributes<HTMLDivElement>

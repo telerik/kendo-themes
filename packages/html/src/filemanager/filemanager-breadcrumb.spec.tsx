@@ -1,6 +1,7 @@
 import { Breadcrumb, KendoBreadcrumbProps } from '../breadcrumb';
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const FILEMANAGERBREADCRUMB_CLASSNAME = `k-filemanager-breadcrumb`;
 
 const states = [];
@@ -9,7 +10,7 @@ const options = {};
 
 const defaultOptions = {};
 
-export const FileManagerBreadcrumb = (
+export const FileManagerBreadcrumb: KendoComponent<KendoBreadcrumbProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoBreadcrumbProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

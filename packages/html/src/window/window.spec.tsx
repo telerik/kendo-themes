@@ -3,6 +3,7 @@ import { Button } from '../button';
 import { MenuButton } from '../menu-button';
 import { classNames, optionClassNames, ThemeColor } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const WINDOW_CLASSNAME = `k-window`;
 
 const states = [];
@@ -29,7 +30,7 @@ export type KendoWindowProps = KendoWindowOptions & {
     actionButtonsAlign?: "start" | "end" | "center" | "stretched";
 };
 
-export const Window = (
+export const Window: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoWindowProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

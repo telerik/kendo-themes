@@ -2,6 +2,7 @@
 import { classNames, stateClassNames, States } from '../misc';
 import { Icon } from '../icon';
 
+import { KendoComponent } from '../_types/component';
 export const DRAWERITEM_CLASSNAME = `k-drawer-item`;
 
 const states = [
@@ -28,7 +29,7 @@ export type KendoDrawerItemProps = {
 
 export type KendoDrawerItemState = { [K in (typeof states)[number]]?: boolean };
 
-export const DrawerItem = (
+export const DrawerItem: KendoComponent<KendoDrawerItemProps & KendoDrawerItemState & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoDrawerItemProps &
         KendoDrawerItemState &
         React.HTMLAttributes<HTMLLIElement>

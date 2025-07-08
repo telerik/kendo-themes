@@ -4,6 +4,7 @@ import { ActionSheetFooter } from './actionsheet-footer';
 import { ActionSheetHeader } from './actionsheet-header';
 import { ActionSheetView } from './actionsheet-view';
 
+import { KendoComponent } from '../_types/component';
 export const ACTIONSHEET_CLASSNAME = `k-actionsheet`;
 
 const states = [];
@@ -28,7 +29,7 @@ const defaultOptions = {
     overlay: true
 };
 
-export const ActionSheet = (
+export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoActionSheetProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

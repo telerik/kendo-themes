@@ -12,6 +12,7 @@ import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 import { List, ListItem } from '../list';
 
+import { KendoComponent } from '../_types/component';
 export const DROPDOWNLIST_CLASSNAME = `k-dropdownlist`;
 
 const states = [
@@ -64,7 +65,7 @@ const defaultOptions = {
     fillMode: FillMode.solid,
 };
 
-export const DropdownList = (
+export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdownListState & Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>> = (
     props: KendoDropdownListProps &
         KendoDropdownListState &
         Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>
