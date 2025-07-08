@@ -1,6 +1,7 @@
 import { Icon } from '../icon';
 import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const BUTTON_CLASSNAME = `k-button`;
 
 const states = [
@@ -56,7 +57,7 @@ const defaultOptions = {
     arrowIconName: "caret-alt-down"
 };
 
-export const Button = (
+export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoButtonProps &
         KendoButtonState &
         React.HTMLAttributes<HTMLButtonElement>

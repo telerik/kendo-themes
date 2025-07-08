@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const FILTERMENU_CLASSNAME = `k-filter-menu`;
 
 const states = [];
@@ -8,7 +9,7 @@ const options = {};
 
 const defaultOptions = {};
 
-export const FilterMenu = (
+export const FilterMenu: KendoComponent<React.HTMLAttributes<HTMLFormElement>> = (
     props: React.HTMLAttributes<HTMLFormElement>
 ) => {
     const {

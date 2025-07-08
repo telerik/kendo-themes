@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { CardHeader, CardBody, CardSubtitle } from '../card';
 import { TimelineCard, TimelineCardTitle, TimelineCircle } from '../timeline';
 
+import { KendoComponent } from '../_types/component';
 export const TIMELINEVERTICALEVENT_CLASSNAME = `k-timeline-event`;
 
 const states = [];
@@ -27,7 +28,7 @@ const defaultOptions = {
     content: "Event content",
 };
 
-export const VerticalTimelineEvent = (
+export const VerticalTimelineEvent: KendoComponent<KendoVerticalTimelineEventProps & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoVerticalTimelineEventProps &
         React.HTMLAttributes<HTMLLIElement>
 ) => {

@@ -1,9 +1,10 @@
 import React from 'react';
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const className = 'k-scheduler-table';
 
-export const SchedulerTable = (
+export const SchedulerTable: KendoComponent<React.HTMLAttributes<HTMLTableElement>> = (
     props: React.HTMLAttributes<HTMLTableElement>
 ) => (
     <table
@@ -16,3 +17,5 @@ export const SchedulerTable = (
         {props.children}
     </table>
 );
+
+SchedulerTable.className = className;

@@ -3,6 +3,7 @@ import { classNames, FillMode, optionClassNames, Size, ThemeColor } from '../mis
 import TabStripItems from './tabstrip-items';
 import TabStripItemsWrapper from './tabstrip-items-wrapper';
 
+import { KendoComponent } from '../_types/component';
 export const TABSTRIP_CLASSNAME = `k-tabstrip`;
 
 const states = [];
@@ -32,7 +33,7 @@ const defaultOptions = {
     scrollButtons: "around"
 };
 
-export const TabStrip = (
+export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTabStripProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

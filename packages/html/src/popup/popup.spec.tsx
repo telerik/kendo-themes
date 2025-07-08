@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 import { AnimationContainer } from '../animation-container';
 
+import { KendoComponent } from '../_types/component';
 export const POPUP_CLASSNAME = `k-popup`;
 
 const states = [];
@@ -20,7 +21,7 @@ const defaultOptions = {
     positionMode: "absolute"
 } as const;
 
-export const Popup = (
+export const Popup: KendoComponent<KendoPopupProps & React.HTMLAttributes<HTMLDivElement>> = (
     props:
         KendoPopupProps &
         React.HTMLAttributes<HTMLDivElement>

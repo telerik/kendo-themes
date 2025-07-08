@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, Size } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const CHIPLIST_CLASSNAME = `k-chip-list`;
 
 const states = [];
@@ -16,7 +17,7 @@ const defaultOptions = {
     size: Size.medium
 };
 
-export const ChipList = (
+export const ChipList: KendoComponent<KendoChipListOptions & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoChipListOptions &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

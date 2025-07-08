@@ -3,6 +3,7 @@ import { SliderGradientVertical, SliderGradient } from '../slider';
 import { ColorInput } from './color-input';
 import { ColorContrast } from './color-contrast';
 
+import { KendoComponent } from '../_types/component';
 const COLOR_GRADIENT_CLASSNAME = 'k-colorgradient';
 
 const states = [
@@ -48,7 +49,7 @@ const defaultOptions = {
     canvasOrientation: 'horizontal'
 };
 
-export const ColorGradient = (
+export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorGradientState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoColorGradientProps &
         KendoColorGradientState &
         React.HTMLAttributes<HTMLDivElement>

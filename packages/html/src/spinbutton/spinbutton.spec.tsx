@@ -1,6 +1,7 @@
 import { Button } from '../button';
 import { classNames, Size, FillMode } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const SPINBUTTON_CLASSNAME = `k-spin-button`;
 
 const states = [];
@@ -25,7 +26,7 @@ const defaultOptions = {
     fillMode: FillMode.solid
 };
 
-export const SpinButton = (
+export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoSpinButtonProps &
         React.HTMLAttributes<HTMLButtonElement>
 ) => {

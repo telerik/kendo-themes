@@ -1,4 +1,5 @@
 import { classNames, States, Size, Roundness, FillMode } from '../misc';
+import { KendoComponent } from '../_types/component';
 import {
     Input,
     InputInnerTextarea,
@@ -54,7 +55,7 @@ const defaultOptions = {
     separators: true
 } as const;
 
-export const Textarea = (
+export const Textarea: KendoComponent<KendoTextareaProps & KendoTextareaState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoTextareaProps &
         KendoTextareaState &
         React.HTMLAttributes<HTMLSpanElement>

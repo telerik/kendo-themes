@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 import { InputInnerInput } from '../input';
 
+import { KendoComponent } from '../_types/component';
 export const SEARCHBAR_CLASSNAME = `k-searchbar`;
 
 const states = [];
@@ -13,7 +14,7 @@ export type KendoSearchBarProps = {
     placeholder?: string;
 };
 
-export const SearchBar = (
+export const SearchBar: KendoComponent<KendoSearchBarProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoSearchBarProps &
         React.HTMLAttributes<HTMLSpanElement>
 ) => {

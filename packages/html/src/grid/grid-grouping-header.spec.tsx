@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const className = `k-grouping-header`;
 
 export type KendoGroupingHeaderProps = {
@@ -7,7 +8,7 @@ export type KendoGroupingHeaderProps = {
     dropClue?: boolean;
 };
 
-export const GridGroupingHeader = (
+export const GridGroupingHeader: KendoComponent<KendoGroupingHeaderProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGroupingHeaderProps &
     React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -31,3 +32,5 @@ export const GridGroupingHeader = (
         </div>
     );
 };
+
+GridGroupingHeader.className = className;

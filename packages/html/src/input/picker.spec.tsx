@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const PICKER_CLASSNAME = `k-picker`;
 
 export const pickerStates = [
@@ -34,7 +35,7 @@ const defaultOptions = {
     fillMode: FillMode.solid
 };
 
-export const Picker = (
+export const Picker: KendoComponent<PickerOptions & PickerState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: PickerOptions & PickerState & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {

@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const PANELBAR_CLASSNAME = `k-panelbar`;
 
 const states = [];
@@ -8,7 +9,7 @@ const options = {};
 
 const defaultOptions = {};
 
-export const PanelBar = (
+export const PanelBar: KendoComponent<React.HTMLAttributes<HTMLUListElement>> = (
     props: React.HTMLAttributes<HTMLUListElement>
 ) => {
     const {

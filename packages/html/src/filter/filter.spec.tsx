@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { Button } from '../button';
 import { FilterPreview } from './filter-preview';
 
+import { KendoComponent } from '../_types/component';
 export const FILTER_CLASSNAME = 'k-filter';
 
 const states = [];
@@ -15,7 +16,7 @@ export type KendoFilterProps = {
 
 const defaultOptions = {};
 
-export const Filter = (
+export const Filter: KendoComponent<KendoFilterProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoFilterProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

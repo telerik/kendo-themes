@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, stateClassNames, States, FillMode } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const BUTTONGROUP_CLASSNAME = `k-button-group`;
 
 const states = [
@@ -24,7 +25,7 @@ const defaultOptions = {
     fillMode: FillMode.solid
 };
 
-export const ButtonGroup = (
+export const ButtonGroup: KendoComponent<KendoButtonGroupProps & KendoButtonGroupState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoButtonGroupProps &
         KendoButtonGroupState &
         React.HTMLAttributes<HTMLDivElement>
