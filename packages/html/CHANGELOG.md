@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v11.1.0...v11.2.0-dev.0) (2025-07-08)
+
+
+### Features
+
+* **html:** update prompt specs ([d5a313b](https://github.com/telerik/kendo-themes/commit/d5a313beb751daac17cb0082980ef64b9b0abbd2))
+
+
+
+
+
 # [11.1.0](https://github.com/telerik/kendo-themes/compare/v11.1.0-dev.8...v11.1.0) (2025-07-07)
 
 **Note:** Version bump only for package @progress/kendo-themes-html
