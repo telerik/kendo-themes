@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 import { ImageEditorToolbar } from './imageeditor-toolbar';
 
+import { KendoComponent } from '../_types/component';
 export const IMAGEEDITOR_CLASSNAME = `k-imageeditor`;
 
 const states = [];
@@ -15,7 +16,7 @@ export type KendoImageEditorProps = {
 
 const defaultOptions = {};
 
-export const ImageEditor = (
+export const ImageEditor: KendoComponent<KendoImageEditorProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoImageEditorProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

@@ -1,5 +1,6 @@
 import { classNames, stateClassNames, States, } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const PROGRESSBAR_CLASSNAME = `k-progressbar`;
 
 const states = [
@@ -30,7 +31,7 @@ const defaultOptions = {
     value: "0"
 };
 
-export const ProgressBar = (
+export const ProgressBar: KendoComponent<KendoProgressBarProps & KendoProgressBarState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoProgressBarProps &
         KendoProgressBarState &
         React.HTMLAttributes<HTMLDivElement>

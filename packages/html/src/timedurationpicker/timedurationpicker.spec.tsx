@@ -13,6 +13,7 @@ import { Popup } from '../popup';
 import { TimeSelector, TimeSelectorFastSelection } from '../time-selector';
 import { ActionButtons } from '../action-buttons';
 
+import { KendoComponent } from '../_types/component';
 export const TIMEDURATIONPICKER_CLASSNAME = `k-timedurationpicker`;
 
 const states = [
@@ -54,7 +55,7 @@ const defaultOptions = {
     fillMode: Input.defaultOptions.fillMode
 };
 
-export const TimeDurationPicker = (
+export const TimeDurationPicker: KendoComponent<KendoTimeDurationPickerProps & KendoTimeDurationPickerState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoTimeDurationPickerProps &
         KendoTimeDurationPickerState &
         React.HTMLAttributes<HTMLSpanElement>

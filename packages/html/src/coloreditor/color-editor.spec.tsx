@@ -7,6 +7,7 @@ import { ColorPalette } from '../colorpalette';
 import { ColorPreview } from '../color-preview';
 import { PALETTEPRESETS } from '../colorpalette/colorpalette-presets';
 
+import { KendoComponent } from '../_types/component';
 const COLOREDITOR_CLASSNAME = 'k-coloreditor';
 
 const states = [
@@ -43,7 +44,7 @@ const defaultOptions = {
     canvasOrientation: 'horizontal'
 } as const;
 
-export const ColorEditor = (
+export const ColorEditor: KendoComponent<KendoColorEditorProps & KendoColorEditorState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoColorEditorProps &
         KendoColorEditorState &
         React.HTMLAttributes<HTMLDivElement>

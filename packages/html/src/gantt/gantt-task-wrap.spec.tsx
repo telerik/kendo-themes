@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const GANTTTASKWRAP_CLASSNAME = 'k-task-wrap';
 
 const states = [];
@@ -14,7 +15,7 @@ const defaultOptions = {
     type: "single"
 };
 
-export const GanttTaskWrap = (
+export const GanttTaskWrap: KendoComponent<KendoGanttTaskWrapProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGanttTaskWrapProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

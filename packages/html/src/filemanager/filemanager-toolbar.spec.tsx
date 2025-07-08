@@ -1,6 +1,7 @@
 import { KendoToolbarProps, Toolbar } from '../toolbar';
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const FILEMANAGERTOOLBAR_CLASSNAME = `k-filemanager-toolbar`;
 
 const states = [];
@@ -9,7 +10,7 @@ const options = {};
 
 const defaultOptions = {};
 
-export const FileManagerToolbar = (
+export const FileManagerToolbar: KendoComponent<KendoToolbarProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoToolbarProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

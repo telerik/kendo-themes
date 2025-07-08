@@ -1,8 +1,9 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const TIMELINEEVENTLIST_CLASSNAME = `k-timeline-events-list`;
 
-export const TimelineEventList = (
+export const TimelineEventList: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
@@ -23,5 +24,7 @@ export const TimelineEventList = (
         </div>
     );
 };
+
+TimelineEventList.className = TIMELINEEVENTLIST_CLASSNAME;
 
 export default TimelineEventList;

@@ -1,5 +1,6 @@
 import { classNames, kendoThemeMaps } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const states = [];
 
 const options = {};
@@ -23,7 +24,7 @@ const defaultOptions = {
     wrap: false
 };
 
-export const Layout = (
+export const Layout: KendoComponent<KendoLayoutProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoLayoutProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -61,5 +62,6 @@ export const Layout = (
 
 Layout.states = states;
 Layout.options = options;
+Layout.className = 'k-layout';
 
 export default Layout;

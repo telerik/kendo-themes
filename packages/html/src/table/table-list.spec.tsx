@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, Size } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const TABLELIST_CLASSNAME = `k-table-list`;
 
 const states = [];
@@ -18,7 +19,7 @@ export type KendoTableListProps = KendoTableListOptions & {
     virtualization?: boolean;
 };
 
-export const TableList = (
+export const TableList: KendoComponent<KendoTableListProps & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoTableListProps &
         React.HTMLAttributes<HTMLUListElement>
 ) => {

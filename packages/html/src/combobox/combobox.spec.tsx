@@ -14,6 +14,7 @@ import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 import { List, ListCustomValue, ListItem } from '../list';
 
+import { KendoComponent } from '../_types/component';
 export const COMBOBOX_CLASSNAME = `k-combobox`;
 
 const states = [
@@ -63,7 +64,7 @@ const defaultOptions = {
     separators: true
 };
 
-export const Combobox = (
+export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoComboboxProps &
         KendoComboboxState &
         React.HTMLAttributes<HTMLSpanElement>

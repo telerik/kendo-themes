@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const BADGE_CLASSNAME = `k-badge`;
 
 const states = [];
@@ -43,7 +44,7 @@ const defaultOptions = {
     cutoutBorder: false,
 };
 
-export const Badge = (
+export const Badge: KendoComponent<KendoBadgeProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoBadgeProps &
         React.HTMLAttributes<HTMLSpanElement>
 ) => {

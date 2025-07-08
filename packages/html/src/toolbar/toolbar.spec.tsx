@@ -9,6 +9,7 @@ import { classNames, optionClassNames, stateClassNames, States, Size, FillMode, 
 import { ToolbarSeparator } from './toolbar-separator';
 import { Icon } from '../icon';
 
+import { KendoComponent } from '../_types/component';
 export const TOOLBAR_CLASSNAME = `k-toolbar`;
 
 const states = [
@@ -41,7 +42,7 @@ const defaultOptions = {
     scrollButtons: 'around'
 };
 
-export const Toolbar = (
+export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoToolbarProps &
         KendoToolbarState &
         React.HTMLAttributes<HTMLDivElement>

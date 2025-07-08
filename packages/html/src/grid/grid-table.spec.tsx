@@ -1,9 +1,10 @@
 import { classNames } from '../misc';
 import { Table, KendoTableOptions } from '../table';
 
+import { KendoComponent } from '../_types/component';
 export const GRIDTABLE_CLASSNAME = `k-grid-table`;
 
-export const GridTable = (
+export const GridTable: KendoComponent<KendoTableOptions & React.HTMLAttributes<HTMLTableElement>> = (
     props: KendoTableOptions &
         React.HTMLAttributes<HTMLTableElement>
 ) => (
@@ -18,3 +19,5 @@ export const GridTable = (
         {props.children}
     </Table>
 );
+
+GridTable.className = GRIDTABLE_CLASSNAME;

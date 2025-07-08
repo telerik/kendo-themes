@@ -1,5 +1,6 @@
 import { classNames, stateClassNames, States } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const LISTVIEWITEM_CLASSNAME = `k-listview-item`;
 
 const states = [
@@ -13,7 +14,7 @@ const defaultOptions = {};
 
 export type KendoListViewItemState = { [K in (typeof states)[number]]?: boolean };
 
-export const ListViewItem = (
+export const ListViewItem: KendoComponent<KendoListViewItemState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoListViewItemState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

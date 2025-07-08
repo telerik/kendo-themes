@@ -2,6 +2,7 @@ import { classNames, optionClassNames, Size } from '../misc';
 import { ListItem, ListGroup, ListContent, ListGroupItem } from '../list';
 import { NoData } from '../nodata';
 
+import { KendoComponent } from '../_types/component';
 export const LISTANGULAR_CLASSNAME = `k-list`;
 
 const states = [];
@@ -25,7 +26,7 @@ const defaultOptions = {
     size: Size.medium
 };
 
-export const ListAngular = (
+export const ListAngular: KendoComponent<KendoListAngularProps & KendoListAngularState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoListAngularProps &
         KendoListAngularState &
         React.HTMLAttributes<HTMLDivElement>

@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const RADIOGROUP_CLASSNAME = `k-radio-list`;
 
 const states = [];
@@ -14,7 +15,7 @@ const defaultOptions = {
     layout: 'vertical',
 };
 
-export const RadioGroup = (
+export const RadioGroup: KendoComponent<KendoRadioGroupProps & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoRadioGroupProps &
         React.HTMLAttributes<HTMLUListElement>
 ) => {

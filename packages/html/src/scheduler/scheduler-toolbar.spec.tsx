@@ -3,13 +3,14 @@ import { ButtonGroup } from '../button-group';
 import { classNames } from '../misc';
 import { Toolbar, KendoToolbarProps } from '../toolbar';
 
+import { KendoComponent } from '../_types/component';
 const className = 'k-scheduler-toolbar';
 
 export type KendoSchedulerToolbarProps = KendoToolbarProps & {
     footer?: boolean
 };
 
-export const SchedulerToolbar = (
+export const SchedulerToolbar: KendoComponent<KendoSchedulerToolbarProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSchedulerToolbarProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -48,3 +49,5 @@ export const SchedulerToolbar = (
         </Toolbar>
     );
 };
+
+SchedulerToolbar.className = className;

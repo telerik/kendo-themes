@@ -2,6 +2,7 @@ import { classNames, optionClassNames, Size } from '../misc';
 import { FormField } from './form-field';
 import { Fieldset } from './fieldset';
 
+import { KendoComponent } from '../_types/component';
 export const FORM_CLASSNAME = 'k-form';
 
 const states = [];
@@ -30,7 +31,7 @@ const defaultOptions = {
     tag: 'form'
 };
 
-export const Form = (
+export const Form: KendoComponent<KendoFormProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoFormProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

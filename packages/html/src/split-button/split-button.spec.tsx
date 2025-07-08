@@ -2,6 +2,7 @@ import { Button } from '../button';
 import { classNames, optionClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
 import { Popup } from '../popup';
 
+import { KendoComponent } from '../_types/component';
 export const SPLITBUTTON_CLASSNAME = `k-split-button`;
 
 const states = [
@@ -58,7 +59,7 @@ const defaultOptions = {
     arrowIconName: "caret-alt-down"
 };
 
-export const SplitButton = (
+export const SplitButton: KendoComponent<KendoSplitButtonProps & KendoSplitButtonState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSplitButtonProps &
         KendoSplitButtonState &
         React.HTMLAttributes<HTMLDivElement>
