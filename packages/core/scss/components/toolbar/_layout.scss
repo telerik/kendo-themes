@@ -170,12 +170,6 @@
         }
     }
 
-    // Workaround for scrollable scenario with buttons inside badge container
-    .k-toolbar-items-scroll:has(.k-badge-container) {
-        padding-block-start: .5em;
-        margin-block-start: -.5em;
-    }
-
     .k-toolbar-items-list {
         display: flex;
         flex-flow: row wrap;
@@ -240,6 +234,19 @@
 
             .k-toolbar-button-separator {
                 height: $_separator-height;
+            }
+
+            .k-toolbar-items-scroll {
+                padding-block: $_padding-y;
+                margin-block: calc( #{$_padding-y} * -1 );
+                padding-inline: $_padding-x;
+                margin-inline: calc( #{$_padding-x} * -1 );
+            }
+
+            &.k-toolbar-scrollable-overlay .k-toolbar-items-scroll:only-child,
+            .k-toolbar-items-scroll:not(:only-child) {
+                padding-inline-end: 0;
+                margin-inline-end: 0;
             }
 
         }
