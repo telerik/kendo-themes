@@ -3,9 +3,8 @@ import { SplitButton } from '../../split-button';
 import { MenuButton } from '../../menu-button';
 import { DropdownList } from '../../dropdownlist';
 import { Combobox } from '../../combobox';
-import { ToolbarNormal, ToolbarScrollable } from '../../toolbar';
+import { ToolbarNormal } from '../../toolbar';
 import { ButtonGroup } from '../../button-group';
-import { Badge } from '../../badge';
 
 export default () =>(
     <>
@@ -86,25 +85,6 @@ export default () =>(
                     </div>
                 </ToolbarNormal>
             </section>
-
-            <span>Button with Badge in Scrollable Toolbar</span>
-            <section>
-                <ToolbarScrollable children={[
-                    <div className="k-badge-container">
-                        <Button icon="filter">Filter</Button>
-                        <Badge position="edge" rounded="full" align="top-end" size="medium" cutoutBorder></Badge>
-                    </div>,
-                    <div className="k-badge-container">
-                        <Button icon="arrows-swap">Sort</Button>
-                        <Badge position="edge" rounded="full" align="top-end" size="medium" cutoutBorder></Badge>
-                    </div>,
-                    <div className="k-badge-container">
-                        <Button icon="group">Group</Button>
-                        <Badge position="edge" rounded="full" align="top-end" size="medium" cutoutBorder></Badge>
-                    </div>
-                ]}/>
-            </section>
-
         </div>
     </>
 );
