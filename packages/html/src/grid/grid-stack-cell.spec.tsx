@@ -1,6 +1,11 @@
-import { classNames } from "../misc";
+import { classNames, States, stateClassNames } from "../misc";
 
 const GRIDSTACKCELL_CLASSNAME = `k-grid-stack-cell`;
+
+const states = [
+    States.focus,
+    States.selected,
+];
 
 export type KendoGridStackCellProps = {
     cellHeader?: string;
@@ -9,9 +14,11 @@ export type KendoGridStackCellProps = {
     commandCell?: boolean;
 };
 
+export type KendoGridStackCellState = { [K in (typeof states)[number]]?: boolean };
 
 export const GridStackCell = (
     props: KendoGridStackCellProps &
+        KendoGridStackCellState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
@@ -19,6 +26,8 @@ export const GridStackCell = (
         cellContent,
         edit,
         commandCell,
+        focus,
+        selected,
         ...others
     } = props;
 
@@ -31,16 +40,21 @@ export const GridStackCell = (
                 {
                     "k-grid-stack-edit-cell": edit,
                     "k-command-cell": commandCell
-                }
+                },
+                stateClassNames(GRIDSTACKCELL_CLASSNAME, {
+                    focus,
+                    selected,
+                })
             )}
         >
             {cellHeader && <div className="k-grid-stack-header">{cellHeader}</div> }
-            {cellContent && <div className="k-grid-stack-content">{cellContent}</div>}
+            <div className="k-grid-stack-content">{cellContent}</div>
             {props.children}
         </div>
     );
 };
 
+GridStackCell.states = states;
 GridStackCell.className = GRIDSTACKCELL_CLASSNAME;
 
 export default GridStackCell;
