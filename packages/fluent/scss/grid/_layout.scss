@@ -1077,21 +1077,13 @@
             }
         }
 
-        // Grouping aggregates
-        .k-grid-grouping-aggregates {
+        // Column template
+        .k-grid-column-template {
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
             gap: 0;
             padding-inline-start: k-spacing(1);
-        }
-
-        .k-grouping-aggregates-item-text {
-            font-weight: normal;
-        }
-
-        .k-grouping-aggregates-item-value {
-            font-weight: $kendo-grid-selection-aggregates-font-weight;
         }
     }
 
@@ -1120,7 +1112,6 @@
             outline-offset: k-spacing(0.5);
         }
     }
-
     // Command cell
     .k-grid-stack-cell.k-command-cell {
         display: flex;
