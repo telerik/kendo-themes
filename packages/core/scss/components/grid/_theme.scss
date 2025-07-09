@@ -1,4 +1,5 @@
 @use "../../mixins/index.import.scss" as *;
+@use "../../spacing/index.import.scss" as *;
 @use "../../color-system/_constants.scss" as *;
 @use "../../color-system/_functions.import.scss" as *;
 @use "../../_variables.scss" as *;
@@ -454,6 +455,17 @@
     // Grid stack layout
     .k-grid-stack-header {
         @include fill( $color: $kendo-grid-stack-header-color );
+    }
+
+    .k-grid-stack-cell {
+        &:focus,
+        &.k-focus {
+            outline: 1px solid $kendo-grid-stack-focus-outline;
+        }
+
+        &.k-selected {
+            @include fill( $bg: $kendo-grid-selected-bg );
+        }
     }
 
 }

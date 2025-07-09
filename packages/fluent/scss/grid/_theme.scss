@@ -472,4 +472,15 @@
     .k-grid-stack-header {
         @include fill( $color: var( --kendo-grid-stack-header-color, #{$kendo-grid-stack-header-color} ) );
     }
+
+    .k-grid-stack-cell {
+        &:focus,
+        &.k-focus {
+            outline: 1px solid $kendo-grid-stack-focus-outline;
+        }
+
+        &.k-selected {
+            @include fill( $bg: var( --kendo-grid-selected-bg, #{$kendo-grid-selected-bg} ) );
+        }
+    }
 }
