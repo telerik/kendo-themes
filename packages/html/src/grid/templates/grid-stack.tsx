@@ -7,7 +7,7 @@ import GridStackCell from '../grid-stack-cell.spec';
 
 export const GridStack = ({ reorderable, checkbox, aggregates, sticky, detailRow, cols, ...other }: any) => (
     <Grid _renderAriaRoot className="k-grid-stack"
-        pager={( <GridPager type="input" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} /> )}
+        pager={ <GridPager type="input" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} /> }
         children={(
             <>
                 <GridContainer>
