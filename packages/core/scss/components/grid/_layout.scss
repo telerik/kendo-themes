@@ -1130,7 +1130,19 @@
         font-weight: $kendo-grid-stack-header-font-weight;
     }
 
-     // Command cell
+    .k-grid-stack-content {
+        // Reserve min-height for the cell content if empty
+        min-height: calc( $kendo-grid-font-size * $kendo-grid-line-height );
+    }
+
+    .k-grid-stack-cell {
+        &:focus,
+        &.k-focus {
+            outline-offset: k-spacing(0.5);
+        }
+    }
+
+    // Command cell
     .k-grid-stack-cell.k-command-cell {
         display: flex;
         flex-wrap: wrap;
