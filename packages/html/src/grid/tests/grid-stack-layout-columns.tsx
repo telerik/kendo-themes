@@ -108,7 +108,7 @@ export default () =>(
                                             <GridStackRow cols={3}>
                                                 <GridStackCell cellHeader="Contact Name" cellContent={<Textbox value="Sig Jeannel" />} />
                                                 <GridStackCell cellHeader="Job Title" cellContent="Human Resources Assistant III" />
-                                                <GridStackCell cellHeader="Country" cellContent="USA" />
+                                                <GridStackCell cellHeader="Country" cellContent="USA" dirty />
                                                 <GridStackCell cellHeader="Rating" cellContent="3/5" />
                                                 <GridStackCell cellHeader="Engagement" cellContent="100%" />
                                                 <GridStackCell cellHeader="Budget" cellContent="$100 000" />
