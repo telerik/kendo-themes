@@ -1098,21 +1098,13 @@
             }
         }
 
-        // Grouping aggregates
-        .k-grid-grouping-aggregates {
+        // Column template
+        .k-grid-column-template {
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
             gap: 0;
             padding-inline-start: k-spacing(1);
-        }
-
-        .k-grouping-aggregates-item-text {
-            font-weight: normal;
-        }
-
-        .k-grouping-aggregates-item-value {
-            font-weight: $kendo-grid-selection-aggregates-font-weight;
         }
     }
 
@@ -1134,7 +1126,6 @@
         // Reserve min-height for the cell content if empty
         min-height: calc( $kendo-grid-font-size * $kendo-grid-line-height );
     }
-
     .k-grid-stack-cell {
         &:focus,
         &.k-focus {
