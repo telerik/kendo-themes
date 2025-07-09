@@ -1,7 +1,9 @@
 const sass = require("sass");
 const fs = require("fs");
 const path = require("path");
-const { describe, it, expect } = require("@jest/globals");
+const { describe, it, expect, beforeAll } = require("@jest/globals");
+const { createSpecificityMap } = require("./specificity");
+const { generateSpecificityReport } = require("./specificity-report");
 
 const theme = process.env.THEME;
 const themeDir = path.resolve(__dirname, "../packages", theme);
@@ -12,9 +14,9 @@ const themeMetadataDir = path.resolve(themeDir, "dist", "meta", "sassdoc-data.js
 const data = JSON.parse(fs.readFileSync(themeMetadataDir));
 
 // #region helpers
-function writeResultToDist(result, file) {
-    const distDir = path.resolve(__dirname, theme, "dist");
-    const outputPath = path.join(distDir, `${file}.css`);
+function writeResultToDist(result, file, fileType = "css", subdir = "") {
+    const distDir = path.resolve(__dirname, theme, "dist", subdir);
+    const outputPath = path.join(distDir, `${file}.${fileType}`);
 
     !fs.existsSync(distDir) && fs.mkdirSync(distDir);
     fs.writeFileSync(outputPath, result, "utf8");
@@ -22,7 +24,7 @@ function writeResultToDist(result, file) {
 
 function compileSassString(sassString) {
     return sass.compileString(sassString, {
-        loadPaths: [themeScssDir, nodeModulesDir]
+        loadPaths: [themeScssDir, nodeModulesDir],
     }).css;
 }
 // #endregion
@@ -165,7 +167,67 @@ function testKendoComponent(component, group, className, dependencyClasses, vari
     });
 }
 
+/**
+ * Test a kendo theme using a jest testing template.
+ * @param {number} maxSpecificity - Maximum specificity threshold for the theme.
+ * @param {number} averageSpecificity - Average specificity threshold for the theme.
+ */
+function testKendoTheme(maxSpecificity, averageSpecificity) {
+    // Compile the entire theme
+    const result = compileSassString(`
+        @use 'index.scss' as *;
+        @include kendo-theme--styles();
+    `);
+
+    writeResultToDist(result, `${theme}-theme`);
+
+    // Theme-level specificity testing
+    if (maxSpecificity || averageSpecificity) {
+        describe("specificity analysis", () => {
+            let specificityTest;
+
+            beforeAll(() => {
+                specificityTest = createSpecificityMap(result);
+
+                writeResultToDist(JSON.stringify(specificityTest, null, 2), `${theme}-specificity-data`, "json", "specificity");
+
+                // TODO Simplify
+                const specificityJsonPath = path.resolve(__dirname, theme, "dist", "specificity", `${theme}-specificity-data.json`);
+                const reportPath = path.resolve(__dirname, theme, "dist", "specificity", `${theme}-specificity-report.md`);
+                generateSpecificityReport(specificityJsonPath, reportPath);
+            });
+
+            maxSpecificity &&
+                it("should not exceed maximum specificity threshold", () => {
+                    const allSpecificityValues = [];
+                    Object.values(specificityTest).forEach((componentSelectors) => {
+                        componentSelectors.forEach((selector) => {
+                            allSpecificityValues.push(selector.specificityValue);
+                        });
+                    });
+
+                    const currentMaxSpecificity = Math.max(...allSpecificityValues);
+                    expect(currentMaxSpecificity).toBeLessThanOrEqual(maxSpecificity);
+                });
+
+            averageSpecificity &&
+                it("should not exceed average specificity threshold", () => {
+                    const allSpecificityValues = [];
+                    Object.values(specificityTest).forEach((componentSelectors) => {
+                        componentSelectors.forEach((selector) => {
+                            allSpecificityValues.push(selector.specificityValue);
+                        });
+                    });
+
+                    const currentAverageSpecificity = allSpecificityValues.reduce((sum, value) => sum + value, 0) / allSpecificityValues.length;
+                    expect(currentAverageSpecificity).toBeLessThanOrEqual(averageSpecificity);
+                });
+        });
+    }
+}
+
 module.exports = {
     testKendoModule,
     testKendoComponent,
+    testKendoTheme,
 };
