@@ -721,6 +721,11 @@
                     "name": "Table alt row background color",
                     "type": "color",
                     "value": "rgba( 0, 0, 0, .04 )"
+                },
+                "kendo-grid-stack-header-color": {
+                    "name": "The color of the Grid stack layout column header",
+                    "type": "color",
+                    "value": "#424242"
                 }
             }
         }
