@@ -12,6 +12,7 @@ export type KendoGridStackCellProps = {
     cellContent?: React.JSX.Element | string;
     edit?: boolean,
     commandCell?: boolean;
+    dirty?: boolean;
 };
 
 export type KendoGridStackCellState = { [K in (typeof states)[number]]?: boolean };
@@ -26,6 +27,7 @@ export const GridStackCell = (
         cellContent,
         edit,
         commandCell,
+        dirty,
         focus,
         selected,
         ...others
@@ -39,7 +41,8 @@ export const GridStackCell = (
                 GRIDSTACKCELL_CLASSNAME,
                 {
                     "k-grid-stack-edit-cell": edit,
-                    "k-command-cell": commandCell
+                    "k-command-cell": commandCell,
+                    "k-dirty-cell": dirty
                 },
                 stateClassNames(GRIDSTACKCELL_CLASSNAME, {
                     focus,
@@ -47,6 +50,7 @@ export const GridStackCell = (
                 })
             )}
         >
+            {dirty && <span className="k-dirty"></span>}
             {cellHeader && <div className="k-grid-stack-header">{cellHeader}</div> }
             <div className="k-grid-stack-content">{cellContent}</div>
             {props.children}
