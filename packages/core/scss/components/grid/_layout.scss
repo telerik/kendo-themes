@@ -1141,6 +1141,12 @@
         grid-column: 1 / -1;
     }
 
+    // Dirty cell
+    .k-grid-stack-cell .k-dirty {
+        inset-inline-start: auto;
+        inset-inline-end: 0;
+    }
+
     .k-grid-stack-expandable .k-table-td {
         position: relative;
         padding-inline: $kendo-grid-stack-cell-padding-x;

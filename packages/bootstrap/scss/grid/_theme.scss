@@ -428,4 +428,9 @@
         }
     }
 
+    // Dirty cell
+    .k-grid-stack-cell .k-dirty {
+        border-inline-start-color: rgba(0, 0, 0, 0);
+        border-inline-end-color: currentColor;
+    }
 }
