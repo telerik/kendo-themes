@@ -43,7 +43,7 @@
         &:hover,
         &.k-hover {
             position: relative;
-            z-index: 101;
+            z-index: 3;
         }
 
         &:focus,
@@ -51,7 +51,7 @@
         &.k-selected,
         &.k-selected:hover {
             position: relative;
-            z-index: 100;
+            z-index: 2;
         }
     }
 

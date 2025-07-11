@@ -190,7 +190,7 @@
             left: 0;
             overflow: visible;
             pointer-events: none;
-            z-index: 2;
+            z-index: 1;
 
             polyline {
                 stroke-width: $kendo-gantt-line-size;
@@ -202,7 +202,7 @@
     .k-gantt-header {
         border-width: 0 0 $kendo-toolbar-border-width;
         flex-shrink: 0;
-        z-index: 6;
+        z-index: 1;
     }
     .k-gantt-footer {
         border-width: $kendo-toolbar-border-width 0 0;
@@ -345,7 +345,6 @@
     .k-gantt-columns {
         border-color: inherit;
         position: absolute;
-        z-index: 0;
         top: 0;
         left: 0;
     }
@@ -552,7 +551,7 @@
 
         .k-resize-handle {
             opacity: .5;
-            z-index: 2;
+            z-index: 10;
             visibility: hidden;
             cursor: ew-resize;
         }
@@ -740,7 +739,7 @@
 
         .k-resize-handle {
             right: 0;
-            z-index: 2;
+            z-index: 10;
             visibility: hidden;
             margin-right: $kendo-gantt-planned-offset-resize-handler-margin-x;
         }

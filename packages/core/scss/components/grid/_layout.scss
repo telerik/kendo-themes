@@ -682,7 +682,7 @@
         height: 25px;
         cursor: col-resize;
         position: absolute;
-        z-index: 2;
+        z-index: 10;
     }
 
 
@@ -810,7 +810,7 @@
 
         &.k-edit-cell {
             overflow: visible;
-            z-index: 3;
+            z-index: 5;
         }
     }
 
@@ -829,7 +829,6 @@
         .k-table-row.k-grid-row-sticky {
             border: 0;
             position: static;
-            z-index: auto;
         }
 
         .k-grid-row-sticky td,
