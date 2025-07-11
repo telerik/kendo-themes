@@ -41,6 +41,7 @@
         display: flex;
         flex-grow: 1;
         overflow: hidden;
+        z-index: 1;
     }
 
    // Splitter
@@ -124,7 +125,7 @@
         display: flex;
         height: 100%;
         border-color: inherit;
-        z-index: 20;
+        z-index: 1000;
 
         .k-pane {
             display: inline-flex;

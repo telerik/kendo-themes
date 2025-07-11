@@ -871,26 +871,4 @@
         border-color: inherit;
         position: relative;
     }
-
-    .k-spreadsheet-tabstrip {
-        position: relative;
-        z-index: 1;
-    }
-
-    .k-spreadsheet-tabstrip .k-tabstrip-items-wrapper {
-        margin: 0;
-    }
-
-    .k-spreadsheet-tabstrip .k-loading {
-        // TODO: better name
-        display: none;
-    }
-
-    .k-spreadsheet-tabstrip .k-content,
-    .k-spreadsheet-tabstrip .k-tabstrip-content {
-        @include border-radius( 0 );
-        padding: 0;
-        border-width: 0;
-        overflow: hidden;
-    }
 }

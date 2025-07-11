@@ -885,26 +885,6 @@
         top: 0;
         left: 0;
     }
-
-    .k-spreadsheet-tabstrip {
-        padding-top: $kendo-toolbar-md-padding-y;
-        position: relative;
-        z-index: 1;
-    }
-    .k-spreadsheet-tabstrip .k-tabstrip-items-wrapper {
-        margin: 0;
-    }
-    .k-spreadsheet-tabstrip .k-loading {
-        display: none;
-    }
-    .k-spreadsheet-tabstrip .k-content,
-    .k-spreadsheet-tabstrip .k-tabstrip-content {
-        @include border-radius( 0 );
-        padding: 0;
-        border-width: 0;
-        overflow: hidden;
-    }
-
 }
 
 
