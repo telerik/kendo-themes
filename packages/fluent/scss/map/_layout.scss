@@ -32,8 +32,8 @@
         // Layers
         .k-layer {
             position: absolute;
-            left: 0;
-            top: 0;
+            inset-inline-start: 0;
+            inset-block-start: 0;
         }
 
         // Marker
@@ -93,26 +93,26 @@
         .k-navigator-n,
         .k-navigator-up {
             transform: translateX(-50%);
-            top: var( --kendo-map-navigator-padding, #{$kendo-map-navigator-padding} );
-            left: 50%;
+            inset-block-start: var( --kendo-map-navigator-padding, #{$kendo-map-navigator-padding} );
+            inset-inline-start: 50%;
         }
         .k-navigator-e,
         .k-navigator-right {
             transform: translateY(-50%);
-            right: var( --kendo-map-navigator-padding, #{$kendo-map-navigator-padding} );
-            top: 50%;
+            inset-inline-end: var( --kendo-map-navigator-padding, #{$kendo-map-navigator-padding} );
+            inset-block-start: 50%;
         }
         .k-navigator-s,
         .k-navigator-down {
             transform: translateX(-50%);
-            bottom: var( --kendo-map-navigator-padding, #{$kendo-map-navigator-padding} );
-            left: 50%;
+            inset-block-end: var( --kendo-map-navigator-padding, #{$kendo-map-navigator-padding} );
+            inset-inline-start: 50%;
         }
         .k-navigator-w,
         .k-navigator-left {
             transform: translateY(-50%);
-            left: var( --kendo-map-navigator-padding, #{$kendo-map-navigator-padding} );
-            top: 50%;
+            inset-inline-start: var( --kendo-map-navigator-padding, #{$kendo-map-navigator-padding} );
+            inset-block-start: 50%;
         }
     }
 

@@ -70,10 +70,10 @@
                 content: '';
                 display: block;
                 position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
+                inset-block-start: 0;
+                inset-inline-end: 0;
+                inset-block-end: 0;
+                inset-inline-start: 0;
                 border-width: var( --kendo-input-focus-border-width, #{$kendo-input-focus-border-width} );
                 border-style: solid;
                 border-radius: inherit;
@@ -450,11 +450,11 @@
             }
         }
         .k-spinner-increase .k-icon  {
-            bottom: if( $kendo-use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset} ), auto );
+            inset-block-end: if( $kendo-use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset} ), auto );
         }
 
         .k-spinner-decrease .k-icon  {
-           top: if( $kendo-use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset} ), auto );
+           inset-block-start: if( $kendo-use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset} ), auto );
         }
     }
 
@@ -487,7 +487,7 @@
     .k-picker-flat {
         @include border-bottom-radius( 0 !important ); // stylelint-disable-line declaration-no-important
         border-width: var( --kendo-input-border-width, #{$kendo-input-border-width} ) 0;
-        border-top-color: transparent !important; // stylelint-disable-line declaration-no-important
+        border-block-start-color: transparent !important; // stylelint-disable-line declaration-no-important
 
         &:focus,
         &.k-focus,

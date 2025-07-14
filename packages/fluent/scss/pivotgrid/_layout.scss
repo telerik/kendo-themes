@@ -65,8 +65,8 @@
     .k-pivotgrid-empty-cell {
         border-inline-end-style: solid;
         border-inline-end-width: var( --kendo-pivotgrid-cell-border-width, #{$kendo-pivotgrid-cell-border-width} );
-        border-bottom-style: solid;
-        border-bottom-width: var( --kendo-pivotgrid-cell-border-width, #{$kendo-pivotgrid-cell-border-width} );
+        border-block-end-style: solid;
+        border-block-end-width: var( --kendo-pivotgrid-cell-border-width, #{$kendo-pivotgrid-cell-border-width} );
     }
 
 
@@ -81,17 +81,17 @@
     }
 
     .k-pivotgrid-column-headers .k-pivotgrid-cell {
-        border-bottom-style: solid;
-        border-bottom-width: var( --kendo-pivotgrid-cell-border-width, #{$kendo-pivotgrid-cell-border-width} );
+        border-block-end-style: solid;
+        border-block-end-width: var( --kendo-pivotgrid-cell-border-width, #{$kendo-pivotgrid-cell-border-width} );
         border-inline-start-style: solid;
         border-inline-start-width: var( --kendo-pivotgrid-cell-border-width, #{$kendo-pivotgrid-cell-border-width} );
 
         &:first-child {
-            border-left-width: 0;
+            border-inline-start-width: 0;
         }
 
         &.k-first {
-            border-left-width: var( --kendo-pivotgrid-cell-border-width, #{$kendo-pivotgrid-cell-border-width} );
+            border-inline-start-width: var( --kendo-pivotgrid-cell-border-width, #{$kendo-pivotgrid-cell-border-width} );
         }
     }
 
@@ -102,14 +102,14 @@
     }
 
     .k-pivotgrid-row-headers .k-pivotgrid-table {
-        padding-bottom: var( --kendo-scrollbar-width, #{$kendo-scrollbar-width} );
+        padding-block-end: var( --kendo-scrollbar-width, #{$kendo-scrollbar-width} );
     }
 
     .k-pivotgrid-row-headers .k-pivotgrid-cell {
-        border-right-style: solid;
-        border-right-width: var( --kendo-pivotgrid-cell-border-width, #{$kendo-pivotgrid-cell-border-width} );
-        border-bottom-style: solid;
-        border-bottom-width: var( --kendo-pivotgrid-cell-border-width, #{$kendo-pivotgrid-cell-border-width} );
+        border-inline-end-style: solid;
+        border-inline-end-width: var( --kendo-pivotgrid-cell-border-width, #{$kendo-pivotgrid-cell-border-width} );
+        border-block-end-style: solid;
+        border-block-end-width: var( --kendo-pivotgrid-cell-border-width, #{$kendo-pivotgrid-cell-border-width} );
         white-space: nowrap;
     }
 
@@ -121,13 +121,13 @@
     }
 
     .k-pivotgrid-values .k-pivotgrid-cell {
-        border-bottom-style: solid;
-        border-bottom-width: var( --kendo-pivotgrid-cell-border-width, #{$kendo-pivotgrid-cell-border-width} );
-        border-left-style: solid;
-        border-left-width: 0;
+        border-block-end-style: solid;
+        border-block-end-width: var( --kendo-pivotgrid-cell-border-width, #{$kendo-pivotgrid-cell-border-width} );
+        border-inline-start-style: solid;
+        border-inline-start-width: 0;
 
         &:first-child {
-            border-left-width: 0;
+            border-inline-start-width: 0;
         }
     }
 
@@ -371,8 +371,8 @@
     }
 
     .k-filter-menu .k-calculated-item {
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
+        border-block-end-width: 1px;
+        border-block-end-style: solid;
     }
 
 
@@ -382,8 +382,8 @@
     }
 
     :is(.k-flex-row, .k-flex-row-reverse) .k-pivotgrid-configurator-vertical.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel {
-        border-right-width: 0;
-        border-left-width: 0;
+        border-inline-end-width: 0;
+        border-inline-start-width: 0;
     }
 
 
@@ -413,8 +413,8 @@
                 }
 
                 &:last-child {
-                    border-left-width: 1px;
-                    border-left-style: solid;
+                    border-inline-start-width: 1px;
+                    border-inline-start-style: solid;
                     flex: 1 1 40%;
                 }
             }
@@ -438,8 +438,8 @@
     .k-flex-col,
     .k-flex-col-reverse {
         .k-pivotgrid-configurator-horizontal.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel {
-            border-top-width: 0;
-            border-bottom-width: 0;
+            border-block-start-width: 0;
+            border-block-end-width: 0;
         }
     }
 }
@@ -524,11 +524,11 @@
 
     .k-pivot-rowheaders > .k-grid td:first-child,
     .k-pivot-table .k-grid-header .k-header.k-first {
-        border-left-width: 1px;
+        border-inline-start-width: 1px;
     }
 
     .k-pivot-rowheaders > .k-grid td.k-first {
-        border-left-width: 0;
+        border-inline-start-width: 0;
     }
 
     .k-pivot-rowheaders > .k-grid {
@@ -536,8 +536,8 @@
     }
 
     .k-pivot-table {
-        border-left-width: 1px;
-        border-left-style: solid;
+        border-inline-start-width: 1px;
+        border-inline-start-style: solid;
     }
 
     .k-pivot-table .k-grid-header-wrap {
@@ -554,21 +554,21 @@
 
     .k-pivot .k-grid tr {
         .k-grid-footer {
-            border-bottom-width: 0;
+            border-block-end-width: 0;
         }
         &:last-child:not(.k-grid-footer) {
             td:not(.k-grid-footer) {
-                border-bottom-width: 1px;
+                border-block-end-width: 1px;
             }
         }
     }
 
     .k-pivot-layout .k-grid td {
-        border-bottom-width: 1px;
+        border-block-end-width: 1px;
     }
 
     .k-pivot-layout .k-grid-footer > td {
-        border-top-width: 0;
+        border-block-start-width: 0;
     }
 
     .k-pivot-filter-window .k-treeview {

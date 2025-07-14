@@ -108,7 +108,7 @@
             margin-inline: var(--kendo-menu-separator-margin-inline, #{$kendo-menu-separator-margin-inline});
             width: 0;
             height: auto;
-            border-left-width: var( --kendo-menu-separator-width, #{$kendo-menu-separator-width});
+            border-inline-start-width: var( --kendo-menu-separator-width, #{$kendo-menu-separator-width});
             border-style: solid;
         }
     }
@@ -193,7 +193,7 @@
             margin-inline: 0;
             height: 0;
             border-width: 0;
-            border-top-width: var( --kendo-menu-separator-width, #{$kendo-menu-separator-width});
+            border-block-start-width: var( --kendo-menu-separator-width, #{$kendo-menu-separator-width});
             border-style: solid;
             display: block;
         }

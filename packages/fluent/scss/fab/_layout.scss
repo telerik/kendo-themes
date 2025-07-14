@@ -89,14 +89,14 @@
         flex-direction: column;
     }
     .k-fab-items-bottom .k-fab-item:last-child {
-        margin-bottom: 0;
+        margin-block-end: 0;
     }
 
     .k-fab-items-top {
         flex-direction: column-reverse;
     }
     .k-fab-items-top .k-fab-item:first-child {
-        margin-bottom: 0;
+        margin-block-end: 0;
     }
 
     .k-fab-item {
@@ -127,7 +127,7 @@
 
             .k-fab-item-text {
                 // Needed for fab item positioning in RTL
-                margin-right: var( --kendo-fab-item-text-offset-x, #{$kendo-fab-item-text-offset-x} );
+                margin-inline-end: var( --kendo-fab-item-text-offset-x, #{$kendo-fab-item-text-offset-x} );
             }
         }
 
@@ -136,7 +136,7 @@
 
             .k-fab-item-text {
                 // Needed for fab item positioning in RTL
-                margin-left: var( --kendo-fab-item-text-offset-x, #{$kendo-fab-item-text-offset-x} );
+                margin-inline-start: var( --kendo-fab-item-text-offset-x, #{$kendo-fab-item-text-offset-x} );
             }
         }
     }

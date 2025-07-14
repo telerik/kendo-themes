@@ -142,17 +142,17 @@
             width: 100%;
             height: var( --kendo-slider-track-size, #{$kendo-slider-track-size} );
             inset-inline-start: 0;
-            top: 50%;
+            inset-block-start: 50%;
             transform: translateY(-50%);
         }
         .k-slider-selection {
             width: calc( (var( --kendo-slider-end, 0) - var( --kendo-slider-start, 0)) * 1% );
             height: 100%;
             inset-inline-start: calc( var( --kendo-slider-start, 0) * 1% );
-            top: 0;
+            inset-block-start: 0;
         }
         .k-slider-thumb {
-            top: 50%;
+            inset-block-start: 50%;
             transform: translate(-50%, -50%);
         }
         .k-slider-thumb:focus,
@@ -193,13 +193,13 @@
         // Slider labels
         .k-label {
             inset-inline-start: 50%;
-            bottom: -1.2em;
+            inset-block-end: -1.2em;
             transform: translateX(-50%);
         }
         .k-first .k-label { inset-inline-start: 0; }
         .k-last .k-label { inset-inline-start: 100%; }
         .k-slider-topleft .k-label {
-            top: -1.2em;
+            inset-block-start: -1.2em;
         }
 
         // Transitions
@@ -226,17 +226,17 @@
         .k-slider-track {
             width: var( --kendo-slider-track-size, #{$kendo-slider-track-size} );
             height: 100%;
-            bottom: 0;
-            left: 50%;
+            inset-block-end: 0;
+            inset-inline-start: 50%;
             transform: translateX(-50%);
         }
         .k-slider-selection {
             width: 100%;
-            bottom: calc( var( --kendo-slider-start, 0) * 1% );
+            inset-block-end: calc( var( --kendo-slider-start, 0) * 1% );
             height: calc( (var( --kendo-slider-end, 0) - var( --kendo-slider-start, 0)) * 1% );
         }
         .k-slider-thumb {
-            left: 50%;
+            inset-inline-start: 50%;
             transform: translate(-50%, 50%);
         }
         .k-slider-thumb:focus,
@@ -244,17 +244,17 @@
             transform: if( $kendo-slider-thumb-active-scale, translate(-50%, 50%) scale($kendo-slider-thumb-active-scale), null );
         }
         .k-slider-thumb-start {
-            bottom: calc( var( --kendo-slider-start, 0) * 1% );
+            inset-block-end: calc( var( --kendo-slider-start, 0) * 1% );
         }
         .k-slider-thumb-end {
-            bottom: calc( var( --kendo-slider-end, 0) * 1% );
+            inset-block-end: calc( var( --kendo-slider-end, 0) * 1% );
         }
 
 
         // Slider ticks
         .k-tick {
             text-align: end;
-            margin-left: 2px;
+            margin-inline-start: 2px;
         }
         .k-slider-topleft .k-tick {
             text-align: start;
@@ -288,11 +288,11 @@
             text-align: start;
             inset-inline-start: 120%;
             inset-inline-end: auto;
-            top: 50%;
+            inset-block-start: 50%;
             transform: translateY(-50%);
         }
-        .k-first .k-label { top: 100%; }
-        .k-last .k-label { top: 0; }
+        .k-first .k-label { inset-block-start: 100%; }
+        .k-last .k-label { inset-block-start: 0; }
         .k-slider-topleft .k-label {
             inset-inline-start: auto;
             inset-inline-end: 120%;

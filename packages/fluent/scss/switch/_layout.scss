@@ -84,7 +84,7 @@
         overflow: visible;
         position: absolute;
         transition: inset-inline-start 100ms ease-in-out;
-        top: 50%;
+        inset-block-start: 50%;
     }
     .k-switch-thumb {
         width: var( --kendo-switch-thumb-width, auto );
@@ -104,7 +104,7 @@
         text-transform: var( --kendo-switch-label-text-transform, #{$kendo-switch-label-text-transform} );
         display: var( --kendo-switch-label-display, #{$kendo-switch-label-display} );
         position: absolute;
-        top: 50%;
+        inset-block-start: 50%;
         transform: translateY( -50% );
         overflow: hidden;
     }

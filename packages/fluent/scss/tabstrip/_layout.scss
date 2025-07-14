@@ -142,12 +142,12 @@
         width: 20%;
         height: 0;
         border: 0;
-        border-top: 1px solid transparent;
+        border-block-start: 1px solid transparent;
         border-color: inherit;
         background: none;
         position: absolute;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
         transition: width .2s linear;
 
         // TODO: a better name
@@ -155,7 +155,7 @@
 
         &.k-complete {
             width: 100%;
-            border-top-width: 0;
+            border-block-start-width: 0;
         }
     }
 
@@ -268,7 +268,7 @@
     .k-tabstrip-top {
         > .k-tabstrip-items-wrapper {
             @extend .k-tabstrip-horizontal !optional;
-            border-bottom-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
+            border-block-end-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
 
             .k-item {
                 margin-block-end: calc( var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} ) * -1 );
@@ -283,7 +283,7 @@
     .k-tabstrip-bottom {
         > .k-tabstrip-items-wrapper {
             @extend .k-tabstrip-horizontal !optional;
-            border-top-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
+            border-block-start-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
 
             .k-item {
                 margin-block-start: calc( var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} ) * -1 );
@@ -299,7 +299,7 @@
 
         > .k-tabstrip-items-wrapper {
             @extend .k-tabstrip-vertical !optional;
-            border-right-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
+            border-inline-end-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
 
             > .k-tabstrip-items {
                 flex-direction: column;
@@ -316,7 +316,7 @@
 
         > .k-tabstrip-items-wrapper {
             @extend .k-tabstrip-vertical !optional;
-            border-left-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
+            border-inline-start-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
 
             > .k-tabstrip-items {
                 flex-direction: column;
@@ -358,10 +358,10 @@
                 display: block;
                 position: absolute;
                 z-index: 2;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
+                inset-block-start: 0;
+                inset-inline-end: 0;
+                inset-block-end: 0;
+                inset-inline-start: 0;
                 opacity: 0;
                 transform: scaleY(0);
                 pointer-events: none;
@@ -382,16 +382,16 @@
 
         // Variants
         .k-tabstrip-top > .k-tabstrip-items-wrapper .k-item::after {
-            border-bottom-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
+            border-block-end-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
         }
         .k-tabstrip-bottom > .k-tabstrip-items-wrapper .k-item::after {
-            border-top-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
+            border-block-start-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
         }
         .k-tabstrip-left > .k-tabstrip-items-wrapper .k-item::after {
-            border-right-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
+            border-inline-end-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
         }
         .k-tabstrip-right > .k-tabstrip-items-wrapper .k-item::after {
-            border-left-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
+            border-inline-start-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
         }
 
 

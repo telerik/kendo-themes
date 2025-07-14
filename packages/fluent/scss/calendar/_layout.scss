@@ -126,8 +126,8 @@
     .k-calendar .k-header {
         padding-inline: var( --kendo-calendar-header-padding-x, #{$kendo-calendar-header-padding-x} );
         padding-block: var( --kendo-calendar-header-padding-y, #{$kendo-calendar-header-padding-y} );
-        border-bottom-width: var( --kendo-calendar-header-border-width, #{$kendo-calendar-header-border-width} );
-        border-bottom-style: solid;
+        border-block-end-width: var( --kendo-calendar-header-border-width, #{$kendo-calendar-header-border-width} );
+        border-block-end-style: solid;
         display: flex;
         flex-flow: row nowrap;
         gap: var( --kendo-calendar-nav-gap, #{$kendo-calendar-nav-gap} );
@@ -297,8 +297,8 @@
         position: absolute;
         z-index: -1;
         width: 1px;
-        top: 0;
-        right: 0;
+        inset-block-start: 0;
+        inset-inline-end: 0;
     }
 
 
@@ -354,10 +354,10 @@
             background: transparent;
             height: auto;
             position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
+            inset-block-start: 0;
+            inset-inline-start: 0;
+            inset-block-end: 0;
+            inset-inline-end: 0;
 
             ul {
                 width: var( --kendo-calendar-navigation-width, #{$kendo-calendar-navigation-width} );
@@ -385,8 +385,8 @@
             height: var( --kendo-calendar-navigation-item-height, #{$kendo-calendar-navigation-item-height} );
             box-sizing: border-box;
             position: absolute;
-            top: 50%;
-            right: 0;
+            inset-block-start: 50%;
+            inset-inline-end: 0;
             transform: translateY(-50%);
         }
 

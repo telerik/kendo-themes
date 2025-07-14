@@ -45,9 +45,9 @@
         padding-block: var( --kendo-media-player-titlebar-padding-y, #{$kendo-media-player-titlebar-padding-y} );
         position: absolute;
         z-index: 2;
-        top: 0;
-        left: 0;
-        right: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
     }
 
 
@@ -55,9 +55,9 @@
     .k-mediaplayer-toolbar-wrap {
         position: absolute;
         z-index: 2;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        inset-block-end: 0;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
     }
     .k-mediaplayer-toolbar {
         border-width: 0;
@@ -82,16 +82,16 @@
         width: 100%;
         position: absolute;
         z-index: 3;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
         transform: translateY( -50% );
     }
 
     .k-mediaplayer-fullscreen {
         z-index: 10000;
         position: fixed;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
         width: 100% !important; // stylelint-disable-line declaration-no-important
         height: 100% !important; // stylelint-disable-line declaration-no-important
     }

@@ -38,8 +38,8 @@
             overflow: hidden;
             transform: scale(0) translate(-50%, -50%);
             position: absolute;
-            top: 50%;
-            left: 50%;
+            inset-block-start: 50%;
+            inset-inline-start: 50%;
         }
 
         @if $kendo-checkbox-indicator-type == "glyph" {
@@ -52,8 +52,8 @@
             transform: translate(-50%, -50%) scale(0);
             overflow: hidden;
             position: absolute;
-            top: 50%;
-            left: 50%;
+            inset-block-start: 50%;
+            inset-inline-start: 50%;
         }
 
         @if $kendo-checkbox-indicator-type == "image" {
@@ -276,8 +276,8 @@
             height: var( --kendo-ripple-size-height, 300% );
             display: block;
             position: absolute;
-            left: 50%;
-            top: 50%;
+            inset-inline-start: 50%;
+            inset-block-start: 50%;
             border-radius: 100%;
             z-index: -1;
             transition: opacity 100ms linear, transform 150ms cubic-bezier(.4, 0, .2, 1);

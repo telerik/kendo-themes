@@ -52,8 +52,8 @@
             margin-block-start: var( --kendo-color-gradient-canvas-draghandle-offset-y, #{$kendo-color-gradient-canvas-draghandle-offset-y} );
             margin-inline-start: var( --kendo-color-gradient-canvas-draghandle--offset-x, #{$kendo-color-gradient-canvas-draghandle-offset-x} );
             position: absolute;
-            top: 50%;
-            left: 50%;
+            inset-block-start: 50%;
+            inset-inline-start: 50%;
             z-index: 10;
             background-color: transparent;
             cursor: pointer;
@@ -93,7 +93,7 @@
             border-radius: var( --kendo-color-gradient-slider-border-radius, #{$kendo-color-gradient-slider-border-radius} );
 
             // Required since the track is absolutely left positioned
-            margin-left: calc( -1 * (var( --kendo-color-gradient-slider-track-size, #{$kendo-color-gradient-slider-track-size} ) / 2) );
+            margin-inline-start: calc( -1 * (var( --kendo-color-gradient-slider-track-size, #{$kendo-color-gradient-slider-track-size} ) / 2) );
         }
 
         &.k-slider-horizontal {
@@ -230,8 +230,8 @@
     }
     .k-color-contrast-svg {
         position: absolute;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
         overflow: visible;
         pointer-events: none;
     }

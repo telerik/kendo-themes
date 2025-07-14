@@ -22,7 +22,7 @@
     }
     .k-filemanager-toolbar {
         border-width: 0;
-        border-bottom-width: var( --kendo-file-manager-toolbar-border-width, #{$kendo-file-manager-toolbar-border-width} );
+        border-block-end-width: var( --kendo-file-manager-toolbar-border-width, #{$kendo-file-manager-toolbar-border-width} );
         border-color: inherit;
         flex-shrink: 0;
         z-index: 1;
@@ -51,7 +51,7 @@
         padding-block: var( --kendo-file-manager-navigation-padding-y, #{$kendo-file-manager-navigation-padding-y} );
         width: var( --kendo-file-manager-navigation-width, #{$kendo-file-manager-navigation-width} );
         border-width: 0;
-        border-right-width: var( --kendo-file-manager-navigation-border-width, #{$kendo-file-manager-navigation-border-width} );
+        border-inline-end-width: var( --kendo-file-manager-navigation-border-width, #{$kendo-file-manager-navigation-border-width} );
         border-style: solid;
         border-color: inherit;
         box-sizing: border-box;
@@ -83,7 +83,7 @@
         padding-inline: var( --kendo-file-manager-breadcrumb-padding-x, #{$kendo-file-manager-breadcrumb-padding-x} );
         padding-block: var( --kendo-file-manager-breadcrumb-padding-y, #{$kendo-file-manager-breadcrumb-padding-y} );
         border-width: 0;
-        border-bottom-width: var( --kendo-file-manager-breadcrumb-border-width, #{$kendo-file-manager-breadcrumb-border-width} );
+        border-block-end-width: var( --kendo-file-manager-breadcrumb-border-width, #{$kendo-file-manager-breadcrumb-border-width} );
         flex-shrink: 0;
     }
 
@@ -157,7 +157,7 @@
         width: var( --kendo-file-manager-preview-width, #{$kendo-file-manager-preview-width} );
         min-height: calc( ( var( --kendo-file-manager-preview-padding-y, #{$kendo-file-manager-preview-padding-y} ) * 4 ) + var( --kendo-icon-size, 1rem ) * 2 + ( var( --kendo-file-manager-preview-spacing, #{$kendo-file-manager-preview-spacing} ) * 3 ) );
         border-width: 0;
-        border-left-width: var( --kendo-file-manager-preview-border-width, #{$kendo-file-manager-preview-border-width} );
+        border-inline-start-width: var( --kendo-file-manager-preview-border-width, #{$kendo-file-manager-preview-border-width} );
         border-style: solid;
         border-color: inherit;
         box-sizing: border-box;

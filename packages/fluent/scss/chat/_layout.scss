@@ -125,7 +125,7 @@
         }
         .k-message-time {
             opacity: 0;
-            top: 50%;
+            inset-block-start: 50%;
             transform: translateY(-50%);
             transition: opacity .2s ease-in-out;
         }
@@ -133,7 +133,7 @@
             margin-block-start: var( --kendo-chat-bubble-spacing, #{ $kendo-chat-bubble-spacing } );
             height: 0;
             overflow: hidden;
-            top: 100%;
+            inset-block-start: 100%;
             transition: height .2s ease-in-out;
         }
 
@@ -180,11 +180,11 @@
 
             @at-root .k-message-group:not(.k-alt) > .k-avatar {
                 inset-inline-start: 0;
-                bottom: 0;
+                inset-block-end: 0;
             }
             @at-root .k-message-group.k-alt > .k-avatar {
                 inset-inline-end: 0;
-                bottom: 0;
+                inset-block-end: 0;
             }
         }
         .k-avatars {
@@ -363,7 +363,7 @@
     .k-chat .k-card-deck-scrollwrap > .k-card-deck {
         // hide scrollbar in chat
         margin-block-end: calc( var( --kendo-card-deck-scrollbar-size, #{ $kendo-card-deck-scrollbar-size } ) * -1 );
-        padding-bottom: var( --kendo-card-deck-scrollbar-size, #{ $kendo-card-deck-scrollbar-size } );
+        padding-block-end: var( --kendo-card-deck-scrollbar-size, #{ $kendo-card-deck-scrollbar-size } );
     }
 
     // Deck
@@ -372,7 +372,7 @@
         flex-flow: row nowrap;
         align-items: stretch;
         flex: 0 0 auto;
-        padding-bottom: 5px; // accommodate for focused box shadow on OSX
+        padding-block-end: 5px; // accommodate for focused box shadow on OSX
 
         .k-card {
             flex: 0 0 auto;
@@ -441,7 +441,7 @@
         .k-button-list {
             // Needed for native scrolling. Will uncoment when it's implemented.
             // margin-block-end: -20px;
-            // padding-bottom: 20px;
+            // padding-block-end: 20px;
             display: flex;
             flex-flow: row nowrap;
             overflow: hidden;
@@ -462,7 +462,7 @@
             aspect-ratio: auto;
             position: absolute;
             z-index: 2;
-            top: 0;
+            inset-block-start: 0;
 
             .k-button-icon {
                 min-width: auto;
@@ -470,10 +470,10 @@
             }
         }
         .k-scroll-button-left {
-            left: 0;
+            inset-inline-start: 0;
         }
         .k-scroll-button-right {
-            right: 0;
+            inset-inline-end: 0;
         }
     }
 

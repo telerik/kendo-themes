@@ -18,7 +18,7 @@
             // TODO: see what this does and use a better name
             .k-loading {
                 vertical-align: baseline;
-                margin-right: k-spacing(1);
+                margin-inline-end: k-spacing(1);
 
                 // TODO
                 display: none;
@@ -43,7 +43,7 @@
         }
 
         tr.k-footer + tr.k-footer td {
-            border-top-width: 0;
+            border-block-start-width: 0;
         }
 
         .k-i-caret-alt-down,
@@ -64,8 +64,8 @@
         .k-grid-toolbar {
             position: sticky;
             z-index: 3;
-            top: 0;
-            left: 0;
+            inset-block-start: 0;
+            inset-inline-start: 0;
         }
 
         .k-grid-header th {
@@ -82,14 +82,14 @@
         }
 
         tr.k-group-footer + tr.k-group-footer td {
-            border-top-width: 0;
+            border-block-start-width: 0;
         }
 
     }
 
     .k-drag-separator {
         display: inline-block;
-        border-right: 1px solid;
+        border-inline-end: 1px solid;
         height: 1em;
         vertical-align: top;
         margin-block: 0;

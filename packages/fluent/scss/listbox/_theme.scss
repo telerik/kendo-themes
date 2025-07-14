@@ -12,7 +12,7 @@
             );
         }
         .k-drop-hint {
-            border-top-color: var( --kendo-listbox-drop-hint-border-color, #{$kendo-listbox-drop-hint-border-color} );
+            border-block-start-color: var( --kendo-listbox-drop-hint-border-color, #{$kendo-listbox-drop-hint-border-color} );
         }
     }
 
