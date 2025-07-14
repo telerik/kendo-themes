@@ -11,7 +11,7 @@
 
         &::before {
             border-color: currentColor;
-            border-right-color: transparent !important; // stylelint-disable-line declaration-no-important
+            border-inline-end-color: transparent !important; // stylelint-disable-line declaration-no-important
         }
 
         &::after {
