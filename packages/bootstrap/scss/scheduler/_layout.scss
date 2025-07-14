@@ -11,7 +11,7 @@
     .k-event {
         &::before {
             display: none;
-            left: 0;
+            inset-inline-start: 0;
         }
 
         // Angular fix for stronger selector and smaller padding
@@ -24,7 +24,7 @@
         }
 
         .k-event-actions {
-            right: k-spacing(2);
+            inset-inline-end: k-spacing(2);
 
             &:first-child {
                 margin: .1ex .4ex 0 k-spacing(2);
@@ -36,7 +36,7 @@
         kendo-scheduler .k-event,
         .k-event {
             &::before {
-                right: 0;
+                inset-inline-end: 0;
             }
         }
     }

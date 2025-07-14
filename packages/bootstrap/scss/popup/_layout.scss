@@ -5,8 +5,8 @@
     @include kendo-popup--layout-base();
 
     .k-popup.k-column-menu {
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-block-start: 0;
+        padding-block-end: 0;
     }
 
 }
