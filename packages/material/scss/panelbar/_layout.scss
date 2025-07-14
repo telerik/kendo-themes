@@ -9,7 +9,7 @@
             @for $i from 1 through $kendo-panelbar-item-level-count {
                 &.k-level-#{$i} {
                     .k-link {
-                        padding-left: calc( #{$kendo-panelbar-item-padding-x} * #{$i} + #{$kendo-panelbar-item-padding-x} );
+                        padding-inline-start: calc( #{$kendo-panelbar-item-padding-x} * #{$i} + #{$kendo-panelbar-item-padding-x} );
                     }
                 }
             }
@@ -24,8 +24,8 @@
             @for $i from 1 through $kendo-panelbar-item-level-count {
                 &.k-level-#{$i} {
                     .k-link {
-                        padding-left: $kendo-panelbar-item-padding-x;
-                        padding-right: calc( #{$kendo-panelbar-item-padding-x} * #{$i} + #{$kendo-panelbar-item-padding-x} );
+                        padding-inline-start: $kendo-panelbar-item-padding-x;
+                        padding-inline-end: calc( #{$kendo-panelbar-item-padding-x} * #{$i} + #{$kendo-panelbar-item-padding-x} );
                     }
                 }
             }

@@ -5,8 +5,8 @@
     @include kendo-window--layout-base();
 
     .k-window-minimized {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        border-end-start-radius: 0;
+        border-end-end-radius: 0;
     }
 
     .k-window-title,

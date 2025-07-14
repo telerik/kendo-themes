@@ -9,7 +9,7 @@
 
     @include kendo-toolbar--theme-base();
     .k-toolbar-flat {
-        border-top-color: $kendo-toolbar-flat-border !important; // stylelint-disable-line declaration-no-important
+        border-block-start-color: $kendo-toolbar-flat-border !important; // stylelint-disable-line declaration-no-important
         border-inline-color: $kendo-toolbar-flat-border !important; // stylelint-disable-line declaration-no-important
     }
 }

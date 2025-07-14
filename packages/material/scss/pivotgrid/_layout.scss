@@ -6,12 +6,12 @@
     @include kendo-pivotgrid--layout-base();
 
     .k-pivot-rowheaders .k-grid tr .k-grid-footer {
-        border-bottom-width: 0;
+        border-block-end-width: 0;
     }
 
     .k-pivot .k-grid th,
     .k-pivot .k-grid td {
-        border-left-color: inherit;
+        border-inline-start-color: inherit;
     }
 
 }
