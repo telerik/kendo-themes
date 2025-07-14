@@ -147,8 +147,8 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
         border-width: var( --kendo-dock-manager-dock-preview-border-width, #{$kendo-dock-manager-dock-preview-border-width} );
         border-style: var( --kendo-dock-manager-dock-preview-border-style, #{$kendo-dock-manager-dock-preview-border-style} );
         border-radius: var( --kendo-dock-manager-dock-preview-border-radius, #{$kendo-dock-manager-dock-preview-border-radius} );

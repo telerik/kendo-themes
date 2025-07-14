@@ -183,10 +183,10 @@
             display: block;
             pointer-events: none;
             position: absolute;
-            left: -$kendo-button-border-width;
-            right: -$kendo-button-border-width;
-            top: -$kendo-button-border-width;
-            bottom: -$kendo-button-border-width;
+            inset-inline-start: -$kendo-button-border-width;
+            inset-inline-end: -$kendo-button-border-width;
+            inset-block-start: -$kendo-button-border-width;
+            inset-block-end: -$kendo-button-border-width;
             z-index: 0;
             transition: opacity .2s ease-in-out;
         }

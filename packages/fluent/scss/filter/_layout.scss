@@ -43,7 +43,7 @@
                 position: absolute;
                 width: var( --kendo-filter-padding-x, #{$kendo-filter-padding-x} );
                 height: var( --kendo-filter-line-size, #{$kendo-filter-line-size} );
-                top: 50%;
+                inset-block-start: 50%;
                 inset-inline-start: calc( var( --kendo-filter-padding-x, #{$kendo-filter-padding-x} ) * -1 );
             }
 
@@ -63,7 +63,7 @@
                 position: absolute;
                 width: var( --kendo-filter-line-size, #{$kendo-filter-line-size} );
                 height: 100%;
-                top: calc( var( --kendo-filter-padding-y, #{$kendo-filter-padding-y} ) * -1 );
+                inset-block-start: calc( var( --kendo-filter-padding-y, #{$kendo-filter-padding-y} ) * -1 );
                 inset-inline-start: 0;
             }
         }
@@ -74,8 +74,8 @@
             content: "";
             position: absolute;
             width: var( --kendo-filter-line-size, #{$kendo-filter-line-size} );
-            top: calc( ( var( --kendo-filter-padding-y, #{$kendo-filter-padding-y} ) * -1 ) - var( --kendo-filter-line-size, #{$kendo-filter-line-size} ) );
-            bottom: 50%;
+            inset-block-start: calc( ( var( --kendo-filter-padding-y, #{$kendo-filter-padding-y} ) * -1 ) - var( --kendo-filter-line-size, #{$kendo-filter-line-size} ) );
+            inset-block-end: 50%;
             inset-inline-start: calc( var( --kendo-filter-padding-x, #{$kendo-filter-padding-x} ) * -1 );
         }
 

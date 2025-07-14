@@ -67,7 +67,7 @@
         }
 
         > .k-panelbar-header + .k-panelbar-header {
-            border-top-width: var( --kendo-panelbar-item-border-width, #{$kendo-panelbar-item-border-width} );
+            border-block-start-width: var( --kendo-panelbar-item-border-width, #{$kendo-panelbar-item-border-width} );
         }
 
         // Absolute positioning should be applied only if the icon is a first child

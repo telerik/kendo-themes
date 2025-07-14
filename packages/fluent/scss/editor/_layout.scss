@@ -78,57 +78,57 @@
         z-index: 100;
 
         &.northwest {
-            top: 0;
-            left: 0;
+            inset-block-start: 0;
+            inset-inline-start: 0;
             transform: translate(-50%, -50%);
             cursor: nw-resize;
         }
 
         &.north {
-            top: 0;
-            left: 50%;
+            inset-block-start: 0;
+            inset-inline-start: 50%;
             transform: translate(-50%, -50%);
             cursor: n-resize;
         }
 
         &.northeast {
-            top: 0;
-            right: 0;
+            inset-block-start: 0;
+            inset-inline-end: 0;
             transform: translate(50%, -50%);
             cursor: ne-resize;
         }
 
         &.southwest {
-            left: 0;
-            bottom: 0;
+            inset-inline-start: 0;
+            inset-block-end: 0;
             transform: translate(-50%, 50%);
             cursor: sw-resize;
         }
 
         &.south {
-            bottom: 0;
-            left: 50%;
+            inset-block-end: 0;
+            inset-inline-start: 50%;
             transform: translate(-50%, 50%);
             cursor: s-resize;
         }
 
         &.southeast {
-            right: 0;
-            bottom: 0;
+            inset-inline-end: 0;
+            inset-block-end: 0;
             transform: translate(50%, 50%);
             cursor: se-resize;
         }
 
         &.west {
-            top: 50%;
-            left: 0;
+            inset-block-start: 50%;
+            inset-inline-start: 0;
             transform: translate(-50%, -50%);
             cursor: w-resize;
         }
 
         &.east {
-            top: 50%;
-            right: 0;
+            inset-block-start: 50%;
+            inset-inline-end: 0;
             transform: translate(50%, -50%);
             cursor: e-resize;
         }
@@ -199,7 +199,7 @@
                 content: attr(data-placeholder);
                 height: 0;
                 color: var( --kendo-editor-placeholder-text, #{$kendo-editor-placeholder-text} );
-                float: left;
+                float: inline-start;
                 opacity: var( --kendo-editor-placeholder-opacity, #{$kendo-editor-placeholder-opacity} );
                 cursor: text;
                 user-select: none;
@@ -249,10 +249,10 @@
             z-index: 2;
             position: absolute;
             content: "";
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
+            inset-inline-start: 0;
+            inset-inline-end: 0;
+            inset-block-start: 0;
+            inset-block-end: 0;
             pointer-events: none;
         }
     }
@@ -293,15 +293,15 @@
 
     .k-editor .k-resize-handle {
         position: absolute;
-        right: 0;
-        bottom: 0;
+        inset-inline-end: 0;
+        inset-block-end: 0;
         padding: 0;
         width: 0;
         height: 0;
         border-style: solid;
         border-width: 0 0 13px 13px;
         border-color: transparent;
-        border-bottom-color: inherit;
+        border-block-end-color: inherit;
         cursor: se-resize;
 
         .k-i-arrow-45-down-right,
@@ -329,9 +329,9 @@
 
         .k-matches-container {
             position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            inset-block-end: 0;
+            inset-inline-start: 0;
+            inset-inline-end: 0;
             padding: 0;
             display: flex;
             flex-direction: row;
@@ -407,7 +407,7 @@
             margin-block-end: k-spacing(4);
             padding-block: k-spacing(1);
             padding-inline: k-spacing(2);
-            border-top-width: 0;
+            border-block-start-width: 0;
             overflow: auto;
         }
 
@@ -458,7 +458,7 @@
         }
 
         .k-thumb {
-            float: left;
+            float: inline-start;
             margin-inline-end: k-spacing(1);
         }
 

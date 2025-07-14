@@ -27,13 +27,13 @@
 
         // Borders of items
         .k-listgroup-item + .k-listgroup-item {
-            border-top-width: var( --kendo-listgroup-item-border-width, #{$kendo-listgroup-item-border-width} );
+            border-block-start-width: var( --kendo-listgroup-item-border-width, #{$kendo-listgroup-item-border-width} );
         }
     }
     .k-listgroup-flush {
         @include border-radius( 0 );
-        border-left-width: 0;
-        border-right-width: 0;
+        border-inline-start-width: 0;
+        border-inline-end-width: 0;
     }
 
 
@@ -72,8 +72,8 @@
                 align-items: center;
                 flex: 0 0 auto;
                 position: absolute;
-                top: 50%;
-                right: 0;
+                inset-block-start: 50%;
+                inset-inline-end: 0;
                 transform: translateY(-50%);
             }
         }
@@ -160,8 +160,8 @@
             > .k-link {
 
                 > .k-select {
-                    right: auto;
-                    left: 0;
+                    inset-inline-end: auto;
+                    inset-inline-start: 0;
                 }
 
             }
@@ -170,8 +170,8 @@
         .k-listgroup-item-segmented {
 
             > .k-select {
-                border-right-width: 1px;
-                border-left-width: 0;
+                border-inline-end-width: 1px;
+                border-inline-start-width: 0;
             }
 
         }

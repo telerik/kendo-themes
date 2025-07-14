@@ -157,7 +157,7 @@
 
             .k-grid-content-sticky {
                 border-color: var( --kendo-grid-sticky-border, #{$kendo-grid-sticky-border} );
-                border-top-color: var( --kendo-grid-header-border, #{$kendo-grid-header-border} );
+                border-block-start-color: var( --kendo-grid-header-border, #{$kendo-grid-header-border} );
             }
         }
 
@@ -181,12 +181,12 @@
 
             .k-grouping-row + .k-table-row td,
             .k-grouping-row + .k-table-row .k-table-td {
-                border-top-color: var( --kendo-grid-header-border, #{$kendo-grid-header-border} );
+                border-block-start-color: var( --kendo-grid-header-border, #{$kendo-grid-header-border} );
             }
         }
 
         .k-grid-header-locked .k-table-th {
-            border-bottom-color: var( --kendo-grid-header-border, #{$kendo-grid-header-border} );
+            border-block-end-color: var( --kendo-grid-header-border, #{$kendo-grid-header-border} );
         }
 
         // Sticky columns

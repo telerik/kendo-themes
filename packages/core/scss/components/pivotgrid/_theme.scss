@@ -31,12 +31,12 @@
     }
 
     .k-pivotgrid-row-headers .k-pivotgrid-row .k-pivotgrid-cell:last-child {
-        border-right-color: $kendo-pivotgrid-alt-border;
+        border-inline-end-color: $kendo-pivotgrid-alt-border;
     }
 
     .k-pivotgrid-column-headers .k-pivotgrid-column-total:nth-last-of-type(2) .k-pivotgrid-cell:not(.k-pivotgrid-expanded),
     .k-pivotgrid-column-headers .k-pivotgrid-row:last-child {
-        border-bottom-color: $kendo-pivotgrid-alt-border;
+        border-block-end-color: $kendo-pivotgrid-alt-border;
     }
 
 

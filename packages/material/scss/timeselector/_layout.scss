@@ -38,7 +38,7 @@
     .k-time-list-highlight {
         width: auto;
         border-radius: k-border-radius(xxxl);
-        left: k-spacing(3);
-        right: k-spacing(3);
+        inset-inline-start: k-spacing(3);
+        inset-inline-end: k-spacing(3);
     }
 }

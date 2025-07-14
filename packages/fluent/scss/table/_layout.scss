@@ -151,9 +151,9 @@
             border-style: solid;
             border-color: currentColor;
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
+            inset-block-start: 0;
+            inset-inline-start: 0;
+            inset-inline-end: 0;
         }
 
         .k-table-th,
@@ -180,22 +180,22 @@
                 color: inherit;
                 background-color: inherit;
                 position: absolute;
-                top: 0;
+                inset-block-start: 0;
             }
         }
 
         .k-table-spacer-td {
             padding: 0 !important; // stylelint-disable-line declaration-no-important
             width: 0 !important; // stylelint-disable-line declaration-no-important
-            border-left-width: 0 !important; // stylelint-disable-line declaration-no-important
-            border-right-width: 0 !important; // stylelint-disable-line declaration-no-important
+            border-inline-start-width: 0 !important; // stylelint-disable-line declaration-no-important
+            border-inline-end-width: 0 !important; // stylelint-disable-line declaration-no-important
         }
 
         .k-table-group-td {
             padding: 0 !important; // stylelint-disable-line declaration-no-important
             width: 0 !important; // stylelint-disable-line declaration-no-important
-            border-left-width: 0 !important; // stylelint-disable-line declaration-no-important
-            border-right-width: 0 !important; // stylelint-disable-line declaration-no-important
+            border-inline-start-width: 0 !important; // stylelint-disable-line declaration-no-important
+            border-inline-end-width: 0 !important; // stylelint-disable-line declaration-no-important
             overflow: visible; // stylelint-disable-line declaration-no-important
 
             > span {

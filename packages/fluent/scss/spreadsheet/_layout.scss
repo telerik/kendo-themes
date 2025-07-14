@@ -54,7 +54,7 @@
 
     // Toolbar
     .k-spreadsheet-toolbar {
-        border-top-width: 0;
+        border-block-start-width: 0;
         border-inline-width: 0;
     }
 
@@ -376,7 +376,7 @@
     .k-spreadsheet-column-header > .k-selection-partial,
     .k-spreadsheet-column-header > .k-selection-full {
         &::after {
-            border-bottom-width: 2px;
+            border-block-end-width: 2px;
             display: block;
         }
     }
@@ -456,7 +456,7 @@
     .k-spreadsheet .k-single-selection {}
     .k-spreadsheet .k-single-selection::after {
         content: "";
-        margin-bottom: -4px;
+        margin-block-end: -4px;
         margin-inline-end: -4px;
         width: 6px;
         height: 6px;
@@ -759,7 +759,7 @@
             div {
                 display: flex;
                 align-self: flex-end;
-                margin-bottom: var( --kendo-spreadsheet-insert-image-dialog-text-margin-bottom, #{$kendo-spreadsheet-insert-image-dialog-text-margin-bottom} );
+                margin-block-end: var( --kendo-spreadsheet-insert-image-dialog-text-margin-bottom, #{$kendo-spreadsheet-insert-image-dialog-text-margin-bottom} );
                 pointer-events: none;
             }
 

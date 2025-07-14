@@ -49,7 +49,7 @@
         overflow: visible;
 
         .k-actions {
-            margin-top: 0;
+            margin-block-start: 0;
         }
     }
 
@@ -119,7 +119,7 @@
         width: 100%;
 
         > .k-menu-item + .k-menu-item {
-            margin-top: $kendo-menu-item-spacing;
+            margin-block-start: $kendo-menu-item-spacing;
         }
 
         > .k-menu-item > .k-menu-link {
@@ -176,7 +176,7 @@
         position: absolute;
 
         .k-menu-item + .k-menu-item {
-            margin-top: $kendo-menu-popup-item-spacing;
+            margin-block-start: $kendo-menu-popup-item-spacing;
         }
 
         .k-separator {

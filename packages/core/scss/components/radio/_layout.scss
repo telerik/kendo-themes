@@ -39,8 +39,8 @@
             transform: scale(0) translate(-50%, -50%);
             overflow: hidden;
             position: absolute;
-            top: 50%;
-            left: 50%;
+            inset-block-start: 50%;
+            inset-inline-start: 50%;
         }
 
         @if $kendo-radio-indicator-type == "image" {
@@ -173,8 +173,8 @@
             content: "";
             display: block;
             position: absolute;
-            left: 50%;
-            top: 50%;
+            inset-inline-start: 50%;
+            inset-block-start: 50%;
             border-radius: 100%;
             z-index: -1;
             transition: opacity 100ms linear, transform 150ms cubic-bezier(.4, 0, .2, 1);

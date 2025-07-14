@@ -21,8 +21,8 @@
         .k-grid-header-locked .k-table-th,
         .k-grid-content-locked td,
         .k-grid-content-locked .k-table-td {
-            border-top-color: $kendo-grid-header-border;
-            border-bottom-color: $kendo-grid-header-border;
+            border-block-start-color: $kendo-grid-header-border;
+            border-block-end-color: $kendo-grid-header-border;
 
             .k-group-footer {
                 &:hover td,
@@ -38,11 +38,11 @@
         .k-master-row {
             .k-grid-content-sticky {
                 border-color: $kendo-grid-sticky-border;
-                border-bottom-color: $kendo-grid-header-border;
+                border-block-end-color: $kendo-grid-header-border;
             }
             .k-grid-row-sticky {
-                border-top-color: $kendo-grid-sticky-border;
-                border-bottom-color: $kendo-grid-sticky-border;
+                border-block-start-color: $kendo-grid-sticky-border;
+                border-block-end-color: $kendo-grid-sticky-border;
             }
         }
     }

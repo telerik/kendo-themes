@@ -5,7 +5,7 @@
     /// @group accessibility
     .k-sr-only {
         position: absolute;
-        left: -1px;
+        inset-inline-start: -1px;
         width: 1px;
         height: 1px;
         overflow: hidden;

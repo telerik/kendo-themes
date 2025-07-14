@@ -77,10 +77,10 @@
     // Multiple expanders
     .k-expander + .k-expander.k-expanded,
     .k-expander.k-expanded + .k-expander {
-        margin-top: var( --kendo-expander-margin-y, #{$kendo-expander-margin-y} );
+        margin-block-start: var( --kendo-expander-margin-y, #{$kendo-expander-margin-y} );
     }
 
     .k-expander:not(.k-expanded) + .k-expander:not(.k-expanded) {
-        border-top-width: 0;
+        border-block-start-width: 0;
     }
 }

@@ -291,14 +291,14 @@
         width: 30%;
         line-height: var( --kendo-form-line-height, #{$kendo-form-line-height} );
         text-align: end;
-        float: left;
+        float: inline-start;
         clear: both;
     }
     .k-edit-field {
         margin-block-end: k-spacing(4);
         width: 65%;
-        float: right;
-        clear: right;
+        float: inline-end;
+        clear: inline-end;
         position: relative;
 
         &.k-no-editor {

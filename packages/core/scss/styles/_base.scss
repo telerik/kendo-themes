@@ -106,8 +106,8 @@
     // Centering
     .k-centered {
         position: absolute;
-        top: 50%;
-        left: 50%;
+        inset-block-start: 50%;
+        inset-inline-start: 50%;
         transform: translate(-50%, -50%);
     }
 
@@ -120,7 +120,7 @@
     .k-pdf-export-shadow {
         position: absolute;
         overflow: hidden;
-        left: -15000px;
+        inset-inline-start: -15000px;
         width: 14400px;
     }
 

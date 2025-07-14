@@ -21,7 +21,7 @@
     .k-virtual-scroller-content {
         position: absolute;
         width: 100%;
-        top: 0;
+        inset-block-start: 0;
         inset-inline-start: 0;
     }
 

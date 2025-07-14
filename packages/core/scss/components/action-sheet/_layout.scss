@@ -10,8 +10,8 @@
         max-width: clamp(100vw, 100%, 100%);
         max-height: clamp(100vh, 100%, 100%);
         position: fixed;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
         z-index: 9999;
         overflow: hidden;
         transform: translateZ(0);
@@ -30,8 +30,8 @@
             overflow: hidden;
             position: absolute;
             z-index: 2;
-            top: 0;
-            left: 0;
+            inset-block-start: 0;
+            inset-inline-start: 0;
             pointer-events: none;
 
             > .k-child-animation-container {
@@ -98,8 +98,8 @@
     .k-actionsheet-titlebar {
         padding-block: $kendo-actionsheet-titlebar-padding-y;
         padding-inline: $kendo-actionsheet-titlebar-padding-x;
-        border-bottom-width: if( $kendo-actionsheet-titlebar-border-width, $kendo-actionsheet-titlebar-border-width, null );
-        border-bottom-style: solid;
+        border-block-end-width: if( $kendo-actionsheet-titlebar-border-width, $kendo-actionsheet-titlebar-border-width, null );
+        border-block-end-style: solid;
         font-size: $kendo-actionsheet-titlebar-font-size;
         font-family: $kendo-actionsheet-titlebar-font-family;
         line-height: $kendo-actionsheet-titlebar-line-height;
@@ -138,8 +138,8 @@
     // Actionsheet footer
     .k-actionsheet-footer {
         flex: none;
-        border-top-width: $kendo-actionsheet-footer-border-width;
-        border-top-style: solid;
+        border-block-start-width: $kendo-actionsheet-footer-border-width;
+        border-block-start-style: solid;
     }
 
 
@@ -199,33 +199,33 @@
     .k-actionsheet-top {
         @include border-bottom-radius( $kendo-actionsheet-border-radius );
         border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
-        border-top-width: if( $kendo-actionsheet-border-width, 0, null );
-        top: 0;
+        border-block-start-width: if( $kendo-actionsheet-border-width, 0, null );
+        inset-block-start: 0;
         inset-inline-start: 50%;
         transform: translateX( -50% );
     }
     .k-actionsheet-bottom {
         @include border-top-radius( $kendo-actionsheet-border-radius );
         border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
-        border-bottom-width: if( $kendo-actionsheet-border-width, 0, null );
-        bottom: 0;
+        border-block-end-width: if( $kendo-actionsheet-border-width, 0, null );
+        inset-block-end: 0;
         inset-inline-start: 50%;
         transform: translateX( -50% );
     }
     .k-actionsheet-left {
         @include border-right-radius( $kendo-actionsheet-border-radius );
         border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
-        border-left-width: if( $kendo-actionsheet-border-width, 0, null );
-        left: 0;
-        top: 50%;
+        border-inline-start-width: if( $kendo-actionsheet-border-width, 0, null );
+        inset-inline-start: 0;
+        inset-block-start: 50%;
         transform: translateY( -50% );
     }
     .k-actionsheet-right {
         @include border-left-radius( $kendo-actionsheet-border-radius );
         border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
-        border-right-width: if( $kendo-actionsheet-border-width, 0, null );
-        right: 0;
-        top: 50%;
+        border-inline-end-width: if( $kendo-actionsheet-border-width, 0, null );
+        inset-inline-end: 0;
+        inset-block-start: 50%;
         transform: translateY( -50% );
     }
     .k-actionsheet-fullscreen {
@@ -238,10 +238,10 @@
 
     // Action sheet in popup
     .k-animation-container > .k-actionsheet {
-        top: auto;
-        right: auto;
-        bottom: auto;
-        left: auto;
+        inset-block-start: auto;
+        inset-inline-end: auto;
+        inset-block-end: auto;
+        inset-inline-start: auto;
         transform: none;
     }
 
@@ -325,18 +325,18 @@
         .k-datetime-calendar-wrap {
             width: 100%;
             position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
+            inset-block-start: 0;
+            inset-inline-start: 0;
+            inset-block-end: 0;
             flex: 0 0 100%;
         }
 
         .k-datetime-time-wrap {
             width: 100%;
             position: absolute;
-            top: 0;
-            left: 100%;
-            bottom: 0;
+            inset-block-start: 0;
+            inset-inline-start: 100%;
+            inset-block-end: 0;
             flex: 0 0 100%;
         }
 

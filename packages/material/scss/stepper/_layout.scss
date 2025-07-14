@@ -11,14 +11,14 @@
 
     .k-step-list-horizontal {
         & ~ .k-progressbar {
-            top: calc( (#{$kendo-stepper-indicator-height} / 2  ) - (#{$kendo-stepper-progressbar-size} / 2 ) + $kendo-stepper-indicator-focus-offset ) ;
+            inset-block-start: calc( (#{$kendo-stepper-indicator-height} / 2  ) - (#{$kendo-stepper-progressbar-size} / 2 ) + $kendo-stepper-indicator-focus-offset ) ;
         }
     }
 
 
     .k-step-list-vertical {
         & ~ .k-progressbar {
-            left: calc( (#{$kendo-stepper-indicator-height} / 2  ) - (#{$kendo-stepper-progressbar-size} / 2 ) + $kendo-stepper-indicator-focus-offset ) ;
+            inset-inline-start: calc( (#{$kendo-stepper-indicator-height} / 2  ) - (#{$kendo-stepper-progressbar-size} / 2 ) + $kendo-stepper-indicator-focus-offset ) ;
         }
     }
 

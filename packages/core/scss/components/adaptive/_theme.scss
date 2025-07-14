@@ -23,7 +23,7 @@
         .k-grid-mobile {
 
             .k-column-active + th.k-header {
-                border-left-color: k-color(on-app-surface);
+                border-inline-start-color: k-color(on-app-surface);
             }
 
             .k-resize-handle-inner::before {

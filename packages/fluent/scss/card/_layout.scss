@@ -163,12 +163,12 @@
 
     .k-card-separator.k-separator-horizontal,
     .k-card-vertical > .k-card-separator {
-        border-top-width: 1px;
+        border-block-start-width: 1px;
     }
 
     .k-card-separator.k-separator-vertical,
     .k-card-horizontal > .k-card-separator {
-        border-left-width: 1px;
+        border-inline-start-width: 1px;
     }
 
     .k-card > .k-hr {
@@ -238,11 +238,11 @@
             z-index: 1;
 
             &:first-child {
-                left: var( --kendo-card-deck-scroll-button-offset, #{$kendo-card-deck-scroll-button-offset} );
+                inset-inline-start: var( --kendo-card-deck-scroll-button-offset, #{$kendo-card-deck-scroll-button-offset} );
             }
 
             &:last-child {
-                right: var( --kendo-card-deck-scroll-button-offset, #{$kendo-card-deck-scroll-button-offset} );
+                inset-inline-end: var( --kendo-card-deck-scroll-button-offset, #{$kendo-card-deck-scroll-button-offset} );
             }
         }
 
@@ -298,23 +298,23 @@
     }
 
     .k-card-callout.k-callout-n {
-        top: 0;
-        left: 50%;
+        inset-block-start: 0;
+        inset-inline-start: 50%;
         transform: translate(-50%, -50%) rotate(45deg);
     }
     .k-card-callout.k-callout-e {
-        top: 50%;
-        right: 0;
+        inset-block-start: 50%;
+        inset-inline-end: 0;
         transform: translate(50%, -50%) rotate(-45deg);
     }
     .k-card-callout.k-callout-s {
-        bottom: 0;
-        left: 50%;
+        inset-block-end: 0;
+        inset-inline-start: 50%;
         transform: translate(-50%, 50%) rotate(45deg);
     }
     .k-card-callout.k-callout-w {
-        top: 50%;
-        left: 0;
+        inset-block-start: 50%;
+        inset-inline-start: 0;
         transform: translate(-50%, -50%) rotate(45deg);
     }
 

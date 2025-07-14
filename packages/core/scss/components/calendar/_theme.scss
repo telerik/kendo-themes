@@ -193,21 +193,21 @@
                 content: "";
                 display: block;
                 position: absolute;
-                top: 0;
-                bottom: 0;
+                inset-block-start: 0;
+                inset-block-end: 0;
                 width: $kendo-calendar-range-split-size;
             }
         }
 
         .k-range-split-start::after {
-            left: -$kendo-calendar-range-split-size;
-            right: auto;
+            inset-inline-start: -$kendo-calendar-range-split-size;
+            inset-inline-end: auto;
             background-image: linear-gradient(to left, $kendo-calendar-range-bg, transparent 100%);
         }
 
         .k-range-split-end::after {
-            right: -$kendo-calendar-range-split-size;
-            left: auto;
+            inset-inline-end: -$kendo-calendar-range-split-size;
+            inset-inline-start: auto;
             background-image: linear-gradient(to right, $kendo-calendar-range-bg, transparent 100%);
         }
     }

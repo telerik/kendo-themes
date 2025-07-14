@@ -180,7 +180,7 @@
         // Dependency lines SVG
         .k-gantt-dependencies-svg {
             position: absolute;
-            top: 0;
+            inset-block-start: 0;
             inset-inline-start: 0;
             overflow: visible;
             pointer-events: none;
@@ -206,7 +206,7 @@
 
     // Gantt views
     .k-gantt-views-wrapper {
-        margin-left: auto;
+        margin-inline-start: auto;
 
         .k-views-dropdown {
             width: auto;
@@ -336,7 +336,7 @@
         border-color: inherit;
         position: absolute;
         z-index: 0;
-        top: 0;
+        inset-block-start: 0;
         inset-inline-start: 0;
     }
     .k-gantt-rows {}
@@ -346,7 +346,7 @@
     .k-gantt-dependencies {
         opacity: .7;
         position: absolute;
-        top: 0;
+        inset-block-start: 0;
         inset-inline-start: 0;
 
         // Arrows
@@ -356,15 +356,15 @@
             height: 0;
             border: 5px solid transparent;
             position: absolute;
-            top: -4px;
+            inset-block-start: -4px;
         }
         .k-arrow-e {
-            border-left-color: currentColor;
-            right: -6px;
+            border-inline-start-color: currentColor;
+            inset-inline-end: -6px;
         }
         .k-arrow-w {
-            border-right-color: currentColor;
-            left: -6px;
+            border-inline-end-color: currentColor;
+            inset-inline-start: -6px;
         }
     }
 
@@ -402,6 +402,10 @@
             vertical-align: middle;
         }
         td::after { content: "\200b"; }
+
+        tbody {
+            text-align: start;
+        }
     }
 
     .k-task-wrap {
@@ -429,7 +433,7 @@
         cursor: pointer;
         display: none;
         position: absolute;
-        top: 50%;
+        inset-block-start: 50%;
         transform: translateY(-50%);
     }
     .k-task-wrap:hover .k-task-dot,
@@ -445,8 +449,8 @@
         border-radius: 100%;
         display: inline-block;
         position: absolute;
-        top: 50%;
-        left: 50%;
+        inset-block-start: 50%;
+        inset-inline-start: 50%;
         transform: translate(-50%, -50%);
     }
     .k-task-dot:hover::before,
@@ -461,10 +465,10 @@
         width: 0;
         height: 0;
         border: 5px solid transparent;
-        border-top-width: 0;
-        border-bottom-color: inherit;
+        border-block-start-width: 0;
+        border-block-end-color: inherit;
         position: absolute;
-        bottom: 0;
+        inset-block-end: 0;
         // display: none;
         cursor: ew-resize;
         visibility: hidden;
@@ -508,17 +512,17 @@
             height: 0;
             border: 8px solid transparent;
             position: absolute;
-            top: 0;
+            inset-block-start: 0;
             display: none;
         }
 
         &::before {
-            border-left-color: currentColor;
-            left: 0;
+            border-inline-start-color: currentColor;
+            inset-inline-start: 0;
         }
         &::after {
-            border-right-color: currentColor;
-            right: 0;
+            border-inline-end-color: currentColor;
+            inset-inline-end: 0;
         }
     }
     .k-task-summary-complete {
@@ -550,26 +554,26 @@
 
         .k-resize-handle::before {
             position: absolute;
-            top: 2px;
-            bottom: 2px;
+            inset-block-start: 2px;
+            inset-block-end: 2px;
         }
 
         .k-resize-w {
-            left: 0;
+            inset-inline-start: 0;
         }
 
         .k-resize-w::before {
-            left: 2px;
-            border-left-width: 1px;
+            inset-inline-start: 2px;
+            border-inline-start-width: 1px;
         }
 
         .k-resize-e {
-            right: 0;
+            inset-inline-end: 0;
         }
 
         .k-resize-e::before {
-            right: 2px;
-            border-left-width: 1px;
+            inset-inline-end: 2px;
+            border-inline-start-width: 1px;
         }
 
         &:hover .k-resize-handle,
@@ -582,8 +586,8 @@
         width: 20%;
         position: absolute;
         z-index: 1;
-        top: 0;
-        bottom: 0;
+        inset-block-start: 0;
+        inset-block-end: 0;
         inset-inline-start: 0;
     }
     .k-task-content {
@@ -621,8 +625,8 @@
         position: absolute;
         display: inline-block;
         z-index: 2;
-        margin-left: 20px;
-        margin-top: -2px;
+        margin-inline-start: 20px;
+        margin-block-start: -2px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -658,7 +662,7 @@
         .k-gantt-dependencies,
         .k-task-dot,
         .k-resources-wrap {
-            margin-top: var( --kendo-gantt-planned-dependency-margin-y, #{$kendo-gantt-planned-dependency-margin-y} );
+            margin-block-start: var( --kendo-gantt-planned-dependency-margin-y, #{$kendo-gantt-planned-dependency-margin-y} );
         }
 
         .k-task-wrap {
@@ -671,15 +675,15 @@
         }
 
         .k-task-wrap.k-drag-hint {
-            top: var( --kendo-gantt-planned-single-drag-hint-top, #{$kendo-gantt-planned-single-drag-hint-top} );
+            inset-block-start: var( --kendo-gantt-planned-single-drag-hint-top, #{$kendo-gantt-planned-single-drag-hint-top} );
         }
 
         .k-summary-wrap.k-drag-hint {
-            top: var( --kendo-gantt-planned-summary-drag-hint-top, #{$kendo-gantt-planned-summary-drag-hint-top} );
+            inset-block-start: var( --kendo-gantt-planned-summary-drag-hint-top, #{$kendo-gantt-planned-summary-drag-hint-top} );
         }
 
         .k-milestone-wrap.k-drag-hint {
-            top: var( --kendo-gantt-planned-milestone-drag-hint-top, #{$kendo-gantt-planned-milestone-drag-hint-top} );
+            inset-block-start: var( --kendo-gantt-planned-milestone-drag-hint-top, #{$kendo-gantt-planned-milestone-drag-hint-top} );
         }
     }
 
@@ -733,7 +737,7 @@
         display: flex;
 
         .k-resize-handle {
-            right: 0;
+            inset-inline-end: 0;
             z-index: 2;
             visibility: hidden;
             margin-inline-end: var( --kendo-gantt-planned-offset-resize-handler-margin-x, #{$kendo-gantt-planned-offset-resize-handler-margin-x} );
@@ -742,8 +746,8 @@
         .k-resize-handle::before {
             border-inline-start-width: 1px;
             position: absolute;
-            top: var( --kendo-gantt-offset-resize-handler-top, #{$kendo-gantt-offset-resize-handler-top} );
-            bottom: .5em;
+            inset-block-start: var( --kendo-gantt-offset-resize-handler-top, #{$kendo-gantt-offset-resize-handler-top} );
+            inset-block-end: .5em;
             margin-inline-end: 2px;
         }
     }
@@ -766,7 +770,7 @@
             width: 4px;
             height: 100%;
             position: absolute;
-            top: 0;
+            inset-block-start: 0;
             inset-inline-start: 0;
         }
     }
@@ -792,7 +796,7 @@
     // PDF Export
     .k-pdf-export-shadow {
         .k-gantt {
-            float: left;
+            float: inline-start;
         }
 
         .k-gantt,

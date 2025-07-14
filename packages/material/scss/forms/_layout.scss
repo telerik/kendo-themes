@@ -36,7 +36,7 @@
         }
 
         .k-validator-tooltip {
-            bottom: 0;
+            inset-block-end: 0;
             // TODO: do we need the tooltip variable?
             transform: translateY(100%) translateY($kendo-tooltip-callout-size);
         }

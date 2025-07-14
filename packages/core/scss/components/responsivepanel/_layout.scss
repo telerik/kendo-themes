@@ -10,7 +10,7 @@
         overflow: auto;
         min-width: 320px;
         height: 100%;
-        top: 0;
+        inset-block-start: 0;
 
         & + * {
             overflow: auto;
@@ -22,11 +22,11 @@
     }
     .k-rpanel-left {
         transform: translateX(-100%) translateZ(0);
-        left: 0;
+        inset-inline-start: 0;
     }
     .k-rpanel-right {
         transform: translateX(100%) translateZ(0);
-        right: 0;
+        inset-inline-end: 0;
     }
 
     // Top

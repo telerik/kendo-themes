@@ -7,7 +7,7 @@
     @include kendo-timeline--layout-base();
 
     .k-timeline-card .k-card-header {
-        padding-top: $kendo-card-header-padding-x;
+        padding-block-start: $kendo-card-header-padding-x;
     }
 
 }

@@ -9,8 +9,8 @@
         max-width: clamp(100vw, 100%, 100%);
         max-height: clamp(100vh, 100%, 100%);
         position: fixed;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
         z-index: 9999;
         overflow: hidden;
         transform: translateZ(0);
@@ -33,8 +33,8 @@
             overflow: hidden;
             position: absolute;
             z-index: 2;
-            top: 0;
-            left: 0;
+            inset-block-start: 0;
+            inset-inline-start: 0;
             pointer-events: none;
 
             > .k-child-animation-container {
@@ -108,8 +108,8 @@
     .k-actionsheet-header {
         padding-inline: var( --kendo-actionsheet-header-padding-x, #{$kendo-actionsheet-header-padding-x} );
         padding-block: var( --kendo-actionsheet-header-padding-y, #{$kendo-actionsheet-header-padding-y} );
-        border-bottom-width: var( --kendo-actionsheet-header-border-width, #{$kendo-actionsheet-header-border-width} );
-        border-bottom-style: solid;
+        border-block-end-width: var( --kendo-actionsheet-header-border-width, #{$kendo-actionsheet-header-border-width} );
+        border-block-end-style: solid;
         box-sizing: border-box;
         font-size: var( --kendo-actionsheet-header-font-size, #{$kendo-actionsheet-header-font-size} );
         font-family: var( --kendo-actionsheet-header-font-family, #{$kendo-actionsheet-header-font-family} );
@@ -159,8 +159,8 @@
     // Actionsheet footer
     .k-actionsheet-footer {
         flex: none;
-        border-top-width: $kendo-actionsheet-footer-border-width;
-        border-top-style: solid;
+        border-block-start-width: $kendo-actionsheet-footer-border-width;
+        border-block-start-style: solid;
     }
 
 
@@ -229,8 +229,8 @@
     .k-actionsheet-top {
         @include border-bottom-radius( var( --kendo-actionsheet-border-radius, #{$kendo-actionsheet-border-radius} ) );
         border-width: var( --kendo-actionsheet-border-width, #{$kendo-actionsheet-border-width} );
-        border-top-width: 0;
-        top: 0;
+        border-block-start-width: 0;
+        inset-block-start: 0;
         inset-inline-start: 50%;
         transform: translateX( -50% );
     }
@@ -238,8 +238,8 @@
     .k-actionsheet-bottom {
         @include border-top-radius( var( --kendo-actionsheet-border-radius, #{$kendo-actionsheet-border-radius} ) );
         border-width: var( --kendo-actionsheet-border-width, #{$kendo-actionsheet-border-width} );
-        border-bottom-width: 0;
-        bottom: 0;
+        border-block-end-width: 0;
+        inset-block-end: 0;
         inset-inline-start: 50%;
         transform: translateX( -50% );
     }
@@ -247,28 +247,28 @@
     .k-actionsheet-left {
         @include border-right-radius( var( --kendo-actionsheet-border-radius, #{$kendo-actionsheet-border-radius} ) );
         border-width: var( --kendo-actionsheet-border-width, #{$kendo-actionsheet-border-width} );
-        border-left-width: var( --kendo-actionsheet-border-width, #{$kendo-actionsheet-border-width} );
-        left: 0;
-        top: 50%;
+        border-inline-start-width: var( --kendo-actionsheet-border-width, #{$kendo-actionsheet-border-width} );
+        inset-inline-start: 0;
+        inset-block-start: 50%;
         transform: translateY( -50% );
     }
 
     .k-actionsheet-right {
         @include border-left-radius( var( --kendo-actionsheet-border-radius, #{$kendo-actionsheet-border-radius} ) );
         border-width: var( --kendo-actionsheet-border-width, #{$kendo-actionsheet-border-width} );
-        border-right-width: 0;
-        right: 0;
-        top: 50%;
+        border-inline-end-width: 0;
+        inset-inline-end: 0;
+        inset-block-start: 50%;
         transform: translateY( -50% );
     }
 
 
     // Action sheet in popup
     .k-animation-container > .k-actionsheet {
-        top: auto;
-        right: auto;
-        bottom: auto;
-        left: auto;
+        inset-block-start: auto;
+        inset-inline-end: auto;
+        inset-block-end: auto;
+        inset-inline-start: auto;
         transform: none;
     }
 
@@ -351,18 +351,18 @@
         .k-datetime-calendar-wrap {
             width: 100%;
             position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
+            inset-block-start: 0;
+            inset-inline-start: 0;
+            inset-block-end: 0;
             flex: 0 0 100%;
         }
 
         .k-datetime-time-wrap {
             width: 100%;
             position: absolute;
-            top: 0;
-            left: 100%;
-            bottom: 0;
+            inset-block-start: 0;
+            inset-inline-start: 100%;
+            inset-block-end: 0;
             flex: 0 0 100%;
         }
 

@@ -186,8 +186,8 @@
         // Dependency lines SVG
         .k-gantt-dependencies-svg {
             position: absolute;
-            top: 0;
-            left: 0;
+            inset-block-start: 0;
+            inset-inline-start: 0;
             overflow: visible;
             pointer-events: none;
             z-index: 2;
@@ -223,7 +223,7 @@
 
     // Gantt views
     .k-gantt-views-wrapper {
-        margin-left: auto;
+        margin-inline-start: auto;
 
         .k-views-dropdown {
             width: auto;
@@ -346,8 +346,8 @@
         border-color: inherit;
         position: absolute;
         z-index: 0;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
     }
     .k-gantt-rows {}
 
@@ -356,8 +356,8 @@
     .k-gantt-dependencies {
         opacity: .7;
         position: absolute;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
 
         // Arrows
         .k-arrow-e,
@@ -366,15 +366,15 @@
             height: 0;
             border: 5px solid transparent;
             position: absolute;
-            top: -4px;
+            inset-block-start: -4px;
         }
         .k-arrow-e {
-            border-left-color: currentColor;
-            right: -6px;
+            border-inline-start-color: currentColor;
+            inset-inline-end: -6px;
         }
         .k-arrow-w {
-            border-right-color: currentColor;
-            left: -6px;
+            border-inline-end-color: currentColor;
+            inset-inline-start: -6px;
         }
     }
 
@@ -440,7 +440,7 @@
         cursor: pointer;
         display: none;
         position: absolute;
-        top: 50%;
+        inset-block-start: 50%;
         transform: translateY(-50%);
     }
     .k-task-wrap:hover .k-task-dot,
@@ -456,25 +456,25 @@
         border-radius: 100%;
         display: inline-block;
         position: absolute;
-        top: 50%;
-        left: 50%;
+        inset-block-start: 50%;
+        inset-inline-start: 50%;
         transform: translate(-50%, -50%);
     }
     .k-task-dot:hover::before,
     .k-task-dot.k-hover::before {
         border-width: 1px;
     }
-    .k-task-start { left: 0; }
-    .k-task-end { right: 0; }
+    .k-task-start { inset-inline-start: 0; }
+    .k-task-end { inset-inline-end: 0; }
     .k-task-draghandle {
-        margin-left: 16px;
+        margin-inline-start: 16px;
         width: 0;
         height: 0;
         border: 5px solid transparent;
-        border-top-width: 0;
-        border-bottom-color: inherit;
+        border-block-start-width: 0;
+        border-block-end-color: inherit;
         position: absolute;
-        bottom: 0;
+        inset-block-end: 0;
         // display: none;
         cursor: ew-resize;
         visibility: hidden;
@@ -517,17 +517,17 @@
             height: 0;
             border: 8px solid transparent;
             position: absolute;
-            top: 0;
+            inset-block-start: 0;
             display: none;
         }
 
         &::before {
-            border-left-color: currentColor;
-            left: 0;
+            border-inline-start-color: currentColor;
+            inset-inline-start: 0;
         }
         &::after {
-            border-right-color: currentColor;
-            right: 0;
+            border-inline-end-color: currentColor;
+            inset-inline-end: 0;
         }
     }
     .k-task-summary-complete {
@@ -559,26 +559,26 @@
 
         .k-resize-handle::before {
             position: absolute;
-            top: 2px;
-            bottom: 2px;
+            inset-block-start: 2px;
+            inset-block-end: 2px;
         }
 
         .k-resize-w {
-            left: 0;
+            inset-inline-start: 0;
         }
 
         .k-resize-w::before {
-            left: 2px;
-            border-left-width: 1px;
+            inset-inline-start: 2px;
+            border-inline-start-width: 1px;
         }
 
         .k-resize-e {
-            right: 0;
+            inset-inline-end: 0;
         }
 
         .k-resize-e::before {
-            right: 2px;
-            border-left-width: 1px;
+            inset-inline-end: 2px;
+            border-inline-start-width: 1px;
         }
 
         &:hover .k-resize-handle,
@@ -591,9 +591,9 @@
         width: 20%;
         position: absolute;
         z-index: 1;
-        top: 0;
-        bottom: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-block-end: 0;
+        inset-inline-start: 0;
     }
     .k-task-content {
         position: relative;
@@ -628,8 +628,8 @@
         position: absolute;
         display: inline-block;
         z-index: 2;
-        margin-left: 20px;
-        margin-top: -2px;
+        margin-inline-start: 20px;
+        margin-block-start: -2px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -665,7 +665,7 @@
         .k-gantt-dependencies,
         .k-task-dot,
         .k-resources-wrap {
-            margin-top: $kendo-gantt-planned-dependency-margin-y;
+            margin-block-start: $kendo-gantt-planned-dependency-margin-y;
         }
 
         .k-task-wrap {
@@ -678,15 +678,15 @@
         }
 
         .k-task-wrap.k-drag-hint {
-            top: $kendo-gantt-planned-single-drag-hint-top;
+            inset-block-start: $kendo-gantt-planned-single-drag-hint-top;
         }
 
         .k-summary-wrap.k-drag-hint {
-            top: $kendo-gantt-planned-summary-drag-hint-top;
+            inset-block-start: $kendo-gantt-planned-summary-drag-hint-top;
         }
 
         .k-milestone-wrap.k-drag-hint {
-            top: $kendo-gantt-planned-milestone-drag-hint-top;
+            inset-block-start: $kendo-gantt-planned-milestone-drag-hint-top;
         }
     }
 
@@ -710,7 +710,7 @@
         }
 
         .k-task-moment.k-moment-left {
-            margin-left: $kendo-gantt-planned-moment-left-margin-x;
+            margin-inline-start: $kendo-gantt-planned-moment-left-margin-x;
         }
 
         &:hover .k-task-duration {
@@ -719,7 +719,7 @@
     }
 
     .k-milestone-wrap .k-task-moment {
-        margin-left: $kendo-gantt-planned-milestone-moment-margin-x;
+        margin-inline-start: $kendo-gantt-planned-milestone-moment-margin-x;
     }
 
     // Planned Tooltip
@@ -739,18 +739,18 @@
         display: flex;
 
         .k-resize-handle {
-            right: 0;
+            inset-inline-end: 0;
             z-index: 2;
             visibility: hidden;
-            margin-right: $kendo-gantt-planned-offset-resize-handler-margin-x;
+            margin-inline-end: $kendo-gantt-planned-offset-resize-handler-margin-x;
         }
 
         .k-resize-handle::before {
-            border-left-width: 1px;
+            border-inline-start-width: 1px;
             position: absolute;
-            top: $kendo-gantt-offset-resize-handler-top;
-            bottom: .5em;
-            margin-right: 2px;
+            inset-block-start: $kendo-gantt-offset-resize-handler-top;
+            inset-block-end: .5em;
+            margin-inline-end: 2px;
         }
     }
 
@@ -772,8 +772,8 @@
             width: 4px;
             height: 100%;
             position: absolute;
-            top: 0;
-            left: 0;
+            inset-block-start: 0;
+            inset-inline-start: 0;
         }
     }
     .k-gantt-tooltip-validation-row {
@@ -802,7 +802,7 @@
     // Gantt export
     .k-pdf-export-shadow {
         .k-gantt {
-            float: left;
+            float: inline-start;
         }
 
         .k-gantt,
@@ -830,7 +830,7 @@
     .k-gantt-edit-form .k-gantt-update {}
     .k-gantt-edit-form .k-gantt-cancel {}
     .k-gantt-edit-form .k-gantt-delete {
-        float: left;
+        float: inline-start;
     }
 
 
@@ -842,8 +842,8 @@
 
         .k-gantt-rows,
         .k-gantt-columns {
-            left: auto;
-            right: 0;
+            inset-inline-start: auto;
+            inset-inline-end: 0;
         }
 
         .k-task-wrap:not(.k-milestone-wrap) {
@@ -856,17 +856,17 @@
                 border-width: 0 $kendo-grid-cell-vertical-border-width 1px 0;
             }
             .k-header:first-child {
-                border-right-width: 0;
+                border-inline-end-width: 0;
             }
 
             .k-task-start {
-                left: auto;
-                right: 0;
+                inset-inline-start: auto;
+                inset-inline-end: 0;
             }
 
             .k-task-end {
-                right: auto;
-                left: 0;
+                inset-inline-end: auto;
+                inset-inline-start: 0;
             }
         }
 
@@ -875,22 +875,22 @@
         }
 
         .k-task-complete {
-            left: auto;
-            right: 0;
+            inset-inline-start: auto;
+            inset-inline-end: 0;
         }
 
         .k-task-draghandle {
-            margin-left: 0;
-            margin-right: 16px;
+            margin-inline-start: 0;
+            margin-inline-end: 16px;
         }
 
         .k-gantt-dependencies {
-            left: auto;
-            right: 0;
+            inset-inline-start: auto;
+            inset-inline-end: 0;
         }
 
         .k-gantt-delete {
-            float: right;
+            float: inline-end;
         }
 
         .k-task-offset-wrap .k-task-content {
@@ -904,20 +904,20 @@
         }
 
         .k-milestone-wrap {
-            margin-left: $kendo-gantt-rtl-milestone-wrap-margin-x;
+            margin-inline-start: $kendo-gantt-rtl-milestone-wrap-margin-x;
         }
 
         .k-milestone-wrap .k-task-moment {
-            margin-right: $kendo-gantt-rtl-milestone-planned-moment-margin-x;
+            margin-inline-end: $kendo-gantt-rtl-milestone-planned-moment-margin-x;
         }
 
         .k-gantt-timeline-pane .k-milestone-wrap .k-task-start {
-            right: $kendo-gantt-rtl-milestone-dot-start-margin-x;
+            inset-inline-end: $kendo-gantt-rtl-milestone-dot-start-margin-x;
         }
 
         .k-gantt-tooltip-validation::before {
-            left: auto;
-            right: 0;
+            inset-inline-start: auto;
+            inset-inline-end: 0;
         }
     }
 

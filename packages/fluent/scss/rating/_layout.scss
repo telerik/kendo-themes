@@ -77,7 +77,7 @@
     .k-rating-precision-complement {
         display: inherit;
         position: absolute;
-        top: var( --kendo-rating-item-padding-y, #{$kendo-rating-item-padding-y} );
+        inset-block-start: var( --kendo-rating-item-padding-y, #{$kendo-rating-item-padding-y} );
         inset-inline-start: var( --kendo-rating-item-padding-x, #{$kendo-rating-item-padding-x} );
         overflow: hidden;
     }

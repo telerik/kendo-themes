@@ -78,30 +78,30 @@
 
     .k-callout-n {
         margin-inline-start: calc( #{$kendo-tooltip-callout-size} * -1 );
-        border-bottom-color: currentColor;
-        top: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2 );
-        left: 50%;
+        border-block-end-color: currentColor;
+        inset-block-start: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2 );
+        inset-inline-start: 50%;
         pointer-events: none;
     }
     .k-callout-e {
         margin-block-start: calc( #{$kendo-tooltip-callout-size} * -1 );
-        border-left-color: currentColor;
-        top: 50%;
-        right: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2 );
+        border-inline-start-color: currentColor;
+        inset-block-start: 50%;
+        inset-inline-end: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2 );
         pointer-events: none;
     }
     .k-callout-s {
         margin-inline-start: calc( #{$kendo-tooltip-callout-size} * -1 );
-        border-top-color: currentColor;
-        bottom: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2);
-        left: 50%;
+        border-block-start-color: currentColor;
+        inset-block-end: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2);
+        inset-inline-start: 50%;
         pointer-events: none;
     }
     .k-callout-w {
         margin-block-start: calc( #{$kendo-tooltip-callout-size} * -1 );
-        border-right-color: currentColor;
-        top: 50%;
-        left: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2);
+        border-inline-end-color: currentColor;
+        inset-block-start: 50%;
+        inset-inline-start: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2);
         pointer-events: none;
     }
 
