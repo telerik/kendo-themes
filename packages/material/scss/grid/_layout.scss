@@ -12,7 +12,7 @@
 
         .k-table .k-group-footer td,
         .k-table .k-group-footer .k-table-td {
-            border-top-width: 0;
+            border-block-start-width: 0;
         }
 
         .k-command-cell .k-button {
@@ -38,8 +38,8 @@
         }
 
         .k-resizable-columns .k-table-th:not(.k-group-cell) {
-            border-right-width: 1px;
-            border-right-style: solid;
+            border-inline-end-width: 1px;
+            border-inline-end-style: solid;
         }
 
         .k-resizable-columns .k-resize-handle .k-resize-handle-inner {
@@ -74,11 +74,11 @@
         display: block;
         content: "";
         height: 100%;
-        border-right: 2px solid currentColor;
+        border-inline-end: 2px solid currentColor;
     }
 
     .k-reorder-cue {
-        margin-left: -1px;
+        margin-inline-start: -1px;
         width: 2px;
     }
 
@@ -92,7 +92,7 @@
 
         &.k-menu-vertical {
             & > .k-item + .k-item {
-                margin-top: 0;
+                margin-block-start: 0;
             }
         }
     }
