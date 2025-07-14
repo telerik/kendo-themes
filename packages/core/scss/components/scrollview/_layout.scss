@@ -62,9 +62,9 @@
         padding: 0;
         margin: 0;
         position: absolute;
-        left: 0;
-        right: 0;
-        bottom: $kendo-scrollview-pager-offset;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
+        inset-block-end: $kendo-scrollview-pager-offset;
         height: $kendo-scrollview-pager-height;
         text-align: center;
     }
@@ -120,8 +120,8 @@
             height: calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-spacing} );
             display: block;
             position: absolute;
-            top: 50%;
-            left: 50%;
+            inset-block-start: 50%;
+            inset-inline-start: 50%;
             transform: translate(-50%, -50%);
             pointer-events: initial;
             border-radius: 0;
@@ -134,7 +134,7 @@
         position: absolute;
         padding: 0;
         height: 60%;
-        top: 20%;
+        inset-block-start: 20%;
         text-decoration: none;
         user-select: none;
         cursor: pointer;

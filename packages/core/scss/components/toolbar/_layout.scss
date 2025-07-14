@@ -188,7 +188,7 @@
 
     // Flat Toolbar
     .k-toolbar-flat {
-        border-top-color: transparent !important; // stylelint-disable-line declaration-no-important
+        border-block-start-color: transparent !important; // stylelint-disable-line declaration-no-important
         border-inline-color: transparent !important; // stylelint-disable-line declaration-no-important
         background: none !important;  // stylelint-disable-line declaration-no-important
     }

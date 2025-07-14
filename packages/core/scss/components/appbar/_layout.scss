@@ -85,7 +85,7 @@
     .k-appbar-sticky {
         width: 100%;
         position: sticky;
-        top: 0;
+        inset-block-start: 0;
         z-index: $kendo-appbar-zindex;
     }
 
@@ -100,15 +100,15 @@
 
     // Appbar position
     .k-appbar-top {
-        top: 0;
-        bottom: auto;
+        inset-block-start: 0;
+        inset-block-end: auto;
     }
     .k-appbar-bottom {
-        top: auto;
-        bottom: 0;
+        inset-block-start: auto;
+        inset-block-end: 0;
 
         &.k-appbar-fixed {
-            bottom: 0;
+            inset-block-end: 0;
         }
     }
 

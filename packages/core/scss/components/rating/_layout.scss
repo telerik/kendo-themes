@@ -54,8 +54,8 @@
             .k-rating-precision-complement {
                 display: inherit;
                 position: absolute;
-                top: $kendo-rating-item-padding-y;
-                left: $kendo-rating-item-padding-x;
+                inset-block-start: $kendo-rating-item-padding-y;
+                inset-inline-start: $kendo-rating-item-padding-x;
                 overflow: hidden;
             }
 
@@ -81,8 +81,8 @@
     .k-rtl,
     [dir="rtl"] {
         .k-rating-precision-part {
-            left: auto;
-            right: $kendo-rating-item-padding-x;
+            inset-inline-start: auto;
+            inset-inline-end: $kendo-rating-item-padding-x;
         }
 
         .k-rating-item .k-rating-precision-complement {

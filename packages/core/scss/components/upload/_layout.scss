@@ -118,7 +118,7 @@
             }
 
             .k-filename {
-                margin-left: k-spacing(4);
+                margin-inline-start: k-spacing(4);
                 flex: 1;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -135,14 +135,14 @@
 
             ~ .k-clear-selected,
             ~ .k-upload-selected {
-                margin-top: $kendo-upload-files-list-margin;
+                margin-block-start: $kendo-upload-files-list-margin;
                 border-width: 0;
             }
 
             ~ .k-upload-selected {
-                border-left-width: 1px;
-                border-left-style: solid;
-                margin-left: -1px;
+                border-inline-start-width: 1px;
+                border-inline-start-style: solid;
+                margin-inline-start: -1px;
             }
 
             .k-file-name,
@@ -197,27 +197,27 @@
 
         .k-multiple-files-wrapper {
             .k-file-info {
-                margin-bottom: $kendo-upload-multiple-items-spacing;
+                margin-block-end: $kendo-upload-multiple-items-spacing;
                 display: block;
             }
 
             .k-file-summary {
-                margin-top: calc( calc( #{$kendo-upload-multiple-items-spacing} / 3) * -1 );
+                margin-block-start: calc( calc( #{$kendo-upload-multiple-items-spacing} / 3) * -1 );
             }
         }
 
         .k-progressbar {
             --kendo-progressbar-height: #{$kendo-upload-progress-thickness};
             position: absolute;
-            left: $kendo-upload-item-padding-x;
-            right: $kendo-upload-item-padding-x;
-            bottom: calc( #{$kendo-upload-item-padding-y} / 2 );
+            inset-inline-start: $kendo-upload-item-padding-x;
+            inset-inline-end: $kendo-upload-item-padding-x;
+            inset-block-end: calc( #{$kendo-upload-item-padding-y} / 2 );
             width: auto;
         }
 
         // Action buttons
         .k-actions {
-            border-top-width: 1px;
+            border-block-start-width: 1px;
         }
 
     }
@@ -236,8 +236,8 @@
             opacity: 0;
             cursor: pointer;
             position: absolute;
-            bottom: 0;
-            right: 0;
+            inset-block-end: 0;
+            inset-inline-end: 0;
             z-index: 1;
         }
         input[disabled],

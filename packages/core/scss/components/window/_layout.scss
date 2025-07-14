@@ -117,13 +117,13 @@
         flex: 1 1 auto;
     }
     .k-window-content + .k-prompt-container {
-        margin-top: - list.slash( $kendo-window-inner-padding-y, 2 );
+        margin-block-start: - list.slash( $kendo-window-inner-padding-y, 2 );
     }
     .k-window-content:first-child {
-        padding-top: clamp( #{$kendo-window-inner-padding-y}, #{$kendo-window-titlebar-padding-y}, #{$kendo-window-titlebar-padding-y} );
+        padding-block-start: clamp( #{$kendo-window-inner-padding-y}, #{$kendo-window-titlebar-padding-y}, #{$kendo-window-titlebar-padding-y} );
     }
     .k-window-content:last-child {
-        padding-bottom: clamp( #{$kendo-window-inner-padding-y}, #{$kendo-window-titlebar-padding-y}, #{$kendo-window-titlebar-padding-y} );
+        padding-block-end: clamp( #{$kendo-window-inner-padding-y}, #{$kendo-window-titlebar-padding-y}, #{$kendo-window-titlebar-padding-y} );
     }
 
     .k-window-iframecontent {
@@ -165,10 +165,10 @@
 
     // Resize Handles
     .k-window { // stylelint-disable-line
-        .k-resize-n { top: 0; }
-        .k-resize-e { right: 0; }
-        .k-resize-s { bottom: 0; }
-        .k-resize-w { left: 0; }
+        .k-resize-n { inset-block-start: 0; }
+        .k-resize-e { inset-inline-end: 0; }
+        .k-resize-s { inset-block-end: 0; }
+        .k-resize-w { inset-inline-start: 0; }
     }
 
 }

@@ -99,7 +99,7 @@
 
             .k-fab-item-text {
                 // Needed for fab item positioning in RTL
-                margin-right: k-spacing(2);
+                margin-inline-end: k-spacing(2);
             }
         }
         &.k-text-left {
@@ -107,7 +107,7 @@
 
             .k-fab-item-text {
                 // Needed for fab item positioning in RTL
-                margin-left: k-spacing(2);
+                margin-inline-start: k-spacing(2);
             }
         }
     }

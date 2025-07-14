@@ -121,7 +121,7 @@
         height: 100%;
         border-width: 1px;
         border-style: solid;
-        border-bottom: 0;
+        border-block-end: 0;
     }
 
     .k-selection-bg {
@@ -147,11 +147,11 @@
     }
 
     .k-left-handle {
-        left: calc( -1 * ( $kendo-chart-selection-handle-size / 2 ) );
+        inset-inline-start: calc( -1 * ( $kendo-chart-selection-handle-size / 2 ) );
     }
 
     .k-right-handle {
-        right: calc( -1 * ( $kendo-chart-selection-handle-size / 2 ) );
+        inset-inline-end: calc( -1 * ( $kendo-chart-selection-handle-size / 2 ) );
     }
 
     .k-left-handle div {
@@ -165,13 +165,13 @@
     }
 
     .k-left-handle.k-handle-active div {
-        margin-left: calc( -1 * ( $kendo-chart-selection-handle-size * 2 ) );
-        padding-left: calc( ( $kendo-chart-selection-handle-size * 2 ) + ( $kendo-chart-selection-handle-size / 1.5 ) );
+        margin-inline-start: calc( -1 * ( $kendo-chart-selection-handle-size * 2 ) );
+        padding-inline-start: calc( ( $kendo-chart-selection-handle-size * 2 ) + ( $kendo-chart-selection-handle-size / 1.5 ) );
     }
 
     .k-right-handle.k-handle-active div {
-        margin-left: calc( $kendo-chart-selection-handle-size * -2);
-        padding-right: calc( ( $kendo-chart-selection-handle-size * 2 ) + ( $kendo-chart-selection-handle-size / 1.5 ) );
+        margin-inline-start: calc( $kendo-chart-selection-handle-size * -2);
+        padding-inline-end: calc( ( $kendo-chart-selection-handle-size * 2 ) + ( $kendo-chart-selection-handle-size / 1.5 ) );
     }
 
     .k-mask {
@@ -191,7 +191,7 @@
     }
 
     .k-navigator-hint .k-tooltip {
-        margin-top: 20px;
+        margin-block-start: 20px;
         min-width: 160px;
         opacity: 1;
         text-align: center;
@@ -242,13 +242,13 @@
         width: 100%;
         height: if( --kendo-chart-computed-title-height, calc( 100% - var( --kendo-chart-computed-title-height, #{$kendo-chart-computed-title-height} ) ), 100% );
         position: absolute;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
         opacity: 1;
         z-index: 10001;
 
         &-top {
-            top: var( --kendo-chart-computed-title-height, #{$kendo-chart-computed-title-height} );
+            inset-block-start: var( --kendo-chart-computed-title-height, #{$kendo-chart-computed-title-height} );
         }
 
         .k-no-data {
@@ -339,15 +339,15 @@
             overflow: hidden;
             text-overflow: ellipsis;
             position: absolute;
-            top: 0;
-            bottom: 0;
+            inset-block-start: 0;
+            inset-block-end: 0;
 
             > div {
                 transform-origin: right;
                 transform: rotate(-90deg);
                 position: absolute;
-                top: 0;
-                right: 1em;
+                inset-block-start: 0;
+                inset-inline-end: 1em;
             }
         }
 
@@ -358,16 +358,16 @@
             color: inherit;
             background-color: inherit;
             position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
+            inset-block-start: 0;
+            inset-inline-start: 0;
+            inset-block-end: 0;
+            inset-inline-end: 0;
         }
         .k-treemap-title + .k-treemap-wrap {
-            top: calc( calc( #{$kendo-treemap-padding-y} * 2 ) + calc( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit) ) + 1px);
+            inset-block-start: calc( calc( #{$kendo-treemap-padding-y} * 2 ) + calc( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit) ) + 1px);
         }
         .k-treemap-title-vertical + .k-treemap-wrap {
-            left: calc( calc( #{$kendo-treemap-padding-y} * 2 ) + calc( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit) ) + 1px);
+            inset-inline-start: calc( calc( #{$kendo-treemap-padding-y} * 2 ) + calc( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit) ) + 1px);
         }
 
 

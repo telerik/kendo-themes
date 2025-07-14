@@ -5,15 +5,15 @@ $kendo-scrollbar-width: 17px !default;
     $scrollbar-size: var( --kendo-scrollbar-width, #{$kendo-scrollbar-width} );
     $margin: calc( -#{$max-scrollbar} - #{$scrollbar-size} );
 
-    padding-right: $max-scrollbar;
-    padding-left: $max-scrollbar;
+    padding-inline-end: $max-scrollbar;
+    padding-inline-start: $max-scrollbar;
 
     @if ( $dir == "right" ) {
-        margin-left: -$max-scrollbar;
-        margin-right: $margin;
+        margin-inline-start: -$max-scrollbar;
+        margin-inline-end: $margin;
     } @else {
-        margin-left: $margin;
-        margin-right: -$max-scrollbar;
+        margin-inline-start: $margin;
+        margin-inline-end: -$max-scrollbar;
     }
 }
 

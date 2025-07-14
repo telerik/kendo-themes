@@ -57,7 +57,7 @@
 
     // Fast selection
     .k-actions.k-time-fast-selection {
-        margin-top: 0;
+        margin-block-start: 0;
     }
 
 
@@ -84,9 +84,9 @@
         border-style: solid;
         box-sizing: border-box;
         position: absolute;
-        top: calc( 50% + #{list.slash( $kendo-time-list-title-height, 2 )});
-        left: 0;
-        right: 0;
+        inset-block-start: calc( 50% + #{list.slash( $kendo-time-list-title-height, 2 )});
+        inset-inline-start: 0;
+        inset-inline-end: 0;
         transform: translateY(-50%);
         z-index: 1;
     }
@@ -121,7 +121,7 @@
                 content: "\200b";
                 position: absolute;
                 width: 100%;
-                left: 0;
+                inset-inline-start: 0;
                 pointer-events: none;
                 height: calc( 50% - #{list.slash( $kendo-time-list-highlight-height, 2 )} );
                 box-sizing: border-box;
@@ -130,11 +130,11 @@
             }
 
             &::before {
-                top: $kendo-time-list-title-height;
+                inset-block-start: $kendo-time-list-title-height;
             }
 
             &::after {
-                bottom: 0;
+                inset-block-end: 0;
             }
         }
     }
@@ -160,11 +160,11 @@
             line-height: 0;
             z-index: 1;
             width: 200%;
-            left: -50%;
+            inset-inline-start: -50%;
         }
 
-        &::before { top: 0; }
-        &::after { bottom: 0; }
+        &::before { inset-block-start: 0; }
+        &::after { inset-block-end: 0; }
     }
 
 
@@ -188,8 +188,8 @@
         .k-scrollable-placeholder {
             position: absolute;
             width: 1px;
-            top: 0;
-            right: 0;
+            inset-block-start: 0;
+            inset-inline-end: 0;
         }
     }
 
@@ -212,7 +212,7 @@
         align-items: center;
         position: relative;
         z-index: 11;
-        top: calc( #{list.slash( $kendo-time-list-title-height, 2 )} );
+        inset-block-start: calc( #{list.slash( $kendo-time-list-title-height, 2 )} );
     }
 
 
