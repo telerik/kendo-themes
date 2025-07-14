@@ -56,14 +56,14 @@
     "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
-    "@types/react": "^19.0.8",
     "@testing-library/jest-dom": "^6.6.3",
-    "@types/jest": "^29.5.0",
+    "@types/jest": "^30.0.0",
+    "@types/react": "^19.0.8",
     "jest": "^30.0.0",
     "jest-environment-jsdom": "^30.0.0",
-    "ts-jest": "^29.2.0",
-    "typescript": "^5.0.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "ts-jest": "^29.2.0",
+    "typescript": "^5.0.0"
   }
 }
