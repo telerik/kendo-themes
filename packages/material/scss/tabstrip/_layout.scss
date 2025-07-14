@@ -20,8 +20,8 @@
 
     .k-tabstrip-top > .k-tabstrip-items-wrapper .k-item:active,
     .k-tabstrip-top > .k-tabstrip-items-wrapper .k-item.k-active {
-        margin-bottom: 0;
-        border-bottom-width: 0;
+        margin-block-end: 0;
+        border-block-end-width: 0;
     }
 
     .k-tabstrip-top,
@@ -40,10 +40,10 @@
                 display: none;
                 position: absolute;
                 z-index: 2;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
+                inset-block-start: 0;
+                inset-inline-end: 0;
+                inset-block-end: 0;
+                inset-inline-start: 0;
                 height: $kendo-tabstrip-indicator-size;
                 margin: 0 $kendo-tabstrip-md-item-padding-x;
                 pointer-events: none;
@@ -66,10 +66,10 @@
                 display: none;
                 position: absolute;
                 z-index: 2;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
+                inset-block-start: 0;
+                inset-inline-end: 0;
+                inset-block-end: 0;
+                inset-inline-start: 0;
                 pointer-events: none;
                 width: $kendo-tabstrip-indicator-size;
                 height: auto;
@@ -83,15 +83,15 @@
 
     // Variants
     .k-tabstrip-top > .k-tabstrip-items-wrapper .k-item .k-link::after {
-        top: auto;
+        inset-block-start: auto;
     }
 
     .k-tabstrip-left > .k-tabstrip-items-wrapper .k-item::after {
-        left: auto;
+        inset-inline-start: auto;
     }
 
     .k-tabstrip-right > .k-tabstrip-items-wrapper .k-item::after {
-        right: auto;
+        inset-inline-end: auto;
     }
 
     .k-tabstrip-top .k-tabstrip-items-wrapper .k-item.k-active .k-link::after {

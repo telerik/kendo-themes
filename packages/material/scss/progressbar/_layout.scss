@@ -58,26 +58,26 @@
 
         &.k-progressbar-horizontal {
             &::before {
-                top: 0;
-                left: -150%;
+                inset-block-start: 0;
+                inset-inline-start: -150%;
                 animation: kendo-progressbar-primary-indeterminate-horizontal $kendo-progressbar-indeterminate-animation-timing;
             }
             &::after {
-                top: 0;
-                left: -50%;
+                inset-block-start: 0;
+                inset-inline-start: -50%;
                 animation: kendo-progressbar-secondary-indeterminate-horizontal $kendo-progressbar-indeterminate-animation-timing;
             }
         }
 
         &.k-progressbar-vertical {
             &::before {
-                top: -150%;
-                left: 0;
+                inset-block-start: -150%;
+                inset-inline-start: 0;
                 animation: kendo-progressbar-primary-indeterminate-vertical $kendo-progressbar-indeterminate-animation-timing;
             }
             &::after {
-                top: -50%;
-                left: 0;
+                inset-block-start: -50%;
+                inset-inline-start: 0;
                 animation: kendo-progressbar-secondary-indeterminate-vertical $kendo-progressbar-indeterminate-animation-timing;
             }
         }
