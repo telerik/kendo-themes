@@ -29,8 +29,8 @@
         }
 
         .k-view {
-            top: 0;
-            left: 0;
+            inset-block-start: 0;
+            inset-inline-start: 0;
             position: relative;
             border: 0;
             box-sizing: border-box;
@@ -109,8 +109,8 @@
             font: 16px/1 "WebComponentsIcons"; // stylelint-disable-line
             // The Calc is needed due to the the negative margin
             // that removes the double bottom border of the header
-            top: calc(50% - 1px);
-            left: 50%;
+            inset-block-start: calc(50% - 1px);
+            inset-inline-start: 50%;
             transform: translate(-50%, -50%);
             padding: .2em;
         }
@@ -343,7 +343,7 @@
         }
 
         .k-scrollbar-h tr + tr .k-scheduler-times {
-            border-bottom-width: 0;
+            border-block-end-width: 0;
         }
     }
 
@@ -378,7 +378,7 @@
             }
         }
         .k-listgroup + .k-listgroup {
-            margin-top: k-spacing(4);
+            margin-block-start: k-spacing(4);
         }
 
         // Column menu
@@ -472,8 +472,8 @@
             }
 
             .k-task .k-i-reload {
-                margin-left: .5em;
-                margin-right: 0;
+                margin-inline-start: .5em;
+                margin-inline-end: 0;
             }
         }
     }

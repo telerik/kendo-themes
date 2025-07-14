@@ -30,19 +30,19 @@
 
         .k-vertical-align-center {
             position: relative;
-            top: 50%;
+            inset-block-start: 50%;
             transform: translateY(-50%);
         }
         .k-vertical-align-bottom {
             position: relative;
-            top: 100%;
+            inset-block-start: 100%;
             transform: translateY( -100% );
         }
     }
 
     // Toolbar
     .k-spreadsheet-toolbar {
-        border-top-width: 0;
+        border-block-start-width: 0;
         border-inline-width: 0;
     }
 
@@ -205,8 +205,8 @@
             }
 
             .k-spreadsheet-sheets-remove {
-                margin-right: k-spacing(2);
-                margin-left: calc( #{k-spacing(2)} * -1 );
+                margin-inline-end: k-spacing(2);
+                margin-inline-start: calc( #{k-spacing(2)} * -1 );
                 padding: 0;
                 line-height: 1;
                 display: inline-flex;
@@ -248,10 +248,10 @@
     // todo check if used - probably not
     .k-spreadsheet-overflow {
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        inset-block-start: 0;
+        inset-block-end: 0;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
         overflow: hidden;
         border-color: inherit;
     }
@@ -276,8 +276,8 @@
         border-style: solid;
         box-sizing: border-box;
         position: absolute;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
         z-index: 10000;
 
         &::after {
@@ -287,11 +287,11 @@
             height: 0;
             overflow: hidden;
             position: absolute;
-            bottom: 0;
-            right: 0;
+            inset-block-end: 0;
+            inset-inline-end: 0;
             border: 6px solid transparent;
-            border-right-color: inherit;
-            border-bottom-color: inherit;
+            border-inline-end-color: inherit;
+            border-block-end-color: inherit;
         }
     }
 
@@ -318,11 +318,11 @@
     }
     .k-spreadsheet-haxis {
         border-width: 1px 0 0;
-        left: 0;
+        inset-inline-start: 0;
     }
     .k-spreadsheet-vaxis {
         border-width: 0 0 0 1px;
-        top: 0;
+        inset-block-start: 0;
     }
 
 
@@ -346,10 +346,10 @@
                 border-color: inherit;
                 display: none;
                 position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
+                inset-block-start: 0;
+                inset-inline-end: 0;
+                inset-block-end: 0;
+                inset-inline-start: 0;
             }
         }
     }
@@ -360,26 +360,26 @@
         position: absolute;
     }
     .k-spreadsheet-row-header > div {
-        border-top-width: 1px;
+        border-block-start-width: 1px;
 
-        &:first-child { border-top-width: 0; }
+        &:first-child { border-block-start-width: 0; }
     }
     .k-spreadsheet-row-header > .k-selection-partial,
     .k-spreadsheet-row-header > .k-selection-full {
         &::after {
-            border-right-width: 2px;
+            border-inline-end-width: 2px;
             display: block;
         }
     }
     .k-spreadsheet-column-header > div {
-        border-left-width: 1px;
+        border-inline-start-width: 1px;
 
-        &:first-child { border-left-width: 0; }
+        &:first-child { border-inline-start-width: 0; }
     }
     .k-spreadsheet-column-header > .k-selection-partial,
     .k-spreadsheet-column-header > .k-selection-full {
         &::after {
-            border-bottom-width: 2px;
+            border-block-end-width: 2px;
             display: block;
         }
     }
@@ -458,8 +458,8 @@
     .k-spreadsheet .k-single-selection {}
     .k-spreadsheet .k-single-selection::after {
         content: "";
-        margin-bottom: -4px;
-        margin-right: -4px;
+        margin-block-end: -4px;
+        margin-inline-end: -4px;
         width: 6px;
         height: 6px;
         border-width: 1px;
@@ -467,8 +467,8 @@
         border-radius: 50%;
         display: block;
         position: absolute;
-        bottom: 0;
-        right: 0;
+        inset-block-end: 0;
+        inset-inline-end: 0;
         z-index: 300;
         cursor: crosshair;
     }
@@ -491,14 +491,14 @@
     // Border rendering
     .k-spreadsheet-vborder {
         position: absolute;
-        border-left-style: solid;
-        border-left-width: 1px;
+        border-inline-start-style: solid;
+        border-inline-start-width: 1px;
     }
 
     .k-spreadsheet-hborder {
         position: absolute;
-        border-top-style: solid;
-        border-top-width: 1px;
+        border-block-start-style: solid;
+        border-block-start-width: 1px;
     }
 
 
@@ -507,7 +507,7 @@
         content: "";
         display: block;
         position: absolute;
-        top: 0;
+        inset-block-start: 0;
         inset-inline-end: 0;
         inset-inline-start: auto;
         border-width: 3px;
@@ -563,7 +563,7 @@
                 color: inherit;
             }
             .k-link {
-                padding-left: $kendo-spreadsheet-filter-menu-link-padding-x;
+                padding-inline-start: $kendo-spreadsheet-filter-menu-link-padding-x;
             }
             .k-icon {
                 margin: $kendo-spreadsheet-filter-menu-icon-margin;
@@ -606,7 +606,7 @@
 
             > .k-icon,
             > .k-expander-indicator {
-                margin-right: $kendo-spreadsheet-filter-padding;
+                margin-inline-end: $kendo-spreadsheet-filter-padding;
             }
         }
         .k-details-content,
@@ -644,8 +644,8 @@
             box-sizing: border-box;
             display: flex;
         }
-        .k-reset-color { border-bottom-width: 1px; }
-        .k-custom-color { border-top-width: 1px; }
+        .k-reset-color { border-block-end-width: 1px; }
+        .k-custom-color { border-block-start-width: 1px; }
         .k-spreadsheet-border-type-palette {
             padding: k-spacing(2);
             display: grid;
@@ -664,8 +664,8 @@
         border: 0;
         opacity: 0;
         position: absolute;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
         overflow: hidden;
     }
 
@@ -686,12 +686,12 @@
     .k-spreadsheet-format-cells {
 
         .k-spreadsheet-preview {
-            margin-top: k-spacing(2);
+            margin-block-start: k-spacing(2);
             text-align: center;
         }
 
         .k-list-scroller {
-            margin-top: k-spacing(2);
+            margin-block-start: k-spacing(2);
             height: 210px;
             border-width: 1px;
             border-style: solid;
@@ -713,15 +713,15 @@
 
 
         .k-edit-field {
-            margin-left: 5%;
+            margin-inline-start: 5%;
             width: 45%;
-            float: left;
+            float: inline-start;
         }
 
         .k-page-orientation {
             position: absolute;
-            right: 0;
-            top: k-spacing(2);
+            inset-inline-end: 0;
+            inset-block-start: k-spacing(2);
 
             .k-font-icon {
                 font-size: 6em;
@@ -759,7 +759,7 @@
             div {
                 display: flex;
                 align-self: flex-end;
-                margin-bottom: $kendo-spreadsheet-insert-image-dialog-text-margin-bottom;
+                margin-block-end: $kendo-spreadsheet-insert-image-dialog-text-margin-bottom;
                 pointer-events: none;
             }
 
@@ -800,8 +800,8 @@
 
         .k-spreadsheet-drawing-image {
             position: absolute;
-            top: 0;
-            left: 0;
+            inset-block-start: 0;
+            inset-inline-start: 0;
             width: 100%;
             height: 100%;
             background-position: 50% 50%;
@@ -820,14 +820,14 @@
             transform: translate(-50%, -50%);
 
             // stylelint-disable declaration-block-single-line-max-declarations, selector-class-pattern
-            &.N { left: 50%; top: 0; cursor: ns-resize; }
-            &.NE { left: 100%; top: 0; cursor: nesw-resize; }
-            &.E { left: 100%; top: 50%; cursor: ew-resize; }
-            &.SE { left: 100%; top: 100%; cursor: nwse-resize; }
-            &.S { left: 50%; top: 100%; cursor: ns-resize; }
-            &.SW { left: 0; top: 100%; cursor: nesw-resize; }
-            &.W { left: 0; top: 50%; cursor: ew-resize; }
-            &.NW { left: 0; top: 0; cursor: nwse-resize; }
+            &.N { inset-inline-start: 50%; inset-block-start: 0; cursor: ns-resize; }
+            &.NE { inset-inline-start: 100%; inset-block-start: 0; cursor: nesw-resize; }
+            &.E { inset-inline-start: 100%; inset-block-start: 50%; cursor: ew-resize; }
+            &.SE { inset-inline-start: 100%; inset-block-start: 100%; cursor: nwse-resize; }
+            &.S { inset-inline-start: 50%; inset-block-start: 100%; cursor: ns-resize; }
+            &.SW { inset-inline-start: 0; inset-block-start: 100%; cursor: nesw-resize; }
+            &.W { inset-inline-start: 0; inset-block-start: 50%; cursor: ew-resize; }
+            &.NW { inset-inline-start: 0; inset-block-start: 0; cursor: nwse-resize; }
             // stylelint-enable declaration-block-single-line-max-declarations, selector-class-pattern
         }
 
@@ -882,12 +882,12 @@
         flex-direction: row;
         position: absolute;
         z-index: 2;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
     }
 
     .k-spreadsheet-tabstrip {
-        padding-top: $kendo-toolbar-md-padding-y;
+        padding-block-start: $kendo-toolbar-md-padding-y;
         position: relative;
         z-index: 1;
     }

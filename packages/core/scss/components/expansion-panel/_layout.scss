@@ -30,8 +30,8 @@
     .k-expander[dir="rtl"] {
         // Expand / collapse icon
         .k-expander-indicator {
-            margin-left: 0;
-            margin-right: $kendo-expander-indicator-margin-x;
+            margin-inline-start: 0;
+            margin-inline-end: $kendo-expander-indicator-margin-x;
         }
     }
 
@@ -58,7 +58,7 @@
 
     // Expand / collapse icon
     .k-expander-indicator {
-        margin-left: $kendo-expander-indicator-margin-x;
+        margin-inline-start: $kendo-expander-indicator-margin-x;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -73,11 +73,11 @@
     // Multiple expanders
     .k-expander + .k-expander.k-expanded,
     .k-expander.k-expanded + .k-expander {
-        margin-top: $kendo-expander-spacing-y;
+        margin-block-start: $kendo-expander-spacing-y;
     }
 
     .k-expander:not(.k-expanded) + .k-expander:not(.k-expanded) {
-        border-top-width: 0;
+        border-block-start-width: 0;
     }
 }
 

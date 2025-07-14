@@ -53,8 +53,8 @@
             margin-top: $kendo-color-gradient-canvas-draghandle-margin-y;
             margin-left: $kendo-color-gradient-canvas-draghandle-margin-x;
             position: absolute;
-            top: 50%;
-            left: 50%;
+            inset-block-start: 50%;
+            inset-inline-start: 50%;
             z-index: 1;
             cursor: pointer;
         }
@@ -92,7 +92,7 @@
         &.k-slider-vertical .k-slider-track {
             width: $kendo-color-gradient-slider-track-size;
             border-radius: $kendo-color-gradient-slider-border-radius;
-            margin-left: calc( -1 * ( $kendo-color-gradient-slider-track-size / 2 ) );
+            margin-inline-start: calc( -1 * ( $kendo-color-gradient-slider-track-size / 2 ) );
         }
 
         &.k-slider-horizontal {
@@ -103,7 +103,7 @@
         &.k-slider-horizontal .k-slider-track {
             height: $kendo-color-gradient-slider-track-size;
             border-radius: $kendo-color-gradient-slider-border-radius;
-            margin-top: calc( -1 * ( $kendo-color-gradient-slider-track-size / 2 ) );
+            margin-block-start: calc( -1 * ( $kendo-color-gradient-slider-track-size / 2 ) );
         }
 
         &.k-alpha-slider .k-slider-track::before {
@@ -205,7 +205,7 @@
         }
 
         .k-contrast-ratio {
-            margin-bottom: $kendo-color-gradient-contrast-spacer;
+            margin-block-end: $kendo-color-gradient-contrast-spacer;
         }
 
         .k-contrast-ratio-text {
@@ -230,8 +230,8 @@
     }
     .k-color-contrast-svg {
         position: absolute;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
         overflow: visible;
         pointer-events: none;
     }

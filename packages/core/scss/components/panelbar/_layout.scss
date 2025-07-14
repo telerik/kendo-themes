@@ -57,7 +57,7 @@
             }
         }
         > .k-panelbar-header + .k-panelbar-header {
-            border-top-width: $kendo-panelbar-item-border-width;
+            border-block-start-width: $kendo-panelbar-item-border-width;
         }
 
 
@@ -96,7 +96,7 @@
                 @for $i from 1 through $kendo-panelbar-item-level-count {
                     &.k-level-#{$i} {
                         .k-link {
-                            padding-left: calc( #{$kendo-panelbar-item-padding-x} * #{$i} );
+                            padding-inline-start: calc( #{$kendo-panelbar-item-padding-x} * #{$i} );
                         }
                     }
                 }
@@ -140,8 +140,8 @@
                 @for $i from 1 through $kendo-panelbar-item-level-count {
                     &.k-level-#{$i} {
                         .k-link {
-                            padding-left: $kendo-panelbar-item-padding-x;
-                            padding-right: calc( #{$kendo-panelbar-item-padding-x} * #{$i} );
+                            padding-inline-start: $kendo-panelbar-item-padding-x;
+                            padding-inline-end: calc( #{$kendo-panelbar-item-padding-x} * #{$i} );
                         }
                     }
                 }

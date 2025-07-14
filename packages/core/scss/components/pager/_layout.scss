@@ -91,7 +91,7 @@
     .k-pager-nav + .k-pager-numbers-wrap,
     .k-pager-numbers-wrap + .k-pager-nav {
         @if ($kendo-pager-item-spacing) {
-            margin-left: $kendo-pager-item-spacing;
+            margin-inline-start: $kendo-pager-item-spacing;
         }
     }
 
@@ -101,8 +101,8 @@
         .k-pager-nav + .k-pager-numbers-wrap,
         .k-pager-numbers-wrap + .k-pager-nav {
             @if ($kendo-pager-item-spacing) {
-                margin-left: 0;
-                margin-right: $kendo-pager-item-spacing;
+                margin-inline-start: 0;
+                margin-inline-end: $kendo-pager-item-spacing;
             }
         }
     }

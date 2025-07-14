@@ -67,26 +67,26 @@
         position: absolute;
 
         &.k-callout-n {
-            top: 0;
-            left: 50%;
+            inset-block-start: 0;
+            inset-inline-start: 50%;
             transform: translate(-50%, -50%) rotate(45deg);
         }
 
         &.k-callout-e {
-            top: 50%;
-            right: 0;
+            inset-block-start: 50%;
+            inset-inline-end: 0;
             transform: translate(50%, -50%) rotate(-45deg);
         }
 
         &.k-callout-s {
-            bottom: 0;
-            left: 50%;
+            inset-block-end: 0;
+            inset-inline-start: 50%;
             transform: translate(-50%, 50%) rotate(45deg);
         }
 
         &.k-callout-w {
-            top: 50%;
-            left: 0;
+            inset-block-start: 50%;
+            inset-inline-start: 0;
             transform: translate(-50%, -50%) rotate(45deg);
         }
     }

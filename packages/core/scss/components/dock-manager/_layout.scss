@@ -150,8 +150,8 @@
         box-sizing: border-box;
         display: flex;
         position: absolute;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
         border-width: $kendo-dock-manager-dock-preview-border-width;
         border-style: $kendo-dock-manager-dock-preview-border-style;
         border-radius: $kendo-dock-manager-dock-preview-border-radius;

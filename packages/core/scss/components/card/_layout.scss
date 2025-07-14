@@ -43,7 +43,7 @@
         // Card avatar
         .k-card-avatar,
         .k-avatar {
-            margin-right: $kendo-card-avatar-spacing;
+            margin-inline-end: $kendo-card-avatar-spacing;
             width: $kendo-card-avatar-size;
             height: $kendo-card-avatar-size;
             flex-basis: $kendo-card-avatar-size;
@@ -75,11 +75,11 @@
 
         .k-card-title,
         .k-card-subtitle {
-            margin-bottom: 0;
+            margin-block-end: 0;
         }
         .k-card-title + .k-card-subtitle,
         .k-card-subtitle + .k-card-subtitle {
-            margin-top: $kendo-card-title-margin-bottom;
+            margin-block-start: $kendo-card-title-margin-bottom;
         }
     }
 
@@ -108,7 +108,7 @@
 
         > .k-last,
         > :last-child {
-            margin-bottom: 0;
+            margin-block-end: 0;
         }
 
         > .k-card-actions {
@@ -169,12 +169,12 @@
 
     .k-card-separator.k-separator-horizontal,
     .k-card-vertical > .k-card-separator {
-        border-top-width: 1px;
+        border-block-start-width: 1px;
     }
 
     .k-card-separator.k-separator-vertical,
     .k-card-horizontal > .k-card-separator {
-        border-left-width: 1px;
+        border-inline-start-width: 1px;
     }
 
     .k-card > .k-hr {
@@ -229,7 +229,7 @@
     }
 
     .k-card-deck-scrollwrap {
-        padding-bottom: 3px; // prevents trimming of card shadows on OSX (0-width scrollbar)
+        padding-block-end: 3px; // prevents trimming of card shadows on OSX (0-width scrollbar)
         width: 100%;
         box-sizing: content-box;
         display: flex;
@@ -245,11 +245,11 @@
             z-index: 1;
 
             &:first-child {
-                left: $kendo-card-deck-scroll-button-offset;
+                inset-inline-start: $kendo-card-deck-scroll-button-offset;
             }
 
             &:last-child {
-                right: $kendo-card-deck-scroll-button-offset;
+                inset-inline-end: $kendo-card-deck-scroll-button-offset;
             }
         }
 
@@ -257,8 +257,8 @@
             // hide scrollbar
             $scrollbar-size: 20px;
 
-            margin-bottom: -$scrollbar-size;
-            padding-bottom: $scrollbar-size;
+            margin-block-end: -$scrollbar-size;
+            padding-block-end: $scrollbar-size;
             flex: 1 1 auto;
         }
     }
@@ -310,23 +310,23 @@
     }
 
     .k-card-callout.k-callout-n {
-        top: 0;
-        left: 50%;
+        inset-block-start: 0;
+        inset-inline-start: 50%;
         transform: translate(-50%, -50%) rotate(45deg);
     }
     .k-card-callout.k-callout-e {
-        top: 50%;
-        right: 0;
+        inset-block-start: 50%;
+        inset-inline-end: 0;
         transform: translate(50%, -50%) rotate(-45deg);
     }
     .k-card-callout.k-callout-s {
-        bottom: 0;
-        left: 50%;
+        inset-block-end: 0;
+        inset-inline-start: 50%;
         transform: translate(-50%, 50%) rotate(45deg);
     }
     .k-card-callout.k-callout-w {
-        top: 50%;
-        left: 0;
+        inset-block-start: 50%;
+        inset-inline-start: 0;
         transform: translate(-50%, -50%) rotate(45deg);
     }
 

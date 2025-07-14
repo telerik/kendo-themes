@@ -61,7 +61,7 @@
         overflow: visible;
         position: absolute;
         transition: left 200ms ease-in-out;
-        top: 50%;
+        inset-block-start: 50%;
     }
     .k-switch-thumb {
         border-width: $kendo-switch-thumb-border-width;
@@ -78,7 +78,7 @@
         text-transform: $kendo-switch-label-text-transform;
         display: $kendo-switch-label-display;
         position: absolute;
-        top: 50%;
+        inset-block-start: 50%;
         transform: translateY( -50% );
         overflow: hidden;
     }
@@ -105,8 +105,8 @@
                 height: $_track-height;
             }
 
-            .k-switch-label-on { left: $_label-offset; }
-            .k-switch-label-off { right: $_label-offset; }
+            .k-switch-label-on { inset-inline-start: $_label-offset; }
+            .k-switch-label-off { inset-inline-end: $_label-offset; }
 
             .k-switch-thumb {
                 width: $_thumb-width;
@@ -114,10 +114,10 @@
             }
 
             &.k-switch-on .k-switch-thumb-wrap {
-                left: calc( 100% - #{math.div( $_thumb-width, 2 )} - #{$_thumb-offset} );
+                inset-inline-start: calc( 100% - #{math.div( $_thumb-width, 2 )} - #{$_thumb-offset} );
             }
             &.k-switch-off .k-switch-thumb-wrap {
-                left: calc( #{math.div( $_thumb-width, 2 )} + #{$_thumb-offset} );
+                inset-inline-start: calc( #{math.div( $_thumb-width, 2 )} + #{$_thumb-offset} );
             }
         }
 
@@ -127,19 +127,19 @@
         .k-rtl .k-switch-#{$size} {
 
             .k-switch-label-on {
-                left: auto;
-                right: $_label-offset;
+                inset-inline-start: auto;
+                inset-inline-end: $_label-offset;
             }
             .k-switch-label-off {
-                right: auto;
-                left: $_label-offset;
+                inset-inline-end: auto;
+                inset-inline-start: $_label-offset;
             }
 
             &.k-switch-on .k-switch-thumb-wrap {
-                left: calc( #{math.div( $_thumb-width, 2 )} + #{$_thumb-offset} );
+                inset-inline-start: calc( #{math.div( $_thumb-width, 2 )} + #{$_thumb-offset} );
             }
             &.k-switch-off .k-switch-thumb-wrap {
-                left: calc( 100% - #{math.div( $_thumb-width, 2 )} - #{$_thumb-offset} );
+                inset-inline-start: calc( 100% - #{math.div( $_thumb-width, 2 )} - #{$_thumb-offset} );
             }
         }
     }

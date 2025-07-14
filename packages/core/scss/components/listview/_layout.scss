@@ -31,7 +31,7 @@
         border-color: inherit;
     }
     .k-listview-bordered > .k-listview-header {
-        border-bottom-width: $kendo-listview-border-width;
+        border-block-end-width: $kendo-listview-border-width;
     }
 
 
@@ -98,7 +98,7 @@
         border-color: inherit;
     }
     .k-listview-bordered > .k-listview-footer {
-        border-top-width: $kendo-listview-border-width;
+        border-block-start-width: $kendo-listview-border-width;
     }
 
 
@@ -123,18 +123,18 @@
     }
     .k-listview-borders-horizontal {
         .k-listview-item {
-            border-top-width: 1px;
+            border-block-start-width: 1px;
         }
         .k-listview-item:first-child {
-            border-top-width: 0;
+            border-block-start-width: 0;
         }
     }
     .k-listview-borders-vertical {
         .k-listview-item {
-            border-left-width: 1px;
+            border-inline-start-width: 1px;
         }
         .k-listview-item:first-child {
-            border-left-width: 0;
+            border-inline-start-width: 0;
         }
     }
 

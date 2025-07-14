@@ -30,7 +30,7 @@
     .k-drag-status,
     .k-drag-clue .k-drag-status {
         margin: 0;
-        margin-right: .4ex;
+        margin-inline-end: .4ex;
     }
 
 
@@ -60,9 +60,9 @@
 
     .k-drop-hint-h {
         .k-drop-hint-start {
-            border-left-width: calc( ( $kendo-drop-hint-arrow-size / 2 ) * $equilateral-index );
-            border-left-color: $kendo-drop-hint-bg;
-            border-right-width: 0;
+            border-inline-start-width: calc( ( $kendo-drop-hint-arrow-size / 2 ) * $equilateral-index );
+            border-inline-start-color: $kendo-drop-hint-bg;
+            border-inline-end-width: 0;
         }
 
         .k-drop-hint-line {
@@ -71,9 +71,9 @@
         }
 
         .k-drop-hint-end {
-            border-right-width: calc( ( $kendo-drop-hint-arrow-size / 2 ) * $equilateral-index );
-            border-right-color: $kendo-drop-hint-bg;
-            border-left-width: 0;
+            border-inline-end-width: calc( ( $kendo-drop-hint-arrow-size / 2 ) * $equilateral-index );
+            border-inline-end-color: $kendo-drop-hint-bg;
+            border-inline-start-width: 0;
         }
     }
 
@@ -81,9 +81,9 @@
         flex-direction: column;
 
         .k-drop-hint-start {
-            border-top-width: calc( ( $kendo-drop-hint-arrow-size / 2 ) * $equilateral-index );
-            border-top-color: $kendo-drop-hint-bg;
-            border-bottom-width: 0;
+            border-block-start-width: calc( ( $kendo-drop-hint-arrow-size / 2 ) * $equilateral-index );
+            border-block-start-color: $kendo-drop-hint-bg;
+            border-block-end-width: 0;
         }
 
         .k-drop-hint-line {
@@ -92,9 +92,9 @@
         }
 
         .k-drop-hint-end {
-            border-bottom-width: calc( ( $kendo-drop-hint-arrow-size / 2 ) * $equilateral-index );
-            border-bottom-color: $kendo-drop-hint-bg;
-            border-top-width: 0;
+            border-block-end-width: calc( ( $kendo-drop-hint-arrow-size / 2 ) * $equilateral-index );
+            border-block-end-color: $kendo-drop-hint-bg;
+            border-block-start-width: 0;
         }
     }
 
@@ -114,14 +114,14 @@
         }
 
         &::before {
-            border-bottom-width: 0;
-            border-top-color: currentColor;
-            top: -4px;
+            border-block-end-width: 0;
+            border-block-start-color: currentColor;
+            inset-block-start: -4px;
         }
         &::after {
-            border-top-width: 0;
-            border-bottom-color: currentColor;
-            bottom: -4px;
+            border-block-start-width: 0;
+            border-block-end-color: currentColor;
+            inset-block-end: -4px;
         }
     }
 

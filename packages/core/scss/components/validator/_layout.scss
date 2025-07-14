@@ -8,7 +8,7 @@
 
     // Validator tooltip
     .k-validator-tooltip {
-        margin-top: calc( #{$kendo-tooltip-callout-size} + #{$kendo-tooltip-border-width} );
+        margin-block-start: calc( #{$kendo-tooltip-callout-size} + #{$kendo-tooltip-border-width} );
         width: auto;
         white-space: normal;
         display: flex;

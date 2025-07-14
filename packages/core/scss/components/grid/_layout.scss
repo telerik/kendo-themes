@@ -141,11 +141,11 @@
         }
 
         .k-grid-header {
-            border-bottom-width: 1px;
+            border-block-end-width: 1px;
             font-size: $kendo-grid-header-font-size;
 
             .k-table {
-                margin-bottom: -1px;
+                margin-block-end: -1px;
             }
 
             &.k-grid-draggable-header {
@@ -213,7 +213,7 @@
                 vertical-align: top;
                 height: $kendo-icon-size;
                 font-size: $kendo-grid-sorting-index-font-size;
-                margin-top: $kendo-grid-sorting-index-spacing-y;
+                margin-block-start: $kendo-grid-sorting-index-spacing-y;
                 margin-inline-start: $kendo-grid-sorting-index-spacing-x;
             }
         }
@@ -289,12 +289,12 @@
 
         .k-grouping-row + .k-table-row td,
         .k-grouping-row + .k-table-row .k-table-td {
-            border-top-width: $kendo-grid-grouping-row-border-top;
+            border-block-start-width: $kendo-grid-grouping-row-border-top;
         }
 
         .k-grouping-row .k-group-cell,
         .k-grouping-row + .k-table-row .k-group-cell {
-            border-top-width: 0;
+            border-block-start-width: 0;
             text-overflow: clip;
         }
 
@@ -374,7 +374,7 @@
             position: absolute;
             visibility: hidden;
             height: 1px;
-            bottom: 1px; // fix for vertical scrollbar appearing when no records template is displayed
+            inset-block-end: 1px; // fix for vertical scrollbar appearing when no records template is displayed
         }
 
         .k-grid-filter,
@@ -454,7 +454,7 @@
     .k-grouping-dropclue {
         width: calc($kendo-grid-group-drop-hint-size * 2);
         position: absolute;
-        top: $kendo-grid-group-drop-hint-top;
+        inset-block-start: $kendo-grid-group-drop-hint-top;
         box-sizing: content-box;
 
         &::before,
@@ -467,16 +467,16 @@
         &::before {
             border-width: $kendo-grid-group-drop-hint-size;
             border-style: solid;
-            border-left-color: transparent;
-            border-right-color: transparent;
-            border-bottom-color: transparent;
-            top: 0;
+            border-inline-start-color: transparent;
+            border-inline-end-color: transparent;
+            border-block-end-color: transparent;
+            inset-block-start: 0;
         }
 
         &::after {
             width: $kendo-grid-group-drop-hint-line-size;
             height: calc(100% - #{$kendo-grid-group-drop-hint-size});
-            top: $kendo-grid-group-drop-hint-size;
+            inset-block-start: $kendo-grid-group-drop-hint-size;
             inset-inline-start: calc( #{$kendo-grid-group-drop-hint-size} - #{$kendo-grid-group-drop-hint-line-size} / 2 );
         }
     }
@@ -521,7 +521,7 @@
         height: 1000%;
         display: block;
         position: absolute;
-        top: 0;
+        inset-block-start: 0;
         inset-inline-end: 0;
         cursor: col-resize;
     }
@@ -534,7 +534,7 @@
     }
 
     .k-grid-footer {
-        border-top-width: 1px;
+        border-block-start-width: 1px;
 
         td,
         .k-table-td {
@@ -618,7 +618,7 @@
 
         .k-table-row:last-child > td,
         .k-table-row:last-child > .k-table-td {
-            border-bottom-width: 0;
+            border-block-end-width: 0;
         }
     }
 
@@ -714,19 +714,19 @@
 
     .k-grid-virtual .k-grid-content {
         .k-grid-table-wrap {
-            float: left;
+            float: inline-start;
             width: 100%;
         }
 
         .k-grid-table {
             position: relative;
-            float: left;
+            float: inline-start;
             z-index: 1;
         }
 
         > .k-height-container {
             position: relative;
-            float: left;
+            float: inline-start;
         }
 
         &::after {
@@ -747,8 +747,8 @@
 
     .k-grid-add-row td,
     .k-grid-add-row .k-table-td {
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
+        border-block-end-style: solid;
+        border-block-end-width: 1px;
     }
 
     // Locked columns
@@ -797,7 +797,7 @@
 
     .k-grid-header-locked > .k-grid-header-table,
     .k-grid-header-wrap > .k-grid-header-table {
-        margin-bottom: -1px;
+        margin-block-end: -1px;
     }
 
     .k-grid-header .k-table-th.k-grid-header-sticky,
@@ -820,8 +820,8 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
         z-index: -1;
     }
 
@@ -834,12 +834,12 @@
 
         .k-grid-row-sticky td,
         .k-grid-row-sticky .k-table-td {
-            border-bottom-width: $kendo-grid-border-width;
-            border-top-width: $kendo-grid-border-width;
+            border-block-end-width: $kendo-grid-border-width;
+            border-block-start-width: $kendo-grid-border-width;
 
             position: sticky;
-            top: inherit;
-            bottom: inherit;
+            inset-block-start: inherit;
+            inset-block-end: inherit;
             z-index: 2;
         }
 
@@ -879,8 +879,8 @@
     }
 
     .k-grid .k-grid-row-sticky {
-        border-bottom-width: $kendo-grid-border-width;
-        border-top-width: $kendo-grid-border-width;
+        border-block-end-width: $kendo-grid-border-width;
+        border-block-start-width: $kendo-grid-border-width;
     }
 
     .k-grid-header-sticky.k-table-th.k-grid-no-left-border.k-first {
@@ -993,7 +993,7 @@
                     width: $_button-calc-size;
                     height: $_button-calc-size;
                     line-height: $_button-line-height;
-                    bottom: calc( #{$_header-padding-y} + #{list.slash( $kendo-line-height-em, 2)} - #{list.slash( $kendo-button-inner-calc-size, 2 )} );
+                    inset-block-end: calc( #{$_header-padding-y} + #{list.slash( $kendo-line-height-em, 2)} - #{list.slash( $kendo-button-inner-calc-size, 2 )} );
                 }
             }
 
@@ -1167,8 +1167,8 @@
             width: 100%;
             height: $kendo-grid-stack-expandable-shadow-height;
             box-shadow: $kendo-grid-stack-expandable-shadow;
-            top: calc( -1 * #{$kendo-grid-stack-expandable-shadow-height} );
-            left: 0;
+            inset-block-start: calc( -1 * #{$kendo-grid-stack-expandable-shadow-height} );
+            inset-inline-start: 0;
         }
     }
 
@@ -1200,24 +1200,24 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
         z-index: 100;
 
         > .k-i-loading {
             position: absolute;
-            top: 50%;
-            left: 50%;
+            inset-block-start: 50%;
+            inset-inline-start: 50%;
             font-size: 64px;
         }
 
         .k-loading-pdf-progress {
             margin: auto;
             position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            inset-block-start: 0;
+            inset-block-end: 0;
+            inset-inline-start: 0;
+            inset-inline-end: 0;
         }
 
     }
@@ -1228,8 +1228,8 @@
 
     .k-grid-pdf-export-element {
         position: absolute;
-        left: -10000px;
-        top: -10000px;
+        inset-inline-start: -10000px;
+        inset-block-start: -10000px;
 
         .k-filter-row {
             display: none;
@@ -1240,7 +1240,7 @@
     // stylelint-disable declaration-no-important
     .k-pdf-export-shadow {
         .k-grid {
-            float: left;
+            float: inline-start;
             width: auto !important;
         }
 
@@ -1484,8 +1484,8 @@
 
     .k-columnmenu-item-wrapper + .k-columnmenu-item-wrapper,
     .k-column-menu-footer {
-        border-top: 1px solid;
-        border-top-color: $kendo-popup-border;
+        border-block-start: 1px solid;
+        border-block-start-color: $kendo-popup-border;
     }
 
     .k-columnmenu-item-content {
@@ -1502,8 +1502,8 @@
     }
 
     .k-column-menu-group-header-text {
-        border-bottom-width: $kendo-grid-column-menu-group-header-border-bottom-width;
-        border-bottom-style: solid;
+        border-block-end-width: $kendo-grid-column-menu-group-header-border-bottom-width;
+        border-block-end-style: solid;
         font-size: $kendo-grid-column-menu-group-header-font-size;
         line-height: $kendo-grid-column-menu-group-header-line-height;
         font-weight: var( --kendo-font-weight-bold, normal );
@@ -1519,7 +1519,7 @@
         .k-grid-table-wrap,
         .k-grid-table,
         > .k-height-container {
-            float: right;
+            float: inline-end;
         }
     }
 
