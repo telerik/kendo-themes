@@ -405,10 +405,10 @@
             }
         }
         .k-spinner-increase .k-icon {
-            bottom: if( $kendo-use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset}), auto );
+            inset-block-end: if( $kendo-use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset}), auto );
         }
         .k-spinner-decrease .k-icon {
-            top: if( $kendo-use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset}), auto );
+            inset-block-start: if( $kendo-use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset}), auto );
         }
     }
 
@@ -444,7 +444,7 @@
     .k-picker-flat {
         @include border-bottom-radius( 0 !important ); // stylelint-disable-line declaration-no-important
         border-width: $kendo-input-border-width 0;
-        border-top-color: transparent !important; // stylelint-disable-line declaration-no-important
+        border-block-start-color: transparent !important; // stylelint-disable-line declaration-no-important
         background-image: none !important; // stylelint-disable-line declaration-no-important
     }
 

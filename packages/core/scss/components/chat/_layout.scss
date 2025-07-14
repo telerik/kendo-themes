@@ -49,7 +49,7 @@
             overflow: hidden;
 
             > * + * {
-                margin-top: $kendo-chat-message-list-spacing;
+                margin-block-start: $kendo-chat-message-list-spacing;
             }
         }
 
@@ -77,7 +77,7 @@
 
             .k-first .k-chat-bubble,
             .k-only .k-chat-bubble {
-                border-bottom-left-radius: $kendo-chat-bubble-border-radius-sm;
+                border-end-start-radius: $kendo-chat-bubble-border-radius-sm;
             }
             .k-middle .k-chat-bubble,
             .k-last .k-chat-bubble {
@@ -99,7 +99,7 @@
 
             .k-first .k-chat-bubble,
             .k-only .k-chat-bubble {
-                border-bottom-right-radius: $kendo-chat-bubble-border-radius-sm;
+                border-end-end-radius: $kendo-chat-bubble-border-radius-sm;
             }
             .k-middle .k-chat-bubble,
             .k-last .k-chat-bubble {
@@ -129,15 +129,15 @@
         }
         .k-message-time {
             opacity: 0;
-            top: 50%;
+            inset-block-start: 50%;
             transform: translateY(-50%);
             transition: opacity .2s ease-in-out;
         }
         .k-message-status {
-            margin-top: $kendo-chat-bubble-spacing;
+            margin-block-start: $kendo-chat-bubble-spacing;
             height: 0;
             overflow: hidden;
-            top: 100%;
+            inset-block-start: 100%;
             transition: height .2s ease-in-out;
         }
 
@@ -162,7 +162,7 @@
 
         // Message states
         .k-message.k-selected {
-            margin-bottom: $kendo-chat-item-spacing-y;
+            margin-block-end: $kendo-chat-item-spacing-y;
             border: 0;
             color: inherit;
             background: none;
@@ -172,7 +172,7 @@
         }
         .k-message-error,
         .k-message-sending {
-            margin-bottom: $kendo-chat-item-spacing-y;
+            margin-block-end: $kendo-chat-item-spacing-y;
 
             .k-message-status { height: 1.2em; }
         }
@@ -184,11 +184,11 @@
 
             @at-root .k-message-group:not(.k-alt) > .k-avatar {
                 inset-inline-start: 0;
-                bottom: 0;
+                inset-block-end: 0;
             }
             @at-root .k-message-group.k-alt > .k-avatar {
                 inset-inline-end: 0;
-                bottom: 0;
+                inset-block-end: 0;
             }
         }
         .k-avatars {
@@ -344,18 +344,18 @@
     }
 
     .k-chat .k-card-deck-scrollwrap {
-        margin-right: calc( #{$kendo-chat-message-list-padding-y} * -1 );
-        margin-left: calc( #{$kendo-chat-message-list-padding-y} * -1 );
-        padding-left: $kendo-chat-message-list-padding-y;
-        padding-right: $kendo-chat-message-list-padding-y;
+        margin-inline-end: calc( #{$kendo-chat-message-list-padding-y} * -1 );
+        margin-inline-start: calc( #{$kendo-chat-message-list-padding-y} * -1 );
+        padding-inline-start: $kendo-chat-message-list-padding-y;
+        padding-inline-end: $kendo-chat-message-list-padding-y;
     }
 
     .k-chat .k-card-deck-scrollwrap > .k-card-deck {
         // hide scrollbar in chat
         $scrollbar-size: 20px;
 
-        margin-bottom: -$scrollbar-size;
-        padding-bottom: $scrollbar-size;
+        margin-block-end: -$scrollbar-size;
+        padding-block-end: $scrollbar-size;
     }
 
     // Deck
@@ -364,7 +364,7 @@
         flex-flow: row nowrap;
         align-items: stretch;
         flex: 0 0 auto;
-        padding-bottom: 5px; // accommodate for focused box shadow on OSX
+        padding-block-end: 5px; // accommodate for focused box shadow on OSX
 
         .k-card {
             flex: 0 0 auto;
@@ -401,7 +401,7 @@
             }
         }
         span + span {
-            margin-left: $kendo-chat-typing-indicator-dot-spacing;
+            margin-inline-start: $kendo-chat-typing-indicator-dot-spacing;
         }
 
         @keyframes k-animation-blink {
@@ -432,8 +432,8 @@
 
         .k-button-list {
             // Needed for native scrolling. Will uncoment when it's implemented.
-            // margin-bottom: -20px;
-            // padding-bottom: 20px;
+            // margin-block-end: -20px;
+            // padding-block-end: 20px;
             display: flex;
             flex-flow: row nowrap;
             overflow: hidden;
@@ -453,7 +453,7 @@
             aspect-ratio: auto;
             position: absolute;
             z-index: 2;
-            top: 0;
+            inset-block-start: 0;
 
             .k-button-icon {
                 min-width: auto;
@@ -461,10 +461,10 @@
             }
         }
         .k-scroll-button-left {
-            left: 0;
+            inset-inline-start: 0;
         }
         .k-scroll-button-right {
-            right: 0;
+            inset-inline-end: 0;
         }
 
 

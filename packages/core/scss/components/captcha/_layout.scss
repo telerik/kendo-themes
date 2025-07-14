@@ -56,7 +56,7 @@
 
     // Verification Success
     .k-captcha-validation-message {
-        margin-top: $kendo-captcha-validation-message-margin-top;
+        margin-block-start: $kendo-captcha-validation-message-margin-top;
         font-size: $kendo-captcha-validation-message-font-size;
         font-style: $kendo-captcha-validation-message-font-style;
     }

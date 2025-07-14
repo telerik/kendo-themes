@@ -95,7 +95,7 @@
 
     // Loading icon
     .k-treeview-loading {
-        margin-right: $kendo-icon-spacing;
+        margin-inline-end: $kendo-icon-spacing;
     }
 
 
@@ -122,7 +122,7 @@
         .k-icon,
         .k-image,
         .k-sprite {
-            margin-right: $kendo-icon-spacing;
+            margin-inline-end: $kendo-icon-spacing;
         }
 
         &.k-focus {
@@ -152,14 +152,14 @@
 
         // Treeview item
         .k-treeview-item {
-            padding-left: 0;
-            padding-right: $kendo-treeview-indent;
+            padding-inline-start: 0;
+            padding-inline-end: $kendo-treeview-indent;
         }
 
         // Loading
         .k-treeview-loading {
-            margin-right: 0;
-            margin-left: $kendo-icon-spacing;
+            margin-inline-end: 0;
+            margin-inline-start: $kendo-icon-spacing;
         }
 
         // Treeview leaf
@@ -168,8 +168,8 @@
             .k-icon,
             .k-image,
             .k-sprite {
-                margin-right: 0;
-                margin-left: $kendo-icon-spacing;
+                margin-inline-end: 0;
+                margin-inline-start: $kendo-icon-spacing;
             }
         }
     }

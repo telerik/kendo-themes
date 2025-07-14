@@ -70,8 +70,8 @@
         }
 
         .k-drop-hint {
-            border-top-width: $kendo-listbox-drop-hint-width;
-            border-top-style: solid;
+            border-block-start-width: $kendo-listbox-drop-hint-width;
+            border-block-start-style: solid;
         }
 
         .k-ghost {
