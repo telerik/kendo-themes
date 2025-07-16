@@ -10,12 +10,10 @@ $kendo-signature-lg-min-height: 110px !default;
 $kendo-signature-maximized-width: 750px !default;
 $kendo-signature-maximized-height: 252px !default;
 
-$kendo-signature-padding-x: k-spacing(1) !default;
 $kendo-signature-sm-padding-x: k-spacing(0.5) !default;
-$kendo-signature-md-padding-x: $kendo-signature-padding-x !default;
+$kendo-signature-md-padding-x: k-spacing(1)!default;
 $kendo-signature-lg-padding-x: k-spacing(2) !default;
 
-$kendo-signature-padding-y: $kendo-signature-padding-x !default;
 $kendo-signature-sm-padding-y: $kendo-signature-sm-padding-x !default;
 $kendo-signature-md-padding-y: $kendo-signature-md-padding-x !default;
 $kendo-signature-lg-padding-y: $kendo-signature-lg-padding-x !default;
@@ -24,7 +22,6 @@ $kendo-signature-line-width: 1px !default;
 $kendo-signature-line-style: dashed !default;
 $kendo-signature-line-color: color-mix(in srgb, k-color(info) 24%, transparent) !default;
 
-$kendo-signature-line-size: calc( 100% - 2 * #{$kendo-signature-padding-x} ) !default;
 $kendo-signature-sm-line-size: calc( 100% - 2 * #{$kendo-signature-sm-padding-x} ) !default;
 $kendo-signature-md-line-size: calc( 100% - 2 * #{$kendo-signature-md-padding-x} ) !default;
 $kendo-signature-lg-line-size: calc( 100% - 2 * #{$kendo-signature-lg-padding-x} ) !default;
@@ -59,18 +56,15 @@ $kendo-signature-maximized-line-width: 3px !default;
     $kendo-signature-lg-min-height: $kendo-signature-lg-min-height,
     $kendo-signature-maximized-width: $kendo-signature-maximized-width,
     $kendo-signature-maximized-height: $kendo-signature-maximized-height,
-    $kendo-signature-padding-x: $kendo-signature-padding-x,
     $kendo-signature-sm-padding-x: $kendo-signature-sm-padding-x,
     $kendo-signature-md-padding-x: $kendo-signature-md-padding-x,
     $kendo-signature-lg-padding-x: $kendo-signature-lg-padding-x,
-    $kendo-signature-padding-y: $kendo-signature-padding-y,
     $kendo-signature-sm-padding-y: $kendo-signature-sm-padding-y,
     $kendo-signature-md-padding-y: $kendo-signature-md-padding-y,
     $kendo-signature-lg-padding-y: $kendo-signature-lg-padding-y,
     $kendo-signature-line-width: $kendo-signature-line-width,
     $kendo-signature-line-style: $kendo-signature-line-style,
     $kendo-signature-line-color: $kendo-signature-line-color,
-    $kendo-signature-line-size: $kendo-signature-line-size,
     $kendo-signature-sm-line-size: $kendo-signature-sm-line-size,
     $kendo-signature-md-line-size: $kendo-signature-md-line-size,
     $kendo-signature-lg-line-size: $kendo-signature-lg-line-size,

@@ -41,8 +41,8 @@
     }
     .k-table-th,
     .k-table-td {
-        padding-block: $kendo-table-cell-padding-y;
-        padding-inline: $kendo-table-cell-padding-x;
+        padding-block: $kendo-table-md-cell-padding-y;
+        padding-inline: $kendo-table-md-cell-padding-x;
         border-width: 0 0 $kendo-table-cell-horizontal-border-width $kendo-table-cell-vertical-border-width;
         border-style: solid;
         border-color: inherit;
@@ -140,7 +140,7 @@
 
             &::before {
                 content: "\200b";
-                padding-block: $kendo-table-cell-padding-y;
+                padding-block: $kendo-table-md-cell-padding-y;
                 padding-inline: 0;
                 width: 0;
                 display: block;

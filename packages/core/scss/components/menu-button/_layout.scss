@@ -14,7 +14,7 @@
 
         > .k-button-arrow {
             margin-inline-start: calc( #{$kendo-menu-button-arrow-padding-x} * -1 );
-            margin-inline-end: calc( #{$kendo-button-padding-x} * -1 );
+            margin-inline-end: calc( #{$kendo-button-md-padding-x} * -1 );
             padding-left: $kendo-menu-button-arrow-padding-x;
             padding-right: $kendo-menu-button-arrow-padding-x;
             flex: none;
@@ -25,7 +25,7 @@
 
         &.k-icon-button > .k-button-arrow {
             margin-inline-start: 0;
-            margin-inline-end: calc( #{$kendo-button-padding-y} * -1 );
+            margin-inline-end: calc( #{$kendo-button-md-padding-y} * -1 );
         }
     }
 

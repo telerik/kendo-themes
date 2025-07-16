@@ -18,9 +18,6 @@ $kendo-input-border-height: calc( #{ $kendo-input-border-width } * 2 ) !default;
 /// @group input
 $kendo-input-border-radius: null !default;
 
-/// The horizontal padding of the Input components.
-/// @group input
-$kendo-input-padding-x: k-spacing(3) !default;
 /// The horizontal padding of the small Input components.
 /// @group input
 $kendo-input-sm-padding-x: k-spacing(2) !default;
@@ -31,9 +28,6 @@ $kendo-input-md-padding-x: k-spacing(3) !default;
 /// @group input
 $kendo-input-lg-padding-x: k-spacing(4) !default;
 
-/// The vertical padding of input components.
-/// @group input
-$kendo-input-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the small Input components.
 /// @group input
 $kendo-input-sm-padding-y: k-spacing(1) !default;
@@ -76,7 +70,6 @@ $kendo-input-lg-line-height: var( --kendo-line-height, normal) !default;
 
 /// The calculated height of the Input.
 /// @group input
-$kendo-input-calc-size: calc( ( #{$kendo-input-line-height} * 1em ) + ( #{$kendo-input-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) ) !default;
 $kendo-input-sm-calc-size: calc( ( #{$kendo-input-sm-line-height} * 1em ) + ( #{$kendo-input-sm-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) ) !default;
 $kendo-input-md-calc-size: calc( ( #{$kendo-input-md-line-height} * 1em ) + ( #{$kendo-input-md-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) ) !default;
 $kendo-input-lg-calc-size: calc( ( #{$kendo-input-lg-line-height} * 1em ) + ( #{$kendo-input-lg-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) ) !default;
@@ -446,11 +439,9 @@ $kendo-use-input-spinner-icon-offset: false !default;
     $kendo-input-border-width: $kendo-input-border-width,
     $kendo-input-border-height: $kendo-input-border-height,
     $kendo-input-border-radius: $kendo-input-border-radius,
-    $kendo-input-padding-x: $kendo-input-padding-x,
     $kendo-input-sm-padding-x: $kendo-input-sm-padding-x,
     $kendo-input-md-padding-x: $kendo-input-md-padding-x,
     $kendo-input-lg-padding-x: $kendo-input-lg-padding-x,
-    $kendo-input-padding-y: $kendo-input-padding-y,
     $kendo-input-sm-padding-y: $kendo-input-sm-padding-y,
     $kendo-input-md-padding-y: $kendo-input-md-padding-y,
     $kendo-input-lg-padding-y: $kendo-input-lg-padding-y,
@@ -463,7 +454,6 @@ $kendo-use-input-spinner-icon-offset: false !default;
     $kendo-input-sm-line-height: $kendo-input-sm-line-height,
     $kendo-input-md-line-height: $kendo-input-md-line-height,
     $kendo-input-lg-line-height: $kendo-input-lg-line-height,
-    $kendo-input-calc-size: $kendo-input-calc-size,
     $kendo-input-sm-calc-size: $kendo-input-sm-calc-size,
     $kendo-input-md-calc-size: $kendo-input-md-calc-size,
     $kendo-input-lg-calc-size: $kendo-input-lg-calc-size,

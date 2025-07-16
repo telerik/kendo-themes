@@ -37,9 +37,6 @@ $kendo-treeview-lg-line-height: var( --kendo-line-height, normal ) !default;
 /// @group treeview
 $kendo-treeview-indent: 24px !default;
 
-/// The horizontal padding of the TreeView items.
-/// @group treeview
-$kendo-treeview-item-padding-x: k-spacing(3) !default;
 /// The horizontal padding of the small TreeView items.
 /// @group treeview
 $kendo-treeview-sm-item-padding-x: k-spacing(2) !default;
@@ -49,9 +46,6 @@ $kendo-treeview-md-item-padding-x: k-spacing(3) !default;
 /// The horizontal padding of the large TreeView items.
 /// @group treeview
 $kendo-treeview-lg-item-padding-x: k-spacing(3) !default;
-/// The vertical padding of the TreeView items.
-/// @group treeview
-$kendo-treeview-item-padding-y: k-spacing(1) !default;
 /// The vertical padding of the small TreeView items.
 /// @group treeview
 $kendo-treeview-sm-item-padding-y: k-spacing(1) !default;
@@ -204,11 +198,9 @@ $kendo-treeview-loadmore-focus-shadow: $kendo-treeview-item-focus-shadow !defaul
     $kendo-treeview-md-line-height: $kendo-treeview-md-line-height,
     $kendo-treeview-lg-line-height: $kendo-treeview-lg-line-height,
     $kendo-treeview-indent: $kendo-treeview-indent,
-    $kendo-treeview-item-padding-x: $kendo-treeview-item-padding-x,
     $kendo-treeview-sm-item-padding-x: $kendo-treeview-sm-item-padding-x,
     $kendo-treeview-md-item-padding-x: $kendo-treeview-md-item-padding-x,
     $kendo-treeview-lg-item-padding-x: $kendo-treeview-lg-item-padding-x,
-    $kendo-treeview-item-padding-y: $kendo-treeview-item-padding-y,
     $kendo-treeview-sm-item-padding-y: $kendo-treeview-sm-item-padding-y,
     $kendo-treeview-md-item-padding-y: $kendo-treeview-md-item-padding-y,
     $kendo-treeview-lg-item-padding-y: $kendo-treeview-lg-item-padding-y,

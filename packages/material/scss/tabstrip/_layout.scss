@@ -45,7 +45,7 @@
                 bottom: 0;
                 left: 0;
                 height: $kendo-tabstrip-indicator-size;
-                margin: 0 $kendo-tabstrip-item-padding-x;
+                margin: 0 $kendo-tabstrip-md-item-padding-x;
                 pointer-events: none;
             }
             .k-item.k-active .k-link::after {
@@ -73,7 +73,7 @@
                 pointer-events: none;
                 width: $kendo-tabstrip-indicator-size;
                 height: auto;
-                margin: $kendo-tabstrip-item-padding-y 0;
+                margin: $kendo-tabstrip-md-item-padding-y 0;
             }
             .k-item.k-active::after {
                 display: block;

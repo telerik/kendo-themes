@@ -66,8 +66,8 @@
     .k-input {}
     input.k-input,
     textarea.k-textarea {
-        padding-block: $kendo-input-padding-y;
-        padding-inline: $kendo-input-padding-x;
+        padding-block: $kendo-input-md-padding-y;
+        padding-inline: $kendo-input-md-padding-x;
     }
 
     textarea.k-textarea {
@@ -80,8 +80,8 @@
         cursor: pointer;
     }
     select.k-picker {
-        padding-block: $kendo-input-padding-y;
-        padding-inline: $kendo-input-padding-x;
+        padding-block: $kendo-input-md-padding-y;
+        padding-inline: $kendo-input-md-padding-x;
         appearance: auto;
         align-items: center;
     }
@@ -89,8 +89,8 @@
 
     // Input inner
     .k-input-inner {
-        padding-block: $kendo-input-padding-y;
-        padding-inline: $kendo-input-padding-x;
+        padding-block: $kendo-input-md-padding-y;
+        padding-inline: $kendo-input-md-padding-x;
         width: 100%;
         border: 0;
         outline: 0;
@@ -163,7 +163,7 @@
     // Icon picker
     .k-icon-picker {
         > .k-input-inner {
-            padding: $kendo-input-padding-y;
+            padding: $kendo-input-md-padding-y;
             // TODO we need better way
             // width: $kendo-input-inner-calc-height;
             // height: $kendo-input-inner-calc-height;

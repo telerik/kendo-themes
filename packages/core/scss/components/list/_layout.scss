@@ -49,8 +49,8 @@
     // List header
     // .k-list-header,
     .k-list-group-sticky-header {
-        padding-block: $kendo-list-header-padding-y;
-        padding-inline: $kendo-list-header-padding-x;
+        padding-block: $kendo-list-md-header-padding-y;
+        padding-inline: $kendo-list-md-header-padding-x;
         border-width: 0;
         border-width: $kendo-list-header-border-width;
         border-style: solid;
@@ -91,8 +91,8 @@
 
     // List item
     .k-list-item {
-        padding-block: $kendo-list-item-padding-y;
-        padding-inline: $kendo-list-item-padding-x;
+        padding-block: $kendo-list-md-item-padding-y;
+        padding-inline: $kendo-list-md-item-padding-x;
         border: 0;
         font-size: $kendo-list-item-font-size;
         line-height: $kendo-list-item-line-height;
@@ -141,8 +141,8 @@
 
     // List group item
     .k-list-group-item {
-        padding-block: $kendo-list-group-item-padding-y;
-        padding-inline: $kendo-list-group-item-padding-x;
+        padding-block: $kendo-list-md-group-item-padding-y;
+        padding-inline: $kendo-list-md-group-item-padding-x;
         border-width: 0;
         border-width: $kendo-list-group-item-border-width;
         border-style: solid;
@@ -195,8 +195,8 @@
     .k-list-filter {
         display: block;
         position: relative;
-        padding-inline: $kendo-list-filter-padding-x;
-        padding-block: $kendo-list-filter-padding-y;
+        padding-inline: $kendo-list-md-filter-padding-x;
+        padding-block: $kendo-list-md-filter-padding-y;
         box-sizing: border-box;
         flex: none;
     }

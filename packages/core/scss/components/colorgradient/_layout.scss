@@ -10,8 +10,8 @@
     .k-colorgradient {
         @include border-radius( $kendo-color-gradient-border-radius );
         width: $kendo-color-gradient-width;
-        padding-block: $kendo-color-gradient-padding-y;
-        padding-inline: $kendo-color-gradient-padding-x;
+        padding-block: $kendo-color-gradient-md-padding-y;
+        padding-inline: $kendo-color-gradient-md-padding-x;
         border-style: solid;
         border-width: $kendo-color-gradient-border-width;
         box-sizing: border-box;

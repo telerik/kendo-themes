@@ -29,7 +29,7 @@
 
     // Header
     .k-coloreditor-header {
-        padding: $kendo-color-editor-header-padding-y $kendo-color-editor-header-padding-x 0;
+        padding: $kendo-color-editor-md-header-padding-y $kendo-color-editor-md-header-padding-x 0;
     }
 
     .k-coloreditor-header-actions {
@@ -89,8 +89,8 @@
     // Views
     .k-coloreditor-views {
         min-width: calc( var(--kendo-color-preview-width, #{$kendo-color-palette-tile-width}) * var(--kendo-color-preview-columns, 10) );
-        padding-block: $kendo-color-editor-views-padding-y;
-        padding-inline: $kendo-color-editor-views-padding-x;
+        padding-block: $kendo-color-editor-md-views-padding-y;
+        padding-inline: $kendo-color-editor-md-views-padding-x;
         gap: $kendo-color-editor-views-gap;
 
         .k-colorgradient {

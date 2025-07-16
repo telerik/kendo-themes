@@ -64,28 +64,22 @@ $kendo-breadcrumb-border: k-color(border) !default;
 /// @group breadcrumb
 $kendo-breadcrumb-focus-shadow: 0 0 2px 1px rgba(0, 0, 0, .06) !default;
 
-/// The horizontal padding of the Breadcrumb link.
-/// @group breadcrumb
-$kendo-breadcrumb-link-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the small Breadcrumb link.
 /// @group breadcrumb
 $kendo-breadcrumb-sm-link-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the medium Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-md-link-padding-x: $kendo-breadcrumb-link-padding-x !default;
+$kendo-breadcrumb-md-link-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the large Breadcrumb link.
 /// @group breadcrumb
 $kendo-breadcrumb-lg-link-padding-x: k-spacing(2) !default;
 
-/// The vertical padding of the Breadcrumb link.
-/// @group breadcrumb
-$kendo-breadcrumb-link-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the small Breadcrumb link.
 /// @group breadcrumb
 $kendo-breadcrumb-sm-link-padding-y: k-spacing(1) !default;
 /// The vertical padding of the medium Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-md-link-padding-y: $kendo-breadcrumb-link-padding-y !default;
+$kendo-breadcrumb-md-link-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the large Breadcrumb link.
 /// @group breadcrumb
 $kendo-breadcrumb-lg-link-padding-y: k-spacing(2) !default;
@@ -94,28 +88,22 @@ $kendo-breadcrumb-lg-link-padding-y: k-spacing(2) !default;
 /// @group breadcrumb
 $kendo-breadcrumb-link-border-radius: k-border-radius(md) !default;
 
-/// The vertical padding of the Breadcrumb link icon.
-/// @group breadcrumb
-$kendo-breadcrumb-icon-link-padding-y: k-spacing(2) !default;
 /// The vertical padding of the small Breadcrumb link icon.
 /// @group breadcrumb
 $kendo-breadcrumb-sm-icon-link-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the medium Breadcrumb link icon.
 /// @group breadcrumb
-$kendo-breadcrumb-md-icon-link-padding-y: $kendo-breadcrumb-icon-link-padding-y !default;
+$kendo-breadcrumb-md-icon-link-padding-y: k-spacing(2) !default;
 /// The vertical padding of the large Breadcrumb link icon.
 /// @group breadcrumb
 $kendo-breadcrumb-lg-icon-link-padding-y: k-spacing(3) !default;
 
-/// The horizontal padding of the Breadcrumb link icon.
-/// @group breadcrumb
-$kendo-breadcrumb-icon-link-padding-x: $kendo-breadcrumb-icon-link-padding-y !default;
 /// The horizontal padding of the small Breadcrumb link icon.
 /// @group breadcrumb
 $kendo-breadcrumb-sm-icon-link-padding-x: $kendo-breadcrumb-sm-icon-link-padding-y !default;
 /// The horizontal padding of the medium Breadcrumb link icon.
 /// @group breadcrumb
-$kendo-breadcrumb-md-icon-link-padding-x: $kendo-breadcrumb-icon-link-padding-x !default;
+$kendo-breadcrumb-md-icon-link-padding-x: $kendo-breadcrumb-md-icon-link-padding-y !default;
 /// The horizontal padding of the large Breadcrumb link icon.
 /// @group breadcrumb
 $kendo-breadcrumb-lg-icon-link-padding-x: $kendo-breadcrumb-lg-icon-link-padding-y !default;
@@ -251,20 +239,16 @@ $kendo-breadcrumb-sizes: (
     $kendo-breadcrumb-text: $kendo-breadcrumb-text,
     $kendo-breadcrumb-border: $kendo-breadcrumb-border,
     $kendo-breadcrumb-focus-shadow: $kendo-breadcrumb-focus-shadow,
-    $kendo-breadcrumb-link-padding-x: $kendo-breadcrumb-link-padding-x,
     $kendo-breadcrumb-sm-link-padding-x: $kendo-breadcrumb-sm-link-padding-x,
     $kendo-breadcrumb-md-link-padding-x: $kendo-breadcrumb-md-link-padding-x,
     $kendo-breadcrumb-lg-link-padding-x: $kendo-breadcrumb-lg-link-padding-x,
-    $kendo-breadcrumb-link-padding-y: $kendo-breadcrumb-link-padding-y,
     $kendo-breadcrumb-sm-link-padding-y: $kendo-breadcrumb-sm-link-padding-y,
     $kendo-breadcrumb-md-link-padding-y: $kendo-breadcrumb-md-link-padding-y,
     $kendo-breadcrumb-lg-link-padding-y: $kendo-breadcrumb-lg-link-padding-y,
     $kendo-breadcrumb-link-border-radius: $kendo-breadcrumb-link-border-radius,
-    $kendo-breadcrumb-icon-link-padding-y: $kendo-breadcrumb-icon-link-padding-y,
     $kendo-breadcrumb-sm-icon-link-padding-y: $kendo-breadcrumb-sm-icon-link-padding-y,
     $kendo-breadcrumb-md-icon-link-padding-y: $kendo-breadcrumb-md-icon-link-padding-y,
     $kendo-breadcrumb-lg-icon-link-padding-y: $kendo-breadcrumb-lg-icon-link-padding-y,
-    $kendo-breadcrumb-icon-link-padding-x: $kendo-breadcrumb-icon-link-padding-x,
     $kendo-breadcrumb-sm-icon-link-padding-x: $kendo-breadcrumb-sm-icon-link-padding-x,
     $kendo-breadcrumb-md-icon-link-padding-x: $kendo-breadcrumb-md-icon-link-padding-x,
     $kendo-breadcrumb-lg-icon-link-padding-x: $kendo-breadcrumb-lg-icon-link-padding-x,
