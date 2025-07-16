@@ -4,9 +4,6 @@
 
 // Pager
 
-/// The horizontal padding of the Pager.
-/// @group pager
-$kendo-pager-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the small Pager.
 /// @group pager
 $kendo-pager-sm-padding-x: k-spacing(1) !default;
@@ -123,7 +120,6 @@ $kendo-pager-sizes: (
 ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/pager/_variables.scss" with (
-    $kendo-pager-padding-x: $kendo-pager-padding-x,
     $kendo-pager-sm-padding-x: $kendo-pager-sm-padding-x,
     $kendo-pager-md-padding-x: $kendo-pager-md-padding-x,
     $kendo-pager-lg-padding-x: $kendo-pager-lg-padding-x,

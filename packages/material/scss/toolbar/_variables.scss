@@ -5,41 +5,32 @@
 
 // Toolbar
 
-/// The horizontal padding of the Toolbar.
-/// @group toolbar
-$kendo-toolbar-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the small Toolbar.
 /// @group toolbar
 $kendo-toolbar-sm-padding-x: k-spacing(1) !default;
 /// The horizontal padding of the medium Toolbar.
 /// @group toolbar
-$kendo-toolbar-md-padding-x: $kendo-toolbar-padding-x !default;
+$kendo-toolbar-md-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the large Toolbar.
 /// @group toolbar
 $kendo-toolbar-lg-padding-x: k-spacing(2.5) !default;
 
-/// The vertical padding of the Toolbar.
-/// @group toolbar
-$kendo-toolbar-padding-y: k-spacing(2) !default;
 /// The vertical padding of the small Toolbar.
 /// @group toolbar
 $kendo-toolbar-sm-padding-y: k-spacing(1) !default;
 /// The vertical padding of the medium Toolbar.
 /// @group toolbar
-$kendo-toolbar-md-padding-y: $kendo-toolbar-padding-y !default;
+$kendo-toolbar-md-padding-y: k-spacing(2) !default;
 /// The vertical padding of the large Toolbar.
 /// @group toolbar
 $kendo-toolbar-lg-padding-y: k-spacing(2.5) !default;
 
-/// The spacing between the Toolbar tools.
-/// @group toolbar
-$kendo-toolbar-spacing: k-spacing(2) !default;
 /// The spacing between the tools of the small Toolbar.
 /// @group toolbar
 $kendo-toolbar-sm-spacing: k-spacing(1) !default;
 /// The spacing between the tools of the medium Toolbar.
 /// @group toolbar
-$kendo-toolbar-md-spacing: $kendo-toolbar-spacing !default;
+$kendo-toolbar-md-spacing: k-spacing(2) !default;
 /// The spacing between the tools of the large Toolbar.
 /// @group toolbar
 $kendo-toolbar-lg-spacing: k-spacing(2.5) !default;
@@ -171,15 +162,12 @@ $kendo-toolbar-sizes: (
 ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/toolbar/_variables.scss" with (
-    $kendo-toolbar-padding-x: $kendo-toolbar-padding-x,
     $kendo-toolbar-sm-padding-x: $kendo-toolbar-sm-padding-x,
     $kendo-toolbar-md-padding-x: $kendo-toolbar-md-padding-x,
     $kendo-toolbar-lg-padding-x: $kendo-toolbar-lg-padding-x,
-    $kendo-toolbar-padding-y: $kendo-toolbar-padding-y,
     $kendo-toolbar-sm-padding-y: $kendo-toolbar-sm-padding-y,
     $kendo-toolbar-md-padding-y: $kendo-toolbar-md-padding-y,
     $kendo-toolbar-lg-padding-y: $kendo-toolbar-lg-padding-y,
-    $kendo-toolbar-spacing: $kendo-toolbar-spacing,
     $kendo-toolbar-sm-spacing: $kendo-toolbar-sm-spacing,
     $kendo-toolbar-md-spacing: $kendo-toolbar-md-spacing,
     $kendo-toolbar-lg-spacing: $kendo-toolbar-lg-spacing,

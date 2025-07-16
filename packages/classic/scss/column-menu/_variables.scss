@@ -1,15 +1,12 @@
 @use "../core/_index.scss" as *;
 
-$kendo-column-menu-item-padding-x: k-spacing(2) !default;
-$kendo-column-menu-item-padding-y: k-spacing(1) !default;
-
-$kendo-column-menu-item-sm-padding-x: $kendo-column-menu-item-padding-x !default;
+$kendo-column-menu-item-sm-padding-x: k-spacing(2) !default;
 $kendo-column-menu-item-sm-padding-y: k-spacing(0.5) !default;
 
-$kendo-column-menu-item-md-padding-x: $kendo-column-menu-item-padding-x !default;
-$kendo-column-menu-item-md-padding-y: $kendo-column-menu-item-padding-y !default;
+$kendo-column-menu-item-md-padding-x: k-spacing(2) !default;
+$kendo-column-menu-item-md-padding-y: k-spacing(1) !default;
 
-$kendo-column-menu-item-lg-padding-x: $kendo-column-menu-item-padding-x !default;
+$kendo-column-menu-item-lg-padding-x: k-spacing(2) !default;
 $kendo-column-menu-item-lg-padding-y: k-spacing(1.5) !default;
 
 $kendo-column-menu-font-size: var( --kendo-font-size, inherit ) !default;
@@ -62,8 +59,6 @@ $kendo-group-menu-item-border: k-color(border) !default;
     $kendo-column-menu-md-line-height: $kendo-column-menu-md-line-height,
     $kendo-column-menu-lg-line-height: $kendo-column-menu-lg-line-height,
     $kendo-column-menu-font-family: $kendo-column-menu-font-family,
-    $kendo-column-menu-item-padding-x: $kendo-column-menu-item-padding-x,
-    $kendo-column-menu-item-padding-y: $kendo-column-menu-item-padding-y,
     $kendo-column-menu-item-sm-padding-x: $kendo-column-menu-item-sm-padding-x,
     $kendo-column-menu-item-sm-padding-y: $kendo-column-menu-item-sm-padding-y,
     $kendo-column-menu-item-md-padding-x: $kendo-column-menu-item-md-padding-x,

@@ -12,8 +12,8 @@
     // Base
     .k-toolbar {
         margin: 0;
-        padding-block: $kendo-toolbar-padding-y;
-        padding-inline: $kendo-toolbar-padding-x;
+        padding-block: $kendo-toolbar-md-padding-y;
+        padding-inline: $kendo-toolbar-md-padding-x;
         border-width: $kendo-toolbar-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -24,7 +24,7 @@
         list-style: none;
         display: flex;
         flex-flow: row wrap;
-        gap: $kendo-toolbar-spacing;
+        gap: $kendo-toolbar-md-spacing;
         align-items: center;
         justify-content: flex-start;
         position: relative;
@@ -35,7 +35,7 @@
         // Remove once we decide to not size empty containers
         &::before {
             content: "";
-            height: $kendo-button-calc-size;
+            height: $kendo-button-md-calc-size;
         }
 
         &.k-toolbar-resizable {
@@ -79,7 +79,7 @@
             vertical-align: middle;
 
             > label {
-                margin-inline-end: $kendo-toolbar-spacing;
+                margin-inline-end: $kendo-toolbar-md-spacing;
                 align-self: center;
             }
         }
@@ -154,7 +154,7 @@
     .k-toolbar-items {
         display: flex;
         flex-flow: row nowrap;
-        gap: $kendo-toolbar-spacing;
+        gap: $kendo-toolbar-md-spacing;
         align-items: center;
         justify-content: flex-start;
         flex: 1 1 auto;
@@ -173,7 +173,7 @@
     .k-toolbar-items-list {
         display: flex;
         flex-flow: row wrap;
-        gap: $kendo-toolbar-spacing;
+        gap: $kendo-toolbar-md-spacing;
         align-items: center;
         justify-content: flex-start;
         flex: 1 1 auto;

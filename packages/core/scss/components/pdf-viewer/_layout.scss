@@ -279,7 +279,7 @@
     // Search
     .k-pdf-viewer-canvas > .k-search-panel {
         width: max-content;
-        margin-top: calc( (#{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-panel-padding-y} )) * -1 );
+        margin-top: calc( (#{$kendo-button-md-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-panel-padding-y} )) * -1 );
         padding-block: $kendo-pdf-viewer-search-panel-padding-y;
         padding-inline: $kendo-pdf-viewer-search-panel-padding-x;
         border-width: $kendo-pdf-viewer-search-panel-border-width;

@@ -338,7 +338,7 @@
     .k-edit-label {
         margin: 0 0 k-spacing(4);
         // TODO: do we need the input variable?
-        padding: calc( #{$kendo-input-padding-y} + #{$kendo-input-border-width} ) 0;
+        padding: calc( #{$kendo-input-md-padding-y} + #{$kendo-input-border-width} ) 0;
         width: 30%;
         line-height: $kendo-form-line-height;
         text-align: end;
@@ -354,7 +354,7 @@
 
         &.k-no-editor {
             // TODO: do we need the input variable?
-            padding: calc( #{$kendo-input-padding-y} + #{$kendo-input-border-width} ) 0;
+            padding: calc( #{$kendo-input-md-padding-y} + #{$kendo-input-border-width} ) 0;
         }
     }
 

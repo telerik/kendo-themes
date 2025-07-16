@@ -3,41 +3,32 @@
 
 // OTP
 
-/// The gap between the items in the OTP.
-/// @group one-time-password
-$kendo-otp-gap: k-spacing(1.5) !default;
 /// The gap between the items in the small OTP.
 /// @group one-time-password
 $kendo-otp-sm-gap: k-spacing(1) !default;
 /// The gap between the items in the medium OTP.
 /// @group one-time-password
-$kendo-otp-md-gap: $kendo-otp-gap !default;
+$kendo-otp-md-gap: k-spacing(1.5) !default;
 /// The gap between the items in the large OTP.
 /// @group one-time-password
 $kendo-otp-lg-gap: k-spacing(2) !default;
 
-/// The horizontal padding of the OTP separator.
-/// @group one-time-password
-$kendo-otp-separator-padding-x: $kendo-otp-gap !default;
 /// The horizontal padding of the small OTP separator.
 /// @group one-time-password
 $kendo-otp-sm-separator-padding-x: $kendo-otp-sm-gap !default;
 /// The horizontal padding of the medium OTP separator.
 /// @group one-time-password
-$kendo-otp-md-separator-padding-x: $kendo-otp-separator-padding-x !default;
+$kendo-otp-md-separator-padding-x: $kendo-otp-md-gap !default;
 /// The horizontal padding of the large OTP separator.
 /// @group one-time-password
 $kendo-otp-lg-separator-padding-x: $kendo-otp-lg-gap !default;
 
-/// The horizontal padding of the OTP separator.
-/// @group one-time-password
-$kendo-otp-input-width: $kendo-input-calc-size !default;
 /// The horizontal padding of the small OTP separator.
 /// @group one-time-password
 $kendo-otp-sm-input-width: $kendo-input-sm-calc-size !default;
 /// The horizontal padding of the medium OTP separator.
 /// @group one-time-password
-$kendo-otp-md-input-width: $kendo-otp-input-width !default;
+$kendo-otp-md-input-width: $kendo-input-md-calc-size !default;
 /// The horizontal padding of the large OTP separator.
 /// @group one-time-password
 $kendo-otp-lg-input-width: $kendo-input-lg-calc-size !default;
@@ -61,15 +52,12 @@ $kendo-otp-sizes: (
 ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/otp/_variables.scss" with (
-    $kendo-otp-gap: $kendo-otp-gap,
     $kendo-otp-sm-gap: $kendo-otp-sm-gap,
     $kendo-otp-md-gap: $kendo-otp-md-gap,
     $kendo-otp-lg-gap: $kendo-otp-lg-gap,
-    $kendo-otp-separator-padding-x: $kendo-otp-separator-padding-x,
     $kendo-otp-sm-separator-padding-x: $kendo-otp-sm-separator-padding-x,
     $kendo-otp-md-separator-padding-x: $kendo-otp-md-separator-padding-x,
     $kendo-otp-lg-separator-padding-x: $kendo-otp-lg-separator-padding-x,
-    $kendo-otp-input-width: $kendo-otp-input-width,
     $kendo-otp-sm-input-width: $kendo-otp-sm-input-width,
     $kendo-otp-md-input-width: $kendo-otp-md-input-width,
     $kendo-otp-lg-input-width: $kendo-otp-lg-input-width,

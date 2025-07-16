@@ -6,31 +6,25 @@
 /// @group badge
 $kendo-badge-border-width: 1px !default;
 
-/// The horizontal padding of the Badge.
-/// @group badge
-$kendo-badge-padding-x: .65em !default;
 /// The horizontal padding of the small Badge.
 /// @group badge
-$kendo-badge-sm-padding-x: calc( $kendo-badge-padding-x / 2 ) !default;
+$kendo-badge-sm-padding-x: calc( .65em / 2 ) !default;
 /// The horizontal padding of the medium Badge.
 /// @group badge
 $kendo-badge-md-padding-x: .65em !default;
 /// The horizontal padding of the large Badge.
 /// @group badge
-$kendo-badge-lg-padding-x: calc( $kendo-badge-padding-x * 1.5 ) !default;
+$kendo-badge-lg-padding-x: calc( $kendo-badge-md-padding-x * 1.5 ) !default;
 
-/// The vertical padding of the Badge.
-/// @group badge
-$kendo-badge-padding-y: .35em !default;
 /// The vertical padding of the small Badge.
 /// @group badge
-$kendo-badge-sm-padding-y: calc( $kendo-badge-padding-y / 2 ) !default;
+$kendo-badge-sm-padding-y: calc( .35em / 2 ) !default;
 /// The vertical padding of the medium Badge.
 /// @group badge
 $kendo-badge-md-padding-y: .35em !default;
 /// The vertical padding of the large Badge.
 /// @group badge
-$kendo-badge-lg-padding-y: calc( $kendo-badge-padding-y * 1.5 ) !default;
+$kendo-badge-lg-padding-y: calc( $kendo-badge-md-padding-y * 1.5 ) !default;
 
 /// The font sizes of the Badge.
 /// @group badge
@@ -60,7 +54,7 @@ $kendo-badge-lg-line-height: $kendo-badge-line-height !default;
 
 /// The calculated minimum width of the circular Badge.
 /// @group badge
-$kendo-badge-min-width: calc( #{$kendo-badge-line-height * 1em} + calc( #{$kendo-badge-padding-y} * 2 ) + calc( #{$kendo-badge-border-width} * 2 )) !default;
+$kendo-badge-min-width: calc( #{$kendo-badge-line-height * 1em} + calc( #{$kendo-badge-md-padding-y} * 2 ) + calc( #{$kendo-badge-border-width} * 2 )) !default;
 /// The calculated minimum width of the small circular Badge.
 /// @group badge
 $kendo-badge-sm-min-width: calc( #{$kendo-badge-sm-line-height * 1em} + calc( #{$kendo-badge-sm-padding-y} * 2 ) + calc( #{$kendo-badge-border-width} * 2 ) ) !default;
@@ -112,11 +106,9 @@ $kendo-badge-theme-colors: (
 
 @forward "@progress/kendo-theme-core/scss/components/badge/_variables.scss" with (
     $kendo-badge-border-width: $kendo-badge-border-width,
-    $kendo-badge-padding-x: $kendo-badge-padding-x,
     $kendo-badge-sm-padding-x: $kendo-badge-sm-padding-x,
     $kendo-badge-md-padding-x: $kendo-badge-md-padding-x,
     $kendo-badge-lg-padding-x: $kendo-badge-lg-padding-x,
-    $kendo-badge-padding-y: $kendo-badge-padding-y,
     $kendo-badge-sm-padding-y: $kendo-badge-sm-padding-y,
     $kendo-badge-md-padding-y: $kendo-badge-md-padding-y,
     $kendo-badge-lg-padding-y: $kendo-badge-lg-padding-y,

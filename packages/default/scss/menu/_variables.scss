@@ -194,21 +194,18 @@ $kendo-menu-popup-gradient: null !default;
 
 /// The horizontal padding of the Menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-padding-x: k-spacing(2) !default;
 $kendo-menu-popup-sm-item-padding-x: k-spacing(2) !default;
 $kendo-menu-popup-md-item-padding-x: k-spacing(2) !default;
 $kendo-menu-popup-lg-item-padding-x: k-spacing(2) !default;
 
 /// The vertical padding of the Menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-padding-y: k-spacing(1) !default;
 $kendo-menu-popup-sm-item-padding-y: k-spacing(0.5) !default;
 $kendo-menu-popup-md-item-padding-y: k-spacing(1) !default;
 $kendo-menu-popup-lg-item-padding-y: k-spacing(1.5) !default;
 
 /// The end padding of the Menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-padding-end: calc( #{$kendo-menu-popup-item-padding-x} * 2 + #{$kendo-icon-size} ) !default;
 $kendo-menu-popup-sm-item-padding-end: calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 + #{$kendo-icon-size} ) !default;
 $kendo-menu-popup-md-item-padding-end: calc( #{$kendo-menu-popup-md-item-padding-x} * 2 + #{$kendo-icon-size} ) !default;
 $kendo-menu-popup-lg-item-padding-end: calc( #{$kendo-menu-popup-lg-item-padding-x} * 2 + #{$kendo-icon-size} ) !default;
@@ -329,15 +326,12 @@ $kendo-menu-popup-item-focus-shadow: $kendo-menu-item-focus-shadow !default;
     $kendo-menu-popup-text: $kendo-menu-popup-text,
     $kendo-menu-popup-border: $kendo-menu-popup-border,
     $kendo-menu-popup-gradient: $kendo-menu-popup-gradient,
-    $kendo-menu-popup-item-padding-x: $kendo-menu-popup-item-padding-x,
     $kendo-menu-popup-sm-item-padding-x: $kendo-menu-popup-sm-item-padding-x,
     $kendo-menu-popup-md-item-padding-x: $kendo-menu-popup-md-item-padding-x,
     $kendo-menu-popup-lg-item-padding-x: $kendo-menu-popup-lg-item-padding-x,
-    $kendo-menu-popup-item-padding-y: $kendo-menu-popup-item-padding-y,
     $kendo-menu-popup-sm-item-padding-y: $kendo-menu-popup-sm-item-padding-y,
     $kendo-menu-popup-md-item-padding-y: $kendo-menu-popup-md-item-padding-y,
     $kendo-menu-popup-lg-item-padding-y: $kendo-menu-popup-lg-item-padding-y,
-    $kendo-menu-popup-item-padding-end: $kendo-menu-popup-item-padding-end,
     $kendo-menu-popup-sm-item-padding-end: $kendo-menu-popup-sm-item-padding-end,
     $kendo-menu-popup-md-item-padding-end: $kendo-menu-popup-md-item-padding-end,
     $kendo-menu-popup-lg-item-padding-end: $kendo-menu-popup-lg-item-padding-end,

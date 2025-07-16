@@ -13,28 +13,22 @@ $kendo-chip-border-width: 1px !default;
 /// @group chip
 $kendo-chip-spacing: k-spacing(1) !default;
 
-/// The horizontal padding of the Chip.
-/// @group chip
-$kendo-chip-padding-x: k-spacing(1) !default;
 /// The horizontal padding of the small Chip.
 /// @group chip
 $kendo-chip-sm-padding-x: k-spacing(1) !default;
 /// The horizontal padding of the medium Chip.
 /// @group chip
-$kendo-chip-md-padding-x: $kendo-chip-padding-x !default;
+$kendo-chip-md-padding-x: k-spacing(1) !default;
 /// The horizontal padding of the large Chip.
 /// @group chip
 $kendo-chip-lg-padding-x: k-spacing(1) !default;
 
-/// The vertical padding of the Chip.
-/// @group chip
-$kendo-chip-padding-y: k-spacing(1) !default;
 /// The vertical padding of the small Chip.
 /// @group chip
 $kendo-chip-sm-padding-y: k-spacing(0.5) !default;
 /// The vertical padding of the medium Chip.
 /// @group chip
-$kendo-chip-md-padding-y: $kendo-chip-padding-y !default;
+$kendo-chip-md-padding-y: k-spacing(1) !default;
 /// The vertical padding of the large Chip.
 /// @group chip
 $kendo-chip-lg-padding-y: k-spacing(1.5) !default;
@@ -71,7 +65,7 @@ $kendo-chip-lg-line-height: $kendo-chip-line-height !default;
 
 /// The calculated height of the Chip.
 /// @group chip
-$kendo-chip-calc-size: calc( #{$kendo-chip-line-height} * 1em + calc( #{$kendo-chip-padding-y} * 2 ) + #{$kendo-chip-border-width} * 2 ) !default;
+$kendo-chip-calc-size: calc( #{$kendo-chip-line-height} * 1em + calc( #{$kendo-chip-md-padding-y} * 2 ) + #{$kendo-chip-border-width} * 2 ) !default;
 $kendo-chip-sm-calc-size: calc( #{$kendo-chip-sm-line-height} * 1em + calc( #{$kendo-chip-sm-padding-y} * 2 ) + #{$kendo-chip-border-width} * 2 ) !default;
 
 /// The map with the sizes of the Chip.
@@ -187,11 +181,9 @@ $kendo-chip-list-sizes: (
 @forward "@progress/kendo-theme-core/scss/components/chip/_variables.scss" with (
     $kendo-chip-border-width: $kendo-chip-border-width,
     $kendo-chip-spacing: $kendo-chip-spacing,
-    $kendo-chip-padding-x: $kendo-chip-padding-x,
     $kendo-chip-sm-padding-x: $kendo-chip-sm-padding-x,
     $kendo-chip-md-padding-x: $kendo-chip-md-padding-x,
     $kendo-chip-lg-padding-x: $kendo-chip-lg-padding-x,
-    $kendo-chip-padding-y: $kendo-chip-padding-y,
     $kendo-chip-sm-padding-y: $kendo-chip-sm-padding-y,
     $kendo-chip-md-padding-y: $kendo-chip-md-padding-y,
     $kendo-chip-lg-padding-y: $kendo-chip-lg-padding-y,

@@ -16,12 +16,6 @@ $kendo-color-gradient-border-width: 1px !default;
 /// The border radius of the ColorGradient.
 /// @group color-gradient
 $kendo-color-gradient-border-radius: k-border-radius(md) !default;
-/// The vertical padding of the ColorGradient.
-/// @group color-gradient
-$kendo-color-gradient-padding-y: $kendo-color-gradient-spacer !default;
-/// The horizontal padding of the ColorGradient.
-/// @group color-gradient
-$kendo-color-gradient-padding-x: $kendo-color-gradient-padding-y !default;
 /// The spacing between the sections of the ColorGradient.
 /// @group color-gradient
 $kendo-color-gradient-gap: $kendo-color-gradient-spacer !default;
@@ -49,13 +43,13 @@ $kendo-color-gradient-border: k-color(border) !default;
 $kendo-color-gradient-sm-padding-y: $kendo-color-gradient-spacer !default;
 /// The horizontal padding of the small ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-sm-padding-x: $kendo-color-gradient-padding-y !default;
+$kendo-color-gradient-sm-padding-x: k-spacing(3) !default;
 /// The vertical padding of the medium ColorGradient.
 /// @group color-gradient
 $kendo-color-gradient-md-padding-y: $kendo-color-gradient-spacer !default;
 /// The horizontal padding of the medium ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-md-padding-x: $kendo-color-gradient-padding-y !default;
+$kendo-color-gradient-md-padding-x: k-spacing(3) !default;
 /// The vertical padding of the large ColorGradient.
 /// @group color-gradient
 $kendo-color-gradient-lg-padding-y: k-spacing(4.5) !default;
@@ -260,8 +254,6 @@ $kendo-color-gradient-sizes: (
     $kendo-color-gradient-width: $kendo-color-gradient-width,
     $kendo-color-gradient-border-width: $kendo-color-gradient-border-width,
     $kendo-color-gradient-border-radius: $kendo-color-gradient-border-radius,
-    $kendo-color-gradient-padding-y: $kendo-color-gradient-padding-y,
-    $kendo-color-gradient-padding-x: $kendo-color-gradient-padding-x,
     $kendo-color-gradient-gap: $kendo-color-gradient-gap,
     $kendo-color-gradient-font-family: $kendo-color-gradient-font-family,
     $kendo-color-gradient-font-size: $kendo-color-gradient-font-size,
