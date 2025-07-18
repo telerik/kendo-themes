@@ -508,6 +508,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-stack-focus-outline</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the Grid stack layout focused cell.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-stack-expandable-shadow</td>
     <td>String</td>
     <td><code>k-elevation(2)</code></td>

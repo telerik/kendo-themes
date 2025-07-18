@@ -15933,6 +15933,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-stack-focus-outline</td>
+    <td>String</td>
+    <td><code>k-color(base-emphasis)</code></td>
+    <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the Grid stack layout focused cell.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-stack-expandable-shadow</td>
     <td>String</td>
     <td><code>k-elevation(2)</code></td>
