@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.2.0-dev.2](https://github.com/telerik/kendo-themes/compare/v11.2.0-dev.1...v11.2.0-dev.2) (2025-07-21)
+
+
+### Bug Fixes
+
+* **grid:** add min-height to stack cell content and remove grouping aggregates items styles ([e0487c5](https://github.com/telerik/kendo-themes/commit/e0487c58771c30c9bb1a9eb500ba8c352a5771ad))
+* **grid:** improve dirty cell indicator position ([620f9c5](https://github.com/telerik/kendo-themes/commit/620f9c57a009ff79db645b28b86f197396184bcc))
+* **grid:** improve stack header cell contrast ratio in a11y swatch ([df8dfbc](https://github.com/telerik/kendo-themes/commit/df8dfbcf4331edabaf4335bd059a3fae23f41928))
+
+
+### Features
+
+* **grid:** add selected and focus states for cells in stack layout ([d08f6e8](https://github.com/telerik/kendo-themes/commit/d08f6e860dddbfb4563c09d1968754998ce345cf))
+* **html:** add selected and focus states for cells in stack layout ([ad9bef9](https://github.com/telerik/kendo-themes/commit/ad9bef91571efcc4cc173dddca48b0a3fb8896d0))
+
+
+
+
+
 # [11.2.0-dev.1](https://github.com/telerik/kendo-themes/compare/v11.2.0-dev.0...v11.2.0-dev.1) (2025-07-14)
 
 **Note:** Version bump only for package kendo-themes.repo
