@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.2.0-dev.2](https://github.com/telerik/kendo-themes/compare/v11.2.0-dev.1...v11.2.0-dev.2) (2025-07-21)
+
+
+### Bug Fixes
+
+* **grid:** improve stack header cell contrast ratio in a11y swatch ([df8dfbc](https://github.com/telerik/kendo-themes/commit/df8dfbcf4331edabaf4335bd059a3fae23f41928))
+
+
+### Features
+
+* **grid:** add selected and focus states for cells in stack layout ([d08f6e8](https://github.com/telerik/kendo-themes/commit/d08f6e860dddbfb4563c09d1968754998ce345cf))
+
+
+
+
+
 # [11.2.0-dev.1](https://github.com/telerik/kendo-themes/compare/v11.2.0-dev.0...v11.2.0-dev.1) (2025-07-14)
 
 **Note:** Version bump only for package @progress/kendo-theme-default
