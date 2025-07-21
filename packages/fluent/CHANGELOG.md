@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.2.0-dev.3](https://github.com/telerik/kendo-themes/compare/v11.2.0-dev.2...v11.2.0-dev.3) (2025-07-21)
+
+
+### Bug Fixes
+
+* **toolbar:** focus indicator is cropped ([de9d482](https://github.com/telerik/kendo-themes/commit/de9d4822b846f15ad3bb0a8835775d750f1a023d))
+
+
+
+
+
 # [11.2.0-dev.2](https://github.com/telerik/kendo-themes/compare/v11.2.0-dev.1...v11.2.0-dev.2) (2025-07-21)
 
 
