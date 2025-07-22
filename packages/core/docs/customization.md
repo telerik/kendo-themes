@@ -7,6 +7,93 @@ position: 9
 
 # Customization
 
+## Mixins
+
+### `k-colors-auto`
+
+Automatically generates comprehensive color variations for all theme color families using modern CSS features like `oklch()` and `color-mix()`. This mixin creates hover, active, subtle, emphasis, and contrast variants for base, primary, secondary, tertiary, info, success, warning, error, light, and dark color families, as well as series color variations for data visualization.
+
+#### Syntax
+
+```scss
+@include k-colors-auto();
+```
+
+#### Generated Color Variations
+
+For each color family (base, primary, secondary, tertiary, info, success, warning, error, light, dark):
+- `--kendo-color-{color}-hover` - Hover state with reduced lightness and chroma
+- `--kendo-color-{color}-active` - Active state with further reduced lightness and chroma  
+- `--kendo-color-{color}-subtle` - Subtle variant mixed with white
+- `--kendo-color-{color}-subtle-hover` - Hover state for subtle variant
+- `--kendo-color-{color}-subtle-active` - Active state for subtle variant
+- `--kendo-color-{color}-emphasis` - Emphasized variant with higher color saturation
+- `--kendo-color-on-{color}` - Contrasting text color for use on the base color
+- `--kendo-color-{color}-on-surface` - Color variant for use on surfaces
+- `--kendo-color-{color}-on-subtle` - Contrasting color for use on subtle variants
+
+For series colors (a, b, c, d, e, f):
+- `--kendo-color-series-{series}-bold` - Bold variant for data visualization
+- `--kendo-color-series-{series}-bolder` - Bolder variant for data visualization
+- `--kendo-color-series-{series}-subtle` - Subtle variant for data visualization
+- `--kendo-color-series-{series}-subtler` - More subtle variant for data visualization
+
+#### Examples
+
+```scss
+// Include the mixin to generate all auto color variations
+@include k-colors-auto();
+
+// The mixin will generate CSS custom properties like:
+// --kendo-color-primary-hover: oklch(from var(--kendo-color-primary) calc(l * 0.92) calc(c * 0.92) h);
+// --kendo-color-primary-active: oklch(from var(--kendo-color-primary) calc(l * 0.84) calc(c * 0.83) h);
+// --kendo-color-primary-subtle: color-mix(in oklch, var(--kendo-color-primary) 8%, white 92%);
+// ... and many more
+```
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_mixins.import.scss#L15-L43
+@mixin k-colors-auto() {
+    :root {
+        --l-threshold: 0.7;
+        --contrast-l: calc(clamp(0, (l / var(--l-threshold) - 1) * -9999, 1) * 0.78 + 0.22);
+        --chroma-factor: 0;
+        --hover-lightness-factor: 0.92;
+        --active-lightness-factor: 0.84;
+
+        --hover-chroma-factor: 0.92;
+        --active-chroma-factor: 0.83;
+
+        --subtle-mix-percent: 8%;
+        --emphasis-mix-percent: 70%;
+
+        /* COLOR FAMILIES */
+        @each $color in base, primary, secondary, tertiary, info, success, warning, error, light, dark {
+            /* #{string.to-upper-case($color)} COLOR FAMILY */
+            --kendo-color-#{$color}-hover: oklch(from var(--kendo-color-#{$color}) calc(l * var(--hover-lightness-factor)) calc(c * var(--hover-chroma-factor)) h);
+            --kendo-color-#{$color}-active: oklch(from var(--kendo-color-#{$color}) calc(l * var(--active-lightness-factor)) calc(c * var(--active-chroma-factor)) h);
+            --kendo-color-#{$color}-subtle: color-mix(in oklch, var(--kendo-color-#{$color}) var(--subtle-mix-percent), white calc(100% - var(--subtle-mix-percent)));
+            --kendo-color-#{$color}-subtle-hover: color-mix(in oklch, var(--kendo-color-#{$color}) 12%, white 88%);
+            --kendo-color-#{$color}-subtle-active: color-mix(in oklch, var(--kendo-color-#{$color}) 20%, white 80%);
+            --kendo-color-#{$color}-emphasis: color-mix(in oklch, var(--kendo-color-#{$color}) var(--emphasis-mix-percent), white calc(100% - var(--emphasis-mix-percent)));
+            --kendo-color-on-#{$color}: oklch(from var(--kendo-color-#{$color}) var(--contrast-l) var(--chroma-factor) h);
+            --kendo-color-#{$color}-on-surface: var(--kendo-color-#{$color});
+            --kendo-color-#{$color}-on-subtle: oklch(from var(--kendo-color-#{$color}-subtle) calc(clamp(0, (l / var(--l-threshold) - 1) * -9999, 1) * 0.78 + 0.22) var(--chroma-factor) h);
+        }
+
+        /* SERIES COLOR FAMILIES */
+        @each $series in a, b, c, d, e, f {
+            --kendo-color-series-#{$series}-bold: oklch(from var(--kendo-color-series-#{$series}) calc(l * 0.75) calc(c * var(--active-chroma-factor)) h);
+            --kendo-color-series-#{$series}-bolder: oklch(from var(--kendo-color-series-#{$series}) calc(l * 0.5) calc(c * 0.6) h);
+            --kendo-color-series-#{$series}-subtle: color-mix(in oklch, var(--kendo-color-series-#{$series}) 30%, white 70%);
+            --kendo-color-series-#{$series}-subtler: color-mix(in oklch, var(--kendo-color-series-#{$series}) 50%, white 50%);
+        }
+    }
+}
+```
+
 ## Functions
 
 
@@ -1727,7 +1814,7 @@ Returns the value at `$key` in `$map`.
 #### Syntax
 
 ```scss
-k-map-get($map, $key) // => 
+k-map-get($map, $key) // =>
 ```
 
 #### Parameters
