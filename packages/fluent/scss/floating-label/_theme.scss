@@ -1,11 +1,13 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "../input/_variables.scss" as *;
 
 @mixin kendo-floating-label--theme() {
 
      // Floating label
      .k-floating-label-container {
 
+        &.k-empty > .k-floating-label,
         > .k-floating-label {
             @include fill(
                 $color: var( --kendo-floating-label-text, #{$kendo-floating-label-text} ),
@@ -13,6 +15,7 @@
             );
         }
 
+        &:focus-within > .k-floating-label,
         &.k-focus > .k-floating-label {
             @include fill(
                 $color: var( --kendo-floating-label-focus-text, #{$kendo-floating-label-focus-text} ),
@@ -27,5 +30,68 @@
         }
 
     }
+
+    .k-label-position-border {
+
+        &.k-empty > .k-floating-label,
+        > .k-floating-label {
+            @include fill(
+                $color: var( --kendo-floating-label-text, #{$kendo-floating-label-text} ),
+                $bg: var( --kendo-floating-label-bg, #{$kendo-floating-label-bg} )
+            );
+        }
+
+        > .k-floating-label,
+        &.k-focus > .k-floating-label,
+        &:focus-within > .k-floating-label {
+            @include fill (
+                $color: var( --kendo-floating-label-pos-border-focus-text , #{$kendo-floating-label-pos-border-focus-text } ),
+                $bg: var( --kendo-floating-label-pos-border-focus-bg , #{$kendo-floating-label-pos-border-focus-bg } )
+            );
+        }
+    }
+
+    .k-label-position-inside {
+        > .k-floating-label,
+        &.k-focus > .k-floating-label,
+        &:focus-within > .k-floating-label {
+            @include fill (
+                $color: var( --kendo-floating-label-pos-inside-focus-text , #{$kendo-floating-label-pos-inside-focus-text } ),
+            );
+        }
+
+        // Fix for picker outline hover
+        > .k-picker-outline:hover + .k-floating-label,
+        > .k-picker-outline.k-hover + .k-floating-label {
+            @include fill (
+                $color: var( --kendo-picker-outline-hover-text , #{$kendo-picker-outline-hover-text } )
+            );
+        }
+    }
+
+    .k-label-position-outside,
+    .k-label-position-border {
+
+        // Fix for picker outline hover
+        &.k-empty > .k-picker-outline:hover + .k-floating-label,
+        &.k-empty > .k-picker-outline.k-hover + .k-floating-label {
+            @include fill (
+                $color: var( --kendo-picker-outline-hover-text , #{$kendo-picker-outline-hover-text } )
+            );
+        }
+
+        > .k-picker-outline:hover + .k-floating-label,
+        &.k-focus > .k-picker-outline:hover + .k-floating-label,
+        &:focus-within > .k-picker-outline:hover + .k-floating-label,
+        > .k-picker-outline.k-hover + .k-floating-label,
+        &.k-focus > .k-picker-outline.k-hover + .k-floating-label,
+        &:focus-within > .k-picker-outline.k-hover + .k-floating-label {
+            @include fill (
+                $color: var( --kendo-picker-outline-text , #{$kendo-picker-outline-text } )
+            );
+        }
+    }
+
+
 
 }

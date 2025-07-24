@@ -17,4 +17,13 @@
         }
     }
 
+    .k-label-position-border {
+        > .k-input-solid + .k-floating-label,
+        > .k-picker-solid + .k-floating-label {
+            @include fill (
+                $bg: transparent
+            );
+        }
+    }
+
 }

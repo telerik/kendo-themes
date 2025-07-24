@@ -11222,6 +11222,66 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
+    <td>$kendo-floating-label-pos-border-scale</td>
+    <td>Number</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transformation scale of the Border Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-pos-border-focus-scale</td>
+    <td>Number</td>
+    <td><code>.75</code></td>
+    <td><code>0.75</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transformation scale of the focused Border Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-pos-border-focus-offset-x</td>
+    <td>String</td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the focused Border Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-pos-border-focus-padding</td>
+    <td>List</td>
+    <td><code>0 k-spacing(1)</code></td>
+    <td><code>(0 var(--kendo-spacing-1, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the focused Border Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-pos-inside-scale</td>
+    <td>Number</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transformation scale of the Inside Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-pos-inside-focus-scale</td>
+    <td>Number</td>
+    <td><code>.75</code></td>
+    <td><code>0.75</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transformation scale of the focused Inside Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-floating-label-transition</td>
     <td>List</td>
     <td><code>.15s cubic-bezier( .4, 0, .2, 1 )</code></td>
@@ -11269,6 +11329,36 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-pos-border-focus-bg</td>
+    <td>String</td>
+    <td><code>k-color(app-surface)</code></td>
+    <td><code>var(--kendo-color-app-surface, #FEFBFF)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Border Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-pos-border-focus-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Border Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-pos-inside-focus-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Inside Floating Label.</div></div>
     </td>
 </tr>
 </tbody>
