@@ -21,6 +21,7 @@ export const PromptNormal = (props) => (
                 <Textarea
                     resize="y"
                     rows={1}
+                    suffixSeparator={false}
                     placeholder="Ask or generate content with AI"
                     suffix={
                         <>
