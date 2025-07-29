@@ -1,0 +1,3 @@
+@use "../color-system/_mixins.import.scss" as *;
+
+@include k-colors-auto();
