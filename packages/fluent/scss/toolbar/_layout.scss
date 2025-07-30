@@ -42,7 +42,6 @@
         &.k-toolbar-scrollable {
             flex-wrap: nowrap;
             position: relative;
-            margin-inline-start: calc( var( --kendo-toolbar-spacing, 0 ) * -1 );
         }
 
         &.k-toolbar-scrollable-overlay {
