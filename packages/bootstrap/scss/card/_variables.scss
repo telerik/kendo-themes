@@ -68,7 +68,7 @@ $kendo-card-focus-shadow: k-elevation(3) !default;
 $kendo-card-header-padding-x: $kendo-card-padding-x !default;
 /// The vertical padding of the Card header.
 /// @group card
-$kendo-card-header-padding-y: $kendo-card-padding-y !default;
+$kendo-card-header-padding-y: k-spacing(2) !default;
 /// The bottom border width of the Card header.
 /// @group card
 $kendo-card-header-border-width: $kendo-card-border-width !default;
@@ -91,10 +91,10 @@ $kendo-card-body-padding-y: $kendo-card-padding-x !default; // In bootstrap, all
 
 /// The horizontal padding of the Card footer.
 /// @group card
-$kendo-card-footer-padding-x: $kendo-card-padding-x !default;
+$kendo-card-footer-padding-x: $kendo-card-header-padding-x !default;
 /// The vertical padding of the Card footer.
 /// @group card
-$kendo-card-footer-padding-y: $kendo-card-padding-y !default;
+$kendo-card-footer-padding-y: $kendo-card-header-padding-y !default;
 /// The top border width of the Card footer.
 /// @group card
 $kendo-card-footer-border-width: $kendo-card-border-width !default;

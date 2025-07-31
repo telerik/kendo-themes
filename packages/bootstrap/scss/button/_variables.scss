@@ -58,7 +58,7 @@ $kendo-button-sm-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-button-md-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the large Button.
 /// @group button
-$kendo-button-lg-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-button-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
 
 /// The line height used along with the $kendo-font-size variable.
 /// @group button

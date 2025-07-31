@@ -77,11 +77,17 @@
 
         // Prefix & Suffix
         .k-input-prefix {
-            color: $kendo-input-prefix-text;
+            @include fill(
+                $kendo-input-prefix-text,
+                $kendo-input-prefix-bg,
+            );
         }
 
         .k-input-suffix {
-            color: $kendo-input-suffix-text;
+            @include fill(
+                $kendo-input-suffix-text,
+                $kendo-input-suffix-bg,
+            );
         }
 
         .k-input-separator {

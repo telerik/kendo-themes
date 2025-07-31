@@ -59,7 +59,7 @@ $kendo-input-sm-font-size: var( --kendo-font-size-sm, inherit )!default;
 $kendo-input-md-font-size: var( --kendo-font-size, inherit )  !default;
 /// The font size of the large Input components.
 /// @group input
-$kendo-input-lg-font-size: var( --kendo-font-size, inherit )  !default;
+$kendo-input-lg-font-size: var( --kendo-font-size-lg, inherit )  !default;
 
 /// The line height of input components.
 /// @group input
@@ -270,9 +270,15 @@ $kendo-input-separator-text: k-color(border) !default;
 /// The text color of the Input prefix.
 /// @group input
 $kendo-input-prefix-text: k-color(subtle) !default;
+/// The background color of the Input prefix.
+/// @group input
+$kendo-input-prefix-bg: k-color(surface) !default;
 /// The text color of the Input suffix.
 /// @group input
 $kendo-input-suffix-text: k-color(subtle) !default;
+/// The background color of the Input suffix.
+/// @group input
+$kendo-input-suffix-bg: k-color(surface) !default;
 
 /// The border color of the invalid Input components.
 /// @group input
@@ -283,13 +289,13 @@ $kendo-input-invalid-shadow: 0 0 0 .25rem color-mix(in srgb, k-color(error) 25%,
 
 /// The background color of the Picker components.
 /// @group picker
-$kendo-picker-bg: $kendo-button-bg !default;
+$kendo-picker-bg: k-color(surface-alt) !default;
 /// The text color of the Picker components.
 /// @group picker
-$kendo-picker-text: $kendo-button-text !default;
+$kendo-picker-text: k-color(on-app-surface) !default;
 /// The border color of the Picker components.
 /// @group picker
-$kendo-picker-border: $kendo-button-border !default;
+$kendo-picker-border: k-color(border) !default;
 /// The gradient of the Picker components.
 /// @group picker
 $kendo-picker-gradient: $kendo-button-gradient !default;
@@ -299,13 +305,13 @@ $kendo-picker-shadow: $kendo-button-shadow !default;
 
 /// The background color of the hovered Picker components.
 /// @group picker
-$kendo-picker-hover-bg: $kendo-button-hover-bg !default;
+$kendo-picker-hover-bg: k-color(surface) !default;
 /// The text color of the hovered Picker components.
 /// @group picker
-$kendo-picker-hover-text: $kendo-button-hover-text !default;
+$kendo-picker-hover-text: null !default;
 /// The border color of the hovered Picker components.
 /// @group picker
-$kendo-picker-hover-border: $kendo-button-hover-border !default;
+$kendo-picker-hover-border: k-color(border-alt) !default;
 /// The gradient of the hovered Picker components.
 /// @group picker
 $kendo-picker-hover-gradient: $kendo-button-hover-gradient !default;
@@ -315,19 +321,19 @@ $kendo-picker-hover-shadow: $kendo-button-hover-shadow !default;
 
 /// The background color of the focused Picker components.
 /// @group picker
-$kendo-picker-focus-bg: $kendo-button-active-bg !default;
+$kendo-picker-focus-bg: null !default;
 /// The text color of the focused Picker components.
 /// @group picker
 $kendo-picker-focus-text: null !default;
 /// The border color of the focused Picker components.
 /// @group picker
-$kendo-picker-focus-border: k-color(base-active) !default;
+$kendo-picker-focus-border: $kendo-input-focus-border !default;
 /// The gradient of the focused Picker components.
 /// @group picker
 $kendo-picker-focus-gradient: null !default;
 /// The shadow of the focused Picker components.
 /// @group picker
-$kendo-picker-focus-shadow: $kendo-button-focus-shadow !default;
+$kendo-picker-focus-shadow: $kendo-input-focus-shadow !default;
 
 /// The background color of the disabled Picker components.
 /// @group picker
@@ -511,7 +517,9 @@ $kendo-use-input-spinner-icon-offset: false !default;
     $kendo-input-spinner-icon-offset: $kendo-input-spinner-icon-offset,
     $kendo-input-separator-text: $kendo-input-separator-text,
     $kendo-input-prefix-text: $kendo-input-prefix-text,
+    $kendo-input-prefix-bg: $kendo-input-prefix-bg,
     $kendo-input-suffix-text: $kendo-input-suffix-text,
+    $kendo-input-suffix-bg: $kendo-input-suffix-bg,
     $kendo-input-invalid-border: $kendo-input-invalid-border,
     $kendo-input-invalid-shadow: $kendo-input-invalid-shadow,
     $kendo-picker-bg: $kendo-picker-bg,

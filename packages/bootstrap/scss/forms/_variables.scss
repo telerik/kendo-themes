@@ -7,7 +7,7 @@
 
 /// The padding of the inline Form.
 /// @group form
-$kendo-form-spacer: calc( #{k-spacing(4)} * 2 ) !default;
+$kendo-form-spacer: k-spacing(8) !default;
 
 /// The font size of the Form.
 /// @group form
@@ -21,14 +21,14 @@ $kendo-form-line-height: 1.5 !default;
 $kendo-form-fieldset-margin: 2rem 0 0 !default;
 /// The padding of the Form fieldset.
 /// @group form
-$kendo-form-fieldset-padding: k-spacing(0) !default;
+$kendo-form-fieldset-padding: 0 !default;
 
 /// The margin of the Form legend.
 /// @group form
 $kendo-form-legend-margin: 0 0 1rem !default;
 /// The padding of the Form legend.
 /// @group form
-$kendo-form-legend-padding: k-spacing(0) !default;
+$kendo-form-legend-padding: 0 !default;
 /// The border width of the Form legend.
 /// @group form
 $kendo-form-legend-border-width: 0 0 2px !default;

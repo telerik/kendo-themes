@@ -272,9 +272,15 @@ $kendo-input-separator-text: $kendo-input-border !default;
 /// The text color of the Input prefix.
 /// @group input
 $kendo-input-prefix-text: k-color(subtle) !default;
+/// The background color of the Input prefix.
+/// @group input
+$kendo-input-prefix-bg: null !default;
 /// The text color of the Input suffix.
 /// @group input
 $kendo-input-suffix-text: k-color(subtle) !default;
+/// The background color of the Input suffix.
+/// @group input
+$kendo-input-suffix-bg: null !default;
 
 /// The border color of the invalid Input components.
 /// @group input
@@ -514,7 +520,9 @@ $kendo-use-input-spinner-icon-offset: false !default;
     $kendo-input-spinner-icon-offset: $kendo-input-spinner-icon-offset,
     $kendo-input-separator-text: $kendo-input-separator-text,
     $kendo-input-prefix-text: $kendo-input-prefix-text,
+    $kendo-input-prefix-bg: $kendo-input-prefix-bg,
     $kendo-input-suffix-text: $kendo-input-suffix-text,
+    $kendo-input-suffix-bg: $kendo-input-suffix-bg,
     $kendo-input-invalid-border: $kendo-input-invalid-border,
     $kendo-input-invalid-shadow: $kendo-input-invalid-shadow,
     $kendo-picker-bg: $kendo-picker-bg,

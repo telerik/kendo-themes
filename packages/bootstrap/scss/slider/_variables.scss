@@ -29,10 +29,10 @@ $kendo-slider-button-size: ($kendo-slider-alt-size - 2) !default;
 
 /// The thickness of the Slider track.
 /// @group slider
-$kendo-slider-track-thickness: 4px !default;
+$kendo-slider-track-thickness: k-spacing(2) !default;
 /// The size of the Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-size: 14px !default;
+$kendo-slider-draghandle-size: 16px !default;
 /// The border width of the Slider drag handle.
 /// @group slider
 $kendo-slider-draghandle-border-width: 1px !default;
