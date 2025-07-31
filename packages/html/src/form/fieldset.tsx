@@ -6,8 +6,7 @@ export type KendoFieldsetProps = {
     legend?: null | string;
     layout?: null | string;
     cols?: number;
-    gapX?: number;
-    gapY?: number;
+    gutters?: string | { rows?: string; cols?: string };
     colSpan?: string | number;
 };
 
@@ -19,8 +18,7 @@ export const Fieldset = (
         legend,
         layout,
         cols,
-        gapX,
-        gapY,
+        gutters,
         colSpan
     } = props;
 
@@ -38,10 +36,12 @@ export const Fieldset = (
                     'k-d-grid',
                     {
                         [`k-grid-cols-${cols}`]: cols,
-                        [`k-gap-x-${gapX}`]: gapX,
-                        [`k-gap-y-${gapY}`]: gapY
                     }
-                )}>
+                )} style={{
+                    ...(typeof gutters === 'string' && { gap: gutters }),
+                    ...(typeof gutters === 'object' && gutters.rows && { rowGap: gutters.rows }),
+                    ...(typeof gutters === 'object' && gutters.cols && { columnGap: gutters.cols })
+                }}>
                     {props.children}
                 </div>
                 :

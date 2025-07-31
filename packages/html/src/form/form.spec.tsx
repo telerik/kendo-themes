@@ -19,8 +19,7 @@ export type KendoFormProps = KendoFormOptions & {
     layout?: string;
     formButtons?: React.JSX.Element | string;
     cols?: number;
-    gapX?: number;
-    gapY?: number;
+    gutters?: string | { rows?: string; cols?: string };
     tag?: string;
     children?: React.JSX.Element | React.JSX.Element[];
 };
@@ -41,8 +40,7 @@ export const Form = (
         layout = defaultOptions.layout,
         formButtons,
         cols,
-        gapX,
-        gapY,
+        gutters,
         tag = defaultOptions.tag,
         children
     } = props;
@@ -86,11 +84,13 @@ export const Form = (
                     'k-form-layout',
                     'k-d-grid',
                     {
-                        [`k-grid-cols-${cols}`]: cols,
-                        [`k-gap-x-${gapX}`]: gapX,
-                        [`k-gap-y-${gapY}`]: gapY
+                        [`k-grid-cols-${cols}`]: cols
                     }
-                )}>
+                )} style={{
+                    ...(typeof gutters === 'string' && { gap: gutters }),
+                    ...(typeof gutters === 'object' && gutters.rows && { rowGap: gutters.rows }),
+                    ...(typeof gutters === 'object' && gutters.cols && { columnGap: gutters.cols })
+                }}>
                     {formChildren}
                 </div>
                 :

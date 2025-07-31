@@ -40,7 +40,7 @@ export default () =>(
                         }
                     >
                         <TabStripContent active>
-                            <FormNormal formButtons={null} tag="div" layout="grid" cols={4} gapX={2}>
+                            <FormNormal formButtons={null} tag="div" layout="grid" cols={4} gutters={{cols: "8px"}}>
                                 <FormField
                                     colSpan="full"
                                     className="k-form-field-error"

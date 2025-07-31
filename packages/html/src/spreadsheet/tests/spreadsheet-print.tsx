@@ -36,7 +36,7 @@ export default () =>(
                     >
                         <div className="k-tabstrip-content k-active">
                             <FormNormal formButtons={null} tag="div" layout="grid">
-                                <Fieldset legend="Settings" layout="grid" cols={2} gapX={4}>
+                                <Fieldset legend="Settings" layout="grid" cols={2} gutters={{cols: "16px"}}>
                                     <FormField
                                         colSpan="1"
                                         label="Print"
@@ -48,7 +48,7 @@ export default () =>(
                                         editor={<DropdownList value="A4" />}>
                                     </FormField>
                                 </Fieldset>
-                                <Fieldset legend="Orientation" layout="grid" cols={1} gapX={4}>
+                                <Fieldset legend="Orientation" layout="grid" cols={1} gutters={{cols: "16px"}}>
                                     <FormField
                                         colSpan="4"
                                         label=""
@@ -67,7 +67,7 @@ export default () =>(
                                         }>
                                     </FormField>
                                 </Fieldset>
-                                <Fieldset legend="Pages" layout="grid" cols={4} gapX={4}>
+                                <Fieldset legend="Pages" layout="grid" cols={4} gutters={{cols: "16px"}}>
                                     <FormField
                                         colSpan="1"
                                         label="Pages"
@@ -84,7 +84,7 @@ export default () =>(
                                     </FormField>
                                     <FormField colSpan="3" label="&nbsp;" editor={<Textbox placeholder="Example: 2 or 1 - 3" />}></FormField>
                                 </Fieldset>
-                                <Fieldset legend="Margins Unit" layout="grid" cols={4} gapX={4}>
+                                <Fieldset legend="Margins Unit" layout="grid" cols={4} gutters={{cols: "16px"}}>
                                     <FormField
                                         colSpan="1"
                                         label="Top"

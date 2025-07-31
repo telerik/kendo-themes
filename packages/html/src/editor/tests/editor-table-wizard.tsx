@@ -47,7 +47,7 @@ export default () =>(
                         }
                     >
                         <TabStripContent active>
-                            <FormNormal formButtons={null} tag="div" layout="grid" cols={4} gapX={4}>
+                            <FormNormal formButtons={null} tag="div" layout="grid" cols={4} gutters={{cols: "16px"}}>
                                 <FormField
                                     colSpan="2"
                                     label="Rows"
@@ -151,7 +151,7 @@ export default () =>(
                             <FormNormal formButtons={null} tag="div" layout="grid">
                                 <FormField label="ID" optional editor={ <Textbox /> } />
                                 <FormField label="CSS class" optional editor={ <Textbox /> } />
-                                <Fieldset legend="Accessibility" layout="grid" cols={4} gapX={4} >
+                                <Fieldset legend="Accessibility" layout="grid" cols={4} gutters={{cols: "16px"}} >
                                     <FormField
                                         colSpan="2"
                                         label="Caption"
@@ -198,7 +198,7 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <FormNormal formButtons={null} tag="div" layout="grid" cols={4} gapX={4}>
+                    <FormNormal formButtons={null} tag="div" layout="grid" cols={4} gutters={{cols: "16px"}}>
                         <FormField
                             colSpan="full"
                             editor={
