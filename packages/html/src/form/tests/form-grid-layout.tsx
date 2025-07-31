@@ -20,8 +20,8 @@ export default () =>(
             <span></span>
 
             <section>
-                <FormGridLayout cols={2} gapX={4} gapY={3}>
-                    <Fieldset legend="Form Legend" layout="grid" cols={1} gapY={3}>
+                <FormGridLayout cols={2} gutters="16px">
+                    <Fieldset legend="Form Legend" layout="grid" cols={1} gutters={{rows: "12px"}}>
                         <FormField label="Label" editor={<Textbox />} />
                         <FormField
                             label="Label"
@@ -48,7 +48,7 @@ export default () =>(
                             }
                         />
                     </Fieldset>
-                    <Fieldset legend="Form Legend" layout="grid" cols={2} gapX={4} gapY={3}>
+                    <Fieldset legend="Form Legend" layout="grid" cols={2} gutters={{cols: "16px", rows: "12px"}}>
                         <FormField label="Label" editor={<Textbox />} />
                         <FormField
                             label="Label"
@@ -61,7 +61,7 @@ export default () =>(
                             }
                         />
                     </Fieldset>
-                        <Fieldset legend="Form Legend" layout="grid" cols={2} gapX={4} gapY={3} colSpan={2}>
+                        <Fieldset legend="Form Legend" layout="grid" cols={2} gutters={{cols: "16px", rows: "12px"}} colSpan={2}>
                             <FormField label="Label" editor={<Textbox />} />
                             <FormField
                                 label="Label"

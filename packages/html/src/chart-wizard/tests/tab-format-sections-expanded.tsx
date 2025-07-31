@@ -24,7 +24,7 @@ export default () => (
                 <span className="k-font-bold">ChartArea section expanded</span>
                 <ExpansionPanel title="Chart area" expanded>
                     <Form>
-                        <Fieldset legend="Margins" layout="grid" cols={2} gapX={4} >
+                        <Fieldset legend="Margins" layout="grid" cols={2} gutters={{cols: "16px"}} >
                             <FormField
                                 label="Left"
                                 editor={ <NumericTextbox placeholder="Auto" showClearButton={false} fillMode="outline" /> }
@@ -56,7 +56,7 @@ export default () => (
             <section>
                 <span className="k-font-bold">Title section expanded</span>
                 <ExpansionPanel title="Title" expanded>
-                    <Form layout="grid" cols={2} gapX={4}>
+                    <Form layout="grid" cols={2} gutters={{cols: "16px"}}>
                         <FormField colSpan="2"
                             label="Apply to"
                             editor={ <DropdownList placeholder="Chart title" fillMode="outline" /> }
@@ -86,7 +86,7 @@ export default () => (
                 <span className="k-font-bold">CategoryAxis section expanded</span>
                 <ExpansionPanel title="Category axis" expanded>
                     <Form>
-                        <Fieldset legend="Title" layout="grid" cols={2} gapX={4} >
+                        <Fieldset legend="Title" layout="grid" cols={2} gutters={{cols: "16px"}} >
                             <FormField colSpan="2"
                                 editor={ <Textbox placeholder="Axis Title" fillMode="outline" /> }
                             />
@@ -104,7 +104,7 @@ export default () => (
                             ></FormField>
                         </Fieldset>
 
-                        <Fieldset legend="Labels" layout="grid" cols={2} gapX={4} >
+                        <Fieldset legend="Labels" layout="grid" cols={2} gutters={{cols: "16px"}} >
                             <FormField colSpan="2"
                                 label="Font"
                                 editor={ <Combobox placeholder="(Inherited font)" fillMode="outline" /> }
@@ -140,7 +140,7 @@ export default () => (
                 <span className="k-font-bold">ValueAxis section expanded</span>
                 <ExpansionPanel title="Value axis" expanded>
                     <Form>
-                        <Fieldset legend="Title" layout="grid" cols={2} gapX={4} >
+                        <Fieldset legend="Title" layout="grid" cols={2} gutters={{cols: "16px"}} >
                             <FormField colSpan="2"
                                 editor={ <Textbox placeholder="Axis Title" fillMode="outline" /> }
                             />
@@ -158,7 +158,7 @@ export default () => (
                             ></FormField>
                         </Fieldset>
 
-                        <Fieldset legend="Labels" layout="grid" cols={2} gapX={4}>
+                        <Fieldset legend="Labels" layout="grid" cols={2} gutters={{cols: "16px"}}>
                             <FormField colSpan="2"
                                 label="Label Format"
                                 editor={ <DropdownList value="Number" fillMode="outline" /> }
@@ -187,7 +187,7 @@ export default () => (
             <section>
                 <span className="k-font-bold">Legend section expanded</span>
                 <ExpansionPanel title="Legend" expanded>
-                    <Form layout="grid" cols={2} gapX={4}>
+                    <Form layout="grid" cols={2} gutters={{cols: "16px"}}>
                         <label className="k-label">Show Legend</label>
                         <Switch onLabel="On" offLabel="Off" checked />
 

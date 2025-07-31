@@ -30,7 +30,7 @@ export const ImageEditorResize = (props: any) => (
                     <Button icon="cancel-outline">Cancel</Button>
                 </>
             }>
-                <Fieldset layout="grid" legend="Resize Image" cols={2} gapX={2}>
+                <Fieldset layout="grid" legend="Resize Image" cols={2} gutters={{cols: "8px"}}>
                     <FormField
                         colSpan="1"
                         label="Width:"

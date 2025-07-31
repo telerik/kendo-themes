@@ -31,7 +31,7 @@ export const ImageEditorCrop = (props: any) => (
                     <Button icon="cancel-outline">Cancel</Button>
                 </>
             }>
-                <Fieldset layout="grid" legend="Crop Image" cols={2} gapX={2}>
+                <Fieldset layout="grid" legend="Crop Image" cols={2} gutters={{cols: "8px"}}>
                     <FormField
                         colSpan="2"
                         label="Aspect Ratio:"
