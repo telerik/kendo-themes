@@ -18,7 +18,6 @@
         @include kendo-form--layout();
         @include kendo-form--theme();
         @include kendo-utils--layout--display();
-        @include kendo-utils--flex-grid--gap();
         @include kendo-utils--flex-grid--grid-template-columns();
         @include kendo-utils--flex-grid--grid-column-start-end();
     }
