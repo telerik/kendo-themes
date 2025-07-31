@@ -11,7 +11,7 @@ $kendo-popover-border-width: $kendo-card-border-width !default;
 $kendo-popover-border-style: solid !default;
 /// The radius of the border around the Popover.
 /// @group popover
-$kendo-popover-border-radius: $kendo-card-border-radius !default;
+$kendo-popover-border-radius: var( --kendo-border-radius-lg, 0 ) !default;
 /// The font family of the Popover.
 /// @group popover
 $kendo-popover-font-family: $kendo-card-font-family !default;
@@ -20,7 +20,7 @@ $kendo-popover-font-family: $kendo-card-font-family !default;
 $kendo-popover-font-size: $kendo-card-font-size !default;
 /// The line height of the Popover.
 /// @group popover
-$kendo-popover-line-height: $kendo-card-line-height !default;
+$kendo-popover-line-height: var( --kendo-line-height-sm, normal ) !default;
 
 /// The text color of the Popover.
 /// @group popover
@@ -62,7 +62,7 @@ $kendo-popover-header-border: inherit !default;
 $kendo-popover-body-padding-x: $kendo-card-body-padding-x !default;
 /// The vertical padding of the Popover body.
 /// @group popover
-$kendo-popover-body-padding-y: $kendo-card-body-padding-y !default;
+$kendo-popover-body-padding-y: k-spacing(2) !default;
 
 /// The border width of the Popover actions.
 /// @group popover

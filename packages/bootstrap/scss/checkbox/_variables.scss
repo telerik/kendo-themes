@@ -166,7 +166,7 @@ $kendo-checkbox-indeterminate-image: k-escape-svg( url("data:image/svg+xml,<svg 
 
 /// The horizontal margin of the CheckBox inside a label.
 /// @group checkbox
-$kendo-checkbox-label-margin-x: k-spacing(1) !default;
+$kendo-checkbox-label-margin-x: k-spacing(2) !default;
 
 
 // CheckBox list
@@ -179,7 +179,7 @@ $kendo-checkbox-list-spacing: k-spacing(4) !default;
 $kendo-checkbox-list-item-padding-x: k-spacing(0) !default;
 /// The vertical padding of the CheckBox list items
 /// @group checkbox
-$kendo-checkbox-list-item-padding-y: $kendo-list-md-item-padding-y !default;
+$kendo-checkbox-list-item-padding-y: k-spacing(0.5) !default;
 
 
 // CheckBox ripple

@@ -21,13 +21,13 @@ $kendo-border-radius-md: $kendo-border-radius !default;
 $kendo-border-radius-lg: map.get($kendo-spacing, 2) !default;
 /// The extra large border radius used across the Components.
 /// @group radii
-$kendo-border-radius-xl: map.get($kendo-spacing, 3) !default;
+$kendo-border-radius-xl: map.get($kendo-spacing, 4) !default;
 /// The third largest border radius used across the Components.
 /// @group radii
-$kendo-border-radius-xxl: map.get($kendo-spacing, 4) !default;
+$kendo-border-radius-xxl: map.get($kendo-spacing, 8) !default;
 /// The second largest border radius used across the Components.
 /// @group radii
-$kendo-border-radius-xxxl: map.get($kendo-spacing, 8) !default;
+$kendo-border-radius-xxxl: map.get($kendo-spacing, 12) !default;
 /// The largest border radius used across the Components.
 /// @group radii
 $kendo-border-radius-full: 50rem !default;

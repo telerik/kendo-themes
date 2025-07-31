@@ -49,7 +49,7 @@
                 "border-alt": {
                     "name": "Border Alt",
                     "type": "color",
-                    "value": "rgba(222, 226, 230, 0.36)"
+                    "value": "rgba(255, 255, 255, 0.15)"
                 },
                 "base-subtle": {
                     "name": "Base Subtle",
@@ -109,7 +109,7 @@
                 "primary-subtle-hover": {
                     "name": "Primary Subtle Hover",
                     "type": "color",
-                    "value": "#04224E"
+                    "value": "#012151"
                 },
                 "primary-subtle-active": {
                     "name": "Primary Subtle Active",
@@ -124,7 +124,7 @@
                 "primary-hover": {
                     "name": "Primary Hover",
                     "type": "color",
-                    "value": "#0C64E4"
+                    "value": "#0b5ed7"
                 },
                 "primary-active": {
                     "name": "Primary Active",
@@ -154,17 +154,17 @@
                 "secondary-subtle": {
                     "name": "Secondary Subtle",
                     "type": "color",
-                    "value": "#121417"
+                    "value": "#161719"
                 },
                 "secondary-subtle-hover": {
                     "name": "Secondary Subtle Hover",
                     "type": "color",
-                    "value": "#1A1D20"
+                    "value": "#242526"
                 },
                 "secondary-subtle-active": {
                     "name": "Secondary Subtle Active",
                     "type": "color",
-                    "value": "#212529"
+                    "value": "#2E2F2F"
                 },
                 "secondary": {
                     "name": "Secondary",
@@ -174,12 +174,12 @@
                 "secondary-hover": {
                     "name": "Secondary Hover",
                     "type": "color",
-                    "value": "#5C636A"
+                    "value": "#5c636a"
                 },
                 "secondary-active": {
                     "name": "Secondary Active",
                     "type": "color",
-                    "value": "#555C64"
+                    "value": "#565e64"
                 },
                 "secondary-emphasis": {
                     "name": "Secondary Emphasis",
@@ -189,7 +189,7 @@
                 "secondary-on-subtle": {
                     "name": "Secondary On Subtle",
                     "type": "color",
-                    "value": "#ADB5BD"
+                    "value": "#a7acb1"
                 },
                 "on-secondary": {
                     "name": "On Secondary",
@@ -224,12 +224,12 @@
                 "tertiary-hover": {
                     "name": "Tertiary Hover",
                     "type": "color",
-                    "value": "#59359A"
+                    "value": "#7E58C6"
                 },
                 "tertiary-active": {
                     "name": "Tertiary Active",
                     "type": "color",
-                    "value": "#4E2F89"
+                    "value": "#8C68CD"
                 },
                 "tertiary-emphasis": {
                     "name": "Tertiary Emphasis",
@@ -239,7 +239,7 @@
                 "tertiary-on-subtle": {
                     "name": "Tertiary On Subtle",
                     "type": "color",
-                    "value": "#B9A3E1"
+                    "value": "#A98EDA"
                 },
                 "on-tertiary": {
                     "name": "On Tertiary",
@@ -274,12 +274,12 @@
                 "info-hover": {
                     "name": "Info Hover",
                     "type": "color",
-                    "value": "#3DD5F3"
+                    "value": "#31d2f2"
                 },
                 "info-active": {
                     "name": "Info Active",
                     "type": "color",
-                    "value": "#6EDFF6"
+                    "value": "#3dd5f3"
                 },
                 "info-emphasis": {
                     "name": "Info Emphasis",
@@ -314,7 +314,7 @@
                 "success-subtle-active": {
                     "name": "Success Subtle Active",
                     "type": "color",
-                    "value": "#0D442A"
+                    "value": "#0F5132"
                 },
                 "success": {
                     "name": "Success",
@@ -324,12 +324,12 @@
                 "success-hover": {
                     "name": "Success Hover",
                     "type": "color",
-                    "value": "#146C43"
+                    "value": "#157347"
                 },
                 "success-active": {
                     "name": "Success Active",
                     "type": "color",
-                    "value": "#0F5132"
+                    "value": "#146c43"
                 },
                 "success-emphasis": {
                     "name": "Success Emphasis",
@@ -374,12 +374,12 @@
                 "warning-hover": {
                     "name": "Warning Hover",
                     "type": "color",
-                    "value": "#CC9A06"
+                    "value": "#ffca2c"
                 },
                 "warning-active": {
                     "name": "Warning Active",
                     "type": "color",
-                    "value": "#B38705"
+                    "value": "#ffcd39"
                 },
                 "warning-emphasis": {
                     "name": "Warning Emphasis",
@@ -424,12 +424,12 @@
                 "error-hover": {
                     "name": "Error Hover",
                     "type": "color",
-                    "value": "#B02A37"
+                    "value": "#bb2d3b"
                 },
                 "error-active": {
                     "name": "Error Active",
                     "type": "color",
-                    "value": "#9A2530"
+                    "value": "#b02a37"
                 },
                 "error-emphasis": {
                     "name": "Error Emphasis",
@@ -474,12 +474,12 @@
                 "light-hover": {
                     "name": "Light Hover",
                     "type": "color",
-                    "value": "#E9ECEF"
+                    "value": "#d3d4d5"
                 },
                 "light-active": {
                     "name": "Light Active",
                     "type": "color",
-                    "value": "#DEE2E6"
+                    "value": "#c6c7c8"
                 },
                 "light-emphasis": {
                     "name": "Light Emphasis",
@@ -499,7 +499,7 @@
                 "light-on-surface": {
                     "name": "Light On Surface",
                     "type": "color",
-                    "value": "black"
+                    "value": "#f8f9fa"
                 },
                 "dark-subtle": {
                     "name": "Dark Subtle",
@@ -514,7 +514,7 @@
                 "dark-subtle-active": {
                     "name": "Dark Subtle Active",
                     "type": "color",
-                    "value": "#2B3035"
+                    "value": "#2B2F32"
                 },
                 "dark": {
                     "name": "Dark",
@@ -524,12 +524,12 @@
                 "dark-hover": {
                     "name": "Dark Hover",
                     "type": "color",
-                    "value": "#41464B"
+                    "value": "#424649"
                 },
                 "dark-active": {
                     "name": "Dark Active",
                     "type": "color",
-                    "value": "#495057"
+                    "value": "#4d5154"
                 },
                 "dark-emphasis": {
                     "name": "Dark Emphasis",

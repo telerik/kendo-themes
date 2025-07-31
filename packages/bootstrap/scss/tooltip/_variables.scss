@@ -37,7 +37,7 @@ $kendo-tooltip-title-line-height: var( --kendo-line-height-xs, normal ) !default
 
 /// The size of the Tooltip callout.
 /// @group tooltip
-$kendo-tooltip-callout-size: calc( #{ k-spacing(8) } / 5 ) !default;
+$kendo-tooltip-callout-size: k-spacing(1.5) !default;
 
 /// The default background of the Tooltip.
 /// @group tooltip
