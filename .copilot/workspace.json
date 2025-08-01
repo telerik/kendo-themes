@@ -1,0 +1,32 @@
+{
+  "agents": {
+    "css-specificity": {
+      "name": "CSS Specificity Agent",
+      "description": "Intelligent CSS specificity analysis and fixing for Kendo UI themes",
+      "instructions": ".copilot/agents/css-specificity/instructions.md",
+      "context": [
+        ".copilot/agents/css-specificity/instructions.md",
+        ".copilot/agents/css-specificity/component-registry.json",
+        ".copilot/agents/css-specificity/config.json"
+      ],
+      "tools": [
+        ".copilot/agents/css-specificity/component-registry-builder.ts"
+      ],
+      "capabilities": [
+        "css-analysis",
+        "specificity-calculation",
+        "intelligent-fixes",
+        "scss-modification"
+      ]
+    }
+  },
+  "workspace": {
+    "name": "Kendo Themes Development",
+    "description": "AI-assisted development workspace for Kendo UI themes",
+    "context": [
+      "packages/*/scss/**/*.scss",
+      "packages/html/src/**/*.spec.tsx",
+      "units/**/*.test.ts"
+    ]
+  }
+}

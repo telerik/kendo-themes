@@ -72,7 +72,7 @@ export const Icon = (
 
         if (icon === 'none') {
             return (
-                <SvgIcon {...other} icon={icon} size={size} />
+                <SvgIcon {...other} className="k-icon" icon={icon} size={size} />
             );
         }
 
@@ -83,17 +83,18 @@ export const Icon = (
         }
 
         return (
-            <SvgIcon {...other} icon={SVGIcons[iconSVG]} size={size} themeColor={themeColor} rotate={rotate} flip={flip} viewBox={viewBox} />
+            <SvgIcon {...other} className="k-icon" icon={SVGIcons[iconSVG]} size={size} themeColor={themeColor} rotate={rotate} flip={flip} viewBox={viewBox} />
         );
     }
 
     return (
-        <FontIcon {...other} icon={icon} size={size} themeColor={themeColor} rotate={rotate} flip={flip} />
+        <FontIcon {...other} className="k-icon" icon={icon} size={size} themeColor={themeColor} rotate={rotate} flip={flip} />
     );
 };
 
 Icon.states = states;
 Icon.options = options;
 Icon.defaultOptions = defaultOptions;
+Icon.className = 'k-icon';
 
 export default Icon;

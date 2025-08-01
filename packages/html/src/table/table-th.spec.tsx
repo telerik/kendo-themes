@@ -37,3 +37,5 @@ export const TableTh = (
         </th>
     );
 };
+
+TableTh.className = className;
