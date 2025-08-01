@@ -9,7 +9,7 @@ export * from './table-tbody';
 export * from './table-tfoot';
 export * from './table-row';
 export * from './table-list-row';
-export * from './table-th';
+export * from './table-th.spec';
 export * from './table-list-th';
 export * from './table-td';
 export * from './table-list-td';

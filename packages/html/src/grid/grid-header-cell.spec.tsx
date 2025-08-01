@@ -1,5 +1,5 @@
 import { classNames, States, stateClassNames } from "../misc";
-import { TableTh, KendoTableThProps } from "../table/table-th";
+import { TableTh, KendoTableThProps } from "../table/table-th.spec";
 import { Icon } from "../icon";
 
 import { KendoComponent } from '../_types/component';

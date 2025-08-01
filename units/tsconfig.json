@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "lib": ["es2020", "dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "strictFunctionTypes": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "types": ["jest", "node"],
+    "allowJs": true
+  },
+  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.js"],
+  "exclude": ["node_modules", "dist"]
+}
