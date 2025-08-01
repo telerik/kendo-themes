@@ -511,7 +511,7 @@ The following table lists the available variables for customization.
     <td>$kendo-grid-stack-header-color</td>
     <td>String</td>
     <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle, #596169)</code></td>
+    <td><code>var(--kendo-color-subtle, #565e64)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Grid stack layout column header.</div></div>

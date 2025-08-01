@@ -180,8 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-lg-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
+    <td><code>var(--kendo-font-size-lg, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Input components.</div></div>
@@ -266,7 +266,7 @@ The following table lists the available variables for customization.
         button-padding-y: $kendo-input-lg-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286,"button-padding-x":"var(--kendo-spacing-1, 0.25rem)","button-padding-y":"var(--kendo-spacing-1, 0.25rem)"</li><li>md: "padding-x":"var(--kendo-spacing-3, 0.75rem)","padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","button-padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","button-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)"</li><li>lg: "padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","button-padding-x":"var(--kendo-spacing-2, 0.5rem)","button-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286,"button-padding-x":"var(--kendo-spacing-1, 0.25rem)","button-padding-y":"var(--kendo-spacing-1, 0.25rem)"</li><li>md: "padding-x":"var(--kendo-spacing-3, 0.75rem)","padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","button-padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","button-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)"</li><li>lg: "padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height, normal)","button-padding-x":"var(--kendo-spacing-2, 0.5rem)","button-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>
@@ -646,7 +646,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-placeholder-text</td>
     <td>String</td>
     <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle, #596169)</code></td>
+    <td><code>var(--kendo-color-subtle, #565e64)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input placeholder.</div></div>
@@ -756,20 +756,40 @@ The following table lists the available variables for customization.
     <td>$kendo-input-prefix-text</td>
     <td>String</td>
     <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle, #596169)</code></td>
+    <td><code>var(--kendo-color-subtle, #565e64)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input prefix.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-input-prefix-bg</td>
+    <td>String</td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Input prefix.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-input-suffix-text</td>
     <td>String</td>
     <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle, #596169)</code></td>
+    <td><code>var(--kendo-color-subtle, #565e64)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input suffix.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-suffix-bg</td>
+    <td>String</td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Input suffix.</div></div>
     </td>
 </tr>
 <tr>

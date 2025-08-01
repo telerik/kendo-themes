@@ -210,8 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-header-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-card-padding-y</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Card header.</div></div>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-footer-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-card-padding-x</code></td>
+    <td><code>$kendo-card-header-padding-x</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
@@ -290,8 +290,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-footer-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-card-padding-y</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>$kendo-card-header-padding-y</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Card footer.</div></div>
@@ -461,7 +461,7 @@ The following table lists the available variables for customization.
     <td>$kendo-card-subtitle-text</td>
     <td>String</td>
     <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle, #596169)</code></td>
+    <td><code>var(--kendo-color-subtle, #565e64)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Card subtitle.</div></div>
