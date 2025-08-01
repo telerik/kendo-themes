@@ -1,15 +1,18 @@
 import { Icon } from '../icon';
-import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
+import { classNames, optionClassNames, stateClassNames, variantClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
 export const BUTTON_CLASSNAME = `k-button`;
+
+const BUTTON_VARIANTS = ["icon-button"] as const;
 
 const states = [
     States.hover,
     States.focus,
     States.active,
     States.selected,
-    States.disabled
-];
+    States.disabled,
+    'k-generating'
+] as const;
 
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
@@ -35,6 +38,7 @@ export type KendoButtonOptions = {
   rounded?: (typeof options.rounded)[number] | null;
   fillMode?: (typeof options.fillMode)[number] | null;
   themeColor?: (typeof options.themeColor)[number] | null;
+  variant?: (typeof BUTTON_VARIANTS)[number] | null;
 };
 
 export type KendoButtonProps = KendoButtonOptions & {
@@ -68,6 +72,7 @@ export const Button = (
         themeColor = defaultOptions.themeColor,
         showArrow = defaultOptions.showArrow,
         arrowIconName = defaultOptions.arrowIconName,
+        variant,
         hover,
         focus,
         active,
@@ -88,6 +93,7 @@ export const Button = (
             className={classNames(
                 props.className,
                 BUTTON_CLASSNAME,
+                variantClassNames(BUTTON_CLASSNAME, variant),
                 optionClassNames(BUTTON_CLASSNAME, {
                     size,
                     rounded,
@@ -102,6 +108,7 @@ export const Button = (
                     selected,
                 }),
                 {
+                    // @deprecated - Use variant="icon-button" instead
                     ['k-icon-button']: !text && !hasChildren && hasIcon,
                 }
             )}
@@ -130,6 +137,7 @@ export const Button = (
 
 Button.states = states;
 Button.options = options;
+Button.variants = BUTTON_VARIANTS;
 Button.className = BUTTON_CLASSNAME;
 Button.defaultOptions = defaultOptions;
 
