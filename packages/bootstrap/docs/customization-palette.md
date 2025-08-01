@@ -108,6 +108,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-palette-greige</td>
+    <td></td>
+    <td><code>$_default-palette-greige</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Greige Palette provides colors to the Light and Dark variable groups.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-palette-coral</td>
     <td>Map</td>
     <td><code>$_default-palette-coral</code></td>

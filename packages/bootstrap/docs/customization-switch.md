@@ -81,11 +81,11 @@ The following table lists the available variables for customization.
     <td>$kendo-switch-sizes</td>
     <td>Map</td>
     <td><code>(
-    sm: ( font-size: unset, track-width: 48px, track-height: 26px, thumb-width: 20px, thumb-height: 20px, thumb-offset: 3px, label-offset: null ),
-    md: ( font-size: unset, track-width: 56px, track-height: 30px, thumb-width: 24px, thumb-height: 24px, thumb-offset: 3px, label-offset: null ),
-    lg: ( font-size: unset, track-width: 64px, track-height: 34px, thumb-width: 28px, thumb-height: 28px, thumb-offset: 3px, label-offset: null )
+    sm: ( font-size: unset, track-width: 28px, track-height: 14px, thumb-width: 10px, thumb-height: 10px, thumb-offset: 3px, label-offset: null ),
+    md: ( font-size: unset, track-width: 32px, track-height: 16px, thumb-width: 10px, thumb-height: 10px, thumb-offset: 4px, label-offset: null ),
+    lg: ( font-size: unset, track-width: 36px, track-height: 18px, thumb-width: 12px, thumb-height: 12px, thumb-offset: 4px, label-offset: null )
 )</code></td>
-    <td><ul><li>sm: "font-size":"unset","track-width":"48px","track-height":"26px","thumb-width":"20px","thumb-height":"20px","thumb-offset":"3px","label-offset":null</li><li>md: "font-size":"unset","track-width":"56px","track-height":"30px","thumb-width":"24px","thumb-height":"24px","thumb-offset":"3px","label-offset":null</li><li>lg: "font-size":"unset","track-width":"64px","track-height":"34px","thumb-width":"28px","thumb-height":"28px","thumb-offset":"3px","label-offset":null</li></ul></td>
+    <td><ul><li>sm: "font-size":"unset","track-width":"28px","track-height":"14px","thumb-width":"10px","thumb-height":"10px","thumb-offset":"3px","label-offset":null</li><li>md: "font-size":"unset","track-width":"32px","track-height":"16px","thumb-width":"10px","thumb-height":"10px","thumb-offset":"4px","label-offset":null</li><li>lg: "font-size":"unset","track-width":"36px","track-height":"18px","thumb-width":"12px","thumb-height":"12px","thumb-offset":"4px","label-offset":null</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the different Switch sizes.</div></div>

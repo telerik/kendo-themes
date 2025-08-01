@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-notification-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
-    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
+    <td><code>var( --kendo-font-size-md, inherit )</code></td>
+    <td><code>var(--kendo-font-size-md, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Notification.</div></div>
@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-notification-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
-    <td><code>var(--kendo-line-height, normal)</code></td>
+    <td><code>var( --kendo-line-height-md, normal )</code></td>
+    <td><code>var(--kendo-line-height-md, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Notification.</div></div>
@@ -202,7 +202,7 @@ The following table lists the available variables for customization.
     <td>$kendo-notification-theme</td>
     <td>Map</td>
     <td><code>notification-theme( $kendo-notification-theme-colors )</code></td>
-    <td><ul><li>inverse: "color":"var(--kendo-color-inverse-on-subtle, #ffffff)","background-color":"var(--kendo-color-inverse-subtle, #495057)","border":"var(--kendo-color-inverse-emphasis, rgba(33, 37, 41, 0.4))"</li><li>light: "color":"var(--kendo-color-light-on-subtle, #495057)","background-color":"var(--kendo-color-light-subtle, #ffffff)","border":"var(--kendo-color-light-emphasis, rgba(33, 37, 41, 0.1))"</li><li>dark: "color":"var(--kendo-color-dark-on-subtle, #ffffff)","background-color":"var(--kendo-color-dark-subtle, #495057)","border":"var(--kendo-color-dark-emphasis, rgba(33, 37, 41, 0.4))"</li><li>error: "color":"var(--kendo-color-error-on-subtle, #58151c)","background-color":"var(--kendo-color-error-subtle, #f8d7da)","border":"var(--kendo-color-error-emphasis, rgba(220, 53, 69, 0.4))"</li><li>warning: "color":"var(--kendo-color-warning-on-subtle, #664d03)","background-color":"var(--kendo-color-warning-subtle, #fff3cd)","border":"var(--kendo-color-warning-emphasis, rgba(255, 193, 7, 0.4))"</li><li>success: "color":"var(--kendo-color-success-on-subtle, #0A3622)","background-color":"var(--kendo-color-success-subtle, #d1e7dd)","border":"var(--kendo-color-success-emphasis, rgba(25, 135, 84, 0.4))"</li><li>info: "color":"var(--kendo-color-info-on-subtle, #055160)","background-color":"var(--kendo-color-info-subtle, #cff4fc)","border":"var(--kendo-color-info-emphasis, rgba(13, 202, 240, 0.4))"</li><li>tertiary: "color":"var(--kendo-color-tertiary-on-subtle, #432874)","background-color":"var(--kendo-color-tertiary-subtle, #e2d9f3)","border":"var(--kendo-color-tertiary-emphasis, rgba(111, 66, 193, 0.4))"</li><li>secondary: "color":"var(--kendo-color-secondary-on-subtle, #2B2F32)","background-color":"var(--kendo-color-secondary-subtle, #dee2e6)","border":"var(--kendo-color-secondary-emphasis, rgba(108, 117, 125, 0.4))"</li><li>primary: "color":"var(--kendo-color-primary-on-subtle, #052c65)","background-color":"var(--kendo-color-primary-subtle, #cfe2ff)","border":"var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))"</li></ul></td>
+    <td><ul><li>inverse: "color":"var(--kendo-color-inverse-on-subtle, #ffffff)","background-color":"var(--kendo-color-inverse-subtle, #495057)","border":"var(--kendo-color-inverse-emphasis, rgba(33, 37, 41, 0.4))"</li><li>light: "color":"var(--kendo-color-light-on-subtle, #495057)","background-color":"var(--kendo-color-light-subtle, #fcfcfd)","border":"var(--kendo-color-light-emphasis, rgba(33, 37, 41, 0.1))"</li><li>dark: "color":"var(--kendo-color-dark-on-subtle, #495057)","background-color":"var(--kendo-color-dark-subtle, #ced4da)","border":"var(--kendo-color-dark-emphasis, rgba(33, 37, 41, 0.4))"</li><li>error: "color":"var(--kendo-color-error-on-subtle, #58151c)","background-color":"var(--kendo-color-error-subtle, #f8d7da)","border":"var(--kendo-color-error-emphasis, rgba(220, 53, 69, 0.4))"</li><li>warning: "color":"var(--kendo-color-warning-on-subtle, #664d03)","background-color":"var(--kendo-color-warning-subtle, #fff3cd)","border":"var(--kendo-color-warning-emphasis, rgba(255, 193, 7, 0.4))"</li><li>success: "color":"var(--kendo-color-success-on-subtle, #0A3622)","background-color":"var(--kendo-color-success-subtle, #d1e7dd)","border":"var(--kendo-color-success-emphasis, rgba(25, 135, 84, 0.4))"</li><li>info: "color":"var(--kendo-color-info-on-subtle, #055160)","background-color":"var(--kendo-color-info-subtle, #cff4fc)","border":"var(--kendo-color-info-emphasis, rgba(13, 202, 240, 0.4))"</li><li>tertiary: "color":"var(--kendo-color-tertiary-on-subtle, #2c1a4d)","background-color":"var(--kendo-color-tertiary-subtle, #e2d9f3)","border":"var(--kendo-color-tertiary-emphasis, rgba(126, 88, 198, 0.4))"</li><li>secondary: "color":"var(--kendo-color-secondary-on-subtle, #2B2F32)","background-color":"var(--kendo-color-secondary-subtle, #e2e3e5)","border":"var(--kendo-color-secondary-emphasis, rgba(92, 99, 106, 0.4))"</li><li>primary: "color":"var(--kendo-color-primary-on-subtle, #052c65)","background-color":"var(--kendo-color-primary-subtle, #cfe2ff)","border":"var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The generated theme colors map for the Notification.</div></div>

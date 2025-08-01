@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-suggestion-border-radius</td>
     <td>String</td>
     <td><code>k-border-radius(xl)</code></td>
-    <td><code>var(--kendo-border-radius-xl, 0.75rem)</code></td>
+    <td><code>var(--kendo-border-radius-xl, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Suggestion.</div></div>

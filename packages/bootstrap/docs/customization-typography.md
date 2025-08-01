@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-line-height-sm</td>
     <td>Number</td>
-    <td><code>1.25</code></td>
+    <td><code>1.2</code></td>
     <td><code>1.25</code></td>
 </tr>
 <tr>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-line-heights</td>
     <td>Map</td>
     <td><code>$_default-line-heights</code></td>
-    <td><ul><li>xs: 1</li><li>sm: 1.25</li><li>md: 1.5</li><li>lg: 2</li></ul></td>
+    <td><ul><li>xs: 1</li><li>sm: 1.2</li><li>md: 1.5</li><li>lg: 2</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights map</div></div>
