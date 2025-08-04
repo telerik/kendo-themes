@@ -1,5 +1,6 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-task-board--layout-base() {
 
@@ -128,7 +129,7 @@
         right: 0;
         bottom: 0;
         overflow: hidden;
-        z-index: 2;
+        z-index: k-zindex("content-base", 1);
     }
 
     .k-taskboard-pane-header {

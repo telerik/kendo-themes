@@ -1,5 +1,6 @@
 @use "../../typography/index.import.scss" as *;
 @use "./variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-dock-manager--layout-base() {
 
@@ -42,7 +43,7 @@
         display: flex;
         flex-grow: 1;
         overflow: hidden;
-        z-index: 1;
+        z-index: k-zindex("content-base");
     }
 
     // Splitter
@@ -127,7 +128,7 @@
         display: flex;
         height: 100%;
         border-color: inherit;
-        z-index: 1000;
+        z-index: k-zindex("floating-base");
 
         .k-pane {
             display: inline-flex;
@@ -156,7 +157,7 @@
         border-width: $kendo-dock-manager-dock-preview-border-width;
         border-style: $kendo-dock-manager-dock-preview-border-style;
         border-radius: $kendo-dock-manager-dock-preview-border-radius;
-        z-index: 10;
+        z-index: k-zindex("content-base", 9);
     }
 
     .k-dock-manager-window:has(.k-pane) .k-window-content {
@@ -175,7 +176,7 @@
         flex-direction: column;
         align-items: center;
         position: absolute;
-        z-index: 10001;
+        z-index: k-zindex("overlay-base", 1);
         pointer-events: none;
     }
 

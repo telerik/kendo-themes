@@ -13,6 +13,9 @@
 // Radii
 @use "./border-radii/index.import.scss" as *;
 
+// Z-index
+@use "./z-index/index.import.scss" as *;
+
 @forward "../_variables.scss";
 
 // Variables

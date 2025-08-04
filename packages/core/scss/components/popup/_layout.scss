@@ -1,5 +1,6 @@
 @use "../../mixins/index.import.scss" as *;
 @use "../../border-radii/index.import.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-popup--layout-base() {
@@ -8,7 +9,7 @@
     .k-animation-container {
         position: absolute;
         overflow: hidden;
-        z-index: 12000;
+        z-index: k-zindex("popup-base");
         outline: none;
 
         &-fixed {
