@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.2.1-dev.1](https://github.com/telerik/kendo-themes/compare/v11.2.1-dev.0...v11.2.1-dev.1) (2025-08-04)
+
+
+### Bug Fixes
+
+* **toolbar:** prevent scrollable toolbar overflowing ([204f68b](https://github.com/telerik/kendo-themes/commit/204f68be338193120eec8cd4a2c1d8d1da5e2238))
+
+
+
+
+
 ## [11.2.1-dev.0](https://github.com/telerik/kendo-themes/compare/v11.2.0...v11.2.1-dev.0) (2025-07-28)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent

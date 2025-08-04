@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.2.1-dev.1](https://github.com/telerik/kendo-themes/compare/v11.2.1-dev.0...v11.2.1-dev.1) (2025-08-04)
+
+
+### Bug Fixes
+
+* **html:** align form specs with product requirements ([672925d](https://github.com/telerik/kendo-themes/commit/672925d291389b2a7f8765745460a22540b1b53e))
+
+
+
+
+
 ## [11.2.1-dev.0](https://github.com/telerik/kendo-themes/compare/v11.2.0...v11.2.1-dev.0) (2025-07-28)
 
 **Note:** Version bump only for package @progress/kendo-themes-html
