@@ -44,7 +44,7 @@
         padding-inline: var( --kendo-media-player-titlebar-padding-x, #{$kendo-media-player-titlebar-padding-x} );
         padding-block: var( --kendo-media-player-titlebar-padding-y, #{$kendo-media-player-titlebar-padding-y} );
         position: absolute;
-        z-index: 2;
+        z-index: 1;
         top: 0;
         left: 0;
         right: 0;
@@ -54,7 +54,7 @@
     // Toolbar
     .k-mediaplayer-toolbar-wrap {
         position: absolute;
-        z-index: 2;
+        z-index: 1;
         bottom: 0;
         left: 0;
         right: 0;
@@ -81,7 +81,7 @@
     .k-mediaplayer-seekbar {
         width: 100%;
         position: absolute;
-        z-index: 3;
+        z-index: 1;
         top: 0;
         left: 0;
         transform: translateY( -50% );
