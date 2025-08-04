@@ -1,4 +1,4 @@
-import { Size, ThemeColor } from '../misc';
+import { classNames, Size, ThemeColor } from '../misc';
 import FontIcon from './font-icon.spec';
 import SvgIcon from './svg-icon.spec';
 import * as SVGIcons from '@progress/kendo-svg-icons';
@@ -61,6 +61,7 @@ export const Icon = (
         rotate,
         flip,
         viewBox = defaultOptions.viewBox,
+        className,
         ...other
     } = props;
 
@@ -72,7 +73,7 @@ export const Icon = (
 
         if (icon === 'none') {
             return (
-                <SvgIcon {...other} className="k-icon" icon={icon} size={size} />
+                <SvgIcon {...other} className={classNames("k-icon", className)} icon={icon} size={size} />
             );
         }
 
@@ -83,12 +84,12 @@ export const Icon = (
         }
 
         return (
-            <SvgIcon {...other} className="k-icon" icon={SVGIcons[iconSVG]} size={size} themeColor={themeColor} rotate={rotate} flip={flip} viewBox={viewBox} />
+            <SvgIcon {...other} className={classNames("k-icon", className)} icon={SVGIcons[iconSVG]} size={size} themeColor={themeColor} rotate={rotate} flip={flip} viewBox={viewBox} />
         );
     }
 
     return (
-        <FontIcon {...other} className="k-icon" icon={icon} size={size} themeColor={themeColor} rotate={rotate} flip={flip} />
+        <FontIcon {...other} className={classNames("k-icon", className)} icon={icon} size={size} themeColor={themeColor} rotate={rotate} flip={flip} />
     );
 };
 
