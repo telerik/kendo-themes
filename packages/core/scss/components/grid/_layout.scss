@@ -5,6 +5,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "../../typography/index.import.scss" as *;
 @use "../../spacing/index.import.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 @use "./variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "../chip/_variables.scss" as *;
@@ -190,7 +191,7 @@
                 justify-content: center;
                 position: absolute;
                 inset-inline-end: $kendo-grid-header-menu-icon-spacing;
-                z-index: 1;
+                z-index: k-zindex("content-base");
 
                 &:hover {
                     cursor: pointer;
@@ -678,7 +679,7 @@
         height: 25px;
         cursor: col-resize;
         position: absolute;
-        z-index: 10;
+        z-index: k-zindex("content-resize-handle");
     }
 
 
@@ -717,7 +718,7 @@
         .k-grid-table {
             position: relative;
             float: left;
-            z-index: 1;
+            z-index: k-zindex("content-base");
         }
 
         > .k-height-container {
@@ -802,11 +803,11 @@
     .k-grid .k-grid-row-sticky,
     .k-grid .k-grid-footer-sticky {
         position: sticky;
-        z-index: 2;
+        z-index: k-zindex("content-sticky");
 
         &.k-edit-cell {
             overflow: visible;
-            z-index: 5;
+            z-index: k-zindex("content-edit-cell");
         }
     }
 
@@ -818,7 +819,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -1;
+        z-index: k-zindex("base-background");
     }
 
     kendo-grid {
@@ -835,14 +836,14 @@
             position: sticky;
             top: inherit;
             bottom: inherit;
-            z-index: 2;
+            z-index: k-zindex("content-sticky");
         }
 
         .k-grid-row-sticky td.k-grid-content-sticky,
         .k-grid-row-sticky.k-table-alt-row td.k-grid-content-sticky,
         .k-grid-row-sticky .k-table-td.k-grid-content-sticky,
         .k-grid-row-sticky.k-table-alt-row .k-table-td.k-grid-content-sticky {
-            z-index: 3;
+            z-index: k-zindex("content-sticky-intersection");
         }
 
         // Locked and sticky
@@ -853,12 +854,12 @@
 
         .k-grid-header .k-grid-column-menu,
         .k-grid-header .k-grid-header-menu {
-            z-index: 1;
+            z-index: k-zindex("content-base");
         }
     }
 
     .k-grid-content-sticky.k-grid-row-sticky {
-        z-index: 3;
+        z-index: k-zindex("content-sticky-intersectio");
     }
 
     .k-grid .k-table .k-grid-header-sticky,
@@ -1066,7 +1067,7 @@
                 position: absolute;
                 background: none;
                 cursor: row-resize;
-                z-index: 2;
+                z-index: k-zindex("content-base");
             }
         }
 
@@ -1132,7 +1133,7 @@
         }
     }
 
-    // Command cell
+     // Command cell
     .k-grid-stack-cell.k-command-cell {
         display: flex;
         flex-wrap: wrap;
@@ -1193,7 +1194,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        z-index: 100;
+        z-index: k-zindex("content-base", 99);
 
         > .k-i-loading {
             position: absolute;

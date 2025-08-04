@@ -1,6 +1,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
 @use "../button/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-pdf-viewer--layout-base() {
 
@@ -27,7 +28,7 @@
             border-left-width: 0;
             border-color: inherit;
             flex: 0 0 auto;
-            z-index: 2;
+            z-index: k-zindex("content-base");
         }
         .k-toolbar .k-pager-wrap,
         .k-toolbar .k-pager {
@@ -69,7 +70,7 @@
             position: relative;
             margin-block: $kendo-pdf-viewer-page-spacing;
             margin-inline: auto;
-            z-index: 1;
+            z-index: k-zindex("content-base");
 
             // Canvas
             .k-canvas-wrapper {
@@ -126,7 +127,7 @@
                     display: block;
                     position: absolute;
                     inset: 100% 0 0;
-                    z-index: 0;
+                    z-index: k-zindex("base-normal");
                     cursor: default;
                     user-select: none;
                 }
@@ -186,13 +187,13 @@
                 cursor: auto;
 
                 .k-selected {
-                    z-index: 100000 !important; // stylelint-disable-line declaration-no-important
+                    z-index: k-zindex("special-emergency", 1) !important; // stylelint-disable-line declaration-no-important
                 }
 
                 .k-highlight-editor {
                     position: absolute;
                     background: transparent;
-                    z-index: 1;
+                    z-index: k-zindex("content-base");
                     cursor: auto;
                     max-width: 100%;
                     max-height: 100%;
@@ -220,7 +221,7 @@
                 .k-free-text-editor {
                     position: absolute;
                     background: transparent;
-                    z-index: 1;
+                    z-index: k-zindex("content-base");
                     transform-origin: 0 0;
                     cursor: text;
                     caret-color: $kendo-pdf-viewer-free-text-annotation-text;
@@ -291,7 +292,7 @@
         flex: 0 0 auto;
         justify-content: flex-start;
         align-items: center;
-        z-index: 10;
+        z-index: k-zindex("content-base", 9);
         cursor: default;
 
         .k-search-dialog-draghandle {

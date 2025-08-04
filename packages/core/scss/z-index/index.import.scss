@@ -1,0 +1,57 @@
+@use "sass:map";
+
+// Z-indexes - semantic map
+$kendo-zindex: (
+    // Base / Background (-1-0)
+    // For elements that should appear behind normal content
+    "base-background": -1,
+    "base-normal": 0,
+    // Content / Basic (1-99)
+    // For normal content elements and their internal layering
+    "content-base": 1,
+    "content-sticky": 2,
+    "content-sticky-intersection": 3,
+    "content-interactive": 4,
+    "content-edit-cell": 5,
+    "content-resize-handle": 10,
+    // Navigation (100-999)
+    // For elements that should appear above normal content
+    "navigation-base": 100,
+    "navigation-interactive": 101,
+    "navigation-sticky-appbar": 900,
+    // Floating (1000-9999)
+    // For elements that float above the main interface
+    "floating-base": 1000,
+    "floating-notification": 2000,
+    "floating-badge": 9999,
+    // Overlay (10000-11999)
+    // For modal dialogs and overlays
+    "overlay-base": 10000,
+    "overlay-dialog": 10001,
+    "overlay-window": 10002,
+    // Popups (12000-19999)
+    // For tooltips, popover, context menu
+    "popup-base": 12000,
+    "popup-tooltip": 12000,
+    // User Feedback (20000-29999)
+    // For drag&drop elements elements, loading states, and temporary user feedback
+    "feedback-base": 20000,
+    "feedback-loader": 20001,
+    // Special Cases (30000+)
+    // For emergency overrides and special cases (!!!use sparingly)
+    "special-base": 30000,
+    "special-emergency": 99999,
+    "special-marquee": 100000,
+    "special-touch-scrollbar": 200000
+) !default;
+
+@function k-zindex($layer, $offset: 0) {
+    @if type-of($layer) == number {
+        @return $layer + $offset;
+    } @else if type-of($layer) == string && map.has-key($kendo-zindex, $layer) {
+        @return map.get($kendo-zindex, $layer) + $offset;
+    } @else {
+        @error "Z-index parameter '#{$layer}' must be either a number or a valid name from the map. Available values: #{map.keys($kendo-zindex)}";
+    }
+}
+
