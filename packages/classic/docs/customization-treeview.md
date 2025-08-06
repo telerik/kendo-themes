@@ -128,16 +128,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-treeview-item-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TreeView items.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-treeview-sm-item-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
@@ -165,16 +155,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large TreeView items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-treeview-item-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TreeView items.</div></div>
     </td>
 </tr>
 <tr>

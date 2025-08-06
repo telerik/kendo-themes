@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-flag-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-button-padding-x</code></td>
+    <td><code>$kendo-button-md-padding-x</code></td>
     <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-flag-padding-y</td>
     <td>Calculation</td>
-    <td><code>$kendo-button-padding-y</code></td>
+    <td><code>$kendo-button-md-padding-y</code></td>
     <td><code>calc(var(--kendo-spacing-4\.5, 1.125rem) / 2)</code></td>
 </tr>
 <tr>

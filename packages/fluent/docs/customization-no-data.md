@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-no-data-min-height</td>
-    <td>Number</td>
-    <td><code>140px</code></td>
-    <td><code>140px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-no-data-min-height, 140px )</code></td>
+    <td><code>var(--kendo-no-data-min-height, 140px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the 'No Data' text container.</div></div>
@@ -40,8 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-no-data-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
+    <td><code>var( --kendo-no-data-text, k-color(on-app-surface) )</code></td>
+    <td><code>var(--kendo-no-data-text, var(--kendo-color-on-app-surface, #323130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the 'No Data' text.</div></div>

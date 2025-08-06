@@ -48,16 +48,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chip.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-chip-sm-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
@@ -70,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-md-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-chip-padding-x</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
@@ -88,16 +78,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-padding-y</td>
-    <td>Calculation</td>
-    <td><code>calc( k-spacing(2.5) / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-2\.5, 0.625rem) / 2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chip.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-chip-sm-padding-y</td>
     <td>Calculation</td>
     <td><code>calc( k-spacing(1.5) / 2 )</code></td>
@@ -110,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-md-padding-y</td>
     <td>Calculation</td>
-    <td><code>$kendo-chip-padding-y</code></td>
+    <td><code>calc( k-spacing(2.5) / 2 )</code></td>
     <td><code>calc(var(--kendo-spacing-2\.5, 0.625rem) / 2)</code></td>
 </tr>
 <tr>
@@ -220,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-calc-size</td>
     <td>Calculation</td>
-    <td><code>calc( calc( #{$kendo-chip-line-height} * 1em ) + calc( #{$kendo-chip-padding-y} * 2 ) + calc( #{$kendo-chip-border-width} * 2 ) )</code></td>
+    <td><code>calc( calc( #{$kendo-chip-line-height} * 1em ) + calc( #{$kendo-chip-md-padding-y} * 2 ) + calc( #{$kendo-chip-border-width} * 2 ) )</code></td>
     <td><code>calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-spacing-2\.5, 0.625rem) / 2) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>

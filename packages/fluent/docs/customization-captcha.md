@@ -30,8 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-captcha-spacer</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var( --kendo-captcha-spacer, k-spacing(2) )</code></td>
+    <td><code>var(--kendo-captcha-spacer, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacer of the Captcha.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-captcha-width</td>
-    <td>Number</td>
-    <td><code>280px</code></td>
-    <td><code>280px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-captcha-width, 280px )</code></td>
+    <td><code>var(--kendo-captcha-width, 280px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Captcha.</div></div>
@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-captcha-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family, inherit )</code></td>
-    <td><code>var(--kendo-font-family, inherit)</code></td>
+    <td><code>var( --kendo-captcha-font-family, var( --kendo-font-family, inherit ) )</code></td>
+    <td><code>var(--kendo-captcha-font-family, var(--kendo-font-family, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Captcha.</div></div>
@@ -60,8 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-captcha-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var( --kendo-captcha-font-size, var( --kendo-font-size, inherit ) )</code></td>
+    <td><code>var(--kendo-captcha-font-size, var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Captcha.</div></div>
@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-captcha-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
-    <td><code>var(--kendo-line-height, normal)</code></td>
+    <td><code>var( --kendo-captcha-line-height, var( --kendo-line-height, normal ) )</code></td>
+    <td><code>var(--kendo-captcha-line-height, var(--kendo-line-height, normal))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Captcha.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-captcha-spacing</td>
     <td>String</td>
     <td><code>$kendo-captcha-spacer</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-captcha-spacer, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Captcha.</div></div>
@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-captcha-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var( --kendo-captcha-bg, k-color(surface-alt) )</code></td>
+    <td><code>var(--kendo-captcha-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Captcha.</div></div>
@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-captcha-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
+    <td><code>var( --kendo-captcha-text, k-color(on-app-surface) )</code></td>
+    <td><code>var(--kendo-captcha-text, var(--kendo-color-on-app-surface, #323130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Captcha.</div></div>
@@ -110,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-captcha-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
+    <td><code>var( --kendo-captcha-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
+    <td><code>var(--kendo-captcha-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Captcha.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-captcha-image-wrap-spacing</td>
     <td>String</td>
     <td><code>$kendo-captcha-spacer</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-captcha-spacer, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Captcha image wrapper.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-captcha-image-controls-spacing</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-captcha-spacer} / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-2, 0.5rem) / 2)</code></td>
+    <td><code>calc(var(--kendo-captcha-spacer, var(--kendo-spacing-2, 0.5rem)) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Captcha image controls.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-captcha-validation-offset-y</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-captcha-spacer} / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-2, 0.5rem) / 2)</code></td>
+    <td><code>calc(var(--kendo-captcha-spacer, var(--kendo-spacing-2, 0.5rem)) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the Captcha validation message.</div></div>
@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-captcha-validation-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
-    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
+    <td><code>var( --kendo-captcha-validation-font-size, var( --kendo-font-size-sm, inherit ) )</code></td>
+    <td><code>var(--kendo-captcha-validation-font-size, var(--kendo-font-size-sm, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Captcha validation message.</div></div>

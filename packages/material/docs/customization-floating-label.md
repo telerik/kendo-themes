@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-offset-x</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-input-padding-x} + #{$kendo-input-border-width} )</code></td>
+    <td><code>calc( #{$kendo-input-md-padding-x} + #{$kendo-input-border-width} )</code></td>
     <td><code>calc(var(--kendo-spacing-4, 1rem) + 1px)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-offset-y</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-padding-y} )</code></td>
+    <td><code>calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-md-padding-y} )</code></td>
     <td><code>calc(calc(var(--kendo-line-height-lg, inherit) * var(--kendo-font-size-lg, inherit)) + 1px + calc(var(--kendo-spacing-1\.5, 0.375rem) + var(--kendo-spacing-1px, 1px)))</code></td>
 </tr>
 <tr>

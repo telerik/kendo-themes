@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chart-border-width</td>
-    <td>Number</td>
-    <td><code>0px</code></td>
-    <td><code>0px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-chart-border-width, 0px )</code></td>
+    <td><code>var(--kendo-chart-border-width, 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the chart component.</div></div>
@@ -110,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family, inherit )</code></td>
-    <td><code>var(--kendo-font-family, inherit)</code></td>
+    <td><code>var( --kendo-chart-font-family, var( --kendo-font-family, inherit ) )</code></td>
+    <td><code>var(--kendo-chart-font-family, var(--kendo-font-family, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font-family of the chart component.</div></div>
@@ -130,8 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
-    <td><code>var(--kendo-line-height, normal)</code></td>
+    <td><code>var( --kendo-chart-line-height, var( --kendo-line-height, normal ) )</code></td>
+    <td><code>var(--kendo-chart-line-height, var(--kendo-line-height, normal))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line-height of the chart component.</div></div>
@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-tooltip-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
-    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
+    <td><code>var( --kendo-chart-tooltip-font-size, var( --kendo-font-size-sm, inherit ) )</code></td>
+    <td><code>var(--kendo-chart-tooltip-font-size, var(--kendo-font-size-sm, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font-size of the tooltip of the chart component.</div></div>
@@ -150,11 +150,21 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-tooltip-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height-sm, normal )</code></td>
-    <td><code>var(--kendo-line-height-sm, normal)</code></td>
+    <td><code>var( --kendo-chart-tooltip-line-height, var( --kendo-line-height-sm, normal ) )</code></td>
+    <td><code>var(--kendo-chart-tooltip-line-height, var(--kendo-line-height-sm, normal))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line-height of the tooltip of the chart component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chart-tooltip-transition</td>
+    <td>List</td>
+    <td><code>left ease-in 80ms, top ease-in 80ms</code></td>
+    <td><code>(left ease-in 80ms, top ease-in 80ms)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the tooltip of the chart component.</div></div>
     </td>
 </tr>
 <tr>
@@ -260,8 +270,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-border</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
+    <td><code>var( --kendo-chart-border, k-color(on-app-surface) )</code></td>
+    <td><code>var(--kendo-chart-border, var(--kendo-color-on-app-surface, #323130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the chart component.</div></div>
@@ -270,8 +280,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-tooltip-color</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>var( --kendo-chart-tooltip-color, k-color(app-surface) )</code></td>
+    <td><code>var(--kendo-chart-tooltip-color, var(--kendo-color-app-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the chart tooltip.</div></div>
@@ -280,8 +290,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-tooltip-color-inverse</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
+    <td><code>var( --kendo-chart-tooltip-color-inverse, k-color(on-app-surface) )</code></td>
+    <td><code>var(--kendo-chart-tooltip-color-inverse, var(--kendo-color-on-app-surface, #323130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inverse text color of the chart tooltip.</div></div>
@@ -300,8 +310,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-crosshair-shared-tooltip-color</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
+    <td><code>var( --kendo-chart-crosshair-shared-tooltip-color, k-color(on-app-surface) )</code></td>
+    <td><code>var(--kendo-chart-crosshair-shared-tooltip-color, var(--kendo-color-on-app-surface, #323130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the chart shared crosshair tooltip.</div></div>
@@ -310,8 +320,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-crosshair-shared-tooltip-background</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var( --kendo-chart-crosshair-shared-tooltip-background, k-color(surface-alt) )</code></td>
+    <td><code>var(--kendo-chart-crosshair-shared-tooltip-background, var(--kendo-color-surface-alt, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the chart shared crosshair tooltip.</div></div>
@@ -319,9 +329,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chart-crosshair-shared-tooltip-border</td>
-    <td>Color</td>
-    <td><code>transparent</code></td>
-    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-chart-crosshair-shared-tooltip-border, transparent )</code></td>
+    <td><code>var(--kendo-chart-crosshair-shared-tooltip-border, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the chart shared crosshair tooltip.</div></div>
@@ -350,8 +360,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-notes-lines</td>
     <td>String</td>
-    <td><code>$kendo-chart-notes-background</code></td>
-    <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>var( --kendo-chart-notes-lines, $kendo-chart-notes-background )</code></td>
+    <td><code>var(--kendo-chart-notes-lines, var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the chart note lines.</div></div>
@@ -360,8 +370,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-handle-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
+    <td><code>var( --kendo-chart-handle-bg, k-color(surface) )</code></td>
+    <td><code>var(--kendo-chart-handle-bg, var(--kendo-color-surface, #faf9f8))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the chart handle.</div></div>
@@ -370,8 +380,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-handle-text</td>
     <td>String</td>
-    <td><code>$kendo-chart-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
+    <td><code>var( --kendo-chart-handle-text, $kendo-chart-text )</code></td>
+    <td><code>var(--kendo-chart-handle-text, var(--kendo-color-on-app-surface, #323130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the chart handle.</div></div>
@@ -380,8 +390,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-handle-border</td>
     <td>String</td>
-    <td><code>$kendo-chart-handle-bg</code></td>
-    <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
+    <td><code>var( --kendo-chart-handle-border, $kendo-chart-handle-bg )</code></td>
+    <td><code>var(--kendo-chart-handle-border, var(--kendo-chart-handle-bg, var(--kendo-color-surface, #faf9f8)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the chart handle.</div></div>
@@ -390,8 +400,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-handle-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(base-hover)</code></td>
-    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
+    <td><code>var( --kendo-chart-handle-hover-bg, k-color(base-hover) )</code></td>
+    <td><code>var(--kendo-chart-handle-hover-bg, var(--kendo-color-base-hover, #f3f2f1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the chart handle.</div></div>
@@ -400,8 +410,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-handle-hover-text</td>
     <td>String</td>
-    <td><code>k-color(on-base)</code></td>
-    <td><code>var(--kendo-color-on-base, #323130)</code></td>
+    <td><code>var( --kendo-chart-handle-hover-text, k-color(on-base) )</code></td>
+    <td><code>var(--kendo-chart-handle-hover-text, var(--kendo-color-on-base, #323130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the chart handle.</div></div>
@@ -428,7 +438,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-selection-handle-size</td>
+    <td>$kendo-chart-selection-handle-size</td>
     <td>Number</td>
     <td><code>24px</code></td>
     <td><code>24px</code></td>
@@ -438,7 +448,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-selection-border-color</td>
+    <td>$kendo-chart-selection-border-color</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
@@ -460,8 +470,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family, inherit )</code></td>
-    <td><code>var(--kendo-font-family, inherit)</code></td>
+    <td><code>var( --kendo-treemap-font-family, var( --kendo-font-family, inherit ) )</code></td>
+    <td><code>var(--kendo-treemap-font-family, var(--kendo-font-family, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font-family of the treemap.</div></div>
@@ -470,8 +480,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var( --kendo-treemap-font-size, var( --kendo-font-size, inherit ) )</code></td>
+    <td><code>var(--kendo-treemap-font-size, var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font-size of the treemap.</div></div>
@@ -480,18 +490,38 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
-    <td><code>var(--kendo-line-height, normal)</code></td>
+    <td><code>var( --kendo-treemap-line-height, var( --kendo-line-height, normal ) )</code></td>
+    <td><code>var(--kendo-treemap-line-height, var(--kendo-line-height, normal))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line-height of the treemap.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-treemap-padding-x</td>
+    <td>String</td>
+    <td><code>var( --kendo-treemap-padding-x, k-spacing(1) )</code></td>
+    <td><code>var(--kendo-treemap-padding-x, var(--kendo-spacing-1, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the treemap.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treemap-padding-y</td>
+    <td>String</td>
+    <td><code>var( --kendo-treemap-padding-y, k-spacing(0.5) )</code></td>
+    <td><code>var(--kendo-treemap-padding-y, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the treemap.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-treemap-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var( --kendo-treemap-bg, k-color(surface-alt) )</code></td>
+    <td><code>var(--kendo-treemap-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the treemap.</div></div>
@@ -500,8 +530,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
+    <td><code>var( --kendo-treemap-text, k-color(on-app-surface) )</code></td>
+    <td><code>var(--kendo-treemap-text, var(--kendo-color-on-app-surface, #323130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the treemap.</div></div>
@@ -510,8 +540,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
+    <td><code>var( --kendo-treemap-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
+    <td><code>var(--kendo-treemap-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the treemap.</div></div>
@@ -520,8 +550,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-title-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
+    <td><code>var( --kendo-treemap-title-bg, k-color(surface) )</code></td>
+    <td><code>var(--kendo-treemap-title-bg, var(--kendo-color-surface, #faf9f8))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the treemap title.</div></div>
@@ -530,8 +560,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-title-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
+    <td><code>var( --kendo-treemap-title-text, k-color(on-app-surface) )</code></td>
+    <td><code>var(--kendo-treemap-title-text, var(--kendo-color-on-app-surface, #323130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the treemap title.</div></div>
@@ -540,8 +570,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-title-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
+    <td><code>var( --kendo-treemap-title-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
+    <td><code>var(--kendo-treemap-title-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the treemap title.</div></div>
@@ -550,8 +580,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-overlay-bg</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>var( --kendo-chart-overlay-bg, k-color(app-surface) )</code></td>
+    <td><code>var(--kendo-chart-overlay-bg, var(--kendo-color-app-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chart overlay.</div></div>
@@ -560,8 +590,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-no-data-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
-    <td><code>var(--kendo-font-size-lg, inherit)</code></td>
+    <td><code>var( --kendo-chart-no-data-font-size, var( --kendo-font-size-lg, inherit ) )</code></td>
+    <td><code>var(--kendo-chart-no-data-font-size, var(--kendo-font-size-lg, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font-size of the Chart no data message.</div></div>
@@ -570,8 +600,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-no-data-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-font-weight, normal )</code></td>
-    <td><code>var(--kendo-font-weight, normal)</code></td>
+    <td><code>var( --kendo-chart-no-data-font-weight, var( --kendo-font-weight, normal ) )</code></td>
+    <td><code>var(--kendo-chart-no-data-font-weight, var(--kendo-font-weight, normal))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font-weight of the Chart no data message.</div></div>
@@ -580,8 +610,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-no-data-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
+    <td><code>var( --kendo-chart-no-data-text, k-color(on-app-surface) )</code></td>
+    <td><code>var(--kendo-chart-no-data-text, var(--kendo-color-on-app-surface, #323130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chart no data message.</div></div>
@@ -590,8 +620,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-no-data-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing( 25 )</code></td>
-    <td><code>var(--kendo-spacing-25, 7rem)</code></td>
+    <td><code>var( --kendo-chart-no-data-padding-y, k-spacing( 25 ) )</code></td>
+    <td><code>var(--kendo-chart-no-data-padding-y, var(--kendo-spacing-25, 7rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chart no data message.</div></div>

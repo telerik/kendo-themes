@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-avatar-border-width</td>
-    <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-avatar-border-width, 1px )</code></td>
+    <td><code>var(--kendo-avatar-border-width, 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Avatar.</div></div>
@@ -40,8 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family, inherit )</code></td>
-    <td><code>var(--kendo-font-family, inherit)</code></td>
+    <td><code>var( --kendo-avatar-font-family, var( --kendo-font-family, inherit ) )</code></td>
+    <td><code>var(--kendo-avatar-font-family, var(--kendo-font-family, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Avatar.</div></div>
@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var( --kendo-avatar-font-size, var( --kendo-font-size, inherit ) )</code></td>
+    <td><code>var(--kendo-avatar-font-size, var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Avatar.</div></div>
@@ -60,8 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, inherit )</code></td>
-    <td><code>var(--kendo-line-height, inherit)</code></td>
+    <td><code>var( --kendo-avatar-line-height, var( --kendo-line-height, inherit ) )</code></td>
+    <td><code>var(--kendo-avatar-line-height, var(--kendo-line-height, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Avatar.</div></div>
@@ -82,27 +82,21 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-avatar-brand-colors</td>
-    <td>Map</td>
-    <td><code>(
-    primary: primary,
-    error: error,
-    success: success,
-    info: info,
-    secondary: secondary,
-    tertiary: tertiary,
- )</code></td>
-    <td><ul><li>primary: primary</li><li>error: error</li><li>success: success</li><li>info: info</li><li>secondary: secondary</li><li>tertiary: tertiary</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme variations for the Avatar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-avatar-theme-colors</td>
     <td>Map</td>
-    <td><code>()</code></td>
-    <td><ul><li>solid: "primary":{"bg":"var(--kendo-color-primary, #0078d4)","text":"var(--kendo-color-on-primary, #ffffff)","border":"var(--kendo-color-primary, #0078d4)"},"error":{"bg":"var(--kendo-color-error, #c2666b)","text":"var(--kendo-color-on-error, #ffffff)","border":"var(--kendo-color-error, #c2666b)"},"success":{"bg":"var(--kendo-color-success, #55a554)","text":"var(--kendo-color-on-success, #ffffff)","border":"var(--kendo-color-success, #55a554)"},"info":{"bg":"var(--kendo-color-info, #0a7eff)","text":"var(--kendo-color-on-info, #ffffff)","border":"var(--kendo-color-info, #0a7eff)"},"secondary":{"bg":"var(--kendo-color-secondary, #979593)","text":"var(--kendo-color-on-secondary, #ffffff)","border":"var(--kendo-color-secondary, #979593)"},"tertiary":{"bg":"var(--kendo-color-tertiary, #2b88d8)","text":"var(--kendo-color-on-tertiary, #ffffff)","border":"var(--kendo-color-tertiary, #2b88d8)"},"warning":{"bg":"var(--kendo-color-warning, #ffc80a)","text":"var(--kendo-color-on-warning, #323130)","border":"var(--kendo-color-warning, #ffc80a)"},"dark":{"bg":"var(--kendo-color-dark, #323130)","text":"var(--kendo-color-on-dark, #ffffff)","border":"var(--kendo-color-dark, #323130)"},"light":{"bg":"var(--kendo-color-light, #d2d0ce)","text":"var(--kendo-color-on-light, #323130)","border":"var(--kendo-color-light, #d2d0ce)"}</li><li>outline: "primary":{"bg":"var(--kendo-color-on-primary, #ffffff)","text":"var(--kendo-color-primary, #0078d4)","border":"var(--kendo-color-primary, #0078d4)"},"error":{"bg":"var(--kendo-color-on-error, #ffffff)","text":"var(--kendo-color-error, #c2666b)","border":"var(--kendo-color-error, #c2666b)"},"success":{"bg":"var(--kendo-color-on-success, #ffffff)","text":"var(--kendo-color-success, #55a554)","border":"var(--kendo-color-success, #55a554)"},"info":{"bg":"var(--kendo-color-on-info, #ffffff)","text":"var(--kendo-color-info, #0a7eff)","border":"var(--kendo-color-info, #0a7eff)"},"secondary":{"bg":"var(--kendo-color-on-secondary, #ffffff)","text":"var(--kendo-color-secondary, #979593)","border":"var(--kendo-color-secondary, #979593)"},"tertiary":{"bg":"var(--kendo-color-on-tertiary, #ffffff)","text":"var(--kendo-color-tertiary, #2b88d8)","border":"var(--kendo-color-tertiary, #2b88d8)"},"warning":{"bg":"var(--kendo-color-app-surface, #ffffff)","text":"var(--kendo-color-warning, #ffc80a)","border":"var(--kendo-color-warning, #ffc80a)"},"dark":{"bg":"var(--kendo-color-on-dark, #ffffff)","text":"var(--kendo-color-dark, #323130)","border":"var(--kendo-color-dark, #323130)"},"light":{"bg":"var(--kendo-color-app-surface, #ffffff)","text":"var(--kendo-color-light, #d2d0ce)","border":"var(--kendo-color-light, #d2d0ce)"}</li></ul></td>
+    <td><code>(
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+)</code></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #0078d4)</li><li>secondary: var(--kendo-color-secondary, #979593)</li><li>tertiary: var(--kendo-color-tertiary, #2b88d8)</li><li>info: var(--kendo-color-info, #0a7eff)</li><li>success: var(--kendo-color-success, #55a554)</li><li>warning: var(--kendo-color-warning, #ffc80a)</li><li>error: var(--kendo-color-error, #c2666b)</li><li>dark: var(--kendo-color-dark, #323130)</li><li>light: var(--kendo-color-light, #d2d0ce)</li><li>inverse: var(--kendo-color-dark, #323130)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Avatar variations.</div></div>

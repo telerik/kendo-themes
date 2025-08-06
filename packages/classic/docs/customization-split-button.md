@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-split-button-arrow-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-button-padding-y</code></td>
+    <td><code>$kendo-button-md-padding-y</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-split-button-arrow-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-button-padding-y</code></td>
+    <td><code>$kendo-button-md-padding-y</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>

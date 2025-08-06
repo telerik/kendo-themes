@@ -387,16 +387,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-badge-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Badge.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-badge-sm-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(0.5)</code></td>
@@ -424,16 +414,6 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Badge.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-badge-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Badge.</div></div>
     </td>
 </tr>
 <tr>
@@ -549,7 +529,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-badge-min-width</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-badge-line-height * 1em} + calc( #{$kendo-badge-padding-y} * 2 ) + calc( #{$kendo-badge-border-width} * 2 ))</code></td>
+    <td><code>calc( #{$kendo-badge-line-height * 1em} + calc( #{$kendo-badge-md-padding-y} * 2 ) + calc( #{$kendo-badge-border-width} * 2 ))</code></td>
     <td><code>calc(1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
@@ -1149,16 +1129,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-breadcrumb-link-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Breadcrumb link.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-breadcrumb-sm-link-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
@@ -1171,7 +1141,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-breadcrumb-md-link-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-breadcrumb-link-padding-x</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -1189,16 +1159,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-breadcrumb-link-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
-    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Breadcrumb link.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-breadcrumb-sm-link-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -1211,7 +1171,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-breadcrumb-md-link-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-breadcrumb-link-padding-y</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
@@ -1239,16 +1199,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-breadcrumb-icon-link-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Breadcrumb link icon.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-breadcrumb-sm-icon-link-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(1.5)</code></td>
@@ -1261,7 +1211,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-breadcrumb-md-icon-link-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-breadcrumb-icon-link-padding-y</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -1279,16 +1229,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-breadcrumb-icon-link-padding-x</td>
-    <td>String</td>
-    <td><code>$kendo-breadcrumb-icon-link-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Breadcrumb link icon.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-breadcrumb-sm-icon-link-padding-x</td>
     <td>String</td>
     <td><code>$kendo-breadcrumb-sm-icon-link-padding-y</code></td>
@@ -1301,7 +1241,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-breadcrumb-md-icon-link-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-breadcrumb-icon-link-padding-x</code></td>
+    <td><code>$kendo-breadcrumb-md-icon-link-padding-y</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -1644,16 +1584,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Button.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-button-sm-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
@@ -1666,7 +1596,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-button-md-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-button-padding-x</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -1684,16 +1614,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Button.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-button-sm-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(0.5)</code></td>
@@ -1706,7 +1626,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-button-md-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-button-padding-y</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -1824,10 +1744,10 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-calc-size</td>
+    <td>$kendo-button-sm-calc-size</td>
     <td>Calculation</td>
-    <td><code>calc( ( #{$kendo-button-line-height} * 1em ) + ( #{$kendo-button-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) )</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)</code></td>
+    <td><code>calc( ( #{$kendo-button-sm-line-height} * 1em ) + ( #{$kendo-button-sm-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) )</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-0\.5, 0.125rem) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Button.</div></div>
@@ -1836,7 +1756,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-button-inner-calc-size</td>
     <td>Calculation</td>
-    <td><code>calc( ( #{$kendo-button-line-height} * 1em ) + ( #{$kendo-button-padding-y} * 2 ) )</code></td>
+    <td><code>calc( ( #{$kendo-button-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) )</code></td>
     <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2)</code></td>
 </tr>
 <tr>
@@ -4846,6 +4766,26 @@ The following table lists the available variables for customizing the Default th
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow opacity of the focused Chat quick reply.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-chat-typing-indicator-dot-size</td>
+    <td>Number</td>
+    <td><code>8px</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Chat typing indicator dot.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-typing-indicator-dot-spacing</td>
+    <td>Number</td>
+    <td><code>5px</code></td>
+    <td><code>5px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat typing indicator dot.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -5367,16 +5307,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chip.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-chip-sm-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -5389,7 +5319,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-chip-md-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-chip-padding-x</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -5407,16 +5337,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chip.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-chip-sm-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(0.5)</code></td>
@@ -5429,7 +5349,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-chip-md-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-chip-padding-y</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -5539,7 +5459,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-chip-calc-size</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-chip-line-height} * 1em + calc( #{$kendo-chip-padding-y} * 2 ) + #{$kendo-chip-border-width} * 2 )</code></td>
+    <td><code>calc( #{$kendo-chip-line-height} * 1em + calc( #{$kendo-chip-md-padding-y} * 2 ) + #{$kendo-chip-border-width} * 2 )</code></td>
     <td><code>calc(1 * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
@@ -6921,26 +6841,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-editor-header-padding-y</td>
-    <td>String</td>
-    <td><code>$kendo-color-editor-spacer</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ColorEditor header.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-editor-header-padding-x</td>
-    <td>String</td>
-    <td><code>$kendo-color-editor-header-padding-y</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the ColorEditor header.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-editor-header-actions-gap</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
@@ -6953,7 +6853,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-color-editor-sm-header-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-color-editor-header-padding-y</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
@@ -6963,7 +6863,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-color-editor-sm-header-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-color-editor-header-padding-x</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
@@ -6973,7 +6873,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-color-editor-md-header-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-color-editor-header-padding-y</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
@@ -6983,7 +6883,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-color-editor-md-header-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-color-editor-header-padding-x</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
@@ -7131,26 +7031,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-editor-views-padding-y</td>
-    <td>String</td>
-    <td><code>$kendo-color-editor-spacer</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ColorEditor views container.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-editor-views-padding-x</td>
-    <td>String</td>
-    <td><code>$kendo-color-editor-views-padding-y</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the ColorEditor views container.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-editor-views-gap</td>
     <td>String</td>
     <td><code>$kendo-color-editor-spacer</code></td>
@@ -7173,7 +7053,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-color-editor-sm-views-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-color-editor-views-padding-y</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
@@ -7183,7 +7063,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-color-editor-md-views-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-color-editor-views-padding-y</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
@@ -7193,7 +7073,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-color-editor-md-views-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-color-editor-views-padding-x</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
@@ -7353,26 +7233,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-gradient-padding-y</td>
-    <td>String</td>
-    <td><code>$kendo-color-gradient-spacer</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ColorGradient.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-gradient-padding-x</td>
-    <td>String</td>
-    <td><code>$kendo-color-gradient-padding-y</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the ColorGradient.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-gradient-gap</td>
     <td>String</td>
     <td><code>$kendo-color-gradient-spacer</code></td>
@@ -7455,7 +7315,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-color-gradient-sm-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-color-gradient-padding-y</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
@@ -7475,7 +7335,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-color-gradient-md-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-color-gradient-padding-y</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
@@ -10551,19 +10411,9 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FAB.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-fab-sm-padding-x</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-fab-padding-x} / 2 )</code></td>
+    <td><code>calc( #{k-spacing(4)} / 2 )</code></td>
     <td><code>calc(var(--kendo-spacing-4, 1rem) / 2)</code></td>
 </tr>
 <tr>
@@ -10573,7 +10423,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-fab-md-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-fab-padding-x</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
@@ -10583,7 +10433,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-fab-lg-padding-x</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-fab-padding-x} * 1.5 )</code></td>
+    <td><code>calc( #{k-spacing(4)} * 1.5 )</code></td>
     <td><code>calc(var(--kendo-spacing-4, 1rem) * 1.5)</code></td>
 </tr>
 <tr>
@@ -10593,7 +10443,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-fab-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-fab-padding-x</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
@@ -10603,7 +10453,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-fab-sm-padding-y</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-fab-padding-y} / 2 )</code></td>
+    <td><code>calc( #{k-spacing(4)} / 2 )</code></td>
     <td><code>calc(var(--kendo-spacing-4, 1rem) / 2)</code></td>
 </tr>
 <tr>
@@ -10613,7 +10463,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-fab-md-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-fab-padding-y</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
@@ -10623,7 +10473,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-fab-lg-padding-y</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-fab-padding-y} * 1.5 )</code></td>
+    <td><code>calc( #{k-spacing(4)} * 1.5 )</code></td>
     <td><code>calc(var(--kendo-spacing-4, 1rem) * 1.5)</code></td>
 </tr>
 <tr>
@@ -11077,7 +10927,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-floating-label-offset-x</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-input-padding-x} + #{$kendo-input-border-width} )</code></td>
+    <td><code>calc( #{$kendo-input-md-padding-x} + #{$kendo-input-border-width} )</code></td>
     <td><code>calc(var(--kendo-spacing-2, 0.5rem) + 1px)</code></td>
 </tr>
 <tr>
@@ -11087,7 +10937,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-floating-label-offset-y</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-padding-y} )</code></td>
+    <td><code>calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-md-padding-y} )</code></td>
     <td><code>calc(calc(var(--kendo-line-height, normal) * var(--kendo-font-size, inherit)) + 1px + var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
@@ -13065,16 +12915,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Input components.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-input-sm-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
@@ -13087,7 +12927,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-input-md-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-input-padding-x</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -13105,16 +12945,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Input components.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-input-sm-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(0.5)</code></td>
@@ -13127,7 +12957,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-input-md-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-input-padding-y</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -13235,10 +13065,10 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-calc-size</td>
+    <td>$kendo-input-sm-calc-size</td>
     <td>Calculation</td>
-    <td><code>calc( ( #{$kendo-input-line-height} * 1em ) + ( #{$kendo-input-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) )</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + (2px))</code></td>
+    <td><code>calc( ( #{$kendo-input-sm-line-height} * 1em ) + ( #{$kendo-input-sm-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) )</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-0\.5, 0.125rem) * 2 + (2px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Input.</div></div>
@@ -13870,20 +13700,20 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-header-padding-x</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>$kendo-list-sm-header-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the List header, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-header-padding-y</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>$kendo-list-sm-header-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the List header, if no size is set.</div></div>
@@ -13930,19 +13760,9 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-filter-padding</td>
+    <td>$kendo-list-sm-filter-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the the List filter input.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-list-filter-padding-x</td>
-    <td>String</td>
-    <td><code>$kendo-list-filter-padding</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -13950,9 +13770,9 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-filter-padding-y</td>
+    <td>$kendo-list-sm-filter-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-list-filter-padding</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -13960,20 +13780,20 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-padding-x</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>$kendo-list-sm-item-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the List items, when no size is set.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-padding-y</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>$kendo-list-sm-item-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the List items, when no size is set.</div></div>
@@ -14000,20 +13820,20 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-group-item-padding-x</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>$kendo-list-sm-group-item-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the List group items, when no size is set.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-group-item-padding-y</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>$kendo-list-sm-group-item-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the List group items, when no size is set.</div></div>
@@ -15967,7 +15787,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-padding-x</td>
+    <td>$kendo-menu-popup-sm-item-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
@@ -15977,19 +15797,19 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-padding-y</td>
+    <td>$kendo-menu-popup-sm-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Menu item in popup.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-padding-end</td>
+    <td>$kendo-menu-popup-sm-item-padding-end</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-menu-popup-item-padding-x} * 2 + #{$kendo-icon-size} )</code></td>
+    <td><code>calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 + #{$kendo-icon-size} )</code></td>
     <td><code>calc(var(--kendo-spacing-2, 0.5rem) * 2 + 16px)</code></td>
 </tr>
 <tr>
@@ -16179,7 +15999,7 @@ The following table lists the available variables for customizing the Default th
 <tbody><tr>
     <td>$kendo-menu-button-arrow-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-button-padding-y</code></td>
+    <td><code>$kendo-button-md-padding-y</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -16448,16 +16268,6 @@ The following table lists the available variables for customizing the Default th
     </tr>
 </thead>
 <tbody><tr>
-    <td>$kendo-otp-gap</td>
-    <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
-    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the items in the OTP.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-otp-sm-gap</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -16470,7 +16280,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-otp-md-gap</td>
     <td>String</td>
-    <td><code>$kendo-otp-gap</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
@@ -16488,16 +16298,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-otp-separator-padding-x</td>
-    <td>String</td>
-    <td><code>$kendo-otp-gap</code></td>
-    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OTP separator.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-otp-sm-separator-padding-x</td>
     <td>String</td>
     <td><code>$kendo-otp-sm-gap</code></td>
@@ -16510,7 +16310,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-otp-md-separator-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-otp-separator-padding-x</code></td>
+    <td><code>$kendo-otp-md-gap</code></td>
     <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
@@ -16528,16 +16328,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-otp-input-width</td>
-    <td>Calculation</td>
-    <td><code>$kendo-input-calc-size</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + (2px))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OTP separator.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-otp-sm-input-width</td>
     <td>Calculation</td>
     <td><code>$kendo-input-sm-calc-size</code></td>
@@ -16550,7 +16340,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-otp-md-input-width</td>
     <td>Calculation</td>
-    <td><code>$kendo-otp-input-width</code></td>
+    <td><code>$kendo-input-md-calc-size</code></td>
     <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + (2px))</code></td>
 </tr>
 <tr>
@@ -17438,16 +17228,6 @@ The following table lists the available variables for customizing the Default th
     </tr>
 </thead>
 <tbody><tr>
-    <td>$kendo-pager-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Pager.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-pager-sm-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -23088,7 +22868,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-split-button-arrow-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-button-padding-y</code></td>
+    <td><code>$kendo-button-md-padding-y</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -23128,7 +22908,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-split-button-arrow-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-button-padding-y</code></td>
+    <td><code>$kendo-button-md-padding-y</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -23618,7 +23398,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-spreadsheet-formula-input-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-input-padding-x</code></td>
+    <td><code>$kendo-input-md-padding-x</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -23628,7 +23408,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-spreadsheet-formula-input-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-input-padding-y</code></td>
+    <td><code>$kendo-input-md-padding-y</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -25860,26 +25640,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-cell-padding-x</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the cells in the table if no size is specified.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-cell-padding-y</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the cells in the table if no size is specified.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-table-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -26419,26 +26179,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-tabstrip-item-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TabStrip items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-tabstrip-item-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
-    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TabStrip items.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-tabstrip-item-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -26491,7 +26231,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-tabstrip-md-item-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-tabstrip-item-padding-x</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
@@ -26501,7 +26241,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-tabstrip-md-item-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-tabstrip-item-padding-y</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
@@ -28050,7 +27790,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-timeline-flag-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-button-padding-x</code></td>
+    <td><code>$kendo-button-md-padding-x</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -28060,7 +27800,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-timeline-flag-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-button-padding-y</code></td>
+    <td><code>$kendo-button-md-padding-y</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -28318,16 +28058,6 @@ The following table lists the available variables for customizing the Default th
     </tr>
 </thead>
 <tbody><tr>
-    <td>$kendo-toolbar-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Toolbar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-toolbar-sm-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -28340,7 +28070,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-toolbar-md-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-toolbar-padding-x</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -28358,16 +28088,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-toolbar-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Toolbar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-toolbar-sm-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -28380,7 +28100,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-toolbar-md-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-toolbar-padding-y</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -28398,16 +28118,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-toolbar-spacing</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Toolbar tools.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-toolbar-sm-spacing</td>
     <td>String</td>
     <td><code>k-spacing(1.5)</code></td>
@@ -28420,7 +28130,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-toolbar-md-spacing</td>
     <td>String</td>
-    <td><code>$kendo-toolbar-spacing</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -29118,16 +28828,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-treeview-item-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TreeView items.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-treeview-sm-item-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
@@ -29155,16 +28855,6 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large TreeView items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-treeview-item-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TreeView items.</div></div>
     </td>
 </tr>
 <tr>
