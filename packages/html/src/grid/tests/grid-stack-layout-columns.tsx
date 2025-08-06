@@ -140,10 +140,12 @@ export default () =>(
                                                 <GridStackCell cellHeader="Rating" cellContent={<DropdownList value="3" />} />
                                                 <GridStackCell cellHeader="Engagement" cellContent={<Textbox value="100%" />} />
                                                 <GridStackCell cellHeader="Budget" cellContent={<NumericTextbox value="100 000" />} />
-                                                <GridStackCell commandCell>
-                                                    <Button text="Save" icon="save" themeColor="primary" />
-                                                    <Button text="Cancel" icon="cancel" themeColor="base" />
-                                                </GridStackCell>
+                                                <GridStackCell commandCell cellHeader="Commands" cellContent={
+                                                    <>
+                                                        <Button text="Save" icon="save" themeColor="primary" />
+                                                        <Button text="Cancel" icon="cancel" themeColor="base" />
+                                                    </>
+                                                } />
                                             </GridStackRow>
                                         </TableTd>
                                     </TableRow>

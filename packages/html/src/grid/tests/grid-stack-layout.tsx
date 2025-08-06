@@ -142,10 +142,12 @@ export default () =>(
                                                     cellHeader="Country"
                                                     cellContent={<DropdownList value="Germany" />}
                                                 />
-                                                <GridStackCell commandCell>
-                                                    <Button text="Save" icon="save" themeColor="primary" />
-                                                    <Button text="Cancel" icon="cancel" themeColor="base" />
-                                                </GridStackCell>
+                                                <GridStackCell commandCell cellHeader="Commands" cellContent={
+                                                    <>
+                                                        <Button text="Save" icon="save" themeColor="primary" />
+                                                        <Button text="Cancel" icon="cancel" themeColor="base" />
+                                                    </>
+                                                } />
                                             </GridStackRow>
                                         </TableTd>
                                     </TableRow>
