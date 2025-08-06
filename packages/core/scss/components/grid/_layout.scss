@@ -276,6 +276,10 @@
             display: flex;
             align-items: center;
             align-content: center;
+
+            .k-icon {
+                flex-shrink: 0;
+            }
         }
 
         .k-grouping-row td,
