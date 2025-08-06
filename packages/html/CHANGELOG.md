@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.3.0-dev.0](https://github.com/telerik/kendo-themes/compare/v11.2.1-dev.1...v11.3.0-dev.0) (2025-08-06)
+
+
+### Bug Fixes
+
+* **html:** update tests with correct command cell rendering in grid stack layout ([bbae139](https://github.com/telerik/kendo-themes/commit/bbae1397ce7485f8e7e0407b5bf273db954b074a))
+
+
+
+
+
 ## [11.2.1-dev.1](https://github.com/telerik/kendo-themes/compare/v11.2.1-dev.0...v11.2.1-dev.1) (2025-08-04)
 
 

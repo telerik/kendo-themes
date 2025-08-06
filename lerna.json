@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "version": "11.2.1-dev.1",
+  "version": "11.3.0-dev.0",
   "packages": [
     "packages/html",
     "packages/core",
