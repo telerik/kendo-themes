@@ -1,51 +1,23 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/window/_theme.scss" as *;
 
 @mixin kendo-window--theme() {
-
-    // Window
-    .k-window {
-        @include fill(
-            var( --kendo-window-text, #{$kendo-window-text} ),
-            var( --kendo-window-bg, #{$kendo-window-bg} ),
-            var( --kendo-window-border, #{$kendo-window-border} )
-        );
-        @include box-shadow( var( --kendo-window-shadow, #{$kendo-window-shadow} ) );
-
-        &:focus,
-        &.k-focus {
-            @include box-shadow( var( --kendo-window-focus-shadow, #{$kendo-window-focus-shadow} ) );
-        }
-    }
-
+    @include kendo-window--theme-base();
 
     // Titlebar
     .k-window-titlebar {
-        @include fill(
-            $bg: var( --kendo-window-titlebar-bg, #{$kendo-window-titlebar-bg} ),
-            $border: var( --kendo-window-titlebar-border, #{$kendo-window-titlebar-border} )
-        );
+        color: inherit;
     }
 
     .k-window-title {
-        color: var( --kendo-window-titlebar-text, #{$kendo-window-titlebar-text} ),
+        color: $kendo-window-titlebar-text,
     }
 
-    // Window theme colors
-    @each $theme-color, $color-props in $kendo-window-theme-colors {
-
-        $_text: map.get( $color-props, text );
-        $_bg: map.get( $color-props, bg );
-        $_border: map.get( $color-props, border );
-
-        .k-window-#{$theme-color} .k-window-titlebar {
-            color: var( --kendo-window-titlebar-text, #{$kendo-window-titlebar-text} );
-
-            --kendo-window-titlebar-text: var( --kendo-window-#{$theme-color}-text, #{$_text} );
-            --kendo-window-titlebar-bg: var( --kendo-window-#{$theme-color}-bg, #{$_bg} );
-            --kendo-window-titlebar-border: var( --kendo-window-#{$theme-color}-border, #{$_border} );
+    @each $name, $color in $kendo-window-theme-colors {
+        .k-window-#{$name} .k-window-title {
+            color: k-color(on-#{$name});
         }
     }
-
 }

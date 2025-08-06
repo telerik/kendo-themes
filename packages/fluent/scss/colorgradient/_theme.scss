@@ -1,90 +1,52 @@
 @use "../core/_index.scss" as *;
+@use "../slider/_variables.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/colorgradient/_theme.scss" as *;
 
 @mixin kendo-color-gradient--theme() {
+    @include kendo-color-gradient--theme-base();
 
-    // ColorGradient
     .k-colorgradient {
-        @include fill(
-            var( --kendo-color-gradient-text, #{$kendo-color-gradient-text} ),
-            var( --kendo-color-gradient-bg, #{$kendo-color-gradient-bg} ),
-            var( --kendo-color-gradient-border, #{$kendo-color-gradient-border} )
-        );
-        @include box-shadow(
-            var( --kendo-color-gradient-shadow, #{$kendo-color-gradient-shadow} )
-        );
+        @include box-shadow($kendo-color-gradient-shadow);
     }
 
-    .k-colorgradient:focus,
-    .k-colorgradient.k-focus {
-        @include fill(
-            $border: var( --kendo-color-gradient-focus-border, #{$kendo-color-gradient-focus-border} )
-        );
-    }
-
-    // Canvas
     .k-colorgradient-canvas {
-        .k-hsv-gradient {
-            background: linear-gradient( to bottom, $kendo-gradient-transparent-to-black ), linear-gradient( to right, $kendo-gradient-white-to-transparent );
-        }
-
         .k-hsv-rectangle {
-            @include fill(
-                $border: var( --kendo-color-gradient-canvas-rectangle-border, #{$kendo-color-gradient-canvas-rectangle-border} )
-            );
+            border-color: $kendo-color-gradient-canvas-rectangle-border;
         }
     }
 
-    // DragHandle
-    .k-colorgradient .k-draghandle {
-        @include fill(
-            $border: var( --kendo-color-gradient-draghandle-border, #{$kendo-color-gradient-draghandle-border })
-        );
-        outline-color: $kendo-color-gradient-draghandle-focus-shadow;
-        @include box-shadow(
-            var( --kendo-color-gradient-draghandle-shadow, #{$kendo-color-gradient-draghandle-shadow} )
-        );
+    .k-colorgradient-slider .k-slider-track {
+        border-color: $kendo-color-gradient-slider-border;
+    }
+
+    .k-colorgradient-slider .k-draghandle {
+
+        &:hover,
+        &.k-hover,
+        &:active,
+        &.k-active {
+            background-color: $kendo-slider-thumb-bg;
+        }
 
         &:focus,
         &.k-focus {
-            @include fill(
-                $border: var( --kendo-color-gradient-draghandle-focus-border, #{$kendo-color-gradient-draghandle-focus-border} )
-            );
-            outline-color: $kendo-color-gradient-draghandle-focus-shadow;
+            background-color: $kendo-slider-thumb-bg;
         }
+    }
 
-        &:active,
+    .k-colorgradient .k-draghandle {
+
         &:hover,
-        &.k-hover {
+        &.k-hover,
+        &:active,
+        &.k-active {
             outline-color: $kendo-color-gradient-draghandle-hover-shadow;
         }
-    }
 
-    // Slider
-    .k-colorgradient-slider .k-slider-track {
-        @include fill(
-             $border: var( --kendo-color-gradient-slider-border, #{$kendo-color-gradient-slider-border} )
-        );
-    }
-
-    .k-colorgradient-slider.k-hue-slider {
-        &.k-slider-horizontal .k-slider-track {
-            background: linear-gradient( to right, $kendo-gradient-rainbow );
+        &:focus,
+        &.k-focus {
+            border-color: $kendo-color-gradient-draghandle-focus-border;
         }
-
-        &.k-slider-vertical .k-slider-track {
-            background: linear-gradient( to top, $kendo-gradient-rainbow );
-        }
-    }
-
-    .k-colorgradient-slider.k-alpha-slider .k-slider-track::before {
-        background: url(#{$kendo-color-gradient-slider-alpha-bgr}) center repeat;
-    }
-
-    // Inputs
-    .k-colorgradient-input-label {
-        @include fill(
-             $color: var( --kendo-color-gradient-input-label-text, #{$kendo-color-gradient-input-label-text} )
-        );
     }
 }

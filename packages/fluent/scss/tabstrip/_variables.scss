@@ -5,188 +5,182 @@
 
 /// The horizontal padding of the TabStrip wrapper.
 /// @group tabstrip
-$kendo-tabstrip-wrapper-padding-x: k-spacing(0) !default;
+$kendo-tabstrip-wrapper-padding-x: var( --kendo-tabstrip-wrapper-padding-x, #{k-spacing(0)} ) !default;
 /// The vertical padding of the TabStrip wrapper.
 /// @group tabstrip
-$kendo-tabstrip-wrapper-padding-y: k-spacing(0) !default;
+$kendo-tabstrip-wrapper-padding-y: var( --kendo-tabstrip-wrapper-padding-y, #{k-spacing(0)} ) !default;
 /// The border width around the TabStrip wrapper.
 /// @group tabstrip
-$kendo-tabstrip-wrapper-border-width: 0px !default;
+$kendo-tabstrip-wrapper-border-width: var( --kendo-tabstrip-wrapper-border-width, 0px ) !default;
 /// The background color of the TabStrip wrapper.
 /// @group tabstrip
-$kendo-tabstrip-wrapper-bg: transparent !default;
+$kendo-tabstrip-wrapper-bg: var( --kendo-tabstrip-wrapper-bg, transparent ) !default;
 /// The text color of the TabStrip wrapper.
 /// @group tabstrip
-$kendo-tabstrip-wrapper-text: initial !default;
+$kendo-tabstrip-wrapper-text: var( --kendo-tabstrip-wrapper-text, initial ) !default;
 /// The border color of the TabStrip wrapper.
 /// @group tabstrip
-$kendo-tabstrip-wrapper-border: initial !default;
+$kendo-tabstrip-wrapper-border: var( --kendo-tabstrip-wrapper-border, initial ) !default;
 
 /// The font family of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-tabstrip-font-family: var( --kendo-tabstrip-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// The font size of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-tabstrip-font-size: var( --kendo-tabstrip-font-size, var( --kendo-font-size, inherit ) ) !default;
 /// The line height of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-tabstrip-line-height: var( --kendo-tabstrip-line-height, var( --kendo-line-height, normal ) ) !default;
 /// The border width around the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-border-width: 0px !default;
+$kendo-tabstrip-border-width: var( --kendo-tabstrip-border-width, 0px ) !default;
 
 /// The font size of the small TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-sm-font-size: $kendo-tabstrip-font-size !default;
+$kendo-tabstrip-sm-font-size: var( --kendo-tabstrip-sm-font-size, #{$kendo-tabstrip-font-size} ) !default;
 /// The line height of the small TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-sm-line-height: $kendo-tabstrip-line-height !default;
+$kendo-tabstrip-sm-line-height: var( --kendo-tabstrip-sm-line-height, #{$kendo-tabstrip-line-height} ) !default;
 /// The font size of the medium TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-md-font-size: $kendo-tabstrip-font-size !default;
+$kendo-tabstrip-md-font-size: var( --kendo-tabstrip-md-font-size, #{$kendo-tabstrip-font-size} ) !default;
 /// The line height of the medium TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-md-line-height: $kendo-tabstrip-line-height !default;
+$kendo-tabstrip-md-line-height: var( --kendo-tabstrip-md-line-height, #{$kendo-tabstrip-line-height} ) !default;
 /// The font size of the large TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-lg-font-size: $kendo-tabstrip-font-size !default;
+$kendo-tabstrip-lg-font-size: var( --kendo-tabstrip-lg-font-size, #{$kendo-tabstrip-font-size} ) !default;
 /// The line height of the large TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-lg-line-height: $kendo-tabstrip-line-height !default;
+$kendo-tabstrip-lg-line-height: var( --kendo-tabstrip-lg-line-height, #{$kendo-tabstrip-line-height} ) !default;
 
 /// The background color of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-bg: transparent !default;
+$kendo-tabstrip-bg: var( --kendo-tabstrip-bg, transparent ) !default;
 /// The text color of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-text: k-color(on-app-surface) !default;
+$kendo-tabstrip-text: var( --kendo-tabstrip-text, #{k-color(on-app-surface)} ) !default;
 /// The border color of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-border: transparent !default;
+$kendo-tabstrip-border: var( --kendo-tabstrip-border, transparent ) !default;
 
-/// The horizontal padding of the TabStrip items.
-/// @group tabstrip
-$kendo-tabstrip-item-padding-x: k-spacing(2) !default;
-/// The vertical padding of the TabStrip items.
-/// @group tabstrip
-$kendo-tabstrip-item-padding-y: k-spacing(3) !default;
 /// The border width around the TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-border-width: 0px !default;
+$kendo-tabstrip-item-border-width: var( --kendo-tabstrip-item-border-width, 0px ) !default;
 /// The border radius of the TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-border-radius: k-border-radius(md) !default;
+$kendo-tabstrip-item-border-radius: var( --kendo-tabstrip-item-border-radius, #{k-border-radius(md)} ) !default;
 /// The gap between the TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-gap: k-spacing(2) !default;
+$kendo-tabstrip-item-gap: var( --kendo-tabstrip-item-gap, #{k-spacing(2)} ) !default;
 
 /// The horizontal padding of the small TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-sm-item-padding-x: k-spacing(2) !default;
+$kendo-tabstrip-sm-item-padding-x: var( --kendo-tabstrip-sm-item-padding-x, #{k-spacing(2)} ) !default;
 /// The vertical padding of the small TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-sm-item-padding-y: k-spacing(2.5) !default;
+$kendo-tabstrip-sm-item-padding-y: var( --kendo-tabstrip-sm-item-padding-y, #{k-spacing(2.5)} ) !default;
 /// The horizontal padding of the medium TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-md-item-padding-x: $kendo-tabstrip-item-padding-x !default;
+$kendo-tabstrip-md-item-padding-x: var( --kendo-tabstrip-md-item-padding-x, #{k-spacing(2)} ) !default;
 /// The vertical padding of the medium TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-md-item-padding-y: $kendo-tabstrip-item-padding-y !default;
+$kendo-tabstrip-md-item-padding-y: var( --kendo-tabstrip-md-item-padding-y, #{k-spacing(3)} ) !default;
 /// The horizontal padding of the large TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-lg-item-padding-x: k-spacing(2) !default;
+$kendo-tabstrip-lg-item-padding-x: var( --kendo-tabstrip-lg-item-padding-x, #{k-spacing(2)} ) !default;
 /// The vertical padding of the large TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-lg-item-padding-y: k-spacing(3.5) !default;
+$kendo-tabstrip-lg-item-padding-y: var( --kendo-tabstrip-lg-item-padding-y, #{k-spacing(3.5)} ) !default;
 
 ///  The background color of the TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-bg: transparent !default;
+$kendo-tabstrip-item-bg: var( --kendo-tabstrip-item-bg, transparent ) !default;
 /// The text color of the TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-text: k-color(on-app-surface) !default;
+$kendo-tabstrip-item-text: var( --kendo-tabstrip-item-text, #{k-color(on-app-surface)} ) !default;
 /// The border color of the TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-border: transparent !default;
+$kendo-tabstrip-item-border: var( --kendo-tabstrip-item-border, transparent ) !default;
 /// The text color of the disabled TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
+$kendo-tabstrip-item-disabled-text: var( --kendo-tabstrip-item-disabled-text, #{color-mix(in srgb, k-color(on-app-surface) 46%, transparent)} ) !default;
 /// The background color of the disabled TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-disabled-bg: none !default;
+$kendo-tabstrip-item-disabled-bg: var( --kendo-tabstrip-item-disabled-bg, none ) !default;
 /// The border color of the disabled TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-disabled-border: transparent !default;
+$kendo-tabstrip-item-disabled-border: var( --kendo-tabstrip-item-disabled-border, transparent ) !default;
 /// The opacity of the disabled TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-disabled-opacity: null !default;
+$kendo-tabstrip-item-disabled-opacity: var( --kendo-tabstrip-item-disabled-opacity, null ) !default;
 /// The filter of the disabled TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-disabled-filter: null !default;
+$kendo-tabstrip-item-disabled-filter: var( --kendo-tabstrip-item-disabled-filter, null ) !default;
 
 /// The background color of the hovered TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-hover-bg: k-color(base-hover) !default;
+$kendo-tabstrip-item-hover-bg: var( --kendo-tabstrip-item-hover-bg, #{k-color(base-hover)} ) !default;
 /// The text color of the hovered TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-hover-text: k-color(on-base) !default;
+$kendo-tabstrip-item-hover-text: var( --kendo-tabstrip-item-hover-text, #{k-color(on-base)} ) !default;
 /// The border color of the hovered TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-hover-border: k-color(base-hover) !default;
+$kendo-tabstrip-item-hover-border: var( --kendo-tabstrip-item-hover-border, #{k-color(base-hover)} ) !default;
 /// The background color of the selected TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-selected-bg: k-color(surface-alt) !default;
+$kendo-tabstrip-item-selected-bg: var( --kendo-tabstrip-item-selected-bg, #{k-color(surface-alt)} ) !default;
 /// The text color of the selected TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-selected-text: k-color(on-app-surface) !default;
+$kendo-tabstrip-item-selected-text: var( --kendo-tabstrip-item-selected-text, #{k-color(on-app-surface)} ) !default;
 /// The border color of the selected TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-selected-border: k-color(primary) !default;
+$kendo-tabstrip-item-selected-border: var( --kendo-tabstrip-item-selected-border, #{k-color(primary)} ) !default;
 /// The font weight of the selected TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-selected-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+$kendo-tabstrip-item-selected-font-weight: var( --kendo-tabstrip-item-selected-font-weight, var( --kendo-font-weight-bold, normal ) ) !default;
 
 /// The shadow of the focused TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-focus-shadow: $kendo-list-item-focus-shadow !default;
+$kendo-tabstrip-item-focus-shadow: var( --kendo-tabstrip-item-focus-shadow, #{$kendo-list-item-focus-shadow} ) !default;
 /// The text color of the dragged TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-dragging-text: k-color(primary) !default;
+$kendo-tabstrip-item-dragging-text: var( --kendo-tabstrip-item-dragging-text, #{k-color(primary)} ) !default;
 
 // Indicator
 /// The border width of the TabStrip indicator.
 /// @group tabstrip
-$kendo-tabstrip-indicator-size: k-spacing(0.5) !default;
+$kendo-tabstrip-indicator-size: var( --kendo-tabstrip-indicator-size, #{k-spacing(0.5)} ) !default;
 /// The border color of the TabStrip ripple.
 /// @group tabstrip
-$kendo-tabstrip-indicator-color: k-color(primary) !default;
+$kendo-tabstrip-indicator-color: var( --kendo-tabstrip-indicator-color, #{k-color(primary)} ) !default;
 
 /// The horizontal padding of the TabStrip content.
 /// @group tabstrip
-$kendo-tabstrip-content-padding-x: k-spacing(3) !default;
+$kendo-tabstrip-content-padding-x: var( --kendo-tabstrip-content-padding-x, #{k-spacing(3)} ) !default;
 /// The vertical padding of the TabStrip content.
 /// @group tabstrip
-$kendo-tabstrip-content-padding-y: k-spacing(1.5) !default;
+$kendo-tabstrip-content-padding-y: var( --kendo-tabstrip-content-padding-y, #{k-spacing(1.5)} ) !default;
 /// The border width around the TabStrip content.
 /// @group tabstrip
-$kendo-tabstrip-content-border-width: 1px !default;
+$kendo-tabstrip-content-border-width: var( --kendo-tabstrip-content-border-width, 1px ) !default;
 
 /// The background color of the TabStrip content.
 /// @group tabstrip
-$kendo-tabstrip-content-bg: k-color(surface-alt) !default;
+$kendo-tabstrip-content-bg: var( --kendo-tabstrip-content-bg, #{k-color(surface-alt)} ) !default;
 /// The text color of the TabStrip content.
 /// @group tabstrip
-$kendo-tabstrip-content-text: k-color(on-app-surface) !default;
+$kendo-tabstrip-content-text: var( --kendo-tabstrip-content-text, #{k-color(on-app-surface)} ) !default;
 /// The border color of the TabStrip content.
 /// @group tabstrip
-$kendo-tabstrip-content-border: transparent !default;
+$kendo-tabstrip-content-border: var( --kendo-tabstrip-content-border, transparent ) !default;
 /// The border color of the focused TabStrip content.
 /// @group tabstrip
-$kendo-tabstrip-content-focus-border: k-color(on-app-surface) !default;
+$kendo-tabstrip-content-focus-border: var( --kendo-tabstrip-content-focus-border, #{k-color(on-app-surface)} ) !default;
 
 /// The left and right scroll overlay of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-scroll-overlay: k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent) !default;
+$kendo-tabstrip-scroll-overlay: var( --kendo-tabstrip-scroll-overlay, #{k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)} ) !default;
 
 /// The size map of the TabStrip.
 /// @group tabstrip
@@ -210,3 +204,61 @@ $kendo-tabstrip-sizes: (
         item-padding-y: $kendo-tabstrip-lg-item-padding-y
     )
 ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/tabstrip/_variables.scss" with (
+    $kendo-tabstrip-wrapper-padding-x: $kendo-tabstrip-wrapper-padding-x,
+    $kendo-tabstrip-wrapper-padding-y: $kendo-tabstrip-wrapper-padding-y,
+    $kendo-tabstrip-wrapper-border-width: $kendo-tabstrip-wrapper-border-width,
+    $kendo-tabstrip-font-family: $kendo-tabstrip-font-family,
+    $kendo-tabstrip-font-size: $kendo-tabstrip-font-size,
+    $kendo-tabstrip-line-height: $kendo-tabstrip-line-height,
+    $kendo-tabstrip-border-width: $kendo-tabstrip-border-width,
+    $kendo-tabstrip-sm-font-size: $kendo-tabstrip-sm-font-size,
+    $kendo-tabstrip-sm-line-height: $kendo-tabstrip-sm-line-height,
+    $kendo-tabstrip-md-font-size: $kendo-tabstrip-md-font-size,
+    $kendo-tabstrip-md-line-height: $kendo-tabstrip-md-line-height,
+    $kendo-tabstrip-lg-font-size: $kendo-tabstrip-lg-font-size,
+    $kendo-tabstrip-lg-line-height: $kendo-tabstrip-lg-line-height,
+    $kendo-tabstrip-wrapper-bg: $kendo-tabstrip-wrapper-bg,
+    $kendo-tabstrip-wrapper-text: $kendo-tabstrip-wrapper-text,
+    $kendo-tabstrip-wrapper-border: $kendo-tabstrip-wrapper-border,
+    $kendo-tabstrip-bg: $kendo-tabstrip-bg,
+    $kendo-tabstrip-text: $kendo-tabstrip-text,
+    $kendo-tabstrip-border: $kendo-tabstrip-border,
+    $kendo-tabstrip-item-border-width: $kendo-tabstrip-item-border-width,
+    $kendo-tabstrip-item-border-radius: $kendo-tabstrip-item-border-radius,
+    $kendo-tabstrip-item-gap: $kendo-tabstrip-item-gap,
+    $kendo-tabstrip-sm-item-padding-x: $kendo-tabstrip-sm-item-padding-x,
+    $kendo-tabstrip-sm-item-padding-y: $kendo-tabstrip-sm-item-padding-y,
+    $kendo-tabstrip-md-item-padding-x: $kendo-tabstrip-md-item-padding-x,
+    $kendo-tabstrip-md-item-padding-y: $kendo-tabstrip-md-item-padding-y,
+    $kendo-tabstrip-lg-item-padding-x: $kendo-tabstrip-lg-item-padding-x,
+    $kendo-tabstrip-lg-item-padding-y: $kendo-tabstrip-lg-item-padding-y,
+    $kendo-tabstrip-item-bg: $kendo-tabstrip-item-bg,
+    $kendo-tabstrip-item-text: $kendo-tabstrip-item-text,
+    $kendo-tabstrip-item-border: $kendo-tabstrip-item-border,
+    $kendo-tabstrip-item-hover-bg: $kendo-tabstrip-item-hover-bg,
+    $kendo-tabstrip-item-hover-text: $kendo-tabstrip-item-hover-text,
+    $kendo-tabstrip-item-hover-border: $kendo-tabstrip-item-hover-border,
+    $kendo-tabstrip-item-selected-bg: $kendo-tabstrip-item-selected-bg,
+    $kendo-tabstrip-item-selected-text: $kendo-tabstrip-item-selected-text,
+    $kendo-tabstrip-item-selected-border: $kendo-tabstrip-item-selected-border,
+    $kendo-tabstrip-item-selected-font-weight: $kendo-tabstrip-item-selected-font-weight,
+    $kendo-tabstrip-item-focus-shadow: $kendo-tabstrip-item-focus-shadow,
+    $kendo-tabstrip-item-disabled-bg: $kendo-tabstrip-item-disabled-bg,
+    $kendo-tabstrip-item-disabled-text: $kendo-tabstrip-item-disabled-text,
+    $kendo-tabstrip-item-disabled-border: $kendo-tabstrip-item-disabled-border,
+    $kendo-tabstrip-item-disabled-opacity: $kendo-tabstrip-item-disabled-opacity,
+    $kendo-tabstrip-item-disabled-filter: $kendo-tabstrip-item-disabled-filter,
+    $kendo-tabstrip-indicator-size: $kendo-tabstrip-indicator-size,
+    $kendo-tabstrip-indicator-color: $kendo-tabstrip-indicator-color,
+    $kendo-tabstrip-content-padding-x: $kendo-tabstrip-content-padding-x,
+    $kendo-tabstrip-content-padding-y: $kendo-tabstrip-content-padding-y,
+    $kendo-tabstrip-content-border-width: $kendo-tabstrip-content-border-width,
+    $kendo-tabstrip-content-bg: $kendo-tabstrip-content-bg,
+    $kendo-tabstrip-content-text: $kendo-tabstrip-content-text,
+    $kendo-tabstrip-content-border: $kendo-tabstrip-content-border,
+    $kendo-tabstrip-content-focus-border: $kendo-tabstrip-content-focus-border,
+    $kendo-tabstrip-scroll-overlay: $kendo-tabstrip-scroll-overlay,
+    $kendo-tabstrip-sizes: $kendo-tabstrip-sizes
+);

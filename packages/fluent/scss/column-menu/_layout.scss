@@ -1,9 +1,10 @@
 @use "sass:map";
-@use "../core/_index.scss" as *;
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/column-menu/_layout.scss" as *;
 
-@mixin kendo-column-menu--layout-base() {
-    .k-column-menu {}
+@mixin kendo-column-menu--layout() {
+
+    @include kendo-column-menu--layout-base();
 
     // Sizes
     @each $size, $value in $kendo-column-menu-sizes {
@@ -13,10 +14,6 @@
         $_line-height: map.get($value, line-height);
 
         .k-column-menu-#{$size} {
-            font-size: $_font-size;
-            line-height: $_line-height;
-
-            .k-columnmenu-item,
             .k-column-list-item {
                 padding-block: $_padding-y;
                 padding-inline: $_padding-x;
@@ -24,53 +21,5 @@
                 line-height: $_line-height;
             }
         }
-
-        .k-group-menu-#{$size} {
-            font-size: $_font-size;
-            line-height: $_line-height;
-
-            .k-group-menu-item {
-                padding-block: $_padding-y;
-                padding-inline: $_padding-x;
-                font-size: $_font-size;
-                line-height: $_line-height;
-            }
-        }
     }
-
-    .k-group-menu .k-group-menu-item-wrap + .k-group-menu-item-wrap {
-        border-top: 1px solid;
-    }
-
-    .k-group-menu-item {
-        display: flex;
-        user-select: none;
-        gap: k-spacing(1);
-    }
-
-    .k-group-menu-item-actions {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-block: calc( k-spacing(1) * -1);
-        pointer-events: none;
-    }
-
-    .k-group-menu-item-action {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: k-spacing(1);
-        border-radius: k-border-radius(md);
-        pointer-events: auto;
-        cursor: pointer;
-    }
-
-    .k-group-menu-item-drag-action {
-        cursor: move;
-    }
-}
-
-@mixin kendo-column-menu--layout() {
-    @include kendo-column-menu--layout-base();
 }

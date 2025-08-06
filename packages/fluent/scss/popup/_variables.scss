@@ -3,40 +3,53 @@
 
 /// Horizontal padding of the popup.
 /// @group popup
-$kendo-popup-padding-x: k-spacing(0) !default;
+$kendo-popup-padding-x: var( --kendo-popup-padding-x, #{k-spacing(0)} ) !default;
 /// Vertical padding of the popup.
 /// @group popup
-$kendo-popup-padding-y: k-spacing(0) !default;
+$kendo-popup-padding-y: var( --kendo-popup-padding-y, #{k-spacing(0)} ) !default;
 /// Width of the border around the popup.
 /// @group popup
-$kendo-popup-border-width: 0 !default;
+$kendo-popup-border-width: var( --kendo-popup-border-width, 0 ) !default;
 /// Border radius of the popup.
 /// @group popup
-$kendo-popup-border-radius: k-border-radius(md) !default;
+$kendo-popup-border-radius: var( --kendo-popup-border-radius, #{k-border-radius(md)} ) !default;
 
 /// Font size of the popup.
 /// @group popup
-$kendo-popup-font-size: var( --kendo-font-size, inherit) !default;
+$kendo-popup-font-size: var( --kendo-popup-font-size, var( --kendo-font-size, inherit) ) !default;
 /// Line height of the popup.
 /// @group popup
-$kendo-popup-line-height: var( --kendo-line-height, normal) !default;
+$kendo-popup-line-height: var( --kendo-popup-line-height, var( --kendo-line-height, normal) ) !default;
 
 /// Horizontal padding of the content inside the popup.
 /// @group popup
-$kendo-popup-content-padding-x: k-spacing(2) !default;
+$kendo-popup-content-padding-x: var( --kendo-popup-content-padding-x, #{k-spacing(2)} ) !default;
 /// Vertical padding of the content inside the popup.
 /// @group popup
-$kendo-popup-content-padding-y: k-spacing(2) !default;
+$kendo-popup-content-padding-y: var( --kendo-popup-content-padding-y, #{k-spacing(2)} ) !default;
 
 /// Background color of the popup.
 /// @group popup
-$kendo-popup-bg: k-color(surface-alt) !default;
+$kendo-popup-bg: var( --kendo-popup-bg, #{k-color(surface-alt)} ) !default;
 /// Text color of the popup.
 /// @group popup
-$kendo-popup-text: k-color(on-app-surface) !default;
+$kendo-popup-text: var( --kendo-popup-text, #{k-color(on-app-surface)} ) !default;
 /// Border color of the popup.
 /// @group popup
-$kendo-popup-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-popup-border: var( --kendo-popup-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 /// Box shadow around the popup.
 /// @group popup
-$kendo-popup-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
+$kendo-popup-shadow: var( --kendo-popup-shadow, var( --kendo-box-shadow-depth-4, none ) ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/popup/_variables.scss" with (
+    $kendo-popup-border-width: $kendo-popup-border-width,
+    $kendo-popup-border-radius: $kendo-popup-border-radius,
+    $kendo-popup-font-size: $kendo-popup-font-size,
+    $kendo-popup-line-height: $kendo-popup-line-height,
+    $kendo-popup-content-padding-x: $kendo-popup-content-padding-x,
+    $kendo-popup-content-padding-y: $kendo-popup-content-padding-y,
+    $kendo-popup-bg: $kendo-popup-bg,
+    $kendo-popup-text: $kendo-popup-text,
+    $kendo-popup-border: $kendo-popup-border,
+    $kendo-popup-shadow: $kendo-popup-shadow
+);

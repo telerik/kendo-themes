@@ -211,6 +211,13 @@ $kendo-chat-quick-reply-shadow-spread: 2px !default;
 /// @group chat
 $kendo-chat-quick-reply-shadow-opacity: .3 !default;
 
+/// The size of the Chat typing indicator dot.
+/// @group chat
+$kendo-chat-typing-indicator-dot-size: 8px !default;
+/// The spacing of the Chat typing indicator dot.
+/// @group chat
+$kendo-chat-typing-indicator-dot-spacing: 5px !default;
+
 @forward "@progress/kendo-theme-core/scss/components/chat/_variables.scss" with (
     $kendo-chat-padding-x: $kendo-chat-padding-x,
     $kendo-chat-padding-y: $kendo-chat-padding-y,
@@ -274,5 +281,7 @@ $kendo-chat-quick-reply-shadow-opacity: .3 !default;
     $kendo-chat-quick-reply-hover-border: $kendo-chat-quick-reply-hover-border,
     $kendo-chat-quick-reply-shadow-blur: $kendo-chat-quick-reply-shadow-blur,
     $kendo-chat-quick-reply-shadow-spread: $kendo-chat-quick-reply-shadow-spread,
-    $kendo-chat-quick-reply-shadow-opacity: $kendo-chat-quick-reply-shadow-opacity
+    $kendo-chat-quick-reply-shadow-opacity: $kendo-chat-quick-reply-shadow-opacity,
+    $kendo-chat-typing-indicator-dot-size: $kendo-chat-typing-indicator-dot-size,
+    $kendo-chat-typing-indicator-dot-spacing: $kendo-chat-typing-indicator-dot-spacing
 );

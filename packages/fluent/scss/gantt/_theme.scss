@@ -1,299 +1,80 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/gantt/_theme.scss" as *;
 
 @mixin kendo-gantt--theme() {
+    @include kendo-gantt--theme-base();
 
-    .k-gantt {
-        @include fill(
-            var( --kendo-gantt-text, #{$kendo-gantt-text} ),
-            var( --kendo-gantt-bg, #{$kendo-gantt-bg} ),
-            var( --kendo-gantt-border, #{$kendo-gantt-border} )
-        );
-
-        // React gantt
-        .k-treelist-scrollable {
-            .k-task-milestone .k-task-milestone-content {
-                @include fill(
-                    $bg: var( --kendo-gantt-milestone-bg, #{$kendo-gantt-milestone-bg} ),
-                    $border: var( --kendo-gantt-milestone-border, #{$kendo-gantt-milestone-border} )
-                );
-            }
-            .k-task-milestone.k-selected .k-task-milestone-content {
-                @include fill(
-                    $bg: var( --kendo-gantt-milestone-selected-bg, #{$kendo-gantt-milestone-selected-bg} ),
-                    $border: var( --kendo-gantt-milestone-selected-border, #{$kendo-gantt-milestone-selected-border} )
-                );
-            }
-        }
-
-        .k-gantt-dependencies-svg {
-            polyline {
-                fill: none;
-                stroke: var( --kendo-gantt-line-fill, #{$kendo-gantt-line-fill} );
-            }
-
-            polyline.k-selected {
-                stroke: var( --kendo-gantt-line-selected-fill, #{$kendo-gantt-line-selected-fill} );
-            }
-        }
-    }
-
-
-    // Treelist
     .k-gantt-treelist {
-        .k-treelist,
-        .k-grid-content {
-            background-color: transparent;
-        }
-    }
-
-
-    // Non work hours
-    .k-gantt .k-nonwork-hour {
         @include fill(
-            var( --kendo-gantt-nonwork-text, #{$kendo-gantt-nonwork-text} ),
-            var( --kendo-gantt-nonwork-bg, #{$kendo-gantt-nonwork-bg} ),
-            var( --kendo-gantt-nonwork-border, #{$kendo-gantt-nonwork-border} )
+            $kendo-gantt-treelist-text,
+            $kendo-gantt-treelist-bg,
+            $kendo-gantt-treelist-border
         );
     }
 
-
-    // Task dot
-    .k-task-dot {}
-    .k-task-dot::before {
-        @include fill(
-            $bg: var( --kendo-gantt-dot-bg, #{$kendo-gantt-dot-bg} ),
-            $border: var( --kendo-gantt-dot-border, #{$kendo-gantt-dot-border} )
-        );
-    }
-    .k-task-dot:hover::before,
-    .k-task-dot.k-hover::before {
-        @include fill(
-            $bg: var( --kendo-gantt-dot-hover-bg, #{$kendo-gantt-dot-hover-bg} ),
-            $border: var( --kendo-gantt-dot-hover-border, #{$kendo-gantt-dot-hover-border} )
-        );
-    }
-
-
-    // Milestone
-    .k-task-milestone {
-        @include fill(
-            $bg: var( --kendo-gantt-milestone-bg, #{$kendo-gantt-milestone-bg} ),
-            $border: var( --kendo-gantt-milestone-border, #{$kendo-gantt-milestone-border} )
-        );
-
-        &.k-task-delayed {
-            @include repeating-striped-gradient( $kendo-gantt-delayed-bg, k-color(app-surface), 90deg, 4px, 2px );
-        }
-
-        &.k-task-advanced {
-            @include fill(
-                $bg: var( --kendo-gantt-advanced-bg, #{$kendo-gantt-advanced-bg} )
-            );
-        }
-    }
-    .k-task-milestone.k-selected {
-        background-image: none;
-        @include fill(
-            $bg: var( --kendo-gantt-milestone-selected-bg, #{$kendo-gantt-milestone-selected-bg} ),
-            $border: var( --kendo-gantt-milestone-selected-border, #{$kendo-gantt-milestone-selected-border} )
-        );
-    }
-
-
-    // Summary
-    .k-task-summary {
-        color: var( --kendo-gantt-summary-bg, #{$kendo-gantt-summary-bg} );
-
-        &.k-task-delayed {
-            color: var( --kendo-gantt-delayed-bg-lighter, #{$kendo-gantt-delayed-bg-lighter} );
-        }
-
-        &.k-task-advanced {
-            color: var( --kendo-gantt-advanced-bg-lighter, #{$kendo-gantt-advanced-bg-lighter} );
-        }
-    }
-    .k-task-summary-complete {
-        color: var( --kendo-gantt-summary-progress-bg, #{$kendo-gantt-summary-progress-bg} );
-    }
-    .k-task-delayed .k-task-summary-complete {
-        color: var( --kendo-gantt-delayed-bg, #{$kendo-gantt-delayed-bg} );
-    }
-    .k-task-advanced .k-task-summary-complete {
-        color: var( --kendo-gantt-advanced-bg, #{$kendo-gantt-advanced-bg} );
-    }
-    .k-task-summary.k-selected {
-        color: var( --kendo-gantt-summary-selected-bg, #{$kendo-gantt-summary-selected-bg} );
-
-        .k-task-summary-complete {
-            color: var( --kendo-gantt-summary-progress-selected-bg, #{$kendo-gantt-summary-progress-selected-bg} );
-        }
-    }
-
-
-    // Tasks
     .k-task-single {
-        @include fill(
-            var( --kendo-gantt-task-text, #{$kendo-gantt-task-text} ),
-            var( --kendo-gantt-task-bg, #{$kendo-gantt-task-bg} ),
-            var( --kendo-gantt-task-border, #{$kendo-gantt-task-border} )
-        );
-
-        &.k-task-delayed {
-            @include fill(
-                $bg: var( --kendo-gantt-delayed-bg-lighter, #{$kendo-gantt-delayed-bg-lighter} )
-            );
-        }
-
-        &.k-task-advanced {
-            @include fill(
-                $bg: var( --kendo-gantt-advanced-bg-lighter, #{$kendo-gantt-advanced-bg-lighter} )
-            );
-        }
-
-        .k-task-complete {
-            @include fill(
-                $bg: var( --kendo-gantt-task-progress-bg, #{$kendo-gantt-task-progress-bg} )
-            );
-        }
-
         &:hover {
             .k-task-complete {
-                background-color: var( --kendo-gantt-task-progress-hover-bg, #{$kendo-gantt-task-progress-hover-bg} )
+                background-color: $kendo-gantt-task-progress-hover-bg;
             }
         }
     }
 
     .k-task-delayed {
-        .k-task-complete {
-            @include fill(
-                $bg: var( --kendo-gantt-delayed-bg, #{$kendo-gantt-delayed-bg} )
-            );
-        }
-
         &:hover .k-task-complete {
             @include fill(
-                $bg: var( --kendo-gantt-delayed-hover-bg, #{$kendo-gantt-delayed-hover-bg} )
+                $bg: $kendo-gantt-delayed-hover-bg
             );
         }
     }
 
     .k-task-advanced {
-        .k-task-complete {
-            @include fill(
-                $bg: var( --kendo-gantt-advanced-bg, #{$kendo-gantt-advanced-bg} )
-            );
-        }
-
         &:hover {
             .k-task-complete {
-                background-color: var( --kendo-gantt-advanced-hover-bg, #{$kendo-gantt-advanced-hover-bg} );
+                background-color: $kendo-gantt-advanced-hover-bg;
             }
         }
     }
 
-    .k-task-single.k-selected {
-        @include fill(
-            var( --kendo-gantt-task-selected-text, #{$kendo-gantt-task-selected-text} ),
-            var( --kendo-gantt-task-selected-bg, #{$kendo-gantt-task-selected-bg} ),
-            var( --kendo-gantt-task-selected-border, #{$kendo-gantt-task-selected-border} )
-        );
-
-        .k-task-complete {
-            @include fill(
-                $bg: var( --kendo-gantt-task-progress-selected-bg, #{$kendo-gantt-task-progress-selected-bg} )
-            );
-        }
-    }
-
-    // Dependency Lines
     .k-gantt-line {
         @include fill (
-            $color: var( --kendo-gantt-line-fill, #{$kendo-gantt-line-fill} )
+            $color: $kendo-gantt-line-fill
         );
     }
     .k-gantt-line.k-selected {
         @include fill(
-            $color: var( --kendo-gantt-line-selected-fill, #{$kendo-gantt-line-selected-fill} )
+            $color: $kendo-gantt-line-selected-fill
         );
     }
 
-    // Planned element
-    .k-task-planned {
-        .k-task-moment {
-            @include fill(
-                $bg: transparent,
-                $border: var( --kendo-gantt-planned-border, #{$kendo-gantt-planned-border} )
-            );
-        }
-        .k-task-duration {
-            @include fill(
-                $bg: var( --kendo-gantt-planned-bg, #{$kendo-gantt-planned-bg} )
-            );
-        }
-        &:hover .k-task-moment {
-            @include fill(
-                $bg: var( --kendo-gantt-planned-bg, #{$kendo-gantt-planned-bg} )
-            );
-        }
-    }
-
-    // Delay offset
-    .k-task-offset {
-        @include repeating-striped-gradient( $kendo-gantt-delayed-bg, k-color(app-surface), 135deg, 4px, 2px );
-
-        .k-resize-e::before {
-            @include fill(
-                $border: var( --kendo-gantt-action-on-offset-text, #{$kendo-gantt-action-on-offset-text} )
-            );
-        }
-
-        .k-task-actions {
-            @include fill(
-                $color: var( --kendo-gantt-action-on-offset-text, #{$kendo-gantt-action-on-offset-text} )
-            );
-        }
-    }
-
-    .k-task-offset:hover {
-        @include repeating-striped-gradient( $kendo-gantt-delayed-bg-lighter, k-color(app-surface), 135deg, 4px, 2px );
-    }
-
-    .k-pdf-export .k-task-offset {
-        @include fill(
-            $bg: var( --kendo-gantt-delayed-bg, #{$kendo-gantt-delayed-bg} )
-        );
-    }
-
-    // Tooltips
     .k-offset-tooltip-delayed {
         @include fill(
-            $color: var( --kendo-gantt-delayed-text, #{$kendo-gantt-delayed-text} ),
-            $bg: var( --kendo-gantt-delayed-bg, #{$kendo-gantt-delayed-bg} )
+            $color: $kendo-gantt-delayed-text,
+            $bg: $kendo-gantt-delayed-bg
         );
     }
 
     .k-planned-tooltip {
         @include fill(
-            $color: var( --kendo-gantt-planned-text, #{$kendo-gantt-planned-text} ),
-            $bg: var( --kendo-gantt-planned-bg, #{$kendo-gantt-planned-bg} )
+            $color: $kendo-gantt-planned-text,
+            $bg: $kendo-gantt-planned-bg
         );
     }
 
     .k-gantt-tooltip-validation::before {
         @include fill(
-            $bg: var( --kendo-gantt-validation-tooltip-border, #{$kendo-gantt-validation-tooltip-border} )
+            $bg: $kendo-gantt-validation-tooltip-border
         );
     }
     .k-gantt-tooltip-valid::before {
         @include fill(
-            $bg: var( --kendo-gantt-validation-tooltip-valid-border, #{$kendo-gantt-validation-tooltip-valid-border} )
+            $bg: $kendo-gantt-validation-tooltip-valid-border
         );
     }
     .k-gantt-tooltip-invalid::before {
         @include fill(
-            $bg: var( --kendo-gantt-validation-tooltip-invalid-border, #{$kendo-gantt-validation-tooltip-invalid-border} )
+            $bg: $kendo-gantt-validation-tooltip-invalid-border
         );
     }
-
 }

@@ -1,18 +1,21 @@
 @use "../core/_index.scss" as *;
+@use "../card/_variables.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/tilelayout/_theme.scss" as *;
 
 @mixin kendo-tile-layout--theme() {
+    @include kendo-tile-layout--theme-base();
 
-    .k-tilelayout {
-        @include fill(
-            $bg: var( --kendo-tile-layout-bg, #{$kendo-tile-layout-bg} )
-        );
-    }
+    .k-tilelayout .k-card {
+        @include box-shadow( $kendo-card-shadow );
 
-    .k-layout-item-hint {
-        @include fill(
-            $bg: var( --kendo-tile-layout-hint-bg, #{$kendo-tile-layout-hint-bg} ),
-            $border: var( --kendo-tile-layout-hint-border, #{$kendo-tile-layout-hint-border} )
-        );
+        &:focus,
+        &.k-focus {
+            @include focus-indicator( $kendo-card-focus-shadow );
+        }
+
+        &.k-selected {
+            @include box-shadow( $kendo-card-focus-shadow );
+        }
     }
 }

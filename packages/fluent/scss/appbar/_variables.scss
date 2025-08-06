@@ -3,104 +3,71 @@
 
 /// The horizontal margin of the AppBar.
 /// @group appbar
-$kendo-appbar-margin-x: k-spacing(0) !default;
+$kendo-appbar-margin-x: var( --kendo-appbar-margin-x, k-spacing(0) ) !default;
 /// The vertical margin of the AppBar.
 /// @group appbar
-$kendo-appbar-margin-y: k-spacing(0) !default;
+$kendo-appbar-margin-y: var( --kendo-appbar-margin-y, k-spacing(0) ) !default;
 /// The horizontal padding of the AppBar.
 /// @group appbar
-$kendo-appbar-padding-x: k-spacing(2) !default;
+$kendo-appbar-padding-x: var( --kendo-appbar-padding-x, k-spacing(2) ) !default;
 /// The vertical padding of the AppBar.
 /// @group appbar
-$kendo-appbar-padding-y: k-spacing(2) !default;
+$kendo-appbar-padding-y: var( --kendo-appbar-padding-y, k-spacing(2) ) !default;
 /// The width of the border around the AppBar.
 /// @group appbar
-$kendo-appbar-border-width: 0px !default;
+$kendo-appbar-border-width: var( --kendo-appbar-border-width, 0px ) !default;
 /// The z-index of the AppBar.
 /// @group appbar
-$kendo-appbar-zindex: 1000 !default;
+$kendo-appbar-zindex: var( --kendo-appbar-zindex, 1000 ) !default;
 /// The font family of the AppBar.
 /// @group appbar
-$kendo-appbar-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-appbar-font-family: var( --kendo-appbar-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// The font size of the AppBar.
 /// @group appbar
-$kendo-appbar-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-appbar-font-size: var( --kendo-appbar-font-size, var( --kendo-font-size, inherit ) ) !default;
 /// The line height of the AppBar.
 /// @group appbar
-$kendo-appbar-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-appbar-line-height: var( --kendo-appbar-line-height, var( --kendo-line-height, normal ) ) !default;
 
 /// The spacing between the AppBar sections.
 /// @group appbar
-$kendo-appbar-spacing: k-spacing(2) !default;
+$kendo-appbar-spacing: var( --kendo-appbar-spacing, k-spacing(2) ) !default;
 
 /// The text color of the AppBar.
 /// @group appbar
-$kendo-appbar-text: k-color(on-app-surface) !default;
+$kendo-appbar-text: var( --kendo-appbar-text, k-color(on-app-surface) ) !default;
 /// The background color of the AppBar.
 /// @group appbar
-$kendo-appbar-bg: k-color(surface) !default;
+$kendo-appbar-bg: var( --kendo-appbar-bg, k-color(surface) ) !default;
 /// The border color of the AppBar.
 /// @group appbar
-$kendo-appbar-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
-
-/// The theme variations for the AppBar.
-/// @group appbar
-$kendo-appbar-brand-colors: (
-    primary: primary,
-    error: error,
-    success: success,
-    info: info,
-    secondary: secondary,
-    tertiary: tertiary,
- ) !default;
-
-// Matrix with appbar theme colors in the order: bg, color, border
-$_tc-appbar-matrix: (
-    (normal: (color, on-color, color)),
-) !default;
-
-$_tc-appbar-warning-matrix: (
-    (normal: (color, on-color, color)),
-) !default;
-
-$_tc-appbar-dark-matrix: (
-    (normal: (color, on-color, color)),
-) !default;
-
-$_tc-appbar-light-matrix: (
-    (normal: (color, on-color, color)),
-) !default;
+$kendo-appbar-border: var( --kendo-appbar-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
 
 /// The theme colors map for the AppBar variations.
 /// @group appbar
-$kendo-appbar-theme-colors: () !default;
+$kendo-appbar-theme-colors: (
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
+) !default;
 
-@each $ui-states in $_tc-appbar-matrix {
-    @each $brand-color, $palette in $kendo-appbar-brand-colors {
-        $kendo-appbar-theme-colors: map.deep-merge(
-            $kendo-appbar-theme-colors,
-            k-generate-theme-variation( $brand-color, $palette, $ui-states )
-        );
-    };
-}
-
-@each $ui-states in $_tc-appbar-warning-matrix {
-    $kendo-appbar-theme-colors: map.deep-merge(
-        $kendo-appbar-theme-colors,
-        k-generate-theme-variation( warning, warning, $ui-states )
-    );
-}
-
-@each $ui-states in $_tc-appbar-dark-matrix {
-    $kendo-appbar-theme-colors: map.deep-merge(
-        $kendo-appbar-theme-colors,
-        k-generate-theme-variation( dark, dark, $ui-states )
-    );
-}
-
-@each $ui-states in $_tc-appbar-light-matrix {
-    $kendo-appbar-theme-colors: map.deep-merge(
-        $kendo-appbar-theme-colors,
-        k-generate-theme-variation( light, light, $ui-states )
-    );
-}
+@forward "@progress/kendo-theme-core/scss/components/appbar/_variables.scss" with (
+    $kendo-appbar-margin-x: $kendo-appbar-margin-x,
+    $kendo-appbar-margin-y: $kendo-appbar-margin-y,
+    $kendo-appbar-padding-x: $kendo-appbar-padding-x,
+    $kendo-appbar-padding-y: $kendo-appbar-padding-y,
+    $kendo-appbar-border-width: $kendo-appbar-border-width,
+    $kendo-appbar-zindex: $kendo-appbar-zindex,
+    $kendo-appbar-font-family: $kendo-appbar-font-family,
+    $kendo-appbar-font-size: $kendo-appbar-font-size,
+    $kendo-appbar-line-height: $kendo-appbar-line-height,
+    $kendo-appbar-gap: $kendo-appbar-spacing,
+    $kendo-appbar-theme-colors: $kendo-appbar-theme-colors
+);

@@ -91,10 +91,13 @@
             }
 
             // Hierarchy items
-            @for $i from 1 through $kendo-panelbar-item-level-count {
-                &.k-level-#{$i} {
-                    .k-link {
-                        padding-left: calc( #{$kendo-panelbar-item-padding-x} * #{$i} );
+            // Without this check, invalid CSS is generated TODO: need to rethink this
+            @if $kendo-panelbar-item-padding-x {
+                @for $i from 1 through $kendo-panelbar-item-level-count {
+                    &.k-level-#{$i} {
+                        .k-link {
+                            padding-left: calc( #{$kendo-panelbar-item-padding-x} * #{$i} );
+                        }
                     }
                 }
             }
@@ -120,7 +123,10 @@
         .k-panelbar-group .k-panelbar-expand,
         .k-panelbar-group .k-panelbar-collapse,
         .k-panelbar-group .k-panelbar-toggle {
-            margin-inline-end: calc( #{$kendo-panelbar-header-padding-x} - #{$kendo-panelbar-item-padding-x} );
+            // Without this check, invalid CSS is generated TODO: need to rethink this
+            @if $kendo-panelbar-header-padding-x and $kendo-panelbar-item-padding-x {
+                margin-inline-end: calc( #{$kendo-panelbar-header-padding-x} - #{$kendo-panelbar-item-padding-x} );
+            }
         }
     }
 
@@ -129,11 +135,14 @@
     .k-panelbar [dir = "rtl"] {
         .k-panelbar-group > .k-panelbar-item {
             // Hierarchy items
-            @for $i from 1 through $kendo-panelbar-item-level-count {
-                &.k-level-#{$i} {
-                    .k-link {
-                        padding-left: $kendo-panelbar-item-padding-x;
-                        padding-right: calc( #{$kendo-panelbar-item-padding-x} * #{$i} );
+            // Without this check, invalid CSS is generated TODO: need to rethink this
+            @if $kendo-panelbar-item-padding-x {
+                @for $i from 1 through $kendo-panelbar-item-level-count {
+                    &.k-level-#{$i} {
+                        .k-link {
+                            padding-left: $kendo-panelbar-item-padding-x;
+                            padding-right: calc( #{$kendo-panelbar-item-padding-x} * #{$i} );
+                        }
                     }
                 }
             }

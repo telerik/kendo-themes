@@ -1,20 +1,15 @@
 @use "./_variables.scss" as *;
 @use "../button/_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/menu-button/_layout.scss" as *;
 
 @mixin kendo-menu-button--layout() {
+    @include kendo-menu-button--layout-base();
 
-    // Menu button
-    .k-menu-button,
-    .k-dropdown-button {
-        aspect-ratio: auto;
-        flex-flow: row nowrap;
-
-        > .k-button-arrow {
-            flex: none;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .k-menu-button > .k-button-arrow,
+    .k-dropdown-button > .k-button-arrow,
+    .k-menu-button.k-icon-button > .k-button-arrow,
+    .k-dropdown-button.k-icon-button > .k-button-arrow {
+        margin: 0;
+        padding: 0;
     }
-
 }

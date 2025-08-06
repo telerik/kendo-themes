@@ -1,67 +1,10 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/pivotgrid/_theme.scss" as *;
 
 @mixin kendo-pivotgrid--theme() {
+    @include kendo-pivotgrid--theme-base();
 
-    .k-pivotgrid {
-        @include fill (
-            var( --kendo-pivotgrid-text, #{$kendo-pivotgrid-text} ),
-            var( --kendo-pivotgrid-bg, #{$kendo-pivotgrid-bg} ),
-            var( --kendo-pivotgrid-border, #{$kendo-pivotgrid-border} )
-        );
-    }
-
-    .k-pivotgrid-column-headers,
-    .k-pivotgrid-row-headers,
-    .k-pivotgrid-empty-cell {
-        @include fill (
-            var( --kendo-pivotgrid-headers-text, #{$kendo-pivotgrid-headers-text} ),
-            var( --kendo-pivotgrid-headers-bg, #{$kendo-pivotgrid-headers-bg} ),
-            var( --kendo-pivotgrid-headers-border, #{$kendo-pivotgrid-headers-border} )
-        );
-    }
-
-    .k-pivotgrid-empty-cell {
-        @include fill (
-            $border: var( --kendo-pivotgrid-alt-border, #{$kendo-pivotgrid-alt-border} )
-        );
-    }
-
-    .k-pivotgrid-row-headers .k-pivotgrid-row .k-pivotgrid-cell:last-child {
-        border-right-color: var( --kendo-pivotgrid-alt-border, #{$kendo-pivotgrid-alt-border} );
-    }
-
-    .k-pivotgrid-column-headers .k-pivotgrid-column-total:nth-last-of-type(2) .k-pivotgrid-cell:not(.k-pivotgrid-expanded),
-    .k-pivotgrid-column-headers .k-pivotgrid-row:last-child {
-        border-bottom-color: var( --kendo-pivotgrid-alt-border, #{$kendo-pivotgrid-alt-border} );
-    }
-
-
-    .k-pivotgrid-header-total,
-    .k-pivotgrid-total {
-        @include fill (
-            var( --kendo-pivotgrid-total-text, #{$kendo-pivotgrid-total-text} ),
-            var( --kendo-pivotgrid-total-bg, #{$kendo-pivotgrid-total-bg} ),
-            var( --kendo-pivotgrid-total-border, #{$kendo-pivotgrid-total-border} )
-        );
-    }
-
-
-    // Hover state
-    .k-pivotgrid-row-headers tbody > .k-pivotgrid-row:hover,
-    .k-pivotgrid-row-headers tbody > .k-pivotgrid-row.k-hover,
-    .k-pivotgrid-column-headers tbody > .k-pivotgrid-row:hover,
-    .k-pivotgrid-column-headers tbody > .k-pivotgrid-row.k-hover,
-    .k-pivotgrid-values tbody > .k-pivotgrid-row:hover,
-    .k-pivotgrid-values tbody > .k-pivotgrid-row.k-hover {
-        @include fill (
-            var( --kendo-pivotgrid-hover-text, #{$kendo-pivotgrid-hover-text} ),
-            var( --kendo-pivotgrid-hover-bg, #{$kendo-pivotgrid-hover-bg} ),
-            var( --kendo-pivotgrid-hover-border, #{$kendo-pivotgrid-hover-border} )
-        );
-    }
-
-    // Focus state
     .k-pivotgrid-cell:focus,
     .k-pivotgrid-cell.k-focus,
     .k-pivotgrid-empty-cell:focus,
@@ -70,65 +13,9 @@
     .k-grouping-row > .k-pivotgrid-cell:focus,
     .k-detail-row > .k-pivotgrid-cell:focus,
     .k-group-footer > .k-pivotgrid-cell:focus {
-        @include box-shadow( var( --kendo-pivotgrid-focus-shadow, #{$kendo-pivotgrid-focus-shadow} ) );
+        @include box-shadow( $kendo-pivotgrid-focus-shadow );
     }
 
-    // Selected state
-    .k-pivotgrid-cell.k-selected,
-    .k-pivotgrid-row.k-selected > .k-pivotgrid-cell {
-        @include fill (
-            var( --kendo-pivotgrid-selected-text, #{$kendo-pivotgrid-selected-text} ),
-            var( --kendo-pivotgrid-selected-bg, #{$kendo-pivotgrid-selected-bg} ),
-            var( --kendo-pivotgrid-selected-border, #{$kendo-pivotgrid-selected-border} )
-        );
-    }
-
-}
-
-
-
-@mixin kendo-pivotgrid-configurator--theme() {
-
-    .k-pivotgrid-configurator-button,
-    .k-pivotgrid-configurator-panel {
-        @include fill (
-            var( --kendo-pivotgrid-configurator-text, #{$kendo-pivotgrid-configurator-text} ),
-            var( --kendo-pivotgrid-configurator-bg, #{$kendo-pivotgrid-configurator-bg} ),
-            var( --kendo-pivotgrid-configurator-border, #{$kendo-pivotgrid-configurator-border} )
-        );
-    }
-
-    .k-pivotgrid-configurator-header {
-        @include fill(
-            var( --kendo-pivotgrid-configurator-header-text, #{$kendo-pivotgrid-configurator-header-text} ),
-            var( --kendo-pivotgrid-configurator-header-bg, #{$kendo-pivotgrid-configurator-header-bg} ),
-            var( --kendo-pivotgrid-configurator-header-border, #{$kendo-pivotgrid-configurator-header-border} )
-        );
-    }
-
-    .k-pivotgrid-configurator-content .k-fields-list-wrapper {
-        @include fill(
-            $border: var( --kendo-pivotgrid-configurator-border, #{$kendo-pivotgrid-configurator-border} )
-        );
-    }
-
-
-    // Calculated field
-    .k-calculated-field {
-        @include fill (
-            var( --kendo-pivotgrid-calculated-field-text, #{$kendo-pivotgrid-calculated-field-text} ),
-            var( --kendo-pivotgrid-calculated-field-bg, #{$kendo-pivotgrid-calculated-field-bg} ),
-            var( --kendo-pivotgrid-calculated-field-border, #{$kendo-pivotgrid-calculated-field-border} )
-        );
-    }
-
-    .k-calculated-field-header {
-        @include fill(
-            var( --kendo-pivotgrid-calculated-field-header-text, #{$kendo-pivotgrid-calculated-field-header-text} ),
-            var( --kendo-pivotgrid-calculated-field-header-bg, #{$kendo-pivotgrid-calculated-field-header-bg} ),
-            var( --kendo-pivotgrid-calculated-field-header-border, #{$kendo-pivotgrid-calculated-field-header-border} )
-        );
-    }
 
     .k-filter-menu .k-calculated-item {
         @include fill( $border: color-mix(in srgb, k-color(border) 16%, transparent) );
@@ -138,81 +25,7 @@
         @include fill( $border: color-mix(in srgb, k-color(border) 16%, transparent) );
     }
 
-}
-
-@mixin kendo-pivotgrid-legacy--theme() {
-
-    .k-pivot {
-        @include fill (
-            var( --kendo-pivotgrid-text, #{$kendo-pivotgrid-text} ),
-            var( --kendo-pivotgrid-bg, #{$kendo-pivotgrid-bg} ),
-            var( --kendo-pivotgrid-border, #{$kendo-pivotgrid-border} )
-        );
+    .k-pivotgrid-configurator-panel.kendo-jquery .k-column-fields {
+        border-color: color-mix(in srgb, k-color(border) 16%, transparent);
     }
-    .k-pivot-table {
-        border-color: var( --kendo-pivotgrid-border, #{$kendo-pivotgrid-border} );
-    }
-
-    // Pivotgrid header
-    .k-pivot-rowheaders {
-        @include fill(
-            var( --kendo-pivotgrid-headers-text, #{$kendo-pivotgrid-headers-text} ),
-            var( --kendo-pivotgrid-headers-bg, #{$kendo-pivotgrid-headers-bg} ),
-            var( --kendo-pivotgrid-headers-border, #{$kendo-pivotgrid-headers-border} )
-        );
-    }
-
-
-    // Pivotgrid toolbar
-    .k-pivot-toolbar {
-        @include fill(
-            var( --kendo-pivotgrid-headers-text, #{$kendo-pivotgrid-headers-text} ),
-            var( --kendo-pivotgrid-headers-bg, #{$kendo-pivotgrid-headers-bg} ),
-            var( --kendo-pivotgrid-headers-border, #{$kendo-pivotgrid-headers-border} )
-        );
-
-        .k-empty {
-            color: k-color(subtle);
-        }
-    }
-
-    .k-pivot-toolbar,
-    .k-pivot-table,
-    .k-pivot-rowheaders > .k-grid td:first-child,
-    .k-pivot-table .k-grid-header .k-header.k-first {
-        border-color: var( --kendo-pivotgrid-chrome-border, #{$kendo-pivotgrid-chrome-border} );
-    }
-
-    .k-pivot-layout .k-grid-footer {
-        color: var( --kendo-pivotgrid-alt-text, #{$kendo-pivotgrid-alt-text} );
-        background-color: var( --kendo-pivotgrid-alt-bg, #{$kendo-pivotgrid-alt-bg} );
-    }
-
-    // KPI icons
-    .k-i-kpi-trend-increase,
-    .k-i-kpi-trend-decrease,
-    .k-i-kpi-trend-equal {
-        color: inherit;
-    }
-
-    .k-i-kpi-status-hold {
-        color: var( --kendo-warning-100, initial );
-    }
-
-    .k-i-kpi-status-deny {
-        color: var( --kendo-error-100, initial );
-    }
-
-    .k-i-kpi-status-open {
-        color: var( --kendo-success-100, initial );
-    }
-
-
-    // Configurator
-    .k-pivotgrid-configurator-panel.kendo-jquery {
-        .k-column-fields {
-            border-color: color-mix(in srgb, k-color(border) 16%, transparent);
-        }
-    }
-
 }

@@ -1,128 +1,41 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/wizard/_layout.scss" as *;
 
 @mixin kendo-wizard--layout() {
+    @include kendo-wizard--layout-base();
 
     .k-wizard {
-        padding-inline: var( --kendo-wizard-padding-x, #{$kendo-wizard-padding-x} );
-        padding-block: var( --kendo-wizard-padding-y, #{$kendo-wizard-padding-y} );
-        border-width: var( --kendo-wizard-border-width, #{$kendo-wizard-border-width} );
-        border-style: solid;
-        box-sizing: border-box;
-        outline: 0;
-        font-size: var( --kendo-wizard-font-size, #{$kendo-wizard-font-size} );
-        line-height: var( --kendo-wizard-line-height, #{$kendo-wizard-line-height} );
-        font-family: var( --kendo-wizard-font-family, #{$kendo-wizard-font-family} );
-        position: relative;
-        color: inherit;
-        background: none;
-        display: flex;
-        align-items: stretch;
-        overflow: hidden;
-
-        .k-wizard-steps {
-            box-sizing: border-box;
-            display: flex;
-            overflow: hidden;
-        }
-
         .k-wizard-step {
-            box-sizing: border-box;
-            padding-inline: var( --kendo-wizard-content-padding-x, #{$kendo-wizard-content-padding-x} );
-            padding-block: var( --kendo-wizard-content-padding-y, #{$kendo-wizard-content-padding-y} );
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-            justify-content: space-between;
+            padding-inline: $kendo-wizard-content-padding-x;
+            padding-block: $kendo-wizard-content-padding-y;
 
             &:focus,
             &.k-focus {
-                outline-width: 1px;
                 outline-style: solid;
-                outline-offset: -1px;
             }
         }
 
         .k-wizard-content {
-            padding-inline: var( --kendo-wizard-content-padding-x, #{$kendo-wizard-content-padding-x} );
-            padding-block: var( --kendo-wizard-content-padding-y, #{$kendo-wizard-content-padding-y} );
-            box-sizing: border-box;
-            overflow-y: auto;
+            padding-inline: $kendo-wizard-content-padding-x;
+            padding-block: $kendo-wizard-content-padding-y;
         }
 
         .k-wizard-buttons {
-            margin-block-start: var( --kendo-wizard-buttons-margin-y, #{$kendo-wizard-buttons-margin-y} );
-            box-sizing: border-box;
-            display: flex;
-            flex-wrap: nowrap;
-            align-items: center;
-            justify-content: space-between;
-            flex-shrink: 0;
-
-            .k-button {
-                margin-inline-end: var( --kendo-wizard-buttons-margin-x, #{$kendo-wizard-buttons-margin-x} );
-            }
-
-            .k-wizard-pager {
-                vertical-align: middle;
-            }
-        }
-
-        .k-wizard-buttons-right {
-            .k-button:last-of-type {
-                margin-inline-end: 0;
-            }
-        }
-
-        .k-stepper {
-            .k-step-list-vertical {
-                .k-step {
-                    flex: 1 0 auto;
-                }
-            }
-
-            .k-step-indicator {
-                flex-shrink: 0;
-            }
-        }
-    }
-
-    .k-wizard-horizontal {
-        flex-direction: column;
-
-        .k-wizard-steps {
-            margin-block-start: var( --kendo-wizard-content-padding-y, #{$kendo-wizard-content-padding-y} );
-        }
-
-        .k-wizard-steps,
-        .k-wizard-content {
-            flex: 1 1 auto;
+            margin-block-start: $kendo-wizard-buttons-margin-y;
         }
     }
 
     .k-wizard-vertical {
-
         .k-wizard-steps {
-            flex: 1 0 0%;
-        }
-
-        .k-wizard-content {
-            flex: 1 1 0%;
-        }
-
-        .k-wizard-steps {
-            margin-inline-start: var( --kendo-wizard-steps-padding-x, #{$kendo-wizard-steps-padding-x} );
+            margin-inline-start: $kendo-wizard-steps-padding-x;
         }
     }
 
     .k-wizard-left {
-        flex-direction: row-reverse;
-
         .k-wizard-steps {
             margin-inline-end: var( --kendo-wizard-content-padding-x, #{$kendo-wizard-content-padding-x} );
             margin-inline-start: 0;
         }
     }
-
 }

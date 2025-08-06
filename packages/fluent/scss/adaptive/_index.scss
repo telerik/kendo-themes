@@ -21,9 +21,6 @@
         @include kendo-switch--styles();
         @include kendo-toolbar--styles();
         @include kendo-adaptive--layout();
-        @include kendo-adaptive-grid--layout();
-        @include kendo-adaptive-scheduler--layout();
-        @include kendo-adaptive-common--layout();
         @include kendo-adaptive--theme();
     }
 }

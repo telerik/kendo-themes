@@ -1,46 +1,22 @@
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/dropzone/_layout.scss" as *;
 
 @mixin kendo-dropzone--layout() {
+    @include kendo-dropzone--layout-base();
 
-    // Dropzone
-    .k-external-dropzone {
-        height: var( --kendo-dropzone-min-height, #{$kendo-dropzone-min-height} );
-        display: flex;
-        flex-flow: row nowrap;
-    }
-
-    // Dropzone inner
     .k-dropzone-inner {
-        padding-inline: var( --kendo-dropzone-padding-x, #{$kendo-dropzone-padding-x} );
-        padding-block: var( --kendo-dropzone-padding-y, #{$kendo-dropzone-padding-y} );
-        border-width: var( --kendo-dropzone-border-width, #{$kendo-dropzone-border-width} );
-        border-style: solid;
-        box-sizing: border-box;
-        font-size: var( --kendo-dropzone-font-size, #{$kendo-dropzone-font-size} );
-        font-family: var( --kendo-dropzone-font-family, #{$kendo-dropzone-font-family} );
-        line-height: var( --kendo-dropzone-line-height, #{$kendo-dropzone-line-height} );
-        flex: 1 1 auto;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-
         .k-dropzone-icon {
-            margin-block-end: var( --kendo-dropzone-icon-spacing, #{$kendo-dropzone-icon-spacing} );
+            margin-block-end: $kendo-dropzone-icon-spacing;
         }
 
         .k-dropzone-hint {
-            margin-block-end: var( --kendo-dropzone-hint-spacing, #{$kendo-dropzone-hint-spacing} );
-            font-size: var( --kendo-dropzone-hint-font-size, #{$kendo-dropzone-hint-font-size} );
-            font-weight: var( --kendo-dropzone-hint-font-weight, #{$kendo-dropzone-hint-font-weight} );
+            margin-block-end: $kendo-dropzone-hint-spacing;
+            font-weight: $kendo-dropzone-hint-font-weight;
         }
 
         .k-dropzone-note {
-            margin-block-end: var( --kendo-dropzone-note-spacing, #{$kendo-dropzone-note-spacing} );
-            font-size: var( --kendo-dropzone-note-font-size, #{$kendo-dropzone-note-font-size} );
-            font-weight: var( --kendo-dropzone-note-font-weight, #{$kendo-dropzone-note-font-weight} );
+            margin-block-end: $kendo-dropzone-note-spacing;
+            font-weight: $kendo-dropzone-note-font-weight;
         }
     }
-
 }

@@ -4,27 +4,27 @@
 
 /// The width of the border around the Button.
 /// @group button
-$kendo-button-border-width: 1px !default;
+$kendo-button-border-width: var( --kendo-button-border-width, 1px ) !default;
 
 /// The horizontal padding of the small Button.
 /// @group button
-$kendo-button-sm-padding-x: k-spacing(5) !default;
+$kendo-button-sm-padding-x: var( --kendo-button-sm-padding-x, k-spacing(5) ) !default;
 /// The horizontal padding of the medium Button.
 /// @group button
-$kendo-button-md-padding-x: k-spacing(5) !default;
+$kendo-button-md-padding-x: var( --kendo-button-md-padding-x, k-spacing(5) ) !default;
 /// The horizontal padding of the large Button.
 /// @group button
-$kendo-button-lg-padding-x: k-spacing(5) !default;
+$kendo-button-lg-padding-x: var( --kendo-button-lg-padding-x, k-spacing(5) ) !default;
 
 /// The vertical padding of the small Button.
 /// @group button
-$kendo-button-sm-padding-y: k-spacing(1) !default;
+$kendo-button-sm-padding-y: var( --kendo-button-sm-padding-y, k-spacing(1) ) !default;
 /// The vertical padding of the medium Button.
 /// @group button
-$kendo-button-md-padding-y: k-spacing(1.5) !default;
+$kendo-button-md-padding-y: var( --kendo-button-md-padding-y, k-spacing(1.5) ) !default;
 /// The vertical padding of the large Button.
 /// @group button
-$kendo-button-lg-padding-y: k-spacing(2) !default;
+$kendo-button-lg-padding-y: var( --kendo-button-lg-padding-y, k-spacing(2) ) !default;
 
 /// The font size of the small Button.
 /// @group button
@@ -93,328 +93,183 @@ $kendo-button-sizes: (
 
 /// The content spacing of the Button.
 /// @group button
-$kendo-button-spacing: k-spacing(2) !default;
+$kendo-button-spacing: var( --kendo-button-spacing, k-spacing(2) ) !default;
 
 /// The offset of the focused Button.
 /// @group button
-$kendo-button-focus-offset: k-spacing(0.5) !default;
+$kendo-button-focus-offset: var( --kendo-button-focus-offset, k-spacing(0.5) ) !default;
 /// The Outline width of the focused Button.
 /// @group button
-$kendo-button-focus-outline-width: 1px !default;
+$kendo-button-focus-outline-width: var( --kendo-button-focus-outline-width, 1px ) !default;
 /// The outline style of the focused Button.
 /// @group button
-$kendo-button-focus-outline-style: solid !default;
+$kendo-button-focus-outline-style: var( --kendo-button-focus-outline-style, solid ) !default;
 
 /// The offset of the flat focused Button.
 /// @group button
-$kendo-button-flat-focus-offset: 1px !default;
+$kendo-button-flat-focus-offset: var( --kendo-button-flat-focus-offset, 1px ) !default;
 /// The outline width of the flat focused Button.
 /// @group button
-$kendo-button-flat-focus-outline-width: k-spacing(0.5) !default;
+$kendo-button-flat-focus-outline-width: var( --kendo-button-flat-focus-outline-width, k-spacing(0.5) ) !default;
 
 /// The offset of the link focused Button.
 /// @group button
-$kendo-button-link-focus-offset: 0 !default;
+$kendo-button-link-focus-offset: var( --kendo-button-link-focus-offset, 0 ) !default;
 /// The outline width of the flat focused Button.
 /// @group button
-$kendo-button-link-focus-outline-width: 1px !default;
+$kendo-button-link-focus-outline-width: var( --kendo-button-link-focus-outline-width, 1px ) !default;
 
 /// The opacity of the pulsing animation for the generating Button.
 /// @group button
-$kendo-button-pulsing-opacity: .6 !default;
-
-// The theme variations for the Button.
-
-$kendo-button-brand-colors: (
-    primary: primary,
-    error: error,
-    success: success,
-    info: info,
-    secondary: secondary,
-    tertiary: tertiary,
-) !default;
-
-
-// Matrices with theme colors in the order: bg, color, border, outline
-
-// The color matrix for the base Button
-$_tc-base-matrix: (
-    solid: (
-        normal: (color, on-color, border),
-        hover: (color-hover, on-color, border),
-        focus: (color, on-color, border, on-color),
-        focus-hover: (color-hover, on-color, border, on-color),
-        active: (color-active, on-color, border),
-        active-hover: (color-hover, on-color, border),
-        disabled: (color-mix(in srgb, k-color(on-app-surface) 6%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent), transparent)
-    ),
-    outline: (
-        normal: (transparent, color-on-surface, currentColor),
-        hover: (on-color, color, on-color),
-        focus: (transparent, color-on-surface, currentColor, inherit),
-        focus-hover: (on-color, color, on-color, inherit),
-        active: (on-color, color, on-color),
-        active-hover: (on-color, color, on-color),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent))
-    ),
-    link: (
-        normal: (transparent, on-color, transparent),
-        hover: (transparent, on-color, transparent),
-        focus: (transparent, on-color, transparent, color-subtle-active),
-        focus-hover: (transparent, on-color, color-subtle-active, transparent),
-        active: (transparent, on-color, transparent),
-        active-hover: (transparent, on-color, transparent),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
-    ),
-    clear: (
-        normal: (transparent, color-on-surface, transparent),
-        hover: (transparent, color-on-surface, transparent),
-        focus: (color-subtle, color-on-surface, transparent, color-active),
-        focus-hover:  (transparent, color-on-surface, transparent, color-active),
-        active: (transparent, color-on-surface, transparent),
-        active-hover: (transparent, color-on-surface, transparent),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
-    )
-) !default;
-
-// The color matrix for primary, error, success, info, secondary, tertiary Buttons
-$_tc-brand-matrix: (
-    solid: (
-        normal: (color, on-color, color),
-        hover: (color-hover, on-color, color-hover),
-        focus: (color, on-color, color, inherit),
-        focus-hover: (color-hover, on-color, color-hover, inherit),
-        active: (color-active, on-color, color-active),
-        active-hover: (color-hover, on-color, color-hover),
-        disabled: (color-mix(in srgb, k-color(on-app-surface) 6%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent), transparent)
-    ),
-    flat: (
-        normal: (initial, color-on-surface, transparent),
-        hover: (color-subtle, color-hover, transparent),
-        focus: (initial, color-on-surface, transparent, color-subtle-active),
-        focus-hover: (color-subtle, color-hover, transparent, color-subtle-active),
-        active: (color-subtle-hover, color-hover, transparent),
-        active-hover: (color-subtle, color-hover, transparent),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
-    ),
-    outline: (
-        normal: (transparent, color-on-surface, currentColor),
-        hover: (color, on-color, color),
-        focus: (transparent, color-on-surface, color, inherit),
-        focus-hover: (color, on-color, color, inherit),
-        active: (color, on-color, color),
-        active-hover: (color, on-color, color),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent))
-    ),
-    link: (
-        normal: (transparent, color, transparent),
-        hover: (transparent, color-hover, transparent),
-        focus: (transparent, color, transparent, color-subtle-active),
-        focus-hover: (transparent, color-hover, transparent, color-subtle-active),
-        active: (transparent, color-active, transparent),
-        active-hover: (transparent, color-hover, transparent),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
-    ),
-    clear: (
-        normal: (transparent, color-on-surface, transparent),
-        hover: (transparent, color-on-surface, transparent),
-        focus: (color-subtle, color-on-surface, transparent),
-        focus-hover: (transparent, color-on-surface, transparent),
-        active: (transparent, color-on-surface, transparent),
-        active-hover: (transparent, color-on-surface, transparent),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
-    )
-) !default;
-
-// The color matrix for warning Buttons
-$_tc-warning-matrix: (
-    solid: (
-        normal: (color, on-color, color),
-        hover: (color-hover, on-color, color-hover),
-        focus: (color, on-color, color, app-surface),
-        focus-hover: (color-hover, on-color, color-hover, app-surface),
-        active: (color-active, on-color, color-active),
-        active-hover: (color-hover, on-color, color-hover),
-        disabled: (color-mix(in srgb, k-color(on-app-surface) 6%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent), transparent)
-    ),
-    flat: (
-        normal: (initial, color-on-surface, transparent),
-        hover: (color-subtle, color-hover, transparent),
-        focus: (initial, color-on-surface, transparent, color-subtle-active),
-        focus-hover: (color-subtle, color-hover, transparent, color-subtle-active),
-        active: (color-subtle-hover, color-hover, transparent),
-        active-hover: (color-subtle, color-hover, transparent),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
-    ),
-    outline: (
-        normal: (transparent, color-on-surface, currentColor),
-        hover: (color, on-color, color),
-        focus: (transparent, color-on-surface, color-on-surface, inherit),
-        focus-hover: (color, on-color, color, inherit),
-        active: (color, on-color, color),
-        active-hover: (color, on-color, color),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent))
-    ),
-    link: (
-        normal: (transparent, color, transparent),
-        hover: (transparent, color-hover, transparent),
-        focus: (transparent, color, color-subtle-active),
-        focus-hover: (transparent, color-hover, transparent, color-subtle-active),
-        active: (transparent, color-active, transparent),
-        active-hover: (transparent, color-hover, transparent),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial),
-    ),
-    clear: (
-        normal: (transparent, color-on-surface, transparent),
-        hover: (transparent, color-on-surface, transparent),
-        focus: (color-subtle, color-on-surface, transparent),
-        focus-hover: (transparent, color-on-surface, transparent),
-        active: (transparent, color-on-surface, transparent),
-        active-hover: (transparent, color-on-surface, transparent),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial),
-    )
-) !default;
-
-// The color matrix for dark Buttons
-$_tc-dark-matrix: (
-    solid: (
-        normal: (color, on-color, color),
-        hover: (color-hover, on-color, color-hover),
-        focus: (color, on-color, color, on-color),
-        focus-hover: (color-hover, on-color, color-hover, on-color),
-        active: (color-active, on-color, color-active),
-        active-hover: (color-hover, on-color, color-hover),
-        disabled: (color-mix(in srgb, k-color(on-app-surface) 6%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent), transparent),
-    ),
-    flat: (
-        normal: (initial, color-on-surface, transparent),
-        hover: (color-subtle, color-hover, transparent),
-        focus: (initial, color-on-surface, transparent, color-subtle-active),
-        focus-hover: (color-subtle, color-hover, transparent, color-subtle-active),
-        active: (color-subtle-hover, color-hover, transparent),
-        active-hover: (color-subtle, color-hover, transparent),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
-    ),
-    outline: (
-        normal: (transparent, color-on-surface, currentColor),
-        hover: (color, on-color, color),
-        focus: (transparent, color-on-surface, color, inherit),
-        focus-hover: (color, on-color, color, inherit),
-        active: (color, on-color, color),
-        active-hover: (color, on-color, color),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent))
-    ),
-    link: (
-        normal: (transparent, color, transparent),
-        hover: (transparent, color-hover, transparent),
-        focus: (transparent, color, color-subtle-active),
-        focus-hover: (transparent, color-hover, transparent, color-subtle-active),
-        active: (transparent, color-active, transparent),
-        active-hover: (transparent, color-hover, transparent),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
-    ),
-    clear: (
-        normal: (transparent, color-on-surface, transparent),
-        hover: (transparent, color-on-surface, transparent),
-        focus: (color-subtle, color-on-surface, transparent),
-        focus-hover: (transparent, color-on-surface, transparent),
-        active: (transparent, color-on-surface, transparent),
-        active-hover: (transparent, color-on-surface, transparent),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
-    )
-) !default;
-
-// The color matrix for light Buttons
-$_tc-light-matrix: (
-    solid: (
-        normal: (color, on-color, color),
-        hover: (color-hover, on-color, color-hover),
-        focus: (color, on-color, color, app-surface),
-        focus-hover: (color-hover, on-color, color-hover, app-surface),
-        active: (color-active, on-color, color-active),
-        active-hover: (color-hover, on-color, color-hover),
-        disabled: (color-mix(in srgb, k-color(on-app-surface) 6%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent), transparent)
-    ),
-    flat: (
-        normal: (initial, color-on-surface, transparent),
-        hover: (color-subtle, color-hover, transparent),
-        focus: (initial, color-on-surface, transparent, color-subtle-active),
-        focus-hover: (color-subtle, color-hover, transparent, color-subtle-active),
-        active: (color-subtle-hover, color-hover, transparent),
-        active-hover: (color-subtle, color-hover, transparent),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
-    ),
-    outline: (
-        normal: (transparent, color-on-surface, currentColor),
-        hover: (color, on-color, color),
-        focus: (transparent, color-on-surface, color, inherit),
-        focus-hover: (color, on-color, color, inherit),
-        active: (color, on-color, color),
-        active-hover: (color, on-color, color),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent)),
-    ),
-    link: (
-        normal: (transparent, color, transparent),
-        hover: (transparent, color-hover, transparent),
-        focus: (transparent, color, color-subtle-active),
-        focus-hover: (transparent, color-hover, transparent, color-subtle-active),
-        active: (transparent, color-active, transparent),
-        active-hover: (transparent, color-hover, transparent),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
-    ),
-    clear: (
-        normal: (transparent, color-on-surface, transparent),
-        hover: (transparent, color-on-surface, transparent),
-        focus: (color-subtle, color-on-surface, transparent),
-        focus-hover: (transparent, color-on-surface, transparent),
-        active: (transparent, color-on-surface, transparent),
-        active-hover: (transparent, color-on-surface, transparent),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
-    )
-) !default;
+$kendo-button-pulsing-opacity: var( --kendo-button-pulsing-opacity, .6 ) !default;
 
 /// The theme colors map for the Button.
 /// @group button
-$kendo-button-theme-colors: () !default;
+$kendo-button-theme-colors: (
+    "base": k-color(base),
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+) !default;
 
-// The map for the base theme color
-@each $fill-mode, $ui-states in $_tc-base-matrix {
-    $kendo-button-theme-colors: map.deep-merge(
-        $kendo-button-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, base, base, $ui-states )
-    );
-}
+/// The base background of the Button.
+/// @group button
+$kendo-button-bg: var( --kendo-button-bg, k-color(base) ) !default;
+/// The base text color of the Button.
+/// @group button
+$kendo-button-text: var( --kendo-button-text, k-color(on-base) ) !default;
+/// The base border color of the Button.
+/// @group button
+$kendo-button-border: var( --kendo-button-border, k-color(border) ) !default;
+/// The base background gradient of the Button.
+/// @group button
+$kendo-button-gradient: linear-gradient( var( --kendo-button-gradient, transparent, transparent ) ) !default;
+/// The base shadow of the Button.
+/// @group button
+$kendo-button-shadow: var( --kendo-button-shadow, none ) !default;
 
-// The map for the brand theme colors
-@each $fill-mode, $ui-states in $_tc-brand-matrix {
-    @each $brand-color, $palette in $kendo-button-brand-colors {
-        $kendo-button-theme-colors: map.deep-merge(
-            $kendo-button-theme-colors,
-            k-generate-fill-mode-theme-variation( $fill-mode, $brand-color, $palette, $ui-states )
-        )
-    }
-}
+/// The base background of the hovered Button.
+/// @group button
+$kendo-button-hover-bg: var( --kendo-button-hover-bg, k-color(base-hover) ) !default;
+/// The base text color of the hovered Button.
+/// @group button
+$kendo-button-hover-text: var( --kendo-button-hover-text, k-color(on-base) ) !default;
+/// The base border color of the hovered Button.
+/// @group button
+$kendo-button-hover-border: var( --kendo-button-hover-border, k-color(border) ) !default;
 
-// The map for the warning theme colors
-@each $fill-mode, $ui-states in $_tc-warning-matrix {
-    $kendo-button-theme-colors: map.deep-merge(
-        $kendo-button-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, warning, warning, $ui-states )
-    );
-}
+/// The base background of the focused Button.
+/// @group button
+$kendo-button-focus-bg: var( --kendo-button-focus-bg, k-color(base) ) !default;
+/// The base text color of the focused Button.
+/// @group button
+$kendo-button-focus-text: var( --kendo-button-focus-text, k-color(on-base) ) !default;
+/// The base border color of the focused Button.
+/// @group button
+$kendo-button-focus-border: var( --kendo-button-focus-border, k-color(border) ) !default;
+/// The base outline color of the focused Button.
+/// @group button
+$kendo-button-focus-outline: var( --kendo-button-focus-outline, k-color(on-base) ) !default;
+/// The base background of the focused Button when hovered.
+/// @group button
+$kendo-button-focus-hover-bg: var( --kendo-button-focus-hover-bg, k-color(base-hover) ) !default;
+/// The base text color of the focused Button when hovered.
+/// @group button
+$kendo-button-focus-hover-text: var( --kendo-button-focus-hover-text, k-color(on-base) ) !default;
+/// The base border color of the focused Button when hovered.
+/// @group button
+$kendo-button-focus-hover-border: var( --kendo-button-focus-hover-border, k-color(border) ) !default;
+/// The base outline color of the focused Button when hovered.
+/// @group button
+$kendo-button-focus-hover-outline: var( --kendo-button-focus-hover-outline, k-color(on-base) ) !default;
 
-// The map for the dark theme colors
-@each $fill-mode, $ui-states in $_tc-dark-matrix {
-    $kendo-button-theme-colors: map.deep-merge(
-        $kendo-button-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, dark, dark, $ui-states )
-    );
-}
+/// The base background of the active Button.
+/// @group button
+$kendo-button-active-bg: var( --kendo-button-active-bg, k-color(base-active) ) !default;
+/// The base text color of the active Button.
+/// @group button
+$kendo-button-active-text: var( --kendo-button-active-text, k-color(on-base) ) !default;
+/// The base border color of the active Button.
+/// @group button
+$kendo-button-active-border: var( --kendo-button-active-border, k-color(border) ) !default;
+/// The base background of the active Button when hovered.
+/// @group button
+$kendo-button-active-hover-bg: var( --kendo-button-active-hover-bg, k-color(base-hover) ) !default;
+/// The base text color of the active Button when hovered.
+/// @group button
+$kendo-button-active-hover-text: var( --kendo-button-active-hover-text, k-color(on-base) ) !default;
+/// The base border color of the active Button when hovered.
+/// @group button
+$kendo-button-active-hover-border: var( --kendo-button-active-hover-border, k-color(border) ) !default;
 
-// The map for the light theme colors
-@each $fill-mode, $ui-states in $_tc-light-matrix {
-    $kendo-button-theme-colors: map.deep-merge(
-        $kendo-button-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, light, light, $ui-states )
-    );
-}
+/// The base background of the disabled Button.
+/// @group button
+$kendo-button-disabled-bg: var( --kendo-button-disabled-bg, color-mix(in srgb, k-color(on-app-surface) 6%, transparent) ) !default;
+/// The base text color of the disabled Button.
+/// @group button
+$kendo-button-disabled-text: var( --kendo-button-disabled-text, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ) !default;
+/// The base border color of the disabled Button.
+/// @group button
+$kendo-button-disabled-border: var( --kendo-button-disabled-border, transparent ) !default;
+
+/// The base background of the disabled outline Button.
+/// @group button
+$kendo-button-outline-disabled-bg: var( --kendo-button-disabled-bg, initial ) !default;
+/// The base text color of the disabled outline Button.
+/// @group button
+$kendo-button-outline-disabled-text: var( --kendo-button-disabled-text, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ) !default;
+/// The base border color of the disabled outline Button.
+/// @group button
+$kendo-button-outline-disabled-border: var( --kendo-button-disabled-border, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ) !default;
+
+/// The base background of the disabled flat Button.
+/// @group button
+$kendo-button-flat-disabled-bg: var( --kendo-button-disabled-bg, initial ) !default;
+/// The base text color of the disabled flat Button.
+/// @group button
+$kendo-button-flat-disabled-text: var( --kendo-button-disabled-text, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ) !default;
+/// The base border color of the disabled flat Button.
+/// @group button
+$kendo-button-flat-disabled-border: var( --kendo-button-disabled-border, initial ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/button/_variables.scss" with (
+    $kendo-button-border-width: $kendo-button-border-width,
+    $kendo-button-sm-padding-x: $kendo-button-sm-padding-x,
+    $kendo-button-md-padding-x: $kendo-button-md-padding-x,
+    $kendo-button-lg-padding-x: $kendo-button-lg-padding-x,
+    $kendo-button-sm-padding-y: $kendo-button-sm-padding-y,
+    $kendo-button-md-padding-y: $kendo-button-md-padding-y,
+    $kendo-button-lg-padding-y: $kendo-button-lg-padding-y,
+    $kendo-button-sm-font-size: $kendo-button-sm-font-size,
+    $kendo-button-md-font-size: $kendo-button-md-font-size,
+    $kendo-button-lg-font-size: $kendo-button-lg-font-size,
+    $kendo-button-sm-line-height: $kendo-button-sm-line-height,
+    $kendo-button-md-line-height: $kendo-button-md-line-height,
+    $kendo-button-lg-line-height: $kendo-button-lg-line-height,
+    $kendo-button-font-family: $kendo-button-font-family,
+    $kendo-button-font-weight: $kendo-button-font-weight,
+    $kendo-button-sizes: $kendo-button-sizes,
+    $kendo-button-pulsing-opacity: $kendo-button-pulsing-opacity,
+    $kendo-button-theme-colors: $kendo-button-theme-colors,
+    $kendo-button-bg: $kendo-button-bg,
+    $kendo-button-text: $kendo-button-text,
+    $kendo-button-border: $kendo-button-border,
+    $kendo-button-gradient: $kendo-button-gradient,
+    $kendo-button-shadow: $kendo-button-shadow,
+    $kendo-button-hover-bg: $kendo-button-hover-bg,
+    $kendo-button-hover-text: $kendo-button-hover-text,
+    $kendo-button-hover-border: $kendo-button-hover-border,
+    $kendo-button-active-bg: $kendo-button-active-bg,
+    $kendo-button-active-text: $kendo-button-active-text,
+    $kendo-button-active-border: $kendo-button-active-border,
+    $kendo-button-disabled-bg: $kendo-button-disabled-bg,
+    $kendo-button-disabled-text: $kendo-button-disabled-text,
+    $kendo-button-disabled-border: $kendo-button-disabled-border
+);

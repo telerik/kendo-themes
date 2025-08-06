@@ -1,31 +1,30 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/expansion-panel/_theme.scss" as *;
 
 @mixin kendo-expander--theme() {
 
-    .k-expander {
-        @include fill(
-            var( --kendo-expander-text, #{$kendo-expander-text} ),
-            var( --kendo-expander-bg, #{$kendo-expander-bg} ),
-            var( --kendo-expander-border, #{$kendo-expander-border} ),
-        );
+    @include kendo-expander--theme-base();
 
+    .k-expander {
         &.k-expanded {
-            background-color: var( --kendo-expander-expanded-bg, #{$kendo-expander-expanded-bg} );
+            background-color: $kendo-expander-expanded-bg;
         }
 
-        &.k-focus{
-            background-color: var( --kendo-expander-focus-bg, #{$kendo-expander-focus-bg} );
+        &.k-focus,
+        &:focus {
+            box-shadow: none;
+            background-color: $kendo-expander-focus-bg;
 
             &::after {
-                outline-color: var( --kendo-expander-focus-outline, #{$kendo-expander-focus-outline} );
+                outline-color: $kendo-expander-focus-outline;
             }
         }
 
         &:disabled,
         &.k-disabled {
             @include fill(
-                $color: var( --kendo-expander-disabled-text, #{$kendo-expander-disabled-text} )
+                $color: $kendo-expander-disabled-text
             );
 
             .k-expander-header,
@@ -33,36 +32,14 @@
             .k-expander-sub-title,
             .k-expander-indicator {
                 @include fill(
-                    $color: var( --kendo-expander-disabled-text, #{$kendo-expander-disabled-text} ),
-                    $bg: var( --kendo-expander-disabled-bg, #{$kendo-expander-disabled-bg} )
+                    $color: $kendo-expander-disabled-text,
+                    $bg: $kendo-expander-disabled-bg
                 );
             }
         }
     }
 
-    .k-expander-header {
-        @include fill(
-            var( --kendo-expander-header-text, #{$kendo-expander-header-text} ),
-            var( --kendo-expander-header-bg, #{$kendo-expander-header-bg} )
-        );
-        outline: none;
-
-        &:hover,
-        &.k-hover {
-            background-color: var( --kendo-expander-header-hover-bg, #{$kendo-expander-header-hover-bg} );
-        }
-    }
-
-    .k-expander-title {
-        color: var( --kendo-expander-title-text, #{$kendo-expander-title-text} );
-    }
-
-    .k-expander-sub-title {
-        color: var( --kendo-expander-header-sub-title-text, #{$kendo-expander-header-sub-title-text} );
-    }
-
     .k-expander-indicator {
-        color: var( --kendo-expander-indicator-text, #{$kendo-expander-indicator-text} );
+        color: $kendo-expander-indicator-text;
     }
-
 }

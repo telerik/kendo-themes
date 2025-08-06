@@ -2,177 +2,43 @@
 @use "../core/_index.scss" as *;
 @use "../button/_variables.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/pager/_layout.scss" as *;
 
 @mixin kendo-pager--layout() {
+    @include kendo-pager--layout-base();
 
-    .k-pager {
-        padding-inline: var( --kendo-pager-padding-x, 0 );
-        padding-block: var( --kendo-pager-padding-y, 0 );
-        border-width: var( --kendo-pager-border-width, #{$kendo-pager-border-width} );
-        border-style: solid;
-        box-sizing: border-box;
-        outline: 0;
-        font-family: var( --kendo-pager-font-family, #{$kendo-pager-font-family} );
-        font-size: var( --kendo-pager-font-size, #{$kendo-pager-font-size} );
-        line-height: var( --kendo-pager-line-height, #{$kendo-pager-line-height} );
-        white-space: nowrap;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: var( --kendo-pager-spacing, 0 );
-        position: relative;
-        overflow: hidden;
-        cursor: default;
-        flex: 0 0 auto;
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-    }
-
-    .k-pager-responsive {
-        flex-wrap: nowrap;
-    }
-
-    // Base pager section
-    %base-pager-section {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-
-    // Base pager item
-    %base-pager-item {
-        color: inherit;
-        text-align: center;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-
-        &:hover {
-            z-index: 2;
-        }
-    }
-
-
-    // Pager items
     .k-pager-nav {
-        @extend %base-pager-item !optional;
-        @include border-radius( var( --kendo-pager-item-border-radius, #{$kendo-pager-item-border-radius} ) );
+        @include border-radius( $kendo-pager-item-border-radius );
     }
 
-
-    // Pager numbers
     .k-pager-numbers-wrap {
-        display: flex;
-        flex-direction: row;
-        position: relative;
 
         select.k-dropdown-list {
-            width: var( --kendo-pager-dropdown-width, #{$kendo-pager-dropdown-width} );
+            width: $kendo-pager-dropdown-width;
         }
     }
+
     .k-pager-numbers {
-        display: flex;
-        flex-direction: row;
-
-        // Selected state
-        .k-selected {
-            cursor: inherit;
-            z-index: 2;
-        }
-
         .k-button {
-            padding-inline: var( --kendo-button-padding-y );
-
             .k-button-text {
                 min-width: calc( var( --kendo-line-height ) * 1em );
             }
         }
     }
 
+    // Sizes
+    @each $size, $size-props in $kendo-button-sizes {
+        $_padding-y: map.get( $size-props, padding-y );
 
-    // Spacing between items
-    .k-pager-nav + .k-pager-nav,
-    .k-pager-nav + .k-pager-numbers-wrap,
-    .k-pager-numbers-wrap + .k-pager-nav {
-        @if ($kendo-pager-item-spacing) {
-            margin-inline-start: var( --kendo-pager-item-spacing, #{$kendo-pager-item-spacing} );
+        .k-pager-numbers .k-button-#{$size} {
+            padding-inline: $_padding-y;
         }
     }
 
-
-    // Pager input
-    .k-pager-input {
-        @extend %base-pager-section !optional;
-        gap: 1ex;
-
-        .k-textbox,
-        .k-numerictextbox {
-            margin-block: 0;
-            width: var( --kendo-pager-input-width, #{$kendo-pager-input-width} );
-        }
-    }
-
-
-    // Pager sizes
     .k-pager-sizes {
-        @extend %base-pager-section !optional;
-        gap: 1ex;
-
         .k-dropdown-list,
         > select {
-            width: var( --kendo-pager-dropdown-width, #{$kendo-pager-dropdown-width} );
-        }
-
-        .k-input-inner,
-        .k-input-value-text {
-            text-overflow: clip;
+            width: $kendo-pager-dropdown-width;
         }
     }
-
-
-    // Pager info
-    .k-pager-info {
-        @extend %base-pager-section !optional;
-        text-align: end;
-        justify-content: flex-end;
-        flex: 1 1 0%;
-        order: 9;
-    }
-
-
-    // Pager refresh
-    .k-pager-refresh {
-        margin-inline-start: auto;
-        color: inherit;
-        order: 10;
-    }
-
-    // Pager sizes
-    @each $size, $size-props in $kendo-pager-sizes {
-        $_padding-x: map.get($size-props, padding-x);
-        $_padding-y: map.get($size-props, padding-y);
-        $_item-group-spacing: map.get($size-props, item-group-spacing);
-
-        .k-pager-#{$size} {
-            --kendo-pager-padding-x: var( --kendo-pager-#{$size}-padding-x, #{$_padding-x} );
-            --kendo-pager-padding-y: var( --kendo-pager-#{$size}-padding-y, #{$_padding-y} );
-            --kendo-pager-spacing: var( --kendo-pager-#{$size}-spacing, #{$_item-group-spacing} );
-
-            .k-pager-input,
-            select.k-dropdown-list {
-                margin-inline-start: var( --kendo-pager-input-margin-start, #{$_item-group-spacing} );
-                margin-inline-end: var( --kendo-pager-input-margin-end, #{$_item-group-spacing} );
-            }
-        }
-    }
-
 }

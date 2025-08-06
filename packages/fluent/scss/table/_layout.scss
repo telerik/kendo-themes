@@ -1,103 +1,13 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/table/_layout.scss" as *;
 
 @mixin kendo-table--layout() {
+    @include kendo-table--layout-base();
 
-    // Table
-    .k-table {
-        width: 100%;
-        max-width: none;
-        border-width: var( --kendo-table-border-width, #{$kendo-table-border-width} );
-        border-style: solid;
-        font-size: var( --kendo-table-font-size, var( --kendo-font-size, inherit ) );
-        line-height: var( --kendo-table-line-height, var( --kendo-line-height, inherit ) );
-        text-align: start;
-        border-collapse: collapse;
-        border-spacing: 0;
-        empty-cells: show;
-        outline: none;
-    }
-
-    // Data table
-    .k-data-table {
-        border-width: var( --kendo-table-border-width, #{$kendo-table-border-width} );
-        border-style: solid;
-
-        .k-table {
-            table-layout: fixed;
-        }
-
-        .k-table-th {
-            border-block-start-width: 0;
-        }
-    }
-
-    // Table native parts
-    .k-table-thead,
-    .k-table-tbody,
-    .k-table-tfoot,
-    .k-table-row,
-    .k-table-alt-row {
-        border-color: inherit;
-        text-align: inherit;
-    }
-
-    .k-table-th,
-    .k-table-td {
-        padding-inline: var( --kendo-table-cell-padding-x, 0 );
-        padding-block: var( --kendo-table-cell-padding-y, 0 );
-        border-block-width: var( --kendo-table-cell-horizontal-border-width, #{$kendo-table-cell-horizontal-border-width} );
-        border-inline-width: var( --kendo-table-cell-vertical-border-width, #{$kendo-table-cell-vertical-border-width} );
-        border-style: solid;
-        border-color: inherit;
-        box-sizing: border-box;
-        font-weight: normal;
-        text-align: inherit;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        display: table-cell;
-        overflow: hidden;
-        position: relative;
-
-        &:first-child {
-            border-inline-start-width: 0;
-        }
-    }
     .k-table-th {
-        font-weight: var( --kendo-table-header-font-weight, #{$kendo-table-header-font-weight} );
-    }
-
-    // Table header
-    .k-table-header {
-        padding-inline-end: var( --kendo-scrollbar-width, #{$kendo-scrollbar-width} );
-        border-block-start-width: 0;
-        border-block-end-width: 1px;
-        border-inline-width: 0;
-        border-style: solid;
-        box-sizing: border-box;
-
-        .k-table {
-            border-width: 0;
-        }
-    }
-
-    .k-table-header-wrap {
-        margin-inline-end: calc( var( --kendo-table-border-width, #{$kendo-table-border-width} ) * -1 );
-        width: 100%;
-        border-block-width: 0;
-        border-inline-start-width: 0;
-        border-inline-end-width: var( --kendo-table-cell-vertical-border-width, #{$kendo-table-cell-vertical-border-width} );
-        border-style: solid;
-        border-color: inherit;
-        overflow: hidden;
-    }
-
-    .k-table-header,
-    .k-table-header-wrap {
-        > .k-table {
-            margin-block-end: calc( var( --kendo-table-border-width, #{$kendo-table-border-width} ) * -1 );
-        }
+        font-weight: $kendo-table-header-font-weight;
     }
 
     .k-table-group-sticky-header,
@@ -114,33 +24,8 @@
         }
     }
 
-
-    // Table list
     .k-table-list {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        max-width: none;
-        border-width: 0;
-        display: table;
-        border-collapse: collapse;
-        border-spacing: 0;
-        table-layout: fixed;
-        empty-cells: show;
-        list-style: none;
-        outline: none;
 
-        .k-table-row {
-            position: relative;
-        }
-
-        .k-table-row,
-        .k-table-group-row {
-            width: 100%;
-            box-sizing: border-box;
-            display: table-row;
-        }
-        .k-table-row:first-child .k-table-td,
         .k-table-row:last-child .k-table-td {
             border-block-width: 0;
         }
@@ -155,141 +40,13 @@
             left: 0;
             right: 0;
         }
-
-        .k-table-th,
-        .k-table-td {
-            vertical-align: middle;
-        }
-
-        .k-table-group-row {
-            position: sticky;
-
-            &::before {
-                content: "\200b";
-                padding-inline: var( --kendo-table-group-row-padding-x, 0 );
-                padding-block: var( --kendo-table-group-row-padding-y, 0 );
-                width: 0;
-                display: block;
-                overflow: hidden;
-            }
-
-            .k-table-th {
-                width: 100%;
-                border-block-end-width: 1px;
-                border-color: inherit;
-                color: inherit;
-                background-color: inherit;
-                position: absolute;
-                top: 0;
-            }
-        }
-
-        .k-table-spacer-td {
-            padding: 0 !important; // stylelint-disable-line declaration-no-important
-            width: 0 !important; // stylelint-disable-line declaration-no-important
-            border-left-width: 0 !important; // stylelint-disable-line declaration-no-important
-            border-right-width: 0 !important; // stylelint-disable-line declaration-no-important
-        }
-
-        .k-table-group-td {
-            padding: 0 !important; // stylelint-disable-line declaration-no-important
-            width: 0 !important; // stylelint-disable-line declaration-no-important
-            border-left-width: 0 !important; // stylelint-disable-line declaration-no-important
-            border-right-width: 0 !important; // stylelint-disable-line declaration-no-important
-            overflow: visible; // stylelint-disable-line declaration-no-important
-
-            > span {
-                padding-inline: var( --kendo-table-group-label-padding-x, 0 );
-                padding-block: var( --kendo-table-group-label-padding-y, 0 );
-                font-size: var( --kendo-table-group-label-font-size, 1rem );
-                position: absolute;
-                inset-block-start: 0;
-                inset-inline-end: 0;
-            }
+        .k-table-group-row .k-table-th {
+            border-block-end-width: 1px;
         }
     }
 
-    // Virtualization
-    .k-virtual-table .k-table-row,
-    .k-virtual-table .k-table-group-row {
-        position: absolute;
-        width: 100%;
-    }
-
-    // Table scroller
-    .k-table-scroller {
-        position: relative;
-        overflow: auto;
-
-        > .k-table {
-            border-width: 0;
-        }
-    }
-
-    // Table footer
-    .k-table-footer {
-        padding-inline-end: var( --kendo-scrollbar-width, #{$kendo-scrollbar-width} );
-        border-block-start-width: 1px;
-        border-block-end-width: 0;
-        border-inline-width: 0;
-        border-style: solid;
-        box-sizing: border-box;
-
-        .k-table {
-            border-width: 0;
-        }
-
-        .k-table-td {
-            border-block-width: 0;
-        }
-    }
-    .k-table-footer-wrap {
-        margin-inline-end: calc( var( --kendo-table-border-width, #{$kendo-table-border-width} ) * -1 );
-        width: 100%;
+    .k-table-footer .k-table-td {
         border-block-width: 0;
-        border-inline-start-width: 0;
-        border-inline-end-width:  var( --kendo-table-cell-vertical-border-width, #{$kendo-table-cell-vertical-border-width} );
-        border-style: solid;
-        border-color: inherit;
-        overflow: hidden;
-    }
-
-    // Sizes
-    @each $size, $size-props in $kendo-table-sizes {
-        $_font-size: map.get( $size-props, font-size);
-        $_line-height: map.get( $size-props, line-height);
-
-        $_cell-padding-x: map.get( $size-props, cell-padding-x);
-        $_cell-padding-y: map.get( $size-props, cell-padding-y);
-
-        $_group-row-padding-x: 0;
-        $_group-row-padding-y: $_cell-padding-y;
-
-        $_group-label-padding-x: map.get( $size-props, group-label-padding-x );
-        $_group-label-padding-y: map.get( $size-props, group-label-padding-y );
-        $_group-label-font-size: map.get( $size-props, group-label-font-size );
-
-        .k-table-#{$size} {
-            --kendo-table-font-size: var( --kendo-table-#{size}-font-size, #{$_font-size} );
-            --kendo-table-line-height: var( --kendo-table-#{size}-line-height, #{$_line-height} );
-        }
-
-        .k-table-#{$size} .k-table-th,
-        .k-table-#{$size} .k-table-td {
-            --kendo-table-cell-padding-x: var( --kendo-table-#{$size}-cell-padding-x, #{$_cell-padding-x} );
-            --kendo-table-cell-padding-y: var( --kendo-table-#{$size}-cell-padding-y, #{$_cell-padding-y} );
-        }
-
-        .k-table-#{$size} .k-table-list .k-table-group-td > span {
-            --kendo-table-group-label-padding-x: var( --kendo-table-#{$size}-group-label-padding-x, #{$_group-label-padding-x} );
-            --kendo-table-group-label-padding-y: var( --kendo-table-#{$size}-group-label-padding-y, #{$_group-label-padding-y} );
-            --kendo-table-group-label-font-size: var( --kendo-table-#{$size}-group-label-padding-y, #{$_group-label-font-size} );
-        }
-
-        .k-table-#{$size} .k-table-list .k-table-group-row::before {
-            --kendo-table-group-row-padding-x: var( --kendo-table-#{$size}-group-row-padding-x, #{$_group-row-padding-x} );
-            --kendo-table-group-row-padding-y: var( --kendo-table-#{$size}-group-row-padding-y, #{$_group-row-padding-y} );
-        }
     }
 
 }

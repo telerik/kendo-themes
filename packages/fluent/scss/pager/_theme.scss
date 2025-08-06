@@ -1,32 +1,24 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/pager/_theme.scss" as *;
 
 @mixin kendo-pager--theme() {
+    @include kendo-pager--theme-base();
 
     .k-pager {
-        @include fill(
-            var( --kendo-pager-text, #{$kendo-pager-text} ),
-            var( --kendo-pager-bg, #{$kendo-pager-bg} ),
-            var( --kendo-pager-border, #{$kendo-pager-border} )
-        );
-
         &:focus,
         &.k-focus {
-            --kendo-pager-text: var( --kendo-pager-focus-text, #{$kendo-pager-focus-text} );
-            --kendo-pager-bg: var( --kendo-pager-focus-bg, #{$kendo-pager-focus-bg} );
-            --kendo-pager-border: var( --kendo-pager-focus-border, #{$kendo-pager-focus-border} );
+            color: $kendo-pager-focus-text;
+            background-color: $kendo-pager-focus-bg;
+            border-color: $kendo-pager-focus-border;
         }
     }
 
-    // Pager sizes
     .k-pager-sizes {
-        color: var( --kendo-pager-sizes-label-text, #{$kendo-pager-sizes-label-text} );
+        color: $kendo-pager-sizes-label-text;
     }
 
-
-    // Pager info
     .k-pager-info {
-        color: var( --kendo-pager-info-label-text, #{$kendo-pager-info-label-text} );
+        color: $kendo-pager-info-label-text;
     }
-
 }

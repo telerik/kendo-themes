@@ -3,342 +3,342 @@
 
 /// The width of the border around the Calendar.
 /// @group calendar
-$kendo-calendar-border-width: 1px !default;
+$kendo-calendar-border-width: var( --kendo-calendar-border-width, 1px ) !default;
 /// The font family of the Calendar.
 /// @group calendar
-$kendo-calendar-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-calendar-font-family: var( --kendo-calendar-font-family, var(--kendo-font-family, inherit) ) !default;
 /// The font size of the Calendar.
 /// @group calendar
-$kendo-calendar-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-calendar-font-size: var( --kendo-calendar-font-size, var(--kendo-font-size, inherit) ) !default;
 /// The line height of the Calendar.
 /// @group calendar
-$kendo-calendar-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-calendar-line-height: var( --kendo-calendar-line-height, var(--kendo-line-height, normal) ) !default;
 /// The border-radius of the Calendar.
 /// @group calendar
-$kendo-calendar-border-radius: 0 !default;
+$kendo-calendar-border-radius: var( --kendo-calendar-border-radius, 0 ) !default;
 
 /// The size of the calendar cell.
 /// @group calendar
-$kendo-calendar-cell-size: 28px !default;
+$kendo-calendar-cell-size: var( --kendo-calendar-cell-size, 28px ) !default;
 
 /// The background color of the Calendar.
 /// @group calendar
-$kendo-calendar-bg: k-color(surface-alt) !default;
+$kendo-calendar-bg: var( --kendo-calendar-bg, k-color(surface-alt) ) !default;
 /// The text color of the Calendar.
 /// @group calendar
-$kendo-calendar-text: k-color(on-app-surface) !default;
+$kendo-calendar-text: var( --kendo-calendar-text, k-color(on-app-surface) ) !default;
 /// The border color of the Calendar.
 /// @group calendar
-$kendo-calendar-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-calendar-border: var( --kendo-calendar-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
 
 /// The horizontal padding of the calendar header.
 /// @group calendar
-$kendo-calendar-header-padding-x: k-spacing(1) !default;
+$kendo-calendar-header-padding-x: var( --kendo-calendar-header-padding-x, k-spacing(1) ) !default;
 /// The vertical padding of the calendar header.
 /// @group calendar
-$kendo-calendar-header-padding-y: k-spacing(1) !default;
+$kendo-calendar-header-padding-y: var( --kendo-calendar-header-padding-y, k-spacing(1) ) !default;
 /// Width of the bottom border of the calendar header.
 /// @group calendar
-$kendo-calendar-header-border-width: 1px !default;
-$kendo-calendar-header-min-width: ($kendo-calendar-cell-size * 8) !default;
+$kendo-calendar-header-border-width: var( --kendo-calendar-header-border-width, 1px ) !default;
+$kendo-calendar-header-min-width: var( --kendo-calendar-header-min-width, calc(#{$kendo-calendar-cell-size} * 8) ) !default;
 
 /// The background color of the calendar header.
 /// @group calendar
-$kendo-calendar-header-bg: k-color(surface) !default; // $kendo-component-header-bg
+$kendo-calendar-header-bg: var( --kendo-calendar-header-bg, k-color(surface) ) !default; // $kendo-component-header-bg
 /// The text color of the calendar header.
 /// @group calendar
-$kendo-calendar-header-text: $kendo-calendar-text !default; // $kendo-component-header-text
+$kendo-calendar-header-text: var( --kendo-calendar-header-text, #{$kendo-calendar-text} ) !default; // $kendo-component-header-text
 /// The border color of the calendar header.
 /// @group calendar
-$kendo-calendar-header-border: $kendo-calendar-border !default; // $kendo-component-header-border
+$kendo-calendar-header-border: var( --kendo-calendar-header-border, #{$kendo-calendar-border} ) !default; // $kendo-component-header-border
 
 /// The spacing between the navigation buttons of the Calendar.
 /// @group calendar
-$kendo-calendar-nav-gap: k-spacing(0) !default;
+$kendo-calendar-nav-gap: var( --kendo-calendar-nav-gap, k-spacing(0) ) !default;
 
 /// The horizontal padding of the calendar footer.
 /// @group calendar
-$kendo-calendar-footer-padding-x: k-spacing(1) !default;
+$kendo-calendar-footer-padding-x: var( --kendo-calendar-footer-padding-x, k-spacing(1) ) !default;
 /// The vertical padding of the calendar footer.
 /// @group calendar
-$kendo-calendar-footer-padding-y: k-spacing(1) !default;
+$kendo-calendar-footer-padding-y: var( --kendo-calendar-footer-padding-y, k-spacing(1) ) !default;
 
 /// The horizontal padding of the calendar cell.
 /// @group calendar
-$kendo-calendar-cell-padding-x: k-spacing(1.5) !default;
+$kendo-calendar-cell-padding-x: var( --kendo-calendar-cell-padding-x, k-spacing(1) ) !default;
 /// The vertical padding of the calendar cell.
 /// @group calendar
-$kendo-calendar-cell-padding-y: $kendo-calendar-cell-padding-x !default;
+$kendo-calendar-cell-padding-y: var( --kendo-calendar-cell-padding-y, #{$kendo-calendar-cell-padding-x} ) !default;
 /// The border radius of the calendar cell.
 /// @group calendar
-$kendo-calendar-cell-border-radius: var( --kendo-border-radius-md, 0) !default;
+$kendo-calendar-cell-border-radius: var( --kendo-calendar-cell-border-radius, var( --kendo-calendar-border-radius-md, var( --kendo-border-radius-md, 0) ) ) !default;
 
 /// The horizontal padding of the calendar header cell.
 /// @group calendar
-$kendo-calendar-header-cell-padding-x: k-spacing(0) !default;
+$kendo-calendar-header-cell-padding-x: var( --kendo-calendar-header-cell-padding-x, k-spacing(0) ) !default;
 /// Th vertical padding of the calendar header cell.
 /// @group calendar
-$kendo-calendar-header-cell-padding-y: k-spacing(0) !default;
+$kendo-calendar-header-cell-padding-y: var( --kendo-calendar-header-cell-padding-y, k-spacing(0) ) !default;
 /// The width of the calendar header cell.
 /// @group calendar
-$kendo-calendar-header-cell-width: $kendo-calendar-cell-size !default;
+$kendo-calendar-header-cell-width: var( --kendo-calendar-header-cell-width, #{$kendo-calendar-cell-size} ) !default;
 /// The height of the calendar header cell.
 /// @group calendar
-$kendo-calendar-header-cell-height: $kendo-calendar-cell-size !default;
+$kendo-calendar-header-cell-height: var( --kendo-calendar-header-cell-height, #{$kendo-calendar-cell-size} ) !default;
 /// The font size of the calendar header cell.
 /// @group calendar
-$kendo-calendar-header-cell-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-calendar-header-cell-font-size: var( --kendo-calendar-header-cell-font-size, var( --kendo-calendar-font-size-sm, var( --kendo-font-size-sm, inherit ) ) ) !default;
 /// The line height of the calendar header cell.
 /// @group calendar
-$kendo-calendar-header-cell-line-height: 2 !default;
+$kendo-calendar-header-cell-line-height: var( --kendo-calendar-header-cell-line-height, 2 ) !default;
 /// The text color of the calendar header cell.
 /// @group calendar
-$kendo-calendar-header-cell-text: inherit !default;
+$kendo-calendar-header-cell-text: var( --kendo-calendar-header-cell-text, inherit ) !default;
 
 /// The horizontal padding of the calendar captions.
 /// @group calendar
-$kendo-calendar-caption-padding-x: k-spacing(3) !default;
+$kendo-calendar-caption-padding-x: var( --kendo-calendar-caption-padding-x, k-spacing(3) ) !default;
 /// The vertical padding of the calendar captions.
 /// @group calendar
-$kendo-calendar-caption-padding-y: k-spacing(1) !default;
+$kendo-calendar-caption-padding-y: var( --kendo-calendar-caption-padding-y, k-spacing(1) ) !default;
 /// The height of the calendar captions.
 /// @group calendar
-$kendo-calendar-caption-height: $kendo-calendar-cell-size !default;
+$kendo-calendar-caption-height: var( --kendo-calendar-caption-height, #{$kendo-calendar-cell-size} ) !default;
 /// The font size of the calendar captions.
 /// @group calendar
-$kendo-calendar-caption-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-calendar-caption-font-size: var( --kendo-calendar-caption-font-size, var( --kendo-calendar-font-size-sm, var( --kendo-font-size-sm, inherit ) ) ) !default;
 /// The line height of the calendar captions.
 /// @group calendar
-$kendo-calendar-caption-line-height: normal !default;
+$kendo-calendar-caption-line-height: var( --kendo-calendar-caption-line-height, normal ) !default;
 /// Font weight of the calendar captions.
 /// @group calendar
-$kendo-calendar-caption-font-weight: bold !default;
+$kendo-calendar-caption-font-weight: var( --kendo-calendar-caption-font-weight, bold ) !default;
 /// The text color of the calendar captions.
 /// @group calendar
-$kendo-calendar-caption-color: k-color(subtle) !default;
+$kendo-calendar-caption-color: var( --kendo-calendar-caption-color, k-color(subtle) ) !default;
 
 /// The width of the Calendar view.
 /// @group calendar
-$kendo-calendar-view-width: ($kendo-calendar-cell-size * 7) !default;
+$kendo-calendar-view-width: var( --kendo-calendar-view-width, calc(#{$kendo-calendar-cell-size} * 7) ) !default;
 /// The height of the Calendar view.
 /// @group calendar
-$kendo-calendar-view-height: ($kendo-calendar-cell-size * 7) !default;
+$kendo-calendar-view-height: var( --kendo-calendar-view-height, calc(#{$kendo-calendar-cell-size} * 7) ) !default;
 
 /// The bottom padding of Calendar views.
 /// @group calendar
-$kendo-calendar-view-padding-block-end: k-spacing(1) !default;
+$kendo-calendar-view-padding-block-end: var( --kendo-calendar-view-padding-block-end, k-spacing(1) ) !default;
 /// The spacing between the views in the multiview Calendar.
 /// @group calendar
-$kendo-calendar-view-gap: k-spacing(4) !default;
+$kendo-calendar-view-gap: var( --kendo-calendar-view-gap, k-spacing(4) ) !default;
 
 /// The background color of the calendar weekend cell.
 /// @group calendar
-$kendo-calendar-weekend-bg: inherit !default;
+$kendo-calendar-weekend-bg: var( --kendo-calendar-weekend-bg, inherit ) !default;
 /// The text color of the calendar weekend cell.
 /// @group calendar
-$kendo-calendar-weekend-text: inherit !default;
+$kendo-calendar-weekend-text: var( --kendo-calendar-weekend-text, inherit ) !default;
 
 /// The text color of the calendar today cell.
 /// @group calendar
-$kendo-calendar-today-text: k-color(app-surface) !default; // use contrast function
+$kendo-calendar-today-text: var( --kendo-calendar-today-text, k-color(app-surface) ) !default; // use contrast function
 /// The background color of the calendar today cell.
 /// @group calendar
-$kendo-calendar-today-bg: k-color(primary) !default;
+$kendo-calendar-today-bg: var( --kendo-calendar-today-bg, k-color(primary) ) !default;
 /// The text color of the calendar today cell when hovered.
 /// @group calendar
-$kendo-calendar-today-hover-text: k-color(app-surface) !default;  // use contrast function
+$kendo-calendar-today-hover-text: var( --kendo-calendar-today-hover-text, k-color(app-surface) ) !default;  // use contrast function
 /// The background color of the calendar today cell when hovered.
 /// @group calendar
-$kendo-calendar-today-hover-bg: k-color(primary-hover) !default;
+$kendo-calendar-today-hover-bg: var( --kendo-calendar-today-hover-bg, k-color(primary-hover) ) !default;
 /// The border radius of the calendar today cell.
 /// @group calendar
-$kendo-calendar-today-border-radius: 9999px !default;
+$kendo-calendar-today-border-radius: var( --kendo-calendar-today-border-radius, 9999px ) !default;
 /// The font weight of the current day in the Calendar.
 /// @group calendar
-$kendo-calendar-today-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+$kendo-calendar-today-font-weight: var( --kendo-calendar-today-font-weight, var( --kendo-calendar-font-weight-bold, var( --kendo-font-weight-bold, normal ) ) ) !default;
 /// The box shadow of the current day in the Calendar.
 /// @group calendar
-$kendo-calendar-today-box-shadow: null !default;
+$kendo-calendar-today-box-shadow: var( --kendo-calendar-today-box-shadow, null ) !default;
 
 /// The background color of the calendar week number cell.
 /// @group calendar
-$kendo-calendar-week-number-bg: inherit !default;
+$kendo-calendar-week-number-bg: var( --kendo-calendar-week-number-bg, inherit ) !default;
 /// The text color of the calendar week number cell.
 /// @group calendar
-$kendo-calendar-week-number-text: k-color(subtle) !default;
+$kendo-calendar-week-number-text: var( --kendo-calendar-week-number-text, k-color(subtle) ) !default;
 
 /// The background color of the other months calendar cells.
 /// @group calendar
-$kendo-calendar-other-month-bg: inherit !default;
+$kendo-calendar-other-month-bg: var( --kendo-calendar-other-month-bg, inherit ) !default;
 /// The text color of the other months calendar cells.
 /// @group calendar
-$kendo-calendar-other-month-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
+$kendo-calendar-other-month-text: var( --kendo-calendar-other-month-text, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ) !default;
 
 /// The background color of the calendar cells when hovered.
 /// @group calendar
-$kendo-calendar-cell-hover-bg: k-color(base-hover) !default;
+$kendo-calendar-cell-hover-bg: var( --kendo-calendar-cell-hover-bg, k-color(base-hover) ) !default;
 /// The text color of the calendar cells when hovered.
 /// @group calendar
-$kendo-calendar-cell-hover-text: k-color(on-base) !default;
+$kendo-calendar-cell-hover-text: var( --kendo-calendar-cell-hover-text, k-color(on-base) ) !default;
 
 /// The background color of the selected calendar cell.
 /// @group calendar
-$kendo-calendar-cell-selected-bg: k-color(base-active) !default;
+$kendo-calendar-cell-selected-bg: var( --kendo-calendar-cell-selected-bg, k-color(base-active) ) !default;
 /// The text color of the selected calendar cell.
 /// @group calendar
-$kendo-calendar-cell-selected-text: k-color(on-base) !default;
+$kendo-calendar-cell-selected-text: var( --kendo-calendar-cell-selected-text, k-color(on-base) ) !default;
 /// The border color of the selected calendar cell.
 /// @group calendar
-$kendo-calendar-cell-selected-border: color-mix(in srgb, k-color(border-alt) 76%, transparent) !default;
+$kendo-calendar-cell-selected-border: var( --kendo-calendar-cell-selected-border, color-mix(in srgb, k-color(border-alt) 76%, transparent) ) !default;
 /// The shadow of the selected calendar cell.
 /// @group calendar
-$kendo-calendar-cell-selected-shadow: inset 0 0 0 1px $kendo-calendar-cell-selected-border !default;
+$kendo-calendar-cell-selected-shadow: var( --kendo-calendar-cell-selected-shadow, inset 0 0 0 1px #{$kendo-calendar-cell-selected-border} ) !default;
 
 /// The background color of the selected calendar cell when hovered.
 /// @group calendar
-$kendo-calendar-cell-selected-hover-bg: k-color(base-subtle-active) !default;
+$kendo-calendar-cell-selected-hover-bg: var( --kendo-calendar-cell-selected-hover-bg, k-color(base-subtle-active) ) !default;
 /// The text color of the selected calendar cell when hovered.
 /// @group calendar
-$kendo-calendar-cell-selected-hover-text: k-color(on-base) !default;
+$kendo-calendar-cell-selected-hover-text: var( --kendo-calendar-cell-selected-hover-text, k-color(on-base) ) !default;
 
 /// The shadow of the selected calendar cell when focused.
 /// @group calendar
-$kendo-calendar-cell-focus-shadow: inset 0 0 0 1px k-color(base-emphasis) !default;
+$kendo-calendar-cell-focus-shadow: var( --kendo-calendar-cell-focus-shadow, inset 0 0 0 1px k-color(base-emphasis) ) !default;
 /// The shadow of the selected calendar cell when selected and focused.
 /// @group calendar
-$kendo-calendar-cell-selected-focus-shadow: $kendo-calendar-cell-focus-shadow !default;
+$kendo-calendar-cell-selected-focus-shadow: var( --kendo-calendar-cell-selected-focus-shadow, #{$kendo-calendar-cell-focus-shadow} ) !default;
 
 
 // Calendar navigation
 
 /// The width of the navigation in the infinite Calendar.
 /// @group calendar
-$kendo-calendar-navigation-width: 5em !default;
+$kendo-calendar-navigation-width: var( --kendo-calendar-navigation-width, 5em ) !default;
 /// The height of the navigation items in the infinite Calendar.
 /// @group calendar
-$kendo-calendar-navigation-item-height: 2em !default;
+$kendo-calendar-navigation-item-height: var( --kendo-calendar-navigation-item-height, 2em ) !default;
 
 /// The background color of the navigation in the infinite Calendar.
 /// @group calendar
-$kendo-calendar-navigation-bg: k-color(surface) !default;
+$kendo-calendar-navigation-bg: var( --kendo-calendar-navigation-bg, k-color(surface) ) !default;
 /// The text color of the navigation in the infinite Calendar.
 /// @group calendar
-$kendo-calendar-navigation-text: $kendo-calendar-header-text !default;
+$kendo-calendar-navigation-text: var( --kendo-calendar-navigation-text, #{$kendo-calendar-header-text} ) !default;
 /// The border color of the navigation in the infinite Calendar.
 /// @group calendar
-$kendo-calendar-navigation-border: $kendo-calendar-header-border !default;
+$kendo-calendar-navigation-border: var( --kendo-calendar-navigation-border, #{$kendo-calendar-header-border} ) !default;
 
 /// The text color of the hovered items in the calendar navigation.
 /// @group calendar
-$kendo-calendar-navigation-hover-text: k-color(primary-hover) !default;
+$kendo-calendar-navigation-hover-text: var( --kendo-calendar-navigation-hover-text, k-color(primary-hover) ) !default;
 /// The text color of the marker in the Calendar navigation.
 /// @group calendar
-$kendo-calendar-navigation-marker-text: currentColor !default;
+$kendo-calendar-navigation-marker-text: var( --kendo-calendar-navigation-marker-text, currentColor ) !default;
 
 
 // Infinite calendar
 /// The background color of the navigation in the infinite Calendar.
 /// @group calendar
 
-$kendo-infinite-calendar-header-padding-x: k-spacing(3) !default;
+$kendo-infinite-calendar-header-padding-x: var( --kendo-infinite-calendar-header-padding-x, k-spacing(3) ) !default;
 /// The background color of the navigation in the infinite Calendar.
 /// @group calendar
-$kendo-infinite-calendar-header-padding-y: k-spacing(3) k-spacing(1) !default;
+$kendo-infinite-calendar-header-padding-y: var( --kendo-infinite-calendar-header-padding-y, k-spacing(3) k-spacing(1) ) !default;
 
 /// The horizontal padding of the infinite Calendar.
 /// @group calendar
-$kendo-infinite-calendar-view-padding-x: k-spacing(3) !default;
+$kendo-infinite-calendar-view-padding-x: var( --kendo-infinite-calendar-view-padding-x, k-spacing(3) ) !default;
 /// The vertical padding of the infinite Calendar.
 /// @group calendar
-$kendo-infinite-calendar-view-padding-y: k-spacing(0) !default;
+$kendo-infinite-calendar-view-padding-y: var( --kendo-infinite-calendar-view-padding-y, k-spacing(0) ) !default;
 
 /// The height of the infinite Calendar view.
 /// @group calendar
-$kendo-infinite-calendar-view-height: ( $kendo-calendar-cell-size * 9 ) !default;
+$kendo-infinite-calendar-view-height: var( --kendo-infinite-calendar-view-height, calc( #{$kendo-calendar-cell-size} * 9 ) ) !default;
 
 
 // Range calendar
 /// The background color of the range selection in the Calendar.
 /// @group calendar
-$kendo-calendar-range-bg: k-color(base-active) !default;
+$kendo-calendar-range-bg: var( --kendo-calendar-range-bg, k-color(base-active) ) !default;
 /// The text color of the range selection in the Calendar.
 /// @group calendar
-$kendo-calendar-range-text: inherit !default;
+$kendo-calendar-range-text: var( --kendo-calendar-range-text, inherit ) !default;
 /// The border color of the range selection in the Calendar.
 /// @group calendar
-$kendo-calendar-range-border: k-color(base-emphasis) !default;
+$kendo-calendar-range-border: var( --kendo-calendar-range-border, k-color(base-emphasis) ) !default;
 /// The shadow of the hovered start range selection in the Calendar.
 /// @group calendar
-$kendo-calendar-start-range-hover-shadow: inset 1px -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis) !default;
+$kendo-calendar-start-range-hover-shadow: var( --kendo-calendar-start-range-hover-shadow, inset 1px -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis) ) !default;
 /// The shadow of the hovered mid range selection in the Calendar.
 /// @group calendar
-$kendo-calendar-mid-range-hover-shadow: inset 0 -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis) !default;
+$kendo-calendar-mid-range-hover-shadow: var( --kendo-calendar-mid-range-hover-shadow, inset 0 -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis) ) !default;
 /// The shadow of the hovered end range selection in the Calendar.
 /// @group calendar
-$kendo-calendar-end-range-hover-shadow: inset -1px -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis) !default;
+$kendo-calendar-end-range-hover-shadow: var( --kendo-calendar-end-range-hover-shadow, inset -1px -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis) ) !default;
 /// The shadow of the hovered start-end range selection in the Calendar.
 /// @group calendar
-$kendo-calendar-start-end-range-hover-shadow: inset 1px -1px 0 0 k-color(base-emphasis), inset -1px 1px 0 0 k-color(base-emphasis) !default;
+$kendo-calendar-start-end-range-hover-shadow: var( --kendo-calendar-start-end-range-hover-shadow, inset 1px -1px 0 0 k-color(base-emphasis), inset -1px 1px 0 0 k-color(base-emphasis) ) !default;
 
 
 // Calendar sizes
 
 /// The font size of the small Calendar.
 /// @group calendar
-$kendo-calendar-sm-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-calendar-sm-font-size: var( --kendo-calendar-sm-font-size, var( --kendo-calendar-font-size-sm, var( --kendo-font-size-sm, inherit ) ) ) !default;
 /// The line height of the small Calendar.
 /// @group calendar
-$kendo-calendar-sm-line-height: var( --kendo-line-height-sm, normal ) !default;
+$kendo-calendar-sm-line-height: var( --kendo-calendar-sm-line-height, var( --kendo-calendar-line-height-sm, var( --kendo-line-height-sm, normal ) ) ) !default;
 /// The size of the cells in the small Calendar.
 /// @group calendar
-$kendo-calendar-sm-cell-size: 24px !default;
+$kendo-calendar-sm-cell-size: var( --kendo-calendar-sm-cell-size, 24px ) !default;
 /// The horizontal padding of the cells in the small Calendar.
 /// @group calendar
-$kendo-calendar-sm-cell-padding-x: k-spacing(0.5) !default;
+$kendo-calendar-sm-cell-padding-x: var( --kendo-calendar-sm-cell-padding-x, k-spacing(0.5) ) !default;
 /// The vertical padding of the cells in the small Calendar.
 /// @group calendar
-$kendo-calendar-sm-cell-padding-y: k-spacing(0.5) !default;
+$kendo-calendar-sm-cell-padding-y: var( --kendo-calendar-sm-cell-padding-y, k-spacing(0.5) ) !default;
 /// The font size of the cells in the small Calendar.
 /// @group calendar
-$kendo-calendar-sm-cell-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-calendar-sm-cell-font-size: var( --kendo-calendar-sm-cell-font-size, var( --kendo-calendar-font-size-sm, var( --kendo-font-size-sm, inherit ) ) ) !default;
 
 /// The font size of the medium Calendar.
 /// @group calendar
-$kendo-calendar-md-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-calendar-md-font-size: var( --kendo-calendar-md-font-size, var( --kendo-calendar-font-size, var( --kendo-font-size, inherit ) ) ) !default;
 /// The line height of the medium Calendar.
 /// @group calendar
-$kendo-calendar-md-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-calendar-md-line-height: var( --kendo-calendar-md-line-height, var( --kendo-calendar-line-height, var( --kendo-line-height, normal ) ) ) !default;
 /// The size of the cells in the medium Calendar.
 /// @group calendar
-$kendo-calendar-md-cell-size: 28px !default;
+$kendo-calendar-md-cell-size: var( --kendo-calendar-md-cell-size, 28px ) !default;
 /// The horizontal padding of the cells in the medium Calendar.
 /// @group calendar
-$kendo-calendar-md-cell-padding-x: k-spacing(1) !default;
+$kendo-calendar-md-cell-padding-x: var( --kendo-calendar-md-cell-padding-x, k-spacing(1) ) !default;
 /// The vertical padding of the cells in the medium Calendar.
 /// @group calendar
-$kendo-calendar-md-cell-padding-y: k-spacing(1) !default;
+$kendo-calendar-md-cell-padding-y: var( --kendo-calendar-md-cell-padding-y, k-spacing(1) ) !default;
 /// The font size of the cells in the medium Calendar.
 /// @group calendar
-$kendo-calendar-md-cell-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-calendar-md-cell-font-size: var( --kendo-calendar-md-cell-font-size, var( --kendo-calendar-font-size-sm, var( --kendo-font-size-sm, inherit ) ) ) !default;
 
 /// The font size of the large Calendar.
 /// @group calendar
-$kendo-calendar-lg-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-calendar-lg-font-size: var( --kendo-calendar-lg-font-size, var( --kendo-calendar-font-size, var( --kendo-font-size, inherit ) ) ) !default;
 /// The line height of the large Calendar.
 /// @group calendar
-$kendo-calendar-lg-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-calendar-lg-line-height: var( --kendo-calendar-lg-line-height, var( --kendo-calendar-line-height, var( --kendo-line-height, normal ) ) ) !default;
 /// The size of the cells in the large Calendar.
 /// @group calendar
-$kendo-calendar-lg-cell-size: 32px !default;
+$kendo-calendar-lg-cell-size: var( --kendo-calendar-lg-cell-size, 32px ) !default;
 /// The horizontal padding of the cells in the large Calendar.
 /// @group calendar
-$kendo-calendar-lg-cell-padding-x: k-spacing(1) !default;
+$kendo-calendar-lg-cell-padding-x: var( --kendo-calendar-lg-cell-padding-x, k-spacing(1) ) !default;
 /// The vertical padding of the cells in the large Calendar.
 /// @group calendar
-$kendo-calendar-lg-cell-padding-y: k-spacing(1) !default;
+$kendo-calendar-lg-cell-padding-y: var( --kendo-calendar-lg-cell-padding-y, k-spacing(1) ) !default;
 /// The font size of the cells in the large Calendar.
 /// @group calendar
-$kendo-calendar-lg-cell-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-calendar-lg-cell-font-size: var( --kendo-calendar-lg-cell-font-size, var( --kendo-calendar-font-size, var( --kendo-font-size, inherit ) ) ) !default;
 
 /// The sizes Map of the Calendar.
 /// @group calendar
@@ -368,3 +368,88 @@ $kendo-calendar-sizes: (
         cell-font-size: $kendo-calendar-lg-cell-font-size
     )
 ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/calendar/_variables.scss" with (
+    $kendo-calendar-border-width: $kendo-calendar-border-width,
+    $kendo-calendar-font-family: $kendo-calendar-font-family,
+    $kendo-calendar-font-size: $kendo-calendar-font-size,
+    $kendo-calendar-line-height: $kendo-calendar-line-height,
+    $kendo-calendar-border-radius: $kendo-calendar-border-radius,
+    $kendo-calendar-cell-size: $kendo-calendar-cell-size,
+    $kendo-calendar-bg: $kendo-calendar-bg,
+    $kendo-calendar-text: $kendo-calendar-text,
+    $kendo-calendar-border: $kendo-calendar-border,
+    $kendo-calendar-header-padding-x: $kendo-calendar-header-padding-x,
+    $kendo-calendar-header-padding-y: $kendo-calendar-header-padding-y,
+    $kendo-calendar-header-border-width: $kendo-calendar-header-border-width,
+    $kendo-calendar-header-bg: $kendo-calendar-header-bg,
+    $kendo-calendar-header-text: $kendo-calendar-header-text,
+    $kendo-calendar-header-border: $kendo-calendar-header-border,
+    $kendo-calendar-nav-gap: $kendo-calendar-nav-gap,
+    $kendo-calendar-footer-padding-x: $kendo-calendar-footer-padding-x,
+    $kendo-calendar-footer-padding-y: $kendo-calendar-footer-padding-y,
+    $kendo-calendar-cell-padding-x: $kendo-calendar-cell-padding-x,
+    $kendo-calendar-cell-padding-y: $kendo-calendar-cell-padding-y,
+    $kendo-calendar-cell-border-radius: $kendo-calendar-cell-border-radius,
+    $kendo-calendar-header-cell-padding-x: $kendo-calendar-header-cell-padding-x,
+    $kendo-calendar-header-cell-padding-y: $kendo-calendar-header-cell-padding-y,
+    $kendo-calendar-header-cell-width: $kendo-calendar-header-cell-width,
+    $kendo-calendar-header-cell-height: $kendo-calendar-header-cell-height,
+    $kendo-calendar-header-cell-font-size: $kendo-calendar-header-cell-font-size,
+    $kendo-calendar-header-cell-line-height: $kendo-calendar-header-cell-line-height,
+    $kendo-calendar-header-cell-text: $kendo-calendar-header-cell-text,
+    $kendo-calendar-caption-padding-x: $kendo-calendar-caption-padding-x,
+    $kendo-calendar-caption-padding-y: $kendo-calendar-caption-padding-y,
+    $kendo-calendar-caption-height: $kendo-calendar-caption-height,
+    $kendo-calendar-caption-font-size: $kendo-calendar-caption-font-size,
+    $kendo-calendar-caption-line-height: $kendo-calendar-caption-line-height,
+    $kendo-calendar-caption-font-weight: $kendo-calendar-caption-font-weight,
+    $kendo-calendar-view-width: $kendo-calendar-view-width,
+    $kendo-calendar-view-height: $kendo-calendar-view-height,
+    $kendo-calendar-view-gap: $kendo-calendar-view-gap,
+    $kendo-calendar-weekend-bg: $kendo-calendar-weekend-bg,
+    $kendo-calendar-weekend-text: $kendo-calendar-weekend-text,
+    $kendo-calendar-today-font-weight: $kendo-calendar-today-font-weight,
+    $kendo-calendar-today-box-shadow: $kendo-calendar-today-box-shadow,
+    $kendo-calendar-week-number-bg: $kendo-calendar-week-number-bg,
+    $kendo-calendar-week-number-text: $kendo-calendar-week-number-text,
+    $kendo-calendar-other-month-bg: $kendo-calendar-other-month-bg,
+    $kendo-calendar-other-month-text: $kendo-calendar-other-month-text,
+    $kendo-calendar-cell-hover-bg: $kendo-calendar-cell-hover-bg,
+    $kendo-calendar-cell-hover-text: $kendo-calendar-cell-hover-text,
+    $kendo-calendar-cell-selected-bg: $kendo-calendar-cell-selected-bg,
+    $kendo-calendar-cell-selected-text: $kendo-calendar-cell-selected-text,
+    $kendo-calendar-cell-selected-hover-bg: $kendo-calendar-cell-selected-hover-bg,
+    $kendo-calendar-cell-selected-hover-text: $kendo-calendar-cell-selected-hover-text,
+    $kendo-calendar-cell-focus-shadow: $kendo-calendar-cell-focus-shadow,
+    $kendo-calendar-cell-selected-focus-shadow: $kendo-calendar-cell-selected-focus-shadow,
+    $kendo-calendar-navigation-width: $kendo-calendar-navigation-width,
+    $kendo-calendar-navigation-item-height: $kendo-calendar-navigation-item-height,
+    $kendo-calendar-navigation-bg: $kendo-calendar-navigation-bg,
+    $kendo-calendar-navigation-text: $kendo-calendar-navigation-text,
+    $kendo-calendar-navigation-border: $kendo-calendar-navigation-border,
+    $kendo-calendar-navigation-hover-text: $kendo-calendar-navigation-hover-text,
+    $kendo-calendar-navigation-marker-text: $kendo-calendar-navigation-marker-text,
+    $kendo-calendar-range-bg: $kendo-calendar-range-bg,
+    $kendo-infinite-calendar-header-padding-x: $kendo-infinite-calendar-header-padding-x,
+    $kendo-infinite-calendar-header-padding-y: $kendo-infinite-calendar-header-padding-y,
+    $kendo-infinite-calendar-view-padding-x: $kendo-infinite-calendar-view-padding-x,
+    $kendo-infinite-calendar-view-padding-y: $kendo-infinite-calendar-view-padding-y,
+    $kendo-infinite-calendar-view-height: $kendo-infinite-calendar-view-height,
+    $kendo-calendar-sm-font-size: $kendo-calendar-sm-font-size,
+    $kendo-calendar-sm-line-height: $kendo-calendar-sm-line-height,
+    $kendo-calendar-sm-cell-size: $kendo-calendar-sm-cell-size,
+    $kendo-calendar-sm-cell-padding-x: $kendo-calendar-sm-cell-padding-x,
+    $kendo-calendar-sm-cell-padding-y: $kendo-calendar-sm-cell-padding-y,
+    $kendo-calendar-md-font-size: $kendo-calendar-md-font-size,
+    $kendo-calendar-md-line-height: $kendo-calendar-md-line-height,
+    $kendo-calendar-md-cell-size: $kendo-calendar-md-cell-size,
+    $kendo-calendar-md-cell-padding-x: $kendo-calendar-md-cell-padding-x,
+    $kendo-calendar-md-cell-padding-y: $kendo-calendar-md-cell-padding-y,
+    $kendo-calendar-lg-font-size: $kendo-calendar-lg-font-size,
+    $kendo-calendar-lg-line-height: $kendo-calendar-lg-line-height,
+    $kendo-calendar-lg-cell-size: $kendo-calendar-lg-cell-size,
+    $kendo-calendar-lg-cell-padding-x: $kendo-calendar-lg-cell-padding-x,
+    $kendo-calendar-lg-cell-padding-y: $kendo-calendar-lg-cell-padding-y,
+    $kendo-calendar-sizes: $kendo-calendar-sizes
+);

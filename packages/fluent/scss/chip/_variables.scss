@@ -5,27 +5,27 @@
 
 /// The width of the border around the Chip.
 /// @group chip
-$kendo-chip-border-width: 1px !default;
+$kendo-chip-border-width: var( --kendo-chip-border-width, 1px ) !default;
 /// The spacing between the text and the icons of the Chip.
 /// @group chip
-$kendo-chip-spacing: k-spacing(1) !default;
+$kendo-chip-spacing: var( --kendo-chip-spacing, k-spacing(1) ) !default;
 
 /// The font family of the Chip.
 /// @group chip
-$kendo-chip-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-chip-font-family: var( --kendo-chip-font-family, var( --kendo-font-family, inherit ) ) !default;
 
 /// The width of the Chip' avatar.
 /// @group chip
-$kendo-chip-avatar-width: 1em !default;
+$kendo-chip-avatar-width: var( --kendo-chip-avatar-width, 1em ) !default;
 /// The height of the Chip' avatar.
 /// @group chip
-$kendo-chip-avatar-height: 1em !default;
+$kendo-chip-avatar-height: var( --kendo-chip-avatar-height, 1em ) !default;
 /// The flex basis of the Chip' avatar.
 /// @group chip
 $kendo-chip-avatar-flex-basis: 1em !default;
 /// The text color of the disabled Chip.
 /// @group chip
-$kendo-chip-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
+$kendo-chip-disabled-text: var( --kendo-chip-disabled-text, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ) !default;
 
 /// The offset of the outline focused Chip.
 /// @group chip
@@ -42,7 +42,7 @@ $kendo-chip-focus-outline-style: solid !default;
 $kendo-chip-sm-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the medium Chip.
 /// @group chip
-$kendo-chip-md-padding-x: k-spacing(2) !default;
+$kendo-chip-md-padding-x: var( --kendo-chip-padding-x, k-spacing(2) ) !default;
 /// The horizontal padding of the large Chip.
 /// @group chip
 $kendo-chip-lg-padding-x: k-spacing(2) !default;
@@ -52,21 +52,21 @@ $kendo-chip-lg-padding-x: k-spacing(2) !default;
 $kendo-chip-sm-padding-y: k-spacing(0.5) !default;
 /// The vertical padding of the medium Chip.
 /// @group chip
-$kendo-chip-md-padding-y: k-spacing(1) !default;
+$kendo-chip-md-padding-y: var( --kendo-chip-padding-y, k-spacing(1) ) !default;
 /// The vertical padding of the large Chip.
 /// @group chip
 $kendo-chip-lg-padding-y: k-spacing(1.5) !default;
 
 /// The font weight of the Chip.
 /// @group chip
-$kendo-chip-font-weight: var( --kendo-font-weight-normal, normal ) !default;
+$kendo-chip-font-weight: var(--kendo-chip-font-weight, var( --kendo-font-weight-normal, normal ) ) !default;
 
 /// The font size of the small Chip.
 /// @group chip
 $kendo-chip-sm-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the medium Chip.
 /// @group chip
-$kendo-chip-md-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-chip-md-font-size: var( --kendo-chip-font-size, var( --kendo-font-size, inherit ) ) !default;
 /// The font size of the large Chip.
 /// @group chip
 $kendo-chip-lg-font-size: var( --kendo-font-size, inherit ) !default;
@@ -76,7 +76,7 @@ $kendo-chip-lg-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-chip-sm-line-height: var( --kendo-line-height, normal ) !default;
 /// The medium Chip's line height that is related to the $kendo-font-size.
 /// @group chip
-$kendo-chip-md-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-chip-md-line-height: var( --kendo-chip-line-height, var( --kendo-line-height, normal ) ) !default;
 /// The large Chip's line height that is related to the $kendo-font-size.
 /// @group chip
 $kendo-chip-lg-line-height: var( --kendo-line-height, normal ) !default;
@@ -109,9 +109,6 @@ $kendo-chip-sizes: (
     )
 ) !default;
 
-
-$kendo-chip-brand-colors: ( error, success, info ) !default;
-
 // Matrices with theme colors in the order: bg, color, border, outline
 
 // The color matrix for the base Chip
@@ -124,91 +121,66 @@ $_tc-base-matrix: (
         selected: (k-color(primary), k-color(on-primary), k-color(primary)),
         selected-hover: (k-color(primary), k-color(on-primary), k-color(primary)),
         disabled: (color-mix(in srgb, k-color(on-app-surface) 6%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent), transparent)
-    ),
-    outline: (
-        normal: (transparent, color-on-surface, currentColor),
-        hover: (color-on-surface, app-surface, color-on-surface),
-        focus: (transparent, color-on-surface, currentColor, inherit),
-        focus-hover: (color-on-surface, app-surface, color-on-surface, inherit),
-        selected: (color-on-surface, app-surface, color-on-surface),
-        selected-hover: (color-subtle, color-on-surface, color-on-subtle),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent))
-    ),
-) !default;
-
-// The color matrix for the error, success and info Chips
-$_tc-brand-matrix: (
-    solid: (
-        normal: (color-subtle, color-on-subtle, color-subtle),
-        hover: (color-subtle-hover, color-on-subtle, color-subtle-hover),
-        focus: (color-subtle, color-on-subtle, color-on-subtle),
-        focus-hover: (color-subtle, color-on-subtle, color-on-subtle),
-        selected: (color-subtle-active, color-on-subtle, color-subtle-active),
-        selected-hover: (color-subtle-hover, color-on-subtle, color-subtle-hover),
-        disabled: (color-mix(in srgb, k-color(on-app-surface) 6%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent), transparent)
-    ),
-    outline: (
-        normal: (transparent, color-on-surface, currentColor),
-        hover: (color-on-surface, app-surface, color-on-surface),
-        focus: (transparent, color-on-surface, color-on-surface, inherit),
-        focus-hover: (color-on-surface, app-surface, color-on-surface, inherit),
-        selected: (color-on-surface, app-surface, color-on-surface),
-        selected-hover: (color-on-surface, app-surface, color-on-surface),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent))
     )
 ) !default;
 
-// The color matrix for the warning Chips
-$_tc-warning-matrix: (
-    solid: (
-        normal: (color-subtle, color-on-subtle, color-subtle),
-        hover: (color-subtle-hover, color-on-subtle, color-subtle-hover),
-        focus: (color-subtle, color-on-subtle, color-on-subtle),
-        focus-hover: (color-subtle, color-on-subtle, color-on-subtle),
-        selected: (color-subtle-active, color-on-subtle, color-subtle-active),
-        selected-hover: (color-subtle-hover, color-on-subtle, color-subtle-hover),
-        disabled: (color-mix(in srgb, k-color(on-app-surface) 6%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent), transparent)
-    ),
-    outline: (
-        normal: (transparent, color-on-surface, currentColor),
-        hover: (color-on-surface, app-surface, color-on-surface),
-        focus: (transparent, color-on-surface, color-on-surface, inherit),
-        focus-hover: (color-on-surface, app-surface, color-on-surface, inherit),
-        selected: (color-on-surface, app-surface, color-on-surface),
-        selected-hover: (color-on-surface, app-surface, color-on-surface),
-        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent))
-    )
-) !default;
+/// The base text color of the solid Chip.
+/// @group chip
+$kendo-chip-text: var( --kendo-chip-text, k-color(base-on-subtle) ) !default;
+/// The base background color of the solid Chip.
+/// @group chip
+$kendo-chip-bg: var( --kendo-chip-bg, k-color(base-subtle) ) !default;
+/// The base border color of the solid Chip.
+/// @group chip
+$kendo-chip-border: var( --kendo-chip-border, k-color(base-subtle) ) !default;
+/// The base text color of the hovered solid Chip.
+/// @group chip
+$kendo-chip-hover-text: var( --kendo-chip-hover-text, k-color(base-on-subtle) ) !default;
+/// The base background color of the hovered solid Chip.
+/// @group chip
+$kendo-chip-hover-bg: var( --kendo-chip-hover-bg, k-color(base-subtle-hover) ) !default;
+/// The base border color of the hovered solid Chip.
+/// @group chip
+$kendo-chip-hover-border: var( --kendo-chip-hover-border, k-color(base-subtle-hover) ) !default;
+/// The base text color of the focused solid Chip.
+/// @group chip
+$kendo-chip-focus-text: var( --kendo-chip-focused-text, k-color(base-on-subtle) ) !default;
+/// The base background color of the focused solid Chip.
+/// @group chip
+$kendo-chip-focus-bg: var( --kendo-chip-focused-bg, k-color(base-subtle) ) !default;
+/// The base border color of the focused solid Chip.
+/// @group chip
+$kendo-chip-focus-border: var( --kendo-chip-focused-border, k-color(base-on-subtle) ) !default;
+/// The base outline color of the focused solid Chip.
+/// @group chip
+$kendo-chip-focus-outline: var( --kendo-chip-focus-outline, initial) !default;
+/// The base text color of the selected solid Chip.
+/// @group chip
+$kendo-chip-selected-text: var( --kendo-chip-selected-text, k-color(on-primary) ) !default;
+/// The base background color of the selected solid Chip.
+/// @group chip
+$kendo-chip-selected-bg: var( --kendo-chip-selected-bg, k-color(primary) )  !default;
+/// The base border color of the selected solid Chip.
+/// @group chip
+$kendo-chip-selected-border: var( --kendo-chip-selected-border, k-color(primary) ) !default;
+/// The base text color of the disabled solid Chip.
+/// @group chip
+$kendo-chip-disabled-text: var( --kendo-chip-disabled-text, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ) !default;
+/// The base background color of the disabled solid Chip.
+/// @group chip
+$kendo-chip-disabled-bg: var( --kendo-chip-disabled-bg, color-mix(in srgb, k-color(on-app-surface) 6%, transparent) )  !default;
+/// The base border color of the disabled solid Chip.
+/// @group chip
+$kendo-chip-disabled-border: var( --kendo-chip-disabled-border, transparent ) !default;
 
 /// The theme colors map for the Chip.
-$kendo-chip-theme-colors: () !default;
-
-// Map for the base theme color
-@each $fill-mode, $ui-states in $_tc-base-matrix {
-    $kendo-chip-theme-colors: map.deep-merge(
-        $kendo-chip-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, base, base, $ui-states )
-    );
-}
-
-// Map for the brand theme colors
-@each $fill-mode, $ui-states in $_tc-brand-matrix {
-    @each $brand-color in $kendo-chip-brand-colors {
-        $kendo-chip-theme-colors: map.deep-merge(
-            $kendo-chip-theme-colors,
-            k-generate-fill-mode-theme-variation( $fill-mode, $brand-color, $brand-color, $ui-states )
-        )
-    }
-}
-
-// Map for the warning theme color
-@each $fill-mode, $ui-states in $_tc-warning-matrix {
-    $kendo-chip-theme-colors: map.deep-merge(
-        $kendo-chip-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, warning, warning, $ui-states )
-    );
-}
-
+$kendo-chip-theme-colors: (
+    "base": $kendo-chip-bg,
+    "error": k-color(error),
+    "info": k-color(info),
+    "warning": k-color(warning),
+    "success": k-color(success)
+) !default;
 
 // Chip List
 
@@ -219,3 +191,36 @@ $kendo-chip-list-sizes: (
     md: k-spacing(1),
     lg: k-spacing(1)
 ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/chip/_variables.scss" with (
+    $kendo-chip-border-width: $kendo-chip-border-width,
+    $kendo-chip-spacing: $kendo-chip-spacing,
+    $kendo-chip-sm-padding-x: $kendo-chip-sm-padding-x,
+    $kendo-chip-md-padding-x: $kendo-chip-md-padding-x,
+    $kendo-chip-lg-padding-x: $kendo-chip-lg-padding-x,
+    $kendo-chip-sm-padding-y: $kendo-chip-sm-padding-y,
+    $kendo-chip-md-padding-y: $kendo-chip-md-padding-y,
+    $kendo-chip-lg-padding-y: $kendo-chip-lg-padding-y,
+    $kendo-chip-font-weight: $kendo-chip-font-weight,
+    $kendo-chip-sm-font-size: $kendo-chip-sm-font-size,
+    $kendo-chip-md-font-size: $kendo-chip-md-font-size,
+    $kendo-chip-lg-font-size: $kendo-chip-lg-font-size,
+    $kendo-chip-sm-line-height: $kendo-chip-sm-line-height,
+    $kendo-chip-md-line-height: $kendo-chip-md-line-height,
+    $kendo-chip-lg-line-height: $kendo-chip-lg-line-height,
+    $kendo-chip-calc-size: $kendo-chip-calc-size,
+    $kendo-chip-sm-calc-size: $kendo-chip-sm-calc-size,
+    $kendo-chip-sizes: $kendo-chip-sizes,
+    $kendo-chip-base-bg: $kendo-chip-bg,
+    $kendo-chip-theme-colors: $kendo-chip-theme-colors,
+    $kendo-chip-solid-bg: $kendo-chip-bg,
+    $kendo-chip-solid-text: $kendo-chip-text,
+    $kendo-chip-solid-border: $kendo-chip-border,
+    $kendo-chip-solid-focus-bg: $kendo-chip-focus-bg,
+    $kendo-chip-solid-hover-bg: $kendo-chip-hover-bg,
+    $kendo-chip-solid-selected-bg: $kendo-chip-selected-bg,
+    $kendo-chip-disabled-bg: $kendo-chip-disabled-bg,
+    $kendo-chip-disabled-text: $kendo-chip-disabled-text,
+    $kendo-chip-disabled-border: $kendo-chip-disabled-border,
+    $kendo-chip-list-sizes: $kendo-chip-list-sizes
+);

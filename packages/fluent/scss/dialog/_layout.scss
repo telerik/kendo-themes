@@ -2,71 +2,26 @@
 @use "../core/_index.scss" as *;
 @use "../window/_variables.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/dialog/_layout.scss" as *;
 
 @mixin kendo-dialog--layout() {
 
-    .k-dialog-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        outline: 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 10001;
-
-        .k-dialog {
-            position: relative;
-        }
-    }
+    @include kendo-dialog--layout-base();
 
     .k-dialog {
-        padding: 0;
-        border-width: var( --kendo-dialog-border-width, #{$kendo-dialog-border-width} ) 0 0;
-        position: fixed;
-        box-sizing: border-box;
-
-        // Centered
-        &.k-dialog-centered {
-            transform: translate(-50%, -50%);
-            top: 50%;
-            left: 50%;
-        }
-
-        .k-multiselect {
-            width: 100%;
-        }
+        border-width: $kendo-dialog-border-width 0 0;
     }
 
     // Title bar
     .k-dialog-titlebar {
-        border-width: var( --kendo-dialog-titlebar-border-width, #{$kendo-dialog-titlebar-border-width} ) 0 0;
-        padding-inline: var( --kendo-dialog-titlebar-padding-x, #{$kendo-dialog-titlebar-padding-x} );
-        padding-block: var( --kendo-dialog-titlebar-padding-y, #{$kendo-dialog-titlebar-padding-y} );
+        border-width: $kendo-dialog-titlebar-border-width 0 0;
+        padding-inline: $kendo-dialog-titlebar-padding-x;
+        padding-block: $kendo-dialog-titlebar-padding-y;
     }
 
     .k-dialog-content {
-        padding-inline: var( --kendo-dialog-inner-padding-x, #{$kendo-dialog-inner-padding-x} );
-        padding-block: var( --kendo-dialog-inner-padding-y, #{$kendo-dialog-inner-padding-y} );
-    }
-
-    // Buttons
-    .k-dialog-actions {
-        @include border-bottom-radius( var( --kendo-window-border-radius, #{$kendo-window-border-radius} ) );
-        padding-inline: var( --kendo-dialog-buttongroup-padding-x, #{$kendo-dialog-buttongroup-padding-x} );
-        padding-block: var( --kendo-dialog-buttongroup-padding-y, #{$kendo-dialog-buttongroup-padding-y} );
-        border-width: var( --kendo-dialog-buttongroup-border-width, #{$kendo-dialog-buttongroup-border-width} ) 0 0;
-        border-style: solid;
-        border-color: inherit;
-        flex: 0 0 auto;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        gap: var( --kendo-dialog-buttongroup-spacing, #{$kendo-dialog-buttongroup-spacing} );
-        overflow: hidden;
+        padding-inline: $kendo-dialog-inner-padding-x;
+        padding-block: $kendo-dialog-inner-padding-y;
     }
 
     .k-dialog-content + .k-dialog-actions {

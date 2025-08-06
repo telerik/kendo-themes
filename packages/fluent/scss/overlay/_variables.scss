@@ -2,11 +2,15 @@
 
 /// Opacity of the overlay.
 /// @group overlay
-$kendo-overlay-opacity: .4 !default;
+$kendo-overlay-opacity: var( --kendo-overlay-opacity, .4 ) !default;
 
 /// Background color of the dark overlay.
 /// @group overlay
-$kendo-overlay-dark: $kendo-color-black !default;
+$kendo-overlay-dark: var( --kendo-overlay-dark, #{$kendo-color-black} ) !default;
 /// Background color of the light overlay.
 /// @group overlay
-$kendo-overlay-light: $kendo-color-white !default;
+$kendo-overlay-light: var( --kendo-overlay-light, #{$kendo-color-white} ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/overlay/_variables.scss" with (
+    $kendo-overlay-opacity: $kendo-overlay-opacity
+);

@@ -1,110 +1,39 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/list/_theme.scss" as *;
 
 @mixin kendo-list--theme() {
 
-    .k-list {
-        @include fill(
-            var( --kendo-list-text, #{$kendo-list-text} ),
-            var( --kendo-list-bg, #{$kendo-list-bg} ),
-            var( --kendo-list-border, #{$kendo-list-border} )
-        );
-    }
-
-
-    // List header
-    .k-list-group-sticky-header {
-        @include fill(
-            var( --kendo-list-header-text, #{$kendo-list-header-text} ),
-            var( --kendo-list-header-bg, #{$kendo-list-header-bg} ),
-            var( --kendo-list-header-border, #{$kendo-list-header-border} )
-        );
-        @include box-shadow( var( --kendo-list-header-shadow, #{$kendo-list-header-shadow} ) );
-    }
-
-
+    @include kendo-list--theme-base();
+    
     // List item
     .k-list-item {
-        @include fill(
-            var( --kendo-list-item-text, inherit ),
-            var( --kendo-list-item-bg, transparent )
-        );
 
-        // Hover
-        &:hover,
-        &.k-hover {
-            --kendo-list-item-text: var( --kendo-list-item-hover-text, #{$kendo-list-item-hover-text} );
-            --kendo-list-item-bg: var( --kendo-list-item-hover-bg, #{$kendo-list-item-hover-bg} );
-        }
-
-        // Focus
-        &:focus,
-        &.k-focus {
-            --kendo-list-item-text: var( --kendo-list-item-focus-text, #{$kendo-list-item-focus-text} );
-            --kendo-list-item-bg: var( --kendo-list-item-focus-bg, #{$kendo-list-item-focus-bg} );
-
-            @include box-shadow( var( --kendo-list-item-focus-shadow, #{$kendo-list-item-focus-shadow} ) );
-        }
-
-        // Selected
-        &.k-selected {
-            --kendo-list-item-text: var( --kendo-list-item-selected-text, #{$kendo-list-item-selected-text} );
-            --kendo-list-item-bg: var( --kendo-list-item-selected-bg, #{$kendo-list-item-selected-bg} );
-        }
         &.k-selected:hover,
         &.k-selected.k-hover {
-            --kendo-list-item-text: var( --kendo-list-item-selected-hover-text, #{$kendo-list-item-selected-hover-text} );
-            --kendo-list-item-bg: var( --kendo-list-item-selected-hover-bg, #{$kendo-list-item-selected-hover-bg } );
+            color: $kendo-list-item-selected-hover-text;
+            background-color: $kendo-list-item-selected-hover-bg;
         }
 
         // Disabled
         &:disabled,
         &.k-disabled {
-            --kendo-list-item-text: var( --kendo-list-item-disabled-text, #{$kendo-list-item-disabled-text} );
-            --kendo-list-item-bg: var( --kendo-list-item-disabled-bg, #{$kendo-list-item-disabled-bg} );
+            color: $kendo-list-item-disabled-text;
+            background-color: $kendo-list-item-disabled-bg;
         }
     }
 
     // Icon
     .k-list-item .k-icon {
         @include fill(
-            $color: var( --kendo-list-item-icon-text, #{$kendo-list-item-icon-text} )
-        );
-    }
-
-    // Option Label
-    .k-list-optionlabel,
-    .k-list-optionlabel.k-hover,
-    .k-list-optionlabel:hover {
-        @include fill(
-            $color: var( --kendo-list-option-label-text, #{$kendo-list-option-label-text} )
+            $color: $kendo-list-item-icon-text
         );
     }
 
     .k-list-optionlabel:disabled,
     .k-list-optionlabel.k-disabled {
             @include fill(
-                $color: var( --kendo-list-option-label-disabled-text, #{$kendo-list-option-label-disabled-text} )
-            )
+                $color: $kendo-list-option-label-disabled-text
+            );
     }
-
-    // List group item
-    .k-list-group-item {
-        @include fill(
-            var( --kendo-list-group-item-text, #{$kendo-list-group-item-text} ),
-            var( --kendo-list-group-item-bg, #{$kendo-list-group-item-bg} ),
-            var( --kendo-list-group-item-border, #{$kendo-list-group-item-border} )
-        );
-        @include box-shadow( var( --kendo-list-group-item-shadow, #{$kendo-list-group-item-shadow} ) );
-    }
-
-
-    // List item group label
-    .k-list-item-group-label {
-        @include fill(
-            var( --kendo-list-bg, #{$kendo-list-bg} ),
-            var( --kendo-list-text, #{$kendo-list-text} )
-        );
-    }
-
 }

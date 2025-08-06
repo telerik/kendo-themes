@@ -1,21 +1,16 @@
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/signature/_theme.scss" as *;
 
 @mixin kendo-signature--theme() {
+    @include kendo-signature--theme-base();
 
-    // Solid signature
     .k-signature {
-
-        .k-signature-line {
-            border-bottom-color: var( --kendo-signature-line-color, #{$kendo-signature-line-color} );
-        }
-
         &:disabled,
         &[disabled],
         &.k-disabled {
             .k-signature-line {
-                border-bottom-color: var( --kendo-signature-line-disabled-color, #{$kendo-signature-line-disabled-color} );
+                border-bottom-color: $kendo-signature-line-disabled-color;
             }
         }
     }
-
 }

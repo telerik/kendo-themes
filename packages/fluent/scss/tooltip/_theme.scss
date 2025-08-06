@@ -1,34 +1,28 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/tooltip/_theme.scss" as *;
 
 @mixin kendo-tooltip--theme() {
-    .k-tooltip {
-        @include box-shadow( var( --kendo-tooltip-shadow, #{$kendo-tooltip-shadow} ) );
-
-        color: var( --kendo-tooltip-text, #{$kendo-tooltip-text} );
-        background-color: var( --kendo-tooltip-bg, #{$kendo-tooltip-bg} );
-        border-color: var( --kendo-tooltip-border, #{$kendo-tooltip-border} );
-
-        .k-callout {
-            color: var( --kendo-tooltip-bg, #{$kendo-tooltip-bg} );
-        }
-    }
-
-    @each $theme-color, $color-props in $kendo-tooltip-theme-colors {
-            $_bg: map.get( $color-props , bg );
-            $_text: map.get( $color-props , text );
-            $_border: map.get( $color-props , border );
-
-        .k-tooltip-#{$theme-color} {
-            --kendo-tooltip-text: #{$_text};
-            --kendo-tooltip-bg: #{$_bg};
-            --kendo-tooltip-border: #{$_border};
-        }
-    }
+    @include kendo-tooltip--theme-base();
 
     .k-tooltip-button {
-        color: var( --kendo-tooltip-button-text, #{$kendo-tooltip-button-text} );
+        color: $kendo-tooltip-button-text;
     }
 
+    @each $name, $color in $kendo-tooltip-theme-colors {
+        @if($name == "primary" or $name == "dark" or $name == "light" or $name == "inverse") {
+            .k-tooltip-#{$name} {
+                color: k-color(on-#{$name});
+                background-color: k-color(#{$name});
+                border-color: k-color(#{$name});
+            }
+        } @else {
+            .k-tooltip-#{$name} {
+                color: k-color(#{$name}-on-subtle);
+                background-color: k-color(#{$name}-subtle);
+                border-color: k-color(#{$name}-subtle);
+            }
+        }
+    }
 }

@@ -1,21 +1,16 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/draggable/_theme.scss" as *;
 
-.k-drag-clue {
-    @include fill(
-        var( --kendo-drag-clue-text, #{$kendo-drag-clue-text} ),
-        var( --kendo-drag-clue-bg, #{$kendo-drag-clue-bg} ),
-        var( --kendo-drag-clue-border, #{$kendo-drag-clue-border} ),
-        var( --kendo-drag-clue-gradient, #{$kendo-drag-clue-gradient} )
-    );
-    @include box-shadow( var( --kendo-drag-clue-shadow, #{$kendo-drag-clue-shadow} ) );
-}
+@mixin kendo-draggable--theme() {
+    @include kendo-draggable--theme-base();
 
-.k-drop-hint-line {
-    @include fill( $bg: var( --kendo-drop-hint-bg, #{$kendo-drop-hint-bg} ) );
-}
+    .k-drop-hint-line {
+        @include fill( $bg: $kendo-drop-hint-bg );
+    }
 
-.k-drop-hint-start,
-.k-drop-hint-end {
-    @include fill ( $border: var( --kendo-drop-hint-bg, #{$kendo-drop-hint-bg} ) );
+    .k-drop-hint-start,
+    .k-drop-hint-end {
+        @include fill ( $border: $kendo-drop-hint-bg );
+    }
 }

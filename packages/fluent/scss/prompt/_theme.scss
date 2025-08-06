@@ -1,40 +1,7 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/prompt/_theme.scss" as *;
 
 @mixin kendo-prompt--theme {
-
-    .k-prompt {
-        @include fill(
-            var( --kendo-prompt-text, #{$kendo-prompt-text} ),
-            var( --kendo-prompt-bg, #{$kendo-prompt-bg} ),
-            var( --kendo-prompt-border, #{$kendo-prompt-border} )
-        );
-    }
-
-    .k-prompt-header {
-        @include fill(
-            var( --kendo-prompt-header-text, #{$kendo-prompt-header-text} ),
-            var( --kendo-prompt-header-bg, #{$kendo-prompt-header-bg} ),
-            var( --kendo-prompt-header-border, #{$kendo-prompt-header-border} )
-        );
-    }
-
-    .k-prompt-content {
-        @include fill(
-            var( --kendo-prompt-content-text, #{$kendo-prompt-content-text} ),
-            var( --kendo-prompt-content-bg, #{$kendo-prompt-content-bg} ),
-            var( --kendo-prompt-content-border, #{$kendo-prompt-content-border} )
-        );
-    }
-
-    // Remove when k-suggestion is adopted
-    .k-prompt-suggestion {
-        @include fill(
-            var( --kendo-prompt-suggestion-text, #{$kendo-prompt-suggestion-text} ),
-            var( --kendo-prompt-suggestion-bg, #{$kendo-prompt-suggestion-bg} ),
-            var( --kendo-prompt-suggestion-border, #{$kendo-prompt-suggestion-border} )
-        );
-        box-shadow: var( --kendo-prompt-suggestion-shadow, #{$kendo-prompt-suggestion-shadow} );
-    }
-
+    @include kendo-prompt--theme-base();
 }

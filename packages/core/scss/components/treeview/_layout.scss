@@ -80,7 +80,7 @@
 
     // Treeview toggle
     .k-treeview-toggle {
-        margin-inline-start: -$kendo-treeview-indent;
+        margin-inline-start: calc( #{$kendo-treeview-indent} * -1);
         flex: none;
         display: inline-flex;
         flex-flow: row nowrap;

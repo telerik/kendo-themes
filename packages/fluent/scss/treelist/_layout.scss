@@ -1,49 +1,18 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/treelist/_layout.scss" as *;
 
 @mixin kendo-treelist--layout() {
+    @include kendo-treelist--layout-base();
 
     // Base
     .k-treelist {
-        &.k-grid-display-block.k-grid-lockedcolumns {
-            display: block;
-        }
-
         .k-status {
-            padding-inline: .6em;
-            padding-block: .4em;
-            line-height: 1.6em;
-
             // TODO: see what this does and use a better name
             .k-loading {
-                vertical-align: baseline;
                 margin-right: k-spacing(1);
-
-                // TODO
-                display: none;
             }
-        }
-
-        .k-treelist-dragging,
-        .k-treelist-dragging .k-state-hover,
-        .k-treelist-dragging .k-hover {
-            cursor: default;
-        }
-
-        .k-drop-hint {
-            transform: translate(0, -50%);
-        }
-
-        tr.k-footer td,
-        tr.k-footer-template td {
-            border-width: var( --kendo-treelist-footer-row-border-width, #{$kendo-treelist-footer-row-border-width} ) 0;
-            border-style: solid;
-            font-weight: var( --kendo-font-weight-bold, bold );
-        }
-
-        tr.k-footer + tr.k-footer td {
-            border-top-width: 0;
         }
 
         .k-i-caret-alt-down,
@@ -52,55 +21,7 @@
         }
     }
 
-
-    // Sticky headers
-    .k-treelist-scrollable {
-        > table,
-        .k-grid-header tr,
-        .k-grid-header th {
-            background-color: inherit;
-        }
-
-        .k-grid-toolbar {
-            position: sticky;
-            z-index: 3;
-            top: 0;
-            left: 0;
-        }
-
-        .k-grid-header th {
-            position: sticky;
-            z-index: 1;
-        }
-
-        .k-grid-header th.k-grid-header-sticky {
-            z-index: 3;
-        }
-
-        thead.k-grid-header {
-            padding-inline-end: 0;
-        }
-
-        tr.k-group-footer + tr.k-group-footer td {
-            border-top-width: 0;
-        }
-
-    }
-
-    .k-drag-separator {
-        display: inline-block;
-        border-right: 1px solid;
-        height: 1em;
-        vertical-align: top;
-        margin-block: 0;
-        margin-inline: .5em;
-    }
-
     .k-treelist-toggle {
-        margin-block: calc( var( --kendo-icon-padding ) * -1 );
-        padding: var( --kendo-icon-padding, .25rem );
-        box-sizing: content-box;
-        cursor: pointer;
+        padding: var( --kendo-icon-padding, k-spacing(1) );
     }
-
 }

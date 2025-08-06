@@ -1,4 +1,5 @@
 @use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 @use "../input/_variables.scss" as *;
 
 @mixin kendo-date-range-picker--theme() {
@@ -8,18 +9,26 @@
         &:disabled,
         &[disabled],
         &.k-disabled {
-            @include disabled(
-                $color: var( --kendo-daterange-picker-disabled-text, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ),
-                $bg: var( --kendo-daterange-picker-disabled-bg, transparent ),
-                $border: var( --kendo-daterange-picker-disabled-border, currentColor )
+                @include disabled(
+                    $color: $kendo-daterange-picker-disabled-text,
+                    $bg: $kendo-daterange-picker-disabled-bg,
+                    $border: $kendo-daterange-picker-disabled-border
             );
 
             .k-input {
                 @include fill(
-                    $color: var( --kendo-input-disabled-text, inherit ),
-                    $bg: var( --kendo-input-disabled-bg, transparent ),
-                    $border: var( --kendo-input-disabled-border, currentColor )
+                    $color: $kendo-input-disabled-text,
+                    $bg: $kendo-input-disabled-bg,
+                    $border: $kendo-input-disabled-border
                 )
+            }
+
+            .k-input-outline {
+                border-color: $kendo-input-outline-disabled-border;
+            }
+
+            .k-input-flat {
+                border-color: $kendo-input-flat-disabled-border;
             }
 
         }

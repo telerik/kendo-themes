@@ -1,249 +1,37 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
 @use "../core/spacing/_index.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/upload/_layout.scss" as *;
 
 @mixin kendo-upload--layout() {
+    @include kendo-upload--layout-base();
 
     .k-upload {
-        border-width: var( --kendo-upload-border-width, #{$kendo-upload-border-width} );
-        border-style: solid;
-        box-sizing: border-box;
-        outline: 0;
-        font-family: var( --kendo-upload-font-family, #{$kendo-upload-font-family} );
-        font-size: var( --kendo-upload-font-size, #{$kendo-upload-font-size} );
-        line-height: var( --kendo-upload-line-height, #{$kendo-upload-line-height} );
-        position: relative;
-        display: block;
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        .k-upload-button {
-            min-width: 7em;
-        }
-
-        // Drop zone
-        .k-dropzone,
-        .k-upload-dropzone {
-            padding-inline: var( --kendo-upload-dropzone-padding-x, #{$kendo-upload-dropzone-padding-x} );
-            padding-block: var( --kendo-upload-dropzone-padding-y, #{$kendo-upload-dropzone-padding-y} );
-            border-width: 0;
-            text-align: end;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-            background-color: transparent;
-
-            .k-dropzone-hint {
-                font-style: normal;
-                font-weight: normal;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                position: relative;
-                flex: 1;
-            }
-
-            .k-upload-status {
-                font-weight: normal;
-                display: flex;
-                align-items: center;
-                position: relative;
-
-                > .k-icon {
-                    margin-inline-end: var( --kendo-upload-icon-spacing, #{$kendo-upload-icon-spacing} );
-                }
-            }
-
-            .k-upload-status + .k-dropzone-hint {
-                display: none;
-            }
-        }
-
-        .k-dropzone-active {
-            .k-upload-status {
-                display: none;
-            }
-
-            .k-upload-status + .k-dropzone-hint {
-                display: block;
-            }
-        }
-
-        // Upload files list
-        .k-upload-files {
-            max-height: var( --kendo-upload-max-height, #{$kendo-upload-max-height} );
-            overflow-y: auto;
-            margin: 0;
-            padding: 0;
-            border-width: 1px 0 0;
-            border-style: solid;
-            border-color: inherit;
-            list-style: none;
-
-            .k-file-multiple,
-            .k-file-single {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .k-file-single {
-                align-items: center;
-            }
-
-            .k-file-multiple {
-                align-items: flex-start;
-            }
-
-            .k-file {
-                padding-inline: var( --kendo-upload-item-padding-x, #{$kendo-upload-item-padding-x} );
-                padding-block: var( --kendo-upload-item-padding-y, #{$kendo-upload-item-padding-y} ) calc( var( --kendo-upload-item-padding-y, #{$kendo-upload-item-padding-y} ) + var( --kendo-upload-progress-thickness, #{$kendo-upload-progress-thickness} ) );
-                border-width: 0 0 1px;
-                border-style: solid;
-                outline: none;
-                display: flex;
-                align-items: flex-start;
-                position: relative;
-            }
-            .k-file:last-child {
-                border-width: 0;
-            }
-
-            .k-filename {
-                margin-inline-start: k-spacing(2);
-                flex: 1;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                position: relative;
-            }
-
-            .k-upload-pct {
-                margin-inline: var( --kendo-upload-icon-spacing, #{$kendo-upload-icon-spacing} );
-                font-weight: normal;
-                vertical-align: middle;
-            }
-
-            ~ .k-clear-selected,
-            ~ .k-upload-selected {
-                margin-block-start: calc( -1 * #{k-spacing(1)} );
-                border-width: 0;
-            }
-
-            ~ .k-upload-selected {
-                border-inline-start: 1px;
-                border-left-style: solid;
-                margin-inline-start: -1px;
-            }
-
-            .k-file-name,
-            .k-file-size,
-            .k-file-validation-message,
-            .k-file-summary {
-                display: block;
-            }
-
-            .k-file-name {
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                position: relative;
-            }
-
-            .k-file-size,
-            .k-file-summary,
-            .k-file-validation-message {
-                font-size: var( --kendo-upload-validation-font-size, #{$kendo-upload-validation-font-size} );
-            }
-
-            .k-file-state {
-                visibility: hidden;
-            }
-
-            .k-file-icon-wrapper {
-
-                .k-file-state {
-                    position: absolute;
-                }
-            }
+        .k-filename {
+            margin-inline-start: k-spacing(2);
         }
 
         .k-upload-files .k-file-info {
             margin-inline-start: 0;
             margin-inline-end: 0;
-            min-height: var( --kendo-icon-size-xxl, 2rem );
-            display: block;
-            overflow: hidden;
-            flex: 1 0 0;
         }
 
         .k-multiple-files-wrapper,
         .k-file-single > .k-file-info {
             margin-inline-start: k-spacing(2);
             margin-inline-end: 0;
-            min-height: var( --kendo-icon-size-xxl, 2rem );
-            display: block;
-            overflow: hidden;
-            flex: 1 0 0;
-        }
-
-        .k-multiple-files-wrapper {
-
-            .k-file-info {
-                margin-block-end: var( --kendo-upload-multiple-items-spacing, #{$kendo-upload-multiple-items-spacing} );
-                display: block;
-            }
-
-            .k-file-summary {
-                margin-block-start: calc( -1 * var( --kendo-upload-multiple-items-spacing, #{$kendo-upload-multiple-items-spacing} ) / 3);
-            }
         }
 
         .k-progressbar {
-            --kendo-progressbar-height: var( --kendo-upload-progress-thickness, #{$kendo-upload-progress-thickness} );
-            position: absolute;
-            left: var( --kendo-upload-item-padding-x, #{$kendo-upload-item-padding-x} );
-            right: var( --kendo-upload-item-padding-x, #{$kendo-upload-item-padding-x} );
-            bottom: calc( var( --kendo-upload-item-padding-y, #{$kendo-upload-item-padding-y} ) / 2 );
-            width: auto;
+            left: $kendo-upload-item-padding-x;
+            right: $kendo-upload-item-padding-x;
+            bottom: calc( $kendo-upload-item-padding-y / 2 );
         }
-
-        // Action buttons
-        .k-actions {
-            border-top-width: 1px;
-        }
-
     }
 
     .k-upload-button-wrap {
-        position: relative;
-        direction: ltr;
-
         input {
-            // font should not depend on outside styles, otherwise upload may break
-            font: 170px monospace !important; // stylelint-disable-line declaration-no-important
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            cursor: pointer;
-            position: absolute;
-            bottom: 0;
-            right: 0;
             z-index: 2;
-        }
-
-        input[disabled],
-        input.k-disabled {
-            visibility: hidden;
         }
     }
 }

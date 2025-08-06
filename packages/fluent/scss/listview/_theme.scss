@@ -1,55 +1,26 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/listview/_theme.scss" as *;
 
 @mixin kendo-listview--theme() {
-    // Listview
-    .k-listview {
-        @include fill(
-            var( --kendo-listview-text, $kendo-listview-text ),
-            var( --kendo-listview-bg, $kendo-listview-bg ),
-            var( --kendo-listview-border, $kendo-listview-border )
-        );
-    }
+    @include kendo-listview--theme-base();
 
-
-    // Listview content
-    .k-listview-content {
-
-        > .k-focus {
-            @include fill(
-                var( --kendo-listview-item-focus-text, $kendo-listview-item-focus-text ),
-                var( --kendo-listview-item-focus-bg, $kendo-listview-item-focus-bg )
-            );
-            box-shadow: var( --kendo-listview-item-focus-shadow, $kendo-listview-item-focus-shadow );
-        }
-
-        > .k-selected {
-            @include fill(
-                var( --kendo-listview-item-selected-text, $kendo-listview-item-selected-text ),
-                var( --kendo-listview-item-selected-bg, $kendo-listview-item-selected-bg )
-            )
-        }
-    }
-
-    // List item
-    .k-listview-item {
-        border-color: $kendo-listview-border;
-    }
+    // Fluent-specific styles
 
     // Listview header
     .k-listview-header {
         @include fill(
-            var( --kendo-listview-header-text, $kendo-listview-header-text ),
-            var( --kendo-listview-header-bg, $kendo-listview-header-bg ),
-            var( --kendo-listview-header-border, $kendo-listview-header-border )
+            $kendo-listview-header-text,
+            $kendo-listview-header-bg,
+            $kendo-listview-header-border
         )
     }
 
     // Listview footer
     .k-listview-footer {
         @include fill(
-            var( --kendo-listview-footer-text, $kendo-listview-footer-text ),
-            var( --kendo-listview-footer-bg, $kendo-listview-footer-bg )
+            $kendo-listview-footer-text,
+            $kendo-listview-footer-bg
         )
     }
 }

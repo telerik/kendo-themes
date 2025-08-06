@@ -1,92 +1,47 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/treeview/_theme.scss" as *;
 
 @mixin kendo-treeview--theme() {
+    @include kendo-treeview--theme-base();
 
-    .k-treeview {
-        @include fill(
-            var( --kendo-treeview-text, #{$kendo-treeview-text} ),
-            var( --kendo-treeview-bg, #{$kendo-treeview-bg} ),
-            var( --kendo-treeview-border, #{$kendo-treeview-border} )
-        );
-    }
-
-
-    // Treeview item
-    .k-treeview-item:disabled,
-    .k-treeview-item.k-disabled {
-        background-color: transparent;
-    }
-
-
-    // Treeview leaf
     .k-treeview-leaf {
-        @include fill(
-            var( --kendo-treeview-item-text, #{$kendo-treeview-item-text} ),
-            var( --kendo-treeview-item-bg, #{$kendo-treeview-item-bg} ),
-            var( --kendo-treeview-item-border, #{$kendo-treeview-item-border} )
-        );
-
         // Hover state
         &:hover,
         &.k-hover {
-            --kendo-treeview-item-text: var( --kendo-treeview-item-hover-text, #{$kendo-treeview-item-hover-text} );
-            --kendo-treeview-item-bg: var( --kendo-treeview-item-hover-bg, #{$kendo-treeview-item-hover-bg} );
-            --kendo-treeview-item-border: var( --kendo-treeview-item-hover-border, #{$kendo-treeview-item-hover-border} );
+            @include fill(
+                $kendo-treeview-item-hover-text,
+                $kendo-treeview-item-hover-bg,
+                $kendo-treeview-item-hover-border,
+            );
         }
 
         // Focus state
         &:focus,
         &.k-focus {
-            --kendo-treeview-item-text: var( --kendo-treeview-item-focus-text, #{$kendo-treeview-item-focus-text} );
-            --kendo-treeview-item-bg: var( --kendo-treeview-item-focus-bg, #{$kendo-treeview-item-focus-bg} );
-            --kendo-treeview-item-border: var( --kendo-treeview-item-focus-border, #{$kendo-treeview-item-focus-border} );
-
-            @include box-shadow( $kendo-treeview-item-focus-shadow );
+           @include fill(
+                $kendo-treeview-item-focus-text,
+                $kendo-treeview-item-focus-bg,
+                $kendo-treeview-item-focus-border,
+            );
         }
 
         // Selected state
         &.k-selected {
-            --kendo-treeview-item-text: var( --kendo-treeview-item-selected-text, #{$kendo-treeview-item-selected-text} );
-            --kendo-treeview-item-bg: var( --kendo-treeview-item-selected-bg, #{$kendo-treeview-item-selected-bg} );
-            --kendo-treeview-item-border: var( --kendo-treeview-item-selected-border, #{$kendo-treeview-item-selected-border} );
+            @include fill(
+                $kendo-treeview-item-selected-text,
+                $kendo-treeview-item-selected-bg,
+                $kendo-treeview-item-selected-border,
+            );
         }
     }
 
-    // Disabled state
     .k-treeview-leaf:is(:disabled, .k-disabled),
     :is(.k-treeview-item:disabled, .k-treeview-item.k-disabled) .k-treeview-leaf {
-        --kendo-treeview-item-text: var( --kendo-treeview-item-disabled-text, #{$kendo-treeview-item-disabled-text} );
-        --kendo-treeview-item-bg: var( --kendo-treeview-item-disabled-bg, #{$kendo-treeview-item-disabled-bg} );
-        --kendo-treeview-item-border: var( --kendo-treeview-item-disabled-border, #{$kendo-treeview-item-disabled-border} );
-    }
-
-    // Treeview load more button
-    .k-treeview .k-treeview-load-more-button {
-
         @include fill(
-            var( --kendo-treeview-loadmore-text, #{$kendo-treeview-loadmore-text} ),
-            var( --kendo-treeview-loadmore-bg, #{$kendo-treeview-loadmore-bg} ),
-            var( --kendo-treeview-loadmore-border, #{$kendo-treeview-loadmore-border} )
+            $kendo-treeview-item-disabled-text,
+            $kendo-treeview-item-disabled-bg,
+            $kendo-treeview-item-disabled-border,
         );
-
-        // Hover state
-        &:hover,
-        &.k-hover {
-            --kendo-treeview-loadmore-text: var( --kendo-treeview-loadmore-hover-text, #{$kendo-treeview-loadmore-hover-text} );
-            --kendo-treeview-loadmore-bg: var( --kendo-treeview-loadmore-hover-bg, #{$kendo-treeview-loadmore-hover-bg} );
-            --kendo-treeview-loadmore-border: var( --kendo-treeview-loadmore-hover-border, #{$kendo-treeview-loadmore-hover-border} );
-        }
-
-        // Focus state
-        &:focus,
-        &.k-focus {
-            --kendo-treeview-loadmore-text: var( --kendo-treeview-loadmore-focus-text, #{$kendo-treeview-loadmore-focus-text} );
-            --kendo-treeview-loadmore-bg: var( --kendo-treeview-loadmore-focus-bg, #{$kendo-treeview-loadmore-focus-bg} );
-            --kendo-treeview-loadmore-border: var( --kendo-treeview-loadmore-focus-border, #{$kendo-treeview-loadmore-focus-border} );
-
-            @include box-shadow( $kendo-treeview-loadmore-focus-shadow );
-        }
     }
-
 }

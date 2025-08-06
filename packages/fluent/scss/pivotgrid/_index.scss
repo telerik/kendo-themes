@@ -22,13 +22,7 @@
         @include kendo-icon--styles();
         @include kendo-list--styles();
         @include kendo-pivotgrid--layout();
-        @include kendo-pivotgrid-configurator--layout();
-        @include kendo-pivotgrid-export--layout();
-        @include kendo-pivotgrid-legacy--layout();
-        @include kendo-pivotgrid-configurator-legacy--layout();
         @include kendo-pivotgrid--theme();
-        @include kendo-pivotgrid-configurator--theme();
-        @include kendo-pivotgrid-legacy--theme();
         @include kendo-utils--layout--display();
         @include kendo-utils--layout--position();
         @include kendo-utils--flex-grid--flex-direction();

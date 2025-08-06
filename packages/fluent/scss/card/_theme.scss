@@ -1,116 +1,16 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/card/_theme.scss" as *;
 
 @mixin kendo-card--theme() {
+    @include kendo-card--theme-base();
 
     // Card
     .k-card {
-        color: var( --kendo-card-text, #{$kendo-card-text} );
-        background-color: var( --kendo-card-bg, #{$kendo-card-bg} );
-        border-color: var( --kendo-card-border, #{$kendo-card-border} );
-
-        @include box-shadow( var( --kendo-card-shadow, #{$kendo-card-shadow} ) );
-
-        .k-card-inner {
-            background-color: inherit;
-            border-color: inherit;
-        }
-
-        &:focus,
-        &.k-focus {
-            color: var( --kendo-card-focus-text, #{$kendo-card-focus-text} );
-            background-color: var( --kendo-card-focus-bg, #{$kendo-card-focus-bg} );
-            border-color: var( --kendo-card-focus-border, #{$kendo-card-focus-border} );
-            box-shadow: var( --kendo-card-focus-shadow, #{$kendo-card-focus-shadow} );
-        }
-
-        &.k-selected {
-            box-shadow: var( --kendo-card-focus-shadow, #{$kendo-card-focus-shadow} );
-        }
 
         .k-hr {
-            border-color: var( --kendo-card-border, #{$kendo-card-border} );
+            border-color: $kendo-card-border;
         }
-    }
-
-
-    // Card actions
-    .k-card-actions {
-        border-color: var( --kendo-card-border, #{$kendo-card-border} );
-    }
-
-
-    // Header
-    .k-card-header {
-        @include fill(
-            var( --kendo-card-header-text, #{$kendo-card-header-text} ),
-            var( --kendo-card-header-bg, #{$kendo-card-header-bg} ),
-            var( --kendo-card-header-border, #{$kendo-card-header-border} )
-        );
-    }
-
-
-    // Footer
-    .k-card-footer {
-        @include fill(
-            var( --kendo-card-footer-text, #{$kendo-card-footer-text} ),
-            var( --kendo-card-footer-bg, #{$kendo-card-footer-bg} ),
-            var( --kendo-card-footer-border, #{$kendo-card-footer-border} )
-        );
-    }
-
-
-    // Separator
-    .k-card-separator,
-    .k-card .k-separator {
-        border-color: var( --kendo-card-border, #{$kendo-card-border} );
-    }
-
-
-    // TODO: refactor
-    .k-card-subtitle {
-        color: var( --kendo-card-subtitle-text, #{$kendo-card-subtitle-text} );
-    }
-
-
-    // Card theme colors
-    @each $theme-color, $color-props in $kendo-card-theme-colors {
-
-        $_text-color: map.get( $color-props, text );
-        $_bg: map.get( $color-props, bg );
-        $_border-color: map.get( $color-props, border );
-
-        .k-card-#{$theme-color} {
-            --kendo-card-text: var( --kendo-card-#{$theme-color}-text, #{$_text-color} );
-            --kendo-card-bg: var( --kendo-card-#{$theme-color}-bg, #{$_bg} );
-            --kendo-card-border: var( --kendo-card-#{$theme-color}-border, #{$_border-color} );
-
-            .k-card-subtitle {
-                color: inherit;
-            }
-        }
-    }
-
-
-    .k-card-wrap {
-        &.k-focus,
-        &:focus,
-        &.k-selected {
-            > .k-card {
-                @include box-shadow( var( --kendo-card-shadow, #{$kendo-card-shadow} ) );
-            }
-        }
-    }
-
-
-    // Card callout
-    .k-card-callout {
-        @include fill(
-            $bg: inherit,
-            $border: inherit
-        );
-
-        @include box-shadow( inherit );
     }
 }

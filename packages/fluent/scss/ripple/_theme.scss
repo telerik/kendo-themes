@@ -1,5 +1,5 @@
-@use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/ripple/_theme.scss" as *;
 
 @mixin kendo-ripple--theme() {
-    .k-ripple { }
+    @include kendo-ripple--theme-base();
 }

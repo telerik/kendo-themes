@@ -1,8 +1,10 @@
 @use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/functions/index.import.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/progressbar/_theme.scss" as *;
 
 @mixin kendo-progressbar--theme {
+    @include kendo-progressbar--theme-base();
 
     @keyframes progressbar-indeterminate-animation-horizontal {
         from {
@@ -24,34 +26,17 @@
 
     .k-progressbar {
         &:not(.k-progressbar-indeterminate) {
-
-            @include fill(
-                var( --kendo-progressbar-text, #{$kendo-progressbar-text} ),
-                var( --kendo-progressbar-bg, #{$kendo-progressbar-bg} ),
-                var( --kendo-progressbar-border, #{$kendo-progressbar-border} ),
-                var( --kendo-progressbar-gradient, #{$kendo-progressbar-gradient} )
-            );
-
-            .k-selected {
-                @include fill(
-                    var( --kendo-progressbar-value-text, #{$kendo-progressbar-value-text} ),
-                    var( --kendo-progressbar-value-bg, #{$kendo-progressbar-value-bg} ),
-                    var( --kendo-progressbar-value-border, #{$kendo-progressbar-value-border} ),
-                    var( --kendo-progressbar-value-gradient, #{$kendo-progressbar-value-gradient} )
-                );
-            }
-
             &[disabled],
             &:disabled,
             &.k-disabled {
                 @include fill(
-                    var( --kendo-progressbar-disabled-text, #{$kendo-progressbar-disabled-text} ),
-                    var( --kendo-progressbar-disabled-bg, #{$kendo-progressbar-disabled-bg} ),
-                    var( --kendo-progressbar-disabled-border, #{$kendo-progressbar-disabled-border} )
+                    $kendo-progressbar-disabled-text,
+                    $kendo-progressbar-disabled-bg,
+                    $kendo-progressbar-disabled-border
                 );
 
                 .k-selected {
-                    background-color: var( --kendo-progressbar-value-disabled-bg, #{$kendo-progressbar-value-disabled-bg} );
+                    background-color: $kendo-progressbar-value-disabled-bg;
                 }
             }
         }
@@ -60,42 +45,22 @@
     .k-progressbar.k-chunk-progressbar:not(.k-progressbar-indeterminate) {
         background-color: k-if-var( $kendo-progressbar-chunk-border, transparent );
     }
-    .k-progressbar-chunk {
-        background-color: var( --kendo-progressbar-bg, #{$kendo-progressbar-bg} );
-
-        .k-selected {
-            background-color: var( --kendo-progressbar-value-bg, #{$kendo-progressbar-value-bg} );
-        }
-    }
 
     .k-progressbar-indeterminate {
-        @include fill(
-            var( --kendo-progressbar-indeterminate-text, #{$kendo-progressbar-indeterminate-text} ),
-            var( --kendo-progressbar-indeterminate-bg, #{$kendo-progressbar-indeterminate-bg} ),
-            var( --kendo-progressbar-indeterminate-border, #{$kendo-progressbar-indeterminate-border} )
-            );
+        background-image: none;
 
         &.k-progressbar-horizontal {
             &::after {
-                background: var( --kendo-progressbar-indeterminate-gradient-horizontal, #{$kendo-progressbar-indeterminate-gradient-horizontal} );
-                animation: var( --kendo-progressbar-indeterminate-animation-horizontal, #{$kendo-progressbar-indeterminate-animation-horizontal} );
+                background: $kendo-progressbar-indeterminate-gradient-horizontal;
+                animation: $kendo-progressbar-indeterminate-animation-horizontal;
             }
         }
 
         &.k-progressbar-vertical {
             &::after {
-                background: var( --kendo-progressbar-indeterminate-gradient-vertical, #{$kendo-progressbar-indeterminate-gradient-vertical} );
-                animation: var( --kendo-progressbar-indeterminate-animation-vertical, #{$kendo-progressbar-indeterminate-animation-vertical} );
+                background: $kendo-progressbar-indeterminate-gradient-vertical;
+                animation: $kendo-progressbar-indeterminate-animation-vertical;
             }
         }
-    }
-
-    .k-circular-progressbar-scale {
-        stroke: var( --kendo-circular-progressbar-scale-stroke, #{$kendo-circular-progressbar-scale-stroke} );
-    }
-
-    .k-circular-progressbar-arc {
-        stroke: var( --kendo-circular-progressbar-arc-stroke, #{$kendo-circular-progressbar-arc-stroke} );
-        transition: stroke .5s ease;
     }
 }

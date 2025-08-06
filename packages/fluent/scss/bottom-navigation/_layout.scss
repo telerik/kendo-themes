@@ -1,126 +1,23 @@
-@use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/bottom-navigation/_layout.scss" as *;
 
 @mixin kendo-bottom-navigation--layout() {
 
-    // Bottom Navigation
-    .k-bottom-nav {
-        padding-block: var( --kendo-bottom-nav-padding-y, #{$kendo-bottom-nav-padding-y} );
-        padding-inline: var( --kendo-bottom-nav-padding-x, #{$kendo-bottom-nav-padding-x} );
-        width: 100%;
-        border-width: 0;
-        border-style: solid;
-        border-color: transparent;
-        box-sizing: border-box;
-        font-size: var( --kendo-bottom-nav-font-size, #{$kendo-bottom-nav-font-size} );
-        line-height: var( --kendo-bottom-nav-line-height, #{$kendo-bottom-nav-line-height} );
-        font-family: var( --kendo-bottom-nav-font-family, #{$kendo-bottom-nav-font-family} );
-        letter-spacing: var( --kendo-bottom-nav-letter-spacing, #{$kendo-bottom-nav-letter-spacing} );
-        display: flex;
-        flex-flow: row nowrap;
-        white-space: nowrap;
-        gap: var( --kendo-bottom-nav-gap, #{$kendo-bottom-nav-gap} );
-        overflow: hidden;
-        outline: none;
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-    }
-
-    .k-bottom-nav-border {
-        border-width: var( --kendo-bottom-nav-border-width, #{$kendo-bottom-nav-border-width} );
-    }
-
-    .k-bottom-nav-shadow {
-        box-shadow: var( --kendo-bottom-nav-shadow, #{$kendo-bottom-nav-shadow} );
-    }
+    @include kendo-bottom-navigation--layout-base();
 
     // Items
     .k-bottom-nav-item {
-        padding-block: var( --kendo-bottom-nav-item-padding-y, #{$kendo-bottom-nav-item-padding-y} );
-        padding-inline: var( --kendo-bottom-nav-item-padding-x, #{$kendo-bottom-nav-item-padding-x} );
-        min-width: var( --kendo-bottom-nav-item-min-width, #{$kendo-bottom-nav-item-min-width} );
-        max-width: var( --kendo-bottom-nav-item-max-width, #{$kendo-bottom-nav-item-max-width} );
-        min-height: var( --kendo-bottom-nav-item-min-height, #{$kendo-bottom-nav-item-min-height} );
-        border-width: 0;
-        border-radius: var( --kendo-bottom-nav-item-border-radius, #{$kendo-bottom-nav-item-border-radius} );
-        box-sizing: border-box;
         position: relative;
-        font: inherit;
-        display: inline-flex;
-        flex: 1 1 auto;
-        align-items: center;
-        justify-content: center;
-        gap: var( --kendo-bottom-nav-item-gap, #{$kendo-bottom-nav-item-gap} );
-        text-decoration: none;
-        cursor: pointer;
-        color: inherit;
-        background-color: inherit;
-        border-color: inherit;
-        outline: none;
-
-        &:focus {
-            outline: none;
-        }
 
         &:focus::after,
         &.k-focus::after {
             content: "";
             position: absolute;
             border: medium none;
-            inset: var( --kendo-bottom-nav-item-focus-offset, #{$kendo-bottom-nav-item-focus-offset} );
-            outline-width: var( --kendo-bottom-nav-item-focus-outline-width, #{$kendo-bottom-nav-item-focus-outline-width} );
-            outline-style: var( --kendo-bottom-nav-item-focus-outline-style, #{$kendo-bottom-nav-item-focus-outline-style} );
+            inset: $kendo-bottom-nav-item-focus-offset;
+            outline-width: $kendo-bottom-nav-item-focus-outline-width;
+            outline-style: $kendo-bottom-nav-item-focus-outline-style;
             z-index: 1;
         }
-
-        &:hover {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        > .k-bottom-nav-link {
-            margin-block: var( --kendo-bottom-nav-item-padding-y, #{$kendo-bottom-nav-item-padding-y} );
-            margin-inline: var( --kendo-bottom-nav-item-padding-x, #{$kendo-bottom-nav-item-padding-x} );
-            padding-block: var( --kendo-bottom-nav-item-padding-y, #{$kendo-bottom-nav-item-padding-y} );
-            padding-inline: var( --kendo-bottom-nav-item-padding-x, #{$kendo-bottom-nav-item-padding-x} );
-            width: 100%;
-            color: inherit;
-            display: flex;
-            flex-flow: row nowrap;
-            flex: 1 0 auto;
-            align-items: center;
-            justify-content: center;
-            outline: 0;
-        }
     }
-    .k-bottom-nav-item.k-disabled {
-        background-color: initial;
-    }
-
-    .k-bottom-nav-item-text {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 100%;
-    }
-
-    // Horizontal Item Layout
-    .k-bottom-nav-item-flow-horizontal .k-bottom-nav-item {
-        flex-flow: row nowrap;
-    }
-
-    // Vertical Item Layout
-    .k-bottom-nav-item-flow-vertical .k-bottom-nav-item {
-        flex-direction: column;
-    }
-
-    // Positioning
-    .k-bottom-nav.k-pos-fixed {
-        bottom: 0;
-        z-index: 1;
-    }
-
 }

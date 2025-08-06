@@ -1,19 +1,5 @@
-@use "./_variables.scss" as *;
-@use "../tooltip/_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/validator/_layout.scss" as *;
 
 @mixin kendo-validator--layout() {
-
-    .k-validator-tooltip {
-        margin-block-start: calc( var( --kendo-validator-tooltip-margin, #{$kendo-tooltip-callout-size} ) + #{$kendo-tooltip-border-width} );
-        width: auto;
-        white-space: normal;
-        display: flex;
-        align-items: center;
-        // NOTE: This works around popup / tooltip stackin issue
-        z-index: 9999;
-    }
-    .k-grid .k-validator-tooltip {
-        max-width: 300px;
-    }
-
+    @include kendo-validator--layout-base();
 }

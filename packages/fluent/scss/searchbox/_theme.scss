@@ -1,9 +1,12 @@
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/searchbox/_theme.scss" as *;
 
 @mixin kendo-searchbox--theme() {
+    @include kendo-searchbox--theme-base();
+
     .k-searchbox {
         .k-input-icon {
-            color: var( --kendo-searchbox-icon-color, #{$kendo-searchbox-icon-color} )
+            color: $kendo-searchbox-icon-color;
         }
      }
 }

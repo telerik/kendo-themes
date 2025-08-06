@@ -1,6 +1,5 @@
+@use "@progress/kendo-theme-core/scss/components/multiselect/_layout.scss" as *;
+
 @mixin kendo-multiselect--layout() {
-
-    // Multiselect
-    .k-multiselect {}
-
+    @include kendo-multiselect--layout-base();
 }

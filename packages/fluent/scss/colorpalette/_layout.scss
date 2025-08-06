@@ -1,50 +1,18 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/colorpalette/_layout.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-color-palette--layout() {
+    @include kendo-color-palette--layout-base();
 
-    // ColorPalette
-    .k-colorpalette {
-        border-width: 0;
-        box-sizing: border-box;
-        outline: 0;
-        font-size: var( --kendo-color-palette-font-size, #{$kendo-color-palette-font-size} );
-        font-family: var( --kendo-color-palette-font-family, #{$kendo-color-palette-font-family} );
-        line-height: var( --kendo-color-palette-line-height, #{$kendo-color-palette-line-height} );
-        display: inline-flex;
-        position: relative;
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        &.k-disabled {
-            opacity: .3;
-        }
+    .k-colorpalette.k-disabled {
+        opacity: .3;
     }
 
-    // Table
-    .k-colorpalette-table {
-        width: 100%;
-        height: 100%;
-        border-collapse: collapse;
-        position: relative;
-    }
-
-    // Tile
     .k-colorpalette-tile {
-        outline-width: var( --kendo-color-palette-tile-outline-width, #{$kendo-color-palette-tile-outline-width} );
-        outline-style: var( --kendo-color-palette-tile-outline-style, #{$kendo-color-palette-tile-outline-style} );
-        width: var( --kendo-color-palette-tile-width, #{$kendo-color-palette-tile-width} );
-        height: var( --kendo-color-palette-tile-height, #{$kendo-color-palette-tile-height} );
-        box-sizing: border-box;
-        overflow: hidden;
-        cursor: pointer;
+        outline-width: $kendo-color-palette-tile-outline-width;
+        outline-style: $kendo-color-palette-tile-outline-style;
 
         &:hover,
         &.k-hover {
@@ -61,7 +29,6 @@
         }
     }
 
-    // ColorPalette sizes
     @each $size, $size-props in $kendo-color-palette-sizes {
         $_tile-width: map.get( $size-props, width );
         $_tile-height: map.get( $size-props, height );
@@ -73,5 +40,4 @@
             }
         }
     }
-
 }

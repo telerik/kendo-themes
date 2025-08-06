@@ -1,3 +1,7 @@
 @use "../calendar/_variables.scss" as *;
 
-$kendo-datetime-width: calc( #{$kendo-calendar-header-min-width} + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ) ) !default;
+$kendo-datetime-width: var( --kendo-datetime-width, calc( #{$kendo-calendar-header-min-width} + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ) ) ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/datetimepicker/_variables.scss" with (
+    $kendo-datetime-width: $kendo-datetime-width
+);

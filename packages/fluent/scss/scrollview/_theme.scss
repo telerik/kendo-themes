@@ -1,88 +1,64 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/scrollview/_theme.scss" as *;
 
 @mixin kendo-scrollview--theme() {
+    @include kendo-scrollview--theme-base();
 
     .k-scrollview {
-        @include fill(
-            var( --kendo-scrollview-text, #{$kendo-scrollview-text} ),
-            var( --kendo-scrollview-bg, #{$kendo-scrollview-bg} ),
-            var( --kendo-scrollview-border, #{$kendo-scrollview-border} )
-        );
-
         &.k-scrollview-dark {
             kendo-scrollview-pager,
             .k-scrollview-nav-wrap {
-                background-color: var( --kendo-scrollview-pager-dark-bg, #{$kendo-scrollview-pager-dark-bg} );
+                background-color: $kendo-scrollview-pager-dark-bg;
             }
         }
 
         &.k-scrollview-light {
             kendo-scrollview-pager,
             .k-scrollview-nav-wrap {
-                background-color: var( --kendo-scrollview-pager-light-bg, #{$kendo-scrollview-pager-light-bg} );
+                background-color: $kendo-scrollview-pager-light-bg;
             }
         }
-    }
-
-    .k-scrollview:focus,
-    .k-scrollview-wrap:focus {
-        outline: none;
-
-    }
-    .k-scrollview-elements {
-        color: var( --kendo-scrollview-navigation-color, #{$kendo-scrollview-navigation-color} );
     }
 
     .k-scrollview-next,
     .k-scrollview-prev {
-        color: var( --kendo-scrollview-navigation-color, #{$kendo-scrollview-navigation-color} );
-        background-color: var( --kendo-scrollview-navigation-bg, #{$kendo-scrollview-navigation-bg} );
-        text-shadow: var( --kendo-scrollview-navigation-arrow-shadow, #{$kendo-scrollview-navigation-arrow-shadow} );
-        outline-width: 0;
-        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+        text-shadow: $kendo-scrollview-navigation-arrow-shadow;
 
         &:focus,
         &.k-focus {
-
             .k-icon::before {
-                box-shadow: var( --kendo-scrollview-navigation-focus-shadow, #{$kendo-scrollview-navigation-focus-shadow} );
+                box-shadow: $kendo-scrollview-navigation-focus-shadow;
             }
         }
 
         &:hover,
         &.k-hover {
-            text-shadow: var( --kendo-scrollview-navigation-arrow-hover-shadow, #{$kendo-scrollview-navigation-arrow-hover-shadow} );
+            text-shadow: $kendo-scrollview-navigation-arrow-hover-shadow;
         }
     }
 
     .k-scrollview-nav > .k-link {
-        background-color: var( --kendo-scrollview-pagebutton-bg, #{$kendo-scrollview-pagebutton-bg} );
-        border: var( --kendo-scrollview-pagebutton-border, #{$kendo-scrollview-pagebutton-border} );
-
         &.k-primary {
-            background-color: var( --kendo-scrollview-pagebutton-primary-bg, #{$kendo-scrollview-pagebutton-primary-bg} );
-            border: var( --kendo-scrollview-pagebutton-primary-border, #{$kendo-scrollview-pagebutton-primary-border} );
-
             &:focus,
             &.k-focus {
-                box-shadow: var( --kendo-scrollview-pagebutton-primary-focus-shadow, #{$kendo-scrollview-pagebutton-primary-focus-shadow} );
+                box-shadow: $kendo-scrollview-pagebutton-primary-focus-shadow;
             }
 
             &:hover,
             &.k-hover {
-                box-shadow: var( --kendo-scrollview-pagebutton-primary-hover-shadow, #{$kendo-scrollview-pagebutton-primary-hover-shadow} );
+                box-shadow: $kendo-scrollview-pagebutton-primary-hover-shadow;
             }
         }
 
         &:focus,
         &.k-focus {
-            box-shadow: var( --kendo-scrollview-pagebutton-focus-shadow, #{$kendo-scrollview-pagebutton-focus-shadow} );
+            box-shadow: $kendo-scrollview-pagebutton-focus-shadow;
         }
 
         &:hover,
         &.k-hover {
-            box-shadow: var( --kendo-scrollview-pagebutton-hover-shadow, #{$kendo-scrollview-pagebutton-hover-shadow} );
+            box-shadow: $kendo-scrollview-pagebutton-hover-shadow;
         }
     }
 }

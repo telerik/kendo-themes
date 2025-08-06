@@ -1,14 +1,5 @@
-@use "../core/_index.scss" as *;
-@use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/action-buttons/_theme.scss" as *;
 
 @mixin kendo-action-buttons--theme() {
-
-    .k-actions {
-        @include fill(
-            var( --kendo-actions-text, #{$kendo-actions-text} ),
-            var( --kendo-actions-bg, #{$kendo-actions-bg} ),
-            var( --kendo-actions-border, #{$kendo-actions-border} )
-        );
-    }
-
+    @include kendo-action-buttons--theme-base();
 }

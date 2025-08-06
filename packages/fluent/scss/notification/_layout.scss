@@ -1,74 +1,8 @@
 @use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/notification/_layout.scss" as *;
 
 @mixin kendo-notification--layout() {
-
-    // Base
-    .k-notification-group {
-        max-height: 100%;
-        display: inline-flex;
-        flex-flow: column-reverse wrap;
-        position: fixed;
-        z-index: 1000;
-        gap: var( --kendo-notificaiton-group-gap, #{$kendo-notification-group-gap} ) 0;
-    }
-
-    // Needed due to the specifics in the implementation of animations in Angular
-    .k-notification-container-animating {
-        overflow: hidden;
-    }
-
-    .k-notification {
-        @include border-radius( var( --kendo-notification-border-radius, #{$kendo-notification-border-radius} ) );
-        padding-inline: var( --kendo-notification-padding-x, #{$kendo-notification-padding-x} );
-        padding-block: var( --kendo-notification-padding-y, #{$kendo-notification-padding-y} );
-        border-width: var( --kendo-notification-border-width, #{$kendo-notification-border-width} );
-        border-style: solid;
-        box-sizing: border-box;
-        outline: 0;
-        font-family: var( --kendo-notification-font-family, #{$kendo-notification-font-family} );
-        font-size: var( --kendo-notification-font-size, #{$kendo-notification-font-size} );
-        line-height: var( --kendo-notification-line-height, #{$kendo-notification-line-height} );
-        cursor: default;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: var( --kendo-notification-icon-spacing, #{$kendo-notification-icon-spacing} );
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        > .k-notification-content {
-            flex: 1 1 auto;
-        }
-
-        > .k-notification-status {
-            flex-shrink: 0;
-        }
-    }
-
-    .k-notification-actions {
-        padding-inline: var( --kendo-notification-actions-padding-x, #{$kendo-notification-actions-padding-x} );
-        padding-block: var( --kendo-notification-actions-padding-y, #{$kendo-notification-actions-padding-y} );
-        flex: none;
-        display: flex;
-        gap: var( --kendo-notification-icon-spacing, #{$kendo-notification-icon-spacing} );
-        flex-flow: row nowrap;
-        align-items: center;
-        cursor: pointer;
-    }
-    .k-notification-action {
-        flex: none;
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        align-self: center;
-    }
+    @include kendo-notification--layout-base();
 
 }

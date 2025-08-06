@@ -1,163 +1,34 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/treeview/_layout.scss" as *;
 
 @mixin kendo-treeview--layout() {
+    @include kendo-treeview--layout-base();
 
-    .k-treeview {
-        padding: 0;
-        border-width: 0;
-        background: none;
-        box-sizing: border-box;
-        outline: 0;
-        font-family: var( --kendo-treeview-font-family, #{$kendo-treeview-font-family} );
-        font-size: var( --kendo-treeview-font-size, 1rem );
-        line-height: var( --kendo-treeview-line-height, normal );
-        display: block;
-        cursor: default;
-        overflow: auto;
-        white-space: nowrap;
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-    }
-
-
-    // Treeview filter
     .k-treeview-filter {
-        padding-inline: var( --kendo-treeview-filter-padding-x, #{$kendo-treeview-filter-padding-x} );
-        padding-block: var( --kendo-treeview-filter-padding-y, #{$kendo-treeview-filter-padding-y} );
-        display: block;
-        position: relative;
-        flex: none;
+        padding-inline: $kendo-treeview-filter-padding-x;
+        padding-block: $kendo-treeview-filter-padding-y;
     }
 
-
-    // Treeview group
-    .k-treeview-group {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        position: relative;
-        outline: 0;
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-
-        &.ng-animating {
-            overflow: hidden;
-        }
-    }
-
-
-    // Treeview wrappers
-    .k-treeview-top,
-    .k-treeview-mid,
-    .k-treeview-bot {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        align-content: center;
-    }
-
-
-    // Treeview item
-    .k-treeview-item {
-        margin: 0;
-        padding-inline-start: var( --kendo-treeview-indent, #{$kendo-treeview-indent} );
-        border-width: 0;
-        display: block;
-        outline-style: none;
-    }
-
-
-    // Treeview toggle
-    .k-treeview-toggle {
-        margin-inline-start: calc( var( --kendo-treeview-indent, #{$kendo-treeview-indent} ) * -1 );
-        flex: none;
-        display: inline-flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        cursor: pointer;
-    }
     .k-treeview-toggle .k-icon {
-        padding: var( --kendo-icon-padding, .25rem );
-        box-sizing: content-box;
+        padding: var( --kendo-icon-padding, k-spacing(1) );
     }
 
-
-    // Loading icon
     .k-treeview-loading {
-        margin-inline-end: var( --kendo-icon-spacing, .5rem );
+        margin-inline-end: var( --kendo-icon-spacing, k-spacing(2) );
     }
 
-
-    // Checkbox
     .k-treeview .k-checkbox-wrap,
     .k-treeview .k-checkbox-wrapper {
-        padding: var( --kendo-treeview-checkbox-wrap-padding, #{$kendo-treeview-checkbox-wrap-padding} );
-        align-self: center;
+        padding: $kendo-treeview-checkbox-wrap-padding;
     }
 
-
-    // Treeview leaf
     .k-treeview-leaf {
-        @include border-radius( var( --kendo-treeview-item-border-radius, #{$kendo-treeview-item-border-radius} ) );
-        padding-inline: var( --kendo-treeview-item-padding-x, 0 );
-        padding-block: var( --kendo-treeview-item-padding-y, 0 );
-        border: $kendo-treeview-item-border-width solid transparent;
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        align-content: center;
-        vertical-align: middle;
-        position: relative;
-
         .k-icon,
         .k-image,
         .k-sprite {
-            margin-inline-end: var( --kendo-icon-spacing, .5rem );
-        }
-
-        &.k-focus {
-            z-index: 1;
+            margin-inline-end: var( --kendo-icon-spacing, k-spacing(2) );
         }
     }
-
-
-    // Treeview load more button
-    .k-treeview .k-treeview-load-more-button {
-        cursor: pointer;
-
-        &:hover,
-        &.k-hover,
-        &:focus,
-        &.k-focus {
-            text-decoration: underline;
-        }
-    }
-
-
-    // Treeview sizes
-    @each $size, $size-props in $kendo-treeview-sizes {
-        $_font-size: map.get( $size-props, font-size );
-        $_line-height: map.get( $size-props, line-height );
-        $_item-padding-x: map.get( $size-props, item-padding-x );
-        $_item-padding-y: map.get( $size-props, item-padding-y );
-
-        .k-treeview-#{$size} {
-            --kendo-treeview-font-size: var( --kendo-treeview-#{$size}-font-size, #{$_font-size} );
-            --kendo-treeview-line-height: var( --kendo-treeview-#{$size}-line-height, #{$_line-height} );
-
-            .k-treeview-leaf {
-                --kendo-treeview-item-padding-x: var( --kendo-treeview-#{$size}-item-padding-x, #{$_item-padding-x} );
-                --kendo-treeview-item-padding-y: var( --kendo-treeview-#{$size}-item-padding-y, #{$_item-padding-y} );
-            }
-        }
-    }
-
 }

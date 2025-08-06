@@ -1,50 +1,11 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/switch/_layout.scss" as *;
 
 @mixin kendo-switch--layout() {
+    @include kendo-switch--layout-base();
 
-    .k-switch {
-        box-sizing: border-box;
-        width: var( --kendo-switch-width, auto );
-        height: var( --kendo-switch-height, auto );
-        font-family: var( --kendo-switch-font-family, #{$kendo-switch-font-family} );
-        font-size: var( --kendo-switch-font-size, 1rem );
-        outline: 0;
-        display: inline-flex;
-        align-items: center;
-        vertical-align: middle;
-        line-height: 1;
-        position: relative;
-        cursor: pointer;
-        user-select: none;
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-
-        &.k-switch-on .k-switch-thumb-wrap {
-            inset-inline-start: calc( 100% - ( var( --kendo-switch-thumb-width, auto ) / 2 ) - var( --kendo-switch-thumb-offset, 0 ) );
-        }
-        &.k-switch-off .k-switch-thumb-wrap {
-            inset-inline-start: calc( ( var( --kendo-switch-thumb-width, auto ) / 2 ) + var( --kendo-switch-thumb-offset, 0 ) );
-        }
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        [type="checkbox"] {
-            display: none;
-        }
-
-        &[aria-readonly="true"] {
-            pointer-events: none;
-        }
-    }
-
-
-    // Focus
     .k-switch:focus,
     .k-switch.k-focus {
         &::after {
@@ -55,111 +16,14 @@
         }
     }
 
-
-    // Readonly
-    .k-switch.k-readonly {
-        pointer-events: none;
-    }
-
-
-    // Switch track
     .k-switch-track {
-        width: var( --kendo-switch-width, auto );
-        height: var( --kendo-switch-height, auto );
-        border-width: var( --kendo-switch-track-border-width, #{$kendo-switch-track-border-width} );
-        border-style: if( $kendo-switch-track-border-width == null, null, solid );
-        outline: 0;
-        display: flex;
-        flex-flow: row nowrap;
-        flex: 1 0 auto;
-        position: relative;
         transition: all 100ms ease-in-out;
     }
 
-
-    // Switch thumb
     .k-switch-thumb-wrap {
-        width: 0;
-        height: 0;
-        overflow: visible;
-        position: absolute;
         transition: inset-inline-start 100ms ease-in-out;
-        top: 50%;
     }
     .k-switch-thumb {
-        width: var( --kendo-switch-thumb-width, auto );
-        height: var( --kendo-switch-thumb-height, auto );
-        border-width: var( --kendo-switch-thumb-border-width, #{$kendo-switch-thumb-border-width} );
-        border-style: if( $kendo-switch-thumb-border-width == null, null, solid );
-        display: block;
-        position: absolute;
-        transform: translate( -50%, -50% );
         transition: all 100ms ease-in-out;
     }
-
-
-    // Switch label
-    .k-switch-label-on,
-    .k-switch-label-off {
-        text-transform: var( --kendo-switch-label-text-transform, #{$kendo-switch-label-text-transform} );
-        display: var( --kendo-switch-label-display, #{$kendo-switch-label-display} );
-        position: absolute;
-        top: 50%;
-        transform: translateY( -50% );
-        overflow: hidden;
-    }
-    .k-switch-label-on {
-        inset-inline-start: var( --kendo-switch-label-offset, 0 );
-    }
-    .k-switch-label-off {
-        inset-inline-end: var( --kendo-switch-label-offset, 0 );
-    }
-
-
-    // Switch sizes
-    @each $size, $size-props in $kendo-switch-sizes {
-
-        $_font-size: map.get( $size-props, font-size );
-        $_track-width: map.get( $size-props, track-width );
-        $_track-height: map.get( $size-props, track-height );
-        $_thumb-width: map.get( $size-props, thumb-width );
-        $_thumb-height: map.get( $size-props, thumb-height );
-        $_thumb-offset: map.get( $size-props, thumb-offset );
-        $_label-offset: map.get( $size-props, label-offset );
-
-        .k-switch-#{$size} {
-            --kendo-switch-width: var( --kendo-switch-#{$size}-width, #{$_track-width} );
-            --kendo-switch-height: var( --kendo-switch-#{$size}-height, #{$_track-height} );
-            --kendo-switch-font-size: var( --kendo-switch-#{$size}-font-size, #{$_font-size} );
-
-            .k-switch-label-on,
-            .k-switch-label-off {
-                --kendo-switch-label-offset: var( --kendo-switch-#{$size}-label-offset, #{$_label-offset} );
-            }
-
-            .k-switch-thumb,
-            .k-switch-thumb-wrap {
-                --kendo-switch-thumb-width: var( --kendo-switch-#{$size}-thumb-width, #{$_thumb-width} );
-                --kendo-switch-thumb-height: var( --kendo-switch-#{$size}-thumb-height, #{$_thumb-height} );
-            }
-            .k-switch-thumb-wrap {
-                --kendo-switch-thumb-offset: var( --kendo-switch-#{$size}-thumb-offset, #{$_thumb-offset} );
-            }
-        }
-
-    }
-
-
-    // RTL
-    .k-switch[dir="rtl"],
-    [dir="rtl"] .k-switch,
-    .k-switch.k-rtl,
-    .k-rtl .k-switch {
-
-        .k-switch-thumb {
-            transform: translate( 50%, -50% );
-        }
-
-    }
-
 }

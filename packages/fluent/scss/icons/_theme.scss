@@ -1,1 +1,7 @@
-@mixin kendo-icon--theme() {}
+@use "@progress/kendo-theme-core/scss/components/icons/_theme.scss" as *;
+
+
+@mixin kendo-icon--theme() {
+    @include kendo-icon--theme-base();
+}
+

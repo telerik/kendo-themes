@@ -162,7 +162,7 @@
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         > .k-button + .k-button {
-            margin-inline-start: if( $kendo-button-border-width == 0, null, -$kendo-button-border-width );
+            margin-inline-start: if( $kendo-button-border-width == 0, null, calc( -1 * $kendo-button-border-width ) );
         }
 
         > .k-button:hover,
@@ -268,10 +268,10 @@
         display: none;
         pointer-events: none;
         position: absolute;
-        left: -$kendo-button-border-width;
-        right: -$kendo-button-border-width;
-        top: -$kendo-button-border-width;
-        bottom: -$kendo-button-border-width;
+        left: calc( -1 * $kendo-button-border-width );
+        right: calc( -1 * $kendo-button-border-width );
+        top: calc( -1 * $kendo-button-border-width );
+        bottom: calc( -1 * $kendo-button-border-width );
         z-index: 0;
         transition: opacity .2s ease-in-out;
     }
@@ -333,10 +333,10 @@
             display: none;
             pointer-events: none;
             position: absolute;
-            left: -$kendo-button-border-width;
-            right: -$kendo-button-border-width;
-            top: -$kendo-button-border-width;
-            bottom: -$kendo-button-border-width;
+            left: calc( -1 * $kendo-button-border-width );
+            right: calc( -1 * $kendo-button-border-width );
+            top: calc( -1 * $kendo-button-border-width );
+            bottom: calc( -1 * $kendo-button-border-width );
             z-index: 0;
             transition: opacity .2s ease-in-out;
         }

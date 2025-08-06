@@ -1,93 +1,30 @@
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/filter/_layout.scss" as *;
 
 @mixin kendo-filter--layout() {
+    @include kendo-filter--layout-base();
 
     .k-filter {
-        box-sizing: border-box;
-        border-width: 0;
-        display: inline-block;
-        background-color: transparent;
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        ul {
-            padding: 0;
-
-            li {
-                list-style-type: none;
-            }
-        }
-
-        .k-filter-container,
-        .k-filter-preview {
-            margin-block-end: var( --kendo-filter-bottom-margin, #{$kendo-filter-bottom-margin} );
-        }
-
-        .k-filter-lines,
-        .k-filter-item {
-            padding-inline-start: var( --kendo-filter-padding-x, #{$kendo-filter-padding-x} );
-        }
-
         .k-filter-toolbar {
-            display: inline-flex;
-            position: relative;
-            padding-inline: 0;
-            padding-block: var( --kendo-filter-padding-y, #{$kendo-filter-padding-y} );
-
             &::before {
-                content: "";
-                position: absolute;
-                width: var( --kendo-filter-padding-x, #{$kendo-filter-padding-x} );
-                height: var( --kendo-filter-line-size, #{$kendo-filter-line-size} );
                 top: 50%;
-                inset-inline-start: calc( var( --kendo-filter-padding-x, #{$kendo-filter-padding-x} ) * -1 );
+                inset-block-start: unset;
             }
-
-            .k-toolbar {
-                border-style: solid;
-            }
-        }
-        .k-filter-operator .k-dropdown-list {
-            width: var( --kendo-filter-operator-dropdown-width, #{$kendo-filter-operator-dropdown-width} );
         }
 
         .k-filter-item {
-            position: relative;
-
             &::before {
-                content: "";
-                position: absolute;
-                width: var( --kendo-filter-line-size, #{$kendo-filter-line-size} );
-                height: 100%;
-                top: calc( var( --kendo-filter-padding-y, #{$kendo-filter-padding-y} ) * -1 );
-                inset-inline-start: 0;
+                top: calc( $kendo-filter-padding-y * -1 );
+                inset-block-start: unset;
             }
         }
 
-        // The second selector targets the Angular rendering
         .k-filter-lines .k-filter-item:last-child > .k-filter-toolbar::after,
         .k-filter-lines .k-filter-item:last-child > * > .k-filter-toolbar::after {
-            content: "";
-            position: absolute;
-            width: var( --kendo-filter-line-size, #{$kendo-filter-line-size} );
-            top: calc( ( var( --kendo-filter-padding-y, #{$kendo-filter-padding-y} ) * -1 ) - var( --kendo-filter-line-size, #{$kendo-filter-line-size} ) );
+            top: calc( ( $kendo-filter-padding-y * -1 ) - $kendo-filter-line-size );
             bottom: 50%;
-            inset-inline-start: calc( var( --kendo-filter-padding-x, #{$kendo-filter-padding-x} ) * -1 );
-        }
-
-        // The forth and fifth selectors targets the Angular rendering
-        .k-filter-group-main::before,
-        .k-filter-group-main > .k-filter-toolbar::before,
-        .k-filter-group-main > .k-filter-toolbar::after,
-        .k-filter-group-main > * > .k-filter-toolbar::before,
-        .k-filter-group-main > * > .k-filter-toolbar::after,
-        .k-filter-lines .k-filter-item:last-child::before {
-            display: none;
+            inset-block-start: unset;
+            inset-block-end: unset;
         }
     }
-
 }

@@ -1,55 +1,33 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/input/_theme.scss" as *;
 
 @mixin kendo-input--theme() {
 
-    .k-input {
-        color: var( --kendo-input-text, initial );
-        background-color: var( --kendo-input-bg, initial );
-        border-color: var( --kendo-input-border, initial );
+    @include kendo-input--theme-base();
 
-        &:hover,
-        &.k-hover {
-            --kendo-input-text: var( --kendo-input-hover-text );
-            --kendo-input-bg: var( --kendo-input-hover-bg );
-            --kendo-input-border: var( --kendo-input-hover-border );
-        }
+    .k-input {
 
         &:focus,
         &.k-focus,
         &:focus-within {
-            --kendo-input-text: var( --kendo-input-focus-text );
-            --kendo-input-bg: var( --kendo-input-focus-bg );
-            --kendo-input-border: var( --kendo-input-focus-border );
 
             &::after {
-                border-color: var( --kendo-input-focus-border, transparent );
+                border-color: $kendo-input-focus-border;
             }
-        }
-
-        &:focus:hover,
-        &:focus.k-hover,
-        &.k-focus:hover,
-        &.k-focus.k-hover {
-            --kendo-input-text: var( --kendo-input-hover-focus-text );
-            --kendo-input-bg: var( --kendo-input-hover-focus-bg );
-            --kendo-input-border: var( --kendo-input-hover-focus-border );
         }
 
         &:disabled,
         &[disabled],
         &.k-disabled {
-            --kendo-input-text: var( --kendo-input-disabled-text );
-            --kendo-input-bg: var( --kendo-input-disabled-bg );
-            --kendo-input-border: var( --kendo-input-disabled-border );
 
             .k-input-prefix {
-                color: var( --kendo-input-prefix-disabled-text, #{$kendo-input-prefix-disabled-text} );
+                color: $kendo-input-prefix-disabled-text;
             }
 
             .k-input-suffix {
-                color: var( --kendo-input-suffix-disabled-text, #{$kendo-input-suffix-disabled-text} );
+                color: $kendo-input-suffix-disabled-text;
             }
 
             .k-input-button {
@@ -62,161 +40,107 @@
         &.k-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            --kendo-input-border: var( --kendo-input-invalid-border, #{$kendo-input-invalid-border} );
+            border-color: $kendo-input-invalid-border;
 
             &::after {
-                border-color: var( --kendo-input-invalid-border, #{$kendo-input-invalid-border} );
+                border-color: $kendo-input-invalid-border;
             }
 
             .k-input-validation-icon {
-                color: var( --kendo-input-invalid-text, #{$kendo-input-invalid-text} );
+                color: $kendo-input-invalid-text;
             }
 
             &:focus:hover,
             &.k-focus:hover,
             &:focus.k-hover,
             &.k-focus.k-hover {
-                --kendo-input-border: var( --kendo-input-invalid-border, #{$kendo-input-invalid-border} );
+                border-color: $kendo-input-invalid-border;
 
                 .k-input-validation-icon {
-                    color: var( --kendo-input-invalid-text, #{$kendo-input-invalid-text} );
+                    color: $kendo-input-invalid-text;
                 }
             }
         }
+    }
 
-        // Prefix & Suffix
-        .k-input-prefix {
-            color: var( --kendo-input-prefix-text, #{$kendo-input-prefix-text} );
+    .k-input-outline {
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            color: $kendo-input-outline-disabled-text;
+            background: $kendo-input-outline-disabled-bg;
+            border-color: $kendo-input-outline-disabled-border;
         }
+    }
 
-        .k-input-suffix {
-            color: var( --kendo-input-suffix-text, #{$kendo-input-suffix-text} );
-        }
-
-        .k-input-separator {
-            border-color: var( --kendo-input-separator-text, #{$kendo-input-separator-text} );
+    .k-input-flat {
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            color: $kendo-input-flat-disabled-text;
+            background: $kendo-input-flat-disabled-bg;
+            border-color: $kendo-input-flat-disabled-border;
         }
     }
 
     .k-picker {
-        color: var( --kendo-picker-text, initial );
-        background-color: var( --kendo-picker-bg, initial );
-        border-color: var( --kendo-picker-border, initial );
-
-        &:hover,
-        &.k-hover {
-            --kendo-picker-text: var( --kendo-picker-hover-text );
-            --kendo-picker-bg: var( --kendo-picker-hover-bg );
-            --kendo-picker-border: var( --kendo-picker-hover-border );
-        }
 
         &:focus,
         &.k-focus,
         &:focus-within {
-            --kendo-picker-text: var( --kendo-picker-focus-text );
-            --kendo-picker-bg: var( --kendo-picker-focus-bg );
-            --kendo-picker-border: var( --kendo-picker-focus-border );
+            color: $kendo-picker-focus-text;
+            background-color: $kendo-picker-focus-bg;
+            border-color: $kendo-picker-focus-border;
 
             &::after {
-                border-color: var( --kendo-picker-focus-border );
+                border-color: $kendo-picker-focus-border;
             }
-        }
-
-        &:focus:hover,
-        &:focus.k-hover,
-        &.k-focus:hover,
-        &.k-focus.k-hover {
-            --kendo-picker-text: var( --kendo-picker-hover-focus-text );
-            --kendo-picker-bg: var( --kendo-picker-hover-focus-bg );
-            --kendo-picker-border: var( --kendo-picker-hover-focus-border );
-        }
-
-        &:disabled,
-        &[disabled],
-        &.k-disabled {
-            --kendo-picker-text: var( --kendo-picker-disabled-text );
-            --kendo-picker-bg: var( --kendo-picker-disabled-bg );
-            --kendo-picker-border: var( --kendo-picker-disabled-border );
         }
 
         // Invalid
         &.k-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            --kendo-picker-border: var( --kendo-input-invalid-border, #{$kendo-input-invalid-border} );
+            border-color: $kendo-input-invalid-border;
 
             &::after {
-                border-color: var( --kendo-input-invalid-border, #{$kendo-input-invalid-border} );
+                border-color: $kendo-input-invalid-border;
             }
 
             .k-input-validation-icon {
-                color: var( --kendo-input-invalid-text, #{$kendo-input-invalid-text} );
+                color: $kendo-input-invalid-text;
             }
 
             &:focus:hover,
             &.k-focus:hover,
             &:focus.k-hover,
             &.k-focus.k-hover {
-                --kendo-picker-border: var( --kendo-input-invalid-border, #{$kendo-input-invalid-border} );
+                border-color: $kendo-input-invalid-border;
 
                 .k-input-validation-icon {
-                    color: var( --kendo-input-invalid-text, #{$kendo-input-invalid-text} );
+                    color: $kendo-input-invalid-text;
                 }
             }
         }
     }
 
-    @each $component, $fill-modes in $kendo-input-theme-colors {
-        @each $fill-mode, $color-props in $fill-modes {
+    .k-picker-outline {
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            color: $kendo-picker-outline-disabled-text;
+            background: $kendo-picker-outline-disabled-bg;
+            border-color: $kendo-picker-outline-disabled-border;
+        }
+    }
 
-            $_text-color: map.get( $color-props, text );
-            $_background-color: map.get( $color-props, bg );
-            $_border-color: map.get( $color-props, border );
-
-            $_hover-text: map.get( $color-props, hover-text );
-            $_hover-bg: map.get( $color-props, hover-bg );
-            $_hover-border: map.get( $color-props, hover-border );
-
-            $_focus-text: map.get( $color-props, focus-text );
-            $_focus-bg: map.get( $color-props, focus-bg );
-            $_focus-border: map.get( $color-props, focus-border );
-
-            $_hover-focus-text: map.get( $color-props, hover-focus-text );
-            $_hover-focus-bg: map.get( $color-props, hover-focus-bg );
-            $_hover-focus-border: map.get( $color-props, hover-focus-border );
-
-            $_disabled-text: map.get( $color-props, disabled-text );
-            $_disabled-bg: map.get( $color-props, disabled-bg );
-            $_disabled-border: map.get( $color-props, disabled-border );
-
-            .k-#{$component}-#{$fill-mode} {
-                --kendo-#{$component}-text: var( --kendo-#{$component}-#{$fill-mode}-text, #{$_text-color} );
-                --kendo-#{$component}-bg: var( --kendo-#{$component}-#{$fill-mode}-bg, #{$_background-color} );
-                --kendo-#{$component}-border: var( --kendo-#{$component}-#{$fill-mode}-border, #{$_border-color} );
-
-
-                --kendo-#{$component}-hover-text: var( --kendo-#{$component}-#{$fill-mode}-hover-text, #{$_hover-text} );
-                --kendo-#{$component}-hover-bg: var( --kendo-#{$component}-#{$fill-mode}-hover-bg, #{$_hover-bg} );
-                --kendo-#{$component}-hover-border: var( --kendo-#{$component}-#{$fill-mode}-hover-border, #{$_hover-border} );
-
-
-
-                --kendo-#{$component}-focus-text: var( --kendo-#{$component}-#{$fill-mode}-focus-text, #{$_focus-text} );
-                --kendo-#{$component}-focus-bg: var( --kendo-#{$component}-#{$fill-mode}-focus-bg, #{$_focus-bg});
-                --kendo-#{$component}-focus-border: var( --kendo-#{$component}-#{$fill-mode}-focus-border, #{$_focus-border} );
-
-
-
-                --kendo-#{$component}-hover-focus-text: var( --kendo-#{$component}-#{$fill-mode}-hover-focus-text, #{$_hover-focus-text} );
-                --kendo-#{$component}-hover-focus-bg: var( --kendo-#{$component}-#{$fill-mode}-hover-focus-bg, #{$_hover-focus-bg} );
-                --kendo-#{$component}-hover-focus-border: var( --kendo-#{$component}-#{$fill-mode}-hover-focus-border, #{$_hover-focus-border} );
-
-
-                --kendo-#{$component}-disabled-text: var( --kendo-#{$component}-#{$fill-mode}-disabled-text, #{$_disabled-text} );
-                --kendo-#{$component}-disabled-bg: var( --kendo-#{$component}-#{$fill-mode}-disabled-bg, #{$_disabled-bg} );
-                --kendo-#{$component}-disabled-border: var( --kendo-#{$component}-#{$fill-mode}-disabled-border, #{$_disabled-border} );
-
-            }
+    .k-picker-flat {
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            color: $kendo-picker-flat-disabled-text;
+            background: $kendo-picker-flat-disabled-bg;
+            border-color: $kendo-picker-flat-disabled-border;
         }
     }
 }

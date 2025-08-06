@@ -123,6 +123,7 @@
 
         .k-switch-#{$size}[dir="rtl"],
         [dir="rtl"] .k-switch-#{$size},
+        .k-rtl.k-switch-#{$size},
         .k-rtl .k-switch-#{$size} {
 
             .k-switch-label-on {

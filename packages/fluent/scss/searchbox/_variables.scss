@@ -2,4 +2,4 @@
 
 /// Color of the searchbox icon.
 /// @group searchbox
-$kendo-searchbox-icon-color: k-color(primary) !default;
+$kendo-searchbox-icon-color: var( --kendo-searchbox-icon-color, k-color(primary) ) !default;

@@ -1,31 +1,18 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/badge/_theme.scss" as *;
 
 @mixin kendo-badge--theme() {
+    @include kendo-badge--theme-base();
 
-    .k-badge {
-        color: var( --kendo-badge-text, #{$kendo-badge-text} );
-        background-color: var( --kendo-badge-bg, #{$kendo-badge-bg} );
-        border-color: var( --kendo-badge-border, #{$kendo-badge-border} );
+    .k-badge-solid-base {
+        color: $kendo-badge-text;
+        background-color: $kendo-badge-bg;
+        border-color: $kendo-badge-border;
     }
 
-    .k-badge-outline {
-        background-color: transparent;
-    }
-
-    @each $fill-mode, $theme-colors in $kendo-badge-theme-colors {
-        @each $theme-color, $color-props in $theme-colors {
-
-            $_text: map.get( $color-props, text );
-            $_bg: map.get( $color-props, bg );
-            $_border: map.get( $color-props, border );
-
-            .k-badge-#{$fill-mode}-#{$theme-color} {
-                --kendo-badge-text: var( --kendo-badge-#{$fill-mode}-#{$theme-color}-text, #{$_text} );
-                --kendo-badge-bg: var( --kendo-badge-#{$fill-mode}-#{$theme-color}-bg, #{$_bg} );
-                --kendo-badge-border: var( --kendo-badge-#{$fill-mode}-#{$theme-color}-border, #{$_border} );
-            }
-        }
+    .k-badge-outline-base {
+        border-color: $kendo-badge-border;
     }
 }

@@ -1,31 +1,22 @@
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/filter/_theme.scss" as *;
 
 @mixin kendo-filter--theme() {
+    @include kendo-filter--theme-base();
 
     .k-filter {
-        color: var( --kendo-filter-text, #{$kendo-filter-text} );
+        color: $kendo-filter-text;
 
-        .k-filter-preview-field {
-            color: var( --kendo-filter-preview-field-text, #{$kendo-filter-preview-field-text} );
-        }
-
-        .k-filter-preview-operator {
-            color: var( --kendo-filter-preview-operator-text, #{$kendo-filter-preview-operator-text} );
-        }
-
-        // The last selector targets the Angular rendering
         .k-filter-item::before,
         .k-filter-toolbar::before,
         .k-filter-lines .k-filter-item:last-child > .k-filter-toolbar::after,
         .k-filter-lines .k-filter-item:last-child > * > .k-filter-toolbar::after {
-            background-color: var( --kendo-filter-line-bg, #{$kendo-filter-line-bg} );
+            background-color: $kendo-filter-line-bg;
         }
 
-        // Focus
         .k-toolbar:focus,
         .k-toolbar.k-focus {
-            border-color: var( --kendo-filter-toolbar-focus-border, #{$kendo-filter-toolbar-focus-border} );
+            border-color: $kendo-filter-toolbar-focus-border;
         }
     }
-
 }

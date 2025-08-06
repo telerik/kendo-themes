@@ -1,156 +1,24 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/window/_layout.scss" as *;
 
 @mixin kendo-window--layout() {
+    @include kendo-window--layout-base();
 
-    .k-window {
-        @include border-radius( var( --kendo-window-border-radius, #{$kendo-window-border-radius} ) );
-        padding: 0;
-        border-width: var( --kendo-window-border-width, #{$kendo-window-border-width} );
-        border-style: solid;
-        box-sizing: border-box;
-        outline: 0;
-        font-family: var( --kendo-window-font-family, #{$kendo-window-font-family} );
-        font-size: var( --kendo-window-font-size, #{$kendo-window-font-size} );
-        line-height: var( --kendo-window-line-height, #{$kendo-window-line-height} );
-        display: inline-flex;
-        flex-direction: column;
-        position: absolute;
-        z-index: 10002;
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-    }
-
-    .k-window.k-window-maximized {
-        max-width: 100vw;
-        max-height: 100vh;
-        box-shadow: none;
-    }
-
-    // Window sizes
-    @each $size, $kendo-width in $kendo-window-sizes {
-        .k-window-#{$size} { width: $kendo-width; }
-    }
-
-
-    // Title bar
-    .k-window-titlebar {
-        @include border-top-radius( var( --kendo-window-border-radius, #{$kendo-window-border-radius} ) );
-        padding-inline: var( --kendo-window-titlebar-padding-x, #{$kendo-window-titlebar-padding-x} );
-        padding-block: var( --kendo-window-titlebar-padding-y, #{$kendo-window-titlebar-padding-y} );
-        white-space: nowrap;
-        display: flex;
-        flex-direction: row;
-        flex-shrink: 0;
-        align-items: center;
+    .k-window-content:first-child,
+    .k-window-content:last-child {
+        padding-block: $kendo-window-inner-padding-y;
+        padding-inline: $kendo-window-inner-padding-x;
     }
 
     // Title bar title text
     .k-window-title {
-        padding-block: .5em;
-        padding-inline: 0;
-        margin-block: -.5em;
-        margin-inline: 0;
-        font-size: var( --kendo-window-title-font-size, #{$kendo-window-title-font-size} );
-        line-height: var( --kendo-window-title-line-height, #{$kendo-window-title-line-height} );
-        font-weight: var( --kendo-window-title-font-weight, #{$kendo-window-title-font-weight} );
-        text-overflow: ellipsis;
-        overflow: hidden;
-        cursor: default;
-        flex: 1;
-
-        &:empty::before {
-            content: "\200b";
-        }
-    }
-
-
-    // Actions
-    .k-window-titlebar-actions {
-        margin-block: -5em;
-        margin-inline: 0;
-        margin-inline-end: calc( #{$kendo-window-titlebar-padding-y} - #{$kendo-window-titlebar-padding-x} );
-        line-height: 1;
-        display: flex;
-        gap: var( --kendo-window-actions-gap, #{$kendo-window-actions-gap} );
-        flex-flow: row nowrap;
-        flex-shrink: 0;
-        align-items: center;
-        vertical-align: top;
-    }
-    .k-window-titlebar-action {
-        flex-shrink: 0;
-        opacity: var( --kendo-window-action-opacity, #{$kendo-window-action-opacity} );
-
-        &:hover,
-        &.k-hover {
-            opacity: var( --kendo-window-action-hover-opacity, #{$kendo-window-action-hover-opacity} );
-        }
-    }
-
-
-    // Content
-    .k-window-content,
-    .k-prompt-container {
-        padding-inline: var( --kendo-window-inner-padding-x, #{$kendo-window-inner-padding-x} );
-        padding-block: var( --kendo-window-inner-padding-y, #{$kendo-window-inner-padding-y} );
-        border-width: 0;
-        border-color: inherit;
-        color: inherit;
-        background: none;
-        outline: 0;
-        overflow: auto;
-        position: relative;
-        flex: 1 1 auto;
-    }
-
-    .k-window-content + .k-prompt-container {
-        margin-block-start: calc( -1 * var( --kendo-window-inner-padding-y, #{$kendo-window-inner-padding-y} ) / 2 );
-    }
-
-    .k-window-iframecontent {
-        padding: 0;
-        overflow: visible;
-
-        .k-content-frame {
-            vertical-align: top;
-            border: 0;
-            width: 100%;
-            height: 100%;
-        }
+        font-weight: $kendo-window-title-font-weight;
     }
 
     // Buttons Layout
     .k-window-actions {
-        @include border-bottom-radius( var( --kendo-window-border-radius, #{$kendo-window-border-radius} ) );
-        padding-inline: var( --kendo-window-buttongroup-padding-x, #{$kendo-window-buttongroup-padding-x} );
-        padding-block: 0 var( --kendo-window-buttongroup-padding-y, #{$kendo-window-buttongroup-padding-y} );
-        border-width: var( --kendo-window-buttongroup-border-width, #{$kendo-window-buttongroup-border-width} ) 0 0;
-        border-style: solid;
-        border-color: inherit;
-        flex: 0 0 auto;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        gap: var( --kendo-window-buttongroup-spacing, #{$kendo-window-buttongroup-spacing} );
-        overflow: hidden;
-    }
-
-
-    // Prompt
-    .k-prompt-container {
-
-        > .k-textarea {
-            width: 100%;
-        }
-
-    }
-
-    // Resize Handles
-    .k-window {
-        .k-resize-n { top: 0; }
-        .k-resize-e { right: 0; }
-        .k-resize-s { bottom: 0; }
-        .k-resize-w { left: 0; }
+        padding-block-start: 0;
+        gap: $kendo-window-buttongroup-spacing;
     }
 }

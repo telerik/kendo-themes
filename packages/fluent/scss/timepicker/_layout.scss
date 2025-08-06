@@ -1,6 +1,10 @@
+@use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/timepicker/_layout.scss" as *;
+
 @mixin kendo-time-picker--layout() {
+    @include kendo-time-picker--layout-base();
 
-    // Time picker
-    .k-timepicker {}
-
+    .k-time-list-wrapper .k-title {
+        padding-block-end: k-spacing(3);
+    }
 }

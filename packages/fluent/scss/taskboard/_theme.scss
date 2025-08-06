@@ -1,61 +1,26 @@
 @use "../core/_index.scss" as *;
+@use "../card/_variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/taskboard/_theme.scss" as *;
 
 @mixin kendo-task-board--theme() {
-
-    // TaskBoard
-    .k-taskboard {
-        @include fill(
-            var( --kendo-taskboard-text, #{$kendo-taskboard-text} ),
-            var( --kendo-taskboard-bg, #{$kendo-taskboard-bg} ),
-            var( --kendo-taskboard-border, #{$kendo-taskboard-border} )
-        );
-    }
-
-    // Columns
-    .k-taskboard-column {
-        @include fill(
-            var( --kendo-taskboard-column-text, #{$kendo-taskboard-column-text} ),
-            var( --kendo-taskboard-column-bg, #{$kendo-taskboard-column-bg} ),
-            var( --kendo-taskboard-column-border, #{$kendo-taskboard-column-border} )
-        );
-    }
-    .k-taskboard-column:focus,
-    .k-taskboard-column.k-focus {
-        @include fill(
-            var( --kendo-taskboard-column-focus-text, #{$kendo-taskboard-column-focus-text} ),
-            var( --kendo-taskboard-column-focus-bg, #{$kendo-taskboard-column-focus-bg} ),
-            var( --kendo-taskboard-column-border, #{$kendo-taskboard-column-focus-border} )
-        );
-    }
-
-    .k-taskboard-column-header {
-        @include fill(
-            $color: var( --kendo-taskboard-column-header-text, #{$kendo-taskboard-column-header-text} )
-        );
-    }
-
-    // Preview/Edit Pane
-    .k-taskboard-pane {
-        @include fill (
-            var( --kendo-taskboard-pane-text, #{$kendo-taskboard-pane-text} ),
-            var( --kendo-taskboard-pane-bg, #{$kendo-taskboard-pane-bg} ),
-            var( --kendo-taskboard-pane-border, #{$kendo-taskboard-pane-border} )
-        );
-    }
-
-    .k-taskboard-pane-header {
-        @include fill(
-            $color: var( --kendo-taskboard-pane-header-text, #{$kendo-taskboard-pane-header-text} )
-        );
-    }
+    @include kendo-task-board--theme-base();
 
     // Cards
     .k-taskboard-card {
-        &.k-selected {
-            @include box-shadow(
-                var( --kendo-taskboard-card-selected-shadow, #{$kendo-taskboard-card-selected-shadow} )
+        &:focus,
+        &.k-focus {
+            @include fill(
+                $kendo-card-focus-text,
+                $kendo-card-focus-bg,
+                $kendo-card-focus-border
             );
+            @include focus-indicator( $kendo-card-focus-shadow );
+        }
+
+        &.k-selected {
+            @include box-shadow( $kendo-card-focus-shadow );
         }
 
         &.k-disabled {
@@ -72,12 +37,12 @@
         }
     }
 
-    // Card Drag Placeholder
-    .k-taskboard-drag-placeholder {
-        @include fill(
-            $bg: var( --kendo-taskboard-drag-placeholder-bg, #{$kendo-taskboard-drag-placeholder-bg} ),
-            $border: var( --kendo-taskboard-drag-placeholder-border, #{$kendo-taskboard-drag-placeholder-border} )
+    // Toolbar
+    .k-taskboard-toolbar {
+       @include fill(
+            $bg: $kendo-toolbar-bg
         );
+        @include box-shadow( $kendo-toolbar-shadow );
     }
 
 }

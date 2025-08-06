@@ -4,91 +4,91 @@
 
 /// The horizontal padding of the Pager.
 /// @group pager
-$kendo-pager-padding-x: k-spacing(2) !default;
+$kendo-pager-padding-x: var( --kendo-pager-padding-x, #{k-spacing(2)} ) !default;
 /// The horizontal padding of the small Pager.
 /// @group pager
-$kendo-pager-sm-padding-x: k-spacing(1.5) !default;
+$kendo-pager-sm-padding-x: var( --kendo-pager-sm-padding-x, #{k-spacing(1.5)} ) !default;
 /// The horizontal padding of the medium Pager.
 /// @group pager
-$kendo-pager-md-padding-x: k-spacing(2) !default;
+$kendo-pager-md-padding-x: var( --kendo-pager-md-padding-x, #{k-spacing(2)} ) !default;
 /// The horizontal padding of the large Pager.
 /// @group pager
-$kendo-pager-lg-padding-x: k-spacing(2.5) !default;
+$kendo-pager-lg-padding-x: var( --kendo-pager-lg-padding-x, #{k-spacing(2.5)} ) !default;
 
 /// The vertical padding of the small Pager.
 /// @group pager
-$kendo-pager-sm-padding-y: $kendo-pager-sm-padding-x !default;
+$kendo-pager-sm-padding-y: var( --kendo-pager-sm-padding-y, #{$kendo-pager-sm-padding-x} ) !default;
 /// The vertical padding of the medium Pager.
 /// @group pager
-$kendo-pager-md-padding-y: $kendo-pager-md-padding-x !default;
+$kendo-pager-md-padding-y: var( --kendo-pager-md-padding-y, #{$kendo-pager-md-padding-x} ) !default;
 /// The vertical padding of the large Pager.
 /// @group pager
-$kendo-pager-lg-padding-y: $kendo-pager-lg-padding-x !default;
+$kendo-pager-lg-padding-y: var( --kendo-pager-lg-padding-y, #{$kendo-pager-lg-padding-x} ) !default;
 /// The border width of the Pager.
 /// @group pager
-$kendo-pager-border-width: 1px !default;
+$kendo-pager-border-width: var( --kendo-pager-border-width, 1px ) !default;
 
 /// The font family of the Pager.
 /// @group pager
-$kendo-pager-font-family: var( --kendo-font-family, normal ) !default;
+$kendo-pager-font-family: var( --kendo-pager-font-family, var( --kendo-font-family, normal ) ) !default;
 /// The font size of the Pager.
 /// @group pager
-$kendo-pager-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-pager-font-size: var( --kendo-pager-font-size, var( --kendo-font-size, inherit ) ) !default;
 /// The line height of the Pager.
 /// @group pager
-$kendo-pager-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-pager-line-height: var( --kendo-pager-line-height, var( --kendo-line-height, normal ) ) !default;
 
 /// The background color of the Pager.
 /// @group pager
-$kendo-pager-bg: k-color(surface) !default;
+$kendo-pager-bg: var( --kendo-pager-bg, #{k-color(surface)} ) !default;
 /// The text color of the Pager.
 /// @group pager
-$kendo-pager-text: k-color(on-app-surface) !default;
+$kendo-pager-text: var( --kendo-pager-text, #{k-color(on-app-surface)} ) !default;
 /// The border color of the Pager.
 /// @group pager
-$kendo-pager-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-pager-border: var( --kendo-pager-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 
 /// The background color of the focused Pager.
 /// @group pager
-$kendo-pager-focus-bg: var( --kendo-pager-bg, #{$kendo-pager-bg}) !default;
+$kendo-pager-focus-bg: var( --kendo-pager-focus-bg, #{$kendo-pager-bg} ) !default;
 /// The text color of the focused Pager.
 /// @group pager
-$kendo-pager-focus-text: var( --kendo-pager-text, #{$kendo-pager-text}) !default;
+$kendo-pager-focus-text: var( --kendo-pager-focus-text, #{$kendo-pager-text} ) !default;
 /// The border color of the focused Pager.
 /// @group pager
-$kendo-pager-focus-border: k-color(border) !default;
+$kendo-pager-focus-border: var( --kendo-pager-focus-border, #{k-color(border)} ) !default;
 
 /// The border radius of the Pager items.
 /// @group pager
-$kendo-pager-item-border-radius: 0 !default;
+$kendo-pager-item-border-radius: var( --kendo-pager-item-border-radius, 0 ) !default;
 /// The spacing around the Pager items.
 /// @group pager
-$kendo-pager-item-spacing: null !default;
+$kendo-pager-item-spacing: var( --kendo-pager-item-spacing, null ) !default;
 
 /// The spacing between the item groups of the small Pager.
 /// @group pager
-$kendo-pager-sm-item-group-spacing: k-spacing(2) !default;
+$kendo-pager-sm-item-group-spacing: var( --kendo-pager-sm-item-group-spacing, #{k-spacing(2)} ) !default;
 /// The spacing between the item groups of the medium Pager.
 /// @group pager
-$kendo-pager-md-item-group-spacing: k-spacing(2) !default;
+$kendo-pager-md-item-group-spacing: var( --kendo-pager-md-item-group-spacing, #{k-spacing(2)} ) !default;
 /// The spacing between the item groups of the large Pager.
 /// @group pager
-$kendo-pager-lg-item-group-spacing: k-spacing(2) !default;
+$kendo-pager-lg-item-group-spacing: var( --kendo-pager-lg-item-group-spacing, #{k-spacing(2)} ) !default;
 
 /// The text color of the Pagers' sizes label.
 /// @group pager
-$kendo-pager-sizes-label-text: k-color(on-app-surface) !default;
+$kendo-pager-sizes-label-text: var( --kendo-pager-sizes-label-text, #{k-color(on-app-surface)} ) !default;
 
 /// The text color of the Pagers' info label.
 /// @group pager
-$kendo-pager-info-label-text: k-color(subtle) !default;
+$kendo-pager-info-label-text: var( --kendo-pager-info-label-text, #{k-color(subtle)} ) !default;
 
 /// The width of the Inputs in the Pager.
 /// @group pager
-$kendo-pager-input-width: 5em !default;
+$kendo-pager-input-width: var( --kendo-pager-input-width, 5em ) !default;
 /// The width of the DropDowns in the Pager.
 /// @group pager
-$kendo-pager-dropdown-width: 5em !default;
+$kendo-pager-dropdown-width: var( --kendo-pager-dropdown-width, 5em ) !default;
 
 /// The sizes map of the Pager.
 /// @group pager
@@ -109,3 +109,26 @@ $kendo-pager-sizes: (
         item-group-spacing: $kendo-pager-lg-item-group-spacing
     )
 ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/pager/_variables.scss" with (
+    $kendo-pager-sm-padding-x: $kendo-pager-sm-padding-x,
+    $kendo-pager-md-padding-x: $kendo-pager-md-padding-x,
+    $kendo-pager-lg-padding-x: $kendo-pager-lg-padding-x,
+    $kendo-pager-sm-padding-y: $kendo-pager-sm-padding-y,
+    $kendo-pager-md-padding-y: $kendo-pager-md-padding-y,
+    $kendo-pager-lg-padding-y: $kendo-pager-lg-padding-y,
+    $kendo-pager-sm-item-group-spacing: $kendo-pager-sm-item-group-spacing,
+    $kendo-pager-md-item-group-spacing: $kendo-pager-md-item-group-spacing,
+    $kendo-pager-lg-item-group-spacing: $kendo-pager-lg-item-group-spacing,
+    $kendo-pager-border-width: $kendo-pager-border-width,
+    $kendo-pager-font-family: $kendo-pager-font-family,
+    $kendo-pager-font-size: $kendo-pager-font-size,
+    $kendo-pager-line-height: $kendo-pager-line-height,
+    $kendo-pager-bg: $kendo-pager-bg,
+    $kendo-pager-text: $kendo-pager-text,
+    $kendo-pager-border: $kendo-pager-border,
+    $kendo-pager-focus-bg: $kendo-pager-focus-bg,
+    $kendo-pager-item-spacing: $kendo-pager-item-spacing,
+    $kendo-pager-input-width: $kendo-pager-input-width,
+    $kendo-pager-sizes: $kendo-pager-sizes
+);

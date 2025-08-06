@@ -1,42 +1,8 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/tilelayout/_layout.scss" as *;
 
 @mixin kendo-tile-layout--layout() {
+    @include kendo-tile-layout--layout-base();
 
-    .k-tilelayout {
-        border-width: var( --kendo-tile-layout-border-width, #{$kendo-tile-layout-border-width} );
-        border-style: solid;
-        box-sizing: border-box;
-        outline: 0;
-        display: grid;
-        position: relative;
-        padding-block: var( --kendo-tile-layout-padding-y, #{$kendo-tile-layout-padding-y} );
-        padding-inline: var( --kendo-tile-layout-padding-x, #{$kendo-tile-layout-padding-x} );
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-    }
-
-    .k-tilelayout-item {
-        position: relative;
-        z-index: 0;
-    }
-
-    .k-layout-item-hint {
-        @include border-radius( var( --kendo-tile-layout-hint-border-radius, #{$kendo-tile-layout-hint-border-radius} ) );
-        border-width: var( --kendo-tile-layout-hint-border-width, #{$kendo-tile-layout-hint-border-width} );
-        border-style: solid;
-        position: relative;
-
-        &.k-layout-item-hint-resize {
-            z-index: 3;
-        }
-    }
-
-    .k-tilelayout-item-header.k-card-header {
-        z-index: 0;
-    }
-
-    .k-tilelayout-item-body {
-        min-height: 0;
-    }
 }

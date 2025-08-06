@@ -1,49 +1,12 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/imageeditor/_theme.scss" as *;
 
 @mixin kendo-image-editor--theme() {
+    @include kendo-image-editor--theme-base();
 
-    // Image Editor
-    .k-imageeditor {
-        @include fill(
-            var( --kendo-image-editor-text, #{$kendo-image-editor-text} ),
-            var( --kendo-image-editor-bg, #{$kendo-image-editor-bg} ),
-            var( --kendo-image-editor-border, #{$kendo-image-editor-border} )
-        );
+    .k-imageeditor-canvas {
+        background: none;
+        transform: none;
     }
-
-    // Content
-    .k-imageeditor-content {
-        @include fill(
-            var( --kendo-image-editor-content-text, #{$kendo-image-editor-content-text} ),
-            var( --kendo-image-editor-content-bg, #{$kendo-image-editor-content-bg} ),
-            var( --kendo-image-editor-content-border, #{$kendo-image-editor-content-border} )
-        );
-    }
-
-    // Action Pane
-    .k-imageeditor-action-pane {
-        @include fill(
-            var( --kendo-image-editor-action-pane-text, #{$kendo-image-editor-action-pane-text} ),
-            var( --kendo-image-editor-action-pane-bg, #{$kendo-image-editor-action-pane-bg} ),
-            var( --kendo-image-editor-action-pane-border, #{$kendo-image-editor-action-pane-border} )
-        );
-    }
-
-    // Crop Tool
-    .k-imageeditor-crop {
-        @include fill(
-            var( --kendo-image-editor-crop-text, #{$kendo-image-editor-crop-text} ),
-            var( --kendo-image-editor-crop-bg, #{$kendo-image-editor-crop-bg} ),
-            var( --kendo-image-editor-crop-border, #{$kendo-image-editor-crop-border} )
-        );
-    }
-
-    // Crop Overlay
-    .k-imageeditor-crop-overlay {
-        @include fill (
-            $bg: var( --kendo-image-editor-crop-overlay-bg, #{$kendo-image-editor-crop-overlay-bg} )
-        );
-    }
-
 }

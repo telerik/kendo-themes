@@ -1,41 +1,7 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/popover/_theme.scss" as *;
 
 @mixin kendo-popover--theme() {
-
-    // Popover
-    .k-popover {
-        @include box-shadow( var( --kendo-popover-shadow, $kendo-popover-shadow ) );
-
-        @include fill(
-            var( --kendo-popover-text, $kendo-popover-text ),
-            var( --kendo-popover-bg, $kendo-popover-bg ),
-            var( --kendo-popover-border, $kendo-popover-border )
-        );
-    }
-
-    // Inner
-    .k-popover-inner {
-        background-color: inherit;
-        border-color: inherit;
-    }
-
-    // Header
-    .k-popover-header {
-        @include fill(
-            var( --kendo-popover-header-text, $kendo-popover-header-text ),
-            var( --kendo-popover-header-bg, $kendo-popover-header-bg ),
-            var( --kendo-popover-header-border, $kendo-popover-header-border )
-        );
-    }
-
-    // Callout
-    .k-popover-callout {
-        @include fill(
-            $bg: inherit,
-            $border: inherit
-        );
-
-        @include box-shadow( inherit )
-    }
+    @include kendo-popover--theme-base();
 }

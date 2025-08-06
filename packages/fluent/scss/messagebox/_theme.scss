@@ -1,38 +1,23 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/messagebox/_theme.scss" as *;
 
 @mixin kendo-messagebox--theme() {
+    @include kendo-messagebox--theme-base();
 
     .k-messagebox {
-        color: var( --kendo-messagebox-text, initial );
-        background-color: var( --kendo-messagebox-bg, initial );
-        border-color: var( --kendo-messagebox-border, initial );
 
         a {
             @include fill(
-                $color: var( --kendo-message-box-link-text, #{$kendo-message-box-link-text} ),
+                $color: $kendo-message-box-link-text,
             );
 
             &:hover {
                 @include fill(
-                    $color: var( --kendo-message-box-link-hover-text, #{$kendo-message-box-link-hover-text} ),
+                    $color: $kendo-message-box-link-hover-text,
                 );
             }
-        }
-
-    }
-
-    @each $theme-color, $color-props in $kendo-messagebox-theme-colors {
-
-        $_text: currentColor;
-        $_bg: map.get( $color-props, bg );
-        $_border: map.get( $color-props, border );
-
-        .k-messagebox-#{$theme-color} {
-            --kendo-messagebox-text: var( --kendo-messagebox-#{$theme-color}-text, #{$_text} );
-            --kendo-messagebox-bg: var( --kendo-messagebox-#{$theme-color}-bg, #{$_bg} );
-            --kendo-messagebox-border: var( --kendo-messagebox-#{$theme-color}-border, #{$_border} );
         }
 
     }

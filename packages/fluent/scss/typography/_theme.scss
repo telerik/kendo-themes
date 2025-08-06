@@ -1,22 +1,7 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/typography/_theme.scss" as *;
 
 @mixin kendo-typography--theme() {
-    .k-body {
-        @include fill(
-            k-color(on-app-surface),
-            k-color(app-surface)
-        );
-    }
-
-    // Code snippet
-    .k-pre,
-    .k-code {
-        @include fill(
-            var( --kendo-code-text, #{$kendo-code-text} ),
-            var( --kendo-code-bg, #{$kendo-code-bg} ),
-            var( --kendo-code-border, #{$kendo-code-border} ),
-        );
-    }
-
+    @include kendo-typography--theme-base();
 }

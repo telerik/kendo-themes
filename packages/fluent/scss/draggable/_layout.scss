@@ -1,66 +1,20 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/draggable/_layout.scss" as *;
 
-.k-drag-clue {
-    @include border-radius( var( --kendo-drag-clue-border-radius, #{$kendo-drag-clue-border-radius} ) );
-    padding-inline: var( --kendo-drag-clue-padding-x, #{$kendo-drag-clue-padding-x} );
-    padding-block: var( --kendo-drag-clue-padding-y, #{$kendo-drag-clue-padding-y} );
-    border-width: var( --kendo-drag-clue-border-width, #{$kendo-drag-clue-border-width} );
-    border-style: var( --kendo-drag-clue-border-style, #{$kendo-drag-clue-border-style} );
-    box-sizing: border-box;
-    font-family: var( --kendo-drag-clue-font-family, #{$kendo-drag-clue-font-family} );
-    font-size: var( --kendo-drag-clue-font-size, #{$kendo-drag-clue-font-size} );
-    line-height: var( --kendo-drag-clue-line-height, #{$kendo-drag-clue-line-height} );
-    display: inline-flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    align-content: center;
-    white-space: nowrap;
-    opacity: var( --kendo-drag-clue-opacity, #{$kendo-drag-clue-opacity} );
-    overflow: hidden;
-    position: absolute;
-    z-index: 20000;
-    cursor: move;
-}
-.k-drag-status,
-.k-drag-clue .k-drag-status {
-    margin: 0;
-    margin-inline-end: var( --kendo-drag-clue-spacing, #{$kendo-drag-clue-spacing} );
-}
+@mixin kendo-draggable--layout() {
+    @include kendo-draggable--layout-base();
 
-.k-drop-hint {
-    display: flex;
-    gap: var( --kendo-drop-hint-arrow-spacing, #{$kendo-drop-hint-arrow-spacing} );
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    z-index: 1000;
-    transform: translate(-50%, -50%);
-}
+    .k-drag-status,
+    .k-drag-clue .k-drag-status {
+        margin-inline-end: $kendo-drag-clue-spacing;
+    }
 
-.k-drop-hint-start,
-.k-drop-hint-end {
-    flex-shrink: 0;
-    border-width: calc( var( --kendo-drop-hint-arrow-size, #{$kendo-drop-hint-arrow-size} ) / 2 );
-    border-style: solid;
-    border-radius: 50%;
-    border-color: transparent;
-}
-
-.k-drop-hint-line {
-    flex-grow: 1;
-}
-
-.k-drop-hint-h .k-drop-hint-line {
-    width: var( --kendo-drop-hint-line-h-width, #{$kendo-drop-hint-line-h-width} );
-    height: var( --kendo-drop-hint-line-h-height, #{$kendo-drop-hint-line-h-height} );
-}
-
-.k-drop-hint-v {
-    flex-direction: column;
-
-    .k-drop-hint-line {
-        width: var( --kendo-drop-hint-line-v-width, #{$kendo-drop-hint-line-v-width} );
-        height: var( --kendo-drop-hint-line-v-height, #{$kendo-drop-hint-line-v-height} );
+    .k-drop-hint-h .k-drop-hint-start,
+    .k-drop-hint-v .k-drop-hint-start,
+    .k-drop-hint-h .k-drop-hint-end,
+    .k-drop-hint-v .k-drop-hint-end {
+        border-width: calc( $kendo-drop-hint-arrow-size / 2 );
+        border-radius: 50%;
     }
 }

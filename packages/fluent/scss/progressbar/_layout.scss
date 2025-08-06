@@ -1,189 +1,58 @@
 @use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/progressbar/_layout.scss" as *;
 
 @mixin kendo-progressbar--layout {
 
+    @include kendo-progressbar--layout-base();
+
     // Base
     .k-progressbar {
-        @include border-radius( var( --kendo-progressbar-border-radius, #{$kendo-progressbar-border-radius} ) );
-        --kendo-progressbar-value: 0;
-        border-width: var( --kendo-progressbar-border-width, #{$kendo-progressbar-border-width} );
-        border-style: solid;
-        box-sizing: border-box;
-        outline: 0;
-        font-family: var( --kendo-progressbar-font-family, #{$kendo-progressbar-font-family} );
-        font-size: var( --kendo-progressbar-font-size, #{$kendo-progressbar-font-size} );
-        line-height: var( --kendo-progressbar-line-height, #{$kendo-progressbar-line-height} );
-        display: inline-grid;
-        vertical-align: middle;
-        position: relative;
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-
-        // Selection
-        > .k-progressbar-value {
-            border-width: 0;
-            border-style: solid;
-            display: flex;
-            overflow: hidden;
-            grid-column: 1 / -1;
-            grid-row: 1 / -1;
-        }
-
-
-        // Chunks
-        > .k-progressbar-chunks {
-            border-width: inherit;
-            border-style: inherit;
-            white-space: nowrap;
-            display: flex;
-            align-items: stretch;
-            flex: 1;
-            gap: 1px;
-            grid-column: 1 / -1;
-            grid-row: 1 / -1;
-        }
-
-        .k-progressbar-chunk {
-            display: block;
-            border-width: 0;
-           flex: 1;
-        }
+        @include border-radius( $kendo-progressbar-border-radius );
+        overflow: visible;
     }
-
 
     // Status
     .k-progress-status-wrap {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        overflow: unset;
-        flex-shrink: 0;
+        align-items: flex-start;
         grid-column: 1/-1;
         grid-row: 2/-1;
-
-        &.k-progress-start { justify-content: flex-start; }
-        &.k-progress-center { justify-content: center; }
-        &.k-progress-end { justify-content: flex-end; }
     }
 
     .k-progress-status {
-        padding-inline: var( --kendo-progressbar-padding-x, #{$kendo-progressbar-padding-x} );
-        padding-block: var( --kendo-progressbar-padding-y, #{$kendo-progressbar-padding-y} );
-        min-width: 10px;
-        text-align: center;
-        display: inline-block;
-        white-space: nowrap;
+        padding-inline: $kendo-progressbar-padding-x;
+        padding-block: $kendo-progressbar-padding-y;
     }
 
 
     // Horizontal
     .k-progressbar-horizontal {
-        width: var( --kendo-progressbar-horizontal-width, #{$kendo-progressbar-horizontal-width} );
-        height: var( --kendo-progressbar-height, #{$kendo-progressbar-height} );
-        grid-template-columns: 1fr;
-        grid-template-rows: 100%;
 
         .k-progress-status-wrap {
-            margin-block-start: var( --kendo-progressbar-offset-y, #{$kendo-progressbar-offset-y} );
-        }
-
-        > .k-progressbar-value {
-            width: 0;
-            width: calc( var( --kendo-progressbar-value, 0 ) * 1% );
-            flex-direction: row;
-
-            > .k-progress-status-wrap {
-                width: calc( 100% * ( 100 / var( --kendo-progressbar-value, 1 ) ) );
-            }
-        }
-
-
-        // Chunks
-        > .k-progressbar-chunks {
-            flex-direction: row;
-        }
-
-        // Horizontal reverse
-        &.k-progressbar-reverse {
-
-            > .k-progressbar-value {
-                flex-direction: row-reverse;
-                justify-self: flex-end;
-            }
-
-            > .k-progressbar-chunks {
-                flex-direction: row-reverse;
-            }
+            margin-block-start: $kendo-progressbar-offset-y;
         }
     }
 
 
     // Vertical
     .k-progressbar-vertical {
-        width: var( --kendo-progressbar-height, #{$kendo-progressbar-height} );
-        height: 27em;
-        grid-template-columns: 100%;
-        grid-template-rows: 1fr;
 
         .k-progress-status-wrap {
             flex-direction: column;
             align-items: flex-start;
-            margin-inline-start: var( --kendo-progressbar-vertical-status-offset, #{$kendo-progressbar-vertical-status-offset} );
+            margin-inline-start: $kendo-progressbar-vertical-status-offset;
             grid-row: 1/-1;
             grid-column: -1/1;
         }
 
-        .k-progress-status {
-            writing-mode: vertical-lr;
-        }
-
         > .k-progressbar-value {
-            height: calc( var( --kendo-progressbar-value, 0 ) * 1% );
-            flex-direction: column-reverse;
-            align-self: flex-end;
-            align-items: flex-end;
-
-            > .k-progress-status-wrap {
-                height: calc( 100% * ( 100 / var( --kendo-progressbar-value, 1 ) ) );
-            }
 
             .k-progress-status {
                 display: none;
             }
         }
 
-
-        // Chunk
-        > .k-progressbar-chunks {
-            flex-direction: column-reverse;
-        }
-
-        // Vertical reverse
-        &.k-progressbar-reverse {
-
-            .k-progress-status-wrap {
-                flex-direction: column-reverse;
-            }
-
-            > .k-progressbar-value {
-                flex-direction: column;
-                align-self: flex-start;
-            }
-
-            > .k-progressbar-chunks {
-                flex-direction: column;
-            }
-        }
     }
-
 
     // Indeterminate
     .k-progressbar-indeterminate {
@@ -210,63 +79,8 @@
         }
 
         .k-reset,
-        .k-progress-status-wrap,
-        .k-progressbar-value,
-        .k-progress-chunk {
-            display: none;
-        }
-
         .k-progress-status {
             display: none;
         }
-    }
-
-    // Blazor specific
-    .telerik-blazor.k-progressbar-horizontal {
-
-        > .k-progressbar-value,
-        > .k-progressbar-value > .k-progress-status-wrap {
-            transition: width .1s ease-in-out;
-        }
-    }
-
-
-    .k-circular-progressbar {
-        display: inline-block;
-        text-align: start;
-        position: relative;
-    }
-
-    .k-circular-progressbar-surface {
-        height: 100%;
-
-        & > div {
-            width: 100%;
-            height: 100%;
-        }
-
-        svg {
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    .k-circular-progressbar-scale {
-        fill: none;
-    }
-
-    .k-circular-progressbar-arc {
-        transform-box: fill-box;
-        transform-origin: center center;
-        transform: rotate(-90deg);
-        stroke-linecap: round;
-        fill: none;
-    }
-
-    .k-circular-progressbar-label {
-        position: absolute;
-        text-align: center;
-        padding: 0;
-        margin: 0;
     }
 }

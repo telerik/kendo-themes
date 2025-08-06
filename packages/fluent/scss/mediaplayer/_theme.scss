@@ -1,29 +1,19 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/mediaplayer/_theme.scss" as *;
 
 @mixin kendo-media-player--theme() {
-
-    .k-mediaplayer {
-        @include fill(
-            var( --kendo-media-player-text, #{$kendo-media-player-text} ),
-            var( --kendo-media-player-bg, #{$kendo-media-player-bg} ),
-            var( --kendo-media-player-border, #{$kendo-media-player-border} )
-        );
-    }
-
+    @include kendo-media-player--theme-base();
 
     .k-mediaplayer-overlay {
-        background-color: var( --kendo-media-player-overlay-bg, #{$kendo-media-player-overlay-bg} );
+        background-color: $kendo-media-player-overlay-bg;
     }
-
 
     .k-mediaplayer-titlebar {
-        color: var( --kendo-media-player-titlebar-text, #{$kendo-media-player-titlebar-text} );
-        background-color: var( --kendo-media-player-titlebar-bg, #{$kendo-media-player-titlebar-bg} );
+        background-color: $kendo-media-player-titlebar-bg;
     }
 
-
     .k-mediaplayer-quality {
-        border-color: var( --kendo-media-player-quality-border, #{$kendo-media-player-quality-border} );
+        border-color: $kendo-media-player-quality-border;
     }
 }

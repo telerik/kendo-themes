@@ -1,73 +1,95 @@
-@use "sass:math";
 @use "../core/_index.scss" as *;
 @use "../core/spacing/_index.scss" as *;
 
 /// Borer radius of the drag clue.
 /// @group draggable
-$kendo-drag-clue-border-radius: k-border-radius(md) !default;
+$kendo-drag-clue-border-radius: var( --kendo-drag-clue-border-radius, k-border-radius(md) ) !default;
 /// Borer width of the drag clue.
 /// @group draggable
-$kendo-drag-clue-border-width: 0px !default;
+$kendo-drag-clue-border-width: var( --kendo-drag-clue-border-width, 0px ) !default;
 /// Borer style of the drag clue.
 /// @group draggable
-$kendo-drag-clue-border-style: solid !default;
+$kendo-drag-clue-border-style: var( --kendo-drag-clue-border-style, solid ) !default;
 /// Horizontal padding of the drag clue.
 /// @group draggable
-$kendo-drag-clue-padding-x: k-spacing(3) !default;
+$kendo-drag-clue-padding-x: var( --kendo-drag-clue-padding-x, k-spacing(3) ) !default;
 /// Vertical padding of the drag clue.
 /// @group draggable
-$kendo-drag-clue-padding-y: k-spacing(1.5) !default;
+$kendo-drag-clue-padding-y: var( --kendo-drag-clue-padding-y, k-spacing(1.5) ) !default;
 /// Font family of the drag clue.
 /// @group draggable
-$kendo-drag-clue-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-drag-clue-font-family: var( --kendo-drag-clue-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// Font size of the drag clue.
 /// @group draggable
-$kendo-drag-clue-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-drag-clue-font-size: var( --kendo-drag-clue-font-size, var( --kendo-font-size, inherit ) ) !default;
 /// Line height of the drag clue.
 /// @group draggable
-$kendo-drag-clue-line-height: var( --kendo-line-height, inherit ) !default;
+$kendo-drag-clue-line-height: var( --kendo-drag-clue-line-height, var( --kendo-line-height, inherit ) ) !default;
 /// Spacing of the drag clue.
 /// @group draggable
-$kendo-drag-clue-spacing: .4ex !default;
+$kendo-drag-clue-spacing: var( --kendo-drag-clue-spacing, .4ex ) !default;
 /// Opacity of the drag clue.
 /// @group draggable
-$kendo-drag-clue-opacity: .8 !default;
+$kendo-drag-clue-opacity: var( --kendo-drag-clue-opacity, .8 ) !default;
 
 /// Text color of the drag clue.
 /// @group draggable
-$kendo-drag-clue-text: k-color(on-base) !default;
+$kendo-drag-clue-text: var( --kendo-drag-clue-text, k-color(on-base) ) !default;
 /// Background color of the drag clue.
 /// @group draggable
-$kendo-drag-clue-bg: k-color(base-active) !default;
+$kendo-drag-clue-bg: var( --kendo-drag-clue-bg, k-color(base-active) ) !default;
 /// Border color of the drag clue.
 /// @group draggable
-$kendo-drag-clue-border: color-mix(in srgb, k-color(border-alt) 76%, transparent) !default;
+$kendo-drag-clue-border: var( --kendo-drag-clue-border, color-mix(in srgb, k-color(border-alt) 76%, transparent) ) !default;
 /// Gradient of the drag clue.
 /// @group draggable
-$kendo-drag-clue-gradient: null !default;
+$kendo-drag-clue-gradient: var( --kendo-drag-clue-gradient, null ) !default;
 /// Box shadow of the drag clue.
 /// @group draggable
-$kendo-drag-clue-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
+$kendo-drag-clue-shadow: var( --kendo-drag-clue-shadow, var( --kendo-elevation-2, none ) ) !default;
 
 /// Arrow size of the drop hint.
 /// @group draggable
-$kendo-drop-hint-arrow-size: 6px !default;
+$kendo-drop-hint-arrow-size: var( --kendo-drop-hint-arrow-size, 6px ) !default;
 /// Arrow spacing of the drop hint.
 /// @group draggable
-$kendo-drop-hint-arrow-spacing: math.div( $kendo-drop-hint-arrow-size, 2 ) !default;
+$kendo-drop-hint-arrow-spacing: var( --kendo-drop-hint-arrow-spacing, calc( $kendo-drop-hint-arrow-size / 2 ) ) !default;
 /// Width of the horizontal drop hint line.
 /// @group draggable
-$kendo-drop-hint-line-h-width: 20px !default;
+$kendo-drop-hint-line-h-width: var( --kendo-drop-hint-line-h-width, 20px ) !default;
 /// Height of the horizontal drop hint line.
 /// @group draggable
-$kendo-drop-hint-line-h-height: 1px !default;
+$kendo-drop-hint-line-h-height: var( --kendo-drop-hint-line-h-height, 1px ) !default;
 /// Width of the vertical drop hint line.
 /// @group draggable
-$kendo-drop-hint-line-v-width: $kendo-drop-hint-line-h-height !default;
+$kendo-drop-hint-line-v-width: var( --kendo-drop-hint-line-v-width, $kendo-drop-hint-line-h-height ) !default;
 /// Height of the vertical drop hint line.
 /// @group draggable
-$kendo-drop-hint-line-v-height: $kendo-drop-hint-line-h-width !default;
+$kendo-drop-hint-line-v-height: var( --kendo-drop-hint-line-v-height, $kendo-drop-hint-line-h-width ) !default;
 
 /// Background-color of the drop hint.
 /// @group draggable
-$kendo-drop-hint-bg: k-color(primary) !default;
+$kendo-drop-hint-bg: var( --kendo-drop-hint-bg, k-color(primary) ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/draggable/_variables.scss" with (
+    $kendo-drag-hint-padding-x: $kendo-drag-clue-padding-x,
+    $kendo-drag-hint-padding-y: $kendo-drag-clue-padding-y,
+    $kendo-drag-hint-border-width: $kendo-drag-clue-border-width,
+    $kendo-drag-hint-border-radius: $kendo-drag-clue-border-radius,
+    $kendo-drag-hint-font-size: $kendo-drag-clue-font-size,
+    $kendo-drag-hint-font-family: $kendo-drag-clue-font-family,
+    $kendo-drag-hint-line-height: $kendo-drag-clue-line-height,
+    $kendo-drag-hint-bg: $kendo-drag-clue-bg,
+    $kendo-drag-hint-text: $kendo-drag-clue-text,
+    $kendo-drag-hint-border: $kendo-drag-clue-border,
+    $kendo-drag-hint-gradient: $kendo-drag-clue-gradient,
+    $kendo-drag-hint-shadow: $kendo-drag-clue-shadow,
+    $kendo-drag-hint-opacity: $kendo-drag-clue-opacity,
+    $kendo-drop-hint-arrow-size: $kendo-drop-hint-arrow-size,
+    $kendo-drop-hint-arrow-spacing: $kendo-drop-hint-arrow-spacing,
+    $kendo-drop-hint-line-h-width: $kendo-drop-hint-line-h-width,
+    $kendo-drop-hint-line-h-height: $kendo-drop-hint-line-h-height,
+    $kendo-drop-hint-line-v-width: $kendo-drop-hint-line-v-width,
+    $kendo-drop-hint-line-v-height: $kendo-drop-hint-line-v-height,
+    $kendo-drop-hint-bg: $kendo-drop-hint-bg
+);

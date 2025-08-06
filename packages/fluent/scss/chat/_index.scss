@@ -19,9 +19,6 @@
         @include kendo-icon--styles();
         @include kendo-toolbar--styles();
         @include kendo-chat--layout();
-        @include kendo-chat-card--layout();
-        @include kendo-chat-typing-indicator--layout();
-        @include kendo-chat-toolbar--layout();
         @include kendo-chat--theme();
     }
 }

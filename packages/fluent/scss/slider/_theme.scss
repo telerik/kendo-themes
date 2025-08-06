@@ -1,72 +1,63 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/slider/_theme.scss" as *;
 
 @mixin kendo-slider--theme() {
 
+     @include kendo-slider--theme-base();
+
     // Slider
     .k-slider {
-        color: var( --kendo-slider-text, #{$kendo-slider-text} );
+        color: $kendo-slider-text;
 
         &.k-disabled {
-            --kendo-slider-text: var( --kendo-slider-disabled-text, #{$kendo-slider-disabled-text} );
-            --kendo-slider-track-bg: var( --kendo-slider-track-disabled-bg, #{$kendo-slider-track-disabled-bg} );
-            --kendo-slider-selection-bg: var( --kendo-slider-selection-disabled-bg, #{$kendo-slider-selection-disabled-bg} );
-            --kendo-slider-thumb-border: var( --kendo-slider-thumb-disabled-border, #{$kendo-slider-thumb-disabled-border});
+            color: $kendo-slider-disabled-text;
+
+            .k-slider-track {
+                background-color: $kendo-slider-track-disabled-bg;
+            }
+
+            .k-slider-selection {
+                background-color: $kendo-slider-selection-disabled-bg;
+            }
+
+            .k-slider-thumb {
+                border-color: $kendo-slider-thumb-disabled-border;
+            }
         }
-    }
-
-
-    // Slider track
-    .k-slider-track {
-        background-color: var( --kendo-slider-track-bg, #{$kendo-slider-track-bg} );
-    }
-
-
-    // Slider selection
-    .k-slider-selection {
-        background-color:var( --kendo-slider-selection-bg, #{$kendo-slider-selection-bg} );
     }
 
 
     // Slider thumb
     .k-slider-thumb {
-        color: var( --kendo-slider-thumb-text,  #{$kendo-slider-thumb-text});
-        background-color: var( --kendo-slider-thumb-bg,  #{$kendo-slider-thumb-bg});
-        border-color: var( --kendo-slider-thumb-border,  #{$kendo-slider-thumb-border});
-        background-image: linear-gradient( var( --kendo-slider-thumb-gradient,  #{$kendo-slider-thumb-gradient}), transparent, transparent ) ;
+        color: $kendo-slider-thumb-text;
+        background-color: $kendo-slider-thumb-bg;
+        border-color: $kendo-slider-thumb-border;
+        background-image: linear-gradient( $kendo-slider-thumb-gradient, transparent, transparent );
 
         &:hover,
         &.k-hover {
-            --kendo-slider-thumb-bg: #{$kendo-slider-thumb-hover-bg};
-            --kendo-slider-thumb-text: #{$kendo-slider-thumb-hover-text};
-            --kendo-slider-thumb-border: #{$kendo-slider-thumb-hover-border};
-            --kendo-slider-thumb-gradient: #{$kendo-slider-thumb-hover-gradient};
+            background-color: $kendo-slider-thumb-hover-bg;
+            color: $kendo-slider-thumb-hover-text;
+            border-color: $kendo-slider-thumb-hover-border;
+            background-image: linear-gradient( $kendo-slider-thumb-hover-gradient, transparent, transparent );
         }
 
         &:active,
         &.k-active {
-            --kendo-slider-thumb-bg: #{$kendo-slider-thumb-active-bg};
-            --kendo-slider-thumb-text: #{$kendo-slider-thumb-active-text};
-            --kendo-slider-thumb-border: #{$kendo-slider-thumb-active-border};
-            --kendo-slider-thumb-gradient: #{$kendo-slider-thumb-active-gradient};
+            background-color: $kendo-slider-thumb-active-bg;
+            color: $kendo-slider-thumb-active-text;
+            border-color: $kendo-slider-thumb-active-border;
+            background-image: linear-gradient( $kendo-slider-thumb-active-gradient, transparent, transparent );
         }
 
         &:focus,
         &.k-focus {
-            --kendo-slider-thumb-bg: #{$kendo-slider-thumb-focus-bg};
-            --kendo-slider-thumb-text: #{$kendo-slider-thumb-focus-text};
-            --kendo-slider-thumb-border: #{$kendo-slider-thumb-focus-border};
-            --kendo-slider-thumb-gradient: #{$kendo-slider-thumb-focus-gradient};
+            background-color: $kendo-slider-thumb-focus-bg;
+            color: $kendo-slider-thumb-focus-text;
+            border-color: $kendo-slider-thumb-focus-border;
+            background-image: linear-gradient( $kendo-slider-thumb-focus-gradient, transparent, transparent );
         }
     }
-
-    .k-slider-horizontal .k-tick {
-        background-image: url(#{$kendo-slider-tick-v-image});
-    }
-
-    .k-slider-vertical .k-tick {
-        background-image: url(#{$kendo-slider-tick-h-image});
-    }
-
 
 }

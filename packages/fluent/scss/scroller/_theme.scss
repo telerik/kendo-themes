@@ -1,8 +1,5 @@
-@use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/scroller/_theme.scss" as *;
 
 @mixin kendo-scroller--theme() {
-
-    .km-touch-scrollbar {
-        background-color: #333333;
-    }
+    @include kendo-scroller--theme-base();
 }

@@ -1,5 +1,5 @@
-@mixin kendo-dropdown-grid--theme() {
+@use "@progress/kendo-theme-core/scss/components/dropdowngrid/_theme.scss" as *;
 
-    // Dropdown grid
-    .k-dropdown-grid {}
+@mixin kendo-dropdown-grid--theme() {
+    @include kendo-dropdown-grid--theme-base();
 }

@@ -1,6 +1,5 @@
+@use "@progress/kendo-theme-core/scss/components/textbox/_layout.scss" as *;
+
 @mixin kendo-textbox--layout() {
-
-    // Textbox
-    .k-textbox {}
-
+    @include kendo-textbox--layout-base();
 }

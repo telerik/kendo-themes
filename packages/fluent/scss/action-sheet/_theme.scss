@@ -1,103 +1,48 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/action-sheet/_theme.scss" as *;
 
 @mixin kendo-action-sheet--theme() {
+    @include kendo-action-sheet--theme-base();
 
-    // Actionsheet
-    .k-actionsheet {
-        color: var( --kendo-actionsheet-text, #{$kendo-actionsheet-text} );
-        background-color: var( --kendo-actionsheet-bg, #{$kendo-actionsheet-bg} );
-        border-color: var( --kendo-actionsheet-border, #{$kendo-actionsheet-border} );
-        @include box-shadow( var( --kendo-actionsheet-shadow, #{$kendo-actionsheet-shadow} ) );
+    .k-actionsheet-header,
+    .k-actionsheet-titlebar {
+        color: $kendo-actionsheet-header-text;
+        background-color: $kendo-actionsheet-header-bg;
+        border-color: $kendo-actionsheet-header-border;
+        @include box-shadow( $kendo-actionsheet-header-shadow );
     }
 
-
-    // Actionsheet header
-    .k-actionsheet-header {
-        color: var( --kendo-actionsheet-header-text, #{$kendo-actionsheet-header-text} );
-        background-color: var( --kendo-actionsheet-header-bg, #{$kendo-actionsheet-header-bg} );
-        border-color: var( --kendo-actionsheet-header-border, #{$kendo-actionsheet-header-border} );
-        @include box-shadow( var( --kendo-actionsheet-header-shadow, #{$kendo-actionsheet-header-shadow} ) );
-    }
-    .k-actionsheet-footer {
-        color: var( --kendo-actionsheet-footer-text, #{$kendo-actionsheet-footer-text} );
-        background-color: var( --kendo-actionsheet-footer-bg, #{$kendo-actionsheet-footer-bg} );
-        border-color: var( --kendo-actionsheet-footer-border, #{$kendo-actionsheet-footer-border} );
-        @include box-shadow( var( --kendo-actionsheet-footer-shadow, #{$kendo-actionsheet-footer-shadow} ) );
-    }
-    .k-actionsheet-subtitle-text {
-        color: var( --kendo-actionsheet-subtitle-text, #{$kendo-actionsheet-subtitle-text} );
+    .k-actionsheet-subtitle {
+        color: inherit;
     }
 
-    // Actionsheet items
-    .k-actionsheet-items {}
-
-
-    // Actionsheet item
-    .k-actionsheet-item {}
-
-    // Actionsheet item icon
     .k-actionsheet-item-icon {
-        color: var( --kendo-actionsheet-item-icon-color, #{$kendo-actionsheet-item-icon-color} );
+        color: $kendo-actionsheet-item-icon-color;
     }
 
-    // Actionsheet item description
-    .k-actionsheet-item-description {
-       color: var( --kendo-actionsheet-item-description-text, #{$kendo-actionsheet-item-description-text} );
-    }
-
-
-    // Actionsheet action
     .k-actionsheet-item {
-
         color: var( --kendo-actionsheet-item-text, inherit );
         background-color: var( --kendo-actionsheet-item-bg, inherit );
         border-color: var( --kendo-actionsheet-item-border, inherit );
         outline-color: var( --kendo-actionsheet-item-outline, inherit );
 
-        // Hover state
-        &:hover,
-        &.k-hover {
-            color: var( --kendo-actionsheet-item-hover-text, #{$kendo-actionsheet-item-hover-text} );
-            background-color: var( --kendo-actionsheet-item-hover-bg, #{$kendo-actionsheet-item-hover-bg} );
-            border-color: var( --kendo-actionsheet-item-hover-border, #{$kendo-actionsheet-item-hover-border} );
-        }
-
-
-        // Focus state
         &:focus,
         &.k-focus {
-            color: var( --kendo-actionsheet-item-focus-text, #{$kendo-actionsheet-item-focus-text} );
-            background-color: var( --kendo-actionsheet-item-focus-bg, #{$kendo-actionsheet-item-focus-bg} );
-            border-color: var( --kendo-actionsheet-item-focus-border, #{$kendo-actionsheet-item-focus-border} );
-            outline-color: var( --kendo-actionsheet-item-focus-outline, #{$kendo-actionsheet-item-focus-outline} );
-
             &:hover,
             &.k-hover {
-                color: var( --kendo-actionsheet-item-focus-hover-text, #{$kendo-actionsheet-item-focus-hover-text} );
-                background-color: var( --kendo-actionsheet-item-focus-hover-bg, #{$kendo-actionsheet-item-focus-hover-bg} );
-                border-color: var( --kendo-actionsheet-item-focus-hover-border, #{$kendo-actionsheet-item-focus-hover-border} );
+                color: $kendo-actionsheet-item-focus-hover-text;
+                background-color: $kendo-actionsheet-item-focus-hover-bg;
+                border-color: $kendo-actionsheet-item-focus-hover-border;
             }
         }
 
-
-        // Disabed state
         &:disabled,
         &.k-disabled {
-            color: var( --kendo-actionsheet-item-disabled-text, #{$kendo-actionsheet-item-disabled-text} );
-            background-color: var( --kendo-actionsheet-item-disabled-bg, #{$kendo-actionsheet-item-disabled-bg} );
-            border-color: var( --kendo-actionsheet-item-disabled-border, #{$kendo-actionsheet-item-disabled-border} );
-
             .k-actionsheet-item-description,
             .k-actionsheet-item-icon {
                 color: inherit;
             }
         }
     }
-
-    // Actionsheet separator
-    .k-actionsheet .k-hr {
-        border-color: var( --kendo-actionsheet-border, #{$kendo-actionsheet-border} );
-    }
-
 }

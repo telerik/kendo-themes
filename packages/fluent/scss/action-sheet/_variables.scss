@@ -3,223 +3,286 @@
 
 /// Horizontal padding of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-padding-x: k-spacing(0) !default;
+$kendo-actionsheet-padding-x: var( --kendo-actionsheet-padding-x, #{k-spacing(0)} ) !default;
 /// Vertical padding of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-padding-y: k-spacing(0) !default;
+$kendo-actionsheet-padding-y: var( --kendo-actionsheet-padding-y, #{k-spacing(0)} ) !default;
 /// Width of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-width: 360px !default;
+$kendo-actionsheet-width: var( --kendo-actionsheet-width, 360px ) !default;
 /// Maximum width of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-max-width: 100% !default;
+$kendo-actionsheet-max-width: var( --kendo-actionsheet-max-width, 100% ) !default;
 /// Height of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-height: 60vh !default;
+$kendo-actionsheet-height: var( --kendo-actionsheet-height, 60vh ) !default;
 /// Maximum height of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-max-height: 60vh !default;
+$kendo-actionsheet-max-height: var( --kendo-actionsheet-max-height, 60vh ) !default;
 
 /// Border width around the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-border-width: 0px !default;
+$kendo-actionsheet-border-width: var( --kendo-actionsheet-border-width, 0px ) !default;
 /// Border radius of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-border-radius: 0px !default;
+$kendo-actionsheet-border-radius: var( --kendo-actionsheet-border-radius, 0px ) !default;
 
 /// Font size of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-actionsheet-font-size: var( --kendo-actionsheet-font-size, var( --kendo-font-size, inherit ) ) !default;
 /// Font family of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-actionsheet-font-family: var( --kendo-actionsheet-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// Line height of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-line-height: var( --kendo-line-height, inherit ) !default;
+$kendo-actionsheet-line-height: var( --kendo-actionsheet-line-height, var( --kendo-line-height, inherit ) ) !default;
 
 /// Background color of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-bg: k-color(surface-alt) !default;
+$kendo-actionsheet-bg: var( --kendo-actionsheet-bg, #{k-color(surface-alt)} ) !default;
 /// Text color of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-text: k-color(on-app-surface) !default;
+$kendo-actionsheet-text: var( --kendo-actionsheet-text, #{k-color(on-app-surface)} ) !default;
 /// Border color of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-actionsheet-border: var( --kendo-actionsheet-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 /// Box shadow of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-shadow: var( --kendo-box-shadow-depth-7, none ) !default;
+$kendo-actionsheet-shadow: var( --kendo-actionsheet-shadow, var( --kendo-box-shadow-depth-7, none ) ) !default;
 
 /// Horizontal padding of the action sheet header.
 /// @group action-sheet
-$kendo-actionsheet-header-padding-x: k-spacing(4) !default;
+$kendo-actionsheet-header-padding-x: var( --kendo-actionsheet-header-padding-x, #{k-spacing(4)} ) !default;
 /// Vertical padding of the action sheet header.
 /// @group action-sheet
-$kendo-actionsheet-header-padding-y: k-spacing(2) !default;
+$kendo-actionsheet-header-padding-y: var( --kendo-actionsheet-header-padding-y, #{k-spacing(2)} ) !default;
 /// Border width of the action sheet header.
 /// @group action-sheet
-$kendo-actionsheet-header-border-width: 1px !default;
+$kendo-actionsheet-header-border-width: var( --kendo-actionsheet-header-border-width, 1px ) !default;
 /// Font size of the action sheet header.
 /// @group action-sheet
-$kendo-actionsheet-header-font-size: inherit !default;
+$kendo-actionsheet-header-font-size: var( --kendo-actionsheet-header-font-size, inherit ) !default;
 /// Font family of the action sheet header.
 /// @group action-sheet
-$kendo-actionsheet-header-font-family: inherit !default;
+$kendo-actionsheet-header-font-family: var( --kendo-actionsheet-header-font-family, inherit ) !default;
 /// Line height of the action sheet header.
 /// @group action-sheet
-$kendo-actionsheet-header-line-height: inherit !default;
+$kendo-actionsheet-header-line-height: var( --kendo-actionsheet-header-line-height, inherit ) !default;
 /// Spacing between the action sheet header groups.
 /// @group action-sheet
-$kendo-actionsheet-header-gap: k-spacing(4) !default;
+$kendo-actionsheet-header-gap: var( --kendo-actionsheet-header-gap, #{k-spacing(4)} ) !default;
 
 
 /// Background color of the action sheet header.
 /// @group action-sheet
-$kendo-actionsheet-header-bg: inherit !default;
+$kendo-actionsheet-header-bg: var( --kendo-actionsheet-header-bg, inherit ) !default;
 /// Text color of the action sheet header.
 /// @group action-sheet
-$kendo-actionsheet-header-text: inherit !default;
+$kendo-actionsheet-header-text: var( --kendo-actionsheet-header-text, inherit ) !default;
 /// Border color of the action sheet header.
 /// @group action-sheet
-$kendo-actionsheet-header-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-actionsheet-header-border: var( --kendo-actionsheet-header-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 /// Box shadow of the action sheet header.
 /// @group action-sheet
-$kendo-actionsheet-header-shadow: none !default;
+$kendo-actionsheet-header-shadow: var( --kendo-actionsheet-header-shadow, none ) !default;
 
 /// Font size of the action sheet subtitle.
 /// @group action-sheet
-$kendo-actionsheet-subtitle-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-actionsheet-subtitle-font-size: var( --kendo-actionsheet-subtitle-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
 /// Line height of the action sheet subtitle.
 /// @group action-sheet
-$kendo-actionsheet-subtitle-line-height: var( --kendo-line-height-sm, inherit ) !default;
+$kendo-actionsheet-subtitle-line-height: var( --kendo-actionsheet-subtitle-line-height, var( --kendo-line-height-sm, inherit ) ) !default;
 /// Text color of the action sheet subtitle.
 /// @group action-sheet
-$kendo-actionsheet-subtitle-text: k-color(subtle) !default;
+$kendo-actionsheet-subtitle-text: var( --kendo-actionsheet-subtitle-text, #{k-color(subtle)} ) !default;
 
 /// Border width of the action sheet footer.
 /// @group action-sheet
-$kendo-actionsheet-footer-border-width: 1px !default;
+$kendo-actionsheet-footer-border-width: var( --kendo-actionsheet-footer-border-width, 1px ) !default;
 
 /// Background color of the action sheet footer.
 /// @group action-sheet
-$kendo-actionsheet-footer-bg: null !default;
+$kendo-actionsheet-footer-bg: var( --kendo-actionsheet-footer-bg, null ) !default;
 /// Text color of the action sheet footer.
 /// @group action-sheet
-$kendo-actionsheet-footer-text: null !default;
+$kendo-actionsheet-footer-text: var( --kendo-actionsheet-footer-text, null ) !default;
 /// Border color of the action sheet footer.
 /// @group action-sheet
-$kendo-actionsheet-footer-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-actionsheet-footer-border: var( --kendo-actionsheet-footer-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 /// Box shadow of the action sheet footer.
 /// @group action-sheet
-$kendo-actionsheet-footer-shadow: null !default;
+$kendo-actionsheet-footer-shadow: var( --kendo-actionsheet-footer-shadow, null ) !default;
 
 /// Minimum height of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-min-height: 40px !default;
+$kendo-actionsheet-item-min-height: var( --kendo-actionsheet-item-min-height, 40px ) !default;
 /// Horiozontal padding of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-padding-x: k-spacing(4) !default;
+$kendo-actionsheet-item-padding-x: var( --kendo-actionsheet-item-padding-x, #{k-spacing(4)} ) !default;
 /// Vertical padding of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-padding-y: k-spacing(2) !default;
+$kendo-actionsheet-item-padding-y: var( --kendo-actionsheet-item-padding-y, #{k-spacing(2)} ) !default;
 /// Border around the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-border-width: 1px !default;
+$kendo-actionsheet-item-border-width: var( --kendo-actionsheet-item-border-width, 1px ) !default;
 /// Spacing between the icon and the text in the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-spacing: k-spacing(2) !default;
+$kendo-actionsheet-item-spacing: var( --kendo-actionsheet-item-spacing, #{k-spacing(2)} ) !default;
 
 /// Color of the action sheet item icon.
 /// @group action-sheet
-$kendo-actionsheet-item-icon-color: k-color(primary) !default;
+$kendo-actionsheet-item-icon-color: var( --kendo-actionsheet-item-icon-color, #{k-color(primary)} ) !default;
 
 /// Font weight of the action sheet item text.
 /// @group action-sheet
-$kendo-actionsheet-item-title-font-weight: inherit !default;
+$kendo-actionsheet-item-title-font-weight: var( --kendo-actionsheet-item-title-font-weight, inherit ) !default;
 /// Transform of the action sheet item text.
 /// @group action-sheet
-$kendo-actionsheet-item-title-text-transform: none !default;
+$kendo-actionsheet-item-title-text-transform: var( --kendo-actionsheet-item-title-text-transform, none ) !default;
 
 /// Font size of the action sheet item description.
 /// @group action-sheet
-$kendo-actionsheet-item-description-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-actionsheet-item-description-font-size: var( --kendo-actionsheet-item-description-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
 /// Color of the action sheet item description.
 /// @group action-sheet
-$kendo-actionsheet-item-description-text: k-color(subtle) !default;
+$kendo-actionsheet-item-description-text: var( --kendo-actionsheet-item-description-text, #{k-color(subtle)} ) !default;
 
 /// Hover background color of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-hover-bg: k-color(base-hover) !default;
+$kendo-actionsheet-item-hover-bg: var( --kendo-actionsheet-item-hover-bg, #{k-color(base-hover)} ) !default;
 /// Hover text color of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-hover-text: k-color(on-base) !default;
+$kendo-actionsheet-item-hover-text: var( --kendo-actionsheet-item-hover-text, #{k-color(on-base)} ) !default;
 /// Hover border color of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-hover-border: inherit !default;
+$kendo-actionsheet-item-hover-border: var( --kendo-actionsheet-item-hover-border, inherit ) !default;
 
 /// Focus background color of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-focus-bg: inherit !default;
+$kendo-actionsheet-item-focus-bg: var( --kendo-actionsheet-item-focus-bg, inherit ) !default;
 /// Focus text color of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-focus-text: inherit !default;
+$kendo-actionsheet-item-focus-text: var( --kendo-actionsheet-item-focus-text, inherit ) !default;
 /// Focus border color of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-focus-border: inherit !default;
+$kendo-actionsheet-item-focus-border: var( --kendo-actionsheet-item-focus-border, inherit ) !default;
 /// Focus outline color of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-focus-outline: var( --kendo-outline-color, inherit ) !default;
+$kendo-actionsheet-item-focus-outline: var( --kendo-actionsheet-item-focus-outline, var( --kendo-outline-color, inherit ) ) !default;
 /// Focus outline width of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-focus-outline-width: 1px !default;
+$kendo-actionsheet-item-focus-outline-width: var( --kendo-actionsheet-item-focus-outline-width, 1px ) !default;
 
 /// Focus and hover background color of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-focus-hover-bg: $kendo-actionsheet-item-hover-bg !default;
+$kendo-actionsheet-item-focus-hover-bg: var( --kendo-actionsheet-item-focus-hover-bg, #{$kendo-actionsheet-item-hover-bg} ) !default;
 /// Focus and hover text color of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-focus-hover-text: $kendo-actionsheet-item-hover-text !default;
+$kendo-actionsheet-item-focus-hover-text: var( --kendo-actionsheet-item-focus-hover-text, #{$kendo-actionsheet-item-hover-text} ) !default;
 /// Focus and hover border color of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-focus-hover-border: $kendo-actionsheet-item-hover-border !default;
+$kendo-actionsheet-item-focus-hover-border: var( --kendo-actionsheet-item-focus-hover-border, #{$kendo-actionsheet-item-hover-border} ) !default;
 
 /// Disabled background color of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-disabled-bg: $kendo-actionsheet-bg !default;
+$kendo-actionsheet-item-disabled-bg: var( --kendo-actionsheet-item-disabled-bg, #{$kendo-actionsheet-bg} ) !default;
 /// Disabled text color of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
+$kendo-actionsheet-item-disabled-text: var( --kendo-actionsheet-item-disabled-text, #{color-mix(in srgb, k-color(on-app-surface) 46%, transparent)} ) !default;
 /// Disabled border color of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-disabled-border: transparent !default;
+$kendo-actionsheet-item-disabled-border: var( --kendo-actionsheet-item-disabled-border, transparent ) !default;
 
 
 // Adaptive Actionsheet
 
 /// Font size of the adaptive action sheet.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-font-size: $kendo-font-size-lg !default;
+$kendo-adaptive-actionsheet-font-size: var( --kendo-adaptive-actionsheet-font-size, #{$kendo-font-size-lg} ) !default;
 /// The line height of the adaptive action sheet.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-line-height: var( --kendo-line-height, inherit ) !default;
+$kendo-adaptive-actionsheet-line-height: var( --kendo-adaptive-actionsheet-line-height, var( --kendo-line-height, inherit ) ) !default;
 
 /// Vertical padding of the adaptive action sheet titlebar.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-header-padding-y: k-spacing(4) !default;
+$kendo-adaptive-actionsheet-header-padding-y: var( --kendo-adaptive-actionsheet-header-padding-y, #{k-spacing(4)} ) !default;
 /// Horizontal padding of the adaptive action sheet titlebar.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-header-padding-x: $kendo-adaptive-actionsheet-header-padding-y !default;
+$kendo-adaptive-actionsheet-header-padding-x: var( --kendo-adaptive-actionsheet-header-padding-x, #{$kendo-adaptive-actionsheet-header-padding-y} ) !default;
 
 /// Vertical padding of the adaptive action sheet content.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-content-padding-y: k-spacing(2) !default;
+$kendo-adaptive-actionsheet-content-padding-y: var( --kendo-adaptive-actionsheet-content-padding-y, #{k-spacing(2)} ) !default;
 /// Horizontal padding of the adaptive action sheet content.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-content-padding-x: k-spacing(4) !default;
+$kendo-adaptive-actionsheet-content-padding-x: var( --kendo-adaptive-actionsheet-content-padding-x, #{k-spacing(4)} ) !default;
 
 /// Vertical padding of the adaptive action sheet footer.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-footer-padding-y: k-spacing(2) !default;
+$kendo-adaptive-actionsheet-footer-padding-y: var( --kendo-adaptive-actionsheet-footer-padding-y, #{k-spacing(2)} ) !default;
 /// Horizontal padding of the adaptive action sheet footer.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-footer-padding-x: k-spacing(4) !default;
+$kendo-adaptive-actionsheet-footer-padding-x: var( --kendo-adaptive-actionsheet-footer-padding-x, #{k-spacing(4)} ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/action-sheet/_variables.scss" with (
+    $kendo-actionsheet-padding-x: $kendo-actionsheet-padding-x,
+    $kendo-actionsheet-padding-y: $kendo-actionsheet-padding-y,
+    $kendo-actionsheet-width: $kendo-actionsheet-width,
+    $kendo-actionsheet-max-width: $kendo-actionsheet-max-width,
+    $kendo-actionsheet-height: $kendo-actionsheet-height,
+    $kendo-actionsheet-max-height: $kendo-actionsheet-max-height,
+    $kendo-actionsheet-border-width: $kendo-actionsheet-border-width,
+    $kendo-actionsheet-border-radius: $kendo-actionsheet-border-radius,
+    $kendo-actionsheet-font-size: $kendo-actionsheet-font-size,
+    $kendo-actionsheet-font-family: $kendo-actionsheet-font-family,
+    $kendo-actionsheet-line-height: $kendo-actionsheet-line-height,
+    $kendo-actionsheet-bg: $kendo-actionsheet-bg,
+    $kendo-actionsheet-text: $kendo-actionsheet-text,
+    $kendo-actionsheet-border: $kendo-actionsheet-border,
+    $kendo-actionsheet-shadow: $kendo-actionsheet-shadow,
+    $kendo-actionsheet-titlebar-padding-x: $kendo-actionsheet-header-padding-x,
+    $kendo-actionsheet-titlebar-padding-y: $kendo-actionsheet-header-padding-y,
+    $kendo-actionsheet-titlebar-border-width: $kendo-actionsheet-header-border-width,
+    $kendo-actionsheet-titlebar-font-size: $kendo-actionsheet-header-font-size,
+    $kendo-actionsheet-titlebar-font-family: $kendo-actionsheet-header-font-family,
+    $kendo-actionsheet-titlebar-line-height: $kendo-actionsheet-header-line-height,
+    $kendo-actionsheet-titlebar-gap: $kendo-actionsheet-header-gap,
+    $kendo-actionsheet-titlebar-bg: $kendo-actionsheet-header-bg,
+    $kendo-actionsheet-titlebar-text: $kendo-actionsheet-header-text,
+    $kendo-actionsheet-titlebar-border: $kendo-actionsheet-header-border,
+    $kendo-actionsheet-titlebar-shadow: $kendo-actionsheet-header-shadow,
+    $kendo-actionsheet-subtitle-font-size: $kendo-actionsheet-subtitle-font-size,
+    $kendo-actionsheet-subtitle-line-height: $kendo-actionsheet-subtitle-line-height,
+    $kendo-actionsheet-footer-border-width: $kendo-actionsheet-footer-border-width,
+    $kendo-actionsheet-footer-bg: $kendo-actionsheet-footer-bg,
+    $kendo-actionsheet-footer-text: $kendo-actionsheet-footer-text,
+    $kendo-actionsheet-footer-border: $kendo-actionsheet-footer-border,
+    $kendo-actionsheet-footer-shadow: $kendo-actionsheet-footer-shadow,
+    $kendo-actionsheet-subtitle-text: $kendo-actionsheet-subtitle-text,
+    $kendo-actionsheet-item-min-height: $kendo-actionsheet-item-min-height,
+    $kendo-actionsheet-item-padding-x: $kendo-actionsheet-item-padding-x,
+    $kendo-actionsheet-item-padding-y: $kendo-actionsheet-item-padding-y,
+    $kendo-actionsheet-item-border-width: $kendo-actionsheet-item-border-width,
+    $kendo-actionsheet-item-spacing: $kendo-actionsheet-item-spacing,
+    $kendo-actionsheet-item-title-font-weight: $kendo-actionsheet-item-title-font-weight,
+    $kendo-actionsheet-item-title-text-transform: $kendo-actionsheet-item-title-text-transform,
+    $kendo-actionsheet-item-description-font-size: $kendo-actionsheet-item-description-font-size,
+    $kendo-actionsheet-item-description-text: $kendo-actionsheet-item-description-text,
+    $kendo-actionsheet-item-hover-bg: $kendo-actionsheet-item-hover-bg,
+    $kendo-actionsheet-item-hover-text: $kendo-actionsheet-item-hover-text,
+    $kendo-actionsheet-item-hover-border: $kendo-actionsheet-item-hover-border,
+    $kendo-actionsheet-item-focus-bg: $kendo-actionsheet-item-focus-bg,
+    $kendo-actionsheet-item-focus-text: $kendo-actionsheet-item-focus-text,
+    $kendo-actionsheet-item-focus-border: $kendo-actionsheet-item-focus-border,
+    $kendo-actionsheet-item-disabled-bg: $kendo-actionsheet-item-disabled-bg,
+    $kendo-actionsheet-item-disabled-text: $kendo-actionsheet-item-disabled-text,
+    $kendo-actionsheet-item-disabled-border: $kendo-actionsheet-item-disabled-border,
+    $kendo-adaptive-actionsheet-font-size: $kendo-adaptive-actionsheet-font-size,
+    $kendo-adaptive-actionsheet-line-height: $kendo-adaptive-actionsheet-line-height,
+    $kendo-adaptive-actionsheet-titlebar-padding-y: $kendo-adaptive-actionsheet-header-padding-y,
+    $kendo-adaptive-actionsheet-titlebar-padding-x: $kendo-adaptive-actionsheet-header-padding-x,
+    $kendo-adaptive-actionsheet-content-padding-y: $kendo-adaptive-actionsheet-content-padding-y,
+    $kendo-adaptive-actionsheet-content-padding-x: $kendo-adaptive-actionsheet-content-padding-x,
+    $kendo-adaptive-actionsheet-footer-padding-y: $kendo-adaptive-actionsheet-footer-padding-y,
+    $kendo-adaptive-actionsheet-footer-padding-x: $kendo-adaptive-actionsheet-footer-padding-x
+);

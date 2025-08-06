@@ -1,35 +1,11 @@
+@use "@progress/kendo-theme-core/scss/components/dropdownlist/_layout.scss" as *;
+
 @mixin kendo-dropdown-list--layout() {
-
-    // Dropdown list
-    .k-dropdown-list {}
-
-
-    // Native select
-    select.k-dropdown-list {}
-
-
-    // Dropdown operator
+    @include kendo-dropdown-list--layout-base();
+    
     .k-dropdown-operator {
-        width: min-content;
-        flex: none;
-
         .k-input-button {
-            border-width: 0;
-        }
-        .k-input-button .k-button-icon {
             width: auto;
-            aspect-ratio: 1;
-        }
-
-        .k-input-inner {
-            display: none;
         }
     }
-
-    // Alias
-    .k-dropdown,
-    .k-dropdownlist {
-        @extend .k-dropdown-list !optional;
-    }
-
 }

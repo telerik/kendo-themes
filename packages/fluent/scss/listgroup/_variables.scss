@@ -4,34 +4,47 @@
 
 /// Border width of the listgroup.
 /// @group listgroup
-$kendo-listgroup-border-width: 1px !default;
+$kendo-listgroup-border-width: var( --kendo-listgroup-border-width, 1px ) !default;
 /// Border radius of the listgroup.
 /// @group listgroup
-$kendo-listgroup-border-radius: k-border-radius(md) !default;
+$kendo-listgroup-border-radius: var( --kendo-listgroup-border-radius, #{k-border-radius(md)} ) !default;
 
 /// Font size of the listgroup.
 /// @group listgroup
-$kendo-listgroup-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-listgroup-font-size: var( --kendo-listgroup-font-size, var( --kendo-font-size, inherit ) ) !default;
 /// Line height of the listgroup.
 /// @group listgroup
-$kendo-listgroup-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-listgroup-line-height: var( --kendo-listgroup-line-height, var( --kendo-line-height, normal ) ) !default;
 
 /// Background color of the listgroup component.
 /// @group listgroup
-$kendo-listgroup-bg: k-color(surface-alt) !default;
+$kendo-listgroup-bg: var( --kendo-listgroup-bg, #{k-color(surface-alt)} ) !default;
 /// Text color of the listgroup component.
 /// @group listgroup
-$kendo-listgroup-text: k-color(on-app-surface) !default;
+$kendo-listgroup-text: var( --kendo-listgroup-text, #{k-color(on-app-surface)} ) !default;
 /// Border color of the listgroup component.
 /// @group listgroup
-$kendo-listgroup-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-listgroup-border: var( --kendo-listgroup-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 
 /// Horizontal padding of the listgroup items.
 /// @group listgroup
-$kendo-listgroup-item-padding-x: k-spacing(2) !default;
+$kendo-listgroup-item-padding-x: var( --kendo-listgroup-item-padding-x, #{k-spacing(2)} ) !default;
 /// Vertical padding of the listgroup items.
 /// @group listgroup
-$kendo-listgroup-item-padding-y: k-spacing(2) !default;
+$kendo-listgroup-item-padding-y: var( --kendo-listgroup-item-padding-y, #{k-spacing(2)} ) !default;
 /// Border width of the listgroup item.
 /// @group listgroup
-$kendo-listgroup-item-border-width: 1px !default;
+$kendo-listgroup-item-border-width: var( --kendo-listgroup-item-border-width, 1px ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/listgroup/_variables.scss" with (
+    $kendo-listgroup-border-width: $kendo-listgroup-border-width,
+    $kendo-listgroup-border-radius: $kendo-listgroup-border-radius,
+    $kendo-listgroup-font-size: $kendo-listgroup-font-size,
+    $kendo-listgroup-line-height: $kendo-listgroup-line-height,
+    $kendo-listgroup-bg: $kendo-listgroup-bg,
+    $kendo-listgroup-text: $kendo-listgroup-text,
+    $kendo-listgroup-border: $kendo-listgroup-border,
+    $kendo-listgroup-item-padding-x: $kendo-listgroup-item-padding-x,
+    $kendo-listgroup-item-padding-y: $kendo-listgroup-item-padding-y,
+    $kendo-listgroup-item-border-width: $kendo-listgroup-item-border-width
+);

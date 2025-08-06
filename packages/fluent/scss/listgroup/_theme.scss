@@ -1,14 +1,8 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/listgroup/_theme.scss" as *;
 
 @mixin kendo-listgroup--theme() {
-
-    .k-listgroup {
-        @include fill(
-            var( --kendo-listgroup-text, #{$kendo-listgroup-text} ),
-            var( --kendo-listgroup-bg, #{$kendo-listgroup-bg} ),
-            var( --kendo-listgroup-border, #{$kendo-listgroup-border} )
-        );
-    }
+    @include kendo-listgroup--theme-base();
 
 }

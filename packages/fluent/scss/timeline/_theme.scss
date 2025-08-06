@@ -1,72 +1,49 @@
 @use "../core/_index.scss" as *;
 @use "../card/_variables.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/timeline/_theme.scss" as *;
 
 @mixin kendo-timeline--theme() {
+    @include kendo-timeline--theme-base();
 
     .k-timeline {
         .k-timeline-flag {
-            color: var( --kendo-timeline-flag-text, #{ $kendo-timeline-flag-text } );
-            background-color: var( --kendo-timeline-flag-bg, #{ $kendo-timeline-flag-bg} );
-            @include box-shadow( var( --kendo-timeline-flag-box-shadow, #{ $kendo-timeline-flag-box-shadow} ) )
-        }
-
-        .k-timeline-circle {
-            background-color: var( --kendo-timeline-circle-bg, #{ $kendo-timeline-circle-bg } );
+            @include box-shadow( $kendo-timeline-flag-box-shadow )
         }
 
         .k-timeline-card {
             .k-card-header {
-                background-color: var( --kendo-timeline-card-header-bg, #{ $kendo-timeline-card-header-bg } );
-                color: var( --kendo-timeline-card-header-text, #{ $kendo-timeline-card-header-text } );
+                background-color: $kendo-timeline-card-header-bg;
+                color: $kendo-timeline-card-header-text;
             }
 
             .k-card-body {
 
                 // Scrollbar styles for Mozilla
-                scrollbar-color: var( --kendo-timeline-card-body-scroll-border, #{ $kendo-timeline-card-body-scroll-border } ) var( --kendo-timeline-card-body-scroll-bg, #{ $kendo-timeline-card-body-scroll-bg } );
+                scrollbar-color: $kendo-timeline-card-body-scroll-border $kendo-timeline-card-body-scroll-bg;
 
                 // Scrollbar styles for Chrome, Safari and Opera
                 &::-webkit-scrollbar-track {
-                    background: var( --kendo-timeline-card-body-scroll-bg, #{ $kendo-timeline-card-body-scroll-bg } );
+                    background: $kendo-timeline-card-body-scroll-bg;
                 }
 
                 &::-webkit-scrollbar-thumb {
-                    background: var( --kendo-timeline-card-body-scroll-bg, #{ $kendo-timeline-card-body-scroll-bg } );
+                    background: $kendo-timeline-card-body-scroll-bg;
                 }
 
                 &::-webkit-scrollbar-thumb:hover {
-                    background: var( --kendo-timeline-card-scroll-thumb-hover, #{ $kendo-timeline-card-scroll-thumb-hover } );
+                    background: $kendo-timeline-card-scroll-thumb-hover;
                 }
             }
         }
 
         // TODO: remove
         .k-timeline-date {
-            color: var( --kendo-timeline-date-body-text, #{ $kendo-timeline-date-body-text } );
+            color: $kendo-timeline-date-body-text;
         }
-
-        .k-timeline-arrow.k-disabled {
-            opacity: 1; // The arrow button in disabled mode should have a solid background
-            color: var( --kendo-timeline-track-arrow-disabled-text, #{ $kendo-timeline-track-arrow-disabled-text} );
-            background-color: var( --kendo-timeline-track-arrow-disabled-bg, #{ $kendo-timeline-track-arrow-disabled-bg} );
-            border-color: var( --kendo-timeline-track-arrow-disabled-border, #{ $kendo-timeline-track-arrow-disabled-border} );
-        }
-    }
-
-    .k-timeline-vertical,
-    .k-timeline-horizontal .k-timeline-track-wrap {
-        &::after {
-            background-color: var( --kendo-timeline-track-bg, #{ $kendo-timeline-track-bg } );
-            border-color: var( --kendo-timeline-track-border-color, #{ $kendo-timeline-track-border-color } );
-        }
-    }
-
-    .k-timeline-horizontal .k-timeline-flag::after {
-        background-color: var( --kendo-timeline-flag-bg, #{ $kendo-timeline-flag-bg } );
     }
 
     .k-timeline-track-item.k-focus .k-timeline-circle {
-        @include box-shadow( var( --kendo-timeline-flag-box-shadow, #{ $kendo-timeline-flag-box-shadow } ) );
+        @include box-shadow( $kendo-timeline-flag-box-shadow );
     }
 }
