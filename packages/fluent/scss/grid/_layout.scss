@@ -1114,10 +1114,14 @@
     }
     // Command cell
     .k-grid-stack-cell.k-command-cell {
-        display: flex;
-        flex-wrap: wrap;
         padding: 0;
         grid-column: 1 / -1;
+
+        .k-grid-stack-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: $kendo-grid-command-cell-button-spacing;
+        }
     }
 
     // Dirty cell
