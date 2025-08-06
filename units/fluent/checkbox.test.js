@@ -14,9 +14,6 @@ const expected = [
     "kendo-checkbox-indeterminate-glyph", // Variable customizations work, but is used directly in CSS rule in the core.
 ];
 
-const unexpected = [
-    "kendo-checkbox-focus-border" // This variable in used in Core
-
-];
+const unexpected = [];
 
 testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);

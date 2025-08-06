@@ -12,8 +12,6 @@ const dependencyClassNames = [
 
 const expected = [];
 
-const unexpected = [
-    "kendo-expander-focus-shadow" // This variable is used in the Core
-];
+const unexpected = [];
 
 testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);
