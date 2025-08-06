@@ -1,31 +1,19 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/map/_theme.scss" as *;
 
 @mixin kendo-map--theme() {
+    @include kendo-map--theme-base();
 
     .k-map {
-        @include fill(
-            var( --kendo-map-text, #{$kendo-map-text} ),
-            var( --kendo-map-bg, #{$kendo-map-bg} ),
-            var( --kendo-map-border, #{$kendo-map-border} )
-        );
-
         .k-navigator,
         .k-zoom-control {
-            background-color: var( --kendo-map-navigator-bg, #{$kendo-map-navigator-bg} );
-            border-color: var( --kendo-map-navigator-border, #{$kendo-map-navigator-border} );
+            background-color: $kendo-map-navigator-bg;
+            border-color: $kendo-map-navigator-border;
 
             .k-button {
-                color: var( --kendo-map-navigator-text, #{$kendo-map-navigator-text} );
+                color: $kendo-map-navigator-text;
             }
-        }
-
-        .k-marker {
-            color: var( --kendo-map-marker-fill, #{$kendo-map-marker-fill} );
-        }
-
-        .k-attribution {
-            background-color: var( --kendo-map-attribution-bg, #{$kendo-map-attribution-bg} );
         }
     }
 

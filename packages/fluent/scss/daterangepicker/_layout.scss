@@ -1,40 +1,5 @@
-@use "sass:map";
-@use "../core/_index.scss" as *;
-@use "../input/_variables.scss" as *;
-@use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/daterangepicker/_layout.scss" as *;
 
 @mixin kendo-date-range-picker--layout() {
-
-    // Daterange picker
-    .k-daterange-picker {
-        width: var( --kendo-daterange-picker-width, #{$kendo-daterange-picker-width} );
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: flex-end;
-        gap: k-spacing(2);
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        .k-dateinput {
-            width: var( --kendo-daterange-picker-input-width, #{$kendo-daterange-picker-input-width} );
-        }
-    }
-
-    // React specific
-    .k-daterangepicker-wrap {
-        display: inherit;
-        flex-flow: inherit;
-        align-items: inherit;
-        gap: inherit;
-    }
-
-
-    // Alias
-    .k-daterangepicker {
-        @extend .k-daterange-picker !optional;
-    }
+    @include kendo-date-range-picker--layout-base();
 }

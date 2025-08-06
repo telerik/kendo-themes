@@ -226,7 +226,7 @@
         .k-timeline-circle {
             margin-top: $kendo-timeline-track-event-offset;
             transform: translate(-50%, -50%);
-            margin-right: - math.div( $kendo-timeline-circle-width, 2 );
+            margin-right: calc( -1 * ( $kendo-timeline-circle-width / 2 ) );
         }
 
         &.k-timeline-alternating {

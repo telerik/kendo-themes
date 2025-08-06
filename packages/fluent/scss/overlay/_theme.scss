@@ -1,14 +1,15 @@
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/overlay/_theme.scss" as *;
 
 @mixin kendo-overlay--theme() {
+    @include kendo-overlay--theme-base();
 
     .k-overlay,
     .k-overlay-dark {
-        background-color: var( --kendo-overlay-dark, #{$kendo-overlay-dark} );
+        background-color: $kendo-overlay-dark;
     }
 
     .k-overlay-light {
-        background-color: var( --kendo-overlay-light, #{$kendo-overlay-light} );
+        background-color: $kendo-overlay-light;
     }
-
 }

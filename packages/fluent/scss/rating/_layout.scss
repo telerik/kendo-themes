@@ -1,46 +1,19 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/rating/_layout.scss" as *;
 
 @mixin kendo-rating--layout() {
 
-    // Rating
+    @include kendo-rating--layout-base();
+
     .k-rating {
-        margin: 0;
-        padding: 0;
-        border-width: 0;
-        box-sizing: border-box;
-        outline: 0;
-        font-size: var( --kendo-rating-font-size, #{$kendo-rating-font-size} );
-        font-family: var( --kendo-rating-font-family, #{$kendo-rating-font-family} );
-        line-height: var( --kendo-rating-line-height, #{$kendo-rating-line-height} );
-        display: inline-flex;
-        gap: var( --kendo-rating-spacing, #{$kendo-rating-spacing} );
-        background: none;
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        &.k-readonly {
-            pointer-events: none;
-        }
+        gap: $kendo-rating-spacing;
     }
 
-    // Items wrapper
-    .k-rating-container {
-        position: relative;
-        flex: 0 1 auto;
-    }
-
-    // Item
     .k-rating-item {
         margin: 0;
-        padding-inline: var( --kendo-rating-item-padding-x, #{$kendo-rating-item-padding-x} );
-        padding-block: var( --kendo-rating-item-padding-y, #{$kendo-rating-item-padding-y} );
+        padding-inline: $kendo-rating-item-padding-x;
+        padding-block: $kendo-rating-item-padding-y;
         vertical-align: middle;
         display: inline-flex;
         align-items: center;
@@ -59,35 +32,16 @@
 
         &:focus,
         &.k-focus {
-            outline-width: var( --kendo-rating-item-focus-outline-width, #{$kendo-rating-item-focus-outline-width} );
-            outline-style: var( --kendo-rating-item-focus-outline-style, #{$kendo-rating-item-focus-outline-style} );
-            outline-offset: -#{$kendo-rating-item-focus-outline-width};
+            outline-width: $kendo-rating-item-focus-outline-width;
+            outline-style: $kendo-rating-item-focus-outline-style;
+            outline-offset: calc( -1 * #{$kendo-rating-item-focus-outline-width} );
         }
     }
 
-    // Label
-    .k-rating-label {
-        vertical-align: middle;
-        display: inline-flex;
-        align-items: center;
-    }
-
-    // Precision
     .k-rating-precision-part,
     .k-rating-precision-complement {
-        display: inherit;
-        position: absolute;
-        top: var( --kendo-rating-item-padding-y, #{$kendo-rating-item-padding-y} );
-        inset-inline-start: var( --kendo-rating-item-padding-x, #{$kendo-rating-item-padding-x} );
-        overflow: hidden;
-    }
-
-    .k-rating-precision-complement {
-        direction: rtl;
-    }
-
-    :is(.k-rtl, [dir="rtl"]) .k-rating-precision-complement {
-        direction: ltr;
+        top: $kendo-rating-item-padding-y;
+        inset-inline-start: $kendo-rating-item-padding-x;
     }
 
 }

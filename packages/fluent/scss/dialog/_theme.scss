@@ -1,42 +1,22 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/dialog/_theme.scss" as *;
 
 @mixin kendo-dialog--theme() {
 
+    @include kendo-dialog--theme-base();
+
     .k-dialog {
-        background-color: var( --kendo-dialog-bg, #{$kendo-dialog-bg} );
-        @include box-shadow( var( --kendo-dialog-shadow, #{$kendo-dialog-shadow} ) );
+        @include box-shadow( $kendo-dialog-shadow );
     }
 
     // Title
     .k-dialog-titlebar {
-        @include fill(
-            $bg: var( --kendo-dialog-titlebar-bg, #{$kendo-dialog-titlebar-bg} ),
-            $border: var( --kendo-dialog-titlebar-border, #{$kendo-dialog-titlebar-border} ),
-        );
-
         @include box-shadow(none);
     }
 
     .k-dialog-title {
-        color: var( --kendo-dialog-titlebar-text, #{$kendo-dialog-titlebar-text} );
+        color: inherit;
     }
-
-    // dialog theme colors
-    @each $theme-color, $color-props in $kendo-dialog-theme-colors {
-
-        $_text: map.get( $color-props, text );
-        $_bg: map.get( $color-props, bg );
-        $_border: map.get( $color-props, border );
-
-        .k-dialog-#{$theme-color} .k-dialog-titlebar {
-            color: var( --kendo-dialog-titlebar-text, #{$kendo-dialog-titlebar-text} );
-
-            --kendo-dialog-titlebar-text: var( --kendo-dialog-#{$theme-color}-text, #{$_text} );
-            --kendo-dialog-titlebar-bg: var( --kendo-dialog-#{$theme-color}-bg, #{$_bg} );
-            --kendo-dialog-titlebar-border: var( --kendo-dialog-#{$theme-color}-border, #{$_border} );
-        }
-    }
-
 }

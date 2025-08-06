@@ -1,9 +1,5 @@
-@mixin kendo-stack-layout--layout-base() {
+@use "@progress/kendo-theme-core/scss/components/stacklayout/_layout.scss" as *;
 
-    // StackLayout
-    .k-stack-layout {}
-
-}
 
 @mixin kendo-stack-layout--layout() {
     @include kendo-stack-layout--layout-base();

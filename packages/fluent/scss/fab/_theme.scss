@@ -1,136 +1,53 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/fab/_theme.scss" as *;
 
 @mixin kendo-fab--theme() {
+    @include kendo-fab--theme-base();
 
     .k-fab {
-        border-color: var( --kendo-fab-border, initial );
-        color: var( --kendo-fab-text, inherit );
-        background-color: var( --kendo-fab-bg, initial );
-        background-image: linear-gradient(
-            var( --kendo-fab-gradient, transparent, transparent )
-        );
-        box-shadow: var( --kendo-fab-shadow, none );
-
-        &:hover,
-        &.k-hover {
-            --kendo-fab-text: var( --kendo-fab-hover-text );
-            --kendo-fab-bg: var( --kendo-fab-hover-bg );
-            --kendo-fab-border: var( --kendo-fab-hover-border );
-        }
-
-        &:focus,
-        &.k-focus {
-            --kendo-fab-text: var( --kendo-fab-focus-text );
-            --kendo-fab-bg: var( --kendo-fab-focus-bg );
-            --kendo-fab-border: var( --kendo-fab-focus-border );
-        }
-        &:focus::after,
-        &.k-focus::after {
-            outline-color: var( --kendo-fab-focus-outline, initial );
-        }
-
-        &:active,
-        &.k-active {
-            --kendo-fab-text: var( --kendo-fab-active-text );
-            --kendo-fab-bg: var( --kendo-fab-active-bg );
-            --kendo-fab-border: var( --kendo-fab-active-border );
-        }
-
-        &.k-selected {
-            --kendo-fab-text: var( --kendo-fab-selected-text );
-            --kendo-fab-bg: var( --kendo-fab-selected-bg );
-            --kendo-fab-border: var( --kendo-fab-selected-border );
-        }
-
         &.k-generating {
             animation: k-fab-generating 1.5s ease-in-out 0.5s infinite;
         }
 
         @keyframes k-fab-generating {
             0% {
-                background-color: var( --kendo-fab-active-bg );
-                border: var( --kendo-fab-active-bg );
+                background-color: $kendo-fab-item-active-bg;
+                border-color: $kendo-fab-item-active-bg;
             }
             50% {
-                background-color: color-mix(in srgb, var( --kendo-fab-active-bg ) $kendo-fab-generating-opacity, k-color(surface-alt));
-                border: color-mix(in srgb, var( --kendo-fab-active-bg ) $kendo-fab-generating-opacity, k-color(surface-alt));
+                background-color: color-mix(in srgb, $kendo-fab-item-active-bg $kendo-fab-generating-opacity, k-color(surface-alt));
+                border-color: color-mix(in srgb, $kendo-fab-item-active-bg $kendo-fab-generating-opacity, k-color(surface-alt));
             }
             100% {
-                background-color: var( --kendo-fab-active-bg );
-                border: var( --kendo-fab-active-bg );
+                background-color: $kendo-fab-item-active-bg;
+                border-color: $kendo-fab-item-active-bg;
             }
         }
 
         &:disabled,
         &.k-disabled {
-            --kendo-fab-text: var( --kendo-fab-disabled-text );
-            --kendo-fab-bg: var( --kendo-fab-disabled-bg );
-            --kendo-fab-border: var( --kendo-fab-disabled-border );
+            color: $kendo-fab-disabled-text;
+            background-color: $kendo-fab-disabled-bg;
+            border-color: $kendo-fab-disabled-border;
         }
     }
 
-    // Theme colors
-    @each $fill-mode, $theme-colors in $kendo-fab-theme-colors {
-        @each $theme-color, $color-props in $theme-colors {
-            $_text-color: map.get( $color-props, text );
-            $_bg: map.get( $color-props, bg );
-            $_border-color: map.get( $color-props, border );
-
-            $_focus-text: map.get( $color-props, focus-text );
-            $_focus-bg: map.get( $color-props, focus-bg );
-            $_focus-border: map.get( $color-props, focus-border );
-            $_focus-outline: map.get( $color-props, focus-outline );
-
-            $_hover-text: map.get( $color-props, hover-text );
-            $_hover-bg: map.get( $color-props, hover-bg );
-            $_hover-border: map.get( $color-props, hover-border );
-
-            $_active-text: map.get( $color-props, active-text );
-            $_active-bg: map.get( $color-props, active-bg );
-            $_active-border: map.get( $color-props, active-border );
-
-            $_disabled-text: map.get( $color-props, disabled-text );
-            $_disabled-bg: map.get( $color-props, disabled-bg );
-            $_disabled-border: map.get( $color-props, disabled-border );
-
-            .k-fab-#{$fill-mode}-#{$theme-color} {
-                --kendo-fab-text: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-text, #{$_text-color} );
-                --kendo-fab-bg: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-bg, #{$_bg} );
-                --kendo-fab-border: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-border, #{$_border-color} );
-
-                --kendo-fab-hover-text: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-hover-text, #{$_hover-text} );
-                --kendo-fab-hover-bg: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-hover-bg, #{$_hover-bg} );
-                --kendo-fab-hover-border: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-hover-border, #{$_hover-border} );
-
-                --kendo-fab-focus-text: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-focus-text, #{$_focus-text} );
-                --kendo-fab-focus-bg: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-focus-bg, #{$_focus-bg} );
-                --kendo-fab-focus-border: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-focus-border, #{$_focus-border} );
-                --kendo-fab-focus-outline: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-focus-outline, #{$_focus-outline} );
-
-                --kendo-fab-active-text: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-active-text, #{$_active-text} );
-                --kendo-fab-active-bg: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-active-bg, #{$_active-bg} );
-                --kendo-fab-active-border: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-active-border, #{$_active-border} );
-
-                --kendo-fab-selected-text: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-selected-text, #{$_active-text} );
-                --kendo-fab-selected-bg: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-selected-bg, #{$_active-bg} );
-                --kendo-fab-selected-border: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-selected-border, #{$_active-border} );
-
-                --kendo-fab-disabled-text: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-disabled-text, #{$_disabled-text} );
-                --kendo-fab-disabled-bg: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-disabled-bg, #{$_disabled-bg} );
-                --kendo-fab-disabled-border: var( --kendo-fab-#{$fill-mode}-#{$theme-color}-disabled-border, #{$_disabled-border} );
-            }
+    .k-fab-solid-warning,
+    .k-fab-solid-light {
+        &:focus::after,
+        &.k-focus::after {
+            outline-color: k-color(app-surface);
         }
     }
 
-    // Items
     .k-fab-item-text,
     .k-fab-item-icon {
         @include fill(
-            var( --kendo-fab-item-text, #{$kendo-fab-item-text} ),
-            var( --kendo-fab-item-bg, #{$kendo-fab-item-bg} ),
-            var( --kendo-fab-item-border, #{$kendo-fab-item-border} )
+            $kendo-fab-item-text,
+            $kendo-fab-item-bg,
+            $kendo-fab-item-border
         );
     }
 
@@ -140,15 +57,15 @@
         &:hover,
         &.k-hover {
             .k-fab-item-icon {
-                --kendo-fab-item-text: var( --kendo-fab-item-icon-hover-text, #{$kendo-fab-item-hover-text} );
-                --kendo-fab-item-bg: var( --kendo-fab-item-icon-hover-bg, #{$kendo-fab-item-hover-bg} );
-                --kendo-fab-item-border: var( --kendo-fab-item-icon-hover-border, #{$kendo-fab-item-hover-border} );
+                color: $kendo-fab-item-hover-text;
+                background-color: $kendo-fab-item-hover-bg;
+                border-color: $kendo-fab-item-hover-border;
             }
 
             .k-fab-item-text {
-                --kendo-fab-item-text: var( --kendo-fab-item-hover-text, #{$kendo-fab-item-hover-text} );
-                --kendo-fab-item-bg: var( --kendo-fab-item-hover-bg, #{$kendo-fab-item-hover-bg} );
-                --kendo-fab-item-border: var( --kendo-fab-item-hover-border, #{$kendo-fab-item-hover-border} );
+                color: $kendo-fab-item-hover-text;
+                background-color: $kendo-fab-item-hover-bg;
+                border-color: $kendo-fab-item-hover-border;
             }
         }
 
@@ -156,15 +73,15 @@
         &:focus,
         &.k-focus {
             .k-fab-item-icon {
-                --kendo-fab-item-text: var( --kendo-fab-item-icon-focus-text, #{$kendo-fab-item-focus-text} );
-                --kendo-fab-item-bg: var( --kendo-fab-item-icon-focus-bg, #{$kendo-fab-item-focus-bg} );
-                --kendo-fab-item-border: var( --kendo-fab-item-icon-focus-border, #{$kendo-fab-item-focus-border} );
+                color: $kendo-fab-item-focus-text;
+                background-color: $kendo-fab-item-focus-bg;
+                border-color: $kendo-fab-item-focus-border;
             }
 
             .k-fab-item-text {
-                --kendo-fab-item-text: var( --kendo-fab-item-focus-text, #{$kendo-fab-item-focus-text} );
-                --kendo-fab-item-bg: var( --kendo-fab-item-focus-bg, #{$kendo-fab-item-focus-bg} );
-                --kendo-fab-item-border: var( --kendo-fab-item-focus-border, #{$kendo-fab-item-focus-border} );
+                color: $kendo-fab-item-focus-text;
+                background-color: $kendo-fab-item-focus-bg;
+                border-color: $kendo-fab-item-focus-border;
             }
         }
 
@@ -172,15 +89,15 @@
         &:active,
         &.k-active {
             .k-fab-item-icon {
-                --kendo-fab-item-text: var( --kendo-fab-item-icon-active-text, #{$kendo-fab-item-active-text} );
-                --kendo-fab-item-bg: var( --kendo-fab-item-icon-active-bg, #{$kendo-fab-item-active-bg} );
-                --kendo-fab-item-border: var( --kendo-fab-item-icon-active-border, #{$kendo-fab-item-active-border} );
+                color: $kendo-fab-item-active-text;
+                background-color: $kendo-fab-item-active-bg;
+                border-color: $kendo-fab-item-active-border;
             }
 
             .k-fab-item-text {
-                --kendo-fab-item-text: var( --kendo-fab-item-active-text, #{$kendo-fab-item-active-text} );
-                --kendo-fab-item-bg: var( --kendo-fab-item-active-bg, #{$kendo-fab-item-active-bg} );
-                --kendo-fab-item-border: var( --kendo-fab-item-active-border, #{$kendo-fab-item-active-border} );
+                color: $kendo-fab-item-active-text;
+                background-color: $kendo-fab-item-active-bg;
+                border-color: $kendo-fab-item-active-border;
             }
         }
 
@@ -200,12 +117,6 @@
                 transparent
             );
         }
-
-    }
-
-    // Popup
-    .k-fab-popup {
-        @include box-shadow( none );
     }
 
 }

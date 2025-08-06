@@ -1,28 +1,10 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/radio/_theme.scss" as *;
 
 @mixin kendo-radio--theme() {
 
-    // Radio
-    .k-radio {
-        @include fill(
-            var( --kendo-radio-text, #{$kendo-radio-text} ),
-            var( --kendo-radio-bg, #{$kendo-radio-bg} ),
-            var( --kendo-radio-border, #{$kendo-radio-border} )
-        );
-    }
-
-
-    // Hover state
-    .k-radio:hover,
-    .k-radio.k-hover {
-        @include fill(
-            var( --kendo-radio-hover-text, #{$kendo-radio-hover-text} ),
-            var( --kendo-radio-hover-bg, #{$kendo-radio-hover-bg} ),
-            var( --kendo-radio-hover-border, #{$kendo-radio-hover-border} )
-        );
-    }
-
+    @include kendo-radio--theme-base();
 
     // Focus state
     .k-radio:focus,
@@ -32,70 +14,20 @@
     }
 
 
-    // Checked
-    .k-radio:checked,
-    .k-radio.k-checked {
-        @include fill(
-            var( --kendo-radio-checked-text, #{$kendo-radio-checked-text} ),
-            var( --kendo-radio-checked-bg, #{$kendo-radio-checked-bg} ),
-            var( --kendo-radio-checked-border, #{$kendo-radio-checked-border} )
-        );
-    }
-
-
     // Hover checked state
     .k-radio:checked:hover,
     .k-radio.k-checked.k-hover {
         @include fill(
-            var( --kendo-radio-hover-checked-text, #{$kendo-radio-hover-checked-text} ),
-            var( --kendo-radio-hover-checked-bg, #{$kendo-radio-hover-checked-bg} ),
-            var( --kendo-radio-hover-checked-border, #{$kendo-radio-hover-checked-border} )
+            $kendo-radio-hover-checked-text,
+            $kendo-radio-hover-checked-bg,
+            $kendo-radio-hover-checked-border
         );
     }
-
-
-    // Disabled
-    .k-radio:disabled,
-    .k-radio.k-disabled {
-        @include fill(
-            var( --kendo-radio-disabled-text, #{$kendo-radio-disabled-text} ),
-            var( --kendo-radio-disabled-bg, #{$kendo-radio-disabled-bg} ),
-            var( --kendo-radio-disabled-border, #{$kendo-radio-disabled-border} )
-        );
-    }
-    .k-radio:checked:disabled,
-    .k-radio.k-checked.k-disabled {
-        @include fill(
-            var( --kendo-radio-disabled-checked-text, #{$kendo-radio-disabled-checked-text} ),
-            var( --kendo-radio-disabled-checked-bg, #{$kendo-radio-disabled-checked-bg} ),
-            var( --kendo-radio-disabled-checked-border, #{$kendo-radio-disabled-checked-border} )
-        );
-    }
-
-
-    // Invalid state
-    .k-radio.k-invalid,
-    .k-radio.ng-invalid.ng-touched,
-    .k-radio.ng-invalid.ng-dirty {
-        @include fill( $border: var( --kendo-radio-invalid-border, #{$kendo-radio-invalid-border} ) );
-    }
-    .k-radio.k-invalid + .k-radio-label,
-    .k-radio.ng-invalid.ng-touched + .k-radio-label,
-    .k-radio.ng-invalid.ng-dirty + .k-radio-label {
-        @include fill( $color: var( --kendo-radio-invalid-text, #{$kendo-radio-invalid-text} ) );
-    }
-
 
     // Ripple
     .k-radio-wrap .k-ripple-blob {
-        color: var( --kendo-radio-ripple-bg, #{$kendo-radio-ripple-bg} );
-        opacity: var( --kendo-radio-ripple-opacity, #{$kendo-radio-ripple-opacity} );
-    }
-    .k-ripple-container {
-        .k-radio::after {
-            background: var( --kendo-radio-ripple-bg, #{$kendo-radio-ripple-bg} );
-            opacity: var( --kendo-radio-ripple-opacity, #{$kendo-radio-ripple-opacity} );
-        }
+        color: $kendo-radio-ripple-bg;
+        opacity: $kendo-radio-ripple-opacity;
     }
 
 }

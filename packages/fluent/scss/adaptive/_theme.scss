@@ -1,23 +1,11 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/adaptive/_theme.scss" as *;
 
 @mixin kendo-adaptive--theme() {
-
-    .k-pane-wrapper,
-    .k-view {
-        @include fill(
-            var( --kendo-adaptive-text, #{$kendo-adaptive-text} ),
-            var( --kendo-adaptive-bg, #{$kendo-adaptive-bg} ),
-            var( --kendo-adaptive-border, #{$kendo-adaptive-border} )
-        );
-    }
+    @include kendo-adaptive--theme-base();
 
     .k-pane-wrapper .k-pane {
-        > .k-view > .k-content {
-            background-position: 50% 50%;
-            background-color: var( --kendo-adaptive-content-bg, #{$kendo-adaptive-content-bg} );
-        }
-
         .k-grid-mobile {
             .k-column-active + th.k-header {
                 border-left-color: k-color(surface-alt);
@@ -27,66 +15,5 @@
                 background-color: k-color(surface-alt);
             }
         }
-
-        .k-scheduler-mobile {
-            .k-nav-current {
-                color: var( --kendo-adaptive-scheduler-current-text, #{$kendo-adaptive-scheduler-current-text} );
-            }
-
-            .k-scheduler-times,
-            .k-scheduler-header,
-            .k-scheduler-groupcolumn,
-            .k-mobile-scheduler-agendadate {
-                color: var( --kendo-adaptive-scheduler-base-text, #{$kendo-adaptive-scheduler-base-text} );
-            }
-
-            .k-time-period,
-            .k-mobile-scheduler-agendaweekday {
-                color: var( --kendo-adaptive-scheduler-subtle-text, #{$kendo-adaptive-scheduler-subtle-text} );
-            }
-
-            .k-scheduler-times,
-            .k-scheduler-header,
-            .k-scheduler-header-wrap,
-            .k-scheduler-datecolumn,
-            .k-scheduler-groupcolumn,
-            .k-scheduler-group-cell,
-            .k-scheduler-header-all-day {
-                background-color: var( --kendo-adaptive-content-bg, #{$kendo-adaptive-content-bg} );
-            }
-
-            .k-scheduler-toolbar .k-scheduler-tools > li {
-                display: inline-block;
-                background-color: inherit;
-            }
-        }
-
-        .k-grid-edit-form,
-        .k-grid-header-menu,
-        .k-grid-filter-menu,
-        .k-scheduler-edit-form {
-            .k-item,
-            .k-link {
-                color: k-color(on-app-surface);
-            }
-
-            .k-clear,
-            .k-select-all,
-            .k-scheduler-delete,
-            .k-scheduler-resetSeries { // stylelint-disable-line
-                color: var( --kendo-adaptive-menu-clear-text, #{$kendo-adaptive-menu-clear-text} );
-            }
-        }
-
-        .k-column-menu {
-            .k-listgroup-item.k-selected {
-                color: var( --kendo-adaptive-grid-sort-text, #{$kendo-adaptive-grid-sort-text} );
-                background: none;
-            }
-            .k-listgroup-item.k-selected .k-link {
-                color: inherit;
-            }
-        }
     }
-
 }

@@ -4,37 +4,37 @@
 
 /// The border radius of the Loader segment.
 /// @group loader
-$kendo-loader-segment-border-radius: 50% !default;
+$kendo-loader-segment-border-radius: var( --kendo-loader-segment-border-radius, 50% ) !default;
 
 /// The size of the small Loader segment.
 /// @group loader
-$kendo-loader-sm-segment-size: k-spacing(1) !default;
+$kendo-loader-sm-segment-size: var( --kendo-loader-sm-segment-size, #{k-spacing(1)} ) !default;
 /// The size of the medium Loader segment.
 /// @group loader
-$kendo-loader-md-segment-size: k-spacing(2) !default;
+$kendo-loader-md-segment-size: var( --kendo-loader-md-segment-size, #{k-spacing(2)} ) !default;
 /// The size of the large Loader segment.
 /// @group loader
-$kendo-loader-lg-segment-size: k-spacing(4) !default;
+$kendo-loader-lg-segment-size: var( --kendo-loader-lg-segment-size, #{k-spacing(4)} ) !default;
 
 /// The horizontal padding of the small Loader.
 /// @group loader
-$kendo-loader-sm-padding-x: calc( #{$kendo-loader-sm-segment-size} / 2 ) !default;
+$kendo-loader-sm-padding-x: var( --kendo-loader-sm-padding-x, calc( #{$kendo-loader-sm-segment-size} / 2 ) ) !default;
 /// The horizontal padding of the medium Loader.
 /// @group loader
-$kendo-loader-md-padding-x: calc( #{$kendo-loader-md-segment-size} / 2 ) !default;
+$kendo-loader-md-padding-x: var( --kendo-loader-md-padding-x, calc( #{$kendo-loader-md-segment-size} / 2 ) ) !default;
 /// The horizontal padding of the large Loader.
 /// @group loader
-$kendo-loader-lg-padding-x: calc( #{$kendo-loader-lg-segment-size} / 2 ) !default;
+$kendo-loader-lg-padding-x: var( --kendo-loader-lg-padding-x, calc( #{$kendo-loader-lg-segment-size} / 2 ) ) !default;
 
 /// The vertical padding of the small Loader.
 /// @group loader
-$kendo-loader-sm-padding-y: calc( #{$kendo-loader-sm-segment-size} / 2 ) !default;
+$kendo-loader-sm-padding-y: var( --kendo-loader-sm-padding-y, calc( #{$kendo-loader-sm-segment-size} / 2 ) ) !default;
 /// The vertical padding of the medium Loader.
 /// @group loader
-$kendo-loader-md-padding-y: calc( #{$kendo-loader-md-segment-size} / 2 ) !default;
+$kendo-loader-md-padding-y: var( --kendo-loader-md-padding-y, calc( #{$kendo-loader-md-segment-size} / 2 ) ) !default;
 /// The vertical padding of the large Loader.
 /// @group loader
-$kendo-loader-lg-padding-y: calc( #{$kendo-loader-lg-segment-size} /2 ) !default;
+$kendo-loader-lg-padding-y: var( --kendo-loader-lg-padding-y, calc( #{$kendo-loader-lg-segment-size} /2 ) ) !default;
 
 /// The equilateral height of the Loader.
 /// @group loader
@@ -42,162 +42,160 @@ $kendo-loader-equilateral-height: .8660 !default;
 
 /// The width of the small spinner-3 Loader.
 /// @group loader
-$kendo-loader-sm-spinner-3-width: calc( #{$kendo-loader-sm-segment-size} * 4 ) !default;
+$kendo-loader-sm-spinner-3-width: var( --kendo-loader-sm-spinner-3-width, calc( #{$kendo-loader-sm-segment-size} * 4 ) ) !default;
 /// The width of the medium spinner-3 Loader.
 /// @group loader
-$kendo-loader-md-spinner-3-width: calc( #{$kendo-loader-md-segment-size} * 4 ) !default;
+$kendo-loader-md-spinner-3-width: var( --kendo-loader-md-spinner-3-width, calc( #{$kendo-loader-md-segment-size} * 4 ) ) !default;
 /// The width of the large spinner-3 Loader.
 /// @group loader
-$kendo-loader-lg-spinner-3-width: calc( #{$kendo-loader-lg-segment-size} * 4 ) !default;
+$kendo-loader-lg-spinner-3-width: var( --kendo-loader-lg-spinner-3-width, calc( #{$kendo-loader-lg-segment-size} * 4 ) ) !default;
 
 /// The height of the small spinner-3 Loader.
 /// @group loader
-$kendo-loader-sm-spinner-3-height: calc( #{$kendo-loader-sm-spinner-3-width} * #{$kendo-loader-equilateral-height} ) !default;
+$kendo-loader-sm-spinner-3-height: var( --kendo-loader-sm-spinner-3-height, calc( #{$kendo-loader-sm-spinner-3-width} * #{$kendo-loader-equilateral-height} ) ) !default;
 /// The height of the medium spinner-3 Loader.
 /// @group loader
-$kendo-loader-md-spinner-3-height: calc( #{$kendo-loader-md-spinner-3-width} * #{$kendo-loader-equilateral-height} ) !default;
+$kendo-loader-md-spinner-3-height: var( --kendo-loader-md-spinner-3-height, calc( #{$kendo-loader-md-spinner-3-width} * #{$kendo-loader-equilateral-height} ) ) !default;
 /// The height of the large spinner-3 Loader.
 /// @group loader
-$kendo-loader-lg-spinner-3-height: calc( #{$kendo-loader-lg-spinner-3-width} * #{$kendo-loader-equilateral-height} ) !default;
+$kendo-loader-lg-spinner-3-height: var( --kendo-loader-lg-spinner-3-height, calc( #{$kendo-loader-lg-spinner-3-width} * #{$kendo-loader-equilateral-height} ) ) !default;
 
 /// The width of the small spinner-4 Loader.
 /// @group loader
-$kendo-loader-sm-spinner-4-width: calc( #{$kendo-loader-sm-segment-size} * 4 ) !default;
+$kendo-loader-sm-spinner-4-width: var( --kendo-loader-sm-spinner-4-width, calc( #{$kendo-loader-sm-segment-size} * 4 ) ) !default;
 /// The width of the medium spinner-4 Loader.
 /// @group loader
-$kendo-loader-md-spinner-4-width: calc( #{$kendo-loader-md-segment-size} * 4 ) !default;
+$kendo-loader-md-spinner-4-width: var( --kendo-loader-md-spinner-4-width, calc( #{$kendo-loader-md-segment-size} * 4 ) ) !default;
 /// The width of the large spinner-4 Loader.
 /// @group loader
-$kendo-loader-lg-spinner-4-width: calc( #{$kendo-loader-lg-segment-size} * 4 ) !default;
+$kendo-loader-lg-spinner-4-width: var( --kendo-loader-lg-spinner-4-width, calc( #{$kendo-loader-lg-segment-size} * 4 ) ) !default;
 
 /// The height of the small spinner-4 Loader.
 /// @group loader
-$kendo-loader-sm-spinner-4-height: $kendo-loader-sm-spinner-4-width !default;
+$kendo-loader-sm-spinner-4-height: var( --kendo-loader-sm-spinner-4-height, #{$kendo-loader-sm-spinner-4-width} ) !default;
 /// The height of the medium spinner-4 Loader.
 /// @group loader
-$kendo-loader-md-spinner-4-height: $kendo-loader-md-spinner-4-width !default;
+$kendo-loader-md-spinner-4-height: var( --kendo-loader-md-spinner-4-height, #{$kendo-loader-md-spinner-4-width} ) !default;
 /// The height of the large spinner-4 Loader.
 /// @group loader
-$kendo-loader-lg-spinner-4-height: $kendo-loader-lg-spinner-4-width !default;
+$kendo-loader-lg-spinner-4-height: var( --kendo-loader-lg-spinner-4-height, #{$kendo-loader-lg-spinner-4-width} ) !default;
 
 /// The border width of the container panel.
 /// @group loader
-$kendo-loader-container-panel-border-width: 1px !default;
+$kendo-loader-container-panel-border-width: var( --kendo-loader-container-panel-border-width, 1px ) !default;
 /// The border style of the container panel.
 /// @group loader
-$kendo-loader-container-panel-border-style: solid !default;
+$kendo-loader-container-panel-border-style: var( --kendo-loader-container-panel-border-style, solid ) !default;
 /// The border color of the container panel.
 /// @group loader
-$kendo-loader-container-panel-border-color: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-loader-container-panel-border-color: var( --kendo-loader-container-panel-border-color, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
 /// The border radius of the container panel.
 /// @group loader
-$kendo-loader-container-panel-border-radius: k-border-radius(md) !default;
+$kendo-loader-container-panel-border-radius: var( --kendo-loader-container-panel-border-radius, #{k-border-radius(md)} ) !default;
 /// The background color of the container panel.
 /// @group loader
-$kendo-loader-container-panel-bg: k-color(app-surface) !default;
+$kendo-loader-container-panel-bg: var( --kendo-loader-container-panel-bg, #{k-color(app-surface)} ) !default;
 
 /// The horizontal padding of the small Loader container.
 /// @group loader
-$kendo-loader-sm-container-padding-x: k-spacing(4) !default;
+$kendo-loader-sm-container-padding-x: var( --kendo-loader-sm-container-padding-x, #{k-spacing(4)} ) !default;
 /// The horizontal padding of the medium Loader container.
 /// @group loader
-$kendo-loader-md-container-padding-x: k-spacing(5) !default;
+$kendo-loader-md-container-padding-x: var( --kendo-loader-md-container-padding-x, #{k-spacing(5)} ) !default;
 /// The horizontal padding of the large Loader container.
 /// @group loader
-$kendo-loader-lg-container-padding-x: k-spacing(6) !default;
+$kendo-loader-lg-container-padding-x: var( --kendo-loader-lg-container-padding-x, #{k-spacing(6)} ) !default;
 
 /// The vertical padding of the small Loader container.
 /// @group loader
-$kendo-loader-sm-container-padding-y: k-spacing(4) !default;
+$kendo-loader-sm-container-padding-y: var( --kendo-loader-sm-container-padding-y, #{k-spacing(4)} ) !default;
 /// The vertical padding of the medium Loader container.
 /// @group loader
-$kendo-loader-md-container-padding-y: k-spacing(5) !default;
+$kendo-loader-md-container-padding-y: var( --kendo-loader-md-container-padding-y, #{k-spacing(5)} ) !default;
 /// The vertical padding of the large Loader container.
 /// @group loader
-$kendo-loader-lg-container-padding-y: k-spacing(6) !default;
+$kendo-loader-lg-container-padding-y: var( --kendo-loader-lg-container-padding-y, #{k-spacing(6)} ) !default;
 
 /// The gap of the small Loader container.
 /// @group loader
-$kendo-loader-sm-container-gap: k-spacing(1) !default;
+$kendo-loader-sm-container-gap: var( --kendo-loader-sm-container-gap, #{k-spacing(1)} ) !default;
 /// The gap of the medium Loader container.
 /// @group loader
-$kendo-loader-md-container-gap: k-spacing(2) !default;
+$kendo-loader-md-container-gap: var( --kendo-loader-md-container-gap, #{k-spacing(2)} ) !default;
 /// The gap of the large Loader container.
 /// @group loader
-$kendo-loader-lg-container-gap: k-spacing(3) !default;
+$kendo-loader-lg-container-gap: var( --kendo-loader-lg-container-gap, #{k-spacing(3)} ) !default;
 
 /// The font size of the small Loader container.
 /// @group loader
-$kendo-loader-sm-container-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-loader-sm-container-font-size: var( --kendo-loader-sm-container-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
 /// The font size of the medium Loader container.
 /// @group loader
-$kendo-loader-md-container-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-loader-md-container-font-size: var( --kendo-loader-md-container-font-size, var( --kendo-font-size, inherit ) ) !default;
 /// The font size of the large Loader container.
 /// @group loader
-$kendo-loader-lg-container-font-size: var( --kendo-font-size-lg, inherit ) !default;
-
-/// The theme variations for the Loader.
-/// @group loader
-$kendo-loader-brand-colors: (
-    primary: primary,
-    secondary: secondary,
-    tertiary: tertiary,
-    error: error,
-    success: success,
-    warning: warning,
-    info: info
- ) !default;
-
- // Matrix with loader theme colors in the order: bg, color, border
-$_tc-loader-matrix: (
-    (normal: (color, null, null)),
-) !default;
-
-$_tc-loader-dark-matrix: (
-    (normal: (color, null, null)),
-) !default;
-
-$_tc-loader-light-matrix: (
-    (normal: (color, null, null)),
-) !default;
+$kendo-loader-lg-container-font-size: var( --kendo-loader-lg-container-font-size, var( --kendo-font-size-lg, inherit ) ) !default;
 
 /// The theme colors map for the Loader variations.
 /// @group loader
-$kendo-loader-theme-colors: () !default;
-
-@each $ui-states in $_tc-loader-matrix {
-    @each $brand-color, $palette in $kendo-loader-brand-colors {
-        $kendo-loader-theme-colors: map.deep-merge(
-            $kendo-loader-theme-colors,
-            k-generate-theme-variation( $brand-color, $palette, $ui-states )
-        );
-    };
-}
-
-@each $ui-states in $_tc-loader-dark-matrix {
-    $kendo-loader-theme-colors: map.deep-merge(
-        $kendo-loader-theme-colors,
-        k-generate-theme-variation( dark, dark, $ui-states )
-    );
-}
-
-@each $ui-states in $_tc-loader-light-matrix {
-    $kendo-loader-theme-colors: map.deep-merge(
-        $kendo-loader-theme-colors,
-        k-generate-theme-variation( light, light, $ui-states )
-    );
-}
+$kendo-loader-theme-colors: (
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+) !default;
 
 // Loading indicator
 /// The background color of the Loading indicator.
 /// @group loading
-$kendo-loading-bg: k-color(surface-alt) !default;
+$kendo-loading-bg: var( --kendo-loading-bg, #{k-color(surface-alt)} ) !default;
 /// The text color of the Loading indicator.
 /// @group loading
-$kendo-loading-text: currentColor !default;
+$kendo-loading-text: var( --kendo-loading-text, currentColor ) !default;
 /// The opacity of the Loading indicator.
 /// @group loading
-$kendo-loading-opacity: .3 !default;
+$kendo-loading-opacity: var( --kendo-loading-opacity, .3 ) !default;
 /// The z-index of the Loading indicator.
 /// @group loading
-$kendo-zindex-loading: 100 !default;
+$kendo-zindex-loading: var( --kendo-zindex-loading, 100 ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/loader/_variables.scss" with (
+    $kendo-loader-segment-border-radius: $kendo-loader-segment-border-radius,
+    $kendo-loader-sm-segment-size: $kendo-loader-sm-segment-size,
+    $kendo-loader-md-segment-size: $kendo-loader-md-segment-size,
+    $kendo-loader-lg-segment-size: $kendo-loader-lg-segment-size,
+    $kendo-loader-sm-spinner-3-width: $kendo-loader-sm-spinner-3-width,
+    $kendo-loader-md-spinner-3-width: $kendo-loader-md-spinner-3-width,
+    $kendo-loader-lg-spinner-3-width: $kendo-loader-lg-spinner-3-width,
+    $kendo-loader-sm-spinner-3-height: $kendo-loader-sm-spinner-3-height,
+    $kendo-loader-md-spinner-3-height: $kendo-loader-md-spinner-3-height,
+    $kendo-loader-lg-spinner-3-height: $kendo-loader-lg-spinner-3-height,
+    $kendo-loader-sm-spinner-4-width: $kendo-loader-sm-spinner-4-width,
+    $kendo-loader-md-spinner-4-width: $kendo-loader-md-spinner-4-width,
+    $kendo-loader-lg-spinner-4-width: $kendo-loader-lg-spinner-4-width,
+    $kendo-loader-sm-spinner-4-height: $kendo-loader-sm-spinner-4-height,
+    $kendo-loader-md-spinner-4-height: $kendo-loader-md-spinner-4-height,
+    $kendo-loader-lg-spinner-4-height: $kendo-loader-lg-spinner-4-height,
+    $kendo-loader-container-panel-border-width: $kendo-loader-container-panel-border-width,
+    $kendo-loader-container-panel-border-style: $kendo-loader-container-panel-border-style,
+    $kendo-loader-container-panel-border-color: $kendo-loader-container-panel-border-color,
+    $kendo-loader-container-panel-border-radius: $kendo-loader-container-panel-border-radius,
+    $kendo-loader-container-panel-bg: $kendo-loader-container-panel-bg,
+    $kendo-loader-sm-container-gap: $kendo-loader-sm-container-gap,
+    $kendo-loader-md-container-gap: $kendo-loader-md-container-gap,
+    $kendo-loader-lg-container-gap: $kendo-loader-lg-container-gap,
+    $kendo-loader-sm-container-font-size: $kendo-loader-sm-container-font-size,
+    $kendo-loader-md-container-font-size: $kendo-loader-md-container-font-size,
+    $kendo-loader-lg-container-font-size: $kendo-loader-lg-container-font-size,
+    $kendo-loading-bg: $kendo-loading-bg,
+    $kendo-loading-text: $kendo-loading-text,
+    $kendo-loading-opacity: $kendo-loading-opacity,
+    $kendo-zindex-loading: $kendo-zindex-loading,
+    $kendo-loader-theme-colors: $kendo-loader-theme-colors
+);

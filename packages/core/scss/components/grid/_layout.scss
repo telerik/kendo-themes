@@ -295,8 +295,8 @@
         }
 
         .k-grouping-row .k-icon {
-            margin-inline-start: calc( #{math.div( $kendo-icon-size, 2 )} - #{$kendo-grid-cell-padding-x} );
-            margin-inline-end: math.div( $kendo-icon-size, 2 );
+            margin-inline-start: calc( ( $kendo-icon-size / 2 ) - #{$kendo-grid-cell-padding-x} );
+            margin-inline-end: calc( $kendo-icon-size / 2 );
             text-decoration: none;
         }
 
@@ -448,7 +448,7 @@
     }
 
     .k-grouping-dropclue {
-        width: ($kendo-grid-group-drop-hint-size * 2);
+        width: calc($kendo-grid-group-drop-hint-size * 2);
         position: absolute;
         top: $kendo-grid-group-drop-hint-top;
         box-sizing: content-box;
@@ -481,7 +481,7 @@
     // Grid header / footer
     .k-grid-header-wrap,
     .k-grid-footer-wrap {
-        margin-inline-end: -#{$kendo-grid-cell-vertical-border-width};
+        margin-inline-end: calc( -1 * #{$kendo-grid-cell-vertical-border-width} );
         width: 100%;
         border-width: 0;
         border-inline-end-width: $kendo-grid-cell-vertical-border-width;
@@ -1006,7 +1006,7 @@
             }
 
             .k-grouping-row .k-icon {
-                margin-inline-start: calc( #{math.div( $kendo-icon-size, 2 )} - #{$_cell-padding-x} );
+                margin-inline-start: calc( ( $kendo-icon-size / 2 ) - #{$_cell-padding-x} );
             }
 
             .k-grouping-dropclue {
@@ -1335,7 +1335,7 @@
     }
 
     .k-filter-selected-items {
-        font-weight: bold;
+        font-weight: var( --kendo-font-weight-bold, normal );
         line-height: normal;
         white-space: nowrap;
     }
@@ -1383,7 +1383,7 @@
         box-sizing: border-box;
 
         .k-menu:not(.k-context-menu) {
-            font-weight: 400;
+            font-weight: var( --kendo-font-weight, 400 );
         }
 
         .k-expander {
@@ -1502,7 +1502,7 @@
         border-bottom-style: solid;
         font-size: $kendo-grid-column-menu-group-header-font-size;
         line-height: $kendo-grid-column-menu-group-header-line-height;
-        font-weight: bold;
+        font-weight: var( --kendo-font-weight-bold, normal );
         text-transform: $kendo-grid-column-menu-group-header-text-transform;
         flex: 1 1 auto;
     }

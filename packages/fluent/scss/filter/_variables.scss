@@ -3,37 +3,47 @@
 
 /// The horizontal padding of the Filter.
 /// @group filter
-$kendo-filter-padding-x: k-spacing(2) !default;
+$kendo-filter-padding-x: var( --kendo-filter-padding-x, #{k-spacing(2)} ) !default;
 /// The vertical padding of the Filter.
 /// @group filter
-$kendo-filter-padding-y: k-spacing(1) !default;
+$kendo-filter-padding-y: var( --kendo-filter-padding-y, #{k-spacing(1)} ) !default;
 
 /// The bottom margin of the Filter.
 /// @group filter
-$kendo-filter-bottom-margin: k-spacing(7.5) !default;
+$kendo-filter-bottom-margin: var( --kendo-filter-bottom-margin, #{k-spacing(7.5)} ) !default;
 /// The width of the line that connects the Filter items.
 /// @group filter
-$kendo-filter-line-size: 1px !default;
+$kendo-filter-line-size: var( --kendo-filter-line-size, 1px ) !default;
 
 /// The width of the dropdown elements in the Filter items.
 /// @group filter
-$kendo-filter-operator-dropdown-width: 15em !default;
+$kendo-filter-operator-dropdown-width: var( --kendo-filter-operator-dropdown-width, 15em ) !default;
 
 /// The text color of the Filter.
 /// @group filter
-$kendo-filter-text: k-color(on-app-surface) !default;
+$kendo-filter-text: var( --kendo-filter-text, #{k-color(on-app-surface)} ) !default;
 
 /// The text color of the Filter preview field.
 /// @group filter
-$kendo-filter-preview-field-text: k-color(primary) !default;
+$kendo-filter-preview-field-text: var( --kendo-filter-preview-field-text, #{k-color(primary)} ) !default;
 /// The text color of the Filter preview operator.
 /// @group filter
-$kendo-filter-preview-operator-text: k-color(subtle) !default;
+$kendo-filter-preview-operator-text: var( --kendo-filter-preview-operator-text, #{k-color(subtle)} ) !default;
 
 /// The background color of the line that connects the Filter items.
 /// @group filter
-$kendo-filter-line-bg: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-filter-line-bg: var( --kendo-filter-line-bg, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 
 /// The border color of the focused Filter.
 /// @group filter
-$kendo-filter-toolbar-focus-border: k-color(base-emphasis) !default;
+$kendo-filter-toolbar-focus-border: var( --kendo-filter-toolbar-focus-border, #{k-color(base-emphasis)} ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/filter/variables" with (
+    $kendo-filter-padding-x: $kendo-filter-padding-x,
+    $kendo-filter-padding-y: $kendo-filter-padding-y,
+    $kendo-filter-bottom-margin: $kendo-filter-bottom-margin,
+    $kendo-filter-line-size: $kendo-filter-line-size,
+    $kendo-filter-operator-dropdown-width: $kendo-filter-operator-dropdown-width,
+    $kendo-filter-preview-field-text: $kendo-filter-preview-field-text,
+    $kendo-filter-preview-operator-text: $kendo-filter-preview-operator-text
+);

@@ -3,42 +3,50 @@
 
 /// The font family of the Rating.
 /// @group rating
-$kendo-rating-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-rating-font-family: var( --kendo-rating-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// The font size of the Rating.
 /// @group rating
-$kendo-rating-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-rating-font-size: var( --kendo-rating-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
 /// The line height of the Rating.
 /// @group rating
-$kendo-rating-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-rating-line-height: var( --kendo-rating-line-height, var( --kendo-line-height, normal ) ) !default;
 
 /// The content spacing of the Rating.
 /// @group rating
-$kendo-rating-spacing: k-spacing(1) !default;
+$kendo-rating-spacing: var( --kendo-rating-spacing, #{k-spacing(1)} ) !default;
 
 /// The horizontal padding of the Rating item.
 /// @group rating
-$kendo-rating-item-padding-x: k-spacing(0.5) !default;
+$kendo-rating-item-padding-x: var( --kendo-rating-item-padding-x, #{k-spacing(0.5)} ) !default;
 /// The vertical padding of the Rating item.
 /// @group rating
-$kendo-rating-item-padding-y: k-spacing(2) !default;
+$kendo-rating-item-padding-y: var( --kendo-rating-item-padding-y, #{k-spacing(2)} ) !default;
 /// The text color of the Rating item.
 /// @group rating
-$kendo-rating-item-text: k-color(subtle) !default;
+$kendo-rating-item-text: var( --kendo-rating-item-text, #{k-color(subtle)} ) !default;
 /// The text color of the hovered Rating item.
 /// @group rating
-$kendo-rating-item-hover-text: k-color(primary) !default;
+$kendo-rating-item-hover-text: var( --kendo-rating-item-hover-text, #{k-color(primary)} ) !default;
 /// The outline width of the focused Rating item.
 /// @group rating
-$kendo-rating-item-focus-outline-width: 1px !default;
+$kendo-rating-item-focus-outline-width: var( --kendo-rating-item-focus-outline-width, 1px ) !default;
 /// The outline style of the focused Rating item.
 /// @group rating
-$kendo-rating-item-focus-outline-style: solid !default;
+$kendo-rating-item-focus-outline-style: var( --kendo-rating-item-focus-outline-style, solid ) !default;
 /// The outline color of the focused Rating item.
 /// @group rating
-$kendo-rating-item-focus-outline: currentColor !default;
+$kendo-rating-item-focus-outline: var( --kendo-rating-item-focus-outline, currentColor ) !default;
 /// The text color of the selected Rating item.
 /// @group rating
-$kendo-rating-item-selected-text: k-color(on-app-surface) !default;
+$kendo-rating-item-selected-text: var( --kendo-rating-item-selected-text, #{k-color(on-app-surface)} ) !default;
 /// The text color of the selected and hovered Rating item.
 /// @group rating
-$kendo-rating-item-selected-hover-text: k-color(primary-active) !default;
+$kendo-rating-item-selected-hover-text: var( --kendo-rating-item-selected-hover-text, #{k-color(primary-active)} ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/rating/_variables.scss" with (
+    $kendo-rating-font-family: $kendo-rating-font-family,
+    $kendo-rating-font-size: $kendo-rating-font-size,
+    $kendo-rating-line-height: $kendo-rating-line-height,
+    $kendo-rating-item-padding-x: $kendo-rating-item-padding-x,
+    $kendo-rating-item-padding-y: $kendo-rating-item-padding-y
+);

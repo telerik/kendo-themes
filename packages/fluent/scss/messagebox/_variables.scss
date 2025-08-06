@@ -3,66 +3,62 @@
 
 /// Margin around the message box.
 /// @group messagebox
-$kendo-message-box-margin: 0 0 k-spacing(3) 0 !default;
+$kendo-message-box-margin: var( --kendo-message-box-margin, 0 0 k-spacing(3) 0 ) !default;
 /// Horizontal padding of the message box.
 /// @group messagebox
-$kendo-message-box-padding-x: k-spacing(3) !default;
+$kendo-message-box-padding-x: var( --kendo-message-box-padding-x, k-spacing(3) ) !default;
 /// Vertical padding of the message box.
 /// @group messagebox
-$kendo-message-box-padding-y: k-spacing(2) !default;
+$kendo-message-box-padding-y: var( --kendo-message-box-padding-y, k-spacing(2) ) !default;
 /// Border width of the message box.
 /// @group messagebox
-$kendo-message-box-border-width: 0 !default;
+$kendo-message-box-border-width: var( --kendo-message-box-border-width, 0 ) !default;
 /// Border style of the message box.
 /// @group messagebox
-$kendo-message-box-border-style: solid !default;
+$kendo-message-box-border-style: var( --kendo-message-box-border-style, solid ) !default;
 /// Font family of the message box.
 /// @group messagebox
-$kendo-message-box-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-message-box-font-family: var( --kendo-message-box-font-family, var(--kendo-font-family, inherit) ) !default;
 /// Font size of the message box.
 /// @group messagebox
-$kendo-message-box-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-message-box-font-size: var( --kendo-message-box-font-size, var(--kendo-font-size-sm, inherit) ) !default;
 /// Line height of the message box.
 /// @group messagebox
-$kendo-message-box-line-height: var( --kendo-line-height-sm, normal ) !default;
+$kendo-message-box-line-height: var( --kendo-message-box-line-height, var(--kendo-line-height-sm, normal) ) !default;
 
 /// Font style of the message box links.
 /// @group messagebox
-$kendo-message-box-link-font-style: normal !default;
+$kendo-message-box-link-font-style: var( --kendo-message-box-link-font-style, normal ) !default;
 /// Text decoration of the message box links.
 /// @group messagebox
-$kendo-message-box-link-decoration: underline !default;
+$kendo-message-box-link-decoration: var( --kendo-message-box-link-decoration, underline ) !default;
 /// Text color of the message box links.
 /// @group messagebox
-$kendo-message-box-link-text: k-color(primary) !default;
+$kendo-message-box-link-text: var( --kendo-message-box-link-text, k-color(primary) ) !default;
 /// Hover text color of the message box links.
 /// @group messagebox
-$kendo-message-box-link-hover-text: k-color(primary-hover) !default;
+$kendo-message-box-link-hover-text: var( --kendo-message-box-link-hover-text, k-color(primary-hover) ) !default;
 
 $kendo-messagebox-theme-colors: (
-    primary: (
-        text: k-color(primary-emphasis),
-        bg: k-color(primary-subtle),
-        border: k-color(primary-subtle),
-    ),
-    info: (
-        text: k-color(info-on-surface),
-        bg: k-color(info-subtle),
-        border: k-color(info-subtle),
-    ),
-    success: (
-        text: k-color(success-on-surface),
-        bg: k-color(success-subtle),
-        border: k-color(success-subtle),
-    ),
-    warning: (
-        text: k-color(warning-on-surface),
-        bg: k-color(warning-subtle),
-        border: k-color(warning-subtle),
-    ),
-    error: (
-        text: k-color(error-on-surface),
-        bg: k-color(error-subtle),
-        border: k-color(error-subtle),
-    ),
+    "primary": k-color(primary),
+     "secondary": k-color(secondary),
+     "tertiary": k-color(tertiary),
+     "info": k-color(info),
+     "success": k-color(success),
+     "warning": k-color(warning),
+     "error": k-color(error),
+     "dark": k-color(dark),
+     "light": k-color(light),
+     "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
 ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/messagebox/_variables.scss" with (
+    $kendo-message-box-margin: $kendo-message-box-margin,
+    $kendo-message-box-padding-x: $kendo-message-box-padding-x,
+    $kendo-message-box-padding-y: $kendo-message-box-padding-y,
+    $kendo-message-box-border-width: $kendo-message-box-border-width,
+    $kendo-message-box-font-size: $kendo-message-box-font-size,
+    $kendo-message-box-line-height: $kendo-message-box-line-height,
+    $kendo-message-box-link-font-style: $kendo-message-box-link-font-style,
+    $kendo-message-box-theme-colors: $kendo-messagebox-theme-colors
+);

@@ -1,89 +1,88 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/bottom-navigation/_theme.scss" as *;
 
 @mixin kendo-bottom-navigation--theme() {
 
-    .k-bottom-nav {
-        color: var( --kendo-bottom-nav-text, inherit );
-        background-color: var( --kendo-bottom-nav-bg, initial );
-        border-color: var( --kendo-bottom-nav-border, initial );
-    }
+    @include kendo-bottom-navigation--theme-base();
 
-    .k-bottom-nav-item {
-        color: var( --kendo-bottom-nav-item-text, inherit );
-        background-color: var( --kendo-bottom-nav-item-bg, initial );
-        border-color: var( --kendo-bottom-nav-item-border, initial );
+    @each $name, $color in $kendo-bottom-navigation-theme-colors {
+        .k-bottom-nav-solid-#{$name} {
+            color: k-color(on-#{$name});
+            background-color: k-color(#{$name});
+            border-color: k-color(#{$name});
 
-        &:focus,
-        &.k-focus {
-            color: var( --kendo-bottom-nav-item-focus-text, inherit );
-            background-color: var( --kendo-bottom-nav-item-focus-bg, initial );
-            border-color: var( --kendo-bottom-nav-item-focus-border, initial );
-        }
+            .k-bottom-nav-item {
+                &:focus,
+                &.k-focus {
+                    color: k-color(on-#{$name});
+                    background-color: k-color(#{$name});
+                    border-color: k-color(#{$name});
+                    outline-color: inherit;
+                }
 
-        &:focus::after,
-        &.k-focus::after {
-            outline-color: var( --kendo-bottom-nav-item-focus-outline, initial );
-        }
+                &:active,
+                &.k-active,
+                &.k-selected {
+                    color: k-color(on-#{$name});
+                    background-color: k-color(#{$name}-active);
+                    border-color: k-color(#{$name}-active);
+                }
 
-        &.k-selected {
-            color: var( --kendo-bottom-nav-item-selected-text, inherit );
-            background-color: var( --kendo-bottom-nav-item-selected-bg, initial );
-            border-color: var( --kendo-bottom-nav-item-selected-border, initial );
-        }
-
-        &:disabled,
-        &.k-disabled{
-            color: var( --kendo-bottom-nav-item-disabled-text, inherit );
-            background-color: var( --kendo-bottom-nav-item-disabled-bg, initial );
-            border-color: var( --kendo-bottom-nav-item-disabled-border, initial );
-        }
-    }
-
-    @each $fill-mode, $theme-colors in $kendo-bottom-nav-theme-colors {
-        @each $theme-color, $color-props in $theme-colors {
-
-            $_text-color: map.get( $color-props, text );
-            $_bg: map.get( $color-props, bg );
-            $_border-color: map.get( $color-props, border );
-
-            $_focus-text: map.get( $color-props, focus-text );
-            $_focus-bg: map.get( $color-props, focus-bg );
-            $_focus-border: map.get( $color-props, focus-border );
-            $_focus-outline: map.get( $color-props, focus-outline );
-
-            $_active-text: map.get( $color-props, active-text );
-            $_active-bg: map.get( $color-props, active-bg );
-            $_active-border: map.get( $color-props, active-border );
-
-            $_disabled-text: map.get( $color-props, disabled-text );
-            $_disabled-bg: map.get( $color-props, disabled-bg );
-            $_disabled-border: map.get( $color-props, disabled-border );
-
-            .k-bottom-nav-#{$fill-mode}-#{$theme-color} {
-                --kendo-bottom-nav-text: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-text, #{$_text-color} );
-                --kendo-bottom-nav-bg: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-bg, #{$_bg} );
-                --kendo-bottom-nav-border: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-border, #{$_border-color} );
-
-                --kendo-bottom-nav-item-focus-text: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-focus-text, #{$_focus-text} );
-                --kendo-bottom-nav-item-focus-bg: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-focus-bg, #{$_focus-bg} );
-                --kendo-bottom-nav-item-focus-border: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-focus-border, #{$_focus-border} );
-                --kendo-bottom-nav-item-focus-outline: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-focus-outline, #{$_focus-outline} );
-
-                --kendo-bottom-nav-item-selected-text: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-selected-text, #{$_active-text} );
-                --kendo-bottom-nav-item-selected-bg: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-selected-bg, #{$_active-bg} );
-                --kendo-bottom-nav-item-selected-border: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-selected-border, #{$_active-border} );
-
-                --kendo-bottom-nav-item-disabled-text: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-disabled-text, #{$_disabled-text} );
-                --kendo-bottom-nav-item-disabled-bg: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-disabled-bg, #{$_disabled-bg} );
-                --kendo-bottom-nav-item-disabled-border: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-disabled-border, #{$_disabled-border} );
-            }
-            // TODO: remove when suites update class names
-            .k-bottom-nav-#{$fill-mode}.k-bottom-nav-#{$theme-color} {
-                @extend .k-bottom-nav-#{$fill-mode}-#{$theme-color} !optional;
+                &:disabled,
+                &.k-disabled {
+                    color: color-mix(in srgb, k-color(on-#{$name}) 46%, transparent);
+                    background-color: inherit;
+                    border-color: transparent;
+                }
             }
         }
     }
 
+    .k-bottom-nav-solid-warning,
+    .k-bottom-nav-solid-light {
+         .k-bottom-nav-item:focus::after,
+         .k-bottom-nav-item.k-focus::after {
+            outline-color: k-color(app-surface);
+         }
+    }
+
+    @each $name, $color in $kendo-bottom-navigation-theme-colors {
+        .k-bottom-nav-flat-#{$name} {
+            color: k-color(on-app-surface);
+            background-color: k-color(app-surface);
+            border-color: color-mix(in srgb, k-color(border) 16%, transparent);
+
+            .k-bottom-nav-item {
+                &:focus,
+                &.k-focus {
+                    color: k-color(#{$name});
+                    background-color: inherit;
+                    border-color: transparent;
+                    outline-color: k-color(#{$name});
+                }
+
+                &:active,
+                &.k-active,
+                &.k-selected {
+                    color: k-color(#{$name});
+                    background-color: inherit;
+                    border-color: transparent;
+                }
+
+                &:disabled,
+                &.k-disabled {
+                    color: color-mix(in srgb, k-color(on-app-surface) 46%, transparent);
+                    background-color: initial;
+                    border-color: initial;
+                }
+            }
+        }
+        @if ($name == "warning" or $name == "dark" or $name == "inverse") {
+            .k-bottom-nav-flat-#{$name} {
+                border-color: k-color(#{$name});
+            }
+        }
+    }
 }

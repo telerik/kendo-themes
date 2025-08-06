@@ -1,64 +1,30 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/breadcrumb/_theme.scss" as *;
 
 @mixin kendo-breadcrumb--theme() {
 
-    // Breadcrumb
-    .k-breadcrumb {
-        @include fill(
-            var( --kendo-breadcrumb-text, #{$kendo-breadcrumb-text} ),
-            var( --kendo-breadcrumb-bg, #{$kendo-breadcrumb-bg} ),
-            var( --kendo-breadcrumb-border, #{$kendo-breadcrumb-border} )
-        );
-
-        &:focus,
-        &.k-focus {
-            @include box-shadow( var( --kendo-breadcrumb-focus-shadow, #{$kendo-breadcrumb-focus-shadow} ) )
-        }
-    }
-
+    @include kendo-breadcrumb--theme-base();
 
     // Breadcrumb link
     .k-breadcrumb-link {
-        @include fill(
-            var( --kendo-breadcrumb-link-text, #{$kendo-breadcrumb-link-text} ),
-            var( --kendo-breadcrumb-link-bg, #{$kendo-breadcrumb-link-bg} ),
-            var( --kendo-breadcrumb-link-border, #{$kendo-breadcrumb-link-border} )
-        );
-
-        // Hovered state
-        &:hover,
-        &.k-hover {
-            @include fill(
-                var( --kendo-breadcrumb-link-hover-text, #{$kendo-breadcrumb-link-hover-text} ),
-                var( --kendo-breadcrumb-link-hover-bg, #{$kendo-breadcrumb-link-hover-bg} ),
-                var( --kendo-breadcrumb-link-hover-border, #{$kendo-breadcrumb-link-hover-border} )
-            );
-        }
-
         // Active state
         &:active,
         &.k-active {
             @include fill(
-                var( --kendo-breadcrumb-link-active-text, #{$kendo-breadcrumb-link-active-text} ),
-                var( --kendo-breadcrumb-link-active-bg, #{$kendo-breadcrumb-link-active-bg} ),
-                var( --kendo-breadcrumb-link-active-border, #{$kendo-breadcrumb-link-active-border} )
+                $kendo-breadcrumb-link-active-text,
+                $kendo-breadcrumb-link-active-bg,
+                $kendo-breadcrumb-link-active-border
             );
         }
 
         // Focused state
         &:focus,
         &.k-focus {
-            @include fill(
-                $color: var( --kendo-breadcrumb-link-focus-text, #{$kendo-breadcrumb-link-focus-text} ),
-                $bg: var( --kendo-breadcrumb-link-focus-bg, #{$kendo-breadcrumb-link-focus-bg} ),
-            );
-            @include box-shadow( var( --kendo-breadcrumb-link-focus-shadow, #{$kendo-breadcrumb-link-focus-shadow} ) );
-
             // Focus-hover state
             &:hover,
             &.k-hover {
-                @include fill( $bg: var( --kendo-breadcrumb-link-focus-hover-bg, #{$kendo-breadcrumb-link-focus-hover-bg} ) );
+                @include fill( $bg: $kendo-breadcrumb-link-focus-hover-bg );
             }
         }
 
@@ -66,60 +32,38 @@
         &:disabled,
         &[disabled],
         &.k-disabled {
-            @include fill( $color: var( --kendo-breadcrumb-link-disabled-text, #{$kendo-breadcrumb-link-disabled-text} ) );
+            @include fill( $color: $kendo-breadcrumb-link-disabled-text );
         }
 
         // Selected state
         &.k-selected {
             @include fill(
-                var( --kendo-breadcrumb-link-selected-text, #{$kendo-breadcrumb-link-selected-text} ),
-                var( --kendo-breadcrumb-link-selected-bg, #{$kendo-breadcrumb-link-selected-bg} ),
-                var( --kendo-breadcrumb-link-selected-border, #{$kendo-breadcrumb-link-selected-border} ),
+                $kendo-breadcrumb-link-selected-text,
+                $kendo-breadcrumb-link-selected-bg,
+                $kendo-breadcrumb-link-selected-border
             );
         }
     }
 
     // Breadcrumb root link
     .k-breadcrumb-root-link {
-        @include fill(
-            var( --kendo-breadcrumb-root-link-text, #{$kendo-breadcrumb-root-link-text} ),
-            var( --kendo-breadcrumb-root-link-bg, #{$kendo-breadcrumb-root-link-bg} ),
-            var( --kendo-breadcrumb-root-link-border, #{$kendo-breadcrumb-root-link-border} )
-        );
-
-        // Hovered state
-        &:hover,
-        &.k-hover {
-            @include fill(
-                var( --kendo-breadcrumb-root-link-hover-text, #{$kendo-breadcrumb-root-link-hover-text} ),
-                var( --kendo-breadcrumb-root-link-hover-bg, #{$kendo-breadcrumb-root-link-hover-bg} ),
-                var( --kendo-breadcrumb-root-link-hover-border, #{$kendo-breadcrumb-root-link-hover-border} )
-            );
-        }
-
         // Active state
         &:active,
         &.k-active {
             @include fill(
-                var( --kendo-breadcrumb-root-link-active-text, #{$kendo-breadcrumb-root-link-active-text} ),
-                var( --kendo-breadcrumb-root-link-active-bg, #{$kendo-breadcrumb-root-link-active-bg} ),
-                var( --kendo-breadcrumb-root-link-active-border, #{$kendo-breadcrumb-root-link-active-border} )
+                $kendo-breadcrumb-root-link-active-text,
+                $kendo-breadcrumb-root-link-active-bg,
+                $kendo-breadcrumb-root-link-active-border
             );
         }
 
         // Focused state
         &:focus,
         &.k-focus {
-            @include fill(
-                $color: var( --kendo-breadcrumb-root-link-focus-text, #{$kendo-breadcrumb-root-link-focus-text} ),
-                $bg: var( --kendo-breadcrumb-root-link-focus-bg, #{$kendo-breadcrumb-root-link-focus-bg} ),
-            );
-            @include box-shadow( var( --kendo-breadcrumb-root-link-focus-shadow, #{$kendo-breadcrumb-root-link-focus-shadow} ) );
-
             // Focus-hover state
             &:hover,
             &.k-hover {
-                @include fill( $bg: var( --kendo-breadcrumb-root-link-focus-hover-bg, #{$kendo-breadcrumb-root-link-focus-hover-bg} ) );
+                @include fill( $bg: $kendo-breadcrumb-root-link-focus-hover-bg );
             }
         }
 
@@ -127,7 +71,7 @@
         &:disabled,
         &[disabled],
         &.k-disabled {
-            @include fill( $color: var( --kendo-breadcrumb-root-link-disabled-text, #{$kendo-breadcrumb-root-link-disabled-text} ) );
+            @include fill( $color: $kendo-breadcrumb-root-link-disabled-text );
         }
     }
 

@@ -3,99 +3,70 @@
 
 /// The width of the border around the Dialog.
 /// @group dialog
-$kendo-dialog-border-width: 0 !default;
+$kendo-dialog-border-width: var( --kendo-dialog-border-width, 0 ) !default;
 
 /// The background color of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-bg: k-color(surface-alt) !default;
+$kendo-dialog-titlebar-bg: var( --kendo-dialog-titlebar-bg, k-color(surface-alt) ) !default;
 /// The text color of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-text: k-color(on-app-surface) !default;
+$kendo-dialog-titlebar-text: var( --kendo-dialog-titlebar-text, k-color(on-app-surface) ) !default;
 /// The border color of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-dialog-titlebar-border: var( --kendo-dialog-titlebar-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
 /// The width of the border around the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-border-width: 0 !default;
+$kendo-dialog-titlebar-border-width: var( --kendo-dialog-titlebar-border-width, 0 ) !default;
 /// The horizontal padding of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-padding-x: k-spacing(6) !default;
+$kendo-dialog-titlebar-padding-x: var( --kendo-dialog-titlebar-padding-x, k-spacing(6) ) !default;
 /// The vertical padding of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-padding-y: k-spacing(4) !default;
+$kendo-dialog-titlebar-padding-y: var( --kendo-dialog-titlebar-padding-y, k-spacing(4) ) !default;
 
 /// The horizontal padding of the content of the Dialog.
 /// @group dialog
-$kendo-dialog-inner-padding-x: k-spacing(6) !default;
+$kendo-dialog-inner-padding-x: var( --kendo-dialog-inner-padding-x, k-spacing(6) ) !default;
 /// The vertical padding of the content of the Dialog.
 /// @group dialog
-$kendo-dialog-inner-padding-y: k-spacing(3) !default;
+$kendo-dialog-inner-padding-y: var( --kendo-dialog-inner-padding-y, k-spacing(3) ) !default;
 
 /// The horizontal padding of the Dialog action buttons.
 /// @group dialog
-$kendo-dialog-buttongroup-padding-x: k-spacing(6) !default; // $kendo-actions-padding-x
+$kendo-dialog-buttongroup-padding-x: var( --kendo-dialog-buttongroup-padding-x, k-spacing(6) ) !default; // $kendo-actions-padding-x
 /// The vertical padding of the Dialog action buttons.
 /// @group dialog
-$kendo-dialog-buttongroup-padding-y: k-spacing(6) !default; // $kendo-actions-padding-y
+$kendo-dialog-buttongroup-padding-y: var( --kendo-dialog-buttongroup-padding-y, k-spacing(6) ) !default; // $kendo-actions-padding-y
 /// The width of the top border of the Dialog action buttons.
 /// @group dialog
-$kendo-dialog-buttongroup-border-width: 0 !default;
+$kendo-dialog-buttongroup-border-width: var( --kendo-dialog-buttongroup-border-width, 0 ) !default;
 /// The spacing between the Dialog action buttons.
 /// @group dialog
-$kendo-dialog-buttongroup-spacing: k-spacing(3) !default;
-
-/// The spacing between the Dialog action buttons.
-/// @group dialog
-$kendo-dialog-button-spacing: k-spacing(2) !default; // $kendo-actions-padding-y
+$kendo-dialog-button-spacing: var( --kendo-dialog-button-spacing, k-spacing(3) ) !default; // $kendo-actions-padding-y
 
 /// The background color of the Dialog.
 /// @group dialog
-$kendo-dialog-bg: k-color(app-surface) !default;
+$kendo-dialog-bg: var( --kendo-dialog-bg, k-color(app-surface) ) !default;
 
 /// The box shadow around the Dialog.
 /// @group dialog
-$kendo-dialog-shadow: var( --kendo-box-shadow-depth-8, none ) !default;
-
-/// The theme variations for the Dialog.
-$kendo-dialog-brand-colors: (
-    primary: primary
- ) !default;
-
-// Matrix with dialog theme colors in the order: bg, color, border
-$_tc-dialog-matrix: (
-    (normal: (color, on-color, color)),
-) !default;
-
-$_tc-dialog-dark-matrix: (
-    (normal: (color, on-color, color)),
-) !default;
-
-$_tc-dialog-light-matrix: (
-    (normal: (color, on-color, color)),
-) !default;
+$kendo-dialog-shadow: var( --kendo-dialog-shadow, var( --kendo-elevation-8, none ) ) !default;
 
 /// The theme colors map for the Dialog.
-$kendo-dialog-theme-colors: () !default;
+$kendo-dialog-theme-colors: (
+    "primary": k-color(primary),
+    "light": k-color(light),
+    "dark": k-color(dark)
+) !default;
 
-@each $ui-states in $_tc-dialog-matrix {
-    @each $brand-color, $palette in $kendo-dialog-brand-colors {
-        $kendo-dialog-theme-colors: map.deep-merge(
-            $kendo-dialog-theme-colors,
-            k-generate-theme-variation( $brand-color, $palette, $ui-states )
-        );
-    };
-}
-
-@each $ui-states in $_tc-dialog-dark-matrix {
-    $kendo-dialog-theme-colors: map.deep-merge(
-        $kendo-dialog-theme-colors,
-        k-generate-theme-variation( dark, dark, $ui-states )
-    );
-}
-
-@each $ui-states in $_tc-dialog-light-matrix {
-    $kendo-dialog-theme-colors: map.deep-merge(
-        $kendo-dialog-theme-colors,
-        k-generate-theme-variation( light, light, $ui-states )
-    );
-}
+@forward "@progress/kendo-theme-core/scss/components/dialog/_variables.scss" with (
+    $kendo-dialog-titlebar-bg: $kendo-dialog-titlebar-bg,
+    $kendo-dialog-titlebar-text: $kendo-dialog-titlebar-text,
+    $kendo-dialog-titlebar-border: $kendo-dialog-titlebar-border,
+    $kendo-dialog-buttongroup-padding-x: $kendo-dialog-buttongroup-padding-x,
+    $kendo-dialog-buttongroup-padding-y: $kendo-dialog-buttongroup-padding-y,
+    $kendo-dialog-buttongroup-border-width: $kendo-dialog-buttongroup-border-width,
+    $kendo-dialog-button-spacing: $kendo-dialog-button-spacing,
+    $kendo-dialog-bg: $kendo-dialog-bg,
+    $kendo-dialog-theme-colors: $kendo-dialog-theme-colors
+);

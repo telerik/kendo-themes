@@ -1,13 +1,16 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/appbar/_theme.scss" as *;
 
 @mixin kendo-appbar--theme() {
 
-    .k-appbar {
-        color: var( --kendo-appbar-text, #{$kendo-appbar-text} );
-        background-color: var( --kendo-appbar-bg, #{$kendo-appbar-bg} );
-        border-color: var( --kendo-appbar-border, #{$kendo-appbar-border} );
+    @include kendo-appbar--theme-base();
+
+    .k-appbar-base {
+        color: $kendo-appbar-text;
+        background-color: $kendo-appbar-bg;
+        border-color: $kendo-appbar-border;
     }
 
     .k-appbar-inherit {
@@ -16,22 +19,8 @@
         border-color: inherit;
     }
 
-    // AppBar theme colors
-    @each $theme-color, $color-props in $kendo-appbar-theme-colors {
-
-        $_text: map.get( $color-props, text );
-        $_bg: map.get( $color-props, bg );
-        $_border: map.get( $color-props, border );
-
-        .k-appbar-#{$theme-color} {
-            --kendo-appbar-text: var( --kendo-appbar-#{$theme-color}-text, #{$_text} );
-            --kendo-appbar-bg: var( --kendo-appbar-#{$theme-color}-bg, #{$_bg} );
-            --kendo-appbar-border: var( --kendo-appbar-#{$theme-color}-border, #{$_border} );
-
-            .k-appbar-subtitle {
-                color: inherit;
-            }
-        }
+    .k-appbar-subtitle {
+        color: inherit;
     }
 
 }

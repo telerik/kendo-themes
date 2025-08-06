@@ -201,7 +201,7 @@
     // Year view
     .k-year-calendar,
     .k-calendar-yearview {
-        $_year-cell-size: ( 2 * $kendo-calendar-cell-size );
+        $_year-cell-size: calc( 2 * #{$kendo-calendar-cell-size} );
 
         .k-calendar-td {
             width: var( --INTERNAL--kendo-calendar-cell-size, #{$_year-cell-size} );
@@ -215,7 +215,7 @@
     // Decade view
     .k-decade-calendar,
     .k-calendar-decadeview {
-        $_decade-cell-size: ( 2 * $kendo-calendar-cell-size );
+        $_decade-cell-size: calc( 2 * #{$kendo-calendar-cell-size} );
 
         .k-calendar-td {
             width: var( --INTERNAL--kendo-calendar-cell-size, #{$_decade-cell-size} );
@@ -229,7 +229,7 @@
     // Century view
     .k-century-calendar,
     .k-calendar-centuryview {
-        $_century-cell-size: ( 2 * $kendo-calendar-cell-size );
+        $_century-cell-size: calc( 2 * #{$kendo-calendar-cell-size} );
 
         .k-calendar-td {
             width: var( --INTERNAL--kendo-calendar-cell-size, #{$_century-cell-size} );
@@ -290,12 +290,12 @@
         $_cell-padding-y: map.get( $size-props, cell-padding-y );
 
         $_month-cell-size: $_cell-size;
-        $_year-cell-size: ( 2 * $_cell-size );
-        $_decade-cell-size: ( 2 * $_cell-size );
-        $_century-cell-size: ( 2 * $_cell-size );
+        $_year-cell-size: calc( 2 * #{$_cell-size} );
+        $_decade-cell-size: calc( 2 * #{$_cell-size} );
+        $_century-cell-size: calc( 2 * #{$_cell-size} );
 
         .k-calendar-#{$size} {
-            --INTERNAL--kendo-calendar-view-width: #{8 * $_cell-size};
+            --INTERNAL--kendo-calendar-view-width: calc( 8 * #{$_cell-size} );
             --INTERNAL--kendo-calendar-cell-padding-x: var( --kendo-calendar-#{$size}-cell-padding-x, #{$_cell-padding-x} );
             --INTERNAL--kendo-calendar-cell-padding-y: var( --kendo-calendar-#{$size}-cell-padding-y, #{$_cell-padding-y} );
             font-size: $_font-size;
@@ -361,7 +361,7 @@
                 z-index: 1;
                 width: 150%;
                 left: -25%;
-                box-shadow: 0 0 $kendo-calendar-cell-size math.div( $kendo-calendar-cell-size, 2 ) $kendo-calendar-bg;
+                box-shadow: 0 0 $kendo-calendar-cell-size calc( #{$kendo-calendar-cell-size} / 2 ) $kendo-calendar-bg;
             }
         }
 
@@ -400,8 +400,8 @@
             z-index: 1;
             width: 200%;
             left: -50%;
-            $shadow-size: 3 * $kendo-calendar-navigation-item-height;
-            box-shadow: 0 0 $shadow-size math.div( $shadow-size, 2 ) $kendo-calendar-navigation-bg;
+            $shadow-size: calc( 3 * #{$kendo-calendar-navigation-item-height} );
+            box-shadow: 0 0 $shadow-size calc( #{$shadow-size} / 2 ) $kendo-calendar-navigation-bg;
         }
 
         &::before { top: 0; }

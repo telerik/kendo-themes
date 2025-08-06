@@ -4,85 +4,104 @@
 
 /// The width of the border around the Еditor.
 /// @group editor
-$kendo-editor-border-width: 1px !default;
+$kendo-editor-border-width: var( --kendo-editor-border-width, 1px ) !default;
 /// The font family of the Еditor.
 /// @group editor
-$kendo-editor-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-editor-font-family: var( --kendo-editor-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// The font size of the Еditor.
 /// @group editor
-$kendo-editor-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-editor-font-size: var( --kendo-editor-font-size, var( --kendo-font-size, inherit ) ) !default;
 /// The line height of the Еditor.
 /// @group editor
-$kendo-editor-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-editor-line-height: var( --kendo-editor-line-height, var( --kendo-line-height, normal ) ) !default;
 /// The text color of the Editor.
 /// @group editor
-$kendo-editor-text: k-color(on-app-surface) !default;
+$kendo-editor-text: var( --kendo-editor-text, #{k-color(on-app-surface)} ) !default;
 /// The background color of the Editor.
 /// @group editor
-$kendo-editor-bg: k-color(surface-alt) !default;
+$kendo-editor-bg: var( --kendo-editor-bg, #{k-color(surface-alt)} ) !default;
 /// The color of the border around Editor.
 /// @group editor
-$kendo-editor-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-editor-border: var( --kendo-editor-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 /// The text color of the Еditor's placeholder.
 /// @group editor
-$kendo-editor-placeholder-text: var( --kendo-input-placeholder-text, #{$kendo-input-placeholder-text} ) !default;
+$kendo-editor-placeholder-text: var( --kendo-editor-placeholder-text, var( --kendo-input-placeholder-text, #{$kendo-input-placeholder-text} ) ) !default;
 /// The opacity of the Editor's placeholder.
 /// @group editor
-$kendo-editor-placeholder-opacity: var( --kendo-input-placeholder-opacity, #{$kendo-input-placeholder-opacity} ) !default;
+$kendo-editor-placeholder-opacity: var( --kendo-editor-placeholder-opacity, var( --kendo-input-placeholder-opacity, #{$kendo-input-placeholder-opacity} ) ) !default;
 /// The outline color of the Editor's content.
 /// @group editor
-$kendo-editor-content-outline-color: k-color(on-app-surface) !default;
+$kendo-editor-content-outline-color: var( --kendo-editor-content-outline-color, #{k-color(on-app-surface)} ) !default;
 /// The horizontal margin of the Editor's export tool icon.
 /// @group editor
-$kendo-editor-export-tool-icon-margin-x: k-spacing(1) !default;
+$kendo-editor-export-tool-icon-margin-x: var( --kendo-editor-export-tool-icon-margin-x, #{k-spacing(1)} ) !default;
 /// The outline width of the Editor's selected node.
 /// @group editor
-$kendo-editor-selectednode-outline-width: k-spacing(0.5) !default;
+$kendo-editor-selectednode-outline-width: var( --kendo-editor-selectednode-outline-width, #{k-spacing(0.5)} ) !default;
 
 /// The selected text color of the Editor.
 /// @group editor
-$kendo-editor-selected-text: k-color(app-surface) !default;
+$kendo-editor-selected-text: var( --kendo-editor-selected-text, #{k-color(app-surface)} ) !default;
 /// The selected background color of the Editor.
 /// @group editor
-$kendo-editor-selected-bg: k-color(primary) !default;
+$kendo-editor-selected-bg: var( --kendo-editor-selected-bg, #{k-color(primary)} ) !default;
 /// The highlighted background color of the Editor.
 /// @group editor
-$kendo-editor-highlighted-bg: color-mix(in srgb, k-color(primary) 55%, transparent) !default;
+$kendo-editor-highlighted-bg: var( --kendo-editor-highlighted-bg, #{color-mix(in srgb, k-color(primary) 55%, transparent)} ) !default;
 
 /// The size of the Editor's resize handle.
 /// @group editor
-$kendo-editor-resize-handle-size: k-spacing(2) !default;
+$kendo-editor-resize-handle-size: var( --kendo-editor-resize-handle-size, #{k-spacing(2)} ) !default;
 /// The border width of the Editor's resize handle.
 /// @group editor
-$kendo-editor-resize-handle-border-width: 1px !default;
+$kendo-editor-resize-handle-border-width: var( --kendo-editor-resize-handle-border-width, 1px ) !default;
 /// The border color of the Editor's resize handle.
 /// @group editor
-$kendo-editor-resize-handle-border: k-color(on-app-surface) !default;
+$kendo-editor-resize-handle-border: var( --kendo-editor-resize-handle-border, #{k-color(on-app-surface)} ) !default;
 /// The background color of the Editor's resize handle.
 /// @group editor
-$kendo-editor-resize-handle-bg: k-color(app-surface) !default;
+$kendo-editor-resize-handle-bg: var( --kendo-editor-resize-handle-bg, #{k-color(app-surface)} ) !default;
 
 /// The outline color of the Editor's selected node.
 /// @group editor
-$kendo-editor-selectednode-outline-color: k-color(primary) !default;
+$kendo-editor-selectednode-outline-color: var( --kendo-editor-selectednode-outline-color, #{k-color(primary)} ) !default;
 
 /// The border color of the Inline Editor data cell.
 /// @group editor
-$kendo-editor-inline-td-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-editor-inline-td-border: var( --kendo-editor-inline-td-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 /// The hover border color of the Inline Editor.
 /// @group editor
-$kendo-editor-inline-hover-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-editor-inline-hover-border: var( --kendo-editor-inline-hover-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 
 // Insert table
 /// The size of the cell in the Insert table popup.
 /// @group editor
-$ct-cell-size: 20px !default;
+$ct-cell-size: var( --ct-cell-size, 20px ) !default;
 /// The text color of the selected cells in the Insert table popup.
 /// @group editor
-$kendo-editor-ct-popup-text: k-color(on-base) !default;
+$kendo-editor-ct-popup-text: var( --kendo-editor-ct-popup-text, #{k-color(on-base)} ) !default;
 /// The background color of the selected cells in the Insert table popup.
 /// @group editor
-$kendo-editor-ct-popup-bg: k-color(base-active) !default;
+$kendo-editor-ct-popup-bg: var( --kendo-editor-ct-popup-bg, #{k-color(base-active)} ) !default;
 /// The border color of the selected cells in the Insert table popup.
 /// @group editor
-$kendo-editor-ct-popup-border: color-mix(in srgb, k-color(border-alt) 76%, transparent) !default;
+$kendo-editor-ct-popup-border: var( --kendo-editor-ct-popup-border, #{color-mix(in srgb, k-color(border-alt) 76%, transparent)} ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/editor/_variables.scss" with (
+    $kendo-editor-border-width: $kendo-editor-border-width,
+    $kendo-editor-font-family: $kendo-editor-font-family,
+    $kendo-editor-font-size: $kendo-editor-font-size,
+    $kendo-editor-line-height: $kendo-editor-line-height,
+    $kendo-editor-placeholder-text: $kendo-editor-placeholder-text,
+    $kendo-editor-placeholder-opacity: $kendo-editor-placeholder-opacity,
+    $kendo-editor-selected-text: $kendo-editor-selected-text,
+    $kendo-editor-selected-bg: $kendo-editor-selected-bg,
+    $kendo-editor-highlighted-bg: $kendo-editor-highlighted-bg,
+    $kendo-editor-export-tool-icon-margin-x: $kendo-editor-export-tool-icon-margin-x,
+    $kendo-editor-resize-handle-size: $kendo-editor-resize-handle-size,
+    $kendo-editor-resize-handle-border-width: $kendo-editor-resize-handle-border-width,
+    $kendo-editor-resize-handle-border: $kendo-editor-resize-handle-border,
+    $kendo-editor-resize-handle-bg: $kendo-editor-resize-handle-bg,
+    $kendo-editor-selectednode-outline-width: $kendo-editor-selectednode-outline-width,
+    $kendo-editor-selectednode-outline-color: $kendo-editor-selectednode-outline-color
+);

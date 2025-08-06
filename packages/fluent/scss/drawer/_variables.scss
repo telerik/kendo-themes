@@ -4,16 +4,16 @@
 
 /// The background color of the Drawer.
 /// @group drawer
-$kendo-drawer-bg: k-color(surface-alt) !default;
+$kendo-drawer-bg: var( --kendo-drawer-bg, k-color(surface-alt) ) !default;
 /// The text color of the Drawer.
 /// @group drawer
-$kendo-drawer-text: k-color(on-app-surface) !default;
+$kendo-drawer-text: var( --kendo-drawer-text, k-color(on-app-surface) )!default;
 /// The border color of the Drawer.
 /// @group drawer
-$kendo-drawer-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-drawer-border: var( --kendo-drawer-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
 /// The border width of the Drawer.
 /// @group drawer
-$kendo-drawer-border-width: 1px !default;
+$kendo-drawer-border-width: var( --kendo-drawer-border-width, 1px ) !default;
 /// The font family of the Drawer.
 /// @group drawer
 $kendo-drawer-font-family: var( --kendo-font-family, inherit ) !default;
@@ -26,131 +26,159 @@ $kendo-drawer-line-height: var( --kendo-line-height, inherit ) !default;
 
 /// The horizontal padding of the Drawer content.
 /// @group drawer
-$kendo-drawer-content-padding-x: null !default;
+$kendo-drawer-content-padding-x: var( --kendo-drawer-content-padding-x, null ) !default;
 /// The vertical padding of the Drawer content.
 /// @group drawer
-$kendo-drawer-content-padding-y: null !default;
+$kendo-drawer-content-padding-y: var( --kendo-drawer-content-padding-y, null ) !default;
 
 /// The width of the Drawer scrollbar.
 /// @group drawer
-$kendo-drawer-scrollbar-width: 7px !default;
+$kendo-drawer-scrollbar-width: var( --kendo-drawer-scrollbar-width, 7px ) !default;
 /// The color of the Drawer scrollbar.
 /// @group drawer
-$kendo-drawer-scrollbar-color: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
+$kendo-drawer-scrollbar-color: var( --kendo-drawer-scrollbar-color, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ) !default;
 /// The background of the Drawer scrollbar.
 /// @group drawer
-$kendo-drawer-scrollbar-bg: k-color(base-subtle) !default;
+$kendo-drawer-scrollbar-bg: var( --kendo-drawer-scrollbar-bg, k-color(base-subtle) ) !default;
 /// The border radius of the Drawer scrollbar.
 /// @group drawer
-$kendo-drawer-scrollbar-radius: 20px !default;
+$kendo-drawer-scrollbar-radius: var( --kendo-drawer-scrollbar-radius, 20px ) !default;
 /// The hover color of the Drawer scrollbar.
 /// @group drawer
-$kendo-drawer-scrollbar-hover-color: color-mix(in srgb, k-color(on-app-surface) 60%, transparent) !default;
+$kendo-drawer-scrollbar-hover-color: var( --kendo-drawer-scrollbar-hover-color color-mix(in srgb, k-color(on-app-surface) 60%, transparent) ) !default;
 
 /// The horizontal padding of the Drawer items.
 /// @group drawer
-$kendo-drawer-items-padding-x: 0 !default;
+$kendo-drawer-items-padding-x: var( --kendo-drawer-items-padding-x, 0 ) !default;
 /// The vertical padding of the Drawer items.
 /// @group drawer
-$kendo-drawer-items-padding-y: 0 !default;
+$kendo-drawer-items-padding-y: var( --kendo-drawer-items-padding-y, 0 ) !default;
 /// The horizontal padding of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-padding-x: k-spacing(4) !default;
+$kendo-drawer-item-padding-x: var( --kendo-drawer-item-padding-x, k-spacing(4) ) !default;
 /// The vertical padding of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-padding-y: k-spacing(2) !default;
+$kendo-drawer-item-padding-y: var( --kendo-drawer-item-padding-y, k-spacing(2) ) !default;
 /// The spacing between the items in the Drawer item.
 /// @group drawer
-$kendo-drawer-item-spacing: $kendo-drawer-item-padding-x !default;
+$kendo-drawer-item-spacing: var( --kendo-drawer-item-spacing, $kendo-drawer-item-padding-x ) !default;
 /// The font size of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-font-size: $kendo-drawer-font-size !default;
+$kendo-drawer-item-font-size: var( --kendo-drawer-item-font-size, $kendo-drawer-font-size ) !default;
 /// The line height of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-line-height: var( --kendo-line-height-lg, normal ) !default;
+$kendo-drawer-item-line-height: var( --kendo-drawer-item-line-height, var( --kendo-line-height-lg, normal ) ) !default;
 /// The font weight of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-font-weight: var( --kendo-font-weight, normal ) !default;
+$kendo-drawer-item-font-weight: var( --kendo-drawer-item-font-weight, var( --kendo-font-weight, normal ) ) !default;
 
 /// The horizontal padding of the Drawer item in each level.
 /// @group drawer
-$kendo-drawer-item-level-padding-x: $kendo-drawer-item-padding-x !default;
+$kendo-drawer-item-level-padding-x: var( --kendo-drawer-item-level-padding-x, $kendo-drawer-item-padding-x ) !default;
 /// The count of the Drawer item levels.
 /// @group drawer
 $kendo-drawer-item-level-count: 5 !default;
 /// The border radius of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-border-radius: null !default;
+$kendo-drawer-item-border-radius: var( --kendo-drawer-item-border-radius, null ) !default;
 
 /// The horizontal padding of the Drawer icon.
 /// @group drawer
-$kendo-drawer-icon-padding-x: k-spacing(0) !default;
+$kendo-drawer-icon-padding-x: var( --kendo-drawer-icon-padding-x, k-spacing(0) ) !default;
 /// The vertical padding of the Drawer icon.
 /// @group drawer
-$kendo-drawer-icon-padding-y: k-spacing(1) !default;
+$kendo-drawer-icon-padding-y: var( --kendo-drawer-icon-padding-y, k-spacing(1) ) !default;
 
 /// The initial width of the mini Drawer.
 /// @group drawer
-$kendo-drawer-mini-initial-width: calc( 2 * #{$kendo-drawer-item-padding-x} + var( --kendo-icon-size, 1rem ) ) !default;
+$kendo-drawer-mini-initial-width: var( --kendo-drawer-mini-initial-width, calc( 2 * #{$kendo-drawer-item-padding-x} + var( --kendo-icon-size, 1rem ) ) ) !default;
 
 /// The border width of the Drawer item ripple.
 /// @group drawer
 
-$kendo-drawer-item-ripple-border-width: k-spacing(0.5) !default;
+$kendo-drawer-item-ripple-border-width: var( --kendo-drawer-item-ripple-border-width, k-spacing(0.5) ) !default;
 /// The border color of the drawer item ripple
 /// @group drawer
-$kendo-drawer-item-ripple-border: k-color(primary) !default;
+$kendo-drawer-item-ripple-border: var( --kendo-drawer-item-ripple-border, k-color(primary) ) !default;
 /// The background color of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-bg: $kendo-drawer-bg !default;
+$kendo-drawer-item-bg: var( --kendo-drawer-item-bg, $kendo-drawer-bg ) !default;
 /// The text color of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-text: $kendo-drawer-text !default;
+$kendo-drawer-item-text: var( --kendo-drawer-item-text, $kendo-drawer-text ) !default;
 /// The text color of the Drawer item icon.
 /// @group drawer
-$kendo-drawer-item-icon-text: k-color(primary) !default;
+$kendo-drawer-item-icon-text: var( --kendo-drawer-icon-text, k-color(primary) ) !default;
 
 /// The background color of the hovered Drawer item.
 /// @group drawer
-$kendo-drawer-item-hover-bg: $kendo-drawer-item-bg !default;
+$kendo-drawer-item-hover-bg: var( --kendo-drawer-item-hover-bg, $kendo-drawer-item-bg ) !default;
 /// The text color of the hovered Drawer item.
 /// @group drawer
-$kendo-drawer-item-hover-text: k-color(primary-hover) !default;
+$kendo-drawer-item-hover-text: var( --kendo-drawer-item-hover-text, k-color(primary-hover) ) !default;
 /// The text color of the hovered Drawer item icon.
 /// @group drawer
-$kendo-drawer-item-hover-icon-text: k-color(primary-hover) !default;
+$kendo-drawer-item-hover-icon-text: var( --kendo-drawer-item-hover-icon-text, k-color(primary-hover) ) !default;
 
 /// The background color of the focused Drawer item.
 /// @group drawer
-$kendo-drawer-item-focus-bg: $kendo-drawer-item-bg !default;
+$kendo-drawer-item-focus-bg: var( --kendo-drawer-item-focus-bg, $kendo-drawer-item-bg ) !default;
 /// The text color of the focused Drawer item.
 /// @group drawer
-$kendo-drawer-item-focus-text: $kendo-drawer-item-text !default;
+$kendo-drawer-item-focus-text: var( --kendo-drawer-item-focus-text, $kendo-drawer-item-text ) !default;
 /// The box shadow of the focused Drawer item.
 /// @group drawer
-$kendo-drawer-item-focus-shadow: inset 0 0 0 1px k-color(base-emphasis) !default;
+$kendo-drawer-item-focus-shadow: var( --kendo-drawer-item-focus-shadow, inset 0 0 0 1px k-color(base-emphasis) ) !default;
 /// The text color of the focused Drawer item icon.
 /// @group drawer
-$kendo-drawer-item-focus-icon-text: $kendo-drawer-item-icon-text !default;
+$kendo-drawer-item-focus-icon-text: var( --kendo-drawer-item-focus-icon-text, $kendo-drawer-item-icon-text ) !default;
 
 /// The font weight of the selected Drawer item.
 /// @group drawer
-$kendo-drawer-item-selected-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+$kendo-drawer-item-selected-font-weight: var( --kendo-drawer-item-selected-font-weight, var( --kendo-font-weight-bold, normal ) ) !default;
 /// The background color of the selected Drawer item.
 /// @group drawer
-$kendo-drawer-item-selected-bg: k-color(base-active) !default;
+$kendo-drawer-item-selected-bg: var( --kendo-drawer-item-selected-bg, k-color(base-active) ) !default;
 /// The text color of the selected Drawer item.
 /// @group drawer
-$kendo-drawer-item-selected-text: k-color(on-app-surface) !default;
+$kendo-drawer-item-selected-text: var( --kendo-drawer-item-selected-text, k-color(on-app-surface) ) !default;
 /// The text color of the selected Drawer item icon.
 /// @group drawer
-$kendo-drawer-item-selected-icon-text: k-color(primary-active) !default;
+$kendo-drawer-item-selected-icon-text: var( --kendo-drawer-item-selected-icon-text, k-color(primary-active) ) !default;
 /// The background color of the selected and hovered Drawer item.
 /// @group drawer
-$kendo-drawer-item-selected-hover-bg: k-color(base-subtle-active) !default;
+$kendo-drawer-item-selected-hover-bg: var( --kendo-drawer-item-selected-hover-bg, k-color(base-subtle-active) ) !default;
 /// The text color of the selected and hovered Drawer item.
 /// @group drawer
-$kendo-drawer-item-selected-hover-text: k-color(on-base) !default;
-/// The background color of the selected and focused Drawer item.
-/// @group drawer
-$kendo-drawer-item-selected-focus-bg: null !default;
+$kendo-drawer-item-selected-hover-text: var( --kendo-drawer-item-selected-hover-text, k-color(on-base) ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/drawer/_variables.scss" with (
+    $kendo-drawer-bg: $kendo-drawer-bg,
+    $kendo-drawer-text: $kendo-drawer-text,
+    $kendo-drawer-border: $kendo-drawer-border,
+    $kendo-drawer-border-width: $kendo-drawer-border-width,
+    $kendo-drawer-font-family: $kendo-drawer-font-family,
+    $kendo-drawer-font-size: $kendo-drawer-font-size,
+    $kendo-drawer-line-height: $kendo-drawer-line-height,
+    $kendo-drawer-content-padding-x: $kendo-drawer-content-padding-x,
+    $kendo-drawer-content-padding-y: $kendo-drawer-content-padding-y,
+    $kendo-drawer-scrollbar-width: $kendo-drawer-scrollbar-width,
+    $kendo-drawer-scrollbar-color: $kendo-drawer-scrollbar-color,
+    $kendo-drawer-scrollbar-bg: $kendo-drawer-scrollbar-bg,
+    $kendo-drawer-scrollbar-radius: $kendo-drawer-scrollbar-radius,
+    $kendo-drawer-scrollbar-hover-color: $kendo-drawer-scrollbar-hover-color,
+    $kendo-drawer-items-padding-x: $kendo-drawer-items-padding-x,
+    $kendo-drawer-items-padding-y: $kendo-drawer-items-padding-y,
+    $kendo-drawer-item-padding-x: $kendo-drawer-item-padding-x,
+    $kendo-drawer-item-padding-y: $kendo-drawer-item-padding-y,
+    $kendo-drawer-item-spacing: $kendo-drawer-item-spacing,
+    $kendo-drawer-item-font-size: $kendo-drawer-item-font-size,
+    $kendo-drawer-item-line-height: $kendo-drawer-item-line-height,
+    $kendo-drawer-item-font-weight: $kendo-drawer-item-font-weight,
+    $kendo-drawer-item-level-padding-x: $kendo-drawer-item-level-padding-x,
+    $kendo-drawer-item-level-count: $kendo-drawer-item-level-count,
+    $kendo-drawer-item-border-radius: $kendo-drawer-item-border-radius,
+    $kendo-drawer-icon-padding-x: $kendo-drawer-icon-padding-x,
+    $kendo-drawer-icon-padding-y: $kendo-drawer-icon-padding-y,
+    $kendo-drawer-mini-initial-width: $kendo-drawer-mini-initial-width
+);

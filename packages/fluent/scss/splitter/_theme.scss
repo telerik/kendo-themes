@@ -1,36 +1,7 @@
+@use "@progress/kendo-theme-core/scss/components/splitter/_theme.scss" as *;
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-splitter--theme() {
-
-    .k-splitter {
-        @include fill(
-            var( --kendo-splitter-text, #{$kendo-splitter-text} ),
-            var( --kendo-splitter-bg, #{$kendo-splitter-bg} ),
-            var( --kendo-splitter-border, #{$kendo-splitter-border} )
-        );
-    }
-
-    // Splitbar
-    .k-splitbar {
-        color: var( --kendo-splitbar-text, #{$kendo-splitbar-text} );
-        background-color: var( --kendo-splitbar-bg, #{$kendo-splitbar-bg} );
-    }
-    .k-splitbar:hover,
-    .k-splitbar.k-hover,
-    .k-splitbar-horizontal-hover,
-    .k-splitbar-vertical-hover {
-        color: var( --kendo-splitbar-hover-text, #{$kendo-splitbar-hover-text} );
-        background-color: var( --kendo-splitbar-hover-bg, #{$kendo-splitbar-hover-bg} );
-    }
-    .k-splitbar:focus,
-    .k-splitbar.k-focus {
-        color: var( --kendo-splitbar-selected-text, #{$kendo-splitbar-selected-text} );
-        background: var( --kendo-splitbar-selected-bg, #{$kendo-splitbar-selected-bg} );
-    }
-
-    // Ghost splitbar
-    .k-ghost-splitbar {
-        background-color: var( --kendo-splitbar-hover-bg, #{$kendo-splitbar-hover-bg} );
-    }
+    @include kendo-splitter--theme-base();
 }

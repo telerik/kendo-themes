@@ -72,8 +72,6 @@
         }
     }
 
-    $_shade-fn: meta.get-function( $kendo-solid-button-shade-function );
-
     @each $name, $color in $kendo-button-theme-colors {
         @if ($name != "base") {
             $_button-text: k-color(on-#{$name});

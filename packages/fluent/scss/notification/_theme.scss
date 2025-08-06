@@ -1,37 +1,13 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/notification/_theme.scss" as *;
 
 @mixin kendo-notification--theme() {
+    @include kendo-notification--theme-base();
 
-    // Theme
-    .k-notification {
-        color: var( --kendo-notification-text, #{$kendo-notification-text} );
-        background-color: var( --kendo-notification-bg, #{$kendo-notification-bg} );
-        border-color: var( --kendo-notification-border, #{$kendo-notification-border} );
-        box-shadow: var( --kendo-notification-box-shadow, #{$kendo-notification-box-shadow} );
-    }
-
-    @each $theme-color, $color-props in $kendo-notification-theme-colors {
-        $_text: inherit;
-        $_bg: map.get( $color-props, bg );
-        $_border: map.get( $color-props, border );
-        $_icon: map.get( $color-props, text );
-
-        .k-notification-#{$theme-color} {
-            --kendo-notification-text: var( --kendo-notification-#{$theme-color}-text, #{$_text} );
-            --kendo-notification-bg: var( --kendo-notification-#{$theme-color}-bg, #{$_bg} );
-            --kendo-notification-border: var( --kendo-notification-#{$theme-color}-border, #{$_border} );
-
-            .k-notification-wrap > .k-icon {
-                --kendo-notification-icon-text: var( --kendo-notification-#{$theme-color}-icon-text, #{$_icon} );
-            }
-        }
-    }
-
-    // Fix for dark notification text color
-    .k-notification-dark {
-        --kendo-notification-text: white;
+    .k-notification:not(.k-notification-inverse, .k-notification-dark) {
+        color: inherit;
     }
 
 }

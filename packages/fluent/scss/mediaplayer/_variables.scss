@@ -3,47 +3,60 @@
 
 /// The border width of the MediaPlayer.
 /// @group mediaplayer
-$kendo-media-player-border-width: 1px !default;
+$kendo-media-player-border-width: var( --kendo-media-player-border-width, 1px ) !default;
 /// The font family of the MediaPlayer.
 /// @group mediaplayer
-$kendo-media-player-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-media-player-font-family: var( --kendo-media-player-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// The font size of the MediaPlayer.
 /// @group mediaplayer
-$kendo-media-player-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-media-player-font-size: var( --kendo-media-player-font-size, var( --kendo-font-size, inherit ) ) !default;
 /// The line height of the MediaPlayer.
 /// @group mediaplayer
-$kendo-media-player-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-media-player-line-height: var( --kendo-media-player-line-height, var( --kendo-line-height, normal ) ) !default;
 
 /// The background color of the MediaPlayer.
 /// @group mediaplayer
-$kendo-media-player-bg: k-color(surface-alt) !default;
+$kendo-media-player-bg: var( --kendo-media-player-bg, k-color(surface-alt) ) !default;
 /// The text color of the MediaPlayer.
 /// @group mediaplayer
-$kendo-media-player-text: k-color(on-app-surface) !default;
+$kendo-media-player-text: var( --kendo-media-player-text, k-color(on-app-surface) ) !default;
 /// The border color of the MediaPlayer.
 /// @group mediaplayer
-$kendo-media-player-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-media-player-border: var( --kendo-media-player-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
 
 /// The background color of the MediaPlayer overlay.
 /// @group mediaplayer
-$kendo-media-player-overlay-bg: k-color(base-emphasis) !default;
+$kendo-media-player-overlay-bg: var( --kendo-media-player-overlay-bg, k-color(base-emphasis) ) !default;
 
 /// The border color of the MediaPlayer button.
 /// @group mediaplayer
-$kendo-media-player-quality-border: k-color(border) !default;
+$kendo-media-player-quality-border: var( --kendo-media-player-quality-border, k-color(border) ) !default;
 
 /// The font size of the MediaPlayer title.
 /// @group mediaplayer
-$kendo-media-player-title-font-size: var( --kendo-font-size-xl, inherit ) !default;
+$kendo-media-player-title-font-size: var( --kendo-media-player-title-font-size, var( --kendo-font-size-xl, inherit ) ) !default;
 /// The horizontal padding of the MediaPlayer title.
 /// @group mediaplayer
-$kendo-media-player-titlebar-padding-x: k-spacing(2) !default;
+$kendo-media-player-titlebar-padding-x: var( --kendo-media-player-titlebar-padding-x, k-spacing(2) ) !default;
 /// The vertical padding of the MediaPlayer title.
 /// @group mediaplayer
-$kendo-media-player-titlebar-padding-y: k-spacing(2) !default;
+$kendo-media-player-titlebar-padding-y: var( --kendo-media-player-titlebar-padding-y, k-spacing(2) ) !default;
 /// The background color of the MediaPlayer title.
 /// @group mediaplayer
-$kendo-media-player-titlebar-bg: color-mix(in srgb, k-color(on-app-surface) 40%, transparent) !default;
+$kendo-media-player-titlebar-bg: var( --kendo-media-player-titlebar-bg, color-mix(in srgb, k-color(on-app-surface) 40%, transparent) ) !default;
 /// The text color of the MediaPlayer title.
 /// @group mediaplayer
-$kendo-media-player-titlebar-text: $kendo-media-player-bg !default;
+$kendo-media-player-titlebar-text: var( --kendo-media-player-titlebar-text, $kendo-media-player-bg ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/mediaplayer/_variables.scss" with (
+    $kendo-media-player-border-width: $kendo-media-player-border-width,
+    $kendo-media-player-font-family: $kendo-media-player-font-family,
+    $kendo-media-player-font-size: $kendo-media-player-font-size,
+    $kendo-media-player-line-height: $kendo-media-player-line-height,
+    $kendo-media-player-bg: $kendo-media-player-bg,
+    $kendo-media-player-text: $kendo-media-player-text,
+    $kendo-media-player-border: $kendo-media-player-border,
+    $kendo-media-player-titlebar-padding-x: $kendo-media-player-titlebar-padding-x,
+    $kendo-media-player-titlebar-padding-y: $kendo-media-player-titlebar-padding-y,
+    $kendo-media-player-titlebar-text: $kendo-media-player-titlebar-text
+);

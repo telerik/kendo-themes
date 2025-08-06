@@ -1,19 +1,7 @@
 @use "sass:map";
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/loader/_theme.scss" as *;
 
 @mixin kendo-loader--theme() {
-
-    @each $theme-color, $color-props in $kendo-loader-theme-colors {
-        $_bg: map.get( $color-props, bg );
-
-        .k-loader-#{$theme-color} {
-            color: var( --kendo-loader-#{$theme-color}-bg, #{$_bg} );
-        }
-    }
-
-    .k-loader-container-panel {
-        background-color: var( --kendo-loader-container-panel-bg, #{$kendo-loader-container-panel-bg} );
-        border-color: var( --kendo-loader-container-panel-border-color, #{$kendo-loader-container-panel-border-color} );
-    }
-
+    @include kendo-loader--theme-base();
 }

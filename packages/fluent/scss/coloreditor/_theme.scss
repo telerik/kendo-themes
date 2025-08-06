@@ -1,32 +1,11 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/coloreditor/_theme.scss" as *;
 
 @mixin kendo-color-editor--theme() {
+    @include kendo-color-editor--theme-base();
 
     .k-coloreditor {
-        @include fill(
-            var( --kendo-color-editor-text, #{$kendo-color-editor-text} ),
-            var( --kendo-color-editor-bg, #{$kendo-color-editor-bg} ),
-            var( --kendo-color-editor-border, #{$kendo-color-editor-border} )
-        );
-        @include box-shadow(
-            var( --kendo-color-editor-shadow, #{$kendo-color-editor-shadow} )
-        );
-    }
-
-    .k-coloreditor:focus,
-    .k-coloreditor.k-focus {
-        @include fill(
-            $border: var( --kendo-color-editor-focus-border, #{$kendo-color-editor-focus-border} )
-        );
-        @include box-shadow(
-            var( --kendo-color-editor-focus-shadow, #{$kendo-color-editor-focus-shadow} )
-        );
-    }
-
-    .k-coloreditor .k-colorgradient:focus,
-    .k-coloreditor .k-colorgradient.k-focus {
-        box-shadow: none;
-        outline-color: var( --kendo-color-editor-color-gradient-focus-outline-color, #{$kendo-color-editor-color-gradient-focus-outline-color} );
+        @include box-shadow($kendo-color-editor-shadow);
     }
 }

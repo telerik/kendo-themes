@@ -1,6 +1,6 @@
-@mixin kendo-masked-textbox--theme() {
+@use "@progress/kendo-theme-core/scss/components/maskedtextbox/_theme.scss" as *;
 
-    // Masked textbox
-    .k-maskedtextbox {}
+@mixin kendo-masked-textbox--theme() {
+    @include kendo-masked-textbox--theme-base();
 
 }

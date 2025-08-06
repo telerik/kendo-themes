@@ -11,7 +11,7 @@
         .k-fab-solid-#{$name} {
             @include box-shadow($kendo-fab-shadow);
             outline: $kendo-fab-border-width $kendo-fab-outline-style $color;
-            outline-offset: -$kendo-fab-border-width;
+            outline-offset: calc(#{$kendo-fab-border-width} * -1);
             border-color: $color;
             color: k-color(on-#{$name});
             background-color: $color;
@@ -103,7 +103,7 @@
         );
         @include box-shadow($kendo-fab-item-shadow);
         outline: $kendo-fab-border-width $kendo-fab-item-outline-style $kendo-fab-item-outline-color;
-        outline-offset: -$kendo-fab-border-width;
+        outline-offset: calc(#{$kendo-fab-border-width} * -1);
     }
 
     // Hover state

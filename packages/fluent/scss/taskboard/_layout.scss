@@ -1,206 +1,56 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/taskboard/_layout.scss" as *;
 
 @mixin kendo-task-board--layout() {
+    @include kendo-task-board--layout-base();
 
-    // TaskBoard
     .k-taskboard {
-        border-width: var( --kendo-taskboard-border-width, #{$kendo-taskboard-border-width} );
-        border-style: var( --kendo-taskboard-border-style, #{$kendo-taskboard-border-style} );
-        padding-inline: var( --kendo-taskboard-padding-x, #{$kendo-taskboard-padding-x} );
-        padding-block: var( --kendo-taskboard-padding-y, #{$kendo-taskboard-padding-y} );
-        box-sizing: border-box;
-        font-size: var( --kendo-taskboard-font-size, #{$kendo-taskboard-font-size} );
-        font-family: var( --kendo-taskboard-font-family, #{$kendo-taskboard-font-family} );
-        line-height: var( --kendo-taskboard-line-height, #{$kendo-taskboard-line-height} );
-        display: flex;
-        flex-direction: column;
-        position: relative;
+        border-width: $kendo-taskboard-border-width;
+        border-style: $kendo-taskboard-border-style;
+    }
 
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
+    .k-taskboard-content {
+        padding-inline: $kendo-taskboard-content-padding-x;
+        padding-block-start: 0;
+        padding-block-end: $kendo-taskboard-content-padding-y;
+    }
+
+     .k-taskboard-column-cards-container {
+        margin-bottom: 0;
+     }
+
+    .k-taskboard-column-cards {
+        margin-bottom: $kendo-taskboard-column-container-spacing-y;
+    }
+
+    .k-taskboard-pane-header {
+        font-size: $kendo-taskboard-pane-header-font-size;
+    }
+
+    .k-taskboard-card {
+        .k-card-title {
+            font-size: $kendo-taskboard-card-title-font-size;
+            font-weight: $kendo-taskboard-card-title-font-weight;
+
+            &:focus,
+            &.k-focus,
+            &:hover,
+            &.k-hover {
+                text-decoration: none;
+            }
         }
+    }
+
+    .k-taskboard-pane {
+        border: 0;
     }
 
     // Toolbar
     .k-taskboard-toolbar {
+        border-width: $kendo-toolbar-border-width;
         border-inline-width: 0;
         border-block-start-width: 0;
     }
-
-    // Content
-    .k-taskboard-content {
-        padding-inline: var( --kendo-taskboard-content-padding-x, #{$kendo-taskboard-content-padding-x} );
-        padding-block-start: 0;
-        padding-block-end: var( --kendo-taskboard-content-padding-y, #{$kendo-taskboard-content-padding-y} );
-        display: flex;
-        position: relative;
-        flex: 1 1 auto;
-        overflow-x: auto;
-    }
-
-    // Columns
-    .k-taskboard-columns-container {
-        outline: none;
-        display: flex;
-        flex-direction: row;
-        overflow: hidden;
-        gap: var( --kendo-taskboard-columns-container-gap, #{$kendo-taskboard-columns-container-gap} );
-        overflow-x: visible;
-    }
-
-    .k-taskboard-column {
-        width: var( --kendo-taskboard-column-width, #{$kendo-taskboard-column-width} );
-        border-width: var( --kendo-taskboard-column-border-width, #{$kendo-taskboard-column-border-width} );
-        border-radius: var( --kendo-taskboard-column-border-radius, #{$kendo-taskboard-column-border-radius} );
-        border-style: solid;
-        outline: none;
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 0;
-        overflow: hidden;
-    }
-
-    .k-taskboard-column-header {
-        padding-inline: var( --kendo-taskboard-column-header-padding-x, #{$kendo-taskboard-column-header-padding-x} );
-        padding-block: var( --kendo-taskboard-column-header-padding-y, #{$kendo-taskboard-column-header-padding-y} );
-        font-weight: var( --kendo-taskboard-column-header-font-weight, #{$kendo-taskboard-column-header-font-weight} );
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: var( --kendo-taskboard-column-header-gap, #{$kendo-taskboard-column-header-gap} );
-    }
-
-    .k-taskboard-column-header-actions {
-        display: inline-flex;
-        flex-shrink: 0;
-        align-self: flex-start;
-        gap: var( --kendo-taskboard-column-header-actions-gap, #{$kendo-taskboard-column-header-actions-gap} );
-    }
-
-    .k-taskboard-column-cards-container {
-        padding-inline: var( --kendo-taskboard-column-container-padding-x, #{$kendo-taskboard-column-container-padding-x} );
-        padding-block: var( --kendo-taskboard-column-container-padding-y, #{$kendo-taskboard-column-container-padding-y} );
-        outline: none;
-        overflow: auto;
-        flex: 1 1 auto;
-    }
-
-    .k-taskboard-column-cards {
-        margin-block-end: var( --kendo-taskboard-column-container-spacing-y, #{$kendo-taskboard-column-container-spacing-y} );
-        padding-inline: var( --kendo-taskboard-column-cards-padding-x, #{$kendo-taskboard-column-cards-padding-x} );
-        padding-block: var( --kendo-taskboard-column-cards-padding-y, #{$kendo-taskboard-column-cards-padding-y});
-        min-height: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: var( --kendo-taskboard-column-cards-gap, #{$kendo-taskboard-column-cards-gap} );
-    }
-
-    .k-taskboard-column-new,
-    .k-taskboard-column-edit {
-        .k-taskboard-column-header {
-            font-weight: inherit;
-        }
-
-        .k-taskboard-column-header-text {
-            flex: 1 1 100%;
-        }
-    }
-
-    // Preview/Edit Pane
-    .k-taskboard-pane {
-        padding-inline: var( --kendo-taskboard-pane-padding-x, #{$kendo-taskboard-pane-padding-y} );
-        padding-block: var( --kendo-taskboard-pane-padding-y, #{$kendo-taskboard-pane-padding-y} );
-        width: var( --kendo-taskboard-pane-width, #{$kendo-taskboard-pane-width} );
-        border-block-width: 0;
-        border-inline-start-width: var( --kendo-taskboard-pane-border-width, #{$kendo-taskboard-pane-border-width} );
-        border-inline-end-width: 0;
-        border-style: solid;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        inset-block-start: 0;
-        inset-block-end: 0;
-        inset-inline-end: 0;
-        overflow: hidden;
-        z-index: 2;
-    }
-
-    .k-taskboard-pane-header {
-        padding-inline: var( --kendo-taskboard-pane-header-padding-x, #{$kendo-taskboard-pane-header-padding-x} );
-        padding-block: var( --kendo-taskboard-pane-header-padding-y, #{$kendo-taskboard-pane-header-padding-y} );
-        font-size: var( --kendo-taskboard-pane-header-font-size, #{$kendo-taskboard-pane-header-font-size} );
-        font-weight: var( --kendo-taskboard-pane-header-font-weight, #{$kendo-taskboard-pane-header-font-weight} );
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .k-taskboard-pane-header-text {
-        word-break: normal;
-        overflow-wrap: anywhere;
-    }
-
-    .k-taskboard-pane-header-actions {
-        flex-shrink: 0;
-        align-self: flex-start;
-    }
-
-    .k-taskboard-pane-content {
-        padding-inline: var( --kendo-taskboard-pane-content-padding-x, #{$kendo-taskboard-pane-content-padding-x} );
-        padding-block: var( --kendo-taskboard-pane-content-padding-y, #{$kendo-taskboard-pane-content-padding-y} );
-        overflow: auto;
-        flex: 1 1 auto;
-    }
-
-    .k-taskboard-pane-actions {
-        padding-inline: var( --kendo-taskboard-pane-actions-padding-x, #{$kendo-taskboard-pane-actions-padding-x} );
-        padding-block: var( --kendo-taskboard-pane-actions-padding-y, #{$kendo-taskboard-pane-actions-padding-y} );
-    }
-
-    .k-taskboard-pane-start {
-        border-inline-end-width: var( --kendo-taskboard-pane-border-width, #{$kendo-taskboard-pane-border-width} );
-        inset-inline-end: auto;
-        inset-inline-start: 0;
-    }
-
-    // Cards
-    .k-taskboard-card {
-        &.k-taskboard-card-category {
-            border-inline-start-width: var( --kendo-taskboard-card-category-border-width, #{$kendo-taskboard-card-category-border-width} );
-        }
-
-        .k-card-header,
-        .k-card-body,
-        .k-card-footer {
-            padding-inline: var( --kendo-taskboard-card-padding-x, #{$kendo-taskboard-card-padding-x} );
-            padding-block: var( --kendo-taskboard-card-padding-y, #{$kendo-taskboard-card-padding-y} );
-        }
-
-        .k-card-header {
-            align-items: center;
-        }
-
-        .k-card-title {
-            word-break: normal;
-            overflow-wrap: anywhere;
-            font-size: var( --kendo-taskboard-card-title-font-size, #{$kendo-taskboard-card-title-font-size} );
-            font-weight: var( --kendo-taskboard-card-title-font-weight, #{$kendo-taskboard-card-title-font-weight} );
-        }
-
-        .k-card-header-actions {
-            align-self: flex-start;
-        }
-    }
-
-    // Card Drag Placeholder
-    .k-taskboard-drag-placeholder {
-        border-radius: var( --kendo-taskboard-drag-placeholder-border-radius, #{$kendo-taskboard-drag-placeholder-border-radius} );
-        border-width: var( --kendo-taskboard-drag-placeholder-border-width, #{$kendo-taskboard-drag-placeholder-border-width} );
-        border-style: solid;
-        position: relative;
-    }
-
 }

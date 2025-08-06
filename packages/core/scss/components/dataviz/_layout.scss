@@ -147,31 +147,31 @@
     }
 
     .k-left-handle {
-        left: - math.div( $kendo-chart-selection-handle-size, 2 );
+        left: calc( -1 * ( $kendo-chart-selection-handle-size / 2 ) );
     }
 
     .k-right-handle {
-        right: - math.div( $kendo-chart-selection-handle-size, 2 );
+        right: calc( -1 * ( $kendo-chart-selection-handle-size / 2 ) );
     }
 
     .k-left-handle div {
-        margin: -($kendo-chart-selection-handle-size) 0 0 (- math.div( $kendo-chart-selection-handle-size, 1.5 ));
-        padding: ($kendo-chart-selection-handle-size * 2) (math.div( $kendo-chart-selection-handle-size, 1.5 ) * 2) 0 0;
-    }
+        margin: calc( -1 * $kendo-chart-selection-handle-size ) 0 0 calc( -1 * ( $kendo-chart-selection-handle-size / 1.5 ) );
+            padding: calc($kendo-chart-selection-handle-size * 2) calc( ( $kendo-chart-selection-handle-size / 1.5 ) * 2) 0 0;
+        }
 
     .k-right-handle div {
-        margin: -($kendo-chart-selection-handle-size) 0 0 (- math.div( $kendo-chart-selection-handle-size, 1.5 ));
-        padding: ($kendo-chart-selection-handle-size * 2) 0 0 (math.div( $kendo-chart-selection-handle-size, 1.5 ) * 2);
+        margin: calc( -1 * $kendo-chart-selection-handle-size ) 0 0 calc( -1 * ( $kendo-chart-selection-handle-size / 1.5 ) );
+        padding: calc($kendo-chart-selection-handle-size * 2) 0 0 calc( ( $kendo-chart-selection-handle-size / 1.5 ) * 2);
     }
 
     .k-left-handle.k-handle-active div {
-        margin-left: -($kendo-chart-selection-handle-size * 2);
-        padding-left: ($kendo-chart-selection-handle-size * 2) + math.div( $kendo-chart-selection-handle-size, 1.5 );
+        margin-left: calc( -1 * ( $kendo-chart-selection-handle-size * 2 ) );
+        padding-left: calc( ( $kendo-chart-selection-handle-size * 2 ) + ( $kendo-chart-selection-handle-size / 1.5 ) );
     }
 
     .k-right-handle.k-handle-active div {
-        margin-left: -($kendo-chart-selection-handle-size * 2);
-        padding-right: ($kendo-chart-selection-handle-size * 2) + math.div( $kendo-chart-selection-handle-size, 1.5 );
+        margin-left: calc( $kendo-chart-selection-handle-size * -2);
+        padding-right: calc( ( $kendo-chart-selection-handle-size * 2 ) + ( $kendo-chart-selection-handle-size / 1.5 ) );
     }
 
     .k-mask {

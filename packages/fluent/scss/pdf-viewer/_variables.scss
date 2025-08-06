@@ -5,120 +5,159 @@
 
 /// The border width of the PDFViewer.
 /// @group pdf-viewer
-$kendo-pdf-viewer-border-width: 1px !default;
+$kendo-pdf-viewer-border-width: var( --kendo-pdf-viewer-border-width, 1px ) !default;
 /// The font family of the PDFViewer.
 /// @group pdf-viewer
-$kendo-pdf-viewer-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-pdf-viewer-font-family: var( --kendo-pdf-viewer-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// The font size of the PDFViewer.
 /// @group pdf-viewer
-$kendo-pdf-viewer-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-pdf-viewer-font-size: var( --kendo-pdf-viewer-font-size, var( --kendo-font-size, inherit ) ) !default;
 /// The line height of the PDFViewer.
 /// @group pdf-viewer
-$kendo-pdf-viewer-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-pdf-viewer-line-height: var( --kendo-pdf-viewer-line-height, var( --kendo-line-height, normal ) ) !default;
 /// The background color of the PDFViewer.
 /// @group pdf-viewer
-$kendo-pdf-viewer-bg: k-color(surface-alt) !default;
+$kendo-pdf-viewer-bg: var( --kendo-pdf-viewer-bg, #{k-color(surface-alt)} ) !default;
 /// The text color of the PDFViewer.
 /// @group pdf-viewer
-$kendo-pdf-viewer-text: k-color(on-app-surface) !default;
+$kendo-pdf-viewer-text: var( --kendo-pdf-viewer-text, #{k-color(on-app-surface)} ) !default;
 /// The border color of the PDFViewer.
 /// @group pdf-viewer
-$kendo-pdf-viewer-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-pdf-viewer-border: var( --kendo-pdf-viewer-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 
 /// The background color of the PDFViewer canvas.
 /// @group pdf-viewer
-$kendo-pdf-viewer-canvas-bg: k-color(surface) !default;
+$kendo-pdf-viewer-canvas-bg: var( --kendo-pdf-viewer-canvas-bg, #{k-color(surface)} ) !default;
 /// Text color of the PDF viewer canvas.
 /// @group pdf-viewer
-$kendo-pdf-viewer-canvas-text: k-color(on-app-surface) !default;
+$kendo-pdf-viewer-canvas-text: var( --kendo-pdf-viewer-canvas-text, #{k-color(on-app-surface)} ) !default;
 /// The border color of the PDFViewer canvas.
 /// @group pdf-viewer
-$kendo-pdf-viewer-canvas-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-pdf-viewer-canvas-border: var( --kendo-pdf-viewer-canvas-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 
 /// The spacing of the PDFViewer page.
 /// @group pdf-viewer
-$kendo-pdf-viewer-page-spacing: k-spacing(7.5) !default;
+$kendo-pdf-viewer-page-spacing: var( --kendo-pdf-viewer-page-spacing, #{k-spacing(7.5)} ) !default;
 /// The background color of the PDFViewer page.
 /// @group pdf-viewer
-$kendo-pdf-viewer-page-bg: k-color(surface-alt) !default;
+$kendo-pdf-viewer-page-bg: var( --kendo-pdf-viewer-page-bg, #{k-color(surface-alt)} ) !default;
 /// The text color of the PDFViewer page.
 /// @group pdf-viewer
-$kendo-pdf-viewer-page-text: k-color(on-app-surface) !default;
+$kendo-pdf-viewer-page-text: var( --kendo-pdf-viewer-page-text, #{k-color(on-app-surface)} ) !default;
 /// The border color of the PDFViewer page.
 /// @group pdf-viewer
-$kendo-pdf-viewer-page-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-pdf-viewer-page-border: var( --kendo-pdf-viewer-page-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 /// The shadow of the PDFViewer page.
 /// @group pdf-viewer
-$kendo-pdf-viewer-page-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
+$kendo-pdf-viewer-page-shadow: var( --kendo-pdf-viewer-page-shadow, var( --kendo-box-shadow-depth-3, none ) ) !default;
 
 /// The horizontal padding of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-padding-x: k-spacing(3) !default;
+$kendo-pdf-viewer-search-panel-padding-x: var( --kendo-pdf-viewer-search-panel-padding-x, #{k-spacing(3)} ) !default;
 /// The vertical padding of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-padding-y: $kendo-pdf-viewer-search-panel-padding-x !default;
+$kendo-pdf-viewer-search-panel-padding-y: var( --kendo-pdf-viewer-search-panel-padding-y, #{$kendo-pdf-viewer-search-panel-padding-x} ) !default;
 /// The spacing of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-spacing: k-spacing(2) !default;
+$kendo-pdf-viewer-search-panel-spacing: var( --kendo-pdf-viewer-search-panel-spacing, #{k-spacing(2)} ) !default;
 /// The border width of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-border-width: 1px !default;
+$kendo-pdf-viewer-search-panel-border-width: var( --kendo-pdf-viewer-search-panel-border-width, 1px ) !default;
 /// The border radius of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-border-radius: k-border-radius(md) !default;
+$kendo-pdf-viewer-search-panel-border-radius: var( --kendo-pdf-viewer-search-panel-border-radius, #{k-border-radius(md)} ) !default;
 /// The background color of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-bg: k-color(surface-alt) !default;
+$kendo-pdf-viewer-search-panel-bg: var( --kendo-pdf-viewer-search-panel-bg, #{k-color(surface-alt)} ) !default;
 /// The text color of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-text: k-color(on-app-surface) !default;
+$kendo-pdf-viewer-search-panel-text: var( --kendo-pdf-viewer-search-panel-text, #{k-color(on-app-surface)} ) !default;
 /// The border color of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-pdf-viewer-search-panel-border: var( --kendo-pdf-viewer-search-panel-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 /// The shadow of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-shadow: none !default;
+$kendo-pdf-viewer-search-panel-shadow: var( --kendo-pdf-viewer-search-panel-shadow, none ) !default;
 /// The spacing of the matches container in the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-matches-spacing: var( --kendo-icon-spacing, .5rem ) !default;
+$kendo-pdf-viewer-search-panel-matches-spacing: var( --kendo-pdf-viewer-search-panel-matches-spacing, var( --kendo-icon-spacing, .5rem ) ) !default;
 /// The vertical margin of the PDFViewer search panel.
 /// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-margin-y: calc( ( #{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-panel-padding-y} ) ) * -1 ) !default;
 
 /// The line height of the PDFViewer selection.
 /// @group pdf-viewer
-$kendo-pdf-viewer-selection-line-height: var( --kendo-line-height-sm, normal ) !default;
+$kendo-pdf-viewer-selection-line-height: var( --kendo-pdf-viewer-selection-line-height, var( --kendo-line-height-sm, normal ) ) !default;
 
 /// The background color of the PDFViewer highlight.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-highlight-bg: k-color(on-app-surface) !default;
+$kendo-pdf-viewer-search-highlight-bg: var( --kendo-pdf-viewer-search-highlight-bg, #{k-color(on-app-surface)} ) !default;
 /// The background color of the PDFViewer highlight mark.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-highlight-mark-bg: yellow !default;
+$kendo-pdf-viewer-search-highlight-mark-bg: var( --kendo-pdf-viewer-search-highlight-mark-bg, yellow ) !default;
 
 /// The text color of the PDFViewer icon.
 /// @group pdf-viewer
-$kendo-pdf-viewer-icon-text: $kendo-dropzone-icon-text !default;
+$kendo-pdf-viewer-icon-text: var( --kendo-pdf-viewer-icon-text, #{$kendo-dropzone-icon-text} ) !default;
 
 /// The vertical padding of the PDFViewer popup.
 /// @group pdf-viewer
-$kendo-pdf-viewer-popup-padding-x: k-spacing(2) !default;
+$kendo-pdf-viewer-popup-padding-x: var( --kendo-pdf-viewer-popup-padding-x, #{k-spacing(2)} ) !default;
 /// The horizontal padding of the PDFViewer popup.
 /// @group pdf-viewer
-$kendo-pdf-viewer-popup-padding-y: $kendo-pdf-viewer-popup-padding-x !default;
+$kendo-pdf-viewer-popup-padding-y: var( --kendo-pdf-viewer-popup-padding-y, #{$kendo-pdf-viewer-popup-padding-x} ) !default;
 
 /// The border color of the PDFViewer selected highlight annotation.
 /// @group pdf-viewer
-$kendo-pdf-viewer-highlight-annotation-border: k-color(primary) !default;
+$kendo-pdf-viewer-highlight-annotation-border: var( --kendo-pdf-viewer-highlight-annotation-border, #{k-color(primary)} ) !default;
 /// The background color of the PDFViewer hover highlight annotation.
 /// @group pdf-viewer
-$kendo-pdf-viewer-highlight-annotation-hover-border: k-color(primary-hover) !default;
+$kendo-pdf-viewer-highlight-annotation-hover-border: var( --kendo-pdf-viewer-highlight-annotation-hover-border, #{k-color(primary-hover)} ) !default;
 /// The border color of the PDFViewer selected free text annotation.
 /// @group pdf-viewer
-$kendo-pdf-viewer-free-text-annotation-border: k-color(primary) !default;
+$kendo-pdf-viewer-free-text-annotation-border: var( --kendo-pdf-viewer-free-text-annotation-border, #{k-color(primary)} ) !default;
 /// The placeholder text color of the PDFViewer free text annotation.
 /// @group pdf-viewer
-$kendo-pdf-viewer-free-text-annotation-placeholder-text: rgba(124, 22, 27, 0.5) !default;
+$kendo-pdf-viewer-free-text-annotation-placeholder-text: var( --kendo-pdf-viewer-free-text-annotation-placeholder-text, rgba(124, 22, 27, 0.5) ) !default;
 /// The text color of the PDFViewer free text annotation.
 /// @group pdf-viewer
-$kendo-pdf-viewer-free-text-annotation-text: rgba(124, 22, 27, 0.7) !default;
+$kendo-pdf-viewer-free-text-annotation-text: var( --kendo-pdf-viewer-free-text-annotation-text, rgba(124, 22, 27, 0.7) ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/pdf-viewer/_variables.scss" with (
+    $kendo-pdf-viewer-border-width: $kendo-pdf-viewer-border-width,
+    $kendo-pdf-viewer-font-family: $kendo-pdf-viewer-font-family,
+    $kendo-pdf-viewer-font-size: $kendo-pdf-viewer-font-size,
+    $kendo-pdf-viewer-line-height: $kendo-pdf-viewer-line-height,
+    $kendo-pdf-viewer-bg: $kendo-pdf-viewer-bg,
+    $kendo-pdf-viewer-text: $kendo-pdf-viewer-text,
+    $kendo-pdf-viewer-border: $kendo-pdf-viewer-border,
+    $kendo-pdf-viewer-canvas-bg: $kendo-pdf-viewer-canvas-bg,
+    $kendo-pdf-viewer-canvas-text: $kendo-pdf-viewer-canvas-text,
+    $kendo-pdf-viewer-canvas-border: $kendo-pdf-viewer-canvas-border,
+    $kendo-pdf-viewer-page-spacing: $kendo-pdf-viewer-page-spacing,
+    $kendo-pdf-viewer-page-bg: $kendo-pdf-viewer-page-bg,
+    $kendo-pdf-viewer-page-text: $kendo-pdf-viewer-page-text,
+    $kendo-pdf-viewer-page-border: $kendo-pdf-viewer-page-border,
+    $kendo-pdf-viewer-page-shadow: $kendo-pdf-viewer-page-shadow,
+    $kendo-pdf-viewer-search-panel-padding-x: $kendo-pdf-viewer-search-panel-padding-x,
+    $kendo-pdf-viewer-search-panel-padding-y: $kendo-pdf-viewer-search-panel-padding-y,
+    $kendo-pdf-viewer-search-panel-spacing: $kendo-pdf-viewer-search-panel-spacing,
+    $kendo-pdf-viewer-search-panel-border-width: $kendo-pdf-viewer-search-panel-border-width,
+    $kendo-pdf-viewer-search-panel-border-radius: $kendo-pdf-viewer-search-panel-border-radius,
+    $kendo-pdf-viewer-search-panel-bg: $kendo-pdf-viewer-search-panel-bg,
+    $kendo-pdf-viewer-search-panel-text: $kendo-pdf-viewer-search-panel-text,
+    $kendo-pdf-viewer-search-panel-border: $kendo-pdf-viewer-search-panel-border,
+    $kendo-pdf-viewer-search-panel-shadow: $kendo-pdf-viewer-search-panel-shadow,
+    $kendo-pdf-viewer-search-panel-matches-spacing: $kendo-pdf-viewer-search-panel-matches-spacing,
+    $kendo-pdf-viewer-selection-line-height: $kendo-pdf-viewer-selection-line-height,
+    $kendo-pdf-viewer-search-highlight-bg: $kendo-pdf-viewer-search-highlight-bg,
+    $kendo-pdf-viewer-search-highlight-mark-bg: $kendo-pdf-viewer-search-highlight-mark-bg,
+    $kendo-pdf-viewer-icon-text: $kendo-pdf-viewer-icon-text,
+    $kendo-pdf-viewer-popup-padding-x: $kendo-pdf-viewer-popup-padding-x,
+    $kendo-pdf-viewer-popup-padding-y: $kendo-pdf-viewer-popup-padding-y,
+    $kendo-pdf-viewer-highlight-annotation-border: $kendo-pdf-viewer-highlight-annotation-border,
+    $kendo-pdf-viewer-highlight-annotation-hover-border: $kendo-pdf-viewer-highlight-annotation-hover-border,
+    $kendo-pdf-viewer-free-text-annotation-border: $kendo-pdf-viewer-free-text-annotation-border,
+    $kendo-pdf-viewer-free-text-annotation-placeholder-text: $kendo-pdf-viewer-free-text-annotation-placeholder-text,
+    $kendo-pdf-viewer-free-text-annotation-text: $kendo-pdf-viewer-free-text-annotation-text
+);

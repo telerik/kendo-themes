@@ -1,23 +1,23 @@
 @use "../core/_index.scss" as *;
 
-$kendo-column-menu-item-sm-padding-x: k-spacing(2) !default;
-$kendo-column-menu-item-sm-padding-y: k-spacing(1.5) !default;
+$kendo-column-menu-item-sm-padding-x: var( --kendo-column-menu-item-sm-padding-x, k-spacing(2) ) !default;
+$kendo-column-menu-item-sm-padding-y: var( --kendo-column-menu-item-sm-padding-y, k-spacing(1.5) ) !default;
 
-$kendo-column-menu-item-md-padding-x: k-spacing(2) !default;
-$kendo-column-menu-item-md-padding-y: k-spacing(2) !default;
+$kendo-column-menu-item-md-padding-x: var( --kendo-column-menu-item-md-padding-x, k-spacing(2) ) !default;
+$kendo-column-menu-item-md-padding-y: var( --kendo-column-menu-item-md-padding-y, k-spacing(2) ) !default;
 
-$kendo-column-menu-item-lg-padding-x: k-spacing(2) !default;
-$kendo-column-menu-item-lg-padding-y: k-spacing(2.5) !default;
+$kendo-column-menu-item-lg-padding-x: var( --kendo-column-menu-item-lg-padding-x, k-spacing(2) ) !default;
+$kendo-column-menu-item-lg-padding-y: var( --kendo-column-menu-item-lg-padding-y, k-spacing(2.5) ) !default;
 
-$kendo-column-menu-sm-font-size: var( --kendo-font-size, inherit ) !default;
-$kendo-column-menu-md-font-size: var( --kendo-font-size, inherit ) !default;
-$kendo-column-menu-lg-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-column-menu-sm-font-size: var( --kendo-column-menu-sm-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-column-menu-md-font-size: var( --kendo-column-menu-md-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-column-menu-lg-font-size: var( --kendo-column-menu-lg-font-size, var( --kendo-font-size, inherit ) ) !default;
 
-$kendo-column-menu-sm-line-height: var( --kendo-line-height, normal ) !default;
-$kendo-column-menu-md-line-height: var( --kendo-line-height, normal ) !default;
-$kendo-column-menu-lg-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-column-menu-sm-line-height: var( --kendo-column-menu-sm-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-column-menu-md-line-height: var( --kendo-column-menu-md-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-column-menu-lg-line-height: var( --kendo-column-menu-lg-line-height, var( --kendo-line-height, normal ) ) !default;
 
-$kendo-column-menu-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-column-menu-font-family: var( --kendo-column-menu-font-family, var( --kendo-font-family, inherit ) ) !default;
 
 $kendo-column-menu-sizes: (
     sm: (
@@ -41,7 +41,28 @@ $kendo-column-menu-sizes: (
 ) !default;
 
 // Group Menu
-$kendo-group-menu-item-action-hover-bg: color-mix(in srgb, currentColor 5%, transparent) !default;
-$kendo-group-menu-item-action-selected-bg: color-mix(in srgb, currentColor 8%, transparent) !default;
-$kendo-group-menu-item-add-action-text: k-color(primary) !default;
-$kendo-group-menu-item-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-group-menu-item-action-hover-bg: var( --kendo-group-menu-item-action-hover-bg, color-mix(in srgb, currentColor 5%, transparent) ) !default;
+$kendo-group-menu-item-action-selected-bg: var( --kendo-group-menu-item-action-selected-bg, color-mix(in srgb, currentColor 8%, transparent) ) !default;
+$kendo-group-menu-item-add-action-text: var( --kendo-group-menu-item-add-action-text, k-color(primary) ) !default;
+$kendo-group-menu-item-border: var( --kendo-group-menu-item-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/column-menu/_variables.scss" with (
+    $kendo-column-menu-item-sm-padding-x: $kendo-column-menu-item-sm-padding-x,
+    $kendo-column-menu-item-sm-padding-y: $kendo-column-menu-item-sm-padding-y,
+    $kendo-column-menu-item-md-padding-x: $kendo-column-menu-item-md-padding-x,
+    $kendo-column-menu-item-md-padding-y: $kendo-column-menu-item-md-padding-y,
+    $kendo-column-menu-item-lg-padding-x: $kendo-column-menu-item-lg-padding-x,
+    $kendo-column-menu-item-lg-padding-y: $kendo-column-menu-item-lg-padding-y,
+    $kendo-column-menu-sm-font-size: $kendo-column-menu-sm-font-size,
+    $kendo-column-menu-md-font-size: $kendo-column-menu-md-font-size,
+    $kendo-column-menu-lg-font-size: $kendo-column-menu-lg-font-size,
+    $kendo-column-menu-sm-line-height: $kendo-column-menu-sm-line-height,
+    $kendo-column-menu-md-line-height: $kendo-column-menu-md-line-height,
+    $kendo-column-menu-lg-line-height: $kendo-column-menu-lg-line-height,
+    $kendo-column-menu-font-family: $kendo-column-menu-font-family,
+    $kendo-column-menu-sizes: $kendo-column-menu-sizes,
+    $kendo-group-menu-item-action-hover-bg: $kendo-group-menu-item-action-hover-bg,
+    $kendo-group-menu-item-action-selected-bg: $kendo-group-menu-item-action-selected-bg,
+    $kendo-group-menu-item-add-action-text: $kendo-group-menu-item-add-action-text,
+    $kendo-group-menu-item-border: $kendo-group-menu-item-border
+);

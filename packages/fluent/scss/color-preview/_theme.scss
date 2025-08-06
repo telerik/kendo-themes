@@ -1,32 +1,7 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/color-preview/_theme.scss" as *;
 
 @mixin kendo-color-preview--theme() {
-
-    // Color Preview
-    .k-color-preview {
-        @include fill(
-            var( --kendo-color-preview-text, #{$kendo-color-preview-text} ),
-            var( --kendo-color-preview-bg, #{$kendo-color-preview-bg} ),
-            var( --kendo-color-preview-border, #{$kendo-color-preview-border} )
-        );
-
-        &:hover,
-        &.k-hover {
-            @include fill(
-                $border: var( --kendo-color-preview-hover-border, #{$kendo-color-preview-hover-border} )
-            );
-        }
-    }
-
-    // Mask
-    [disabled],
-    .k-disabled {
-        .k-color-preview-mask::before {
-            @include fill(
-                $bg: k-color(base-subtle)
-            );
-        }
-    }
-
+    @include kendo-color-preview--theme-base();
 }

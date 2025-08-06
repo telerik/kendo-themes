@@ -1,101 +1,74 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/drawer/_theme.scss" as *;
 
 @mixin kendo-drawer--theme() {
 
-    .k-drawer {
-        @include fill(
-            var( --kendo-drawer-text, #{$kendo-drawer-text} ),
-            var( --kendo-drawer-bg, #{$kendo-drawer-bg} ),
-            var( --kendo-drawer-border, #{$kendo-drawer-border} )
-        );
-    }
-
-    // Drawer items
-    .k-drawer-wrapper {
-        scrollbar-color: var( --kendo-drawer-scrollbar-color, #{$kendo-drawer-scrollbar-color} ) var( --kendo-drawer-scrollbar-bg, #{$kendo-drawer-scrollbar-bg} );
-
-        &::-webkit-scrollbar-track {
-            background: var( --kendo-drawer-scrollbar-bg, #{$kendo-drawer-scrollbar-bg} );
-        }
-        &::-webkit-scrollbar-thumb {
-            background: var( --kendo-drawer-scrollbar-color, #{$kendo-drawer-scrollbar-color} );
-        }
-        &::-webkit-scrollbar-thumb:hover {
-            background: var( --kendo-drawer-scrollbar-hover-color, #{$kendo-drawer-scrollbar-hover-color} );
-        }
-    }
+    @include kendo-drawer--theme-base();
+    
+    // Drawer items - unique fluent styling
     .k-drawer-item {
         @include fill(
-            var( --kendo-drawer-item-text, #{$kendo-drawer-item-text} ),
-            var( --kendo-drawer-item-bg, #{$kendo-drawer-item-bg} )
+            $color: $kendo-drawer-item-text,
+            $bg: $kendo-drawer-item-bg
         );
 
         .k-icon {
-            color: var( --kendo-drawer-item-icon-text, #{$kendo-drawer-item-icon-text} );
+            color: $kendo-drawer-item-icon-text;
         }
 
         &:hover,
         &.k-hover {
             @include fill(
-                var( --kendo-drawer-item-hover-text, #{$kendo-drawer-item-hover-text} ),
-                var( --kendo-drawer-item-hover-bg, #{$kendo-drawer-item-hover-bg} )
+                $color: $kendo-drawer-item-hover-text,
+                $bg: $kendo-drawer-item-hover-bg
             );
 
             .k-icon {
-                color: var( --kendo-drawer-item-hover-icon-text, #{$kendo-drawer-item-hover-icon-text} );
+                color: $kendo-drawer-item-hover-icon-text;
             }
         }
 
         &:focus,
         &.k-focus {
             @include fill(
-                var( --kendo-drawer-item-focus-text, #{$kendo-drawer-item-focus-text} ),
-                var( --kendo-drawer-item-focus-bg, #{$kendo-drawer-item-focus-bg} )
+                $color: $kendo-drawer-item-focus-text,
+                $bg: $kendo-drawer-item-focus-bg
             );
-            box-shadow: var( --kendo-drawer-item-focus-shadow, #{$kendo-drawer-item-focus-shadow} );
+
+            box-shadow: $kendo-drawer-item-focus-shadow;
 
             .k-icon {
-                color: var( --kendo-drawer-item-focus-icon-text, #{$kendo-drawer-item-focus-icon-text} );
-            }
-
-            &:hover,
-            &.k-hover {
-                @include fill(
-                    var( --kendo-drawer-item-hover-text, #{$kendo-drawer-item-hover-text} ),
-                    var( --kendo-drawer-item-hover-bg, #{$kendo-drawer-item-hover-bg} )
-                );
+                color: $kendo-drawer-item-focus-icon-text;
             }
         }
 
         &.k-selected {
             @include fill(
-                var( --kendo-drawer-item-selected-text, #{$kendo-drawer-item-selected-text} ),
-                var( --kendo-drawer-item-selected-bg, #{$kendo-drawer-item-selected-bg} )
+                $color: $kendo-drawer-item-selected-text,
+                $bg: $kendo-drawer-item-selected-bg
             );
 
             .k-icon {
-                color: var( --kendo-drawer-item-selected-icon-text, #{$kendo-drawer-item-selected-icon-text} );
+                color: $kendo-drawer-item-selected-icon-text;
             }
 
             &:hover,
             &.k-hover {
                 @include fill(
-                    var( --kendo-drawer-item-selected-hover-text, #{$kendo-drawer-item-selected-hover-text} ),
-                    var( --kendo-drawer-item-selected-hover-bg, #{$kendo-drawer-item-selected-hover-bg} )
-                );
-            }
-
-            &:focus,
-            &.k-focus {
-                @include fill(
-                    var( --kendo-drawer-item-selected-focus-bg, #{$kendo-drawer-item-selected-focus-bg} )
+                    $color: $kendo-drawer-item-selected-hover-text,
+                    $bg: $kendo-drawer-item-selected-hover-bg
                 );
             }
         }
+
+        &::before {
+            border-color: $kendo-drawer-item-ripple-border;
+        }
     }
+
     .k-drawer-separator {
-        background-color: var( --kendo-drawer-border, #{$kendo-drawer-border} );
+        background-color: $kendo-drawer-border;
     }
 
 }

@@ -1,59 +1,23 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
 @use "../core/spacing/_index.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/panelbar/_layout.scss" as *;
 
 @mixin kendo-panelbar--layout() {
+    @include kendo-panelbar--layout-base();
 
     .k-panelbar {
-        margin: 0;
-        padding: 0;
-        border-width: var( --kendo-panelbar-border-width, #{$kendo-panelbar-border-width} );
-        border-style: var( --kendo-panelbar-border-style, #{$kendo-panelbar-border-style} );
-        box-sizing: border-box;
-        outline: 0;
-        font-family: var( --kendo-panelbar-font-family, #{$kendo-panelbar-font-family} );
-        font-size: var( --kendo-panelbar-font-size, #{$kendo-panelbar-font-size} );
-        line-height: var( --kendo-panelbar-line-height, #{$kendo-panelbar-line-height} );
-        list-style: none;
-        display: block;
-        position: relative;
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-
-        // Root
         > .k-panelbar-header {
-            // TODO
-            border-width: 0;
-            border-style: var( --kendo-panelbar-item-border-style, #{$kendo-panelbar-item-border-style} );
-            border-color: inherit;
-            display: block;
 
             > .k-link {
-                padding-inline-start: var( --kendo-panelbar-header-padding-x-start, #{$kendo-panelbar-header-padding-x-start} );
-                padding-inline-end: var( --kendo-panelbar-header-padding-x-end, #{$kendo-panelbar-header-padding-x-end} );
-                padding-block: var( --kendo-panelbar-header-padding-y, #{$kendo-panelbar-header-padding-y} );
-                color: inherit;
-                background: none;
-                text-decoration: none;
-                display: flex;
-                flex-flow: row nowrap;
-                gap: var( --kendo-icon-spacing, .5rem );
-                align-items: center;
-                align-content: center;
-                position: relative;
-                user-select: none;
-                cursor: default;
-                transition: var( --kendo-transition, none );
+                padding-inline-start: $kendo-panelbar-header-padding-x-start;
+                padding-inline-end: $kendo-panelbar-header-padding-x-end;
+                padding-block: $kendo-panelbar-header-padding-y;
+                font-weight: normal;
 
                 &.k-selected {
-                    font-weight: var( --kendo-font-weight-bold, #{$kendo-font-weight-bold} );
+                    font-weight: $kendo-font-weight-bold;
 
                     &::before {
                         content: '';
@@ -66,49 +30,19 @@
             }
         }
 
-        > .k-panelbar-header + .k-panelbar-header {
-            border-top-width: var( --kendo-panelbar-item-border-width, #{$kendo-panelbar-item-border-width} );
-        }
-
-        // Absolute positioning should be applied only if the icon is a first child
         .k-panelbar-item-icon:first-child {
             position: absolute;
-            inset-inline-start: var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} );
-        }
-
-
-        // Sub
-        .k-panelbar-group {
-            margin: 0;
-            padding: 0;
-            border-width: 0;
-            border-color: inherit;
-            color: inherit;
-            background-color: transparent;
-            list-style: none;
+            inset-inline-start: $kendo-panelbar-icon-spacing;
         }
 
         .k-panelbar-group > .k-panelbar-item {
-            display: block;
-
             > .k-link {
-                padding-inline-start: var( --kendo-panelbar-item-padding-x-start, #{$kendo-panelbar-item-padding-x-start} );
-                padding-inline-end: var( --kendo-panelbar-item-padding-x-end, #{$kendo-panelbar-item-padding-x-end} );
-                padding-block: var( --kendo-panelbar-item-padding-y, #{$kendo-panelbar-item-padding-y} );
-                color: inherit;
-                text-decoration: none;
-                display: flex;
-                flex-flow: row nowrap;
-                gap: var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} );
-                align-items: center;
-                align-content: center;
-                position: relative;
-                user-select: none;
-                cursor: default;
-                transition: var( --kendo-transition, #{$kendo-transition} );
+                padding-inline-start: $kendo-panelbar-item-padding-x-start;
+                padding-inline-end: $kendo-panelbar-item-padding-x-end;
+                padding-block: $kendo-panelbar-item-padding-y;
 
                 &.k-selected {
-                    font-weight: var( --kendo-font-weight-bold, #{$kendo-font-weight-bold} );
+                    font-weight: $kendo-font-weight-bold;
 
                     &::before {
                         content: '';
@@ -120,32 +54,20 @@
                 }
             }
 
-            // Hierarchy items
             @for $i from 1 through $kendo-panelbar-item-level-count {
                 &.k-level-#{$i} {
-                    --kendo-panelbar-link-spacing: calc( #{k-spacing(3)} * #{$i} );
-                    --kendo-panelbar-item-padding: var( --kendo-panelbar-item-padding-x-start, #{$kendo-panelbar-item-padding-x-start} );
+                    $_link-spacing: calc( #{k-spacing(3)} * #{$i} );
+                    $_item-padding: $kendo-panelbar-item-padding-x-start;
+
                     .k-link {
-                        padding-inline-start: calc( var( --kendo-panelbar-item-padding ) + var( --kendo-panelbar-link-spacing ) );
+                        padding-inline-start: calc( $kendo-panelbar-item-padding-x-start + $_link-spacing );
                     }
 
                     .k-panelbar-item-icon:first-child {
-                        inset-inline-start: calc( var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} ) + var( --kendo-panelbar-link-spacing ) );
+                        inset-inline-start: calc( $kendo-panelbar-icon-spacing + $_link-spacing );
                     }
                 }
             }
-        }
-
-        // Panelbar content
-        .k-panelbar-content {
-            display: flow-root;
-        }
-
-        // Toggle icon
-        .k-panelbar-expand,
-        .k-panelbar-collapse,
-        .k-panelbar-toggle {
-            margin-inline-start: auto;
         }
     }
 }

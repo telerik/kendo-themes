@@ -4,25 +4,25 @@
 
 /// The width of the Input components.
 /// @group input
-$kendo-input-width: 100% !default;
+$kendo-input-width: var( --kendo-input-width, 100% ) !default;
 
 /// The width of the border around the Input components.
 /// @group input
 $kendo-input-border-width: 1px !default;
 
 // The width of the border around the focused Input components.
-$kendo-input-focus-border-width: 2px !default;
+$kendo-input-focus-border-width: var( --kendo-input-focus-border-width, 2px ) !default;
 
 /// The height of the border around the Input components.
 /// @group input
-$kendo-input-border-height: ( $kendo-input-border-width * 2 ) !default;
+$kendo-input-border-height: calc( $kendo-input-border-width * 2 ) !default;
 
 /// The horizontal padding of the small Input components.
 /// @group input
 $kendo-input-sm-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the medium Input components.
 /// @group input
-$kendo-input-md-padding-x: k-spacing(2) !default;
+$kendo-input-md-padding-x: var( --kendo-input-padding-x, k-spacing(2) ) !default;
 /// The horizontal padding of the large Input components.
 /// @group input
 $kendo-input-lg-padding-x: k-spacing(2) !default;
@@ -32,7 +32,7 @@ $kendo-input-lg-padding-x: k-spacing(2) !default;
 $kendo-input-sm-padding-y: k-spacing(1) !default;
 /// The vertical padding of the medium Input components.
 /// @group input
-$kendo-input-md-padding-y: k-spacing(1.5) !default;
+$kendo-input-md-padding-y: var( --kendo-input-padding-y, k-spacing(1.5) ) !default;
 /// The vertical padding of the large Input components.
 /// @group input
 $kendo-input-lg-padding-y: k-spacing(2) !default;
@@ -42,7 +42,7 @@ $kendo-input-lg-padding-y: k-spacing(2) !default;
 $kendo-input-sm-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the medium Input components.
 /// @group input
-$kendo-input-md-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-input-md-font-size: var( --kendo-input-font-size, var( --kendo-font-size, inherit ) ) !default;
 /// The font size of the large Input components.
 /// @group input
 $kendo-input-lg-font-size: var( --kendo-font-size, inherit ) !default;
@@ -52,16 +52,16 @@ $kendo-input-lg-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-input-sm-line-height: var( --kendo-line-height, normal ) !default;
 /// The line height of the medium Input components.
 /// @group input
-$kendo-input-md-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-input-md-line-height: var( --kendo-input-line-height, var( --kendo-line-height, normal ) ) !default;
 /// The line height of the large Input components.
 /// @group input
 $kendo-input-lg-line-height: var( --kendo-line-height, normal ) !default;
 
 // The font family of the Input components.
-$kendo-input-font-family: var( --kendo-font-family, inherit) !default;
+$kendo-input-font-family: var( --kendo-input-font-family, var( --kendo-font-family, inherit) ) !default;
 
 // The font weight of the Input components.
-$kendo-input-font-weight: var( --kendo-font-weight, normal ) !default;
+$kendo-input-font-weight: var( --kendo-input-font-weight, var( --kendo-font-weight, normal ) ) !default;
 
 /// The width of the small Input button.
 /// @group input
@@ -91,75 +91,63 @@ $kendo-input-spinner-icon-offset: null !default;
 
 /// The text color of the solid Input components.
 /// @group input
-$kendo-input-solid-text: k-color(on-app-surface) !default;
+$kendo-input-text: var( --kendo-input-text, k-color(on-app-surface) ) !default;
 
 /// The background color of the solid Input components.
 /// @group input
-$kendo-input-solid-bg: k-color(app-surface) !default;
+$kendo-input-bg: var( --kendo-input-bg, k-color(app-surface) ) !default;
 
 /// The border color of the solid Input components.
 /// @group input
-$kendo-input-solid-border: k-color(border) !default;
+$kendo-input-border: var( --kendo-input-border, k-color(border) ) !default;
 
 /// The text color of the hovered solid Input components.
 /// @group input
-$kendo-input-solid-hover-text: k-color(on-app-surface) !default;
+$kendo-input-hover-text: k-color(on-app-surface) !default;
 
 /// The background color of the hovered solid Input components.
 /// @group input
-$kendo-input-solid-hover-bg: $kendo-input-solid-bg !default;
+$kendo-input-hover-bg: $kendo-input-bg !default;
 
 /// The border color of the hovered solid Input components.
 /// @group input
-$kendo-input-solid-hover-border: k-color(border-alt) !default;
+$kendo-input-hover-border: k-color(border-alt) !default;
 
 /// The text color of the focused solid Input components.
 /// @group input
-$kendo-input-solid-focus-text: $kendo-input-solid-text !default;
+$kendo-input-focus-text: $kendo-input-text !default;
 
 /// The background color of the focused solid Input components.
 /// @group input
-$kendo-input-solid-focus-bg: $kendo-input-solid-bg !default;
+$kendo-input-focus-bg: $kendo-input-bg !default;
 
 /// The border color of the focused solid Input components.
 /// @group input
-$kendo-input-solid-focus-border: k-color(primary) !default;
-
-/// The text color of the hovered and focused solid Input components.
-/// @group input
-$kendo-input-solid-hover-focus-text: $kendo-input-solid-focus-text !default;
-
-/// The background color of the hovered and focused solid Input components.
-/// @group input
-$kendo-input-solid-hover-focus-bg: $kendo-input-solid-focus-bg !default;
-
-/// The border color of the hovered and focused solid Input components.
-/// @group input
-$kendo-input-solid-hover-focus-border: $kendo-input-solid-focus-border !default;
+$kendo-input-focus-border: k-color(primary) !default;
 
 /// The text color of the disabled solid Input components.
 /// @group input
-$kendo-input-solid-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
+$kendo-input-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
 
 /// The background color of the disabled solid Input components.
 /// @group input
-$kendo-input-solid-disabled-bg: k-color(base-subtle) !default;
+$kendo-input-disabled-bg: k-color(base-subtle) !default;
 
 /// The border color of the disabled solid Input components.
 /// @group input
-$kendo-input-solid-disabled-border: transparent !default;
+$kendo-input-disabled-border: transparent !default;
 
 /// The text color of the outline Input components.
 /// @group input
-$kendo-input-outline-text: k-color(on-app-surface) !default;
+$kendo-input-outline-text: var( --kendo-input-outline-text, k-color(on-app-surface) ) !default;
 
 /// The background color of the outline Input components.
 /// @group input
-$kendo-input-outline-bg: k-color(app-surface) !default;
+$kendo-input-outline-bg: var( --kendo-input-outline-bg, k-color(app-surface) ) !default;
 
 /// The border color of the outline Input components.
 /// @group input
-$kendo-input-outline-border: k-color(border) !default;
+$kendo-input-outline-border: var( --kendo-input-outline-border, k-color(border) ) !default;
 
 /// The text color of the hovered outline Input components.
 /// @group input
@@ -185,18 +173,6 @@ $kendo-input-outline-focus-bg: k-color(app-surface) !default;
 /// @group input
 $kendo-input-outline-focus-border: k-color(primary) !default;
 
-/// The text color of the hovered and focused outline Input components.
-/// @group input
-$kendo-input-outline-hover-focus-text: $kendo-input-outline-focus-text !default;
-
-/// The background color of the hovered and focused outline Input components.
-/// @group input
-$kendo-input-outline-hover-focus-bg: $kendo-input-outline-focus-bg !default;
-
-/// The border color of the hovered and focused outline Input components.
-/// @group input
-$kendo-input-outline-hover-focus-border: $kendo-input-outline-focus-border !default;
-
 /// The text color of the disabled outline Input components.
 /// @group input
 $kendo-input-outline-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
@@ -211,15 +187,15 @@ $kendo-input-outline-disabled-border: color-mix(in srgb, k-color(on-app-surface)
 
 /// The text color of the flat Input components.
 /// @group input
-$kendo-input-flat-text: k-color(on-app-surface) !default;
+$kendo-input-flat-text: var( --kendo-input-flat-text, k-color(on-app-surface) ) !default;
 
 /// The background color of the flat Input components.
 /// @group input
-$kendo-input-flat-bg: k-color(app-surface) !default;
+$kendo-input-flat-bg: var( --kendo-input-flat-bg, k-color(app-surface) ) !default;
 
 /// The border color of the flat Input components.
 /// @group input
-$kendo-input-flat-border: k-color(border) !default;
+$kendo-input-flat-border: var( --kendo-input-flat-border, k-color(border) ) !default;
 
 /// The text color of the hovered flat Input components.
 /// @group input
@@ -245,18 +221,6 @@ $kendo-input-flat-focus-bg: k-color(app-surface) !default;
 /// @group input
 $kendo-input-flat-focus-border: k-color(primary) !default;
 
-/// The text color of the hovered and focused flat Input components.
-/// @group input
-$kendo-input-flat-hover-focus-text: $kendo-input-flat-focus-text !default;
-
-/// The background color of the hovered and focused flat Input components.
-/// @group input
-$kendo-input-flat-hover-focus-bg: $kendo-input-flat-focus-bg !default;
-
-/// The border color of the hovered and focused flat Input components.
-/// @group input
-$kendo-input-flat-hover-focus-border: $kendo-input-flat-focus-border !default;
-
 /// The text color of the disabled flat Input components.
 /// @group input
 $kendo-input-flat-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
@@ -271,75 +235,63 @@ $kendo-input-flat-disabled-border: color-mix(in srgb, k-color(on-app-surface) 46
 
 /// The text color of the solid Picker components.
 /// @group input
-$kendo-picker-solid-text: k-color(on-app-surface) !default;
+$kendo-picker-text: var( --kendo-picker-text, k-color(on-app-surface) ) !default;
 
 /// The background color of the solid Picker components.
 /// @group input
-$kendo-picker-solid-bg: k-color(app-surface) !default;
+$kendo-picker-bg: var( --kendo-picker-bg, k-color(app-surface) ) !default;
 
 /// The border color of the solid Picker components.
 /// @group input
-$kendo-picker-solid-border: k-color(border) !default;
+$kendo-picker-border: var( --kendo-picker-border, k-color(border) ) !default;
 
 /// The text color of the hovered solid Picker components.
 /// @group input
-$kendo-picker-solid-hover-text: k-color(on-app-surface) !default;
+$kendo-picker-hover-text: k-color(on-app-surface) !default;
 
 /// The background color of hovered the solid Picker components.
 /// @group input
-$kendo-picker-solid-hover-bg: k-color(app-surface) !default;
+$kendo-picker-hover-bg: k-color(app-surface) !default;
 
 /// The border color of the hovered solid Picker components.
 /// @group input
-$kendo-picker-solid-hover-border: k-color(border-alt) !default;
+$kendo-picker-hover-border: k-color(border-alt) !default;
 
 /// The text color of the focused solid Picker components.
 /// @group input
-$kendo-picker-solid-focus-text: k-color(on-app-surface) !default;
+$kendo-picker-focus-text: k-color(on-app-surface) !default;
 
 /// The background color of the focused solid Picker components.
 /// @group input
-$kendo-picker-solid-focus-bg: k-color(app-surface) !default;
+$kendo-picker-focus-bg: k-color(app-surface) !default;
 
 /// The border color of the focused solid Picker components.
 /// @group input
-$kendo-picker-solid-focus-border: k-color(primary)  !default;
-
-/// The text color of the hovered and focused solid Picker components.
-/// @group input
-$kendo-picker-solid-hover-focus-text: $kendo-picker-solid-focus-text !default;
-
-/// The background color of the hovered and focused solid Picker components.
-/// @group input
-$kendo-picker-solid-hover-focus-bg: $kendo-picker-solid-focus-bg !default;
-
-/// The border color of the hovered and focused solid Picker components.
-/// @group input
-$kendo-picker-solid-hover-focus-border: $kendo-picker-solid-focus-border !default;
+$kendo-picker-focus-border: k-color(primary)  !default;
 
 /// The text color of the disabled solid Picker components.
 /// @group input
-$kendo-picker-solid-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
+$kendo-picker-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
 
 /// The background color of the disabled solid Picker components.
 /// @group input
-$kendo-picker-solid-disabled-bg: color-mix(in srgb, k-color(on-app-surface) 9%, transparent) !default;
+$kendo-picker-disabled-bg: color-mix(in srgb, k-color(on-app-surface) 9%, transparent) !default;
 
 /// The border color of the disabled solid Picker components.
 /// @group input
-$kendo-picker-solid-disabled-border: transparent !default;
+$kendo-picker-disabled-border: transparent !default;
 
 /// The text color of the outline Picker components.
 /// @group input
-$kendo-picker-outline-text: k-color(on-app-surface) !default;
+$kendo-picker-outline-text: var( --kendo-picker-outline-text, k-color(on-app-surface) ) !default;
 
 /// The background color of the outline Picker components.
 /// @group input
-$kendo-picker-outline-bg: none !default;
+$kendo-picker-outline-bg: var( --kendo-picker-outline-bg, none ) !default;
 
 /// The border color of the outline Picker components.
 /// @group input
-$kendo-picker-outline-border: k-color(on-app-surface) !default;
+$kendo-picker-outline-border: var( --kendo-picker-outline-border, k-color(on-app-surface) ) !default;
 
 /// The text color of the hovered outline Picker components.
 /// @group input
@@ -391,15 +343,15 @@ $kendo-picker-outline-disabled-border: $kendo-picker-outline-disabled-text!defau
 
 /// The text color of the flat Picker components.
 /// @group input
-$kendo-picker-flat-text: k-color(on-app-surface) !default;
+$kendo-picker-flat-text: var( --kendo-picker-flat-text, k-color(on-app-surface) ) !default;
 
 /// The background color of the flat Picker components.
 /// @group input
-$kendo-picker-flat-bg: none !default;
+$kendo-picker-flat-bg: var( --kendo-picker-flat-bg, none ) !default;
 
 /// The border color of the flat Picker components.
 /// @group input
-$kendo-picker-flat-border: k-color(border) !default;
+$kendo-picker-flat-border: var( --kendo-picker-flat-border, k-color(border) ) !default;
 
 /// The text color of the hovered flat Picker components.
 /// @group input
@@ -451,10 +403,10 @@ $kendo-picker-flat-disabled-border: $kendo-picker-flat-disabled-text !default;
 
 /// The calculated height of the Input.
 /// @group input
-$kendo-input-calc-size: calc( ( #{$kendo-input-md-line-height} * 1em ) + ( #{$kendo-input-md-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) ) !default;
-$kendo-input-sm-calc-size: calc( ( #{$kendo-input-sm-line-height} * 1em ) + ( #{$kendo-input-sm-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) ) !default;
-$kendo-input-md-calc-size: calc( ( #{$kendo-input-md-line-height} * 1em ) + ( #{$kendo-input-md-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) ) !default;
-$kendo-input-lg-calc-size: calc( ( #{$kendo-input-lg-line-height} * 1em ) + ( #{$kendo-input-lg-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) ) !default;
+$kendo-input-calc-size: calc( ( #{$kendo-input-md-line-height} * 1em ) + ( #{$kendo-input-md-padding-y} * 2 ) + calc( #{$kendo-input-border-width} * 2 ) ) !default;
+$kendo-input-sm-calc-size: calc( ( #{$kendo-input-sm-line-height} * 1em ) + ( #{$kendo-input-sm-padding-y} * 2 ) + calc( #{$kendo-input-border-width} * 2 ) ) !default;
+$kendo-input-md-calc-size: calc( ( #{$kendo-input-md-line-height} * 1em ) + ( #{$kendo-input-md-padding-y} * 2 ) + calc( #{$kendo-input-border-width} * 2 ) ) !default;
+$kendo-input-lg-calc-size: calc( ( #{$kendo-input-lg-line-height} * 1em ) + ( #{$kendo-input-lg-padding-y} * 2 ) + calc( #{$kendo-input-border-width} * 2 ) ) !default;
 
 /// The sizes map for the Input components.
 /// @group input
@@ -488,117 +440,6 @@ $kendo-input-sizes: (
         button-padding-x: $kendo-input-lg-padding-y,
         button-padding-y: $kendo-input-lg-padding-y,
         button-width: $kendo-input-lg-button-width
-    )
-) !default;
-
-/// Colors map of the input.
-/// @group input
-$kendo-input-theme-colors: (
-    input: (
-        solid: (
-            text: $kendo-input-solid-text,
-            bg: $kendo-input-solid-bg,
-            border: $kendo-input-solid-border,
-            hover-text: $kendo-input-solid-hover-text,
-            hover-bg: $kendo-input-solid-hover-bg,
-            hover-border: $kendo-input-solid-hover-border,
-            focus-text: $kendo-input-solid-focus-text,
-            focus-bg: $kendo-input-solid-focus-bg,
-            focus-border: $kendo-input-solid-focus-border,
-            hover-focus-text: $kendo-input-solid-hover-focus-text,
-            hover-focus-bg: $kendo-input-solid-hover-focus-bg,
-            hover-focus-border: $kendo-input-solid-hover-focus-border,
-            disabled-text: $kendo-input-solid-disabled-text,
-            disabled-bg: $kendo-input-solid-disabled-bg,
-            disabled-border: $kendo-input-solid-disabled-border
-        ),
-        outline: (
-            text: $kendo-input-outline-text,
-            bg: $kendo-input-outline-bg,
-            border: $kendo-input-outline-border,
-            hover-text: $kendo-input-outline-hover-text,
-            hover-bg: $kendo-input-outline-hover-bg,
-            hover-border: $kendo-input-outline-hover-border,
-            focus-text: $kendo-input-outline-focus-text,
-            focus-bg: $kendo-input-outline-focus-bg,
-            focus-border: $kendo-input-outline-focus-border,
-            hover-focus-text: $kendo-input-outline-hover-focus-text,
-            hover-focus-bg: $kendo-input-outline-hover-focus-bg,
-            hover-focus-border: $kendo-input-outline-hover-focus-border,
-            disabled-text: $kendo-input-outline-disabled-text,
-            disabled-bg: $kendo-input-outline-disabled-bg,
-            disabled-border: $kendo-input-outline-disabled-border
-        ),
-        flat: (
-            text: $kendo-input-flat-text,
-            bg: $kendo-input-flat-bg,
-            border: $kendo-input-flat-border,
-            hover-text: $kendo-input-flat-hover-text,
-            hover-bg: $kendo-input-flat-hover-bg,
-            hover-border: $kendo-input-flat-hover-border,
-            focus-text: $kendo-input-flat-focus-text,
-            focus-bg: $kendo-input-flat-focus-bg,
-            focus-border: $kendo-input-flat-focus-border,
-            hover-focus-tex: $kendo-input-flat-hover-focus-text,
-            hover-focus-bg: $kendo-input-flat-hover-focus-bg,
-            hover-focus-border: $kendo-input-flat-hover-focus-border,
-            disabled-text: $kendo-input-flat-disabled-text,
-            disabled-bg: $kendo-input-flat-disabled-bg,
-            disabled-border: $kendo-input-flat-disabled-border
-        )
-    ),
-    picker: (
-        solid: (
-            text: $kendo-picker-solid-text,
-            bg: $kendo-picker-solid-bg,
-            border: $kendo-picker-solid-border,
-            hover-text: $kendo-picker-solid-hover-text,
-            hover-bg: $kendo-picker-solid-hover-bg,
-            hover-border: $kendo-picker-solid-hover-border,
-            focus-text: $kendo-picker-solid-focus-text,
-            focus-bg: $kendo-picker-solid-focus-bg,
-            focus-border: $kendo-picker-solid-focus-border,
-            hover-focus-tex: $kendo-picker-solid-hover-focus-text,
-            hover-focus-bg: $kendo-picker-solid-hover-focus-bg,
-            hover-focus-border: $kendo-picker-solid-hover-focus-border,
-            disabled-text: $kendo-picker-solid-disabled-text,
-            disabled-bg: $kendo-picker-solid-disabled-bg,
-            disabled-border: $kendo-picker-solid-disabled-border
-        ),
-        outline: (
-            text: $kendo-picker-outline-text,
-            bg: $kendo-picker-outline-bg,
-            border: $kendo-picker-outline-border,
-            hover-text: $kendo-picker-outline-hover-text,
-            hover-bg: $kendo-picker-outline-hover-bg,
-            hover-border: $kendo-picker-outline-hover-border,
-            focus-text: $kendo-picker-outline-focus-text,
-            focus-bg: $kendo-picker-outline-focus-bg,
-            focus-border: $kendo-picker-outline-focus-border,
-            hover-focus-text: $kendo-picker-outline-hover-focus-text,
-            hover-focus-bg: $kendo-picker-outline-hover-focus-bg,
-            hover-focus-border: $kendo-picker-outline-hover-focus-border,
-            disabled-text: $kendo-picker-outline-disabled-text,
-            disabled-bg: $kendo-picker-outline-disabled-bg,
-            disabled-border: $kendo-picker-outline-disabled-border
-        ),
-        flat: (
-            text: $kendo-picker-flat-text,
-            bg: $kendo-picker-flat-bg,
-            border: $kendo-picker-flat-border,
-            hover-text: $kendo-picker-flat-hover-text,
-            hover-bg: $kendo-picker-flat-hover-bg,
-            hover-border: $kendo-picker-flat-hover-border,
-            focus-text: $kendo-picker-flat-focus-text,
-            focus-bg: $kendo-picker-flat-focus-bg,
-            focus-border: $kendo-picker-flat-focus-border,
-            hover-focus-tex: $kendo-picker-flat-hover-focus-text,
-            hover-focus-bg: $kendo-picker-flat-hover-focus-bg,
-            hover-focus-border: $kendo-picker-flat-hover-focus-border,
-            disabled-text: $kendo-picker-flat-disabled-text,
-            disabled-bg: $kendo-picker-flat-disabled-bg,
-            disabled-border: $kendo-picker-flat-disabled-border
-        )
     )
 ) !default;
 
@@ -658,3 +499,107 @@ $kendo-input-clear-value-hover-opacity: 1 !default;
 $kendo-use-input-button-width: true !default;
 $kendo-use-input-spinner-width: true !default;
 $kendo-use-input-spinner-icon-offset: false !default;
+
+@forward "@progress/kendo-theme-core/scss/components/input/_variables.scss" with (
+    $kendo-input-default-width: $kendo-input-width,
+    $kendo-input-border-width: $kendo-input-border-width,
+    $kendo-input-border-height: $kendo-input-border-height,
+    $kendo-input-sm-padding-x: $kendo-input-sm-padding-x,
+    $kendo-input-md-padding-x: $kendo-input-md-padding-x,
+    $kendo-input-lg-padding-x: $kendo-input-lg-padding-x,
+    $kendo-input-sm-padding-y: $kendo-input-sm-padding-y,
+    $kendo-input-md-padding-y: $kendo-input-md-padding-y,
+    $kendo-input-lg-padding-y: $kendo-input-lg-padding-y,
+    $kendo-input-font-family: $kendo-input-font-family,
+    $kendo-input-sm-font-size: $kendo-input-sm-font-size,
+    $kendo-input-md-font-size: $kendo-input-md-font-size,
+    $kendo-input-lg-font-size: $kendo-input-lg-font-size,
+    $kendo-input-sm-line-height: $kendo-input-sm-line-height,
+    $kendo-input-md-line-height: $kendo-input-md-line-height,
+    $kendo-input-lg-line-height: $kendo-input-lg-line-height,
+    $kendo-input-sm-calc-size: $kendo-input-sm-calc-size,
+    $kendo-input-md-calc-size: $kendo-input-md-calc-size,
+    $kendo-input-lg-calc-size: $kendo-input-lg-calc-size,
+    $kendo-input-sizes: $kendo-input-sizes,
+    $kendo-input-bg: $kendo-input-bg,
+    $kendo-input-text: $kendo-input-text,
+    $kendo-input-border: $kendo-input-border,
+    $kendo-input-hover-bg: $kendo-input-hover-bg,
+    $kendo-input-hover-text: $kendo-input-hover-text,
+    $kendo-input-hover-border: $kendo-input-hover-border,
+    $kendo-input-focus-bg: $kendo-input-focus-bg,
+    $kendo-input-focus-text: $kendo-input-focus-text,
+    $kendo-input-focus-border: $kendo-input-focus-border,
+    $kendo-input-disabled-bg: $kendo-input-disabled-bg,
+    $kendo-input-disabled-text: $kendo-input-disabled-text,
+    $kendo-input-disabled-border: $kendo-input-disabled-border,
+    $kendo-input-outline-bg: $kendo-input-outline-bg,
+    $kendo-input-outline-text: $kendo-input-outline-text,
+    $kendo-input-outline-border: $kendo-input-outline-border,
+    $kendo-input-outline-hover-bg: $kendo-input-outline-hover-bg,
+    $kendo-input-outline-hover-text: $kendo-input-outline-hover-text,
+    $kendo-input-outline-hover-border: $kendo-input-outline-hover-border,
+    $kendo-input-outline-focus-bg: $kendo-input-outline-focus-bg,
+    $kendo-input-outline-focus-text: $kendo-input-outline-focus-text,
+    $kendo-input-outline-focus-border: $kendo-input-outline-focus-border,
+    $kendo-input-flat-bg: $kendo-input-flat-bg,
+    $kendo-input-flat-text: $kendo-input-flat-text,
+    $kendo-input-flat-border: $kendo-input-flat-border,
+    $kendo-input-flat-hover-bg: $kendo-input-flat-hover-bg,
+    $kendo-input-flat-hover-text: $kendo-input-flat-hover-text,
+    $kendo-input-flat-hover-border: $kendo-input-flat-hover-border,
+    $kendo-input-flat-focus-bg: $kendo-input-flat-focus-bg,
+    $kendo-input-flat-focus-text: $kendo-input-flat-focus-text,
+    $kendo-input-flat-focus-border: $kendo-input-flat-focus-border,
+    $kendo-input-placeholder-text: $kendo-input-placeholder-text,
+    $kendo-input-placeholder-opacity: $kendo-input-placeholder-opacity,
+    $kendo-input-clear-value-text: $kendo-input-clear-value-text,
+    $kendo-input-clear-value-opacity: $kendo-input-clear-value-opacity,
+    $kendo-input-clear-value-hover-text: $kendo-input-clear-value-hover-text,
+    $kendo-input-clear-value-hover-opacity: $kendo-input-clear-value-hover-opacity,
+    $kendo-input-button-border-width: $kendo-input-button-border-width,
+    $kendo-input-spinner-icon-offset: $kendo-input-spinner-icon-offset,
+    $kendo-input-separator-text: $kendo-input-separator-text,
+    $kendo-input-prefix-text: $kendo-input-prefix-text,
+    $kendo-input-suffix-text: $kendo-input-suffix-text,
+    $kendo-input-invalid-border: $kendo-input-invalid-border,
+    $kendo-picker-bg: $kendo-picker-bg,
+    $kendo-picker-text: $kendo-picker-text,
+    $kendo-picker-border: $kendo-picker-border,
+    $kendo-picker-hover-bg: $kendo-picker-hover-bg,
+    $kendo-picker-hover-text: $kendo-picker-hover-text,
+    $kendo-picker-hover-border: $kendo-picker-hover-border,
+    $kendo-picker-focus-bg: $kendo-picker-focus-bg,
+    $kendo-picker-focus-text: $kendo-picker-focus-text,
+    $kendo-picker-focus-border: $kendo-picker-focus-border,
+    $kendo-picker-disabled-bg: $kendo-picker-disabled-bg,
+    $kendo-picker-disabled-text: $kendo-picker-disabled-text,
+    $kendo-picker-disabled-border: $kendo-picker-disabled-border,
+    $kendo-picker-outline-bg: $kendo-picker-outline-bg,
+    $kendo-picker-outline-text: $kendo-picker-outline-text,
+    $kendo-picker-outline-border: $kendo-picker-outline-border,
+    $kendo-picker-outline-hover-bg: $kendo-picker-outline-hover-bg,
+    $kendo-picker-outline-hover-text: $kendo-picker-outline-hover-text,
+    $kendo-picker-outline-hover-border: $kendo-picker-outline-hover-border,
+    $kendo-picker-outline-focus-bg: $kendo-picker-outline-focus-bg,
+    $kendo-picker-outline-focus-text: $kendo-picker-outline-focus-text,
+    $kendo-picker-outline-focus-border: $kendo-picker-outline-focus-border,
+    $kendo-picker-outline-hover-focus-bg: $kendo-picker-outline-hover-focus-bg,
+    $kendo-picker-outline-hover-focus-text: $kendo-picker-outline-hover-focus-text,
+    $kendo-picker-outline-hover-focus-border: $kendo-picker-outline-hover-focus-border,
+    $kendo-picker-flat-bg: $kendo-picker-flat-bg,
+    $kendo-picker-flat-text: $kendo-picker-flat-text,
+    $kendo-picker-flat-border: $kendo-picker-flat-border,
+    $kendo-picker-flat-hover-bg: $kendo-picker-flat-hover-bg,
+    $kendo-picker-flat-hover-text: $kendo-picker-flat-hover-text,
+    $kendo-picker-flat-hover-border: $kendo-picker-flat-hover-border,
+    $kendo-picker-flat-focus-bg: $kendo-picker-flat-focus-bg,
+    $kendo-picker-flat-focus-text: $kendo-picker-flat-focus-text,
+    $kendo-picker-flat-focus-border: $kendo-picker-flat-focus-border,
+    $kendo-picker-flat-hover-focus-bg: $kendo-picker-flat-hover-focus-bg,
+    $kendo-picker-flat-hover-focus-text: $kendo-picker-flat-hover-focus-text,
+    $kendo-picker-flat-hover-focus-border: $kendo-picker-flat-hover-focus-border,
+    $kendo-use-input-button-width: $kendo-use-input-button-width,
+    $kendo-use-input-spinner-width: $kendo-use-input-spinner-width,
+    $kendo-use-input-spinner-icon-offset: $kendo-use-input-spinner-icon-offset
+);

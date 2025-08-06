@@ -4,146 +4,143 @@
 
 /// The padding of the inline Form.
 /// @group form
-$kendo-form-spacer: k-spacing(4) !default;
+$kendo-form-spacer: var(--kendo-form-spacer, #{k-spacing(4)}) !default;
 
 /// The font size of the Form.
 /// @group form
-$kendo-form-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-form-font-size: var(--kendo-form-font-size, var( --kendo-font-size, inherit )) !default;
 
 /// The line height of the Form.
 /// @group form
-$kendo-form-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-form-line-height: var(--kendo-form-line-height, var( --kendo-line-height, normal )) !default;
 
 /// The margin of the Form fieldset.
 /// @group form
-$kendo-form-fieldset-margin: 2em 0 0 !default;
+$kendo-form-fieldset-margin: var(--kendo-form-fieldset-margin, 2em 0 0) !default;
 
 /// The padding of the Form fieldset.
 /// @group form
-$kendo-form-fieldset-padding: k-spacing(0) !default;
+$kendo-form-fieldset-padding: var(--kendo-form-fieldset-padding, #{k-spacing(0)}) !default;
 
 /// The margin of the Form legend.
 /// @group form
-$kendo-form-legend-margin: 0 0 k-spacing(3) !default;
+$kendo-form-legend-margin: var(--kendo-form-legend-margin, 0 0 #{k-spacing(3)}) !default;
 
 /// The padding of the Form legend.
 /// @group form
-$kendo-form-legend-padding: k-spacing(0) !default;
+$kendo-form-legend-padding: var(--kendo-form-legend-padding, #{k-spacing(0)}) !default;
 
 /// The border width of the Form legend.
 /// @group form
-$kendo-form-legend-border-width: 0 0 k-spacing(0.5) !default;
+$kendo-form-legend-border-width: var(--kendo-form-legend-border-width, 0 0 #{k-spacing(0.5)}) !default;
 
 /// The border style of the Form legend.
 /// @group form
-$kendo-form-legend-border-style: solid !default;
+$kendo-form-legend-border-style: var(--kendo-form-legend-border-style, solid) !default;
 
 /// The border color of the Form legend.
 /// @group form
-$kendo-form-legend-border-color: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-form-legend-border-color: var(--kendo-form-legend-border-color, #{color-mix(in srgb, k-color(border) 16%, transparent)}) !default;
 
 /// The width of the Form legend.
 /// @group form
-$kendo-form-legend-width: 100% !default;
+$kendo-form-legend-width: var(--kendo-form-legend-width, 100%) !default;
 
 /// The font size of the Form legend.
 /// @group form
-$kendo-form-legend-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-form-legend-font-size: var(--kendo-form-legend-font-size, var( --kendo-font-size, inherit )) !default;
 
 /// The text capitalization of the Form legend.
 /// @group form
-$kendo-form-legend-text-transform: uppercase !default;
-
+$kendo-form-legend-text-transform: var(--kendo-form-legend-text-transform, uppercase) !default;
 
 /// The bottom margin of the Form label.
 /// @group form
-$kendo-form-label-margin-bottom: k-spacing(2) !default;
+$kendo-form-label-margin-bottom: var(--kendo-form-label-margin-bottom, #{k-spacing(2)}) !default;
 
 /// The font weight of the form label
 /// @group form
-$kendo-form-label-font-weight: var( --kendo-font-weight-bold, inherit ) !default;
+$kendo-form-label-font-weight: var(--kendo-form-label-font-weight, var( --kendo-font-weight-bold, inherit )) !default;
 
 /// The font size of the Form hint.
 /// @group form
-$kendo-form-hint-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-form-hint-font-size: var(--kendo-form-hint-font-size, var( --kendo-font-size-sm, inherit )) !default;
 
 /// The font style of the Form hint.
 /// @group form
-$kendo-form-hint-font-style: normal !default;
+$kendo-form-hint-font-style: var(--kendo-form-hint-font-style, normal) !default;
 
 /// The top margin of the Form hint.
 /// @group form
-$kendo-form-hint-margin-top: k-spacing(1) !default;
+$kendo-form-hint-margin-top: var(--kendo-form-hint-margin-top, #{k-spacing(1)}) !default;
 
 /// The text color of the Form hint.
 /// @group form
-$kendo-form-hint-text: k-color(subtle) !default;
+$kendo-form-hint-text: var(--kendo-form-hint-text, #{k-color(subtle)}) !default;
 
 /// The row spacing of the small Form.
 /// @group form
-$kendo-form-sm-rows-spacing: k-spacing(3) !default;
+$kendo-form-sm-rows-spacing: var(--kendo-form-sm-rows-spacing, #{k-spacing(3)}) !default;
 /// The row spacing of the medium Form.
 /// @group form
-$kendo-form-md-rows-spacing: $kendo-form-sm-rows-spacing !default;
+$kendo-form-md-rows-spacing: var(--kendo-form-md-rows-spacing, #{$kendo-form-sm-rows-spacing}) !default;
 /// The row spacing of the large Form.
 /// @group form
-$kendo-form-lg-rows-spacing: $kendo-form-sm-rows-spacing !default;
+$kendo-form-lg-rows-spacing: var(--kendo-form-lg-rows-spacing, #{$kendo-form-sm-rows-spacing}) !default;
 
 /// The margin of the Form separator.
 /// @group form
-$kendo-form-separator-margin: k-spacing(3) 0 0 !default;
+$kendo-form-separator-margin: var(--kendo-form-separator-margin, #{k-spacing(3)} 0 0) !default;
 
 /// The border color of the Form separator.
 /// @group form
-$kendo-form-separator-border-color: $kendo-form-legend-border-color !default;
+$kendo-form-separator-border-color: var(--kendo-form-separator-border-color, #{$kendo-form-legend-border-color}) !default;
 
 /// The top padding of the label in the horizontal Form.
 /// @group form
-$kendo-horizontal-form-label-padding-top: k-spacing(1.5) !default;
+$kendo-horizontal-form-label-padding-top: var(--kendo-horizontal-form-label-padding-top, #{k-spacing(1.5)}) !default;
 
 /// The horizontal margin of the label in the horizontal Form.
 /// @group form
-$kendo-horizontal-form-label-margin-x: k-spacing(2) !default;
+$kendo-horizontal-form-label-margin-x: var(--kendo-horizontal-form-label-margin-x, #{k-spacing(2)}) !default;
 
 /// The width of the label in the horizontal Form.
 /// @group form
-$kendo-horizontal-form-label-width: 25% !default;
+$kendo-horizontal-form-label-width: var(--kendo-horizontal-form-label-width, 25%) !default;
 
 /// The horizontal alignment of the label in the horizontal Form.
 /// @group form
-$kendo-horizontal-form-label-align: flex-end !default;
+$kendo-horizontal-form-label-align: var(--kendo-horizontal-form-label-align, flex-end) !default;
 
 /// The maximum width of the field wrap in the horizontal Form.
 /// @group form
-$kendo-horizontal-form-field-wrap-max-width: calc( ( 100% - #{$kendo-horizontal-form-label-width} ) - #{$kendo-horizontal-form-label-margin-x} ) !default;
+$kendo-horizontal-form-field-wrap-max-width: var(--kendo-horizontal-form-field-wrap-max-width, calc( ( 100% - #{$kendo-horizontal-form-label-width} ) - #{$kendo-horizontal-form-label-margin-x} )) !default;
 
 /// The width of the inline Form element.
 /// @group form
-$kendo-inline-form-element-width: 25% !default;
+$kendo-inline-form-element-width: var(--kendo-inline-form-element-width, 25%) !default;
 
 /// The invalid text color of the Form.
 /// @group form
-$kendo-forms-invalid-color: k-color(error-on-surface) !default;
-
+$kendo-forms-invalid-color: var(--kendo-forms-invalid-color, #{k-color(error-on-surface)}) !default;
 
 /// The horizontal margin of the optional label in the Form.
 /// @group form
-$kendo-label-optional-margin-x: k-spacing(1.5) !default;
+$kendo-label-optional-margin-x: var(--kendo-label-optional-margin-x, #{k-spacing(1.5)}) !default;
 /// The font size of the optional label in the Form.
 /// @group form
-$kendo-label-optional-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-label-optional-font-size: var(--kendo-label-optional-font-size, var( --kendo-font-size-sm, inherit )) !default;
 /// The font style of the optional label in the Form.
 /// @group form
-$kendo-label-optional-font-style: normal !default;
-
+$kendo-label-optional-font-style: var(--kendo-label-optional-font-style, normal) !default;
 
 /// The margin of the Form fieldset.
 /// @group form
-$kendo-fieldset-margin: k-spacing(7.5) !default;
+$kendo-fieldset-margin: var(--kendo-fieldset-margin, #{k-spacing(7.5)}) !default;
 
 /// The text color of the Form legend.
 /// @group form
-$kendo-fieldset-legend-text: k-color(subtle) !default;
+$kendo-fieldset-legend-text: var(--kendo-fieldset-legend-text, #{k-color(subtle)}) !default;
 
 /// The sizes map for the Form.
 /// @group form
@@ -158,3 +155,40 @@ $kendo-form-sizes: (
         form-rows-spacing: $kendo-form-lg-rows-spacing
     )
 ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/forms/_variables.scss" with (
+    $kendo-form-spacer: $kendo-form-spacer,
+    $kendo-form-font-size: $kendo-form-font-size,
+    $kendo-form-line-height: $kendo-form-line-height,
+    $kendo-form-fieldset-margin: $kendo-form-fieldset-margin,
+    $kendo-form-fieldset-padding: $kendo-form-fieldset-padding,
+    $kendo-form-legend-margin: $kendo-form-legend-margin,
+    $kendo-form-legend-padding: $kendo-form-legend-padding,
+    $kendo-form-legend-border-width: $kendo-form-legend-border-width,
+    $kendo-form-legend-border-style: $kendo-form-legend-border-style,
+    $kendo-form-legend-border-color: $kendo-form-legend-border-color,
+    $kendo-form-legend-width: $kendo-form-legend-width,
+    $kendo-form-legend-font-size: $kendo-form-legend-font-size,
+    $kendo-form-legend-text-transform: $kendo-form-legend-text-transform,
+    $kendo-form-label-margin-bottom: $kendo-form-label-margin-bottom,
+    $kendo-form-hint-font-size: $kendo-form-hint-font-size,
+    $kendo-form-hint-font-style: $kendo-form-hint-font-style,
+    $kendo-form-hint-margin-top: $kendo-form-hint-margin-top,
+    $kendo-form-sm-rows-spacing: $kendo-form-sm-rows-spacing,
+    $kendo-form-md-rows-spacing: $kendo-form-md-rows-spacing,
+    $kendo-form-lg-rows-spacing: $kendo-form-lg-rows-spacing,
+    $kendo-form-separator-margin: $kendo-form-separator-margin,
+    $kendo-form-separator-border-color: $kendo-form-separator-border-color,
+    $kendo-horizontal-form-label-padding-top: $kendo-horizontal-form-label-padding-top,
+    $kendo-horizontal-form-label-margin-x: $kendo-horizontal-form-label-margin-x,
+    $kendo-horizontal-form-label-width: $kendo-horizontal-form-label-width,
+    $kendo-horizontal-form-label-align: $kendo-horizontal-form-label-align,
+    $kendo-horizontal-form-field-wrap-max-width: $kendo-horizontal-form-field-wrap-max-width,
+    $kendo-inline-form-element-width: $kendo-inline-form-element-width,
+    $kendo-label-optional-margin-x: $kendo-label-optional-margin-x,
+    $kendo-label-optional-font-size: $kendo-label-optional-font-size,
+    $kendo-label-optional-font-style: $kendo-label-optional-font-style,
+    $kendo-fieldset-margin: $kendo-fieldset-margin,
+    $kendo-fieldset-legend-text: $kendo-fieldset-legend-text,
+    $kendo-form-sizes: $kendo-form-sizes
+);

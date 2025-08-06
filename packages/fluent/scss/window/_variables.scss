@@ -3,98 +3,98 @@
 
 /// The width of the border around the Window.
 /// @group window
-$kendo-window-border-width: k-spacing(1) 0 0 !default;
+$kendo-window-border-width: var(--kendo-window-border-width, k-spacing(1) 0 0) !default;
 /// The border radius of the Window.
 /// @group window
-$kendo-window-border-radius: k-border-radius(md) !default;
+$kendo-window-border-radius: var(--kendo-window-border-radius, k-border-radius(md)) !default;
 /// The font family of the Window.
 /// @group window
-$kendo-window-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-window-font-family: var( --kendo-window-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// The font size of the Window.
 /// @group window
-$kendo-window-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-window-font-size: var( --kendo-window-font-size, var( --kendo-font-size, inherit ) ) !default;
 /// The line height of the Window.
 /// @group window
-$kendo-window-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-window-line-height: var( --kendo-window-line-height, var( --kendo-line-height, normal ) ) !default;
 
 /// The horizontal padding of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-padding-x: k-spacing(6) !default;
+$kendo-window-titlebar-padding-x: var( --kendo-window-titlebar-padding-x, k-spacing(6) ) !default;
 /// The vertical padding of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-padding-y: k-spacing(5) !default;
+$kendo-window-titlebar-padding-y: var( --kendo-window-titlebar-padding-y, k-spacing(5) ) !default;
 /// The width of the border of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-border-width: 0 !default;
+$kendo-window-titlebar-border-width: var( --kendo-window-titlebar-border-width, 0 ) !default;
 /// The style of the border of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-border-style: solid !default;
 
 /// The font size of the title of the Window.
 /// @group window
-$kendo-window-title-font-size: var( --kendo-font-size-xl, inherit ) !default;
+$kendo-window-title-font-size: var( --kendo-window-title-font-size, var( --kendo-font-size-xl, inherit ) ) !default;
 /// The line height of the title of the Window.
 /// @group window
-$kendo-window-title-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-window-title-line-height: var( --kendo-window-title-line-height, var( --kendo-line-height, normal ) ) !default;
 /// The font weight of the title of the Window.
 /// @group window
-$kendo-window-title-font-weight: var( --kendo-font-weight-bold, bold ) !default;
+$kendo-window-title-font-weight: var( --kendo-window-title-font-weight, var( --kendo-font-weight-bold, bold ) ) !default;
 
 /// The spacing between the buttons in the Window titlebar.
 /// @group window
-$kendo-window-actions-gap: k-spacing(0) !default;
-/// OThe opacity of the buttons in the Window titlebar.
+$kendo-window-actions-gap: var( --kendo-window-actions-gap, k-spacing(0) ) !default;
+/// The opacity of the buttons in the Window titlebar.
 /// @group window
-$kendo-window-action-opacity: 1 !default;
+$kendo-window-action-opacity: var( --kendo-window-action-opacity, 1 ) !default;
 /// The opacity of the hovered buttons in the Window titlebar.
 /// @group window
-$kendo-window-action-hover-opacity: 1 !default;
+$kendo-window-action-hover-opacity: var( --kendo-window-action-hover-opacity, 1 ) !default;
 
 /// The horizontal padding of the content of the Window.
 /// @group window
-$kendo-window-inner-padding-x: k-spacing(6) !default;
+$kendo-window-inner-padding-x: var( --kendo-window-inner-padding-x, k-spacing(6) ) !default;
 /// The vertical padding of the content of the Window.
 /// @group window
-$kendo-window-inner-padding-y: k-spacing(3) !default;
+$kendo-window-inner-padding-y: var( --kendo-window-inner-padding-y, k-spacing(3) ) !default;
 
 /// The horizontal padding of the Window action buttons.
 /// @group window
-$kendo-window-buttongroup-padding-x: k-spacing(6) !default; // $kendo-actions-padding-x
+$kendo-window-buttongroup-padding-x: var( --kendo-window-buttongroup-padding-x, k-spacing(6) ) !default; // $kendo-actions-padding-x
 /// The vertical padding of the Window action buttons.
 /// @group window
-$kendo-window-buttongroup-padding-y: k-spacing(6) !default; // $kendo-actions-padding-y
+$kendo-window-buttongroup-padding-y: var( --kendo-window-buttongroup-padding-y, k-spacing(6) ) !default; // $kendo-actions-padding-y
 /// The width of the top border of the Window action buttons.
 /// @group window
-$kendo-window-buttongroup-border-width: 0 !default;
+$kendo-window-buttongroup-border-width: var( --kendo-window-buttongroup-border-width, 0 ) !default;
 /// The spacing between the Window action buttons.
 /// @group window
-$kendo-window-buttongroup-spacing: k-spacing(3) !default;
+$kendo-window-buttongroup-spacing: var( --kendo-window-buttongroup-spacing, k-spacing(3) ) !default;
 
 /// The background color of the Window.
 /// @group window
-$kendo-window-bg: k-color(surface-alt) !default;
+$kendo-window-bg: var( --kendo-window-bg, k-color(surface-alt) ) !default;
 /// The text color of the Window.
 /// @group window
-$kendo-window-text: k-color(on-app-surface) !default;
+$kendo-window-text: var( --kendo-window-text, k-color(on-app-surface) ) !default;
 /// The border color of the Window.
 /// @group window
-$kendo-window-border: k-color(primary) !default;
+$kendo-window-border: var( --kendo-window-border, k-color(primary) ) !default;
 /// The box shadow of the Window.
 /// @group window
-$kendo-window-shadow: var( --kendo-box-shadow-depth-8, none ) !default;
+$kendo-window-shadow: var( --kendo-window-shadow, var( --kendo-elevation-8, none ) ) !default;
 /// The box shadow of the focused Window.
 /// @group window
-$kendo-window-focus-shadow: var( --kendo-box-shadow-depth-9, none ) !default;
+$kendo-window-focus-shadow: var( --kendo-window-focus-shadow, var( --kendo-elevation-9, none ) ) !default;
 
 /// The background color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-bg: k-color(surface-alt) !default; // $kendo-component-header-bg
+$kendo-window-titlebar-bg: var( --kendo-window-titlebar-bg, k-color(surface-alt) ) !default; // $kendo-component-header-bg
 /// The text color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-text: k-color(primary) !default; // $kendo-component-header-text
+$kendo-window-titlebar-text: var( --kendo-window-titlebar-text, k-color(primary) ) !default; // $kendo-component-header-text
 /// The border color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-border: k-color(primary) !default;
+$kendo-window-titlebar-border: var( --kendo-window-titlebar-border, k-color(primary) ) !default;
 
 /// The map of the width of the different Window sizes.
 /// @group window
@@ -104,48 +104,43 @@ $kendo-window-sizes: (
     lg: 1200px
 ) !default;
 
-/// The theme variations for the Window.
-/// @group window
-$kendo-window-brand-colors: (
-    primary: primary
- ) !default;
-
-// Matrix with window theme colors in the order: bg, color, border
-$_tc-window-matrix: (
-    (normal: (color, on-color, color)),
-) !default;
-
-$_tc-window-dark-matrix: (
-    (normal: (color, on-color, color)),
-) !default;
-
-$_tc-window-light-matrix: (
-    (normal: (color, on-color, color)),
-) !default;
-
 /// The theme colors map for the Window.
 /// @group window
-$kendo-window-theme-colors: () !default;
+$kendo-window-theme-colors: (
+    "primary": k-color(primary),
+    "light": k-color(light),
+    "dark": k-color(dark)
+) !default;
 
-@each $ui-states in $_tc-window-matrix {
-    @each $brand-color, $palette in $kendo-window-brand-colors {
-        $kendo-window-theme-colors: map.deep-merge(
-            $kendo-window-theme-colors,
-            k-generate-theme-variation( $brand-color, $palette, $ui-states )
-        );
-    };
-}
+@forward "@progress/kendo-theme-core/scss/components/window/_variables.scss" with (
+    $kendo-window-border-width: $kendo-window-border-width,
+    $kendo-window-border-radius: $kendo-window-border-radius,
+    $kendo-window-font-family: $kendo-window-font-family,
+    $kendo-window-font-size: $kendo-window-font-size,
+    $kendo-window-line-height: $kendo-window-line-height,
+    $kendo-window-titlebar-padding-x: $kendo-window-titlebar-padding-x,
+    $kendo-window-titlebar-padding-y: $kendo-window-titlebar-padding-y,
+    $kendo-window-titlebar-border-width: $kendo-window-titlebar-border-width,
+    $kendo-window-titlebar-border-style: $kendo-window-titlebar-border-style,
+    $kendo-window-title-font-size: $kendo-window-title-font-size,
+    $kendo-window-title-line-height: $kendo-window-title-line-height,
+    $kendo-window-actions-gap: $kendo-window-actions-gap,
+    $kendo-window-action-opacity: $kendo-window-action-opacity,
+    $kendo-window-action-hover-opacity: $kendo-window-action-hover-opacity,
+    $kendo-window-inner-padding-x: $kendo-window-inner-padding-x,
+    $kendo-window-inner-padding-y: $kendo-window-inner-padding-y,
+    $kendo-window-buttongroup-padding-x: $kendo-window-buttongroup-padding-x,
+    $kendo-window-buttongroup-padding-y: $kendo-window-buttongroup-padding-y,
+    $kendo-window-buttongroup-border-width: $kendo-window-buttongroup-border-width,
+    $kendo-window-bg: $kendo-window-bg,
+    $kendo-window-text: $kendo-window-text,
+    $kendo-window-border: $kendo-window-border,
+    $kendo-window-shadow: $kendo-window-shadow,
+    $kendo-window-focus-shadow: $kendo-window-focus-shadow,
+    $kendo-window-titlebar-bg: $kendo-window-titlebar-bg,
+    $kendo-window-titlebar-text: $kendo-window-titlebar-text,
+    $kendo-window-titlebar-border: $kendo-window-titlebar-border,
+    $kendo-window-sizes: $kendo-window-sizes,
+    $kendo-window-theme-colors: $kendo-window-theme-colors
+);
 
-@each $ui-states in $_tc-window-dark-matrix {
-    $kendo-window-theme-colors: map.deep-merge(
-        $kendo-window-theme-colors,
-        k-generate-theme-variation( dark, dark, $ui-states )
-    );
-}
-
-@each $ui-states in $_tc-window-light-matrix {
-    $kendo-window-theme-colors: map.deep-merge(
-        $kendo-window-theme-colors,
-        k-generate-theme-variation( light, light, $ui-states )
-    );
-}

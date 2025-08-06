@@ -4,45 +4,45 @@
 
 /// The horizontal padding of the Card.
 /// @group card
-$kendo-card-padding-x: k-spacing(3) !default;
+$kendo-card-padding-x: var( --kendo-card-padding-x, k-spacing(3) ) !default;
 /// The vertical padding of the Card.
 /// @group card
-$kendo-card-padding-y: k-spacing(3) !default;
+$kendo-card-padding-y: var( --kendo-card-padding-y, k-spacing(3) ) !default;
 /// The width of the border around the Card.
 /// @group card
-$kendo-card-border-width: 0px !default;
+$kendo-card-border-width: var( --kendo-card-border-width, 0px ) !default;
 /// The border radius of the Card.
 /// @group card
-$kendo-card-border-radius: k-border-radius(md) !default;
+$kendo-card-border-radius: var( --kendo-card-border-radius, k-border-radius(md) ) !default;
 /// The inner border radius of the Card.
 /// @group card
 $kendo-card-inner-border-radius: calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} ) !default;
 /// The font family of the Card.
 /// @group card
-$kendo-card-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-card-font-family: var( --kendo-card-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// The font size of the Card.
 /// @group card
-$kendo-card-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-card-font-size: var( --kendo-card-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
 /// The line height of the Card.
 /// @group card
-$kendo-card-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-card-line-height: var( --kendo-card-line-height, var( --kendo-line-height, normal ) ) !default;
 
 /// The spacing between the Cards in the Card deck.
 /// @group card
-$kendo-card-deck-gap: k-spacing(4) !default;
+$kendo-card-deck-gap: var( --kendo-card-deck-gap, k-spacing(4) ) !default;
 
 /// The background color of the Card.
 /// @group card
-$kendo-card-bg: k-color(surface-alt) !default;
+$kendo-card-bg: var( --kendo-card-bg, k-color(surface-alt) ) !default;
 /// The text color of the Card.
 /// @group card
-$kendo-card-text: k-color(on-app-surface) !default;
+$kendo-card-text: var( --kendo-card-text, k-color(on-app-surface) ) !default;
 /// The border color of the Card.
 /// @group card
-$kendo-card-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-card-border: var( --kendo-card-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
 /// The shadow of the Card.
 /// @group card
-$kendo-card-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
+$kendo-card-shadow: var( --kendo-card-shadow, var( --kendo-elevation-1, none ) ) !default;
 
 /// The background color of the focused Card.
 /// @group card
@@ -55,42 +55,42 @@ $kendo-card-focus-text: null !default;
 $kendo-card-focus-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 /// The shadow of the focused Card.
 /// @group card
-$kendo-card-focus-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
+$kendo-card-focus-shadow: var( --kendo-elevation-3, none ) !default;
 
 /// The font size of the Card header.
 /// @group card
-$kendo-card-header-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-card-header-font-size: var( --kendo-card-header-font-size, var( --kendo-font-size-lg, inherit ) ) !default;
 /// Тhe font family of the Card header.
 /// @group card
-$kendo-card-header-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-card-header-font-family: var( --kendo-card-header-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// The line height of the Card header.
 /// @group card
-$kendo-card-header-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-card-header-line-height: var( --kendo-card-header-line-height, var( --kendo-line-height, normal ) ) !default;
 /// The horizontal padding of the Card header.
 /// @group card
-$kendo-card-header-padding-x: k-spacing(3) !default;
+$kendo-card-header-padding-x: var( --kendo-card-header-padding-x, k-spacing(3) ) !default;
 /// The vertical padding of the Card header.
 /// @group card
-$kendo-card-header-padding-y: k-spacing(3) !default;
+$kendo-card-header-padding-y: var( --kendo-card-header-padding-y, k-spacing(3) ) !default;
 /// The bottom border width of the Card header.
 /// @group card
-$kendo-card-header-border-width: 0 !default;
+$kendo-card-header-border-width: var( --kendo-card-header-border-width, 0 ) !default;
 /// The background color of the Card header.
 /// @group card
-$kendo-card-header-bg: inherit !default;
+$kendo-card-header-bg: var( --kendo-card-header-bg, inherit ) !default;
 /// The text color of the Card header.
 /// @group card
-$kendo-card-header-text: k-color(on-app-surface) !default; // header-text
+$kendo-card-header-text: var( --kendo-card-header-text, k-color(on-app-surface) ) !default; // header-text
 /// The border color of the Card header.
 /// @group card
-$kendo-card-header-border: inherit !default; // header-border
+$kendo-card-header-border: var( --kendo-card-header-border, inherit ) !default; // header-border
 
 /// The horizontal padding of the Card body.
 /// @group card
-$kendo-card-body-padding-x: k-spacing(3) !default;
+$kendo-card-body-padding-x: var( --kendo-card-body-padding-x, k-spacing(3) ) !default;
 /// The vertical padding of the Card body.
 /// @group card
-$kendo-card-body-padding-y: k-spacing(3) !default;
+$kendo-card-body-padding-y: var( --kendo-card-body-padding-y, k-spacing(3) ) !default;
 
 /// The horizontal padding of the Card footer.
 /// @group card
@@ -100,47 +100,47 @@ $kendo-card-footer-padding-x: $kendo-card-padding-x !default;
 $kendo-card-footer-padding-y: $kendo-card-padding-y !default;
 /// The top border width of the Card footer.
 /// @group card
-$kendo-card-footer-border-width: 0 !default;
+$kendo-card-footer-border-width: var( --kendo-card-footer-border-width, 0 ) !default;
 /// The background color of the Card footer.
 /// @group card
-$kendo-card-footer-bg: inherit !default;
+$kendo-card-footer-bg: var( --kendo-card-footer-bg, inherit ) !default;
 /// The text color of the Card footer.
 /// @group card
-$kendo-card-footer-text: inherit !default; // $kendo-component-header-text
+$kendo-card-footer-text: var( --kendo-card-footer-text, inherit ) !default; // $kendo-component-header-text
 /// The border color of the Card footer.
 /// @group card
-$kendo-card-footer-border: inherit !default; // $kendo-component-header-border
+$kendo-card-footer-border: var( --kendo-card-footer-border, inherit ) !default; // $kendo-component-header-border
 
 /// The font size of the Card title.
 /// @group card
-$kendo-card-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-card-title-font-size: var( --kendo-card-title-font-size, var( --kendo-font-size-lg, inherit ) ) !default;
 /// The font family of the Card title.
 /// @group card
-$kendo-card-title-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-card-title-font-family: var( --kendo-card-title-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// The font weight of the Card title.
 /// @group card
-$kendo-card-title-font-weight: var( --kendo-font-weight, initial ) !default;
+$kendo-card-title-font-weight: var( --kendo-card-title-font-weight, var( --kendo-font-weight, initial ) ) !default;
 /// The line height of the Card title.
 /// @group card
-$kendo-card-title-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-card-title-line-height: var( --kendo-card-title-line-height, var( --kendo-line-height, normal ) ) !default;
 /// The bottom margin of the Card title.
 /// @group card
-$kendo-card-title-margin-bottom: k-spacing(3) !default;
+$kendo-card-title-margin-bottom: var( --kendo-card-title-margin-bottom, k-spacing(3) ) !default;
 /// The font size of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-card-subtitle-font-size: var( --kendo-card-subtitle-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
 /// The font family of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-card-subtitle-font-family: var( --kendo-card-subtitle-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// The line height of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-card-subtitle-line-height: var( --kendo-card-subtitle-line-height, var( --kendo-line-height, normal ) ) !default;
 /// The bottom margin of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-margin-bottom: k-spacing(3) !default;
+$kendo-card-subtitle-margin-bottom: var( --kendo-card-subtitle-margin-bottom, k-spacing(3) ) !default;
 /// The text color of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-text: k-color(subtle) !default;
+$kendo-card-subtitle-text: var( --kendo-card-subtitle-text, k-color(subtle) ) !default;
 
 /// The maximum width of the Card image.
 /// @group card
@@ -154,44 +154,94 @@ $kendo-card-avatar-spacing: $kendo-card-header-padding-x !default;
 
 /// The horizontal padding of the Card actions.
 /// @group card
-$kendo-card-actions-padding-x: k-spacing(3) !default;
+$kendo-card-actions-padding-x: var( --kendo-card-actions-padding-x, k-spacing(3) ) !default;
 /// The vertical padding of the Card actions.
 /// @group card
-$kendo-card-actions-padding-y: k-spacing(3) !default;
+$kendo-card-actions-padding-y: var( --kendo-card-actions-padding-y, k-spacing(3) ) !default;
 /// The top border width of the Card actions.
 /// @group card
-$kendo-card-actions-border-width: 0 !default;
+$kendo-card-actions-border-width: var( --kendo-card-actions-border-width, 0 ) !default;
 /// The spacing between the Card actions.
 /// @group card
-$kendo-card-actions-gap: k-spacing(2) !default;
+$kendo-card-actions-gap: var( --kendo-card-actions-gap, k-spacing(2) ) !default;
 
 /// The border radius of the scroll button in the Card deck.
 /// @group card
 $kendo-card-deck-scroll-button-radius: 0 !default;
 /// The border radius of the scroll button in the Card deck.
 /// @group card
-$kendo-card-deck-scroll-button-offset: ( -1 * $kendo-button-border-width ) !default;
+$kendo-card-deck-scroll-button-offset: calc( -1 * #{$kendo-button-border-width} ) !default;
 
 /// The size of the Card callout.
 /// @group card
 $kendo-card-callout-size: 20px !default;
 
-/// Theme variations for the card.
-$kendo-card-brand-colors: ( primary, error, warning, success, info ) !default;
-
-// Matrix with card theme colors in the order: bg, color, border
-$_tc-card-matrix: (
-    (normal: (color-subtle, color-on-subtle, color-subtle)),
+/// Theme colors map for the card variations.
+$kendo-card-theme-colors: (
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
 ) !default;
 
-/// Theme colors map for the card variations.
-$kendo-card-theme-colors: () !default;
-
-@each $ui-states in $_tc-card-matrix {
-    @each $brand-color in $kendo-card-brand-colors {
-        $kendo-card-theme-colors: map.deep-merge(
-            $kendo-card-theme-colors,
-            k-generate-theme-variation( $brand-color, $brand-color, $ui-states )
-        );
-    };
-}
+@forward "@progress/kendo-theme-core/scss/components/card/_variables.scss" with (
+    $kendo-card-padding-x: $kendo-card-padding-x,
+    $kendo-card-padding-y: $kendo-card-padding-y,
+    $kendo-card-border-width: $kendo-card-border-width,
+    $kendo-card-border-radius: $kendo-card-border-radius,
+    $kendo-card-inner-border-radius: $kendo-card-inner-border-radius,
+    $kendo-card-font-family: $kendo-card-font-family,
+    $kendo-card-font-size: $kendo-card-font-size,
+    $kendo-card-line-height: $kendo-card-line-height,
+    $kendo-card-deck-gap: $kendo-card-deck-gap,
+    $kendo-card-bg: $kendo-card-bg,
+    $kendo-card-text: $kendo-card-text,
+    $kendo-card-border: $kendo-card-border,
+    $kendo-card-shadow: $kendo-card-shadow,
+    $kendo-card-focus-bg: $kendo-card-focus-bg,
+    $kendo-card-focus-text: $kendo-card-focus-text,
+    $kendo-card-focus-border: $kendo-card-focus-border,
+    $kendo-card-focus-shadow: $kendo-card-focus-shadow,
+    $kendo-card-header-padding-x: $kendo-card-header-padding-x,
+    $kendo-card-header-padding-y: $kendo-card-header-padding-y,
+    $kendo-card-header-border-width: $kendo-card-header-border-width,
+    $kendo-card-header-bg: $kendo-card-header-bg,
+    $kendo-card-header-text: $kendo-card-header-text,
+    $kendo-card-header-border: $kendo-card-header-border,
+    $kendo-card-body-padding-x: $kendo-card-body-padding-x,
+    $kendo-card-body-padding-y: $kendo-card-body-padding-y,
+    $kendo-card-footer-padding-x: $kendo-card-footer-padding-x,
+    $kendo-card-footer-padding-y: $kendo-card-footer-padding-y,
+    $kendo-card-footer-border-width: $kendo-card-footer-border-width,
+    $kendo-card-footer-bg: $kendo-card-footer-bg,
+    $kendo-card-footer-text: $kendo-card-footer-text,
+    $kendo-card-footer-border: $kendo-card-footer-border,
+    $kendo-card-title-margin-bottom: $kendo-card-title-margin-bottom,
+    $kendo-card-title-font-size: $kendo-card-title-font-size,
+    $kendo-card-title-font-family: $kendo-card-title-font-family,
+    $kendo-card-title-line-height: $kendo-card-title-line-height,
+    $kendo-card-title-font-weight: $kendo-card-title-font-weight,
+    $kendo-card-subtitle-margin-bottom: $kendo-card-subtitle-margin-bottom,
+    $kendo-card-subtitle-font-size: $kendo-card-subtitle-font-size,
+    $kendo-card-subtitle-font-family: $kendo-card-subtitle-font-family,
+    $kendo-card-subtitle-line-height: $kendo-card-subtitle-line-height,
+    $kendo-card-subtitle-text: $kendo-card-subtitle-text,
+    $kendo-card-img-max-width: $kendo-card-img-max-width,
+    $kendo-card-avatar-size: $kendo-card-avatar-size,
+    $kendo-card-avatar-spacing: $kendo-card-avatar-spacing,
+    $kendo-card-actions-padding-x: $kendo-card-actions-padding-x,
+    $kendo-card-actions-padding-y: $kendo-card-actions-padding-y,
+    $kendo-card-actions-border-width: $kendo-card-actions-border-width,
+    $kendo-card-actions-gap: $kendo-card-actions-gap,
+    $kendo-card-deck-scroll-button-radius: $kendo-card-deck-scroll-button-radius,
+    $kendo-card-deck-scroll-button-offset: $kendo-card-deck-scroll-button-offset,
+    $kendo-card-callout-width: $kendo-card-callout-size,
+    $kendo-card-callout-height: $kendo-card-callout-size,
+    $kendo-card-theme-colors: $kendo-card-theme-colors
+);

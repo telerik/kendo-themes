@@ -5,73 +5,91 @@
 
 /// The font size of the Map.
 /// @group map
-$kendo-map-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-map-font-size: var( --kendo-map-font-size, var( --kendo-font-size, inherit ) ) !default;
 /// The line height of the Map.
 /// @group map
-$kendo-map-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-map-line-height: var( --kendo-map-line-height, var( --kendo-line-height, normal ) ) !default;
 /// The font family of the Map.
 /// @group map
-$kendo-map-font-family: var( --kendo-font-family, normal ) !default;
+$kendo-map-font-family: var( --kendo-map-font-family, var( --kendo-font-family, normal ) ) !default;
 
 /// The background color of the Map.
 /// @group map
-$kendo-map-bg: k-color(surface-alt) !default;
+$kendo-map-bg: var( --kendo-map-bg, k-color(surface-alt) ) !default;
 /// The text color of the Map.
 /// @group map
-$kendo-map-text: k-color(on-app-surface) !default;
+$kendo-map-text: var( --kendo-map-text, k-color(on-app-surface) ) !default;
 /// The border color of the Map.
 /// @group map
-$kendo-map-border: k-color(border) !default;
+$kendo-map-border: var( --kendo-map-border, k-color(border) ) !default;
 
 /// The border width of the Map.
 /// @group map
-$kendo-map-border-width: 0px !default;
+$kendo-map-border-width: var( --kendo-map-border-width, 0px ) !default;
 /// The height of the Map.
 /// @group map
-$kendo-map-height: 600px !default;
+$kendo-map-height: var( --kendo-map-height, 600px ) !default;
 
 /// The horizontal margin of the Map navigator.
 /// @group map
-$kendo-map-navigator-margin-x: k-spacing(4) !default;
+$kendo-map-navigator-margin-x: var( --kendo-map-navigator-margin-x, k-spacing(4) ) !default;
 /// The vertical margin of the Map navigator.
 /// @group map
-$kendo-map-navigator-margin-y: k-spacing(4) !default;
+$kendo-map-navigator-margin-y: var( --kendo-map-navigator-margin-y, k-spacing(4) ) !default;
 /// The padding of the Map navigator.
 /// @group map
-$kendo-map-navigator-padding: k-spacing(0.5) !default;
+$kendo-map-navigator-padding: var( --kendo-map-navigator-padding, k-spacing(0.5) ) !default;
 /// The width of the Map navigator.
 /// @group map
-$kendo-map-navigator-width: calc( var( --kendo-icon-size, 1rem) * 3 + calc( #{$kendo-map-navigator-padding} * 2) ) !default;
+$kendo-map-navigator-width: var( --kendo-map-navigator-width, calc( var( --kendo-icon-size, 1rem) * 3 + calc( #{$kendo-map-navigator-padding} * 2) ) ) !default;
 /// The border width of the Map navigator.
 /// @group map
-$kendo-map-navigator-border-width: 1px !default;
+$kendo-map-navigator-border-width: var( --kendo-map-navigator-border-width, 1px ) !default;
 /// The background color of the Map navigator.
 /// @group map
-$kendo-map-navigator-bg: k-color(app-surface) !default;
+$kendo-map-navigator-bg: var( --kendo-map-navigator-bg, k-color(app-surface) ) !default;
 /// The text color of the Map navigator.
 /// @group map
-$kendo-map-navigator-text: k-color(on-app-surface) !default;
+$kendo-map-navigator-text: var( --kendo-map-navigator-text, k-color(on-app-surface) ) !default;
 /// The border color of the Map navigator.
 /// @group map
-$kendo-map-navigator-border: k-color(border) !default;
+$kendo-map-navigator-border: var( --kendo-map-navigator-border, k-color(border) ) !default;
 
 /// The margin of the Map zoom control.
 /// @group map
-$kendo-map-zoom-control-margin: k-spacing(4) !default;
+$kendo-map-zoom-control-margin: var( --kendo-map-zoom-control-margin, k-spacing(4) ) !default;
 
 /// The horizontal padding of the Map attribution.
 /// @group map
-$kendo-map-attribution-padding-x: k-spacing(1) !default;
+$kendo-map-attribution-padding-x: var( --kendo-map-attribution-padding-x, k-spacing(1) ) !default;
 /// The vertical padding of the Map attribution.
 /// @group map
-$kendo-map-attribution-padding-y: k-spacing(0.5) !default;
+$kendo-map-attribution-padding-y: var( --kendo-map-attribution-padding-y, k-spacing(0.5) ) !default;
 /// The font size of the Map attribution.
 /// @group map
-$kendo-map-attribution-font-size: calc( #{$kendo-map-font-size} * .75 ) !default;
+$kendo-map-attribution-font-size: var( --kendo-map-attribution-font-size, calc( #{$kendo-map-font-size} * .75 ) ) !default;
 /// The background color of the Map attribution.
 /// @group map
-$kendo-map-attribution-bg: k-color(app-surface) !default;
+$kendo-map-attribution-bg: var( --kendo-map-attribution-bg, k-color(app-surface) ) !default;
 
 /// The fill color of the Map marker.
 /// @group map
-$kendo-map-marker-fill: k-color(primary) !default;
+$kendo-map-marker-fill: var( --kendo-map-marker-fill, k-color(primary) ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/map/_variables.scss" with (
+    $kendo-map-border-width: $kendo-map-border-width,
+    $kendo-map-font-size: $kendo-map-font-size,
+    $kendo-map-line-height: $kendo-map-line-height,
+    $kendo-map-font-family: $kendo-map-font-family,
+    $kendo-map-bg: $kendo-map-bg,
+    $kendo-map-text: $kendo-map-text,
+    $kendo-map-border: $kendo-map-border,
+    $kendo-map-navigator-padding: $kendo-map-navigator-padding,
+    $kendo-map-navigator-width: $kendo-map-navigator-width,
+    $kendo-map-navigator-border-width: $kendo-map-navigator-border-width,
+    $kendo-map-attribution-padding-x: $kendo-map-attribution-padding-x,
+    $kendo-map-attribution-padding-y: $kendo-map-attribution-padding-y,
+    $kendo-map-attribution-font-size: $kendo-map-attribution-font-size,
+    $kendo-map-attribution-bg: $kendo-map-attribution-bg,
+    $kendo-map-marker-fill: $kendo-map-marker-fill
+);

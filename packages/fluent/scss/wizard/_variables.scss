@@ -3,13 +3,13 @@
 
 /// The border width of the Wizard.
 /// @group wizard
-$kendo-wizard-border-width: 0px !default;
+$kendo-wizard-border-width: var( --kendo-wizard-border-width, 0px ) !default;
 /// The horizontal padding of the Wizard.
 /// @group wizard
-$kendo-wizard-padding-x: k-spacing(6) !default;
+$kendo-wizard-padding-x: var( --kendo-wizard-padding-x, k-spacing(6) ) !default;
 /// The vertical padding of the Wizard.
 /// @group wizard
-$kendo-wizard-padding-y: k-spacing(6) !default;
+$kendo-wizard-padding-y: var( --kendo-wizard-padding-y, k-spacing(6) ) !default;
 /// The font size of the Wizard.
 /// @group wizard
 $kendo-wizard-font-size: var( --kendo-font-size, inherit ) !default;
@@ -23,28 +23,41 @@ $kendo-wizard-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The horizontal padding of the Wizard steps.
 /// @group wizard
-$kendo-wizard-steps-padding-x: k-spacing(3) !default;
+$kendo-wizard-steps-padding-x: var( --kendo-wizard-steps-padding-x, k-spacing(3) ) !default;
 
 /// The horizontal padding of the Wizard content.
 /// @group wizard
-$kendo-wizard-content-padding-x: k-spacing(0) !default;
+$kendo-wizard-content-padding-x: var( --kendo-wizard-content-padding-x, k-spacing(0) ) !default;
 /// The vertical padding of the Wizard content.
 /// @group wizard
-$kendo-wizard-content-padding-y: k-spacing(0) !default;
+$kendo-wizard-content-padding-y: var( --kendo-wizard-content-padding-y, k-spacing(0) ) !default;
 /// The text color of the Wizard content.
 /// @group wizard
-$kendo-wizard-content-text: k-color(on-app-surface) !default;
+$kendo-wizard-content-text: var( --kendo-wizard-content-text, k-color(on-app-surface) ) !default;
 /// The background color of the Wizard content.
 /// @group wizard
-$kendo-wizard-content-bg: k-color(surface-alt) !default;
+$kendo-wizard-content-bg: var( --kendo-wizard-content-bg, k-color(surface-alt) ) !default;
 
 /// The horizontal margin of the Wizard's Button container.
 /// @group wizard
-$kendo-wizard-buttons-margin-x: k-spacing(7) !default;
+$kendo-wizard-buttons-margin-x: var( --kendo-wizard-buttons-margin-x, k-spacing(7) ) !default;
 /// The vertical margin of the Wizard Button container.
 /// @group wizard
-$kendo-wizard-buttons-margin-y: k-spacing(6) !default;
+$kendo-wizard-buttons-margin-y: var( --kendo-wizard-buttons-margin-y, k-spacing(6) ) !default;
 
 /// The outline of the focused Wizard step.
 /// @group wizard
-$kendo-wizard-step-focus-border: k-color(base-emphasis) !default;
+$kendo-wizard-step-focus-border: var( --kendo-wizard-step-focus-border, k-color(base-emphasis) ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/wizard/_variables.scss" with (
+    $kendo-wizard-padding-x: $kendo-wizard-padding-x,
+    $kendo-wizard-padding-y: $kendo-wizard-padding-y,
+    $kendo-wizard-content-padding-x: $kendo-wizard-content-padding-x,
+    $kendo-wizard-content-padding-y: $kendo-wizard-content-padding-y,
+    $kendo-wizard-buttons-margin-x: $kendo-wizard-buttons-margin-x,
+    $kendo-wizard-border-width: $kendo-wizard-border-width,
+    $kendo-wizard-font-size: $kendo-wizard-font-size,
+    $kendo-wizard-line-height: $kendo-wizard-line-height,
+    $kendo-wizard-font-family: $kendo-wizard-font-family,
+    $kendo-wizard-step-focus-border: $kendo-wizard-step-focus-border
+);

@@ -4,42 +4,36 @@
 
 /// The width of the table border.
 /// @group table
-$kendo-table-border-width: 1px !default;
+$kendo-table-border-width: var( --kendo-table-border-width, 1px ) !default;
 
 /// The width of vertical border of table cells.
 /// @group table
-$kendo-table-cell-vertical-border-width: 0px !default;
+$kendo-table-cell-vertical-border-width: var( --kendo-table-cell-vertical-border-width, 0px ) !default;
 /// The width of horizontal border of table cells.
 /// @group table
-$kendo-table-cell-horizontal-border-width: 1px !default;
-/// The horizontal padding of the cells in the table if no size is specified.
+$kendo-table-cell-horizontal-border-width: var( --kendo-table-cell-horizontal-border-width, 1px ) !default;
+/// The horizontal padding of the cells in the table for small size.
 /// @group table
-$kendo-table-cell-padding-x: k-spacing(3) !default;
-/// The vertical padding of the cells in the table if no size is specified.
+$kendo-table-sm-cell-padding-x: var( --kendo-table-sm-cell-padding-x, #{k-spacing(3)} ) !default;
+/// The vertical padding of the cells in the table for small size.
 /// @group table
-$kendo-table-cell-padding-y: k-spacing(3) !default;
-
-$kendo-table-sm-cell-padding-x: k-spacing(3) !default;
-$kendo-table-sm-cell-padding-y: k-spacing(1.5) !default;
-
-$kendo-table-md-cell-padding-x: $kendo-table-cell-padding-x !default;
-$kendo-table-md-cell-padding-y: $kendo-table-cell-padding-y !default;
-
-$kendo-table-lg-cell-padding-x: k-spacing(3) !default;
-$kendo-table-lg-cell-padding-y: k-spacing(3.5) !default;
-
-$kendo-table-sm-cell-padding-x: k-spacing(3) !default;
-$kendo-table-sm-cell-padding-y: k-spacing(1.5) !default;
-
-$kendo-table-md-cell-padding-x: $kendo-table-cell-padding-x !default;
-$kendo-table-md-cell-padding-y: $kendo-table-cell-padding-y !default;
-
-$kendo-table-lg-cell-padding-x: k-spacing(3) !default;
-$kendo-table-lg-cell-padding-y: k-spacing(3.5) !default;
+$kendo-table-sm-cell-padding-y: var( --kendo-table-sm-cell-padding-y, #{k-spacing(1.5)} ) !default;
+/// The horizontal padding of the cells in the table for medium size.
+/// @group table
+$kendo-table-md-cell-padding-x: var( --kendo-table-md-cell-padding-x, #{k-spacing(3)} ) !default;
+/// The vertical padding of the cells in the table for medium size.
+/// @group table
+$kendo-table-md-cell-padding-y: var( --kendo-table-md-cell-padding-y, #{k-spacing(3)} ) !default;
+/// The horizontal padding of the cells in the table for large size.
+/// @group table
+$kendo-table-lg-cell-padding-x: var( --kendo-table-lg-cell-padding-x, #{k-spacing(3)} ) !default;
+/// The vertical padding of the cells in the table for large size.
+/// @group table
+$kendo-table-lg-cell-padding-y: var( --kendo-table-lg-cell-padding-y, #{k-spacing(3.5)} ) !default;
 
 /// Font weight of the table header cells.
 /// @group table
-$kendo-table-header-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+$kendo-table-header-font-weight: var( --kendo-table-header-font-weight, var( --kendo-font-weight-bold, normal ) ) !default;
 
 /// The sizes of the table.
 /// @group table
@@ -75,128 +69,170 @@ $kendo-table-sizes: (
 
 /// Background color of tables.
 /// @group table
-$kendo-table-bg: k-color(surface-alt) !default;
+$kendo-table-bg: var( --kendo-table-bg, #{k-color(surface-alt)} ) !default;
 /// Text color of tables.
 /// @group table
-$kendo-table-text: k-color(on-app-surface) !default;
+$kendo-table-text: var( --kendo-table-text, #{k-color(on-app-surface)} ) !default;
 /// Border color of tables.
 /// @group table
-$kendo-table-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-table-border: var( --kendo-table-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 
 /// Background color of table headers.
 /// @group table
-$kendo-table-header-bg: $kendo-table-bg !default;
+$kendo-table-header-bg: var( --kendo-table-header-bg, #{$kendo-table-bg} ) !default;
 /// Text color of table headers.
 /// @group table
-$kendo-table-header-text: k-color(on-app-surface) !default;
+$kendo-table-header-text: var( --kendo-table-header-text, #{k-color(on-app-surface)} ) !default;
 /// Border color of table headers.
 /// @group table
-$kendo-table-header-border: $kendo-table-border !default;
+$kendo-table-header-border: var( --kendo-table-header-border, #{$kendo-table-border} ) !default;
 
 /// Text color of the sticky table header.
 /// @group table
-$kendo-table-sticky-header-text: $kendo-list-header-text !default;
+$kendo-table-sticky-header-text: var( --kendo-table-sticky-header-text, #{$kendo-list-header-text} ) !default;
 /// Background color of the sticky table header.
 /// @group table
-$kendo-table-sticky-header-bg: $kendo-list-header-bg !default;
+$kendo-table-sticky-header-bg: var( --kendo-table-sticky-header-bg, #{$kendo-list-header-bg} ) !default;
 /// Border color of the sticky table header.
 /// @group table
-$kendo-table-sticky-header-border: $kendo-list-header-border !default;
+$kendo-table-sticky-header-border: var( --kendo-table-sticky-header-border, #{$kendo-list-header-border} ) !default;
 /// Shadow of the sticky table header.
 /// @group table
-$kendo-table-sticky-header-shadow: $kendo-list-header-shadow !default;
+$kendo-table-sticky-header-shadow: var( --kendo-table-sticky-header-shadow, #{$kendo-list-header-shadow} ) !default;
 
 /// Background color of table footers.
 /// @group table
-$kendo-table-footer-bg: $kendo-table-header-bg !default;
+$kendo-table-footer-bg: var( --kendo-table-footer-bg, #{$kendo-table-header-bg} ) !default;
 /// Text color of table footers.
 /// @group table
-$kendo-table-footer-text: $kendo-table-header-text !default;
+$kendo-table-footer-text: var( --kendo-table-footer-text, #{$kendo-table-header-text} ) !default;
 /// Border color of table footers.
 /// @group table
-$kendo-table-footer-border: $kendo-table-header-border !default;
+$kendo-table-footer-border: var( --kendo-table-footer-border, #{$kendo-table-header-border} ) !default;
 
 /// Background color of group rows in table.
 /// @group table
-$kendo-table-group-row-bg: $kendo-table-header-bg !default;
+$kendo-table-group-row-bg: var( --kendo-table-group-row-bg, #{$kendo-table-header-bg} ) !default;
 /// Text color of group rows in table.
 /// @group table
-$kendo-table-group-row-text: $kendo-table-header-text !default;
+$kendo-table-group-row-text: var( --kendo-table-group-row-text, #{$kendo-table-header-text} ) !default;
 /// Border color of group rows in table.
 /// @group table
-$kendo-table-group-row-border: $kendo-table-header-border !default;
+$kendo-table-group-row-border: var( --kendo-table-group-row-border, #{$kendo-table-header-border} ) !default;
 
 /// Text color of group label in table.
 /// @group table
-$kendo-table-group-label-text: $kendo-list-bg !default;
+$kendo-table-group-label-text: var( --kendo-table-group-label-text, #{$kendo-list-bg} ) !default;
 /// Background color of group label in table.
 /// @group table
-$kendo-table-group-label-bg: $kendo-list-text !default;
+$kendo-table-group-label-bg: var( --kendo-table-group-label-bg, #{$kendo-list-text} ) !default;
 
 /// Background color of alternating rows in table.
 /// @group table
-$kendo-table-alt-row-bg: initial !default;
+$kendo-table-alt-row-bg: var( --kendo-table-alt-row-bg, initial ) !default;
 /// Text color of alternating rows in table.
 /// @group table
-$kendo-table-alt-row-text: $kendo-table-text !default;
+$kendo-table-alt-row-text: var( --kendo-table-alt-row-text, #{$kendo-table-text} ) !default;
 /// Border color of alternating rows in table.
 /// @group table
-$kendo-table-alt-row-border: $kendo-table-border !default;
+$kendo-table-alt-row-border: var( --kendo-table-alt-row-border, #{$kendo-table-border} ) !default;
 
 /// Background color of hovered rows in table.
 /// @group table
-$kendo-table-hover-bg: k-color(base-hover) !default;
+$kendo-table-hover-bg: var( --kendo-table-hover-bg, #{k-color(base-hover)} ) !default;
 /// Text color of hovered rows in table.
 /// @group table
-$kendo-table-hover-text: k-color(on-base) !default;
+$kendo-table-hover-text: var( --kendo-table-hover-text, #{k-color(on-base)} ) !default;
 /// Border color of hovered rows in table.
 /// @group table
-$kendo-table-hover-border: $kendo-table-border !default;
+$kendo-table-hover-border: var( --kendo-table-hover-border, #{$kendo-table-border} ) !default;
 
 /// Background color of focused rows in table.
 /// @group table
-$kendo-table-focus-bg: inherit !default;
+$kendo-table-focus-bg: var( --kendo-table-focus-bg, inherit ) !default;
 /// Text color of focused rows in table.
 /// @group table
-$kendo-table-focus-text: inherit !default;
+$kendo-table-focus-text: var( --kendo-table-focus-text, inherit ) !default;
 /// Border color of focused rows in table.
 /// @group table
-$kendo-table-focus-border: inherit !default;
+$kendo-table-focus-border: var( --kendo-table-focus-border, inherit ) !default;
 /// Box shadow of focused rows in table.
 /// @group table
-$kendo-table-focus-shadow: $kendo-list-item-focus-shadow !default;
+$kendo-table-focus-shadow: var( --kendo-table-focus-shadow, #{$kendo-list-item-focus-shadow} ) !default;
 
 /// Background color of selected rows in table.
 /// @group table
-$kendo-table-selected-bg: color-mix(in srgb, k-color(primary) 13%, transparent) !default;
+$kendo-table-selected-bg: var( --kendo-table-selected-bg, #{color-mix(in srgb, k-color(primary) 13%, transparent)} ) !default;
 /// Text color of selected rows in table.
 /// @group table
-$kendo-table-selected-text: $kendo-table-text !default;
+$kendo-table-selected-text: var( --kendo-table-selected-text, #{$kendo-table-text} ) !default;
 /// Border color of selected rows in table.
 /// @group table
-$kendo-table-selected-border: $kendo-table-border !default;
+$kendo-table-selected-border: var( --kendo-table-selected-border, #{$kendo-table-border} ) !default;
 
 /// Background color of highlighted rows in table.
 /// @group table
-$kendo-table-highlighted-bg: color-mix(in srgb, k-color(warning) 13%, transparent) !default;
+$kendo-table-highlighted-bg: var( --kendo-table-highlighted-bg, #{color-mix(in srgb, k-color(warning) 13%, transparent)} ) !default;
 /// The font weight of highlighted rows in table.
 /// @group table
-$kendo-table-highlighted-font-weight: var( --kendo-font-weight-semibold, bold ) !default;
+$kendo-table-highlighted-font-weight: var( --kendo-table-highlighted-font-weight, var( --kendo-font-weight-semibold, bold ) ) !default;
 
 /// Background color of selected highlighted rows in table.
 /// @group table
-$kendo-table-selected-highlighted-bg: color-mix(in srgb, color-mix(in srgb, k-color(primary), k-color(warning)) 23%, transparent) !default;
+$kendo-table-selected-highlighted-bg: var( --kendo-table-selected-highlighted-bg, #{color-mix(in srgb, color-mix(in srgb, k-color(primary), k-color(warning)) 23%, transparent)} ) !default;
 
 /// Hover background color of selected rows in table.
 /// @group table
-$kendo-table-selected-hover-bg: color-mix(in srgb, k-color(primary) 26%, transparent) !default;
+$kendo-table-selected-hover-bg: var( --kendo-table-selected-hover-bg, #{color-mix(in srgb, k-color(primary) 26%, transparent)} ) !default;
 /// Hover text color of selected rows in table.
 /// @group table
-$kendo-table-selected-hover-text: $kendo-table-selected-text !default;
+$kendo-table-selected-hover-text: var( --kendo-table-selected-hover-text, #{$kendo-table-selected-text} ) !default;
 /// Hover border color of selected rows in table.
 /// @group table
-$kendo-table-selected-hover-border: $kendo-table-selected-border !default;
+$kendo-table-selected-hover-border: var( --kendo-table-selected-hover-border, #{$kendo-table-selected-border} ) !default;
 
 /// The box shadow of the row spanned cells.
 /// @group table
-$kendo-table-cell-row-span-shadow: inset 0 0 0 1px $kendo-table-border !default;
+$kendo-table-cell-row-span-shadow: var( --kendo-table-cell-row-span-shadow, inset 0 0 0 1px #{$kendo-table-border} ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/table/_variables.scss" with (
+    $kendo-table-border-width: $kendo-table-border-width,
+    $kendo-table-cell-vertical-border-width: $kendo-table-cell-vertical-border-width,
+    $kendo-table-cell-horizontal-border-width: $kendo-table-cell-horizontal-border-width,
+    $kendo-table-sm-cell-padding-x: $kendo-table-sm-cell-padding-x,
+    $kendo-table-sm-cell-padding-y: $kendo-table-sm-cell-padding-y,
+    $kendo-table-md-cell-padding-x: $kendo-table-md-cell-padding-x,
+    $kendo-table-md-cell-padding-y: $kendo-table-md-cell-padding-y,
+    $kendo-table-lg-cell-padding-x: $kendo-table-lg-cell-padding-x,
+    $kendo-table-lg-cell-padding-y: $kendo-table-lg-cell-padding-y,
+    $kendo-table-sizes: $kendo-table-sizes,
+    $kendo-table-bg: $kendo-table-bg,
+    $kendo-table-text: $kendo-table-text,
+    $kendo-table-border: $kendo-table-border,
+    $kendo-table-header-bg: $kendo-table-header-bg,
+    $kendo-table-header-text: $kendo-table-header-text,
+    $kendo-table-header-border: $kendo-table-header-border,
+    $kendo-table-footer-bg: $kendo-table-footer-bg,
+    $kendo-table-footer-text: $kendo-table-footer-text,
+    $kendo-table-footer-border: $kendo-table-footer-border,
+    $kendo-table-group-row-bg: $kendo-table-group-row-bg,
+    $kendo-table-group-row-text: $kendo-table-group-row-text,
+    $kendo-table-group-row-border: $kendo-table-group-row-border,
+    $kendo-table-alt-row-bg: $kendo-table-alt-row-bg,
+    $kendo-table-alt-row-text: $kendo-table-alt-row-text,
+    $kendo-table-alt-row-border: $kendo-table-alt-row-border,
+    $kendo-table-hover-bg: $kendo-table-hover-bg,
+    $kendo-table-hover-text: $kendo-table-hover-text,
+    $kendo-table-hover-border: $kendo-table-hover-border,
+    $kendo-table-focus-bg: $kendo-table-focus-bg,
+    $kendo-table-focus-text: $kendo-table-focus-text,
+    $kendo-table-focus-border: $kendo-table-focus-border,
+    $kendo-table-focus-shadow: $kendo-table-focus-shadow,
+    $kendo-table-selected-bg: $kendo-table-selected-bg,
+    $kendo-table-selected-text: $kendo-table-selected-text,
+    $kendo-table-selected-border: $kendo-table-selected-border,
+    $kendo-table-highlighted-bg: $kendo-table-highlighted-bg,
+    $kendo-table-highlighted-font-weight: $kendo-table-highlighted-font-weight,
+    $kendo-table-selected-highlighted-bg: $kendo-table-selected-highlighted-bg,
+    $kendo-table-cell-row-span-shadow: $kendo-table-cell-row-span-shadow
+);

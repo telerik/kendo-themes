@@ -5,28 +5,39 @@
 
 /// The width of the border around the TileLayout.
 /// @group tile-layout
-$kendo-tile-layout-border-width: 0px !default;
+$kendo-tile-layout-border-width: var( --kendo-tile-layout-border-width, 0px ) !default;
 /// The background color of the TileLayout.
 /// @group tile-layout
-$kendo-tile-layout-bg: k-color(surface) !default;
+$kendo-tile-layout-bg: var( --kendo-tile-layout-bg, #{k-color(surface)} ) !default;
 
 /// The horizontal padding of the TileLayout.
 /// @group tile-layout
-$kendo-tile-layout-padding-x: k-spacing(4) !default;
+$kendo-tile-layout-padding-x: var( --kendo-tile-layout-padding-x, #{k-spacing(4)} ) !default;
 
 /// The vertical padding of the TileLayout
 /// @group tile-layout
-$kendo-tile-layout-padding-y: $kendo-tile-layout-padding-x !default;
+$kendo-tile-layout-padding-y: var( --kendo-tile-layout-padding-y, #{$kendo-tile-layout-padding-x} ) !default;
 
 /// The width of the border around the TileLayout hint.
 /// @group tile-layout
-$kendo-tile-layout-hint-border-width: 1px !default;
+$kendo-tile-layout-hint-border-width: var( --kendo-tile-layout-hint-border-width, 1px ) !default;
 /// The radius of the border around the TileLayout hint.
 /// @group tile-layout
-$kendo-tile-layout-hint-border-radius: var( --kendo-border-radius-lg, initial ) !default;
+$kendo-tile-layout-hint-border-radius: var( --kendo-tile-layout-hint-border-radius, var( --kendo-border-radius-lg, initial ) ) !default;
 /// The color of the border around the TileLayout hint.
 /// @group tile-layout
-$kendo-tile-layout-hint-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-tile-layout-hint-border: var( --kendo-tile-layout-hint-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 /// The background color of the TileLayout hint.
 /// @group tile-layout
-$kendo-tile-layout-hint-bg: rgba(255, 255, 255, .2) !default;
+$kendo-tile-layout-hint-bg: var( --kendo-tile-layout-hint-bg, rgba(255, 255, 255, .2) ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/tilelayout/_variables.scss" with (
+    $kendo-tile-layout-border-width: $kendo-tile-layout-border-width,
+    $kendo-tile-layout-bg: $kendo-tile-layout-bg,
+    $kendo-tile-layout-padding-x: $kendo-tile-layout-padding-x,
+    $kendo-tile-layout-padding-y: $kendo-tile-layout-padding-y,
+    $kendo-tile-layout-hint-border-width: $kendo-tile-layout-hint-border-width,
+    $kendo-tile-layout-hint-border-radius: $kendo-tile-layout-hint-border-radius,
+    $kendo-tile-layout-hint-border: $kendo-tile-layout-hint-border,
+    $kendo-tile-layout-hint-bg: $kendo-tile-layout-hint-bg
+);

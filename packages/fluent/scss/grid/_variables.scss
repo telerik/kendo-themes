@@ -8,110 +8,110 @@
 
 /// The border width of the Grid.
 /// @group grid
-$kendo-grid-border-width: 1px !default;
+$kendo-grid-border-width: var( --kendo-grid-border-width, 1px ) !default;
 /// The border style of the Grid.
 /// @group grid
-$kendo-grid-border-style: solid !default;
+$kendo-grid-border-style: var( --kendo-grid-border-style, solid ) !default;
 /// The font family of the Grid.
 /// @group grid
-$kendo-grid-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-grid-font-family: var( --kendo-grid-font-family, var(--kendo-font-family, inherit) ) !default;
 /// The font size of the Grid.
 /// @group grid
-$kendo-grid-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-grid-font-size: var( --kendo-grid-font-size, var(--kendo-font-size, inherit) ) !default;
 /// The line height of the Grid.
 /// @group grid
-$kendo-grid-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-grid-line-height: var( --kendo-grid-line-height, var(--kendo-line-height, normal) ) !default;
 
 /// The horizontal padding of the Grid.
 /// @group grid
-$kendo-grid-padding-x: $kendo-table-cell-padding-x !default;
+$kendo-grid-padding-x: var( --kendo-grid-padding-x, #{$kendo-table-md-cell-padding-x} ) !default;
 /// The vertical padding of the Grid.
 /// @group grid
-$kendo-grid-padding-y: $kendo-table-cell-padding-y !default;
+$kendo-grid-padding-y: var( --kendo-grid-padding-y, #{$kendo-table-md-cell-padding-y} ) !default;
 
 /// The horizontal padding of the Grid header.
 /// @group grid
-$kendo-grid-header-padding-x: $kendo-grid-padding-x !default;
+$kendo-grid-header-padding-x: var( --kendo-grid-header-padding-x, #{$kendo-grid-padding-x} ) !default;
 /// The vertical padding of the Grid header.
 /// @group grid
-$kendo-grid-header-padding-y: $kendo-grid-padding-y !default;
+$kendo-grid-header-padding-y: var( --kendo-grid-header-padding-y, #{$kendo-grid-padding-y} ) !default;
 
 /// The horizontal padding of the Grid grouping header.
 /// @group grid
-$kendo-grid-grouping-header-padding-x: $kendo-toolbar-md-padding-x !default;
+$kendo-grid-grouping-header-padding-x: var( --kendo-grid-grouping-header-padding-x, #{$kendo-toolbar-md-padding-x} ) !default;
 /// The vertical padding of the Grid grouping header.
 /// @group grid
-$kendo-grid-grouping-header-padding-y: $kendo-toolbar-md-padding-y !default;
+$kendo-grid-grouping-header-padding-y: var( --kendo-grid-grouping-header-padding-y, #{$kendo-toolbar-md-padding-y} ) !default;
 
 /// The horizontal padding of the Grid cell.
 /// @group grid
-$kendo-grid-cell-padding-x: $kendo-grid-padding-x !default;
+$kendo-grid-cell-padding-x: var( --kendo-grid-cell-padding-x, #{$kendo-grid-padding-x} ) !default;
 /// The vertical padding of the Grid cell.
 /// @group grid
-$kendo-grid-cell-padding-y: $kendo-grid-padding-y !default;
+$kendo-grid-cell-padding-y: var( --kendo-grid-cell-padding-y, #{$kendo-grid-padding-y} ) !default;
 
 /// The horizontal padding of the Grid filter cell.
 /// @group grid
-$kendo-grid-filter-cell-padding-x: $kendo-grid-padding-y !default;
+$kendo-grid-filter-cell-padding-x: var( --kendo-grid-filter-cell-padding-x, #{$kendo-grid-padding-y} ) !default;
 /// The vertical padding of the Grid filter cell.
 /// @group grid
-$kendo-grid-filter-cell-padding-y: $kendo-grid-filter-cell-padding-x !default;
+$kendo-grid-filter-cell-padding-y: var( --kendo-grid-filter-cell-padding-y, #{$kendo-grid-filter-cell-padding-x} ) !default;
 
 /// The horizontal padding of the Grid edit cell.
 /// @group grid
-$kendo-grid-edit-cell-padding-x: $kendo-grid-cell-padding-x !default;
+$kendo-grid-edit-cell-padding-x: var( --kendo-grid-edit-cell-padding-x, #{$kendo-grid-cell-padding-x} ) !default;
 /// The vertical padding of the Grid filter cell.
 /// @group grid
-$kendo-grid-edit-cell-padding-y: calc( #{k-spacing(2.5)} / 2 ) !default;
+$kendo-grid-edit-cell-padding-y: var( --kendo-grid-edit-cell-padding-y, calc( #{k-spacing(2.5)} / 2 ) ) !default;
 
 /// The size of the Grid group drop clue.
 /// @group grid
-$kendo-grid-group-drop-hint-size: 6px !default;
+$kendo-grid-group-drop-hint-size: var( --kendo-grid-group-drop-hint-size, 6px ) !default;
 /// The line size of the Grid group drop clue.
 /// @group grid
-$kendo-grid-group-drop-hint-line-size: 1px !default;
+$kendo-grid-group-drop-hint-line-size: var( --kendo-grid-group-drop-hint-line-size, 1px ) !default;
 /// The dot size of the Grid group drop clue.
 /// @group grid
-$kendo-grid-group-drop-hint-dot-size: $kendo-grid-group-drop-hint-size !default;
+$kendo-grid-group-drop-hint-dot-size: var( --kendo-grid-group-drop-hint-dot-size, #{$kendo-grid-group-drop-hint-size} ) !default;
 /// The height of the Grid group drop clue.
 /// @group grid
-$kendo-grid-group-drop-hint-height: calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-drop-hint-size} ) !default;
+$kendo-grid-group-drop-hint-height: var( --kendo-grid-group-drop-hint-height, calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-drop-hint-size} ) ) !default;
 /// The top offset of the Grid group drop clue.
 /// @group grid
-$kendo-grid-group-drop-hint-top: 2px !default;
+$kendo-grid-group-drop-hint-top: var( --kendo-grid-group-drop-hint-top, 2px ) !default;
 
 
 $kendo-grid-sm-padding-x: k-spacing(3) !default;
 $kendo-grid-sm-padding-y: k-spacing(1.5) !default;
-$kendo-grid-sm-header-padding-x: $kendo-grid-sm-padding-x !default;
-$kendo-grid-sm-header-padding-y: $kendo-grid-sm-padding-y !default;
-$kendo-grid-sm-grouping-header-padding-x: k-spacing(1.5) !default;
-$kendo-grid-sm-grouping-header-padding-y: $kendo-grid-sm-grouping-header-padding-x !default;
-$kendo-grid-sm-cell-padding-x: $kendo-grid-sm-padding-x !default;
-$kendo-grid-sm-cell-padding-y: $kendo-grid-sm-padding-y !default;
-$kendo-grid-sm-filter-cell-padding-x: $kendo-grid-sm-padding-x !default;
-$kendo-grid-sm-filter-cell-padding-y: k-spacing(2) !default;
-$kendo-grid-sm-edit-cell-padding-x: $kendo-grid-sm-padding-x !default;
-$kendo-grid-sm-edit-cell-padding-y: k-spacing(0.5) !default;
-$kendo-grid-sm-group-dropclue-height: calc( #{$kendo-chip-sm-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
-$kendo-grid-sm-selection-aggregates-padding-x: $kendo-grid-sm-padding-y !default;
-$kendo-grid-sm-selection-aggregates-padding-y: $kendo-grid-sm-padding-y !default;
+$kendo-grid-sm-header-padding-x: var( --kendo-grid-sm-header-padding-x, #{$kendo-grid-sm-padding-x} ) !default;
+$kendo-grid-sm-header-padding-y: var( --kendo-grid-sm-header-padding-y, #{$kendo-grid-sm-padding-y} ) !default;
+$kendo-grid-sm-grouping-header-padding-x: var( --kendo-grid-sm-grouping-header-padding-x, #{k-spacing(1.5)} ) !default;
+$kendo-grid-sm-grouping-header-padding-y: var( --kendo-grid-sm-grouping-header-padding-y, #{$kendo-grid-sm-grouping-header-padding-x} ) !default;
+$kendo-grid-sm-cell-padding-x: var( --kendo-grid-sm-cell-padding-x, #{$kendo-grid-sm-padding-x} ) !default;
+$kendo-grid-sm-cell-padding-y: var( --kendo-grid-sm-cell-padding-y, #{$kendo-grid-sm-padding-y} ) !default;
+$kendo-grid-sm-filter-cell-padding-x: var( --kendo-grid-sm-filter-cell-padding-x, #{$kendo-grid-sm-padding-x} ) !default;
+$kendo-grid-sm-filter-cell-padding-y: var( --kendo-grid-sm-filter-cell-padding-y, #{k-spacing(2)} ) !default;
+$kendo-grid-sm-edit-cell-padding-x: var( --kendo-grid-sm-edit-cell-padding-x, #{$kendo-grid-sm-padding-x} ) !default;
+$kendo-grid-sm-edit-cell-padding-y: var( --kendo-grid-sm-edit-cell-padding-y, #{k-spacing(0.5)} ) !default;
+$kendo-grid-sm-group-dropclue-height: var( --kendo-grid-sm-group-dropclue-height, calc( #{$kendo-chip-sm-calc-size} + #{$kendo-grid-group-drop-hint-size}) ) !default;
+$kendo-grid-sm-selection-aggregates-padding-x: var( --kendo-grid-sm-selection-aggregates-padding-x, #{$kendo-grid-sm-padding-y} ) !default;
+$kendo-grid-sm-selection-aggregates-padding-y: var( --kendo-grid-sm-selection-aggregates-padding-y, #{$kendo-grid-sm-padding-y} ) !default;
 
-$kendo-grid-md-padding-x: $kendo-grid-padding-x !default;
-$kendo-grid-md-padding-y: $kendo-grid-padding-y !default;
-$kendo-grid-md-header-padding-x: $kendo-grid-header-padding-x !default;
-$kendo-grid-md-header-padding-y: $kendo-grid-header-padding-y !default;
-$kendo-grid-md-grouping-header-padding-x: $kendo-grid-grouping-header-padding-x !default;
-$kendo-grid-md-grouping-header-padding-y: $kendo-grid-grouping-header-padding-y !default;
-$kendo-grid-md-cell-padding-x: $kendo-grid-cell-padding-x !default;
-$kendo-grid-md-cell-padding-y: $kendo-grid-cell-padding-y !default;
-$kendo-grid-md-filter-cell-padding-x: $kendo-grid-filter-cell-padding-x !default;
-$kendo-grid-md-filter-cell-padding-y: $kendo-grid-filter-cell-padding-y !default;
-$kendo-grid-md-edit-cell-padding-x: $kendo-grid-edit-cell-padding-x !default;
-$kendo-grid-md-edit-cell-padding-y: $kendo-grid-edit-cell-padding-y !default;
-$kendo-grid-md-group-dropclue-height: $kendo-grid-group-drop-hint-height !default;
-$kendo-grid-md-selection-aggregates-padding-x: k-spacing(2) !default;
-$kendo-grid-md-selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-x !default;
+$kendo-grid-md-padding-x: var( --kendo-grid-md-padding-x, #{$kendo-grid-padding-x} ) !default;
+$kendo-grid-md-padding-y: var( --kendo-grid-md-padding-y, #{$kendo-grid-padding-y} ) !default;
+$kendo-grid-md-header-padding-x: var( --kendo-grid-md-header-padding-x, #{$kendo-grid-header-padding-x} ) !default;
+$kendo-grid-md-header-padding-y: var( --kendo-grid-md-header-padding-y, #{$kendo-grid-header-padding-y} ) !default;
+$kendo-grid-md-grouping-header-padding-x: var( --kendo-grid-md-grouping-header-padding-x, #{$kendo-grid-grouping-header-padding-x} ) !default;
+$kendo-grid-md-grouping-header-padding-y: var( --kendo-grid-md-grouping-header-padding-y, #{$kendo-grid-grouping-header-padding-y} ) !default;
+$kendo-grid-md-cell-padding-x: var( --kendo-grid-md-cell-padding-x, #{$kendo-grid-cell-padding-x} ) !default;
+$kendo-grid-md-cell-padding-y: var( --kendo-grid-md-cell-padding-y, #{$kendo-grid-cell-padding-y} ) !default;
+$kendo-grid-md-filter-cell-padding-x: var( --kendo-grid-md-filter-cell-padding-x, #{$kendo-grid-filter-cell-padding-x} ) !default;
+$kendo-grid-md-filter-cell-padding-y: var( --kendo-grid-md-filter-cell-padding-y, #{$kendo-grid-filter-cell-padding-y} ) !default;
+$kendo-grid-md-edit-cell-padding-x: var( --kendo-grid-md-edit-cell-padding-x, #{$kendo-grid-edit-cell-padding-x} ) !default;
+$kendo-grid-md-edit-cell-padding-y: var( --kendo-grid-md-edit-cell-padding-y, #{$kendo-grid-edit-cell-padding-y} ) !default;
+$kendo-grid-md-group-dropclue-height: var( --kendo-grid-md-group-dropclue-height, #{$kendo-grid-group-drop-hint-height} ) !default;
+$kendo-grid-md-selection-aggregates-padding-x: var( --kendo-grid-md-selection-aggregates-padding-x, #{k-spacing(2)} ) !default;
+$kendo-grid-md-selection-aggregates-padding-y: var( --kendo-grid-md-selection-aggregates-padding-y, #{$kendo-grid-md-selection-aggregates-padding-x} ) !default;
 
 
 // Kendo Grid sizes
@@ -155,394 +155,517 @@ $kendo-grid-sizes: (
 
 /// The background color of the Grid.
 /// @group grid
-$kendo-grid-bg: $kendo-table-bg !default;
+$kendo-grid-bg: var( --kendo-grid-bg, #{$kendo-table-bg} ) !default;
 /// The text color of the Grid.
 /// @group grid
-$kendo-grid-text: $kendo-table-text !default;
+$kendo-grid-text: var( --kendo-grid-text, #{$kendo-table-text} ) !default;
 /// The border color of the Grid.
 /// @group grid
-$kendo-grid-border: $kendo-table-border !default;
+$kendo-grid-border: var( --kendo-grid-border, #{$kendo-table-border} ) !default;
 /// The focus shadow of the Grid.
 /// @group grid
-$kendo-grid-focus-shadow: $kendo-list-item-focus-shadow !default;
+$kendo-grid-focus-shadow: var( --kendo-grid-focus-shadow, #{$kendo-list-item-focus-shadow} ) !default;
 
 /// The background color of alternating rows in Grid.
 /// @group grid
-$kendo-grid-alt-bg: $kendo-table-alt-row-bg !default;
+$kendo-grid-alt-bg: var( --kendo-grid-alt-bg, #{$kendo-table-alt-row-bg} ) !default;
 
 /// The background color of hover rows in Grid.
 /// @group grid
-$kendo-grid-hover-bg: $kendo-table-hover-bg !default;
+$kendo-grid-hover-bg: var( --kendo-grid-hover-bg, #{$kendo-table-hover-bg} ) !default;
 /// The text color of hover rows in Grid.
 /// @group grid
-$kendo-grid-hover-text: $kendo-table-hover-text !default;
+$kendo-grid-hover-text: var( --kendo-grid-hover-text, #{$kendo-table-hover-text} ) !default;
 /// The border color of hover rows in Grid.
 /// @group grid
-$kendo-grid-hover-border: $kendo-table-hover-border !default;
+$kendo-grid-hover-border: var( --kendo-grid-hover-border, #{$kendo-table-hover-border} ) !default;
 
 /// The background color of selected rows in Grid.
 /// @group grid
-$kendo-grid-selected-bg: $kendo-table-selected-bg !default;
+$kendo-grid-selected-bg: var( --kendo-grid-selected-bg, #{$kendo-table-selected-bg} ) !default;
 /// The text color of selected rows in Grid.
 /// @group grid
-$kendo-grid-selected-text: $kendo-table-selected-text !default;
+$kendo-grid-selected-text: var( --kendo-grid-selected-text, #{$kendo-table-selected-text} ) !default;
 /// The border color of selected rows in Grid.
 /// @group grid
-$kendo-grid-selected-border: $kendo-table-selected-border !default;
+$kendo-grid-selected-border: var( --kendo-grid-selected-border, #{$kendo-table-selected-border} ) !default;
 
 /// The background color of highlighted Grid rows.
 /// @group grid
-$kendo-grid-highlighted-bg: $kendo-table-highlighted-bg !default;
+$kendo-grid-highlighted-bg: var( --kendo-grid-highlighted-bg, #{$kendo-table-highlighted-bg} ) !default;
 /// The font weight of highlighted Grid rows.
 /// @group grid
-$kendo-grid-highlighted-font-weight: $kendo-table-highlighted-font-weight !default;
+$kendo-grid-highlighted-font-weight: var( --kendo-grid-highlighted-font-weight, #{$kendo-table-highlighted-font-weight} ) !default;
 
 /// The background color of selected highlighted Grid rows.
 /// @group grid
-$kendo-grid-selected-highlighted-bg: $kendo-table-selected-highlighted-bg !default;
+$kendo-grid-selected-highlighted-bg: var( --kendo-grid-selected-highlighted-bg, #{$kendo-table-selected-highlighted-bg} ) !default;
 
 /// The vertical border width of the Grid header.
 /// @group grid
-$kendo-grid-header-border-width-y: $kendo-grid-border-width !default;
+$kendo-grid-header-border-width-y: var( --kendo-grid-header-border-width-y, #{$kendo-grid-border-width} ) !default;
 /// The horizontal border width of the Grid header.
 /// @group grid
-$kendo-grid-header-border-width-x: 0 !default;
+$kendo-grid-header-border-width-x: var( --kendo-grid-header-border-width-x, 0px ) !default;
 /// The font size of the Grid header.
 /// @group grid
-$kendo-grid-header-font-size: inherit !default;
+$kendo-grid-header-font-size: var( --kendo-grid-header-font-size, inherit ) !default;
 /// The font weight of the Grid header.
 /// @group grid
-$kendo-grid-header-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+$kendo-grid-header-font-weight: var( --kendo-grid-header-font-weight, var(--kendo-font-weight-bold, normal) ) !default;
 /// The menu spacing of the Grid header.
 /// @group grid
-$kendo-grid-header-menu-spacing: var( --kendo-icon-spacing, .5rem ) !default;
+$kendo-grid-header-menu-spacing: var( --kendo-grid-header-menu-spacing, var(--kendo-icon-spacing, .5rem) ) !default;
 /// The border width of the first cell in the Grid header.
 /// @group grid
-$kendo-grid-header-first-border-width: $kendo-grid-border-width !default;
+$kendo-grid-header-first-border-width: var( --kendo-grid-header-first-border-width, #{$kendo-grid-border-width} ) !default;
 /// The background color of Grid header.
 /// @group grid
-$kendo-grid-header-bg: $kendo-table-header-bg !default;
+$kendo-grid-header-bg: var( --kendo-grid-header-bg, #{$kendo-table-header-bg} ) !default;
 /// The text color of Grid header.
 /// @group grid
-$kendo-grid-header-text: $kendo-table-header-text !default;
+$kendo-grid-header-text: var( --kendo-grid-header-text, #{$kendo-table-header-text} ) !default;
 /// The border color of Grid header.
 /// @group grid
-$kendo-grid-header-border: $kendo-table-header-border !default;
+$kendo-grid-header-border: var( --kendo-grid-header-border, #{$kendo-table-header-border} ) !default;
 
 // The background color of Grid footer.
 /// @group grid
-$kendo-grid-footer-bg: $kendo-table-footer-bg !default;
+$kendo-grid-footer-bg: var( --kendo-grid-footer-bg, #{$kendo-table-footer-bg} ) !default;
 /// The text color of Grid footer.
 /// @group grid
-$kendo-grid-footer-text: $kendo-table-footer-text !default;
+$kendo-grid-footer-text: var( --kendo-grid-footer-text, #{$kendo-table-footer-text} ) !default;
 /// The border color of Grid footer.
 /// @group grid
-$kendo-grid-footer-border: $kendo-table-footer-border !default;
+$kendo-grid-footer-border: var( --kendo-grid-footer-border, #{$kendo-table-footer-border} ) !default;
 
 /// The background color of the Grid selection aggregates container.
 /// @group grid
-$kendo-grid-selection-aggregates-bg: $kendo-toolbar-bg !default;
+$kendo-grid-selection-aggregates-bg: var( --kendo-grid-selection-aggregates-bg, #{$kendo-toolbar-bg} ) !default;
 /// The text color of the Grid selection aggregates container.
 /// @group grid
-$kendo-grid-selection-aggregates-text: $kendo-grid-text !default;
+$kendo-grid-selection-aggregates-text: var( --kendo-grid-selection-aggregates-text, #{$kendo-grid-text} ) !default;
 /// The border color of the Grid selection aggregates container.
 /// @group grid
-$kendo-grid-selection-aggregates-border: $kendo-grid-border !default;
+$kendo-grid-selection-aggregates-border: var( --kendo-grid-selection-aggregates-border, #{$kendo-grid-border} ) !default;
 /// The border width of the Grid selection aggregates container.
 /// @group grid
-$kendo-grid-selection-aggregates-border-width: $kendo-grid-border-width !default;
+$kendo-grid-selection-aggregates-border-width: var( --kendo-grid-selection-aggregates-border-width, #{$kendo-grid-border-width} ) !default;
 /// The spacing between the Grid selection aggregates items.
 /// @group grid
-$kendo-grid-selection-aggregates-spacing: k-spacing(2) !default;
+$kendo-grid-selection-aggregates-spacing: var( --kendo-grid-selection-aggregates-spacing, #{k-spacing(2)} ) !default;
 /// Line height of the Grid selection aggregates container.
 /// @group grid
-$kendo-grid-selection-aggregates-line-height: $kendo-grid-line-height !default;
+$kendo-grid-selection-aggregates-line-height: var( --kendo-grid-selection-aggregates-line-height, #{$kendo-grid-line-height} ) !default;
 /// The font weight of the Grid selection aggregates container.
 /// @group grid
-$kendo-grid-selection-aggregates-font-weight: $kendo-font-weight-bold !default;
+$kendo-grid-selection-aggregates-font-weight: var( --kendo-grid-selection-aggregates-font-weight, #{$kendo-font-weight-bold} ) !default;
 
 /// The background color of the Grid grouping header.
 /// @group grid
-$kendo-grid-grouping-header-bg: $kendo-toolbar-bg !default;
+$kendo-grid-grouping-header-bg: var( --kendo-grid-grouping-header-bg, #{$kendo-toolbar-bg} ) !default;
 /// The text color of the Grid grouping header.
 /// @group grid
-$kendo-grid-grouping-header-text: $kendo-toolbar-text !default;
+$kendo-grid-grouping-header-text: var( --kendo-grid-grouping-header-text, #{$kendo-toolbar-text} ) !default;
 /// The border color of the Grid grouping header.
 /// @group grid
-$kendo-grid-grouping-header-border: $kendo-toolbar-border !default;
+$kendo-grid-grouping-header-border: var( --kendo-grid-grouping-header-border, #{$kendo-toolbar-border} ) !default;
 
 /// The vertical border width of the Grid grouping row.
 /// @group grid
-$kendo-grid-grouping-row-border-width-y: $kendo-grid-border-width !default;
+$kendo-grid-grouping-row-border-width-y: var( --kendo-grid-grouping-row-border-width-y, #{$kendo-grid-border-width} ) !default;
 /// The background color of the Grid grouping row.
 /// @group grid
-$kendo-grid-grouping-row-bg: $kendo-table-group-row-bg !default;
+$kendo-grid-grouping-row-bg: var( --kendo-grid-grouping-row-bg, #{$kendo-table-group-row-bg} ) !default;
 /// The text color of the Grid grouping row.
 /// @group grid
-$kendo-grid-grouping-row-text: $kendo-table-group-row-text !default;
+$kendo-grid-grouping-row-text: var( --kendo-grid-grouping-row-text, #{$kendo-table-group-row-text} ) !default;
 /// The border color of the Grid grouping row.
 /// @group grid
-$kendo-grid-grouping-row-border: $kendo-table-group-row-border !default;
+$kendo-grid-grouping-row-border: var( --kendo-grid-grouping-row-border, #{$kendo-table-group-row-border} ) !default;
 
 /// The horizontal padding of the Grid filter cell.
 /// @group grid
-$kendo-grid-filter-cell-padding-x: $kendo-grid-padding-y !default;
+$kendo-grid-filter-cell-padding-x: var( --kendo-grid-filter-cell-padding-x, #{$kendo-grid-padding-y} ) !default;
 /// The vertical padding of the Grid filter cell.
 /// @group grid
-$kendo-grid-filter-cell-padding-y: $kendo-grid-filter-cell-padding-x !default;
+$kendo-grid-filter-cell-padding-y: var( --kendo-grid-filter-cell-padding-y, #{$kendo-grid-filter-cell-padding-x} ) !default;
 
 /// The border width of the Grid Toolbar.
 /// @group grid
-$kendo-grid-toolbar-border-width: $kendo-grid-border-width !default;
+$kendo-grid-toolbar-border-width: var( --kendo-grid-toolbar-border-width, #{$kendo-grid-border-width} ) !default;
 
 /// The vertical border width of the Grid cell.
 /// @group grid
-$kendo-grid-cell-border-width-y: $kendo-grid-border-width !default;
+$kendo-grid-cell-border-width-y: var( --kendo-grid-cell-border-width-y, #{$kendo-grid-border-width} ) !default;
 /// The horizontal border width of the Grid cell.
 /// @group grid
-$kendo-grid-cell-border-width-x: 0px !default;
+$kendo-grid-cell-border-width-x: var( --kendo-grid-cell-border-width-x, 0px ) !default;
 /// The font size of the Grid sort index.
 /// @group grid
-$kendo-grid-sort-index-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-grid-sort-index-font-size: var( --kendo-grid-sort-index-font-size, var(--kendo-font-size-sm, inherit) ) !default;
 
 /// The vertical offset of the Grid sort index.
 /// @group grid
-$kendo-grid-sort-index-spacing-x: k-spacing(0.5) !default;
+$kendo-grid-sort-index-spacing-x: var( --kendo-grid-sort-index-spacing-x, #{k-spacing(0.5)} ) !default;
 /// The spacing of the Grid sort icon.
 /// @group grid
-$kendo-grid-sort-icon-spacing: var( --kendo-icon-lg-spacing, .5rem ) !default;
+$kendo-grid-sort-icon-spacing: var( --kendo-grid-sort-icon-spacing, var(--kendo-icon-lg-spacing, .5rem) ) !default;
 /// The text color of the Grid sort indicator.
 /// @group grid
-$kendo-grid-sort-indicator-text: k-color(subtle) !default;
+$kendo-grid-sort-indicator-text: var( --kendo-grid-sort-indicator-text, k-color(subtle) ) !default;
 /// The text color of the Grid sort order indicator.
 /// @group grid
-$kendo-grid-sort-indicator-order-text: k-color(primary) !default;
+$kendo-grid-sort-indicator-order-text: var( --kendo-grid-sort-indicator-order-text, #{k-color(primary)} ) !default;
 /// The background color of the sorted Grid cells.
 /// @group grid
-$kendo-grid-sorted-bg: k-color(surface) !default;
+$kendo-grid-sorted-bg: var( --kendo-grid-sorted-bg, #{k-color(surface)} ) !default;
 
 /// The vertical padding of the Grid command cells.
 /// @group grid
-$kendo-grid-command-cell-button-spacing: k-spacing(2) !default;
+$kendo-grid-command-cell-button-spacing: var( --kendo-grid-command-cell-button-spacing, #{k-spacing(2)} ) !default;
 
 /// The horizontal border width of the Grid group footer.
 /// @group grid
-$kendo-grid-group-footer-border-width-y: 0px !default;
+$kendo-grid-group-footer-border-width-y: var( --kendo-grid-group-footer-border-width-y, 1px ) !default;
 /// The vertical border width of the Grid group footer.
 /// @group grid
-$kendo-grid-group-footer-border-width-x: 0px !default;
+$kendo-grid-group-footer-border-width-x: var( --kendo-grid-group-footer-border-width-x, 0px ) !default;
 
 /// The text color of the Grid group drop clue.
 /// @group grid
-$kendo-grid-group-drop-hint-bg: k-color(primary) !default;
+$kendo-grid-group-drop-hint-bg: var( --kendo-grid-group-drop-hint-bg, #{k-color(primary)} ) !default;
 
 /// The border width of the Grid sticky cell.
 /// @group grid
-$kendo-grid-sticky-cell-border-width: $kendo-grid-border-width !default;
+$kendo-grid-sticky-cell-border-width: var( --kendo-grid-sticky-cell-border-width, #{$kendo-grid-border-width} ) !default;
 /// The background color of the Grid sticky cell.
 /// @group grid
-$kendo-grid-sticky-bg: k-color(surface-alt) !default;
+$kendo-grid-sticky-bg: var( --kendo-grid-sticky-bg, #{k-color(surface-alt)} ) !default;
 
 /// The border color of the Grid sticky cell.
 /// @group grid
-$kendo-grid-sticky-border: color-mix(in srgb, k-color(border) 80%, transparent) !default;
+$kendo-grid-sticky-border: var( --kendo-grid-sticky-border, color-mix(in srgb, #{k-color(border)} 80%, transparent) ) !default;
 /// The alt background color of the Grid sticky cell.
 /// @group grid
-$kendo-grid-sticky-alt-bg: $kendo-grid-sticky-bg !default;
+$kendo-grid-sticky-alt-bg: var( --kendo-grid-sticky-alt-bg, #{$kendo-grid-sticky-bg} ) !default;
 /// The background color of the Grid sticky cell.
 /// @group grid
-$kendo-grid-sticky-hover-bg: $kendo-grid-hover-bg !default;
+$kendo-grid-sticky-hover-bg: var( --kendo-grid-sticky-hover-bg, #{$kendo-grid-hover-bg} ) !default;
 
 /// The background color of the Grid sticky header.
 /// @group grid
-$kendo-grid-sticky-header-bg: $kendo-grid-header-bg !default;
+$kendo-grid-sticky-header-bg: var( --kendo-grid-sticky-header-bg, #{$kendo-grid-header-bg} ) !default;
 /// The text color of the Grid sticky header.
 /// @group grid
-$kendo-grid-sticky-header-text: $kendo-grid-header-text !default;
+$kendo-grid-sticky-header-text: var( --kendo-grid-sticky-header-text, #{$kendo-grid-header-text} ) !default;
 /// The border color of the Grid sticky header.
 /// @group grid
-$kendo-grid-sticky-header-border: $kendo-grid-sticky-border !default;
+$kendo-grid-sticky-header-border: var( --kendo-grid-sticky-header-border, #{$kendo-grid-sticky-border} ) !default;
 
 /// The background color of the Grid sticky footer.
 /// @group grid
-$kendo-grid-sticky-footer-bg: $kendo-grid-header-bg !default;
+$kendo-grid-sticky-footer-bg: var( --kendo-grid-sticky-footer-bg, #{$kendo-grid-header-bg} ) !default;
 /// The background color of the Grid sticky footer.
 /// @group grid
-$kendo-grid-sticky-footer-hover-bg: $kendo-grid-hover-bg !default;
+$kendo-grid-sticky-footer-hover-bg: var( --kendo-grid-sticky-footer-hover-bg, #{$kendo-grid-hover-bg} ) !default;
 
 /// The horizontal padding of the Grid filter menu container.
 /// @group grid
-$kendo-filter-menu-container-padding-y: k-spacing(3) !default;
+$kendo-filter-menu-container-padding-y: var( --kendo-filter-menu-container-padding-y, #{k-spacing(3)} ) !default;
 /// The vertical padding of the Grid filter menu container.
 /// @group grid
-$kendo-filter-menu-container-padding-x: k-spacing(3) !default;
+$kendo-filter-menu-container-padding-x: var( --kendo-filter-menu-container-padding-x, #{k-spacing(3)} ) !default;
 
 /// The default width of the Grid column menu.
 /// @group grid
-$kendo-grid-column-menu-width: 230px !default;
+$kendo-grid-column-menu-width: var( --kendo-grid-column-menu-width, 230px ) !default;
 /// The max width of the Grid column menu.
 /// @group grid
-$kendo-grid-column-menu-max-width: 320px !default;
+$kendo-grid-column-menu-max-width: var( --kendo-grid-column-menu-max-width, 320px ) !default;
 /// The spacing of the Grid column menu.
 /// @group grid
-$kendo-grid-column-menu-spacing: k-spacing(2) !default;
+$kendo-grid-column-menu-spacing: var( --kendo-grid-column-menu-spacing, #{k-spacing(2)} ) !default;
 /// The focus shadow of the Grid column menu.
 /// @group grid
-$kendo-grid-column-menu-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
+$kendo-grid-column-menu-shadow: var( --kendo-grid-column-menu-shadow, var(--kendo-box-shadow-depth-4, none) ) !default;
 /// The background color of the Grid column menu.
 /// @group grid
-$kendo-grid-column-menu-bg: k-color(surface-alt) !default;
+$kendo-grid-column-menu-bg: var( --kendo-grid-column-menu-bg, #{k-color(surface-alt)} ) !default;
 /// The text color of the Grid column menu.
 /// @group grid
-$kendo-grid-column-menu-text: k-color(on-app-surface) !default;
+$kendo-grid-column-menu-text: var( --kendo-grid-column-menu-text, #{k-color(on-app-surface)} ) !default;
 /// The border color of the Grid column menu.
 /// @group grid
-$kendo-grid-column-menu-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-grid-column-menu-border: var( --kendo-grid-column-menu-border, color-mix(in srgb, #{k-color(border)} 16%, transparent) ) !default;
 
 /// The font size of the Grid column menu checkbox container.
 /// @group grid
-$kendo-grid-column-menu-multicheck-font-size: $kendo-list-md-font-size !default;
+$kendo-grid-column-menu-multicheck-font-size: var( --kendo-grid-column-menu-multicheck-font-size, #{$kendo-list-md-font-size} ) !default;
 /// The line height of the Grid column menu checkbox container.
 /// @group grid
-$kendo-grid-column-menu-multicheck-line-height: $kendo-list-md-line-height !default;
+$kendo-grid-column-menu-multicheck-line-height: var( --kendo-grid-column-menu-multicheck-line-height, #{$kendo-list-md-line-height} ) !default;
 
 /// The vertical padding of the Grid column menu items wrap.
 /// @group grid
-$kendo-grid-column-menu-items-wrap-padding-y: k-spacing(2) !default;
+$kendo-grid-column-menu-items-wrap-padding-y: var( --kendo-grid-column-menu-items-wrap-padding-y, #{k-spacing(2)} ) !default;
 /// The horizontal padding of the Grid column menu items wrap.
 /// @group grid
-$kendo-grid-column-menu-items-wrap-padding-x: k-spacing(2) !default;
+$kendo-grid-column-menu-items-wrap-padding-x: var( --kendo-grid-column-menu-items-wrap-padding-x, #{k-spacing(2)} ) !default;
 
 /// The horizontal padding of the Grid column menu item.
 /// @group grid
-$kendo-grid-column-menu-item-padding-y: $kendo-list-md-item-padding-y !default;
+$kendo-grid-column-menu-item-padding-y: var( --kendo-grid-column-menu-item-padding-y, #{$kendo-list-md-item-padding-y} ) !default;
 /// The vertical padding of the Grid column menu item.
 /// @group grid
-$kendo-grid-column-menu-item-padding-x: $kendo-list-md-item-padding-x !default;
+$kendo-grid-column-menu-item-padding-x: var( --kendo-grid-column-menu-item-padding-x, #{$kendo-list-md-item-padding-x} ) !default;
 /// The spacing of the Grid column menu item.
 /// @group grid
-$kendo-grid-column-menu-item-gap: $kendo-list-md-item-padding-x !default;
-/// The icon spacing of the Grid column menu item.
-/// @group grid
-$kendo-grid-column-menu-item-icon-spacing: var( --kendo-icon-spacing, .5rem ) !default;
+$kendo-grid-column-menu-item-gap: var( --kendo-grid-column-menu-item-gap, #{$kendo-list-md-item-padding-x} ) !default;
 /// The background color of the Grid column menu item.
 /// @group grid
-$kendo-grid-column-menu-item-bg: $kendo-list-item-bg !default;
+$kendo-grid-column-menu-item-bg: var( --kendo-grid-column-menu-item-bg, #{$kendo-list-item-bg} ) !default;
 /// The text color of the Grid column menu item.
 /// @group grid
-$kendo-grid-column-menu-item-text: $kendo-list-item-text !default;
-/// The background color of the Grid column menu item.
-/// @group grid
-$kendo-grid-column-menu-item-hover-bg: $kendo-list-item-hover-bg !default;
-/// The text color of the hovered Grid column menu item.
-/// @group grid
-$kendo-grid-column-menu-item-hover-text: $kendo-list-item-hover-text !default;
-/// The background color of the selected Grid column menu item.
-/// @group grid
-$kendo-grid-column-menu-item-selected-bg: $kendo-list-item-selected-bg !default;
-/// The text color of the selected Grid column menu item.
-/// @group grid
-$kendo-grid-column-menu-item-selected-text: $kendo-list-item-selected-text !default;
-/// The focus shadow of the Grid column menu item.
-/// @group grid
-$kendo-grid-column-menu-item-focus-shadow: $kendo-list-item-focus-shadow !default;
+$kendo-grid-column-menu-item-text: var( --kendo-grid-column-menu-item-text, #{$kendo-list-item-text} ) !default;
+
 /// The text color of the Grid column menu item icon.
 /// @group grid
-$kendo-grid-column-menu-item-icon-text: $kendo-list-item-icon-text !default;
+$kendo-grid-column-menu-item-icon-text: var( --kendo-grid-column-menu-item-icon-text, #{$kendo-list-item-icon-text} ) !default;
 
 /// The vertical padding of the Grid column menu group header.
 /// @group grid
-$kendo-grid-column-menu-group-header-padding-y: $kendo-grid-column-menu-item-padding-y !default;
+$kendo-grid-column-menu-group-header-padding-y: var( --kendo-grid-column-menu-group-header-padding-y, #{$kendo-grid-column-menu-item-padding-y} ) !default;
 /// The horizontal padding of the Grid column menu group header.
 /// @group grid
-$kendo-grid-column-menu-group-header-padding-x: $kendo-grid-column-menu-item-padding-x !default;
+$kendo-grid-column-menu-group-header-padding-x: var( --kendo-grid-column-menu-group-header-padding-x, #{$kendo-grid-column-menu-item-padding-x} ) !default;
 /// The border width of the Grid column menu group header.
 /// @group grid
-$kendo-grid-column-menu-group-header-border-width: 1px !default;
+$kendo-grid-column-menu-group-header-border-width: var( --kendo-grid-column-menu-group-header-border-width, 1px ) !default;
 /// The border style of the Grid column menu group header.
 /// @group grid
-$kendo-grid-column-menu-group-header-border-style: solid !default;
+$kendo-grid-column-menu-group-header-border-style: var( --kendo-grid-column-menu-group-header-border-style, solid ) !default;
 /// The font size of the Grid column menu group header.
 /// @group grid
-$kendo-grid-column-menu-group-header-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-grid-column-menu-group-header-font-size: var( --kendo-grid-column-menu-group-header-font-size, var(--kendo-font-size-sm, inherit) ) !default;
 /// The font weight of the Grid column menu group header.
 /// @group grid
-$kendo-grid-column-menu-group-header-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+$kendo-grid-column-menu-group-header-font-weight: var( --kendo-grid-column-menu-group-header-font-weight, var(--kendo-font-weight-bold, normal) ) !default;
 /// The mine height of the Grid column menu group header.
 /// @group grid
-$kendo-grid-column-menu-group-header-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-grid-column-menu-group-header-line-height: var( --kendo-grid-column-menu-group-header-line-height, var(--kendo-line-height, normal) ) !default;
 /// The text transform of the Grid column menu group header.
 /// @group grid
-$kendo-grid-column-menu-group-header-text-transform: uppercase !default;
+$kendo-grid-column-menu-group-header-text-transform: var( --kendo-grid-column-menu-group-header-text-transform, uppercase ) !default;
 
 /// The background color of the Grid column menu group.
 /// @group grid
-$kendo-grid-column-menu-group-header-bg: k-color(surface-alt) !default;
+$kendo-grid-column-menu-group-header-bg: var( --kendo-grid-column-menu-group-header-bg, #{k-color(surface-alt)} ) !default;
 /// The text color of the Grid column menu group.
 /// @group grid
-$kendo-grid-column-menu-group-header-text: k-color(on-app-surface) !default;
+$kendo-grid-column-menu-group-header-text: var( --kendo-grid-column-menu-group-header-text, #{k-color(on-app-surface)} ) !default;
 /// The border color of the Grid column menu group.
 /// @group grid
-$kendo-grid-column-menu-group-header-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-grid-column-menu-group-header-border: var( --kendo-grid-column-menu-group-header-border, color-mix(in srgb, #{k-color(border)} 16%, transparent) ) !default;
 
 /// The horizontal padding of the tabstrip content in the Grid tabbed column menu.
 /// @group grid
-$kendo-grid-column-menu-tabbed-tabstrip-content-padding-x: k-spacing(0) !default;
+$kendo-grid-column-menu-tabbed-tabstrip-content-padding-x: var( --kendo-grid-column-menu-tabbed-tabstrip-content-padding-x, #{k-spacing(0)} ) !default;
 /// The vertical padding of the tabstrip content in the Grid tabbed column menu.
 /// @group grid
-$kendo-grid-column-menu-tabbed-tabstrip-content-padding-y: k-spacing(3) !default;
+$kendo-grid-column-menu-tabbed-tabstrip-content-padding-y: var( --kendo-grid-column-menu-tabbed-tabstrip-content-padding-y, #{k-spacing(3)} ) !default;
 
 /// The background color of the Grid tabbed column menu.
 /// @group grid
-$kendo-grid-column-menu-tabbed-bg: var( --kendo-base-bg, inherit ) !default;
+$kendo-grid-column-menu-tabbed-bg: var( --kendo-grid-column-menu-tabbed-bg, var(--kendo-base-bg, inherit) ) !default;
 
 /// The default width of the Grid drag cell.
 /// @group grid
-$kendo-grid-drag-cell-width: calc( var( --kendo-icon-size, 1rem ) * 2.25 ) !default;
+$kendo-grid-drag-cell-width: var( --kendo-grid-drag-cell-width, calc( var( --kendo-icon-size, 1rem ) * 2.25 ) ) !default;
 /// The default width of the Grid hierarchy cell.
 /// @group grid
-$kendo-grid-hierarchy-col-width: calc( var( --kendo-icon-size, 1rem ) * 2 ) !default;
+$kendo-grid-hierarchy-col-width: var( --kendo-grid-hierarchy-col-width, calc( var( --kendo-icon-size, 1rem ) * 2 ) ) !default;
 
 /// The background color of the Grid row resize indicator.
 /// @group grid
-$kendo-grid-row-resizer-hover-bg: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
+$kendo-grid-row-resizer-hover-bg: var( --kendo-grid-row-resizer-hover-bg, color-mix(in srgb, #{k-color(on-app-surface)} 46%, transparent) ) !default;
 /// The background color of the active Grid row resize indicator.
 /// @group grid
-$kendo-grid-row-resizer-active-bg: k-color(primary) !default;
+$kendo-grid-row-resizer-active-bg: var( --kendo-grid-row-resizer-active-bg, #{k-color(primary)} ) !default;
 /// The height of the Grid row resize indicator.
 /// @group grid
-$kendo-grid-row-resizer-height: k-spacing(0.5) !default;
+$kendo-grid-row-resizer-height: var( --kendo-grid-row-resizer-height, #{k-spacing(0.5)} ) !default;
 
 /// The horizontal padding of the Grid stack layout cells.
 /// @group grid
-$kendo-grid-stack-cell-padding-x: k-spacing(2) !default;
+$kendo-grid-stack-cell-padding-x: var( --kendo-grid-stack-cell-padding-x, #{k-spacing(2)} ) !default;
 /// The vertical padding of the Grid stack layout cells.
 /// @group grid
-$kendo-grid-stack-cell-padding-y: k-spacing(1.5) !default;
+$kendo-grid-stack-cell-padding-y: var( --kendo-grid-stack-cell-padding-y, #{k-spacing(1.5)} ) !default;
 /// The column gap of the Grid stack layout.
 /// @group grid
-$kendo-grid-stack-column-gap: k-spacing(1) !default;
+$kendo-grid-stack-column-gap: var( --kendo-grid-stack-column-gap, #{k-spacing(1)} ) !default;
 /// The column gap of the editable Grid stack layout.
 /// @group grid
-$kendo-grid-stack-editable-column-gap: k-spacing(2) !default;
+$kendo-grid-stack-editable-column-gap: var( --kendo-grid-stack-editable-column-gap, #{k-spacing(2)} ) !default;
 /// The width of the hierarchy column in the Grid stack layout.
 /// @group grid
-$kendo-grid-stack-hierarchy-col-width: k-spacing(2) !default;
+$kendo-grid-stack-hierarchy-col-width: var( --kendo-grid-stack-hierarchy-col-width, #{k-spacing(2)} ) !default;
 /// The font size of the Grid stack layout column header.
 /// @group grid
-$kendo-grid-stack-header-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-grid-stack-header-font-size: var( --kendo-grid-stack-header-font-size, var(--kendo-font-size-sm, inherit) ) !default;
 /// The font weight of the Grid stack layout column header.
 /// @group grid
-$kendo-grid-stack-header-font-weight: var( --kendo-font-weight-bold, inherit ) !default;
+$kendo-grid-stack-header-font-weight: var( --kendo-grid-stack-header-font-weight, var(--kendo-font-weight-bold, inherit) ) !default;
 /// The height of the Grid stack layout expandable row shadow.
 /// @group grid
-$kendo-grid-stack-expandable-shadow-height: k-spacing(2.5) !default;
+$kendo-grid-stack-expandable-shadow-height: var( --kendo-grid-stack-expandable-shadow-height, #{k-spacing(2.5)} ) !default;
 /// The color of the Grid stack layout column header.
 /// @group grid
-$kendo-grid-stack-header-color: k-color(subtle) !default;
+$kendo-grid-stack-header-color: var( --kendo-grid-stack-header-color, #{k-color(subtle)} ) !default;
 /// The outline color of the Grid stack layout focused cell.
 /// @group grid
-$kendo-grid-stack-focus-outline: k-color(base-emphasis) !default;
+$kendo-grid-stack-focus-outline: var( --kendo-grid-stack-focus-outline, #{k-color(base-emphasis)} ) !default;
 /// The Grid stack layout expandable row shadow.
 /// @group grid
-$kendo-grid-stack-expandable-shadow: k-elevation(2) !default;
+$kendo-grid-stack-expandable-shadow: var( --kendo-grid-stack-expandable-shadow, #{k-elevation(2)} ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/grid/_variables.scss" with (
+    $kendo-grid-border-width: $kendo-grid-border-width,
+    $kendo-grid-font-family: $kendo-grid-font-family,
+    $kendo-grid-font-size: $kendo-grid-font-size,
+    $kendo-grid-line-height: $kendo-grid-line-height,
+    $kendo-grid-padding-x: $kendo-grid-padding-x,
+    $kendo-grid-padding-y: $kendo-grid-padding-y,
+    $kendo-grid-header-padding-x: $kendo-grid-header-padding-x,
+    $kendo-grid-header-padding-y: $kendo-grid-header-padding-y,
+    $kendo-grid-grouping-header-padding-x: $kendo-grid-grouping-header-padding-x,
+    $kendo-grid-grouping-header-padding-y: $kendo-grid-grouping-header-padding-y,
+    $kendo-grid-cell-padding-x: $kendo-grid-cell-padding-x,
+    $kendo-grid-cell-padding-y: $kendo-grid-cell-padding-y,
+    $kendo-grid-filter-cell-padding-x: $kendo-grid-filter-cell-padding-x,
+    $kendo-grid-filter-cell-padding-y: $kendo-grid-filter-cell-padding-y,
+    $kendo-grid-edit-cell-padding-x: $kendo-grid-edit-cell-padding-x,
+    $kendo-grid-edit-cell-padding-y: $kendo-grid-edit-cell-padding-y,
+    $kendo-grid-group-drop-hint-size: $kendo-grid-group-drop-hint-size,
+    $kendo-grid-group-drop-hint-line-size: $kendo-grid-group-drop-hint-line-size,
+    $kendo-grid-group-drop-hint-height: $kendo-grid-group-drop-hint-height,
+    $kendo-grid-group-drop-hint-top: $kendo-grid-group-drop-hint-top,
+    $kendo-grid-sm-padding-x: $kendo-grid-sm-padding-x,
+    $kendo-grid-sm-padding-y: $kendo-grid-sm-padding-y,
+    $kendo-grid-sm-header-padding-x: $kendo-grid-sm-header-padding-x,
+    $kendo-grid-sm-header-padding-y: $kendo-grid-sm-header-padding-y,
+    $kendo-grid-sm-grouping-header-padding-x: $kendo-grid-sm-grouping-header-padding-x,
+    $kendo-grid-sm-grouping-header-padding-y: $kendo-grid-sm-grouping-header-padding-y,
+    $kendo-grid-sm-cell-padding-x: $kendo-grid-sm-cell-padding-x,
+    $kendo-grid-sm-cell-padding-y: $kendo-grid-sm-cell-padding-y,
+    $kendo-grid-sm-filter-cell-padding-x: $kendo-grid-sm-filter-cell-padding-x,
+    $kendo-grid-sm-filter-cell-padding-y: $kendo-grid-sm-filter-cell-padding-y,
+    $kendo-grid-sm-edit-cell-padding-x: $kendo-grid-sm-edit-cell-padding-x,
+    $kendo-grid-sm-edit-cell-padding-y: $kendo-grid-sm-edit-cell-padding-y,
+    $kendo-grid-sm-group-dropclue-height: $kendo-grid-sm-group-dropclue-height,
+    $kendo-grid-sm-selection-aggregates-padding-x: $kendo-grid-sm-selection-aggregates-padding-x,
+    $kendo-grid-sm-selection-aggregates-padding-y: $kendo-grid-sm-selection-aggregates-padding-y,
+    $kendo-grid-md-padding-x: $kendo-grid-md-padding-x,
+    $kendo-grid-md-padding-y: $kendo-grid-md-padding-y,
+    $kendo-grid-md-header-padding-x: $kendo-grid-md-header-padding-x,
+    $kendo-grid-md-header-padding-y: $kendo-grid-md-header-padding-y,
+    $kendo-grid-md-grouping-header-padding-x: $kendo-grid-md-grouping-header-padding-x,
+    $kendo-grid-md-grouping-header-padding-y: $kendo-grid-md-grouping-header-padding-y,
+    $kendo-grid-md-cell-padding-x: $kendo-grid-md-cell-padding-x,
+    $kendo-grid-md-cell-padding-y: $kendo-grid-md-cell-padding-y,
+    $kendo-grid-md-filter-cell-padding-x: $kendo-grid-md-filter-cell-padding-x,
+    $kendo-grid-md-filter-cell-padding-y: $kendo-grid-md-filter-cell-padding-y,
+    $kendo-grid-md-edit-cell-padding-x: $kendo-grid-md-edit-cell-padding-x,
+    $kendo-grid-md-edit-cell-padding-y: $kendo-grid-md-edit-cell-padding-y,
+    $kendo-grid-md-group-dropclue-height: $kendo-grid-md-group-dropclue-height,
+    $kendo-grid-md-selection-aggregates-padding-x: $kendo-grid-md-selection-aggregates-padding-x,
+    $kendo-grid-md-selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-y,
+    $kendo-grid-sizes: $kendo-grid-sizes,
+    $kendo-grid-header-font-size: $kendo-grid-header-font-size,
+    $kendo-grid-header-first-border: $kendo-grid-header-first-border-width,
+    $kendo-grid-header-menu-icon-spacing: $kendo-grid-header-menu-spacing,
+    $kendo-grid-toolbar-border-width: $kendo-grid-toolbar-border-width,
+    $kendo-grid-bg: $kendo-grid-bg,
+    $kendo-grid-text: $kendo-grid-text,
+    $kendo-grid-border: $kendo-grid-border,
+    $kendo-grid-header-bg: $kendo-grid-header-bg,
+    $kendo-grid-header-text: $kendo-grid-header-text,
+    $kendo-grid-header-border: $kendo-grid-header-border,
+    $kendo-grid-footer-bg: $kendo-grid-footer-bg,
+    $kendo-grid-footer-text: $kendo-grid-footer-text,
+    $kendo-grid-footer-border: $kendo-grid-footer-border,
+    $kendo-grid-alt-bg: $kendo-grid-alt-bg,
+    $kendo-grid-hover-bg: $kendo-grid-hover-bg,
+    $kendo-grid-hover-text: $kendo-grid-hover-text,
+    $kendo-grid-selected-bg: $kendo-grid-selected-bg,
+    $kendo-grid-selected-text: $kendo-grid-selected-text,
+    $kendo-grid-highlighted-bg: $kendo-grid-highlighted-bg,
+    $kendo-grid-highlighted-font-weight: $kendo-grid-highlighted-font-weight,
+    $kendo-grid-selected-highlighted-bg: $kendo-grid-selected-highlighted-bg,
+    $kendo-grid-selection-aggregates-bg: $kendo-grid-selection-aggregates-bg,
+    $kendo-grid-selection-aggregates-text: $kendo-grid-selection-aggregates-text,
+    $kendo-grid-selection-aggregates-border: $kendo-grid-selection-aggregates-border,
+    $kendo-grid-selection-aggregates-border-width: $kendo-grid-selection-aggregates-border-width,
+    $kendo-grid-selection-aggregates-spacing: $kendo-grid-selection-aggregates-spacing,
+    $kendo-grid-selection-aggregates-line-height: $kendo-grid-selection-aggregates-line-height,
+    $kendo-grid-selection-aggregates-font-weight: $kendo-grid-selection-aggregates-font-weight,
+    $kendo-grid-grouping-row-bg: $kendo-grid-grouping-row-bg,
+    $kendo-grid-grouping-row-text: $kendo-grid-grouping-row-text,
+    $kendo-grid-sorted-icon-spacing: $kendo-grid-sort-icon-spacing,
+    $kendo-grid-sorted-bg: $kendo-grid-sorted-bg,
+    $kendo-grid-sorting-indicator-text: $kendo-grid-sort-indicator-text,
+    $kendo-grid-sorting-index-font-size: $kendo-grid-sort-index-font-size,
+    $kendo-grid-sorting-index-spacing-x: $kendo-grid-sort-index-spacing-x,
+    $kendo-grid-focus-shadow: $kendo-grid-focus-shadow,
+    $kendo-grid-command-cell-button-spacing: $kendo-grid-command-cell-button-spacing,
+    $kendo-grid-sticky-bg: $kendo-grid-sticky-bg,
+    $kendo-grid-sticky-hover-bg: $kendo-grid-sticky-hover-bg,
+    $kendo-grid-sticky-alt-bg: $kendo-grid-sticky-alt-bg,
+    $kendo-grid-sticky-border: $kendo-grid-sticky-border,
+    $kendo-grid-sticky-header-bg: $kendo-grid-sticky-header-bg,
+    $kendo-grid-sticky-header-text: $kendo-grid-sticky-header-text,
+    $kendo-grid-sticky-header-border: $kendo-grid-sticky-header-border,
+    $kendo-grid-sticky-footer-bg: $kendo-grid-sticky-footer-bg,
+    $kendo-grid-sticky-footer-hover-bg: $kendo-grid-sticky-footer-hover-bg,
+    $kendo-grid-column-menu-width: $kendo-grid-column-menu-width,
+    $kendo-grid-column-menu-max-width: $kendo-grid-column-menu-max-width,
+    $kendo-grid-column-menu-item-padding-x: $kendo-grid-column-menu-item-padding-x,
+    $kendo-grid-column-menu-item-padding-y: $kendo-grid-column-menu-item-padding-y,
+    $kendo-grid-column-menu-list-item-padding-x: $kendo-grid-column-menu-item-padding-x,
+    $kendo-grid-column-menu-list-item-padding-y: $kendo-grid-column-menu-item-padding-y,
+    $kendo-grid-column-menu-items-wrap-padding-x: $kendo-grid-column-menu-items-wrap-padding-x,
+    $kendo-grid-column-menu-items-wrap-padding-y: $kendo-grid-column-menu-items-wrap-padding-y,
+    $kendo-grid-column-menu-group-header-padding-x: $kendo-grid-column-menu-group-header-padding-x,
+    $kendo-grid-column-menu-group-header-padding-y: $kendo-grid-column-menu-group-header-padding-y,
+    $kendo-grid-column-menu-group-header-font-size: $kendo-grid-column-menu-group-header-font-size,
+    $kendo-grid-column-menu-group-header-line-height: $kendo-grid-column-menu-group-header-line-height,
+    $kendo-grid-column-menu-group-header-text-transform: $kendo-grid-column-menu-group-header-text-transform,
+    $kendo-grid-column-menu-group-header-border-bottom-width: $kendo-grid-column-menu-group-header-border-width,
+    $kendo-grid-column-menu-group-header-bg: $kendo-grid-column-menu-group-header-bg,
+    $kendo-grid-column-menu-group-header-text: $kendo-grid-column-menu-group-header-text,
+    $kendo-grid-column-menu-group-header-border: $kendo-grid-column-menu-group-header-border,
+    $kendo-grid-column-menu-tabbed-tabstrip-content-padding-x: $kendo-grid-column-menu-tabbed-tabstrip-content-padding-x,
+    $kendo-grid-column-menu-tabbed-tabstrip-content-padding-y: $kendo-grid-column-menu-tabbed-tabstrip-content-padding-y,
+    $kendo-grid-column-menu-tabbed-bg: $kendo-grid-column-menu-tabbed-bg,
+    $kendo-grid-drag-cell-width: $kendo-grid-drag-cell-width,
+    $kendo-grid-hierarchy-col-width: $kendo-grid-hierarchy-col-width,
+    $kendo-grid-grouping-row-border-top: $kendo-grid-grouping-row-border-width-y,
+    $kendo-grid-group-footer-border-y: $kendo-grid-group-footer-border-width-y,
+    $kendo-grid-row-resizer-hover-bg: $kendo-grid-row-resizer-hover-bg,
+    $kendo-grid-row-resizer-active-bg: $kendo-grid-row-resizer-active-bg,
+    $kendo-grid-row-resizer-height: $kendo-grid-row-resizer-height,
+    $kendo-grid-stack-cell-padding-x: $kendo-grid-stack-cell-padding-x,
+    $kendo-grid-stack-cell-padding-y: $kendo-grid-stack-cell-padding-y,
+    $kendo-grid-stack-column-gap: $kendo-grid-stack-column-gap,
+    $kendo-grid-stack-editable-column-gap: $kendo-grid-stack-editable-column-gap,
+    $kendo-grid-stack-hierarchy-col-width: $kendo-grid-stack-hierarchy-col-width,
+    $kendo-grid-stack-header-font-size: $kendo-grid-stack-header-font-size,
+    $kendo-grid-stack-header-font-weight: $kendo-grid-stack-header-font-weight,
+    $kendo-grid-stack-expandable-shadow-height: $kendo-grid-stack-expandable-shadow-height,
+    $kendo-grid-stack-header-color: $kendo-grid-stack-header-color,
+    $kendo-grid-stack-focus-outline: $kendo-grid-stack-focus-outline,
+    $kendo-grid-stack-expandable-shadow: $kendo-grid-stack-expandable-shadow,
+    $kendo-grid-cell-vertical-border-width: $kendo-grid-cell-border-width-x,
+    $kendo-grid-cell-horizontal-border-width: $kendo-grid-cell-border-width-y
+);

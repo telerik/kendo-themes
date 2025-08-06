@@ -1,116 +1,57 @@
 @use "../core/_index.scss" as *;
 @use '_variables.scss' as *;
+@use "@progress/kendo-theme-core/scss/components/menu/_theme.scss" as *;
 
 @mixin kendo-menu--theme() {
+    @include kendo-menu--theme-base();
+
     .k-menu:not(.k-context-menu) {
-        color: var( --kendo-menu-text, #{$kendo-menu-text} );
-        background-color: var( --kendo-menu-bg, #{$kendo-menu-bg} );
-        border-color: var( --kendo-menu-border, #{$kendo-menu-border} );
-        box-shadow: var( --kendo-menu-shadow, #{$kendo-menu-shadow} );
+        box-shadow: $kendo-menu-shadow;
 
         > .k-item {
-            color: var( --kendo-menu-item-text, #{$kendo-menu-item-text} );
-            background-color: var( --kendo-menu-item-bg, #{$kendo-menu-item-bg} );
-
-            &:hover,
-            &.k-hover {
-                color: var( --kendo-menu-item-hover-text, #{$kendo-menu-item-hover-text} );
-                background-color: var( --kendo-menu-item-hover-bg, #{$kendo-menu-item-hover-bg} );
-            }
 
             &:focus,
             &.k-focus {
-                color: var( --kendo-menu-item-focus-text, #{$kendo-menu-item-focus-text} );
-                background-color: var( --kendo-menu-item-focus-bg, #{$kendo-menu-item-focus-bg} );
-                outline-color: var( --kendo-menu-item-focus-outline, #{$kendo-menu-item-focus-outline} );
-            }
-
-            &:active,
-            &.k-active {
-                color: var( --kendo-menu-item-active-text, #{$kendo-menu-item-active-text} );
-                background-color: var( --kendo-menu-item-active-bg, #{$kendo-menu-item-active-bg} );
+                color: $kendo-menu-item-focus-text;
+                background-color: $kendo-menu-item-focus-bg;
+                outline-color: $kendo-menu-item-focus-outline;
             }
 
             &.k-disabled {
-                color: var( --kendo-menu-item-disabled-text, #{$kendo-menu-item-disabled-text} );
-                background-color: var( --kendo-menu-item-disabled-bg, #{$kendo-menu-item-disabled-bg} );
-            }
-
-            &.k-selected {
-                color: var( --kendo-menu-item-selected-text, #{$kendo-menu-item-selected-text} );
-                background-color: var( --kendo-menu-item-selected-bg, #{$kendo-menu-item-selected-bg} );
+                color: $kendo-menu-item-disabled-text;
+                background-color: $kendo-menu-item-disabled-bg;
             }
         }
 
         .k-link > .k-icon {
-            color: var( --kendo-menu-icon-color, #{$kendo-menu-icon-color} );
+            color: $kendo-menu-icon-color;
         }
-
-        > .k-separator {
-            @include fill(
-                $border: var( --kendo-menu-separator-border, #{$kendo-menu-separator-border} )
-            );
-        }
-
     }
 
     .k-menu-popup {
-        box-shadow: var( --kendo-menu-popup-shadow, #{$kendo-menu-popup-shadow} );
+        box-shadow: $kendo-menu-popup-shadow;
     }
 
     .k-menu-group,
     .k-menu.k-context-menu {
-        background-color: var( --kendo-menu-popup-bg, #{$kendo-menu-popup-bg} );
-        border-color: var( --kendo-menu-popup-border, #{$kendo-menu-popup-border} );
-
         .k-item {
 
             & > .k-link {
-                color: var( --kendo-menu-popup-item-text, #{$kendo-menu-popup-item-text} );
-                background-color: var( --kendo-menu-popup-item-bg, #{$kendo-menu-popup-item-bg} );
-
-                &:hover,
-                &.k-hover {
-                    color: var( --kendo-menu-popup-item-hover-text, #{$kendo-menu-popup-item-hover-text} );
-                    background-color: var( --kendo-menu-popup-item-hover-bg, #{$kendo-menu-popup-item-hover-bg} );
-                }
-
-                &:active,
-                &.k-active,
-                &.k-selected {
-                    color: var( --kendo-menu-popup-item-active-text, #{$kendo-menu-popup-item-active-text} );
-                    background-color: var( --kendo-menu-popup-item-active-bg, #{$kendo-menu-popup-item-active-bg} );
-                }
 
                 &.k-disabled {
-                    color: var( --kendo-menu-popup-item-disabled-text, #{$kendo-menu-popup-item-disabled-text} );
-                    background-color: var( --kendo-menu-popup-item-disabled-bg, #{$kendo-menu-popup-item-disabled-bg} );
+                    color: $kendo-menu-popup-item-disabled-text;
+                    background-color: $kendo-menu-popup-item-disabled-bg;
                 }
             }
-
             &:focus,
             &:focus-visible,
             &.k-focus {
-
                 outline-color: transparent;
 
                 > .k-link {
-                    outline-color: var( --kendo-menu-popup-item-focus-outline, #{$kendo-menu-popup-item-focus-outline} );
+                    outline-color: $kendo-menu-popup-item-focus-outline;
                 }
             }
         }
-
-        > .k-separator {
-            @include fill(
-                $border: var( --kendo-menu-separator-border, #{$kendo-menu-separator-border} )
-            );
-        }
-    }
-
-    .k-menu-scroll-wrapper .k-menu-scroll-button {
-        border-color: var( --kendo-menu-scroll-btn-bg, transparent );
-        background-color: var( --kendo-menu-scroll-btn-bg, #{k-color(app-surface)} );
     }
 }
-
-@mixin kendo-menu--extended-theme() {}

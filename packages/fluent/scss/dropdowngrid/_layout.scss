@@ -1,13 +1,5 @@
+@use "@progress/kendo-theme-core/scss/components/dropdowngrid/_layout.scss" as *;
+
 @mixin kendo-dropdown-grid--layout() {
-
-    // DropdownGrid
-    .k-dropdown-grid {}
-
-    // DropdownGrid Popup
-    .k-dropdowngrid-popup {
-        overflow: hidden;
-    }
-    .k-dropdowngrid-popup > .k-data-table {
-        border-width: 0;
-    }
+    @include kendo-dropdown-grid--layout-base();
 }

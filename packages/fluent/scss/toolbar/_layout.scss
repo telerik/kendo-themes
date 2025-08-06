@@ -2,321 +2,36 @@
 @use "../core/_index.scss" as *;
 @use "../button/_variables.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/toolbar/_layout.scss" as *;
 
 @mixin kendo-toolbar--layout() {
+    @include kendo-toolbar--layout-base();
 
-    // Base
     .k-toolbar {
-        margin: 0;
-        padding-inline: var( --kendo-toolbar-padding-x, 0 );
-        padding-block: var( --kendo-toolbar-padding-y, 0 );
-        border-width: var( --kendo-toolbar-border-width, #{$kendo-toolbar-border-width} );
-        border-style: solid;
-        box-sizing: border-box;
-        outline: 0;
-        font-family: var( --kendo-toolbar-font-family, #{$kendo-toolbar-font-family} );
-        font-size: var( --kendo-toolbar-font-size, #{$kendo-toolbar-font-size} );
-        line-height: var( --kendo-toolbar-line-height, #{$kendo-toolbar-line-height} );
-        list-style: none;
-        display: flex;
-        flex-flow: row wrap;
-        gap: var( --kendo-toolbar-spacing, 0 );
-        align-items: center;
-        justify-content: flex-start;
-        position: relative;
-        overflow: hidden;
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-
-        // Remove once we decide to not size empty containers
-        &::before {
-            content: "";
-            height: $kendo-button-inner-calc-size;
-            margin-inline-start: calc( var( --kendo-toolbar-spacing, 0 ) * -1 );
-        }
-
-        &.k-toolbar-resizable {
-            flex-wrap: nowrap;
-        }
-
-        &.k-toolbar-scrollable {
-            flex-wrap: nowrap;
-            position: relative;
-        }
-
-        &.k-toolbar-scrollable-overlay {
-
-            &::before,
-            &::after {
-                content: '';
-                height: 100%;
-                aspect-ratio: 1;
-                position: absolute;
-                z-index: 3;
-            }
-
-            &::before {
-                inset-inline-start: var( --kendo-toolbar-spacing, 0 );
-            }
-
-            &::after {
-                inset-inline-end: 0;
-            }
-
-            &.k-toolbar-scrollable-start::before,
-            &.k-toolbar-scrollable-end::after {
-                display: none;
-            }
-        }
-
-        > * {
-            flex-shrink: 0;
-            display: inline-flex;
-            align-items: center;
-            vertical-align: middle;
-
-            > label {
-                margin-inline-end: var( --kendo-toolbar-spacing, 0 );
-                align-self: center;
-            }
-        }
-
-        // Input
-        .k-input,
-        .k-picker {
-            width: var( --kendo-toolbar-input-width, #{$kendo-toolbar-input-width} );
-        }
-        .k-color-picker {
-            width: min-content;
-        }
-
-
-        // Overflow anchor
-        .k-toolbar-overflow-button {
-            margin-inline-start: auto;
-        }
-
-        // Overflow separator
-        .k-toolbar-separator.k-toolbar-button-separator {
-            margin-inline-start: auto;
-            height: var( --kendo-toolbar-separator-height, 100% );
-
-            + .k-toolbar-overflow-button {
-                margin-inline-start: 0;
-            }
-        }
-
-        // Spacer
-        .k-toolbar-spacer {
-            height: calc( var( --kendo-toolbar-line-height, #{$kendo-toolbar-line-height} ) * 1em );
-            flex: 1 0 0%;
-        }
 
         // Template item
         .k-toolbar-item:focus,
         .k-toolbar-item.k-focus {
-            outline-width: var( --kendo-toolbar-item-focus-outline-width, #{$kendo-toolbar-item-focus-outline-width} );
-            outline-style: var( --kendo-toolbar-item-focus-outline-style, #{$kendo-toolbar-item-focus-outline-style} );
-        }
-    }
-
-    // Separator
-    .k-toolbar .k-separator,
-    .k-toolbar-separator {
-        width: 0;
-        height: calc( var( --kendo-toolbar-line-height, #{$kendo-toolbar-line-height} ) * 1em );
-        border-width: 0 0 0 1px;
-        border-style: solid;
-        align-self: center;
-    }
-
-    .k-toolbar-items {
-        display: flex;
-        flex-flow: row nowrap;
-        gap: var( --kendo-toolbar-spacing, 0 );
-        align-items: center;
-        justify-content: flex-start;
-        flex: 1 1 auto;
-        overflow: hidden;
-    }
-
-    .k-toolbar-items-scroll {
-        overflow-x: auto;
-        scrollbar-width: none;
-
-        &::-webkit-scrollbar {
-            display: none;
-        }
-    }
-
-    .k-toolbar-items-list {
-        display: flex;
-        flex-flow: row wrap;
-        padding-inline: var( --kendo-toolbar-padding-x, 0 );
-        padding-block: var( --kendo-toolbar-padding-y, 0 );
-        gap: var( --kendo-toolbar-spacing, 0 );
-        align-items: center;
-        justify-content: flex-start;
-        flex: 1 1 auto;
-        overflow: hidden;
-    }
-
-    // Outline Toolbar
-    .k-toolbar-outline {
-        border-width: var( --kendo-toolbar-outline-border-width, #{$kendo-toolbar-outline-border-width} );
-        background: none;
-    }
-
-    // Flat Toolbar
-    .k-toolbar-flat {
-        border-top-color: transparent !important; // stylelint-disable-line declaration-no-important
-        border-inline-color: transparent !important; // stylelint-disable-line declaration-no-important
-        background: none !important;  // stylelint-disable-line declaration-no-important
-    }
-
-    // Toolbar group
-    .k-toolbar-group {
-        display: flex;
-        flex-direction: inherit;
-        flex-wrap: nowrap;
-        gap: inherit;
-    }
-
-    // Toolbar sizes
-    @each $size, $size-props in $kendo-toolbar-sizes {
-        $_padding-x: map.get( $size-props, padding-x );
-        $_padding-y: map.get( $size-props, padding-y );
-        $_spacing: map.get( $size-props, spacing );
-        $_separator-height: map.get( $size-props, separator-height );
-
-        .k-toolbar-#{$size},
-        .k-toolbar-items-list-#{$size} {
-            --kendo-toolbar-padding-x: var( --kendo-toolbar-#{$size}-padding-x, #{$_padding-x} );
-            --kendo-toolbar-padding-y: var( --kendo-toolbar-#{$size}-padding-y, #{$_padding-y} );
-            --kendo-toolbar-spacing: var( --kendo-toolbar-#{$size}-spacing, #{$_spacing} );
-            --kendo-toolbar-separator-height: var( --kendo-toolbar-#{$size}-separator-height, #{$_separator-height} );
-
-            .k-toolbar-items-scroll {
-                padding-block: var( --kendo-toolbar-#{$size}-padding-y, #{$_padding-y} );
-                margin-block: calc( var( --kendo-toolbar-#{$size}-padding-y, #{$_padding-y} ) * -1 );
-                padding-inline: var( --kendo-toolbar-#{$size}-padding-x, #{$_padding-x} );
-                margin-inline: calc( var( --kendo-toolbar-#{$size}-padding-x, #{$_padding-x} ) * -1 );
-            }
-
-            &.k-toolbar-scrollable-overlay .k-toolbar-items-scroll:only-child,
-            .k-toolbar-items-scroll:not(:only-child) {
-                padding-inline-end:0;
-                margin-inline-end: 0;
-            }
+            outline-width: $kendo-toolbar-item-focus-outline-width;
+            outline-style: $kendo-toolbar-item-focus-outline-style;
         }
 
     }
+    .k-toolbar::before {
+        height: $kendo-button-inner-calc-size;
+    }
 
-    // Remove once we decide to not size empty containers
     .k-toolbar-sm::before {
-        height: var( --kendo-button-sm-inner-calc-size, #{$kendo-button-sm-inner-calc-size} );
+        height: $kendo-button-sm-inner-calc-size;
     }
     .k-toolbar-md::before {
-        height: var( --kendo-button-md-inner-calc-size, #{$kendo-button-md-inner-calc-size} );
+        height: $kendo-button-md-inner-calc-size;
     }
     .k-toolbar-lg::before {
-        height: var( --kendo-button-lg-inner-calc-size, #{$kendo-button-lg-inner-calc-size} );
+        height: $kendo-button-lg-inner-calc-size;
     }
 
-    // stylelint-disable selector-class-pattern
-    .k-floating-toolbar,
-    .editorToolbarWindow.k-window-content {
-        padding-inline: var( --kendo-toolbar-md-padding-x, #{$kendo-toolbar-md-padding-x} ) !important; // stylelint-disable-line declaration-no-important
-        padding-block: var( --kendo-toolbar-md-padding-y, #{$kendo-toolbar-md-padding-y} ) !important; // stylelint-disable-line declaration-no-important
-        border-width: var( --kendo-toolbar-border-width, #{$kendo-toolbar-border-width} );
-        border-style: solid;
-        display: flex;
-        flex-flow: row nowrap;
-        gap: var( --kendo-toolbar-md-spacing, #{$kendo-toolbar-md-spacing} );
-        align-items: center;
-
-        .k-toolbar {
-            padding: 0;
-            border-width: 0;
-            flex-shrink: 1;
-            color: inherit;
-            background: none;
-        }
+    .k-overflow-container .k-overflow-button {
+        gap: .5rem ;
     }
-
-    .k-editortoolbar-dragHandle {
-        cursor: move;
-        display: flex;
-        align-items: center;
-        align-self: stretch;
-        flex-shrink: 0;
-    }
-    // stylelint-enable selector-class-pattern
-
-
-    // Remove once the Overflow Popup uses
-    // the proper Menu rendering in all suites.
-    .k-overflow-container {
-        font-size: var( --kendo-menu-popup-md-font-size, inherit );
-        line-height: var( --kendo-menu-popup-md-line-height, normal );
-
-        > .k-item {
-            border-color: inherit;
-        }
-
-        .k-separator {
-            margin-block: k-spacing(1);
-        }
-
-        // Group
-        .k-overflow-tool-group {
-            display: block;
-        }
-
-        // Button
-        .k-overflow-button {
-            padding-inline: var( --kendo-menu-popup-md-item-padding-x, 8px );
-            padding-block: var( --kendo-menu-popup-md-item-padding-y, 4px );
-            width: 100%;
-            height: auto;
-            border-width: 0;
-            border-radius: 0;
-            aspect-ratio: auto;
-            color: inherit;
-            background-color: transparent;
-            background-image: none;
-            font: inherit;
-            cursor: pointer;
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-            align-content: center;
-            gap: var( --kendo-overflow-button-spacing, .5rem );
-            justify-content: flex-start;
-            position: relative;
-        }
-
-        // Button group
-        .k-button-group {
-            @include box-shadow( none );
-            display: flex;
-            flex-flow: column nowrap;
-
-            .k-button {
-                margin: if( var( --kendo-button-border-width, 0 ) == 0, null, 0);
-            }
-        }
-
-        // Split button
-        .k-split-button {
-            display: flex;
-            flex-direction: column;
-        }
-
-        // Hidden items
-        .k-overflow-hidden {
-            display: none;
-        }
-    }
-
 }

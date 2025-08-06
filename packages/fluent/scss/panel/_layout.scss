@@ -1,29 +1,7 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/panel/_layout.scss" as *;
 
 @mixin kendo-panel--layout() {
-    // Panels
-    .k-block,
-    .k-panel {
-        @include border-radius( $kendo-panel-border-radius );
-        padding: 0;
-        border-width: $kendo-panel-border-width;
-        border-style: $kendo-panel-border-style;
-        box-sizing: border-box;
-
-        > .k-header {
-            @include border-top-radius( $kendo-panel-border-radius );
-            @include fill(
-                k-color(on-app-surface),
-                k-color(surface-alt),
-                color-mix(in srgb, k-color(border) 16%, transparent)
-            );
-            padding-inline: $kendo-panel-header-padding-inline;
-            padding-block: $kendo-panel-header-padding-block;
-        }
-        > .k-content {
-            padding-inline: $kendo-panel-content-padding-inline;
-            padding-block: $kendo-panel-content-padding-block;
-        }
-    }
+    @include kendo-panel--layout--base();
 }

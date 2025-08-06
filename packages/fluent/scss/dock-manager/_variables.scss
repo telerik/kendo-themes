@@ -3,117 +3,155 @@
 
 ///  The width of the border around the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-border-width: 1px !default;
+$kendo-dock-manager-border-width: var( --kendo-dock-manager-border-width, 1px ) !default;
 /// The style of the border around the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-border-style: solid !default;
+$kendo-dock-manager-border-style: var( --kendo-dock-manager-border-style, solid ) !default;
 /// The color of the border around the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-dock-manager-border: var( --kendo-dock-manager-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
 
 /// The vertical padding of the pane header in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-header-padding-y: k-spacing(1) !default;
+$kendo-dock-manager-pane-header-padding-y: var( --kendo-dock-manager-pane-header-padding-y, k-spacing(1) ) !default;
 /// The horizontal padding of the pane header in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-header-padding-x: k-spacing(6) !default;
+$kendo-dock-manager-pane-header-padding-x: var( --kendo-dock-manager-pane-header-padding-x, k-spacing(6) ) !default;
 /// The width of the border around the pane header in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-header-border-width: $kendo-dock-manager-border-width !default;
+$kendo-dock-manager-pane-header-border-width: var( --kendo-dock-manager-pane-header-border-width, $kendo-dock-manager-border-width ) !default;
 ///  The style of the border around the pane header in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-header-border-style: solid !default;
+$kendo-dock-manager-pane-header-border-style: var( --kendo-dock-manager-pane-header-border-style, solid ) !default;
 /// The background color of the pane header in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-header-bg: k-color(surface-alt) !default;
+$kendo-dock-manager-pane-header-bg: var( --kendo-dock-manager-pane-header-bg, k-color(surface-alt) ) !default;
 /// The text color of the pane header in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-header-text: k-color(primary) !default;
+$kendo-dock-manager-pane-header-text: var( --kendo-dock-manager-pane-header-text, k-color(primary) ) !default;
 
 /// The vertical padding of the pane title in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-title-padding-y: null !default;
+$kendo-dock-manager-pane-title-padding-y: var( --kendo-dock-manager-pane-title-padding-y, null ) !default;
 /// The horizontal padding of the pane title in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-title-padding-x: null !default;
+$kendo-dock-manager-pane-title-padding-x: var( --kendo-dock-manager-pane-title-padding-x, null ) !default;
 /// The font family of the pane title in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-title-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-dock-manager-pane-title-font-family: var( --kendo-dock-manager-pane-title-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// The font size of the pane title in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-dock-manager-pane-title-font-size: var( --kendo-dock-manager-pane-title-font-size, var( --kendo-font-size-lg, inherit ) ) !default;
 /// The line height of the pane title in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-title-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-dock-manager-pane-title-line-height: var( --kendo-dock-manager-pane-title-line-height, var( --kendo-line-height, normal ) ) !default;
 /// The font weight of the pane title in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-title-font-weight: var( --kendo-font-weight, normal ) !default;
+$kendo-dock-manager-pane-title-font-weight: var( --kendo-dock-manager-pane-title-font-weight, var( --kendo-font-weight, normal ) ) !default;
 
 /// The horizontal padding of the pane content in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-content-padding-x: k-spacing(3) !default;
+$kendo-dock-manager-pane-content-padding-x: var( --kendo-dock-manager-pane-content-padding-x, k-spacing(3) ) !default;
 /// The vertical padding of the pane content in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-content-padding-y: k-spacing(3) !default;
+$kendo-dock-manager-pane-content-padding-y: var( --kendo-dock-manager-pane-content-padding-y, k-spacing(3) ) !default;
 
 /// The horizontal padding of the tabbed pane in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-tabbed-pane-padding-y: null !default;
+$kendo-dock-manager-tabbed-pane-padding-y: var( --kendo-dock-manager-tabbed-pane-padding-y, null ) !default;
 /// The horizontal padding of the tabbed pane in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-tabbed-pane-padding-x: null !default;
+$kendo-dock-manager-tabbed-pane-padding-x: var( --kendo-dock-manager-tabbed-pane-padding-x, null ) !default;
 
 /// The width of the unpinned pane container in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-unpinned-container-width: 300px !default;
+$kendo-dock-manager-unpinned-container-width: var( --kendo-dock-manager-unpinned-container-width, 300px ) !default;
 /// The background-color of the unpinned pane container in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-unpinned-container-bg: k-color(app-surface) !default;
+$kendo-dock-manager-unpinned-container-bg: var( --kendo-dock-manager-unpinned-container-bg, k-color(app-surface) ) !default;
 /// The box shadow of the unpinned pane container in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-unpinned-container-shadow: 25.6px 0px 57.6px 0px rgba(0, 0, 0, 0.22), 4.8px 0px 14.4px 0px rgba(0, 0, 0, 0.18) !default;
+$kendo-dock-manager-unpinned-container-shadow: var( --kendo-dock-manager-unpinned-container-shadow, 25.6px 0px 57.6px 0px rgba(0, 0, 0, 0.22), 4.8px 0px 14.4px 0px rgba(0, 0, 0, 0.18) ) !default;
 
 /// The padding of the dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-padding: k-spacing(1.5) !default;
+$kendo-dock-indicator-padding: var( --kendo-dock-indicator-padding, k-spacing(1.5) ) !default;
 /// The background color of the dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-bg: k-color(surface-alt) !default;
+$kendo-dock-indicator-bg: var( --kendo-dock-indicator-bg, k-color(surface-alt) ) !default;
 /// The text color of the dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-text: k-color(primary) !default;
+$kendo-dock-indicator-text: var( --kendo-dock-indicator-text, k-color(primary) ) !default;
 /// The outline width of the dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-outline-width: 1px !default;
+$kendo-dock-indicator-outline-width: var( --kendo-dock-indicator-outline-width, 1px ) !default;
 /// The outline style of the dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-outline-style: solid !default;
+$kendo-dock-indicator-outline-style: var( --kendo-dock-indicator-outline-style, solid ) !default;
 /// The outline color of the dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-outline: $kendo-dock-indicator-text !default;
+$kendo-dock-indicator-outline: var( --kendo-dock-indicator-outline, $kendo-dock-indicator-text ) !default;
 /// The box shadow of the dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-shadow: 0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 3px 5px -1px rgba(0, 0, 0, 0.20) !default;
+$kendo-dock-indicator-shadow: var( --kendo-dock-indicator-shadow, 0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 3px 5px -1px rgba(0, 0, 0, 0.20) ) !default;
 
 ///  The background color of the hovered dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-hover-bg: k-color(primary-hover) !default;
+$kendo-dock-indicator-hover-bg: var( --kendo-dock-indicator-hover-bg, k-color(primary-hover) ) !default;
 /// The text color of the hovered dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-hover-text: k-color(app-surface) !default;
+$kendo-dock-indicator-hover-text: var( --kendo-dock-indicator-hover-text, k-color(app-surface) ) !default;
 
 /// The width of the border around the dropping area in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-dock-preview-border-width: 1px !default;
+$kendo-dock-manager-dock-preview-border-width: var( --kendo-dock-manager-dock-preview-border-width, 1px ) !default;
 /// The style of the border around the dropping area in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-dock-preview-border-style: dashed !default;
+$kendo-dock-manager-dock-preview-border-style: var( --kendo-dock-manager-dock-preview-border-style, dashed ) !default;
 /// The border radius of the dropping area in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-dock-preview-border-radius: var( --kendo-border-radius-md, 0) !default;
+$kendo-dock-manager-dock-preview-border-radius: var( --kendo-dock-manager-dock-preview-border-radius, var( --kendo-border-radius-md, 0) ) !default;
 /// The background color of the dropping area in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-dock-preview-bg: color-mix(in srgb, k-color(primary) 20%, transparent) !default;
+$kendo-dock-manager-dock-preview-bg: var( --kendo-dock-manager-dock-preview-bg, color-mix(in srgb, k-color(primary) 20%, transparent) ) !default;
 /// The border color of the dropping area in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-dock-preview-border: k-color(primary) !default;
+$kendo-dock-manager-dock-preview-border: var( --kendo-dock-manager-dock-preview-border, k-color(primary) ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/dock-manager/_variables.scss" with (
+    $kendo-dock-manager-border-width: $kendo-dock-manager-border-width,
+    $kendo-dock-manager-border-style: $kendo-dock-manager-border-style,
+    $kendo-dock-manager-border: $kendo-dock-manager-border,
+    $kendo-dock-manager-pane-header-padding-y: $kendo-dock-manager-pane-header-padding-y,
+    $kendo-dock-manager-pane-header-padding-x: $kendo-dock-manager-pane-header-padding-x,
+    $kendo-dock-manager-pane-header-border-width: $kendo-dock-manager-pane-header-border-width,
+    $kendo-dock-manager-pane-header-border-style: $kendo-dock-manager-pane-header-border-style,
+    $kendo-dock-manager-pane-header-bg: $kendo-dock-manager-pane-header-bg,
+    $kendo-dock-manager-pane-title-padding-y: $kendo-dock-manager-pane-title-padding-y,
+    $kendo-dock-manager-pane-title-padding-x: $kendo-dock-manager-pane-title-padding-x,
+    $kendo-dock-manager-pane-title-font-family: $kendo-dock-manager-pane-title-font-family,
+    $kendo-dock-manager-pane-title-font-size: $kendo-dock-manager-pane-title-font-size,
+    $kendo-dock-manager-pane-title-line-height: $kendo-dock-manager-pane-title-line-height,
+    $kendo-dock-manager-pane-title-font-weight: $kendo-dock-manager-pane-title-font-weight,
+    $kendo-dock-manager-pane-content-padding-x: $kendo-dock-manager-pane-content-padding-x,
+    $kendo-dock-manager-pane-content-padding-y: $kendo-dock-manager-pane-content-padding-y,
+    $kendo-dock-manager-tabbed-pane-padding-y: $kendo-dock-manager-tabbed-pane-padding-y,
+    $kendo-dock-manager-tabbed-pane-padding-x: $kendo-dock-manager-tabbed-pane-padding-x,
+    $kendo-dock-manager-unpinned-container-width: $kendo-dock-manager-unpinned-container-width,
+    $kendo-dock-manager-unpinned-container-bg: $kendo-dock-manager-unpinned-container-bg,
+    $kendo-dock-manager-unpinned-container-shadow: $kendo-dock-manager-unpinned-container-shadow,
+    $kendo-dock-indicator-padding: $kendo-dock-indicator-padding,
+    $kendo-dock-indicator-bg: $kendo-dock-indicator-bg,
+    $kendo-dock-indicator-text: $kendo-dock-indicator-text,
+    $kendo-dock-indicator-outline-width: $kendo-dock-indicator-outline-width,
+    $kendo-dock-indicator-outline-style: $kendo-dock-indicator-outline-style,
+    $kendo-dock-indicator-outline: $kendo-dock-indicator-outline,
+    $kendo-dock-indicator-shadow: $kendo-dock-indicator-shadow,
+    $kendo-dock-indicator-hover-bg: $kendo-dock-indicator-hover-bg,
+    $kendo-dock-indicator-hover-text: $kendo-dock-indicator-hover-text,
+    $kendo-dock-manager-dock-preview-border-width: $kendo-dock-manager-dock-preview-border-width,
+    $kendo-dock-manager-dock-preview-border-style: $kendo-dock-manager-dock-preview-border-style,
+    $kendo-dock-manager-dock-preview-border-radius: $kendo-dock-manager-dock-preview-border-radius,
+    $kendo-dock-manager-dock-preview-bg: $kendo-dock-manager-dock-preview-bg,
+    $kendo-dock-manager-dock-preview-border: $kendo-dock-manager-dock-preview-border
+);

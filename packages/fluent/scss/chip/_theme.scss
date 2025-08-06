@@ -1,92 +1,91 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/chip/_theme.scss" as *;
 
 @mixin kendo-chip--theme() {
 
-    .k-chip {
-        border-color: var( --kendo-chip-border, initial );
-        color: var( --kendo-chip-text, initial );
-        background-color: var( --kendo-chip-bg, initial );
+    @include kendo-chip--theme-base();
+
+    .k-chip.k-chip-solid-base {
+        border-color: $kendo-chip-border;
+        color: $kendo-chip-text;
+        background-color: $kendo-chip-bg;
 
         &:hover,
         &.k-hover {
-            --kendo-chip-text: var( --kendo-chip-hover-text );
-            --kendo-chip-bg: var( --kendo-chip-hover-bg );
-            --kendo-chip-border: var( --kendo-chip-hover-border );
+            color: $kendo-chip-hover-text;
+            background-color: $kendo-chip-hover-bg;
+            border-color: $kendo-chip-hover-border;
         }
 
         &:focus,
         &.k-focus {
-            --kendo-chip-text: var( --kendo-chip-focus-text );
-            --kendo-chip-bg: var( --kendo-chip-focus-bg );
-            --kendo-chip-border: var( --kendo-chip-focus-border );
+            color: $kendo-chip-focus-text;
+            background-color: $kendo-chip-focus-bg;
+            border-color: $kendo-chip-focus-border;
         }
 
         &.k-chip-outline:focus::after,
         &.k-chip-outline.k-focus::after {
-            outline-color: var( --kendo-chip-focus-outline, initial);
+            outline-color: $kendo-chip-focus-outline;
         }
 
         &.k-selected {
-            --kendo-chip-text: var( --kendo-chip-selected-text );
-            --kendo-chip-bg: var( --kendo-chip-selected-bg );
-            --kendo-chip-border: var( --kendo-chip-selected-border );
+            color: $kendo-chip-selected-text;
+            background-color: $kendo-chip-selected-bg;
+            border-color: $kendo-chip-selected-border;
         }
 
         &:disabled,
         &.k-disabled {
-            --kendo-chip-text: var( --kendo-chip-disabled-text );
-            --kendo-chip-bg: var( --kendo-chip-disabled-bg );
-            --kendo-chip-border: var( --kendo-chip-disabled-border );
+            color: $kendo-chip-disabled-text;
+            background-color: $kendo-chip-disabled-bg;
+            border-color: $kendo-chip-disabled-border;
         }
 
     }
 
-    @each $fill-mode, $theme-colors in $kendo-chip-theme-colors {
-        @each $theme-color, $color-props in $theme-colors {
-            $_text-color: map.get( $color-props, text );
-            $_bg: map.get( $color-props, bg );
-            $_border-color: map.get( $color-props, border );
+    @each $name, $color in $kendo-chip-theme-colors {
+        .k-chip-solid-#{$name} {
+            border-color: k-color(#{$name}-subtle);
+            &:hover,
+            &.k-hover {
+                border-color: k-color(#{$name}-subtle-hover);
+            }
+            &:focus,
+            &.k-focus {
+                border-color: k-color(#{$name}-on-subtle);
+                box-shadow: none;
+            }
+            &.k-selected {
+                border-color: k-color(#{$name}-subtle-active);
+            }
+        }
 
-            $_hover-text: map.get( $color-props, hover-text );
-            $_hover-bg: map.get( $color-props, hover-bg );
-            $_hover-border: map.get( $color-props, hover-border );
+        .k-chip-outline-#{$name} {
+            &:hover,
+            &.k-hover {
+                color: k-color(app-surface);
+                background-color: k-color(#{$name}-on-surface);
+                border-color: k-color(#{$name}-on-surface);
+            }
 
-            $_focus-text: map.get( $color-props, focus-text );
-            $_focus-bg: map.get( $color-props, focus-bg );
-            $_focus-border: map.get( $color-props, focus-border );
-            $_focus-outline: map.get( $color-props, focus-outline );
+            &:focus,
+            &.k-focus {
+                box-shadow: none;
+            }
 
-            $_selected-text: map.get( $color-props, selected-text );
-            $_selected-bg: map.get( $color-props, selected-bg );
-            $_selected-border: map.get( $color-props, selected-border );
+            &.k-selected {
+                color: k-color(app-surface);
+                background-color: k-color(#{$name}-on-surface);
+                border-color: k-color(#{$name}-on-surface);
+            }
 
-            $_disabled-text: map.get( $color-props, disabled-text );
-            $_disabled-bg: map.get( $color-props, disabled-bg );
-            $_disabled-border: map.get( $color-props, disabled-border );
-
-            .k-chip-#{$fill-mode}-#{$theme-color} {
-                --kendo-chip-text: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-text, #{$_text-color} );
-                --kendo-chip-bg: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-bg, #{$_bg} );
-                --kendo-chip-border: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-border, #{$_border-color} );
-
-                --kendo-chip-hover-text: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-hover-text, #{$_hover-text} );
-                --kendo-chip-hover-bg: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-hover-bg, #{$_hover-bg} );
-                --kendo-chip-hover-border: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-hover-border, #{$_hover-border} );
-
-                --kendo-chip-focus-text: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-text, #{$_focus-text} );
-                --kendo-chip-focus-bg: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-bg, #{$_focus-bg} );
-                --kendo-chip-focus-border: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-border, #{$_focus-border} );
-                --kendo-chip-focus-outline: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-outline, #{$_focus-outline} );
-
-                --kendo-chip-selected-text: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-selected-text, #{$_selected-text} );
-                --kendo-chip-selected-bg: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-selected-bg, #{$_selected-bg} );
-                --kendo-chip-selected-border: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-selected-border, #{$_selected-border} );
-
-                --kendo-chip-disabled-text: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-disabled-text, #{$_disabled-text} );
-                --kendo-chip-disabled-bg: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-disabled-bg, #{$_disabled-bg} );
-                --kendo-chip-disabled-border: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-disabled-border, #{$_disabled-border} );
+            @if ($name == "warning") {
+                color: k-color(#{$name}-on-surface);
+                background-color: transparent;
+                border-color: currentColor;
             }
         }
     }

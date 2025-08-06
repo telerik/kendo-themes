@@ -3,17 +3,17 @@
 
 /// The border width of the Avatar.
 /// @group avatar
-$kendo-avatar-border-width: 1px !default;
+$kendo-avatar-border-width: var( --kendo-avatar-border-width, 1px ) !default;
 
 /// The font family of the Avatar.
 /// @group avatar
-$kendo-avatar-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-avatar-font-family: var( --kendo-avatar-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// The font size of the Avatar.
 /// @group avatar
-$kendo-avatar-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-avatar-font-size: var( --kendo-avatar-font-size, var( --kendo-font-size, inherit ) ) !default;
 /// The line height of the Avatar.
 /// @group avatar
-$kendo-avatar-line-height: var( --kendo-line-height, inherit ) !default;
+$kendo-avatar-line-height: var( --kendo-avatar-line-height, var( --kendo-line-height, inherit ) ) !default;
 
 /// The sizes map of the Avatar.
 /// @group avatar
@@ -23,84 +23,26 @@ $kendo-avatar-sizes: (
     lg: k-spacing(16)
 ) !default;
 
-/// The theme variations for the Avatar.
-/// @group avatar
-$kendo-avatar-brand-colors: (
-    primary: primary,
-    error: error,
-    success: success,
-    info: info,
-    secondary: secondary,
-    tertiary: tertiary,
- ) !default;
-
-// Matrices with Avatar theme colors in the order: bg, color, border
-$_tc-avatar-matrix: (
-    solid: (
-        normal: (color, on-color, color)
-    ),
-    outline: (
-        normal: (on-color, color, color)
-    )
-) !default;
-
-$_tc-avatar-warning-matrix: (
-    solid: (
-        normal: (color, on-color, color)
-    ),
-    outline: (
-        normal: (app-surface, color, color)
-    )
-) !default;
-
-$_tc-avatar-dark-matrix: (
-    solid: (
-        normal: (color, on-color, color)
-    ),
-    outline: (
-        normal: (on-color, color, color)
-    )
-) !default;
-
-$_tc-avatar-light-matrix: (
-    solid: (
-        normal: (color, on-color, color)
-    ),
-    outline: (
-        normal: (app-surface, color, color)
-    )
-) !default;
-
 /// The theme colors map for the Avatar variations.
 /// @group avatar
-$kendo-avatar-theme-colors: () !default;
+$kendo-avatar-theme-colors: (
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+) !default;
 
-@each $fill-mode, $ui-states in $_tc-avatar-matrix {
-    @each $brand-color, $palette in $kendo-avatar-brand-colors {
-        $kendo-avatar-theme-colors: map.deep-merge(
-            $kendo-avatar-theme-colors,
-            k-generate-fill-mode-theme-variation( $fill-mode, $brand-color, $palette, $ui-states )
-        );
-    };
-}
-
-@each $fill-mode, $ui-states in $_tc-avatar-warning-matrix {
-    $kendo-avatar-theme-colors: map.deep-merge(
-        $kendo-avatar-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, warning, warning, $ui-states )
-    );
-}
-
-@each $fill-mode, $ui-states in $_tc-avatar-dark-matrix {
-    $kendo-avatar-theme-colors: map.deep-merge(
-        $kendo-avatar-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, dark, dark, $ui-states )
-    );
-}
-
-@each $fill-mode, $ui-states in $_tc-avatar-light-matrix {
-    $kendo-avatar-theme-colors: map.deep-merge(
-        $kendo-avatar-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, light, light, $ui-states )
-    );
-}
+@forward "@progress/kendo-theme-core/scss/components/avatar/_variables.scss" with (
+    $kendo-avatar-border-width: $kendo-avatar-border-width,
+    $kendo-avatar-font-family: $kendo-avatar-font-family,
+    $kendo-avatar-font-size: $kendo-avatar-font-size,
+    $kendo-avatar-line-height: $kendo-avatar-line-height,
+    $kendo-avatar-sizes: $kendo-avatar-sizes,
+    $kendo-avatar-theme-colors: $kendo-avatar-theme-colors
+);

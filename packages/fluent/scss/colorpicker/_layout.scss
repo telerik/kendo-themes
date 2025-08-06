@@ -1,15 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/colorpicker/_layout.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-color-picker--layout() {
-
-    // Color picker
-    .k-color-picker {
-        width: min-content;
-    }
-
-    // Alias
-    .k-colorpicker {
-        @extend .k-color-picker !optional;
-    }
-
+    @include kendo-color-picker--layout-base();
 }

@@ -2,333 +2,36 @@
 @use "sass:math";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
-@use "../input/_variables.scss" as *;
-@use "../core/spacing/_index.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/forms/_layout.scss" as *;
 
 @mixin kendo-form--layout() {
+    @include kendo-form--layout-base();
 
-    // Common
     .k-form,
     .k-form-inline {
-        font-size: var( --kendo-form-font-size, #{$kendo-form-font-size} );
-        line-height: var( --kendo-form-line-height, #{$kendo-form-line-height} );
-
         .k-form-field > .k-label {
-            font-weight: var( --kendo-form-label-font-weight, #{$kendo-form-label-font-weight} );
+            font-weight: $kendo-form-label-font-weight;
         }
     }
 
-    // Label
-    kendo-label > .k-label {
-        margin: 0;
-    }
-
-    .k-label-optional {
-        margin-inline-start: var( --kendo-label-optional-margin-x, #{$kendo-label-optional-margin-x} );
-        font-size: var( --kendo-label-optional-font-size, #{$kendo-label-optional-font-size} );
-        font-style: var( --kendo-label-optional-font-style, #{$kendo-label-optional-font-style} );
-        align-self: center;
-    }
-
-    .k-label-empty {
-        &::before {
-            content: "";
-            display: inline-block;
-        }
-    }
-
-
-
-    // Vertical Form
     .k-form {
-        border: 0;
-
-        .k-form-field > .k-label,
-        .k-form-field > kendo-label,
-        .k-form-label {
-            margin-block-end: var( --kendo-form-label-margin-bottom, #{$kendo-form-label-margin-bottom} );
-            display: flex;
-            flex-flow: row nowrap;
-        }
-
-        .k-label + .k-radio {
-            margin-inline-start: 0;
-        }
-
-        .k-form-fieldset {
-            margin: var( --kendo-form-fieldset-margin, #{$kendo-form-fieldset-margin} );
-            padding: var( --kendo-form-fieldset-padding, #{$kendo-form-fieldset-padding} );
-            border: 0;
-
-            > * {
-                &:not(.k-hidden):first-child,
-                &.k-hidden + :not(.k-hidden) {
-                    margin-block-start: 0;
-                }
-            }
-        }
-
-        .k-form-legend {
-            margin: var( --kendo-form-legend-margin, #{$kendo-form-legend-margin} );
-            padding: var( --kendo-form-legend-padding, #{$kendo-form-legend-padding} );
-            border-width: var( --kendo-form-legend-border-width, #{$kendo-form-legend-border-width} );
-            border-style: var( --kendo-form-legend-border-style, #{$kendo-form-legend-border-style} );
-            width: var( --kendo-form-legend-width, #{$kendo-form-legend-width} );
-            font-size: var( --kendo-form-legend-font-size, #{$kendo-form-legend-font-size} );
-            text-transform: var( --kendo-form-legend-text-transform, #{$kendo-form-legend-text-transform} );
-        }
-
-
-        // Form group
-        .k-form-group {
-            padding: 0;
-        }
-
-        > * {
-            &:not(.k-hidden):first-child,
-            &.k-hidden + :not(.k-hidden) {
-                margin-block-start: 0;
-            }
-        }
-
-        // Form field
-        .k-form-field,
-        .k-form-field-wrap {
-            display: block;
-        }
-
-
-        .k-alert-error {
-            font-size: var( --kendo-font-size-sm, #{$kendo-font-size-sm} );
-            margin-block-start: calc( #{k-spacing(1)} * 2 );
-        }
-
-        .k-field-info {
-            display: inline-block;
-            font-size: var( --kendo-font-size-xs, #{$kendo-font-size-xs} );
-            line-height: 1;
-            margin-inline: k-spacing(2);
-        }
-
-
-        .k-multiselect,
-        .k-floating-label-container,
-        .k-daterangepicker .k-dateinput,
-        .k-signature {
-            display: inline-flex;
-            width: 100%;
+        .k-form-buttons {
+            margin-block-start: calc( var( --kendo-form-rows-spacing-md, #{map.get($kendo-form-sizes, md, form-rows-spacing)} ) * 2 );
         }
     }
 
-    // Form Buttons Container
-    .k-form-buttons {
-        @extend .k-actions !optional;
-        padding: 0;
-        overflow: visible;
-    }
-
-    // Form Hint/Error Messages
-    .k-form-hint,
-    .k-form-error {
-        margin-block-start: var( --kendo-form-hint-margin-top, #{$kendo-form-hint-margin-top} );
-        display: flex;
-        font-size: var( --kendo-form-hint-font-size, #{$kendo-form-hint-font-size} );
-        font-style: var( --kendo-form-hint-font-style, #{$kendo-form-hint-font-style} );
-    }
-
-    .k-text-start,
-    .k-buttons-start {
-        justify-content: flex-start;
-    }
-
-    .k-text-end,
-    .k-buttons-end {
-        justify-content: flex-end;
-    }
-
-    // Form Separator
-    .k-form-separator {
-        margin: var( --kendo-form-separator-margin, #{$kendo-form-separator-margin} );
-        border-width: 1px 0 0;
-        border-style: solid;
-        display: block;
-        flex: 0 0 auto;
-    }
-
-    // Horizontal Form
-    .k-form-horizontal {
-        .k-form-field {
-            display: flex;
-
-            > .k-label,
-            > kendo-label,
-            > .k-form-label {
-                margin-inline-end: var( --kendo-horizontal-form-label-margin-x, #{$kendo-horizontal-form-label-margin-x} );
-                padding-block-start: var( --kendo-horizontal-form-label-padding-top, #{$kendo-horizontal-form-label-padding-top} );
-                width: var( --kendo-horizontal-form-label-width, #{$kendo-horizontal-form-label-width} );
-                text-align: end;
-                flex-direction: column;
-                align-items: var( --kendo-horizontal-form-label-align, #{$kendo-horizontal-form-label-align} );
-                justify-content: flex-start;
-            }
-            .k-label-optional {
-                margin: 0;
-                align-self: inherit;
-            }
-        }
-
-        .k-form-field-wrap {
-            max-width: var( --kendo-horizontal-form-field-wrap-max-width, #{$kendo-horizontal-form-field-wrap-max-width} );
-            flex: 1 1 auto;
-        }
-    }
-
-    // Sizes
     @each $size, $size-props in $kendo-form-sizes {
         $_form-rows-spacing: map.get($size-props, form-rows-spacing);
 
         .k-form-#{$size} {
-            .k-form-field {
-                margin-block-start: var( --kendo-form-rows-spacing-#{$size}, #{$_form-rows-spacing} );
-            }
-
             .k-form-buttons {
                 margin-block-start: calc( var( --kendo-form-rows-spacing-#{$size}, #{$_form-rows-spacing} ) * 2 );
             }
         }
     }
 
-    // Scheduler
-    .k-form-inline {
-        padding: var( --kendo-form-spacer, #{$kendo-form-spacer} );
-
-        fieldset {
-            border-width: 1px 0 0;
-            border-style: solid;
-            margin-block: calc( var( --kendo-form-spacer, #{$kendo-form-spacer}) * 2 );
-            padding: 0;
-
-            &:first-child:first-of-type {
-                margin-block-start: 0;
-            }
-
-            &:last-child:last-of-type {
-                margin-block-end: 0;
-            }
-        }
-
-        legend {
-            font-size: var( --kendo-font-size-sm, #{$kendo-font-size-sm} );
-            text-align: start;
-            font-weight: 600;
-            line-height: 1;
-            margin-block-end: calc( #{k-spacing(1.5)} * 2 );
-            text-transform: uppercase;
-            padding-inline-end: k-spacing(2);
-            width: auto;
-        }
-
-        .k-form-field {
-            display: flex;
-            align-items: flex-start;
-            text-align: start;
-            margin-block-end: calc( #{k-spacing(1.5)} * 2 );
-
-            > span:not(.k-widget) {
-                width: var( --kendo-inline-form-element-width, #{$kendo-inline-form-element-width} );
-                text-align: end;
-                line-height: var( --kendo-line-height, #{$kendo-line-height-md} );
-                padding-block: calc( #{k-spacing(1)} + #{$kendo-input-border-width} );
-                padding-inline-end: k-spacing(3);
-                align-self: center;
-            }
-
-            > input {
-                align-self: center;
-            }
-
-            > input:not(.k-checkbox, .k-radio) {
-                flex: 1 1 auto;
-            }
-
-            .k-alert-error {
-                font-size: var( --kendo-font-size-sm, #{$kendo-font-size-sm} );
-                margin-block-start: calc( #{k-spacing(1)} * 2 );
-            }
-
-            .k-field-info {
-                display: block;
-                font-size: var( --kendo-font-size-xs, #{$kendo-font-size-xs} );
-                line-height: 1;
-                margin: 0;
-            }
-
-            &:last-child {
-                margin-block-end: 0;
-            }
-        }
-    }
-
-    // Edit form
-    .k-edit-form-container {
-        width: 400px;
-        min-width: 400px;
-        border-color: inherit;
-        position: relative;
-    }
-
-
-    // Action buttons
     .k-popup-edit-form > .k-actions,
     .k-edit-form-container .k-actions {
         margin: k-spacing(4) calc( -1 * #{k-spacing(6)} ) calc( -1 * k-spacing(3) );
-    }
-
-
-    .k-edit-label {
-        margin-block-end: k-spacing(4);
-        padding-block: calc( #{$kendo-input-md-padding-y} + #{$kendo-input-border-width} );
-        width: 30%;
-        line-height: var( --kendo-form-line-height, #{$kendo-form-line-height} );
-        text-align: end;
-        float: left;
-        clear: both;
-    }
-    .k-edit-field {
-        margin-block-end: k-spacing(4);
-        width: 65%;
-        float: right;
-        clear: right;
-        position: relative;
-
-        &.k-no-editor {
-            padding-block: calc( #{$kendo-input-md-padding-y} + #{$kendo-input-border-width} );
-        }
-    }
-
-    .k-edit-field {
-
-        > .k-widget {
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        input[type="radio"]:not(.k-radio),
-        input[type="checkbox"]:not(.k-checkbox) {
-            margin-inline-end: .4ex;
-        }
-
-        .k-radio-label,
-        .k-checkbox-label {
-            margin-inline-end: k-spacing(4);
-        }
-
-        > .k-reset > li + li {
-            margin-block-start: k-spacing(2);
-        }
-
-        .k-reset .k-widget {
-            margin: 0 .4ex 0 1ex;
-        }
     }
 }

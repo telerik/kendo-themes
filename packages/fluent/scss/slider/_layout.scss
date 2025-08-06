@@ -1,42 +1,21 @@
 @use "sass:math";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/slider/_layout.scss" as *;
 
 @mixin kendo-slider--layout() {
 
-    // Slider
+    @include kendo-slider--layout-base();
+
     .k-slider {
         width: min-content;
         height: min-content;
-        border: 0;
-        box-sizing: border-box;
-        outline: 0;
-        font-family: var( --kendo-slider-font-family, #{$kendo-slider-font-family} );
-        font-size: var( --kendo-slider-font-size, #{$kendo-slider-font-size} );
-        line-height: var( --kendo-slider-line-height, #{$kendo-slider-line-height} );
-        background: none;
-        display: inline-flex;
-        align-items: center;
-        gap: var( --kendo-slider-spacing, #{$kendo-slider-spacing} );
-        position: relative;
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
+        gap: $kendo-slider-spacing;
 
         .k-label {
-            width: auto;
             font-size: .875em;
-            line-height: 1;
-            white-space: nowrap;
             pointer-events: all;
-            position: absolute;
         }
-
 
         &[disabled],
         &.k-disabled {
@@ -48,33 +27,17 @@
         }
     }
 
-    // Slider button
-    .k-slider-button {
-        flex: none;
-    }
-
-
-    // Slider track
+    // Fluent uses k-slider-thumb instead of k-draghandle
     .k-slider-track-wrap {
         flex-grow: 1;
-        display: flex;
-        flex-flow: inherit;
         justify-content: space-between;
-        position: relative;
-        touch-action: none;
     }
     .k-slider-track {
-        margin: 0;
-        padding: 0;
-        border-radius: var( --kendo-slider-track-border-radius, #{$kendo-slider-track-border-radius} );
-        position: absolute;
+        border-radius: $kendo-slider-track-border-radius;
         z-index: 2;
     }
     .k-slider-selection {
-        margin: 0;
-        padding: 0;
-        border-radius: var( --kendo-slider-track-border-radius, #{$kendo-slider-track-border-radius} );
-        position: absolute;
+        border-radius: $kendo-slider-track-border-radius;
 
         &:active,
         &.k-active {
@@ -82,11 +45,11 @@
         }
     }
     .k-slider-thumb {
-        width: var( --kendo-slider-thumb-size, #{$kendo-slider-thumb-size} );
-        height: var( --kendo-slider-thumb-size, #{$kendo-slider-thumb-size} );
+        width: $kendo-slider-thumb-size;
+        height: $kendo-slider-thumb-size;
         border-style: solid;
-        border-width: var( --kendo-slider-thumb-border-widths, #{$kendo-slider-thumb-border-width} );
-        border-radius: var( --kendo-slider-thumb-border-radius, #{$kendo-slider-thumb-border-radius} );
+        border-width: $kendo-slider-thumb-border-width;
+        border-radius: $kendo-slider-thumb-border-radius;
         background-color: transparent;
         background-repeat: no-repeat;
         outline: 0;
@@ -100,15 +63,12 @@
         }
     }
 
-
     // Slider ticks
     .k-slider-items {
         display: contents;
         pointer-events: none;
     }
     .k-slider-tick {
-        margin: 0;
-        padding: 0;
         background-color: transparent;
         background-position: center center;
         background-repeat: no-repeat;
@@ -128,29 +88,14 @@
         min-height: 100%;
     }
 
-
     // Horizontal slider
     .k-horizontal-slider {
-        width: var( --kendo-slider-size, #{$kendo-slider-size} );
-        flex-flow: row nowrap;
+        width: $kendo-slider-size;
 
-        // Slider track
         .k-slider-track-wrap {
-            height: var( --kendo-slider-alt-size, #{$kendo-slider-alt-size} );
+            height: $kendo-slider-alt-size;
         }
-        .k-slider-track {
-            width: 100%;
-            height: var( --kendo-slider-track-size, #{$kendo-slider-track-size} );
-            inset-inline-start: 0;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        .k-slider-selection {
-            width: calc( (var( --kendo-slider-end, 0) - var( --kendo-slider-start, 0)) * 1% );
-            height: 100%;
-            inset-inline-start: calc( var( --kendo-slider-start, 0) * 1% );
-            top: 0;
-        }
+
         .k-slider-thumb {
             top: 50%;
             transform: translate(-50%, -50%);
@@ -166,42 +111,6 @@
             inset-inline-start: calc( var( --kendo-slider-end, 0) * 1% );
         }
 
-        // Slider ticks
-        .k-tick { background-position: center -92px; }
-        .k-slider-topleft .k-tick { background-position: center -122px; }
-        .k-slider-bottomright .k-tick { background-position: center -152px; }
-
-        .k-tick-large { background-position: center -2px; }
-        .k-slider-topleft .k-tick-large { background-position: center -32px; }
-        .k-slider-bottomright .k-tick-large { background-position: center -62px; }
-
-        .k-first { background-position: 0 -92px; }
-        .k-tick-large.k-first { background-position: 0 -2px; }
-        .k-slider-topleft .k-first { background-position: 0 -122px; }
-        .k-slider-topleft .k-tick-large.k-first { background-position: 0 -32px; }
-        .k-slider-bottomright .k-first { background-position: 0 -152px; }
-        .k-slider-bottomright .k-tick-large.k-first { background-position: 0 -62px; }
-
-        .k-last { background-position: 100% -92px; }
-        .k-tick-large.k-last { background-position: 100% -2px; }
-        .k-slider-topleft .k-last { background-position: 100% -122px; }
-        .k-slider-topleft .k-tick-large.k-last { background-position: 100% -32px; }
-        .k-slider-bottomright .k-last { background-position: 100% -152px; }
-        .k-slider-bottomright .k-tick-large.k-last { background-position: 100% -62px; }
-
-
-        // Slider labels
-        .k-label {
-            inset-inline-start: 50%;
-            bottom: -1.2em;
-            transform: translateX(-50%);
-        }
-        .k-first .k-label { inset-inline-start: 0; }
-        .k-last .k-label { inset-inline-start: 100%; }
-        .k-slider-topleft .k-label {
-            top: -1.2em;
-        }
-
         // Transitions
         &.k-slider-transitions {
             .k-slider-selection {
@@ -213,27 +122,12 @@
         }
     }
 
-
     // Vertical slider
     .k-vertical-slider {
-        height: var( --kendo-slider-size, #{$kendo-slider-size} );
-        flex-flow: column-reverse nowrap;
+        height: $kendo-slider-size;
 
-        // Slider track
         .k-slider-track-wrap {
-            width: var( --kendo-slider-alt-size, #{$kendo-slider-alt-size} );
-        }
-        .k-slider-track {
-            width: var( --kendo-slider-track-size, #{$kendo-slider-track-size} );
-            height: 100%;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .k-slider-selection {
-            width: 100%;
-            bottom: calc( var( --kendo-slider-start, 0) * 1% );
-            height: calc( (var( --kendo-slider-end, 0) - var( --kendo-slider-start, 0)) * 1% );
+            width: $kendo-slider-alt-size;
         }
         .k-slider-thumb {
             left: 50%;
@@ -250,54 +144,6 @@
             bottom: calc( var( --kendo-slider-end, 0) * 1% );
         }
 
-
-        // Slider ticks
-        .k-tick {
-            text-align: end;
-            margin-left: 2px;
-        }
-        .k-slider-topleft .k-tick {
-            text-align: start;
-        }
-
-        .k-tick { background-position: -94px center; }
-        .k-slider-topleft .k-tick { background-position: -124px center; }
-        .k-slider-bottomright .k-tick { background-position: -154px center; }
-
-        .k-tick-large { background-position: -4px center; }
-        .k-slider-topleft .k-tick-large { background-position: -34px center; }
-        .k-slider-bottomright .k-tick-large { background-position: -64px center; }
-
-        .k-first { background-position: -94px 100%; }
-        .k-tick-large.k-first { background-position: -4px 100%; }
-        .k-slider-topleft .k-first { background-position: -124px 100%; }
-        .k-slider-topleft .k-tick-large.k-first { background-position: -34px 100%; }
-        .k-slider-bottomright .k-first { background-position: -154px 100%; }
-        .k-slider-bottomright .k-tick-large.k-first { background-position: -64px 100%; }
-
-        .k-last { background-position: -94px 0; }
-        .k-tick-large.k-last { background-position: -4px 0; }
-        .k-slider-topleft .k-last { background-position: -124px 0; }
-        .k-slider-topleft .k-tick-large.k-last { background-position: -34px 0; }
-        .k-slider-bottomright .k-last { background-position: -154px 0; }
-        .k-slider-bottomright .k-tick-large.k-last { background-position: -64px 0; }
-
-
-        // Slider labels
-        .k-label {
-            text-align: start;
-            inset-inline-start: 120%;
-            inset-inline-end: auto;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        .k-first .k-label { top: 100%; }
-        .k-last .k-label { top: 0; }
-        .k-slider-topleft .k-label {
-            inset-inline-start: auto;
-            inset-inline-end: 120%;
-        }
-
         // Transitions
         &.k-slider-transitions {
             .k-slider-selection {
@@ -307,22 +153,9 @@
                 transition: bottom $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-transition-speed $kendo-slider-transition-function, transform $kendo-slider-thumb-transition-speed $kendo-slider-thumb-transition-function;
             }
         }
-
     }
 
-
-    // Slider readonly
-    .k-slider.k-readonly {
-        .k-slider-button,
-        .k-slider-track,
-        .k-slider-tick,
-        .k-slider-thumb {
-            pointer-events: none;
-        }
-    }
-
-
-    // RTL
+    // RTL specific for fluent thumb classes
     .k-slider-rtl {
         &.k-horizontal-slider {
             .k-slider-thumb {
@@ -332,28 +165,10 @@
             .k-slider-thumb:active {
                 transform: if( $kendo-slider-thumb-active-scale, translate(50%, -50%) scale($kendo-slider-thumb-active-scale), null );
             }
-            .k-label {
-                transform: translateX(50%);
-            }
-        }
-        &.k-vertical-slider {
-
         }
     }
-    .k-slider[dir="rtl"],
-    [dir="rtl"] .k-slider,
-    .k-slider.k-rtl,
-    .k-rtl .k-slider {
-        @extend .k-slider-rtl !optional;
-    }
 
-
-    // Angular specific
-    .k-slider kendo-resize-sensor {
-        position: absolute;
-    }
-
-    // Aliases
+    // Aliases - fluent specific thumb classes
     .k-slider .k-button { @extend .k-slider-button !optional; }
     .k-tick { @extend .k-slider-tick !optional; }
     .k-draghandle { @extend .k-slider-thumb !optional; }

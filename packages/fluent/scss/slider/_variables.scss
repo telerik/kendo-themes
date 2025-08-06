@@ -4,140 +4,157 @@
 
 /// The default size of the Slider.
 /// @group slider
-$kendo-slider-size: 200px !default;
+$kendo-slider-size: var( --kendo-slider-size, 200px ) !default;
 /// The default size of the Slider's track wrap.
 /// @group slider
-$kendo-slider-alt-size: 26px !default;
+$kendo-slider-alt-size: var( --kendo-slider-alt-size, 26px ) !default;
 /// The spacing of the Slider.
 /// @group slider
-$kendo-slider-spacing: k-spacing(2) !default;
+$kendo-slider-spacing: var( --kendo-slider-spacing, #{k-spacing(2)} ) !default;
 
 /// The font family of the Slider.
 /// @group slider
-$kendo-slider-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-slider-font-family: var( --kendo-slider-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// The font size of the Slider.
 /// @group slider
-$kendo-slider-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-slider-font-size: var( --kendo-slider-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
 /// The line height of the Slider.
 /// @group slider
-$kendo-slider-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-slider-line-height: var( --kendo-slider-line-height, var( --kendo-line-height, normal ) ) !default;
 /// The text color of the Slider.
 /// @group slider
-$kendo-slider-text: inherit !default;
+$kendo-slider-text: var( --kendo-slider-text, inherit ) !default;
 
 /// The size of the Slider track.
 /// @group slider
-$kendo-slider-track-size: k-spacing(1) !default;
+$kendo-slider-track-size: var( --kendo-slider-track-size, #{k-spacing(1)} ) !default;
 /// The border radius of the Slider track.
 /// @group slider
-$kendo-slider-track-border-radius: k-spacing(0.5) !default;
+$kendo-slider-track-border-radius: var( --kendo-slider-track-border-radius, #{k-spacing(0.5)} ) !default;
 /// The background color of the Slider track.
 /// @group slider
-$kendo-slider-track-bg: k-color(base-emphasis) !default;
+$kendo-slider-track-bg: var( --kendo-slider-track-bg, #{k-color(base-emphasis)} ) !default;
 /// The border color of the Slider track.
 /// @group slider
-$kendo-slider-track-border: inherit !default;
+$kendo-slider-track-border: var( --kendo-slider-track-border, inherit ) !default;
 
 /// The background color of the Slider's track selection.
 /// @group slider
-$kendo-slider-selection-bg: k-color(primary) !default;
+$kendo-slider-selection-bg: var( --kendo-slider-selection-bg, #{k-color(primary)} ) !default;
 
 /// The default size of the Slider thumb.
 /// @group slider
-$kendo-slider-thumb-size: 16px !default;
+$kendo-slider-thumb-size: var( --kendo-slider-thumb-size, 16px ) !default;
 /// The default border width of the Slider thumb.
 /// @group slider
-$kendo-slider-thumb-border-width: k-spacing(0.5) !default;
+$kendo-slider-thumb-border-width: var( --kendo-slider-thumb-border-width, #{k-spacing(0.5)} ) !default;
 /// The border radius of the Slider thumb.
 /// @group slider
-$kendo-slider-thumb-border-radius: 999em !default;
+$kendo-slider-thumb-border-radius: var( --kendo-slider-thumb-border-radius, 999em ) !default;
 /// The transition scale of the active Slider thumb.
 /// @group slider
 $kendo-slider-thumb-active-scale: null !default;
 
 /// The background color of the Slider thumb.
 /// @group slider
-$kendo-slider-thumb-bg: k-color(surface-alt) !default;
+$kendo-slider-thumb-bg: var( --kendo-slider-thumb-bg, #{k-color(surface-alt)} ) !default;
 /// The text color of the Slider thumb.
 /// @group slider
-$kendo-slider-thumb-text: inherit !default;
+$kendo-slider-thumb-text: var( --kendo-slider-thumb-text, inherit ) !default;
 /// The border color of the Slider thumb.
 /// @group slider
-$kendo-slider-thumb-border: k-color(primary) !default;
+$kendo-slider-thumb-border: var( --kendo-slider-thumb-border, #{k-color(primary)} ) !default;
 /// The gradient of the Slider thumb.
 /// @group slider
-$kendo-slider-thumb-gradient: transparent !default;
+$kendo-slider-thumb-gradient: var( --kendo-slider-thumb-gradient, transparent ) !default;
 
 /// The background color of the hovered Slider thumb.
 /// @group slider
-$kendo-slider-thumb-hover-bg: $kendo-slider-thumb-bg !default;
+$kendo-slider-thumb-hover-bg: var( --kendo-slider-thumb-hover-bg, #{$kendo-slider-thumb-bg} ) !default;
 /// The text color of the hovered Slider thumb.
 /// @group slider
-$kendo-slider-thumb-hover-text: inherit !default;
+$kendo-slider-thumb-hover-text: var( --kendo-slider-thumb-hover-text, inherit ) !default;
 /// The border color of the hovered Slider thumb.
 /// @group slider
-$kendo-slider-thumb-hover-border: k-color(primary-hover) !default;
+$kendo-slider-thumb-hover-border: var( --kendo-slider-thumb-hover-border, #{k-color(primary-hover)} ) !default;
 /// The gradient of the hovered Slider thumb.
 /// @group slider
-$kendo-slider-thumb-hover-gradient: transparent !default;
+$kendo-slider-thumb-hover-gradient: var( --kendo-slider-thumb-hover-gradient, transparent ) !default;
 
 /// The background color of the active Slider thumb.
 /// @group slider
-$kendo-slider-thumb-active-bg: $kendo-slider-thumb-hover-bg !default;
+$kendo-slider-thumb-active-bg: var( --kendo-slider-thumb-active-bg, #{$kendo-slider-thumb-hover-bg} ) !default;
 /// The text color of the active Slider thumb.
 /// @group slider
-$kendo-slider-thumb-active-text: inherit !default;
+$kendo-slider-thumb-active-text: var( --kendo-slider-thumb-active-text, inherit ) !default;
 /// The border color of the active Slider thumb.
 /// @group slider
-$kendo-slider-thumb-active-border: k-color(primary-active) !default;
+$kendo-slider-thumb-active-border: var( --kendo-slider-thumb-active-border, #{k-color(primary-active)} ) !default;
 /// The gradient of the active Slider thumb.
 /// @group slider
-$kendo-slider-thumb-active-gradient: transparent !default;
+$kendo-slider-thumb-active-gradient: var( --kendo-slider-thumb-active-gradient, transparent ) !default;
 
 /// The background color of the focused Slider thumb.
 /// @group slider
-$kendo-slider-thumb-focus-bg: $kendo-slider-thumb-hover-bg !default;
+$kendo-slider-thumb-focus-bg: var( --kendo-slider-thumb-focus-bg, #{$kendo-slider-thumb-hover-bg} ) !default;
 /// The text color of the focused Slider thumb.
 /// @group slider
-$kendo-slider-thumb-focus-text: inherit !default;
+$kendo-slider-thumb-focus-text: var( --kendo-slider-thumb-focus-text, inherit ) !default;
 /// The border color of the focused Slider thumb.
 /// @group slider
-$kendo-slider-thumb-focus-border: $kendo-slider-thumb-active-border !default;
+$kendo-slider-thumb-focus-border: var( --kendo-slider-thumb-focus-border, #{$kendo-slider-thumb-active-border} ) !default;
 /// The gradient of the focused Slider thumb.
 /// @group slider
-$kendo-slider-thumb-focus-gradient: transparent !default;
+$kendo-slider-thumb-focus-gradient: var( --kendo-slider-thumb-focus-gradient, transparent ) !default;
 
 /// The text color of the disabled Slider.
 /// @group slider
-$kendo-slider-disabled-text: color-mix(in srgb, k-color(on-app-surface) 70%, transparent) !default;
+$kendo-slider-disabled-text: var( --kendo-slider-disabled-text, #{color-mix(in srgb, k-color(on-app-surface) 70%, transparent)} ) !default;
 /// The background color of the disabled Slider track.
 /// @group slider
-$kendo-slider-track-disabled-bg: color-mix(in srgb, k-color(on-app-surface) 6%, transparent) !default;
+$kendo-slider-track-disabled-bg: var( --kendo-slider-track-disabled-bg, #{color-mix(in srgb, k-color(on-app-surface) 6%, transparent)} ) !default;
 /// The background color of the disabled Slider's track selection.
 /// @group slider
-$kendo-slider-selection-disabled-bg: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
+$kendo-slider-selection-disabled-bg: var( --kendo-slider-selection-disabled-bg, #{color-mix(in srgb, k-color(on-app-surface) 46%, transparent)} ) !default;
 /// The background color of the disabled Slider thumb.
 /// @group slider
-$kendo-slider-thumb-disabled-border: color-mix(in srgb, k-color(on-app-surface) 28%, transparent) !default;
+$kendo-slider-thumb-disabled-border: var( --kendo-slider-thumb-disabled-border, #{color-mix(in srgb, k-color(on-app-surface) 28%, transparent)} ) !default;
 
 
 /// The transition speed of the Slider.
 /// @group slider
-$kendo-slider-transition-speed: .3s !default;
+$kendo-slider-transition-speed: var( --kendo-slider-transition-speed, .3s ) !default;
 /// The transition function of the Slider.
 /// @group slider
-$kendo-slider-transition-function: ease-out !default;
+$kendo-slider-transition-function: var( --kendo-slider-transition-function, ease-out ) !default;
 
 /// The transition speed of the Slider thumb.
 /// @group slider
-$kendo-slider-thumb-transition-speed: .4s !default;
+$kendo-slider-thumb-transition-speed: var( --kendo-slider-thumb-transition-speed, .4s ) !default;
 /// The transition function of the Slider thumb.
 /// @group slider
-$kendo-slider-thumb-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
+$kendo-slider-thumb-transition-function: var( --kendo-slider-thumb-transition-function, cubic-bezier(.25, .8, .25, 1) ) !default;
 
 /// The background image of the horizontal Slider tick.
 /// @group slider
-$kendo-slider-tick-h-image: "data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
+$kendo-slider-tick-h-image: "data:image/gif;base64,R0lGODlhAQC0AIABALi4uAAAACH5BAEAAAEALAAAAAABALQAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
 /// The background image of the vertical Slider tick.
 /// @group slider
-$kendo-slider-tick-v-image: "data:image/gif;base64,R0lGODlhAQC0AIABALi4uAAAACH5BAEAAAEALAAAAAABALQAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
+$kendo-slider-tick-v-image: "data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
+
+@forward "@progress/kendo-theme-core/scss/components/slider/_variables.scss" with (
+    $kendo-slider-size: $kendo-slider-size,
+    $kendo-slider-alt-size: $kendo-slider-alt-size,
+    $kendo-slider-font-family: $kendo-slider-font-family,
+    $kendo-slider-font-size: $kendo-slider-font-size,
+    $kendo-slider-line-height: $kendo-slider-line-height,
+    $kendo-slider-transition-speed: $kendo-slider-transition-speed,
+    $kendo-slider-transition-function: $kendo-slider-transition-function,
+    $kendo-slider-track-bg: $kendo-slider-track-bg,
+    $kendo-slider-selection-bg: $kendo-slider-selection-bg,
+    $kendo-slider-tick-horizontal-image: $kendo-slider-tick-h-image,
+    $kendo-slider-tick-vertical-image: $kendo-slider-tick-v-image,
+    $kendo-slider-draghandle-active-scale: $kendo-slider-thumb-active-scale,
+    $kendo-slider-track-thickness: $kendo-slider-track-size,
+    $kendo-slider-draghandle-size: $kendo-slider-spacing
+);

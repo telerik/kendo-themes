@@ -1,318 +1,76 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/menu/_layout.scss" as *;
 
 @mixin kendo-menu--layout() {
+    @include kendo-menu--layout-base();
 
     // Menu bar
     .k-menu-bar {
-        border-width: var( --kendo-menu-border-width, #{$kendo-menu-border-width} );
-        border-style: solid;
-        box-sizing: border-box;
-        outline: 0;
-        font-family: var( --kendo-menu-font-family, #{$kendo-menu-font-family} );
-        font-size: var( --kendo-menu-font-size, #{$kendo-menu-font-size} );
-        line-height: var( --kendo-menu-line-height, #{$kendo-menu-line-height} );
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: stretch;
-        position: relative;
-        cursor: default;
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-
         > .k-separator {
             border-width: 0;
         }
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
     }
-    .k-menu { @extend .k-menu-bar !optional; }
 
-
-    // Menu item
+    // Menu item focus outline
     .k-menu-item {
-        border-width: 0;
-        outline: 0;
-        display: flex;
-        flex-flow: column nowrap;
-        flex: none;
-        position: relative;
-        user-select: none;
-
         &:focus,
         &:focus-visible,
         &.k-focus {
-            outline-offset: var( --kendo-menu-item-focus-outline-offset, #{$kendo-menu-item-focus-outline-offset} );
-            outline-width: var( --kendo-menu-item-focus-outline-width, #{$kendo-menu-item-focus-outline-width} );
-            outline-style: var( --kendo-menu-item-focus-outline-style, #{$kendo-menu-item-focus-outline-style} );
-        }
-
-        &.k-selected {
-            font-weight: var( --kendo-menu-item-selected-font-weight, #{$kendo-menu-item-selected-font-weight} );
+            outline-offset: $kendo-menu-item-focus-outline-offset;
+            outline-width: $kendo-menu-item-focus-outline-width;
+            outline-style: $kendo-menu-item-focus-outline-style;
         }
     }
 
-
-    // Menu link
-    .k-menu-link {
-        padding-inline: var( --kendo-menu-item-padding-x, #{$kendo-menu-item-padding-x} );
-        padding-block: var( --kendo-menu-item-padding-y, #{$kendo-menu-item-padding-y} );
-        outline: 0;
-        color: inherit;
-        display: flex;
-        flex-flow: row nowrap;
-        flex: 1 1 auto;
-        gap: var( --kendo-menu-item-icon-spacing, #{$kendo-menu-item-icon-spacing} );
-        align-items: center;
-        position: relative;
-        white-space: nowrap;
-        cursor: pointer;
-    }
-
-
-    // Menu item text
-    .k-menu-link-text {
-        display: flex;
-        flex-flow: row nowrap;
-        flex: 1 1 auto;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-
-    // Expand arrow
-    .k-menu-expand-arrow {
-        display: inline-flex;
-        flex-flow: row wrap;
-        align-items: center;
-        flex: none;
-        position: relative;
-    }
-
-
-    // Orientation -- horizontal
+    // Horizontal separator styling
     .k-menu-horizontal {
-        flex-direction: row;
-
-        > .k-menu-item + .k-menu-item {
-            margin-inline-start: var( --kendo-menu-item-spacing, #{$kendo-menu-item-spacing} );
-        }
-
         > .k-separator {
-            margin-block: var(--kendo-menu-separator-margin-block, #{$kendo-menu-separator-margin-block});
-            margin-inline: var(--kendo-menu-separator-margin-inline, #{$kendo-menu-separator-margin-inline});
-            width: 0;
-            height: auto;
-            border-left-width: var( --kendo-menu-separator-width, #{$kendo-menu-separator-width});
-            border-style: solid;
+            border-left-width: $kendo-menu-separator-width;
         }
     }
 
-
-    // Orientation -- vertical
-    .k-menu-vertical {
-        flex-direction: column;
-        width: 100%;
-
-        > .k-menu-item > .k-menu-link {
-            padding-inline-end: var( --kendo-menu-popup-md-item-padding-end, #{$kendo-menu-popup-md-item-padding-end} );
-        }
-
-        > .k-menu-item > .k-menu-link > .k-menu-expand-arrow {
-            margin-inline-start: var( --kendo-menu-popup-item-icon-md-margin-start, #{$kendo-menu-popup-item-icon-md-margin-start} );
-            margin-inline-end: var( --kendo-menu-popup-item-icon-md-margin-end, #{$kendo-menu-popup-item-icon-md-margin-end} );
-        }
-
-        > .k-menu-item + .k-menu-item {
-            margin-block-start: var( --kendo-menu-item-spacing, #{$kendo-menu-item-spacing} );
-        }
-
-        > .k-separator {
-            margin-block: var(--kendo-menu-separator-margin-inline, #{$kendo-menu-separator-margin-inline});
-            margin-inline: 0;
-            height: 0;
-            border-width: 1px 0 0;
-            border-style: solid;
-            display: block;
-        }
-    }
-
-
-    // Menu popup
-    .k-menu-popup {
-        padding-inline: var( --kendo-menu-popup-padding-x, #{$kendo-menu-popup-padding-x} );
-        padding-block: var( --kendo-menu-popup-padding-y, #{$kendo-menu-popup-padding-y} );
-        box-sizing: border-box;
-        border-width: var( --kendo-menu-popup-border-width, #{$kendo-menu-popup-border-width} );
-        border-style: solid;
-        overflow: auto;
-        max-height: 80vh;
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        .k-menu-item {
-            font-weight: initial;
-        }
-    }
-
-
-    // Sub menu
-    .k-menu-group {
-        font-size: var( --kendo-group-font-size, inherit );
-        line-height: var( --kendo-group-line-height, normal );
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        flex-flow: column nowrap;
-        gap: var( --kendo-menu-popup-item-spacing, #{$kendo-menu-popup-item-spacing} );
-        position: absolute;
-
-        .k-menu-link {
-            padding-inline-start: var( --kendo-menu-popup-item-padding-x );
-            padding-inline-end: var( --kendo-menu-popup-item-padding-end );
-            padding-block: var( --kendo-menu-popup-item-padding-y );
-        }
-
-        .k-menu-expand-arrow {
-            margin-inline-start: var( --kendo-menu-popup-item-icon-margin-start );
-            margin-inline-end: var( --kendo-menu-popup-item-icon-margin-end );
-        }
-
-        .k-separator {
-            margin-block: var( --kendo-menu-separator-margin-inline, #{$kendo-menu-separator-margin-inline} );
-            margin-inline: 0;
-            height: 0;
-            border-width: 0;
-            border-top-width: var( --kendo-menu-separator-width, #{$kendo-menu-separator-width});
-            border-style: solid;
-            display: block;
-        }
-    }
-    .k-menu-popup .k-menu-group {
-        position: relative;
-    }
+    // Sub menu group focus styles
     .k-menu-group,
     .k-menu.k-context-menu {
-
         .k-item {
             &:focus,
             &:focus-visible,
             &.k-focus {
-
                 > .k-link {
-                    outline-offset: var( --kendo-menu-item-focus-outline-offset, #{$kendo-menu-item-focus-outline-offset} );
-                    outline-width: var( --kendo-menu-item-focus-outline-width, #{$kendo-menu-item-focus-outline-width} );
-                    outline-style: var( --kendo-menu-item-focus-outline-style, #{$kendo-menu-item-focus-outline-style} );
+                    outline-offset: $kendo-menu-item-focus-outline-offset;
+                    outline-width: $kendo-menu-item-focus-outline-width;
+                    outline-style: $kendo-menu-item-focus-outline-style;
                 }
             }
         }
     }
 
-
-    // Sizes
-    @each $size, $size-pops in $kendo-menu-sizes {
-
-        // Group sizes
-        $_group-font-size: map.get( $size-pops, group-font-size );
-        $_group-line-height: map.get( $size-pops, group-line-height );
-
-        // Link sizes
-        $_link-padding-x: map.get( $size-pops, link-padding-x );
-        $_link-padding-y: map.get( $size-pops, link-padding-y );
-        $_link-padding-inline-end: map.get( $size-pops, link-padding-inline-end );
-
-        // Arrow sizes
-        $_arrow-margin-inline-start: map.get( $size-pops, arrow-margin-inline-start );
-        $_arrow-margin-inline-end: map.get( $size-pops, arrow-margin-inline-end );
-
-        .k-menu-group-#{$size} {
-            --kendo-group-font-size: var( --kendo-menu-popup-font-size-#{$size}, #{$_group-font-size} );
-            --kendo-group-line-height: var( --kendo-menu-popup-line-height-#{$size}, #{$_group-line-height} );
-
-            .k-menu-link {
-                --kendo-menu-popup-item-padding-x: var( --kendo-menu-popup-item-padding-x-#{$size}, #{$_link-padding-x} );
-                --kendo-menu-popup-item-padding-y: var( --kendo-menu-popup-item-padding-y-#{$size}, #{$_link-padding-y} );
-                --kendo-menu-popup-item-padding-end: var( --kendo-menu-popup-item-padding-end-#{$size}, #{$_link-padding-inline-end} );
-            }
-
-            .k-menu-expand-arrow {
-                --kendo-menu-popup-item-icon-margin-start: var( --kendo-menu-popup-item-icon-margin-start-#{$size}, #{$_arrow-margin-inline-start} );
-                --kendo-menu-popup-item-icon-margin-end: var( --kendo-menu-popup-item-icon-margin-end-#{$size}, #{$_arrow-margin-inline-end} );
-            }
-
+    // Sub menu group separator styling
+    .k-menu-group {
+        .k-separator {
+            border-top-width: $kendo-menu-separator-width;
         }
     }
 
-    // Context menu
-    .k-popups-wrapper {
-        position: relative;
-        border: 0;
+    .k-menu-vertical {
+
+        > .k-menu-item > .k-menu-link {
+            padding-inline: $kendo-menu-item-padding-x;
+            padding-block: $kendo-menu-item-padding-y;
+            padding-inline-end: $kendo-menu-popup-md-item-padding-end;
+        }
+
+        > .k-separator {
+            margin-block: $kendo-menu-separator-margin-inline;
+            border-width: 1px 0 0;
+        }
+    }
+
+    .k-menu-expand-arrow {
         margin: 0;
-        padding: 0;
     }
-    .k-context-menu {
-        margin: 0;
-        padding-inline: var( --kendo-menu-popup-padding-x, #{$kendo-menu-popup-padding-x} );
-        padding-block: var( --kendo-menu-popup-padding-y, #{$kendo-menu-popup-padding-y} );
-        border-width: var( --kendo-menu-popup-border-width, #{$kendo-menu-popup-border-width} );
-        border-style: solid;
-
-        &.k-menu-horizontal {
-            padding-inline: var( --kendo-menu-popup-padding-y, #{$kendo-menu-popup-padding-y} );
-            padding-block: var( --kendo-menu-popup-padding-x, #{$kendo-menu-popup-padding-x} );
-        }
-    }
-    .k-animation-container .k-context-menu.k-menu-horizontal {
-        // kendo-jquery adds `display: block` via js and we need to override it.
-        display: flex !important; // stylelint-disable-line declaration-no-important
-        flex-wrap: nowrap;
-    }
-    .k-context-menu-popup {
-        z-index: 12000;
-
-        .k-context-menu {
-            border-width: 0;
-        }
-    }
-    .k-popup .k-context-menu,
-    .k-context-menu-popup .k-context-menu {
-        border-width: 0;
-    }
-
-
-    // Scrolling
-    .k-menu-scroll-wrapper {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        position: relative;
-        display: flex;
-        align-items: center;
-
-        .k-menu {
-            overflow: hidden;
-            flex-wrap: nowrap;
-        }
-    }
-
-    .k-menu-scroll-wrapper-vertical {
-        flex-direction: column;
-
-        > .k-menu-scroll-button {
-            width: 100%;
-        }
-    }
-
 }
 
 @mixin kendo-menu--extended-layout() {}

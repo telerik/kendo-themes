@@ -4,20 +4,20 @@
 
 /// The horizontal margin of the Breadcrumb
 /// @group breadcrumb
-$kendo-breadcrumb-margin-x: k-spacing(0) !default;
+$kendo-breadcrumb-margin-x: var( --kendo-breadcrumb-margin-x, k-spacing(0) ) !default;
 /// The vertical margin of the Breadcrumb
 /// @group breadcrumb
-$kendo-breadcrumb-margin-y: k-spacing(0) !default;
+$kendo-breadcrumb-margin-y: var( --kendo-breadcrumb-margin-y, k-spacing(0) ) !default;
 /// The horizontal padding of the Breadcrumb
 /// @group breadcrumb
-$kendo-breadcrumb-padding-x: k-spacing(0) !default;
+$kendo-breadcrumb-padding-x: var( --kendo-breadcrumb-padding-x, k-spacing(0) ) !default;
 /// The vertical padding of the Breadcrumb
 /// @group breadcrumb
-$kendo-breadcrumb-padding-y: k-spacing(0) !default;
+$kendo-breadcrumb-padding-y: var( --kendo-breadcrumb-padding-y, k-spacing(0) ) !default;
 
 /// The width of the border around the Breadcrumb
 /// @group breadcrumb
-$kendo-breadcrumb-border-width: 0px !default;
+$kendo-breadcrumb-border-width: var( --kendo-breadcrumb-border-width, 0px ) !default;
 
 /// The font family of the Breadcrumb
 /// @group breadcrumb
@@ -51,185 +51,187 @@ $kendo-breadcrumb-lg-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the Breadcrumb
 /// @group breadcrumb
-$kendo-breadcrumb-bg: k-color(surface-alt) !default;
+$kendo-breadcrumb-bg: var( --kendo-breadcrumb-bg, k-color(surface-alt) ) !default;
 /// The text color of the Breadcrumb
 /// @group breadcrumb
-$kendo-breadcrumb-text: get-theme-color-var( neutral-130 ) !default;
+$kendo-breadcrumb-text: var( --kendo-breadcrumb-text, get-theme-color-var( neutral-130 ) ) !default;
 /// The border color of the Breadcrumb
 /// @group breadcrumb
-$kendo-breadcrumb-border: transparent !default;
+$kendo-breadcrumb-border: var( --kendo-breadcrumb-border, transparent ) !default;
 /// The box shadow of the focused breadcrumb
 /// @group breadcrumb
-$kendo-breadcrumb-focus-shadow: 0 0 0 1px color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-breadcrumb-focus-shadow: var( --kendo-breadcrumb-focus-shadow, 0 0 0 1px color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
 
-/// The horizontal padding of the Breadcrumb link
-/// @group breadcrumb
-$kendo-breadcrumb-link-padding-x: k-spacing(2) !default;
+
 /// The horizontal padding of the small Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-sm-link-padding-x: k-spacing(2) !default;
+$kendo-breadcrumb-sm-link-padding-x: var( --kendo-breadcrumb-link-padding-x, k-spacing(2) ) !default;
 /// The horizontal padding of the medium Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-md-link-padding-x: $kendo-breadcrumb-link-padding-x !default;
+$kendo-breadcrumb-md-link-padding-x: var( --kendo-breadcrumb-link-padding-x, k-spacing(2) ) !default;
 /// The horizontal padding of the large Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-lg-link-padding-x: k-spacing(2) !default;
+$kendo-breadcrumb-lg-link-padding-x: var( --kendo-breadcrumb-link-padding-x, k-spacing(2) ) !default;
 
-/// The vertical padding of the Breadcrumb link
-/// @group breadcrumb
-$kendo-breadcrumb-link-padding-y: k-spacing(2) !default;
 /// The vertical padding of the small Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-sm-link-padding-y: k-spacing(1.5) !default;
+$kendo-breadcrumb-sm-link-padding-y: var( --kendo-breadcrumb-link-padding-y, k-spacing(1.5) )  !default;
 /// The vertical padding of the medium Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-md-link-padding-y: $kendo-breadcrumb-link-padding-y !default;
+$kendo-breadcrumb-md-link-padding-y: var( --kendo-breadcrumb-link-padding-y, k-spacing(2) ) !default;
 /// The vertical padding of the large Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-lg-link-padding-y: k-spacing(2.5) !default;
+$kendo-breadcrumb-lg-link-padding-y: var( --kendo-breadcrumb-link-padding-y, k-spacing(2.5) ) !default;
 
 /// The radius of the border around the Breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-border-radius: 0px !default;
+$kendo-breadcrumb-link-border-radius: var( --kendo-breadcrumb-link-border-radius, 0px ) !default;
+
 /// The initial text color of the Breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-initial-text: inherit !default;
+$kendo-breadcrumb-link-initial-text: var( --kendo-breadcrumb-link-initial-text, inherit ) !default;
 /// The background color of the Breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-bg: transparent !default;
+$kendo-breadcrumb-link-bg: var( --kendo-breadcrumb-link-bg, transparent ) !default;
 /// The text color of the Breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-text: get-theme-color-var( neutral-130 ) !default;
+$kendo-breadcrumb-link-text: var( --kendo-breadcrumb-link-text, get-theme-color-var( neutral-130 ) ) !default;
 /// The borer color of the Breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-border: transparent !default;
+$kendo-breadcrumb-link-border: var( --kendo-breadcrumb-link-border, transparent ) !default;
 /// The background color of the hovered breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-hover-bg: k-color(base-hover) !default;
+$kendo-breadcrumb-link-hover-bg: var( --kendo-breadcrumb-link-hover-bg, k-color(base-hover) ) !default;
 /// The text color of the hovered breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-hover-text: k-color(on-app-surface) !default;
+$kendo-breadcrumb-link-hover-text: var( --kendo-breadcrumb-link-hover-text, k-color(on-app-surface) ) !default;
 /// The border color of the hovered breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-hover-border: color-mix(in srgb, k-color(border) 10%, transparent) !default;
+$kendo-breadcrumb-link-hover-border: var( --kendo-breadcrumb-link-hover-border, color-mix(in srgb, k-color(border) 10%, transparent) ) !default;
 /// The background color of the active breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-active-bg: k-color(base-active) !default;
+$kendo-breadcrumb-link-active-bg: var( --kendo-breadcrumb-link-active-bg, k-color(base-active) ) !default;
 /// The text color of the active breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-active-text: k-color(on-base) !default;
+$kendo-breadcrumb-link-active-text: var( --kendo-breadcrumb-link-active-text, k-color(on-base) ) !default;
 /// The border color of the active breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-active-border: k-color(base-active) !default;
+$kendo-breadcrumb-link-active-border: var( --kendo-breadcrumb-link-active-border, k-color(base-active) ) !default;
 /// The background color of the focused breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-focus-bg: transparent !default;
+$kendo-breadcrumb-link-focus-bg: var( --kendo-breadcrumb-link-focus-bg, transparent ) !default;
 /// The text color of the focused breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-focus-text: k-color(on-app-surface) !default;
+$kendo-breadcrumb-link-focus-text: var( --kendo-breadcrumb-link-focus-text, k-color(on-app-surface) ) !default;
+/// The border color of the focused Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-focus-border: var( --kendo-breadcrumb-link-focus-border, null ) !default;
 /// The box shadow of the focused breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-focus-shadow: inset 0 0 0 1px get-theme-color-var( neutral-130 ) !default;
+$kendo-breadcrumb-link-focus-shadow: var( --kendo-breadcrumb-link-focus-shadow, inset 0 0 0 1px get-theme-color-var( neutral-130 ) ) !default;
 /// The focus and hover background color of the Breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-focus-hover-bg: k-color(base-hover) !default;
+$kendo-breadcrumb-link-focus-hover-bg: var( --kendo-breadcrumb-link-focus-hover-bg, k-color(base-hover) ) !default;
 /// The background color of the disabled breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-disabled-bg: none !default;
+$kendo-breadcrumb-link-disabled-bg: var( --kendo-breadcrumb-link-disabled-bg, none ) !default;
 /// The text color of the disabled breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
+$kendo-breadcrumb-link-disabled-text: var( --kendo-breadcrumb-link-disabled-text, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ) !default;
 /// The border color of the disabled breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-disabled-border: none !default;
+$kendo-breadcrumb-link-disabled-border: var( --kendo-breadcrumb-link-disabled-border, none ) !default;
 /// The background color of selected the Breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-selected-bg: k-color(surface-alt) !default;
+$kendo-breadcrumb-link-selected-bg: var( --kendo-breadcrumb-link-selected-bg, k-color(surface-alt) ) !default;
 /// The text color of the selected breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-selected-text: k-color(on-app-surface) !default;
+$kendo-breadcrumb-link-selected-text: var( --kendo-breadcrumb-link-selected-text, k-color(on-app-surface) ) !default;
 /// The border color of the selected breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-selected-border: transparent !default;
+$kendo-breadcrumb-link-selected-border: var( --kendo-breadcrumb-link-selected-border, transparent ) !default;
 /// The font weight of the selected breadcrumb link
 /// @group breadcrumb
 $kendo-breadcrumb-link-selected-font-weight: var( --kendo-font-weight-bold, bold ) !default;
 
 /// The background color of the Breadcrumb root link
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-bg: $kendo-breadcrumb-link-bg !default;
+$kendo-breadcrumb-root-link-bg: var( --kendo-breadcrumb-root-link-bg, $kendo-breadcrumb-link-bg ) !default;
 /// The text color of the Breadcrumb root link
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-text: $kendo-breadcrumb-link-text !default;
+$kendo-breadcrumb-root-link-text: var( --kendo-breadcrumb-root-link-text, $kendo-breadcrumb-link-text ) !default;
 /// The border color of the Breadcrumb root link
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-border: $kendo-breadcrumb-link-border !default;
+$kendo-breadcrumb-root-link-border: var( --kendo-breadcrumb-root-link-border, $kendo-breadcrumb-link-border ) !default;
 /// The background color of the hovered breadcrumb root link
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-hover-bg: $kendo-breadcrumb-link-hover-bg !default;
+$kendo-breadcrumb-root-link-hover-bg: var( --kendo-breadcrumb-root-link-hover-bg, $kendo-breadcrumb-link-hover-bg )!default;
 /// The text color of the hovered breadcrumb root link
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-hover-text: $kendo-breadcrumb-link-hover-text !default;
+$kendo-breadcrumb-root-link-hover-text: var( --kendo-breadcrumb-root-link-hover-text, $kendo-breadcrumb-link-hover-text ) !default;
 /// The border color of the hovered breadcrumb root link
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-hover-border: $kendo-breadcrumb-link-hover-border !default;
+$kendo-breadcrumb-root-link-hover-border: var( --kendo-breadcrumb-root-link-hover-border, $kendo-breadcrumb-link-hover-border ) !default;
 /// The background color of the active breadcrumb root link
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-active-bg: $kendo-breadcrumb-link-active-bg !default;
+$kendo-breadcrumb-root-link-active-bg: var( --kendo-breadcrumb-root-link-active-bg, $kendo-breadcrumb-link-active-bg ) !default;
 /// The text color of the active breadcrumb root link
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-active-text: $kendo-breadcrumb-link-active-text !default;
+$kendo-breadcrumb-root-link-active-text: var( --kendo-breadcrumb-root-link-active-text, $kendo-breadcrumb-link-active-text ) !default;
 /// The border color of the active breadcrumb root link
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-active-border: $kendo-breadcrumb-link-active-border !default;
+$kendo-breadcrumb-root-link-active-border: var( --kendo-breadcrumb-root-link-active-border, $kendo-breadcrumb-link-active-border ) !default;
 /// The background color of the focused breadcrumb root link
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-focus-bg: $kendo-breadcrumb-link-focus-bg !default;
+$kendo-breadcrumb-root-link-focus-bg: var( --kendo-breadcrumb-root-link-focus-bg, $kendo-breadcrumb-link-focus-bg ) !default;
 /// The text color of the focused breadcrumb root link
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-focus-text: $kendo-breadcrumb-link-focus-text !default;
+$kendo-breadcrumb-root-link-focus-text: var( --kendo-breadcrumb-root-link-focus-text, $kendo-breadcrumb-link-focus-text ) !default;
+/// The border color of the focused Breadcrumb root link.
+/// @group breadcrumb
+$kendo-breadcrumb-root-link-focus-border: var( --kendo-breadcrumb-root-link-focus-border, null ) !default;
 /// The border color of the focused breadcrumb root link
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-focus-shadow: $kendo-breadcrumb-link-focus-shadow !default;
+$kendo-breadcrumb-root-link-focus-shadow: var( --kendo-breadcrumb-root-link-focus-shadow, $kendo-breadcrumb-link-focus-shadow ) !default;
 /// The focus and hover background color of the Breadcrumb root link
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-focus-hover-bg: $kendo-breadcrumb-link-focus-hover-bg !default;
+$kendo-breadcrumb-root-link-focus-hover-bg: var( --kendo-breadcrumb-root-link-focus-hover-bg, $kendo-breadcrumb-link-focus-hover-bg ) !default;
 /// The text color of the disabled breadcrumb root link
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-disabled-text: $kendo-breadcrumb-link-disabled-text !default;
+$kendo-breadcrumb-root-link-disabled-text: var( --kendo-breadcrumb-root-link-disabled-text, $kendo-breadcrumb-link-disabled-text ) !default;
 
-$kendo-breadcrumb-current-item-bg: null !default;
-$kendo-breadcrumb-current-item-text: null !default;
-$kendo-breadcrumb-current-item-border: null !default;
-
-/// The vertical padding of the Breadcrumb link icon
+/// The background color of the current Breadcrumb root link.
 /// @group breadcrumb
-$kendo-breadcrumb-icon-link-padding-y: k-spacing(2.5) !default;
+$kendo-breadcrumb-current-item-bg: null !default;
+/// The text color of the current Breadcrumb root link.
+/// @group breadcrumb
+$kendo-breadcrumb-current-item-text: null  !default;
+/// The border color of the current Breadcrumb root link.
+/// @group breadcrumb
+$kendo-breadcrumb-current-item-border: null  !default;
+
 /// The vertical padding of the small Breadcrumb link icon.
 /// @group breadcrumb
-$kendo-breadcrumb-sm-icon-link-padding-y: k-spacing(2) !default;
+$kendo-breadcrumb-sm-icon-link-padding-y: var(--kendo-breadcrumb-sm-icon-link-padding-y, k-spacing(2) ) !default;
 /// The vertical padding of the medium Breadcrumb link icon.
 /// @group breadcrumb
-$kendo-breadcrumb-md-icon-link-padding-y: $kendo-breadcrumb-icon-link-padding-y !default;
+$kendo-breadcrumb-md-icon-link-padding-y: var(--kendo-breadcrumb-md-icon-link-padding-y, k-spacing(2.5) ) !default;
 /// The vertical padding of the large Breadcrumb link icon.
 /// @group breadcrumb
-$kendo-breadcrumb-lg-icon-link-padding-y: k-spacing(3) !default;
+$kendo-breadcrumb-lg-icon-link-padding-y: var(--kendo-breadcrumb-lg-icon-link-padding-y, k-spacing(3) ) !default;
 
-/// The horizontal padding of the Breadcrumb link icon
-/// @group breadcrumb
-$kendo-breadcrumb-icon-link-padding-x: $kendo-breadcrumb-icon-link-padding-y !default;
 /// The horizontal padding of the small Breadcrumb link icon.
 /// @group breadcrumb
-$kendo-breadcrumb-sm-icon-link-padding-x: $kendo-breadcrumb-sm-icon-link-padding-y !default;
+$kendo-breadcrumb-sm-icon-link-padding-x: var( --kendo-breadcrumb-icon-link-padding-x, $kendo-breadcrumb-sm-icon-link-padding-y ) !default;
 /// The horizontal padding of the medium Breadcrumb link icon.
 /// @group breadcrumb
-$kendo-breadcrumb-md-icon-link-padding-x: $kendo-breadcrumb-icon-link-padding-x !default;
+$kendo-breadcrumb-md-icon-link-padding-x: var( --kendo-breadcrumb-icon-link-padding-x, $kendo-breadcrumb-md-icon-link-padding-y ) !default;
 /// The horizontal padding of the large Breadcrumb link icon.
 /// @group breadcrumb
-$kendo-breadcrumb-lg-icon-link-padding-x: $kendo-breadcrumb-lg-icon-link-padding-y !default;
+$kendo-breadcrumb-lg-icon-link-padding-x: var( --kendo-breadcrumb-icon-link-padding-x, $kendo-breadcrumb-lg-icon-link-padding-y ) !default;
 
 // Root link spacing
-$kendo-breadcrumb-link-icon-spacing: var( --kendo-icon-spacing, #{$kendo-icon-spacing} ) !default;
+$kendo-breadcrumb-link-icon-spacing: var( --kendo-icon-spacing, $kendo-icon-spacing ) !default;
 
 
 /// The sizes map for the Breadcrumb.
@@ -260,3 +262,63 @@ $kendo-breadcrumb-sizes: (
         line-height: $kendo-breadcrumb-lg-line-height
     )
 ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/breadcrumb/_variables.scss" with (
+    $kendo-breadcrumb-border-width: $kendo-breadcrumb-border-width,
+    $kendo-breadcrumb-margin-x: $kendo-breadcrumb-margin-x,
+    $kendo-breadcrumb-margin-y: $kendo-breadcrumb-margin-y,
+    $kendo-breadcrumb-padding-x: $kendo-breadcrumb-padding-x,
+    $kendo-breadcrumb-padding-y: $kendo-breadcrumb-padding-y,
+    $kendo-breadcrumb-font-family: $kendo-breadcrumb-font-family,
+    $kendo-breadcrumb-font-size: $kendo-breadcrumb-font-size,
+    $kendo-breadcrumb-sm-font-size: $kendo-breadcrumb-sm-font-size,
+    $kendo-breadcrumb-md-font-size: $kendo-breadcrumb-md-font-size,
+    $kendo-breadcrumb-lg-font-size: $kendo-breadcrumb-lg-font-size,
+    $kendo-breadcrumb-line-height: $kendo-breadcrumb-line-height,
+    $kendo-breadcrumb-sm-line-height: $kendo-breadcrumb-sm-line-height,
+    $kendo-breadcrumb-md-line-height: $kendo-breadcrumb-md-line-height,
+    $kendo-breadcrumb-lg-line-height: $kendo-breadcrumb-lg-line-height,
+    $kendo-breadcrumb-bg: $kendo-breadcrumb-bg,
+    $kendo-breadcrumb-text: $kendo-breadcrumb-text,
+    $kendo-breadcrumb-border: $kendo-breadcrumb-border,
+    $kendo-breadcrumb-focus-shadow: $kendo-breadcrumb-focus-shadow,
+    $kendo-breadcrumb-sm-link-padding-x: $kendo-breadcrumb-sm-link-padding-x,
+    $kendo-breadcrumb-md-link-padding-x: $kendo-breadcrumb-md-link-padding-x,
+    $kendo-breadcrumb-lg-link-padding-x: $kendo-breadcrumb-lg-link-padding-x,
+    $kendo-breadcrumb-sm-link-padding-y: $kendo-breadcrumb-sm-link-padding-y,
+    $kendo-breadcrumb-md-link-padding-y: $kendo-breadcrumb-md-link-padding-y,
+    $kendo-breadcrumb-lg-link-padding-y: $kendo-breadcrumb-lg-link-padding-y,
+    $kendo-breadcrumb-link-border-radius: $kendo-breadcrumb-link-border-radius,
+    $kendo-breadcrumb-sm-icon-link-padding-y: $kendo-breadcrumb-sm-icon-link-padding-y,
+    $kendo-breadcrumb-md-icon-link-padding-y: $kendo-breadcrumb-md-icon-link-padding-y,
+    $kendo-breadcrumb-lg-icon-link-padding-y: $kendo-breadcrumb-lg-icon-link-padding-y,
+    $kendo-breadcrumb-sm-icon-link-padding-x: $kendo-breadcrumb-sm-icon-link-padding-x,
+    $kendo-breadcrumb-md-icon-link-padding-x: $kendo-breadcrumb-md-icon-link-padding-x,
+    $kendo-breadcrumb-lg-icon-link-padding-x: $kendo-breadcrumb-lg-icon-link-padding-x,
+    $kendo-breadcrumb-link-initial-text: $kendo-breadcrumb-link-initial-text,
+    $kendo-breadcrumb-link-icon-spacing: $kendo-breadcrumb-link-icon-spacing,
+    $kendo-breadcrumb-link-bg: $kendo-breadcrumb-link-bg,
+    $kendo-breadcrumb-link-text: $kendo-breadcrumb-link-text,
+    $kendo-breadcrumb-link-border: $kendo-breadcrumb-link-border,
+    $kendo-breadcrumb-link-hover-bg: $kendo-breadcrumb-link-hover-bg,
+    $kendo-breadcrumb-link-hover-text: $kendo-breadcrumb-link-hover-text,
+    $kendo-breadcrumb-link-hover-border: $kendo-breadcrumb-link-hover-border,
+    $kendo-breadcrumb-link-focus-bg: $kendo-breadcrumb-link-focus-bg,
+    $kendo-breadcrumb-link-focus-text: $kendo-breadcrumb-link-focus-text,
+    $kendo-breadcrumb-link-focus-border: $kendo-breadcrumb-link-focus-border,
+    $kendo-breadcrumb-link-focus-shadow: $kendo-breadcrumb-link-focus-shadow,
+    $kendo-breadcrumb-root-link-bg: $kendo-breadcrumb-root-link-bg,
+    $kendo-breadcrumb-root-link-text: $kendo-breadcrumb-root-link-text,
+    $kendo-breadcrumb-root-link-border: $kendo-breadcrumb-root-link-border,
+    $kendo-breadcrumb-root-link-hover-bg: $kendo-breadcrumb-root-link-hover-bg,
+    $kendo-breadcrumb-root-link-hover-text: $kendo-breadcrumb-root-link-hover-text,
+    $kendo-breadcrumb-root-link-hover-border: $kendo-breadcrumb-root-link-hover-border,
+    $kendo-breadcrumb-root-link-focus-bg: $kendo-breadcrumb-root-link-focus-bg,
+    $kendo-breadcrumb-root-link-focus-text: $kendo-breadcrumb-root-link-focus-text,
+    $kendo-breadcrumb-root-link-focus-border: $kendo-breadcrumb-root-link-focus-border,
+    $kendo-breadcrumb-root-link-focus-shadow: $kendo-breadcrumb-root-link-focus-shadow,
+    $kendo-breadcrumb-current-item-bg: $kendo-breadcrumb-current-item-bg,
+    $kendo-breadcrumb-current-item-text: $kendo-breadcrumb-current-item-text,
+    $kendo-breadcrumb-current-item-border: $kendo-breadcrumb-current-item-border,
+    $kendo-breadcrumb-sizes: $kendo-breadcrumb-sizes
+);

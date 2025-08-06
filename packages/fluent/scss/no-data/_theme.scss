@@ -1,9 +1,6 @@
-@use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/no-data/_theme.scss" as *;
 
 @mixin kendo-no-data--theme() {
-
-    .k-no-data {
-        color: var( --kendo-no-data-text, #{$kendo-no-data-text} );
-    }
+    @include kendo-no-data--theme-base();
 
 }

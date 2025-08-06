@@ -1,35 +1,7 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/dropzone/_theme.scss" as *;
 
 @mixin kendo-dropzone--theme() {
-
-    // Dropzone
-    .k-dropzone-inner {
-        @include fill(
-            var( --kendo-dropzone-text, #{$kendo-dropzone-text} ),
-            var( --kendo-dropzone-bg, #{$kendo-dropzone-bg} ),
-            var( --kendo-dropzone-border, #{$kendo-dropzone-border} )
-        );
-
-        .k-icon,
-        .k-dropzone-icon {
-            color: var( --kendo-dropzone-icon-text, #{$kendo-dropzone-icon-text} );
-        }
-        .k-dropzone-hint {
-            color: var( --kendo-dropzone-hint-text, #{$kendo-dropzone-hint-text} );
-        }
-        .k-dropzone-note {
-            color: var( --kendo-dropzone-note-text, #{$kendo-dropzone-note-text} );
-        }
-    }
-
-
-    // Hover
-    .k-external-dropzone-hover {
-        .k-icon,
-        .k-dropzone-icon {
-            color: var( --kendo-dropzone-icon-hover-text, #{$kendo-dropzone-icon-hover-text} );
-        }
-    }
-
+    @include kendo-dropzone--theme-base();
 }

@@ -290,7 +290,7 @@
             }
             .k-item:active,
             .k-item.k-active {
-                margin-bottom: if( $kendo-tabstrip-border-width, -$kendo-tabstrip-border-width, null );
+                margin-bottom: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
                 border-bottom-width: $kendo-tabstrip-border-width;
                 border-bottom-color: transparent !important; // stylelint-disable-line declaration-no-important
             }
@@ -317,7 +317,7 @@
             }
             .k-item:active,
             .k-item.k-active {
-                margin-top: if( $kendo-tabstrip-border-width, -$kendo-tabstrip-border-width, null );
+                margin-top: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
                 border-top-width: $kendo-tabstrip-border-width;
                 border-top-color: transparent !important; // stylelint-disable-line declaration-no-important
             }
@@ -342,7 +342,7 @@
             }
             .k-item:active,
             .k-item.k-active {
-                margin-right: if( $kendo-tabstrip-border-width, -$kendo-tabstrip-border-width, null );
+                margin-right: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
                 border-right-width: $kendo-tabstrip-border-width;
                 border-right-color: transparent !important; // stylelint-disable-line declaration-no-important
             }
@@ -368,7 +368,7 @@
             }
             .k-item:active,
             .k-item.k-active {
-                margin-left: if( $kendo-tabstrip-border-width, -$kendo-tabstrip-border-width, null );
+                margin-left: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
                 border-left-width: $kendo-tabstrip-border-width;
                 border-left-color: transparent !important; // stylelint-disable-line declaration-no-important
             }

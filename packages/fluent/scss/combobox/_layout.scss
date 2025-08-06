@@ -1,4 +1,6 @@
-@mixin kendo-combobox--layout() {
+@use "@progress/kendo-theme-core/scss/components/combobox/_layout.scss" as *;
 
-    .k-combobox {}
+
+@mixin kendo-combobox--layout() {
+    @include kendo-combobox--layout-base();
 }

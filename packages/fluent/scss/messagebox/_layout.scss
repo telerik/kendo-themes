@@ -1,22 +1,6 @@
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/messagebox/_layout.scss" as *;
 
 @mixin kendo-messagebox--layout() {
-
-    .k-messagebox {
-        margin: var( --kendo-message-box-margin, #{$kendo-message-box-margin} );
-        padding-inline: var( --kendo-message-box-padding-x, #{$kendo-message-box-padding-x} );
-        padding-block: var( --kendo-message-box-padding-y, #{$kendo-message-box-padding-y} );
-        border-width: var( --kendo-message-box-border-width, #{$kendo-message-box-border-width} );
-        border-style: var( --kendo-message-box-border-style, #{$kendo-message-box-border-style} );
-        box-sizing: border-box;
-        font-family: var( --kendo-message-box-font-family, #{$kendo-message-box-font-family} );
-        font-size: var( --kendo-message-box-font-size, #{$kendo-message-box-font-size} );
-        line-height: var( --kendo-message-box-line-height, #{$kendo-message-box-line-height} );
-
-        a {
-            font-style: var( --kendo-message-box-link-font-style, #{$kendo-message-box-link-font-style} );
-            text-decoration: var( --kendo-message-box-link-decoration, #{$kendo-message-box-link-decoration} );
-        }
-    }
-
+    @include kendo-messagebox--layout-base();
 }

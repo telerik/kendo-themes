@@ -1,9 +1,5 @@
+@use "@progress/kendo-theme-core/scss/components/dropdownlist/_theme.scss" as *;
+
 @mixin kendo-dropdown-list--theme() {
-
-    // Dropdown list
-    .k-dropdown-list {}
-
-    // Native select
-    select.k-dropdown-list {}
-
+    @include kendo-dropdown-list--theme-base();
 }

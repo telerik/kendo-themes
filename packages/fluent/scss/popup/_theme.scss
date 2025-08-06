@@ -1,14 +1,7 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/popup/_theme.scss" as *;
 
 @mixin kendo-popup--theme() {
-    .k-popup {
-        @include fill(
-            var( --kendo-popup-text, #{$kendo-popup-text} ),
-            var( --kendo-popup-bg, #{$kendo-popup-bg} ),
-            var( --kendo-popup-border, #{$kendo-popup-border} )
-        );
-        @include box-shadow( var( --kendo-popup-shadow, #{$kendo-popup-shadow} ) );
-    }
-
+    @include kendo-popup--theme-base();
 }

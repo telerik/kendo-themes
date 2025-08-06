@@ -1,21 +1,7 @@
 @use "sass:map";
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/avatar/_theme.scss" as *;
 
 @mixin kendo-avatar--theme() {
-
-    @each $fill-mode, $theme-colors in $kendo-avatar-theme-colors {
-        @each $theme-color, $color-props in $theme-colors {
-
-            $_text-color: map.get( $color-props, text );
-            $_bg: map.get( $color-props, bg );
-            $_border-color: map.get( $color-props, border );
-
-            .k-avatar-#{$fill-mode}-#{$theme-color} {
-                color: var( --kendo-avatar-#{$fill-mode}-#{$theme-color}-text, #{$_text-color} );
-                background-color: var( --kendo-avatar-#{$fill-mode}-#{$theme-color}-bg, #{$_bg} );
-                border-color: var( --kendo-avatar-#{$fill-mode}-#{$theme-color}-border, #{$_border-color} );
-            }
-        }
-
-    }
+    @include kendo-avatar--theme-base();
 }

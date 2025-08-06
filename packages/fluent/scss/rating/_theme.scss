@@ -1,23 +1,25 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/rating/_theme.scss" as *;
 
 @mixin kendo-rating--theme() {
 
+    @include kendo-rating--theme-base();
+
     .k-rating-item {
         @include fill(
-            $color: var( --kendo-rating-item-text, #{$kendo-rating-item-text} )
+            $color: $kendo-rating-item-text
         );
 
         &.k-selected {
             @include fill(
-                $color: var( --kendo-rating-item-selected-text, #{$kendo-rating-item-selected-text} )
+                $color: $kendo-rating-item-selected-text
             );
-
 
             &:hover,
             &.k-hover {
                 @include fill(
-                    $color: var( --kendo-rating-item-selected-hover-text, #{$kendo-rating-item-selected-hover-text} )
+                    $color: $kendo-rating-item-selected-hover-text
                 );
             }
         }
@@ -25,14 +27,14 @@
         &:hover,
         &.k-hover {
             @include fill(
-                $color: var( --kendo-rating-item-hover-text, #{$kendo-rating-item-hover-text} )
+                $color: $kendo-rating-item-hover-text
             );
             cursor: pointer;
         }
 
         &:focus,
         &.k-focus {
-            outline-color: var( --kendo-rating-item-focus-outline, #{$kendo-rating-item-focus-outline} );
+            outline-color: $kendo-rating-item-focus-outline;
         }
 
         &.k-disabled {

@@ -1,112 +1,48 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/dataviz/_theme.scss" as *;
 
 @mixin kendo-dataviz--theme() {
 
-    // Elements
-    .k-chart,
-    .k-sparkline,
-    .k-stockchart {
-        @include fill(
-            var( --kendo-chart-text, #{$kendo-chart-text} ),
-            var( --kendo-chart-bg, #{$kendo-chart-bg} ),
-            var( --kendo-chart-border, #{$kendo-chart-border} )
-        );
+    @include kendo-dataviz--theme-base();
 
-        .k-popup {
-            background: transparent;
-        }
-    }
-
-
-    // Tooltip
-    // TODO
     .k-chart-tooltip {
-        @include fill( $color: var( --kendo-chart-tooltip-color, #{$kendo-chart-tooltip-color} ) );
+        @include fill( $color: $kendo-chart-tooltip-color );
     }
     .k-chart-tooltip-inverse {
-        @include fill( $color: var( --kendo-chart-tooltip-color-inverse, #{$kendo-chart-tooltip-color-inverse} ) );
-    }
-
-    .k-chart-crosshair-tooltip,
-    .k-chart-shared-tooltip {
-        @include fill(
-            var( --kendo-chart-crosshair-shared-tooltip-color, #{$kendo-chart-crosshair-shared-tooltip-color} ),
-            var( --kendo-chart-crosshair-shared-tooltip-background, #{$kendo-chart-crosshair-shared-tooltip-background} ),
-            var( --kendo-chart-crosshair-shared-tooltip-border, #{$kendo-chart-crosshair-shared-tooltip-border} )
-
-        );
-    }
-
-    .k-selection {
-        @include fill( $border: var( --kendo-selection-border-color, #{$kendo-selection-border-color} ) );
-    }
-
-    .k-selection-bg {
-        background-color: transparent;
+        @include fill( $color: $kendo-chart-tooltip-color-inverse );
     }
 
     .k-handle {
         cursor: e-resize;
         @include fill(
-           var( --kendo-chart-handle-text, #{$kendo-chart-handle-text} ),
-           var( --kendo-chart-handle-bg, #{$kendo-chart-handle-bg} ),
-           var( --kendo-chart-handle-border, #{$kendo-chart-handle-border} )
+           $kendo-chart-handle-text,
+          $kendo-chart-handle-bg,
+           $kendo-chart-handle-border
         );
 
         &:hover {
             @include fill(
-               var( --kendo-chart-handle-hover-text, #{$kendo-chart-handle-hover-text} ),
-               var( --kendo-chart-handle-hover-bg, #{$kendo-chart-handle-hover-bg} ),
-               var( --kendo-chart-handle-hover-border, #{$kendo-chart-handle-hover-border} )
+               $kendo-chart-handle-hover-text,
+               $kendo-chart-handle-hover-bg,
+               $kendo-chart-handle-hover-border
             );
         }
     }
 
-    .k-handle div {
-        background-color: transparent;
-    }
-
-    .k-mask {
-        background-color: k-color(surface-alt);
-        opacity: .8;
-    }
-
     .k-chart-overlay {
-        background-color: var( --kendo-chart-overlay-bg, #{$kendo-chart-overlay-bg} );
 
         .k-no-data {
-            color: var( --kendo-chart-no-data-text, #{$kendo-chart-no-data-text} );
+            color: $kendo-chart-no-data-text;
         }
     }
 
     // Treemap
     .k-treemap {
-        @include fill(
-           var( --kendo-treemap-text, #{$kendo-treemap-text} ),
-           var( --kendo-treemap-bg, #{$kendo-treemap-bg} ),
-           var( --kendo-treemap-border, #{$kendo-treemap-border} ),
-        );
 
-        // Title
-        .k-treemap-title {
-            @include fill(
-                var( --kendo-treemap-title-text, #{$kendo-treemap-title-text} ),
-                var( --kendo-treemap-title-bg, #{$kendo-treemap-title-bg} ),
-                var( --kendo-treemap-title-border, #{$kendo-treemap-title-border} ),
-            );
-        }
-
-        // Leaf
-        .k-leaf {
-            @include fill( $color: k-color(surface-alt) );
-        }
-        .k-leaf.k-inverse {
-            @include fill( $color: k-color(on-app-surface) );
-        }
         .k-leaf:hover,
         .k-leaf.k-hover {
-            @include box-shadow( var( --kendo-box-shadow-depth-1, initial ) );
+            @include box-shadow( var( --kendo-elevation-1, initial ) );
         }
     }
 

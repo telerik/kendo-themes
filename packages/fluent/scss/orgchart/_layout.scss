@@ -1,123 +1,32 @@
 @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/orgchart/_layout.scss" as *;
 
 @mixin kendo-orgchart--layout() {
+    @include kendo-orgchart--layout-base();
 
-    .k-orgchart {
-        width: 100%;
-        padding-inline: var( --kendo-orgchart-padding-x, #{$kendo-orgchart-padding-x} );
-        padding-block: var( --kendo-orgchart-padding-y, #{$kendo-orgchart-padding-y} );
-        box-sizing: border-box;
-        font-family: var( --kendo-orgchart-font-family, #{$kendo-orgchart-font-family} );
-        font-size: var( --kendo-orgchart-font-size, #{$kendo-orgchart-font-size} );
-        line-height: var( --kendo-orgchart-line-height, #{$kendo-orgchart-line-height} );
-        overflow: auto;
 
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-    }
-
-    .k-orgchart-container {
-        margin-block: 0;
-        margin-inline: auto;
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-
-    // Nodes
     .k-orgchart-group {
-        gap: var( --kendo-orgchart-group-spacing, #{$kendo-orgchart-group-spacing} );
-    }
-
-    .k-orgchart-group.k-vstack > .k-orgchart-node-container {
-        gap: 0;
+        gap: $kendo-orgchart-group-spacing;
     }
 
     .k-orgchart-node-container {
-        gap: var( --kendo-orgchart-node-spacing, #{$kendo-orgchart-node-spacing} );
+        gap: $kendo-orgchart-node-spacing;
     }
 
-    .k-orgchart-node-group-container {
-        border-radius: var( --kendo-orgchart-node-group-border-radius, #{$kendo-orgchart-node-group-border-radius} );
-        padding-inline: var( --kendo-orgchart-node-group-padding-x, #{$kendo-orgchart-node-group-padding-x} );
-        padding-block: var( --kendo-orgchart-node-group-padding-y, #{$kendo-orgchart-node-group-padding-y} );
-        border-width: var( --kendo-orgchart-node-group-border-width, #{$kendo-orgchart-node-group-border-width} );
-        border-style: solid;
-        outline: 0;
-    }
-
-    .k-orgchart-node-group-title {
-        margin-inline: 0;
-        margin-block-start: 0;
-        margin-block-end: var( --kendo-orgchart-node-group-title-margin-y, #{$kendo-orgchart-node-group-title-margin-y} );
-        font-size: var( --kendo-orgchart-node-group-title-font-size, #{$kendo-orgchart-node-group-title-font-size} );
-        line-height: var( --kendo-orgchart-node-group-title-line-height, #{$kendo-orgchart-node-group-title-line-height} );
-    }
-
-    .k-orgchart-node-group-subtitle {
-        margin-inline: 0;
-        margin-block-start: 0;
-        margin-block-end: var( --kendo-orgchart-node-group-subtitle-margin-y, #{$kendo-orgchart-node-group-subtitle-margin-y} );
-        font-size: var( --kendo-orgchart-node-group-subtitle-font-size, #{$kendo-orgchart-node-group-subtitle-font-size} );
-    }
-
-    // Card
     .k-orgchart-card {
-        width: var( --kendo-orgchart-card-width, #{$kendo-orgchart-card-width} );
-        border-width: var( --kendo-orgchart-card-border-width, #{$kendo-orgchart-card-border-width} );
 
         .k-card-title {
-            margin-block-end: var( --kendo-orgchart-card-title-margin-y, #{$kendo-orgchart-card-title-margin-y} );
-            font-size: var( --kendo-orgchart-card-title-font-size, #{$kendo-orgchart-card-title-font-size} );
-            line-height: var( --kendo-orgchart-card-title-line-height, #{$kendo-orgchart-card-title-line-height} );
+            line-height: $kendo-orgchart-card-title-line-height;
         }
-
         .k-card-subtitle {
-            margin-block-end: var( --kendo-orgchart-card-subtitle-margin-y, #{$kendo-orgchart-card-subtitle-margin-y} );
-            font-size: var( --kendo-orgchart-card-subtitle-font-size, #{$kendo-orgchart-card-subtitle-font-size} );
-            line-height: var( --kendo-orgchart-card-subtitle-line-height, #{$kendo-orgchart-card-subtitle-line-height} );
+            line-height: $kendo-orgchart-card-subtitle-line-height;
         }
-
         .k-card-body {
-            padding-inline: var( --kendo-orgchart-card-body-padding-x, #{$kendo-orgchart-card-body-padding-x} );
-            padding-block: var( --kendo-orgchart-card-body-padding-y, #{$kendo-orgchart-card-body-padding-y} );
-            border-width: var( --kendo-orgchart-card-body-border-width, #{$kendo-orgchart-card-body-border-width} );
-            border-style: solid;
-            flex-grow: 0;
+            padding-inline: $kendo-orgchart-card-body-padding-x;
+            padding-block: $kendo-orgchart-card-body-padding-y;
         }
-        .k-card-body .k-card-title-wrap {
-            margin-inline-end: var( --kendo-orgchart-card-body-vbox-margin-x, #{$kendo-orgchart-card-body-vbox-margin-x} );
-            min-width: 0;
-            min-height: var( --kendo-orgchart-card-body-vbox-min-height, #{$kendo-orgchart-card-body-vbox-min-height} );
-        }
-
         .k-card-title-wrap .k-card-title + .k-spacer {
             flex: 0;
         }
     }
-
-    // Lines
-    .k-orgchart-line {
-        background-color: currentColor;
-    }
-
-    .k-orgchart-line-h {
-        height: var( --kendo-orgchart-line-size, #{$kendo-orgchart-line-size} );
-    }
-
-    .k-orgchart-line-v {
-        margin-block: 0;
-        margin-inline: auto;
-        width: var( --kendo-orgchart-line-size, #{$kendo-orgchart-line-size} );
-        height: var( --kendo-orgchart-line-v-height, #{$kendo-orgchart-line-v-height} );
-    }
-
-    // Buttons
-    .k-orgchart-button {
-        z-index: 1;
-    }
-
 }

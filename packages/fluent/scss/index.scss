@@ -126,7 +126,6 @@
 
 // Typography
 @use "./typography/index.scss" as *;
-@use "./draggable/index.scss" as *;
 
 
 // Generic content
@@ -135,6 +134,7 @@
 
 
 // Primitive components
+@use "./draggable/index.scss" as *;
 @use "./action-buttons/index.scss" as *;
 @use "./list/index.scss" as *;
 @use "./listgroup/index.scss" as *;
@@ -313,6 +313,7 @@
 
 
     // Primitive components
+    @include kendo-draggable--styles();
     @include kendo-action-buttons--styles();
     @include kendo-list--styles();
     @include kendo-listgroup--styles();
