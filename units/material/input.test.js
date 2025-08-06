@@ -13,7 +13,9 @@ const expected = [
     "kendo-input-padding-y", // Variable customizations work, but is used by another variable.
     "kendo-input-font-size", // Variable customizations work, but is used by another variable.
     "kendo-input-line-height", // Variable customizations work, but is used by another variable.
-    "kendo-input-calc-size", // Variable customizations work, but is used by another variable.
+    "kendo-input-sm-calc-size", // Variable customizations work, but is used by another variable.
+    "kendo-input-md-calc-size", // Variable customizations work, but is used by another variable.
+    "kendo-input-lg-calc-size", // Variable customizations work, but is used by another variable.
     "kendo-input-spinner-icon-offset", // Variable customizations work but needs "kendo-use-input-spinner-icon-offset" variable to be true.
     "kendo-input-button-width", // Variable customization works but needs "kendo-use-input-button-width" variable to be true.
     "kendo-input-spinner-width", // Variable customization works but needs "kendo-use-input-spinner-width" variable to be true.

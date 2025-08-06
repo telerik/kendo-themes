@@ -12,7 +12,9 @@ const expected = [
     "kendo-button-padding-y", // Variable customizations work, but is used by another variable.
     "kendo-button-font-size", // Variable customizations work, but is used by another variable.
     "kendo-button-line-height", // Variable customizations work, but is used by another variable.
-    "kendo-button-calc-size", // Variable customizations work, but is used by another variable.
+    "kendo-button-sm-calc-size", // Variable customizations work, but is used by another variable.
+    "kendo-button-md-calc-size", // Variable customizations work, but is used by another variable.
+    "kendo-button-lg-calc-size", // Variable customizations work, but is used by another variable.
     "kendo-button-inner-calc-size", // Variable customizations work, but is used by another variable.
 ];
 

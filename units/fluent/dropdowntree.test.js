@@ -2,7 +2,7 @@ require("./theme.env.js");
 const { testKendoComponent } = require("../utility");
 
 const component = "dropdown-tree";
-const group = component;
+const group = "dropdowntree";
 // const className = "k-dropdown-tree"; // .k-dropdown-tree {} selector is empty
 const className = null;
 
@@ -19,4 +19,4 @@ const expected = [];
 
 const unexpected = [];
 
-testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected], false);
+testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);
