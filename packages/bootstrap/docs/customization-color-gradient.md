@@ -68,26 +68,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-gradient-padding-y</td>
-    <td>String</td>
-    <td><code>$kendo-color-gradient-spacer</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ColorGradient.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-gradient-padding-x</td>
-    <td>String</td>
-    <td><code>$kendo-color-gradient-padding-y</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the ColorGradient.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-gradient-gap</td>
     <td>String</td>
     <td><code>$kendo-color-gradient-spacer</code></td>
@@ -170,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-sm-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-color-gradient-padding-y</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
@@ -190,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-md-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-color-gradient-padding-y</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>

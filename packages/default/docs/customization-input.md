@@ -58,16 +58,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Input components.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-input-sm-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
@@ -80,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-md-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-input-padding-x</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -98,16 +88,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Input components.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-input-sm-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(0.5)</code></td>
@@ -120,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-md-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-input-padding-y</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -228,10 +208,10 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-calc-size</td>
+    <td>$kendo-input-sm-calc-size</td>
     <td>Calculation</td>
-    <td><code>calc( ( #{$kendo-input-line-height} * 1em ) + ( #{$kendo-input-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) )</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + (2px))</code></td>
+    <td><code>calc( ( #{$kendo-input-sm-line-height} * 1em ) + ( #{$kendo-input-sm-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) )</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-0\.5, 0.125rem) * 2 + (2px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Input.</div></div>

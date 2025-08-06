@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-overlay-opacity</td>
-    <td>Number</td>
-    <td><code>.4</code></td>
-    <td><code>0.4</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-overlay-opacity, .4 )</code></td>
+    <td><code>var(--kendo-overlay-opacity, 0.4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of the overlay.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-overlay-dark</td>
-    <td>Color</td>
-    <td><code>$kendo-color-black</code></td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-overlay-dark, #{$kendo-color-black} )</code></td>
+    <td><code>var(--kendo-overlay-dark, #000000)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the dark overlay.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-overlay-light</td>
-    <td>Color</td>
-    <td><code>$kendo-color-white</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-overlay-light, #{$kendo-color-white} )</code></td>
+    <td><code>var(--kendo-overlay-light, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the light overlay.</div></div>

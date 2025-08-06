@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-tile-layout-border-width</td>
-    <td>Number</td>
-    <td><code>0px</code></td>
-    <td><code>0px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-tile-layout-border-width, 0px )</code></td>
+    <td><code>var(--kendo-tile-layout-border-width, 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the TileLayout.</div></div>
@@ -40,8 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tile-layout-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
+    <td><code>var( --kendo-tile-layout-bg, #{k-color(surface)} )</code></td>
+    <td><code>var(--kendo-tile-layout-bg, var(--kendo-color-surface, #faf9f8))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TileLayout.</div></div>
@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tile-layout-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var( --kendo-tile-layout-padding-x, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-tile-layout-padding-x, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TileLayout.</div></div>
@@ -60,8 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tile-layout-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-tile-layout-padding-x</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var( --kendo-tile-layout-padding-y, #{$kendo-tile-layout-padding-x} )</code></td>
+    <td><code>var(--kendo-tile-layout-padding-y, var(--kendo-tile-layout-padding-x, var(--kendo-spacing-4, 1rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TileLayout</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tile-layout-hint-border-width</td>
-    <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-tile-layout-hint-border-width, 1px )</code></td>
+    <td><code>var(--kendo-tile-layout-hint-border-width, 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the TileLayout hint.</div></div>
@@ -80,8 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tile-layout-hint-border-radius</td>
     <td>String</td>
-    <td><code>var( --kendo-border-radius-lg, initial )</code></td>
-    <td><code>var(--kendo-border-radius-lg, initial)</code></td>
+    <td><code>var( --kendo-tile-layout-hint-border-radius, var( --kendo-border-radius-lg, initial ) )</code></td>
+    <td><code>var(--kendo-tile-layout-hint-border-radius, var(--kendo-border-radius-lg, initial))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The radius of the border around the TileLayout hint.</div></div>
@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tile-layout-hint-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
+    <td><code>var( --kendo-tile-layout-hint-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
+    <td><code>var(--kendo-tile-layout-hint-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the TileLayout hint.</div></div>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tile-layout-hint-bg</td>
-    <td>Color</td>
-    <td><code>rgba(255, 255, 255, .2)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(255, 255, 255, 0.2)"></span><code>rgba(255, 255, 255, 0.2)</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-tile-layout-hint-bg, rgba(255, 255, 255, .2) )</code></td>
+    <td><code>var(--kendo-tile-layout-hint-bg, rgba(255, 255, 255, 0.2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TileLayout hint.</div></div>

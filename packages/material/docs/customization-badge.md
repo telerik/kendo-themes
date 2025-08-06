@@ -38,16 +38,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-badge-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Badge.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-badge-sm-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(0.5)</code></td>
@@ -75,16 +65,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Badge.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-badge-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Badge.</div></div>
     </td>
 </tr>
 <tr>
@@ -200,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-min-width</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-badge-line-height } * 1em + calc( #{$kendo-badge-padding-y} * 2 ) + #{$kendo-badge-border-width * 2})</code></td>
+    <td><code>calc( #{$kendo-badge-line-height } * 1em + calc( #{$kendo-badge-md-padding-y} * 2 ) + #{$kendo-badge-border-width * 2})</code></td>
     <td><code>calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 2px)</code></td>
 </tr>
 <tr>

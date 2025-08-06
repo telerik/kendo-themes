@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-formula-input-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-input-padding-x</code></td>
+    <td><code>$kendo-input-md-padding-x</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-formula-input-padding-y</td>
     <td>Calculation</td>
-    <td><code>$kendo-input-padding-y</code></td>
+    <td><code>$kendo-input-md-padding-y</code></td>
     <td><code>calc(var(--kendo-spacing-1\.5, 0.375rem) + var(--kendo-spacing-1px, 1px))</code></td>
 </tr>
 <tr>

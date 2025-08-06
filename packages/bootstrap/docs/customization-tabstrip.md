@@ -218,26 +218,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-tabstrip-item-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TabStrip items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-tabstrip-item-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TabStrip items.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-tabstrip-item-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -290,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-md-item-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-tabstrip-item-padding-x</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
@@ -300,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-md-item-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-tabstrip-item-padding-y</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>

@@ -1,7 +1,7 @@
 ---
 title: Customizing MenuButton
-description: "Refer to the list of the Kendo UI Default theme variables available for customization."
-slug: variables_kendothemedefault_menu-button
+description: "Refer to the list of the Kendo UI Fluent theme variables available for customization."
+slug: variables_kendothemefluent_menu-button
 position: 9
 ---
 
@@ -29,12 +29,12 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-menu-button-arrow-padding-x</td>
-    <td>String</td>
-    <td><code>$kendo-button-md-padding-y</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the button arrow in the Menu Button..</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the button arrow in the Menu Button.</div></div>
     </td>
 </tr>
 </tbody>

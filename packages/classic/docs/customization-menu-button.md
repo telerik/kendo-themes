@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-menu-button-arrow-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-button-padding-y</code></td>
+    <td><code>$kendo-button-md-padding-y</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>

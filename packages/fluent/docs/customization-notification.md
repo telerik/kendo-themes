@@ -30,179 +30,42 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-notification-group-gap</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var( --kendo-notification-group-gap, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-notification-group-gap, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The row-gap between the elements in the Notification group.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-notification-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Notification.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-notification-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Notification.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-notification-border-width</td>
-    <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container">
-    </td>
-</tr>
-<tr>
-    <td>$kendo-notification-border-radius</td>
-    <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
-    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Notification.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-notification-font-family</td>
-    <td>String</td>
-    <td><code>var( --kendo-font-family, inherit )</code></td>
-    <td><code>var(--kendo-font-family, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Notification.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-notification-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
-    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Notification.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-notification-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
-    <td><code>var(--kendo-line-height, normal)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Notification.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-notification-actions-padding-x</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Notification actions.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-notification-actions-padding-y</td>
-    <td>Null</td>
-    <td><code>$kendo-notification-actions-padding-x</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Notification actions.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-notification-bg</td>
-    <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Notification.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-notification-text</td>
-    <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Notification.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-notification-border</td>
-    <td>String</td>
-    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Notification.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-notification-box-shadow</td>
-    <td>String</td>
-    <td><code>none</code></td>
-    <td><code>none</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Notification.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-notification-icon-spacing</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing of the Notification icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-notification-brand-colors</td>
-    <td>Map</td>
-    <td><code>(
-    primary: primary,
-    error: error,
-    warning: warning,
-    success: success,
-    info: info,
-    secondary: secondary,
-    tertiary: tertiary,
-)</code></td>
-    <td><ul><li>primary: primary</li><li>error: error</li><li>warning: warning</li><li>success: success</li><li>info: info</li><li>secondary: secondary</li><li>tertiary: tertiary</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme variations for the Notification.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-notification-theme-colors</td>
     <td>Map</td>
-    <td><code>()</code></td>
-    <td><ul><li>primary: "bg":"var(--kendo-color-primary-subtle, #deecf9)","text":"var(--kendo-color-primary-on-subtle, #001c30)","border":"var(--kendo-color-primary-subtle, #deecf9)"</li><li>error: "bg":"var(--kendo-color-error-subtle, #fde7e9)","text":"var(--kendo-color-error-on-subtle, #420f12)","border":"var(--kendo-color-error-subtle, #fde7e9)"</li><li>warning: "bg":"var(--kendo-color-warning-subtle, #fff4ce)","text":"var(--kendo-color-warning-on-subtle, #323130)","border":"var(--kendo-color-warning-subtle, #fff4ce)"</li><li>success: "bg":"var(--kendo-color-success-subtle, #dff6dd)","text":"var(--kendo-color-success-on-subtle, #063206)","border":"var(--kendo-color-success-subtle, #dff6dd)"</li><li>info: "bg":"var(--kendo-color-info-subtle, #cee5ff)","text":"var(--kendo-color-info-on-subtle, #032040)","border":"var(--kendo-color-info-subtle, #cee5ff)"</li><li>secondary: "bg":"var(--kendo-color-secondary-subtle, #faf9f8)","text":"var(--kendo-color-secondary-on-subtle, #323130)","border":"var(--kendo-color-secondary-subtle, #faf9f8)"</li><li>tertiary: "bg":"var(--kendo-color-tertiary-subtle, #deecf9)","text":"var(--kendo-color-tertiary-on-subtle, #174974)","border":"var(--kendo-color-tertiary-subtle, #deecf9)"</li><li>dark: "bg":"var(--kendo-color-dark, #323130)","text":"var(--kendo-color-on-dark, #ffffff)","border":"var(--kendo-color-dark, #323130)"</li><li>light: "bg":"var(--kendo-color-light, #d2d0ce)","text":"var(--kendo-color-on-light, #323130)","border":"var(--kendo-color-light, #d2d0ce)"</li></ul></td>
+    <td><code>(
+    "primary": k-color(primary-subtle),
+    "secondary": k-color(secondary-subtle),
+    "tertiary": k-color(tertiary-subtle),
+    "info": k-color(info-subtle),
+    "success": k-color(success-subtle),
+    "warning": k-color(warning-subtle),
+    "error": k-color(error-subtle),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+)</code></td>
+    <td><ul><li>primary: var(--kendo-color-primary-subtle, #deecf9)</li><li>secondary: var(--kendo-color-secondary-subtle, #faf9f8)</li><li>tertiary: var(--kendo-color-tertiary-subtle, #deecf9)</li><li>info: var(--kendo-color-info-subtle, #cee5ff)</li><li>success: var(--kendo-color-success-subtle, #dff6dd)</li><li>warning: var(--kendo-color-warning-subtle, #fff4ce)</li><li>error: var(--kendo-color-error-subtle, #fde7e9)</li><li>dark: var(--kendo-color-dark, #323130)</li><li>light: var(--kendo-color-light, #d2d0ce)</li><li>inverse: var(--kendo-color-dark, #323130)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Notification variations.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-theme</td>
+    <td>Map</td>
+    <td><code>notification-theme( $kendo-notification-theme-colors )</code></td>
+    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse, #ffffff)","background-color":"var(--kendo-color-dark, #323130)","border":"var(--kendo-color-dark, #323130)"</li><li>light: "color":"var(--kendo-color-on-light, #323130)","background-color":"var(--kendo-color-light, #d2d0ce)","border":"var(--kendo-color-light, #d2d0ce)"</li><li>dark: "color":"var(--kendo-color-on-dark, #ffffff)","background-color":"var(--kendo-color-dark, #323130)","border":"var(--kendo-color-dark, #323130)"</li><li>error: "color":"var(--kendo-color-on-error, #ffffff)","background-color":"var(--kendo-color-error-subtle, #fde7e9)","border":"var(--kendo-color-error-subtle, #fde7e9)"</li><li>warning: "color":"var(--kendo-color-on-warning, #323130)","background-color":"var(--kendo-color-warning-subtle, #fff4ce)","border":"var(--kendo-color-warning-subtle, #fff4ce)"</li><li>success: "color":"var(--kendo-color-on-success, #ffffff)","background-color":"var(--kendo-color-success-subtle, #dff6dd)","border":"var(--kendo-color-success-subtle, #dff6dd)"</li><li>info: "color":"var(--kendo-color-on-info, #ffffff)","background-color":"var(--kendo-color-info-subtle, #cee5ff)","border":"var(--kendo-color-info-subtle, #cee5ff)"</li><li>tertiary: "color":"var(--kendo-color-on-tertiary, #ffffff)","background-color":"var(--kendo-color-tertiary-subtle, #deecf9)","border":"var(--kendo-color-tertiary-subtle, #deecf9)"</li><li>secondary: "color":"var(--kendo-color-on-secondary, #ffffff)","background-color":"var(--kendo-color-secondary-subtle, #faf9f8)","border":"var(--kendo-color-secondary-subtle, #faf9f8)"</li><li>primary: "color":"var(--kendo-color-on-primary, #ffffff)","background-color":"var(--kendo-color-primary-subtle, #deecf9)","border":"var(--kendo-color-primary-subtle, #deecf9)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The generated theme colors map for the Notification.</div></div>
     </td>
 </tr>
 </tbody>

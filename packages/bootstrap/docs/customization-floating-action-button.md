@@ -68,19 +68,9 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FAB.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-fab-sm-padding-x</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-fab-padding-x} / 2 )</code></td>
+    <td><code>calc( #{k-spacing(4)} / 2 )</code></td>
     <td><code>calc(var(--kendo-spacing-4, 1rem) / 2)</code></td>
 </tr>
 <tr>
@@ -90,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-md-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-fab-padding-x</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
@@ -100,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-lg-padding-x</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-fab-padding-x} * 1.5 )</code></td>
+    <td><code>calc( #{k-spacing(4)} * 1.5 )</code></td>
     <td><code>calc(var(--kendo-spacing-4, 1rem) * 1.5)</code></td>
 </tr>
 <tr>
@@ -108,19 +98,9 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-padding-y</td>
-    <td>String</td>
-    <td><code>$kendo-fab-padding-x</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FAB.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-fab-sm-padding-y</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-fab-padding-y} / 2 )</code></td>
+    <td><code>calc( #{k-spacing(4)} / 2 )</code></td>
     <td><code>calc(var(--kendo-spacing-4, 1rem) / 2)</code></td>
 </tr>
 <tr>
@@ -130,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-md-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-fab-padding-y</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
@@ -140,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-lg-padding-y</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-fab-padding-y} * 1.5 )</code></td>
+    <td><code>calc( #{k-spacing(4)} * 1.5 )</code></td>
     <td><code>calc(var(--kendo-spacing-4, 1rem) * 1.5)</code></td>
 </tr>
 <tr>

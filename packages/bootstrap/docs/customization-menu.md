@@ -528,7 +528,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-padding-x</td>
+    <td>$kendo-menu-popup-sm-item-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
@@ -538,19 +538,19 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-padding-y</td>
+    <td>$kendo-menu-popup-sm-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Menu item in popup.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-padding-end</td>
+    <td>$kendo-menu-popup-sm-item-padding-end</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-menu-popup-item-padding-x} * 2 + #{$kendo-icon-size} )</code></td>
+    <td><code>calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 + #{$kendo-icon-size} )</code></td>
     <td><code>calc(var(--kendo-spacing-4, 1rem) * 2 + 1rem)</code></td>
 </tr>
 <tr>

@@ -657,6 +657,26 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow opacity of the focused Chat quick reply.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-chat-typing-indicator-dot-size</td>
+    <td>Number</td>
+    <td><code>8px</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Chat typing indicator dot.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-typing-indicator-dot-spacing</td>
+    <td>Number</td>
+    <td><code>5px</code></td>
+    <td><code>5px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat typing indicator dot.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

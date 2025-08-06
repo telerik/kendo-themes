@@ -28,16 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-toolbar-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Toolbar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-toolbar-sm-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -50,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-md-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-toolbar-padding-x</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -68,16 +58,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-toolbar-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Toolbar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-toolbar-sm-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -90,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-md-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-toolbar-padding-y</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -108,16 +88,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-toolbar-spacing</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Toolbar tools.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-toolbar-sm-spacing</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -130,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-md-spacing</td>
     <td>String</td>
-    <td><code>$kendo-toolbar-spacing</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>

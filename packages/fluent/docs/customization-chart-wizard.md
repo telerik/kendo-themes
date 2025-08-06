@@ -30,8 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-chart-wizard-icon-area-color</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
+    <td><code>var( --kendo-chart-wizard-icon-area-color, k-color(primary) )</code></td>
+    <td><code>var(--kendo-chart-wizard-icon-area-color, var(--kendo-color-primary, #0078d4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the area around the chart type icon.</div></div>
@@ -40,8 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-icon-area-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle)</code></td>
-    <td><code>var(--kendo-color-primary-subtle, #deecf9)</code></td>
+    <td><code>var( --kendo-chart-wizard-icon-area-bg, k-color(primary-subtle) )</code></td>
+    <td><code>var(--kendo-chart-wizard-icon-area-bg, var(--kendo-color-primary-subtle, #deecf9))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the area around the chart type icon.</div></div>
@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-icon-area-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(none)</code></td>
-    <td><code>var(--kendo-border-radius-none, 0px)</code></td>
+    <td><code>var( --kendo-chart-wizard-icon-area-border-radius, k-border-radius(none) )</code></td>
+    <td><code>var(--kendo-chart-wizard-icon-area-border-radius, var(--kendo-border-radius-none, 0px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the area around the chart type icon.</div></div>
@@ -60,8 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-icon-area-padding</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var( --kendo-chart-wizard-icon-area-padding, k-spacing(4) )</code></td>
+    <td><code>var(--kendo-chart-wizard-icon-area-padding, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the area around the chart type icon.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chart-wizard-icon-area-focus-shadow</td>
-    <td>List</td>
-    <td><code>inset 0 0 0 1px k-color(primary-emphasis)</code></td>
-    <td><code>(inset 0 0 0 1px var(--kendo-color-primary-emphasis, #004578))</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-chart-wizard-icon-area-focus-shadow, inset 0 0 0 1px k-color(primary-emphasis) )</code></td>
+    <td><code>var(--kendo-chart-wizard-icon-area-focus-shadow, inset 0 0 0 1px var(--kendo-color-primary-emphasis, #004578))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused area around the chart type icon.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chart-wizard-icon-area-selected-shadow</td>
-    <td>List</td>
-    <td><code>inset 0 0 0 1px $kendo-chart-wizard-icon-area-color</code></td>
-    <td><code>(inset 0 0 0 1px var(--kendo-color-primary, #0078d4))</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-chart-wizard-icon-area-selected-shadow, inset 0 0 0 1px $kendo-chart-wizard-icon-area-color )</code></td>
+    <td><code>var(--kendo-chart-wizard-icon-area-selected-shadow, inset 0 0 0 1px var(--kendo-chart-wizard-icon-area-color, var(--kendo-color-primary, #0078d4)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the selected area around the chart type icon.</div></div>
@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-chart-type-selected-color</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
+    <td><code>var( --kendo-chart-wizard-chart-type-selected-color, k-color(primary) )</code></td>
+    <td><code>var(--kendo-chart-wizard-chart-type-selected-color, var(--kendo-color-primary, #0078d4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the selected chart type items in the Property panel.</div></div>
@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-preview-pane-padding</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
+    <td><code>var( --kendo-chart-wizard-preview-pane-padding, k-spacing(3) )</code></td>
+    <td><code>var(--kendo-chart-wizard-preview-pane-padding, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the preview pane.</div></div>
@@ -110,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-property-pane-padding</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
+    <td><code>var( --kendo-chart-wizard-property-pane-padding, k-spacing(3) )</code></td>
+    <td><code>var(--kendo-chart-wizard-property-pane-padding, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the property pane.</div></div>
@@ -120,8 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-chart-type-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var( --kendo-chart-wizard-chart-type-spacing, k-spacing(4) )</code></td>
+    <td><code>var(--kendo-chart-wizard-chart-type-spacing, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the chart type items in the Property panel.</div></div>
@@ -130,8 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-icon-text-gap</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
+    <td><code>var( --kendo-chart-wizard-icon-text-gap, k-spacing(3) )</code></td>
+    <td><code>var(--kendo-chart-wizard-icon-text-gap, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the icon area and its text.</div></div>
