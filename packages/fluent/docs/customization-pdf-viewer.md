@@ -180,8 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-panel-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-pdf-viewer-search-panel-padding-x, #{k-spacing(3)} )</code></td>
-    <td><code>var(--kendo-pdf-viewer-search-panel-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PDFViewer search panel.</div></div>
@@ -190,8 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-panel-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-pdf-viewer-search-panel-padding-y, #{$kendo-pdf-viewer-search-panel-padding-x} )</code></td>
-    <td><code>var(--kendo-pdf-viewer-search-panel-padding-y, var(--kendo-pdf-viewer-search-panel-padding-x, var(--kendo-spacing-3, 0.75rem)))</code></td>
+    <td><code>$kendo-pdf-viewer-search-panel-padding-x</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PDFViewer search panel.</div></div>
@@ -279,9 +279,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pdf-viewer-search-panel-margin-y</td>
-    <td>Calculation</td>
-    <td><code>calc( ( #{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-panel-padding-y} ) ) * -1 )</code></td>
-    <td><code>calc((calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, var(--kendo-spacing-1\.5, 0.375rem)) * 2 + var(--kendo-button-border-width, 1px) * 2) + 2 * var(--kendo-pdf-viewer-search-panel-border-width, 1px) + 2 * var(--kendo-pdf-viewer-search-panel-padding-y, var(--kendo-pdf-viewer-search-panel-padding-x, var(--kendo-spacing-3, 0.75rem)))) * -1)</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-pdf-viewer-search-panel-margin-y ,calc( ( #{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-panel-padding-y} ) ) * -1 ))</code></td>
+    <td><code>var(--kendo-pdf-viewer-search-panel-margin-y, calc((calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, var(--kendo-spacing-1\.5, 0.375rem)) * 2 + var(--kendo-button-border-width, 1px) * 2) + 2 * var(--kendo-pdf-viewer-search-panel-border-width, 1px) + 2 * var(--kendo-spacing-3, 0.75rem)) * -1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the PDFViewer search panel.</div></div>

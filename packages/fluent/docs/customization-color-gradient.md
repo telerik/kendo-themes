@@ -689,9 +689,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-contrast-spacing</td>
-    <td>String</td>
-    <td><code>var(--kendo-color-gradient-contrast-spacing, calc( #{$kendo-color-gradient-spacer} / 1.5 ))</code></td>
-    <td><code>var(--kendo-color-gradient-contrast-spacing, calc(var(--kendo-color-gradient-spacer, var(--kendo-spacing-4, 1rem)) / 1.5))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-color-gradient-spacer} / 1.5 )</code></td>
+    <td><code>calc(var(--kendo-color-gradient-spacer, var(--kendo-spacing-4, 1rem)) / 1.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items in the ColorGradient contrast tool.</div></div>

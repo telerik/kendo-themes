@@ -230,8 +230,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-md-rows-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-form-md-rows-spacing, #{$kendo-form-sm-rows-spacing})</code></td>
-    <td><code>var(--kendo-form-md-rows-spacing, var(--kendo-form-sm-rows-spacing, var(--kendo-spacing-3, 0.75rem)))</code></td>
+    <td><code>var(--kendo-form-md-rows-spacing, #{k-spacing(3)})</code></td>
+    <td><code>var(--kendo-form-md-rows-spacing, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The row spacing of the medium Form.</div></div>
@@ -240,8 +240,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-lg-rows-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-form-lg-rows-spacing, #{$kendo-form-sm-rows-spacing})</code></td>
-    <td><code>var(--kendo-form-lg-rows-spacing, var(--kendo-form-sm-rows-spacing, var(--kendo-spacing-3, 0.75rem)))</code></td>
+    <td><code>var(--kendo-form-lg-rows-spacing, #{k-spacing(3)})</code></td>
+    <td><code>var(--kendo-form-lg-rows-spacing, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The row spacing of the large Form.</div></div>
@@ -401,7 +401,7 @@ The following table lists the available variables for customization.
         form-rows-spacing: $kendo-form-lg-rows-spacing
     )
 )</code></td>
-    <td><ul><li>sm: "form-rows-spacing":"var(--kendo-form-sm-rows-spacing, var(--kendo-spacing-3, 0.75rem))"</li><li>md: "form-rows-spacing":"var(--kendo-form-md-rows-spacing, var(--kendo-form-sm-rows-spacing, var(--kendo-spacing-3, 0.75rem)))"</li><li>lg: "form-rows-spacing":"var(--kendo-form-lg-rows-spacing, var(--kendo-form-sm-rows-spacing, var(--kendo-spacing-3, 0.75rem)))"</li></ul></td>
+    <td><ul><li>sm: "form-rows-spacing":"var(--kendo-form-sm-rows-spacing, var(--kendo-spacing-3, 0.75rem))"</li><li>md: "form-rows-spacing":"var(--kendo-form-md-rows-spacing, var(--kendo-spacing-3, 0.75rem))"</li><li>lg: "form-rows-spacing":"var(--kendo-form-lg-rows-spacing, var(--kendo-spacing-3, 0.75rem))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Form.</div></div>

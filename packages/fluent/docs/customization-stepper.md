@@ -170,8 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-indicator-height</td>
     <td>String</td>
-    <td><code>var( --kendo-stepper-indicator-height, $kendo-stepper-indicator-width )</code></td>
-    <td><code>var(--kendo-stepper-indicator-height, var(--kendo-stepper-indicator-width, var(--kendo-spacing-7\.5, 1.875rem)))</code></td>
+    <td><code>var( --kendo-stepper-indicator-height, k-spacing(7.5) )</code></td>
+    <td><code>var(--kendo-stepper-indicator-height, var(--kendo-spacing-7\.5, 1.875rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Stepper indicator.</div></div>
@@ -229,9 +229,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-stepper-indicator-focus-calc-offset</td>
-    <td>String</td>
-    <td><code>var( --kendo-stepper-indicator-focus-calc-offset, calc( #{$kendo-stepper-indicator-focus-border-width} + #{$kendo-stepper-indicator-focus-offset} ) )</code></td>
-    <td><code>var(--kendo-stepper-indicator-focus-calc-offset, calc(var(--kendo-stepper-indicator-focus-border-width, var(--kendo-stepper-indicator-border-width, 1px)) + 3px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-stepper-indicator-focus-border-width} + #{$kendo-stepper-indicator-focus-offset} )</code></td>
+    <td><code>calc(var(--kendo-stepper-indicator-focus-border-width, var(--kendo-stepper-indicator-border-width, 1px)) + 3px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated offset of the Stepper's focused indicator.</div></div>

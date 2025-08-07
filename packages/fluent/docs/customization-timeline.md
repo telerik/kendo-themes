@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-mobile-spacing-x</td>
     <td>String</td>
-    <td><code>var( --kendo-timeline-mobile-spacing-x, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-timeline-mobile-spacing-x, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing of the mobile Timeline.</div></div>
@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-mobile-spacing-y</td>
     <td>String</td>
-    <td><code>var( --kendo-timeline-mobile-spacing-y, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-timeline-mobile-spacing-y, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing of the mobile Timeline.</div></div>
@@ -130,8 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-track-size</td>
     <td>String</td>
-    <td><code>var( --kendo-timeline-track-size, k-spacing(1.5) )</code></td>
-    <td><code>var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem))</code></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Timeline track.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-timeline-track-wrap-padding-bottom</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-track-wrap-padding-bottom, calc( #{$kendo-timeline-track-size} / 2 ) )</code></td>
-    <td><code>var(--kendo-timeline-track-wrap-padding-bottom, calc(var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem)) / 2))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-timeline-track-size} / 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-1\.5, 0.375rem) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom padding of the Timeline's track wrapper.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-track-bottom-calc</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-track-bottom-calc, calc( ( #{ $kendo-timeline-track-arrow-height } / 2 ) + #{ $kendo-timeline-track-wrap-padding-bottom } ) )</code></td>
-    <td><code>var(--kendo-timeline-track-bottom-calc, calc(var(--kendo-timeline-track-arrow-height, var(--kendo-spacing-7\.5, 1.875rem)) / 2 + var(--kendo-timeline-track-wrap-padding-bottom, calc(var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem)) / 2))))</code></td>
+    <td><code>var(--kendo-timeline-track-bottom-calc, calc(var(--kendo-timeline-track-arrow-height, var(--kendo-spacing-7\.5, 1.875rem)) / 2 + calc(var(--kendo-spacing-1\.5, 0.375rem) / 2)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom offset of the Timeline track.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-arrow-inset-block-end</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-arrow-inset-block-end, calc( #{ $kendo-timeline-track-size } + #{ $kendo-timeline-track-wrap-padding-bottom } + #{ $kendo-timeline-track-border-width } ) )</code></td>
-    <td><code>var(--kendo-timeline-arrow-inset-block-end, calc(var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem)) + var(--kendo-timeline-track-wrap-padding-bottom, calc(var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem)) / 2)) + var(--kendo-timeline-track-border-width, 1px)))</code></td>
+    <td><code>var(--kendo-timeline-arrow-inset-block-end, calc(var(--kendo-spacing-1\.5, 0.375rem) + calc(var(--kendo-spacing-1\.5, 0.375rem) / 2) + var(--kendo-timeline-track-border-width, 1px)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The block end inset of the Timeline arrow.</div></div>
@@ -341,7 +341,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-mobile-flag-max-width</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-mobile-flag-max-width, calc( #{ $kendo-timeline-flag-min-width } + 2 * #{ $kendo-timeline-mobile-spacing-x } ) )</code></td>
-    <td><code>var(--kendo-timeline-mobile-flag-max-width, calc(var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) + 2 * var(--kendo-timeline-mobile-spacing-x, var(--kendo-spacing-4, 1rem))))</code></td>
+    <td><code>var(--kendo-timeline-mobile-flag-max-width, calc(var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) + 2 * var(--kendo-spacing-4, 1rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the mobile Timeline flag.</div></div>
@@ -411,7 +411,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-flag-margin-bottom-calc</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-flag-margin-bottom-calc, calc( #{ $kendo-timeline-track-size } + 2 * #{ $kendo-timeline-track-border-width } + #{ $kendo-timeline-flag-offset-bottom } + #{ $kendo-timeline-flag-callout-height } ) )</code></td>
-    <td><code>var(--kendo-timeline-flag-margin-bottom-calc, calc(var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem)) + 2 * var(--kendo-timeline-track-border-width, 1px) + var(--kendo-timeline-flag-offset-bottom, var(--kendo-spacing-1, 0.25rem)) + var(--kendo-timeline-flag-callout-height, var(--kendo-spacing-2\.5, 0.625rem))))</code></td>
+    <td><code>var(--kendo-timeline-flag-margin-bottom-calc, calc(var(--kendo-spacing-1\.5, 0.375rem) + 2 * var(--kendo-timeline-track-border-width, 1px) + var(--kendo-timeline-flag-offset-bottom, var(--kendo-spacing-1, 0.25rem)) + var(--kendo-timeline-flag-callout-height, var(--kendo-spacing-2\.5, 0.625rem))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the Timeline flag.</div></div>
@@ -479,9 +479,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-timeline-date-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-date-width, calc( #{k-spacing(12)} + #{k-spacing(0.5)} ) )</code></td>
-    <td><code>var(--kendo-timeline-date-width, calc(var(--kendo-spacing-12, 3rem) + var(--kendo-spacing-0\.5, 0.125rem)))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{k-spacing(12)} + #{k-spacing(0.5)} )</code></td>
+    <td><code>calc(var(--kendo-spacing-12, 3rem) + var(--kendo-spacing-0\.5, 0.125rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Timeline date.</div></div>
@@ -499,9 +499,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-timeline-vertical-padding-calc</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-vertical-padding-calc, calc( #{ $kendo-timeline-spacing-x } + ( #{ $kendo-timeline-flag-min-width } - #{ $kendo-timeline-track-size } ) / 2 ) )</code></td>
-    <td><code>var(--kendo-timeline-vertical-padding-calc, calc(var(--kendo-timeline-spacing-x, var(--kendo-spacing-10, 2.5rem)) + (var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) - var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem))) / 2))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-timeline-spacing-x } + ( #{ $kendo-timeline-flag-min-width } - #{ $kendo-timeline-track-size } ) / 2 )</code></td>
+    <td><code>calc(var(--kendo-timeline-spacing-x, var(--kendo-spacing-10, 2.5rem)) + (var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) - var(--kendo-spacing-1\.5, 0.375rem)) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical Timeline.</div></div>
@@ -509,9 +509,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-timeline-vertical-padding-with-dates-calc</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-vertical-padding-with-dates-calc, calc( #{ $kendo-timeline-vertical-padding-calc } + #{ $kendo-timeline-date-width } ) )</code></td>
-    <td><code>var(--kendo-timeline-vertical-padding-with-dates-calc, calc(var(--kendo-timeline-vertical-padding-calc, calc(var(--kendo-timeline-spacing-x, var(--kendo-spacing-10, 2.5rem)) + (var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) - var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem))) / 2)) + var(--kendo-timeline-date-width, calc(var(--kendo-spacing-12, 3rem) + var(--kendo-spacing-0\.5, 0.125rem)))))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-timeline-vertical-padding-calc } + #{ $kendo-timeline-date-width } )</code></td>
+    <td><code>calc(calc(var(--kendo-timeline-spacing-x, var(--kendo-spacing-10, 2.5rem)) + (var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) - var(--kendo-spacing-1\.5, 0.375rem)) / 2) + calc(var(--kendo-spacing-12, 3rem) + var(--kendo-spacing-0\.5, 0.125rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical Timeline date.</div></div>
@@ -529,9 +529,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-timeline-mobile-vertical-padding-calc</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-mobile-vertical-padding-calc, calc( #{ $kendo-timeline-mobile-spacing-x } + ( #{ $kendo-timeline-flag-min-width } - #{ $kendo-timeline-track-size } ) / 2 ) )</code></td>
-    <td><code>var(--kendo-timeline-mobile-vertical-padding-calc, calc(var(--kendo-timeline-mobile-spacing-x, var(--kendo-spacing-4, 1rem)) + (var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) - var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem))) / 2))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-timeline-mobile-spacing-x } + ( #{ $kendo-timeline-flag-min-width } - #{ $kendo-timeline-track-size } ) / 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) + (var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) - var(--kendo-spacing-1\.5, 0.375rem)) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical mobile Timeline.</div></div>
@@ -539,9 +539,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-timeline-mobile-vertical-padding-with-dates-calc</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-mobile-vertical-padding-with-dates-calc, calc( #{ $kendo-timeline-mobile-vertical-padding-calc } + #{ $kendo-timeline-date-width } ) )</code></td>
-    <td><code>var(--kendo-timeline-mobile-vertical-padding-with-dates-calc, calc(var(--kendo-timeline-mobile-vertical-padding-calc, calc(var(--kendo-timeline-mobile-spacing-x, var(--kendo-spacing-4, 1rem)) + (var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) - var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem))) / 2)) + var(--kendo-timeline-date-width, calc(var(--kendo-spacing-12, 3rem) + var(--kendo-spacing-0\.5, 0.125rem)))))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-timeline-mobile-vertical-padding-calc } + #{ $kendo-timeline-date-width } )</code></td>
+    <td><code>calc(calc(var(--kendo-spacing-4, 1rem) + (var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) - var(--kendo-spacing-1\.5, 0.375rem)) / 2) + calc(var(--kendo-spacing-12, 3rem) + var(--kendo-spacing-0\.5, 0.125rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical mobile Timeline date.</div></div>
