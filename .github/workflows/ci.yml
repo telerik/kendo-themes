@@ -29,6 +29,18 @@ jobs:
       - name: Done
         run: echo "Done!"
 
+  test-integrations:
+    name: Test integrations
+    uses: ./.github/workflows/_test-integrations.yml
+
+  ci-test-integrations:
+    name: Status check > Test integrations
+    runs-on: ubuntu-latest
+    needs: [ test-integrations ]
+    steps:
+      - name: Done
+        run: echo "Done!"
+
   render-test-pages:
     name: Render test pages
     uses: ./.github/workflows/_render-test-pages.yml
