@@ -1,0 +1,60 @@
+name: Test integrations
+
+on:
+  workflow_call:
+
+concurrency:
+  group: test-integrations-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  run:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        integration: [gulp, parcel, vite, webpack]
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v4
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install root dependencies
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: |
+          npm ci --no-audit --no-fund
+
+      - name: Build test assets
+        run: |
+          npm run sass:dist
+
+      - name: Use cache for integration node_modules
+        id: cache-integration-node_modules
+        uses: actions/cache@v4
+        with:
+          path: integrations/${{ matrix.integration }}/node_modules
+          key: integration-${{ matrix.integration }}-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('integrations/${{ matrix.integration }}/package-lock.json') }}
+
+      - name: Install integration dependencies
+        if: steps.cache-integration-node_modules.outputs.cache-hit != 'true'
+        run: |
+          npm run install:${{ matrix.integration }} --prefix integrations
+
+      - name: Test integration
+        run: |
+          npm run build:${{ matrix.integration }} --prefix integrations
