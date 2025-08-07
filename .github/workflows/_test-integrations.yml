@@ -39,6 +39,10 @@ jobs:
         run: |
           npm ci --no-audit --no-fund
 
+      - name: Build test assets
+        run: |
+          npm run sass:dist
+
       - name: Use cache for integration node_modules
         id: cache-integration-node_modules
         uses: actions/cache@v4

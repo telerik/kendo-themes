@@ -2,8 +2,8 @@
   "name": "integrations",
   "version": "1.0.0",
   "scripts": {
-    "install:gulp": "cd ./gulp-sass && npm install",
-    "build:gulp": "npm run build --prefix gulp-sass",
+    "install:gulp": "cd ./gulp && npm install",
+    "build:gulp": "npm run build --prefix gulp",
     "install:parcel": "cd ./parcel && npm install",
     "build:parcel": "npm run build --prefix parcel",
     "install:vite": "cd ./vite && npm install",
