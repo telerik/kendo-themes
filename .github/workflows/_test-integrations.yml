@@ -14,7 +14,7 @@ jobs:
 
     strategy:
       matrix:
-        integration: [gulp-sass, parcel, vite, webpack]
+        integration: [gulp, parcel, vite, webpack]
 
     steps:
 
