@@ -640,8 +640,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-adaptive-actionsheet-header-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-adaptive-actionsheet-header-padding-x, #{$kendo-adaptive-actionsheet-header-padding-y} )</code></td>
-    <td><code>var(--kendo-adaptive-actionsheet-header-padding-x, var(--kendo-adaptive-actionsheet-header-padding-y, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>var( --kendo-adaptive-actionsheet-header-padding-x, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-adaptive-actionsheet-header-padding-x, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the adaptive action sheet titlebar.</div></div>

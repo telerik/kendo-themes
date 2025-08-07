@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-sm-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-sm-padding-x, calc( #{$kendo-fab-padding-x} / 2 ) )</code></td>
-    <td><code>var(--kendo-fab-sm-padding-x, calc(var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem)) / 2))</code></td>
+    <td><code>var( --kendo-fab-sm-padding-x, calc( #{k-spacing(4)} / 2 ) )</code></td>
+    <td><code>var(--kendo-fab-sm-padding-x, calc(var(--kendo-spacing-4, 1rem) / 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small FAB.</div></div>
@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-md-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-md-padding-x, #{$kendo-fab-padding-x} )</code></td>
-    <td><code>var(--kendo-fab-md-padding-x, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>var( --kendo-fab-md-padding-x, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-fab-md-padding-x, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium FAB.</div></div>
@@ -110,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-lg-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-lg-padding-x, calc( #{$kendo-fab-padding-x} * 1.5 ) )</code></td>
-    <td><code>var(--kendo-fab-lg-padding-x, calc(var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem)) * 1.5))</code></td>
+    <td><code>var( --kendo-fab-lg-padding-x, calc( #{k-spacing(4)} * 1.5 ) )</code></td>
+    <td><code>var(--kendo-fab-lg-padding-x, calc(var(--kendo-spacing-4, 1rem) * 1.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large FAB.</div></div>
@@ -120,8 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-padding-y, #{$kendo-fab-padding-x} )</code></td>
-    <td><code>var(--kendo-fab-padding-y, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>var( --kendo-fab-padding-y, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-fab-padding-y, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FAB.</div></div>
@@ -130,8 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-sm-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-sm-padding-y, calc( #{$kendo-fab-padding-y} / 2 ) )</code></td>
-    <td><code>var(--kendo-fab-sm-padding-y, calc(var(--kendo-fab-padding-y, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem))) / 2))</code></td>
+    <td><code>var( --kendo-fab-sm-padding-y, calc( #{k-spacing(4)} / 2 ) )</code></td>
+    <td><code>var(--kendo-fab-sm-padding-y, calc(var(--kendo-spacing-4, 1rem) / 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small FAB.</div></div>
@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-md-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-md-padding-y, #{$kendo-fab-padding-y} )</code></td>
-    <td><code>var(--kendo-fab-md-padding-y, var(--kendo-fab-padding-y, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem))))</code></td>
+    <td><code>var( --kendo-fab-md-padding-y, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-fab-md-padding-y, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium FAB.</div></div>
@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-lg-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-lg-padding-y, calc( #{$kendo-fab-padding-y} * 1.5 ) )</code></td>
-    <td><code>var(--kendo-fab-lg-padding-y, calc(var(--kendo-fab-padding-y, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem))) * 1.5))</code></td>
+    <td><code>var( --kendo-fab-lg-padding-y, calc( #{k-spacing(4)} * 1.5 ) )</code></td>
+    <td><code>var(--kendo-fab-lg-padding-y, calc(var(--kendo-spacing-4, 1rem) * 1.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large FAB.</div></div>
@@ -426,7 +426,7 @@ The following table lists the available variables for customization.
         padding-y: $kendo-fab-lg-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-fab-sm-padding-x, calc(var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem)) / 2))","padding-y":"var(--kendo-fab-sm-padding-y, calc(var(--kendo-fab-padding-y, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem))) / 2))"</li><li>md: "padding-x":"var(--kendo-fab-md-padding-x, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem)))","padding-y":"var(--kendo-fab-md-padding-y, var(--kendo-fab-padding-y, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem))))"</li><li>lg: "padding-x":"var(--kendo-fab-lg-padding-x, calc(var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem)) * 1.5))","padding-y":"var(--kendo-fab-lg-padding-y, calc(var(--kendo-fab-padding-y, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem))) * 1.5))"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-fab-sm-padding-x, calc(var(--kendo-spacing-4, 1rem) / 2))","padding-y":"var(--kendo-fab-sm-padding-y, calc(var(--kendo-spacing-4, 1rem) / 2))"</li><li>md: "padding-x":"var(--kendo-fab-md-padding-x, var(--kendo-spacing-4, 1rem))","padding-y":"var(--kendo-fab-md-padding-y, var(--kendo-spacing-4, 1rem))"</li><li>lg: "padding-x":"var(--kendo-fab-lg-padding-x, calc(var(--kendo-spacing-4, 1rem) * 1.5))","padding-y":"var(--kendo-fab-lg-padding-y, calc(var(--kendo-spacing-4, 1rem) * 1.5))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map for the FAB.</div></div>

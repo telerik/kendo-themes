@@ -976,8 +976,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-adaptive-actionsheet-header-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-adaptive-actionsheet-header-padding-x, #{$kendo-adaptive-actionsheet-header-padding-y} )</code></td>
-    <td><code>var(--kendo-adaptive-actionsheet-header-padding-x, var(--kendo-adaptive-actionsheet-header-padding-y, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>var( --kendo-adaptive-actionsheet-header-padding-x, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-adaptive-actionsheet-header-padding-x, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the adaptive action sheet titlebar.</div></div>
@@ -3531,8 +3531,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-cell-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-cell-padding-x, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-calendar-cell-padding-x, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the calendar cell.</div></div>
@@ -3541,8 +3541,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-cell-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-cell-padding-y, #{$kendo-calendar-cell-padding-x} )</code></td>
-    <td><code>var(--kendo-calendar-cell-padding-y, var(--kendo-calendar-cell-padding-x, var(--kendo-spacing-1, 0.25rem)))</code></td>
+    <td><code>$kendo-calendar-cell-padding-x</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the calendar cell.</div></div>
@@ -6046,8 +6046,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-item-spacing-x</td>
     <td>String</td>
-    <td><code>var( --kendo-chat-item-spacing-x, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-chat-item-spacing-x, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing between the items of the Chat.</div></div>
@@ -6056,8 +6056,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-item-spacing-y</td>
     <td>String</td>
-    <td><code>var( --kendo-chat-item-spacing-y, #{k-spacing(4)} )</code></td>
-    <td><code>var(--kendo-chat-item-spacing-y, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing between the items of the Chat.</div></div>
@@ -6066,8 +6066,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-message-list-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-chat-message-list-padding-x, #{$kendo-chat-padding-x} )</code></td>
-    <td><code>var(--kendo-chat-message-list-padding-x, var(--kendo-chat-padding-x, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>$kendo-chat-padding-x</code></td>
+    <td><code>var(--kendo-chat-padding-x, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat message list.</div></div>
@@ -6076,8 +6076,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-message-list-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-chat-message-list-padding-y, #{$kendo-chat-padding-y} )</code></td>
-    <td><code>var(--kendo-chat-message-list-padding-y, var(--kendo-chat-padding-y, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>$kendo-chat-padding-y</code></td>
+    <td><code>var(--kendo-chat-padding-y, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat message list.</div></div>
@@ -6086,8 +6086,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-message-list-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-chat-message-list-spacing, #{$kendo-chat-item-spacing-y} )</code></td>
-    <td><code>var(--kendo-chat-message-list-spacing, var(--kendo-chat-item-spacing-y, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>$kendo-chat-item-spacing-y</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat message list.</div></div>
@@ -6277,7 +6277,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-chat-avatar-spacing</td>
     <td>String</td>
     <td><code>var( --kendo-chat-avatar-spacing, #{$kendo-chat-item-spacing-x} )</code></td>
-    <td><code>var(--kendo-chat-avatar-spacing, var(--kendo-chat-item-spacing-x, var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><code>var(--kendo-chat-avatar-spacing, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat Avatar.</div></div>
@@ -8874,8 +8874,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-header-actions-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-header-actions-spacing, calc( #{$kendo-color-editor-spacer} / 2 ))</code></td>
-    <td><code>var(--kendo-color-editor-header-actions-spacing, calc(var(--kendo-color-editor-spacer, var(--kendo-spacing-2, 0.5rem)) / 2))</code></td>
+    <td><code>var(--kendo-color-editor-header-actions-spacing, calc( #{k-spacing(2)} / 2 ))</code></td>
+    <td><code>var(--kendo-color-editor-header-actions-spacing, calc(var(--kendo-spacing-2, 0.5rem) / 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the ColorEditor header actions.</div></div>
@@ -8884,8 +8884,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-sm-header-padding-y</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-sm-header-padding-y, $kendo-color-editor-spacer)</code></td>
-    <td><code>var(--kendo-color-editor-sm-header-padding-y, var(--kendo-color-editor-spacer, var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><code>var(--kendo-color-editor-sm-header-padding-y, k-spacing(2))</code></td>
+    <td><code>var(--kendo-color-editor-sm-header-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small ColorEditor header.</div></div>
@@ -8894,8 +8894,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-sm-header-padding-x</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-sm-header-padding-x, $kendo-color-editor-spacer)</code></td>
-    <td><code>var(--kendo-color-editor-sm-header-padding-x, var(--kendo-color-editor-spacer, var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><code>var(--kendo-color-editor-sm-header-padding-x, k-spacing(2))</code></td>
+    <td><code>var(--kendo-color-editor-sm-header-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small ColorEditor header.</div></div>
@@ -8904,8 +8904,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-md-header-padding-y</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-md-header-padding-y, $kendo-color-editor-spacer)</code></td>
-    <td><code>var(--kendo-color-editor-md-header-padding-y, var(--kendo-color-editor-spacer, var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><code>var(--kendo-color-editor-md-header-padding-y, k-spacing(2))</code></td>
+    <td><code>var(--kendo-color-editor-md-header-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium ColorEditor header.</div></div>
@@ -8914,8 +8914,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-md-header-padding-x</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-md-header-padding-x, $kendo-color-editor-spacer)</code></td>
-    <td><code>var(--kendo-color-editor-md-header-padding-x, var(--kendo-color-editor-spacer, var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><code>var(--kendo-color-editor-md-header-padding-x, k-spacing(2))</code></td>
+    <td><code>var(--kendo-color-editor-md-header-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium ColorEditor header.</div></div>
@@ -9064,8 +9064,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-views-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-views-spacing, $kendo-color-editor-spacer)</code></td>
-    <td><code>var(--kendo-color-editor-views-spacing, var(--kendo-color-editor-spacer, var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><code>var(--kendo-color-editor-views-spacing, k-spacing(2))</code></td>
+    <td><code>var(--kendo-color-editor-views-spacing, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the ColorEditor views container.</div></div>
@@ -9084,8 +9084,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-sm-views-padding-x</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-sm-views-padding-x, $kendo-color-editor-spacer)</code></td>
-    <td><code>var(--kendo-color-editor-sm-views-padding-x, var(--kendo-color-editor-spacer, var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><code>var(--kendo-color-editor-sm-views-padding-x, k-spacing(2))</code></td>
+    <td><code>var(--kendo-color-editor-sm-views-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small ColorEditor views container.</div></div>
@@ -9094,8 +9094,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-md-views-padding-y</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-md-views-padding-y, $kendo-color-editor-spacer)</code></td>
-    <td><code>var(--kendo-color-editor-md-views-padding-y, var(--kendo-color-editor-spacer, var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><code>var(--kendo-color-editor-md-views-padding-y, k-spacing(2))</code></td>
+    <td><code>var(--kendo-color-editor-md-views-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium ColorEditor views container.</div></div>
@@ -9104,8 +9104,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-md-views-padding-x</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-md-views-padding-x, $kendo-color-editor-spacer)</code></td>
-    <td><code>var(--kendo-color-editor-md-views-padding-x, var(--kendo-color-editor-spacer, var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><code>var(--kendo-color-editor-md-views-padding-x, k-spacing(2))</code></td>
+    <td><code>var(--kendo-color-editor-md-views-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium ColorEditor views container.</div></div>
@@ -9207,7 +9207,7 @@ The following table lists the available variables for customizing the Fluent the
         preview-height: $kendo-color-editor-lg-color-preview-height,
     )
 )</code></td>
-    <td><ul><li>sm: "min-width":"var(--kendo-color-editor-sm-min-width, 236px)","header-padding-x":"var(--kendo-color-editor-sm-header-padding-x, var(--kendo-color-editor-spacer, var(--kendo-spacing-2, 0.5rem)))","header-padding-y":"var(--kendo-color-editor-sm-header-padding-y, var(--kendo-color-editor-spacer, var(--kendo-spacing-2, 0.5rem)))","views-padding-x":"var(--kendo-color-editor-sm-views-padding-x, var(--kendo-color-editor-spacer, var(--kendo-spacing-2, 0.5rem)))","views-padding-y":"var(--kendo-color-editor-sm-views-padding-y, var(--kendo-spacing-2, 0.5rem))","preview-gap":"var(--kendo-color-editor-sm-preview-spacing, var(--kendo-spacing-1, 0.25rem))","preview-width":"var(--kendo-color-editor-sm-color-preview-width, 34px)","preview-height":"var(--kendo-color-editor-sm-color-preview-height, 12px)"</li><li>md: "min-width":"var(--kendo-color-editor-md-min-width, var(--kendo-color-editor-min-width, 260px))","header-padding-x":"var(--kendo-color-editor-md-header-padding-x, var(--kendo-color-editor-spacer, var(--kendo-spacing-2, 0.5rem)))","header-padding-y":"var(--kendo-color-editor-md-header-padding-y, var(--kendo-color-editor-spacer, var(--kendo-spacing-2, 0.5rem)))","views-padding-x":"var(--kendo-color-editor-md-views-padding-x, var(--kendo-color-editor-spacer, var(--kendo-spacing-2, 0.5rem)))","views-padding-y":"var(--kendo-color-editor-md-views-padding-y, var(--kendo-color-editor-spacer, var(--kendo-spacing-2, 0.5rem)))","preview-gap":"var(--kendo-color-editor-md-preview-spacing, var(--kendo-color-editor-preview-spacing, var(--kendo-spacing-1, 0.25rem)))","preview-width":"var(--kendo-color-editor-md-color-preview-width, var(--kendo-color-editor-color-preview-width, 34px))","preview-height":"var(--kendo-color-editor-md-color-preview-height, var(--kendo-color-editor-color-preview-height, 14px))"</li><li>lg: "min-width":"var(--kendo-color-editor-lg-min-width, 362px)","header-padding-x":"var(--kendo-color-editor-lg-header-padding-x, var(--kendo-spacing-4, 1rem))","header-padding-y":"var(--kendo-color-editor-lg-header-padding-y, var(--kendo-spacing-4, 1rem))","views-padding-x":"var(--kendo-color-editor-lg-views-padding-x, var(--kendo-spacing-4, 1rem))","views-padding-y":"var(--kendo-color-editor-lg-views-padding-y, var(--kendo-spacing-4, 1rem))","preview-gap":"var(--kendo-color-editor-lg-preview-spacing, var(--kendo-spacing-1, 0.25rem))","preview-width":"var(--kendo-color-editor-lg-color-preview-width, 34px)","preview-height":"var(--kendo-color-editor-lg-color-preview-height, 16px)"</li></ul></td>
+    <td><ul><li>sm: "min-width":"var(--kendo-color-editor-sm-min-width, 236px)","header-padding-x":"var(--kendo-color-editor-sm-header-padding-x, var(--kendo-spacing-2, 0.5rem))","header-padding-y":"var(--kendo-color-editor-sm-header-padding-y, var(--kendo-spacing-2, 0.5rem))","views-padding-x":"var(--kendo-color-editor-sm-views-padding-x, var(--kendo-spacing-2, 0.5rem))","views-padding-y":"var(--kendo-color-editor-sm-views-padding-y, var(--kendo-spacing-2, 0.5rem))","preview-gap":"var(--kendo-color-editor-sm-preview-spacing, var(--kendo-spacing-1, 0.25rem))","preview-width":"var(--kendo-color-editor-sm-color-preview-width, 34px)","preview-height":"var(--kendo-color-editor-sm-color-preview-height, 12px)"</li><li>md: "min-width":"var(--kendo-color-editor-md-min-width, var(--kendo-color-editor-min-width, 260px))","header-padding-x":"var(--kendo-color-editor-md-header-padding-x, var(--kendo-spacing-2, 0.5rem))","header-padding-y":"var(--kendo-color-editor-md-header-padding-y, var(--kendo-spacing-2, 0.5rem))","views-padding-x":"var(--kendo-color-editor-md-views-padding-x, var(--kendo-spacing-2, 0.5rem))","views-padding-y":"var(--kendo-color-editor-md-views-padding-y, var(--kendo-spacing-2, 0.5rem))","preview-gap":"var(--kendo-color-editor-md-preview-spacing, var(--kendo-color-editor-preview-spacing, var(--kendo-spacing-1, 0.25rem)))","preview-width":"var(--kendo-color-editor-md-color-preview-width, var(--kendo-color-editor-color-preview-width, 34px))","preview-height":"var(--kendo-color-editor-md-color-preview-height, var(--kendo-color-editor-color-preview-height, 14px))"</li><li>lg: "min-width":"var(--kendo-color-editor-lg-min-width, 362px)","header-padding-x":"var(--kendo-color-editor-lg-header-padding-x, var(--kendo-spacing-4, 1rem))","header-padding-y":"var(--kendo-color-editor-lg-header-padding-y, var(--kendo-spacing-4, 1rem))","views-padding-x":"var(--kendo-color-editor-lg-views-padding-x, var(--kendo-spacing-4, 1rem))","views-padding-y":"var(--kendo-color-editor-lg-views-padding-y, var(--kendo-spacing-4, 1rem))","preview-gap":"var(--kendo-color-editor-lg-preview-spacing, var(--kendo-spacing-1, 0.25rem))","preview-width":"var(--kendo-color-editor-lg-color-preview-width, 34px)","preview-height":"var(--kendo-color-editor-lg-color-preview-height, 16px)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorEditor preview.</div></div>
@@ -9895,9 +9895,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-color-gradient-contrast-spacing</td>
-    <td>String</td>
-    <td><code>var(--kendo-color-gradient-contrast-spacing, calc( #{$kendo-color-gradient-spacer} / 1.5 ))</code></td>
-    <td><code>var(--kendo-color-gradient-contrast-spacing, calc(var(--kendo-color-gradient-spacer, var(--kendo-spacing-4, 1rem)) / 1.5))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-color-gradient-spacer} / 1.5 )</code></td>
+    <td><code>calc(var(--kendo-color-gradient-spacer, var(--kendo-spacing-4, 1rem)) / 1.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items in the ColorGradient contrast tool.</div></div>
@@ -10027,8 +10027,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-palette-tile-width</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-tile-width, #{k-spacing(6)} )</code></td>
-    <td><code>var(--kendo-color-palette-tile-width, var(--kendo-spacing-6, 1.5rem))</code></td>
+    <td><code>k-spacing(6)</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the ColorPalette tile.</div></div>
@@ -10038,7 +10038,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-color-palette-tile-height</td>
     <td>String</td>
     <td><code>var( --kendo-color-palette-tile-height, #{$kendo-color-palette-tile-width} )</code></td>
-    <td><code>var(--kendo-color-palette-tile-height, var(--kendo-color-palette-tile-width, var(--kendo-spacing-6, 1.5rem)))</code></td>
+    <td><code>var(--kendo-color-palette-tile-height, var(--kendo-spacing-6, 1.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ColorPalette tile.</div></div>
@@ -10068,7 +10068,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-color-palette-md-tile-width</td>
     <td>String</td>
     <td><code>var( --kendo-color-palette-md-tile-width, #{$kendo-color-palette-tile-width} )</code></td>
-    <td><code>var(--kendo-color-palette-md-tile-width, var(--kendo-color-palette-tile-width, var(--kendo-spacing-6, 1.5rem)))</code></td>
+    <td><code>var(--kendo-color-palette-md-tile-width, var(--kendo-spacing-6, 1.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium ColorPalette tile.</div></div>
@@ -10078,7 +10078,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-color-palette-md-tile-height</td>
     <td>String</td>
     <td><code>var( --kendo-color-palette-md-tile-height, #{$kendo-color-palette-tile-height} )</code></td>
-    <td><code>var(--kendo-color-palette-md-tile-height, var(--kendo-color-palette-tile-height, var(--kendo-color-palette-tile-width, var(--kendo-spacing-6, 1.5rem))))</code></td>
+    <td><code>var(--kendo-color-palette-md-tile-height, var(--kendo-color-palette-tile-height, var(--kendo-spacing-6, 1.5rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium ColorPalette tile.</div></div>
@@ -10191,7 +10191,7 @@ The following table lists the available variables for customizing the Fluent the
         height: $kendo-color-palette-lg-tile-height
     )
 )</code></td>
-    <td><ul><li>sm: "width":"var(--kendo-color-palette-sm-tile-width, var(--kendo-spacing-5\\.5, 1.375rem))","height":"var(--kendo-color-palette-sm-tile-height, var(--kendo-color-palette-sm-tile-width, var(--kendo-spacing-5\\.5, 1.375rem)))"</li><li>md: "width":"var(--kendo-color-palette-md-tile-width, var(--kendo-color-palette-tile-width, var(--kendo-spacing-6, 1.5rem)))","height":"var(--kendo-color-palette-md-tile-height, var(--kendo-color-palette-tile-height, var(--kendo-color-palette-tile-width, var(--kendo-spacing-6, 1.5rem))))"</li><li>lg: "width":"var(--kendo-color-palette-lg-tile-width, var(--kendo-spacing-8, 2rem))","height":"var(--kendo-color-palette-lg-tile-height, var(--kendo-color-palette-lg-tile-width, var(--kendo-spacing-8, 2rem)))"</li></ul></td>
+    <td><ul><li>sm: "width":"var(--kendo-color-palette-sm-tile-width, var(--kendo-spacing-5\\.5, 1.375rem))","height":"var(--kendo-color-palette-sm-tile-height, var(--kendo-color-palette-sm-tile-width, var(--kendo-spacing-5\\.5, 1.375rem)))"</li><li>md: "width":"var(--kendo-color-palette-md-tile-width, var(--kendo-spacing-6, 1.5rem))","height":"var(--kendo-color-palette-md-tile-height, var(--kendo-color-palette-tile-height, var(--kendo-spacing-6, 1.5rem)))"</li><li>lg: "width":"var(--kendo-color-palette-lg-tile-width, var(--kendo-spacing-8, 2rem))","height":"var(--kendo-color-palette-lg-tile-height, var(--kendo-color-palette-lg-tile-width, var(--kendo-spacing-8, 2rem)))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorPalette.</div></div>
@@ -11250,8 +11250,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-scrollbar-hover-color</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-scrollbar-hover-color color-mix(in srgb, k-color(on-app-surface) 60%, transparent) )</code></td>
-    <td><code>var(--kendo-drawer-scrollbar-hover-color color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 60%, transparent))</code></td>
+    <td><code>var( --kendo-drawer-scrollbar-hover-color, color-mix(in srgb, k-color(on-app-surface) 60%, transparent) )</code></td>
+    <td><code>var(--kendo-drawer-scrollbar-hover-color, color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 60%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the Drawer scrollbar.</div></div>
@@ -11340,8 +11340,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-level-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-item-level-padding-x, $kendo-drawer-item-padding-x )</code></td>
-    <td><code>var(--kendo-drawer-item-level-padding-x, var(--kendo-drawer-item-padding-x, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>var( --kendo-drawer-item-level-padding-x, k-spacing(4) )</code></td>
+    <td><code>var(--kendo-drawer-item-level-padding-x, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Drawer item in each level.</div></div>
@@ -11389,9 +11389,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-drawer-mini-initial-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-drawer-mini-initial-width, calc( 2 * #{$kendo-drawer-item-padding-x} + var( --kendo-icon-size, 1rem ) ) )</code></td>
-    <td><code>var(--kendo-drawer-mini-initial-width, calc(2 * var(--kendo-drawer-item-padding-x, var(--kendo-spacing-4, 1rem)) + var(--kendo-icon-size, 1rem)))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( 2 * #{k-spacing(4)} + var( --kendo-icon-size, 1rem ) )</code></td>
+    <td><code>calc(2 * var(--kendo-spacing-4, 1rem) + var(--kendo-icon-size, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The initial width of the mini Drawer.</div></div>
@@ -12480,8 +12480,8 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-file-manager-spacer</td>
     <td>String</td>
-    <td><code>var( --kendo-file-manager-spacer, #{k-spacing(4)} )</code></td>
-    <td><code>var(--kendo-file-manager-spacer, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The space between the FileManager items.</div></div>
@@ -12601,7 +12601,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-file-manager-navigation-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-file-manager-navigation-padding-x, #{$kendo-file-manager-spacer} )</code></td>
-    <td><code>var(--kendo-file-manager-navigation-padding-x, var(--kendo-file-manager-spacer, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>var(--kendo-file-manager-navigation-padding-x, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FileManager Navigation.</div></div>
@@ -12611,7 +12611,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-file-manager-navigation-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-file-manager-navigation-padding-y, #{$kendo-file-manager-spacer} )</code></td>
-    <td><code>var(--kendo-file-manager-navigation-padding-y, var(--kendo-file-manager-spacer, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>var(--kendo-file-manager-navigation-padding-y, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FileManager Navigation.</div></div>
@@ -12920,8 +12920,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-file-manager-preview-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-file-manager-preview-padding-x, #{$kendo-file-manager-spacer} )</code></td>
-    <td><code>var(--kendo-file-manager-preview-padding-x, var(--kendo-file-manager-spacer, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>$kendo-file-manager-spacer</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FileManager preview.</div></div>
@@ -12930,8 +12930,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-file-manager-preview-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-file-manager-preview-padding-y, #{$kendo-file-manager-spacer} )</code></td>
-    <td><code>var(--kendo-file-manager-preview-padding-y, var(--kendo-file-manager-spacer, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>$kendo-file-manager-spacer</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FileManager preview.</div></div>
@@ -12960,8 +12960,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-file-manager-preview-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-file-manager-preview-spacing, #{$kendo-file-manager-spacer} )</code></td>
-    <td><code>var(--kendo-file-manager-preview-spacing, var(--kendo-file-manager-spacer, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>$kendo-file-manager-spacer</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the FileManager preview.</div></div>
@@ -13240,8 +13240,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-sm-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-sm-padding-x, calc( #{$kendo-fab-padding-x} / 2 ) )</code></td>
-    <td><code>var(--kendo-fab-sm-padding-x, calc(var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem)) / 2))</code></td>
+    <td><code>var( --kendo-fab-sm-padding-x, calc( #{k-spacing(4)} / 2 ) )</code></td>
+    <td><code>var(--kendo-fab-sm-padding-x, calc(var(--kendo-spacing-4, 1rem) / 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small FAB.</div></div>
@@ -13250,8 +13250,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-md-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-md-padding-x, #{$kendo-fab-padding-x} )</code></td>
-    <td><code>var(--kendo-fab-md-padding-x, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>var( --kendo-fab-md-padding-x, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-fab-md-padding-x, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium FAB.</div></div>
@@ -13260,8 +13260,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-lg-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-lg-padding-x, calc( #{$kendo-fab-padding-x} * 1.5 ) )</code></td>
-    <td><code>var(--kendo-fab-lg-padding-x, calc(var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem)) * 1.5))</code></td>
+    <td><code>var( --kendo-fab-lg-padding-x, calc( #{k-spacing(4)} * 1.5 ) )</code></td>
+    <td><code>var(--kendo-fab-lg-padding-x, calc(var(--kendo-spacing-4, 1rem) * 1.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large FAB.</div></div>
@@ -13270,8 +13270,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-padding-y, #{$kendo-fab-padding-x} )</code></td>
-    <td><code>var(--kendo-fab-padding-y, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>var( --kendo-fab-padding-y, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-fab-padding-y, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FAB.</div></div>
@@ -13280,8 +13280,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-sm-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-sm-padding-y, calc( #{$kendo-fab-padding-y} / 2 ) )</code></td>
-    <td><code>var(--kendo-fab-sm-padding-y, calc(var(--kendo-fab-padding-y, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem))) / 2))</code></td>
+    <td><code>var( --kendo-fab-sm-padding-y, calc( #{k-spacing(4)} / 2 ) )</code></td>
+    <td><code>var(--kendo-fab-sm-padding-y, calc(var(--kendo-spacing-4, 1rem) / 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small FAB.</div></div>
@@ -13290,8 +13290,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-md-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-md-padding-y, #{$kendo-fab-padding-y} )</code></td>
-    <td><code>var(--kendo-fab-md-padding-y, var(--kendo-fab-padding-y, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem))))</code></td>
+    <td><code>var( --kendo-fab-md-padding-y, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-fab-md-padding-y, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium FAB.</div></div>
@@ -13300,8 +13300,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-lg-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-lg-padding-y, calc( #{$kendo-fab-padding-y} * 1.5 ) )</code></td>
-    <td><code>var(--kendo-fab-lg-padding-y, calc(var(--kendo-fab-padding-y, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem))) * 1.5))</code></td>
+    <td><code>var( --kendo-fab-lg-padding-y, calc( #{k-spacing(4)} * 1.5 ) )</code></td>
+    <td><code>var(--kendo-fab-lg-padding-y, calc(var(--kendo-spacing-4, 1rem) * 1.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large FAB.</div></div>
@@ -13576,7 +13576,7 @@ The following table lists the available variables for customizing the Fluent the
         padding-y: $kendo-fab-lg-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-fab-sm-padding-x, calc(var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem)) / 2))","padding-y":"var(--kendo-fab-sm-padding-y, calc(var(--kendo-fab-padding-y, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem))) / 2))"</li><li>md: "padding-x":"var(--kendo-fab-md-padding-x, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem)))","padding-y":"var(--kendo-fab-md-padding-y, var(--kendo-fab-padding-y, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem))))"</li><li>lg: "padding-x":"var(--kendo-fab-lg-padding-x, calc(var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem)) * 1.5))","padding-y":"var(--kendo-fab-lg-padding-y, calc(var(--kendo-fab-padding-y, var(--kendo-fab-padding-x, var(--kendo-spacing-4, 1rem))) * 1.5))"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-fab-sm-padding-x, calc(var(--kendo-spacing-4, 1rem) / 2))","padding-y":"var(--kendo-fab-sm-padding-y, calc(var(--kendo-spacing-4, 1rem) / 2))"</li><li>md: "padding-x":"var(--kendo-fab-md-padding-x, var(--kendo-spacing-4, 1rem))","padding-y":"var(--kendo-fab-md-padding-y, var(--kendo-spacing-4, 1rem))"</li><li>lg: "padding-x":"var(--kendo-fab-lg-padding-x, calc(var(--kendo-spacing-4, 1rem) * 1.5))","padding-y":"var(--kendo-fab-lg-padding-y, calc(var(--kendo-spacing-4, 1rem) * 1.5))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map for the FAB.</div></div>
@@ -13814,9 +13814,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-floating-label-height</td>
-    <td>String</td>
-    <td><code>var(--kendo-floating-label-height, calc( #{$kendo-floating-label-line-height} * #{$kendo-floating-label-font-size} ))</code></td>
-    <td><code>var(--kendo-floating-label-height, calc(var(--kendo-floating-label-line-height, var(--kendo-line-height, normal)) * var(--kendo-floating-label-font-size, var(--kendo-font-size, inherit))))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-floating-label-line-height} * #{$kendo-floating-label-font-size} )</code></td>
+    <td><code>calc(var(--kendo-floating-label-line-height, var(--kendo-line-height, normal)) * var(--kendo-floating-label-font-size, var(--kendo-font-size, inherit)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Floating Label.</div></div>
@@ -13824,9 +13824,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-floating-label-offset-x</td>
-    <td>String</td>
-    <td><code>var(--kendo-floating-label-offset-x, calc( #{$kendo-input-md-padding-x} + #{$kendo-input-border-width} ))</code></td>
-    <td><code>var(--kendo-floating-label-offset-x, calc(var(--kendo-input-padding-x, var(--kendo-spacing-2, 0.5rem)) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-input-md-padding-x} + #{$kendo-input-border-width} )</code></td>
+    <td><code>calc(var(--kendo-input-padding-x, var(--kendo-spacing-2, 0.5rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the Floating Label.</div></div>
@@ -13834,9 +13834,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-floating-label-offset-y</td>
-    <td>String</td>
-    <td><code>var(--kendo-floating-label-offset-y, calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-md-padding-y} ))</code></td>
-    <td><code>var(--kendo-floating-label-offset-y, calc(var(--kendo-floating-label-height, calc(var(--kendo-floating-label-line-height, var(--kendo-line-height, normal)) * var(--kendo-floating-label-font-size, var(--kendo-font-size, inherit)))) + 1px + var(--kendo-input-padding-y, var(--kendo-spacing-1\.5, 0.375rem))))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-md-padding-y} )</code></td>
+    <td><code>calc(calc(var(--kendo-floating-label-line-height, var(--kendo-line-height, normal)) * var(--kendo-floating-label-font-size, var(--kendo-font-size, inherit))) + 1px + var(--kendo-input-padding-y, var(--kendo-spacing-1\.5, 0.375rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical offset of the Floating Label.</div></div>
@@ -14155,8 +14155,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-form-md-rows-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-form-md-rows-spacing, #{$kendo-form-sm-rows-spacing})</code></td>
-    <td><code>var(--kendo-form-md-rows-spacing, var(--kendo-form-sm-rows-spacing, var(--kendo-spacing-3, 0.75rem)))</code></td>
+    <td><code>var(--kendo-form-md-rows-spacing, #{k-spacing(3)})</code></td>
+    <td><code>var(--kendo-form-md-rows-spacing, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The row spacing of the medium Form.</div></div>
@@ -14165,8 +14165,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-form-lg-rows-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-form-lg-rows-spacing, #{$kendo-form-sm-rows-spacing})</code></td>
-    <td><code>var(--kendo-form-lg-rows-spacing, var(--kendo-form-sm-rows-spacing, var(--kendo-spacing-3, 0.75rem)))</code></td>
+    <td><code>var(--kendo-form-lg-rows-spacing, #{k-spacing(3)})</code></td>
+    <td><code>var(--kendo-form-lg-rows-spacing, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The row spacing of the large Form.</div></div>
@@ -14326,7 +14326,7 @@ The following table lists the available variables for customizing the Fluent the
         form-rows-spacing: $kendo-form-lg-rows-spacing
     )
 )</code></td>
-    <td><ul><li>sm: "form-rows-spacing":"var(--kendo-form-sm-rows-spacing, var(--kendo-spacing-3, 0.75rem))"</li><li>md: "form-rows-spacing":"var(--kendo-form-md-rows-spacing, var(--kendo-form-sm-rows-spacing, var(--kendo-spacing-3, 0.75rem)))"</li><li>lg: "form-rows-spacing":"var(--kendo-form-lg-rows-spacing, var(--kendo-form-sm-rows-spacing, var(--kendo-spacing-3, 0.75rem)))"</li></ul></td>
+    <td><ul><li>sm: "form-rows-spacing":"var(--kendo-form-sm-rows-spacing, var(--kendo-spacing-3, 0.75rem))"</li><li>md: "form-rows-spacing":"var(--kendo-form-md-rows-spacing, var(--kendo-spacing-3, 0.75rem))"</li><li>lg: "form-rows-spacing":"var(--kendo-form-lg-rows-spacing, var(--kendo-spacing-3, 0.75rem))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Form.</div></div>
@@ -14774,9 +14774,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-gantt-planned-border-width</td>
-    <td>String</td>
-    <td><code>var(--kendo-gantt-planned-border-width, 2px)</code></td>
-    <td><code>var(--kendo-gantt-planned-border-width, 2px)</code></td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Gantt task planned line.</div></div>
@@ -14804,9 +14804,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-gantt-planned-moment-width</td>
-    <td>String</td>
-    <td><code>var(--kendo-gantt-planned-moment-width, 6px)</code></td>
-    <td><code>var(--kendo-gantt-planned-moment-width, 6px)</code></td>
+    <td>Number</td>
+    <td><code>6px</code></td>
+    <td><code>6px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the Gantt planned line dot.</div></div>
@@ -14814,9 +14814,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-gantt-planned-moment-height</td>
-    <td>String</td>
-    <td><code>var(--kendo-gantt-planned-moment-height, var(--kendo-gantt-planned-moment-width, 6px))</code></td>
-    <td><code>var(--kendo-gantt-planned-moment-height, var(--kendo-gantt-planned-moment-width, 6px))</code></td>
+    <td>Number</td>
+    <td><code>$kendo-gantt-planned-moment-width</code></td>
+    <td><code>6px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default height of the Gantt planned line dot.</div></div>
@@ -14824,9 +14824,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-gantt-planned-moment-border-radius</td>
-    <td>String</td>
-    <td><code>var(--kendo-gantt-planned-moment-border-radius, calc((var(--kendo-gantt-planned-border-width, 2px) * 2 + var(--kendo-gantt-planned-moment-width, 6px)) / 2))</code></td>
-    <td><code>var(--kendo-gantt-planned-moment-border-radius, calc((var(--kendo-gantt-planned-border-width, 2px) * 2 + var(--kendo-gantt-planned-moment-width, 6px)) / 2))</code></td>
+    <td>Number</td>
+    <td><code>calc(($kendo-gantt-planned-border-width * 2 + $kendo-gantt-planned-moment-width) / 2)</code></td>
+    <td><code>5px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Gantt planned line dot.</div></div>
@@ -14834,9 +14834,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-gantt-planned-moment-left-margin-x</td>
-    <td>String</td>
-    <td><code>var(--kendo-gantt-planned-moment-left-margin-x, calc(var(--kendo-gantt-planned-border-width, 2px) / 2 - var(--kendo-gantt-planned-moment-border-radius, calc((var(--kendo-gantt-planned-border-width, 2px) * 2 + var(--kendo-gantt-planned-moment-width, 6px)) / 2))))</code></td>
-    <td><code>var(--kendo-gantt-planned-moment-left-margin-x, calc(var(--kendo-gantt-planned-border-width, 2px) / 2 - var(--kendo-gantt-planned-moment-border-radius, calc((var(--kendo-gantt-planned-border-width, 2px) * 2 + var(--kendo-gantt-planned-moment-width, 6px)) / 2))))</code></td>
+    <td>Number</td>
+    <td><code>calc($kendo-gantt-planned-border-width / 2 - $kendo-gantt-planned-moment-border-radius)</code></td>
+    <td><code>-4px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Gantt planned line dot.</div></div>
@@ -14844,9 +14844,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-gantt-planned-milestone-moment-margin-x</td>
-    <td>String</td>
-    <td><code>var(--kendo-gantt-planned-milestone-moment-margin-x, #{math.div(6px, 2)})</code></td>
-    <td><code>var(--kendo-gantt-planned-milestone-moment-margin-x, 3px)</code></td>
+    <td>Number</td>
+    <td><code>3px</code></td>
+    <td><code>3px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Gantt milestone planned line dot.</div></div>
@@ -14855,8 +14855,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-planned-duration-height</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-planned-duration-height, var(--kendo-gantt-planned-border-width, 2px))</code></td>
-    <td><code>var(--kendo-gantt-planned-duration-height, var(--kendo-gantt-planned-border-width, 2px))</code></td>
+    <td><code>var(--kendo-gantt-planned-duration-height, $kendo-gantt-planned-border-width)</code></td>
+    <td><code>var(--kendo-gantt-planned-duration-height, 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default height of the Gantt planned line.</div></div>
@@ -14865,8 +14865,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-planned-duration-hover-height</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-planned-duration-hover-height, calc(var(--kendo-gantt-planned-border-width, 2px) + 1px))</code></td>
-    <td><code>var(--kendo-gantt-planned-duration-hover-height, calc(var(--kendo-gantt-planned-border-width, 2px) + 1px))</code></td>
+    <td><code>var(--kendo-gantt-planned-duration-hover-height, calc($kendo-gantt-planned-border-width + 1px))</code></td>
+    <td><code>var(--kendo-gantt-planned-duration-hover-height, 3px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the hovered Gantt planned line.</div></div>
@@ -15155,8 +15155,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-padding-x, #{$kendo-table-md-cell-padding-x} )</code></td>
-    <td><code>var(--kendo-grid-padding-x, var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-3, 0.75rem)))</code></td>
+    <td><code>$kendo-table-md-cell-padding-x</code></td>
+    <td><code>var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid.</div></div>
@@ -15165,8 +15165,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-padding-y, #{$kendo-table-md-cell-padding-y} )</code></td>
-    <td><code>var(--kendo-grid-padding-y, var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-3, 0.75rem)))</code></td>
+    <td><code>$kendo-table-md-cell-padding-y</code></td>
+    <td><code>var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid.</div></div>
@@ -15175,8 +15175,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-header-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-header-padding-x, #{$kendo-grid-padding-x} )</code></td>
-    <td><code>var(--kendo-grid-header-padding-x, var(--kendo-grid-padding-x, var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-3, 0.75rem))))</code></td>
+    <td><code>$kendo-grid-padding-x</code></td>
+    <td><code>var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid header.</div></div>
@@ -15185,8 +15185,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-header-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-header-padding-y, #{$kendo-grid-padding-y} )</code></td>
-    <td><code>var(--kendo-grid-header-padding-y, var(--kendo-grid-padding-y, var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-3, 0.75rem))))</code></td>
+    <td><code>$kendo-grid-padding-y</code></td>
+    <td><code>var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid header.</div></div>
@@ -15195,8 +15195,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-grouping-header-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-grouping-header-padding-x, #{$kendo-toolbar-md-padding-x} )</code></td>
-    <td><code>var(--kendo-grid-grouping-header-padding-x, var(--kendo-toolbar-md-padding-x, var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><code>$kendo-toolbar-md-padding-x</code></td>
+    <td><code>var(--kendo-toolbar-md-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid grouping header.</div></div>
@@ -15205,8 +15205,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-grouping-header-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-grouping-header-padding-y, #{$kendo-toolbar-md-padding-y} )</code></td>
-    <td><code>var(--kendo-grid-grouping-header-padding-y, var(--kendo-toolbar-md-padding-y, var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><code>$kendo-toolbar-md-padding-y</code></td>
+    <td><code>var(--kendo-toolbar-md-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid grouping header.</div></div>
@@ -15215,8 +15215,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-cell-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-cell-padding-x, #{$kendo-grid-padding-x} )</code></td>
-    <td><code>var(--kendo-grid-cell-padding-x, var(--kendo-grid-padding-x, var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-3, 0.75rem))))</code></td>
+    <td><code>$kendo-grid-padding-x</code></td>
+    <td><code>var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid cell.</div></div>
@@ -15225,8 +15225,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-cell-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-cell-padding-y, #{$kendo-grid-padding-y} )</code></td>
-    <td><code>var(--kendo-grid-cell-padding-y, var(--kendo-grid-padding-y, var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-3, 0.75rem))))</code></td>
+    <td><code>$kendo-grid-padding-y</code></td>
+    <td><code>var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid cell.</div></div>
@@ -15235,8 +15235,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-filter-cell-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-filter-cell-padding-x, #{$kendo-grid-padding-y} )</code></td>
-    <td><code>var(--kendo-grid-filter-cell-padding-x, var(--kendo-grid-padding-y, var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-3, 0.75rem))))</code></td>
+    <td><code>$kendo-grid-padding-y</code></td>
+    <td><code>var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid filter cell.</div></div>
@@ -15245,8 +15245,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-filter-cell-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-filter-cell-padding-y, #{$kendo-grid-filter-cell-padding-x} )</code></td>
-    <td><code>var(--kendo-grid-filter-cell-padding-y, var(--kendo-grid-filter-cell-padding-x, var(--kendo-grid-padding-y, var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-3, 0.75rem)))))</code></td>
+    <td><code>$kendo-grid-filter-cell-padding-x</code></td>
+    <td><code>var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid filter cell.</div></div>
@@ -15255,8 +15255,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-edit-cell-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-edit-cell-padding-x, #{$kendo-grid-cell-padding-x} )</code></td>
-    <td><code>var(--kendo-grid-edit-cell-padding-x, var(--kendo-grid-cell-padding-x, var(--kendo-grid-padding-x, var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-3, 0.75rem)))))</code></td>
+    <td><code>$kendo-grid-cell-padding-x</code></td>
+    <td><code>var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid edit cell.</div></div>
@@ -15264,9 +15264,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-grid-edit-cell-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-grid-edit-cell-padding-y, calc( #{k-spacing(2.5)} / 2 ) )</code></td>
-    <td><code>var(--kendo-grid-edit-cell-padding-y, calc(var(--kendo-spacing-2\.5, 0.625rem) / 2))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{k-spacing(2.5)} / 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5, 0.625rem) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid filter cell.</div></div>
@@ -15295,8 +15295,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-group-drop-hint-dot-size</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-group-drop-hint-dot-size, #{$kendo-grid-group-drop-hint-size} )</code></td>
-    <td><code>var(--kendo-grid-group-drop-hint-dot-size, var(--kendo-grid-group-drop-hint-size, 6px))</code></td>
+    <td><code>$kendo-grid-group-drop-hint-size</code></td>
+    <td><code>var(--kendo-grid-group-drop-hint-size, 6px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The dot size of the Grid group drop clue.</div></div>
@@ -15726,7 +15726,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-filter-cell-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-grid-filter-cell-padding-x, #{$kendo-grid-padding-y} )</code></td>
-    <td><code>var(--kendo-grid-filter-cell-padding-x, var(--kendo-grid-padding-y, var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-3, 0.75rem))))</code></td>
+    <td><code>var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid filter cell.</div></div>
@@ -15736,7 +15736,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-filter-cell-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-grid-filter-cell-padding-y, #{$kendo-grid-filter-cell-padding-x} )</code></td>
-    <td><code>var(--kendo-grid-filter-cell-padding-y, var(--kendo-grid-filter-cell-padding-x, var(--kendo-grid-padding-y, var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-3, 0.75rem)))))</code></td>
+    <td><code>var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid filter cell.</div></div>
@@ -15755,8 +15755,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-cell-border-width-y</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-cell-border-width-y, #{$kendo-grid-border-width} )</code></td>
-    <td><code>var(--kendo-grid-cell-border-width-y, var(--kendo-grid-border-width, 1px))</code></td>
+    <td><code>$kendo-grid-border-width</code></td>
+    <td><code>var(--kendo-grid-border-width, 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical border width of the Grid cell.</div></div>
@@ -15764,9 +15764,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-grid-cell-border-width-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-grid-cell-border-width-x, 0px )</code></td>
-    <td><code>var(--kendo-grid-cell-border-width-x, 0px)</code></td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal border width of the Grid cell.</div></div>
@@ -19370,8 +19370,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-sm-segment-size</td>
     <td>String</td>
-    <td><code>var( --kendo-loader-sm-segment-size, #{k-spacing(1)} )</code></td>
-    <td><code>var(--kendo-loader-sm-segment-size, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the small Loader segment.</div></div>
@@ -19380,8 +19380,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-md-segment-size</td>
     <td>String</td>
-    <td><code>var( --kendo-loader-md-segment-size, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-loader-md-segment-size, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the medium Loader segment.</div></div>
@@ -19390,8 +19390,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-lg-segment-size</td>
     <td>String</td>
-    <td><code>var( --kendo-loader-lg-segment-size, #{k-spacing(4)} )</code></td>
-    <td><code>var(--kendo-loader-lg-segment-size, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the large Loader segment.</div></div>
@@ -19401,7 +19401,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-loader-sm-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-loader-sm-padding-x, calc( #{$kendo-loader-sm-segment-size} / 2 ) )</code></td>
-    <td><code>var(--kendo-loader-sm-padding-x, calc(var(--kendo-loader-sm-segment-size, var(--kendo-spacing-1, 0.25rem)) / 2))</code></td>
+    <td><code>var(--kendo-loader-sm-padding-x, calc(var(--kendo-spacing-1, 0.25rem) / 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Loader.</div></div>
@@ -19411,7 +19411,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-loader-md-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-loader-md-padding-x, calc( #{$kendo-loader-md-segment-size} / 2 ) )</code></td>
-    <td><code>var(--kendo-loader-md-padding-x, calc(var(--kendo-loader-md-segment-size, var(--kendo-spacing-2, 0.5rem)) / 2))</code></td>
+    <td><code>var(--kendo-loader-md-padding-x, calc(var(--kendo-spacing-2, 0.5rem) / 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Loader.</div></div>
@@ -19421,7 +19421,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-loader-lg-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-loader-lg-padding-x, calc( #{$kendo-loader-lg-segment-size} / 2 ) )</code></td>
-    <td><code>var(--kendo-loader-lg-padding-x, calc(var(--kendo-loader-lg-segment-size, var(--kendo-spacing-4, 1rem)) / 2))</code></td>
+    <td><code>var(--kendo-loader-lg-padding-x, calc(var(--kendo-spacing-4, 1rem) / 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Loader.</div></div>
@@ -19431,7 +19431,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-loader-sm-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-loader-sm-padding-y, calc( #{$kendo-loader-sm-segment-size} / 2 ) )</code></td>
-    <td><code>var(--kendo-loader-sm-padding-y, calc(var(--kendo-loader-sm-segment-size, var(--kendo-spacing-1, 0.25rem)) / 2))</code></td>
+    <td><code>var(--kendo-loader-sm-padding-y, calc(var(--kendo-spacing-1, 0.25rem) / 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Loader.</div></div>
@@ -19441,7 +19441,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-loader-md-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-loader-md-padding-y, calc( #{$kendo-loader-md-segment-size} / 2 ) )</code></td>
-    <td><code>var(--kendo-loader-md-padding-y, calc(var(--kendo-loader-md-segment-size, var(--kendo-spacing-2, 0.5rem)) / 2))</code></td>
+    <td><code>var(--kendo-loader-md-padding-y, calc(var(--kendo-spacing-2, 0.5rem) / 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Loader.</div></div>
@@ -19451,7 +19451,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-loader-lg-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-loader-lg-padding-y, calc( #{$kendo-loader-lg-segment-size} /2 ) )</code></td>
-    <td><code>var(--kendo-loader-lg-padding-y, calc(var(--kendo-loader-lg-segment-size, var(--kendo-spacing-4, 1rem)) / 2))</code></td>
+    <td><code>var(--kendo-loader-lg-padding-y, calc(var(--kendo-spacing-4, 1rem) / 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Loader.</div></div>
@@ -19469,9 +19469,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-loader-sm-spinner-3-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-loader-sm-spinner-3-width, calc( #{$kendo-loader-sm-segment-size} * 4 ) )</code></td>
-    <td><code>var(--kendo-loader-sm-spinner-3-width, calc(var(--kendo-loader-sm-segment-size, var(--kendo-spacing-1, 0.25rem)) * 4))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-loader-sm-segment-size} * 4 )</code></td>
+    <td><code>calc(var(--kendo-spacing-1, 0.25rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small spinner-3 Loader.</div></div>
@@ -19479,9 +19479,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-loader-md-spinner-3-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-loader-md-spinner-3-width, calc( #{$kendo-loader-md-segment-size} * 4 ) )</code></td>
-    <td><code>var(--kendo-loader-md-spinner-3-width, calc(var(--kendo-loader-md-segment-size, var(--kendo-spacing-2, 0.5rem)) * 4))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-loader-md-segment-size} * 4 )</code></td>
+    <td><code>calc(var(--kendo-spacing-2, 0.5rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium spinner-3 Loader.</div></div>
@@ -19489,9 +19489,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-loader-lg-spinner-3-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-loader-lg-spinner-3-width, calc( #{$kendo-loader-lg-segment-size} * 4 ) )</code></td>
-    <td><code>var(--kendo-loader-lg-spinner-3-width, calc(var(--kendo-loader-lg-segment-size, var(--kendo-spacing-4, 1rem)) * 4))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-loader-lg-segment-size} * 4 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large spinner-3 Loader.</div></div>
@@ -19499,9 +19499,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-loader-sm-spinner-3-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-loader-sm-spinner-3-height, calc( #{$kendo-loader-sm-spinner-3-width} * #{$kendo-loader-equilateral-height} ) )</code></td>
-    <td><code>var(--kendo-loader-sm-spinner-3-height, calc(var(--kendo-loader-sm-spinner-3-width, calc(var(--kendo-loader-sm-segment-size, var(--kendo-spacing-1, 0.25rem)) * 4)) * 0.866))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-loader-sm-spinner-3-width} * #{$kendo-loader-equilateral-height} )</code></td>
+    <td><code>calc(calc(var(--kendo-spacing-1, 0.25rem) * 4) * 0.866)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small spinner-3 Loader.</div></div>
@@ -19509,9 +19509,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-loader-md-spinner-3-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-loader-md-spinner-3-height, calc( #{$kendo-loader-md-spinner-3-width} * #{$kendo-loader-equilateral-height} ) )</code></td>
-    <td><code>var(--kendo-loader-md-spinner-3-height, calc(var(--kendo-loader-md-spinner-3-width, calc(var(--kendo-loader-md-segment-size, var(--kendo-spacing-2, 0.5rem)) * 4)) * 0.866))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-loader-md-spinner-3-width} * #{$kendo-loader-equilateral-height} )</code></td>
+    <td><code>calc(calc(var(--kendo-spacing-2, 0.5rem) * 4) * 0.866)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium spinner-3 Loader.</div></div>
@@ -19519,9 +19519,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-loader-lg-spinner-3-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-loader-lg-spinner-3-height, calc( #{$kendo-loader-lg-spinner-3-width} * #{$kendo-loader-equilateral-height} ) )</code></td>
-    <td><code>var(--kendo-loader-lg-spinner-3-height, calc(var(--kendo-loader-lg-spinner-3-width, calc(var(--kendo-loader-lg-segment-size, var(--kendo-spacing-4, 1rem)) * 4)) * 0.866))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-loader-lg-spinner-3-width} * #{$kendo-loader-equilateral-height} )</code></td>
+    <td><code>calc(calc(var(--kendo-spacing-4, 1rem) * 4) * 0.866)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large spinner-3 Loader.</div></div>
@@ -19529,9 +19529,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-loader-sm-spinner-4-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-loader-sm-spinner-4-width, calc( #{$kendo-loader-sm-segment-size} * 4 ) )</code></td>
-    <td><code>var(--kendo-loader-sm-spinner-4-width, calc(var(--kendo-loader-sm-segment-size, var(--kendo-spacing-1, 0.25rem)) * 4))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-loader-sm-segment-size} * 4 )</code></td>
+    <td><code>calc(var(--kendo-spacing-1, 0.25rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small spinner-4 Loader.</div></div>
@@ -19539,9 +19539,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-loader-md-spinner-4-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-loader-md-spinner-4-width, calc( #{$kendo-loader-md-segment-size} * 4 ) )</code></td>
-    <td><code>var(--kendo-loader-md-spinner-4-width, calc(var(--kendo-loader-md-segment-size, var(--kendo-spacing-2, 0.5rem)) * 4))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-loader-md-segment-size} * 4 )</code></td>
+    <td><code>calc(var(--kendo-spacing-2, 0.5rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium spinner-4 Loader.</div></div>
@@ -19549,9 +19549,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-loader-lg-spinner-4-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-loader-lg-spinner-4-width, calc( #{$kendo-loader-lg-segment-size} * 4 ) )</code></td>
-    <td><code>var(--kendo-loader-lg-spinner-4-width, calc(var(--kendo-loader-lg-segment-size, var(--kendo-spacing-4, 1rem)) * 4))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-loader-lg-segment-size} * 4 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large spinner-4 Loader.</div></div>
@@ -19559,9 +19559,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-loader-sm-spinner-4-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-loader-sm-spinner-4-height, #{$kendo-loader-sm-spinner-4-width} )</code></td>
-    <td><code>var(--kendo-loader-sm-spinner-4-height, var(--kendo-loader-sm-spinner-4-width, calc(var(--kendo-loader-sm-segment-size, var(--kendo-spacing-1, 0.25rem)) * 4)))</code></td>
+    <td>Calculation</td>
+    <td><code>$kendo-loader-sm-spinner-4-width</code></td>
+    <td><code>calc(var(--kendo-spacing-1, 0.25rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small spinner-4 Loader.</div></div>
@@ -19569,9 +19569,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-loader-md-spinner-4-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-loader-md-spinner-4-height, #{$kendo-loader-md-spinner-4-width} )</code></td>
-    <td><code>var(--kendo-loader-md-spinner-4-height, var(--kendo-loader-md-spinner-4-width, calc(var(--kendo-loader-md-segment-size, var(--kendo-spacing-2, 0.5rem)) * 4)))</code></td>
+    <td>Calculation</td>
+    <td><code>$kendo-loader-md-spinner-4-width</code></td>
+    <td><code>calc(var(--kendo-spacing-2, 0.5rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium spinner-4 Loader.</div></div>
@@ -19579,9 +19579,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-loader-lg-spinner-4-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-loader-lg-spinner-4-height, #{$kendo-loader-lg-spinner-4-width} )</code></td>
-    <td><code>var(--kendo-loader-lg-spinner-4-height, var(--kendo-loader-lg-spinner-4-width, calc(var(--kendo-loader-lg-segment-size, var(--kendo-spacing-4, 1rem)) * 4)))</code></td>
+    <td>Calculation</td>
+    <td><code>$kendo-loader-lg-spinner-4-width</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large spinner-4 Loader.</div></div>
@@ -20619,10 +20619,10 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-padding-x</td>
+    <td>$kendo-menu-popup-sm-item-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-menu-popup-item-padding-x, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var( --kendo-menu-popup-sm-item-padding-x, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Menu item in popup.</div></div>
@@ -20640,9 +20640,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-menu-popup-sm-item-padding-end</td>
-    <td>String</td>
-    <td><code>var( --kendo-menu-popup-sm-item-padding-end, calc( calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) ) )</code></td>
-    <td><code>var(--kendo-menu-popup-sm-item-padding-end, calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))) * 2 + var(--kendo-icon-size, 1rem)))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) )</code></td>
+    <td><code>calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem)) * 2 + var(--kendo-icon-size, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the Menu item in popup.</div></div>
@@ -20651,8 +20651,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-sm-item-icon-margin-start</td>
     <td>String</td>
-    <td><code>var( --kendo-menu-popup-sm-item-icon-margin-start, #{k-spacing(0)} )</code></td>
-    <td><code>var(--kendo-menu-popup-sm-item-icon-margin-start, var(--kendo-spacing-0, 0px))</code></td>
+    <td><code>k-spacing(0)</code></td>
+    <td><code>var(--kendo-spacing-0, 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The start margin of the Menu item expand icon.</div></div>
@@ -20660,9 +20660,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-menu-popup-sm-item-icon-margin-end</td>
-    <td>String</td>
-    <td><code>var( --kendo-menu-popup-sm-item-icon-margin-end, calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-sm-item-padding-x}) ) )</code></td>
-    <td><code>var(--kendo-menu-popup-sm-item-icon-margin-end, calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))))))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-sm-item-padding-x}) )</code></td>
+    <td><code>calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the Menu item expand icon.</div></div>
@@ -20710,7 +20710,7 @@ The following table lists the available variables for customizing the Fluent the
         arrow-margin-inline-end: $kendo-menu-popup-lg-item-icon-margin-end
     )
 )</code></td>
-    <td><ul><li>sm: "group-font-size":"var(--kendo-menu-popup-sm-font-size, var(--kendo-font-size, inherit))","group-line-height":"var(--kendo-menu-popup-sm-line-height, var(--kendo-line-height, 30px))","link-padding-x":"var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem)))","link-padding-y":"var(--kendo-menu-popup-sm-item-padding-y, var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1\\.5, 0.375rem)))","link-padding-inline-end":"var(--kendo-menu-popup-sm-item-padding-end, calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))) * 2 + var(--kendo-icon-size, 1rem)))","arrow-margin-inline-start":"var(--kendo-menu-popup-sm-item-icon-margin-start, var(--kendo-spacing-0, 0px))","arrow-margin-inline-end":"var(--kendo-menu-popup-sm-item-icon-margin-end, calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))))))"</li><li>md: "group-font-size":"var(--kendo-menu-popup-md-font-size, var(--kendo-font-size, inherit))","group-line-height":"var(--kendo-menu-popup-md-line-height, var(--kendo-line-height, 30px))","link-padding-x":"var(--kendo-menu-popup-md-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem)))","link-padding-y":"var(--kendo-menu-popup-md-item-padding-y, var(--kendo-list-md-item-padding-y, var(--kendo-spacing-2, 0.5rem)))","link-padding-inline-end":"var(--kendo-menu-popup-md-item-padding-end, calc(var(--kendo-menu-popup-md-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))) * 2 + var(--kendo-icon-size, 1rem)))","arrow-margin-inline-start":"var(--kendo-menu-popup-md-item-icon-margin-start, var(--kendo-spacing-0, 0px))","arrow-margin-inline-end":"var(--kendo-menu-popup-md-item-icon-margin-end, calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-md-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))))))"</li><li>lg: "group-font-size":"var(--kendo-menu-popup-lg-font-size, var(--kendo-font-size-lg, inherit))","group-line-height":"var(--kendo-menu-popup-lg-line-height, var(--kendo-line-height, 30px))","link-padding-x":"var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem)))","link-padding-y":"var(--kendo-menu-popup-lg-item-padding-y, var(--kendo-list-lg-item-padding-y, var(--kendo-spacing-2\\.5, 0.625rem)))","link-padding-inline-end":"var(--kendo-menu-popup-lg-item-padding-end, calc(var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))) * 2 + var(--kendo-icon-size, 1rem)))","arrow-margin-inline-start":"var(--kendo-menu-popup-lg-item-icon-margin-start, var(--kendo-spacing-0, 0px))","arrow-margin-inline-end":"var(--kendo-menu-popup-lg-item-icon-margin-end, calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))))))"</li></ul></td>
+    <td><ul><li>sm: "group-font-size":"var(--kendo-menu-popup-sm-font-size, var(--kendo-font-size, inherit))","group-line-height":"var(--kendo-menu-popup-sm-line-height, var(--kendo-line-height, 30px))","link-padding-x":"var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem))","link-padding-y":"var(--kendo-menu-popup-sm-item-padding-y, var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1\\.5, 0.375rem)))","link-padding-inline-end":"calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem)) * 2 + var(--kendo-icon-size, 1rem))","arrow-margin-inline-start":"var(--kendo-spacing-0, 0px)","arrow-margin-inline-end":"calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem))))"</li><li>md: "group-font-size":"var(--kendo-menu-popup-md-font-size, var(--kendo-font-size, inherit))","group-line-height":"var(--kendo-menu-popup-md-line-height, var(--kendo-line-height, 30px))","link-padding-x":"var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2, 0.5rem))","link-padding-y":"var(--kendo-menu-popup-md-item-padding-y, var(--kendo-list-md-item-padding-y, var(--kendo-spacing-2, 0.5rem)))","link-padding-inline-end":"calc(var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2, 0.5rem)) * 2 + var(--kendo-icon-size, 1rem))","arrow-margin-inline-start":"var(--kendo-spacing-0, 0px)","arrow-margin-inline-end":"calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2, 0.5rem))))"</li><li>lg: "group-font-size":"var(--kendo-menu-popup-lg-font-size, var(--kendo-font-size-lg, inherit))","group-line-height":"var(--kendo-menu-popup-lg-line-height, var(--kendo-line-height, 30px))","link-padding-x":"var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2, 0.5rem))","link-padding-y":"var(--kendo-menu-popup-lg-item-padding-y, var(--kendo-list-lg-item-padding-y, var(--kendo-spacing-2\\.5, 0.625rem)))","link-padding-inline-end":"calc(var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2, 0.5rem)) * 2 + var(--kendo-icon-size, 1rem))","arrow-margin-inline-start":"var(--kendo-spacing-0, 0px)","arrow-margin-inline-end":"calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2, 0.5rem))))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Menu.</div></div>
@@ -21960,8 +21960,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-search-panel-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-pdf-viewer-search-panel-padding-x, #{k-spacing(3)} )</code></td>
-    <td><code>var(--kendo-pdf-viewer-search-panel-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PDFViewer search panel.</div></div>
@@ -21970,8 +21970,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-search-panel-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-pdf-viewer-search-panel-padding-y, #{$kendo-pdf-viewer-search-panel-padding-x} )</code></td>
-    <td><code>var(--kendo-pdf-viewer-search-panel-padding-y, var(--kendo-pdf-viewer-search-panel-padding-x, var(--kendo-spacing-3, 0.75rem)))</code></td>
+    <td><code>$kendo-pdf-viewer-search-panel-padding-x</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PDFViewer search panel.</div></div>
@@ -22059,9 +22059,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-pdf-viewer-search-panel-margin-y</td>
-    <td>Calculation</td>
-    <td><code>calc( ( #{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-panel-padding-y} ) ) * -1 )</code></td>
-    <td><code>calc((calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, var(--kendo-spacing-1\.5, 0.375rem)) * 2 + var(--kendo-button-border-width, 1px) * 2) + 2 * var(--kendo-pdf-viewer-search-panel-border-width, 1px) + 2 * var(--kendo-pdf-viewer-search-panel-padding-y, var(--kendo-pdf-viewer-search-panel-padding-x, var(--kendo-spacing-3, 0.75rem)))) * -1)</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-pdf-viewer-search-panel-margin-y ,calc( ( #{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-panel-padding-y} ) ) * -1 ))</code></td>
+    <td><code>var(--kendo-pdf-viewer-search-panel-margin-y, calc((calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, var(--kendo-spacing-1\.5, 0.375rem)) * 2 + var(--kendo-button-border-width, 1px) * 2) + 2 * var(--kendo-pdf-viewer-search-panel-border-width, 1px) + 2 * var(--kendo-spacing-3, 0.75rem)) * -1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the PDFViewer search panel.</div></div>
@@ -22995,9 +22995,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-panelbar-item-padding-x-start</td>
-    <td>String</td>
-    <td><code>var( --kendo-panelbar-item-padding-x-start, calc( #{$kendo-panelbar-icon-spacing} * 2 + var( --kendo-icon-size, 1rem ) ) )</code></td>
-    <td><code>var(--kendo-panelbar-item-padding-x-start, calc(var(--kendo-panelbar-icon-spacing, var(--kendo-spacing-2, 0.5rem)) * 2 + var(--kendo-icon-size, 1rem)))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-panelbar-icon-spacing} * 2 + var( --kendo-icon-size, 1rem ) )</code></td>
+    <td><code>calc(var(--kendo-panelbar-icon-spacing, var(--kendo-spacing-2, 0.5rem)) * 2 + var(--kendo-icon-size, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PanelBar items.</div></div>
@@ -26414,9 +26414,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-scheduler-yearview-indicator-calc-offset-top</td>
-    <td>String</td>
-    <td><code>var( --kendo-scheduler-yearview-indicator-calc-offset-top, calc( #{$kendo-calendar-cell-size} - (#{$kendo-calendar-cell-padding-y} * 2) ) )</code></td>
-    <td><code>var(--kendo-scheduler-yearview-indicator-calc-offset-top, calc(var(--kendo-calendar-cell-size, 28px) - var(--kendo-calendar-cell-padding-y, var(--kendo-calendar-cell-padding-x, var(--kendo-spacing-1, 0.25rem))) * 2))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-calendar-cell-size} - (#{$kendo-calendar-cell-padding-y} * 2) )</code></td>
+    <td><code>calc(var(--kendo-calendar-cell-size, 28px) - var(--kendo-spacing-1, 0.25rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top position of the days with events indicator of the year view in the Scheduler.</div></div>
@@ -26424,9 +26424,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-scheduler-yearview-indicator-calc-offset-left</td>
-    <td>String</td>
-    <td><code>var( --kendo-scheduler-yearview-indicator-calc-offset-left, calc( 50% - (#{$kendo-scheduler-yearview-indicator-size} / 2) ) )</code></td>
-    <td><code>var(--kendo-scheduler-yearview-indicator-calc-offset-left, calc(50% - var(--kendo-scheduler-yearview-indicator-size, 3px) / 2))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( 50% - (#{$kendo-scheduler-yearview-indicator-size} / 2) )</code></td>
+    <td><code>calc(50% - var(--kendo-scheduler-yearview-indicator-size, 3px) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left position of the days with events indicator of the year view in the Scheduler.</div></div>
@@ -27781,8 +27781,8 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-split-button-sm-arrow-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-split-button-sm-arrow-padding-y, #{$kendo-button-sm-padding-y} )</code></td>
-    <td><code>var(--kendo-split-button-sm-arrow-padding-y, var(--kendo-button-sm-padding-y, var(--kendo-spacing-1, 0.25rem)))</code></td>
+    <td><code>var( --kendo-split-button-sm-arrow-padding-y, #{k-spacing(1)} )</code></td>
+    <td><code>var(--kendo-split-button-sm-arrow-padding-y, var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small arrow Button.</div></div>
@@ -27791,8 +27791,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-split-button-md-arrow-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-split-button-md-arrow-padding-y, #{$kendo-button-md-padding-y} )</code></td>
-    <td><code>var(--kendo-split-button-md-arrow-padding-y, var(--kendo-button-md-padding-y, var(--kendo-spacing-1\.5, 0.375rem)))</code></td>
+    <td><code>var( --kendo-split-button-md-arrow-padding-y, #{k-spacing(1.5)} )</code></td>
+    <td><code>var(--kendo-split-button-md-arrow-padding-y, var(--kendo-spacing-1\.5, 0.375rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium arrow Button.</div></div>
@@ -27801,8 +27801,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-split-button-lg-arrow-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-split-button-lg-arrow-padding-y, #{$kendo-button-lg-padding-y} )</code></td>
-    <td><code>var(--kendo-split-button-lg-arrow-padding-y, var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><code>var( --kendo-split-button-lg-arrow-padding-y, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-split-button-lg-arrow-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large arrow Button.</div></div>
@@ -27811,8 +27811,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-split-button-sm-arrow-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-split-button-sm-arrow-padding-x, #{$kendo-split-button-sm-arrow-padding-y} )</code></td>
-    <td><code>var(--kendo-split-button-sm-arrow-padding-x, var(--kendo-split-button-sm-arrow-padding-y, var(--kendo-button-sm-padding-y, var(--kendo-spacing-1, 0.25rem))))</code></td>
+    <td><code>var( --kendo-split-button-sm-arrow-padding-x, #{k-spacing(1)} )</code></td>
+    <td><code>var(--kendo-split-button-sm-arrow-padding-x, var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small arrow Button.</div></div>
@@ -27821,8 +27821,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-split-button-md-arrow-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-split-button-md-arrow-padding-x, #{$kendo-split-button-md-arrow-padding-y} )</code></td>
-    <td><code>var(--kendo-split-button-md-arrow-padding-x, var(--kendo-split-button-md-arrow-padding-y, var(--kendo-button-md-padding-y, var(--kendo-spacing-1\.5, 0.375rem))))</code></td>
+    <td><code>var( --kendo-split-button-md-arrow-padding-x, #{k-spacing(1.5)} )</code></td>
+    <td><code>var(--kendo-split-button-md-arrow-padding-x, var(--kendo-spacing-1\.5, 0.375rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium arrow Button.</div></div>
@@ -27831,8 +27831,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-split-button-lg-arrow-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-split-button-lg-arrow-padding-x, #{$kendo-split-button-lg-arrow-padding-y} )</code></td>
-    <td><code>var(--kendo-split-button-lg-arrow-padding-x, var(--kendo-split-button-lg-arrow-padding-y, var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem))))</code></td>
+    <td><code>var( --kendo-split-button-lg-arrow-padding-x, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-split-button-lg-arrow-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large arrow Button.</div></div>
@@ -27840,9 +27840,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-split-button-arrow-delimiter-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-split-button-arrow-delimiter-size, calc( #{$kendo-button-inner-calc-size} / 2 ) )</code></td>
-    <td><code>var(--kendo-split-button-arrow-delimiter-size, calc(calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, var(--kendo-spacing-1\.5, 0.375rem)) * 2) / 2))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-button-inner-calc-size} / 2 )</code></td>
+    <td><code>calc(calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, var(--kendo-spacing-1\.5, 0.375rem)) * 2) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the SplitButton arrow delimiter.</div></div>
@@ -27876,7 +27876,7 @@ The following table lists the available variables for customizing the Fluent the
     md: $kendo-split-button-md-arrow-padding-y,
     lg: $kendo-split-button-lg-arrow-padding-y
 )</code></td>
-    <td><ul><li>sm: var(--kendo-split-button-sm-arrow-padding-y, var(--kendo-button-sm-padding-y, var(--kendo-spacing-1, 0.25rem)))</li><li>md: var(--kendo-split-button-md-arrow-padding-y, var(--kendo-button-md-padding-y, var(--kendo-spacing-1\.5, 0.375rem)))</li><li>lg: var(--kendo-split-button-lg-arrow-padding-y, var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)))</li></ul></td>
+    <td><ul><li>sm: var(--kendo-split-button-sm-arrow-padding-y, var(--kendo-spacing-1, 0.25rem))</li><li>md: var(--kendo-split-button-md-arrow-padding-y, var(--kendo-spacing-1\.5, 0.375rem))</li><li>lg: var(--kendo-split-button-lg-arrow-padding-y, var(--kendo-spacing-2, 0.5rem))</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the SplitButton.</div></div>
@@ -28875,8 +28875,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-preview-img</td>
     <td>String</td>
-    <td><code>"image-fluent.png"</code></td>
-    <td><code>"image-fluent.png"</code></td>
+    <td><code>"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcwAAAGQCAYAAAAjl1AKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDphMGVmMzZmZi04YmI1LTRlN2YtOTcwMS04OTU5ZTg1N2ZhY2MiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDNDOTBDNUQ2OUJGMTFFOTkwMzY4RTI3NjZBQTdENkMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDNDOTBDNUM2OUJGMTFFOTkwMzY4RTI3NjZBQTdENkMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpjMmZmZjM0Mi05NjEyLTQwM2YtYWZhYS01MTE1ZjQ2NThmMWMiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDphYjlhMmUwMy1kNmIwLTY3NGMtODc4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"</code></td>
+    <td><code>"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcwAAAGQCAYAAAAjl1AKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDphMGVmMzZmZi04YmI1LTRlN2YtOTcwMS04OTU5ZTg1N2ZhY2MiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDNDOTBDNUQ2OUJGMTFFOTkwMzY4RTI3NjZBQTdENkMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDNDOTBDNUM2OUJGMTFFOTkwMzY4RTI3NjZBQTdENkMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpjMmZmZjM0Mi05NjEyLTQwM2YtYWZhYS01MTE1ZjQ2NThmMWMiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDphYjlhMmUwMy1kNmIwLTY3NGMtODc4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"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image of the Spreadsheet image Dialog preview.</div></div>
@@ -29225,8 +29225,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-height</td>
     <td>String</td>
-    <td><code>var( --kendo-stepper-indicator-height, $kendo-stepper-indicator-width )</code></td>
-    <td><code>var(--kendo-stepper-indicator-height, var(--kendo-stepper-indicator-width, var(--kendo-spacing-7\.5, 1.875rem)))</code></td>
+    <td><code>var( --kendo-stepper-indicator-height, k-spacing(7.5) )</code></td>
+    <td><code>var(--kendo-stepper-indicator-height, var(--kendo-spacing-7\.5, 1.875rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Stepper indicator.</div></div>
@@ -29284,9 +29284,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-stepper-indicator-focus-calc-offset</td>
-    <td>String</td>
-    <td><code>var( --kendo-stepper-indicator-focus-calc-offset, calc( #{$kendo-stepper-indicator-focus-border-width} + #{$kendo-stepper-indicator-focus-offset} ) )</code></td>
-    <td><code>var(--kendo-stepper-indicator-focus-calc-offset, calc(var(--kendo-stepper-indicator-focus-border-width, var(--kendo-stepper-indicator-border-width, 1px)) + 3px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-stepper-indicator-focus-border-width} + #{$kendo-stepper-indicator-focus-offset} )</code></td>
+    <td><code>calc(var(--kendo-stepper-indicator-focus-border-width, var(--kendo-stepper-indicator-border-width, 1px)) + 3px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated offset of the Stepper's focused indicator.</div></div>
@@ -31077,8 +31077,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-sm-font-size, #{$kendo-tabstrip-font-size} )</code></td>
-    <td><code>var(--kendo-tabstrip-sm-font-size, var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit)))</code></td>
+    <td><code>$kendo-tabstrip-font-size</code></td>
+    <td><code>var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small TabStrip.</div></div>
@@ -31087,8 +31087,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-sm-line-height, #{$kendo-tabstrip-line-height} )</code></td>
-    <td><code>var(--kendo-tabstrip-sm-line-height, var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal)))</code></td>
+    <td><code>$kendo-tabstrip-line-height</code></td>
+    <td><code>var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small TabStrip.</div></div>
@@ -31097,8 +31097,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-md-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-md-font-size, #{$kendo-tabstrip-font-size} )</code></td>
-    <td><code>var(--kendo-tabstrip-md-font-size, var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit)))</code></td>
+    <td><code>$kendo-tabstrip-font-size</code></td>
+    <td><code>var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium TabStrip.</div></div>
@@ -31107,8 +31107,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-md-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-md-line-height, #{$kendo-tabstrip-line-height} )</code></td>
-    <td><code>var(--kendo-tabstrip-md-line-height, var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal)))</code></td>
+    <td><code>$kendo-tabstrip-line-height</code></td>
+    <td><code>var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium TabStrip.</div></div>
@@ -31117,8 +31117,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-lg-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-lg-font-size, #{$kendo-tabstrip-font-size} )</code></td>
-    <td><code>var(--kendo-tabstrip-lg-font-size, var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit)))</code></td>
+    <td><code>$kendo-tabstrip-font-size</code></td>
+    <td><code>var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large TabStrip.</div></div>
@@ -31127,8 +31127,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-lg-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-lg-line-height, #{$kendo-tabstrip-line-height} )</code></td>
-    <td><code>var(--kendo-tabstrip-lg-line-height, var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal)))</code></td>
+    <td><code>$kendo-tabstrip-line-height</code></td>
+    <td><code>var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large TabStrip.</div></div>
@@ -31547,7 +31547,7 @@ The following table lists the available variables for customizing the Fluent the
         item-padding-y: $kendo-tabstrip-lg-item-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-tabstrip-sm-font-size, var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit)))","line-height":"var(--kendo-tabstrip-sm-line-height, var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal)))","item-padding-x":"var(--kendo-tabstrip-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-sm-item-padding-y, var(--kendo-spacing-2\\.5, 0.625rem))"</li><li>md: "font-size":"var(--kendo-tabstrip-md-font-size, var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit)))","line-height":"var(--kendo-tabstrip-md-line-height, var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal)))","item-padding-x":"var(--kendo-tabstrip-md-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-md-item-padding-y, var(--kendo-spacing-3, 0.75rem))"</li><li>lg: "font-size":"var(--kendo-tabstrip-lg-font-size, var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit)))","line-height":"var(--kendo-tabstrip-lg-line-height, var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal)))","item-padding-x":"var(--kendo-tabstrip-lg-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-lg-item-padding-y, var(--kendo-spacing-3\\.5, 0.875rem))"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))","item-padding-x":"var(--kendo-tabstrip-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-sm-item-padding-y, var(--kendo-spacing-2\\.5, 0.625rem))"</li><li>md: "font-size":"var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))","item-padding-x":"var(--kendo-tabstrip-md-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-md-item-padding-y, var(--kendo-spacing-3, 0.75rem))"</li><li>lg: "font-size":"var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))","item-padding-x":"var(--kendo-tabstrip-lg-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-lg-item-padding-y, var(--kendo-spacing-3\\.5, 0.875rem))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the TabStrip.</div></div>
@@ -32555,9 +32555,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-time-list-title-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-time-list-title-height, calc( #{$kendo-time-list-title-spacing} + #{$kendo-time-list-title-font-size} * #{$kendo-time-list-title-line-height} ) )</code></td>
-    <td><code>var(--kendo-time-list-title-height, calc(var(--kendo-time-list-title-spacing, var(--kendo-spacing-3, 0.75rem)) + var(--kendo-time-list-title-font-size, var(--kendo-font-size-xs, inherit)) * var(--kendo-time-list-title-line-height, var(--kendo-line-height-lg, inherit))))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-time-list-title-spacing} + #{$kendo-time-list-title-font-size} * #{$kendo-time-list-title-line-height} )</code></td>
+    <td><code>calc(var(--kendo-time-list-title-spacing, var(--kendo-spacing-3, 0.75rem)) + var(--kendo-time-list-title-font-size, var(--kendo-font-size-xs, inherit)) * var(--kendo-time-list-title-line-height, var(--kendo-line-height-lg, inherit)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the time-selector titles.</div></div>
@@ -32615,9 +32615,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-time-list-highlight-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-time-list-highlight-height, calc( #{$kendo-time-selector-font-size} * #{$kendo-time-selector-line-height} + calc( #{$kendo-time-list-item-padding-y} * 2 ) ) )</code></td>
-    <td><code>var(--kendo-time-list-highlight-height, calc(var(--kendo-time-selector-font-size, var(--kendo-font-size, inherit)) * var(--kendo-time-selector-line-height, var(--kendo-line-height, normal)) + var(--kendo-time-list-item-padding-y, var(--kendo-spacing-1, 0.25rem)) * 2))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-time-selector-font-size} * #{$kendo-time-selector-line-height} + calc( #{$kendo-time-list-item-padding-y} * 2 ) )</code></td>
+    <td><code>calc(var(--kendo-time-selector-font-size, var(--kendo-font-size, inherit)) * var(--kendo-time-selector-line-height, var(--kendo-line-height, normal)) + var(--kendo-time-list-item-padding-y, var(--kendo-spacing-1, 0.25rem)) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the selected item in the time-selector.</div></div>
@@ -32656,8 +32656,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-time-selector-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-sm-font-size, $kendo-list-sm-font-size )</code></td>
-    <td><code>var(--kendo-time-selector-sm-font-size, var(--kendo-list-sm-font-size, var(--kendo-font-size, inherit)))</code></td>
+    <td><code>var( --kendo-time-selector-sm-font-size, var( --kendo-font-size, inherit ) )</code></td>
+    <td><code>var(--kendo-time-selector-sm-font-size, var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the time-selector.</div></div>
@@ -32666,8 +32666,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-time-selector-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-sm-line-height, $kendo-list-sm-line-height )</code></td>
-    <td><code>var(--kendo-time-selector-sm-line-height, var(--kendo-list-sm-line-height, var(--kendo-line-height, normal)))</code></td>
+    <td><code>var( --kendo-time-selector-sm-line-height, var(--kendo-line-height, normal) )</code></td>
+    <td><code>var(--kendo-time-selector-sm-line-height, var(--kendo-line-height, normal))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
@@ -32676,8 +32676,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-time-selector-sm-list-item-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-sm-list-item-padding-x, $kendo-list-sm-item-padding-x )</code></td>
-    <td><code>var(--kendo-time-selector-sm-list-item-padding-x, var(--kendo-list-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><code>var( --kendo-time-selector-sm-list-item-padding-x, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-time-selector-sm-list-item-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"> Horizontal padding of the time-selector items.</div></div>
@@ -32686,8 +32686,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-time-selector-sm-list-item-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-sm-list-item-padding-y, $kendo-list-sm-item-padding-y )</code></td>
-    <td><code>var(--kendo-time-selector-sm-list-item-padding-y, var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1\.5, 0.375rem)))</code></td>
+    <td><code>var( --kendo-time-selector-sm-list-item-padding-y, #{k-spacing(1.5)} )</code></td>
+    <td><code>var(--kendo-time-selector-sm-list-item-padding-y, var(--kendo-spacing-1\.5, 0.375rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"> Vertical padding of the time-selector items.</div></div>
@@ -32716,7 +32716,7 @@ The following table lists the available variables for customizing the Fluent the
         list-item-padding-y: $kendo-time-selector-lg-list-item-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-time-selector-sm-font-size, var(--kendo-list-sm-font-size, var(--kendo-font-size, inherit)))","line-height":"var(--kendo-time-selector-sm-line-height, var(--kendo-list-sm-line-height, var(--kendo-line-height, normal)))","list-item-padding-x":"var(--kendo-time-selector-sm-list-item-padding-x, var(--kendo-list-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem)))","list-item-padding-y":"var(--kendo-time-selector-sm-list-item-padding-y, var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1\\.5, 0.375rem)))"</li><li>md: "font-size":"var(--kendo-time-selector-md-font-size, var(--kendo-list-md-font-size, var(--kendo-font-size, inherit)))","line-height":"var(--kendo-time-selector-md-line-height, var(--kendo-list-md-line-height, var(--kendo-line-height, normal)))","list-item-padding-x":"var(--kendo-time-selector-md-list-item-padding-x, var(--kendo-list-md-item-padding-x, var(--kendo-spacing-2, 0.5rem)))","list-item-padding-y":"var(--kendo-time-selector-md-list-item-padding-y, var(--kendo-list-md-item-padding-y, var(--kendo-spacing-2, 0.5rem)))"</li><li>lg: "font-size":"var(--kendo-time-selector-lg-font-size, var(--kendo-list-lg-font-size, var(--kendo-font-size, inherit)))","line-height":"var(--kendo-time-selector-lg-line-height, var(--kendo-list-lg-line-height, var(--kendo-line-height, normal)))","list-item-padding-x":"var(--kendo-time-selector-lg-list-item-padding-x, var(--kendo-list-lg-item-padding-x, var(--kendo-spacing-2, 0.5rem)))","list-item-padding-y":"var(--kendo-time-selector-lg-list-item-padding-y, var(--kendo-list-lg-item-padding-y, var(--kendo-spacing-2\\.5, 0.625rem)))"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-time-selector-sm-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-time-selector-sm-line-height, var(--kendo-line-height, normal))","list-item-padding-x":"var(--kendo-time-selector-sm-list-item-padding-x, var(--kendo-spacing-2, 0.5rem))","list-item-padding-y":"var(--kendo-time-selector-sm-list-item-padding-y, var(--kendo-spacing-1\\.5, 0.375rem))"</li><li>md: "font-size":"var(--kendo-time-selector-md-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-time-selector-md-line-height, var(--kendo-line-height, normal))","list-item-padding-x":"var(--kendo-time-selector-md-list-item-padding-x, var(--kendo-spacing-2, 0.5rem))","list-item-padding-y":"var(--kendo-time-selector-md-list-item-padding-y, var(--kendo-spacing-2, 0.5rem))"</li><li>lg: "font-size":"var(--kendo-time-selector-lg-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-time-selector-lg-line-height, var(--kendo-line-height, normal))","list-item-padding-x":"var(--kendo-time-selector-lg-list-item-padding-x, var(--kendo-spacing-2, 0.5rem))","list-item-padding-y":"var(--kendo-time-selector-lg-list-item-padding-y, var(--kendo-spacing-2\\.5, 0.625rem))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the time-selector.</div></div>
@@ -32805,8 +32805,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-mobile-spacing-x</td>
     <td>String</td>
-    <td><code>var( --kendo-timeline-mobile-spacing-x, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-timeline-mobile-spacing-x, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing of the mobile Timeline.</div></div>
@@ -32815,8 +32815,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-mobile-spacing-y</td>
     <td>String</td>
-    <td><code>var( --kendo-timeline-mobile-spacing-y, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-timeline-mobile-spacing-y, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing of the mobile Timeline.</div></div>
@@ -32845,8 +32845,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-track-size</td>
     <td>String</td>
-    <td><code>var( --kendo-timeline-track-size, k-spacing(1.5) )</code></td>
-    <td><code>var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem))</code></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Timeline track.</div></div>
@@ -32854,9 +32854,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-timeline-track-wrap-padding-bottom</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-track-wrap-padding-bottom, calc( #{$kendo-timeline-track-size} / 2 ) )</code></td>
-    <td><code>var(--kendo-timeline-track-wrap-padding-bottom, calc(var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem)) / 2))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-timeline-track-size} / 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-1\.5, 0.375rem) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom padding of the Timeline's track wrapper.</div></div>
@@ -32886,7 +32886,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-timeline-track-bottom-calc</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-track-bottom-calc, calc( ( #{ $kendo-timeline-track-arrow-height } / 2 ) + #{ $kendo-timeline-track-wrap-padding-bottom } ) )</code></td>
-    <td><code>var(--kendo-timeline-track-bottom-calc, calc(var(--kendo-timeline-track-arrow-height, var(--kendo-spacing-7\.5, 1.875rem)) / 2 + var(--kendo-timeline-track-wrap-padding-bottom, calc(var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem)) / 2))))</code></td>
+    <td><code>var(--kendo-timeline-track-bottom-calc, calc(var(--kendo-timeline-track-arrow-height, var(--kendo-spacing-7\.5, 1.875rem)) / 2 + calc(var(--kendo-spacing-1\.5, 0.375rem) / 2)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom offset of the Timeline track.</div></div>
@@ -32936,7 +32936,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-timeline-arrow-inset-block-end</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-arrow-inset-block-end, calc( #{ $kendo-timeline-track-size } + #{ $kendo-timeline-track-wrap-padding-bottom } + #{ $kendo-timeline-track-border-width } ) )</code></td>
-    <td><code>var(--kendo-timeline-arrow-inset-block-end, calc(var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem)) + var(--kendo-timeline-track-wrap-padding-bottom, calc(var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem)) / 2)) + var(--kendo-timeline-track-border-width, 1px)))</code></td>
+    <td><code>var(--kendo-timeline-arrow-inset-block-end, calc(var(--kendo-spacing-1\.5, 0.375rem) + calc(var(--kendo-spacing-1\.5, 0.375rem) / 2) + var(--kendo-timeline-track-border-width, 1px)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The block end inset of the Timeline arrow.</div></div>
@@ -33056,7 +33056,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-timeline-mobile-flag-max-width</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-mobile-flag-max-width, calc( #{ $kendo-timeline-flag-min-width } + 2 * #{ $kendo-timeline-mobile-spacing-x } ) )</code></td>
-    <td><code>var(--kendo-timeline-mobile-flag-max-width, calc(var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) + 2 * var(--kendo-timeline-mobile-spacing-x, var(--kendo-spacing-4, 1rem))))</code></td>
+    <td><code>var(--kendo-timeline-mobile-flag-max-width, calc(var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) + 2 * var(--kendo-spacing-4, 1rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the mobile Timeline flag.</div></div>
@@ -33126,7 +33126,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-timeline-flag-margin-bottom-calc</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-flag-margin-bottom-calc, calc( #{ $kendo-timeline-track-size } + 2 * #{ $kendo-timeline-track-border-width } + #{ $kendo-timeline-flag-offset-bottom } + #{ $kendo-timeline-flag-callout-height } ) )</code></td>
-    <td><code>var(--kendo-timeline-flag-margin-bottom-calc, calc(var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem)) + 2 * var(--kendo-timeline-track-border-width, 1px) + var(--kendo-timeline-flag-offset-bottom, var(--kendo-spacing-1, 0.25rem)) + var(--kendo-timeline-flag-callout-height, var(--kendo-spacing-2\.5, 0.625rem))))</code></td>
+    <td><code>var(--kendo-timeline-flag-margin-bottom-calc, calc(var(--kendo-spacing-1\.5, 0.375rem) + 2 * var(--kendo-timeline-track-border-width, 1px) + var(--kendo-timeline-flag-offset-bottom, var(--kendo-spacing-1, 0.25rem)) + var(--kendo-timeline-flag-callout-height, var(--kendo-spacing-2\.5, 0.625rem))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the Timeline flag.</div></div>
@@ -33194,9 +33194,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-timeline-date-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-date-width, calc( #{k-spacing(12)} + #{k-spacing(0.5)} ) )</code></td>
-    <td><code>var(--kendo-timeline-date-width, calc(var(--kendo-spacing-12, 3rem) + var(--kendo-spacing-0\.5, 0.125rem)))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{k-spacing(12)} + #{k-spacing(0.5)} )</code></td>
+    <td><code>calc(var(--kendo-spacing-12, 3rem) + var(--kendo-spacing-0\.5, 0.125rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Timeline date.</div></div>
@@ -33214,9 +33214,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-timeline-vertical-padding-calc</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-vertical-padding-calc, calc( #{ $kendo-timeline-spacing-x } + ( #{ $kendo-timeline-flag-min-width } - #{ $kendo-timeline-track-size } ) / 2 ) )</code></td>
-    <td><code>var(--kendo-timeline-vertical-padding-calc, calc(var(--kendo-timeline-spacing-x, var(--kendo-spacing-10, 2.5rem)) + (var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) - var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem))) / 2))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-timeline-spacing-x } + ( #{ $kendo-timeline-flag-min-width } - #{ $kendo-timeline-track-size } ) / 2 )</code></td>
+    <td><code>calc(var(--kendo-timeline-spacing-x, var(--kendo-spacing-10, 2.5rem)) + (var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) - var(--kendo-spacing-1\.5, 0.375rem)) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical Timeline.</div></div>
@@ -33224,9 +33224,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-timeline-vertical-padding-with-dates-calc</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-vertical-padding-with-dates-calc, calc( #{ $kendo-timeline-vertical-padding-calc } + #{ $kendo-timeline-date-width } ) )</code></td>
-    <td><code>var(--kendo-timeline-vertical-padding-with-dates-calc, calc(var(--kendo-timeline-vertical-padding-calc, calc(var(--kendo-timeline-spacing-x, var(--kendo-spacing-10, 2.5rem)) + (var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) - var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem))) / 2)) + var(--kendo-timeline-date-width, calc(var(--kendo-spacing-12, 3rem) + var(--kendo-spacing-0\.5, 0.125rem)))))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-timeline-vertical-padding-calc } + #{ $kendo-timeline-date-width } )</code></td>
+    <td><code>calc(calc(var(--kendo-timeline-spacing-x, var(--kendo-spacing-10, 2.5rem)) + (var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) - var(--kendo-spacing-1\.5, 0.375rem)) / 2) + calc(var(--kendo-spacing-12, 3rem) + var(--kendo-spacing-0\.5, 0.125rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical Timeline date.</div></div>
@@ -33244,9 +33244,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-timeline-mobile-vertical-padding-calc</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-mobile-vertical-padding-calc, calc( #{ $kendo-timeline-mobile-spacing-x } + ( #{ $kendo-timeline-flag-min-width } - #{ $kendo-timeline-track-size } ) / 2 ) )</code></td>
-    <td><code>var(--kendo-timeline-mobile-vertical-padding-calc, calc(var(--kendo-timeline-mobile-spacing-x, var(--kendo-spacing-4, 1rem)) + (var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) - var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem))) / 2))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-timeline-mobile-spacing-x } + ( #{ $kendo-timeline-flag-min-width } - #{ $kendo-timeline-track-size } ) / 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) + (var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) - var(--kendo-spacing-1\.5, 0.375rem)) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical mobile Timeline.</div></div>
@@ -33254,9 +33254,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-timeline-mobile-vertical-padding-with-dates-calc</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-mobile-vertical-padding-with-dates-calc, calc( #{ $kendo-timeline-mobile-vertical-padding-calc } + #{ $kendo-timeline-date-width } ) )</code></td>
-    <td><code>var(--kendo-timeline-mobile-vertical-padding-with-dates-calc, calc(var(--kendo-timeline-mobile-vertical-padding-calc, calc(var(--kendo-timeline-mobile-spacing-x, var(--kendo-spacing-4, 1rem)) + (var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) - var(--kendo-timeline-track-size, var(--kendo-spacing-1\.5, 0.375rem))) / 2)) + var(--kendo-timeline-date-width, calc(var(--kendo-spacing-12, 3rem) + var(--kendo-spacing-0\.5, 0.125rem)))))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-timeline-mobile-vertical-padding-calc } + #{ $kendo-timeline-date-width } )</code></td>
+    <td><code>calc(calc(var(--kendo-spacing-4, 1rem) + (var(--kendo-timeline-flag-min-width, var(--kendo-spacing-20, 5rem)) - var(--kendo-spacing-1\.5, 0.375rem)) / 2) + calc(var(--kendo-spacing-12, 3rem) + var(--kendo-spacing-0\.5, 0.125rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical mobile Timeline date.</div></div>

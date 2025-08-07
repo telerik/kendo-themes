@@ -219,9 +219,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-time-list-title-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-time-list-title-height, calc( #{$kendo-time-list-title-spacing} + #{$kendo-time-list-title-font-size} * #{$kendo-time-list-title-line-height} ) )</code></td>
-    <td><code>var(--kendo-time-list-title-height, calc(var(--kendo-time-list-title-spacing, var(--kendo-spacing-3, 0.75rem)) + var(--kendo-time-list-title-font-size, var(--kendo-font-size-xs, inherit)) * var(--kendo-time-list-title-line-height, var(--kendo-line-height-lg, inherit))))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-time-list-title-spacing} + #{$kendo-time-list-title-font-size} * #{$kendo-time-list-title-line-height} )</code></td>
+    <td><code>calc(var(--kendo-time-list-title-spacing, var(--kendo-spacing-3, 0.75rem)) + var(--kendo-time-list-title-font-size, var(--kendo-font-size-xs, inherit)) * var(--kendo-time-list-title-line-height, var(--kendo-line-height-lg, inherit)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the time-selector titles.</div></div>
@@ -279,9 +279,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-time-list-highlight-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-time-list-highlight-height, calc( #{$kendo-time-selector-font-size} * #{$kendo-time-selector-line-height} + calc( #{$kendo-time-list-item-padding-y} * 2 ) ) )</code></td>
-    <td><code>var(--kendo-time-list-highlight-height, calc(var(--kendo-time-selector-font-size, var(--kendo-font-size, inherit)) * var(--kendo-time-selector-line-height, var(--kendo-line-height, normal)) + var(--kendo-time-list-item-padding-y, var(--kendo-spacing-1, 0.25rem)) * 2))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-time-selector-font-size} * #{$kendo-time-selector-line-height} + calc( #{$kendo-time-list-item-padding-y} * 2 ) )</code></td>
+    <td><code>calc(var(--kendo-time-selector-font-size, var(--kendo-font-size, inherit)) * var(--kendo-time-selector-line-height, var(--kendo-line-height, normal)) + var(--kendo-time-list-item-padding-y, var(--kendo-spacing-1, 0.25rem)) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the selected item in the time-selector.</div></div>
@@ -320,8 +320,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-selector-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-sm-font-size, $kendo-list-sm-font-size )</code></td>
-    <td><code>var(--kendo-time-selector-sm-font-size, var(--kendo-list-sm-font-size, var(--kendo-font-size, inherit)))</code></td>
+    <td><code>var( --kendo-time-selector-sm-font-size, var( --kendo-font-size, inherit ) )</code></td>
+    <td><code>var(--kendo-time-selector-sm-font-size, var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the time-selector.</div></div>
@@ -330,8 +330,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-selector-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-sm-line-height, $kendo-list-sm-line-height )</code></td>
-    <td><code>var(--kendo-time-selector-sm-line-height, var(--kendo-list-sm-line-height, var(--kendo-line-height, normal)))</code></td>
+    <td><code>var( --kendo-time-selector-sm-line-height, var(--kendo-line-height, normal) )</code></td>
+    <td><code>var(--kendo-time-selector-sm-line-height, var(--kendo-line-height, normal))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
@@ -340,8 +340,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-selector-sm-list-item-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-sm-list-item-padding-x, $kendo-list-sm-item-padding-x )</code></td>
-    <td><code>var(--kendo-time-selector-sm-list-item-padding-x, var(--kendo-list-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><code>var( --kendo-time-selector-sm-list-item-padding-x, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-time-selector-sm-list-item-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"> Horizontal padding of the time-selector items.</div></div>
@@ -350,8 +350,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-selector-sm-list-item-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-sm-list-item-padding-y, $kendo-list-sm-item-padding-y )</code></td>
-    <td><code>var(--kendo-time-selector-sm-list-item-padding-y, var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1\.5, 0.375rem)))</code></td>
+    <td><code>var( --kendo-time-selector-sm-list-item-padding-y, #{k-spacing(1.5)} )</code></td>
+    <td><code>var(--kendo-time-selector-sm-list-item-padding-y, var(--kendo-spacing-1\.5, 0.375rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"> Vertical padding of the time-selector items.</div></div>
@@ -380,7 +380,7 @@ The following table lists the available variables for customization.
         list-item-padding-y: $kendo-time-selector-lg-list-item-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-time-selector-sm-font-size, var(--kendo-list-sm-font-size, var(--kendo-font-size, inherit)))","line-height":"var(--kendo-time-selector-sm-line-height, var(--kendo-list-sm-line-height, var(--kendo-line-height, normal)))","list-item-padding-x":"var(--kendo-time-selector-sm-list-item-padding-x, var(--kendo-list-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem)))","list-item-padding-y":"var(--kendo-time-selector-sm-list-item-padding-y, var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1\\.5, 0.375rem)))"</li><li>md: "font-size":"var(--kendo-time-selector-md-font-size, var(--kendo-list-md-font-size, var(--kendo-font-size, inherit)))","line-height":"var(--kendo-time-selector-md-line-height, var(--kendo-list-md-line-height, var(--kendo-line-height, normal)))","list-item-padding-x":"var(--kendo-time-selector-md-list-item-padding-x, var(--kendo-list-md-item-padding-x, var(--kendo-spacing-2, 0.5rem)))","list-item-padding-y":"var(--kendo-time-selector-md-list-item-padding-y, var(--kendo-list-md-item-padding-y, var(--kendo-spacing-2, 0.5rem)))"</li><li>lg: "font-size":"var(--kendo-time-selector-lg-font-size, var(--kendo-list-lg-font-size, var(--kendo-font-size, inherit)))","line-height":"var(--kendo-time-selector-lg-line-height, var(--kendo-list-lg-line-height, var(--kendo-line-height, normal)))","list-item-padding-x":"var(--kendo-time-selector-lg-list-item-padding-x, var(--kendo-list-lg-item-padding-x, var(--kendo-spacing-2, 0.5rem)))","list-item-padding-y":"var(--kendo-time-selector-lg-list-item-padding-y, var(--kendo-list-lg-item-padding-y, var(--kendo-spacing-2\\.5, 0.625rem)))"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-time-selector-sm-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-time-selector-sm-line-height, var(--kendo-line-height, normal))","list-item-padding-x":"var(--kendo-time-selector-sm-list-item-padding-x, var(--kendo-spacing-2, 0.5rem))","list-item-padding-y":"var(--kendo-time-selector-sm-list-item-padding-y, var(--kendo-spacing-1\\.5, 0.375rem))"</li><li>md: "font-size":"var(--kendo-time-selector-md-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-time-selector-md-line-height, var(--kendo-line-height, normal))","list-item-padding-x":"var(--kendo-time-selector-md-list-item-padding-x, var(--kendo-spacing-2, 0.5rem))","list-item-padding-y":"var(--kendo-time-selector-md-list-item-padding-y, var(--kendo-spacing-2, 0.5rem))"</li><li>lg: "font-size":"var(--kendo-time-selector-lg-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-time-selector-lg-line-height, var(--kendo-line-height, normal))","list-item-padding-x":"var(--kendo-time-selector-lg-list-item-padding-x, var(--kendo-spacing-2, 0.5rem))","list-item-padding-y":"var(--kendo-time-selector-lg-list-item-padding-y, var(--kendo-spacing-2\\.5, 0.625rem))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the time-selector.</div></div>

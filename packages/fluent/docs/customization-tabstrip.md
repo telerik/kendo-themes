@@ -130,8 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-sm-font-size, #{$kendo-tabstrip-font-size} )</code></td>
-    <td><code>var(--kendo-tabstrip-sm-font-size, var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit)))</code></td>
+    <td><code>$kendo-tabstrip-font-size</code></td>
+    <td><code>var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small TabStrip.</div></div>
@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-sm-line-height, #{$kendo-tabstrip-line-height} )</code></td>
-    <td><code>var(--kendo-tabstrip-sm-line-height, var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal)))</code></td>
+    <td><code>$kendo-tabstrip-line-height</code></td>
+    <td><code>var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small TabStrip.</div></div>
@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-md-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-md-font-size, #{$kendo-tabstrip-font-size} )</code></td>
-    <td><code>var(--kendo-tabstrip-md-font-size, var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit)))</code></td>
+    <td><code>$kendo-tabstrip-font-size</code></td>
+    <td><code>var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium TabStrip.</div></div>
@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-md-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-md-line-height, #{$kendo-tabstrip-line-height} )</code></td>
-    <td><code>var(--kendo-tabstrip-md-line-height, var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal)))</code></td>
+    <td><code>$kendo-tabstrip-line-height</code></td>
+    <td><code>var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium TabStrip.</div></div>
@@ -170,8 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-lg-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-lg-font-size, #{$kendo-tabstrip-font-size} )</code></td>
-    <td><code>var(--kendo-tabstrip-lg-font-size, var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit)))</code></td>
+    <td><code>$kendo-tabstrip-font-size</code></td>
+    <td><code>var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large TabStrip.</div></div>
@@ -180,8 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-lg-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-lg-line-height, #{$kendo-tabstrip-line-height} )</code></td>
-    <td><code>var(--kendo-tabstrip-lg-line-height, var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal)))</code></td>
+    <td><code>$kendo-tabstrip-line-height</code></td>
+    <td><code>var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large TabStrip.</div></div>
@@ -600,7 +600,7 @@ The following table lists the available variables for customization.
         item-padding-y: $kendo-tabstrip-lg-item-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-tabstrip-sm-font-size, var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit)))","line-height":"var(--kendo-tabstrip-sm-line-height, var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal)))","item-padding-x":"var(--kendo-tabstrip-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-sm-item-padding-y, var(--kendo-spacing-2\\.5, 0.625rem))"</li><li>md: "font-size":"var(--kendo-tabstrip-md-font-size, var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit)))","line-height":"var(--kendo-tabstrip-md-line-height, var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal)))","item-padding-x":"var(--kendo-tabstrip-md-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-md-item-padding-y, var(--kendo-spacing-3, 0.75rem))"</li><li>lg: "font-size":"var(--kendo-tabstrip-lg-font-size, var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit)))","line-height":"var(--kendo-tabstrip-lg-line-height, var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal)))","item-padding-x":"var(--kendo-tabstrip-lg-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-lg-item-padding-y, var(--kendo-spacing-3\\.5, 0.875rem))"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))","item-padding-x":"var(--kendo-tabstrip-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-sm-item-padding-y, var(--kendo-spacing-2\\.5, 0.625rem))"</li><li>md: "font-size":"var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))","item-padding-x":"var(--kendo-tabstrip-md-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-md-item-padding-y, var(--kendo-spacing-3, 0.75rem))"</li><li>lg: "font-size":"var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))","item-padding-x":"var(--kendo-tabstrip-lg-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-lg-item-padding-y, var(--kendo-spacing-3\\.5, 0.875rem))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the TabStrip.</div></div>
