@@ -37,22 +37,22 @@ $kendo-tabstrip-border-width: var( --kendo-tabstrip-border-width, 0px ) !default
 
 /// The font size of the small TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-sm-font-size: var( --kendo-tabstrip-sm-font-size, #{$kendo-tabstrip-font-size} ) !default;
+$kendo-tabstrip-sm-font-size: $kendo-tabstrip-font-size !default;
 /// The line height of the small TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-sm-line-height: var( --kendo-tabstrip-sm-line-height, #{$kendo-tabstrip-line-height} ) !default;
+$kendo-tabstrip-sm-line-height: $kendo-tabstrip-line-height !default;
 /// The font size of the medium TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-md-font-size: var( --kendo-tabstrip-md-font-size, #{$kendo-tabstrip-font-size} ) !default;
+$kendo-tabstrip-md-font-size: $kendo-tabstrip-font-size !default;
 /// The line height of the medium TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-md-line-height: var( --kendo-tabstrip-md-line-height, #{$kendo-tabstrip-line-height} ) !default;
+$kendo-tabstrip-md-line-height: $kendo-tabstrip-line-height !default;
 /// The font size of the large TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-lg-font-size: var( --kendo-tabstrip-lg-font-size, #{$kendo-tabstrip-font-size} ) !default;
+$kendo-tabstrip-lg-font-size: $kendo-tabstrip-font-size !default;
 /// The line height of the large TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-lg-line-height: var( --kendo-tabstrip-lg-line-height, #{$kendo-tabstrip-line-height} ) !default;
+$kendo-tabstrip-lg-line-height: $kendo-tabstrip-line-height !default;
 
 /// The background color of the TabStrip.
 /// @group tabstrip

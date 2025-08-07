@@ -3,27 +3,27 @@
 
 /// The vertical padding of the small arrow Button.
 /// @group split-button
-$kendo-split-button-sm-arrow-padding-y: var( --kendo-split-button-sm-arrow-padding-y, #{$kendo-button-sm-padding-y} ) !default;
+$kendo-split-button-sm-arrow-padding-y: var( --kendo-split-button-sm-arrow-padding-y, #{k-spacing(1)} ) !default;
 /// The vertical padding of the medium arrow Button.
 /// @group split-button
-$kendo-split-button-md-arrow-padding-y: var( --kendo-split-button-md-arrow-padding-y, #{$kendo-button-md-padding-y} ) !default;
+$kendo-split-button-md-arrow-padding-y: var( --kendo-split-button-md-arrow-padding-y, #{k-spacing(1.5)} ) !default;
 /// The vertical padding of the large arrow Button.
 /// @group split-button
-$kendo-split-button-lg-arrow-padding-y: var( --kendo-split-button-lg-arrow-padding-y, #{$kendo-button-lg-padding-y} ) !default;
+$kendo-split-button-lg-arrow-padding-y: var( --kendo-split-button-lg-arrow-padding-y, #{k-spacing(2)} ) !default;
 
 /// The horizontal padding of the small arrow Button.
 /// @group split-button
-$kendo-split-button-sm-arrow-padding-x: var( --kendo-split-button-sm-arrow-padding-x, #{$kendo-split-button-sm-arrow-padding-y} ) !default;
+$kendo-split-button-sm-arrow-padding-x: var( --kendo-split-button-sm-arrow-padding-x, #{k-spacing(1)} ) !default;
 /// The horizontal padding of the medium arrow Button.
 /// @group split-button
-$kendo-split-button-md-arrow-padding-x: var( --kendo-split-button-md-arrow-padding-x, #{$kendo-split-button-md-arrow-padding-y} ) !default;
+$kendo-split-button-md-arrow-padding-x: var( --kendo-split-button-md-arrow-padding-x, #{k-spacing(1.5)} ) !default;
 /// The horizontal padding of the large arrow Button.
 /// @group split-button
-$kendo-split-button-lg-arrow-padding-x: var( --kendo-split-button-lg-arrow-padding-x, #{$kendo-split-button-lg-arrow-padding-y} ) !default;
+$kendo-split-button-lg-arrow-padding-x: var( --kendo-split-button-lg-arrow-padding-x, #{k-spacing(2)} ) !default;
 
 /// The height of the SplitButton arrow delimiter.
 /// @group split-button
-$kendo-split-button-arrow-delimiter-size: var( --kendo-split-button-arrow-delimiter-size, calc( #{$kendo-button-inner-calc-size} / 2 ) ) !default;
+$kendo-split-button-arrow-delimiter-size: calc( #{$kendo-button-inner-calc-size} / 2 ) !default;
 /// The width of the SplitButton arrow delimiter.
 /// @group split-button
 $kendo-split-button-arrow-delimiter-line-size: var( --kendo-split-button-arrow-delimiter-line-size, 1px ) !default;

@@ -74,7 +74,7 @@ $kendo-drawer-item-font-weight: var( --kendo-drawer-item-font-weight, var( --ken
 
 /// The horizontal padding of the Drawer item in each level.
 /// @group drawer
-$kendo-drawer-item-level-padding-x: var( --kendo-drawer-item-level-padding-x, $kendo-drawer-item-padding-x ) !default;
+$kendo-drawer-item-level-padding-x: var( --kendo-drawer-item-level-padding-x, k-spacing(4) ) !default;
 /// The count of the Drawer item levels.
 /// @group drawer
 $kendo-drawer-item-level-count: 5 !default;
@@ -91,7 +91,7 @@ $kendo-drawer-icon-padding-y: var( --kendo-drawer-icon-padding-y, k-spacing(1) )
 
 /// The initial width of the mini Drawer.
 /// @group drawer
-$kendo-drawer-mini-initial-width: var( --kendo-drawer-mini-initial-width, calc( 2 * #{$kendo-drawer-item-padding-x} + var( --kendo-icon-size, 1rem ) ) ) !default;
+$kendo-drawer-mini-initial-width: calc( 2 * #{k-spacing(4)} + var( --kendo-icon-size, 1rem ) )  !default;
 
 /// The border width of the Drawer item ripple.
 /// @group drawer
