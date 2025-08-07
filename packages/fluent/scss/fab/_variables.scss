@@ -24,26 +24,26 @@ $kendo-fab-line-height: var( --kendo-fab-line-height, var( --kendo-line-height, 
 $kendo-fab-padding-x: var( --kendo-fab-padding-x, #{k-spacing(4)} ) !default;
 /// The horizontal padding of the small FAB.
 /// @group floating-action-button
-$kendo-fab-sm-padding-x: var( --kendo-fab-sm-padding-x, calc( #{$kendo-fab-padding-x} / 2 ) ) !default;
+$kendo-fab-sm-padding-x: var( --kendo-fab-sm-padding-x, calc( #{k-spacing(4)} / 2 ) ) !default;
 /// The horizontal padding of the medium FAB.
 /// @group floating-action-button
-$kendo-fab-md-padding-x: var( --kendo-fab-md-padding-x, #{$kendo-fab-padding-x} ) !default;
+$kendo-fab-md-padding-x: var( --kendo-fab-md-padding-x, #{k-spacing(4)} ) !default;
 /// The horizontal padding of the large FAB.
 /// @group floating-action-button
-$kendo-fab-lg-padding-x: var( --kendo-fab-lg-padding-x, calc( #{$kendo-fab-padding-x} * 1.5 ) ) !default;
+$kendo-fab-lg-padding-x: var( --kendo-fab-lg-padding-x, calc( #{k-spacing(4)} * 1.5 ) ) !default;
 
 /// The vertical padding of the FAB.
 /// @group floating-action-button
-$kendo-fab-padding-y: var( --kendo-fab-padding-y, #{$kendo-fab-padding-x} ) !default;
+$kendo-fab-padding-y: var( --kendo-fab-padding-y, #{k-spacing(4)} ) !default;
 /// The vertical padding of the small FAB.
 /// @group floating-action-button
-$kendo-fab-sm-padding-y: var( --kendo-fab-sm-padding-y, calc( #{$kendo-fab-padding-y} / 2 ) ) !default;
+$kendo-fab-sm-padding-y: var( --kendo-fab-sm-padding-y, calc( #{k-spacing(4)} / 2 ) ) !default;
 /// The vertical padding of the medium FAB.
 /// @group floating-action-button
-$kendo-fab-md-padding-y: var( --kendo-fab-md-padding-y, #{$kendo-fab-padding-y} ) !default;
+$kendo-fab-md-padding-y: var( --kendo-fab-md-padding-y, #{k-spacing(4)} ) !default;
 /// The vertical padding of the large FAB.
 /// @group floating-action-button
-$kendo-fab-lg-padding-y: var( --kendo-fab-lg-padding-y, calc( #{$kendo-fab-padding-y} * 1.5 ) ) !default;
+$kendo-fab-lg-padding-y: var( --kendo-fab-lg-padding-y, calc( #{k-spacing(4)} * 1.5 ) ) !default;
 
 /// The offset of the focused FAB.
 /// @group floating-action-button

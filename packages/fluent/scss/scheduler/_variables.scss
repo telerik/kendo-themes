@@ -176,10 +176,10 @@ $kendo-scheduler-yearview-calendar-gap: var( --kendo-scheduler-yearview-calendar
 $kendo-scheduler-yearview-indicator-size: var( --kendo-scheduler-yearview-indicator-size, 3px ) !default;
 /// The top position of the days with events indicator of the year view in the Scheduler.
 /// @group scheduler
-$kendo-scheduler-yearview-indicator-calc-offset-top: var( --kendo-scheduler-yearview-indicator-calc-offset-top, calc( #{$kendo-calendar-cell-size} - (#{$kendo-calendar-cell-padding-y} * 2) ) ) !default;
+$kendo-scheduler-yearview-indicator-calc-offset-top: calc( #{$kendo-calendar-cell-size} - (#{$kendo-calendar-cell-padding-y} * 2) ) !default;
 /// The left position of the days with events indicator of the year view in the Scheduler.
 /// @group scheduler
-$kendo-scheduler-yearview-indicator-calc-offset-left: var( --kendo-scheduler-yearview-indicator-calc-offset-left, calc( 50% - (#{$kendo-scheduler-yearview-indicator-size} / 2) ) ) !default;
+$kendo-scheduler-yearview-indicator-calc-offset-left: calc( 50% - (#{$kendo-scheduler-yearview-indicator-size} / 2) ) !default;
 /// The border radius of the days with events indicator of the year view in the Scheduler.
 /// @group scheduler
 $kendo-scheduler-yearview-indicator-border-radius: var( --kendo-scheduler-yearview-indicator-border-radius, 50% ) !default;

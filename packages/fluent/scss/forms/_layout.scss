@@ -16,7 +16,7 @@
 
     .k-form {
         .k-form-buttons {
-            margin-block-start: calc( var( --kendo-form-rows-spacing-md, #{map.get($kendo-form-sizes, md, form-rows-spacing)} ) * 2 );
+            margin-block-start: calc( #{map.get($kendo-form-sizes, md, form-rows-spacing)} * 2 );
         }
     }
 
@@ -25,7 +25,7 @@
 
         .k-form-#{$size} {
             .k-form-buttons {
-                margin-block-start: calc( var( --kendo-form-rows-spacing-#{$size}, #{$_form-rows-spacing} ) * 2 );
+                margin-block-start: calc( #{$_form-rows-spacing} * 2 );
             }
         }
     }

@@ -208,7 +208,7 @@ $kendo-adaptive-actionsheet-line-height: var( --kendo-adaptive-actionsheet-line-
 $kendo-adaptive-actionsheet-header-padding-y: var( --kendo-adaptive-actionsheet-header-padding-y, #{k-spacing(4)} ) !default;
 /// Horizontal padding of the adaptive action sheet titlebar.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-header-padding-x: var( --kendo-adaptive-actionsheet-header-padding-x, #{$kendo-adaptive-actionsheet-header-padding-y} ) !default;
+$kendo-adaptive-actionsheet-header-padding-x: var( --kendo-adaptive-actionsheet-header-padding-x, #{k-spacing(4)} ) !default;
 
 /// Vertical padding of the adaptive action sheet content.
 /// @group action-sheet
