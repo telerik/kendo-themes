@@ -47,20 +47,20 @@ $kendo-chat-typing-indicator-dot-spacing: var( --kendo-chat-typing-indicator-dot
 
 /// The horizontal spacing between the items of the Chat.
 /// @group chat
-$kendo-chat-item-spacing-x: var( --kendo-chat-item-spacing-x, #{k-spacing(2)} ) !default;
+$kendo-chat-item-spacing-x: k-spacing(2) !default;
 /// The vertical spacing between the items of the Chat.
 /// @group chat
-$kendo-chat-item-spacing-y: var( --kendo-chat-item-spacing-y, #{k-spacing(4)} ) !default;
+$kendo-chat-item-spacing-y: k-spacing(4) !default;
 
 /// The horizontal padding of the Chat message list.
 /// @group chat
-$kendo-chat-message-list-padding-x: var( --kendo-chat-message-list-padding-x, #{$kendo-chat-padding-x} ) !default;
+$kendo-chat-message-list-padding-x: $kendo-chat-padding-x !default;
 /// The vertical padding of the Chat message list.
 /// @group chat
-$kendo-chat-message-list-padding-y: var( --kendo-chat-message-list-padding-y, #{$kendo-chat-padding-y} ) !default;
+$kendo-chat-message-list-padding-y: $kendo-chat-padding-y !default;
 /// The spacing of the Chat message list.
 /// @group chat
-$kendo-chat-message-list-spacing: var( --kendo-chat-message-list-spacing, #{$kendo-chat-item-spacing-y} ) !default;
+$kendo-chat-message-list-spacing: $kendo-chat-item-spacing-y !default;
 
 /// The font size of the Chat timestamp.
 /// @group chat

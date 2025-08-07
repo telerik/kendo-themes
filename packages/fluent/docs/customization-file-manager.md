@@ -30,8 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-file-manager-spacer</td>
     <td>String</td>
-    <td><code>var( --kendo-file-manager-spacer, #{k-spacing(4)} )</code></td>
-    <td><code>var(--kendo-file-manager-spacer, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The space between the FileManager items.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-navigation-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-file-manager-navigation-padding-x, #{$kendo-file-manager-spacer} )</code></td>
-    <td><code>var(--kendo-file-manager-navigation-padding-x, var(--kendo-file-manager-spacer, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>var(--kendo-file-manager-navigation-padding-x, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FileManager Navigation.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-navigation-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-file-manager-navigation-padding-y, #{$kendo-file-manager-spacer} )</code></td>
-    <td><code>var(--kendo-file-manager-navigation-padding-y, var(--kendo-file-manager-spacer, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>var(--kendo-file-manager-navigation-padding-y, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FileManager Navigation.</div></div>
@@ -470,8 +470,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-manager-preview-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-file-manager-preview-padding-x, #{$kendo-file-manager-spacer} )</code></td>
-    <td><code>var(--kendo-file-manager-preview-padding-x, var(--kendo-file-manager-spacer, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>$kendo-file-manager-spacer</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FileManager preview.</div></div>
@@ -480,8 +480,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-manager-preview-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-file-manager-preview-padding-y, #{$kendo-file-manager-spacer} )</code></td>
-    <td><code>var(--kendo-file-manager-preview-padding-y, var(--kendo-file-manager-spacer, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>$kendo-file-manager-spacer</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FileManager preview.</div></div>
@@ -510,8 +510,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-manager-preview-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-file-manager-preview-spacing, #{$kendo-file-manager-spacer} )</code></td>
-    <td><code>var(--kendo-file-manager-preview-spacing, var(--kendo-file-manager-spacer, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>$kendo-file-manager-spacer</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the FileManager preview.</div></div>

@@ -219,7 +219,7 @@ $kendo-color-gradient-lg-input-width: var(--kendo-color-gradient-lg-input-width,
 $kendo-color-gradient-contrast-ratio-font-weight: var(--kendo-color-gradient-contrast-ratio-font-weight, var( --kendo-font-weight-bold, normal )) !default;
 /// The spacing between the items in the ColorGradient contrast tool.
 /// @group color-gradient
-$kendo-color-gradient-contrast-spacing: var(--kendo-color-gradient-contrast-spacing, calc( #{$kendo-color-gradient-spacer} / 1.5 )) !default;
+$kendo-color-gradient-contrast-spacing: calc( #{$kendo-color-gradient-spacer} / 1.5 ) !default;
 
 /// The size map of the ColorGradient.
 /// @group color-gradient

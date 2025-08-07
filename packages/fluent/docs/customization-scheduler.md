@@ -549,9 +549,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-scheduler-yearview-indicator-calc-offset-top</td>
-    <td>String</td>
-    <td><code>var( --kendo-scheduler-yearview-indicator-calc-offset-top, calc( #{$kendo-calendar-cell-size} - (#{$kendo-calendar-cell-padding-y} * 2) ) )</code></td>
-    <td><code>var(--kendo-scheduler-yearview-indicator-calc-offset-top, calc(var(--kendo-calendar-cell-size, 28px) - var(--kendo-calendar-cell-padding-y, var(--kendo-calendar-cell-padding-x, var(--kendo-spacing-1, 0.25rem))) * 2))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-calendar-cell-size} - (#{$kendo-calendar-cell-padding-y} * 2) )</code></td>
+    <td><code>calc(var(--kendo-calendar-cell-size, 28px) - var(--kendo-spacing-1, 0.25rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top position of the days with events indicator of the year view in the Scheduler.</div></div>
@@ -559,9 +559,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-scheduler-yearview-indicator-calc-offset-left</td>
-    <td>String</td>
-    <td><code>var( --kendo-scheduler-yearview-indicator-calc-offset-left, calc( 50% - (#{$kendo-scheduler-yearview-indicator-size} / 2) ) )</code></td>
-    <td><code>var(--kendo-scheduler-yearview-indicator-calc-offset-left, calc(50% - var(--kendo-scheduler-yearview-indicator-size, 3px) / 2))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( 50% - (#{$kendo-scheduler-yearview-indicator-size} / 2) )</code></td>
+    <td><code>calc(50% - var(--kendo-scheduler-yearview-indicator-size, 3px) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left position of the days with events indicator of the year view in the Scheduler.</div></div>

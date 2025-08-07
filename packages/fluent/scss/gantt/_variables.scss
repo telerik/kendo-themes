@@ -139,7 +139,7 @@ $kendo-gantt-task-actions-padding-x: var(--kendo-gantt-task-actions-padding-x, #
 $kendo-gantt-planned-margin-y: var(--kendo-gantt-planned-margin-y, .45em) !default;
 /// The border width of the Gantt task planned line.
 /// @group gantt
-$kendo-gantt-planned-border-width: var(--kendo-gantt-planned-border-width, 2px) !default;
+$kendo-gantt-planned-border-width: 2px !default;
 /// The line height of the Gantt task planned line.
 /// @group gantt
 $kendo-gantt-planned-line-height: var(--kendo-gantt-planned-line-height, .85em) !default;
@@ -150,26 +150,26 @@ $kendo-gantt-planned-dependency-margin-y: var(--kendo-gantt-planned-dependency-m
 
 /// The default width of the Gantt planned line dot.
 /// @group gantt
-$kendo-gantt-planned-moment-width: var(--kendo-gantt-planned-moment-width, 6px) !default;
+$kendo-gantt-planned-moment-width: 6px !default;
 /// The default height of the Gantt planned line dot.
 /// @group gantt
-$kendo-gantt-planned-moment-height: var(--kendo-gantt-planned-moment-height, var(--kendo-gantt-planned-moment-width, 6px)) !default;
+$kendo-gantt-planned-moment-height: $kendo-gantt-planned-moment-width !default;
 /// The border radius of the Gantt planned line dot.
 /// @group gantt
-$kendo-gantt-planned-moment-border-radius: var(--kendo-gantt-planned-moment-border-radius, calc((var(--kendo-gantt-planned-border-width, 2px) * 2 + var(--kendo-gantt-planned-moment-width, 6px)) / 2)) !default;
+$kendo-gantt-planned-moment-border-radius: calc(($kendo-gantt-planned-border-width * 2 + $kendo-gantt-planned-moment-width) / 2) !default;
 /// The horizontal margin of the Gantt planned line dot.
 /// @group gantt
-$kendo-gantt-planned-moment-left-margin-x: var(--kendo-gantt-planned-moment-left-margin-x, calc(var(--kendo-gantt-planned-border-width, 2px) / 2 - var(--kendo-gantt-planned-moment-border-radius, calc((var(--kendo-gantt-planned-border-width, 2px) * 2 + var(--kendo-gantt-planned-moment-width, 6px)) / 2)))) !default;
+$kendo-gantt-planned-moment-left-margin-x: calc($kendo-gantt-planned-border-width / 2 - $kendo-gantt-planned-moment-border-radius) !default;
 /// The horizontal margin of the Gantt milestone planned line dot.
 /// @group gantt
-$kendo-gantt-planned-milestone-moment-margin-x: var(--kendo-gantt-planned-milestone-moment-margin-x, #{math.div(6px, 2)}) !default;
+$kendo-gantt-planned-milestone-moment-margin-x: 3px !default;
 
 /// The default height of the Gantt planned line.
 /// @group gantt
-$kendo-gantt-planned-duration-height: var(--kendo-gantt-planned-duration-height, var(--kendo-gantt-planned-border-width, 2px)) !default;
+$kendo-gantt-planned-duration-height: var(--kendo-gantt-planned-duration-height, $kendo-gantt-planned-border-width) !default;
 /// The height of the hovered Gantt planned line.
 /// @group gantt
-$kendo-gantt-planned-duration-hover-height: var(--kendo-gantt-planned-duration-hover-height, calc(var(--kendo-gantt-planned-border-width, 2px) + 1px)) !default;
+$kendo-gantt-planned-duration-hover-height: var(--kendo-gantt-planned-duration-hover-height, calc($kendo-gantt-planned-border-width + 1px)) !default;
 
 /// The top position of the Gantt drag hint.
 /// @group gantt

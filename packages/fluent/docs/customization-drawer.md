@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-scrollbar-hover-color</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-scrollbar-hover-color color-mix(in srgb, k-color(on-app-surface) 60%, transparent) )</code></td>
-    <td><code>var(--kendo-drawer-scrollbar-hover-color color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 60%, transparent))</code></td>
+    <td><code>var( --kendo-drawer-scrollbar-hover-color, color-mix(in srgb, k-color(on-app-surface) 60%, transparent) )</code></td>
+    <td><code>var(--kendo-drawer-scrollbar-hover-color, color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 60%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the Drawer scrollbar.</div></div>
@@ -250,8 +250,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-level-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-item-level-padding-x, $kendo-drawer-item-padding-x )</code></td>
-    <td><code>var(--kendo-drawer-item-level-padding-x, var(--kendo-drawer-item-padding-x, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>var( --kendo-drawer-item-level-padding-x, k-spacing(4) )</code></td>
+    <td><code>var(--kendo-drawer-item-level-padding-x, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Drawer item in each level.</div></div>
@@ -299,9 +299,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-drawer-mini-initial-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-drawer-mini-initial-width, calc( 2 * #{$kendo-drawer-item-padding-x} + var( --kendo-icon-size, 1rem ) ) )</code></td>
-    <td><code>var(--kendo-drawer-mini-initial-width, calc(2 * var(--kendo-drawer-item-padding-x, var(--kendo-spacing-4, 1rem)) + var(--kendo-icon-size, 1rem)))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( 2 * #{k-spacing(4)} + var( --kendo-icon-size, 1rem ) )</code></td>
+    <td><code>calc(2 * var(--kendo-spacing-4, 1rem) + var(--kendo-icon-size, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The initial width of the mini Drawer.</div></div>

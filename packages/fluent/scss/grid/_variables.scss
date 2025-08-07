@@ -24,45 +24,45 @@ $kendo-grid-line-height: var( --kendo-grid-line-height, var(--kendo-line-height,
 
 /// The horizontal padding of the Grid.
 /// @group grid
-$kendo-grid-padding-x: var( --kendo-grid-padding-x, #{$kendo-table-md-cell-padding-x} ) !default;
+$kendo-grid-padding-x: $kendo-table-md-cell-padding-x !default;
 /// The vertical padding of the Grid.
 /// @group grid
-$kendo-grid-padding-y: var( --kendo-grid-padding-y, #{$kendo-table-md-cell-padding-y} ) !default;
+$kendo-grid-padding-y: $kendo-table-md-cell-padding-y !default;
 
 /// The horizontal padding of the Grid header.
 /// @group grid
-$kendo-grid-header-padding-x: var( --kendo-grid-header-padding-x, #{$kendo-grid-padding-x} ) !default;
+$kendo-grid-header-padding-x: $kendo-grid-padding-x !default;
 /// The vertical padding of the Grid header.
 /// @group grid
-$kendo-grid-header-padding-y: var( --kendo-grid-header-padding-y, #{$kendo-grid-padding-y} ) !default;
+$kendo-grid-header-padding-y: $kendo-grid-padding-y !default;
 
 /// The horizontal padding of the Grid grouping header.
 /// @group grid
-$kendo-grid-grouping-header-padding-x: var( --kendo-grid-grouping-header-padding-x, #{$kendo-toolbar-md-padding-x} ) !default;
+$kendo-grid-grouping-header-padding-x: $kendo-toolbar-md-padding-x !default;
 /// The vertical padding of the Grid grouping header.
 /// @group grid
-$kendo-grid-grouping-header-padding-y: var( --kendo-grid-grouping-header-padding-y, #{$kendo-toolbar-md-padding-y} ) !default;
+$kendo-grid-grouping-header-padding-y: $kendo-toolbar-md-padding-y !default;
 
 /// The horizontal padding of the Grid cell.
 /// @group grid
-$kendo-grid-cell-padding-x: var( --kendo-grid-cell-padding-x, #{$kendo-grid-padding-x} ) !default;
+$kendo-grid-cell-padding-x: $kendo-grid-padding-x !default;
 /// The vertical padding of the Grid cell.
 /// @group grid
-$kendo-grid-cell-padding-y: var( --kendo-grid-cell-padding-y, #{$kendo-grid-padding-y} ) !default;
+$kendo-grid-cell-padding-y: $kendo-grid-padding-y !default;
 
 /// The horizontal padding of the Grid filter cell.
 /// @group grid
-$kendo-grid-filter-cell-padding-x: var( --kendo-grid-filter-cell-padding-x, #{$kendo-grid-padding-y} ) !default;
+$kendo-grid-filter-cell-padding-x: $kendo-grid-padding-y !default;
 /// The vertical padding of the Grid filter cell.
 /// @group grid
-$kendo-grid-filter-cell-padding-y: var( --kendo-grid-filter-cell-padding-y, #{$kendo-grid-filter-cell-padding-x} ) !default;
+$kendo-grid-filter-cell-padding-y: $kendo-grid-filter-cell-padding-x !default;
 
 /// The horizontal padding of the Grid edit cell.
 /// @group grid
-$kendo-grid-edit-cell-padding-x: var( --kendo-grid-edit-cell-padding-x, #{$kendo-grid-cell-padding-x} ) !default;
+$kendo-grid-edit-cell-padding-x: $kendo-grid-cell-padding-x !default;
 /// The vertical padding of the Grid filter cell.
 /// @group grid
-$kendo-grid-edit-cell-padding-y: var( --kendo-grid-edit-cell-padding-y, calc( #{k-spacing(2.5)} / 2 ) ) !default;
+$kendo-grid-edit-cell-padding-y: calc( #{k-spacing(2.5)} / 2 ) !default;
 
 /// The size of the Grid group drop clue.
 /// @group grid
@@ -72,7 +72,7 @@ $kendo-grid-group-drop-hint-size: var( --kendo-grid-group-drop-hint-size, 6px ) 
 $kendo-grid-group-drop-hint-line-size: var( --kendo-grid-group-drop-hint-line-size, 1px ) !default;
 /// The dot size of the Grid group drop clue.
 /// @group grid
-$kendo-grid-group-drop-hint-dot-size: var( --kendo-grid-group-drop-hint-dot-size, #{$kendo-grid-group-drop-hint-size} ) !default;
+$kendo-grid-group-drop-hint-dot-size: $kendo-grid-group-drop-hint-size !default;
 /// The height of the Grid group drop clue.
 /// @group grid
 $kendo-grid-group-drop-hint-height: var( --kendo-grid-group-drop-hint-height, calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-drop-hint-size} ) ) !default;
@@ -83,35 +83,35 @@ $kendo-grid-group-drop-hint-top: var( --kendo-grid-group-drop-hint-top, 2px ) !d
 
 $kendo-grid-sm-padding-x: k-spacing(3) !default;
 $kendo-grid-sm-padding-y: k-spacing(1.5) !default;
-$kendo-grid-sm-header-padding-x: var( --kendo-grid-sm-header-padding-x, #{$kendo-grid-sm-padding-x} ) !default;
-$kendo-grid-sm-header-padding-y: var( --kendo-grid-sm-header-padding-y, #{$kendo-grid-sm-padding-y} ) !default;
-$kendo-grid-sm-grouping-header-padding-x: var( --kendo-grid-sm-grouping-header-padding-x, #{k-spacing(1.5)} ) !default;
-$kendo-grid-sm-grouping-header-padding-y: var( --kendo-grid-sm-grouping-header-padding-y, #{$kendo-grid-sm-grouping-header-padding-x} ) !default;
-$kendo-grid-sm-cell-padding-x: var( --kendo-grid-sm-cell-padding-x, #{$kendo-grid-sm-padding-x} ) !default;
-$kendo-grid-sm-cell-padding-y: var( --kendo-grid-sm-cell-padding-y, #{$kendo-grid-sm-padding-y} ) !default;
-$kendo-grid-sm-filter-cell-padding-x: var( --kendo-grid-sm-filter-cell-padding-x, #{$kendo-grid-sm-padding-x} ) !default;
-$kendo-grid-sm-filter-cell-padding-y: var( --kendo-grid-sm-filter-cell-padding-y, #{k-spacing(2)} ) !default;
-$kendo-grid-sm-edit-cell-padding-x: var( --kendo-grid-sm-edit-cell-padding-x, #{$kendo-grid-sm-padding-x} ) !default;
-$kendo-grid-sm-edit-cell-padding-y: var( --kendo-grid-sm-edit-cell-padding-y, #{k-spacing(0.5)} ) !default;
-$kendo-grid-sm-group-dropclue-height: var( --kendo-grid-sm-group-dropclue-height, calc( #{$kendo-chip-sm-calc-size} + #{$kendo-grid-group-drop-hint-size}) ) !default;
-$kendo-grid-sm-selection-aggregates-padding-x: var( --kendo-grid-sm-selection-aggregates-padding-x, #{$kendo-grid-sm-padding-y} ) !default;
-$kendo-grid-sm-selection-aggregates-padding-y: var( --kendo-grid-sm-selection-aggregates-padding-y, #{$kendo-grid-sm-padding-y} ) !default;
+$kendo-grid-sm-header-padding-x: $kendo-grid-sm-padding-x !default;
+$kendo-grid-sm-header-padding-y: $kendo-grid-sm-padding-y !default;
+$kendo-grid-sm-grouping-header-padding-x: k-spacing(1.5) !default;
+$kendo-grid-sm-grouping-header-padding-y: $kendo-grid-sm-grouping-header-padding-x !default;
+$kendo-grid-sm-cell-padding-x: $kendo-grid-sm-padding-x !default;
+$kendo-grid-sm-cell-padding-y: $kendo-grid-sm-padding-y !default;
+$kendo-grid-sm-filter-cell-padding-x: $kendo-grid-sm-padding-x !default;
+$kendo-grid-sm-filter-cell-padding-y: k-spacing(2) !default;
+$kendo-grid-sm-edit-cell-padding-x: $kendo-grid-sm-padding-x !default;
+$kendo-grid-sm-edit-cell-padding-y: k-spacing(0.5) !default;
+$kendo-grid-sm-group-dropclue-height: calc( #{$kendo-chip-sm-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
+$kendo-grid-sm-selection-aggregates-padding-x: $kendo-grid-sm-padding-y !default;
+$kendo-grid-sm-selection-aggregates-padding-y: $kendo-grid-sm-padding-y !default;
 
-$kendo-grid-md-padding-x: var( --kendo-grid-md-padding-x, #{$kendo-grid-padding-x} ) !default;
-$kendo-grid-md-padding-y: var( --kendo-grid-md-padding-y, #{$kendo-grid-padding-y} ) !default;
-$kendo-grid-md-header-padding-x: var( --kendo-grid-md-header-padding-x, #{$kendo-grid-header-padding-x} ) !default;
-$kendo-grid-md-header-padding-y: var( --kendo-grid-md-header-padding-y, #{$kendo-grid-header-padding-y} ) !default;
-$kendo-grid-md-grouping-header-padding-x: var( --kendo-grid-md-grouping-header-padding-x, #{$kendo-grid-grouping-header-padding-x} ) !default;
-$kendo-grid-md-grouping-header-padding-y: var( --kendo-grid-md-grouping-header-padding-y, #{$kendo-grid-grouping-header-padding-y} ) !default;
-$kendo-grid-md-cell-padding-x: var( --kendo-grid-md-cell-padding-x, #{$kendo-grid-cell-padding-x} ) !default;
-$kendo-grid-md-cell-padding-y: var( --kendo-grid-md-cell-padding-y, #{$kendo-grid-cell-padding-y} ) !default;
-$kendo-grid-md-filter-cell-padding-x: var( --kendo-grid-md-filter-cell-padding-x, #{$kendo-grid-filter-cell-padding-x} ) !default;
-$kendo-grid-md-filter-cell-padding-y: var( --kendo-grid-md-filter-cell-padding-y, #{$kendo-grid-filter-cell-padding-y} ) !default;
-$kendo-grid-md-edit-cell-padding-x: var( --kendo-grid-md-edit-cell-padding-x, #{$kendo-grid-edit-cell-padding-x} ) !default;
-$kendo-grid-md-edit-cell-padding-y: var( --kendo-grid-md-edit-cell-padding-y, #{$kendo-grid-edit-cell-padding-y} ) !default;
-$kendo-grid-md-group-dropclue-height: var( --kendo-grid-md-group-dropclue-height, #{$kendo-grid-group-drop-hint-height} ) !default;
-$kendo-grid-md-selection-aggregates-padding-x: var( --kendo-grid-md-selection-aggregates-padding-x, #{k-spacing(2)} ) !default;
-$kendo-grid-md-selection-aggregates-padding-y: var( --kendo-grid-md-selection-aggregates-padding-y, #{$kendo-grid-md-selection-aggregates-padding-x} ) !default;
+$kendo-grid-md-padding-x: $kendo-grid-padding-x !default;
+$kendo-grid-md-padding-y: $kendo-grid-padding-y !default;
+$kendo-grid-md-header-padding-x: $kendo-grid-header-padding-x !default;
+$kendo-grid-md-header-padding-y: $kendo-grid-header-padding-y !default;
+$kendo-grid-md-grouping-header-padding-x: $kendo-grid-grouping-header-padding-x !default;
+$kendo-grid-md-grouping-header-padding-y: $kendo-grid-grouping-header-padding-y !default;
+$kendo-grid-md-cell-padding-x: $kendo-grid-cell-padding-x !default;
+$kendo-grid-md-cell-padding-y: $kendo-grid-cell-padding-y !default;
+$kendo-grid-md-filter-cell-padding-x: $kendo-grid-filter-cell-padding-x !default;
+$kendo-grid-md-filter-cell-padding-y: $kendo-grid-filter-cell-padding-y !default;
+$kendo-grid-md-edit-cell-padding-x: $kendo-grid-edit-cell-padding-x !default;
+$kendo-grid-md-edit-cell-padding-y: $kendo-grid-edit-cell-padding-y !default;
+$kendo-grid-md-group-dropclue-height: $kendo-grid-group-drop-hint-height !default;
+$kendo-grid-md-selection-aggregates-padding-x: k-spacing(2) !default;
+$kendo-grid-md-selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-x !default;
 
 
 // Kendo Grid sizes
@@ -297,10 +297,10 @@ $kendo-grid-toolbar-border-width: var( --kendo-grid-toolbar-border-width, #{$ken
 
 /// The vertical border width of the Grid cell.
 /// @group grid
-$kendo-grid-cell-border-width-y: var( --kendo-grid-cell-border-width-y, #{$kendo-grid-border-width} ) !default;
+$kendo-grid-cell-border-width-y: $kendo-grid-border-width !default;
 /// The horizontal border width of the Grid cell.
 /// @group grid
-$kendo-grid-cell-border-width-x: var( --kendo-grid-cell-border-width-x, 0px ) !default;
+$kendo-grid-cell-border-width-x: 0px !default;
 /// The font size of the Grid sort index.
 /// @group grid
 $kendo-grid-sort-index-font-size: var( --kendo-grid-sort-index-font-size, var(--kendo-font-size-sm, inherit) ) !default;

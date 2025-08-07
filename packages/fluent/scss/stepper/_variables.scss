@@ -49,7 +49,7 @@ $kendo-stepper-inline-content-padding-y: var( --kendo-stepper-inline-content-pad
 $kendo-stepper-indicator-width: var( --kendo-stepper-indicator-width, k-spacing(7.5) ) !default;
 /// The height of the Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-height: var( --kendo-stepper-indicator-height, $kendo-stepper-indicator-width ) !default;
+$kendo-stepper-indicator-height: var( --kendo-stepper-indicator-height, k-spacing(7.5) ) !default;
 /// The border width of the Stepper indicator.
 /// @group stepper
 $kendo-stepper-indicator-border-width: var( --kendo-stepper-indicator-border-width, 1px ) !default;
@@ -68,7 +68,7 @@ $kendo-stepper-indicator-focus-size: var( --kendo-stepper-indicator-focus-size, 
 $kendo-stepper-indicator-focus-offset: 3px !default;
 /// The calculated offset of the Stepper's focused indicator.
 /// @group stepper
-$kendo-stepper-indicator-focus-calc-offset: var( --kendo-stepper-indicator-focus-calc-offset, calc( #{$kendo-stepper-indicator-focus-border-width} + #{$kendo-stepper-indicator-focus-offset} ) ) !default;
+$kendo-stepper-indicator-focus-calc-offset: calc( #{$kendo-stepper-indicator-focus-border-width} + #{$kendo-stepper-indicator-focus-offset} )  !default;
 
 /// The background color of the Stepper indicator.
 /// @group stepper

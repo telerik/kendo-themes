@@ -83,10 +83,10 @@ $kendo-form-hint-text: var(--kendo-form-hint-text, #{k-color(subtle)}) !default;
 $kendo-form-sm-rows-spacing: var(--kendo-form-sm-rows-spacing, #{k-spacing(3)}) !default;
 /// The row spacing of the medium Form.
 /// @group form
-$kendo-form-md-rows-spacing: var(--kendo-form-md-rows-spacing, #{$kendo-form-sm-rows-spacing}) !default;
+$kendo-form-md-rows-spacing: var(--kendo-form-md-rows-spacing, #{k-spacing(3)}) !default;
 /// The row spacing of the large Form.
 /// @group form
-$kendo-form-lg-rows-spacing: var(--kendo-form-lg-rows-spacing, #{$kendo-form-sm-rows-spacing}) !default;
+$kendo-form-lg-rows-spacing: var(--kendo-form-lg-rows-spacing, #{k-spacing(3)}) !default;
 
 /// The margin of the Form separator.
 /// @group form

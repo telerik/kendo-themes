@@ -42,7 +42,7 @@ $kendo-panelbar-header-padding-y: var( --kendo-panelbar-header-padding-y, #{k-sp
 
 /// The horizontal padding of the PanelBar items.
 /// @group panelbar
-$kendo-panelbar-item-padding-x-start: var( --kendo-panelbar-item-padding-x-start, calc( #{$kendo-panelbar-icon-spacing} * 2 + var( --kendo-icon-size, 1rem ) ) ) !default;
+$kendo-panelbar-item-padding-x-start: calc( #{$kendo-panelbar-icon-spacing} * 2 + var( --kendo-icon-size, 1rem ) ) !default;
 
 /// The horizontal end padding of the PanelBar items.
 /// @group panelbar

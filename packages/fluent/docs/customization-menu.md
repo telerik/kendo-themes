@@ -388,10 +388,10 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-padding-x</td>
+    <td>$kendo-menu-popup-sm-item-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-menu-popup-item-padding-x, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var( --kendo-menu-popup-sm-item-padding-x, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Menu item in popup.</div></div>
@@ -409,9 +409,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-sm-item-padding-end</td>
-    <td>String</td>
-    <td><code>var( --kendo-menu-popup-sm-item-padding-end, calc( calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) ) )</code></td>
-    <td><code>var(--kendo-menu-popup-sm-item-padding-end, calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))) * 2 + var(--kendo-icon-size, 1rem)))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) )</code></td>
+    <td><code>calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem)) * 2 + var(--kendo-icon-size, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the Menu item in popup.</div></div>
@@ -420,8 +420,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-sm-item-icon-margin-start</td>
     <td>String</td>
-    <td><code>var( --kendo-menu-popup-sm-item-icon-margin-start, #{k-spacing(0)} )</code></td>
-    <td><code>var(--kendo-menu-popup-sm-item-icon-margin-start, var(--kendo-spacing-0, 0px))</code></td>
+    <td><code>k-spacing(0)</code></td>
+    <td><code>var(--kendo-spacing-0, 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The start margin of the Menu item expand icon.</div></div>
@@ -429,9 +429,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-sm-item-icon-margin-end</td>
-    <td>String</td>
-    <td><code>var( --kendo-menu-popup-sm-item-icon-margin-end, calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-sm-item-padding-x}) ) )</code></td>
-    <td><code>var(--kendo-menu-popup-sm-item-icon-margin-end, calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))))))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-sm-item-padding-x}) )</code></td>
+    <td><code>calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the Menu item expand icon.</div></div>
@@ -479,7 +479,7 @@ The following table lists the available variables for customization.
         arrow-margin-inline-end: $kendo-menu-popup-lg-item-icon-margin-end
     )
 )</code></td>
-    <td><ul><li>sm: "group-font-size":"var(--kendo-menu-popup-sm-font-size, var(--kendo-font-size, inherit))","group-line-height":"var(--kendo-menu-popup-sm-line-height, var(--kendo-line-height, 30px))","link-padding-x":"var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem)))","link-padding-y":"var(--kendo-menu-popup-sm-item-padding-y, var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1\\.5, 0.375rem)))","link-padding-inline-end":"var(--kendo-menu-popup-sm-item-padding-end, calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))) * 2 + var(--kendo-icon-size, 1rem)))","arrow-margin-inline-start":"var(--kendo-menu-popup-sm-item-icon-margin-start, var(--kendo-spacing-0, 0px))","arrow-margin-inline-end":"var(--kendo-menu-popup-sm-item-icon-margin-end, calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))))))"</li><li>md: "group-font-size":"var(--kendo-menu-popup-md-font-size, var(--kendo-font-size, inherit))","group-line-height":"var(--kendo-menu-popup-md-line-height, var(--kendo-line-height, 30px))","link-padding-x":"var(--kendo-menu-popup-md-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem)))","link-padding-y":"var(--kendo-menu-popup-md-item-padding-y, var(--kendo-list-md-item-padding-y, var(--kendo-spacing-2, 0.5rem)))","link-padding-inline-end":"var(--kendo-menu-popup-md-item-padding-end, calc(var(--kendo-menu-popup-md-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))) * 2 + var(--kendo-icon-size, 1rem)))","arrow-margin-inline-start":"var(--kendo-menu-popup-md-item-icon-margin-start, var(--kendo-spacing-0, 0px))","arrow-margin-inline-end":"var(--kendo-menu-popup-md-item-icon-margin-end, calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-md-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))))))"</li><li>lg: "group-font-size":"var(--kendo-menu-popup-lg-font-size, var(--kendo-font-size-lg, inherit))","group-line-height":"var(--kendo-menu-popup-lg-line-height, var(--kendo-line-height, 30px))","link-padding-x":"var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem)))","link-padding-y":"var(--kendo-menu-popup-lg-item-padding-y, var(--kendo-list-lg-item-padding-y, var(--kendo-spacing-2\\.5, 0.625rem)))","link-padding-inline-end":"var(--kendo-menu-popup-lg-item-padding-end, calc(var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))) * 2 + var(--kendo-icon-size, 1rem)))","arrow-margin-inline-start":"var(--kendo-menu-popup-lg-item-icon-margin-start, var(--kendo-spacing-0, 0px))","arrow-margin-inline-end":"var(--kendo-menu-popup-lg-item-icon-margin-end, calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-menu-popup-item-padding-x, var(--kendo-spacing-2, 0.5rem))))))"</li></ul></td>
+    <td><ul><li>sm: "group-font-size":"var(--kendo-menu-popup-sm-font-size, var(--kendo-font-size, inherit))","group-line-height":"var(--kendo-menu-popup-sm-line-height, var(--kendo-line-height, 30px))","link-padding-x":"var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem))","link-padding-y":"var(--kendo-menu-popup-sm-item-padding-y, var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1\\.5, 0.375rem)))","link-padding-inline-end":"calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem)) * 2 + var(--kendo-icon-size, 1rem))","arrow-margin-inline-start":"var(--kendo-spacing-0, 0px)","arrow-margin-inline-end":"calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem))))"</li><li>md: "group-font-size":"var(--kendo-menu-popup-md-font-size, var(--kendo-font-size, inherit))","group-line-height":"var(--kendo-menu-popup-md-line-height, var(--kendo-line-height, 30px))","link-padding-x":"var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2, 0.5rem))","link-padding-y":"var(--kendo-menu-popup-md-item-padding-y, var(--kendo-list-md-item-padding-y, var(--kendo-spacing-2, 0.5rem)))","link-padding-inline-end":"calc(var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2, 0.5rem)) * 2 + var(--kendo-icon-size, 1rem))","arrow-margin-inline-start":"var(--kendo-spacing-0, 0px)","arrow-margin-inline-end":"calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2, 0.5rem))))"</li><li>lg: "group-font-size":"var(--kendo-menu-popup-lg-font-size, var(--kendo-font-size-lg, inherit))","group-line-height":"var(--kendo-menu-popup-lg-line-height, var(--kendo-line-height, 30px))","link-padding-x":"var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2, 0.5rem))","link-padding-y":"var(--kendo-menu-popup-lg-item-padding-y, var(--kendo-list-lg-item-padding-y, var(--kendo-spacing-2\\.5, 0.625rem)))","link-padding-inline-end":"calc(var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2, 0.5rem)) * 2 + var(--kendo-icon-size, 1rem))","arrow-margin-inline-start":"var(--kendo-spacing-0, 0px)","arrow-margin-inline-end":"calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2, 0.5rem))))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Menu.</div></div>
