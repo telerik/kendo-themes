@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "css-loader": "latest",
-    "sass-embedded": "latest",
+    "sass": "latest",
     "style-loader": "latest"
   }
 }

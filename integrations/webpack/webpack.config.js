@@ -37,7 +37,7 @@ module.exports = {
                     {
                         loader: 'sass-loader',
                         options: {
-                            implementation: require('sass-embedded'),
+                            implementation: require('sass'),
                             sassOptions: {
                                 precision: 10,
                                 includePaths: [ '../../node_modules' ]
