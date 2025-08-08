@@ -10,7 +10,9 @@
     "build:vite": "npm run build --prefix vite",
     "install:webpack": "cd ./webpack && npm install",
     "build:webpack": "npm run build --prefix webpack",
-    "prebuild": "npm run install:gulp && npm run install:parcel && npm run install:vite && npm run install:webpack",
-    "build": "npm run build:gulp && npm run build:parcel && npm run build:vite && npm run build:webpack"
+    "install:esbuild": "cd ./esbuild && npm install",
+    "build:esbuild": "npm run build --prefix esbuild",
+    "prebuild": "npm run install:gulp && npm run install:parcel && npm run install:vite && npm run install:webpack && npm run install:esbuild",
+    "build": "npm run build:gulp && npm run build:parcel && npm run build:vite && npm run build:webpack && npm run build:esbuild"
   }
 }
