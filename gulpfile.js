@@ -7,7 +7,7 @@ const gulp = require("gulp");
 // Settings
 const paths = {
     sass: {
-        themes: "packages/!(html|nouvelle)",
+        themes: "packages/!(html)",
         theme: "scss/all.scss",
         swatches: "lib/swatches/*.json",
         standalone: "scss/**/_index.scss",
