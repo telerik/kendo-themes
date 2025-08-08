@@ -66,3 +66,27 @@ $kendo-bubble-expandable-icon-padding-x: k-spacing(2.5) !default;
 /// The vertical padding of the expandable Bubble icon.
 /// @group bubble
 $kendo-bubble-expandable-icon-padding-y: k-spacing(2.5) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/bubble/_variables.scss" with (
+    $kendo-bubble-border-radius: $kendo-bubble-border-radius,
+    $kendo-bubble-border-radius-sm: $kendo-bubble-border-radius-sm,
+    $kendo-bubble-padding-y: $kendo-bubble-padding-y,
+    $kendo-bubble-padding-x: $kendo-bubble-padding-x,
+    $kendo-bubble-border-width: $kendo-bubble-border-width,
+    $kendo-bubble-border-style: $kendo-bubble-border-style,
+    $kendo-bubble-line-height: $kendo-bubble-line-height,
+    $kendo-bubble-text: $kendo-bubble-text,
+    $kendo-bubble-bg: $kendo-bubble-bg,
+    $kendo-bubble-border: $kendo-bubble-border,
+    $kendo-bubble-shadow: $kendo-bubble-shadow,
+    $kendo-bubble-hover-bg: $kendo-bubble-hover-bg,
+    $kendo-bubble-hover-border: $kendo-bubble-hover-border,
+    $kendo-bubble-active-bg: $kendo-bubble-active-bg,
+    $kendo-bubble-active-border: $kendo-bubble-active-border,
+    $kendo-bubble-focus-bg: $kendo-bubble-focus-bg,
+    $kendo-bubble-focus-border: $kendo-bubble-focus-border,
+    $kendo-bubble-focus-shadow: $kendo-bubble-focus-shadow,
+    $kendo-bubble-expandable-spacing: $kendo-bubble-expandable-spacing,
+    $kendo-bubble-expandable-icon-padding-x: $kendo-bubble-expandable-icon-padding-x,
+    $kendo-bubble-expandable-icon-padding-y: $kendo-bubble-expandable-icon-padding-y
+);
