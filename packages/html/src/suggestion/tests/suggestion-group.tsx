@@ -22,7 +22,7 @@ export default () => (
                             <Suggestion themeColor={themeColor} text="Hover" hover />
                             <Suggestion themeColor={themeColor} text="Focus" focus />
                             <Suggestion themeColor={themeColor} text="Active" active />
-                            <Suggestion themeColor={themeColor} text="Suggestion with different length" />
+                            <Suggestion themeColor={themeColor} text="Suggestion with very very very very very very very very very very very very very very very long text" />
                         </SuggestionGroupNormal>
                     </section>
                     <section>
@@ -31,7 +31,7 @@ export default () => (
                             <Suggestion themeColor={themeColor} text="Hover" hover />
                             <Suggestion themeColor={themeColor} text="Focus" focus />
                             <Suggestion themeColor={themeColor} text="Active" active />
-                            <Suggestion themeColor={themeColor} text="Suggestion with different length" />
+                            <Suggestion themeColor={themeColor} text="Suggestion with very very very very very very very very very very very very very very very long text" />
                         </SuggestionGroupWrap>
                     </section>
                 </>
