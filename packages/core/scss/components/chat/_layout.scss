@@ -204,6 +204,10 @@
         }
     }
 
+    .k-chat-bubble:has(.k-typing-indicator) {
+        pointer-events: none;
+    }
+
     // Message meta
     .k-message-time,
     .k-message-status {
