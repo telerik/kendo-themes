@@ -24,7 +24,7 @@ export default () =>(
                         <Suggestion themeColor="primary" text="Hovered" hover />
                         <Suggestion themeColor="primary" text="Focused" focus />
                         <Suggestion themeColor="primary" text="Active" active />
-                        <Suggestion themeColor="primary" text="Reply with different length" />
+                        <Suggestion themeColor="primary" text="Suggestion with very very very very very very very very very very very very very very very long text" />
                     </SuggestionGroup>
                 </ChatNormal>
             </section>
@@ -39,7 +39,7 @@ export default () =>(
                         <Suggestion themeColor="primary" text="Hovered" hover />
                         <Suggestion themeColor="primary" text="Focused" focus />
                         <Suggestion themeColor="primary" text="Active" active />
-                        <Suggestion themeColor="primary" text="Reply with different length" />
+                        <Suggestion themeColor="primary" text="Suggestion with very very very very very very very very very very very very very very very long text" />
                     </SuggestionGroup>
                 </ChatNormal>
             </section>

@@ -22,7 +22,7 @@ export default () =>(
                         <Suggestion text="Hover" hover />
                         <Suggestion text="Focus" focus />
                         <Suggestion text="Active" active />
-                        <Suggestion text="Suggestion with different length" />
+                        <Suggestion text="Suggestion with very very very very very very very very very very very very very very very long text" />
                     </SuggestionGroup>
                     }>
                     <ChatMessageGroup avatar={null}>
@@ -37,7 +37,7 @@ export default () =>(
                         <Suggestion text="Hover" hover />
                         <Suggestion text="Focus" focus />
                         <Suggestion text="Active" active />
-                        <Suggestion text="Suggestion with different length" />
+                        <Suggestion text="Suggestion with very very very very very very very very very very very very very very very long text" />
                     </SuggestionGroup>
                     }>
                     <ChatMessageGroup avatar={null}>
