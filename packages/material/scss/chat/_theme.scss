@@ -1,18 +1,37 @@
+@use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
+@use "../bubble/_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/chat/_theme.scss" as *;
 
 
 @mixin kendo-chat--theme() {
     @include kendo-chat--theme-base();
 
-    .k-chat .k-quick-reply {
-        &:focus,
-        &.k-focus {
-            color: k-color(primary-on-surface);
+    .k-chat {
+
+        .k-chat-download-button {
+            color: inherit;
+        }
+
+        .k-chat-file-size,
+        .k-chat-file-status {
+            font-size: var( --kendo-font-size-sm, inherit);
         }
     }
 
-    .k-message-box {
-        background-color: k-color(surface-alt)
+    .k-message-group-sender .k-chat-bubble {
+        &:focus,
+        &.k-focus {
+            outline-color: $kendo-chat-alt-bubble-focus-border;
+            box-shadow: inset 0 0 0 calc( #{$kendo-bubble-border-width} * 3 ) k-color(app-surface),
+                        inset 0 0 0 calc( #{$kendo-bubble-border-width} * 5 ) $kendo-chat-alt-bubble-focus-border;
+
+            &:hover,
+            &.k-hover {
+                box-shadow: inset 0 0 0 calc( #{$kendo-bubble-border-width} * 3 ) k-color(app-surface),
+                            inset 0 0 0 calc( #{$kendo-bubble-border-width} * 5 ) $kendo-chat-alt-bubble-hover-border;
+            }
+        }
     }
+
 }

@@ -9,18 +9,25 @@ $kendo-chat-font-family: null !default;
 $kendo-chat-font-size: null !default;
 $kendo-chat-line-height: null !default;
 
-$kendo-chat-item-spacing-x: null !default;
 $kendo-chat-item-spacing-y: null !default;
+
+$kendo-chat-message-spacing: null !default;
+$kendo-chat-message-max-width: null !default;
+$kendo-chat-message-gap: null !default;
 
 $kendo-chat-message-list-padding-x: null !default;
 $kendo-chat-message-list-padding-y: null !default;
 $kendo-chat-message-list-spacing: null !default;
+
+$kendo-chat-message-status-gap: null !default;
 
 $kendo-chat-timestamp-font-size: null !default;
 $kendo-chat-timestamp-line-height: null !default;
 $kendo-chat-timestamp-transform: null !default;
 $kendo-chat-timestamp-text: null !default;
 $kendo-chat-timestamp-bg: null !default;
+$kendo-chat-timestamp-separator-bg: null !default;
+$kendo-chat-timestamp-separator-spacing: null !default;
 
 $kendo-chat-message-meta-font-size: null !default;
 $kendo-chat-message-meta-line-height: null !default;
@@ -28,58 +35,53 @@ $kendo-chat-message-meta-line-height: null !default;
 $kendo-chat-author-font-size: null !default;
 $kendo-chat-author-line-height: null !default;
 
-$kendo-chat-bubble-padding-x: null !default;
-$kendo-chat-bubble-padding-y: null !default;
+$kendo-chat-status-text: null !default;
+
 $kendo-chat-bubble-spacing: null !default;
-$kendo-chat-bubble-line-height: null !default;
 
-$kendo-chat-bubble-border-radius: null !default;
-$kendo-chat-bubble-border-radius-sm: null !default;
-
-$kendo-chat-avatar-size: null !default;
-$kendo-chat-avatar-spacing: null !default;
-
-$kendo-chat-toolbar-padding-x: null !default;
-$kendo-chat-toolbar-padding-y: null !default;
 $kendo-chat-toolbar-bg: null !default;
 $kendo-chat-toolbar-text: null !default;
 $kendo-chat-toolbar-border: null !default;
-
-$kendo-chat-quick-reply-padding-x: null !default;
-$kendo-chat-quick-reply-padding-y: null !default;
-$kendo-chat-quick-reply-spacing: null !default;
-$kendo-chat-quick-reply-line-height: null !default;
-
 
 $kendo-chat-bg: null !default;
 $kendo-chat-text: null !default;
 $kendo-chat-border: null !default;
 
-$kendo-chat-bubble-bg: null !default;
-$kendo-chat-bubble-text: null !default;
-$kendo-chat-bubble-border: null !default;
-$kendo-chat-bubble-shadow: null !default;
-$kendo-chat-bubble-hover-shadow: null !default;
-$kendo-chat-bubble-selected-shadow: null !default;
-
 $kendo-chat-alt-bubble-bg: null !default;
 $kendo-chat-alt-bubble-text: null !default;
 $kendo-chat-alt-bubble-border: null !default;
 $kendo-chat-alt-bubble-shadow: null !default;
-$kendo-chat-alt-bubble-hover-shadow: null !default;
-$kendo-chat-alt-bubble-selected-shadow: null !default;
+$kendo-chat-alt-bubble-hover-bg: null !default;
+$kendo-chat-alt-bubble-hover-border: null !default;
+$kendo-chat-alt-bubble-active-bg: null !default;
+$kendo-chat-alt-bubble-active-border: null !default;
+$kendo-chat-alt-bubble-focus-bg: null !default;
+$kendo-chat-alt-bubble-focus-border: null !default;
+$kendo-chat-alt-bubble-focus-shadow: null !default;
 
-$kendo-chat-quick-reply-bg: null !default;
-$kendo-chat-quick-reply-text: null !default;
-$kendo-chat-quick-reply-border: null !default;
+$kendo-chat-typing-indicator-text: null !default;
 
-$kendo-chat-quick-reply-hover-bg: null !default;
-$kendo-chat-quick-reply-hover-text: null !default;
-$kendo-chat-quick-reply-hover-border: null !default;
+$kendo-chat-file-width: null !default;
+$kendo-chat-file-padding-x: null !default;
+$kendo-chat-file-padding-y: null !default;
+$kendo-chat-file-gap: null !default;
+$kendo-chat-file-border-width: null !default;
+$kendo-chat-file-border-style: null !default;
+$kendo-chat-file-bg: null !default;
+$kendo-chat-file-text: null !default;
+$kendo-chat-file-border: null !default;
+$kendo-chat-file-border-radius: null !default;
+$kendo-chat-file-download-padding-x: null !default;
+$kendo-chat-file-download-padding-y: null !default;
 
-$kendo-chat-quick-reply-shadow-blur: null !default;
-$kendo-chat-quick-reply-shadow-spread: null !default;
-$kendo-chat-quick-reply-shadow-opacity: null !default;
+$kendo-chat-message-pinned-border-width: null !default;
+$kendo-chat-message-pinned-border-style: null !default;
+$kendo-chat-message-pinned-border-color: null !default;
 
-$kendo-chat-typing-indicator-dot-size: null !default;
-$kendo-chat-typing-indicator-dot-spacing: null !default;
+$kendo-chat-message-reference-padding-x: null !default;
+$kendo-chat-message-reference-padding-y: null !default;
+
+$kendo-chat-message-reference-bg: null !default;
+$kendo-chat-message-reference-text: null !default;
+$kendo-chat-message-reference-marker-bg: null !default;
+$kendo-chat-message-reference-marker-alt-bg: null !default;

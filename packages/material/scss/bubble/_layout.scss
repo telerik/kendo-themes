@@ -1,0 +1,18 @@
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+@use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/bubble/_layout.scss" as *;
+
+
+@mixin kendo-bubble--layout() {
+    @include kendo-bubble--layout-base();
+
+    .k-bubble {
+        &:focus,
+        &.k-focus {
+            outline-style: solid;
+            outline-width: calc( (#{$kendo-bubble-border-width} * 2 ));
+            outline-offset: calc( (#{$kendo-bubble-border-width} * 2 ) * -1);
+        }
+    }
+}

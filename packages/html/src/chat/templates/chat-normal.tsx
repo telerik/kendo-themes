@@ -5,16 +5,16 @@ export const ChatNormal = (props) => (
         <>
             <div className="k-timestamp">Day, Month 7, 2023</div>
             <ChatMessageGroup>
-                <ChatMessage className="k-only" />
+                <ChatMessage />
             </ChatMessageGroup>
-            <ChatMessageGroup alt>
-                <ChatMessage className="k-only" />
+            <ChatMessageGroup type="sender">
+                <ChatMessage />
             </ChatMessageGroup>
             <ChatMessageGroup>
-                <ChatMessage className="k-only" text="Very long message text that tests message overflowing behavior. Very long message text that tests message overflowing behavior."/>
+                <ChatMessage text="Very long message text that tests message overflowing behavior. Very long message text that tests message overflowing behavior."/>
             </ChatMessageGroup>
-            <ChatMessageGroup alt>
-                <ChatMessage className="k-only" text="Unusually_long_word_that_tests_word_break_behavior__unusually_long_word_that_tests_word_break_behavior"/>
+            <ChatMessageGroup type="sender">
+                <ChatMessage text="Unusually_long_word_that_tests_word_break_behavior__unusually_long_word_that_tests_word_break_behavior"/>
             </ChatMessageGroup>
         </>
     }

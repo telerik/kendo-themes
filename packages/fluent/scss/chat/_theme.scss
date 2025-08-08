@@ -1,28 +1,23 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "../bubble/_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/chat/_theme.scss" as *;
 
 @mixin kendo-chat--theme() {
     @include kendo-chat--theme-base();
 
-    .k-chat {
-        .k-chat-bubble {
-            transition: $kendo-chat-transition;
+    // Bubbles
+    .k-message-group-sender .k-chat-bubble {
 
-            a { color: $kendo-chat-link-text };
-            a:hover { color: $kendo-chat-link-hover-text };
+        &:focus,
+        &.k-focus {
+            outline-color: $kendo-chat-alt-bubble-focus-border;
+            box-shadow: inset 0 0 0 calc( #{$kendo-bubble-border-width} * 2 ) k-color(app-surface);
         }
 
-        .k-quick-reply {
-            &:focus,
-            &.k-focus {
-                box-shadow: none;
-            }
-
-            &:focus::after,
-            &.k-focus::after {
-                outline-color: $kendo-chat-quick-reply-focus-outline-color;
-            }
+        &:hover,
+        &.k-hover {
+            @include fill( $bg: $kendo-chat-alt-bubble-hover-bg, $border: $kendo-chat-alt-bubble-hover-border );
         }
     }
 }

@@ -1,38 +1,22 @@
+@use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
-@use "../button/_variables.scss" as *;
+@use "../bubble/_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/chat/_layout.scss" as *;
 
 
 @mixin kendo-chat--layout() {
     @include kendo-chat--layout-base();
 
-    .k-chat {
-        .k-quick-reply {
-            position: relative;
+    .k-chat-file:has( + .k-chat-file) {
+        padding-bottom: calc( #{$kendo-chat-file-padding-y} / 2 );
+    }
 
-            &::before {
-                @include border-radius( inherit );
-                content: "";
-                background: currentColor;
-                opacity: 0;
-                display: block;
-                pointer-events: none;
-                position: absolute;
-                left: -$kendo-button-border-width;
-                right: -$kendo-button-border-width;
-                top: -$kendo-button-border-width;
-                bottom: -$kendo-button-border-width;
-                z-index: 0;
-                transition: opacity .2s ease-in-out;
-            }
-
-            // Focused state
-            &:focus,
-            &.k-focus {
-                &::before {
-                    opacity: $kendo-flat-button-focus-opacity;
-                }
-            }
+    .k-message-group-sender .k-chat-bubble {
+        &:focus,
+        &.k-focus {
+            outline-style: solid;
+            outline-width: calc( (#{$kendo-bubble-border-width} * 2 ));
+            outline-offset: calc( (#{$kendo-bubble-border-width} * 2 ) * -1);
         }
     }
 }
