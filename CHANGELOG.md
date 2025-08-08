@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.3.2-dev.0](https://github.com/telerik/kendo-themes/compare/v11.3.1...v11.3.2-dev.0) (2025-08-08)
+
+
+### Bug Fixes
+
+* **fluent:** grid table cells in fluent should wrap ([3e9c61f](https://github.com/telerik/kendo-themes/commit/3e9c61f404eac565a6c9dd96e0376fdebf5f943f))
+* **grid:** prevent grouping icon from shrinking ([44f3dfb](https://github.com/telerik/kendo-themes/commit/44f3dfbefb5ab495742b795bf6e3c0246cb0f6a6))
+* **prompt:** make suggestion text wrap ([f07e279](https://github.com/telerik/kendo-themes/commit/f07e279d2ad7a2ed57d910ed41068824021d116c))
+* **table:** do not set cell padding if size is not set ([eb0aaf0](https://github.com/telerik/kendo-themes/commit/eb0aaf0d198cdca7059013bb974e6545f64209e9))
+
+
+
+
+
 ## [11.3.1](https://github.com/telerik/kendo-themes/compare/v11.3.1-dev.0...v11.3.1) (2025-08-07)
 
 **Note:** Version bump only for package kendo-themes.repo
