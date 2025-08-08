@@ -226,13 +226,6 @@ $kendo-chat-message-reference-marker-bg: k-color(base-emphasis) !default;
 /// @group chat
 $kendo-chat-message-reference-marker-alt-bg: k-color(primary-emphasis) !default;
 
-/// The size of the Chat typing indicator dot.
-/// @group chat
-$kendo-chat-typing-indicator-dot-size: 8px !default;
-/// The spacing of the Chat typing indicator dot.
-/// @group chat
-$kendo-chat-typing-indicator-dot-spacing: 5px !default;
-
 @forward "@progress/kendo-theme-core/scss/components/chat/_variables.scss" with (
     $kendo-chat-padding-x: $kendo-chat-padding-x,
     $kendo-chat-padding-y: $kendo-chat-padding-y,
