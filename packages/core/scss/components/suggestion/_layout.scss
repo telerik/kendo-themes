@@ -31,6 +31,7 @@
     }
     .k-suggestion {
         @include border-radius( $kendo-suggestion-border-radius );
+        max-width: 100%;
         padding-block: $kendo-suggestion-padding-y;
         padding-inline: $kendo-suggestion-padding-x;
         box-sizing: border-box;
