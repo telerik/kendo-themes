@@ -1,9 +1,0 @@
-@mixin kendo-time-picker--layout() {
-
-    // Time picker
-    .k-time-picker {}
-
-    // Legacy aliases
-    .k-timepicker { @extend .k-time-picker !optional; }
-
-}
