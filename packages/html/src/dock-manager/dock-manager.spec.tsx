@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { SplitterPane, SplitterSplitbar } from '../splitter';
 import { DockManagerToolbar } from './dock-manager-toolbar';
 
+import { KendoComponent } from '../_types/component';
 export const DOCKMANAGER_CLASSNAME = `k-dock-manager`;
 
 const states = [];
@@ -15,7 +16,7 @@ export type KendoDockManagerProps = {
     unpinnedPane?: React.JSX.Element;
 };
 
-export const DockManager = (
+export const DockManager: KendoComponent<KendoDockManagerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDockManagerProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, Size } from '../misc';
 import { CalendarView, CalendarHeader, CalendarFooter } from '.';
 
+import { KendoComponent } from '../_types/component';
 const CALENDAR_CLASSNAME = `k-calendar`;
 
 const states = [];
@@ -33,7 +34,7 @@ const defaultOptions = {
     calendarTitleText: 'October 2021',
 } as const;
 
-export const Calendar = (
+export const Calendar: KendoComponent<KendoCalendarProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoCalendarProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

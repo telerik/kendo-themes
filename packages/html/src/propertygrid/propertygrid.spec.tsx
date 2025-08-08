@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { KendoGridProps } from '../grid';
 import { TreeList } from '../treelist';
 
+import { KendoComponent } from '../_types/component';
 const PROPERTYGRID_CLASSNAME = 'k-property-grid';
 
 const states = [];
@@ -10,7 +11,7 @@ const options = {};
 
 const defaultOptions = {};
 
-export const PropertyGrid = (
+export const PropertyGrid: KendoComponent<KendoGridProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGridProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => (

@@ -1,9 +1,10 @@
 import { classNames } from '../misc';
 import { Table, KendoTableOptions } from '../table';
 
+import { KendoComponent } from '../_types/component';
 export const GRIDFOOTERTABLE_CLASSNAME = `k-grid-footer-table`;
 
-export const GridFooterTable = (
+export const GridFooterTable: KendoComponent<KendoTableOptions & React.HTMLAttributes<HTMLTableElement>> = (
     props: KendoTableOptions &
         React.HTMLAttributes<HTMLTableElement>
 ) => (
@@ -18,3 +19,5 @@ export const GridFooterTable = (
         {props.children}
     </Table>
 );
+
+GridFooterTable.className = GRIDFOOTERTABLE_CLASSNAME;

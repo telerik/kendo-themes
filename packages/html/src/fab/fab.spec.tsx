@@ -1,6 +1,7 @@
 import { Icon } from '../icon';
 import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const FLOATINGACTIONBUTTON_CLASSNAME = `k-fab`;
 
 const states = [
@@ -53,7 +54,7 @@ const defaultOptions = {
     type: 'button',
 } as const;
 
-export const FloatingActionButton = (
+export const FloatingActionButton: KendoComponent<KendoFloatingActionButtonProps & KendoFloatingActionButtonState & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoFloatingActionButtonProps &
         KendoFloatingActionButtonState &
         React.HTMLAttributes<HTMLButtonElement>

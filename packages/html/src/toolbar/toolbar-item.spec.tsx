@@ -1,5 +1,6 @@
 import { classNames, stateClassNames, States } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const TOOLBARITEM_CLASSNAME = `k-toolbar-item`;
 
 const states = [
@@ -12,7 +13,7 @@ const defaultOptions = {};
 
 export type KendoToolbarItemState = { [K in (typeof states)[number]]?: boolean };
 
-export const ToolbarItem = (
+export const ToolbarItem: KendoComponent<KendoToolbarItemState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoToolbarItemState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

@@ -2,6 +2,7 @@ import { Navigator, ZoomControl } from '.';
 import { Icon } from '../icon';
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const MAP_CLASSNAME = `k-map`;
 
 const states = [];
@@ -32,7 +33,7 @@ const defaultOptions = {
     verticalScrollbarStyle: { transformOrigin: "left top 0px", height: "239px" }
 };
 
-export const Map = (
+export const Map: KendoComponent<KendoMapProps & KendoMapState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoMapProps &
         KendoMapState &
         React.HTMLAttributes<HTMLDivElement>

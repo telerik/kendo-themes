@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, Size, FillMode } from '../misc';
 import { Popup } from '../popup';
 
+import { KendoComponent } from '../_types/component';
 export const TOOLBARPOPUP_CLASSNAME = `k-toolbar-popup`;
 
 const states = [];
@@ -24,7 +25,7 @@ const defaultOptions = {
     fillMode: FillMode.solid
 };
 
-export const ToolbarPopup = (
+export const ToolbarPopup: KendoComponent<KendoToolbarPopupProps & React.HTMLAttributes<HTMLElement>> = (
     props: KendoToolbarPopupProps &
     React.HTMLAttributes<HTMLElement>
 ) => {

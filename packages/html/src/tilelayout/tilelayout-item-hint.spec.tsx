@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { KendoComponent } from '../_types/component';
 export const TILELAYOUTITEMHINT_CLASSNAME = `k-layout-item-hint`;
 
 const states = [];
@@ -12,7 +13,7 @@ export type KendoTileLayoutItemHintProps = {
 
 const defaultOptions = {};
 
-export const TileLayoutItemHint = (
+export const TileLayoutItemHint: KendoComponent<KendoTileLayoutItemHintProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTileLayoutItemHintProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const { style } = props;

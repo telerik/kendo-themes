@@ -1,6 +1,7 @@
 import { classNames, stateClassNames, States } from '../misc';
 import { Icon } from '../icon';
 
+import { KendoComponent } from '../_types/component';
 export const COLUMNMENUITEM_CLASSNAME = `k-columnmenu-item`;
 
 const states = [
@@ -21,7 +22,7 @@ const defaultOptions = {};
 
 export type KendoColumnMenuItemState = { [K in (typeof states)[number]]?: boolean };
 
-export const ColumnMenuItem = (
+export const ColumnMenuItem: KendoComponent<KendoColumnMenuItemProps & KendoColumnMenuItemState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoColumnMenuItemProps & KendoColumnMenuItemState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

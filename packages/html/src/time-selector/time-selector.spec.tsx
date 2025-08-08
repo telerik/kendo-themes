@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, Size } from '../misc';
 import { TimeSelectorColumn } from '.';
 
+import { KendoComponent } from '../_types/component';
 export type timeType = 'dd' | 'HH' | 'mm' | 'ss' | 'SSS' | 'tt';
 
 const TIMESELECTOR_CLASSNAME = `k-timeselector`;
@@ -27,7 +28,7 @@ const defaultOptions = {
     size: Size.medium
 } as const;
 
-export const TimeSelector = (
+export const TimeSelector: KendoComponent<KendoTimeSelectorProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTimeSelectorProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

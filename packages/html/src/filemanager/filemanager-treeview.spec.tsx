@@ -1,6 +1,7 @@
 import { KendoTreeviewProps, Treeview } from '../treeview';
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const FILEMANAGERTREEVIEW_CLASSNAME = `k-filemanager-treeview`;
 
 const states = [];
@@ -9,7 +10,7 @@ const options = {};
 
 const defaultOptions = {};
 
-export const FileManagerTreeview = (
+export const FileManagerTreeview: KendoComponent<KendoTreeviewProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTreeviewProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

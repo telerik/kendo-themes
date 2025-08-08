@@ -2,6 +2,7 @@ import * as React from 'react';
 import { classNames, stateClassNames, States } from '../misc';
 import { Icon } from '../icon';
 
+import { KendoComponent } from '../_types/component';
 const EXPANSION_PANEL_CLASSNAME = 'k-expander';
 
 const states = [
@@ -24,7 +25,7 @@ export type KendoExpansionPanelState = { [K in (typeof states)[number]]?: boolea
 
 const defaultOptions = {};
 
-export const ExpansionPanel = (
+export const ExpansionPanel: KendoComponent<KendoExpansionPanelProps & KendoExpansionPanelState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoExpansionPanelProps &
         KendoExpansionPanelState &
         React.HTMLAttributes<HTMLDivElement>

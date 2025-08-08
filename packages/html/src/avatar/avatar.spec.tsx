@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const AVATAR_CLASSNAME = `k-avatar`;
 
 enum avatarType {
@@ -58,7 +59,7 @@ const defaultOptions = {
     border: false
 };
 
-export const Avatar = (
+export const Avatar: KendoComponent<KendoAvatarProps & KendoAvatarState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoAvatarProps &
         KendoAvatarState &
         React.HTMLAttributes<HTMLDivElement>

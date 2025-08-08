@@ -2,11 +2,12 @@ import { KendoCardProps, Card } from '../card';
 import { classNames } from '../misc';
 import { TimelineCardCallout } from '../timeline';
 
+import { KendoComponent } from '../_types/component';
 const states = [];
 
 const defaultOptions = {};
 
-export const TimelineCard = (
+export const TimelineCard: KendoComponent<KendoCardProps & React.HTMLAttributes<HTMLDivElement>> = (
     props:
     KendoCardProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -34,5 +35,6 @@ export const TimelineCard = (
 
 TimelineCard.states = states;
 TimelineCard.defaultOptions = defaultOptions;
+TimelineCard.className = 'k-timeline-card';
 
 export default TimelineCard;

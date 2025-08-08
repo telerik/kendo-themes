@@ -1,6 +1,7 @@
 import { classNames, stateClassNames, States } from '../misc';
 import { Button } from '../button';
 
+import { KendoComponent } from '../_types/component';
 const SLIDER_CLASSNAME = 'k-slider';
 
 const states = [
@@ -35,7 +36,7 @@ const defaultOptions = {
     showTicks: true
 };
 
-export const Slider = (
+export const Slider: KendoComponent<KendoSliderProps & KendoSliderState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSliderProps &
         KendoSliderState &
         React.HTMLAttributes<HTMLDivElement>

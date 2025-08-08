@@ -2,6 +2,7 @@ import { Icon } from '../icon';
 import { Avatar } from '../avatar';
 import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const CHIP_CLASSNAME = `k-chip`;
 
 const states = [
@@ -50,7 +51,7 @@ const defaultOptions = {
     avatarImage: "/packages/html/assets/avatar.jpg"
 };
 
-export const Chip = (
+export const Chip: KendoComponent<KendoChipProps & KendoChipState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoChipProps &
         KendoChipState &
         React.HTMLAttributes<HTMLDivElement>

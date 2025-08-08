@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { CardHeader, CardBody, CardSubtitle } from '../card';
 import { TimelineCard, TimelineCardTitle } from '../timeline';
 
+import { KendoComponent } from '../_types/component';
 export const TIMELINEHORIZONTALEVENT_CLASSNAME = `k-timeline-event`;
 
 const states = [];
@@ -21,7 +22,7 @@ const defaultOptions = {
     content: "Event content"
 };
 
-export const HorizontalTimelineEvent = (
+export const HorizontalTimelineEvent: KendoComponent<KendoHorizontalTimelineEventProps & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoHorizontalTimelineEventProps &
         React.HTMLAttributes<HTMLLIElement>
 ) => {

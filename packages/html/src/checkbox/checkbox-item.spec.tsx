@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const CHECKBOXITEM_CLASSNAME = `k-checkbox-list-item`;
 
 const states = [];
@@ -10,7 +11,7 @@ const defaultOptions = {};
 
 export type KendoCheckboxItemState = { [K in (typeof states)[number]]?: boolean };
 
-export const CheckboxItem = (
+export const CheckboxItem: KendoComponent<KendoCheckboxItemState & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoCheckboxItemState &
      React.HTMLAttributes<HTMLLIElement>
 ) => {

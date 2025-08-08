@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { Button } from '../button';
 import { Textbox } from '../textbox';
 
+import { KendoComponent } from '../_types/component';
 const CHAT_CLASSNAME = 'k-chat';
 
 const states = [];
@@ -21,7 +22,7 @@ export type KendoChatProps = {
     showMoreButton?: boolean,
 }
 
-export const Chat = (
+export const Chat: KendoComponent<KendoChatProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoChatProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

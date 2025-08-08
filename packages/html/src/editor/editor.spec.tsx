@@ -2,6 +2,7 @@ import { classNames, stateClassNames, States } from '../misc';
 import { EditorContent } from './editor-content';
 import { EditorToolbar } from './editor-toolbar';
 
+import { KendoComponent } from '../_types/component';
 export const EDITOR_CLASSNAME = `k-editor`;
 
 const states = [
@@ -24,7 +25,7 @@ const defaultOptions = {
 
 export type KendoEditorState = { [K in (typeof states)[number]]?: boolean };
 
-export const Editor = (
+export const Editor: KendoComponent<KendoEditorState & KendoEditorProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoEditorState &
         KendoEditorProps &
         React.HTMLAttributes<HTMLDivElement>

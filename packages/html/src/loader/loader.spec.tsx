@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, Size, ThemeColor } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const LOADER_CLASSNAME = `k-loader`;
 
 export const LoaderAnimationMap = {
@@ -42,7 +43,7 @@ const defaultOptions = {
     animation: 'pulsing'
 } as const;
 
-export const Loader = (
+export const Loader: KendoComponent<KendoLoaderProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoLoaderProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

@@ -1,5 +1,6 @@
 import { classNames, States } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const TIMELINEFLAGWRAP_CLASSNAME = `k-timeline-flag-wrap`;
 
 const states = [
@@ -17,7 +18,7 @@ const defaultOptions = {
     year: "2020",
 };
 
-export const TimelineFlagWrap = (
+export const TimelineFlagWrap: KendoComponent<KendoFlagWrapProps & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoFlagWrapProps &
         React.HTMLAttributes<HTMLLIElement>
 ) => {

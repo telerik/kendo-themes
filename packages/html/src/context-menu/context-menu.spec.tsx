@@ -1,6 +1,7 @@
 import { KendoMenuListOptions, MenuList } from '../menu';
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const CONTEXTMENU_CLASSNAME = `k-context-menu`;
 
 const states = [];
@@ -9,7 +10,7 @@ const options = {};
 
 const defaultOptions = {};
 
-export const ContextMenu = (
+export const ContextMenu: KendoComponent<KendoMenuListOptions & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoMenuListOptions &
         React.HTMLAttributes<HTMLUListElement>
 ) => {
