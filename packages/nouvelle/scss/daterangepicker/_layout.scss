@@ -1,9 +1,0 @@
-@mixin kendo-date-range-picker--layout() {
-
-    // Date range picker
-    .k-date-range-picker {}
-
-    // Legacy aliases
-    .k-daterangepicker { @extend .k-date-range-picker !optional; }
-
-}

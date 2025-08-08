@@ -1,8 +1,0 @@
-@mixin kendo-action-sheet--layout() {
-
-    #test-area .k-actionsheet,
-    #test-area .k-action-sheet {
-        display: none !important; // stylelint-disable-line declaration-no-important
-    }
-
-}
