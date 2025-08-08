@@ -449,9 +449,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-gantt-planned-border-width</td>
-    <td>String</td>
-    <td><code>var(--kendo-gantt-planned-border-width, 2px)</code></td>
-    <td><code>var(--kendo-gantt-planned-border-width, 2px)</code></td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Gantt task planned line.</div></div>
@@ -479,9 +479,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-gantt-planned-moment-width</td>
-    <td>String</td>
-    <td><code>var(--kendo-gantt-planned-moment-width, 6px)</code></td>
-    <td><code>var(--kendo-gantt-planned-moment-width, 6px)</code></td>
+    <td>Number</td>
+    <td><code>6px</code></td>
+    <td><code>6px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the Gantt planned line dot.</div></div>
@@ -489,9 +489,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-gantt-planned-moment-height</td>
-    <td>String</td>
-    <td><code>var(--kendo-gantt-planned-moment-height, var(--kendo-gantt-planned-moment-width, 6px))</code></td>
-    <td><code>var(--kendo-gantt-planned-moment-height, var(--kendo-gantt-planned-moment-width, 6px))</code></td>
+    <td>Number</td>
+    <td><code>$kendo-gantt-planned-moment-width</code></td>
+    <td><code>6px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default height of the Gantt planned line dot.</div></div>
@@ -499,9 +499,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-gantt-planned-moment-border-radius</td>
-    <td>String</td>
-    <td><code>var(--kendo-gantt-planned-moment-border-radius, calc((var(--kendo-gantt-planned-border-width, 2px) * 2 + var(--kendo-gantt-planned-moment-width, 6px)) / 2))</code></td>
-    <td><code>var(--kendo-gantt-planned-moment-border-radius, calc((var(--kendo-gantt-planned-border-width, 2px) * 2 + var(--kendo-gantt-planned-moment-width, 6px)) / 2))</code></td>
+    <td>Number</td>
+    <td><code>calc(($kendo-gantt-planned-border-width * 2 + $kendo-gantt-planned-moment-width) / 2)</code></td>
+    <td><code>5px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Gantt planned line dot.</div></div>
@@ -509,9 +509,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-gantt-planned-moment-left-margin-x</td>
-    <td>String</td>
-    <td><code>var(--kendo-gantt-planned-moment-left-margin-x, calc(var(--kendo-gantt-planned-border-width, 2px) / 2 - var(--kendo-gantt-planned-moment-border-radius, calc((var(--kendo-gantt-planned-border-width, 2px) * 2 + var(--kendo-gantt-planned-moment-width, 6px)) / 2))))</code></td>
-    <td><code>var(--kendo-gantt-planned-moment-left-margin-x, calc(var(--kendo-gantt-planned-border-width, 2px) / 2 - var(--kendo-gantt-planned-moment-border-radius, calc((var(--kendo-gantt-planned-border-width, 2px) * 2 + var(--kendo-gantt-planned-moment-width, 6px)) / 2))))</code></td>
+    <td>Number</td>
+    <td><code>calc($kendo-gantt-planned-border-width / 2 - $kendo-gantt-planned-moment-border-radius)</code></td>
+    <td><code>-4px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Gantt planned line dot.</div></div>
@@ -519,9 +519,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-gantt-planned-milestone-moment-margin-x</td>
-    <td>String</td>
-    <td><code>var(--kendo-gantt-planned-milestone-moment-margin-x, #{math.div(6px, 2)})</code></td>
-    <td><code>var(--kendo-gantt-planned-milestone-moment-margin-x, 3px)</code></td>
+    <td>Number</td>
+    <td><code>3px</code></td>
+    <td><code>3px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Gantt milestone planned line dot.</div></div>
@@ -530,8 +530,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-planned-duration-height</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-planned-duration-height, var(--kendo-gantt-planned-border-width, 2px))</code></td>
-    <td><code>var(--kendo-gantt-planned-duration-height, var(--kendo-gantt-planned-border-width, 2px))</code></td>
+    <td><code>var(--kendo-gantt-planned-duration-height, $kendo-gantt-planned-border-width)</code></td>
+    <td><code>var(--kendo-gantt-planned-duration-height, 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default height of the Gantt planned line.</div></div>
@@ -540,8 +540,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-planned-duration-hover-height</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-planned-duration-hover-height, calc(var(--kendo-gantt-planned-border-width, 2px) + 1px))</code></td>
-    <td><code>var(--kendo-gantt-planned-duration-hover-height, calc(var(--kendo-gantt-planned-border-width, 2px) + 1px))</code></td>
+    <td><code>var(--kendo-gantt-planned-duration-hover-height, calc($kendo-gantt-planned-border-width + 1px))</code></td>
+    <td><code>var(--kendo-gantt-planned-duration-hover-height, 3px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the hovered Gantt planned line.</div></div>

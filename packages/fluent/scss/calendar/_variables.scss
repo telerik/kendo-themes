@@ -40,7 +40,7 @@ $kendo-calendar-header-padding-y: var( --kendo-calendar-header-padding-y, k-spac
 /// Width of the bottom border of the calendar header.
 /// @group calendar
 $kendo-calendar-header-border-width: var( --kendo-calendar-header-border-width, 1px ) !default;
-$kendo-calendar-header-min-width: var( --kendo-calendar-header-min-width, calc(#{$kendo-calendar-cell-size} * 8) ) !default;
+$kendo-calendar-header-min-width: calc(#{$kendo-calendar-cell-size} * 8)  !default;
 
 /// The background color of the calendar header.
 /// @group calendar
@@ -65,10 +65,10 @@ $kendo-calendar-footer-padding-y: var( --kendo-calendar-footer-padding-y, k-spac
 
 /// The horizontal padding of the calendar cell.
 /// @group calendar
-$kendo-calendar-cell-padding-x: var( --kendo-calendar-cell-padding-x, k-spacing(1) ) !default;
+$kendo-calendar-cell-padding-x: k-spacing(1) !default;
 /// The vertical padding of the calendar cell.
 /// @group calendar
-$kendo-calendar-cell-padding-y: var( --kendo-calendar-cell-padding-y, #{$kendo-calendar-cell-padding-x} ) !default;
+$kendo-calendar-cell-padding-y: $kendo-calendar-cell-padding-x !default;
 /// The border radius of the calendar cell.
 /// @group calendar
 $kendo-calendar-cell-border-radius: var( --kendo-calendar-cell-border-radius, var( --kendo-calendar-border-radius-md, var( --kendo-border-radius-md, 0) ) ) !default;

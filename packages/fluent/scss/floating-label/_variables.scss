@@ -23,15 +23,15 @@ $kendo-floating-label-line-height: var(--kendo-floating-label-line-height, var( 
 
 /// The height of the Floating Label.
 /// @group floating-label
-$kendo-floating-label-height: var(--kendo-floating-label-height, calc( #{$kendo-floating-label-line-height} * #{$kendo-floating-label-font-size} )) !default;
+$kendo-floating-label-height: calc( #{$kendo-floating-label-line-height} * #{$kendo-floating-label-font-size} ) !default;
 
 /// The horizontal offset of the Floating Label.
 /// @group floating-label
-$kendo-floating-label-offset-x: var(--kendo-floating-label-offset-x, calc( #{$kendo-input-md-padding-x} + #{$kendo-input-border-width} )) !default;
+$kendo-floating-label-offset-x: calc( #{$kendo-input-md-padding-x} + #{$kendo-input-border-width} ) !default;
 
 /// The vertical offset of the Floating Label.
 /// @group floating-label
-$kendo-floating-label-offset-y: var(--kendo-floating-label-offset-y, calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-md-padding-y} )) !default;
+$kendo-floating-label-offset-y: calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-md-padding-y} ) !default;
 
 /// The transformation scale of the focused Floating Label.
 /// @group floating-label

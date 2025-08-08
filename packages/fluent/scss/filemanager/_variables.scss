@@ -5,7 +5,7 @@
 
 /// The space between the FileManager items.
 /// @group file-manager
-$kendo-file-manager-spacer: var( --kendo-file-manager-spacer, #{k-spacing(4)} ) !default;
+$kendo-file-manager-spacer: k-spacing(4) !default;
 /// The border width of the FileManager.
 /// @group file-manager
 $kendo-file-manager-border-width: var( --kendo-file-manager-border-width, 1px ) !default;
@@ -145,10 +145,10 @@ $kendo-file-manager-grid-border: var( --kendo-file-manager-grid-border, inherit 
 
 /// The horizontal padding of the FileManager preview.
 /// @group file-manager
-$kendo-file-manager-preview-padding-x: var( --kendo-file-manager-preview-padding-x, #{$kendo-file-manager-spacer} ) !default;
+$kendo-file-manager-preview-padding-x: $kendo-file-manager-spacer !default;
 /// The vertical padding of the FileManager preview.
 /// @group file-manager
-$kendo-file-manager-preview-padding-y: var( --kendo-file-manager-preview-padding-y, #{$kendo-file-manager-spacer} ) !default;
+$kendo-file-manager-preview-padding-y: $kendo-file-manager-spacer !default;
 /// The width of the FileManager preview.
 /// @group file-manager
 $kendo-file-manager-preview-width: var( --kendo-file-manager-preview-width, 20% ) !default;
@@ -157,7 +157,7 @@ $kendo-file-manager-preview-width: var( --kendo-file-manager-preview-width, 20% 
 $kendo-file-manager-preview-border-width: var( --kendo-file-manager-preview-border-width, #{$kendo-file-manager-border-width} ) !default;
 /// The spacing of the FileManager preview.
 /// @group file-manager
-$kendo-file-manager-preview-spacing: var( --kendo-file-manager-preview-spacing, #{$kendo-file-manager-spacer} ) !default;
+$kendo-file-manager-preview-spacing: $kendo-file-manager-spacer !default;
 /// The gap between the columns in the FileManager preview.
 /// @group file-manager
 $kendo-file-manager-preview-column-gap: var( --kendo-file-manager-preview-column-gap, #{k-spacing(1)} ) !default;

@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.3.1](https://github.com/telerik/kendo-themes/compare/v11.3.1-dev.0...v11.3.1) (2025-08-07)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+## [11.3.1-dev.0](https://github.com/telerik/kendo-themes/compare/v11.3.0...v11.3.1-dev.0) (2025-08-07)
+
+
+### Bug Fixes
+
+* **fluent:** resolve build errors ([800f87b](https://github.com/telerik/kendo-themes/commit/800f87b3ecafe8d5ce81632b41808687f7a2bd10))
+* **fluent:** simplify calc expressions ([af65e3e](https://github.com/telerik/kendo-themes/commit/af65e3eccd5864687dbe392a5458d89b25623139))
+
+
+
+
+
 # [11.3.0](https://github.com/telerik/kendo-themes/compare/v11.3.0-dev.0...v11.3.0) (2025-08-06)
 
 **Note:** Version bump only for package kendo-themes.repo
