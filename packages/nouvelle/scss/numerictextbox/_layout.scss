@@ -1,9 +1,0 @@
-@mixin kendo-numeric-textbox--layout() {
-
-    // Numeric textbox
-    .k-numeric-textbox {}
-
-    // Legacy aliases
-    .k-numerictextbox { @extend .k-numeric-textbox !optional; }
-
-}
