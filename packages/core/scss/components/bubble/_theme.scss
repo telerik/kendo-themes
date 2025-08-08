@@ -21,9 +21,11 @@
         }
 
         &:focus,
+        &:focus-visible,
         &.k-focus {
             @include fill( $bg: $kendo-bubble-focus-bg, $border: $kendo-bubble-focus-border );
             @include focus-indicator( $kendo-bubble-focus-shadow, true, true );
+            outline: none;
         }
 
         &:hover,
