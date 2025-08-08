@@ -50,11 +50,11 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-width</td>
     <td>Number</td>
-    <td><code>500px</code></td>
-    <td><code>500px</code></td>
+    <td><code>320px</code></td>
+    <td><code>320px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the Chat.</div></div>
     </td>
 </tr>
 <tr>
@@ -64,7 +64,7 @@ The following table lists the available variables for customization.
     <td><code>600px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the Chat.</div></div>
     </td>
 </tr>
 <tr>
@@ -108,16 +108,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chat-item-spacing-x</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing between the items of the Chat.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-chat-item-spacing-y</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
@@ -125,6 +115,26 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing between the items of the Chat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-message-max-width</td>
+    <td>Calculation</td>
+    <td><code>min(75%, 460px)</code></td>
+    <td><code>min(75%, 460px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the Chat message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-message-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the Chat message.</div></div>
     </td>
 </tr>
 <tr>
@@ -158,10 +168,20 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-chat-message-status-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the icon and text in the Chat message status.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chat-timestamp-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
-    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
+    <td><code>var( --kendo-font-size-xs, inherit )</code></td>
+    <td><code>var(--kendo-font-size-xs, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Chat timestamp.</div></div>
@@ -180,8 +200,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-timestamp-transform</td>
     <td>String</td>
-    <td><code>uppercase</code></td>
-    <td><code>uppercase</code></td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text transform of the Chat timestamp.</div></div>
@@ -205,6 +225,26 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat timestamp.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-timestamp-separator-bg</td>
+    <td>String</td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat timestamp separator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-timestamp-separator-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Chat timestamp and its separator.</div></div>
     </td>
 </tr>
 <tr>
@@ -248,103 +288,23 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chat-bubble-padding-x</td>
+    <td>$kendo-chat-status-text</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #565e64)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat bubble message.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-bubble-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat bubble message.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat status.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-chat-bubble-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
-    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat bubble message.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-bubble-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
-    <td><code>var(--kendo-line-height, normal)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat bubble message.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-bubble-border-radius</td>
-    <td>Number</td>
-    <td><code>12px</code></td>
-    <td><code>12px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Chat bubble message.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-bubble-border-radius-sm</td>
-    <td>Number</td>
-    <td><code>2px</code></td>
-    <td><code>2px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Chat small bubble message</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-avatar-size</td>
-    <td>Number</td>
-    <td><code>32px</code></td>
-    <td><code>32px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Chat Avatar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-avatar-spacing</td>
-    <td>String</td>
-    <td><code>$kendo-chat-item-spacing-x</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat Avatar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-toolbar-padding-x</td>
-    <td>String</td>
-    <td><code>$kendo-toolbar-md-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat Toolbar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-toolbar-padding-y</td>
-    <td>String</td>
-    <td><code>$kendo-toolbar-md-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -378,46 +338,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chat-quick-reply-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat quick reply.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-quick-reply-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat quick reply.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-quick-reply-spacing</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat quick reply.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-quick-reply-line-height</td>
-    <td>String</td>
-    <td><code>$kendo-chat-bubble-line-height</code></td>
-    <td><code>var(--kendo-line-height, normal)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat quick reply.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-chat-bg</td>
     <td>String</td>
     <td><code>k-color(surface)</code></td>
@@ -445,66 +365,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-bubble-bg</td>
-    <td>String</td>
-    <td><code>$kendo-button-bg</code></td>
-    <td><code>var(--kendo-color-base, #dee2e6)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat bubble.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-bubble-text</td>
-    <td>String</td>
-    <td><code>$kendo-button-text</code></td>
-    <td><code>var(--kendo-color-on-base, #212529)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat bubble.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-bubble-border</td>
-    <td>String</td>
-    <td><code>$kendo-chat-bubble-bg</code></td>
-    <td><code>var(--kendo-color-base, #dee2e6)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat bubble.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-bubble-shadow</td>
-    <td>String</td>
-    <td><code>none</code></td>
-    <td><code>none</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Chat bubble.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-bubble-hover-shadow</td>
-    <td>String</td>
-    <td><code>none</code></td>
-    <td><code>none</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered Chat bubble.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-bubble-selected-shadow</td>
-    <td>String</td>
-    <td><code>none</code></td>
-    <td><code>none</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected Chat bubble.</div></div>
     </td>
 </tr>
 <tr>
@@ -548,133 +408,223 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chat-alt-bubble-hover-shadow</td>
+    <td>$kendo-chat-typing-indicator-text</td>
     <td>String</td>
-    <td><code>none</code></td>
-    <td><code>none</code></td>
+    <td><code>k-color(base-on-subtle)</code></td>
+    <td><code>var(--kendo-color-base-on-subtle, #212529)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered Chat alt bubble.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the typing indicator dots.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-chat-alt-bubble-selected-shadow</td>
-    <td>String</td>
-    <td><code>none</code></td>
-    <td><code>none</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected Chat alt bubble.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-quick-reply-bg</td>
-    <td>Color</td>
-    <td><code>transparent</code></td>
-    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat quick reply.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-quick-reply-text</td>
-    <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat quick reply.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-quick-reply-border</td>
-    <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat quick reply.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-quick-reply-hover-bg</td>
-    <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Chat quick reply.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-quick-reply-hover-text</td>
-    <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Chat quick reply.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-quick-reply-hover-border</td>
-    <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Chat quick reply.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-quick-reply-shadow-blur</td>
+    <td>$kendo-chat-file-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
-    <td><code>0px</code></td>
+    <td><code>240px</code></td>
+    <td><code>240px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow blur of the focused Chat quick reply.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of a file in the Chat Textarea.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-chat-quick-reply-shadow-spread</td>
-    <td>Number</td>
-    <td><code>.25rem</code></td>
-    <td><code>0.25rem</code></td>
+    <td>$kendo-chat-file-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow spread of the focused Chat quick reply.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat file.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-chat-quick-reply-shadow-opacity</td>
-    <td>Number</td>
-    <td><code>.5</code></td>
-    <td><code>0.5</code></td>
+    <td>$kendo-chat-file-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow opacity of the focused Chat quick reply.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat file.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-chat-typing-indicator-dot-size</td>
-    <td>Number</td>
-    <td><code>8px</code></td>
-    <td><code>8px</code></td>
+    <td>$kendo-chat-file-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Chat typing indicator dot.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the elements of the Chat file.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-chat-typing-indicator-dot-spacing</td>
+    <td>$kendo-chat-file-border-width</td>
     <td>Number</td>
-    <td><code>5px</code></td>
-    <td><code>5px</code></td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat typing indicator dot.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Chat file.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-file-border-style</td>
+    <td>String</td>
+    <td><code>solid</code></td>
+    <td><code>solid</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border style of the Chat file.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-file-bg</td>
+    <td>String</td>
+    <td><code>k-color(base-subtle)</code></td>
+    <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat file.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-file-text</td>
+    <td>String</td>
+    <td><code>k-color(base-on-subtle)</code></td>
+    <td><code>var(--kendo-color-base-on-subtle, #212529)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat file.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-file-border</td>
+    <td>String</td>
+    <td><code>$kendo-chat-file-bg</code></td>
+    <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat file.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-file-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border-radius of the Chat file.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-file-download-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the file download wrapper.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-file-download-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the file download wrapper.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-message-pinned-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Chat pinned message;</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-message-pinned-border-style</td>
+    <td>String</td>
+    <td><code>solid</code></td>
+    <td><code>solid</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border style of the Chat pinned message;</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-message-pinned-border-color</td>
+    <td>String</td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat pinned message;</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-message-reference-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat message reference.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-message-reference-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat message reference.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-message-reference-bg</td>
+    <td>String</td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat message reference.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-message-reference-text</td>
+    <td>String</td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat message reference.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-message-reference-marker-bg</td>
+    <td>String</td>
+    <td><code>k-color(base-emphasis)</code></td>
+    <td><code>var(--kendo-color-base-emphasis, rgba(33, 37, 41, 0.34))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the message reference marker.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-message-reference-marker-alt-bg</td>
+    <td>String</td>
+    <td><code>k-color(primary-emphasis)</code></td>
+    <td><code>var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the message reference alt marker.</div></div>
     </td>
 </tr>
 </tbody>
