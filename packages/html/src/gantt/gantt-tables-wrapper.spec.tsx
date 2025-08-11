@@ -1,8 +1,9 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const className = `k-gantt-tables`;
 
-export const GanttTables = (
+export const GanttTables: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => (
     <div
@@ -14,3 +15,5 @@ export const GanttTables = (
         {props.children}
     </div>
 );
+
+GanttTables.className = className;

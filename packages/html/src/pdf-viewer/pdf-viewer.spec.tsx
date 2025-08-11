@@ -9,6 +9,7 @@ import { Textbox } from '../textbox';
 import { Toolbar, ToolbarSeparator } from '../toolbar';
 import { UploadNormal } from '../upload';
 
+import { KendoComponent } from '../_types/component';
 export const PDFVIEWER_CLASSNAME = `k-pdf-viewer`;
 
 const states = [
@@ -86,7 +87,7 @@ const defaultOptions = {
     annotationsToolbar: defaultAnnotationsToolbar,
 };
 
-export const PDFViewer = (
+export const PDFViewer: KendoComponent<KendoPDFViewerState & KendoPDFViewerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPDFViewerState & KendoPDFViewerProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {

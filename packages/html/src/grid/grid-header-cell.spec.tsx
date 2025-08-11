@@ -2,6 +2,7 @@ import { classNames, States, stateClassNames } from "../misc";
 import { TableTh, KendoTableThProps } from "../table/table-th";
 import { Icon } from "../icon";
 
+import { KendoComponent } from '../_types/component';
 const GRIDHEADERCELL_CLASSNAME = `k-header`;
 
 const states = [
@@ -28,7 +29,7 @@ const defaultOptions = {
 
 export type KendoGridHeaderCellState = { [K in (typeof states)[number]]?: boolean };
 
-export const GridHeaderCell = (
+export const GridHeaderCell: KendoComponent<KendoGridHeaderCellProps & KendoGridHeaderCellState & React.HTMLAttributes<HTMLTableCellElement>> = (
     props: KendoGridHeaderCellProps &
         KendoGridHeaderCellState &
         React.HTMLAttributes<HTMLTableCellElement>

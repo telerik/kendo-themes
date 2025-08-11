@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const SCHEDULER_VIEW_CLASSNAME = 'k-scheduler-layout';
 
 const states = [];
@@ -12,7 +13,7 @@ export type KendoSchedulerViewProps = {
     view?: "day" | "week" | "month" | "agenda" | "timeline" | "year";
 };
 
-export const SchedulerView = (
+export const SchedulerView: KendoComponent<KendoSchedulerViewProps & ( | ( React.HTMLAttributes<HTMLDivElement> & { as: 'div' } ) | ( React.HTMLAttributes<HTMLTableElement> & { as: 'table' } ) )> = (
     props: KendoSchedulerViewProps & (
         | ( React.HTMLAttributes<HTMLDivElement> & { as: 'div' } )
         | ( React.HTMLAttributes<HTMLTableElement> & { as: 'table' } )

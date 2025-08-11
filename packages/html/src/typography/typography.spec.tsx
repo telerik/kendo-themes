@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const states = [];
 
 const options = {};
@@ -9,7 +10,7 @@ export type KendoTypographyProps = {
 
 };
 
-export const Typography = (
+export const Typography: KendoComponent<KendoTypographyProps & React.HTMLAttributes<HTMLElement>> = (
     props: KendoTypographyProps &
         React.HTMLAttributes<HTMLElement>
 ) => {
@@ -37,5 +38,6 @@ export const Typography = (
 
 Typography.states = states;
 Typography.options = options;
+Typography.className = 'k-typography';
 
 export default Typography;

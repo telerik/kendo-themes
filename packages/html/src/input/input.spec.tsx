@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const INPUT_CLASSNAME = `k-input`;
 
 export const states = [
@@ -32,7 +33,7 @@ export const defaultOptions = {
     fillMode: FillMode.solid
 };
 
-export const Input = (
+export const Input: KendoComponent<InputOptions & InputState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: InputOptions & InputState & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {

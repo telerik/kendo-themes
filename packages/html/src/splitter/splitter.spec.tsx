@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { SplitterPane, KendoSplitterPaneProps } from './splitter-pane';
 import { SplitterSplitbar } from './splitter-splitbar';
 
+import { KendoComponent } from '../_types/component';
 const SPLITTER_CLASSNAME = 'k-splitter';
 
 const options = {};
@@ -15,7 +16,7 @@ const defaultOptions = {
     orientation: "horizontal",
 } as const;
 
-export const Splitter = (
+export const Splitter: KendoComponent<KendoSplitterProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSplitterProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

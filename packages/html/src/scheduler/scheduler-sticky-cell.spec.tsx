@@ -1,8 +1,9 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const className = 'k-sticky-cell';
 
-export const SchedulerStickyCell = (
+export const SchedulerStickyCell: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => (
     <div
@@ -16,3 +17,4 @@ export const SchedulerStickyCell = (
     </div>
 );
 
+SchedulerStickyCell.className = className;

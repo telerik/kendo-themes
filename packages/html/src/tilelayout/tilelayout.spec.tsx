@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const TILELAYOUT_CLASSNAME = `k-tilelayout`;
 
 const states = [];
@@ -17,7 +18,7 @@ export type KendoTileLayoutProps = {
 
 const defaultOptions = {};
 
-export const TileLayout = (
+export const TileLayout: KendoComponent<KendoTileLayoutProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoTileLayoutProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {

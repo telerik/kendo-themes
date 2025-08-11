@@ -14,6 +14,7 @@ import { TimeSelector, TimeSelectorHeader } from '../time-selector';
 import { ActionButtons } from '../action-buttons';
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 
+import { KendoComponent } from '../_types/component';
 export const TIMEPICKER_CLASSNAME = `k-timepicker`;
 
 const states = [
@@ -60,7 +61,7 @@ const defaultOptions = {
 };
 
 
-export const TimePicker = (
+export const TimePicker: KendoComponent<KendoTimePickerProps & KendoTimePickerState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoTimePickerProps &
         KendoTimePickerState &
         React.HTMLAttributes<HTMLSpanElement>

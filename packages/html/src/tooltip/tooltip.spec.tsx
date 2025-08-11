@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, kendoThemeMaps, ThemeColor } from '../misc';
 import { Icon } from '../icon';
 
+import { KendoComponent } from '../_types/component';
 export const TOOLTIP_CLASSNAME = `k-tooltip`;
 
 const states = [];
@@ -36,7 +37,7 @@ const defaultOptions = {
     closable: false
 };
 
-export const Tooltip = (
+export const Tooltip: KendoComponent<KendoTooltipProps & Omit<React.HTMLAttributes<HTMLDivElement>, 'content'>> = (
     props: KendoTooltipProps &
         Omit<React.HTMLAttributes<HTMLDivElement>, 'content'>
 ) => {

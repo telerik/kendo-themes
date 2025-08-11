@@ -2,6 +2,7 @@ import React from 'react';
 import { classNames, stateClassNames, States } from '../misc';
 import { Card, CardBody, CardHeader } from '../card';
 
+import { KendoComponent } from '../_types/component';
 export const TILELAYOUTITEM_CLASSNAME = `k-tilelayout-item`;
 
 const states = [
@@ -20,7 +21,7 @@ export type KendoTileLayoutItemProps = {
 
 const defaultOptions = {};
 
-export const TileLayoutItem = (
+export const TileLayoutItem: KendoComponent<KendoTileLayoutItemProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoTileLayoutItemProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {

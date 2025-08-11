@@ -1,6 +1,7 @@
 import { classNames, stateClassNames, States } from '../misc';
 import RatingItem from './rating-item';
 
+import { KendoComponent } from '../_types/component';
 export const RATING_CLASSNAME = `k-rating`;
 
 const states = [
@@ -23,7 +24,7 @@ const defaultOptions = {
     max: 5,
 };
 
-export const Rating = (
+export const Rating: KendoComponent<RatingState & RatingProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: RatingState & RatingProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {

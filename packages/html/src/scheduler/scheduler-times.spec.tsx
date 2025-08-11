@@ -1,8 +1,9 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const className = 'k-scheduler-times';
 
-export const SchedulerTimes = (
+export const SchedulerTimes: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => (
     <div
@@ -15,3 +16,5 @@ export const SchedulerTimes = (
         {props.children}
     </div>
 );
+
+SchedulerTimes.className = className;

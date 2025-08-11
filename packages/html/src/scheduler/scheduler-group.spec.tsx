@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const className = 'k-scheduler-group';
 
 const states = [];
@@ -14,7 +15,7 @@ export type KendoSchedulerGroupProps = {
     orientation?: "horizontal" | "vertical";
 };
 
-export const SchedulerGroup = (
+export const SchedulerGroup: KendoComponent<KendoSchedulerGroupProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSchedulerGroupProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

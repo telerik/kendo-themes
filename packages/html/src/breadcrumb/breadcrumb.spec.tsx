@@ -1,5 +1,6 @@
 import { classNames, stateClassNames, optionClassNames, States, Size } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const BREADCRUMB_CLASSNAME = `k-breadcrumb`;
 
 const states = [
@@ -22,7 +23,7 @@ const defaultOptions = {
     size: Size.medium
 };
 
-export const Breadcrumb = (
+export const Breadcrumb: KendoComponent<KendoBreadcrumbProps & KendoBreadcrumbState & React.HTMLAttributes<HTMLElement>> = (
     props: KendoBreadcrumbProps &
     KendoBreadcrumbState &
         React.HTMLAttributes<HTMLElement>

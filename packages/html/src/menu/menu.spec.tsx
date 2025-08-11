@@ -2,6 +2,7 @@ import { Button } from '../button';
 import { classNames } from '../misc';
 import MenuScrollableWrapper from './menu-scrollable-wrapper.spec';
 
+import { KendoComponent } from '../_types/component';
 export const MENU_CLASSNAME = `k-menu`;
 
 const states = [];
@@ -24,7 +25,7 @@ const defaultOptions = {
     scrollButtonsPosition: "around"
 };
 
-export const Menu = (
+export const Menu: KendoComponent<KendoMenuProps & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoMenuProps &
         React.HTMLAttributes<HTMLUListElement>
 ) => {

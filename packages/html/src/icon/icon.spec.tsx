@@ -3,6 +3,7 @@ import FontIcon from './font-icon.spec';
 import SvgIcon from './svg-icon.spec';
 import * as SVGIcons from '@progress/kendo-svg-icons';
 
+import { KendoComponent } from '../_types/component';
 const snakeToCamel = str =>
     str.replace(/([-_][a-z0-9])/gi, group =>
         group
@@ -50,7 +51,7 @@ const defaultOptions = {
     type: 'svg'
 };
 
-export const Icon = (
+export const Icon: KendoComponent<IconProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: IconProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
@@ -95,5 +96,6 @@ export const Icon = (
 Icon.states = states;
 Icon.options = options;
 Icon.defaultOptions = defaultOptions;
+Icon.className = 'k-icon';
 
 export default Icon;

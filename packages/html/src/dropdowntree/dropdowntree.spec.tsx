@@ -12,6 +12,7 @@ import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 import { Treeview, TreeviewGroup, TreeviewItem } from '../treeview';
 
+import { KendoComponent } from '../_types/component';
 export const DROPDOWNTREE_CLASSNAME = `k-dropdowntree`;
 
 const states = [
@@ -65,7 +66,7 @@ const defaultOptions = {
     fillMode: FillMode.solid
 };
 
-export const DropdownTree = (
+export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdownTreeState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDropdownTreeProps &
         KendoDropdownTreeState &
         React.HTMLAttributes<HTMLSpanElement>

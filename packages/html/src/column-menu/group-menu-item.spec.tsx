@@ -1,5 +1,6 @@
 import { classNames, stateClassNames, States } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const GROUPMENUITEM_CLASSNAME = `k-group-menu-item`;
 
 const states = [
@@ -19,7 +20,7 @@ const defaultOptions = {};
 
 export type KendoGroupMenuItemState = { [K in (typeof states)[number]]?: boolean };
 
-export const GroupMenuItem = (
+export const GroupMenuItem: KendoComponent<KendoGroupMenuItemProps & KendoGroupMenuItemState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGroupMenuItemProps & KendoGroupMenuItemState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

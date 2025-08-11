@@ -43,6 +43,9 @@
     "typegen": "npx tsc --emitDeclarationOnly --declaration --declarationDir dist/types/",
     "typecheck": "npx tsc --noEmit --emitDeclarationOnly false --project tsconfig.json ",
     "build:tests": "node ./scripts/build-tests.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
@@ -53,8 +56,14 @@
     "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@types/jest": "^30.0.0",
     "@types/react": "^19.0.8",
+    "jest": "^30.0.0",
+    "jest-environment-jsdom": "^30.0.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "ts-jest": "^29.2.0",
+    "typescript": "^5.0.0"
   }
 }

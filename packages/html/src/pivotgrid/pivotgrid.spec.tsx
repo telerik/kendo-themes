@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 import PivotGridConfiguratorButton from './pivotgrid-configurator-button';
 
+import { KendoComponent } from '../_types/component';
 export const PIVOTGRID_CLASSNAME = `k-pivotgrid`;
 
 const states = [];
@@ -25,7 +26,7 @@ const defaultOptions = {
     configuratorPosition: "right"
 };
 
-export const PivotGrid = (
+export const PivotGrid: KendoComponent<KendoPivotGridProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPivotGridProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

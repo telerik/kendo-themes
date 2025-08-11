@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const MENU_SCROLLABLE_WRAPPER_CLASS = `k-menu-scroll-wrapper`;
 
 const states = [];
@@ -13,7 +14,7 @@ export type KendoMenuScrollableWrapperProps = {
 const defaultOptions = {
 };
 
-export const MenuScrollableWrapper = (
+export const MenuScrollableWrapper: KendoComponent<KendoMenuScrollableWrapperProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoMenuScrollableWrapperProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

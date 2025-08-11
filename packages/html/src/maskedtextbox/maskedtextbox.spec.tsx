@@ -1,4 +1,5 @@
 import { classNames, States, Size, Roundness, FillMode } from '../misc';
+import { KendoComponent } from '../_types/component';
 import {
     Input,
     InputInnerInput,
@@ -55,7 +56,7 @@ const defaultOptions = {
     separators: true
 };
 
-export const MaskedTextbox = (
+export const MaskedTextbox: KendoComponent<KendoMaskedTextboxProps & KendoMaskedTextboxState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoMaskedTextboxProps &
         KendoMaskedTextboxState &
         React.HTMLAttributes<HTMLSpanElement>

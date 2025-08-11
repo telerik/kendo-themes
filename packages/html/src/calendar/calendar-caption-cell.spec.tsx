@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const className = `k-calendar-caption`;
 
 export type KendoCalendarCaptionCellProps = {
@@ -9,7 +10,7 @@ export type KendoCalendarCaptionCellProps = {
     rowSpan?: number;
 };
 
-export const CalendarCaptionCell = (
+export const CalendarCaptionCell: KendoComponent<KendoCalendarCaptionCellProps & React.HTMLAttributes<HTMLTableCellElement>> = (
     props: KendoCalendarCaptionCellProps &
         React.HTMLAttributes<HTMLTableCellElement>
 ) => {
@@ -29,3 +30,5 @@ export const CalendarCaptionCell = (
         </th>
     );
 };
+
+CalendarCaptionCell.className = className;
