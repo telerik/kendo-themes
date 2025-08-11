@@ -91,7 +91,7 @@
 
         .k-badge-#{$placement} {
             position: absolute;
-            z-index: k-zindex("floating-badge");
+            z-index: k-zindex("badge");
 
             &.k-top-start {
                 @if $translate {

@@ -127,7 +127,7 @@
         }
 
         &.k-focus {
-            z-index: k-zindex("content-base", 1);
+            z-index: k-zindex-above("elevated");
         }
     }
 

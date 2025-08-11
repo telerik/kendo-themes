@@ -89,7 +89,7 @@
         left: 0;
         right: 0;
         transform: translateY(-50%);
-        z-index: k-zindex("content-base");
+        z-index: k-zindex-above("base");
     }
 
 
@@ -148,7 +148,7 @@
         align-items: stretch;
         flex: 1;
         position: relative;
-        z-index: k-zindex("content-base");
+        z-index: k-zindex-above("base");
         outline: 0;
         overflow: hidden;
 
@@ -159,7 +159,7 @@
             content: "\200b";
             height: 0;
             line-height: 0;
-            z-index: k-zindex("content-base");
+            z-index: k-zindex-above("base");
             width: 200%;
             left: -50%;
         }
@@ -212,7 +212,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        z-index: k-zindex("content-base", 10);
+        z-index: k-zindex-above("handle");
         top: calc( #{list.slash( $kendo-time-list-title-height, 2 )} );
     }
 

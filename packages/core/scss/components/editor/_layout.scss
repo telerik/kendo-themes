@@ -75,7 +75,7 @@
         box-sizing: border-box;
         position: absolute;
         visibility: visible;
-        z-index: k-zindex("content-base", 98);
+        z-index: k-zindex-below("navigation");
 
         &.northwest {
             top: 0;
@@ -264,7 +264,7 @@
 
         // Give selected cells a blue overlay
         .selectedCell::after { // stylelint-disable-line
-            z-index: k-zindex("content-base", 2);
+            z-index: k-zindex-above("elevated");
             position: absolute;
             content: "";
             left: 0;
@@ -554,7 +554,7 @@
             height: 5px;
             border-width: 1px;
             border-style: solid;
-            z-index: k-zindex("content-base", 98);
+            z-index: k-zindex-below("navigation");
 
             .k-element-resize-handle {
                 width: 100%;
@@ -599,7 +599,7 @@
             height: 10px;
             width: 10px;
             cursor: col-resize;
-            z-index: k-zindex("content-base", 1);
+            z-index: k-zindex("elevated");
 
             .k-column-resize-handle {
                 width: 100%;
@@ -618,7 +618,7 @@
 
         .k-row-resize-handle-wrapper {
             position: absolute;
-            z-index: k-zindex("content-base", 1);
+            z-index: k-zindex("elevated");
             cursor: row-resize;
             width: 10px;
             height: 10px;

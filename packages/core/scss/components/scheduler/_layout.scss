@@ -86,7 +86,7 @@
         .k-scheduler-head {
             position: sticky;
             top: 0;
-            z-index: k-zindex("content-base", 2);
+            z-index: k-zindex-above("elevated");
         }
         .k-scheduler-body {
             position: relative;
@@ -207,7 +207,7 @@
             flex-basis: 0;
             position: sticky;
             left: 0;
-            z-index: k-zindex("content-sticky", 1);
+            z-index: k-zindex-above("elevated");
         }
     }
 
@@ -219,7 +219,7 @@
         white-space: nowrap;
         flex-shrink: 0;
         position: relative;
-        z-index: k-zindex("content-base", 1);
+        z-index: k-zindex("elevated");
 
         .k-widget {
             font-size: inherit;
@@ -272,7 +272,7 @@
         border-spacing: 0;
         flex: 1 1 auto;
         position: relative;
-        z-index: k-zindex("content-base");
+        z-index: k-zindex("elevated");
 
         > tbody > tr > td {
             padding: 0;
@@ -398,7 +398,7 @@
 
         > div {
             position: relative;
-            z-index: k-zindex("content-base", 1);
+            z-index: k-zindex("elevated");
         }
 
         // Template
@@ -424,7 +424,7 @@
             top: 0;
             bottom: 0;
             right: $kendo-scheduler-event-actions-inset-x;
-            z-index: k-zindex("content-base", 1);
+            z-index: k-zindex("elevated");
 
             .k-event-delete {
                 opacity: .5;
@@ -457,7 +457,7 @@
 
         // Resize handles
         .k-resize-handle {
-            z-index: k-zindex("content-resize-handle");
+            z-index: k-zindex("handle");
             opacity: .5;
             visibility: hidden;
         }
@@ -549,7 +549,7 @@
     // Draging hint
     .k-event-drag-hint {
         opacity: .5;
-        z-index: k-zindex("content-base", 2);
+        z-index: k-zindex-above("elevated");
 
         .k-event-actions,
         .k-event-top-actions,

@@ -24,7 +24,7 @@
 
     .k-tilelayout-item {
         position: relative;
-        z-index: k-zindex("base-normal");
+        z-index: k-zindex("base");
     }
 
     .k-layout-item-hint {
@@ -34,12 +34,12 @@
         position: relative;
 
         &.k-layout-item-hint-resize {
-            z-index: k-zindex("content-resize-handle");
+            z-index: k-zindex("handle");
         }
     }
 
     .k-tilelayout-item-header.k-card-header {
-        z-index: k-zindex("base-normal");
+        z-index: k-zindex("base");
     }
 
     .k-tilelayout-item-body {

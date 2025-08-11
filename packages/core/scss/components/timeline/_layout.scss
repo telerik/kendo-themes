@@ -46,7 +46,7 @@
             min-width: $kendo-timeline-flag-min-width;
             max-width: $kendo-timeline-flag-max-width;
             position: relative;
-            z-index: k-zindex("content-base");
+            z-index: k-zindex("elevated");
         }
 
         .k-timeline-circle {
@@ -55,7 +55,7 @@
             border-radius: 50%;
             flex-shrink: 0;
             position: relative;
-            z-index: k-zindex("content-base");
+            z-index: k-zindex("elevated");
         }
 
         &.k-timeline-dates-hidden {
@@ -355,7 +355,7 @@
                 margin-block: 0;
                 margin-inline: $kendo-timeline-track-arrow-width;
                 position: relative;
-                z-index: k-zindex("content-base", 1);
+                z-index: k-zindex("elevated");
 
                 .k-timeline-scrollable-wrap {
                     transition: transform 1s ease-in-out;
@@ -392,7 +392,7 @@
         border-radius: 50%;
         position: absolute;
         bottom: calc(#{$kendo-timeline-track-size} + #{$kendo-timeline-track-wrap-padding-bottom} + 2 * #{$kendo-timeline-track-border-width});
-        z-index: k-zindex("content-base", 2);
+        z-index: k-zindex-above("elevated");
         display: flex;
         align-items: center;
         justify-content: center;

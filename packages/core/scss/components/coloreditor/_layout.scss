@@ -45,7 +45,7 @@
         justify-content: center;
         gap: $kendo-color-editor-preview-gap;
         position: relative;
-        z-index: k-zindex("content-base");
+        z-index: k-zindex-above("base");
     }
 
     .k-coloreditor-preview .k-color-preview {

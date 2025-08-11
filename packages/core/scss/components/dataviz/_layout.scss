@@ -60,7 +60,7 @@
 
     .k-sparkline-tooltip-wrapper,
     .k-chart-tooltip-wrapper {
-        z-index: k-zindex("popup-base");
+        z-index: k-zindex("popup");
 
         .k-popup {
             @include border-radius( k-border-radius(md) );
@@ -246,7 +246,7 @@
         top: 0;
         left: 0;
         opacity: 1;
-        z-index: k-zindex("overlay-base", 1);
+        z-index: k-zindex-above("overlay");
 
         &-top {
             top: var( --kendo-chart-computed-title-height, #{$kendo-chart-computed-title-height} );

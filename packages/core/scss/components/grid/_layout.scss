@@ -191,7 +191,7 @@
                 justify-content: center;
                 position: absolute;
                 inset-inline-end: $kendo-grid-header-menu-icon-spacing;
-                z-index: k-zindex("content-base");
+                z-index: k-zindex("elevated");
 
                 &:hover {
                     cursor: pointer;
@@ -683,7 +683,7 @@
         height: 25px;
         cursor: col-resize;
         position: absolute;
-        z-index: k-zindex("content-resize-handle");
+        z-index: k-zindex("handle");
     }
 
 
@@ -722,7 +722,7 @@
         .k-grid-table {
             position: relative;
             float: left;
-            z-index: k-zindex("content-base");
+            z-index: k-zindex("elevated");
         }
 
         > .k-height-container {
@@ -807,11 +807,11 @@
     .k-grid .k-grid-row-sticky,
     .k-grid .k-grid-footer-sticky {
         position: sticky;
-        z-index: k-zindex("content-sticky");
+        z-index: k-zindex("header");
 
         &.k-edit-cell {
             overflow: visible;
-            z-index: k-zindex("content-edit-cell");
+            z-index: k-zindex("interactive");
         }
     }
 
@@ -823,7 +823,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: k-zindex("base-background");
+        z-index: k-zindex("bottom");
     }
 
     kendo-grid {
@@ -840,14 +840,14 @@
             position: sticky;
             top: inherit;
             bottom: inherit;
-            z-index: k-zindex("content-sticky");
+            z-index: k-zindex("elevated");
         }
 
         .k-grid-row-sticky td.k-grid-content-sticky,
         .k-grid-row-sticky.k-table-alt-row td.k-grid-content-sticky,
         .k-grid-row-sticky .k-table-td.k-grid-content-sticky,
         .k-grid-row-sticky.k-table-alt-row .k-table-td.k-grid-content-sticky {
-            z-index: k-zindex("content-sticky-intersection");
+            z-index: k-zindex-above("elevated");
         }
 
         // Locked and sticky
@@ -858,12 +858,12 @@
 
         .k-grid-header .k-grid-column-menu,
         .k-grid-header .k-grid-header-menu {
-            z-index: k-zindex("content-base");
+            z-index: k-zindex-above("base");
         }
     }
 
     .k-grid-content-sticky.k-grid-row-sticky {
-        z-index: k-zindex("content-sticky-intersectio");
+        z-index: k-zindex-above("elevated");
     }
 
     .k-grid .k-table .k-grid-header-sticky,
@@ -1071,7 +1071,7 @@
                 position: absolute;
                 background: none;
                 cursor: row-resize;
-                z-index: k-zindex("content-base");
+                z-index: k-zindex-above("base");
             }
         }
 
@@ -1202,7 +1202,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        z-index: k-zindex("content-base", 99);
+        z-index: k-zindex("top");
 
         > .k-i-loading {
             position: absolute;

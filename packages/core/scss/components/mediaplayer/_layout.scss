@@ -39,7 +39,7 @@
         padding-block: $kendo-media-player-titlebar-padding-y;
         padding-inline: $kendo-media-player-titlebar-padding-x;
         position: absolute;
-        z-index: k-zindex("content-base");
+        z-index: k-zindex("elevated");
         top: 0;
         left: 0;
         right: 0;
@@ -49,7 +49,7 @@
     // Toolbar
     .k-mediaplayer-toolbar-wrap {
         position: absolute;
-        z-index: k-zindex("content-base");
+        z-index: k-zindex("elevated");
         bottom: 0;
         left: 0;
         right: 0;
@@ -81,7 +81,7 @@
     .k-slider.k-mediaplayer-seekbar {
         width: 100%;
         position: absolute;
-        z-index: k-zindex("content-base");
+        z-index: k-zindex-above("base");
         top: 0;
         left: 0;
         transform: translateY( -50% );
@@ -95,7 +95,7 @@
     }
 
     .k-mediaplayer-fullscreen {
-        z-index: k-zindex("overlay-base");
+        z-index: k-zindex("overlay");
         position: fixed;
         top: 0;
         left: 0;

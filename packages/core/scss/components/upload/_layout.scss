@@ -239,7 +239,7 @@
             position: absolute;
             bottom: 0;
             right: 0;
-            z-index: k-zindex("content-base");
+            z-index: k-zindex("elevated");
         }
         input[disabled],
         input.k-disabled {

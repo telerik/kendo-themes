@@ -4,7 +4,7 @@
     // Marquee
     .k-marquee {
         position: absolute;
-        z-index: k-zindex("special-marquee");
+        z-index: k-zindex-above("top");
     }
 
     .k-marquee-color,

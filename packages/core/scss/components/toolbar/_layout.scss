@@ -55,7 +55,7 @@
                 height: 100%;
                 aspect-ratio: 1;
                 position: absolute;
-                z-index: k-zindex("content-base", 2);
+                z-index: k-zindex-above("elevated");
             }
 
             &::before {

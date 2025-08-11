@@ -25,7 +25,7 @@
         opacity: $kendo-drag-hint-opacity;
         overflow: hidden;
         position: absolute;
-        z-index: k-zindex("feedback-base");
+        z-index: k-zindex("floating");
         cursor: move;
     }
     .k-drag-status,
@@ -42,7 +42,7 @@
         justify-content: space-between;
         align-items: center;
         position: absolute;
-        z-index: k-zindex("feedback-base");;
+        z-index: k-zindex("floating");
         transform: translate(-50%, -50%);
     }
 

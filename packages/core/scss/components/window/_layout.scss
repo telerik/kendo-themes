@@ -19,7 +19,7 @@
         display: inline-flex;
         flex-direction: column;
         position: absolute;
-        z-index: k-zindex("overlay-window");
+        z-index: k-zindex("modal");
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 

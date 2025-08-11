@@ -15,7 +15,7 @@
         display: flex;
         align-items: center;
         // NOTE: This works around popup / tooltip stacking issue
-        z-index: k-zindex("popup-tooltip");
+        z-index: k-zindex("popup");
 
         // .k-callout-n { inset-inline-start: 16px; }
     }

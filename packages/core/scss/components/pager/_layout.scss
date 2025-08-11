@@ -54,7 +54,7 @@
         position: relative;
 
         &:hover {
-            z-index: k-zindex("content-base", 1);
+            z-index: k-zindex("elevated");
         }
     }
 
@@ -82,7 +82,7 @@
         // Selected state
         .k-selected {
             cursor: inherit;
-            z-index: k-zindex("content-base", 1);
+            z-index: k-zindex("elevated");
         }
     }
 

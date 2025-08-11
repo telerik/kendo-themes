@@ -173,7 +173,7 @@
         > .k-button:active,
         > .k-button.k-active,
         > .k-button.k-selected {
-            z-index: k-zindex("content-base", 1);
+            z-index: k-zindex("elevated");
         }
 
         .k-button:not(:first-child):not(:last-child) {
