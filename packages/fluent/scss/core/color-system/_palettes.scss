@@ -1,621 +1,305 @@
 @use "sass:map";
 
 // Palettes
-$_default-palette-gray: (
+$_default-palette-neutral-gray: (
     "white": #ffffff,
-    1: #faf9f8,
-    2: #f3f2f1,
-    3: #edebe9,
-    4: #e1dfdd,
-    5: #d2d0ce,
-    6: #c8c6c4,
-    7: #a19f9d,
-    8: #979593,
-    9: #8a8886,
-    10: #797775,
-    11: #605e5c,
-    12: #4e4d4b,
-    13: #3b3a39,
-    14: #323130,
-    15: #201f1e,
+    1: #fafafa,
+    2: #f5f5f5,
+    3: #f0f0f0,
+    4: #ebebeb,
+    5: #e0e0e0,
+    6: #d1d1d1,
+    7: #c7c7c7,
+    8: #b3b3b3,
+    9: #9e9e9e,
+    10: #8a8a8a,
+    11: #707070,
+    12: #616161,
+    13: #424242,
+    14: #333333,
+    15: #242424,
     "black": #000000,
 );
 
-$_default-palette-ocean-blue: (
-    1: #eff6fc,
-    2: #deecf9,
-    3: #c7e0f4,
-    4: #abd1ef,
-    5: #8ec2eb,
-    6: #72b3e6,
-    7: #1c87d9,
-    8: #0078d4,
-    9: #106ebe,
-    10: #005a9e,
-    11: #004578,
-    12: #003760,
-    13: #002948,
-    14: #001c30,
-    15: #000e18,
+$_default-palette-blue: (
+    1: #ebf3fc,
+    2: #cfe4fa,
+    3: #abd1f8,
+    4: #96c6fa,
+    5: #479ef5,
+    6: #1988f0,
+    7: #0f6cbd,
+    8: #115ea3,
+    9: #0f548c,
+    10: #0e4775,
+    11: #1e3345,
+    12: #0a2e4a,
+    13: #082338,
+    14: #061724,
+    15: #061724,
 );
 
-$_default-palette-crimson-red: (
-    1: #fef3f4,
-    2: #fde7e9,
-    3: #f3d2d4,
-    4: #e9bcbf,
-    5: #dfa7aa,
-    6: #d59195,
-    7: #cc7c80,
-    8: #c2666b,
-    9: #b85156,
-    10: #ae3b41,
-    11: #a4262c,
-    12: #831e23,
-    13: #62171a,
-    14: #420f12,
-    15: #220000,
+$_default-palette-berry: (
+    1: #fdf5fc,
+    2: #f5daf2,
+    3: #edbbe7,
+    4: #e59edd,
+    5: #e090d5,
+    6: #da7ed0,
+    7: #d161c4,
+    8: #cb4dbd,
+    9: #c239b3,
+    10: #af33a1,
+    11: #962c8a,
+    12: #6d2064,
+    13: #53184c,
+    14: #3a1136,
+    15: #20091d,
 );
 
-$_default-palette-dandelion-yellow: (
-    1: #fff9e7,
-    2: #fff4ce,
-    3: #ffedad,
-    4: #ffe58d,
-    5: #ffde6c,
-    6: #ffd74b,
-    7: #ffcf2b,
-    8: #ffc80a,
-    9: #f5c000,
-    10: #e0b000,
-    11: #cca000,
-    12: #a38000,
-    13: #7a6000,
-    14: #524000,
-    15: #292000,
-);
-
-$_default-palette-forest-green: (
-    1: #effbee,
-    2: #dff6dd,
-    3: #c8e8c6,
-    4: #b1dbaf,
-    5: #9acd99,
-    6: #83c082,
-    7: #6cb26b,
-    8: #55a554,
-    9: #3e973e,
-    10: #278a27,
+$_default-palette-green: (
+    1: #f1faf1,
+    2: #c9eac9,
+    3: #9fd89f,
+    4: #84cd84,
+    5: #70c270,
+    6: #64b964,
+    7: #54b054,
+    8: #479e47,
+    9: #359735,
+    10: #258d25,
     11: #107c10,
-    12: #0d630d,
-    13: #0a4a0a,
-    14: #063206,
-    15: #031903,
+    12: #0e700e,
+    13: #0c5e0c,
+    14: #094509,
+    15: #052505,
 );
 
-$_default-palette-cobalt-blue: (
-    1: #e7f2ff,
-    2: #cee5ff,
-    3: #add4ff,
-    4: #8dc3ff,
-    5: #6cb2ff,
-    6: #4ba0ff,
-    7: #2b8fff,
-    8: #0a7eff,
-    9: #096edf,
-    10: #085ebf,
-    11: #064f9f,
-    12: #053f80,
-    13: #042f60,
-    14: #032040,
-    15: #011020,
+$_default-palette-cranberry: (
+    1: #fdf3f4,
+    2: #f6d1d5,
+    3: #f4c3c7,
+    4: #eeacb2,
+    5: #e78890,
+    6: #dc626d,
+    7: #ce3b47,
+    8: #c50f1f,
+    9: #b10e1c,
+    10: #960b18,
+    11: #810812,
+    12: #6e0811,
+    13: #4b0206,
+    14: #3b0509,
+    15: #200205,
 );
 
-$_default-palette-azure-blue: (
-    1: #eaf3fb,
-    2: #deecf9,
-    3: #bfdbf3,
-    4: #aacfef,
-    5: #95c3ec,
-    6: #80b8e8,
-    7: #4094dc,
-    8: #2b88d8,
-    9: #287ec7,
-    10: #2473b7,
-    11: #2169a6,
-    12: #1e5e96,
-    13: #1a5485,
-    14: #174974,
-    15: #0d2a42,
+$_default-palette-orange: (
+    1: #fff9f5,
+    2: #fee5d7,
+    3: #fdcfb4,
+    4: #fcb992,
+    5: #faa06b,
+    6: #f98845,
+    7: #f87528,
+    8: #f7630c,
+    9: #de590b,
+    10: #bc4b09,
+    11: #a04008,
+    12: #8a3707,
+    13: #612705,
+    14: #4a1e04,
+    15: #200e04,
 );
 
-$_default-palette-sapphire-blue: (
-    1: #ebf7fa,
-    2: #e0f3f7,
-    3: #d6eff4,
-    4: #bfe5ee,
-    5: #80ccdd,
-    6: #61c0d5,
-    7: #40b3cd,
-    8: #21a6c5,
-    9: #0099bc,
-    10: #0085a4,
-    11: #00738d,
-    12: #005f75,
-    13: #004d5e,
-    14: #00262f,
-    15: #001317,
+$_default-palette-steel-blue: (
+    1: #f6fafe,
+    2: #dcedfa,
+    3: #bfddf5,
+    4: #a3cdf0,
+    5: #83bdeb,
+    6: #65ade5,
+    7: #4fa1e1,
+    8: #3a96dd,
+    9: #3991d5,
+    10: #3487c7,
+    11: #2c72a8,
+    12: #20547c,
+    13: #174169,
+    14: #112d4e,
+    15: #091823,
 );
 
-$_default-palette-cardinal-red: (
-    1: #fdf0f1,
-    2: #fce9eb,
-    3: #fbe2e4,
-    4: #f9d1d5,
-    5: #f3a3aa,
-    6: #f08e96,
-    7: #ed7680,
-    8: #ea606c,
-    9: #e74856,
-    10: #c93f4b,
-    11: #ad3641,
-    12: #8f2d35,
-    13: #74242b,
-    14: #3a1216,
-    15: #1c090a,
+$_default-palette-techno-teal: (
+    1: #eaf5f6,
+    2: #d4eced,
+    3: #bfe2e3,
+    4: #a9d9da,
+    5: #94cfd1,
+    6: #7bc4c6,
+    7: #5fb8bb,
+    8: #42afb3,
+    9: #2aa0a4,
+    10: #268e92,
+    11: #20787b,
+    12: #1a6365,
+    13: #155052,
+    14: #0f3739,
+    15: #091f20,
 );
 
-$_default-palette-cyber-yellow: (
-    1: #fff9eb,
-    2: #fff7e0,
-    3: #fff4d6,
-    4: #ffedbf,
-    5: #ffdc80,
-    6: #ffd461,
-    7: #ffcb40,
-    8: #ffc221,
-    9: #ffb900,
-    10: #dea100,
-    11: #bf8b00,
-    12: #9e7300,
-    13: #805d00,
-    14: #402e00,
-    15: #1f1600,
+$_default-palette-saffron-forge: (
+    1: #faf8ef,
+    2: #f0ead0,
+    3: #e6dcb2,
+    4: #dfd19a,
+    5: #d7c580,
+    6: #ceb964,
+    7: #c2a940,
+    8: #b69a2b,
+    9: #ae8c00,
+    10: #997a00,
+    11: #826900,
+    12: #6b5600,
+    13: #574600,
+    14: #3d3100,
+    15: #292100,
 );
 
-$_default-palette-denim-blue: (
-    1: #ebf4fc,
-    2: #e0effa,
-    3: #d6e9f9,
-    4: #bfddf5,
-    5: #80bbeb,
-    6: #61abe6,
-    7: #409ae1,
-    8: #218adc,
-    9: #0078d7,
-    10: #0068bb,
-    11: #005aa1,
-    12: #004a85,
-    13: #003c6c,
-    14: #001e36,
-    15: #000e1a,
+$_default-palette-electric-fuchsia: (
+    1: #fdedf7,
+    2: #fbdaee,
+    3: #f8bfe2,
+    4: #f49ad1,
+    5: #f180c5,
+    6: #ed5eb6,
+    7: #ea40a9,
+    8: #e61e99,
+    9: #e3008c,
+    10: #c7007b,
+    11: #aa0069,
+    12: #8f0058,
+    13: #720046,
+    14: #520032,
+    15: #290019,
+);
+
+$_default-palette-bright-basil: (
+    1: #f1f9f0,
+    2: #dbf1da,
+    3: #c5e8c4,
+    4: #b0e0ae,
+    5: #9ad798,
+    6: #89d086,
+    7: #6fc66c,
+    8: #4eb94a,
+    9: #2eb22a,
+    10: #13a10e,
+    11: #118d0c,
+    12: #0e790b,
+    13: #0c6709,
+    14: #0a5107,
+    15: #062f04,
 );
 
 $_default-palette-iris-purple: (
-    1: #f5f3f9,
-    2: #f1ecf6,
-    3: #ece6f4,
-    4: #e1d8ed,
+    1: #edf0fd,
+    2: #dfe4fc,
+    3: #d1d8fa,
+    4: #bec9f8,
     5: #c3b1db,
-    6: #b59fd3,
+    6: #99aaf4,
     7: #a58bca,
-    8: #9778c1,
-    9: #8764b8,
-    10: #7557a0,
-    11: #654b8a,
-    12: #543e72,
-    13: #44325c,
-    14: #22192e,
-    15: #100c16,
+    8: #758bf0,
+    9: #637cef,
+    10: #516Ad6,
+    11: #4a5db3,
+    12: #3d4d94,
+    13: #323e78,
+    14: #242c56,
+    15: #12162b,
 );
 
-$_default-palette-lime-green: (
-    1: #ebfbf3,
-    2: #e0f9ed,
-    3: #d6f7e7,
-    4: #bff2da,
-    5: #80e5b4,
-    6: #61dfa3,
-    7: #40d98f,
-    8: #21d37d,
-    9: #00cc6a,
-    10: #00b15c,
-    11: #009950,
-    12: #007e42,
-    13: #006635,
-    14: #00331b,
-    15: #00180d,
+$_default-palette-terracotta-heat: (
+    1: #FAF0EA,
+    2: #F6E0D5,
+    3: #F0CDBC,
+    4: #EBBBA3,
+    5: #E5A787,
+    6: #DD9269,
+    7: #D77C4C,
+    8: #D66529,
+    9: #CA5010,
+    10: #B3480F,
+    11: #973C0C,
+    12: #7F330A,
+    13: #652808,
+    14: #4B1E06,
+    15: #260F03,
 );
 
 // stylelint-disable scss/no-global-function-names
 /// The Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.
 /// @group palette
-$kendo-palette-gray: $_default-palette-gray !default;
-$kendo-palette-gray: map.merge($_default-palette-gray, $kendo-palette-gray);
+$kendo-palette-neutral-gray: $_default-palette-neutral-gray !default;
+$kendo-palette-neutral-gray: map.merge($_default-palette-neutral-gray, $kendo-palette-neutral-gray);
 
-/// The Ocean Blue Palette provides colors to the Primary variable group.
+/// The Blue Palette provides colors to the Primary variable group.
 /// @group palette
-$kendo-palette-ocean-blue: $_default-palette-ocean-blue !default;
-$kendo-palette-ocean-blue: map.merge($_default-palette-ocean-blue, $kendo-palette-ocean-blue);
+$kendo-palette-blue: $_default-palette-blue !default;
+$kendo-palette-blue: map.merge($_default-palette-blue, $kendo-palette-blue);
 
-/// The Crimson Red Palette provides colors to the Error variable group.
+/// The Berry Palette provides colors to the Tertiary variable group.
 /// @group palette
-$kendo-palette-crimson-red: $_default-palette-crimson-red !default;
-$kendo-palette-crimson-red: map.merge($_default-palette-crimson-red, $kendo-palette-crimson-red);
+$kendo-palette-berry: $_default-palette-berry !default;
+$kendo-palette-berry: map.merge($_default-palette-berry, $kendo-palette-berry);
 
-/// The Dandelion Yellow Palette provides colors to the Warning variable group.
+/// The Green Palette provides colors to the Success variable group.
 /// @group palette
-$kendo-palette-dandelion-yellow: $_default-palette-dandelion-yellow !default;
-$kendo-palette-dandelion-yellow: map.merge($_default-palette-dandelion-yellow, $kendo-palette-dandelion-yellow);
+$kendo-palette-green: $_default-palette-green !default;
+$kendo-palette-green: map.merge($_default-palette-green, $kendo-palette-green);
 
-/// The Forest Green Palette provides colors to the Success variable group.
+/// The Cranberry Palette provides colors to the Error variable group.
 /// @group palette
-$kendo-palette-forest-green: $_default-palette-forest-green !default;
-$kendo-palette-forest-green: map.merge($_default-palette-forest-green, $kendo-palette-forest-green);
+$kendo-palette-cranberry: $_default-palette-cranberry !default;
+$kendo-palette-cranberry: map.merge($_default-palette-cranberry, $kendo-palette-cranberry);
 
-/// The Cobalt Blue Palette provides colors to the Info variable group.
+/// The Orange Palette provides colors to the Warning variable group.
 /// @group palette
-$kendo-palette-cobalt-blue: $_default-palette-cobalt-blue !default;
-$kendo-palette-cobalt-blue: map.merge($_default-palette-cobalt-blue, $kendo-palette-cobalt-blue);
+$kendo-palette-orange: $_default-palette-orange !default;
+$kendo-palette-orange: map.merge($_default-palette-orange, $kendo-palette-orange);
 
-/// The Azure Blue Palette provides colors to the Tertiary variable group.
+/// The Steel Blue Palette provides colors to the Info variable group.
 /// @group palette
-$kendo-palette-azure-blue: $_default-palette-azure-blue !default;
-$kendo-palette-azure-blue: map.merge($_default-palette-azure-blue, $kendo-palette-azure-blue);
+$kendo-palette-steel-blue: $_default-palette-steel-blue !default;
+$kendo-palette-steel-blue: map.merge($_default-palette-steel-blue, $kendo-palette-steel-blue);
 
 /// The Sapphire Blue Palette provides colors to the Series A variable group.
 /// @group palette
-$kendo-palette-sapphire-blue: $_default-palette-sapphire-blue !default;
-$kendo-palette-sapphire-blue: map.merge($_default-palette-sapphire-blue, $kendo-palette-sapphire-blue);
+$kendo-palette-techno-teal: $_default-palette-techno-teal !default;
+$kendo-palette-techno-teal: map.merge($_default-palette-techno-teal, $kendo-palette-techno-teal);
 
-/// The Cardinal Red Palette provides colors to the Series B variable group.
+/// The Saffron Forge Palette provides colors to the Series B variable group.
 /// @group palette
-$kendo-palette-cardinal-red: $_default-palette-cardinal-red !default;
-$kendo-palette-cardinal-red: map.merge($_default-palette-cardinal-red, $kendo-palette-cardinal-red);
+$kendo-palette-saffron-forge: $_default-palette-saffron-forge !default;
+$kendo-palette-saffron-forge: map.merge($_default-palette-saffron-forge, $kendo-palette-saffron-forge);
 
-/// The Cyber Yellow Palette provides colors to the Series C variable group.
+/// The Electric Fuchsia Palette provides colors to the Series C variable group.
 /// @group palette
-$kendo-palette-cyber-yellow: $_default-palette-cyber-yellow !default;
-$kendo-palette-cyber-yellow: map.merge($_default-palette-cyber-yellow, $kendo-palette-cyber-yellow);
+$kendo-palette-electric-fuchsia: $_default-palette-electric-fuchsia !default;
+$kendo-palette-electric-fuchsia: map.merge($_default-palette-electric-fuchsia, $kendo-palette-electric-fuchsia);
 
-/// The Denim Blue Palette provides colors to the Series D variable group.
+/// The Bright Basil Palette provides colors to the Series D variable group.
 /// @group palette
-$kendo-palette-denim-blue: $_default-palette-denim-blue !default;
-$kendo-palette-denim-blue: map.merge($_default-palette-denim-blue, $kendo-palette-denim-blue);
+$kendo-palette-bright-basil: $_default-palette-bright-basil !default;
+$kendo-palette-bright-basil: map.merge($_default-palette-bright-basil, $kendo-palette-bright-basil);
 
-/// The Iris Purple Palette provides colors to the Series E variable group.
+// The Iris Purple Palette provides colors to the Series E variable group.
 /// @group palette
 $kendo-palette-iris-purple: $_default-palette-iris-purple !default;
 $kendo-palette-iris-purple: map.merge($_default-palette-iris-purple, $kendo-palette-iris-purple);
 
-/// The Lime Green Palette provides colors to the Series F variable group.
+// The Iris Purple Palette provides colors to the Series F variable group.
 /// @group palette
-$kendo-palette-lime-green: $_default-palette-lime-green !default;
-$kendo-palette-lime-green: map.merge($_default-palette-lime-green, $kendo-palette-lime-green);
+$kendo-palette-terracotta-heat: $_default-palette-terracotta-heat !default;
+$kendo-palette-terracotta-heat: map.merge($_default-palette-terracotta-heat, $kendo-palette-terracotta-heat);
 // stylelint-enable scss/no-global-function-names
-
-
-$kendo-palettes: (
-    primary: (
-        10: #eff6fc,
-        20: #deecf9,
-        30: #c7e0f4,
-        40: #abd1ef,
-        50: #8ec2eb,
-        60: #72b3e6,
-        70: #55a5e2,
-        80: #3996dd,
-        90: #1c87d9,
-        100: #0078d4,
-        110: #106ebe,
-        120: #005a9e,
-        130: #004578,
-        140: #0f416c,
-        150: #153b60,
-        160: #173655,
-        170: #18304a,
-        180: #182a3f,
-        190: #162435,
-        200: #131d29,
-        210: #0e151e,
-        220: #070b10,
-    ),
-    neutral: (
-        10: #faf9f8,
-        20: #f3f2f1,
-        30: #edebe9,
-        40: #e1dfdd,
-        50: #d2d0ce,
-        60: #c8c6c4,
-        70: #bdbbb8,
-        80: #b3b0ad,
-        90: #a19f9d,
-        100: #979593,
-        110: #8a8886,
-        120: #797775,
-        130: #605e5c,
-        140: #484644,
-        150: #3b3a39,
-        160: #323130,
-        170: #292827,
-        180: #252423,
-        190: #201f1e,
-        200: #1b1a19,
-        210: #161514,
-        220: #11100f,
-    ),
-    error: (
-        10: #fef3f4,
-        20: #fde7e9,
-        30: #fcdbde,
-        40: #fbcfd3,
-        50: #fac3c8,
-        60: #f9b7bd,
-        70: #f8abb2,
-        80: #f79fa7,
-        90: #f6939c,
-        100: #f58791,
-        110: #e8797f,
-        120: #df6b6f,
-        130: #d75e5f,
-        140: #ce5250,
-        150: #c64541,
-        160: #be3a34,
-        170: #b73029,
-        180: #af251f,
-        190: #a80000,
-        200: #77231c,
-        210: #4d211d,
-        220: #251616,
-    ),
-    success: (
-        10: #effbee,
-        20: #dff6dd,
-        30: #cff2cc,
-        40: #bfedbb,
-        50: #afe8aa,
-        60: #9fe499,
-        70: #8fdf88,
-        80: #7fdb77,
-        90: #6fd666,
-        100: #5fd255,
-        110: #66b150,
-        120: #5da94c,
-        130: #54a248,
-        140: #4b9b44,
-        150: #429541,
-        160: #388f3e,
-        170: #2e893b,
-        180: #238338,
-        190: #107c10,
-        200: #1d5d34,
-        210: #193e2c,
-        220: #10211d,
-    ),
-    warning: (
-        10: #fff9e7,
-        20: #fff4ce,
-        30: #ffefb6,
-        40: #ffe99d,
-        50: #ffe384,
-        60: #ffde6c,
-        70: #ffd954,
-        80: #ffd33b,
-        90: #ffcd23,
-        100: #ffc80a,
-        110: #eebd2f,
-        120: #deb341,
-        130: #cfaa4e,
-        140: #c0a059,
-        150: #b19862,
-        160: #a38f69,
-        170: #94876e,
-        180: #877f72,
-        190: #797775,
-        200: #555557,
-        210: #35373b,
-        220: #1a1c20,
-    ),
-    info: (
-        10: #e7f2ff,
-        20: #cee5ff,
-        30: #b6d8ff,
-        40: #9dcbff,
-        50: #84bfff,
-        60: #6cb2ff,
-        70: #54a5ff,
-        80: #3b98ff,
-        90: #238bff,
-        100: #0a7eff,
-        110: #0974eb,
-        120: #086bd8,
-        130: #0861c4,
-        140: #0757b1,
-        150: #064e9d,
-        160: #054489,
-        170: #053a76,
-        180: #043062,
-        190: #03274e,
-        200: #021d3b,
-        210: #021327,
-        220: #010a14,
-    ),
-    tertiary: (
-        10: #eaf3fb,
-        20: #deecf9,
-        30: #bfdbf3,
-        40: #aacfef,
-        50: #95c3ec,
-        60: #80b8e8,
-        70: #6bace4,
-        80: #55a0e0,
-        90: #4094dc,
-        100: #2b88d8,
-        110: #287ec7,
-        120: #2473b7,
-        130: #2169a6,
-        140: #1e5e96,
-        150: #1a5485,
-        160: #174974,
-        170: #143f64,
-        180: #113453,
-        190: #0d2a42,
-        200: #0a1f32,
-        210: #071521,
-        220: #030a11,
-    ),
-    series-a: (
-        10: #bfe6ee,
-        20: #aadde8,
-        30: #95d4e3,
-        40: #80ccde,
-        50: #6bc9de,
-        60: #55c5df,
-        70: #40b3cd,
-        80: #2bb4d4,
-        90: #15a7c8,
-        100: #0099bc,
-        110: #008cac,
-        120: #00809d,
-        130: #00738d,
-        140: #00667d,
-        150: #00596e,
-        160: #004d5e,
-        170: #003f4e,
-        180: #00333f,
-        190: #00262f,
-        200: #001c23,
-        210: #001318,
-        220: #000a0c,
-    ),
-    series-b: (
-        10: #f9d1d5,
-        20: #f7c2c7,
-        30: #f5b2b9,
-        40: #f3a4ab,
-        50: #f1949d,
-        60: #ef858e,
-        70: #ed7680,
-        80: #eb6772,
-        90: #e95764,
-        100: #e74856,
-        110: #d4424f,
-        120: #c03c47,
-        130: #ad3641,
-        140: #9a3039,
-        150: #862a32,
-        160: #74242b,
-        170: #601e24,
-        180: #4d181c,
-        190: #3a1216,
-        200: #2c0e10,
-        210: #1d090b,
-        220: #0f0505,
-    ),
-    series-c: (
-        10: #ffeebf,
-        20: #ffe7aa,
-        30: #ffe295,
-        40: #ffdc80,
-        50: #ffd66b,
-        60: #ffd055,
-        70: #ffcb40,
-        80: #ffc42b,
-        90: #ffbf15,
-        100: #ffb900,
-        110: #eaaa00,
-        120: #d49a00,
-        130: #bf8b00,
-        140: #aa7b00,
-        150: #956c00,
-        160: #805d00,
-        170: #6b4d00,
-        180: #553d00,
-        190: #402e00,
-        200: #302300,
-        210: #201700,
-        220: #100c00,
-    ),
-    series-d: (
-        10: #bfddf5,
-        20: #aadde8,
-        30: #95c6ee,
-        40: #80bceb,
-        50: #6bb0e8,
-        60: #55a5e4,
-        70: #409ae1,
-        80: #2b8fde,
-        90: #1583da,
-        100: #0078d7,
-        110: #006ec5,
-        120: #0064b3,
-        130: #005aa1,
-        140: #00508f,
-        150: #00467d,
-        160: #003c6c,
-        170: #003259,
-        180: #002848,
-        190: #001e36,
-        200: #001623,
-        210: #000f1b,
-        220: #00080e,
-    ),
-    series-e: (
-        10: #e1d8ed,
-        20: #d7cbe7,
-        30: #cdbee1,
-        40: #c3b2dc,
-        50: #b9a4d5,
-        60: #af98d0,
-        70: #a58bca,
-        80: #9b7ec4,
-        90: #9171be,
-        100: #8764b8,
-        110: #7c5ca9,
-        120: #705399,
-        130: #654b8a,
-        140: #5a437b,
-        150: #4e3a6b,
-        160: #44325c,
-        170: #382a4d,
-        180: #2d213d,
-        190: #22192e,
-        200: #1a1323,
-        210: #110d17,
-        220: #09060c,
-    ),
-    series-f: (
-        10: #bff2da,
-        20: #aaeecd,
-        30: #95e9c1,
-        40: #80e6b5,
-        50: #6be1a8,
-        60: #55dd9b,
-        70: #40d98f,
-        80: #2bd583,
-        90: #15d076,
-        100: #00cc6a,
-        110: #00bb61,
-        120: #00aa58,
-        130: #009950,
-        140: #008846,
-        150: #00773e,
-        160: #006635,
-        170: #00552c,
-        180: #004423,
-        190: #00331b,
-        200: #002614,
-        210: #001a0d,
-        220: #000d07,
-    ),
-) !default;
