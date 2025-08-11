@@ -18,6 +18,20 @@
             }
         }
 
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+
+            &:focus,
+            &.k-focus,
+            &:focus-within {
+
+                &::after {
+                    border-color: $kendo-input-invalid-border;
+                }
+            }
+        }
+
         &:disabled,
         &[disabled],
         &.k-disabled {
@@ -35,31 +49,31 @@
                 background: none;
             }
         }
+    }
 
-        // Invalid
+    .k-input-solid,
+    .k-picker-solid {
+
+        &:focus,
+        &.k-focus,
+        &:focus-within {
+            border-color: $kendo-input-border;
+            border-bottom-color: $kendo-input-focus-border;
+
+        }
+
         &.k-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            border-color: $kendo-input-invalid-border;
 
-            &::after {
-                border-color: $kendo-input-invalid-border;
+            &:focus,
+            &.k-focus,
+            &:focus-within {
+                border-color: $kendo-input-border;
+                border-bottom-color: $kendo-input-invalid-border;
+
             }
 
-            .k-input-validation-icon {
-                color: $kendo-input-invalid-text;
-            }
-
-            &:focus:hover,
-            &.k-focus:hover,
-            &:focus.k-hover,
-            &.k-focus.k-hover {
-                border-color: $kendo-input-invalid-border;
-
-                .k-input-validation-icon {
-                    color: $kendo-input-invalid-text;
-                }
-            }
         }
     }
 

@@ -11,24 +11,21 @@
     .k-input,
     .k-picker {
 
-        &:focus,
-        &.k-focus,
-        &:focus-within {
-
-            &::after {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                border-width: $kendo-input-focus-border-width;
-                border-style: solid;
-                border-radius: inherit;
-                pointer-events: none;
-                z-index: 1;
-            }
+        &::after {
+            content: '';
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            right: -1px;
+            bottom: -1px;
+            left: -1px;
+            height: 4px;
+            border-width: 0 0 $kendo-input-border-width;
+            border-style: solid;
+            border-end-start-radius: inherit;
+            border-end-end-radius: inherit;
+            pointer-events: none;
+            z-index: 1;
         }
     }
 
@@ -89,8 +86,8 @@
 
 
     // Fill mode
-    .k-input-flat,
-    .k-picker-flat {
+    .k-input,
+    .k-picker {
 
         &:focus,
         &.k-focus,
@@ -115,6 +112,36 @@
                 }
             }
         }
+    }
+
+    .k-input-outline,
+    .k-picker-outline {
+
+        &::after {
+            display: none;
+        }
+
+        &:focus,
+        &.k-focus,
+        &:focus-within {
+
+            outline: $kendo-input-focus-border-width solid k-color(primary);
+            outline-offset: calc( -1 * #{$kendo-input-focus-border-width} );
+
+        }
+
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+
+            &:focus,
+            &.k-focus,
+            &:focus-within {
+
+                outline-color: k-color(error-on-surface);
+            }
+        }
+
     }
 
     .k-input-flat,
