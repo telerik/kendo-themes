@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v11.3.3-dev.0...v12.0.0-dev.0) (2025-08-11)
+
+
+### Features
+
+* **html:** enhance Chat component with new features ([d6a06ed](https://github.com/telerik/kendo-themes/commit/d6a06ed02994d5ff832680e9ffef0774367e2202))
+
+
+
+
+
 ## [11.3.3-dev.0](https://github.com/telerik/kendo-themes/compare/v11.3.2...v11.3.3-dev.0) (2025-08-11)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

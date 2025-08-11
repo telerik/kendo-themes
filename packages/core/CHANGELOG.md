@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v11.3.3-dev.0...v12.0.0-dev.0) (2025-08-11)
+
+
+### Features
+
+* **chat:** enhance component styles with improved and new features ([238c864](https://github.com/telerik/kendo-themes/commit/238c86485ed8234cd8cfb29651fd688b14dca3c7))
+
+
+### BREAKING CHANGES
+
+* **chat:** The Chat component's rendering and styles have been
+significantly updated to support modern conversational interfaces. This
+release introduces notable enhancements in the Chat rendering and adds
+new features such as a header, expandable and full-width messages,
+single and multiple file attachments, file pinning, interactive bubble
+states, an animated typing indicator, etc.
+
+
+
+
+
 ## [11.3.3-dev.0](https://github.com/telerik/kendo-themes/compare/v11.3.2...v11.3.3-dev.0) (2025-08-11)
 
 **Note:** Version bump only for package @progress/kendo-theme-core
