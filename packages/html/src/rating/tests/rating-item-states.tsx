@@ -16,18 +16,29 @@ export default () =>(
             <span></span>
             <span>Rating item states</span>
 
-            {[ "normal", ...RatingItem.states ].map((state)=>(
-                <>
-                    <div>{state}</div>
-                    <section>
-                        <RatingItem { ...{ [state]: true }} iconType="solid"/>
-                    </section>
-                </>
-            ))}
-
+            <div>normal</div>
+            <section>
+                <RatingItem iconType="outline"/>
+            </section>
+            <div>hover</div>
+            <section>
+                <RatingItem hover iconType="solid"/>
+            </section>
+            <div>focus</div>
+            <section>
+                <RatingItem focus iconType="outline"/>
+            </section>
+            <div>selected</div>
+            <section>
+                <RatingItem selected iconType="solid"/>
+            </section>
             <div>hover selected</div>
             <section>
                 <RatingItem hover selected iconType="solid"/>
+            </section>
+            <div>focus selected</div>
+            <section>
+                <RatingItem focus selected iconType="solid"/>
             </section>
         </div>
     </>

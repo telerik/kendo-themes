@@ -33,10 +33,26 @@ $kendo-line-height-sm: 1.25 !default;
 $kendo-line-height-md: $kendo-line-height !default;
 /// The large line height across all components.
 /// @group typography
-$kendo-line-height-lg: 1.5 !default;
+$kendo-line-height-lg: 1.33 !default;
 /// The base line height in ems across all components.
 /// @group typography
 $kendo-line-height-em: calc( #{$kendo-line-height} * 1em) !default;
+
+/// The light font weight across all components.
+/// @group typography
+$kendo-font-weight-light: 300 !default;
+/// The base font weight across all components.
+/// @group typography
+$kendo-font-weight-normal: 400 !default;
+/// The medium font weight across all components.
+/// @group typography
+$kendo-font-weight-medium: 500 !default;
+/// The semibold font weight across all components.
+/// @group typography
+$kendo-font-weight-semibold: 600 !default;
+/// The bold font weight across all components.
+/// @group typography
+$kendo-font-weight-bold: 700 !default;
 
 /// The base letter spacing across all components.
 /// @group typography
@@ -59,6 +75,14 @@ $_default-line-heights: (
     sm: $kendo-line-height-sm,
     md: $kendo-line-height-md,
     lg: $kendo-line-height-lg,
+) !default;
+
+$_default-font-weights: (
+    light: $kendo-font-weight-light,
+    normal: $kendo-font-weight-normal,
+    medium: $kendo-font-weight-medium,
+    semibold: $kendo-font-weight-semibold,
+    bold: $kendo-font-weight-bold
 ) !default;
 
 /// The font sizes map

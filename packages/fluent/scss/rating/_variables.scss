@@ -23,13 +23,13 @@ $kendo-rating-item-padding-x: var( --kendo-rating-item-padding-x, #{k-spacing(0.
 $kendo-rating-item-padding-y: var( --kendo-rating-item-padding-y, #{k-spacing(2)} ) !default;
 /// The text color of the Rating item.
 /// @group rating
-$kendo-rating-item-text: var( --kendo-rating-item-text, #{k-color(subtle)} ) !default;
+$kendo-rating-item-text: var( --kendo-rating-item-text, #{k-color(on-app-surface)} ) !default;
 /// The text color of the hovered Rating item.
 /// @group rating
-$kendo-rating-item-hover-text: var( --kendo-rating-item-hover-text, #{k-color(primary)} ) !default;
+$kendo-rating-item-hover-text: var( --kendo-rating-item-hover-text, #{k-color(on-app-surface)} ) !default;
 /// The outline width of the focused Rating item.
 /// @group rating
-$kendo-rating-item-focus-outline-width: var( --kendo-rating-item-focus-outline-width, 1px ) !default;
+$kendo-rating-item-focus-outline-width: var( --kendo-rating-item-focus-outline-width, 2px ) !default;
 /// The outline style of the focused Rating item.
 /// @group rating
 $kendo-rating-item-focus-outline-style: var( --kendo-rating-item-focus-outline-style, solid ) !default;
@@ -39,9 +39,6 @@ $kendo-rating-item-focus-outline: var( --kendo-rating-item-focus-outline, curren
 /// The text color of the selected Rating item.
 /// @group rating
 $kendo-rating-item-selected-text: var( --kendo-rating-item-selected-text, #{k-color(on-app-surface)} ) !default;
-/// The text color of the selected and hovered Rating item.
-/// @group rating
-$kendo-rating-item-selected-hover-text: var( --kendo-rating-item-selected-hover-text, #{k-color(primary-active)} ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/rating/_variables.scss" with (
     $kendo-rating-font-family: $kendo-rating-font-family,

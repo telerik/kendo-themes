@@ -5,6 +5,19 @@
 @mixin kendo-dock-manager--layout() {
     @include kendo-dock-manager--layout-base();
 
+    .k-dock-manager-splitter {
+        .k-pane-header {
+            padding-block-start: $kendo-dock-manager-pane-header-padding-x;
+        }
+    }
+
+    .k-dock-manager-splitter,
+    .k-dock-manager-unpinned-container {
+        .k-splitbar {
+            border-width: 0;
+        }
+    }
+
     .k-dock-manager-toolbar {
         box-shadow: none;
     }
@@ -12,8 +25,7 @@
     .k-dock-manager-splitter,
     .k-dock-manager-unpinned-container {
         .k-pane-tabbed {
-            padding-block: $kendo-dock-manager-tabbed-pane-padding-y;
-            padding-inline: $kendo-dock-manager-tabbed-pane-padding-x;
+            padding-block-end: $kendo-dock-manager-tabbed-pane-padding-x;
         }
     }
 

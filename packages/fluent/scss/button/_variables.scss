@@ -8,43 +8,43 @@ $kendo-button-border-width: var( --kendo-button-border-width, 1px ) !default;
 
 /// The horizontal padding of the small Button.
 /// @group button
-$kendo-button-sm-padding-x: var( --kendo-button-sm-padding-x, k-spacing(5) ) !default;
+$kendo-button-sm-padding-x: var( --kendo-button-sm-padding-x, k-spacing(2) ) !default;
 /// The horizontal padding of the medium Button.
 /// @group button
-$kendo-button-md-padding-x: var( --kendo-button-md-padding-x, k-spacing(5) ) !default;
+$kendo-button-md-padding-x: var( --kendo-button-md-padding-x, k-spacing(3) ) !default;
 /// The horizontal padding of the large Button.
 /// @group button
-$kendo-button-lg-padding-x: var( --kendo-button-lg-padding-x, k-spacing(5) ) !default;
+$kendo-button-lg-padding-x: var( --kendo-button-lg-padding-x, k-spacing(4) ) !default;
 
 /// The vertical padding of the small Button.
 /// @group button
-$kendo-button-sm-padding-y: var( --kendo-button-sm-padding-y, k-spacing(1) ) !default;
+$kendo-button-sm-padding-y: var( --kendo-button-sm-padding-y, calc( #{k-spacing(0.5)} + 1px ) ) !default;
 /// The vertical padding of the medium Button.
 /// @group button
-$kendo-button-md-padding-y: var( --kendo-button-md-padding-y, k-spacing(1.5) ) !default;
+$kendo-button-md-padding-y: var( --kendo-button-md-padding-y, calc( #{k-spacing(1)} + 1px ) ) !default;
 /// The vertical padding of the large Button.
 /// @group button
-$kendo-button-lg-padding-y: var( --kendo-button-lg-padding-y, k-spacing(2) ) !default;
+$kendo-button-lg-padding-y: var( --kendo-button-lg-padding-y, calc( #{k-spacing(2)} + 1px ) ) !default;
 
 /// The font size of the small Button.
 /// @group button
-$kendo-button-sm-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-button-sm-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The font size of the medium Button.
 /// @group button
 $kendo-button-md-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the large Button.
 /// @group button
-$kendo-button-lg-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-button-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
 
 /// The line height used along with the $kendo-font-size variable of the small Button.
 /// @group button
-$kendo-button-sm-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-button-sm-line-height: var( --kendo-line-height-lg, normal ) !default;
 /// The line height used along with the $kendo-font-size variable of the medium Button.
 /// @group button
 $kendo-button-md-line-height: var( --kendo-line-height, normal ) !default;
 /// The line height used along with the $kendo-font-size variable of the large Button.
 /// @group button
-$kendo-button-lg-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-button-lg-line-height: var( --kendo-line-height-sm, normal ) !default;
 
 /// The font family of the Button.
 /// @group button
@@ -52,7 +52,7 @@ $kendo-button-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The font weight of the Button.
 /// @group button
-$kendo-button-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+$kendo-button-font-weight: var( --kendo-font-weight-semibold, normal ) !default;
 
 /// The calculated height of the Button.
 /// @group button
@@ -91,16 +91,9 @@ $kendo-button-sizes: (
     )
 ) !default;
 
-/// The content spacing of the Button.
-/// @group button
-$kendo-button-spacing: var( --kendo-button-spacing, k-spacing(2) ) !default;
-
-/// The offset of the focused Button.
-/// @group button
-$kendo-button-focus-offset: var( --kendo-button-focus-offset, k-spacing(0.5) ) !default;
 /// The Outline width of the focused Button.
 /// @group button
-$kendo-button-focus-outline-width: var( --kendo-button-focus-outline-width, 1px ) !default;
+$kendo-button-focus-outline-width: var( --kendo-button-focus-outline-width, 2px ) !default;
 /// The outline style of the focused Button.
 /// @group button
 $kendo-button-focus-outline-style: var( --kendo-button-focus-outline-style, solid ) !default;
@@ -108,16 +101,10 @@ $kendo-button-focus-outline-style: var( --kendo-button-focus-outline-style, soli
 /// The offset of the flat focused Button.
 /// @group button
 $kendo-button-flat-focus-offset: var( --kendo-button-flat-focus-offset, 1px ) !default;
-/// The outline width of the flat focused Button.
-/// @group button
-$kendo-button-flat-focus-outline-width: var( --kendo-button-flat-focus-outline-width, k-spacing(0.5) ) !default;
 
 /// The offset of the link focused Button.
 /// @group button
 $kendo-button-link-focus-offset: var( --kendo-button-link-focus-offset, 0 ) !default;
-/// The outline width of the flat focused Button.
-/// @group button
-$kendo-button-link-focus-outline-width: var( --kendo-button-link-focus-outline-width, 1px ) !default;
 
 /// The opacity of the pulsing animation for the generating Button.
 /// @group button
@@ -147,7 +134,7 @@ $kendo-button-bg: var( --kendo-button-bg, k-color(base) ) !default;
 $kendo-button-text: var( --kendo-button-text, k-color(on-base) ) !default;
 /// The base border color of the Button.
 /// @group button
-$kendo-button-border: var( --kendo-button-border, k-color(border) ) !default;
+$kendo-button-border: var( --kendo-button-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
 /// The base background gradient of the Button.
 /// @group button
 $kendo-button-gradient: linear-gradient( var( --kendo-button-gradient, transparent, transparent ) ) !default;
@@ -163,32 +150,14 @@ $kendo-button-hover-bg: var( --kendo-button-hover-bg, k-color(base-hover) ) !def
 $kendo-button-hover-text: var( --kendo-button-hover-text, k-color(on-base) ) !default;
 /// The base border color of the hovered Button.
 /// @group button
-$kendo-button-hover-border: var( --kendo-button-hover-border, k-color(border) ) !default;
+$kendo-button-hover-border: var( --kendo-button-hover-border, color-mix( in srgb, k-color(border) 34%, transparent ) ) !default;
 
-/// The base background of the focused Button.
-/// @group button
-$kendo-button-focus-bg: var( --kendo-button-focus-bg, k-color(base) ) !default;
-/// The base text color of the focused Button.
-/// @group button
-$kendo-button-focus-text: var( --kendo-button-focus-text, k-color(on-base) ) !default;
 /// The base border color of the focused Button.
 /// @group button
-$kendo-button-focus-border: var( --kendo-button-focus-border, k-color(border) ) !default;
+$kendo-button-focus-border: var( --kendo-button-focus-border, k-color(border-alt) ) !default;
 /// The base outline color of the focused Button.
 /// @group button
 $kendo-button-focus-outline: var( --kendo-button-focus-outline, k-color(on-base) ) !default;
-/// The base background of the focused Button when hovered.
-/// @group button
-$kendo-button-focus-hover-bg: var( --kendo-button-focus-hover-bg, k-color(base-hover) ) !default;
-/// The base text color of the focused Button when hovered.
-/// @group button
-$kendo-button-focus-hover-text: var( --kendo-button-focus-hover-text, k-color(on-base) ) !default;
-/// The base border color of the focused Button when hovered.
-/// @group button
-$kendo-button-focus-hover-border: var( --kendo-button-focus-hover-border, k-color(border) ) !default;
-/// The base outline color of the focused Button when hovered.
-/// @group button
-$kendo-button-focus-hover-outline: var( --kendo-button-focus-hover-outline, k-color(on-base) ) !default;
 
 /// The base background of the active Button.
 /// @group button
@@ -198,43 +167,34 @@ $kendo-button-active-bg: var( --kendo-button-active-bg, k-color(base-active) ) !
 $kendo-button-active-text: var( --kendo-button-active-text, k-color(on-base) ) !default;
 /// The base border color of the active Button.
 /// @group button
-$kendo-button-active-border: var( --kendo-button-active-border, k-color(border) ) !default;
-/// The base background of the active Button when hovered.
-/// @group button
-$kendo-button-active-hover-bg: var( --kendo-button-active-hover-bg, k-color(base-hover) ) !default;
-/// The base text color of the active Button when hovered.
-/// @group button
-$kendo-button-active-hover-text: var( --kendo-button-active-hover-text, k-color(on-base) ) !default;
-/// The base border color of the active Button when hovered.
-/// @group button
-$kendo-button-active-hover-border: var( --kendo-button-active-hover-border, k-color(border) ) !default;
+$kendo-button-active-border: var( --kendo-button-active-border, $kendo-button-border ) !default;
 
 /// The base background of the disabled Button.
 /// @group button
-$kendo-button-disabled-bg: var( --kendo-button-disabled-bg, color-mix(in srgb, k-color(on-app-surface) 6%, transparent) ) !default;
+$kendo-button-disabled-bg: var( --kendo-button-disabled-bg, color-mix(in srgb, k-color(on-app-surface) 7%, transparent) ) !default;
 /// The base text color of the disabled Button.
 /// @group button
-$kendo-button-disabled-text: var( --kendo-button-disabled-text, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ) !default;
+$kendo-button-disabled-text: var( --kendo-button-disabled-text, color-mix(in srgb, k-color(on-app-surface) 30%, transparent) ) !default;
 /// The base border color of the disabled Button.
 /// @group button
-$kendo-button-disabled-border: var( --kendo-button-disabled-border, transparent ) !default;
+$kendo-button-disabled-border: var( --kendo-button-disabled-border, color-mix(in srgb, k-color(on-app-surface) 14%, transparent) ) !default;
 
 /// The base background of the disabled outline Button.
 /// @group button
 $kendo-button-outline-disabled-bg: var( --kendo-button-disabled-bg, initial ) !default;
 /// The base text color of the disabled outline Button.
 /// @group button
-$kendo-button-outline-disabled-text: var( --kendo-button-disabled-text, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ) !default;
+$kendo-button-outline-disabled-text: var( --kendo-button-disabled-text, color-mix(in srgb, k-color(on-app-surface) 30%, transparent) ) !default;
 /// The base border color of the disabled outline Button.
 /// @group button
-$kendo-button-outline-disabled-border: var( --kendo-button-disabled-border, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ) !default;
+$kendo-button-outline-disabled-border: var( --kendo-button-disabled-border, color-mix(in srgb, k-color(on-app-surface) 14%, transparent) ) !default;
 
 /// The base background of the disabled flat Button.
 /// @group button
 $kendo-button-flat-disabled-bg: var( --kendo-button-disabled-bg, initial ) !default;
 /// The base text color of the disabled flat Button.
 /// @group button
-$kendo-button-flat-disabled-text: var( --kendo-button-disabled-text, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ) !default;
+$kendo-button-flat-disabled-text: var( --kendo-button-disabled-text, color-mix(in srgb, k-color(on-app-surface) 30%, transparent) ) !default;
 /// The base border color of the disabled flat Button.
 /// @group button
 $kendo-button-flat-disabled-border: var( --kendo-button-disabled-border, initial ) !default;

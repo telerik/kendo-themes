@@ -6,8 +6,4 @@
 @mixin kendo-notification--theme() {
     @include kendo-notification--theme-base();
 
-    .k-notification:not(.k-notification-inverse, .k-notification-dark) {
-        color: inherit;
-    }
-
 }

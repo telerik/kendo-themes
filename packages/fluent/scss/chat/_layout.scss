@@ -7,31 +7,18 @@
 @mixin kendo-chat--layout() {
     @include kendo-chat--layout-base();
 
+    .k-chat .k-chat-file-name {
+        font-weight: var( --kendo-font-weight-semibold, inherit);;
+    }
+
     // Message group
     .k-chat-message-group {
 
         .k-chat-file-wrapper {
             min-width: 0;
             max-width: 100%;
-
         }
-
     }
-
-    .k-message-group-sender {
-
-        .k-chat-bubble {
-
-            &:focus,
-            &.k-focus {
-                outline-style: solid;
-                outline-width: calc( (#{$kendo-bubble-border-width} * 2 ));
-                outline-offset: calc( (#{$kendo-bubble-border-width} * 2 ) * -1);
-            }
-        }
-
-    }
-
 
     // Bubble
     .k-chat-bubble {
@@ -62,5 +49,4 @@
         margin-inline: calc( #{$kendo-chat-message-list-padding-x} * -1 );
         padding-inline: $kendo-chat-message-list-padding-x;
     }
-
 }

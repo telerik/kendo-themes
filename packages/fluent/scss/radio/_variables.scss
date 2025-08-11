@@ -85,20 +85,20 @@ $kendo-radio-focus-border: var( --kendo-radio-focus-border, #{$kendo-radio-borde
 $kendo-radio-focus-shadow: var( --kendo-radio-focus-shadow, null ) !default;
 /// The outline of the focused RadioButton.
 /// @group radio
-$kendo-radio-focus-outline: var( --kendo-radio-focus-outline, 1px solid #{k-color(base-emphasis)} ) !default;
+$kendo-radio-focus-outline: var( --kendo-radio-focus-outline, 2px solid #{k-color(border-alt)} ) !default;
 /// The outline offset of the focused RadioButton.
 /// @group radio
-$kendo-radio-focus-outline-offset: var( --kendo-radio-focus-outline-offset, 2px ) !default;
+$kendo-radio-focus-outline-offset: var( --kendo-radio-focus-outline-offset, 4px ) !default;
 
 /// The background color of the disabled RadioButton.
 /// @group radio
 $kendo-radio-disabled-bg: var( --kendo-radio-disabled-bg, #{$kendo-radio-bg} ) !default;
 /// The color of the disabled RadioButton.
 /// @group radio
-$kendo-radio-disabled-text: var( --kendo-radio-disabled-text, #{color-mix(in srgb, k-color(on-app-surface) 28%, transparent)} ) !default;
+$kendo-radio-disabled-text: var( --kendo-radio-disabled-text, #{color-mix(in srgb, k-color(on-app-surface) 30%, transparent)} ) !default;
 /// The border color of the disabled RadioButton.
 /// @group radio
-$kendo-radio-disabled-border: var( --kendo-radio-disabled-border, #{color-mix(in srgb, k-color(on-app-surface) 28%, transparent)} ) !default;
+$kendo-radio-disabled-border: var( --kendo-radio-disabled-border, #{color-mix(in srgb, k-color(on-app-surface) 30%, transparent)} ) !default;
 
 /// The background color of the disabled and checked RadioButton.
 /// @group radio
@@ -115,7 +115,7 @@ $kendo-radio-disabled-checked-border: var( --kendo-radio-disabled-checked-border
 $kendo-radio-invalid-text: var( --kendo-radio-invalid-text, #{k-color(error-on-surface)} ) !default;
 /// The border color of the invalid RadioButton.
 /// @group radio
-$kendo-radio-invalid-border: var( --kendo-radio-invalid-border, #{k-color(error-emphasis)} ) !default;
+$kendo-radio-invalid-border: var( --kendo-radio-invalid-border, #{k-color(error-on-surface)} ) !default;
 
 
 // Radio indicator
@@ -163,7 +163,7 @@ $kendo-radio-list-item-padding-x: var( --kendo-radio-list-item-padding-x, #{k-sp
 $kendo-radio-list-item-padding-y: var( --kendo-radio-list-item-padding-y, #{$kendo-list-md-item-padding-y} ) !default;
 /// The gap between the list items of the RadioButton.
 /// @group radio
-$kendo-radio-list-item-gap: var( --kendo-radio-list-item-gap, #{k-spacing(2)} ) !default;
+$kendo-radio-list-item-gap: var( --kendo-radio-list-item-gap, #{k-spacing(1)} ) !default;
 
 // Radio ripple
 

@@ -70,7 +70,11 @@
             width: $kendo-grid-group-drop-hint-dot-size;
             height: $kendo-grid-group-drop-hint-dot-size;
             border-radius: 50%;
-            inset-inline-start: calc( #{$kendo-grid-group-drop-hint-dot-size} / 2 );
+            inset-inline-start: k-spacing(0.5);
+        }
+
+        &::after {
+            inset-inline-start:calc( #{$kendo-grid-group-drop-hint-size} - #{$kendo-grid-group-drop-hint-line-size} / 2 - k-spacing(0.5) );
         }
     }
 

@@ -4,12 +4,4 @@
 
 @mixin kendo-signature--layout() {
     @include kendo-signature--layout-base();
-
-    .k-signature {
-        &:disabled,
-        &[disabled],
-        &.k-disabled {
-            opacity: $kendo-signature-disabled-opacity;
-        }
-    }
 }

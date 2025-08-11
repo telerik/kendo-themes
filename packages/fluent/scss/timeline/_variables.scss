@@ -67,9 +67,6 @@ $kendo-timeline-track-bg: var( --kendo-timeline-track-bg, k-color(surface) ) !de
 /// @group timeline
 $kendo-timeline-track-border-color: var( --kendo-timeline-track-border-color, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
 
-/// The block end inset of the Timeline arrow.
-/// @group timeline
-$kendo-timeline-arrow-inset-block-end: var( --kendo-timeline-arrow-inset-block-end, calc( #{ $kendo-timeline-track-size } + #{ $kendo-timeline-track-wrap-padding-bottom } + #{ $kendo-timeline-track-border-width } ) ) !default;
 /// The background color of the disabled Timeline arrow.
 /// @group timeline
 $kendo-timeline-track-arrow-disabled-bg: var( --kendo-timeline-track-arrow-disabled-bg, k-color(base-subtle) ) !default;
@@ -92,7 +89,7 @@ $kendo-timeline-flag-padding-x: var( --kendo-timeline-flag-padding-x, k-spacing(
 $kendo-timeline-flag-padding-y: var( --kendo-timeline-flag-padding-y, k-spacing(2) ) !default;
 /// The border radius of the Timeline flag.
 /// @group timeline
-$kendo-timeline-flag-border-radius: var( --kendo-timeline-flag-border-radius, k-spacing(0.5) ) !default;
+$kendo-timeline-flag-border-radius: var( --kendo-timeline-flag-border-radius, k-border-radius(md) ) !default;
 /// The line height of the Timeline flag.
 /// @group timeline
 $kendo-timeline-flag-line-height: var( --kendo-timeline-flag-line-height, var( --kendo-line-height, normal ) ) !default;

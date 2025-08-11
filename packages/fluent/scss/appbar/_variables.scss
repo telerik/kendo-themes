@@ -9,10 +9,10 @@ $kendo-appbar-margin-x: var( --kendo-appbar-margin-x, k-spacing(0) ) !default;
 $kendo-appbar-margin-y: var( --kendo-appbar-margin-y, k-spacing(0) ) !default;
 /// The horizontal padding of the AppBar.
 /// @group appbar
-$kendo-appbar-padding-x: var( --kendo-appbar-padding-x, k-spacing(2) ) !default;
+$kendo-appbar-padding-x: var( --kendo-appbar-padding-x, k-spacing(5) ) !default;
 /// The vertical padding of the AppBar.
 /// @group appbar
-$kendo-appbar-padding-y: var( --kendo-appbar-padding-y, k-spacing(2) ) !default;
+$kendo-appbar-padding-y: var( --kendo-appbar-padding-y, k-spacing(3.5) ) !default;
 /// The width of the border around the AppBar.
 /// @group appbar
 $kendo-appbar-border-width: var( --kendo-appbar-border-width, 0px ) !default;
@@ -41,7 +41,21 @@ $kendo-appbar-text: var( --kendo-appbar-text, k-color(on-app-surface) ) !default
 $kendo-appbar-bg: var( --kendo-appbar-bg, k-color(surface) ) !default;
 /// The border color of the AppBar.
 /// @group appbar
-$kendo-appbar-border: var( --kendo-appbar-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
+$kendo-appbar-border: var( --kendo-appbar-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
+
+/// The background color of the AppBar based on light theme color.
+/// @group appbar
+$kendo-appbar-light-bg: k-color(light) !default;
+/// The text color of the AppBar based on light theme color.
+/// @group appbar
+$kendo-appbar-light-text: k-color(on-light) !default;
+
+/// The background color of the AppBar based on dark theme color.
+/// @group appbar
+$kendo-appbar-dark-bg: k-color(dark) !default;
+/// The text color of the AppBar based on dark theme color.
+/// @group appbar
+$kendo-appbar-dark-text: k-color(on-dark) !default;
 
 /// The theme colors map for the AppBar variations.
 /// @group appbar
@@ -69,5 +83,9 @@ $kendo-appbar-theme-colors: (
     $kendo-appbar-font-size: $kendo-appbar-font-size,
     $kendo-appbar-line-height: $kendo-appbar-line-height,
     $kendo-appbar-gap: $kendo-appbar-spacing,
+    $kendo-appbar-light-bg: $kendo-appbar-light-bg,
+    $kendo-appbar-dark-bg: $kendo-appbar-dark-bg,
+    $kendo-appbar-light-text: $kendo-appbar-light-text,
+    $kendo-appbar-dark-text: $kendo-appbar-dark-text,
     $kendo-appbar-theme-colors: $kendo-appbar-theme-colors
 );

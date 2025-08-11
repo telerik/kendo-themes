@@ -10,7 +10,13 @@
             &.k-focus,
             .k-step-link:focus  {
                 .k-step-label:only-child {
-                    @include box-shadow( inset 0 0 0 $kendo-stepper-indicator-focus-size color-mix(in srgb, k-color(border) 16%, transparent) );
+                    @include box-shadow( inset 0 0 0 $kendo-stepper-indicator-focus-size k-color(border-alt) );
+                }
+
+                .k-step-indicator::after {
+                    border-color: unset;
+                    outline: 2px solid k-color(border-alt);
+                    outline-offset: -2px;
                 }
             }
 

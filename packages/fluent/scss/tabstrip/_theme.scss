@@ -26,8 +26,7 @@
     @if ($kendo-tabstrip-indicator-size) {
         .k-tabstrip-items-wrapper {
             .k-item.k-active::after {
-                border-color: $kendo-tabstrip-indicator-color;
-                background: none;
+                background-color: $kendo-tabstrip-indicator-color;
             }
         }
     }

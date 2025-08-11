@@ -24,7 +24,7 @@ $kendo-progressbar-font-family: var( --kendo-progressbar-font-family, var( --ken
 $kendo-progressbar-font-size: var( --kendo-progressbar-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
 /// The line height of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-line-height: var( --kendo-progressbar-line-height, var( --kendo-line-height, inherit ) ) !default;
+$kendo-progressbar-line-height: var( --kendo-progressbar-line-height, var( --kendo-line-height-lg, inherit ) ) !default;
 /// The horizontal padding of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-padding-x: var( --kendo-progressbar-padding-x, #{k-spacing(0)} ) !default;
@@ -34,7 +34,7 @@ $kendo-progressbar-padding-y: var( --kendo-progressbar-padding-y, #{k-spacing(0)
 
 /// The background color of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-bg: var( --kendo-progressbar-bg, #{k-color(base-subtle)} ) !default;
+$kendo-progressbar-bg: var( --kendo-progressbar-bg, #{k-color(secondary)} ) !default;
 /// The text color of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-text: var( --kendo-progressbar-text, #{k-color(on-app-surface)} ) !default;
@@ -70,14 +70,14 @@ $kendo-progressbar-vertical-status-offset: var( --kendo-progressbar-vertical-sta
 $kendo-progressbar-disabled-bg: var( --kendo-progressbar-disabled-bg, #{color-mix(in srgb, k-color(on-app-surface) 6%, transparent)} ) !default;
 /// The text color of the disabled ProgressBar.
 /// @group progressbar
-$kendo-progressbar-disabled-text: var( --kendo-progressbar-disabled-text, #{color-mix(in srgb, k-color(on-app-surface) 46%, transparent)} ) !default;
+$kendo-progressbar-disabled-text: var( --kendo-progressbar-disabled-text, #{color-mix(in srgb, k-color(on-app-surface) 30%, transparent)} ) !default;
 /// The border color of the disabled ProgressBar.
 /// @group progressbar
 $kendo-progressbar-disabled-border: var( --kendo-progressbar-disabled-border, #{$kendo-progressbar-disabled-bg} ) !default;
 
 /// The progress background color of the disabled ProgressBar.
 /// @group progressbar
-$kendo-progressbar-value-disabled-bg: var( --kendo-progressbar-value-disabled-bg, #{k-color(primary-subtle)} ) !default;
+$kendo-progressbar-value-disabled-bg: var( --kendo-progressbar-disabled-bg, #{color-mix(in srgb, k-color(primary) 46%, transparent)} ) !default;
 
 /// The background color of the indeterminate ProgressBar.
 /// @group progressbar

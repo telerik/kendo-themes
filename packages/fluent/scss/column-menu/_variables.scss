@@ -1,13 +1,13 @@
 @use "../core/_index.scss" as *;
 
-$kendo-column-menu-item-sm-padding-x: var( --kendo-column-menu-item-sm-padding-x, k-spacing(2) ) !default;
-$kendo-column-menu-item-sm-padding-y: var( --kendo-column-menu-item-sm-padding-y, k-spacing(1.5) ) !default;
+$kendo-column-menu-item-sm-padding-x: var( --kendo-column-menu-item-sm-padding-x, k-spacing(1.5) ) !default;
+$kendo-column-menu-item-sm-padding-y: var( --kendo-column-menu-item-sm-padding-y, k-spacing(1) ) !default;
 
-$kendo-column-menu-item-md-padding-x: var( --kendo-column-menu-item-md-padding-x, k-spacing(2) ) !default;
-$kendo-column-menu-item-md-padding-y: var( --kendo-column-menu-item-md-padding-y, k-spacing(2) ) !default;
+$kendo-column-menu-item-md-padding-x: var( --kendo-column-menu-item-md-padding-x, k-spacing(1.5) ) !default;
+$kendo-column-menu-item-md-padding-y: var( --kendo-column-menu-item-md-padding-y, k-spacing(1.5) ) !default;
 
-$kendo-column-menu-item-lg-padding-x: var( --kendo-column-menu-item-lg-padding-x, k-spacing(2) ) !default;
-$kendo-column-menu-item-lg-padding-y: var( --kendo-column-menu-item-lg-padding-y, k-spacing(2.5) ) !default;
+$kendo-column-menu-item-lg-padding-x: var( --kendo-column-menu-item-lg-padding-x, k-spacing(1.5) ) !default;
+$kendo-column-menu-item-lg-padding-y: var( --kendo-column-menu-item-lg-padding-y, k-spacing(2) ) !default;
 
 $kendo-column-menu-sm-font-size: var( --kendo-column-menu-sm-font-size, var( --kendo-font-size, inherit ) ) !default;
 $kendo-column-menu-md-font-size: var( --kendo-column-menu-md-font-size, var( --kendo-font-size, inherit ) ) !default;

@@ -13,8 +13,13 @@
 
         &.k-focus,
         &:focus {
-            box-shadow: none;
-            background-color: $kendo-expander-focus-bg;
+            box-shadow: $kendo-expander-focus-shadow;
+
+            .k-expander-title {
+                @include fill(
+                    $color: k-color(primary),
+                );
+            }
 
             &::after {
                 outline-color: $kendo-expander-focus-outline;
@@ -33,7 +38,6 @@
             .k-expander-indicator {
                 @include fill(
                     $color: $kendo-expander-disabled-text,
-                    $bg: $kendo-expander-disabled-bg
                 );
             }
         }

@@ -60,7 +60,7 @@ $kendo-pager-focus-border: var( --kendo-pager-focus-border, #{k-color(border)} )
 
 /// The border radius of the Pager items.
 /// @group pager
-$kendo-pager-item-border-radius: var( --kendo-pager-item-border-radius, 0 ) !default;
+$kendo-pager-item-border-radius: var( --kendo-pager-item-border-radius, k-border-radius(md) ) !default;
 /// The spacing around the Pager items.
 /// @group pager
 $kendo-pager-item-spacing: var( --kendo-pager-item-spacing, null ) !default;

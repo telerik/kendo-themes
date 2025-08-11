@@ -49,7 +49,7 @@ $kendo-pdf-viewer-page-text: var( --kendo-pdf-viewer-page-text, #{k-color(on-app
 $kendo-pdf-viewer-page-border: var( --kendo-pdf-viewer-page-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 /// The shadow of the PDFViewer page.
 /// @group pdf-viewer
-$kendo-pdf-viewer-page-shadow: var( --kendo-pdf-viewer-page-shadow, var( --kendo-box-shadow-depth-3, none ) ) !default;
+$kendo-pdf-viewer-page-shadow: var( --kendo-pdf-viewer-page-shadow, k-elevation(4) ) !default;
 
 /// The horizontal padding of the PDFViewer search panel.
 /// @group pdf-viewer

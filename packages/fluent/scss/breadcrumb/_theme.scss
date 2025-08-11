@@ -21,18 +21,18 @@
         // Focused state
         &:focus,
         &.k-focus {
-            // Focus-hover state
-            &:hover,
-            &.k-hover {
-                @include fill( $bg: $kendo-breadcrumb-link-focus-hover-bg );
-            }
+            background: $kendo-breadcrumb-link-focus-bg;
         }
 
         // Disabled state
         &:disabled,
         &[disabled],
         &.k-disabled {
-            @include fill( $color: $kendo-breadcrumb-link-disabled-text );
+            @include fill(
+                $kendo-breadcrumb-link-disabled-text,
+                $kendo-breadcrumb-link-disabled-bg,
+                $kendo-breadcrumb-link-disabled-border
+            );
         }
 
         // Selected state
@@ -57,21 +57,34 @@
             );
         }
 
-        // Focused state
-        &:focus,
-        &.k-focus {
-            // Focus-hover state
-            &:hover,
-            &.k-hover {
-                @include fill( $bg: $kendo-breadcrumb-root-link-focus-hover-bg );
-            }
-        }
-
         // Disabled state
         &:disabled,
         &[disabled],
         &.k-disabled {
-            @include fill( $color: $kendo-breadcrumb-root-link-disabled-text );
+            @include fill(
+                $kendo-breadcrumb-root-link-disabled-text,
+                $kendo-breadcrumb-root-link-disabled-bg,
+                $kendo-breadcrumb-root-link-disabled-border
+            );
+        }
+    }
+
+    .k-breadcrumb-icontext-link,
+    .k-breadcrumb-icon-link {
+
+        &:hover,
+        &.k-hover {
+
+            .k-icon {
+                color: k-color(primary-hover);
+            }
+        }
+        &:active,
+        &.k-selected {
+
+            .k-icon {
+                color: k-color(primary-active);
+            }
         }
     }
 

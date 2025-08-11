@@ -21,6 +21,7 @@
             outline-offset: $kendo-menu-item-focus-outline-offset;
             outline-width: $kendo-menu-item-focus-outline-width;
             outline-style: $kendo-menu-item-focus-outline-style;
+            border-radius: k-border-radius(md);
         }
     }
 
@@ -42,6 +43,7 @@
                     outline-offset: $kendo-menu-item-focus-outline-offset;
                     outline-width: $kendo-menu-item-focus-outline-width;
                     outline-style: $kendo-menu-item-focus-outline-style;
+                    border-radius: k-border-radius(md);
                 }
             }
         }

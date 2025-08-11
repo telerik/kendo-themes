@@ -35,6 +35,7 @@
             outline-width: $kendo-rating-item-focus-outline-width;
             outline-style: $kendo-rating-item-focus-outline-style;
             outline-offset: calc( -1 * #{$kendo-rating-item-focus-outline-width} );
+            border-radius: k-border-radius(md);
         }
     }
 

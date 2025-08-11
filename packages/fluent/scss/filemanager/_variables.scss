@@ -33,7 +33,7 @@ $kendo-file-manager-border: var( --kendo-file-manager-border, #{color-mix(in srg
 $kendo-file-manager-toolbar-border-width: var( --kendo-file-manager-toolbar-border-width, #{$kendo-file-manager-border-width} ) !default;
 /// The background color of the FileManager Toolbar.
 /// @group file-manager
-$kendo-file-manager-toolbar-bg: var( --kendo-file-manager-toolbar-bg, #{$kendo-toolbar-bg} ) !default;
+$kendo-file-manager-toolbar-bg: var( --kendo-file-manager-toolbar-bg, #{k-color(app-surface)} ) !default;
 /// The text color of the FileManager Toolbar.
 /// @group file-manager
 $kendo-file-manager-toolbar-text: var( --kendo-file-manager-toolbar-text, #{$kendo-toolbar-text} ) !default;

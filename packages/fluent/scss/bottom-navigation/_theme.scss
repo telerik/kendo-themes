@@ -19,7 +19,7 @@
                     color: k-color(on-#{$name});
                     background-color: k-color(#{$name});
                     border-color: k-color(#{$name});
-                    outline-color: inherit;
+                    box-shadow: 0 0 0 2px k-color(border-alt) inset, 0 0 0 3px k-color(surface) inset;
                 }
 
                 &:active,
@@ -40,14 +40,6 @@
         }
     }
 
-    .k-bottom-nav-solid-warning,
-    .k-bottom-nav-solid-light {
-         .k-bottom-nav-item:focus::after,
-         .k-bottom-nav-item.k-focus::after {
-            outline-color: k-color(app-surface);
-         }
-    }
-
     @each $name, $color in $kendo-bottom-navigation-theme-colors {
         .k-bottom-nav-flat-#{$name} {
             color: k-color(on-app-surface);
@@ -60,7 +52,7 @@
                     color: k-color(#{$name});
                     background-color: inherit;
                     border-color: transparent;
-                    outline-color: k-color(#{$name});
+                    box-shadow: 0 0 0 2px k-color(border-alt) inset;
                 }
 
                 &:active,

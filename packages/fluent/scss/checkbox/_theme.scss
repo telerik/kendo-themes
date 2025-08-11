@@ -39,4 +39,16 @@
             $kendo-checkbox-disabled-indeterminate-border
         );
     }
+
+    .k-checkbox-label {
+        @include fill( $color: $kendo-checkbox-text );
+    }
+
+    .k-checkbox-label:has(.k-invalid) {
+        @include fill( $color: $kendo-checkbox-invalid-text );
+    }
+
+    .k-checkbox-label:has(.k-disabled) {
+        @include fill( $color: $kendo-checkbox-disabled-text );
+    }
 }

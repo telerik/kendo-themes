@@ -33,7 +33,7 @@ $kendo-slider-track-size: var( --kendo-slider-track-size, #{k-spacing(1)} ) !def
 $kendo-slider-track-border-radius: var( --kendo-slider-track-border-radius, #{k-spacing(0.5)} ) !default;
 /// The background color of the Slider track.
 /// @group slider
-$kendo-slider-track-bg: var( --kendo-slider-track-bg, #{k-color(base-emphasis)} ) !default;
+$kendo-slider-track-bg: var( --kendo-slider-track-bg, #{k-color(border)} ) !default;
 /// The border color of the Slider track.
 /// @group slider
 $kendo-slider-track-border: var( --kendo-slider-track-border, inherit ) !default;
@@ -44,10 +44,10 @@ $kendo-slider-selection-bg: var( --kendo-slider-selection-bg, #{k-color(primary)
 
 /// The default size of the Slider thumb.
 /// @group slider
-$kendo-slider-thumb-size: var( --kendo-slider-thumb-size, 16px ) !default;
+$kendo-slider-thumb-size: var( --kendo-slider-thumb-size, 18px ) !default;
 /// The default border width of the Slider thumb.
 /// @group slider
-$kendo-slider-thumb-border-width: var( --kendo-slider-thumb-border-width, #{k-spacing(0.5)} ) !default;
+$kendo-slider-thumb-border-width: var( --kendo-slider-thumb-border-width, 1px ) !default;
 /// The border radius of the Slider thumb.
 /// @group slider
 $kendo-slider-thumb-border-radius: var( --kendo-slider-thumb-border-radius, 999em ) !default;
@@ -63,7 +63,7 @@ $kendo-slider-thumb-bg: var( --kendo-slider-thumb-bg, #{k-color(surface-alt)} ) 
 $kendo-slider-thumb-text: var( --kendo-slider-thumb-text, inherit ) !default;
 /// The border color of the Slider thumb.
 /// @group slider
-$kendo-slider-thumb-border: var( --kendo-slider-thumb-border, #{k-color(primary)} ) !default;
+$kendo-slider-thumb-border: var( --kendo-slider-thumb-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
 /// The gradient of the Slider thumb.
 /// @group slider
 $kendo-slider-thumb-gradient: var( --kendo-slider-thumb-gradient, transparent ) !default;
@@ -76,7 +76,7 @@ $kendo-slider-thumb-hover-bg: var( --kendo-slider-thumb-hover-bg, #{$kendo-slide
 $kendo-slider-thumb-hover-text: var( --kendo-slider-thumb-hover-text, inherit ) !default;
 /// The border color of the hovered Slider thumb.
 /// @group slider
-$kendo-slider-thumb-hover-border: var( --kendo-slider-thumb-hover-border, #{k-color(primary-hover)} ) !default;
+$kendo-slider-thumb-hover-border: var( --kendo-slider-thumb-hover-border, color-mix( in srgb, k-color(border) 34%, transparent ) ) !default;
 /// The gradient of the hovered Slider thumb.
 /// @group slider
 $kendo-slider-thumb-hover-gradient: var( --kendo-slider-thumb-hover-gradient, transparent ) !default;
@@ -112,10 +112,10 @@ $kendo-slider-thumb-focus-gradient: var( --kendo-slider-thumb-focus-gradient, tr
 $kendo-slider-disabled-text: var( --kendo-slider-disabled-text, #{color-mix(in srgb, k-color(on-app-surface) 70%, transparent)} ) !default;
 /// The background color of the disabled Slider track.
 /// @group slider
-$kendo-slider-track-disabled-bg: var( --kendo-slider-track-disabled-bg, #{color-mix(in srgb, k-color(on-app-surface) 6%, transparent)} ) !default;
+$kendo-slider-track-disabled-bg: var( --kendo-slider-track-disabled-bg, #{color-mix(in srgb, k-color(on-app-surface) 14%, transparent)} ) !default;
 /// The background color of the disabled Slider's track selection.
 /// @group slider
-$kendo-slider-selection-disabled-bg: var( --kendo-slider-selection-disabled-bg, #{color-mix(in srgb, k-color(on-app-surface) 46%, transparent)} ) !default;
+$kendo-slider-selection-disabled-bg: var( --kendo-slider-selection-disabled-bg, #{color-mix(in srgb, k-color(on-app-surface) 30%, transparent)} ) !default;
 /// The background color of the disabled Slider thumb.
 /// @group slider
 $kendo-slider-thumb-disabled-border: var( --kendo-slider-thumb-disabled-border, #{color-mix(in srgb, k-color(on-app-surface) 28%, transparent)} ) !default;

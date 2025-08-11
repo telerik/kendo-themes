@@ -1,5 +1,4 @@
 @use "../core/_index.scss" as *;
-@use "../slider/_variables.scss" as *;
 @use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/colorgradient/_theme.scss" as *;
 
@@ -16,6 +15,21 @@
         }
     }
 
+    .k-colorgradient .k-draghandle {
+        outline-color: $kendo-color-gradient-draghandle-outline;
+
+        &:focus,
+        &.k-focus {
+            outline-color: $kendo-color-gradient-draghandle-focus-shadow;
+        }
+
+        &.k-disabled {
+            outline-color: color-mix(in srgb, k-color(on-app-surface) 30%, transparent);
+            border-color: color-mix(in srgb, k-color(on-app-surface) 7%, transparent);
+            background: color-mix(in srgb, k-color(on-app-surface) 7%, transparent);
+        }
+    }
+
     .k-colorgradient-slider .k-slider-track {
         border-color: $kendo-color-gradient-slider-border;
     }
@@ -25,28 +39,19 @@
         &:hover,
         &.k-hover,
         &:active,
-        &.k-active {
-            background-color: $kendo-slider-thumb-bg;
-        }
-
-        &:focus,
-        &.k-focus {
-            background-color: $kendo-slider-thumb-bg;
+        &.k-selected {
+            outline-color: $kendo-color-gradient-draghandle-hover-shadow;
+            background: k-color(app-surface);
         }
     }
 
-    .k-colorgradient .k-draghandle {
+    .k-colorgradient .k-hsv-draghandle {
 
         &:hover,
         &.k-hover,
         &:active,
-        &.k-active {
-            outline-color: $kendo-color-gradient-draghandle-hover-shadow;
-        }
-
-        &:focus,
-        &.k-focus {
-            border-color: $kendo-color-gradient-draghandle-focus-border;
+        &.k-selected {
+            outline-color: k-color(app-surface);
         }
     }
 }

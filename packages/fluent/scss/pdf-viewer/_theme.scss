@@ -4,4 +4,8 @@
 
 @mixin kendo-pdf-viewer--theme() {
     @include kendo-pdf-viewer--theme-base();
+
+    .k-pdf-viewer .k-toolbar {
+        border-bottom-color: transparent;
+    }
 }

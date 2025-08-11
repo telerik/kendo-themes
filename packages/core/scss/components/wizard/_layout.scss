@@ -38,6 +38,7 @@
 
             &:focus,
             &.k-focus {
+                // TODO: add scss variable for outline width
                 outline-width: 1px;
                 outline-style: dotted;
                 outline-offset: -1px;

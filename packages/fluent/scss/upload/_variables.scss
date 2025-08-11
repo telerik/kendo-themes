@@ -22,29 +22,29 @@ $kendo-upload-max-height: var( --kendo-upload-max-height, 300px ) !default;
 $kendo-upload-text: var( --kendo-upload-text, k-color(on-app-surface) ) !default;
 /// The background color of the Upload.
 /// @group upload
-$kendo-upload-bg: var( --kendo-upload-bg, k-color(surface-alt) ) !default;
+$kendo-upload-bg: var( --kendo-upload-bg, k-color(app-surface) ) !default;
 /// The border color of the Upload.
 /// @group upload
-$kendo-upload-border: var( --kendo-upload-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
+$kendo-upload-border: var( --kendo-upload-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
 
 /// The horizontal padding of the Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-padding-x: var( --kendo-upload-dropzone-padding-x, k-spacing(2) ) !default;
+$kendo-upload-dropzone-padding-x: var( --kendo-upload-dropzone-padding-x, calc( #{k-spacing(3)} + 1px ) ) !default;
 /// The vertical padding of the Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-padding-y: var( --kendo-upload-dropzone-padding-y, k-spacing(2) ) !default;
+$kendo-upload-dropzone-padding-y: var( --kendo-upload-dropzone-padding-y, calc( #{k-spacing(0.5)} + 1px ) ) !default;
 /// The text color of the Upload dropzone.
 /// @group upload
 $kendo-upload-dropzone-text: var( --kendo-upload-dropzone-text, k-color(subtle) ) !default;
 /// The background color of the Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-bg: var( --kendo-upload-dropzone-bg, k-color(surface) ) !default;
+$kendo-upload-dropzone-bg: var( --kendo-upload-dropzone-bg, k-color(app-surface) ) !default;
 /// The border color of the Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-border: var( --kendo-upload-dropzone-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
+$kendo-upload-dropzone-border: var( --kendo-upload-dropzone-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
 /// The background color of the hovered Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-hover-bg: var( --kendo-upload-dropzone-hover-bg, k-color(base-hover) ) !default;
+$kendo-upload-dropzone-hover-bg: var( --kendo-upload-dropzone-hover-bg, $kendo-upload-dropzone-bg ) !default;
 
 /// The text color of the Upload status message.
 /// @group upload
@@ -55,14 +55,14 @@ $kendo-upload-status-text-opacity: var( --kendo-upload-status-text-opacity, null
 
 /// The horizontal padding of an uploaded item.
 /// @group upload
-$kendo-upload-item-padding-x: var( --kendo-upload-item-padding-x, k-spacing(2) ) !default;
+$kendo-upload-item-padding-x: var( --kendo-upload-item-padding-x, $kendo-upload-dropzone-padding-x ) !default;
 /// The vertical padding of an uploaded item.
 /// @group upload
-$kendo-upload-item-padding-y: var( --kendo-upload-item-padding-y, k-spacing(2) ) !default;
+$kendo-upload-item-padding-y: var( --kendo-upload-item-padding-y, $kendo-upload-dropzone-padding-y ) !default;
 
 /// The vertical spacing between uploaded batch items.
 /// @group upload
-$kendo-upload-multiple-items-spacing: var( --kendo-upload-multiple-items-spacing, k-spacing(4) ) !default;
+$kendo-upload-multiple-items-spacing: var( --kendo-upload-multiple-items-spacing, k-spacing(1.5) ) !default;
 
 /// The font size of the Upload validation message.
 /// @group upload

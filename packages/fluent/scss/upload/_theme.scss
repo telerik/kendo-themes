@@ -1,5 +1,6 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "../button/_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/upload/_theme.scss" as *;
 
 @mixin kendo-upload--theme() {
@@ -16,6 +17,29 @@
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
             border-color: k-color(error-emphasis);
+        }
+
+        &:disabled,
+        &.k-disabled {
+            .k-upload-dropzone {
+                @include fill(
+                    color-mix(in srgb, k-color(on-app-surface) 30%, transparent),
+                    color-mix(in srgb, k-color(on-app-surface) 7%, transparent),
+                    color-mix(in srgb, k-color(on-app-surface) 14%, transparent)
+                );
+
+                .k-button {
+                    @include fill(
+                        $kendo-button-disabled-text,
+                        $kendo-button-disabled-bg,
+                        $kendo-button-disabled-border
+                    );
+                }
+
+                .k-dropzone-hint {
+                    color: $kendo-button-disabled-text;
+                }
+            }
         }
     }
 }

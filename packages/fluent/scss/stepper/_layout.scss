@@ -9,14 +9,10 @@
         font-weight: $kendo-stepper-current-label-font-weight;
     }
 
-.k-stepper .k-step-disabled,
+    .k-stepper .k-step-disabled,
     .k-stepper .k-step.k-disabled {
         .k-step-label {
             font-weight: normal;
-        }
-
-        .k-step-indicator {
-            border: 0;
         }
     }
 }

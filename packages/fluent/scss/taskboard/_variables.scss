@@ -30,7 +30,7 @@ $kendo-taskboard-font-size: var( --kendo-taskboard-font-size, var( --kendo-font-
 $kendo-taskboard-line-height: var( --kendo-taskboard-line-height, var( --kendo-line-height, inherit ) ) !default;
 /// The background color of the TaskBoard.
 /// @group taskboard
-$kendo-taskboard-bg: var( --kendo-taskboard-bg, #{k-color(surface-alt)} ) !default;
+$kendo-taskboard-bg: var( --kendo-taskboard-bg, #{k-color(app-surface)} ) !default;
 /// The text color of the TaskBoard.
 /// @group taskboard
 $kendo-taskboard-text: var( --kendo-taskboard-text, #{k-color(on-app-surface)} ) !default;
@@ -69,7 +69,7 @@ $kendo-taskboard-column-border-width: var( --kendo-taskboard-column-border-width
 $kendo-taskboard-column-border-radius: var( --kendo-taskboard-column-border-radius, #{k-border-radius(md)} ) !default;
 /// The background color of the TaskBoard column.
 /// @group taskboard
-$kendo-taskboard-column-bg: var( --kendo-taskboard-column-bg, #{k-color(surface)} ) !default;
+$kendo-taskboard-column-bg: var( --kendo-taskboard-column-bg, #{k-color(app-surface)} ) !default;
 /// The text color of the TaskBoard column.
 /// @group taskboard
 $kendo-taskboard-column-text: var( --kendo-taskboard-column-text, #{k-color(on-app-surface)} ) !default;
@@ -169,7 +169,7 @@ $kendo-taskboard-pane-actions-padding-x: var( --kendo-taskboard-pane-actions-pad
 
 /// The vertical padding of the TaskBoard Card.
 /// @group taskboard
-$kendo-taskboard-card-padding-y: var( --kendo-taskboard-card-padding-y, calc( #{$kendo-taskboard-spacer} / 2 ) ) !default;
+$kendo-taskboard-card-padding-y: var( --kendo-taskboard-card-padding-y, #{k-spacing(3)} ) !default;
 /// The horizontal padding of the TaskBoard Card.
 /// @group taskboard
 $kendo-taskboard-card-padding-x: var( --kendo-taskboard-card-padding-x, #{$kendo-taskboard-card-padding-y} ) !default;
@@ -181,17 +181,20 @@ $kendo-taskboard-card-category-border-width: var( --kendo-taskboard-card-categor
 $kendo-taskboard-card-focus-shadow: var( --kendo-taskboard-card-focus-shadow, none ) !default;
 /// The border of the selected TaskBoard Card.
 /// @group taskboard
-$kendo-taskboard-card-selected-border: var( --kendo-taskboard-card-selected-border, #{k-color(primary)} ) !default;
+$kendo-taskboard-card-selected-border: var( --kendo-taskboard-card-selected-border, transparent ) !default;
 /// The shadow of the selected TaskBoard Card.
 /// @group taskboard
-$kendo-taskboard-card-selected-shadow: var( --kendo-taskboard-card-selected-shadow, var( --kendo-box-shadow-depth-3, none ) ) !default;
+$kendo-taskboard-card-selected-shadow: null !default;
+/// The background color of the selected TaskBoard Card.
+/// @group taskboard
+$kendo-taskboard-card-selected-bg: linear-gradient(0deg, color-mix(in srgb, k-color(on-app-surface) 12%, transparent) 0%, color-mix(in srgb, k-color(on-app-surface) 12%, transparent) 100%), k-color(surface-alt) !default;
 
 /// The font size of the TaskBoard Card title.
 /// @group taskboard
 $kendo-taskboard-card-title-font-size: var( --kendo-taskboard-card-title-font-size, var( --kendo-font-size, 1rem ) ) !default;
 /// The font weight of the TaskBoard Card title.
 /// @group taskboard
-$kendo-taskboard-card-title-font-weight: var( --kendo-taskboard-card-title-font-weight, var( --kendo-font-weight-bold, 600 ) ) !default;
+$kendo-taskboard-card-title-font-weight: var( --kendo-taskboard-card-title-font-weight, var( --kendo-font-weight-semibold, 600 ) ) !default;
 
 /// The border width of the TaskBoard Card placeholder.
 /// @group taskboard

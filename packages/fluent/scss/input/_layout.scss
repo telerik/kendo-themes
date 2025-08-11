@@ -11,24 +11,21 @@
     .k-input,
     .k-picker {
 
-        &:focus,
-        &.k-focus,
-        &:focus-within {
-
-            &::after {
-                content: '';
-                display: block;
-                position: absolute;
-                inset-block-start: 0;
-                inset-inline-end: 0;
-                inset-block-end: 0;
-                inset-inline-start: 0;
-                border-width: $kendo-input-focus-border-width;
-                border-style: solid;
-                border-radius: inherit;
-                pointer-events: none;
-                z-index: 1;
-            }
+        &::after {
+            content: '';
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            inset-inline-end: -1px;
+            inset-block-end: -1px;
+            inset-inline-start: -1px;
+            height: 4px;
+            border-width: 0 0 $kendo-input-border-width;
+            border-style: solid;
+            border-end-start-radius: inherit;
+            border-end-end-radius: inherit;
+            pointer-events: none;
+            z-index: 1;
         }
     }
 
@@ -65,12 +62,6 @@
         padding-block: $kendo-input-md-padding-y;
     }
 
-    // Input button
-    .k-input-button {
-        border-radius: 0;
-        border-width: 0;
-        border-color: inherit;
-    }
     .k-input-outline .k-input-button {
         border-inline-start-width: $kendo-input-button-border-width;
     }
@@ -89,8 +80,8 @@
 
 
     // Fill mode
-    .k-input-flat,
-    .k-picker-flat {
+    .k-input,
+    .k-picker {
 
         &:focus,
         &.k-focus,
@@ -117,6 +108,36 @@
         }
     }
 
+    .k-input-outline,
+    .k-picker-outline {
+
+        &::after {
+            display: none;
+        }
+
+        &:focus,
+        &.k-focus,
+        &:focus-within {
+
+            outline: $kendo-input-focus-border-width solid k-color(primary);
+            outline-offset: calc( -1 * #{$kendo-input-focus-border-width} );
+
+        }
+
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+
+            &:focus,
+            &.k-focus,
+            &:focus-within {
+
+                outline-color: k-color(error-on-surface);
+            }
+        }
+
+    }
+
     .k-input-flat,
     .k-input-outline {
         background: none !important; // stylelint-disable-line declaration-no-important
@@ -138,12 +159,6 @@
             .k-input-values > .k-searchbar,
             .k-input-values > .k-input-inner {
                 margin: 0;
-            }
-
-            .k-input-button {
-                width: if( $kendo-use-input-button-width, var( --kendo-input-button-width, #{$_button-width} ), auto );
-                padding-inline: $_button-padding-x;
-                padding-block: $_button-padding-y;
             }
 
             .k-input-spinner {

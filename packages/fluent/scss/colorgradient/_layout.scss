@@ -24,7 +24,15 @@
         &.k-vstack {
             padding-inline: calc( ($kendo-color-gradient-draghandle-width + $kendo-color-gradient-draghandle-border-width) / 2 );
         }
-}
+    }
+
+    .k-colorgradient .k-draghandle {
+
+        &:focus,
+        &.k-focus {
+            outline-width: 2px;
+        }
+    }
 
     .k-colorgradient-slider {
 
@@ -37,6 +45,14 @@
             border-style: solid;
             transform: none;
             z-index: auto;
+        }
+
+        .k-slider-thumb {
+            background: transparent;
+
+            &::after {
+                display: none;
+            }
         }
     }
 

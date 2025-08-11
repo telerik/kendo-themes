@@ -36,13 +36,13 @@ $kendo-time-selector-header-padding-y: var( --kendo-time-selector-header-padding
 $kendo-time-selector-header-border-width: var( --kendo-time-selector-header-border-width, 0px ) !default;
 /// The text color of the title in the time-selector header.
 /// @group time-selector
-$kendo-time-selector-header-title-text: var( --kendo-time-selector-header-title-text, unset ) !default;
+$kendo-time-selector-header-title-text: var( --kendo-time-selector-header-title-text, k-color(primary) ) !default;
 /// The text color of the time now in the time-selector header.
 /// @group time-selector
-$kendo-time-selector-header-time-now-text: var( --kendo-time-selector-header-time-now-text, k-color(primary) ) !default;
+$kendo-time-selector-header-time-now-text: null !default;
 /// The hover text color of the time now in the time-selector header.
 /// @group time-selector
-$kendo-time-selector-header-time-now-hover-text: var( --kendo-time-selector-header-time-now-hover-text, k-color(primary-hover) ) !default;
+$kendo-time-selector-header-time-now-hover-text: null !default;
 
 /// Visibility of the time-selector separator.
 /// @group time-selector
@@ -56,13 +56,13 @@ $kendo-time-list-height: var( --kendo-time-list-height, 240px ) !default;
 
 /// Spacing beneath the time selector titles.
 /// @group time-selector
-$kendo-time-list-title-spacing: var( --kendo-time-list-title-spacing, k-spacing(3) ) !default;
+$kendo-time-list-title-spacing: var( --kendo-time-list-title-spacing, k-spacing(1) ) !default;
 /// Font size of the time-selector titles.
 /// @group time-selector
 $kendo-time-list-title-font-size: var( --kendo-time-list-title-font-size, var( --kendo-font-size-xs, inherit ) ) !default;
 /// Line height of the time-selector titles.
 /// @group time-selector
-$kendo-time-list-title-line-height: var( --kendo-time-list-title-line-height, var( --kendo-line-height-lg, inherit ) ) !default;
+$kendo-time-list-title-line-height: var( --kendo-time-list-title-line-height, 1 ) !default;
 /// Height of the time-selector titles.
 /// @group time-selector
 $kendo-time-list-title-height: calc( #{$kendo-time-list-title-spacing} + #{$kendo-time-list-title-font-size} * #{$kendo-time-list-title-line-height} ) !default;
@@ -76,7 +76,7 @@ $kendo-time-list-title-focus-text: var( --kendo-time-list-title-focus-text, $ken
 
 /// Horizontal padding of the time-selector list items.
 /// @group time-selector
-$kendo-time-list-item-padding-x: var( --kendo-time-list-item-padding-x, k-spacing(2) ) !default;
+$kendo-time-list-item-padding-x: var( --kendo-time-list-item-padding-x, k-spacing(3) ) !default;
 /// Vertical padding of the time-selector list items.
 /// @group time-selector
 $kendo-time-list-item-padding-y: var( --kendo-time-list-item-padding-y, k-spacing(1) ) !default;
@@ -86,17 +86,17 @@ $kendo-time-list-item-padding-y: var( --kendo-time-list-item-padding-y, k-spacin
 $kendo-time-list-highlight-border-width: var( --kendo-time-list-highlight-border-width, 1px 0px ) !default;
 /// Height of the selected item in the time-selector.
 /// @group time-selector
-$kendo-time-list-highlight-height: calc( #{$kendo-time-selector-font-size} * #{$kendo-time-selector-line-height} + calc( #{$kendo-time-list-item-padding-y} * 2 ) ) !default;
+$kendo-time-list-highlight-height: calc( #{$kendo-time-selector-font-size} * #{$kendo-time-selector-line-height} + #{$kendo-time-list-item-padding-y} * 2 ) !default;
 /// Background color of the selected item in the time-selector.
 /// @group time-selector
-$kendo-time-list-highlight-bg: var( --kendo-time-list-highlight-bg, $kendo-time-selector-bg ) !default;
+$kendo-time-list-highlight-bg: var( --kendo-time-list-highlight-bg, color-mix(in srgb, k-color(on-app-surface) 12%, transparent ) ) !default;
 /// Border color of the selected item in the time-selector.
 /// @group time-selector
-$kendo-time-list-highlight-border: var( --kendo-time-list-highlight-border, $kendo-time-selector-border ) !default;
+$kendo-time-list-highlight-border: var( --kendo-time-list-highlight-border, transparent ) !default;
 
 /// Background color of the focused time-selector column.
 /// @group time-selector
-$kendo-time-list-focus-bg: var( --kendo-time-list-focus-bg, rgba(0, 0, 0, .04) ) !default;
+$kendo-time-list-focus-bg: var( --kendo-time-list-focus-bg, color-mix(in srgb, k-color(on-app-surface) 5%, transparent ) ) !default;
 
 
 /// Font sizes of the time-selector.
@@ -113,15 +113,15 @@ $kendo-time-selector-lg-line-height: var( --kendo-time-selector-lg-line-height, 
 
 ///  Horizontal padding of the time-selector items.
 /// @group time-selector
-$kendo-time-selector-sm-list-item-padding-x: var( --kendo-time-selector-sm-list-item-padding-x, #{k-spacing(2)} ) !default;
-$kendo-time-selector-md-list-item-padding-x: var( --kendo-time-selector-md-list-item-padding-x, #{k-spacing(2)} ) !default;
-$kendo-time-selector-lg-list-item-padding-x: var( --kendo-time-selector-lg-list-item-padding-x, #{k-spacing(2)} ) !default;
+$kendo-time-selector-sm-list-item-padding-x: var( --kendo-time-selector-sm-list-item-padding-x, #{k-spacing(3)} ) !default;
+$kendo-time-selector-md-list-item-padding-x: var( --kendo-time-selector-md-list-item-padding-x, #{k-spacing(3)} ) !default;
+$kendo-time-selector-lg-list-item-padding-x: var( --kendo-time-selector-lg-list-item-padding-x, #{k-spacing(3)} ) !default;
 
 ///  Vertical padding of the time-selector items.
 /// @group time-selector
-$kendo-time-selector-sm-list-item-padding-y: var( --kendo-time-selector-sm-list-item-padding-y, #{k-spacing(1.5)} ) !default;
-$kendo-time-selector-md-list-item-padding-y: var( --kendo-time-selector-md-list-item-padding-y, #{k-spacing(2)} ) !default;
-$kendo-time-selector-lg-list-item-padding-y: var( --kendo-time-selector-lg-list-item-padding-y, #{k-spacing(2.5)} ) !default;
+$kendo-time-selector-sm-list-item-padding-y: var( --kendo-time-selector-sm-list-item-padding-y, #{k-spacing(1)} ) !default;
+$kendo-time-selector-md-list-item-padding-y: var( --kendo-time-selector-md-list-item-padding-y, #{k-spacing(1)} ) !default;
+$kendo-time-selector-lg-list-item-padding-y: var( --kendo-time-selector-lg-list-item-padding-y, #{k-spacing(2)} ) !default;
 
 /// Sizes map for the time-selector.
 /// @group time-selector

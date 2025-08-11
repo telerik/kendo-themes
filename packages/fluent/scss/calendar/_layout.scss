@@ -22,8 +22,18 @@
         text-align: center;
     }
 
+    .k-calendar-th {
+        box-sizing: border-box;
+    }
+
     .k-calendar-td {
         font-size: inherit;
+        padding: $kendo-calendar-cell-padding;
+        box-sizing: border-box;
+
+        &.k-selected {
+            border-width: 1px;
+        }
     }
 
     .k-calendar-header {
@@ -87,63 +97,11 @@
                 flex-direction: column;
             }
         }
-    }
 
-    .k-range-start,
-    .k-range-end,
-    .k-range-mid {
-        position: relative;
-
-        &::before {
-            content: "";
-            position: absolute;
-            inset: 0px;
-            border-style: solid;
+        .k-range-start,
+        .k-range-end {
+            border-radius: $kendo-calendar-range-cell-border-radius;
         }
-
-        &:hover .k-link,
-        &.k-hover .k-link {
-            border-radius: 0;
-        }
-    }
-
-    .k-range-mid::before {
-        border-width: var( --kendo-calendar-range-border-width, 1px );
-        border-inline-width: 0;
-        border-radius: 0;
-    }
-
-    .k-range-start::before,
-    .k-range-mid:not(
-        .k-range-start + .k-range-mid,
-        .k-range-mid + .k-range-mid,
-        :last-child
-    )::before {
-        border-width: var( --kendo-calendar-range-border-width, 1px );
-        border-inline-end-width: 0;
-        border-radius: 0;
-
-        @if ( $kendo-enable-rounded ) {
-            border-start-start-radius: $kendo-calendar-cell-border-radius;
-            border-end-start-radius: $kendo-calendar-cell-border-radius;
-        }
-    }
-
-    .k-range-end::before,
-    .k-range-mid:last-child::before {
-        border-width: var( --kendo-calendar-range-border-width, 1px );
-        border-inline-start-width: 0;
-        border-radius: 0;
-
-        @if ( $kendo-enable-rounded ) {
-            border-start-end-radius: $kendo-calendar-cell-border-radius;
-            border-end-end-radius: $kendo-calendar-cell-border-radius;
-        }
-    }
-
-    .k-range-start.k-range-end::before {
-        border-width: var( --kendo-calendar-range-border-width, 1px );
-        border-radius: $kendo-calendar-cell-border-radius;
     }
 
     .k-calendar-navigation::before,

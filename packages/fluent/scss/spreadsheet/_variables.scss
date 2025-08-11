@@ -19,20 +19,17 @@ $kendo-spreadsheet-font-size: var( --kendo-spreadsheet-font-size, var( --kendo-f
 $kendo-spreadsheet-line-height: var( --kendo-spreadsheet-line-height, var( --kendo-line-height, initial ) ) !default;
 /// The background color of the Spreadsheet.
 /// @group spreadsheet
-$kendo-spreadsheet-bg: var( --kendo-spreadsheet-bg, k-color(surface-alt) ) !default;
+$kendo-spreadsheet-bg: var( --kendo-spreadsheet-bg, k-color(app-surface) ) !default;
 /// The text color of the Spreadsheet.
 /// @group spreadsheet
 $kendo-spreadsheet-text: var( --kendo-spreadsheet-text, k-color(on-app-surface) ) !default;
 /// The border color of the Spreadsheet.
 /// @group spreadsheet
-$kendo-spreadsheet-border: var( --kendo-spreadsheet-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
-/// The primary border color of the Spreadsheet.
-/// @group spreadsheet
-$kendo-spreadsheet-primary-border: var( --kendo-spreadsheet-primary-border, k-color(primary) ) !default;
+$kendo-spreadsheet-border: var( --kendo-spreadsheet-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
 
 /// The background color of the Spreadsheet header.
 /// @group spreadsheet
-$kendo-spreadsheet-header-bg: var( --kendo-spreadsheet-header-bg, k-color(surface) ) !default;
+$kendo-spreadsheet-header-bg: var( --kendo-spreadsheet-header-bg, k-color(app-surface) ) !default;
 /// The text color of the Spreadsheet header.
 /// @group spreadsheet
 $kendo-spreadsheet-header-text: var( --kendo-spreadsheet-header-text, $kendo-table-header-text ) !default;
@@ -56,6 +53,10 @@ $kendo-spreadsheet-popup-menu-padding-x: var( --kendo-spreadsheet-popup-menu-pad
 /// The vertical padding of the Spreadsheet popup Menu.
 /// @group spreadsheet
 $kendo-spreadsheet-popup-menu-padding-y: var( --kendo-spreadsheet-popup-menu-padding-y, $kendo-spreadsheet-popup-menu-padding-x ) !default;
+
+/// The background color of the Spreadsheet view.
+/// @group spreadsheet
+$kendo-spreadsheet-view-bg: var( --kendo-spreadsheet-view-bg, k-color(surface) ) !default;
 
 /// The border width of the Spreadsheet action bar.
 /// @group spreadsheet
@@ -105,7 +106,7 @@ $kendo-spreadsheet-selection-bg: var( --kendo-spreadsheet-selection-bg, transpar
 $kendo-spreadsheet-selection-text: var( --kendo-spreadsheet-selection-text, null ) !default;
 /// The border color of the Spreadsheet selection.
 /// @group spreadsheet
-$kendo-spreadsheet-selection-border: var( --kendo-spreadsheet-selection-border, $kendo-spreadsheet-primary-border ) !default;
+$kendo-spreadsheet-selection-border: var( --kendo-spreadsheet-selection-border, k-color(primary) ) !default;
 /// The shadow of the Spreadsheet selection.
 /// @group spreadsheet
 $kendo-spreadsheet-selection-shadow: var( --kendo-spreadsheet-selection-shadow, none ) !default;
@@ -205,39 +206,9 @@ $kendo-spreadsheet-sheets-remove-inline-end: var( --kendo-spreadsheet-sheets-rem
 /// @group spreadsheet
 $kendo-filter-menu-padding-left: var( --kendo-filter-menu-padding-left, calc( var( --kendo-icon-size, 1rem ) + 2 * k-spacing(1) ) ) !default;
 
-/// The text color of the Spreadsheet filter Button.
+/// The padding of the Spreadsheet filter.
 /// @group spreadsheet
-$kendo-spreadsheet-filter-button-text: var( --kendo-spreadsheet-filter-button-text, k-color(on-app-surface) ) !default;
-/// The background color of the Spreadsheet filter Button.
-/// @group spreadsheet
-$kendo-spreadsheet-filter-button-bg: var( --kendo-spreadsheet-filter-button-bg, k-color(app-surface) ) !default;
-/// The border color of the Spreadsheet filter Button.
-/// @group spreadsheet
-$kendo-spreadsheet-filter-button-border: var( --kendo-spreadsheet-filter-button-border, k-color(border) ) !default;
-
-/// The text color of the hovered Spreadsheet filter Button.
-/// @group spreadsheet
-$kendo-spreadsheet-filter-button-hover-text: var( --kendo-spreadsheet-filter-button-hover-text, k-color(on-app-surface) ) !default;
-/// The background color of the hovered Spreadsheet filter Button.
-/// @group spreadsheet
-$kendo-spreadsheet-filter-button-hover-bg: var( --kendo-spreadsheet-filter-button-hover-bg, k-color(base-hover) ) !default;
-/// The border color of the hovered Spreadsheet filter Button.
-/// @group spreadsheet
-$kendo-spreadsheet-filter-button-hover-border: var( --kendo-spreadsheet-filter-button-hover-border, k-color(border) ) !default;
-
-/// The text color of the active Spreadsheet filter Button.
-/// @group spreadsheet
-$kendo-spreadsheet-filter-button-active-text: var( --kendo-spreadsheet-filter-button-active-text, k-color(on-app-surface) ) !default;
-/// The background color of the active Spreadsheet filter Button.
-/// @group spreadsheet
-$kendo-spreadsheet-filter-button-active-bg: var( --kendo-spreadsheet-filter-button-active-bg, k-color(base-active) ) !default;
-/// The border color of the active Spreadsheet filter Button.
-/// @group spreadsheet
-$kendo-spreadsheet-filter-button-active-border: var( --kendo-spreadsheet-filter-button-active-border, k-color(border) ) !default;
-
-/// The color of the Spreadsheet Menu icon.
-/// @group spreadsheet
-$kendo-spreadsheet-filter-menu-icon-color: var( --kendo-spreadsheet-filter-menu-icon-color, k-color(primary) ) !default;
+$kendo-spreadsheet-filter-padding: var( --kendo-spreadsheet-filter-padding, k-spacing(1) ) !default;
 
 /// The border style of the Spreadsheet image Dialog.
 /// @group spreadsheet
@@ -271,7 +242,7 @@ $kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow: var( --kendo-spre
 $kendo-spreadsheet-insert-image-dialog-preview-overlay-border-radius: var( --kendo-spreadsheet-insert-image-dialog-preview-overlay-border-radius, var( --kendo-border-radius-md, initial ) ) !default;
 /// The text color of the hovered Spreadsheet image Dialog preview.
 /// @group spreadsheet
-$kendo-spreadsheet-insert-image-dialog-overlay-hover-text: var( --kendo-spreadsheet-insert-image-dialog-overlay-hover-text, k-color(surface-alt) ) !default;
+$kendo-spreadsheet-insert-image-dialog-overlay-hover-text: var( --kendo-spreadsheet-insert-image-dialog-overlay-hover-text, k-color(app-surface) ) !default;
 
 /// The width of the Spreadsheet drawing handle.
 /// @group spreadsheet
@@ -372,6 +343,7 @@ $kendo-spreadsheet-insert-image-dialog-img: url("data:image/png;base64,iVBORw0KG
     $kendo-spreadsheet-sheets-bar-padding-x: $kendo-spreadsheet-sheets-bar-padding-x,
     $kendo-spreadsheet-sheets-bar-padding-y: $kendo-spreadsheet-sheets-bar-padding-y,
     $kendo-spreadsheet-sheets-bar-border-width: $kendo-spreadsheet-sheets-bar-border-width,
+    $kendo-spreadsheet-filter-padding: $kendo-spreadsheet-filter-padding,
     $kendo-spreadsheet-insert-image-dialog-border-style: $kendo-spreadsheet-insert-image-dialog-border-style,
     $kendo-spreadsheet-insert-image-dialog-border-width: $kendo-spreadsheet-insert-image-dialog-border-width,
     $kendo-spreadsheet-insert-image-dialog-text-margin-bottom: $kendo-spreadsheet-insert-image-dialog-text-margin-bottom,

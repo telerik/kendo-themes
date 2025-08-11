@@ -5,27 +5,11 @@
 @mixin kendo-action-sheet--theme() {
     @include kendo-action-sheet--theme-base();
 
-    .k-actionsheet-header,
-    .k-actionsheet-titlebar {
-        color: $kendo-actionsheet-header-text;
-        background-color: $kendo-actionsheet-header-bg;
-        border-color: $kendo-actionsheet-header-border;
-        @include box-shadow( $kendo-actionsheet-header-shadow );
-    }
-
     .k-actionsheet-subtitle {
         color: inherit;
     }
 
-    .k-actionsheet-item-icon {
-        color: $kendo-actionsheet-item-icon-color;
-    }
-
     .k-actionsheet-item {
-        color: var( --kendo-actionsheet-item-text, inherit );
-        background-color: var( --kendo-actionsheet-item-bg, inherit );
-        border-color: var( --kendo-actionsheet-item-border, inherit );
-        outline-color: var( --kendo-actionsheet-item-outline, inherit );
 
         &:focus,
         &.k-focus {

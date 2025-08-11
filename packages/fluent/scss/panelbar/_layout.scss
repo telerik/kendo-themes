@@ -1,6 +1,5 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
-@use "../core/spacing/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/panelbar/_layout.scss" as *;
 
 @mixin kendo-panelbar--layout() {
@@ -17,15 +16,17 @@
                 font-weight: normal;
 
                 &.k-selected {
-                    font-weight: $kendo-font-weight-bold;
+                    font-weight: var(--kendo-font-weight-semibold, 600 );
+                }
 
-                    &::before {
-                        content: '';
-                        width: 2px;
-                        height: 100%;
-                        position: absolute;
-                        inset-inline-start: 0;
-                    }
+                &:focus,
+                &.k-focus {
+                    border-radius: k-border-radius(md);
+                }
+
+                &.k-hover,
+                &:hover {
+                    border-radius: k-border-radius(md);
                 }
             }
         }
@@ -42,15 +43,14 @@
                 padding-block: $kendo-panelbar-item-padding-y;
 
                 &.k-selected {
-                    font-weight: $kendo-font-weight-bold;
+                    font-weight: var(--kendo-font-weight-semibold, 600 );
+                }
 
-                    &::before {
-                        content: '';
-                        width: 2px;
-                        height: 100%;
-                        position: absolute;
-                        inset-inline-start: 0;
-                    }
+                &:focus,
+                &.k-focus,
+                &:hover,
+                &.k-hover {
+                    border-radius: k-border-radius(md);
                 }
             }
 

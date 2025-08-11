@@ -212,7 +212,7 @@ $kendo-grid-header-border-width-x: var( --kendo-grid-header-border-width-x, 0px 
 $kendo-grid-header-font-size: var( --kendo-grid-header-font-size, inherit ) !default;
 /// The font weight of the Grid header.
 /// @group grid
-$kendo-grid-header-font-weight: var( --kendo-grid-header-font-weight, var(--kendo-font-weight-bold, normal) ) !default;
+$kendo-grid-header-font-weight: var( --kendo-grid-header-font-weight, var(--kendo-font-weight-normal, normal) ) !default;
 /// The menu spacing of the Grid header.
 /// @group grid
 $kendo-grid-header-menu-spacing: var( --kendo-grid-header-menu-spacing, var(--kendo-icon-spacing, .5rem) ) !default;
@@ -313,13 +313,13 @@ $kendo-grid-sort-index-spacing-x: var( --kendo-grid-sort-index-spacing-x, #{k-sp
 $kendo-grid-sort-icon-spacing: var( --kendo-grid-sort-icon-spacing, var(--kendo-icon-lg-spacing, .5rem) ) !default;
 /// The text color of the Grid sort indicator.
 /// @group grid
-$kendo-grid-sort-indicator-text: var( --kendo-grid-sort-indicator-text, k-color(subtle) ) !default;
+$kendo-grid-sort-indicator-text: var( --kendo-grid-sort-indicator-text, k-color(on-app-surface) ) !default;
 /// The text color of the Grid sort order indicator.
 /// @group grid
 $kendo-grid-sort-indicator-order-text: var( --kendo-grid-sort-indicator-order-text, #{k-color(primary)} ) !default;
 /// The background color of the sorted Grid cells.
 /// @group grid
-$kendo-grid-sorted-bg: var( --kendo-grid-sorted-bg, #{k-color(surface)} ) !default;
+$kendo-grid-sorted-bg: var( --kendo-grid-sorted-bg, rgba(0, 0, 0, 0.04) ) !default;
 
 /// The vertical padding of the Grid command cells.
 /// @group grid

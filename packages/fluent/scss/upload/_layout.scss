@@ -16,16 +16,25 @@
             margin-inline-end: 0;
         }
 
+        .k-file-size,
+        .k-file-validation-message {
+            line-height: var( --kendo-line-height-xs, normal );
+        }
+
         .k-multiple-files-wrapper,
         .k-file-single > .k-file-info {
             margin-inline-start: k-spacing(2);
             margin-inline-end: 0;
         }
 
+        .k-upload-files .k-file-info {
+            min-height: auto;
+        }
+
         .k-progressbar {
             inset-inline-start: $kendo-upload-item-padding-x;
             inset-inline-end: $kendo-upload-item-padding-x;
-            inset-block-end: calc( $kendo-upload-item-padding-y / 2 );
+            inset-block-end: $kendo-upload-item-padding-y;
         }
     }
 

@@ -20,7 +20,11 @@
         }
 
         &.k-selected {
-            @include box-shadow( $kendo-card-focus-shadow );
+            background: $kendo-taskboard-card-selected-bg;
+
+            .k-card-header {
+                background: $kendo-taskboard-card-selected-bg;
+            }
         }
 
         &.k-disabled {

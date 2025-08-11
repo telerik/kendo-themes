@@ -10,7 +10,15 @@
     .k-appbar-base {
         color: $kendo-appbar-text;
         background-color: $kendo-appbar-bg;
-        border-color: $kendo-appbar-border;
+    }
+
+    .k-appbar {
+        border-bottom: 1px solid $kendo-appbar-border;
+    }
+
+    .k-appbar.k-appbar-bottom {
+        border-bottom: none;
+        border-top: 1px solid $kendo-appbar-border;
     }
 
     .k-appbar-inherit {

@@ -12,7 +12,10 @@
 
             &:focus,
             &.k-focus {
+                // TODO: use scss variable for outline width
+                outline-width: 2px;
                 outline-style: solid;
+                outline-offset: -2px;
             }
         }
 

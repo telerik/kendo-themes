@@ -58,10 +58,6 @@ $kendo-form-legend-text-transform: var(--kendo-form-legend-text-transform, upper
 /// @group form
 $kendo-form-label-margin-bottom: var(--kendo-form-label-margin-bottom, #{k-spacing(2)}) !default;
 
-/// The font weight of the form label
-/// @group form
-$kendo-form-label-font-weight: var(--kendo-form-label-font-weight, var( --kendo-font-weight-bold, inherit )) !default;
-
 /// The font size of the Form hint.
 /// @group form
 $kendo-form-hint-font-size: var(--kendo-form-hint-font-size, var( --kendo-font-size-sm, inherit )) !default;
@@ -72,7 +68,7 @@ $kendo-form-hint-font-style: var(--kendo-form-hint-font-style, normal) !default;
 
 /// The top margin of the Form hint.
 /// @group form
-$kendo-form-hint-margin-top: var(--kendo-form-hint-margin-top, #{k-spacing(1)}) !default;
+$kendo-form-hint-margin-top: var(--kendo-form-hint-margin-top, #{k-spacing(0.5)}) !default;
 
 /// The text color of the Form hint.
 /// @group form

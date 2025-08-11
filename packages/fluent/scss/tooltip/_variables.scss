@@ -7,10 +7,10 @@
 $kendo-tooltip-border-radius: var( --kendo-tooltip-border-radius, #{k-border-radius(md)} ) !default;
 /// The horizontal padding of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-padding-x: var( --kendo-tooltip-padding-x, #{k-spacing(2)} ) !default;
+$kendo-tooltip-padding-x: var( --kendo-tooltip-padding-x, #{k-spacing(3)} ) !default;
 /// The vertical padding of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-padding-y: var( --kendo-tooltip-padding-y, #{k-spacing(2)} ) !default;
+$kendo-tooltip-padding-y: var( --kendo-tooltip-padding-y, #{k-spacing(1.5)} ) !default;
 /// The width of the border around the Tooltip.
 /// @group tooltip
 $kendo-tooltip-border-width: var( --kendo-tooltip-border-width, 0px ) !default;
@@ -22,14 +22,14 @@ $kendo-tooltip-font-family: var( --kendo-tooltip-font-family, var( --kendo-font-
 $kendo-tooltip-font-size: var( --kendo-tooltip-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
 /// The line height of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-line-height: var( --kendo-tooltip-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-tooltip-line-height: var( --kendo-tooltip-line-height, var( --kendo-line-height-lg, normal ) ) !default;
 
 /// The font size of the Tooltip title.
 /// @group tooltip
 $kendo-tooltip-title-font-size: var( --kendo-tooltip-title-font-size, calc( var( --kendo-font-size-sm, .75rem ) * 1.25 ) ) !default;
 /// The line height of the Tooltip title.
 /// @group tooltip
-$kendo-tooltip-title-line-height: var( --kendo-tooltip-title-line-height, var( --kendo-line-heigh-xs, normal ) ) !default;
+$kendo-tooltip-title-line-height: var( --kendo-tooltip-title-line-height, var( --kendo-line-heigh-lg, normal ) ) !default;
 /// The margin of the Tooltip title.
 /// @group tooltip
 $kendo-tooltip-title-margin: var( --kendo-tooltip-title-margin, #{k-spacing(1)} ) !default;
@@ -49,7 +49,7 @@ $kendo-tooltip-text: var( --kendo-tooltip-text, #{k-color(on-app-surface)} ) !de
 $kendo-tooltip-border: var( --kendo-tooltip-border, transparent ) !default;
 /// The box-shadow of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-shadow: var( --kendo-tooltip-shadow, var( --kendo-box-shadow-depth-2, none ) ) !default;
+$kendo-tooltip-shadow: var( --kendo-tooltip-shadow, k-elevation(4) ) !default;
 
 /// The text color of the Tooltip button.
 /// @group tooltip

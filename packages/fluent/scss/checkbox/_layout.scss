@@ -122,9 +122,12 @@
     }
 
     // Checkbox list
+    .k-checkbox-list.k-list-vertical {
+        gap: k-spacing(2);
+    }
     .k-checkbox-item,
     .k-checkbox-list-item {
-        gap: k-spacing(2);
+        gap: k-spacing(1);
     }
 
     // Fluent-specific ripple focus override

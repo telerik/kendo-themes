@@ -18,9 +18,9 @@
 
         .k-coloreditor-#{$size} {
 
+            .k-coloreditor-header,
             .k-coloreditor-views {
-                padding-block-start: calc($_views-padding-y * 2);
-                padding-block-end: $_views-padding-y;
+                padding-block: $_views-padding-y;
                 padding-inline: $_views-padding-x;
             }
         }

@@ -4,23 +4,4 @@
 
 @mixin kendo-listview--theme() {
     @include kendo-listview--theme-base();
-
-    // Fluent-specific styles
-
-    // Listview header
-    .k-listview-header {
-        @include fill(
-            $kendo-listview-header-text,
-            $kendo-listview-header-bg,
-            $kendo-listview-header-border
-        )
-    }
-
-    // Listview footer
-    .k-listview-footer {
-        @include fill(
-            $kendo-listview-footer-text,
-            $kendo-listview-footer-bg
-        )
-    }
 }
