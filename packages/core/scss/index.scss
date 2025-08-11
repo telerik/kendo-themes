@@ -16,7 +16,6 @@
 @use "./typography/index.import.scss" as *;
 @use "./spacing/index.import.scss" as *;
 @use "./border-radii/index.import.scss" as *;
-@use "./z-index/index.import.scss" as *;
 
 @mixin core-styles() {
     @include import-once("core-styles") {
