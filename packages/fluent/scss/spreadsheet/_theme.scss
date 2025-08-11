@@ -6,43 +6,13 @@
 @mixin kendo-spreadsheet--theme() {
     @include kendo-spreadsheet--theme-base();
 
-
-    // Filter button
-    .k-spreadsheet .k-filter-range {
-        border-color: $kendo-spreadsheet-primary-border;
-    }
-    .k-spreadsheet-filter {
-        @include fill(
-            $kendo-spreadsheet-filter-button-text,
-            $kendo-spreadsheet-filter-button-bg,
-            $kendo-spreadsheet-filter-button-border
-        );
-        box-shadow: inset 0 0 0 1px $kendo-spreadsheet-filter-button-border;
-
-        &:hover {
-            @include fill(
-                $kendo-spreadsheet-filter-button-hover-text,
-                $kendo-spreadsheet-filter-button-hover-bg,
-                $kendo-spreadsheet-filter-button-hover-border
-            );
-        }
-
-        &.k-active {
-            @include fill(
-                $kendo-spreadsheet-filter-button-active-text,
-                $kendo-spreadsheet-filter-button-active-bg,
-                $kendo-spreadsheet-filter-button-active-border
-            );
-        }
-
+    .k-spreadsheet-view,
+    .k-spreadsheet-filter-menu .k-spreadsheet-value-treeview-wrapper {
+        background-color: $kendo-spreadsheet-view-bg;
     }
 
-    // Filter menu legacy - delete after new rendering adoption R3 23
-    .k-spreadsheet-filter-menu {
-
-        .k-columnmenu-item > .k-icon:first-child {
-            color: $kendo-spreadsheet-filter-menu-icon-color;
-        }
+    .k-spreadsheet .k-tabstrip-items-wrapper .k-item.k-active {
+        background-color: unset;
     }
 
 }

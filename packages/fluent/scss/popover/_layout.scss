@@ -5,31 +5,18 @@
 @mixin kendo-popover--layout() {
     @include kendo-popover--layout-base();
 
-    .k-popover {
-        .k-popover-header {
-            margin-block-end: 0;
-        }
-    }
-
     // Header
     .k-popover-header {
         @extend .k-card-title !optional;
-    }
-
-    // Body
-    .k-popover-body {
-        padding-block-start: $kendo-popover-body-padding-y;
         padding-block-end: 0;
-
-        @at-root .k-popover-header + .k-popover-body {
-            padding-block-start: 0;
-        }
+        margin-block-end: 0;
+        font-size: var(--kendo-font-size-lg, inherit);
+        line-height: var(--kendo-line-height-sm, normal);
     }
 
     // Actions
     .k-popover-actions {
         padding-inline: $kendo-popover-actions-padding-x;
         padding-block: $kendo-popover-actions-padding-y;
-        gap: $kendo-popover-actions-gap;
     }
 }

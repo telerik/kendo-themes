@@ -17,13 +17,55 @@
 
         .k-tabstrip-items-wrapper {
 
-            .k-item:active::after,
-            .k-item.k-active::after,
-            .k-item.k-selected::after {
-                opacity: 1;
-                transform: scaleY(1);
+            .k-item.k-active::after {
+                border: none;
+                height: $kendo-tabstrip-indicator-size;
+                border-radius: k-border-radius(md);
+                margin: 0 k-spacing(2.5);
             }
         }
+
+        .k-tabstrip-top {
+
+           > .k-tabstrip-items-wrapper {
+
+                .k-item.k-active::after {
+                    top: unset;
+                }
+            }
+        }
+        .k-tabstrip-left {
+
+           > .k-tabstrip-items-wrapper {
+
+                .k-item.k-active::after {
+                    left: unset;
+                }
+            }
+        }
+        .k-tabstrip-right {
+
+           > .k-tabstrip-items-wrapper {
+
+                .k-item.k-active::after {
+                    right: unset;
+                }
+            }
+        }
+
+        .k-tabstrip-left,
+        .k-tabstrip-right {
+
+            > .k-tabstrip-items-wrapper {
+
+                .k-item.k-active::after {
+                    width: $kendo-tabstrip-indicator-size;
+                    height: auto;
+                    margin: k-spacing(3) 0;
+                }
+            }
+        }
+
     }
 
 }

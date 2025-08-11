@@ -81,9 +81,9 @@ $kendo-menu-item-focus-bg: var( --kendo-menu-item-focus-bg, #{$kendo-menu-item-b
 
 /// The outline of focused Menu item.
 /// @group menu
-$kendo-menu-item-focus-outline: var( --kendo-menu-item-focus-outline, #{k-color(base-emphasis)} ) !default;
+$kendo-menu-item-focus-outline: var( --kendo-menu-item-focus-outline, #{k-color(border-alt)} ) !default;
 $kendo-menu-item-focus-outline-offset: var( --kendo-menu-item-focus-outline-offset, calc( #{k-spacing(0.5)} * -1 ) ) !default;
-$kendo-menu-item-focus-outline-width: var( --kendo-menu-item-focus-outline-width, 1px ) !default;
+$kendo-menu-item-focus-outline-width: var( --kendo-menu-item-focus-outline-width, 2px ) !default;
 $kendo-menu-item-focus-outline-style: var( --kendo-menu-item-focus-outline-style, solid ) !default;
 
 /// The text color of disabled Menu item.
@@ -227,7 +227,7 @@ $kendo-menu-popup-item-hover-bg: var( --kendo-menu-popup-item-hover-bg, #{$kendo
 
 /// The outline of focused Menu items.
 /// @group menu
-$kendo-menu-popup-item-focus-outline: var( --kendo-menu-popup-item-focus-outline, #{k-color(base-emphasis)} ) !default;
+$kendo-menu-popup-item-focus-outline: var( --kendo-menu-popup-item-focus-outline, #{k-color(border-alt)} ) !default;
 
 /// The text color of active Menu item in popup.
 /// @group menu

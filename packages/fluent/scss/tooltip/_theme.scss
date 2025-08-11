@@ -16,6 +16,11 @@
                 color: k-color(on-#{$name});
                 background-color: k-color(#{$name});
                 border-color: k-color(#{$name});
+
+                .k-tooltip-button {
+                    
+                    color: k-color(on-#{$name});
+                }
             }
         } @else {
             .k-tooltip-#{$name} {

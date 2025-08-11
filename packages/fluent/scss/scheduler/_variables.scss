@@ -18,17 +18,17 @@ $kendo-scheduler-line-height: var( --kendo-scheduler-line-height, var( --kendo-l
 
 /// The background color of the Scheduler.
 /// @group scheduler
-$kendo-scheduler-bg: var( --kendo-scheduler-bg, k-color(surface-alt) ) !default;
+$kendo-scheduler-bg: var( --kendo-scheduler-bg, k-color(app-surface) ) !default;
 /// The text color of the Scheduler.
 /// @group scheduler
 $kendo-scheduler-text: var( --kendo-scheduler-text, k-color(on-app-surface) ) !default;
 /// The border color of the Scheduler.
 /// @group scheduler
-$kendo-scheduler-border: var( --kendo-scheduler-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
+$kendo-scheduler-border: var( --kendo-scheduler-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
 
 /// The background color of the selected row in Scheduler.
 /// @group scheduler
-$kendo-scheduler-selected-bg: var( --kendo-scheduler-selected-bg, k-color(primary-subtle) ) !default;
+$kendo-scheduler-selected-bg: var( --kendo-scheduler-selected-bg, k-color(primary-active) ) !default;
 /// The text color of the selected row in Scheduler.
 /// @group scheduler
 $kendo-scheduler-selected-text: var( --kendo-scheduler-selected-text, $kendo-scheduler-text ) !default;
@@ -38,20 +38,20 @@ $kendo-scheduler-selected-border: var( --kendo-scheduler-selected-border, $kendo
 
 /// The background color of the Scheduler ToolBar.
 /// @group scheduler
-$kendo-scheduler-toolbar-bg: var( --kendo-scheduler-toolbar-bg, var( --kendo-toolbar-bg, $kendo-toolbar-bg ) ) !default;
+$kendo-scheduler-toolbar-bg: var( --kendo-scheduler-toolbar-bg, k-color(app-surface) ) !default;
 /// The text color of the Scheduler ToolBar.
 /// @group scheduler
-$kendo-scheduler-toolbar-text: var( --kendo-scheduler-toolbar-text, var( --kendo-toolbar-text, $kendo-toolbar-text ) ) !default;
+$kendo-scheduler-toolbar-text: var( --kendo-scheduler-toolbar-text, k-color(on-app-surface) ) !default;
 /// The border color of the Scheduler ToolBar.
 /// @group scheduler
-$kendo-scheduler-toolbar-border: var( --kendo-scheduler-toolbar-border, var( --kendo-toolbar-border, $kendo-toolbar-border ) ) !default;
+$kendo-scheduler-toolbar-border: var( --kendo-scheduler-toolbar-border, k-color(border) ) !default;
 /// The gradient of the Scheduler ToolBar.
 /// @group scheduler
 $kendo-scheduler-toolbar-gradient: var( --kendo-scheduler-toolbar-gradient, null ) !default; // $kendo-toolbar-gradient
 
 /// The background color of the Scheduler footer.
-/// @group scheduler
-$kendo-scheduler-footer-bg: var( --kendo-scheduler-footer-bg, var( --kendo-toolbar-bg, $kendo-toolbar-bg ) ) !default;
+/// @group schedulers
+$kendo-scheduler-footer-bg: var( --kendo-scheduler-footer-bg, k-color(app-surface) ) !default;
 /// The text color of the Scheduler footer.
 /// @group scheduler
 $kendo-scheduler-footer-text: var( --kendo-scheduler-footer-text, var( --kendo-toolbar-text, $kendo-toolbar-text ) ) !default;
@@ -96,10 +96,10 @@ $kendo-scheduler-event-shadow: var( --kendo-scheduler-event-shadow, null ) !defa
 
 /// The background color of the hovered Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-hover-bg: var( --kendo-scheduler-event-hover-bg, k-color(base-hover) ) !default;
+$kendo-scheduler-event-hover-bg: var( --kendo-scheduler-event-hover-bg, k-color(primary-hover) ) !default;
 /// The text color of the hovered Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-hover-text: var( --kendo-scheduler-event-hover-text, k-color(on-base) ) !default;
+$kendo-scheduler-event-hover-text: var( --kendo-scheduler-event-hover-text, k-color(on-primary) ) !default;
 /// The border color of the hovered Scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-hover-border: var( --kendo-scheduler-event-hover-border, color-mix(in srgb, k-color(border) 10%, transparent) ) !default;

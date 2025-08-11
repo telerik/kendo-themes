@@ -8,7 +8,7 @@
 @mixin kendo-messagebox--theme-base() {
 
     @each $color-name, $color in $kendo-message-box-theme-colors {
-        .k-messagebox-#{$color-name} {
+        .k-messagebox.k-messagebox-#{$color-name} {
             @if $color-name == "inverse" {
                 @include fill(
                     k-color(dark-on-subtle),

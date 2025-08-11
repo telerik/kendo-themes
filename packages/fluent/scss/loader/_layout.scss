@@ -37,6 +37,10 @@
             padding-block: $kendo-loader-lg-container-padding-y;
         }
     }
+
+    .k-loader-container-label {
+        font-weight: var( --kendo-font-weight-semibold, 600 );
+    }
 }
 
 @mixin kendo-loading--layout() {

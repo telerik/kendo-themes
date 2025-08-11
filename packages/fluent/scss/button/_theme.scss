@@ -6,138 +6,149 @@
 @mixin kendo-button--theme() {
 
     @include kendo-button--theme-base();
-
-    .k-button-solid-base {
-
+    .k-button-solid {
         &:focus,
         &.k-focus {
-            color: $kendo-button-focus-text;
-            background-color: $kendo-button-focus-bg;
             border-color: $kendo-button-focus-border;
-            outline-color: $kendo-button-focus-outline;
-
-            &:hover,
-            &.k-hover {
-                color: $kendo-button-focus-hover-text;
-                background-color: $kendo-button-focus-hover-bg;
-                border-color: $kendo-button-focus-hover-border;
-                outline-color: $kendo-button-focus-hover-outline;
-            }
+            outline-color: $kendo-button-focus-border;
+            box-shadow: inset 0 0 0 $kendo-button-border-width $kendo-button-focus-border,
+                        inset 0 0 0 calc( #{$kendo-button-border-width} * 2 ) k-color(surface);
         }
+    }
 
-        &:active,
-        &.k-active {
-            color: $kendo-button-active-text;
-            background-color: $kendo-button-active-bg;
-            border-color: $kendo-button-active-border;
-
-            &:hover,
-            &.k-hover {
-                color: $kendo-button-active-hover-text;
-                background-color: $kendo-button-active-hover-bg;
-                border-color: $kendo-button-active-hover-border;
-            }
-        }
-
+    .k-button-solid-base {
         &.k-selected {
             color: $kendo-button-active-text;
             background-color: $kendo-button-active-bg;
             border-color: $kendo-button-active-border;
-
-            &:hover,
-            &.k-hover {
-                color: $kendo-button-active-hover-text;
-                background-color: $kendo-button-active-hover-bg;
-                border-color: $kendo-button-active-hover-border;
-            }
         }
+    }
 
-        // Disabled state
+    .k-button-flat {
         &:disabled,
         &.k-disabled {
             @include fill(
-                $kendo-button-disabled-text,
-                $kendo-button-disabled-bg,
-                $kendo-button-disabled-border
+                $kendo-button-flat-disabled-text,
+                $kendo-button-flat-disabled-bg,
+                $kendo-button-flat-disabled-border
             );
         }
     }
 
-    .k-button-solid-warning,
-    .k-button-solid-light {
-        &:focus::after,
-        &.k-focus::after {
-            outline-color: k-color(app-surface);
+    .k-button-outline,
+    .k-button-flat,
+    .k-button-clear,
+    .k-button-link {
+        &:focus,
+        &.k-focus {
+            outline-color: $kendo-button-focus-border;
+        }
+
+        &:disabled,
+        &.k-disabled {
+            @include fill(
+                $kendo-button-outline-disabled-text,
+                $kendo-button-outline-disabled-bg,
+                $kendo-button-outline-disabled-border
+            );
         }
     }
 
     @each $theme-color, $color in $kendo-button-theme-colors {
         @if($theme-color != "base") {
             .k-button-flat-#{$theme-color} {
-                color: k-color(#{$theme-color}-on-surface);
                 background-color: initial !important; // stylelint-disable-line declaration-no-important
                 border-color: transparent;
+            }
+
+            .k-button-outline-#{$theme-color} {
+
+                border-color: k-color(#{$theme-color}-on-surface);
+
+                &:hover,
+                &.k-hover,
+                &:active,
+                &.k-active,
+                &.k-selected {
+                    border-color: k-color(#{$theme-color}-on-surface);
+                }
+            }
+
+            .k-button-flat-#{$theme-color},
+            .k-button-outline-#{$theme-color} {
+                color: k-color(#{$theme-color}-on-surface);
+
+                &:active,
+                &.k-active,
+                &.k-selected {
+                    color: k-color(#{$theme-color}-on-surface);
+                    background-color: color-mix(in srgb, k-color(#{$theme-color}-active) 13%, transparent) !important; // stylelint-disable-line declaration-no-important
+                }
 
                 &:hover,
                 &.k-hover {
-                    color: k-color(#{$theme-color}-hover);
-                    background-color: k-color(#{$theme-color}-subtle) !important; // stylelint-disable-line declaration-no-important
-                    border-color: transparent;
-                }
-
-                &:focus,
-                &.k-focus {
                     color: k-color(#{$theme-color}-on-surface);
-                    background-color: initial !important; // stylelint-disable-line declaration-no-important
-                    border-color: transparent;
-                    outline-color: k-color(#{$theme-color}-subtle-active);
+                    background-color: color-mix(in srgb, k-color(#{$theme-color}-hover) 3%, transparent) !important; // stylelint-disable-line declaration-no-important
+                }
+            }
+        }
 
-                    &:hover,
-                    &.k-hover {
-                        color: k-color(#{$theme-color}-hover);
-                        background-color: k-color(#{$theme-color}-subtle) !important; // stylelint-disable-line declaration-no-important
-                        border-color: transparent;
-                        outline-color: k-color(#{$theme-color}-subtle-active);
-                    }
+        @if($theme-color == "base") {
+            .k-button-outline-#{$theme-color} {
+                border-color: $kendo-button-border;
 
-                    &::after {
-                        outline-color: k-color(#{$theme-color}-subtle-active);
-                    }
+                &:hover,
+                &.k-hover {
+                    color: inherit;
+                    background-color: color-mix(in srgb, k-color(on-base) 3%, transparent);
+                    border-color: color-mix( in srgb, k-color(border) 34%, transparent );
                 }
 
                 &:active,
                 &.k-active,
                 &.k-selected {
-                    color: k-color(#{$theme-color}-hover);
-                    background-color: k-color(#{$theme-color}-subtle-hover) !important; // stylelint-disable-line declaration-no-important
-                    border-color: transparent;
+                    color: inherit;
+                    background-color: color-mix(in srgb, k-color(on-base) 13%, transparent);
+                    border-color: $kendo-button-border;
+                }
+            }
 
-                    &:hover,
-                    &.k-hover {
-                        color: k-color(#{$theme-color}-hover);
-                        background-color: k-color(#{$theme-color}-subtle) !important; // stylelint-disable-line declaration-no-important
-                        border-color: transparent;
-                    }
+            .k-button-flat-#{$theme-color} {
+                &:hover,
+                &.k-hover {
+                    background-color: color-mix(in srgb, k-color(on-base) 3%, transparent) !important; // stylelint-disable-line declaration-no-important
                 }
             }
         }
 
-        .k-button-clear-#{$theme-color} {
-            color: k-color(#{$theme-color}-on-surface);
-            background-color: transparent !important; // stylelint-disable-line declaration-no-important
-            border-color: transparent;
-            &:focus,
-            &.k-focus {
-                color: k-color(#{$theme-color}-on-surface);
-                background-color: k-color(#{$theme-color}-subtle) !important; // stylelint-disable-line declaration-no-important
-                border-color: transparent;
+        @if($theme-color == "secondary") {
+            .k-button-solid-#{$theme-color} {
+                border-color: currentColor;
+
+                &:hover,
+                &.k-hover,
+                &:active,
+                &.k-active,
+                &.k-selected {
+                    border-color: currentColor;
+                }
+
+                &:focus,
+                &.k-focus {
+                    box-shadow: inset 0 0 0 $kendo-button-border-width $kendo-button-focus-border;
+                }
             }
         }
 
-        .k-button-link-#{$theme-color} {
-            &:focus::after,
-            &.k-focus::after {
-                outline-color: k-color(#{$theme-color}-subtle-active);
+        @if($theme-color == "light") {
+            .k-button-outline-#{$theme-color},
+            .k-button-flat-#{$theme-color},
+            .k-button-clear-#{$theme-color},
+            .k-button-link-#{$theme-color} {
+                &:focus,
+                &.k-focus {
+                    outline-color: k-color(light-on-surface);
+                }
             }
         }
     }
@@ -147,33 +158,4 @@
     .k-button-group[disabled] {
         background-color: inherit;
     }
-
-    .k-disabled,
-    :disabled {
-
-        .k-button-solid {
-            color: $kendo-button-disabled-text;
-            background-color: $kendo-button-disabled-bg;
-            border-color: $kendo-button-disabled-border;
-        }
-
-        .k-button-outline {
-            color: $kendo-button-outline-disabled-text;
-            background-color: $kendo-button-outline-disabled-bg;
-            border-color: $kendo-button-outline-disabled-border;
-        }
-
-        .k-button-flat,
-        .k-button-clear,
-        .k-button-link {
-            color: $kendo-button-flat-disabled-text;
-            background-color: $kendo-button-flat-disabled-bg;
-            border-color: $kendo-button-flat-disabled-border;
-        }
-    }
-
-    .k-button-flat-base.k-disabled {
-        color: color-mix(in srgb, k-color(on-app-surface) 46%, transparent);
-    }
-
 }

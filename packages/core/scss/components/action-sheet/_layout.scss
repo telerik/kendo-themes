@@ -55,7 +55,7 @@
     // Actionsheet
     .k-actionsheet {
         padding-block: $kendo-actionsheet-padding-y;
-        padding-inline: $kendo-actionsheet-padding-y;
+        padding-inline: $kendo-actionsheet-padding-x;
         width: var( --kendo-actionsheet-width, #{$kendo-actionsheet-width} );
         height: var( --kendo-actionsheet-height, #{$kendo-actionsheet-height} );
         max-width: var( --kendo-actionsheet-max-width, #{$kendo-actionsheet-max-width} );

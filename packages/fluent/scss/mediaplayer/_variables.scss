@@ -26,7 +26,7 @@ $kendo-media-player-border: var( --kendo-media-player-border, color-mix(in srgb,
 
 /// The background color of the MediaPlayer overlay.
 /// @group mediaplayer
-$kendo-media-player-overlay-bg: var( --kendo-media-player-overlay-bg, k-color(base-emphasis) ) !default;
+$kendo-media-player-overlay-bg: var( --kendo-media-player-overlay-bg, k-color(subtle) ) !default;
 
 /// The border color of the MediaPlayer button.
 /// @group mediaplayer

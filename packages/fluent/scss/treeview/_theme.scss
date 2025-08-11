@@ -5,34 +5,10 @@
 @mixin kendo-treeview--theme() {
     @include kendo-treeview--theme-base();
 
-    .k-treeview-leaf {
-        // Hover state
+    .k-treeview-leaf.k-selected {
         &:hover,
         &.k-hover {
-            @include fill(
-                $kendo-treeview-item-hover-text,
-                $kendo-treeview-item-hover-bg,
-                $kendo-treeview-item-hover-border,
-            );
-        }
-
-        // Focus state
-        &:focus,
-        &.k-focus {
-           @include fill(
-                $kendo-treeview-item-focus-text,
-                $kendo-treeview-item-focus-bg,
-                $kendo-treeview-item-focus-border,
-            );
-        }
-
-        // Selected state
-        &.k-selected {
-            @include fill(
-                $kendo-treeview-item-selected-text,
-                $kendo-treeview-item-selected-bg,
-                $kendo-treeview-item-selected-border,
-            );
+            background-color: color-mix(in srgb, k-color(on-app-surface) 17%, transparent)
         }
     }
 

@@ -82,7 +82,7 @@ $kendo-tabstrip-sm-item-padding-x: var( --kendo-tabstrip-sm-item-padding-x, #{k-
 $kendo-tabstrip-sm-item-padding-y: var( --kendo-tabstrip-sm-item-padding-y, #{k-spacing(2.5)} ) !default;
 /// The horizontal padding of the medium TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-md-item-padding-x: var( --kendo-tabstrip-md-item-padding-x, #{k-spacing(2)} ) !default;
+$kendo-tabstrip-md-item-padding-x: var( --kendo-tabstrip-md-item-padding-x, #{k-spacing(2.5)} ) !default;
 /// The vertical padding of the medium TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-md-item-padding-y: var( --kendo-tabstrip-md-item-padding-y, #{k-spacing(3)} ) !default;
@@ -120,7 +120,7 @@ $kendo-tabstrip-item-disabled-filter: var( --kendo-tabstrip-item-disabled-filter
 
 /// The background color of the hovered TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-hover-bg: var( --kendo-tabstrip-item-hover-bg, #{k-color(base-hover)} ) !default;
+$kendo-tabstrip-item-hover-bg: var( --kendo-tabstrip-item-hover-bg, color-mix(in srgb, #{k-color(on-app-surface) 5%, transparent}) ) !default;
 /// The text color of the hovered TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-hover-text: var( --kendo-tabstrip-item-hover-text, #{k-color(on-base)} ) !default;
@@ -129,7 +129,7 @@ $kendo-tabstrip-item-hover-text: var( --kendo-tabstrip-item-hover-text, #{k-colo
 $kendo-tabstrip-item-hover-border: var( --kendo-tabstrip-item-hover-border, #{k-color(base-hover)} ) !default;
 /// The background color of the selected TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-selected-bg: var( --kendo-tabstrip-item-selected-bg, #{k-color(surface-alt)} ) !default;
+$kendo-tabstrip-item-selected-bg: var( --kendo-tabstrip-item-selected-bg, color-mix(in srgb, #{k-color(on-app-surface) 12%, transparent}) ) !default;
 /// The text color of the selected TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-selected-text: var( --kendo-tabstrip-item-selected-text, #{k-color(on-app-surface)} ) !default;
@@ -138,7 +138,7 @@ $kendo-tabstrip-item-selected-text: var( --kendo-tabstrip-item-selected-text, #{
 $kendo-tabstrip-item-selected-border: var( --kendo-tabstrip-item-selected-border, #{k-color(primary)} ) !default;
 /// The font weight of the selected TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-selected-font-weight: var( --kendo-tabstrip-item-selected-font-weight, var( --kendo-font-weight-bold, normal ) ) !default;
+$kendo-tabstrip-item-selected-font-weight: var( --kendo-tabstrip-item-selected-font-weight, var( --kendo-font-weight-semibold, 600 ) ) !default;
 
 /// The shadow of the focused TabStrip items.
 /// @group tabstrip
@@ -150,17 +150,17 @@ $kendo-tabstrip-item-dragging-text: var( --kendo-tabstrip-item-dragging-text, #{
 // Indicator
 /// The border width of the TabStrip indicator.
 /// @group tabstrip
-$kendo-tabstrip-indicator-size: var( --kendo-tabstrip-indicator-size, #{k-spacing(0.5)} ) !default;
+$kendo-tabstrip-indicator-size: var( --kendo-tabstrip-indicator-size, #{k-spacing(1)} ) !default;
 /// The border color of the TabStrip ripple.
 /// @group tabstrip
 $kendo-tabstrip-indicator-color: var( --kendo-tabstrip-indicator-color, #{k-color(primary)} ) !default;
 
 /// The horizontal padding of the TabStrip content.
 /// @group tabstrip
-$kendo-tabstrip-content-padding-x: var( --kendo-tabstrip-content-padding-x, #{k-spacing(3)} ) !default;
+$kendo-tabstrip-content-padding-x: var( --kendo-tabstrip-content-padding-x, #{k-spacing(2.5)} ) !default;
 /// The vertical padding of the TabStrip content.
 /// @group tabstrip
-$kendo-tabstrip-content-padding-y: var( --kendo-tabstrip-content-padding-y, #{k-spacing(1.5)} ) !default;
+$kendo-tabstrip-content-padding-y: var( --kendo-tabstrip-content-padding-y, #{k-spacing(2.5)} ) !default;
 /// The border width around the TabStrip content.
 /// @group tabstrip
 $kendo-tabstrip-content-border-width: var( --kendo-tabstrip-content-border-width, 1px ) !default;

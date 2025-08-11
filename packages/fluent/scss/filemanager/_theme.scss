@@ -26,4 +26,12 @@
             }
         }
     }
+
+    .k-filemanager-splitter {
+        @include fill($bg: k-color(surface-alt));
+    }
+
+    .k-filemanager-breadcrumb {
+        @include fill($bg: k-color(app-surface));
+    }
 }

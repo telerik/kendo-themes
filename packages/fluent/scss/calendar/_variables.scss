@@ -19,7 +19,10 @@ $kendo-calendar-border-radius: var( --kendo-calendar-border-radius, 0 ) !default
 
 /// The size of the calendar cell.
 /// @group calendar
-$kendo-calendar-cell-size: var( --kendo-calendar-cell-size, 28px ) !default;
+$kendo-calendar-cell-size: var( --kendo-calendar-cell-size, 32px ) !default;
+/// The spacing of the calendar cell.
+/// @group calendar
+$kendo-calendar-cell-padding: var( --kendo-calendar-cell-padding, k-spacing(0.5) ) !default;
 
 /// The background color of the Calendar.
 /// @group calendar
@@ -75,10 +78,10 @@ $kendo-calendar-cell-border-radius: var( --kendo-calendar-cell-border-radius, va
 
 /// The horizontal padding of the calendar header cell.
 /// @group calendar
-$kendo-calendar-header-cell-padding-x: var( --kendo-calendar-header-cell-padding-x, k-spacing(0) ) !default;
+$kendo-calendar-header-cell-padding-x: var( --kendo-calendar-header-cell-padding-x, k-spacing(0.5) ) !default;
 /// Th vertical padding of the calendar header cell.
 /// @group calendar
-$kendo-calendar-header-cell-padding-y: var( --kendo-calendar-header-cell-padding-y, k-spacing(0) ) !default;
+$kendo-calendar-header-cell-padding-y: var( --kendo-calendar-header-cell-padding-y, k-spacing(0.5) ) !default;
 /// The width of the calendar header cell.
 /// @group calendar
 $kendo-calendar-header-cell-width: var( --kendo-calendar-header-cell-width, #{$kendo-calendar-cell-size} ) !default;
@@ -149,13 +152,13 @@ $kendo-calendar-today-bg: var( --kendo-calendar-today-bg, k-color(primary) ) !de
 $kendo-calendar-today-hover-text: var( --kendo-calendar-today-hover-text, k-color(app-surface) ) !default;  // use contrast function
 /// The background color of the calendar today cell when hovered.
 /// @group calendar
-$kendo-calendar-today-hover-bg: var( --kendo-calendar-today-hover-bg, k-color(primary-hover) ) !default;
+$kendo-calendar-today-hover-bg: var( --kendo-calendar-today-hover-bg, $kendo-calendar-today-bg ) !default;
 /// The border radius of the calendar today cell.
 /// @group calendar
 $kendo-calendar-today-border-radius: var( --kendo-calendar-today-border-radius, 9999px ) !default;
 /// The font weight of the current day in the Calendar.
 /// @group calendar
-$kendo-calendar-today-font-weight: var( --kendo-calendar-today-font-weight, var( --kendo-calendar-font-weight-bold, var( --kendo-font-weight-bold, normal ) ) ) !default;
+$kendo-calendar-today-font-weight: var( --kendo-calendar-today-font-weight, var( --kendo-calendar-font-weight-normal, var( --kendo-font-weight-normal, normal ) ) ) !default;
 /// The box shadow of the current day in the Calendar.
 /// @group calendar
 $kendo-calendar-today-box-shadow: var( --kendo-calendar-today-box-shadow, null ) !default;
@@ -172,38 +175,38 @@ $kendo-calendar-week-number-text: var( --kendo-calendar-week-number-text, k-colo
 $kendo-calendar-other-month-bg: var( --kendo-calendar-other-month-bg, inherit ) !default;
 /// The text color of the other months calendar cells.
 /// @group calendar
-$kendo-calendar-other-month-text: var( --kendo-calendar-other-month-text, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ) !default;
+$kendo-calendar-other-month-text: var( --kendo-calendar-other-month-text, k-color(subtle)) !default;
 
 /// The background color of the calendar cells when hovered.
 /// @group calendar
-$kendo-calendar-cell-hover-bg: var( --kendo-calendar-cell-hover-bg, k-color(base-hover) ) !default;
+$kendo-calendar-cell-hover-bg: var( --kendo-calendar-cell-hover-bg, k-color(primary-subtle) ) !default;
 /// The text color of the calendar cells when hovered.
 /// @group calendar
 $kendo-calendar-cell-hover-text: var( --kendo-calendar-cell-hover-text, k-color(on-base) ) !default;
 
 /// The background color of the selected calendar cell.
 /// @group calendar
-$kendo-calendar-cell-selected-bg: var( --kendo-calendar-cell-selected-bg, k-color(base-active) ) !default;
+$kendo-calendar-cell-selected-bg: var( --kendo-calendar-cell-selected-bg, k-color(primary-subtle-hover) ) !default;
 /// The text color of the selected calendar cell.
 /// @group calendar
 $kendo-calendar-cell-selected-text: var( --kendo-calendar-cell-selected-text, k-color(on-base) ) !default;
 /// The border color of the selected calendar cell.
 /// @group calendar
-$kendo-calendar-cell-selected-border: var( --kendo-calendar-cell-selected-border, color-mix(in srgb, k-color(border-alt) 76%, transparent) ) !default;
+$kendo-calendar-cell-selected-border: var( --kendo-calendar-cell-selected-border, k-color(primary-on-surface) ) !default;
 /// The shadow of the selected calendar cell.
 /// @group calendar
-$kendo-calendar-cell-selected-shadow: var( --kendo-calendar-cell-selected-shadow, inset 0 0 0 1px #{$kendo-calendar-cell-selected-border} ) !default;
+$kendo-calendar-cell-selected-shadow: var( --kendo-calendar-cell-selected-shadow, null ) !default;
 
 /// The background color of the selected calendar cell when hovered.
 /// @group calendar
-$kendo-calendar-cell-selected-hover-bg: var( --kendo-calendar-cell-selected-hover-bg, k-color(base-subtle-active) ) !default;
+$kendo-calendar-cell-selected-hover-bg: var( --kendo-calendar-cell-selected-hover-bg, k-color(primary-subtle-hover) ) !default;
 /// The text color of the selected calendar cell when hovered.
 /// @group calendar
 $kendo-calendar-cell-selected-hover-text: var( --kendo-calendar-cell-selected-hover-text, k-color(on-base) ) !default;
 
 /// The shadow of the selected calendar cell when focused.
 /// @group calendar
-$kendo-calendar-cell-focus-shadow: var( --kendo-calendar-cell-focus-shadow, inset 0 0 0 1px k-color(base-emphasis) ) !default;
+$kendo-calendar-cell-focus-shadow: var( --kendo-calendar-cell-focus-shadow, inset 0 0 0 2px k-color(primary) ) !default;
 /// The shadow of the selected calendar cell when selected and focused.
 /// @group calendar
 $kendo-calendar-cell-selected-focus-shadow: var( --kendo-calendar-cell-selected-focus-shadow, #{$kendo-calendar-cell-focus-shadow} ) !default;
@@ -260,26 +263,13 @@ $kendo-infinite-calendar-view-height: var( --kendo-infinite-calendar-view-height
 // Range calendar
 /// The background color of the range selection in the Calendar.
 /// @group calendar
-$kendo-calendar-range-bg: var( --kendo-calendar-range-bg, k-color(base-active) ) !default;
+$kendo-calendar-range-bg: var( --kendo-calendar-range-bg, k-color(primary-subtle-hover) ) !default;
 /// The text color of the range selection in the Calendar.
 /// @group calendar
 $kendo-calendar-range-text: var( --kendo-calendar-range-text, inherit ) !default;
-/// The border color of the range selection in the Calendar.
+/// The border radius of the range cells in the Calendar.
 /// @group calendar
-$kendo-calendar-range-border: var( --kendo-calendar-range-border, k-color(base-emphasis) ) !default;
-/// The shadow of the hovered start range selection in the Calendar.
-/// @group calendar
-$kendo-calendar-start-range-hover-shadow: var( --kendo-calendar-start-range-hover-shadow, inset 1px -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis) ) !default;
-/// The shadow of the hovered mid range selection in the Calendar.
-/// @group calendar
-$kendo-calendar-mid-range-hover-shadow: var( --kendo-calendar-mid-range-hover-shadow, inset 0 -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis) ) !default;
-/// The shadow of the hovered end range selection in the Calendar.
-/// @group calendar
-$kendo-calendar-end-range-hover-shadow: var( --kendo-calendar-end-range-hover-shadow, inset -1px -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis) ) !default;
-/// The shadow of the hovered start-end range selection in the Calendar.
-/// @group calendar
-$kendo-calendar-start-end-range-hover-shadow: var( --kendo-calendar-start-end-range-hover-shadow, inset 1px -1px 0 0 k-color(base-emphasis), inset -1px 1px 0 0 k-color(base-emphasis) ) !default;
-
+$kendo-calendar-range-cell-border-radius: k-border-radius(md) !default;
 
 // Calendar sizes
 
@@ -310,7 +300,7 @@ $kendo-calendar-md-font-size: var( --kendo-calendar-md-font-size, var( --kendo-c
 $kendo-calendar-md-line-height: var( --kendo-calendar-md-line-height, var( --kendo-calendar-line-height, var( --kendo-line-height, normal ) ) ) !default;
 /// The size of the cells in the medium Calendar.
 /// @group calendar
-$kendo-calendar-md-cell-size: var( --kendo-calendar-md-cell-size, 28px ) !default;
+$kendo-calendar-md-cell-size: var( --kendo-calendar-md-cell-size, $kendo-calendar-cell-size ) !default;
 /// The horizontal padding of the cells in the medium Calendar.
 /// @group calendar
 $kendo-calendar-md-cell-padding-x: var( --kendo-calendar-md-cell-padding-x, k-spacing(1) ) !default;
@@ -329,7 +319,7 @@ $kendo-calendar-lg-font-size: var( --kendo-calendar-lg-font-size, var( --kendo-c
 $kendo-calendar-lg-line-height: var( --kendo-calendar-lg-line-height, var( --kendo-calendar-line-height, var( --kendo-line-height, normal ) ) ) !default;
 /// The size of the cells in the large Calendar.
 /// @group calendar
-$kendo-calendar-lg-cell-size: var( --kendo-calendar-lg-cell-size, 32px ) !default;
+$kendo-calendar-lg-cell-size: var( --kendo-calendar-lg-cell-size, 36px ) !default;
 /// The horizontal padding of the cells in the large Calendar.
 /// @group calendar
 $kendo-calendar-lg-cell-padding-x: var( --kendo-calendar-lg-cell-padding-x, k-spacing(1) ) !default;
@@ -431,6 +421,7 @@ $kendo-calendar-sizes: (
     $kendo-calendar-navigation-hover-text: $kendo-calendar-navigation-hover-text,
     $kendo-calendar-navigation-marker-text: $kendo-calendar-navigation-marker-text,
     $kendo-calendar-range-bg: $kendo-calendar-range-bg,
+    $kendo-calendar-range-cell-border-radius: $kendo-calendar-range-cell-border-radius,
     $kendo-infinite-calendar-header-padding-x: $kendo-infinite-calendar-header-padding-x,
     $kendo-infinite-calendar-header-padding-y: $kendo-infinite-calendar-header-padding-y,
     $kendo-infinite-calendar-view-padding-x: $kendo-infinite-calendar-view-padding-x,

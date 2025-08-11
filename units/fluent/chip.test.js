@@ -11,8 +11,6 @@ const expected = [
     "kendo-chip-calc-size", // Variable customizations work, but is used by another variable.
 ];
 
-const unexpected = [
-    "kendo-chip-disabled-text" // This variable is used in the Core
-];
+const unexpected = [];
 
 testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);

@@ -7,13 +7,6 @@
 @mixin kendo-form--layout() {
     @include kendo-form--layout-base();
 
-    .k-form,
-    .k-form-inline {
-        .k-form-field > .k-label {
-            font-weight: $kendo-form-label-font-weight;
-        }
-    }
-
     .k-form {
         .k-form-buttons {
             margin-block-start: calc( #{map.get($kendo-form-sizes, md, form-rows-spacing)} * 2 );

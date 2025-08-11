@@ -2,22 +2,5 @@
 @use "@progress/kendo-theme-core/scss/components/bottom-navigation/_layout.scss" as *;
 
 @mixin kendo-bottom-navigation--layout() {
-
     @include kendo-bottom-navigation--layout-base();
-
-    // Items
-    .k-bottom-nav-item {
-        position: relative;
-
-        &:focus::after,
-        &.k-focus::after {
-            content: "";
-            position: absolute;
-            border: medium none;
-            inset: $kendo-bottom-nav-item-focus-offset;
-            outline-width: $kendo-bottom-nav-item-focus-outline-width;
-            outline-style: $kendo-bottom-nav-item-focus-outline-style;
-            z-index: 1;
-        }
-    }
 }

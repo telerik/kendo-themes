@@ -39,10 +39,10 @@ $kendo-card-bg: var( --kendo-card-bg, k-color(surface-alt) ) !default;
 $kendo-card-text: var( --kendo-card-text, k-color(on-app-surface) ) !default;
 /// The border color of the Card.
 /// @group card
-$kendo-card-border: var( --kendo-card-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
+$kendo-card-border: var( --kendo-card-border, k-color(surface-alt) ) !default;
 /// The shadow of the Card.
 /// @group card
-$kendo-card-shadow: var( --kendo-card-shadow, var( --kendo-elevation-1, none ) ) !default;
+$kendo-card-shadow: var( --kendo-card-shadow, var( --kendo-elevation-3, none ) ) !default;
 
 /// The background color of the focused Card.
 /// @group card
@@ -52,14 +52,14 @@ $kendo-card-focus-bg: $kendo-card-bg !default;
 $kendo-card-focus-text: null !default;
 /// The border color of the focused Card.
 /// @group card
-$kendo-card-focus-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-card-focus-border: k-color(border-alt) !default;
 /// The shadow of the focused Card.
 /// @group card
 $kendo-card-focus-shadow: var( --kendo-elevation-3, none ) !default;
 
 /// The font size of the Card header.
 /// @group card
-$kendo-card-header-font-size: var( --kendo-card-header-font-size, var( --kendo-font-size-lg, inherit ) ) !default;
+$kendo-card-header-font-size: var( --kendo-card-header-font-size, var( --kendo-font-size-md, inherit ) ) !default;
 /// Тhe font family of the Card header.
 /// @group card
 $kendo-card-header-font-family: var( --kendo-card-header-font-family, var( --kendo-font-family, inherit ) ) !default;
@@ -113,13 +113,13 @@ $kendo-card-footer-border: var( --kendo-card-footer-border, inherit ) !default; 
 
 /// The font size of the Card title.
 /// @group card
-$kendo-card-title-font-size: var( --kendo-card-title-font-size, var( --kendo-font-size-lg, inherit ) ) !default;
+$kendo-card-title-font-size: var( --kendo-card-title-font-size, var( --kendo-font-size-md, inherit ) ) !default;
 /// The font family of the Card title.
 /// @group card
 $kendo-card-title-font-family: var( --kendo-card-title-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// The font weight of the Card title.
 /// @group card
-$kendo-card-title-font-weight: var( --kendo-card-title-font-weight, var( --kendo-font-weight, initial ) ) !default;
+$kendo-card-title-font-weight: var( --kendo-card-title-font-weight, var( --kendo-font-weight-semibold, 600 ) ) !default;
 /// The line height of the Card title.
 /// @group card
 $kendo-card-title-line-height: var( --kendo-card-title-line-height, var( --kendo-line-height, normal ) ) !default;
@@ -134,7 +134,7 @@ $kendo-card-subtitle-font-size: var( --kendo-card-subtitle-font-size, var( --ken
 $kendo-card-subtitle-font-family: var( --kendo-card-subtitle-font-family, var( --kendo-font-family, inherit ) ) !default;
 /// The line height of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-line-height: var( --kendo-card-subtitle-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-card-subtitle-line-height: var( --kendo-card-subtitle-line-height, var( --kendo-line-height-lg, normal ) ) !default;
 /// The bottom margin of the Card subtitle.
 /// @group card
 $kendo-card-subtitle-margin-bottom: var( --kendo-card-subtitle-margin-bottom, k-spacing(3) ) !default;
@@ -163,7 +163,7 @@ $kendo-card-actions-padding-y: var( --kendo-card-actions-padding-y, k-spacing(3)
 $kendo-card-actions-border-width: var( --kendo-card-actions-border-width, 0 ) !default;
 /// The spacing between the Card actions.
 /// @group card
-$kendo-card-actions-gap: var( --kendo-card-actions-gap, k-spacing(2) ) !default;
+$kendo-card-actions-gap: var( --kendo-card-actions-gap, k-spacing(3) ) !default;
 
 /// The border radius of the scroll button in the Card deck.
 /// @group card

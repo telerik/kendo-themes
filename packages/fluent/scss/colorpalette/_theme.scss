@@ -6,28 +6,20 @@
     @include kendo-color-palette--theme-base();
 
     .k-colorpalette-tile {
-        outline-color: $kendo-color-palette-tile-outline;
 
         &:hover,
         &.k-hover {
             @include box-shadow( $kendo-color-palette-tile-hover-shadow );
-            outline-color: $kendo-color-palette-tile-hover-outline;
         }
 
         &:focus,
         &.k-focus {
             @include box-shadow( $kendo-color-palette-tile-focus-shadow );
-            outline-color: $kendo-color-palette-tile-focus-outline;
         }
 
+        &:active,
         &.k-selected {
             @include box-shadow( $kendo-color-palette-tile-selected-shadow );
-            outline-color: $kendo-color-palette-tile-selected-outline;
-        }
-
-        &.k-selected:hover,
-        &.k-selected:focus {
-            outline-color: $kendo-color-palette-tile-selected-hover-outline;
         }
     }
 }

@@ -19,11 +19,6 @@
         margin-inline-end: var( --kendo-icon-spacing, k-spacing(2) );
     }
 
-    .k-treeview .k-checkbox-wrap,
-    .k-treeview .k-checkbox-wrapper {
-        padding: $kendo-treeview-checkbox-wrap-padding;
-    }
-
     .k-treeview-leaf {
         .k-icon,
         .k-image,

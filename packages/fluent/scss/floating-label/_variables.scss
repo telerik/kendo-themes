@@ -13,10 +13,6 @@ $kendo-floating-label-font-size: var(--kendo-floating-label-font-size, var( --ke
 /// @group floating-label
 $kendo-floating-label-max-width: var(--kendo-floating-label-max-width, 90%) !default;
 
-/// The font weight of the Floating Label.
-/// @group floating-label
-$kendo-floating-label-font-weight: var(--kendo-floating-label-font-weight, var( --kendo-font-weight-bold, inherit )) !default;
-
 /// The line height of the Floating Label.
 /// @group floating-label
 $kendo-floating-label-line-height: var(--kendo-floating-label-line-height, var( --kendo-line-height, normal )) !default;

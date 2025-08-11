@@ -26,11 +26,22 @@
             }
         }
 
+        &:focus::before,
+        &.k-focus::before {
+            outline-color: $kendo-fab-item-focus-outline;
+        }
+
+        &:focus::after,
+        &.k-focus::after {
+            outline-color: k-color(surface);
+        }
+
         &:disabled,
         &.k-disabled {
             color: $kendo-fab-disabled-text;
             background-color: $kendo-fab-disabled-bg;
             border-color: $kendo-fab-disabled-border;
+            box-shadow: none;
         }
     }
 
@@ -72,16 +83,12 @@
         // Focus
         &:focus,
         &.k-focus {
+            .k-fab-item-text,
             .k-fab-item-icon {
                 color: $kendo-fab-item-focus-text;
                 background-color: $kendo-fab-item-focus-bg;
                 border-color: $kendo-fab-item-focus-border;
-            }
-
-            .k-fab-item-text {
-                color: $kendo-fab-item-focus-text;
-                background-color: $kendo-fab-item-focus-bg;
-                border-color: $kendo-fab-item-focus-border;
+                outline-color: $kendo-fab-item-focus-outline;
             }
         }
 
@@ -112,9 +119,9 @@
         &:disabled .k-fab-item-text,
         &.k-disabled .k-fab-item-text {
             @include disabled(
-                color-mix(in srgb, k-color(on-app-surface) 46%, transparent),
-                k-color(base-subtle),
-                transparent
+                $kendo-fab-disabled-text,
+                $kendo-fab-disabled-bg,
+                $kendo-fab-disabled-border
             );
         }
     }

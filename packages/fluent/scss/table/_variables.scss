@@ -14,26 +14,26 @@ $kendo-table-cell-vertical-border-width: var( --kendo-table-cell-vertical-border
 $kendo-table-cell-horizontal-border-width: var( --kendo-table-cell-horizontal-border-width, 1px ) !default;
 /// The horizontal padding of the cells in the table for small size.
 /// @group table
-$kendo-table-sm-cell-padding-x: var( --kendo-table-sm-cell-padding-x, #{k-spacing(3)} ) !default;
+$kendo-table-sm-cell-padding-x: var( --kendo-table-sm-cell-padding-x, #{k-spacing(2)} ) !default;
 /// The vertical padding of the cells in the table for small size.
 /// @group table
-$kendo-table-sm-cell-padding-y: var( --kendo-table-sm-cell-padding-y, #{k-spacing(1.5)} ) !default;
+$kendo-table-sm-cell-padding-y: var( --kendo-table-sm-cell-padding-y, #{k-spacing(2)} ) !default;
 /// The horizontal padding of the cells in the table for medium size.
 /// @group table
-$kendo-table-md-cell-padding-x: var( --kendo-table-md-cell-padding-x, #{k-spacing(3)} ) !default;
+$kendo-table-md-cell-padding-x: var( --kendo-table-md-cell-padding-x, #{k-spacing(2)} ) !default;
 /// The vertical padding of the cells in the table for medium size.
 /// @group table
-$kendo-table-md-cell-padding-y: var( --kendo-table-md-cell-padding-y, #{k-spacing(3)} ) !default;
+$kendo-table-md-cell-padding-y: var( --kendo-table-md-cell-padding-y, #{k-spacing(2.5)} ) !default;
 /// The horizontal padding of the cells in the table for large size.
 /// @group table
-$kendo-table-lg-cell-padding-x: var( --kendo-table-lg-cell-padding-x, #{k-spacing(3)} ) !default;
+$kendo-table-lg-cell-padding-x: var( --kendo-table-lg-cell-padding-x, #{k-spacing(2)} ) !default;
 /// The vertical padding of the cells in the table for large size.
 /// @group table
-$kendo-table-lg-cell-padding-y: var( --kendo-table-lg-cell-padding-y, #{k-spacing(3.5)} ) !default;
+$kendo-table-lg-cell-padding-y: var( --kendo-table-lg-cell-padding-y, #{k-spacing(3)} ) !default;
 
 /// Font weight of the table header cells.
 /// @group table
-$kendo-table-header-font-weight: var( --kendo-table-header-font-weight, var( --kendo-font-weight-bold, normal ) ) !default;
+$kendo-table-header-font-weight: var( --kendo-table-header-font-weight, var( --kendo-font-weight-normal, normal ) ) !default;
 
 /// The sizes of the table.
 /// @group table
@@ -139,7 +139,7 @@ $kendo-table-alt-row-border: var( --kendo-table-alt-row-border, #{$kendo-table-b
 
 /// Background color of hovered rows in table.
 /// @group table
-$kendo-table-hover-bg: var( --kendo-table-hover-bg, #{k-color(base-hover)} ) !default;
+$kendo-table-hover-bg: var( --kendo-table-hover-bg, #{color-mix(in srgb, k-color(on-app-surface) 5%, transparent)} ) !default;
 /// Text color of hovered rows in table.
 /// @group table
 $kendo-table-hover-text: var( --kendo-table-hover-text, #{k-color(on-base)} ) !default;
@@ -162,7 +162,7 @@ $kendo-table-focus-shadow: var( --kendo-table-focus-shadow, #{$kendo-list-item-f
 
 /// Background color of selected rows in table.
 /// @group table
-$kendo-table-selected-bg: var( --kendo-table-selected-bg, #{color-mix(in srgb, k-color(primary) 13%, transparent)} ) !default;
+$kendo-table-selected-bg: var( --kendo-table-selected-bg, #{color-mix(in srgb, k-color(primary) 8%, transparent)} ) !default;
 /// Text color of selected rows in table.
 /// @group table
 $kendo-table-selected-text: var( --kendo-table-selected-text, #{$kendo-table-text} ) !default;
@@ -172,7 +172,7 @@ $kendo-table-selected-border: var( --kendo-table-selected-border, #{$kendo-table
 
 /// Background color of highlighted rows in table.
 /// @group table
-$kendo-table-highlighted-bg: var( --kendo-table-highlighted-bg, #{color-mix(in srgb, k-color(warning) 13%, transparent)} ) !default;
+$kendo-table-highlighted-bg: var( --kendo-table-highlighted-bg, #{color-mix(in srgb, k-color(warning) 8%, transparent)} ) !default;
 /// The font weight of highlighted rows in table.
 /// @group table
 $kendo-table-highlighted-font-weight: var( --kendo-table-highlighted-font-weight, var( --kendo-font-weight-semibold, bold ) ) !default;
@@ -180,16 +180,6 @@ $kendo-table-highlighted-font-weight: var( --kendo-table-highlighted-font-weight
 /// Background color of selected highlighted rows in table.
 /// @group table
 $kendo-table-selected-highlighted-bg: var( --kendo-table-selected-highlighted-bg, #{color-mix(in srgb, color-mix(in srgb, k-color(primary), k-color(warning)) 23%, transparent)} ) !default;
-
-/// Hover background color of selected rows in table.
-/// @group table
-$kendo-table-selected-hover-bg: var( --kendo-table-selected-hover-bg, #{color-mix(in srgb, k-color(primary) 26%, transparent)} ) !default;
-/// Hover text color of selected rows in table.
-/// @group table
-$kendo-table-selected-hover-text: var( --kendo-table-selected-hover-text, #{$kendo-table-selected-text} ) !default;
-/// Hover border color of selected rows in table.
-/// @group table
-$kendo-table-selected-hover-border: var( --kendo-table-selected-hover-border, #{$kendo-table-selected-border} ) !default;
 
 /// The box shadow of the row spanned cells.
 /// @group table

@@ -1,13 +1,14 @@
+@use "sass:map";
 @use "./_variables.scss" as *;
+@use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/fab/_layout.scss" as *;
 
 @mixin kendo-fab--layout() {
     @include kendo-fab--layout-base();
 
     .k-fab {
-
-        &:focus::after,
-        &.k-focus::after {
+        &:focus::before,
+        &.k-focus::before {
             content: "";
             position: absolute;
             border: medium none;
@@ -17,8 +18,20 @@
             z-index: 1;
         }
 
-        // Fix for focused FAB with full roundness
+        &:focus::after,
+        &.k-focus::after {
+            content: "";
+            position: absolute;
+            border: medium none;
+            inset: calc( #{ $kendo-fab-focus-offset} + 1px );
+            outline-width: calc( #{ $kendo-fab-focus-outline-width} - 1px );
+            outline-style: $kendo-fab-focus-outline-style;
+            z-index: 1;
+        }
+
         &.k-rounded-full {
+            &:focus::before,
+            &.k-focus::before,
             &:focus::after,
             &.k-focus::after {
                border-radius: inherit;
@@ -27,17 +40,13 @@
     }
 
     .k-fab-item {
-        &:focus .k-fab-item-text::after,
-        &:focus .k-fab-item-icon::after,
-        &.k-focus .k-fab-item-text::after,
-        &.k-focus .k-fab-item-icon::after {
-            content: "";
-            position: absolute;
-            border: medium none;
-            inset: $kendo-fab-item-focus-offset;
-            outline-width: $kendo-fab-item-focus-outline-width;
-            outline-style: $kendo-fab-item-focus-outline-style;
-            z-index: 1;
+        &:focus .k-fab-item-text,
+        &:focus .k-fab-item-icon,
+        &.k-focus .k-fab-item-text,
+        &.k-focus .k-fab-item-icon {
+            outline-width: $kendo-fab-focus-outline-width;
+            outline-style: $kendo-fab-focus-outline-style;
+            outline-offset: calc( #{$kendo-fab-border-width} * 2 * -1);
         }
     }
 
@@ -49,9 +58,15 @@
 
     .k-fab-item-icon {
         border-style: $kendo-fab-item-icon-border-style;
+    }
 
-        &::after {
-            border-radius: inherit;
+    // Sizes
+    @each $size, $size-props in $kendo-fab-sizes {
+        $_gap: map.get( $size-props, gap );
+
+        .k-fab-#{$size} {
+            gap: $_gap;
         }
+
     }
 }

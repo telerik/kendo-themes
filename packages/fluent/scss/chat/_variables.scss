@@ -68,10 +68,10 @@ $kendo-chat-timestamp-transform: none !default;
 $kendo-chat-timestamp-text: var( --kendo-chat-timestamp-text, #{k-color(subtle)} ) !default;
 /// The background color of the Chat timestamp.
 /// @group chat
-$kendo-chat-timestamp-bg: normal !default;
+$kendo-chat-timestamp-bg: transparent !default;
 /// The background color of the Chat timestamp separator.
 /// @group chat
-$kendo-chat-timestamp-separator-bg: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-chat-timestamp-separator-bg: color-mix(in srgb, k-color(border) 26%, transparent) !default;
 /// The spacing between the Chat timestamp and its separator.
 /// @group chat
 $kendo-chat-timestamp-separator-spacing: k-spacing(1) !default;
@@ -148,10 +148,10 @@ $kendo-chat-alt-bubble-active-border: $kendo-chat-alt-bubble-active-bg !default;
 $kendo-chat-alt-bubble-focus-bg: $kendo-chat-alt-bubble-bg !default;
 /// The border color of the focused alt Bubble.
 /// @group bubble
-$kendo-chat-alt-bubble-focus-border: $kendo-chat-alt-bubble-focus-bg !default;
+$kendo-chat-alt-bubble-focus-border: k-color(on-base) !default;
 /// The box shadow of the focused alt Bubble.
 /// @group bubble
-$kendo-chat-alt-bubble-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(primary) 16%, transparent) !default;
+$kendo-chat-alt-bubble-focus-shadow: inset 0 0 0 #{$kendo-chat-border-width} k-color(on-base), inset 0 0 0 calc( #{$kendo-chat-border-width} * 2 ) k-color(surface) !default;
 
 /// The color of the typing indicator dots.
 /// @group chat

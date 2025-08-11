@@ -25,7 +25,7 @@ $kendo-expander-text: var( --kendo-expander-text, k-color(on-app-surface) ) !def
 $kendo-expander-bg: var( --kendo-expander-bg, k-color(surface) ) !default;
 /// The border color of the ExpansionPanel.
 /// @group expander
-$kendo-expander-border: var( --kendo-expander-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
+$kendo-expander-border: var( --kendo-expander-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
 
 /// The background color of the expanded ExpansionPanel.
 /// @group expander
@@ -33,41 +33,35 @@ $kendo-expander-expanded-bg: var( --kendo-expander-expanded-bg, k-color(surface-
 
 /// The text color of the disabled ExpansionPanel.
 /// @group expander
-$kendo-expander-disabled-text: var( --kendo-expander-disabled-text, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ) !default;
-/// The background color of the disabled ExpansionPanel.
-/// @group expander
-$kendo-expander-disabled-bg: var( --kendo-expander-disabled-bg, k-color(base-subtle) ) !default;
+$kendo-expander-disabled-text: var( --kendo-expander-disabled-text, color-mix(in srgb, k-color(on-app-surface) 30%, transparent) ) !default;
+
 
 /// The offset of the focused ExpansionPanel.
 /// @group expander
-$kendo-expander-focus-offset: var( --kendo-expander-focus-offset, 1px ) !default;
+$kendo-expander-focus-offset: var( --kendo-expander-focus-offset, 2px ) !default;
 /// The outline width of the focused ExpansionPanel.
 /// @group expander
-$kendo-expander-focus-outline-width: var( --kendo-expander-focus-outline-width, 1px ) !default;
+$kendo-expander-focus-outline-width: var( --kendo-expander-focus-outline-width, 2px ) !default;
 /// The outline style of the focused ExpansionPanel.
 /// @group expander
 $kendo-expander-focus-outline-style: var( --kendo-expander-focus-outline-style, solid ) !default;
 /// The outline color of the focused ExpansionPanel.
 /// @group expander
-$kendo-expander-focus-outline: var( --kendo-expander-focus-outline, k-color(base-emphasis) ) !default;
-
-/// The background color of the focused ExpansionPanel.
-/// @group expander
-$kendo-expander-focus-bg: var( --kendo-expander-focus-bg, k-color(surface-alt) ) !default;
+$kendo-expander-focus-outline: var( --kendo-expander-focus-outline, inherit ) !default;
 /// The box shadow of the focused ExpansionPanel.
 /// @group expander
-$kendo-expander-focus-shadow: var( --kendo-expander-focus-shadow, inset 0px 0px 0px 2px k-color(base-emphasis) ) !default;
+$kendo-expander-focus-shadow: var( --kendo-expander-focus-shadow, none ) !default;
 
 /// The horizontal padding of the ExpansionPanel header.
 /// @group expander
-$kendo-expander-header-padding-x: var( --kendo-expander-header-padding-x, k-spacing(4) ) !default;
+$kendo-expander-header-padding-x: var( --kendo-expander-header-padding-x, k-spacing(3) ) !default;
 /// The vertical padding of the ExpansionPanel header.
 /// @group expander
 $kendo-expander-header-padding-y: var( --kendo-expander-header-padding-y, k-spacing(3) ) !default;
 
 /// The text color of the ExpansionPanel header.
 /// @group expander
-$kendo-expander-header-text: var( --kendo-expander-header-text, k-color(primary) ) !default;
+$kendo-expander-header-text: var( --kendo-expander-header-text, k-color(on-app-surface) ) !default;
 /// The background color of the ExpansionPanel header.
 /// @group expander
 $kendo-expander-header-bg: var( --kendo-expander-header-bg, inherit ) !default;
@@ -78,7 +72,7 @@ $kendo-expander-header-hover-bg: var( --kendo-expander-header-hover-bg, k-color(
 
 /// The text color of the ExpansionPanel title.
 /// @group expander
-$kendo-expander-title-text: var( --kendo-expander-title-text, k-color(primary) ) !default;
+$kendo-expander-title-text: var( --kendo-expander-title-text, k-color(on-app-surface) ) !default;
 
 /// The text color of the ExpansionPanel sub-title.
 /// @group expander
@@ -86,17 +80,17 @@ $kendo-expander-header-sub-title-text: var( --kendo-expander-header-sub-title-te
 
 /// The horizontal margin of the ExpansionPanel indicator.
 /// @group expander
-$kendo-expander-indicator-margin-x: var( --kendo-expander-indicator-margin-x, k-spacing(2.5) ) !default;
+$kendo-expander-indicator-margin-x: var( --kendo-expander-indicator-margin-x, k-spacing(2) ) !default;
 /// The text color of the ExpansionPanel indicator.
 /// @group expander
-$kendo-expander-indicator-text: var( --kendo-expander-indicator-text, $kendo-expander-text ) !default;
+$kendo-expander-indicator-text: var( --kendo-expander-indicator-text, k-color(subtle) ) !default;
 
 /// The horizontal padding of the ExpansionPanel content.
 /// @group expander
-$kendo-expander-content-padding-x: var( --kendo-expander-content-padding-x, k-spacing(4) ) !default;
+$kendo-expander-content-padding-x: var( --kendo-expander-content-padding-x, k-spacing(3) ) !default;
 /// The vertical padding of the ExpansionPanel content.
 /// @group expander
-$kendo-expander-content-padding-y: var( --kendo-expander-content-padding-y, k-spacing(4) ) !default;
+$kendo-expander-content-padding-y: var( --kendo-expander-content-padding-y, k-spacing(3) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/expansion-panel/_variables.scss" with (
     $kendo-expander-border-width: $kendo-expander-border-width,

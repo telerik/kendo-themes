@@ -16,12 +16,6 @@
                     box-shadow: $kendo-panelbar-header-focus-shadow;
                 }
 
-                &.k-selected {
-                    &::before {
-                        background-color: $kendo-panelbar-selected-marker;
-                    }
-                }
-
                 &:disabled,
                 &.k-disabled {
                    color: var( --kendo-disabled-text, inherit );
@@ -52,18 +46,12 @@
             > .k-link {
                 color: $kendo-panelbar-text;
                 background-color: $kendo-panelbar-bg;
-                border-color: $kendo-panelbar-border; 
+                border-color: $kendo-panelbar-border;
 
 
                 &:focus,
                 &.k-focus {
                     box-shadow: $kendo-panelbar-item-focus-shadow;
-                }
-
-                &.k-selected {
-                    &::before {
-                        background-color: $kendo-panelbar-selected-marker;
-                    }
                 }
 
                 &.k-disabled {

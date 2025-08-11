@@ -20,6 +20,8 @@
 
     .k-pager-numbers {
         .k-button {
+            border-radius: $kendo-pager-item-border-radius;
+
             .k-button-text {
                 min-width: calc( var( --kendo-line-height ) * 1em );
             }

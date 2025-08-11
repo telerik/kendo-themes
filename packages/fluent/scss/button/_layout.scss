@@ -10,19 +10,11 @@
 
     // Button
     .k-button {
-
-        &:focus::after,
-        &.k-focus::after {
-            content: "";
-            display: block;
-            opacity: 1;
-            position: absolute;
-            border: medium none;
-            border-radius: 0;
-            inset: $kendo-button-focus-offset;
+        &:focus,
+        &.k-focus {
             outline-width: $kendo-button-focus-outline-width;
             outline-style: $kendo-button-focus-outline-style;
-            z-index: 1;
+            outline-offset: calc( (#{$kendo-button-border-width} * 2 ) * -1);
         }
 
         // Fix for focused button with full roundness
@@ -32,6 +24,10 @@
                border-radius: inherit;
             }
         }
+    }
+
+    .k-button-sm {
+        font-weight: $kendo-font-weight-normal;
     }
 
 
@@ -96,7 +92,6 @@
         &.k-focus::after {
             @include border-radius( inherit );
             inset: $kendo-button-flat-focus-offset;
-            outline-width: $kendo-button-flat-focus-outline-width;
             box-shadow: none;
         }
     }
@@ -127,7 +122,7 @@
         &:hover,
         &.k-hover {
             &::before {
-                opacity: .05;
+                opacity: .03;
             }
         }
 
@@ -139,7 +134,7 @@
             }
 
             &::after {
-                outline-color: currentColor !important; // stylelint-disable-line declaration-no-important
+                // outline-color: currentColor !important; // stylelint-disable-line declaration-no-important
                 opacity: .13;
             }
 
@@ -198,7 +193,7 @@
         &.k-focus::after {
             @include border-radius( inherit );
             inset: $kendo-button-link-focus-offset;
-            outline-width: $kendo-button-link-focus-outline-width;
+            // outline-width: $kendo-button-link-focus-outline-width;
         }
 
         &:focus,
@@ -213,7 +208,7 @@
         &:focus::after,
         &.k-focus::after {
             inset: auto;
-            outline-width: 0;
+            // outline-width: 0;
         }
     }
 }

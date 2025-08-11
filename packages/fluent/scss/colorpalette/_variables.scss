@@ -11,15 +11,6 @@ $kendo-color-palette-font-size: var( --kendo-color-palette-font-size, var( --ken
 /// @group color-palette
 $kendo-color-palette-line-height: var( --kendo-color-palette-line-height, 0 ) !default;
 
-/// The outline width of the ColorPalette tile.
-/// @group color-palette
-$kendo-color-palette-tile-outline-width: var( --kendo-color-palette-tile-outline-width, 1px ) !default;
-/// The outline style of the ColorPalette tile.
-/// @group color-palette
-$kendo-color-palette-tile-outline-style: var( --kendo-color-palette-tile-outline-style, solid ) !default;
-/// The outline color of the ColorPalette tile.
-/// @group color-palette
-$kendo-color-palette-tile-outline: var( --kendo-color-palette-tile-outline, transparent ) !default;
 /// The width of the ColorPalette tile.
 /// @group color-palette
 $kendo-color-palette-tile-width: k-spacing(6) !default;
@@ -45,27 +36,15 @@ $kendo-color-palette-lg-tile-width: var( --kendo-color-palette-lg-tile-width, #{
 /// @group color-palette
 $kendo-color-palette-lg-tile-height: var( --kendo-color-palette-lg-tile-height, #{$kendo-color-palette-lg-tile-width} ) !default;
 
-/// The outline color of the ColorPalette focused tile.
-/// @group color-palette
-$kendo-color-palette-tile-focus-outline: var( --kendo-color-palette-tile-focus-outline, #{k-color(base-emphasis)} ) !default;
 /// The shadow of the ColorPalette focused tile.
 /// @group color-palette
-$kendo-color-palette-tile-focus-shadow: var( --kendo-color-palette-tile-focus-shadow, inset 0 0 0 2px #{k-color(app-surface)} ) !default;
-/// The outline color of the ColorPalette hovered tile.
-/// @group color-palette
-$kendo-color-palette-tile-hover-outline: var( --kendo-color-palette-tile-hover-outline, #{color-mix(in srgb, k-color(border) 10%, transparent)} ) !default;
+$kendo-color-palette-tile-focus-shadow: var( --kendo-color-palette-tile-focus-shadow, inset 0 0 0 2px #{k-color(border-alt)}, inset 0 0 0 3px #{k-color(app-surface)} ) !default;
 /// The shadow of the ColorPalette hovered tile.
 /// @group color-palette
-$kendo-color-palette-tile-hover-shadow: var( --kendo-color-palette-tile-hover-shadow, inset 0 0 0 2px #{$kendo-color-palette-tile-hover-outline}, inset 0 0 0 4px #{k-color(app-surface)} ) !default;
-/// The outline color of the ColorPalette selected tile.
-/// @group color-palette
-$kendo-color-palette-tile-selected-outline: var( --kendo-color-palette-tile-selected-outline, #{$kendo-color-palette-tile-hover-outline} ) !default;
+$kendo-color-palette-tile-hover-shadow: var( --kendo-color-palette-tile-hover-shadow, inset 0 0 0 2px #{k-color(primary)}, inset 0 0 0 3px #{k-color(app-surface)} ) !default;
 /// The shadow of the ColorPalette selected tile.
 /// @group color-palette
-$kendo-color-palette-tile-selected-shadow: var( --kendo-color-palette-tile-selected-shadow, #{$kendo-color-palette-tile-hover-shadow} ) !default;
-/// The outline color of the ColorPalette selected hover tile.
-/// @group color-palette
-$kendo-color-palette-tile-selected-hover-outline: var( --kendo-color-palette-tile-selected-hover-outline, #{$kendo-color-palette-tile-focus-outline} ) !default;
+$kendo-color-palette-tile-selected-shadow: var( --kendo-color-palette-tile-selected-shadow, inset 0 0 0 3px #{k-color(primary)}, inset 0 0 0 5px #{k-color(app-surface)} ) !default;
 
 /// The size map of the ColorPalette.
 /// @group color-palette

@@ -27,10 +27,10 @@ $kendo-wizard-steps-padding-x: var( --kendo-wizard-steps-padding-x, k-spacing(3)
 
 /// The horizontal padding of the Wizard content.
 /// @group wizard
-$kendo-wizard-content-padding-x: var( --kendo-wizard-content-padding-x, k-spacing(0) ) !default;
+$kendo-wizard-content-padding-x: var( --kendo-wizard-content-padding-x, k-spacing(3) ) !default;
 /// The vertical padding of the Wizard content.
 /// @group wizard
-$kendo-wizard-content-padding-y: var( --kendo-wizard-content-padding-y, k-spacing(0) ) !default;
+$kendo-wizard-content-padding-y: var( --kendo-wizard-content-padding-y, k-spacing(3) ) !default;
 /// The text color of the Wizard content.
 /// @group wizard
 $kendo-wizard-content-text: var( --kendo-wizard-content-text, k-color(on-app-surface) ) !default;
@@ -47,7 +47,7 @@ $kendo-wizard-buttons-margin-y: var( --kendo-wizard-buttons-margin-y, k-spacing(
 
 /// The outline of the focused Wizard step.
 /// @group wizard
-$kendo-wizard-step-focus-border: var( --kendo-wizard-step-focus-border, k-color(base-emphasis) ) !default;
+$kendo-wizard-step-focus-border: var( --kendo-wizard-step-focus-border, k-color(border-alt) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/wizard/_variables.scss" with (
     $kendo-wizard-padding-x: $kendo-wizard-padding-x,

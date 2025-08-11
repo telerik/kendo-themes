@@ -9,6 +9,7 @@
     // Drawer items - only border-radius is unique to fluent
     .k-drawer-items {
         border-radius: $kendo-drawer-item-border-radius;
+        gap: $kendo-drawer-items-gap;
     }
 
     // Drawer items - unique fluent properties
@@ -20,10 +21,13 @@
             border-width: 0;
             border-inline-start-width: $kendo-drawer-item-ripple-border-width;
             border-style: solid;
-            height: 100%;
+            border-radius: $kendo-drawer-item-ripple-border-radius;
+            height: $kendo-drawer-item-ripple-border-height;
             display: block;
             position: absolute;
-            inset-block-start: 0;
+            inset-block-start: 50%;
+            inset-inline-start: $kendo-drawer-item-ripple-spacing-x;
+            transform: translateY(-50%);
             z-index: 2;
             opacity: 0;
             transition: opacity .3s;
@@ -42,10 +46,10 @@
     }
 
     :is(.k-drawer-start, .k-drawer-left) .k-drawer-item::before {
-        inset-inline-start: 0;
+        inset-inline-start: $kendo-drawer-item-ripple-spacing-x;
     }
 
     :is(.k-drawer-end, .k-drawer-right) .k-drawer-item::before {
-        inset-inline-end: 0;
+        inset-inline-end: $kendo-drawer-item-ripple-spacing-x;
     }
 }
