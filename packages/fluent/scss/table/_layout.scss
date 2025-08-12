@@ -36,9 +36,9 @@
             border-style: solid;
             border-color: currentColor;
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
+            inset-block-start: 0;
+            inset-inline-start: 0;
+            inset-inline-end: 0;
         }
         .k-table-group-row .k-table-th {
             border-block-end-width: 1px;

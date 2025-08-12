@@ -19,22 +19,22 @@
 
     .k-actionsheet-top {
         border-width: $kendo-actionsheet-border-width;
-        border-top-width: 0;
+        border-block-start-width: 0;
     }
 
     .k-actionsheet-bottom {
         border-width: $kendo-actionsheet-border-width;
-        border-bottom-width: 0;
+        border-block-end-width: 0;
     }
 
     .k-actionsheet-left {
         border-width: $kendo-actionsheet-border-width;
-        border-left-width: $kendo-actionsheet-border-width;
+        border-inline-start-width: $kendo-actionsheet-border-width;
     }
 
     .k-actionsheet-right {
         border-width: $kendo-actionsheet-border-width;
-        border-right-width: 0;
+        border-inline-end-width: 0;
     }
 
     .k-adaptive-actionsheet .k-coloreditor {
