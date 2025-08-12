@@ -37,24 +37,32 @@
 
 @mixin border-top-radius-only( $radius: null ) {
     @if $kendo-enable-rounded {
-        border-radius: $radius $radius 0 0;
+        border-radius: 0;
+        border-start-start-radius: $radius;
+        border-start-end-radius: $radius;
     }
 }
 
 @mixin border-right-radius-only( $radius: null ) {
     @if $kendo-enable-rounded {
-        border-radius: 0 $radius $radius 0;
+        border-radius: 0;
+        border-start-end-radius: $radius;
+        border-end-end-radius: $radius;
     }
 }
 
 @mixin border-bottom-radius-only( $radius: null ) {
     @if $kendo-enable-rounded {
-        border-radius: 0 0 $radius $radius;
+        border-radius: 0;
+        border-end-start-radius: $radius;
+        border-end-end-radius: $radius;
     }
 }
 
 @mixin border-left-radius-only( $radius: null ) {
     @if $kendo-enable-rounded {
-        border-radius: $radius 0 0 $radius;
+        border-radius: 0;
+        border-start-start-radius: $radius;
+        border-end-start-radius: $radius;
     }
 }

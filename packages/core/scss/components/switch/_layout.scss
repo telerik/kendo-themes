@@ -120,28 +120,6 @@
                 inset-inline-start: calc( #{math.div( $_thumb-width, 2 )} + #{$_thumb-offset} );
             }
         }
-
-        .k-switch-#{$size}[dir="rtl"],
-        [dir="rtl"] .k-switch-#{$size},
-        .k-rtl.k-switch-#{$size},
-        .k-rtl .k-switch-#{$size} {
-
-            .k-switch-label-on {
-                inset-inline-start: auto;
-                inset-inline-end: $_label-offset;
-            }
-            .k-switch-label-off {
-                inset-inline-end: auto;
-                inset-inline-start: $_label-offset;
-            }
-
-            &.k-switch-on .k-switch-thumb-wrap {
-                inset-inline-start: calc( #{math.div( $_thumb-width, 2 )} + #{$_thumb-offset} );
-            }
-            &.k-switch-off .k-switch-thumb-wrap {
-                inset-inline-start: calc( 100% - #{math.div( $_thumb-width, 2 )} - #{$_thumb-offset} );
-            }
-        }
     }
 
 

@@ -334,24 +334,24 @@
 
         > .k-tabstrip-items-wrapper {
             @extend .k-tabstrip-vertical !optional;
-            border-inline-end-width: $kendo-tabstrip-border-width;
+            border-right-width: $kendo-tabstrip-border-width;
 
             .k-item {
-                @include border-left-radius( $kendo-tabstrip-item-border-radius );
-                border-inline-end-width: 0;
+                border-radius: $kendo-tabstrip-item-border-radius 0 0 $kendo-tabstrip-item-border-radius;
+                border-right-width: 0;
             }
             .k-item:active,
             .k-item.k-active {
-                margin-inline-end: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
-                border-inline-end-width: $kendo-tabstrip-border-width;
-                border-inline-end-color: transparent !important; // stylelint-disable-line declaration-no-important
+                margin-right: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
+                border-right-width: $kendo-tabstrip-border-width;
+                border-right-color: transparent !important; // stylelint-disable-line declaration-no-important
             }
         }
 
         > .k-content,
         > .k-tabstrip-content {
-            @include border-right-radius( $kendo-tabstrip-item-border-radius );
-            border-inline-start-width: 0 !important; // stylelint-disable-line declaration-no-important
+            border-radius: 0 $kendo-tabstrip-item-border-radius $kendo-tabstrip-item-border-radius 0;
+            border-left-width: 0 !important; // stylelint-disable-line declaration-no-important
         }
 
     }
@@ -360,24 +360,25 @@
 
         > .k-tabstrip-items-wrapper {
             @extend .k-tabstrip-vertical !optional;
-            border-inline-start-width: $kendo-tabstrip-border-width;
+            border-left-width: $kendo-tabstrip-border-width;
 
             .k-item {
-                @include border-right-radius( $kendo-tabstrip-item-border-radius );
-                border-inline-start-width: 0;
+                border-radius: 0 $kendo-tabstrip-item-border-radius $kendo-tabstrip-item-border-radius 0;
+                border-left-width: 0;
             }
+
             .k-item:active,
             .k-item.k-active {
-                margin-inline-start: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
-                border-inline-start-width: $kendo-tabstrip-border-width;
-                border-inline-start-color: transparent !important; // stylelint-disable-line declaration-no-important
+                margin-left: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
+                border-left-width: $kendo-tabstrip-border-width;
+                border-left-color: transparent !important; // stylelint-disable-line declaration-no-important
             }
         }
 
         > .k-content,
         > .k-tabstrip-content {
-            @include border-left-radius( $kendo-tabstrip-item-border-radius );
-            border-inline-end-width: 0;
+            border-radius: $kendo-tabstrip-item-border-radius 0 0 $kendo-tabstrip-item-border-radius;
+            border-right-width: 0;
         }
     }
 
@@ -430,16 +431,16 @@
 
         // Variants
         .k-tabstrip-top > .k-tabstrip-items-wrapper .k-item::after {
-            border-block-end-width: $kendo-tabstrip-indicator-size;
+            border-bottom-width: $kendo-tabstrip-indicator-size;
         }
         .k-tabstrip-bottom > .k-tabstrip-items-wrapper .k-item::after {
-            border-block-start-width: $kendo-tabstrip-indicator-size;
+            border-top-width: $kendo-tabstrip-indicator-size;
         }
         .k-tabstrip-left > .k-tabstrip-items-wrapper .k-item::after {
-            border-inline-end-width: $kendo-tabstrip-indicator-size;
+            border-right-width: $kendo-tabstrip-indicator-size;
         }
         .k-tabstrip-right > .k-tabstrip-items-wrapper .k-item::after {
-            border-inline-start-width: $kendo-tabstrip-indicator-size;
+            border-left-width: $kendo-tabstrip-indicator-size;
         }
 
 

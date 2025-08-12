@@ -209,28 +209,6 @@
         }
     }
 
-    // RTL Adjustments
-    .k-form [dir="rtl"],
-    .k-rtl .k-form {
-        .k-label-optional {
-            margin-inline-start: 0;
-            margin-inline-end: $kendo-label-optional-margin-x;
-        }
-    }
-
-    .k-form-horizontal [dir="rtl"],
-    .k-rtl .k-form-horizontal {
-        &.k-form-field,
-        .k-form-field {
-            > .k-label,
-            > kendo-label,
-            > .k-form-label {
-                margin-inline-end: 0;
-                margin-inline-start: $kendo-horizontal-form-label-margin-x;
-            }
-        }
-    }
-
     // Sizes
     @each $size, $size-props in $kendo-form-sizes {
         $_form-rows-spacing: map.get($size-props, form-rows-spacing);

@@ -80,11 +80,6 @@
 
     .k-rtl,
     [dir="rtl"] {
-        .k-rating-precision-part {
-            inset-inline-start: auto;
-            inset-inline-end: $kendo-rating-item-padding-x;
-        }
-
         .k-rating-item .k-rating-precision-complement {
             direction: ltr;
         }

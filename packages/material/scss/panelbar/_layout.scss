@@ -15,20 +15,4 @@
             }
         }
     }
-
-    .k-rtl .k-panelbar,
-    .k-panelbar.k-rtl,
-    .k-panelbar [dir = "rtl"] {
-        .k-panelbar-group > .k-panelbar-item {
-            // Hierarchy items
-            @for $i from 1 through $kendo-panelbar-item-level-count {
-                &.k-level-#{$i} {
-                    .k-link {
-                        padding-inline-start: $kendo-panelbar-item-padding-x;
-                        padding-inline-end: calc( #{$kendo-panelbar-item-padding-x} * #{$i} + #{$kendo-panelbar-item-padding-x} );
-                    }
-                }
-            }
-        }
-    }
 }

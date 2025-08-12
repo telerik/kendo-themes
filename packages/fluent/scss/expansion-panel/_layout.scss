@@ -39,13 +39,4 @@
     .k-expander.k-expanded + .k-expander {
         margin-block-start: $kendo-expander-margin-y;
     }
-
-    .k-rtl .k-expander,
-    .k-expander.k-rtl,
-    .k-expander[dir="rtl"] {
-        // Expand / collapse icon
-        .k-expander-indicator {
-            margin-inline-end: $kendo-icon-spacing;
-        }
-    }
 }

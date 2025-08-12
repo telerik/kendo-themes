@@ -13,13 +13,4 @@
             border-inline-start-color: $kendo-grid-border;
         }
     }
-
-    .k-rtl .k-gantt-timeline-pane {
-        .k-grid-header {
-            tbody > tr:not(:only-child) > .k-header {
-                border-inline-end-color: $kendo-grid-border;
-            }
-        }
-    }
-
 }

@@ -67,11 +67,6 @@
         }
     }
 
-    .k-calendar .k-content.k-scrollable,
-    .k-calendar .k-calendar-content.k-scrollable {
-        @include hide-scrollbar-dir-agnostic();
-    }
-
     .k-calendar-infinite {
         .k-calendar-header {
             margin-inline-start: calc( -1 * #{$kendo-infinite-calendar-view-padding-x} );

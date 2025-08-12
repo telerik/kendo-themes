@@ -78,7 +78,8 @@
     .k-table-header-wrap {
         margin-inline-end: -1px;
         width: 100%;
-        border-width: 0 $kendo-table-cell-vertical-border-width 0 0;
+        border-width: 0;
+        border-inline-end-width: $kendo-table-cell-vertical-border-width;
         border-style: solid;
         border-color: inherit;
         overflow: hidden;
@@ -248,40 +249,6 @@
         .k-table-#{$size} .k-table-list .k-table-group-row::before {
             padding-block: $_cell-padding-y;
             padding-inline: 0;
-        }
-    }
-
-
-    // RTL
-    .k-rtl,
-    [dir="rtl"] {
-        &.k-table,
-        .k-table {
-
-            .k-table-th,
-            .k-table-td {
-                border-inline-start-width: 0;
-                border-inline-end-width: $kendo-table-cell-vertical-border-width;
-
-                &:first-child {
-                    border-inline-end-width: 0;
-                }
-            }
-
-            .k-table-header-wrap,
-            .k-table-footer-wrap {
-                margin-inline-end: 0;
-                margin-inline-start: -1px;
-                border-inline-start-width: $kendo-table-cell-vertical-border-width;
-                border-inline-end-width: 0;
-            }
-        }
-
-        .k-table-list {
-            .k-table-group-td > span {
-                inset-inline-start: 0;
-                inset-inline-end: auto;
-            }
         }
     }
 

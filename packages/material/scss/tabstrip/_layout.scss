@@ -87,11 +87,11 @@
     }
 
     .k-tabstrip-left > .k-tabstrip-items-wrapper .k-item::after {
-        inset-inline-start: auto;
+        left: auto;
     }
 
     .k-tabstrip-right > .k-tabstrip-items-wrapper .k-item::after {
-        inset-inline-end: auto;
+        right: auto;
     }
 
     .k-tabstrip-top .k-tabstrip-items-wrapper .k-item.k-active .k-link::after {

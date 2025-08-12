@@ -31,13 +31,4 @@
             }
         }
     }
-
-    .k-rtl {
-        kendo-scheduler .k-event,
-        .k-event {
-            &::before {
-                inset-inline-end: 0;
-            }
-        }
-    }
 }

@@ -266,7 +266,7 @@
         overflow-y: auto;
         display: block;
 
-        @include hide-scrollbar("right");
+        @include hide-scrollbar();
     }
 
     // scoped in calendar until it is used elsewhere
@@ -477,7 +477,9 @@
 
     // Range Selection
     .k-range-start {
-        border-radius: $kendo-calendar-range-cell-border-radius 0 0 $kendo-calendar-range-cell-border-radius;
+        border-radius: 0;
+        border-start-start-radius: $kendo-calendar-range-cell-border-radius;
+        border-end-start-radius: $kendo-calendar-range-cell-border-radius;
 
         .k-calendar-cell-inner,
         .k-link {
@@ -486,7 +488,9 @@
         }
     }
     .k-range-end {
-        border-radius: 0 $kendo-calendar-range-cell-border-radius $kendo-calendar-range-cell-border-radius 0;
+        border-radius: 0;
+        border-start-end-radius: $kendo-calendar-range-cell-border-radius;
+        border-end-end-radius: $kendo-calendar-range-cell-border-radius;
 
         .k-calendar-cell-inner,
         .k-link {
@@ -500,27 +504,6 @@
     }
     .k-range-start.k-range-end {
         border-radius: $kendo-calendar-range-cell-border-radius;
-    }
-
-    // RTL
-    .k-rtl .k-calendar,
-    [dir="rtl"] .k-calendar,
-    .k-calendar.k-rtl,
-    .k-calendar[dir="rtl"] {
-
-        .k-content.k-scrollable,
-        .k-calendar-content.k-scrollable {
-            @include hide-scrollbar("left");
-        }
-
-        // Range Selection RTL
-        .k-range-start {
-            border-radius: 0 $kendo-calendar-range-cell-border-radius $kendo-calendar-range-cell-border-radius 0;
-        }
-        .k-range-end {
-            border-radius: $kendo-calendar-range-cell-border-radius 0 0 $kendo-calendar-range-cell-border-radius;
-        }
-
     }
 
 }

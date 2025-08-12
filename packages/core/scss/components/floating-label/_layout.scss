@@ -63,27 +63,11 @@
 
     [dir="rtl"] .k-floating-label-container,
     .k-rtl .k-floating-label-container,
+    .k-floating-label-container.k-rtl,
     .k-floating-label-container[dir="rtl"] {
         > .k-floating-label {
             transform-origin: right center;
             transition: transform $kendo-floating-label-transition, color $kendo-floating-label-transition, top $kendo-floating-label-transition, right $kendo-floating-label-transition;
-        }
-
-        &.k-empty {
-            > .k-floating-label {
-                inset-inline-start: auto;
-                inset-inline-end: var(--kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x});
-            }
-        }
-
-        > .k-floating-label,
-        &.k-focus > .k-floating-label {
-            inset-inline-start: auto;
-            inset-inline-end: var(--kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x});
-        }
-        &:focus-within > .k-floating-label {
-            inset-inline-start: auto;
-            inset-inline-end: var(--kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x});
         }
     }
 

@@ -25,16 +25,6 @@
         }
     }
 
-    .k-rtl .k-expander,
-    .k-expander.k-rtl,
-    .k-expander[dir="rtl"] {
-        // Expand / collapse icon
-        .k-expander-indicator {
-            margin-inline-start: 0;
-            margin-inline-end: $kendo-expander-indicator-margin-x;
-        }
-    }
-
     // Header
     .k-expander-header {
         padding-block: $kendo-expander-header-padding-y;

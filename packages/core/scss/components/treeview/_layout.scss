@@ -144,37 +144,6 @@
         }
     }
 
-
-    // RTL
-    .k-rtl .k-treeview,
-    [dir="rtl"] .k-treeview,
-    .k-treeview.k-rtl,
-    .k-treeview[dir="rtl"] {
-
-        // Treeview item
-        .k-treeview-item {
-            padding-inline-start: 0;
-            padding-inline-end: $kendo-treeview-indent;
-        }
-
-        // Loading
-        .k-treeview-loading {
-            margin-inline-end: 0;
-            margin-inline-start: $kendo-icon-spacing;
-        }
-
-        // Treeview leaf
-        .k-treeview-leaf,
-        .k-in {
-            .k-icon,
-            .k-image,
-            .k-sprite {
-                margin-inline-end: 0;
-                margin-inline-start: $kendo-icon-spacing;
-            }
-        }
-    }
-
     @each $size, $size-props in $kendo-treeview-sizes {
         $_font-size: map.get( $size-props, font-size);
         $_line-height: map.get( $size-props, line-height);
