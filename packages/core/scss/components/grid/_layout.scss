@@ -1516,18 +1516,6 @@
         flex: 1 1 auto;
     }
 
-    .k-rtl .k-grid-virtual .k-grid-content,
-    [dir="rtl"] .k-grid-virtual .k-grid-content,
-    .k-rtl.k-grid-virtual .k-grid-content,
-    [dir="rtl"].k-grid-virtual .k-grid-content {
-
-        .k-grid-table-wrap,
-        .k-grid-table,
-        > .k-height-container {
-            float: inline-end;
-        }
-    }
-
 }
 
 

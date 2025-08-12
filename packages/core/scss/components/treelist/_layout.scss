@@ -86,10 +86,6 @@
         }
     }
 
-    :is(.k-treelist-scrollable[dir="rtl"], .k-rtl .k-treelist-scrollable) thead.k-grid-header {
-        padding-inline-start: 0;
-    }
-
     .k-drag-separator {
         display: inline-block;
         border-inline-end: 1px solid;

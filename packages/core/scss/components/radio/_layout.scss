@@ -173,8 +173,8 @@
             content: "";
             display: block;
             position: absolute;
-            inset-inline-start: 50%;
-            inset-block-start: 50%;
+            left: 50%;
+            top: 50%;
             border-radius: 100%;
             z-index: -1;
             transition: opacity 100ms linear, transform 150ms cubic-bezier(.4, 0, .2, 1);

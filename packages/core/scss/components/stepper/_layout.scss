@@ -260,36 +260,6 @@
             padding-inline: $kendo-stepper-inline-content-padding-y;
         }
     }
-
-
-    // Stepper rtl
-    .k-rtl .k-stepper,
-    .k-stepper[dir="rtl"] {
-        direction: rtl;
-
-        .k-step-label .k-icon {
-            margin-inline-start: 0;
-            margin-inline-end: $kendo-icon-spacing;
-        }
-
-        // Horizontal
-        .k-step-list-horizontal { }
-
-
-        // Vertical
-        .k-step-list-vertical {
-            .k-step-indicator + .k-step-label {
-                margin-inline-start: 0;
-                margin-inline-end: $kendo-stepper-label-margin-x;
-            }
-
-            & ~ .k-progressbar {
-                inset-inline-start: auto;
-                inset-inline-end: calc((#{$kendo-stepper-indicator-width} + 2 * #{$kendo-stepper-indicator-border-width} + 2 * #{$kendo-stepper-indicator-focus-size}) / 2);
-            }
-        }
-    }
-
 }
 
 

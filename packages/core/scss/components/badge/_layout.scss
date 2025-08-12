@@ -114,6 +114,7 @@
             }
         }
 
+        .k-rtl.k-badge-#{$placement},
         .k-rtl .k-badge-#{$placement},
         [dir="rtl"].k-badge-#{$placement},
         [dir="rtl"] .k-badge-#{$placement} {

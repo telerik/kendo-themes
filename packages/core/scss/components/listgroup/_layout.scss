@@ -86,9 +86,11 @@
         }
 
         > .k-select {
-            margin: calc( #{$kendo-listgroup-item-padding-y} * -1 ) calc( #{$kendo-listgroup-item-padding-x} * -1 ) calc( #{$kendo-listgroup-item-padding-y} * -1 ) 0;
+            margin-block: calc( #{$kendo-listgroup-item-padding-y} * -1 );
+            margin-inline: 0 calc( #{$kendo-listgroup-item-padding-x} * -1 );
             padding: $kendo-listgroup-item-padding-y;
-            border-width: 0 0 0 1px;
+            border-width: 0;
+            border-inline-start-width: 1px;
             border-style: solid;
             border-color: inherit;
             cursor: pointer;
@@ -146,35 +148,6 @@
     }
     .k-listgroup-item.k-listgroup-form-row {
         margin: 0;
-    }
-
-
-    [dir="rtl"] {
-
-        .k-listgroup-item {
-
-            > .k-link {
-
-                > .k-select {
-                    inset-inline-end: auto;
-                    inset-inline-start: 0;
-                }
-            }
-        }
-        .k-listgroup-item-segmented {
-
-            > .k-link {
-                margin-inline-end: calc( #{$kendo-listgroup-item-padding-x} * -1 );
-                margin-inline-start: 0;
-            }
-
-            > .k-select {
-                margin-inline-end: 0;
-                margin-inline-start: calc( #{$kendo-listgroup-item-padding-x} * -1 );
-                border-inline-end-width: 1px;
-                border-inline-start-width: 0;
-            }
-        }
     }
 
 

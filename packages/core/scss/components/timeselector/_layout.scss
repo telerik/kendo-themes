@@ -246,18 +246,6 @@
         }
     }
 
-
-
-    .k-rtl,
-    [dir="rtl"] {
-
-        // Time list content
-        .k-time-container,
-        .k-time-list-content {
-            @include hide-scrollbar("left");
-        }
-    }
-
 }
 
 

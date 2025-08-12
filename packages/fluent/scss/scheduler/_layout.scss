@@ -155,16 +155,6 @@
         }
     }
 
-   .k-rtl {
-        .k-scheduler,
-        &.k-scheduler {
-            .k-scheduler-agendaday {
-                float: inline-end;
-                margin: 0 0 0 .2em;
-            }
-        }
-    }
-
     .k-safari {
         .k-scheduler-yearview .k-calendar-view .k-month {
             margin-inline: calc( #{$kendo-scheduler-yearview-calendar-gap} / 2);

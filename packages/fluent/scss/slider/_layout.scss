@@ -8,22 +8,11 @@
     @include kendo-slider--layout-base();
 
     .k-slider {
-        width: min-content;
-        height: min-content;
         gap: $kendo-slider-spacing;
 
         .k-label {
             font-size: .875em;
             pointer-events: all;
-        }
-
-        &[disabled],
-        &.k-disabled {
-            .k-slider-tick,
-            .k-slider-track,
-            .k-slider-thumb {
-                cursor: default;
-            }
         }
     }
 
@@ -44,6 +33,7 @@
             transition: none;
         }
     }
+
     .k-slider-thumb {
         width: $kendo-slider-thumb-size;
         height: $kendo-slider-thumb-size;
@@ -68,6 +58,7 @@
         display: contents;
         pointer-events: none;
     }
+
     .k-slider-tick {
         background-color: transparent;
         background-position: center center;
@@ -90,7 +81,6 @@
 
     // Horizontal slider
     .k-horizontal-slider {
-        width: $kendo-slider-size;
 
         .k-slider-track-wrap {
             height: $kendo-slider-alt-size;
@@ -122,52 +112,6 @@
         }
     }
 
-    // Vertical slider
-    .k-vertical-slider {
-        height: $kendo-slider-size;
-
-        .k-slider-track-wrap {
-            width: $kendo-slider-alt-size;
-        }
-        .k-slider-thumb {
-            inset-inline-start: 50%;
-            transform: translate(-50%, 50%);
-        }
-        .k-slider-thumb:focus,
-        .k-slider-thumb:active {
-            transform: if( $kendo-slider-thumb-active-scale, translate(-50%, 50%) scale($kendo-slider-thumb-active-scale), null );
-        }
-        .k-slider-thumb-start {
-            inset-block-end: calc( var( --kendo-slider-start, 0) * 1% );
-        }
-        .k-slider-thumb-end {
-            inset-block-end: calc( var( --kendo-slider-end, 0) * 1% );
-        }
-
-        // Transitions
-        &.k-slider-transitions {
-            .k-slider-selection {
-                transition: height $kendo-slider-transition-speed $kendo-slider-transition-function;
-            }
-            .k-slider-thumb {
-                transition: bottom $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-transition-speed $kendo-slider-transition-function, transform $kendo-slider-thumb-transition-speed $kendo-slider-thumb-transition-function;
-            }
-        }
-    }
-
-    // RTL specific for fluent thumb classes
-    .k-slider-rtl {
-        &.k-horizontal-slider {
-            .k-slider-thumb {
-                transform: translate(50%, -50%);
-            }
-            .k-slider-thumb:focus,
-            .k-slider-thumb:active {
-                transform: if( $kendo-slider-thumb-active-scale, translate(50%, -50%) scale($kendo-slider-thumb-active-scale), null );
-            }
-        }
-    }
-
     // Aliases - fluent specific thumb classes
     .k-slider .k-button { @extend .k-slider-button !optional; }
     .k-tick { @extend .k-slider-tick !optional; }
@@ -175,7 +119,6 @@
     .k-draghandle-start { @extend .k-slider-thumb-start !optional; }
     .k-draghandle-end { @extend .k-slider-thumb-end !optional; }
     .k-slider-horizontal { @extend .k-horizontal-slider !optional; }
-    .k-slider-vertical { @extend .k-vertical-slider !optional; }
     .k-tick-horizontal { @extend .k-slider-tick-vertical !optional; }
     .k-tick-vertical { @extend .k-slider-tick-horizontal !optional; }
 

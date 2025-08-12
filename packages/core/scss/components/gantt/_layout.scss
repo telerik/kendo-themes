@@ -329,7 +329,9 @@
         .k-header {
             padding-block: $kendo-grid-header-padding-y;
             padding-inline: $kendo-grid-header-padding-x;
-            border-width: 0 0 1px $kendo-grid-cell-vertical-border-width;
+            border-width: 0;
+            border-block-end-width: 1px;
+            border-inline-start-width: $kendo-grid-cell-vertical-border-width;
             white-space: nowrap;
         }
 
@@ -369,12 +371,12 @@
             inset-block-start: -4px;
         }
         .k-arrow-e {
-            border-inline-start-color: currentColor;
-            inset-inline-end: -6px;
+            border-left-color: currentColor;
+            right: -6px;
         }
         .k-arrow-w {
-            border-inline-end-color: currentColor;
-            inset-inline-start: -6px;
+            border-right-color: currentColor;
+            left: -6px;
         }
     }
 
@@ -840,59 +842,6 @@
     .k-rtl,
     [dir="rtl"] {
 
-        .k-gantt-rows,
-        .k-gantt-columns {
-            inset-inline-start: auto;
-            inset-inline-end: 0;
-        }
-
-        .k-task-wrap:not(.k-milestone-wrap) {
-            margin-block: 0;
-            margin-inline: -26px;
-        }
-
-        .k-gantt-timeline-pane {
-            .k-header {
-                border-width: 0 $kendo-grid-cell-vertical-border-width 1px 0;
-            }
-            .k-header:first-child {
-                border-inline-end-width: 0;
-            }
-
-            .k-task-start {
-                inset-inline-start: auto;
-                inset-inline-end: 0;
-            }
-
-            .k-task-end {
-                inset-inline-end: auto;
-                inset-inline-start: 0;
-            }
-        }
-
-        .k-task-content {
-            text-align: end;
-        }
-
-        .k-task-complete {
-            inset-inline-start: auto;
-            inset-inline-end: 0;
-        }
-
-        .k-task-draghandle {
-            margin-inline-start: 0;
-            margin-inline-end: 16px;
-        }
-
-        .k-gantt-dependencies {
-            inset-inline-start: auto;
-            inset-inline-end: 0;
-        }
-
-        .k-gantt-delete {
-            float: inline-end;
-        }
-
         .k-task-offset-wrap .k-task-content {
             .k-resize-e {
                 display: block;
@@ -901,23 +850,6 @@
             .k-resize-w {
                 display: none;
             }
-        }
-
-        .k-milestone-wrap {
-            margin-inline-start: $kendo-gantt-rtl-milestone-wrap-margin-x;
-        }
-
-        .k-milestone-wrap .k-task-moment {
-            margin-inline-end: $kendo-gantt-rtl-milestone-planned-moment-margin-x;
-        }
-
-        .k-gantt-timeline-pane .k-milestone-wrap .k-task-start {
-            inset-inline-end: $kendo-gantt-rtl-milestone-dot-start-margin-x;
-        }
-
-        .k-gantt-tooltip-validation::before {
-            inset-inline-start: auto;
-            inset-inline-end: 0;
         }
     }
 

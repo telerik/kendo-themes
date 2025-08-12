@@ -13,11 +13,6 @@
         }
     }
 
-    .k-time-container,
-    .k-time-list-content {
-        @include hide-scrollbar-dir-agnostic();
-    }
-
     .k-time-separator {
         display: $kendo-time-list-separator-display;
     }

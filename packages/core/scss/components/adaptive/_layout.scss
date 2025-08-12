@@ -461,22 +461,6 @@
 
         }
     }
-
-    // RTL
-    :is(.k-rtl .k-pane-wrapper, [dir="rtl"] .k-pane-wrapper, .k-pane-wrapper[dir="rtl"]) {
-        .k-scheduler-mobile {
-            .k-scheduler-toolbar {
-                > ul > li {
-                    border: 0;
-                }
-            }
-
-            .k-task .k-i-reload {
-                margin-inline-start: .5em;
-                margin-inline-end: 0;
-            }
-        }
-    }
 }
 
 
