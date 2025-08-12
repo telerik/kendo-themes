@@ -37,7 +37,7 @@
     // Multiple expanders
     .k-expander + .k-expander.k-expanded,
     .k-expander.k-expanded + .k-expander {
-        margin-top: $kendo-expander-margin-y;
+        margin-block-start: $kendo-expander-margin-y;
     }
 
     .k-rtl .k-expander,

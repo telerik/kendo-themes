@@ -23,9 +23,9 @@
         }
 
         .k-progressbar {
-            left: $kendo-upload-item-padding-x;
-            right: $kendo-upload-item-padding-x;
-            bottom: calc( $kendo-upload-item-padding-y / 2 );
+            inset-inline-start: $kendo-upload-item-padding-x;
+            inset-inline-end: $kendo-upload-item-padding-x;
+            inset-block-end: calc( $kendo-upload-item-padding-y / 2 );
         }
     }
 

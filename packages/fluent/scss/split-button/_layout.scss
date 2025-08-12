@@ -23,7 +23,7 @@
                 width: $kendo-split-button-arrow-delimiter-line-size;
                 height: $kendo-split-button-arrow-delimiter-size;
                 position: absolute;
-                top: calc( ( 100% - #{$kendo-split-button-arrow-delimiter-size} ) / 2 );
+                inset-block-start: calc( ( 100% - #{$kendo-split-button-arrow-delimiter-size} ) / 2 );
                 background: $kendo-split-button-arrow-delimiter-bg;
                 z-index: 2;
             }

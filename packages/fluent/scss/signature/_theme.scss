@@ -9,7 +9,7 @@
         &[disabled],
         &.k-disabled {
             .k-signature-line {
-                border-bottom-color: $kendo-signature-line-disabled-color;
+                border-block-end-color: $kendo-signature-line-disabled-color;
             }
         }
     }

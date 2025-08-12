@@ -8,7 +8,7 @@
     .k-pane-wrapper .k-pane {
         .k-grid-mobile {
             .k-column-active + th.k-header {
-                border-left-color: k-color(surface-alt);
+                border-inline-start-color: k-color(surface-alt);
             }
 
             .k-resize-handle-inner::before {
