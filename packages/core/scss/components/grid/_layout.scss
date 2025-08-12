@@ -1079,6 +1079,11 @@
 
     // Grid stack layout
     .k-grid-stack {
+
+        .k-grid-content .k-table {
+            table-layout: auto;
+        }
+
         .k-table-td,
         .k-grid-edit-row .k-table-td {
             padding-inline: $kendo-grid-stack-cell-padding-x;
