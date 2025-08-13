@@ -163,7 +163,7 @@ $kendo-radio-list-item-padding-x: var( --kendo-radio-list-item-padding-x, #{k-sp
 $kendo-radio-list-item-padding-y: var( --kendo-radio-list-item-padding-y, #{$kendo-list-md-item-padding-y} ) !default;
 /// The gap between the list items of the RadioButton.
 /// @group radio
-$kendo-radio-list-item-gap: var( --kendo-radio-list-item-gap, #{k-spacing(2)} ) !default;
+$kendo-radio-list-item-gap: var( --kendo-radio-list-item-gap, #{k-spacing(1)} ) !default;
 
 // Radio ripple
 
