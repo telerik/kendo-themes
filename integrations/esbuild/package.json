@@ -1,0 +1,11 @@
+{
+  "name": "integrations.esbuild",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "esbuild": "latest",
+    "esbuild-sass-plugin": "latest"
+  }
+}
