@@ -58,6 +58,13 @@
         @include focus-indicator( $kendo-checkbox-focus-checked-shadow );
     }
 
+    // Invalid
+    .k-checkbox.k-invalid {
+        @include fill( $border: $kendo-checkbox-invalid-border );
+    }
+    .k-checkbox.k-invalid + .k-checkbox-label {
+        @include fill( $color: $kendo-checkbox-invalid-text );
+    }
 
     // Disabled
     .k-checkbox:disabled,
@@ -80,13 +87,6 @@
     }
 
 
-    // Invalid
-    .k-checkbox.k-invalid {
-        @include fill( $border: $kendo-checkbox-invalid-border );
-    }
-    .k-checkbox.k-invalid + .k-checkbox-label {
-        @include fill( $color: $kendo-checkbox-invalid-text );
-    }
 
 
     // Ripple
