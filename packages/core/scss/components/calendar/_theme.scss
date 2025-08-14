@@ -142,6 +142,8 @@
     }
 
     .k-rtl .k-calendar,
+    [dir="rtl"] .k-calendar,
+    .k-calendar.k-rtl,
     .k-calendar[dir="rtl"] {
         .k-calendar-navigation {
             box-shadow: inset 1px 0 $kendo-calendar-navigation-border;
