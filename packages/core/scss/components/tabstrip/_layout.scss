@@ -455,6 +455,8 @@
 
     // RTL
     .k-rtl .k-tabstrip,
+    [dir="rtl"] .k-tabstrip,
+    .k-tabstrip.k-rtl,
     .k-tabstrip[dir="rtl"] {
 
         &.k-tabstrip-left,
