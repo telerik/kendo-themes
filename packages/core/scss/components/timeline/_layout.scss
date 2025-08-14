@@ -81,11 +81,11 @@
 
             .k-card-header {
                 overflow: visible;
-                border-bottom: 0;
+                border-block-end: 0;
             }
 
             .k-card-header + .k-card-body {
-                padding-top: 0;
+                padding-block-start: 0;
             }
 
             .k-card-body {
@@ -108,7 +108,7 @@
         .k-timeline-card-callout {
             &.k-callout-w,
             &.k-callout-e {
-                top: $kendo-timeline-track-event-offset;
+                inset-block-start: $kendo-timeline-track-event-offset;
             }
         }
     }
@@ -129,17 +129,17 @@
         &::after {
             content: "";
             position: absolute;
-            top: 0;
+            inset-block-start: 0;
             border-width: $kendo-timeline-track-border-width;
             border-style: solid;
         }
     }
 
     .k-timeline-vertical {
-        padding-left: $kendo-timeline-vertical-padding-with-dates-calc;
+        padding-inline-start: $kendo-timeline-vertical-padding-with-dates-calc;
 
         &.k-timeline-dates-hidden {
-            padding-left: $kendo-timeline-vertical-padding-calc;
+            padding-inline-start: $kendo-timeline-vertical-padding-calc;
         }
 
         &::after {
@@ -154,7 +154,7 @@
             align-items: center;
 
             &:first-child {
-                padding-top: $kendo-timeline-spacing-y;
+                padding-block-start: $kendo-timeline-spacing-y;
             }
         }
 
@@ -164,8 +164,8 @@
 
         .k-timeline-date-wrap {
             position: absolute;
-            padding-right: $kendo-timeline-items-padding;
-            margin-top: $kendo-timeline-track-event-offset;
+            padding-inline-end: $kendo-timeline-items-padding;
+            margin-block-start: $kendo-timeline-track-event-offset;
             transform: translate(-100%, -50%);
             text-align: end;
         }
@@ -178,10 +178,10 @@
         }
 
         .k-timeline-card {
-            padding-left: $kendo-timeline-items-padding;
+            padding-inline-start: $kendo-timeline-items-padding;
 
             .k-card {
-                margin-left: $kendo-timeline-items-padding;
+                margin-inline-start: $kendo-timeline-items-padding;
                 min-height: $kendo-timeline-event-min-height-calc;
                 width: $kendo-timeline-event-width;
                 max-width: 100%;
@@ -224,16 +224,16 @@
         }
 
         .k-timeline-circle {
-            margin-top: $kendo-timeline-track-event-offset;
+            margin-block-start: $kendo-timeline-track-event-offset;
             transform: translate(-50%, -50%);
-            margin-right: calc( -1 * ( $kendo-timeline-circle-width / 2 ) );
+            margin-inline-end: calc( -1 * ( $kendo-timeline-circle-width / 2 ) );
         }
 
         &.k-timeline-alternating {
-            padding-left: $kendo-timeline-spacing-x;
+            padding-inline-start: $kendo-timeline-spacing-x;
 
             &::after {
-                left: 50%;
+                inset-inline-start: 50%;
             }
 
             .k-timeline-flag-wrap {
@@ -252,17 +252,17 @@
 
                     .k-timeline-date-wrap {
                         text-align: start;
-                        padding-right: 0;
-                        padding-left: $kendo-timeline-items-padding;
+                        padding-inline-end: 0;
+                        padding-inline-start: $kendo-timeline-items-padding;
                     }
 
                     .k-timeline-card {
-                        padding-left: 0;
-                        padding-right: $kendo-timeline-items-padding;
+                        padding-inline-start: 0;
+                        padding-inline-end: $kendo-timeline-items-padding;
 
                         .k-card {
-                            margin-right: $kendo-timeline-items-padding;
-                            margin-left: auto;
+                            margin-inline-end: $kendo-timeline-items-padding;
+                            margin-inline-start: auto;
                         }
                     }
                 }
@@ -281,7 +281,7 @@
 
             .k-timeline-circle {
                 transform: translateY(-50%);
-                margin-right: 0;
+                margin-inline-end: 0;
             }
         }
     }
@@ -306,8 +306,8 @@
         }
 
         .k-timeline-date-wrap {
-            margin-top: auto;
-            margin-bottom: $kendo-timeline-date-margin-bottom;
+            margin-block-start: auto;
+            margin-block-end: $kendo-timeline-date-margin-bottom;
         }
 
         .k-timeline-card {
@@ -320,7 +320,7 @@
 
         .k-timeline-events-list {
             overflow-x: hidden;
-            padding-top: $kendo-timeline-track-margin-bottom;
+            padding-block-start: $kendo-timeline-track-margin-bottom;
 
             .k-timeline-scrollable-wrap {
                 position: relative;
@@ -328,8 +328,8 @@
 
                 .k-timeline-event {
                     position: absolute;
-                    top: 0;
-                    left: 0;
+                    inset-block-start: 0;
+                    inset-inline-start: 0;
                     width: 100%;
                     height: 100%;
                 }
@@ -341,10 +341,10 @@
             padding: calc( #{$kendo-timeline-track-arrow-height} / 2 ) 0;
 
             &::after {
-                top: auto;
-                bottom: $kendo-timeline-track-bottom-calc;
-                left: $kendo-timeline-track-start-calc;
-                right: $kendo-timeline-track-end-calc;
+                inset-block-start: auto;
+                inset-block-end: $kendo-timeline-track-bottom-calc;
+                inset-inline-start: $kendo-timeline-track-start-calc;
+                inset-inline-end: $kendo-timeline-track-end-calc;
                 transform: translateY(-50%);
                 height: $kendo-timeline-track-size;
             }
@@ -362,7 +362,7 @@
             }
 
             .k-timeline-flag {
-                margin-bottom: $kendo-timeline-flag-margin-bottom-calc;
+                margin-block-end: $kendo-timeline-flag-margin-bottom-calc;
                 position: relative;
                 min-width: $kendo-timeline-horizontal-flag-min-width;
 
@@ -371,15 +371,15 @@
                     width: $kendo-timeline-flag-callout-width;
                     height: $kendo-timeline-flag-callout-height;
                     position: absolute;
-                    left: 50%;
-                    bottom: 0;
+                    inset-inline-start: 50%;
+                    inset-block-end: 0;
                     transform: translate(-50%, 50%) rotate(45deg);
                 }
             }
         }
 
         .k-timeline-scrollable-wrap {
-            padding-bottom: $kendo-timeline-track-wrap-padding-bottom;
+            padding-block-end: $kendo-timeline-track-wrap-padding-bottom;
             display: flex;
             outline: 0;
         }
@@ -390,7 +390,7 @@
         height: $kendo-timeline-track-arrow-height;
         border-radius: 50%;
         position: absolute;
-        bottom: calc(#{$kendo-timeline-track-size} + #{$kendo-timeline-track-wrap-padding-bottom} + 2 * #{$kendo-timeline-track-border-width});
+        inset-block-end: calc(#{$kendo-timeline-track-size} + #{$kendo-timeline-track-wrap-padding-bottom} + 2 * #{$kendo-timeline-track-border-width});
         z-index: 3;
         display: flex;
         align-items: center;
@@ -398,11 +398,11 @@
     }
 
     .k-timeline-arrow-left {
-        left: 0;
+        inset-inline-start: 0;
     }
 
     .k-timeline-arrow-right {
-        right: 0;
+        inset-inline-end: 0;
     }
 
     .k-timeline-mobile {
@@ -422,14 +422,14 @@
         }
 
         &.k-timeline-vertical {
-            padding-left: $kendo-timeline-mobile-vertical-padding-with-dates-calc;
+            padding-inline-start: $kendo-timeline-mobile-vertical-padding-with-dates-calc;
 
             &.k-timeline-dates-hidden {
-                padding-left: $kendo-timeline-mobile-vertical-padding-calc;
+                padding-inline-start: $kendo-timeline-mobile-vertical-padding-calc;
             }
 
             &.k-timeline-alternating {
-                padding-left: $kendo-timeline-mobile-spacing-x;
+                padding-inline-start: $kendo-timeline-mobile-spacing-x;
             }
 
             .k-timeline-card {

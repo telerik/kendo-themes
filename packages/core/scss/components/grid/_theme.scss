@@ -153,7 +153,7 @@
 
             .k-grid-content-sticky {
                 border-color: $kendo-grid-sticky-border;
-                border-top-color: $kendo-grid-header-border;
+                border-block-start-color: $kendo-grid-header-border;
             }
         }
 
@@ -178,26 +178,26 @@
 
             .k-grouping-row + .k-table-row td,
             .k-grouping-row + .k-table-row .k-table-td {
-                border-top-color: $kendo-grid-header-border;
+                border-block-start-color: $kendo-grid-header-border;
             }
         }
 
         .k-grid-header-locked .k-table-th {
-            border-bottom-color: $kendo-grid-header-border;
+            border-block-end-color: $kendo-grid-header-border;
         }
 
         // Sticky columns
         .k-master-row {
             .k-grid-content-sticky {
                 @include fill( $bg: $kendo-grid-sticky-bg, $border: $kendo-grid-sticky-border );
-                border-top-color: $kendo-grid-header-border;
+                border-block-start-color: $kendo-grid-header-border;
             }
 
             .k-grid-row-sticky,
             &.k-grid-row-sticky > .k-table-td {
                 @include fill( $bg: $kendo-grid-sticky-bg );
-                border-top-color: $kendo-grid-sticky-border;
-                border-bottom-color: $kendo-grid-sticky-border;
+                border-block-start-color: $kendo-grid-sticky-border;
+                border-block-end-color: $kendo-grid-sticky-border;
             }
 
             &.k-table-alt-row {
@@ -314,8 +314,8 @@
                 $bg: $kendo-grid-sticky-header-bg
             );
 
-            border-right-color: $kendo-grid-sticky-header-border;
-            border-left-color: $kendo-grid-sticky-header-border;
+            border-inline-end-color: $kendo-grid-sticky-header-border;
+            border-inline-start-color: $kendo-grid-sticky-header-border;
         }
     }
 
@@ -327,8 +327,8 @@
             $kendo-grid-footer-border
         );
         .k-grid-footer-sticky {
-            border-left-color: $kendo-grid-sticky-border;
-            border-right-color: $kendo-grid-sticky-border;
+            border-inline-start-color: $kendo-grid-sticky-border;
+            border-inline-end-color: $kendo-grid-sticky-border;
             background-color: $kendo-grid-sticky-footer-bg;
         }
     }

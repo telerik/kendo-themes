@@ -72,7 +72,8 @@
     .k-treeview-item {
         outline-style: none;
         margin: 0;
-        padding: 0 0 0 $kendo-treeview-indent;
+        padding: 0;
+        padding-inline-start: $kendo-treeview-indent;
         border-width: 0;
         display: block;
     }
@@ -95,7 +96,7 @@
 
     // Loading icon
     .k-treeview-loading {
-        margin-right: $kendo-icon-spacing;
+        margin-inline-end: $kendo-icon-spacing;
     }
 
 
@@ -122,7 +123,7 @@
         .k-icon,
         .k-image,
         .k-sprite {
-            margin-right: $kendo-icon-spacing;
+            margin-inline-end: $kendo-icon-spacing;
         }
 
         &.k-focus {
@@ -140,37 +141,6 @@
         &:focus,
         &.k-focus {
             text-decoration: underline;
-        }
-    }
-
-
-    // RTL
-    .k-rtl .k-treeview,
-    [dir="rtl"] .k-treeview,
-    .k-treeview.k-rtl,
-    .k-treeview[dir="rtl"] {
-
-        // Treeview item
-        .k-treeview-item {
-            padding-left: 0;
-            padding-right: $kendo-treeview-indent;
-        }
-
-        // Loading
-        .k-treeview-loading {
-            margin-right: 0;
-            margin-left: $kendo-icon-spacing;
-        }
-
-        // Treeview leaf
-        .k-treeview-leaf,
-        .k-in {
-            .k-icon,
-            .k-image,
-            .k-sprite {
-                margin-right: 0;
-                margin-left: $kendo-icon-spacing;
-            }
         }
     }
 

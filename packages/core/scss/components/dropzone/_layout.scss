@@ -27,16 +27,16 @@
         position: relative;
 
         .k-dropzone-icon {
-            margin-bottom: $kendo-dropzone-icon-spacing;
+            margin-block-end: $kendo-dropzone-icon-spacing;
         }
 
         .k-dropzone-hint {
-            margin-bottom: $kendo-dropzone-hint-spacing;
+            margin-block-end: $kendo-dropzone-hint-spacing;
             font-size: $kendo-dropzone-hint-font-size;
         }
 
         .k-dropzone-note {
-            margin-bottom: $kendo-dropzone-note-spacing;
+            margin-block-end: $kendo-dropzone-note-spacing;
             font-size: $kendo-dropzone-note-font-size;
         }
     }

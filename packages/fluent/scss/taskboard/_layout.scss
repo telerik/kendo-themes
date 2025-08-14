@@ -18,11 +18,11 @@
     }
 
      .k-taskboard-column-cards-container {
-        margin-bottom: 0;
+        margin-block-end: 0;
      }
 
     .k-taskboard-column-cards {
-        margin-bottom: $kendo-taskboard-column-container-spacing-y;
+        margin-block-end: $kendo-taskboard-column-container-spacing-y;
     }
 
     .k-taskboard-pane-header {

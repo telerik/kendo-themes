@@ -50,7 +50,7 @@
         }
 
         .k-wizard-buttons {
-            margin-top: $kendo-wizard-content-padding-y;
+            margin-block-start: $kendo-wizard-content-padding-y;
             box-sizing: border-box;
             display: flex;
             flex-wrap: nowrap;
@@ -59,7 +59,7 @@
             flex-shrink: 0;
 
             .k-button {
-                margin-right: $kendo-wizard-buttons-margin-x;
+                margin-inline-end: $kendo-wizard-buttons-margin-x;
             }
 
             .k-wizard-pager {
@@ -69,7 +69,7 @@
 
         .k-wizard-buttons-right {
             .k-button:last-of-type {
-                margin-right: 0;
+                margin-inline-end: 0;
             }
         }
 
@@ -90,7 +90,7 @@
         flex-direction: column;
 
         .k-wizard-steps {
-            margin-top: $kendo-wizard-content-padding-y;
+            margin-block-start: $kendo-wizard-content-padding-y;
         }
 
         .k-wizard-steps,
@@ -102,7 +102,7 @@
     .k-wizard-vertical {
 
         .k-wizard-steps {
-            margin-left: $kendo-wizard-content-padding-x;
+            margin-inline-start: $kendo-wizard-content-padding-x;
             flex: 1 0 0%;
         }
 
@@ -116,8 +116,8 @@
         flex-direction: row-reverse;
 
         .k-wizard-steps {
-            margin-right: $kendo-wizard-content-padding-x;
-            margin-left: 0;
+            margin-inline-end: $kendo-wizard-content-padding-x;
+            margin-inline-start: 0;
         }
     }
 

@@ -253,10 +253,7 @@ $kendo-scheduler-event-actions-inset-x: k-spacing(2) !default;
 
 /// The margin of the Scheduler event indicators.
 /// @group scheduler
-$kendo-scheduler-indicators-margin: k-spacing(0.5) .4ex 0 k-spacing(1) !default;
-/// The margin of the Scheduler event indicators in rtl.
-/// @group scheduler
-$kendo-scheduler-rtl-indicators-margin: k-spacing(0.5) k-spacing(1) 0 .4ex !default;
+$kendo-scheduler-indicators-margin: k-spacing(0.5) k-spacing(1) !default;
 
 /// The inline inset of the Scheduler marquee labels.
 /// @group scheduler
@@ -343,7 +340,6 @@ $kendo-scheduler-header-bg: k-color(surface) !default;
     $kendo-scheduler-event-template-padding-y: $kendo-scheduler-event-template-padding-y,
     $kendo-scheduler-event-actions-inset-x: $kendo-scheduler-event-actions-inset-x,
     $kendo-scheduler-indicators-margin: $kendo-scheduler-indicators-margin,
-    $kendo-scheduler-rtl-indicators-margin: $kendo-scheduler-rtl-indicators-margin,
     $kendo-scheduler-marquee-label-inset-x: $kendo-scheduler-marquee-label-inset-x,
     $kendo-scheduler-marquee-label-inset-y: $kendo-scheduler-marquee-label-inset-y,
     $kendo-scheduler-header-bg: $kendo-scheduler-header-bg

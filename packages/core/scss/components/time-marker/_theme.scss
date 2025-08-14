@@ -6,15 +6,15 @@
         background: $kendo-current-time-color;
 
         &.k-current-time-arrow-left {
-            border-right-color: $kendo-current-time-color;
+            border-inline-end-color: $kendo-current-time-color;
         }
 
         &.k-current-time-arrow-right {
-            border-left-color: $kendo-current-time-color;
+            border-inline-start-color: $kendo-current-time-color;
         }
 
         &.k-current-time-arrow-down {
-            border-top-color: $kendo-current-time-color;
+            border-block-start-color: $kendo-current-time-color;
         }
     }
 

@@ -188,16 +188,6 @@ $kendo-gantt-planned-summary-drag-hint-top: 1.35em !default;
 /// @group gantt
 $kendo-gantt-planned-milestone-drag-hint-top: 1.15em !default;
 
-/// The horizontal margin of the Gantt milestone wrap.
-/// @group gantt
-$kendo-gantt-rtl-milestone-wrap-margin-x: -2.4em !default;
-/// The horizontal margin of the Gantt milestone line dot.
-/// @group gantt
-$kendo-gantt-rtl-milestone-planned-moment-margin-x: .2em !default;
-/// The horizontal margin of the Gantt milestone task dot.
-/// @group gantt
-$kendo-gantt-rtl-milestone-dot-start-margin-x: -.1em !default;
-
 /// The horizontal offset of the Gantt delayed task resize handler.
 /// @group gantt
 $kendo-gantt-planned-offset-resize-handler-margin-x: 1.4em !default;
@@ -309,9 +299,6 @@ $kendo-gantt-task-tooltip-padding-y: k-spacing(1) !default;
     $kendo-gantt-planned-single-drag-hint-top: $kendo-gantt-planned-single-drag-hint-top,
     $kendo-gantt-planned-summary-drag-hint-top: $kendo-gantt-planned-summary-drag-hint-top,
     $kendo-gantt-planned-milestone-drag-hint-top: $kendo-gantt-planned-milestone-drag-hint-top,
-    $kendo-gantt-rtl-milestone-wrap-margin-x: $kendo-gantt-rtl-milestone-wrap-margin-x,
-    $kendo-gantt-rtl-milestone-planned-moment-margin-x: $kendo-gantt-rtl-milestone-planned-moment-margin-x,
-    $kendo-gantt-rtl-milestone-dot-start-margin-x: $kendo-gantt-rtl-milestone-dot-start-margin-x,
     $kendo-gantt-planned-offset-resize-handler-margin-x: $kendo-gantt-planned-offset-resize-handler-margin-x,
     $kendo-gantt-planned-bg: $kendo-gantt-planned-bg,
     $kendo-gantt-planned-border: $kendo-gantt-planned-border,

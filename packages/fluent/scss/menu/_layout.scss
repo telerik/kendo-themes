@@ -27,7 +27,7 @@
     // Horizontal separator styling
     .k-menu-horizontal {
         > .k-separator {
-            border-left-width: $kendo-menu-separator-width;
+            border-inline-start-width: $kendo-menu-separator-width;
         }
     }
 
@@ -50,7 +50,7 @@
     // Sub menu group separator styling
     .k-menu-group {
         .k-separator {
-            border-top-width: $kendo-menu-separator-width;
+            border-block-start-width: $kendo-menu-separator-width;
         }
     }
 

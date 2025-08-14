@@ -268,10 +268,10 @@
         display: none;
         pointer-events: none;
         position: absolute;
-        left: calc( -1 * $kendo-button-border-width );
-        right: calc( -1 * $kendo-button-border-width );
-        top: calc( -1 * $kendo-button-border-width );
-        bottom: calc( -1 * $kendo-button-border-width );
+        inset-inline-start: calc( -1 * $kendo-button-border-width );
+        inset-inline-end: calc( -1 * $kendo-button-border-width );
+        inset-block-start: calc( -1 * $kendo-button-border-width );
+        inset-block-end: calc( -1 * $kendo-button-border-width );
         z-index: 0;
         transition: opacity .2s ease-in-out;
     }
@@ -333,10 +333,10 @@
             display: none;
             pointer-events: none;
             position: absolute;
-            left: calc( -1 * $kendo-button-border-width );
-            right: calc( -1 * $kendo-button-border-width );
-            top: calc( -1 * $kendo-button-border-width );
-            bottom: calc( -1 * $kendo-button-border-width );
+            inset-inline-start: calc( -1 * $kendo-button-border-width );
+            inset-inline-end: calc( -1 * $kendo-button-border-width );
+            inset-block-start: calc( -1 * $kendo-button-border-width );
+            inset-block-end: calc( -1 * $kendo-button-border-width );
             z-index: 0;
             transition: opacity .2s ease-in-out;
         }

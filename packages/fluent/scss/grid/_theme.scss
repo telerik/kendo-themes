@@ -175,7 +175,7 @@
 
     .k-columnmenu-item-wrapper + .k-columnmenu-item-wrapper,
     .k-column-menu-footer {
-        border-top-color: color-mix(in srgb, k-color(border) 16%, transparent);
+        border-block-start-color: color-mix(in srgb, k-color(border) 16%, transparent);
     }
 
     .k-columnmenu-indicators {

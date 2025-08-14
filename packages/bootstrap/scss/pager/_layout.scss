@@ -11,10 +11,4 @@
     .k-pager-first { @include border-left-radius-only( $kendo-pager-item-border-radius ); }
     .k-pager-last { @include border-right-radius-only( $kendo-pager-item-border-radius ); }
 
-    .k-rtl,
-    [dir="rtl"] {
-        .k-pager-first { @include border-right-radius-only( $kendo-pager-item-border-radius ); }
-        .k-pager-last { @include border-left-radius-only( $kendo-pager-item-border-radius ); }
-    }
-
 }

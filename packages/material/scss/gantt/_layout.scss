@@ -6,11 +6,4 @@
 
     @include kendo-gantt--layout-base();
 
-    // Timeline
-    .k-rtl .k-gantt-timeline-pane {
-        .k-header {
-            border-width: 0 $kendo-grid-cell-vertical-border-width 1px 0;
-        }
-    }
-
 }

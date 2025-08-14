@@ -40,7 +40,7 @@
 
     .k-rating-precision-part,
     .k-rating-precision-complement {
-        top: $kendo-rating-item-padding-y;
+        inset-block-start: $kendo-rating-item-padding-y;
         inset-inline-start: $kendo-rating-item-padding-x;
     }
 

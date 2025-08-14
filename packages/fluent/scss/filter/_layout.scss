@@ -3,28 +3,4 @@
 
 @mixin kendo-filter--layout() {
     @include kendo-filter--layout-base();
-
-    .k-filter {
-        .k-filter-toolbar {
-            &::before {
-                top: 50%;
-                inset-block-start: unset;
-            }
-        }
-
-        .k-filter-item {
-            &::before {
-                top: calc( $kendo-filter-padding-y * -1 );
-                inset-block-start: unset;
-            }
-        }
-
-        .k-filter-lines .k-filter-item:last-child > .k-filter-toolbar::after,
-        .k-filter-lines .k-filter-item:last-child > * > .k-filter-toolbar::after {
-            top: calc( ( $kendo-filter-padding-y * -1 ) - $kendo-filter-line-size );
-            bottom: 50%;
-            inset-block-start: unset;
-            inset-block-end: unset;
-        }
-    }
 }

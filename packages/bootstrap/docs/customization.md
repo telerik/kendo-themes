@@ -12255,36 +12255,6 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$kendo-gantt-rtl-milestone-wrap-margin-x</td>
-    <td>Number</td>
-    <td><code>-2.3em</code></td>
-    <td><code>-2.3em</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Gantt milestone wrap.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-gantt-rtl-milestone-planned-moment-margin-x</td>
-    <td>Number</td>
-    <td><code>.2em</code></td>
-    <td><code>0.2em</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Gantt milestone line dot.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-gantt-rtl-milestone-dot-start-margin-x</td>
-    <td>Number</td>
-    <td><code>-.1em</code></td>
-    <td><code>-0.1em</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Gantt milestone task dot.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-gantt-planned-offset-resize-handler-margin-x</td>
     <td>Number</td>
     <td><code>1.2em</code></td>
@@ -22298,21 +22268,11 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-scheduler-indicators-margin</td>
     <td>List</td>
-    <td><code>k-spacing(1) .4ex 0 k-spacing(2)</code></td>
-    <td><code>(var(--kendo-spacing-1, 0.25rem) 0.4ex 0 var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>k-spacing(1) k-spacing(2)</code></td>
+    <td><code>(var(--kendo-spacing-1, 0.25rem) var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Scheduler event indicators.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-rtl-indicators-margin</td>
-    <td>List</td>
-    <td><code>k-spacing(1) k-spacing(2) 0 .4ex</code></td>
-    <td><code>(var(--kendo-spacing-1, 0.25rem) var(--kendo-spacing-2, 0.5rem) 0 0.4ex)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Scheduler event indicators in rtl.</div></div>
     </td>
 </tr>
 <tr>

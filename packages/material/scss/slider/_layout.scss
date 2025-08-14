@@ -56,11 +56,11 @@
 
         .k-tick {
             &.k-last::after {
-                top: 0;
+                inset-block-start: 0;
             }
             &.k-first::after {
-                top: auto;
-                bottom: 0;
+                inset-block-start: auto;
+                inset-block-end: 0;
             }
         }
     }

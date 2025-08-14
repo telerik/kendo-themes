@@ -7,8 +7,6 @@
     @include kendo-pivotgrid--layout-base();
 
     .k-pivotgrid-empty-cell {
-        border-right-style: initial;
-        border-right-width: initial;
         border-inline-end-style: solid;
         border-inline-end-width: $kendo-pivotgrid-cell-border-width;
 
@@ -18,24 +16,22 @@
     }
 
     .k-pivotgrid-column-headers .k-pivotgrid-cell {
-        border-left-style: initial;
-        border-left-width: initial;
         border-inline-start-style: solid;
         border-inline-start-width: $kendo-pivotgrid-cell-border-width;
 
         &:first-child {
-            border-left-width: initial;
+            border-inline-start-width: initial;
             border-inline-start-width: 0;
         }
 
         &.k-first {
-            border-left-width: initial;
+            border-inline-start-width: initial;
             border-inline-start-width: $kendo-pivotgrid-cell-border-width;
         }
     }
 
     .k-pivotgrid-values .k-pivotgrid-cell {
-        border-left-width: 0;
+        border-inline-start-width: 0;
     }
 
     .k-pivotgrid-configurator-content .k-form .k-label {
@@ -50,7 +46,7 @@
         .k-row-fields,
         .k-column-fields,
         .k-filter-fields {
-            margin-top: initial;
+            margin-block-start: initial;
             margin-block-start: $kendo-pivotgrid-configurator-fields-margin-y;
         }
 
@@ -59,31 +55,31 @@
         }
 
         .k-settings-description {
-            margin-top: initial;
+            margin-block-start: initial;
             margin-block-start: k-spacing(4);
         }
     }
 
     .k-calculated-field-header-text {
-        margin-right: initial;
+        margin-inline-end: initial;
         margin-inline-end: 5px;
     }
 
     .k-calculated-field-actions .k-icon {
-        margin-right: initial;
+        margin-inline-end: initial;
         margin-inline-end: k-spacing(2);
     }
 
     .k-pivotgrid-configurator-horizontal .k-pivotgrid-configurator-content .k-form-field-wrapper {
-        padding-left: initial;
+        padding-inline-start: initial;
         padding-inline-start: $kendo-pivotgrid-spacer;
 
         & > *:first-child {
-            margin-top: initial;
+            margin-block-start: initial;
             margin-block-start: 0;
         }
         &:first-child {
-            padding-left: initial;
+            padding-inline-start: initial;
             padding-inline-start: 0;
         }
     }

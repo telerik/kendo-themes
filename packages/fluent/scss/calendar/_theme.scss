@@ -82,7 +82,9 @@
     }
 
     .k-calendar[dir="rtl"],
-    .k-rtl .k-calendar {
+    .k-calendar.k-rtl,
+    .k-rtl .k-calendar,
+    [dir="rtl"] .k-calendar {
         .k-calendar-td {
 
             &.k-range-start:hover .k-link,

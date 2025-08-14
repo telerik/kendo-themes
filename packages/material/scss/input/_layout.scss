@@ -12,7 +12,7 @@
     .k-picker-solid {
         @include border-bottom-radius( 0 !important ); // stylelint-disable-line declaration-no-important
         border-width: $kendo-input-border-width 0;
-        border-top-color: transparent !important; // stylelint-disable-line declaration-no-important
+        border-block-start-color: transparent !important; // stylelint-disable-line declaration-no-important
 
         .k-input-button,
         .k-input-spinner .k-spinner-increase,

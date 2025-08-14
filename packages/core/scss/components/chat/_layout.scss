@@ -57,7 +57,7 @@
         overflow: hidden;
 
         > * + * {
-            margin-top: $kendo-chat-message-list-spacing;
+            margin-block-start: $kendo-chat-message-list-spacing;
         }
     }
 
@@ -72,7 +72,7 @@
         position: relative;
 
         .k-message + .k-message {
-            margin-top: $kendo-chat-bubble-spacing;
+            margin-block-start: $kendo-chat-bubble-spacing;
         }
 
         .k-avatar {
@@ -82,7 +82,7 @@
         // Add margin to the avatar when the last message is selected
         // so that the avatar is aligned to the bubble and not to the status
         &:has(.k-message-group-content .k-message:last-child .k-chat-bubble.k-selected + .k-message-status) .k-avatar {
-            margin-bottom: calc($kendo-chat-message-meta-line-height * $kendo-chat-message-meta-font-size + $kendo-chat-bubble-spacing);
+            margin-block-end: calc($kendo-chat-message-meta-line-height * $kendo-chat-message-meta-font-size + $kendo-chat-bubble-spacing);
             transition: margin .2s ease-in-out;
         }
 
@@ -119,7 +119,7 @@
         padding-inline: $kendo-chat-file-download-padding-x;
         padding-block-end: $kendo-chat-file-download-padding-y;
         border-radius: 0 0 $kendo-chat-file-border-radius $kendo-chat-file-border-radius;
-        text-align: left;
+        text-align: start;
     }
 
     .k-message-group-sender {
@@ -273,7 +273,7 @@
 
     .k-message-error,
     .k-message-sending {
-        margin-bottom: $kendo-chat-item-spacing-y;
+        margin-block-end: $kendo-chat-item-spacing-y;
 
         .k-message-status {
             height: calc($kendo-chat-message-meta-line-height * $kendo-chat-message-meta-font-size);
@@ -315,15 +315,15 @@
             display: inline-block;
             content: "";
             position: absolute;
-            left: $kendo-chat-message-reference-padding-x;
+            inset-inline-start: $kendo-chat-message-reference-padding-x;
             height: calc( 100% - #{$kendo-chat-message-reference-padding-y} );
             width: 2px;
         }
     }
 
     .k-message-pinned {
-        border-bottom-width: $kendo-chat-message-pinned-border-width;
-        border-bottom-style: $kendo-chat-message-pinned-border-style;
+        border-block-end-width: $kendo-chat-message-pinned-border-width;
+        border-block-end-style: $kendo-chat-message-pinned-border-style;
         cursor: pointer;
     }
 
@@ -333,7 +333,7 @@
 
     // Author
     .k-message-author {
-        margin-bottom: calc( #{$kendo-chat-bubble-spacing} / 2);
+        margin-block-end: calc( #{$kendo-chat-bubble-spacing} / 2);
         font-size: $kendo-chat-author-font-size;
         line-height: $kendo-chat-author-line-height;
         font-weight: bold;
@@ -463,7 +463,7 @@
 
     .k-message-group {
         .k-chat-file + .k-chat-file:not(.k-chat-file-deleted) {
-            padding-top: 0;
+            padding-block-start: 0;
         }
     }
 
@@ -505,18 +505,18 @@
     }
 
     .k-chat .k-card-deck-scrollwrap {
-        margin-right: calc( #{$kendo-chat-message-list-padding-y} * -1 );
-        margin-left: calc( #{$kendo-chat-message-list-padding-y} * -1 );
-        padding-left: $kendo-chat-message-list-padding-y;
-        padding-right: $kendo-chat-message-list-padding-y;
+        margin-inline-end: calc( #{$kendo-chat-message-list-padding-y} * -1 );
+        margin-inline-start: calc( #{$kendo-chat-message-list-padding-y} * -1 );
+        padding-inline-start: $kendo-chat-message-list-padding-y;
+        padding-inline-end: $kendo-chat-message-list-padding-y;
     }
 
     .k-chat .k-card-deck-scrollwrap > .k-card-deck {
         // hide scrollbar in chat
         $scrollbar-size: 20px;
 
-        margin-bottom: -$scrollbar-size;
-        padding-bottom: $scrollbar-size;
+        margin-block-end: -$scrollbar-size;
+        padding-block-end: $scrollbar-size;
     }
 
     // Deck
@@ -525,7 +525,7 @@
         flex-flow: row nowrap;
         align-items: stretch;
         flex: 0 0 auto;
-        padding-bottom: 5px; // accommodate for focused box shadow on OSX
+        padding-block-end: 5px; // accommodate for focused box shadow on OSX
 
         .k-card {
             flex: 0 0 auto;
@@ -571,7 +571,7 @@
         }
 
         .k-upload {
-            margin-top: k-spacing(6);
+            margin-block-start: k-spacing(6);
         }
 
         .k-upload-files {

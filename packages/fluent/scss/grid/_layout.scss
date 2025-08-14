@@ -36,7 +36,7 @@
 
         .k-grouping-row + .k-table-row td,
         .k-grouping-row + .k-table-row .k-table-td {
-            border-top-width: $kendo-grid-grouping-row-border-width-y;
+            border-block-start-width: $kendo-grid-grouping-row-border-width-y;
         }
 
         .k-grouping-row .k-group-cell,
@@ -70,7 +70,7 @@
             width: $kendo-grid-group-drop-hint-dot-size;
             height: $kendo-grid-group-drop-hint-dot-size;
             border-radius: 50%;
-            left: calc( #{$kendo-grid-group-drop-hint-dot-size} / 2 );
+            inset-inline-start: calc( #{$kendo-grid-group-drop-hint-dot-size} / 2 );
         }
     }
 
@@ -89,10 +89,10 @@
     }
 
     .k-grid-header {
-        border-bottom-width: $kendo-grid-header-border-width-y;
+        border-block-end-width: $kendo-grid-header-border-width-y;
 
         .k-table  {
-            margin-bottom: calc( #{$kendo-grid-header-border-width-y} * -1 );
+            margin-block-end: calc( #{$kendo-grid-header-border-width-y} * -1 );
         }
 
         .k-table-th {
@@ -153,7 +153,7 @@
 
         td:first-child,
         .k-table-td:first-child {
-            border-left-width: 0;
+            border-inline-start-width: 0;
         }
     }
 
@@ -194,7 +194,8 @@
         }
 
         .k-grouping-row .k-group-cell,
-        .k-grouping-row + .k-table-row .k-group-cell {
+        .k-grouping-row + .k-table-row .k-group-cell,
+        .k-table-row .k-group-cell {
             border-inline-end-width: 0;
         }
 
@@ -260,7 +261,7 @@
     }
 
     .k-column-menu-group-header-text {
-        border-bottom-style: $kendo-grid-column-menu-group-header-border-style;
+        border-block-end-style: $kendo-grid-column-menu-group-header-border-style;
         font-weight: $kendo-grid-column-menu-group-header-font-weight;
     }
 

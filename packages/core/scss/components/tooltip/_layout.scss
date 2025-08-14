@@ -39,7 +39,7 @@
     }
 
     .k-tooltip-title {
-        margin-bottom: .25em;
+        margin-block-end: .25em;
         font-size: $kendo-tooltip-title-font-size;
         line-height: $kendo-tooltip-title-line-height;
     }
@@ -97,7 +97,7 @@
     }
     .k-callout-s {
         margin-left: calc( #{$kendo-tooltip-callout-size} * -1 );
-        border-top-color: currentColor;
+        border-block-start-color: currentColor;
         // bottom: 0;
         bottom: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2);
         left: 50%;

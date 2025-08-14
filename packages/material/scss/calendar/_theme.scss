@@ -36,6 +36,8 @@
     }
 
     .k-rtl .k-calendar,
+    [dir="rtl"] .k-calendar,
+    .k-calendar.k-rtl,
     .k-calendar[dir="rtl"] {
         .k-range-start {
             background: $kendo-calendar-range-end-bg;
