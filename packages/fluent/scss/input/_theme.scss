@@ -9,6 +9,10 @@
 
     .k-input {
 
+        .k-input-button {
+            color: $kendo-input-button-icon-color;
+        }
+
         &:focus,
         &.k-focus,
         &:focus-within {
@@ -53,6 +57,12 @@
 
     .k-input-solid,
     .k-picker-solid {
+        border-bottom-color: k-color(border);
+
+        &:hover,
+        &.k-hover {
+             border-bottom-color: k-color(border);
+        }
 
         &:focus,
         &.k-focus,
@@ -65,15 +75,8 @@
         &.k-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-
-            &:focus,
-            &.k-focus,
-            &:focus-within {
-                border-color: $kendo-input-border;
-                border-bottom-color: $kendo-input-invalid-border;
-
-            }
-
+            border-color: $kendo-input-border;
+            border-bottom-color: $kendo-input-invalid-border;
         }
     }
 
@@ -99,12 +102,15 @@
 
     .k-picker {
 
+        .k-input-button {
+            color: $kendo-input-button-icon-color;
+        }
+
         &:focus,
         &.k-focus,
         &:focus-within {
             color: $kendo-picker-focus-text;
             background-color: $kendo-picker-focus-bg;
-            border-color: $kendo-picker-focus-border;
 
             &::after {
                 border-color: $kendo-picker-focus-border;
@@ -115,25 +121,24 @@
         &.k-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            border-color: $kendo-input-invalid-border;
-
-            &::after {
-                border-color: $kendo-input-invalid-border;
-            }
-
             .k-input-validation-icon {
                 color: $kendo-input-invalid-text;
             }
 
-            &:focus:hover,
-            &.k-focus:hover,
-            &:focus.k-hover,
-            &.k-focus.k-hover {
-                border-color: $kendo-input-invalid-border;
+        }
+    }
 
-                .k-input-validation-icon {
-                    color: $kendo-input-invalid-text;
-                }
+    .k-picker-solid,
+    .k-picker-flat {
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            border-color: $kendo-input-border;
+            border-bottom-color: $kendo-input-invalid-border;
+
+            &::after {
+                border-color: $kendo-input-invalid-border;
             }
         }
     }

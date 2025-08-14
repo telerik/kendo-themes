@@ -99,7 +99,11 @@ $kendo-input-bg: var( --kendo-input-bg, k-color(surface-alt) ) !default;
 
 /// The border color of the solid Input components.
 /// @group input
-$kendo-input-border: var( --kendo-input-border, k-color(border) ) !default;
+$kendo-input-border: var( --kendo-input-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
+
+// The color of the Input button icon.
+/// @group input
+$kendo-input-button-icon-color: var( --kendo-input-button-icon-color, k-color(border) ) !default;
 
 /// The text color of the hovered solid Input components.
 /// @group input
@@ -111,7 +115,7 @@ $kendo-input-hover-bg: $kendo-input-bg !default;
 
 /// The border color of the hovered solid Input components.
 /// @group input
-$kendo-input-hover-border: k-color(border-alt) !default;
+$kendo-input-hover-border: color-mix( in srgb, k-color(border) 34%, transparent ) !default;
 
 /// The text color of the focused solid Input components.
 /// @group input
@@ -147,7 +151,7 @@ $kendo-input-outline-bg: var( --kendo-input-outline-bg, k-color(app-surface) ) !
 
 /// The border color of the outline Input components.
 /// @group input
-$kendo-input-outline-border: var( --kendo-input-outline-border, k-color(border) ) !default;
+$kendo-input-outline-border: var( --kendo-input-outline-border, color-mix( in srgb, k-color(border) 26%, transparent ) ) !default;
 
 /// The text color of the hovered outline Input components.
 /// @group input
@@ -159,7 +163,7 @@ $kendo-input-outline-hover-bg: k-color(app-surface) !default;
 
 /// The border color of the hovered outline Input components.
 /// @group input
-$kendo-input-outline-hover-border: k-color(border-alt) !default;
+$kendo-input-outline-hover-border: color-mix( in srgb, k-color(border) 34%, transparent ) !default;
 
 /// The text color of the focused outline Input components.
 /// @group input
@@ -243,7 +247,11 @@ $kendo-picker-bg: var( --kendo-picker-bg, k-color(app-surface) ) !default;
 
 /// The border color of the solid Picker components.
 /// @group input
-$kendo-picker-border: var( --kendo-picker-border, k-color(border) ) !default;
+$kendo-picker-border: var( --kendo-picker-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
+
+// The color of the Picker button icon.
+/// @group input
+$kendo-picker-button-icon-color: var( --kendo-picker-button-icon-color, k-color(border) ) !default;
 
 /// The text color of the hovered solid Picker components.
 /// @group input
@@ -255,7 +263,7 @@ $kendo-picker-hover-bg: k-color(app-surface) !default;
 
 /// The border color of the hovered solid Picker components.
 /// @group input
-$kendo-picker-hover-border: k-color(border-alt) !default;
+$kendo-picker-hover-border: color-mix(in srgb, k-color(border) 34%, transparent) !default;
 
 /// The text color of the focused solid Picker components.
 /// @group input
@@ -271,15 +279,15 @@ $kendo-picker-focus-border: k-color(primary)  !default;
 
 /// The text color of the disabled solid Picker components.
 /// @group input
-$kendo-picker-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
+$kendo-picker-disabled-text: color-mix(in srgb, k-color(on-app-surface) 30%, transparent) !default;
 
 /// The background color of the disabled solid Picker components.
 /// @group input
-$kendo-picker-disabled-bg: color-mix(in srgb, k-color(on-app-surface) 9%, transparent) !default;
+$kendo-picker-disabled-bg: null !default;
 
 /// The border color of the disabled solid Picker components.
 /// @group input
-$kendo-picker-disabled-border: transparent !default;
+$kendo-picker-disabled-border: color-mix(in srgb, k-color(on-app-surface) 14%, transparent ) !default;
 
 /// The text color of the outline Picker components.
 /// @group input
@@ -291,19 +299,19 @@ $kendo-picker-outline-bg: var( --kendo-picker-outline-bg, none ) !default;
 
 /// The border color of the outline Picker components.
 /// @group input
-$kendo-picker-outline-border: var( --kendo-picker-outline-border, k-color(on-app-surface) ) !default;
+$kendo-picker-outline-border: var( --kendo-picker-outline-border, color-mix( in srgb, k-color(border) 26%, transparent ) ) !default;
 
 /// The text color of the hovered outline Picker components.
 /// @group input
-$kendo-picker-outline-hover-text: k-color(app-surface) !default;
+$kendo-picker-outline-hover-text: k-color(on-app-surface) !default;
 
 /// The background color of the hovered outline Picker components.
 /// @group input
-$kendo-picker-outline-hover-bg: k-color(on-app-surface) !default;
+$kendo-picker-outline-hover-bg: k-color(app-surface) !default;
 
 /// The border color of the hovered outline Picker components.
 /// @group input
-$kendo-picker-outline-hover-border: $kendo-picker-outline-hover-bg!default;
+$kendo-picker-outline-hover-border: color-mix( in srgb, k-color(border) 34%, transparent ) !default;
 
 /// The text color of the focused outline Picker components.
 /// @group input
@@ -319,11 +327,11 @@ $kendo-picker-outline-focus-border: k-color(primary) !default;
 
 /// The text color of the hovered and focused outline Picker components.
 /// @group input
-$kendo-picker-outline-hover-focus-text: k-color(app-surface) !default;
+$kendo-picker-outline-hover-focus-text: k-color(on-app-surface) !default;
 
 /// The background color of the hovered and focused outline Picker components.
 /// @group input
-$kendo-picker-outline-hover-focus-bg: k-color(on-app-surface) !default;
+$kendo-picker-outline-hover-focus-bg: k-color(app-surface) !default;
 
 /// The border color of the hovered and focused outline Picker components.
 /// @group input
@@ -331,7 +339,7 @@ $kendo-picker-outline-hover-focus-border: k-color(primary) !default;
 
 /// The text color of the disabled outline Picker components.
 /// @group input
-$kendo-picker-outline-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
+$kendo-picker-outline-disabled-text: color-mix(in srgb, k-color(on-app-surface) 30%, transparent) !default;
 
 /// The background color of the disabled outline Picker components.
 /// @group input
@@ -359,7 +367,7 @@ $kendo-picker-flat-hover-text: k-color(on-app-surface) !default;
 
 /// The background color of the hovered flat Picker components.
 /// @group input
-$kendo-picker-flat-hover-bg: k-color(base-hover) !default;
+$kendo-picker-flat-hover-bg: var( --kendo-picker-outline-bg, none ) !default;
 
 /// The border color of the hovered flat Picker components.
 /// @group input
@@ -391,7 +399,7 @@ $kendo-picker-flat-hover-focus-border: $kendo-picker-flat-border !default;
 
 /// The text color of the disabled flat Picker components.
 /// @group input
-$kendo-picker-flat-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
+$kendo-picker-flat-disabled-text: color-mix(in srgb, k-color(on-app-surface) 30%, transparent) !default;
 
 /// The background color of the disabled flat Picker components.
 /// @group input
