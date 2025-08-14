@@ -7,25 +7,15 @@
 
     @include kendo-chip--theme-base();
 
-    .k-chip.k-chip-solid-base {
-        border-color: $kendo-chip-border;
-        color: $kendo-chip-text;
-        background-color: $kendo-chip-bg;
-
-        &:hover,
-        &.k-hover {
-            color: $kendo-chip-hover-text;
-            background-color: $kendo-chip-hover-bg;
-            border-color: $kendo-chip-hover-border;
-        }
-
+    .k-chip {
         &:focus,
         &.k-focus {
-            color: $kendo-chip-focus-text;
-            background-color: $kendo-chip-focus-bg;
             border-color: $kendo-chip-focus-border;
+            outline-color: $kendo-chip-focus-border;
         }
+    }
 
+    .k-chip.k-chip-solid-base {
         &.k-chip-outline:focus::after,
         &.k-chip-outline.k-focus::after {
             outline-color: $kendo-chip-focus-outline;
@@ -33,7 +23,6 @@
 
         &.k-selected {
             color: $kendo-chip-selected-text;
-            background-color: $kendo-chip-selected-bg;
             border-color: $kendo-chip-selected-border;
         }
 
@@ -49,25 +38,36 @@
     @each $name, $color in $kendo-chip-theme-colors {
         .k-chip-solid-#{$name} {
             border-color: k-color(#{$name}-subtle);
-            &:hover,
-            &.k-hover {
-                border-color: k-color(#{$name}-subtle-hover);
+
+            &:active,
+            &.k-active {
+                background-color: k-color(#{$name}-subtle-active);
+                border-color: k-color(#{$name}-subtle-active);
             }
-            &:focus,
-            &.k-focus {
-                border-color: k-color(#{$name}-on-subtle);
-                box-shadow: none;
-            }
+
             &.k-selected {
                 border-color: k-color(#{$name}-subtle-active);
+            }
+
+            &:focus,
+            &.k-focus {
+                box-shadow: none;
+            }
+
+            &:hover,
+            &.k-hover {
+                background-color: k-color(#{$name}-subtle-hover);
+                border-color: k-color(#{$name}-subtle-hover);
             }
         }
 
         .k-chip-outline-#{$name} {
+            color: k-color(#{$name}-on-subtle);
+
             &:hover,
             &.k-hover {
-                color: k-color(app-surface);
-                background-color: k-color(#{$name}-on-surface);
+                color: k-color(#{$name}-on-subtle);
+                background-color: color-mix(in srgb, k-color(#{$name}-hover) 3%, transparent);
                 border-color: k-color(#{$name}-on-surface);
             }
 
@@ -76,9 +76,11 @@
                 box-shadow: none;
             }
 
+            &:active,
+            &.k-active,
             &.k-selected {
-                color: k-color(app-surface);
-                background-color: k-color(#{$name}-on-surface);
+                color: k-color(#{$name}-on-subtle);
+                background-color: color-mix(in srgb, k-color(#{$name}-active) 13%, transparent);
                 border-color: k-color(#{$name}-on-surface);
             }
 
@@ -86,6 +88,22 @@
                 color: k-color(#{$name}-on-surface);
                 background-color: transparent;
                 border-color: currentColor;
+            }
+
+            @if ($name == "base") {
+                border-color: $kendo-chip-border;
+
+                &:active,
+                &.k-active,
+                &.k-selected {
+                    background-color: color-mix(in srgb, k-color(on-base) 13%, transparent);
+                    border-color: $kendo-chip-border;
+                }
+
+                &:hover,
+                &.k-hover {
+                    border-color: $kendo-chip-hover-border;
+                }
             }
         }
     }
