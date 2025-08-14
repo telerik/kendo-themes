@@ -187,7 +187,7 @@
                 cursor: auto;
 
                 .k-selected {
-                    z-index: k-z-index("top", 1) !important; // stylelint-disable-line declaration-no-important
+                    z-index: k-z-index("top") !important; // stylelint-disable-line declaration-no-important
                 }
 
                 .k-highlight-editor {
@@ -230,7 +230,7 @@
                     border: solid 2px transparent;
 
                     &.k-selected.k-draggable {
-                        cursor: move;;
+                        cursor: move;
                     }
 
                     &.k-selected .k-internal {
@@ -292,7 +292,7 @@
         flex: 0 0 auto;
         justify-content: flex-start;
         align-items: center;
-        z-index: k-z-index("handle");
+        z-index: k-z-index("modal");
         cursor: default;
 
         .k-search-dialog-draghandle {

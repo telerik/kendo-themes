@@ -338,7 +338,7 @@
             right: calc( -1 * $kendo-button-border-width );
             top: calc( -1 * $kendo-button-border-width );
             bottom: calc( -1 * $kendo-button-border-width );
-            z-index: 0;
+            z-index: k-z-index("base");
             transition: opacity .2s ease-in-out;
         }
     }

@@ -64,7 +64,7 @@
 
         .k-grid-toolbar {
             position: sticky;
-            z-index: k-z-index("header", 1);
+            z-index: k-z-index("banner", 1);
             top: 0;
             left: 0;
         }
@@ -75,7 +75,7 @@
         }
 
         .k-grid-header .k-table-th.k-grid-header-sticky {
-            z-index: k-z-index("header", 1);
+            z-index: k-z-index("banner", 1);
         }
 
         thead.k-grid-header {

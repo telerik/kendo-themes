@@ -11,7 +11,7 @@
         display: inline-flex;
         flex-flow: column-reverse wrap;
         position: fixed;
-        z-index: k-z-index("notification");
+        z-index: k-z-index("popup");
         gap: $kendo-notification-group-gap 0;
     }
 

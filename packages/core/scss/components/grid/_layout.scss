@@ -807,7 +807,7 @@
     .k-grid .k-grid-row-sticky,
     .k-grid .k-grid-footer-sticky {
         position: sticky;
-        z-index: k-z-index("header");
+        z-index: k-z-index("banner");
 
         &.k-edit-cell {
             overflow: visible;

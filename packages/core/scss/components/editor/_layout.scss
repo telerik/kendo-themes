@@ -75,7 +75,7 @@
         box-sizing: border-box;
         position: absolute;
         visibility: visible;
-        z-index: k-z-index("navigation", -1);
+        z-index: k-z-index("handle");
 
         &.northwest {
             top: 0;
@@ -554,7 +554,7 @@
             height: 5px;
             border-width: 1px;
             border-style: solid;
-            z-index: k-z-index("navigation", -1);
+            z-index: k-z-index("handle");
 
             .k-element-resize-handle {
                 width: 100%;

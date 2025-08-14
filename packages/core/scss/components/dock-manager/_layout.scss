@@ -43,7 +43,6 @@
         display: flex;
         flex-grow: 1;
         overflow: hidden;
-        z-index: k-z-index("base", 2);
     }
 
     // Splitter
@@ -157,7 +156,7 @@
         border-width: $kendo-dock-manager-dock-preview-border-width;
         border-style: $kendo-dock-manager-dock-preview-border-style;
         border-radius: $kendo-dock-manager-dock-preview-border-radius;
-        z-index: k-z-index("handle");
+        z-index: k-z-index("top");
     }
 
     .k-dock-manager-window:has(.k-pane) .k-window-content {
@@ -198,6 +197,7 @@
         pointer-events: all;
         outline-width: $kendo-dock-indicator-outline-width;
         outline-style: $kendo-dock-indicator-outline-style;
+        z-index: k-z-index("top", 1);
 
         &.k-dock-indicator-middle {
             filter: none;
