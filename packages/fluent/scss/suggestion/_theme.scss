@@ -8,9 +8,9 @@
     .k-suggestion {
         &:focus,
         &.k-focus {
-            outline: 1px solid k-color(surface);
-            outline-offset: -2px;
-            box-shadow: inset 0 0 $kendo-suggestion-focus-shadow-blur $kendo-suggestion-focus-shadow-spread $kendo-suggestion-focus-shadow-color;
+            outline-color: $kendo-suggestion-focus-shadow-color;
+            box-shadow: inset 0 0 $kendo-suggestion-focus-shadow-blur $kendo-suggestion-focus-shadow-spread $kendo-suggestion-focus-shadow-color,
+                        inset 0 0 0 calc( #{$kendo-suggestion-border-width} * 2 ) k-color(surface);
         }
     }
 }
