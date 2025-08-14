@@ -10,6 +10,28 @@
     .k-slider {
         color: $kendo-slider-text;
 
+        .k-slider-thumb {
+
+            &::after {
+                background: k-color(primary);
+            }
+
+            &:hover::after,
+            &.k-hover::after {
+                background: k-color(primary-hover);
+            }
+
+            &:active::after,
+            &.k-active::after,
+            &.k-selected::after {
+                background: k-color(primary-active);
+            }
+        }
+
+        .k-label {
+            color: k-color(subtle);
+        }
+
         &.k-disabled {
             color: $kendo-slider-disabled-text;
 
@@ -23,8 +45,13 @@
 
             .k-slider-thumb {
                 border-color: $kendo-slider-thumb-disabled-border;
+
+                &::after {
+                    background: color-mix(in srgb, k-color(on-app-surface) 30%, transparent);
+                }
             }
         }
+
     }
 
 
