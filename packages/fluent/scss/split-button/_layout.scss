@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "./_variables.scss" as *;
 @use "../button/_variables.scss" as *;
+@use "../core/z-index/index.import.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/split-button/_layout.scss" as *;
 
 @mixin kendo-split-button--layout() {
@@ -25,7 +26,7 @@
                 position: absolute;
                 top: calc( ( 100% - #{$kendo-split-button-arrow-delimiter-size} ) / 2 );
                 background: $kendo-split-button-arrow-delimiter-bg;
-                z-index: 2;
+                z-index: k-z-index("base", 2);
             }
         }
 

@@ -13,20 +13,6 @@
     .k-colorpalette-tile {
         outline-width: $kendo-color-palette-tile-outline-width;
         outline-style: $kendo-color-palette-tile-outline-style;
-
-        &:hover,
-        &.k-hover {
-            position: relative;
-            z-index: 3;
-        }
-
-        &:focus,
-        &.k-focus,
-        &.k-selected,
-        &.k-selected:hover {
-            position: relative;
-            z-index: 2;
-        }
     }
 
     @each $size, $size-props in $kendo-color-palette-sizes {

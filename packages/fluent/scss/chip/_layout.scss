@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "../core/z-index/index.import.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/chip/_layout.scss" as *;
 
 @mixin kendo-chip--layout() {
@@ -26,7 +27,7 @@
                 inset: $kendo-chip-focus-offset;
                 outline-width: $kendo-chip-focus-outline-width;
                 outline-style: $kendo-chip-focus-outline-style;
-                z-index: 1;
+                z-index: k-z-index("base", 1);
         }
     }
 
