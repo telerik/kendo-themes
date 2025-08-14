@@ -43,7 +43,7 @@
         display: flex;
         flex-grow: 1;
         overflow: hidden;
-        z-index: k-zindex("elevated");
+        z-index: k-z-index("base", 2);
     }
 
     // Splitter
@@ -128,7 +128,7 @@
         display: flex;
         height: 100%;
         border-color: inherit;
-        z-index: k-zindex("floating");
+        z-index: k-z-index("floating");
 
         .k-pane {
             display: inline-flex;
@@ -157,7 +157,7 @@
         border-width: $kendo-dock-manager-dock-preview-border-width;
         border-style: $kendo-dock-manager-dock-preview-border-style;
         border-radius: $kendo-dock-manager-dock-preview-border-radius;
-        z-index: k-zindex("handle");
+        z-index: k-z-index("handle");
     }
 
     .k-dock-manager-window:has(.k-pane) .k-window-content {
@@ -176,7 +176,7 @@
         flex-direction: column;
         align-items: center;
         position: absolute;
-        z-index: k-zindex-above("overlay");
+        z-index: k-z-index("overlay", 1);
         pointer-events: none;
     }
 

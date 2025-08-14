@@ -64,18 +64,18 @@
 
         .k-grid-toolbar {
             position: sticky;
-            z-index: k-zindex-above("header");
+            z-index: k-z-index("header", 1);
             top: 0;
             left: 0;
         }
 
         .k-grid-header .k-table-th {
             position: sticky;
-            z-index: k-zindex("elevated");
+            z-index: k-z-index("base", 2);
         }
 
         .k-grid-header .k-table-th.k-grid-header-sticky {
-            z-index: k-zindex-above("header");
+            z-index: k-z-index("header", 1);
         }
 
         thead.k-grid-header {

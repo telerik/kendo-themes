@@ -53,7 +53,7 @@
             padding-inline: $kendo-map-attribution-padding-x;
             border-width: 0;
             font-size: $kendo-map-attribution-font-size;
-            z-index: k-zindex("floating");
+            z-index: k-z-index("floating");
         }
 
 

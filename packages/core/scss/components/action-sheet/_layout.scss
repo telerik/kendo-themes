@@ -13,14 +13,14 @@
         position: fixed;
         top: 0;
         left: 0;
-        z-index: k-zindex-below("overlay");
+        z-index: k-z-index("overlay");
         overflow: hidden;
         transform: translateZ(0);
 
         // Overlay
         > .k-overlay {
             position: absolute;
-            z-index: k-zindex("elevated");
+            z-index: k-z-index("base", 2);
         }
 
         // Nested animation container
@@ -30,7 +30,7 @@
             border-radius: 0;
             overflow: hidden;
             position: absolute;
-            z-index: k-zindex("elevated");
+            z-index: k-z-index("base", 2);
             top: 0;
             left: 0;
             pointer-events: none;
@@ -43,7 +43,7 @@
         // No animation container
         > .k-actionsheet {
             position: absolute;
-            z-index: k-zindex("elevated");
+            z-index: k-z-index("base", 2);
         }
 
         // Enable mouse events for action sheet

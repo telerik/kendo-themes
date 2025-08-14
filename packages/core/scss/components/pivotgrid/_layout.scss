@@ -181,7 +181,7 @@
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        z-index: k-zindex("elevated");
+        z-index: k-z-index("base", 2);
     }
 
     // Configurator Button
@@ -204,7 +204,7 @@
     .k-pivotgrid-configurator-overlay {
         position: absolute;
         overflow: hidden;
-        z-index: k-zindex("elevated");
+        z-index: k-z-index("base", 2);
     }
 
     // Panel Content

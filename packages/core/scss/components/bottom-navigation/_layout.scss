@@ -112,7 +112,7 @@
     // Positioning
     .k-bottom-nav.k-pos-fixed {
         bottom: 0;
-        z-index: k-zindex("floating");
+        z-index: k-z-index("floating");
     }
 
 }

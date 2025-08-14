@@ -79,7 +79,7 @@
         .k-drawer {
             max-width: 80vw; // limit width
             position: fixed;
-            z-index: k-zindex("drawer");
+            z-index: k-z-index("drawer");
             border: 0;
         }
 

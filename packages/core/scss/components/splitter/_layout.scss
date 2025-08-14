@@ -88,7 +88,7 @@
         width: $kendo-splitter-drag-handle-thickness;
         height: $kendo-splitter-drag-handle-length;
         position: static;
-        z-index: k-zindex("handle");
+        z-index: k-z-index("handle");
     }
 
     .k-splitbar .k-resize-handle {
@@ -124,7 +124,7 @@
         width: $kendo-splitter-drag-handle-length;
         height: $kendo-splitter-drag-handle-thickness;
         position: static;
-        z-index: k-zindex("handle");
+        z-index: k-z-index("handle");
     }
 
     .k-pane > {

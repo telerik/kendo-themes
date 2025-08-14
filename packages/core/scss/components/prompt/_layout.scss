@@ -75,7 +75,7 @@
 
     // Stop FAB
     .k-prompt-stop-fab {
-        z-index: k-zindex("elevated");
+        z-index: k-z-index("base", 2);
     }
 }
 

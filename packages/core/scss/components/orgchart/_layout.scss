@@ -108,7 +108,7 @@
 
     // Buttons
     .k-orgchart-button {
-        z-index: k-zindex("elevated");
+        z-index: k-z-index("base", 2);
     }
 }
 

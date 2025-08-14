@@ -16,7 +16,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: k-zindex("modal");
+        z-index: k-z-index("modal");
 
         .k-dialog {
             position: relative;

@@ -26,7 +26,7 @@
         border-bottom-width: $kendo-file-manager-toolbar-border-width;
         border-color: inherit;
         flex-shrink: 0;
-        z-index: k-zindex("elevated");
+        z-index: k-z-index("base", 2);
     }
 
 

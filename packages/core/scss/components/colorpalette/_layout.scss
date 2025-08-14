@@ -44,7 +44,7 @@
         &:hover,
         &.k-hover {
             position: relative;
-            z-index: k-zindex("interactive");
+            z-index: k-z-index("base", 4);
         }
 
         &:focus,
@@ -52,7 +52,7 @@
         &.k-selected,
         &.k-selected:hover {
             position: relative;
-            z-index: k-zindex-above("elevated");
+            z-index: k-z-index("base", 3);
         }
     }
 

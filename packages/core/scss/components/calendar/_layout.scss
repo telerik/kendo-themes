@@ -48,7 +48,7 @@
         outline: 0;
         display: table;
         position: relative;
-        z-index: k-zindex-above("base");
+        z-index: k-z-index("base", 1);
     }
     .k-calendar-caption,
     .k-calendar-caption.k-calendar-th,
@@ -129,7 +129,7 @@
         gap: $kendo-calendar-nav-gap;
         align-items: center;
         position: relative;
-        z-index: k-zindex("elevated");
+        z-index: k-z-index("base", 2);
     }
 
 
@@ -175,7 +175,7 @@
         box-sizing: content-box;
         gap: $kendo-calendar-view-gap;
         position: relative;
-        z-index: k-zindex-above("base");
+        z-index: k-z-index("base", 1);
         overflow: hidden;
 
         .k-today {
@@ -273,7 +273,7 @@
     // scoped in calendar until it is used elsewhere
     .k-calendar .k-scrollable-placeholder {
         position: absolute;
-        z-index: k-zindex("bottom");
+        z-index: k-z-index("bottom");
         width: 1px;
         top: 0;
         right: 0;
@@ -359,7 +359,7 @@
                 content: "\200b";
                 height: 0;
                 line-height: 0;
-                z-index: k-zindex-above("base");
+                z-index: k-z-index("base", 1);
                 width: 150%;
                 left: -25%;
                 box-shadow: 0 0 $kendo-calendar-cell-size calc( #{$kendo-calendar-cell-size} / 2 ) $kendo-calendar-bg;
@@ -389,7 +389,7 @@
         display: block;
         overflow: hidden;
         position: relative;
-        z-index: k-zindex-above("base");
+        z-index: k-z-index("base", 1);
 
         &::before,
         &::after {
@@ -398,7 +398,7 @@
             content: "\200b";
             height: 0;
             line-height: 0;
-            z-index: k-zindex-above("base");
+            z-index: k-z-index("base", 1);
             width: 200%;
             left: -50%;
             $shadow-size: calc( 3 * #{$kendo-calendar-navigation-item-height} );

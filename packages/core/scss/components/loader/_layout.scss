@@ -367,7 +367,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: k-zindex("loading");
+        z-index: k-z-index("loading");
 
         .k-loader {
             padding: 0;
@@ -394,7 +394,7 @@
         display: flex;
         align-items: center;
         position: relative;
-        z-index: k-zindex("elevated");
+        z-index: k-z-index("base", 2);
     }
 
     .k-loader-container-panel {
@@ -490,7 +490,7 @@
         color: $kendo-loading-text;
     }
     .k-loading-image {
-        z-index: k-zindex("elevated");
+        z-index: k-z-index("base", 2);
         color: $kendo-loading-text;
     }
     .k-loading-color {

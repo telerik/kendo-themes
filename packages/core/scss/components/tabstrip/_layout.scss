@@ -209,7 +209,7 @@
             &::after {
                 content: '';
                 position: absolute;
-                z-index: k-zindex-above("elevated");
+                z-index: k-z-index("base", 3);
             }
         }
 
@@ -412,7 +412,7 @@
                 border-style: solid;
                 display: none;
                 position: absolute;
-                z-index: k-zindex("elevated");
+                z-index: k-z-index("base", 2);
                 top: 0;
                 right: 0;
                 bottom: 0;
@@ -424,7 +424,7 @@
             }
 
             .k-item > .k-link {
-                z-index: k-zindex-above("base");
+                z-index: k-z-index("base", 1);
             }
         }
 

@@ -191,7 +191,7 @@
                 justify-content: center;
                 position: absolute;
                 inset-inline-end: $kendo-grid-header-menu-icon-spacing;
-                z-index: k-zindex("elevated");
+                z-index: k-z-index("base", 2);
 
                 &:hover {
                     cursor: pointer;
@@ -683,7 +683,7 @@
         height: 25px;
         cursor: col-resize;
         position: absolute;
-        z-index: k-zindex("handle");
+        z-index: k-z-index("handle");
     }
 
 
@@ -722,7 +722,7 @@
         .k-grid-table {
             position: relative;
             float: left;
-            z-index: k-zindex("elevated");
+            z-index: k-z-index("base", 2);
         }
 
         > .k-height-container {
@@ -807,11 +807,11 @@
     .k-grid .k-grid-row-sticky,
     .k-grid .k-grid-footer-sticky {
         position: sticky;
-        z-index: k-zindex("header");
+        z-index: k-z-index("header");
 
         &.k-edit-cell {
             overflow: visible;
-            z-index: k-zindex("interactive");
+            z-index: k-z-index("base", 4);
         }
     }
 
@@ -823,7 +823,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: k-zindex("bottom");
+        z-index: k-z-index("bottom");
     }
 
     kendo-grid {
@@ -840,14 +840,14 @@
             position: sticky;
             top: inherit;
             bottom: inherit;
-            z-index: k-zindex("elevated");
+            z-index: k-z-index("base", 2);
         }
 
         .k-grid-row-sticky td.k-grid-content-sticky,
         .k-grid-row-sticky.k-table-alt-row td.k-grid-content-sticky,
         .k-grid-row-sticky .k-table-td.k-grid-content-sticky,
         .k-grid-row-sticky.k-table-alt-row .k-table-td.k-grid-content-sticky {
-            z-index: k-zindex-above("elevated");
+            z-index: k-z-index("base", 3);
         }
 
         // Locked and sticky
@@ -858,12 +858,12 @@
 
         .k-grid-header .k-grid-column-menu,
         .k-grid-header .k-grid-header-menu {
-            z-index: k-zindex-above("base");
+            z-index: k-z-index("base", 1);
         }
     }
 
     .k-grid-content-sticky.k-grid-row-sticky {
-        z-index: k-zindex-above("elevated");
+        z-index: k-z-index("base", 3);
     }
 
     .k-grid .k-table .k-grid-header-sticky,
@@ -1071,7 +1071,7 @@
                 position: absolute;
                 background: none;
                 cursor: row-resize;
-                z-index: k-zindex-above("base");
+                z-index: k-z-index("base", 1);
             }
         }
 
@@ -1202,7 +1202,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        z-index: k-zindex("top");
+        z-index: k-z-index("top");
 
         > .k-i-loading {
             position: absolute;

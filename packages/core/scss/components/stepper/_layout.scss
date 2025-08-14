@@ -43,7 +43,7 @@
             list-style: none;
             display: flex;
             position: relative;
-            z-index: k-zindex-above("base");
+            z-index: k-z-index("base", 1);
         }
 
 
@@ -75,7 +75,7 @@
             justify-content: center;
             flex: none;
             position: relative;
-            z-index: k-zindex-above("base");
+            z-index: k-z-index("base", 1);
             overflow: visible;
             transition-property: color, background-color, border-color;
             transition-duration: .4s;
@@ -89,7 +89,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                z-index: k-zindex("bottom");
+                z-index: k-z-index("bottom");
             }
 
             &::after {
@@ -105,7 +105,7 @@
                 right: calc( -1 * #{$kendo-stepper-indicator-focus-calc-offset} );
                 bottom: calc( -1 * #{$kendo-stepper-indicator-focus-calc-offset} );
                 left: calc( -1 * #{$kendo-stepper-indicator-focus-calc-offset} );
-                z-index: k-zindex("elevated");
+                z-index: k-z-index("base", 2);
             }
         }
 
@@ -124,7 +124,7 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            z-index: k-zindex-above("base");
+            z-index: k-z-index("base", 1);
         }
         .k-step-label:only-child {
             @include border-radius( $kendo-stepper-label-border-radius );
@@ -134,7 +134,7 @@
         }
         .k-step-label .k-step-text {
             max-width: calc(10em - (#{$kendo-icon-size} + #{$kendo-icon-spacing}));
-            flex-grow: k-zindex-above("base");
+            flex-grow: k-z-index("base", 1);
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -173,7 +173,7 @@
         // Progressbar
         .k-progressbar {
             pointer-events: none;
-            z-index: k-zindex("base");
+            z-index: k-z-index("base");
             overflow: visible;
         }
 

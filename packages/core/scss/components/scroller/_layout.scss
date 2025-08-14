@@ -13,7 +13,7 @@
     }
     .km-scroll-header {
         position: absolute;
-        z-index: k-zindex-above("floating");
+        z-index: k-z-index("floating", 1);
         width: 100%;
         top: 0;
         left: 0;
@@ -58,7 +58,7 @@
     .km-touch-scrollbar {
         position: absolute;
         visibility: hidden;
-        z-index: k-zindex("scroll");
+        z-index: k-z-index("scroll");
         height: .4em;
         width: .4em;
         opacity: 0;

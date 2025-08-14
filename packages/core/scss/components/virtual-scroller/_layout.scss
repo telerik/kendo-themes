@@ -15,7 +15,7 @@
     // Virtual scroller wrap
     .k-virtual-scroller-wrap {
         position: relative;
-        z-index: k-zindex("elevated");
+        z-index: k-z-index("base", 2);
     }
 
 
@@ -31,7 +31,7 @@
     // Virtual scroller size
     .k-virtual-scroller-size {
         position: relative;
-        z-index: k-zindex("base");
+        z-index: k-z-index("base");
     }
 
 }

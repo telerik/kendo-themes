@@ -173,7 +173,7 @@
         > .k-button:active,
         > .k-button.k-active,
         > .k-button.k-selected {
-            z-index: k-zindex("elevated");
+            z-index: k-z-index("base", 2);
         }
 
         .k-button:not(:first-child):not(:last-child) {
@@ -273,7 +273,7 @@
         right: calc( -1 * $kendo-button-border-width );
         top: calc( -1 * $kendo-button-border-width );
         bottom: calc( -1 * $kendo-button-border-width );
-        z-index: 0;
+        z-index: k-z-index("base");
         transition: opacity .2s ease-in-out;
     }
 
