@@ -4,7 +4,4 @@
 @mixin kendo-time-picker--layout() {
     @include kendo-time-picker--layout-base();
 
-    .k-time-list-wrapper .k-title {
-        padding-block-end: k-spacing(3);
-    }
 }

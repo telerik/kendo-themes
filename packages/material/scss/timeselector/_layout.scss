@@ -12,13 +12,6 @@
         .k-title {
             font-weight: var( --kendo-font-weight, normal );
         }
-
-        &.k-focus {
-            &::before,
-            &::after {
-                height: calc( 50% - (calc( #{$kendo-time-list-title-font-size} * #{$kendo-time-list-title-line-height})) / 2);
-            }
-        }
     }
 
     // Time selector header
