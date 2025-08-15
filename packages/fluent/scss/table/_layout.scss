@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "../core/z-index/index.import.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/table/_layout.scss" as *;
 
 @mixin kendo-table--layout() {
@@ -14,7 +15,7 @@
     .k-table-group-header {
         flex: none;
         position: relative;
-        z-index: 1;
+        z-index: k-z-index("base", 1);
 
         .k-table-th {
             display: flex;

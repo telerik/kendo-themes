@@ -1,5 +1,6 @@
 @use "../../typography/index.import.scss" as *;
 @use "./variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-dock-manager--layout-base() {
 
@@ -126,7 +127,7 @@
         display: flex;
         height: 100%;
         border-color: inherit;
-        z-index: 20;
+        z-index: k-z-index("floating");
 
         .k-pane {
             display: inline-flex;
@@ -155,7 +156,7 @@
         border-width: $kendo-dock-manager-dock-preview-border-width;
         border-style: $kendo-dock-manager-dock-preview-border-style;
         border-radius: $kendo-dock-manager-dock-preview-border-radius;
-        z-index: 10;
+        z-index: k-z-index("top");
     }
 
     .k-dock-manager-window:has(.k-pane) .k-window-content {
@@ -174,7 +175,7 @@
         flex-direction: column;
         align-items: center;
         position: absolute;
-        z-index: 10001;
+        z-index: k-z-index("overlay", 1);
         pointer-events: none;
     }
 
@@ -196,6 +197,7 @@
         pointer-events: all;
         outline-width: $kendo-dock-indicator-outline-width;
         outline-style: $kendo-dock-indicator-outline-style;
+        z-index: k-z-index("top", 1);
 
         &.k-dock-indicator-middle {
             filter: none;

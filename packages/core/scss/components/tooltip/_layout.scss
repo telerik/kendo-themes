@@ -2,6 +2,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "./_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-tooltip--layout-base() {
 
@@ -22,7 +23,7 @@
         flex-flow: row nowrap;
         align-items: flex-start;
         position: absolute;
-        z-index: 12000;
+        z-index: k-z-index("popup");
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 

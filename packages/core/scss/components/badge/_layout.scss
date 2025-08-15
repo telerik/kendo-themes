@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "../../color-system/_functions.import.scss" as *;
 @use "./_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-badge--layout-base() {
 
@@ -90,7 +91,7 @@
 
         .k-badge-#{$placement} {
             position: absolute;
-            z-index: 9999;
+            z-index: k-z-index("badge");
 
             &.k-top-start {
                 @if $translate {

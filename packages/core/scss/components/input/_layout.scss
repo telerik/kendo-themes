@@ -4,6 +4,7 @@
 @use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-input--layout-base() {
 
@@ -99,7 +100,7 @@
         font: inherit;
         flex: 1;
         position: relative;
-        z-index: 1;
+        z-index: k-z-index("base", 1);
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-appearance: none;
@@ -246,7 +247,7 @@
         > .k-input:active,
         > .k-input.k-active,
         > .k-input.k-selected {
-            z-index: 2;
+            z-index: k-z-index("base", 2);
         }
 
         .k-input:not(:first-child):not(:last-child) {

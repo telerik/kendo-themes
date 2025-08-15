@@ -6,6 +6,7 @@
 @use "./_variables.scss" as *;
 @use "../button/_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-toolbar--layout-base() {
 
@@ -54,7 +55,7 @@
                 height: 100%;
                 aspect-ratio: 1;
                 position: absolute;
-                z-index: 3;
+                z-index: k-z-index("base", 3);
             }
 
             &::before {

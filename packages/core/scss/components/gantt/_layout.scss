@@ -8,6 +8,7 @@
 @use "../toolbar/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-gantt--layout-base() {
 
@@ -85,10 +86,10 @@
             }
             .k-grid-header th,
             .k-grid-content-sticky {
-                z-index: 4;
+                z-index: k-z-index("base", 4);
             }
             .k-grid-header th.k-grid-header-sticky {
-                z-index: 5;
+                z-index: k-z-index("base", 5);
             }
             .k-grid-header tr:first-child th:last-child,
             tbody td:last-child {
@@ -113,7 +114,7 @@
                 display: inline-flex;
                 flex-flow: row nowrap;
                 white-space: nowrap;
-                z-index: 3;
+                z-index: k-z-index("base", 3);
 
                 &:hover .k-task-start,
                 &:hover .k-task-end {
@@ -190,7 +191,7 @@
             left: 0;
             overflow: visible;
             pointer-events: none;
-            z-index: 2;
+            z-index: k-z-index("base", 1);
 
             polyline {
                 stroke-width: $kendo-gantt-line-size;
@@ -202,7 +203,7 @@
     .k-gantt-header {
         border-width: 0 0 $kendo-toolbar-border-width;
         flex-shrink: 0;
-        z-index: 6;
+        z-index: k-z-index("base", 1);
     }
     .k-gantt-footer {
         border-width: $kendo-toolbar-border-width 0 0;
@@ -345,7 +346,7 @@
     .k-gantt-columns {
         border-color: inherit;
         position: absolute;
-        z-index: 0;
+        z-index: k-z-index("base");
         top: 0;
         left: 0;
     }
@@ -385,7 +386,7 @@
         position: absolute;
     }
     .k-gantt-line.k-selected {
-        z-index: 3;
+        z-index: k-z-index("base", 3);
     }
 
     .k-gantt-line-h {
@@ -397,7 +398,7 @@
     }
 
     .k-gantt-dependency-hint {
-        z-index: 4;
+        z-index: k-z-index("base", 4);
     }
 
 
@@ -424,7 +425,7 @@
         flex-direction: row;
         align-items: center;
         position: relative;
-        z-index: 2;
+        z-index: k-z-index("base", 2);
     }
     .k-task-wrap.k-drag-hint {
         position: absolute;
@@ -533,7 +534,7 @@
     .k-task-summary-complete {
         height: 10px;
         position: relative;
-        z-index: 2;
+        z-index: k-z-index("base", 2);
     }
     .k-task-summary-progress {
         height: 15px;
@@ -552,7 +553,7 @@
 
         .k-resize-handle {
             opacity: .5;
-            z-index: 2;
+            z-index: k-z-index("handle");
             visibility: hidden;
             cursor: ew-resize;
         }
@@ -590,14 +591,14 @@
         @include border-radius( k-border-radius(md) );
         width: 20%;
         position: absolute;
-        z-index: 1;
+        z-index: k-z-index("base", 1);
         top: 0;
         bottom: 0;
         left: 0;
     }
     .k-task-content {
         position: relative;
-        z-index: 2;
+        z-index: k-z-index("base", 2);
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -618,7 +619,7 @@
         flex-direction: row;
         align-items: center;
         visibility: hidden;
-        z-index: 1;
+        z-index: k-z-index("base", 1);
     }
     .k-task-actions > .k-link {
         display: inline-flex;
@@ -627,7 +628,7 @@
     .k-resources-wrap {
         position: absolute;
         display: inline-block;
-        z-index: 2;
+        z-index: k-z-index("base", 2);
         margin-left: 20px;
         margin-top: -2px;
         overflow: hidden;
@@ -740,7 +741,7 @@
 
         .k-resize-handle {
             right: 0;
-            z-index: 2;
+            z-index: k-z-index("handle");
             visibility: hidden;
             margin-right: $kendo-gantt-planned-offset-resize-handler-margin-x;
         }

@@ -1,5 +1,6 @@
 @use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
+@use "../core/z-index/index.import.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/input/_layout.scss" as *;
 
 
@@ -74,7 +75,7 @@
             border-radius: inherit;
             display: block;
             position: absolute;
-            z-index: 2;
+            z-index: k-z-index("base", 2);
             inset: -1px;
             opacity: 0;
             transform: scaleX(0);
