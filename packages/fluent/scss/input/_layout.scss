@@ -161,12 +161,6 @@
                 margin: 0;
             }
 
-            .k-input-button {
-                width: if( $kendo-use-input-button-width, var( --kendo-input-button-width, #{$_button-width} ), auto );
-                padding-inline: $_button-padding-x;
-                padding-block: $_button-padding-y;
-            }
-
             .k-input-spinner {
                 width: if( $kendo-use-input-spinner-width, var( --kendo-input-spinner-width, #{$_button-width} ), auto );
 

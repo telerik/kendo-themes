@@ -9,10 +9,6 @@
 
     .k-input {
 
-        .k-input-button {
-            color: $kendo-input-button-icon-color;
-        }
-
         &:focus,
         &.k-focus,
         &:focus-within {
@@ -101,10 +97,6 @@
     }
 
     .k-picker {
-
-        .k-input-button {
-            color: $kendo-input-button-icon-color;
-        }
 
         &:focus,
         &.k-focus,

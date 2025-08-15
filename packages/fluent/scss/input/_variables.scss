@@ -101,10 +101,6 @@ $kendo-input-bg: var( --kendo-input-bg, k-color(surface-alt) ) !default;
 /// @group input
 $kendo-input-border: var( --kendo-input-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
 
-// The color of the Input button icon.
-/// @group input
-$kendo-input-button-icon-color: var( --kendo-input-button-icon-color, k-color(border) ) !default;
-
 /// The text color of the hovered solid Input components.
 /// @group input
 $kendo-input-hover-text: k-color(on-app-surface) !default;
@@ -243,15 +239,11 @@ $kendo-picker-text: var( --kendo-picker-text, k-color(on-app-surface) ) !default
 
 /// The background color of the solid Picker components.
 /// @group input
-$kendo-picker-bg: var( --kendo-picker-bg, k-color(app-surface) ) !default;
+$kendo-picker-bg: var( --kendo-picker-bg, k-color(surface-alt) ) !default;
 
 /// The border color of the solid Picker components.
 /// @group input
 $kendo-picker-border: var( --kendo-picker-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
-
-// The color of the Picker button icon.
-/// @group input
-$kendo-picker-button-icon-color: var( --kendo-picker-button-icon-color, k-color(border) ) !default;
 
 /// The text color of the hovered solid Picker components.
 /// @group input
@@ -259,7 +251,7 @@ $kendo-picker-hover-text: k-color(on-app-surface) !default;
 
 /// The background color of hovered the solid Picker components.
 /// @group input
-$kendo-picker-hover-bg: k-color(app-surface) !default;
+$kendo-picker-hover-bg: k-color(surface-alt) !default;
 
 /// The border color of the hovered solid Picker components.
 /// @group input
@@ -271,7 +263,7 @@ $kendo-picker-focus-text: k-color(on-app-surface) !default;
 
 /// The background color of the focused solid Picker components.
 /// @group input
-$kendo-picker-focus-bg: k-color(app-surface) !default;
+$kendo-picker-focus-bg: k-color(surface-alt) !default;
 
 /// The border color of the focused solid Picker components.
 /// @group input
@@ -504,7 +496,7 @@ $kendo-input-clear-value-hover-text: inherit !default;
 /// @group input
 $kendo-input-clear-value-hover-opacity: 1 !default;
 
-$kendo-use-input-button-width: true !default;
+$kendo-use-input-button-width: false !default;
 $kendo-use-input-spinner-width: true !default;
 $kendo-use-input-spinner-icon-offset: false !default;
 
