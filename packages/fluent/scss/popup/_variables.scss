@@ -36,10 +36,10 @@ $kendo-popup-bg: var( --kendo-popup-bg, #{k-color(surface-alt)} ) !default;
 $kendo-popup-text: var( --kendo-popup-text, #{k-color(on-app-surface)} ) !default;
 /// Border color of the popup.
 /// @group popup
-$kendo-popup-border: var( --kendo-popup-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
+$kendo-popup-border: var( --kendo-popup-border, transparent ) !default;
 /// Box shadow around the popup.
 /// @group popup
-$kendo-popup-shadow: var( --kendo-popup-shadow, var( --kendo-box-shadow-depth-4, none ) ) !default;
+$kendo-popup-shadow: var( --kendo-popup-shadow, var( --kendo-box-shadow-depth-5, none ) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/popup/_variables.scss" with (
     $kendo-popup-border-width: $kendo-popup-border-width,
