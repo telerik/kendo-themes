@@ -7,9 +7,9 @@
 
     @each $name, $color in $colors {
         $_theme: map.merge(( $name: (
-            color: k-color(on-#{$name}),
+            color: k-color(#{$name}-on-subtle),
             background-color: $color,
-            border: $color,
+            border: k-color(#{$name}-emphasis),
         )), $_theme );
     }
 
