@@ -6,6 +6,13 @@
 @mixin kendo-window--theme() {
     @include kendo-window--theme-base();
 
+    .k-window{
+        &:focus,
+        &.k-focus{
+            outline-color: k-color(on-base);
+        }
+    }
+
     // Titlebar
     .k-window-titlebar {
         color: inherit;

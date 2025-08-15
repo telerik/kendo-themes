@@ -1,31 +1,7 @@
 
 @use "../core/_index.scss" as *;
-@use "../window/_variables.scss" as *;
-@use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/dialog/_layout.scss" as *;
 
 @mixin kendo-dialog--layout() {
-
     @include kendo-dialog--layout-base();
-
-    .k-dialog {
-        border-width: $kendo-dialog-border-width 0 0;
-    }
-
-    // Title bar
-    .k-dialog-titlebar {
-        border-width: $kendo-dialog-titlebar-border-width 0 0;
-        padding-inline: $kendo-dialog-titlebar-padding-x;
-        padding-block: $kendo-dialog-titlebar-padding-y;
-    }
-
-    .k-dialog-content {
-        padding-inline: $kendo-dialog-inner-padding-x;
-        padding-block: $kendo-dialog-inner-padding-y;
-    }
-
-    .k-dialog-content + .k-dialog-actions {
-        padding-block-start: 0;
-    }
-
 }

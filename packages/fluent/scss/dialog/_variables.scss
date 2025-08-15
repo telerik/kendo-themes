@@ -1,10 +1,6 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
-/// The width of the border around the Dialog.
-/// @group dialog
-$kendo-dialog-border-width: var( --kendo-dialog-border-width, 0 ) !default;
-
 /// The background color of the Dialog titlebar.
 /// @group dialog
 $kendo-dialog-titlebar-bg: var( --kendo-dialog-titlebar-bg, k-color(surface-alt) ) !default;
@@ -13,23 +9,7 @@ $kendo-dialog-titlebar-bg: var( --kendo-dialog-titlebar-bg, k-color(surface-alt)
 $kendo-dialog-titlebar-text: var( --kendo-dialog-titlebar-text, k-color(on-app-surface) ) !default;
 /// The border color of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-border: var( --kendo-dialog-titlebar-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
-/// The width of the border around the Dialog titlebar.
-/// @group dialog
-$kendo-dialog-titlebar-border-width: var( --kendo-dialog-titlebar-border-width, 0 ) !default;
-/// The horizontal padding of the Dialog titlebar.
-/// @group dialog
-$kendo-dialog-titlebar-padding-x: var( --kendo-dialog-titlebar-padding-x, k-spacing(6) ) !default;
-/// The vertical padding of the Dialog titlebar.
-/// @group dialog
-$kendo-dialog-titlebar-padding-y: var( --kendo-dialog-titlebar-padding-y, k-spacing(4) ) !default;
-
-/// The horizontal padding of the content of the Dialog.
-/// @group dialog
-$kendo-dialog-inner-padding-x: var( --kendo-dialog-inner-padding-x, k-spacing(6) ) !default;
-/// The vertical padding of the content of the Dialog.
-/// @group dialog
-$kendo-dialog-inner-padding-y: var( --kendo-dialog-inner-padding-y, k-spacing(3) ) !default;
+$kendo-dialog-titlebar-border: transparent !default;
 
 /// The horizontal padding of the Dialog action buttons.
 /// @group dialog
@@ -50,7 +30,7 @@ $kendo-dialog-bg: var( --kendo-dialog-bg, k-color(app-surface) ) !default;
 
 /// The box shadow around the Dialog.
 /// @group dialog
-$kendo-dialog-shadow: var( --kendo-dialog-shadow, var( --kendo-elevation-8, none ) ) !default;
+$kendo-dialog-shadow: var( --kendo-dialog-shadow, var( --kendo-elevation-5, none ) ) !default;
 
 /// The theme colors map for the Dialog.
 $kendo-dialog-theme-colors: (
