@@ -5,7 +5,7 @@
 @mixin kendo-drawer--theme() {
 
     @include kendo-drawer--theme-base();
-    
+
     // Drawer items - unique fluent styling
     .k-drawer-item {
         @include fill(
@@ -67,7 +67,9 @@
         }
     }
 
-    .k-drawer-separator {
+    .k-drawer-separator,
+    .k-drawer-separator:hover,
+    .k-drawer-separator.k-hover {
         background-color: $kendo-drawer-border;
     }
 
