@@ -19,11 +19,5 @@
        &.k-selected {
             font-weight: $kendo-breadcrumb-link-selected-font-weight;
        }
-
-       &:disabled,
-       &.k-disabled {
-            background: $kendo-breadcrumb-link-disabled-bg;
-            border: $kendo-breadcrumb-link-disabled-border
-       }
     }
 }
