@@ -11,13 +11,21 @@
 
         &:focus,
         &.k-focus {
-            outline-color: $kendo-chat-alt-bubble-focus-border;
-            box-shadow: inset 0 0 0 calc( #{$kendo-bubble-border-width} * 2 ) k-color(app-surface);
+            @include focus-indicator( $kendo-chat-alt-bubble-focus-shadow, true, true );
         }
 
         &:hover,
         &.k-hover {
             @include fill( $bg: $kendo-chat-alt-bubble-hover-bg, $border: $kendo-chat-alt-bubble-hover-border );
         }
+    }
+
+    .k-message-time {
+        color: $kendo-chat-timestamp-text;
+    }
+
+    .k-message-reference .k-chat-file {
+        background-color: $kendo-chat-file-bg;
+        border-color: $kendo-chat-file-border;
     }
 }
