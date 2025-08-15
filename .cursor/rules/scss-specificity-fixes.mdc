@@ -1,0 +1,45 @@
+# SCSS Specificity Fixes
+
+When working with SCSS files, apply these specificity reduction patterns:
+
+## Strategic Base Class Addition
+```scss
+/* ❌ Inefficient: Multiple separate .k-button blocks */
+.k-button {
+    // base styles
+}
+.k-button {
+    &.k-hover { ... }
+}
+
+/* ✅ PREFERRED: Single parent with all nesting */
+.k-button {
+    // base styles here
+    &.k-hover { ... }
+    &.k-focus { ... }
+    &.k-active { ... }
+    &.k-icon-button {
+        // icon variant styles
+    }
+    // ALL button-related styles nested here
+}
+```
+
+## Wrapping Miscellaneous Only
+```scss
+/* Original violation */
+.k-button.k-button-solid-primary.k-button-icon.k-hover
+
+/* Fixed */
+.k-button.k-button-solid-primary:where(.k-button-icon).k-hover
+```
+
+## Classification Rules
+- **NEVER wrap**: `.k-button`, `.k-icon-button`, `.k-hover` (framework classes)
+- **ALWAYS wrap**: `.k-button-icon`, `.k-grid-toolbar` (miscellaneous)
+- **Check registry**: Use `component-registry.json` to verify class types
+
+## Common Patterns
+- Missing base class → Add at parent/mixin level
+- Excess specificity → Wrap miscellaneous with `:where()`
+- Consolidate multiple blocks → Single parent with nesting
