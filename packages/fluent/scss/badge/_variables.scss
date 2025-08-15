@@ -34,7 +34,7 @@ $kendo-badge-lg-padding-x: k-spacing(1.5) !default;
 $kendo-badge-sm-padding-y: k-spacing(0.5) !default;
 /// Vertical padding of the medium Badge.
 /// @group badge
-$kendo-badge-md-padding-y: var( --kendo-badge-padding-y, k-spacing(0.5) ) !default;
+$kendo-badge-md-padding-y: var( --kendo-badge-padding-y, k-spacing(1) ) !default;
 /// Vertical padding of the large Badge.
 /// @group badge
 $kendo-badge-lg-padding-y: calc(k-spacing(0.5) + 1px) !default;
@@ -54,7 +54,7 @@ $kendo-badge-lg-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-badge-sm-line-height: var( --kendo-line-height-xs, normal ) !default;
 /// The line height used along with the $kendo-font-size variable of the medium Badge.
 /// @group badge
-$kendo-badge-md-line-height: var( --kendo-badge-line-height, var( --kendo-line-height-lg, normal ) ) !default;
+$kendo-badge-md-line-height: var( --kendo-badge-line-height, var( --kendo-line-height-xs, normal ) ) !default;
 /// The line height used along with the $kendo-font-size variable of the large Badge.
 /// @group badge
 $kendo-badge-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
