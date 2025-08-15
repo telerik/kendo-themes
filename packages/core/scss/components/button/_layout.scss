@@ -57,7 +57,7 @@
 
 
     // Icon Button
-    .k-icon-button {
+    .k-button.k-icon-button {
         gap: 0;
 
         .k-icon {
@@ -67,13 +67,11 @@
 
 
     // Content
-    .k-button-icon {
+    .k-button :where(.k-button-icon) {
         color: inherit;
         align-self: center;
         position: relative;
     }
-
-    .k-button-text {}
 
 
     // Sizes
@@ -83,17 +81,17 @@
         $_font-size: map.get( $size-props, font-size );
         $_line-height: map.get( $size-props, line-height );
 
-        .k-button-#{$size} {
+        .k-button.k-button-#{$size} {
             padding-block: $_padding-y;
             padding-inline: $_padding-x;
             font-size: $_font-size;
             line-height: $_line-height;
         }
 
-        .k-button-#{$size}.k-icon-button {
+        .k-button.k-button-#{$size}.k-icon-button {
             padding: $_padding-y;
 
-            .k-button-icon {
+            :where(.k-button-icon) {
                 min-width: calc( #{$_font-size} * #{$_line-height} );
                 min-height: calc( #{$_font-size} * #{$_line-height} );
                 display: inline-flex;
@@ -141,7 +139,7 @@
 
 
     // Button shape
-    .k-button-square {
+    .k-button:where(.k-button-square) {
         aspect-ratio: 1;
     }
 
@@ -191,7 +189,7 @@
         }
     }
 
-    .k-button-group-stretched {
+    :where(.k-button-group-stretched) {
         width: 100%;
 
         > * {
@@ -202,7 +200,7 @@
 
 
     // Flat button
-    .k-button-flat {
+    .k-button.k-button-flat {
         border-color: transparent !important; // stylelint-disable-line declaration-no-important
         color: inherit;
         background: none !important; // stylelint-disable-line declaration-no-important
@@ -227,7 +225,7 @@
 
 
     // Outline button
-    .k-button-outline {
+    .k-button.k-button-outline {
         border-color: currentColor;
         color: inherit;
         background: none;
@@ -235,7 +233,7 @@
 
 
     // Link button
-    .k-button-link {
+    .k-button.k-button-link {
         border-color: transparent;
         color: inherit;
         text-decoration: none;
@@ -249,7 +247,7 @@
 
 
     // Clear button
-    .k-button-clear {
+    .k-button.k-button-clear {
         border-color: transparent !important; // stylelint-disable-line declaration-no-important
         color: inherit;
         background: none !important; // stylelint-disable-line declaration-no-important
@@ -260,7 +258,7 @@
 
 
     // Button overlay
-    .k-button-overlay {
+    :where(.k-button-overlay) {
         @include border-radius( inherit );
         content: "";
         background: currentColor;
@@ -280,7 +278,7 @@
     .k-button { // stylelint-disable-line
 
         &::before {
-            @extend .k-button-overlay !optional;
+            @extend :where(.k-button-overlay) !optional;
         }
 
         // Hovered state
