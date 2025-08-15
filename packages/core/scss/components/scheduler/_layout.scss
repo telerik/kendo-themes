@@ -272,7 +272,7 @@
         border-spacing: 0;
         flex: 1 1 auto;
         position: relative;
-        z-index: k-z-index("base", 2);
+        z-index: k-z-index("base", 1);
 
         > tbody > tr > td {
             padding: 0;

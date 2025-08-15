@@ -100,7 +100,7 @@
         font: inherit;
         flex: 1;
         position: relative;
-        z-index: k-z-index("base", 2);
+        z-index: k-z-index("base", 1);
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-appearance: none;
@@ -247,7 +247,7 @@
         > .k-input:active,
         > .k-input.k-active,
         > .k-input.k-selected {
-            z-index: k-z-index("base", 3);
+            z-index: k-z-index("base", 2);
         }
 
         .k-input:not(:first-child):not(:last-child) {

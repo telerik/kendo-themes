@@ -346,6 +346,7 @@
     .k-gantt-columns {
         border-color: inherit;
         position: absolute;
+        z-index: k-z-index("base");
         top: 0;
         left: 0;
     }

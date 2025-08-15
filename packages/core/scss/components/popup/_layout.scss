@@ -9,7 +9,7 @@
     .k-animation-container {
         position: absolute;
         overflow: hidden;
-        z-index: k-z-index("popup");
+        z-index: k-z-index("animation");
         outline: none;
 
         &-fixed {

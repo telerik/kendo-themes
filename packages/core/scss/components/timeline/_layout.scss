@@ -46,7 +46,7 @@
             min-width: $kendo-timeline-flag-min-width;
             max-width: $kendo-timeline-flag-max-width;
             position: relative;
-            z-index: k-z-index("base", 2);
+            z-index: k-z-index("base", 1);
         }
 
         .k-timeline-circle {
@@ -55,7 +55,7 @@
             border-radius: 50%;
             flex-shrink: 0;
             position: relative;
-            z-index: k-z-index("base", 2);
+            z-index: k-z-index("base", 1);
         }
 
         &.k-timeline-dates-hidden {

@@ -191,7 +191,7 @@
                 justify-content: center;
                 position: absolute;
                 inset-inline-end: $kendo-grid-header-menu-icon-spacing;
-                z-index: k-z-index("base", 2);
+                z-index: k-z-index("base", 1);
 
                 &:hover {
                     cursor: pointer;
@@ -722,7 +722,7 @@
         .k-grid-table {
             position: relative;
             float: left;
-            z-index: k-z-index("base", 2);
+            z-index: k-z-index("base", 1);
         }
 
         > .k-height-container {
@@ -807,11 +807,11 @@
     .k-grid .k-grid-row-sticky,
     .k-grid .k-grid-footer-sticky {
         position: sticky;
-        z-index: k-z-index("banner");
+        z-index: k-z-index("base", 2);
 
         &.k-edit-cell {
             overflow: visible;
-            z-index: k-z-index("base", 4);
+            z-index: k-z-index("base", 3);
         }
     }
 
@@ -1071,7 +1071,7 @@
                 position: absolute;
                 background: none;
                 cursor: row-resize;
-                z-index: k-z-index("base", 1);
+                z-index: k-z-index("base", 2);
             }
         }
 
@@ -1202,7 +1202,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        z-index: k-z-index("top");
+        z-index: k-z-index("overlay");
 
         > .k-i-loading {
             position: absolute;

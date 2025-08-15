@@ -264,7 +264,7 @@
 
         // Give selected cells a blue overlay
         .selectedCell::after { // stylelint-disable-line
-            z-index: k-z-index("base", 3);
+            z-index: k-z-index("selection");
             position: absolute;
             content: "";
             left: 0;
@@ -599,7 +599,7 @@
             height: 10px;
             width: 10px;
             cursor: col-resize;
-            z-index: k-z-index("base", 2);
+            z-index: k-z-index("handle");
 
             .k-column-resize-handle {
                 width: 100%;
@@ -618,7 +618,7 @@
 
         .k-row-resize-handle-wrapper {
             position: absolute;
-            z-index: k-z-index("base", 2);
+            z-index: k-z-index("handle");
             cursor: row-resize;
             width: 10px;
             height: 10px;
