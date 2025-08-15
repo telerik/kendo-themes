@@ -12,20 +12,6 @@ $kendo-listview-padding-y: var( --kendo-listview-padding-y, k-spacing(1) ) !defa
 /// @group listview
 $kendo-listview-border-width: 1px !default;
 
-/// The horizontal padding of the ListView header.
-/// @group listview
-$kendo-listview-header-padding-x: var( --kendo-listview-header-padding-x, k-spacing(4) ) !default;
-/// The vertical padding of the ListView header.
-/// @group listview
-$kendo-listview-header-padding-y: var( --kendo-listview-header-padding-y, k-spacing(2) ) !default;
-
-/// The horizontal padding of the ListView footer.
-/// @group listview
-$kendo-listview-footer-padding-x: var( --kendo-listview-footer-padding-x, $kendo-listview-header-padding-x ) !default;
-/// The vertical padding of the ListView footer.
-/// @group listview
-$kendo-listview-footer-padding-y: var( --kendo-listview-footer-padding-y, $kendo-listview-header-padding-y ) !default;
-
 /// The horizontal padding of the ListView items.
 /// @group listview
 $kendo-listview-item-padding-x: var( --kendo-listview-item-padding-x, k-spacing(1) ) !default;
@@ -58,7 +44,7 @@ $kendo-listview-border: var( --kendo-listview-border, color-mix(in srgb, k-color
 $kendo-listview-item-selected-text: var( --kendo-listview-item-selected-text, initial ) !default;
 /// The background color of the selected ListView items.
 /// @group listview
-$kendo-listview-item-selected-bg: var( --kendo-listview-item-selected-bg, k-color(base-active) ) !default;
+$kendo-listview-item-selected-bg: var( --kendo-listview-item-selected-bg, #{color-mix(in srgb, k-color(on-app-surface) 12%, transparent)} ) !default;
 /// The border color of the selected ListView items.
 /// @group listview
 $kendo-listview-item-selected-border: var( --kendo-listview-item-selected-border, initial ) !default;
@@ -76,26 +62,6 @@ $kendo-listview-item-focus-border: var( --kendo-listview-item-focus-border, init
 /// @group listview
 $kendo-listview-item-focus-shadow: var( --kendo-listview-item-focus-shadow, var( --kendo-list-item-focus-shadow, $kendo-list-item-focus-shadow ) ) !default;
 
-/// The gap between items of ListView with grid layout.
-/// @group listview
-$kendo-listview-grid-gap: var( --kendo-listview-grid-gap, k-spacing(.0) ) !default;
-
-/// The text color of the ListView header.
-/// @group listview
-$kendo-listview-header-text: var( --kendo-listview-header-text, initial ) !default;
-/// The background color of the ListView header.
-/// @group listview
-$kendo-listview-header-bg: var( --kendo-listview-header-bg, initial ) !default;
-/// The border color of the ListView header.
-/// @group listview
-$kendo-listview-header-border: var( --kendo-listview-header-border, $kendo-listview-border ) !default;
-
-/// The text color of the ListView footer.
-/// @group listview
-$kendo-listview-footer-text: var( --kendo-listview-footer-text, initial ) !default;
-/// The background color of the ListView footer.
-/// @group listview
-$kendo-listview-footer-bg: var( --kendo-listview-footer-bg, initial ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/listview/_variables.scss" with (
     $kendo-listview-padding-x: $kendo-listview-padding-x,

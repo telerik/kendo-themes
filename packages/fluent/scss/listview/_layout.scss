@@ -5,18 +5,4 @@
 @mixin kendo-listview--layout() {
     @include kendo-listview--layout-base();
 
-    .k-listview-content.k-d-grid {
-        grid-gap: var( --kendo-listview-grid-gap, #{$kendo-listview-grid-gap} );
-    }
-
-    .k-listview-header {
-        padding-inline: $kendo-listview-header-padding-x;
-        padding-block: $kendo-listview-header-padding-y;
-    }
-
-    .k-listview-footer {
-        padding-inline: $kendo-listview-footer-padding-x;
-        padding-block: $kendo-listview-footer-padding-y;
-    }
-
 }
