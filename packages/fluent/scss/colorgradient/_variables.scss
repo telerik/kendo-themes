@@ -170,13 +170,13 @@ $kendo-color-gradient-draghandle-outline-width: var(--kendo-color-gradient-dragh
 $kendo-color-gradient-draghandle-border: var(--kendo-color-gradient-draghandle-border, k-color(app-surface)) !default;
 /// The box shadow of the ColorGradient canvas drag handle.
 /// @group color-gradient
-$kendo-color-gradient-draghandle-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
-/// The color of the border around the focused ColorGradient canvas drag handle.
+$kendo-color-gradient-draghandle-shadow: k-elevation(4) !default;
+/// The color of the outline around the ColorGradient canvas drag handle.
 /// @group color-gradient
-$kendo-color-gradient-draghandle-focus-border: var(--kendo-color-gradient-draghandle-focus-border, k-color(app-surface)) !default;
+$kendo-color-gradient-draghandle-outline: k-color(border) !default;
 /// The focus color of the outline around the ColorGradient canvas drag handle.
 /// @group color-gradient
-$kendo-color-gradient-draghandle-focus-shadow: var(--kendo-color-gradient-draghandle-focus-shadow, k-color(base-emphasis)) !default;
+$kendo-color-gradient-draghandle-focus-shadow: var(--kendo-color-gradient-draghandle-focus-shadow, k-color(border-alt)) !default;
 /// The hover color of the outline around the ColorGradient canvas drag handle.
 /// @group color-gradient
 $kendo-color-gradient-draghandle-hover-shadow: var(--kendo-color-gradient-draghandle-hover-shadow, k-color(base-emphasis)) !default;
