@@ -27,14 +27,13 @@ interface ComponentRegistry {
 
 class ComponentRegistryBuilder {
   private officialComponents = new Set<string>();
-  private componentDetails = new Map<string, ComponentDetails>();
 
   async buildRegistry(): Promise<ComponentRegistry> {
     console.log("🔍 Building Official Component Registry...\n");
 
     try {
       // Import the entire HTML package once
-      const htmlPackagePath = path.resolve("../../../packages/html/src/index.ts");
+      const htmlPackagePath = path.resolve(__dirname, "../../packages/html/src/index.ts");
       console.log(`📦 Importing HTML package from: ${htmlPackagePath}\n`);
 
       const htmlPackage = await import(htmlPackagePath);
