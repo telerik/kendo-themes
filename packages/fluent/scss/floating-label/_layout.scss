@@ -5,10 +5,6 @@
     @include kendo-floating-label--layout-base();
 
     .k-floating-label-container {
-        > .k-floating-label {
-            font-weight: $kendo-floating-label-font-weight;
-        }
-
         &:disabled,
         &[disabled],
         &.k-disabled  {
