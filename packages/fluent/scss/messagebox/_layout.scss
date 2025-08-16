@@ -3,4 +3,8 @@
 
 @mixin kendo-messagebox--layout() {
     @include kendo-messagebox--layout-base();
+
+    .k-messagebox {
+        border-radius: $kendo-message-box-border-radius;
+    }
 }

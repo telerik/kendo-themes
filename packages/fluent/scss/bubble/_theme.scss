@@ -9,8 +9,8 @@
 
         &:focus,
         &.k-focus {
-            box-shadow: inset 0 0 0 #{$kendo-bubble-border-width} k-color(app-surface),
-                        inset 0 0 0 calc( #{$kendo-bubble-border-width} * 2 ) k-color(base-emphasis);
+            border-color: $kendo-bubble-focus-border;
+            box-shadow: $kendo-bubble-focus-shadow;
         }
     }
 }

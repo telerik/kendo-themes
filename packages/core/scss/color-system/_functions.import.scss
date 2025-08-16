@@ -84,19 +84,6 @@
     @return $result;
 }
 
-
-@function k-get-theme-palette( $name ) {
-    @return map.get( $kendo-palettes, $name );
-}
-
-@function k-get-theme-color( $palette, $hue ) {
-    @if ( meta.type-of( $palette ) == "map" ) {
-        @return map.get( $palette, $hue );
-    }
-
-    @return map.get( k-get-theme-palette( $palette ), $hue );
-}
-
 @function k-get-theme-color-var( $name, $fallback: "inherit", $prefix: "kendo-" ) {
     @return var( --#{$prefix}#{$name}, #{$fallback} );
 }

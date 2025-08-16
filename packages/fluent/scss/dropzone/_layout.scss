@@ -17,6 +17,7 @@
         .k-dropzone-note {
             margin-block-end: $kendo-dropzone-note-spacing;
             font-weight: $kendo-dropzone-note-font-weight;
+            line-height: var( --kendo-line-height-lg, normal );
         }
     }
 }

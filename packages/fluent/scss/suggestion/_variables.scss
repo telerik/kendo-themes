@@ -59,10 +59,10 @@ $kendo-suggestion-active-border: var( --kendo-suggestion-active-border, #{k-colo
 $kendo-suggestion-focus-shadow-blur: var( --kendo-suggestion-focus-shadow-blur, 0 ) !default;
 /// The shadow spread of the focused Suggestion.
 /// @group suggestion
-$kendo-suggestion-focus-shadow-spread: var( --kendo-suggestion-focus-shadow-spread, 2px ) !default;
+$kendo-suggestion-focus-shadow-spread: var( --kendo-suggestion-focus-shadow-spread, 1px ) !default;
 /// The shadow color of the focused Suggestion.
 /// @group suggestion
-$kendo-suggestion-focus-shadow-color: var( --kendo-suggestion-focus-shadow-color, #{k-color(border-alt)} ) !default;
+$kendo-suggestion-focus-shadow-color: var( --kendo-suggestion-focus-shadow-color, #{k-color(on-base)} ) !default;
 
 $kendo-suggestion-theme-colors: (
     "primary": k-color(primary),

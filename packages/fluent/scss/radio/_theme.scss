@@ -30,4 +30,12 @@
         opacity: $kendo-radio-ripple-opacity;
     }
 
+    // Label
+    .k-radio-label:has(.k-invalid) {
+        @include fill( $color: $kendo-radio-invalid-text );
+    }
+    .k-radio-label:has(.k-disabled) {
+        @include fill( $color: $kendo-radio-disabled-text );
+    }
+
 }

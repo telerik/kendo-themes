@@ -13,7 +13,7 @@
         gap: $kendo-slider-spacing;
 
         .k-label {
-            font-size: .875em;
+            font-size: var(--kendo-font-size-sm, inherit);
             pointer-events: all;
         }
 
@@ -23,6 +23,21 @@
             .k-slider-track,
             .k-slider-thumb {
                 cursor: default;
+            }
+        }
+
+        .k-draghandle {
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 12px;
+                height: 12px;
+                border-radius: k-border-radius(full);
             }
         }
     }
@@ -169,7 +184,6 @@
     }
 
     // Aliases - fluent specific thumb classes
-    .k-slider .k-button { @extend .k-slider-button !optional; }
     .k-tick { @extend .k-slider-tick !optional; }
     .k-draghandle { @extend .k-slider-thumb !optional; }
     .k-draghandle-start { @extend .k-slider-thumb-start !optional; }

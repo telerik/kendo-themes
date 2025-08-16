@@ -94,6 +94,9 @@
         gap: $kendo-radio-list-item-gap;
     }
 
+    .k-radio-list.k-list-vertical {
+        gap: k-spacing(2);
+    }
 
     // Ripple
     .k-ripple-container {

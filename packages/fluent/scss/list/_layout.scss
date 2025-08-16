@@ -10,7 +10,20 @@
     .k-list {
         border-radius: 0;
     }
+
     .k-list-group-sticky-header {
         z-index: 1;
     }
+
+    .k-list-ul {
+        display: flex;
+        flex-direction: column;
+        padding: $kendo-list-content-padding;
+        gap: $kendo-list-item-spacing;
+    }
+
+    .k-list-item {
+        border-radius: $kendo-list-item-border-radius;
+    }
+
 }

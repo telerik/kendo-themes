@@ -5,7 +5,7 @@
 
 /// The width of the border around the Popover.
 /// @group popover
-$kendo-popover-border-width: var( --kendo-popover-border-width, #{$kendo-dialog-border-width} ) !default;
+$kendo-popover-border-width: var( --kendo-popover-border-width, 0 ) !default;
 /// The style of the border around the Popover.
 /// @group popover
 $kendo-popover-border-style: var( --kendo-popover-border-style, solid ) !default;
@@ -37,13 +37,13 @@ $kendo-popover-shadow: var( --kendo-popover-shadow, var( --kendo-box-shadow-dept
 
 /// The horizontal padding of the Popover header.
 /// @group popover
-$kendo-popover-header-padding-x: var( --kendo-popover-header-padding-x, #{$kendo-dialog-titlebar-padding-x} ) !default;
+$kendo-popover-header-padding-x: var( --kendo-popover-header-padding-x, k-spacing(6) ) !default;
 /// The vertical padding of the Popover header.
 /// @group popover
-$kendo-popover-header-padding-y: var( --kendo-popover-header-padding-y, #{$kendo-dialog-titlebar-padding-y} ) !default;
+$kendo-popover-header-padding-y: var( --kendo-popover-header-padding-y, k-spacing(4) ) !default;
 /// The border width of the Popover header.
 /// @group popover
-$kendo-popover-header-border-width: var( --kendo-popover-header-border-width, #{$kendo-dialog-titlebar-border-width} ) !default;
+$kendo-popover-header-border-width: var( --kendo-popover-header-border-width, 0 ) !default;
 /// The border style of the Popover header.
 /// @group popover
 $kendo-popover-header-border-style: var( --kendo-popover-header-border-style, #{$kendo-popover-border-style} ) !default;

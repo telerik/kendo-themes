@@ -5,15 +5,6 @@
 @mixin kendo-tooltip--layout() {
     @include kendo-tooltip--layout-base();
 
-    .k-tooltip {
-        padding-inline: $kendo-tooltip-padding-x;
-        padding-block: $kendo-tooltip-padding-y;
-        border-width: $kendo-tooltip-border-width;
-        font-family: $kendo-tooltip-font-family;
-        font-size: $kendo-tooltip-font-size;
-        line-height: $kendo-tooltip-line-height;
-    }
-
     .k-tooltip-icon {
         margin-inline-end: .5rem;
     }

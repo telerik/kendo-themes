@@ -12,5 +12,10 @@
         .k-hr {
             border-color: $kendo-card-border;
         }
+
+        &:focus,
+        &.k-focus {
+            outline-color: $kendo-card-focus-border;
+        }
     }
 }

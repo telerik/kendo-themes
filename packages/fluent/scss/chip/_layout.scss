@@ -12,21 +12,17 @@
         // TODO: Decide wether to define the same variable for the rest of the themes, or remove it
         font-family: $kendo-chip-font-family;
 
-        &:hover,
-        &:focus {
+        &:hover {
             outline: 0;
             text-decoration: none;
         }
 
-        &.k-chip-outline.k-focus::after,
-        &.k-chip-outline:focus::after {
-                content: '';
-                position: absolute;
-                border: medium none;
-                inset: $kendo-chip-focus-offset;
-                outline-width: $kendo-chip-focus-outline-width;
-                outline-style: $kendo-chip-focus-outline-style;
-                z-index: 1;
+        &:focus,
+        &.k-focus {
+            text-decoration: none;
+            outline-width: $kendo-chip-focus-outline-width;
+            outline-style: $kendo-chip-focus-outline-style;
+            outline-offset: $kendo-chip-focus-offset;
         }
     }
 

@@ -4,4 +4,13 @@
 
 @mixin kendo-suggestion--layout() {
     @include kendo-suggestion--layout-base();
+
+    .k-suggestion {
+        &:focus,
+        &.k-focus {
+            outline-width: calc( #{$kendo-suggestion-border-width} * 2);
+            outline-style: solid;
+            outline-offset: calc( #{$kendo-suggestion-border-width} * 2 * -1);
+        }
+    }
 }

@@ -7,6 +7,9 @@
     @include kendo-messagebox--theme-base();
 
     .k-messagebox {
+        color: k-color(on-app-surface);
+        background: k-color(app-surface);
+        border-color: k-color(base-emphasis);
 
         a {
             @include fill(
