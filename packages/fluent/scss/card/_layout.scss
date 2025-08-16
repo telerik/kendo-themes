@@ -6,6 +6,12 @@
 @mixin kendo-card--layout() {
     @include kendo-card--layout-base();
 
+    .k-card:focus,
+    .k-card.k-focus {
+        outline-width: 2px;
+        outline-style: solid;
+    }
+
     @at-root .k-card-title + .k-card-subtitle {
         margin-block-start: calc( #{$kendo-card-title-margin-bottom} * -1 );
     }
