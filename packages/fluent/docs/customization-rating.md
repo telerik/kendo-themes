@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-item-text</td>
     <td>String</td>
-    <td><code>var( --kendo-rating-item-text, #{k-color(subtle)} )</code></td>
-    <td><code>var(--kendo-rating-item-text, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var( --kendo-rating-item-text, #{k-color(on-app-surface)} )</code></td>
+    <td><code>var(--kendo-rating-item-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Rating item.</div></div>
@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-item-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-rating-item-hover-text, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-rating-item-hover-text, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var( --kendo-rating-item-hover-text, #{k-color(on-app-surface)} )</code></td>
+    <td><code>var(--kendo-rating-item-hover-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Rating item.</div></div>
@@ -110,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-item-focus-outline-width</td>
     <td>String</td>
-    <td><code>var( --kendo-rating-item-focus-outline-width, 1px )</code></td>
-    <td><code>var(--kendo-rating-item-focus-outline-width, 1px)</code></td>
+    <td><code>var( --kendo-rating-item-focus-outline-width, 2px )</code></td>
+    <td><code>var(--kendo-rating-item-focus-outline-width, 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused Rating item.</div></div>
@@ -141,20 +141,10 @@ The following table lists the available variables for customization.
     <td>$kendo-rating-item-selected-text</td>
     <td>String</td>
     <td><code>var( --kendo-rating-item-selected-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-rating-item-selected-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-rating-item-selected-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Rating item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-rating-item-selected-hover-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-rating-item-selected-hover-text, #{k-color(primary-active)} )</code></td>
-    <td><code>var(--kendo-rating-item-selected-hover-text, var(--kendo-color-primary-active, #005a9e))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected and hovered Rating item.</div></div>
     </td>
 </tr>
 </tbody>

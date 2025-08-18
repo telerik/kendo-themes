@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-text</td>
     <td>String</td>
     <td><code>var( --kendo-file-manager-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-file-manager-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-file-manager-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-border</td>
     <td>String</td>
     <td><code>var( --kendo-file-manager-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
-    <td><code>var(--kendo-file-manager-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-file-manager-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager.</div></div>
@@ -120,8 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-manager-toolbar-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-file-manager-toolbar-bg, #{$kendo-toolbar-bg} )</code></td>
-    <td><code>var(--kendo-file-manager-toolbar-bg, var(--kendo-toolbar-bg, var(--kendo-color-surface, #faf9f8)))</code></td>
+    <td><code>var( --kendo-file-manager-toolbar-bg, #{k-color(app-surface)} )</code></td>
+    <td><code>var(--kendo-file-manager-toolbar-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager Toolbar.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-toolbar-text</td>
     <td>String</td>
     <td><code>var( --kendo-file-manager-toolbar-text, #{$kendo-toolbar-text} )</code></td>
-    <td><code>var(--kendo-file-manager-toolbar-text, var(--kendo-toolbar-text, var(--kendo-color-on-app-surface, #323130)))</code></td>
+    <td><code>var(--kendo-file-manager-toolbar-text, var(--kendo-toolbar-text, var(--kendo-color-on-app-surface, #242424)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager Toolbar.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-toolbar-border</td>
     <td>String</td>
     <td><code>var( --kendo-file-manager-toolbar-border, #{$kendo-toolbar-border} )</code></td>
-    <td><code>var(--kendo-file-manager-toolbar-border, var(--kendo-toolbar-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)))</code></td>
+    <td><code>var(--kendo-file-manager-toolbar-border, var(--kendo-toolbar-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager Toolbar.</div></div>
@@ -251,7 +251,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-breadcrumb-bg</td>
     <td>String</td>
     <td><code>var( --kendo-file-manager-breadcrumb-bg, #{$kendo-toolbar-bg} )</code></td>
-    <td><code>var(--kendo-file-manager-breadcrumb-bg, var(--kendo-toolbar-bg, var(--kendo-color-surface, #faf9f8)))</code></td>
+    <td><code>var(--kendo-file-manager-breadcrumb-bg, var(--kendo-toolbar-bg, var(--kendo-color-surface, #ffffff)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager Breadcrumb.</div></div>
@@ -361,7 +361,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-listview-item-icon-text</td>
     <td>String</td>
     <td><code>var( --kendo-file-manager-listview-item-icon-text, #{k-color(subtle)} )</code></td>
-    <td><code>var(--kendo-file-manager-listview-item-icon-text, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var(--kendo-file-manager-listview-item-icon-text, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager ListView item icon.</div></div>
@@ -571,7 +571,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-preview-icon-text</td>
     <td>String</td>
     <td><code>var( --kendo-file-manager-preview-icon-text, #{k-color(subtle)} )</code></td>
-    <td><code>var(--kendo-file-manager-preview-icon-text, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var(--kendo-file-manager-preview-icon-text, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager preview icon.</div></div>

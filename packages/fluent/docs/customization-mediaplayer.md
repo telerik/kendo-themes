@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-media-player-text</td>
     <td>String</td>
     <td><code>var( --kendo-media-player-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-media-player-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-media-player-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the MediaPlayer.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-media-player-border</td>
     <td>String</td>
     <td><code>var( --kendo-media-player-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-media-player-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-media-player-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the MediaPlayer.</div></div>
@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-media-player-overlay-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-media-player-overlay-bg, k-color(base-emphasis) )</code></td>
-    <td><code>var(--kendo-media-player-overlay-bg, var(--kendo-color-base-emphasis, #605e5c))</code></td>
+    <td><code>var( --kendo-media-player-overlay-bg, k-color(subtle) )</code></td>
+    <td><code>var(--kendo-media-player-overlay-bg, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the MediaPlayer overlay.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-media-player-quality-border</td>
     <td>String</td>
     <td><code>var( --kendo-media-player-quality-border, k-color(border) )</code></td>
-    <td><code>var(--kendo-media-player-quality-border, var(--kendo-color-border, #8a8886))</code></td>
+    <td><code>var(--kendo-media-player-quality-border, var(--kendo-color-border, rgba(36, 36, 36, 0.72)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the MediaPlayer button.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-media-player-titlebar-bg</td>
     <td>String</td>
     <td><code>var( --kendo-media-player-titlebar-bg, color-mix(in srgb, k-color(on-app-surface) 40%, transparent) )</code></td>
-    <td><code>var(--kendo-media-player-titlebar-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 40%, transparent))</code></td>
+    <td><code>var(--kendo-media-player-titlebar-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 40%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the MediaPlayer title.</div></div>

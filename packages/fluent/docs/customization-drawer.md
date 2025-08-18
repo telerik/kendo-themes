@@ -30,8 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-drawer-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-drawer-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var( --kendo-drawer-bg, k-color(secondary-subtle) )</code></td>
+    <td><code>var(--kendo-drawer-bg, var(--kendo-color-secondary-subtle, #f0f0f0))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Drawer.</div></div>
@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-drawer-text</td>
     <td>String</td>
     <td><code>var( --kendo-drawer-text, k-color(on-app-surface) )!default</code></td>
-    <td><code>var(--kendo-drawer-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-drawer-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Drawer.</div></div>
@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-border</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-drawer-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var( --kendo-drawer-border, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
+    <td><code>var(--kendo-drawer-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Drawer.</div></div>
@@ -60,8 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-border-width, 1px )</code></td>
-    <td><code>var(--kendo-drawer-border-width, 1px)</code></td>
+    <td><code>var( --kendo-drawer-border-width, 0 )</code></td>
+    <td><code>var(--kendo-drawer-border-width, 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Drawer.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-drawer-scrollbar-color</td>
     <td>String</td>
     <td><code>var( --kendo-drawer-scrollbar-color, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) )</code></td>
-    <td><code>var(--kendo-drawer-scrollbar-color, color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent))</code></td>
+    <td><code>var(--kendo-drawer-scrollbar-color, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 46%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Drawer scrollbar.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-drawer-scrollbar-bg</td>
     <td>String</td>
     <td><code>var( --kendo-drawer-scrollbar-bg, k-color(base-subtle) )</code></td>
-    <td><code>var(--kendo-drawer-scrollbar-bg, var(--kendo-color-base-subtle, #edebe9))</code></td>
+    <td><code>var(--kendo-drawer-scrollbar-bg, var(--kendo-color-base-subtle, #f5f5f5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the Drawer scrollbar.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-drawer-scrollbar-hover-color</td>
     <td>String</td>
     <td><code>var( --kendo-drawer-scrollbar-hover-color, color-mix(in srgb, k-color(on-app-surface) 60%, transparent) )</code></td>
-    <td><code>var(--kendo-drawer-scrollbar-hover-color, color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 60%, transparent))</code></td>
+    <td><code>var(--kendo-drawer-scrollbar-hover-color, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 60%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the Drawer scrollbar.</div></div>
@@ -170,8 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-items-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-items-padding-x, 0 )</code></td>
-    <td><code>var(--kendo-drawer-items-padding-x, 0)</code></td>
+    <td><code>var( --kendo-drawer-items-padding-x, k-spacing(2.5) )</code></td>
+    <td><code>var(--kendo-drawer-items-padding-x, var(--kendo-spacing-2\.5, 0.625rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Drawer items.</div></div>
@@ -180,11 +180,21 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-items-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-items-padding-y, 0 )</code></td>
-    <td><code>var(--kendo-drawer-items-padding-y, 0)</code></td>
+    <td><code>var( --kendo-drawer-items-padding-y, k-spacing(2.5) )</code></td>
+    <td><code>var(--kendo-drawer-items-padding-y, var(--kendo-spacing-2\.5, 0.625rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Drawer items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-items-gap</td>
+    <td>String</td>
+    <td><code>var( --kendo-drawer-items-gap, k-spacing(0.5) )</code></td>
+    <td><code>var(--kendo-drawer-items-gap, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Drawer items.</div></div>
     </td>
 </tr>
 <tr>
@@ -270,8 +280,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-border-radius</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-item-border-radius, null )</code></td>
-    <td><code>var(--kendo-drawer-item-border-radius, )</code></td>
+    <td><code>var( --kendo-drawer-item-border-radius, k-border-radius(md) )</code></td>
+    <td><code>var(--kendo-drawer-item-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Drawer item.</div></div>
@@ -300,8 +310,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-mini-initial-width</td>
     <td>Calculation</td>
-    <td><code>calc( 2 * #{k-spacing(4)} + var( --kendo-icon-size, 1rem ) )</code></td>
-    <td><code>calc(2 * var(--kendo-spacing-4, 1rem) + var(--kendo-icon-size, 1rem))</code></td>
+    <td><code>calc( 2 * #{$kendo-drawer-item-padding-x} + 2 * #{$kendo-drawer-items-padding-x} + var( --kendo-icon-size, 1rem ) )</code></td>
+    <td><code>calc(2 * var(--kendo-drawer-item-padding-x, var(--kendo-spacing-4, 1rem)) + 2 * var(--kendo-drawer-items-padding-x, var(--kendo-spacing-2\.5, 0.625rem)) + var(--kendo-icon-size, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The initial width of the mini Drawer.</div></div>
@@ -310,18 +320,48 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-ripple-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-item-ripple-border-width, k-spacing(0.5) )</code></td>
-    <td><code>var(--kendo-drawer-item-ripple-border-width, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+    <td><code>var( --kendo-drawer-item-ripple-border-width, k-spacing(1) )</code></td>
+    <td><code>var(--kendo-drawer-item-ripple-border-width, var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Drawer item ripple.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-drawer-item-ripple-border-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-drawer-item-ripple-border-height, k-spacing(5) )</code></td>
+    <td><code>var(--kendo-drawer-item-ripple-border-height, var(--kendo-spacing-5, 1.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border height of the Drawer item ripple.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-item-ripple-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-drawer-item-ripple-border-radius, k-border-radius(md) )</code></td>
+    <td><code>var(--kendo-drawer-item-ripple-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Drawer item ripple.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-item-ripple-spacing-x</td>
+    <td>String</td>
+    <td><code>var( --kendo-drawer-item-ripple-spacing-x, k-spacing(0.5) )</code></td>
+    <td><code>var(--kendo-drawer-item-ripple-spacing-x, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing of the Drawer item ripple.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-drawer-item-ripple-border</td>
     <td>String</td>
     <td><code>var( --kendo-drawer-item-ripple-border, k-color(primary) )</code></td>
-    <td><code>var(--kendo-drawer-item-ripple-border, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-drawer-item-ripple-border, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the drawer item ripple</div></div>
@@ -331,7 +371,7 @@ The following table lists the available variables for customization.
     <td>$kendo-drawer-item-bg</td>
     <td>String</td>
     <td><code>var( --kendo-drawer-item-bg, $kendo-drawer-bg )</code></td>
-    <td><code>var(--kendo-drawer-item-bg, var(--kendo-drawer-bg, var(--kendo-color-surface-alt, #ffffff)))</code></td>
+    <td><code>var(--kendo-drawer-item-bg, var(--kendo-drawer-bg, var(--kendo-color-secondary-subtle, #f0f0f0)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Drawer item.</div></div>
@@ -341,7 +381,7 @@ The following table lists the available variables for customization.
     <td>$kendo-drawer-item-text</td>
     <td>String</td>
     <td><code>var( --kendo-drawer-item-text, $kendo-drawer-text )</code></td>
-    <td><code>var(--kendo-drawer-item-text, var(--kendo-drawer-text, var(--kendo-color-on-app-surface, #323130)))</code></td>
+    <td><code>var(--kendo-drawer-item-text, var(--kendo-drawer-text, var(--kendo-color-on-app-surface, #242424)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Drawer item.</div></div>
@@ -350,8 +390,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-icon-text</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-icon-text, k-color(primary) )</code></td>
-    <td><code>var(--kendo-drawer-icon-text, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var( --kendo-drawer-icon-text, $kendo-drawer-text )</code></td>
+    <td><code>var(--kendo-drawer-icon-text, var(--kendo-drawer-text, var(--kendo-color-on-app-surface, #242424)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Drawer item icon.</div></div>
@@ -360,8 +400,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-item-hover-bg, $kendo-drawer-item-bg )</code></td>
-    <td><code>var(--kendo-drawer-item-hover-bg, var(--kendo-drawer-item-bg, var(--kendo-drawer-bg, var(--kendo-color-surface-alt, #ffffff))))</code></td>
+    <td><code>var( --kendo-drawer-item-hover-bg, k-color(surface-alt) )</code></td>
+    <td><code>var(--kendo-drawer-item-hover-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Drawer item.</div></div>
@@ -370,8 +410,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-item-hover-text, k-color(primary-hover) )</code></td>
-    <td><code>var(--kendo-drawer-item-hover-text, var(--kendo-color-primary-hover, #106ebe))</code></td>
+    <td><code>var( --kendo-drawer-item-hover-text, $kendo-drawer-item-text )</code></td>
+    <td><code>var(--kendo-drawer-item-hover-text, var(--kendo-drawer-item-text, var(--kendo-drawer-text, var(--kendo-color-on-app-surface, #242424))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Drawer item.</div></div>
@@ -380,8 +420,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-hover-icon-text</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-item-hover-icon-text, k-color(primary-hover) )</code></td>
-    <td><code>var(--kendo-drawer-item-hover-icon-text, var(--kendo-color-primary-hover, #106ebe))</code></td>
+    <td><code>var( --kendo-drawer-item-hover-icon-text, $kendo-drawer-item-icon-text )</code></td>
+    <td><code>var(--kendo-drawer-item-hover-icon-text, var(--kendo-drawer-icon-text, var(--kendo-drawer-text, var(--kendo-color-on-app-surface, #242424))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Drawer item icon.</div></div>
@@ -391,7 +431,7 @@ The following table lists the available variables for customization.
     <td>$kendo-drawer-item-focus-bg</td>
     <td>String</td>
     <td><code>var( --kendo-drawer-item-focus-bg, $kendo-drawer-item-bg )</code></td>
-    <td><code>var(--kendo-drawer-item-focus-bg, var(--kendo-drawer-item-bg, var(--kendo-drawer-bg, var(--kendo-color-surface-alt, #ffffff))))</code></td>
+    <td><code>var(--kendo-drawer-item-focus-bg, var(--kendo-drawer-item-bg, var(--kendo-drawer-bg, var(--kendo-color-secondary-subtle, #f0f0f0))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Drawer item.</div></div>
@@ -401,7 +441,7 @@ The following table lists the available variables for customization.
     <td>$kendo-drawer-item-focus-text</td>
     <td>String</td>
     <td><code>var( --kendo-drawer-item-focus-text, $kendo-drawer-item-text )</code></td>
-    <td><code>var(--kendo-drawer-item-focus-text, var(--kendo-drawer-item-text, var(--kendo-drawer-text, var(--kendo-color-on-app-surface, #323130))))</code></td>
+    <td><code>var(--kendo-drawer-item-focus-text, var(--kendo-drawer-item-text, var(--kendo-drawer-text, var(--kendo-color-on-app-surface, #242424))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Drawer item.</div></div>
@@ -410,8 +450,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-focus-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-item-focus-shadow, inset 0 0 0 1px k-color(base-emphasis) )</code></td>
-    <td><code>var(--kendo-drawer-item-focus-shadow, inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
+    <td><code>var( --kendo-drawer-item-focus-shadow, inset 0 0 0 2px k-color(border-alt) )</code></td>
+    <td><code>var(--kendo-drawer-item-focus-shadow, inset 0 0 0 2px var(--kendo-color-border-alt, #000000))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Drawer item.</div></div>
@@ -421,7 +461,7 @@ The following table lists the available variables for customization.
     <td>$kendo-drawer-item-focus-icon-text</td>
     <td>String</td>
     <td><code>var( --kendo-drawer-item-focus-icon-text, $kendo-drawer-item-icon-text )</code></td>
-    <td><code>var(--kendo-drawer-item-focus-icon-text, var(--kendo-drawer-icon-text, var(--kendo-color-primary, #0078d4)))</code></td>
+    <td><code>var(--kendo-drawer-item-focus-icon-text, var(--kendo-drawer-icon-text, var(--kendo-drawer-text, var(--kendo-color-on-app-surface, #242424))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Drawer item icon.</div></div>
@@ -430,8 +470,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-selected-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-item-selected-font-weight, var( --kendo-font-weight-bold, normal ) )</code></td>
-    <td><code>var(--kendo-drawer-item-selected-font-weight, var(--kendo-font-weight-bold, normal))</code></td>
+    <td><code>var( --kendo-drawer-item-selected-font-weight, var( --kendo-font-weight-semibold, 600 ) )</code></td>
+    <td><code>var(--kendo-drawer-item-selected-font-weight, var(--kendo-font-weight-semibold, 600))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the selected Drawer item.</div></div>
@@ -440,8 +480,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-selected-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-item-selected-bg, k-color(base-active) )</code></td>
-    <td><code>var(--kendo-drawer-item-selected-bg, var(--kendo-color-base-active, #edebe9))</code></td>
+    <td><code>var( --kendo-drawer-item-selected-bg, $kendo-drawer-item-bg )</code></td>
+    <td><code>var(--kendo-drawer-item-selected-bg, var(--kendo-drawer-item-bg, var(--kendo-drawer-bg, var(--kendo-color-secondary-subtle, #f0f0f0))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Drawer item.</div></div>
@@ -450,8 +490,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-selected-text</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-item-selected-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-drawer-item-selected-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var( --kendo-drawer-item-selected-text, $kendo-drawer-item-text )</code></td>
+    <td><code>var(--kendo-drawer-item-selected-text, var(--kendo-drawer-item-text, var(--kendo-drawer-text, var(--kendo-color-on-app-surface, #242424))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Drawer item.</div></div>
@@ -460,8 +500,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-selected-icon-text</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-item-selected-icon-text, k-color(primary-active) )</code></td>
-    <td><code>var(--kendo-drawer-item-selected-icon-text, var(--kendo-color-primary-active, #005a9e))</code></td>
+    <td><code>var( --kendo-drawer-item-selected-icon-text, k-color(primary) )</code></td>
+    <td><code>var(--kendo-drawer-item-selected-icon-text, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Drawer item icon.</div></div>
@@ -470,8 +510,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-selected-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-item-selected-hover-bg, k-color(base-subtle-active) )</code></td>
-    <td><code>var(--kendo-drawer-item-selected-hover-bg, var(--kendo-color-base-subtle-active, #d2d0ce))</code></td>
+    <td><code>var( --kendo-drawer-item-selected-hover-bg, k-color(surface-alt) )</code></td>
+    <td><code>var(--kendo-drawer-item-selected-hover-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered Drawer item.</div></div>
@@ -480,8 +520,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-selected-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-item-selected-hover-text, k-color(on-base) )</code></td>
-    <td><code>var(--kendo-drawer-item-selected-hover-text, var(--kendo-color-on-base, #323130))</code></td>
+    <td><code>var( --kendo-drawer-item-selected-hover-text, $kendo-drawer-item-text )</code></td>
+    <td><code>var(--kendo-drawer-item-selected-hover-text, var(--kendo-drawer-item-text, var(--kendo-drawer-text, var(--kendo-color-on-app-surface, #242424))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected and hovered Drawer item.</div></div>

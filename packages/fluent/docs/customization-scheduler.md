@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-scheduler-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var( --kendo-scheduler-bg, k-color(app-surface) )</code></td>
+    <td><code>var(--kendo-scheduler-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-text</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-scheduler-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-scheduler-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Scheduler.</div></div>
@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-border</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-scheduler-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var( --kendo-scheduler-border, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
+    <td><code>var(--kendo-scheduler-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Scheduler.</div></div>
@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-selected-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-selected-bg, k-color(primary-subtle) )</code></td>
-    <td><code>var(--kendo-scheduler-selected-bg, var(--kendo-color-primary-subtle, #deecf9))</code></td>
+    <td><code>var( --kendo-scheduler-selected-bg, k-color(primary-active) )</code></td>
+    <td><code>var(--kendo-scheduler-selected-bg, var(--kendo-color-primary-active, #0f548c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected row in Scheduler.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-selected-text</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-selected-text, $kendo-scheduler-text )</code></td>
-    <td><code>var(--kendo-scheduler-selected-text, var(--kendo-scheduler-text, var(--kendo-color-on-app-surface, #323130)))</code></td>
+    <td><code>var(--kendo-scheduler-selected-text, var(--kendo-scheduler-text, var(--kendo-color-on-app-surface, #242424)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected row in Scheduler.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-selected-border</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-selected-border, $kendo-scheduler-border )</code></td>
-    <td><code>var(--kendo-scheduler-selected-border, var(--kendo-scheduler-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)))</code></td>
+    <td><code>var(--kendo-scheduler-selected-border, var(--kendo-scheduler-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected row in Scheduler.</div></div>
@@ -130,8 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-toolbar-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-toolbar-bg, var( --kendo-toolbar-bg, $kendo-toolbar-bg ) )</code></td>
-    <td><code>var(--kendo-scheduler-toolbar-bg, var(--kendo-toolbar-bg, var(--kendo-toolbar-bg, var(--kendo-color-surface, #faf9f8))))</code></td>
+    <td><code>var( --kendo-scheduler-toolbar-bg, k-color(app-surface) )</code></td>
+    <td><code>var(--kendo-scheduler-toolbar-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler ToolBar.</div></div>
@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-toolbar-text</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-toolbar-text, var( --kendo-toolbar-text, $kendo-toolbar-text ) )</code></td>
-    <td><code>var(--kendo-scheduler-toolbar-text, var(--kendo-toolbar-text, var(--kendo-toolbar-text, var(--kendo-color-on-app-surface, #323130))))</code></td>
+    <td><code>var( --kendo-scheduler-toolbar-text, k-color(on-app-surface) )</code></td>
+    <td><code>var(--kendo-scheduler-toolbar-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Scheduler ToolBar.</div></div>
@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-toolbar-border</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-toolbar-border, var( --kendo-toolbar-border, $kendo-toolbar-border ) )</code></td>
-    <td><code>var(--kendo-scheduler-toolbar-border, var(--kendo-toolbar-border, var(--kendo-toolbar-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))))</code></td>
+    <td><code>var( --kendo-scheduler-toolbar-border, k-color(border) )</code></td>
+    <td><code>var(--kendo-scheduler-toolbar-border, var(--kendo-color-border, rgba(36, 36, 36, 0.72)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Scheduler ToolBar.</div></div>
@@ -168,20 +168,10 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-footer-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-scheduler-footer-bg, var( --kendo-toolbar-bg, $kendo-toolbar-bg ) )</code></td>
-    <td><code>var(--kendo-scheduler-footer-bg, var(--kendo-toolbar-bg, var(--kendo-toolbar-bg, var(--kendo-color-surface, #faf9f8))))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler footer.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-scheduler-footer-text</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-footer-text, var( --kendo-toolbar-text, $kendo-toolbar-text ) )</code></td>
-    <td><code>var(--kendo-scheduler-footer-text, var(--kendo-toolbar-text, var(--kendo-toolbar-text, var(--kendo-color-on-app-surface, #323130))))</code></td>
+    <td><code>var(--kendo-scheduler-footer-text, var(--kendo-toolbar-text, var(--kendo-toolbar-text, var(--kendo-color-on-app-surface, #242424))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Scheduler footer.</div></div>
@@ -191,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-footer-border</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-footer-border, var( --kendo-toolbar-border, $kendo-toolbar-border ) )</code></td>
-    <td><code>var(--kendo-scheduler-footer-border, var(--kendo-toolbar-border, var(--kendo-toolbar-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))))</code></td>
+    <td><code>var(--kendo-scheduler-footer-border, var(--kendo-toolbar-border, var(--kendo-toolbar-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Scheduler footer.</div></div>
@@ -261,7 +251,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-event-bg</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-event-bg, k-color(primary) )</code></td>
-    <td><code>var(--kendo-scheduler-event-bg, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-scheduler-event-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler event.</div></div>
@@ -271,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-event-text</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-event-text, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-scheduler-event-text, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-scheduler-event-text, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Scheduler event.</div></div>
@@ -281,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-event-border</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-event-border, $kendo-scheduler-event-bg )</code></td>
-    <td><code>var(--kendo-scheduler-event-border, var(--kendo-scheduler-event-bg, var(--kendo-color-primary, #0078d4)))</code></td>
+    <td><code>var(--kendo-scheduler-event-border, var(--kendo-scheduler-event-bg, var(--kendo-color-primary, #0f6cbd)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Scheduler event.</div></div>
@@ -310,8 +300,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-event-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-event-hover-bg, k-color(base-hover) )</code></td>
-    <td><code>var(--kendo-scheduler-event-hover-bg, var(--kendo-color-base-hover, #f3f2f1))</code></td>
+    <td><code>var( --kendo-scheduler-event-hover-bg, k-color(primary-hover) )</code></td>
+    <td><code>var(--kendo-scheduler-event-hover-bg, var(--kendo-color-primary-hover, #115ea3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Scheduler event.</div></div>
@@ -320,8 +310,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-event-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-event-hover-text, k-color(on-base) )</code></td>
-    <td><code>var(--kendo-scheduler-event-hover-text, var(--kendo-color-on-base, #323130))</code></td>
+    <td><code>var( --kendo-scheduler-event-hover-text, k-color(on-primary) )</code></td>
+    <td><code>var(--kendo-scheduler-event-hover-text, var(--kendo-color-on-primary, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Scheduler event.</div></div>
@@ -331,7 +321,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-event-hover-border</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-event-hover-border, color-mix(in srgb, k-color(border) 10%, transparent) )</code></td>
-    <td><code>var(--kendo-scheduler-event-hover-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent))</code></td>
+    <td><code>var(--kendo-scheduler-event-hover-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 10%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Scheduler event.</div></div>
@@ -361,7 +351,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-event-selected-bg</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-event-selected-bg, k-color(primary-active) )</code></td>
-    <td><code>var(--kendo-scheduler-event-selected-bg, var(--kendo-color-primary-active, #005a9e))</code></td>
+    <td><code>var(--kendo-scheduler-event-selected-bg, var(--kendo-color-primary-active, #0f548c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Scheduler event.</div></div>
@@ -371,7 +361,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-event-selected-text</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-event-selected-text, $kendo-scheduler-event-text )</code></td>
-    <td><code>var(--kendo-scheduler-event-selected-text, var(--kendo-scheduler-event-text, var(--kendo-color-app-surface, #ffffff)))</code></td>
+    <td><code>var(--kendo-scheduler-event-selected-text, var(--kendo-scheduler-event-text, var(--kendo-color-app-surface, #fafafa)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Scheduler event.</div></div>
@@ -381,7 +371,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-event-selected-border</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-event-selected-border, $kendo-scheduler-event-bg )</code></td>
-    <td><code>var(--kendo-scheduler-event-selected-border, var(--kendo-scheduler-event-bg, var(--kendo-color-primary, #0078d4)))</code></td>
+    <td><code>var(--kendo-scheduler-event-selected-border, var(--kendo-scheduler-event-bg, var(--kendo-color-primary, #0f6cbd)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected Scheduler event.</div></div>
@@ -471,7 +461,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-nonwork-bg</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-nonwork-bg, k-color(surface) )</code></td>
-    <td><code>var(--kendo-scheduler-nonwork-bg, var(--kendo-color-surface, #faf9f8))</code></td>
+    <td><code>var(--kendo-scheduler-nonwork-bg, var(--kendo-color-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the non-working hours in the Scheduler.</div></div>
@@ -491,7 +481,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-othermonth-bg</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-othermonth-bg, k-color(surface) )</code></td>
-    <td><code>var(--kendo-scheduler-othermonth-bg, var(--kendo-color-surface, #faf9f8))</code></td>
+    <td><code>var(--kendo-scheduler-othermonth-bg, var(--kendo-color-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the preceding/subsequent month cells in the Calendar.</div></div>
@@ -551,7 +541,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-yearview-indicator-calc-offset-top</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-calendar-cell-size} - (#{$kendo-calendar-cell-padding-y} * 2) )</code></td>
-    <td><code>calc(var(--kendo-calendar-cell-size, 28px) - var(--kendo-spacing-1, 0.25rem) * 2)</code></td>
+    <td><code>calc(var(--kendo-calendar-cell-size, 32px) - var(--kendo-spacing-1, 0.25rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top position of the days with events indicator of the year view in the Scheduler.</div></div>
@@ -581,7 +571,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-yearview-indicator-bg</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-yearview-indicator-bg, k-color(primary) )</code></td>
-    <td><code>var(--kendo-scheduler-yearview-indicator-bg, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-scheduler-yearview-indicator-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the days with events indicator of the year view in the Scheduler.</div></div>
@@ -591,7 +581,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-yearview-indicator-selected-bg</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-yearview-indicator-selected-bg, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-scheduler-yearview-indicator-selected-bg, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-scheduler-yearview-indicator-selected-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected days with events indicator of the year view in the Scheduler.</div></div>
@@ -631,7 +621,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-tooltip-bg</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-tooltip-bg, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-scheduler-tooltip-bg, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-scheduler-tooltip-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler Tooltip.</div></div>
@@ -641,7 +631,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-tooltip-text</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-tooltip-text, k-color(subtle) )</code></td>
-    <td><code>var(--kendo-scheduler-tooltip-text, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var(--kendo-scheduler-tooltip-text, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Scheduler Tooltip.</div></div>
@@ -661,7 +651,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-tooltip-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-tooltip-shadow, k-elevation(5) )</code></td>
-    <td><code>var(--kendo-scheduler-tooltip-shadow, var(--kendo-elevation-5, 0 1.8px 5.4px rgba(0, 0, 0, 0.1), 0 9.6px 21.6px rgba(0, 0, 0, 0.13)))</code></td>
+    <td><code>var(--kendo-scheduler-tooltip-shadow, var(--kendo-elevation-5, 0 8px 16px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.12)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Scheduler Tooltip.</div></div>
@@ -761,7 +751,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-tooltip-callout-color</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-tooltip-callout-color, $kendo-scheduler-tooltip-bg )</code></td>
-    <td><code>var(--kendo-scheduler-tooltip-callout-color, var(--kendo-scheduler-tooltip-bg, var(--kendo-color-app-surface, #ffffff)))</code></td>
+    <td><code>var(--kendo-scheduler-tooltip-callout-color, var(--kendo-scheduler-tooltip-bg, var(--kendo-color-app-surface, #fafafa)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Scheduler Tooltip callout.</div></div>
@@ -791,7 +781,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-marquee-color</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-marquee-color, k-color(primary) )</code></td>
-    <td><code>var(--kendo-scheduler-marquee-color, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-scheduler-marquee-color, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Scheduler marquee.</div></div>

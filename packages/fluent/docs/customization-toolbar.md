@@ -30,8 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-toolbar-sm-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-toolbar-sm-padding-x, #{k-spacing(1)} )</code></td>
-    <td><code>var(--kendo-toolbar-sm-padding-x, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var( --kendo-toolbar-sm-padding-x, calc( #{k-spacing(2)} + 1px ) )</code></td>
+    <td><code>var(--kendo-toolbar-sm-padding-x, calc(var(--kendo-spacing-2, 0.5rem) + 1px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Toolbar.</div></div>
@@ -40,8 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-md-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-toolbar-md-padding-x, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-toolbar-md-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var( --kendo-toolbar-md-padding-x, calc( #{k-spacing(3)} + 1px ) )</code></td>
+    <td><code>var(--kendo-toolbar-md-padding-x, calc(var(--kendo-spacing-3, 0.75rem) + 1px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Toolbar.</div></div>
@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-lg-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-toolbar-lg-padding-x, #{k-spacing(2.5)} )</code></td>
-    <td><code>var(--kendo-toolbar-lg-padding-x, var(--kendo-spacing-2\.5, 0.625rem))</code></td>
+    <td><code>var( --kendo-toolbar-lg-padding-x, calc( #{k-spacing(4.5)} + 1px ))</code></td>
+    <td><code>var(--kendo-toolbar-lg-padding-x, calc(var(--kendo-spacing-4\.5, 1.125rem) + 1px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Toolbar.</div></div>
@@ -60,8 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-sm-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-toolbar-sm-padding-y, #{k-spacing(1)} )</code></td>
-    <td><code>var(--kendo-toolbar-sm-padding-y, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var( --kendo-toolbar-sm-padding-y, calc( #{k-spacing(0.5)} + 1px ) )</code></td>
+    <td><code>var(--kendo-toolbar-sm-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Toolbar.</div></div>
@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-md-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-toolbar-md-padding-y, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-toolbar-md-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var( --kendo-toolbar-md-padding-y, calc( #{k-spacing(0.5)} + 1px ) )</code></td>
+    <td><code>var(--kendo-toolbar-md-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Toolbar.</div></div>
@@ -80,8 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-lg-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-toolbar-lg-padding-y, #{k-spacing(2.5)} )</code></td>
-    <td><code>var(--kendo-toolbar-lg-padding-y, var(--kendo-spacing-2\.5, 0.625rem))</code></td>
+    <td><code>var( --kendo-toolbar-lg-padding-y, calc( #{k-spacing(0.5)} + 1px ) )</code></td>
+    <td><code>var(--kendo-toolbar-lg-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Toolbar.</div></div>
@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-sm-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-toolbar-sm-spacing, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-toolbar-sm-spacing, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var( --kendo-toolbar-sm-spacing, #{k-spacing(3)} )</code></td>
+    <td><code>var(--kendo-toolbar-sm-spacing, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the tools of the small Toolbar.</div></div>
@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-md-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-toolbar-md-spacing, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-toolbar-md-spacing, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var( --kendo-toolbar-md-spacing, #{k-spacing(3)} )</code></td>
+    <td><code>var(--kendo-toolbar-md-spacing, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the tools of the medium Toolbar.</div></div>
@@ -110,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-lg-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-toolbar-lg-spacing, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-toolbar-lg-spacing, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var( --kendo-toolbar-lg-spacing, #{k-spacing(3)} )</code></td>
+    <td><code>var(--kendo-toolbar-lg-spacing, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the tools of the large Toolbar.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-sm-separator-height</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-sm-separator-height, #{$kendo-button-sm-calc-size} )</code></td>
-    <td><code>var(--kendo-toolbar-sm-separator-height, calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-sm-padding-y, var(--kendo-spacing-1, 0.25rem)) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
+    <td><code>var(--kendo-toolbar-sm-separator-height, calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-button-sm-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small Toolbar button separator.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-md-separator-height</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-md-separator-height, #{$kendo-button-md-calc-size} )</code></td>
-    <td><code>var(--kendo-toolbar-md-separator-height, calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, var(--kendo-spacing-1\.5, 0.375rem)) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
+    <td><code>var(--kendo-toolbar-md-separator-height, calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium Toolbar button separator.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-lg-separator-height</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-lg-separator-height, #{$kendo-button-lg-calc-size} )</code></td>
-    <td><code>var(--kendo-toolbar-lg-separator-height, calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
+    <td><code>var(--kendo-toolbar-lg-separator-height, calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-button-lg-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large Toolbar button separator.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-bg</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-bg, #{k-color(surface)} )</code></td>
-    <td><code>var(--kendo-toolbar-bg, var(--kendo-color-surface, #faf9f8))</code></td>
+    <td><code>var(--kendo-toolbar-bg, var(--kendo-color-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Toolbar.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-text</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-toolbar-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-toolbar-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Toolbar.</div></div>
@@ -210,8 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-border</td>
     <td>String</td>
-    <td><code>var( --kendo-toolbar-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
-    <td><code>var(--kendo-toolbar-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var( --kendo-toolbar-border, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
+    <td><code>var(--kendo-toolbar-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the Toolbar.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-scroll-overlay</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-scroll-overlay, #{$kendo-toolbar-bg, color-mix(in srgb, k-color(app-surface) 0%, transparent)} )</code></td>
-    <td><code>var(--kendo-toolbar-scroll-overlay, var(--kendo-toolbar-bg, var(--kendo-color-surface, #faf9f8)), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
+    <td><code>var(--kendo-toolbar-scroll-overlay, var(--kendo-toolbar-bg, var(--kendo-color-surface, #ffffff)), color-mix(in srgb, var(--kendo-color-app-surface, #fafafa) 0%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left and right scroll overlay of the Toolbar.</div></div>
@@ -240,8 +240,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-outline-border</td>
     <td>String</td>
-    <td><code>var( --kendo-toolbar-outline-border, #{k-color(border)} )</code></td>
-    <td><code>var(--kendo-toolbar-outline-border, var(--kendo-color-border, #8a8886))</code></td>
+    <td><code>var( --kendo-toolbar-outline-border, $kendo-toolbar-border )</code></td>
+    <td><code>var(--kendo-toolbar-outline-border, var(--kendo-toolbar-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the outline Toolbar.</div></div>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-outline-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-toolbar-outline-border-width, #{$kendo-toolbar-border-width} )</code></td>
+    <td><code>var( --kendo-toolbar-outline-border-width, $kendo-toolbar-border-width )</code></td>
     <td><code>var(--kendo-toolbar-outline-border-width, var(--kendo-toolbar-border-width, 1px))</code></td>
 </tr>
 <tr>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-outline-scroll-overlay</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-outline-scroll-overlay, #{k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)} )</code></td>
-    <td><code>var(--kendo-toolbar-outline-scroll-overlay, var(--kendo-color-app-surface, #ffffff), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
+    <td><code>var(--kendo-toolbar-outline-scroll-overlay, var(--kendo-color-app-surface, #fafafa), color-mix(in srgb, var(--kendo-color-app-surface, #fafafa) 0%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left and right scroll overlay of the outline Toolbar.</div></div>
@@ -280,8 +280,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-flat-border</td>
     <td>String</td>
-    <td><code>var( --kendo-toolbar-flat-border, #{$kendo-toolbar-border} )</code></td>
-    <td><code>var(--kendo-toolbar-flat-border, var(--kendo-toolbar-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)))</code></td>
+    <td><code>var( --kendo-toolbar-flat-border, transparent )</code></td>
+    <td><code>var(--kendo-toolbar-flat-border, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the flat Toolbar.</div></div>
@@ -291,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-flat-scroll-overlay</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-flat-scroll-overlay, #{k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)} )</code></td>
-    <td><code>var(--kendo-toolbar-flat-scroll-overlay, var(--kendo-color-app-surface, #ffffff), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
+    <td><code>var(--kendo-toolbar-flat-scroll-overlay, var(--kendo-color-app-surface, #fafafa), color-mix(in srgb, var(--kendo-color-app-surface, #fafafa) 0%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left and right scroll overlay of the flat Toolbar.</div></div>
@@ -341,7 +341,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-item-focus-outline-color</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-item-focus-outline-color, #{k-color(base-emphasis)} )</code></td>
-    <td><code>var(--kendo-toolbar-item-focus-outline-color, var(--kendo-color-base-emphasis, #605e5c))</code></td>
+    <td><code>var(--kendo-toolbar-item-focus-outline-color, var(--kendo-color-base-emphasis, #d1d1d1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Toolbar item.</div></div>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
         separator-height: $kendo-toolbar-lg-separator-height
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-toolbar-sm-padding-x, var(--kendo-spacing-1, 0.25rem))","padding-y":"var(--kendo-toolbar-sm-padding-y, var(--kendo-spacing-1, 0.25rem))","spacing":"var(--kendo-toolbar-sm-spacing, var(--kendo-spacing-2, 0.5rem))","separator-height":"var(--kendo-toolbar-sm-separator-height, calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-sm-padding-y, var(--kendo-spacing-1, 0.25rem)) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li><li>md: "padding-x":"var(--kendo-toolbar-md-padding-x, var(--kendo-spacing-2, 0.5rem))","padding-y":"var(--kendo-toolbar-md-padding-y, var(--kendo-spacing-2, 0.5rem))","spacing":"var(--kendo-toolbar-md-spacing, var(--kendo-spacing-2, 0.5rem))","separator-height":"var(--kendo-toolbar-md-separator-height, calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, var(--kendo-spacing-1\\.5, 0.375rem)) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li><li>lg: "padding-x":"var(--kendo-toolbar-lg-padding-x, var(--kendo-spacing-2\\.5, 0.625rem))","padding-y":"var(--kendo-toolbar-lg-padding-y, var(--kendo-spacing-2\\.5, 0.625rem))","spacing":"var(--kendo-toolbar-lg-spacing, var(--kendo-spacing-2, 0.5rem))","separator-height":"var(--kendo-toolbar-lg-separator-height, calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-toolbar-sm-padding-x, calc(var(--kendo-spacing-2, 0.5rem) + 1px))","padding-y":"var(--kendo-toolbar-sm-padding-y, calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px))","spacing":"var(--kendo-toolbar-sm-spacing, var(--kendo-spacing-3, 0.75rem))","separator-height":"var(--kendo-toolbar-sm-separator-height, calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-button-sm-padding-y, calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li><li>md: "padding-x":"var(--kendo-toolbar-md-padding-x, calc(var(--kendo-spacing-3, 0.75rem) + 1px))","padding-y":"var(--kendo-toolbar-md-padding-y, calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px))","spacing":"var(--kendo-toolbar-md-spacing, var(--kendo-spacing-3, 0.75rem))","separator-height":"var(--kendo-toolbar-md-separator-height, calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li><li>lg: "padding-x":"var(--kendo-toolbar-lg-padding-x, calc(var(--kendo-spacing-4\\.5, 1.125rem) + 1px))","padding-y":"var(--kendo-toolbar-lg-padding-y, calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px))","spacing":"var(--kendo-toolbar-lg-spacing, var(--kendo-spacing-3, 0.75rem))","separator-height":"var(--kendo-toolbar-lg-separator-height, calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-button-lg-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Toolbar.</div></div>

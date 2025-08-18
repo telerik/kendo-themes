@@ -30,8 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-h1-font-size</td>
     <td>Number</td>
-    <td><code>32px</code></td>
-    <td><code>32px</code></td>
+    <td><code>80px</code></td>
+    <td><code>80px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the highest level heading.</div></div>
@@ -40,8 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h2-font-size</td>
     <td>Number</td>
-    <td><code>28px</code></td>
-    <td><code>28px</code></td>
+    <td><code>68px</code></td>
+    <td><code>68px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the second highest level heading.</div></div>
@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h3-font-size</td>
     <td>Number</td>
-    <td><code>24px</code></td>
-    <td><code>24px</code></td>
+    <td><code>40px</code></td>
+    <td><code>40px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the third highest level heading.</div></div>
@@ -60,8 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h4-font-size</td>
     <td>Number</td>
-    <td><code>20px</code></td>
-    <td><code>20px</code></td>
+    <td><code>32px</code></td>
+    <td><code>32px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the fourth highest level heading.</div></div>
@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h5-font-size</td>
     <td>Number</td>
-    <td><code>18px</code></td>
-    <td><code>18px</code></td>
+    <td><code>28px</code></td>
+    <td><code>28px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the fifth highest level heading.</div></div>
@@ -80,8 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h6-font-size</td>
     <td>Number</td>
-    <td><code>16px</code></td>
-    <td><code>16px</code></td>
+    <td><code>24px</code></td>
+    <td><code>24px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the sixth highest level heading.</div></div>
@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h1-line-height</td>
     <td>Number</td>
-    <td><code>40px</code></td>
-    <td><code>40px</code></td>
+    <td><code>100px</code></td>
+    <td><code>100px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the highest level heading.</div></div>
@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h2-line-height</td>
     <td>Number</td>
-    <td><code>36px</code></td>
-    <td><code>36px</code></td>
+    <td><code>92px</code></td>
+    <td><code>92px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the second highest level heading.</div></div>
@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h3-line-height</td>
     <td>Number</td>
-    <td><code>32px</code></td>
-    <td><code>32px</code></td>
+    <td><code>52px</code></td>
+    <td><code>52px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the third highest level heading.</div></div>
@@ -170,8 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h4-line-height</td>
     <td>Number</td>
-    <td><code>28px</code></td>
-    <td><code>28px</code></td>
+    <td><code>40px</code></td>
+    <td><code>40px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the fourth highest level heading.</div></div>
@@ -180,8 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h5-line-height</td>
     <td>Number</td>
-    <td><code>24px</code></td>
-    <td><code>24px</code></td>
+    <td><code>36px</code></td>
+    <td><code>36px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the fifth highest level heading.</div></div>
@@ -420,7 +420,7 @@ The following table lists the available variables for customization.
         margin: $kendo-h6-margin
     )
 )</code></td>
-    <td><ul><li>h1: "font-size":"32px","font-family":"var(--kendo-font-family, inherit)","line-height":"40px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h2: "font-size":"28px","font-family":"var(--kendo-font-family, inherit)","line-height":"36px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h3: "font-size":"24px","font-family":"var(--kendo-font-family, inherit)","line-height":"32px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h4: "font-size":"20px","font-family":"var(--kendo-font-family, inherit)","line-height":"28px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h5: "font-size":"18px","font-family":"var(--kendo-font-family, inherit)","line-height":"24px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h6: "font-size":"16px","font-family":"var(--kendo-font-family, inherit)","line-height":"22px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li></ul></td>
+    <td><ul><li>h1: "font-size":"80px","font-family":"var(--kendo-font-family, inherit)","line-height":"100px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h2: "font-size":"68px","font-family":"var(--kendo-font-family, inherit)","line-height":"92px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h3: "font-size":"40px","font-family":"var(--kendo-font-family, inherit)","line-height":"52px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h4: "font-size":"32px","font-family":"var(--kendo-font-family, inherit)","line-height":"40px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h5: "font-size":"28px","font-family":"var(--kendo-font-family, inherit)","line-height":"36px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h6: "font-size":"24px","font-family":"var(--kendo-font-family, inherit)","line-height":"32px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The headings Map.</div></div>
@@ -600,7 +600,7 @@ The following table lists the available variables for customization.
     <td>$kendo-code-text</td>
     <td>String</td>
     <td><code>var( --kendo-code-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-code-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-code-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the code tag.</div></div>
@@ -610,7 +610,7 @@ The following table lists the available variables for customization.
     <td>$kendo-code-border</td>
     <td>String</td>
     <td><code>var( --kendo-code-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-code-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-code-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the code tag.</div></div>
@@ -639,8 +639,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display3-font-size</td>
     <td>Number</td>
-    <td><code>68px</code></td>
-    <td><code>68px</code></td>
+    <td><code>112px</code></td>
+    <td><code>112px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the third largest display text.</div></div>
@@ -699,8 +699,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display1-line-height</td>
     <td>Number</td>
-    <td><code>118px</code></td>
-    <td><code>118px</code></td>
+    <td><code>180px</code></td>
+    <td><code>180px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the largest display text.</div></div>
@@ -709,8 +709,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display2-line-height</td>
     <td>Number</td>
-    <td><code>94px</code></td>
-    <td><code>94px</code></td>
+    <td><code>160px</code></td>
+    <td><code>160px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the second largest display text.</div></div>
@@ -719,8 +719,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display3-line-height</td>
     <td>Number</td>
-    <td><code>76px</code></td>
-    <td><code>76px</code></td>
+    <td><code>140px</code></td>
+    <td><code>140px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the third largest display text.</div></div>
@@ -729,8 +729,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display4-line-height</td>
     <td>Number</td>
-    <td><code>52px</code></td>
-    <td><code>52px</code></td>
+    <td><code>120px</code></td>
+    <td><code>120px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the fourth largest display text.</div></div>
@@ -739,8 +739,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display1-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-font-weight-semibold, normal )</code></td>
-    <td><code>var(--kendo-font-weight-semibold, normal)</code></td>
+    <td><code>var( --kendo-font-weight-normal, normal )</code></td>
+    <td><code>var(--kendo-font-weight-normal, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the largest display text.</div></div>
@@ -749,8 +749,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display2-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-font-weight-semibold, normal )</code></td>
-    <td><code>var(--kendo-font-weight-semibold, normal)</code></td>
+    <td><code>var( --kendo-font-weight-normal, normal )</code></td>
+    <td><code>var(--kendo-font-weight-normal, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the second largest display text.</div></div>
@@ -759,8 +759,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display3-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-font-weight-semibold, normal )</code></td>
-    <td><code>var(--kendo-font-weight-semibold, normal)</code></td>
+    <td><code>var( --kendo-font-weight-normal, normal )</code></td>
+    <td><code>var(--kendo-font-weight-normal, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the third largest display text.</div></div>
@@ -769,8 +769,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display4-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-font-weight-semibold, normal )</code></td>
-    <td><code>var(--kendo-font-weight-semibold, normal)</code></td>
+    <td><code>var( --kendo-font-weight-normal, normal )</code></td>
+    <td><code>var(--kendo-font-weight-normal, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the fourth largest display text.</div></div>
@@ -849,7 +849,7 @@ The following table lists the available variables for customization.
         letter-spacing: $kendo-display4-letter-spacing
     )
 )</code></td>
-    <td><ul><li>1: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 9)","font-family":"var(--kendo-font-family, inherit)","line-height":"118px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)"</li><li>2: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 6)","font-family":"var(--kendo-font-family, inherit)","line-height":"94px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)"</li><li>3: "font-size":"68px","font-family":"var(--kendo-font-family, inherit)","line-height":"76px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)"</li><li>4: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 3)","font-family":"var(--kendo-font-family, inherit)","line-height":"52px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)"</li></ul></td>
+    <td><ul><li>1: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 9)","font-family":"var(--kendo-font-family, inherit)","line-height":"180px","font-weight":"var(--kendo-font-weight-normal, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)"</li><li>2: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 6)","font-family":"var(--kendo-font-family, inherit)","line-height":"160px","font-weight":"var(--kendo-font-weight-normal, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)"</li><li>3: "font-size":"112px","font-family":"var(--kendo-font-family, inherit)","line-height":"140px","font-weight":"var(--kendo-font-weight-normal, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)"</li><li>4: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 3)","font-family":"var(--kendo-font-family, inherit)","line-height":"120px","font-weight":"var(--kendo-font-weight-normal, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The displays Map.</div></div>

@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-message-box-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-message-box-padding-y, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-message-box-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var( --kendo-message-box-padding-y, k-spacing(2.5) )</code></td>
+    <td><code>var(--kendo-message-box-padding-y, var(--kendo-spacing-2\.5, 0.625rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the message box.</div></div>
@@ -60,8 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-message-box-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-message-box-border-width, 0 )</code></td>
-    <td><code>var(--kendo-message-box-border-width, 0)</code></td>
+    <td><code>var( --kendo-message-box-border-width, 1px )</code></td>
+    <td><code>var(--kendo-message-box-border-width, 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the message box.</div></div>
@@ -75,6 +75,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border style of the message box.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-message-box-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The radius of the border around the message box.</div></div>
     </td>
 </tr>
 <tr>
@@ -100,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-message-box-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-message-box-line-height, var(--kendo-line-height-sm, normal) )</code></td>
-    <td><code>var(--kendo-message-box-line-height, var(--kendo-line-height-sm, normal))</code></td>
+    <td><code>var( --kendo-message-box-line-height, var(--kendo-line-height-lg, normal) )</code></td>
+    <td><code>var(--kendo-message-box-line-height, var(--kendo-line-height-lg, normal))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the message box.</div></div>
@@ -131,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-message-box-link-text</td>
     <td>String</td>
     <td><code>var( --kendo-message-box-link-text, k-color(primary) )</code></td>
-    <td><code>var(--kendo-message-box-link-text, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-message-box-link-text, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the message box links.</div></div>
@@ -141,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-message-box-link-hover-text</td>
     <td>String</td>
     <td><code>var( --kendo-message-box-link-hover-text, k-color(primary-hover) )</code></td>
-    <td><code>var(--kendo-message-box-link-hover-text, var(--kendo-color-primary-hover, #106ebe))</code></td>
+    <td><code>var(--kendo-message-box-link-hover-text, var(--kendo-color-primary-hover, #115ea3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover text color of the message box links.</div></div>

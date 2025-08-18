@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-text</td>
     <td>String</td>
     <td><code>var(--kendo-color-gradient-text, k-color(on-app-surface))</code></td>
-    <td><code>var(--kendo-color-gradient-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-color-gradient-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ColorGradient.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-border</td>
     <td>String</td>
     <td><code>var(--kendo-color-gradient-border, color-mix(in srgb, k-color(border) 16%, transparent))</code></td>
-    <td><code>var(--kendo-color-gradient-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-color-gradient-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ColorGradient.</div></div>
@@ -271,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-focus-border</td>
     <td>String</td>
     <td><code>var(--kendo-color-gradient-focus-border, color-mix(in srgb, k-color(border) 10%, transparent))</code></td>
-    <td><code>var(--kendo-color-gradient-focus-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent))</code></td>
+    <td><code>var(--kendo-color-gradient-focus-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 10%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused ColorGradient.</div></div>
@@ -381,7 +381,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-canvas-rectangle-border</td>
     <td>String</td>
     <td><code>var(--kendo-color-gradient-canvas-rectangle-border, color-mix(in srgb, k-color(border) 16%, transparent))</code></td>
-    <td><code>var(--kendo-color-gradient-canvas-rectangle-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-color-gradient-canvas-rectangle-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ColorGradient canvas hsv rectangle.</div></div>
@@ -421,7 +421,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-slider-border</td>
     <td>String</td>
     <td><code>var(--kendo-color-gradient-slider-border, color-mix(in srgb, k-color(border) 16%, transparent))</code></td>
-    <td><code>var(--kendo-color-gradient-slider-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-color-gradient-slider-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the ColorGradient slider.</div></div>
@@ -531,7 +531,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-draghandle-border</td>
     <td>String</td>
     <td><code>var(--kendo-color-gradient-draghandle-border, k-color(app-surface))</code></td>
-    <td><code>var(--kendo-color-gradient-draghandle-border, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-color-gradient-draghandle-border, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the ColorGradient canvas drag handle.</div></div>
@@ -540,28 +540,28 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-box-shadow-depth-2, none )</code></td>
-    <td><code>var(--kendo-box-shadow-depth-2, none)</code></td>
+    <td><code>k-elevation(4)</code></td>
+    <td><code>var(--kendo-elevation-4, 0 4px 8px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-gradient-draghandle-focus-border</td>
+    <td>$kendo-color-gradient-draghandle-outline</td>
     <td>String</td>
-    <td><code>var(--kendo-color-gradient-draghandle-focus-border, k-color(app-surface))</code></td>
-    <td><code>var(--kendo-color-gradient-draghandle-focus-border, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border, rgba(36, 36, 36, 0.72))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the focused ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-shadow</td>
     <td>String</td>
-    <td><code>var(--kendo-color-gradient-draghandle-focus-shadow, k-color(base-emphasis))</code></td>
-    <td><code>var(--kendo-color-gradient-draghandle-focus-shadow, var(--kendo-color-base-emphasis, #605e5c))</code></td>
+    <td><code>var(--kendo-color-gradient-draghandle-focus-shadow, k-color(border-alt))</code></td>
+    <td><code>var(--kendo-color-gradient-draghandle-focus-shadow, var(--kendo-color-border-alt, #000000))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus color of the outline around the ColorGradient canvas drag handle.</div></div>
@@ -571,7 +571,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-draghandle-hover-shadow</td>
     <td>String</td>
     <td><code>var(--kendo-color-gradient-draghandle-hover-shadow, k-color(base-emphasis))</code></td>
-    <td><code>var(--kendo-color-gradient-draghandle-hover-shadow, var(--kendo-color-base-emphasis, #605e5c))</code></td>
+    <td><code>var(--kendo-color-gradient-draghandle-hover-shadow, var(--kendo-color-base-emphasis, #d1d1d1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the outline around the ColorGradient canvas drag handle.</div></div>
@@ -641,7 +641,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-input-label-text</td>
     <td>String</td>
     <td><code>var(--kendo-color-gradient-input-label-text, k-color(subtle))</code></td>
-    <td><code>var(--kendo-color-gradient-input-label-text, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var(--kendo-color-gradient-input-label-text, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ColorGradient input labels.</div></div>

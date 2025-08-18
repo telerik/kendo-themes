@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popup-text</td>
     <td>String</td>
     <td><code>var( --kendo-popup-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-popup-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-popup-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the popup.</div></div>
@@ -130,8 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-popup-border</td>
     <td>String</td>
-    <td><code>var( --kendo-popup-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
-    <td><code>var(--kendo-popup-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var( --kendo-popup-border, transparent )</code></td>
+    <td><code>var(--kendo-popup-border, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the popup.</div></div>
@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-popup-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-popup-shadow, var( --kendo-box-shadow-depth-4, none ) )</code></td>
-    <td><code>var(--kendo-popup-shadow, var(--kendo-box-shadow-depth-4, none))</code></td>
+    <td><code>var( --kendo-popup-shadow, var( --kendo-box-shadow-depth-5, none ) )</code></td>
+    <td><code>var(--kendo-popup-shadow, var(--kendo-box-shadow-depth-5, none))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow around the popup.</div></div>

@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-track-bg</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-track-bg, k-color(surface) )</code></td>
-    <td><code>var(--kendo-timeline-track-bg, var(--kendo-color-surface, #faf9f8))</code></td>
+    <td><code>var(--kendo-timeline-track-bg, var(--kendo-color-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline track.</div></div>
@@ -211,27 +211,17 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-track-border-color</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-track-border-color, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-timeline-track-border-color, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-timeline-track-border-color, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Timeline track.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-timeline-arrow-inset-block-end</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-arrow-inset-block-end, calc( #{ $kendo-timeline-track-size } + #{ $kendo-timeline-track-wrap-padding-bottom } + #{ $kendo-timeline-track-border-width } ) )</code></td>
-    <td><code>var(--kendo-timeline-arrow-inset-block-end, calc(var(--kendo-spacing-1\.5, 0.375rem) + calc(var(--kendo-spacing-1\.5, 0.375rem) / 2) + var(--kendo-timeline-track-border-width, 1px)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The block end inset of the Timeline arrow.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-timeline-track-arrow-disabled-bg</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-track-arrow-disabled-bg, k-color(base-subtle) )</code></td>
-    <td><code>var(--kendo-timeline-track-arrow-disabled-bg, var(--kendo-color-base-subtle, #edebe9))</code></td>
+    <td><code>var(--kendo-timeline-track-arrow-disabled-bg, var(--kendo-color-base-subtle, #f5f5f5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Timeline arrow.</div></div>
@@ -241,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-track-arrow-disabled-text</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-track-arrow-disabled-text, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) )</code></td>
-    <td><code>var(--kendo-timeline-track-arrow-disabled-text, color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent))</code></td>
+    <td><code>var(--kendo-timeline-track-arrow-disabled-text, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 46%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Timeline arrow.</div></div>
@@ -290,8 +280,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-flag-border-radius</td>
     <td>String</td>
-    <td><code>var( --kendo-timeline-flag-border-radius, k-spacing(0.5) )</code></td>
-    <td><code>var(--kendo-timeline-flag-border-radius, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+    <td><code>var( --kendo-timeline-flag-border-radius, k-border-radius(md) )</code></td>
+    <td><code>var(--kendo-timeline-flag-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Timeline flag.</div></div>
@@ -361,7 +351,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-flag-bg</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-flag-bg, k-color(primary) )</code></td>
-    <td><code>var(--kendo-timeline-flag-bg, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-timeline-flag-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline flag.</div></div>
@@ -431,7 +421,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-card-header-text</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-card-header-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-timeline-card-header-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-timeline-card-header-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Timeline's Card header.</div></div>
@@ -441,7 +431,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-card-body-scroll-border</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-card-body-scroll-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-timeline-card-body-scroll-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-timeline-card-body-scroll-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the Timeline's Card body scroll.</div></div>
@@ -461,7 +451,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-card-scroll-thumb-hover</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-card-scroll-thumb-hover, color-mix(in srgb, k-color(border) 10%, transparent) )</code></td>
-    <td><code>var(--kendo-timeline-card-scroll-thumb-hover, color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent))</code></td>
+    <td><code>var(--kendo-timeline-card-scroll-thumb-hover, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 10%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Timeline's hovered card scroll thumb.</div></div>
@@ -471,7 +461,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-date-body-text</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-date-body-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-timeline-date-body-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-timeline-date-body-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Timeline date body.</div></div>
@@ -521,7 +511,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-vertical-border-radius</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-vertical-border-radius, k-border-radius(lg) )</code></td>
-    <td><code>var(--kendo-timeline-vertical-border-radius, var(--kendo-border-radius-lg, 0.5rem))</code></td>
+    <td><code>var(--kendo-timeline-vertical-border-radius, var(--kendo-border-radius-lg, 0.375rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the vertical Timeline.</div></div>
@@ -571,7 +561,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-circle-bg</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-circle-bg, k-color(primary) )</code></td>
-    <td><code>var(--kendo-timeline-circle-bg, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-timeline-circle-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline circle.</div></div>

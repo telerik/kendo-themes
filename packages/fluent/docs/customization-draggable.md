@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-drag-clue-text</td>
     <td>String</td>
     <td><code>var( --kendo-drag-clue-text, k-color(on-base) )</code></td>
-    <td><code>var(--kendo-drag-clue-text, var(--kendo-color-on-base, #323130))</code></td>
+    <td><code>var(--kendo-drag-clue-text, var(--kendo-color-on-base, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the drag clue.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-drag-clue-bg</td>
     <td>String</td>
     <td><code>var( --kendo-drag-clue-bg, k-color(base-active) )</code></td>
-    <td><code>var(--kendo-drag-clue-bg, var(--kendo-color-base-active, #edebe9))</code></td>
+    <td><code>var(--kendo-drag-clue-bg, var(--kendo-color-base-active, #ebebeb))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the drag clue.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-drag-clue-border</td>
     <td>String</td>
     <td><code>var( --kendo-drag-clue-border, color-mix(in srgb, k-color(border-alt) 76%, transparent) )</code></td>
-    <td><code>var(--kendo-drag-clue-border, color-mix(in srgb, var(--kendo-color-border-alt, #323130) 76%, transparent))</code></td>
+    <td><code>var(--kendo-drag-clue-border, color-mix(in srgb, var(--kendo-color-border-alt, #000000) 76%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the drag clue.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-drop-hint-bg</td>
     <td>String</td>
     <td><code>var( --kendo-drop-hint-bg, k-color(primary) )</code></td>
-    <td><code>var(--kendo-drop-hint-bg, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-drop-hint-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background-color of the drop hint.</div></div>

@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-bg, #{k-color(surface-alt)})</code></td>
+    <td><code>var(--kendo-gantt-bg, k-color(surface-alt))</code></td>
     <td><code>var(--kendo-gantt-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
 </tr>
 <tr>
@@ -80,8 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-text</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-text, #{k-color(on-app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-gantt-text, k-color(on-app-surface))</code></td>
+    <td><code>var(--kendo-gantt-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt.</div></div>
@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-border</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-border, #{color-mix(in srgb, k-color(border) 16%, transparent)})</code></td>
-    <td><code>var(--kendo-gantt-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-gantt-border, color-mix(in srgb, k-color(border) 26%, transparent))</code></td>
+    <td><code>var(--kendo-gantt-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-nonwork-bg</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-nonwork-bg, #{color-mix(in srgb, k-color(on-app-surface) 4%, transparent)})</code></td>
-    <td><code>var(--kendo-gantt-nonwork-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 4%, transparent))</code></td>
+    <td><code>var(--kendo-gantt-nonwork-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 4%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt non-working days.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-line-selected-fill</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-line-selected-fill, #{k-color(primary-active)})</code></td>
-    <td><code>var(--kendo-gantt-line-selected-fill, var(--kendo-color-primary-active, #005a9e))</code></td>
+    <td><code>var(--kendo-gantt-line-selected-fill, var(--kendo-color-primary-active, #0f548c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background fill of the selected Gantt connecting lines.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-dot-bg</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-dot-bg, #{k-color(on-app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-dot-bg, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-gantt-dot-bg, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt task dot.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-dot-border</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-dot-border, #{k-color(on-app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-dot-border, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-gantt-dot-border, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt task dot.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-dot-hover-bg</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-dot-hover-bg, #{k-color(app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-dot-hover-bg, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-gantt-dot-hover-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Gantt task dot.</div></div>
@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-dot-hover-border</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-dot-hover-border, #{k-color(on-app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-dot-hover-border, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-gantt-dot-hover-border, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Gantt task dot.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-milestone-bg</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-milestone-bg, #{k-color(on-app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-milestone-bg, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-gantt-milestone-bg, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt milestone.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-milestone-border</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-milestone-border, #{k-color(on-app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-milestone-border, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-gantt-milestone-border, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt milestone.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-milestone-selected-bg</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-milestone-selected-bg, #{k-color(primary)})</code></td>
-    <td><code>var(--kendo-gantt-milestone-selected-bg, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-gantt-milestone-selected-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt milestone.</div></div>
@@ -251,7 +251,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-milestone-selected-border</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-milestone-selected-border, #{k-color(primary)})</code></td>
-    <td><code>var(--kendo-gantt-milestone-selected-border, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-gantt-milestone-selected-border, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected Gantt milestone.</div></div>
@@ -260,8 +260,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-summary-bg, #{k-color(subtle)})</code></td>
-    <td><code>var(--kendo-gantt-summary-bg, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var(--kendo-gantt-summary-bg, k-color(dark-emphasis))</code></td>
+    <td><code>var(--kendo-gantt-summary-bg, var(--kendo-color-dark-emphasis, #616161))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt summary.</div></div>
@@ -270,8 +270,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-progress-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-summary-progress-bg, #{k-color(on-app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-summary-progress-bg, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-gantt-summary-progress-bg, k-color(dark))</code></td>
+    <td><code>var(--kendo-gantt-summary-progress-bg, var(--kendo-color-dark, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt summary progress.</div></div>
@@ -280,8 +280,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-selected-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-summary-selected-bg, #{k-color(primary-subtle-active)})</code></td>
-    <td><code>var(--kendo-gantt-summary-selected-bg, var(--kendo-color-primary-subtle-active, #abd1ef))</code></td>
+    <td><code>var(--kendo-gantt-summary-selected-bg, k-color(primary-emphasis))</code></td>
+    <td><code>var(--kendo-gantt-summary-selected-bg, var(--kendo-color-primary-emphasis, #abd1f8))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt summary.</div></div>
@@ -290,8 +290,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-progress-selected-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-summary-progress-selected-bg, #{k-color(primary)})</code></td>
-    <td><code>var(--kendo-gantt-summary-progress-selected-bg, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-gantt-summary-progress-selected-bg, k-color(primary))</code></td>
+    <td><code>var(--kendo-gantt-summary-progress-selected-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt summary progress.</div></div>
@@ -331,7 +331,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-task-bg</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-task-bg, #{k-color(subtle)})</code></td>
-    <td><code>var(--kendo-gantt-task-bg, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var(--kendo-gantt-task-bg, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt task.</div></div>
@@ -341,7 +341,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-task-text</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-task-text, #{k-color(app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-task-text, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-gantt-task-text, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt task.</div></div>
@@ -361,7 +361,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-task-progress-bg</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-task-progress-bg, #{k-color(on-app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-task-progress-bg, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-gantt-task-progress-bg, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt task progress.</div></div>
@@ -371,7 +371,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-task-progress-hover-bg</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-task-progress-hover-bg, #{k-color(on-app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-task-progress-hover-bg, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-gantt-task-progress-hover-bg, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Gantt task progress.</div></div>
@@ -381,7 +381,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-task-selected-bg</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-task-selected-bg, #{k-color(primary-subtle-active)})</code></td>
-    <td><code>var(--kendo-gantt-task-selected-bg, var(--kendo-color-primary-subtle-active, #abd1ef))</code></td>
+    <td><code>var(--kendo-gantt-task-selected-bg, var(--kendo-color-primary-subtle-active, #96c6fa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected the Gantt task.</div></div>
@@ -391,7 +391,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-task-selected-text</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-task-selected-text, #{k-color(app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-task-selected-text, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-gantt-task-selected-text, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Gantt task.</div></div>
@@ -411,7 +411,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-task-progress-selected-bg</td>
     <td>String</td>
     <td><code>var(--kendo-gantt-task-progress-selected-bg, #{k-color(primary)})</code></td>
-    <td><code>var(--kendo-gantt-task-progress-selected-bg, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-gantt-task-progress-selected-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt task progress.</div></div>
@@ -590,8 +590,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-planned-text</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-planned-text, #{k-color(app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-planned-text, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-gantt-planned-text, k-color(on-primary))</code></td>
+    <td><code>var(--kendo-gantt-planned-text, var(--kendo-color-on-primary, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt planned Tooltip.</div></div>
@@ -600,8 +600,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-planned-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-planned-bg, #{k-color(primary)})</code></td>
-    <td><code>var(--kendo-gantt-planned-bg, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-gantt-planned-bg, k-color(primary))</code></td>
+    <td><code>var(--kendo-gantt-planned-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt planned Tooltip.</div></div>
@@ -610,8 +610,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-planned-border</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-planned-border, #{k-color(primary)})</code></td>
-    <td><code>var(--kendo-gantt-planned-border, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-gantt-planned-border, k-color(primary))</code></td>
+    <td><code>var(--kendo-gantt-planned-border, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt planned Tooltip.</div></div>
@@ -620,8 +620,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-delayed-text</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-delayed-text, #{k-color(app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-delayed-text, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-gantt-delayed-text, k-color(on-error))</code></td>
+    <td><code>var(--kendo-gantt-delayed-text, var(--kendo-color-on-error, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt delayed task.</div></div>
@@ -630,8 +630,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-delayed-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-delayed-bg, #{k-color(error-emphasis)})</code></td>
-    <td><code>var(--kendo-gantt-delayed-bg, var(--kendo-color-error-emphasis, #a4262c))</code></td>
+    <td><code>var(--kendo-gantt-delayed-bg, k-color(error-emphasis))</code></td>
+    <td><code>var(--kendo-gantt-delayed-bg, var(--kendo-color-error-emphasis, #eeacb2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt delayed task.</div></div>
@@ -640,8 +640,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-delayed-bg-lighter</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-delayed-bg-lighter, #{k-color(error)})</code></td>
-    <td><code>var(--kendo-gantt-delayed-bg-lighter, var(--kendo-color-error, #c2666b))</code></td>
+    <td><code>var(--kendo-gantt-delayed-bg-lighter, k-color(error))</code></td>
+    <td><code>var(--kendo-gantt-delayed-bg-lighter, var(--kendo-color-error, #c50f1f))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The complement background color of the Gantt delayed task.</div></div>
@@ -650,8 +650,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-delayed-hover-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-delayed-hover-bg, #{k-color(error-on-subtle)})</code></td>
-    <td><code>var(--kendo-gantt-delayed-hover-bg, var(--kendo-color-error-on-subtle, #420f12))</code></td>
+    <td><code>var(--kendo-gantt-delayed-hover-bg, k-color(error-hover))</code></td>
+    <td><code>var(--kendo-gantt-delayed-hover-bg, var(--kendo-color-error-hover, #b10e1c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Gantt delayed task.</div></div>
@@ -660,8 +660,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-advanced-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-advanced-bg, #{k-color(success-emphasis)})</code></td>
-    <td><code>var(--kendo-gantt-advanced-bg, var(--kendo-color-success-emphasis, #107c10))</code></td>
+    <td><code>var(--kendo-gantt-advanced-bg, k-color(success))</code></td>
+    <td><code>var(--kendo-gantt-advanced-bg, var(--kendo-color-success, #107c10))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt advanced task.</div></div>
@@ -670,8 +670,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-advanced-bg-lighter</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-advanced-bg-lighter, #{k-color(success)})</code></td>
-    <td><code>var(--kendo-gantt-advanced-bg-lighter, var(--kendo-color-success, #55a554))</code></td>
+    <td><code>var(--kendo-gantt-advanced-bg-lighter, k-color(success-emphasis))</code></td>
+    <td><code>var(--kendo-gantt-advanced-bg-lighter, var(--kendo-color-success-emphasis, #9fd89f))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The complement background color of the Gantt advanced task.</div></div>
@@ -680,8 +680,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-advanced-hover-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-advanced-hover-bg, #{k-color(success-on-subtle)})</code></td>
-    <td><code>var(--kendo-gantt-advanced-hover-bg, var(--kendo-color-success-on-subtle, #063206))</code></td>
+    <td><code>var(--kendo-gantt-advanced-hover-bg, k-color(success-hover))</code></td>
+    <td><code>var(--kendo-gantt-advanced-hover-bg, var(--kendo-color-success-hover, #0e700e))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Gantt advanced task.</div></div>
@@ -690,8 +690,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-action-on-offset-text</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-action-on-offset-text, #{k-color(on-app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-action-on-offset-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-gantt-action-on-offset-text, k-color(on-app-surface))</code></td>
+    <td><code>var(--kendo-gantt-action-on-offset-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt delayed task action.</div></div>
@@ -730,8 +730,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-validation-tooltip-border</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-validation-tooltip-border, #{color-mix(in srgb, k-color(border) 16%, transparent)})</code></td>
-    <td><code>var(--kendo-gantt-validation-tooltip-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-gantt-validation-tooltip-border, color-mix(in srgb, k-color(border) 26%, transparent))</code></td>
+    <td><code>var(--kendo-gantt-validation-tooltip-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt validation Tooltip.</div></div>
@@ -740,8 +740,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-validation-tooltip-valid-border</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-validation-tooltip-valid-border, #{k-color(success)})</code></td>
-    <td><code>var(--kendo-gantt-validation-tooltip-valid-border, var(--kendo-color-success, #55a554))</code></td>
+    <td><code>var(--kendo-gantt-validation-tooltip-valid-border, k-color(success))</code></td>
+    <td><code>var(--kendo-gantt-validation-tooltip-valid-border, var(--kendo-color-success, #107c10))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the valid Gantt validation Tooltip.</div></div>
@@ -750,8 +750,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-validation-tooltip-invalid-border</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-validation-tooltip-invalid-border, #{k-color(error)})</code></td>
-    <td><code>var(--kendo-gantt-validation-tooltip-invalid-border, var(--kendo-color-error, #c2666b))</code></td>
+    <td><code>var(--kendo-gantt-validation-tooltip-invalid-border, k-color(error))</code></td>
+    <td><code>var(--kendo-gantt-validation-tooltip-invalid-border, var(--kendo-color-error, #c50f1f))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid Gantt validation Tooltip.</div></div>

@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-preview-border</td>
     <td>String</td>
     <td><code>var(--kendo-color-preview-border, color-mix(in srgb, k-color(on-app-surface) 28%, transparent))</code></td>
-    <td><code>var(--kendo-color-preview-border, color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent))</code></td>
+    <td><code>var(--kendo-color-preview-border, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 28%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the color preview.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-preview-hover-border</td>
     <td>String</td>
     <td><code>var(--kendo-color-preview-hover-border, color-mix(in srgb, k-color(on-app-surface) 28%, transparent))</code></td>
-    <td><code>var(--kendo-color-preview-hover-border, color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent))</code></td>
+    <td><code>var(--kendo-color-preview-hover-border, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 28%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover Border color of the color preview.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-preview-no-color-bg</td>
     <td>String</td>
     <td><code>var(--kendo-color-preview-no-color-bg, k-color(app-surface))</code></td>
-    <td><code>var(--kendo-color-preview-no-color-bg, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-color-preview-no-color-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the color preview when no color is selected.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-preview-no-color-text</td>
     <td>String</td>
     <td><code>var(--kendo-color-preview-no-color-text, k-color(error-on-surface))</code></td>
-    <td><code>var(--kendo-color-preview-no-color-text, var(--kendo-color-error-on-surface, #a4262c))</code></td>
+    <td><code>var(--kendo-color-preview-no-color-text, var(--kendo-color-error-on-surface, #c50f1f))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the color preview when no color is selected.</div></div>

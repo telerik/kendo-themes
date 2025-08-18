@@ -178,36 +178,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-bottom-nav-item-focus-offset</td>
-    <td>String</td>
-    <td><code>var( --kendo-bottom-nav-item-focus-offset, k-spacing(0.5) )</code></td>
-    <td><code>var(--kendo-bottom-nav-item-focus-offset, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the focused BottomNavigation item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-bottom-nav-item-focus-outline-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-bottom-nav-item-focus-outline-width, 1px )</code></td>
-    <td><code>var(--kendo-bottom-nav-item-focus-outline-width, 1px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused BottomNavigation item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-bottom-nav-item-focus-outline-style</td>
-    <td>String</td>
-    <td><code>var( --kendo-bottom-nav-item-focus-outline-style, solid )</code></td>
-    <td><code>var(--kendo-bottom-nav-item-focus-outline-style, solid)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline style of the focused BottomNavigation item.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-bottom-nav-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-box-shadow-depth-4, none )</code></td>
@@ -221,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-flat-text</td>
     <td>String</td>
     <td><code>var( --kendo-bottom-nav-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-bottom-nav-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-bottom-nav-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat BottomNavigation.</div></div>
@@ -231,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-flat-bg</td>
     <td>String</td>
     <td><code>var( --kendo-bottom-nav-bg, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-bottom-nav-bg, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-bottom-nav-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat BottomNavigation.</div></div>
@@ -241,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-flat-border</td>
     <td>String</td>
     <td><code>var( --kendo-bottom-nav-border, k-color(border) )</code></td>
-    <td><code>var(--kendo-bottom-nav-border, var(--kendo-color-border, #8a8886))</code></td>
+    <td><code>var(--kendo-bottom-nav-border, var(--kendo-color-border, rgba(36, 36, 36, 0.72)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat BottomNavigation.</div></div>
