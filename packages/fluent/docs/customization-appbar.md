@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-appbar-zindex</td>
     <td>String</td>
-    <td><code>var( --kendo-appbar-zindex, 1000 )</code></td>
+    <td><code>var( --kendo-appbar-zindex, k-z-index("banner") )</code></td>
     <td><code>var(--kendo-appbar-zindex, 1000)</code></td>
 </tr>
 <tr>

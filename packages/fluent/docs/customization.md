@@ -1096,7 +1096,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-appbar-zindex</td>
     <td>String</td>
-    <td><code>var( --kendo-appbar-zindex, 1000 )</code></td>
+    <td><code>var( --kendo-appbar-zindex, k-z-index("banner") )</code></td>
     <td><code>var(--kendo-appbar-zindex, 1000)</code></td>
 </tr>
 <tr>
