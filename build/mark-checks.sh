@@ -16,6 +16,7 @@ declare -a checks=( \
   'Status check > Lint styles' \
   'Status check > Visual' \
   'Status check > A11y' \
+  'Status check > Integration' \
   'Status check > Unit' \
   'Status check > HTML spec' \
 )
