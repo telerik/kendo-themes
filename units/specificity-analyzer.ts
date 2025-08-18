@@ -30,6 +30,7 @@ interface GetSelectorsSpecificityOptions {
   minSpecificity?: number;
   sourceMap?: any;
   exactComponentMatch?: boolean; // When true, uses smart component-aware filtering
+  directComponentOnly?: boolean; // When true, only includes direct component selectors (no nested/child selectors)
 }
 
 // Cache for official components to avoid re-extraction
@@ -43,6 +44,38 @@ function hasClassName(selector: string, className: string): boolean {
   // Use word boundary regex to match exact class name, not substring
   const classPattern = new RegExp(`\\.${className}(?=\\s|\\.|:|$|>|\\+|~)`);
   return classPattern.test(selector);
+}
+
+/**
+ * Check if a selector is a direct component selector (no nested/child selectors)
+ * Returns true for selectors that directly target the component itself, including
+ * cases where the base class might be missing (e.g., .k-button-solid-base)
+ */
+function isDirectComponentSelector(selector: string, componentClassName: string): boolean {
+  // 1. Skip selectors with combinators (spaces, >, +, ~) - these are nested/child selectors
+  if (selector.match(/\s+|>|\+|~/)) {
+    return false;
+  }
+
+  // 2. Extract the main class from the selector (first class after the dot)
+  const mainClass = selector.match(/^\.([k-][\w-]+)/)?.[1];
+  if (!mainClass) {
+    return false;
+  }
+
+  // 3. Check if it's an official component that's NOT our target component
+  const officialComponents = getOfficialComponents();
+  if (officialComponents.has(mainClass) && mainClass !== componentClassName) {
+    return false; // It's a different official component like k-button-group
+  }
+
+  // 4. Check if the class is actually related to our component
+  // Either it's the exact component class, or it starts with the component class followed by a dash
+  if (mainClass !== componentClassName && !mainClass.startsWith(componentClassName + '-')) {
+    return false; // k-grouping-dropclue doesn't start with k-grid, so exclude it
+  }
+
+  return true; // It's a direct component selector
 }
 
 /**
@@ -128,13 +161,20 @@ function resolveSourceLocation(sourceMap: any, cssLine: number, cssColumn: numbe
  * Parse CSS and extract selectors with their specificity and source locations
  */
 function getSelectorsSpecificity(css: string, options: GetSelectorsSpecificityOptions = {}): SelectorInfo[] {
-  const { filter, minSpecificity = 0, sourceMap, exactComponentMatch = true } = options;
+  const { filter, minSpecificity = 0, sourceMap, exactComponentMatch = true, directComponentOnly = false } = options;
   const selectors: SelectorInfo[] = [];
 
   const root = postcss.parse(css, { from: undefined });
 
   root.walkRules((rule) => {
     rule.selectors.forEach((selector) => {
+      // Apply directComponentOnly filter first if specified
+      if (directComponentOnly && filter) {
+        if (!isDirectComponentSelector(selector, filter)) {
+          return;
+        }
+      }
+
       // Apply filter if specified
       if (filter) {
         if (exactComponentMatch) {
@@ -494,7 +534,7 @@ function calculateSpecificityThreshold(selector: string, component: any | null =
 }
 
 // ESM exports
-export { calculateSpecificity, calculateSpecificityThreshold, getSelectorsSpecificity, detectVariants, detectOptions, detectStates, detectNestedComponents, detectSiblingCombinators, getOfficialComponents, hasClassName };
+export { calculateSpecificity, calculateSpecificityThreshold, getSelectorsSpecificity, detectVariants, detectOptions, detectStates, detectNestedComponents, detectSiblingCombinators, getOfficialComponents, hasClassName, isDirectComponentSelector };
 
 // CommonJS compatibility
 module.exports = {
@@ -508,4 +548,5 @@ module.exports = {
   detectSiblingCombinators,
   getOfficialComponents,
   hasClassName,
+  isDirectComponentSelector,
 };

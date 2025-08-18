@@ -1,20 +1,40 @@
 import "./theme.env.js";
 import { getSelectorsSpecificity, calculateSpecificityThreshold } from "../specificity-analyzer";
-import { Button } from "../../packages/html/src/button/button.spec";
+import { Grid } from "../../packages/html/src/grid/grid.spec";
 import * as sass from "sass";
 import * as path from "path";
 import { describe, it, expect } from "@jest/globals";
 
 const { testKendoComponent } = require("../utility");
 
-const component = "button";
+const component = "grid";
 const group = component;
-const className = Button.className;
-const dependencyClassNames = ["k-badge", "k-svg-icon"];
+const className = Grid.className;
+const dependencyClassNames = [
+    "k-progressbar",
+    "k-button",
+    "k-actions",
+    "k-toolbar",
+    "k-input",
+    // "k-textbox",  // Empty selector for .k-textbox {}
+    "k-checkbox",
+    "k-radio",
+    // "k-validator", // Empty selector for .k-validator {}
+    // "k-autocomplete", // Empty selector for .k-autocomplete {}
+    // "k-datetimepicker", // Empty selector for .k-datetimepicker {}
+    "k-dropdownlist",
+    "k-numerictextbox",
+    "k-menu",
+    "k-dialog",
+    "k-pager",
+    "k-chip",
+    //" k-skeleton", // Placeholder-line @extends .k-skeleton
+    "k-list",
+    "k-table",
+    "k-tabstrip"
+];
 const expected = [
-    "kendo-button-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-inner-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-border-width", // Variable customizations work, but is used by another variable.
+    "kendo-grid-padding-x", // Variable customizations work, but is used by another variable.
 ];
 const unexpected = [];
 
@@ -34,15 +54,15 @@ describe(`${component} CSS specificity`, () => {
     }
   );
 
-  const buttonSelectors = getSelectorsSpecificity(result.css, {
-    filter: Button.className,
+  const gridSelectors = getSelectorsSpecificity(result.css, {
+    filter: Grid.className,
     minSpecificity: 0,
     sourceMap: result.sourceMap,
   });
 
-  buttonSelectors.forEach((selectorInfo) => {
+  gridSelectors.forEach((selectorInfo) => {
     const { selector, specificityValue, sourceLocation } = selectorInfo;
-    const expectedSpecificity = calculateSpecificityThreshold(selector, Button);
+    const expectedSpecificity = calculateSpecificityThreshold(selector, Grid);
 
     it(`"${selector} (Expected: ${expectedSpecificity}, Actual: ${specificityValue})"`, () => {
       try {
@@ -54,4 +74,4 @@ describe(`${component} CSS specificity`, () => {
   });
 });
 
-testKendoComponent(component, group, Button.className, dependencyClassNames, [...expected, ...unexpected]);
+testKendoComponent(component, group, Grid.className, dependencyClassNames, [...expected, ...unexpected]);

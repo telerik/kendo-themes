@@ -1,20 +1,21 @@
 import "./theme.env.js";
 import { getSelectorsSpecificity, calculateSpecificityThreshold } from "../specificity-analyzer";
-import { Button } from "../../packages/html/src/button/button.spec";
+import { Checkbox } from "../../packages/html/src/checkbox/checkbox.spec";
 import * as sass from "sass";
 import * as path from "path";
 import { describe, it, expect } from "@jest/globals";
 
 const { testKendoComponent } = require("../utility");
 
-const component = "button";
+const component = "checkbox";
 const group = component;
-const className = Button.className;
-const dependencyClassNames = ["k-badge", "k-svg-icon"];
+const className = Checkbox.className;
+const dependencyClassNames = [];
 const expected = [
-    "kendo-button-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-inner-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-border-width", // Variable customizations work, but is used by another variable.
+    "kendo-checkbox-indicator-type", // Variable customizations work, but is used by another variable.
+    "kendo-checkbox-glyph-font-family", // Variable customizations work, but is used directly in CSS rule in the core.
+    "kendo-checkbox-checked-glyph", // Variable customizations work, but is used directly in CSS rule in the core.
+    "kendo-checkbox-indeterminate-glyph", // Variable customizations work, but is used directly in CSS rule in the core.
 ];
 const unexpected = [];
 
@@ -34,15 +35,15 @@ describe(`${component} CSS specificity`, () => {
     }
   );
 
-  const buttonSelectors = getSelectorsSpecificity(result.css, {
-    filter: Button.className,
+  const checkboxSelectors = getSelectorsSpecificity(result.css, {
+    filter: Checkbox.className,
     minSpecificity: 0,
     sourceMap: result.sourceMap,
   });
 
-  buttonSelectors.forEach((selectorInfo) => {
+  checkboxSelectors.forEach((selectorInfo) => {
     const { selector, specificityValue, sourceLocation } = selectorInfo;
-    const expectedSpecificity = calculateSpecificityThreshold(selector, Button);
+    const expectedSpecificity = calculateSpecificityThreshold(selector, Checkbox);
 
     it(`"${selector} (Expected: ${expectedSpecificity}, Actual: ${specificityValue})"`, () => {
       try {
@@ -54,4 +55,4 @@ describe(`${component} CSS specificity`, () => {
   });
 });
 
-testKendoComponent(component, group, Button.className, dependencyClassNames, [...expected, ...unexpected]);
+testKendoComponent(component, group, Checkbox.className, dependencyClassNames, [...expected, ...unexpected]);
