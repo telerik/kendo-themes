@@ -7,6 +7,7 @@
 @forward "./typography/index.import.scss";
 @forward "./border-radii/index.import.scss";
 @forward "./motion/index.import.scss";
+@forward "./z-index/index.import.scss";
 
 @use "./color-system/index.import.scss" as *;
 @use "./mixins/index.import.scss" as *;
