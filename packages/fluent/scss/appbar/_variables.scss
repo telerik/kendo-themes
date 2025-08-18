@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "../core/z-index/index.import.scss" as *;
 @use "../core/_index.scss" as *;
 
 /// The horizontal margin of the AppBar.
@@ -18,7 +19,7 @@ $kendo-appbar-padding-y: var( --kendo-appbar-padding-y, k-spacing(3.5) ) !defaul
 $kendo-appbar-border-width: var( --kendo-appbar-border-width, 0px ) !default;
 /// The z-index of the AppBar.
 /// @group appbar
-$kendo-appbar-zindex: var( --kendo-appbar-zindex, 1000 ) !default;
+$kendo-appbar-zindex: var( --kendo-appbar-zindex, k-z-index("banner") ) !default;
 /// The font family of the AppBar.
 /// @group appbar
 $kendo-appbar-font-family: var( --kendo-appbar-font-family, var( --kendo-font-family, inherit ) ) !default;

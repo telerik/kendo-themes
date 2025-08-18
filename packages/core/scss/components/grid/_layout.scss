@@ -5,6 +5,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "../../typography/index.import.scss" as *;
 @use "../../spacing/index.import.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 @use "./variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "../chip/_variables.scss" as *;
@@ -190,7 +191,7 @@
                 justify-content: center;
                 position: absolute;
                 inset-inline-end: $kendo-grid-header-menu-icon-spacing;
-                z-index: 1;
+                z-index: k-z-index("base", 1);
 
                 &:hover {
                     cursor: pointer;
@@ -682,7 +683,7 @@
         height: 25px;
         cursor: col-resize;
         position: absolute;
-        z-index: 2;
+        z-index: k-z-index("handle");
     }
 
 
@@ -721,7 +722,7 @@
         .k-grid-table {
             position: relative;
             float: inline-start;
-            z-index: 1;
+            z-index: k-z-index("base", 1);
         }
 
         > .k-height-container {
@@ -806,11 +807,11 @@
     .k-grid .k-grid-row-sticky,
     .k-grid .k-grid-footer-sticky {
         position: sticky;
-        z-index: 2;
+        z-index: k-z-index("base", 2);
 
         &.k-edit-cell {
             overflow: visible;
-            z-index: 3;
+            z-index: k-z-index("base", 3);
         }
     }
 
@@ -822,14 +823,13 @@
         position: absolute;
         inset-block-start: 0;
         inset-inline-start: 0;
-        z-index: -1;
+        z-index: k-z-index("bottom");
     }
 
     kendo-grid {
         .k-table-row.k-grid-row-sticky {
             border: 0;
             position: static;
-            z-index: auto;
         }
 
         .k-grid-row-sticky td,
@@ -840,14 +840,14 @@
             position: sticky;
             inset-block-start: inherit;
             inset-block-end: inherit;
-            z-index: 2;
+            z-index: k-z-index("base", 2);
         }
 
         .k-grid-row-sticky td.k-grid-content-sticky,
         .k-grid-row-sticky.k-table-alt-row td.k-grid-content-sticky,
         .k-grid-row-sticky .k-table-td.k-grid-content-sticky,
         .k-grid-row-sticky.k-table-alt-row .k-table-td.k-grid-content-sticky {
-            z-index: 3;
+            z-index: k-z-index("base", 3);
         }
 
         // Locked and sticky
@@ -858,12 +858,12 @@
 
         .k-grid-header .k-grid-column-menu,
         .k-grid-header .k-grid-header-menu {
-            z-index: 1;
+            z-index: k-z-index("base", 1);
         }
     }
 
     .k-grid-content-sticky.k-grid-row-sticky {
-        z-index: 3;
+        z-index: k-z-index("base", 3);
     }
 
     .k-grid .k-table .k-grid-header-sticky,
@@ -1071,7 +1071,7 @@
                 position: absolute;
                 background: none;
                 cursor: row-resize;
-                z-index: 2;
+                z-index: k-z-index("base", 2);
             }
         }
 
@@ -1142,7 +1142,7 @@
         }
     }
 
-    // Command cell
+     // Command cell
     .k-grid-stack-cell.k-command-cell {
         padding: 0;
         grid-column: 1 / -1;
@@ -1207,7 +1207,7 @@
         height: 100%;
         inset-block-start: 0;
         inset-inline-start: 0;
-        z-index: 100;
+        z-index: k-z-index("overlay");
 
         > .k-i-loading {
             position: absolute;
