@@ -5,11 +5,11 @@ module.exports = {
 
     mode: 'production',
     entry: {
-        bootstrap: './styles/bootstrap.scss',
-        classic: './styles/classic.scss',
-        default: './styles/default.scss',
-        fluent: './styles/fluent.scss',
-        material: './styles/material.scss'
+        bootstrap: './styles/bootstrap-theme.scss',
+        classic: './styles/classic-theme.scss',
+        default: './styles/default-theme.scss',
+        fluent: './styles/fluent-theme.scss',
+        material: './styles/material-theme.scss'
     },
 
     output: {
@@ -37,7 +37,7 @@ module.exports = {
                     {
                         loader: 'sass-loader',
                         options: {
-                            implementation: require('sass-embedded'),
+                            implementation: require('sass'),
                             sassOptions: {
                                 precision: 10,
                                 includePaths: [ '../../node_modules' ]

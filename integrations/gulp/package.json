@@ -6,7 +6,6 @@
   },
   "devDependencies": {
     "gulp": "latest",
-    "gulp-sass": "latest",
-    "sass-embedded": "latest"
+    "sass": "latest"
   }
 }

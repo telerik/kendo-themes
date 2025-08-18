@@ -16359,8 +16359,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-notification-line-height</td>
     <td>String</td>
-    <td><code>va( --kendo-line-height, normal )</code></td>
-    <td><code>va(--kendo-line-height, normal)</code></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Notification.</div></div>
