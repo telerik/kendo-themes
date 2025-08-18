@@ -222,7 +222,7 @@ k-generate-color-variations($name, $color, $theme) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_functions.import.scss#L200-L314
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_functions.import.scss#L187-L301
 @function k-generate-color-variations($name, $color, $theme) {
     $result: ();
 
@@ -364,7 +364,7 @@ k-color($key) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_functions.import.scss#L322-L330
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_functions.import.scss#L309-L317
 @function k-color($key) {
     $_color: map.get($kendo-colors, $key);
 

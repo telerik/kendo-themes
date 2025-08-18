@@ -88,16 +88,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-signature-disabled-opacity</td>
-    <td>String</td>
-    <td><code>var( --kendo-signature-disabled-opacity, .3 )</code></td>
-    <td><code>var(--kendo-signature-disabled-opacity, 0.3)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the disabled signature component.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-signature-line-width</td>
     <td>String</td>
     <td><code>var( --kendo-signature-line-width, 1px )</code></td>
@@ -120,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-signature-line-color</td>
     <td>String</td>
-    <td><code>var( --kendo-signature-line-color, color-mix(in srgb, k-color(info) 40%, transparent) )</code></td>
-    <td><code>var(--kendo-signature-line-color, color-mix(in srgb, var(--kendo-color-info, #0a7eff) 40%, transparent))</code></td>
+    <td><code>var( --kendo-signature-line-color, k-color(info-emphasis) )</code></td>
+    <td><code>var(--kendo-signature-line-color, var(--kendo-color-info-emphasis, #bfddf5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the row line of the signature component.</div></div>
@@ -130,8 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-signature-line-disabled-color</td>
     <td>String</td>
-    <td><code>var( --kendo-signature-line-disabled-color, color-mix(in srgb, k-color(on-app-surface) 28%, transparent) )</code></td>
-    <td><code>var(--kendo-signature-line-disabled-color, color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent))</code></td>
+    <td><code>var( --kendo-signature-line-disabled-color, color-mix(in srgb, k-color(on-app-surface) 30%, transparent) )</code></td>
+    <td><code>var(--kendo-signature-line-disabled-color, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 30%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the row line of the disabled signature component.</div></div>

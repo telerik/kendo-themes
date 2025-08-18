@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dropzone-bg</td>
     <td>String</td>
     <td><code>var( --kendo-dropzone-bg, #{k-color(surface)} )</code></td>
-    <td><code>var(--kendo-dropzone-bg, var(--kendo-color-surface, #faf9f8))</code></td>
+    <td><code>var(--kendo-dropzone-bg, var(--kendo-color-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the DropZone.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dropzone-text</td>
     <td>String</td>
     <td><code>var( --kendo-dropzone-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-dropzone-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-dropzone-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the dropzone.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dropzone-border</td>
     <td>String</td>
     <td><code>var( --kendo-dropzone-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
-    <td><code>var(--kendo-dropzone-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-dropzone-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the DropZone.</div></div>
@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-icon-text</td>
     <td>String</td>
-    <td><code>var( --kendo-dropzone-icon-text, #{k-color(subtle)} )</code></td>
-    <td><code>var(--kendo-dropzone-icon-text, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var( --kendo-dropzone-icon-text, color-mix(in srgb, #{k-color(on-app-surface)} 30%, transparent) )</code></td>
+    <td><code>var(--kendo-dropzone-icon-text, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 30%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the DropZone icon.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dropzone-icon-hover-text</td>
     <td>String</td>
     <td><code>var( --kendo-dropzone-icon-hover-text, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-dropzone-icon-hover-text, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-dropzone-icon-hover-text, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the icon when the dropzone is hovered.</div></div>
@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-hint-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-dropzone-hint-font-size, inherit )</code></td>
-    <td><code>var(--kendo-dropzone-hint-font-size, inherit)</code></td>
+    <td><code>var( --kendo-dropzone-hint-font-size, var( --kendo-font-size, inherit ) )</code></td>
+    <td><code>var(--kendo-dropzone-hint-font-size, var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the DropZone hint.</div></div>
@@ -170,8 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-hint-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-dropzone-hint-font-weight, var( --kendo-font-weight-bold, bold ) )</code></td>
-    <td><code>var(--kendo-dropzone-hint-font-weight, var(--kendo-font-weight-bold, bold))</code></td>
+    <td><code>var( --kendo-dropzone-hint-font-weight, var( --kendo-font-weight-semibold, 600 ) )</code></td>
+    <td><code>var(--kendo-dropzone-hint-font-weight, var(--kendo-font-weight-semibold, 600))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the DropZone hint.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dropzone-hint-text</td>
     <td>String</td>
     <td><code>var( --kendo-dropzone-hint-text, #{$kendo-dropzone-text} )</code></td>
-    <td><code>var(--kendo-dropzone-hint-text, var(--kendo-dropzone-text, var(--kendo-color-on-app-surface, #323130)))</code></td>
+    <td><code>var(--kendo-dropzone-hint-text, var(--kendo-dropzone-text, var(--kendo-color-on-app-surface, #242424)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the DropZone hint.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dropzone-note-text</td>
     <td>String</td>
     <td><code>var( --kendo-dropzone-note-text, #{k-color(subtle)} )</code></td>
-    <td><code>var(--kendo-dropzone-note-text, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var(--kendo-dropzone-note-text, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the DropZone note.</div></div>

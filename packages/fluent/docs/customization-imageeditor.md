@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-image-editor-text</td>
     <td>String</td>
     <td><code>var( --kendo-image-editor-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-image-editor-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-image-editor-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the imageeditor.</div></div>
@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-image-editor-border</td>
     <td>String</td>
     <td><code>var( --kendo-image-editor-border, color-mix(in srgb, #{k-color(border)} 16%, transparent) )</code></td>
-    <td><code>var(--kendo-image-editor-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-image-editor-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the imageeditor.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-image-editor-content-bg</td>
     <td>String</td>
     <td><code>var( --kendo-image-editor-content-bg, color-mix(in srgb, #{k-color(on-app-surface)} 23%, transparent) )</code></td>
-    <td><code>var(--kendo-image-editor-content-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 23%, transparent))</code></td>
+    <td><code>var(--kendo-image-editor-content-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 23%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor content background color.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-image-editor-crop-border</td>
     <td>String</td>
     <td><code>var( --kendo-image-editor-crop-border, #{k-color(app-surface)} )</code></td>
-    <td><code>var(--kendo-image-editor-crop-border, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-image-editor-crop-border, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Crop border color of the imageeditor.</div></div>

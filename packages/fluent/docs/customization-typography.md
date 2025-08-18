@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-line-height-lg</td>
     <td>Number</td>
-    <td><code>1.5</code></td>
+    <td><code>1.33</code></td>
     <td><code>1.5</code></td>
 </tr>
 <tr>
@@ -145,6 +145,56 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base line height in ems across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight-light</td>
+    <td>Number</td>
+    <td><code>300</code></td>
+    <td><code>300</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The light font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight-normal</td>
+    <td>Number</td>
+    <td><code>400</code></td>
+    <td><code>400</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight-medium</td>
+    <td>Number</td>
+    <td><code>500</code></td>
+    <td><code>500</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight-semibold</td>
+    <td>Number</td>
+    <td><code>600</code></td>
+    <td><code>600</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The semibold font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight-bold</td>
+    <td>Number</td>
+    <td><code>700</code></td>
+    <td><code>700</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bold font weight across all components.</div></div>
     </td>
 </tr>
 <tr>
@@ -181,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-line-heights</td>
     <td>Map</td>
     <td><code>$_default-line-heights</code></td>
-    <td><ul><li>xs: 1</li><li>sm: 1.25</li><li>md: 1.4285714285714286</li><li>lg: 1.5</li></ul></td>
+    <td><ul><li>xs: 1</li><li>sm: 1.25</li><li>md: 1.4285714285714286</li><li>lg: 1.33</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights map</div></div>
@@ -225,56 +275,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra light font weight across all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-weight-light</td>
-    <td>Number</td>
-    <td><code>300</code></td>
-    <td><code>300</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The light font weight across all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-weight-normal</td>
-    <td>Number</td>
-    <td><code>$kendo-font-weight</code></td>
-    <td><code>400</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The normal font weight across all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-weight-medium</td>
-    <td>Number</td>
-    <td><code>500</code></td>
-    <td><code>500</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium font weight across all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-weight-semibold</td>
-    <td>Number</td>
-    <td><code>600</code></td>
-    <td><code>600</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The semibold font weight across all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-weight-bold</td>
-    <td>Number</td>
-    <td><code>700</code></td>
-    <td><code>700</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bold font weight across all components.</div></div>
     </td>
 </tr>
 <tr>

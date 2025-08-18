@@ -96,7 +96,7 @@ The following table lists the available variables for customization.
     "light": k-color(light),
     "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
 )</code></td>
-    <td><ul><li>primary: var(--kendo-color-primary, #0078d4)</li><li>secondary: var(--kendo-color-secondary, #979593)</li><li>tertiary: var(--kendo-color-tertiary, #2b88d8)</li><li>info: var(--kendo-color-info, #0a7eff)</li><li>success: var(--kendo-color-success, #55a554)</li><li>warning: var(--kendo-color-warning, #ffc80a)</li><li>error: var(--kendo-color-error, #c2666b)</li><li>dark: var(--kendo-color-dark, #323130)</li><li>light: var(--kendo-color-light, #d2d0ce)</li><li>inverse: var(--kendo-color-dark, #323130)</li></ul></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>secondary: var(--kendo-color-secondary, #ebebeb)</li><li>tertiary: var(--kendo-color-tertiary, #c239b3)</li><li>info: var(--kendo-color-info, #3a96dd)</li><li>success: var(--kendo-color-success, #107c10)</li><li>warning: var(--kendo-color-warning, #f7630c)</li><li>error: var(--kendo-color-error, #c50f1f)</li><li>dark: var(--kendo-color-dark, #242424)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #242424)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Avatar variations.</div></div>

@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-no-data-text</td>
     <td>String</td>
     <td><code>var( --kendo-no-data-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-no-data-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-no-data-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the 'No Data' text.</div></div>

@@ -58,36 +58,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-palette-tile-outline-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-color-palette-tile-outline-width, 1px )</code></td>
-    <td><code>var(--kendo-color-palette-tile-outline-width, 1px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the ColorPalette tile.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-palette-tile-outline-style</td>
-    <td>String</td>
-    <td><code>var( --kendo-color-palette-tile-outline-style, solid )</code></td>
-    <td><code>var(--kendo-color-palette-tile-outline-style, solid)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline style of the ColorPalette tile.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-palette-tile-outline</td>
-    <td>String</td>
-    <td><code>var( --kendo-color-palette-tile-outline, transparent )</code></td>
-    <td><code>var(--kendo-color-palette-tile-outline, transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the ColorPalette tile.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-palette-tile-width</td>
     <td>String</td>
     <td><code>k-spacing(6)</code></td>
@@ -168,73 +138,33 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-palette-tile-focus-outline</td>
-    <td>String</td>
-    <td><code>var( --kendo-color-palette-tile-focus-outline, #{k-color(base-emphasis)} )</code></td>
-    <td><code>var(--kendo-color-palette-tile-focus-outline, var(--kendo-color-base-emphasis, #605e5c))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the ColorPalette focused tile.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-palette-tile-focus-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-tile-focus-shadow, inset 0 0 0 2px #{k-color(app-surface)} )</code></td>
-    <td><code>var(--kendo-color-palette-tile-focus-shadow, inset 0 0 0 2px var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var( --kendo-color-palette-tile-focus-shadow, inset 0 0 0 2px #{k-color(border-alt)}, inset 0 0 0 3px #{k-color(app-surface)} )</code></td>
+    <td><code>var(--kendo-color-palette-tile-focus-shadow, inset 0 0 0 2px var(--kendo-color-border-alt, #000000), inset 0 0 0 3px var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette focused tile.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-palette-tile-hover-outline</td>
-    <td>String</td>
-    <td><code>var( --kendo-color-palette-tile-hover-outline, #{color-mix(in srgb, k-color(border) 10%, transparent)} )</code></td>
-    <td><code>var(--kendo-color-palette-tile-hover-outline, color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the ColorPalette hovered tile.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-palette-tile-hover-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-tile-hover-shadow, inset 0 0 0 2px #{$kendo-color-palette-tile-hover-outline}, inset 0 0 0 4px #{k-color(app-surface)} )</code></td>
-    <td><code>var(--kendo-color-palette-tile-hover-shadow, inset 0 0 0 2px var(--kendo-color-palette-tile-hover-outline, color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent)), inset 0 0 0 4px var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var( --kendo-color-palette-tile-hover-shadow, inset 0 0 0 2px #{k-color(primary)}, inset 0 0 0 3px #{k-color(app-surface)} )</code></td>
+    <td><code>var(--kendo-color-palette-tile-hover-shadow, inset 0 0 0 2px var(--kendo-color-primary, #0f6cbd), inset 0 0 0 3px var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette hovered tile.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-palette-tile-selected-outline</td>
-    <td>String</td>
-    <td><code>var( --kendo-color-palette-tile-selected-outline, #{$kendo-color-palette-tile-hover-outline} )</code></td>
-    <td><code>var(--kendo-color-palette-tile-selected-outline, var(--kendo-color-palette-tile-hover-outline, color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the ColorPalette selected tile.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-palette-tile-selected-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-tile-selected-shadow, #{$kendo-color-palette-tile-hover-shadow} )</code></td>
-    <td><code>var(--kendo-color-palette-tile-selected-shadow, var(--kendo-color-palette-tile-hover-shadow, inset 0 0 0 2px var(--kendo-color-palette-tile-hover-outline, color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent)), inset 0 0 0 4px var(--kendo-color-app-surface, #ffffff)))</code></td>
+    <td><code>var( --kendo-color-palette-tile-selected-shadow, inset 0 0 0 3px #{k-color(primary)}, inset 0 0 0 5px #{k-color(app-surface)} )</code></td>
+    <td><code>var(--kendo-color-palette-tile-selected-shadow, inset 0 0 0 3px var(--kendo-color-primary, #0f6cbd), inset 0 0 0 5px var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette selected tile.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-palette-tile-selected-hover-outline</td>
-    <td>String</td>
-    <td><code>var( --kendo-color-palette-tile-selected-hover-outline, #{$kendo-color-palette-tile-focus-outline} )</code></td>
-    <td><code>var(--kendo-color-palette-tile-selected-hover-outline, var(--kendo-color-palette-tile-focus-outline, var(--kendo-color-base-emphasis, #605e5c)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the ColorPalette selected hover tile.</div></div>
     </td>
 </tr>
 <tr>

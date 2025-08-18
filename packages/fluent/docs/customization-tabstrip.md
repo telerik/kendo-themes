@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-text</td>
     <td>String</td>
     <td><code>var( --kendo-tabstrip-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-tabstrip-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-tabstrip-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TabStrip.</div></div>
@@ -270,8 +270,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-md-item-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-md-item-padding-x, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-tabstrip-md-item-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var( --kendo-tabstrip-md-item-padding-x, #{k-spacing(2.5)} )</code></td>
+    <td><code>var(--kendo-tabstrip-md-item-padding-x, var(--kendo-spacing-2\.5, 0.625rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium TabStrip items.</div></div>
@@ -321,7 +321,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-item-text</td>
     <td>String</td>
     <td><code>var( --kendo-tabstrip-item-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-tabstrip-item-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-tabstrip-item-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TabStrip items.</div></div>
@@ -341,7 +341,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-item-disabled-text</td>
     <td>String</td>
     <td><code>var( --kendo-tabstrip-item-disabled-text, #{color-mix(in srgb, k-color(on-app-surface) 46%, transparent)} )</code></td>
-    <td><code>var(--kendo-tabstrip-item-disabled-text, color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent))</code></td>
+    <td><code>var(--kendo-tabstrip-item-disabled-text, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 46%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled TabStrip items.</div></div>
@@ -390,8 +390,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-item-hover-bg, #{k-color(base-hover)} )</code></td>
-    <td><code>var(--kendo-tabstrip-item-hover-bg, var(--kendo-color-base-hover, #f3f2f1))</code></td>
+    <td><code>var( --kendo-tabstrip-item-hover-bg, color-mix(in srgb, #{k-color(on-app-surface) 5%, transparent}) )</code></td>
+    <td><code>var(--kendo-tabstrip-item-hover-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 5%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered TabStrip items.</div></div>
@@ -401,7 +401,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-item-hover-text</td>
     <td>String</td>
     <td><code>var( --kendo-tabstrip-item-hover-text, #{k-color(on-base)} )</code></td>
-    <td><code>var(--kendo-tabstrip-item-hover-text, var(--kendo-color-on-base, #323130))</code></td>
+    <td><code>var(--kendo-tabstrip-item-hover-text, var(--kendo-color-on-base, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered TabStrip items.</div></div>
@@ -411,7 +411,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-item-hover-border</td>
     <td>String</td>
     <td><code>var( --kendo-tabstrip-item-hover-border, #{k-color(base-hover)} )</code></td>
-    <td><code>var(--kendo-tabstrip-item-hover-border, var(--kendo-color-base-hover, #f3f2f1))</code></td>
+    <td><code>var(--kendo-tabstrip-item-hover-border, var(--kendo-color-base-hover, #f5f5f5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered TabStrip items.</div></div>
@@ -420,8 +420,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-selected-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-item-selected-bg, #{k-color(surface-alt)} )</code></td>
-    <td><code>var(--kendo-tabstrip-item-selected-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var( --kendo-tabstrip-item-selected-bg, color-mix(in srgb, #{k-color(on-app-surface) 12%, transparent}) )</code></td>
+    <td><code>var(--kendo-tabstrip-item-selected-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected TabStrip items.</div></div>
@@ -431,7 +431,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-item-selected-text</td>
     <td>String</td>
     <td><code>var( --kendo-tabstrip-item-selected-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-tabstrip-item-selected-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-tabstrip-item-selected-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected TabStrip items.</div></div>
@@ -441,7 +441,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-item-selected-border</td>
     <td>String</td>
     <td><code>var( --kendo-tabstrip-item-selected-border, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-tabstrip-item-selected-border, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-tabstrip-item-selected-border, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected TabStrip items.</div></div>
@@ -450,8 +450,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-selected-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-item-selected-font-weight, var( --kendo-font-weight-bold, normal ) )</code></td>
-    <td><code>var(--kendo-tabstrip-item-selected-font-weight, var(--kendo-font-weight-bold, normal))</code></td>
+    <td><code>var( --kendo-tabstrip-item-selected-font-weight, var( --kendo-font-weight-semibold, 600 ) )</code></td>
+    <td><code>var(--kendo-tabstrip-item-selected-font-weight, var(--kendo-font-weight-semibold, 600))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the selected TabStrip items.</div></div>
@@ -461,7 +461,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-item-focus-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-tabstrip-item-focus-shadow, #{$kendo-list-item-focus-shadow} )</code></td>
-    <td><code>var(--kendo-tabstrip-item-focus-shadow, var(--kendo-list-item-focus-shadow, inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)))</code></td>
+    <td><code>var(--kendo-tabstrip-item-focus-shadow, var(--kendo-list-item-focus-shadow, inset 0 0 0 2px var(--kendo-color-border-alt, #000000)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused TabStrip items.</div></div>
@@ -471,7 +471,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-item-dragging-text</td>
     <td>String</td>
     <td><code>var( --kendo-tabstrip-item-dragging-text, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-tabstrip-item-dragging-text, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-tabstrip-item-dragging-text, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the dragged TabStrip items.</div></div>
@@ -480,8 +480,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-indicator-size</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-indicator-size, #{k-spacing(0.5)} )</code></td>
-    <td><code>var(--kendo-tabstrip-indicator-size, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+    <td><code>var( --kendo-tabstrip-indicator-size, #{k-spacing(1)} )</code></td>
+    <td><code>var(--kendo-tabstrip-indicator-size, var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the TabStrip indicator.</div></div>
@@ -491,7 +491,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-indicator-color</td>
     <td>String</td>
     <td><code>var( --kendo-tabstrip-indicator-color, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-tabstrip-indicator-color, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-tabstrip-indicator-color, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TabStrip ripple.</div></div>
@@ -500,8 +500,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-content-padding-x, #{k-spacing(3)} )</code></td>
-    <td><code>var(--kendo-tabstrip-content-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var( --kendo-tabstrip-content-padding-x, #{k-spacing(2.5)} )</code></td>
+    <td><code>var(--kendo-tabstrip-content-padding-x, var(--kendo-spacing-2\.5, 0.625rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TabStrip content.</div></div>
@@ -510,8 +510,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-content-padding-y, #{k-spacing(1.5)} )</code></td>
-    <td><code>var(--kendo-tabstrip-content-padding-y, var(--kendo-spacing-1\.5, 0.375rem))</code></td>
+    <td><code>var( --kendo-tabstrip-content-padding-y, #{k-spacing(2.5)} )</code></td>
+    <td><code>var(--kendo-tabstrip-content-padding-y, var(--kendo-spacing-2\.5, 0.625rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TabStrip content.</div></div>
@@ -541,7 +541,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-content-text</td>
     <td>String</td>
     <td><code>var( --kendo-tabstrip-content-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-tabstrip-content-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-tabstrip-content-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TabStrip content.</div></div>
@@ -561,7 +561,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-content-focus-border</td>
     <td>String</td>
     <td><code>var( --kendo-tabstrip-content-focus-border, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-tabstrip-content-focus-border, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-tabstrip-content-focus-border, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused TabStrip content.</div></div>
@@ -571,7 +571,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-scroll-overlay</td>
     <td>String</td>
     <td><code>var( --kendo-tabstrip-scroll-overlay, #{k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)} )</code></td>
-    <td><code>var(--kendo-tabstrip-scroll-overlay, var(--kendo-color-app-surface, #ffffff), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
+    <td><code>var(--kendo-tabstrip-scroll-overlay, var(--kendo-color-app-surface, #fafafa), color-mix(in srgb, var(--kendo-color-app-surface, #fafafa) 0%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left and right scroll overlay of the TabStrip.</div></div>
@@ -600,7 +600,7 @@ The following table lists the available variables for customization.
         item-padding-y: $kendo-tabstrip-lg-item-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))","item-padding-x":"var(--kendo-tabstrip-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-sm-item-padding-y, var(--kendo-spacing-2\\.5, 0.625rem))"</li><li>md: "font-size":"var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))","item-padding-x":"var(--kendo-tabstrip-md-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-md-item-padding-y, var(--kendo-spacing-3, 0.75rem))"</li><li>lg: "font-size":"var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))","item-padding-x":"var(--kendo-tabstrip-lg-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-lg-item-padding-y, var(--kendo-spacing-3\\.5, 0.875rem))"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))","item-padding-x":"var(--kendo-tabstrip-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-sm-item-padding-y, var(--kendo-spacing-2\\.5, 0.625rem))"</li><li>md: "font-size":"var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))","item-padding-x":"var(--kendo-tabstrip-md-item-padding-x, var(--kendo-spacing-2\\.5, 0.625rem))","item-padding-y":"var(--kendo-tabstrip-md-item-padding-y, var(--kendo-spacing-3, 0.75rem))"</li><li>lg: "font-size":"var(--kendo-tabstrip-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-tabstrip-line-height, var(--kendo-line-height, normal))","item-padding-x":"var(--kendo-tabstrip-lg-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-tabstrip-lg-item-padding-y, var(--kendo-spacing-3\\.5, 0.875rem))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the TabStrip.</div></div>

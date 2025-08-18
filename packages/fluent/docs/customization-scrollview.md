@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scrollview-text</td>
     <td>String</td>
     <td><code>var( --kendo-scrollview-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-scrollview-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-scrollview-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ScrollView.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scrollview-border</td>
     <td>String</td>
     <td><code>var( --kendo-scrollview-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-scrollview-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-scrollview-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ScrollView.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scrollview-pagebutton-bg</td>
     <td>String</td>
     <td><code>var( --kendo-scrollview-pagebutton-bg, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-scrollview-pagebutton-bg, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-scrollview-pagebutton-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView page button.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scrollview-pagebutton-border</td>
     <td>String</td>
     <td><code>var( --kendo-scrollview-pagebutton-border, $kendo-scrollview-pagebutton-bg )</code></td>
-    <td><code>var(--kendo-scrollview-pagebutton-border, var(--kendo-scrollview-pagebutton-bg, var(--kendo-color-app-surface, #ffffff)))</code></td>
+    <td><code>var(--kendo-scrollview-pagebutton-border, var(--kendo-scrollview-pagebutton-bg, var(--kendo-color-app-surface, #fafafa)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ScrollView page button.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scrollview-pagebutton-primary-bg</td>
     <td>String</td>
     <td><code>var( --kendo-scrollview-pagebutton-primary-bg, k-color(primary) )</code></td>
-    <td><code>var(--kendo-scrollview-pagebutton-primary-bg, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-scrollview-pagebutton-primary-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The primary background color of the ScrollView page button.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scrollview-pagebutton-primary-border</td>
     <td>String</td>
     <td><code>var( --kendo-scrollview-pagebutton-primary-border, $kendo-scrollview-pagebutton-primary-bg )</code></td>
-    <td><code>var(--kendo-scrollview-pagebutton-primary-border, var(--kendo-scrollview-pagebutton-primary-bg, var(--kendo-color-primary, #0078d4)))</code></td>
+    <td><code>var(--kendo-scrollview-pagebutton-primary-border, var(--kendo-scrollview-pagebutton-primary-bg, var(--kendo-color-primary, #0f6cbd)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The primary border color of the ScrollView page button.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scrollview-pagebutton-focus-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-scrollview-pagebutton-focus-shadow, 0 0 0 1px k-color(base-emphasis) )</code></td>
-    <td><code>var(--kendo-scrollview-pagebutton-focus-shadow, 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
+    <td><code>var(--kendo-scrollview-pagebutton-focus-shadow, 0 0 0 1px var(--kendo-color-base-emphasis, #d1d1d1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus box shadow of the ScrollView page button.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scrollview-pagebutton-primary-focus-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-scrollview-pagebutton-primary-focus-shadow, 0 0 0 2px k-color(base-emphasis) )</code></td>
-    <td><code>var(--kendo-scrollview-pagebutton-primary-focus-shadow, 0 0 0 2px var(--kendo-color-base-emphasis, #605e5c))</code></td>
+    <td><code>var(--kendo-scrollview-pagebutton-primary-focus-shadow, 0 0 0 2px var(--kendo-color-base-emphasis, #d1d1d1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The primary focus box shadow of the ScrollView page button.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scrollview-navigation-color</td>
     <td>String</td>
     <td><code>var( --kendo-scrollview-navigation-color, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-scrollview-navigation-color, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-scrollview-navigation-color, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the ScrollView navigation arrows.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scrollview-navigation-focus-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-scrollview-navigation-focus-shadow, 0 0 0 1px k-color(base-emphasis) )</code></td>
-    <td><code>var(--kendo-scrollview-navigation-focus-shadow, 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
+    <td><code>var(--kendo-scrollview-navigation-focus-shadow, 0 0 0 1px var(--kendo-color-base-emphasis, #d1d1d1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus box shadow of the ScrollView navigation arrows.</div></div>

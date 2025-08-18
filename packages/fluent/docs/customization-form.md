@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-form-legend-border-color</td>
     <td>String</td>
     <td><code>var(--kendo-form-legend-border-color, #{color-mix(in srgb, k-color(border) 16%, transparent)})</code></td>
-    <td><code>var(--kendo-form-legend-border-color, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-form-legend-border-color, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Form legend.</div></div>
@@ -168,16 +168,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-form-label-font-weight</td>
-    <td>String</td>
-    <td><code>var(--kendo-form-label-font-weight, var( --kendo-font-weight-bold, inherit ))</code></td>
-    <td><code>var(--kendo-form-label-font-weight, var(--kendo-font-weight-bold, inherit))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the form label</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-form-hint-font-size</td>
     <td>String</td>
     <td><code>var(--kendo-form-hint-font-size, var( --kendo-font-size-sm, inherit ))</code></td>
@@ -200,8 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-hint-margin-top</td>
     <td>String</td>
-    <td><code>var(--kendo-form-hint-margin-top, #{k-spacing(1)})</code></td>
-    <td><code>var(--kendo-form-hint-margin-top, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-form-hint-margin-top, #{k-spacing(0.5)})</code></td>
+    <td><code>var(--kendo-form-hint-margin-top, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top margin of the Form hint.</div></div>
@@ -211,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-form-hint-text</td>
     <td>String</td>
     <td><code>var(--kendo-form-hint-text, #{k-color(subtle)})</code></td>
-    <td><code>var(--kendo-form-hint-text, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var(--kendo-form-hint-text, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Form hint.</div></div>
@@ -261,7 +251,7 @@ The following table lists the available variables for customization.
     <td>$kendo-form-separator-border-color</td>
     <td>String</td>
     <td><code>var(--kendo-form-separator-border-color, #{$kendo-form-legend-border-color})</code></td>
-    <td><code>var(--kendo-form-separator-border-color, var(--kendo-form-legend-border-color, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)))</code></td>
+    <td><code>var(--kendo-form-separator-border-color, var(--kendo-form-legend-border-color, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Form separator.</div></div>
@@ -331,7 +321,7 @@ The following table lists the available variables for customization.
     <td>$kendo-forms-invalid-color</td>
     <td>String</td>
     <td><code>var(--kendo-forms-invalid-color, #{k-color(error-on-surface)})</code></td>
-    <td><code>var(--kendo-forms-invalid-color, var(--kendo-color-error-on-surface, #a4262c))</code></td>
+    <td><code>var(--kendo-forms-invalid-color, var(--kendo-color-error-on-surface, #c50f1f))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The invalid text color of the Form.</div></div>
@@ -381,7 +371,7 @@ The following table lists the available variables for customization.
     <td>$kendo-fieldset-legend-text</td>
     <td>String</td>
     <td><code>var(--kendo-fieldset-legend-text, #{k-color(subtle)})</code></td>
-    <td><code>var(--kendo-fieldset-legend-text, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var(--kendo-fieldset-legend-text, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Form legend.</div></div>

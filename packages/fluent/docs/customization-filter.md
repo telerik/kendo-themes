@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-filter-text</td>
     <td>String</td>
     <td><code>var( --kendo-filter-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-filter-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-filter-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Filter.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-filter-preview-field-text</td>
     <td>String</td>
     <td><code>var( --kendo-filter-preview-field-text, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-filter-preview-field-text, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-filter-preview-field-text, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Filter preview field.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-filter-preview-operator-text</td>
     <td>String</td>
     <td><code>var( --kendo-filter-preview-operator-text, #{k-color(subtle)} )</code></td>
-    <td><code>var(--kendo-filter-preview-operator-text, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var(--kendo-filter-preview-operator-text, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Filter preview operator.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-filter-line-bg</td>
     <td>String</td>
     <td><code>var( --kendo-filter-line-bg, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
-    <td><code>var(--kendo-filter-line-bg, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-filter-line-bg, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the line that connects the Filter items.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-filter-toolbar-focus-border</td>
     <td>String</td>
     <td><code>var( --kendo-filter-toolbar-focus-border, #{k-color(base-emphasis)} )</code></td>
-    <td><code>var(--kendo-filter-toolbar-focus-border, var(--kendo-color-base-emphasis, #605e5c))</code></td>
+    <td><code>var(--kendo-filter-toolbar-focus-border, var(--kendo-color-base-emphasis, #d1d1d1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Filter.</div></div>

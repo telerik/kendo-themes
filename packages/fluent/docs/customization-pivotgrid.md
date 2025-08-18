@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-text</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-pivotgrid-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-pivotgrid-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-border</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
-    <td><code>var(--kendo-pivotgrid-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-pivotgrid-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-alt-border</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-alt-border, #{$kendo-pivotgrid-border} )</code></td>
-    <td><code>var(--kendo-pivotgrid-alt-border, var(--kendo-pivotgrid-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)))</code></td>
+    <td><code>var(--kendo-pivotgrid-alt-border, var(--kendo-pivotgrid-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The alt border color of the PivotGrid.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-cell-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-cell-padding-x, #{$kendo-table-md-cell-padding-x} )</code></td>
-    <td><code>var(--kendo-pivotgrid-cell-padding-x, var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-3, 0.75rem)))</code></td>
+    <td><code>var(--kendo-pivotgrid-cell-padding-x, var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-2, 0.5rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid cell.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-cell-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-cell-padding-y, #{$kendo-table-md-cell-padding-y} )</code></td>
-    <td><code>var(--kendo-pivotgrid-cell-padding-y, var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-3, 0.75rem)))</code></td>
+    <td><code>var(--kendo-pivotgrid-cell-padding-y, var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-2\.5, 0.625rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid cell.</div></div>
@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-headers-text</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-headers-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-pivotgrid-headers-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-pivotgrid-headers-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid header.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-headers-border</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-headers-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
-    <td><code>var(--kendo-pivotgrid-headers-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-pivotgrid-headers-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid header.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-total-bg</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-total-bg, #{k-color(base-subtle)} )</code></td>
-    <td><code>var(--kendo-pivotgrid-total-bg, var(--kendo-color-base-subtle, #edebe9))</code></td>
+    <td><code>var(--kendo-pivotgrid-total-bg, var(--kendo-color-base-subtle, #f5f5f5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid total cells.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-total-text</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-total-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-pivotgrid-total-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-pivotgrid-total-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid total cells.</div></div>
@@ -251,7 +251,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-total-border</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-total-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
-    <td><code>var(--kendo-pivotgrid-total-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-pivotgrid-total-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid total cells.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-hover-bg</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-hover-bg, #{k-color(base-hover)} )</code></td>
-    <td><code>var(--kendo-pivotgrid-hover-bg, var(--kendo-color-base-hover, #f3f2f1))</code></td>
+    <td><code>var(--kendo-pivotgrid-hover-bg, var(--kendo-color-base-hover, #f5f5f5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the PivotGrid.</div></div>
@@ -291,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-selected-bg</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-selected-bg, #{k-color(base-active)} )</code></td>
-    <td><code>var(--kendo-pivotgrid-selected-bg, var(--kendo-color-base-active, #edebe9))</code></td>
+    <td><code>var(--kendo-pivotgrid-selected-bg, var(--kendo-color-base-active, #ebebeb))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected background color of the PivotGrid.</div></div>
@@ -321,7 +321,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-focus-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-focus-shadow, #{$kendo-list-item-focus-shadow} )</code></td>
-    <td><code>var(--kendo-pivotgrid-focus-shadow, var(--kendo-list-item-focus-shadow, inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)))</code></td>
+    <td><code>var(--kendo-pivotgrid-focus-shadow, var(--kendo-list-item-focus-shadow, inset 0 0 0 2px var(--kendo-color-border-alt, #000000)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the PivotGrid.</div></div>
@@ -481,7 +481,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-configurator-text</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-configurator-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-pivotgrid-configurator-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-pivotgrid-configurator-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid configurator.</div></div>
@@ -491,7 +491,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-configurator-border</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-configurator-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
-    <td><code>var(--kendo-pivotgrid-configurator-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-pivotgrid-configurator-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid configurator.</div></div>
@@ -511,7 +511,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-configurator-header-text</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-configurator-header-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-pivotgrid-configurator-header-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-pivotgrid-configurator-header-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid configurator header.</div></div>
@@ -641,7 +641,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-calculated-field-text</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-calculated-field-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-pivotgrid-calculated-field-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-pivotgrid-calculated-field-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid calculated field.</div></div>
@@ -651,7 +651,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-calculated-field-border</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-calculated-field-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
-    <td><code>var(--kendo-pivotgrid-calculated-field-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-pivotgrid-calculated-field-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid calculated field.</div></div>
@@ -671,7 +671,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pivotgrid-calculated-field-header-text</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-calculated-field-header-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-pivotgrid-calculated-field-header-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-pivotgrid-calculated-field-header-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid calculated field header.</div></div>

@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-bg</td>
     <td>String</td>
     <td><code>var( --kendo-pager-bg, #{k-color(surface)} )</code></td>
-    <td><code>var(--kendo-pager-bg, var(--kendo-color-surface, #faf9f8))</code></td>
+    <td><code>var(--kendo-pager-bg, var(--kendo-color-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pager.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-text</td>
     <td>String</td>
     <td><code>var( --kendo-pager-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-pager-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-pager-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Pager.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-border</td>
     <td>String</td>
     <td><code>var( --kendo-pager-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
-    <td><code>var(--kendo-pager-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-pager-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Pager.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-focus-bg</td>
     <td>String</td>
     <td><code>var( --kendo-pager-focus-bg, #{$kendo-pager-bg} )</code></td>
-    <td><code>var(--kendo-pager-focus-bg, var(--kendo-pager-bg, var(--kendo-color-surface, #faf9f8)))</code></td>
+    <td><code>var(--kendo-pager-focus-bg, var(--kendo-pager-bg, var(--kendo-color-surface, #ffffff)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Pager.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-focus-text</td>
     <td>String</td>
     <td><code>var( --kendo-pager-focus-text, #{$kendo-pager-text} )</code></td>
-    <td><code>var(--kendo-pager-focus-text, var(--kendo-pager-text, var(--kendo-color-on-app-surface, #323130)))</code></td>
+    <td><code>var(--kendo-pager-focus-text, var(--kendo-pager-text, var(--kendo-color-on-app-surface, #242424)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Pager.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-focus-border</td>
     <td>String</td>
     <td><code>var( --kendo-pager-focus-border, #{k-color(border)} )</code></td>
-    <td><code>var(--kendo-pager-focus-border, var(--kendo-color-border, #8a8886))</code></td>
+    <td><code>var(--kendo-pager-focus-border, var(--kendo-color-border, rgba(36, 36, 36, 0.72)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Pager.</div></div>
@@ -200,8 +200,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-item-border-radius</td>
     <td>String</td>
-    <td><code>var( --kendo-pager-item-border-radius, 0 )</code></td>
-    <td><code>var(--kendo-pager-item-border-radius, 0)</code></td>
+    <td><code>var( --kendo-pager-item-border-radius, k-border-radius(md) )</code></td>
+    <td><code>var(--kendo-pager-item-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Pager items.</div></div>
@@ -251,7 +251,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-sizes-label-text</td>
     <td>String</td>
     <td><code>var( --kendo-pager-sizes-label-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-pager-sizes-label-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-pager-sizes-label-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Pagers' sizes label.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-info-label-text</td>
     <td>String</td>
     <td><code>var( --kendo-pager-info-label-text, #{k-color(subtle)} )</code></td>
-    <td><code>var(--kendo-pager-info-label-text, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var(--kendo-pager-info-label-text, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Pagers' info label.</div></div>

@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-map-text</td>
     <td>String</td>
     <td><code>var( --kendo-map-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-map-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-map-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Map.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-map-border</td>
     <td>String</td>
     <td><code>var( --kendo-map-border, k-color(border) )</code></td>
-    <td><code>var(--kendo-map-border, var(--kendo-color-border, #8a8886))</code></td>
+    <td><code>var(--kendo-map-border, var(--kendo-color-border, rgba(36, 36, 36, 0.72)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Map.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-map-navigator-bg</td>
     <td>String</td>
     <td><code>var( --kendo-map-navigator-bg, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-map-navigator-bg, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-map-navigator-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Map navigator.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-map-navigator-text</td>
     <td>String</td>
     <td><code>var( --kendo-map-navigator-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-map-navigator-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-map-navigator-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Map navigator.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-map-navigator-border</td>
     <td>String</td>
     <td><code>var( --kendo-map-navigator-border, k-color(border) )</code></td>
-    <td><code>var(--kendo-map-navigator-border, var(--kendo-color-border, #8a8886))</code></td>
+    <td><code>var(--kendo-map-navigator-border, var(--kendo-color-border, rgba(36, 36, 36, 0.72)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Map navigator.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-map-attribution-bg</td>
     <td>String</td>
     <td><code>var( --kendo-map-attribution-bg, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-map-attribution-bg, var(--kendo-color-app-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-map-attribution-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Map attribution.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-map-marker-fill</td>
     <td>String</td>
     <td><code>var( --kendo-map-marker-fill, k-color(primary) )</code></td>
-    <td><code>var(--kendo-map-marker-fill, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-map-marker-fill, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fill color of the Map marker.</div></div>

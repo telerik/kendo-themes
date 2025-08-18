@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-spreadsheet-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-spreadsheet-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var( --kendo-spreadsheet-bg, k-color(app-surface) )</code></td>
+    <td><code>var(--kendo-spreadsheet-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-text</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-spreadsheet-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-spreadsheet-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Spreadsheet.</div></div>
@@ -90,28 +90,18 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-border</td>
     <td>String</td>
-    <td><code>var( --kendo-spreadsheet-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-spreadsheet-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var( --kendo-spreadsheet-border, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
+    <td><code>var(--kendo-spreadsheet-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-spreadsheet-primary-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-spreadsheet-primary-border, k-color(primary) )</code></td>
-    <td><code>var(--kendo-spreadsheet-primary-border, var(--kendo-color-primary, #0078d4))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The primary border color of the Spreadsheet.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-spreadsheet-header-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-spreadsheet-header-bg, k-color(surface) )</code></td>
-    <td><code>var(--kendo-spreadsheet-header-bg, var(--kendo-color-surface, #faf9f8))</code></td>
+    <td><code>var( --kendo-spreadsheet-header-bg, k-color(app-surface) )</code></td>
+    <td><code>var(--kendo-spreadsheet-header-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet header.</div></div>
@@ -121,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-header-text</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-header-text, $kendo-table-header-text )</code></td>
-    <td><code>var(--kendo-spreadsheet-header-text, var(--kendo-table-header-text, var(--kendo-color-on-app-surface, #323130)))</code></td>
+    <td><code>var(--kendo-spreadsheet-header-text, var(--kendo-table-header-text, var(--kendo-color-on-app-surface, #242424)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Spreadsheet header.</div></div>
@@ -131,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-header-border</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-header-border, $kendo-table-header-border )</code></td>
-    <td><code>var(--kendo-spreadsheet-header-border, var(--kendo-table-header-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))))</code></td>
+    <td><code>var(--kendo-spreadsheet-header-border, var(--kendo-table-header-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet header.</div></div>
@@ -141,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-table-header-bg</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-table-header-bg, k-color(surface) )</code></td>
-    <td><code>var(--kendo-spreadsheet-table-header-bg, var(--kendo-color-surface, #faf9f8))</code></td>
+    <td><code>var(--kendo-spreadsheet-table-header-bg, var(--kendo-color-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet table headers.</div></div>
@@ -151,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-table-header-text</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-table-header-text, $kendo-spreadsheet-header-text )</code></td>
-    <td><code>var(--kendo-spreadsheet-table-header-text, var(--kendo-spreadsheet-header-text, var(--kendo-table-header-text, var(--kendo-color-on-app-surface, #323130))))</code></td>
+    <td><code>var(--kendo-spreadsheet-table-header-text, var(--kendo-spreadsheet-header-text, var(--kendo-table-header-text, var(--kendo-color-on-app-surface, #242424))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Spreadsheet table headers.</div></div>
@@ -161,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-table-header-border</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-table-header-border, $kendo-spreadsheet-header-border )</code></td>
-    <td><code>var(--kendo-spreadsheet-table-header-border, var(--kendo-spreadsheet-header-border, var(--kendo-table-header-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)))))</code></td>
+    <td><code>var(--kendo-spreadsheet-table-header-border, var(--kendo-spreadsheet-header-border, var(--kendo-table-header-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent)))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet table headers.</div></div>
@@ -185,6 +175,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Spreadsheet popup Menu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-view-bg</td>
+    <td>String</td>
+    <td><code>var( --kendo-spreadsheet-view-bg, k-color(surface) )</code></td>
+    <td><code>var(--kendo-spreadsheet-view-bg, var(--kendo-color-surface, #ffffff))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet view.</div></div>
     </td>
 </tr>
 <tr>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-formula-input-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-formula-input-padding-x, var( --kendo-input-md-padding-x, #{$kendo-input-md-padding-x} ) )</code></td>
-    <td><code>var(--kendo-spreadsheet-formula-input-padding-x, var(--kendo-input-md-padding-x, var(--kendo-input-padding-x, var(--kendo-spacing-2, 0.5rem))))</code></td>
+    <td><code>var(--kendo-spreadsheet-formula-input-padding-x, var(--kendo-input-md-padding-x, var(--kendo-input-padding-x, var(--kendo-spacing-2\.5, 0.625rem))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Spreadsheet formula input.</div></div>
@@ -271,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-formula-input-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-formula-input-padding-y, var( --kendo-input-md-padding-y, #{$kendo-input-md-padding-y} ) )</code></td>
-    <td><code>var(--kendo-spreadsheet-formula-input-padding-y, var(--kendo-input-md-padding-y, var(--kendo-input-padding-y, var(--kendo-spacing-1\.5, 0.375rem))))</code></td>
+    <td><code>var(--kendo-spreadsheet-formula-input-padding-y, var(--kendo-input-md-padding-y, var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Spreadsheet formula input.</div></div>
@@ -330,8 +330,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-selection-border</td>
     <td>String</td>
-    <td><code>var( --kendo-spreadsheet-selection-border, $kendo-spreadsheet-primary-border )</code></td>
-    <td><code>var(--kendo-spreadsheet-selection-border, var(--kendo-spreadsheet-primary-border, var(--kendo-color-primary, #0078d4)))</code></td>
+    <td><code>var( --kendo-spreadsheet-selection-border, k-color(primary) )</code></td>
+    <td><code>var(--kendo-spreadsheet-selection-border, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet selection.</div></div>
@@ -351,7 +351,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-single-selection-bg</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-single-selection-bg, k-color(primary) )</code></td>
-    <td><code>var(--kendo-spreadsheet-single-selection-bg, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-spreadsheet-single-selection-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet single selection.</div></div>
@@ -371,7 +371,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-single-selection-border</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-single-selection-border, $kendo-spreadsheet-border )</code></td>
-    <td><code>var(--kendo-spreadsheet-single-selection-border, var(--kendo-spreadsheet-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)))</code></td>
+    <td><code>var(--kendo-spreadsheet-single-selection-border, var(--kendo-spreadsheet-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet single selection.</div></div>
@@ -381,7 +381,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-partial-selection-bg</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-partial-selection-bg, color-mix(in srgb, k-color(primary-subtle-active) 75%, transparent) )</code></td>
-    <td><code>var(--kendo-spreadsheet-partial-selection-bg, color-mix(in srgb, var(--kendo-color-primary-subtle-active, #abd1ef) 75%, transparent))</code></td>
+    <td><code>var(--kendo-spreadsheet-partial-selection-bg, color-mix(in srgb, var(--kendo-color-primary-subtle-active, #96c6fa) 75%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet partial selection.</div></div>
@@ -391,7 +391,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-active-cell-bg</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-active-cell-bg, $kendo-spreadsheet-bg )</code></td>
-    <td><code>var(--kendo-spreadsheet-active-cell-bg, var(--kendo-spreadsheet-bg, var(--kendo-color-surface-alt, #ffffff)))</code></td>
+    <td><code>var(--kendo-spreadsheet-active-cell-bg, var(--kendo-spreadsheet-bg, var(--kendo-color-app-surface, #fafafa)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet active cell.</div></div>
@@ -401,7 +401,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-active-cell-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-active-cell-shadow, inset 0 0 0 1px k-color(primary-subtle-active) )</code></td>
-    <td><code>var(--kendo-spreadsheet-active-cell-shadow, inset 0 0 0 1px var(--kendo-color-primary-subtle-active, #abd1ef))</code></td>
+    <td><code>var(--kendo-spreadsheet-active-cell-shadow, inset 0 0 0 1px var(--kendo-color-primary-subtle-active, #96c6fa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet active cell.</div></div>
@@ -411,7 +411,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-auto-fill-bg</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-auto-fill-bg, color-mix(in srgb, k-color(primary-subtle-active) 75%, transparent) )</code></td>
-    <td><code>var(--kendo-spreadsheet-auto-fill-bg, color-mix(in srgb, var(--kendo-color-primary-subtle-active, #abd1ef) 75%, transparent))</code></td>
+    <td><code>var(--kendo-spreadsheet-auto-fill-bg, color-mix(in srgb, var(--kendo-color-primary-subtle-active, #96c6fa) 75%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet auto fill.</div></div>
@@ -431,7 +431,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-auto-fill-border</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-auto-fill-border, k-color(primary-subtle-active) )</code></td>
-    <td><code>var(--kendo-spreadsheet-auto-fill-border, var(--kendo-color-primary-subtle-active, #abd1ef))</code></td>
+    <td><code>var(--kendo-spreadsheet-auto-fill-border, var(--kendo-color-primary-subtle-active, #96c6fa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet auto fill.</div></div>
@@ -441,7 +441,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-auto-fill-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-auto-fill-shadow, inset 0 0 0 1px k-color(primary-subtle-active) )</code></td>
-    <td><code>var(--kendo-spreadsheet-auto-fill-shadow, inset 0 0 0 1px var(--kendo-color-primary-subtle-active, #abd1ef))</code></td>
+    <td><code>var(--kendo-spreadsheet-auto-fill-shadow, inset 0 0 0 1px var(--kendo-color-primary-subtle-active, #96c6fa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet auto fill.</div></div>
@@ -451,7 +451,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-auto-fill-punch-bg</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-auto-fill-punch-bg, color-mix(in srgb, $kendo-spreadsheet-bg 50%, transparent) )</code></td>
-    <td><code>var(--kendo-spreadsheet-auto-fill-punch-bg, color-mix(in srgb, var(--kendo-spreadsheet-bg, var(--kendo-color-surface-alt, #ffffff)) 50%, transparent))</code></td>
+    <td><code>var(--kendo-spreadsheet-auto-fill-punch-bg, color-mix(in srgb, var(--kendo-spreadsheet-bg, var(--kendo-color-app-surface, #fafafa)) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet auto fill punch.</div></div>
@@ -511,7 +511,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-cell-editor-bg</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-cell-editor-bg, $kendo-spreadsheet-bg )</code></td>
-    <td><code>var(--kendo-spreadsheet-cell-editor-bg, var(--kendo-spreadsheet-bg, var(--kendo-color-surface-alt, #ffffff)))</code></td>
+    <td><code>var(--kendo-spreadsheet-cell-editor-bg, var(--kendo-spreadsheet-bg, var(--kendo-color-app-surface, #fafafa)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet cell editor.</div></div>
@@ -521,7 +521,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-cell-editor-text</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-cell-editor-text, $kendo-spreadsheet-text )</code></td>
-    <td><code>var(--kendo-spreadsheet-cell-editor-text, var(--kendo-spreadsheet-text, var(--kendo-color-on-app-surface, #323130)))</code></td>
+    <td><code>var(--kendo-spreadsheet-cell-editor-text, var(--kendo-spreadsheet-text, var(--kendo-color-on-app-surface, #242424)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Spreadsheet cell editor.</div></div>
@@ -541,7 +541,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-resize-handle-bg</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-resize-handle-bg, k-color(primary) )</code></td>
-    <td><code>var(--kendo-spreadsheet-resize-handle-bg, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-spreadsheet-resize-handle-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet resize handle.</div></div>
@@ -551,7 +551,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-cell-comment-border</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-cell-comment-border, k-color(primary) )</code></td>
-    <td><code>var(--kendo-spreadsheet-cell-comment-border, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-spreadsheet-cell-comment-border, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet cell comment indicator.</div></div>
@@ -561,7 +561,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-cell-dirty-border</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-cell-dirty-border, k-color(error) )</code></td>
-    <td><code>var(--kendo-spreadsheet-cell-dirty-border, var(--kendo-color-error, #c2666b))</code></td>
+    <td><code>var(--kendo-spreadsheet-cell-dirty-border, var(--kendo-color-error, #c50f1f))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet cell dirty indicator.</div></div>
@@ -628,103 +628,13 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-spreadsheet-filter-button-text</td>
+    <td>$kendo-spreadsheet-filter-padding</td>
     <td>String</td>
-    <td><code>var( --kendo-spreadsheet-filter-button-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-spreadsheet-filter-button-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var( --kendo-spreadsheet-filter-padding, k-spacing(1) )</code></td>
+    <td><code>var(--kendo-spreadsheet-filter-padding, var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Spreadsheet filter Button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-filter-button-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-spreadsheet-filter-button-bg, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-spreadsheet-filter-button-bg, var(--kendo-color-app-surface, #ffffff))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet filter Button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-filter-button-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-spreadsheet-filter-button-border, k-color(border) )</code></td>
-    <td><code>var(--kendo-spreadsheet-filter-button-border, var(--kendo-color-border, #8a8886))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet filter Button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-filter-button-hover-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-spreadsheet-filter-button-hover-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-spreadsheet-filter-button-hover-text, var(--kendo-color-on-app-surface, #323130))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Spreadsheet filter Button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-filter-button-hover-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-spreadsheet-filter-button-hover-bg, k-color(base-hover) )</code></td>
-    <td><code>var(--kendo-spreadsheet-filter-button-hover-bg, var(--kendo-color-base-hover, #f3f2f1))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Spreadsheet filter Button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-filter-button-hover-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-spreadsheet-filter-button-hover-border, k-color(border) )</code></td>
-    <td><code>var(--kendo-spreadsheet-filter-button-hover-border, var(--kendo-color-border, #8a8886))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Spreadsheet filter Button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-filter-button-active-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-spreadsheet-filter-button-active-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-spreadsheet-filter-button-active-text, var(--kendo-color-on-app-surface, #323130))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the active Spreadsheet filter Button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-filter-button-active-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-spreadsheet-filter-button-active-bg, k-color(base-active) )</code></td>
-    <td><code>var(--kendo-spreadsheet-filter-button-active-bg, var(--kendo-color-base-active, #edebe9))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Spreadsheet filter Button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-filter-button-active-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-spreadsheet-filter-button-active-border, k-color(border) )</code></td>
-    <td><code>var(--kendo-spreadsheet-filter-button-active-border, var(--kendo-color-border, #8a8886))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active Spreadsheet filter Button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-filter-menu-icon-color</td>
-    <td>String</td>
-    <td><code>var( --kendo-spreadsheet-filter-menu-icon-color, k-color(primary) )</code></td>
-    <td><code>var(--kendo-spreadsheet-filter-menu-icon-color, var(--kendo-color-primary, #0078d4))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Spreadsheet Menu icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Spreadsheet filter.</div></div>
     </td>
 </tr>
 <tr>
@@ -791,7 +701,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-insert-image-dialog-preview-border</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-insert-image-dialog-preview-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-spreadsheet-insert-image-dialog-preview-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-spreadsheet-insert-image-dialog-preview-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the Spreadsheet image Dialog preview.</div></div>
@@ -830,8 +740,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-overlay-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-spreadsheet-insert-image-dialog-overlay-hover-text, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-spreadsheet-insert-image-dialog-overlay-hover-text, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var( --kendo-spreadsheet-insert-image-dialog-overlay-hover-text, k-color(app-surface) )</code></td>
+    <td><code>var(--kendo-spreadsheet-insert-image-dialog-overlay-hover-text, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Spreadsheet image Dialog preview.</div></div>
@@ -881,7 +791,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-drawing-handle-border-color</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-drawing-handle-border-color, k-color(base-active) )</code></td>
-    <td><code>var(--kendo-spreadsheet-drawing-handle-border-color, var(--kendo-color-base-active, #edebe9))</code></td>
+    <td><code>var(--kendo-spreadsheet-drawing-handle-border-color, var(--kendo-color-base-active, #ebebeb))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet drawing handle.</div></div>
@@ -891,7 +801,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-drawing-handle-outline-color</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-drawing-handle-outline-color, k-color(primary) )</code></td>
-    <td><code>var(--kendo-spreadsheet-drawing-handle-outline-color, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-spreadsheet-drawing-handle-outline-color, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the Spreadsheet drawing handle.</div></div>
@@ -901,7 +811,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-drawing-handle-bg</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-drawing-handle-bg, k-color(primary) )</code></td>
-    <td><code>var(--kendo-spreadsheet-drawing-handle-bg, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-spreadsheet-drawing-handle-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet drawing handle.</div></div>
@@ -941,7 +851,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-drawing-anchor-bg</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-drawing-anchor-bg, k-color(primary-subtle-active) )</code></td>
-    <td><code>var(--kendo-spreadsheet-drawing-anchor-bg, var(--kendo-color-primary-subtle-active, #abd1ef))</code></td>
+    <td><code>var(--kendo-spreadsheet-drawing-anchor-bg, var(--kendo-color-primary-subtle-active, #96c6fa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet drawing anchor.</div></div>

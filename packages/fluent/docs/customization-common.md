@@ -42,7 +42,7 @@ The following table lists the available variables for customization.
     "light": k-color(light),
     "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
 )</code></td>
-    <td><ul><li>primary: var(--kendo-color-primary, #0078d4)</li><li>secondary: var(--kendo-color-secondary, #979593)</li><li>tertiary: var(--kendo-color-tertiary, #2b88d8)</li><li>info: var(--kendo-color-info, #0a7eff)</li><li>success: var(--kendo-color-success, #55a554)</li><li>warning: var(--kendo-color-warning, #ffc80a)</li><li>error: var(--kendo-color-error, #c2666b)</li><li>dark: var(--kendo-color-dark, #323130)</li><li>light: var(--kendo-color-light, #d2d0ce)</li><li>inverse: var(--kendo-color-dark, #323130)</li></ul></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>secondary: var(--kendo-color-secondary, #ebebeb)</li><li>tertiary: var(--kendo-color-tertiary, #c239b3)</li><li>info: var(--kendo-color-info, #3a96dd)</li><li>success: var(--kendo-color-success, #107c10)</li><li>warning: var(--kendo-color-warning, #f7630c)</li><li>error: var(--kendo-color-error, #c50f1f)</li><li>dark: var(--kendo-color-dark, #242424)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #242424)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the card variations.</div></div>
@@ -58,7 +58,7 @@ The following table lists the available variables for customization.
     "warning": k-color(warning),
     "success": k-color(success)
 )</code></td>
-    <td><ul><li>base: var(--kendo-chip-bg, var(--kendo-color-base-subtle, #edebe9))</li><li>error: var(--kendo-color-error, #c2666b)</li><li>info: var(--kendo-color-info, #0a7eff)</li><li>warning: var(--kendo-color-warning, #ffc80a)</li><li>success: var(--kendo-color-success, #55a554)</li></ul></td>
+    <td><ul><li>base: var(--kendo-chip-bg, var(--kendo-color-base-subtle, #f5f5f5))</li><li>error: var(--kendo-color-error, #c50f1f)</li><li>info: var(--kendo-color-info, #3a96dd)</li><li>warning: var(--kendo-color-warning, #f7630c)</li><li>success: var(--kendo-color-success, #107c10)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Chip.</div></div>
@@ -162,7 +162,7 @@ The following table lists the available variables for customization.
     "light": k-color(light),
     "dark": k-color(dark)
 )</code></td>
-    <td><ul><li>primary: var(--kendo-color-primary, #0078d4)</li><li>light: var(--kendo-color-light, #d2d0ce)</li><li>dark: var(--kendo-color-dark, #323130)</li></ul></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>dark: var(--kendo-color-dark, #242424)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Dialog.</div></div>
@@ -183,7 +183,7 @@ The following table lists the available variables for customization.
     "light": k-color(light),
     "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
 )</code></td>
-    <td><ul><li>primary: var(--kendo-color-primary, #0078d4)</li><li>secondary: var(--kendo-color-secondary-subtle, #faf9f8)</li><li>tertiary: var(--kendo-color-tertiary-subtle, #deecf9)</li><li>info: var(--kendo-color-info-subtle, #cee5ff)</li><li>success: var(--kendo-color-success-subtle, #dff6dd)</li><li>warning: var(--kendo-color-warning-subtle, #fff4ce)</li><li>error: var(--kendo-color-error-subtle, #fde7e9)</li><li>dark: var(--kendo-color-dark, #323130)</li><li>light: var(--kendo-color-light, #d2d0ce)</li><li>inverse: var(--kendo-color-dark, #323130)</li></ul></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>secondary: var(--kendo-color-secondary-subtle, #f0f0f0)</li><li>tertiary: var(--kendo-color-tertiary-subtle, #fdf5fc)</li><li>info: var(--kendo-color-info-subtle, #f6fafe)</li><li>success: var(--kendo-color-success-subtle, #f1faf1)</li><li>warning: var(--kendo-color-warning-subtle, #fff9f5)</li><li>error: var(--kendo-color-error-subtle, #fdf3f4)</li><li>dark: var(--kendo-color-dark, #242424)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #242424)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the tooltip variations.</div></div>
@@ -202,8 +202,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h6-line-height</td>
     <td>Number</td>
-    <td><code>22px</code></td>
-    <td><code>22px</code></td>
+    <td><code>32px</code></td>
+    <td><code>32px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the sixth highest level heading.</div></div>

@@ -120,8 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-track-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-slider-track-bg, #{k-color(base-emphasis)} )</code></td>
-    <td><code>var(--kendo-slider-track-bg, var(--kendo-color-base-emphasis, #605e5c))</code></td>
+    <td><code>var( --kendo-slider-track-bg, #{k-color(border)} )</code></td>
+    <td><code>var(--kendo-slider-track-bg, var(--kendo-color-border, rgba(36, 36, 36, 0.72)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider track.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-selection-bg</td>
     <td>String</td>
     <td><code>var( --kendo-slider-selection-bg, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-slider-selection-bg, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-slider-selection-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider's track selection.</div></div>
@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-thumb-size</td>
     <td>String</td>
-    <td><code>var( --kendo-slider-thumb-size, 16px )</code></td>
-    <td><code>var(--kendo-slider-thumb-size, 16px)</code></td>
+    <td><code>var( --kendo-slider-thumb-size, 18px )</code></td>
+    <td><code>var(--kendo-slider-thumb-size, 18px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Slider thumb.</div></div>
@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-thumb-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-slider-thumb-border-width, #{k-spacing(0.5)} )</code></td>
-    <td><code>var(--kendo-slider-thumb-border-width, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+    <td><code>var( --kendo-slider-thumb-border-width, 1px )</code></td>
+    <td><code>var(--kendo-slider-thumb-border-width, 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default border width of the Slider thumb.</div></div>
@@ -210,8 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-thumb-border</td>
     <td>String</td>
-    <td><code>var( --kendo-slider-thumb-border, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-slider-thumb-border, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var( --kendo-slider-thumb-border, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
+    <td><code>var(--kendo-slider-thumb-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Slider thumb.</div></div>
@@ -250,8 +250,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-thumb-hover-border</td>
     <td>String</td>
-    <td><code>var( --kendo-slider-thumb-hover-border, #{k-color(primary-hover)} )</code></td>
-    <td><code>var(--kendo-slider-thumb-hover-border, var(--kendo-color-primary-hover, #106ebe))</code></td>
+    <td><code>var( --kendo-slider-thumb-hover-border, color-mix( in srgb, k-color(border) 34%, transparent ) )</code></td>
+    <td><code>var(--kendo-slider-thumb-hover-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 34%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Slider thumb.</div></div>
@@ -291,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-thumb-active-border</td>
     <td>String</td>
     <td><code>var( --kendo-slider-thumb-active-border, #{k-color(primary-active)} )</code></td>
-    <td><code>var(--kendo-slider-thumb-active-border, var(--kendo-color-primary-active, #005a9e))</code></td>
+    <td><code>var(--kendo-slider-thumb-active-border, var(--kendo-color-primary-active, #0f548c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active Slider thumb.</div></div>
@@ -331,7 +331,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-thumb-focus-border</td>
     <td>String</td>
     <td><code>var( --kendo-slider-thumb-focus-border, #{$kendo-slider-thumb-active-border} )</code></td>
-    <td><code>var(--kendo-slider-thumb-focus-border, var(--kendo-slider-thumb-active-border, var(--kendo-color-primary-active, #005a9e)))</code></td>
+    <td><code>var(--kendo-slider-thumb-focus-border, var(--kendo-slider-thumb-active-border, var(--kendo-color-primary-active, #0f548c)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Slider thumb.</div></div>
@@ -351,7 +351,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-disabled-text</td>
     <td>String</td>
     <td><code>var( --kendo-slider-disabled-text, #{color-mix(in srgb, k-color(on-app-surface) 70%, transparent)} )</code></td>
-    <td><code>var(--kendo-slider-disabled-text, color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 70%, transparent))</code></td>
+    <td><code>var(--kendo-slider-disabled-text, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 70%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Slider.</div></div>
@@ -360,8 +360,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-track-disabled-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-slider-track-disabled-bg, #{color-mix(in srgb, k-color(on-app-surface) 6%, transparent)} )</code></td>
-    <td><code>var(--kendo-slider-track-disabled-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 6%, transparent))</code></td>
+    <td><code>var( --kendo-slider-track-disabled-bg, #{color-mix(in srgb, k-color(on-app-surface) 14%, transparent)} )</code></td>
+    <td><code>var(--kendo-slider-track-disabled-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 14%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Slider track.</div></div>
@@ -370,8 +370,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-selection-disabled-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-slider-selection-disabled-bg, #{color-mix(in srgb, k-color(on-app-surface) 46%, transparent)} )</code></td>
-    <td><code>var(--kendo-slider-selection-disabled-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent))</code></td>
+    <td><code>var( --kendo-slider-selection-disabled-bg, #{color-mix(in srgb, k-color(on-app-surface) 30%, transparent)} )</code></td>
+    <td><code>var(--kendo-slider-selection-disabled-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 30%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Slider's track selection.</div></div>
@@ -381,7 +381,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-thumb-disabled-border</td>
     <td>String</td>
     <td><code>var( --kendo-slider-thumb-disabled-border, #{color-mix(in srgb, k-color(on-app-surface) 28%, transparent)} )</code></td>
-    <td><code>var(--kendo-slider-thumb-disabled-border, color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 28%, transparent))</code></td>
+    <td><code>var(--kendo-slider-thumb-disabled-border, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 28%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Slider thumb.</div></div>

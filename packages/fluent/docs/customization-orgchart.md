@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-text</td>
     <td>String</td>
     <td><code>var( --kendo-orgchart-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-orgchart-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-orgchart-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the OrgChart.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-border</td>
     <td>String</td>
     <td><code>var( --kendo-orgchart-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-orgchart-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-orgchart-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the OrgChart.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-group-bg</td>
     <td>String</td>
     <td><code>var( --kendo-orgchart-node-group-bg, #{k-color(surface)} )</code></td>
-    <td><code>var(--kendo-orgchart-node-group-bg, var(--kendo-color-surface, #faf9f8))</code></td>
+    <td><code>var(--kendo-orgchart-node-group-bg, var(--kendo-color-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the OrgChart node group.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-group-text</td>
     <td>String</td>
     <td><code>var( --kendo-orgchart-node-group-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-orgchart-node-group-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-orgchart-node-group-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the OrgChart node group.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-group-border</td>
     <td>String</td>
     <td><code>var( --kendo-orgchart-node-group-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-orgchart-node-group-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-orgchart-node-group-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the OrgChart node group.</div></div>
@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-group-focus-border</td>
     <td>String</td>
     <td><code>var( --kendo-orgchart-node-group-focus-border, #{$kendo-card-focus-border} )</code></td>
-    <td><code>var(--kendo-orgchart-node-group-focus-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-orgchart-node-group-focus-border, var(--kendo-color-border-alt, #000000))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused OrgChart node group.</div></div>
@@ -281,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-group-subtitle-text</td>
     <td>String</td>
     <td><code>var( --kendo-orgchart-node-group-subtitle-text, #{k-color(subtle)} )</code></td>
-    <td><code>var(--kendo-orgchart-node-group-subtitle-text, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var(--kendo-orgchart-node-group-subtitle-text, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart node group subtitle.</div></div>
@@ -311,7 +311,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-card-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-orgchart-card-shadow, #{$kendo-card-shadow} )</code></td>
-    <td><code>var(--kendo-orgchart-card-shadow, var(--kendo-card-shadow, var(--kendo-elevation-1, none)))</code></td>
+    <td><code>var(--kendo-orgchart-card-shadow, var(--kendo-card-shadow, var(--kendo-elevation-3, none)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the OrgChart Card.</div></div>
@@ -341,7 +341,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-card-title-font-size</td>
     <td>String</td>
     <td><code>var( --kendo-orgchart-card-title-font-size, #{$kendo-card-title-font-size} )</code></td>
-    <td><code>var(--kendo-orgchart-card-title-font-size, var(--kendo-card-title-font-size, var(--kendo-font-size-lg, inherit)))</code></td>
+    <td><code>var(--kendo-orgchart-card-title-font-size, var(--kendo-card-title-font-size, var(--kendo-font-size-md, inherit)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart Card title.</div></div>
@@ -461,7 +461,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-line-text</td>
     <td>String</td>
     <td><code>var( --kendo-orgchart-line-text, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-orgchart-line-text, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-orgchart-line-text, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fill color of the OrgChart connecting line.</div></div>

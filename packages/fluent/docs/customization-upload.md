@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-upload-text</td>
     <td>String</td>
     <td><code>var( --kendo-upload-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-upload-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-upload-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Upload.</div></div>
@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-upload-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var( --kendo-upload-bg, k-color(app-surface) )</code></td>
+    <td><code>var(--kendo-upload-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Upload.</div></div>
@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-border</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-upload-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var( --kendo-upload-border, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
+    <td><code>var(--kendo-upload-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Upload.</div></div>
@@ -110,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-dropzone-padding-x, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-upload-dropzone-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var( --kendo-upload-dropzone-padding-x, calc( #{k-spacing(3)} + 1px ) )</code></td>
+    <td><code>var(--kendo-upload-dropzone-padding-x, calc(var(--kendo-spacing-3, 0.75rem) + 1px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Upload dropzone.</div></div>
@@ -120,8 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-dropzone-padding-y, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-upload-dropzone-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var( --kendo-upload-dropzone-padding-y, calc( #{k-spacing(0.5)} + 1px ) )</code></td>
+    <td><code>var(--kendo-upload-dropzone-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Upload dropzone.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-upload-dropzone-text</td>
     <td>String</td>
     <td><code>var( --kendo-upload-dropzone-text, k-color(subtle) )</code></td>
-    <td><code>var(--kendo-upload-dropzone-text, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var(--kendo-upload-dropzone-text, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Upload dropzone.</div></div>
@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-dropzone-bg, k-color(surface) )</code></td>
-    <td><code>var(--kendo-upload-dropzone-bg, var(--kendo-color-surface, #faf9f8))</code></td>
+    <td><code>var( --kendo-upload-dropzone-bg, k-color(app-surface) )</code></td>
+    <td><code>var(--kendo-upload-dropzone-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Upload dropzone.</div></div>
@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-border</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-dropzone-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-upload-dropzone-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var( --kendo-upload-dropzone-border, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
+    <td><code>var(--kendo-upload-dropzone-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Upload dropzone.</div></div>
@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-dropzone-hover-bg, k-color(base-hover) )</code></td>
-    <td><code>var(--kendo-upload-dropzone-hover-bg, var(--kendo-color-base-hover, #f3f2f1))</code></td>
+    <td><code>var( --kendo-upload-dropzone-hover-bg, $kendo-upload-dropzone-bg )</code></td>
+    <td><code>var(--kendo-upload-dropzone-hover-bg, var(--kendo-upload-dropzone-bg, var(--kendo-color-app-surface, #fafafa)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Upload dropzone.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-upload-status-text</td>
     <td>String</td>
     <td><code>var( --kendo-upload-status-text, k-color(subtle) )</code></td>
-    <td><code>var(--kendo-upload-status-text, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var(--kendo-upload-status-text, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Upload status message.</div></div>
@@ -190,8 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-item-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-item-padding-x, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-upload-item-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var( --kendo-upload-item-padding-x, $kendo-upload-dropzone-padding-x )</code></td>
+    <td><code>var(--kendo-upload-item-padding-x, var(--kendo-upload-dropzone-padding-x, calc(var(--kendo-spacing-3, 0.75rem) + 1px)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of an uploaded item.</div></div>
@@ -200,8 +200,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-item-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-item-padding-y, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-upload-item-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var( --kendo-upload-item-padding-y, $kendo-upload-dropzone-padding-y )</code></td>
+    <td><code>var(--kendo-upload-item-padding-y, var(--kendo-upload-dropzone-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of an uploaded item.</div></div>
@@ -210,8 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-multiple-items-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-multiple-items-spacing, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-upload-multiple-items-spacing, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>var( --kendo-upload-multiple-items-spacing, k-spacing(1.5) )</code></td>
+    <td><code>var(--kendo-upload-multiple-items-spacing, var(--kendo-spacing-1\.5, 0.375rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing between uploaded batch items.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-upload-icon-color</td>
     <td>String</td>
     <td><code>var( --kendo-upload-icon-color, k-color(subtle) )</code></td>
-    <td><code>var(--kendo-upload-icon-color, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var(--kendo-upload-icon-color, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the uploaded items icon.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-upload-progress-bg</td>
     <td>String</td>
     <td><code>var( --kendo-upload-progress-bg, k-color(primary) )</code></td>
-    <td><code>var(--kendo-upload-progress-bg, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-upload-progress-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Upload progress bar.</div></div>
@@ -291,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-upload-error-text</td>
     <td>String</td>
     <td><code>var( --kendo-upload-error-text, k-color(error-on-surface) )</code></td>
-    <td><code>var(--kendo-upload-error-text, var(--kendo-color-error-on-surface, #a4262c))</code></td>
+    <td><code>var(--kendo-upload-error-text, var(--kendo-color-error-on-surface, #c50f1f))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The error text color of the Upload.</div></div>
@@ -301,7 +301,7 @@ The following table lists the available variables for customization.
     <td>$kendo-upload-error-bg</td>
     <td>String</td>
     <td><code>var( --kendo-upload-error-bg, k-color(error-on-surface) )</code></td>
-    <td><code>var(--kendo-upload-error-bg, var(--kendo-color-error-on-surface, #a4262c))</code></td>
+    <td><code>var(--kendo-upload-error-bg, var(--kendo-color-error-on-surface, #c50f1f))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The error background color of the Upload progress bar.</div></div>

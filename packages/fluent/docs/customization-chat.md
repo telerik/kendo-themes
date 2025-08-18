@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-timestamp-text</td>
     <td>String</td>
     <td><code>var( --kendo-chat-timestamp-text, #{k-color(subtle)} )</code></td>
-    <td><code>var(--kendo-chat-timestamp-text, var(--kendo-color-subtle, #605e5c))</code></td>
+    <td><code>var(--kendo-chat-timestamp-text, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat timestamp.</div></div>
@@ -219,9 +219,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chat-timestamp-bg</td>
-    <td>String</td>
-    <td><code>normal</code></td>
-    <td><code>normal</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat timestamp.</div></div>
@@ -230,8 +230,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-timestamp-separator-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 26%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat timestamp separator.</div></div>
@@ -291,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-status-text</td>
     <td>String</td>
     <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
+    <td><code>var(--kendo-color-subtle, #707070)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat status.</div></div>
@@ -311,7 +311,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-toolbar-bg</td>
     <td>String</td>
     <td><code>var( --kendo-chat-toolbar-bg, #{$kendo-toolbar-bg} )</code></td>
-    <td><code>var(--kendo-chat-toolbar-bg, var(--kendo-toolbar-bg, var(--kendo-color-surface, #faf9f8)))</code></td>
+    <td><code>var(--kendo-chat-toolbar-bg, var(--kendo-toolbar-bg, var(--kendo-color-surface, #ffffff)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat Toolbar.</div></div>
@@ -321,7 +321,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-toolbar-text</td>
     <td>String</td>
     <td><code>var( --kendo-chat-toolbar-text, #{$kendo-toolbar-text} )</code></td>
-    <td><code>var(--kendo-chat-toolbar-text, var(--kendo-toolbar-text, var(--kendo-color-on-app-surface, #323130)))</code></td>
+    <td><code>var(--kendo-chat-toolbar-text, var(--kendo-toolbar-text, var(--kendo-color-on-app-surface, #242424)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat Toolbar.</div></div>
@@ -341,7 +341,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-bg</td>
     <td>String</td>
     <td><code>var( --kendo-chat-bg, #{k-color(surface)} )</code></td>
-    <td><code>var(--kendo-chat-bg, var(--kendo-color-surface, #faf9f8))</code></td>
+    <td><code>var(--kendo-chat-bg, var(--kendo-color-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat.</div></div>
@@ -351,7 +351,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-text</td>
     <td>String</td>
     <td><code>var( --kendo-chat-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-chat-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+    <td><code>var(--kendo-chat-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat.</div></div>
@@ -361,7 +361,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-border</td>
     <td>String</td>
     <td><code>var( --kendo-chat-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
-    <td><code>var(--kendo-chat-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>var(--kendo-chat-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat.</div></div>
@@ -371,7 +371,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-alt-bubble-bg</td>
     <td>String</td>
     <td><code>var( --kendo-chat-alt-bubble-bg, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-chat-alt-bubble-bg, var(--kendo-color-primary, #0078d4))</code></td>
+    <td><code>var(--kendo-chat-alt-bubble-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat alt bubble.</div></div>
@@ -391,7 +391,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-alt-bubble-border</td>
     <td>String</td>
     <td><code>var( --kendo-chat-alt-bubble-border, #{$kendo-chat-alt-bubble-bg} )</code></td>
-    <td><code>var(--kendo-chat-alt-bubble-border, var(--kendo-chat-alt-bubble-bg, var(--kendo-color-primary, #0078d4)))</code></td>
+    <td><code>var(--kendo-chat-alt-bubble-border, var(--kendo-chat-alt-bubble-bg, var(--kendo-color-primary, #0f6cbd)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat alt bubble.</div></div>
@@ -411,7 +411,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-typing-indicator-text</td>
     <td>String</td>
     <td><code>k-color(base-on-subtle)</code></td>
-    <td><code>var(--kendo-color-base-on-subtle, #323130)</code></td>
+    <td><code>var(--kendo-color-base-on-subtle, #242424)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the typing indicator dots.</div></div>
@@ -481,7 +481,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-file-bg</td>
     <td>String</td>
     <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
+    <td><code>var(--kendo-color-base-subtle, #f5f5f5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat file.</div></div>
@@ -491,7 +491,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-file-text</td>
     <td>String</td>
     <td><code>k-color(base-on-subtle)</code></td>
-    <td><code>var(--kendo-color-base-on-subtle, #323130)</code></td>
+    <td><code>var(--kendo-color-base-on-subtle, #242424)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat file.</div></div>
@@ -501,7 +501,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-file-border</td>
     <td>String</td>
     <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
+    <td><code>var(--kendo-color-base-subtle, #f5f5f5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat file.</div></div>
@@ -561,7 +561,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-message-pinned-border-color</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat pinned message;</div></div>
@@ -591,7 +591,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-message-reference-bg</td>
     <td>String</td>
     <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
+    <td><code>var(--kendo-color-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat message reference.</div></div>
@@ -601,7 +601,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-message-reference-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #242424)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat message reference.</div></div>
@@ -611,7 +611,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-message-reference-marker-bg</td>
     <td>String</td>
     <td><code>k-color(base-emphasis)</code></td>
-    <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>var(--kendo-color-base-emphasis, #d1d1d1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the message reference marker.</div></div>
@@ -621,7 +621,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-message-reference-marker-alt-bg</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
+    <td><code>var(--kendo-color-primary, #0f6cbd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the message reference alt marker.</div></div>
