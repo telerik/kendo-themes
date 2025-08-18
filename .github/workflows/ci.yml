@@ -22,7 +22,7 @@ jobs:
     uses: ./.github/workflows/_test-units.yml
 
   ci-test-units:
-    name: Status check > Test units
+    name: Status check > Unit
     runs-on: ubuntu-latest
     needs: [ test-units ]
     steps:
@@ -34,7 +34,7 @@ jobs:
     uses: ./.github/workflows/_test-integrations.yml
 
   ci-test-integrations:
-    name: Status check > Test integrations
+    name: Status check > Integration
     runs-on: ubuntu-latest
     needs: [ test-integrations ]
     steps:
@@ -146,26 +146,3 @@ jobs:
     with:
       max-chunks: 4
 
-  # placeholder
-  # replace placeholder with ci
-  placeholder-unit:
-    name: Status check > Unit
-    runs-on: ubuntu-latest
-    steps:
-      - name: Done
-        run: echo "Done!"
-
-  # temporary until we change checks
-  temp-unit:
-    name: CI | Unit
-    runs-on: ubuntu-latest
-    steps:
-      - name: Done
-        run: echo "Done!"
-
-  temp-visual:
-    name: CI | Visual
-    runs-on: ubuntu-latest
-    steps:
-      - name: Done
-        run: echo "Done!"
