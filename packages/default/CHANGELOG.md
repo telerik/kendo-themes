@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v12.0.0-dev.1...v12.0.0-dev.2) (2025-08-18)
+
+
+### Bug Fixes
+
+* **notification:** correct line height ([67efaa2](https://github.com/telerik/kendo-themes/commit/67efaa2beba8c580fe621f70e6f7a520f7861086))
+
+
+
+
+
 # [12.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v12.0.0-dev.0...v12.0.0-dev.1) (2025-08-18)
 
 **Note:** Version bump only for package @progress/kendo-theme-default

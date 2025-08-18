@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v12.0.0-dev.1...v12.0.0-dev.2) (2025-08-18)
+
+
+### Features
+
+* **fluent:** update styles to Fluent 2 design guidelines ([6065177](https://github.com/telerik/kendo-themes/commit/6065177c560def83e742c70aa78bb9afb34a451e))
+
+
+### BREAKING CHANGES
+
+* **fluent:** Starting with the R3 2025 release, the Telerik and
+Kendo UI Fluent theme will align with Fluent 2 design guidelines.
+As a result, the theme will no longer follow Fluent 1 standards for
+metrics, layouts, fonts, elevation, and typography. To learn more about
+this change, please refer to the dedicated breaking change article in
+the Progress Design System documentation.
+
+In order to apply Fluent 1 colors in your application, try out the
+bundled Fluent 1 color swatch - it maintains a similar color palette
+while benefiting from the modern Fluent 2 guidelines.
+
+
+
+
+
 # [12.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v12.0.0-dev.0...v12.0.0-dev.1) (2025-08-18)
 
 **Note:** Version bump only for package @progress/kendo-theme-material
