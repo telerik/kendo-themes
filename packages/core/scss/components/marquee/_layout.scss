@@ -1,8 +1,10 @@
+@use "../../z-index/index.import.scss" as *;
+
 @mixin kendo-marquee--layout-base() {
     // Marquee
     .k-marquee {
         position: absolute;
-        z-index: 100000;
+        z-index: k-z-index("top");
     }
 
     .k-marquee-color,

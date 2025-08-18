@@ -1,5 +1,6 @@
 @use "../../mixins/index.import.scss" as *;
 @use "../../border-radii/index.import.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-popup--layout-base() {
@@ -8,7 +9,7 @@
     .k-animation-container {
         position: absolute;
         overflow: hidden;
-        z-index: 100;
+        z-index: k-z-index("animation");
         outline: none;
 
         &-fixed {
@@ -19,10 +20,12 @@
             position: relative;
             display: inline-block;
         }
+
+        @include border-bottom-radius-only( $kendo-border-radius-md );
     }
 
-    .k-animation-container {
-        @include border-bottom-radius-only( $kendo-border-radius-md );
+    .k-animation-container:has(.k-child-animation-container > .k-popup) {
+        z-index: k-z-index("popup");
     }
 
     .k-animation-container-shown {
@@ -34,8 +37,6 @@
         @include border-radius( $kendo-popup-border-radius );
         margin: 0;
         padding: 0;
-        // padding-block: $kendo-popup-padding-y;
-        // padding-inline: $kendo-popup-padding-x;
         border-width: $kendo-popup-border-width;
         border-style: solid;
         box-sizing: border-box;

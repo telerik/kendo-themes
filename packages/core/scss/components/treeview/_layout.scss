@@ -4,6 +4,7 @@
 @use "../../spacing/index.import.scss" as *;
 @use "./variables.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-treeview--layout-base() {
 
@@ -127,7 +128,7 @@
         }
 
         &.k-focus {
-            z-index: 1;
+            z-index: k-z-index("base", 1);
         }
     }
 

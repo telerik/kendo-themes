@@ -6,6 +6,7 @@
 @use "./variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-scheduler--layout-base() {
 
@@ -87,7 +88,7 @@
         .k-scheduler-head {
             position: sticky;
             inset-block-start: 0;
-            z-index: 3;
+            z-index: k-z-index("base", 3);
         }
         .k-scheduler-body {
             position: relative;
@@ -208,7 +209,7 @@
             flex-basis: 0;
             position: sticky;
             inset-inline-start: 0;
-            z-index: 3;
+            z-index: k-z-index("base", 3);
         }
     }
 
@@ -220,7 +221,7 @@
         white-space: nowrap;
         flex-shrink: 0;
         position: relative;
-        z-index: 2;
+        z-index: k-z-index("base", 2);
 
         .k-widget {
             font-size: inherit;
@@ -273,7 +274,7 @@
         border-spacing: 0;
         flex: 1 1 auto;
         position: relative;
-        z-index: 1;
+        z-index: k-z-index("base", 1);
 
         > tbody > tr > td {
             padding: 0;
@@ -401,7 +402,7 @@
 
         > div {
             position: relative;
-            z-index: 2;
+            z-index: k-z-index("base", 2);
         }
 
         // Template
@@ -427,7 +428,7 @@
             inset-block-start: 0;
             inset-block-end: 0;
             inset-inline-end: $kendo-scheduler-event-actions-inset-x;
-            z-index: 2;
+            z-index: k-z-index("base", 2);
 
             .k-event-delete {
                 opacity: .5;
@@ -460,7 +461,7 @@
 
         // Resize handles
         .k-resize-handle {
-            z-index: 4;
+            z-index: k-z-index("handle");
             opacity: .5;
             visibility: hidden;
         }
@@ -552,7 +553,7 @@
     // Draging hint
     .k-event-drag-hint {
         opacity: .5;
-        z-index: 3;
+        z-index: k-z-index("base", 3);
 
         .k-event-actions,
         .k-event-top-actions,

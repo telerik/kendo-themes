@@ -1,6 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 @use "../window/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-dialog--layout-base() {
 
@@ -15,7 +16,7 @@
         inset-inline-start: 0;
         width: 100%;
         height: 100%;
-        z-index: 10001;
+        z-index: k-z-index("overlay", 1);
 
         .k-dialog {
             position: relative;

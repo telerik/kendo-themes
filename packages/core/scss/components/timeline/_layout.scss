@@ -4,6 +4,7 @@
 @use "../icons/_variables.scss" as *;
 @use "./variables.scss" as *;
 @use "../card/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-timeline--layout-base() {
 
@@ -45,7 +46,7 @@
             min-width: $kendo-timeline-flag-min-width;
             max-width: $kendo-timeline-flag-max-width;
             position: relative;
-            z-index: 1;
+            z-index: k-z-index("base", 1);
         }
 
         .k-timeline-circle {
@@ -54,7 +55,7 @@
             border-radius: 50%;
             flex-shrink: 0;
             position: relative;
-            z-index: 1;
+            z-index: k-z-index("base", 1);
         }
 
         &.k-timeline-dates-hidden {
@@ -354,7 +355,7 @@
                 margin-block: 0;
                 margin-inline: $kendo-timeline-track-arrow-width;
                 position: relative;
-                z-index: 2;
+                z-index: k-z-index("base", 2);
 
                 .k-timeline-scrollable-wrap {
                     transition: transform 1s ease-in-out;
@@ -391,7 +392,7 @@
         border-radius: 50%;
         position: absolute;
         inset-block-end: calc(#{$kendo-timeline-track-size} + #{$kendo-timeline-track-wrap-padding-bottom} + 2 * #{$kendo-timeline-track-border-width});
-        z-index: 3;
+        z-index: k-z-index("base", 3);
         display: flex;
         align-items: center;
         justify-content: center;

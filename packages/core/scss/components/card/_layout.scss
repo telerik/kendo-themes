@@ -1,6 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "../../color-system/_constants.scss" as *;
 @use "../../typography/index.import.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 @use "./variables.scss" as *;
 @use "../typography/_variables.scss" as *;
 
@@ -71,7 +72,7 @@
         flex-shrink: 0;
         overflow: hidden;
         position: relative;
-        z-index: 1;
+        z-index: k-z-index("base", 1);
 
         .k-card-title,
         .k-card-subtitle {
@@ -242,7 +243,7 @@
             @include border-radius( $kendo-card-deck-scroll-button-radius );
             flex: 0 0 auto;
             position: absolute;
-            z-index: 1;
+            z-index: k-z-index("base", 1);
 
             &:first-child {
                 inset-inline-start: $kendo-card-deck-scroll-button-offset;

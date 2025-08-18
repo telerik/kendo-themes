@@ -1,6 +1,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "./variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-menu--layout-base() {
 
@@ -284,7 +285,7 @@
         flex-wrap: nowrap;
     }
     .k-context-menu-popup {
-        z-index: 12000;
+        z-index: k-z-index("popup");
 
         .k-context-menu {
             border-width: 0;

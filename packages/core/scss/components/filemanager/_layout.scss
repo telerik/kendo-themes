@@ -1,5 +1,6 @@
 @use "./variables.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-file-manager--layout-base() {
 
@@ -25,7 +26,7 @@
         border-block-end-width: $kendo-file-manager-toolbar-border-width;
         border-color: inherit;
         flex-shrink: 0;
-        z-index: 1;
+        z-index: k-z-index("base", 1);
     }
 
 

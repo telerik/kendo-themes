@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-color-palette--layout-base() {
 
@@ -43,7 +44,7 @@
         &:hover,
         &.k-hover {
             position: relative;
-            z-index: 101;
+            z-index: k-z-index("base", 2);
         }
 
         &:focus,
@@ -51,7 +52,7 @@
         &.k-selected,
         &.k-selected:hover {
             position: relative;
-            z-index: 100;
+            z-index: k-z-index("base", 1);
         }
     }
 

@@ -1,5 +1,6 @@
 @use "../icons/_variables.scss" as *;
 @use "./_variables.scss" as *;
+@use "../core/z-index/index.import.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/expansion-panel/_layout.scss" as *;
 
 @mixin kendo-expander--layout() {
@@ -23,7 +24,7 @@
             inset: $kendo-expander-focus-offset;
             outline-width: $kendo-expander-focus-outline-width;
             outline-style: $kendo-expander-focus-outline-style;
-            z-index: 1;
+            z-index: k-z-index("base", 1);
             pointer-events: none;
         }
     }
