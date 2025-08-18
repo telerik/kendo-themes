@@ -24,11 +24,11 @@ export default class MinimalReporter {
         path: test.path,
         error: testResult.testExecError.message,
       });
-      
+
       // Log the error immediately for valuable debugging information
       console.log(`${this.colors.red}${this.colors.bold}SUITE FAIL${this.colors.reset}: ${test.path}`);
       console.log(`${this.colors.red}Error: ${testResult.testExecError.message}${this.colors.reset}`);
-      
+
       return;
     }
 
@@ -60,7 +60,7 @@ export default class MinimalReporter {
   }
 
   onRunComplete(contexts, results) {
-    const { numPassedTests, numFailedTests, numTotalTests, numFailedTestSuites } = results;
+    const { numPassedTests, numFailedTests, numTotalTests } = results;
 
     // Display suite failures summary
     if (this.suiteFailures.length > 0) {
@@ -77,11 +77,7 @@ export default class MinimalReporter {
     console.log(`${this.colors.red}Failed: ${numFailedTests}${this.colors.reset}`);
     console.log(`Total: ${numTotalTests}`);
 
-    if (numFailedTestSuites > 0) {
-      console.log(`${this.colors.red}Failed Test Suites: ${numFailedTestSuites}${this.colors.reset}`);
-    }
-
-    if (numFailedTests > 0 || numFailedTestSuites > 0) {
+    if (numFailedTests > 0) {
       console.log(`\n${this.colors.red}${this.colors.bold}Tests failed!${this.colors.reset}`);
     } else {
       console.log(`\n${this.colors.green}${this.colors.bold}All tests passed!${this.colors.reset}`);

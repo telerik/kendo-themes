@@ -21,12 +21,12 @@ const unexpected = [];
 describe(`${component} CSS specificity`, () => {
   const result = sass.compileString(
     `
-    @use '../packages/${process.env.THEME}/scss/${component}/_variables.scss' as *;
-    @use '../packages/${process.env.THEME}/scss/${component}/_theme.scss' as *;
-    @use '../packages/${process.env.THEME}/scss/${component}/_layout.scss' as *;
+    @use '../packages/${process.env.THEME}/scss/button/_variables.scss' as *;
+    @use '../packages/${process.env.THEME}/scss/button/_theme.scss' as *;
+    @use '../packages/${process.env.THEME}/scss/button/_layout.scss' as *;
 
-    @include kendo-${component}--layout();
-    @include kendo-${component}--theme();
+    @include kendo-button--layout();
+    @include kendo-button--theme();
     `,
     {
       loadPaths: [path.resolve(__dirname, "../../"), path.resolve(__dirname, "../../node_modules")],
@@ -54,4 +54,4 @@ describe(`${component} CSS specificity`, () => {
   });
 });
 
-testKendoComponent(component, group, Button.className, dependencyClassNames, [...expected, ...unexpected]);
+testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);
