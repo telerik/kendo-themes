@@ -1,29 +1,35 @@
 import "./theme.env.js";
 import { getSelectorsSpecificity, calculateSpecificityThreshold } from "../specificity-analyzer";
-import { Button } from "../../packages/html/src/button/button.spec";
+import { TaskBoard } from "../../packages/html/src/taskboard/taskboard.spec";
 import * as sass from "sass";
 import * as path from "path";
 import { describe, it, expect } from "@jest/globals";
 
 const { testKendoComponent } = require("../utility");
 
-const component = "button";
+const component = "task-board";
 const group = component;
-const className = Button.className;
-const dependencyClassNames = ["k-badge", "k-svg-icon"];
+const className = TaskBoard.className;
+const dependencyClassNames = [
+    "k-svg-icon",
+    "k-form",
+    "k-input",
+    // "k-textbox", // .k-textbox {} selector is empty.
+    // "k-searchbox", // .k-searchbox {} selector is empty.
+    "k-toolbar",
+    "k-card"
+];
 const expected = [
-    "kendo-button-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-inner-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-border-width", // Variable customizations work, but is used by another variable.
+    "kendo-taskboard-spacer" // Variable customizations work, but is used by another variable.
 ];
 const unexpected = [];
 
 describe(`${component} CSS specificity`, () => {
   const result = sass.compileString(
     `
-    @use '../packages/${process.env.THEME}/scss/${component}/_variables.scss' as *;
-    @use '../packages/${process.env.THEME}/scss/${component}/_theme.scss' as *;
-    @use '../packages/${process.env.THEME}/scss/${component}/_layout.scss' as *;
+    @use '../packages/${process.env.THEME}/scss/taskboard/_variables.scss' as *;
+    @use '../packages/${process.env.THEME}/scss/taskboard/_theme.scss' as *;
+    @use '../packages/${process.env.THEME}/scss/taskboard/_layout.scss' as *;
 
     @include kendo-${component}--layout();
     @include kendo-${component}--theme();
@@ -34,15 +40,15 @@ describe(`${component} CSS specificity`, () => {
     }
   );
 
-  const buttonSelectors = getSelectorsSpecificity(result.css, {
-    filter: Button.className,
+  const taskboardSelectors = getSelectorsSpecificity(result.css, {
+    filter: TaskBoard.className,
     minSpecificity: 0,
     sourceMap: result.sourceMap,
   });
 
-  buttonSelectors.forEach((selectorInfo) => {
+  taskboardSelectors.forEach((selectorInfo) => {
     const { selector, specificityValue, sourceLocation } = selectorInfo;
-    const expectedSpecificity = calculateSpecificityThreshold(selector, Button);
+    const expectedSpecificity = calculateSpecificityThreshold(selector, TaskBoard);
 
     it(`"${selector} (Expected: ${expectedSpecificity}, Actual: ${specificityValue})"`, () => {
       try {
@@ -54,4 +60,4 @@ describe(`${component} CSS specificity`, () => {
   });
 });
 
-testKendoComponent(component, group, Button.className, dependencyClassNames, [...expected, ...unexpected]);
+testKendoComponent(component, group, TaskBoard.className, dependencyClassNames, [...expected, ...unexpected]);

@@ -1,29 +1,31 @@
 import "./theme.env.js";
 import { getSelectorsSpecificity, calculateSpecificityThreshold } from "../specificity-analyzer";
-import { Button } from "../../packages/html/src/button/button.spec";
+import { ImageEditor } from "../../packages/html/src/imageeditor/imageeditor.spec";
 import * as sass from "sass";
 import * as path from "path";
 import { describe, it, expect } from "@jest/globals";
 
 const { testKendoComponent } = require("../utility");
 
-const component = "button";
+const component = "image-editor";
 const group = component;
-const className = Button.className;
-const dependencyClassNames = ["k-badge", "k-svg-icon"];
-const expected = [
-    "kendo-button-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-inner-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-border-width", // Variable customizations work, but is used by another variable.
+const className = ImageEditor.className;
+const dependencyClassNames = [
+    "k-toolbar",
+    "k-form",
+    // "k-dropdownlist", // .k-dropdownlist {} @extend .k-dropdown-list; .k-dropdown-list{} is empty;
+    // "k-numerictextbox", // Empty selector for .k-numerictextbox {}
+    "k-checkbox"
 ];
+const expected = [];
 const unexpected = [];
 
 describe(`${component} CSS specificity`, () => {
   const result = sass.compileString(
     `
-    @use '../packages/${process.env.THEME}/scss/${component}/_variables.scss' as *;
-    @use '../packages/${process.env.THEME}/scss/${component}/_theme.scss' as *;
-    @use '../packages/${process.env.THEME}/scss/${component}/_layout.scss' as *;
+    @use '../packages/${process.env.THEME}/scss/imageeditor/_variables.scss' as *;
+    @use '../packages/${process.env.THEME}/scss/imageeditor/_theme.scss' as *;
+    @use '../packages/${process.env.THEME}/scss/imageeditor/_layout.scss' as *;
 
     @include kendo-${component}--layout();
     @include kendo-${component}--theme();
@@ -34,15 +36,15 @@ describe(`${component} CSS specificity`, () => {
     }
   );
 
-  const buttonSelectors = getSelectorsSpecificity(result.css, {
-    filter: Button.className,
+  const imageeditorSelectors = getSelectorsSpecificity(result.css, {
+    filter: ImageEditor.className,
     minSpecificity: 0,
     sourceMap: result.sourceMap,
   });
 
-  buttonSelectors.forEach((selectorInfo) => {
+  imageeditorSelectors.forEach((selectorInfo) => {
     const { selector, specificityValue, sourceLocation } = selectorInfo;
-    const expectedSpecificity = calculateSpecificityThreshold(selector, Button);
+    const expectedSpecificity = calculateSpecificityThreshold(selector, ImageEditor);
 
     it(`"${selector} (Expected: ${expectedSpecificity}, Actual: ${specificityValue})"`, () => {
       try {
@@ -54,4 +56,4 @@ describe(`${component} CSS specificity`, () => {
   });
 });
 
-testKendoComponent(component, group, Button.className, dependencyClassNames, [...expected, ...unexpected]);
+testKendoComponent(component, group, ImageEditor.className, dependencyClassNames, [...expected, ...unexpected], false);

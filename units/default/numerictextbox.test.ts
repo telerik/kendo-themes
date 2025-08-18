@@ -1,29 +1,29 @@
 import "./theme.env.js";
 import { getSelectorsSpecificity, calculateSpecificityThreshold } from "../specificity-analyzer";
-import { Button } from "../../packages/html/src/button/button.spec";
+import { NumericTextbox } from "../../packages/html/src/numerictextbox/numerictextbox.spec";
 import * as sass from "sass";
 import * as path from "path";
 import { describe, it, expect } from "@jest/globals";
 
 const { testKendoComponent } = require("../utility");
 
-const component = "button";
+const component = "numeric-textbox";
 const group = component;
-const className = Button.className;
-const dependencyClassNames = ["k-badge", "k-svg-icon"];
-const expected = [
-    "kendo-button-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-inner-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-border-width", // Variable customizations work, but is used by another variable.
+const className = NumericTextbox.className;
+const dependencyClassNames = [
+    "k-input",
+    "k-floating-label-container",
+    "k-svg-icon"
 ];
+const expected = [];
 const unexpected = [];
 
 describe(`${component} CSS specificity`, () => {
   const result = sass.compileString(
     `
-    @use '../packages/${process.env.THEME}/scss/${component}/_variables.scss' as *;
-    @use '../packages/${process.env.THEME}/scss/${component}/_theme.scss' as *;
-    @use '../packages/${process.env.THEME}/scss/${component}/_layout.scss' as *;
+    @use '../packages/${process.env.THEME}/scss/numerictextbox/_variables.scss' as *;
+    @use '../packages/${process.env.THEME}/scss/numerictextbox/_theme.scss' as *;
+    @use '../packages/${process.env.THEME}/scss/numerictextbox/_layout.scss' as *;
 
     @include kendo-${component}--layout();
     @include kendo-${component}--theme();
@@ -34,15 +34,15 @@ describe(`${component} CSS specificity`, () => {
     }
   );
 
-  const buttonSelectors = getSelectorsSpecificity(result.css, {
-    filter: Button.className,
+  const numerictextboxSelectors = getSelectorsSpecificity(result.css, {
+    filter: NumericTextbox.className,
     minSpecificity: 0,
     sourceMap: result.sourceMap,
   });
 
-  buttonSelectors.forEach((selectorInfo) => {
+  numerictextboxSelectors.forEach((selectorInfo) => {
     const { selector, specificityValue, sourceLocation } = selectorInfo;
-    const expectedSpecificity = calculateSpecificityThreshold(selector, Button);
+    const expectedSpecificity = calculateSpecificityThreshold(selector, NumericTextbox);
 
     it(`"${selector} (Expected: ${expectedSpecificity}, Actual: ${specificityValue})"`, () => {
       try {
@@ -54,4 +54,4 @@ describe(`${component} CSS specificity`, () => {
   });
 });
 
-testKendoComponent(component, group, Button.className, dependencyClassNames, [...expected, ...unexpected]);
+testKendoComponent(component, group, NumericTextbox.className, dependencyClassNames, [...expected, ...unexpected], false);

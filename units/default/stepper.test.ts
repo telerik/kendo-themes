@@ -1,20 +1,21 @@
 import "./theme.env.js";
 import { getSelectorsSpecificity, calculateSpecificityThreshold } from "../specificity-analyzer";
-import { Button } from "../../packages/html/src/button/button.spec";
+import { Stepper } from "../../packages/html/src/stepper/stepper.spec";
 import * as sass from "sass";
 import * as path from "path";
 import { describe, it, expect } from "@jest/globals";
 
 const { testKendoComponent } = require("../utility");
 
-const component = "button";
+const component = "stepper";
 const group = component;
-const className = Button.className;
-const dependencyClassNames = ["k-badge", "k-svg-icon"];
+const className = Stepper.className;
+const dependencyClassNames = [
+    "k-svg-icon",
+    "k-progressbar"
+];
 const expected = [
-    "kendo-button-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-inner-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-border-width", // Variable customizations work, but is used by another variable.
+    "kendo-stepper-indicator-focus-offset" // Variable customizations work, but is used for calculations.
 ];
 const unexpected = [];
 
@@ -34,15 +35,15 @@ describe(`${component} CSS specificity`, () => {
     }
   );
 
-  const buttonSelectors = getSelectorsSpecificity(result.css, {
-    filter: Button.className,
+  const stepperSelectors = getSelectorsSpecificity(result.css, {
+    filter: Stepper.className,
     minSpecificity: 0,
     sourceMap: result.sourceMap,
   });
 
-  buttonSelectors.forEach((selectorInfo) => {
+  stepperSelectors.forEach((selectorInfo) => {
     const { selector, specificityValue, sourceLocation } = selectorInfo;
-    const expectedSpecificity = calculateSpecificityThreshold(selector, Button);
+    const expectedSpecificity = calculateSpecificityThreshold(selector, Stepper);
 
     it(`"${selector} (Expected: ${expectedSpecificity}, Actual: ${specificityValue})"`, () => {
       try {
@@ -54,4 +55,4 @@ describe(`${component} CSS specificity`, () => {
   });
 });
 
-testKendoComponent(component, group, Button.className, dependencyClassNames, [...expected, ...unexpected]);
+testKendoComponent(component, group, Stepper.className, dependencyClassNames, [...expected, ...unexpected]);

@@ -1,21 +1,28 @@
 import "./theme.env.js";
 import { getSelectorsSpecificity, calculateSpecificityThreshold } from "../specificity-analyzer";
-import { Button } from "../../packages/html/src/button/button.spec";
+import { ChartWizard } from "../../packages/html/src/chart-wizard/chart-wizard.spec";
 import * as sass from "sass";
 import * as path from "path";
 import { describe, it, expect } from "@jest/globals";
 
 const { testKendoComponent } = require("../utility");
 
-const component = "button";
+const component = "chart-wizard";
 const group = component;
-const className = Button.className;
-const dependencyClassNames = ["k-badge", "k-svg-icon"];
-const expected = [
-    "kendo-button-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-inner-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-border-width", // Variable customizations work, but is used by another variable.
+const className = ChartWizard.className;
+const dependencyClassNames = [
+    "k-svg-icon",
+    "k-window",
+    "k-splitter",
+    // "k-dataviz",
+    "k-expander",
+    "k-grid",
+    "k-tabstrip",
+    "k-listview",
+    "k-form",
+    // "k-combobox" // The .k-combobox selector is empty.
 ];
+const expected = [];
 const unexpected = [];
 
 describe(`${component} CSS specificity`, () => {
@@ -34,15 +41,15 @@ describe(`${component} CSS specificity`, () => {
     }
   );
 
-  const buttonSelectors = getSelectorsSpecificity(result.css, {
-    filter: Button.className,
+  const chartWizardSelectors = getSelectorsSpecificity(result.css, {
+    filter: ChartWizard.className,
     minSpecificity: 0,
     sourceMap: result.sourceMap,
   });
 
-  buttonSelectors.forEach((selectorInfo) => {
+  chartWizardSelectors.forEach((selectorInfo) => {
     const { selector, specificityValue, sourceLocation } = selectorInfo;
-    const expectedSpecificity = calculateSpecificityThreshold(selector, Button);
+    const expectedSpecificity = calculateSpecificityThreshold(selector, ChartWizard);
 
     it(`"${selector} (Expected: ${expectedSpecificity}, Actual: ${specificityValue})"`, () => {
       try {
@@ -54,4 +61,4 @@ describe(`${component} CSS specificity`, () => {
   });
 });
 
-testKendoComponent(component, group, Button.className, dependencyClassNames, [...expected, ...unexpected]);
+testKendoComponent(component, group, ChartWizard.className, dependencyClassNames, [...expected, ...unexpected]);

@@ -1,29 +1,32 @@
 import "./theme.env.js";
 import { getSelectorsSpecificity, calculateSpecificityThreshold } from "../specificity-analyzer";
-import { Button } from "../../packages/html/src/button/button.spec";
+import { DropdownTree } from "../../packages/html/src/dropdowntree/dropdowntree.spec";
 import * as sass from "sass";
 import * as path from "path";
 import { describe, it, expect } from "@jest/globals";
 
 const { testKendoComponent } = require("../utility");
 
-const component = "button";
+const component = "dropdown-tree";
 const group = component;
-const className = Button.className;
-const dependencyClassNames = ["k-badge", "k-svg-icon"];
-const expected = [
-    "kendo-button-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-inner-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-border-width", // Variable customizations work, but is used by another variable.
+const className = DropdownTree.className;
+const dependencyClassNames = [
+    "k-input",
+    "k-popup",
+    "k-floating-label-container",
+    // "k-dropdownlist",  // .k-dropdownlist {} @extend .k-dropdown-list; .k-dropdown-list{} is empty;
+    // "k-multiselect",  // .k-multiselect {} selector is empty
+    "k-treeview"
 ];
+const expected = [];
 const unexpected = [];
 
 describe(`${component} CSS specificity`, () => {
   const result = sass.compileString(
     `
-    @use '../packages/${process.env.THEME}/scss/${component}/_variables.scss' as *;
-    @use '../packages/${process.env.THEME}/scss/${component}/_theme.scss' as *;
-    @use '../packages/${process.env.THEME}/scss/${component}/_layout.scss' as *;
+    @use '../packages/${process.env.THEME}/scss/dropdowntree/_variables.scss' as *;
+    @use '../packages/${process.env.THEME}/scss/dropdowntree/_theme.scss' as *;
+    @use '../packages/${process.env.THEME}/scss/dropdowntree/_layout.scss' as *;
 
     @include kendo-${component}--layout();
     @include kendo-${component}--theme();
@@ -34,15 +37,15 @@ describe(`${component} CSS specificity`, () => {
     }
   );
 
-  const buttonSelectors = getSelectorsSpecificity(result.css, {
-    filter: Button.className,
+  const dropdowntreeSelectors = getSelectorsSpecificity(result.css, {
+    filter: DropdownTree.className,
     minSpecificity: 0,
     sourceMap: result.sourceMap,
   });
 
-  buttonSelectors.forEach((selectorInfo) => {
+  dropdowntreeSelectors.forEach((selectorInfo) => {
     const { selector, specificityValue, sourceLocation } = selectorInfo;
-    const expectedSpecificity = calculateSpecificityThreshold(selector, Button);
+    const expectedSpecificity = calculateSpecificityThreshold(selector, DropdownTree);
 
     it(`"${selector} (Expected: ${expectedSpecificity}, Actual: ${specificityValue})"`, () => {
       try {
@@ -54,4 +57,4 @@ describe(`${component} CSS specificity`, () => {
   });
 });
 
-testKendoComponent(component, group, Button.className, dependencyClassNames, [...expected, ...unexpected]);
+testKendoComponent(component, group, DropdownTree.className, dependencyClassNames, [...expected, ...unexpected], false);
