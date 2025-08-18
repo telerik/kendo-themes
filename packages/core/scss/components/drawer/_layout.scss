@@ -1,5 +1,6 @@
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-drawer--layout-base() {
 
@@ -78,7 +79,7 @@
         .k-drawer {
             max-width: 80vw; // limit width
             position: fixed;
-            z-index: 10002;
+            z-index: k-z-index("drawer");
             border: 0;
         }
 

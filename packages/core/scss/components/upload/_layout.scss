@@ -2,6 +2,7 @@
 @use "../../spacing/index.import.scss" as *;
 @use "./variables.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-upload--layout-base() {
 
@@ -238,7 +239,7 @@
             position: absolute;
             inset-block-end: 0;
             inset-inline-end: 0;
-            z-index: 1;
+            z-index: k-z-index("base", 1);
         }
         input[disabled],
         input.k-disabled {

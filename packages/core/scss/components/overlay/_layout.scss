@@ -1,4 +1,5 @@
 @use "./_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-overlay--layout-base() {
 
@@ -10,7 +11,7 @@
         position: fixed;
         inset-block-start: 0;
         inset-inline-start: 0;
-        z-index: 10001;
+        z-index: k-z-index("overlay");
     }
 
 }

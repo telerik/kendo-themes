@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
-@use "../core/spacing/_index.scss" as *;
+@use "../core/z-index/index.import.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/list/_layout.scss" as *;
 
 @mixin kendo-list--layout() {
@@ -12,7 +12,7 @@
     }
 
     .k-list-group-sticky-header {
-        z-index: 1;
+        z-index: k-z-index("base", 1);
     }
 
     .k-list-ul {

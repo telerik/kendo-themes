@@ -1,5 +1,6 @@
 @use "./_variables.scss" as *;
 @use "../overlay/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-loader--layout-base() {
 
@@ -366,7 +367,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 20001;
+        z-index: k-z-index("loading");
 
         .k-loader {
             padding: 0;
@@ -393,7 +394,7 @@
         display: flex;
         align-items: center;
         position: relative;
-        z-index: 2;
+        z-index: k-z-index("base", 2);
     }
 
     .k-loader-container-panel {
@@ -489,7 +490,7 @@
         color: $kendo-loading-text;
     }
     .k-loading-image {
-        z-index: 2;
+        z-index: k-z-index("base", 2);
         color: $kendo-loading-text;
     }
     .k-loading-color {

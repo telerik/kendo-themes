@@ -1,6 +1,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "../../spacing/index.import.scss" as *;
 @use "../../mixins/index.import.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 @use "./variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 
@@ -41,7 +42,7 @@
             list-style: none;
             display: flex;
             position: relative;
-            z-index: 1;
+            z-index: k-z-index("base", 1);
         }
 
 
@@ -73,7 +74,7 @@
             justify-content: center;
             flex: none;
             position: relative;
-            z-index: 1;
+            z-index: k-z-index("base", 1);
             overflow: visible;
             transition-property: color, background-color, border-color;
             transition-duration: .4s;
@@ -87,7 +88,7 @@
                 position: absolute;
                 inset-block-start: 0;
                 inset-inline-start: 0;
-                z-index: -1;
+                z-index: k-z-index("bottom");
             }
 
             &::after {
@@ -103,7 +104,7 @@
                 inset-inline-end: calc( -1 * #{$kendo-stepper-indicator-focus-calc-offset} );
                 inset-block-end: calc( -1 * #{$kendo-stepper-indicator-focus-calc-offset} );
                 inset-inline-start: calc( -1 * #{$kendo-stepper-indicator-focus-calc-offset} );
-                z-index: 2;
+                z-index: k-z-index("base", 2);
             }
         }
 
@@ -122,7 +123,7 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            z-index: 1;
+            z-index: k-z-index("base", 1);
         }
         .k-step-label:only-child {
             @include border-radius( $kendo-stepper-label-border-radius );
@@ -132,7 +133,7 @@
         }
         .k-step-label .k-step-text {
             max-width: calc(10em - (#{$kendo-icon-size} + #{$kendo-icon-spacing}));
-            flex-grow: 1;
+            flex-grow: k-z-index("base", 1);
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -171,7 +172,7 @@
         // Progressbar
         .k-progressbar {
             pointer-events: none;
-            z-index: 0;
+            z-index: k-z-index("base");
             overflow: visible;
         }
 
