@@ -139,10 +139,17 @@ jobs:
       - name: Done
         run: echo "Done!"
 
-  ci-a11y:
-    name: Status check > A11y
+  a11y:
+    name: A11y
     needs: [ compile-themes, render-test-pages ]
     uses: ./.github/workflows/_test-contrast.yml
     with:
       max-chunks: 4
 
+  ci-a11y:
+    name: Status check > A11y
+    runs-on: ubuntu-latest
+    needs: [ a11y ]
+    steps:
+      - name: Done
+        run: echo "Done!"
