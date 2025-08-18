@@ -13,6 +13,30 @@ export default class MinimalReporter {
   }
 
   onTestResult(test, testResult) {
+    // Handle test suite failures (e.g., compilation errors)
+    if (testResult.testExecError) {
+      console.log(`${this.colors.red}${this.colors.bold}SUITE FAIL${this.colors.reset}: ${test.path}`);
+
+      // Try to extract and display the most relevant part of the error
+      const errorMessage = testResult.testExecError.message;
+
+      // Check for Sass compilation errors
+      const sassErrorMatch = errorMessage.match(/(Mixins may not contain mixin declarations\.[\s\S]*?╵[\s\S]*?root stylesheet)/);
+      if (sassErrorMatch) {
+        console.log(`${this.colors.yellow}${this.colors.bold}Sass Compilation Error:${this.colors.reset}`);
+        const errorDetails = sassErrorMatch[1]
+          .replace(/\s+╷\s*/g, '\n  ╷ ')
+          .replace(/\s+╵\s*/g, '\n  ╵ ')
+          .replace(/(@progress\/kendo-theme-core\/scss\/components\/grid\/_layout\.scss)/g, this.colors.cyan + '$1' + this.colors.reset)
+          .replace(/(root stylesheet)/g, this.colors.cyan + '$1' + this.colors.reset);
+        console.log('  ' + errorDetails);
+      } else {
+        // Fallback for other types of errors
+        console.log(`${this.colors.red}Error: ${errorMessage}${this.colors.reset}`);
+      }
+      return;
+    }
+
     testResult.testResults.forEach((result) => {
       const testPath = result.ancestorTitles.length > 0
         ? `${result.ancestorTitles.join(' › ')} › ${result.title}`
@@ -40,7 +64,7 @@ export default class MinimalReporter {
   }
 
   onRunComplete(contexts, results) {
-    const { numPassedTests, numFailedTests, numTotalTests } = results;
+    const { numPassedTests, numFailedTests, numTotalTests, numFailedTestSuites } = results;
 
     console.log('\n' + '='.repeat(50));
     console.log(`${this.colors.bold}Test Summary:${this.colors.reset}`);
@@ -48,7 +72,11 @@ export default class MinimalReporter {
     console.log(`${this.colors.red}Failed: ${numFailedTests}${this.colors.reset}`);
     console.log(`Total: ${numTotalTests}`);
 
-    if (numFailedTests > 0) {
+    if (numFailedTestSuites > 0) {
+      console.log(`${this.colors.red}Failed Test Suites: ${numFailedTestSuites}${this.colors.reset}`);
+    }
+
+    if (numFailedTests > 0 || numFailedTestSuites > 0) {
       console.log(`\n${this.colors.red}${this.colors.bold}Tests failed!${this.colors.reset}`);
     } else {
       console.log(`\n${this.colors.green}${this.colors.bold}All tests passed!${this.colors.reset}`);
