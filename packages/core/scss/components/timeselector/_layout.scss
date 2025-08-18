@@ -4,6 +4,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 @use "../button/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-time-selector--layout-base() {
 
@@ -88,7 +89,7 @@
         inset-inline-start: 0;
         inset-inline-end: 0;
         transform: translateY(-50%);
-        z-index: 1;
+        z-index: k-z-index("base", 1);
     }
 
 
@@ -147,7 +148,7 @@
         align-items: stretch;
         flex: 1;
         position: relative;
-        z-index: 1;
+        z-index: k-z-index("base", 1);
         outline: 0;
         overflow: hidden;
 
@@ -158,7 +159,7 @@
             content: "\200b";
             height: 0;
             line-height: 0;
-            z-index: 1;
+            z-index: k-z-index("base", 1);
             width: 200%;
             inset-inline-start: -50%;
         }
@@ -211,7 +212,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        z-index: 11;
+        z-index: k-z-index("base", 1);
         inset-block-start: calc( #{list.slash( $kendo-time-list-title-height, 2 )} );
     }
 

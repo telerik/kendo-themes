@@ -2,6 +2,7 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../core/z-index/index.import.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/input/_layout.scss" as *;
 
 @mixin kendo-input--layout() {
@@ -27,7 +28,7 @@
                 border-style: solid;
                 border-radius: inherit;
                 pointer-events: none;
-                z-index: 1;
+                z-index: k-z-index("base", 1);
             }
         }
     }

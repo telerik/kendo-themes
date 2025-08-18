@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "../../mixins/index.import.scss" as *;
 @use "../../spacing/index.import.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
@@ -176,7 +177,7 @@
             left: 50%;
             top: 50%;
             border-radius: 100%;
-            z-index: -1;
+            z-index: k-z-index("bottom");
             transition: opacity 100ms linear, transform 150ms cubic-bezier(.4, 0, .2, 1);
             transform: translate(-50%, -50%) scale(0);
             transform-origin: center center;

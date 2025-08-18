@@ -1,0 +1,36 @@
+@use "sass:map";
+
+$kendo-z-step: 1;
+
+$kendo-z-layers: (
+    bottom:           -1,
+    base:              0,
+    handle:           10,
+    selection:       100,
+    badge:           300,
+    animation:       600,
+    banner:         1000,
+    floating:       5000,
+    overlay:       10000,
+    drawer:        11000,
+    modal:         11500,
+    popup:         12000,
+    loading:       20000,
+    top:          100000,
+    scroll:       200000
+);
+
+/// Return a z-index value based on layer and number of steps.
+/// @param {String} $layer - The layer key from the $kendo-z-layers map.
+/// @param {Number} $n [0] - {Optional} Number of steps above the base layer.
+/// @param {Number} $delta [0] - {Deprecated, Optional} Balancing value.
+/// @return {Number} - Calculated z-index value.
+@function k-z-index($layer, $n: 0, $delta: 0) {
+    $layer-value: map.get($kendo-z-layers, $layer);
+
+    @if not $layer-value {
+        @error "Layer '#{$layer}' not found in $kendo-z-layers map.";
+    }
+
+    @return $layer-value + ($n * $kendo-z-step) + $delta;
+}

@@ -1,6 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-notification--layout-base() {
 
@@ -10,7 +11,7 @@
         display: inline-flex;
         flex-flow: column-reverse wrap;
         position: fixed;
-        z-index: 1000;
+        z-index: k-z-index("popup");
         gap: $kendo-notification-group-gap 0;
     }
 

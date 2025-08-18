@@ -3,6 +3,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-button--layout-base() {
 
@@ -172,7 +173,7 @@
         > .k-button:active,
         > .k-button.k-active,
         > .k-button.k-selected {
-            z-index: 2;
+            z-index: k-z-index("base", 2);
         }
 
         .k-button:not(:first-child):not(:last-child) {
@@ -272,7 +273,7 @@
         inset-inline-end: calc( -1 * $kendo-button-border-width );
         inset-block-start: calc( -1 * $kendo-button-border-width );
         inset-block-end: calc( -1 * $kendo-button-border-width );
-        z-index: 0;
+        z-index: k-z-index("base");
         transition: opacity .2s ease-in-out;
     }
 
@@ -337,7 +338,7 @@
             inset-inline-end: calc( -1 * $kendo-button-border-width );
             inset-block-start: calc( -1 * $kendo-button-border-width );
             inset-block-end: calc( -1 * $kendo-button-border-width );
-            z-index: 0;
+            z-index: k-z-index("base");
             transition: opacity .2s ease-in-out;
         }
     }

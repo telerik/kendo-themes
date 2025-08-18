@@ -7,6 +7,7 @@
 @use "../icons/_variables.scss" as *;
 @use "../menu/_variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-spreadsheet--layout-base() {
 
@@ -155,7 +156,7 @@
         display: none;
         overflow: hidden;
         position: absolute;
-        z-index: 100;
+        z-index: k-z-index("selection");
     }
 
 
@@ -241,7 +242,7 @@
         box-sizing: border-box;
         user-select: none;
         position: absolute;
-        z-index: 2;
+        z-index: k-z-index("base", 2);
         overflow: hidden;
     }
 
@@ -278,7 +279,7 @@
         position: absolute;
         inset-block-start: 0;
         inset-inline-start: 0;
-        z-index: 10000;
+        z-index: k-z-index("overlay");
 
         &::after {
             content: "";
@@ -300,11 +301,11 @@
         height: 100%;
         overflow: scroll;
         position: absolute;
-        z-index: 1;
+        z-index: k-z-index("base", 1);
 
         @media (hover: none), (pointer: coarse) {
             // on touch devices we want this to stay on top.
-            z-index: 3;
+            z-index: k-z-index("base", 3);
         }
     }
 
@@ -330,7 +331,7 @@
     .k-spreadsheet-row-header,
     .k-spreadsheet-column-header {
         text-align: center;
-        z-index: 100;
+        z-index: k-z-index("selection", -1);
 
         > div {
             position: relative;
@@ -431,13 +432,13 @@
     .k-spreadsheet .k-spreadsheet-editor-button {
         position: absolute;
         padding: 0;
-        z-index: 60;
+        z-index: k-z-index("base", 6);
     }
 
     .k-spreadsheet-active-cell {
         // always show exact active cell border, regardless of inline cell styles
         outline-color: transparent !important; // stylelint-disable-line declaration-no-important
-        z-index: 10;
+        z-index: k-z-index("base", 4);
     }
 
     .k-spreadsheet .k-auto-fill-wrapper {
@@ -469,7 +470,7 @@
         position: absolute;
         inset-block-end: 0;
         inset-inline-end: 0;
-        z-index: 300;
+        z-index: k-z-index("selection", 1);
         cursor: crosshair;
     }
 
@@ -525,7 +526,7 @@
     // Filter button
     .k-spreadsheet .k-filter-wrapper {
         position: relative;
-        z-index: 50;
+        z-index: k-z-index("base", 5);
     }
 
     .k-spreadsheet .k-filter-range {
@@ -791,7 +792,7 @@
     .k-spreadsheet-drawing {
         position: absolute;
         box-sizing: border-box;
-        z-index: 101;
+        z-index: k-z-index("selection", 2);
 
         &.k-spreadsheet-active-drawing {
             outline-style: $kendo-spreadsheet-drawing-outline-style;
@@ -881,7 +882,7 @@
         display: inline-flex;
         flex-direction: row;
         position: absolute;
-        z-index: 2;
+        z-index: k-z-index("base", 2);
         inset-block-start: 0;
         inset-inline-start: 0;
     }
@@ -889,7 +890,7 @@
     .k-spreadsheet-tabstrip {
         padding-block-start: $kendo-toolbar-md-padding-y;
         position: relative;
-        z-index: 1;
+        z-index: k-z-index("base", 1);
     }
     .k-spreadsheet-tabstrip .k-tabstrip-items-wrapper {
         margin: 0;

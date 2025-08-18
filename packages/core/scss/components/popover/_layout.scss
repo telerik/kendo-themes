@@ -1,6 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-popover--layout-base() {
 
@@ -17,7 +18,7 @@
         line-height: $kendo-popover-line-height;
         display: flex;
         flex-flow: column nowrap;
-        z-index: 12000;
+        z-index: k-z-index("popup");
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 

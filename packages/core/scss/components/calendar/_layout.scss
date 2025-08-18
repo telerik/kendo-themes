@@ -2,6 +2,7 @@
 @use "sass:math";
 @use "../../color-system/_constants.scss" as *;
 @use "../../mixins/index.import.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-calendar--layout-base() {
@@ -47,7 +48,7 @@
         outline: 0;
         display: table;
         position: relative;
-        z-index: 1;
+        z-index: k-z-index("base", 1);
     }
     .k-calendar-caption,
     .k-calendar-caption.k-calendar-th,
@@ -128,7 +129,7 @@
         gap: $kendo-calendar-nav-gap;
         align-items: center;
         position: relative;
-        z-index: 2;
+        z-index: k-z-index("base", 2);
     }
 
 
@@ -174,7 +175,7 @@
         box-sizing: content-box;
         gap: $kendo-calendar-view-gap;
         position: relative;
-        z-index: 1;
+        z-index: k-z-index("base", 1);
         overflow: hidden;
 
         .k-today {
@@ -219,7 +220,7 @@
 
         .k-calendar-td {
             width: var( --INTERNAL--kendo-calendar-cell-size, #{$_decade-cell-size} );
-            height: var( --INTERNAL--kendo-calendar-cell-size, #{$_decade-cell-size} );;
+            height: var( --INTERNAL--kendo-calendar-cell-size, #{$_decade-cell-size} );
             inline-size: var( --INTERNAL--kendo-calendar-cell-size, #{$_decade-cell-size} );
             block-size: var( --INTERNAL--kendo-calendar-cell-size, #{$_decade-cell-size} );
         }
@@ -272,7 +273,7 @@
     // scoped in calendar until it is used elsewhere
     .k-calendar .k-scrollable-placeholder {
         position: absolute;
-        z-index: -1;
+        z-index: k-z-index("bottom");
         width: 1px;
         inset-block-start: 0;
         inset-inline-end: 0;
@@ -358,7 +359,7 @@
                 content: "\200b";
                 height: 0;
                 line-height: 0;
-                z-index: 1;
+                z-index: k-z-index("base", 1);
                 width: 150%;
                 inset-inline-start: -25%;
                 box-shadow: 0 0 $kendo-calendar-cell-size calc( #{$kendo-calendar-cell-size} / 2 ) $kendo-calendar-bg;
@@ -388,7 +389,7 @@
         display: block;
         overflow: hidden;
         position: relative;
-        z-index: 1;
+        z-index: k-z-index("base", 1);
 
         &::before,
         &::after {
@@ -397,7 +398,7 @@
             content: "\200b";
             height: 0;
             line-height: 0;
-            z-index: 1;
+            z-index: k-z-index("base", 1);
             width: 200%;
             inset-inline-start: -50%;
             $shadow-size: calc( 3 * #{$kendo-calendar-navigation-item-height} );

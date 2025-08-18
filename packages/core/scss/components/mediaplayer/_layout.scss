@@ -1,6 +1,7 @@
 @use "sass:math";
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-media-player--layout-base() {
 
@@ -38,7 +39,7 @@
         padding-block: $kendo-media-player-titlebar-padding-y;
         padding-inline: $kendo-media-player-titlebar-padding-x;
         position: absolute;
-        z-index: 2;
+        z-index: k-z-index("base", 2);
         inset-block-start: 0;
         inset-inline-start: 0;
         inset-inline-end: 0;
@@ -48,7 +49,7 @@
     // Toolbar
     .k-mediaplayer-toolbar-wrap {
         position: absolute;
-        z-index: 2;
+        z-index: k-z-index("base", 2);
         inset-block-end: 0;
         inset-inline-start: 0;
         inset-inline-end: 0;
@@ -80,7 +81,7 @@
     .k-slider.k-mediaplayer-seekbar {
         width: 100%;
         position: absolute;
-        z-index: 3;
+        z-index: k-z-index("base", 1);
         inset-block-start: 0;
         inset-inline-start: 0;
         transform: translateY( -50% );
@@ -94,7 +95,7 @@
     }
 
     .k-mediaplayer-fullscreen {
-        z-index: 10000;
+        z-index: k-z-index("overlay");
         position: fixed;
         inset-block-start: 0;
         inset-inline-start: 0;
