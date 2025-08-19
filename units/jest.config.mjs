@@ -1,6 +1,6 @@
 export default {
   preset: "ts-jest/presets/default-esm",
-  testEnvironment: "node",
+  testEnvironment: "jsdom",
   moduleFileExtensions: ["js", "ts", "tsx"],
   extensionsToTreatAsEsm: [".ts"],
   reporters: ["./minimal-reporter.mjs"],
