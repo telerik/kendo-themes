@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-floating-label-offset-y</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-md-padding-y} )</code></td>
-    <td><code>calc(calc(var(--kendo-floating-label-line-height, var(--kendo-line-height, normal)) * var(--kendo-floating-label-font-size, var(--kendo-font-size, inherit))) + 1px + var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)))</code></td>
+    <td><code>calc(calc(var(--kendo-floating-label-line-height, var(--kendo-line-height, normal)) * var(--kendo-floating-label-font-size, var(--kendo-font-size, inherit))) + 1px + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical offset of the Floating Label.</div></div>

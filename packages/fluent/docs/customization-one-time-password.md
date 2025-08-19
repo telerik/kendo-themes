@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-otp-input-width</td>
     <td>String</td>
     <td><code>var( --kendo-otp-input-width, #{$kendo-input-calc-size} )</code></td>
-    <td><code>var(--kendo-otp-input-width, calc(var(--kendo-input-line-height, var(--kendo-line-height, normal)) * 1em + var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2 + 1px * 2))</code></td>
+    <td><code>var(--kendo-otp-input-width, calc(var(--kendo-input-line-height, var(--kendo-line-height, normal)) * 1em + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2 + 1px * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OTP separator.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-otp-md-input-width</td>
     <td>String</td>
     <td><code>var( --kendo-otp-md-input-width, #{$kendo-otp-input-width} )</code></td>
-    <td><code>var(--kendo-otp-md-input-width, var(--kendo-otp-input-width, calc(var(--kendo-input-line-height, var(--kendo-line-height, normal)) * 1em + var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2 + 1px * 2)))</code></td>
+    <td><code>var(--kendo-otp-md-input-width, var(--kendo-otp-input-width, calc(var(--kendo-input-line-height, var(--kendo-line-height, normal)) * 1em + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2 + 1px * 2)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium OTP separator.</div></div>
