@@ -73,7 +73,7 @@
     "clean:tests": "node ./scripts/cleanup-test-results.js"
   },
   "engines": {
-    "node": "^20"
+    "node": "^22"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs}": "eslint",
