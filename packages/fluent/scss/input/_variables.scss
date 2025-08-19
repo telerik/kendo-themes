@@ -32,7 +32,7 @@ $kendo-input-lg-padding-x: k-spacing(4.5) !default;
 $kendo-input-sm-padding-y: calc( #{k-spacing(0.5)} + 1px ) !default;
 /// The vertical padding of the medium Input components.
 /// @group input
-$kendo-input-md-padding-y: var( --kendo-input-padding-y, calc( #{k-spacing(1)} + 1px ) ) !default;
+$kendo-input-md-padding-y: calc(var( --kendo-input-padding-y, #{k-spacing(1)} ) + 1px) !default;
 /// The vertical padding of the large Input components.
 /// @group input
 $kendo-input-lg-padding-y: k-spacing(2) !default;
