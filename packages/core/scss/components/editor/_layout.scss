@@ -77,57 +77,57 @@
         z-index: 100;
 
         &.northwest {
-            inset-block-start: 0;
-            inset-inline-start: 0;
+            top: 0;
+            left: 0;
             transform: translate(-50%, -50%);
             cursor: nw-resize;
         }
 
         &.north {
-            inset-block-start: 0;
-            inset-inline-start: 50%;
+            top: 0;
+            left: 50%;
             transform: translate(-50%, -50%);
             cursor: n-resize;
         }
 
         &.northeast {
-            inset-block-start: 0;
-            inset-inline-end: 0;
+            top: 0;
+            right: 0;
             transform: translate(50%, -50%);
             cursor: ne-resize;
         }
 
         &.southwest {
-            inset-inline-start: 0;
-            inset-block-end: 0;
+            left: 0;
+            bottom: 0;
             transform: translate(-50%, 50%);
             cursor: sw-resize;
         }
 
         &.south {
-            inset-block-end: 0;
-            inset-inline-start: 50%;
+            bottom: 0;
+            left: 50%;
             transform: translate(-50%, 50%);
             cursor: s-resize;
         }
 
         &.southeast {
-            inset-inline-end: 0;
-            inset-block-end: 0;
+            right: 0;
+            bottom: 0;
             transform: translate(50%, 50%);
             cursor: se-resize;
         }
 
         &.west {
-            inset-block-start: 50%;
-            inset-inline-start: 0;
+            top: 50%;
+            left: 0;
             transform: translate(-50%, -50%);
             cursor: w-resize;
         }
 
         &.east {
-            inset-block-start: 50%;
-            inset-inline-end: 0;
+            top: 50%;
+            right: 0;
             transform: translate(50%, -50%);
             cursor: e-resize;
         }

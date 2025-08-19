@@ -820,14 +820,14 @@
             transform: translate(-50%, -50%);
 
             // stylelint-disable declaration-block-single-line-max-declarations, selector-class-pattern
-            &.N { inset-inline-start: 50%; inset-block-start: 0; cursor: ns-resize; }
-            &.NE { inset-inline-start: 100%; inset-block-start: 0; cursor: nesw-resize; }
-            &.E { inset-inline-start: 100%; inset-block-start: 50%; cursor: ew-resize; }
-            &.SE { inset-inline-start: 100%; inset-block-start: 100%; cursor: nwse-resize; }
-            &.S { inset-inline-start: 50%; inset-block-start: 100%; cursor: ns-resize; }
-            &.SW { inset-inline-start: 0; inset-block-start: 100%; cursor: nesw-resize; }
-            &.W { inset-inline-start: 0; inset-block-start: 50%; cursor: ew-resize; }
-            &.NW { inset-inline-start: 0; inset-block-start: 0; cursor: nwse-resize; }
+            &.N { left: 50%; top: 0; cursor: ns-resize; }
+            &.NE { left: 100%; top: 0; cursor: nesw-resize; }
+            &.E { left: 100%; top: 50%; cursor: ew-resize; }
+            &.SE { left: 100%; top: 100%; cursor: nwse-resize; }
+            &.S { left: 50%; top: 100%; cursor: ns-resize; }
+            &.SW { left: 0; top: 100%; cursor: nesw-resize; }
+            &.W { left: 0; top: 50%; cursor: ew-resize; }
+            &.NW { left: 0; top: 0; cursor: nwse-resize; }
             // stylelint-enable declaration-block-single-line-max-declarations, selector-class-pattern
         }
 
