@@ -146,7 +146,7 @@ $kendo-menu-popup-bg: var( --kendo-menu-popup-bg, #{k-color(surface-alt)} ) !def
 $kendo-menu-popup-border: var( --kendo-menu-popup-border, initial ) !default;
 /// The shadow of the Menu popup.
 /// @group menu
-$kendo-menu-popup-shadow: var( --kendo-menu-popup-shadow, var( --kendo-box-shadow-depth-6, none ) ) !default;
+$kendo-menu-popup-shadow: var( --kendo-menu-popup-shadow, k-elevation(5) ) !default;
 
 /// The horizontal padding of the Menu item in popup.
 /// @group menu
