@@ -37,7 +37,7 @@ $kendo-badge-sm-padding-y: k-spacing(0.5) !default;
 $kendo-badge-md-padding-y: var( --kendo-badge-padding-y, k-spacing(1) ) !default;
 /// Vertical padding of the large Badge.
 /// @group badge
-$kendo-badge-lg-padding-y: calc(k-spacing(0.5) + 1px) !default;
+$kendo-badge-lg-padding-y: k-spacing(1.5) !default;
 
 /// The font size of the small Badge.
 /// @group badge
