@@ -271,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-formula-input-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-formula-input-padding-y, var( --kendo-input-md-padding-y, #{$kendo-input-md-padding-y} ) )</code></td>
-    <td><code>var(--kendo-spreadsheet-formula-input-padding-y, var(--kendo-input-md-padding-y, var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px))))</code></td>
+    <td><code>var(--kendo-spreadsheet-formula-input-padding-y, var(--kendo-input-md-padding-y, calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Spreadsheet formula input.</div></div>
