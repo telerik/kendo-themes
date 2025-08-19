@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-md-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-input-padding-y, calc( #{k-spacing(1)} + 1px ) )</code></td>
-    <td><code>var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var( --kendo-input-padding-y, #{k-spacing(1)} ) + 1px)</code></td>
+    <td><code>calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Input components.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-sm-button-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-button-sm-line-height} * 1em + #{$kendo-button-sm-padding-y} * 2 )</code></td>
-    <td><code>calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-button-sm-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px)) * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height-lg, normal) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small Input button.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-md-button-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-button-md-line-height} * 1em + #{$kendo-button-md-padding-y} * 2 )</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium Input button.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-lg-button-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-button-lg-line-height} * 1em + #{$kendo-button-lg-padding-y} * 2 )</code></td>
-    <td><code>calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-button-lg-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px)) * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height-sm, normal) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large Input button.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-sm-spinner-width</td>
     <td>Calculation</td>
     <td><code>$kendo-input-sm-button-width</code></td>
-    <td><code>calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-button-sm-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px)) * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height-lg, normal) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small Input spinner button.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-md-spinner-width</td>
     <td>Calculation</td>
     <td><code>$kendo-input-md-button-width</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium Input spinner button.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-lg-spinner-width</td>
     <td>Calculation</td>
     <td><code>$kendo-input-lg-button-width</code></td>
-    <td><code>calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-button-lg-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px)) * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height-sm, normal) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large Input spinner button.</div></div>
@@ -1041,7 +1041,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( ( #{$kendo-input-md-line-height} * 1em ) + ( #{$kendo-input-md-padding-y} * 2 ) + calc( #{$kendo-input-border-width} * 2 ) )</code></td>
-    <td><code>calc(var(--kendo-input-line-height, var(--kendo-line-height, normal)) * 1em + var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2 + 1px * 2)</code></td>
+    <td><code>calc(var(--kendo-input-line-height, var(--kendo-line-height, normal)) * 1em + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Input.</div></div>
@@ -1082,7 +1082,7 @@ The following table lists the available variables for customization.
         button-width: $kendo-input-lg-button-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-sm, normal)","icon-size":"calc(var(--kendo-icon-size, 1rem) + var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2)","button-padding-x":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","button-padding-y":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","button-width":"calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-button-sm-padding-y, calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)) * 2)"</li><li>md: "padding-x":"var(--kendo-input-padding-x, var(--kendo-spacing-2\\.5, 0.625rem))","padding-y":"var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px))","font-size":"var(--kendo-input-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-input-line-height, var(--kendo-line-height, normal))","icon-size":"calc(var(--kendo-icon-size, 1rem) + calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px) * 2)","button-padding-x":"var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px))","button-padding-y":"var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px))","button-width":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","icon-size":"calc(var(--kendo-icon-size, 1rem) + var(--kendo-spacing-2, 0.5rem) * 2)","button-padding-x":"var(--kendo-spacing-2, 0.5rem)","button-padding-y":"var(--kendo-spacing-2, 0.5rem)","button-width":"calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-button-lg-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px)) * 2)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-sm, normal)","icon-size":"calc(var(--kendo-icon-size, 1rem) + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2)","button-padding-x":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","button-padding-y":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","button-width":"calc(var(--kendo-line-height-lg, normal) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5, 0.125rem)) + 1px) * 2)"</li><li>md: "padding-x":"var(--kendo-input-padding-x, var(--kendo-spacing-2\\.5, 0.625rem))","padding-y":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)","font-size":"var(--kendo-input-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-input-line-height, var(--kendo-line-height, normal))","icon-size":"calc(var(--kendo-icon-size, 1rem) + calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px) * 2)","button-padding-x":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)","button-padding-y":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)","button-width":"calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","icon-size":"calc(var(--kendo-icon-size, 1rem) + var(--kendo-spacing-2, 0.5rem) * 2)","button-padding-x":"var(--kendo-spacing-2, 0.5rem)","button-padding-y":"var(--kendo-spacing-2, 0.5rem)","button-width":"calc(var(--kendo-line-height-sm, normal) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px) * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>
