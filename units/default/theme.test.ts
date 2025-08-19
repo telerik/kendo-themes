@@ -1,5 +1,5 @@
 import "./theme.env.js";
-import { getSelectorsSpecificity, calculateSpecificityThreshold } from "../specificity-analyzer";
+import { getComponentSelectors, calculateSpecificityThreshold } from "../specificity-analyzer";
 import { Button } from "../../packages/html/src/button/button.spec";
 import { Card } from "../../packages/html/src/card/card.spec";
 import { Badge } from "../../packages/html/src/badge/badge.spec";
@@ -211,9 +211,10 @@ import { describe, it, expect } from "@jest/globals";
   [ListGroup, "listgroup"],
   [Table, "table"],
   [ActionButtons, "action-buttons"],
-  [Input, "input"]
+  [Input, "input"],
 ].map(([Component, folder, mixin = folder]) => {
   describe(`${folder} specificity`, () => {
+    // Maybe compile the whole theme?
     const result = sass.compileString(
       `
       @use '../packages/${process.env.THEME}/scss/${folder}/_variables.scss' as *;
@@ -229,16 +230,14 @@ import { describe, it, expect } from "@jest/globals";
       }
     );
 
-    const selectors = getSelectorsSpecificity(result.css, {
-      filter: Component.className,
+    const selectors = getComponentSelectors(result.css, Component, {
       minSpecificity: 0,
       sourceMap: result.sourceMap,
-      exactComponentMatch: true,
     });
 
-    selectors.forEach((selectorInfo) => {
-      const { selector, specificityValue, sourceLocation } = selectorInfo;
-      const expectedSpecificity = calculateSpecificityThreshold(selector, Component);
+    selectors.forEach(({ selector, specificityValue, sourceLocation }) => {
+      // Switch third argument to true for Q4 release of the themes.
+      const expectedSpecificity = calculateSpecificityThreshold(selector, Component, false);
 
       it(`"${selector} (Expected: ${expectedSpecificity}, Actual: ${specificityValue})"`, () => {
         try {

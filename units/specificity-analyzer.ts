@@ -1,9 +1,8 @@
 import postcss from "postcss";
-import selectorParser from "postcss-selector-parser";
 import { selectorSpecificity } from "@csstools/selector-specificity";
+import selectorParser from "postcss-selector-parser";
 import { SourceMapConsumer } from "@jridgewell/source-map";
 import { optionClassNames, stateClassNames, variantClassNames } from "../packages/html/src/misc/component-class-names";
-import * as htmlPackage from "../packages/html/src/index";
 
 // Types
 interface SelectorInfo {
@@ -25,15 +24,10 @@ interface Component {
   readonly states?: string[];
 }
 
-interface GetSelectorsSpecificityOptions {
-  filter?: string;
+interface GetComponentSelectorsOptions {
   minSpecificity?: number;
   sourceMap?: any;
-  exactComponentMatch?: boolean; // When true, uses smart component-aware filtering
 }
-
-// Cache for official components to avoid re-extraction
-let officialComponentsCache: Set<string> | null = null;
 
 /**
  * Check if a selector contains a specific CSS class name using exact matching
@@ -43,33 +37,6 @@ function hasClassName(selector: string, className: string): boolean {
   // Use word boundary regex to match exact class name, not substring
   const classPattern = new RegExp(`\\.${className}(?=\\s|\\.|:|$|>|\\+|~)`);
   return classPattern.test(selector);
-}
-
-/**
- * Extract official components from the HTML package exports
- * This uses the actual component exports from the HTML package
- */
-function getOfficialComponents(): Set<string> {
-  if (officialComponentsCache) {
-    return officialComponentsCache;
-  }
-
-  const officialComponents = new Set<string>();
-
-  // Iterate through all exports from the HTML package to find components with className
-  for (const [, exportValue] of Object.entries(htmlPackage)) {
-    if (exportValue && (typeof exportValue === "object" || typeof exportValue === "function") && "className" in exportValue) {
-      const className = exportValue.className;
-      if (typeof className === "string") {
-        // Split multiple class names and extract individual k-* classes
-        const classes = className.split(" ").filter((cls) => cls.startsWith("k-"));
-        classes.forEach((cls) => officialComponents.add(cls));
-      }
-    }
-  }
-
-  officialComponentsCache = officialComponents;
-  return officialComponents;
 }
 
 /**
@@ -125,73 +92,167 @@ function resolveSourceLocation(sourceMap: any, cssLine: number, cssColumn: numbe
 }
 
 /**
- * Parse CSS and extract selectors with their specificity and source locations
+ * Parse CSS and extract selectors that are relevant to a specific component
  */
-function getSelectorsSpecificity(css: string, options: GetSelectorsSpecificityOptions = {}): SelectorInfo[] {
-  const { filter, minSpecificity = 0, sourceMap, exactComponentMatch = true } = options;
+function getComponentSelectors(css: string, component: any, options: GetComponentSelectorsOptions = {}): SelectorInfo[] {
+  const { minSpecificity = 0, sourceMap } = options;
   const selectors: SelectorInfo[] = [];
+
+  if (!component || !component.className) {
+    console.warn(`Component ${component} must have a className property`);
+    return [];
+  }
+
+  // Generate all possible class names for this component inline
+  const componentClassNames = new Set<string>();
+
+  // Add base className
+  componentClassNames.add(component.className);
+
+  // Add variant class names
+  if (component.variants && Array.isArray(component.variants)) {
+    component.variants.forEach((variant: string) => {
+      const variantClasses = variantClassNames(component.className, variant);
+      Object.keys(variantClasses).forEach((className) => componentClassNames.add(className));
+    });
+  }
+
+  // Add option class names
+  if (component.options) {
+    const { options } = component;
+
+    // Size options
+    if (options.size && Array.isArray(options.size)) {
+      options.size.forEach((size: string) => {
+        const optionClasses = optionClassNames(component.className, { size });
+        if (optionClasses) {
+          optionClasses
+            .split(" ")
+            .filter((c) => c.trim())
+            .forEach((className) => componentClassNames.add(className));
+        }
+      });
+    }
+
+    // FillMode options
+    if (options.fillMode && Array.isArray(options.fillMode)) {
+      options.fillMode.forEach((fillMode: string) => {
+        const optionClasses = optionClassNames(component.className, { fillMode });
+        if (optionClasses) {
+          optionClasses
+            .split(" ")
+            .filter((c) => c.trim())
+            .forEach((className) => componentClassNames.add(className));
+        }
+      });
+    }
+
+    // ThemeColor options
+    if (options.themeColor && Array.isArray(options.themeColor)) {
+      options.themeColor.forEach((themeColor: string) => {
+        const optionClasses = optionClassNames(component.className, { themeColor });
+        if (optionClasses) {
+          optionClasses
+            .split(" ")
+            .filter((c) => c.trim())
+            .forEach((className) => componentClassNames.add(className));
+        }
+      });
+    }
+
+    // Rounded options
+    if (options.rounded && Array.isArray(options.rounded)) {
+      options.rounded.forEach((rounded: string) => {
+        const optionClasses = optionClassNames(component.className, { rounded });
+        if (optionClasses) {
+          optionClasses
+            .split(" ")
+            .filter((c) => c.trim())
+            .forEach((className) => componentClassNames.add(className));
+        }
+      });
+    }
+
+    // Combined fillMode + themeColor options
+    if (options.fillMode && options.themeColor && Array.isArray(options.fillMode) && Array.isArray(options.themeColor)) {
+      options.fillMode.forEach((fillMode: string) => {
+        options.themeColor.forEach((themeColor: string) => {
+          const optionClasses = optionClassNames(component.className, { fillMode, themeColor });
+          if (optionClasses) {
+            optionClasses
+              .split(" ")
+              .filter((c) => c.trim())
+              .forEach((className) => componentClassNames.add(className));
+          }
+        });
+      });
+    }
+  }
+
+  // Add state class names
+  if (component.states && Array.isArray(component.states)) {
+    component.states.forEach((state: string) => {
+      // Handle deprecated states that are already k-prefixed class names
+      if (state.startsWith("k-")) {
+        componentClassNames.add(state);
+      } else {
+        // Use the actual stateClassNames function for standard state names
+        const stateProps = { [state]: true };
+        const stateClasses = stateClassNames(component.className, stateProps);
+        if (stateClasses) {
+          stateClasses
+            .split(" ")
+            .filter((c) => c.trim())
+            .forEach((className) => componentClassNames.add(className));
+        }
+      }
+    });
+  }
+
+  // Remove base class from the list since we'll test it separately
+  componentClassNames.delete(component.className);
+
+  // Add empty string to represent "base class only" combination
+  componentClassNames.add("");
 
   const root = postcss.parse(css, { from: undefined });
 
   root.walkRules((rule) => {
     rule.selectors.forEach((selector) => {
-      // Apply filter if specified
-      if (filter) {
-        if (exactComponentMatch) {
-          // For exact component matching, use hasClassName to avoid substring matches
-          if (!hasClassName(selector, filter)) {
-            // If the selector doesn't contain the filter component, check if it contains any other official component
-            const officialComponents = getOfficialComponents();
-            const containsOtherOfficialComponent = Array.from(officialComponents).some((component) => component !== filter && hasClassName(selector, component));
+      // Skip :root and html selectors immediately - they can't target component elements
+      if (selector.includes(":root") || selector.trim().startsWith("html")) {
+        return;
+      }
 
-            // If it contains another official component, exclude it
-            // If it doesn't contain any official component, include it (assume missing className)
-            if (containsOtherOfficialComponent) {
-              return;
-            }
-          } else {
-            // Additional check: if selector contains the filter but doesn't start with it,
-            // ensure it doesn't start with other official components
-            if (hasClassName(selector, filter)) {
-              // Check if selector starts with the target component
-              const startsWithTargetComponent = selector.trim().startsWith(`.${filter}`);
+      let wouldTargetComponent = false;
 
-              if (!startsWithTargetComponent) {
-                // If it doesn't start with target component, check if it starts with any other official component
-                const officialComponents = getOfficialComponents();
-                const startsWithOtherOfficialComponent = Array.from(officialComponents).some((component) => component !== filter && selector.trim().startsWith(`.${component}`));
+      // Strip pseudo-classes from selector for testing since we can't simulate them on mock elements
+      const baseSelector = selector.replace(/:(hover|focus|active|disabled|enabled|checked|unchecked|indeterminate|valid|invalid|required|optional|read-only|read-write|first-child|last-child|first-of-type|last-of-type|only-child|only-of-type|nth-child|nth-of-type|not|empty|target|visited|link)(\([^)]*\))?/g, "");
 
-                // Exclude if it starts with another official component
-                if (startsWithOtherOfficialComponent) {
-                  return;
-                }
-              }
-            }
-          }
-        } else {
-          // Legacy behavior: simple substring matching
-          if (!selector.includes(filter)) {
-            return;
-          }
+      // If stripping pseudo-classes results in empty string, skip this selector
+      if (!baseSelector.trim()) {
+        return;
+      }
 
-          // Additional check: if selector contains the filter but doesn't start with it,
-          // ensure it doesn't start with other official components
-          if (selector.includes(filter)) {
-            // Check if selector starts with the target component
-            const startsWithTargetComponent = selector.trim().startsWith(`.${filter}`);
+      try {
+        // Test all combinations: base class + each variant/option/state class (including empty string for base alone)
+        for (const className of componentClassNames) {
+          const classCombo = className ? `${component.className} ${className}` : component.className;
+          const element = document.createElement("div");
+          element.className = classCombo;
 
-            if (!startsWithTargetComponent) {
-              // If it doesn't start with target component, check if it starts with any other official component
-              const officialComponents = getOfficialComponents();
-              const startsWithOtherOfficialComponent = Array.from(officialComponents).some((component) => component !== filter && selector.trim().startsWith(`.${component}`));
-
-              // Exclude if it starts with another official component
-              if (startsWithOtherOfficialComponent) {
-                return;
-              }
-            }
+          if (element.matches(baseSelector)) {
+            wouldTargetComponent = true;
+            break;
           }
         }
+      } catch {
+        // Fallback for malformed selectors - skip them
+        wouldTargetComponent = false;
+      }
+
+      if (!wouldTargetComponent) {
+        return; // Skip this selector - it doesn't target our component
       }
 
       const specificityResult = calculateSpecificity(selector);
@@ -354,78 +415,19 @@ function detectStates(selector: string, component: Component | null = null): boo
   }
 
   // Check for CSS pseudo-classes (complete list)
-  const cssPseudoClasses = [":hover", ":focus", ":active", ":disabled", ":enabled", ":checked", ":unchecked", ":indeterminate", ":valid", ":invalid", ":required", ":optional", ":read-only", ":read-write", ":first-child", ":last-child", ":first-of-type", ":last-of-type", ":only-child", ":only-of-type", ":nth-child", ":nth-of-type", ":not", ":empty", ":target", ":visited", ":link"];
+  const cssPseudoClasses = [":hover", ":focus", ":active", ":disabled", ":enabled", ":checked", ":unchecked", ":indeterminate", ":valid", ":invalid", ":required", ":optional", ":read-only", ":read-write", ":first-child", ":last-child", ":first-of-type", ":last-of-type", ":only-child", ":only-of-type", ":nth-child", ":nth-of-type", ":not", ":empty", ":target", ":visited", ":link", ":-webkit-autofill"];
 
   return cssPseudoClasses.some((pseudoClass) => selector.includes(pseudoClass));
 }
 
 /**
- * Detect nested official components using the HTML package exports
- * Returns true if any nested component is detected (adds +10 only once)
- */
-function detectNestedComponents(selector: string, component: Component | null = null): boolean {
-  if (!component) return false;
-
-  // Check if the selector contains the base component class
-  const hasBaseComponent = hasClassName(selector, component.className);
-  if (!hasBaseComponent) return false;
-
-  // Get all official component class names from the HTML package
-  const officialComponents = getOfficialComponents();
-
-  // Check if any nested component class appears in the selector (excluding the base component)
-  for (const nestedClass of officialComponents) {
-    if (nestedClass !== component.className) {
-      // Use the common hasClassName function for consistent class name matching
-      if (hasClassName(selector, nestedClass)) {
-        return true; // Return true immediately when any nested component is found
-      }
-    }
-  }
-
-  return false;
-}
-
-/**
- * Detect sibling combinators in a CSS selector when they're combining official components
- * Returns true if adjacent (+) or general (~) sibling combinators are detected between official components
- */
-function detectSiblingCombinators(selector: string, component: Component | null = null): boolean {
-  if (!component) return false;
-
-  // Check if selector contains sibling combinators
-  if (!selector.includes("+") && !selector.includes("~")) {
-    return false;
-  }
-
-  // Get all official component class names
-  const officialComponents = getOfficialComponents();
-
-  // Split by combinators (including spaces, >, +, ~) and check for official components
-  const parts = selector.split(/[\s>+~]+/).filter((part) => part.trim());
-
-  let officialComponentsFound = 0;
-  for (const part of parts) {
-    const hasOfficial = Array.from(officialComponents).some((comp) => hasClassName(part, comp));
-    if (hasOfficial) {
-      officialComponentsFound++;
-    }
-  }
-
-  // For sibling combinators to be meaningful, we need:
-  // 1. At least 2 parts with official components (can be same component repeated)
-  // 2. Actual sibling combinators in the selector
-  return officialComponentsFound >= 2;
-}
-
-/**
  * Calculate dynamic specificity threshold starting from 0
- * Rewards proper structure with base class usage
+ * Simplified version focused on the component's own properties
  */
-function calculateSpecificityThreshold(selector: string, component: any | null = null): number {
+function calculateSpecificityThreshold(selector: string, component: any | null = null, enforceBaseClassName: boolean = true): number {
   let threshold = 0;
 
-  // exceptions, global styles which are not part of the component
+  // Exception for global styles which are not part of the component
   const rootDetected = selector.includes(":root") || selector.includes("html");
   if (rootDetected) {
     threshold += 10;
@@ -436,9 +438,11 @@ function calculateSpecificityThreshold(selector: string, component: any | null =
   }
 
   // Base component class (+10) - foundational requirement
-  // Use word boundary regex to match exact class name, not substring
-  if (hasClassName(selector, component.className)) {
-    threshold += 10;
+  const hasBaseClass = hasClassName(selector, component.className);
+  if (!enforceBaseClassName || hasBaseClass) {
+    if (hasBaseClass) {
+      threshold += 10;
+    }
 
     // Component variants (+10)
     const variantsDetected = detectVariants(selector, component);
@@ -457,18 +461,6 @@ function calculateSpecificityThreshold(selector: string, component: any | null =
     if (statesDetected) {
       threshold += 10;
     }
-
-    // Nested components (+10) - max 1 additional official component
-    const nestedDetected = detectNestedComponents(selector, component);
-    if (nestedDetected) {
-      threshold += 10;
-    }
-
-    // Sibling combinators (+10) - adjacent (+) or general (~) sibling selectors between official components
-    const siblingDetected = detectSiblingCombinators(selector, component);
-    if (siblingDetected) {
-      threshold += 10;
-    }
   }
 
   // :not() selectors (+10) - matches the actual CSS specificity weight of pseudo-classes
@@ -483,8 +475,6 @@ function calculateSpecificityThreshold(selector: string, component: any | null =
   }
 
   // DOM elements (+1 per element) - match actual element selectors, not class names
-  // Look for elements that are either at the start, after whitespace, or after combinators
-  // but not after dots (class selectors) or dashes/letters (part of class names)
   const elementMatches = selector.match(/(?:^|[\s>+~])(svg|input|span|div|button|a|i|em|strong|p|h[1-6]|ul|li|table|tr|td|th|form|label|select|textarea|img)(?=[\s>+~#.[:]|$)/g);
   if (elementMatches && elementMatches.length) {
     threshold += 1;
@@ -494,18 +484,11 @@ function calculateSpecificityThreshold(selector: string, component: any | null =
 }
 
 // ESM exports
-export { calculateSpecificity, calculateSpecificityThreshold, getSelectorsSpecificity, detectVariants, detectOptions, detectStates, detectNestedComponents, detectSiblingCombinators, getOfficialComponents, hasClassName };
+export { calculateSpecificity, calculateSpecificityThreshold, getComponentSelectors };
 
 // CommonJS compatibility
 module.exports = {
   calculateSpecificity,
   calculateSpecificityThreshold,
-  getSelectorsSpecificity,
-  detectVariants,
-  detectOptions,
-  detectStates,
-  detectNestedComponents,
-  detectSiblingCombinators,
-  getOfficialComponents,
-  hasClassName,
+  getComponentSelectors,
 };
