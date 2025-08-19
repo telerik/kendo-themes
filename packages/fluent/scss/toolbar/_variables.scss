@@ -4,23 +4,23 @@
 
 /// The horizontal padding of the small Toolbar.
 /// @group toolbar
-$kendo-toolbar-sm-padding-x: var( --kendo-toolbar-sm-padding-x, calc( #{k-spacing(2)} + 1px ) ) !default;
+$kendo-toolbar-sm-padding-x: calc( var( --kendo-toolbar-sm-padding-x, #{k-spacing(2)} ) + 1px ) !default;
 /// The horizontal padding of the medium Toolbar.
 /// @group toolbar
-$kendo-toolbar-md-padding-x: var( --kendo-toolbar-md-padding-x, calc( #{k-spacing(3)} + 1px ) ) !default;
+$kendo-toolbar-md-padding-x: calc( var( --kendo-toolbar-md-padding-x, #{k-spacing(3)} ) + 1px ) !default;
 /// The horizontal padding of the large Toolbar.
 /// @group toolbar
-$kendo-toolbar-lg-padding-x: var( --kendo-toolbar-lg-padding-x, calc( #{k-spacing(4.5)} + 1px )) !default;
+$kendo-toolbar-lg-padding-x: calc( var( --kendo-toolbar-lg-padding-x, #{k-spacing(4.5)} ) + 1px ) !default;
 
 /// The vertical padding of the small Toolbar.
 /// @group toolbar
-$kendo-toolbar-sm-padding-y: var( --kendo-toolbar-sm-padding-y, calc( #{k-spacing(0.5)} + 1px ) ) !default;
+$kendo-toolbar-sm-padding-y: calc( var( --kendo-toolbar-sm-padding-y, #{k-spacing(0.5)} ) + 1px ) !default;
 /// The vertical padding of the medium Toolbar.
 /// @group toolbar
-$kendo-toolbar-md-padding-y: var( --kendo-toolbar-md-padding-y, calc( #{k-spacing(0.5)} + 1px ) ) !default;
+$kendo-toolbar-md-padding-y: calc( var( --kendo-toolbar-md-padding-y, #{k-spacing(0.5)} ) + 1px ) !default;
 /// The vertical padding of the large Toolbar.
 /// @group toolbar
-$kendo-toolbar-lg-padding-y: var( --kendo-toolbar-lg-padding-y, calc( #{k-spacing(0.5)} + 1px ) ) !default;
+$kendo-toolbar-lg-padding-y: calc( var( --kendo-toolbar-lg-padding-y, #{k-spacing(0.5)} ) + 1px ) !default;
 
 /// The spacing between the tools of the small Toolbar.
 /// @group toolbar

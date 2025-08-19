@@ -29,10 +29,10 @@ $kendo-upload-border: var( --kendo-upload-border, color-mix(in srgb, k-color(bor
 
 /// The horizontal padding of the Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-padding-x: var( --kendo-upload-dropzone-padding-x, calc( #{k-spacing(3)} + 1px ) ) !default;
+$kendo-upload-dropzone-padding-x: calc( var( --kendo-upload-dropzone-padding-x, #{k-spacing(3)} ) + 1px ) !default;
 /// The vertical padding of the Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-padding-y: var( --kendo-upload-dropzone-padding-y, calc( #{k-spacing(0.5)} + 1px ) ) !default;
+$kendo-upload-dropzone-padding-y: calc( var( --kendo-upload-dropzone-padding-y, #{k-spacing(0.5)} ) + 1px ) !default;
 /// The text color of the Upload dropzone.
 /// @group upload
 $kendo-upload-dropzone-text: var( --kendo-upload-dropzone-text, k-color(subtle) ) !default;
@@ -55,10 +55,10 @@ $kendo-upload-status-text-opacity: var( --kendo-upload-status-text-opacity, null
 
 /// The horizontal padding of an uploaded item.
 /// @group upload
-$kendo-upload-item-padding-x: var( --kendo-upload-item-padding-x, $kendo-upload-dropzone-padding-x ) !default;
+$kendo-upload-item-padding-x: calc( var( --kendo-upload-item-padding-x, #{k-spacing(3)} ) + 1px ) !default;
 /// The vertical padding of an uploaded item.
 /// @group upload
-$kendo-upload-item-padding-y: var( --kendo-upload-item-padding-y, $kendo-upload-dropzone-padding-y ) !default;
+$kendo-upload-item-padding-y: calc( var( --kendo-upload-item-padding-y, #{k-spacing(0.5)} ) + 1px ) !default;
 
 /// The vertical spacing between uploaded batch items.
 /// @group upload
