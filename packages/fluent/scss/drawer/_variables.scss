@@ -112,7 +112,7 @@ $kendo-drawer-item-ripple-spacing-x: var( --kendo-drawer-item-ripple-spacing-x, 
 
 /// The border color of the drawer item ripple
 /// @group drawer
-$kendo-drawer-item-ripple-border: var( --kendo-drawer-item-ripple-border, k-color(primary) ) !default;
+$kendo-drawer-item-ripple-border: var( --kendo-drawer-item-ripple-border, k-color(primary-on-surface) ) !default;
 /// The background color of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-bg: var( --kendo-drawer-item-bg, $kendo-drawer-bg ) !default;
@@ -157,7 +157,7 @@ $kendo-drawer-item-selected-bg: var( --kendo-drawer-item-selected-bg, $kendo-dra
 $kendo-drawer-item-selected-text: var( --kendo-drawer-item-selected-text, $kendo-drawer-item-text ) !default;
 /// The text color of the selected Drawer item icon.
 /// @group drawer
-$kendo-drawer-item-selected-icon-text: var( --kendo-drawer-item-selected-icon-text, k-color(primary) ) !default;
+$kendo-drawer-item-selected-icon-text: var( --kendo-drawer-item-selected-icon-text, k-color(primary-on-surface) ) !default;
 /// The background color of the selected and hovered Drawer item.
 /// @group drawer
 $kendo-drawer-item-selected-hover-bg: var( --kendo-drawer-item-selected-hover-bg, k-color(surface-alt) ) !default;

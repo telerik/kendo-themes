@@ -143,13 +143,13 @@ $kendo-calendar-weekend-text: var( --kendo-calendar-weekend-text, inherit ) !def
 
 /// The text color of the calendar today cell.
 /// @group calendar
-$kendo-calendar-today-text: var( --kendo-calendar-today-text, k-color(app-surface) ) !default; // use contrast function
+$kendo-calendar-today-text: var( --kendo-calendar-today-text, k-color(on-primary) ) !default; // use contrast function
 /// The background color of the calendar today cell.
 /// @group calendar
 $kendo-calendar-today-bg: var( --kendo-calendar-today-bg, k-color(primary) ) !default;
 /// The text color of the calendar today cell when hovered.
 /// @group calendar
-$kendo-calendar-today-hover-text: var( --kendo-calendar-today-hover-text, k-color(app-surface) ) !default;  // use contrast function
+$kendo-calendar-today-hover-text: var( --kendo-calendar-today-hover-text, k-color(on-primary) ) !default;  // use contrast function
 /// The background color of the calendar today cell when hovered.
 /// @group calendar
 $kendo-calendar-today-hover-bg: var( --kendo-calendar-today-hover-bg, $kendo-calendar-today-bg ) !default;

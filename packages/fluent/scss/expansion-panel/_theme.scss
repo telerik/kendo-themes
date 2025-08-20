@@ -17,7 +17,7 @@
 
             .k-expander-title {
                 @include fill(
-                    $color: k-color(primary),
+                    $color: k-color(primary-on-surface),
                 );
             }
 

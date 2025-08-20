@@ -41,7 +41,7 @@ $kendo-listview-border: var( --kendo-listview-border, color-mix(in srgb, k-color
 
 /// The text color of the selected ListView items.
 /// @group listview
-$kendo-listview-item-selected-text: var( --kendo-listview-item-selected-text, initial ) !default;
+$kendo-listview-item-selected-text: var( --kendo-listview-item-selected-text, k-color(on-app-surface) ) !default;
 /// The background color of the selected ListView items.
 /// @group listview
 $kendo-listview-item-selected-bg: var( --kendo-listview-item-selected-bg, #{color-mix(in srgb, k-color(on-app-surface) 12%, transparent)} ) !default;
@@ -51,7 +51,7 @@ $kendo-listview-item-selected-border: var( --kendo-listview-item-selected-border
 
 /// The text color of the focused ListView items.
 /// @group listview
-$kendo-listview-item-focus-text: var( --kendo-listview-item-focus-text, initial ) !default;
+$kendo-listview-item-focus-text: var( --kendo-listview-item-focus-text, k-color(on-app-surface) ) !default;
 /// The background color of the focused ListView items.
 /// @group listview
 $kendo-listview-item-focus-bg: var( --kendo-listview-item-focus-bg, initial ) !default;

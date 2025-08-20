@@ -49,7 +49,7 @@
             .k-bottom-nav-item {
                 &:focus,
                 &.k-focus {
-                    color: k-color(#{$name});
+                    color: k-color(#{$name}-on-surface);
                     background-color: inherit;
                     border-color: transparent;
                     box-shadow: 0 0 0 2px k-color(border-alt) inset;
@@ -58,7 +58,7 @@
                 &:active,
                 &.k-active,
                 &.k-selected {
-                    color: k-color(#{$name});
+                    color: k-color(#{$name}-on-surface);
                     background-color: inherit;
                     border-color: transparent;
                 }
