@@ -420,8 +420,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-selected-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-item-selected-bg, color-mix(in srgb, #{k-color(on-app-surface) 12%, transparent}) )</code></td>
-    <td><code>var(--kendo-tabstrip-item-selected-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 12%, transparent))</code></td>
+    <td><code>var( --kendo-tabstrip-item-selected-bg, transparent )</code></td>
+    <td><code>var(--kendo-tabstrip-item-selected-bg, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected TabStrip items.</div></div>
@@ -430,8 +430,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-selected-text</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-item-selected-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-tabstrip-item-selected-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var( --kendo-tabstrip-item-selected-text, inherit )</code></td>
+    <td><code>var(--kendo-tabstrip-item-selected-text, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected TabStrip items.</div></div>
@@ -440,8 +440,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-selected-border</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-item-selected-border, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-tabstrip-item-selected-border, var(--kendo-color-primary, #0f6cbd))</code></td>
+    <td><code>var( --kendo-tabstrip-item-selected-border, inherit )</code></td>
+    <td><code>var(--kendo-tabstrip-item-selected-border, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected TabStrip items.</div></div>
@@ -470,8 +470,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-dragging-text</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-item-dragging-text, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-tabstrip-item-dragging-text, var(--kendo-color-primary, #0f6cbd))</code></td>
+    <td><code>var( --kendo-tabstrip-item-dragging-text, #{k-color(primary-on-surface)} )</code></td>
+    <td><code>var(--kendo-tabstrip-item-dragging-text, var(--kendo-color-primary-on-surface, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the dragged TabStrip items.</div></div>
@@ -490,8 +490,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-indicator-color</td>
     <td>String</td>
-    <td><code>var( --kendo-tabstrip-indicator-color, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-tabstrip-indicator-color, var(--kendo-color-primary, #0f6cbd))</code></td>
+    <td><code>var( --kendo-tabstrip-indicator-color, #{k-color(primary-on-surface)} )</code></td>
+    <td><code>var(--kendo-tabstrip-indicator-color, var(--kendo-color-primary-on-surface, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TabStrip ripple.</div></div>

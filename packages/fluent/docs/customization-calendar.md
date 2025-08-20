@@ -450,8 +450,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-today-text</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-today-text, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-calendar-today-text, var(--kendo-color-app-surface, #fafafa))</code></td>
+    <td><code>var( --kendo-calendar-today-text, k-color(on-primary) )</code></td>
+    <td><code>var(--kendo-calendar-today-text, var(--kendo-color-on-primary, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the calendar today cell.</div></div>
@@ -470,8 +470,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-today-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-today-hover-text, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-calendar-today-hover-text, var(--kendo-color-app-surface, #fafafa))</code></td>
+    <td><code>var( --kendo-calendar-today-hover-text, k-color(on-primary) )</code></td>
+    <td><code>var(--kendo-calendar-today-hover-text, var(--kendo-color-on-primary, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the calendar today cell when hovered.</div></div>

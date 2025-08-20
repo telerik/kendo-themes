@@ -120,8 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
-    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Input components.</div></div>
@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height-sm, normal )</code></td>
-    <td><code>var(--kendo-line-height-sm, normal)</code></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Input components.</div></div>
@@ -1082,7 +1082,7 @@ The following table lists the available variables for customization.
         button-width: $kendo-input-lg-button-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-sm, normal)","icon-size":"calc(var(--kendo-icon-size, 1rem) + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2)","button-padding-x":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","button-padding-y":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","button-width":"calc(var(--kendo-line-height-lg, normal) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5, 0.125rem)) + 1px) * 2)"</li><li>md: "padding-x":"var(--kendo-input-padding-x, var(--kendo-spacing-2\\.5, 0.625rem))","padding-y":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)","font-size":"var(--kendo-input-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-input-line-height, var(--kendo-line-height, normal))","icon-size":"calc(var(--kendo-icon-size, 1rem) + calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px) * 2)","button-padding-x":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)","button-padding-y":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)","button-width":"calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","icon-size":"calc(var(--kendo-icon-size, 1rem) + var(--kendo-spacing-2, 0.5rem) * 2)","button-padding-x":"var(--kendo-spacing-2, 0.5rem)","button-padding-y":"var(--kendo-spacing-2, 0.5rem)","button-width":"calc(var(--kendo-line-height-sm, normal) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px) * 2)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","icon-size":"calc(var(--kendo-icon-size, 1rem) + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2)","button-padding-x":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","button-padding-y":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","button-width":"calc(var(--kendo-line-height-lg, normal) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5, 0.125rem)) + 1px) * 2)"</li><li>md: "padding-x":"var(--kendo-input-padding-x, var(--kendo-spacing-2\\.5, 0.625rem))","padding-y":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)","font-size":"var(--kendo-input-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-input-line-height, var(--kendo-line-height, normal))","icon-size":"calc(var(--kendo-icon-size, 1rem) + calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px) * 2)","button-padding-x":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)","button-padding-y":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)","button-width":"calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","icon-size":"calc(var(--kendo-icon-size, 1rem) + var(--kendo-spacing-2, 0.5rem) * 2)","button-padding-x":"var(--kendo-spacing-2, 0.5rem)","button-padding-y":"var(--kendo-spacing-2, 0.5rem)","button-width":"calc(var(--kendo-line-height-sm, normal) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px) * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>

@@ -229,7 +229,7 @@ The following table lists the available variables for customization.
     <td>$kendo-table-sticky-header-text</td>
     <td>String</td>
     <td><code>var( --kendo-table-sticky-header-text, #{$kendo-list-header-text} )</code></td>
-    <td><code>var(--kendo-table-sticky-header-text, var(--kendo-list-header-text, var(--kendo-color-primary, #0f6cbd)))</code></td>
+    <td><code>var(--kendo-table-sticky-header-text, var(--kendo-list-header-text, var(--kendo-color-on-app-surface, #242424)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the sticky table header.</div></div>
@@ -239,7 +239,7 @@ The following table lists the available variables for customization.
     <td>$kendo-table-sticky-header-bg</td>
     <td>String</td>
     <td><code>var( --kendo-table-sticky-header-bg, #{$kendo-list-header-bg} )</code></td>
-    <td><code>var(--kendo-table-sticky-header-bg, var(--kendo-list-header-bg, var(--kendo-color-app-surface, #fafafa)))</code></td>
+    <td><code>var(--kendo-table-sticky-header-bg, var(--kendo-list-header-bg, var(--kendo-color-surface-alt, #ffffff)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the sticky table header.</div></div>
@@ -259,7 +259,7 @@ The following table lists the available variables for customization.
     <td>$kendo-table-sticky-header-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-table-sticky-header-shadow, #{$kendo-list-header-shadow} )</code></td>
-    <td><code>var(--kendo-table-sticky-header-shadow, var(--kendo-list-header-shadow, var(--kendo-elevation-3, none)))</code></td>
+    <td><code>var(--kendo-table-sticky-header-shadow, var(--kendo-list-header-shadow, ))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the sticky table header.</div></div>

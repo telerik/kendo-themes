@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-item-selected-text</td>
     <td>String</td>
-    <td><code>var( --kendo-listview-item-selected-text, initial )</code></td>
-    <td><code>var(--kendo-listview-item-selected-text, initial)</code></td>
+    <td><code>var( --kendo-listview-item-selected-text, k-color(on-app-surface) )</code></td>
+    <td><code>var(--kendo-listview-item-selected-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected ListView items.</div></div>
@@ -170,8 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-item-focus-text</td>
     <td>String</td>
-    <td><code>var( --kendo-listview-item-focus-text, initial )</code></td>
-    <td><code>var(--kendo-listview-item-focus-text, initial)</code></td>
+    <td><code>var( --kendo-listview-item-focus-text, k-color(on-app-surface) )</code></td>
+    <td><code>var(--kendo-listview-item-focus-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused ListView items.</div></div>

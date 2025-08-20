@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-grid-grouping-header-padding-y</td>
     <td>Calculation</td>
     <td><code>$kendo-toolbar-md-padding-y</code></td>
-    <td><code>calc(var(--kendo-toolbar-md-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px)</code></td>
+    <td><code>calc(var(--kendo-toolbar-md-padding-y, var(--kendo-spacing-1\.5, 0.375rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid grouping header.</div></div>

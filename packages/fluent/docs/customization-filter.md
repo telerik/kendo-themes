@@ -118,10 +118,20 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-filter-toolbar-focus-border-width</td>
+    <td>String</td>
+    <td><code>var( --kendo-filter-toolbar-focus-border-width, 2px )</code></td>
+    <td><code>var(--kendo-filter-toolbar-focus-border-width, 2px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Filter.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-filter-toolbar-focus-border</td>
     <td>String</td>
-    <td><code>var( --kendo-filter-toolbar-focus-border, #{k-color(base-emphasis)} )</code></td>
-    <td><code>var(--kendo-filter-toolbar-focus-border, var(--kendo-color-base-emphasis, #d1d1d1))</code></td>
+    <td><code>var( --kendo-filter-toolbar-focus-border, #{k-color(border)} )</code></td>
+    <td><code>var(--kendo-filter-toolbar-focus-border, var(--kendo-color-border, rgba(36, 36, 36, 0.72)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Filter.</div></div>

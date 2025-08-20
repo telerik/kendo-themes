@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dialog-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-dialog-bg, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-dialog-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
+    <td><code>var( --kendo-dialog-bg, k-color(surface-alt) )</code></td>
+    <td><code>var(--kendo-dialog-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Dialog.</div></div>
