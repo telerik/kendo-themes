@@ -49,7 +49,7 @@ $kendo-chip-lg-padding-x: k-spacing(2) !default;
 $kendo-chip-sm-padding-y: calc( #{k-spacing(0.5)} / 2 ) !default;
 /// The vertical padding of the medium Chip.
 /// @group chip
-$kendo-chip-md-padding-y: var( --kendo-chip-padding-y, calc( #{k-spacing(1.5)} / 2 ) ) !default;
+$kendo-chip-md-padding-y: calc( var( --kendo-chip-padding-y, #{k-spacing(1.5)} ) / 2 ) !default;
 /// The vertical padding of the large Chip.
 /// @group chip
 $kendo-chip-lg-padding-y: calc( #{k-spacing(2.5)} / 2 ) !default;

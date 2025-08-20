@@ -3059,9 +3059,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-button-sm-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-button-sm-padding-y, calc( #{k-spacing(0.5)} + 1px ) )</code></td>
-    <td><code>var(--kendo-button-sm-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var( --kendo-button-sm-padding-y, #{k-spacing(0.5)} ) + 1px)</code></td>
+    <td><code>calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Button.</div></div>
@@ -3069,9 +3069,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-button-md-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-button-md-padding-y, calc( #{k-spacing(1)} + 1px ) )</code></td>
-    <td><code>var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var( --kendo-button-md-padding-y, #{k-spacing(1)} ) + 1px)</code></td>
+    <td><code>calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Button.</div></div>
@@ -3079,9 +3079,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-button-lg-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-button-lg-padding-y, calc( #{k-spacing(2)} + 1px ) )</code></td>
-    <td><code>var(--kendo-button-lg-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var( --kendo-button-lg-padding-y, #{k-spacing(2)} ) + 1px)</code></td>
+    <td><code>calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Button.</div></div>
@@ -3171,7 +3171,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-button-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) )</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Button.</div></div>
@@ -3181,7 +3181,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-button-inner-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) )</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated inner height of the Button excluding the border width.</div></div>
@@ -3210,7 +3210,7 @@ The following table lists the available variables for customizing the Fluent the
         line-height: $kendo-button-lg-line-height
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-button-sm-padding-x, var(--kendo-spacing-2, 0.5rem))","padding-y":"var(--kendo-button-sm-padding-y, calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px))","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-lg, normal)"</li><li>md: "padding-x":"var(--kendo-button-md-padding-x, var(--kendo-spacing-3, 0.75rem))","padding-y":"var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px))","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "padding-x":"var(--kendo-button-lg-padding-x, var(--kendo-spacing-4, 1rem))","padding-y":"var(--kendo-button-lg-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px))","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-sm, normal)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-button-sm-padding-x, var(--kendo-spacing-2, 0.5rem))","padding-y":"calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5, 0.125rem)) + 1px)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-lg, normal)"</li><li>md: "padding-x":"var(--kendo-button-md-padding-x, var(--kendo-spacing-3, 0.75rem))","padding-y":"calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "padding-x":"var(--kendo-button-lg-padding-x, var(--kendo-spacing-4, 1rem))","padding-y":"calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-sm, normal)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Button.</div></div>
@@ -7445,9 +7445,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-chip-md-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-chip-padding-y, calc( #{k-spacing(1.5)} / 2 ) )</code></td>
-    <td><code>var(--kendo-chip-padding-y, calc(var(--kendo-spacing-1\.5, 0.375rem) / 2))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-chip-padding-y, #{k-spacing(1.5)} ) / 2 )</code></td>
+    <td><code>calc(var(--kendo-chip-padding-y, var(--kendo-spacing-1\.5, 0.375rem)) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Chip.</div></div>
@@ -7537,7 +7537,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-chip-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-chip-md-line-height} * 1em + #{$kendo-chip-md-padding-y} * 2 + #{$kendo-chip-border-width} * 2 )</code></td>
-    <td><code>calc(var(--kendo-chip-line-height, var(--kendo-line-height-lg, normal)) * 1em + var(--kendo-chip-padding-y, calc(var(--kendo-spacing-1\.5, 0.375rem) / 2)) * 2 + var(--kendo-chip-border-width, 1px) * 2)</code></td>
+    <td><code>calc(var(--kendo-chip-line-height, var(--kendo-line-height-lg, normal)) * 1em + calc(var(--kendo-chip-padding-y, var(--kendo-spacing-1\.5, 0.375rem)) / 2) * 2 + var(--kendo-chip-border-width, 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Chip.</div></div>
@@ -7566,7 +7566,7 @@ The following table lists the available variables for customizing the Fluent the
         line-height: $kendo-chip-lg-line-height
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","padding-y":"calc(var(--kendo-spacing-0\\.5, 0.125rem) / 2)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-lg, normal)"</li><li>md: "padding-x":"var(--kendo-chip-padding-x, var(--kendo-spacing-1\\.5, 0.375rem))","padding-y":"var(--kendo-chip-padding-y, calc(var(--kendo-spacing-1\\.5, 0.375rem) / 2))","font-size":"var(--kendo-chip-font-size, var(--kendo-font-size-sm, inherit))","line-height":"var(--kendo-chip-line-height, var(--kendo-line-height-lg, normal))"</li><li>lg: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"calc(var(--kendo-spacing-2\\.5, 0.625rem) / 2)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","padding-y":"calc(var(--kendo-spacing-0\\.5, 0.125rem) / 2)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-lg, normal)"</li><li>md: "padding-x":"var(--kendo-chip-padding-x, var(--kendo-spacing-1\\.5, 0.375rem))","padding-y":"calc(var(--kendo-chip-padding-y, var(--kendo-spacing-1\\.5, 0.375rem)) / 2)","font-size":"var(--kendo-chip-font-size, var(--kendo-font-size-sm, inherit))","line-height":"var(--kendo-chip-line-height, var(--kendo-line-height-lg, normal))"</li><li>lg: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"calc(var(--kendo-spacing-2\\.5, 0.625rem) / 2)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the Chip.</div></div>
@@ -13669,7 +13669,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-floating-label-offset-y</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-md-padding-y} )</code></td>
-    <td><code>calc(calc(var(--kendo-floating-label-line-height, var(--kendo-line-height, normal)) * var(--kendo-floating-label-font-size, var(--kendo-font-size, inherit))) + 1px + var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)))</code></td>
+    <td><code>calc(calc(var(--kendo-floating-label-line-height, var(--kendo-line-height, normal)) * var(--kendo-floating-label-font-size, var(--kendo-font-size, inherit))) + 1px + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical offset of the Floating Label.</div></div>
@@ -15017,9 +15017,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-grid-grouping-header-padding-x</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-toolbar-md-padding-x</code></td>
-    <td><code>var(--kendo-toolbar-md-padding-x, calc(var(--kendo-spacing-3, 0.75rem) + 1px))</code></td>
+    <td><code>calc(var(--kendo-toolbar-md-padding-x, var(--kendo-spacing-3, 0.75rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid grouping header.</div></div>
@@ -15027,9 +15027,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-grid-grouping-header-padding-y</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-toolbar-md-padding-y</code></td>
-    <td><code>var(--kendo-toolbar-md-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px))</code></td>
+    <td><code>calc(var(--kendo-toolbar-md-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid grouping header.</div></div>
@@ -15129,7 +15129,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-group-drop-hint-height</td>
     <td>String</td>
     <td><code>var( --kendo-grid-group-drop-hint-height, calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-drop-hint-size} ) )</code></td>
-    <td><code>var(--kendo-grid-group-drop-hint-height, calc(calc(var(--kendo-chip-line-height, var(--kendo-line-height-lg, normal)) * 1em + var(--kendo-chip-padding-y, calc(var(--kendo-spacing-1\.5, 0.375rem) / 2)) * 2 + var(--kendo-chip-border-width, 1px) * 2) + var(--kendo-grid-group-drop-hint-size, 6px)))</code></td>
+    <td><code>var(--kendo-grid-group-drop-hint-height, calc(calc(var(--kendo-chip-line-height, var(--kendo-line-height-lg, normal)) * 1em + calc(var(--kendo-chip-padding-y, var(--kendo-spacing-1\.5, 0.375rem)) / 2) * 2 + var(--kendo-chip-border-width, 1px) * 2) + var(--kendo-grid-group-drop-hint-size, 6px)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Grid group drop clue.</div></div>
@@ -16847,9 +16847,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-input-md-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-input-padding-y, calc( #{k-spacing(1)} + 1px ) )</code></td>
-    <td><code>var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var( --kendo-input-padding-y, #{k-spacing(1)} ) + 1px)</code></td>
+    <td><code>calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Input components.</div></div>
@@ -16929,7 +16929,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-input-sm-button-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-button-sm-line-height} * 1em + #{$kendo-button-sm-padding-y} * 2 )</code></td>
-    <td><code>calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-button-sm-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px)) * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height-lg, normal) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small Input button.</div></div>
@@ -16939,7 +16939,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-input-md-button-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-button-md-line-height} * 1em + #{$kendo-button-md-padding-y} * 2 )</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium Input button.</div></div>
@@ -16949,7 +16949,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-input-lg-button-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-button-lg-line-height} * 1em + #{$kendo-button-lg-padding-y} * 2 )</code></td>
-    <td><code>calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-button-lg-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px)) * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height-sm, normal) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large Input button.</div></div>
@@ -16969,7 +16969,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-input-sm-spinner-width</td>
     <td>Calculation</td>
     <td><code>$kendo-input-sm-button-width</code></td>
-    <td><code>calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-button-sm-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px)) * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height-lg, normal) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small Input spinner button.</div></div>
@@ -16979,7 +16979,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-input-md-spinner-width</td>
     <td>Calculation</td>
     <td><code>$kendo-input-md-button-width</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium Input spinner button.</div></div>
@@ -16989,7 +16989,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-input-lg-spinner-width</td>
     <td>Calculation</td>
     <td><code>$kendo-input-lg-button-width</code></td>
-    <td><code>calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-button-lg-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px)) * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height-sm, normal) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large Input spinner button.</div></div>
@@ -17789,7 +17789,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-input-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( ( #{$kendo-input-md-line-height} * 1em ) + ( #{$kendo-input-md-padding-y} * 2 ) + calc( #{$kendo-input-border-width} * 2 ) )</code></td>
-    <td><code>calc(var(--kendo-input-line-height, var(--kendo-line-height, normal)) * 1em + var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2 + 1px * 2)</code></td>
+    <td><code>calc(var(--kendo-input-line-height, var(--kendo-line-height, normal)) * 1em + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Input.</div></div>
@@ -17830,7 +17830,7 @@ The following table lists the available variables for customizing the Fluent the
         button-width: $kendo-input-lg-button-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-sm, normal)","icon-size":"calc(var(--kendo-icon-size, 1rem) + var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2)","button-padding-x":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","button-padding-y":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","button-width":"calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-button-sm-padding-y, calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)) * 2)"</li><li>md: "padding-x":"var(--kendo-input-padding-x, var(--kendo-spacing-2\\.5, 0.625rem))","padding-y":"var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px))","font-size":"var(--kendo-input-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-input-line-height, var(--kendo-line-height, normal))","icon-size":"calc(var(--kendo-icon-size, 1rem) + calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px) * 2)","button-padding-x":"var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px))","button-padding-y":"var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px))","button-width":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","icon-size":"calc(var(--kendo-icon-size, 1rem) + var(--kendo-spacing-2, 0.5rem) * 2)","button-padding-x":"var(--kendo-spacing-2, 0.5rem)","button-padding-y":"var(--kendo-spacing-2, 0.5rem)","button-width":"calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-button-lg-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px)) * 2)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-sm, normal)","icon-size":"calc(var(--kendo-icon-size, 1rem) + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2)","button-padding-x":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","button-padding-y":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","button-width":"calc(var(--kendo-line-height-lg, normal) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5, 0.125rem)) + 1px) * 2)"</li><li>md: "padding-x":"var(--kendo-input-padding-x, var(--kendo-spacing-2\\.5, 0.625rem))","padding-y":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)","font-size":"var(--kendo-input-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-input-line-height, var(--kendo-line-height, normal))","icon-size":"calc(var(--kendo-icon-size, 1rem) + calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px) * 2)","button-padding-x":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)","button-padding-y":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)","button-width":"calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","icon-size":"calc(var(--kendo-icon-size, 1rem) + var(--kendo-spacing-2, 0.5rem) * 2)","button-padding-x":"var(--kendo-spacing-2, 0.5rem)","button-padding-y":"var(--kendo-spacing-2, 0.5rem)","button-width":"calc(var(--kendo-line-height-sm, normal) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px) * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>
@@ -20994,7 +20994,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-otp-input-width</td>
     <td>String</td>
     <td><code>var( --kendo-otp-input-width, #{$kendo-input-calc-size} )</code></td>
-    <td><code>var(--kendo-otp-input-width, calc(var(--kendo-input-line-height, var(--kendo-line-height, normal)) * 1em + var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2 + 1px * 2))</code></td>
+    <td><code>var(--kendo-otp-input-width, calc(var(--kendo-input-line-height, var(--kendo-line-height, normal)) * 1em + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2 + 1px * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OTP separator.</div></div>
@@ -21014,7 +21014,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-otp-md-input-width</td>
     <td>String</td>
     <td><code>var( --kendo-otp-md-input-width, #{$kendo-otp-input-width} )</code></td>
-    <td><code>var(--kendo-otp-md-input-width, var(--kendo-otp-input-width, calc(var(--kendo-input-line-height, var(--kendo-line-height, normal)) * 1em + var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2 + 1px * 2)))</code></td>
+    <td><code>var(--kendo-otp-md-input-width, var(--kendo-otp-input-width, calc(var(--kendo-input-line-height, var(--kendo-line-height, normal)) * 1em + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2 + 1px * 2)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium OTP separator.</div></div>
@@ -21824,7 +21824,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-pdf-viewer-search-panel-margin-y</td>
     <td>String</td>
     <td><code>var( --kendo-pdf-viewer-search-panel-margin-y ,calc( ( #{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-panel-padding-y} ) ) * -1 ))</code></td>
-    <td><code>var(--kendo-pdf-viewer-search-panel-margin-y, calc((calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2) + 2 * var(--kendo-pdf-viewer-search-panel-border-width, 1px) + 2 * var(--kendo-spacing-3, 0.75rem)) * -1))</code></td>
+    <td><code>var(--kendo-pdf-viewer-search-panel-margin-y, calc((calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2) + 2 * var(--kendo-pdf-viewer-search-panel-border-width, 1px) + 2 * var(--kendo-spacing-3, 0.75rem)) * -1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the PDFViewer search panel.</div></div>
@@ -28069,7 +28069,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-spreadsheet-formula-input-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-spreadsheet-formula-input-padding-y, var( --kendo-input-md-padding-y, #{$kendo-input-md-padding-y} ) )</code></td>
-    <td><code>var(--kendo-spreadsheet-formula-input-padding-y, var(--kendo-input-md-padding-y, var(--kendo-input-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px))))</code></td>
+    <td><code>var(--kendo-spreadsheet-formula-input-padding-y, var(--kendo-input-md-padding-y, calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Spreadsheet formula input.</div></div>
@@ -32927,9 +32927,9 @@ The following table lists the available variables for customizing the Fluent the
 </thead>
 <tbody><tr>
     <td>$kendo-toolbar-sm-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-toolbar-sm-padding-x, calc( #{k-spacing(2)} + 1px ) )</code></td>
-    <td><code>var(--kendo-toolbar-sm-padding-x, calc(var(--kendo-spacing-2, 0.5rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-toolbar-sm-padding-x, #{k-spacing(2)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-toolbar-sm-padding-x, var(--kendo-spacing-2, 0.5rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Toolbar.</div></div>
@@ -32937,9 +32937,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-toolbar-md-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-toolbar-md-padding-x, calc( #{k-spacing(3)} + 1px ) )</code></td>
-    <td><code>var(--kendo-toolbar-md-padding-x, calc(var(--kendo-spacing-3, 0.75rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-toolbar-md-padding-x, #{k-spacing(3)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-toolbar-md-padding-x, var(--kendo-spacing-3, 0.75rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Toolbar.</div></div>
@@ -32947,9 +32947,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-toolbar-lg-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-toolbar-lg-padding-x, calc( #{k-spacing(4.5)} + 1px ))</code></td>
-    <td><code>var(--kendo-toolbar-lg-padding-x, calc(var(--kendo-spacing-4\.5, 1.125rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-toolbar-lg-padding-x, #{k-spacing(4.5)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-toolbar-lg-padding-x, var(--kendo-spacing-4\.5, 1.125rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Toolbar.</div></div>
@@ -32957,9 +32957,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-toolbar-sm-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-toolbar-sm-padding-y, calc( #{k-spacing(0.5)} + 1px ) )</code></td>
-    <td><code>var(--kendo-toolbar-sm-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-toolbar-sm-padding-y, #{k-spacing(0.5)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-toolbar-sm-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Toolbar.</div></div>
@@ -32967,9 +32967,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-toolbar-md-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-toolbar-md-padding-y, calc( #{k-spacing(0.5)} + 1px ) )</code></td>
-    <td><code>var(--kendo-toolbar-md-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-toolbar-md-padding-y, #{k-spacing(0.5)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-toolbar-md-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Toolbar.</div></div>
@@ -32977,9 +32977,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-toolbar-lg-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-toolbar-lg-padding-y, calc( #{k-spacing(0.5)} + 1px ) )</code></td>
-    <td><code>var(--kendo-toolbar-lg-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-toolbar-lg-padding-y, #{k-spacing(0.5)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-toolbar-lg-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Toolbar.</div></div>
@@ -33019,7 +33019,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-toolbar-sm-separator-height</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-sm-separator-height, #{$kendo-button-sm-calc-size} )</code></td>
-    <td><code>var(--kendo-toolbar-sm-separator-height, calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-button-sm-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
+    <td><code>var(--kendo-toolbar-sm-separator-height, calc(var(--kendo-line-height-lg, normal) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small Toolbar button separator.</div></div>
@@ -33029,7 +33029,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-toolbar-md-separator-height</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-md-separator-height, #{$kendo-button-md-calc-size} )</code></td>
-    <td><code>var(--kendo-toolbar-md-separator-height, calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
+    <td><code>var(--kendo-toolbar-md-separator-height, calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium Toolbar button separator.</div></div>
@@ -33039,7 +33039,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-toolbar-lg-separator-height</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-lg-separator-height, #{$kendo-button-lg-calc-size} )</code></td>
-    <td><code>var(--kendo-toolbar-lg-separator-height, calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-button-lg-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
+    <td><code>var(--kendo-toolbar-lg-separator-height, calc(var(--kendo-line-height-sm, normal) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large Toolbar button separator.</div></div>
@@ -33268,7 +33268,7 @@ The following table lists the available variables for customizing the Fluent the
         separator-height: $kendo-toolbar-lg-separator-height
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-toolbar-sm-padding-x, calc(var(--kendo-spacing-2, 0.5rem) + 1px))","padding-y":"var(--kendo-toolbar-sm-padding-y, calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px))","spacing":"var(--kendo-toolbar-sm-spacing, var(--kendo-spacing-3, 0.75rem))","separator-height":"var(--kendo-toolbar-sm-separator-height, calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-button-sm-padding-y, calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li><li>md: "padding-x":"var(--kendo-toolbar-md-padding-x, calc(var(--kendo-spacing-3, 0.75rem) + 1px))","padding-y":"var(--kendo-toolbar-md-padding-y, calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px))","spacing":"var(--kendo-toolbar-md-spacing, var(--kendo-spacing-3, 0.75rem))","separator-height":"var(--kendo-toolbar-md-separator-height, calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li><li>lg: "padding-x":"var(--kendo-toolbar-lg-padding-x, calc(var(--kendo-spacing-4\\.5, 1.125rem) + 1px))","padding-y":"var(--kendo-toolbar-lg-padding-y, calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px))","spacing":"var(--kendo-toolbar-lg-spacing, var(--kendo-spacing-3, 0.75rem))","separator-height":"var(--kendo-toolbar-lg-separator-height, calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-button-lg-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"calc(var(--kendo-toolbar-sm-padding-x, var(--kendo-spacing-2, 0.5rem)) + 1px)","padding-y":"calc(var(--kendo-toolbar-sm-padding-y, var(--kendo-spacing-0\\.5, 0.125rem)) + 1px)","spacing":"var(--kendo-toolbar-sm-spacing, var(--kendo-spacing-3, 0.75rem))","separator-height":"var(--kendo-toolbar-sm-separator-height, calc(var(--kendo-line-height-lg, normal) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5, 0.125rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li><li>md: "padding-x":"calc(var(--kendo-toolbar-md-padding-x, var(--kendo-spacing-3, 0.75rem)) + 1px)","padding-y":"calc(var(--kendo-toolbar-md-padding-y, var(--kendo-spacing-0\\.5, 0.125rem)) + 1px)","spacing":"var(--kendo-toolbar-md-spacing, var(--kendo-spacing-3, 0.75rem))","separator-height":"var(--kendo-toolbar-md-separator-height, calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li><li>lg: "padding-x":"calc(var(--kendo-toolbar-lg-padding-x, var(--kendo-spacing-4\\.5, 1.125rem)) + 1px)","padding-y":"calc(var(--kendo-toolbar-lg-padding-y, var(--kendo-spacing-0\\.5, 0.125rem)) + 1px)","spacing":"var(--kendo-toolbar-lg-spacing, var(--kendo-spacing-3, 0.75rem))","separator-height":"var(--kendo-toolbar-lg-separator-height, calc(var(--kendo-line-height-sm, normal) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Toolbar.</div></div>
@@ -35440,9 +35440,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-upload-dropzone-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-upload-dropzone-padding-x, calc( #{k-spacing(3)} + 1px ) )</code></td>
-    <td><code>var(--kendo-upload-dropzone-padding-x, calc(var(--kendo-spacing-3, 0.75rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-upload-dropzone-padding-x, #{k-spacing(3)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-upload-dropzone-padding-x, var(--kendo-spacing-3, 0.75rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Upload dropzone.</div></div>
@@ -35450,9 +35450,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-upload-dropzone-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-upload-dropzone-padding-y, calc( #{k-spacing(0.5)} + 1px ) )</code></td>
-    <td><code>var(--kendo-upload-dropzone-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-upload-dropzone-padding-y, #{k-spacing(0.5)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-upload-dropzone-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Upload dropzone.</div></div>
@@ -35520,9 +35520,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-upload-item-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-upload-item-padding-x, $kendo-upload-dropzone-padding-x )</code></td>
-    <td><code>var(--kendo-upload-item-padding-x, var(--kendo-upload-dropzone-padding-x, calc(var(--kendo-spacing-3, 0.75rem) + 1px)))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-upload-item-padding-x, #{k-spacing(3)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-upload-item-padding-x, var(--kendo-spacing-3, 0.75rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of an uploaded item.</div></div>
@@ -35530,9 +35530,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-upload-item-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-upload-item-padding-y, $kendo-upload-dropzone-padding-y )</code></td>
-    <td><code>var(--kendo-upload-item-padding-y, var(--kendo-upload-dropzone-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px)))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-upload-item-padding-y, #{k-spacing(0.5)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-upload-item-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of an uploaded item.</div></div>

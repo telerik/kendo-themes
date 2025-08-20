@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-toolbar-sm-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-toolbar-sm-padding-x, calc( #{k-spacing(2)} + 1px ) )</code></td>
-    <td><code>var(--kendo-toolbar-sm-padding-x, calc(var(--kendo-spacing-2, 0.5rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-toolbar-sm-padding-x, #{k-spacing(2)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-toolbar-sm-padding-x, var(--kendo-spacing-2, 0.5rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Toolbar.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-toolbar-md-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-toolbar-md-padding-x, calc( #{k-spacing(3)} + 1px ) )</code></td>
-    <td><code>var(--kendo-toolbar-md-padding-x, calc(var(--kendo-spacing-3, 0.75rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-toolbar-md-padding-x, #{k-spacing(3)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-toolbar-md-padding-x, var(--kendo-spacing-3, 0.75rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Toolbar.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-toolbar-lg-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-toolbar-lg-padding-x, calc( #{k-spacing(4.5)} + 1px ))</code></td>
-    <td><code>var(--kendo-toolbar-lg-padding-x, calc(var(--kendo-spacing-4\.5, 1.125rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-toolbar-lg-padding-x, #{k-spacing(4.5)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-toolbar-lg-padding-x, var(--kendo-spacing-4\.5, 1.125rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Toolbar.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-toolbar-sm-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-toolbar-sm-padding-y, calc( #{k-spacing(0.5)} + 1px ) )</code></td>
-    <td><code>var(--kendo-toolbar-sm-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-toolbar-sm-padding-y, #{k-spacing(0.5)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-toolbar-sm-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Toolbar.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-toolbar-md-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-toolbar-md-padding-y, calc( #{k-spacing(0.5)} + 1px ) )</code></td>
-    <td><code>var(--kendo-toolbar-md-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-toolbar-md-padding-y, #{k-spacing(0.5)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-toolbar-md-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Toolbar.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-toolbar-lg-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-toolbar-lg-padding-y, calc( #{k-spacing(0.5)} + 1px ) )</code></td>
-    <td><code>var(--kendo-toolbar-lg-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-toolbar-lg-padding-y, #{k-spacing(0.5)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-toolbar-lg-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Toolbar.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-sm-separator-height</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-sm-separator-height, #{$kendo-button-sm-calc-size} )</code></td>
-    <td><code>var(--kendo-toolbar-sm-separator-height, calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-button-sm-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
+    <td><code>var(--kendo-toolbar-sm-separator-height, calc(var(--kendo-line-height-lg, normal) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small Toolbar button separator.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-md-separator-height</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-md-separator-height, #{$kendo-button-md-calc-size} )</code></td>
-    <td><code>var(--kendo-toolbar-md-separator-height, calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
+    <td><code>var(--kendo-toolbar-md-separator-height, calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium Toolbar button separator.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-lg-separator-height</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-lg-separator-height, #{$kendo-button-lg-calc-size} )</code></td>
-    <td><code>var(--kendo-toolbar-lg-separator-height, calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-button-lg-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
+    <td><code>var(--kendo-toolbar-lg-separator-height, calc(var(--kendo-line-height-sm, normal) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large Toolbar button separator.</div></div>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
         separator-height: $kendo-toolbar-lg-separator-height
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-toolbar-sm-padding-x, calc(var(--kendo-spacing-2, 0.5rem) + 1px))","padding-y":"var(--kendo-toolbar-sm-padding-y, calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px))","spacing":"var(--kendo-toolbar-sm-spacing, var(--kendo-spacing-3, 0.75rem))","separator-height":"var(--kendo-toolbar-sm-separator-height, calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-button-sm-padding-y, calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li><li>md: "padding-x":"var(--kendo-toolbar-md-padding-x, calc(var(--kendo-spacing-3, 0.75rem) + 1px))","padding-y":"var(--kendo-toolbar-md-padding-y, calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px))","spacing":"var(--kendo-toolbar-md-spacing, var(--kendo-spacing-3, 0.75rem))","separator-height":"var(--kendo-toolbar-md-separator-height, calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li><li>lg: "padding-x":"var(--kendo-toolbar-lg-padding-x, calc(var(--kendo-spacing-4\\.5, 1.125rem) + 1px))","padding-y":"var(--kendo-toolbar-lg-padding-y, calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px))","spacing":"var(--kendo-toolbar-lg-spacing, var(--kendo-spacing-3, 0.75rem))","separator-height":"var(--kendo-toolbar-lg-separator-height, calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-button-lg-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"calc(var(--kendo-toolbar-sm-padding-x, var(--kendo-spacing-2, 0.5rem)) + 1px)","padding-y":"calc(var(--kendo-toolbar-sm-padding-y, var(--kendo-spacing-0\\.5, 0.125rem)) + 1px)","spacing":"var(--kendo-toolbar-sm-spacing, var(--kendo-spacing-3, 0.75rem))","separator-height":"var(--kendo-toolbar-sm-separator-height, calc(var(--kendo-line-height-lg, normal) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5, 0.125rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li><li>md: "padding-x":"calc(var(--kendo-toolbar-md-padding-x, var(--kendo-spacing-3, 0.75rem)) + 1px)","padding-y":"calc(var(--kendo-toolbar-md-padding-y, var(--kendo-spacing-0\\.5, 0.125rem)) + 1px)","spacing":"var(--kendo-toolbar-md-spacing, var(--kendo-spacing-3, 0.75rem))","separator-height":"var(--kendo-toolbar-md-separator-height, calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li><li>lg: "padding-x":"calc(var(--kendo-toolbar-lg-padding-x, var(--kendo-spacing-4\\.5, 1.125rem)) + 1px)","padding-y":"calc(var(--kendo-toolbar-lg-padding-y, var(--kendo-spacing-0\\.5, 0.125rem)) + 1px)","spacing":"var(--kendo-toolbar-lg-spacing, var(--kendo-spacing-3, 0.75rem))","separator-height":"var(--kendo-toolbar-lg-separator-height, calc(var(--kendo-line-height-sm, normal) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Toolbar.</div></div>
