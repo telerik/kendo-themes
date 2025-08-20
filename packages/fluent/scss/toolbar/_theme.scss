@@ -12,4 +12,10 @@
         }
     }
 
+    .k-toolbar-flat {
+        > .k-separator,
+        .k-toolbar-separator {
+            border-inline-color: $kendo-toolbar-separator-border;
+        }
+    }
 }
