@@ -1,14 +1,14 @@
 import postcss from "postcss";
 import { selectorSpecificity } from "@csstools/selector-specificity";
-import selectorParser from "postcss-selector-parser";
+import selectorParser, { Selector, Node, ClassName, Tag, Pseudo, Attribute } from "postcss-selector-parser";
 import { SourceMapConsumer } from "@jridgewell/source-map";
 import { optionClassNames, stateClassNames, variantClassNames } from "../packages/html/src/misc/component-class-names";
+import * as htmlComponents from "../packages/html/src/index";
 
 // Types
 interface SelectorInfo {
   selector: string;
   specificity: number[];
-  specificityValue: number;
   sourceLocation: string;
 }
 
@@ -25,44 +25,188 @@ interface Component {
 }
 
 interface GetComponentSelectorsOptions {
-  minSpecificity?: number;
   sourceMap?: any;
 }
 
+interface ParsedSelector {
+  classes: string[];
+  pseudoClasses: string[];
+  pseudoElements: string[];
+  elements: string[];
+  attributes: string[];
+  ids: string[];
+}
+
 /**
- * Check if a selector contains a specific CSS class name using exact matching
- * This prevents substring matches like 'k-icon' matching within 'k-icon-button'
+ * Compare two specificity arrays
+ * Returns: 1 if a > b, -1 if a < b, 0 if equal
+ * CSS specificity comparison follows: [IDs, classes/attributes/pseudo-classes, types/pseudo-elements]
+ */
+function compareSpecificity(a: number[], b: number[]): number {
+  for (let i = 0; i < Math.max(a.length, b.length); i++) {
+    const valueA = a[i] || 0;
+    const valueB = b[i] || 0;
+
+    if (valueA > valueB) return 1;
+    if (valueA < valueB) return -1;
+  }
+  return 0;
+}
+
+/**
+ * Get the more specific of two specificity arrays
+ * Returns the array with higher specificity, or the first one if they're equal
+ */
+function getMoreSpecific(a: number[], b: number[]): number[] {
+  return compareSpecificity(a, b) >= 0 ? a : b;
+}
+
+/**
+ * Parse a CSS selector using postcss-selector-parser to extract all components
+ * This replaces manual string manipulation and regex patterns
+ */
+function parseSelector(selector: string): ParsedSelector {
+  const result: ParsedSelector = {
+    classes: [],
+    pseudoClasses: [],
+    pseudoElements: [],
+    elements: [],
+    attributes: [],
+    ids: [],
+  };
+
+  try {
+    selectorParser((selectors) => {
+      selectors.each((sel: Selector) => {
+        sel.walk((node) => {
+          switch (node.type) {
+            case 'class':
+              result.classes.push((node as ClassName).value);
+              break;
+            case 'tag':
+              result.elements.push((node as Tag).value);
+              break;
+            case 'pseudo':
+              const pseudo = node as Pseudo;
+              if (pseudo.value.startsWith('::')) {
+                result.pseudoElements.push(pseudo.value);
+              } else {
+                result.pseudoClasses.push(pseudo.value);
+              }
+              break;
+            case 'attribute':
+              result.attributes.push((node as Attribute).attribute);
+              break;
+            case 'id':
+              result.ids.push(node.value);
+              break;
+          }
+        });
+      });
+    }).processSync(selector);
+  } catch (error) {
+    console.warn(`Failed to parse selector "${selector}":`, error);
+  }
+
+  return result;
+}
+
+/**
+ * Check if a selector contains a specific CSS class name using proper CSS parsing
+ * This replaces the regex-based hasClassName function
  */
 function hasClassName(selector: string, className: string): boolean {
-  // Use word boundary regex to match exact class name, not substring
-  const classPattern = new RegExp(`\\.${className}(?=\\s|\\.|:|$|>|\\+|~)`);
-  return classPattern.test(selector);
+  const parsed = parseSelector(selector);
+  return parsed.classes.includes(className);
+}
+
+/**
+ * Count how many times a specific class name appears in a CSS selector
+ * This replaces the regex-based countClassOccurrences function
+ */
+function countClassOccurrences(selector: string, className: string): number {
+  const parsed = parseSelector(selector);
+  return parsed.classes.filter(cls => cls === className).length;
+}
+
+/**
+ * Get all class names from a selector
+ * This replaces manual regex extraction
+ */
+function getClassNames(selector: string): string[] {
+  const parsed = parseSelector(selector);
+  return parsed.classes;
+}
+
+/**
+ * Check if selector contains any pseudo-classes
+ * This replaces manual string matching for pseudo-classes
+ */
+function hasPseudoClass(selector: string, pseudoClass: string): boolean {
+  const parsed = parseSelector(selector);
+  return parsed.pseudoClasses.includes(pseudoClass);
+}
+
+/**
+ * Count occurrences of a specific pseudo-class
+ */
+function countPseudoClassOccurrences(selector: string, pseudoClass: string): number {
+  const parsed = parseSelector(selector);
+  return parsed.pseudoClasses.filter(pc => pc === pseudoClass).length;
+}
+
+/**
+ * Check if selector contains any pseudo-elements
+ */
+function hasPseudoElement(selector: string): boolean {
+  const parsed = parseSelector(selector);
+  return parsed.pseudoElements.length > 0;
+}
+
+/**
+ * Check if selector contains any DOM elements
+ */
+function hasElements(selector: string): boolean {
+  const parsed = parseSelector(selector);
+  return parsed.elements.length > 0;
+}
+
+/** Returns one subject per comma-separated selector */
+export function getSubjects(selector: string): string[] {
+  const subjects: string[] = [];
+
+  selectorParser((selectors) => {
+    selectors.each((sel: Selector) => {
+      // Walk from the end until you hit a combinator
+      const nodes = sel.nodes ?? [];
+      const lastCompound: Node[] = [];
+      for (let i = nodes.length - 1; i >= 0; i--) {
+        const n = nodes[i];
+        if (n.type === "combinator") break;
+        lastCompound.unshift(n);
+      }
+      subjects.push(lastCompound.map((n) => n.toString()).join(""));
+    });
+  }).processSync(selector);
+
+  return subjects;
 }
 
 /**
  * Calculate CSS selector specificity using the @csstools/selector-specificity package
- * Returns an object with both the array format and calculated value
+ * Returns the specificity as an array [IDs, classes/attributes/pseudo-classes, types/pseudo-elements]
  */
-function calculateSpecificity(selector: string) {
+function calculateSpecificity(selector: string): number[] {
   try {
     const selectorAST = selectorParser().astSync(selector);
     const specificity = selectorSpecificity(selectorAST);
 
     // The selectorSpecificity returns { a, b, c } where:
     // a = IDs, b = classes/attributes/pseudo-classes, c = types/pseudo-elements
-    const specificityArray = [specificity.a, specificity.b, specificity.c];
-    const specificityValue = specificity.a * 100 + specificity.b * 10 + specificity.c;
-
-    return {
-      specificity: specificityArray,
-      specificityValue,
-    };
+    return [specificity.a, specificity.b, specificity.c];
   } catch {
     // Fallback for malformed selectors - silently return minimal specificity
-    return {
-      specificity: [0, 0, 1],
-      specificityValue: 1,
-    };
+    return [0, 0, 1];
   }
 }
 
@@ -95,7 +239,7 @@ function resolveSourceLocation(sourceMap: any, cssLine: number, cssColumn: numbe
  * Parse CSS and extract selectors that are relevant to a specific component
  */
 function getComponentSelectors(css: string, component: any, options: GetComponentSelectorsOptions = {}): SelectorInfo[] {
-  const { minSpecificity = 0, sourceMap } = options;
+  const { sourceMap } = options;
   const selectors: SelectorInfo[] = [];
 
   if (!component || !component.className) {
@@ -219,48 +363,31 @@ function getComponentSelectors(css: string, component: any, options: GetComponen
 
   root.walkRules((rule) => {
     rule.selectors.forEach((selector) => {
-      // Skip :root and html selectors immediately - they can't target component elements
-      if (selector.includes(":root") || selector.trim().startsWith("html")) {
-        return;
-      }
+      const subjects = getSubjects(selector);
 
+      // Check if any subject would target our component
       let wouldTargetComponent = false;
 
-      // Strip pseudo-classes from selector for testing since we can't simulate them on mock elements
-      const baseSelector = selector.replace(/:(hover|focus|active|disabled|enabled|checked|unchecked|indeterminate|valid|invalid|required|optional|read-only|read-write|first-child|last-child|first-of-type|last-of-type|only-child|only-of-type|nth-child|nth-of-type|not|empty|target|visited|link)(\([^)]*\))?/g, "");
+      for (const subject of subjects) {
+        // Check if subject contains our base class
+        if (hasClassName(subject, component.className)) {
+          // Extract all class names from the subject using proper parsing
+          const subjectClasses = getClassNames(subject);
 
-      // If stripping pseudo-classes results in empty string, skip this selector
-      if (!baseSelector.trim()) {
-        return;
-      }
-
-      try {
-        // Test all combinations: base class + each variant/option/state class (including empty string for base alone)
-        for (const className of componentClassNames) {
-          const classCombo = className ? `${component.className} ${className}` : component.className;
-          const element = document.createElement("div");
-          element.className = classCombo;
-
-          if (element.matches(baseSelector)) {
+          // Check if all non-base classes in the subject are classes our component can generate
+          const otherClasses = subjectClasses.filter((cls) => cls !== component.className);
+          if (otherClasses.length === 0 || otherClasses.every((cls) => componentClassNames.has(cls))) {
             wouldTargetComponent = true;
             break;
           }
         }
-      } catch {
-        // Fallback for malformed selectors - skip them
-        wouldTargetComponent = false;
       }
 
       if (!wouldTargetComponent) {
-        return; // Skip this selector - it doesn't target our component
+        return; // Skip this selector - none of its subjects target our component
       }
 
       const specificityResult = calculateSpecificity(selector);
-
-      // Apply minimum specificity filter
-      if (specificityResult.specificityValue < minSpecificity) {
-        return;
-      }
 
       let sourceLocation = "Source location not available";
 
@@ -271,8 +398,7 @@ function getComponentSelectors(css: string, component: any, options: GetComponen
 
       selectors.push({
         selector: selector.trim(),
-        specificity: specificityResult.specificity,
-        specificityValue: specificityResult.specificityValue,
+        specificity: specificityResult,
         sourceLocation: sourceLocation,
       });
     });
@@ -282,12 +408,17 @@ function getComponentSelectors(css: string, component: any, options: GetComponen
 }
 
 /**
- * Detect component variants in a CSS selector using the actual variantClassNames function
+ * Detect component variants in a CSS selector using proper CSS parsing
+ * Returns array of detected variant class names
  */
-function detectVariants(selector: string, component: Component | null = null): boolean {
+function detectVariants(selector: string, component: Component | null = null): string[] {
+  const detectedVariants: string[] = [];
+
   if (!component || !component.variants || !Array.isArray(component.variants)) {
-    return false;
+    return detectedVariants;
   }
+
+  const selectorClasses = getClassNames(selector);
 
   // Use the actual variantClassNames function to generate the variant classes
   for (const variant of component.variants) {
@@ -295,23 +426,27 @@ function detectVariants(selector: string, component: Component | null = null): b
 
     // Check if any of the generated variant classes appear in the selector
     for (const [className, isActive] of Object.entries(generatedClasses)) {
-      if (isActive && hasClassName(selector, className)) {
-        return true;
+      if (isActive && selectorClasses.includes(className)) {
+        detectedVariants.push(className);
       }
     }
   }
 
-  return false;
+  return detectedVariants;
 }
 
 /**
- * Detect component options in a CSS selector using the actual optionClassNames function
+ * Detect component options in a CSS selector using proper CSS parsing
+ * Returns array of detected option class names
  */
-function detectOptions(selector: string, component: Component | null = null): boolean {
+function detectOptions(selector: string, component: Component | null = null): string[] {
+  const detectedOptions = new Set<string>();
+
   if (!component || !component.options) {
-    return false;
+    return [];
   }
 
+  const selectorClasses = getClassNames(selector);
   const { options } = component;
 
   // Test each option type individually using the actual optionClassNames function
@@ -322,9 +457,11 @@ function detectOptions(selector: string, component: Component | null = null): bo
       const generatedClasses = optionClassNames(component.className, { size });
       if (generatedClasses) {
         const classNames = generatedClasses.split(" ").filter((c) => c.trim());
-        if (classNames.some((className) => hasClassName(selector, className))) {
-          return true;
-        }
+        classNames.forEach((className) => {
+          if (selectorClasses.includes(className)) {
+            detectedOptions.add(className);
+          }
+        });
       }
     }
   }
@@ -335,9 +472,11 @@ function detectOptions(selector: string, component: Component | null = null): bo
       const generatedClasses = optionClassNames(component.className, { fillMode });
       if (generatedClasses) {
         const classNames = generatedClasses.split(" ").filter((c) => c.trim());
-        if (classNames.some((className) => hasClassName(selector, className))) {
-          return true;
-        }
+        classNames.forEach((className) => {
+          if (selectorClasses.includes(className)) {
+            detectedOptions.add(className);
+          }
+        });
       }
     }
   }
@@ -348,9 +487,11 @@ function detectOptions(selector: string, component: Component | null = null): bo
       const generatedClasses = optionClassNames(component.className, { themeColor });
       if (generatedClasses) {
         const classNames = generatedClasses.split(" ").filter((c) => c.trim());
-        if (classNames.some((className) => hasClassName(selector, className))) {
-          return true;
-        }
+        classNames.forEach((className) => {
+          if (selectorClasses.includes(className)) {
+            detectedOptions.add(className);
+          }
+        });
       }
     }
   }
@@ -362,9 +503,11 @@ function detectOptions(selector: string, component: Component | null = null): bo
         const generatedClasses = optionClassNames(component.className, { fillMode, themeColor });
         if (generatedClasses) {
           const classNames = generatedClasses.split(" ").filter((c) => c.trim());
-          if (classNames.some((className) => hasClassName(selector, className))) {
-            return true;
-          }
+          classNames.forEach((className) => {
+            if (selectorClasses.includes(className)) {
+              detectedOptions.add(className);
+            }
+          });
         }
       }
     }
@@ -376,119 +519,334 @@ function detectOptions(selector: string, component: Component | null = null): bo
       const generatedClasses = optionClassNames(component.className, { rounded });
       if (generatedClasses) {
         const classNames = generatedClasses.split(" ").filter((c) => c.trim());
-        if (classNames.some((className) => hasClassName(selector, className))) {
-          return true;
+        classNames.forEach((className) => {
+          if (selectorClasses.includes(className)) {
+            detectedOptions.add(className);
+          }
+        });
+      }
+    }
+  }
+
+  // Convert Set to array only at the end
+  return Array.from(detectedOptions);
+}
+
+/**
+ * Detect states in a CSS selector for threshold calculation
+ * Returns array of detected state class names and pseudo-classes
+ */
+function detectStates(selector: string, component: Component | null = null): string[] {
+  const detectedStates: string[] = [];
+
+  try {
+    selectorParser((selectors) => {
+      selectors.each((sel: Selector) => {
+        sel.walk((node) => {
+          if (node.type === 'pseudo') {
+            const pseudo = node as Pseudo;
+
+            if (pseudo.value.startsWith('::')) {
+              // Skip pseudo-elements, they're counted separately
+              return;
+            }
+
+            // Count all pseudo-classes
+            detectedStates.push(pseudo.value);
+          }
+        });
+      });
+    }).processSync(selector);
+  } catch (error) {
+    console.warn(`Failed to parse selector for state detection "${selector}":`, error);
+  }
+
+  // Check component-specific states if component is provided
+  if (component && component.states) {
+    const selectorClasses = getClassNames(selector);
+
+    for (const state of component.states) {
+      // Handle deprecated states that are already k-prefixed class names
+      if (selectorClasses.includes(state)) {
+        detectedStates.push(state);
+        continue;
+      }
+
+      // Use the actual stateClassNames function for standard state names
+      const stateProps = { [state]: true };
+      const generatedClasses = stateClassNames(component.className, stateProps);
+
+      // Check if any of the generated state classes appear in the selector
+      for (const className of generatedClasses.split(" ")) {
+        if (className && className.trim() && selectorClasses.includes(className)) {
+          detectedStates.push(className);
         }
       }
     }
   }
 
-  return false;
+  return detectedStates;
 }
 
 /**
- * Detect states in a CSS selector using the actual stateClassNames function and CSS pseudo-classes
- * Component spec is the source of truth for valid states (including deprecated ones)
+ * Detect if a selector contains class names from other component specs
+ * Excludes the current component being tested to avoid false positives
+ * Returns array of detected component class names
  */
-function detectStates(selector: string, component: Component | null = null): boolean {
-  if (!component || !component.states) {
-    return false;
-  }
+function detectComponents(selector: string, currentComponent: Component | null = null): string[] {
+  const detectedComponents: string[] = [];
+  const selectorClasses = getClassNames(selector);
 
-  // First check component-specific states from the spec using the actual stateClassNames function
-  for (const state of component.states) {
-    // Handle deprecated states that are already k-prefixed class names
-    if (hasClassName(selector, state)) {
-      return true;
-    }
+  // Get all component specs from the html package
+  const componentSpecs: any[] = [];
 
-    // Use the actual stateClassNames function for standard state names
-    const stateProps = { [state]: true };
-    const generatedClasses = stateClassNames(component.className, stateProps);
-
-    // Check if any of the generated state classes appear in the selector
-    for (const className of generatedClasses.split(" ")) {
-      if (className && className.trim() && hasClassName(selector, className)) {
-        return true;
-      }
+  // Extract all exported values that have a className property (indicating they're component specs)
+  // This includes both object specs and React component functions with attached properties
+  for (const exportName in htmlComponents) {
+    const exportedValue = (htmlComponents as any)[exportName];
+    if (exportedValue && exportedValue.className) {
+      componentSpecs.push(exportedValue);
     }
   }
 
-  // Check for CSS pseudo-classes (complete list)
-  const cssPseudoClasses = [":hover", ":focus", ":active", ":disabled", ":enabled", ":checked", ":unchecked", ":indeterminate", ":valid", ":invalid", ":required", ":optional", ":read-only", ":read-write", ":first-child", ":last-child", ":first-of-type", ":last-of-type", ":only-child", ":only-of-type", ":nth-child", ":nth-of-type", ":not", ":empty", ":target", ":visited", ":link", ":-webkit-autofill"];
+  // Check if selector contains any other component class names
+  for (const spec of componentSpecs) {
+    // Skip the current component to avoid false positives
+    if (currentComponent && spec.className === currentComponent.className) {
+      continue;
+    }
 
-  return cssPseudoClasses.some((pseudoClass) => selector.includes(pseudoClass));
+    // Check if this component's class name appears in the selector
+    if (selectorClasses.includes(spec.className)) {
+      detectedComponents.push(spec.className);
+    }
+  }
+
+  return detectedComponents;
 }
 
 /**
- * Calculate dynamic specificity threshold starting from 0
- * Simplified version focused on the component's own properties
+ * Strip :not() selectors from a CSS selector string
+ * This is used to clean the selector before passing it to detection functions
  */
-function calculateSpecificityThreshold(selector: string, component: any | null = null, enforceBaseClassName: boolean = true): number {
-  let threshold = 0;
+function stripNotSelectors(selector: string): string {
+  try {
+    let result = selector;
 
-  // Exception for global styles which are not part of the component
-  const rootDetected = selector.includes(":root") || selector.includes("html");
-  if (rootDetected) {
-    threshold += 10;
+    selectorParser((selectors) => {
+      selectors.each((sel: Selector) => {
+        sel.walkPseudos((pseudo) => {
+          if (pseudo.value === ':not') {
+            pseudo.remove();
+          }
+        });
+      });
+      result = selectors.toString();
+    }).processSync(selector);
+
+    return result;
+  } catch (error) {
+    console.warn(`Failed to strip :not() from selector "${selector}":`, error);
+    return selector;
+  }
+}
+
+/**
+ * Strip :where() selectors from a CSS selector string
+ * This is used to clean the selector before passing it to detection functions
+ * Since :where() has zero specificity, its contents should not contribute to threshold calculations
+ */
+function stripWhereSelectors(selector: string): string {
+  try {
+    let result = selector;
+
+    selectorParser((selectors) => {
+      selectors.each((sel: Selector) => {
+        sel.walkPseudos((pseudo) => {
+          if (pseudo.value === ':where') {
+            pseudo.remove();
+          }
+        });
+      });
+      result = selectors.toString();
+    }).processSync(selector);
+
+    return result;
+  } catch (error) {
+    console.warn(`Failed to strip :where() from selector "${selector}":`, error);
+    return selector;
+  }
+}
+
+/**
+ * Strip both :not() and :where() selectors from a CSS selector string
+ * This is used to clean the selector before passing it to detection functions
+ * - :not() content contributes to specificity but is handled separately
+ * - :where() content has zero specificity and should be completely ignored
+ */
+function stripSpecialSelectors(selector: string): string {
+  try {
+    let result = selector;
+
+    selectorParser((selectors) => {
+      selectors.each((sel: Selector) => {
+        sel.walkPseudos((pseudo) => {
+          if (pseudo.value === ':not' || pseudo.value === ':where') {
+            pseudo.remove();
+          }
+        });
+      });
+      result = selectors.toString();
+    }).processSync(selector);
+
+    return result;
+  } catch (error) {
+    console.warn(`Failed to strip special selectors from selector "${selector}":`, error);
+    return selector;
+  }
+}
+
+/**
+ * Detect and calculate specificity contribution from :not() pseudo-classes
+ *
+ * This function handles the complex CSS specificity rules for :not() selectors:
+ * - :not() itself doesn't contribute to specificity
+ * - The content inside :not() does contribute
+ * - For comma-separated selectors inside :not(), only the most specific one counts
+ *
+ * Examples:
+ * - :not(:first-child) → counts as 1 pseudo-class
+ * - :not(:first-child, :last-child) → counts as 1 pseudo-class (highest of the two)
+ * - :not(.class1, .class2) → counts as 1 class (both have same specificity)
+ *
+ * Returns specificity as [IDs, classes/attributes/pseudo-classes, types/pseudo-elements]
+ */
+function detectNot(selector: string, component: any | null = null): number[] {
+  let totalIds = 0;
+  let totalClasses = 0;
+  let totalElements = 0;
+
+  try {
+    selectorParser((selectors) => {
+      selectors.each((sel: Selector) => {
+        sel.walk((node) => {
+          if (node.type === 'pseudo') {
+            const pseudo = node as Pseudo;
+            if (pseudo.value === ':not' && pseudo.nodes) {
+              // For :not() with comma-separated selectors, only the most specific counts
+              let maxSpecificity = [0, 0, 0];
+
+              // Calculate threshold for each selector inside :not()
+              pseudo.nodes.forEach((notNode) => {
+                if (notNode.type === 'selector') {
+                  const notSelector = notNode as Selector;
+                  const notSelectorString = notSelector.toString().trim();
+
+                  if (notSelectorString) {
+                    // Recursively calculate threshold for the content inside :not()
+                    const notThreshold = calculateSpecificityThreshold(notSelectorString, component, false);
+
+                    // Keep only the most specific (highest specificity)
+                    maxSpecificity = getMoreSpecific(notThreshold, maxSpecificity);
+                  }
+                }
+              });
+
+              // Add the most specific threshold values to our total
+              totalIds += maxSpecificity[0];
+              totalClasses += maxSpecificity[1];
+              totalElements += maxSpecificity[2];
+            }
+          }
+        });
+      });
+    }).processSync(selector);
+  } catch (error) {
+    console.warn(`Failed to parse selector for :not() detection "${selector}":`, error);
   }
 
-  if (selector.includes("%")) {
-    threshold += 1;
-  }
+  return [totalIds, totalClasses, totalElements];
+}
 
-  // Base component class (+10) - foundational requirement
-  const hasBaseClass = hasClassName(selector, component.className);
+/**
+ * Calculate dynamic specificity threshold using standard CSS specificity as base
+ * Returns specificity as [IDs, classes/attributes/pseudo-classes, types/pseudo-elements]
+ */
+function calculateSpecificityThreshold(selector: string, component: any | null = null, enforceBaseClassName: boolean = true): number[] {
+  let ids = 0;
+  let classes = 0;
+  let elements = 0;
+
+  // Maximum allowed component instances
+  const MAX_ALLOWED_INSTANCES = 2;
+
+  // Strip :not() and :where() selectors from the main selector for detection functions
+  // :not() is handled separately, :where() should be completely ignored due to zero specificity
+  const strippedSelector = stripSpecialSelectors(selector);
+
+  // Count how many times the base component class appears in the selector
+  const baseClassCount = countClassOccurrences(strippedSelector, component.className);
+  const hasBaseClass = baseClassCount > 0;
+
   if (!enforceBaseClassName || hasBaseClass) {
     if (hasBaseClass) {
-      threshold += 10;
+      // Add classes based on the number of base class instances, respecting the limit
+      classes += Math.min(baseClassCount, MAX_ALLOWED_INSTANCES);
     }
 
-    // Component variants (+10)
-    const variantsDetected = detectVariants(selector, component);
-    if (variantsDetected) {
-      threshold += 10;
-    }
+    // Component variants (count each detected variant class)
+    const detectedVariants = detectVariants(strippedSelector, component);
+    classes += detectedVariants.length;
 
-    // Component options (+10)
-    const optionsDetected = detectOptions(selector, component);
-    if (optionsDetected) {
-      threshold += 10;
-    }
+    // Component options (count each detected option class)
+    const detectedOptions = detectOptions(strippedSelector, component);
+    classes += detectedOptions.length;
 
-    // Component states (+10)
-    const statesDetected = detectStates(selector, component);
-    if (statesDetected) {
-      threshold += 10;
-    }
+    // Component states (count each detected state class and pseudo-class)
+    const detectedStates = detectStates(strippedSelector, component);
+    classes += detectedStates.length;
+
+    // Other components (count each detected component class)
+    const detectedComponents = detectComponents(strippedSelector, component);
+    classes += detectedComponents.length;
   }
 
-  // :not() selectors (+10) - matches the actual CSS specificity weight of pseudo-classes
-  if (selector.includes(":not(")) {
-    threshold += 10;
+  // Handle :not() selectors using dedicated function
+  const notSpecificity = detectNot(selector, component);
+  ids += notSpecificity[0];
+  classes += notSpecificity[1];
+  elements += notSpecificity[2];
+
+  // Check for pseudo-elements using proper parsing (on stripped selector)
+  if (hasPseudoElement(strippedSelector)) {
+    elements += 1;
   }
 
-  // Pseudo-elements (+1) - comprehensive list including vendor-specific ones
-  const pseudoElementPattern = /::(before|after|first-line|first-letter|placeholder|selection|backdrop|marker|file-selector-button|-webkit-[-\w]+|-moz-[-\w]+|-ms-[-\w]+)/;
-  if (pseudoElementPattern.test(selector)) {
-    threshold += 1;
+  // Check for DOM elements using proper parsing (on stripped selector)
+  if (hasElements(strippedSelector)) {
+    elements += 1;
   }
 
-  // DOM elements (+1 per element) - match actual element selectors, not class names
-  const elementMatches = selector.match(/(?:^|[\s>+~])(svg|input|span|div|button|a|i|em|strong|p|h[1-6]|ul|li|table|tr|td|th|form|label|select|textarea|img)(?=[\s>+~#.[:]|$)/g);
-  if (elementMatches && elementMatches.length) {
-    threshold += 1;
-  }
-
-  return threshold;
+  return [ids, classes, elements];
 }
 
 // ESM exports
-export { calculateSpecificity, calculateSpecificityThreshold, getComponentSelectors };
-
-// CommonJS compatibility
-module.exports = {
+export {
   calculateSpecificity,
   calculateSpecificityThreshold,
   getComponentSelectors,
+  compareSpecificity,
+  getMoreSpecific,
+  parseSelector,
+  hasClassName,
+  countClassOccurrences,
+  getClassNames,
+  hasPseudoClass,
+  countPseudoClassOccurrences,
+  hasPseudoElement,
+  hasElements,
+  stripNotSelectors,
+  stripWhereSelectors,
+  stripSpecialSelectors,
+  detectNot
 };
