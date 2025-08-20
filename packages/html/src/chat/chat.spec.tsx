@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { Textarea } from '../textarea';
 import { IconButton } from '../button';
 import { ChatSendButton } from './';
+import { SpeechToTextButton } from '../speech-to-text-button';
 
 const CHAT_CLASSNAME = 'k-chat';
 
@@ -22,7 +23,7 @@ export type KendoChatProps = {
 }
 
 const defaultTools = <>
-    <IconButton key="microphone-outline" icon="microphone-outline" fillMode="clear" />
+    <SpeechToTextButton fillMode="clear" />
     <IconButton key="paperclip" icon="paperclip" fillMode="clear" />
 </>;
 
