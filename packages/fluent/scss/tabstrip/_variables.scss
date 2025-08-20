@@ -129,13 +129,13 @@ $kendo-tabstrip-item-hover-text: var( --kendo-tabstrip-item-hover-text, #{k-colo
 $kendo-tabstrip-item-hover-border: var( --kendo-tabstrip-item-hover-border, #{k-color(base-hover)} ) !default;
 /// The background color of the selected TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-selected-bg: var( --kendo-tabstrip-item-selected-bg, color-mix(in srgb, #{k-color(on-app-surface) 12%, transparent}) ) !default;
+$kendo-tabstrip-item-selected-bg: var( --kendo-tabstrip-item-selected-bg, transparent ) !default;
 /// The text color of the selected TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-selected-text: var( --kendo-tabstrip-item-selected-text, #{k-color(on-app-surface)} ) !default;
+$kendo-tabstrip-item-selected-text: var( --kendo-tabstrip-item-selected-text, inherit ) !default;
 /// The border color of the selected TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-selected-border: var( --kendo-tabstrip-item-selected-border, #{k-color(primary)} ) !default;
+$kendo-tabstrip-item-selected-border: var( --kendo-tabstrip-item-selected-border, inherit ) !default;
 /// The font weight of the selected TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-selected-font-weight: var( --kendo-tabstrip-item-selected-font-weight, var( --kendo-font-weight-semibold, 600 ) ) !default;
