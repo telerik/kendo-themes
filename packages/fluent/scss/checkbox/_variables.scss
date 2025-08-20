@@ -89,7 +89,7 @@ $kendo-checkbox-hover-border: var( --kendo-checkbox-hover-border, $kendo-checkbo
 $kendo-checkbox-checked-bg: var( --kendo-checkbox-checked-bg, k-color(primary) ) !default;
 /// The text color of the checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-checked-text: var( --kendo-checkbox-checked-text, k-color(app-surface) ) !default;
+$kendo-checkbox-checked-text: var( --kendo-checkbox-checked-text, k-color(surface-alt) ) !default;
 /// The border color of the checked CheckBox.
 /// @group checkbox
 $kendo-checkbox-checked-border: var( --kendo-checkbox-checked-border, $kendo-checkbox-checked-bg ) !default;
