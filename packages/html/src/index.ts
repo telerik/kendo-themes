@@ -7,6 +7,7 @@ export * from './icon/index';
 // Primitive components
 export * from './action-buttons/index';
 export * from './input/index';
+export * from './input-group/index';
 // export * from './picker/index';
 export * from './popup/index';
 export * from './list/index';

@@ -213,17 +213,17 @@ import { describe, it, expect } from "@jest/globals";
   [ActionButtons, "action-buttons"],
   [Input, "input"],
 ].map(([Component, folder, mixin = folder]) => {
-  describe("Bootstrap theme", () => {
+  describe("Fluent theme", () => {
     describe(`${Component.name} specificity`, () => {
-      // Compile the bootstrap theme - note: bootstrap doesn't have _layout.scss
+      // Compile the fluent theme - fluent has component-level _layout.scss and _variables.scss files
       const result = sass.compileString(
         `
-      @use '../packages/${process.env.THEME}/scss/${folder}/_variables.scss' as *;
+        @use '../packages/${process.env.THEME}/scss/${folder}/_variables.scss' as *;
       @use '../packages/${process.env.THEME}/scss/${folder}/_layout.scss' as *;
       @use '../packages/${process.env.THEME}/scss/${folder}/_theme.scss' as *;
 
-      @include kendo-${mixin}--layout();
-      @include kendo-${mixin}--theme();
+    @include kendo-${mixin}--layout();
+    @include kendo-${mixin}--theme();
     `,
         {
           loadPaths: [path.resolve(__dirname, "../../"), path.resolve(__dirname, "../../node_modules")],
@@ -239,7 +239,9 @@ import { describe, it, expect } from "@jest/globals";
         // Switch third argument to true for Q4 release of the themes.
         const expectedSpecificity = calculateSpecificityThreshold(selector, Component, false);
 
-        it(`"${selector}" ([${specificity}])`, () => {
+        it(specificity !== expectedSpecificity
+          ? `"${selector}" (Expected: [${expectedSpecificity}], Actual: ${specificity})`
+          : `"${selector}" ([${specificity}])`, () => {
           try {
             expect(`[${String(specificity)}]`).toEqual(`[${String(expectedSpecificity)}]`);
           } catch (error) {

@@ -213,10 +213,11 @@ import { describe, it, expect } from "@jest/globals";
   [ActionButtons, "action-buttons"],
   [Input, "input"],
 ].map(([Component, folder, mixin = folder]) => {
-  describe(`${folder} specificity`, () => {
-    // Maybe compile the whole theme?
-    const result = sass.compileString(
-      `
+  describe("Default theme", () => {
+    describe(`${Component.name} specificity`, () => {
+      // Maybe compile the whole theme?
+      const result = sass.compileString(
+        `
       @use '../packages/${process.env.THEME}/scss/${folder}/_variables.scss' as *;
       @use '../packages/${process.env.THEME}/scss/${folder}/_theme.scss' as *;
       @use '../packages/${process.env.THEME}/scss/${folder}/_layout.scss' as *;
@@ -224,27 +225,27 @@ import { describe, it, expect } from "@jest/globals";
     @include kendo-${mixin}--layout();
     @include kendo-${mixin}--theme();
     `,
-      {
-        loadPaths: [path.resolve(__dirname, "../../"), path.resolve(__dirname, "../../node_modules")],
-        sourceMap: true,
-      }
-    );
-
-    const selectors = getComponentSelectors(result.css, Component, {
-      minSpecificity: 0,
-      sourceMap: result.sourceMap,
-    });
-
-    selectors.forEach(({ selector, specificityValue, sourceLocation }) => {
-      // Switch third argument to true for Q4 release of the themes.
-      const expectedSpecificity = calculateSpecificityThreshold(selector, Component, false);
-
-      it(`"${selector} (Expected: ${expectedSpecificity}, Actual: ${specificityValue})"`, () => {
-        try {
-          expect(specificityValue).toBe(expectedSpecificity);
-        } catch (error) {
-          throw new Error(`${error.message}\nSource: ${sourceLocation}`);
+        {
+          loadPaths: [path.resolve(__dirname, "../../"), path.resolve(__dirname, "../../node_modules")],
+          sourceMap: true,
         }
+      );
+
+      const selectors = getComponentSelectors(result.css, Component, {
+        sourceMap: result.sourceMap,
+      });
+
+      selectors.forEach(({ selector, specificity, sourceLocation }) => {
+        // Switch third argument to true for Q4 release of the themes.
+        const expectedSpecificity = calculateSpecificityThreshold(selector, Component, false);
+
+        it(`"${selector}" ([${specificity}])`, () => {
+          try {
+            expect(`[${String(specificity)}]`).toEqual(`[${String(expectedSpecificity)}]`);
+          } catch (error) {
+            throw new Error(`${error.message}\nSource: ${sourceLocation}`);
+          }
+        });
       });
     });
   });
