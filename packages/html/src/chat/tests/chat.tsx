@@ -27,12 +27,7 @@ export default () =>(
                     <ChatMessageGroup type="sender" avatar={null}>
                         <ChatMessage text={
                             <>
-                                Here you go, mate<br />
-                                <a href="https://www.myportfolio.com/alex_barton" target="_blank" rel="noopener noreferrer">
-                                    www.myportfolio.com/alex_barton
-                                </a>
-                                <br />
-                                Let me know if you have any problem opening it.
+                                Here you go, mate <a href="https://www.myportfolio.com/alex_barton" target="_blank" rel="noopener noreferrer">www.myportfolio.com/alex_barton</a> Let me know if you have any problem opening it.
                             </>
                         } />
                     </ChatMessageGroup>
@@ -43,12 +38,7 @@ export default () =>(
                     <ChatMessageGroup avatar={null}>
                         <ChatMessage text={
                             <>
-                                Here you go, mate<br />
-                                <a href="https://www.myportfolio.com/alex_barton" target="_blank" rel="noopener noreferrer">
-                                    www.myportfolio.com/alex_barton
-                                </a>
-                                <br />
-                                Let me know if you have any problem opening it.
+                                Here you go, mate <a href="https://www.myportfolio.com/alex_barton" target="_blank" rel="noopener noreferrer">www.myportfolio.com/alex_barton</a> Let me know if you have any problem opening it.
                             </>
                         } />
                     </ChatMessageGroup>
