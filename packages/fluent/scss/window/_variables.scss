@@ -22,7 +22,7 @@ $kendo-window-line-height: var( --kendo-window-line-height, var( --kendo-line-he
 $kendo-window-titlebar-padding-x: var( --kendo-window-titlebar-padding-x, k-spacing(6) ) !default;
 /// The vertical padding of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-padding-y: var( --kendo-window-titlebar-padding-y, k-spacing(4) ) !default;
+$kendo-window-titlebar-padding-y: var( --kendo-window-titlebar-padding-y, k-spacing(6) k-spacing(4) ) !default;
 /// The width of the border of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-border-width: var( --kendo-window-titlebar-border-width, 0 ) !default;
@@ -55,7 +55,7 @@ $kendo-window-action-hover-opacity: var( --kendo-window-action-hover-opacity, 1 
 $kendo-window-inner-padding-x: var( --kendo-window-inner-padding-x, k-spacing(6) ) !default;
 /// The vertical padding of the content of the Window.
 /// @group window
-$kendo-window-inner-padding-y: var( --kendo-window-inner-padding-y, k-spacing(6) ) !default;
+$kendo-window-inner-padding-y: var( --kendo-window-inner-padding-y, k-spacing(3) ) !default;
 
 /// The horizontal padding of the Window action buttons.
 /// @group window
