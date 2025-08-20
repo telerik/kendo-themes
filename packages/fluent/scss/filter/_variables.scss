@@ -34,9 +34,12 @@ $kendo-filter-preview-operator-text: var( --kendo-filter-preview-operator-text, 
 /// @group filter
 $kendo-filter-line-bg: var( --kendo-filter-line-bg, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 
+/// The border width of the Filter.
+/// @group filter
+$kendo-filter-toolbar-focus-border-width: var( --kendo-filter-toolbar-focus-border-width, 2px ) !default;
 /// The border color of the focused Filter.
 /// @group filter
-$kendo-filter-toolbar-focus-border: var( --kendo-filter-toolbar-focus-border, #{k-color(base-emphasis)} ) !default;
+$kendo-filter-toolbar-focus-border: var( --kendo-filter-toolbar-focus-border, #{k-color(border)} ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/filter/variables" with (
     $kendo-filter-padding-x: $kendo-filter-padding-x,

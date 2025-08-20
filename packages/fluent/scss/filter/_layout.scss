@@ -3,4 +3,9 @@
 
 @mixin kendo-filter--layout() {
     @include kendo-filter--layout-base();
+
+    .k-filter .k-toolbar:focus,
+    .k-filter .k-toolbar.k-focus {
+        border-width: $kendo-filter-toolbar-focus-border-width;
+    }
 }
