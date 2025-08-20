@@ -68,6 +68,17 @@
                                 inset 0 0 0 calc( #{$kendo-button-border-width} * 5 ) transparent;
                 }
             }
+
+            // Disabled state
+            &:disabled,
+            &.k-disabled {
+                @include fill(
+                    $kendo-button-disabled-text,
+                    $kendo-button-disabled-bg,
+                    $kendo-button-disabled-border
+                );
+                box-shadow: none;
+            }
         }
     }
 

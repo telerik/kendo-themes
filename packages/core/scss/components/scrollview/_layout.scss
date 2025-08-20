@@ -120,8 +120,8 @@
             height: calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-spacing} );
             display: block;
             position: absolute;
-            inset-block-start: 50%;
-            inset-inline-start: 50%;
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
             pointer-events: initial;
             border-radius: 0;
