@@ -360,8 +360,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-flag-text</td>
     <td>String</td>
-    <td><code>var( --kendo-timeline-flag-text, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-timeline-flag-text, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var( --kendo-timeline-flag-text, k-color(on-primary) )</code></td>
+    <td><code>var(--kendo-timeline-flag-text, var(--kendo-color-on-primary, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Timeline flag.</div></div>

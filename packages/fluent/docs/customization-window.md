@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-titlebar-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-window-titlebar-padding-y, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-window-titlebar-padding-y, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>var( --kendo-window-titlebar-padding-y, k-spacing(6) k-spacing(4) )</code></td>
+    <td><code>var(--kendo-window-titlebar-padding-y, var(--kendo-spacing-6, 1.5rem) var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Window titlebar.</div></div>
@@ -190,8 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-inner-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-window-inner-padding-y, k-spacing(6) )</code></td>
-    <td><code>var(--kendo-window-inner-padding-y, var(--kendo-spacing-6, 1.5rem))</code></td>
+    <td><code>var( --kendo-window-inner-padding-y, k-spacing(3) )</code></td>
+    <td><code>var(--kendo-window-inner-padding-y, var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the content of the Window.</div></div>

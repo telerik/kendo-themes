@@ -260,8 +260,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-event-text</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-event-text, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-scheduler-event-text, var(--kendo-color-app-surface, #fafafa))</code></td>
+    <td><code>var( --kendo-scheduler-event-text, k-color(on-primary) )</code></td>
+    <td><code>var(--kendo-scheduler-event-text, var(--kendo-color-on-primary, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Scheduler event.</div></div>
@@ -361,7 +361,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-event-selected-text</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-event-selected-text, $kendo-scheduler-event-text )</code></td>
-    <td><code>var(--kendo-scheduler-event-selected-text, var(--kendo-scheduler-event-text, var(--kendo-color-app-surface, #fafafa)))</code></td>
+    <td><code>var(--kendo-scheduler-event-selected-text, var(--kendo-scheduler-event-text, var(--kendo-color-on-primary, #ffffff)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Scheduler event.</div></div>

@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-otp-sm-input-width</td>
     <td>String</td>
     <td><code>var( --kendo-otp-sm-input-width, #{$kendo-input-sm-calc-size} )</code></td>
-    <td><code>var(--kendo-otp-sm-input-width, calc(var(--kendo-line-height-sm, normal) * 1em + calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px) * 2 + 1px * 2))</code></td>
+    <td><code>var(--kendo-otp-sm-input-width, calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px) * 2 + 1px * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small OTP separator.</div></div>

@@ -130,8 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-progressbar-bg, #{k-color(secondary)} )</code></td>
-    <td><code>var(--kendo-progressbar-bg, var(--kendo-color-secondary, #ebebeb))</code></td>
+    <td><code>var( --kendo-progressbar-bg, #{k-color(secondary-on-surface)} )</code></td>
+    <td><code>var(--kendo-progressbar-bg, var(--kendo-color-secondary-on-surface, #616161))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ProgressBar.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-progressbar-border</td>
     <td>String</td>
     <td><code>var( --kendo-progressbar-border, #{$kendo-progressbar-bg} )</code></td>
-    <td><code>var(--kendo-progressbar-border, var(--kendo-progressbar-bg, var(--kendo-color-secondary, #ebebeb)))</code></td>
+    <td><code>var(--kendo-progressbar-border, var(--kendo-progressbar-bg, var(--kendo-color-secondary-on-surface, #616161)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ProgressBar.</div></div>
@@ -361,7 +361,7 @@ The following table lists the available variables for customization.
     <td>$kendo-circular-progressbar-scale-stroke</td>
     <td>String</td>
     <td><code>var( --kendo-circular-progressbar-scale-stroke, #{$kendo-progressbar-bg} )</code></td>
-    <td><code>var(--kendo-circular-progressbar-scale-stroke, var(--kendo-progressbar-bg, var(--kendo-color-secondary, #ebebeb)))</code></td>
+    <td><code>var(--kendo-circular-progressbar-scale-stroke, var(--kendo-progressbar-bg, var(--kendo-color-secondary-on-surface, #616161)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The scale stroke background color of the circular ProgressBar.</div></div>

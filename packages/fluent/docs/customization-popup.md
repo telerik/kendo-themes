@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-popup-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-popup-shadow, var( --kendo-box-shadow-depth-5, none ) )</code></td>
-    <td><code>var(--kendo-popup-shadow, var(--kendo-box-shadow-depth-5, none))</code></td>
+    <td><code>var( --kendo-popup-shadow, k-elevation(5) )</code></td>
+    <td><code>var(--kendo-popup-shadow, var(--kendo-elevation-5, 0 8px 16px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.12)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow around the popup.</div></div>

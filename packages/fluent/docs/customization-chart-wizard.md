@@ -30,8 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-chart-wizard-icon-area-color</td>
     <td>String</td>
-    <td><code>var( --kendo-chart-wizard-icon-area-color, k-color(primary) )</code></td>
-    <td><code>var(--kendo-chart-wizard-icon-area-color, var(--kendo-color-primary, #0f6cbd))</code></td>
+    <td><code>var( --kendo-chart-wizard-icon-area-color, k-color(primary-on-subtle) )</code></td>
+    <td><code>var(--kendo-chart-wizard-icon-area-color, var(--kendo-color-primary-on-subtle, #0a2e4a))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the area around the chart type icon.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chart-wizard-icon-area-selected-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-chart-wizard-icon-area-selected-shadow, inset 0 0 0 1px $kendo-chart-wizard-icon-area-color )</code></td>
-    <td><code>var(--kendo-chart-wizard-icon-area-selected-shadow, inset 0 0 0 1px var(--kendo-chart-wizard-icon-area-color, var(--kendo-color-primary, #0f6cbd)))</code></td>
+    <td><code>var(--kendo-chart-wizard-icon-area-selected-shadow, inset 0 0 0 1px var(--kendo-chart-wizard-icon-area-color, var(--kendo-color-primary-on-subtle, #0a2e4a)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the selected area around the chart type icon.</div></div>
