@@ -101,9 +101,6 @@
         &:focus,
         &.k-focus,
         &:focus-within {
-            color: $kendo-picker-focus-text;
-            background-color: $kendo-picker-focus-bg;
-
             &::after {
                 border-color: $kendo-picker-focus-border;
             }
