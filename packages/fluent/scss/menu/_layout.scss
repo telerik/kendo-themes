@@ -32,6 +32,11 @@
         }
     }
 
+    .k-menu-group {
+        padding: k-spacing(1);
+        gap: k-spacing(0.5);
+    }
+
     // Sub menu group focus styles
     .k-menu-group,
     .k-menu.k-context-menu {
