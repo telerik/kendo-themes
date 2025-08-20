@@ -89,7 +89,7 @@ $kendo-toolbar-outline-scroll-overlay: var( --kendo-toolbar-outline-scroll-overl
 $kendo-toolbar-flat-text: var( --kendo-toolbar-flat-text, null ) !default;
 /// The color of the border around the flat Toolbar.
 /// @group toolbar
-$kendo-toolbar-flat-border: var( --kendo-toolbar-flat-border, transparent ) !default;
+$kendo-toolbar-flat-border: var( --kendo-toolbar-flat-border, transparent transparent color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
 /// The left and right scroll overlay of the flat Toolbar.
 /// @group toolbar
 $kendo-toolbar-flat-scroll-overlay: var( --kendo-toolbar-flat-scroll-overlay, #{k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)} ) !default;
