@@ -13,6 +13,12 @@
         }
     }
 
+    .k-window-content:first-child,
+    .k-window-content:last-child {
+        padding-block: $kendo-window-inner-padding-y;
+        padding-inline: $kendo-window-inner-padding-x;
+    }
+
     // Title bar title text
     .k-window-title {
         font-weight: $kendo-window-title-font-weight;

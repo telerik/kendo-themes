@@ -119,6 +119,8 @@
     .k-window-content + .k-prompt-container {
         margin-block-start: - list.slash( $kendo-window-inner-padding-y, 2 );
     }
+
+    // TODO: Check if we can remove
     .k-window-content:first-child {
         padding-block-start: clamp( #{$kendo-window-inner-padding-y}, #{$kendo-window-titlebar-padding-y}, #{$kendo-window-titlebar-padding-y} );
     }
