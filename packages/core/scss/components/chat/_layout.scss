@@ -173,6 +173,13 @@
         text-overflow: ellipsis;
         overflow: hidden;
         flex-shrink: 0;
+
+        word-wrap: break-word;
+        white-space: pre-wrap;
+
+        &:has(.k-skeleton-container) {
+            white-space: normal;
+        }
     }
 
     // Full-width message
@@ -194,13 +201,13 @@
         }
     }
 
-    .k-chat-bubble.k-expanded {
-        white-space: normal;
-    }
-
     .k-chat-bubble.k-bubble-expandable:not(.k-expanded) {
         .k-bubble-content {
             height: calc( $kendo-chat-line-height * $kendo-chat-font-size);
+        }
+
+        .k-chat-bubble-text {
+            white-space: nowrap;
         }
     }
 
@@ -236,7 +243,6 @@
         max-width: 100%;
         overflow: hidden;
         overflow-wrap: break-word;
-        word-break: normal;
         text-align: start;
 
         .k-bubble-content {

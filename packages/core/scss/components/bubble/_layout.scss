@@ -21,7 +21,7 @@
             color: inherit;
             text-decoration: underline;
         }
-        
+
         &:hover,
         &.k-hover {
             cursor: pointer;
@@ -34,7 +34,7 @@
         overflow: hidden;
 
         &.k-expanded {
-            white-space: normal
+            white-space: normal;
         }
 
         .k-bubble-content {
