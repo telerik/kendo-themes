@@ -153,14 +153,6 @@
         .k-input-#{$size},
         .k-picker-#{$size} {
 
-            .k-input-values {
-                padding: 0;
-            }
-            .k-input-values > .k-searchbar,
-            .k-input-values > .k-input-inner {
-                margin: 0;
-            }
-
             .k-input-spinner {
                 width: if( $kendo-use-input-spinner-width, var( --kendo-input-spinner-width, #{$_button-width} ), auto );
 
