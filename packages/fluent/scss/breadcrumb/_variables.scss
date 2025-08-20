@@ -212,13 +212,13 @@ $kendo-breadcrumb-current-item-border: null  !default;
 
 /// The vertical padding of the small Breadcrumb link icon.
 /// @group breadcrumb
-$kendo-breadcrumb-sm-icon-link-padding-y: var(--kendo-breadcrumb-sm-icon-link-padding-y, k-spacing(2) ) !default;
+$kendo-breadcrumb-sm-icon-link-padding-y: var(--kendo-breadcrumb-sm-icon-link-padding-y, k-spacing(0.5) ) !default;
 /// The vertical padding of the medium Breadcrumb link icon.
 /// @group breadcrumb
-$kendo-breadcrumb-md-icon-link-padding-y: var(--kendo-breadcrumb-md-icon-link-padding-y, k-spacing(2.5) ) !default;
+$kendo-breadcrumb-md-icon-link-padding-y: var(--kendo-breadcrumb-md-icon-link-padding-y, k-spacing(1.5) ) !default;
 /// The vertical padding of the large Breadcrumb link icon.
 /// @group breadcrumb
-$kendo-breadcrumb-lg-icon-link-padding-y: var(--kendo-breadcrumb-lg-icon-link-padding-y, k-spacing(3) ) !default;
+$kendo-breadcrumb-lg-icon-link-padding-y: var(--kendo-breadcrumb-lg-icon-link-padding-y, k-spacing(2) ) !default;
 
 /// The horizontal padding of the small Breadcrumb link icon.
 /// @group breadcrumb
@@ -228,10 +228,10 @@ $kendo-breadcrumb-sm-icon-link-padding-x: var( --kendo-breadcrumb-icon-link-padd
 $kendo-breadcrumb-md-icon-link-padding-x: var( --kendo-breadcrumb-icon-link-padding-x, $kendo-breadcrumb-md-icon-link-padding-y ) !default;
 /// The horizontal padding of the large Breadcrumb link icon.
 /// @group breadcrumb
-$kendo-breadcrumb-lg-icon-link-padding-x: var( --kendo-breadcrumb-icon-link-padding-x, $kendo-breadcrumb-lg-icon-link-padding-y ) !default;
+$kendo-breadcrumb-lg-icon-link-padding-x: var( --kendo-breadcrumb-icon-link-padding-x, k-spacing(2.5) ) !default;
 
 // Root link spacing
-$kendo-breadcrumb-link-icon-spacing: var( --kendo-icon-spacing, $kendo-icon-spacing ) !default;
+$kendo-breadcrumb-link-icon-spacing: k-spacing(0.5) !default;
 
 
 /// The sizes map for the Breadcrumb.
