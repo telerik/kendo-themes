@@ -7,7 +7,10 @@ const className = "k-breadcrumb";
 
 const dependencyClassNames = ["k-input", "k-svg-icon"];
 
-const expected = [];
+const expected = [
+    "kendo-breadcrumb-font-size", // Variable customizations work, but is used by another variable.
+    "kendo-breadcrumb-line-height", // Variable customizations work, but is used by another variable.
+];
 
 const unexpected = [];
 
