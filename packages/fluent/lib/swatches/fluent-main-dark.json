@@ -139,7 +139,7 @@
                 "primary-on-subtle": {
                     "name": "Primary On Subtle",
                     "type": "color",
-                    "value": "#0A2E4A"
+                    "value": "#EBF3FC"
                 },
                 "on-primary": {
                     "name": "On Primary",
@@ -149,7 +149,7 @@
                 "primary-on-surface": {
                     "name": "Primary On Surface",
                     "type": "color",
-                    "value": "#0F6CBD"
+                    "value": "#479EF5"
                 },
                 "secondary-subtle": {
                     "name": "Secondary Subtle",
@@ -554,52 +554,52 @@
                 "inverse-subtle": {
                     "name": "Inverse Subtle",
                     "type": "color",
-                    "value": "#d2d0ce"
+                    "value": "#ADADAD"
                 },
                 "inverse-subtle-hover": {
                     "name": "Inverse Subtle Hover",
                     "type": "color",
-                    "value": "#c8c6c4"
+                    "value": "#999999"
                 },
                 "inverse-subtle-active": {
                     "name": "Inverse Subtle Active",
                     "type": "color",
-                    "value": "#b3b0ad"
+                    "value": "#757575"
                 },
                 "inverse": {
                     "name": "Inverse",
                     "type": "color",
-                    "value": "#faf9f8"
+                    "value": "#D6D6D6"
                 },
                 "inverse-hover": {
                     "name": "Inverse Hover",
                     "type": "color",
-                    "value": "#f3f2f1"
+                    "value": "#ADADAD"
                 },
                 "inverse-active": {
                     "name": "Inverse Active",
                     "type": "color",
-                    "value": "#edebe9"
+                    "value": "#999999"
                 },
                 "inverse-emphasis": {
                     "name": "Inverse Emphasis",
                     "type": "color",
-                    "value": "#e1dfdd"
+                    "value": "#525252"
                 },
                 "inverse-on-subtle": {
                     "name": "Inverse On Subtle",
                     "type": "color",
-                    "value": "#323130"
+                    "value": "#292929"
                 },
                 "on-inverse": {
                     "name": "On Inverse",
                     "type": "color",
-                    "value": "#1b1a19"
+                    "value": "#292929"
                 },
                 "inverse-on-surface": {
                     "name": "Inverse On Surface",
                     "type": "color",
-                    "value": "#ffffff"
+                    "value": "#ADADAD"
                 },
                 "series-a": {
                     "name": "Series A",

@@ -145,7 +145,7 @@ $kendo-tabstrip-item-selected-font-weight: var( --kendo-tabstrip-item-selected-f
 $kendo-tabstrip-item-focus-shadow: var( --kendo-tabstrip-item-focus-shadow, #{$kendo-list-item-focus-shadow} ) !default;
 /// The text color of the dragged TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-dragging-text: var( --kendo-tabstrip-item-dragging-text, #{k-color(primary)} ) !default;
+$kendo-tabstrip-item-dragging-text: var( --kendo-tabstrip-item-dragging-text, #{k-color(primary-on-surface)} ) !default;
 
 // Indicator
 /// The border width of the TabStrip indicator.
@@ -153,7 +153,7 @@ $kendo-tabstrip-item-dragging-text: var( --kendo-tabstrip-item-dragging-text, #{
 $kendo-tabstrip-indicator-size: var( --kendo-tabstrip-indicator-size, #{k-spacing(1)} ) !default;
 /// The border color of the TabStrip ripple.
 /// @group tabstrip
-$kendo-tabstrip-indicator-color: var( --kendo-tabstrip-indicator-color, #{k-color(primary)} ) !default;
+$kendo-tabstrip-indicator-color: var( --kendo-tabstrip-indicator-color, #{k-color(primary-on-surface)} ) !default;
 
 /// The horizontal padding of the TabStrip content.
 /// @group tabstrip

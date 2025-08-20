@@ -113,7 +113,7 @@ $kendo-timeline-horizontal-flag-min-width: var( --kendo-timeline-horizontal-flag
 $kendo-timeline-flag-bg: var( --kendo-timeline-flag-bg, k-color(primary) ) !default;
 /// The text color of the Timeline flag.
 /// @group timeline
-$kendo-timeline-flag-text: var( --kendo-timeline-flag-text, k-color(surface-alt) ) !default;
+$kendo-timeline-flag-text: var( --kendo-timeline-flag-text, k-color(on-primary) ) !default;
 /// The width of the Timeline's flag callout.
 /// @group timeline
 $kendo-timeline-flag-callout-width: var( --kendo-timeline-flag-callout-width, k-spacing(2.5) ) !default;
