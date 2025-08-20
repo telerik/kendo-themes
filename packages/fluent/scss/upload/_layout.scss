@@ -16,6 +16,10 @@
             margin-inline-end: 0;
         }
 
+        .k-upload-files .k-file {
+            padding-block: $kendo-upload-item-padding-y;
+        }
+
         .k-file-size,
         .k-file-validation-message {
             line-height: var( --kendo-line-height-xs, normal );
