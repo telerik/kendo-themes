@@ -74,7 +74,7 @@ $kendo-switch-off-track-disabled-border: var( --kendo-switch-off-track-disabled-
 
 /// The background of the thumb when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-bg: var( --kendo-switch-off-thumb-bg, color-mix(in srgb, k-color(on-app-surface) 30%, transparent) ) !default;
+$kendo-switch-off-thumb-bg: var( --kendo-switch-off-thumb-bg, k-color(subtle) ) !default;
 /// The text color of the thumb when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-thumb-text: var( --kendo-switch-off-thumb-text, inherit ) !default;
