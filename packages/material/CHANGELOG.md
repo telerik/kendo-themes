@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0-dev.3](https://github.com/telerik/kendo-themes/compare/v12.0.0-dev.2...v12.0.0-dev.3) (2025-08-20)
+
+
+### Bug Fixes
+
+* **material:** incorrect hover styling on disabled solid button ([646e170](https://github.com/telerik/kendo-themes/commit/646e1709531573f6a5f0dcf9b1a928f7e7475259))
+
+
+
+
+
 # [12.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v12.0.0-dev.1...v12.0.0-dev.2) (2025-08-18)
 
 
