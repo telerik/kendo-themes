@@ -158,4 +158,28 @@
     .k-button-group[disabled] {
         background-color: inherit;
     }
+
+    .k-disabled,
+    :disabled {
+
+        .k-button-solid {
+            color: $kendo-button-disabled-text;
+            background-color: $kendo-button-disabled-bg;
+            border-color: $kendo-button-disabled-border;
+        }
+
+        .k-button-outline {
+            color: $kendo-button-outline-disabled-text;
+            background-color: $kendo-button-outline-disabled-bg;
+            border-color: $kendo-button-outline-disabled-border;
+        }
+
+        .k-button-flat,
+        .k-button-clear,
+        .k-button-link {
+            color: $kendo-button-flat-disabled-text;
+            background-color: $kendo-button-flat-disabled-bg;
+            border-color: $kendo-button-flat-disabled-border;
+        }
+    }
 }
