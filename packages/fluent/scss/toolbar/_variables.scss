@@ -14,13 +14,13 @@ $kendo-toolbar-lg-padding-x: calc( var( --kendo-toolbar-lg-padding-x, #{k-spacin
 
 /// The vertical padding of the small Toolbar.
 /// @group toolbar
-$kendo-toolbar-sm-padding-y: calc( var( --kendo-toolbar-sm-padding-y, #{k-spacing(0.5)} ) + 1px ) !default;
+$kendo-toolbar-sm-padding-y: calc( var( --kendo-toolbar-sm-padding-y, #{k-spacing(1.5)} ) + 1px ) !default;
 /// The vertical padding of the medium Toolbar.
 /// @group toolbar
-$kendo-toolbar-md-padding-y: calc( var( --kendo-toolbar-md-padding-y, #{k-spacing(0.5)} ) + 1px ) !default;
+$kendo-toolbar-md-padding-y: calc( var( --kendo-toolbar-md-padding-y, #{k-spacing(1.5)} ) + 1px ) !default;
 /// The vertical padding of the large Toolbar.
 /// @group toolbar
-$kendo-toolbar-lg-padding-y: calc( var( --kendo-toolbar-lg-padding-y, #{k-spacing(0.5)} ) + 1px ) !default;
+$kendo-toolbar-lg-padding-y: calc( var( --kendo-toolbar-lg-padding-y, #{k-spacing(1.5)} ) + 1px ) !default;
 
 /// The spacing between the tools of the small Toolbar.
 /// @group toolbar
@@ -97,7 +97,7 @@ $kendo-toolbar-flat-scroll-overlay: var( --kendo-toolbar-flat-scroll-overlay, #{
 
 /// The color of the separator border of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-separator-border: var( --kendo-toolbar-separator-border, inherit ) !default;
+$kendo-toolbar-separator-border: var( --kendo-toolbar-separator-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
 
 /// The width of the input in the Toolbar.
 /// @group toolbar
