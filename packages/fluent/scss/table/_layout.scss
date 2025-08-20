@@ -10,20 +10,6 @@
         font-weight: $kendo-table-header-font-weight;
     }
 
-    .k-table-group-sticky-header,
-    .k-table-group-header {
-        flex: none;
-        position: relative;
-        z-index: 1;
-
-        .k-table-th {
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-            align-content: center;
-        }
-    }
-
     .k-table-list {
 
         .k-table-row:last-child .k-table-td {
