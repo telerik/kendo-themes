@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-upload-dropzone-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-upload-dropzone-padding-x, calc( #{k-spacing(3)} + 1px ) )</code></td>
-    <td><code>var(--kendo-upload-dropzone-padding-x, calc(var(--kendo-spacing-3, 0.75rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-upload-dropzone-padding-x, #{k-spacing(3)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-upload-dropzone-padding-x, var(--kendo-spacing-3, 0.75rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Upload dropzone.</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-upload-dropzone-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-upload-dropzone-padding-y, calc( #{k-spacing(0.5)} + 1px ) )</code></td>
-    <td><code>var(--kendo-upload-dropzone-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-upload-dropzone-padding-y, #{k-spacing(0.5)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-upload-dropzone-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Upload dropzone.</div></div>
@@ -189,9 +189,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-upload-item-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-upload-item-padding-x, $kendo-upload-dropzone-padding-x )</code></td>
-    <td><code>var(--kendo-upload-item-padding-x, var(--kendo-upload-dropzone-padding-x, calc(var(--kendo-spacing-3, 0.75rem) + 1px)))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-upload-item-padding-x, #{k-spacing(3)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-upload-item-padding-x, var(--kendo-spacing-3, 0.75rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of an uploaded item.</div></div>
@@ -199,9 +199,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-upload-item-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-upload-item-padding-y, $kendo-upload-dropzone-padding-y )</code></td>
-    <td><code>var(--kendo-upload-item-padding-y, var(--kendo-upload-dropzone-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px)))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-upload-item-padding-y, #{k-spacing(0.5)} ) + 1px )</code></td>
+    <td><code>calc(var(--kendo-upload-item-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of an uploaded item.</div></div>

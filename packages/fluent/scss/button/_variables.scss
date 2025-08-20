@@ -18,13 +18,13 @@ $kendo-button-lg-padding-x: var( --kendo-button-lg-padding-x, k-spacing(4) ) !de
 
 /// The vertical padding of the small Button.
 /// @group button
-$kendo-button-sm-padding-y: var( --kendo-button-sm-padding-y, calc( #{k-spacing(0.5)} + 1px ) ) !default;
+$kendo-button-sm-padding-y: calc(var( --kendo-button-sm-padding-y, #{k-spacing(0.5)} ) + 1px) !default;
 /// The vertical padding of the medium Button.
 /// @group button
-$kendo-button-md-padding-y: var( --kendo-button-md-padding-y, calc( #{k-spacing(1)} + 1px ) ) !default;
+$kendo-button-md-padding-y: calc(var( --kendo-button-md-padding-y, #{k-spacing(1)} ) + 1px) !default;
 /// The vertical padding of the large Button.
 /// @group button
-$kendo-button-lg-padding-y: var( --kendo-button-lg-padding-y, calc( #{k-spacing(2)} + 1px ) ) !default;
+$kendo-button-lg-padding-y: calc(var( --kendo-button-lg-padding-y, #{k-spacing(2)} ) + 1px) !default;
 
 /// The font size of the small Button.
 /// @group button

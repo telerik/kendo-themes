@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-md-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-chip-padding-y, calc( #{k-spacing(1.5)} / 2 ) )</code></td>
-    <td><code>var(--kendo-chip-padding-y, calc(var(--kendo-spacing-1\.5, 0.375rem) / 2))</code></td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-chip-padding-y, #{k-spacing(1.5)} ) / 2 )</code></td>
+    <td><code>calc(var(--kendo-chip-padding-y, var(--kendo-spacing-1\.5, 0.375rem)) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Chip.</div></div>
@@ -251,7 +251,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chip-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-chip-md-line-height} * 1em + #{$kendo-chip-md-padding-y} * 2 + #{$kendo-chip-border-width} * 2 )</code></td>
-    <td><code>calc(var(--kendo-chip-line-height, var(--kendo-line-height-lg, normal)) * 1em + var(--kendo-chip-padding-y, calc(var(--kendo-spacing-1\.5, 0.375rem) / 2)) * 2 + var(--kendo-chip-border-width, 1px) * 2)</code></td>
+    <td><code>calc(var(--kendo-chip-line-height, var(--kendo-line-height-lg, normal)) * 1em + calc(var(--kendo-chip-padding-y, var(--kendo-spacing-1\.5, 0.375rem)) / 2) * 2 + var(--kendo-chip-border-width, 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Chip.</div></div>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
         line-height: $kendo-chip-lg-line-height
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","padding-y":"calc(var(--kendo-spacing-0\\.5, 0.125rem) / 2)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-lg, normal)"</li><li>md: "padding-x":"var(--kendo-chip-padding-x, var(--kendo-spacing-1\\.5, 0.375rem))","padding-y":"var(--kendo-chip-padding-y, calc(var(--kendo-spacing-1\\.5, 0.375rem) / 2))","font-size":"var(--kendo-chip-font-size, var(--kendo-font-size-sm, inherit))","line-height":"var(--kendo-chip-line-height, var(--kendo-line-height-lg, normal))"</li><li>lg: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"calc(var(--kendo-spacing-2\\.5, 0.625rem) / 2)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","padding-y":"calc(var(--kendo-spacing-0\\.5, 0.125rem) / 2)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-lg, normal)"</li><li>md: "padding-x":"var(--kendo-chip-padding-x, var(--kendo-spacing-1\\.5, 0.375rem))","padding-y":"calc(var(--kendo-chip-padding-y, var(--kendo-spacing-1\\.5, 0.375rem)) / 2)","font-size":"var(--kendo-chip-font-size, var(--kendo-font-size-sm, inherit))","line-height":"var(--kendo-chip-line-height, var(--kendo-line-height-lg, normal))"</li><li>lg: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"calc(var(--kendo-spacing-2\\.5, 0.625rem) / 2)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the Chip.</div></div>

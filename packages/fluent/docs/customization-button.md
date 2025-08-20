@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-sm-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-button-sm-padding-y, calc( #{k-spacing(0.5)} + 1px ) )</code></td>
-    <td><code>var(--kendo-button-sm-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var( --kendo-button-sm-padding-y, #{k-spacing(0.5)} ) + 1px)</code></td>
+    <td><code>calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Button.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-md-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-button-md-padding-y, calc( #{k-spacing(1)} + 1px ) )</code></td>
-    <td><code>var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var( --kendo-button-md-padding-y, #{k-spacing(1)} ) + 1px)</code></td>
+    <td><code>calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Button.</div></div>
@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-lg-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-button-lg-padding-y, calc( #{k-spacing(2)} + 1px ) )</code></td>
-    <td><code>var(--kendo-button-lg-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px))</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var( --kendo-button-lg-padding-y, #{k-spacing(2)} ) + 1px)</code></td>
+    <td><code>calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Button.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-button-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) )</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2 + var(--kendo-button-border-width, 1px) * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Button.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-button-inner-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) )</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px)) * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated inner height of the Button excluding the border width.</div></div>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
         line-height: $kendo-button-lg-line-height
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-button-sm-padding-x, var(--kendo-spacing-2, 0.5rem))","padding-y":"var(--kendo-button-sm-padding-y, calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px))","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-lg, normal)"</li><li>md: "padding-x":"var(--kendo-button-md-padding-x, var(--kendo-spacing-3, 0.75rem))","padding-y":"var(--kendo-button-md-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px))","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "padding-x":"var(--kendo-button-lg-padding-x, var(--kendo-spacing-4, 1rem))","padding-y":"var(--kendo-button-lg-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px))","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-sm, normal)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-button-sm-padding-x, var(--kendo-spacing-2, 0.5rem))","padding-y":"calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5, 0.125rem)) + 1px)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-lg, normal)"</li><li>md: "padding-x":"var(--kendo-button-md-padding-x, var(--kendo-spacing-3, 0.75rem))","padding-y":"calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "padding-x":"var(--kendo-button-lg-padding-x, var(--kendo-spacing-4, 1rem))","padding-y":"calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-sm, normal)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Button.</div></div>
