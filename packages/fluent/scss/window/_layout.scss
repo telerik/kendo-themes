@@ -13,19 +13,11 @@
         }
     }
 
-    .k-window-titlebar {
-        padding-block-start: $kendo-window-titlebar-padding-x;
-    }
-
     // Title bar title text
     .k-window-title {
         font-weight: $kendo-window-title-font-weight;
         padding-block: calc( #{$kendo-window-titlebar-padding-x} / 4 );
         margin-block: 0;
-    }
-
-    .k-window-content {
-        padding-block-start: 0;
     }
 
     // Buttons Layout
