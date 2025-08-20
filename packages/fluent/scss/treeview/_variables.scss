@@ -168,7 +168,7 @@ $kendo-treeview-item-disabled-border: var( --kendo-treeview-item-disabled-border
 $kendo-treeview-loadmore-bg: var( --kendo-treeview-loadmore-bg, transparent ) !default;
 /// The text color of the Load More button in the TreeView
 /// @group treeview
-$kendo-treeview-loadmore-text: var( --kendo-treeview-loadmore-text, k-color(primary-on-subtle) ) !default;
+$kendo-treeview-loadmore-text: var( --kendo-treeview-loadmore-text, k-color(primary-on-surface) ) !default;
 /// The border color of the Load More button in the TreeView
 /// @group treeview
 $kendo-treeview-loadmore-border: var( --kendo-treeview-loadmore-border, inherit ) !default;

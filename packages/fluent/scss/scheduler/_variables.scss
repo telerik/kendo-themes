@@ -83,7 +83,7 @@ $kendo-scheduler-event-min-height: var( --kendo-scheduler-event-min-height, calc
 $kendo-scheduler-event-bg: var( --kendo-scheduler-event-bg, k-color(primary) ) !default;
 /// The text color of the Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-text: var( --kendo-scheduler-event-text, k-color(app-surface) ) !default;
+$kendo-scheduler-event-text: var( --kendo-scheduler-event-text, k-color(on-primary) ) !default;
 /// The border color of the Scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-border: var( --kendo-scheduler-event-border, $kendo-scheduler-event-bg ) !default;
