@@ -1,5 +1,5 @@
 import "./theme.env.js";
-import { getSelectorsSpecificity, calculateSpecificityThreshold } from "../specificity-analyzer";
+import { getSelectorsSpecificity, calculateSpecificityThreshold, calculateSpecificityThresholdWithBreakdown, formatSpecificityBreakdown } from "../specificity-analyzer";
 import { Button } from "../../packages/html/src/button/button.spec";
 import * as sass from "sass";
 import * as path from "path";
@@ -48,7 +48,15 @@ describe(`${component} CSS specificity`, () => {
       try {
         expect(specificityValue).toBe(expectedSpecificity);
       } catch (error) {
-        throw new Error(`${error.message}\nSource: ${sourceLocation}`);
+        // Get detailed breakdown for debugging when test fails
+        const result = calculateSpecificityThresholdWithBreakdown(selector, Button);
+        const breakdownInfo = formatSpecificityBreakdown(result.breakdown);
+
+        throw new Error(
+          `${error.message}\n` +
+          `Source: ${sourceLocation}\n` +
+          `\nSpecificity Breakdown:\n${breakdownInfo}`
+        );
       }
     });
   });

@@ -1,5 +1,5 @@
 import "./theme.env.js";
-import { getComponentSelectors, calculateSpecificityThreshold } from "../specificity-analyzer";
+import { presets, testSpecificity } from "../specificity-analyzer";
 import { Button } from "../../packages/html/src/button/button.spec";
 import { Card } from "../../packages/html/src/card/card.spec";
 import { Badge } from "../../packages/html/src/badge/badge.spec";
@@ -90,13 +90,13 @@ import { TaskBoard } from "../../packages/html/src/taskboard/taskboard.spec";
 import { Prompt } from "../../packages/html/src/prompt/prompt.spec";
 import { OneTimePassword } from "../../packages/html/src/otp/otp.spec";
 import { ColumnMenu } from "../../packages/html/src/column-menu/column-menu.spec";
-import { ContextMenu } from "../../packages/html/src/context-menu/context-menu.spec";
+// import { ContextMenu } from "../../packages/html/src/context-menu/context-menu.spec";
 import { DateTimeSelector } from "../../packages/html/src/datetime-selector/datetime-selector.spec";
 import { TimeSelector } from "../../packages/html/src/time-selector/time-selector.spec";
 import { MultiSelectTree } from "../../packages/html/src/multiselecttree/multiselecttree.spec";
 import { MultiViewCalendar } from "../../packages/html/src/multiviewcalendar/multiviewcalendar.spec";
-import { PropertyGrid } from "../../packages/html/src/propertygrid/propertygrid.spec";
-import { SpinButton } from "../../packages/html/src/spinbutton/spinbutton.spec";
+// import { PropertyGrid } from "../../packages/html/src/propertygrid/propertygrid.spec";
+// import { SpinButton } from "../../packages/html/src/spinbutton/spinbutton.spec";
 import { FloatingLabel } from "../../packages/html/src/floating-label/floating-label.spec";
 import { ListBox } from "../../packages/html/src/listbox/listbox.spec";
 import { ListGroup } from "../../packages/html/src/listgroup/listgroup.spec";
@@ -104,149 +104,111 @@ import { Table } from "../../packages/html/src/table/table.spec";
 import { ActionButtons } from "../../packages/html/src/action-buttons/action-buttons.spec";
 import { Input } from "../../packages/html/src/input/input.spec";
 
-import * as sass from "sass";
-import * as path from "path";
-import { describe, it, expect } from "@jest/globals";
-
-[
-  [Button, "button"],
-  [Card, "card"],
-  [Badge, "badge"],
-  [Avatar, "avatar"],
-  [Chip, "chip"],
-  [Typography, "typography"],
-  [Icon, "icons", "icon"],
-  [Form, "forms", "form"],
-  [Textbox, "textbox"],
-  [Textarea, "textarea"],
-  [Checkbox, "checkbox"],
-  [RadioButton, "radio"],
-  [Switch, "switch"],
-  [Slider, "slider"],
-  [ProgressBar, "progressbar"],
-  [Calendar, "calendar"],
-  [DateInput, "dateinput", "date-input"],
-  [TimePicker, "timepicker", "time-picker"],
-  [DateTimePicker, "datetimepicker", "date-time-picker"],
-  [ColorPicker, "colorpicker", "color-picker"],
-  [ColorGradient, "colorgradient", "color-gradient"],
-  [Autocomplete, "autocomplete"],
-  [DropdownList, "dropdownlist", "dropdown-list"],
-  [MultiSelect, "multiselect", "multiselect"],
-  [Combobox, "combobox", "combobox"],
-  [Treeview, "treeview", "treeview"],
-  [Grid, "grid", "grid"],
-  [List, "list", "list"],
-  [ListView, "listview", "listview"],
-  [TreeList, "treelist", "treelist"],
-  [Menu, "menu", "menu"],
-  [Toolbar, "toolbar", "toolbar"],
-  [TabStrip, "tabstrip", "tabstrip"],
-  [PanelBar, "panelbar", "panelbar"],
-  [Window, "window"],
-  [Dialog, "dialog"],
-  [Drawer, "drawer"],
-  [Notification, "notification"],
-  [Tooltip, "tooltip"],
-  [Popup, "popup"],
-  [Popover, "popover"],
-  [Upload, "upload"],
-  [FileManager, "filemanager", "file-manager"],
-  [Editor, "editor"],
-  [Scheduler, "scheduler"],
-  [Gantt, "gantt"],
-  [Spreadsheet, "spreadsheet"],
-  [PivotGrid, "pivotgrid"],
-  [ChartWizard, "chart-wizard"],
-  [Signature, "signature"],
-  [MediaPlayer, "mediaplayer", "media-player"],
-  [Chat, "chat"],
-  [Timeline, "timeline"],
-  [Breadcrumb, "breadcrumb"],
-  [Pager, "pager"],
-  [Stepper, "stepper"],
-  [Wizard, "wizard"],
-  [ExpansionPanel, "expansion-panel", "expander"], // huh!?
-  [TileLayout, "tilelayout", "tile-layout"],
-  [Splitter, "splitter"],
-  [DockManager, "dock-manager"],
-  [Filter, "filter"],
-  [Searchbox, "searchbox"],
-  [Rating, "rating"],
-  [MaskedTextbox, "maskedtextbox", "masked-textbox"],
-  [NumericTextbox, "numerictextbox", "numeric-textbox"],
-  [DropdownGrid, "dropdowngrid", "dropdown-grid"],
-  [DropdownTree, "dropdowntree", "dropdown-tree"],
-  [TimeDurationPicker, "timedurationpicker", "time-duration-picker"],
-  [DateRangePicker, "daterangepicker", "date-range-picker"],
-  [Captcha, "captcha"],
-  [ColorPalette, "colorpalette", "color-palette"],
-  [Appbar, "appbar"],
-  [FloatingActionButton, "fab"],
-  [ActionSheet, "action-sheet"],
-  [BottomNav, "bottom-navigation"],
-  [SplitButton, "split-button"],
-  [ButtonGroup, "button", "button"], // Part of button.scss
-  [MenuButton, "menu-button"],
-  [SpeechToTextButton, "speech-to-text-button"],
-  [Skeleton, "skeleton"],
-  [Loader, "loader"],
-  [ImageEditor, "imageeditor", "image-editor"],
-  [PDFViewer, "pdf-viewer"],
-  [Orgchart, "orgchart"],
-  [Map, "map"],
-  [TaskBoard, "taskboard", "task-board"],
-  [Prompt, "prompt"],
-  [OneTimePassword, "otp"],
-  [ColumnMenu, "column-menu"],
-  // [ContextMenu], // No context-menu.scss??
-  [DateTimeSelector, "datetimepicker", "date-time-picker"],
-  [TimeSelector, "timeselector", "time-selector"],
-  [MultiSelectTree, "dropdowntree", "dropdown-tree"],
-  [MultiViewCalendar, "calendar", "calendar"],
-  // [PropertyGrid, "propertygrid"], // No propertygrid.scss??
-  // [SpinButton, "spinbutton"], // No spinbutton.scss??
-  [FloatingLabel, "floating-label"],
-  [ListBox, "listbox"],
-  [ListGroup, "listgroup"],
-  [Table, "table"],
-  [ActionButtons, "action-buttons"],
-  [Input, "input"],
-].map(([Component, folder, mixin = folder]) => {
-  describe("Material theme", () => {
-    describe(`${Component.name} specificity`, () => {
-      // Compile the material theme - note: material doesn't have _layout.scss
-      const result = sass.compileString(
-        `
-      @use '../packages/${process.env.THEME}/scss/${folder}/_variables.scss' as *;
-      @use '../packages/${process.env.THEME}/scss/${folder}/_layout.scss' as *;
-      @use '../packages/${process.env.THEME}/scss/${folder}/_theme.scss' as *;
-
-    @include kendo-${mixin}--layout();
-    @include kendo-${mixin}--theme();
-    `,
-        {
-          loadPaths: [path.resolve(__dirname, "../../"), path.resolve(__dirname, "../../node_modules")],
-          sourceMap: true,
-        }
-      );
-
-      const selectors = getComponentSelectors(result.css, Component, {
-        sourceMap: result.sourceMap,
-      });
-
-      selectors.forEach(({ selector, specificity, sourceLocation }) => {
-        // Switch third argument to true for Q4 release of the themes.
-        const expectedSpecificity = calculateSpecificityThreshold(selector, Component, false);
-
-        it(`"${selector}" ([${specificity}])`, () => {
-          try {
-            expect(`[${String(specificity)}]`).toEqual(`[${String(expectedSpecificity)}]`);
-          } catch (error) {
-            throw new Error(`${error.message}\nSource: ${sourceLocation}`);
-          }
-        });
-      });
-    });
-  });
+describe("Material theme", () => {
+  // Using 2026Q2 preset which compiles the entire theme once (scope: "theme")
+  testSpecificity("material", presets["2025Q4"], [
+    [Button, "button"],
+    [Card, "card"],
+    [Badge, "badge"],
+    [Avatar, "avatar"],
+    [Chip, "chip"],
+    [Typography, "typography"],
+    [Icon, "icons", "icon"],
+    [Form, "forms", "form"],
+    [Textbox, "textbox"],
+    [Textarea, "textarea"],
+    [Checkbox, "checkbox"],
+    [RadioButton, "radio"],
+    [Switch, "switch"],
+    [Slider, "slider"],
+    [ProgressBar, "progressbar"],
+    [Calendar, "calendar"],
+    [DateInput, "dateinput", "date-input"],
+    [TimePicker, "timepicker", "time-picker"],
+    [DateTimePicker, "datetimepicker", "date-time-picker"],
+    [ColorPicker, "colorpicker", "color-picker"],
+    [ColorGradient, "colorgradient", "color-gradient"],
+    [Autocomplete, "autocomplete"],
+    [DropdownList, "dropdownlist", "dropdown-list"],
+    [MultiSelect, "multiselect", "multiselect"],
+    [Combobox, "combobox", "combobox"],
+    [Treeview, "treeview", "treeview"],
+    [Grid, "grid", "grid"],
+    [List, "list", "list"],
+    [ListView, "listview", "listview"],
+    [TreeList, "treelist", "treelist"],
+    [Menu, "menu", "menu"],
+    [Toolbar, "toolbar", "toolbar"],
+    [TabStrip, "tabstrip", "tabstrip"],
+    [PanelBar, "panelbar", "panelbar"],
+    [Window, "window"],
+    [Dialog, "dialog"],
+    [Drawer, "drawer"],
+    [Notification, "notification"],
+    [Tooltip, "tooltip"],
+    [Popup, "popup"],
+    [Popover, "popover"],
+    [Upload, "upload"],
+    [FileManager, "filemanager", "file-manager"],
+    [Editor, "editor"],
+    [Scheduler, "scheduler"],
+    [Gantt, "gantt"],
+    [Spreadsheet, "spreadsheet"],
+    [PivotGrid, "pivotgrid"],
+    [ChartWizard, "chart-wizard"],
+    [Signature, "signature"],
+    [MediaPlayer, "mediaplayer", "media-player"],
+    [Chat, "chat"],
+    [Timeline, "timeline"],
+    [Breadcrumb, "breadcrumb"],
+    [Pager, "pager"],
+    [Stepper, "stepper"],
+    [Wizard, "wizard"],
+    [ExpansionPanel, "expansion-panel", "expander"], // huh!?
+    [TileLayout, "tilelayout", "tile-layout"],
+    [Splitter, "splitter"],
+    [DockManager, "dock-manager"],
+    [Filter, "filter"],
+    [Searchbox, "searchbox"],
+    [Rating, "rating"],
+    [MaskedTextbox, "maskedtextbox", "masked-textbox"],
+    [NumericTextbox, "numerictextbox", "numeric-textbox"],
+    [DropdownGrid, "dropdowngrid", "dropdown-grid"],
+    [DropdownTree, "dropdowntree", "dropdown-tree"],
+    [TimeDurationPicker, "timedurationpicker", "time-duration-picker"],
+    [DateRangePicker, "daterangepicker", "date-range-picker"],
+    [Captcha, "captcha"],
+    [ColorPalette, "colorpalette", "color-palette"],
+    [Appbar, "appbar"],
+    [FloatingActionButton, "fab"],
+    [ActionSheet, "action-sheet"],
+    [BottomNav, "bottom-navigation"],
+    [SplitButton, "split-button"],
+    [ButtonGroup, "button", "button"], // Part of button.scss
+    [MenuButton, "menu-button"],
+    [SpeechToTextButton, "speech-to-text-button"],
+    [Skeleton, "skeleton"],
+    [Loader, "loader"],
+    [ImageEditor, "imageeditor", "image-editor"],
+    [PDFViewer, "pdf-viewer"],
+    [Orgchart, "orgchart"],
+    [Map, "map"],
+    [TaskBoard, "taskboard", "task-board"],
+    [Prompt, "prompt"],
+    [OneTimePassword, "otp"],
+    [ColumnMenu, "column-menu"],
+    // [ContextMenu], // No context-menu.scss??
+    [DateTimeSelector, "datetimepicker", "date-time-picker"],
+    [TimeSelector, "timeselector", "time-selector"],
+    [MultiSelectTree, "dropdowntree", "dropdown-tree"],
+    [MultiViewCalendar, "calendar", "calendar"],
+    // [PropertyGrid, "propertygrid"], // No propertygrid.scss??
+    // [SpinButton, "spinbutton"], // No spinbutton.scss??
+    [FloatingLabel, "floating-label"],
+    [ListBox, "listbox"],
+    [ListGroup, "listgroup"],
+    [Table, "table"],
+    [ActionButtons, "action-buttons"],
+    [Input, "input"],
+  ]);
 });
