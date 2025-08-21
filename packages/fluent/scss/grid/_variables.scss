@@ -352,7 +352,7 @@ $kendo-grid-sticky-border: var( --kendo-grid-sticky-border, color-mix(in srgb, #
 $kendo-grid-sticky-alt-bg: var( --kendo-grid-sticky-alt-bg, #{$kendo-grid-sticky-bg} ) !default;
 /// The background color of the Grid sticky cell.
 /// @group grid
-$kendo-grid-sticky-hover-bg: var( --kendo-grid-sticky-hover-bg, #{$kendo-grid-hover-bg} ) !default;
+$kendo-grid-sticky-hover-bg: var( --kendo-grid-sticky-hover-bg, k-color(base-hover) ) !default;
 
 /// The background color of the Grid sticky header.
 /// @group grid
