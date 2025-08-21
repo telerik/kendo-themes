@@ -1,31 +1,42 @@
-import { classNames } from '../misc';
+import { classNames, variantClassNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 export const SKELETON_CLASSNAME = `k-skeleton`;
+
+const SKELETON_VARIANTS = ["circle", "text", "rect"] as const;
 
 const states = [];
 
 const options = {};
 
-export type KendoSkeletonProps = {
-    shape?: 'circle' | 'text' | 'rect';
+export type KendoSkeletonOptions = {
+    variant?: (typeof SKELETON_VARIANTS)[number] | null;
+};
+
+export type KendoSkeletonProps = KendoSkeletonOptions & {
+    shape?: 'circle' | 'text' | 'rect'; // Deprecated: use variant instead
     animation?: false | 'wave' | 'pulse';
     style?: React.CSSProperties;
 };
 
 const defaultOptions = {
-    shape: 'text',
-    animation: 'pulse'
+    variant: 'text' as const,
+    shape: 'text' as const, // Deprecated: use variant instead
+    animation: 'pulse' as const
 };
 
 export const Skeleton: KendoComponent<KendoSkeletonProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoSkeletonProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
-        shape = defaultOptions.shape,
+        variant,
+        shape, // Deprecated: use variant instead
         animation = defaultOptions.animation,
         ...other
     } = props;
+
+    // Use variant if provided, otherwise fall back to shape for backward compatibility
+    const effectiveVariant = variant || shape || defaultOptions.variant;
 
     return (
         <span
@@ -33,8 +44,8 @@ export const Skeleton: KendoComponent<KendoSkeletonProps & React.HTMLAttributes<
             className={classNames(
                 props.className,
                 SKELETON_CLASSNAME,
+                variantClassNames(SKELETON_CLASSNAME, effectiveVariant),
                 {
-                    [`k-skeleton-${shape}`]: shape,
                     [`k-skeleton-${animation}`]: animation,
                 },
             )}
@@ -45,6 +56,7 @@ export const Skeleton: KendoComponent<KendoSkeletonProps & React.HTMLAttributes<
 
 Skeleton.states = states;
 Skeleton.options = options;
+Skeleton.variants = SKELETON_VARIANTS;
 Skeleton.className = SKELETON_CLASSNAME;
 Skeleton.defaultOptions = defaultOptions;
 

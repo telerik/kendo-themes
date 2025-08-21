@@ -8,7 +8,8 @@ const EXPANSION_PANEL_CLASSNAME = 'k-expander';
 const states = [
     States.hover,
     States.focus,
-    States.disabled
+    States.disabled,
+    'expanded'
 ];
 
 const options = {};
@@ -16,7 +17,6 @@ const options = {};
 export type KendoExpansionPanelProps = {
     title?: string;
     subtitle?: string;
-    expanded?: boolean;
     dir?: 'ltr' | 'rtl';
     contentStyle?: React.CSSProperties;
 };
@@ -51,11 +51,9 @@ export const ExpansionPanel: KendoComponent<KendoExpansionPanelProps & KendoExpa
                 stateClassNames(EXPANSION_PANEL_CLASSNAME, {
                     hover,
                     focus,
-                    disabled
-                }),
-                {
-                    'k-expanded': expanded,
-                }
+                    disabled,
+                    expanded
+                })
             )} dir={dir}>
             <div className={classNames(
                 'k-expander-header',
