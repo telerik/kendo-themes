@@ -10,8 +10,5 @@
     "test:fluent": "jest fluent",
     "test": "jest",
     "test:watch": "jest --watch"
-  },
-  "devDependencies": {
-    "jest-environment-jsdom": "^30.0.5"
   }
 }
