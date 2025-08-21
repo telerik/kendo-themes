@@ -47,6 +47,7 @@ jobs:
       - name: Pack themes
         run: |
           tar -cf themes.tar \
+            packages/core/dist/all.css \
             packages/default/dist/all.css \
             packages/default/dist/default-ocean-blue-a11y.css \
             packages/bootstrap/dist/all.css \
