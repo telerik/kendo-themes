@@ -2,6 +2,10 @@ import "./theme.env.js";
 import { presets, testSpecificity } from "../specificity-analyzer";
 import { Button } from "../../packages/html/src/button/button.spec";
 import { Card } from "../../packages/html/src/card/card.spec";
+import { CardList } from "../../packages/html/src/card/card-list.spec";
+import { CardGroup } from "../../packages/html/src/card/card-group.spec";
+import { CardDeck } from "../../packages/html/src/card/card-deck.spec";
+import { CardDeckScrollwrap } from "../../packages/html/src/card/card-deck-scrollwrap.spec";
 import { Badge } from "../../packages/html/src/badge/badge.spec";
 import { Avatar } from "../../packages/html/src/avatar/avatar.spec";
 import { Chip } from "../../packages/html/src/chip/chip.spec";
@@ -16,9 +20,11 @@ import { Switch } from "../../packages/html/src/switch/switch.spec";
 import { Slider } from "../../packages/html/src/slider/slider.spec";
 import { ProgressBar } from "../../packages/html/src/progressbar/progressbar.spec";
 import { Calendar } from "../../packages/html/src/calendar/calendar.spec";
+import { CalendarContainer } from "../../packages/html/src/calendar/calendar-container.spec";
 import { DateInput } from "../../packages/html/src/dateinput/dateinput.spec";
 import { TimePicker } from "../../packages/html/src/timepicker/timepicker.spec";
 import { DateTimePicker } from "../../packages/html/src/datetimepicker/datetimepicker.spec";
+import { DateTimeContainer } from "../../packages/html/src/datetimepicker/datetime-container.spec";
 import { ColorPicker } from "../../packages/html/src/colorpicker/colorpicker.spec";
 import { ColorGradient } from "../../packages/html/src/colorgradient/color-gradient.spec";
 import { Autocomplete } from "../../packages/html/src/autocomplete/autocomplete.spec";
@@ -28,15 +34,22 @@ import { Combobox } from "../../packages/html/src/combobox/combobox.spec";
 import { Treeview } from "../../packages/html/src/treeview/treeview.spec";
 import { Grid } from "../../packages/html/src/grid/grid.spec";
 import { List } from "../../packages/html/src/list/list.spec";
+import { ListContainer } from "../../packages/html/src/list/list-container.spec";
 import { ListView } from "../../packages/html/src/listview/listview.spec";
 import { TreeList } from "../../packages/html/src/treelist/treelist.spec";
 import { Menu } from "../../packages/html/src/menu/menu.spec";
 import { Toolbar } from "../../packages/html/src/toolbar/toolbar.spec";
+import { FloatingToolbar } from "../../packages/html/src/toolbar/floating-toolbar.spec";
 import { TabStrip } from "../../packages/html/src/tabstrip/tabstrip.spec";
+import { TabstripContainer } from "../../packages/html/src/tabstrip/tabstrip-container.spec";
 import { PanelBar } from "../../packages/html/src/panelbar/panelbar.spec";
 import { Window } from "../../packages/html/src/window/window.spec";
+import { WindowContent } from "../../packages/html/src/window/window-content.spec";
 import { Dialog } from "../../packages/html/src/dialog/dialog.spec";
+import { DialogContainer } from "../../packages/html/src/dialog/dialog-container.spec";
 import { Drawer } from "../../packages/html/src/drawer/drawer.spec";
+import { DrawerContainer } from "../../packages/html/src/drawer/drawer-container.spec";
+import { DrawerOverlay } from "../../packages/html/src/drawer/drawer-overlay.spec";
 import { Notification } from "../../packages/html/src/notification/notification.spec";
 import { Tooltip } from "../../packages/html/src/tooltip/tooltip.spec";
 import { Popup } from "../../packages/html/src/popup/popup.spec";
@@ -47,6 +60,7 @@ import { Editor } from "../../packages/html/src/editor/editor.spec";
 import { Scheduler } from "../../packages/html/src/scheduler/scheduler.spec";
 import { Gantt } from "../../packages/html/src/gantt/gantt.spec";
 import { Spreadsheet } from "../../packages/html/src/spreadsheet/spreadsheet.spec";
+import { SpreadsheetLegacy } from "../../packages/html/src/spreadsheet/spreadsheet-legacy.spec";
 import { PivotGrid } from "../../packages/html/src/pivotgrid/pivotgrid.spec";
 import { ChartWizard } from "../../packages/html/src/chart-wizard/chart-wizard.spec";
 import { Signature } from "../../packages/html/src/signature/signature.spec";
@@ -75,6 +89,7 @@ import { ColorPalette } from "../../packages/html/src/colorpalette/colorpalette.
 import { Appbar } from "../../packages/html/src/appbar/appbar.spec";
 import { FloatingActionButton } from "../../packages/html/src/fab/fab.spec";
 import { ActionSheet } from "../../packages/html/src/action-sheet/action-sheet.spec";
+import { ActionsheetContainer } from "../../packages/html/src/action-sheet/actionsheet-container.spec";
 import { BottomNav } from "../../packages/html/src/bottom-nav/bottom-nav.spec";
 import { SplitButton } from "../../packages/html/src/split-button/split-button.spec";
 import { ButtonGroup } from "../../packages/html/src/button-group/button-group.spec";
@@ -98,7 +113,12 @@ import { FloatingLabel } from "../../packages/html/src/floating-label/floating-l
 import { ListBox } from "../../packages/html/src/listbox/listbox.spec";
 import { ListGroup } from "../../packages/html/src/listgroup/listgroup.spec";
 import { Table } from "../../packages/html/src/table/table.spec";
+import { TableHeader } from "../../packages/html/src/table/table-header.spec";
+import { TableHeaderWrap } from "../../packages/html/src/table/table-header-wrap.spec";
+import { TableScroller } from "../../packages/html/src/table/table-scroller.spec";
+import { TableFooter } from "../../packages/html/src/table/table-footer.spec";
 import { ActionButtons } from "../../packages/html/src/action-buttons/action-buttons.spec";
+import { RippleContainer } from "../../packages/html/src/ripple/ripple-container.spec";
 import { Input } from "../../packages/html/src/input/input.spec";
 
 describe("Bootstrap theme", () => {
@@ -106,6 +126,10 @@ describe("Bootstrap theme", () => {
   testSpecificity("bootstrap", presets["2025Q4"], [
     [Button, "button"],
     [Card, "card"],
+    [CardList, "card"],
+    [CardGroup, "card"],
+    [CardDeck, "card"],
+    [CardDeckScrollwrap, "card"],
     [Badge, "badge"],
     [Avatar, "avatar"],
     [Chip, "chip"],
@@ -120,9 +144,11 @@ describe("Bootstrap theme", () => {
     [Slider, "slider"],
     [ProgressBar, "progressbar"],
     [Calendar, "calendar"],
+    [CalendarContainer, "calendar"],
     [DateInput, "dateinput", "date-input"],
     [TimePicker, "timepicker", "time-picker"],
     [DateTimePicker, "datetimepicker", "date-time-picker"],
+    [DateTimeContainer, "datetimepicker", "date-time-picker"],
     [ColorPicker, "colorpicker", "color-picker"],
     [ColorGradient, "colorgradient", "color-gradient"],
     [Autocomplete, "autocomplete"],
@@ -132,15 +158,22 @@ describe("Bootstrap theme", () => {
     [Treeview, "treeview", "treeview"],
     [Grid, "grid", "grid"],
     [List, "list", "list"],
+    [ListContainer, "list", "list"],
     [ListView, "listview", "listview"],
     [TreeList, "treelist", "treelist"],
     [Menu, "menu", "menu"],
     [Toolbar, "toolbar", "toolbar"],
+    [FloatingToolbar, "toolbar", "toolbar"],
     [TabStrip, "tabstrip", "tabstrip"],
+    [TabstripContainer, "tabstrip", "tabstrip"],
     [PanelBar, "panelbar", "panelbar"],
     [Window, "window"],
+    [WindowContent, "window"],
     [Dialog, "dialog"],
+    [DialogContainer, "dialog"],
     [Drawer, "drawer"],
+    [DrawerContainer, "drawer"],
+    [DrawerOverlay, "drawer"],
     [Notification, "notification"],
     [Tooltip, "tooltip"],
     [Popup, "popup"],
@@ -151,6 +184,7 @@ describe("Bootstrap theme", () => {
     [Scheduler, "scheduler"],
     [Gantt, "gantt"],
     [Spreadsheet, "spreadsheet"],
+    [SpreadsheetLegacy, "spreadsheet"],
     [PivotGrid, "pivotgrid"],
     [ChartWizard, "chart-wizard"],
     [Signature, "signature"],
@@ -179,6 +213,7 @@ describe("Bootstrap theme", () => {
     [Appbar, "appbar"],
     [FloatingActionButton, "fab"],
     [ActionSheet, "action-sheet"],
+    [ActionsheetContainer, "action-sheet"],
     [BottomNav, "bottom-navigation"],
     [SplitButton, "split-button"],
     [ButtonGroup, "button", "button"], // Part of button.scss
@@ -205,7 +240,12 @@ describe("Bootstrap theme", () => {
     [ListBox, "listbox"],
     [ListGroup, "listgroup"],
     [Table, "table"],
+    [TableHeader, "table"],
+    [TableHeaderWrap, "table"],
+    [TableScroller, "table"],
+    [TableFooter, "table"],
     [ActionButtons, "action-buttons"],
+    [RippleContainer, "ripple"],
     [Input, "input"],
   ]);
 });
