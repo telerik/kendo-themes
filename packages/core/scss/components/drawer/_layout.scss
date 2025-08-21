@@ -92,7 +92,7 @@
 
 
     // Push drawer
-    .k-drawer-push {
+    .k-drawer-container:where(.k-drawer-push) {
         display: flex;
         flex-direction: row;
 
