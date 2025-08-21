@@ -78,17 +78,17 @@
             .k-button-outline-#{$theme-color} {
                 color: k-color(#{$theme-color}-on-surface);
 
+                &:hover,
+                &.k-hover {
+                    color: k-color(#{$theme-color}-on-surface);
+                    background-color: color-mix(in srgb, k-color(#{$theme-color}-hover) 3%, transparent) !important; // stylelint-disable-line declaration-no-important
+                }
+
                 &:active,
                 &.k-active,
                 &.k-selected {
                     color: k-color(#{$theme-color}-on-surface);
                     background-color: color-mix(in srgb, k-color(#{$theme-color}-active) 13%, transparent) !important; // stylelint-disable-line declaration-no-important
-                }
-
-                &:hover,
-                &.k-hover {
-                    color: k-color(#{$theme-color}-on-surface);
-                    background-color: color-mix(in srgb, k-color(#{$theme-color}-hover) 3%, transparent) !important; // stylelint-disable-line declaration-no-important
                 }
             }
         }
