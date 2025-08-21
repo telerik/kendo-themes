@@ -1,0 +1,49 @@
+name: CI | Docs
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+concurrency:
+  group: docs-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  docs-verify:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: |
+          npm ci --no-audit --no-fund
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: .tmp
+
+      - name: Unpack artifacts
+        run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
+
+      - name: Check docs
+        run: npm run docs:check

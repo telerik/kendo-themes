@@ -33,6 +33,13 @@
     },
     "docs": {
       "cache": true
+    },
+    "docs:check": {
+      "cache": false,
+      "executor": "nx:run-script",
+      "options": {
+        "script": "docs:check"
+      }
     }
   }
 }

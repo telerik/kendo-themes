@@ -44,6 +44,7 @@
     "sass:watch": "npx sass --no-source-map --load-path=../../node_modules --watch ./scss/all.scss ./dist/all.css",
     "css:prefix": "npx postcss --replace ./dist/**/*.css",
     "docs": "node ../../scripts/sassdoc.js",
+    "docs:check": "npm run docs && git diff --name-only --exit-code -- docs || (echo 'Docs out of date (bootstrap). Run npm run sass && npm run docs' && exit 1)",
     "predocs": "npm run resolve-variables",
     "resolve-variables": "node ../../scripts/resolve-variables.js",
     "nuget-pack": "jq '.version' package.json | xargs nuget pack package.nuspec -Version",
