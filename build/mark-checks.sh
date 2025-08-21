@@ -18,6 +18,7 @@ declare -a checks=( \
   'Status check > A11y' \
   'Status check > Integration' \
   'Status check > Unit' \
+  'Status check > Docs' \
   'Status check > HTML spec' \
 )
 

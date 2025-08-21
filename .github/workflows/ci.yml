@@ -153,3 +153,16 @@ jobs:
     steps:
       - name: Done
         run: echo "Done!"
+
+  docs:
+    name: Docs
+    needs: [ compile-themes ]
+    uses: ./.github/workflows/_docs-check.yml
+
+  ci-docs:
+    name: Status check > Docs
+    runs-on: ubuntu-latest
+    needs: [ docs ]
+    steps:
+      - name: Done
+        run: echo "Done!"
