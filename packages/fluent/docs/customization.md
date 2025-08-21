@@ -15748,8 +15748,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-sticky-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-sticky-hover-bg, #{$kendo-grid-hover-bg} )</code></td>
-    <td><code>var(--kendo-grid-sticky-hover-bg, var(--kendo-grid-hover-bg, var(--kendo-table-hover-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 5%, transparent))))</code></td>
+    <td><code>var( --kendo-grid-sticky-hover-bg, k-color(base-hover) )</code></td>
+    <td><code>var(--kendo-grid-sticky-hover-bg, var(--kendo-color-base-hover, #f5f5f5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid sticky cell.</div></div>
