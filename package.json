@@ -29,6 +29,7 @@
     "http-server": "^14.1.1",
     "husky": "^9.0.10",
     "jest": "^30.0.0",
+    "jest-environment-jsdom": "^30.0.5",
     "lerna": "^8.0.0",
     "lint-staged": "^16.0.0",
     "nunjucks": "^3.2.3",
