@@ -428,223 +428,7 @@ function getComponentSelectors(css: string, component: any, options: GetComponen
   return selectors;
 }
 
-/**
- * Detect component variants in a CSS selector using proper CSS parsing
- * Returns array of detected variant class names
- */
-function detectVariants(selector: string, component: Component | null = null): string[] {
-  const detectedVariants: string[] = [];
 
-  if (!component || !component.variants || !Array.isArray(component.variants)) {
-    return detectedVariants;
-  }
-
-  const selectorClasses = getClassNames(selector);
-
-  // Use the actual variantClassNames function to generate the variant classes
-  for (const variant of component.variants) {
-    const generatedClasses = variantClassNames(component.className, variant);
-
-    // Check if any of the generated variant classes appear in the selector
-    for (const [className, isActive] of Object.entries(generatedClasses)) {
-      if (isActive && selectorClasses.includes(className)) {
-        detectedVariants.push(className);
-      }
-    }
-  }
-
-  return detectedVariants;
-}
-
-/**
- * Detect component options in a CSS selector using proper CSS parsing
- * Returns array of detected option class names
- */
-function detectOptions(selector: string, component: Component | null = null): string[] {
-  const detectedOptions = new Set<string>();
-
-  if (!component || !component.options) {
-    return [];
-  }
-
-  const selectorClasses = getClassNames(selector);
-  const { options } = component;
-
-  // Test each option type individually using the actual optionClassNames function
-
-  // Size options
-  if (options.size) {
-    for (const size of options.size) {
-      const generatedClasses = optionClassNames(component.className, { size });
-      if (generatedClasses) {
-        const classNames = generatedClasses.split(" ").filter((c) => c.trim());
-        classNames.forEach((className) => {
-          if (selectorClasses.includes(className)) {
-            detectedOptions.add(className);
-          }
-        });
-      }
-    }
-  }
-
-  // FillMode options (standalone)
-  if (options.fillMode) {
-    for (const fillMode of options.fillMode) {
-      const generatedClasses = optionClassNames(component.className, { fillMode });
-      if (generatedClasses) {
-        const classNames = generatedClasses.split(" ").filter((c) => c.trim());
-        classNames.forEach((className) => {
-          if (selectorClasses.includes(className)) {
-            detectedOptions.add(className);
-          }
-        });
-      }
-    }
-  }
-
-  // ThemeColor options (standalone)
-  if (options.themeColor) {
-    for (const themeColor of options.themeColor) {
-      const generatedClasses = optionClassNames(component.className, { themeColor });
-      if (generatedClasses) {
-        const classNames = generatedClasses.split(" ").filter((c) => c.trim());
-        classNames.forEach((className) => {
-          if (selectorClasses.includes(className)) {
-            detectedOptions.add(className);
-          }
-        });
-      }
-    }
-  }
-
-  // Combined fillMode + themeColor options
-  if (options.fillMode && options.themeColor) {
-    for (const fillMode of options.fillMode) {
-      for (const themeColor of options.themeColor) {
-        const generatedClasses = optionClassNames(component.className, { fillMode, themeColor });
-        if (generatedClasses) {
-          const classNames = generatedClasses.split(" ").filter((c) => c.trim());
-          classNames.forEach((className) => {
-            if (selectorClasses.includes(className)) {
-              detectedOptions.add(className);
-            }
-          });
-        }
-      }
-    }
-  }
-
-  // Rounded options
-  if (options.rounded) {
-    for (const rounded of options.rounded) {
-      const generatedClasses = optionClassNames(component.className, { rounded });
-      if (generatedClasses) {
-        const classNames = generatedClasses.split(" ").filter((c) => c.trim());
-        classNames.forEach((className) => {
-          if (selectorClasses.includes(className)) {
-            detectedOptions.add(className);
-          }
-        });
-      }
-    }
-  }
-
-  // Convert Set to array only at the end
-  return Array.from(detectedOptions);
-}
-
-/**
- * Detect states in a CSS selector for threshold calculation
- * Returns array of detected state class names and pseudo-classes
- */
-function detectStates(selector: string, component: Component | null = null): string[] {
-  const detectedStates: string[] = [];
-
-  try {
-    selectorParser((selectors) => {
-      selectors.each((sel: Selector) => {
-        sel.walk((node) => {
-          if (node.type === "pseudo") {
-            const pseudo = node as Pseudo;
-
-            if (pseudo.value.startsWith("::")) {
-              // Skip pseudo-elements, they're counted separately
-              return;
-            }
-
-            // Count all pseudo-classes
-            detectedStates.push(pseudo.value);
-          }
-        });
-      });
-    }).processSync(selector);
-  } catch (error) {
-    console.warn(`Failed to parse selector for state detection "${selector}":`, error);
-  }
-
-  // Check component-specific states if component is provided
-  if (component && component.states) {
-    const selectorClasses = getClassNames(selector);
-
-    for (const state of component.states) {
-      // Handle deprecated states that are already k-prefixed class names
-      if (selectorClasses.includes(state)) {
-        detectedStates.push(state);
-        continue;
-      }
-
-      // Use the actual stateClassNames function for standard state names
-      const stateProps = { [state]: true };
-      const generatedClasses = stateClassNames(component.className, stateProps);
-
-      // Check if any of the generated state classes appear in the selector
-      for (const className of generatedClasses.split(" ")) {
-        if (className && className.trim() && selectorClasses.includes(className)) {
-          detectedStates.push(className);
-        }
-      }
-    }
-  }
-
-  return detectedStates;
-}
-
-/**
- * Detect if a selector contains class names from other component specs
- * Excludes the current component being tested to avoid false positives
- * Returns array of detected component class names
- */
-function detectComponents(selector: string, currentComponent: Component | null = null): string[] {
-  const detectedComponents: string[] = [];
-  const selectorClasses = getClassNames(selector);
-
-  // Get all component specs from the html package
-  const componentSpecs: any[] = [];
-
-  // Extract all exported values that have a className property (indicating they're component specs)
-  // This includes both object specs and React component functions with attached properties
-  for (const exportName in htmlComponents) {
-    const exportedValue = (htmlComponents as any)[exportName];
-    if (exportedValue && exportedValue.className) {
-      componentSpecs.push(exportedValue);
-    }
-  }
-
-  // Check if selector contains any other component class names
-  for (const spec of componentSpecs) {
-    // Skip the current component to avoid false positives
-    if (currentComponent && spec.className === currentComponent.className) {
-      continue;
-    }
-
-    // Check if this component's class name appears in the selector
-    if (selectorClasses.includes(spec.className)) {
-      detectedComponents.push(spec.className);
-    }
-  }
-
-  return detectedComponents;
-}
 
 /**
  * Strip :not() selectors from a CSS selector string
@@ -742,7 +526,7 @@ function stripSpecialSelectors(selector: string): string {
  *
  * Returns specificity as [IDs, classes/attributes/pseudo-classes, types/pseudo-elements]
  */
-function detectNot(selector: string, component: any | null = null): number[] {
+function detectNot(selector: string): number[] {
   let totalIds = 0;
   let totalClasses = 0;
   let totalElements = 0;
@@ -757,23 +541,24 @@ function detectNot(selector: string, component: any | null = null): number[] {
               // For :not() with comma-separated selectors, only the most specific counts
               let maxSpecificity = [0, 0, 0];
 
-              // Calculate threshold for each selector inside :not()
+              // Calculate actual CSS specificity for each selector inside :not()
               pseudo.nodes.forEach((notNode) => {
                 if (notNode.type === "selector") {
                   const notSelector = notNode as Selector;
                   const notSelectorString = notSelector.toString().trim();
 
                   if (notSelectorString) {
-                    // Recursively calculate threshold for the content inside :not()
-                    const notThreshold = calculateSpecificityThreshold(notSelectorString, component, { baseClass: false });
+                    // Use actual CSS specificity calculation instead of our threshold logic
+                    // This prevents double-counting and recursive component analysis
+                    const cssSpecificity = calculateSpecificity(notSelectorString);
 
                     // Keep only the most specific (highest specificity)
-                    maxSpecificity = getMoreSpecific(notThreshold, maxSpecificity);
+                    maxSpecificity = getMoreSpecific(cssSpecificity, maxSpecificity);
                   }
                 }
               });
 
-              // Add the most specific threshold values to our total
+              // Add the most specific specificity values to our total
               totalIds += maxSpecificity[0];
               totalClasses += maxSpecificity[1];
               totalElements += maxSpecificity[2];
@@ -839,6 +624,257 @@ function calculateSpecificityThreshold(selector: string, component: any | null =
 }
 
 /**
+ * Extract individual selector parts separated by combinators
+ * This function breaks down a selector like ".k-card-wrap.k-focus > .k-card" into individual parts
+ * Returns array of selector parts
+ */
+function extractSelectorParts(selector: string): string[] {
+  const parts: string[] = [];
+
+  try {
+    selectorParser((selectors) => {
+      selectors.each((sel: Selector) => {
+        let currentPart = "";
+
+        sel.each((node) => {
+          if (node.type === "combinator") {
+            // When we hit a combinator, save the current part and reset
+            if (currentPart.trim()) {
+              parts.push(currentPart.trim());
+            }
+            currentPart = "";
+          } else {
+            // Accumulate non-combinator nodes
+            currentPart += node.toString();
+          }
+        });
+
+        // Add the final part
+        if (currentPart.trim()) {
+          parts.push(currentPart.trim());
+        }
+      });
+    }).processSync(selector);
+  } catch (error) {
+    console.warn(`Failed to extract selector parts from "${selector}":`, error);
+    // Fallback: treat the whole selector as one part
+    return [selector];
+  }
+
+  return parts;
+}
+
+/**
+ * Generate all possible combinations of component options
+ * This creates combinations like { fillMode: 'solid', themeColor: 'base' }
+ */
+function generateOptionCombinations(options: any): any[] {
+  const combinations: any[] = [];
+  const optionTypes = ['size', 'fillMode', 'themeColor', 'rounded'];
+
+  // Get available option types for this component
+  const availableTypes = optionTypes.filter(type =>
+    options[type] && Array.isArray(options[type]) && options[type].length > 0
+  );
+
+  if (availableTypes.length === 0) return combinations;
+
+  // Generate all possible combinations
+  function generateCombos(typeIndex: number, currentCombo: any) {
+    if (typeIndex >= availableTypes.length) {
+      // Only add combinations with more than one option type
+      if (Object.keys(currentCombo).length > 1) {
+        combinations.push({ ...currentCombo });
+      }
+      return;
+    }
+
+    const currentType = availableTypes[typeIndex];
+    const values = options[currentType];
+
+    // Try without this option type
+    generateCombos(typeIndex + 1, currentCombo);
+
+    // Try with each value of this option type
+    for (const value of values) {
+      generateCombos(typeIndex + 1, { ...currentCombo, [currentType]: value });
+    }
+  }
+
+  generateCombos(0, {});
+  return combinations;
+}
+
+/**
+ * Find which component a class belongs to based on all available component specs
+ * Returns the component spec if found, null otherwise
+ */
+function findComponentForClass(className: string): any | null {
+  // Get all component specs from the html package
+  for (const exportName in htmlComponents) {
+    const exportedValue = (htmlComponents as any)[exportName];
+    if (exportedValue && exportedValue.className === className) {
+      return exportedValue;
+    }
+  }
+  return null;
+}
+
+/**
+ * Analyze a single selector part to determine what component it belongs to and its contributions
+ * This function focuses only on the specific component found in this part
+ */
+function analyzeSelectorPart(part: string, targetComponent: any | null = null): {
+  foundComponent: any | null;
+  baseClassCount: number;
+  variants: string[];
+  options: string[];
+  states: string[];
+  pseudoStates: string[];
+  unrecognizedClasses: string[];
+} {
+  const result = {
+    foundComponent: null as any | null,
+    baseClassCount: 0,
+    variants: [] as string[],
+    options: [] as string[],
+    states: [] as string[],
+    pseudoStates: [] as string[],
+    unrecognizedClasses: [] as string[]
+  };
+
+  // Parse the part to get classes and pseudo-classes
+  const parsed = parseSelector(part);
+
+  // Handle pseudo-classes
+  result.pseudoStates = parsed.pseudoClasses;
+
+  // First, find if there's a known component in this part
+  let componentInPart: any | null = null;
+  for (const className of parsed.classes) {
+    const foundComponent = findComponentForClass(className);
+    if (foundComponent) {
+      componentInPart = foundComponent;
+      result.foundComponent = foundComponent;
+
+      // Count base class occurrences for this component
+      result.baseClassCount = parsed.classes.filter(cls => cls === className).length;
+      break; // Use the first component found in this part
+    }
+  }
+
+  // If no component found in this part, check if target component is present
+  if (!componentInPart && targetComponent && parsed.classes.includes(targetComponent.className)) {
+    componentInPart = targetComponent;
+    result.foundComponent = targetComponent;
+    result.baseClassCount = parsed.classes.filter(cls => cls === targetComponent.className).length;
+  }
+
+  // Now analyze all classes in this part against the found component (if any)
+  for (const className of parsed.classes) {
+    // Skip the base component class (already counted)
+    if (componentInPart && className === componentInPart.className) {
+      continue;
+    }
+
+    // If we have a component in this part, check if this class belongs to it
+    if (componentInPart) {
+      let recognized = false;
+
+      // Check if it's a variant of the component
+      if (componentInPart.variants && Array.isArray(componentInPart.variants)) {
+        for (const variant of componentInPart.variants) {
+          const generatedClasses = variantClassNames(componentInPart.className, variant);
+          for (const [variantClassName, isActive] of Object.entries(generatedClasses)) {
+            if (isActive && variantClassName === className) {
+              result.variants.push(className);
+              recognized = true;
+              break;
+            }
+          }
+          if (recognized) break;
+        }
+      }
+
+      // Check if it's an option of the component
+      if (!recognized && componentInPart.options) {
+        const { options } = componentInPart;
+
+        // First check individual options
+        const optionTypes = ['size', 'fillMode', 'themeColor', 'rounded'];
+        for (const optionType of optionTypes) {
+          if (options[optionType] && Array.isArray(options[optionType])) {
+            for (const optionValue of options[optionType]) {
+              const optionConfig = { [optionType]: optionValue };
+              const generatedClasses = optionClassNames(componentInPart.className, optionConfig);
+              if (generatedClasses) {
+                const classNames = generatedClasses.split(" ").filter((c) => c.trim());
+                if (classNames.includes(className)) {
+                  result.options.push(className);
+                  recognized = true;
+                  break;
+                }
+              }
+            }
+            if (recognized) break;
+          }
+        }
+
+        // If not found in individual options, check combinations
+        if (!recognized) {
+          // Generate all possible combinations of options
+          const combinations = generateOptionCombinations(options);
+
+          for (const combination of combinations) {
+            const generatedClasses = optionClassNames(componentInPart.className, combination);
+            if (generatedClasses) {
+              const classNames = generatedClasses.split(" ").filter((c) => c.trim());
+              if (classNames.includes(className)) {
+                result.options.push(className);
+                recognized = true;
+                break;
+              }
+            }
+          }
+        }
+      }
+
+      // Check if it's a state of the component
+      if (!recognized && componentInPart.states && Array.isArray(componentInPart.states)) {
+        for (const state of componentInPart.states) {
+          if (state.startsWith("k-") && state === className) {
+            // Handle deprecated k-prefixed states
+            result.states.push(className);
+            recognized = true;
+            break;
+          } else {
+            // Use the actual stateClassNames function
+            const stateProps = { [state]: true };
+            const generatedClasses = stateClassNames(componentInPart.className, stateProps);
+            const classNames = generatedClasses.split(" ").filter((c) => c.trim());
+            if (classNames.includes(className)) {
+              result.states.push(className);
+              recognized = true;
+              break;
+            }
+          }
+        }
+      }
+
+      // If not recognized as belonging to the component, mark as unrecognized
+      if (!recognized) {
+        result.unrecognizedClasses.push(className);
+      }
+    } else {
+      // No component found in this part, so this class is unrecognized
+      result.unrecognizedClasses.push(className);
+    }
+  }
+
+  return result;
+}
+
+/**
  * Calculate dynamic specificity threshold with detailed breakdown for debugging
  * Returns both the threshold and detailed information about how it was calculated
  */
@@ -867,43 +903,66 @@ function calculateSpecificityThresholdWithBreakdown(selector: string, component:
     totalElements: 0,
   };
 
-  // Count how many times the base component class appears in the selector
-  const baseClassCount = countClassOccurrences(strippedSelector, component?.className || "");
-  const hasBaseClass = baseClassCount > 0;
-  breakdown.baseClassCount = baseClassCount;
+  // Extract individual selector parts separated by combinators
+  const parts = extractSelectorParts(strippedSelector);
 
-  if (!baseClass || hasBaseClass) {
-    if (hasBaseClass) {
-      // Add classes based on the number of base class instances, respecting the limit
-      const actualCount = Math.min(baseClassCount, maxComponents);
-      classes += actualCount;
+  // Process each part individually to find component-specific contributions
+  for (const part of parts) {
+    const analysis = analyzeSelectorPart(part, component);
+
+    // Only count contributions from parts that contain recognized components
+    if (analysis.foundComponent) {
+      // Count the base component
+      if (component && analysis.foundComponent.className === component.className) {
+        breakdown.baseClassCount += analysis.baseClassCount;
+        classes += analysis.baseClassCount;
+      } else {
+        // It's a different component
+        breakdown.components.push(analysis.foundComponent.className);
+        classes += analysis.baseClassCount;
+      }
+
+      // Count variants, options, and states for this component
+      classes += analysis.variants.length;
+      classes += analysis.options.length;
+      classes += analysis.states.length;
+
+      // Update breakdown tracking
+      breakdown.variants.push(...analysis.variants);
+      breakdown.options.push(...analysis.options);
+      breakdown.states.push(...analysis.states);
     }
 
-    // Component variants (count each detected variant class)
-    const detectedVariants = detectVariants(strippedSelector, component);
-    breakdown.variants = detectedVariants;
-    classes += detectedVariants.length;
+    // Always count pseudo-states (they apply regardless of component recognition)
+    classes += analysis.pseudoStates.length;
+    breakdown.states.push(...analysis.pseudoStates);
 
-    // Component options (count each detected option class)
-    const detectedOptions = detectOptions(strippedSelector, component);
-    breakdown.options = detectedOptions;
-    classes += detectedOptions.length;
-
-    // Component states (count each detected state class and pseudo-class)
-    const detectedStates = detectStates(strippedSelector, component);
-    breakdown.states = detectedStates;
-    const stateCount = maxStates !== undefined ? Math.min(detectedStates.length, maxStates) : detectedStates.length;
-    classes += stateCount;
-
-    // Other components (count each detected component class)
-    const detectedComponents = detectComponents(strippedSelector, component);
-    breakdown.components = detectedComponents;
-    const componentCount = Math.min(detectedComponents.length, maxComponents);
-    classes += componentCount;
+    // Track unrecognized classes for debugging but don't count them toward specificity
+    breakdown.unrecognizedClasses.push(...analysis.unrecognizedClasses);
   }
 
+  // Apply baseClass requirement if specified
+  if (baseClass && breakdown.baseClassCount === 0) {
+    // If base class is required but not found, reset everything to 0
+    classes = 0;
+    breakdown.variants = [];
+    breakdown.options = [];
+    breakdown.states = [];
+    breakdown.components = [];
+    breakdown.unrecognizedClasses = [];
+  }
+
+  // Apply limits after collecting all data
+  const limitedBaseClasses = Math.min(breakdown.baseClassCount, maxComponents);
+  const limitedComponents = Math.min(breakdown.components.length, maxComponents);
+  const limitedStates = Math.min(breakdown.states.length, maxStates);
+
+  // Recalculate total classes with limits applied - EXCLUDE unrecognized classes
+  classes = limitedBaseClasses + breakdown.variants.length + breakdown.options.length +
+            limitedStates + limitedComponents;
+
   // Handle :not() selectors using dedicated function
-  const notSpecificity = detectNot(selector, component);
+  const notSpecificity = detectNot(selector);
   ids += notSpecificity[0];
   classes += notSpecificity[1];
   elements += notSpecificity[2];
@@ -918,20 +977,6 @@ function calculateSpecificityThresholdWithBreakdown(selector: string, component:
   const hasEls = hasElements(strippedSelector);
   if (hasEls) {
     elements += Math.min(1, maxElements);
-  }
-
-  // Identify unrecognized classes (classes that don't fit into any category)
-  if (component?.className) {
-    const allSelectorClasses = getClassNames(strippedSelector);
-    const recognizedClasses = new Set([
-      component.className,
-      ...breakdown.variants,
-      ...breakdown.options,
-      ...breakdown.states.filter((s) => s.startsWith("k-") || s.startsWith(".")), // Filter out pseudo-classes
-      ...breakdown.components,
-    ]);
-
-    breakdown.unrecognizedClasses = allSelectorClasses.filter((cls) => !recognizedClasses.has(cls) && cls !== component.className);
   }
 
   // Set final totals
@@ -1154,7 +1199,7 @@ function testSpecificity(theme: string, options: TestSpecificityOptions = {}, co
 }
 
 // ESM exports
-export { presets, calculateSpecificity, calculateSpecificityThreshold, calculateSpecificityThresholdWithBreakdown, formatSpecificityBreakdown, getComponentSelectors, getSelectorsSpecificity, compareSpecificity, getMoreSpecific, parseSelector, hasClassName, countClassOccurrences, getClassNames, hasPseudoClass, countPseudoClassOccurrences, hasPseudoElement, hasElements, stripNotSelectors, stripWhereSelectors, stripSpecialSelectors, detectNot, testSpecificity };
+export { presets, calculateSpecificity, calculateSpecificityThreshold, calculateSpecificityThresholdWithBreakdown, formatSpecificityBreakdown, getComponentSelectors, getSelectorsSpecificity, compareSpecificity, getMoreSpecific, parseSelector, hasClassName, countClassOccurrences, getClassNames, hasPseudoClass, countPseudoClassOccurrences, hasPseudoElement, hasElements, stripNotSelectors, stripWhereSelectors, stripSpecialSelectors, detectNot, testSpecificity, analyzeSelectorPart, generateOptionCombinations };
 
 // Export types for TypeScript consumers
 export type { SelectorInfo, Component, ComponentTuple, GetComponentSelectorsOptions, ParsedSelector, SpecificityBreakdown, SpecificityThresholdResult, SpecificityThresholdOptions, TestSpecificityOptions };
