@@ -106,14 +106,14 @@ $kendo-spreadsheet-selection-bg: var( --kendo-spreadsheet-selection-bg, transpar
 $kendo-spreadsheet-selection-text: var( --kendo-spreadsheet-selection-text, null ) !default;
 /// The border color of the Spreadsheet selection.
 /// @group spreadsheet
-$kendo-spreadsheet-selection-border: var( --kendo-spreadsheet-selection-border, k-color(primary) ) !default;
+$kendo-spreadsheet-selection-border: var( --kendo-spreadsheet-selection-border, k-color(primary-on-surface) ) !default;
 /// The shadow of the Spreadsheet selection.
 /// @group spreadsheet
 $kendo-spreadsheet-selection-shadow: var( --kendo-spreadsheet-selection-shadow, none ) !default;
 
 /// The background color of the Spreadsheet single selection.
 /// @group spreadsheet
-$kendo-spreadsheet-single-selection-bg: var( --kendo-spreadsheet-single-selection-bg, k-color(primary) ) !default;
+$kendo-spreadsheet-single-selection-bg: var( --kendo-spreadsheet-single-selection-bg, k-color(primary-on-surface) ) !default;
 /// The text color of the Spreadsheet single selection.
 /// @group spreadsheet
 $kendo-spreadsheet-single-selection-text: var( --kendo-spreadsheet-single-selection-text, null ) !default;

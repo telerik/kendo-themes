@@ -179,7 +179,7 @@ $kendo-calendar-other-month-text: var( --kendo-calendar-other-month-text, k-colo
 
 /// The background color of the calendar cells when hovered.
 /// @group calendar
-$kendo-calendar-cell-hover-bg: var( --kendo-calendar-cell-hover-bg, k-color(primary-subtle) ) !default;
+$kendo-calendar-cell-hover-bg: var( --kendo-calendar-cell-hover-bg, color-mix(in srgb, k-color(primary-subtle) 75%, k-color(on-primary)) ) !default;
 /// The text color of the calendar cells when hovered.
 /// @group calendar
 $kendo-calendar-cell-hover-text: var( --kendo-calendar-cell-hover-text, k-color(on-base) ) !default;
