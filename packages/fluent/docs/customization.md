@@ -4061,8 +4061,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-cell-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-cell-hover-bg, k-color(primary-subtle) )</code></td>
-    <td><code>var(--kendo-calendar-cell-hover-bg, var(--kendo-color-primary-subtle, #ebf3fc))</code></td>
+    <td><code>var( --kendo-calendar-cell-hover-bg, color-mix(in srgb, k-color(primary-subtle) 75%, k-color(on-primary)) )</code></td>
+    <td><code>var(--kendo-calendar-cell-hover-bg, color-mix(in srgb, var(--kendo-color-primary-subtle, #ebf3fc) 75%, var(--kendo-color-on-primary, #ffffff)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the calendar cells when hovered.</div></div>
@@ -17098,8 +17098,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-focus-border</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0f6cbd)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #0f6cbd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused solid Input components.</div></div>
@@ -17218,8 +17218,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-focus-border</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0f6cbd)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #0f6cbd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused outline Input components.</div></div>
@@ -17338,8 +17338,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-focus-border</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0f6cbd)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #0f6cbd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused flat Input components.</div></div>
@@ -17458,8 +17458,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-focus-border</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0f6cbd)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #0f6cbd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused solid Picker components.</div></div>
@@ -17578,8 +17578,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-focus-border</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0f6cbd)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #0f6cbd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused outline Picker components.</div></div>
@@ -17608,8 +17608,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-hover-focus-border</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0f6cbd)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #0f6cbd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered and focused outline Picker components.</div></div>
@@ -17728,8 +17728,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-focus-border</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0f6cbd)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #0f6cbd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused flat Picker components.</div></div>
@@ -22799,8 +22799,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-panelbar-bg, #{k-color(app-surface)} )</code></td>
-    <td><code>var(--kendo-panelbar-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
+    <td><code>var( --kendo-panelbar-bg, #{k-color(base-subtle)} )</code></td>
+    <td><code>var(--kendo-panelbar-bg, var(--kendo-color-base-subtle, #f5f5f5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PanelBar.</div></div>
@@ -22830,7 +22830,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-header-bg</td>
     <td>String</td>
     <td><code>var( --kendo-panelbar-header-bg, #{$kendo-panelbar-bg} )</code></td>
-    <td><code>var(--kendo-panelbar-header-bg, var(--kendo-panelbar-bg, var(--kendo-color-app-surface, #fafafa)))</code></td>
+    <td><code>var(--kendo-panelbar-header-bg, var(--kendo-panelbar-bg, var(--kendo-color-base-subtle, #f5f5f5)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PanelBar header.</div></div>
@@ -22960,7 +22960,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-header-selected-bg</td>
     <td>String</td>
     <td><code>var( --kendo-panelbar-header-selected-bg, #{$kendo-panelbar-bg} )</code></td>
-    <td><code>var(--kendo-panelbar-header-selected-bg, var(--kendo-panelbar-bg, var(--kendo-color-app-surface, #fafafa)))</code></td>
+    <td><code>var(--kendo-panelbar-header-selected-bg, var(--kendo-panelbar-bg, var(--kendo-color-base-subtle, #f5f5f5)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected PanelBar header.</div></div>
@@ -23020,7 +23020,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-header-selected-focus-bg</td>
     <td>String</td>
     <td><code>var( --kendo-panelbar-header-selected-focus-bg, #{$kendo-panelbar-header-selected-bg} )</code></td>
-    <td><code>var(--kendo-panelbar-header-selected-focus-bg, var(--kendo-panelbar-header-selected-bg, var(--kendo-panelbar-bg, var(--kendo-color-app-surface, #fafafa))))</code></td>
+    <td><code>var(--kendo-panelbar-header-selected-focus-bg, var(--kendo-panelbar-header-selected-bg, var(--kendo-panelbar-bg, var(--kendo-color-base-subtle, #f5f5f5))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and focused PanelBar header.</div></div>
@@ -23080,7 +23080,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-header-expanded-bg</td>
     <td>String</td>
     <td><code>var( --kendo-panelbar-header-expanded-bg, $kendo-panelbar-bg )</code></td>
-    <td><code>var(--kendo-panelbar-header-expanded-bg, var(--kendo-panelbar-bg, var(--kendo-color-app-surface, #fafafa)))</code></td>
+    <td><code>var(--kendo-panelbar-header-expanded-bg, var(--kendo-panelbar-bg, var(--kendo-color-base-subtle, #f5f5f5)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the expanded PanelBar header.</div></div>
@@ -23210,7 +23210,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-item-selected-bg</td>
     <td>String</td>
     <td><code>var( --kendo-panelbar-item-selected-bg, #{$kendo-panelbar-bg} )</code></td>
-    <td><code>var(--kendo-panelbar-item-selected-bg, var(--kendo-panelbar-bg, var(--kendo-color-app-surface, #fafafa)))</code></td>
+    <td><code>var(--kendo-panelbar-item-selected-bg, var(--kendo-panelbar-bg, var(--kendo-color-base-subtle, #f5f5f5)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected PanelBar items.</div></div>
@@ -23270,7 +23270,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-item-selected-focus-bg</td>
     <td>String</td>
     <td><code>var( --kendo-panelbar-item-selected-focus-bg, #{$kendo-panelbar-item-selected-bg} )</code></td>
-    <td><code>var(--kendo-panelbar-item-selected-focus-bg, var(--kendo-panelbar-item-selected-bg, var(--kendo-panelbar-bg, var(--kendo-color-app-surface, #fafafa))))</code></td>
+    <td><code>var(--kendo-panelbar-item-selected-focus-bg, var(--kendo-panelbar-item-selected-bg, var(--kendo-panelbar-bg, var(--kendo-color-base-subtle, #f5f5f5))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and focused PanelBar items.</div></div>
@@ -28138,8 +28138,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-selection-border</td>
     <td>String</td>
-    <td><code>var( --kendo-spreadsheet-selection-border, k-color(primary) )</code></td>
-    <td><code>var(--kendo-spreadsheet-selection-border, var(--kendo-color-primary, #0f6cbd))</code></td>
+    <td><code>var( --kendo-spreadsheet-selection-border, k-color(primary-on-surface) )</code></td>
+    <td><code>var(--kendo-spreadsheet-selection-border, var(--kendo-color-primary-on-surface, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet selection.</div></div>
@@ -28158,8 +28158,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-single-selection-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-spreadsheet-single-selection-bg, k-color(primary) )</code></td>
-    <td><code>var(--kendo-spreadsheet-single-selection-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
+    <td><code>var( --kendo-spreadsheet-single-selection-bg, k-color(primary-on-surface) )</code></td>
+    <td><code>var(--kendo-spreadsheet-single-selection-bg, var(--kendo-color-primary-on-surface, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet single selection.</div></div>
