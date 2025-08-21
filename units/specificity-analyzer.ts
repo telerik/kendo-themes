@@ -4,6 +4,27 @@ import selectorParser, { Selector, Node, ClassName, Tag, Pseudo, Attribute } fro
 import { SourceMapConsumer } from "@jridgewell/source-map";
 import { optionClassNames, stateClassNames, variantClassNames } from "../packages/html/src/misc/component-class-names";
 import * as htmlComponents from "../packages/html/src/index";
+import * as sass from "sass";
+import * as path from "path";
+import { it, expect } from "@jest/globals";
+
+const presets: Record<string, TestSpecificityOptions> = {
+  "2025Q4": {
+    baseClass: false,
+    scope: "component",
+    maxStates: Number.MAX_SAFE_INTEGER,
+    maxComponents: Number.MAX_SAFE_INTEGER,
+    maxElements: Number.MAX_SAFE_INTEGER,
+    maxPseudoElements: Number.MAX_SAFE_INTEGER,
+  },
+  "2026Q2": {
+    baseClass: true, // Requires changes in component suits
+    scope: "theme", // Would reveal cross-component selectors (.e.g grid touching button styles)
+    maxStates: 1, // Material theme is famous for :hover:focus:active selectors
+    maxComponents: 2, // Reduce component nesting to 2 (k-grid -> k-button)
+    maxElements: 0, // We should not have any element selectors
+  },
+} as const;
 
 // Types
 interface SelectorInfo {
@@ -80,24 +101,24 @@ function parseSelector(selector: string): ParsedSelector {
       selectors.each((sel: Selector) => {
         sel.walk((node) => {
           switch (node.type) {
-            case 'class':
+            case "class":
               result.classes.push((node as ClassName).value);
               break;
-            case 'tag':
+            case "tag":
               result.elements.push((node as Tag).value);
               break;
-            case 'pseudo':
+            case "pseudo":
               const pseudo = node as Pseudo;
-              if (pseudo.value.startsWith('::')) {
+              if (pseudo.value.startsWith("::")) {
                 result.pseudoElements.push(pseudo.value);
               } else {
                 result.pseudoClasses.push(pseudo.value);
               }
               break;
-            case 'attribute':
+            case "attribute":
               result.attributes.push((node as Attribute).attribute);
               break;
-            case 'id':
+            case "id":
               result.ids.push(node.value);
               break;
           }
@@ -126,7 +147,7 @@ function hasClassName(selector: string, className: string): boolean {
  */
 function countClassOccurrences(selector: string, className: string): number {
   const parsed = parseSelector(selector);
-  return parsed.classes.filter(cls => cls === className).length;
+  return parsed.classes.filter((cls) => cls === className).length;
 }
 
 /**
@@ -152,7 +173,7 @@ function hasPseudoClass(selector: string, pseudoClass: string): boolean {
  */
 function countPseudoClassOccurrences(selector: string, pseudoClass: string): number {
   const parsed = parseSelector(selector);
-  return parsed.pseudoClasses.filter(pc => pc === pseudoClass).length;
+  return parsed.pseudoClasses.filter((pc) => pc === pseudoClass).length;
 }
 
 /**
@@ -543,10 +564,10 @@ function detectStates(selector: string, component: Component | null = null): str
     selectorParser((selectors) => {
       selectors.each((sel: Selector) => {
         sel.walk((node) => {
-          if (node.type === 'pseudo') {
+          if (node.type === "pseudo") {
             const pseudo = node as Pseudo;
 
-            if (pseudo.value.startsWith('::')) {
+            if (pseudo.value.startsWith("::")) {
               // Skip pseudo-elements, they're counted separately
               return;
             }
@@ -636,7 +657,7 @@ function stripNotSelectors(selector: string): string {
     selectorParser((selectors) => {
       selectors.each((sel: Selector) => {
         sel.walkPseudos((pseudo) => {
-          if (pseudo.value === ':not') {
+          if (pseudo.value === ":not") {
             pseudo.remove();
           }
         });
@@ -663,7 +684,7 @@ function stripWhereSelectors(selector: string): string {
     selectorParser((selectors) => {
       selectors.each((sel: Selector) => {
         sel.walkPseudos((pseudo) => {
-          if (pseudo.value === ':where') {
+          if (pseudo.value === ":where") {
             pseudo.remove();
           }
         });
@@ -691,7 +712,7 @@ function stripSpecialSelectors(selector: string): string {
     selectorParser((selectors) => {
       selectors.each((sel: Selector) => {
         sel.walkPseudos((pseudo) => {
-          if (pseudo.value === ':not' || pseudo.value === ':where') {
+          if (pseudo.value === ":not" || pseudo.value === ":where") {
             pseudo.remove();
           }
         });
@@ -730,21 +751,21 @@ function detectNot(selector: string, component: any | null = null): number[] {
     selectorParser((selectors) => {
       selectors.each((sel: Selector) => {
         sel.walk((node) => {
-          if (node.type === 'pseudo') {
+          if (node.type === "pseudo") {
             const pseudo = node as Pseudo;
-            if (pseudo.value === ':not' && pseudo.nodes) {
+            if (pseudo.value === ":not" && pseudo.nodes) {
               // For :not() with comma-separated selectors, only the most specific counts
               let maxSpecificity = [0, 0, 0];
 
               // Calculate threshold for each selector inside :not()
               pseudo.nodes.forEach((notNode) => {
-                if (notNode.type === 'selector') {
+                if (notNode.type === "selector") {
                   const notSelector = notNode as Selector;
                   const notSelectorString = notSelector.toString().trim();
 
                   if (notSelectorString) {
                     // Recursively calculate threshold for the content inside :not()
-                    const notThreshold = calculateSpecificityThreshold(notSelectorString, component, false);
+                    const notThreshold = calculateSpecificityThreshold(notSelectorString, component, { baseClass: false });
 
                     // Keep only the most specific (highest specificity)
                     maxSpecificity = getMoreSpecific(notThreshold, maxSpecificity);
@@ -769,46 +790,116 @@ function detectNot(selector: string, component: any | null = null): number[] {
 }
 
 /**
+ * Detailed breakdown information for specificity threshold calculation
+ */
+interface SpecificityBreakdown {
+  baseClassCount: number;
+  baseClassName: string;
+  variants: string[];
+  options: string[];
+  states: string[];
+  components: string[];
+  unrecognizedClasses: string[];
+  totalIds: number;
+  totalClasses: number;
+  totalElements: number;
+}
+
+/**
+ * Result of enhanced specificity threshold calculation with debugging information
+ */
+interface SpecificityThresholdResult {
+  threshold: number[];
+  breakdown: SpecificityBreakdown;
+}
+
+/**
+ * Configuration options for specificity threshold calculation
+ */
+interface SpecificityThresholdOptions {
+  /** Whether to enforce base className presence (defaults to true) */
+  baseClass?: boolean;
+  /** Maximum number of state selectors allowed (defaults to no limit) */
+  maxStates?: number;
+  /** Maximum number of component nesting allowed (defaults to 2) */
+  maxComponents?: number;
+  /** Maximum DOM elements allowed (defaults to 1) */
+  maxElements?: number;
+  /** Maximum pseudo-elements allowed (defaults to 1) */
+  maxPseudoElements?: number;
+}
+
+/**
  * Calculate dynamic specificity threshold using standard CSS specificity as base
  * Returns specificity as [IDs, classes/attributes/pseudo-classes, types/pseudo-elements]
  */
-function calculateSpecificityThreshold(selector: string, component: any | null = null, enforceBaseClassName: boolean = true): number[] {
+function calculateSpecificityThreshold(selector: string, component: any | null = null, options: SpecificityThresholdOptions = {}): number[] {
+  const result = calculateSpecificityThresholdWithBreakdown(selector, component, options);
+  return result.threshold;
+}
+
+/**
+ * Calculate dynamic specificity threshold with detailed breakdown for debugging
+ * Returns both the threshold and detailed information about how it was calculated
+ */
+function calculateSpecificityThresholdWithBreakdown(selector: string, component: any | null = null, options: SpecificityThresholdOptions = {}): SpecificityThresholdResult {
+  const { baseClass = false, maxStates = Number.MAX_SAFE_INTEGER, maxComponents = Number.MAX_SAFE_INTEGER, maxElements = Number.MAX_SAFE_INTEGER, maxPseudoElements = Number.MAX_SAFE_INTEGER } = options;
+
   let ids = 0;
   let classes = 0;
   let elements = 0;
-
-  // Maximum allowed component instances
-  const MAX_ALLOWED_INSTANCES = 2;
 
   // Strip :not() and :where() selectors from the main selector for detection functions
   // :not() is handled separately, :where() should be completely ignored due to zero specificity
   const strippedSelector = stripSpecialSelectors(selector);
 
-  // Count how many times the base component class appears in the selector
-  const baseClassCount = countClassOccurrences(strippedSelector, component.className);
-  const hasBaseClass = baseClassCount > 0;
+  // Initialize breakdown tracking
+  const breakdown: SpecificityBreakdown = {
+    baseClassCount: 0,
+    baseClassName: component?.className || "",
+    variants: [],
+    options: [],
+    states: [],
+    components: [],
+    unrecognizedClasses: [],
+    totalIds: 0,
+    totalClasses: 0,
+    totalElements: 0,
+  };
 
-  if (!enforceBaseClassName || hasBaseClass) {
+  // Count how many times the base component class appears in the selector
+  const baseClassCount = countClassOccurrences(strippedSelector, component?.className || "");
+  const hasBaseClass = baseClassCount > 0;
+  breakdown.baseClassCount = baseClassCount;
+
+  if (!baseClass || hasBaseClass) {
     if (hasBaseClass) {
       // Add classes based on the number of base class instances, respecting the limit
-      classes += Math.min(baseClassCount, MAX_ALLOWED_INSTANCES);
+      const actualCount = Math.min(baseClassCount, maxComponents);
+      classes += actualCount;
     }
 
     // Component variants (count each detected variant class)
     const detectedVariants = detectVariants(strippedSelector, component);
+    breakdown.variants = detectedVariants;
     classes += detectedVariants.length;
 
     // Component options (count each detected option class)
     const detectedOptions = detectOptions(strippedSelector, component);
+    breakdown.options = detectedOptions;
     classes += detectedOptions.length;
 
     // Component states (count each detected state class and pseudo-class)
     const detectedStates = detectStates(strippedSelector, component);
-    classes += detectedStates.length;
+    breakdown.states = detectedStates;
+    const stateCount = maxStates !== undefined ? Math.min(detectedStates.length, maxStates) : detectedStates.length;
+    classes += stateCount;
 
     // Other components (count each detected component class)
     const detectedComponents = detectComponents(strippedSelector, component);
-    classes += detectedComponents.length;
+    breakdown.components = detectedComponents;
+    const componentCount = Math.min(detectedComponents.length, maxComponents);
+    classes += componentCount;
   }
 
   // Handle :not() selectors using dedicated function
@@ -818,35 +909,252 @@ function calculateSpecificityThreshold(selector: string, component: any | null =
   elements += notSpecificity[2];
 
   // Check for pseudo-elements using proper parsing (on stripped selector)
-  if (hasPseudoElement(strippedSelector)) {
-    elements += 1;
+  const hasPseudoEl = hasPseudoElement(strippedSelector);
+  if (hasPseudoEl) {
+    elements += Math.min(1, maxPseudoElements);
   }
 
   // Check for DOM elements using proper parsing (on stripped selector)
-  if (hasElements(strippedSelector)) {
-    elements += 1;
+  const hasEls = hasElements(strippedSelector);
+  if (hasEls) {
+    elements += Math.min(1, maxElements);
   }
 
-  return [ids, classes, elements];
+  // Identify unrecognized classes (classes that don't fit into any category)
+  if (component?.className) {
+    const allSelectorClasses = getClassNames(strippedSelector);
+    const recognizedClasses = new Set([
+      component.className,
+      ...breakdown.variants,
+      ...breakdown.options,
+      ...breakdown.states.filter((s) => s.startsWith("k-") || s.startsWith(".")), // Filter out pseudo-classes
+      ...breakdown.components,
+    ]);
+
+    breakdown.unrecognizedClasses = allSelectorClasses.filter((cls) => !recognizedClasses.has(cls) && cls !== component.className);
+  }
+
+  // Set final totals
+  breakdown.totalIds = ids;
+  breakdown.totalClasses = classes;
+  breakdown.totalElements = elements;
+
+  return {
+    threshold: [ids, classes, elements],
+    breakdown: breakdown,
+  };
+}
+
+/**
+ * Get selectors with specificity information for a specific component
+ * This is a convenience wrapper around getComponentSelectors that also calculates actual specificity
+ */
+function getSelectorsSpecificity(css: string, options: { filter: string; minSpecificity?: number; sourceMap?: any }): Array<{ selector: string; specificityValue: number[]; sourceLocation: string }> {
+  // Create a minimal component object for filtering
+  const component = { className: options.filter };
+
+  const selectors = getComponentSelectors(css, component, { sourceMap: options.sourceMap });
+
+  return selectors
+    .filter(({ specificity }) => {
+      if (options.minSpecificity === undefined) return true;
+      const totalSpecificity = specificity.reduce((sum, val) => sum + val, 0);
+      return totalSpecificity >= options.minSpecificity;
+    })
+    .map(({ selector, specificity, sourceLocation }) => ({
+      selector,
+      specificityValue: specificity,
+      sourceLocation,
+    }));
+}
+
+/**
+ * Format the specificity breakdown for human-readable debugging output
+ * Only shows relevant information when categories have values
+ */
+function formatSpecificityBreakdown(breakdown: SpecificityBreakdown): string {
+  const parts: string[] = [];
+
+  if (breakdown.baseClassCount > 0) {
+    const countText = breakdown.baseClassCount > 1 ? ` (${breakdown.baseClassCount}x)` : "";
+    parts.push(`Base class: ${breakdown.baseClassName}${countText}`);
+  }
+
+  if (breakdown.variants.length > 0) {
+    parts.push(`Variants: ${breakdown.variants.join(", ")}`);
+  }
+
+  if (breakdown.options.length > 0) {
+    parts.push(`Options: ${breakdown.options.join(", ")}`);
+  }
+
+  if (breakdown.states.length > 0) {
+    parts.push(`States: ${breakdown.states.join(", ")}`);
+  }
+
+  if (breakdown.components.length > 0) {
+    parts.push(`Components: ${breakdown.components.join(", ")}`);
+  }
+
+  if (breakdown.unrecognizedClasses.length > 0) {
+    parts.push(`❌ Unrecognized classes: ${breakdown.unrecognizedClasses.join(", ")}`);
+  }
+
+  if (parts.length === 0) {
+    return "No contributing factors detected";
+  }
+
+  return parts.join("\n");
+}
+
+/**
+ * Test specificity configuration options
+ */
+interface TestSpecificityOptions {
+  /** Theme name from environment (defaults to process.env.THEME) */
+  theme?: string;
+  /** Base path for resolving theme files (defaults to current directory structure) */
+  basePath?: string;
+  /** Whether to enforce base className presence (defaults to false for backward compatibility) */
+  enforceBaseClassName?: boolean;
+  /** Compilation mode - currently only 'component', but extensible for future compiles */
+  scope?: "component" | "theme";
+  /** Maximum number of state selectors allowed (defaults to no limit) */
+  maxStates?: number;
+  /** Maximum number of component nesting allowed (defaults to 2) */
+  maxComponents?: number;
+  /** Maximum DOM elements allowed (defaults to 1) */
+  maxElements?: number;
+  /** Maximum pseudo-elements allowed (defaults to 1) */
+  maxPseudoElements?: number;
+  /** Whether to enforce base className presence (new property name) */
+  baseClass?: boolean;
+}
+
+/**
+ * Component tuple type for array-based specificity testing
+ */
+type ComponentTuple = [Component: any, folder: string, mixin?: string];
+
+/**
+ * Utility function to test component specificity for multiple components
+ * Handles compilation and generates Jest test cases for an array of components
+ *
+ * @param theme - Theme name (e.g., "default", "bootstrap", "material", "fluent")
+ * @param options - Configuration options (preset)
+ * @param components - Array of component tuples [Component, folder, mixin?]
+ */
+function testSpecificity(theme: string, options: TestSpecificityOptions = {}, components: ComponentTuple[]): void {
+  const {
+    basePath = path.resolve(__dirname, "../"),
+    enforceBaseClassName = false,
+    scope = "component",
+    maxStates,
+    maxComponents = 2,
+    maxElements = 1,
+    maxPseudoElements = 1,
+    baseClass = enforceBaseClassName, // Use new name, fallback to old for compatibility
+  } = options;
+
+  const thresholdOptions: SpecificityThresholdOptions = {
+    baseClass,
+    maxStates,
+    maxComponents,
+    maxElements,
+    maxPseudoElements,
+  };
+
+  switch (scope) {
+    case "theme":
+      const themeResult = sass.compileString(
+        `
+          @use '${basePath}/packages/${theme}/scss/index.scss' as *;
+
+          @include kendo-theme--styles();
+        `,
+        {
+          loadPaths: [basePath, path.resolve(basePath, "node_modules")],
+          sourceMap: true,
+        }
+      );
+
+      // Process each component against the compiled theme
+      components.forEach(([Component]) => {
+        describe(`${(Component as any).name} specificity`, () => {
+          // Get component selectors from the full theme CSS
+          const selectors = getComponentSelectors(themeResult.css, Component, {
+            sourceMap: themeResult.sourceMap,
+          });
+
+          // Generate test cases for each selector
+          selectors.forEach(({ selector, specificity, sourceLocation }) => {
+            const expectedSpecificity = calculateSpecificityThreshold(selector, Component, thresholdOptions);
+
+            it(`"${selector}" ([${specificity}])`, () => {
+              try {
+                expect(`[${String(specificity)}]`).toEqual(`[${String(expectedSpecificity)}]`);
+              } catch (error) {
+                // Get detailed breakdown for debugging when test fails
+                const result = calculateSpecificityThresholdWithBreakdown(selector, Component, thresholdOptions);
+                const breakdownInfo = formatSpecificityBreakdown(result.breakdown);
+
+                throw new Error(`${error.message}\n` + `Source: ${sourceLocation}\n` + `${breakdownInfo}`);
+              }
+            });
+          });
+        });
+      });
+      break;
+    case "component":
+    default:
+      // Individual component compilation (current behavior)
+      components.forEach(([Component, folder, mixin = folder]) => {
+        describe(`${(Component as any).name} specificity`, () => {
+          // Compile component SCSS individually
+          const result = sass.compileString(
+            `
+            @use '${basePath}/packages/${theme}/scss/${folder}/_variables.scss' as *;
+            @use '${basePath}/packages/${theme}/scss/${folder}/_theme.scss' as *;
+            @use '${basePath}/packages/${theme}/scss/${folder}/_layout.scss' as *;
+
+            @include kendo-${mixin}--layout();
+            @include kendo-${mixin}--theme();
+          `,
+            {
+              loadPaths: [basePath, path.resolve(basePath, "node_modules")],
+              sourceMap: true,
+            }
+          );
+
+          // Get component selectors
+          const selectors = getComponentSelectors(result.css, Component, {
+            sourceMap: result.sourceMap,
+          });
+
+          // Generate test cases for each selector
+          selectors.forEach(({ selector, specificity, sourceLocation }) => {
+            const expectedSpecificity = calculateSpecificityThreshold(selector, Component, thresholdOptions);
+
+            it(`"${selector}" ([${specificity}])`, () => {
+              try {
+                expect(`[${String(specificity)}]`).toEqual(`[${String(expectedSpecificity)}]`);
+              } catch (error) {
+                // Get detailed breakdown for debugging when test fails
+                const result = calculateSpecificityThresholdWithBreakdown(selector, Component, thresholdOptions);
+                const breakdownInfo = formatSpecificityBreakdown(result.breakdown);
+
+                throw new Error(`${error.message}\n` + `Source: ${sourceLocation}\n` + `${breakdownInfo}`);
+              }
+            });
+          });
+        });
+      });
+      break;
+  }
 }
 
 // ESM exports
-export {
-  calculateSpecificity,
-  calculateSpecificityThreshold,
-  getComponentSelectors,
-  compareSpecificity,
-  getMoreSpecific,
-  parseSelector,
-  hasClassName,
-  countClassOccurrences,
-  getClassNames,
-  hasPseudoClass,
-  countPseudoClassOccurrences,
-  hasPseudoElement,
-  hasElements,
-  stripNotSelectors,
-  stripWhereSelectors,
-  stripSpecialSelectors,
-  detectNot
-};
+export { presets, calculateSpecificity, calculateSpecificityThreshold, calculateSpecificityThresholdWithBreakdown, formatSpecificityBreakdown, getComponentSelectors, getSelectorsSpecificity, compareSpecificity, getMoreSpecific, parseSelector, hasClassName, countClassOccurrences, getClassNames, hasPseudoClass, countPseudoClassOccurrences, hasPseudoElement, hasElements, stripNotSelectors, stripWhereSelectors, stripSpecialSelectors, detectNot, testSpecificity };
+
+// Export types for TypeScript consumers
+export type { SelectorInfo, Component, ComponentTuple, GetComponentSelectorsOptions, ParsedSelector, SpecificityBreakdown, SpecificityThresholdResult, SpecificityThresholdOptions, TestSpecificityOptions };
