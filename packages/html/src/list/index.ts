@@ -1,4 +1,5 @@
 export * from './list.spec';
+export * from './list-container.spec';
 export * from './list-angular.spec';
 export * from './list-item.spec';
 export * from './list-content';

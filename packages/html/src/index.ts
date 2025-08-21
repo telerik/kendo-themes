@@ -145,3 +145,9 @@ export * from './table/index';
 
 // CSS Utilis
 export * from './utils/index';
+
+// Ripple
+export * from './ripple/index';
+
+// PDF
+export * from './pdf/index';

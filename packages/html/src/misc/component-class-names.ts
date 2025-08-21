@@ -30,21 +30,28 @@ export const optionClassNames = (componentClassName: string, props: any) => {
 };
 
 export const stateClassNames = (_componentClassName: string | undefined, props: any) => {
-  return classNames({
-    "k-valid": props.valid,
-    "k-invalid": props.invalid,
-    "k-hover": props.hover,
-    "k-focus": props.focus,
-    "k-checked": props.checked,
-    "k-active": props.active,
-    "k-selected": props.selected,
-    "k-disabled": props.disabled,
-    "k-indeterminate": props.indeterminate && !props.checked,
-    "k-loading": props.loading,
-    "k-empty": props.empty,
-    "k-readonly": props.readonly,
-    "k-highlighted": props.highlighted,
-  });
+  const { valid, invalid, hover, focus, checked, active, selected, disabled, indeterminate, loading, empty, readonly, highlighted, ...other } = props;
+  return classNames(
+    {
+      "k-valid": valid,
+      "k-invalid": invalid,
+      "k-hover": hover,
+      "k-focus": focus,
+      "k-checked": checked,
+      "k-active": active,
+      "k-selected": selected,
+      "k-disabled": disabled,
+      "k-indeterminate": indeterminate && !checked,
+      "k-loading": loading,
+      "k-empty": empty,
+      "k-readonly": readonly,
+      "k-highlighted": highlighted,
+    },
+    Object.keys(other).reduce((acc, key) => {
+      acc[`k-${key}`] = other[key];
+      return acc;
+    }, {})
+  );
 };
 
 /**
