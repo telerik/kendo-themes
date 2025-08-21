@@ -123,7 +123,7 @@ $kendo-input-focus-bg: $kendo-input-bg !default;
 
 /// The border color of the focused solid Input components.
 /// @group input
-$kendo-input-focus-border: k-color(primary) !default;
+$kendo-input-focus-border: k-color(primary-on-surface) !default;
 
 /// The text color of the disabled solid Input components.
 /// @group input
@@ -171,7 +171,7 @@ $kendo-input-outline-focus-bg: k-color(app-surface) !default;
 
 /// The border color of the focused outline Input components.
 /// @group input
-$kendo-input-outline-focus-border: k-color(primary) !default;
+$kendo-input-outline-focus-border: k-color(primary-on-surface) !default;
 
 /// The text color of the disabled outline Input components.
 /// @group input
@@ -219,7 +219,7 @@ $kendo-input-flat-focus-bg: k-color(app-surface) !default;
 
 /// The border color of the focused flat Input components.
 /// @group input
-$kendo-input-flat-focus-border: k-color(primary) !default;
+$kendo-input-flat-focus-border: k-color(primary-on-surface) !default;
 
 /// The text color of the disabled flat Input components.
 /// @group input
@@ -267,7 +267,7 @@ $kendo-picker-focus-bg: k-color(surface-alt) !default;
 
 /// The border color of the focused solid Picker components.
 /// @group input
-$kendo-picker-focus-border: k-color(primary)  !default;
+$kendo-picker-focus-border: k-color(primary-on-surface) !default;
 
 /// The text color of the disabled solid Picker components.
 /// @group input
@@ -315,7 +315,7 @@ $kendo-picker-outline-focus-bg: k-color(app-surface) !default;
 
 /// The border color of the focused outline Picker components.
 /// @group input
-$kendo-picker-outline-focus-border: k-color(primary) !default;
+$kendo-picker-outline-focus-border: k-color(primary-on-surface) !default;
 
 /// The text color of the hovered and focused outline Picker components.
 /// @group input
@@ -327,7 +327,7 @@ $kendo-picker-outline-hover-focus-bg: k-color(app-surface) !default;
 
 /// The border color of the hovered and focused outline Picker components.
 /// @group input
-$kendo-picker-outline-hover-focus-border: k-color(primary) !default;
+$kendo-picker-outline-hover-focus-border: k-color(primary-on-surface) !default;
 
 /// The text color of the disabled outline Picker components.
 /// @group input
@@ -375,7 +375,7 @@ $kendo-picker-flat-focus-bg: k-color(app-surface) !default;
 
 /// The border color of the focused flat Picker components.
 /// @group input
-$kendo-picker-flat-focus-border: k-color(primary) !default;
+$kendo-picker-flat-focus-border: k-color(primary-on-surface) !default;
 
 /// The text color of the hovered and focused flat Picker components.
 /// @group input
