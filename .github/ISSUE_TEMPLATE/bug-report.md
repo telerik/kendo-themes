@@ -1,14 +1,14 @@
 ---
-name: Regression Report
-about: Something used to work and stopped working in a new release
-title: '[REGRESSION] '
-labels: regression
+name: Bug Report
+about: Create a report to help us improve the product
+title: '[BUG] '
+labels: Bug
 assignees: ''
 ---
 
-## Regression Description
+## Bug Description
 
-A clear and concise description of what the regression is.
+A clear and concise description of what the bug is.
 
 ## Steps to Reproduce
 
@@ -21,27 +21,15 @@ Steps to reproduce the behavior:
 
 ## Expected Behavior
 
-A clear and concise description of what you expected to happen (and what used to work).
+A clear and concise description of what you expected to happen.
 
 ## Actual Behavior
 
-A clear and concise description of what is happening now.
+A clear and concise description of what actually happened.
 
 ## Screenshots/Videos
 
-If applicable, add screenshots or videos to help explain the regression.
-
-## Version Information
-
-### Working Version
-
-- Package: [e.g., @progress/kendo-theme-default]
-- Version: [e.g., 5.12.0 - last known working version]
-
-### Broken Version
-
-- Package: [e.g., @progress/kendo-theme-default]
-- Version: [e.g., 6.0.0 - first broken version]
+If applicable, add screenshots or videos to help explain your problem.
 
 ## Environment Information
 
@@ -56,7 +44,7 @@ If applicable, add screenshots or videos to help explain the regression.
 
 ### Affected Component(s)
 
-Please specify the component(s) where the regression occurs: ___________
+Please specify the component(s) where the bug occurs: ___________
 
 ### Affected Suites
 
@@ -82,6 +70,7 @@ Please specify the component(s) where the regression occurs: ___________
 - OS: [e.g., Windows 11, macOS Monterey, Ubuntu 20.04]
 - Node version: [e.g., 18.17.0]
 - NPM version: [e.g., 9.6.7]
+- Package version: [e.g., @progress/kendo-theme-default@6.0.0]
 
 ## Reproduction Case
 
@@ -101,21 +90,13 @@ Please specify the component(s) where the regression occurs: ___________
 /* Your CSS here */
 ```
 
-## Impact Assessment
+## Workaround
 
-### Severity
-
-- [ ] Critical - Blocks major functionality
-- [ ] High - Significant impact on user experience
-- [ ] Medium - Noticeable but workaround exists
-- [ ] Low - Minor visual issue
-
-### Affected Users
-
-Describe how many users or what scenarios are affected by this regression.
+Is there a workaround for this issue?
+<!-- If you've found a temporary solution, please describe it -->
 
 ## Additional Context
 
-Add any other context about the regression problem here.
+Add any other context about the problem here.
 
 ---
