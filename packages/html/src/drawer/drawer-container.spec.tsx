@@ -23,8 +23,8 @@ export const DrawerContainer = (
         <div
             {...other}
             className={classNames(
-                props.className,
                 DRAWER_CONTAINER_CLASSNAME,
+                props.className,
             )}>
             {props.children}
         </div>
