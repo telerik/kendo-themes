@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { classNames, stateClassNames, States } from '../misc';
 import { TableHeaderWrap } from './table-header-wrap.spec';
+import Table from './table.spec';
 
 const TABLE_HEADER_CLASSNAME = 'k-table-header';
 
@@ -46,7 +47,7 @@ export const TableHeader = (
                 })
             )}>
             <TableHeaderWrap>
-                {children}
+                <Table>{children}</Table>
             </TableHeaderWrap>
         </div>
     );
