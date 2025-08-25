@@ -48,7 +48,11 @@ export const stateClassNames = (_componentClassName: string | undefined, props: 
       "k-highlighted": highlighted,
     },
     Object.keys(other).reduce((acc, key) => {
-      acc[`k-${key}`] = other[key];
+      if(key.startsWith("k-")) {
+        acc[key] = other[key];
+      } else {
+        acc[`k-${key}`] = other[key];
+      }
       return acc;
     }, {})
   );

@@ -305,19 +305,9 @@ function generateComponentClasses(component: any): Set<string> {
   // Add state class names
   if (component.states && Array.isArray(component.states)) {
     component.states.forEach((state: string) => {
-      if (state.startsWith("k-")) {
-        // Handle deprecated states that are already k-prefixed class names
+      if (state.startsWith(component.className)) {
+        // Handle deprecated states that are already k-component-*state* prefixed class names
         componentClassNames.add(state);
-      } else {
-        // Use the actual stateClassNames function for standard state names
-        const stateProps = { [state]: true };
-        const stateClasses = stateClassNames(component.className, stateProps);
-        if (stateClasses) {
-          stateClasses
-            .split(" ")
-            .filter((c) => c.trim())
-            .forEach((className) => componentClassNames.add(className));
-        }
       }
     });
   }
