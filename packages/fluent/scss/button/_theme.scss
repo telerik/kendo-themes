@@ -159,8 +159,8 @@
         background-color: inherit;
     }
 
-    .k-disabled,
-    :disabled {
+    :where(.k-disabled),
+    :where(:disabled) {
 
         .k-button-solid {
             color: $kendo-button-disabled-text;
