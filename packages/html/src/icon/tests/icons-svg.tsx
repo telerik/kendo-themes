@@ -16,7 +16,7 @@ export default () =>(
 
             {Object.keys(SVGIcons).map((key, index) => (
                 <span key={index}>
-                    <SvgIcon icon={SVGIcons[key]} />
+                    <SvgIcon icon={SVGIcons[key]} className='k-icon'/>
                 </span>
             ))}
         </div>

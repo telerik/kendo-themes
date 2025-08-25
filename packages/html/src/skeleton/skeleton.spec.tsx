@@ -13,6 +13,9 @@ export type KendoSkeletonOptions = {
 };
 
 export type KendoSkeletonProps = KendoSkeletonOptions & {
+    /**
+     * @deprecated Use `variant` instead
+     */
     shape?: 'circle' | 'text' | 'rect'; // Deprecated: use variant instead
     animation?: false | 'wave' | 'pulse';
     style?: React.CSSProperties;
@@ -20,7 +23,7 @@ export type KendoSkeletonProps = KendoSkeletonOptions & {
 
 const defaultOptions = {
     variant: 'text' as const,
-    shape: 'text' as const, // Deprecated: use variant instead
+    shape: 'text' as const,
     animation: 'pulse' as const
 };
 
@@ -35,7 +38,7 @@ export const Skeleton = (
     } = props;
 
     // Use variant if provided, otherwise fall back to shape for backward compatibility
-    const effectiveVariant = variant || shape || defaultOptions.variant;
+    const effectiveVariant = `skeleton-${variant || shape || defaultOptions.variant}`;
 
     return (
         <span
