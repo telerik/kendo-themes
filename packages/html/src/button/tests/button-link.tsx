@@ -3,7 +3,7 @@ import { Button, TextButton } from '../../button';
 
 const styles = `
     #test-area {
-        grid-template-columns: 120px repeat(6, 1fr);
+        grid-template-columns: 120px repeat(${Button.states?.length + 1}, 1fr);
     }
 `;
 
@@ -13,11 +13,9 @@ export default () => (
         <div id="test-area" className="k-d-grid">
             <span></span>
             <span>Normal</span>
-            <span>Hover</span>
-            <span>Focus</span>
-            <span>Active</span>
-            <span>Selected</span>
-            <span>Disabled</span>
+            {Button.states?.map((state) => (
+                <span key={state}>{state.replace('k-', '').replace(/(?:^|\s)\w/g, (match) => match.toUpperCase())}</span>
+            ))}
             {[ ...Button.options.themeColor ].map((themeColor) => (
                 <>
                     <span>{themeColor}</span>

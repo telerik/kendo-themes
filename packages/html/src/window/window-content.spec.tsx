@@ -29,8 +29,8 @@ export const WindowContent = (
         <div
             {...other}
             className={classNames(
-                props.className,
-                WINDOW_CONTENT_CLASSNAME
+                WINDOW_CONTENT_CLASSNAME,
+                props.className
             )}>
             {children}
         </div>
