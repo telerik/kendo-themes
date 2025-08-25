@@ -16,6 +16,7 @@ const presets: Record<string, TestSpecificityOptions> = {
     maxComponents: Number.MAX_SAFE_INTEGER,
     maxElements: Number.MAX_SAFE_INTEGER,
     maxPseudoElements: Number.MAX_SAFE_INTEGER,
+    maxAttributes: Number.MAX_SAFE_INTEGER,
   },
   "2026Q2": {
     baseClass: true, // Requires changes in component suits
@@ -23,6 +24,7 @@ const presets: Record<string, TestSpecificityOptions> = {
     maxStates: 1, // Material theme is famous for :hover:focus:active selectors
     maxComponents: 2, // Reduce component nesting to 2 (k-grid -> k-button)
     maxElements: 0, // We should not have any element selectors
+    maxAttributes: 0, // We should not rely on any attributes, thats up to the a11y specs
   },
 } as const;
 
@@ -509,6 +511,7 @@ interface SpecificityBreakdown {
   states: string[];
   components: string[];
   unrecognizedClasses: string[];
+  attributes: string[];
   totalIds: number;
   totalClasses: number;
   totalElements: number;
@@ -536,6 +539,8 @@ interface SpecificityThresholdOptions {
   maxElements?: number;
   /** Maximum pseudo-elements allowed (defaults to 1) */
   maxPseudoElements?: number;
+  /** Maximum attribute selectors allowed (defaults to no limit) */
+  maxAttributes?: number;
 }
 
 
@@ -770,7 +775,7 @@ function analyzeSelectorPart(
  * Always includes breakdown - no separate function needed
  */
 function calculateSpecificityThreshold(selector: string, component: any | null = null, options: SpecificityThresholdOptions = {}): SpecificityThresholdResult {
-  const { baseClass = false, maxStates = Number.MAX_SAFE_INTEGER, maxComponents = Number.MAX_SAFE_INTEGER, maxElements = Number.MAX_SAFE_INTEGER, maxPseudoElements = Number.MAX_SAFE_INTEGER } = options;
+  const { baseClass = false, maxStates = Number.MAX_SAFE_INTEGER, maxComponents = Number.MAX_SAFE_INTEGER, maxElements = Number.MAX_SAFE_INTEGER, maxPseudoElements = Number.MAX_SAFE_INTEGER, maxAttributes = Number.MAX_SAFE_INTEGER } = options;
 
   let ids = 0;
   let classes = 0;
@@ -789,6 +794,7 @@ function calculateSpecificityThreshold(selector: string, component: any | null =
     states: [],
     components: [],
     unrecognizedClasses: [],
+    attributes: [],
     totalIds: 0,
     totalClasses: 0,
     totalElements: 0,
@@ -869,6 +875,12 @@ function calculateSpecificityThreshold(selector: string, component: any | null =
     elements += Math.min(1, maxElements);
   }
 
+  // Count attribute selectors (they contribute to classes in CSS specificity)
+  const parsed = parseSelector(strippedSelector);
+  const attributeCount = Math.min(parsed.attributes.length, maxAttributes);
+  classes += attributeCount;
+  breakdown.attributes = parsed.attributes.slice(0, maxAttributes);
+
   // Set final totals
   breakdown.totalIds = ids;
   breakdown.totalClasses = classes;
@@ -931,6 +943,10 @@ function formatSpecificityBreakdown(breakdown: SpecificityBreakdown): string {
     parts.push(`Components: ${breakdown.components.join(", ")}`);
   }
 
+  if (breakdown.attributes.length > 0) {
+    parts.push(`Attributes: ${breakdown.attributes.join(", ")}`);
+  }
+
   if (breakdown.unrecognizedClasses.length > 0) {
     parts.push(`❌ Unrecognized classes: ${breakdown.unrecognizedClasses.join(", ")}`);
   }
@@ -962,6 +978,8 @@ interface TestSpecificityOptions {
   maxElements?: number;
   /** Maximum pseudo-elements allowed (defaults to 1) */
   maxPseudoElements?: number;
+  /** Maximum attribute selectors allowed (defaults to no limit) */
+  maxAttributes?: number;
   /** Whether to enforce base className presence (new property name) */
   baseClass?: boolean;
 }
@@ -988,6 +1006,7 @@ function testSpecificity(theme: string, options: TestSpecificityOptions = {}, co
     maxComponents = 2,
     maxElements = 1,
     maxPseudoElements = 1,
+    maxAttributes,
     baseClass = enforceBaseClassName, // Use new name, fallback to old for compatibility
   } = options;
 
@@ -997,6 +1016,7 @@ function testSpecificity(theme: string, options: TestSpecificityOptions = {}, co
     maxComponents,
     maxElements,
     maxPseudoElements,
+    maxAttributes,
   };
 
   switch (scope) {
