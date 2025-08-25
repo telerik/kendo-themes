@@ -8,7 +8,7 @@ const states = [
     States.hover,
     States.focus,
     States.disabled,
-    'expanded'
+    'expanded' as const
 ];
 
 const options = {};
