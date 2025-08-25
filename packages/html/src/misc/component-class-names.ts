@@ -64,7 +64,7 @@ export const stateClassNames = (_componentClassName: string | undefined, props: 
  * @param variants - Single variant string, array of variants, or null
  * @returns Object with variant class names as keys and true as values
  */
-export function variantClassNames(baseClass: string, variants?: string | string[] | null): Record<string, boolean> {
+export function variantClassNames(_baseClass: string, variants?: string | string[] | null): Record<string, boolean> {
   if (!variants) return {};
 
   const variantArray = Array.isArray(variants) ? variants : [variants];
