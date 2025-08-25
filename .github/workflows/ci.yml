@@ -17,29 +17,6 @@ jobs:
     name: Compile themes
     uses: ./.github/workflows/_compile-themes.yml
 
-  test-units:
-    name: Test units
-    uses: ./.github/workflows/_test-units.yml
-
-  ci-test-units:
-    name: Status check > Unit
-    runs-on: ubuntu-latest
-    needs: [ test-units ]
-    steps:
-      - name: Done
-        run: echo "Done!"
-
-  test-integrations:
-    name: Test integrations
-    uses: ./.github/workflows/_test-integrations.yml
-
-  ci-test-integrations:
-    name: Status check > Integration
-    runs-on: ubuntu-latest
-    needs: [ test-integrations ]
-    steps:
-      - name: Done
-        run: echo "Done!"
 
   render-test-pages:
     name: Render test pages
@@ -59,6 +36,9 @@ jobs:
     name: Detect changes
     runs-on: ubuntu-latest
     needs: [ render-test-pages, create-screenshots ]
+
+    outputs:
+      snapshot_sha: ${{ steps.snapshot_sha.outputs.sha }}
 
     steps:
       - name: Checkout branch
@@ -98,11 +78,58 @@ jobs:
 
           git push
 
-          echo "Mark checks as successful"
+      - name: Get snapshot commit SHA
+        if: ${{ (env.HAS_CHANGES == 1 || env.HAS_NEW == 1) }}
+        id: snapshot_sha
+        run: echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
 
-          commit=$(git rev-parse HEAD)
-          ./build/mark-checks.sh $commit
 
+  set-commit-status:
+    name: Set commit status
+    runs-on: ubuntu-latest
+    needs: [ detect-changes, ci-lint-scripts, ci-lint-styles, ci-docs, ci-test-units, ci-test-integrations, ci-a11y ]
+    timeout-minutes: 30
+    if: ${{ always() && needs.detect-changes.outputs.snapshot_sha }}
+
+    permissions:
+      statuses: write
+
+    steps:
+      - name: Set visual snapshot commit status
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const results = [
+              ['${{ needs.ci-test-units.result }}', 'Status check > Unit'],
+              ['${{ needs.ci-test-integrations.result }}', 'Status check > Integration'],
+              ['${{ needs.ci-lint-scripts.result }}', 'Status check > Lint scripts'],
+              ['${{ needs.ci-lint-styles.result }}', 'Status check > Lint styles'],
+              ['${{ needs.ci-a11y.result }}', 'Status check > A11y'],
+              ['${{ needs.ci-docs.result }}', 'Status check > Docs'],
+              // Visual status will correspond to this detect-changes job succeeding (since snapshots updated successfully)
+              ['success', 'Status check > Visual']
+            ];
+
+            const mapState = (r) => {
+              if (r === 'success') return 'success';
+              if (r === 'cancelled' || r === 'skipped') return 'failure';
+              return 'failure';
+            };
+
+            const sha = '${{ needs.detect-changes.outputs.snapshot_sha }}';
+            const targetUrl = `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
+
+            await Promise.all(results.map(([result, contextName]) =>
+              github.rest.repos.createCommitStatus({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                sha,
+                context: contextName,
+                state: mapState(result),
+                target_url: targetUrl,
+                description: 'Automated visual snapshot commit'
+              })
+            ));
 
   ci-visual:
     name: Status check > Visual
@@ -130,7 +157,6 @@ jobs:
     name: Lint styles
     uses: ./.github/workflows/_lint-styles.yml
 
-
   ci-lint-styles:
     name: Status check > Lint styles
     runs-on: ubuntu-latest
@@ -150,6 +176,46 @@ jobs:
     name: Status check > A11y
     runs-on: ubuntu-latest
     needs: [ a11y ]
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+
+  docs:
+    name: Docs
+    needs: [ compile-themes ]
+    uses: ./.github/workflows/_docs-check.yml
+
+  ci-docs:
+    name: Status check > Docs
+    runs-on: ubuntu-latest
+    needs: [ docs ]
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+
+  test-units:
+    name: Test units
+    uses: ./.github/workflows/_test-units.yml
+
+  ci-test-units:
+    name: Status check > Unit
+    runs-on: ubuntu-latest
+    needs: [ test-units ]
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+
+  test-integrations:
+    name: Test integrations
+    uses: ./.github/workflows/_test-integrations.yml
+
+  ci-test-integrations:
+    name: Status check > Integration
+    runs-on: ubuntu-latest
+    needs: [ test-integrations ]
     steps:
       - name: Done
         run: echo "Done!"
