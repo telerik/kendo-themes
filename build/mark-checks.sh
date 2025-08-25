@@ -10,14 +10,13 @@ then
 fi
 
 declare -a checks=( \
-  'CI | Unit' \
-  'CI | Visual' \
   'Status check > Lint scripts' \
   'Status check > Lint styles' \
   'Status check > Visual' \
   'Status check > A11y' \
   'Status check > Integration' \
   'Status check > Unit' \
+  'Status check > Docs' \
   'Status check > HTML spec' \
 )
 
