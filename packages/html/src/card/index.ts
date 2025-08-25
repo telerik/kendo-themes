@@ -1,6 +1,7 @@
 export * from './card.spec';
 export * from './card-list.spec';
 export * from './card-group.spec';
+export * from './card-wrap.spec';
 export * from './card-callout';
 export * from './card-title';
 export * from './card-subtitle';
@@ -12,4 +13,3 @@ export * from './card-deck.spec';
 export * from './card-deck-scrollwrap.spec';
 export * from './templates/card-normal';
 export * from './templates/card-horizontal';
-``
