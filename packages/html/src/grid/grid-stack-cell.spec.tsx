@@ -18,7 +18,7 @@ export type KendoGridStackCellProps = {
 
 export type KendoGridStackCellState = { [K in (typeof states)[number]]?: boolean };
 
-export const GridStackCell: KendoComponent<KendoGridStackCellProps & React.HTMLAttributes<HTMLDivElement>> = (
+export const GridStackCell: KendoComponent<KendoGridStackCellProps & KendoGridStackCellState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGridStackCellProps &
         KendoGridStackCellState &
         React.HTMLAttributes<HTMLDivElement>

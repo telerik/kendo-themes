@@ -1,7 +1,8 @@
-import { Layout } from "..";
+import { StackLayout } from "..";
 
 export const StackLayoutNormal = ({ alignItems = "start", justifyContent = "start", ...other }: any) => (
-    <Layout type="stack" orientation="horizontal"
+    <StackLayout
+        orientation="horizontal"
         alignItems={alignItems}
         justifyContent={justifyContent}
         children={

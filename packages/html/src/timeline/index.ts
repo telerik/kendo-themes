@@ -5,7 +5,7 @@ export * from './timeline-event-list.spec';
 export * from './timeline-flag-wrap.spec';
 export * from './timeline-circle.spec';
 export * from './timeline-flag.spec';
-export * from './timeline-card.spec';
+export * from './timeline-card';
 export * from './timeline-card-title';
 export * from './timeline-card-callout';
 export * from './timeline-date-wrap.spec';

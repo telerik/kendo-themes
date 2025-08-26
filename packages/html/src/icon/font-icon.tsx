@@ -1,7 +1,7 @@
 import { classNames, optionClassNames, Size, ThemeColor } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-export const FONTICON_CLASSNAME = `k-icon k-font-icon`;
+export const FONTICON_CLASSNAME = `k-font-icon`;
 
 const states = [];
 
