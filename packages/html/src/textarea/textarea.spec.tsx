@@ -57,7 +57,7 @@ const defaultOptions = {
     suffixSeparator: true
 } as const;
 
-export const Textarea: KendoComponent<KendoTextareaProps & KendoTextareaState & React.HTMLAttributes<HTMLSpanElement>> = (
+export const Textarea: KendoComponent<KendoTextareaProps & KendoTextareaState & Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>> = (
     props: KendoTextareaProps &
         KendoTextareaState &
        Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>

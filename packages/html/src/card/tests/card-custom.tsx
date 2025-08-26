@@ -3,7 +3,7 @@ import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { Layout } from '../../layout';
 import { Avatar } from '../../avatar';
-import { Typography } from '../../typography';
+import { TypographyDisplay1, TypographyDisplay2, TypographyH2, TypographyH3 } from '../../typography';
 
 
 export default () =>(
@@ -53,8 +53,8 @@ export default () =>(
 
             <CardNormal>
                 <CardBody title="Sofia" subtitle="Sunny" className="k-text-center">
-                    <Typography type="display-1">☀️</Typography>
-                    <Typography type="display-2">2&deg;C</Typography>
+                    <TypographyDisplay1>☀️</TypographyDisplay1>
+                    <TypographyDisplay2>2&deg;C</TypographyDisplay2>
                 </CardBody>
                 <span className="k-separator"></span>
                 <ActionButtons alignment="stretched" className="k-card-actions">
@@ -73,17 +73,17 @@ export default () =>(
                     </Layout>
                     <Layout orientation="horizontal">
                         <div className="k-flex k-text-left">
-                            <Typography type="h3">SOF</Typography>
+                            <TypographyH3>SOF</TypographyH3>
                             <div>
                                 6 Dec 2017<br />
                                 10:30
                             </div>
                         </div>
-                        <Typography type="h2" className="k-flex k-text-center">
+                        <TypographyH2 className="k-flex k-text-center">
                             ✈️
-                        </Typography>
+                        </TypographyH2>
                         <div className="k-flex k-text-right">
-                            <Typography type="h3">LON</Typography>
+                            <TypographyH3>LON</TypographyH3>
                             <div>
                                 6 Dec 2017<br />
                                 12:30
@@ -93,17 +93,17 @@ export default () =>(
                     <hr className="k-hr" />
                     <Layout orientation="horizontal">
                         <div className="k-flex k-text-left">
-                            <Typography type="h3">LON</Typography>
+                            <TypographyH3>LON</TypographyH3>
                             <div>
                                 12 Dec 2017<br />
                                 18:30
                             </div>
                         </div>
-                        <Typography type="h2" className="k-flex k-text-center">
+                        <TypographyH2 className="k-flex k-text-center">
                             ✈️
-                        </Typography>
+                        </TypographyH2>
                         <div className="k-flex k-text-right">
-                            <Typography type="h3">SOF</Typography>
+                            <TypographyH3>SOF</TypographyH3>
                             <div>
                                 12 Dec 2017<br />
                                 22:30

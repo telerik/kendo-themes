@@ -1,9 +1,12 @@
-import { Size, ThemeColor } from '../misc';
-import FontIcon from './font-icon.spec';
-import SvgIcon from './svg-icon.spec';
+import { classNames, Size, ThemeColor } from '../misc';
+import FontIcon from './font-icon';
+import SvgIcon from './svg-icon';
 import * as SVGIcons from '@progress/kendo-svg-icons';
 
 import { KendoComponent } from '../_types/component';
+
+export const ICON_CLASSNAME = `k-icon`;
+
 const snakeToCamel = str =>
     str.replace(/([-_][a-z0-9])/gi, group =>
         group
@@ -73,29 +76,29 @@ export const Icon: KendoComponent<IconProps & React.HTMLAttributes<HTMLSpanEleme
 
         if (icon === 'none') {
             return (
-                <SvgIcon {...other} icon={icon} size={size} />
+                <SvgIcon {...other} className={classNames(props.className, ICON_CLASSNAME)} icon={icon} size={size} />
             );
         }
 
-        const iconSVG = snakeToCamel(`${icon}-icon`);
+        const iconSVG = !SVGIcons[icon] ? snakeToCamel(`${icon}-icon`) : icon;
 
         if (!SVGIcons[iconSVG]) {
             return <></>;
         }
 
         return (
-            <SvgIcon {...other} icon={SVGIcons[iconSVG]} size={size} themeColor={themeColor} rotate={rotate} flip={flip} viewBox={viewBox} />
+            <SvgIcon {...other} className={classNames(props.className, ICON_CLASSNAME)} icon={SVGIcons[iconSVG]} size={size} themeColor={themeColor} rotate={rotate} flip={flip} viewBox={viewBox} />
         );
     }
 
     return (
-        <FontIcon {...other} icon={icon} size={size} themeColor={themeColor} rotate={rotate} flip={flip} />
+        <FontIcon {...other} className={classNames(props.className, ICON_CLASSNAME)} icon={icon} size={size} themeColor={themeColor} rotate={rotate} flip={flip} />
     );
 };
 
 Icon.states = states;
 Icon.options = options;
 Icon.defaultOptions = defaultOptions;
-Icon.className = 'k-icon';
+Icon.className = ICON_CLASSNAME;
 
 export default Icon;

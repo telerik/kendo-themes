@@ -1,7 +1,8 @@
 import { classNames, optionClassNames, Size, ThemeColor } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-export const SVGICON_CLASSNAME = `k-icon k-svg-icon`;
+
+export const SVGICON_CLASSNAME = `k-svg-icon`;
 
 const states = [];
 
