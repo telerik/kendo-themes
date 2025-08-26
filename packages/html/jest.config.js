@@ -1,9 +1,9 @@
 module.exports = {
   preset: 'ts-jest',
-  testEnvironment: 'jsdom',
-  roots: ['<rootDir>/src/__tests__'],
+  testEnvironment: 'node',
+  roots: ['<rootDir>/tests'],
   testMatch: [
-    '**/__tests__/**/*.(test|spec).+(ts|tsx|js)'
+    '**/tests/**/*.(test|spec).+(ts|tsx|js)'
   ],
   transform: {
     '^.+\\.(ts|tsx)$': ['ts-jest', {
@@ -20,14 +20,7 @@ module.exports = {
     '!src/**/*.d.ts',
     '!src/**/*.spec.{ts,tsx}',
   ],
-  setupFilesAfterEnv: ['<rootDir>/src/__tests__/setup.ts'],
-  moduleNameMapping: {
-    '^../(.*)$': '<rootDir>/src/$1'
-  },
   testPathIgnorePatterns: [
-    '/node_modules/',
-    '/tests/',
-    'src/.*\\.spec\\.(ts|tsx)$',
-    'src/__tests__/setup.ts'
+    '/node_modules/'
   ]
 };
