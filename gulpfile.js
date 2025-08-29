@@ -26,7 +26,7 @@ function getArg(key, argsArr) {
 // #region helpers
 function copyFilesToDist( cwds, options ) {
     const fileContent =  `@forward "../scss/index.scss";\n@use "../scss/index.scss" as *;\n\n@include kendo-theme--styles();`
-    const utilsFileContent = `@use "../scss/index.import.scss" as *;\n\n@include kendo-utils();`
+    const utilsFileContent = `@forward "../scss/index.import.scss";\n@use "../scss/index.import.scss" as *;\n\n@include kendo-utils();`
     const coreFileContent = `@use "../scss/index.scss" as *;\n\n@include core-styles();`
 
     cwds.forEach( cwd => {
