@@ -380,7 +380,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-badge-lg-padding-x</td>
     <td>Number</td>
     <td><code>calc( $kendo-badge-md-padding-x * 1.5 )</code></td>
-    <td><code>0.975em</code></td>
+    <td><code>0.9750000000000001em</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Badge.</div></div>
@@ -410,7 +410,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-badge-lg-padding-y</td>
     <td>Number</td>
     <td><code>calc( $kendo-badge-md-padding-y * 1.5 )</code></td>
-    <td><code>0.525em</code></td>
+    <td><code>0.5249999999999999em</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Badge.</div></div>
@@ -562,7 +562,7 @@ The following table lists the available variables for customizing the Bootstrap 
         min-width: $kendo-badge-lg-min-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"0.325em","padding-y":"0.175em","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.175em * 2 + 1px * 2)"</li><li>md: "padding-x":"0.65em","padding-y":"0.35em","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.35em * 2 + 1px * 2)"</li><li>lg: "padding-x":"0.975em","padding-y":"0.525em","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.525em * 2 + 1px * 2)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"0.325em","padding-y":"0.175em","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.175em * 2 + 1px * 2)"</li><li>md: "padding-x":"0.65em","padding-y":"0.35em","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.35em * 2 + 1px * 2)"</li><li>lg: "padding-x":"0.9750000000000001em","padding-y":"0.5249999999999999em","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.525em * 2 + 1px * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Badge.</div></div>
@@ -1042,7 +1042,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-breadcrumb-sm-line-height</td>
     <td>Number</td>
     <td><code>math.div( 20, 14 )</code></td>
-    <td><code>1.4285714286</code></td>
+    <td><code>1.4285714285714286</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line-height of the small Breadcrumb.</div></div>
@@ -1997,7 +1997,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-button-sm-line-height</td>
     <td>Number</td>
     <td><code>math.div( 20, 14 )</code></td>
-    <td><code>1.4285714286</code></td>
+    <td><code>1.4285714285714286</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the small Button.</div></div>
@@ -13168,7 +13168,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-input-sm-line-height</td>
     <td>Number</td>
     <td><code>math.div( 20, 14 )</code></td>
-    <td><code>1.4285714286</code></td>
+    <td><code>1.4285714285714286</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Input components.</div></div>
@@ -29021,7 +29021,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-treeview-sm-line-height</td>
     <td>Number</td>
     <td><code>math.div( 20, 14 )</code></td>
-    <td><code>1.4285714286</code></td>
+    <td><code>1.4285714285714286</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small TreeView.</div></div>
