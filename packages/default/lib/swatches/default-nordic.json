@@ -109,22 +109,22 @@
                 "primary": {
                     "name": "Primary",
                     "type": "color",
-                    "value": "#1274AC"
+                    "value": "#e7607b"
                 },
                 "primary-hover": {
                     "name": "Primary Hover",
                     "type": "color",
-                    "value": "#10689B"
+                    "value": "#DA2146"
                 },
                 "primary-active": {
                     "name": "Primary Active",
                     "type": "color",
-                    "value": "#0E5D8A"
+                    "value": "#B11B39"
                 },
                 "primary-emphasis": {
                     "name": "Primary Emphasis",
                     "type": "color",
-                    "value": "#71ACCD"
+                    "value": "#EF95A7"
                 },
                 "primary-on-subtle": {
                     "name": "Primary On Subtle",
