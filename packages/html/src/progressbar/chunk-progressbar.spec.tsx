@@ -1,6 +1,7 @@
 import { classNames, stateClassNames, States, } from '../misc';
 import { PROGRESSBAR_CLASSNAME } from './progressbar.spec';
 
+import { KendoComponent } from '../_types/component';
 export const CHUNKPROGRESSBAR_CLASSNAME = `k-chunk-progressbar`;
 
 const isSelected = (progress: number, index: number) => (index <= progress - 1 ? true : false);
@@ -27,7 +28,7 @@ const defaultOptions = {
     progress: 0
 };
 
-export const ChunkProgressBar = (
+export const ChunkProgressBar: KendoComponent<KendoChunkProgressBarProps & KendoChunkProgressBarState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoChunkProgressBarProps &
         KendoChunkProgressBarState &
         React.HTMLAttributes<HTMLDivElement>

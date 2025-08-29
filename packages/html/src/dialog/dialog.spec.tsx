@@ -2,6 +2,7 @@ import { ActionButtons } from '../action-buttons';
 import { Button } from '../button';
 import { classNames, optionClassNames, ThemeColor } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const DIALOG_CLASSNAME = `k-dialog`;
 
 const states = [];
@@ -31,7 +32,7 @@ export type KendoDialogProps = KendoDialogOptions & {
     modal?: boolean;
 };
 
-export const Dialog = (
+export const Dialog: KendoComponent<KendoDialogProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDialogProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

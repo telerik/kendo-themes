@@ -1,6 +1,7 @@
 import { Icon } from '../icon';
 import { classNames, stateClassNames, States } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const MENULISTITEM_CLASSNAME = `k-menu-item`;
 
 const states = [
@@ -34,7 +35,7 @@ const defaultOptions = {
     iconPosition: 'before'
 } as const;
 
-export const MenuListItem = (
+export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuListItemState & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoMenuListItemProps &
         KendoMenuListItemState &
         React.HTMLAttributes<HTMLLIElement>

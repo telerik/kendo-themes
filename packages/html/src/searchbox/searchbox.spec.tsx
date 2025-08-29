@@ -8,6 +8,7 @@ import {
 } from '../input';
 import { Icon } from '../icon';
 
+import { KendoComponent } from '../_types/component';
 export const SEARCHBOX_CLASSNAME = `k-searchbox`;
 
 const states = [
@@ -50,7 +51,7 @@ const defaultOptions = {
     fillMode: Input.defaultOptions.fillMode
 };
 
-export const Searchbox = (
+export const Searchbox: KendoComponent<KendoSearchboxProps & KendoSearchboxState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoSearchboxProps &
         KendoSearchboxState &
         React.HTMLAttributes<HTMLSpanElement>

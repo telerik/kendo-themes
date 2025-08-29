@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, Size } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const DATATABLE_CLASSNAME = `k-data-table`;
 
 const states = [];
@@ -16,7 +17,7 @@ const defaultOptions = {
     size: Size.medium,
 };
 
-export const DataTable = (
+export const DataTable: KendoComponent<KendoDataTableOptions & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDataTableOptions &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

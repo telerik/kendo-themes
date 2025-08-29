@@ -1,8 +1,9 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 const className = `k-calendar-tbody`;
 
-export const CalendarTbody = (
+export const CalendarTbody: KendoComponent<React.HTMLAttributes<HTMLTableSectionElement>> = (
     props: React.HTMLAttributes<HTMLTableSectionElement>
 ) => {
     const {
@@ -17,3 +18,5 @@ export const CalendarTbody = (
         </tbody>
     );
 };
+
+CalendarTbody.className = className;

@@ -1,4 +1,4 @@
-import { Typography } from '../../typography';
+import { TypographyCode, TypographyDisplay1, TypographyDisplay2, TypographyDisplay3, TypographyDisplay4, TypographyH1, TypographyH2, TypographyH3, TypographyH4, TypographyH5, TypographyH6, TypographyP, TypographyPre } from '../../typography';
 import { Button } from '../../button';
 
 const styles = `
@@ -8,7 +8,7 @@ const styles = `
    }
 `;
 
-export default () =>(
+export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
@@ -17,39 +17,39 @@ export default () =>(
             <span>Other Types</span>
 
             <section>
-                <Typography type="h1">Heading 1</Typography>
-                <Typography type="h2">Heading 2</Typography>
-                <Typography type="h3">Heading 3</Typography>
-                <Typography type="h4">Heading 4</Typography>
-                <Typography type="h5">Heading 5</Typography>
-                <Typography type="h6">Heading 6</Typography>
+                <TypographyH1>Heading 1</TypographyH1>
+                <TypographyH2>Heading 2</TypographyH2>
+                <TypographyH3>Heading 3</TypographyH3>
+                <TypographyH4>Heading 4</TypographyH4>
+                <TypographyH5>Heading 5</TypographyH5>
+                <TypographyH6>Heading 6</TypographyH6>
             </section>
 
             <section>
-                <Typography type="p">A paragraph of regular body text with <strong>bold</strong>, <em>italic</em>, and <u>underline</u>. Also, the <Typography type="code">code</Typography> tag is available in typography.</Typography>
+                <TypographyP>A paragraph of regular body text with <strong>bold</strong>, <em>italic</em>, and <u>underline</u>. Also, the <TypographyCode>code</TypographyCode> tag is available in typography.</TypographyP>
 
                 <Button>Button</Button>
 
-                <Typography type="pre">
-<Typography type="code">{`const handleChange = ({ target }) => {
+                <TypographyPre>
+                    <TypographyCode>{`const handleChange = ({ target }) => {
     const { name, value } = target;
     const newData = Object.assign({}, data, { [name]: value });
     setData(newData);
-}`}</Typography>
-                </Typography>
+}`}</TypographyCode>
+                </TypographyPre>
             </section>
 
             <span>Displays</span>
             <span></span>
 
             <section>
-                <Typography type="display-1">Display 1</Typography>
-                <Typography type="display-2">Display 2</Typography>
-                <Typography type="display-3">Display 3</Typography>
-                <Typography type="display-4">Display 4</Typography>
+                <TypographyDisplay1>Display 1</TypographyDisplay1>
+                <TypographyDisplay2>Display 2</TypographyDisplay2>
+                <TypographyDisplay3>Display 3</TypographyDisplay3>
+                <TypographyDisplay4>Display 4</TypographyDisplay4>
             </section>
 
             <section></section>
-            </div>
+        </div>
     </>
 );

@@ -13,6 +13,7 @@ import { ActionSheet, ActionSheetHeader, ActionSheetFooter, KendoActionSheetProp
 import { ColorEditor } from "../coloreditor";
 
 
+import { KendoComponent } from '../_types/component';
 export const COLORPICKER_CLASSNAME = `k-colorpicker`;
 
 const states = [
@@ -61,7 +62,7 @@ const defaultOptions = {
     fillMode: Picker.defaultOptions.fillMode
 };
 
-export const ColorPicker = (
+export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPickerState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoColorPickerProps &
         KendoColorPickerState &
         React.HTMLAttributes<HTMLSpanElement>

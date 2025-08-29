@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const SPREADSHEET_CLASSNAME = `k-spreadsheet`;
 
 const states = [];
@@ -8,7 +9,7 @@ const options = {};
 
 const defaultOptions = {};
 
-export const Spreadsheet = (
+export const Spreadsheet: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {

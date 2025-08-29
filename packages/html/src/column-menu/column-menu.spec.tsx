@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, Size } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const COLUMNMENU_CLASSNAME = `k-column-menu`;
 
 const states = [];
@@ -21,7 +22,7 @@ const defaultOptions = {
     size: Size.medium
 };
 
-export const ColumnMenu = (
+export const ColumnMenu: KendoComponent<KendoColumnMenuProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoColumnMenuProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

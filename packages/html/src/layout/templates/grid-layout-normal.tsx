@@ -1,7 +1,7 @@
-import { Layout } from "..";
+import { GridLayout } from "..";
 
 export const GridLayoutNormal = ({ alignItems = "start", justifyItems = "start", ...other }: any) => (
-    <Layout type="grid"
+    <GridLayout
         alignItems={alignItems}
         justifyItems={justifyItems}
         children={

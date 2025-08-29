@@ -4,6 +4,7 @@ import { TreeviewGroup } from './treeview-group';
 import { classNames, stateClassNames, States } from '../misc';
 import TreeviewLeaf from './treeview-leaf';
 
+import { KendoComponent } from '../_types/component';
 export const TREEVIEWITEM_CLASSNAME = `k-treeview-item`;
 
 const states = [
@@ -34,7 +35,7 @@ export type KendoTreeviewItemProps = {
 
 export type KendoTreeviewItemState = { [K in (typeof states)[number]]?: boolean };
 
-export const TreeviewItem = (
+export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeviewItemState & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoTreeviewItemProps &
         KendoTreeviewItemState &
         React.HTMLAttributes<HTMLLIElement>

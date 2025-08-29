@@ -14,6 +14,7 @@ import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 import { DataTable, TableBody, TableFooter, TableGroupStickyHeader, TableHeader, TableList, TableListGroupRow, TableListRow, TableListTd, TableListTh, TableRow, TableTh, TableThead } from '../table';
 
+import { KendoComponent } from '../_types/component';
 export const DROPDOWNGRID_CLASSNAME = `k-dropdowngrid`;
 
 const states = [
@@ -64,7 +65,7 @@ export type KendoDropdownGridProps = KendoDropdownGridOptions & {
 
 export type KendoDropdownGridState = { [K in (typeof states)[number]]?: boolean };
 
-export const DropdownGrid = (
+export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdownGridState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDropdownGridProps &
         KendoDropdownGridState &
         React.HTMLAttributes<HTMLSpanElement>

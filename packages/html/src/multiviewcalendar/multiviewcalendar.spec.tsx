@@ -1,6 +1,7 @@
 import { classNames, Size } from '../misc';
 import { Calendar } from '../calendar';
 
+import { KendoComponent } from '../_types/component';
 const MULTIVIEWCALENDAR_CLASSNAME = `k-calendar-range`;
 
 const states = [];
@@ -31,7 +32,7 @@ const defaultOptions = {
     calendarView: 'month'
 } as const;
 
-export const MultiViewCalendar = (
+export const MultiViewCalendar: KendoComponent<KendoMultiViewCalendarProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoMultiViewCalendarProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

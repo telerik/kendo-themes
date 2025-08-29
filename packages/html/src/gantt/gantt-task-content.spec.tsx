@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 import { Icon } from '../icon';
 
+import { KendoComponent } from '../_types/component';
 export const GANTTTASKCONTENT_CLASSNAME = 'k-task-content';
 
 const states = [];
@@ -13,7 +14,7 @@ export type KendoGanttTaskContentProps = {
 
 const defaultOptions = {};
 
-export const GanttTaskContent = (
+export const GanttTaskContent: KendoComponent<KendoGanttTaskContentProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGanttTaskContentProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

@@ -8,6 +8,7 @@ import {
 } from '../input';
 import { SpinButton } from '../spinbutton';
 
+import { KendoComponent } from '../_types/component';
 export const DATEINPUT_CLASSNAME = `k-dateinput`;
 
 const states = [
@@ -48,7 +49,7 @@ const defaultOptions = {
     fillMode: Input.defaultOptions.fillMode
 };
 
-export const DateInput = (
+export const DateInput: KendoComponent<KendoDateInputProps & KendoDateInputState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDateInputProps &
         KendoDateInputState &
         React.HTMLAttributes<HTMLSpanElement>

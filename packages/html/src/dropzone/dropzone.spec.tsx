@@ -1,6 +1,7 @@
 import { Icon } from '../icon';
 import { classNames, stateClassNames, States } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const DROPZONE_CLASSNAME = `k-external-dropzone`;
 
 const states = [
@@ -23,7 +24,7 @@ const defaultOptions = {
     hint: "Drag and drop files here to upload",
 };
 
-export const Dropzone = (
+export const Dropzone: KendoComponent<KendoDropzoneProps & KendoDropzoneState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDropzoneProps &
         KendoDropzoneState &
         React.HTMLAttributes<HTMLDivElement>

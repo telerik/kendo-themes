@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, stateClassNames, States, Size, Roundness } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const CHECKBOX_CLASSNAME = `k-checkbox`;
 
 const states = [
@@ -34,7 +35,7 @@ const defaultOptions = {
     rounded: Roundness.medium
 };
 
-export const Checkbox = (
+export const Checkbox: KendoComponent<CheckboxProps & CheckboxState & React.HTMLAttributes<HTMLInputElement>> = (
     props: CheckboxProps & CheckboxState & React.HTMLAttributes<HTMLInputElement>
 ) => {
     const {

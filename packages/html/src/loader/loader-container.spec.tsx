@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, Size, ThemeColor } from '../misc';
 import Loader from './loader.spec';
 
+import { KendoComponent } from '../_types/component';
 export const LOADERCONTAINER_CLASSNAME = `k-loader-container`;
 
 const states = [];
@@ -43,7 +44,7 @@ const defaultOptions = {
     panel: false
 } as const;
 
-export const LoaderContainer = (
+export const LoaderContainer: KendoComponent<KendoLoaderContainerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoLoaderContainerProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

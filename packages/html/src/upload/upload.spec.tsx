@@ -3,6 +3,7 @@ import { Button } from '../button';
 import { classNames, stateClassNames, States } from '../misc';
 import { UploadDropzone } from './upload-dropzone';
 
+import { KendoComponent } from '../_types/component';
 export const UPLOAD_CLASSNAME = `k-upload`;
 
 const states = [
@@ -26,7 +27,7 @@ const defaultOptions = {
 
 export type KendoUploadState = { [K in (typeof states)[number]]?: boolean };
 
-export const Upload = (
+export const Upload: KendoComponent<KendoUploadProps & KendoUploadState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoUploadProps &
         KendoUploadState &
         React.HTMLAttributes<HTMLDivElement>

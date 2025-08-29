@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const RADIOITEM_CLASSNAME = `k-radio-list-item`;
 
 const states = [];
@@ -10,7 +11,7 @@ const defaultOptions = {};
 
 export type KendoRadioItemState = { [K in (typeof states)[number]]?: boolean };
 
-export const RadioItem = (
+export const RadioItem: KendoComponent<KendoRadioItemState & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoRadioItemState &
      React.HTMLAttributes<HTMLLIElement>
 ) => {

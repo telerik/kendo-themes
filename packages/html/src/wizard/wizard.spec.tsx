@@ -1,5 +1,6 @@
 import { classNames, stateClassNames, States } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const WIZZARD_CLASSNAME = `k-wizard`;
 
 const states = [
@@ -20,7 +21,7 @@ const defaultOptions = {
     contentPosition: "right",
 };
 
-export const Wizard = (
+export const Wizard: KendoComponent<KendoWizardProps & KendoWizardState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoWizardProps & KendoWizardState & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {

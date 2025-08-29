@@ -6,7 +6,6 @@ const options = {};
 
 export type KendoLayoutProps = {
     gap?: string;
-    type?: null | 'stack' | 'flex' | 'grid';
     orientation?: null | 'horizontal' | 'vertical';
     alignItems?: null | 'start' | 'center' | 'end' | 'stretch';
     justifyContent?: null | 'start' | 'center' | 'end' | 'stretch';
@@ -15,7 +14,6 @@ export type KendoLayoutProps = {
 };
 
 const defaultOptions = {
-    type: null,
     orientation: null,
     alignItems: null,
     justifyContent: null,
@@ -29,7 +27,6 @@ export const Layout = (
 ) => {
     const {
         gap,
-        type = defaultOptions.type,
         orientation = defaultOptions.orientation,
         alignItems = defaultOptions.alignItems,
         justifyContent = defaultOptions.justifyContent,
@@ -46,7 +43,6 @@ export const Layout = (
             className={classNames(
                 props.className,
                 {
-                    [`k-${type}-layout`]: type,
                     [`k-${kendoThemeMaps.orientationMap[orientation!] || orientation}`]: orientation,
                     [`k-align-items-${alignItems}`]: alignItems,
                     [`k-justify-content-${justifyContent}`]: justifyContent,

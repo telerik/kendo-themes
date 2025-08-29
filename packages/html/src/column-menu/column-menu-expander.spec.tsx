@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { Icon } from '../icon';
 import { ColumnMenuItem, ColumnMenuItemContent } from '../column-menu';
 
+import { KendoComponent } from '../_types/component';
 export const COLUMNMENUEXPANDER_CLASSNAME = `k-expander`;
 
 const states = [];
@@ -20,7 +21,7 @@ export type KendoColumnMenuExpanderProps = {
 
 const defaultOptions = {};
 
-export const ColumnMenuExpander = (
+export const ColumnMenuExpander: KendoComponent<KendoColumnMenuExpanderProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoColumnMenuExpanderProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

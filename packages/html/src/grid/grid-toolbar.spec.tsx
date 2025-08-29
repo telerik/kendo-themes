@@ -1,9 +1,10 @@
 import { classNames } from '../misc';
 import { Toolbar, KendoToolbarProps } from '../toolbar';
 
+import { KendoComponent } from '../_types/component';
 const className = `k-grid-toolbar`;
 
-export const GridToolbar = (
+export const GridToolbar: KendoComponent<KendoToolbarProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoToolbarProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => (
@@ -17,3 +18,5 @@ export const GridToolbar = (
         {props.children}
     </Toolbar>
 );
+
+GridToolbar.className = className;

@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, Size } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const TABLE_CLASSNAME = `k-table`;
 
 const states = [];
@@ -14,7 +15,7 @@ export type KendoTableOptions = {
   size?: (typeof options.size)[number] | null;
 };
 
-export const Table = (
+export const Table: KendoComponent<KendoTableOptions & React.HTMLAttributes<HTMLTableElement>> = (
     props: KendoTableOptions &
         React.HTMLAttributes<HTMLTableElement>
 ) => {

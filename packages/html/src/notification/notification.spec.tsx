@@ -1,6 +1,7 @@
 import { Icon } from '../icon';
 import { classNames, optionClassNames, ThemeColor } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const NOTIFICATION_CLASSNAME = `k-notification`;
 
 const states = [];
@@ -37,7 +38,7 @@ const defaultOptions = {
     closable: false
 };
 
-export const Notification = (
+export const Notification: KendoComponent<KendoNotificationProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoNotificationProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

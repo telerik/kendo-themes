@@ -7,6 +7,7 @@ import { Popup } from '../popup';
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 import { Input } from '../input';
 
+import { KendoComponent } from '../_types/component';
 export const DATERANGEPICKER_CLASSNAME = `k-daterangepicker`;
 
 const states = [
@@ -45,7 +46,7 @@ export type KendoDateRangePickerProps = KendoDateRangePickerOptions & {
 
 export type KendoDateRangePickerState = { [K in (typeof states)[number]]?: boolean };
 
-export const DateRangePicker = (
+export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDateRangePickerState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDateRangePickerProps &
         KendoDateRangePickerState &
         React.HTMLAttributes<HTMLSpanElement>

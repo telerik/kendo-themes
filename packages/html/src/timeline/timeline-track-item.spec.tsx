@@ -1,5 +1,6 @@
 import { States, classNames, stateClassNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const TIMELINETRACKITEM_CLASSNAME = `k-timeline-track-item`;
 
 const states = [
@@ -13,7 +14,7 @@ export type KendoTimelineTrackItemOptions = {
 
 export type KendoTimelineTrackItemState = { [K in (typeof states)[number]]?: boolean };
 
-export const TimelineTrackItem = (
+export const TimelineTrackItem: KendoComponent<KendoTimelineTrackItemOptions & KendoTimelineTrackItemState & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoTimelineTrackItemOptions &
         KendoTimelineTrackItemState &
         React.HTMLAttributes<HTMLLIElement>

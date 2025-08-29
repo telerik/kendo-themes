@@ -1,3 +1,3 @@
 export * from './icon.spec';
-export * from './font-icon.spec';
-export * from './svg-icon.spec';
+export * from './font-icon';
+export * from './svg-icon';

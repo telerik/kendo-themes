@@ -1,0 +1,48 @@
+name: Test HTML spec
+
+on:
+  workflow_call:
+
+concurrency:
+  group: test-html-spec-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v4
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: |
+          npm ci --no-audit --no-fund
+
+      - name: Build scripts
+        run: |
+          npm run build
+
+      - name: Check types
+        run: |
+          npm run typecheck -w packages/html
+
+      - name: Run Jest tests
+        run: |
+          npm run test:html
