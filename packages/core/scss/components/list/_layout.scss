@@ -118,18 +118,19 @@
             inset-inline-end: 0;
         }
     }
-    .k-list-item-text,
-    .k-list-header-text,
-    .k-list-optionlabel {
-        &::before {
-            content: "\200b";
-            width: 0px;
-            overflow: hidden;
-        }
+
+    .k-list-item-text:empty,
+    .k-list-header-text:empty {
+        height: 1lh;
     }
+
     .k-list-optionlabel {
         @extend .k-list-item !optional;
         column-gap: 0;
+
+        &:empty {
+            height: calc(1lh + #{$kendo-list-md-item-padding-y} * 2)
+        }
     }
 
     .k-list-custom-value {
