@@ -22,7 +22,7 @@ function writeResultToDist(result, file) {
 
 function compileSassString(sassString) {
     return sass.compileString(sassString, {
-        loadPaths: [themeScssDir, nodeModulesDir]
+        loadPaths: [themeScssDir, nodeModulesDir],
     }).css;
 }
 // #endregion

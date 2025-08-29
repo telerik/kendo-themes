@@ -8,6 +8,8 @@ const options = {
     size: [ Size.small, Size.medium, Size.large ]
 };
 
+const GRID_VARIANTS = [] as const;
+
 export type KendoGridOptions = {
     size?: (typeof options.size)[number] | null;
 };
@@ -69,6 +71,7 @@ export const Grid = (
 
 Grid.states = states;
 Grid.options = options;
+Grid.variants = GRID_VARIANTS;
 Grid.className = GRID_CLASSNAME;
 Grid.defaultOptions = defaultOptions;
 

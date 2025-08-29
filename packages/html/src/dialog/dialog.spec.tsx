@@ -1,6 +1,7 @@
 import { ActionButtons } from '../action-buttons';
 import { Button } from '../button';
 import { classNames, optionClassNames, ThemeColor } from '../misc';
+import { WindowContent } from '../window/window-content.spec';
 
 export const DIALOG_CLASSNAME = `k-dialog`;
 
@@ -70,9 +71,9 @@ export const Dialog = (
                     </>}
                 </div>
                 }
-                <div className="k-window-content k-dialog-content">
+                <WindowContent className="k-dialog-content">
                     {props.children}
-                </div>
+                </WindowContent>
                 {actionButtons &&
                 <ActionButtons alignment={actionButtonsAlign} className="k-window-actions k-dialog-actions">
                     {actionButtons}

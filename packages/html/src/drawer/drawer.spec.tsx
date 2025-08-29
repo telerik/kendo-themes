@@ -1,5 +1,6 @@
 
 import { classNames } from '../misc';
+import { DrawerContainer } from './drawer-container.spec';
 
 export const DRAWER_CLASSNAME = `k-drawer`;
 
@@ -38,14 +39,14 @@ export const Drawer = (
     } = props;
 
     return (
-        <div className={classNames(
-            "k-drawer-container",
-            {
-                [`k-drawer-mini`]: mini && !expanded,
-                [`k-drawer-${mode}`]: mode,
-                [`k-drawer-expanded`]: expanded
-            }
-        )}>
+        <DrawerContainer
+            className={classNames(
+                {
+                    [`k-drawer-mini`]: mini && !expanded,
+                    [`k-drawer-${mode}`]: mode,
+                    [`k-drawer-expanded`]: expanded
+                }
+            )}>
             { mode === "overlay" &&
                 <div className="k-overlay"></div>
             }
@@ -64,7 +65,7 @@ export const Drawer = (
                 </div>
             </div>
             {props.children}
-        </div>
+        </DrawerContainer>
     );
 };
 
