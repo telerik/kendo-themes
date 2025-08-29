@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🏠 Kendo Design System Documentation
+    url: https://www.telerik.com/design-system/docs/
+    about: Official documentation for Kendo UI components and themes
+  - name: 🖌️ ThemeBuilder
+    url: https://www.telerik.com/themebuilder
+    about: Create and customize Kendo themes visually
+  - name: 🆘 Premium Support
+    url: https://www.telerik.com/account/support-tickets
+    about: Get dedicated technical support (for licensed users)
