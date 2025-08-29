@@ -109,6 +109,10 @@
         display: none;
     }
 
+    .k-calendar-td.k-empty {
+        pointer-events: none;
+    }
+
     @each $size, $size-props in $kendo-calendar-sizes {
         $_cell-font-size: map.get($size-props, cell-font-size);
 
