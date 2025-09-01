@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1-dev.2](https://github.com/telerik/kendo-themes/compare/v12.0.1-dev.1...v12.0.1-dev.2) (2025-09-01)
+
+
+### Bug Fixes
+
+* **calendar:** empty cells should not be interactive ([03e9f30](https://github.com/telerik/kendo-themes/commit/03e9f306dbe45ec35d1216c4cf604f60a6871ff6))
+* **default:** update incorrect colors in the nordic swatch ([3e33afb](https://github.com/telerik/kendo-themes/commit/3e33afb4171fd93a48eea952e425a8b55e1860b7))
+* **html:** remove draggable=true attribute from grid grouping header ([11c3230](https://github.com/telerik/kendo-themes/commit/11c3230b5e787c840156a2c3eb52be3cfc28b3d4))
+* **input:** adornments icon padding ([081af6b](https://github.com/telerik/kendo-themes/commit/081af6bfd344ac95e12a3578b9685cc9b5dcc132))
+* **map:** fix layer RTL styles ([fcbe297](https://github.com/telerik/kendo-themes/commit/fcbe297d8f5b6f7f7de78d01e0af28ad87692735))
+* **utils:** variable customization leads to an error ([48c7057](https://github.com/telerik/kendo-themes/commit/48c70570e5ff5c2664926a455c910f0c9d39690a))
+
+
+
+
+
 ## [12.0.1-dev.1](https://github.com/telerik/kendo-themes/compare/v12.0.1-dev.0...v12.0.1-dev.1) (2025-08-25)
 
 **Note:** Version bump only for package kendo-themes.repo
