@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1](https://github.com/telerik/kendo-themes/compare/v12.0.1-dev.2...v12.0.1) (2025-09-01)
+
+**Note:** Version bump only for package @progress/kendo-theme-core
+
+
+
+
+
 ## [12.0.1-dev.2](https://github.com/telerik/kendo-themes/compare/v12.0.1-dev.1...v12.0.1-dev.2) (2025-09-01)
 
 
