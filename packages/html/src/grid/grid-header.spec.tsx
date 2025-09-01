@@ -11,13 +11,14 @@ export const GridHeader = (
     React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        draggable
+        draggable,
+        ...other
     } = props;
 
     return (
 
         <div
-            {...props}
+            {...other}
             className={classNames(
                 props.className,
                 className,

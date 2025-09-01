@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-line-height</td>
     <td>Number</td>
     <td><code>$kendo-card-line-height</code></td>
-    <td><code>1.4285714286</code></td>
+    <td><code>1.4285714285714286</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Popover.</div></div>

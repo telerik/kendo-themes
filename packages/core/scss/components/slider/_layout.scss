@@ -348,20 +348,6 @@
         }
     }
 
-
-    // Slider tooltip
-    .k-slider-tooltip {
-        .k-callout-n,
-        .k-callout-s {
-            margin-inline-start: - list.slash( $kendo-tooltip-callout-size, 2 );
-        }
-
-        .k-callout-w,
-        .k-callout-e {
-            margin-block-start: - list.slash( $kendo-tooltip-callout-size, 2 );
-        }
-    }
-
     // RTL
     .k-slider-rtl {
         &.k-slider-horizontal {
