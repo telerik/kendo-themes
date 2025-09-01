@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1-dev.2](https://github.com/telerik/kendo-themes/compare/v12.0.1-dev.1...v12.0.1-dev.2) (2025-09-01)
+
+
+### Bug Fixes
+
+* **utils:** variable customization leads to an error ([48c7057](https://github.com/telerik/kendo-themes/commit/48c70570e5ff5c2664926a455c910f0c9d39690a))
+
+
+
+
+
 ## [12.0.1-dev.1](https://github.com/telerik/kendo-themes/compare/v12.0.1-dev.0...v12.0.1-dev.1) (2025-08-25)
 
 **Note:** Version bump only for package @progress/kendo-theme-utils
