@@ -42,15 +42,14 @@
     "postcss-selector-parser": "^7.1.0",
     "sassdoc": "^2.7.4",
     "semver": "^7.3.7",
-    "source-map": "^0.7.6",
-    "specificity": "^1.0.0",
     "stylelint": "^16.8.1",
     "stylelint-config-standard": "^39.0.0",
     "stylelint-config-standard-scss": "^15.0.0",
     "stylelint-scss": "^6.5.0",
     "ts-jest": "^29.4.0",
     "typescript": "^5.0.3",
-    "typescript-eslint": "^8.0.0"
+    "typescript-eslint": "^8.0.0",
+    "@jridgewell/source-map": "^0.3.10"
   },
   "peerDependencies": {
     "sass": "^1.63.6",
@@ -86,8 +85,5 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs}": "eslint",
     "*.{css,scss}": "stylelint"
-  },
-  "dependencies": {
-    "@jridgewell/source-map": "^0.3.10"
   }
 }
