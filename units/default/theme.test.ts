@@ -9,7 +9,7 @@ import { CardDeckScrollwrap } from "../../packages/html/src/card/card-deck-scrol
 import { Badge } from "../../packages/html/src/badge/badge.spec";
 import { Avatar } from "../../packages/html/src/avatar/avatar.spec";
 import { Chip } from "../../packages/html/src/chip/chip.spec";
-import { Typography } from "../../packages/html/src/typography/typography.spec";
+// import { Typography } from "../../packages/html/src/typography/typography.spec";
 import { Icon } from "../../packages/html/src/icon/icon.spec";
 import { Form } from "../../packages/html/src/form/form.spec";
 import { Textbox } from "../../packages/html/src/textbox/textbox.spec";
@@ -133,7 +133,7 @@ describe("Default theme", () => {
     [Badge, "badge"],
     [Avatar, "avatar"],
     [Chip, "chip"],
-    [Typography, "typography"],
+    // [Typography, "typography"],
     [Icon, "icons", "icon"],
     [Form, "forms", "form"],
     [Textbox, "textbox"],

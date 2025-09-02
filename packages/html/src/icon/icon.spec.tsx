@@ -65,7 +65,6 @@ export const Icon: KendoComponent<IconProps & React.HTMLAttributes<HTMLSpanEleme
         rotate,
         flip,
         viewBox = defaultOptions.viewBox,
-        className,
         ...other
     } = props;
 
