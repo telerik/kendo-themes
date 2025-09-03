@@ -229,13 +229,13 @@ $kendo-gantt-validation-tooltip-width: 200px !default;
 $kendo-gantt-validation-tooltip-label-width: 50px !default;
 /// The border color of the Gantt validation Tooltip.
 /// @group gantt
-$kendo-gantt-validation-tooltip-border: #656565 !default;
+$kendo-gantt-validation-tooltip-border: k-color(inverse-emphasis) !default;
 /// The border color of the valid Gantt validation Tooltip.
 /// @group gantt
-$kendo-gantt-validation-tooltip-valid-border: k-color(success) !default;
+$kendo-gantt-validation-tooltip-valid-border: k-color(success-emphasis) !default;
 /// The border color of the invalid Gantt validation Tooltip.
 /// @group gantt
-$kendo-gantt-validation-tooltip-invalid-border: k-color(error)!default;
+$kendo-gantt-validation-tooltip-invalid-border: k-color(error-emphasis)!default;
 
 /// The horizontal padding of the Gantt task Tooltip.
 /// @group gantt

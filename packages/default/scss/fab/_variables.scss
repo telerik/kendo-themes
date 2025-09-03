@@ -126,7 +126,7 @@ $kendo-fab-sizes: (
 $kendo-fab-shadow: k-elevation(5) !default;
 /// The shadow of the disabled FAB.
 /// @group floating-action-button
-$kendo-fab-disabled-shadow: k-elevation(5) !default;
+$kendo-fab-disabled-shadow: null !default;
 /// The shadow of the active FAB.
 /// @group floating-action-button
 $kendo-fab-active-shadow: null !default;
