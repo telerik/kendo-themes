@@ -42,7 +42,7 @@ $kendo-card-bg: k-color(surface) !default;
 $kendo-card-text: k-color(on-app-surface) !default;
 /// The border color of the Card.
 /// @group card
-$kendo-card-border: k-color(border) !default;
+$kendo-card-border: transparent !default;
 /// The shadow of the Card.
 /// @group card
 $kendo-card-shadow: k-elevation(1) !default;
@@ -54,7 +54,7 @@ $kendo-card-focus-bg: null !default;
 $kendo-card-focus-text: null !default;
 /// The border color of the focused Card.
 /// @group card
-$kendo-card-focus-border: k-color(border) !default;
+$kendo-card-focus-border: transparent !default;
 
 // TODO: double-check: the default theme is not supposed to elevate the Card on focus
 

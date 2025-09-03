@@ -89,21 +89,21 @@ $kendo-upload-progress-bg: k-color(info) !default;
 
 /// The success text color of the Upload.
 /// @group upload
-$kendo-upload-success-text: k-color(success) !default;
+$kendo-upload-success-text: k-color(success-on-surface) !default;
 /// The success background color of the Upload progress bar.
 /// @group upload
 $kendo-upload-success-bg: k-color(success) !default;
 
 /// The error text color of the Upload.
 /// @group upload
-$kendo-upload-error-text: k-color(error) !default;
+$kendo-upload-error-text: k-color(error-on-surface) !default;
 /// The error background color of the Upload progress bar.
 /// @group upload
 $kendo-upload-error-bg: k-color(error) !default;
 
 /// The shadow of the focused Upload button, actions and uploaded items.
 /// @group upload
-$kendo-upload-focus-shadow: 0 0 0 2px rgba( black, .13 ) !default;
+$kendo-upload-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(inverse) 13%, transparent) !default;
 
 $kendo-upload-files-list-margin: calc( -1 * #{k-spacing(1)} ) !default;
 

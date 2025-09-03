@@ -86,7 +86,7 @@ $kendo-orgchart-node-group-subtitle-font-size: var( --kendo-font-size, inherit )
 $kendo-orgchart-node-group-subtitle-margin-bottom: $kendo-orgchart-spacer !default;
 /// The line height of the OrgChart node group subtitle.
 /// @group orgchart
-$kendo-orgchart-node-group-subtitle-text: rgba( black, .54 ) !default;
+$kendo-orgchart-node-group-subtitle-text: k-color(subtle) !default;
 
 /// The width of the OrgChart Card.
 /// @group orgchart

@@ -127,7 +127,7 @@ $kendo-tabstrip-item-hover-gradient: null !default;
 $kendo-tabstrip-item-selected-bg: null !default;
 /// The text color of the selected TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-selected-text: k-color(primary) !default;
+$kendo-tabstrip-item-selected-text: k-color(primary-on-surface) !default;
 /// The border color of the selected TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-selected-border: unset !default;
