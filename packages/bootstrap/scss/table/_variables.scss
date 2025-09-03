@@ -56,7 +56,7 @@ $kendo-table-sizes: (
 
 /// Background color of tables.
 /// @group table
-$kendo-table-bg: k-color(app-surface) !default;
+$kendo-table-bg: k-color(surface-alt) !default;
 /// Text color of tables.
 /// @group table
 $kendo-table-text: k-color(on-app-surface) !default;
@@ -103,7 +103,7 @@ $kendo-table-group-row-border: $kendo-table-header-border !default;
 
 /// Background color of alternating rows in table.
 /// @group table
-$kendo-table-alt-row-bg: color-mix(in srgb, k-color(on-app-surface) 5%, transparent) !default;
+$kendo-table-alt-row-bg: color-mix(in srgb, k-color(on-app-surface) 4%, transparent) !default;
 /// Text color of alternating rows in table.
 /// @group table
 $kendo-table-alt-row-text: null !default;
@@ -114,7 +114,7 @@ $kendo-table-alt-row-border: null !default;
 
 /// Background color of hovered rows in table.
 /// @group table
-$kendo-table-hover-bg: color-mix(in srgb, k-color(on-app-surface) 9%, transparent) !default;
+$kendo-table-hover-bg: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
 /// Text color of hovered rows in table.
 /// @group table
 $kendo-table-hover-text: null !default;
@@ -134,7 +134,7 @@ $kendo-table-focus-text: null !default;
 $kendo-table-focus-border: null !default;
 /// Box shadow of focused rows in table.
 /// @group table
-$kendo-table-focus-shadow: inset 0 0 0 2px rgba( $kendo-color-black, .08) !default;
+$kendo-table-focus-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(inverse) 8%, transparent) !default;
 
 
 /// Background color of selected rows in table.

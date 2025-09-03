@@ -130,9 +130,9 @@ $kendo-list-group-item-font-weight: var( --kendo-font-weight-bold, normal ) !def
 
 /// The font size of the List item group label.
 /// @group list
-$kendo-list-item-group-label-sm-font-size: .75em !default;
-$kendo-list-item-group-label-md-font-size: .75em !default;
-$kendo-list-item-group-label-lg-font-size: .75em !default;
+$kendo-list-item-group-label-sm-font-size: var( --kendo-font-size-xs, inherit ) !default;
+$kendo-list-item-group-label-md-font-size: var( --kendo-font-size-xs, inherit ) !default;
+$kendo-list-item-group-label-lg-font-size: var( --kendo-font-size-xs, inherit ) !default;
 
 /// The line-height of the List item group label.
 /// @group list
@@ -226,7 +226,7 @@ $kendo-list-sizes: (
 
 /// The background color of the List component.
 /// @group list
-$kendo-list-bg: k-color(app-surface) !default;
+$kendo-list-bg: k-color(surface-alt) !default;
 /// The text color of the List component.
 /// @group list
 $kendo-list-text: k-color(on-app-surface) !default;
@@ -258,7 +258,7 @@ $kendo-list-item-text: null !default;
 
 /// The background color of the hovered List items.
 /// @group list
-$kendo-list-item-hover-bg: k-color(surface) !default;
+$kendo-list-item-hover-bg: k-color(base-subtle-hover) !default;
 /// The text color of the hovered List items.
 /// @group list
 $kendo-list-item-hover-text: k-color(on-app-surface) !default;

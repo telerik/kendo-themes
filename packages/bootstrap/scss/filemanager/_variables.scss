@@ -23,7 +23,7 @@ $kendo-file-manager-font-size: var( --kendo-font-size, inherit )  !default;
 $kendo-file-manager-line-height: var( --kendo-line-height, normal ) !default;
 /// The background color of the FileManager.
 /// @group file-manager
-$kendo-file-manager-bg: k-color(app-surface) !default;
+$kendo-file-manager-bg: k-color(surface-alt) !default;
 /// The text color of the FileManager.
 /// @group file-manager
 $kendo-file-manager-text: k-color(on-app-surface) !default;

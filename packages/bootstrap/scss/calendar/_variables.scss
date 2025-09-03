@@ -25,7 +25,7 @@ $kendo-calendar-border-radius: 0 !default;
 $kendo-calendar-cell-size: 38px !default;
 /// The background color of the Calendar.
 /// @group calendar
-$kendo-calendar-bg: k-color(app-surface) !default;
+$kendo-calendar-bg: k-color(surface-alt) !default;
 /// The text color of the Calendar.
 /// @group calendar
 $kendo-calendar-text: k-color(on-app-surface) !default;
@@ -98,7 +98,7 @@ $kendo-calendar-header-cell-height: $kendo-calendar-cell-size !default;
 $kendo-calendar-header-cell-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The line height of the header cells in the Calendar.
 /// @group calendar
-$kendo-calendar-header-cell-line-height: var( --kendo-line-height-lg, normal ) !default;
+$kendo-calendar-header-cell-line-height: var( --kendo-line-height-md, normal ) !default;
 
 /// The text color of the header cells in the Calendar.
 /// @group calendar
@@ -152,7 +152,7 @@ $kendo-calendar-weekend-text: null !default;
 $kendo-calendar-today-style: box !default;
 /// The color of the current day in the Calendar.
 /// @group calendar
-$kendo-calendar-today-color: k-color(primary) !default;
+$kendo-calendar-today-color: k-color(primary-on-surface) !default;
 /// The font weight of the current day in the Calendar.
 /// @group calendar
 $kendo-calendar-today-font-weight: var( --kendo-font-weight-bold, normal ) !default;
@@ -243,7 +243,7 @@ $kendo-calendar-navigation-text: $kendo-calendar-header-text !default;
 $kendo-calendar-navigation-border: $kendo-calendar-header-border !default;
 /// The text color of the hovered items in the Calendar navigation.
 /// @group calendar
-$kendo-calendar-navigation-hover-text: k-color(primary-hover) !default;
+$kendo-calendar-navigation-hover-text: k-color(primary-on-surface) !default;
 /// The text color of the marker in the Calendar navigation.
 /// @group calendar
 $kendo-calendar-navigation-marker-text: currentColor !default;
@@ -274,7 +274,7 @@ $kendo-infinite-calendar-view-height: ( $kendo-calendar-cell-size * 9 ) !default
 
 /// The border radius of the range cells in the Multiview Calendar.
 /// @group calendar
-$kendo-calendar-range-cell-border-radius: k-border-radius(lg) !default;
+$kendo-calendar-range-cell-border-radius: null !default;
 
 // Calendar sizes
 

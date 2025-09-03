@@ -41,17 +41,17 @@ $kendo-rating-icon-text: k-color(subtle) !default;
 $kendo-rating-icon-selected-text: k-color(primary) !default;
 /// The text color of the hovered Rating icon.
 /// @group rating
-$kendo-rating-icon-hover-text: k-color(primary) !default;
+$kendo-rating-icon-hover-text: k-color(primary-hover) !default;
 /// The text color of the focused Rating icon.
 /// @group rating
 $kendo-rating-icon-focus-text: k-color(primary) !default;
 
 /// The shadow of the focused Rating icon.
 /// @group rating
-$kendo-rating-icon-focus-shadow: 0 2px 4px rgba( black, .1 ) !default;
+$kendo-rating-icon-focus-shadow: 0 0 0 .25rem color-mix(in srgb, k-color(border) 50%, transparent) !default;
 /// The shadow of the focused and selected Rating icon.
 /// @group rating
-$kendo-rating-icon-focus-selected-shadow: 0 2px 4px rgba( black, .1) !default;
+$kendo-rating-icon-focus-selected-shadow: 0 0 0 .25rem color-mix(in srgb, k-color(border) 50%, transparent) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/rating/_variables.scss" with (

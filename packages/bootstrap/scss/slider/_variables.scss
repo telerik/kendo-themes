@@ -61,7 +61,7 @@ $kendo-slider-draghandle-hover-bg: k-color(primary-hover) !default;
 $kendo-slider-draghandle-hover-text: k-color(on-primary) !default;
 /// The border color of the hovered Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-hover-border: k-color(primary-hover) !default;
+$kendo-slider-draghandle-hover-border: k-color(primary-emphasis) !default;
 /// The gradient of the hovered Slider drag handle.
 /// @group slider
 $kendo-slider-draghandle-hover-gradient: null !default;
@@ -77,7 +77,7 @@ $kendo-slider-draghandle-pressed-bg: k-color(primary-active) !default;
 $kendo-slider-draghandle-pressed-text: k-color(on-primary) !default;
 /// The border color of the active Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-pressed-border: k-color(primary-active) !default;
+$kendo-slider-draghandle-pressed-border: k-color(primary-emphasis) !default;
 /// The gradient of the active Slider drag handle.
 /// @group slider
 $kendo-slider-draghandle-pressed-gradient: null !default;
