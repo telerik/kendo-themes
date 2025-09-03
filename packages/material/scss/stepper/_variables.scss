@@ -26,7 +26,7 @@ $kendo-stepper-label-margin-x: k-spacing(3) !default;
 $kendo-stepper-label-padding-x: k-spacing(3) !default;
 /// The vertical padding the Stepper label.
 /// @group stepper
-$kendo-stepper-label-padding-y: calc( #{k-spacing(2.5)} / 2 ) !default;
+$kendo-stepper-label-padding-y: k-spacing(1.5) !default;
 /// The border radius of the Stepper label.
 /// @group stepper
 $kendo-stepper-label-border-radius: k-border-radius(xxl) !default;

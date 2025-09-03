@@ -118,7 +118,7 @@ $kendo-loader-lg-container-font-size: var( --kendo-font-size-lg, inherit ) !defa
 $kendo-loading-bg: k-color(app-surface) !default;
 /// The text color of the Loading indicator.
 /// @group loading
-$kendo-loading-text: currentColor !default;
+$kendo-loading-text: k-color(on-app-surface) !default;
 /// The opacity of the Loading indicator.
 /// @group loading
 $kendo-loading-opacity: .3 !default;
