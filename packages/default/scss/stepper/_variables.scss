@@ -93,7 +93,7 @@ $kendo-stepper-indicator-bg: k-color(surface-alt) !default;
 $kendo-stepper-indicator-text: k-color(on-app-surface) !default;
 /// The border color of the Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-border: #cccccc !default;
+$kendo-stepper-indicator-border: k-color(border) !default;
 
 /// The background color of the hovered Stepper indicator.
 /// @group stepper
@@ -180,10 +180,10 @@ $kendo-stepper-indicator-current-disabled-border: $kendo-stepper-indicator-done-
 $kendo-stepper-label-text: null !default;
 /// The success text color of the Stepper label.
 /// @group stepper
-$kendo-stepper-label-success-text: k-color(success)!default;
+$kendo-stepper-label-success-text: k-color(success-on-surface)!default;
 /// The error text color of the Stepper label.
 /// @group stepper
-$kendo-stepper-label-error-text: k-color(error) !default;
+$kendo-stepper-label-error-text: k-color(error-on-surface) !default;
 /// The text color of the hovered Stepper label.
 /// @group stepper
 $kendo-stepper-label-hover-text: k-color(on-base) !default;
