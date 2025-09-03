@@ -40,16 +40,13 @@
         *::after {
             box-sizing: border-box;
         }
-
-        // Card avatar
-        .k-card-avatar,
-        .k-avatar {
-            margin-inline-end: $kendo-card-avatar-spacing;
-            width: $kendo-card-avatar-size;
-            height: $kendo-card-avatar-size;
-            flex-basis: $kendo-card-avatar-size;
-        }
     }
+    // Card avatar
+    .k-card-avatar,
+    .k-card .k-avatar {
+        margin-inline-end: $kendo-card-avatar-spacing;
+    }
+
     .k-card > .k-card-inner {
         @include border-radius( $kendo-card-inner-border-radius );
         display: flex;
