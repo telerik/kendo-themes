@@ -33,7 +33,7 @@ $kendo-color-gradient-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-color-gradient-text: k-color(on-app-surface) !default;
 /// The background color of the ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-bg: k-color(app-surface) !default;
+$kendo-color-gradient-bg: k-color(surface-alt) !default;
 /// The border color of the ColorGradient.
 /// @group color-gradient
 $kendo-color-gradient-border: k-color(border) !default;
@@ -79,7 +79,7 @@ $kendo-color-gradient-lg-gap: k-spacing(4.5) !default;
 
 /// The border color of the focused ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-focus-border: k-color(border) !default;
+$kendo-color-gradient-focus-border: k-color(border-alt) !default;
 /// The box shadow of the focused ColorGradient.
 /// @group color-gradient
 $kendo-color-gradient-focus-shadow: none !default;

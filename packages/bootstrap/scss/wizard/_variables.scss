@@ -33,7 +33,7 @@ $kendo-wizard-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The outline of the focused Wizard step.
 /// @group wizard
-$kendo-wizard-step-focus-border: #656565 !default;
+$kendo-wizard-step-focus-border: k-color(primary-emphasis) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/wizard/_variables.scss" with (

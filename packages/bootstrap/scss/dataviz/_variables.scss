@@ -114,7 +114,7 @@ $kendo-chart-tooltip-padding-y: k-spacing(1) !default;
 
 $kendo-chart-tooltip-transition: left 300ms cubic-bezier(0, .33, .19, 1), top 300ms cubic-bezier(0, .33, .19, 1) !default;
 
-$kendo-chart-bg: k-color(app-surface) !default;
+$kendo-chart-bg: k-color(surface-alt) !default;
 $kendo-chart-text: k-color(on-app-surface) !default;
 $kendo-chart-border: k-color(border) !default;
 
@@ -160,7 +160,7 @@ $kendo-chart-no-data-font-weight: var( --kendo-font-weight, normal ) !default;
 $kendo-chart-no-data-padding-y: k-spacing( 25 ) !default;
 
 // Gauge
-$kendo-gauge-pointer-bg: k-color(primary) !default;
+$kendo-gauge-pointer-bg: k-color(primary-on-surface) !default;
 $kendo-gauge-track-bg: k-color(base-emphasis) !default;
 
 

@@ -20,7 +20,7 @@ $kendo-notification-padding-y: k-spacing(4) !default;
 $kendo-notification-border-width: 1px !default;
 /// The border radius of the Notification.
 /// @group notification
-$kendo-notification-border-radius: k-spacing(1.5) !default;
+$kendo-notification-border-radius: k-border-radius(md) !default;
 /// The font family of the Notification.
 /// @group notification
 $kendo-notification-font-family: var( --kendo-font-family, inherit ) !default;
@@ -38,7 +38,7 @@ $kendo-notification-actions-padding-x: null !default;
 $kendo-notification-actions-padding-y: $kendo-notification-actions-padding-x !default;
 /// The background color of the Notification.
 /// @group notification
-$kendo-notification-bg: k-color(app-surface) !default;
+$kendo-notification-bg: k-color(surface-alt) !default;
 /// The text color of the Notification.
 /// @group notification
 $kendo-notification-text: k-color(on-app-surface) !default;
