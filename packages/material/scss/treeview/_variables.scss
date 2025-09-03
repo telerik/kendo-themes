@@ -137,7 +137,7 @@ $kendo-treeview-item-hover-gradient: null !default;
 $kendo-treeview-item-selected-bg: null !default;
 /// The text color of selected TreeView items.
 /// @group treeview
-$kendo-treeview-item-selected-text: k-color(primary) !default;
+$kendo-treeview-item-selected-text: k-color(primary-on-surface) !default;
 /// The border color of selected TreeView items.
 /// @group treeview
 $kendo-treeview-item-selected-border: null !default;

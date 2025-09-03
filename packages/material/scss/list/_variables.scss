@@ -280,7 +280,7 @@ $kendo-list-item-focus-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(on-app
 $kendo-list-item-selected-bg: null !default;
 /// The text color of the selected List items.
 /// @group list
-$kendo-list-item-selected-text: k-color(primary) !default;
+$kendo-list-item-selected-text: k-color(primary-on-surface) !default;
 
 /// The background color of the List group items.
 /// @group list

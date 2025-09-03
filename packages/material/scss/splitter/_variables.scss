@@ -37,7 +37,7 @@ $kendo-splitter-drag-handle-length: 20px !default;
 $kendo-splitter-drag-handle-thickness: 2px !default;
 /// The margin of the Splitter drag handle icon.
 /// @group splitter
-$kendo-splitter-drag-icon-margin: calc( #{k-spacing(3.5)} / 2 ) !default;
+$kendo-splitter-drag-icon-margin: k-spacing(4) !default;
 /// The horizontal padding of the collapse icon in the Splitter.
 /// @group splitter
 $kendo-splitter-collapse-icon-padding-x: null !default;
