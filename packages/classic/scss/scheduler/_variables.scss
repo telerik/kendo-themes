@@ -111,7 +111,7 @@ $kendo-scheduler-event-selected-border: null !default;
 $kendo-scheduler-event-selected-gradient: null !default;
 /// The shadow of the selected Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-selected-shadow: inset 0 0 0 2px rgba( black, .13 ) !default;
+$kendo-scheduler-event-selected-shadow: inset 0 0 0 2px k-color(border-alt) !default;
 
 /// The shadow of the ongoing Scheduler event.
 /// @group scheduler
