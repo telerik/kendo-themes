@@ -49,9 +49,6 @@ $kendo-calendar-header-border-width: 0px !default;
 /// The background color of the header in the Calendar.
 /// @group calendar
 $kendo-calendar-header-bg: transparent !default;
-/// The text color of the header in the Calendar.
-/// @group calendar
-$kendo-calendar-header-text: k-color(primary-on-surface) !default;
 /// The border color of the header in the Calendar.
 /// @group calendar
 $kendo-calendar-header-border: k-color(border) !default;
@@ -379,7 +376,6 @@ $kendo-calendar-sizes: (
     $kendo-calendar-header-padding-y: $kendo-calendar-header-padding-y,
     $kendo-calendar-header-border-width: $kendo-calendar-header-border-width,
     $kendo-calendar-header-bg: $kendo-calendar-header-bg,
-    $kendo-calendar-header-text: $kendo-calendar-header-text,
     $kendo-calendar-header-border: $kendo-calendar-header-border,
     $kendo-calendar-header-gradient: $kendo-calendar-header-gradient,
     $kendo-calendar-header-shadow: $kendo-calendar-header-shadow,

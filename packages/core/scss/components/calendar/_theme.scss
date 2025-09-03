@@ -13,14 +13,13 @@
         );
 
 
-        // TODO: do we even use this?
+        // jQuery classic Calendar
         // Header / footer
         .k-header {
             @include fill(
-                $kendo-calendar-header-text,
-                $kendo-calendar-header-bg,
-                inherit,
-                $kendo-calendar-header-gradient
+                $bg: $kendo-calendar-header-bg,
+                $border: inherit,
+                $gradient: $kendo-calendar-header-gradient
             );
             @include box-shadow( $kendo-calendar-header-shadow );
         }

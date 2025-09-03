@@ -48,9 +48,6 @@ $kendo-calendar-header-min-width: calc(#{$kendo-calendar-cell-size} * 8)  !defau
 /// The background color of the calendar header.
 /// @group calendar
 $kendo-calendar-header-bg: var( --kendo-calendar-header-bg, k-color(surface) ) !default; // $kendo-component-header-bg
-/// The text color of the calendar header.
-/// @group calendar
-$kendo-calendar-header-text: var( --kendo-calendar-header-text, #{$kendo-calendar-text} ) !default; // $kendo-component-header-text
 /// The border color of the calendar header.
 /// @group calendar
 $kendo-calendar-header-border: var( --kendo-calendar-header-border, #{$kendo-calendar-border} ) !default; // $kendo-component-header-border
@@ -226,7 +223,7 @@ $kendo-calendar-navigation-item-height: var( --kendo-calendar-navigation-item-he
 $kendo-calendar-navigation-bg: var( --kendo-calendar-navigation-bg, k-color(surface) ) !default;
 /// The text color of the navigation in the infinite Calendar.
 /// @group calendar
-$kendo-calendar-navigation-text: var( --kendo-calendar-navigation-text, #{$kendo-calendar-header-text} ) !default;
+$kendo-calendar-navigation-text: var( --kendo-calendar-navigation-text, k-color(on-app-surface) ) !default;
 /// The border color of the navigation in the infinite Calendar.
 /// @group calendar
 $kendo-calendar-navigation-border: var( --kendo-calendar-navigation-border, #{$kendo-calendar-header-border} ) !default;
@@ -373,7 +370,6 @@ $kendo-calendar-sizes: (
     $kendo-calendar-header-padding-y: $kendo-calendar-header-padding-y,
     $kendo-calendar-header-border-width: $kendo-calendar-header-border-width,
     $kendo-calendar-header-bg: $kendo-calendar-header-bg,
-    $kendo-calendar-header-text: $kendo-calendar-header-text,
     $kendo-calendar-header-border: $kendo-calendar-header-border,
     $kendo-calendar-nav-gap: $kendo-calendar-nav-gap,
     $kendo-calendar-footer-padding-x: $kendo-calendar-footer-padding-x,
