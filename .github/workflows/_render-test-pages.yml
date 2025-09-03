@@ -8,6 +8,11 @@ on:
         required: false
         type: number
         default: 22
+      force-render:
+        description: 'Always render images, regardless of git changes'
+        required: false
+        type: string
+        default: 'NO'
       upload-policy:
         description: 'Sets upload policy: always | never | conditionally'
         required: false
@@ -20,8 +25,54 @@ concurrency:
 
 jobs:
 
+  verify:
+    runs-on: ubuntu-latest
+    outputs:
+      should-render: ${{ steps.should-render.outputs.SHOULD_RENDER }}
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v4
+
+      - name: Check for differences in packages/html
+        run: |
+          git fetch --depth=1 origin develop:develop
+
+          HAS_CHANGES=NO
+          git diff develop..HEAD --exit-code --quiet -- packages/html/ || HAS_CHANGES=YES
+          echo "HAS_CHANGES=$HAS_CHANGES" >> $GITHUB_ENV
+
+      - name: should-render
+        id: should-render
+        env:
+          FORCE_RENDER: ${{ inputs.force-render }}
+        run: |
+          echo "Verify summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- Has changes: $HAS_CHANGES" >> $GITHUB_STEP_SUMMARY
+          echo "- Force render: $FORCE_RENDER" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          echo "Has changes: $HAS_CHANGES"
+          echo "Force render: $FORCE_RENDER"
+
+          if [ $FORCE_RENDER = YES ] || [ $HAS_CHANGES = YES ]
+          then
+            echo "SHOULD_RENDER=YES" >> $GITHUB_OUTPUT
+            echo "Test pages will be rendered" >> $GITHUB_STEP_SUMMARY
+            echo "Test pages will be rendered"
+          else
+            echo "SHOULD_RENDER=NO" >> $GITHUB_OUTPUT
+            echo "Test pages will NOT be rendered" >> $GITHUB_STEP_SUMMARY
+            echo "Test pages will NOT be rendered"
+          fi
+
+
   run:
     runs-on: ubuntu-latest
+    if: ${{ needs.verify.outputs.should-render == 'YES' }}
+    needs: [ verify ]
 
     steps:
 

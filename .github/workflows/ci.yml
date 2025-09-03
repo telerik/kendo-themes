@@ -17,18 +17,9 @@ jobs:
     name: Compile themes
     uses: ./.github/workflows/_compile-themes.yml
 
-  detect-html-changes:
-    name: Detect HTML changes
-    uses: ./.github/workflows/_detect-html-changes.yml
-    with:
-      force-render: NO
-      target-branch: develop
-
   test-html-spec:
     name: Test HTML spec
     uses: ./.github/workflows/_test-html-spec.yml
-    if: ${{ needs.detect-html-changes.outputs.should-render == 'YES' }}
-    needs: [ detect-html-changes ]
 
   ci-test-html-spec:
     name: Status check > HTML spec
@@ -40,10 +31,9 @@ jobs:
 
   render-test-pages:
     name: Render test pages
-    if: ${{ needs.detect-html-changes.outputs.should-render == 'YES' }}
     uses: ./.github/workflows/_render-test-pages.yml
-    needs: [ detect-html-changes ]
     with:
+      force-render: NO
       upload-policy: conditionally
 
   create-screenshots:
