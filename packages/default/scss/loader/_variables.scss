@@ -80,7 +80,7 @@ $kendo-loader-container-panel-border-color: k-color(border) !default;
 $kendo-loader-container-panel-border-radius: k-border-radius(md) !default;
 /// The background color of the container panel.
 /// @group loader
-$kendo-loader-container-panel-bg: $kendo-color-white !default;
+$kendo-loader-container-panel-bg: k-color(surface-alt) !default;
 
 /// The padding of the small Loader container.
 /// @group loader

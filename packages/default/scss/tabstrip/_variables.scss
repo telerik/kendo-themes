@@ -99,7 +99,7 @@ $kendo-tabstrip-lg-item-padding-y: k-spacing(2.5) !default;
 $kendo-tabstrip-item-bg: null !default;
 /// The text color of the TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-text: k-color(subtle) !default;
+$kendo-tabstrip-item-text: k-color(on-app-surface) !default;
 /// The border color of the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-border: null !default;
@@ -112,7 +112,7 @@ $kendo-tabstrip-item-gradient: null !default;
 $kendo-tabstrip-item-hover-bg: null !default;
 /// The text color of the hovered TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-hover-text: k-color(on-app-surface) !default;
+$kendo-tabstrip-item-hover-text: k-color(primary-on-surface) !default;
 /// The border color of the hovered TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-hover-border: null !default;
