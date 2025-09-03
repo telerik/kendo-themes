@@ -16,7 +16,7 @@ $kendo-tooltip-padding-x: k-spacing(2) !default;
 $kendo-tooltip-border-width: 0px !default;
 /// The border radius of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-border-radius: k-spacing(1.5) !default;
+$kendo-tooltip-border-radius: k-border-radius(md) !default;
 
 /// The font family of the Tooltip.
 /// @group tooltip
@@ -41,10 +41,10 @@ $kendo-tooltip-callout-size: k-spacing(1.5) !default;
 
 /// The default background of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-bg: k-color(on-app-surface) !default;
+$kendo-tooltip-bg: k-color(inverse) !default;
 /// The default text color of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-text: k-color(app-surface) !default;
+$kendo-tooltip-text: k-color(on-inverse) !default;
 /// The default border color of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-border: $kendo-tooltip-bg !default;

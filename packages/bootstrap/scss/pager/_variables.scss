@@ -70,14 +70,14 @@ $kendo-pager-border: k-color(border) !default;
 $kendo-pager-focus-bg: null !default;
 /// The box shadow of the focused Pager.
 /// @group pager
-$kendo-pager-focus-shadow: inset 0 0 0 2px rgba( $kendo-color-black, .08) !default;
+$kendo-pager-focus-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(inverse) 8%, transparent) !default;
 
 /// The border width of the Pager items.
 /// @group pager
 $kendo-pager-item-border-width: 1px !default;
 /// The border radius of the Pager items.
 /// @group pager
-$kendo-pager-item-border-radius: k-spacing(1) !default;
+$kendo-pager-item-border-radius: k-border-radius(md) !default;
 /// The spacing around the Pager items.
 /// @group pager
 $kendo-pager-item-spacing: (-1 * $kendo-pager-item-border-width) !default;

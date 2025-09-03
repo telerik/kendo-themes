@@ -39,14 +39,14 @@ $kendo-color-editor-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-color-editor-text: k-color(on-app-surface) !default;
 /// The background color of the ColorEditor.
 /// @group color-editor
-$kendo-color-editor-bg: k-color(app-surface) !default;
+$kendo-color-editor-bg: k-color(surface-alt) !default;
 /// The border color of the ColorEditor.
 /// @group color-editor
 $kendo-color-editor-border: k-color(border) !default;
 
 /// The border color of the focused ColorEditor.
 /// @group color-editor
-$kendo-color-editor-focus-border: k-color(border) !default;
+$kendo-color-editor-focus-border: k-color(primary-emphasis) !default;
 /// The box shadow of the focused ColorEditor.
 /// @group color-editor
 $kendo-color-editor-focus-shadow: null !default;
@@ -137,7 +137,7 @@ $kendo-color-editor-lg-views-padding-x: k-spacing(4.5) !default;
 
 /// The outline color of the focused ColorGradient.
 /// @group color-editor
-$kendo-color-editor-color-gradient-focus-outline-color: rgba(0, 0, 0, .3) !default;
+$kendo-color-editor-color-gradient-focus-outline-color: color-mix(in srgb, k-color(dark) 30%, transparent) !default;
 /// The outline width of the focused ColorGradient.
 /// @group color-editor
 $kendo-color-editor-color-gradient-focus-outline: 2px !default;

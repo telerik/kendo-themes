@@ -59,7 +59,7 @@ $kendo-checkbox-sizes: (
 
 /// The background color of CheckBox.
 /// @group checkbox
-$kendo-checkbox-bg: k-color(app-surface) !default;
+$kendo-checkbox-bg: k-color(surface-alt) !default;
 /// The text color of CheckBox.
 /// @group checkbox
 $kendo-checkbox-text: null !default;
@@ -132,10 +132,10 @@ $kendo-checkbox-disabled-checked-border: null !default;
 
 /// The text color of the invalid CheckBox.
 /// @group checkbox
-$kendo-checkbox-invalid-text: k-color(error) !default;
+$kendo-checkbox-invalid-text: k-color(error-on-surface) !default;
 /// The border color of the invalid CheckBox.
 /// @group checkbox
-$kendo-checkbox-invalid-border: k-color(error) !default;
+$kendo-checkbox-invalid-border: k-color(error-on-surface) !default;
 
 
 // CheckBox indicator

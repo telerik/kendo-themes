@@ -22,7 +22,7 @@ $kendo-scheduler-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the Scheduler.
 /// @group scheduler
-$kendo-scheduler-bg: k-color(app-surface) !default;
+$kendo-scheduler-bg: k-color(surface-alt) !default;
 /// The text color of the Scheduler.
 /// @group scheduler
 $kendo-scheduler-text: k-color(on-app-surface) !default;
@@ -112,11 +112,11 @@ $kendo-scheduler-event-selected-border: null !default;
 $kendo-scheduler-event-selected-gradient: null !default;
 /// The shadow of the selected Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-selected-shadow: inset 0 0 0 3px rgba( white, .5 ) !default;
+$kendo-scheduler-event-selected-shadow: inset 0 0 0 3px color-mix(in srgb, k-color(on-primary) 50%, transparent) !default;
 
 /// The shadow of the ongoing Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-ongoing-shadow: inset 0px 0px 0px 1px #ff0000 !default;
+$kendo-scheduler-event-ongoing-shadow: inset 0px 0px 0px 1px k-color(error-on-surface) !default;
 
 /// The horizontal padding of the Scheduler cell.
 /// @group scheduler

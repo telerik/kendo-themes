@@ -15,7 +15,7 @@ $kendo-actionsheet-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-actionsheet-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-actionsheet-line-height: var( --kendo-line-height, normal ) !default;
 
-$kendo-actionsheet-bg: k-color(app-surface) !default;
+$kendo-actionsheet-bg: k-color(surface-alt) !default;
 $kendo-actionsheet-text: k-color(on-app-surface) !default;
 $kendo-actionsheet-border: k-color(border) !default;
 $kendo-actionsheet-shadow: k-elevation(7) !default;
@@ -73,7 +73,7 @@ $kendo-actionsheet-item-focus-bg: null !default;
 $kendo-actionsheet-item-focus-text: null !default;
 $kendo-actionsheet-item-focus-border: null !default;
 $kendo-actionsheet-item-focus-gradient: null !default;
-$kendo-actionsheet-item-focus-shadow: inset 0 0 0 2px rgba( black, .13 ) !default;
+$kendo-actionsheet-item-focus-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(inverse) 13%, transparent) !default;
 
 $kendo-actionsheet-item-disabled-bg: null !default;
 $kendo-actionsheet-item-disabled-text: null !default;

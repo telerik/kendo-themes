@@ -14,7 +14,7 @@ $kendo-dock-manager-border: k-color(border) !default;
 
 /// The vertical padding of the pane header in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-header-padding-y: k-spacing(2) !default;
+$kendo-dock-manager-pane-header-padding-y: k-spacing(4) !default;
 /// The horizontal padding of the pane header in the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-pane-header-padding-x: k-spacing(4) !default;
@@ -56,7 +56,7 @@ $kendo-dock-manager-pane-content-padding-y: k-spacing(2) !default;
 
 /// The horizontal padding of the tabbed pane in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-tabbed-pane-padding-y: k-spacing(3.5) !default;
+$kendo-dock-manager-tabbed-pane-padding-y: k-spacing(5) !default;
 /// The horizontal padding of the tabbed pane in the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-tabbed-pane-padding-x: $kendo-dock-manager-pane-content-padding-y !default;
@@ -66,7 +66,7 @@ $kendo-dock-manager-tabbed-pane-padding-x: $kendo-dock-manager-pane-content-padd
 $kendo-dock-manager-unpinned-container-width: 300px !default;
 /// The background-color of the unpinned pane container in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-unpinned-container-bg: k-color(app-surface) !default;
+$kendo-dock-manager-unpinned-container-bg: k-color(surface-alt) !default;
 /// The box shadow of the unpinned pane container in the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-unpinned-container-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.04), 2px 0px 4px 0px rgba(0, 0, 0, 0.03) !default;
@@ -76,10 +76,10 @@ $kendo-dock-manager-unpinned-container-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.0
 $kendo-dock-indicator-padding: k-spacing(1.5) !default;
 /// The background color of the dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-bg: k-color(app-surface) !default;
+$kendo-dock-indicator-bg: k-color(surface-alt) !default;
 /// The text color of the dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-text: k-color(primary) !default;
+$kendo-dock-indicator-text: k-color(primary-on-surface) !default;
 /// The outline width of the dock indicator in the DockManager component.
 /// @group dock-manager
 $kendo-dock-indicator-outline-width: 1px !default;
@@ -91,14 +91,14 @@ $kendo-dock-indicator-outline-style: solid !default;
 $kendo-dock-indicator-outline: $kendo-dock-indicator-text !default;
 /// The box shadow of the dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-shadow: drop-shadow( 0px 1px 18px rgba(0, 0, 0, 0.12) ) drop-shadow( 0px 6px 10px rgba(0, 0, 0, 0.14) ) drop-shadow( 0px 3px 5px rgba(0, 0, 0, 0.20) ) !default;
+$kendo-dock-indicator-shadow: k-elevation(5) !default;
 
 ///  The background color of the hovered dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-hover-bg: k-color(primary) !default;
+$kendo-dock-indicator-hover-bg: k-color(primary-on-surface) !default;
 /// The text color of the hovered dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-hover-text: $kendo-color-white !default;
+$kendo-dock-indicator-hover-text: k-color(on-primary) !default;
 
 /// The width of the border around the dropping area in the DockManager component.
 /// @group dock-manager
@@ -114,7 +114,7 @@ $kendo-dock-manager-dock-preview-border-radius: k-border-radius(sm) !default;
 $kendo-dock-manager-dock-preview-bg: color-mix(in srgb, k-color(primary) 16%, transparent) !default;
 /// The border color of the dropping area in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-dock-preview-border: k-color(primary) !default;
+$kendo-dock-manager-dock-preview-border: k-color(primary-on-surface) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/dock-manager/_variables.scss" with (
