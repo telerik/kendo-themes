@@ -136,7 +136,7 @@ $kendo-orgchart-card-body-border-color: var( --kendo-orgchart-card-body-border-c
 $kendo-orgchart-card-body-vbox-margin-x: var( --kendo-orgchart-card-body-vbox-margin-x, calc( #{$kendo-orgchart-spacer} - #{k-spacing(2)} ) ) !default;
 /// The min height of the OrgChart Card body title wrap.
 /// @group orgchart
-$kendo-orgchart-card-body-vbox-min-height: var( --kendo-orgchart-card-body-vbox-min-height, #{$kendo-card-avatar-size} ) !default;
+$kendo-orgchart-card-body-vbox-min-height: var( --kendo-orgchart-card-body-vbox-min-height, 3em ) !default;
 
 /// The size of the OrgChart connecting line.
 /// @group orgchart
