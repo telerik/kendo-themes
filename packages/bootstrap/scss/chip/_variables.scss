@@ -113,7 +113,7 @@ $kendo-chip-solid-bg: $kendo-chip-base-bg !default;
 $kendo-chip-solid-text: k-color(base-on-subtle) !default;
 /// The base border color of the solid Chip.
 /// @group chip
-$kendo-chip-solid-border: k-color(base-emphasis)!default;
+$kendo-chip-solid-border: k-color(base-emphasis) !default;
 /// The base shadow of the solid Chip.
 /// @group chip
 $kendo-chip-solid-shadow: 0 0 0 2px rgba( $kendo-chip-base-bg, .16 ) !default;
