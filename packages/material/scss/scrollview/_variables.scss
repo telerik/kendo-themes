@@ -64,9 +64,6 @@ $kendo-scrollview-arrow-tap-highlight-color: $kendo-color-rgba-transparent !defa
 /// The color of the ScrollView navigation arrows.
 /// @group scrollview
 $kendo-scrollview-navigation-color: white !default;
-/// The box shadow of the ScrollView navigation arrows.
-/// @group scrollview
-$kendo-scrollview-navigation-icon-shadow: rgba( black, .3 ) 0 0 15px !default;
 /// The background color of the ScrollView navigation.
 /// @group scrollview
 $kendo-scrollview-navigation-bg: transparent !default;
@@ -111,7 +108,6 @@ $kendo-scrollview-transition-timing-function: ease-in-out !default;
     $kendo-scrollview-pager-height: $kendo-scrollview-pager-height,
     $kendo-scrollview-arrow-tap-highlight-color: $kendo-scrollview-arrow-tap-highlight-color,
     $kendo-scrollview-navigation-color: $kendo-scrollview-navigation-color,
-    $kendo-scrollview-navigation-icon-shadow: $kendo-scrollview-navigation-icon-shadow,
     $kendo-scrollview-navigation-bg: $kendo-scrollview-navigation-bg,
     $kendo-scrollview-navigation-default-opacity: $kendo-scrollview-navigation-default-opacity,
     $kendo-scrollview-navigation-hover-opacity: $kendo-scrollview-navigation-hover-opacity,
