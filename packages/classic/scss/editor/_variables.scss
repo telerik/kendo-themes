@@ -34,7 +34,7 @@ $kendo-editor-selected-bg: k-color(primary) !default;
 
 /// The highlighted background color of the Editor.
 /// @group editor
-$kendo-editor-highlighted-bg: k-color(primary-subtle) !default;
+$kendo-editor-highlighted-bg: color-mix(in srgb, k-color(primary) 25%, transparent) !default;
 
 /// The horizontal margin of the Editor's export tool icon.
 /// @group editor

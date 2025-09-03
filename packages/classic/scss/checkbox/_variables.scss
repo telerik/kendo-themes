@@ -102,7 +102,7 @@ $kendo-checkbox-indeterminate-border: $kendo-checkbox-border !default;
 $kendo-checkbox-focus-border: null !default;
 /// The box shadow of the focused CheckBox.
 /// @group checkbox
-$kendo-checkbox-focus-shadow: 0 0 0 2px rgba( black, .06 ) !default;
+$kendo-checkbox-focus-shadow: 0 0 0 2px k-color(border) !default;
 /// The border color of the focused and checked CheckBox.
 /// @group checkbox
 $kendo-checkbox-focus-checked-border: null !default;
@@ -132,10 +132,10 @@ $kendo-checkbox-disabled-checked-border: null !default;
 
 /// The text color of an invalid CheckBox.
 /// @group checkbox
-$kendo-checkbox-invalid-text: k-color(error) !default;
+$kendo-checkbox-invalid-text: k-color(error-on-surface) !default;
 /// The border color of an invalid CheckBox.
 /// @group checkbox
-$kendo-checkbox-invalid-border: k-color(error) !default;
+$kendo-checkbox-invalid-border: k-color(error-on-surface) !default;
 
 
 // CheckBox indicator
