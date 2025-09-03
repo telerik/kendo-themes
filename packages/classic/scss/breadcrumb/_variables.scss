@@ -53,17 +53,17 @@ $kendo-breadcrumb-lg-line-height: var( --kendo-line-height-lg, normal ) !default
 
 /// The base background of the Breadcrumb.
 /// @group breadcrumb
-$kendo-breadcrumb-bg: k-color(surface-alt) !default;
+$kendo-breadcrumb-bg: transparent !default;
 /// The base text color of the Breadcrumb.
 /// @group breadcrumb
 $kendo-breadcrumb-text: k-color(on-app-surface) !default;
 /// The base border color of the Breadcrumb.
 /// @group breadcrumb
-$kendo-breadcrumb-border: k-color(border) !default;
+$kendo-breadcrumb-border: transparent !default;
 
 /// The box shadow of the focused Breadcrumb.
 /// @group breadcrumb
-$kendo-breadcrumb-focus-shadow: 0 0 2px 1px rgba(0, 0, 0, .06) !default;
+$kendo-breadcrumb-focus-shadow: 0 0 2px 1px k-color(border) !default;
 
 /// The horizontal padding of the small Breadcrumb link.
 /// @group breadcrumb

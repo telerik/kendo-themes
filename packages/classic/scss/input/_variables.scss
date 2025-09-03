@@ -277,7 +277,7 @@ $kendo-input-suffix-bg: null !default;
 
 /// The border color of the invalid Input components.
 /// @group input
-$kendo-input-invalid-border: k-color(error) !default;
+$kendo-input-invalid-border: k-color(error-on-surface) !default;
 /// The shadow of the invalid Input components.
 /// @group input
 $kendo-input-invalid-shadow: null !default;
@@ -351,7 +351,7 @@ $kendo-picker-disabled-shadow: null !default;
 $kendo-picker-outline-bg: null !default;
 /// The text color of the outline Picker components.
 /// @group picker
-$kendo-picker-outline-text: $kendo-button-text !default;
+$kendo-picker-outline-text: k-color(on-app-surface) !default;
 /// The border color of the outline Picker components.
 /// @group picker
 $kendo-picker-outline-border: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
@@ -394,7 +394,7 @@ $kendo-picker-outline-hover-focus-border: null !default;
 $kendo-picker-flat-bg: null !default;
 /// The text color of the flat Picker components.
 /// @group picker
-$kendo-picker-flat-text: $kendo-button-text !default;
+$kendo-picker-flat-text: k-color(on-app-surface) !default;
 /// The border color of the flat Picker components.
 /// @group picker
 $kendo-picker-flat-border: $kendo-button-border !default;
