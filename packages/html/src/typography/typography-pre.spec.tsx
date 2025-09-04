@@ -20,5 +20,7 @@ export const TypographyPre: KendoComponent<KendoTypographyPreProps> = (
 TypographyPre.states = states;
 TypographyPre.options = options;
 TypographyPre.className = TYPOGRAPHY_PRE_CLASSNAME;
+TypographyPre.moduleName = "typography";
+TypographyPre.folderName = "typography";
 
 export default TypographyPre;

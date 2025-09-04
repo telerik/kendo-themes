@@ -70,5 +70,7 @@ RadioButton.states = states;
 RadioButton.options = options;
 RadioButton.className = RADIOBUTTON_CLASSNAME;
 RadioButton.defaultOptions = defaultOptions;
+RadioButton.moduleName = "radio";
+RadioButton.folderName = "radio";
 
 export default RadioButton;

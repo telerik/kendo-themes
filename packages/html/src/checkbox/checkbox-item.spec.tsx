@@ -35,5 +35,7 @@ CheckboxItem.states = states;
 CheckboxItem.options = options;
 CheckboxItem.className = CHECKBOXITEM_CLASSNAME;
 CheckboxItem.defaultOptions = defaultOptions;
+CheckboxItem.moduleName = "checkbox";
+CheckboxItem.folderName = "checkbox";
 
 export default CheckboxItem;

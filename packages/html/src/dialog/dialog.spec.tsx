@@ -89,5 +89,7 @@ Dialog.states = states;
 Dialog.options = options;
 Dialog.className = DIALOG_CLASSNAME;
 Dialog.defaultOptions = defaultOptions;
+Dialog.moduleName = "dialog";
+Dialog.folderName = "dialog";
 
 export default Dialog;

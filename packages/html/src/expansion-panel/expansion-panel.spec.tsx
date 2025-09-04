@@ -86,5 +86,7 @@ ExpansionPanel.states = states;
 ExpansionPanel.options = options;
 ExpansionPanel.className = EXPANSION_PANEL_CLASSNAME;
 ExpansionPanel.defaultOptions = defaultOptions;
+ExpansionPanel.moduleName = "expander";
+ExpansionPanel.folderName = "expansion-panel";
 
 export default ExpansionPanel;

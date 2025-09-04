@@ -82,5 +82,7 @@ ActionSheet.states = states;
 ActionSheet.options = options;
 ActionSheet.className = ACTIONSHEET_CLASSNAME;
 ActionSheet.defaultOptions = defaultOptions;
+ActionSheet.moduleName = "action-sheet";
+ActionSheet.folderName = ActionSheet.moduleName;
 
 export default ActionSheet;

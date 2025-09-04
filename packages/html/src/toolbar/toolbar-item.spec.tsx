@@ -41,5 +41,7 @@ ToolbarItem.states = states;
 ToolbarItem.options = options;
 ToolbarItem.className = TOOLBARITEM_CLASSNAME;
 ToolbarItem.defaultOptions = defaultOptions;
+ToolbarItem.moduleName = "toolbar";
+ToolbarItem.folderName = "toolbar";
 
 export default ToolbarItem;

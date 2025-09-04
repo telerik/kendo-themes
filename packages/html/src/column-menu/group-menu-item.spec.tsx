@@ -69,5 +69,7 @@ GroupMenuItem.states = states;
 GroupMenuItem.options = options;
 GroupMenuItem.className = GROUPMENUITEM_CLASSNAME;
 GroupMenuItem.defaultOptions = defaultOptions;
+GroupMenuItem.moduleName = "column-menu";
+GroupMenuItem.folderName = "column-menu";
 
 export default GroupMenuItem;

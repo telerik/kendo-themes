@@ -26,5 +26,7 @@ export const TimelineEventList: KendoComponent<React.HTMLAttributes<HTMLDivEleme
 };
 
 TimelineEventList.className = TIMELINEEVENTLIST_CLASSNAME;
+TimelineEventList.moduleName = "timeline";
+TimelineEventList.folderName = "timeline";
 
 export default TimelineEventList;

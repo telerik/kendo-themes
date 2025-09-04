@@ -36,5 +36,7 @@ ContextMenu.states = states;
 ContextMenu.options = options;
 ContextMenu.className = CONTEXTMENU_CLASSNAME;
 ContextMenu.defaultOptions = defaultOptions;
+ContextMenu.moduleName = "menu";
+ContextMenu.folderName = "menu";
 
 export default ContextMenu;

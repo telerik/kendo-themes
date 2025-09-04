@@ -79,5 +79,7 @@ DrawerItem.states = states;
 DrawerItem.options = options;
 DrawerItem.className = DRAWERITEM_CLASSNAME;
 DrawerItem.defaultOptions = defaultOptions;
+DrawerItem.moduleName = "drawer";
+DrawerItem.folderName = "drawer";
 
 export default DrawerItem;

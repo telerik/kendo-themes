@@ -1,5 +1,7 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
+
 export const CARD_GROUP_CLASSNAME = `k-card-group`;
 
 const states = [];
@@ -12,7 +14,7 @@ export type KendoCardGroupOptions = {};
 
 export type KendoCardGroupProps = KendoCardGroupOptions & {};
 
-export const CardGroup = (
+export const CardGroup: KendoComponent<KendoCardGroupProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoCardGroupProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
@@ -35,5 +37,7 @@ CardGroup.states = states;
 CardGroup.options = options;
 CardGroup.className = CARD_GROUP_CLASSNAME;
 CardGroup.defaultOptions = defaultOptions;
+CardGroup.moduleName = "card";
+CardGroup.folderName = "card";
 
 export default CardGroup;

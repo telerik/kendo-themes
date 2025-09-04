@@ -76,5 +76,7 @@ VerticalTimelineEvent.states = states;
 VerticalTimelineEvent.options = options;
 VerticalTimelineEvent.className = TIMELINEVERTICALEVENT_CLASSNAME;
 VerticalTimelineEvent.defaultOptions = defaultOptions;
+VerticalTimelineEvent.moduleName = "timeline";
+VerticalTimelineEvent.folderName = "timeline";
 
 export default VerticalTimelineEvent;

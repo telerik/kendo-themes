@@ -35,5 +35,7 @@ RadioItem.states = states;
 RadioItem.options = options;
 RadioItem.className = RADIOITEM_CLASSNAME;
 RadioItem.defaultOptions = defaultOptions;
+RadioItem.moduleName = "radio";
+RadioItem.folderName = "radio";
 
 export default RadioItem;

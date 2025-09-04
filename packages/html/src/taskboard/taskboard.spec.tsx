@@ -92,5 +92,7 @@ TaskBoard.states = states;
 TaskBoard.options = options;
 TaskBoard.className = TASKBOARD_CLASSNAME;
 TaskBoard.defaultOptions = defaultOptions;
+TaskBoard.moduleName = "task-board";
+TaskBoard.folderName = "taskboard";
 
 export default TaskBoard;

@@ -107,5 +107,7 @@ export const GridHeaderCell: KendoComponent<KendoGridHeaderCellProps & KendoGrid
 GridHeaderCell.states = states;
 GridHeaderCell.className = GRIDHEADERCELL_CLASSNAME;
 GridHeaderCell.defaultOptions = defaultOptions;
+GridHeaderCell.moduleName = "grid";
+GridHeaderCell.folderName = "grid";
 
 export default GridHeaderCell;

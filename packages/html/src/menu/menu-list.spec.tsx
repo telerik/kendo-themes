@@ -71,5 +71,7 @@ MenuList.states = states;
 MenuList.options = options;
 MenuList.className = MENULIST_CLASSNAME;
 MenuList.defaultOptions = defaultOptions;
+MenuList.moduleName = "menu";
+MenuList.folderName = "menu";
 
 export default MenuList;

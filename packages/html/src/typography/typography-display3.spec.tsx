@@ -20,5 +20,7 @@ export const TypographyDisplay3: KendoComponent<KendoTypographyDisplay3Props> = 
 TypographyDisplay3.states = states;
 TypographyDisplay3.options = options;
 TypographyDisplay3.className = TYPOGRAPHY_DISPLAY3_CLASSNAME;
+TypographyDisplay3.moduleName = "typography";
+TypographyDisplay3.folderName = "typography";
 
 export default TypographyDisplay3;

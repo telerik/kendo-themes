@@ -51,3 +51,5 @@ export const SchedulerToolbar: KendoComponent<KendoSchedulerToolbarProps & React
 };
 
 SchedulerToolbar.className = className;
+SchedulerToolbar.moduleName = "scheduler";
+SchedulerToolbar.folderName = "scheduler";

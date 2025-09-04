@@ -46,5 +46,7 @@ DataTable.states = states;
 DataTable.options = options;
 DataTable.className = DATATABLE_CLASSNAME;
 DataTable.defaultOptions = defaultOptions;
+DataTable.moduleName = "table";
+DataTable.folderName = "table";
 
 export default DataTable;

@@ -17,3 +17,5 @@ export const GanttContent: KendoComponent<React.HTMLAttributes<HTMLDivElement>> 
 );
 
 GanttContent.className = className;
+GanttContent.moduleName = "gantt";
+GanttContent.folderName = "gantt";

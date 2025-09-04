@@ -44,5 +44,7 @@ SchedulerGroup.states = states;
 SchedulerGroup.options = options;
 SchedulerGroup.defaultOptions = defaultOptions;
 SchedulerGroup.className = className;
+SchedulerGroup.moduleName = "scheduler";
+SchedulerGroup.folderName = "scheduler";
 
 export default SchedulerGroup;

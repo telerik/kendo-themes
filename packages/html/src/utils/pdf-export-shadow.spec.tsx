@@ -1,5 +1,7 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
+
 export const PDF_EXPORT_SHADOW_CLASSNAME = `k-pdf-export-shadow`;
 
 const states = [];
@@ -12,7 +14,7 @@ export type KendoPdfExportShadowOptions = {};
 
 export type KendoPdfExportShadowProps = KendoPdfExportShadowOptions & {};
 
-export const PdfExportShadow = (
+export const PdfExportShadow: KendoComponent<KendoPdfExportShadowProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPdfExportShadowProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
@@ -35,5 +37,7 @@ PdfExportShadow.states = states;
 PdfExportShadow.options = options;
 PdfExportShadow.className = PDF_EXPORT_SHADOW_CLASSNAME;
 PdfExportShadow.defaultOptions = defaultOptions;
+PdfExportShadow.moduleName = "grid";
+PdfExportShadow.folderName = PdfExportShadow.moduleName;
 
 export default PdfExportShadow;

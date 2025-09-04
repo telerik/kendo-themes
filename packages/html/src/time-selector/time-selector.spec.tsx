@@ -87,5 +87,7 @@ TimeSelector.states = states;
 TimeSelector.options = options;
 TimeSelector.className = TIMESELECTOR_CLASSNAME;
 TimeSelector.defaultOptions = defaultOptions;
+TimeSelector.moduleName = "time-selector";
+TimeSelector.folderName = "timeselector";
 
 export default TimeSelector;

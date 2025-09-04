@@ -1,3 +1,5 @@
+import * as React from 'react';
+import { KendoComponent } from '../_types/component';
 import { classNames } from '../misc';
 
 export const TABSTRIP_WRAPPER_CLASSNAME = `k-tabstrip-wrapper`;
@@ -12,7 +14,7 @@ export type KendoTabstripContainerOptions = {};
 
 export type KendoTabstripContainerProps = KendoTabstripContainerOptions & {};
 
-export const TabstripContainer = (
+export const TabstripContainer: KendoComponent<KendoTabstripContainerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTabstripContainerProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
@@ -35,5 +37,7 @@ TabstripContainer.states = states;
 TabstripContainer.options = options;
 TabstripContainer.className = TABSTRIP_WRAPPER_CLASSNAME;
 TabstripContainer.defaultOptions = defaultOptions;
+TabstripContainer.moduleName = "tabstrip";
+TabstripContainer.folderName = "tabstrip";
 
 export default TabstripContainer;

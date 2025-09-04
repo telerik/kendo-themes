@@ -20,5 +20,7 @@ export const TypographyCode: KendoComponent<KendoTypographyCodeProps> = (
 TypographyCode.states = states;
 TypographyCode.options = options;
 TypographyCode.className = TYPOGRAPHY_CODE_CLASSNAME;
+TypographyCode.moduleName = "typography";
+TypographyCode.folderName = "typography";
 
 export default TypographyCode;

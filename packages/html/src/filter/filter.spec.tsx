@@ -58,5 +58,7 @@ Filter.states = states;
 Filter.options = options;
 Filter.defaultOptions = defaultOptions;
 Filter.className = FILTER_CLASSNAME;
+Filter.moduleName = "filter";
+Filter.folderName = "filter";
 
 export default Filter;

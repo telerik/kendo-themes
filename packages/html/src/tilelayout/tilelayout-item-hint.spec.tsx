@@ -27,5 +27,7 @@ TileLayoutItemHint.states = states;
 TileLayoutItemHint.options = options;
 TileLayoutItemHint.className = TILELAYOUTITEMHINT_CLASSNAME;
 TileLayoutItemHint.defaultOptions = defaultOptions;
+TileLayoutItemHint.moduleName = "tile-layout";
+TileLayoutItemHint.folderName = "tilelayout";
 
 export default TileLayoutItemHint;

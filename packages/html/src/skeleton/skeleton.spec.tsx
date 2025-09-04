@@ -62,5 +62,7 @@ Skeleton.options = options;
 Skeleton.variants = SKELETON_VARIANTS;
 Skeleton.className = SKELETON_CLASSNAME;
 Skeleton.defaultOptions = defaultOptions;
+Skeleton.moduleName = "skeleton";
+Skeleton.folderName = "skeleton";
 
 export default Skeleton;

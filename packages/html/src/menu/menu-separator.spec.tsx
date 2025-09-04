@@ -38,5 +38,7 @@ export const MenuSeparator: KendoComponent<KendoMenuSeparatorProps & React.HTMLA
 
 MenuSeparator.className = SEPARATOR_CLASSNAME;
 MenuSeparator.defaultOptions = defaultOptions;
+MenuSeparator.moduleName = "menu";
+MenuSeparator.folderName = "menu";
 
 export default MenuSeparator;

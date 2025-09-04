@@ -1,5 +1,7 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
+
 export const CALENDAR_CONTAINER_CLASSNAME = `k-calendar-container`;
 
 const states = [];
@@ -12,7 +14,7 @@ export type KendoCalendarContainerOptions = {};
 
 export type KendoCalendarContainerProps = KendoCalendarContainerOptions & {};
 
-export const CalendarContainer = (
+export const CalendarContainer: KendoComponent<KendoCalendarContainerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoCalendarContainerProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
@@ -35,5 +37,7 @@ CalendarContainer.states = states;
 CalendarContainer.options = options;
 CalendarContainer.className = CALENDAR_CONTAINER_CLASSNAME;
 CalendarContainer.defaultOptions = defaultOptions;
+CalendarContainer.moduleName = "calendar";
+CalendarContainer.folderName = "calendar";
 
 export default CalendarContainer;

@@ -119,5 +119,7 @@ DateInput.states = states;
 DateInput.options = options;
 DateInput.className = DATEINPUT_CLASSNAME;
 DateInput.defaultOptions = defaultOptions;
+DateInput.moduleName = "date-input";
+DateInput.folderName = "dateinput";
 
 export default DateInput;

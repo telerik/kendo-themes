@@ -182,5 +182,7 @@ DropdownList.states = states;
 DropdownList.options = options;
 DropdownList.className = DROPDOWNLIST_CLASSNAME;
 DropdownList.defaultOptions = defaultOptions;
+DropdownList.moduleName = "dropdown-list";
+DropdownList.folderName = "dropdownlist";
 
 export default DropdownList;
