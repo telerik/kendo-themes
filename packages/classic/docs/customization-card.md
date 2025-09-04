@@ -478,16 +478,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-card-avatar-size</td>
-    <td>Number</td>
-    <td><code>45px</code></td>
-    <td><code>45px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Avatar in the Card.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-card-avatar-spacing</td>
     <td>String</td>
     <td><code>$kendo-card-header-padding-x</code></td>
