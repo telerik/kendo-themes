@@ -260,8 +260,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px rgba(0, 0, 0, .06)</code></td>
-    <td><code>(0 0 0 2px rgba(0, 0, 0, 0.06))</code></td>
+    <td><code>0 0 0 2px k-color(border)</code></td>
+    <td><code>(0 0 0 2px var(--kendo-color-border, rgba(0, 0, 0, 0.08)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused CheckBox.</div></div>
@@ -350,8 +350,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-invalid-text</td>
     <td>String</td>
-    <td><code>k-color(error)</code></td>
-    <td><code>var(--kendo-color-error, #f31700)</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>var(--kendo-color-error-on-surface, #ca1400)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of an invalid CheckBox.</div></div>
@@ -360,8 +360,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-invalid-border</td>
     <td>String</td>
-    <td><code>k-color(error)</code></td>
-    <td><code>var(--kendo-color-error, #f31700)</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>var(--kendo-color-error-on-surface, #ca1400)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of an invalid CheckBox.</div></div>

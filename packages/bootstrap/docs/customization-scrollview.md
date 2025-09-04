@@ -218,16 +218,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-scrollview-navigation-icon-shadow</td>
-    <td>List</td>
-    <td><code>rgba( black, .3 ) 0 0 15px</code></td>
-    <td><code>(rgba(0, 0, 0, 0.3) 0 0 15px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ScrollView navigation arrows.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-scrollview-navigation-bg</td>
     <td>Color</td>
     <td><code>rgba( black, 0 )</code></td>

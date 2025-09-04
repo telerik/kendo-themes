@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(base-hover)</code></td>
-    <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 8%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Upload dropzone.</div></div>
@@ -280,8 +280,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-success-text</td>
     <td>String</td>
-    <td><code>k-color(success)</code></td>
-    <td><code>var(--kendo-color-success, #37b400)</code></td>
+    <td><code>k-color(success-on-surface)</code></td>
+    <td><code>var(--kendo-color-success-on-surface, #2d9600)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The success text color of the Upload.</div></div>
@@ -300,8 +300,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-error-text</td>
     <td>String</td>
-    <td><code>k-color(error)</code></td>
-    <td><code>var(--kendo-color-error, #f31700)</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>var(--kendo-color-error-on-surface, #ca1400)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The error text color of the Upload.</div></div>
@@ -320,8 +320,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px rgba(0, 0, 0, .13)</code></td>
-    <td><code>(0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
+    <td><code>0 0 0 2px k-color(border-alt)</code></td>
+    <td><code>(0 0 0 2px var(--kendo-color-border-alt, rgba(0, 0, 0, 0.16)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Upload button, actions and uploaded items.</div></div>

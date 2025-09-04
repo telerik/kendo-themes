@@ -229,9 +229,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-text-line-height</td>
-    <td>Number</td>
-    <td><code>14px</code></td>
-    <td><code>14px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-xs, normal )</code></td>
+    <td><code>var(--kendo-line-height-xs, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the FAB item text.</div></div>
@@ -333,9 +333,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-disabled-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(5)</code></td>
-    <td><code>var(--kendo-elevation-5, 0px 8px 16px 0px rgba(0, 0, 0, 0.15))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled FAB.</div></div>
@@ -384,8 +384,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-bg</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the FAB item.</div></div>
@@ -443,9 +443,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-disabled-shadow</td>
-    <td>String</td>
+    <td>Null</td>
     <td><code>$kendo-fab-disabled-shadow</code></td>
-    <td><code>var(--kendo-elevation-5, 0px 8px 16px 0px rgba(0, 0, 0, 0.15))</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled FAB item.</div></div>
