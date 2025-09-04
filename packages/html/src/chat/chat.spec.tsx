@@ -4,6 +4,7 @@ import { IconButton } from '../button';
 import { ChatSendButton } from './';
 import { SpeechToTextButton } from '../speech-to-text-button';
 
+import { KendoComponent } from '../_types/component';
 const CHAT_CLASSNAME = 'k-chat';
 
 const states = [];
@@ -31,7 +32,7 @@ const defaultOptions = {
     tools: defaultTools,
 };
 
-export const Chat = (
+export const Chat: KendoComponent<KendoChatProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoChatProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

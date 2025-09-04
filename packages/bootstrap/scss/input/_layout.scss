@@ -19,8 +19,10 @@
 
             .k-input-#{$size} {
                 .k-input-prefix > .k-icon,
+                .k-input-prefix > .k-icon-wrapper-host .k-icon,
                 .k-input-prefix > .k-input-prefix-text,
                 .k-input-suffix > .k-icon,
+                .k-input-suffix > .k-icon-wrapper-host .k-icon,
                 .k-input-suffix > .k-input-suffix-text {
                     padding-inline: $_padding-x;
                 }

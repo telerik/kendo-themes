@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, stateClassNames, States, Size } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const RADIOBUTTON_CLASSNAME = `k-radio`;
 
 const states = [
@@ -30,7 +31,7 @@ const defaultOptions = {
     size: Size.medium
 };
 
-export const RadioButton = (
+export const RadioButton: KendoComponent<RadioButtonProps & RadioButtonState & React.HTMLAttributes<HTMLInputElement>> = (
     props: RadioButtonProps & RadioButtonState & React.HTMLAttributes<HTMLInputElement>
 ) => {
     const {

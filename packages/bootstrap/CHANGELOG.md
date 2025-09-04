@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1](https://github.com/telerik/kendo-themes/compare/v12.0.1-dev.2...v12.0.1) (2025-09-01)
+
+**Note:** Version bump only for package @progress/kendo-theme-bootstrap
+
+
+
+
+
+## [12.0.1-dev.2](https://github.com/telerik/kendo-themes/compare/v12.0.1-dev.1...v12.0.1-dev.2) (2025-09-01)
+
+
+### Bug Fixes
+
+* **input:** adornments icon padding ([081af6b](https://github.com/telerik/kendo-themes/commit/081af6bfd344ac95e12a3578b9685cc9b5dcc132))
+
+
+
+
+
 ## [12.0.1-dev.1](https://github.com/telerik/kendo-themes/compare/v12.0.1-dev.0...v12.0.1-dev.1) (2025-08-25)
 
 **Note:** Version bump only for package @progress/kendo-theme-bootstrap

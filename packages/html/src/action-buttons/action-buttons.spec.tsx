@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const ACTIONBUTTONS_CLASSNAME = `k-actions`;
 
 const states = [];
@@ -16,7 +17,7 @@ const defaultOptions = {
     orientation: 'horizontal'
 };
 
-export const ActionButtons = (
+export const ActionButtons: KendoComponent<KendoActionButtonsProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoActionButtonsProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

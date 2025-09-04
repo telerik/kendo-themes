@@ -2,6 +2,7 @@ import { Checkbox } from '../checkbox';
 import { Icon } from '../icon';
 import { classNames, stateClassNames, States } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const LISTITEM_CLASSNAME = `k-list-item`;
 
 const states = [
@@ -27,7 +28,7 @@ export type KendoListItemProps = {
 
 export type KendoListItemState = { [K in (typeof states)[number]]?: boolean };
 
-export const ListItem = (
+export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoListItemProps &
         KendoListItemState &
         React.HTMLAttributes<HTMLLIElement>

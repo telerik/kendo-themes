@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const PROMPT_CLASSNAME = `k-prompt`;
 
 const states = [];
@@ -8,7 +9,7 @@ const options = {};
 
 const defaultOptions = {};
 
-export const Prompt = (
+export const Prompt: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
     props:
         React.HTMLAttributes<HTMLDivElement>
 ) => {

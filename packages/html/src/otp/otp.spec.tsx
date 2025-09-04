@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, stateClassNames, States, Size } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const ONETIMEPASSWORD_CLASSNAME = `k-otp`;
 
 const states = [
@@ -20,7 +21,7 @@ const defaultOptions = {
     size: Size.medium,
 };
 
-export const OneTimePassword = (
+export const OneTimePassword: KendoComponent<KendoOneTimePasswordOptions & KendoOneTimePasswordState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoOneTimePasswordOptions &
         KendoOneTimePasswordState &
         React.HTMLAttributes<HTMLDivElement>

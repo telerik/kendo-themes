@@ -1,4 +1,5 @@
 import { classNames, States, Size, Roundness, FillMode } from '../misc';
+import { KendoComponent } from '../_types/component';
 import {
     Input,
     InputInnerTextarea,
@@ -56,7 +57,7 @@ const defaultOptions = {
     suffixSeparator: true
 } as const;
 
-export const Textarea = (
+export const Textarea: KendoComponent<KendoTextareaProps & KendoTextareaState & Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>> = (
     props: KendoTextareaProps &
         KendoTextareaState &
        Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>

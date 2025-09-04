@@ -5,6 +5,7 @@ import { States, classNames, stateClassNames } from '../misc';
 import { Searchbox } from '../searchbox';
 import { Textbox } from '../textbox';
 
+import { KendoComponent } from '../_types/component';
 export const TASKBOARD_CLASSNAME = `k-taskboard`;
 
 const states = [
@@ -36,7 +37,7 @@ const defaultOptions = {
 
 export type KendoTaskBoardState = { [K in (typeof states)[number]]?: boolean };
 
-export const TaskBoard = (
+export const TaskBoard: KendoComponent<KendoTaskBoardProps & KendoTaskBoardState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTaskBoardProps & KendoTaskBoardState & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {

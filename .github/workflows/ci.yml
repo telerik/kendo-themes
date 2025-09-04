@@ -17,6 +17,17 @@ jobs:
     name: Compile themes
     uses: ./.github/workflows/_compile-themes.yml
 
+  test-html-spec:
+    name: Test HTML spec
+    uses: ./.github/workflows/_test-html-spec.yml
+
+  ci-test-html-spec:
+    name: Status check > HTML spec
+    runs-on: ubuntu-latest
+    needs: [ test-html-spec ]
+    steps:
+      - name: Done
+        run: echo "Done!"
 
   render-test-pages:
     name: Render test pages
@@ -24,7 +35,6 @@ jobs:
     with:
       force-render: NO
       upload-policy: conditionally
-
 
   create-screenshots:
     name: Create screenshots
@@ -87,7 +97,7 @@ jobs:
   set-commit-status:
     name: Set commit status
     runs-on: ubuntu-latest
-    needs: [ detect-changes, ci-lint-scripts, ci-lint-styles, ci-docs, ci-test-units, ci-test-integrations, ci-a11y ]
+    needs: [ detect-changes, ci-lint-scripts, ci-lint-styles, ci-docs, ci-test-units, ci-test-integrations, ci-a11y, ci-test-html-spec ]
     timeout-minutes: 30
     if: ${{ always() && needs.detect-changes.outputs.snapshot_sha }}
 
@@ -106,6 +116,7 @@ jobs:
               ['${{ needs.ci-lint-styles.result }}', 'Status check > Lint styles'],
               ['${{ needs.ci-a11y.result }}', 'Status check > A11y'],
               ['${{ needs.ci-docs.result }}', 'Status check > Docs'],
+              ['${{ needs.ci-test-html-spec.result }}', 'Status check > HTML spec'],
               // Visual status will correspond to this detect-changes job succeeding (since snapshots updated successfully)
               ['success', 'Status check > Visual']
             ];

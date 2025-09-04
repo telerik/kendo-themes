@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, Size } from '../misc';
 import { MenuListItem, MenuSeparator } from '.';
 
+import { KendoComponent } from '../_types/component';
 export const MENULIST_CLASSNAME = `k-menu-group`;
 
 const states = [];
@@ -20,7 +21,7 @@ const defaultOptions = {
     dir: 'ltr'
 };
 
-export const MenuList = (
+export const MenuList: KendoComponent<KendoMenuListOptions & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoMenuListOptions &
         React.HTMLAttributes<HTMLUListElement>
 ) => {

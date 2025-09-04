@@ -1,6 +1,7 @@
 import { Button, KendoButtonOptions, KendoButtonProps, KendoButtonState } from '../button';
 import { classNames } from "../misc";
 
+import { KendoComponent } from '../_types/component';
 export const SPEECH_TO_TEXT_BUTTON_CLASSNAME = "k-speech-to-text-button";
 
 export type KendoSpeechToTextButtonOptions = KendoButtonOptions;
@@ -15,7 +16,7 @@ export type KendoSpeechToTextButtonProps = KendoButtonProps & KendoSpeechToTextB
     listening?: boolean;
 }
 
-export const SpeechToTextButton = (
+export const SpeechToTextButton: KendoComponent<KendoSpeechToTextButtonProps & KendoSpeechToTextButtonState & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoSpeechToTextButtonProps &
         KendoSpeechToTextButtonState &
         React.HTMLAttributes<HTMLButtonElement>

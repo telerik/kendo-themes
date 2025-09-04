@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1](https://github.com/telerik/kendo-themes/compare/v12.0.1-dev.2...v12.0.1) (2025-09-01)
+
+**Note:** Version bump only for package @progress/kendo-theme-fluent
+
+
+
+
+
+## [12.0.1-dev.2](https://github.com/telerik/kendo-themes/compare/v12.0.1-dev.1...v12.0.1-dev.2) (2025-09-01)
+
+
+### Bug Fixes
+
+* **calendar:** empty cells should not be interactive ([03e9f30](https://github.com/telerik/kendo-themes/commit/03e9f306dbe45ec35d1216c4cf604f60a6871ff6))
+
+
+
+
+
 ## [12.0.1-dev.1](https://github.com/telerik/kendo-themes/compare/v12.0.1-dev.0...v12.0.1-dev.1) (2025-08-25)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent

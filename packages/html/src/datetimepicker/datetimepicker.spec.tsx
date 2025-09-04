@@ -13,6 +13,7 @@ import { Popup } from '../popup';
 import { DateTimeSelector } from '../datetime-selector';
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 
+import { KendoComponent } from '../_types/component';
 export const DATETIMEPICKER_CLASSNAME = `k-datetimepicker`;
 
 const states = [
@@ -61,7 +62,7 @@ const defaultOptions = {
     fillMode: Input.defaultOptions.fillMode
 } as const;
 
-export const DateTimePicker = (
+export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDateTimePickerState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDateTimePickerProps &
         KendoDateTimePickerState &
         React.HTMLAttributes<HTMLSpanElement>

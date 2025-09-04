@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const TIMELINE_CLASSNAME = `k-timeline`;
 
 const states = [];
@@ -17,7 +18,7 @@ const defaultOptions = {
     orientation: "vertical",
 };
 
-export const Timeline = (
+export const Timeline: KendoComponent<KendoTimelineProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTimelineProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

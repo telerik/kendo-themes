@@ -1,6 +1,7 @@
 
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const DRAWERCONTENT_CLASSNAME = `k-drawer-content`;
 
 const states = [];
@@ -9,7 +10,7 @@ const options = { };
 
 const defaultOptions = {} as const;
 
-export const DrawerContent = (
+export const DrawerContent: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {

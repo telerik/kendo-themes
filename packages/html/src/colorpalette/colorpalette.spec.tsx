@@ -2,6 +2,7 @@ import { classNames, stateClassNames, States, Size, optionClassNames } from '../
 import { ColorPaletteRow } from './colorpalette-row';
 import { ColorPaletteTile } from './colorpalette-tile';
 
+import { KendoComponent } from '../_types/component';
 export const COLORPALETTE_CLASSNAME = `k-colorpalette`;
 
 const states = [
@@ -29,7 +30,7 @@ const defaultOptions = {
     size: Size.medium
 };
 
-export const ColorPalette = (
+export const ColorPalette: KendoComponent<KendoColorPaletteProps & KendoColorPaletteState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoColorPaletteProps &
         KendoColorPaletteState &
         React.HTMLAttributes<HTMLDivElement>

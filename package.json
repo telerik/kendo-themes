@@ -62,6 +62,7 @@
     "sass:dist": "nx run-many -t sass:dist",
     "docs": "nx run-many -t docs",
     "docs:check": "nx run-many -t docs:check",
+    "test:html": "npm run test --prefix packages/html",
     "test:render-test-pages": "node ./scripts/render-test-pages.mjs",
     "test:contrast": "node ./scripts/test-contrast.mjs",
     "test:create-screenshots": "./build/create-screenshots.sh",

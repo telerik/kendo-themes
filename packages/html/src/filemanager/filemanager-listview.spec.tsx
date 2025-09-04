@@ -1,6 +1,7 @@
 import { KendoListViewProps, ListView } from '../listview';
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const FILEMANAGERLISTVIEW_CLASSNAME = `k-filemanager-listview`;
 
 const states = [];
@@ -9,7 +10,7 @@ const options = {};
 
 const defaultOptions = {};
 
-export const FileManagerListView = (
+export const FileManagerListView: KendoComponent<KendoListViewProps & React.HTMLAttributes<HTMLDivElement>> = (
     props:
         KendoListViewProps &
         React.HTMLAttributes<HTMLDivElement>

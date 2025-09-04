@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, ThemeColor } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const APPBAR_CLASSNAME = `k-appbar`;
 
 const states = [];
@@ -31,7 +32,7 @@ export type KendoAppbarProps = KendoAppbarOptions & {
     position?: 'top' | 'bottom';
 };
 
-export const Appbar = (
+export const Appbar: KendoComponent<KendoAppbarProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoAppbarProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {

@@ -1,6 +1,7 @@
 
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const DRAWER_CLASSNAME = `k-drawer`;
 
 const states = [];
@@ -23,7 +24,7 @@ export type KendoDrawerProps = {
     width?: string;
 };
 
-export const Drawer = (
+export const Drawer: KendoComponent<KendoDrawerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDrawerProps &
     React.HTMLAttributes<HTMLDivElement>
 ) => {

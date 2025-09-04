@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { SliderNormal } from '../slider';
 import { MediaPlayerToolbar } from './mediaplayer-toolbar';
 
+import { KendoComponent } from '../_types/component';
 export const MEDIAPLAYER_CLASSNAME = `k-mediaplayer`;
 
 const states = [];
@@ -19,7 +20,7 @@ const defaultOptions = {
     title: "Media player title",
 };
 
-export const MediaPlayer = (
+export const MediaPlayer: KendoComponent<KendoMediaPlayerProps & KendoMediaPlayerState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoMediaPlayerProps &
         KendoMediaPlayerState &
         React.HTMLAttributes<HTMLDivElement>

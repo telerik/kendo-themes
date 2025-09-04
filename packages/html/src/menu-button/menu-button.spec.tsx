@@ -2,6 +2,7 @@ import { Button } from '../button';
 import { classNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
 import { Popup } from '../popup';
 
+import { KendoComponent } from '../_types/component';
 export const MENUBUTTON_CLASSNAME = `k-menu-button`;
 
 const states = [
@@ -58,7 +59,7 @@ const defaultOptions = {
     arrowIconName: "caret-alt-down"
 };
 
-export const MenuButton = (
+export const MenuButton: KendoComponent<KendoMenuButtonProps & KendoMenuButtonState & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoMenuButtonProps &
         KendoMenuButtonState &
         React.HTMLAttributes<HTMLButtonElement>

@@ -1,6 +1,7 @@
 import { Button } from '../button';
 import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode } from '../misc';
 
+import { KendoComponent } from '../_types/component';
 export const SIGNATURE_CLASSNAME = `k-signature`;
 
 const states = [
@@ -35,7 +36,7 @@ const defaultOptions = {
     fillMode: FillMode.solid
 };
 
-export const Signature = (
+export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSignatureProps &
         KendoSignatureState &
         React.HTMLAttributes<HTMLDivElement>
