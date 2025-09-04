@@ -1,6 +1,5 @@
 import { classNames, optionClassNames, Size, ThemeColor } from '../misc';
 
-import { KendoComponent } from '../_types/component';
 export const FONTICON_CLASSNAME = `k-font-icon`;
 
 const states = [];
@@ -34,7 +33,7 @@ export type FontIconProps = FontIconOptions & {
 
 const defaultOptions = {};
 
-export const FontIcon: KendoComponent<FontIconProps & React.HTMLAttributes<HTMLSpanElement>> = (
+export const FontIcon = (
     props: FontIconProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
