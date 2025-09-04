@@ -3,6 +3,7 @@ import { selectorSpecificity } from "@csstools/selector-specificity";
 import selectorParser, { Selector, Node, ClassName, Tag, Pseudo, Attribute } from "postcss-selector-parser";
 import { SourceMapConsumer } from "@jridgewell/source-map";
 import { optionClassNames, stateClassNames, variantClassNames } from "../packages/html/src/misc/component-class-names";
+import { SpecComponent } from "./specificity-specs";
 import * as htmlComponents from "../packages/html/src/index";
 import * as sass from "sass";
 import * as path from "path";
@@ -35,21 +36,6 @@ interface SelectorInfo {
   selector: string;
   specificity: number[];
   sourceLocation: string;
-}
-
-interface Component {
-  name: string;
-  className: string;
-  folderName: string | null;
-  moduleName: string | null;
-  variants?: string[];
-  options?: {
-    size?: string[];
-    fillMode?: string[];
-    themeColor?: string[];
-    rounded?: string[];
-  };
-  readonly states?: string[];
 }
 
 interface GetComponentSelectorsOptions {
@@ -987,7 +973,7 @@ interface TestSpecificityOptions {
  * @param options - Configuration options (preset)
  * @param components - Array of spec components
  */
-function testSpecificity(options: TestSpecificityOptions = {}, components: Component[]): void {
+function testSpecificity(options: TestSpecificityOptions = {}, components: SpecComponent[]): void {
   const {
     basePath = path.resolve(__dirname, "../"),
     enforceBaseClassName = false,
@@ -1102,4 +1088,4 @@ function testSpecificity(options: TestSpecificityOptions = {}, components: Compo
 export { presets, calculateSpecificity, calculateSpecificityThreshold, formatSpecificityBreakdown, getComponentSelectors, getSelectorsSpecificity, compareSpecificity, getMoreSpecific, parseSelector, hasClassName, countClassOccurrences, getClassNames, hasPseudoClass, countPseudoClassOccurrences, hasPseudoElement, hasElements, stripNotSelectors, stripWhereSelectors, stripSpecialSelectors, detectNot, testSpecificity, analyzeSelectorPart, couldBelongToComponent };
 
 // Export types for TypeScript consumers
-export type { SelectorInfo, Component, GetComponentSelectorsOptions, ParsedSelector, SpecificityBreakdown, SpecificityThresholdResult, SpecificityThresholdOptions, TestSpecificityOptions };
+export type { SelectorInfo, GetComponentSelectorsOptions, ParsedSelector, SpecificityBreakdown, SpecificityThresholdResult, SpecificityThresholdOptions, TestSpecificityOptions };
