@@ -150,5 +150,7 @@ PDFViewer.states = states;
 PDFViewer.options = options;
 PDFViewer.className = PDFVIEWER_CLASSNAME;
 PDFViewer.defaultOptions = defaultOptions;
+PDFViewer.moduleName = "pdf-viewer";
+PDFViewer.folderName = "pdf-viewer";
 
 export default PDFViewer;

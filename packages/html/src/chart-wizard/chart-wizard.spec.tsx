@@ -36,5 +36,7 @@ ChartWizard.states = states;
 ChartWizard.options = options;
 ChartWizard.className = CHARTWIZARD_CLASSNAME;
 ChartWizard.defaultOptions = defaultOptions;
+ChartWizard.moduleName = "chart-wizard";
+ChartWizard.folderName = "chart-wizard";
 
 export default ChartWizard;

@@ -49,5 +49,7 @@ ColumnList.states = states;
 ColumnList.options = options;
 ColumnList.className = COLUMNLIST_CLASSNAME;
 ColumnList.defaultOptions = defaultOptions;
+ColumnList.moduleName = "column-menu";
+ColumnList.folderName = "column-menu";
 
 export default ColumnList;

@@ -21,3 +21,5 @@ export const GanttTasksTable: KendoComponent<KendoTableOptions & React.HTMLAttri
 );
 
 GanttTasksTable.className = GANTTTASKSTABLE_CLASSNAME;
+GanttTasksTable.moduleName = "gantt";
+GanttTasksTable.folderName = "gantt";

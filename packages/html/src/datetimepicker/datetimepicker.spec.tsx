@@ -169,5 +169,7 @@ DateTimePicker.states = states;
 DateTimePicker.options = options;
 DateTimePicker.className = DATETIMEPICKER_CLASSNAME;
 DateTimePicker.defaultOptions = defaultOptions;
+DateTimePicker.moduleName = "date-time-picker";
+DateTimePicker.folderName = "datetimepicker";
 
 export default DateTimePicker;

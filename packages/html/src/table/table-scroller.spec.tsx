@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { KendoComponent } from '../_types/component';
 import { classNames } from '../misc';
 
 const TABLE_SCROLLER_CLASSNAME = 'k-table-scroller';
@@ -15,7 +16,9 @@ export type KendoTableScrollerState = { [K in (typeof states)[number]]?: boolean
 
 const defaultOptions = {};
 
-export const TableScroller = (
+export const TableScroller: KendoComponent<KendoTableScrollerProps &
+        KendoTableScrollerState &
+        React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTableScrollerProps &
         KendoTableScrollerState &
         React.HTMLAttributes<HTMLDivElement>
@@ -41,5 +44,7 @@ TableScroller.states = states;
 TableScroller.options = options;
 TableScroller.className = TABLE_SCROLLER_CLASSNAME;
 TableScroller.defaultOptions = defaultOptions;
+TableScroller.moduleName = "table";
+TableScroller.folderName = "table";
 
 export default TableScroller;

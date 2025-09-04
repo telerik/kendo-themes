@@ -92,5 +92,7 @@ Treeview.states = states;
 Treeview.options = options;
 Treeview.className = TREEVIEW_CLASSNAME;
 Treeview.defaultOptions = defaultOptions;
+Treeview.moduleName = "treeview";
+Treeview.folderName = "treeview";
 
 export default Treeview;

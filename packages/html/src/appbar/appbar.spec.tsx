@@ -67,5 +67,7 @@ Appbar.states = states;
 Appbar.options = options;
 Appbar.className = APPBAR_CLASSNAME;
 Appbar.defaultOptions = defaultOptions;
+Appbar.moduleName = "appbar";
+Appbar.folderName = Appbar.moduleName;
 
 export default Appbar;

@@ -63,5 +63,7 @@ HorizontalTimelineEvent.states = states;
 HorizontalTimelineEvent.options = options;
 HorizontalTimelineEvent.className = TIMELINEHORIZONTALEVENT_CLASSNAME;
 HorizontalTimelineEvent.defaultOptions = defaultOptions;
+HorizontalTimelineEvent.moduleName = "timeline";
+HorizontalTimelineEvent.folderName = "timeline";
 
 export default HorizontalTimelineEvent;

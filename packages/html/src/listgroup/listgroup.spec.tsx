@@ -59,5 +59,7 @@ ListGroup.states = states;
 ListGroup.options = options;
 ListGroup.className = LISTGROUP_CLASSNAME;
 ListGroup.defaultOptions = defaultOptions;
+ListGroup.moduleName = "listgroup";
+ListGroup.folderName = "listgroup";
 
 export default ListGroup;

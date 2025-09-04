@@ -107,5 +107,7 @@ ColorEditor.states = states;
 ColorEditor.options = options;
 ColorEditor.className = COLOREDITOR_CLASSNAME;
 ColorEditor.defaultOptions = defaultOptions;
+ColorEditor.moduleName = "color-editor";
+ColorEditor.folderName = "coloreditor";
 
 export default ColorEditor;

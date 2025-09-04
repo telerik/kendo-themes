@@ -99,5 +99,7 @@ ProgressBar.states = states;
 ProgressBar.options = options;
 ProgressBar.className = PROGRESSBAR_CLASSNAME;
 ProgressBar.defaultOptions = defaultOptions;
+ProgressBar.moduleName = "progressbar";
+ProgressBar.folderName = "progressbar";
 
 export default ProgressBar;

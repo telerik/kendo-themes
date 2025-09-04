@@ -63,5 +63,7 @@ ButtonGroup.states = states;
 ButtonGroup.options = options;
 ButtonGroup.className = BUTTONGROUP_CLASSNAME;
 ButtonGroup.defaultOptions = defaultOptions;
+ButtonGroup.moduleName = "button";
+ButtonGroup.folderName = "button";
 
 export default ButtonGroup;

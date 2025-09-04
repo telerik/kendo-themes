@@ -123,5 +123,7 @@ MenuListItem.states = states;
 MenuListItem.options = options;
 MenuListItem.className = MENULISTITEM_CLASSNAME;
 MenuListItem.defaultOptions = defaultOptions;
+MenuListItem.moduleName = "menu";
+MenuListItem.folderName = "menu";
 
 export default MenuListItem;

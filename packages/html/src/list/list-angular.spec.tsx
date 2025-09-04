@@ -112,5 +112,7 @@ ListAngular.states = states;
 ListAngular.options = options;
 ListAngular.className = LISTANGULAR_CLASSNAME;
 ListAngular.defaultOptions = defaultOptions;
+ListAngular.moduleName = "list";
+ListAngular.folderName = "list";
 
 export default ListAngular;

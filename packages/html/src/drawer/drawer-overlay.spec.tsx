@@ -1,5 +1,7 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
+
 export const DRAWER_OVERLAY_CLASSNAME = `k-drawer-overlay`;
 
 const states = [];
@@ -12,7 +14,7 @@ export type KendoDrawerOverlayOptions = {};
 
 export type KendoDrawerOverlayProps = KendoDrawerOverlayOptions & {};
 
-export const DrawerOverlay = (
+export const DrawerOverlay: KendoComponent<KendoDrawerOverlayProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDrawerOverlayProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
@@ -35,5 +37,7 @@ DrawerOverlay.states = states;
 DrawerOverlay.options = options;
 DrawerOverlay.className = DRAWER_OVERLAY_CLASSNAME;
 DrawerOverlay.defaultOptions = defaultOptions;
+DrawerOverlay.moduleName = "drawer";
+DrawerOverlay.folderName = "drawer";
 
 export default DrawerOverlay;

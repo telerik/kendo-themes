@@ -78,5 +78,7 @@ ListItem.states = states;
 ListItem.options = options;
 ListItem.className = LISTITEM_CLASSNAME;
 ListItem.defaultOptions = defaultOptions;
+ListItem.moduleName = "list";
+ListItem.folderName = "list";
 
 export default ListItem;

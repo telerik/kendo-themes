@@ -20,3 +20,5 @@ export const GridPager: KendoComponent<KendoPagerProps & React.HTMLAttributes<HT
 );
 
 GridPager.className = className;
+GridPager.moduleName = "grid";
+GridPager.folderName = "grid";

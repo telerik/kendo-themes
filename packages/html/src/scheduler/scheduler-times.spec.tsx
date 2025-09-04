@@ -18,3 +18,5 @@ export const SchedulerTimes: KendoComponent<React.HTMLAttributes<HTMLDivElement>
 );
 
 SchedulerTimes.className = className;
+SchedulerTimes.moduleName = "scheduler";
+SchedulerTimes.folderName = "scheduler";

@@ -1,5 +1,7 @@
 import { classNames, stateClassNames } from "../misc";
 
+import { KendoComponent } from '../_types/component';
+
 export const CARD_LIST_CLASSNAME = `k-card-list`;
 
 const states = [];
@@ -14,7 +16,7 @@ export type KendoCardListProps = KendoCardListOptions & {};
 
 export type KendoCardListState = { [K in (typeof states)[number]]?: boolean };
 
-export const CardList = (props: KendoCardListProps & KendoCardListState & React.HTMLAttributes<HTMLDivElement>) => {
+export const CardList: KendoComponent<KendoCardListProps & KendoCardListState & React.HTMLAttributes<HTMLDivElement>> = (props: KendoCardListProps & KendoCardListState & React.HTMLAttributes<HTMLDivElement>) => {
   const { ...other } = props;
 
   return (
@@ -28,5 +30,7 @@ CardList.states = states;
 CardList.options = options;
 CardList.className = CARD_LIST_CLASSNAME;
 CardList.defaultOptions = defaultOptions;
+CardList.moduleName = "card";
+CardList.folderName = "card";
 
 export default CardList;

@@ -21,3 +21,5 @@ export const GridTable: KendoComponent<KendoTableOptions & React.HTMLAttributes<
 );
 
 GridTable.className = GRIDTABLE_CLASSNAME;
+GridTable.moduleName = "grid";
+GridTable.folderName = "grid";

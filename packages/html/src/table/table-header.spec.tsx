@@ -3,6 +3,8 @@ import { classNames, stateClassNames, States } from '../misc';
 import { TableHeaderWrap } from './table-header-wrap.spec';
 import Table from './table.spec';
 
+import { KendoComponent } from '../_types/component';
+
 const TABLE_HEADER_CLASSNAME = 'k-table-header';
 
 const states = [
@@ -21,7 +23,9 @@ export type KendoTableHeaderState = { [K in (typeof states)[number]]?: boolean }
 
 const defaultOptions = {};
 
-export const TableHeader = (
+export const TableHeader: KendoComponent<KendoTableHeaderProps &
+        KendoTableHeaderState &
+        React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTableHeaderProps &
         KendoTableHeaderState &
         React.HTMLAttributes<HTMLDivElement>
@@ -57,5 +61,7 @@ TableHeader.states = states;
 TableHeader.options = options;
 TableHeader.className = TABLE_HEADER_CLASSNAME;
 TableHeader.defaultOptions = defaultOptions;
+TableHeader.moduleName = "table";
+TableHeader.folderName = "table";
 
 export default TableHeader;

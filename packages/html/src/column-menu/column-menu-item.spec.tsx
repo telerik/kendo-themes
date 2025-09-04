@@ -64,5 +64,7 @@ ColumnMenuItem.states = states;
 ColumnMenuItem.options = options;
 ColumnMenuItem.className = COLUMNMENUITEM_CLASSNAME;
 ColumnMenuItem.defaultOptions = defaultOptions;
+ColumnMenuItem.moduleName = "column-menu";
+ColumnMenuItem.folderName = "column-menu";
 
 export default ColumnMenuItem;

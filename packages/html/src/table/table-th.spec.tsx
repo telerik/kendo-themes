@@ -1,3 +1,5 @@
+import * as React from 'react';
+import { KendoComponent } from '../_types/component';
 import { classNames } from '../misc';
 
 const className = `k-table-th`;
@@ -8,7 +10,8 @@ export type KendoTableThProps = {
     rowspan?: any;
 };
 
-export const TableTh = (
+export const TableTh: KendoComponent<KendoTableThProps &
+    React.HTMLAttributes<HTMLTableCellElement>> = (
     props: KendoTableThProps &
     React.HTMLAttributes<HTMLTableCellElement>
 ) => {
@@ -39,3 +42,5 @@ export const TableTh = (
 };
 
 TableTh.className = className;
+TableTh.moduleName = "table";
+TableTh.folderName = "table";

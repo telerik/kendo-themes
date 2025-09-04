@@ -17,3 +17,5 @@ export const GridContainer: KendoComponent<React.HTMLAttributes<HTMLDivElement>>
 );
 
 GridContainer.className = className;
+GridContainer.moduleName = "grid";
+GridContainer.folderName = "grid";

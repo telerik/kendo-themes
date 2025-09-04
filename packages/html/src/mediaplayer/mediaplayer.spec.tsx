@@ -55,5 +55,7 @@ MediaPlayer.states = states;
 MediaPlayer.options = options;
 MediaPlayer.className = MEDIAPLAYER_CLASSNAME;
 MediaPlayer.defaultOptions = defaultOptions;
+MediaPlayer.moduleName = "media-player";
+MediaPlayer.folderName = "mediaplayer";
 
 export default MediaPlayer;

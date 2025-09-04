@@ -1,5 +1,7 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
+
 export const CARDDECK_SCROLLWRAP_CLASSNAME = `k-card-deck-scrollwrap`;
 
 const states = [];
@@ -12,7 +14,7 @@ export type KendoCardDeckScrollwrapOptions = {};
 
 export type KendoCardDeckScrollwrapProps = KendoCardDeckScrollwrapOptions & {};
 
-export const CardDeckScrollwrap = (
+export const CardDeckScrollwrap: KendoComponent<KendoCardDeckScrollwrapProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoCardDeckScrollwrapProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
@@ -35,5 +37,7 @@ CardDeckScrollwrap.states = states;
 CardDeckScrollwrap.options = options;
 CardDeckScrollwrap.className = CARDDECK_SCROLLWRAP_CLASSNAME;
 CardDeckScrollwrap.defaultOptions = defaultOptions;
+CardDeckScrollwrap.moduleName = "card";
+CardDeckScrollwrap.folderName = "card";
 
 export default CardDeckScrollwrap;

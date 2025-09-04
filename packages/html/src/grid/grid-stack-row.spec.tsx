@@ -35,5 +35,7 @@ export const GridStackRow: KendoComponent<KendoGridStackRowProps & React.HTMLAtt
 };
 
 GridStackRow.className = GRIDSTACKROW_CLASSNAME;
+GridStackRow.moduleName = "grid";
+GridStackRow.folderName = "grid";
 
 export default GridStackRow;

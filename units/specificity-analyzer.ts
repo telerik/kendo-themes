@@ -8,6 +8,8 @@ import * as sass from "sass";
 import * as path from "path";
 import { it, expect } from "@jest/globals";
 
+const theme = process.env.THEME;
+
 const presets: Record<string, TestSpecificityOptions> = {
   "2025Q4": {
     baseClass: false,
@@ -36,7 +38,10 @@ interface SelectorInfo {
 }
 
 interface Component {
+  name: string;
   className: string;
+  folderName: string | null;
+  moduleName: string | null;
   variants?: string[];
   options?: {
     size?: string[];
@@ -975,19 +980,14 @@ interface TestSpecificityOptions {
 }
 
 /**
- * Component tuple type for array-based specificity testing
- */
-type ComponentTuple = [Component: any, folder: string, mixin?: string];
-
-/**
  * Utility function to test component specificity for multiple components
  * Handles compilation and generates Jest test cases for an array of components
  *
  * @param theme - Theme name (e.g., "default", "bootstrap", "material", "fluent")
  * @param options - Configuration options (preset)
- * @param components - Array of component tuples [Component, folder, mixin?]
+ * @param components - Array of spec components
  */
-function testSpecificity(theme: string, options: TestSpecificityOptions = {}, components: ComponentTuple[]): void {
+function testSpecificity(options: TestSpecificityOptions = {}, components: Component[]): void {
   const {
     basePath = path.resolve(__dirname, "../"),
     enforceBaseClassName = false,
@@ -1024,8 +1024,8 @@ function testSpecificity(theme: string, options: TestSpecificityOptions = {}, co
       );
 
       // Process each component against the compiled theme
-      components.forEach(([Component]) => {
-        describe(`${(Component as any).name} specificity`, () => {
+      components.forEach((Component) => {
+        describe(`${Component.name} specificity`, () => {
           // Get component selectors from the full theme CSS
           const selectors = getComponentSelectors(themeResult.css, Component, {
             sourceMap: themeResult.sourceMap,
@@ -1053,17 +1053,17 @@ function testSpecificity(theme: string, options: TestSpecificityOptions = {}, co
     case "component":
     default:
       // Individual component compilation (current behavior)
-      components.forEach(([Component, folder, mixin = folder]) => {
-        describe(`${(Component as any).name} specificity`, () => {
+      components.forEach((Component) => {
+        describe(`${Component.name} specificity`, () => {
           // Compile component SCSS individually
           const result = sass.compileString(
             `
-            @use '${basePath}/packages/${theme}/scss/${folder}/_variables.scss' as *;
-            @use '${basePath}/packages/${theme}/scss/${folder}/_theme.scss' as *;
-            @use '${basePath}/packages/${theme}/scss/${folder}/_layout.scss' as *;
+            @use '${basePath}/packages/${theme}/scss/${Component.folderName}/_variables.scss' as *;
+            @use '${basePath}/packages/${theme}/scss/${Component.folderName}/_theme.scss' as *;
+            @use '${basePath}/packages/${theme}/scss/${Component.folderName}/_layout.scss' as *;
 
-            @include kendo-${mixin}--layout();
-            @include kendo-${mixin}--theme();
+            @include kendo-${Component.moduleName}--layout();
+            @include kendo-${Component.moduleName}--theme();
           `,
             {
               loadPaths: [basePath, path.resolve(basePath, "node_modules")],
@@ -1102,4 +1102,4 @@ function testSpecificity(theme: string, options: TestSpecificityOptions = {}, co
 export { presets, calculateSpecificity, calculateSpecificityThreshold, formatSpecificityBreakdown, getComponentSelectors, getSelectorsSpecificity, compareSpecificity, getMoreSpecific, parseSelector, hasClassName, countClassOccurrences, getClassNames, hasPseudoClass, countPseudoClassOccurrences, hasPseudoElement, hasElements, stripNotSelectors, stripWhereSelectors, stripSpecialSelectors, detectNot, testSpecificity, analyzeSelectorPart, couldBelongToComponent };
 
 // Export types for TypeScript consumers
-export type { SelectorInfo, Component, ComponentTuple, GetComponentSelectorsOptions, ParsedSelector, SpecificityBreakdown, SpecificityThresholdResult, SpecificityThresholdOptions, TestSpecificityOptions };
+export type { SelectorInfo, Component, GetComponentSelectorsOptions, ParsedSelector, SpecificityBreakdown, SpecificityThresholdResult, SpecificityThresholdOptions, TestSpecificityOptions };

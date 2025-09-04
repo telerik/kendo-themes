@@ -1,5 +1,7 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
+
 export const FLOATING_TOOLBAR_CLASSNAME = `k-floating-toolbar`;
 
 const states = [];
@@ -12,7 +14,7 @@ export type KendoFloatingToolbarOptions = {};
 
 export type KendoFloatingToolbarProps = KendoFloatingToolbarOptions & {};
 
-export const FloatingToolbar = (
+export const FloatingToolbar: KendoComponent<KendoFloatingToolbarProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoFloatingToolbarProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
@@ -35,5 +37,7 @@ FloatingToolbar.states = states;
 FloatingToolbar.options = options;
 FloatingToolbar.className = FLOATING_TOOLBAR_CLASSNAME;
 FloatingToolbar.defaultOptions = defaultOptions;
+FloatingToolbar.moduleName = "toolbar";
+FloatingToolbar.folderName = "toolbar";
 
 export default FloatingToolbar;

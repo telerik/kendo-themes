@@ -1,3 +1,5 @@
+import * as React from 'react';
+import { KendoComponent } from '../_types/component';
 import { classNames } from '../misc';
 
 export const RIPPLE_CONTAINER_CLASSNAME = `k-ripple-container`;
@@ -12,7 +14,7 @@ export type KendoRippleContainerOptions = {};
 
 export type KendoRippleContainerProps = KendoRippleContainerOptions & {};
 
-export const RippleContainer = (
+export const RippleContainer: KendoComponent<KendoRippleContainerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoRippleContainerProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
@@ -35,5 +37,7 @@ RippleContainer.states = states;
 RippleContainer.options = options;
 RippleContainer.className = RIPPLE_CONTAINER_CLASSNAME;
 RippleContainer.defaultOptions = defaultOptions;
+RippleContainer.moduleName = "ripple";
+RippleContainer.folderName = "ripple";
 
 export default RippleContainer;

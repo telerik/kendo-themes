@@ -44,5 +44,7 @@ RadioGroup.states = states;
 RadioGroup.options = options;
 RadioGroup.className = RADIOGROUP_CLASSNAME;
 RadioGroup.defaultOptions = defaultOptions;
+RadioGroup.moduleName = "radio";
+RadioGroup.folderName = "radio";
 
 export default RadioGroup;

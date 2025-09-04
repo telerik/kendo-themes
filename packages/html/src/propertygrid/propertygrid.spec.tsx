@@ -30,5 +30,7 @@ PropertyGrid.states = states;
 PropertyGrid.options = options;
 PropertyGrid.className = PROPERTYGRID_CLASSNAME;
 PropertyGrid.defaultOptions = defaultOptions;
+PropertyGrid.moduleName = null;
+PropertyGrid.folderName = null;
 
 export default PropertyGrid;

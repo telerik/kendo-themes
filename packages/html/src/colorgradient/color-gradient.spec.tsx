@@ -144,5 +144,7 @@ ColorGradient.states = states;
 ColorGradient.options = options;
 ColorGradient.className = COLOR_GRADIENT_CLASSNAME;
 ColorGradient.defaultOptions = defaultOptions;
+ColorGradient.moduleName = "color-gradient";
+ColorGradient.folderName = "colorgradient";
 
 export default ColorGradient;

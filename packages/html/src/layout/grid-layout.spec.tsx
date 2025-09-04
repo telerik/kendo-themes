@@ -35,5 +35,7 @@ export const GridLayout: KendoComponent<KendoGridLayoutProps & React.HTMLAttribu
 GridLayout.states = states;
 GridLayout.options = options;
 GridLayout.className = GRIDLAYOUT_CLASSNAME;
+GridLayout.moduleName = "grid-layout";
+GridLayout.folderName = "gridlayout";
 
 export default GridLayout;

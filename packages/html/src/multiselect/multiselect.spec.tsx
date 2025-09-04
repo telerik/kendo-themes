@@ -199,5 +199,7 @@ MultiSelect.states = states;
 MultiSelect.options = options;
 MultiSelect.className = MULTISELECT_CLASSNAME;
 MultiSelect.defaultOptions = defaultOptions;
+MultiSelect.moduleName = "multiselect";
+MultiSelect.folderName = "multiselect";
 
 export default MultiSelect;

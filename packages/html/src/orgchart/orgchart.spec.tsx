@@ -46,5 +46,7 @@ Orgchart.states = states;
 Orgchart.options = options;
 Orgchart.className = ORGCHART_CLASSNAME;
 Orgchart.defaultOptions = defaultOptions;
+Orgchart.moduleName = "orgchart";
+Orgchart.folderName = "orgchart";
 
 export default Orgchart;

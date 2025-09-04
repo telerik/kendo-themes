@@ -57,5 +57,7 @@ Popover.states = states;
 Popover.options = options;
 Popover.className = POPOVER_CLASSNAME;
 Popover.defaultOptions = defaultOptions;
+Popover.moduleName = "popover";
+Popover.folderName = "popover";
 
 export default Popover;

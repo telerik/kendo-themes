@@ -102,5 +102,7 @@ Menu.states = states;
 Menu.options = options;
 Menu.className = MENU_CLASSNAME;
 Menu.defaultOptions = defaultOptions;
+Menu.moduleName = "menu";
+Menu.folderName = "menu";
 
 export default Menu;

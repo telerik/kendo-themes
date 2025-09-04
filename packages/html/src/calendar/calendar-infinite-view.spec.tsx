@@ -81,5 +81,7 @@ export const CalendarInfiniteView: KendoComponent<KendoCalendarInfiniteViewProps
 
 CalendarInfiniteView.className = CALENDARINFINITEVIEW_CLASSNAME;
 CalendarInfiniteView.defaultOptions = defaultOptions;
+CalendarInfiniteView.moduleName = "calendar";
+CalendarInfiniteView.folderName = "calendar";
 
 export default CalendarInfiniteView;

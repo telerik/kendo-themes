@@ -240,5 +240,7 @@ DropdownGrid.states = states;
 DropdownGrid.options = options;
 DropdownGrid.className = DROPDOWNGRID_CLASSNAME;
 DropdownGrid.defaultOptions = defaultOptions;
+DropdownGrid.moduleName = "dropdown-grid";
+DropdownGrid.folderName = "dropdowngrid";
 
 export default DropdownGrid;

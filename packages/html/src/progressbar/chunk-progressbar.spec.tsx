@@ -79,5 +79,7 @@ ChunkProgressBar.states = states;
 ChunkProgressBar.options = options;
 ChunkProgressBar.className = CHUNKPROGRESSBAR_CLASSNAME;
 ChunkProgressBar.defaultOptions = defaultOptions;
+ChunkProgressBar.moduleName = "progressbar";
+ChunkProgressBar.folderName = "progressbar";
 
 export default ChunkProgressBar;

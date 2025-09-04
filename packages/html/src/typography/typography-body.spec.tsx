@@ -20,5 +20,7 @@ export const TypographyBody: KendoComponent<KendoTypographyBodyProps> = (
 TypographyBody.states = states;
 TypographyBody.options = options;
 TypographyBody.className = TYPOGRAPHY_BODY_CLASSNAME;
+TypographyBody.moduleName = "typography";
+TypographyBody.folderName = "typography";
 
 export default TypographyBody;

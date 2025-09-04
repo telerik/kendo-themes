@@ -171,5 +171,7 @@ ColorPicker.states = states;
 ColorPicker.options = options;
 ColorPicker.className = COLORPICKER_CLASSNAME;
 ColorPicker.defaultOptions = defaultOptions;
+ColorPicker.moduleName = "color-picker";
+ColorPicker.folderName = "colorpicker";
 
 export default ColorPicker;

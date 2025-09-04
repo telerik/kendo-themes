@@ -20,3 +20,5 @@ export const CalendarTbody: KendoComponent<React.HTMLAttributes<HTMLTableSection
 };
 
 CalendarTbody.className = className;
+CalendarTbody.moduleName = "calendar";
+CalendarTbody.folderName = "calendar";

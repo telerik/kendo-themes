@@ -199,5 +199,7 @@ DropdownTree.states = states;
 DropdownTree.options = options;
 DropdownTree.className = DROPDOWNTREE_CLASSNAME;
 DropdownTree.defaultOptions = defaultOptions;
+DropdownTree.moduleName = "dropdown-tree";
+DropdownTree.folderName = "dropdowntree";
 
 export default DropdownTree;

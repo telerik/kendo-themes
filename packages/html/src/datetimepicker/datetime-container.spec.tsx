@@ -1,5 +1,7 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
+
 export const DATETIME_CONTAINER_CLASSNAME = `k-datetime-container`;
 
 const states = [];
@@ -12,7 +14,7 @@ export type KendoDateTimeContainerOptions = {};
 
 export type KendoDateTimeContainerProps = KendoDateTimeContainerOptions & {};
 
-export const DateTimeContainer = (
+export const DateTimeContainer: KendoComponent<KendoDateTimeContainerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDateTimeContainerProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
@@ -35,5 +37,7 @@ DateTimeContainer.states = states;
 DateTimeContainer.options = options;
 DateTimeContainer.className = DATETIME_CONTAINER_CLASSNAME;
 DateTimeContainer.defaultOptions = defaultOptions;
+DateTimeContainer.moduleName = "date-time-picker";
+DateTimeContainer.folderName = "datetimepicker";
 
 export default DateTimeContainer;

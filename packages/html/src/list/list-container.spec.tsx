@@ -1,3 +1,5 @@
+import * as React from 'react';
+import { KendoComponent } from '../_types/component';
 import { classNames } from '../misc';
 
 export const LIST_CONTAINER_CLASSNAME = `k-list-container`;
@@ -12,7 +14,7 @@ export type KendoListContainerOptions = {};
 
 export type KendoListContainerProps = KendoListContainerOptions & {};
 
-export const ListContainer = (
+export const ListContainer: KendoComponent<KendoListContainerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoListContainerProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
@@ -35,5 +37,7 @@ ListContainer.states = states;
 ListContainer.options = options;
 ListContainer.className = LIST_CONTAINER_CLASSNAME;
 ListContainer.defaultOptions = defaultOptions;
+ListContainer.moduleName = "list";
+ListContainer.folderName = "list";
 
 export default ListContainer;

@@ -18,3 +18,5 @@ export const GridFooter: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = 
 );
 
 GridFooter.className = className;
+GridFooter.moduleName = "grid";
+GridFooter.folderName = "grid";

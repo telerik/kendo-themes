@@ -1,5 +1,7 @@
 import { classNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
+
 export const DRAWER_PUSH_CLASSNAME = `k-drawer-push`;
 
 const states = [];
@@ -12,7 +14,7 @@ export type KendoDrawerPushOptions = {};
 
 export type KendoDrawerPushProps = KendoDrawerPushOptions & {};
 
-export const DrawerPush = (
+export const DrawerPush: KendoComponent<KendoDrawerPushProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDrawerPushProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
@@ -35,5 +37,7 @@ DrawerPush.states = states;
 DrawerPush.options = options;
 DrawerPush.className = DRAWER_PUSH_CLASSNAME;
 DrawerPush.defaultOptions = defaultOptions;
+DrawerPush.moduleName = "drawer";
+DrawerPush.folderName = "drawer";
 
 export default DrawerPush;

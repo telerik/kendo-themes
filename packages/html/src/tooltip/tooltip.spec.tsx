@@ -87,5 +87,7 @@ Tooltip.states = states;
 Tooltip.options = options;
 Tooltip.className = TOOLTIP_CLASSNAME;
 Tooltip.defaultOptions = defaultOptions;
+Tooltip.moduleName = "tooltip";
+Tooltip.folderName = "tooltip";
 
 export default Tooltip;

@@ -102,5 +102,7 @@ export const CalendarInfinite: KendoComponent<KendoCalendarInfiniteProps & Kendo
 CalendarInfinite.options = options;
 CalendarInfinite.className = CALENDARINFINITE_CLASSNAME;
 CalendarInfinite.defaultOptions = defaultOptions;
+CalendarInfinite.moduleName = "calendar";
+CalendarInfinite.folderName = "calendar";
 
 export default CalendarInfinite;

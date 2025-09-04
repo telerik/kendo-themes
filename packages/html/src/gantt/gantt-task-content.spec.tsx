@@ -41,5 +41,7 @@ GanttTaskContent.states = states;
 GanttTaskContent.options = options;
 GanttTaskContent.className = GANTTTASKCONTENT_CLASSNAME;
 GanttTaskContent.defaultOptions = defaultOptions;
+GanttTaskContent.moduleName = "gantt";
+GanttTaskContent.folderName = "gantt";
 
 export default GanttTaskContent;

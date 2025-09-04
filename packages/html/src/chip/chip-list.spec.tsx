@@ -46,5 +46,7 @@ ChipList.states = states;
 ChipList.options = options;
 ChipList.className = CHIPLIST_CLASSNAME;
 ChipList.defaultOptions = defaultOptions;
+ChipList.moduleName = "chip";
+ChipList.folderName = "chip";
 
 export default ChipList;

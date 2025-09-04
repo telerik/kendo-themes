@@ -64,5 +64,7 @@ Dropzone.states = states;
 Dropzone.options = options;
 Dropzone.className = DROPZONE_CLASSNAME;
 Dropzone.defaultOptions = defaultOptions;
+Dropzone.moduleName = "dropzone";
+Dropzone.folderName = "dropzone";
 
 export default Dropzone;

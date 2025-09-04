@@ -17,3 +17,5 @@ export const GanttTables: KendoComponent<React.HTMLAttributes<HTMLDivElement>> =
 );
 
 GanttTables.className = className;
+GanttTables.moduleName = "gantt";
+GanttTables.folderName = "gantt";

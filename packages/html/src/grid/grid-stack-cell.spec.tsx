@@ -61,5 +61,7 @@ export const GridStackCell: KendoComponent<KendoGridStackCellProps & KendoGridSt
 
 GridStackCell.states = states;
 GridStackCell.className = GRIDSTACKCELL_CLASSNAME;
+GridStackCell.moduleName = "grid";
+GridStackCell.folderName = "grid";
 
 export default GridStackCell;

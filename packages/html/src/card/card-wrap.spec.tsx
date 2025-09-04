@@ -1,5 +1,7 @@
 import { classNames, stateClassNames } from '../misc';
 
+import { KendoComponent } from '../_types/component';
+
 export const CARD_WRAP_CLASSNAME = `k-card-wrap`;
 
 const states = ['focus', 'selected'];
@@ -14,7 +16,7 @@ export type KendoCardWrapProps = KendoCardWrapOptions & {};
 
 export type KendoCardWrapState = { [K in (typeof states)[number]]?: boolean };
 
-export const CardWrap = (
+export const CardWrap: KendoComponent<KendoCardWrapProps & KendoCardWrapState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoCardWrapProps & KendoCardWrapState & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
@@ -43,5 +45,7 @@ CardWrap.states = states;
 CardWrap.options = options;
 CardWrap.className = CARD_WRAP_CLASSNAME;
 CardWrap.defaultOptions = defaultOptions;
+CardWrap.moduleName = "card";
+CardWrap.folderName = "card";
 
 export default CardWrap;

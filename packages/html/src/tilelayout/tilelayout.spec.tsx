@@ -53,5 +53,7 @@ TileLayout.states = states;
 TileLayout.options = options;
 TileLayout.className = TILELAYOUT_CLASSNAME;
 TileLayout.defaultOptions = defaultOptions;
+TileLayout.moduleName = "tile-layout";
+TileLayout.folderName = "tilelayout";
 
 export default TileLayout;

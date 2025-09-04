@@ -102,5 +102,7 @@ SchedulerEvent.states = states;
 SchedulerEvent.options = options;
 SchedulerEvent.defaultOptions = defaultOptions;
 SchedulerEvent.className = className;
+SchedulerEvent.moduleName = "scheduler";
+SchedulerEvent.folderName = "scheduler";
 
 export default SchedulerEvent;

@@ -20,3 +20,5 @@ export const GridToolbar: KendoComponent<KendoToolbarProps & React.HTMLAttribute
 );
 
 GridToolbar.className = className;
+GridToolbar.moduleName = "grid";
+GridToolbar.folderName = "grid";

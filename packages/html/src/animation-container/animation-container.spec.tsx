@@ -57,5 +57,7 @@ AnimationContainer.states = states;
 AnimationContainer.options = options;
 AnimationContainer.className = ANIMATION_CONTAINER_CLASSNAME;
 AnimationContainer.defaultOptions = defaultOptions;
+AnimationContainer.moduleName = "popup";
+AnimationContainer.folderName = AnimationContainer.moduleName;
 
 export default AnimationContainer;
