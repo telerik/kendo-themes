@@ -6,7 +6,7 @@
 
 /// The background color of the Drawer.
 /// @group drawer
-$kendo-drawer-bg: k-color(app-surface) !default;
+$kendo-drawer-bg: k-color(surface-alt) !default;
 /// The text color of the Drawer.
 /// @group drawer
 $kendo-drawer-text: k-color(on-app-surface) !default;
@@ -70,7 +70,7 @@ $kendo-drawer-item-spacing: $kendo-drawer-item-padding-x !default;
 $kendo-drawer-item-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-line-height: var( --kendo-line-height-lg, normal ) !default;
+$kendo-drawer-item-line-height: var( --kendo-line-height, normal ) !default;
 /// The font weight of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-font-weight: var( --kendo-font-weight, normal ) !default;

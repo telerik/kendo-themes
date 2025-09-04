@@ -72,7 +72,7 @@ $kendo-fab-item-text-border-radius: 4px !default;
 $kendo-fab-item-text-font-size: var( --kendo-font-size-xs, inherit ) !default;
 /// The line height of the FAB item text.
 /// @group floating-action-button
-$kendo-fab-item-text-line-height: 14px !default;
+$kendo-fab-item-text-line-height: var( --kendo-line-height-xs, normal ) !default;
 
 /// The horizontal padding of the FAB item icon.
 /// @group floating-action-button
@@ -124,7 +124,7 @@ $kendo-fab-sizes: (
 $kendo-fab-shadow: k-elevation(5) !default;
 /// The shadow of the disabled FAB.
 /// @group floating-action-button
-$kendo-fab-disabled-shadow: k-elevation(5) !default;
+$kendo-fab-disabled-shadow: null !default;
 /// The shadow of the active FAB.
 /// @group floating-action-button
 $kendo-fab-active-shadow: null !default;
@@ -140,7 +140,7 @@ $kendo-fab-outline-width: 3px !default;
 $kendo-fab-item-text: k-color(on-app-surface) !default;
 /// The base background color of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-bg: k-color(app-surface) !default;
+$kendo-fab-item-bg: k-color(surface-alt) !default;
 /// The base border color of the FAB item.
 /// @group floating-action-button
 $kendo-fab-item-border: k-color(border) !default;

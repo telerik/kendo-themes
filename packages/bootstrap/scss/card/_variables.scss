@@ -16,7 +16,7 @@ $kendo-card-padding-y: $kendo-card-padding-x !default;
 $kendo-card-border-width: 1px !default;
 /// The border radius of the Card.
 /// @group card
-$kendo-card-border-radius: k-spacing(1.5) !default;
+$kendo-card-border-radius: k-border-radius(md) !default;
 /// The inner border radius of the Card.
 /// @group card
 $kendo-card-inner-border-radius: calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} ) !default;
@@ -36,7 +36,7 @@ $kendo-card-deck-gap: k-spacing(4) !default;
 
 /// The background color of the Card.
 /// @group card
-$kendo-card-bg: k-color(app-surface) !default;
+$kendo-card-bg: k-color(surface-alt) !default;
 /// The text color of the Card.
 /// @group card
 $kendo-card-text: k-color(on-app-surface) !default;
@@ -55,13 +55,13 @@ $kendo-card-focus-bg: null !default;
 $kendo-card-focus-text: null !default;
 /// The border color of the focused Card.
 /// @group card
-$kendo-card-focus-border: $kendo-card-border !default;
+$kendo-card-focus-border: k-color(primary-emphasis) !default;
 
 // TODO: double-check: the default theme is not supposed to elevate the Card on focus
 
 /// The shadow of the focused Card.
 /// @group card
-$kendo-card-focus-shadow: k-elevation(3) !default;
+$kendo-card-focus-shadow: 0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent) !default;
 
 /// The horizontal padding of the Card header.
 /// @group card
@@ -74,7 +74,7 @@ $kendo-card-header-padding-y: k-spacing(2) !default;
 $kendo-card-header-border-width: $kendo-card-border-width !default;
 /// The background color of the Card header.
 /// @group card
-$kendo-card-header-bg: k-color(surface) !default;
+$kendo-card-header-bg: transparent !default;
 /// The text color of the Card header.
 /// @group card
 $kendo-card-header-text: k-color(on-app-surface) !default;

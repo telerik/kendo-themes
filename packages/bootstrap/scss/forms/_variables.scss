@@ -46,7 +46,7 @@ $kendo-form-legend-width: 100% !default;
 $kendo-form-legend-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The text capitalization of the Form legend.
 /// @group form
-$kendo-form-legend-text-transform: uppercase !default;
+$kendo-form-legend-text-transform: none !default;
 
 /// The bottom margin of the Form label.
 /// @group form
