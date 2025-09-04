@@ -7,7 +7,8 @@
     "jsx": "react-jsx",
     "isolatedModules": true,
     "esModuleInterop": true,
-    "declaration": true,
+    "declaration": false,
+    "noEmit": true,
     "strictFunctionTypes": true,
     "noImplicitAny": false,
     "noUnusedLocals": true,
@@ -16,6 +17,5 @@
     "types": ["jest", "node"],
     "allowJs": true
   },
-  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.js"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["./**/*.ts", "./**/*.tsx"]
 }
