@@ -61,7 +61,7 @@ $kendo-drawer-items-padding-y: 0 !default;
 $kendo-drawer-item-padding-x: k-spacing(4) !default;
 /// The vertical padding of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-padding-y: k-spacing(2) !default;
+$kendo-drawer-item-padding-y: k-spacing(3) !default;
 /// The spacing between the items in the Drawer item.
 /// @group drawer
 $kendo-drawer-item-spacing: $kendo-drawer-item-padding-x !default;
@@ -90,7 +90,7 @@ $kendo-drawer-item-border-radius: null !default;
 $kendo-drawer-icon-padding-x: k-spacing(0) !default;
 /// The vertical padding of the Drawer icon.
 /// @group drawer
-$kendo-drawer-icon-padding-y: k-spacing(2) !default;
+$kendo-drawer-icon-padding-y: k-spacing(1) !default;
 
 /// The initial width of the mini Drawer.
 /// @group drawer

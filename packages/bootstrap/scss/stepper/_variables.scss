@@ -87,7 +87,7 @@ $kendo-stepper-indicator-focus-calc-offset: calc( #{$kendo-stepper-indicator-foc
 
 /// The background color of the Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-bg: k-color(app-surface) !default;
+$kendo-stepper-indicator-bg: k-color(surface-alt) !default;
 /// The text color of the Stepper indicator.
 /// @group stepper
 $kendo-stepper-indicator-text: k-color(on-app-surface) !default;
@@ -97,7 +97,7 @@ $kendo-stepper-indicator-border: k-color(border) !default;
 
 /// The background color of the hovered Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-hover-bg: k-color(base-hover) !default;
+$kendo-stepper-indicator-hover-bg: k-color(base-subtle-hover) !default;
 /// The text color of the hovered Stepper indicator.
 /// @group stepper
 $kendo-stepper-indicator-hover-text: null !default;
