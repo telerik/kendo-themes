@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-header-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-list-item-hover-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-base-subtle-hover, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered ExpansionPanel header.</div></div>
