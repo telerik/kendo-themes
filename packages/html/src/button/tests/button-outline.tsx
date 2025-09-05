@@ -13,7 +13,7 @@ export default () => (
             <span></span>
             <span>Normal</span>
             {Button.states?.map((state) => (
-                <span key={state}>{state.replace('k-', '').replace(/(?:^|\s)\w/g, (match) => match.toUpperCase())}</span>
+                <span key={state}>{state.charAt(0).toUpperCase() + state.slice(1)}</span>
             ))}
             {[ ...Button.options.themeColor ].map((themeColor) => (
                 <>

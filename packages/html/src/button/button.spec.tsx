@@ -12,7 +12,7 @@ const states = [
     States.active,
     States.selected,
     States.disabled,
-    'k-generating'
+    States.generating
 ] as const;
 
 const options = {
