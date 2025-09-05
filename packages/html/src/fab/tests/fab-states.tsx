@@ -14,7 +14,7 @@ export default () =>(
             <span></span>
             <span>Normal</span>
             {FloatingActionButton.states?.map((state) => (
-                <span key={state}>{state.replace('k-', '').replace(/(?:^|\s)\w/g, (match) => match.toUpperCase())}</span>
+                <span key={state}>{state.charAt(0).toUpperCase() + state.slice(1)}</span>
             ))}
             {[ ...FloatingActionButton.options.themeColor ].map((themeColor) => (
                 <>
