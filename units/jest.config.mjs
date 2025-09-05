@@ -3,7 +3,7 @@ export default {
   testEnvironment: "jsdom",
   moduleFileExtensions: ["js", "ts", "tsx"],
   extensionsToTreatAsEsm: [".ts"],
-  // reporters: ["./minimal-reporter.mjs"],
+  // reporters: ["./specificity-reporter.mjs"], // Uncomment to enable specificity reporter
   transform: {
     "^.+\\.(ts|tsx)$": [
       "ts-jest",
