@@ -4,15 +4,15 @@ export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
             <div>
-                {[ 'normal', ...ExpansionPanel.states ].map((state) => (
-                    <ExpansionPanelExpanded { ...{ [state]: true }} title={"Expanded panel - " + state} subtitle="Subtitle" dir="rtl" />
+                {[ 'normal', ...ExpansionPanel.states.filter(state => state !== 'expanded') ].map((state) => (
+                    <ExpansionPanelExpanded { ...{ [state]: true }} expanded title={"Expanded panel - " + state} subtitle="Subtitle" dir="rtl" />
                 ))}
 
                 <ExpansionPanelExpanded title="Expanded panel - hover & focus" hover focus subtitle="Subtitle" dir="rtl" />
             </div>
 
             <div>
-                {[ 'normal', ...ExpansionPanel.states ].map((state) => (
+                {[ 'normal', ...ExpansionPanel.states.filter(state => state !== 'expanded') ].map((state) => (
                     <ExpansionPanelNormal { ...{ [state]: true }} title={"Collapsed panel - " + state} subtitle="Subtitle" dir="rtl" />
                 ))}
 

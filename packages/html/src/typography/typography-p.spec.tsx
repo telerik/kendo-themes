@@ -20,5 +20,7 @@ export const TypographyP: KendoComponent<KendoTypographyPProps> = (
 TypographyP.states = states;
 TypographyP.options = options;
 TypographyP.className = TYPOGRAPHY_P_CLASSNAME;
+TypographyP.moduleName = "typography";
+TypographyP.folderName = "typography";
 
 export default TypographyP;

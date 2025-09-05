@@ -84,5 +84,7 @@ Map.states = states;
 Map.options = options;
 Map.className = MAP_CLASSNAME;
 Map.defaultOptions = defaultOptions;
+Map.moduleName = "map";
+Map.folderName = "map";
 
 export default Map;

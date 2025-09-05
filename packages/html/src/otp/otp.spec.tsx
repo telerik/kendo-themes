@@ -55,5 +55,7 @@ OneTimePassword.states = states;
 OneTimePassword.options = options;
 OneTimePassword.className = ONETIMEPASSWORD_CLASSNAME;
 OneTimePassword.defaultOptions = defaultOptions;
+OneTimePassword.moduleName = "otp";
+OneTimePassword.folderName = "otp";
 
 export default OneTimePassword;

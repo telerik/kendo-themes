@@ -56,5 +56,7 @@ DockManager.states = states;
 DockManager.options = options;
 DockManager.className = DOCKMANAGER_CLASSNAME;
 DockManager.defaultOptions = defaultOptions;
+DockManager.moduleName = "dock-manager";
+DockManager.folderName = "dock-manager";
 
 export default DockManager;

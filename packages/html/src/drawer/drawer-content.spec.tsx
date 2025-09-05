@@ -32,5 +32,7 @@ DrawerContent.states = states;
 DrawerContent.options = options;
 DrawerContent.className = DRAWERCONTENT_CLASSNAME;
 DrawerContent.defaultOptions = defaultOptions;
+DrawerContent.moduleName = "drawer";
+DrawerContent.folderName = "drawer";
 
 export default DrawerContent;

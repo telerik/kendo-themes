@@ -38,5 +38,7 @@ SearchBar.states = states;
 SearchBar.options = options;
 SearchBar.className = SEARCHBAR_CLASSNAME;
 SearchBar.defaultOptions = defaultOptions;
+SearchBar.moduleName = "input";
+SearchBar.folderName = "input";
 
 export default SearchBar;

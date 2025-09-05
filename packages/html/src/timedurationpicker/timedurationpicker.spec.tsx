@@ -139,5 +139,7 @@ TimeDurationPicker.states = states;
 TimeDurationPicker.options = options;
 TimeDurationPicker.className = TIMEDURATIONPICKER_CLASSNAME;
 TimeDurationPicker.defaultOptions = defaultOptions;
+TimeDurationPicker.moduleName = "time-duration-picker";
+TimeDurationPicker.folderName = "timedurationpicker";
 
 export default TimeDurationPicker;

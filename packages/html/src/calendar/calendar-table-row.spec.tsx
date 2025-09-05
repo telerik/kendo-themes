@@ -20,3 +20,5 @@ export const CalendarTableRow: KendoComponent<React.HTMLAttributes<HTMLTableRowE
 };
 
 CalendarTableRow.className = className;
+CalendarTableRow.moduleName = "calendar";
+CalendarTableRow.folderName = "calendar";

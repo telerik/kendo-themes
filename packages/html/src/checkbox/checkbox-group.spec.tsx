@@ -44,5 +44,7 @@ CheckboxGroup.states = states;
 CheckboxGroup.options = options;
 CheckboxGroup.className = CHECKBOXGROUP_CLASSNAME;
 CheckboxGroup.defaultOptions = defaultOptions;
+CheckboxGroup.moduleName = "checkbox";
+CheckboxGroup.folderName = "checkbox";
 
 export default CheckboxGroup;

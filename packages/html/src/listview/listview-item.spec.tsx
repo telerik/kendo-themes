@@ -44,5 +44,7 @@ ListViewItem.states = states;
 ListViewItem.options = options;
 ListViewItem.className = LISTVIEWITEM_CLASSNAME;
 ListViewItem.defaultOptions = defaultOptions;
+ListViewItem.moduleName = "listview";
+ListViewItem.folderName = "listview";
 
 export default ListViewItem;

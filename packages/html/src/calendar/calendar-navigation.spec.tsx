@@ -24,3 +24,5 @@ export const CalendarNavigation: KendoComponent<React.HTMLAttributes<HTMLDivElem
 );
 
 CalendarNavigation.className = className;
+CalendarNavigation.moduleName = "calendar";
+CalendarNavigation.folderName = "calendar";

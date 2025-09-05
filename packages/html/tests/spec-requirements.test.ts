@@ -50,6 +50,16 @@ describe("Component Requirements", () => {
         expect((component as any).className).toBeTruthy();
         expect((component as any).className.trim()).not.toBe("");
       });
+
+      it(`${componentName} (${moduleName}.spec.tsx) should have moduleName static property set`, () => {
+        expect(Object.prototype.hasOwnProperty.call(component, "moduleName")).toBe(true);
+        expect((component as any).moduleName === null || typeof (component as any).moduleName === "string").toBe(true);
+      });
+
+      it(`${componentName} (${moduleName}.spec.tsx) should have folderName static property set`, () => {
+        expect(Object.prototype.hasOwnProperty.call(component, "folderName")).toBe(true);
+        expect((component as any).folderName === null || typeof (component as any).folderName === "string").toBe(true);
+      });
     });
   });
 });

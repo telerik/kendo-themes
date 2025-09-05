@@ -2,6 +2,12 @@ import { classNames } from '../misc';
 
 export const CARDDECK_CLASSNAME = `k-card-deck`;
 
+const states = [];
+
+const options = {};
+
+const defaultOptions = {};
+
 export const CardDeck = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -20,3 +26,8 @@ export const CardDeck = (
         </div>
     );
 };
+
+CardDeck.states = states;
+CardDeck.options = options;
+CardDeck.className = CARDDECK_CLASSNAME;
+CardDeck.defaultOptions = defaultOptions;

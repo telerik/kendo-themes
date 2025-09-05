@@ -92,5 +92,7 @@ Calendar.states = states;
 Calendar.options = options;
 Calendar.className = CALENDAR_CLASSNAME;
 Calendar.defaultOptions = defaultOptions;
+Calendar.moduleName = "calendar";
+Calendar.folderName = "calendar";
 
 export default Calendar;

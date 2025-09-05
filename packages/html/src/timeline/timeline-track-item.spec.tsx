@@ -44,5 +44,7 @@ export const TimelineTrackItem: KendoComponent<KendoTimelineTrackItemOptions & K
 
 TimelineTrackItem.states = states;
 TimelineTrackItem.className = TIMELINETRACKITEM_CLASSNAME;
+TimelineTrackItem.moduleName = "timeline";
+TimelineTrackItem.folderName = "timeline";
 
 export default TimelineTrackItem;

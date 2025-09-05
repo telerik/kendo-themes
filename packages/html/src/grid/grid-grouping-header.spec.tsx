@@ -34,3 +34,5 @@ export const GridGroupingHeader: KendoComponent<KendoGroupingHeaderProps & React
 };
 
 GridGroupingHeader.className = className;
+GridGroupingHeader.moduleName = "grid";
+GridGroupingHeader.folderName = "grid";

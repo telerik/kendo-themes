@@ -36,5 +36,7 @@ FileManagerBreadcrumb.states = states;
 FileManagerBreadcrumb.options = options;
 FileManagerBreadcrumb.className = FILEMANAGERBREADCRUMB_CLASSNAME;
 FileManagerBreadcrumb.defaultOptions = defaultOptions;
+FileManagerBreadcrumb.moduleName = "file-manager";
+FileManagerBreadcrumb.folderName = "filemanager";
 
 export default FileManagerBreadcrumb;

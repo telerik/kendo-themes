@@ -41,5 +41,7 @@ TimelineDateWrap.states = states;
 TimelineDateWrap.options = options;
 TimelineDateWrap.className = TIMELINEDATEWRAP_CLASSNAME;
 TimelineDateWrap.defaultOptions = defaultOptions;
+TimelineDateWrap.moduleName = "timeline";
+TimelineDateWrap.folderName = "timeline";
 
 export default TimelineDateWrap;

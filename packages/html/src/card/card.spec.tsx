@@ -83,5 +83,7 @@ Card.states = states;
 Card.options = options;
 Card.className = CARD_CLASSNAME;
 Card.defaultOptions = defaultOptions;
+Card.moduleName = "card";
+Card.folderName = "card";
 
 export default Card;

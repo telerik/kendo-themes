@@ -102,5 +102,7 @@ Avatar.states = states;
 Avatar.options = options;
 Avatar.className = AVATAR_CLASSNAME;
 Avatar.defaultOptions = defaultOptions;
+Avatar.moduleName = "avatar";
+Avatar.folderName = "avatar";
 
 export default Avatar;

@@ -133,5 +133,7 @@ MaskedTextbox.states = states;
 MaskedTextbox.options = options;
 MaskedTextbox.className = MASKEDTEXTBOX_CLASSNAME;
 MaskedTextbox.defaultOptions = defaultOptions;
+MaskedTextbox.moduleName = "masked-textbox";
+MaskedTextbox.folderName = "maskedtextbox";
 
 export default MaskedTextbox;

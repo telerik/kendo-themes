@@ -20,5 +20,7 @@ export const TypographyDisplay4: KendoComponent<KendoTypographyDisplay4Props> = 
 TypographyDisplay4.states = states;
 TypographyDisplay4.options = options;
 TypographyDisplay4.className = TYPOGRAPHY_DISPLAY4_CLASSNAME;
+TypographyDisplay4.moduleName = "typography";
+TypographyDisplay4.folderName = "typography";
 
 export default TypographyDisplay4;

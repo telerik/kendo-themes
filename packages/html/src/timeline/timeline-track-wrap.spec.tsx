@@ -30,5 +30,7 @@ export const TimelineTrackWrap: KendoComponent<React.HTMLAttributes<HTMLDivEleme
 };
 
 TimelineTrackWrap.className = TIMELINETRACKWRAP_CLASSNAME;
+TimelineTrackWrap.moduleName = "timeline";
+TimelineTrackWrap.folderName = "timeline";
 
 export default TimelineTrackWrap;

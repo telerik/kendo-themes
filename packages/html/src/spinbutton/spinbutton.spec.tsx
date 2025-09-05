@@ -65,5 +65,7 @@ SpinButton.states = states;
 SpinButton.options = options;
 SpinButton.className = SPINBUTTON_CLASSNAME;
 SpinButton.defaultOptions = defaultOptions;
+SpinButton.moduleName = null;
+SpinButton.folderName = null;
 
 export default SpinButton;

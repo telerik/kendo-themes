@@ -57,5 +57,7 @@ SchedulerTask.states = states;
 SchedulerTask.options = options;
 SchedulerTask.defaultOptions = defaultOptions;
 SchedulerTask.className = className;
+SchedulerTask.moduleName = "scheduler";
+SchedulerTask.folderName = "scheduler";
 
 export default SchedulerTask;

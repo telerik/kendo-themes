@@ -58,5 +58,7 @@ ImageEditor.states = states;
 ImageEditor.options = options;
 ImageEditor.className = IMAGEEDITOR_CLASSNAME;
 ImageEditor.defaultOptions = defaultOptions;
+ImageEditor.moduleName = "image-editor";
+ImageEditor.folderName = "imageeditor";
 
 export default ImageEditor;

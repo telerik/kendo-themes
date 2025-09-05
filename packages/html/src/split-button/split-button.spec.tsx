@@ -132,5 +132,7 @@ SplitButton.states = states;
 SplitButton.options = options;
 SplitButton.className = SPLITBUTTON_CLASSNAME;
 SplitButton.defaultOptions = defaultOptions;
+SplitButton.moduleName = "split-button";
+SplitButton.folderName = "split-button";
 
 export default SplitButton;

@@ -7,6 +7,7 @@ export * from './icon/index';
 // Primitive components
 export * from './action-buttons/index';
 export * from './input/index';
+export * from './input-group/index';
 // export * from './picker/index';
 export * from './popup/index';
 export * from './list/index';
@@ -144,3 +145,9 @@ export * from './table/index';
 
 // CSS Utilis
 export * from './utils/index';
+
+// Ripple
+export * from './ripple/index';
+
+// PDF
+export * from './pdf/index';

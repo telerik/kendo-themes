@@ -176,5 +176,7 @@ TimePicker.states = states;
 TimePicker.options = options;
 TimePicker.className = TIMEPICKER_CLASSNAME;
 TimePicker.defaultOptions = defaultOptions;
+TimePicker.moduleName = "time-picker";
+TimePicker.folderName = "timepicker";
 
 export default TimePicker;

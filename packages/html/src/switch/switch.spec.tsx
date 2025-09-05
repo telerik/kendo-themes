@@ -101,5 +101,7 @@ Switch.states = states;
 Switch.options = options;
 Switch.className = SWITCH_CLASSNAME;
 Switch.defaultOptions = defaultOptions;
+Switch.moduleName = "switch";
+Switch.folderName = "switch";
 
 export default Switch;

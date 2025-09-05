@@ -23,5 +23,7 @@ export const TimelineCircle: KendoComponent<React.HTMLAttributes<HTMLSpanElement
 };
 
 TimelineCircle.className = TIMELINECIRCLE_CLASSNAME;
+TimelineCircle.moduleName = "timeline";
+TimelineCircle.folderName = "timeline";
 
 export default TimelineCircle;

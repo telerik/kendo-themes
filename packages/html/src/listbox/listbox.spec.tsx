@@ -96,5 +96,7 @@ ListBox.states = states;
 ListBox.options = options;
 ListBox.className = LISTBOX_CLASSNAME;
 ListBox.defaultOptions = defaultOptions;
+ListBox.moduleName = "listbox";
+ListBox.folderName = "listbox";
 
 export default ListBox;

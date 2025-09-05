@@ -35,5 +35,7 @@ FilterMenu.states = states;
 FilterMenu.options = options;
 FilterMenu.className = FILTERMENU_CLASSNAME;
 FilterMenu.defaultOptions = defaultOptions;
+FilterMenu.moduleName = "column-menu";
+FilterMenu.folderName = "column-menu";
 
 export default FilterMenu;

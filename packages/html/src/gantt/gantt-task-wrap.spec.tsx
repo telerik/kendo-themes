@@ -44,5 +44,7 @@ GanttTaskWrap.states = states;
 GanttTaskWrap.options = options;
 GanttTaskWrap.className = GANTTTASKWRAP_CLASSNAME;
 GanttTaskWrap.defaultOptions = defaultOptions;
+GanttTaskWrap.moduleName = "gantt";
+GanttTaskWrap.folderName = "gantt";
 
 export default GanttTaskWrap;

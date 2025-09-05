@@ -54,6 +54,8 @@ export const States = {
     'checked': 'checked',
     'readonly': 'readonly',
     'highlighted': 'highlighted',
+    'generating': 'generating',
+    'expanded': 'expanded'
 } as const;
 
 export const kendoThemeMaps = {

@@ -1,6 +1,7 @@
 import { ActionButtons } from '../action-buttons';
 import { Button } from '../button';
 import { classNames, optionClassNames, ThemeColor } from '../misc';
+import { WindowContent } from '../window/window-content.spec';
 
 import { KendoComponent } from '../_types/component';
 export const DIALOG_CLASSNAME = `k-dialog`;
@@ -71,9 +72,9 @@ export const Dialog: KendoComponent<KendoDialogProps & React.HTMLAttributes<HTML
                     </>}
                 </div>
                 }
-                <div className="k-window-content k-dialog-content">
+                <WindowContent className="k-dialog-content">
                     {props.children}
-                </div>
+                </WindowContent>
                 {actionButtons &&
                 <ActionButtons alignment={actionButtonsAlign} className="k-window-actions k-dialog-actions">
                     {actionButtons}
@@ -88,5 +89,7 @@ Dialog.states = states;
 Dialog.options = options;
 Dialog.className = DIALOG_CLASSNAME;
 Dialog.defaultOptions = defaultOptions;
+Dialog.moduleName = "dialog";
+Dialog.folderName = "dialog";
 
 export default Dialog;

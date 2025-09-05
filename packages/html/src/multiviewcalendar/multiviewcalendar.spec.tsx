@@ -69,5 +69,7 @@ MultiViewCalendar.states = states;
 MultiViewCalendar.options = options;
 MultiViewCalendar.className = MULTIVIEWCALENDAR_CLASSNAME;
 MultiViewCalendar.defaultOptions = defaultOptions;
+MultiViewCalendar.moduleName = "calendar";
+MultiViewCalendar.folderName = "calendar";
 
 export default MultiViewCalendar;

@@ -21,3 +21,5 @@ export const GanttColumnsTable: KendoComponent<KendoTableOptions & React.HTMLAtt
 );
 
 GanttColumnsTable.className = GANTTCOLUMNSTABLE_CLASSNAME;
+GanttColumnsTable.moduleName = "gantt";
+GanttColumnsTable.folderName = "gantt";

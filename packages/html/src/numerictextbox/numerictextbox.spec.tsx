@@ -144,5 +144,7 @@ NumericTextbox.states = states;
 NumericTextbox.options = options;
 NumericTextbox.className = NUMERICTEXTBOX_CLASSNAME;
 NumericTextbox.defaultOptions = defaultOptions;
+NumericTextbox.moduleName = "numeric-textbox";
+NumericTextbox.folderName = "numerictextbox";
 
 export default NumericTextbox;

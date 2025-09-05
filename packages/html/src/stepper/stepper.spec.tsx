@@ -39,5 +39,7 @@ Stepper.options = options;
 Stepper.states = states;
 Stepper.className = STEPPER_CLASSNAME;
 Stepper.defaultOptions = defaultOptions;
+Stepper.moduleName = "stepper";
+Stepper.folderName = "stepper";
 
 export default Stepper;

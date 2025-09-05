@@ -21,3 +21,5 @@ export const GanttFooterToolbar: KendoComponent<KendoToolbarProps & React.HTMLAt
 );
 
 GanttFooterToolbar.className = className;
+GanttFooterToolbar.moduleName = "gantt";
+GanttFooterToolbar.folderName = "gantt";

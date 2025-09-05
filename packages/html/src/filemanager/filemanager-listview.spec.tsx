@@ -41,5 +41,7 @@ FileManagerListView.states = states;
 FileManagerListView.options = options;
 FileManagerListView.className = FILEMANAGERLISTVIEW_CLASSNAME;
 FileManagerListView.defaultOptions = defaultOptions;
+FileManagerListView.moduleName = "file-manager";
+FileManagerListView.folderName = "filemanager";
 
 export default FileManagerListView;

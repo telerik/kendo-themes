@@ -1,5 +1,5 @@
 import { classNames, States, stateClassNames } from "../misc";
-import { TableTh, KendoTableThProps } from "../table/table-th";
+import { TableTh, KendoTableThProps } from "../table/table-th.spec";
 import { Icon } from "../icon";
 
 import { KendoComponent } from '../_types/component';
@@ -107,5 +107,7 @@ export const GridHeaderCell: KendoComponent<KendoGridHeaderCellProps & KendoGrid
 GridHeaderCell.states = states;
 GridHeaderCell.className = GRIDHEADERCELL_CLASSNAME;
 GridHeaderCell.defaultOptions = defaultOptions;
+GridHeaderCell.moduleName = "grid";
+GridHeaderCell.folderName = "grid";
 
 export default GridHeaderCell;

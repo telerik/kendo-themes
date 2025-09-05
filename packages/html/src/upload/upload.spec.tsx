@@ -77,5 +77,7 @@ Upload.states = states;
 Upload.options = options;
 Upload.className = UPLOAD_CLASSNAME;
 Upload.defaultOptions = defaultOptions;
+Upload.moduleName = "upload";
+Upload.folderName = "upload";
 
 export default Upload;

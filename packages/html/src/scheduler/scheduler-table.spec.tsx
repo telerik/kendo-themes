@@ -19,3 +19,5 @@ export const SchedulerTable: KendoComponent<React.HTMLAttributes<HTMLTableElemen
 );
 
 SchedulerTable.className = className;
+SchedulerTable.moduleName = "scheduler";
+SchedulerTable.folderName = "scheduler";

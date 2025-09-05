@@ -1,4 +1,5 @@
 export * from './calendar.spec';
+export * from './calendar-container.spec';
 export * from './calendar-cell';
 export * from './calendar-header';
 export * from './calendar-footer';

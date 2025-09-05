@@ -33,5 +33,7 @@ Spreadsheet.states = states;
 Spreadsheet.options = options;
 Spreadsheet.className = SPREADSHEET_CLASSNAME;
 Spreadsheet.defaultOptions = defaultOptions;
+Spreadsheet.moduleName = "spreadsheet";
+Spreadsheet.folderName = "spreadsheet";
 
 export default Spreadsheet;

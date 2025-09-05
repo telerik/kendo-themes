@@ -32,3 +32,5 @@ export const CalendarCaptionCell: KendoComponent<KendoCalendarCaptionCellProps &
 };
 
 CalendarCaptionCell.className = className;
+CalendarCaptionCell.moduleName = "calendar";
+CalendarCaptionCell.folderName = "calendar";

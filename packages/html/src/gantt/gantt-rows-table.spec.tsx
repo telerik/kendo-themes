@@ -21,3 +21,5 @@ export const GanttRowsTable: KendoComponent<KendoTableOptions & React.HTMLAttrib
 );
 
 GanttRowsTable.className = GANTTROWSTABLE_CLASSNAME;
+GanttRowsTable.moduleName = "gantt";
+GanttRowsTable.folderName = "gantt";

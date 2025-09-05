@@ -21,3 +21,5 @@ export const GridFooterTable: KendoComponent<KendoTableOptions & React.HTMLAttri
 );
 
 GridFooterTable.className = GRIDFOOTERTABLE_CLASSNAME;
+GridFooterTable.moduleName = "grid";
+GridFooterTable.folderName = "grid";

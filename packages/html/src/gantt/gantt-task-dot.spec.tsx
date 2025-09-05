@@ -44,5 +44,7 @@ GanttTaskDot.states = states;
 GanttTaskDot.options = options;
 GanttTaskDot.className = GANTTTASKWDOT_CLASSNAME;
 GanttTaskDot.defaultOptions = defaultOptions;
+GanttTaskDot.moduleName = "gantt";
+GanttTaskDot.folderName = "gantt";
 
 export default GanttTaskDot;

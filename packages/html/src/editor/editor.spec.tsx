@@ -73,5 +73,7 @@ Editor.states = states;
 Editor.options = options;
 Editor.className = EDITOR_CLASSNAME;
 Editor.defaultOptions = defaultOptions;
+Editor.moduleName = "editor";
+Editor.folderName = "editor";
 
 export default Editor;

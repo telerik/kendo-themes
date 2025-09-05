@@ -18,3 +18,5 @@ export const SchedulerStickyCell: KendoComponent<React.HTMLAttributes<HTMLDivEle
 );
 
 SchedulerStickyCell.className = className;
+SchedulerStickyCell.moduleName = "scheduler";
+SchedulerStickyCell.folderName = "scheduler";
