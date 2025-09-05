@@ -43,10 +43,9 @@
         align-items: center;
     }
 
-
+    // TODO: Check if we can remove .k-pager-nav and %base-pager-item
     // Base pager item
     %base-pager-item {
-        color: inherit;
         text-align: center;
         display: inline-flex;
         align-items: center;
