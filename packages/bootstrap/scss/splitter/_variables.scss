@@ -18,7 +18,7 @@ $kendo-splitter-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the Splitter.
 /// @group splitter
-$kendo-splitter-bg: k-color(app-surface) !default;
+$kendo-splitter-bg: k-color(surface-alt) !default;
 /// The text color of the Splitter.
 /// @group splitter
 $kendo-splitter-text: k-color(on-app-surface) !default;
@@ -47,10 +47,10 @@ $kendo-splitter-collapse-icon-padding-y: k-spacing(0.5) !default;
 
 /// The background color of the Splitter split bar.
 /// @group splitter
-$kendo-splitbar-bg: k-color(surface) !default;
+$kendo-splitbar-bg: k-color(base-subtle) !default;
 /// The text color of the Splitter split bar.
 /// @group splitter
-$kendo-splitbar-text: k-color(on-app-surface) !default;
+$kendo-splitbar-text: k-color(base-on-subtle) !default;
 
 /// The hover background color of the Splitter split bar.
 /// @group splitter

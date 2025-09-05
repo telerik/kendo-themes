@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-card-body-vbox-min-height</td>
     <td>Number</td>
-    <td><code>$kendo-card-avatar-size</code></td>
+    <td><code>45px</code></td>
     <td><code>45px</code></td>
 </tr>
 <tr>

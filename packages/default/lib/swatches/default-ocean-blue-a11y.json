@@ -439,7 +439,7 @@
                 "error-on-surface": {
                     "name": "Error On Surface",
                     "type": "color",
-                    "value": "#a0131a"
+                    "value": "#D51923"
                 },
                 "light-subtle": {
                     "name": "Light Subtle",

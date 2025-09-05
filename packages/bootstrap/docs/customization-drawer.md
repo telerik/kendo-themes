@@ -30,8 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-drawer-bg</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Drawer.</div></div>
@@ -200,8 +200,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Drawer item.</div></div>
@@ -230,8 +230,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height-lg, normal )</code></td>
-    <td><code>var(--kendo-line-height-lg, normal)</code></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Drawer item.</div></div>
@@ -290,8 +290,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-icon-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Drawer icon.</div></div>

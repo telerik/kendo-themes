@@ -50,7 +50,7 @@ $kendo-pivotgrid-cell-border-width: 1px !default;
 
 /// The background color of the PivotGrid.
 /// @group pivotgrid
-$kendo-pivotgrid-bg: k-color(app-surface) !default;
+$kendo-pivotgrid-bg: k-color(surface-alt) !default;
 /// The text color of the PivotGrid.
 /// @group pivotgrid
 $kendo-pivotgrid-text: k-color(on-app-surface) !default;
@@ -74,7 +74,7 @@ $kendo-pivotgrid-headers-border: k-color(border) !default;
 
 /// The background color of the PivotGrid total cells.
 /// @group pivotgrid
-$kendo-pivotgrid-total-bg: k-color(base-subtle) !default;
+$kendo-pivotgrid-total-bg: k-color(surface) !default;
 /// The text color of the PivotGrid total cells.
 /// @group pivotgrid
 $kendo-pivotgrid-total-text: k-color(on-app-surface) !default;
@@ -153,7 +153,7 @@ $kendo-pivotgrid-configurator-horizontal-height: 420px !default;
 
 /// The background color of the PivotGrid configurator.
 /// @group pivotgrid
-$kendo-pivotgrid-configurator-bg: k-color(app-surface) !default;
+$kendo-pivotgrid-configurator-bg: k-color(surface-alt) !default;
 /// The text color of the PivotGrid configurator.
 /// @group pivotgrid
 $kendo-pivotgrid-configurator-text: k-color(on-app-surface) !default;
@@ -219,7 +219,7 @@ $kendo-pivotgrid-calculated-field-gap: $kendo-pivotgrid-spacer !default;
 
 /// The background color of the PivotGrid calculated field.
 /// @group pivotgrid
-$kendo-pivotgrid-calculated-field-bg: k-color(app-surface) !default;
+$kendo-pivotgrid-calculated-field-bg: k-color(surface-alt) !default;
 /// The text color of the PivotGrid calculated field.
 /// @group pivotgrid
 $kendo-pivotgrid-calculated-field-text: k-color(on-app-surface) !default;

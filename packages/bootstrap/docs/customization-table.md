@@ -109,8 +109,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-bg</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tables.</div></div>
@@ -239,8 +239,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-alt-row-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 5%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 5%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 4%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 4%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of alternating rows in table.</div></div>
@@ -269,8 +269,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 9%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 9%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 8%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered rows in table.</div></div>
