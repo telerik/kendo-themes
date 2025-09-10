@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-border-radii</td>
     <td>Map</td>
-    <td><code>$_default-border-radii</code></td>
+    <td><code>$default-border-radii</code></td>
     <td><ul><li>none: 0px</li><li>xs: 0.125rem</li><li>sm: 0.25rem</li><li>md: 0.375rem</li><li>lg: 0.5rem</li><li>xl: 1rem</li><li>xxl: 2rem</li><li>xxxl: 3rem</li><li>full: 50rem</li></ul></td>
 </tr>
 <tr>

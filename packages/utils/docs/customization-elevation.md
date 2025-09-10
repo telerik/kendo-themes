@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-elevation</td>
     <td></td>
-    <td><code>$_default-elevation</code></td>
+    <td><code>$default-elevation</code></td>
     <td></td>
 </tr>
 <tr>

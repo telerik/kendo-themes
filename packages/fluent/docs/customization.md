@@ -1715,7 +1715,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-border-radii</td>
     <td>Map</td>
-    <td><code>$_default-border-radii</code></td>
+    <td><code>$default-border-radii</code></td>
     <td><ul><li>none: 0px</li><li>xs: 1px</li><li>sm: 0.125rem</li><li>md: 0.25rem</li><li>lg: 0.375rem</li><li>xl: 0.5rem</li><li>xxl: 0.75rem</li><li>xxxl: 1rem</li><li>full: 9999px</li></ul></td>
 </tr>
 <tr>
@@ -7749,7 +7749,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-colors</td>
     <td>Map</td>
-    <td><code>$_default-colors</code></td>
+    <td><code>$default-colors</code></td>
     <td><ul><li>app-surface: #fafafa</li><li>on-app-surface: #242424</li><li>subtle: #707070</li><li>surface: #ffffff</li><li>surface-alt: #ffffff</li><li>border: rgba(36, 36, 36, 0.72)</li><li>border-alt: #000000</li><li>base-subtle: #f5f5f5</li><li>base-subtle-hover: #ebebeb</li><li>base-subtle-active: #e0e0e0</li><li>base: #ffffff</li><li>base-hover: #f5f5f5</li><li>base-active: #ebebeb</li><li>base-emphasis: #d1d1d1</li><li>base-on-subtle: #242424</li><li>on-base: #242424</li><li>base-on-surface: #242424</li><li>primary-subtle: #ebf3fc</li><li>primary-subtle-hover: #cfe4fa</li><li>primary-subtle-active: #96c6fa</li><li>primary: #0f6cbd</li><li>primary-hover: #115ea3</li><li>primary-active: #0f548c</li><li>primary-emphasis: #abd1f8</li><li>primary-on-subtle: #0a2e4a</li><li>on-primary: #ffffff</li><li>primary-on-surface: #0f6cbd</li><li>secondary-subtle: #f0f0f0</li><li>secondary-subtle-hover: #fafafa</li><li>secondary-subtle-active: #ffffff</li><li>secondary: #ebebeb</li><li>secondary-hover: #f5f5f5</li><li>secondary-active: #fafafa</li><li>secondary-emphasis: #e0e0e0</li><li>secondary-on-subtle: #616161</li><li>on-secondary: #616161</li><li>secondary-on-surface: #616161</li><li>tertiary-subtle: #fdf5fc</li><li>tertiary-subtle-hover: #f5daf2</li><li>tertiary-subtle-active: #edbbe7</li><li>tertiary: #c239b3</li><li>tertiary-hover: #af33a1</li><li>tertiary-active: #962c8a</li><li>tertiary-emphasis: #edbbe7</li><li>tertiary-on-subtle: #af33a1</li><li>on-tertiary: #ffffff</li><li>tertiary-on-surface: #c239b3</li><li>info-subtle: #f6fafe</li><li>info-subtle-hover: #dcedfa</li><li>info-subtle-active: #bfddf5</li><li>info: #3a96dd</li><li>info-hover: #3991d5</li><li>info-active: #4fa1e1</li><li>info-emphasis: #bfddf5</li><li>info-on-subtle: #20547c</li><li>on-info: #242424</li><li>info-on-surface: #3487c7</li><li>success-subtle: #f1faf1</li><li>success-subtle-hover: #c9eac9</li><li>success-subtle-active: #9fd89f</li><li>success: #107c10</li><li>success-hover: #0e700e</li><li>success-active: #0c5e0c</li><li>success-emphasis: #9fd89f</li><li>success-on-subtle: #0e700e</li><li>on-success: #ffffff</li><li>success-on-surface: #107c10</li><li>warning-subtle: #fff9f5</li><li>warning-subtle-hover: #fee5d7</li><li>warning-subtle-active: #fdcfb4</li><li>warning: #f7630c</li><li>warning-hover: #de590b</li><li>warning-active: #bc4b09</li><li>warning-emphasis: #fdcfb4</li><li>warning-on-subtle: #8a3707</li><li>on-warning: #242424</li><li>warning-on-surface: #8a3707</li><li>error-subtle: #fdf3f4</li><li>error-subtle-hover: #f6d1d5</li><li>error-subtle-active: #eeacb2</li><li>error: #c50f1f</li><li>error-hover: #b10e1c</li><li>error-active: #960b18</li><li>error-emphasis: #eeacb2</li><li>error-on-subtle: #b10e1c</li><li>on-error: #ffffff</li><li>error-on-surface: #c50f1f</li><li>light-subtle: #ffffff</li><li>light-subtle-hover: #f5f5f5</li><li>light-subtle-active: #ebebeb</li><li>light: #ebebeb</li><li>light-hover: #f5f5f5</li><li>light-active: #f0f0f0</li><li>light-emphasis: #e0e0e0</li><li>light-on-subtle: #616161</li><li>on-light: #242424</li><li>light-on-surface: #ffffff</li><li>dark-subtle: #000000</li><li>dark-subtle-hover: #242424</li><li>dark-subtle-active: #333333</li><li>dark: #242424</li><li>dark-hover: #424242</li><li>dark-active: #333333</li><li>dark-emphasis: #616161</li><li>dark-on-subtle: #ffffff</li><li>on-dark: #ffffff</li><li>dark-on-surface: #616161</li><li>inverse-subtle: #000000</li><li>inverse-subtle-hover: #242424</li><li>inverse-subtle-active: #333333</li><li>inverse: #242424</li><li>inverse-hover: #424242</li><li>inverse-active: #333333</li><li>inverse-emphasis: #616161</li><li>inverse-on-subtle: #ffffff</li><li>on-inverse: #ffffff</li><li>inverse-on-surface: #616161</li><li>series-a: #2aa0a4</li><li>series-a-bold: #20787b</li><li>series-a-bolder: #155052</li><li>series-a-subtle: #5fb8bb</li><li>series-a-subtler: #94cfd1</li><li>series-b: #ae8c00</li><li>series-b-bold: #826900</li><li>series-b-bolder: #574600</li><li>series-b-subtle: #c2a940</li><li>series-b-subtler: #d7c580</li><li>series-c: #e3008c</li><li>series-c-bold: #aa0069</li><li>series-c-bolder: #720046</li><li>series-c-subtle: #ea40a9</li><li>series-c-subtler: #f180c5</li><li>series-d: #13a10e</li><li>series-d-bold: #0e790b</li><li>series-d-bolder: #0a5107</li><li>series-d-subtle: #4eb94a</li><li>series-d-subtler: #89d086</li><li>series-e: #637cef</li><li>series-e-bold: #4a5db3</li><li>series-e-bolder: #323e78</li><li>series-e-subtle: #c3b1db</li><li>series-e-subtler: #a58bca</li><li>series-f: #CA5010</li><li>series-f-bold: #973C0C</li><li>series-f-bolder: #652808</li><li>series-f-subtle: #D77C4C</li><li>series-f-subtler: #E5A787</li></ul></td>
 </tr>
 <tr>
@@ -12050,7 +12050,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-elevation</td>
     <td>Map</td>
-    <td><code>$_default-elevation</code></td>
+    <td><code>$default-elevation</code></td>
     <td><ul><li>1: (0 0.3px 0.9px rgba(0, 0, 0, 0.1), 0 1.6px 3.6px rgba(0, 0, 0, 0.13))</li><li>2: (0 1px 2px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.12))</li><li>3: (0 2px 4px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.12))</li><li>4: (0 4px 8px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.12))</li><li>5: (0 8px 16px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.12))</li><li>6: (0 14px 28.8px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.2))</li><li>7: (0 20px 38px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.2))</li><li>8: (0 32px 64px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.2))</li><li>9: (0 32px 64px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.2))</li></ul></td>
 </tr>
 <tr>
@@ -27494,7 +27494,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-spacing</td>
     <td>Map</td>
-    <td><code>$_default-spacing</code></td>
+    <td><code>$default-spacing</code></td>
     <td><ul><li>0: 0px</li><li>1: 0.25rem</li><li>2: 0.5rem</li><li>3: 0.75rem</li><li>4: 1rem</li><li>5: 1.25rem</li><li>6: 1.5rem</li><li>7: 1.75rem</li><li>8: 2rem</li><li>9: 2.25rem</li><li>10: 2.5rem</li><li>11: 2.75rem</li><li>12: 3rem</li><li>13: 3.25rem</li><li>14: 3.5rem</li><li>15: 3.75rem</li><li>16: 4rem</li><li>17: 4.25rem</li><li>18: 4.5rem</li><li>19: 4.75rem</li><li>20: 5rem</li><li>21: 5.25rem</li><li>22: 5.5rem</li><li>23: 5.75rem</li><li>24: 6rem</li><li>25: 7rem</li><li>26: 8rem</li><li>27: 9rem</li><li>28: 10rem</li><li>29: 11rem</li><li>30: 12rem</li><li>1px: 1px</li><li>0.5: 0.125rem</li><li>1.5: 0.375rem</li><li>2.5: 0.625rem</li><li>3.5: 0.875rem</li><li>4.5: 1.125rem</li><li>5.5: 1.375rem</li><li>6.5: 1.625rem</li><li>7.5: 1.875rem</li></ul></td>
 </tr>
 <tr>
@@ -34283,7 +34283,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-font-sizes</td>
     <td>Map</td>
-    <td><code>$_default-font-sizes</code></td>
+    <td><code>$default-font-sizes</code></td>
     <td><ul><li>xs: 0.625rem</li><li>sm: 0.75rem</li><li>md: 0.875rem</li><li>lg: 1rem</li><li>xl: 1.25rem</li></ul></td>
 </tr>
 <tr>
@@ -34293,7 +34293,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-line-heights</td>
     <td>Map</td>
-    <td><code>$_default-line-heights</code></td>
+    <td><code>$default-line-heights</code></td>
     <td><ul><li>xs: 1</li><li>sm: 1.25</li><li>md: 1.4285714285714286</li><li>lg: 1.33</li></ul></td>
 </tr>
 <tr>
@@ -34473,7 +34473,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-font-weights</td>
     <td>Map</td>
-    <td><code>map.merge( $_default-font-weights, $kendo-font-weights )</code></td>
+    <td><code>$default-font-weights</code></td>
     <td><ul><li>thin: 100</li><li>extra-light: 200</li><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li><li>extra-bold: 800</li><li>black: 900</li></ul></td>
 </tr>
 <tr>
@@ -34483,7 +34483,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-letter-spacings</td>
     <td>Map</td>
-    <td><code>map.merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
+    <td><code>$default-letter-spacings</code></td>
     <td><ul><li>tightest: -0.15px</li><li>tighter: -0.1px</li><li>tight: -0.5px</li><li>normal: 0px</li><li>wide: 0.5px</li><li>wider: 0.1px</li><li>widest: 0.15px</li></ul></td>
 </tr>
 <tr>
@@ -34493,7 +34493,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-font-families</td>
     <td>Map</td>
-    <td><code>map.merge( $_default-font-families, $kendo-font-families )</code></td>
+    <td><code>$default-font-families</code></td>
     <td><ul><li>sans: (Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans)</li><li>serif: ("Times New Roman", Georgia, Garamond, Palatino, Baskerville)</li><li>sans-serif: (system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji")</li><li>monospace: (SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace)</li></ul></td>
 </tr>
 <tr>

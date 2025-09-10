@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-border-radii</td>
     <td></td>
-    <td><code>map.merge($_default-border-radii, $kendo-border-radii)</code></td>
+    <td><code>$default-border-radii</code></td>
     <td></td>
 </tr>
 <tr>

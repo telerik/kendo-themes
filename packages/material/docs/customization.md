@@ -828,7 +828,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-border-radii</td>
     <td>Map</td>
-    <td><code>$_default-border-radii</code></td>
+    <td><code>$default-border-radii</code></td>
     <td><ul><li>none: 0px</li><li>xs: 1px</li><li>sm: 0.125rem</li><li>md: 0.25rem</li><li>lg: 0.5rem</li><li>xl: 0.75rem</li><li>xxl: 1rem</li><li>xxxl: 1.25rem</li><li>full: 9999px</li></ul></td>
 </tr>
 <tr>
@@ -6135,7 +6135,7 @@ The following table lists the available variables for customizing the Material t
 <tbody><tr>
     <td>$kendo-colors</td>
     <td>Map</td>
-    <td><code>$_default-colors</code></td>
+    <td><code>$default-colors</code></td>
     <td><ul><li>app-surface: #FEFBFF</li><li>on-app-surface: #1D1B20</li><li>subtle: #49454F</li><li>surface: #F7F3FA</li><li>surface-alt: #ffffff</li><li>border: rgba(29, 27, 32, 0.12)</li><li>border-alt: rgba(29, 27, 32, 0.15)</li><li>base-subtle: #DED8E0</li><li>base-subtle-hover: #E2DDE5</li><li>base-subtle-active: #EAE5EC</li><li>base: #EAE5EC</li><li>base-hover: #E2DDE5</li><li>base-active: #DED8E0</li><li>base-emphasis: #6E687C</li><li>base-on-subtle: #4A4459</li><li>on-base: #4A4459</li><li>base-on-surface: #4A4459</li><li>primary-subtle: #E9DDFF</li><li>primary-subtle-hover: #DFD3F6</li><li>primary-subtle-active: #D9CCF1</li><li>primary: #65558F</li><li>primary-hover: #6E5D97</li><li>primary-active: #7866A2</li><li>primary-emphasis: #B6A6D7</li><li>primary-on-subtle: #4F378A</li><li>on-primary: #ffffff</li><li>primary-on-surface: #65558F</li><li>secondary-subtle: #625B71</li><li>secondary-subtle-hover: #6E687C</li><li>secondary-subtle-active: #756F82</li><li>secondary: #E8DEF8</li><li>secondary-hover: #DED4EE</li><li>secondary-active: #D8CEE8</li><li>secondary-emphasis: #B6AEC6</li><li>secondary-on-subtle: #ffffff</li><li>on-secondary: #4A4459</li><li>secondary-on-surface: #4A4459</li><li>tertiary-subtle: #FFD8E4</li><li>tertiary-subtle-hover: #F5CEDA</li><li>tertiary-subtle-active: #EFC8D4</li><li>tertiary: #7D5260</li><li>tertiary-hover: #87606C</li><li>tertiary-active: #8D6773</li><li>tertiary-emphasis: #8D6773</li><li>tertiary-on-subtle: #633B48</li><li>on-tertiary: #ffffff</li><li>tertiary-on-surface: #633B48</li><li>info-subtle: #C1D5F5</li><li>info-subtle-hover: #B0C8F2</li><li>info-subtle-active: #96B6EE</li><li>info: #2C6DDD</li><li>info-hover: #215FCA</li><li>info-active: #1B4EA7</li><li>info-emphasis: #7BA4EA</li><li>info-on-subtle: #123672</li><li>on-info: #ffffff</li><li>info-on-surface: #1B4EA7</li><li>success-subtle: #D6F5E1</li><li>success-subtle-hover: #BDEFCF</li><li>success-subtle-active: #A4EABE</li><li>success: #1B7E3F</li><li>success-hover: #186D37</li><li>success-active: #145C2E</li><li>success-emphasis: #6BDC94</li><li>success-on-subtle: #0F4322</li><li>on-success: #ffffff</li><li>success-on-surface: #186D37</li><li>warning-subtle: #FCEDC0</li><li>warning-subtle-hover: #FAE6A8</li><li>warning-subtle-active: #F9DF90</li><li>warning: #F5CA47</li><li>warning-hover: #F4C12A</li><li>warning-active: #F2BA0D</li><li>warning-emphasis: #F7D56E</li><li>warning-on-subtle: #725809</li><li>on-warning: #000000</li><li>warning-on-surface: #725809</li><li>error-subtle: #F9DEDC</li><li>error-subtle-hover: #F5C6C2</li><li>error-subtle-active: #F0ADA8</li><li>error: #B3261E</li><li>error-hover: #9C2521</li><li>error-active: #852221</li><li>error-emphasis: #E87973</li><li>error-on-subtle: #852221</li><li>on-error: #ffffff</li><li>error-on-surface: #9C2521</li><li>light-subtle: #FEFBFF</li><li>light-subtle-hover: #F7F3FA</li><li>light-subtle-active: #EAE5EC</li><li>light: #F7F3FA</li><li>light-hover: #EAE5EC</li><li>light-active: #E2DDE5</li><li>light-emphasis: #CCC7D4</li><li>light-on-subtle: #1D1B20</li><li>on-light: #1D1B20</li><li>light-on-surface: #F7F3FA</li><li>dark-subtle: #B0ABB7</li><li>dark-subtle-hover: #CCC7D4</li><li>dark-subtle-active: #DED8E0</li><li>dark: #322F35</li><li>dark-hover: #3A363E</li><li>dark-active: #49454F</li><li>dark-emphasis: #79747E</li><li>dark-on-subtle: #79747E</li><li>on-dark: #ffffff</li><li>dark-on-surface: #322F35</li><li>inverse-subtle: #B0ABB7</li><li>inverse-subtle-hover: #CCC7D4</li><li>inverse-subtle-active: #DED8E0</li><li>inverse: #322F35</li><li>inverse-hover: #3A363E</li><li>inverse-active: #49454F</li><li>inverse-emphasis: #79747E</li><li>inverse-on-subtle: #79747E</li><li>on-inverse: #ffffff</li><li>inverse-on-surface: #322F35</li><li>series-a: #9C27B0</li><li>series-a-bold: #751D84</li><li>series-a-bolder: #4E1458</li><li>series-a-subtle: #B55DC4</li><li>series-a-subtler: #CD93D7</li><li>series-b: #2196F3</li><li>series-b-bold: #1971B6</li><li>series-b-bolder: #114B7A</li><li>series-b-subtle: #59B0F6</li><li>series-b-subtler: #90CBF9</li><li>series-c: #009688</li><li>series-c-bold: #007166</li><li>series-c-bolder: #114B7A</li><li>series-c-subtle: #40B0A6</li><li>series-c-subtler: #80CBC4</li><li>series-d: #FFEB3B</li><li>series-d-bold: #BFB02C</li><li>series-d-bolder: #80761E</li><li>series-d-subtle: #FFF06C</li><li>series-d-subtler: #FFF59D</li><li>series-e: #DD352C</li><li>series-e-bold: #B3261E</li><li>series-e-bolder: #852221</li><li>series-e-subtle: #E87973</li><li>series-e-subtler: #F0ADA8</li><li>series-f: #4CAF50</li><li>series-f-bold: #39833C</li><li>series-f-bolder: #265828</li><li>series-f-subtle: #79C37C</li><li>series-f-subtler: #A6D7A8</li></ul></td>
 </tr>
 <tr>
@@ -9840,7 +9840,7 @@ The following table lists the available variables for customizing the Material t
 <tbody><tr>
     <td>$kendo-elevation</td>
     <td>Map</td>
-    <td><code>$_default-elevation</code></td>
+    <td><code>$default-elevation</code></td>
     <td><ul><li>1: (0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15))</li><li>2: (0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15))</li><li>3: (0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.3))</li><li>4: (0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.3))</li><li>5: (0px 4px 4px 0px rgba(0, 0, 0, 0.3), 0px 8px 12px 6px rgba(0, 0, 0, 0.15))</li><li>6: (0px 6px 14px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.3))</li><li>7: (0px 7px 16px 7px rgba(0, 0, 0, 0.15), 0px 5px 5px 0px rgba(0, 0, 0, 0.3))</li><li>8: (0px 8px 18px 8px rgba(0, 0, 0, 0.15), 0px 6px 5px 0px rgba(0, 0, 0, 0.3))</li><li>9: (0px 9px 20px 9px rgba(0, 0, 0, 0.15), 0px 7px 6px 0px rgba(0, 0, 0, 0.3))</li></ul></td>
 </tr>
 <tr>
@@ -23231,7 +23231,7 @@ The following table lists the available variables for customizing the Material t
 <tbody><tr>
     <td>$kendo-spacing</td>
     <td>Map</td>
-    <td><code>$_default-spacing</code></td>
+    <td><code>$default-spacing</code></td>
     <td><ul><li>0: 0px</li><li>1: 0.25rem</li><li>2: 0.5rem</li><li>3: 0.75rem</li><li>4: 1rem</li><li>5: 1.25rem</li><li>6: 1.5rem</li><li>7: 1.75rem</li><li>8: 2rem</li><li>9: 2.25rem</li><li>10: 2.5rem</li><li>11: 2.75rem</li><li>12: 3rem</li><li>13: 3.25rem</li><li>14: 3.5rem</li><li>15: 3.75rem</li><li>16: 4rem</li><li>17: 4.25rem</li><li>18: 4.5rem</li><li>19: 4.75rem</li><li>20: 5rem</li><li>21: 5.25rem</li><li>22: 5.5rem</li><li>23: 5.75rem</li><li>24: 6rem</li><li>25: 7rem</li><li>26: 8rem</li><li>27: 9rem</li><li>28: 10rem</li><li>29: 11rem</li><li>30: 12rem</li><li>1px: 1px</li><li>0.5: 0.125rem</li><li>1.5: 0.375rem</li><li>2.5: 0.625rem</li><li>3.5: 0.875rem</li><li>4.5: 1.125rem</li><li>5.5: 1.375rem</li><li>6.5: 1.625rem</li><li>7.5: 1.875rem</li></ul></td>
 </tr>
 <tr>
@@ -29878,7 +29878,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-font-sizes</td>
     <td>Map</td>
-    <td><code>$_default-font-sizes</code></td>
+    <td><code>$default-font-sizes</code></td>
     <td><ul><li>xs: 0.625rem</li><li>sm: 0.75rem</li><li>md: 0.875rem</li><li>lg: 1rem</li><li>xl: 1.25rem</li></ul></td>
 </tr>
 <tr>
@@ -29888,7 +29888,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-line-heights</td>
     <td>Map</td>
-    <td><code>$_default-line-heights</code></td>
+    <td><code>$default-line-heights</code></td>
     <td><ul><li>xs: 1</li><li>sm: 1.33</li><li>md: 1.4285714285714286</li><li>lg: 1.5</li></ul></td>
 </tr>
 <tr>
@@ -29898,7 +29898,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-letter-spacings</td>
     <td>Map</td>
-    <td><code>$_default-letter-spacings</code></td>
+    <td><code>$default-letter-spacings</code></td>
     <td><ul><li>tightest: -0.5px</li><li>tighter: -0.25px</li><li>tight: -0.1px</li><li>normal: 0.25px</li><li>wide: 0.1px</li><li>wider: 0.25px</li><li>widest: 0.5px</li></ul></td>
 </tr>
 <tr>
@@ -29908,7 +29908,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-font-families</td>
     <td>Map</td>
-    <td><code>$_default-font-families</code></td>
+    <td><code>$default-font-families</code></td>
     <td><ul><li>sans-serif: (Roboto, "Helvetica Neue", sans-serif)</li><li>monospace: (Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace)</li></ul></td>
 </tr>
 <tr>
@@ -30048,7 +30048,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-font-weights</td>
     <td>Map</td>
-    <td><code>map.merge( $_default-font-weights, $kendo-font-weights )</code></td>
+    <td><code>$default-font-weights</code></td>
     <td><ul><li>thin: 100</li><li>extra-light: 200</li><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li><li>extra-bold: 800</li><li>black: 900</li></ul></td>
 </tr>
 <tr>

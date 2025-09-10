@@ -681,7 +681,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-border-radii</td>
     <td>Map</td>
-    <td><code>map.merge($_default-border-radii, $kendo-border-radii)</code></td>
+    <td><code>$default-border-radii</code></td>
     <td><ul><li>none: 0px</li><li>xs: 1px</li><li>sm: 0.125rem</li><li>md: 0.25rem</li><li>lg: 0.375rem</li><li>xl: 0.5rem</li><li>xxl: 0.75rem</li><li>xxxl: 1rem</li><li>full: 9999px</li></ul></td>
 </tr>
 <tr>
@@ -5958,7 +5958,7 @@ The following table lists the available variables for customizing the Classic th
 <tbody><tr>
     <td>$kendo-colors</td>
     <td>Map</td>
-    <td><code>$_default-colors</code></td>
+    <td><code>$default-colors</code></td>
     <td><ul><li>app-surface: #ffffff</li><li>on-app-surface: #272727</li><li>subtle: #666666</li><li>surface: #f0f0f0</li><li>surface-alt: #ffffff</li><li>border: #cacaca</li><li>border-alt: #b6b6b6</li><li>base-subtle: #f0f0f0</li><li>base-subtle-hover: #ebebeb</li><li>base-subtle-active: #dddddd</li><li>base: #ebebeb</li><li>base-hover: #dddddd</li><li>base-active: #d6d6d6</li><li>base-emphasis: #cacaca</li><li>base-on-subtle: #272727</li><li>on-base: #272727</li><li>base-on-surface: #272727</li><li>primary-subtle: #fff2eb</li><li>primary-subtle-hover: #ffe5d6</li><li>primary-subtle-active: #ffd8c2</li><li>primary: #f35800</li><li>primary-hover: #e05100</li><li>primary-active: #cc4a00</li><li>primary-emphasis: #ff8b47</li><li>primary-on-subtle: #3d1600</li><li>on-primary: #ffffff</li><li>primary-on-surface: #f35800</li><li>secondary-subtle: #cacaca</li><li>secondary-subtle-hover: #b6b6b6</li><li>secondary-subtle-active: #a3a3a3</li><li>secondary: #b6b6b6</li><li>secondary-hover: #a3a3a3</li><li>secondary-active: #8f8f8f</li><li>secondary-emphasis: #7a7a7a</li><li>secondary-on-subtle: #272727</li><li>on-secondary: #000000</li><li>secondary-on-surface: #8f8f8f</li><li>tertiary-subtle: #9cdffe</li><li>tertiary-subtle-hover: #72d1fe</li><li>tertiary-subtle-active: #49c4fd</li><li>tertiary: #03a9f4</li><li>tertiary-hover: #039be0</li><li>tertiary-active: #038ecd</li><li>tertiary-emphasis: #2cbbfd</li><li>tertiary-on-subtle: #01364e</li><li>on-tertiary: #ffffff</li><li>tertiary-on-surface: #0273a6</li><li>info-subtle: #cce5f3</li><li>info-subtle-hover: #a6d1ea</li><li>info-subtle-active: #6ab2dc</li><li>info: #007bc3</li><li>info-hover: #0071b3</li><li>info-active: #0067a4</li><li>info-emphasis: #409cd2</li><li>info-on-subtle: #002b44</li><li>on-info: #ffffff</li><li>info-on-surface: #005485</li><li>success-subtle: #bbdfc1</li><li>success-subtle-hover: #9ed1a6</li><li>success-subtle-active: #82c48c</li><li>success: #3ea44e</li><li>success-hover: #399748</li><li>success-active: #348a42</li><li>success-emphasis: #6ebb7a</li><li>success-on-subtle: #16391b</li><li>on-success: #ffffff</li><li>success-on-surface: #2a7035</li><li>warning-subtle: #ffdead</li><li>warning-subtle-hover: #ffd699</li><li>warning-subtle-active: #ffc670</li><li>warning: #ffa41f</li><li>warning-hover: #ff9800</li><li>warning-active: #eb8c00</li><li>warning-emphasis: #ffb240</li><li>warning-on-subtle: #593500</li><li>on-warning: #000000</li><li>warning-on-surface: #ffa41f</li><li>error-subtle: #f4c3b8</li><li>error-subtle-hover: #f2b4a6</li><li>error-subtle-active: #ec8e79</li><li>error: #d92800</li><li>error-hover: #c82500</li><li>error-active: #b62200</li><li>error-emphasis: #e35e40</li><li>error-on-subtle: #4c0e00</li><li>on-error: #ffffff</li><li>error-on-surface: #941b00</li><li>light-subtle: #f0f0f0</li><li>light-subtle-hover: #ebebeb</li><li>light-subtle-active: #dddddd</li><li>light: #ebebeb</li><li>light-hover: #dddddd</li><li>light-active: #d6d6d6</li><li>light-emphasis: #cacaca</li><li>light-on-subtle: #272727</li><li>on-light: #000000</li><li>light-on-surface: #ebebeb</li><li>dark-subtle: #cacaca</li><li>dark-subtle-hover: #b6b6b6</li><li>dark-subtle-active: #a3a3a3</li><li>dark: #404040</li><li>dark-hover: #333333</li><li>dark-active: #272727</li><li>dark-emphasis: #7a7a7a</li><li>dark-on-subtle: #000000</li><li>on-dark: #ffffff</li><li>dark-on-surface: #333333</li><li>inverse-subtle: #cacaca</li><li>inverse-subtle-hover: #b6b6b6</li><li>inverse-subtle-active: #a3a3a3</li><li>inverse: #404040</li><li>inverse-hover: #333333</li><li>inverse-active: #272727</li><li>inverse-emphasis: #7a7a7a</li><li>inverse-on-subtle: #000000</li><li>on-inverse: #ffffff</li><li>inverse-on-surface: #333333</li><li>series-a: #ff6358</li><li>series-a-bold: #bf4a42</li><li>series-a-bolder: #80322c</li><li>series-a-subtle: #ffb1ac</li><li>series-a-subtler: #ff8a82</li><li>series-b: #ffd246</li><li>series-b-bold: #bf9d35</li><li>series-b-bolder: #806923</li><li>series-b-subtle: #ffe9a2</li><li>series-b-subtler: #ffdd74</li><li>series-c: #78d237</li><li>series-c-bold: #5a9d29</li><li>series-c-bolder: #3c691c</li><li>series-c-subtle: #bbe99b</li><li>series-c-subtler: #9add69</li><li>series-d: #28b4c8</li><li>series-d-bold: #1e8796</li><li>series-d-bolder: #145a64</li><li>series-d-subtle: #93d9e3</li><li>series-d-subtler: #5ec7d6</li><li>series-e: #2d73f5</li><li>series-e-bold: #2256b8</li><li>series-e-bolder: #173a7b</li><li>series-e-subtle: #96b9fa</li><li>series-e-subtler: #6296f7</li><li>series-f: #9d40b0</li><li>series-f-bold: #80358e</li><li>series-f-bolder: #55235f</li><li>series-f-subtle: #d5a2df</li><li>series-f-subtler: #bf74ce</li></ul></td>
 </tr>
 <tr>
@@ -9663,7 +9663,7 @@ The following table lists the available variables for customizing the Classic th
 <tbody><tr>
     <td>$kendo-elevation</td>
     <td>Map</td>
-    <td><code>$_default-elevation</code></td>
+    <td><code>$default-elevation</code></td>
     <td><ul><li>1: (0 2px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>2: (0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>3: (0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>4: (0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>5: (0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>6: (0 12px 14px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>7: (0 14px 16px rgba(0, 0, 0, 0.24), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>8: (0 16px 18px rgba(0, 0, 0, 0.28), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>9: (0 32px 34px rgba(0, 0, 0, 0.32), 0 4px 16px rgba(0, 0, 0, 0.12))</li></ul></td>
 </tr>
 <tr>
@@ -23158,7 +23158,7 @@ The following table lists the available variables for customizing the Classic th
 <tbody><tr>
     <td>$kendo-spacing</td>
     <td>Map</td>
-    <td><code>$_default-spacing</code></td>
+    <td><code>$default-spacing</code></td>
     <td><ul><li>0: 0px</li><li>1: 0.25rem</li><li>2: 0.5rem</li><li>3: 0.75rem</li><li>4: 1rem</li><li>5: 1.25rem</li><li>6: 1.5rem</li><li>7: 1.75rem</li><li>8: 2rem</li><li>9: 2.25rem</li><li>10: 2.5rem</li><li>11: 2.75rem</li><li>12: 3rem</li><li>13: 3.25rem</li><li>14: 3.5rem</li><li>15: 3.75rem</li><li>16: 4rem</li><li>17: 4.25rem</li><li>18: 4.5rem</li><li>19: 4.75rem</li><li>20: 5rem</li><li>21: 5.25rem</li><li>22: 5.5rem</li><li>23: 5.75rem</li><li>24: 6rem</li><li>25: 7rem</li><li>26: 8rem</li><li>27: 9rem</li><li>28: 10rem</li><li>29: 11rem</li><li>30: 12rem</li><li>1px: 1px</li><li>0.5: 0.125rem</li><li>1.5: 0.375rem</li><li>2.5: 0.625rem</li><li>3.5: 0.875rem</li><li>4.5: 1.125rem</li><li>5.5: 1.375rem</li><li>6.5: 1.625rem</li><li>7.5: 1.875rem</li></ul></td>
 </tr>
 <tr>
@@ -29955,7 +29955,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-font-sizes</td>
     <td>Map</td>
-    <td><code>$_default-font-sizes</code></td>
+    <td><code>$default-font-sizes</code></td>
     <td><ul><li>xxs: 0.5rem</li><li>xs: 0.625rem</li><li>sm: 0.75rem</li><li>md: 0.875rem</li><li>lg: 1rem</li><li>xl: 1.25rem</li></ul></td>
 </tr>
 <tr>
@@ -29965,7 +29965,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-line-heights</td>
     <td>Map</td>
-    <td><code>$_default-line-heights</code></td>
+    <td><code>$default-line-heights</code></td>
     <td><ul><li>xs: 1</li><li>sm: 1.25</li><li>md: 1.4285714285714286</li><li>lg: 1.5</li></ul></td>
 </tr>
 <tr>
@@ -29975,7 +29975,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-font-weights</td>
     <td>Map</td>
-    <td><code>$_default-font-weights</code></td>
+    <td><code>$default-font-weights</code></td>
     <td><ul><li>thin: 100</li><li>extra-light: 200</li><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li><li>extra-bold: 800</li><li>black: 900</li></ul></td>
 </tr>
 <tr>
@@ -29985,7 +29985,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-letter-spacings</td>
     <td>Map</td>
-    <td><code>$_default-letter-spacings</code></td>
+    <td><code>$default-letter-spacings</code></td>
     <td><ul><li>tightest: -0.15px</li><li>tighter: -0.1px</li><li>tight: -0.5px</li><li>normal: 0px</li><li>wide: 0.5px</li><li>wider: 0.1px</li><li>widest: 0.15px</li></ul></td>
 </tr>
 <tr>
@@ -29995,7 +29995,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-font-families</td>
     <td>Map</td>
-    <td><code>$_default-font-families</code></td>
+    <td><code>$default-font-families</code></td>
     <td><ul><li>sans: (Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans)</li><li>serif: ("Times New Roman", Georgia, Garamond, Palatino, Baskerville)</li><li>sans-serif: (system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji")</li><li>monospace: (SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace)</li></ul></td>
 </tr>
 <tr>
