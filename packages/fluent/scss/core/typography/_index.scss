@@ -62,7 +62,7 @@ $kendo-letter-spacing: normal !default;
 /// @group typography
 $kendo-font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !default;
 
-$_default-font-sizes: (
+$default-font-sizes: (
     xs: $kendo-font-size-xs,
     sm: $kendo-font-size-sm,
     md: $kendo-font-size-md,
@@ -70,14 +70,14 @@ $_default-font-sizes: (
     xl: $kendo-font-size-xl
 ) !default;
 
-$_default-line-heights: (
+$default-line-heights: (
     xs: $kendo-line-height-xs,
     sm: $kendo-line-height-sm,
     md: $kendo-line-height-md,
     lg: $kendo-line-height-lg,
 ) !default;
 
-$_default-font-weights: (
+$default-font-weights: (
     light: $kendo-font-weight-light,
     normal: $kendo-font-weight-normal,
     medium: $kendo-font-weight-medium,
@@ -87,8 +87,8 @@ $_default-font-weights: (
 
 /// The font sizes map
 /// @group typography
-$kendo-font-sizes: $_default-font-sizes !default;
+$kendo-font-sizes: $default-font-sizes !default;
 
 /// The line heights map
 /// @group typography
-$kendo-line-heights: $_default-line-heights !default;
+$kendo-line-heights: $default-line-heights !default;

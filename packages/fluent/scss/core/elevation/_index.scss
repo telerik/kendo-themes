@@ -1,6 +1,6 @@
 @use "sass:map";
 
-$_default-elevation: (
+$default-elevation: (
     1: (
         0 0.3px 0.9px rgba(0, 0, 0, 0.1),
         0 1.6px 3.6px rgba(0, 0, 0, 0.13)
@@ -41,4 +41,4 @@ $_default-elevation: (
 
 /// The global default Elevation map.
 /// @group elevation
-$kendo-elevation: $_default-elevation !default;
+$kendo-elevation: $default-elevation !default;

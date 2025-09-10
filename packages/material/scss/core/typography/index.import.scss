@@ -73,7 +73,7 @@ $kendo-font-family-monospace: Consolas, "Ubuntu Mono", "Lucida Console", "Courie
 /// @group typography
 $kendo-font-family: $kendo-font-family-sans-serif !default;
 
-$_default-font-sizes: (
+$default-font-sizes: (
     xs: $kendo-font-size-xs,
     sm: $kendo-font-size-sm,
     md: $kendo-font-size-md,
@@ -81,14 +81,14 @@ $_default-font-sizes: (
     xl: $kendo-font-size-xl
 ) !default;
 
-$_default-line-heights: (
+$default-line-heights: (
     xs: $kendo-line-height-xs,
     sm: $kendo-line-height-sm,
     md: $kendo-line-height-md,
     lg: $kendo-line-height-lg,
 ) !default;
 
-$_default-letter-spacings: (
+$default-letter-spacings: (
     tightest: $kendo-letter-spacing-tightest,
     tighter: $kendo-letter-spacing-tighter,
     tight: $kendo-letter-spacing-tight,
@@ -98,27 +98,27 @@ $_default-letter-spacings: (
     widest: $kendo-letter-spacing-widest
 ) !default;
 
-$_default-font-families: (
+$default-font-families: (
     sans-serif: $kendo-font-family-sans-serif,
     monospace: $kendo-font-family-monospace
 ) !default;
 
 /// The font sizes map
 /// @group typography
-$kendo-font-sizes: $_default-font-sizes !default;
-$kendo-font-sizes: map.merge( $_default-font-sizes, $kendo-font-sizes );
+$kendo-font-sizes: $default-font-sizes !default;
+$kendo-font-sizes: map.merge( $default-font-sizes, $kendo-font-sizes );
 
 /// The line heights map
 /// @group typography
-$kendo-line-heights: $_default-line-heights !default;
-$kendo-line-heights: map.merge( $_default-line-heights, $kendo-line-heights );
+$kendo-line-heights: $default-line-heights !default;
+$kendo-line-heights: map.merge( $default-line-heights, $kendo-line-heights );
 
 /// The letter spacings map
 /// @group typography
-$kendo-letter-spacings: $_default-letter-spacings !default;
-$kendo-letter-spacings: map.merge( $_default-letter-spacings, $kendo-letter-spacings );
+$kendo-letter-spacings: $default-letter-spacings !default;
+$kendo-letter-spacings: map.merge( $default-letter-spacings, $kendo-letter-spacings );
 
 /// The font families map
 /// @group typography
-$kendo-font-families: $_default-font-families !default;
-$kendo-font-families: map.merge( $_default-font-families, $kendo-font-families );
+$kendo-font-families: $default-font-families !default;
+$kendo-font-families: map.merge( $default-font-families, $kendo-font-families );
