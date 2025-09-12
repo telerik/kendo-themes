@@ -228,6 +228,19 @@ npm run clean          # Full cleanup (includes node_modules)
 
 ## Coding Guidelines
 
+### Commit message rules (Conventional Commits)
+
+- Use the Conventional Commits spec: `type(scope): summary`
+- Allowed `type`: feat, fix, chore, docs, refactor, test, perf, ci, build, revert.
+- Use a meaningful `scope` (e.g., component, package or folder).
+- Subject in imperative mood, max ~80 chars.
+- Include `BREAKING CHANGE:` in body when applicable.
+
+#### Special rules for Copilot coding agent
+- For planning or scaffolding commits, use: `chore(plan): initial plan for #{issue-number}` (no “Initial Plan”).
+- For dependency updates triggered by the agent: `chore(deps): …`
+- For lint/format-only changes: `chore(format): …`
+
 ### Variable Documentation
 
 - Refer to ${variable-docs.prompt.md} for SassDoc documentation standards
