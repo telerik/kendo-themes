@@ -82,5 +82,7 @@ Rating.states = states;
 Rating.options = options;
 Rating.className = RATING_CLASSNAME;
 Rating.defaultOptions = defaultOptions;
+Rating.moduleName = "rating";
+Rating.folderName = "rating";
 
 export default Rating;

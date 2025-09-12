@@ -44,5 +44,7 @@ SchedulerView.states = states;
 SchedulerView.options = options;
 SchedulerView.className = SCHEDULER_VIEW_CLASSNAME;
 SchedulerView.defaultOptions = defaultOptions;
+SchedulerView.moduleName = "scheduler";
+SchedulerView.folderName = "scheduler";
 
 export default SchedulerView;

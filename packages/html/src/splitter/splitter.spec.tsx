@@ -74,5 +74,7 @@ export const Splitter: KendoComponent<KendoSplitterProps & React.HTMLAttributes<
 Splitter.options = options;
 Splitter.className = SPLITTER_CLASSNAME;
 Splitter.defaultOptions = defaultOptions;
+Splitter.moduleName = "splitter";
+Splitter.folderName = "splitter";
 
 export default Splitter;

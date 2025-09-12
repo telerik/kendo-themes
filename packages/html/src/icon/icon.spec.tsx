@@ -100,5 +100,7 @@ Icon.states = states;
 Icon.options = options;
 Icon.defaultOptions = defaultOptions;
 Icon.className = ICON_CLASSNAME;
+Icon.moduleName = "icon";
+Icon.folderName = "icons";
 
 export default Icon;

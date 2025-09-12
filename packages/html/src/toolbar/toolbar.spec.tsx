@@ -316,5 +316,7 @@ Toolbar.states = states;
 Toolbar.options = options;
 Toolbar.className = TOOLBAR_CLASSNAME;
 Toolbar.defaultOptions = defaultOptions;
+Toolbar.moduleName = "toolbar";
+Toolbar.folderName = "toolbar";
 
 export default Toolbar;

@@ -95,5 +95,7 @@ ColorPalette.states = states;
 ColorPalette.options = options;
 ColorPalette.className = COLORPALETTE_CLASSNAME;
 ColorPalette.defaultOptions = defaultOptions;
+ColorPalette.moduleName = "color-palette";
+ColorPalette.folderName = "colorpalette";
 
 export default ColorPalette;

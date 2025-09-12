@@ -92,5 +92,7 @@ LoaderContainer.states = states;
 LoaderContainer.options = options;
 LoaderContainer.className = LOADERCONTAINER_CLASSNAME;
 LoaderContainer.defaultOptions = defaultOptions;
+LoaderContainer.moduleName = "loader";
+LoaderContainer.folderName = "loader";
 
 export default LoaderContainer;

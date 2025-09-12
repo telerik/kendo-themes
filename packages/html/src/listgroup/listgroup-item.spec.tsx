@@ -66,5 +66,7 @@ ListGroupItem.states = states;
 ListGroupItem.options = options;
 ListGroupItem.className = LISTGROUPITEM_CLASSNAME;
 ListGroupItem.defaultOptions = defaultOptions;
+ListGroupItem.moduleName = "listgroup";
+ListGroupItem.folderName = "listgroup";
 
 export default ListGroupItem;

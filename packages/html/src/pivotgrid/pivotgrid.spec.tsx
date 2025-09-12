@@ -77,5 +77,7 @@ PivotGrid.states = states;
 PivotGrid.options = options;
 PivotGrid.className = PIVOTGRID_CLASSNAME;
 PivotGrid.defaultOptions = defaultOptions;
+PivotGrid.moduleName = "pivotgrid";
+PivotGrid.folderName = "pivotgrid";
 
 export default PivotGrid;

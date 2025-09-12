@@ -125,5 +125,7 @@ Slider.states = states;
 Slider.options = options;
 Slider.className = SLIDER_CLASSNAME;
 Slider.defaultOptions = defaultOptions;
+Slider.moduleName = "slider";
+Slider.folderName = "slider";
 
 export default Slider;

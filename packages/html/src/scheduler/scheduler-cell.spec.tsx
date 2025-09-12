@@ -65,5 +65,7 @@ SchedulerCell.states = states;
 SchedulerCell.options = options;
 SchedulerCell.defaultOptions = defaultOptions;
 SchedulerCell.className = className;
+SchedulerCell.moduleName = "scheduler";
+SchedulerCell.folderName = "scheduler";
 
 export default SchedulerCell;

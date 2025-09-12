@@ -120,5 +120,7 @@ Chip.states = states;
 Chip.options = options;
 Chip.className = CHIP_CLASSNAME;
 Chip.defaultOptions = defaultOptions;
+Chip.moduleName = "chip";
+Chip.folderName = "chip";
 
 export default Chip;

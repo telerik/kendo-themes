@@ -87,5 +87,7 @@ Badge.states = states;
 Badge.options = options;
 Badge.className = BADGE_CLASSNAME;
 Badge.defaultOptions = defaultOptions;
+Badge.moduleName = "badge";
+Badge.folderName = "badge";
 
 export default Badge;

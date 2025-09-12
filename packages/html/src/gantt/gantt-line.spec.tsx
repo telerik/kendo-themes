@@ -44,5 +44,7 @@ GanttLine.states = states;
 GanttLine.options = options;
 GanttLine.className = GANTTLINE_CLASSNAME;
 GanttLine.defaultOptions = defaultOptions;
+GanttLine.moduleName = "gantt";
+GanttLine.folderName = "gantt";
 
 export default GanttLine;

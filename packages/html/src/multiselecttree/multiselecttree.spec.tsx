@@ -198,5 +198,7 @@ MultiSelectTree.states = states;
 MultiSelectTree.options = options;
 MultiSelectTree.className = MULTISELECTTREE_CLASSNAME;
 MultiSelectTree.defaultOptions = defaultOptions;
+MultiSelectTree.moduleName = "dropdown-tree";
+MultiSelectTree.folderName = "dropdowntree";
 
 export default MultiSelectTree;

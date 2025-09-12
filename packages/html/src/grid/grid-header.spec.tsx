@@ -34,3 +34,5 @@ export const GridHeader: KendoComponent<KendoGridHeaderProps & React.HTMLAttribu
 };
 
 GridHeader.className = className;
+GridHeader.moduleName = "grid";
+GridHeader.folderName = "grid";

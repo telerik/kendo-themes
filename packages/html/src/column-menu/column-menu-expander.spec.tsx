@@ -67,5 +67,7 @@ ColumnMenuExpander.states = states;
 ColumnMenuExpander.options = options;
 ColumnMenuExpander.className = COLUMNMENUEXPANDER_CLASSNAME;
 ColumnMenuExpander.defaultOptions = defaultOptions;
+ColumnMenuExpander.moduleName = "column-menu";
+ColumnMenuExpander.folderName = "column-menu";
 
 export default ColumnMenuExpander;

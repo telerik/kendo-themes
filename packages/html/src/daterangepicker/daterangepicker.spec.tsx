@@ -142,5 +142,7 @@ DateRangePicker.states = states;
 DateRangePicker.options = options;
 DateRangePicker.className = DATERANGEPICKER_CLASSNAME;
 DateRangePicker.defaultOptions = defaultOptions;
+DateRangePicker.moduleName = "date-range-picker";
+DateRangePicker.folderName = "daterangepicker";
 
 export default DateRangePicker;

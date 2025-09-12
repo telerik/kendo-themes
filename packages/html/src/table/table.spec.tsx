@@ -44,5 +44,7 @@ Table.states = states;
 Table.options = options;
 Table.className = TABLE_CLASSNAME;
 Table.defaultOptions = defaultOptions;
+Table.moduleName = "table";
+Table.folderName = "table";
 
 export default Table;

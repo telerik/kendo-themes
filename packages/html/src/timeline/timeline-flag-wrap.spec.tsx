@@ -44,5 +44,7 @@ TimelineFlagWrap.states = states;
 TimelineFlagWrap.options = options;
 TimelineFlagWrap.className = TIMELINEFLAGWRAP_CLASSNAME;
 TimelineFlagWrap.defaultOptions = defaultOptions;
+TimelineFlagWrap.moduleName = "timeline";
+TimelineFlagWrap.folderName = "timeline";
 
 export default TimelineFlagWrap;

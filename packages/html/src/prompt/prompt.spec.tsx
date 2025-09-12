@@ -29,5 +29,7 @@ Prompt.states = states;
 Prompt.options = options;
 Prompt.className = PROMPT_CLASSNAME;
 Prompt.defaultOptions = defaultOptions;
+Prompt.moduleName = "prompt";
+Prompt.folderName = "prompt";
 
 export default Prompt;

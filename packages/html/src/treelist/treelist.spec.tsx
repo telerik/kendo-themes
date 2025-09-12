@@ -29,5 +29,7 @@ TreeList.states = states;
 TreeList.options = options;
 TreeList.className = TREELIST_CLASSNAME;
 TreeList.defaultOptions = defaultOptions;
+TreeList.moduleName = "treelist";
+TreeList.folderName = "treelist";
 
 export default TreeList;

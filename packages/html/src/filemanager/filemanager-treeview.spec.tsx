@@ -36,5 +36,7 @@ FileManagerTreeview.states = states;
 FileManagerTreeview.options = options;
 FileManagerTreeview.className = FILEMANAGERTREEVIEW_CLASSNAME;
 FileManagerTreeview.defaultOptions = defaultOptions;
+FileManagerTreeview.moduleName = "file-manager";
+FileManagerTreeview.folderName = "filemanager";
 
 export default FileManagerTreeview;

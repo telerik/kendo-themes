@@ -20,5 +20,7 @@ export const TypographyDisplay2: KendoComponent<KendoTypographyDisplay2Props> = 
 TypographyDisplay2.states = states;
 TypographyDisplay2.options = options;
 TypographyDisplay2.className = TYPOGRAPHY_DISPLAY2_CLASSNAME;
+TypographyDisplay2.moduleName = "typography";
+TypographyDisplay2.folderName = "typography";
 
 export default TypographyDisplay2;

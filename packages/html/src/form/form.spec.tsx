@@ -110,6 +110,8 @@ Form.states = states;
 Form.options = options;
 Form.className = FORM_CLASSNAME;
 Form.defaultOptions = defaultOptions;
+Form.moduleName = "form";
+Form.folderName = "forms";
 
 export default Form;
 

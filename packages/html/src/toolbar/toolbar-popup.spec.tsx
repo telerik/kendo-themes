@@ -63,5 +63,7 @@ ToolbarPopup.states = states;
 ToolbarPopup.options = options;
 ToolbarPopup.className = TOOLBARPOPUP_CLASSNAME;
 ToolbarPopup.defaultOptions = defaultOptions;
+ToolbarPopup.moduleName = "toolbar";
+ToolbarPopup.folderName = "toolbar";
 
 export default ToolbarPopup;

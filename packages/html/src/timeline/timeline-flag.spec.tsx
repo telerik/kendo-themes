@@ -30,5 +30,7 @@ export const TimelineFlag: KendoComponent<KendoTimelineFlagOptions & React.HTMLA
 };
 
 TimelineFlag.className = TIMELINEFLAG_CLASSNAME;
+TimelineFlag.moduleName = "timeline";
+TimelineFlag.folderName = "timeline";
 
 export default TimelineFlag;

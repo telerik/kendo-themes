@@ -60,5 +60,7 @@ Breadcrumb.states = states;
 Breadcrumb.options = options;
 Breadcrumb.className = BREADCRUMB_CLASSNAME;
 Breadcrumb.defaultOptions = defaultOptions;
+Breadcrumb.moduleName = "breadcrumb";
+Breadcrumb.folderName = "breadcrumb";
 
 export default Breadcrumb;

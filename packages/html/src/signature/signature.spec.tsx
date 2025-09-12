@@ -134,5 +134,7 @@ Signature.states = states;
 Signature.options = options;
 Signature.className = SIGNATURE_CLASSNAME;
 Signature.defaultOptions = defaultOptions;
+Signature.moduleName = "signature";
+Signature.folderName = "signature";
 
 export default Signature;

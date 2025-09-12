@@ -45,5 +45,7 @@ GanttTask.states = states;
 GanttTask.options = options;
 GanttTask.className = GANTTTASK_CLASSNAME;
 GanttTask.defaultOptions = defaultOptions;
+GanttTask.moduleName = "gantt";
+GanttTask.folderName = "gantt";
 
 export default GanttTask;

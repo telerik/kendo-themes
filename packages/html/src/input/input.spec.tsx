@@ -67,5 +67,7 @@ Input.states = states;
 Input.options = options;
 Input.className = INPUT_CLASSNAME;
 Input.defaultOptions = defaultOptions;
+Input.moduleName = "input";
+Input.folderName = "input";
 
 export default Input;

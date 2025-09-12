@@ -159,5 +159,7 @@ DatePicker.states = states;
 DatePicker.options = options;
 DatePicker.className = DATEPICKER_CLASSNAME;
 DatePicker.defaultOptions = defaultOptions;
+DatePicker.moduleName = "date-picker";
+DatePicker.folderName = "datepicker";
 
 export default DatePicker;

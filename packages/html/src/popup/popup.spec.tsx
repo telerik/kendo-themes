@@ -51,5 +51,7 @@ Popup.states = states;
 Popup.options = options;
 Popup.className = POPUP_CLASSNAME;
 Popup.defaultOptions = defaultOptions;
+Popup.moduleName = "popup";
+Popup.folderName = "popup";
 
 export default Popup;

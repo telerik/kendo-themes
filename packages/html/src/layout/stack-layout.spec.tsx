@@ -35,5 +35,7 @@ export const StackLayout: KendoComponent<KendoStackLayoutProps & React.HTMLAttri
 StackLayout.states = states;
 StackLayout.options = options;
 StackLayout.className = STACKLAYOUT_CLASSNAME;
+StackLayout.moduleName = "stack-layout";
+StackLayout.folderName = "stacklayout";
 
 export default StackLayout;

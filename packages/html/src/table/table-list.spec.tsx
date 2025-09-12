@@ -53,5 +53,7 @@ TableList.states = states;
 TableList.options = options;
 TableList.className = TABLELIST_CLASSNAME;
 TableList.defaultOptions = defaultOptions;
+TableList.moduleName = "table";
+TableList.folderName = "table";
 
 export default TableList;

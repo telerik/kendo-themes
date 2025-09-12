@@ -36,5 +36,7 @@ FileManagerToolbar.states = states;
 FileManagerToolbar.options = options;
 FileManagerToolbar.className = FILEMANAGERTOOLBAR_CLASSNAME;
 FileManagerToolbar.defaultOptions = defaultOptions;
+FileManagerToolbar.moduleName = "file-manager";
+FileManagerToolbar.folderName = "filemanager";
 
 export default FileManagerToolbar;

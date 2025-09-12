@@ -20,5 +20,7 @@ export const TypographyH2: KendoComponent<KendoTypographyH2Props> = (
 TypographyH2.states = states;
 TypographyH2.options = options;
 TypographyH2.className = TYPOGRAPHY_H2_CLASSNAME;
+TypographyH2.moduleName = "typography";
+TypographyH2.folderName = "typography";
 
 export default TypographyH2;

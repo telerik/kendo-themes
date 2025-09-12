@@ -1,6 +1,7 @@
 {
   "name": "units",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "test:default": "jest default",
     "test:bootstrap": "jest bootstrap",

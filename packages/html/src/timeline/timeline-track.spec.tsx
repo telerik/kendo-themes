@@ -26,5 +26,7 @@ export const TimelineTrack: KendoComponent<React.HTMLAttributes<HTMLDivElement>>
 };
 
 TimelineTrack.className = TIMELINETRACK_CLASSNAME;
+TimelineTrack.moduleName = "timeline";
+TimelineTrack.folderName = "timeline";
 
 export default TimelineTrack;

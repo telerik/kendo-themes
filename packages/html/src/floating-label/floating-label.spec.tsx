@@ -62,5 +62,7 @@ FloatingLabel.states = states;
 FloatingLabel.options = options;
 FloatingLabel.className = FLOATINGLABEL_CLASSNAME;
 FloatingLabel.defaultOptions = defaultOptions;
+FloatingLabel.moduleName = "floating-label";
+FloatingLabel.folderName = "floating-label";
 
 export default FloatingLabel;

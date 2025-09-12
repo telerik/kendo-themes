@@ -122,5 +122,7 @@ List.states = states;
 List.options = options;
 List.className = LIST_CLASSNAME;
 List.defaultOptions = defaultOptions;
+List.moduleName = "list";
+List.folderName = "list";
 
 export default List;

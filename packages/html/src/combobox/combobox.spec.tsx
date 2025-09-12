@@ -183,5 +183,7 @@ Combobox.states = states;
 Combobox.options = options;
 Combobox.className = COMBOBOX_CLASSNAME;
 Combobox.defaultOptions = defaultOptions;
+Combobox.moduleName = "combobox";
+Combobox.folderName = "combobox";
 
 export default Combobox;

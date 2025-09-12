@@ -44,5 +44,7 @@ MenuScrollableWrapper.states = states;
 MenuScrollableWrapper.options = options;
 MenuScrollableWrapper.className = MENU_SCROLLABLE_WRAPPER_CLASS;
 MenuScrollableWrapper.defaultOptions = defaultOptions;
+MenuScrollableWrapper.moduleName = "menu";
+MenuScrollableWrapper.folderName = "menu";
 
 export default MenuScrollableWrapper;

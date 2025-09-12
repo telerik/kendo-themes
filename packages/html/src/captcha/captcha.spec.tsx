@@ -93,5 +93,7 @@ Captcha.states = states;
 Captcha.options = options;
 Captcha.className = CAPTCHA_CLASSNAME;
 Captcha.defaultOptions = defaultOptions;
+Captcha.moduleName = "captcha";
+Captcha.folderName = "captcha";
 
 export default Captcha;

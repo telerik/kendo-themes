@@ -85,5 +85,7 @@ BottomNav.states = states;
 BottomNav.options = options;
 BottomNav.className = BOTTOM_NAV_CLASSNAME;
 BottomNav.defaultOptions = defaultOptions;
+BottomNav.moduleName = "bottom-navigation";
+BottomNav.folderName = "bottom-navigation";
 
 export default BottomNav;
