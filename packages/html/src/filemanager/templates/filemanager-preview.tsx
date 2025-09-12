@@ -21,8 +21,8 @@ export const FileManagerPreview = (props) => (
             </ButtonGroup>
             <SplitButton text="Sort By" />
             <ButtonGroup>
-                <Button className="k-group-start" icon="grid-layout"></Button>
-                <Button className="k-group-end" icon="grid" selected></Button>
+                <Button className="k-group-start" icon="grid"></Button>
+                <Button className="k-group-end" icon="grid-layout" selected></Button>
             </ButtonGroup>
             <div className="k-spacer"></div>
             <div className="k-filemanager-details-toggle">
