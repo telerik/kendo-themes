@@ -116,7 +116,7 @@ $kendo-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto M
 /// @group typography
 $kendo-font-family: inherit !default;
 
-$_default-font-sizes: (
+$default-font-sizes: (
     xxs: $kendo-font-size-xxs,
     xs: $kendo-font-size-xs,
     sm: $kendo-font-size-sm,
@@ -125,14 +125,14 @@ $_default-font-sizes: (
     xl: $kendo-font-size-xl
 ) !default;
 
-$_default-line-heights: (
+$default-line-heights: (
     xs: $kendo-line-height-xs,
     sm: $kendo-line-height-sm,
     md: $kendo-line-height-md,
     lg: $kendo-line-height-lg,
 ) !default;
 
-$_default-font-weights: (
+$default-font-weights: (
     thin: $kendo-font-weight-thin,
     extra-light: $kendo-font-weight-extra-light,
     light: $kendo-font-weight-light,
@@ -144,7 +144,7 @@ $_default-font-weights: (
     "black": $kendo-font-weight-black
 ) !default;
 
-$_default-letter-spacings: (
+$default-letter-spacings: (
     tightest: $kendo-letter-spacing-tightest,
     tighter: $kendo-letter-spacing-tighter,
     tight: $kendo-letter-spacing-tight,
@@ -154,42 +154,37 @@ $_default-letter-spacings: (
     widest: $kendo-letter-spacing-widest
 ) !default;
 
-$_default-font-families: (
+$default-font-families: (
     sans: $kendo-font-family-sans,
     serif: $kendo-font-family-serif,
     sans-serif: $kendo-font-family-sans-serif,
     monospace: $kendo-font-family-monospace
 ) !default;
 
-$kendo-font-sizes: $_default-font-sizes !default;
-
 /// The font sizes map
 /// @group typography
-$kendo-font-sizes: map.merge( $_default-font-sizes, $kendo-font-sizes );
-
-$kendo-line-heights: $_default-line-heights !default;
+$kendo-font-sizes: $default-font-sizes !default;
+$kendo-font-sizes: map.merge( $default-font-sizes, $kendo-font-sizes );
 
 /// The line heights map
 /// @group typography
-$kendo-line-heights: map.merge( $_default-line-heights, $kendo-line-heights );
-
-$kendo-font-weights: $_default-font-weights !default;
+$kendo-line-heights: $default-line-heights !default;
+$kendo-line-heights: map.merge( $default-line-heights, $kendo-line-heights );
 
 /// The font weights map
 /// @group typography
-$kendo-font-weights: map.merge( $_default-font-weights, $kendo-font-weights );
-
-$kendo-letter-spacings: $_default-letter-spacings !default;
+$kendo-font-weights: $default-font-weights !default;
+$kendo-font-weights: map.merge( $default-font-weights, $kendo-font-weights );
 
 /// The letter spacings map
 /// @group typography
-$kendo-letter-spacings: map.merge( $_default-letter-spacings, $kendo-letter-spacings );
-
-$kendo-font-families: $_default-font-families !default;
+$kendo-letter-spacings: $default-letter-spacings !default;
+$kendo-letter-spacings: map.merge( $default-letter-spacings, $kendo-letter-spacings );
 
 /// The font families map
 /// @group typography
-$kendo-font-families: map.merge( $_default-font-families, $kendo-font-families );
+$kendo-font-families: $default-font-families !default;
+$kendo-font-families: map.merge( $default-font-families, $kendo-font-families );
 
 @mixin typography( $font-size: null, $font-family: null, $line-height: null, $font-weight: null, $letter-spacing: null ) {
     font-size: $font-size;

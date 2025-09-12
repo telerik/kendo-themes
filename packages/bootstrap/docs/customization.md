@@ -691,7 +691,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-border-radii</td>
     <td>Map</td>
-    <td><code>$_default-border-radii</code></td>
+    <td><code>$default-border-radii</code></td>
     <td><ul><li>none: 0px</li><li>xs: 0.125rem</li><li>sm: 0.25rem</li><li>md: 0.375rem</li><li>lg: 0.5rem</li><li>xl: 1rem</li><li>xxl: 2rem</li><li>xxxl: 3rem</li><li>full: 50rem</li></ul></td>
 </tr>
 <tr>
@@ -5968,7 +5968,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tbody><tr>
     <td>$kendo-colors</td>
     <td>Map</td>
-    <td><code>$_default-colors</code></td>
+    <td><code>$default-colors</code></td>
     <td><ul><li>app-surface: #ffffff</li><li>on-app-surface: #212529</li><li>subtle: #565e64</li><li>surface: #f8f9fa</li><li>surface-alt: #ffffff</li><li>border: rgba(33, 37, 41, 0.13)</li><li>border-alt: rgba(33, 37, 41, 0.2)</li><li>base-subtle: #e9ecef</li><li>base-subtle-hover: #dee2e6</li><li>base-subtle-active: #ced4da</li><li>base: #dee2e6</li><li>base-hover: #ced4da</li><li>base-active: #bdc4cb</li><li>base-emphasis: rgba(33, 37, 41, 0.34)</li><li>base-on-subtle: #212529</li><li>on-base: #212529</li><li>base-on-surface: #212529</li><li>primary-subtle: #cfe2ff</li><li>primary-subtle-hover: #B9d6fe</li><li>primary-subtle-active: #9ec5fe</li><li>primary: #0d6efd</li><li>primary-hover: #0b5ed7</li><li>primary-active: #0a58ca</li><li>primary-emphasis: rgba(13, 110, 253, 0.4)</li><li>primary-on-subtle: #052c65</li><li>on-primary: #ffffff</li><li>primary-on-surface: #0d6efd</li><li>secondary-subtle: #e2e3e5</li><li>secondary-subtle-hover: #d3d4d5</li><li>secondary-subtle-active: #c6c7c8</li><li>secondary: #6c757d</li><li>secondary-hover: #5c636a</li><li>secondary-active: #565e64</li><li>secondary-emphasis: rgba(92, 99, 106, 0.4)</li><li>secondary-on-subtle: #2B2F32</li><li>on-secondary: #ffffff</li><li>secondary-on-surface: #5c636a</li><li>tertiary-subtle: #e2d9f3</li><li>tertiary-subtle-hover: #d3c5ec</li><li>tertiary-subtle-active: #c5b3e6</li><li>tertiary: #6f42c1</li><li>tertiary-hover: #59359a</li><li>tertiary-active: #432874</li><li>tertiary-emphasis: rgba(126, 88, 198, 0.4)</li><li>tertiary-on-subtle: #2c1a4d</li><li>on-tertiary: #ffffff</li><li>tertiary-on-surface: #7e58c6</li><li>info-subtle: #cff4fc</li><li>info-subtle-hover: #b7eefa</li><li>info-subtle-active: #9eeaf9</li><li>info: #0dcaf0</li><li>info-hover: #31d2f2</li><li>info-active: #3dd5f3</li><li>info-emphasis: rgba(13, 202, 240, 0.4)</li><li>info-on-subtle: #055160</li><li>on-info: #000000</li><li>info-on-surface: #0dcaf0</li><li>success-subtle: #d1e7dd</li><li>success-subtle-hover: #badbcc</li><li>success-subtle-active: #a3cfbb</li><li>success: #198754</li><li>success-hover: #157347</li><li>success-active: #146c43</li><li>success-emphasis: rgba(25, 135, 84, 0.4)</li><li>success-on-subtle: #0A3622</li><li>on-success: #ffffff</li><li>success-on-surface: #198754</li><li>warning-subtle: #fff3cd</li><li>warning-subtle-hover: #ffecb5</li><li>warning-subtle-active: #ffe69c</li><li>warning: #ffc107</li><li>warning-hover: #ffca2c</li><li>warning-active: #ffcd39</li><li>warning-emphasis: rgba(255, 193, 7, 0.4)</li><li>warning-on-subtle: #664d03</li><li>on-warning: #000000</li><li>warning-on-surface: #ffc107</li><li>error-subtle: #f8d7da</li><li>error-subtle-hover: #f5c2c7</li><li>error-subtle-active: #f1aeb5</li><li>error: #dc3545</li><li>error-hover: #bb2d3b</li><li>error-active: #b02a37</li><li>error-emphasis: rgba(220, 53, 69, 0.4)</li><li>error-on-subtle: #58151c</li><li>on-error: #ffffff</li><li>error-on-surface: #dc3545</li><li>light-subtle: #fcfcfd</li><li>light-subtle-hover: #ececec</li><li>light-subtle-active: #e9ecef</li><li>light: #f8f9fa</li><li>light-hover: #d3d4d5</li><li>light-active: #c6c7c8</li><li>light-emphasis: rgba(33, 37, 41, 0.1)</li><li>light-on-subtle: #495057</li><li>on-light: #000000</li><li>light-on-surface: #f8f9fa</li><li>dark-subtle: #ced4da</li><li>dark-subtle-hover: #bdc4cb</li><li>dark-subtle-active: #adb5bd</li><li>dark: #212529</li><li>dark-hover: #424649</li><li>dark-active: #4d5154</li><li>dark-emphasis: rgba(33, 37, 41, 0.4)</li><li>dark-on-subtle: #495057</li><li>on-dark: #ffffff</li><li>dark-on-surface: #212529</li><li>inverse-subtle: #495057</li><li>inverse-subtle-hover: #565e64</li><li>inverse-subtle-active: #5c636a</li><li>inverse: #212529</li><li>inverse-hover: #343a40</li><li>inverse-active: #495057</li><li>inverse-emphasis: rgba(33, 37, 41, 0.4)</li><li>inverse-on-subtle: #ffffff</li><li>on-inverse: #ffffff</li><li>inverse-on-surface: #212529</li><li>series-a: #0b5ed7</li><li>series-a-bold: #084298</li><li>series-a-bolder: #052c65</li><li>series-a-subtle: #3d8bfd</li><li>series-a-subtler: #86b6fe</li><li>series-b: #7e58c6</li><li>series-b-bold: #59359a</li><li>series-b-bolder: #36215f</li><li>series-b-subtle: #8c68cd</li><li>series-b-subtler: #b9a3e1</li><li>series-c: #20c997</li><li>series-c-bold: #13795b</li><li>series-c-bolder: #0d503c</li><li>series-c-subtle: #79dfc1</li><li>series-c-subtler: #c1f0e2</li><li>series-d: #198754</li><li>series-d-bold: #146c43</li><li>series-d-bolder: #0A3622</li><li>series-d-subtle: #479F76</li><li>series-d-subtler: #8cc3aa</li><li>series-e: #dc3545</li><li>series-e-bold: #b02a37</li><li>series-e-bolder: #6e1b23</li><li>series-e-subtle: #e35d6a</li><li>series-e-subtler: #f1aeb5</li><li>series-f: #ffc107</li><li>series-f-bold: #b38705</li><li>series-f-bolder: #806104</li><li>series-f-subtle: #ffca2c</li><li>series-f-subtler: #ffda6a</li></ul></td>
 </tr>
 <tr>
@@ -9673,7 +9673,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tbody><tr>
     <td>$kendo-elevation</td>
     <td>Map</td>
-    <td><code>$_default-elevation</code></td>
+    <td><code>$default-elevation</code></td>
     <td><ul><li>1: (0px 1px 2px rgba(0, 0, 0, 0.038))</li><li>2: (0px 2px 7px rgba(0, 0, 0, 0.075))</li><li>3: (0px 4px 10px rgba(0, 0, 0, 0.1))</li><li>4: (0px 6px 13px rgba(0, 0, 0, 0.125))</li><li>5: (0px 8px 16px 0px rgba(0, 0, 0, 0.15))</li><li>6: (0px 11px 24px 0px rgba(0, 0, 0, 0.159))</li><li>7: (0px 14px 36px 0px rgba(0, 0, 0, 0.168))</li><li>8: (0px 16px 48px 0px rgba(0, 0, 0, 0.176))</li><li>9: (0px 18px 60px 0px rgba(0, 0, 0, 0.185))</li></ul></td>
 </tr>
 <tr>
@@ -23058,7 +23058,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tbody><tr>
     <td>$kendo-spacing</td>
     <td>Map</td>
-    <td><code>$_default-spacing</code></td>
+    <td><code>$default-spacing</code></td>
     <td><ul><li>0: 0px</li><li>1: 0.25rem</li><li>2: 0.5rem</li><li>3: 0.75rem</li><li>4: 1rem</li><li>5: 1.25rem</li><li>6: 1.5rem</li><li>7: 1.75rem</li><li>8: 2rem</li><li>9: 2.25rem</li><li>10: 2.5rem</li><li>11: 2.75rem</li><li>12: 3rem</li><li>13: 3.25rem</li><li>14: 3.5rem</li><li>15: 3.75rem</li><li>16: 4rem</li><li>17: 4.25rem</li><li>18: 4.5rem</li><li>19: 4.75rem</li><li>20: 5rem</li><li>21: 5.25rem</li><li>22: 5.5rem</li><li>23: 5.75rem</li><li>24: 6rem</li><li>25: 7rem</li><li>26: 8rem</li><li>27: 9rem</li><li>28: 10rem</li><li>29: 11rem</li><li>30: 12rem</li><li>1px: 1px</li><li>0.5: 0.125rem</li><li>1.5: 0.375rem</li><li>2.5: 0.625rem</li><li>3.5: 0.875rem</li><li>4.5: 1.125rem</li><li>5.5: 1.375rem</li><li>6.5: 1.625rem</li><li>7.5: 1.875rem</li></ul></td>
 </tr>
 <tr>
@@ -29675,7 +29675,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-font-sizes</td>
     <td>Map</td>
-    <td><code>$_default-font-sizes</code></td>
+    <td><code>$default-font-sizes</code></td>
     <td><ul><li>xs: 0.75rem</li><li>sm: 0.875rem</li><li>md: 1rem</li><li>lg: 1.25rem</li><li>xl: 1.5rem</li></ul></td>
 </tr>
 <tr>
@@ -29685,7 +29685,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-line-heights</td>
     <td>Map</td>
-    <td><code>$_default-line-heights</code></td>
+    <td><code>$default-line-heights</code></td>
     <td><ul><li>xs: 1</li><li>sm: 1.2</li><li>md: 1.5</li><li>lg: 2</li></ul></td>
 </tr>
 <tr>
@@ -29695,7 +29695,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-font-weights</td>
     <td>Map</td>
-    <td><code>$_default-font-weights</code></td>
+    <td><code>$default-font-weights</code></td>
     <td><ul><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li></ul></td>
 </tr>
 <tr>
@@ -29705,7 +29705,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-font-families</td>
     <td>Map</td>
-    <td><code>$_default-font-families</code></td>
+    <td><code>$default-font-families</code></td>
     <td><ul><li>sans-serif: (system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji")</li><li>monospace: (SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace)</li></ul></td>
 </tr>
 <tr>
@@ -29875,7 +29875,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-letter-spacings</td>
     <td>Map</td>
-    <td><code>map.merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
+    <td><code>$default-letter-spacings</code></td>
     <td><ul><li>tightest: -0.15px</li><li>tighter: -0.1px</li><li>tight: -0.5px</li><li>normal: 0px</li><li>wide: 0.5px</li><li>wider: 0.1px</li><li>widest: 0.15px</li></ul></td>
 </tr>
 <tr>

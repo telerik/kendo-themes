@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-colors</td>
     <td></td>
-    <td><code>$_default-colors</code></td>
+    <td><code>$default-colors</code></td>
     <td></td>
 </tr>
 <tr>

@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "../functions/_string.import.scss" as *;
 
-$_default-spacing: (
+$default-spacing: (
     0: 0px,
     1px: 1px,
     0.5: .125rem,
@@ -46,9 +46,9 @@ $_default-spacing: (
 
 /// The global default Spacing map.
 /// @group spacing
-$kendo-spacing: $_default-spacing !default;
+$kendo-spacing: $default-spacing !default;
 
-$kendo-spacing: map.merge($_default-spacing, $kendo-spacing);
+$kendo-spacing: map.merge($default-spacing, $kendo-spacing);
 
 
 @function k-spacing($step) {

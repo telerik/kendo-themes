@@ -29,9 +29,7 @@ $kendo-border-radius-xxxl: map.get($kendo-spacing, 5) !default;
 /// @group radii
 $kendo-border-radius-full: 9999px !default;
 
-/// The global radii Map.
-/// @group radii
-$_default-border-radii: (
+$default-border-radii: (
     none: $kendo-border-radius-none,
     xs: $kendo-border-radius-xs,
     sm: $kendo-border-radius-sm,
@@ -45,5 +43,5 @@ $_default-border-radii: (
 
 /// The global radii Map.
 /// @group radii
-$kendo-border-radii: $_default-border-radii !default;
-$kendo-border-radii: map.merge($_default-border-radii, $kendo-border-radii);
+$kendo-border-radii: $default-border-radii !default;
+$kendo-border-radii: map.merge($default-border-radii, $kendo-border-radii);

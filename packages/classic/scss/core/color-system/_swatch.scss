@@ -2,7 +2,7 @@
 @use "./_palettes.scss" as *;
 
 // Colors
-$_default-colors: (
+$default-colors: (
     // Misc
     app-surface: map.get( $kendo-palette-ash-gray, "white" ),
     on-app-surface: map.get( $kendo-palette-ash-gray, 15 ),
@@ -420,5 +420,5 @@ $_default-colors: (
 /// @prop {Color} series-f-bolder - The bolder series F color variable.
 /// @prop {Color} series-f-subtle - The subtle series F color variable.
 /// @prop {Color} series-f-subtler - The subtler series F color variable.
-$kendo-colors: $_default-colors !default;
-$kendo-colors: map.merge($kendo-colors, $_default-colors);
+$kendo-colors: $default-colors !default;
+$kendo-colors: map.merge($kendo-colors, $default-colors);

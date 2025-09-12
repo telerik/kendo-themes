@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-font-sizes</td>
     <td>Map</td>
-    <td><code>$_default-font-sizes</code></td>
+    <td><code>$default-font-sizes</code></td>
     <td><ul><li>xs: 0.75rem</li><li>sm: 0.875rem</li><li>md: 1rem</li><li>lg: 1.25rem</li><li>xl: 1.5rem</li></ul></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-line-heights</td>
     <td>Map</td>
-    <td><code>$_default-line-heights</code></td>
+    <td><code>$default-line-heights</code></td>
     <td><ul><li>xs: 1</li><li>sm: 1.2</li><li>md: 1.5</li><li>lg: 2</li></ul></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-font-weights</td>
     <td>Map</td>
-    <td><code>$_default-font-weights</code></td>
+    <td><code>$default-font-weights</code></td>
     <td><ul><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li></ul></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-font-families</td>
     <td>Map</td>
-    <td><code>$_default-font-families</code></td>
+    <td><code>$default-font-families</code></td>
     <td><ul><li>sans-serif: (system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji")</li><li>monospace: (SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace)</li></ul></td>
 </tr>
 <tr>
@@ -430,7 +430,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-letter-spacings</td>
     <td>Map</td>
-    <td><code>map.merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
+    <td><code>$default-letter-spacings</code></td>
     <td><ul><li>tightest: -0.15px</li><li>tighter: -0.1px</li><li>tight: -0.5px</li><li>normal: 0px</li><li>wide: 0.5px</li><li>wider: 0.1px</li><li>widest: 0.15px</li></ul></td>
 </tr>
 <tr>
