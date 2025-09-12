@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-legend-text-transform</td>
     <td>String</td>
-    <td><code>uppercase</code></td>
-    <td><code>uppercase</code></td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text capitalization of the Form legend.</div></div>
@@ -210,8 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-md-rows-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(6)</code></td>
-    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
+    <td><code>k-spacing(5)</code></td>
+    <td><code>var(--kendo-spacing-5, 1.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The row spacing of the medium Form.</div></div>
@@ -220,8 +220,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-lg-rows-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(7)</code></td>
-    <td><code>var(--kendo-spacing-7, 1.75rem)</code></td>
+    <td><code>k-spacing(6)</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The row spacing of the large Form.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-form-separator-margin</td>
     <td>List</td>
     <td><code>$kendo-form-md-rows-spacing 0 0</code></td>
-    <td><code>(var(--kendo-spacing-6, 1.5rem) 0 0)</code></td>
+    <td><code>(var(--kendo-spacing-5, 1.25rem) 0 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form separator.</div></div>
@@ -350,8 +350,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-label-optional-font-style</td>
     <td>String</td>
-    <td><code>italic</code></td>
-    <td><code>italic</code></td>
+    <td><code>normal</code></td>
+    <td><code>normal</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the optional label in the Form.</div></div>
@@ -431,7 +431,7 @@ The following table lists the available variables for customization.
         form-rows-spacing: $kendo-form-lg-rows-spacing
     )
 )</code></td>
-    <td><ul><li>sm: "form-rows-spacing":"var(--kendo-spacing-4, 1rem)"</li><li>md: "form-rows-spacing":"var(--kendo-spacing-6, 1.5rem)"</li><li>lg: "form-rows-spacing":"var(--kendo-spacing-7, 1.75rem)"</li></ul></td>
+    <td><ul><li>sm: "form-rows-spacing":"var(--kendo-spacing-4, 1rem)"</li><li>md: "form-rows-spacing":"var(--kendo-spacing-5, 1.25rem)"</li><li>lg: "form-rows-spacing":"var(--kendo-spacing-6, 1.5rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Form.</div></div>

@@ -230,8 +230,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-border-radius</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>k-border-radius(sm)</code></td>
+    <td><code>var(--kendo-border-radius-sm, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TabStrip items.</div></div>
@@ -320,8 +320,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #0d6efd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TabStrip items.</div></div>
@@ -360,8 +360,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-hover-text</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover, #0b5ed7)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-on-surface) 90%, transparent 10%)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-on-surface, #0d6efd) 90%, transparent 10%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered TabStrip items.</div></div>
@@ -370,8 +370,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-hover-border</td>
     <td>String</td>
-    <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered TabStrip items.</div></div>
@@ -390,8 +390,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected TabStrip items.</div></div>
@@ -570,8 +570,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-bg</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TabStrip content.</div></div>
@@ -600,8 +600,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-focus-border</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
+    <td><code>k-color(primary-emphasis)</code></td>
+    <td><code>var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused TabStrip content.</div></div>

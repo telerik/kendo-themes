@@ -270,8 +270,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-outline-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-base) 50%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-base, #272727) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the outline Toolbar.</div></div>

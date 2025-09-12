@@ -447,8 +447,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(base-hover)</code></td>
-    <td><code>var(--kendo-color-base-hover, #dddddd)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent )</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 8%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered List items.</div></div>
@@ -487,8 +487,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px rgba( black, .12 )</code></td>
-    <td><code>(inset 0 0 0 2px rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>inset 0 0 0 2px k-color(border-alt)</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused List items.</div></div>

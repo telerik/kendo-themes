@@ -230,8 +230,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-track-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle, #DED8E0)</code></td>
+    <td><code>k-color(primary-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-subtle, #E9DDFF)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline track.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-track-border-color</td>
     <td>String</td>
     <td><code>$kendo-timeline-track-bg</code></td>
-    <td><code>var(--kendo-color-base-subtle, #DED8E0)</code></td>
+    <td><code>var(--kendo-color-primary-subtle, #E9DDFF)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Timeline track.</div></div>
@@ -459,9 +459,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-timeline-circle-width</td>
-    <td>Number</td>
-    <td><code>16px</code></td>
-    <td><code>16px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Timeline circle.</div></div>
@@ -469,9 +469,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-timeline-circle-height</td>
-    <td>Number</td>
-    <td><code>16px</code></td>
-    <td><code>16px</code></td>
+    <td>String</td>
+    <td><code>$kendo-timeline-circle-width</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Timeline circle.</div></div>

@@ -280,8 +280,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-success-text</td>
     <td>String</td>
-    <td><code>k-color(success)</code></td>
-    <td><code>var(--kendo-color-success, #1B7E3F)</code></td>
+    <td><code>k-color(success-on-surface)</code></td>
+    <td><code>var(--kendo-color-success-on-surface, #186D37)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The success text color of the Upload.</div></div>
@@ -300,8 +300,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-error-text</td>
     <td>String</td>
-    <td><code>k-color(error)</code></td>
-    <td><code>var(--kendo-color-error, #B3261E)</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>var(--kendo-color-error-on-surface, #9C2521)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The error text color of the Upload.</div></div>

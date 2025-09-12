@@ -30,8 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-progressbar-height</td>
     <td>Number</td>
-    <td><code>5px</code></td>
-    <td><code>5px</code></td>
+    <td><code>4px</code></td>
+    <td><code>4px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ProgressBar.</div></div>

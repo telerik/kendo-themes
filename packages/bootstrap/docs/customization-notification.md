@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-notification-border-radius</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
-    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Notification.</div></div>
@@ -130,8 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-notification-bg</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Notification.</div></div>

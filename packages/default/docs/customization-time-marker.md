@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-current-time-color</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #ff0000"></span><code>#ff0000</code></td>
-    <td><span class="color-preview" style="background-color: #ff0000"></span><code>#ff0000</code></td>
+    <td>String</td>
+    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>var(--kendo-color-error-on-surface, #ca1400)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the current time indicator.</div></div>

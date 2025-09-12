@@ -210,8 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-text</td>
     <td>String</td>
-    <td><code>k-color(base-on-subtle)</code></td>
-    <td><code>var(--kendo-color-base-on-subtle, #4A4459)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Toolbar.</div></div>
@@ -260,8 +260,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-outline-text</td>
     <td>String</td>
-    <td><code>k-color(base-on-subtle)</code></td>
-    <td><code>var(--kendo-color-base-on-subtle, #4A4459)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline Toolbar.</div></div>
@@ -310,8 +310,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-flat-text</td>
     <td>String</td>
-    <td><code>k-color(base-on-subtle)</code></td>
-    <td><code>var(--kendo-color-base-on-subtle, #4A4459)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat Toolbar.</div></div>
