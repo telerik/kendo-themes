@@ -32,9 +32,9 @@
     }
 
 
-    // Fluent-specific hover state
-    .k-checkbox:hover,
-    .k-checkbox.k-hover {
+    // Fluent-specific hover state for checked checkboxes only
+    .k-checkbox:checked:hover,
+    .k-checkbox.k-checked.k-hover {
         @if $kendo-checkbox-indicator-type == "image" {
             &::before {
                 background-color: currentColor;
