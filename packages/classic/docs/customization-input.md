@@ -775,8 +775,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-invalid-border</td>
     <td>String</td>
-    <td><code>k-color(error)</code></td>
-    <td><code>var(--kendo-color-error, #d92800)</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>var(--kendo-color-error-on-surface, #941b00)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid Input components.</div></div>

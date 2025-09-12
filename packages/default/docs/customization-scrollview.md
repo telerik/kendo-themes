@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scrollview-pagebutton-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px rgba(0, 0, 0, .13)</code></td>
-    <td><code>(0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
+    <td><code>0 0 0 2px k-color(border-alt)</code></td>
+    <td><code>(0 0 0 2px var(--kendo-color-border-alt, rgba(0, 0, 0, 0.16)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ScrollView page button.</div></div>
@@ -215,16 +215,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the ScrollView navigation arrows.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-navigation-icon-shadow</td>
-    <td>List</td>
-    <td><code>rgba(0, 0, 0, .3) 0 0 15px</code></td>
-    <td><code>(rgba(0, 0, 0, 0.3) 0 0 15px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ScrollView navigation arrows.</div></div>
     </td>
 </tr>
 <tr>

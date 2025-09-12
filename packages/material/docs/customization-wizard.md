@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-wizard-step-focus-border</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #656565"></span><code>#656565</code></td>
-    <td><span class="color-preview" style="background-color: #656565"></span><code>#656565</code></td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #49454F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline of the focused Wizard step.</div></div>

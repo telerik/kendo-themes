@@ -209,9 +209,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-node-group-focus-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-card-focus-border</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.15)"></span><code>rgba(0, 0, 0, 0.15)</code></td>
+    <td><code>var(--kendo-color-border-alt, rgba(0, 0, 0, 0.16))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused OrgChart node group.</div></div>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-card-body-vbox-min-height</td>
     <td>Number</td>
-    <td><code>$kendo-card-avatar-size</code></td>
+    <td><code>45px</code></td>
     <td><code>45px</code></td>
 </tr>
 <tr>

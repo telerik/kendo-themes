@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ExpansionPanel.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-header-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ExpansionPanel header.</div></div>
@@ -200,8 +200,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-title-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #f35800)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #f35800)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ExpansionPanel title.</div></div>

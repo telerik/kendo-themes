@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-card-border</td>
-    <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Card.</div></div>
@@ -179,9 +179,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-card-focus-border</td>
-    <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Card.</div></div>
@@ -249,9 +249,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-card-header-border</td>
-    <td>String</td>
+    <td>Color</td>
     <td><code>$kendo-card-border</code></td>
-    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Card header.</div></div>
@@ -329,9 +329,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-card-footer-border</td>
-    <td>String</td>
+    <td>Color</td>
     <td><code>$kendo-card-border</code></td>
-    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Card footer.</div></div>
@@ -475,16 +475,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the Card image.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-card-avatar-size</td>
-    <td>Number</td>
-    <td><code>45px</code></td>
-    <td><code>45px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Avatar in the Card.</div></div>
     </td>
 </tr>
 <tr>

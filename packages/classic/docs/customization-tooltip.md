@@ -130,8 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tooltip-bg</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
+    <td><code>k-color(inverse)</code></td>
+    <td><code>var(--kendo-color-inverse, #404040)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default background of the Tooltip.</div></div>
@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tooltip-text</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>k-color(on-inverse)</code></td>
+    <td><code>var(--kendo-color-on-inverse, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default text color of the Tooltip.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tooltip-border</td>
     <td>String</td>
     <td><code>$kendo-tooltip-bg</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
+    <td><code>var(--kendo-color-inverse, #404040)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default border color of the Tooltip.</div></div>

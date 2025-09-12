@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-bg</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-gantt-dot-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-gantt-bg</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Gantt task dot.</div></div>
@@ -699,9 +699,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-gantt-validation-tooltip-border</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #656565"></span><code>#656565</code></td>
-    <td><span class="color-preview" style="background-color: #656565"></span><code>#656565</code></td>
+    <td>String</td>
+    <td><code>k-color(base-emphasis)</code></td>
+    <td><code>var(--kendo-color-base-emphasis, rgba(33, 37, 41, 0.34))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt validation Tooltip.</div></div>
@@ -710,8 +710,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-validation-tooltip-valid-border</td>
     <td>String</td>
-    <td><code>k-color(success)</code></td>
-    <td><code>var(--kendo-color-success, #198754)</code></td>
+    <td><code>k-color(success-emphasis)</code></td>
+    <td><code>var(--kendo-color-success-emphasis, rgba(25, 135, 84, 0.4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the valid Gantt validation Tooltip.</div></div>
@@ -720,8 +720,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-validation-tooltip-invalid-border</td>
     <td>String</td>
-    <td><code>k-color(error)</code></td>
-    <td><code>var(--kendo-color-error, #dc3545)</code></td>
+    <td><code>k-color(error-emphasis)</code></td>
+    <td><code>var(--kendo-color-error-emphasis, rgba(220, 53, 69, 0.4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid Gantt validation Tooltip.</div></div>

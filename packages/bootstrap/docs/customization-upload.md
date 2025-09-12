@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-bg</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Upload.</div></div>
@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
+    <td><code>k-color(base-subtle-hover)</code></td>
+    <td><code>var(--kendo-color-base-subtle-hover, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Upload dropzone.</div></div>

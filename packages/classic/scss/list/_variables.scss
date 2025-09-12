@@ -256,7 +256,7 @@ $kendo-list-item-text: null !default;
 
 /// The background color of the hovered List items.
 /// @group list
-$kendo-list-item-hover-bg: k-color(base-hover) !default;
+$kendo-list-item-hover-bg: color-mix(in srgb, k-color(on-app-surface) 8%, transparent ) !default;
 /// The text color of the hovered List items.
 /// @group list
 $kendo-list-item-hover-text: k-color(on-app-surface) !default;
@@ -269,7 +269,7 @@ $kendo-list-item-focus-bg: null !default;
 $kendo-list-item-focus-text: null !default;
 /// The box shadow of the focused List items.
 /// @group list
-$kendo-list-item-focus-shadow: inset 0 0 0 2px rgba( black, .12 ) !default;
+$kendo-list-item-focus-shadow: inset 0 0 0 2px k-color(border-alt) !default;
 
 /// The background color of the selected List items.
 /// @group list

@@ -21,7 +21,7 @@
 
     @each $name, $color in $kendo-avatar-theme-colors {
         .k-avatar-outline-#{$name} {
-            color: $color;
+            color: k-color(#{$name}-on-surface);
         }
     }
 

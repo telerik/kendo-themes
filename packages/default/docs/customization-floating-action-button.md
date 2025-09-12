@@ -343,9 +343,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-disabled-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(5)</code></td>
-    <td><code>var(--kendo-elevation-5, 0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled FAB.</div></div>
@@ -453,9 +453,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-disabled-shadow</td>
-    <td>String</td>
+    <td>Null</td>
     <td><code>$kendo-fab-disabled-shadow</code></td>
-    <td><code>var(--kendo-elevation-5, 0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled FAB item.</div></div>

@@ -52,12 +52,12 @@
             &:active,
             &.k-active,
             &.k-selected {
-                background-color: if( $name == "base", color-mix(in srgb, currentColor 12%, transparent), color-mix(in srgb, k-color($name) 12%, transparent));
+                background-color: if( $name == "base", $kendo-chip-outline-selected-bg, color-mix(in srgb, k-color($name) 12%, transparent));
             }
 
             &:hover,
             &.k-hover {
-                background-color: if( $name == "base", color-mix(in srgb, currentColor 8%, transparent), color-mix(in srgb, k-color($name) 8%, transparent));
+                background-color: if( $name == "base", $kendo-chip-outline-hover-bg, color-mix(in srgb, k-color($name) 8%, transparent));
             }
 
             &:focus,

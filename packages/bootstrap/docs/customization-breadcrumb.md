@@ -169,9 +169,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-breadcrumb-bg</td>
-    <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the Breadcrumb.</div></div>
@@ -189,9 +189,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-breadcrumb-border</td>
-    <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the Breadcrumb.</div></div>
@@ -200,8 +200,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 2px 1px rgba( black, .06 )</code></td>
-    <td><code>(0 0 2px 1px rgba(0, 0, 0, 0.06))</code></td>
+    <td><code>0 0 2px 1px color-mix(in srgb, currentColor 25%, transparent)</code></td>
+    <td><code>(0 0 2px 1px color-mix(in srgb, currentColor 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb.</div></div>
@@ -220,8 +220,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-md-link-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5, 0.625rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Breadcrumb link.</div></div>
@@ -450,8 +450,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, k-color(on-app-surface) 25%, transparent)</code></td>
-    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
+    <td><code>inset 0 0 0 3px color-mix(in srgb, currentColor 25%, transparent)</code></td>
+    <td><code>(inset 0 0 0 3px color-mix(in srgb, currentColor 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb link.</div></div>
@@ -470,8 +470,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-root-link-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #0d6efd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Breadcrumb root link.</div></div>
@@ -500,8 +500,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-root-link-hover-text</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover, #0b5ed7)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-on-surface), black 10%)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-on-surface, #0d6efd), black 10%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Breadcrumb root link.</div></div>
@@ -551,7 +551,7 @@ The following table lists the available variables for customization.
     <td>$kendo-breadcrumb-root-link-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-breadcrumb-link-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
+    <td><code>(inset 0 0 0 3px color-mix(in srgb, currentColor 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb root link.</div></div>
@@ -616,7 +616,7 @@ The following table lists the available variables for customization.
         line-height: $kendo-breadcrumb-lg-line-height
     )
 )</code></td>
-    <td><ul><li>sm: "link-padding-x":"var(--kendo-spacing-2, 0.5rem)","link-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","icon-link-padding-x":"var(--kendo-spacing-2, 0.5rem)","icon-link-padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286</li><li>md: "link-padding-x":"var(--kendo-spacing-2, 0.5rem)","link-padding-y":"var(--kendo-spacing-2, 0.5rem)","icon-link-padding-x":"var(--kendo-spacing-3, 0.75rem)","icon-link-padding-y":"var(--kendo-spacing-3, 0.75rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "link-padding-x":"var(--kendo-spacing-3, 0.75rem)","link-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","icon-link-padding-x":"var(--kendo-spacing-3\\.5, 0.875rem)","icon-link-padding-y":"var(--kendo-spacing-3\\.5, 0.875rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li></ul></td>
+    <td><ul><li>sm: "link-padding-x":"var(--kendo-spacing-2, 0.5rem)","link-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","icon-link-padding-x":"var(--kendo-spacing-2, 0.5rem)","icon-link-padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286</li><li>md: "link-padding-x":"var(--kendo-spacing-2\\.5, 0.625rem)","link-padding-y":"var(--kendo-spacing-2, 0.5rem)","icon-link-padding-x":"var(--kendo-spacing-3, 0.75rem)","icon-link-padding-y":"var(--kendo-spacing-3, 0.75rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "link-padding-x":"var(--kendo-spacing-3, 0.75rem)","link-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","icon-link-padding-x":"var(--kendo-spacing-3\\.5, 0.875rem)","icon-link-padding-y":"var(--kendo-spacing-3\\.5, 0.875rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Breadcrumb.</div></div>

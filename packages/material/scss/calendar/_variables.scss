@@ -49,9 +49,6 @@ $kendo-calendar-header-border-width: 0px !default;
 /// The background color of the header in the Calendar.
 /// @group calendar
 $kendo-calendar-header-bg: transparent !default;
-/// The text color of the header in the Calendar.
-/// @group calendar
-$kendo-calendar-header-text: k-color(primary-on-surface) !default;
 /// The border color of the header in the Calendar.
 /// @group calendar
 $kendo-calendar-header-border: k-color(border) !default;
@@ -144,7 +141,7 @@ $kendo-calendar-view-height: ($kendo-calendar-cell-size * 7) !default;
 
 /// The gap between the items in the Calendar view.
 /// @group calendar
-$kendo-calendar-view-gap: k-spacing(4) !default;
+$kendo-calendar-view-gap: k-spacing(6) !default;
 
 /// The background color of the weekend cells in the Calendar.
 /// @group calendar
@@ -158,7 +155,7 @@ $kendo-calendar-weekend-text: null !default;
 $kendo-calendar-today-style: color !default;
 /// The color of the current day in the Calendar.
 /// @group calendar
-$kendo-calendar-today-color: k-color(primary) !default;
+$kendo-calendar-today-color: k-color(primary-on-surface) !default;
 /// The font weight of the current day in the Calendar.
 /// @group calendar
 $kendo-calendar-today-font-weight: var( --kendo-font-weight-normal, normal ) !default;
@@ -233,7 +230,7 @@ $kendo-calendar-cell-selected-focus-shadow: null !default;
 
 /// The width of the Calendar navigation.
 /// @group calendar
-$kendo-calendar-navigation-width: k-spacing(19) !default;
+$kendo-calendar-navigation-width: 5em !default;
 /// The height of the items in the Calendar navigation.
 /// @group calendar
 $kendo-calendar-navigation-item-height: $kendo-calendar-cell-size !default;
@@ -379,7 +376,6 @@ $kendo-calendar-sizes: (
     $kendo-calendar-header-padding-y: $kendo-calendar-header-padding-y,
     $kendo-calendar-header-border-width: $kendo-calendar-header-border-width,
     $kendo-calendar-header-bg: $kendo-calendar-header-bg,
-    $kendo-calendar-header-text: $kendo-calendar-header-text,
     $kendo-calendar-header-border: $kendo-calendar-header-border,
     $kendo-calendar-header-gradient: $kendo-calendar-header-gradient,
     $kendo-calendar-header-shadow: $kendo-calendar-header-shadow,

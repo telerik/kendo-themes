@@ -560,8 +560,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-label-success-text</td>
     <td>String</td>
-    <td><code>k-color(success)</code></td>
-    <td><code>var(--kendo-color-success, #3ea44e)</code></td>
+    <td><code>k-color(success-on-surface)</code></td>
+    <td><code>var(--kendo-color-success-on-surface, #2a7035)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The success text color of the Stepper label.</div></div>
@@ -570,8 +570,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-label-error-text</td>
     <td>String</td>
-    <td><code>k-color(error)</code></td>
-    <td><code>var(--kendo-color-error, #d92800)</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>var(--kendo-color-error-on-surface, #941b00)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The error text color of the Stepper label.</div></div>

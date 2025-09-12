@@ -158,16 +158,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-calendar-header-text</td>
-    <td>String</td>
-    <td><code>k-color(primary-on-surface)</code></td>
-    <td><code>var(--kendo-color-primary-on-surface, #65558F)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the header in the Calendar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-calendar-header-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
@@ -430,8 +420,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-view-gap</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>k-spacing(6)</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the items in the Calendar view.</div></div>
@@ -470,8 +460,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-today-color</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #65558F)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the current day in the Calendar.</div></div>
@@ -689,9 +679,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-calendar-navigation-width</td>
-    <td>String</td>
-    <td><code>k-spacing(19)</code></td>
-    <td><code>var(--kendo-spacing-19, 4.75rem)</code></td>
+    <td>Number</td>
+    <td><code>5em</code></td>
+    <td><code>5em</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Calendar navigation.</div></div>

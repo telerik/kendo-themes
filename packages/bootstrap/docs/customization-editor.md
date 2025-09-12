@@ -110,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-highlighted-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle)</code></td>
-    <td><code>var(--kendo-color-primary-subtle, #cfe2ff)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The highlighted background color of the Editor.</div></div>

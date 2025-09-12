@@ -200,8 +200,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-hover-border</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover, #0b5ed7)</code></td>
+    <td><code>k-color(primary-emphasis)</code></td>
+    <td><code>var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Slider drag handle.</div></div>
@@ -250,8 +250,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-pressed-border</td>
     <td>String</td>
-    <td><code>k-color(primary-active)</code></td>
-    <td><code>var(--kendo-color-primary-active, #0a58ca)</code></td>
+    <td><code>k-color(primary-emphasis)</code></td>
+    <td><code>var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active Slider drag handle.</div></div>

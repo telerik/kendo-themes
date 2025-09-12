@@ -95,7 +95,7 @@ $kendo-taskboard-column-focus-bg: null !default;
 $kendo-taskboard-column-focus-text: null !default;
 /// The border color of the focused TaskBoard column.
 /// @group taskboard
-$kendo-taskboard-column-focus-border: k-color(border-alt) !default;
+$kendo-taskboard-column-focus-border: k-color(primary-emphasis) !default;
 
 /// The vertical padding of the TaskBoard column header.
 /// @group taskboard
@@ -140,7 +140,7 @@ $kendo-taskboard-pane-padding-x: null !default;
 $kendo-taskboard-pane-border-width: 1px !default;
 /// The background color of the TaskBoard pane.
 /// @group taskboard
-$kendo-taskboard-pane-bg: k-color(app-surface) !default;
+$kendo-taskboard-pane-bg: k-color(surface-alt) !default;
 /// The text color of the TaskBoard pane.
 /// @group taskboard
 $kendo-taskboard-pane-text: k-color(on-app-surface) !default;
@@ -210,27 +210,27 @@ $kendo-taskboard-card-hover-border: k-color(border-alt) !default;
 
 /// The border color of the focused TaskBoard Card.
 /// @group taskboard
-$kendo-taskboard-card-focus-border: k-color(border-alt) !default;
+$kendo-taskboard-card-focus-border: k-color(primary-emphasis) !default;
 /// The shadow of the focused TaskBoard Card.
 /// @group taskboard
 $kendo-taskboard-card-focus-shadow: $kendo-card-focus-shadow !default;
 
 /// The border of the selected TaskBoard Card.
 /// @group taskboard
-$kendo-taskboard-card-selected-border: k-color(primary-emphasis) !default;
+$kendo-taskboard-card-selected-border: k-color(primary-on-surface) !default;
 /// The shadow of the selected TaskBoard Card.
 /// @group taskboard
 $kendo-taskboard-card-selected-shadow: none !default;
 
 /// The text color of the TaskBoard Card header text.
 /// @group taskboard
-$kendo-taskboard-card-header-text: k-color(primary) !default;
+$kendo-taskboard-card-header-text: k-color(primary-on-surface) !default;
 /// The text color of the hovered TaskBoard Card header text.
 /// @group taskboard
-$kendo-taskboard-card-header-focus-text: k-color(primary-active) !default;
+$kendo-taskboard-card-header-focus-text: color-mix(in srgb, k-color(primary-on-surface) 90%, transparent 10%) !default;
 /// The text color of the focused TaskBoard Card header text.
 /// @group taskboard
-$kendo-taskboard-card-header-hover-text: k-color(primary-active) !default;
+$kendo-taskboard-card-header-hover-text: color-mix(in srgb, k-color(primary-on-surface) 90%, transparent 10%) !default;
 
 /// The border width of the TaskBoard Card placeholder.
 /// @group taskboard

@@ -80,8 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scrollview-bg</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView.</div></div>
@@ -215,16 +215,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the ScrollView navigation arrows.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-navigation-icon-shadow</td>
-    <td>List</td>
-    <td><code>rgba( black, .3 ) 0 0 15px</code></td>
-    <td><code>(rgba(0, 0, 0, 0.3) 0 0 15px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ScrollView navigation arrows.</div></div>
     </td>
 </tr>
 <tr>
