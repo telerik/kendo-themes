@@ -32,6 +32,7 @@
         background-color: transparent;
         display: flex;
         flex-flow: column nowrap;
+        position: relative;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
     }
