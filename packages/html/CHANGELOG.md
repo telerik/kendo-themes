@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.2-dev.1](https://github.com/telerik/kendo-themes/compare/v12.0.2-dev.0...v12.0.2-dev.1) (2025-09-15)
+
+
+### Bug Fixes
+
+* **html:** correct icon positioning in Grid/List view switcher ([8121e6f](https://github.com/telerik/kendo-themes/commit/8121e6f0c54997ebd916f6f3b7e54fc6b5cd0720))
+
+
+
+
+
 ## [12.0.2-dev.0](https://github.com/telerik/kendo-themes/compare/v12.0.1...v12.0.2-dev.0) (2025-09-08)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

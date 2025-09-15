@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.2-dev.1](https://github.com/telerik/kendo-themes/compare/v12.0.2-dev.0...v12.0.2-dev.1) (2025-09-15)
+
+
+### Bug Fixes
+
+* **fluent:** prevent unchecked checkboxes from showing checkmark on hover ([0cc53aa](https://github.com/telerik/kendo-themes/commit/0cc53aae0ab600c046b532ba8aa09d3c9127306a))
+* **html:** correct icon positioning in Grid/List view switcher ([8121e6f](https://github.com/telerik/kendo-themes/commit/8121e6f0c54997ebd916f6f3b7e54fc6b5cd0720))
+
+
+
+
+
 ## [12.0.2-dev.0](https://github.com/telerik/kendo-themes/compare/v12.0.1...v12.0.2-dev.0) (2025-09-08)
 
 **Note:** Version bump only for package kendo-themes.repo
