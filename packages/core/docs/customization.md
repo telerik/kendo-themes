@@ -3868,6 +3868,47 @@ k-escape-class-name($text) // => String
 }
 ```
 
+### `k-z-index`
+
+Return a z-index value based on layer and number of steps.
+
+
+#### Syntax
+
+```scss
+k-z-index($layer, $Number, $Balancing) // => Number
+```
+
+#### Parameters
+
+
+`<String> $layer`
+: The layer key from the $kendo-z-layers map.
+
+`<Number} $n [0] - {Optional> $Number`
+: of steps above the base layer.
+
+`<Number} $delta [0] - {Deprecated, Optional> $Balancing`
+: value.
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/z-index/index.import.scss#L28-L36
+@function k-z-index($layer, $Number, $Balancing) {
+    $layer-value: map.get($kendo-z-layers, $layer);
+
+    @if not $layer-value {
+        @error "Layer '#{$layer}' not found in $kendo-z-layers map.";
+    }
+
+    @return $layer-value + ($n * $kendo-z-step) + $delta;
+}
+```
+
 
 
 

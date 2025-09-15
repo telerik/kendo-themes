@@ -271,7 +271,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-appbar-zindex</td>
     <td>Number</td>
-    <td><code>1000</code></td>
+    <td><code>k-z-index("banner")</code></td>
     <td><code>1000</code></td>
 </tr>
 <tr>
