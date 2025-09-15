@@ -1,5 +1,6 @@
 @use "../../spacing/index.import.scss" as *;
 @use "./variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-map--layout-base() {
 
@@ -52,7 +53,7 @@
             padding-inline: $kendo-map-attribution-padding-x;
             border-width: 0;
             font-size: $kendo-map-attribution-font-size;
-            z-index: 1000;
+            z-index: k-z-index("floating");
         }
 
 

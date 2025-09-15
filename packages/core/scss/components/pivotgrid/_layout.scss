@@ -2,6 +2,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-pivotgrid--layout-base() {
 
@@ -180,7 +181,7 @@
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        z-index: 2;
+        z-index: k-z-index("base", 2);
     }
 
     // Configurator Button
@@ -203,7 +204,7 @@
     .k-pivotgrid-configurator-overlay {
         position: absolute;
         overflow: hidden;
-        z-index: 2;
+        z-index: k-z-index("base", 2);
     }
 
     // Panel Content

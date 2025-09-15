@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.0.2-dev.1...v12.1.0-dev.0) (2025-09-15)
+
+
+### Bug Fixes
+
+* streamline components z-indexes ([2db7ec4](https://github.com/telerik/kendo-themes/commit/2db7ec4143ea879dc55840879b21a0bc9ad5ee9d))
+
+
+### Features
+
+* implement z-index system ([09302de](https://github.com/telerik/kendo-themes/commit/09302de53bfda3b18c6791ef8c3b1ec3af2251be))
+
+
+
+
+
 ## [12.0.2-dev.1](https://github.com/telerik/kendo-themes/compare/v12.0.2-dev.0...v12.0.2-dev.1) (2025-09-15)
 
 **Note:** Version bump only for package @progress/kendo-theme-classic

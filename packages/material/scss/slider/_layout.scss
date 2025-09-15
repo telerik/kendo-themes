@@ -1,5 +1,6 @@
 @use "sass:math";
 @use "./_variables.scss" as *;
+@use "../core/z-index/index.import.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/slider/_layout.scss" as *;
 
 
@@ -16,7 +17,7 @@
 
                 content: "";
                 position: absolute;
-                z-index: 1;
+                z-index: k-z-index("base", 1);
                 height: $kendo-slider-tick-size;
                 width: $kendo-slider-tick-size;
                 top: 50%;
@@ -27,7 +28,7 @@
         }
 
         .k-draghandle {
-            z-index: 2;
+            z-index: k-z-index("base", 2);
         }
     }
 

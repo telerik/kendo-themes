@@ -7,6 +7,7 @@
 @use "../toolbar/_variables.scss" as *;
 @use "../window/_variables.scss" as *;
 @use "../input/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-editor--layout-base() {
 
@@ -74,7 +75,7 @@
         box-sizing: border-box;
         position: absolute;
         visibility: visible;
-        z-index: 100;
+        z-index: k-z-index("handle");
 
         &.northwest {
             top: 0;
@@ -263,7 +264,7 @@
 
         // Give selected cells a blue overlay
         .selectedCell::after { // stylelint-disable-line
-            z-index: 2;
+            z-index: k-z-index("selection");
             position: absolute;
             content: "";
             inset-inline-start: 0;
@@ -553,7 +554,7 @@
             height: 5px;
             border-width: 1px;
             border-style: solid;
-            z-index: 100;
+            z-index: k-z-index("handle");
 
             .k-element-resize-handle {
                 width: 100%;
@@ -598,7 +599,7 @@
             height: 10px;
             width: 10px;
             cursor: col-resize;
-            z-index: 2;
+            z-index: k-z-index("handle");
 
             .k-column-resize-handle {
                 width: 100%;
@@ -617,7 +618,7 @@
 
         .k-row-resize-handle-wrapper {
             position: absolute;
-            z-index: 2;
+            z-index: k-z-index("handle");
             cursor: row-resize;
             width: 10px;
             height: 10px;

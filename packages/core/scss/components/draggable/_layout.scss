@@ -2,6 +2,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./_variables.scss" as *;
 @use "../../_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-draggable--layout-base() {
 
@@ -24,7 +25,7 @@
         opacity: $kendo-drag-hint-opacity;
         overflow: hidden;
         position: absolute;
-        z-index: 20000;
+        z-index: k-z-index("floating");
         cursor: move;
     }
     .k-drag-status,
@@ -41,7 +42,7 @@
         justify-content: space-between;
         align-items: center;
         position: absolute;
-        z-index: 1000;
+        z-index: k-z-index("floating");
         transform: translate(-50%, -50%);
     }
 
