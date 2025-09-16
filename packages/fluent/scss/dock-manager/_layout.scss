@@ -28,10 +28,6 @@
             padding-block-end: $kendo-dock-manager-tabbed-pane-padding-x;
         }
     }
-
-    .k-docking-preview {
-        z-index: 10;
-    }
 }
 
 @mixin  kendo-dock-indicator--layout() {

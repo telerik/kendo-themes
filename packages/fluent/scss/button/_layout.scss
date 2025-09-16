@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "sass:math";
 @use "../core/_index.scss" as *;
+@use "../core/z-index/index.import.scss" as *;
 @use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/button/_layout.scss" as *;
 
@@ -114,7 +115,7 @@
             inset-inline-end: calc(-1 * #{$kendo-button-border-width});
             inset-block-start: calc(-1 * #{$kendo-button-border-width});
             inset-block-end: calc(-1 * #{$kendo-button-border-width});
-            z-index: 0;
+            z-index: k-z-index("base");
             transition: opacity .2s ease-in-out;
         }
 

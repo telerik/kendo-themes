@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.0.2-dev.1...v12.1.0-dev.0) (2025-09-15)
+
+
+### Bug Fixes
+
+* **fluent:** set proper background color for tabbed column menu ([a84a409](https://github.com/telerik/kendo-themes/commit/a84a409482beb05c62d39ab6ee3f6e0cfbbd3c14))
+* streamline components z-indexes ([2db7ec4](https://github.com/telerik/kendo-themes/commit/2db7ec4143ea879dc55840879b21a0bc9ad5ee9d))
+
+
+### Features
+
+* implement z-index system ([09302de](https://github.com/telerik/kendo-themes/commit/09302de53bfda3b18c6791ef8c3b1ec3af2251be))
+
+
+
+
+
+## [12.0.2-dev.1](https://github.com/telerik/kendo-themes/compare/v12.0.2-dev.0...v12.0.2-dev.1) (2025-09-15)
+
+
+### Bug Fixes
+
+* **fluent:** prevent unchecked checkboxes from showing checkmark on hover ([0cc53aa](https://github.com/telerik/kendo-themes/commit/0cc53aae0ab600c046b532ba8aa09d3c9127306a))
+
+
+
+
+
 ## [12.0.2-dev.0](https://github.com/telerik/kendo-themes/compare/v12.0.1...v12.0.2-dev.0) (2025-09-08)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent

@@ -5,6 +5,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "../../typography/index.import.scss" as *;
 @use "../../border-radii/index.import.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 @use "../../mixins/index.import.scss" as *;
 @use "../../functions/index.import.scss" as *;
 @use "../../_variables.scss" as *;
@@ -59,7 +60,7 @@
 
     .k-sparkline-tooltip-wrapper,
     .k-chart-tooltip-wrapper {
-        z-index: 12000;
+        z-index: k-z-index("popup");
 
         .k-popup {
             @include border-radius( k-border-radius(md) );
@@ -136,7 +137,7 @@
         height: $kendo-chart-selection-handle-size;
         border-width: 1px;
         border-style: solid;
-        z-index: 1;
+        z-index: k-z-index("handle");
         position: absolute;
         box-sizing: content-box;
     }
@@ -245,7 +246,7 @@
         inset-block-start: 0;
         inset-inline-start: 0;
         opacity: 1;
-        z-index: 10001;
+        z-index: k-z-index("overlay");
 
         &-top {
             inset-block-start: var( --kendo-chart-computed-title-height, #{$kendo-chart-computed-title-height} );

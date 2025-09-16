@@ -1,5 +1,6 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "../core/z-index/index.import.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/drawer/_layout.scss" as *;
 
 @mixin kendo-drawer--layout() {
@@ -28,7 +29,7 @@
             inset-block-start: 50%;
             inset-inline-start: $kendo-drawer-item-ripple-spacing-x;
             transform: translateY(-50%);
-            z-index: 2;
+            z-index: k-z-index("base", 2);
             opacity: 0;
             transition: opacity .3s;
             pointer-events: none;

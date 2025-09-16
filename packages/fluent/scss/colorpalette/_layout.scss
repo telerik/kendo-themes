@@ -10,23 +10,6 @@
         opacity: .3;
     }
 
-    .k-colorpalette-tile {
-
-        &:hover,
-        &.k-hover {
-            position: relative;
-            z-index: 101;
-        }
-
-        &:focus,
-        &.k-focus,
-        &.k-selected,
-        &.k-selected:hover {
-            position: relative;
-            z-index: 100;
-        }
-    }
-
     @each $size, $size-props in $kendo-color-palette-sizes {
         $_tile-width: map.get( $size-props, width );
         $_tile-height: map.get( $size-props, height );

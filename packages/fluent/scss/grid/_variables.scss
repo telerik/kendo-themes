@@ -478,7 +478,7 @@ $kendo-grid-column-menu-tabbed-tabstrip-content-padding-y: var( --kendo-grid-col
 
 /// The background color of the Grid tabbed column menu.
 /// @group grid
-$kendo-grid-column-menu-tabbed-bg: var( --kendo-grid-column-menu-tabbed-bg, var(--kendo-base-bg, inherit) ) !default;
+$kendo-grid-column-menu-tabbed-bg: var( --kendo-grid-column-menu-tabbed-bg, k-color(surface) ) !default;
 
 /// The default width of the Grid drag cell.
 /// @group grid

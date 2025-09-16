@@ -1,5 +1,6 @@
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-color-preview--layout-base() {
 
@@ -60,7 +61,7 @@
         position: absolute;
         inset-block-start: 0;
         inset-inline-start: 0;
-        z-index: -1;
+        z-index: k-z-index("bottom");
         background: $kendo-color-preview-transparent-color-image;
         background-size: contain;
         background-position: 0 0;

@@ -42,7 +42,6 @@
             align-items: center;
             min-height: calc( #{$kendo-scheduler-line-height} * #{$kendo-scheduler-font-size} );
             position: relative;
-            z-index: 1;
         }
 
         // Resize handles

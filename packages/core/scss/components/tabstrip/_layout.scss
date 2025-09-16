@@ -3,6 +3,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "./_variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-tabstrip--layout-base() {
 
@@ -32,6 +33,7 @@
         background-color: transparent;
         display: flex;
         flex-flow: column nowrap;
+        position: relative;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
     }
@@ -208,7 +210,7 @@
             &::after {
                 content: '';
                 position: absolute;
-                z-index: 3;
+                z-index: k-z-index("base", 3);
             }
         }
 
@@ -412,7 +414,7 @@
                 border-style: solid;
                 display: none;
                 position: absolute;
-                z-index: 2;
+                z-index: k-z-index("base", 2);
                 inset-block-start: 0;
                 inset-inline-end: 0;
                 inset-block-end: 0;
@@ -424,7 +426,7 @@
             }
 
             .k-item > .k-link {
-                z-index: 1;
+                z-index: k-z-index("base", 1);
             }
         }
 
