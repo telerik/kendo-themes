@@ -35,7 +35,7 @@ $kendo-rating-label-line-height: var( --kendo-line-height-lg, normal ) !default;
 
 /// The text color of the Rating icon.
 /// @group rating
-$kendo-rating-icon-text: k-color(subtle) !default;
+$kendo-rating-icon-text: k-color(on-app-surface) !default;
 /// The text color of the selected Rating icon.
 /// @group rating
 $kendo-rating-icon-selected-text: k-color(primary) !default;
