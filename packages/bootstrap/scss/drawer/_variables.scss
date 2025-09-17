@@ -39,16 +39,16 @@ $kendo-drawer-content-padding-y: null !default;
 $kendo-drawer-scrollbar-width: 7px !default;
 /// The color of the Drawer scrollbar track.
 /// @group drawer
-$kendo-drawer-scrollbar-color: color-mix(in srgb, k-color(inverse) 70%, transparent) !default;
+$kendo-drawer-scrollbar-color: k-color(inverse-subtle) !default;
 /// The background color of the Drawer scrollbar thumb.
 /// @group drawer
-$kendo-drawer-scrollbar-bg: #dedede !default;
+$kendo-drawer-scrollbar-bg: color-mix(in srgb, k-color(inverse-subtle), k-color(on-inverse)) !default;
 /// The border radius of the Drawer scrollbar.
 /// @group drawer
 $kendo-drawer-scrollbar-radius: 20px !default;
 /// The hover color of the Drawer scrollbar track.
 /// @group drawer
-$kendo-drawer-scrollbar-hover-color: color-mix(in srgb, k-color(inverse) 100%, transparent) !default;
+$kendo-drawer-scrollbar-hover-color: $kendo-drawer-scrollbar-color !default;
 
 /// The horizontal padding of the Drawer items.
 /// @group drawer

@@ -45,7 +45,7 @@ $kendo-drawer-scrollbar-bg: var( --kendo-drawer-scrollbar-bg, k-color(base-subtl
 $kendo-drawer-scrollbar-radius: var( --kendo-drawer-scrollbar-radius, 20px ) !default;
 /// The hover color of the Drawer scrollbar.
 /// @group drawer
-$kendo-drawer-scrollbar-hover-color: var( --kendo-drawer-scrollbar-hover-color, color-mix(in srgb, k-color(on-app-surface) 60%, transparent) ) !default;
+$kendo-drawer-scrollbar-hover-color: var( --kendo-drawer-scrollbar-hover-color, $kendo-drawer-scrollbar-color ) !default;
 
 /// The horizontal padding of the Drawer items.
 /// @group drawer
