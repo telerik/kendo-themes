@@ -41,6 +41,14 @@
                 $kendo-pdf-viewer-page-border
             );
             @include box-shadow( $kendo-pdf-viewer-page-shadow );
+
+            .k-annotation-layer {
+                .k-link-annotation > a:hover {
+                    opacity: 0.2;
+                    background-color: $kendo-pdf-viewer-search-highlight-mark-bg;
+                    box-shadow: 0 2px 10px $kendo-pdf-viewer-search-highlight-mark-bg;
+                }
+            }
         }
 
         .k-blank-page > .k-icon {
