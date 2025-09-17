@@ -46,12 +46,17 @@ const EXCLUDED_PAGES_TEXT = [
     `${TESTS_PATH}/button-group/button-group.html`,
     // TreeMap colors do not ensure contrast
     `${TESTS_PATH}/treemap/treemap.html`,
-    // Loader with no panel does not cover contras requirements for its text
+    // Loader with no panel does not cover contrast requirements for its text
     `${TESTS_PATH}/loader/loader-container-overlay.html`,
+    // Loader with warning theme color does not cover contrast requirements for its text
+    `${TESTS_PATH}/loader/loader-container-colors.html`,
     // Editor iframe test page is not actionable
     `${TESTS_PATH}/editor/editor-iFrameContent.html`,
     // Scheduler adaptive month event template text is not visible
-    `${TESTS_PATH}/scheduler/scheduler-adaptive-month.html`
+    `${TESTS_PATH}/scheduler/scheduler-adaptive-month.html`,
+    // Scrollview test pages contain customizations that break contrast
+    `${TESTS_PATH}/scrollview/scrollview.html`,
+    `${TESTS_PATH}/scrollview/scrollview-rtl.html`,
 ];
 
 let count = {
