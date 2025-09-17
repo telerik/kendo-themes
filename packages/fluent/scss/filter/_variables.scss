@@ -28,7 +28,7 @@ $kendo-filter-text: var( --kendo-filter-text, #{k-color(on-app-surface)} ) !defa
 $kendo-filter-preview-field-text: var( --kendo-filter-preview-field-text, #{k-color(primary)} ) !default;
 /// The text color of the Filter preview operator.
 /// @group filter
-$kendo-filter-preview-operator-text: var( --kendo-filter-preview-operator-text, #{k-color(subtle)} ) !default;
+$kendo-filter-preview-operator-text: var( --kendo-filter-preview-operator-text, #{k-color(on-app-surface)} ) !default;
 
 /// The background color of the line that connects the Filter items.
 /// @group filter
