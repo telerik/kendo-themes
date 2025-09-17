@@ -281,7 +281,8 @@ const selfAndBackground = async(el, parent) => {
 
     // If background is semi-transparent, blend it with the parent background
     // to get the actual solid background color
-    if (background.indexOf('rgba') > -1 && background !== 'rgba(255, 255, 255, 1)') {
+    if ((background.indexOf('rgba') > -1 && background !== 'rgba(255, 255, 255, 1)') ||
+        (background.includes('color(srgb') && background.includes('/'))) {
         let parentParent = await (par || parent).findElement(By.xpath('..'));
         let parentBackground = await parentParent.getCssValue('backgroundColor');
 
@@ -296,11 +297,11 @@ const selfAndBackground = async(el, parent) => {
 
     // If element background is semi-transparent, blend it with the background
     // to get the actual solid element background color
-    if (self.indexOf('rgba') > -1 && self !== 'rgba(255, 255, 255, 1)') {
+    if ((self.indexOf('rgba') > -1 && self !== 'rgba(255, 255, 255, 1)') ||
+        (self.includes('color(srgb') && self.includes('/'))) {
         decomposed = getRGBFromRGBA(decomposeColor(self), decomposeColor(background));
         self = 'rgb(' + decomposed.r + ', ' + decomposed.g + ', ' + decomposed.b + ')';
     }
-
     // If element background is fully transparent, use the background color
     // of the parent element instead
     if (self === 'rgba(0, 0, 0, 0)') {
