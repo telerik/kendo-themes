@@ -93,10 +93,10 @@ $kendo-gantt-milestone-selected-border: k-color(border) !default;
 
 /// The background color of the Gantt summary.
 /// @group gantt
-$kendo-gantt-summary-bg: k-color(subtle) !default;
+$kendo-gantt-summary-bg: k-color(inverse-subtle) !default;
 /// The background color of the Gantt summary progress.
 /// @group gantt
-$kendo-gantt-summary-progress-bg: k-color(on-base) !default;
+$kendo-gantt-summary-progress-bg: k-color(inverse) !default;
 /// The background color of the selected Gantt summary.
 /// @group gantt
 $kendo-gantt-summary-selected-bg: k-color(primary-subtle-active) !default;
@@ -115,10 +115,10 @@ $kendo-gantt-task-padding-x: k-spacing(2) !default;
 $kendo-gantt-task-padding-y: k-spacing(1) !default;
 /// The background color of the Gantt task.
 /// @group gantt
-$kendo-gantt-task-bg: k-color(subtle) !default;
+$kendo-gantt-task-bg: k-color(inverse-subtle) !default;
 /// The text color of the Gantt task.
 /// @group gantt
-$kendo-gantt-task-text: k-color(base) !default;
+$kendo-gantt-task-text: k-color(on-inverse) !default;
 /// The border color of the Gantt task.
 /// @group gantt
 $kendo-gantt-task-border: null !default;
