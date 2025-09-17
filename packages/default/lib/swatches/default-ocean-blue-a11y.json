@@ -726,6 +726,16 @@
                     "name": "The color of the Grid stack layout column header",
                     "type": "color",
                     "value": "#424242"
+                },
+                "kendo-breadcrumb-link-focus-shadow": {
+                    "name": "Breadcrumb link focus shadow",
+                    "type": "box-shadow",
+                    "value": "inset 0 0 0 2px #424242"
+                },
+                "kendo-breadcrumb-root-link-focus-shadow": {
+                    "name": "Breadcrumb root link focus shadow",
+                    "type": "box-shadow",
+                    "value": "inset 0 0 0 2px #424242"
                 }
             }
         }
