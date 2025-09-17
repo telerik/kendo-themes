@@ -100,7 +100,6 @@
                 }
             }
 
-
             .k-text-layer {
                 position: absolute;
                 inset-block-start: 0;
@@ -148,9 +147,38 @@
                 transform-origin: 0 0;
                 pointer-events: none;
 
-                section {
+                * {
+                    box-sizing: border-box;
+                }
+
+                .k-link-annotation > a,
+                .k-button-widget-annotation.k-push-button-widget-annotation > a {
+                    position: absolute;
+                    inset-block-start: 0;
+                    inset-inline-start: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                section[class$="annotation" i] {
                     position: absolute;
                     pointer-events: auto;
+
+                    input, select {
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    .k-text-widget-annotation > input[type="text"] {
+                        border: none;
+                        text-indent: 0.25em;
+                    }
+
+                    .k-checkbox-widget-annotation > input[type="checkbox"],
+                    .k-radio-button-widget-annotation > input[type="radio"] {
+                        margin-inline-start: 0;
+                        margin-block-start: 0;
+                    }
                 }
 
                 .k-annotation-text-content {
@@ -161,14 +189,6 @@
                     color: transparent;
                     user-select: none;
                     pointer-events: none;
-                }
-
-                .k-link-annotation > a {
-                    position: absolute;
-                    inset-block-start: 0;
-                    inset-inline-start: 0;
-                    width: 100%;
-                    height: 100%;
                 }
 
                 .k-text-widget-annotation .k-annotation-content {
