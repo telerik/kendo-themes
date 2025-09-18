@@ -52,6 +52,6 @@ Popup.options = options;
 Popup.className = POPUP_CLASSNAME;
 Popup.defaultOptions = defaultOptions;
 Popup.moduleName = "popup";
-Popup.folderName = "popup";
+Popup.folderName = Popup.moduleName;
 
 export default Popup;

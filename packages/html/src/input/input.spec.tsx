@@ -68,6 +68,6 @@ Input.options = options;
 Input.className = INPUT_CLASSNAME;
 Input.defaultOptions = defaultOptions;
 Input.moduleName = "input";
-Input.folderName = "input";
+Input.folderName = Input.moduleName;
 
 export default Input;

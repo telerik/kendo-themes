@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { Gantt } from './gantt.spec';
 const className = `k-gantt-content`;
 
 export const GanttContent: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
@@ -17,5 +18,5 @@ export const GanttContent: KendoComponent<React.HTMLAttributes<HTMLDivElement>> 
 );
 
 GanttContent.className = className;
-GanttContent.moduleName = "gantt";
-GanttContent.folderName = "gantt";
+GanttContent.moduleName = Gantt.moduleName;
+GanttContent.folderName = Gantt.folderName;

@@ -21,6 +21,6 @@ TypographyBody.states = states;
 TypographyBody.options = options;
 TypographyBody.className = TYPOGRAPHY_BODY_CLASSNAME;
 TypographyBody.moduleName = "typography";
-TypographyBody.folderName = "typography";
+TypographyBody.folderName = TypographyBody.moduleName;
 
 export default TypographyBody;

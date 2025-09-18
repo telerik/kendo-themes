@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { Gantt } from './gantt.spec';
 export const GANTTTASKWDOT_CLASSNAME = 'k-task-dot';
 
 const states = [];
@@ -44,7 +45,7 @@ GanttTaskDot.states = states;
 GanttTaskDot.options = options;
 GanttTaskDot.className = GANTTTASKWDOT_CLASSNAME;
 GanttTaskDot.defaultOptions = defaultOptions;
-GanttTaskDot.moduleName = "gantt";
-GanttTaskDot.folderName = "gantt";
+GanttTaskDot.moduleName = Gantt.moduleName;
+GanttTaskDot.folderName = Gantt.folderName;
 
 export default GanttTaskDot;

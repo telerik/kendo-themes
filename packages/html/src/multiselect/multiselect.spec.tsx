@@ -200,6 +200,6 @@ MultiSelect.options = options;
 MultiSelect.className = MULTISELECT_CLASSNAME;
 MultiSelect.defaultOptions = defaultOptions;
 MultiSelect.moduleName = "multiselect";
-MultiSelect.folderName = "multiselect";
+MultiSelect.folderName = MultiSelect.moduleName;
 
 export default MultiSelect;

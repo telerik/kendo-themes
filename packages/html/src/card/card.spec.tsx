@@ -84,6 +84,6 @@ Card.options = options;
 Card.className = CARD_CLASSNAME;
 Card.defaultOptions = defaultOptions;
 Card.moduleName = "card";
-Card.folderName = "card";
+Card.folderName = Card.moduleName;
 
 export default Card;

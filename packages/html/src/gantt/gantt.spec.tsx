@@ -44,6 +44,6 @@ Gantt.options = options;
 Gantt.className = GANTT_CLASSNAME;
 Gantt.defaultOptions = defaultOptions;
 Gantt.moduleName = "gantt";
-Gantt.folderName = "gantt";
+Gantt.folderName = Gantt.moduleName;
 
 export default Gantt;

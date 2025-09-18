@@ -61,7 +61,7 @@ TableHeader.states = states;
 TableHeader.options = options;
 TableHeader.className = TABLE_HEADER_CLASSNAME;
 TableHeader.defaultOptions = defaultOptions;
-TableHeader.moduleName = "table";
-TableHeader.folderName = "table";
+TableHeader.moduleName = Table.moduleName;
+TableHeader.folderName = Table.folderName;
 
 export default TableHeader;

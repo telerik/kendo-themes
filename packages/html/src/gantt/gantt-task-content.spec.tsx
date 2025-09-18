@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { Icon } from '../icon';
 
 import { KendoComponent } from '../_types/component';
+import { Gantt } from './gantt.spec';
 export const GANTTTASKCONTENT_CLASSNAME = 'k-task-content';
 
 const states = [];
@@ -41,7 +42,7 @@ GanttTaskContent.states = states;
 GanttTaskContent.options = options;
 GanttTaskContent.className = GANTTTASKCONTENT_CLASSNAME;
 GanttTaskContent.defaultOptions = defaultOptions;
-GanttTaskContent.moduleName = "gantt";
-GanttTaskContent.folderName = "gantt";
+GanttTaskContent.moduleName = Gantt.moduleName;
+GanttTaskContent.folderName = Gantt.folderName;
 
 export default GanttTaskContent;

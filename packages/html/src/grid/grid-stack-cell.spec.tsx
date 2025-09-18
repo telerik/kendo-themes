@@ -1,6 +1,7 @@
 import { classNames, States, stateClassNames } from "../misc";
 
 import { KendoComponent } from '../_types/component';
+import { Grid } from './grid.spec';
 const GRIDSTACKCELL_CLASSNAME = `k-grid-stack-cell`;
 
 const states = [
@@ -61,7 +62,7 @@ export const GridStackCell: KendoComponent<KendoGridStackCellProps & KendoGridSt
 
 GridStackCell.states = states;
 GridStackCell.className = GRIDSTACKCELL_CLASSNAME;
-GridStackCell.moduleName = "grid";
-GridStackCell.folderName = "grid";
+GridStackCell.moduleName = Grid.moduleName;
+GridStackCell.folderName = Grid.folderName;
 
 export default GridStackCell;

@@ -1,5 +1,6 @@
 import * as React from "react";
 import { classNames } from "../misc";
+import Window from "./window.spec";
 import { KendoComponent } from "../_types/component";
 
 const WINDOW_CONTENT_CLASSNAME = "k-window-content";
@@ -30,7 +31,7 @@ WindowContent.states = states;
 WindowContent.options = options;
 WindowContent.className = WINDOW_CONTENT_CLASSNAME;
 WindowContent.defaultOptions = defaultOptions;
-WindowContent.moduleName = "window";
-WindowContent.folderName = "window";
+WindowContent.moduleName = Window.moduleName;
+WindowContent.folderName = Window.folderName;
 
 export default WindowContent;

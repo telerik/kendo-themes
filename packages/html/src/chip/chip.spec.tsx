@@ -121,6 +121,6 @@ Chip.options = options;
 Chip.className = CHIP_CLASSNAME;
 Chip.defaultOptions = defaultOptions;
 Chip.moduleName = "chip";
-Chip.folderName = "chip";
+Chip.folderName = Chip.moduleName;
 
 export default Chip;

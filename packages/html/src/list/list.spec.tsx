@@ -123,6 +123,6 @@ List.options = options;
 List.className = LIST_CLASSNAME;
 List.defaultOptions = defaultOptions;
 List.moduleName = "list";
-List.folderName = "list";
+List.folderName = List.moduleName;
 
 export default List;

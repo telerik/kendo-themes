@@ -21,6 +21,6 @@ TypographyPre.states = states;
 TypographyPre.options = options;
 TypographyPre.className = TYPOGRAPHY_PRE_CLASSNAME;
 TypographyPre.moduleName = "typography";
-TypographyPre.folderName = "typography";
+TypographyPre.folderName = TypographyPre.moduleName;
 
 export default TypographyPre;

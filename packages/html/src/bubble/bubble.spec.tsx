@@ -79,6 +79,6 @@ Bubble.states = states;
 Bubble.className = BUBBLE_CLASSNAME;
 Bubble.defaultOptions = defaultOptions;
 Bubble.moduleName = "bubble";
-Bubble.folderName = "bubble";
+Bubble.folderName = Bubble.moduleName;
 
 export default Bubble;

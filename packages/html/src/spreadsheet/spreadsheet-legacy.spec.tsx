@@ -41,6 +41,6 @@ SpreadsheetLegacy.options = options;
 SpreadsheetLegacy.className = SPREADSHEET_LEGACY_CLASSNAME;
 SpreadsheetLegacy.defaultOptions = defaultOptions;
 SpreadsheetLegacy.moduleName = "spreadsheet";
-SpreadsheetLegacy.folderName = "spreadsheet";
+SpreadsheetLegacy.folderName = SpreadsheetLegacy.moduleName;
 
 export default SpreadsheetLegacy;

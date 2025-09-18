@@ -34,6 +34,6 @@ Spreadsheet.options = options;
 Spreadsheet.className = SPREADSHEET_CLASSNAME;
 Spreadsheet.defaultOptions = defaultOptions;
 Spreadsheet.moduleName = "spreadsheet";
-Spreadsheet.folderName = "spreadsheet";
+Spreadsheet.folderName = Spreadsheet.moduleName;
 
 export default Spreadsheet;

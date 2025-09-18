@@ -39,6 +39,6 @@ SearchBar.options = options;
 SearchBar.className = SEARCHBAR_CLASSNAME;
 SearchBar.defaultOptions = defaultOptions;
 SearchBar.moduleName = "input";
-SearchBar.folderName = "input";
+SearchBar.folderName = SearchBar.moduleName;
 
 export default SearchBar;

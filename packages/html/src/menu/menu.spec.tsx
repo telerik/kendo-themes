@@ -103,6 +103,6 @@ Menu.options = options;
 Menu.className = MENU_CLASSNAME;
 Menu.defaultOptions = defaultOptions;
 Menu.moduleName = "menu";
-Menu.folderName = "menu";
+Menu.folderName = Menu.moduleName;
 
 export default Menu;

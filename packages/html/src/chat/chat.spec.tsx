@@ -100,6 +100,6 @@ Chat.options = options;
 Chat.className = CHAT_CLASSNAME;
 Chat.defaultOptions = defaultOptions;
 Chat.moduleName = "chat";
-Chat.folderName = "chat";
+Chat.folderName = Chat.moduleName;
 
 export default Chat;

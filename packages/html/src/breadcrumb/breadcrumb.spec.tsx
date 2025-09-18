@@ -61,6 +61,6 @@ Breadcrumb.options = options;
 Breadcrumb.className = BREADCRUMB_CLASSNAME;
 Breadcrumb.defaultOptions = defaultOptions;
 Breadcrumb.moduleName = "breadcrumb";
-Breadcrumb.folderName = "breadcrumb";
+Breadcrumb.folderName = Breadcrumb.moduleName;
 
 export default Breadcrumb;

@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { ColumnMenu } from './column-menu.spec';
 export const FILTERMENU_CLASSNAME = `k-filter-menu`;
 
 const states = [];
@@ -35,7 +36,7 @@ FilterMenu.states = states;
 FilterMenu.options = options;
 FilterMenu.className = FILTERMENU_CLASSNAME;
 FilterMenu.defaultOptions = defaultOptions;
-FilterMenu.moduleName = "column-menu";
-FilterMenu.folderName = "column-menu";
+FilterMenu.moduleName = ColumnMenu.moduleName;
+FilterMenu.folderName = ColumnMenu.folderName;
 
 export default FilterMenu;

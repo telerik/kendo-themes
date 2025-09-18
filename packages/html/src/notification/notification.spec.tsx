@@ -89,6 +89,6 @@ Notification.options = options;
 Notification.className = NOTIFICATION_CLASSNAME;
 Notification.defaultOptions = defaultOptions;
 Notification.moduleName = "notification";
-Notification.folderName = "notification";
+Notification.folderName = Notification.moduleName;
 
 export default Notification;

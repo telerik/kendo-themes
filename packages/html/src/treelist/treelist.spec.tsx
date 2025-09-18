@@ -30,6 +30,6 @@ TreeList.options = options;
 TreeList.className = TREELIST_CLASSNAME;
 TreeList.defaultOptions = defaultOptions;
 TreeList.moduleName = "treelist";
-TreeList.folderName = "treelist";
+TreeList.folderName = TreeList.moduleName;
 
 export default TreeList;

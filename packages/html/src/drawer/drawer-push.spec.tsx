@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { Drawer } from './drawer.spec';
 
 export const DRAWER_PUSH_CLASSNAME = `k-drawer-push`;
 
@@ -37,7 +38,7 @@ DrawerPush.states = states;
 DrawerPush.options = options;
 DrawerPush.className = DRAWER_PUSH_CLASSNAME;
 DrawerPush.defaultOptions = defaultOptions;
-DrawerPush.moduleName = "drawer";
-DrawerPush.folderName = "drawer";
+DrawerPush.moduleName = Drawer.moduleName;
+DrawerPush.folderName = Drawer.folderName;
 
 export default DrawerPush;

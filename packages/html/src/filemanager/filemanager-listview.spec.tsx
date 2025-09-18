@@ -2,6 +2,7 @@ import { KendoListViewProps, ListView } from '../listview';
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { FileManager } from './filemanager.spec';
 export const FILEMANAGERLISTVIEW_CLASSNAME = `k-filemanager-listview`;
 
 const states = [];
@@ -41,7 +42,7 @@ FileManagerListView.states = states;
 FileManagerListView.options = options;
 FileManagerListView.className = FILEMANAGERLISTVIEW_CLASSNAME;
 FileManagerListView.defaultOptions = defaultOptions;
-FileManagerListView.moduleName = "file-manager";
-FileManagerListView.folderName = "filemanager";
+FileManagerListView.moduleName = FileManager.moduleName;
+FileManagerListView.folderName = FileManager.folderName;
 
 export default FileManagerListView;

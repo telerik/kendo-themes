@@ -1,6 +1,7 @@
 import { classNames } from "../misc";
 
 import { KendoComponent } from '../_types/component';
+import { Grid } from './grid.spec';
 const GRIDSTACKROW_CLASSNAME = `k-grid-stack-row`;
 
 export type KendoGridStackRowProps = {
@@ -35,7 +36,7 @@ export const GridStackRow: KendoComponent<KendoGridStackRowProps & React.HTMLAtt
 };
 
 GridStackRow.className = GRIDSTACKROW_CLASSNAME;
-GridStackRow.moduleName = "grid";
-GridStackRow.folderName = "grid";
+GridStackRow.moduleName = Grid.moduleName;
+GridStackRow.folderName = Grid.folderName;
 
 export default GridStackRow;

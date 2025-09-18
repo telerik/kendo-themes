@@ -2,6 +2,7 @@ import { KendoTreeviewProps, Treeview } from '../treeview';
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { FileManager } from './filemanager.spec';
 export const FILEMANAGERTREEVIEW_CLASSNAME = `k-filemanager-treeview`;
 
 const states = [];
@@ -36,7 +37,7 @@ FileManagerTreeview.states = states;
 FileManagerTreeview.options = options;
 FileManagerTreeview.className = FILEMANAGERTREEVIEW_CLASSNAME;
 FileManagerTreeview.defaultOptions = defaultOptions;
-FileManagerTreeview.moduleName = "file-manager";
-FileManagerTreeview.folderName = "filemanager";
+FileManagerTreeview.moduleName = FileManager.moduleName;
+FileManagerTreeview.folderName = FileManager.folderName;
 
 export default FileManagerTreeview;

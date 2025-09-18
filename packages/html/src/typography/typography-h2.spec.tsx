@@ -21,6 +21,6 @@ TypographyH2.states = states;
 TypographyH2.options = options;
 TypographyH2.className = TYPOGRAPHY_H2_CLASSNAME;
 TypographyH2.moduleName = "typography";
-TypographyH2.folderName = "typography";
+TypographyH2.folderName = TypographyH2.moduleName;
 
 export default TypographyH2;

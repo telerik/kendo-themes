@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { Card } from './card.spec';
 
 export const CARDDECK_CLASSNAME = `k-card-deck`;
 
@@ -33,5 +34,5 @@ CardDeck.states = states;
 CardDeck.options = options;
 CardDeck.className = CARDDECK_CLASSNAME;
 CardDeck.defaultOptions = defaultOptions;
-CardDeck.moduleName = "card";
-CardDeck.folderName = "card";
+CardDeck.moduleName = Card.moduleName;
+CardDeck.folderName = Card.folderName;

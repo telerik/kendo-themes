@@ -120,6 +120,6 @@ MenuButton.options = options;
 MenuButton.className = MENUBUTTON_CLASSNAME;
 MenuButton.defaultOptions = defaultOptions;
 MenuButton.moduleName = "menu-button";
-MenuButton.folderName = "menu-button";
+MenuButton.folderName = MenuButton.moduleName;
 
 export default MenuButton;

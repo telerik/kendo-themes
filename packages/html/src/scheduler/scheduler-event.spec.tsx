@@ -2,6 +2,7 @@ import { classNames, States, stateClassNames } from '../misc';
 import { Icon } from '../icon';
 
 import { KendoComponent } from '../_types/component';
+import { Scheduler } from './scheduler.spec';
 const className = 'k-event';
 
 const states = [
@@ -102,7 +103,7 @@ SchedulerEvent.states = states;
 SchedulerEvent.options = options;
 SchedulerEvent.defaultOptions = defaultOptions;
 SchedulerEvent.className = className;
-SchedulerEvent.moduleName = "scheduler";
-SchedulerEvent.folderName = "scheduler";
+SchedulerEvent.moduleName = Scheduler.moduleName;
+SchedulerEvent.folderName = Scheduler.folderName;
 
 export default SchedulerEvent;

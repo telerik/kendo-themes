@@ -1,6 +1,7 @@
 import { classNames, stateClassNames } from "../misc";
 
 import { KendoComponent } from '../_types/component';
+import { Card } from './card.spec';
 
 export const CARD_LIST_CLASSNAME = `k-card-list`;
 
@@ -30,7 +31,7 @@ CardList.states = states;
 CardList.options = options;
 CardList.className = CARD_LIST_CLASSNAME;
 CardList.defaultOptions = defaultOptions;
-CardList.moduleName = "card";
-CardList.folderName = "card";
+CardList.moduleName = Card.moduleName;
+CardList.folderName = Card.folderName;
 
 export default CardList;

@@ -139,6 +139,6 @@ Textbox.options = options;
 Textbox.className = TEXTBOX_CLASSNAME;
 Textbox.defaultOptions = defaultOptions;
 Textbox.moduleName = "textbox";
-Textbox.folderName = "textbox";
+Textbox.folderName = Textbox.moduleName;
 
 export default Textbox;

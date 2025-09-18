@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import Calendar from './calendar.spec';
 
 export const CALENDAR_CONTAINER_CLASSNAME = `k-calendar-container`;
 
@@ -37,7 +38,7 @@ CalendarContainer.states = states;
 CalendarContainer.options = options;
 CalendarContainer.className = CALENDAR_CONTAINER_CLASSNAME;
 CalendarContainer.defaultOptions = defaultOptions;
-CalendarContainer.moduleName = "calendar";
-CalendarContainer.folderName = "calendar";
+CalendarContainer.moduleName = Calendar.moduleName;
+CalendarContainer.folderName = Calendar.folderName;
 
 export default CalendarContainer;

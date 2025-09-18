@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { Table, KendoTableOptions } from '../table';
 
 import { KendoComponent } from '../_types/component';
+import { Gantt } from './gantt.spec';
 export const GANTTTASKSTABLE_CLASSNAME = `k-gantt-tasks`;
 
 export const GanttTasksTable: KendoComponent<KendoTableOptions & React.HTMLAttributes<HTMLTableElement>> = (
@@ -21,5 +22,5 @@ export const GanttTasksTable: KendoComponent<KendoTableOptions & React.HTMLAttri
 );
 
 GanttTasksTable.className = GANTTTASKSTABLE_CLASSNAME;
-GanttTasksTable.moduleName = "gantt";
-GanttTasksTable.folderName = "gantt";
+GanttTasksTable.moduleName = Gantt.moduleName;
+GanttTasksTable.folderName = Gantt.folderName;

@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { Scheduler } from './scheduler.spec';
 const className = 'k-scheduler-group';
 
 const states = [];
@@ -44,7 +45,7 @@ SchedulerGroup.states = states;
 SchedulerGroup.options = options;
 SchedulerGroup.defaultOptions = defaultOptions;
 SchedulerGroup.className = className;
-SchedulerGroup.moduleName = "scheduler";
-SchedulerGroup.folderName = "scheduler";
+SchedulerGroup.moduleName = Scheduler.moduleName;
+SchedulerGroup.folderName = Scheduler.folderName;
 
 export default SchedulerGroup;

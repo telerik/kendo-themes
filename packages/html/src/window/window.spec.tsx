@@ -103,6 +103,6 @@ Window.options = options;
 Window.className = WINDOW_CLASSNAME;
 Window.defaultOptions = defaultOptions;
 Window.moduleName = "window";
-Window.folderName = "window";
+Window.folderName = Window.moduleName;
 
 export default Window;

@@ -3,6 +3,7 @@ import { classNames, stateClassNames, States } from '../misc';
 import { Card, CardBody, CardHeader } from '../card';
 
 import { KendoComponent } from '../_types/component';
+import TileLayout from './tilelayout.spec';
 export const TILELAYOUTITEM_CLASSNAME = `k-tilelayout-item`;
 
 const states = [
@@ -66,7 +67,7 @@ TileLayoutItem.states = states;
 TileLayoutItem.options = options;
 TileLayoutItem.className = TILELAYOUTITEM_CLASSNAME;
 TileLayoutItem.defaultOptions = defaultOptions;
-TileLayoutItem.moduleName = "tile-layout";
-TileLayoutItem.folderName = "tilelayout";
+TileLayoutItem.moduleName = TileLayout.moduleName;
+TileLayoutItem.folderName = TileLayout.folderName;
 
 export default TileLayoutItem;

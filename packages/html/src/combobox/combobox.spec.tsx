@@ -184,6 +184,6 @@ Combobox.options = options;
 Combobox.className = COMBOBOX_CLASSNAME;
 Combobox.defaultOptions = defaultOptions;
 Combobox.moduleName = "combobox";
-Combobox.folderName = "combobox";
+Combobox.folderName = Combobox.moduleName;
 
 export default Combobox;

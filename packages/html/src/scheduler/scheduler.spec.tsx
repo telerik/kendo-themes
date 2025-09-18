@@ -58,6 +58,6 @@ Scheduler.options = options;
 Scheduler.className = SCHEDULER_CLASSNAME;
 Scheduler.defaultOptions = defaultOptions;
 Scheduler.moduleName = "scheduler";
-Scheduler.folderName = "scheduler";
+Scheduler.folderName = Scheduler.moduleName;
 
 export default Scheduler;

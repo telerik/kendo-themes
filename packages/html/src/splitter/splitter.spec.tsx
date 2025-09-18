@@ -75,6 +75,6 @@ Splitter.options = options;
 Splitter.className = SPLITTER_CLASSNAME;
 Splitter.defaultOptions = defaultOptions;
 Splitter.moduleName = "splitter";
-Splitter.folderName = "splitter";
+Splitter.folderName = Splitter.moduleName;
 
 export default Splitter;

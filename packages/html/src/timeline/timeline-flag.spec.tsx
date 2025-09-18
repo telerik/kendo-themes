@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { Timeline } from './timeline.spec';
 export const TIMELINEFLAG_CLASSNAME = `k-timeline-flag`;
 
 export type KendoTimelineFlagOptions = {
@@ -30,7 +31,7 @@ export const TimelineFlag: KendoComponent<KendoTimelineFlagOptions & React.HTMLA
 };
 
 TimelineFlag.className = TIMELINEFLAG_CLASSNAME;
-TimelineFlag.moduleName = "timeline";
-TimelineFlag.folderName = "timeline";
+TimelineFlag.moduleName = Timeline.moduleName;
+TimelineFlag.folderName = Timeline.folderName;
 
 export default TimelineFlag;

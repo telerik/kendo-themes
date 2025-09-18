@@ -78,6 +78,6 @@ PivotGrid.options = options;
 PivotGrid.className = PIVOTGRID_CLASSNAME;
 PivotGrid.defaultOptions = defaultOptions;
 PivotGrid.moduleName = "pivotgrid";
-PivotGrid.folderName = "pivotgrid";
+PivotGrid.folderName = PivotGrid.moduleName;
 
 export default PivotGrid;

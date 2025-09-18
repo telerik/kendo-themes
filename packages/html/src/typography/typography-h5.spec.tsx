@@ -21,6 +21,6 @@ TypographyH5.states = states;
 TypographyH5.options = options;
 TypographyH5.className = TYPOGRAPHY_H5_CLASSNAME;
 TypographyH5.moduleName = "typography";
-TypographyH5.folderName = "typography";
+TypographyH5.folderName = TypographyH5.moduleName;
 
 export default TypographyH5;

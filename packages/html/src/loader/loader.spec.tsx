@@ -106,6 +106,6 @@ Loader.options = options;
 Loader.className = LOADER_CLASSNAME;
 Loader.defaultOptions = defaultOptions;
 Loader.moduleName = "loader";
-Loader.folderName = "loader";
+Loader.folderName = Loader.moduleName;
 
 export default Loader;

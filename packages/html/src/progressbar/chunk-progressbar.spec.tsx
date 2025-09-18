@@ -80,6 +80,6 @@ ChunkProgressBar.options = options;
 ChunkProgressBar.className = CHUNKPROGRESSBAR_CLASSNAME;
 ChunkProgressBar.defaultOptions = defaultOptions;
 ChunkProgressBar.moduleName = "progressbar";
-ChunkProgressBar.folderName = "progressbar";
+ChunkProgressBar.folderName = ChunkProgressBar.moduleName;
 
 export default ChunkProgressBar;

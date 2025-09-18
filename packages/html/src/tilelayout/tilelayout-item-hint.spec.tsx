@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { KendoComponent } from '../_types/component';
+import TileLayout from './tilelayout.spec';
 export const TILELAYOUTITEMHINT_CLASSNAME = `k-layout-item-hint`;
 
 const states = [];
@@ -27,7 +28,7 @@ TileLayoutItemHint.states = states;
 TileLayoutItemHint.options = options;
 TileLayoutItemHint.className = TILELAYOUTITEMHINT_CLASSNAME;
 TileLayoutItemHint.defaultOptions = defaultOptions;
-TileLayoutItemHint.moduleName = "tile-layout";
-TileLayoutItemHint.folderName = "tilelayout";
+TileLayoutItemHint.moduleName = TileLayout.moduleName;
+TileLayoutItemHint.folderName = TileLayout.folderName;
 
 export default TileLayoutItemHint;

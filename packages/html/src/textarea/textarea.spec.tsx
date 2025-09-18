@@ -157,6 +157,6 @@ Textarea.options = options;
 Textarea.className = TEXTAREA_CLASSNAME;
 Textarea.defaultOptions = defaultOptions;
 Textarea.moduleName = "textarea";
-Textarea.folderName = "textarea";
+Textarea.folderName = Textarea.moduleName;
 
 export default Textarea;

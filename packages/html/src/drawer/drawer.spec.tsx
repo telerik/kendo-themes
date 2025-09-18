@@ -75,6 +75,6 @@ Drawer.options = options;
 Drawer.className = DRAWER_CLASSNAME;
 Drawer.defaultOptions = defaultOptions;
 Drawer.moduleName = "drawer";
-Drawer.folderName = "drawer";
+Drawer.folderName = Drawer.moduleName;
 
 export default Drawer;

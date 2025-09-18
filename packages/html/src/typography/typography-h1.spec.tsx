@@ -21,6 +21,6 @@ TypographyH1.states = states;
 TypographyH1.options = options;
 TypographyH1.className = TYPOGRAPHY_H1_CLASSNAME;
 TypographyH1.moduleName = "typography";
-TypographyH1.folderName = "typography";
+TypographyH1.folderName = TypographyH1.moduleName;
 
 export default TypographyH1;
