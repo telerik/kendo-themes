@@ -15,6 +15,7 @@ import { ActionButtons } from '../action-buttons';
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 
 import { KendoComponent } from '../_types/component';
+import { TIMEPICKER_FOLDER_NAME, TIMEPICKER_MODULE_NAME } from './constants';
 export const TIMEPICKER_CLASSNAME = `k-timepicker`;
 
 const states = [
@@ -176,7 +177,7 @@ TimePicker.states = states;
 TimePicker.options = options;
 TimePicker.className = TIMEPICKER_CLASSNAME;
 TimePicker.defaultOptions = defaultOptions;
-TimePicker.moduleName = "time-picker";
-TimePicker.folderName = "timepicker";
+TimePicker.moduleName = TIMEPICKER_MODULE_NAME;
+TimePicker.folderName = TIMEPICKER_FOLDER_NAME;
 
 export default TimePicker;

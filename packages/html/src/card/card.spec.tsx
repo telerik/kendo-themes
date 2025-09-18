@@ -2,6 +2,7 @@ import { classNames, optionClassNames, stateClassNames, States, ThemeColor } fro
 import { CardCallout } from './card-callout';
 
 import { KendoComponent } from '../_types/component';
+import { CARD_FOLDER_NAME, CARD_MODULE_NAME } from './constants';
 export const CARD_CLASSNAME = `k-card`;
 
 const states = [
@@ -83,7 +84,7 @@ Card.states = states;
 Card.options = options;
 Card.className = CARD_CLASSNAME;
 Card.defaultOptions = defaultOptions;
-Card.moduleName = "card";
-Card.folderName = Card.moduleName;
+Card.moduleName = CARD_MODULE_NAME;
+Card.folderName = CARD_FOLDER_NAME;
 
 export default Card;

@@ -1,0 +1,2 @@
+export const SPLITTER_MODULE_NAME = 'splitter';
+export const SPLITTER_FOLDER_NAME = SPLITTER_MODULE_NAME;

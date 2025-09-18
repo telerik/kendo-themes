@@ -1,0 +1,2 @@
+export const BREADCRUMB_MODULE_NAME = 'breadcrumb';
+export const BREADCRUMB_FOLDER_NAME = BREADCRUMB_MODULE_NAME;

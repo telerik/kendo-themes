@@ -3,6 +3,7 @@ import { classNames } from '../misc';
 import MenuScrollableWrapper from './menu-scrollable-wrapper.spec';
 
 import { KendoComponent } from '../_types/component';
+import { MENU_FOLDER_NAME, MENU_MODULE_NAME } from './constants';
 export const MENU_CLASSNAME = `k-menu`;
 
 const states = [];
@@ -102,7 +103,7 @@ Menu.states = states;
 Menu.options = options;
 Menu.className = MENU_CLASSNAME;
 Menu.defaultOptions = defaultOptions;
-Menu.moduleName = "menu";
-Menu.folderName = Menu.moduleName;
+Menu.moduleName = MENU_MODULE_NAME;
+Menu.folderName = MENU_FOLDER_NAME;
 
 export default Menu;

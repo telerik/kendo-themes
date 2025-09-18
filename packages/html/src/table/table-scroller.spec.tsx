@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { KendoComponent } from '../_types/component';
-import { Table } from './table.spec';
+import { TABLE_FOLDER_NAME, TABLE_MODULE_NAME } from './constants';
 import { classNames } from '../misc';
 
 const TABLE_SCROLLER_CLASSNAME = 'k-table-scroller';
@@ -45,7 +45,7 @@ TableScroller.states = states;
 TableScroller.options = options;
 TableScroller.className = TABLE_SCROLLER_CLASSNAME;
 TableScroller.defaultOptions = defaultOptions;
-TableScroller.moduleName = Table.moduleName;
-TableScroller.folderName = Table.folderName;
+TableScroller.moduleName = TABLE_MODULE_NAME;
+TableScroller.folderName = TABLE_FOLDER_NAME;
 
 export default TableScroller;

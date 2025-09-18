@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { KendoComponent } from '../_types/component';
-import { Table } from './table.spec';
+import { TABLE_FOLDER_NAME, TABLE_MODULE_NAME } from './constants';
 import { classNames } from '../misc';
 
 const className = `k-table-th`;
@@ -43,5 +43,5 @@ export const TableTh: KendoComponent<KendoTableThProps &
 };
 
 TableTh.className = className;
-TableTh.moduleName = Table.moduleName;
-TableTh.folderName = Table.folderName;
+TableTh.moduleName = TABLE_MODULE_NAME;
+TableTh.folderName = TABLE_FOLDER_NAME;

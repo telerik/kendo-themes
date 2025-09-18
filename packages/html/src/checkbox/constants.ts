@@ -1,0 +1,2 @@
+export const CHECKBOX_MODULE_NAME = 'checkbox';
+export const CHECKBOX_FOLDER_NAME = CHECKBOX_MODULE_NAME;

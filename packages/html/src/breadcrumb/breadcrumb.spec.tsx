@@ -1,6 +1,7 @@
 import { classNames, stateClassNames, optionClassNames, States, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { BREADCRUMB_FOLDER_NAME, BREADCRUMB_MODULE_NAME } from './constants';
 export const BREADCRUMB_CLASSNAME = `k-breadcrumb`;
 
 const states = [
@@ -60,7 +61,7 @@ Breadcrumb.states = states;
 Breadcrumb.options = options;
 Breadcrumb.className = BREADCRUMB_CLASSNAME;
 Breadcrumb.defaultOptions = defaultOptions;
-Breadcrumb.moduleName = "breadcrumb";
-Breadcrumb.folderName = Breadcrumb.moduleName;
+Breadcrumb.moduleName = BREADCRUMB_MODULE_NAME;
+Breadcrumb.folderName = BREADCRUMB_FOLDER_NAME;
 
 export default Breadcrumb;

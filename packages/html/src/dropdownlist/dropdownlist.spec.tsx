@@ -13,6 +13,7 @@ import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action
 import { List, ListItem } from '../list';
 
 import { KendoComponent } from '../_types/component';
+import { DROPDOWNLIST_FOLDER_NAME, DROPDOWNLIST_MODULE_NAME } from './constants';
 export const DROPDOWNLIST_CLASSNAME = `k-dropdownlist`;
 
 const states = [
@@ -182,7 +183,7 @@ DropdownList.states = states;
 DropdownList.options = options;
 DropdownList.className = DROPDOWNLIST_CLASSNAME;
 DropdownList.defaultOptions = defaultOptions;
-DropdownList.moduleName = "dropdown-list";
-DropdownList.folderName = "dropdownlist";
+DropdownList.moduleName = DROPDOWNLIST_MODULE_NAME;
+DropdownList.folderName = DROPDOWNLIST_FOLDER_NAME;
 
 export default DropdownList;

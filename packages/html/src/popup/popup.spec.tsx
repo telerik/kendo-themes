@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { AnimationContainer } from '../animation-container';
 
 import { KendoComponent } from '../_types/component';
+import { POPUP_FOLDER_NAME, POPUP_MODULE_NAME } from './constants';
 export const POPUP_CLASSNAME = `k-popup`;
 
 const states = [];
@@ -51,7 +52,7 @@ Popup.states = states;
 Popup.options = options;
 Popup.className = POPUP_CLASSNAME;
 Popup.defaultOptions = defaultOptions;
-Popup.moduleName = "popup";
-Popup.folderName = Popup.moduleName;
+Popup.moduleName = POPUP_MODULE_NAME;
+Popup.folderName = POPUP_FOLDER_NAME;
 
 export default Popup;

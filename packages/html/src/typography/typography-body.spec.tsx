@@ -1,5 +1,6 @@
 import { Typography } from './typography';
 import { KendoComponent } from '../_types/component';
+import { TYPOGRAPHY_FOLDER_NAME, TYPOGRAPHY_MODULE_NAME } from './constants';
 import { classNames } from '../misc';
 
 const TYPOGRAPHY_BODY_CLASSNAME = 'k-body';
@@ -20,7 +21,7 @@ export const TypographyBody: KendoComponent<KendoTypographyBodyProps> = (
 TypographyBody.states = states;
 TypographyBody.options = options;
 TypographyBody.className = TYPOGRAPHY_BODY_CLASSNAME;
-TypographyBody.moduleName = "typography";
-TypographyBody.folderName = TypographyBody.moduleName;
+TypographyBody.moduleName = TYPOGRAPHY_MODULE_NAME;
+TypographyBody.folderName = TYPOGRAPHY_FOLDER_NAME;
 
 export default TypographyBody;

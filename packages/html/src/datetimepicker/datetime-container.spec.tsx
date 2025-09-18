@@ -1,7 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import DateTimePicker from './datetimepicker.spec';
+import { DATETIMEPICKER_FOLDER_NAME, DATETIMEPICKER_MODULE_NAME } from './constants';
 
 export const DATETIME_CONTAINER_CLASSNAME = `k-datetime-container`;
 
@@ -38,7 +38,7 @@ DateTimeContainer.states = states;
 DateTimeContainer.options = options;
 DateTimeContainer.className = DATETIME_CONTAINER_CLASSNAME;
 DateTimeContainer.defaultOptions = defaultOptions;
-DateTimeContainer.moduleName = DateTimePicker.moduleName;
-DateTimeContainer.folderName = DateTimePicker.folderName;
+DateTimeContainer.moduleName = DATETIMEPICKER_MODULE_NAME;
+DateTimeContainer.folderName = DATETIMEPICKER_FOLDER_NAME;
 
 export default DateTimeContainer;

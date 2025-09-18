@@ -1,7 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import Dialog from './dialog.spec';
+import { DIALOG_FOLDER_NAME, DIALOG_MODULE_NAME } from './constants';
 
 export const DIALOG_WRAPPER_CLASSNAME = `k-dialog-wrapper`;
 
@@ -38,7 +38,7 @@ DialogContainer.states = states;
 DialogContainer.options = options;
 DialogContainer.className = DIALOG_WRAPPER_CLASSNAME;
 DialogContainer.defaultOptions = defaultOptions;
-DialogContainer.moduleName = Dialog.moduleName;
-DialogContainer.folderName = Dialog.folderName;
+DialogContainer.moduleName = DIALOG_MODULE_NAME;
+DialogContainer.folderName = DIALOG_FOLDER_NAME;
 
 export default DialogContainer;

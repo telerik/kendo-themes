@@ -9,6 +9,7 @@ import {
 import { SpinButton } from '../spinbutton';
 
 import { KendoComponent } from '../_types/component';
+import { DATEINPUT_FOLDER_NAME, DATEINPUT_MODULE_NAME } from './constants';
 export const DATEINPUT_CLASSNAME = `k-dateinput`;
 
 const states = [
@@ -119,7 +120,7 @@ DateInput.states = states;
 DateInput.options = options;
 DateInput.className = DATEINPUT_CLASSNAME;
 DateInput.defaultOptions = defaultOptions;
-DateInput.moduleName = "date-input";
-DateInput.folderName = "dateinput";
+DateInput.moduleName = DATEINPUT_MODULE_NAME;
+DateInput.folderName = DATEINPUT_FOLDER_NAME;
 
 export default DateInput;

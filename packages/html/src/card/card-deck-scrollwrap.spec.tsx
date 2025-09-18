@@ -1,7 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import { Card } from './card.spec';
+import { CARD_FOLDER_NAME, CARD_MODULE_NAME } from './constants';
 
 export const CARDDECK_SCROLLWRAP_CLASSNAME = `k-card-deck-scrollwrap`;
 
@@ -38,7 +38,7 @@ CardDeckScrollwrap.states = states;
 CardDeckScrollwrap.options = options;
 CardDeckScrollwrap.className = CARDDECK_SCROLLWRAP_CLASSNAME;
 CardDeckScrollwrap.defaultOptions = defaultOptions;
-CardDeckScrollwrap.moduleName = Card.moduleName;
-CardDeckScrollwrap.folderName = Card.folderName;
+CardDeckScrollwrap.moduleName = CARD_MODULE_NAME;
+CardDeckScrollwrap.folderName = CARD_FOLDER_NAME;
 
 export default CardDeckScrollwrap;

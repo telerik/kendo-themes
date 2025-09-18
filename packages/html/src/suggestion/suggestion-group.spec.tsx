@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { Button } from '../button';
 
 import { KendoComponent } from '../_types/component';
+import { SUGGESTION_FOLDER_NAME, SUGGESTION_MODULE_NAME } from './constants';
 export const SUGGESTIONGROUP_CLASSNAME = `k-suggestion-group`;
 
 const states = [];
@@ -54,7 +55,7 @@ SuggestionGroup.states = states;
 SuggestionGroup.options = options;
 SuggestionGroup.className = SUGGESTIONGROUP_CLASSNAME;
 SuggestionGroup.defaultOptions = defaultOptions;
-SuggestionGroup.moduleName = "suggestion";
-SuggestionGroup.folderName = SuggestionGroup.moduleName;
+SuggestionGroup.moduleName = SUGGESTION_MODULE_NAME;
+SuggestionGroup.folderName = SUGGESTION_FOLDER_NAME;
 
 export default SuggestionGroup;

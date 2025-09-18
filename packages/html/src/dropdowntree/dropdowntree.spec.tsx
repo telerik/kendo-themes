@@ -13,6 +13,7 @@ import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action
 import { Treeview, TreeviewGroup, TreeviewItem } from '../treeview';
 
 import { KendoComponent } from '../_types/component';
+import { DROPDOWNTREE_FOLDER_NAME, DROPDOWNTREE_MODULE_NAME } from './constants';
 export const DROPDOWNTREE_CLASSNAME = `k-dropdowntree`;
 
 const states = [
@@ -199,7 +200,7 @@ DropdownTree.states = states;
 DropdownTree.options = options;
 DropdownTree.className = DROPDOWNTREE_CLASSNAME;
 DropdownTree.defaultOptions = defaultOptions;
-DropdownTree.moduleName = "dropdown-tree";
-DropdownTree.folderName = "dropdowntree";
+DropdownTree.moduleName = DROPDOWNTREE_MODULE_NAME;
+DropdownTree.folderName = DROPDOWNTREE_FOLDER_NAME;
 
 export default DropdownTree;

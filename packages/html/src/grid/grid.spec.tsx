@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { GRID_FOLDER_NAME, GRID_MODULE_NAME } from './constants';
 export const GRID_CLASSNAME = 'k-grid';
 
 const states = [];
@@ -75,7 +76,7 @@ Grid.options = options;
 Grid.variants = GRID_VARIANTS;
 Grid.className = GRID_CLASSNAME;
 Grid.defaultOptions = defaultOptions;
-Grid.moduleName = "grid";
-Grid.folderName = Grid.moduleName;
+Grid.moduleName = GRID_MODULE_NAME;
+Grid.folderName = GRID_FOLDER_NAME;
 
 export default Grid;

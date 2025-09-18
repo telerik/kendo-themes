@@ -1,7 +1,7 @@
 import { classNames, optionClassNames, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import { ColumnMenu } from './column-menu.spec';
+import { COLUMN_MENU_FOLDER_NAME, COLUMN_MENU_MODULE_NAME } from './constants';
 export const GROUPMENU_CLASSNAME = `k-group-menu`;
 
 const states = [];
@@ -46,7 +46,7 @@ GroupMenu.states = states;
 GroupMenu.options = options;
 GroupMenu.className = GROUPMENU_CLASSNAME;
 GroupMenu.defaultOptions = defaultOptions;
-GroupMenu.moduleName = ColumnMenu.moduleName;
-GroupMenu.folderName = ColumnMenu.folderName;
+GroupMenu.moduleName = COLUMN_MENU_MODULE_NAME;
+GroupMenu.folderName = COLUMN_MENU_FOLDER_NAME;
 
 export default GroupMenu;

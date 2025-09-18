@@ -13,6 +13,7 @@ import { SpinButton } from '../spinbutton';
 
 
 import { KendoComponent } from '../_types/component';
+import { NUMERICTEXTBOX_FOLDER_NAME, NUMERICTEXTBOX_MODULE_NAME } from './constants';
 export const NUMERICTEXTBOX_CLASSNAME = `k-numerictextbox`;
 
 const states = [
@@ -144,7 +145,7 @@ NumericTextbox.states = states;
 NumericTextbox.options = options;
 NumericTextbox.className = NUMERICTEXTBOX_CLASSNAME;
 NumericTextbox.defaultOptions = defaultOptions;
-NumericTextbox.moduleName = "numeric-textbox";
-NumericTextbox.folderName = "numerictextbox";
+NumericTextbox.moduleName = NUMERICTEXTBOX_MODULE_NAME;
+NumericTextbox.folderName = NUMERICTEXTBOX_FOLDER_NAME;
 
 export default NumericTextbox;

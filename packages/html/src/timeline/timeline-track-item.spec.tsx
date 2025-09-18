@@ -1,7 +1,7 @@
 import { States, classNames, stateClassNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import { Timeline } from './timeline.spec';
+import { TIMELINE_FOLDER_NAME, TIMELINE_MODULE_NAME } from './constants';
 export const TIMELINETRACKITEM_CLASSNAME = `k-timeline-track-item`;
 
 const states = [
@@ -45,7 +45,7 @@ export const TimelineTrackItem: KendoComponent<KendoTimelineTrackItemOptions & K
 
 TimelineTrackItem.states = states;
 TimelineTrackItem.className = TIMELINETRACKITEM_CLASSNAME;
-TimelineTrackItem.moduleName = Timeline.moduleName;
-TimelineTrackItem.folderName = Timeline.folderName;
+TimelineTrackItem.moduleName = TIMELINE_MODULE_NAME;
+TimelineTrackItem.folderName = TIMELINE_FOLDER_NAME;
 
 export default TimelineTrackItem;

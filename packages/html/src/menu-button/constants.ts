@@ -1,0 +1,2 @@
+export const MENU_BUTTON_MODULE_NAME = 'button';
+export const MENU_BUTTON_FOLDER_NAME = MENU_BUTTON_MODULE_NAME;

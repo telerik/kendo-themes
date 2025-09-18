@@ -1,0 +1,2 @@
+export const SPREADSHEET_MODULE_NAME = 'spreadsheet';
+export const SPREADSHEET_FOLDER_NAME = SPREADSHEET_MODULE_NAME;

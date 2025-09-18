@@ -1,7 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import { Menu } from './menu.spec';
+import { MENU_MODULE_NAME, MENU_FOLDER_NAME } from './constants';
 export const SEPARATOR_CLASSNAME = `k-separator`;
 
 export type KendoMenuSeparatorProps = {
@@ -39,7 +39,7 @@ export const MenuSeparator: KendoComponent<KendoMenuSeparatorProps & React.HTMLA
 
 MenuSeparator.className = SEPARATOR_CLASSNAME;
 MenuSeparator.defaultOptions = defaultOptions;
-MenuSeparator.moduleName = Menu.moduleName;
-MenuSeparator.folderName = Menu.folderName;
+MenuSeparator.moduleName = MENU_MODULE_NAME;
+MenuSeparator.folderName = MENU_FOLDER_NAME;
 
 export default MenuSeparator;

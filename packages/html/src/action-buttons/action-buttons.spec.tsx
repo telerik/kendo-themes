@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { ACTION_BUTTONS_FOLDER_NAME, ACTION_BUTTONS_MODULE_NAME } from './constants';
 export const ACTIONBUTTONS_CLASSNAME = `k-actions`;
 
 const states = [];
@@ -47,7 +48,7 @@ ActionButtons.states = states;
 ActionButtons.options = options;
 ActionButtons.className = ACTIONBUTTONS_CLASSNAME;
 ActionButtons.defaultOptions = defaultOptions;
-ActionButtons.moduleName = "action-buttons";
-ActionButtons.folderName = ActionButtons.moduleName;
+ActionButtons.moduleName = ACTION_BUTTONS_MODULE_NAME;
+ActionButtons.folderName = ACTION_BUTTONS_FOLDER_NAME;
 
 export default ActionButtons;

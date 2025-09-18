@@ -4,6 +4,7 @@ import { classNames, stateClassNames, States } from '../misc';
 import { UploadDropzone } from './upload-dropzone';
 
 import { KendoComponent } from '../_types/component';
+import { UPLOAD_FOLDER_NAME, UPLOAD_MODULE_NAME } from './constants';
 export const UPLOAD_CLASSNAME = `k-upload`;
 
 const states = [
@@ -77,7 +78,7 @@ Upload.states = states;
 Upload.options = options;
 Upload.className = UPLOAD_CLASSNAME;
 Upload.defaultOptions = defaultOptions;
-Upload.moduleName = "upload";
-Upload.folderName = Upload.moduleName;
+Upload.moduleName = UPLOAD_MODULE_NAME;
+Upload.folderName = UPLOAD_FOLDER_NAME;
 
 export default Upload;

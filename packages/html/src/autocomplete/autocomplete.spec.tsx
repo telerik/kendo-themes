@@ -15,6 +15,7 @@ import { List, ListCustomValue, ListItem } from '../list';
 import { Button } from '../button';
 
 import { KendoComponent } from '../_types/component';
+import { AUTOCOMPLETE_FOLDER_NAME, AUTOCOMPLETE_MODULE_NAME } from './constants';
 export const AUTOCOMPLETE_CLASSNAME = `k-autocomplete`;
 
 const states = [
@@ -176,7 +177,7 @@ Autocomplete.states = states;
 Autocomplete.options = options;
 Autocomplete.className = AUTOCOMPLETE_CLASSNAME;
 Autocomplete.defaultOptions = defaultOptions;
-Autocomplete.moduleName = "autocomplete";
-Autocomplete.folderName = Autocomplete.moduleName;
+Autocomplete.moduleName = AUTOCOMPLETE_MODULE_NAME;
+Autocomplete.folderName = AUTOCOMPLETE_FOLDER_NAME;
 
 export default Autocomplete;

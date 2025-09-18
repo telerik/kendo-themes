@@ -1,0 +1,2 @@
+export const TABSTRIP_MODULE_NAME = 'tabstrip';
+export const TABSTRIP_FOLDER_NAME = TABSTRIP_MODULE_NAME;

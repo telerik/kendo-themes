@@ -1,0 +1,2 @@
+export const ACTION_BUTTONS_MODULE_NAME = 'action-buttons';
+export const ACTION_BUTTONS_FOLDER_NAME = ACTION_BUTTONS_MODULE_NAME;

@@ -2,6 +2,7 @@ import { Icon } from '../icon';
 import { classNames, optionClassNames, stateClassNames, variantClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { BUTTON_FOLDER_NAME, BUTTON_MODULE_NAME } from './constants';
 export const BUTTON_CLASSNAME = `k-button`;
 
 const BUTTON_VARIANTS = ["icon-button"] as const;
@@ -141,7 +142,7 @@ Button.options = options;
 Button.variants = BUTTON_VARIANTS;
 Button.className = BUTTON_CLASSNAME;
 Button.defaultOptions = defaultOptions;
-Button.moduleName = "button";
-Button.folderName = Button.moduleName;
+Button.moduleName = BUTTON_MODULE_NAME;
+Button.folderName = BUTTON_FOLDER_NAME;
 
 export default Button;

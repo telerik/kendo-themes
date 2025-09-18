@@ -1,7 +1,10 @@
-import { CalendarInfiniteTable, CalendarTableHead, CalendarHeader, Calendar } from '.';
+import { CalendarHeader } from './calendar-header';
+import { CalendarInfiniteTable } from './calendar-infinite-table';
+import { CalendarTableHead } from './calendar-table-head';
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { CALENDAR_FOLDER_NAME, CALENDAR_MODULE_NAME } from './constants';
 const CALENDARINFINITEVIEW_CLASSNAME = `k-calendar-view`;
 
 export type KendoCalendarInfiniteViewProps = {
@@ -81,7 +84,7 @@ export const CalendarInfiniteView: KendoComponent<KendoCalendarInfiniteViewProps
 
 CalendarInfiniteView.className = CALENDARINFINITEVIEW_CLASSNAME;
 CalendarInfiniteView.defaultOptions = defaultOptions;
-CalendarInfiniteView.moduleName = Calendar.moduleName;
-CalendarInfiniteView.folderName = Calendar.folderName;
+CalendarInfiniteView.moduleName = CALENDAR_MODULE_NAME;
+CalendarInfiniteView.folderName = CALENDAR_FOLDER_NAME;
 
 export default CalendarInfiniteView;

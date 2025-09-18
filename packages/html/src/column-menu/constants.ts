@@ -1,0 +1,2 @@
+export const COLUMN_MENU_MODULE_NAME = 'column-menu';
+export const COLUMN_MENU_FOLDER_NAME = COLUMN_MENU_MODULE_NAME;

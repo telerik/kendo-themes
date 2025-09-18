@@ -1,5 +1,6 @@
 import { classNames, States, Size, Roundness, FillMode } from '../misc';
 import { KendoComponent } from '../_types/component';
+import { TEXTAREA_FOLDER_NAME, TEXTAREA_MODULE_NAME } from './constants';
 import {
     Input,
     InputInnerTextarea,
@@ -156,7 +157,7 @@ Textarea.states = states;
 Textarea.options = options;
 Textarea.className = TEXTAREA_CLASSNAME;
 Textarea.defaultOptions = defaultOptions;
-Textarea.moduleName = "textarea";
-Textarea.folderName = Textarea.moduleName;
+Textarea.moduleName = TEXTAREA_MODULE_NAME;
+Textarea.folderName = TEXTAREA_FOLDER_NAME;
 
 export default Textarea;

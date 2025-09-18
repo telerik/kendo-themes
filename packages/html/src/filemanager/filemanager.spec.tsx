@@ -7,6 +7,7 @@ import { Switch } from '../switch';
 import { Searchbox } from '../searchbox';
 
 import { KendoComponent } from '../_types/component';
+import { FILEMANAGER_FOLDER_NAME, FILEMANAGER_MODULE_NAME } from './constants';
 const FILEMANAGER_CLASSNAME = 'k-filemanager';
 
 const states = [
@@ -84,7 +85,7 @@ FileManager.states = states;
 FileManager.options = options;
 FileManager.className = FILEMANAGER_CLASSNAME;
 FileManager.defaultOptions = defaultOptions;
-FileManager.moduleName = "file-manager";
-FileManager.folderName = FileManager.moduleName;
+FileManager.moduleName = FILEMANAGER_MODULE_NAME;
+FileManager.folderName = FILEMANAGER_FOLDER_NAME;
 
 export default FileManager;

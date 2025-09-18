@@ -1,7 +1,7 @@
 import { classNames, optionClassNames, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import { Table } from './table.spec';
+import { TABLE_FOLDER_NAME, TABLE_MODULE_NAME } from './constants';
 export const TABLELIST_CLASSNAME = `k-table-list`;
 
 const states = [];
@@ -54,7 +54,7 @@ TableList.states = states;
 TableList.options = options;
 TableList.className = TABLELIST_CLASSNAME;
 TableList.defaultOptions = defaultOptions;
-TableList.moduleName = Table.moduleName;
-TableList.folderName = Table.folderName;
+TableList.moduleName = TABLE_MODULE_NAME;
+TableList.folderName = TABLE_FOLDER_NAME;
 
 export default TableList;

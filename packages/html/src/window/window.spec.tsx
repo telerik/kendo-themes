@@ -5,6 +5,7 @@ import { classNames, optionClassNames, ThemeColor } from '../misc';
 import { WindowContent } from './window-content.spec';
 
 import { KendoComponent } from '../_types/component';
+import { WINDOW_FOLDER_NAME, WINDOW_MODULE_NAME } from './constants';
 export const WINDOW_CLASSNAME = `k-window`;
 
 const states = [];
@@ -102,7 +103,7 @@ Window.states = states;
 Window.options = options;
 Window.className = WINDOW_CLASSNAME;
 Window.defaultOptions = defaultOptions;
-Window.moduleName = "window";
-Window.folderName = Window.moduleName;
+Window.moduleName = WINDOW_MODULE_NAME;
+Window.folderName = WINDOW_FOLDER_NAME;
 
 export default Window;

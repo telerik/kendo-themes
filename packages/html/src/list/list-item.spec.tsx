@@ -3,7 +3,7 @@ import { Icon } from '../icon';
 import { classNames, stateClassNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import { List } from './list.spec';
+import { LIST_FOLDER_NAME, LIST_MODULE_NAME } from './constants';
 export const LISTITEM_CLASSNAME = `k-list-item`;
 
 const states = [
@@ -79,7 +79,7 @@ ListItem.states = states;
 ListItem.options = options;
 ListItem.className = LISTITEM_CLASSNAME;
 ListItem.defaultOptions = defaultOptions;
-ListItem.moduleName = List.moduleName;
-ListItem.folderName = List.folderName;
+ListItem.moduleName = LIST_MODULE_NAME;
+ListItem.folderName = LIST_FOLDER_NAME;
 
 export default ListItem;

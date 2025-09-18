@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, stateClassNames, States, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { OTP_FOLDER_NAME, OTP_MODULE_NAME } from './constants';
 export const ONETIMEPASSWORD_CLASSNAME = `k-otp`;
 
 const states = [
@@ -55,7 +56,7 @@ OneTimePassword.states = states;
 OneTimePassword.options = options;
 OneTimePassword.className = ONETIMEPASSWORD_CLASSNAME;
 OneTimePassword.defaultOptions = defaultOptions;
-OneTimePassword.moduleName = "otp";
-OneTimePassword.folderName = OneTimePassword.moduleName;
+OneTimePassword.moduleName = OTP_MODULE_NAME;
+OneTimePassword.folderName = OTP_FOLDER_NAME;
 
 export default OneTimePassword;

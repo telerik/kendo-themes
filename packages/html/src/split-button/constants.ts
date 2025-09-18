@@ -1,0 +1,2 @@
+export const SPLIT_BUTTON_MODULE_NAME = 'split-button';
+export const SPLIT_BUTTON_FOLDER_NAME = SPLIT_BUTTON_MODULE_NAME;

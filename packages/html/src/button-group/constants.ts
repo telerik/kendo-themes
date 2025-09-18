@@ -1,0 +1,2 @@
+export const BUTTON_GROUP_MODULE_NAME = 'button';
+export const BUTTON_GROUP_FOLDER_NAME = BUTTON_GROUP_MODULE_NAME;

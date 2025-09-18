@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { InputInnerInput } from '../input';
 
 import { KendoComponent } from '../_types/component';
+import { SEARCHBAR_FOLDER_NAME, SEARCHBAR_MODULE_NAME } from './constants';
 export const SEARCHBAR_CLASSNAME = `k-searchbar`;
 
 const states = [];
@@ -38,7 +39,7 @@ SearchBar.states = states;
 SearchBar.options = options;
 SearchBar.className = SEARCHBAR_CLASSNAME;
 SearchBar.defaultOptions = defaultOptions;
-SearchBar.moduleName = "input";
-SearchBar.folderName = SearchBar.moduleName;
+SearchBar.moduleName = SEARCHBAR_MODULE_NAME;
+SearchBar.folderName = SEARCHBAR_FOLDER_NAME;
 
 export default SearchBar;

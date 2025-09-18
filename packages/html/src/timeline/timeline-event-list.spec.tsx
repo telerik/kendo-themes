@@ -1,7 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import { Timeline } from './timeline.spec';
+import { TIMELINE_FOLDER_NAME, TIMELINE_MODULE_NAME } from './constants';
 export const TIMELINEEVENTLIST_CLASSNAME = `k-timeline-events-list`;
 
 export const TimelineEventList: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
@@ -27,7 +27,7 @@ export const TimelineEventList: KendoComponent<React.HTMLAttributes<HTMLDivEleme
 };
 
 TimelineEventList.className = TIMELINEEVENTLIST_CLASSNAME;
-TimelineEventList.moduleName = Timeline.moduleName;
-TimelineEventList.folderName = Timeline.folderName;
+TimelineEventList.moduleName = TIMELINE_MODULE_NAME;
+TimelineEventList.folderName = TIMELINE_FOLDER_NAME;
 
 export default TimelineEventList;

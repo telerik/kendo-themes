@@ -2,6 +2,7 @@ import { Icon } from '../icon';
 import { classNames, stateClassNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { DROPZONE_FOLDER_NAME, DROPZONE_MODULE_NAME } from './constants';
 export const DROPZONE_CLASSNAME = `k-external-dropzone`;
 
 const states = [
@@ -64,7 +65,7 @@ Dropzone.states = states;
 Dropzone.options = options;
 Dropzone.className = DROPZONE_CLASSNAME;
 Dropzone.defaultOptions = defaultOptions;
-Dropzone.moduleName = "dropzone";
-Dropzone.folderName = Dropzone.moduleName;
+Dropzone.moduleName = DROPZONE_MODULE_NAME;
+Dropzone.folderName = DROPZONE_FOLDER_NAME;
 
 export default Dropzone;

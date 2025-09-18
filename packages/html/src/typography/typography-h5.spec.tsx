@@ -1,5 +1,6 @@
 import { Typography } from './typography';
 import { KendoComponent } from '../_types/component';
+import { TYPOGRAPHY_FOLDER_NAME, TYPOGRAPHY_MODULE_NAME } from './constants';
 import { classNames } from '../misc';
 
 const TYPOGRAPHY_H5_CLASSNAME = 'k-h5';
@@ -20,7 +21,7 @@ export const TypographyH5: KendoComponent<KendoTypographyH5Props> = (
 TypographyH5.states = states;
 TypographyH5.options = options;
 TypographyH5.className = TYPOGRAPHY_H5_CLASSNAME;
-TypographyH5.moduleName = "typography";
-TypographyH5.folderName = TypographyH5.moduleName;
+TypographyH5.moduleName = TYPOGRAPHY_MODULE_NAME;
+TypographyH5.folderName = TYPOGRAPHY_FOLDER_NAME;
 
 export default TypographyH5;

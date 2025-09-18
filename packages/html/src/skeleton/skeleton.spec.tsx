@@ -1,6 +1,7 @@
 import { classNames, variantClassNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { SKELETON_FOLDER_NAME, SKELETON_MODULE_NAME } from './constants';
 export const SKELETON_CLASSNAME = `k-skeleton`;
 
 const SKELETON_VARIANTS = ["circle", "text", "rect"] as const;
@@ -62,7 +63,7 @@ Skeleton.options = options;
 Skeleton.variants = SKELETON_VARIANTS;
 Skeleton.className = SKELETON_CLASSNAME;
 Skeleton.defaultOptions = defaultOptions;
-Skeleton.moduleName = "skeleton";
-Skeleton.folderName = Skeleton.moduleName;
+Skeleton.moduleName = SKELETON_MODULE_NAME;
+Skeleton.folderName = SKELETON_FOLDER_NAME;
 
 export default Skeleton;

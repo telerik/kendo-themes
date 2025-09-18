@@ -1,7 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import { Timeline } from './timeline.spec';
+import { TIMELINE_FOLDER_NAME, TIMELINE_MODULE_NAME } from './constants';
 export const TIMELINETRACK_CLASSNAME = `k-timeline-track`;
 
 export const TimelineTrack: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
@@ -27,7 +27,7 @@ export const TimelineTrack: KendoComponent<React.HTMLAttributes<HTMLDivElement>>
 };
 
 TimelineTrack.className = TIMELINETRACK_CLASSNAME;
-TimelineTrack.moduleName = Timeline.moduleName;
-TimelineTrack.folderName = Timeline.folderName;
+TimelineTrack.moduleName = TIMELINE_MODULE_NAME;
+TimelineTrack.folderName = TIMELINE_FOLDER_NAME;
 
 export default TimelineTrack;

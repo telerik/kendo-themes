@@ -1,7 +1,7 @@
 import { classNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import { Timeline } from './timeline.spec';
+import { TIMELINE_FOLDER_NAME, TIMELINE_MODULE_NAME } from './constants';
 export const TIMELINEFLAGWRAP_CLASSNAME = `k-timeline-flag-wrap`;
 
 const states = [
@@ -45,7 +45,7 @@ TimelineFlagWrap.states = states;
 TimelineFlagWrap.options = options;
 TimelineFlagWrap.className = TIMELINEFLAGWRAP_CLASSNAME;
 TimelineFlagWrap.defaultOptions = defaultOptions;
-TimelineFlagWrap.moduleName = Timeline.moduleName;
-TimelineFlagWrap.folderName = Timeline.folderName;
+TimelineFlagWrap.moduleName = TIMELINE_MODULE_NAME;
+TimelineFlagWrap.folderName = TIMELINE_FOLDER_NAME;
 
 export default TimelineFlagWrap;

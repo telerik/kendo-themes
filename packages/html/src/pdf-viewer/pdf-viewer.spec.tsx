@@ -10,6 +10,7 @@ import { Toolbar, ToolbarSeparator } from '../toolbar';
 import { UploadNormal } from '../upload';
 
 import { KendoComponent } from '../_types/component';
+import { PDF_VIEWER_FOLDER_NAME, PDF_VIEWER_MODULE_NAME } from './constants';
 export const PDFVIEWER_CLASSNAME = `k-pdf-viewer`;
 
 const states = [
@@ -150,7 +151,7 @@ PDFViewer.states = states;
 PDFViewer.options = options;
 PDFViewer.className = PDFVIEWER_CLASSNAME;
 PDFViewer.defaultOptions = defaultOptions;
-PDFViewer.moduleName = "pdf-viewer";
-PDFViewer.folderName = PDFViewer.moduleName;
+PDFViewer.moduleName = PDF_VIEWER_MODULE_NAME;
+PDFViewer.folderName = PDF_VIEWER_FOLDER_NAME;
 
 export default PDFViewer;

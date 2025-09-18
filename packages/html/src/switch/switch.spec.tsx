@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, stateClassNames, States, Size, Roundness } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { SWITCH_FOLDER_NAME, SWITCH_MODULE_NAME } from './constants';
 export const SWITCH_CLASSNAME = `k-switch`;
 
 const states = [
@@ -101,7 +102,7 @@ Switch.states = states;
 Switch.options = options;
 Switch.className = SWITCH_CLASSNAME;
 Switch.defaultOptions = defaultOptions;
-Switch.moduleName = "switch";
-Switch.folderName = Switch.moduleName;
+Switch.moduleName = SWITCH_MODULE_NAME;
+Switch.folderName = SWITCH_FOLDER_NAME;
 
 export default Switch;

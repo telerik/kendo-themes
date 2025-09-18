@@ -1,0 +1,2 @@
+export const CONTEXT_MENU_MODULE_NAME = 'context-menu';
+export const CONTEXT_MENU_FOLDER_NAME = CONTEXT_MENU_MODULE_NAME;

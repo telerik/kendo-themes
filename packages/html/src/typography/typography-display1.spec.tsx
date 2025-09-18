@@ -1,5 +1,6 @@
 import { Typography } from './typography';
 import { KendoComponent } from '../_types/component';
+import { TYPOGRAPHY_FOLDER_NAME, TYPOGRAPHY_MODULE_NAME } from './constants';
 import { classNames } from '../misc';
 
 const TYPOGRAPHY_DISPLAY1_CLASSNAME = 'k-display-1';
@@ -20,7 +21,7 @@ export const TypographyDisplay1: KendoComponent<KendoTypographyDisplay1Props> = 
 TypographyDisplay1.states = states;
 TypographyDisplay1.options = options;
 TypographyDisplay1.className = TYPOGRAPHY_DISPLAY1_CLASSNAME;
-TypographyDisplay1.moduleName = "typography";
-TypographyDisplay1.folderName = TypographyDisplay1.moduleName;
+TypographyDisplay1.moduleName = TYPOGRAPHY_MODULE_NAME;
+TypographyDisplay1.folderName = TYPOGRAPHY_FOLDER_NAME;
 
 export default TypographyDisplay1;

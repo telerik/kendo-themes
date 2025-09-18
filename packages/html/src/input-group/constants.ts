@@ -1,0 +1,2 @@
+export const INPUT_GROUP_MODULE_NAME = 'input-group';
+export const INPUT_GROUP_FOLDER_NAME = INPUT_GROUP_MODULE_NAME;

@@ -3,7 +3,7 @@ import { CardHeader, CardBody, CardSubtitle } from '../card';
 import { TimelineCard, TimelineCardTitle, TimelineCircle } from '../timeline';
 
 import { KendoComponent } from '../_types/component';
-import { Timeline } from './timeline.spec';
+import { TIMELINE_FOLDER_NAME, TIMELINE_MODULE_NAME } from './constants';
 export const TIMELINEVERTICALEVENT_CLASSNAME = `k-timeline-event`;
 
 const states = [];
@@ -77,7 +77,7 @@ VerticalTimelineEvent.states = states;
 VerticalTimelineEvent.options = options;
 VerticalTimelineEvent.className = TIMELINEVERTICALEVENT_CLASSNAME;
 VerticalTimelineEvent.defaultOptions = defaultOptions;
-VerticalTimelineEvent.moduleName = Timeline.moduleName;
-VerticalTimelineEvent.folderName = Timeline.folderName;
+VerticalTimelineEvent.moduleName = TIMELINE_MODULE_NAME;
+VerticalTimelineEvent.folderName = TIMELINE_FOLDER_NAME;
 
 export default VerticalTimelineEvent;

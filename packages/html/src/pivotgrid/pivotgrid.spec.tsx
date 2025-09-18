@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import PivotGridConfiguratorButton from './pivotgrid-configurator-button';
 
 import { KendoComponent } from '../_types/component';
+import { PIVOTGRID_FOLDER_NAME, PIVOTGRID_MODULE_NAME } from './constants';
 export const PIVOTGRID_CLASSNAME = `k-pivotgrid`;
 
 const states = [];
@@ -77,7 +78,7 @@ PivotGrid.states = states;
 PivotGrid.options = options;
 PivotGrid.className = PIVOTGRID_CLASSNAME;
 PivotGrid.defaultOptions = defaultOptions;
-PivotGrid.moduleName = "pivotgrid";
-PivotGrid.folderName = PivotGrid.moduleName;
+PivotGrid.moduleName = PIVOTGRID_MODULE_NAME;
+PivotGrid.folderName = PIVOTGRID_FOLDER_NAME;
 
 export default PivotGrid;

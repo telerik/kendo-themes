@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ActionSheet } from './action-sheet.spec';
+import { ACTION_SHEET_FOLDER_NAME, ACTION_SHEET_MODULE_NAME } from './constants';
 
 const ACTIONSHEET_CONTAINER_CLASSNAME = 'k-actionsheet-container';
 
@@ -38,7 +38,7 @@ ActionsheetContainer.states = states;
 ActionsheetContainer.options = options;
 ActionsheetContainer.className = ACTIONSHEET_CONTAINER_CLASSNAME;
 ActionsheetContainer.defaultOptions = defaultOptions;
-ActionsheetContainer.moduleName = ActionSheet.moduleName;
-ActionsheetContainer.folderName = ActionSheet.folderName;
+ActionsheetContainer.moduleName = ACTION_SHEET_MODULE_NAME;
+ActionsheetContainer.folderName = ACTION_SHEET_FOLDER_NAME;
 
 export default ActionsheetContainer;

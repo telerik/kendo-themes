@@ -2,6 +2,7 @@ import { Button } from '../button';
 import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { SIGNATURE_FOLDER_NAME, SIGNATURE_MODULE_NAME } from './constants';
 export const SIGNATURE_CLASSNAME = `k-signature`;
 
 const states = [
@@ -134,7 +135,7 @@ Signature.states = states;
 Signature.options = options;
 Signature.className = SIGNATURE_CLASSNAME;
 Signature.defaultOptions = defaultOptions;
-Signature.moduleName = "signature";
-Signature.folderName = Signature.moduleName;
+Signature.moduleName = SIGNATURE_MODULE_NAME;
+Signature.folderName = SIGNATURE_FOLDER_NAME;
 
 export default Signature;

@@ -3,7 +3,7 @@ import { TableTh, KendoTableThProps } from "../table/table-th.spec";
 import { Icon } from "../icon";
 
 import { KendoComponent } from '../_types/component';
-import { Grid } from './grid.spec';
+import { GRID_FOLDER_NAME, GRID_MODULE_NAME } from './constants';
 const GRIDHEADERCELL_CLASSNAME = `k-header`;
 
 const states = [
@@ -108,7 +108,7 @@ export const GridHeaderCell: KendoComponent<KendoGridHeaderCellProps & KendoGrid
 GridHeaderCell.states = states;
 GridHeaderCell.className = GRIDHEADERCELL_CLASSNAME;
 GridHeaderCell.defaultOptions = defaultOptions;
-GridHeaderCell.moduleName = Grid.moduleName;
-GridHeaderCell.folderName = Grid.folderName;
+GridHeaderCell.moduleName = GRID_MODULE_NAME;
+GridHeaderCell.folderName = GRID_FOLDER_NAME;
 
 export default GridHeaderCell;

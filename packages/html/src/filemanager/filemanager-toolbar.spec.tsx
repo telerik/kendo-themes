@@ -2,7 +2,7 @@ import { KendoToolbarProps, Toolbar } from '../toolbar';
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import { FileManager } from './filemanager.spec';
+import { FILEMANAGER_FOLDER_NAME, FILEMANAGER_MODULE_NAME } from './constants';
 export const FILEMANAGERTOOLBAR_CLASSNAME = `k-filemanager-toolbar`;
 
 const states = [];
@@ -37,7 +37,7 @@ FileManagerToolbar.states = states;
 FileManagerToolbar.options = options;
 FileManagerToolbar.className = FILEMANAGERTOOLBAR_CLASSNAME;
 FileManagerToolbar.defaultOptions = defaultOptions;
-FileManagerToolbar.moduleName = FileManager.moduleName;
-FileManagerToolbar.folderName = FileManager.folderName;
+FileManagerToolbar.moduleName = FILEMANAGER_MODULE_NAME;
+FileManagerToolbar.folderName = FILEMANAGER_FOLDER_NAME;
 
 export default FileManagerToolbar;

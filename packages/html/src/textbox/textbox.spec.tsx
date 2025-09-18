@@ -1,5 +1,6 @@
 import { classNames, States, Size, Roundness, FillMode } from '../misc';
 import { KendoComponent } from '../_types/component';
+import { TEXTBOX_FOLDER_NAME, TEXTBOX_MODULE_NAME } from './constants';
 import {
     Input,
     InputPrefix,
@@ -138,7 +139,7 @@ Textbox.states = states;
 Textbox.options = options;
 Textbox.className = TEXTBOX_CLASSNAME;
 Textbox.defaultOptions = defaultOptions;
-Textbox.moduleName = "textbox";
-Textbox.folderName = Textbox.moduleName;
+Textbox.moduleName = TEXTBOX_MODULE_NAME;
+Textbox.folderName = TEXTBOX_FOLDER_NAME;
 
 export default Textbox;

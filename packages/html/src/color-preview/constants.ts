@@ -1,0 +1,2 @@
+export const COLOR_PREVIEW_MODULE_NAME = 'color-preview';
+export const COLOR_PREVIEW_FOLDER_NAME = COLOR_PREVIEW_MODULE_NAME;

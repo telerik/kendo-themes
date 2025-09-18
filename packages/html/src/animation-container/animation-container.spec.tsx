@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { ANIMATION_CONTAINER_FOLDER_NAME, ANIMATION_CONTAINER_MODULE_NAME } from './constants';
 export const ANIMATION_CONTAINER_CLASSNAME = `k-animation-container`;
 
 const states = [];
@@ -57,7 +58,7 @@ AnimationContainer.states = states;
 AnimationContainer.options = options;
 AnimationContainer.className = ANIMATION_CONTAINER_CLASSNAME;
 AnimationContainer.defaultOptions = defaultOptions;
-AnimationContainer.moduleName = "popup";
-AnimationContainer.folderName = AnimationContainer.moduleName;
+AnimationContainer.moduleName = ANIMATION_CONTAINER_MODULE_NAME;
+AnimationContainer.folderName = ANIMATION_CONTAINER_FOLDER_NAME;
 
 export default AnimationContainer;

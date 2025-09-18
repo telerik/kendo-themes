@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { PANELBAR_FOLDER_NAME, PANELBAR_MODULE_NAME } from './constants';
 export const PANELBAR_CLASSNAME = `k-panelbar`;
 
 const states = [];
@@ -33,7 +34,7 @@ PanelBar.states = states;
 PanelBar.options = options;
 PanelBar.className = PANELBAR_CLASSNAME;
 PanelBar.defaultOptions = defaultOptions;
-PanelBar.moduleName = "panelbar";
-PanelBar.folderName = PanelBar.moduleName;
+PanelBar.moduleName = PANELBAR_MODULE_NAME;
+PanelBar.folderName = PANELBAR_FOLDER_NAME;
 
 export default PanelBar;
