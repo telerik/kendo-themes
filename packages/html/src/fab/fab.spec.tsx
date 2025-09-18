@@ -111,6 +111,6 @@ FloatingActionButton.options = options;
 FloatingActionButton.className = FLOATINGACTIONBUTTON_CLASSNAME;
 FloatingActionButton.defaultOptions = defaultOptions;
 FloatingActionButton.moduleName = "fab";
-FloatingActionButton.folderName = "fab";
+FloatingActionButton.folderName = FloatingActionButton.moduleName;
 
 export default FloatingActionButton;

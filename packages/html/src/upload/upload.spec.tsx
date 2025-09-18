@@ -78,6 +78,6 @@ Upload.options = options;
 Upload.className = UPLOAD_CLASSNAME;
 Upload.defaultOptions = defaultOptions;
 Upload.moduleName = "upload";
-Upload.folderName = "upload";
+Upload.folderName = Upload.moduleName;
 
 export default Upload;

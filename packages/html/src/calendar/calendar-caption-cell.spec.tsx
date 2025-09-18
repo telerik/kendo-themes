@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import Calendar from './calendar.spec';
 const className = `k-calendar-caption`;
 
 export type KendoCalendarCaptionCellProps = {
@@ -32,5 +33,5 @@ export const CalendarCaptionCell: KendoComponent<KendoCalendarCaptionCellProps &
 };
 
 CalendarCaptionCell.className = className;
-CalendarCaptionCell.moduleName = "calendar";
-CalendarCaptionCell.folderName = "calendar";
+CalendarCaptionCell.moduleName = Calendar.moduleName;
+CalendarCaptionCell.folderName = Calendar.folderName;

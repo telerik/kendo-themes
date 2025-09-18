@@ -104,6 +104,6 @@ Searchbox.options = options;
 Searchbox.className = SEARCHBOX_CLASSNAME;
 Searchbox.defaultOptions = defaultOptions;
 Searchbox.moduleName = "searchbox";
-Searchbox.folderName = "searchbox";
+Searchbox.folderName = Searchbox.moduleName;
 
 export default Searchbox;

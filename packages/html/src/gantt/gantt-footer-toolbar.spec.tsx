@@ -2,6 +2,7 @@ import { Toolbar, KendoToolbarProps } from '../toolbar';
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { Gantt } from './gantt.spec';
 const className = `k-gantt-footer`;
 
 export const GanttFooterToolbar: KendoComponent<KendoToolbarProps & React.HTMLAttributes<HTMLDivElement>> = (
@@ -21,5 +22,5 @@ export const GanttFooterToolbar: KendoComponent<KendoToolbarProps & React.HTMLAt
 );
 
 GanttFooterToolbar.className = className;
-GanttFooterToolbar.moduleName = "gantt";
-GanttFooterToolbar.folderName = "gantt";
+GanttFooterToolbar.moduleName = Gantt.moduleName;
+GanttFooterToolbar.folderName = Gantt.folderName;

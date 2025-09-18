@@ -21,6 +21,6 @@ TypographyP.states = states;
 TypographyP.options = options;
 TypographyP.className = TYPOGRAPHY_P_CLASSNAME;
 TypographyP.moduleName = "typography";
-TypographyP.folderName = "typography";
+TypographyP.folderName = TypographyP.moduleName;
 
 export default TypographyP;

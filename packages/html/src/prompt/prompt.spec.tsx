@@ -30,6 +30,6 @@ Prompt.options = options;
 Prompt.className = PROMPT_CLASSNAME;
 Prompt.defaultOptions = defaultOptions;
 Prompt.moduleName = "prompt";
-Prompt.folderName = "prompt";
+Prompt.folderName = Prompt.moduleName;
 
 export default Prompt;

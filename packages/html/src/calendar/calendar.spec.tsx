@@ -93,6 +93,6 @@ Calendar.options = options;
 Calendar.className = CALENDAR_CLASSNAME;
 Calendar.defaultOptions = defaultOptions;
 Calendar.moduleName = "calendar";
-Calendar.folderName = "calendar";
+Calendar.folderName = Calendar.moduleName;
 
 export default Calendar;

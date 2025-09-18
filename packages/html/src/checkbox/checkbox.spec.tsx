@@ -77,6 +77,6 @@ Checkbox.options = options;
 Checkbox.className = CHECKBOX_CLASSNAME;
 Checkbox.defaultOptions = defaultOptions;
 Checkbox.moduleName = "checkbox";
-Checkbox.folderName = "checkbox";
+Checkbox.folderName = Checkbox.moduleName;
 
 export default Checkbox;

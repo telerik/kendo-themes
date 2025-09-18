@@ -83,6 +83,6 @@ Rating.options = options;
 Rating.className = RATING_CLASSNAME;
 Rating.defaultOptions = defaultOptions;
 Rating.moduleName = "rating";
-Rating.folderName = "rating";
+Rating.folderName = Rating.moduleName;
 
 export default Rating;

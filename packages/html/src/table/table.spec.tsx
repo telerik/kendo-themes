@@ -45,6 +45,6 @@ Table.options = options;
 Table.className = TABLE_CLASSNAME;
 Table.defaultOptions = defaultOptions;
 Table.moduleName = "table";
-Table.folderName = "table";
+Table.folderName = Table.moduleName;
 
 export default Table;

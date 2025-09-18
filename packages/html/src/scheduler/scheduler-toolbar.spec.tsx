@@ -4,6 +4,7 @@ import { classNames } from '../misc';
 import { Toolbar, KendoToolbarProps } from '../toolbar';
 
 import { KendoComponent } from '../_types/component';
+import { Scheduler } from './scheduler.spec';
 const className = 'k-scheduler-toolbar';
 
 export type KendoSchedulerToolbarProps = KendoToolbarProps & {
@@ -51,5 +52,5 @@ export const SchedulerToolbar: KendoComponent<KendoSchedulerToolbarProps & React
 };
 
 SchedulerToolbar.className = className;
-SchedulerToolbar.moduleName = "scheduler";
-SchedulerToolbar.folderName = "scheduler";
+SchedulerToolbar.moduleName = Scheduler.moduleName;
+SchedulerToolbar.folderName = Scheduler.folderName;

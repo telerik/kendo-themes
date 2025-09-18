@@ -142,6 +142,6 @@ Button.variants = BUTTON_VARIANTS;
 Button.className = BUTTON_CLASSNAME;
 Button.defaultOptions = defaultOptions;
 Button.moduleName = "button";
-Button.folderName = "button";
+Button.folderName = Button.moduleName;
 
 export default Button;

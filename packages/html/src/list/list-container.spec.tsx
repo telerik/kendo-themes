@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { KendoComponent } from '../_types/component';
+import { List } from './list.spec';
 import { classNames } from '../misc';
 
 export const LIST_CONTAINER_CLASSNAME = `k-list-container`;
@@ -37,7 +38,7 @@ ListContainer.states = states;
 ListContainer.options = options;
 ListContainer.className = LIST_CONTAINER_CLASSNAME;
 ListContainer.defaultOptions = defaultOptions;
-ListContainer.moduleName = "list";
-ListContainer.folderName = "list";
+ListContainer.moduleName = List.moduleName;
+ListContainer.folderName = List.folderName;
 
 export default ListContainer;

@@ -1,6 +1,7 @@
 import { classNames, stateClassNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { Toolbar } from './toolbar.spec';
 export const TOOLBARITEM_CLASSNAME = `k-toolbar-item`;
 
 const states = [
@@ -41,7 +42,7 @@ ToolbarItem.states = states;
 ToolbarItem.options = options;
 ToolbarItem.className = TOOLBARITEM_CLASSNAME;
 ToolbarItem.defaultOptions = defaultOptions;
-ToolbarItem.moduleName = "toolbar";
-ToolbarItem.folderName = "toolbar";
+ToolbarItem.moduleName = Toolbar.moduleName;
+ToolbarItem.folderName = Toolbar.folderName;
 
 export default ToolbarItem;

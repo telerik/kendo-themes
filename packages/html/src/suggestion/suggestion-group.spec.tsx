@@ -55,6 +55,6 @@ SuggestionGroup.options = options;
 SuggestionGroup.className = SUGGESTIONGROUP_CLASSNAME;
 SuggestionGroup.defaultOptions = defaultOptions;
 SuggestionGroup.moduleName = "suggestion";
-SuggestionGroup.folderName = "suggestion";
+SuggestionGroup.folderName = SuggestionGroup.moduleName;
 
 export default SuggestionGroup;

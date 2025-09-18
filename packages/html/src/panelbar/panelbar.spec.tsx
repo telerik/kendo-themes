@@ -34,6 +34,6 @@ PanelBar.options = options;
 PanelBar.className = PANELBAR_CLASSNAME;
 PanelBar.defaultOptions = defaultOptions;
 PanelBar.moduleName = "panelbar";
-PanelBar.folderName = "panelbar";
+PanelBar.folderName = PanelBar.moduleName;
 
 export default PanelBar;

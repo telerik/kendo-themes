@@ -71,6 +71,6 @@ Picker.options = pickerOptions;
 Picker.className = PICKER_CLASSNAME;
 Picker.defaultOptions = defaultOptions;
 Picker.moduleName = "input";
-Picker.folderName = "input";
+Picker.folderName = Picker.moduleName;
 
 export default Picker;

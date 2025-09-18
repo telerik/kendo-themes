@@ -85,6 +85,6 @@ Map.options = options;
 Map.className = MAP_CLASSNAME;
 Map.defaultOptions = defaultOptions;
 Map.moduleName = "map";
-Map.folderName = "map";
+Map.folderName = Map.moduleName;
 
 export default Map;

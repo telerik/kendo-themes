@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { Card } from './card.spec';
 
 export const CARD_GROUP_CLASSNAME = `k-card-group`;
 
@@ -37,7 +38,7 @@ CardGroup.states = states;
 CardGroup.options = options;
 CardGroup.className = CARD_GROUP_CLASSNAME;
 CardGroup.defaultOptions = defaultOptions;
-CardGroup.moduleName = "card";
-CardGroup.folderName = "card";
+CardGroup.moduleName = Card.moduleName;
+CardGroup.folderName = Card.folderName;
 
 export default CardGroup;

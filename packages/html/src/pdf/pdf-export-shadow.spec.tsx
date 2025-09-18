@@ -36,6 +36,6 @@ PdfExportShadow.options = options;
 PdfExportShadow.className = PDF_EXPORT_SHADOW_CLASSNAME;
 PdfExportShadow.defaultOptions = defaultOptions;
 PdfExportShadow.moduleName = "pdf";
-PdfExportShadow.folderName = "pdf";
+PdfExportShadow.folderName = PdfExportShadow.moduleName;
 
 export default PdfExportShadow;

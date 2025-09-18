@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { Grid } from './grid.spec';
 const className = `k-grouping-header`;
 
 export type KendoGroupingHeaderProps = {
@@ -34,5 +35,5 @@ export const GridGroupingHeader: KendoComponent<KendoGroupingHeaderProps & React
 };
 
 GridGroupingHeader.className = className;
-GridGroupingHeader.moduleName = "grid";
-GridGroupingHeader.folderName = "grid";
+GridGroupingHeader.moduleName = Grid.moduleName;
+GridGroupingHeader.folderName = Grid.folderName;

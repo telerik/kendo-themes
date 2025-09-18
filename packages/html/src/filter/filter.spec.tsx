@@ -59,6 +59,6 @@ Filter.options = options;
 Filter.defaultOptions = defaultOptions;
 Filter.className = FILTER_CLASSNAME;
 Filter.moduleName = "filter";
-Filter.folderName = "filter";
+Filter.folderName = Filter.moduleName;
 
 export default Filter;

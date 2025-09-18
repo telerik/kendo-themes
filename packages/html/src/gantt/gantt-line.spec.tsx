@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { Gantt } from './gantt.spec';
 export const GANTTLINE_CLASSNAME = 'k-gantt-line';
 
 const states = [];
@@ -44,7 +45,7 @@ GanttLine.states = states;
 GanttLine.options = options;
 GanttLine.className = GANTTLINE_CLASSNAME;
 GanttLine.defaultOptions = defaultOptions;
-GanttLine.moduleName = "gantt";
-GanttLine.folderName = "gantt";
+GanttLine.moduleName = Gantt.moduleName;
+GanttLine.folderName = Gantt.folderName;
 
 export default GanttLine;

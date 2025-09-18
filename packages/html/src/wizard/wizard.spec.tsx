@@ -53,6 +53,6 @@ Wizard.options = options;
 Wizard.className = WIZZARD_CLASSNAME;
 Wizard.defaultOptions = defaultOptions;
 Wizard.moduleName = "wizard";
-Wizard.folderName = "wizard";
+Wizard.folderName = Wizard.moduleName;
 
 export default Wizard;

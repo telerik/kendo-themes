@@ -38,6 +38,6 @@ RippleContainer.options = options;
 RippleContainer.className = RIPPLE_CONTAINER_CLASSNAME;
 RippleContainer.defaultOptions = defaultOptions;
 RippleContainer.moduleName = "ripple";
-RippleContainer.folderName = "ripple";
+RippleContainer.folderName = RippleContainer.moduleName;
 
 export default RippleContainer;

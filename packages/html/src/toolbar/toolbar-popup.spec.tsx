@@ -2,6 +2,7 @@ import { classNames, optionClassNames, Size, FillMode } from '../misc';
 import { Popup } from '../popup';
 
 import { KendoComponent } from '../_types/component';
+import { Toolbar } from './toolbar.spec';
 export const TOOLBARPOPUP_CLASSNAME = `k-toolbar-popup`;
 
 const states = [];
@@ -63,7 +64,7 @@ ToolbarPopup.states = states;
 ToolbarPopup.options = options;
 ToolbarPopup.className = TOOLBARPOPUP_CLASSNAME;
 ToolbarPopup.defaultOptions = defaultOptions;
-ToolbarPopup.moduleName = "toolbar";
-ToolbarPopup.folderName = "toolbar";
+ToolbarPopup.moduleName = Toolbar.moduleName;
+ToolbarPopup.folderName = Toolbar.folderName;
 
 export default ToolbarPopup;

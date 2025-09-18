@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { Toolbar, KendoToolbarProps } from '../toolbar';
 
 import { KendoComponent } from '../_types/component';
+import { Grid } from './grid.spec';
 const className = `k-grid-toolbar`;
 
 export const GridToolbar: KendoComponent<KendoToolbarProps & React.HTMLAttributes<HTMLDivElement>> = (
@@ -20,5 +21,5 @@ export const GridToolbar: KendoComponent<KendoToolbarProps & React.HTMLAttribute
 );
 
 GridToolbar.className = className;
-GridToolbar.moduleName = "grid";
-GridToolbar.folderName = "grid";
+GridToolbar.moduleName = Grid.moduleName;
+GridToolbar.folderName = Grid.folderName;

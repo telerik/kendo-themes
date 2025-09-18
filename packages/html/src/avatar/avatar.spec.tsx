@@ -103,6 +103,6 @@ Avatar.options = options;
 Avatar.className = AVATAR_CLASSNAME;
 Avatar.defaultOptions = defaultOptions;
 Avatar.moduleName = "avatar";
-Avatar.folderName = "avatar";
+Avatar.folderName = Avatar.moduleName;
 
 export default Avatar;

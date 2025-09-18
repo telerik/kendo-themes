@@ -177,6 +177,6 @@ Autocomplete.options = options;
 Autocomplete.className = AUTOCOMPLETE_CLASSNAME;
 Autocomplete.defaultOptions = defaultOptions;
 Autocomplete.moduleName = "autocomplete";
-Autocomplete.folderName = "autocomplete";
+Autocomplete.folderName = Autocomplete.moduleName;
 
 export default Autocomplete;

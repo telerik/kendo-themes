@@ -48,6 +48,6 @@ ActionButtons.options = options;
 ActionButtons.className = ACTIONBUTTONS_CLASSNAME;
 ActionButtons.defaultOptions = defaultOptions;
 ActionButtons.moduleName = "action-buttons";
-ActionButtons.folderName = "action-buttons";
+ActionButtons.folderName = ActionButtons.moduleName;
 
 export default ActionButtons;

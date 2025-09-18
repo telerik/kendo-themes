@@ -1,5 +1,5 @@
 import { classNames, optionClassNames, Size } from '../misc';
-import { CalendarNavigation } from '.';
+import { Calendar, CalendarNavigation } from '.';
 import { CalendarInfiniteView, KendoCalendarInfiniteViewProps } from './calendar-infinite-view.spec';
 
 import { KendoComponent } from '../_types/component';
@@ -102,7 +102,7 @@ export const CalendarInfinite: KendoComponent<KendoCalendarInfiniteProps & Kendo
 CalendarInfinite.options = options;
 CalendarInfinite.className = CALENDARINFINITE_CLASSNAME;
 CalendarInfinite.defaultOptions = defaultOptions;
-CalendarInfinite.moduleName = "calendar";
-CalendarInfinite.folderName = "calendar";
+CalendarInfinite.moduleName = Calendar.moduleName;
+CalendarInfinite.folderName = Calendar.folderName;
 
 export default CalendarInfinite;

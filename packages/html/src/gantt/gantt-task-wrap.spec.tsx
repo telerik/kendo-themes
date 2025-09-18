@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { Gantt } from './gantt.spec';
 export const GANTTTASKWRAP_CLASSNAME = 'k-task-wrap';
 
 const states = [];
@@ -44,7 +45,7 @@ GanttTaskWrap.states = states;
 GanttTaskWrap.options = options;
 GanttTaskWrap.className = GANTTTASKWRAP_CLASSNAME;
 GanttTaskWrap.defaultOptions = defaultOptions;
-GanttTaskWrap.moduleName = "gantt";
-GanttTaskWrap.folderName = "gantt";
+GanttTaskWrap.moduleName = Gantt.moduleName;
+GanttTaskWrap.folderName = Gantt.folderName;
 
 export default GanttTaskWrap;

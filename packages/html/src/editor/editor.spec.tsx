@@ -74,6 +74,6 @@ Editor.options = options;
 Editor.className = EDITOR_CLASSNAME;
 Editor.defaultOptions = defaultOptions;
 Editor.moduleName = "editor";
-Editor.folderName = "editor";
+Editor.folderName = Editor.moduleName;
 
 export default Editor;

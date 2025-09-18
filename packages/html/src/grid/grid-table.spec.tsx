@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { Table, KendoTableOptions } from '../table';
 
 import { KendoComponent } from '../_types/component';
+import { Grid } from './grid.spec';
 export const GRIDTABLE_CLASSNAME = `k-grid-table`;
 
 export const GridTable: KendoComponent<KendoTableOptions & React.HTMLAttributes<HTMLTableElement>> = (
@@ -21,5 +22,5 @@ export const GridTable: KendoComponent<KendoTableOptions & React.HTMLAttributes<
 );
 
 GridTable.className = GRIDTABLE_CLASSNAME;
-GridTable.moduleName = "grid";
-GridTable.folderName = "grid";
+GridTable.moduleName = Grid.moduleName;
+GridTable.folderName = Grid.folderName;

@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { Drawer } from './drawer.spec';
 
 export const DRAWER_OVERLAY_CLASSNAME = `k-drawer-overlay`;
 
@@ -37,7 +38,7 @@ DrawerOverlay.states = states;
 DrawerOverlay.options = options;
 DrawerOverlay.className = DRAWER_OVERLAY_CLASSNAME;
 DrawerOverlay.defaultOptions = defaultOptions;
-DrawerOverlay.moduleName = "drawer";
-DrawerOverlay.folderName = "drawer";
+DrawerOverlay.moduleName = Drawer.moduleName;
+DrawerOverlay.folderName = Drawer.folderName;
 
 export default DrawerOverlay;

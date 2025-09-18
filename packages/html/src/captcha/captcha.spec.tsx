@@ -94,6 +94,6 @@ Captcha.options = options;
 Captcha.className = CAPTCHA_CLASSNAME;
 Captcha.defaultOptions = defaultOptions;
 Captcha.moduleName = "captcha";
-Captcha.folderName = "captcha";
+Captcha.folderName = Captcha.moduleName;
 
 export default Captcha;

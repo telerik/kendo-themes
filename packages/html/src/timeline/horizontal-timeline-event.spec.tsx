@@ -3,6 +3,7 @@ import { CardHeader, CardBody, CardSubtitle } from '../card';
 import { TimelineCard, TimelineCardTitle } from '../timeline';
 
 import { KendoComponent } from '../_types/component';
+import { Timeline } from './timeline.spec';
 export const TIMELINEHORIZONTALEVENT_CLASSNAME = `k-timeline-event`;
 
 const states = [];
@@ -63,7 +64,7 @@ HorizontalTimelineEvent.states = states;
 HorizontalTimelineEvent.options = options;
 HorizontalTimelineEvent.className = TIMELINEHORIZONTALEVENT_CLASSNAME;
 HorizontalTimelineEvent.defaultOptions = defaultOptions;
-HorizontalTimelineEvent.moduleName = "timeline";
-HorizontalTimelineEvent.folderName = "timeline";
+HorizontalTimelineEvent.moduleName = Timeline.moduleName;
+HorizontalTimelineEvent.folderName = Timeline.folderName;
 
 export default HorizontalTimelineEvent;

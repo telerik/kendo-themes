@@ -76,6 +76,6 @@ Grid.variants = GRID_VARIANTS;
 Grid.className = GRID_CLASSNAME;
 Grid.defaultOptions = defaultOptions;
 Grid.moduleName = "grid";
-Grid.folderName = "grid";
+Grid.folderName = Grid.moduleName;
 
 export default Grid;

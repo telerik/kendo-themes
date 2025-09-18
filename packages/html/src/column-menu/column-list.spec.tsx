@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { ColumnMenu } from './column-menu.spec';
 export const COLUMNLIST_CLASSNAME = `k-column-list`;
 
 const states = [];
@@ -49,7 +50,7 @@ ColumnList.states = states;
 ColumnList.options = options;
 ColumnList.className = COLUMNLIST_CLASSNAME;
 ColumnList.defaultOptions = defaultOptions;
-ColumnList.moduleName = "column-menu";
-ColumnList.folderName = "column-menu";
+ColumnList.moduleName = ColumnMenu.moduleName;
+ColumnList.folderName = ColumnMenu.folderName;
 
 export default ColumnList;

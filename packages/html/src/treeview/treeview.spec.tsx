@@ -93,6 +93,6 @@ Treeview.options = options;
 Treeview.className = TREEVIEW_CLASSNAME;
 Treeview.defaultOptions = defaultOptions;
 Treeview.moduleName = "treeview";
-Treeview.folderName = "treeview";
+Treeview.folderName = Treeview.moduleName;
 
 export default Treeview;

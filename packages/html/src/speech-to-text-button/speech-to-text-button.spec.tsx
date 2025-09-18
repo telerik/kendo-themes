@@ -48,6 +48,6 @@ SpeechToTextButton.options = Button.options;
 SpeechToTextButton.className = SPEECH_TO_TEXT_BUTTON_CLASSNAME;
 SpeechToTextButton.defaultOptions = defaultOptions;
 SpeechToTextButton.moduleName = "speech-to-text-button";
-SpeechToTextButton.folderName = "speech-to-text-button";
+SpeechToTextButton.folderName = SpeechToTextButton.moduleName;
 
 export default SpeechToTextButton;

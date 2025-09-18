@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { Menu } from './menu.spec';
 export const MENU_SCROLLABLE_WRAPPER_CLASS = `k-menu-scroll-wrapper`;
 
 const states = [];
@@ -44,7 +45,7 @@ MenuScrollableWrapper.states = states;
 MenuScrollableWrapper.options = options;
 MenuScrollableWrapper.className = MENU_SCROLLABLE_WRAPPER_CLASS;
 MenuScrollableWrapper.defaultOptions = defaultOptions;
-MenuScrollableWrapper.moduleName = "menu";
-MenuScrollableWrapper.folderName = "menu";
+MenuScrollableWrapper.moduleName = Menu.moduleName;
+MenuScrollableWrapper.folderName = Menu.folderName;
 
 export default MenuScrollableWrapper;

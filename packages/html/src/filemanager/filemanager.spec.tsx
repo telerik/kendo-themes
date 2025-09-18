@@ -85,6 +85,6 @@ FileManager.options = options;
 FileManager.className = FILEMANAGER_CLASSNAME;
 FileManager.defaultOptions = defaultOptions;
 FileManager.moduleName = "file-manager";
-FileManager.folderName = "filemanager";
+FileManager.folderName = FileManager.moduleName;
 
 export default FileManager;

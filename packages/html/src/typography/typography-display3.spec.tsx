@@ -21,6 +21,6 @@ TypographyDisplay3.states = states;
 TypographyDisplay3.options = options;
 TypographyDisplay3.className = TYPOGRAPHY_DISPLAY3_CLASSNAME;
 TypographyDisplay3.moduleName = "typography";
-TypographyDisplay3.folderName = "typography";
+TypographyDisplay3.folderName = TypographyDisplay3.moduleName;
 
 export default TypographyDisplay3;

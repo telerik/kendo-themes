@@ -21,6 +21,6 @@ TypographyCode.states = states;
 TypographyCode.options = options;
 TypographyCode.className = TYPOGRAPHY_CODE_CLASSNAME;
 TypographyCode.moduleName = "typography";
-TypographyCode.folderName = "typography";
+TypographyCode.folderName = TypographyCode.moduleName;
 
 export default TypographyCode;

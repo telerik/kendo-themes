@@ -51,6 +51,6 @@ Timeline.options = options;
 Timeline.className = TIMELINE_CLASSNAME;
 Timeline.defaultOptions = defaultOptions;
 Timeline.moduleName = "timeline";
-Timeline.folderName = "timeline";
+Timeline.folderName = Timeline.moduleName;
 
 export default Timeline;

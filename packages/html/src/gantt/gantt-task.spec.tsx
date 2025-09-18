@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { Gantt } from './gantt.spec';
 export const GANTTTASK_CLASSNAME = 'k-task';
 
 const states = [];
@@ -45,7 +46,7 @@ GanttTask.states = states;
 GanttTask.options = options;
 GanttTask.className = GANTTTASK_CLASSNAME;
 GanttTask.defaultOptions = defaultOptions;
-GanttTask.moduleName = "gantt";
-GanttTask.folderName = "gantt";
+GanttTask.moduleName = Gantt.moduleName;
+GanttTask.folderName = Gantt.folderName;
 
 export default GanttTask;

@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { Pager, KendoPagerProps } from '../pager';
 
 import { KendoComponent } from '../_types/component';
+import { Grid } from './grid.spec';
 const className = `k-grid-pager`;
 
 export const GridPager: KendoComponent<KendoPagerProps & React.HTMLAttributes<HTMLDivElement>> = (
@@ -20,5 +21,5 @@ export const GridPager: KendoComponent<KendoPagerProps & React.HTMLAttributes<HT
 );
 
 GridPager.className = className;
-GridPager.moduleName = "grid";
-GridPager.folderName = "grid";
+GridPager.moduleName = Grid.moduleName;
+GridPager.folderName = Grid.folderName;

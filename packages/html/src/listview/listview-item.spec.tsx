@@ -1,6 +1,7 @@
 import { classNames, stateClassNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import ListView from './listview.spec';
 export const LISTVIEWITEM_CLASSNAME = `k-listview-item`;
 
 const states = [
@@ -44,7 +45,7 @@ ListViewItem.states = states;
 ListViewItem.options = options;
 ListViewItem.className = LISTVIEWITEM_CLASSNAME;
 ListViewItem.defaultOptions = defaultOptions;
-ListViewItem.moduleName = "listview";
-ListViewItem.folderName = "listview";
+ListViewItem.moduleName = ListView.moduleName;
+ListViewItem.folderName = ListView.folderName;
 
 export default ListViewItem;

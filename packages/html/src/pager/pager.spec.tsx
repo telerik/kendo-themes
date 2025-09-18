@@ -231,6 +231,6 @@ Pager.options = options;
 Pager.className = PAGER_CLASSNAME;
 Pager.defaultOptions = defaultOptions;
 Pager.moduleName = "pager";
-Pager.folderName = "pager";
+Pager.folderName = Pager.moduleName;
 
 export default Pager;

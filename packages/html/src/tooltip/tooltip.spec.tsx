@@ -88,6 +88,6 @@ Tooltip.options = options;
 Tooltip.className = TOOLTIP_CLASSNAME;
 Tooltip.defaultOptions = defaultOptions;
 Tooltip.moduleName = "tooltip";
-Tooltip.folderName = "tooltip";
+Tooltip.folderName = Tooltip.moduleName;
 
 export default Tooltip;

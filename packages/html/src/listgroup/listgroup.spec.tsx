@@ -60,6 +60,6 @@ ListGroup.options = options;
 ListGroup.className = LISTGROUP_CLASSNAME;
 ListGroup.defaultOptions = defaultOptions;
 ListGroup.moduleName = "listgroup";
-ListGroup.folderName = "listgroup";
+ListGroup.folderName = ListGroup.moduleName;
 
 export default ListGroup;

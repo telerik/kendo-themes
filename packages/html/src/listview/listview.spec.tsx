@@ -102,6 +102,6 @@ ListView.options = options;
 ListView.className = LISTVIEW_CLASSNAME;
 ListView.defaultOptions = defaultOptions;
 ListView.moduleName = "listview";
-ListView.folderName = "listview";
+ListView.folderName = ListView.moduleName;
 
 export default ListView;

@@ -88,6 +88,6 @@ Badge.options = options;
 Badge.className = BADGE_CLASSNAME;
 Badge.defaultOptions = defaultOptions;
 Badge.moduleName = "badge";
-Badge.folderName = "badge";
+Badge.folderName = Badge.moduleName;
 
 export default Badge;

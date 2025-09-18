@@ -166,6 +166,6 @@ TabStrip.options = options;
 TabStrip.className = TABSTRIP_CLASSNAME;
 TabStrip.defaultOptions = defaultOptions;
 TabStrip.moduleName = "tabstrip";
-TabStrip.folderName = "tabstrip";
+TabStrip.folderName = TabStrip.moduleName;
 
 export default TabStrip;

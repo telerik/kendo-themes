@@ -2,6 +2,7 @@ import { Icon } from '../icon';
 import { classNames, stateClassNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { Menu } from './menu.spec';
 export const MENUITEM_CLASSNAME = `k-menu-item`;
 
 const states = [
@@ -116,7 +117,7 @@ MenuItem.states = states;
 MenuItem.options = options;
 MenuItem.className = MENUITEM_CLASSNAME;
 MenuItem.defaultOptions = defaultOptions;
-MenuItem.moduleName = "menu";
-MenuItem.folderName = "menu";
+MenuItem.moduleName = Menu.moduleName;
+MenuItem.folderName = Menu.folderName;
 
 export default MenuItem;
