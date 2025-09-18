@@ -46,7 +46,7 @@
     }
 
     :where(.k-skeleton-wave) .k-skeleton,
-    .k-skeleton.k-skeleton-wave {
+    :where(.k-skeleton-wave).k-skeleton {
         position: relative;
         overflow: hidden;
 
@@ -77,7 +77,7 @@
     }
 
     :where(.k-skeleton-pulse) .k-skeleton,
-    .k-skeleton.k-skeleton-pulse     {
+    :where(.k-skeleton-pulse).k-skeleton  {
         animation: k-skeleton-pulse 1.5s ease-in-out .5s infinite;
     }
 
