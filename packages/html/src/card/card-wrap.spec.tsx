@@ -1,11 +1,14 @@
-import { classNames, stateClassNames } from '../misc';
+import { classNames, stateClassNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { CARD_FOLDER_NAME, CARD_MODULE_NAME } from './constants';
 
 export const CARD_WRAP_CLASSNAME = `k-card-wrap`;
 
-const states = ['focus', 'selected'];
+const states = [
+    States.focus,
+    States.selected
+];
 
 const options = {};
 

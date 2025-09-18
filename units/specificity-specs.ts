@@ -140,7 +140,7 @@ import { Orgchart } from "../packages/html/src/orgchart/orgchart.spec";
 import { OneTimePassword } from "../packages/html/src/otp/otp.spec";
 import { Pager } from "../packages/html/src/pager/pager.spec";
 import { PanelBar } from "../packages/html/src/panelbar/panelbar.spec";
-import { PdfExportShadow } from "../packages/html/src/utils/pdf-export-shadow.spec";
+import { PdfExportShadow } from "../packages/html/src/pdf/pdf-export-shadow.spec";
 import { PDFViewer } from "../packages/html/src/pdf-viewer/pdf-viewer.spec";
 import { Picker } from "../packages/html/src/input/picker.spec";
 import { PivotGrid } from "../packages/html/src/pivotgrid/pivotgrid.spec";
