@@ -1,0 +1,2 @@
+export const LISTGROUP_MODULE_NAME = 'listgroup';
+export const LISTGROUP_FOLDER_NAME = LISTGROUP_MODULE_NAME;

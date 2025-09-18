@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, ThemeColor } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { APPBAR_FOLDER_NAME, APPBAR_MODULE_NAME } from './constants';
 export const APPBAR_CLASSNAME = `k-appbar`;
 
 const states = [];
@@ -67,7 +68,7 @@ Appbar.states = states;
 Appbar.options = options;
 Appbar.className = APPBAR_CLASSNAME;
 Appbar.defaultOptions = defaultOptions;
-Appbar.moduleName = "appbar";
-Appbar.folderName = Appbar.moduleName;
+Appbar.moduleName = APPBAR_MODULE_NAME;
+Appbar.folderName = APPBAR_FOLDER_NAME;
 
 export default Appbar;

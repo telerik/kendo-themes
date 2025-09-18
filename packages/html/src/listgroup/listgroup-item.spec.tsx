@@ -1,7 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import ListGroup from './listgroup.spec';
+import { LISTGROUP_FOLDER_NAME, LISTGROUP_MODULE_NAME } from './constants';
 export const LISTGROUPITEM_CLASSNAME = `k-listgroup-item`;
 
 const states = [];
@@ -67,7 +67,7 @@ ListGroupItem.states = states;
 ListGroupItem.options = options;
 ListGroupItem.className = LISTGROUPITEM_CLASSNAME;
 ListGroupItem.defaultOptions = defaultOptions;
-ListGroupItem.moduleName = ListGroup.moduleName;
-ListGroupItem.folderName = ListGroup.folderName;
+ListGroupItem.moduleName = LISTGROUP_MODULE_NAME;
+ListGroupItem.folderName = LISTGROUP_FOLDER_NAME;
 
 export default ListGroupItem;

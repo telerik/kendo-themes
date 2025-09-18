@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { Grid, KendoGridProps } from '../grid';
 
 import { KendoComponent } from '../_types/component';
+import { TREELIST_FOLDER_NAME, TREELIST_MODULE_NAME } from './constants';
 const TREELIST_CLASSNAME = 'k-treelist';
 
 const states = [];
@@ -29,7 +30,7 @@ TreeList.states = states;
 TreeList.options = options;
 TreeList.className = TREELIST_CLASSNAME;
 TreeList.defaultOptions = defaultOptions;
-TreeList.moduleName = "treelist";
-TreeList.folderName = TreeList.moduleName;
+TreeList.moduleName = TREELIST_MODULE_NAME;
+TreeList.folderName = TREELIST_FOLDER_NAME;
 
 export default TreeList;

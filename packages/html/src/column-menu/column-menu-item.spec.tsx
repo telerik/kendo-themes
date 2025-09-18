@@ -2,7 +2,7 @@ import { classNames, stateClassNames, States } from '../misc';
 import { Icon } from '../icon';
 
 import { KendoComponent } from '../_types/component';
-import { ColumnMenu } from './column-menu.spec';
+import { COLUMN_MENU_FOLDER_NAME, COLUMN_MENU_MODULE_NAME } from './constants';
 export const COLUMNMENUITEM_CLASSNAME = `k-columnmenu-item`;
 
 const states = [
@@ -65,7 +65,7 @@ ColumnMenuItem.states = states;
 ColumnMenuItem.options = options;
 ColumnMenuItem.className = COLUMNMENUITEM_CLASSNAME;
 ColumnMenuItem.defaultOptions = defaultOptions;
-ColumnMenuItem.moduleName = ColumnMenu.moduleName;
-ColumnMenuItem.folderName = ColumnMenu.folderName;
+ColumnMenuItem.moduleName = COLUMN_MENU_MODULE_NAME;
+ColumnMenuItem.folderName = COLUMN_MENU_FOLDER_NAME;
 
 export default ColumnMenuItem;

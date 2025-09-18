@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { KendoComponent } from '../_types/component';
+import { RIPPLE_FOLDER_NAME, RIPPLE_MODULE_NAME } from './constants';
 import { classNames } from '../misc';
 
 export const RIPPLE_CONTAINER_CLASSNAME = `k-ripple-container`;
@@ -37,7 +38,7 @@ RippleContainer.states = states;
 RippleContainer.options = options;
 RippleContainer.className = RIPPLE_CONTAINER_CLASSNAME;
 RippleContainer.defaultOptions = defaultOptions;
-RippleContainer.moduleName = "ripple";
-RippleContainer.folderName = RippleContainer.moduleName;
+RippleContainer.moduleName = RIPPLE_MODULE_NAME;
+RippleContainer.folderName = RIPPLE_FOLDER_NAME;
 
 export default RippleContainer;

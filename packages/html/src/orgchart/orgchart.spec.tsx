@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { ORGCHART_FOLDER_NAME, ORGCHART_MODULE_NAME } from './constants';
 export const ORGCHART_CLASSNAME = `k-orgchart`;
 
 const states = [];
@@ -46,7 +47,7 @@ Orgchart.states = states;
 Orgchart.options = options;
 Orgchart.className = ORGCHART_CLASSNAME;
 Orgchart.defaultOptions = defaultOptions;
-Orgchart.moduleName = "orgchart";
-Orgchart.folderName = Orgchart.moduleName;
+Orgchart.moduleName = ORGCHART_MODULE_NAME;
+Orgchart.folderName = ORGCHART_FOLDER_NAME;
 
 export default Orgchart;

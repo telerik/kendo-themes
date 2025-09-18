@@ -1,7 +1,7 @@
 import { classNames, stateClassNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import { Card } from './card.spec';
+import { CARD_FOLDER_NAME, CARD_MODULE_NAME } from './constants';
 
 export const CARD_WRAP_CLASSNAME = `k-card-wrap`;
 
@@ -46,7 +46,7 @@ CardWrap.states = states;
 CardWrap.options = options;
 CardWrap.className = CARD_WRAP_CLASSNAME;
 CardWrap.defaultOptions = defaultOptions;
-CardWrap.moduleName = Card.moduleName;
-CardWrap.folderName = Card.folderName;
+CardWrap.moduleName = CARD_MODULE_NAME;
+CardWrap.folderName = CARD_FOLDER_NAME;
 
 export default CardWrap;

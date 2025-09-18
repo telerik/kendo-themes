@@ -1,0 +1,2 @@
+export const SCROLLVIEW_MODULE_NAME = 'scrollview';
+export const SCROLLVIEW_FOLDER_NAME = SCROLLVIEW_MODULE_NAME;

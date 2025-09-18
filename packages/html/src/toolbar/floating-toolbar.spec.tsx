@@ -1,7 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import Toolbar from './toolbar.spec';
+import { TOOLBAR_FOLDER_NAME, TOOLBAR_MODULE_NAME } from './constants';
 
 export const FLOATING_TOOLBAR_CLASSNAME = `k-floating-toolbar`;
 
@@ -38,7 +38,7 @@ FloatingToolbar.states = states;
 FloatingToolbar.options = options;
 FloatingToolbar.className = FLOATING_TOOLBAR_CLASSNAME;
 FloatingToolbar.defaultOptions = defaultOptions;
-FloatingToolbar.moduleName = Toolbar.moduleName;
-FloatingToolbar.folderName = Toolbar.folderName;
+FloatingToolbar.moduleName = TOOLBAR_MODULE_NAME;
+FloatingToolbar.folderName = TOOLBAR_FOLDER_NAME;
 
 export default FloatingToolbar;

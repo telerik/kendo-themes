@@ -2,7 +2,7 @@ import * as React from 'react';
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import { Table } from './table.spec';
+import { TABLE_FOLDER_NAME, TABLE_MODULE_NAME } from './constants';
 
 const TABLE_FOOTER_CLASSNAME = 'k-table-footer';
 
@@ -46,7 +46,7 @@ TableFooter.states = states;
 TableFooter.options = options;
 TableFooter.className = TABLE_FOOTER_CLASSNAME;
 TableFooter.defaultOptions = defaultOptions;
-TableFooter.moduleName = Table.moduleName;
-TableFooter.folderName = Table.folderName;
+TableFooter.moduleName = TABLE_MODULE_NAME;
+TableFooter.folderName = TABLE_FOLDER_NAME;
 
 export default TableFooter;

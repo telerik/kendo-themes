@@ -1,0 +1,2 @@
+export const SKELETON_MODULE_NAME = 'skeleton';
+export const SKELETON_FOLDER_NAME = SKELETON_MODULE_NAME;

@@ -14,6 +14,7 @@ import { CalendarNormal } from '../calendar';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 
 import { KendoComponent } from '../_types/component';
+import { DATEPICKER_FOLDER_NAME, DATEPICKER_MODULE_NAME } from './constants';
 export const DATEPICKER_CLASSNAME = `k-datepicker`;
 
 const states = [
@@ -159,7 +160,7 @@ DatePicker.states = states;
 DatePicker.options = options;
 DatePicker.className = DATEPICKER_CLASSNAME;
 DatePicker.defaultOptions = defaultOptions;
-DatePicker.moduleName = "date-picker";
-DatePicker.folderName = "datepicker";
+DatePicker.moduleName = DATEPICKER_MODULE_NAME;
+DatePicker.folderName = DATEPICKER_FOLDER_NAME;
 
 export default DatePicker;

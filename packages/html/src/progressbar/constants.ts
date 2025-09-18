@@ -1,0 +1,2 @@
+export const PROGRESSBAR_MODULE_NAME = 'progressbar';
+export const PROGRESSBAR_FOLDER_NAME = PROGRESSBAR_MODULE_NAME;

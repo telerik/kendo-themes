@@ -14,6 +14,7 @@ import { ColorEditor } from "../coloreditor";
 
 
 import { KendoComponent } from '../_types/component';
+import { COLORPICKER_FOLDER_NAME, COLORPICKER_MODULE_NAME } from './constants';
 export const COLORPICKER_CLASSNAME = `k-colorpicker`;
 
 const states = [
@@ -171,7 +172,7 @@ ColorPicker.states = states;
 ColorPicker.options = options;
 ColorPicker.className = COLORPICKER_CLASSNAME;
 ColorPicker.defaultOptions = defaultOptions;
-ColorPicker.moduleName = "color-picker";
-ColorPicker.folderName = "colorpicker";
+ColorPicker.moduleName = COLORPICKER_MODULE_NAME;
+ColorPicker.folderName = COLORPICKER_FOLDER_NAME;
 
 export default ColorPicker;

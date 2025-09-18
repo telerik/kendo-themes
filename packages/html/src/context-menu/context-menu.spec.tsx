@@ -2,6 +2,7 @@ import { KendoMenuListOptions, MenuList } from '../menu';
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { CONTEXT_MENU_FOLDER_NAME, CONTEXT_MENU_MODULE_NAME } from './constants';
 export const CONTEXTMENU_CLASSNAME = `k-context-menu`;
 
 const states = [];
@@ -36,7 +37,7 @@ ContextMenu.states = states;
 ContextMenu.options = options;
 ContextMenu.className = CONTEXTMENU_CLASSNAME;
 ContextMenu.defaultOptions = defaultOptions;
-ContextMenu.moduleName = "menu";
-ContextMenu.folderName = ContextMenu.moduleName;
+ContextMenu.moduleName = CONTEXT_MENU_MODULE_NAME;
+ContextMenu.folderName = CONTEXT_MENU_FOLDER_NAME;
 
 export default ContextMenu;

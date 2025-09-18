@@ -1,0 +1,2 @@
+export const LISTVIEW_MODULE_NAME = 'listview';
+export const LISTVIEW_FOLDER_NAME = LISTVIEW_MODULE_NAME;

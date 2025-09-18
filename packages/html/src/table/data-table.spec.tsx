@@ -1,7 +1,7 @@
 import { classNames, optionClassNames, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import Table from './table.spec';
+import { TABLE_FOLDER_NAME, TABLE_MODULE_NAME } from './constants';
 export const DATATABLE_CLASSNAME = `k-data-table`;
 
 const states = [];
@@ -47,7 +47,7 @@ DataTable.states = states;
 DataTable.options = options;
 DataTable.className = DATATABLE_CLASSNAME;
 DataTable.defaultOptions = defaultOptions;
-DataTable.moduleName = Table.moduleName;
-DataTable.folderName = Table.folderName;
+DataTable.moduleName = TABLE_MODULE_NAME;
+DataTable.folderName = TABLE_FOLDER_NAME;
 
 export default DataTable;

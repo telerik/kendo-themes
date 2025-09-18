@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { BADGE_FOLDER_NAME, BADGE_MODULE_NAME } from './constants';
 export const BADGE_CLASSNAME = `k-badge`;
 
 const states = [];
@@ -87,7 +88,7 @@ Badge.states = states;
 Badge.options = options;
 Badge.className = BADGE_CLASSNAME;
 Badge.defaultOptions = defaultOptions;
-Badge.moduleName = "badge";
-Badge.folderName = Badge.moduleName;
+Badge.moduleName = BADGE_MODULE_NAME;
+Badge.folderName = BADGE_FOLDER_NAME;
 
 export default Badge;

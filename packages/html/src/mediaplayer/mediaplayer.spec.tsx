@@ -3,6 +3,7 @@ import { SliderNormal } from '../slider';
 import { MediaPlayerToolbar } from './mediaplayer-toolbar';
 
 import { KendoComponent } from '../_types/component';
+import { MEDIAPLAYER_FOLDER_NAME, MEDIAPLAYER_MODULE_NAME } from './constants';
 export const MEDIAPLAYER_CLASSNAME = `k-mediaplayer`;
 
 const states = [];
@@ -55,7 +56,7 @@ MediaPlayer.states = states;
 MediaPlayer.options = options;
 MediaPlayer.className = MEDIAPLAYER_CLASSNAME;
 MediaPlayer.defaultOptions = defaultOptions;
-MediaPlayer.moduleName = "media-player";
-MediaPlayer.folderName = "mediaplayer";
+MediaPlayer.moduleName = MEDIAPLAYER_MODULE_NAME;
+MediaPlayer.folderName = MEDIAPLAYER_FOLDER_NAME;
 
 export default MediaPlayer;

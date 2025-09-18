@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { INPUT_FOLDER_NAME, INPUT_MODULE_NAME } from './constants';
 export const INPUT_CLASSNAME = `k-input`;
 
 export const states = [
@@ -67,7 +68,7 @@ Input.states = states;
 Input.options = options;
 Input.className = INPUT_CLASSNAME;
 Input.defaultOptions = defaultOptions;
-Input.moduleName = "input";
-Input.folderName = Input.moduleName;
+Input.moduleName = INPUT_MODULE_NAME;
+Input.folderName = INPUT_FOLDER_NAME;
 
 export default Input;

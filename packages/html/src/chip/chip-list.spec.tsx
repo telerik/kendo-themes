@@ -1,7 +1,7 @@
 import { classNames, optionClassNames, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import Chip from './chip.spec';
+import { CHIP_FOLDER_NAME, CHIP_MODULE_NAME } from './constants';
 export const CHIPLIST_CLASSNAME = `k-chip-list`;
 
 const states = [];
@@ -47,7 +47,7 @@ ChipList.states = states;
 ChipList.options = options;
 ChipList.className = CHIPLIST_CLASSNAME;
 ChipList.defaultOptions = defaultOptions;
-ChipList.moduleName = Chip.moduleName;
-ChipList.folderName = Chip.folderName;
+ChipList.moduleName = CHIP_MODULE_NAME;
+ChipList.folderName = CHIP_FOLDER_NAME;
 
 export default ChipList;

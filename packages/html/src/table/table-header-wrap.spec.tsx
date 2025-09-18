@@ -2,7 +2,7 @@ import * as React from 'react';
 import { classNames, stateClassNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import { Table } from './table.spec';
+import { TABLE_FOLDER_NAME, TABLE_MODULE_NAME } from './constants';
 
 const TABLE_HEADER_WRAP_CLASSNAME = 'k-table-header-wrap';
 
@@ -58,7 +58,7 @@ TableHeaderWrap.states = states;
 TableHeaderWrap.options = options;
 TableHeaderWrap.className = TABLE_HEADER_WRAP_CLASSNAME;
 TableHeaderWrap.defaultOptions = defaultOptions;
-TableHeaderWrap.moduleName = Table.moduleName;
-TableHeaderWrap.folderName = Table.folderName;
+TableHeaderWrap.moduleName = TABLE_MODULE_NAME;
+TableHeaderWrap.folderName = TABLE_FOLDER_NAME;
 
 export default TableHeaderWrap;

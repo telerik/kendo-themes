@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { KendoComponent } from '../_types/component';
-import { TabStrip } from './tabstrip.spec';
+import { TABSTRIP_FOLDER_NAME, TABSTRIP_MODULE_NAME } from './constants';
 import { classNames } from '../misc';
 
 export const TABSTRIP_WRAPPER_CLASSNAME = `k-tabstrip-wrapper`;
@@ -38,7 +38,7 @@ TabstripContainer.states = states;
 TabstripContainer.options = options;
 TabstripContainer.className = TABSTRIP_WRAPPER_CLASSNAME;
 TabstripContainer.defaultOptions = defaultOptions;
-TabstripContainer.moduleName = TabStrip.moduleName;
-TabstripContainer.folderName = TabStrip.folderName;
+TabstripContainer.moduleName = TABSTRIP_MODULE_NAME;
+TabstripContainer.folderName = TABSTRIP_FOLDER_NAME;
 
 export default TabstripContainer;

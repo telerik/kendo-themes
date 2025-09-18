@@ -1,0 +1,2 @@
+export const FLOATING_LABEL_MODULE_NAME = 'floating-label';
+export const FLOATING_LABEL_FOLDER_NAME = FLOATING_LABEL_MODULE_NAME;

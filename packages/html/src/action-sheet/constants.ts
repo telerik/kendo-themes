@@ -1,0 +1,2 @@
+export const ACTION_SHEET_MODULE_NAME = 'action-sheet';
+export const ACTION_SHEET_FOLDER_NAME = ACTION_SHEET_MODULE_NAME;

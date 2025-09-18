@@ -2,7 +2,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import { Drawer } from './drawer.spec';
+import { DRAWER_FOLDER_NAME, DRAWER_MODULE_NAME } from './constants';
 export const DRAWERCONTENT_CLASSNAME = `k-drawer-content`;
 
 const states = [];
@@ -33,7 +33,7 @@ DrawerContent.states = states;
 DrawerContent.options = options;
 DrawerContent.className = DRAWERCONTENT_CLASSNAME;
 DrawerContent.defaultOptions = defaultOptions;
-DrawerContent.moduleName = Drawer.moduleName;
-DrawerContent.folderName = Drawer.folderName;
+DrawerContent.moduleName = DRAWER_MODULE_NAME;
+DrawerContent.folderName = DRAWER_FOLDER_NAME;
 
 export default DrawerContent;

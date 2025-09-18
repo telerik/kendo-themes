@@ -2,7 +2,7 @@ import { classNames } from '../misc';
 import { Table, KendoTableOptions } from '../table';
 
 import { KendoComponent } from '../_types/component';
-import { Gantt } from './gantt.spec';
+import { GANTT_FOLDER_NAME, GANTT_MODULE_NAME } from './constants';
 export const GANTTCOLUMNSTABLE_CLASSNAME = `k-gantt-columns`;
 
 export const GanttColumnsTable: KendoComponent<KendoTableOptions & React.HTMLAttributes<HTMLTableElement>> = (
@@ -22,5 +22,5 @@ export const GanttColumnsTable: KendoComponent<KendoTableOptions & React.HTMLAtt
 );
 
 GanttColumnsTable.className = GANTTCOLUMNSTABLE_CLASSNAME;
-GanttColumnsTable.moduleName = Gantt.moduleName;
-GanttColumnsTable.folderName = Gantt.folderName;
+GanttColumnsTable.moduleName = GANTT_MODULE_NAME;
+GanttColumnsTable.folderName = GANTT_FOLDER_NAME;

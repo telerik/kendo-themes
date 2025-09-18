@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { TILELAYOUT_FOLDER_NAME, TILELAYOUT_MODULE_NAME } from './constants';
 export const TILELAYOUT_CLASSNAME = `k-tilelayout`;
 
 const states = [];
@@ -53,7 +54,7 @@ TileLayout.states = states;
 TileLayout.options = options;
 TileLayout.className = TILELAYOUT_CLASSNAME;
 TileLayout.defaultOptions = defaultOptions;
-TileLayout.moduleName = "tile-layout";
-TileLayout.folderName = "tilelayout";
+TileLayout.moduleName = TILELAYOUT_MODULE_NAME;
+TileLayout.folderName = TILELAYOUT_FOLDER_NAME;
 
 export default TileLayout;

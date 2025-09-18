@@ -2,6 +2,7 @@ import { classNames, stateClassNames, States, } from '../misc';
 import { PROGRESSBAR_CLASSNAME } from './progressbar.spec';
 
 import { KendoComponent } from '../_types/component';
+import { PROGRESSBAR_FOLDER_NAME, PROGRESSBAR_MODULE_NAME } from './constants';
 export const CHUNKPROGRESSBAR_CLASSNAME = `k-chunk-progressbar`;
 
 const isSelected = (progress: number, index: number) => (index <= progress - 1 ? true : false);
@@ -79,7 +80,7 @@ ChunkProgressBar.states = states;
 ChunkProgressBar.options = options;
 ChunkProgressBar.className = CHUNKPROGRESSBAR_CLASSNAME;
 ChunkProgressBar.defaultOptions = defaultOptions;
-ChunkProgressBar.moduleName = "progressbar";
-ChunkProgressBar.folderName = ChunkProgressBar.moduleName;
+ChunkProgressBar.moduleName = PROGRESSBAR_MODULE_NAME;
+ChunkProgressBar.folderName = PROGRESSBAR_FOLDER_NAME;
 
 export default ChunkProgressBar;

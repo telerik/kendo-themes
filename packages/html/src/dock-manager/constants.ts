@@ -1,0 +1,2 @@
+export const DOCK_MANAGER_MODULE_NAME = 'dock-manager';
+export const DOCK_MANAGER_FOLDER_NAME = DOCK_MANAGER_MODULE_NAME;

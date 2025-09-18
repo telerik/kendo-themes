@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { Icon } from '../icon';
 
 import { KendoComponent } from '../_types/component';
+import { SCROLLVIEW_FOLDER_NAME, SCROLLVIEW_MODULE_NAME } from './constants';
 const SCROLLVIEW_CLASSNAME = 'k-scrollview';
 
 const states = [];
@@ -135,7 +136,7 @@ ScrollView.states = states;
 ScrollView.options = options;
 ScrollView.className = SCROLLVIEW_CLASSNAME;
 ScrollView.defaultOptions = defaultOptions;
-ScrollView.moduleName = "scrollview";
-ScrollView.folderName = ScrollView.moduleName;
+ScrollView.moduleName = SCROLLVIEW_MODULE_NAME;
+ScrollView.folderName = SCROLLVIEW_FOLDER_NAME;
 
 export default ScrollView;

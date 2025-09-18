@@ -1,0 +1,2 @@
+export const COMBOBOX_MODULE_NAME = 'combobox';
+export const COMBOBOX_FOLDER_NAME = COMBOBOX_MODULE_NAME;

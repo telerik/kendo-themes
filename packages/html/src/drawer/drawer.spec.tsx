@@ -3,6 +3,7 @@ import { classNames } from '../misc';
 import { DrawerContainer } from './drawer-container.spec';
 
 import { KendoComponent } from '../_types/component';
+import { DRAWER_FOLDER_NAME, DRAWER_MODULE_NAME } from './constants';
 export const DRAWER_CLASSNAME = `k-drawer`;
 
 const states = [];
@@ -74,7 +75,7 @@ Drawer.states = states;
 Drawer.options = options;
 Drawer.className = DRAWER_CLASSNAME;
 Drawer.defaultOptions = defaultOptions;
-Drawer.moduleName = "drawer";
-Drawer.folderName = Drawer.moduleName;
+Drawer.moduleName = DRAWER_MODULE_NAME;
+Drawer.folderName = DRAWER_FOLDER_NAME;
 
 export default Drawer;

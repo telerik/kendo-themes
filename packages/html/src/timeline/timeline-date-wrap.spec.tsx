@@ -1,7 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import { Timeline } from './timeline.spec';
+import { TIMELINE_FOLDER_NAME, TIMELINE_MODULE_NAME } from './constants';
 export const TIMELINEDATEWRAP_CLASSNAME = `k-timeline-date-wrap`;
 
 const states = [];
@@ -42,7 +42,7 @@ TimelineDateWrap.states = states;
 TimelineDateWrap.options = options;
 TimelineDateWrap.className = TIMELINEDATEWRAP_CLASSNAME;
 TimelineDateWrap.defaultOptions = defaultOptions;
-TimelineDateWrap.moduleName = Timeline.moduleName;
-TimelineDateWrap.folderName = Timeline.folderName;
+TimelineDateWrap.moduleName = TIMELINE_MODULE_NAME;
+TimelineDateWrap.folderName = TIMELINE_FOLDER_NAME;
 
 export default TimelineDateWrap;

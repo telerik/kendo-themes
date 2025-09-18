@@ -1,7 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import { Scheduler } from './scheduler.spec';
+import { SCHEDULER_FOLDER_NAME, SCHEDULER_MODULE_NAME } from './constants';
 const className = 'k-scheduler-cell';
 
 const states = [];
@@ -66,7 +66,7 @@ SchedulerCell.states = states;
 SchedulerCell.options = options;
 SchedulerCell.defaultOptions = defaultOptions;
 SchedulerCell.className = className;
-SchedulerCell.moduleName = Scheduler.moduleName;
-SchedulerCell.folderName = Scheduler.folderName;
+SchedulerCell.moduleName = SCHEDULER_MODULE_NAME;
+SchedulerCell.folderName = SCHEDULER_FOLDER_NAME;
 
 export default SchedulerCell;

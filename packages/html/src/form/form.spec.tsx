@@ -3,6 +3,7 @@ import { FormField } from './form-field';
 import { Fieldset } from './fieldset';
 
 import { KendoComponent } from '../_types/component';
+import { FORM_FOLDER_NAME, FORM_MODULE_NAME } from './constants';
 export const FORM_CLASSNAME = 'k-form';
 
 const states = [];
@@ -110,8 +111,8 @@ Form.states = states;
 Form.options = options;
 Form.className = FORM_CLASSNAME;
 Form.defaultOptions = defaultOptions;
-Form.moduleName = "form";
-Form.folderName = "forms";
+Form.moduleName = FORM_MODULE_NAME;
+Form.folderName = FORM_FOLDER_NAME;
 
 export default Form;
 

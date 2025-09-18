@@ -1,7 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
-import Radio from './radio.spec';
+import { RADIO_FOLDER_NAME, RADIO_MODULE_NAME } from './constants';
 export const RADIOITEM_CLASSNAME = `k-radio-list-item`;
 
 const states = [];
@@ -36,7 +36,7 @@ RadioItem.states = states;
 RadioItem.options = options;
 RadioItem.className = RADIOITEM_CLASSNAME;
 RadioItem.defaultOptions = defaultOptions;
-RadioItem.moduleName = Radio.moduleName;
-RadioItem.folderName = Radio.folderName;
+RadioItem.moduleName = RADIO_MODULE_NAME;
+RadioItem.folderName = RADIO_FOLDER_NAME;
 
 export default RadioItem;

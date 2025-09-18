@@ -1,0 +1,2 @@
+export const SEARCHBAR_MODULE_NAME = 'searchbar';
+export const SEARCHBAR_FOLDER_NAME = SEARCHBAR_MODULE_NAME;

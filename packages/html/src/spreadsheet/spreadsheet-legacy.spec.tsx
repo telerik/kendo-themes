@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { SPREADSHEET_FOLDER_NAME, SPREADSHEET_MODULE_NAME } from './constants';
 
 export const SPREADSHEET_LEGACY_CLASSNAME = `k-spreadsheet-legacy`;
 
@@ -40,7 +41,7 @@ SpreadsheetLegacy.states = states;
 SpreadsheetLegacy.options = options;
 SpreadsheetLegacy.className = SPREADSHEET_LEGACY_CLASSNAME;
 SpreadsheetLegacy.defaultOptions = defaultOptions;
-SpreadsheetLegacy.moduleName = "spreadsheet";
-SpreadsheetLegacy.folderName = SpreadsheetLegacy.moduleName;
+SpreadsheetLegacy.moduleName = SPREADSHEET_MODULE_NAME;
+SpreadsheetLegacy.folderName = SPREADSHEET_FOLDER_NAME;
 
 export default SpreadsheetLegacy;

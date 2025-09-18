@@ -1,0 +1,2 @@
+export const SIGNATURE_MODULE_NAME = 'signature';
+export const SIGNATURE_FOLDER_NAME = SIGNATURE_MODULE_NAME;

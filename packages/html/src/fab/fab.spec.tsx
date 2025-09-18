@@ -2,6 +2,7 @@ import { Icon } from '../icon';
 import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { FAB_FOLDER_NAME, FAB_MODULE_NAME } from './constants';
 export const FLOATINGACTIONBUTTON_CLASSNAME = `k-fab`;
 
 const states = [
@@ -110,7 +111,7 @@ FloatingActionButton.states = states;
 FloatingActionButton.options = options;
 FloatingActionButton.className = FLOATINGACTIONBUTTON_CLASSNAME;
 FloatingActionButton.defaultOptions = defaultOptions;
-FloatingActionButton.moduleName = "fab";
-FloatingActionButton.folderName = FloatingActionButton.moduleName;
+FloatingActionButton.moduleName = FAB_MODULE_NAME;
+FloatingActionButton.folderName = FAB_FOLDER_NAME;
 
 export default FloatingActionButton;

@@ -1,5 +1,6 @@
 import { classNames, States, Size, Roundness, FillMode } from '../misc';
 import { KendoComponent } from '../_types/component';
+import { MASKEDTEXTBOX_FOLDER_NAME, MASKEDTEXTBOX_MODULE_NAME } from './constants';
 import {
     Input,
     InputInnerInput,
@@ -133,7 +134,7 @@ MaskedTextbox.states = states;
 MaskedTextbox.options = options;
 MaskedTextbox.className = MASKEDTEXTBOX_CLASSNAME;
 MaskedTextbox.defaultOptions = defaultOptions;
-MaskedTextbox.moduleName = "masked-textbox";
-MaskedTextbox.folderName = "maskedtextbox";
+MaskedTextbox.moduleName = MASKEDTEXTBOX_MODULE_NAME;
+MaskedTextbox.folderName = MASKEDTEXTBOX_FOLDER_NAME;
 
 export default MaskedTextbox;

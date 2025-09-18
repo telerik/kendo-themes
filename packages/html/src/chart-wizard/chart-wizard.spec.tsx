@@ -3,6 +3,7 @@ import { Window, KendoWindowProps } from '../window';
 
 
 import { KendoComponent } from '../_types/component';
+import { CHART_WIZARD_FOLDER_NAME, CHART_WIZARD_MODULE_NAME } from './constants';
 export const CHARTWIZARD_CLASSNAME = `k-chart-wizard`;
 
 const states = [];
@@ -36,7 +37,7 @@ ChartWizard.states = states;
 ChartWizard.options = options;
 ChartWizard.className = CHARTWIZARD_CLASSNAME;
 ChartWizard.defaultOptions = defaultOptions;
-ChartWizard.moduleName = "chart-wizard";
-ChartWizard.folderName = ChartWizard.moduleName;
+ChartWizard.moduleName = CHART_WIZARD_MODULE_NAME;
+ChartWizard.folderName = CHART_WIZARD_FOLDER_NAME;
 
 export default ChartWizard;

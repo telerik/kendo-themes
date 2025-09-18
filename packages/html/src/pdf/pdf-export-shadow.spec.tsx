@@ -1,4 +1,5 @@
 import { classNames } from '../misc';
+import { PDF_FOLDER_NAME, PDF_MODULE_NAME } from './constants';
 
 export const PDF_EXPORT_SHADOW_CLASSNAME = `k-pdf-export-shadow`;
 
@@ -35,7 +36,7 @@ PdfExportShadow.states = states;
 PdfExportShadow.options = options;
 PdfExportShadow.className = PDF_EXPORT_SHADOW_CLASSNAME;
 PdfExportShadow.defaultOptions = defaultOptions;
-PdfExportShadow.moduleName = "pdf";
-PdfExportShadow.folderName = PdfExportShadow.moduleName;
+PdfExportShadow.moduleName = PDF_MODULE_NAME;
+PdfExportShadow.folderName = PDF_FOLDER_NAME;
 
 export default PdfExportShadow;

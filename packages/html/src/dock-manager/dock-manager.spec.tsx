@@ -3,6 +3,7 @@ import { SplitterPane, SplitterSplitbar } from '../splitter';
 import { DockManagerToolbar } from './dock-manager-toolbar';
 
 import { KendoComponent } from '../_types/component';
+import { DOCK_MANAGER_FOLDER_NAME, DOCK_MANAGER_MODULE_NAME } from './constants';
 export const DOCKMANAGER_CLASSNAME = `k-dock-manager`;
 
 const states = [];
@@ -56,7 +57,7 @@ DockManager.states = states;
 DockManager.options = options;
 DockManager.className = DOCKMANAGER_CLASSNAME;
 DockManager.defaultOptions = defaultOptions;
-DockManager.moduleName = "dock-manager";
-DockManager.folderName = DockManager.moduleName;
+DockManager.moduleName = DOCK_MANAGER_MODULE_NAME;
+DockManager.folderName = DOCK_MANAGER_FOLDER_NAME;
 
 export default DockManager;

@@ -4,6 +4,7 @@ import { SkeletonRectangle } from '../skeleton';
 import { classNames, stateClassNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { CAPTCHA_FOLDER_NAME, CAPTCHA_MODULE_NAME } from './constants';
 export const CAPTCHA_CLASSNAME = `k-captcha`;
 
 const states = [
@@ -93,7 +94,7 @@ Captcha.states = states;
 Captcha.options = options;
 Captcha.className = CAPTCHA_CLASSNAME;
 Captcha.defaultOptions = defaultOptions;
-Captcha.moduleName = "captcha";
-Captcha.folderName = Captcha.moduleName;
+Captcha.moduleName = CAPTCHA_MODULE_NAME;
+Captcha.folderName = CAPTCHA_FOLDER_NAME;
 
 export default Captcha;

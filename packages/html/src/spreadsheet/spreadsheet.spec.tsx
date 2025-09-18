@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { SPREADSHEET_FOLDER_NAME, SPREADSHEET_MODULE_NAME } from './constants';
 export const SPREADSHEET_CLASSNAME = `k-spreadsheet`;
 
 const states = [];
@@ -33,7 +34,7 @@ Spreadsheet.states = states;
 Spreadsheet.options = options;
 Spreadsheet.className = SPREADSHEET_CLASSNAME;
 Spreadsheet.defaultOptions = defaultOptions;
-Spreadsheet.moduleName = "spreadsheet";
-Spreadsheet.folderName = Spreadsheet.moduleName;
+Spreadsheet.moduleName = SPREADSHEET_MODULE_NAME;
+Spreadsheet.folderName = SPREADSHEET_FOLDER_NAME;
 
 export default Spreadsheet;
