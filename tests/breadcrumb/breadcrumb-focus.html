@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            grid-template-columns: 80px 1fr;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <span></span>
+        <span>Breadcrumb Focus States</span>
+        <span>Normal</span>
+        <div>
+            <ol class="k-breadcrumb-container">
+                <li class="k-breadcrumb-item k-breadcrumb-root-item">
+                    <a href="#" class="k-breadcrumb-root-link k-breadcrumb-icontext-link">
+                        <span class="k-icon k-svg-icon k-svg-i-home">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 256c0 17.7-14.3 32-32 32-9.1 0-17.4-3.8-23.2-10l-8.8-8.7V416c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32v-96h-64v96c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32V268.6l-8.3 8.9C81.8 284 73.4 288 64 288c-17.7 0-32-14.3-32-32 0-8.5 3.3-16.1 8.6-21.9l.2-.2 1-1 191-191.3 1-1c5.8-5.5 13.6-8.9 22.2-8.9 9.1 0 17.3 3.8 23.1 9.9L470.3 233l.7.7.3.3c5.4 5.8 8.7 13.5 8.7 22"></path>
+                            </svg>
+                        </span>
+                        <span class="k-breadcrumb-item-text">Dashboard</span>
+                    </a>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-svg-icon k-icon-xs k-svg-i-chevron-right">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                        </svg>
+                    </span>
+                </li>
+                <li class="k-breadcrumb-item">
+                    <a href="#" class="k-breadcrumb-link">
+                        <span class="k-breadcrumb-item-text">Patients</span>
+                    </a>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-svg-icon k-icon-xs k-svg-i-chevron-right">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                        </svg>
+                    </span>
+                </li>
+                <li class="k-breadcrumb-item">
+                    <a href="#" class="k-breadcrumb-link">
+                        <span class="k-breadcrumb-item-text">John Doe</span>
+                    </a>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-svg-icon k-icon-xs k-svg-i-chevron-right">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                        </svg>
+                    </span>
+                </li>
+                <li class="k-breadcrumb-item k-breadcrumb-last-item">
+                    <a href="#" class="k-breadcrumb-link">
+                        <span class="k-breadcrumb-item-text">Medical History</span>
+                    </a>
+                </li>
+            </ol>
+        </div>
+        <span>Root Focused</span>
+        <div>
+            <ol class="k-breadcrumb-container">
+                <li class="k-breadcrumb-item k-breadcrumb-root-item">
+                    <a href="#" class="k-focus k-breadcrumb-root-link k-breadcrumb-icontext-link">
+                        <span class="k-icon k-svg-icon k-svg-i-home">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 256c0 17.7-14.3 32-32 32-9.1 0-17.4-3.8-23.2-10l-8.8-8.7V416c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32v-96h-64v96c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32V268.6l-8.3 8.9C81.8 284 73.4 288 64 288c-17.7 0-32-14.3-32-32 0-8.5 3.3-16.1 8.6-21.9l.2-.2 1-1 191-191.3 1-1c5.8-5.5 13.6-8.9 22.2-8.9 9.1 0 17.3 3.8 23.1 9.9L470.3 233l.7.7.3.3c5.4 5.8 8.7 13.5 8.7 22"></path>
+                            </svg>
+                        </span>
+                        <span class="k-breadcrumb-item-text">Dashboard</span>
+                    </a>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-svg-icon k-icon-xs k-svg-i-chevron-right">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                        </svg>
+                    </span>
+                </li>
+                <li class="k-breadcrumb-item">
+                    <a href="#" class="k-breadcrumb-link">
+                        <span class="k-breadcrumb-item-text">Patients</span>
+                    </a>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-svg-icon k-icon-xs k-svg-i-chevron-right">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                        </svg>
+                    </span>
+                </li>
+                <li class="k-breadcrumb-item">
+                    <a href="#" class="k-breadcrumb-link">
+                        <span class="k-breadcrumb-item-text">John Doe</span>
+                    </a>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-svg-icon k-icon-xs k-svg-i-chevron-right">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                        </svg>
+                    </span>
+                </li>
+                <li class="k-breadcrumb-item k-breadcrumb-last-item">
+                    <a href="#" class="k-breadcrumb-link">
+                        <span class="k-breadcrumb-item-text">Medical History</span>
+                    </a>
+                </li>
+            </ol>
+        </div>
+        <span>Link Focused</span>
+        <div>
+            <ol class="k-breadcrumb-container">
+                <li class="k-breadcrumb-item k-breadcrumb-root-item">
+                    <a href="#" class="k-breadcrumb-root-link k-breadcrumb-icontext-link">
+                        <span class="k-icon k-svg-icon k-svg-i-home">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 256c0 17.7-14.3 32-32 32-9.1 0-17.4-3.8-23.2-10l-8.8-8.7V416c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32v-96h-64v96c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32V268.6l-8.3 8.9C81.8 284 73.4 288 64 288c-17.7 0-32-14.3-32-32 0-8.5 3.3-16.1 8.6-21.9l.2-.2 1-1 191-191.3 1-1c5.8-5.5 13.6-8.9 22.2-8.9 9.1 0 17.3 3.8 23.1 9.9L470.3 233l.7.7.3.3c5.4 5.8 8.7 13.5 8.7 22"></path>
+                            </svg>
+                        </span>
+                        <span class="k-breadcrumb-item-text">Dashboard</span>
+                    </a>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-svg-icon k-icon-xs k-svg-i-chevron-right">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                        </svg>
+                    </span>
+                </li>
+                <li class="k-breadcrumb-item">
+                    <a href="#" class="k-focus k-breadcrumb-link">
+                        <span class="k-breadcrumb-item-text">Patients</span>
+                    </a>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-svg-icon k-icon-xs k-svg-i-chevron-right">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                        </svg>
+                    </span>
+                </li>
+                <li class="k-breadcrumb-item">
+                    <a href="#" class="k-breadcrumb-link">
+                        <span class="k-breadcrumb-item-text">John Doe</span>
+                    </a>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-svg-icon k-icon-xs k-svg-i-chevron-right">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                        </svg>
+                    </span>
+                </li>
+                <li class="k-breadcrumb-item k-breadcrumb-last-item">
+                    <a href="#" class="k-breadcrumb-link">
+                        <span class="k-breadcrumb-item-text">Medical History</span>
+                    </a>
+                </li>
+            </ol>
+        </div>
+        <span>Multiple Focused</span>
+        <div>
+            <ol class="k-breadcrumb-container">
+                <li class="k-breadcrumb-item k-breadcrumb-root-item">
+                    <a href="#" class="k-focus k-breadcrumb-root-link k-breadcrumb-icontext-link">
+                        <span class="k-icon k-svg-icon k-svg-i-home">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 256c0 17.7-14.3 32-32 32-9.1 0-17.4-3.8-23.2-10l-8.8-8.7V416c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32v-96h-64v96c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32V268.6l-8.3 8.9C81.8 284 73.4 288 64 288c-17.7 0-32-14.3-32-32 0-8.5 3.3-16.1 8.6-21.9l.2-.2 1-1 191-191.3 1-1c5.8-5.5 13.6-8.9 22.2-8.9 9.1 0 17.3 3.8 23.1 9.9L470.3 233l.7.7.3.3c5.4 5.8 8.7 13.5 8.7 22"></path>
+                            </svg>
+                        </span>
+                        <span class="k-breadcrumb-item-text">Dashboard</span>
+                    </a>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-svg-icon k-icon-xs k-svg-i-chevron-right">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                        </svg>
+                    </span>
+                </li>
+                <li class="k-breadcrumb-item">
+                    <a href="#" class="k-breadcrumb-link">
+                        <span class="k-breadcrumb-item-text">Patients</span>
+                    </a>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-svg-icon k-icon-xs k-svg-i-chevron-right">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                        </svg>
+                    </span>
+                </li>
+                <li class="k-breadcrumb-item">
+                    <a href="#" class="k-focus k-breadcrumb-link">
+                        <span class="k-breadcrumb-item-text">John Doe</span>
+                    </a>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-svg-icon k-icon-xs k-svg-i-chevron-right">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                        </svg>
+                    </span>
+                </li>
+                <li class="k-breadcrumb-item k-breadcrumb-last-item">
+                    <a href="#" class="k-breadcrumb-link">
+                        <span class="k-breadcrumb-item-text">Medical History</span>
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
