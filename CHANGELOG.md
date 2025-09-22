@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.0...v12.1.0-dev.1) (2025-09-22)
+
+
+### Bug Fixes
+
+* **html:** map controls positioning classes ([3f9694b](https://github.com/telerik/kendo-themes/commit/3f9694b00aaa1d5a5dcd9903ff5e2688b5a0b7c2))
+* **tabstrip:** add position relative to k-tabstrip ([b12666c](https://github.com/telerik/kendo-themes/commit/b12666c954cf42a97a42875c18a8d05c5417d6f6))
+* **window:** not resizing properly from sides in RTL ([a1161cb](https://github.com/telerik/kendo-themes/commit/a1161cbd32bc95e11f244868b0fda2a269179f7d))
+
+
+
+
+
 # [12.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.0.2-dev.1...v12.1.0-dev.0) (2025-09-15)
 
 
