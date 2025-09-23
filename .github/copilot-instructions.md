@@ -241,6 +241,10 @@ npm run clean          # Full cleanup (includes node_modules)
 - For dependency updates triggered by the agent: `chore(deps): …`
 - For lint/format-only changes: `chore(format): …`
 
+### Variable Creation
+
+- Refer to ${variable-create.prompt.md} for SCSS variable creation guidelines
+
 ### Variable Documentation
 
 - Refer to ${variable-docs.prompt.md} for SassDoc documentation standards
