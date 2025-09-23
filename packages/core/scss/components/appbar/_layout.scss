@@ -1,5 +1,6 @@
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-appbar--layout-base() {
 
@@ -94,7 +95,7 @@
     .k-appbar-fixed {
         width: 100%;
         position: fixed;
-        z-index: 1;
+        z-index: k-z-index("floating");
     }
 
 

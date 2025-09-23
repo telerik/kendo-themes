@@ -1096,7 +1096,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-appbar-zindex</td>
     <td>String</td>
-    <td><code>var( --kendo-appbar-zindex, 1000 )</code></td>
+    <td><code>var( --kendo-appbar-zindex, k-z-index("banner") )</code></td>
     <td><code>var(--kendo-appbar-zindex, 1000)</code></td>
 </tr>
 <tr>
@@ -16128,8 +16128,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-column-menu-tabbed-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-column-menu-tabbed-bg, var(--kendo-base-bg, inherit) )</code></td>
-    <td><code>var(--kendo-grid-column-menu-tabbed-bg, var(--kendo-base-bg, inherit))</code></td>
+    <td><code>var( --kendo-grid-column-menu-tabbed-bg, k-color(surface) )</code></td>
+    <td><code>var(--kendo-grid-column-menu-tabbed-bg, var(--kendo-color-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid tabbed column menu.</div></div>

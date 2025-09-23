@@ -1,5 +1,6 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-action-sheet--layout-base() {
 
@@ -12,14 +13,14 @@
         position: fixed;
         inset-block-start: 0;
         inset-inline-start: 0;
-        z-index: 9999;
+        z-index: k-z-index("overlay");
         overflow: hidden;
         transform: translateZ(0);
 
         // Overlay
         > .k-overlay {
             position: absolute;
-            z-index: 1;
+            z-index: k-z-index("base", 1);
         }
 
         // Nested animation container
@@ -29,7 +30,7 @@
             border-radius: 0;
             overflow: hidden;
             position: absolute;
-            z-index: 2;
+            z-index: k-z-index("base", 2);
             inset-block-start: 0;
             inset-inline-start: 0;
             pointer-events: none;
@@ -42,7 +43,7 @@
         // No animation container
         > .k-actionsheet {
             position: absolute;
-            z-index: 2;
+            z-index: k-z-index("base", 2);
         }
 
         // Enable mouse events for action sheet

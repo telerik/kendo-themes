@@ -1,6 +1,5 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
-@use "../core/spacing/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/upload/_layout.scss" as *;
 
 @mixin kendo-upload--layout() {
@@ -39,12 +38,6 @@
             inset-inline-start: $kendo-upload-item-padding-x;
             inset-inline-end: $kendo-upload-item-padding-x;
             inset-block-end: $kendo-upload-item-padding-y;
-        }
-    }
-
-    .k-upload-button-wrap {
-        input {
-            z-index: 2;
         }
     }
 }

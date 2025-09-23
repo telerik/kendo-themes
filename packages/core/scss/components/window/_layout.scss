@@ -1,6 +1,7 @@
 @use "sass:list";
 @use "../../mixins/index.import.scss" as *;
 @use "../../color-system/_constants.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-window--layout-base() {
@@ -18,7 +19,7 @@
         display: inline-flex;
         flex-direction: column;
         position: absolute;
-        z-index: 10002;
+        z-index: k-z-index("modal");
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
@@ -167,10 +168,10 @@
 
     // Resize Handles
     .k-window { // stylelint-disable-line
-        .k-resize-n { inset-block-start: 0; }
-        .k-resize-e { inset-inline-end: 0; }
-        .k-resize-s { inset-block-end: 0; }
-        .k-resize-w { inset-inline-start: 0; }
+        .k-resize-n { top: 0; }
+        .k-resize-e { right: 0; }
+        .k-resize-s { bottom: 0; }
+        .k-resize-w { left: 0; }
     }
 
 }

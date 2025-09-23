@@ -1,3 +1,5 @@
+@use "../../z-index/index.import.scss" as *;
+
 @mixin kendo-scroller--layout-base() {
 
     // Layout
@@ -11,7 +13,7 @@
     }
     .km-scroll-header {
         position: absolute;
-        z-index: 1001;
+        z-index: k-z-index("floating", 1);
         width: 100%;
         inset-block-start: 0;
         inset-inline-start: 0;
@@ -56,7 +58,7 @@
     .km-touch-scrollbar {
         position: absolute;
         visibility: hidden;
-        z-index: 200000;
+        z-index: k-z-index("scroll");
         height: .4em;
         width: .4em;
         opacity: 0;

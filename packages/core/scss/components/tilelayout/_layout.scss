@@ -1,6 +1,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-tile-layout--layout-base() {
 
@@ -23,7 +24,7 @@
 
     .k-tilelayout-item {
         position: relative;
-        z-index: 0;
+        z-index: k-z-index("base");
     }
 
     .k-layout-item-hint {
@@ -33,12 +34,12 @@
         position: relative;
 
         &.k-layout-item-hint-resize {
-            z-index: 3;
+            z-index: k-z-index("handle");
         }
     }
 
     .k-tilelayout-item-header.k-card-header {
-        z-index: 0;
+        z-index: k-z-index("base");
     }
 
     .k-tilelayout-item-body {

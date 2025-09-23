@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
+@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-pager--layout-base() {
 
@@ -52,7 +53,7 @@
         position: relative;
 
         &:hover {
-            z-index: 2;
+            z-index: k-z-index("base", 2);
         }
     }
 
@@ -80,7 +81,7 @@
         // Selected state
         .k-selected {
             cursor: inherit;
-            z-index: 2;
+            z-index: k-z-index("base", 2);
         }
     }
 

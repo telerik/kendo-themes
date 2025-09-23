@@ -1,6 +1,7 @@
 @use "sass:math";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "../core/z-index/index.import.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/slider/_layout.scss" as *;
 
 @mixin kendo-slider--layout() {
@@ -47,7 +48,7 @@
     }
     .k-slider-track {
         border-radius: $kendo-slider-track-border-radius;
-        z-index: 2;
+        z-index: k-z-index("base", 2);
     }
     .k-slider-selection {
         border-radius: $kendo-slider-track-border-radius;

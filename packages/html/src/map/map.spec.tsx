@@ -70,10 +70,10 @@ export const Map: KendoComponent<KendoMapProps & KendoMapState & React.HTMLAttri
                 <div className="km-touch-scrollbar km-horizontal-scrollbar" style={horizontalScrollbarStyle}></div>
                 <div className="km-touch-scrollbar km-vertical-scrollbar" style={verticalScrollbarStyle}></div>
             </div>
-            <div className="k-map-controls k-pos-bottom k-pos-right">
+            <div className="k-map-controls k-bottom-end">
                 <div className="k-attribution">{attribution}</div>
             </div>
-            <div className="k-map-controls k-pos-top k-pos-left">
+            <div className="k-map-controls k-top-start">
                 <Navigator />
                 <ZoomControl />
             </div>
