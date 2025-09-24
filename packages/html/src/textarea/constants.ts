@@ -1,0 +1,2 @@
+export const TEXTAREA_MODULE_NAME = 'textarea';
+export const TEXTAREA_FOLDER_NAME = TEXTAREA_MODULE_NAME;

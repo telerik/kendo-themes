@@ -3,6 +3,7 @@ import { List } from '../list';
 import { classNames, optionClassNames, stateClassNames, States, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { LISTBOX_FOLDER_NAME, LISTBOX_MODULE_NAME } from './constants';
 export const LISTBOX_CLASSNAME = `k-listbox`;
 
 const states = [
@@ -96,5 +97,7 @@ ListBox.states = states;
 ListBox.options = options;
 ListBox.className = LISTBOX_CLASSNAME;
 ListBox.defaultOptions = defaultOptions;
+ListBox.moduleName = LISTBOX_MODULE_NAME;
+ListBox.folderName = LISTBOX_FOLDER_NAME;
 
 export default ListBox;

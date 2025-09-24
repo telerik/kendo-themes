@@ -3,6 +3,7 @@ import { Button } from '../button';
 import { FilterPreview } from './filter-preview';
 
 import { KendoComponent } from '../_types/component';
+import { FILTER_FOLDER_NAME, FILTER_MODULE_NAME } from './constants';
 export const FILTER_CLASSNAME = 'k-filter';
 
 const states = [];
@@ -58,5 +59,7 @@ Filter.states = states;
 Filter.options = options;
 Filter.defaultOptions = defaultOptions;
 Filter.className = FILTER_CLASSNAME;
+Filter.moduleName = FILTER_MODULE_NAME;
+Filter.folderName = FILTER_FOLDER_NAME;
 
 export default Filter;

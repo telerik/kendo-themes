@@ -1,0 +1,2 @@
+export const CHART_WIZARD_MODULE_NAME = 'chart-wizard';
+export const CHART_WIZARD_FOLDER_NAME = CHART_WIZARD_MODULE_NAME;

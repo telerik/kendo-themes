@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { GRID_LAYOUT_FOLDER_NAME, GRID_LAYOUT_MODULE_NAME } from './constants';
 import { Layout, KendoLayoutProps } from './layout';
 
 export const GRIDLAYOUT_CLASSNAME = `k-grid-layout`;
@@ -35,5 +36,7 @@ export const GridLayout: KendoComponent<KendoGridLayoutProps & React.HTMLAttribu
 GridLayout.states = states;
 GridLayout.options = options;
 GridLayout.className = GRIDLAYOUT_CLASSNAME;
+GridLayout.moduleName = GRID_LAYOUT_MODULE_NAME;
+GridLayout.folderName = GRID_LAYOUT_FOLDER_NAME;
 
 export default GridLayout;

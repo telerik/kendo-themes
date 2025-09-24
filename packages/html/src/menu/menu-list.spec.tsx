@@ -2,6 +2,7 @@ import { classNames, optionClassNames, Size } from '../misc';
 import { MenuListItem, MenuSeparator } from '.';
 
 import { KendoComponent } from '../_types/component';
+import { MENU_FOLDER_NAME, MENU_MODULE_NAME } from './constants';
 export const MENULIST_CLASSNAME = `k-menu-group`;
 
 const states = [];
@@ -71,5 +72,7 @@ MenuList.states = states;
 MenuList.options = options;
 MenuList.className = MENULIST_CLASSNAME;
 MenuList.defaultOptions = defaultOptions;
+MenuList.moduleName = MENU_MODULE_NAME;
+MenuList.folderName = MENU_FOLDER_NAME;
 
 export default MenuList;

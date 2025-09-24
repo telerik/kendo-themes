@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { CALENDAR_FOLDER_NAME, CALENDAR_MODULE_NAME } from './constants';
 const className = `k-calendar-tr`;
 
 export const CalendarTableRow: KendoComponent<React.HTMLAttributes<HTMLTableRowElement>> = (
@@ -20,3 +21,5 @@ export const CalendarTableRow: KendoComponent<React.HTMLAttributes<HTMLTableRowE
 };
 
 CalendarTableRow.className = className;
+CalendarTableRow.moduleName = CALENDAR_MODULE_NAME;
+CalendarTableRow.folderName = CALENDAR_FOLDER_NAME;

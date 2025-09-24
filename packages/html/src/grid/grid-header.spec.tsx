@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { GRID_FOLDER_NAME, GRID_MODULE_NAME } from './constants';
 const className = `k-grid-header`;
 
 export type KendoGridHeaderProps = {
@@ -34,3 +35,5 @@ export const GridHeader: KendoComponent<KendoGridHeaderProps & React.HTMLAttribu
 };
 
 GridHeader.className = className;
+GridHeader.moduleName = GRID_MODULE_NAME;
+GridHeader.folderName = GRID_FOLDER_NAME;

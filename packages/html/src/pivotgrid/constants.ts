@@ -1,0 +1,2 @@
+export const PIVOTGRID_MODULE_NAME = 'pivotgrid';
+export const PIVOTGRID_FOLDER_NAME = PIVOTGRID_MODULE_NAME;

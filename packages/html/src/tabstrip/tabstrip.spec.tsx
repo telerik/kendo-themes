@@ -4,6 +4,7 @@ import TabStripItems from './tabstrip-items';
 import TabStripItemsWrapper from './tabstrip-items-wrapper';
 
 import { KendoComponent } from '../_types/component';
+import { TABSTRIP_FOLDER_NAME, TABSTRIP_MODULE_NAME } from './constants';
 export const TABSTRIP_CLASSNAME = `k-tabstrip`;
 
 const states = [];
@@ -165,5 +166,7 @@ TabStrip.states = states;
 TabStrip.options = options;
 TabStrip.className = TABSTRIP_CLASSNAME;
 TabStrip.defaultOptions = defaultOptions;
+TabStrip.moduleName = TABSTRIP_MODULE_NAME;
+TabStrip.folderName = TABSTRIP_FOLDER_NAME;
 
 export default TabStrip;

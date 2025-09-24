@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { CALENDAR_FOLDER_NAME, CALENDAR_MODULE_NAME } from './constants';
 const className = 'k-calendar-navigation';
 
 export const CalendarNavigation: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
@@ -24,3 +25,5 @@ export const CalendarNavigation: KendoComponent<React.HTMLAttributes<HTMLDivElem
 );
 
 CalendarNavigation.className = className;
+CalendarNavigation.moduleName = CALENDAR_MODULE_NAME;
+CalendarNavigation.folderName = CALENDAR_FOLDER_NAME;

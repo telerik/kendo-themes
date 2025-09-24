@@ -2,6 +2,7 @@ import { classNames, optionClassNames, Size, ThemeColor } from '../misc';
 import Loader from './loader.spec';
 
 import { KendoComponent } from '../_types/component';
+import { LOADER_FOLDER_NAME, LOADER_MODULE_NAME } from './constants';
 export const LOADERCONTAINER_CLASSNAME = `k-loader-container`;
 
 const states = [];
@@ -92,5 +93,7 @@ LoaderContainer.states = states;
 LoaderContainer.options = options;
 LoaderContainer.className = LOADERCONTAINER_CLASSNAME;
 LoaderContainer.defaultOptions = defaultOptions;
+LoaderContainer.moduleName = LOADER_MODULE_NAME;
+LoaderContainer.folderName = LOADER_FOLDER_NAME;
 
 export default LoaderContainer;

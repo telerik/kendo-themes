@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { TIMELINE_FOLDER_NAME, TIMELINE_MODULE_NAME } from './constants';
 export const TIMELINE_CLASSNAME = `k-timeline`;
 
 const states = [];
@@ -50,5 +51,7 @@ Timeline.states = states;
 Timeline.options = options;
 Timeline.className = TIMELINE_CLASSNAME;
 Timeline.defaultOptions = defaultOptions;
+Timeline.moduleName = TIMELINE_MODULE_NAME;
+Timeline.folderName = TIMELINE_FOLDER_NAME;
 
 export default Timeline;

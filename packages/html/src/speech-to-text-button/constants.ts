@@ -1,0 +1,2 @@
+export const SPEECH_TO_TEXT_BUTTON_MODULE_NAME = 'speech-to-text-button';
+export const SPEECH_TO_TEXT_BUTTON_FOLDER_NAME = SPEECH_TO_TEXT_BUTTON_MODULE_NAME;

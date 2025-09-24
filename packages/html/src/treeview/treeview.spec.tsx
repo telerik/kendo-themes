@@ -2,6 +2,7 @@ import { TreeviewGroup, TreeviewItem } from '../treeview';
 import { classNames, optionClassNames, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { TREEVIEW_FOLDER_NAME, TREEVIEW_MODULE_NAME } from './constants';
 export const TREEVIEW_CLASSNAME = `k-treeview`;
 
 const states = [];
@@ -92,5 +93,7 @@ Treeview.states = states;
 Treeview.options = options;
 Treeview.className = TREEVIEW_CLASSNAME;
 Treeview.defaultOptions = defaultOptions;
+Treeview.moduleName = TREEVIEW_MODULE_NAME;
+Treeview.folderName = TREEVIEW_FOLDER_NAME;
 
 export default Treeview;

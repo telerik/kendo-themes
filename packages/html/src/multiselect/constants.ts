@@ -1,0 +1,2 @@
+export const MULTISELECT_MODULE_NAME = 'multiselect';
+export const MULTISELECT_FOLDER_NAME = MULTISELECT_MODULE_NAME;

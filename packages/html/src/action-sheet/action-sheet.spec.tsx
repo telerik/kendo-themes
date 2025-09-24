@@ -5,6 +5,7 @@ import { ActionSheetHeader } from './actionsheet-header';
 import { ActionSheetView } from './actionsheet-view';
 
 import { KendoComponent } from '../_types/component';
+import { ACTION_SHEET_FOLDER_NAME, ACTION_SHEET_MODULE_NAME } from './constants';
 export const ACTIONSHEET_CLASSNAME = `k-actionsheet`;
 
 const states = [];
@@ -82,5 +83,7 @@ ActionSheet.states = states;
 ActionSheet.options = options;
 ActionSheet.className = ACTIONSHEET_CLASSNAME;
 ActionSheet.defaultOptions = defaultOptions;
+ActionSheet.moduleName = ACTION_SHEET_MODULE_NAME;
+ActionSheet.folderName = ACTION_SHEET_FOLDER_NAME;
 
 export default ActionSheet;

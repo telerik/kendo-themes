@@ -2,6 +2,7 @@ import { classNames, stateClassNames, States } from '../misc';
 import RatingItem from './rating-item';
 
 import { KendoComponent } from '../_types/component';
+import { RATING_FOLDER_NAME, RATING_MODULE_NAME } from './constants';
 export const RATING_CLASSNAME = `k-rating`;
 
 const states = [
@@ -82,5 +83,7 @@ Rating.states = states;
 Rating.options = options;
 Rating.className = RATING_CLASSNAME;
 Rating.defaultOptions = defaultOptions;
+Rating.moduleName = RATING_MODULE_NAME;
+Rating.folderName = RATING_FOLDER_NAME;
 
 export default Rating;

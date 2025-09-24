@@ -2,6 +2,9 @@ import React from 'react';
 import { Icon } from '../icon';
 import { classNames, stateClassNames, States } from '../misc';
 
+import { KendoComponent } from '../_types/component';
+import { BUBBLE_FOLDER_NAME, BUBBLE_MODULE_NAME } from './constants';
+
 
 export const BUBBLE_CLASSNAME = `k-bubble`;
 
@@ -25,7 +28,9 @@ const defaultOptions = {
     expanded: false
 };
 
-export const Bubble = (
+export const Bubble: KendoComponent<KendoBubbleProps &
+        KendoBubbleState &
+        React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoBubbleProps &
         KendoBubbleState &
         React.HTMLAttributes<HTMLDivElement>
@@ -74,5 +79,7 @@ export const Bubble = (
 Bubble.states = states;
 Bubble.className = BUBBLE_CLASSNAME;
 Bubble.defaultOptions = defaultOptions;
+Bubble.moduleName = BUBBLE_MODULE_NAME;
+Bubble.folderName = BUBBLE_FOLDER_NAME;
 
 export default Bubble;

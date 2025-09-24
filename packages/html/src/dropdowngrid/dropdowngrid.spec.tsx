@@ -15,6 +15,7 @@ import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action
 import { DataTable, TableBody, TableFooter, TableGroupStickyHeader, TableHeader, TableList, TableListGroupRow, TableListRow, TableListTd, TableListTh, TableRow, TableTh, TableThead } from '../table';
 
 import { KendoComponent } from '../_types/component';
+import { DROPDOWNGRID_FOLDER_NAME, DROPDOWNGRID_MODULE_NAME } from './constants';
 export const DROPDOWNGRID_CLASSNAME = `k-dropdowngrid`;
 
 const states = [
@@ -240,5 +241,7 @@ DropdownGrid.states = states;
 DropdownGrid.options = options;
 DropdownGrid.className = DROPDOWNGRID_CLASSNAME;
 DropdownGrid.defaultOptions = defaultOptions;
+DropdownGrid.moduleName = DROPDOWNGRID_MODULE_NAME;
+DropdownGrid.folderName = DROPDOWNGRID_FOLDER_NAME;
 
 export default DropdownGrid;

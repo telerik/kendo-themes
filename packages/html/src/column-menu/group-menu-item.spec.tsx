@@ -1,6 +1,7 @@
 import { classNames, stateClassNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { COLUMN_MENU_FOLDER_NAME, COLUMN_MENU_MODULE_NAME } from './constants';
 export const GROUPMENUITEM_CLASSNAME = `k-group-menu-item`;
 
 const states = [
@@ -69,5 +70,7 @@ GroupMenuItem.states = states;
 GroupMenuItem.options = options;
 GroupMenuItem.className = GROUPMENUITEM_CLASSNAME;
 GroupMenuItem.defaultOptions = defaultOptions;
+GroupMenuItem.moduleName = COLUMN_MENU_MODULE_NAME;
+GroupMenuItem.folderName = COLUMN_MENU_FOLDER_NAME;
 
 export default GroupMenuItem;

@@ -1,0 +1,2 @@
+export const SUGGESTION_MODULE_NAME = 'suggestion';
+export const SUGGESTION_FOLDER_NAME = SUGGESTION_MODULE_NAME;

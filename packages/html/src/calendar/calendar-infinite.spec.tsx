@@ -3,6 +3,7 @@ import { CalendarNavigation } from '.';
 import { CalendarInfiniteView, KendoCalendarInfiniteViewProps } from './calendar-infinite-view.spec';
 
 import { KendoComponent } from '../_types/component';
+import { CALENDAR_FOLDER_NAME, CALENDAR_MODULE_NAME } from './constants';
 const CALENDARINFINITE_CLASSNAME = 'k-calendar-infinite';
 
 const options = {
@@ -102,5 +103,7 @@ export const CalendarInfinite: KendoComponent<KendoCalendarInfiniteProps & Kendo
 CalendarInfinite.options = options;
 CalendarInfinite.className = CALENDARINFINITE_CLASSNAME;
 CalendarInfinite.defaultOptions = defaultOptions;
+CalendarInfinite.moduleName = CALENDAR_MODULE_NAME;
+CalendarInfinite.folderName = CALENDAR_FOLDER_NAME;
 
 export default CalendarInfinite;

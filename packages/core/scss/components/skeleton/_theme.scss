@@ -9,10 +9,9 @@
 
 
     // Skeleton wave
-    .k-skeleton-wave {
-
-        .k-skeleton::after,
-        &.k-skeleton::after {
+    :where(.k-skeleton-wave) .k-skeleton,
+    :where(.k-skeleton-wave).k-skeleton {
+        &::after {
             background-image: linear-gradient(
                 to right,
                 transparent,

@@ -45,25 +45,21 @@
         }
     }
 
-    .k-skeleton-wave {
+    :where(.k-skeleton-wave) .k-skeleton,
+    :where(.k-skeleton-wave).k-skeleton {
+        position: relative;
+        overflow: hidden;
 
-        .k-skeleton,
-        &.k-skeleton {
-            position: relative;
-            overflow: hidden;
-
-            &::after {
-                content: "";
-                position: absolute;
-                inset-block-start: 0;
-                inset-inline-end: 0;
-                inset-block-end: 0;
-                inset-inline-start: 0;
-                transform: translateX(-100%);
-                animation: k-skeleton-wave 1.6s linear .5s infinite;
-            }
+        &::after {
+            content: "";
+            position: absolute;
+            inset-block-start: 0;
+            inset-inline-end: 0;
+            inset-block-end: 0;
+            inset-inline-start: 0;
+            transform: translateX(-100%);
+            animation: k-skeleton-wave 1.6s linear .5s infinite;
         }
-
     }
 
 
@@ -80,13 +76,9 @@
         }
     }
 
-    .k-skeleton-pulse {
-
-        .k-skeleton,
-        &.k-skeleton {
-            animation: k-skeleton-pulse 1.5s ease-in-out .5s infinite;
-        }
-
+    :where(.k-skeleton-pulse) .k-skeleton,
+    :where(.k-skeleton-pulse).k-skeleton  {
+        animation: k-skeleton-pulse 1.5s ease-in-out .5s infinite;
     }
 
 }

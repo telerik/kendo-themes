@@ -2,6 +2,7 @@ import { classNames, kendoThemeMaps } from '../misc';
 import { Popup } from '../popup';
 
 import { KendoComponent } from '../_types/component';
+import { POPOVER_FOLDER_NAME, POPOVER_MODULE_NAME } from './constants';
 export const POPOVER_CLASSNAME = `k-popover`;
 
 const states = [];
@@ -57,5 +58,7 @@ Popover.states = states;
 Popover.options = options;
 Popover.className = POPOVER_CLASSNAME;
 Popover.defaultOptions = defaultOptions;
+Popover.moduleName = POPOVER_MODULE_NAME;
+Popover.folderName = POPOVER_FOLDER_NAME;
 
 export default Popover;

@@ -16,6 +16,7 @@ import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action
 import { List, ListCustomValue, ListItem } from '../list';
 
 import { KendoComponent } from '../_types/component';
+import { MULTISELECT_FOLDER_NAME, MULTISELECT_MODULE_NAME } from './constants';
 export const MULTISELECT_CLASSNAME = `k-multiselect`;
 
 const states = [
@@ -199,5 +200,7 @@ MultiSelect.states = states;
 MultiSelect.options = options;
 MultiSelect.className = MULTISELECT_CLASSNAME;
 MultiSelect.defaultOptions = defaultOptions;
+MultiSelect.moduleName = MULTISELECT_MODULE_NAME;
+MultiSelect.folderName = MULTISELECT_FOLDER_NAME;
 
 export default MultiSelect;

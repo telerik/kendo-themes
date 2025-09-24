@@ -1,5 +1,6 @@
 import { Typography } from './typography';
 import { KendoComponent } from '../_types/component';
+import { TYPOGRAPHY_FOLDER_NAME, TYPOGRAPHY_MODULE_NAME } from './constants';
 import { classNames } from '../misc';
 
 const TYPOGRAPHY_PRE_CLASSNAME = 'k-pre';
@@ -20,5 +21,7 @@ export const TypographyPre: KendoComponent<KendoTypographyPreProps> = (
 TypographyPre.states = states;
 TypographyPre.options = options;
 TypographyPre.className = TYPOGRAPHY_PRE_CLASSNAME;
+TypographyPre.moduleName = TYPOGRAPHY_MODULE_NAME;
+TypographyPre.folderName = TYPOGRAPHY_FOLDER_NAME;
 
 export default TypographyPre;

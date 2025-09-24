@@ -1,0 +1,2 @@
+export const TIMELINE_MODULE_NAME = 'timeline';
+export const TIMELINE_FOLDER_NAME = TIMELINE_MODULE_NAME;

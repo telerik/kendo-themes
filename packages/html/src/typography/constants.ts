@@ -1,0 +1,2 @@
+export const TYPOGRAPHY_MODULE_NAME = 'typography';
+export const TYPOGRAPHY_FOLDER_NAME = TYPOGRAPHY_MODULE_NAME;

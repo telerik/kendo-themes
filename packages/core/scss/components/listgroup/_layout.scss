@@ -152,7 +152,7 @@
 
 
     // No flexbox fix
-    .k-noflexbox {
+    :where(.k-noflexbox) {
         .k-listgroup,
         .k-listgroup > ul
         .k-listgroup-item,

@@ -271,7 +271,7 @@
     }
 
     .k-floating-toolbar,
-    .editorToolbarWindow.k-window-content { // stylelint-disable-line
+    .k-window-content:where(.editorToolbarWindow) { // stylelint-disable-line
         padding-block: $kendo-toolbar-md-padding-y !important; // stylelint-disable-line declaration-no-important
         padding-inline: $kendo-toolbar-md-padding-x !important; // stylelint-disable-line declaration-no-important
         border-width: $kendo-toolbar-border-width;

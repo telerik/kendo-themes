@@ -3,6 +3,7 @@ import { ColorPaletteRow } from './colorpalette-row';
 import { ColorPaletteTile } from './colorpalette-tile';
 
 import { KendoComponent } from '../_types/component';
+import { COLORPALETTE_FOLDER_NAME, COLORPALETTE_MODULE_NAME } from './constants';
 export const COLORPALETTE_CLASSNAME = `k-colorpalette`;
 
 const states = [
@@ -95,5 +96,7 @@ ColorPalette.states = states;
 ColorPalette.options = options;
 ColorPalette.className = COLORPALETTE_CLASSNAME;
 ColorPalette.defaultOptions = defaultOptions;
+ColorPalette.moduleName = COLORPALETTE_MODULE_NAME;
+ColorPalette.folderName = COLORPALETTE_FOLDER_NAME;
 
 export default ColorPalette;

@@ -5,6 +5,7 @@ import { ChatSendButton } from './';
 import { SpeechToTextButton } from '../speech-to-text-button';
 
 import { KendoComponent } from '../_types/component';
+import { CHAT_FOLDER_NAME, CHAT_MODULE_NAME } from './constants';
 const CHAT_CLASSNAME = 'k-chat';
 
 const states = [];
@@ -99,5 +100,7 @@ Chat.states = states;
 Chat.options = options;
 Chat.className = CHAT_CLASSNAME;
 Chat.defaultOptions = defaultOptions;
+Chat.moduleName = CHAT_MODULE_NAME;
+Chat.folderName = CHAT_FOLDER_NAME;
 
 export default Chat;

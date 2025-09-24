@@ -6,6 +6,7 @@ import { TimeSelector, TimeSelectorHeader } from '../time-selector';
 import { classNames, optionClassNames, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { DATETIME_SELECTOR_FOLDER_NAME, DATETIME_SELECTOR_MODULE_NAME } from './constants';
 const DATETIMESELECTOR_CLASSNAME = `k-datetime-wrap`;
 
 const states = [];
@@ -98,5 +99,7 @@ DateTimeSelector.states = states;
 DateTimeSelector.options = options;
 DateTimeSelector.className = DATETIMESELECTOR_CLASSNAME;
 DateTimeSelector.defaultOptions = defaultOptions;
+DateTimeSelector.moduleName = DATETIME_SELECTOR_MODULE_NAME;
+DateTimeSelector.folderName = DATETIME_SELECTOR_FOLDER_NAME;
 
 export default DateTimeSelector;

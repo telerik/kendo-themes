@@ -2,6 +2,7 @@ import { Icon } from '../icon';
 import { classNames, optionClassNames, ThemeColor } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { NOTIFICATION_FOLDER_NAME, NOTIFICATION_MODULE_NAME } from './constants';
 export const NOTIFICATION_CLASSNAME = `k-notification`;
 
 const states = [];
@@ -88,5 +89,7 @@ Notification.states = states;
 Notification.options = options;
 Notification.className = NOTIFICATION_CLASSNAME;
 Notification.defaultOptions = defaultOptions;
+Notification.moduleName = NOTIFICATION_MODULE_NAME;
+Notification.folderName = NOTIFICATION_FOLDER_NAME;
 
 export default Notification;

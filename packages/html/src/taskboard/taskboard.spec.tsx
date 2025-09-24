@@ -6,6 +6,7 @@ import { Searchbox } from '../searchbox';
 import { Textbox } from '../textbox';
 
 import { KendoComponent } from '../_types/component';
+import { TASKBOARD_FOLDER_NAME, TASKBOARD_MODULE_NAME } from './constants';
 export const TASKBOARD_CLASSNAME = `k-taskboard`;
 
 const states = [
@@ -92,5 +93,7 @@ TaskBoard.states = states;
 TaskBoard.options = options;
 TaskBoard.className = TASKBOARD_CLASSNAME;
 TaskBoard.defaultOptions = defaultOptions;
+TaskBoard.moduleName = TASKBOARD_MODULE_NAME;
+TaskBoard.folderName = TASKBOARD_FOLDER_NAME;
 
 export default TaskBoard;

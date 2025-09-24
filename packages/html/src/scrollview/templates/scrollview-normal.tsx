@@ -1,3 +1,3 @@
-import ScrollView from "../scrollview-spec";
+import ScrollView from "../scrollview.spec";
 
 export const ScrollViewNormal = (props) => (<ScrollView {...props} />);

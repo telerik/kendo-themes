@@ -1,6 +1,7 @@
 import { classNames, stateClassNames, States, } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { PROGRESSBAR_FOLDER_NAME, PROGRESSBAR_MODULE_NAME } from './constants';
 export const PROGRESSBAR_CLASSNAME = `k-progressbar`;
 
 const states = [
@@ -99,5 +100,7 @@ ProgressBar.states = states;
 ProgressBar.options = options;
 ProgressBar.className = PROGRESSBAR_CLASSNAME;
 ProgressBar.defaultOptions = defaultOptions;
+ProgressBar.moduleName = PROGRESSBAR_MODULE_NAME;
+ProgressBar.folderName = PROGRESSBAR_FOLDER_NAME;
 
 export default ProgressBar;

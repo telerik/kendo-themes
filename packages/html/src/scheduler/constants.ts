@@ -1,0 +1,2 @@
+export const SCHEDULER_MODULE_NAME = 'scheduler';
+export const SCHEDULER_FOLDER_NAME = SCHEDULER_MODULE_NAME;

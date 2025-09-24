@@ -10,6 +10,7 @@ import { ToolbarSeparator } from './toolbar-separator';
 import { Icon } from '../icon';
 
 import { KendoComponent } from '../_types/component';
+import { TOOLBAR_FOLDER_NAME, TOOLBAR_MODULE_NAME } from './constants';
 export const TOOLBAR_CLASSNAME = `k-toolbar`;
 
 const states = [
@@ -316,5 +317,7 @@ Toolbar.states = states;
 Toolbar.options = options;
 Toolbar.className = TOOLBAR_CLASSNAME;
 Toolbar.defaultOptions = defaultOptions;
+Toolbar.moduleName = TOOLBAR_MODULE_NAME;
+Toolbar.folderName = TOOLBAR_FOLDER_NAME;
 
 export default Toolbar;

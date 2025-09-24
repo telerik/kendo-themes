@@ -4,6 +4,7 @@ import { NumericTextbox } from '../numerictextbox';
 import { classNames, optionClassNames, stateClassNames, States, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { PAGER_FOLDER_NAME, PAGER_MODULE_NAME } from './constants';
 export const PAGER_CLASSNAME = `k-pager`;
 
 const states = [
@@ -230,5 +231,7 @@ Pager.states = states;
 Pager.options = options;
 Pager.className = PAGER_CLASSNAME;
 Pager.defaultOptions = defaultOptions;
+Pager.moduleName = PAGER_MODULE_NAME;
+Pager.folderName = PAGER_FOLDER_NAME;
 
 export default Pager;

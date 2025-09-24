@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { SCHEDULER_FOLDER_NAME, SCHEDULER_MODULE_NAME } from './constants';
 const className = 'k-scheduler-head';
 
 export const SchedulerHead: KendoComponent<React.HTMLAttributes<HTMLDivElement> & { as: 'div' } | React.HTMLAttributes<HTMLTableRowElement> & { as: 'tr' }> = (
@@ -26,3 +27,5 @@ export const SchedulerHead: KendoComponent<React.HTMLAttributes<HTMLDivElement> 
 };
 
 SchedulerHead.className = className;
+SchedulerHead.moduleName = SCHEDULER_MODULE_NAME;
+SchedulerHead.folderName = SCHEDULER_FOLDER_NAME;

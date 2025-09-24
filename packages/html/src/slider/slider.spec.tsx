@@ -2,6 +2,7 @@ import { classNames, stateClassNames, States } from '../misc';
 import { Button } from '../button';
 
 import { KendoComponent } from '../_types/component';
+import { SLIDER_FOLDER_NAME, SLIDER_MODULE_NAME } from './constants';
 const SLIDER_CLASSNAME = 'k-slider';
 
 const states = [
@@ -125,5 +126,7 @@ Slider.states = states;
 Slider.options = options;
 Slider.className = SLIDER_CLASSNAME;
 Slider.defaultOptions = defaultOptions;
+Slider.moduleName = SLIDER_MODULE_NAME;
+Slider.folderName = SLIDER_FOLDER_NAME;
 
 export default Slider;

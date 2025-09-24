@@ -3,6 +3,7 @@ import { classNames, States, Size, Roundness, FillMode, ThemeColor } from '../mi
 import { Popup } from '../popup';
 
 import { KendoComponent } from '../_types/component';
+import { MENU_BUTTON_FOLDER_NAME, MENU_BUTTON_MODULE_NAME } from './constants';
 export const MENUBUTTON_CLASSNAME = `k-menu-button`;
 
 const states = [
@@ -119,5 +120,7 @@ MenuButton.states = states;
 MenuButton.options = options;
 MenuButton.className = MENUBUTTON_CLASSNAME;
 MenuButton.defaultOptions = defaultOptions;
+MenuButton.moduleName = MENU_BUTTON_MODULE_NAME;
+MenuButton.folderName = MENU_BUTTON_FOLDER_NAME;
 
 export default MenuButton;
