@@ -19,7 +19,7 @@ export default () => (
                 <div>
                     <ButtonGroup>
                         <Button className="k-group-start">normal</Button>
-                        {Button.states.map((state) => (
+                        {Button.states.filter(state => state !== 'generating').map((state) => (
                             <Button {...{ [state]: true }}>{state}</Button>
                         ))}
                         <Button className="k-group-end" selected focus>selected + focus</Button>
@@ -28,7 +28,7 @@ export default () => (
                 <div>
                     <ButtonGroup fillMode="outline">
                         <Button fillMode="outline" className="k-group-start">normal</Button>
-                        {Button.states.map((state) => (
+                        {Button.states.filter(state => state !== 'generating').map((state) => (
                             <Button fillMode="outline" {...{ [state]: true }}>{state}</Button>
                         ))}
                         <Button fillMode="outline" className="k-group-end" selected focus>selected + focus</Button>
@@ -37,7 +37,7 @@ export default () => (
                 <div>
                     <ButtonGroup fillMode="flat">
                         <Button fillMode="flat" className="k-group-start">normal</Button>
-                        {Button.states.map((state) => (
+                        {Button.states.filter(state => state !== 'generating').map((state) => (
                             <Button fillMode="flat" {...{ [state]: true }}>{state}</Button>
                         ))}
                         <Button fillMode="flat" className="k-group-end" selected focus>selected + focus</Button>
@@ -49,7 +49,7 @@ export default () => (
                 <div>
                     <ButtonGroup>
                         <Button className="k-group-start">normal</Button>
-                        {Button.states.map((state) => (
+                        {Button.states.filter(state => state !== 'generating').map((state) => (
                             <Button {...{ [state]: true }}>{state}</Button>
                         ))}
                         <Button className="k-group-end" selected focus>selected + focus</Button>
@@ -58,7 +58,7 @@ export default () => (
                 <div>
                     <ButtonGroup fillMode="outline">
                         <Button fillMode="outline" className="k-group-start">normal</Button>
-                        {Button.states.map((state) => (
+                        {Button.states.filter(state => state !== 'generating').map((state) => (
                             <Button fillMode="outline" {...{ [state]: true }}>{state}</Button>
                         ))}
                         <Button fillMode="outline" className="k-group-end" selected focus>selected + focus</Button>
@@ -67,7 +67,7 @@ export default () => (
                 <div>
                     <ButtonGroup fillMode="flat">
                         <Button fillMode="flat" className="k-group-start">normal</Button>
-                        {Button.states.map((state) => (
+                        {Button.states.filter(state => state !== 'generating').map((state) => (
                             <Button fillMode="flat" {...{ [state]: true }}>{state}</Button>
                         ))}
                         <Button fillMode="flat" className="k-group-end" selected focus>selected + focus</Button>
@@ -79,7 +79,7 @@ export default () => (
                 <div>
                     <ButtonGroup>
                         <Button className="k-group-start">normal</Button>
-                        {Button.states.map((state) => (
+                        {Button.states.filter(state => state !== 'generating').map((state) => (
                             <Button {...{ [state]: true }}>{state}</Button>
                         ))}
                         <Button className="k-group-end" selected focus>selected + focus</Button>
@@ -88,7 +88,7 @@ export default () => (
                 <div>
                     <ButtonGroup fillMode="outline">
                         <Button fillMode="outline" className="k-group-start">normal</Button>
-                        {Button.states.map((state) => (
+                        {Button.states.filter(state => state !== 'generating').map((state) => (
                             <Button fillMode="outline" {...{ [state]: true }}>{state}</Button>
                         ))}
                         <Button fillMode="outline" className="k-group-end" selected focus>selected + focus</Button>
@@ -97,7 +97,7 @@ export default () => (
                 <div>
                     <ButtonGroup fillMode="flat">
                         <Button fillMode="flat" className="k-group-start">normal</Button>
-                        {Button.states.map((state) => (
+                        {Button.states.filter(state => state !== 'generating').map((state) => (
                             <Button fillMode="flat" {...{ [state]: true }}>{state}</Button>
                         ))}
                         <Button fillMode="flat" className="k-group-end" selected focus>selected + focus</Button>
