@@ -4,133 +4,118 @@
 @mixin kendo-menu--theme-base() {
 
     .k-menu:not(.k-context-menu) {
-        @include fill(
-            $kendo-menu-text,
-            $kendo-menu-bg,
-            $kendo-menu-border,
-            $kendo-menu-gradient
-        );
-
-        > .k-item {
-            @include fill(
-                $kendo-menu-item-text,
-                $kendo-menu-item-bg,
-                $kendo-menu-item-border,
-                $kendo-menu-item-gradient
-            );
-
-            &:hover,
-            &.k-hover {
-                @include fill(
-                    $kendo-menu-item-hover-text,
-                    $kendo-menu-item-hover-bg,
-                    $kendo-menu-item-hover-border,
-                    $kendo-menu-item-hover-gradient
-                );
-            }
-
-            &:active,
-            &.k-active {
-                @include fill(
-                    $kendo-menu-item-active-text,
-                    $kendo-menu-item-active-bg,
-                    $kendo-menu-item-active-border,
-                    $kendo-menu-item-active-gradient
-                );
-            }
-
-            &:focus,
-            &.k-focus {
-                @include focus-indicator( $kendo-menu-item-focus-shadow, true );
-            }
-
-            &.k-selected {
-                @include fill(
-                    $kendo-menu-item-selected-text,
-                    $kendo-menu-item-selected-bg,
-                    $kendo-menu-item-selected-border,
-                    $kendo-menu-item-selected-gradient
-                );
-            }
-        }
+        color: $kendo-menu-text;
+        background-color: $kendo-menu-bg;
+        border-color: $kendo-menu-border;
+        @include linear-gradient($kendo-menu-gradient);
 
         > .k-separator {
-            @include fill(
-                $border: $kendo-menu-separator-border
-            );
+            border-color: $kendo-menu-separator-border;
+        }
+    }
+
+    // Menu items - base styles only
+    .k-menu:not(.k-context-menu) > .k-item {
+        color: $kendo-menu-item-text;
+        background-color: $kendo-menu-item-bg;
+        border-color: $kendo-menu-item-border;
+        @include linear-gradient($kendo-menu-item-gradient);
+    }
+
+    // Menu items - state selectors only
+    .k-menu:not(.k-context-menu) > .k-item {
+        &:hover,
+        &.k-hover {
+            color: $kendo-menu-item-hover-text;
+        background-color: $kendo-menu-item-hover-bg;
+        border-color: $kendo-menu-item-hover-border;
+        @include linear-gradient($kendo-menu-item-hover-gradient);
+        }
+
+        &:active,
+        &.k-active {
+            color: $kendo-menu-item-active-text;
+        background-color: $kendo-menu-item-active-bg;
+        border-color: $kendo-menu-item-active-border;
+        @include linear-gradient($kendo-menu-item-active-gradient);
+        }
+
+        &:focus,
+        &.k-focus {
+            @include focus-indicator( $kendo-menu-item-focus-shadow, true );
+        }
+
+        &.k-selected {
+            color: $kendo-menu-item-selected-text;
+        background-color: $kendo-menu-item-selected-bg;
+        border-color: $kendo-menu-item-selected-border;
+        @include linear-gradient($kendo-menu-item-selected-gradient);
         }
     }
 
     .k-menu-group,
     .k-menu.k-context-menu {
-        @include fill(
-            $kendo-menu-popup-text,
-            $kendo-menu-popup-bg,
-            $kendo-menu-popup-border,
-            $kendo-menu-popup-gradient
-        );
-
-        .k-item > .k-link {
-            @include fill(
-                $kendo-menu-popup-item-text,
-                $kendo-menu-popup-item-bg,
-                $kendo-menu-popup-item-border,
-                $kendo-menu-popup-item-gradient
-            );
-
-            &:hover,
-            &.k-hover {
-                @include fill(
-                    $kendo-menu-popup-item-hover-text,
-                    $kendo-menu-popup-item-hover-bg,
-                    $kendo-menu-popup-item-hover-border,
-                    $kendo-menu-popup-item-hover-gradient
-                );
-            }
-
-            &:active,
-            &.k-active,
-            &.k-selected {
-                @include fill(
-                    $kendo-menu-popup-item-active-text,
-                    $kendo-menu-popup-item-active-bg,
-                    $kendo-menu-popup-item-active-border,
-                    $kendo-menu-popup-item-active-gradient
-                );
-            }
-        }
-
-        .k-item:focus,
-        .k-item.k-focus {
-            > .k-link {
-                @include focus-indicator( $kendo-menu-popup-item-focus-shadow, true );
-            }
-        }
+        color: $kendo-menu-popup-text;
+        background-color: $kendo-menu-popup-bg;
+        border-color: $kendo-menu-popup-border;
+        @include linear-gradient($kendo-menu-popup-gradient);
 
         > .k-separator {
-            @include fill(
-                $border: $kendo-menu-separator-border
-            );
+            border-color: $kendo-menu-separator-border;
         }
     }
 
+    // Popup menu items - base styles only
+    .k-menu-group .k-item > .k-link,
+    .k-menu.k-context-menu .k-item > .k-link {
+        color: $kendo-menu-popup-item-text;
+        background-color: $kendo-menu-popup-item-bg;
+        border-color: $kendo-menu-popup-item-border;
+        @include linear-gradient($kendo-menu-popup-item-gradient);
+    }
+
+    // Popup menu items - state selectors only
+    .k-menu-group .k-item > .k-link,
+    .k-menu.k-context-menu .k-item > .k-link {
+        &:hover,
+        &.k-hover {
+            color: $kendo-menu-popup-item-hover-text;
+        background-color: $kendo-menu-popup-item-hover-bg;
+        border-color: $kendo-menu-popup-item-hover-border;
+        @include linear-gradient($kendo-menu-popup-item-hover-gradient);
+        }
+
+        &:active,
+        &.k-active,
+        &.k-selected {
+            color: $kendo-menu-popup-item-active-text;
+        background-color: $kendo-menu-popup-item-active-bg;
+        border-color: $kendo-menu-popup-item-active-border;
+        @include linear-gradient($kendo-menu-popup-item-active-gradient);
+        }
+    }
+
+    .k-menu-group .k-item:focus,
+    .k-menu-group .k-item.k-focus,
+    .k-menu.k-context-menu .k-item:focus,
+    .k-menu.k-context-menu .k-item.k-focus {
+        > .k-link {
+            @include focus-indicator( $kendo-menu-popup-item-focus-shadow, true );
+        }
+    }
 
     // Scrolling
     .k-menu-scroll-wrapper .k-menu-scroll-button {
-        @include fill(
-            $kendo-menu-scroll-button-text,
-            $kendo-menu-scroll-button-bg,
-            $kendo-menu-scroll-button-border,
-            $kendo-menu-scroll-button-gradient
-        );
+        color: $kendo-menu-scroll-button-text;
+        background-color: $kendo-menu-scroll-button-bg;
+        border-color: $kendo-menu-scroll-button-border;
+        @include linear-gradient($kendo-menu-scroll-button-gradient);
 
         &:hover {
-            @include fill(
-                $kendo-menu-scroll-button-hover-text,
-                $kendo-menu-scroll-button-hover-bg,
-                $kendo-menu-scroll-button-hover-border,
-                $kendo-menu-scroll-button-hover-gradient
-            );
+            color: $kendo-menu-scroll-button-hover-text;
+        background-color: $kendo-menu-scroll-button-hover-bg;
+        border-color: $kendo-menu-scroll-button-hover-border;
+        @include linear-gradient($kendo-menu-scroll-button-hover-gradient);
 
             &::before {
                 opacity: 0;
@@ -138,7 +123,6 @@
         }
     }
 }
-
 
 @mixin kendo-menu--theme() {
     @include kendo-menu--theme-base();

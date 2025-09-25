@@ -87,20 +87,16 @@
 
     // Items
     .k-fab-item-text {
-        @include fill(
-            $kendo-fab-item-text,
-            $kendo-fab-item-bg,
-            $kendo-fab-item-border
-        );
+        color: $kendo-fab-item-text;
+        background-color: $kendo-fab-item-bg;
+        border-color: $kendo-fab-item-border;
         @include box-shadow($kendo-fab-item-shadow);
 
     }
     .k-fab-item-icon {
-        @include fill(
-            $kendo-fab-item-icon-text,
-            $kendo-fab-item-icon-bg,
-            $kendo-fab-item-icon-border
-        );
+        color: $kendo-fab-item-icon-text;
+        background-color: $kendo-fab-item-icon-bg;
+        border-color: $kendo-fab-item-icon-border;
         @include box-shadow($kendo-fab-item-shadow);
         outline: $kendo-fab-border-width $kendo-fab-item-outline-style $kendo-fab-item-outline-color;
         outline-offset: calc(#{$kendo-fab-border-width} * -1);
@@ -152,7 +148,6 @@
     }
 
 }
-
 
 @mixin kendo-fab--theme() {
     @include kendo-fab--theme-base();

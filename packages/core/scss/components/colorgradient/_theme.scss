@@ -6,16 +6,14 @@
 
     // ColorGradient
     .k-colorgradient {
-        @include fill(
-            $kendo-color-gradient-text,
-            $kendo-color-gradient-bg,
-            $kendo-color-gradient-border
-        );
+        color: $kendo-color-gradient-text;
+        background-color: $kendo-color-gradient-bg;
+        border-color: $kendo-color-gradient-border;
     }
 
     .k-colorgradient:focus,
     .k-colorgradient.k-focus {
-        @include fill( $border: $kendo-color-gradient-focus-border );
+        border-color: $kendo-color-gradient-focus-border ;
         @include focus-indicator( $kendo-color-gradient-focus-shadow );
     }
 
@@ -24,30 +22,32 @@
         background: linear-gradient( to bottom, $kendo-gradient-transparent-to-black ), linear-gradient( to right, $kendo-gradient-white-to-transparent );
     }
 
-    // DragHandle
+    // DragHandle base styles
     .k-colorgradient .k-draghandle {
-        @include fill(
-            $kendo-color-gradient-draghandle-text,
-            $kendo-color-gradient-draghandle-bg,
-            $kendo-color-gradient-draghandle-border
-        );
+        color: $kendo-color-gradient-draghandle-text;
+        background-color: $kendo-color-gradient-draghandle-bg;
+        border-color: $kendo-color-gradient-draghandle-border;
         outline-color: $kendo-color-gradient-draghandle-focus-shadow;
         @include box-shadow( $kendo-color-gradient-draghandle-shadow );
+    }
 
-        &:focus,
-        &.k-focus {
-            @include fill( $bg: transparent, $border: $kendo-color-white );
-            outline-color: $kendo-color-gradient-draghandle-focus-shadow;
-            @include focus-indicator( $kendo-color-gradient-draghandle-shadow );
-        }
+    // DragHandle focus state
+    .k-colorgradient .k-draghandle:focus,
+    .k-colorgradient .k-draghandle.k-focus {
+        background-color: transparent;
+        border-color: $kendo-color-white ;
+        outline-color: $kendo-color-gradient-draghandle-focus-shadow;
+        @include focus-indicator( $kendo-color-gradient-draghandle-shadow );
+    }
 
-        &:hover,
-        &.k-hover,
-        &.k-active,
-        &:active {
-            @include fill( $bg: transparent, $border: $kendo-color-white );
-            outline-color: $kendo-color-gradient-draghandle-hover-shadow;
-        }
+    // DragHandle hover/active state
+    .k-colorgradient .k-draghandle:hover,
+    .k-colorgradient .k-draghandle.k-hover,
+    .k-colorgradient .k-draghandle.k-active,
+    .k-colorgradient .k-draghandle:active {
+        background-color: transparent;
+        border-color: $kendo-color-white ;
+        outline-color: $kendo-color-gradient-draghandle-hover-shadow;
     }
 
     // Slider
@@ -68,9 +68,8 @@
 
     // Inputs
     .k-colorgradient-input-label {
-        @include fill( $color: $kendo-color-gradient-input-label-text );
+        color: $kendo-color-gradient-input-label-text ;
     }
-
 
     // RTL
     .k-rtl,
@@ -85,7 +84,6 @@
     }
 
 }
-
 
 @mixin kendo-color-gradient--theme() {
     @include kendo-color-gradient--theme-base();

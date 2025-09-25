@@ -5,112 +5,81 @@
 
     // Filemanager
     .k-filemanager {
-        @include fill(
-            $kendo-file-manager-text,
-            $kendo-file-manager-bg,
-            $kendo-file-manager-border
-        );
+        color: $kendo-file-manager-text;
+        background-color: $kendo-file-manager-bg;
+        border-color: $kendo-file-manager-border;
     }
-
 
     // Filemanager toolbar
     .k-filemanager-toolbar {
-        @include fill(
-            $kendo-file-manager-toolbar-text,
-            $kendo-file-manager-toolbar-bg,
-            $kendo-file-manager-toolbar-border,
-            $kendo-file-manager-toolbar-gradient
-        );
+        color: $kendo-file-manager-toolbar-text;
+        background-color: $kendo-file-manager-toolbar-bg;
+        border-color: $kendo-file-manager-toolbar-border;
+        @include linear-gradient($kendo-file-manager-toolbar-gradient);
     }
-
 
     // Filemanager navigation
     .k-filemanager-navigation {
-        @include fill(
-            $kendo-file-manager-navigation-text,
-            $kendo-file-manager-navigation-bg,
-            $kendo-file-manager-navigation-border
-        );
+        color: $kendo-file-manager-navigation-text;
+        background-color: $kendo-file-manager-navigation-bg;
+        border-color: $kendo-file-manager-navigation-border;
     }
-
 
     // Filemanager breadcrumb
     .k-filemanager-breadcrumb {
-        @include fill(
-            $kendo-file-manager-breadcrumb-text,
-            $kendo-file-manager-breadcrumb-bg,
-            $kendo-file-manager-breadcrumb-border
-        );
+        color: $kendo-file-manager-breadcrumb-text;
+        background-color: $kendo-file-manager-breadcrumb-bg;
+        border-color: $kendo-file-manager-breadcrumb-border;
     }
-
 
     // Filemanager listview
     .k-filemanager-listview {
-        @include fill(
-            $kendo-file-manager-listview-text,
-            $kendo-file-manager-listview-bg,
-            $kendo-file-manager-listview-border
-        );
+        color: $kendo-file-manager-listview-text;
+        background-color: $kendo-file-manager-listview-bg;
+        border-color: $kendo-file-manager-listview-border;
 
         .k-listview-item {
-            @include fill(
-                $kendo-file-manager-listview-item-text,
-                $kendo-file-manager-listview-item-bg,
-                $kendo-file-manager-listview-item-border
-            );
+            color: $kendo-file-manager-listview-item-text;
+        background-color: $kendo-file-manager-listview-item-bg;
+        border-color: $kendo-file-manager-listview-item-border;
 
             .k-file-icon {
-                @include fill(
-                    $kendo-file-manager-listview-item-icon-text,
-                    $kendo-file-manager-listview-item-icon-bg,
-                    $kendo-file-manager-listview-item-icon-border
-                );
+                color: $kendo-file-manager-listview-item-icon-text;
+        background-color: $kendo-file-manager-listview-item-icon-bg;
+        border-color: $kendo-file-manager-listview-item-icon-border;
             }
 
             &.k-selected .k-file-icon {
-                @include fill(
-                    inherit,
-                    transparent,
-                    transparent
-                );
+                @include fill(inherit, transparent, transparent);
             }
         }
 
     }
 
-
     // Filemanager grid
     .k-filemanager-grid {
 
-        @include fill(
-            $kendo-file-manager-grid-text,
-            $kendo-file-manager-grid-bg,
-            $kendo-file-manager-grid-border
-        );
+        color: $kendo-file-manager-grid-text;
+        background-color: $kendo-file-manager-grid-bg;
+        border-color: $kendo-file-manager-grid-border;
 
     }
 
-
     // Filemanager preview
     .k-filemanager-preview {
-        @include fill(
-            $kendo-file-manager-preview-text,
-            $kendo-file-manager-preview-bg,
-            $kendo-file-manager-preview-border
-        );
+        color: $kendo-file-manager-preview-text;
+        background-color: $kendo-file-manager-preview-bg;
+        border-color: $kendo-file-manager-preview-border;
 
         .k-file-icon {
-            @include fill(
-                $kendo-file-manager-preview-icon-text,
-                $kendo-file-manager-preview-icon-bg,
-                $kendo-file-manager-preview-icon-border
-            );
+            color: $kendo-file-manager-preview-icon-text;
+        background-color: $kendo-file-manager-preview-icon-bg;
+        border-color: $kendo-file-manager-preview-icon-border;
         }
 
     }
 
 }
-
 
 @mixin kendo-file-manager--theme() {
     @include kendo-file-manager--theme-base();

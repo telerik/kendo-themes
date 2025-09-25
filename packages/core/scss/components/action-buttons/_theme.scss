@@ -5,16 +5,13 @@
 
     // Actions
     .k-actions {
-        @include fill(
-            $kendo-actions-text,
-            $kendo-actions-bg,
-            $kendo-actions-border,
-            $kendo-actions-gradient
-        );
+        color: $kendo-actions-text;
+        background-color: $kendo-actions-bg;
+        border-color: $kendo-actions-border;
+        @include linear-gradient($kendo-actions-gradient);
     }
 
 }
-
 
 @mixin kendo-action-buttons--theme() {
     @include kendo-action-buttons--theme-base();

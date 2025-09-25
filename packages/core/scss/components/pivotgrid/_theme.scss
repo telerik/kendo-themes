@@ -7,27 +7,21 @@
 
     // PivotGrid
     .k-pivotgrid {
-        @include fill (
-            $kendo-pivotgrid-text,
-            $kendo-pivotgrid-bg,
-            $kendo-pivotgrid-border
-        );
+        color: $kendo-pivotgrid-text;
+        background-color: $kendo-pivotgrid-bg;
+        border-color: $kendo-pivotgrid-border;
     }
 
     .k-pivotgrid-column-headers,
     .k-pivotgrid-row-headers,
     .k-pivotgrid-empty-cell {
-        @include fill (
-            $kendo-pivotgrid-headers-text,
-            $kendo-pivotgrid-headers-bg,
-            $kendo-pivotgrid-headers-border
-        );
+        color: $kendo-pivotgrid-headers-text;
+        background-color: $kendo-pivotgrid-headers-bg;
+        border-color: $kendo-pivotgrid-headers-border;
     }
 
     .k-pivotgrid-empty-cell {
-        @include fill (
-            $border: $kendo-pivotgrid-alt-border
-        );
+        border-color: $kendo-pivotgrid-alt-border;
     }
 
     .k-pivotgrid-row-headers .k-pivotgrid-row .k-pivotgrid-cell:last-child {
@@ -39,16 +33,12 @@
         border-block-end-color: $kendo-pivotgrid-alt-border;
     }
 
-
     .k-pivotgrid-header-total,
     .k-pivotgrid-total {
-        @include fill (
-            $kendo-pivotgrid-total-text,
-            $kendo-pivotgrid-total-bg,
-            $kendo-pivotgrid-total-border
-        );
+        color: $kendo-pivotgrid-total-text;
+        background-color: $kendo-pivotgrid-total-bg;
+        border-color: $kendo-pivotgrid-total-border;
     }
-
 
     // Hover state
     .k-pivotgrid-row-headers tbody > .k-pivotgrid-row:hover,
@@ -57,11 +47,9 @@
     .k-pivotgrid-column-headers tbody > .k-pivotgrid-row.k-hover,
     .k-pivotgrid-values tbody > .k-pivotgrid-row:hover,
     .k-pivotgrid-values tbody > .k-pivotgrid-row.k-hover {
-        @include fill (
-            $kendo-pivotgrid-hover-text,
-            $kendo-pivotgrid-hover-bg,
-            $kendo-pivotgrid-hover-border
-        );
+        color: $kendo-pivotgrid-hover-text;
+        background-color: $kendo-pivotgrid-hover-bg;
+        border-color: $kendo-pivotgrid-hover-border;
     }
 
     // Focus state
@@ -79,64 +67,49 @@
     // Selected state
     .k-pivotgrid-cell.k-selected,
     .k-pivotgrid-row.k-selected > .k-pivotgrid-cell {
-        @include fill (
-            $kendo-pivotgrid-selected-text,
-            $kendo-pivotgrid-selected-bg,
-            $kendo-pivotgrid-selected-border
-        );
+        color: $kendo-pivotgrid-selected-text;
+        background-color: $kendo-pivotgrid-selected-bg;
+        border-color: $kendo-pivotgrid-selected-border;
     }
-
 
     // Pivotgrid configurator
     .k-pivotgrid-configurator-button,
     .k-pivotgrid-configurator-panel {
-        @include fill (
-            $kendo-pivotgrid-configurator-text,
-            $kendo-pivotgrid-configurator-bg,
-            $kendo-pivotgrid-configurator-border
-        );
+        color: $kendo-pivotgrid-configurator-text;
+        background-color: $kendo-pivotgrid-configurator-bg;
+        border-color: $kendo-pivotgrid-configurator-border;
     }
 
     .k-pivotgrid-configurator-header {
-        @include fill(
-            $kendo-pivotgrid-configurator-header-text,
-            $kendo-pivotgrid-configurator-header-bg,
-            $kendo-pivotgrid-configurator-header-border
-        );
+        color: $kendo-pivotgrid-configurator-header-text;
+        background-color: $kendo-pivotgrid-configurator-header-bg;
+        border-color: $kendo-pivotgrid-configurator-header-border;
     }
 
     .k-pivotgrid-configurator-content .k-fields-list-wrapper {
-        @include fill(
-            $border: $kendo-pivotgrid-configurator-border
-        );
+        border-color: $kendo-pivotgrid-configurator-border;
     }
-
 
     // Calculated field
     .k-calculated-field {
-        @include fill (
-            $kendo-pivotgrid-calculated-field-text,
-            $kendo-pivotgrid-calculated-field-bg,
-            $kendo-pivotgrid-calculated-field-border
-        );
+        color: $kendo-pivotgrid-calculated-field-text;
+        background-color: $kendo-pivotgrid-calculated-field-bg;
+        border-color: $kendo-pivotgrid-calculated-field-border;
     }
 
     .k-calculated-field-header {
-        @include fill(
-            $kendo-pivotgrid-calculated-field-header-text,
-            $kendo-pivotgrid-calculated-field-header-bg,
-            $kendo-pivotgrid-calculated-field-header-border
-        );
+        color: $kendo-pivotgrid-calculated-field-header-text;
+        background-color: $kendo-pivotgrid-calculated-field-header-bg;
+        border-color: $kendo-pivotgrid-calculated-field-header-border;
     }
 
     .k-filter-menu .k-calculated-item {
-        @include fill( $border: $kendo-popup-border );
+        border-color: $kendo-popup-border ;
     }
 
     .k-pivotgrid-configurator-content .k-form-field-wrapper {
         @include fill( $border: k-color(border) );
     }
-
 
     // Overlay mode
     .k-flex-row {
@@ -162,11 +135,9 @@
     // Legacy pivotgrid
     // TODO: remove
     .k-pivot {
-        @include fill (
-            $kendo-pivotgrid-text,
-            $kendo-pivotgrid-bg,
-            $kendo-pivotgrid-border
-        );
+        color: $kendo-pivotgrid-text;
+        background-color: $kendo-pivotgrid-bg;
+        border-color: $kendo-pivotgrid-border;
     }
     .k-pivot-table {
         border-color: $kendo-pivotgrid-border;
@@ -174,21 +145,16 @@
 
     // Pivotgrid header
     .k-pivot-rowheaders {
-        @include fill(
-            $kendo-pivotgrid-headers-text,
-            $kendo-pivotgrid-headers-bg,
-            $kendo-pivotgrid-headers-border
-        );
+        color: $kendo-pivotgrid-headers-text;
+        background-color: $kendo-pivotgrid-headers-bg;
+        border-color: $kendo-pivotgrid-headers-border;
     }
-
 
     // Pivotgrid toolbar
     .k-pivot-toolbar {
-        @include fill(
-            $kendo-pivotgrid-headers-text,
-            $kendo-pivotgrid-headers-bg,
-            $kendo-pivotgrid-headers-border
-        );
+        color: $kendo-pivotgrid-headers-text;
+        background-color: $kendo-pivotgrid-headers-bg;
+        border-color: $kendo-pivotgrid-headers-border;
 
         .k-empty {
             color: k-color(subtle);
@@ -234,7 +200,6 @@
         color: k-color(success);
     }
 
-
     // Configurator
     .k-pivotgrid-configurator-panel.kendo-jquery {
 
@@ -244,7 +209,6 @@
     }
 
 }
-
 
 @mixin kendo-pivotgrid--theme() {
     @include kendo-pivotgrid--theme-base();

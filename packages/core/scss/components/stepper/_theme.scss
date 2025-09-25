@@ -7,12 +7,9 @@
 
     // Base
     .k-stepper {
-        @include fill(
-            $kendo-stepper-text,
-            $kendo-stepper-bg,
-            $kendo-stepper-border
-        );
-
+        color: $kendo-stepper-text;
+        background-color: $kendo-stepper-bg;
+        border-color: $kendo-stepper-border;
 
         // Not done steps
         .k-step {
@@ -25,11 +22,9 @@
                 }
 
                 .k-step-indicator {
-                    @include fill(
-                        $kendo-stepper-indicator-hover-text,
-                        $kendo-stepper-indicator-hover-bg,
-                        $kendo-stepper-indicator-hover-border
-                    );
+                    color: $kendo-stepper-indicator-hover-text;
+        background-color: $kendo-stepper-indicator-hover-bg;
+        border-color: $kendo-stepper-indicator-hover-border;
                 }
             }
 
@@ -46,11 +41,6 @@
             &.k-disabled,
             &:disabled {
                 .k-step-indicator {
-                    @include fill(
-                        $kendo-stepper-indicator-disabled-text,
-                        k-color(app-surface),
-                        $kendo-stepper-indicator-disabled-border
-                    );
 
                     &::before {
                         background-color: $kendo-stepper-indicator-disabled-bg;
@@ -58,65 +48,46 @@
                 }
 
                 .k-step-label {
-                    @include fill( $color: $kendo-stepper-label-disabled-text );
+                    color: $kendo-stepper-label-disabled-text ;
                 }
             }
         }
         .k-step-indicator {
-            @include fill(
-                $kendo-stepper-indicator-text,
-                $kendo-stepper-indicator-bg,
-                $kendo-stepper-indicator-border
-            );
+            color: $kendo-stepper-indicator-text;
+        background-color: $kendo-stepper-indicator-bg;
+        border-color: $kendo-stepper-indicator-border;
         }
         .k-step-indicator::after {
             @include box-shadow( inset 0 0 0 $kendo-stepper-indicator-focus-size k-color(surface-alt ) );
         }
         .k-step-label:only-child {
-            @include fill(
-                k-color(on-app-surface ),
-                k-color(surface-alt ),
-                k-color(border )
-            );
         }
-
 
         // Done steps
         .k-step-done {
 
             .k-step-indicator {
-                @include fill(
-                    $kendo-stepper-indicator-done-text,
-                    $kendo-stepper-indicator-done-bg,
-                    $kendo-stepper-indicator-done-border
-                );
+                color: $kendo-stepper-indicator-done-text;
+        background-color: $kendo-stepper-indicator-done-bg;
+        border-color: $kendo-stepper-indicator-done-border;
             }
-
 
             // Hover
             &:hover,
             &.k-hover,
             &.k-step-hover {
                 .k-step-indicator {
-                    @include fill(
-                        $kendo-stepper-indicator-done-hover-text,
-                        $kendo-stepper-indicator-done-hover-bg,
-                        $kendo-stepper-indicator-done-hover-border
-                    );
+                    color: $kendo-stepper-indicator-done-hover-text;
+        background-color: $kendo-stepper-indicator-done-hover-bg;
+        border-color: $kendo-stepper-indicator-done-hover-border;
                 }
             }
-
 
             // Disabled
             &.k-step-disabled,
             &.k-disabled,
             &:disabled {
                 .k-step-indicator {
-                    @include fill(
-                        $kendo-stepper-indicator-done-disabled-text,
-                        k-color(app-surface ),
-                        $kendo-stepper-indicator-done-disabled-border
-                    );
 
                     &::before {
                         background-color: $kendo-stepper-indicator-done-disabled-bg;
@@ -126,43 +97,31 @@
             }
         }
 
-
         // Current
         .k-step-current {
 
             .k-step-indicator {
-                @include fill(
-                    $kendo-stepper-indicator-current-text,
-                    $kendo-stepper-indicator-current-bg,
-                    $kendo-stepper-indicator-current-border
-                );
+                color: $kendo-stepper-indicator-current-text;
+        background-color: $kendo-stepper-indicator-current-bg;
+        border-color: $kendo-stepper-indicator-current-border;
             }
-
 
             // Hover
             &:hover,
             &.k-hover,
             &.k-step-hover {
                 .k-step-indicator {
-                    @include fill(
-                        $kendo-stepper-indicator-current-hover-text,
-                        $kendo-stepper-indicator-current-hover-bg,
-                        $kendo-stepper-indicator-current-hover-border
-                    );
+                    color: $kendo-stepper-indicator-current-hover-text;
+        background-color: $kendo-stepper-indicator-current-hover-bg;
+        border-color: $kendo-stepper-indicator-current-hover-border;
                 }
             }
-
 
             // Disabled
             &.k-step-disabled,
             &.k-disabled,
             &:disabled {
                 .k-step-indicator {
-                    @include fill(
-                        $kendo-stepper-indicator-current-disabled-text,
-                        k-color(app-surface ),
-                        $kendo-stepper-indicator-current-disabled-border
-                    );
 
                     &::before {
                         background-color: $kendo-stepper-indicator-current-disabled-bg;
@@ -173,22 +132,22 @@
 
         // Label
         .k-step-label {
-            @include fill( $color: $kendo-stepper-label-text );
+            color: $kendo-stepper-label-text ;
         }
         .k-step-success .k-step-label .k-icon {
-            @include fill( $color: $kendo-stepper-label-success-text );
+            color: $kendo-stepper-label-success-text ;
         }
 
         .k-step-error {
             .k-step-label {
-                @include fill( $color: $kendo-stepper-label-error-text );
+                color: $kendo-stepper-label-error-text ;
             }
 
             &:hover,
             &.k-hover,
             &.k-step-hover {
                 .k-step-label {
-                    @include fill( $color: $kendo-stepper-label-error-text );
+                    color: $kendo-stepper-label-error-text ;
                 }
             }
         }
@@ -200,22 +159,17 @@
 
         // Progressbar
         .k-progressbar {
-            @include fill(
-                $color: $kendo-stepper-progressbar-text,
-                $bg: $kendo-stepper-progressbar-bg
-            );
+            color: $kendo-stepper-progressbar-text;
+                    background-color: $kendo-stepper-progressbar-bg;
 
             .k-selected {
-                @include fill(
-                    $color: $kendo-stepper-progressbar-fill-text,
-                    $bg: $kendo-stepper-progressbar-fill-bg
-                );
+                color: $kendo-stepper-progressbar-fill-text;
+                background-color: $kendo-stepper-progressbar-fill-bg;
             }
         }
     }
 
 }
-
 
 @mixin kendo-stepper--theme() {
     @include kendo-stepper--theme-base();

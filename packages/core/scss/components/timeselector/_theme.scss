@@ -7,13 +7,10 @@
 
     // Time selector
     .k-timeselector {
-        @include fill(
-            $kendo-time-selector-text,
-            $kendo-time-selector-bg,
-            $kendo-time-selector-border
-        );
+        color: $kendo-time-selector-text;
+        background-color: $kendo-time-selector-bg;
+        border-color: $kendo-time-selector-border;
     }
-
 
     // Time selector header
     .k-time-header,
@@ -29,7 +26,6 @@
             color: $kendo-time-selector-header-time-now-hover-text;
         }
     }
-
 
     // Time list wrapper
     .k-time-list-wrapper {
@@ -50,7 +46,6 @@
         }
     }
 
-
     // Time list
     .k-time-list {
         &::before,
@@ -69,14 +64,11 @@
     }
 
     .k-time-highlight {
-        @include fill(
-            $bg: $kendo-time-list-highlight-bg,
-            $border: $kendo-time-list-highlight-border
-        );
+        background-color: $kendo-time-list-highlight-bg;
+        border-color: $kendo-time-list-highlight-border;
     }
 
 }
-
 
 @mixin kendo-time-selector--theme() {
     @include kendo-time-selector--theme-base();

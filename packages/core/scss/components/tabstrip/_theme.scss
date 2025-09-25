@@ -5,91 +5,76 @@
 
     // Wrapper
     .k-tabstrip-wrapper {
-        @include fill(
-            $kendo-tabstrip-wrapper-text,
-            $kendo-tabstrip-wrapper-bg,
-            $kendo-tabstrip-wrapper-border
-        );
+        color: $kendo-tabstrip-wrapper-text;
+        background-color: $kendo-tabstrip-wrapper-bg;
+        border-color: $kendo-tabstrip-wrapper-border;
     }
-
 
     // Items
     .k-tabstrip-items-wrapper {
-        @include fill(
-            $kendo-tabstrip-text,
-            $kendo-tabstrip-bg,
-            $kendo-tabstrip-border
-        );
-
-        .k-item {
-            @include fill(
-                $kendo-tabstrip-item-text,
-                $kendo-tabstrip-item-bg,
-                $kendo-tabstrip-item-border,
-                $kendo-tabstrip-item-gradient
-            );
-
-            &:hover,
-            &.k-hover {
-                @include fill(
-                    $kendo-tabstrip-item-hover-text,
-                    $kendo-tabstrip-item-hover-bg,
-                    $kendo-tabstrip-item-hover-border,
-                    $kendo-tabstrip-item-hover-gradient
-                );
-            }
-
-            &:active,
-            &.k-active,
-            &.k-selected {
-                @include fill(
-                    $kendo-tabstrip-item-selected-text,
-                    $kendo-tabstrip-item-selected-bg,
-                    $kendo-tabstrip-item-selected-border,
-                    $kendo-tabstrip-item-selected-gradient
-                );
-            }
-
-            &:focus,
-            &.k-focus {
-                @include focus-indicator( $kendo-tabstrip-item-focus-shadow, true );
-            }
-
-            &.k-tabstrip-dragging {
-                @include focus-indicator( $kendo-tabstrip-item-dragging-shadow );
-            }
-
-
-            // Disabled
-            &.k-disabled,
-            &[disabled] {
-                @include fill(
-                    $kendo-tabstrip-item-disabled-text,
-                    $kendo-tabstrip-item-disabled-bg,
-                    $kendo-tabstrip-item-disabled-border,
-                    $kendo-tabstrip-item-disabled-gradient
-                );
-            }
-        }
-
+        color: $kendo-tabstrip-text;
+        background-color: $kendo-tabstrip-bg;
+        border-color: $kendo-tabstrip-border;
     }
 
+    // Tabstrip items - base styles only
+    .k-tabstrip-items-wrapper .k-item {
+        color: $kendo-tabstrip-item-text;
+        background-color: $kendo-tabstrip-item-bg;
+        border-color: $kendo-tabstrip-item-border;
+        @include linear-gradient($kendo-tabstrip-item-gradient);
+    }
+
+    // Tabstrip items - state selectors only
+    .k-tabstrip-items-wrapper .k-item {
+        &:hover,
+        &.k-hover {
+            color: $kendo-tabstrip-item-hover-text;
+        background-color: $kendo-tabstrip-item-hover-bg;
+        border-color: $kendo-tabstrip-item-hover-border;
+        @include linear-gradient($kendo-tabstrip-item-hover-gradient);
+        }
+
+        &:active,
+        &.k-active,
+        &.k-selected {
+            color: $kendo-tabstrip-item-selected-text;
+        background-color: $kendo-tabstrip-item-selected-bg;
+        border-color: $kendo-tabstrip-item-selected-border;
+        @include linear-gradient($kendo-tabstrip-item-selected-gradient);
+        }
+
+        &:focus,
+        &.k-focus {
+            @include focus-indicator( $kendo-tabstrip-item-focus-shadow, true );
+        }
+
+        &.k-tabstrip-dragging {
+            @include focus-indicator( $kendo-tabstrip-item-dragging-shadow );
+        }
+
+        // Disabled
+        &.k-disabled,
+        &[disabled] {
+            color: $kendo-tabstrip-item-disabled-text;
+        background-color: $kendo-tabstrip-item-disabled-bg;
+        border-color: $kendo-tabstrip-item-disabled-border;
+        @include linear-gradient($kendo-tabstrip-item-disabled-gradient);
+        }
+    }
 
     // Content
     .k-tabstrip-content,
     .k-tabstrip > .k-content {
-        @include fill(
-            $kendo-tabstrip-content-text,
-            $kendo-tabstrip-content-bg,
-            $kendo-tabstrip-content-border
-        );
+        color: $kendo-tabstrip-content-text;
+        background-color: $kendo-tabstrip-content-bg;
+        border-color: $kendo-tabstrip-content-border;
 
         &:focus,
         &.k-focus {
             outline-color: $kendo-tabstrip-content-focus-border;
         }
     }
-
 
     // Selected indicator
     @if ($kendo-tabstrip-indicator-size) {
@@ -156,7 +141,6 @@
         }
     }
 }
-
 
 @mixin kendo-tabstrip--theme() {
     @include kendo-tabstrip--theme-base();

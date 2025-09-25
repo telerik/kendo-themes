@@ -3,22 +3,20 @@
 
 @mixin kendo-color-preview--theme-base() {
 
-    // Color Preview
+    // Color Preview base styles
     .k-color-preview {
-        @include fill(
-            $kendo-color-preview-text,
-            $kendo-color-preview-bg,
-            $kendo-color-preview-border
-        );
+        color: $kendo-color-preview-text;
+        background-color: $kendo-color-preview-bg;
+        border-color: $kendo-color-preview-border;
+    }
 
-        &:hover,
-        &.k-hover {
-            @include fill( $border: $kendo-color-preview-hover-border );
-        }
+    // Color Preview hover state
+    .k-color-preview:hover,
+    .k-color-preview.k-hover {
+        border-color: $kendo-color-preview-hover-border ;
     }
 
 }
-
 
 @mixin kendo-color-preview--theme() {
     @include kendo-color-preview--theme-base();

@@ -6,11 +6,9 @@
 
     .k-pane-wrapper,
     .k-view {
-        @include fill(
-            $kendo-adaptive-text,
-            $kendo-adaptive-bg,
-            $kendo-adaptive-border
-        );
+        color: $kendo-adaptive-text;
+        background-color: $kendo-adaptive-bg;
+        border-color: $kendo-adaptive-border;
     }
 
     .k-pane-wrapper .k-pane {
@@ -98,7 +96,6 @@
     }
 
 }
-
 
 @mixin kendo-adaptive--theme() {
     @include kendo-adaptive--theme-base();

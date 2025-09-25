@@ -16,47 +16,41 @@
         }
 
         .k-slider-track {
-            @include fill( $bg: $kendo-slider-track-bg );
+            background-color: $kendo-slider-track-bg ;
         }
 
         .k-slider-selection {
-            @include fill( $bg: $kendo-slider-selection-bg );
+            background-color: $kendo-slider-selection-bg ;
         }
 
+        // Draghandle - base styles only
         .k-draghandle {
-            @include fill(
-                $kendo-slider-draghandle-text,
-                $kendo-slider-draghandle-bg,
-                $kendo-slider-draghandle-border,
-                $kendo-slider-draghandle-gradient
-            );
+            color: $kendo-slider-draghandle-text;
+        background-color: $kendo-slider-draghandle-bg;
+        border-color: $kendo-slider-draghandle-border;
+        @include linear-gradient($kendo-slider-draghandle-gradient);
             @include border-radius( 50% );
+        }
 
+        // Draghandle - state selectors only
+        .k-draghandle {
             &:hover,
             &.k-hover {
-                @include fill(
-                    $kendo-slider-draghandle-hover-text,
-                    $kendo-slider-draghandle-hover-bg,
-                    $kendo-slider-draghandle-hover-border,
-                    $kendo-slider-draghandle-hover-gradient
-                );
+                color: $kendo-slider-draghandle-hover-text;
+        background-color: $kendo-slider-draghandle-hover-bg;
+        border-color: $kendo-slider-draghandle-hover-border;
+        @include linear-gradient($kendo-slider-draghandle-hover-gradient);
+                @include focus-indicator( $kendo-slider-draghandle-hover-shadow );
             }
 
             // TODO: remove k-pressed and rely on k-active
             &:active,
             &.k-active,
             &.k-pressed {
-                @include fill(
-                    $kendo-slider-draghandle-pressed-text,
-                    $kendo-slider-draghandle-pressed-bg,
-                    $kendo-slider-draghandle-pressed-border,
-                    $kendo-slider-draghandle-pressed-gradient
-                );
-            }
-
-            &:hover,
-            &.k-hover {
-                @include focus-indicator( $kendo-slider-draghandle-hover-shadow );
+                color: $kendo-slider-draghandle-pressed-text;
+        background-color: $kendo-slider-draghandle-pressed-bg;
+        border-color: $kendo-slider-draghandle-pressed-border;
+        @include linear-gradient($kendo-slider-draghandle-pressed-gradient);
             }
 
             &:focus,
@@ -85,7 +79,6 @@
     }
 
 }
-
 
 @mixin kendo-slider--theme() {
     @include kendo-slider--theme-base();

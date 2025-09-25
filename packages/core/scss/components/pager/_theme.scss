@@ -3,23 +3,23 @@
 
 @mixin kendo-pager--theme-base() {
 
-    // Pager
+    // Pager - base styles only
     .k-pager {
-        @include fill(
-            $kendo-pager-text,
-            $kendo-pager-bg,
-            $kendo-pager-border
-        );
+        color: $kendo-pager-text;
+        background-color: $kendo-pager-bg;
+        border-color: $kendo-pager-border;
+    }
 
+    // Pager - state selectors only
+    .k-pager {
         &:focus,
         &.k-focus {
-            @include fill( $bg: $kendo-pager-focus-bg );
+            background-color: $kendo-pager-focus-bg ;
             @include focus-indicator( $kendo-pager-focus-shadow, true );
         }
     }
 
 }
-
 
 @mixin kendo-pager--theme() {
     @include kendo-pager--theme-base();

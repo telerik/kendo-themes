@@ -6,35 +6,33 @@
 @use "../../_variables.scss" as *;
 
 @mixin kendo-suggestion--theme-base() {
+    // Suggestion base styles
     .k-suggestion {
-        @include fill(
-            $kendo-suggestion-text,
-            $kendo-suggestion-bg,
-            $kendo-suggestion-border
-        );
+        color: $kendo-suggestion-text;
+        background-color: $kendo-suggestion-bg;
+        border-color: $kendo-suggestion-border;
+    }
 
-        &:hover,
-        &.k-hover {
-            @include fill(
-                $kendo-suggestion-hover-text,
-                $kendo-suggestion-hover-bg,
-                $kendo-suggestion-hover-border
-            );
-        }
+    // Suggestion hover state
+    .k-suggestion:hover,
+    .k-suggestion.k-hover {
+        color: $kendo-suggestion-hover-text;
+        background-color: $kendo-suggestion-hover-bg;
+        border-color: $kendo-suggestion-hover-border;
+    }
 
-        &:active,
-        &.k-active {
-            @include fill(
-                $kendo-suggestion-active-text,
-                $kendo-suggestion-active-bg,
-                $kendo-suggestion-active-border
-            );
-        }
+    // Suggestion active state
+    .k-suggestion:active,
+    .k-suggestion.k-active {
+        color: $kendo-suggestion-active-text;
+        background-color: $kendo-suggestion-active-bg;
+        border-color: $kendo-suggestion-active-border;
+    }
 
-        &:focus,
-        &.k-focus {
-            @include focus-indicator( 0 0 $kendo-suggestion-focus-shadow-blur $kendo-suggestion-focus-shadow-spread $kendo-suggestion-focus-shadow-color );
-        }
+    // Suggestion focus state
+    .k-suggestion:focus,
+    .k-suggestion.k-focus {
+        @include focus-indicator( 0 0 $kendo-suggestion-focus-shadow-blur $kendo-suggestion-focus-shadow-spread $kendo-suggestion-focus-shadow-color );
     }
 
     @each $name, $props in $kendo-suggestion-theme-colors {
@@ -51,36 +49,28 @@
         $_suggestion-active-bg: k-color(#{$name}-subtle-active);
         $_suggestion-active-border: k-color(#{$name}-emphasis);
 
-            
         .k-suggestion-#{$name} {
-            @include fill(
-                $_suggestion-text,
-                $_suggestion-bg,
-                $_suggestion-border
-            );
+            color: $_suggestion-text;
+            background-color: $_suggestion-bg;
+            border-color: $_suggestion-border;
+        }
 
-            &:hover,
-            &.k-hover {
-                @include fill(
-                    $_suggestion-hover-text,
-                    $_suggestion-hover-bg,
-                    $_suggestion-hover-border
-                );
-            }
+        .k-suggestion-#{$name}:hover,
+        .k-suggestion-#{$name}.k-hover {
+            color: $_suggestion-hover-text;
+            background-color: $_suggestion-hover-bg;
+            border-color: $_suggestion-hover-border;
+        }
 
-            &:active,
-            &.k-active {
-                @include fill(
-                    $_suggestion-active-text,
-                    $_suggestion-active-bg,
-                    $_suggestion-active-border
-                );
-            }
+        .k-suggestion-#{$name}:active,
+        .k-suggestion-#{$name}.k-active {
+            color: $_suggestion-active-text;
+            background-color: $_suggestion-active-bg;
+            border-color: $_suggestion-active-border;
         }
     }
 
 }
-
 
 @mixin kendo-suggestion--theme() {
     @include kendo-suggestion--theme-base();

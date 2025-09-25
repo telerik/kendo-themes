@@ -12,9 +12,8 @@
             @include focus-indicator( $kendo-toolbar-item-shadow );
         }
 
-
         // Button group
-        .k-button-group {}
+        // .k-button-group - placeholder for future styling
 
     }
 
@@ -28,25 +27,22 @@
         border-color: $kendo-toolbar-separator-border;
     }
 
-    // Solid Toolbar
+    // Solid Toolbar base styles
     .k-toolbar-solid {
-        @include fill(
-            $kendo-toolbar-text,
-            $kendo-toolbar-bg,
-            $kendo-toolbar-border,
-            $kendo-toolbar-gradient
-        );
+        color: $kendo-toolbar-text;
+        background-color: $kendo-toolbar-bg;
+        border-color: $kendo-toolbar-border;
+        @include linear-gradient($kendo-toolbar-gradient);
         @include box-shadow( $kendo-toolbar-shadow );
+    }
 
-        &.k-toolbar-scrollable-overlay {
-            &::before {
-                background: linear-gradient(90deg, $kendo-toolbar-scroll-overlay);
-            }
+    // Solid Toolbar scrollable overlay
+    .k-toolbar-solid.k-toolbar-scrollable-overlay::before {
+        background: linear-gradient(90deg, $kendo-toolbar-scroll-overlay);
+    }
 
-            &::after {
-                background: linear-gradient(270deg, $kendo-toolbar-scroll-overlay);
-            }
-        }
+    .k-toolbar-solid.k-toolbar-scrollable-overlay::after {
+        background: linear-gradient(270deg, $kendo-toolbar-scroll-overlay);
     }
 
     .k-toolbar-items-list-solid {
@@ -55,10 +51,9 @@
 
     // Outline Toolbar
     .k-toolbar-outline {
-        @include fill(
-            $color: $kendo-toolbar-outline-text,
+        color: $kendo-toolbar-outline-text;
             $border: $kendo-toolbar-outline-border
-        );
+        ;
         @include box-shadow( $kendo-toolbar-outline-shadow );
 
         &.k-toolbar-scrollable-overlay {
@@ -78,12 +73,10 @@
 
     // Flat Toolbar
     .k-toolbar-flat {
-        @include fill(
-            $color: $kendo-toolbar-flat-text,
+        color: $kendo-toolbar-flat-text;
             $border: $kendo-toolbar-flat-border
-        );
+        ;
         @include box-shadow( $kendo-toolbar-flat-shadow );
-
 
         > .k-separator,
         .k-toolbar-separator {
@@ -107,12 +100,10 @@
 
     .k-floating-toolbar,
     .editorToolbarWindow.k-window-content { // stylelint-disable-line
-        @include fill(
-            $kendo-toolbar-text,
-            $kendo-toolbar-bg,
-            $kendo-toolbar-border,
-            $kendo-toolbar-gradient
-        );
+        color: $kendo-toolbar-text;
+        background-color: $kendo-toolbar-bg;
+        border-color: $kendo-toolbar-border;
+        @include linear-gradient($kendo-toolbar-gradient);
     }
 
     // Overflow container
@@ -186,7 +177,6 @@
         }
     }
 }
-
 
 @mixin kendo-toolbar--theme() {
     @include kendo-toolbar--theme-base();

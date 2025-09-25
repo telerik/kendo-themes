@@ -8,28 +8,23 @@
     .k-floating-label-container {
 
         > .k-floating-label {
-            @include fill(
-                $color: $kendo-floating-label-text,
-                $bg: $kendo-floating-label-bg
-            );
+            color: $kendo-floating-label-text;
+            background-color: $kendo-floating-label-bg;
         }
 
         &.k-focus > .k-floating-label {
-            @include fill(
-                $color: $kendo-floating-label-focus-text,
-                $bg: $kendo-floating-label-focus-bg
-            );
+            color: $kendo-floating-label-focus-text;
+            background-color: $kendo-floating-label-focus-bg;
         }
 
         &.k-invalid > .k-floating-label,
         &.ng-invalid.ng-touched > .k-floating-label,
         &.ng-invalid.ng-dirty > .k-floating-label {
-            @include fill ( $color: k-color(error) );
+            color: k-color(error);
         }
     }
 
 }
-
 
 @mixin kendo-floating-label--theme() {
     @include kendo-floating-label--theme-base();

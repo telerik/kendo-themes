@@ -8,47 +8,38 @@
     // Switch
     .k-switch {}
 
-
     // Switch OFF
     .k-switch-off {
 
         // Normal state
         .k-switch-track {
-            @include fill(
-                $kendo-switch-off-track-text,
-                $kendo-switch-off-track-bg,
-                $kendo-switch-off-track-border,
-                $kendo-switch-off-track-gradient
-            );
+            color: $kendo-switch-off-track-text;
+        background-color: $kendo-switch-off-track-bg;
+        border-color: $kendo-switch-off-track-border;
+        @include linear-gradient($kendo-switch-off-track-gradient);
         }
         .k-switch-thumb {
-            @include fill(
-                $kendo-switch-off-thumb-text,
-                $kendo-switch-off-thumb-bg,
-                $kendo-switch-off-thumb-border,
-                $kendo-switch-off-thumb-gradient
-            );
+            color: $kendo-switch-off-thumb-text;
+        background-color: $kendo-switch-off-thumb-bg;
+        border-color: $kendo-switch-off-thumb-border;
+        @include linear-gradient($kendo-switch-off-thumb-gradient);
         }
 
         // Hover
         &:hover,
         &.k-hover {
             .k-switch-track {
-                @include fill(
-                    $kendo-switch-off-track-hover-text,
-                    $kendo-switch-off-track-hover-bg,
-                    $kendo-switch-off-track-hover-border,
-                    $kendo-switch-off-track-hover-gradient
-                );
+                color: $kendo-switch-off-track-hover-text;
+        background-color: $kendo-switch-off-track-hover-bg;
+        border-color: $kendo-switch-off-track-hover-border;
+        @include linear-gradient($kendo-switch-off-track-hover-gradient);
             }
 
             .k-switch-thumb {
-                @include fill(
-                    $kendo-switch-off-thumb-hover-text,
-                    $kendo-switch-off-thumb-hover-bg,
-                    $kendo-switch-off-thumb-hover-border,
-                    $kendo-switch-off-thumb-hover-gradient
-                );
+                color: $kendo-switch-off-thumb-hover-text;
+        background-color: $kendo-switch-off-thumb-hover-bg;
+        border-color: $kendo-switch-off-thumb-hover-border;
+        @include linear-gradient($kendo-switch-off-thumb-hover-gradient);
             }
         }
 
@@ -56,12 +47,10 @@
         &:focus,
         &.k-focus {
             .k-switch-track {
-                @include fill(
-                    $kendo-switch-off-track-focus-text,
-                    $kendo-switch-off-track-focus-bg,
-                    $kendo-switch-off-track-focus-border,
-                    $kendo-switch-off-track-focus-gradient
-                );
+                color: $kendo-switch-off-track-focus-text;
+        background-color: $kendo-switch-off-track-focus-bg;
+        border-color: $kendo-switch-off-track-focus-border;
+        @include linear-gradient($kendo-switch-off-track-focus-gradient);
                 @if $kendo-enable-focus-contrast {
                     @include box-shadow( 0 0 0 2px k-color(on-app-surface));
                 } @else {
@@ -74,21 +63,17 @@
         &:disabled,
         &.k-disabled {
             .k-switch-track {
-                @include fill(
-                    $kendo-switch-off-track-disabled-text,
-                    $kendo-switch-off-track-disabled-bg,
-                    $kendo-switch-off-track-disabled-border,
-                    $kendo-switch-off-track-disabled-gradient
-                );
+                color: $kendo-switch-off-track-disabled-text;
+        background-color: $kendo-switch-off-track-disabled-bg;
+        border-color: $kendo-switch-off-track-disabled-border;
+        @include linear-gradient($kendo-switch-off-track-disabled-gradient);
             }
 
             .k-switch-thumb {
-                @include fill(
-                    $kendo-switch-off-thumb-disabled-text,
-                    $kendo-switch-off-thumb-disabled-bg,
-                    $kendo-switch-off-thumb-disabled-border,
-                    $kendo-switch-off-thumb-disabled-gradient
-                );
+                color: $kendo-switch-off-thumb-disabled-text;
+        background-color: $kendo-switch-off-thumb-disabled-bg;
+        border-color: $kendo-switch-off-thumb-disabled-border;
+        @include linear-gradient($kendo-switch-off-thumb-disabled-gradient);
             }
         }
 
@@ -97,47 +82,38 @@
         }
     }
 
-
     // Switch ON
     .k-switch-on {
 
         // Normal state
         .k-switch-track {
-            @include fill(
-                $kendo-switch-on-track-text,
-                $kendo-switch-on-track-bg,
-                $kendo-switch-on-track-border,
-                $kendo-switch-on-track-gradient
-            );
+            color: $kendo-switch-on-track-text;
+        background-color: $kendo-switch-on-track-bg;
+        border-color: $kendo-switch-on-track-border;
+        @include linear-gradient($kendo-switch-on-track-gradient);
         }
         .k-switch-thumb {
-            @include fill(
-                $kendo-switch-on-thumb-text,
-                $kendo-switch-on-thumb-bg,
-                $kendo-switch-on-thumb-border,
-                $kendo-switch-on-thumb-gradient
-            );
+            color: $kendo-switch-on-thumb-text;
+        background-color: $kendo-switch-on-thumb-bg;
+        border-color: $kendo-switch-on-thumb-border;
+        @include linear-gradient($kendo-switch-on-thumb-gradient);
         }
 
         // Hover
         &:hover,
         &.k-hover {
             .k-switch-track {
-                @include fill(
-                    $kendo-switch-on-track-hover-text,
-                    $kendo-switch-on-track-hover-bg,
-                    $kendo-switch-on-track-hover-border,
-                    $kendo-switch-on-track-hover-gradient
-                );
+                color: $kendo-switch-on-track-hover-text;
+        background-color: $kendo-switch-on-track-hover-bg;
+        border-color: $kendo-switch-on-track-hover-border;
+        @include linear-gradient($kendo-switch-on-track-hover-gradient);
             }
 
             .k-switch-thumb {
-                @include fill(
-                    $kendo-switch-on-thumb-hover-text,
-                    $kendo-switch-on-thumb-hover-bg,
-                    $kendo-switch-on-thumb-hover-border,
-                    $kendo-switch-on-thumb-hover-gradient
-                );
+                color: $kendo-switch-on-thumb-hover-text;
+        background-color: $kendo-switch-on-thumb-hover-bg;
+        border-color: $kendo-switch-on-thumb-hover-border;
+        @include linear-gradient($kendo-switch-on-thumb-hover-gradient);
             }
         }
 
@@ -145,12 +121,10 @@
         &:focus,
         &.k-focus {
             .k-switch-track {
-                @include fill(
-                    $kendo-switch-on-track-focus-text,
-                    $kendo-switch-on-track-focus-bg,
-                    $kendo-switch-on-track-focus-border,
-                    $kendo-switch-on-track-focus-gradient
-                );
+                color: $kendo-switch-on-track-focus-text;
+        background-color: $kendo-switch-on-track-focus-bg;
+        border-color: $kendo-switch-on-track-focus-border;
+        @include linear-gradient($kendo-switch-on-track-focus-gradient);
                 @if $kendo-enable-focus-contrast {
                     @include box-shadow( 0 0 0 2px k-color(on-app-surface ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ));
                 } @else {
@@ -163,21 +137,17 @@
         &:disabled,
         &.k-disabled {
             .k-switch-track {
-                @include fill(
-                    $kendo-switch-on-track-disabled-text,
-                    $kendo-switch-on-track-disabled-bg,
-                    $kendo-switch-on-track-disabled-border,
-                    $kendo-switch-on-track-disabled-gradient
-                );
+                color: $kendo-switch-on-track-disabled-text;
+        background-color: $kendo-switch-on-track-disabled-bg;
+        border-color: $kendo-switch-on-track-disabled-border;
+        @include linear-gradient($kendo-switch-on-track-disabled-gradient);
             }
 
             .k-switch-thumb {
-                @include fill(
-                    $kendo-switch-on-thumb-disabled-text,
-                    $kendo-switch-on-thumb-disabled-bg,
-                    $kendo-switch-on-thumb-disabled-border,
-                    $kendo-switch-on-thumb-disabled-gradient
-                );
+                color: $kendo-switch-on-thumb-disabled-text;
+        background-color: $kendo-switch-on-thumb-disabled-bg;
+        border-color: $kendo-switch-on-thumb-disabled-border;
+        @include linear-gradient($kendo-switch-on-thumb-disabled-gradient);
             }
         }
 
@@ -187,7 +157,6 @@
     }
 
 }
-
 
 @mixin kendo-switch--theme() {
     @include kendo-switch--theme-base();

@@ -3,28 +3,25 @@
 
 @mixin kendo-color-palette--theme-base() {
 
-    // Tile
-    .k-colorpalette-tile {
+    // Tile focus state
+    .k-colorpalette-tile:focus,
+    .k-colorpalette-tile.k-focus {
+        @include focus-indicator( $kendo-color-palette-tile-focus-shadow );
+    }
 
-        &:focus,
-        &.k-focus {
-            @include focus-indicator( $kendo-color-palette-tile-focus-shadow );
-        }
+    // Tile hover state
+    .k-colorpalette-tile:hover,
+    .k-colorpalette-tile.k-hover {
+        @include box-shadow( $kendo-color-palette-tile-hover-shadow );
+    }
 
-        &:hover,
-        &.k-hover {
-            @include box-shadow( $kendo-color-palette-tile-hover-shadow );
-        }
-
-        &.k-selected,
-        &.k-selected:hover {
-            @include box-shadow( $kendo-color-palette-tile-selected-shadow );
-        }
-
+    // Tile selected state
+    .k-colorpalette-tile.k-selected,
+    .k-colorpalette-tile.k-selected:hover {
+        @include box-shadow( $kendo-color-palette-tile-selected-shadow );
     }
 
 }
-
 
 @mixin kendo-color-palette--theme() {
     @include kendo-color-palette--theme-base();

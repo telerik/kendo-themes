@@ -8,58 +8,43 @@
 
     // List
     .k-list {
-        @include fill(
-            $kendo-list-text,
-            $kendo-list-bg,
-            $kendo-list-border
-        );
+        color: $kendo-list-text;
+        background-color: $kendo-list-bg;
+        border-color: $kendo-list-border;
     }
-
 
     // List header
     // .k-list-header,
     .k-list-group-sticky-header {
-        @include fill(
-            $kendo-list-header-text,
-            $kendo-list-header-bg,
-            $kendo-list-header-border,
-        );
+        color: $kendo-list-header-text;
+        background-color: $kendo-list-header-bg;
+        border-color: $kendo-list-header-border;
         @include box-shadow( $kendo-list-header-shadow );
     }
 
-
-    // List item
+    // List item - base styles only
     .k-list-item {
-        @include fill(
-            $kendo-list-item-text,
-            $kendo-list-item-bg
-        );
+        @include fill($kendo-list-item-text, $kendo-list-item-bg);
+    }
 
+    // List item - state selectors only
+    .k-list-item {
         // Hover
         &:hover,
         &.k-hover {
-            @include fill(
-                $kendo-list-item-hover-text,
-                $kendo-list-item-hover-bg
-            );
+            @include fill($kendo-list-item-hover-text, $kendo-list-item-hover-bg);
         }
 
         // Focus
         &:focus,
         &.k-focus {
-            @include fill(
-                $kendo-list-item-focus-text,
-                $kendo-list-item-focus-bg
-            );
+            @include fill($kendo-list-item-focus-text, $kendo-list-item-focus-bg);
             @include focus-indicator( $kendo-list-item-focus-shadow, true );
         }
 
         // Selected
         &.k-selected {
-            @include fill(
-                $kendo-list-item-selected-text,
-                $kendo-list-item-selected-bg
-            );
+            @include fill($kendo-list-item-selected-text, $kendo-list-item-selected-bg);
         }
         &.k-selected:hover,
         &.k-selected.k-hover {
@@ -77,25 +62,18 @@
 
     // List group item
     .k-list-group-item {
-        @include fill(
-            $kendo-list-group-item-text,
-            $kendo-list-group-item-bg,
-            $kendo-list-group-item-border,
-        );
+        color: $kendo-list-group-item-text;
+        background-color: $kendo-list-group-item-bg;
+        border-color: $kendo-list-group-item-border;
         @include box-shadow( $kendo-list-group-item-shadow );
     }
 
-
     // List item group label
     .k-list-item-group-label {
-        @include fill(
-            $kendo-list-bg,
-            $kendo-list-text
-        );
+        @include fill($kendo-list-bg, $kendo-list-text);
     }
 
 }
-
 
 @mixin kendo-list--theme() {
     @include kendo-list--theme-base();

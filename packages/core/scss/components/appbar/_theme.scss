@@ -13,7 +13,6 @@
         @include box-shadow( $kendo-appbar-bottom-box-shadow );
     }
 
-
     // AppBar theme colors
     @each $name, $color in $kendo-appbar-theme-colors {
         .k-appbar-#{$name} {
@@ -31,7 +30,6 @@
     }
 
 }
-
 
 @mixin kendo-appbar--theme() {
     @include kendo-appbar--theme-base();

@@ -10,12 +10,12 @@
 
         fieldset {
             legend {
-                @include fill( $color: $kendo-fieldset-legend-text );
+                color: $kendo-fieldset-legend-text ;
             }
         }
 
         .k-form-legend {
-            @include fill( $border: $kendo-form-legend-border-color );
+            border-color: $kendo-form-legend-border-color ;
         }
 
         .k-field-info {
@@ -34,11 +34,10 @@
     }
 
     .k-form-separator {
-        @include fill( $border: $kendo-form-separator-border-color );
+        border-color: $kendo-form-separator-border-color ;
     }
 
 }
-
 
 @mixin kendo-form--theme() {
     @include kendo-form--theme-base();

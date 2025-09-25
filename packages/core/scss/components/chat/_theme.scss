@@ -8,66 +8,61 @@
 
     // Chat
     .k-chat {
-        @include fill(
-            $kendo-chat-text,
-            $kendo-chat-bg,
-            $kendo-chat-border
-        );
+        color: $kendo-chat-text;
+        background-color: $kendo-chat-bg;
+        border-color: $kendo-chat-border;
     }
 
-    // Message meta
+    // Message meta base styles
     .k-timestamp {
-        @include fill(
-            $kendo-chat-timestamp-text,
-            $kendo-chat-timestamp-bg
-        );
+        @include fill($kendo-chat-timestamp-text, $kendo-chat-timestamp-bg);
+    }
 
-        &::before,
-        &::after {
-            background-color: $kendo-chat-timestamp-separator-bg;
-        }
+    // Message meta pseudo elements
+    .k-timestamp::before,
+    .k-timestamp::after {
+        background-color: $kendo-chat-timestamp-separator-bg;
     }
 
     // Message status
     .k-message-status {
-        @include fill(
-            $kendo-chat-status-text
-        );
+        color: $kendo-chat-status-text;
     }
 
-    // Bubbles
+    // Bubbles base styles
     .k-message-group-sender .k-chat-bubble {
-        @include fill(
-            $kendo-chat-alt-bubble-text,
-            $kendo-chat-alt-bubble-bg,
-            $kendo-chat-alt-bubble-border
-        );
-
+        color: $kendo-chat-alt-bubble-text;
+        background-color: $kendo-chat-alt-bubble-bg;
+        border-color: $kendo-chat-alt-bubble-border;
         @include box-shadow( $kendo-chat-alt-bubble-shadow );
+    }
 
-        &:active,
-        &.k-active,
-        &.k-selected {
-            @include fill( $bg: $kendo-chat-alt-bubble-active-bg, $border: $kendo-chat-alt-bubble-active-border );
-        }
+    // Bubbles active state
+    .k-message-group-sender .k-chat-bubble:active,
+    .k-message-group-sender .k-chat-bubble.k-active,
+    .k-message-group-sender .k-chat-bubble.k-selected {
+        background-color: $kendo-chat-alt-bubble-active-bg;
+        border-color: $kendo-chat-alt-bubble-active-border;
+    }
 
-        &:focus,
-        &.k-focus {
-            @include fill( $bg: $kendo-chat-alt-bubble-focus-bg, $border: $kendo-chat-alt-bubble-focus-border );
-            @include focus-indicator( $kendo-chat-alt-bubble-focus-shadow, true, true );
-        }
+    // Bubbles focus state
+    .k-message-group-sender .k-chat-bubble:focus,
+    .k-message-group-sender .k-chat-bubble.k-focus {
+        background-color: $kendo-chat-alt-bubble-focus-bg;
+        border-color: $kendo-chat-alt-bubble-focus-border;
+        @include focus-indicator( $kendo-chat-alt-bubble-focus-shadow, true, true );
+    }
 
-        &:hover,
-        &.k-hover {
-            @include fill( $bg: $kendo-chat-alt-bubble-hover-bg, $border: $kendo-chat-alt-bubble-hover-border );
-        }
+    // Bubbles hover state
+    .k-message-group-sender .k-chat-bubble:hover,
+    .k-message-group-sender .k-chat-bubble.k-hover {
+        background-color: $kendo-chat-alt-bubble-hover-bg;
+        border-color: $kendo-chat-alt-bubble-hover-border;
     }
 
     // Typing indicator
     .k-typing-indicator {
-        @include fill(
-            $kendo-chat-typing-indicator-text
-        );
+        @include fill($kendo-chat-typing-indicator-text);
     }
 
     // Chat attachment
@@ -76,28 +71,22 @@
     }
 
     .k-chat-file-deleted {
-        @include fill(
-            k-color(error-on-subtle),
-            k-color(error-subtle),
-            k-color(error-subtle)
-        );
+        color: k-color(error-on-subtle);
+        background-color: k-color(error-subtle);
+        border-color: k-color(error-subtle);
     }
 
     // Attachment within Textarea prefix
     .k-message-box-wrapper .k-chat-file {
-        @include fill(
-            $kendo-chat-file-text,
-            $kendo-chat-file-bg,
-            $kendo-chat-file-border
-        );
+        color: $kendo-chat-file-text;
+        background-color: $kendo-chat-file-bg;
+        border-color: $kendo-chat-file-border;
     }
 
     // Message reference
     .k-message-reference {
-        @include fill(
-            $kendo-chat-message-reference-text,
-            $kendo-chat-message-reference-bg
-        );
+        color: $kendo-chat-message-reference-text;
+        @include linear-gradient($kendo-chat-message-reference-bg);
     }
 
     .k-message-reference-sender {
@@ -122,15 +111,12 @@
     // Toolbar
     .k-chat-toolbar,
     .k-chat .k-toolbar-box {
-        @include fill(
-            $kendo-chat-toolbar-text,
-            $kendo-chat-toolbar-bg,
-            $kendo-chat-toolbar-border
-        );
+        color: $kendo-chat-toolbar-text;
+        background-color: $kendo-chat-toolbar-bg;
+        border-color: $kendo-chat-toolbar-border;
     }
 
 }
-
 
 @mixin kendo-chat--theme() {
     @include kendo-chat--theme-base();

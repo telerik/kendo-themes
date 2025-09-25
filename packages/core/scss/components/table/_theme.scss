@@ -15,7 +15,6 @@
         }
     }
 
-
     // Table header
     .k-table-thead,
     .k-table-header,
@@ -25,7 +24,6 @@
         background-color: $kendo-table-header-bg;
     }
 
-
     // Table footer
     .k-table-tfoot,
     .k-table-footer {
@@ -33,7 +31,6 @@
         color: $kendo-table-footer-text;
         background-color: $kendo-table-footer-bg;
     }
-
 
     // Group row
     .k-table-group-row {
@@ -46,14 +43,12 @@
         background-color: $kendo-table-text;
     }
 
-
     // Alternating row
     .k-table-alt-row {
         border-color: $kendo-table-alt-row-border;
         color: $kendo-table-alt-row-text;
         background-color: $kendo-table-alt-row-bg;
     }
-
 
     // Hover state
     .k-table-tbody .k-table-row:hover,
@@ -64,7 +59,6 @@
         color: $kendo-table-hover-text;
         background-color: $kendo-table-hover-bg;
     }
-
 
     // Focus state
     .k-table-tbody .k-table-row,
@@ -80,7 +74,6 @@
         }
     }
 
-
     // Selected state
     .k-table-tbody .k-table-row.k-selected > .k-table-td,
     .k-table-list .k-table-row.k-selected {
@@ -90,7 +83,6 @@
     }
 
 }
-
 
 @mixin kendo-table--theme() {
     @include kendo-table--theme-base();

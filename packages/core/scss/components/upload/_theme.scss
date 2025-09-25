@@ -5,19 +5,15 @@
 @mixin kendo-upload--theme-base() {
 
     .k-upload {
-        @include fill(
-            $kendo-upload-text,
-            $kendo-upload-bg,
-            $kendo-upload-border
-        );
+        color: $kendo-upload-text;
+        background-color: $kendo-upload-bg;
+        border-color: $kendo-upload-border;
 
         .k-dropzone,
         .k-upload-dropzone {
-            @include fill(
-                $kendo-upload-dropzone-text,
-                $kendo-upload-dropzone-bg,
-                $kendo-upload-dropzone-border
-            );
+            color: $kendo-upload-dropzone-text;
+        background-color: $kendo-upload-dropzone-bg;
+        border-color: $kendo-upload-dropzone-border;
 
             &.k-hover {
                 background-color: $kendo-upload-dropzone-hover-bg;
@@ -57,7 +53,6 @@
                 background-color: $kendo-upload-progress-bg;
             }
         }
-
 
         // Upload status: success
         .k-file-success {
@@ -99,12 +94,11 @@
         &.k-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            border-color: k-color(error)
+            border-color: k-color(error);
         }
     }
 
 }
-
 
 @mixin kendo-upload--theme() {
     @include kendo-upload--theme-base();

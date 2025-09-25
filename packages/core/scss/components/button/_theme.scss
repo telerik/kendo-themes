@@ -8,25 +8,16 @@
 
 @mixin kendo-button--theme-base() {
 
-    // Solid button
+    // Solid button - base styles only
     .k-button-solid-base {
-        @include fill(
-            $kendo-button-text,
-            $kendo-button-bg,
-            $kendo-button-border,
-            $kendo-button-gradient
-        );
         @include box-shadow( $kendo-button-shadow );
+    }
 
+    // Solid button - state selectors only
+    .k-button-solid-base {
         // Hover state
         &:hover,
         &.k-hover {
-            @include fill(
-                $kendo-button-hover-text,
-                $kendo-button-hover-bg,
-                $kendo-button-hover-border,
-                $kendo-button-hover-gradient
-            );
             @include box-shadow( $kendo-button-hover-shadow );
         }
 
@@ -39,35 +30,17 @@
         // Active state
         &:active,
         &.k-active {
-            @include fill(
-                $kendo-button-active-text,
-                $kendo-button-active-bg,
-                $kendo-button-active-border,
-                $kendo-button-active-gradient
-            );
             @include box-shadow( $kendo-button-active-shadow );
         }
 
         // Selected state
         &.k-selected {
-            @include fill(
-                $kendo-button-selected-text,
-                $kendo-button-selected-bg,
-                $kendo-button-selected-border,
-                $kendo-button-selected-gradient
-            );
             @include box-shadow( $kendo-button-selected-shadow );
         }
 
         // Disabled state
         &:disabled,
         &.k-disabled {
-            @include fill(
-                $kendo-button-disabled-text,
-                $kendo-button-disabled-bg,
-                $kendo-button-disabled-border,
-                $kendo-button-disabled-gradient
-            );
             @include box-shadow( $kendo-button-disabled-shadow );
         }
     }
@@ -86,22 +59,15 @@
             $_button-active-bg: k-color(#{$name}-active);
             $_button-active-border: k-color(#{$name}-active);
 
+            // Base styles only
             .k-button-solid-#{$name} {
-                @include fill(
-                    $_button-text,
-                    $_button-bg,
-                    $_button-border,
-                    $kendo-solid-button-gradient
-                );
+            }
 
+            // State selectors only
+            .k-button-solid-#{$name} {
                 // Hover state
                 &:hover,
                 &.k-hover {
-                    @include fill(
-                        $_button-hover-text,
-                        $_button-hover-bg,
-                        $_button-hover-border
-                    );
                 }
 
                 // Focus state
@@ -115,61 +81,39 @@
                 // Active state
                 &:active,
                 &.k-active {
-                    @include fill(
-                        $_button-active-text,
-                        $_button-active-bg,
-                        $_button-active-border
-                    );
                 }
 
                 // Selected
                 &.k-selected {
-                    @include fill(
-                        $_button-active-text,
-                        $_button-active-bg,
-                        $_button-active-border
-                    );
                 }
 
                 // Disabled state
                 &:disabled,
                 &.k-disabled {
-                    @include fill(
-                        $kendo-button-disabled-text,
-                        $kendo-button-disabled-bg,
-                        $kendo-button-disabled-border,
-                        $kendo-button-disabled-gradient
-                    );
                     @include box-shadow( $kendo-button-disabled-shadow );
                 }
             }
         }
     }
 
-
-    // Outline button
+    // Outline button - base styles
     @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": k-color(on-app-surface) ) ) {
         .k-button-outline-#{$name} {
             @include box-shadow( none );
             border-color: currentColor;
             color: k-color(#{$name}-on-surface);
             background-color: transparent;
+        }
+    }
 
+    // Outline button - state selectors
+    @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": k-color(on-app-surface) ) ) {
+        .k-button-outline-#{$name} {
             // Hover state
             &:hover,
             &.k-hover {
                 @if $name == "base" {
-                    @include fill(
-                        k-color(base),
-                        k-color(on-base),
-                        k-color(on-base)
-                    );
                 } @else {
-                    @include fill(
-                        k-color(on-#{$name}),
-                        $color,
-                        $color
-                    );
                 }
             }
 
@@ -189,34 +133,14 @@
             &:active,
             &.k-active {
                 @if $name == "base" {
-                    @include fill(
-                        k-color(base ),
-                        k-color(on-base ),
-                        k-color(on-base )
-                    );
                 } @else {
-                    @include fill(
-                        k-color(on-#{$name} ),
-                        $color,
-                        $color
-                    );
                 }
             }
 
             // Selected
             &.k-selected {
                 @if $name == "base" {
-                    @include fill(
-                        k-color(base ),
-                        k-color(on-base ),
-                        k-color(on-base )
-                    );
                 } @else {
-                    @include fill(
-                        k-color(on-#{$name} ),
-                        $color,
-                        $color
-                    );
                 }
             }
 
@@ -228,8 +152,7 @@
         }
     }
 
-
-    // Flat button
+    // Flat button - base styles
     @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": inherit ) ) {
         .k-button-flat-#{$name} {
             @if $name == "base" {
@@ -237,7 +160,12 @@
             } @else {
                 color: k-color(#{$name}-on-surface);
             }
+        }
+    }
 
+    // Flat button - state selectors
+    @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": inherit ) ) {
+        .k-button-flat-#{$name} {
             // Disabled state
             &:disabled,
             &.k-disabled {
@@ -246,12 +174,16 @@
         }
     }
 
-
-    // Link button
+    // Link button - base styles
     @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": k-color(on-app-surface ) ) ) {
         .k-button-link-#{$name} {
             color: $color;
+        }
+    }
 
+    // Link button - state selectors
+    @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": k-color(on-app-surface ) ) ) {
+        .k-button-link-#{$name} {
             // Hover
             &:hover,
             &.k-hover {
@@ -301,12 +233,16 @@
         }
     }
 
-
-    // Clear button
+    // Clear button - base styles
     @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": k-color(on-app-surface ) ) ) {
         .k-button-clear-#{$name} {
             color: k-color(#{$name}-on-surface);
+        }
+    }
 
+    // Clear button - state selectors
+    @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": k-color(on-app-surface ) ) ) {
+        .k-button-clear-#{$name} {
             &:focus,
             &.k-focus,
             &:active {
@@ -325,13 +261,7 @@
         }
     }
 
-
-    // Button group
-    .k-button-group {}
-
-
 }
-
 
 @mixin kendo-button--theme() {
     @include kendo-button--theme-base();

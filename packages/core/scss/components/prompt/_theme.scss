@@ -4,41 +4,32 @@
 @mixin kendo-prompt--theme-base() {
 
     .k-prompt {
-        @include fill(
-            $kendo-prompt-text,
-            $kendo-prompt-bg,
-            $kendo-prompt-border
-        );
+        color: $kendo-prompt-text;
+        background-color: $kendo-prompt-bg;
+        border-color: $kendo-prompt-border;
     }
 
     .k-prompt-header {
-        @include fill(
-            $kendo-prompt-header-text,
-            $kendo-prompt-header-bg,
-            $kendo-prompt-header-border
-        );
+        color: $kendo-prompt-header-text;
+        background-color: $kendo-prompt-header-bg;
+        border-color: $kendo-prompt-header-border;
     }
 
     .k-prompt-content {
-        @include fill(
-            $kendo-prompt-content-text,
-            $kendo-prompt-content-bg,
-            $kendo-prompt-content-border
-        );
+        color: $kendo-prompt-content-text;
+        background-color: $kendo-prompt-content-bg;
+        border-color: $kendo-prompt-content-border;
     }
 
     // Remove when k-suggestion is adopted
     .k-prompt-suggestion {
-        @include fill(
-            $kendo-prompt-suggestion-text,
-            $kendo-prompt-suggestion-bg,
-            $kendo-prompt-suggestion-border
-        );
+        color: $kendo-prompt-suggestion-text;
+        background-color: $kendo-prompt-suggestion-bg;
+        border-color: $kendo-prompt-suggestion-border;
         @include box-shadow( $kendo-prompt-suggestion-shadow );
     }
 
 }
-
 
 @mixin kendo-prompt--theme() {
     @include kendo-prompt--theme-base();

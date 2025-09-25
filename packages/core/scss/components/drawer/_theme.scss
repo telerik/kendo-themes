@@ -4,11 +4,9 @@
 @mixin kendo-drawer--theme-base() {
 
     .k-drawer {
-        @include fill(
-            $kendo-drawer-text,
-            $kendo-drawer-bg,
-            $kendo-drawer-border
-        );
+        color: $kendo-drawer-text;
+        background-color: $kendo-drawer-bg;
+        border-color: $kendo-drawer-border;
     }
 
     // Drawer items
@@ -25,8 +23,8 @@
             background: $kendo-drawer-scrollbar-hover-color;
         }
     }
+    // Drawer item - state selectors only
     .k-drawer-item {
-
         &:hover,
         &.k-hover {
             color: $kendo-drawer-hover-text;
@@ -37,28 +35,31 @@
         &.k-focus {
             background-color: $kendo-drawer-focus-bg;
             @include focus-indicator( $kendo-drawer-focus-shadow, true );
-
-            &:hover,
-            &.k-hover {
-                color: $kendo-drawer-hover-text;
-                background-color: $kendo-drawer-hover-bg;
-            }
         }
 
         &.k-selected {
             color: $kendo-drawer-selected-text;
             background-color: $kendo-drawer-selected-bg;
+        }
+    }
 
-            &:hover,
-            &.k-hover {
-                color: $kendo-drawer-selected-hover-text;
-                background-color: $kendo-drawer-selected-hover-bg;
-            }
+    // Drawer item - combined state selectors
+    .k-drawer-item {
+        &:focus:hover,
+        &.k-focus.k-hover {
+            color: $kendo-drawer-hover-text;
+            background-color: $kendo-drawer-hover-bg;
+        }
 
-            &:focus,
-            &.k-focus {
-                background-color: $kendo-drawer-selected-focus-bg;
-            }
+        &.k-selected:hover,
+        &.k-selected.k-hover {
+            color: $kendo-drawer-selected-hover-text;
+            background-color: $kendo-drawer-selected-hover-bg;
+        }
+
+        &.k-selected:focus,
+        &.k-selected.k-focus {
+            background-color: $kendo-drawer-selected-focus-bg;
         }
     }
     .k-drawer-separator {
@@ -66,7 +67,6 @@
     }
 
 }
-
 
 @mixin kendo-drawer--theme() {
     @include kendo-drawer--theme-base();

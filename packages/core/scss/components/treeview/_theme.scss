@@ -5,82 +5,62 @@
 
     // Treeview
     .k-treeview {
-        @include fill(
-            $kendo-treeview-text,
-            $kendo-treeview-bg,
-            $kendo-treeview-border
-        );
+        color: $kendo-treeview-text;
+        background-color: $kendo-treeview-bg;
+        border-color: $kendo-treeview-border;
     }
-
 
     // Treeview item
-    .k-treeview-item {}
+    // .k-treeview-item - placeholder for future styling
 
-
-    // Treeview leaf
-    .k-treeview-leaf {
-
-        // Hover state
-        &:hover,
-        &.k-hover {
-            @include fill(
-                $kendo-treeview-item-hover-text,
-                $kendo-treeview-item-hover-bg,
-                $kendo-treeview-item-hover-border,
-                $kendo-treeview-item-hover-gradient
-            );
-        }
-
-        // Focus state
-        &:focus,
-        &.k-focus {
-            @include focus-indicator( $kendo-treeview-item-focus-shadow, true );
-        }
-
-        // Selected state
-        &.k-selected {
-            @include fill(
-                $kendo-treeview-item-selected-text,
-                $kendo-treeview-item-selected-bg,
-                $kendo-treeview-item-selected-border,
-                $kendo-treeview-item-selected-gradient
-            );
-        }
+    // Treeview leaf hover state
+    .k-treeview-leaf:hover,
+    .k-treeview-leaf.k-hover {
+        color: $kendo-treeview-item-hover-text;
+        background-color: $kendo-treeview-item-hover-bg;
+        border-color: $kendo-treeview-item-hover-border;
+        @include linear-gradient($kendo-treeview-item-hover-gradient);
     }
 
+    // Treeview leaf focus state
+    .k-treeview-leaf:focus,
+    .k-treeview-leaf.k-focus {
+        @include focus-indicator( $kendo-treeview-item-focus-shadow, true );
+    }
 
-    // Treeview load more button
+    // Treeview leaf selected state
+    .k-treeview-leaf.k-selected {
+        color: $kendo-treeview-item-selected-text;
+        background-color: $kendo-treeview-item-selected-bg;
+        border-color: $kendo-treeview-item-selected-border;
+        @include linear-gradient($kendo-treeview-item-selected-gradient);
+    }
+
+    // Treeview load more button base styles
     .k-treeview .k-treeview-load-more-button {
-        @include fill(
-            $kendo-treeview-loadmore-text,
-            $kendo-treeview-loadmore-bg,
-            $kendo-treeview-loadmore-border
-        );
+        color: $kendo-treeview-loadmore-text;
+        background-color: $kendo-treeview-loadmore-bg;
+        border-color: $kendo-treeview-loadmore-border;
+    }
 
-        // Hover state
-        &:hover,
-        &.k-hover {
-            @include fill(
-                $kendo-treeview-loadmore-hover-text,
-                $kendo-treeview-loadmore-hover-bg,
-                $kendo-treeview-loadmore-hover-border
-            );
-        }
+    // Treeview load more button hover state
+    .k-treeview .k-treeview-load-more-button:hover,
+    .k-treeview .k-treeview-load-more-button.k-hover {
+        color: $kendo-treeview-loadmore-hover-text;
+        background-color: $kendo-treeview-loadmore-hover-bg;
+        border-color: $kendo-treeview-loadmore-hover-border;
+    }
 
-        // Focus state
-        &:focus,
-        &.k-focus {
-            @include fill(
-                $kendo-treeview-loadmore-focus-text,
-                $kendo-treeview-loadmore-focus-bg,
-                $kendo-treeview-loadmore-focus-border
-            );
-            @include focus-indicator( $kendo-treeview-loadmore-focus-shadow, true );
-        }
+    // Treeview load more button focus state
+    .k-treeview .k-treeview-load-more-button:focus,
+    .k-treeview .k-treeview-load-more-button.k-focus {
+        color: $kendo-treeview-loadmore-focus-text;
+        background-color: $kendo-treeview-loadmore-focus-bg;
+        border-color: $kendo-treeview-loadmore-focus-border;
+        @include focus-indicator( $kendo-treeview-loadmore-focus-shadow, true );
     }
 
 }
-
 
 @mixin kendo-treeview--theme() {
     @include kendo-treeview--theme-base();

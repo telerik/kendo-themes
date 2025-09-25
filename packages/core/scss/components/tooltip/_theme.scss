@@ -5,11 +5,9 @@
 @mixin kendo-tooltip--theme-base() {
     // Default tooltip
     .k-tooltip {
-        @include fill(
-            $kendo-tooltip-text,
-            $kendo-tooltip-bg,
-            $kendo-tooltip-border
-        );
+        color: $kendo-tooltip-text;
+        background-color: $kendo-tooltip-bg;
+        border-color: $kendo-tooltip-border;
 
         @include box-shadow( $kendo-tooltip-shadow );
 
@@ -21,11 +19,6 @@
     // Tooltip variants
     @each $name, $props in $kendo-tooltip-theme {
         .k-tooltip-#{$name} {
-            @include fill(
-                map.get( $props, color ),
-                map.get( $props, background-color ),
-                map.get( $props, border )
-            );
 
             .k-callout {
                 color: map.get( $props, background-color );
@@ -34,7 +27,6 @@
     }
 
 }
-
 
 @mixin kendo-tooltip--theme() {
     @include kendo-tooltip--theme-base();

@@ -7,13 +7,10 @@
 
     // Theme
     .k-mediaplayer {
-        @include fill(
-            $kendo-media-player-text,
-            $kendo-media-player-bg,
-            $kendo-media-player-border
-        );
+        color: $kendo-media-player-text;
+        background-color: $kendo-media-player-bg;
+        border-color: $kendo-media-player-border;
     }
-
 
     // Title bar
     .k-mediaplayer-titlebar {
@@ -23,7 +20,6 @@
     }
 
 }
-
 
 @mixin kendo-media-player--theme() {
     @include kendo-media-player--theme-base();

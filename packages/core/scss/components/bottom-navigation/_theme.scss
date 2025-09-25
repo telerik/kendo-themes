@@ -9,18 +9,18 @@
     // Solid
     @each $name, $color in $kendo-bottom-navigation-theme-colors {
         .k-bottom-nav-solid-#{$name} {
-            @include fill(
-                $color: color-mix(in srgb, k-color(on-#{$name}) 65%, transparent),
-                $bg: $color
-            );
+
+            color: color-mix(in srgb, k-color(on-#{$name}) 65%, transparent);
+            background-color: $color;
+
 
             .k-bottom-nav-item.k-focus,
             .k-bottom-nav-item:focus {
-                @include fill( $bg: color-mix(in srgb, k-color(on-#{$name}) 12.5%, transparent));
+                background-color: color-mix(in srgb, k-color(on-#{$name}) 12.5%, transparent);
             }
 
             .k-bottom-nav-item.k-selected {
-                @include fill( $color: k-color(on-#{$name}));
+                color: k-color(on-#{$name});
             }
         }
         // TODO: remove when suites update class names
@@ -32,22 +32,20 @@
     // Flat
     @each $name, $color in $kendo-bottom-navigation-theme-colors {
         .k-bottom-nav-flat-#{$name} {
-            @include fill(
-                $kendo-bottom-nav-flat-text,
-                $kendo-bottom-nav-flat-bg,
-                $kendo-bottom-nav-flat-border
-            );
+            color: $kendo-bottom-nav-flat-text;
+        background-color: $kendo-bottom-nav-flat-bg;
+        border-color: $kendo-bottom-nav-flat-border;
 
             .k-bottom-nav-item.k-focus,
             .k-bottom-nav-item:focus {
-                @include fill( $bg: color-mix(in srgb, k-color(on-app-surface) 5%, transparent));
+                background-color: color-mix(in srgb, k-color(on-app-surface) 5%, transparent);
             }
 
             .k-bottom-nav-item.k-selected {
                 @if $name == "secondary" or $name == "light" {
                     @include fill( $color: k-color(#{$name}));
                 } @else {
-                    @include fill( $color: $color );
+                    color: $color ;
                 }
             }
         }
@@ -57,7 +55,6 @@
     }
 
 }
-
 
 @mixin kendo-bottom-navigation--theme() {
     @include kendo-bottom-navigation--theme-base();

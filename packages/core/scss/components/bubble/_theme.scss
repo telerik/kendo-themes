@@ -6,35 +6,39 @@
 @use "../../_variables.scss" as *;
 
 @mixin kendo-bubble--theme-base() {
+    // Bubble - base styles only
     .k-bubble {
-        @include fill(
-            $kendo-bubble-text,
-            $kendo-bubble-bg,
-            $kendo-bubble-border
-        );
+        color: $kendo-bubble-text;
+        background-color: $kendo-bubble-bg;
+        border-color: $kendo-bubble-border;
         @include box-shadow( $kendo-bubble-shadow );
+    }
 
+    // Bubble - state selectors only
+    .k-bubble {
         &:active,
         &.k-active,
         &.k-selected {
-            @include fill( $bg: $kendo-bubble-active-bg, $border: $kendo-bubble-active-border );
+            background-color: $kendo-bubble-active-bg;
+            border-color: $kendo-bubble-active-border;
         }
 
         &:focus,
         &:focus-visible,
         &.k-focus {
-            @include fill( $bg: $kendo-bubble-focus-bg, $border: $kendo-bubble-focus-border );
+            background-color: $kendo-bubble-focus-bg;
+            border-color: $kendo-bubble-focus-border;
             @include focus-indicator( $kendo-bubble-focus-shadow, true, true );
             outline: none;
         }
 
         &:hover,
         &.k-hover {
-            @include fill( $bg: $kendo-bubble-hover-bg, $border: $kendo-bubble-hover-border );
+            background-color: $kendo-bubble-hover-bg;
+            border-color: $kendo-bubble-hover-border;
         }
     }
 }
-
 
 @mixin kendo-bubble--theme() {
     @include kendo-bubble--theme-base();

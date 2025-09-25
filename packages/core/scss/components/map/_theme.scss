@@ -6,19 +6,15 @@
 
     // Map theme
     .k-map {
-        @include fill(
-            $kendo-map-text,
-            $kendo-map-bg,
-            $kendo-map-border
-        );
+        color: $kendo-map-text;
+        background-color: $kendo-map-bg;
+        border-color: $kendo-map-border;
 
         .k-navigator {
-            @include fill(
-                $kendo-button-text,
-                $kendo-button-bg,
-                $kendo-button-border,
-                $kendo-button-gradient
-            );
+            color: $kendo-button-text;
+        background-color: $kendo-button-bg;
+        border-color: $kendo-button-border;
+        @include linear-gradient($kendo-button-gradient);
             @include box-shadow( $kendo-button-shadow );
         }
 
@@ -32,7 +28,6 @@
     }
 
 }
-
 
 @mixin kendo-map--theme() {
     @include kendo-map--theme-base();

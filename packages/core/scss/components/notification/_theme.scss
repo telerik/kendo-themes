@@ -6,26 +6,18 @@
 
     // Theme
     .k-notification {
-        @include fill(
-            $kendo-notification-text,
-            $kendo-notification-bg,
-            $kendo-notification-border
-        );
+        color: $kendo-notification-text;
+        background-color: $kendo-notification-bg;
+        border-color: $kendo-notification-border;
         @include box-shadow( $kendo-notification-shadow );
     }
 
     @each $name, $props in $kendo-notification-theme {
         .k-notification-#{$name} {
-            @include fill(
-                map.get( $props, color ),
-                map.get( $props, background-color ),
-                map.get( $props, border )
-            );
         }
     }
 
 }
-
 
 @mixin kendo-notification--theme() {
     @include kendo-notification--theme-base();

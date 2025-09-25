@@ -5,17 +5,14 @@
 
     // Drag hint
     .k-drag-clue {
-        @include fill(
-            $kendo-drag-hint-text,
-            $kendo-drag-hint-bg,
-            $kendo-drag-hint-border,
-            $kendo-drag-hint-gradient
-        );
+        color: $kendo-drag-hint-text;
+        background-color: $kendo-drag-hint-bg;
+        border-color: $kendo-drag-hint-border;
+        @include linear-gradient($kendo-drag-hint-gradient);
         @include box-shadow( $kendo-drag-hint-shadow );
     }
 
 }
-
 
 @mixin kendo-draggable--theme() {
     @include kendo-draggable--theme-base();

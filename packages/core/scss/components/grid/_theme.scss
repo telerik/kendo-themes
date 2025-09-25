@@ -24,17 +24,15 @@
     .k-filter-row > .k-table-th,
     .k-filter-row > td,
     .k-filter-row > .k-table-td {
-        @include fill( $border: $kendo-grid-header-border );
+        border-color: $kendo-grid-header-border ;
     }
 
     .k-grid-header,
     .k-grouping-header,
     .k-grid-add-row,
     .k-grid-footer {
-        @include fill(
-            $color: $kendo-grid-header-text,
-            $bg: $kendo-grid-header-bg
-        );
+        color: $kendo-grid-header-text;
+        background-color: $kendo-grid-header-bg;
     }
 
     .k-grid .k-table {
@@ -42,18 +40,13 @@
     }
 
     .k-grid-toolbar {
-        @include fill(
-            null,
-            null,
-            inherit,
-            null
-        );
+        border-color: inherit;
         @include box-shadow( none );
     }
 
     .k-grid-content {
         // setting this background color resolves glitches in iOS
-        @include fill($bg: $kendo-grid-bg );
+        background-color: $kendo-grid-bg ;
     }
 
     .k-group-footer td,
@@ -61,10 +54,8 @@
     .k-group-footer .k-table-td,
     .k-grouping-row .k-table-td,
     .k-table-tbody .k-group-cell {
-        @include fill(
-            $color: $kendo-grid-grouping-row-text,
-            $bg: $kendo-grid-grouping-row-bg
-        );
+        color: $kendo-grid-grouping-row-text;
+        background-color: $kendo-grid-grouping-row-bg;
     }
 
     .k-grouping-dropclue {
@@ -78,7 +69,9 @@
     }
 
     .k-grid {
-        @include fill( $kendo-grid-text, $kendo-grid-bg, $kendo-grid-border );
+        color: $kendo-grid-text;
+        background-color: $kendo-grid-bg;
+        border-color: $kendo-grid-border;
 
         // Alt row
         .k-table-row.k-table-alt-row {
@@ -105,7 +98,7 @@
         .k-table-row.k-highlighted > td,
         .k-table-td.k-highlighted,
         .k-table-row.k-highlighted > .k-table-td {
-            @include fill( $bg: $kendo-grid-highlighted-bg );
+            background-color: $kendo-grid-highlighted-bg ;
         }
 
         // Highlighted Selected state
@@ -115,7 +108,7 @@
         .k-table-row.k-highlighted.k-selected > .k-table-td,
         .k-table-row.k-highlighted > .k-table-td.k-selected,
         .k-table-row.k-selected > .k-table-td.k-highlighted {
-            @include fill( $bg: $kendo-grid-selected-highlighted-bg );
+            background-color: $kendo-grid-selected-highlighted-bg ;
         }
 
         // Focused state
@@ -173,7 +166,7 @@
             .k-group-footer td,
             .k-group-footer .k-table-td,
             .k-group-cell {
-                @include fill( $border: $kendo-grid-header-border );
+                border-color: $kendo-grid-header-border ;
             }
 
             .k-grouping-row + .k-table-row td,
@@ -189,13 +182,14 @@
         // Sticky columns
         .k-master-row {
             .k-grid-content-sticky {
-                @include fill( $bg: $kendo-grid-sticky-bg, $border: $kendo-grid-sticky-border );
+                background-color: $kendo-grid-sticky-bg;
+                border-color: $kendo-grid-sticky-border ;
                 border-block-start-color: $kendo-grid-header-border;
             }
 
             .k-grid-row-sticky,
             &.k-grid-row-sticky > .k-table-td {
-                @include fill( $bg: $kendo-grid-sticky-bg );
+                background-color: $kendo-grid-sticky-bg ;
                 border-block-start-color: $kendo-grid-sticky-border;
                 border-block-end-color: $kendo-grid-sticky-border;
             }
@@ -204,7 +198,7 @@
                 .k-grid-content-sticky,
                 &.k-grid-row-sticky > .k-table-td,
                 .k-grid-row-sticky {
-                    @include fill( $bg: $kendo-grid-sticky-alt-bg );
+                    background-color: $kendo-grid-sticky-alt-bg ;
                 }
             }
 
@@ -214,7 +208,7 @@
             &.k-table-row .k-table-td.k-grid-row-sticky,
             &.k-table-row td.k-grid-content-sticky,
             &.k-table-row .k-table-td.k-grid-content-sticky {
-                @include fill( $bg: $kendo-grid-sticky-bg );
+                background-color: $kendo-grid-sticky-bg ;
             }
 
             // Sticky Alt
@@ -223,7 +217,7 @@
             &.k-table-alt-row .k-table-td.k-grid-row-sticky,
             &.k-table-alt-row td.k-grid-content-sticky,
             &.k-table-alt-row .k-table-td.k-grid-content-sticky {
-                @include fill( $bg: $kendo-grid-sticky-alt-bg );
+                background-color: $kendo-grid-sticky-alt-bg ;
             }
 
             // Sticky Hover
@@ -233,7 +227,7 @@
             &.k-table-row.k-hover .k-grid-content-sticky,
             &.k-table-row.k-hover .k-grid-row-sticky,
             &.k-table-row.k-hover.k-grid-row-sticky > .k-table-td {
-                @include fill( $bg: $kendo-grid-sticky-hover-bg );
+                background-color: $kendo-grid-sticky-hover-bg ;
             }
 
             // Sticky Selected state
@@ -243,7 +237,7 @@
             &.k-table-row td.k-grid-content-sticky.k-selected,
             &.k-table-row .k-table-td.k-grid-content-sticky.k-selected {
                 &::before {
-                    @include fill( $bg: $kendo-grid-selected-bg );
+                    background-color: $kendo-grid-selected-bg ;
                 }
             }
 
@@ -254,7 +248,7 @@
             &.k-table-row td.k-grid-content-sticky.k-highlighted,
             &.k-table-row .k-table-td.k-grid-content-sticky.k-highlighted {
                 &::before {
-                    @include fill( $bg: $kendo-grid-highlighted-bg );
+                    background-color: $kendo-grid-highlighted-bg ;
                 }
             }
 
@@ -267,7 +261,7 @@
             &.k-table-row td.k-grid-content-sticky.k-selected.k-highlighted,
             &.k-table-row .k-table-td.k-grid-content-sticky.k-selected.k-highlighted {
                 &::before {
-                    @include fill( $bg: $kendo-grid-selected-highlighted-bg );
+                    background-color: $kendo-grid-selected-highlighted-bg ;
                 }
 
             }
@@ -309,10 +303,8 @@
         td.k-grid-header-sticky,
         .k-table-td.k-grid-header-sticky,
         .k-grid-header-sticky.k-sorted {
-            @include fill(
-                $color: $kendo-grid-sticky-header-text,
-                $bg: $kendo-grid-sticky-header-bg
-            );
+            color: $kendo-grid-sticky-header-text;
+            background-color: $kendo-grid-sticky-header-bg;
 
             border-inline-end-color: $kendo-grid-sticky-header-border;
             border-inline-start-color: $kendo-grid-sticky-header-border;
@@ -321,11 +313,9 @@
 
     // Grid footer
     .k-grid-footer {
-        @include fill(
-            $kendo-grid-footer-text,
-            $kendo-grid-footer-bg,
-            $kendo-grid-footer-border
-        );
+        color: $kendo-grid-footer-text;
+        background-color: $kendo-grid-footer-bg;
+        border-color: $kendo-grid-footer-border;
         .k-grid-footer-sticky {
             border-inline-start-color: $kendo-grid-sticky-border;
             border-inline-end-color: $kendo-grid-sticky-border;
@@ -335,30 +325,25 @@
 
     // Selection Aggregates
     .k-selection-aggregates {
-        @include fill(
-            $kendo-grid-selection-aggregates-text,
-            $kendo-grid-selection-aggregates-bg,
-            $kendo-grid-selection-aggregates-border
-        );
+        color: $kendo-grid-selection-aggregates-text;
+        background-color: $kendo-grid-selection-aggregates-bg;
+        border-color: $kendo-grid-selection-aggregates-border;
     }
 
     .k-grouping-row {
         .k-grid-content-sticky {
-            @include fill( $bg: $kendo-grid-sticky-header-bg );
+            background-color: $kendo-grid-sticky-header-bg ;
         }
 
         &:hover .k-grid-content-sticky,
         &.k-hover .k-grid-content-sticky {
-            @include fill( $bg: $kendo-grid-sticky-hover-bg );
+            background-color: $kendo-grid-sticky-hover-bg;
         }
     }
 
     .k-column-list-item:hover,
     .k-columnmenu-item:hover {
-        @include fill(
-            $kendo-list-item-hover-text,
-            $kendo-list-item-hover-bg
-        );
+        @include fill($kendo-list-item-hover-text, $kendo-list-item-hover-bg);
     }
     .k-column-list-item:focus,
     .k-column-list-item.k-focus,
@@ -369,10 +354,8 @@
 
     .k-columnmenu-item {
         &.k-selected {
-            @include fill(
-                $kendo-list-item-selected-text,
-                $kendo-list-item-selected-bg
-            );
+            color: $kendo-list-item-selected-text;
+        background-color: $kendo-list-item-selected-bg;
         }
     }
 
@@ -380,31 +363,23 @@
 
         .k-menu:not(.k-context-menu) {
 
-            @include fill(
-                $kendo-popup-text,
-                $kendo-popup-bg,
-                $kendo-popup-border
-            );
+            color: $kendo-popup-text;
+        background-color: $kendo-popup-bg;
+        border-color: $kendo-popup-border;
 
             .k-item {
-                @include fill(
-                    $kendo-list-item-text,
-                    $kendo-list-item-bg
-                );
+                color: $kendo-list-item-text;
+        border-color: $kendo-list-item-bg;
 
                 &:hover,
                 &.k-hover {
-                    @include fill(
-                        $kendo-list-item-hover-text,
-                        $kendo-list-item-hover-bg
-                    );
+                    color: $kendo-list-item-hover-text;
+        background-color: $kendo-list-item-hover-bg;
                 }
 
                 &.k-selected {
-                    @include fill(
-                        $kendo-list-item-selected-text,
-                        $kendo-list-item-selected-bg
-                    );
+                    color: $kendo-list-item-selected-text;
+        border-color: $kendo-list-item-selected-bg;
                 }
 
                 &:focus,
@@ -419,15 +394,13 @@
     }
 
     .k-column-menu-group-header-text {
-        @include fill(
-            $kendo-grid-column-menu-group-header-text,
-            $kendo-grid-column-menu-group-header-bg,
-            $kendo-grid-column-menu-group-header-border
-        );
+        color: $kendo-grid-column-menu-group-header-text;
+        background-color: $kendo-grid-column-menu-group-header-bg;
+        border-color: $kendo-grid-column-menu-group-header-border;
     }
 
     .k-check-all-wrap {
-        @include fill( $border: $kendo-popup-border );
+        border-color: $kendo-popup-border ;
     }
 
     .k-grid-norecords-template {
@@ -439,11 +412,11 @@
     .k-resizer-wrap {
 
         &.k-hover .k-row-resizer {
-            @include fill( $bg: $kendo-grid-row-resizer-hover-bg );
+            background-color: $kendo-grid-row-resizer-hover-bg ;
         }
 
         &.k-active .k-row-resizer {
-            @include fill( $bg: $kendo-grid-row-resizer-active-bg );
+            background-color: $kendo-grid-row-resizer-active-bg ;
         }
 
     }
@@ -454,7 +427,7 @@
 
     // Grid stack layout
     .k-grid-stack-header {
-        @include fill( $color: $kendo-grid-stack-header-color );
+        color: $kendo-grid-stack-header-color ;
     }
 
     .k-grid-stack-cell {
@@ -464,7 +437,7 @@
         }
 
         &.k-selected {
-            @include fill( $bg: $kendo-grid-selected-bg );
+            background-color: $kendo-grid-selected-bg ;
         }
     }
 
@@ -474,7 +447,6 @@
         border-inline-end-color: currentColor;
     }
 }
-
 
 @mixin kendo-grid--theme() {
     @include kendo-grid--theme-base();

@@ -3,32 +3,28 @@
 
 @mixin kendo-scrollview--theme-base() {
 
+   // Scrollview base styles
    .k-scrollview {
-        @include fill(
-            $kendo-scrollview-text,
-            $kendo-scrollview-bg,
-            $kendo-scrollview-border
-        );
+        color: $kendo-scrollview-text;
+        background-color: $kendo-scrollview-bg;
+        border-color: $kendo-scrollview-border;
+    }
 
-        &.k-scrollview-dark {
-            kendo-scrollview-pager,
-            .k-scrollview-nav-wrap {
-                background-color: $kendo-scrollview-dark-bg;
-            }
-            .k-scrollview-next,
-            .k-scrollview-prev {
-                color: $kendo-scrollview-dark-bg;
+    // Scrollview dark theme
+    .k-scrollview.k-scrollview-dark kendo-scrollview-pager,
+    .k-scrollview.k-scrollview-dark .k-scrollview-nav-wrap {
+        background-color: $kendo-scrollview-dark-bg;
+    }
+    
+    .k-scrollview.k-scrollview-dark .k-scrollview-next,
+    .k-scrollview.k-scrollview-dark .k-scrollview-prev {
+        color: $kendo-scrollview-dark-bg;
+    }
 
-            }
-        }
-
-        &.k-scrollview-light {
-            kendo-scrollview-pager,
-            .k-scrollview-nav-wrap {
-                background-color: $kendo-scrollview-light-bg;
-            }
-
-        }
+    // Scrollview light theme
+    .k-scrollview.k-scrollview-light kendo-scrollview-pager,
+    .k-scrollview.k-scrollview-light .k-scrollview-nav-wrap {
+        background-color: $kendo-scrollview-light-bg;
     }
 
     .k-scrollview:focus,
@@ -40,6 +36,7 @@
         color: $kendo-scrollview-navigation-color;
     }
 
+    // Navigation buttons base styles
     .k-scrollview-next,
     .k-scrollview-prev {
         color: $kendo-scrollview-navigation-color;
@@ -48,48 +45,58 @@
         opacity: $kendo-scrollview-navigation-default-opacity;
         outline-width: 0;
         -webkit-tap-highlight-color: $kendo-scrollview-arrow-tap-highlight-color;
+    }
 
-        &:focus,
-        &.k-focus {
-            color: $kendo-scrollview-navigation-color;
-            opacity: $kendo-scrollview-navigation-hover-opacity;
+    // Navigation buttons focus state
+    .k-scrollview-next:focus,
+    .k-scrollview-next.k-focus,
+    .k-scrollview-prev:focus,
+    .k-scrollview-prev.k-focus {
+        color: $kendo-scrollview-navigation-color;
+        opacity: $kendo-scrollview-navigation-hover-opacity;
+    }
 
-            .k-icon::before {
-                @include focus-indicator( $kendo-scrollview-pagebutton-shadow );
-            }
-        }
+    .k-scrollview-next:focus .k-icon::before,
+    .k-scrollview-next.k-focus .k-icon::before,
+    .k-scrollview-prev:focus .k-icon::before,
+    .k-scrollview-prev.k-focus .k-icon::before {
+        @include focus-indicator( $kendo-scrollview-pagebutton-shadow );
+    }
 
-        &:hover,
-        &.k-hover {
-            color: $kendo-scrollview-navigation-color;
-            opacity: $kendo-scrollview-navigation-hover-opacity;
-
-        }
+    // Navigation buttons hover state
+    .k-scrollview-next:hover,
+    .k-scrollview-next.k-hover,
+    .k-scrollview-prev:hover,
+    .k-scrollview-prev.k-hover {
+        color: $kendo-scrollview-navigation-color;
+        opacity: $kendo-scrollview-navigation-hover-opacity;
     }
 
     // refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
+    // Scrollview nav link base styles
     .k-scrollview-nav > .k-link {
         background: $kendo-scrollview-pagebutton-bg;
         border: $kendo-scrollview-pagebutton-border;
+    }
 
-        &.k-primary {
-            background: $kendo-scrollview-pagebutton-primary-bg;
-            border: $kendo-scrollview-pagebutton-primary-border;
-        }
+    .k-scrollview-nav > .k-link.k-primary {
+        background: $kendo-scrollview-pagebutton-primary-bg;
+        border: $kendo-scrollview-pagebutton-primary-border;
+    }
 
-        &:focus,
-        &.k-focus {
-            @include focus-indicator( $kendo-scrollview-pagebutton-shadow );
-        }
+    // Scrollview nav link focus state
+    .k-scrollview-nav > .k-link:focus,
+    .k-scrollview-nav > .k-link.k-focus {
+        @include focus-indicator( $kendo-scrollview-pagebutton-shadow );
+    }
 
-        &:hover,
-        &.k-hover {
-            box-shadow: $kendo-scrollview-pagebutton-shadow;
-        }
+    // Scrollview nav link hover state
+    .k-scrollview-nav > .k-link:hover,
+    .k-scrollview-nav > .k-link.k-hover {
+        box-shadow: $kendo-scrollview-pagebutton-shadow;
     }
 
 }
-
 
 @mixin kendo-scrollview--theme() {
     @include kendo-scrollview--theme-base();

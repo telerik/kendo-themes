@@ -5,16 +5,14 @@
 
     // ColorEditor/FlatColorPicker
     .k-coloreditor {
-        @include fill(
-            $kendo-color-editor-text,
-            $kendo-color-editor-bg,
-            $kendo-color-editor-border
-        );
+        color: $kendo-color-editor-text;
+        background-color: $kendo-color-editor-bg;
+        border-color: $kendo-color-editor-border;
     }
 
     .k-coloreditor:focus,
     .k-coloreditor.k-focus {
-        @include fill( $border: $kendo-color-editor-focus-border );
+        border-color: $kendo-color-editor-focus-border ;
         @include focus-indicator( $kendo-color-editor-focus-shadow );
     }
 
@@ -25,7 +23,6 @@
     }
 
 }
-
 
 @mixin kendo-color-editor--theme() {
     @include kendo-color-editor--theme-base();

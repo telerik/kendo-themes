@@ -12,34 +12,30 @@
         .k-chip-solid-#{$name} {
 
             @if ($name == "base") {
-                @include fill(
-                    $kendo-chip-solid-text,
-                    $kendo-chip-solid-bg,
-                    $kendo-chip-solid-border,
-                    $kendo-chip-solid-gradient
-                );
+                color: $kendo-chip-solid-text;
+        background-color: $kendo-chip-solid-bg;
+        border-color: $kendo-chip-solid-border;
+        @include linear-gradient($kendo-chip-solid-gradient);
 
                 &:focus,
                 &.k-focus {
-                    @include fill( $bg: $kendo-chip-solid-focus-bg );
+                    background-color: $kendo-chip-solid-focus-bg ;
                     @include focus-indicator( $kendo-chip-solid-shadow );
                 }
 
                 &:hover,
                 &.k-hover {
-                    @include fill( $bg: $kendo-chip-solid-hover-bg );
+                    background-color: $kendo-chip-solid-hover-bg ;
                 }
 
                 &.k-selected {
-                    @include fill( $bg: $kendo-chip-solid-selected-bg );
+                    background-color: $kendo-chip-solid-selected-bg ;
                 }
             } @else {
-                @include fill(
-                    k-color(#{$name}-on-subtle),
-                    k-color(#{$name}-subtle),
-                    k-color(#{$name}-emphasis),
-                    $kendo-chip-solid-gradient
-                );
+                color: k-color(#{$name}-on-subtle);
+        background-color: k-color(#{$name}-subtle);
+        border-color: k-color(#{$name}-emphasis);
+        @include linear-gradient($kendo-chip-solid-gradient);
 
                 &:focus,
                 &.k-focus {
@@ -48,36 +44,31 @@
 
                 &:hover,
                 &.k-hover {
-                    @include fill( $bg: k-color(#{$name}-subtle-hover));
+                    background-color: k-color(#{$name}-subtle-hover);
                 }
 
                 &.k-selected {
-                    @include fill( $bg: k-color(#{$name}-subtle-active));
+                    background-color: k-color(#{$name}-subtle-active);
                 }
             }
 
             // Disabled state
             &:disabled,
             &.k-disabled {
-                @include fill(
-                    $kendo-chip-disabled-text,
-                    $kendo-chip-disabled-bg,
-                    $kendo-chip-disabled-border,
-                );
+                color: $kendo-chip-disabled-text;
+        background-color: $kendo-chip-disabled-bg;
+        border-color: $kendo-chip-disabled-border;
             }
         }
     }
-
 
     // Outline
     @each $name, $color in $kendo-chip-theme-colors {
         .k-chip-outline-#{$name} {
             @if ($name == "base") {
-                @include fill(
-                    $kendo-chip-outline-text,
-                    transparent,
-                    $kendo-chip-outline-border
-                );
+                color: $kendo-chip-outline-text;
+        background-color: transparent;
+        border-color: $kendo-chip-outline-border;
 
                 &:focus,
                 &.k-focus {
@@ -86,24 +77,15 @@
 
                 &:hover,
                 &.k-hover {
-                    @include fill(
-                        $color: $kendo-chip-outline-hover-text,
-                        $bg: $kendo-chip-outline-hover-bg
-                    );
+                    color: $kendo-chip-outline-hover-text;
+                    background-color: $kendo-chip-outline-hover-bg;
                 }
 
                 &.k-selected {
-                    @include fill(
-                        $color: $kendo-chip-outline-selected-text,
-                        $bg: $kendo-chip-outline-selected-bg
-                    );
+                    color: $kendo-chip-outline-selected-text;
+                    border-color: $kendo-chip-outline-selected-bg;
                 }
             } @else if ($name == "warning") {
-                @include fill(
-                    k-color(on-app-surface),
-                    transparent,
-                    $color
-                );
 
                 &:focus,
                 &.k-focus {
@@ -112,24 +94,15 @@
 
                 &:hover,
                 &.k-hover {
-                    @include fill(
-                        $color: k-color(on-#{$name}),
-                        $bg: $color
-                    );
+                    color: k-color(on-#{$name});
+        background-color: $color;
                 }
 
                 &.k-selected {
-                    @include fill(
-                        $color: k-color(on-#{$name}),
-                        $bg: $color
-                    );
+                    color: k-color(on-#{$name});
+                    border-color: $color;
                 }
             } @else {
-                @include fill(
-                    k-color(#{$name}-on-surface),
-                    transparent,
-                    k-color(#{$name}-on-surface)
-                );
 
                 &:focus,
                 &.k-focus {
@@ -138,19 +111,9 @@
 
                 &:hover,
                 &.k-hover {
-                    @include fill(
-                        k-color(on-#{$name}),
-                        k-color(#{$name}-hover),
-                        k-color(#{$name}-hover)
-                    );
                 }
 
                 &.k-selected {
-                    @include fill(
-                        k-color(on-#{$name}),
-                        k-color(#{$name}-active),
-                        k-color(#{$name}-active)
-                    );
                 }
             }
 
@@ -164,7 +127,6 @@
     }
 
 }
-
 
 @mixin kendo-chip--theme() {
     @include kendo-chip--theme-base();

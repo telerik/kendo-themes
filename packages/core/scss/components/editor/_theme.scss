@@ -5,11 +5,10 @@
 @mixin kendo-editor--theme-base() {
 
     .k-editor {
-        @include fill(
-            k-color(on-app-surface),
-            k-color(surface-alt),
-            k-color(border)
-        );
+        color: k-color(on-app-surface);
+        background-color: k-color(surface-alt);
+        border-color: k-color(border);
+
 
         &.k-readonly {
             .k-editor-content.k-focus {
@@ -22,10 +21,7 @@
     .k-editor-inline {
 
         .k-table {
-            &,
-            & td {
-                border-color: #cccccc;
-            }
+           border-color: #cccccc;
         }
 
         .k-element-resize-handle-wrapper {
@@ -64,7 +60,6 @@
         outline-color: $kendo-editor-selectednode-outline-color;
     }
 
-
     // Insert table
     .k-ct-popup {
         .k-selected {
@@ -78,16 +73,12 @@
         // Selection
         .k-text-selected,
         &::selection {
-            @include fill (
-                $color: $kendo-editor-selected-text,
-                $bg: $kendo-editor-selected-bg
-            );
+            color: $kendo-editor-selected-text;
+            background-color: $kendo-editor-selected-bg;
         }
 
         .k-text-highlighted {
-            @include fill (
-                $bg: $kendo-editor-highlighted-bg
-            );
+            background-color: $kendo-editor-highlighted-bg;
         }
 
         // Table styles
@@ -102,7 +93,6 @@
     }
 
 }
-
 
 @mixin kendo-editor--theme() {
     @include kendo-editor--theme-base();

@@ -6,27 +6,18 @@
     // Panels
     .k-block,
     .k-panel {
-        @include fill(
-            $kendo-panel-text,
-            $kendo-panel-bg,
-            $kendo-panel-border
-        );
+        color: $kendo-panel-text;
+        background-color: $kendo-panel-bg;
+        border-color: $kendo-panel-border;
 
         > .k-header {
-            @include fill(
-                k-color(on-app-surface),
-                k-color(surface-alt),
-                k-color(border)
-            );
         }
     }
 
     :where(.k-content) {
-        @include fill(
-            $kendo-panel-text,
-            $kendo-panel-bg,
-            $kendo-panel-border
-        );
+        color: $kendo-panel-text;
+        background-color: $kendo-panel-bg;
+        border-color: $kendo-panel-border;
     }
 }
 

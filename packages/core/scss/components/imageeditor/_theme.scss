@@ -5,20 +5,16 @@
 
     // Image Editor
     .k-imageeditor {
-        @include fill(
-            $kendo-image-editor-text,
-            $kendo-image-editor-bg,
-            $kendo-image-editor-border
-        );
+        color: $kendo-image-editor-text;
+        background-color: $kendo-image-editor-bg;
+        border-color: $kendo-image-editor-border;
     }
 
     // Content
     .k-imageeditor-content {
-        @include fill(
-            $kendo-image-editor-content-text,
-            $kendo-image-editor-content-bg,
-            $kendo-image-editor-content-border
-        );
+        color: $kendo-image-editor-content-text;
+        background-color: $kendo-image-editor-content-bg;
+        border-color: $kendo-image-editor-content-border;
     }
 
     // Canvas
@@ -28,31 +24,24 @@
 
     // Action Pane
     .k-imageeditor-action-pane {
-        @include fill(
-            $kendo-image-editor-action-pane-text,
-            $kendo-image-editor-action-pane-bg,
-            $kendo-image-editor-action-pane-border
-        );
+        color: $kendo-image-editor-action-pane-text;
+        background-color: $kendo-image-editor-action-pane-bg;
+        border-color: $kendo-image-editor-action-pane-border;
     }
 
     // Crop Tool
     .k-imageeditor-crop {
-        @include fill(
-            $kendo-image-editor-crop-text,
-            $kendo-image-editor-crop-bg,
-            $kendo-image-editor-crop-border
-        );
+        color: $kendo-image-editor-crop-text;
+        background-color: $kendo-image-editor-crop-bg;
+        border-color: $kendo-image-editor-crop-border;
     }
 
     // Crop Overlay
     .k-imageeditor-crop-overlay {
-        @include fill (
-            $bg: $kendo-image-editor-crop-overlay-bg
-        );
+        background-color: $kendo-image-editor-crop-overlay-bg;
     }
 
 }
-
 
 @mixin kendo-image-editor--theme() {
     @include kendo-image-editor--theme-base();
