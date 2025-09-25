@@ -37,7 +37,7 @@ export default () => (
                             <ChatMessage text="Give me an example content." />
                         </ChatMessageGroup>
                         <ChatMessageGroup fullWidth avatar={null}>
-                            <ChatMessage text={
+                            <ChatMessage text={null} additionalContent={
                                 <div className="k-skeleton-container" style={{ width: "100%" }}>
                                     <SkeletonNormal style={{ width: "100%" }} />
                                     <SkeletonNormal style={{ width: "100%" }} />
