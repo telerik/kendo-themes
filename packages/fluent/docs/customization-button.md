@@ -38,6 +38,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-button-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-button-border-radius, k-border-radius(md) )</code></td>
+    <td><code>var(--kendo-button-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The radius of the border around the Button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-button-sm-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-button-sm-padding-x, k-spacing(2) )</code></td>

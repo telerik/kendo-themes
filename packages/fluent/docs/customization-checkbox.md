@@ -38,6 +38,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-checkbox-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-checkbox-border-radius, k-border-radius(md) )</code></td>
+    <td><code>var(--kendo-checkbox-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-checkbox-sm-size</td>
     <td>String</td>
     <td><code>var( --kendo-checkbox-sm-size, k-spacing(4) )</code></td>

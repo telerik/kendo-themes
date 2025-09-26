@@ -58,6 +58,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-switch-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-switch-border-radius, #{k-border-radius(md)} )</code></td>
+    <td><code>var(--kendo-switch-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Switch.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-switch-label-text-transform</td>
     <td>String</td>
     <td><code>var( --kendo-switch-label-text-transform, uppercase )</code></td>
