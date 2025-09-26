@@ -4,8 +4,36 @@
 
 @mixin kendo-input--theme-base() {
 
+    .k-input {
+        @extend %k-input-solid;
+
+        &.k-input-solid {
+            @extend %k-input-solid;
+        }
+        &.k-input-outline {
+            @extend %k-input-outline;
+        }
+        &.k-input-flat {
+            @extend %k-input-flat;
+        }
+    }
+
+    .k-picker {
+        @extend %k-picker-solid;
+
+        &.k-picker-solid {
+            @extend %k-picker-solid;
+        }
+        &.k-picker-outline {
+            @extend %k-picker-outline;
+        }
+        &.k-picker-flat {
+            @extend %k-picker-flat;
+        }
+    }
+
     // Solid input
-    .k-input-solid {
+    %k-input-solid {
         @include fill(
             $kendo-input-text,
             $kendo-input-bg,
@@ -97,7 +125,7 @@
 
 
     // Solid picker
-    .k-picker-solid {
+    %k-picker-solid {
         @include fill(
             $kendo-picker-text,
             $kendo-picker-bg,
@@ -173,7 +201,7 @@
 
 
     // Outline input
-    .k-input-outline {
+    %k-input-outline {
         @include fill (
             $kendo-input-outline-text,
             $kendo-input-outline-bg,
@@ -270,7 +298,7 @@
 
 
     // Outline picker
-    .k-picker-outline {
+    %k-picker-outline {
         @include fill (
             $kendo-picker-outline-text,
             $kendo-picker-outline-bg,
@@ -352,7 +380,7 @@
 
 
     // Flat input
-    .k-input-flat {
+    %k-input-flat {
         @include fill (
             $kendo-input-flat-text,
             $kendo-input-flat-bg,
@@ -436,7 +464,7 @@
 
 
     // Flat picker
-    .k-picker-flat {
+    %k-picker-flat {
         @include fill (
             $kendo-picker-flat-text,
             $kendo-picker-flat-bg,

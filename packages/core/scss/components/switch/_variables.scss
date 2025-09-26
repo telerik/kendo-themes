@@ -6,6 +6,8 @@ $kendo-switch-track-border-width: null !default;
 
 $kendo-switch-thumb-border-width: null !default;
 
+$kendo-switch-border-radius: null !default;
+
 $kendo-switch-label-text-transform: null !default;
 
 $kendo-switch-label-display: null !default;
@@ -84,3 +86,5 @@ $kendo-switch-on-thumb-disabled-bg: null !default;
 $kendo-switch-on-thumb-disabled-text: null !default;
 $kendo-switch-on-thumb-disabled-border: null !default;
 $kendo-switch-on-thumb-disabled-gradient: null !default;
+
+$kendo-switch-roundness: ( "none", "sm", "md", "lg", "full" ) !default;

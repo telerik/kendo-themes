@@ -1,6 +1,7 @@
 // CheckBox
 
 $kendo-checkbox-border-width: null !default;
+$kendo-checkbox-border-radius: null !default;
 
 $kendo-checkbox-sm-size: null !default;
 $kendo-checkbox-md-size: null !default;
@@ -78,3 +79,5 @@ $kendo-checkbox-list-item-padding-y: null !default;
 
 $kendo-checkbox-ripple-bg: null !default;
 $kendo-checkbox-ripple-opacity: null !default;
+
+$kendo-checkbox-roundness: ( "none", "sm", "md", "lg", "full" ) !default;

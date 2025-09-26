@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "sass:math";
+@use "../../border-radii/index.import.scss" as *;
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
 
@@ -19,6 +20,8 @@
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
+        @extend %k-switch-md;
+
         *,
         *::before,
         *::after {
@@ -31,6 +34,12 @@
 
         &[aria-readonly="true"] {
             pointer-events: none;
+        }
+
+        @each $size, $size-props in $kendo-switch-sizes {
+            &.k-switch-#{$size} {
+                @extend %k-switch-#{$size};
+            }
         }
     }
 
@@ -51,6 +60,15 @@
         flex: 1 0 auto;
         position: relative;
         transition: background-color 200ms ease-in-out;
+
+        border-radius: $kendo-switch-border-radius;
+
+        // here rounded
+        @each $roundness in $kendo-switch-roundness {
+            &.k-rounded-#{$roundness} {
+                border-radius: k-border-radius($roundness);
+            }
+        }
     }
 
 
@@ -69,6 +87,14 @@
         display: block;
         position: absolute;
         transform: translate( -50%, -50% );
+
+        border-radius: k-border-radius(full);
+
+        @each $roundness in $kendo-switch-roundness {
+            &.k-rounded-#{$roundness} {
+                border-radius: k-border-radius($roundness);
+            }
+        }
     }
 
 
@@ -95,7 +121,7 @@
         $_thumb-offset: map.get( $size-props, thumb-offset );
         $_label-offset: map.get( $size-props, label-offset );
 
-        .k-switch-#{$size} {
+        %k-switch-#{$size} {
             width: $_track-width;
             height: $_track-height;
             font-size: $_font-size;

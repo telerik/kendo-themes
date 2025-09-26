@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "../../mixins/index.import.scss" as *;
 @use "../../color-system/_constants.scss" as *;
+@use "../../border-radii/index.import.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
@@ -8,10 +9,8 @@
 
 @mixin kendo-input--layout-base() {
 
-    // Generic input
     .k-input,
     .k-picker {
-        @include border-radius( $kendo-input-border-radius );
         margin: 0;
         padding: 0;
         width: $kendo-input-default-width;
@@ -21,8 +20,6 @@
         border-style: solid;
         outline: 0;
         font-family: $kendo-input-font-family;
-        font-size: $kendo-input-font-size;
-        line-height: $kendo-input-line-height;
         font-weight: normal;
         text-align: start;
         box-shadow: none;
@@ -34,6 +31,9 @@
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-appearance: none;
+
+        border-radius: $kendo-input-border-radius;
+        @extend %k-input-picker-md;
 
         *,
         *::before,
@@ -61,10 +61,23 @@
             opacity: $kendo-input-placeholder-opacity;
             user-select: none;
         }
+
+        @each $roundness in $kendo-input-roundness {
+            &.k-rounded-#{$roundness} {
+                border-radius: k-border-radius($roundness);
+            }
+        }
     }
 
     // Input and Textarea
-    .k-input {}
+    .k-input {
+        @each $size, $size-props in $kendo-input-sizes {
+            &.k-input-#{$size} {
+                @extend %k-input-picker-#{$size};
+            }
+        }
+    }
+
     input.k-input,
     textarea.k-textarea {
         padding-block: $kendo-input-md-padding-y;
@@ -79,6 +92,11 @@
     // Picker
     .k-picker {
         cursor: pointer;
+        @each $size, $size-props in $kendo-input-sizes {
+            &.k-picker-#{$size} {
+                @extend %k-input-picker-#{$size};
+            }
+        }
     }
     select.k-picker {
         padding-block: $kendo-input-md-padding-y;
@@ -90,8 +108,6 @@
 
     // Input inner
     .k-input-inner {
-        padding-block: $kendo-input-md-padding-y;
-        padding-inline: $kendo-input-md-padding-x;
         width: 100%;
         border: 0;
         outline: 0;
@@ -164,7 +180,6 @@
     // Icon picker
     .k-icon-picker {
         > .k-input-inner {
-            padding: $kendo-input-md-padding-y;
             // TODO we need better way
             // width: $kendo-input-inner-calc-height;
             // height: $kendo-input-inner-calc-height;
@@ -463,8 +478,7 @@
         $_button-padding-x: map.get( $size-props, button-padding-x );
         $_button-padding-y: map.get( $size-props, button-padding-y );
 
-        .k-input-#{$size},
-        .k-picker-#{$size} {
+        %k-input-picker-#{$size} {
             font-size: $_font-size;
             line-height: $_line-height;
 

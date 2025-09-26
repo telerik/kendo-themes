@@ -21,6 +21,14 @@
                 border-block-end-width: $kendo-signature-maximized-line-width;
             }
         }
+
+        @each $size, $size-props in $kendo-signature-sizes {
+            @extend %k-signature-#{$size}
+        }
+
+        .k-signature-lg {
+            min-height: $kendo-signature-lg-min-height;
+        }
     }
 
     .k-signature-actions {
@@ -58,7 +66,7 @@
         $_line-size: map.get($size-props, line-size);
         $_line-offset: map.get($size-props, line-offset);
 
-        .k-signature-#{$size} {
+        %k-signature-#{$size} {
             padding-inline: $_padding-x;
             padding-block: $_padding-y;
 
@@ -66,10 +74,6 @@
                 width: $_line-size;
             }
         }
-    }
-
-    .k-signature-lg {
-        min-height: $kendo-signature-lg-min-height;
     }
 
 }
