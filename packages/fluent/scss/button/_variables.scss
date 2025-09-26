@@ -6,6 +6,10 @@
 /// @group button
 $kendo-button-border-width: var( --kendo-button-border-width, 1px ) !default;
 
+/// The radius of the border around the Button.
+/// @group button
+$kendo-button-border-radius: var( --kendo-button-border-radius, k-border-radius(md) ) !default;
+
 /// The horizontal padding of the small Button.
 /// @group button
 $kendo-button-sm-padding-x: var( --kendo-button-sm-padding-x, k-spacing(2) ) !default;
@@ -201,6 +205,7 @@ $kendo-button-flat-disabled-border: var( --kendo-button-disabled-border, initial
 
 @forward "@progress/kendo-theme-core/scss/components/button/_variables.scss" with (
     $kendo-button-border-width: $kendo-button-border-width,
+    $kendo-button-border-radius: $kendo-button-border-radius,
     $kendo-button-sm-padding-x: $kendo-button-sm-padding-x,
     $kendo-button-md-padding-x: $kendo-button-md-padding-x,
     $kendo-button-lg-padding-x: $kendo-button-lg-padding-x,

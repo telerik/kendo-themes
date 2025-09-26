@@ -8,8 +8,61 @@
 
 @mixin kendo-button--theme-base() {
 
+    .k-button {
+        @extend %k-button-solid-base;
+
+        &.k-button-base,
+        &.k-button-solid,
+        &.k-button-solid.k-button-base {
+            @extend %k-button-solid-base;
+        }
+
+        &.k-button-outline {
+            @extend %k-button-outline-base;
+        }
+
+        &.k-button-flat {
+            @extend %k-button-flat-base;
+        }
+
+        &.k-button-link {
+            @extend %k-button-link-base;
+        }
+
+        &.k-button-clear {
+            @extend %k-button-clear-base;
+        }
+
+        @each $name, $color in $kendo-button-theme-colors {
+
+            @if ($name != "base") {
+
+                &.k-button-#{$name},
+                &.k-button-solid.k-button-#{$name} {
+                    @extend %k-button-solid-#{$name};
+                }
+            }
+
+            &.k-button-outline.k-button-#{$name} {
+                @extend %k-button-outline-#{$name};
+            }
+
+            &.k-button-flat.k-button-#{$name} {
+                @extend %k-button-flat-#{$name};
+            }
+
+            &.k-button-link.k-button-#{$name} {
+                @extend %k-button-link-#{$name};
+            }
+
+            &.k-button-clear.k-button-#{$name} {
+                @extend %k-button-clear-#{$name};
+            }
+        }
+    }
+
     // Solid button
-    .k-button-solid-base {
+    %k-button-solid-base {
         @include fill(
             $kendo-button-text,
             $kendo-button-bg,
@@ -72,6 +125,7 @@
         }
     }
 
+    // Solid button
     @each $name, $color in $kendo-button-theme-colors {
         @if ($name != "base") {
             $_button-text: k-color(on-#{$name});
@@ -86,7 +140,7 @@
             $_button-active-bg: k-color(#{$name}-active);
             $_button-active-border: k-color(#{$name}-active);
 
-            .k-button-solid-#{$name} {
+            %k-button-solid-#{$name} {
                 @include fill(
                     $_button-text,
                     $_button-bg,
@@ -146,10 +200,9 @@
         }
     }
 
-
     // Outline button
     @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": k-color(on-app-surface) ) ) {
-        .k-button-outline-#{$name} {
+        %k-button-outline-#{$name} {
             @include box-shadow( none );
             border-color: currentColor;
             color: k-color(#{$name}-on-surface);
@@ -231,7 +284,7 @@
 
     // Flat button
     @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": inherit ) ) {
-        .k-button-flat-#{$name} {
+        %k-button-flat-#{$name} {
             @if $name == "base" {
                 color: inherit;
             } @else {
@@ -249,7 +302,7 @@
 
     // Link button
     @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": k-color(on-app-surface ) ) ) {
-        .k-button-link-#{$name} {
+        %k-button-link-#{$name} {
             color: $color;
 
             // Hover
@@ -304,7 +357,7 @@
 
     // Clear button
     @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": k-color(on-app-surface ) ) ) {
-        .k-button-clear-#{$name} {
+        %k-button-clear-#{$name} {
             color: k-color(#{$name}-on-surface);
 
             &:focus,
@@ -324,11 +377,6 @@
             }
         }
     }
-
-
-    // Button group
-    .k-button-group {}
-
 
 }
 

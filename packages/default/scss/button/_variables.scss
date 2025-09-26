@@ -10,7 +10,7 @@ $kendo-button-border-width: 1px !default;
 
 /// The border radius of the Button.
 /// @group button
-$kendo-button-border-radius: null !default;
+$kendo-button-border-radius: k-border-radius(md) !default;
 
 /// The horizontal padding of the small Button.
 /// @group button
