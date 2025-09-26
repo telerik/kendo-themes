@@ -16,29 +16,29 @@ export default () =>(
             <span>TimePicker RTL</span>
 
             <div>
-                <TimePickerNormal placeholder="placeholder..." />
+                <TimePickerNormal fillMode="solid" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <TimePickerNormal placeholder="placeholder..." />
+                <TimePickerNormal fillMode="solid" placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...TimePicker.states ].map((state) => (
                 <>
                     <div>
-                        <TimePickerNormal { ...{ [state]: true }} value={state} />
+                        <TimePickerNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <TimePickerNormal { ...{ [state]: true }} value={state} />
+                        <TimePickerNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <TimePickerNormal value="invalid focus" invalid focus />
+                <TimePickerNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <TimePickerNormal value="invalid focus" invalid focus />
+                <TimePickerNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
         </div>
     </>

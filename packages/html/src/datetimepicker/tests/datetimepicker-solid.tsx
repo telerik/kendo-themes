@@ -16,29 +16,29 @@ export default () =>(
             <span>DateTimePicker RTL</span>
 
             <div>
-                <DateTimePickerNormal placeholder="placeholder..." />
+                <DateTimePickerNormal fillMode="solid" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <DateTimePickerNormal placeholder="placeholder..." />
+                <DateTimePickerNormal fillMode="solid" placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...DateTimePicker.states ].map((state) => (
                 <>
                     <div>
-                        <DateTimePickerNormal { ...{ [state]: true }} value={state} />
+                        <DateTimePickerNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <DateTimePickerNormal { ...{ [state]: true }} value={state} />
+                        <DateTimePickerNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <DateTimePickerNormal value="invalid focus" invalid focus />
+                <DateTimePickerNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <DateTimePickerNormal value="invalid focus" invalid focus />
+                <DateTimePickerNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
         </div>
     </>

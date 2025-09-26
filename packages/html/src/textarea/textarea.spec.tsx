@@ -22,7 +22,7 @@ const states = [
 
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    rounded: [ Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
@@ -48,9 +48,6 @@ export type KendoTextareaProps = KendoTextareaOptions & {
 export type KendoTextareaState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    size: Input.defaultOptions.size,
-    rounded: Input.defaultOptions.rounded,
-    fillMode: Input.defaultOptions.fillMode,
     flow: "vertical",
     affixesOrientation: "horizontal",
     resize: "both",
@@ -64,9 +61,9 @@ export const Textarea: KendoComponent<KendoTextareaProps & KendoTextareaState & 
        Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>
 ) => {
     const {
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
+        size,
+        rounded,
+        fillMode,
         prefixSeparator = defaultOptions.prefixSeparator,
         suffixSeparator = defaultOptions.prefixSeparator,
         affixesOrientation = defaultOptions.affixesOrientation,

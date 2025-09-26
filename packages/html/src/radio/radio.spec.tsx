@@ -28,9 +28,7 @@ export type RadioButtonOptions = {
   size?: (typeof options.size)[number] | null;
 };
 
-const defaultOptions = {
-    size: Size.medium
-};
+const defaultOptions = {};
 
 export const RadioButton: KendoComponent<RadioButtonProps & RadioButtonState & React.HTMLAttributes<HTMLInputElement>> = (
     props: RadioButtonProps & RadioButtonState & React.HTMLAttributes<HTMLInputElement>
@@ -44,7 +42,7 @@ export const RadioButton: KendoComponent<RadioButtonProps & RadioButtonState & R
         invalid,
         valid,
         required,
-        size = defaultOptions.size,
+        size,
         ...other
     } = props;
 

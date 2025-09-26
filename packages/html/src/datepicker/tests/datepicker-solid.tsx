@@ -19,29 +19,29 @@ export default () =>(
             <span>DatePicker RTL</span>
 
             <div>
-                <DatePickerNormal placeholder="placeholder..." />
+                <DatePickerNormal fillMode="solid" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <DatePickerNormal placeholder="placeholder..." />
+                <DatePickerNormal fillMode="solid" placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...DatePicker.states ].map((state) => (
                 <>
                     <div>
-                        <DatePickerNormal { ...{ [state]: true }} value={state} />
+                        <DatePickerNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <DatePickerNormal { ...{ [state]: true }} value={state} />
+                        <DatePickerNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <DatePickerNormal value="invalid focus" invalid focus />
+                <DatePickerNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <DatePickerNormal value="invalid focus" invalid focus />
+                <DatePickerNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
         </div>
     </>

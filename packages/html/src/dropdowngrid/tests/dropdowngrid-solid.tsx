@@ -15,35 +15,35 @@ export default () =>(
             <span>DropdownGrid RTL</span>
 
             <div>
-                <DropdownGridNormal />
+                <DropdownGridNormal fillMode="solid" />
             </div>
             <div dir="rtl">
-                <DropdownGridNormal />
+                <DropdownGridNormal fillMode="solid" />
             </div>
             <div>
-                <DropdownGridNormal placeholder="placeholder..." />
+                <DropdownGridNormal fillMode="solid" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <DropdownGridNormal placeholder="placeholder..." />
+                <DropdownGridNormal fillMode="solid" placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...DropdownGrid.states ].map((state) => (
                 <>
                     <div>
-                        <DropdownGridNormal { ...{ [state]: true }} value={state} />
+                        <DropdownGridNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <DropdownGridNormal { ...{ [state]: true }} value={state} />
+                        <DropdownGridNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <DropdownGridNormal value="invalid focus" invalid focus />
+                <DropdownGridNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <DropdownGridNormal value="invalid focus" invalid focus />
+                <DropdownGridNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
         </div>
     </>

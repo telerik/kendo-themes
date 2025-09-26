@@ -29,7 +29,7 @@ const states = [
 
 const options = {
     size: [Size.small, Size.medium, Size.large],
-    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    rounded: [Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
     fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
@@ -61,10 +61,7 @@ export type KendoDropdownTreeState = { [K in (typeof states)[number]]?: boolean 
 
 const defaultOptions = {
     showValue: true,
-    arrowIconName: 'caret-alt-down',
-    size: Size.medium,
-    rounded: Roundness.medium,
-    fillMode: FillMode.solid
+    arrowIconName: 'caret-alt-down'
 };
 
 export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdownTreeState & React.HTMLAttributes<HTMLSpanElement>> = (
@@ -73,9 +70,9 @@ export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdown
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
+        size,
+        rounded,
+        fillMode,
         arrowIconName = defaultOptions.arrowIconName,
         showValue = defaultOptions.showValue,
         valueIconName,

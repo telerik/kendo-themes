@@ -30,7 +30,7 @@ const states = [
 
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    rounded: [ Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
@@ -51,9 +51,6 @@ export type KendoTimeDurationPickerProps = KendoTimeDurationPickerOptions & {
 export type KendoTimeDurationPickerState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    size: Input.defaultOptions.size,
-    rounded: Input.defaultOptions.rounded,
-    fillMode: Input.defaultOptions.fillMode
 };
 
 export const TimeDurationPicker: KendoComponent<KendoTimeDurationPickerProps & KendoTimeDurationPickerState & React.HTMLAttributes<HTMLSpanElement>> = (
@@ -62,9 +59,9 @@ export const TimeDurationPicker: KendoComponent<KendoTimeDurationPickerProps & K
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
+        size,
+        rounded,
+        fillMode,
         prefix,
         suffix,
         value,

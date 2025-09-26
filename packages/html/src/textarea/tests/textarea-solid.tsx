@@ -15,42 +15,42 @@ export default () =>(
             <span>TextArea RTL</span>
 
             <div>
-                <TextareaNormal />
+                <TextareaNormal fillMode="solid" />
             </div>
             <div dir="rtl">
-                <TextareaNormal />
+                <TextareaNormal fillMode="solid" />
             </div>
             <div>
-                <TextareaNormal placeholder="placeholder..." />
+                <TextareaNormal fillMode="solid" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <TextareaNormal placeholder="placeholder..." />
+                <TextareaNormal fillMode="solid" placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...Textarea.states ].map((state) => (
                 <>
                     <div>
-                        <TextareaNormal { ...{ [state]: true }} value={state} />
+                        <TextareaNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <TextareaNormal { ...{ [state]: true }} value={state} />
+                        <TextareaNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <TextareaNormal value="invalid focus" invalid focus />
+                <TextareaNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <TextareaNormal value="invalid focus" invalid focus />
+                <TextareaNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
 
             <div>
-                <TextareaNormal rows={3} value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."'/>
+                <TextareaNormal fillMode="solid" rows={3} value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."'/>
             </div>
             <div>
-                <TextareaNormal rows={3} value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."' />
+                <TextareaNormal fillMode="solid" rows={3} value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."' />
             </div>
 
         </div>

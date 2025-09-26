@@ -19,9 +19,9 @@ export default () =>(
             {[ 'normal' , ...SplitButton.states ].map((state) => (
                 <>
                     <span>{state}</span>
-                    <span><TextSplitButton {...{ [state]: true }}>{state}</TextSplitButton></span>
-                    <span><IconTextSplitButton {...{ [state]: true }}>{state}</IconTextSplitButton></span>
-                    <span><IconSplitButton {...{ [state]: true }}>{state}</IconSplitButton></span>
+                    <span><TextSplitButton fillMode="solid" {...{ [state]: true }}>{state}</TextSplitButton></span>
+                    <span><IconTextSplitButton fillMode="solid" {...{ [state]: true }}>{state}</IconTextSplitButton></span>
+                    <span><IconSplitButton fillMode="solid" {...{ [state]: true }}>{state}</IconSplitButton></span>
                 </>
             ))}
         </div>

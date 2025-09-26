@@ -9,6 +9,7 @@ export const Size = {
 } as const;
 
 export const Roundness = {
+    'none': 'none',
     'small': 'small',
     'medium': 'medium',
     'large': 'large',

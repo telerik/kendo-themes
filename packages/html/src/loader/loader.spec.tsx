@@ -39,8 +39,6 @@ export type KendoLoaderProps = KendoLoaderOptions & {
 };
 
 const defaultOptions = {
-    size: Size.medium,
-    themeColor: ThemeColor.primary,
     animation: 'pulsing'
 } as const;
 
@@ -49,8 +47,8 @@ export const Loader: KendoComponent<KendoLoaderProps & React.HTMLAttributes<HTML
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        themeColor = defaultOptions.themeColor,
+        size,
+        themeColor,
         animation = defaultOptions.animation,
         ...other
     } = props;

@@ -27,7 +27,6 @@ export type KendoDateTimeSelectorProps = KendoDateTimeSelectorOptions & {
 
 const defaultOptions = {
     tab: 'date',
-    size: Size.medium,
     actionButtons: true
 } as const;
 
@@ -36,7 +35,7 @@ export const DateTimeSelector: KendoComponent<KendoDateTimeSelectorProps & React
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         tab = defaultOptions.tab,
         actionButtons = defaultOptions.actionButtons,
         dir,

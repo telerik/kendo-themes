@@ -15,35 +15,35 @@ export default () =>(
             <span>NumericTextBox RTL</span>
 
             <div>
-                <NumericTextboxNormal />
+                <NumericTextboxNormal fillMode="solid" />
             </div>
             <div dir="rtl">
-                <NumericTextboxNormal />
+                <NumericTextboxNormal fillMode="solid" />
             </div>
             <div>
-                <NumericTextboxNormal placeholder="placeholder..." />
+                <NumericTextboxNormal fillMode="solid" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <NumericTextboxNormal placeholder="placeholder..." />
+                <NumericTextboxNormal fillMode="solid" placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...NumericTextbox.states ].map((state) => (
                 <>
                     <div>
-                        <NumericTextboxNormal { ...{ [state]: true }} value={state} />
+                        <NumericTextboxNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <NumericTextboxNormal { ...{ [state]: true }} value={state} />
+                        <NumericTextboxNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <NumericTextboxNormal value="invalid focus" invalid focus />
+                <NumericTextboxNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <NumericTextboxNormal value="invalid focus" invalid focus />
+                <NumericTextboxNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
         </div>
     </>

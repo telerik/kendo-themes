@@ -18,39 +18,39 @@ export default () => (
 
             <span>normal</span>
             <div>
-                <OneTimePasswordGroups />
+                <OneTimePasswordGroups fillMode="solid" />
             </div>
             <div dir="rtl">
-                <OneTimePasswordGroups />
+                <OneTimePasswordGroups fillMode="solid" />
             </div>
 
             <span>placeholder</span>
             <div>
-                <OneTimePasswordGroups placeholder="#" />
+                <OneTimePasswordGroups fillMode="solid" placeholder="#" />
             </div>
             <div dir="rtl">
-                <OneTimePasswordGroups placeholder="#" />
+                <OneTimePasswordGroups fillMode="solid" placeholder="#" />
             </div>
 
             {['normal', ...OneTimePasswordInput.states].map((state) => (
                 <>
                     <span>{state}</span>
                     <div>
-                        <OneTimePasswordGroups {...{ [state]: true }} value="1" />
+                        <OneTimePasswordGroups fillMode="solid" {...{ [state]: true }} value="1" />
                     </div>
 
                     <div dir="rtl">
-                        <OneTimePasswordGroups {...{ [state]: true }} value="1" />
+                        <OneTimePasswordGroups fillMode="solid" {...{ [state]: true }} value="1" />
                     </div>
                 </>
             ))}
 
             <span>invalid focus</span>
             <div>
-                <OneTimePasswordGroups value="1" invalid focus />
+                <OneTimePasswordGroups fillMode="solid" value="1" invalid focus />
             </div>
             <div dir="rtl">
-                <OneTimePasswordGroups value="1" invalid focus />
+                <OneTimePasswordGroups fillMode="solid" value="1" invalid focus />
             </div>
         </div>
     </>

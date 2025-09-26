@@ -17,7 +17,6 @@ export type KendoColumnListOptions = {
 export type KendoColumnListProps = KendoColumnListOptions;
 
 const defaultOptions = {
-    size: Size.medium
 };
 
 export const ColumnList: KendoComponent<KendoColumnListProps & React.HTMLAttributes<HTMLDivElement>> = (
@@ -25,7 +24,7 @@ export const ColumnList: KendoComponent<KendoColumnListProps & React.HTMLAttribu
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         ...other
     } = props;
 

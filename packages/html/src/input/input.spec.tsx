@@ -17,7 +17,7 @@ export const states = [
 
 export const options = {
     size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    rounded: [ Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
@@ -28,11 +28,7 @@ export type InputOptions = {
   fillMode?: (typeof options.fillMode)[number] | null;
 };
 
-export const defaultOptions = {
-    size: Size.medium,
-    rounded: Size.medium,
-    fillMode: FillMode.solid
-};
+export const defaultOptions = {};
 
 export const Input: KendoComponent<InputOptions & InputState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: InputOptions & InputState & React.HTMLAttributes<HTMLSpanElement>
@@ -45,9 +41,9 @@ export const Input: KendoComponent<InputOptions & InputState & React.HTMLAttribu
         valid,
         loading,
         readonly,
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
+        size,
+        rounded,
+        fillMode,
         ...other
     } = props;
 

@@ -28,7 +28,6 @@ export type KendoCalendarProps = KendoCalendarOptions & {
 };
 
 const defaultOptions = {
-    size: Size.medium,
     showCalendarHeader: true,
     orientation: 'horizontal',
     calendarView: 'month',
@@ -40,7 +39,7 @@ export const Calendar: KendoComponent<KendoCalendarProps & React.HTMLAttributes<
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         orientation = defaultOptions.orientation,
         calendarView = defaultOptions.calendarView,
         calendarTitleText = defaultOptions.calendarTitleText,

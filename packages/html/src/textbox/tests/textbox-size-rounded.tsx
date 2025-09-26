@@ -3,7 +3,7 @@ import { Textbox, TextboxNormal } from '../../textbox';
 const styles = `
     #test-area {
         max-width: 1240px;
-        grid-template-columns: 80px 320px 320px 1fr;
+        grid-template-columns: 80px 320px 320px 1fr;;
     }
 `;
 

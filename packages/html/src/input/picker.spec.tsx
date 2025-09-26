@@ -17,7 +17,7 @@ export const pickerStates = [
 
 export const pickerOptions = {
     size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    rounded: [ Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
@@ -30,11 +30,7 @@ export type PickerOptions = {
   fillMode?: (typeof pickerOptions.fillMode)[number] | null;
 };
 
-const defaultOptions = {
-    size: Size.medium,
-    rounded: Roundness.medium,
-    fillMode: FillMode.solid
-};
+const defaultOptions = {};
 
 export const Picker: KendoComponent<PickerOptions & PickerState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: PickerOptions & PickerState & React.HTMLAttributes<HTMLSpanElement>
@@ -47,9 +43,9 @@ export const Picker: KendoComponent<PickerOptions & PickerState & React.HTMLAttr
         valid,
         loading,
         readonly,
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
+        size,
+        rounded,
+        fillMode,
         ...other
     } = props;
 

@@ -27,7 +27,6 @@ export type KendoGridProps = KendoGridOptions & {
 };
 
 const defaultOptions = {
-    size: Size.medium,
     pagerPosition: 'bottom'
 };
 
@@ -36,7 +35,7 @@ export const Grid: KendoComponent<KendoGridProps & React.HTMLAttributes<HTMLDivE
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         pagerPosition = defaultOptions.pagerPosition,
         toolbar,
         pager,

@@ -21,23 +21,23 @@ export default () =>(
             {[ "normal", ...Signature.states ].map(( state ) => (
                 <>
                     <div>
-                        <SignatureNormal {...{ [state]: true }}/>
+                        <SignatureNormal fillMode="solid" {...{ [state]: true }}/>
                     </div>
                     <div dir="rtl">
-                        <SignatureNormal {...{ [state]: true }}/>
+                        <SignatureNormal fillMode="solid" {...{ [state]: true }}/>
                     </div>
                 </>
             ))}
 
             <div>
-                <SignatureNormal invalid focus />
+                <SignatureNormal fillMode="solid" invalid focus />
             </div>
             <div dir="rtl">
-                <SignatureNormal invalid focus />
+                <SignatureNormal fillMode="solid" invalid focus />
             </div>
 
             <div className="k-colspan-all k-col-span-full">
-                <SignatureMaximized />
+                <SignatureMaximized fillMode="solid" />
             </div>
 
         </div>

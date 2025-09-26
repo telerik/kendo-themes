@@ -28,7 +28,6 @@ export type KendoTabStripProps = KendoTabStripOptions & {
 };
 
 const defaultOptions = {
-    size: Size.medium,
     position: "top",
     tabAlignment: "start",
     scrollButtons: "around"
@@ -39,7 +38,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         scrollable,
         children,
         tabStripItems,

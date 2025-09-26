@@ -15,7 +15,7 @@ const states = [
 
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    rounded: [ Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline, FillMode.clear, FillMode.link ],
     themeColor: [
         ThemeColor.primary,
@@ -48,10 +48,6 @@ export type KendoFloatingActionButtonProps = KendoFloatingActionButtonOptions & 
 export type KendoFloatingActionButtonState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    size: Size.medium,
-    rounded: Roundness.full,
-    fillMode: FillMode.solid,
-    themeColor: ThemeColor.primary,
     type: 'button',
 } as const;
 
@@ -61,10 +57,10 @@ export const FloatingActionButton: KendoComponent<KendoFloatingActionButtonProps
         React.HTMLAttributes<HTMLButtonElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
-        themeColor = defaultOptions.themeColor,
+        size,
+        rounded,
+        fillMode,
+        themeColor,
         text,
         icon,
         type = defaultOptions.type,

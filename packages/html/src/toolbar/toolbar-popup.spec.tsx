@@ -22,8 +22,6 @@ export type KendoToolbarPopupProps = KendoToolbarPopupOptions & {
 };
 
 const defaultOptions = {
-    size: Size.medium,
-    fillMode: FillMode.solid
 };
 
 export const ToolbarPopup: KendoComponent<KendoToolbarPopupProps & React.HTMLAttributes<HTMLElement>> = (
@@ -32,8 +30,8 @@ export const ToolbarPopup: KendoComponent<KendoToolbarPopupProps & React.HTMLAtt
 ) => {
 
     const {
-        size=defaultOptions.size,
-        fillMode=defaultOptions.fillMode,
+        size,
+        fillMode,
         section,
         ...other
     } = props;

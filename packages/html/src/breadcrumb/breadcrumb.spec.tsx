@@ -20,8 +20,7 @@ export type KendoBreadcrumbProps = {
 export type KendoBreadcrumbState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    collapsing: 'auto',
-    size: Size.medium
+    collapsing: 'auto'
 };
 
 export const Breadcrumb: KendoComponent<KendoBreadcrumbProps & KendoBreadcrumbState & React.HTMLAttributes<HTMLElement>> = (
@@ -30,7 +29,7 @@ export const Breadcrumb: KendoComponent<KendoBreadcrumbProps & KendoBreadcrumbSt
         React.HTMLAttributes<HTMLElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         collapsing = defaultOptions.collapsing,
         focus,
         ...other

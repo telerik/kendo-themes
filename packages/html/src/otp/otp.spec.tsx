@@ -18,9 +18,7 @@ export type KendoOneTimePasswordOptions = {
 
 export type KendoOneTimePasswordState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultOptions = {
-    size: Size.medium,
-};
+const defaultOptions = {};
 
 export const OneTimePassword: KendoComponent<KendoOneTimePasswordOptions & KendoOneTimePasswordState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoOneTimePasswordOptions &
@@ -28,7 +26,7 @@ export const OneTimePassword: KendoComponent<KendoOneTimePasswordOptions & Kendo
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         invalid,
         ...other
     } = props;

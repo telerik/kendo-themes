@@ -39,8 +39,6 @@ export type KendoBottomNavProps = KendoBottomNavOptions & {
 export type KendoBottomNavState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    fillMode: FillMode.flat,
-    themeColor: ThemeColor.primary,
     flow: 'horizontal',
     border: false
 };
@@ -52,8 +50,8 @@ export const BottomNav: KendoComponent<KendoBottomNavProps & KendoBottomNavState
 ) => {
     const {
         disabled,
-        fillMode = defaultOptions.fillMode,
-        themeColor = defaultOptions.themeColor,
+        fillMode,
+        themeColor,
         flow = defaultOptions.flow,
         border = defaultOptions.border,
         positionMode,
