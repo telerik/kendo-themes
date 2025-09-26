@@ -8,7 +8,10 @@ const className = ColorPalette.className;
 
 const dependencyClassNames = [];
 
-const expected = [];
+const expected = [
+    "kendo-color-palette-tile-width", // Variable customizations work, but is used by another variable.
+    "kendo-color-palette-tile-height", // Variable customizations work, but is used by another variable.
+];
 
 const unexpected = [];
 

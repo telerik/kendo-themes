@@ -15,7 +15,9 @@ const dependencyClassNames = [
 ];
 
 const expected = [
-    "kendo-color-gradient-spacer" // Variable customizations work, but is used by another variable.
+    "kendo-color-gradient-spacer", // Variable customizations work, but is used by another variable.
+    "kendo-color-gradient-width", // Variable customizations work, but is used by another variable.
+    "kendo-color-gradient-gap", // Variable customizations work, but is used by another variable.
 ];
 
 const unexpected = [];
