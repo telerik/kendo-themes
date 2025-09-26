@@ -36,6 +36,14 @@
         position: relative;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        @extend %k-tabstrip-md;
+
+         @each $size, $size-props in $kendo-tabstrip-sizes {
+             &.k-tabstrip-#{$size} {
+                @extend %k-tabstrip-#{$size};
+             }
+        }
     }
     .k-tabstrip-wrapper > .k-tabstrip {
         flex: 1 1 auto;
@@ -472,7 +480,7 @@
         $_item-padding-x: map.get( $size-props, item-padding-x );
         $_item-padding-y: map.get( $size-props, item-padding-y );
 
-        .k-tabstrip-#{$size} {
+        %k-tabstrip-#{$size} {
             .k-tabstrip-items .k-link {
                 font-size: $_font-size;
                 line-height: $_line-height;
