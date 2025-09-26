@@ -3,6 +3,7 @@
 // Avatar
 
 $kendo-avatar-border-width: null !default;
+$kendo-avatar-border-radius: null !default;
 
 $kendo-avatar-font-family: null !default;
 $kendo-avatar-font-size: null !default;
@@ -11,3 +12,5 @@ $kendo-avatar-line-height: null !default;
 $kendo-avatar-sizes: null !default;
 
 $kendo-avatar-theme-colors: null !default;
+
+$kendo-avatar-roundness: ( "none", "sm", "md", "lg", "full" ) !default;
