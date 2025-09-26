@@ -10,9 +10,6 @@
     // ColorGradient
     .k-colorgradient {
         @include border-radius( $kendo-color-gradient-border-radius );
-        width: $kendo-color-gradient-width;
-        padding-block: $kendo-color-gradient-md-padding-y;
-        padding-inline: $kendo-color-gradient-md-padding-x;
         border-style: solid;
         border-width: $kendo-color-gradient-border-width;
         box-sizing: border-box;
@@ -23,7 +20,6 @@
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        gap: $kendo-color-gradient-gap;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
@@ -31,6 +27,14 @@
         *::before,
         *::after {
             box-sizing: border-box;
+        }
+
+        @extend %k-colorgradient-md;
+
+        @each $size, $size-props in $kendo-color-gradient-sizes {
+            &.k-colorgradient-#{$size} {
+                @extend %k-colorgradient-#{$size};
+            }
         }
     }
 
@@ -141,7 +145,7 @@
         $_padding-x: map.get( $size-props, padding-x );
         $_padding-y: map.get( $size-props, padding-y );
 
-        .k-colorgradient-#{$size} {
+        %k-colorgradient-#{$size} {
             width: $_width;
             gap: $_gap;
             padding-block: $_padding-y;
