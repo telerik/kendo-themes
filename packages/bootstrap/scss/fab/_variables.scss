@@ -8,6 +8,10 @@
 /// The width of the border around the FAB.
 /// @group floating-action-button
 $kendo-fab-border-width: 1px !default;
+/// The border radius of the FAB.
+/// @group floating-action-button
+$kendo-fab-border-radius: k-border-radius(full) !default;
+
 /// The font family of the FAB.
 /// @group floating-action-button
 $kendo-fab-font-family: var( --kendo-font-family, inherit ) !default;
@@ -90,6 +94,7 @@ $kendo-fab-item-icon-border-radius: 50% !default;
 /// The theme colors map for the FAB.
 /// @group floating-action-button
 $kendo-fab-theme-colors:  (
+    "base": k-color(base),
     "primary": k-color(primary),
     "secondary": k-color(secondary),
     "tertiary": k-color(tertiary),
@@ -107,15 +112,18 @@ $kendo-fab-theme-colors:  (
 $kendo-fab-sizes: (
     sm: (
         padding-x: $kendo-fab-sm-padding-x,
-        padding-y: $kendo-fab-sm-padding-y
+        padding-y: $kendo-fab-sm-padding-y,
+        gap: $kendo-fab-icon-spacing
     ),
     md: (
         padding-x: $kendo-fab-md-padding-x,
-        padding-y: $kendo-fab-md-padding-y
+        padding-y: $kendo-fab-md-padding-y,
+        gap: $kendo-fab-icon-spacing
     ),
     lg: (
         padding-x: $kendo-fab-lg-padding-x,
-        padding-y: $kendo-fab-lg-padding-y
+        padding-y: $kendo-fab-lg-padding-y,
+        gap: $kendo-fab-icon-spacing
     )
 ) !default;
 
@@ -181,6 +189,7 @@ $kendo-fab-generating-opacity: 40% !default;
 
 @forward "@progress/kendo-theme-core/scss/components/fab/_variables.scss" with (
     $kendo-fab-border-width: $kendo-fab-border-width,
+    $kendo-fab-border-radius: $kendo-fab-border-radius,
     $kendo-fab-font-family: $kendo-fab-font-family,
     $kendo-fab-font-size: $kendo-fab-font-size,
     $kendo-fab-line-height: $kendo-fab-line-height,

@@ -1,6 +1,7 @@
 // Floating Action Button
 
 $kendo-fab-border-width: null !default;
+$kendo-fab-border-radius: null !default;
 
 $kendo-fab-font-family: null !default;
 $kendo-fab-font-size: null !default;
@@ -59,3 +60,5 @@ $kendo-fab-item-outline-width: null !default;
 $kendo-fab-item-outline-color: null !default;
 
 $kendo-fab-generating-opacity: null !default;
+
+$kendo-fab-roundness: ( "none", "sm", "md", "lg", "full" ) !default;

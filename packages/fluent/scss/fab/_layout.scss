@@ -59,14 +59,4 @@
     .k-fab-item-icon {
         border-style: $kendo-fab-item-icon-border-style;
     }
-
-    // Sizes
-    @each $size, $size-props in $kendo-fab-sizes {
-        $_gap: map.get( $size-props, gap );
-
-        .k-fab-#{$size} {
-            gap: $_gap;
-        }
-
-    }
 }
