@@ -24,35 +24,35 @@ export default () =>(
 
             <span>Top</span>
             <span className="relative-container">
-                <IconFloatingActionButton position="top-start" style={{ top: "16px", left: "16px" }} />
+                <IconFloatingActionButton position="top-start" themeColor="primary" style={{ top: "16px", left: "16px" }} />
             </span>
             <span className="relative-container">
-                <IconFloatingActionButton position="top-center" style={{ top: "16px" }} />
+                <IconFloatingActionButton position="top-center" themeColor="primary" style={{ top: "16px" }} />
             </span>
             <span className="relative-container">
-                <IconFloatingActionButton position="top-end" style={{ top: "16px", right: "16px" }} />
+                <IconFloatingActionButton position="top-end" themeColor="primary" style={{ top: "16px", right: "16px" }} />
             </span>
 
             <span>Middle</span>
             <span className="relative-container">
-                <IconFloatingActionButton position="middle-start" style={{ left: "16px" }} />
+                <IconFloatingActionButton position="middle-start" themeColor="primary" style={{ left: "16px" }} />
             </span>
             <span className="relative-container">
                 NO CENTER POSITION
             </span>
             <span className="relative-container">
-                <IconFloatingActionButton position="middle-end" style={{ right: "16px" }} />
+                <IconFloatingActionButton position="middle-end" themeColor="primary" style={{ right: "16px" }} />
             </span>
 
             <span>Bottom</span>
             <span className="relative-container">
-                <IconFloatingActionButton position="bottom-start" style={{ bottom: "16px", left: "16px" }} />
+                <IconFloatingActionButton position="bottom-start" themeColor="primary" style={{ bottom: "16px", left: "16px" }} />
             </span>
             <span className="relative-container">
-                <IconFloatingActionButton position="bottom-center" style={{ bottom: "16px" }} />
+                <IconFloatingActionButton position="bottom-center" themeColor="primary" style={{ bottom: "16px" }} />
             </span>
             <span className="relative-container">
-                <IconFloatingActionButton position="bottom-end" style={{ bottom: "16px", right: "16px" }} />
+                <IconFloatingActionButton position="bottom-end" themeColor="primary" style={{ bottom: "16px", right: "16px" }} />
             </span>
 
         </div>

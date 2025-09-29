@@ -23,9 +23,9 @@ export default () =>(
                     <span>{String(rounded)}</span>
                     {FloatingActionButton.options.size.map((size) => (
                         <span className="k-d-flex k-gap-1">
-                            <TextFloatingActionButton rounded={rounded} size={size} />
-                            <IconTextFloatingActionButton rounded={rounded} size={size} />
-                            <IconFloatingActionButton rounded={rounded} size={size} />
+                            <TextFloatingActionButton rounded={rounded} themeColor="primary" size={size} />
+                            <IconTextFloatingActionButton rounded={rounded} themeColor="primary" size={size} />
+                            <IconFloatingActionButton rounded={rounded} themeColor="primary" size={size} />
                         </span>
                     ))}
                 </>
