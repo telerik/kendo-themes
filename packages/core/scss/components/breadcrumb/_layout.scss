@@ -28,6 +28,32 @@
         *::after {
             box-sizing: border-box;
         }
+
+        // Sizes
+        @each $size, $size-props in $kendo-breadcrumb-sizes {
+            $_link-padding-x: map.get( $size-props, link-padding-x );
+            $_link-padding-y: map.get( $size-props, link-padding-y );
+            $_icon-link-padding-x: map.get( $size-props, icon-link-padding-x );
+            $_icon-link-padding-y: map.get( $size-props, icon-link-padding-y );
+            $_font-size: map.get( $size-props, font-size );
+            $_line-height: map.get( $size-props, line-height );
+
+            #{if($size == DEFAULT, "&", "&.k-breadcrumb-#{$size}")} {
+                font-size: $_font-size;
+                line-height: $_line-height;
+
+                .k-breadcrumb-link,
+                .k-breadcrumb-root-link {
+                    padding-block: $_link-padding-y;
+                    padding-inline: $_link-padding-x;
+                }
+
+                .k-breadcrumb-icon-link {
+                    padding-block: $_icon-link-padding-y;
+                    padding-inline: $_icon-link-padding-x;
+                }
+            }
+        }
     }
 
 
@@ -102,34 +128,6 @@
 
         .k-breadcrumb-input-container {
             border-color: transparent;
-        }
-    }
-
-
-    // Sizes
-    @each $size, $size-props in $kendo-breadcrumb-sizes {
-        $_link-padding-x: map.get( $size-props, link-padding-x );
-        $_link-padding-y: map.get( $size-props, link-padding-y );
-        $_icon-link-padding-x: map.get( $size-props, icon-link-padding-x );
-        $_icon-link-padding-y: map.get( $size-props, icon-link-padding-y );
-        $_font-size: map.get( $size-props, font-size );
-        $_line-height: map.get( $size-props, line-height );
-
-        .k-breadcrumb-#{$size} {
-            font-size: $_font-size;
-            line-height: $_line-height;
-
-
-            .k-breadcrumb-link,
-            .k-breadcrumb-root-link {
-                padding-block: $_link-padding-y;
-                padding-inline: $_link-padding-x;
-            }
-
-            .k-breadcrumb-icon-link {
-                padding-block: $_icon-link-padding-y;
-                padding-inline: $_icon-link-padding-x;
-            }
         }
     }
 

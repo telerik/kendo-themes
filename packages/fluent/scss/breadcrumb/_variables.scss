@@ -237,6 +237,14 @@ $kendo-breadcrumb-link-icon-spacing: k-spacing(0.5) !default;
 /// The sizes map for the Breadcrumb.
 /// @group breadcrumb
 $kendo-breadcrumb-sizes: (
+    DEFAULT: (
+        link-padding-x: $kendo-breadcrumb-md-link-padding-x,
+        link-padding-y: $kendo-breadcrumb-md-link-padding-y,
+        icon-link-padding-x: $kendo-breadcrumb-md-icon-link-padding-x,
+        icon-link-padding-y: $kendo-breadcrumb-md-icon-link-padding-y,
+        font-size: $kendo-breadcrumb-md-font-size,
+        line-height: $kendo-breadcrumb-md-line-height
+    ),
     sm: (
         link-padding-x: $kendo-breadcrumb-sm-link-padding-x,
         link-padding-y: $kendo-breadcrumb-sm-link-padding-y,
