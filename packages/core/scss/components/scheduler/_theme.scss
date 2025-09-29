@@ -48,11 +48,13 @@
     .k-scheduler-content {}
     .k-scheduler-nonwork,
     .k-scheduler .k-nonwork-hour {
-        @include fill($kendo-scheduler-nonwork-text, $kendo-scheduler-nonwork-bg);
+        color: $kendo-scheduler-nonwork-text;
+        background-color: $kendo-scheduler-nonwork-bg;
     }
     .k-scheduler-other-month,
     .k-scheduler .k-other-month {
-        @include fill($kendo-scheduler-othermonth-text, $kendo-scheduler-othermonth-bg);
+        color: $kendo-scheduler-othermonth-text;
+        background-color: $kendo-scheduler-othermonth-bg;
     }
 
     .k-scheduler-layout td.k-selected,

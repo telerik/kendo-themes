@@ -63,7 +63,9 @@
     // Insert table
     .k-ct-popup {
         .k-selected {
-            @include fill( $kendo-editor-ct-cell-text, $kendo-editor-ct-cell-bg, $kendo-editor-ct-cell-border, none );
+            color: $kendo-editor-ct-cell-text;
+            background-color: $kendo-editor-ct-cell-bg;
+            border-color: $kendo-editor-ct-cell-border;
         }
     }
 

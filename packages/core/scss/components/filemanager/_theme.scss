@@ -50,7 +50,9 @@
             }
 
             &.k-selected .k-file-icon {
-                @include fill(inherit, transparent, transparent);
+                color: inherit;
+                background-color: transparent;
+                border-color: transparent;
             }
         }
 

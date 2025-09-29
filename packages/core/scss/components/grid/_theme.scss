@@ -90,7 +90,8 @@
         .k-table-row.k-selected > td,
         .k-table-td.k-selected,
         .k-table-row.k-selected > .k-table-td {
-            @include fill( $kendo-grid-selected-text, $kendo-grid-selected-bg );
+            color: $kendo-grid-selected-text;
+            background-color: $kendo-grid-selected-bg;
         }
 
         // Highlighted state
@@ -343,7 +344,8 @@
 
     .k-column-list-item:hover,
     .k-columnmenu-item:hover {
-        @include fill($kendo-list-item-hover-text, $kendo-list-item-hover-bg);
+        color: $kendo-list-item-hover-text;
+        background-color: $kendo-list-item-hover-bg;
     }
     .k-column-list-item:focus,
     .k-column-list-item.k-focus,

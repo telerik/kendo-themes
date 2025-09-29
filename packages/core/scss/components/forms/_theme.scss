@@ -6,7 +6,7 @@
 
     .k-form,
     .k-form-inline {
-        @include fill( $color: k-color(on-app-surface) );
+        color: k-color(on-app-surface);
 
         fieldset {
             legend {
@@ -19,18 +19,18 @@
         }
 
         .k-field-info {
-            @include fill( $color: k-color(subtle) );
+            color: k-color(subtle);
         }
 
         .k-alert-error {
-            @include fill( $color: k-color(error) );
+            color: k-color(error);
         }
     }
 
     .k-form-error,
     .k-text-error,
     .k-form-field-error .k-label {
-        @include fill( $color: k-color(error) );
+        color: k-color(error);
     }
 
     .k-form-separator {

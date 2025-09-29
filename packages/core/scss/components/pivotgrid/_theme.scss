@@ -108,7 +108,7 @@
     }
 
     .k-pivotgrid-configurator-content .k-form-field-wrapper {
-        @include fill( $border: k-color(border) );
+        border-color: k-color(border);
     }
 
     // Overlay mode

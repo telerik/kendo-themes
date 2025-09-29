@@ -15,7 +15,8 @@
 
     // Message meta base styles
     .k-timestamp {
-        @include fill($kendo-chat-timestamp-text, $kendo-chat-timestamp-bg);
+        color: $kendo-chat-timestamp-text;
+        background-color: $kendo-chat-timestamp-bg;
     }
 
     // Message meta pseudo elements
@@ -62,7 +63,7 @@
 
     // Typing indicator
     .k-typing-indicator {
-        @include fill($kendo-chat-typing-indicator-text);
+        color: $kendo-chat-typing-indicator-text;
     }
 
     // Chat attachment

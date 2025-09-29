@@ -13,7 +13,10 @@
         // TODO: do we even use this?
         // Header / footer
         .k-header {
-            @include fill($kendo-calendar-header-text, $kendo-calendar-header-bg, inherit, $kendo-calendar-header-gradient);
+            color: $kendo-calendar-header-text;
+            background-color: $kendo-calendar-header-bg;
+            border-color: inherit;
+            @include linear-gradient($kendo-calendar-header-gradient);
             @include box-shadow( $kendo-calendar-header-shadow );
         }
 
@@ -49,7 +52,8 @@
         .k-alt {
             // remove default k-alt background color
             background-color: transparent;
-            @include fill($kendo-calendar-week-number-text, $kendo-calendar-week-number-bg);
+            color: $kendo-calendar-week-number-text;
+            background-color: $kendo-calendar-week-number-bg;
         }
 
         // Interactive states
@@ -84,7 +88,8 @@
 
         // Calendar navigation
         .k-calendar-navigation {
-            @include fill($kendo-calendar-navigation-text, $kendo-calendar-navigation-bg);
+            color: $kendo-calendar-navigation-text;
+            background-color: $kendo-calendar-navigation-bg;
             box-shadow: inset -1px 0 $kendo-calendar-navigation-border;
 
             li:hover,

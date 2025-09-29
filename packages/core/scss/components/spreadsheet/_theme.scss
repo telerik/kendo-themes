@@ -129,7 +129,8 @@
 
             .k-item:hover,
             .k-item.k-hover {
-                @include fill($kendo-list-item-hover-text, $kendo-list-item-hover-bg);
+                color: $kendo-list-item-hover-text;
+                background-color: $kendo-list-item-hover-bg;
             }
         }
 

@@ -24,7 +24,8 @@
 
     // List item - base styles only
     .k-list-item {
-        @include fill($kendo-list-item-text, $kendo-list-item-bg);
+        color: $kendo-list-item-text;
+        background-color: $kendo-list-item-bg;
     }
 
     // List item - state selectors only
@@ -32,19 +33,22 @@
         // Hover
         &:hover,
         &.k-hover {
-            @include fill($kendo-list-item-hover-text, $kendo-list-item-hover-bg);
+            color: $kendo-list-item-hover-text;
+            background-color: $kendo-list-item-hover-bg;
         }
 
         // Focus
         &:focus,
         &.k-focus {
-            @include fill($kendo-list-item-focus-text, $kendo-list-item-focus-bg);
+            color: $kendo-list-item-focus-text;
+            background-color: $kendo-list-item-focus-bg;
             @include focus-indicator( $kendo-list-item-focus-shadow, true );
         }
 
         // Selected
         &.k-selected {
-            @include fill($kendo-list-item-selected-text, $kendo-list-item-selected-bg);
+            color: $kendo-list-item-selected-text;
+            background-color: $kendo-list-item-selected-bg;
         }
         &.k-selected:hover,
         &.k-selected.k-hover {
@@ -70,7 +74,8 @@
 
     // List item group label
     .k-list-item-group-label {
-        @include fill($kendo-list-bg, $kendo-list-text);
+        color: $kendo-list-text;
+        background-color: $kendo-list-bg;
     }
 
 }
