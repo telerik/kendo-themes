@@ -51,7 +51,7 @@
     .k-message-group-sender .k-chat-bubble.k-focus {
         background-color: $kendo-chat-alt-bubble-focus-bg;
         border-color: $kendo-chat-alt-bubble-focus-border;
-        @include focus-indicator( $kendo-chat-alt-bubble-focus-shadow, true, true );
+        box-shadow: inset $kendo-chat-alt-bubble-focus-shadow;
     }
 
     // Bubbles hover state

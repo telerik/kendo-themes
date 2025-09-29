@@ -14,7 +14,7 @@
     .k-colorgradient:focus,
     .k-colorgradient.k-focus {
         border-color: $kendo-color-gradient-focus-border ;
-        @include focus-indicator( $kendo-color-gradient-focus-shadow );
+        box-shadow: $kendo-color-gradient-focus-shadow;
     }
 
     // Canvas
@@ -37,7 +37,7 @@
         background-color: transparent;
         border-color: $kendo-color-white ;
         outline-color: $kendo-color-gradient-draghandle-focus-shadow;
-        @include focus-indicator( $kendo-color-gradient-draghandle-shadow );
+        box-shadow: $kendo-color-gradient-draghandle-shadow;
     }
 
     // DragHandle hover/active state

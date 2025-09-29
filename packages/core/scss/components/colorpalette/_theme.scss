@@ -6,7 +6,7 @@
     // Tile focus state
     .k-colorpalette-tile:focus,
     .k-colorpalette-tile.k-focus {
-        @include focus-indicator( $kendo-color-palette-tile-focus-shadow );
+        box-shadow: $kendo-color-palette-tile-focus-shadow;
     }
 
     // Tile hover state

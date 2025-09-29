@@ -26,7 +26,7 @@
             color: $kendo-card-focus-text;
         background-color: $kendo-card-focus-bg;
         border-color: $kendo-card-focus-border;
-            @include focus-indicator( $kendo-card-focus-shadow );
+            box-shadow: $kendo-card-focus-shadow;
         }
 
         &.k-selected {
@@ -87,7 +87,7 @@
         &.k-focus,
         &.k-selected {
             > .k-card {
-                @include focus-indicator( $kendo-card-focus-shadow );
+                box-shadow: $kendo-card-focus-shadow;
             }
         }
     }

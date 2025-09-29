@@ -70,7 +70,7 @@
             border-color: $kendo-table-focus-border;
             color: $kendo-table-focus-text;
             background-color: $kendo-table-focus-bg;
-            @include focus-indicator( $kendo-table-focus-shadow, inset );
+            box-shadow: inset $kendo-table-focus-shadow;
         }
     }
 

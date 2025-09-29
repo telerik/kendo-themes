@@ -20,7 +20,7 @@
                 &:focus,
                 &.k-focus {
                     background-color: $kendo-chip-solid-focus-bg ;
-                    @include focus-indicator( $kendo-chip-solid-shadow );
+                    box-shadow: $kendo-chip-solid-shadow;
                 }
 
                 &:hover,
@@ -39,7 +39,7 @@
 
                 &:focus,
                 &.k-focus {
-                    @include focus-indicator( 0 0 0 2px color-mix(in srgb, k-color($name) 16%, transparent));
+                    box-shadow: 0 0 0 2px color-mix(in srgb, k-color($name) 16%, transparent);
                 }
 
                 &:hover,
@@ -72,7 +72,7 @@
 
                 &:focus,
                 &.k-focus {
-                    @include focus-indicator( $kendo-chip-outline-shadow );
+                    box-shadow: $kendo-chip-outline-shadow;
                 }
 
                 &:hover,
@@ -89,7 +89,7 @@
 
                 &:focus,
                 &.k-focus {
-                    @include focus-indicator( 0 0 0 2px color-mix(in srgb, k-color($name) 16%, transparent));
+                    box-shadow: 0 0 0 2px color-mix(in srgb, k-color($name) 16%, transparent);
                 }
 
                 &:hover,
@@ -106,7 +106,7 @@
 
                 &:focus,
                 &.k-focus {
-                    @include focus-indicator( 0 0 0 2px color-mix(in srgb, k-color($name) 16%, transparent));
+                    box-shadow: 0 0 0 2px color-mix(in srgb, k-color($name) 16%, transparent);
                 }
 
                 &:hover,

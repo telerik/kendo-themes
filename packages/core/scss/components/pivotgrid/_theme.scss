@@ -61,7 +61,7 @@
     .k-grouping-row > .k-pivotgrid-cell:focus,
     .k-detail-row > .k-pivotgrid-cell:focus,
     .k-group-footer > .k-pivotgrid-cell:focus {
-        @include focus-indicator( $kendo-pivotgrid-focus-shadow, true );
+        box-shadow: inset $kendo-pivotgrid-focus-shadow;
     }
 
     // Selected state

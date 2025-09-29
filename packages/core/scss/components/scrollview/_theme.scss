@@ -60,7 +60,7 @@
     .k-scrollview-next.k-focus .k-icon::before,
     .k-scrollview-prev:focus .k-icon::before,
     .k-scrollview-prev.k-focus .k-icon::before {
-        @include focus-indicator( $kendo-scrollview-pagebutton-shadow );
+        box-shadow: $kendo-scrollview-pagebutton-shadow;
     }
 
     // Navigation buttons hover state
@@ -87,7 +87,7 @@
     // Scrollview nav link focus state
     .k-scrollview-nav > .k-link:focus,
     .k-scrollview-nav > .k-link.k-focus {
-        @include focus-indicator( $kendo-scrollview-pagebutton-shadow );
+        box-shadow: $kendo-scrollview-pagebutton-shadow;
     }
 
     // Scrollview nav link hover state

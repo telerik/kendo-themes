@@ -15,7 +15,7 @@
         &:focus,
         &.k-focus {
             background-color: $kendo-pager-focus-bg ;
-            @include focus-indicator( $kendo-pager-focus-shadow, true );
+            box-shadow: inset $kendo-pager-focus-shadow;
         }
     }
 

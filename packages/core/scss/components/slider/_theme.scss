@@ -40,7 +40,7 @@
         background-color: $kendo-slider-draghandle-hover-bg;
         border-color: $kendo-slider-draghandle-hover-border;
         @include linear-gradient($kendo-slider-draghandle-hover-gradient);
-                @include focus-indicator( $kendo-slider-draghandle-hover-shadow );
+                box-shadow: $kendo-slider-draghandle-hover-shadow;
             }
 
             // TODO: remove k-pressed and rely on k-active
@@ -55,13 +55,13 @@
 
             &:focus,
             &.k-focus {
-                @include focus-indicator( $kendo-slider-draghandle-focus-shadow );
+                box-shadow: $kendo-slider-draghandle-focus-shadow;
             }
         }
 
         &.k-focus {
             .k-draghandle {
-                @include focus-indicator( $kendo-slider-draghandle-focus-shadow );
+                box-shadow: $kendo-slider-draghandle-focus-shadow;
             }
         }
 

@@ -9,7 +9,7 @@
         // Template item
         .k-toolbar-item:focus,
         .k-toolbar-item.k-focus {
-            @include focus-indicator( $kendo-toolbar-item-shadow );
+            box-shadow: $kendo-toolbar-item-shadow;
         }
 
         // Button group
@@ -121,7 +121,7 @@
             // Button focus state
             &:focus,
             &.k-focus {
-                @include focus-indicator( $kendo-menu-popup-item-focus-shadow, true );
+                box-shadow: inset $kendo-menu-popup-item-focus-shadow;
             }
 
             // Active state

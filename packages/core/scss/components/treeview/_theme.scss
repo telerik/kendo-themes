@@ -25,7 +25,7 @@
     // Treeview leaf focus state
     .k-treeview-leaf:focus,
     .k-treeview-leaf.k-focus {
-        @include focus-indicator( $kendo-treeview-item-focus-shadow, true );
+        box-shadow: inset $kendo-treeview-item-focus-shadow;
     }
 
     // Treeview leaf selected state
@@ -57,7 +57,7 @@
         color: $kendo-treeview-loadmore-focus-text;
         background-color: $kendo-treeview-loadmore-focus-bg;
         border-color: $kendo-treeview-loadmore-focus-border;
-        @include focus-indicator( $kendo-treeview-loadmore-focus-shadow, true );
+        box-shadow: inset $kendo-treeview-loadmore-focus-shadow;
     }
 
 }

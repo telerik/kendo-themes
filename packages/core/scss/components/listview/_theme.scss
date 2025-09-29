@@ -17,7 +17,7 @@
             color: $kendo-listview-item-focus-text;
         background-color: $kendo-listview-item-focus-bg;
         border-color: $kendo-listview-item-focus-border;
-            @include focus-indicator( $kendo-listview-item-focus-shadow, true );
+            box-shadow: inset $kendo-listview-item-focus-shadow;
         }
 
         > .k-selected {

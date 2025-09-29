@@ -42,7 +42,7 @@
         &.k-focus {
             color: $kendo-list-item-focus-text;
             background-color: $kendo-list-item-focus-bg;
-            @include focus-indicator( $kendo-list-item-focus-shadow, true );
+            box-shadow: inset $kendo-list-item-focus-shadow;
         }
 
         // Selected

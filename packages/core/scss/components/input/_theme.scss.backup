@@ -9,7 +9,7 @@
         color: $kendo-input-text;
         background-color: $kendo-input-bg;
         border-color: $kendo-input-border;
-        box-shadow: $kendo-input-shadow;
+        @include box-shadow( $kendo-input-shadow );
     }
 
     // Solid input - state selectors only
@@ -20,7 +20,7 @@
             color: $kendo-input-hover-text;
             background-color: $kendo-input-hover-bg;
             border-color: $kendo-input-hover-border;
-            box-shadow: $kendo-input-hover-shadow;
+            @include box-shadow( $kendo-input-hover-shadow );
         }
 
         // Focus
@@ -29,13 +29,13 @@
             color: $kendo-input-focus-text;
             background-color: $kendo-input-focus-bg;
             border-color: $kendo-input-focus-border;
-            box-shadow: $kendo-input-focus-shadow ;
+            @include focus-indicator( $kendo-input-focus-shadow );
         }
         &:focus-within {
             color: $kendo-input-focus-text;
             background-color: $kendo-input-focus-bg;
             border-color: $kendo-input-focus-border;
-            box-shadow: $kendo-input-focus-shadow;
+            @include focus-indicator( $kendo-input-focus-shadow );
         }
 
         // Disabled
@@ -46,7 +46,7 @@
             background-color: $kendo-input-disabled-bg;
             border-color: $kendo-input-disabled-border;
             @include linear-gradient($kendo-input-disabled-gradient);
-            box-shadow: $kendo-input-disabled-shadow;
+            @include box-shadow( $kendo-input-disabled-shadow );
         }
 
         // Invalid
@@ -61,10 +61,10 @@
 
             &:focus,
             &.k-focus {
-                box-shadow: $kendo-input-invalid-shadow;
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
             &:focus-within {
-                box-shadow: $kendo-input-invalid-shadow;
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
         }
 
@@ -101,7 +101,7 @@
             background-color: $kendo-picker-hover-bg;
             border-color: $kendo-picker-hover-border;
             @include linear-gradient($kendo-picker-hover-gradient);
-            box-shadow: $kendo-picker-hover-shadow;
+            @include box-shadow( $kendo-picker-hover-shadow );
         }
 
         // Focus
@@ -111,14 +111,14 @@
             background-color: $kendo-picker-focus-bg;
             border-color: $kendo-picker-focus-border;
             @include linear-gradient($kendo-picker-focus-gradient);
-            box-shadow: $kendo-picker-focus-shadow;
+            @include focus-indicator( $kendo-picker-focus-shadow );
         }
         &:focus-within {
             color: $kendo-picker-focus-text;
             background-color: $kendo-picker-focus-bg;
             border-color: $kendo-picker-focus-border;
             @include linear-gradient($kendo-picker-focus-gradient);
-            box-shadow: $kendo-picker-focus-shadow;
+            @include focus-indicator( $kendo-picker-focus-shadow );
         }
 
         // Disabled
@@ -129,7 +129,7 @@
             background-color: $kendo-picker-disabled-bg;
             border-color: $kendo-picker-disabled-border;
             @include linear-gradient($kendo-picker-disabled-gradient);
-            box-shadow: $kendo-picker-disabled-shadow;
+            @include box-shadow( $kendo-picker-disabled-shadow );
         }
 
         // Invalid
@@ -144,10 +144,10 @@
 
             &:focus,
             &.k-focus {
-                box-shadow: $kendo-input-invalid-shadow;
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
             &:focus-within {
-                box-shadow: $kendo-input-invalid-shadow;
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
         }
     }
@@ -188,13 +188,13 @@
             color: $kendo-input-outline-focus-text;
         background-color: $kendo-input-outline-focus-bg;
         border-color: $kendo-input-outline-focus-border;
-            box-shadow:  $kendo-input-outline-focus-shadow ;
+            @include focus-indicator( $kendo-input-outline-focus-shadow );
         }
         &:focus-within {
             color: $kendo-input-outline-focus-text;
         background-color: $kendo-input-outline-focus-bg;
         border-color: $kendo-input-outline-focus-border;
-            box-shadow:  $kendo-input-outline-focus-shadow ;
+            @include focus-indicator( $kendo-input-outline-focus-shadow );
         }
 
         // Disabled
@@ -205,7 +205,7 @@
         background-color: $kendo-input-disabled-bg;
         border-color: $kendo-input-disabled-border;
         @include linear-gradient($kendo-input-disabled-gradient);
-        box-shadow: $kendo-input-disabled-shadow;
+            @include box-shadow( $kendo-input-disabled-shadow );
         }
 
         // Invalid
@@ -220,10 +220,10 @@
 
             &:focus,
             &.k-focus {
-                box-shadow: $kendo-input-invalid-shadow;
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
             &:focus-within {
-                box-shadow: $kendo-input-invalid-shadow;
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
         }
 
@@ -261,13 +261,13 @@
             color: $kendo-picker-outline-focus-text;
         background-color: $kendo-picker-outline-focus-bg;
         border-color: $kendo-picker-outline-focus-border;
-            box-shadow:  $kendo-picker-outline-focus-shadow ;
+            @include focus-indicator( $kendo-picker-outline-focus-shadow );
         }
         &:focus-within {
             color: $kendo-picker-outline-focus-text;
         background-color: $kendo-picker-outline-focus-bg;
         border-color: $kendo-picker-outline-focus-border;
-            box-shadow:  $kendo-picker-outline-focus-shadow ;
+            @include focus-indicator( $kendo-picker-outline-focus-shadow );
         }
 
         &:focus:hover,
@@ -287,7 +287,7 @@
         background-color: $kendo-picker-disabled-bg;
         border-color: $kendo-picker-disabled-border;
         @include linear-gradient($kendo-picker-disabled-gradient);
-        box-shadow: $kendo-picker-disabled-shadow;
+            @include box-shadow( $kendo-picker-disabled-shadow );
         }
 
         // Invalid
@@ -302,10 +302,10 @@
 
             &:focus,
             &.k-focus {
-                box-shadow: $kendo-input-invalid-shadow;
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
             &:focus-within {
-                box-shadow: $kendo-input-invalid-shadow;
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
         }
     }
@@ -330,13 +330,13 @@
             color: $kendo-input-flat-focus-text;
         background-color: $kendo-input-flat-focus-bg;
         border-color: $kendo-input-flat-focus-border;
-            box-shadow:  $kendo-input-flat-focus-shadow ;
+            @include focus-indicator( $kendo-input-flat-focus-shadow );
         }
         &:focus-within {
             color: $kendo-input-flat-focus-text;
         background-color: $kendo-input-flat-focus-bg;
         border-color: $kendo-input-flat-focus-border;
-            box-shadow:  $kendo-input-flat-focus-shadow ;
+            @include focus-indicator( $kendo-input-flat-focus-shadow );
         }
 
         // Disabled
@@ -347,7 +347,7 @@
         background-color: $kendo-input-disabled-bg;
         border-color: $kendo-input-disabled-border;
         @include linear-gradient($kendo-input-disabled-gradient);
-        box-shadow: $kendo-input-disabled-shadow;
+            @include box-shadow( $kendo-input-disabled-shadow );
         }
 
         // Invalid
@@ -362,10 +362,10 @@
 
             &:focus,
             &.k-focus {
-                box-shadow: $kendo-input-invalid-shadow;
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
             &:focus-within {
-                box-shadow: $kendo-input-invalid-shadow;
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
         }
 
@@ -403,13 +403,13 @@
             color: $kendo-picker-flat-focus-text;
         background-color: $kendo-picker-flat-focus-bg;
         border-color: $kendo-picker-flat-focus-border;
-            box-shadow:  $kendo-picker-flat-focus-shadow ;
+            @include focus-indicator( $kendo-picker-flat-focus-shadow );
         }
         &:focus-within {
             color: $kendo-picker-flat-focus-text;
         background-color: $kendo-picker-flat-focus-bg;
         border-color: $kendo-picker-flat-focus-border;
-            box-shadow:  $kendo-picker-flat-focus-shadow ;
+            @include focus-indicator( $kendo-picker-flat-focus-shadow );
         }
 
         &:focus:hover,
@@ -429,7 +429,7 @@
         background-color: $kendo-picker-disabled-bg;
         border-color: $kendo-picker-disabled-border;
         @include linear-gradient($kendo-picker-disabled-gradient);
-        box-shadow: $kendo-picker-disabled-shadow;
+            @include box-shadow( $kendo-picker-disabled-shadow );
         }
 
         // Invalid
@@ -444,10 +444,10 @@
 
             &:focus,
             &.k-focus {
-                box-shadow: $kendo-input-invalid-shadow;
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
             &:focus-within {
-                box-shadow: $kendo-input-invalid-shadow;
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
         }
     }

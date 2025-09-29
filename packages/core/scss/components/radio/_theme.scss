@@ -22,7 +22,7 @@
     .k-radio:focus,
     .k-radio.k-focus {
         border-color: $kendo-radio-focus-border ;
-        @include focus-indicator( $kendo-radio-focus-shadow );
+        box-shadow: $kendo-radio-focus-shadow;
     }
 
     // Invalid state
@@ -47,7 +47,7 @@
     .k-radio:checked:focus,
     .k-radio.k-checked.k-focus {
         border-color: $kendo-radio-focus-checked-border ;
-        @include focus-indicator( $kendo-radio-focus-checked-shadow );
+        box-shadow: $kendo-radio-focus-checked-shadow;
     }
 
     // Disabled

@@ -70,7 +70,7 @@
 
         &:focus,
         &.k-focus {
-            @include focus-indicator( $kendo-taskboard-card-focus-shadow );
+            box-shadow: $kendo-taskboard-card-focus-shadow;
             border-color: $kendo-taskboard-card-focus-border ;
         }
 

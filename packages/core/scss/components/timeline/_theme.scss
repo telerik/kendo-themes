@@ -67,7 +67,7 @@
     }
 
     .k-timeline-track-item.k-focus .k-timeline-circle {
-        @include focus-indicator( $kendo-timeline-track-item-focus-shadow );
+        box-shadow: $kendo-timeline-track-item-focus-shadow;
     }
 
 }

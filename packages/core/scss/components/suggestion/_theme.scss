@@ -32,7 +32,7 @@
     // Suggestion focus state
     .k-suggestion:focus,
     .k-suggestion.k-focus {
-        @include focus-indicator( 0 0 $kendo-suggestion-focus-shadow-blur $kendo-suggestion-focus-shadow-spread $kendo-suggestion-focus-shadow-color );
+        box-shadow: 0 0 $kendo-suggestion-focus-shadow-blur $kendo-suggestion-focus-shadow-spread $kendo-suggestion-focus-shadow-color;
     }
 
     @each $name, $props in $kendo-suggestion-theme-colors {

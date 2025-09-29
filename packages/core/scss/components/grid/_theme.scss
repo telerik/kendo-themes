@@ -127,7 +127,7 @@
         .k-grid-pager {
             &:focus,
             &.k-focus {
-                @include focus-indicator( $kendo-grid-focus-shadow, true );
+                box-shadow: inset $kendo-grid-focus-shadow;
             }
         }
 
@@ -292,7 +292,7 @@
             }
             &:focus,
             &.k-focus {
-                @include focus-indicator( inset 0 0 0 2px rgba( $kendo-color-black, .1 ), true );
+                box-shadow: inset 0 0 0 2px rgba( $kendo-color-black, .1 );
             }
             &.k-active {
                 color: k-color(on-primary);
@@ -351,7 +351,7 @@
     .k-column-list-item.k-focus,
     .k-columnmenu-item:focus,
     .k-columnmenu-item.k-focus {
-        @include focus-indicator( $kendo-list-item-focus-shadow, true );
+        box-shadow: inset $kendo-list-item-focus-shadow;
     }
 
     .k-columnmenu-item {
@@ -386,7 +386,7 @@
 
                 &:focus,
                 &.k-focus {
-                    @include focus-indicator( $kendo-list-item-focus-shadow, true );
+                    box-shadow: inset $kendo-list-item-focus-shadow;
                 }
             }
         }

@@ -28,7 +28,7 @@
         &.k-focus {
             background-color: $kendo-bubble-focus-bg;
             border-color: $kendo-bubble-focus-border;
-            @include focus-indicator( $kendo-bubble-focus-shadow, true, true );
+            box-shadow: inset $kendo-bubble-focus-shadow;
             outline: none;
         }
 

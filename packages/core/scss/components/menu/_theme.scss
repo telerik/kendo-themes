@@ -42,7 +42,7 @@
 
         &:focus,
         &.k-focus {
-            @include focus-indicator( $kendo-menu-item-focus-shadow, true );
+            box-shadow: inset $kendo-menu-item-focus-shadow;
         }
 
         &.k-selected {
@@ -100,7 +100,7 @@
     .k-menu.k-context-menu .k-item:focus,
     .k-menu.k-context-menu .k-item.k-focus {
         > .k-link {
-            @include focus-indicator( $kendo-menu-popup-item-focus-shadow, true );
+            box-shadow: inset $kendo-menu-popup-item-focus-shadow;
         }
     }
 

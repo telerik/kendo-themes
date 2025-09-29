@@ -16,7 +16,7 @@
 
     .k-window:focus,
     .k-window.k-focus {
-        @include focus-indicator( $kendo-window-focus-shadow );
+        box-shadow: $kendo-window-focus-shadow;
     }
 
     // Titlebar

@@ -13,7 +13,7 @@
     // Expander - state selectors only
     .k-expander {
         &.k-focus {
-            @include focus-indicator( $kendo-expander-focus-shadow, true );
+            box-shadow: inset $kendo-expander-focus-shadow;
         }
     }
 
@@ -33,7 +33,7 @@
         }
 
         &.k-focus {
-            @include focus-indicator( $kendo-expander-header-focus-shadow, true );
+            box-shadow: inset $kendo-expander-header-focus-shadow;
             background-color: $kendo-expander-header-focus-bg;
         }
     }

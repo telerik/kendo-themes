@@ -22,7 +22,7 @@
     .k-checkbox:focus,
     .k-checkbox.k-focus {
         border-color: $kendo-checkbox-focus-border ;
-        @include focus-indicator( $kendo-checkbox-focus-shadow );
+        box-shadow: $kendo-checkbox-focus-shadow;
     }
 
     // Indeterminate
@@ -43,7 +43,7 @@
     .k-checkbox:checked:focus,
     .k-checkbox.k-checked.k-focus {
         border-color: $kendo-checkbox-focus-checked-border ;
-        @include focus-indicator( $kendo-checkbox-focus-checked-shadow );
+        box-shadow: $kendo-checkbox-focus-checked-shadow;
     }
 
     // Invalid

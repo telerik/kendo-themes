@@ -35,7 +35,7 @@
                     box-shadow: inset 0 0 0 1px $kendo-calendar-today-color;
                 }
                 &.k-focus .k-calendar-cell-inner {
-                    @include focus-indicator( $indicator: ( inset 0 0 0 1px $kendo-calendar-today-color, $kendo-calendar-cell-focus-shadow ), $inset: true );
+                    box-shadow: inset 0 0 0 1px $kendo-calendar-today-color, $kendo-calendar-cell-focus-shadow;
                 }
             } @else if $kendo-calendar-today-style == color {
                 color: $kendo-calendar-today-color;
@@ -79,11 +79,11 @@
         }
         .k-calendar-td:focus .k-calendar-cell-inner,
         .k-calendar-td.k-focus .k-calendar-cell-inner {
-            @include focus-indicator( $kendo-calendar-cell-focus-shadow, true );
+            box-shadow: inset $kendo-calendar-cell-focus-shadow;
         }
         .k-calendar-td.k-selected:focus .k-calendar-cell-inner,
         .k-calendar-td.k-selected.k-focus .k-calendar-cell-inner {
-            @include focus-indicator( $kendo-calendar-cell-selected-focus-shadow, true );
+            box-shadow: inset $kendo-calendar-cell-selected-focus-shadow;
         }
 
         // Calendar navigation

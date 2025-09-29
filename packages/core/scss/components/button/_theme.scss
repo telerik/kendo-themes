@@ -24,7 +24,7 @@
         // Focus state
         &:focus,
         &.k-focus {
-            @include focus-indicator( $kendo-button-focus-shadow, true, true );
+            box-shadow: inset $kendo-button-focus-shadow;
         }
 
         // Active state
@@ -74,7 +74,7 @@
                 &:focus,
                 &.k-focus {
                     @if ( $kendo-solid-button-shadow ) {
-                        @include focus-indicator( 0 0 $kendo-solid-button-shadow-blur $kendo-solid-button-shadow-spread color-mix(in srgb, k-color($name) ( $kendo-solid-button-shadow-opacity * 100% ), transparent), true, true );
+                        box-shadow: inset 0 0 $kendo-solid-button-shadow-blur $kendo-solid-button-shadow-spread color-mix(in srgb, k-color($name) ( $kendo-solid-button-shadow-opacity * 100% ), transparent);
                     }
                 }
 
@@ -122,9 +122,9 @@
             &.k-focus {
                 @if $kendo-outline-button-shadow {
                     @if $name == "base" {
-                        @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread color-mix(in srgb, k-color(on-app-surface ) ( $kendo-outline-button-shadow-opacity * 100% ), transparent), true, true );
+                        box-shadow: inset 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread color-mix(in srgb, k-color(on-app-surface ) ( $kendo-outline-button-shadow-opacity * 100% ), transparent);
                     } @else {
-                        @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread color-mix(in srgb, k-color($name ) ( $kendo-outline-button-shadow-opacity * 100% ), transparent), true, true );
+                        box-shadow: inset 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread color-mix(in srgb, k-color($name ) ( $kendo-outline-button-shadow-opacity * 100% ), transparent);
                     }
                 }
             }
@@ -199,9 +199,9 @@
             &.k-focus {
                 @if ( $kendo-link-button-shadow ) {
                     @if $name == "base" {
-                        @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread color-mix(in srgb, k-color(on-app-surface ) ( $kendo-link-button-shadow-opacity * 100% ), transparent), true, true );
+                        box-shadow: inset 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread color-mix(in srgb, k-color(on-app-surface ) ( $kendo-link-button-shadow-opacity * 100% ), transparent);
                     } @else {
-                        @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread color-mix(in srgb, k-color($name ) ( $kendo-link-button-shadow-opacity * 100% ), transparent), true, true );
+                        box-shadow: inset 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread color-mix(in srgb, k-color($name ) ( $kendo-link-button-shadow-opacity * 100% ), transparent);
                     }
                 }
             }

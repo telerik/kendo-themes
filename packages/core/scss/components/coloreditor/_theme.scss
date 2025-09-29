@@ -13,7 +13,7 @@
     .k-coloreditor:focus,
     .k-coloreditor.k-focus {
         border-color: $kendo-color-editor-focus-border ;
-        @include focus-indicator( $kendo-color-editor-focus-shadow );
+        box-shadow: $kendo-color-editor-focus-shadow;
     }
 
     .k-coloreditor .k-colorgradient:focus,

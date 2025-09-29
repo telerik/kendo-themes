@@ -34,7 +34,7 @@
         &:focus,
         &.k-focus {
             background-color: $kendo-drawer-focus-bg;
-            @include focus-indicator( $kendo-drawer-focus-shadow, true );
+            box-shadow: inset $kendo-drawer-focus-shadow;
         }
 
         &.k-selected {

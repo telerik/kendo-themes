@@ -53,7 +53,7 @@
         background-color: $kendo-actionsheet-item-focus-bg;
         border-color: $kendo-actionsheet-item-focus-border;
         @include linear-gradient($kendo-actionsheet-item-focus-gradient);
-        @include focus-indicator( $kendo-actionsheet-item-focus-shadow );
+        box-shadow: $kendo-actionsheet-item-focus-shadow;
     }
 
     // Actionsheet item disabled state

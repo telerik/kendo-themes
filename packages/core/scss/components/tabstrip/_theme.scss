@@ -46,11 +46,11 @@
 
         &:focus,
         &.k-focus {
-            @include focus-indicator( $kendo-tabstrip-item-focus-shadow, true );
+            box-shadow: inset $kendo-tabstrip-item-focus-shadow;
         }
 
         &.k-tabstrip-dragging {
-            @include focus-indicator( $kendo-tabstrip-item-dragging-shadow );
+            box-shadow: $kendo-tabstrip-item-dragging-shadow;
         }
 
         // Disabled

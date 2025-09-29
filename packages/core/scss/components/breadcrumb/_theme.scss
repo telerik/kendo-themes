@@ -41,7 +41,7 @@
             color: $kendo-breadcrumb-link-focus-text;
         background-color: $kendo-breadcrumb-link-focus-bg;
         border-color: $kendo-breadcrumb-link-focus-border;
-            @include focus-indicator( $kendo-breadcrumb-link-focus-shadow );
+            box-shadow: $kendo-breadcrumb-link-focus-shadow;
         }
     }
 
@@ -68,7 +68,7 @@
             color: $kendo-breadcrumb-root-link-focus-text;
         background-color: $kendo-breadcrumb-root-link-focus-bg;
         border-color: $kendo-breadcrumb-root-link-focus-border;
-            @include focus-indicator( $kendo-breadcrumb-root-link-focus-shadow );
+            box-shadow: $kendo-breadcrumb-root-link-focus-shadow;
         }
     }
 

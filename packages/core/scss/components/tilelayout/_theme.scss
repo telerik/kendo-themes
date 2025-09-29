@@ -9,7 +9,7 @@
 
     .k-tilelayout-item:focus,
     .k-tilelayout-item.k-focus {
-        @include focus-indicator($kendo-tile-layout-card-focus-shadow);
+        box-shadow: $kendo-tile-layout-card-focus-shadow;
     }
 
     .k-layout-item-hint {

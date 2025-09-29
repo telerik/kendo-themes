@@ -48,7 +48,7 @@
         background-color: $kendo-panelbar-header-focus-bg;
         border-color: $kendo-panelbar-header-focus-border;
         @include linear-gradient($kendo-panelbar-header-focus-gradient);
-                @include focus-indicator( $kendo-panelbar-header-focus-shadow, true );
+                box-shadow: inset $kendo-panelbar-header-focus-shadow;
             }
 
             // Focus & Hover
@@ -120,7 +120,7 @@
         background-color: $kendo-panelbar-item-focus-bg;
         border-color: $kendo-panelbar-item-focus-border;
         @include linear-gradient($kendo-panelbar-item-focus-gradient);
-                @include focus-indicator( $kendo-panelbar-item-focus-shadow, true );
+                box-shadow: inset $kendo-panelbar-item-focus-shadow;
             }
 
             // Focus & Hover
