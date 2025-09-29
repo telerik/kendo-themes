@@ -58,6 +58,7 @@ $kendo-appbar-box-shadow: k-elevation(4) !default;
 $kendo-appbar-bottom-box-shadow: $kendo-appbar-box-shadow !default;
 
 $kendo-appbar-theme-colors: (
+    "base": k-color(base),
     "primary": k-color(primary),
     "secondary": k-color(secondary),
     "tertiary": k-color(tertiary),
