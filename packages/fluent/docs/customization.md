@@ -7366,6 +7366,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-chip-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Chip.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chip-spacing</td>
     <td>String</td>
     <td><code>var( --kendo-chip-spacing, k-spacing(1) )</code></td>
