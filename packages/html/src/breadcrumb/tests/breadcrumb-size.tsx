@@ -3,13 +3,14 @@ import { Breadcrumb, BreadcrumbCollapsingWrap, BreadcrumbContainer, BreadcrumbIt
 
 export default () =>(
     <>
-        <div id="test-area" className="k-d-grid k-grid-cols-3">
+        <div id="test-area" className="k-d-grid k-grid-cols-4">
 
+            <div>undefined</div>
             <div>small</div>
             <div>medium</div>
             <div>large</div>
 
-            {Breadcrumb.options.size.map( (size) => (
+            {[undefined, ...Breadcrumb.options.size].map( (size) => (
                 <BreadcrumbCollapsingWrap size={size}>
                     <BreadcrumbRootItemContainer>
                         <BreadcrumbItem root>
