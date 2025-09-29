@@ -68,6 +68,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-badge-border-radius</td>
+    <td>Null</td>
+    <td><code>k-border-radius("md")</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Badge.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-badge-font-weight</td>
     <td>String</td>
     <td><code>var( --kendo-badge-font-weight, var( --kendo-font-weight-semibold, normal ) )</code></td>
@@ -263,6 +273,7 @@ The following table lists the available variables for customization.
     <td>$kendo-badge-theme-colors</td>
     <td>Map</td>
     <td><code>(
+    "base": k-color(base),
     "primary": k-color(primary),
     "secondary": k-color(secondary),
     "tertiary": k-color(tertiary),
@@ -274,7 +285,7 @@ The following table lists the available variables for customization.
     "light": k-color(light),
     "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
 )</code></td>
-    <td><ul><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>secondary: var(--kendo-color-secondary, #ebebeb)</li><li>tertiary: var(--kendo-color-tertiary, #c239b3)</li><li>info: var(--kendo-color-info, #3a96dd)</li><li>success: var(--kendo-color-success, #107c10)</li><li>warning: var(--kendo-color-warning, #f7630c)</li><li>error: var(--kendo-color-error, #c50f1f)</li><li>dark: var(--kendo-color-dark, #242424)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #242424)</li></ul></td>
+    <td><ul><li>base: var(--kendo-color-base, #ffffff)</li><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>secondary: var(--kendo-color-secondary, #ebebeb)</li><li>tertiary: var(--kendo-color-tertiary, #c239b3)</li><li>info: var(--kendo-color-info, #3a96dd)</li><li>success: var(--kendo-color-success, #107c10)</li><li>warning: var(--kendo-color-warning, #f7630c)</li><li>error: var(--kendo-color-error, #c50f1f)</li><li>dark: var(--kendo-color-dark, #242424)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #242424)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Badge variations.</div></div>
