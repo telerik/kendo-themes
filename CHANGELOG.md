@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.1...v12.1.0-dev.2) (2025-09-29)
+
+
+### Features
+
+* **pdfviewer:** add annotations and forms styling ([a8d322d](https://github.com/telerik/kendo-themes/commit/a8d322d9ba67dd4e4b804bb33ebfbd8c1b068222))
+
+
+### Reverts
+
+* Revert "WIP(default): add specificity tests" ([3bc2eeb](https://github.com/telerik/kendo-themes/commit/3bc2eeba3095942a34260a0b989070aacd0a1cc4))
+
+
+
+
+
 # [12.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.0...v12.1.0-dev.1) (2025-09-22)
 
 
