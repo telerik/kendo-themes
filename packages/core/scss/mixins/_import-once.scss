@@ -1,6 +1,6 @@
-@use "sass:list";
+@use "sass:map";
 
-/// A list of exported modules.
+/// A map of exported modules.
 /// @access private
 $_kendo-imported-modules: () !default;
 
@@ -9,8 +9,8 @@ $_kendo-imported-modules: () !default;
 /// @param {String} $name - The name of the exported module.
 /// @require $_kendo-imported-modules
 @mixin import-once( $name ) {
-    @if (list.index( $_kendo-imported-modules, $name ) == null) { // stylelint-disable-line
-        $_kendo-imported-modules: list.append( $_kendo-imported-modules, $name ) !global;
+    @if (map.has-key( $_kendo-imported-modules, $name ) == false) { // stylelint-disable-line
+        $_kendo-imported-modules: map.set( $_kendo-imported-modules, $name, true ) !global;
         @content;
     }
 }
