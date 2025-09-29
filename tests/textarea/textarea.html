@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: 660px;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <span>TextArea</span>
+        <span>TextArea RTL</span>
+        <div>
+            <span class="k-textarea !k-flex-col k-input">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-textarea !k-flex-col k-input">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+            </span>
+        </div>
+        <div>
+            <span class="k-textarea !k-flex-col k-input">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="placeholder..."></textarea>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-textarea !k-flex-col k-input">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="placeholder..."></textarea>
+            </span>
+        </div>
+        <div>
+            <span class="k-textarea !k-flex-col k-input">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">normal</textarea>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-textarea !k-flex-col k-input">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">normal</textarea>
+            </span>
+        </div>
+        <div>
+            <span class="k-textarea !k-flex-col k-input k-hover">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">hover</textarea>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-textarea !k-flex-col k-input k-hover">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">hover</textarea>
+            </span>
+        </div>
+        <div>
+            <span class="k-textarea !k-flex-col k-input k-focus">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">focus</textarea>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-textarea !k-flex-col k-input k-focus">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">focus</textarea>
+            </span>
+        </div>
+        <div>
+            <span class="k-textarea !k-flex-col k-input k-valid">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">valid</textarea>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-textarea !k-flex-col k-input k-valid">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">valid</textarea>
+            </span>
+        </div>
+        <div>
+            <span class="k-textarea !k-flex-col k-input k-invalid">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">invalid</textarea>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-textarea !k-flex-col k-input k-invalid">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">invalid</textarea>
+            </span>
+        </div>
+        <div>
+            <span required="" class="k-textarea !k-flex-col k-input">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">required</textarea>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span required="" class="k-textarea !k-flex-col k-input">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">required</textarea>
+            </span>
+        </div>
+        <div>
+            <span class="k-textarea !k-flex-col k-input k-disabled">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">disabled</textarea>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-textarea !k-flex-col k-input k-disabled">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">disabled</textarea>
+            </span>
+        </div>
+        <div>
+            <span class="k-textarea !k-flex-col k-input k-invalid k-focus">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">invalid focus</textarea>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-textarea !k-flex-col k-input k-invalid k-focus">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">invalid focus</textarea>
+            </span>
+        </div>
+        <div>
+            <span class="k-textarea !k-flex-col k-input">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="" rows="3">Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."</textarea>
+            </span>
+        </div>
+        <div>
+            <span class="k-textarea !k-flex-col k-input">
+                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="" rows="3">Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."</textarea>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

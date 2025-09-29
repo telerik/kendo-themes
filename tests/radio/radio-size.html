@@ -14,6 +14,10 @@
         #test-area {
             grid-template-columns: repeat(3, 1fr);
         }
+        .k-ripple-container .k-radio:focus::after,
+        .k-ripple-container .k-radio.k-focus::after {
+            transform: translate(-50%, -50%) scale(1);
+        }
 
     </style>
     <div id="test-area" class="k-d-grid">
@@ -163,6 +167,30 @@
                 <input id="rad-checked-large" class="k-radio k-radio-lg k-checked" type="radio" checked="">
             </span>
             <label class="k-radio-label" for="rad-checked-large">checked</label>
+        </section>
+        <section>
+            <div class="k-ripple-container">
+                <span class="k-radio-wrap">
+                    <input class="k-ripple-focus k-radio k-radio-sm k-focus" id="rad-ripple" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-ripple">ripple</label>
+            </div>
+        </section>
+        <section>
+            <div class="k-ripple-container">
+                <span class="k-radio-wrap">
+                    <input class="k-ripple-focus k-radio k-radio-md k-focus" id="rad-ripple" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-ripple">ripple</label>
+            </div>
+        </section>
+        <section>
+            <div class="k-ripple-container">
+                <span class="k-radio-wrap">
+                    <input class="k-ripple-focus k-radio k-radio-lg k-focus" id="rad-ripple" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-ripple">ripple</label>
+            </div>
         </section>
     </div>
 </body>
