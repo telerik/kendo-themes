@@ -9,6 +9,9 @@
 /// The width of the border around the Chip.
 /// @group chip
 $kendo-chip-border-width: 1px !default;
+/// The border radius of the Chip.
+/// @group chip
+$kendo-chip-border-radius: k-border-radius(md) !default;
 /// The spacing between the text and the icons of the Chip.
 /// @group chip
 $kendo-chip-spacing: k-spacing(1) !default;

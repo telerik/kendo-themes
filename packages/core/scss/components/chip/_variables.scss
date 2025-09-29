@@ -1,6 +1,7 @@
 // Chip
 
 $kendo-chip-border-width: null !default;
+$kendo-chip-border-radius: null !default;
 $kendo-chip-spacing: null !default;
 
 $kendo-chip-sm-padding-x: null !default;
@@ -57,6 +58,8 @@ $kendo-chip-outline-selected-text: null !default;
 $kendo-chip-disabled-bg: null !default;
 $kendo-chip-disabled-text: null !default;
 $kendo-chip-disabled-border: null !default;
+
+$kendo-chip-roundness: ( "none", "sm", "md", "lg", "full" ) !default;
 
 // Chip List
 
