@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../../color-system/_functions.import.scss" as *;
+@use "../../border-radii/index.import.scss" as *;
 @use "./_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
@@ -8,6 +9,7 @@
     .k-badge {
         padding: 0;
         border-width: $kendo-badge-border-width;
+        border-radius: $kendo-badge-border-radius;
         border-style: solid;
         border-color: transparent;
         box-sizing: border-box;
@@ -22,11 +24,24 @@
         vertical-align: middle;
         overflow: hidden;
         text-overflow: ellipsis;
+        @extend %k-badge-md;
 
         *,
         *::before,
         *::after {
             box-sizing: border-box;
+        }
+
+        @each $name, $size in $kendo-badge-sizes {
+            &.k-badge-#{$name} {
+                @extend %k-badge-#{$name};
+            }
+        }
+
+        @each $roundness in $kendo-badge-roundness {
+            &.k-rounded-#{$roundness} {
+                border-radius: k-border-radius($roundness);
+            }
         }
     }
     .k-badge > * {
@@ -53,29 +68,6 @@
     }
     .k-badge-icon.k-svg-icon svg {
         fill: currentColor;
-    }
-
-
-    // Badge sizes
-    @each $size, $size-props in $kendo-badge-sizes {
-        $_padding-x: map.get( $size-props, padding-x );
-        $_padding-y: map.get( $size-props, padding-y );
-        $_font-size: map.get( $size-props, font-size );
-        $_line-height: map.get( $size-props, line-height );
-        $_min-width: map.get( $size-props, min-width );
-
-        .k-badge-#{$size} {
-            padding-block: $_padding-y;
-            padding-inline: $_padding-x;
-            font-size: $_font-size;
-            line-height: $_line-height;
-            min-width: $_min-width;
-
-            &:empty {
-                padding: $_padding-y;
-                min-width: auto;
-             }
-        }
     }
 
     kendo-badge-container {
@@ -146,6 +138,28 @@
     // Border cutout
     .k-badge-border-cutout {
         box-shadow: 0 0 0 2px k-color(surface-alt);
+    }
+
+    // Badge sizes
+    @each $size, $size-props in $kendo-badge-sizes {
+        $_padding-x: map.get( $size-props, padding-x );
+        $_padding-y: map.get( $size-props, padding-y );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
+        $_min-width: map.get( $size-props, min-width );
+
+        %k-badge-#{$size} {
+            padding-block: $_padding-y;
+            padding-inline: $_padding-x;
+            font-size: $_font-size;
+            line-height: $_line-height;
+            min-width: $_min-width;
+
+            &:empty {
+                padding: $_padding-y;
+                min-width: auto;
+             }
+        }
     }
 
 }

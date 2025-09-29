@@ -1,6 +1,7 @@
 // Badge
 
 $kendo-badge-border-width: null !default;
+$kendo-badge-border-radius: null !default;
 
 $kendo-badge-sm-padding-x: null !default;
 $kendo-badge-md-padding-x: null !default;
@@ -28,3 +29,5 @@ $kendo-badge-lg-min-width: null !default;
 $kendo-badge-sizes: null !default;
 
 $kendo-badge-theme-colors: null !default;
+
+$kendo-badge-roundness: ( "none", "sm", "md", "lg", "full" ) !default;
