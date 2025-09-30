@@ -2,10 +2,15 @@
 @use "./_variables.scss" as *;
 
 @mixin kendo-loader--theme-base() {
+    .k-loader,
+    .k-loader + .k-loader-container-label {
+        color: k-color(base-on-surface);
+    }
 
     @each $name, $color in $kendo-loader-theme-colors {
-        .k-loader-#{$name} {
-            color: $color;
+        .k-loader-#{$name},
+        .k-loader-#{$name} + .k-loader-container-label {
+            color: k-color(#{$name}-on-surface);
         }
     }
 
