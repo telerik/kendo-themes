@@ -46,7 +46,7 @@ export default () => (
                                     }
                                 />
                                 <PromptExpander title="Prompt Suggestions">
-                                    <SuggestionGroup scrollable={false}>
+                                    <SuggestionGroup layout="wrap">
                                         <Suggestion text="Suggestion 1" />
                                         <Suggestion text="Suggestion 2" />
                                         <Suggestion text="Suggestion 3" />
@@ -87,7 +87,7 @@ export default () => (
                                     }
                                 />
                                 <PromptExpander expanded title="Prompt Suggestions">
-                                    <SuggestionGroup scrollable={false}>
+                                    <SuggestionGroup layout="wrap">
                                         <Suggestion text="Suggestion 1" />
                                         <Suggestion text="Suggestion 2" />
                                         <Suggestion text="Suggestion 3" />
@@ -129,7 +129,7 @@ export default () => (
                                     }
                                 />
                                 <PromptExpander title="Prompt Suggestions">
-                                    <SuggestionGroup scrollable={false}>
+                                    <SuggestionGroup layout="wrap">
                                         <Suggestion text="Suggestion 1" />
                                         <Suggestion text="Suggestion 2" />
                                         <Suggestion text="Suggestion 3" />

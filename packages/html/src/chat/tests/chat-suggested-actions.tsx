@@ -10,10 +10,11 @@ const styles = `
 export default () =>(
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-2">
+        <div id="test-area" className="k-d-grid k-grid-cols-3">
 
 
             <span>Suggested actions - horizontal scroll (Default)</span>
+            <span>Suggested actions - horizontal scroll with buttons</span>
             <span>Suggested actions - wrap</span>
             <section>
                 <ChatNormal suggestedActions={
@@ -32,7 +33,22 @@ export default () =>(
             </section>
             <section>
                  <ChatNormal suggestedActions={
-                    <SuggestionGroup scrollable={false}>
+                    <SuggestionGroup layout="scrollButtons">
+                        <Suggestion text="Suggestion" />
+                        <Suggestion text="Hover" hover />
+                        <Suggestion text="Focus" focus />
+                        <Suggestion text="Active" active />
+                        <Suggestion text="Suggestion with very very very very very very very very very very very very very very very long text" />
+                    </SuggestionGroup>
+                    }>
+                    <ChatMessageGroup avatar={null}>
+                        <ChatMessage />
+                    </ChatMessageGroup>
+                </ChatNormal>
+            </section>
+            <section>
+                <ChatNormal suggestedActions={
+                    <SuggestionGroup layout="wrap">
                         <Suggestion text="Suggestion" />
                         <Suggestion text="Hover" hover />
                         <Suggestion text="Focus" focus />

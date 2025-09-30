@@ -12,11 +12,11 @@ const options = {};
 export type KendoSuggestionGroupOptions = {};
 
 export type KendoSuggestionGroupProps = KendoSuggestionGroupOptions & {
-    scrollable?: boolean;
+    layout?: 'scrollable' | 'scrollButtons' | 'wrap';
 };
 
 const defaultOptions = {
-    scrollable: true
+    layout: 'scrollable'
 };
 
 export const SuggestionGroup: KendoComponent<KendoSuggestionGroupProps & React.HTMLAttributes<HTMLDivElement>> = (
@@ -24,7 +24,7 @@ export const SuggestionGroup: KendoComponent<KendoSuggestionGroupProps & React.H
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        scrollable = defaultOptions.scrollable,
+        layout = defaultOptions.layout,
         ...other
     } = props;
 
@@ -33,13 +33,14 @@ export const SuggestionGroup: KendoComponent<KendoSuggestionGroupProps & React.H
             {...other}
             className={classNames(
                 SUGGESTIONGROUP_CLASSNAME,
+                {[`k-suggestion-group-scrollable`]: layout =='scrollable'},
                 props.className
             )}>
             {props.children}
         </div>
     );
 
-    if (scrollable) {
+    if (layout =='scrollButtons') {
         return (
             <div className="k-suggestion-scrollwrap">
                 <Button icon="chevron-left"></Button>

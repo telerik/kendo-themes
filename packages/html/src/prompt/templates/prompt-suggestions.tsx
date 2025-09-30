@@ -30,7 +30,7 @@ export const PromptSuggestions = (props) => (
                     }
                 />
                 <PromptExpander expanded title="Prompt Suggestions">
-                    <SuggestionGroup scrollable={false}>
+                    <SuggestionGroup layout="wrap">
                         <Suggestion text="Suggestion 1" />
                         <Suggestion text="Suggestion 2" />
                         <Suggestion text="Reply with very very very very very very very long text" />

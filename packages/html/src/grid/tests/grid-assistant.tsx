@@ -125,7 +125,7 @@ export default () => (
                                     }
                                 />
                                 <PromptExpander expanded={false} title="Prompt Suggestions">
-                                    <SuggestionGroup scrollable={false}>
+                                    <SuggestionGroup layout="wrap">
                                         <Suggestion text="Suggestion 1" />
                                         <Suggestion text="Suggestion 2" />
                                         <Suggestion text="Suggestion 3" />
