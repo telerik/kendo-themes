@@ -567,21 +567,21 @@
         }
 
         .k-resize-w {
-            inset-inline-start: 0;
+            left: 0;
         }
 
         .k-resize-w::before {
-            inset-inline-start: 2px;
-            border-inline-start-width: 1px;
+            left: 2px;
+            border-left-width: 1px;
         }
 
         .k-resize-e {
-            inset-inline-end: 0;
+            right: 0;
         }
 
         .k-resize-e::before {
-            inset-inline-end: 2px;
-            border-inline-start-width: 1px;
+            right: 2px;
+            border-left-width: 1px;
         }
 
         &:hover .k-resize-handle,

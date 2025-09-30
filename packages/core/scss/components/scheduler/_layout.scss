@@ -468,29 +468,29 @@
         .k-resize-handle::before { border-color: currentColor; }
         .k-resize-n {
             height: .5em;
-            inset-block-start: 0;
+            top: 0;
         }
         .k-resize-s {
             height: .5em;
-            inset-block-end: 0;
+            bottom: 0;
         }
         .k-resize-n::before,
         .k-resize-s::before {
             width: k-spacing(8);
-            border-block-end-width: 1px;
+            border-bottom-width: 1px;
         }
         .k-resize-w {
             width: .5em;
-            inset-inline-start: 0;
+            left: 0;
         }
         .k-resize-e {
             width: .5em;
-            inset-inline-end: 0;
+            right: 0;
         }
         .k-resize-w::before,
         .k-resize-e::before {
             height: k-spacing(8);
-            border-inline-start-width: 1px;
+            border-left-width: 1px;
         }
 
 
