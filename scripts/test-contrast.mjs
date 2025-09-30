@@ -26,7 +26,7 @@ const EXCLUDED_ELEMENTS_FOCUS = [
     'k-bottom-nav-item',
     'k-button-outline',
     'k-button-warning',
-    'k-fab-solid-warning',
+    'k-fab-warning',
     'k-step-last',
     'k-quick-reply'
 ];
