@@ -72,15 +72,15 @@
 
     // Chat attachment
     .k-chat-file {
-        border-color: transparent;
+        background-color: $kendo-chat-file-bg;
+        color: $kendo-chat-file-text;
+        border-color: $kendo-chat-file-border;
     }
 
-    .k-chat-file-deleted {
-        @include fill(
-            k-color(error-on-subtle),
-            k-color(error-subtle),
-            k-color(error-subtle)
-        );
+    .k-message-group-sender .k-chat-file {
+        background-color: $kendo-chat-sender-file-bg;
+        color: $kendo-chat-sender-file-text;
+        border-color: $kendo-chat-sender-file-border;
     }
 
     // Attachment within Textarea prefix

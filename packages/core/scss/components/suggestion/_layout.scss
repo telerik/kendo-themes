@@ -27,8 +27,23 @@
         display: flex;
         flex-wrap: wrap;
         gap: $kendo-suggestion-spacing;
+        align-self: normal;
 
+        &.k-suggestion-group-scrollable {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
     }
+
+    .k-suggestion-group-scrollable,
+    .k-suggestion-scrollwrap {
+        .k-suggestion {
+            white-space: nowrap;
+            max-width: none;
+        }
+    }
+
     .k-suggestion {
         @include border-radius( $kendo-suggestion-border-radius );
         max-width: 100%;
@@ -44,6 +59,7 @@
         transition-timing-function: ease-in-out;
         cursor: pointer;
         outline: none;
+        white-space: normal;
     }
 
 
