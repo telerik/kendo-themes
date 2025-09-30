@@ -111,6 +111,11 @@ $kendo-fab-theme-colors:  (
 /// The size map for the FAB.
 /// @group floating-action-button
 $kendo-fab-sizes: (
+    DEFAULT: (
+        padding-x: $kendo-fab-md-padding-x,
+        padding-y: $kendo-fab-md-padding-y,
+        gap: $kendo-fab-icon-spacing
+    ),
     sm: (
         padding-x: $kendo-fab-sm-padding-x,
         padding-y: $kendo-fab-sm-padding-y,

@@ -6,81 +6,76 @@
 
 @mixin kendo-fab--theme() {
 
-    // Normal state
-    @each $name, $color in $kendo-fab-theme-colors {
-        .k-fab-solid-#{$name} {
-            @include box-shadow( $kendo-fab-shadow );
-            outline: $kendo-fab-border-width $kendo-fab-outline-style $color;
-            outline-offset: -$kendo-fab-border-width;
-            border-color: $color;
-            color: k-color(on-#{$name});
-            background-color: $color;
-        }
-    }
+    .k-fab {
 
-    // Hover state
-    @each $name, $color in $kendo-fab-theme-colors {
-        .k-fab-solid-#{$name}:hover,
-        .k-fab-solid-#{$name}.k-hover {
-            border-color: k-color(#{$name}-hover);
-            color: k-color(on-#{$name});
-            background-color: k-color(#{$name}-hover);
-        }
-    }
+        // Normal state
+        @each $name, $color in $kendo-fab-theme-colors {
 
-    // Focus state
-    @each $name, $color in $kendo-fab-theme-colors {
-        .k-fab-solid-#{$name}:focus,
-        .k-fab-solid-#{$name}.k-focus {
-            outline: $kendo-fab-outline-width $kendo-fab-outline-style color-mix(in srgb, k-color($name) 50%, transparent);
-        }
-    }
+            #{if($name == "primary", "&, &.k-fab-#{$name}", "&.k-fab-#{$name}")} {
 
-    // Active state
-    @each $name, $color in $kendo-fab-theme-colors {
-        .k-fab-solid-#{$name}:active,
-        .k-fab-solid-#{$name}.k-active,
-        .k-fab-solid-#{$name}.k-selected {
-            @include box-shadow( $kendo-fab-active-shadow );
-            border-color: k-color(#{$name}-active);
-            color: k-color(on-#{$name});
-            background-color: k-color(#{$name}-active);
-        }
-    }
+                @include box-shadow( $kendo-fab-shadow );
+                outline: $kendo-fab-border-width $kendo-fab-outline-style $color;
+                outline-offset: -$kendo-fab-border-width;
+                border-color: $color;
+                color: k-color(on-#{$name});
+                background-color: $color;
 
-    // Generating state
-    .k-fab-solid-primary.k-generating {
+                &:hover,
+                &.k-hover {
+                    border-color: k-color(#{$name}-hover);
+                    color: k-color(on-#{$name});
+                    background-color: k-color(#{$name}-hover);
+                }
 
-        animation: k-fab-generating 1.5s ease-in-out 0.5s infinite;
+                &:focus,
+                &.k-focus {
+                    outline: $kendo-fab-outline-width $kendo-fab-outline-style color-mix(in srgb, k-color($name) 50%, transparent);
+                }
 
-        @keyframes k-fab-generating {
-            0% {
-                background-color: k-color(primary-active);
-                border: k-color(primary-active);
-                outline-color: k-color(primary-active);
+                &:active,
+                &.k-active,
+                &.k-selected {
+                    @include box-shadow( $kendo-fab-active-shadow );
+                    border-color: k-color(#{$name}-active);
+                    color: k-color(on-#{$name});
+                    background-color: k-color(#{$name}-active);
+                }
+
+                &:disabled,
+                &.k-disabled {
+                    @include box-shadow( $kendo-fab-disabled-shadow );
+                    background-color: color-mix(in srgb, k-color($name) 65%, transparent);
+                    color: color-mix(in srgb, k-color(on-#{$name}) 65%, transparent);
+                    opacity: 1;
+                }
             }
-            50% {
-                background-color: color-mix(in srgb, k-color(primary-active) $kendo-fab-generating-opacity, k-color(surface-alt));
-                border: color-mix(in srgb, k-color(primary-active) $kendo-fab-generating-opacity, k-color(surface-alt));
-                outline-color: color-mix(in srgb, k-color(primary-active) $kendo-fab-generating-opacity, k-color(surface-alt));
-            }
-            100% {
-                background-color: k-color(primary-active);
-                border: k-color(primary-active);
-                outline-color: k-color(primary-active);
-            }
-        }
-    }
 
-    // Disabled state
-    @each $name, $color in $kendo-fab-theme-colors {
-        .k-fab-solid-#{$name}:disabled,
-        .k-fab-solid-#{$name}.k-disabled {
-            @include box-shadow( $kendo-fab-disabled-shadow );
-            background-color: color-mix(in srgb, k-color($name) 65%, transparent);
-            color: color-mix(in srgb, k-color(on-#{$name}) 65%, transparent);
-            opacity: 1;
         }
+
+        // Generating state
+        &.k-fab-primary.k-generating {
+
+            animation: k-fab-generating 1.5s ease-in-out 0.5s infinite;
+
+            @keyframes k-fab-generating {
+                0% {
+                    background-color: k-color(primary-active);
+                    border: k-color(primary-active);
+                    outline-color: k-color(primary-active);
+                }
+                50% {
+                    background-color: color-mix(in srgb, k-color(primary-active) $kendo-fab-generating-opacity, k-color(surface-alt));
+                    border: color-mix(in srgb, k-color(primary-active) $kendo-fab-generating-opacity, k-color(surface-alt));
+                    outline-color: color-mix(in srgb, k-color(primary-active) $kendo-fab-generating-opacity, k-color(surface-alt));
+                }
+                100% {
+                    background-color: k-color(primary-active);
+                    border: k-color(primary-active);
+                    outline-color: k-color(primary-active);
+                }
+            }
+        }
+
     }
 
     // Items
@@ -126,7 +121,7 @@
     .k-fab-item:active .k-fab-item-icon,
     .k-fab-item.k-active .k-fab-item-icon {
         @include box-shadow( $kendo-fab-item-active-shadow );
-        outline: $kendo-fab-border-width solid k-color(base-active);
+        outline: $kendo-fab-border-width k-color(base-active);
         outline-offset: -$kendo-fab-border-width;
         border-color: k-color(base-active);
         color: k-color(on-base);

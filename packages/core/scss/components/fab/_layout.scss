@@ -22,7 +22,6 @@
         text-overflow: ellipsis;
         cursor: pointer;
         border-radius: $kendo-fab-border-radius;
-        @extend %k-fab-md;
 
         *,
         *::before,
@@ -37,8 +36,13 @@
         // FAB Sizes
         @each $size, $size-props in $kendo-fab-sizes {
 
-            &.k-fab-#{$size} {
-                @extend %k-fab-#{$size};
+            $_padding-x: map.get( $size-props, padding-x );
+            $_padding-y: map.get( $size-props, padding-y );
+            $_gap: map.get( $size-props, gap );
+
+            #{if($size == DEFAULT, "&", "&.k-fab-#{$size}")} {
+                padding: $_padding-y $_padding-x;
+                gap: $_gap;
             }
         }
 
@@ -140,19 +144,6 @@
         }
     }
 }
-
- // FAB sizes placeholder
-    @each $size, $size-props in $kendo-fab-sizes {
-        $_padding-x: map.get( $size-props, padding-x );
-        $_padding-y: map.get( $size-props, padding-y );
-        $_gap: map.get( $size-props, gap );
-
-        %k-fab-#{$size} {
-            padding: $_padding-y $_padding-x;
-            gap: $_gap;
-        }
-
-    }
 
 
 @mixin kendo-fab--layout() {
