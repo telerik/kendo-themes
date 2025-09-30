@@ -11108,6 +11108,11 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-fab-sizes</td>
     <td>Map</td>
     <td><code>(
+    DEFAULT: (
+        padding-x: $kendo-fab-md-padding-x,
+        padding-y: $kendo-fab-md-padding-y,
+        gap: $kendo-fab-icon-spacing
+    ),
     sm: (
         padding-x: $kendo-fab-sm-padding-x,
         padding-y: $kendo-fab-sm-padding-y,
@@ -11124,7 +11129,7 @@ The following table lists the available variables for customizing the Material t
         gap: $kendo-fab-icon-spacing
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2\\.5, 0.625rem)","padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","gap":"var(--kendo-spacing-1\\.5, 0.375rem)"</li><li>md: "padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","padding-y":"var(--kendo-spacing-4\\.5, 1.125rem)","gap":"var(--kendo-spacing-1\\.5, 0.375rem)"</li><li>lg: "padding-x":"var(--kendo-spacing-8, 2rem)","padding-y":"var(--kendo-spacing-8, 2rem)","gap":"var(--kendo-spacing-1\\.5, 0.375rem)"</li></ul></td>
+    <td><ul><li>DEFAULT: "padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","padding-y":"var(--kendo-spacing-4\\.5, 1.125rem)","gap":"var(--kendo-spacing-1\\.5, 0.375rem)"</li><li>sm: "padding-x":"var(--kendo-spacing-2\\.5, 0.625rem)","padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","gap":"var(--kendo-spacing-1\\.5, 0.375rem)"</li><li>md: "padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","padding-y":"var(--kendo-spacing-4\\.5, 1.125rem)","gap":"var(--kendo-spacing-1\\.5, 0.375rem)"</li><li>lg: "padding-x":"var(--kendo-spacing-8, 2rem)","padding-y":"var(--kendo-spacing-8, 2rem)","gap":"var(--kendo-spacing-1\\.5, 0.375rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map for the FAB.</div></div>
