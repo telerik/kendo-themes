@@ -169,13 +169,13 @@
                         width: 100%;
                     }
 
-                    .k-text-widget-annotation > input[type="text"] {
+                    :is(.k-text-widget-annotation > input[type="text"]) {
                         border: none;
                         text-indent: 0.25em;
                     }
 
-                    .k-checkbox-widget-annotation > input[type="checkbox"],
-                    .k-radio-button-widget-annotation > input[type="radio"] {
+                    :is(.k-checkbox-widget-annotation > input[type="checkbox"],
+                    .k-radio-button-widget-annotation > input[type="radio"]) {
                         margin-inline-start: 0;
                         margin-block-start: 0;
                     }
