@@ -19,6 +19,7 @@ export type KendoChatMessageGroupProps = {
     type?: "receiver" | "sender";
     author?: null | string;
     avatar?: null | string;
+    status?: null | boolean;
     fullWidth?: boolean;
 };
 
@@ -33,6 +34,7 @@ export const ChatMessageGroup = (
         type = defaultOptions.type,
         author = defaultOptions.author,
         avatar = defaultOptions.avatar,
+        status,
         selected,
         fullWidth,
         ...other
@@ -51,7 +53,13 @@ export const ChatMessageGroup = (
                     [`${CHATMESSAGEGROUP_CLASSNAME}-full-width`]: fullWidth
                 }
             )}>
-            { avatar && <Avatar type="image"><img src={avatar} /></Avatar> }
+            { avatar && !status && <Avatar type="image"><img src={avatar} /></Avatar> }
+            { status && avatar &&
+                <div className="k-chat-user-status-wrapper">
+                    <Avatar type="image"><img src={avatar} /></Avatar>
+                    <div className="k-chat-user-status"></div>
+                </div>
+            }
             <div className="k-message-group-content">
                 { author && <span className="k-message-author">{author}</span> }
                 {props.children}

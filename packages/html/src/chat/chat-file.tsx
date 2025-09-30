@@ -14,7 +14,8 @@ const options = {};
 const defaultOptions = {
     icon: 'file-pdf',
     name: 'FileName.pdf',
-    size: '2MB'
+    size: '2MB',
+    showButton: 'true'
 };
 
 export type KendoChatFileProps = {
@@ -24,6 +25,7 @@ export type KendoChatFileProps = {
     status?: string;
     deleted?: boolean;
     removeButton?: boolean;
+    showButton?: boolean;
 };
 
 export const ChatFile = (
@@ -37,6 +39,7 @@ export const ChatFile = (
         status,
         deleted,
         removeButton,
+        showButton = defaultOptions.showButton,
         ...other
     } = props;
 
@@ -50,16 +53,16 @@ export const ChatFile = (
                     'k-chat-file-deleted': deleted,
                 },
             )}>
-            <Icon icon={icon} size="xxlarge"></Icon>
+            <Icon icon={icon} size="xlarge"></Icon>
             <div className='k-chat-file-info'>
                 {name && <span className="k-chat-file-name">{name}</span>}
                 {size && <span className="k-chat-file-size">{size}</span>}
                 {status && <span className="k-chat-file-status">{status}</span>}
             </div>
-            {removeButton ? 
+            {showButton && (removeButton ?
                 <IconButton icon="x" fillMode="flat"></IconButton> :
                 <MenuButton icon="more-vertical" fillMode="flat" showArrow={false}></MenuButton>
-            }
+            )}
         </li>
     );
 };

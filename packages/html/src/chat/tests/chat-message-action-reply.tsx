@@ -61,7 +61,7 @@ export default () =>(
                     <ChatMessageGroup type="sender" avatar={null} author={null}>
                         <ChatMessage
                             text="I really appreciate it. I’ve been trying to diversify, but I’m not sure if I’m on the right track. Would love your input"
-                            additionalContent={
+                            content={
                             <>
                                 <ChatMessageReference content={"I really appreciate it. I’ve been trying to diversify, but I’m not sure if I’m on the right track. Would love your input"} /></>
                             } />
@@ -111,7 +111,7 @@ export default () =>(
                     <ChatMessageGroup type="sender" avatar={null} author={null}>
                         <ChatMessage
                             text="I really appreciate it. I’ve been trying to diversify, but I’m not sure if I’m on the right track. Would love your input"
-                            additionalContent={
+                            content={
                             <>
                                 <ChatMessageReference type="sender" content={"I really appreciate it. I’ve been trying to diversify, but I’m not sure if I’m on the right track. Would love your input"} /></>
                             } />
