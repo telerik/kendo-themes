@@ -19,6 +19,8 @@ $kendo-chat-message-list-padding-x: null !default;
 $kendo-chat-message-list-padding-y: null !default;
 $kendo-chat-message-list-spacing: null !default;
 
+$kendo-chat-status-min-size: null !default;
+$kendo-chat-status-max-size: null !default;
 $kendo-chat-message-status-gap: null !default;
 
 $kendo-chat-timestamp-font-size: null !default;
@@ -61,7 +63,12 @@ $kendo-chat-alt-bubble-focus-shadow: null !default;
 
 $kendo-chat-typing-indicator-text: null !default;
 
-$kendo-chat-file-width: null !default;
+$kendo-chat-file-min-width: null !default;
+$kendo-chat-file-max-width: null !default;
+$kendo-chat-file-name-font-size: null !default;
+$kendo-chat-file-name-line-height: null !default;
+$kendo-chat-file-size-font-size: null !default;
+$kendo-chat-file-size-line-height: null !default;
 $kendo-chat-file-padding-x: null !default;
 $kendo-chat-file-padding-y: null !default;
 $kendo-chat-file-gap: null !default;
@@ -73,6 +80,10 @@ $kendo-chat-file-border: null !default;
 $kendo-chat-file-border-radius: null !default;
 $kendo-chat-file-download-padding-x: null !default;
 $kendo-chat-file-download-padding-y: null !default;
+
+$kendo-chat-sender-file-bg: null !default;
+$kendo-chat-sender-file-text: null !default;
+$kendo-chat-sender-file-border: null !default;
 
 $kendo-chat-message-pinned-border-width: null !default;
 $kendo-chat-message-pinned-border-style: null !default;

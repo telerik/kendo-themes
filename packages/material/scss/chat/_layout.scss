@@ -7,10 +7,6 @@
 @mixin kendo-chat--layout() {
     @include kendo-chat--layout-base();
 
-    .k-chat-file:has( + .k-chat-file) {
-        padding-block-end: calc( #{$kendo-chat-file-padding-y} / 2 );
-    }
-
     .k-message-group-sender .k-chat-bubble {
         &:focus,
         &.k-focus {
