@@ -223,15 +223,18 @@ jobs:
             gzip_diff=$(awk "BEGIN {print $pr_gzip_size - $develop_gzip_size}")
             gzip_diff_percent=$(awk "BEGIN {if ($develop_gzip_size > 0) print sprintf(\"%.1f\", (($pr_gzip_size - $develop_gzip_size) / $develop_gzip_size) * 100); else print 0}")
 
-            time_diff=$(awk "BEGIN {print $pr_time - $develop_time}")
+            time_diff_abs=$(awk "BEGIN {print ($pr_time > $develop_time ? $pr_time - $develop_time : $develop_time - $pr_time)}")
+
+            # Adds 2 seconds tolerance for time difference
+            if [ "$time_diff_abs" -le 2 ]; then
+              time_diff=0
+            fi
+
             time_diff_percent=$(awk "BEGIN {if ($develop_time > 0) print sprintf(\"%.1f\", ($time_diff / $develop_time) * 100); else print 0}")
 
             size_arrow=$(awk "BEGIN {if ($size_diff > 0) print \"🔼\"; else if ($size_diff < 0) print \"🔽\"; else print \"\"}")
-
             gzip_arrow=$(awk "BEGIN {if ($gzip_diff > 0) print \"🔼\"; else if ($gzip_diff < 0) print \"🔽\"; else print \"\"}")
-
-            # Adds 1 seconds tolerance for technical time difference
-            time_arrow=$(awk "BEGIN {if ($time_diff > 1) print \"🔼\"; else if ($time_diff < -1) print \"🔽\"; else print \"\"}")
+            time_arrow=$(awk "BEGIN {if ($time_diff > 0) print \"🔼\"; else if ($time_diff < 0) print \"🔽\"; else print \"\"}")
 
             if [ "$package" = "html" ]; then
               size_row+="| $pr_size MB (${size_diff_percent}%$size_arrow)"
