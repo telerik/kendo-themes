@@ -81,7 +81,7 @@ export const LoaderContainer: KendoComponent<KendoLoaderContainerProps & React.H
                 }
             )}>
                 <Loader size={size} themeColor={themeColor} animation={loaderType} />
-                <div className={`k-loader-container-label !k-text-${themeColor}`}>
+                <div className={`k-loader-container-label`}>
                     Loading...
                 </div>
             </div>
