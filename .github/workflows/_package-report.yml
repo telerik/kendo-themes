@@ -88,7 +88,7 @@ jobs:
             fi
             total_time=$((total_time + SECONDS))
           done
-          build_time=$(awk "BEGIN {printf \"%.0f\", $total_time / 3}")
+          build_time=$(awk "BEGIN {printf \"%.1f\", $total_time / 3}")
 
           if [ "${{ matrix.package }}" = "html" ]; then
             size=$(du -sb packages/${{ matrix.package }}/dist | awk '{printf "%.2f", $1/(1024*1024)}')
@@ -156,7 +156,7 @@ jobs:
             fi
             total_time=$((total_time + SECONDS))
           done
-          build_time=$(awk "BEGIN {printf \"%.0f\", $total_time / 3}")
+          build_time=$(awk "BEGIN {printf \"%.1f\", $total_time / 3}")
 
           if [ "${{ matrix.package }}" = "html" ]; then
             size=$(du -sb packages/${{ matrix.package }}/dist | awk '{printf "%.2f", $1/(1024*1024)}')
@@ -227,7 +227,7 @@ jobs:
             time_diff_abs=$(awk "BEGIN {print ($pr_time > $develop_time ? $pr_time - $develop_time : $develop_time - $pr_time)}")
 
             # Adds 2 seconds tolerance for time difference
-            if [ "$time_diff_abs" -le 2 ]; then
+            if [ "$time_diff_abs" -lt 2 ]; then
               time_diff=0
             fi
 
@@ -244,7 +244,7 @@ jobs:
               size_row+="| $pr_size KB (${size_diff_percent}%$size_arrow)"
               gzip_row+="| $pr_gzip_size KB (${gzip_diff_percent}%$gzip_arrow)"
             fi
-            time_row+="| $(awk "BEGIN {printf \"%.0f\", $pr_time}") s (${time_diff_percent}%$time_arrow)"
+            time_row+="| $(awk "BEGIN {printf \"%.1f\", $pr_time}") s (${time_diff_percent}%$time_arrow)"
           done
 
           echo "$size_row|" >> size-comparison.md
