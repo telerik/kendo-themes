@@ -78,17 +78,23 @@ jobs:
 
       - name: Measure time and size
         run: |
-          total_time=0
-          for i in {1..3}; do
-            SECONDS=0
+          # Run 5 times to get median with decimal precision
+          times=()
+          for i in {1..5}; do
+            start_time=$(date +%s.%N)
             if [ "${{ matrix.package }}" = "html" ]; then
               npm run build --prefix packages/${{ matrix.package }}
             else
               npm run sass:compile:all --prefix packages/${{ matrix.package }}
             fi
-            total_time=$((total_time + SECONDS))
+            end_time=$(date +%s.%N)
+            elapsed=$(awk "BEGIN {printf \"%.1f\", $end_time - $start_time}")
+            times+=($elapsed)
           done
-          build_time=$(awk "BEGIN {printf \"%.1f\", $total_time / 3}")
+
+          # Sort times and get median (middle value)
+          IFS=$'\n' sorted_times=($(sort -n <<<"${times[*]}"))
+          build_time=${sorted_times[2]}
 
           if [ "${{ matrix.package }}" = "html" ]; then
             size=$(du -sb packages/${{ matrix.package }}/dist | awk '{printf "%.2f", $1/(1024*1024)}')
@@ -146,17 +152,23 @@ jobs:
 
       - name: Measure time and size
         run: |
-          total_time=0
-          for i in {1..3}; do
-            SECONDS=0
+          # Run 5 times to get median with decimal precision
+          times=()
+          for i in {1..5}; do
+            start_time=$(date +%s.%N)
             if [ "${{ matrix.package }}" = "html" ]; then
               npm run build --prefix packages/${{ matrix.package }}
             else
               npm run sass:compile:all --prefix packages/${{ matrix.package }}
             fi
-            total_time=$((total_time + SECONDS))
+            end_time=$(date +%s.%N)
+            elapsed=$(awk "BEGIN {printf \"%.1f\", $end_time - $start_time}")
+            times+=($elapsed)
           done
-          build_time=$(awk "BEGIN {printf \"%.1f\", $total_time / 3}")
+
+          # Sort times and get median (middle value)
+          IFS=$'\n' sorted_times=($(sort -n <<<"${times[*]}"))
+          build_time=${sorted_times[2]}
 
           if [ "${{ matrix.package }}" = "html" ]; then
             size=$(du -sb packages/${{ matrix.package }}/dist | awk '{printf "%.2f", $1/(1024*1024)}')
@@ -224,18 +236,22 @@ jobs:
             gzip_diff_percent=$(awk "BEGIN {if ($develop_gzip_size > 0) print sprintf(\"%.1f\", (($pr_gzip_size - $develop_gzip_size) / $develop_gzip_size) * 100); else print 0}")
 
             time_diff=$(awk "BEGIN {print $pr_time - $develop_time}")
-            time_diff_abs=$(awk "BEGIN {print ($pr_time > $develop_time ? $pr_time - $develop_time : $develop_time - $pr_time)}")
-
-            # Adds 2 seconds tolerance for time difference
-            if [ "$time_diff_abs" -lt 2 ]; then
-              time_diff=0
-            fi
-
+            time_diff_abs=$(awk "BEGIN {x = $time_diff; print (x < 0 ? -x : x)}")
             time_diff_percent=$(awk "BEGIN {if ($develop_time > 0) print sprintf(\"%.1f\", ($time_diff / $develop_time) * 100); else print 0}")
+            time_diff_percent_abs=$(awk "BEGIN {x = $time_diff_percent; print (x < 0 ? -x : x)}")
+
+            # Hybrid tolerance: Hide indicator if BOTH conditions are met:
+            # 1. Absolute difference < 1 second (filters small timing noise)
+            # 2. Percentage difference < 15% (filters variance relative to baseline)
+
+            if (( $(awk "BEGIN {print ($time_diff_abs < 1 && $time_diff_percent_abs < 15)}") )); then
+              time_diff_percent="0.0"
+            fi
 
             size_arrow=$(awk "BEGIN {if ($size_diff > 0) print \"🔼\"; else if ($size_diff < 0) print \"🔽\"; else print \"\"}")
             gzip_arrow=$(awk "BEGIN {if ($gzip_diff > 0) print \"🔼\"; else if ($gzip_diff < 0) print \"🔽\"; else print \"\"}")
-            time_arrow=$(awk "BEGIN {if ($time_diff > 0) print \"🔼\"; else if ($time_diff < 0) print \"🔽\"; else print \"\"}")
+
+            time_arrow=$(awk "BEGIN {if ($time_diff_percent > 0) print \"🔼\"; else if ($time_diff_percent < 0) print \"🔽\"; else print \"\"}")
 
             if [ "$package" = "html" ]; then
               size_row+="| $pr_size MB (${size_diff_percent}%$size_arrow)"
