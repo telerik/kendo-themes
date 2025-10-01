@@ -242,9 +242,9 @@ jobs:
 
             # Hybrid tolerance: Hide indicator if BOTH conditions are met:
             # 1. Absolute difference < 1 second (filters small timing noise)
-            # 2. Percentage difference < 15% (filters variance relative to baseline)
+            # 2. Percentage difference < 10% (filters variance relative to baseline)
 
-            if (( $(awk "BEGIN {print ($time_diff_abs < 1 && $time_diff_percent_abs < 15)}") )); then
+            if (( $(awk "BEGIN {print ($time_diff_abs < 1 && $time_diff_percent_abs < 10)}") )); then
               time_diff_percent="0.0"
             fi
 
