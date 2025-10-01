@@ -279,11 +279,12 @@
 
 
     .k-button { // stylelint-disable-line
-
         &::before {
             @extend .k-button-overlay !optional;
         }
+    }
 
+    .k-button { // stylelint-disable-line
         // Hovered state
         &:hover,
         &.k-hover {

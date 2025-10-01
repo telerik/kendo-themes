@@ -6,28 +6,27 @@
 
 @mixin kendo-card--theme-base() {
 
-    // Card
+    // Card - base styles only
     .k-card {
-        @include fill(
-            $kendo-card-text,
-            $kendo-card-bg,
-            $kendo-card-border
-        );
+        color: $kendo-card-text;
+        background-color: $kendo-card-bg;
+        border-color: $kendo-card-border;
         @include box-shadow( $kendo-card-shadow );
 
         .k-card-inner {
             background-color: inherit;
             border-color: inherit;
         }
+    }
 
+    // Card - state selectors only
+    .k-card {
         &:focus,
         &.k-focus {
-            @include fill(
-                $kendo-card-focus-text,
-                $kendo-card-focus-bg,
-                $kendo-card-focus-border
-            );
-            @include focus-indicator( $kendo-card-focus-shadow );
+            color: $kendo-card-focus-text;
+        background-color: $kendo-card-focus-bg;
+        border-color: $kendo-card-focus-border;
+            box-shadow: $kendo-card-focus-shadow;
         }
 
         &.k-selected {
@@ -35,22 +34,23 @@
         }
     }
 
-
     // Card actions
     .k-card-actions {
         border-color: $kendo-card-border;
     }
 
-
     // Header
     .k-card-header {
-        @include fill( $kendo-card-header-text, $kendo-card-header-bg, $kendo-card-header-border );
+        color: $kendo-card-header-text;
+        background-color: $kendo-card-header-bg;
+        border-color: $kendo-card-header-border;
     }
-
 
     // Footer
     .k-card-footer {
-        @include fill( $kendo-card-footer-text, $kendo-card-footer-bg, $kendo-card-footer-border );
+        color: $kendo-card-footer-text;
+        background-color: $kendo-card-footer-bg;
+        border-color: $kendo-card-footer-border;
     }
 
     // Body
@@ -64,12 +64,10 @@
         border-color: $kendo-card-border;
     }
 
-
     // TODO: refactor
     .k-card-subtitle {
         color: $kendo-card-subtitle-text;
     }
-
 
     // Card theme colors
     @each $name, $color in $kendo-card-theme-colors {
@@ -84,30 +82,25 @@
         }
     }
 
-
     .k-card-wrap {
         &:focus,
         &.k-focus,
         &.k-selected {
             > .k-card {
-                @include focus-indicator( $kendo-card-focus-shadow );
+                box-shadow: $kendo-card-focus-shadow;
             }
         }
     }
 
-
     // Card callout
     .k-card-callout {
-        @include fill(
-            $bg: inherit,
-            $border: inherit
-        );
+        background-color: inherit;
+        border-color: inherit;
 
         @include box-shadow( inherit );
     }
 
 }
-
 
 @mixin kendo-card--theme() {
     @include kendo-card--theme-base();

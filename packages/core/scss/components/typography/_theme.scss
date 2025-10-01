@@ -5,24 +5,17 @@
 @mixin kendo-typography--theme-base() {
 
     .k-body {
-        @include fill(
-            k-color(on-app-surface),
-            k-color(app-surface)
-        );
     }
 
     // Code snippet
     .k-pre,
     .k-code {
-        @include fill(
-            $kendo-code-text,
-            $kendo-code-bg,
-            $kendo-code-border
-        );
+        color: $kendo-code-text;
+        background-color: $kendo-code-bg;
+        border-color: $kendo-code-border;
     }
 
 }
-
 
 @mixin kendo-typography--theme() {
     @include kendo-typography--theme-base();

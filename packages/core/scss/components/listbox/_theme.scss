@@ -7,11 +7,9 @@
     // Listbox
     .k-listbox {
         .k-list-scroller {
-            @include fill(
-                $kendo-listbox-text,
-                $kendo-listbox-bg,
-                $kendo-listbox-border
-            );
+            color: $kendo-listbox-text;
+        background-color: $kendo-listbox-bg;
+        border-color: $kendo-listbox-border;
         }
         .k-drop-hint {
             border-block-start-color: k-color(primary);
@@ -19,7 +17,6 @@
     }
 
 }
-
 
 @mixin kendo-listbox--theme() {
     @include kendo-listbox--theme-base();

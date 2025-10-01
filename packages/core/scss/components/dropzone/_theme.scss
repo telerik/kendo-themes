@@ -5,11 +5,9 @@
 
     // Dropzone
     .k-dropzone-inner {
-        @include fill(
-            $kendo-dropzone-text,
-            $kendo-dropzone-bg,
-            $kendo-dropzone-border
-        );
+        color: $kendo-dropzone-text;
+        background-color: $kendo-dropzone-bg;
+        border-color: $kendo-dropzone-border;
 
         .k-icon,
         .k-dropzone-icon {
@@ -23,7 +21,6 @@
         }
     }
 
-
     // Hover
     .k-external-dropzone-hover {
 
@@ -34,7 +31,6 @@
     }
 
 }
-
 
 @mixin kendo-dropzone--theme() {
     @include kendo-dropzone--theme-base();

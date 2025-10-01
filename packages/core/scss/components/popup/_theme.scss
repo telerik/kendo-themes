@@ -4,16 +4,13 @@
 @mixin kendo-popup--theme-base() {
 
     .k-popup {
-        @include fill(
-            $kendo-popup-text,
-            $kendo-popup-bg,
-            $kendo-popup-border
-        );
+        color: $kendo-popup-text;
+        background-color: $kendo-popup-bg;
+        border-color: $kendo-popup-border;
         @include box-shadow( $kendo-popup-shadow );
     }
 
 }
-
 
 @mixin kendo-popup--theme() {
     @include kendo-popup--theme-base();

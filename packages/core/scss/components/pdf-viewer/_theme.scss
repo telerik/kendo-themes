@@ -5,41 +5,30 @@
 
     // PDF Viewer
     .k-pdf-viewer {
-        @include fill(
-            $kendo-pdf-viewer-text,
-            $kendo-pdf-viewer-bg,
-            $kendo-pdf-viewer-border
-        );
-
+        color: $kendo-pdf-viewer-text;
+        background-color: $kendo-pdf-viewer-bg;
+        border-color: $kendo-pdf-viewer-border;
 
         // Toolbar
         .k-toolbar {
-            @include fill(
-                $kendo-pdf-viewer-toolbar-text,
-                $kendo-pdf-viewer-toolbar-bg,
-                $kendo-pdf-viewer-toolbar-border,
-                $kendo-pdf-viewer-toolbar-gradient
-            );
+            color: $kendo-pdf-viewer-toolbar-text;
+        background-color: $kendo-pdf-viewer-toolbar-bg;
+        border-color: $kendo-pdf-viewer-toolbar-border;
+        @include linear-gradient($kendo-pdf-viewer-toolbar-gradient);
         }
-
 
         // Canvas
         .k-pdf-viewer-canvas {
-            @include fill(
-                $kendo-pdf-viewer-canvas-text,
-                $kendo-pdf-viewer-canvas-bg,
-                $kendo-pdf-viewer-canvas-border
-            );
+            color: $kendo-pdf-viewer-canvas-text;
+        background-color: $kendo-pdf-viewer-canvas-bg;
+        border-color: $kendo-pdf-viewer-canvas-border;
         }
-
 
         // Page
         .k-page {
-            @include fill(
-                $kendo-pdf-viewer-page-text,
-                $kendo-pdf-viewer-page-bg,
-                $kendo-pdf-viewer-page-border
-            );
+            color: $kendo-pdf-viewer-page-text;
+        background-color: $kendo-pdf-viewer-page-bg;
+        border-color: $kendo-pdf-viewer-page-border;
             @include box-shadow( $kendo-pdf-viewer-page-shadow );
 
             .k-annotation-layer {
@@ -52,7 +41,7 @@
         }
 
         .k-blank-page > .k-icon {
-            @include fill( $color: $kendo-pdf-viewer-icon-text );
+            color: $kendo-pdf-viewer-icon-text ;
         }
 
         .k-canvas-wrapper .k-highlight-outline {
@@ -72,7 +61,7 @@
         }
 
         .k-search-highlight-mark {
-            @include fill( $bg: $kendo-pdf-viewer-search-highlight-mark-bg );
+            background-color: $kendo-pdf-viewer-search-highlight-mark-bg ;
         }
 
         .k-annotation-editor-layer .k-free-text-editor .k-internal {
@@ -86,16 +75,13 @@
     }
 
     .k-pdf-viewer-canvas > .k-search-panel {
-        @include fill(
-            $kendo-pdf-viewer-search-panel-text,
-            $kendo-pdf-viewer-search-panel-bg,
-            $kendo-pdf-viewer-search-panel-border,
-        );
+        color: $kendo-pdf-viewer-search-panel-text;
+        background-color: $kendo-pdf-viewer-search-panel-bg;
+        border-color: $kendo-pdf-viewer-search-panel-border;
         @include box-shadow( $kendo-pdf-viewer-search-panel-shadow );
     }
 
 }
-
 
 @mixin kendo-pdf-viewer--theme() {
     @include kendo-pdf-viewer--theme-base();

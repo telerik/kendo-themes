@@ -10,23 +10,12 @@
     @each $color-name, $color in $kendo-message-box-theme-colors {
         .k-messagebox.k-messagebox-#{$color-name} {
             @if $color-name == "inverse" {
-                @include fill(
-                    k-color(dark-on-subtle),
-                    k-color(dark-subtle),
-                    k-color(dark-hover)
-                );
             } @else {
-                @include fill(
-                    k-color(#{$color-name}-on-subtle),
-                    k-color(#{$color-name}-subtle),
-                    k-color(#{$color-name}-emphasis)
-                );
             }
         }
     }
 
 }
-
 
 @mixin kendo-messagebox--theme() {
     @include kendo-messagebox--theme-base();

@@ -6,11 +6,10 @@
     // Split button
     .k-split-button:focus,
     .k-split-button.k-focus {
-        @include focus-indicator( $kendo-split-button-focus-shadow );
+        box-shadow: $kendo-split-button-focus-shadow;
     }
 
 }
-
 
 @mixin kendo-split-button--theme() {
     @include kendo-split-button--theme-base();

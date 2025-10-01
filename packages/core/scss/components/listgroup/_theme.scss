@@ -5,15 +5,12 @@
 
     // Listgroup
     .k-listgroup {
-        @include fill(
-            $kendo-listgroup-text,
-            $kendo-listgroup-bg,
-            $kendo-listgroup-border
-        );
+        color: $kendo-listgroup-text;
+        background-color: $kendo-listgroup-bg;
+        border-color: $kendo-listgroup-border;
     }
 
 }
-
 
 @mixin kendo-listgroup--theme() {
     @include kendo-listgroup--theme-base();

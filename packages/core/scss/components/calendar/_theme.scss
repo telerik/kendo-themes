@@ -6,25 +6,19 @@
 @mixin kendo-calendar--theme-base() {
 
     .k-calendar {
-        @include fill(
-            $kendo-calendar-text,
-            $kendo-calendar-bg,
-            $kendo-calendar-border
-        );
-
+        color: $kendo-calendar-text;
+        background-color: $kendo-calendar-bg;
+        border-color: $kendo-calendar-border;
 
         // TODO: do we even use this?
         // Header / footer
         .k-header {
-            @include fill(
-                $kendo-calendar-header-text,
-                $kendo-calendar-header-bg,
-                inherit,
-                $kendo-calendar-header-gradient
-            );
+            color: $kendo-calendar-header-text;
+            background-color: $kendo-calendar-header-bg;
+            border-color: inherit;
+            @include linear-gradient($kendo-calendar-header-gradient);
             @include box-shadow( $kendo-calendar-header-shadow );
         }
-
 
         // Header cells
         .k-calendar-th,
@@ -34,7 +28,6 @@
             color: $kendo-calendar-header-cell-text;
         }
 
-
         // Special days
         .k-calendar-view .k-today {
             @if $kendo-calendar-today-style == box {
@@ -42,77 +35,61 @@
                     box-shadow: inset 0 0 0 1px $kendo-calendar-today-color;
                 }
                 &.k-focus .k-calendar-cell-inner {
-                    @include focus-indicator( $indicator: ( inset 0 0 0 1px $kendo-calendar-today-color, $kendo-calendar-cell-focus-shadow ), $inset: true );
+                    box-shadow: inset 0 0 0 1px $kendo-calendar-today-color, $kendo-calendar-cell-focus-shadow;
                 }
             } @else if $kendo-calendar-today-style == color {
                 color: $kendo-calendar-today-color;
             }
         }
         .k-other-month {
-            @include fill(
-                $kendo-calendar-other-month-text,
-                $kendo-calendar-other-month-bg
-            );
+            color: $kendo-calendar-other-month-text;
+        background-color: $kendo-calendar-other-month-bg;
         }
         .k-weekend {
-            @include fill(
-                $kendo-calendar-weekend-text,
-                $kendo-calendar-weekend-bg
-            );
+            color: $kendo-calendar-weekend-text;
+        border-color: $kendo-calendar-weekend-bg;
         }
         .k-alt {
             // remove default k-alt background color
             background-color: transparent;
-            @include fill(
-                $kendo-calendar-week-number-text,
-                $kendo-calendar-week-number-bg
-            );
+            color: $kendo-calendar-week-number-text;
+            background-color: $kendo-calendar-week-number-bg;
         }
-
 
         // Interactive states
         .k-calendar-td:hover .k-calendar-cell-inner,
         .k-calendar-td.k-hover .k-calendar-cell-inner {
-            @include fill(
-                $kendo-calendar-cell-hover-text,
-                $kendo-calendar-cell-hover-bg,
-                $kendo-calendar-cell-hover-border,
-                $kendo-calendar-cell-hover-gradient
-            );
+            color: $kendo-calendar-cell-hover-text;
+        background-color: $kendo-calendar-cell-hover-bg;
+        border-color: $kendo-calendar-cell-hover-border;
+        @include linear-gradient($kendo-calendar-cell-hover-gradient);
         }
         .k-calendar-td.k-selected .k-calendar-cell-inner {
-            @include fill(
-                $kendo-calendar-cell-selected-text,
-                $kendo-calendar-cell-selected-bg,
-                $kendo-calendar-cell-selected-border,
-                $kendo-calendar-cell-selected-gradient
-            );
+            color: $kendo-calendar-cell-selected-text;
+        background-color: $kendo-calendar-cell-selected-bg;
+        border-color: $kendo-calendar-cell-selected-border;
+        @include linear-gradient($kendo-calendar-cell-selected-gradient);
         }
         .k-calendar-td.k-selected:hover .k-calendar-cell-inner,
         .k-calendar-td.k-selected.k-hover .k-calendar-cell-inner {
-            @include fill(
-                $kendo-calendar-cell-selected-hover-text,
-                $kendo-calendar-cell-selected-hover-bg,
-                $kendo-calendar-cell-selected-hover-border,
-                $kendo-calendar-cell-selected-hover-gradient
-            );
+            color: $kendo-calendar-cell-selected-hover-text;
+        background-color: $kendo-calendar-cell-selected-hover-bg;
+        border-color: $kendo-calendar-cell-selected-hover-border;
+        @include linear-gradient($kendo-calendar-cell-selected-hover-gradient);
         }
         .k-calendar-td:focus .k-calendar-cell-inner,
         .k-calendar-td.k-focus .k-calendar-cell-inner {
-            @include focus-indicator( $kendo-calendar-cell-focus-shadow, true );
+            box-shadow: inset $kendo-calendar-cell-focus-shadow;
         }
         .k-calendar-td.k-selected:focus .k-calendar-cell-inner,
         .k-calendar-td.k-selected.k-focus .k-calendar-cell-inner {
-            @include focus-indicator( $kendo-calendar-cell-selected-focus-shadow, true );
+            box-shadow: inset $kendo-calendar-cell-selected-focus-shadow;
         }
-
 
         // Calendar navigation
         .k-calendar-navigation {
-            @include fill(
-                $kendo-calendar-navigation-text,
-                $kendo-calendar-navigation-bg
-            );
+            color: $kendo-calendar-navigation-text;
+            background-color: $kendo-calendar-navigation-bg;
             box-shadow: inset -1px 0 $kendo-calendar-navigation-border;
 
             li:hover,
@@ -121,11 +98,9 @@
             }
         }
         .k-calendar-navigation-highlight {
-            @include fill(
-                $kendo-calendar-text,
-                $kendo-calendar-bg,
-                $kendo-calendar-border
-            );
+            color: $kendo-calendar-text;
+        background-color: $kendo-calendar-bg;
+        border-color: $kendo-calendar-border;
         }
 
         .k-calendar-navigation-marker {
@@ -152,14 +127,9 @@
 
     // Scheduler integration
     .k-scheduler .k-calendar .k-other-month {
-        @include fill(
-            $kendo-calendar-other-month-text,
-            transparent
-        );
+        color: $kendo-calendar-other-month-text;
+        background-color: transparent;
     }
-
-
-
 
     // Multiview calendar
     .k-calendar { // stylelint-disable-line
@@ -215,7 +185,6 @@
     }
 
 }
-
 
 @mixin kendo-calendar--theme() {
     @include kendo-calendar--theme-base();

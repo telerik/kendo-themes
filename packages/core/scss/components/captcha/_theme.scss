@@ -5,15 +5,12 @@
 
     // Captcha
     .k-captcha {
-        @include fill(
-            $kendo-captcha-text,
-            $kendo-captcha-bg,
-            $kendo-captcha-border
-        );
+        color: $kendo-captcha-text;
+        background-color: $kendo-captcha-bg;
+        border-color: $kendo-captcha-border;
     }
 
 }
-
 
 @mixin kendo-captcha--theme() {
     @include kendo-captcha--theme-base();

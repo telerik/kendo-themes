@@ -3,33 +3,37 @@
 
 @mixin kendo-expander--theme-base() {
 
+    // Expander - base styles only
     .k-expander {
-        @include fill(
-            $kendo-expander-text,
-            $kendo-expander-bg,
-            $kendo-expander-border
-        );
+        color: $kendo-expander-text;
+        background-color: $kendo-expander-bg;
+        border-color: $kendo-expander-border;
+    }
 
+    // Expander - state selectors only
+    .k-expander {
         &.k-focus {
-            @include focus-indicator( $kendo-expander-focus-shadow, true );
+            box-shadow: inset $kendo-expander-focus-shadow;
         }
     }
 
+    // Expander header - base styles only
     .k-expander-header {
-        @include fill(
-            $kendo-expander-header-text,
-            $kendo-expander-header-bg,
-            $kendo-expander-header-border
-        );
+        color: $kendo-expander-header-text;
+        background-color: $kendo-expander-header-bg;
+        border-color: $kendo-expander-header-border;
         outline: none;
+    }
 
+    // Expander header - state selectors only
+    .k-expander-header {
         &:hover,
         &.k-hover {
             background-color: $kendo-expander-header-hover-bg;
         }
 
         &.k-focus {
-            @include focus-indicator( $kendo-expander-header-focus-shadow, true );
+            box-shadow: inset $kendo-expander-header-focus-shadow;
             background-color: $kendo-expander-header-focus-bg;
         }
     }
@@ -42,7 +46,6 @@
         color: $kendo-expander-header-sub-title-text;
     }
 }
-
 
 @mixin kendo-expander--theme() {
     @include kendo-expander--theme-base();

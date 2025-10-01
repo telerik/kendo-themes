@@ -4,9 +4,8 @@
 @mixin kendo-skeleton--theme-base() {
 
     .k-skeleton {
-        @include fill( $bg: $kendo-skeleton-item-bg );
+        background-color: $kendo-skeleton-item-bg ;
     }
-
 
     // Skeleton wave
     :where(.k-skeleton-wave) .k-skeleton,
@@ -23,7 +22,6 @@
     }
 
 }
-
 
 @mixin kendo-skeleton--theme() {
     @include kendo-skeleton--theme-base();

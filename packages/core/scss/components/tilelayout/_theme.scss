@@ -4,25 +4,20 @@
 @mixin kendo-tile-layout--theme-base() {
 
     .k-tilelayout {
-        @include fill(
-            $bg: $kendo-tile-layout-bg
-        );
+        background-color: $kendo-tile-layout-bg;
     }
 
     .k-tilelayout-item:focus,
     .k-tilelayout-item.k-focus {
-        @include focus-indicator($kendo-tile-layout-card-focus-shadow);
+        box-shadow: $kendo-tile-layout-card-focus-shadow;
     }
 
     .k-layout-item-hint {
-        @include fill(
-            $bg: $kendo-tile-layout-hint-bg,
-            $border: $kendo-tile-layout-hint-border
-        );
+        background-color: $kendo-tile-layout-hint-bg;
+        border-color: $kendo-tile-layout-hint-border;
     }
 
 }
-
 
 @mixin kendo-tile-layout--theme() {
     @include kendo-tile-layout--theme-base();

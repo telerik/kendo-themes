@@ -13,10 +13,16 @@
     }
 
     .k-progressbar {
-        @include fill( $kendo-progressbar-text, $kendo-progressbar-bg, $kendo-progressbar-border, $kendo-progressbar-gradient );
+        color: $kendo-progressbar-text;
+        background-color: $kendo-progressbar-bg;
+        border-color: $kendo-progressbar-border;
+        @include linear-gradient($kendo-progressbar-gradient);
 
         .k-selected {
-            @include fill( $kendo-progressbar-value-text, $kendo-progressbar-value-bg, $kendo-progressbar-value-border, $kendo-progressbar-value-gradient );
+            color: $kendo-progressbar-value-text;
+        background-color: $kendo-progressbar-value-bg;
+        border-color: $kendo-progressbar-value-border;
+        @include linear-gradient($kendo-progressbar-value-gradient);
         }
     }
 
@@ -35,12 +41,13 @@
     }
 
     .k-progressbar-indeterminate {
-        @include fill( $kendo-progressbar-indeterminate-text, $kendo-progressbar-indeterminate-bg, $kendo-progressbar-indeterminate-border );
+        color: $kendo-progressbar-indeterminate-text;
+        background-color: $kendo-progressbar-indeterminate-bg;
+        border-color: $kendo-progressbar-indeterminate-border;
         @include striped-gradient( color-mix(in srgb, k-color(base-emphasis) 55%, transparent) );
         background-size: $kendo-progressbar-height $kendo-progressbar-height;
         animation: kendo-progressbar-indeterminate-animation $kendo-progressbar-animation-timing;
     }
-
 
     // Circular progressbar
     .k-circular-progressbar-scale {
@@ -53,7 +60,6 @@
     }
 
 }
-
 
 @mixin kendo-progressbar--theme() {
     @include kendo-progressbar--theme-base();

@@ -29,17 +29,19 @@
 
 @mixin kendo-dock-navigator--theme() {
 
+    // Dock indicator base styles
     .k-dock-indicator {
         color: $kendo-dock-indicator-text;
         background-color: $kendo-dock-indicator-bg;
         outline-color: $kendo-dock-indicator-outline;
         filter: $kendo-dock-indicator-shadow;
+    }
 
-        &:hover,
-        &.k-hover {
-            background-color: $kendo-dock-indicator-hover-bg;
-            color: $kendo-dock-indicator-hover-text;
-        }
+    // Dock indicator hover state
+    .k-dock-indicator:hover,
+    .k-dock-indicator.k-hover {
+        background-color: $kendo-dock-indicator-hover-bg;
+        color: $kendo-dock-indicator-hover-text;
     }
 
 }

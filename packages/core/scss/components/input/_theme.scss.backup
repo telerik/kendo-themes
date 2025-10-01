@@ -1,0 +1,459 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-input--theme-base() {
+
+    // Solid input - base styles only
+    .k-input-solid {
+        color: $kendo-input-text;
+        background-color: $kendo-input-bg;
+        border-color: $kendo-input-border;
+        @include box-shadow( $kendo-input-shadow );
+    }
+
+    // Solid input - state selectors only
+    .k-input-solid {
+        // Hover
+        &:hover,
+        &.k-hover {
+            color: $kendo-input-hover-text;
+            background-color: $kendo-input-hover-bg;
+            border-color: $kendo-input-hover-border;
+            @include box-shadow( $kendo-input-hover-shadow );
+        }
+
+        // Focus
+        &:focus,
+        &.k-focus {
+            color: $kendo-input-focus-text;
+            background-color: $kendo-input-focus-bg;
+            border-color: $kendo-input-focus-border;
+            @include focus-indicator( $kendo-input-focus-shadow );
+        }
+        &:focus-within {
+            color: $kendo-input-focus-text;
+            background-color: $kendo-input-focus-bg;
+            border-color: $kendo-input-focus-border;
+            @include focus-indicator( $kendo-input-focus-shadow );
+        }
+
+        // Disabled
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            color: $kendo-input-disabled-text;
+            background-color: $kendo-input-disabled-bg;
+            border-color: $kendo-input-disabled-border;
+            @include linear-gradient($kendo-input-disabled-gradient);
+            @include box-shadow( $kendo-input-disabled-shadow );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            border-color: $kendo-input-invalid-border ;
+
+            .k-input-validation-icon {
+                color: k-color(error);
+            }
+
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( $kendo-input-invalid-shadow );
+            }
+            &:focus-within {
+                @include focus-indicator( $kendo-input-invalid-shadow );
+            }
+        }
+
+        // Prefix & Suffix
+        .k-input-prefix {
+            color: $kendo-input-prefix-text;
+            background-color: $kendo-input-prefix-bg;
+        }
+
+        .k-input-suffix {
+            color: $kendo-input-suffix-text;
+            background-color: $kendo-input-suffix-bg;
+        }
+
+        .k-input-separator {
+            border-color: $kendo-input-separator-text;
+        }
+    }
+
+    // Solid picker - base styles only
+    .k-picker-solid {
+        color: $kendo-picker-text;
+        background-color: $kendo-picker-bg;
+        border-color: $kendo-picker-border;
+        @include linear-gradient($kendo-picker-gradient);
+    }
+
+    // Solid picker - state selectors only
+    .k-picker-solid {
+        // Hover
+        &:hover,
+        &.k-hover {
+            color: $kendo-picker-hover-text;
+            background-color: $kendo-picker-hover-bg;
+            border-color: $kendo-picker-hover-border;
+            @include linear-gradient($kendo-picker-hover-gradient);
+            @include box-shadow( $kendo-picker-hover-shadow );
+        }
+
+        // Focus
+        &:focus,
+        &.k-focus {
+            color: $kendo-picker-focus-text;
+            background-color: $kendo-picker-focus-bg;
+            border-color: $kendo-picker-focus-border;
+            @include linear-gradient($kendo-picker-focus-gradient);
+            @include focus-indicator( $kendo-picker-focus-shadow );
+        }
+        &:focus-within {
+            color: $kendo-picker-focus-text;
+            background-color: $kendo-picker-focus-bg;
+            border-color: $kendo-picker-focus-border;
+            @include linear-gradient($kendo-picker-focus-gradient);
+            @include focus-indicator( $kendo-picker-focus-shadow );
+        }
+
+        // Disabled
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            color: $kendo-picker-disabled-text;
+            background-color: $kendo-picker-disabled-bg;
+            border-color: $kendo-picker-disabled-border;
+            @include linear-gradient($kendo-picker-disabled-gradient);
+            @include box-shadow( $kendo-picker-disabled-shadow );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            border-color: $kendo-input-invalid-border;
+
+            .k-input-validation-icon {
+                color: k-color(error);
+            }
+
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( $kendo-input-invalid-shadow );
+            }
+            &:focus-within {
+                @include focus-indicator( $kendo-input-invalid-shadow );
+            }
+        }
+    }
+
+    // Outline input - base styles only
+    .k-input-outline {
+        color: $kendo-input-outline-text;
+        background-color: $kendo-input-outline-bg;
+        border-color: $kendo-input-outline-border;
+
+        & > .k-input-button {
+            border-color: inherit;
+        }
+
+        & > .k-input-spinner {
+            border-color: inherit;
+
+            & > .k-spinner-increase,
+            & > .k-spinner-decrease {
+                border-color: inherit;
+           }
+        }
+    }
+
+    // Outline input - state selectors only
+    .k-input-outline {
+        // Hover
+        &:hover,
+        &.k-hover {
+            color: $kendo-input-outline-hover-text;
+            background-color: $kendo-input-outline-hover-bg;
+            border-color: $kendo-input-outline-hover-border;
+        }
+
+        // Focus
+        &:focus,
+        &.k-focus {
+            color: $kendo-input-outline-focus-text;
+        background-color: $kendo-input-outline-focus-bg;
+        border-color: $kendo-input-outline-focus-border;
+            @include focus-indicator( $kendo-input-outline-focus-shadow );
+        }
+        &:focus-within {
+            color: $kendo-input-outline-focus-text;
+        background-color: $kendo-input-outline-focus-bg;
+        border-color: $kendo-input-outline-focus-border;
+            @include focus-indicator( $kendo-input-outline-focus-shadow );
+        }
+
+        // Disabled
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            color: $kendo-input-disabled-text;
+        background-color: $kendo-input-disabled-bg;
+        border-color: $kendo-input-disabled-border;
+        @include linear-gradient($kendo-input-disabled-gradient);
+            @include box-shadow( $kendo-input-disabled-shadow );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            border-color: $kendo-input-invalid-border ;
+
+            .k-input-validation-icon {
+                color: k-color(error);
+            }
+
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( $kendo-input-invalid-shadow );
+            }
+            &:focus-within {
+                @include focus-indicator( $kendo-input-invalid-shadow );
+            }
+        }
+
+        // Prefix & Suffix
+        .k-input-prefix {
+            color: $kendo-input-prefix-text;
+        }
+
+        .k-input-suffix {
+            color: $kendo-input-suffix-text;
+        }
+
+        .k-input-separator {
+            border-color: $kendo-input-separator-text;
+        }
+    }
+
+    // Outline picker
+    .k-picker-outline {
+        color: $kendo-picker-outline-text;
+        background-color: $kendo-picker-outline-bg;
+        border-color: $kendo-picker-outline-border;
+
+        // Hover
+        &:hover,
+        &.k-hover {
+            color: $kendo-picker-outline-hover-text;
+        background-color: $kendo-picker-outline-hover-bg;
+        border-color: $kendo-picker-outline-hover-border;
+        }
+
+        // Focus
+        &:focus,
+        &.k-focus {
+            color: $kendo-picker-outline-focus-text;
+        background-color: $kendo-picker-outline-focus-bg;
+        border-color: $kendo-picker-outline-focus-border;
+            @include focus-indicator( $kendo-picker-outline-focus-shadow );
+        }
+        &:focus-within {
+            color: $kendo-picker-outline-focus-text;
+        background-color: $kendo-picker-outline-focus-bg;
+        border-color: $kendo-picker-outline-focus-border;
+            @include focus-indicator( $kendo-picker-outline-focus-shadow );
+        }
+
+        &:focus:hover,
+        &:focus.k-hover,
+        &.k-focus:hover,
+        &.k-focus.k-hover {
+            color: $kendo-picker-outline-hover-focus-text;
+        background-color: $kendo-picker-outline-hover-focus-bg;
+        border-color: $kendo-picker-outline-hover-focus-border;
+        }
+
+        // Disabled
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            color: $kendo-picker-disabled-text;
+        background-color: $kendo-picker-disabled-bg;
+        border-color: $kendo-picker-disabled-border;
+        @include linear-gradient($kendo-picker-disabled-gradient);
+            @include box-shadow( $kendo-picker-disabled-shadow );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            border-color: $kendo-input-invalid-border ;
+
+            .k-input-validation-icon {
+                color: k-color(error);
+            }
+
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( $kendo-input-invalid-shadow );
+            }
+            &:focus-within {
+                @include focus-indicator( $kendo-input-invalid-shadow );
+            }
+        }
+    }
+
+    // Flat input
+    .k-input-flat {
+        color: $kendo-input-flat-text;
+        background-color: $kendo-input-flat-bg;
+        border-color: $kendo-input-flat-border;
+
+        // Hover
+        &:hover,
+        &.k-hover {
+            color: $kendo-input-flat-hover-text;
+        background-color: $kendo-input-flat-hover-bg;
+        border-color: $kendo-input-flat-hover-border;
+        }
+
+        // Focus
+        &:focus,
+        &.k-focus {
+            color: $kendo-input-flat-focus-text;
+        background-color: $kendo-input-flat-focus-bg;
+        border-color: $kendo-input-flat-focus-border;
+            @include focus-indicator( $kendo-input-flat-focus-shadow );
+        }
+        &:focus-within {
+            color: $kendo-input-flat-focus-text;
+        background-color: $kendo-input-flat-focus-bg;
+        border-color: $kendo-input-flat-focus-border;
+            @include focus-indicator( $kendo-input-flat-focus-shadow );
+        }
+
+        // Disabled
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            color: $kendo-input-disabled-text;
+        background-color: $kendo-input-disabled-bg;
+        border-color: $kendo-input-disabled-border;
+        @include linear-gradient($kendo-input-disabled-gradient);
+            @include box-shadow( $kendo-input-disabled-shadow );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            border-color: $kendo-input-invalid-border ;
+
+            .k-input-validation-icon {
+                color: k-color(error);
+            }
+
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( $kendo-input-invalid-shadow );
+            }
+            &:focus-within {
+                @include focus-indicator( $kendo-input-invalid-shadow );
+            }
+        }
+
+        // Prefix & Suffix
+        .k-input-prefix {
+            color: $kendo-input-prefix-text;
+        }
+
+        .k-input-suffix {
+            color: $kendo-input-suffix-text;
+        }
+
+        .k-input-separator {
+            border-color: $kendo-input-separator-text;
+        }
+    }
+
+    // Flat picker
+    .k-picker-flat {
+        color: $kendo-picker-flat-text;
+        background-color: $kendo-picker-flat-bg;
+        border-color: $kendo-picker-flat-border;
+
+        // Hover
+        &:hover,
+        &.k-hover {
+            color: $kendo-picker-flat-hover-text;
+        background-color: $kendo-picker-flat-hover-bg;
+        border-color: $kendo-picker-flat-hover-border;
+        }
+
+        // Focus
+        &:focus,
+        &.k-focus {
+            color: $kendo-picker-flat-focus-text;
+        background-color: $kendo-picker-flat-focus-bg;
+        border-color: $kendo-picker-flat-focus-border;
+            @include focus-indicator( $kendo-picker-flat-focus-shadow );
+        }
+        &:focus-within {
+            color: $kendo-picker-flat-focus-text;
+        background-color: $kendo-picker-flat-focus-bg;
+        border-color: $kendo-picker-flat-focus-border;
+            @include focus-indicator( $kendo-picker-flat-focus-shadow );
+        }
+
+        &:focus:hover,
+        &:focus.k-hover,
+        &.k-focus:hover,
+        &.k-focus.k-hover {
+            color: $kendo-picker-flat-hover-focus-text;
+        background-color: $kendo-picker-flat-hover-focus-bg;
+        border-color: $kendo-picker-flat-hover-focus-border;
+        }
+
+        // Disabled
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            color: $kendo-picker-disabled-text;
+        background-color: $kendo-picker-disabled-bg;
+        border-color: $kendo-picker-disabled-border;
+        @include linear-gradient($kendo-picker-disabled-gradient);
+            @include box-shadow( $kendo-picker-disabled-shadow );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            border-color: $kendo-input-invalid-border ;
+
+            .k-input-validation-icon {
+                color: k-color(error);
+            }
+
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( $kendo-input-invalid-shadow );
+            }
+            &:focus-within {
+                @include focus-indicator( $kendo-input-invalid-shadow );
+            }
+        }
+    }
+
+}
+
+@mixin kendo-input--theme() {
+    @include kendo-input--theme-base();
+}

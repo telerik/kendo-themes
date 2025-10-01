@@ -6,39 +6,38 @@
 
     .k-form,
     .k-form-inline {
-        @include fill( $color: k-color(on-app-surface) );
+        color: k-color(on-app-surface);
 
         fieldset {
             legend {
-                @include fill( $color: $kendo-fieldset-legend-text );
+                color: $kendo-fieldset-legend-text ;
             }
         }
 
         .k-form-legend {
-            @include fill( $border: $kendo-form-legend-border-color );
+            border-color: $kendo-form-legend-border-color ;
         }
 
         .k-field-info {
-            @include fill( $color: k-color(subtle) );
+            color: k-color(subtle);
         }
 
         .k-alert-error {
-            @include fill( $color: k-color(error) );
+            color: k-color(error);
         }
     }
 
     .k-form-error,
     .k-text-error,
     .k-form-field-error .k-label {
-        @include fill( $color: k-color(error) );
+        color: k-color(error);
     }
 
     .k-form-separator {
-        @include fill( $border: $kendo-form-separator-border-color );
+        border-color: $kendo-form-separator-border-color ;
     }
 
 }
-
 
 @mixin kendo-form--theme() {
     @include kendo-form--theme-base();

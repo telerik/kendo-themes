@@ -26,12 +26,11 @@
         // Focus
         .k-toolbar:focus,
         .k-toolbar.k-focus {
-            @include focus-indicator( $kendo-filter-toolbar-focus-shadow );
+            box-shadow: $kendo-filter-toolbar-focus-shadow;
         }
     }
 
 }
-
 
 @mixin kendo-filter--theme() {
     @include kendo-filter--theme-base();

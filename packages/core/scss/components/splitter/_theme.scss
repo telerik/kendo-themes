@@ -5,11 +5,9 @@
 
     // Splitter
     .k-splitter {
-        @include fill(
-            $kendo-splitter-text,
-            $kendo-splitter-bg,
-            $kendo-splitter-border
-        );
+        color: $kendo-splitter-text;
+        background-color: $kendo-splitter-bg;
+        border-color: $kendo-splitter-border;
     }
 
     // Splitbar
@@ -36,7 +34,6 @@
     }
 
 }
-
 
 @mixin kendo-splitter--theme() {
     @include kendo-splitter--theme-base();

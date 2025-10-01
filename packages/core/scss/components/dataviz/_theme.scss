@@ -11,17 +11,14 @@
     .k-chart,
     .k-sparkline,
     .k-stockchart {
-        @include fill(
-            $kendo-chart-text,
-            transparent,
-            $kendo-chart-border
-        );
+        color: $kendo-chart-text;
+        background-color: transparent;
+        border-color: $kendo-chart-border;
 
         .k-popup {
             background: transparent;
         }
     }
-
 
     // Tooltip
     // TODO
@@ -52,20 +49,16 @@
         cursor: e-resize;
 
         // TODO: refactor and remove button dependency
-        @include fill(
-            $kendo-button-text,
-            $kendo-button-bg,
-            $kendo-button-border,
-            $kendo-button-gradient
-        );
+        color: $kendo-button-text;
+        background-color: $kendo-button-bg;
+        border-color: $kendo-button-border;
+        @include linear-gradient($kendo-button-gradient);
 
         &:hover {
-            @include fill(
-                $kendo-button-hover-text,
-                $kendo-button-hover-bg,
-                $kendo-button-hover-border,
-                $kendo-button-hover-gradient
-            );
+            color: $kendo-button-hover-text;
+        background-color: $kendo-button-hover-bg;
+        border-color: $kendo-button-hover-border;
+        @include linear-gradient($kendo-button-hover-gradient);
         }
     }
 
@@ -82,22 +75,17 @@
         background-color: $kendo-chart-overlay-bg;
     }
 
-
     // Treemap
     .k-treemap {
-        @include fill(
-            $kendo-treemap-text,
-            $kendo-treemap-bg,
-            $kendo-treemap-border
-        );
+        color: $kendo-treemap-text;
+        background-color: $kendo-treemap-bg;
+        border-color: $kendo-treemap-border;
 
         // Title
         .k-treemap-title {
-            @include fill(
-                $kendo-treemap-title-text,
-                $kendo-treemap-title-bg,
-                $kendo-treemap-title-border
-            );
+            color: $kendo-treemap-title-text;
+        background-color: $kendo-treemap-title-bg;
+        border-color: $kendo-treemap-title-border;
         }
 
         // Leaf
@@ -114,7 +102,6 @@
     }
 
 }
-
 
 @mixin kendo-dataviz--theme() {
     @include kendo-dataviz--theme-base();
