@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-scrollbar-hover-color</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-scrollbar-hover-color, color-mix(in srgb, k-color(on-app-surface) 60%, transparent) )</code></td>
-    <td><code>var(--kendo-drawer-scrollbar-hover-color, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 60%, transparent))</code></td>
+    <td><code>var( --kendo-drawer-scrollbar-hover-color, $kendo-drawer-scrollbar-color )</code></td>
+    <td><code>var(--kendo-drawer-scrollbar-hover-color, var(--kendo-drawer-scrollbar-color, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 46%, transparent)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the Drawer scrollbar.</div></div>

@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-bg</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler.</div></div>
@@ -350,8 +350,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-event-selected-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 3px rgba( white, .5 )</code></td>
-    <td><code>(inset 0 0 0 3px rgba(255, 255, 255, 0.5))</code></td>
+    <td><code>inset 0 0 0 3px color-mix(in srgb, k-color(on-primary) 50%, transparent)</code></td>
+    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-primary, #ffffff) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected Scheduler event.</div></div>
@@ -360,8 +360,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-event-ongoing-shadow</td>
     <td>List</td>
-    <td><code>inset 0px 0px 0px 1px #ff0000</code></td>
-    <td><code>(inset 0px 0px 0px 1px #ff0000)</code></td>
+    <td><code>inset 0px 0px 0px 1px k-color(error-on-surface)</code></td>
+    <td><code>(inset 0px 0px 0px 1px var(--kendo-color-error-on-surface, #dc3545))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ongoing Scheduler event.</div></div>

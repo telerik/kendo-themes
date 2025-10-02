@@ -3669,16 +3669,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-calendar-header-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-calendar-header-text, #{$kendo-calendar-text} )</code></td>
-    <td><code>var(--kendo-calendar-header-text, var(--kendo-calendar-text, var(--kendo-color-on-app-surface, #242424)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the calendar header.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-calendar-header-border</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-header-border, #{$kendo-calendar-border} )</code></td>
@@ -4191,8 +4181,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-navigation-text</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-navigation-text, #{$kendo-calendar-header-text} )</code></td>
-    <td><code>var(--kendo-calendar-navigation-text, var(--kendo-calendar-header-text, var(--kendo-calendar-text, var(--kendo-color-on-app-surface, #242424))))</code></td>
+    <td><code>var( --kendo-calendar-navigation-text, k-color(on-app-surface) )</code></td>
+    <td><code>var(--kendo-calendar-navigation-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the navigation in the infinite Calendar.</div></div>
@@ -5144,20 +5134,10 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-card-avatar-size</td>
-    <td>Number</td>
-    <td><code>3rem</code></td>
-    <td><code>3rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Avatar in the Card.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-card-avatar-spacing</td>
     <td>String</td>
-    <td><code>$kendo-card-header-padding-x</code></td>
-    <td><code>var(--kendo-card-header-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Avatar and the text in the Card.</div></div>
@@ -7750,7 +7730,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-colors</td>
     <td>Map</td>
     <td><code>$_default-colors</code></td>
-    <td><ul><li>app-surface: #fafafa</li><li>on-app-surface: #242424</li><li>subtle: #707070</li><li>surface: #ffffff</li><li>surface-alt: #ffffff</li><li>border: rgba(36, 36, 36, 0.72)</li><li>border-alt: #000000</li><li>base-subtle: #f5f5f5</li><li>base-subtle-hover: #ebebeb</li><li>base-subtle-active: #e0e0e0</li><li>base: #ffffff</li><li>base-hover: #f5f5f5</li><li>base-active: #ebebeb</li><li>base-emphasis: #d1d1d1</li><li>base-on-subtle: #242424</li><li>on-base: #242424</li><li>base-on-surface: #242424</li><li>primary-subtle: #ebf3fc</li><li>primary-subtle-hover: #cfe4fa</li><li>primary-subtle-active: #96c6fa</li><li>primary: #0f6cbd</li><li>primary-hover: #115ea3</li><li>primary-active: #0f548c</li><li>primary-emphasis: #abd1f8</li><li>primary-on-subtle: #0a2e4a</li><li>on-primary: #ffffff</li><li>primary-on-surface: #0f6cbd</li><li>secondary-subtle: #f0f0f0</li><li>secondary-subtle-hover: #fafafa</li><li>secondary-subtle-active: #ffffff</li><li>secondary: #ebebeb</li><li>secondary-hover: #f5f5f5</li><li>secondary-active: #fafafa</li><li>secondary-emphasis: #e0e0e0</li><li>secondary-on-subtle: #616161</li><li>on-secondary: #616161</li><li>secondary-on-surface: #616161</li><li>tertiary-subtle: #fdf5fc</li><li>tertiary-subtle-hover: #f5daf2</li><li>tertiary-subtle-active: #edbbe7</li><li>tertiary: #c239b3</li><li>tertiary-hover: #af33a1</li><li>tertiary-active: #962c8a</li><li>tertiary-emphasis: #edbbe7</li><li>tertiary-on-subtle: #af33a1</li><li>on-tertiary: #ffffff</li><li>tertiary-on-surface: #c239b3</li><li>info-subtle: #f6fafe</li><li>info-subtle-hover: #dcedfa</li><li>info-subtle-active: #bfddf5</li><li>info: #3a96dd</li><li>info-hover: #3991d5</li><li>info-active: #4fa1e1</li><li>info-emphasis: #bfddf5</li><li>info-on-subtle: #20547c</li><li>on-info: #242424</li><li>info-on-surface: #3487c7</li><li>success-subtle: #f1faf1</li><li>success-subtle-hover: #c9eac9</li><li>success-subtle-active: #9fd89f</li><li>success: #107c10</li><li>success-hover: #0e700e</li><li>success-active: #0c5e0c</li><li>success-emphasis: #9fd89f</li><li>success-on-subtle: #0e700e</li><li>on-success: #ffffff</li><li>success-on-surface: #107c10</li><li>warning-subtle: #fff9f5</li><li>warning-subtle-hover: #fee5d7</li><li>warning-subtle-active: #fdcfb4</li><li>warning: #f7630c</li><li>warning-hover: #de590b</li><li>warning-active: #bc4b09</li><li>warning-emphasis: #fdcfb4</li><li>warning-on-subtle: #8a3707</li><li>on-warning: #242424</li><li>warning-on-surface: #8a3707</li><li>error-subtle: #fdf3f4</li><li>error-subtle-hover: #f6d1d5</li><li>error-subtle-active: #eeacb2</li><li>error: #c50f1f</li><li>error-hover: #b10e1c</li><li>error-active: #960b18</li><li>error-emphasis: #eeacb2</li><li>error-on-subtle: #b10e1c</li><li>on-error: #ffffff</li><li>error-on-surface: #c50f1f</li><li>light-subtle: #ffffff</li><li>light-subtle-hover: #f5f5f5</li><li>light-subtle-active: #ebebeb</li><li>light: #ebebeb</li><li>light-hover: #f5f5f5</li><li>light-active: #f0f0f0</li><li>light-emphasis: #e0e0e0</li><li>light-on-subtle: #616161</li><li>on-light: #242424</li><li>light-on-surface: #ffffff</li><li>dark-subtle: #000000</li><li>dark-subtle-hover: #242424</li><li>dark-subtle-active: #333333</li><li>dark: #242424</li><li>dark-hover: #424242</li><li>dark-active: #333333</li><li>dark-emphasis: #616161</li><li>dark-on-subtle: #ffffff</li><li>on-dark: #ffffff</li><li>dark-on-surface: #616161</li><li>inverse-subtle: #000000</li><li>inverse-subtle-hover: #242424</li><li>inverse-subtle-active: #333333</li><li>inverse: #242424</li><li>inverse-hover: #424242</li><li>inverse-active: #333333</li><li>inverse-emphasis: #616161</li><li>inverse-on-subtle: #ffffff</li><li>on-inverse: #ffffff</li><li>inverse-on-surface: #616161</li><li>series-a: #2aa0a4</li><li>series-a-bold: #20787b</li><li>series-a-bolder: #155052</li><li>series-a-subtle: #5fb8bb</li><li>series-a-subtler: #94cfd1</li><li>series-b: #ae8c00</li><li>series-b-bold: #826900</li><li>series-b-bolder: #574600</li><li>series-b-subtle: #c2a940</li><li>series-b-subtler: #d7c580</li><li>series-c: #e3008c</li><li>series-c-bold: #aa0069</li><li>series-c-bolder: #720046</li><li>series-c-subtle: #ea40a9</li><li>series-c-subtler: #f180c5</li><li>series-d: #13a10e</li><li>series-d-bold: #0e790b</li><li>series-d-bolder: #0a5107</li><li>series-d-subtle: #4eb94a</li><li>series-d-subtler: #89d086</li><li>series-e: #637cef</li><li>series-e-bold: #4a5db3</li><li>series-e-bolder: #323e78</li><li>series-e-subtle: #c3b1db</li><li>series-e-subtler: #a58bca</li><li>series-f: #CA5010</li><li>series-f-bold: #973C0C</li><li>series-f-bolder: #652808</li><li>series-f-subtle: #D77C4C</li><li>series-f-subtler: #E5A787</li></ul></td>
+    <td><ul><li>app-surface: #fafafa</li><li>on-app-surface: #242424</li><li>subtle: #707070</li><li>surface: #ffffff</li><li>surface-alt: #ffffff</li><li>border: rgba(36, 36, 36, 0.72)</li><li>border-alt: #000000</li><li>base-subtle: #f5f5f5</li><li>base-subtle-hover: #ebebeb</li><li>base-subtle-active: #e0e0e0</li><li>base: #ffffff</li><li>base-hover: #f5f5f5</li><li>base-active: #ebebeb</li><li>base-emphasis: #d1d1d1</li><li>base-on-subtle: #242424</li><li>on-base: #242424</li><li>base-on-surface: #242424</li><li>primary-subtle: #ebf3fc</li><li>primary-subtle-hover: #cfe4fa</li><li>primary-subtle-active: #96c6fa</li><li>primary: #0f6cbd</li><li>primary-hover: #115ea3</li><li>primary-active: #0f548c</li><li>primary-emphasis: #abd1f8</li><li>primary-on-subtle: #0a2e4a</li><li>on-primary: #ffffff</li><li>primary-on-surface: #0f6cbd</li><li>secondary-subtle: #f0f0f0</li><li>secondary-subtle-hover: #fafafa</li><li>secondary-subtle-active: #ffffff</li><li>secondary: #ebebeb</li><li>secondary-hover: #f5f5f5</li><li>secondary-active: #fafafa</li><li>secondary-emphasis: #e0e0e0</li><li>secondary-on-subtle: #616161</li><li>on-secondary: #616161</li><li>secondary-on-surface: #616161</li><li>tertiary-subtle: #fdf5fc</li><li>tertiary-subtle-hover: #f5daf2</li><li>tertiary-subtle-active: #edbbe7</li><li>tertiary: #c239b3</li><li>tertiary-hover: #af33a1</li><li>tertiary-active: #962c8a</li><li>tertiary-emphasis: #edbbe7</li><li>tertiary-on-subtle: #af33a1</li><li>on-tertiary: #ffffff</li><li>tertiary-on-surface: #c239b3</li><li>info-subtle: #f6fafe</li><li>info-subtle-hover: #dcedfa</li><li>info-subtle-active: #bfddf5</li><li>info: #3a96dd</li><li>info-hover: #3991d5</li><li>info-active: #4fa1e1</li><li>info-emphasis: #bfddf5</li><li>info-on-subtle: #20547c</li><li>on-info: #242424</li><li>info-on-surface: #3487c7</li><li>success-subtle: #f1faf1</li><li>success-subtle-hover: #c9eac9</li><li>success-subtle-active: #9fd89f</li><li>success: #107c10</li><li>success-hover: #0e700e</li><li>success-active: #0c5e0c</li><li>success-emphasis: #9fd89f</li><li>success-on-subtle: #0e700e</li><li>on-success: #ffffff</li><li>success-on-surface: #107c10</li><li>warning-subtle: #fff9f5</li><li>warning-subtle-hover: #fee5d7</li><li>warning-subtle-active: #fdcfb4</li><li>warning: #f7630c</li><li>warning-hover: #de590b</li><li>warning-active: #bc4b09</li><li>warning-emphasis: #fdcfb4</li><li>warning-on-subtle: #8a3707</li><li>on-warning: #242424</li><li>warning-on-surface: #8a3707</li><li>error-subtle: #fdf3f4</li><li>error-subtle-hover: #f6d1d5</li><li>error-subtle-active: #eeacb2</li><li>error: #c50f1f</li><li>error-hover: #b10e1c</li><li>error-active: #960b18</li><li>error-emphasis: #eeacb2</li><li>error-on-subtle: #b10e1c</li><li>on-error: #ffffff</li><li>error-on-surface: #c50f1f</li><li>light-subtle: #ffffff</li><li>light-subtle-hover: #f5f5f5</li><li>light-subtle-active: #ebebeb</li><li>light: #ebebeb</li><li>light-hover: #f5f5f5</li><li>light-active: #f0f0f0</li><li>light-emphasis: #e0e0e0</li><li>light-on-subtle: #616161</li><li>on-light: #242424</li><li>light-on-surface: #ffffff</li><li>dark-subtle: #000000</li><li>dark-subtle-hover: #242424</li><li>dark-subtle-active: #333333</li><li>dark: #242424</li><li>dark-hover: #424242</li><li>dark-active: #333333</li><li>dark-emphasis: #616161</li><li>dark-on-subtle: #ffffff</li><li>on-dark: #ffffff</li><li>dark-on-surface: #616161</li><li>inverse-subtle: #616161</li><li>inverse-subtle-hover: #8a8a8a</li><li>inverse-subtle-active: #707070</li><li>inverse: #242424</li><li>inverse-hover: #424242</li><li>inverse-active: #333333</li><li>inverse-emphasis: #707070</li><li>inverse-on-subtle: #ffffff</li><li>on-inverse: #ffffff</li><li>inverse-on-surface: #616161</li><li>series-a: #2aa0a4</li><li>series-a-bold: #20787b</li><li>series-a-bolder: #155052</li><li>series-a-subtle: #5fb8bb</li><li>series-a-subtler: #94cfd1</li><li>series-b: #ae8c00</li><li>series-b-bold: #826900</li><li>series-b-bolder: #574600</li><li>series-b-subtle: #c2a940</li><li>series-b-subtler: #d7c580</li><li>series-c: #e3008c</li><li>series-c-bold: #aa0069</li><li>series-c-bolder: #720046</li><li>series-c-subtle: #ea40a9</li><li>series-c-subtler: #f180c5</li><li>series-d: #13a10e</li><li>series-d-bold: #0e790b</li><li>series-d-bolder: #0a5107</li><li>series-d-subtle: #4eb94a</li><li>series-d-subtler: #89d086</li><li>series-e: #637cef</li><li>series-e-bold: #4a5db3</li><li>series-e-bolder: #323e78</li><li>series-e-subtle: #c3b1db</li><li>series-e-subtler: #a58bca</li><li>series-f: #CA5010</li><li>series-f-bold: #973C0C</li><li>series-f-bolder: #652808</li><li>series-f-subtle: #D77C4C</li><li>series-f-subtler: #E5A787</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Colors map.</div></div>
@@ -11110,8 +11090,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-scrollbar-hover-color</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-scrollbar-hover-color, color-mix(in srgb, k-color(on-app-surface) 60%, transparent) )</code></td>
-    <td><code>var(--kendo-drawer-scrollbar-hover-color, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 60%, transparent))</code></td>
+    <td><code>var( --kendo-drawer-scrollbar-hover-color, $kendo-drawer-scrollbar-color )</code></td>
+    <td><code>var(--kendo-drawer-scrollbar-hover-color, var(--kendo-drawer-scrollbar-color, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 46%, transparent)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the Drawer scrollbar.</div></div>
@@ -13010,8 +12990,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-filter-preview-operator-text</td>
     <td>String</td>
-    <td><code>var( --kendo-filter-preview-operator-text, #{k-color(subtle)} )</code></td>
-    <td><code>var(--kendo-filter-preview-operator-text, var(--kendo-color-subtle, #707070))</code></td>
+    <td><code>var( --kendo-filter-preview-operator-text, #{k-color(on-app-surface)} )</code></td>
+    <td><code>var(--kendo-filter-preview-operator-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Filter preview operator.</div></div>
@@ -14418,8 +14398,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-summary-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-summary-bg, k-color(dark-emphasis))</code></td>
-    <td><code>var(--kendo-gantt-summary-bg, var(--kendo-color-dark-emphasis, #616161))</code></td>
+    <td><code>var(--kendo-gantt-summary-bg, k-color(inverse-subtle))</code></td>
+    <td><code>var(--kendo-gantt-summary-bg, var(--kendo-color-inverse-subtle, #616161))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt summary.</div></div>
@@ -14428,8 +14408,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-summary-progress-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-summary-progress-bg, k-color(dark))</code></td>
-    <td><code>var(--kendo-gantt-summary-progress-bg, var(--kendo-color-dark, #242424))</code></td>
+    <td><code>var(--kendo-gantt-summary-progress-bg, k-color(inverse))</code></td>
+    <td><code>var(--kendo-gantt-summary-progress-bg, var(--kendo-color-inverse, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt summary progress.</div></div>
@@ -14488,8 +14468,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-task-bg, #{k-color(subtle)})</code></td>
-    <td><code>var(--kendo-gantt-task-bg, var(--kendo-color-subtle, #707070))</code></td>
+    <td><code>var(--kendo-gantt-task-bg, #{k-color(inverse-subtle)})</code></td>
+    <td><code>var(--kendo-gantt-task-bg, var(--kendo-color-inverse-subtle, #616161))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt task.</div></div>
@@ -14498,8 +14478,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-text</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-task-text, #{k-color(app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-task-text, var(--kendo-color-app-surface, #fafafa))</code></td>
+    <td><code>var(--kendo-gantt-task-text, #{k-color(on-inverse)})</code></td>
+    <td><code>var(--kendo-gantt-task-text, var(--kendo-color-on-inverse, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt task.</div></div>
@@ -14518,8 +14498,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-progress-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-task-progress-bg, #{k-color(on-app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-task-progress-bg, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-gantt-task-progress-bg, #{k-color(inverse)})</code></td>
+    <td><code>var(--kendo-gantt-task-progress-bg, var(--kendo-color-inverse, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt task progress.</div></div>
@@ -14528,8 +14508,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-progress-hover-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-task-progress-hover-bg, #{k-color(on-app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-task-progress-hover-bg, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-gantt-task-progress-hover-bg, #{k-color(inverse-hover)})</code></td>
+    <td><code>var(--kendo-gantt-task-progress-hover-bg, var(--kendo-color-inverse-hover, #424242))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Gantt task progress.</div></div>
@@ -20894,7 +20874,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-notification-theme</td>
     <td>Map</td>
     <td><code>notification-theme( $kendo-notification-theme-colors )</code></td>
-    <td><ul><li>inverse: "color":"var(--kendo-color-inverse-on-subtle, #ffffff)","background-color":"var(--kendo-color-dark-subtle, #000000)","border":"var(--kendo-color-inverse-emphasis, #616161)"</li><li>light: "color":"var(--kendo-color-light-on-subtle, #616161)","background-color":"var(--kendo-color-light-subtle, #ffffff)","border":"var(--kendo-color-light-emphasis, #e0e0e0)"</li><li>dark: "color":"var(--kendo-color-dark-on-subtle, #ffffff)","background-color":"var(--kendo-color-dark-subtle, #000000)","border":"var(--kendo-color-dark-emphasis, #616161)"</li><li>error: "color":"var(--kendo-color-error-on-subtle, #b10e1c)","background-color":"var(--kendo-color-error-subtle, #fdf3f4)","border":"var(--kendo-color-error-emphasis, #eeacb2)"</li><li>warning: "color":"var(--kendo-color-warning-on-subtle, #8a3707)","background-color":"var(--kendo-color-warning-subtle, #fff9f5)","border":"var(--kendo-color-warning-emphasis, #fdcfb4)"</li><li>success: "color":"var(--kendo-color-success-on-subtle, #0e700e)","background-color":"var(--kendo-color-success-subtle, #f1faf1)","border":"var(--kendo-color-success-emphasis, #9fd89f)"</li><li>info: "color":"var(--kendo-color-info-on-subtle, #20547c)","background-color":"var(--kendo-color-info-subtle, #f6fafe)","border":"var(--kendo-color-info-emphasis, #bfddf5)"</li><li>tertiary: "color":"var(--kendo-color-tertiary-on-subtle, #af33a1)","background-color":"var(--kendo-color-tertiary-subtle, #fdf5fc)","border":"var(--kendo-color-tertiary-emphasis, #edbbe7)"</li><li>secondary: "color":"var(--kendo-color-secondary-on-subtle, #616161)","background-color":"var(--kendo-color-secondary-subtle, #f0f0f0)","border":"var(--kendo-color-secondary-emphasis, #e0e0e0)"</li><li>primary: "color":"var(--kendo-color-primary-on-subtle, #0a2e4a)","background-color":"var(--kendo-color-primary-subtle, #ebf3fc)","border":"var(--kendo-color-primary-emphasis, #abd1f8)"</li></ul></td>
+    <td><ul><li>inverse: "color":"var(--kendo-color-inverse-on-subtle, #ffffff)","background-color":"var(--kendo-color-dark-subtle, #000000)","border":"var(--kendo-color-inverse-emphasis, #707070)"</li><li>light: "color":"var(--kendo-color-light-on-subtle, #616161)","background-color":"var(--kendo-color-light-subtle, #ffffff)","border":"var(--kendo-color-light-emphasis, #e0e0e0)"</li><li>dark: "color":"var(--kendo-color-dark-on-subtle, #ffffff)","background-color":"var(--kendo-color-dark-subtle, #000000)","border":"var(--kendo-color-dark-emphasis, #616161)"</li><li>error: "color":"var(--kendo-color-error-on-subtle, #b10e1c)","background-color":"var(--kendo-color-error-subtle, #fdf3f4)","border":"var(--kendo-color-error-emphasis, #eeacb2)"</li><li>warning: "color":"var(--kendo-color-warning-on-subtle, #8a3707)","background-color":"var(--kendo-color-warning-subtle, #fff9f5)","border":"var(--kendo-color-warning-emphasis, #fdcfb4)"</li><li>success: "color":"var(--kendo-color-success-on-subtle, #0e700e)","background-color":"var(--kendo-color-success-subtle, #f1faf1)","border":"var(--kendo-color-success-emphasis, #9fd89f)"</li><li>info: "color":"var(--kendo-color-info-on-subtle, #20547c)","background-color":"var(--kendo-color-info-subtle, #f6fafe)","border":"var(--kendo-color-info-emphasis, #bfddf5)"</li><li>tertiary: "color":"var(--kendo-color-tertiary-on-subtle, #af33a1)","background-color":"var(--kendo-color-tertiary-subtle, #fdf5fc)","border":"var(--kendo-color-tertiary-emphasis, #edbbe7)"</li><li>secondary: "color":"var(--kendo-color-secondary-on-subtle, #616161)","background-color":"var(--kendo-color-secondary-subtle, #f0f0f0)","border":"var(--kendo-color-secondary-emphasis, #e0e0e0)"</li><li>primary: "color":"var(--kendo-color-primary-on-subtle, #0a2e4a)","background-color":"var(--kendo-color-primary-subtle, #ebf3fc)","border":"var(--kendo-color-primary-emphasis, #abd1f8)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The generated theme colors map for the Notification.</div></div>
@@ -21473,8 +21453,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-card-body-vbox-min-height</td>
     <td>String</td>
-    <td><code>var( --kendo-orgchart-card-body-vbox-min-height, #{$kendo-card-avatar-size} )</code></td>
-    <td><code>var(--kendo-orgchart-card-body-vbox-min-height, 3rem)</code></td>
+    <td><code>var( --kendo-orgchart-card-body-vbox-min-height, 3em )</code></td>
+    <td><code>var(--kendo-orgchart-card-body-vbox-min-height, 3em)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The min height of the OrgChart Card body title wrap.</div></div>
@@ -21933,8 +21913,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-free-text-annotation-placeholder-text</td>
     <td>String</td>
-    <td><code>var( --kendo-pdf-viewer-free-text-annotation-placeholder-text, rgba(124, 22, 27, 0.5) )</code></td>
-    <td><code>var(--kendo-pdf-viewer-free-text-annotation-placeholder-text, rgba(124, 22, 27, 0.5))</code></td>
+    <td><code>var( --kendo-pdf-viewer-free-text-annotation-placeholder-text, k-color(primary-on-subtle) )</code></td>
+    <td><code>var(--kendo-pdf-viewer-free-text-annotation-placeholder-text, var(--kendo-color-primary-on-subtle, #0a2e4a))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The placeholder text color of the PDFViewer free text annotation.</div></div>
@@ -21943,8 +21923,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-free-text-annotation-text</td>
     <td>String</td>
-    <td><code>var( --kendo-pdf-viewer-free-text-annotation-text, rgba(124, 22, 27, 0.7) )</code></td>
-    <td><code>var(--kendo-pdf-viewer-free-text-annotation-text, rgba(124, 22, 27, 0.7))</code></td>
+    <td><code>var( --kendo-pdf-viewer-free-text-annotation-text, k-color(primary-on-subtle) )</code></td>
+    <td><code>var(--kendo-pdf-viewer-free-text-annotation-text, var(--kendo-color-primary-on-subtle, #0a2e4a))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer free text annotation.</div></div>
@@ -31939,8 +31919,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-current-time-color</td>
     <td>String</td>
-    <td><code>var( --kendo-current-time-color, #ff0000 )</code></td>
-    <td><code>var(--kendo-current-time-color, #ff0000)</code></td>
+    <td><code>var( --kendo-current-time-color, k-color(error-on-surface) )</code></td>
+    <td><code>var(--kendo-current-time-color, var(--kendo-color-error-on-surface, #c50f1f))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the current time indicator.</div></div>
