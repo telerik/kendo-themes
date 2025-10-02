@@ -1,7 +1,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-rating--layout-base() {
+// @mixin kendo-rating--layout-base() {
 
     .k-rating {
         margin: 0;
@@ -85,9 +85,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-rating--layout() {
-    @include kendo-rating--layout-base();
-}
+// }

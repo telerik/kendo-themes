@@ -1,6 +1,6 @@
 @use "./variables.scss" as *;
 
-@mixin kendo-no-data--layout-base() {
+// @mixin kendo-no-data--layout-base() {
 
         .k-no-data {
             min-height: $kendo-no-data-min-height;
@@ -19,8 +19,8 @@
         }
 
 
-}
+// }
 
-@mixin kendo-no-data--layout() {
-    @include kendo-no-data--layout-base();
-}
+// @mixin kendo-no-data--layout() {
+//     @include kendo-no-data--layout-base();
+// }

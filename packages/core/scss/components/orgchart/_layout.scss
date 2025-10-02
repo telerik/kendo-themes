@@ -2,7 +2,7 @@
 @use "./variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-orgchart--layout-base() {
+// @mixin kendo-orgchart--layout-base() {
 
     // OrgChart
     .k-orgchart {
@@ -110,9 +110,4 @@
     .k-orgchart-button {
         z-index: k-z-index("base", 2);
     }
-}
-
-
-@mixin kendo-orgchart--layout() {
-    @include kendo-orgchart--layout-base();
-}
+// }

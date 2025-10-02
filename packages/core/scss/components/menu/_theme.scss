@@ -1,7 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-menu--theme-base() {
+// @mixin kendo-menu--theme-base() {
 
     .k-menu:not(.k-context-menu) {
         @include fill(
@@ -137,9 +137,4 @@
             }
         }
     }
-}
-
-
-@mixin kendo-menu--theme() {
-    @include kendo-menu--theme-base();
-}
+// }

@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/expansion-panel/_layout.scss" as *;
-
-
-@mixin kendo-expander--layout() {
-    @include kendo-expander--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/expansion-panel/_layout.scss";

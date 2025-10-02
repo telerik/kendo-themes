@@ -4,7 +4,7 @@
 
 @use "../../spacing/index.import.scss" as *;
 
-@mixin kendo-suggestion--layout-base() {
+// @mixin kendo-suggestion--layout-base() {
     .k-suggestion-scrollwrap {
         width: 100%;
         box-sizing: border-box;
@@ -47,8 +47,4 @@
     }
 
 
-}
-
-@mixin kendo-suggestion--layout() {
-    @include kendo-suggestion--layout-base();
-}
+// }

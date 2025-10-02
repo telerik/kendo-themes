@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/scrollview/_layout.scss" as *;
-
-
-@mixin kendo-scrollview--layout() {
-    @include kendo-scrollview--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/scrollview/_layout.scss";

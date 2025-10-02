@@ -1,7 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-dock-manager--theme-base() {
+// @mixin kendo-dock-manager--theme-base() {
 
     // DockManager
     .k-dock-manager {
@@ -25,9 +25,9 @@
         border-color: $kendo-dock-manager-dock-preview-border;
     }
 
-}
+// }
 
-@mixin kendo-dock-navigator--theme() {
+// @mixin kendo-dock-navigator--theme() {
 
     .k-dock-indicator {
         color: $kendo-dock-indicator-text;
@@ -42,9 +42,8 @@
         }
     }
 
-}
 
-@mixin kendo-dock-manager--theme() {
-    @include kendo-dock-manager--theme-base();
-    @include kendo-dock-navigator--theme();
-}
+// @mixin kendo-dock-manager--theme() {
+//     @include kendo-dock-manager--theme-base();
+//     @include kendo-dock-navigator--theme();
+// }

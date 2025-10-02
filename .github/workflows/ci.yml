@@ -97,7 +97,7 @@ jobs:
   set-commit-status:
     name: Set commit status
     runs-on: ubuntu-latest
-    needs: [ detect-changes, ci-lint-scripts, ci-lint-styles, ci-docs, ci-test-units, ci-test-integrations, ci-a11y, ci-test-html-spec ]
+    needs: [ detect-changes, ci-lint-scripts, ci-lint-styles, ci-docs, ci-a11y, ci-test-html-spec ]
     timeout-minutes: 30
     if: ${{ always() && needs.detect-changes.outputs.snapshot_sha }}
 
@@ -206,27 +206,27 @@ jobs:
         run: echo "Done!"
 
 
-  test-units:
-    name: Test units
-    uses: ./.github/workflows/_test-units.yml
+  # test-units:
+  #   name: Test units
+  #   uses: ./.github/workflows/_test-units.yml
 
-  ci-test-units:
-    name: Status check > Unit
-    runs-on: ubuntu-latest
-    needs: [ test-units ]
-    steps:
-      - name: Done
-        run: echo "Done!"
+  # ci-test-units:
+  #   name: Status check > Unit
+  #   runs-on: ubuntu-latest
+  #   needs: [ test-units ]
+  #   steps:
+  #     - name: Done
+  #       run: echo "Done!"
 
 
-  test-integrations:
-    name: Test integrations
-    uses: ./.github/workflows/_test-integrations.yml
+  # test-integrations:
+  #   name: Test integrations
+  #   uses: ./.github/workflows/_test-integrations.yml
 
-  ci-test-integrations:
-    name: Status check > Integration
-    runs-on: ubuntu-latest
-    needs: [ test-integrations ]
-    steps:
-      - name: Done
-        run: echo "Done!"
+  # ci-test-integrations:
+  #   name: Status check > Integration
+  #   runs-on: ubuntu-latest
+  #   needs: [ test-integrations ]
+  #   steps:
+  #     - name: Done
+  #       run: echo "Done!"

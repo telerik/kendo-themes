@@ -1,7 +1,7 @@
 
 @use "./_variables.scss" as *;
 
-@mixin kendo-skeleton--layout-base() {
+// @mixin kendo-skeleton--layout-base() {
 
     .k-skeleton {
         display: block;
@@ -81,9 +81,4 @@
         animation: k-skeleton-pulse 1.5s ease-in-out .5s infinite;
     }
 
-}
-
-
-@mixin kendo-skeleton--layout() {
-    @include kendo-skeleton--layout-base();
-}
+// }

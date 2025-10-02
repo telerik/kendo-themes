@@ -1,6 +1,6 @@
 @use "./variables.scss" as *;
 
-@mixin kendo-listview--layout-base() {
+// @mixin kendo-listview--layout-base() {
 
     // Listview
     .k-listview {
@@ -138,9 +138,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-listview--layout() {
-    @include kendo-listview--layout-base();
-}
+// }

@@ -6,7 +6,7 @@
 @use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-button--theme-base() {
+// @mixin kendo-button--theme-base() {
 
     // Solid button
     .k-button-solid-base {
@@ -299,7 +299,7 @@
                 color: $kendo-button-disabled-text;
             }
         }
-    }
+    // }
 
 
     // Clear button
@@ -330,9 +330,4 @@
     .k-button-group {}
 
 
-}
-
-
-@mixin kendo-button--theme() {
-    @include kendo-button--theme-base();
 }

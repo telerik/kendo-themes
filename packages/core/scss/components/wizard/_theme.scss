@@ -1,6 +1,6 @@
 @use "./variables.scss" as *;
 
-@mixin kendo-wizard--theme-base() {
+// @mixin kendo-wizard--theme-base() {
 
     .k-wizard-step {
         &:focus,
@@ -9,9 +9,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-wizard--theme() {
-    @include kendo-wizard--theme-base();
-}
+// }

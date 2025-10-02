@@ -3,7 +3,7 @@
 @use "../spacing/index.import.scss" as *;
 @use "../_variables.scss" as *;
 
-@mixin kendo-core--styles--base() {
+// @mixin kendo-core--styles--base() {
 
     // Disabled state
     .k-disabled {
@@ -146,4 +146,4 @@
         inset-block-start: 0;
         inset-inline-end: 0;
     }
-}
+// }

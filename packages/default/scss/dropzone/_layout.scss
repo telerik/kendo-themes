@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/dropzone/_layout.scss" as *;
-
-
-@mixin kendo-dropzone--layout() {
-    @include kendo-dropzone--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/dropzone/_layout.scss";

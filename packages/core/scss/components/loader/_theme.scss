@@ -1,7 +1,7 @@
 @use "../../color-system/_functions.import.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-loader--theme-base() {
+// @mixin kendo-loader--theme-base() {
 
     @each $name, $color in $kendo-loader-theme-colors {
         .k-loader-#{$name} {
@@ -14,9 +14,4 @@
         border-color: $kendo-loader-container-panel-border-color;
     }
 
-}
-
-
-@mixin kendo-loader--theme() {
-    @include kendo-loader--theme-base();
-}
+// }

@@ -2,7 +2,7 @@
 @use "../../z-index/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-bottom-navigation--layout-base() {
+// @mixin kendo-bottom-navigation--layout-base() {
 
     // Bottom Navigation
     .k-bottom-nav {
@@ -115,9 +115,9 @@
         z-index: k-z-index("floating");
     }
 
-}
+// }
 
 
-@mixin kendo-bottom-navigation--layout() {
-    @include kendo-bottom-navigation--layout-base();
-}
+// @mixin kendo-bottom-navigation--layout() {
+//     @include kendo-bottom-navigation--layout-base();
+// }

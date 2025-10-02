@@ -2,7 +2,7 @@
 @use "../icons/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-file-manager--layout-base() {
+// @mixin kendo-file-manager--layout-base() {
 
     // File Manager
     .k-filemanager {
@@ -236,9 +236,9 @@
         gap: $kendo-icon-spacing;
     }
 
-}
+// }
 
 
-@mixin kendo-file-manager--layout() {
-    @include kendo-file-manager--layout-base();
-}
+// @mixin kendo-file-manager--layout() {
+//     @include kendo-file-manager--layout-base();
+// }

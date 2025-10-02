@@ -1,4 +1,4 @@
-@mixin kendo-dropdown-list--layout-base() {
+// @mixin kendo-dropdown-list--layout-base() {
 
     // Dropdown list
     .k-dropdown-list {}
@@ -35,9 +35,9 @@
         @extend .k-dropdown-list !optional;
     }
 
-}
+// }
 
 
-@mixin kendo-dropdown-list--layout() {
-    @include kendo-dropdown-list--layout-base();
-}
+// @mixin kendo-dropdown-list--layout() {
+//     @include kendo-dropdown-list--layout-base();
+// }
