@@ -2,7 +2,7 @@
 @use "../overlay/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-loader--layout-base() {
+// @mixin kendo-loader--layout-base() {
 
     .k-loader {
         position: relative;
@@ -448,11 +448,10 @@
         }
     }
 
-}
 
 // Legacy implementation of the loading icon inside inputs and pickers
 // Replace with loader component
-@mixin kendo-loading--layout-base() {
+// @mixin kendo-loading--layout-base() {
 
     // Loading mask
     .k-loading-mask,
@@ -580,9 +579,4 @@
         }
     }
 
-}
-
-@mixin kendo-loader--layout() {
-    @include kendo-loader--layout-base();
-    @include kendo-loading--layout-base();
-}
+// }

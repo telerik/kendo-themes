@@ -1,6 +1,6 @@
 @use "./_variables.scss" as *;
 
-@mixin kendo-messagebox--layout-base() {
+// @mixin kendo-messagebox--layout-base() {
 
     // Base
     .k-messagebox {
@@ -20,9 +20,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-messagebox--layout() {
-    @include kendo-messagebox--layout-base();
-}
+// }

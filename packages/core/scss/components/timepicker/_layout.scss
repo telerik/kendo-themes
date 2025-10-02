@@ -1,4 +1,4 @@
-@mixin kendo-time-picker--layout-base() {
+// @mixin kendo-time-picker--layout-base() {
 
     // Time picker
     .k-time-picker {}
@@ -9,9 +9,8 @@
         @extend .k-time-picker !optional;
     }
 
-}
 
 
-@mixin kendo-time-picker--layout() {
-    @include kendo-time-picker--layout-base();
-}
+// @mixin kendo-time-picker--layout() {
+//     @include kendo-time-picker--layout-base();
+// }

@@ -1,7 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-listgroup--theme-base() {
+// @mixin kendo-listgroup--theme-base() {
 
     // Listgroup
     .k-listgroup {
@@ -12,9 +12,4 @@
         );
     }
 
-}
-
-
-@mixin kendo-listgroup--theme() {
-    @include kendo-listgroup--theme-base();
-}
+// }

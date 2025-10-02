@@ -9,7 +9,7 @@
 @use "../input/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-editor--layout-base() {
+// @mixin kendo-editor--layout-base() {
 
     // Base
     .k-editor {
@@ -649,9 +649,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-editor--layout() {
-    @include kendo-editor--layout-base();
-}
+// }

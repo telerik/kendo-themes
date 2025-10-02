@@ -4,7 +4,7 @@
 @use "../../z-index/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-window--layout-base() {
+// @mixin kendo-window--layout-base() {
 
     .k-window {
         @include border-radius( $kendo-window-border-radius );
@@ -174,9 +174,4 @@
         .k-resize-w { left: 0; }
     }
 
-}
-
-
-@mixin kendo-window--layout() {
-    @include kendo-window--layout-base();
-}
+// }

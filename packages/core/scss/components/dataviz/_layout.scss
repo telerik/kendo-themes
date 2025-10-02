@@ -12,7 +12,7 @@
 @use "./variables.scss" as *;
 @use "../tooltip/_variables.scss" as *;
 
-@mixin kendo-dataviz--layout-base() {
+// @mixin kendo-dataviz--layout-base() {
 
     // Barcode
     .k-barcode {
@@ -573,9 +573,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-dataviz--layout() {
-    @include kendo-dataviz--layout-base();
-}
+// }

@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/textarea/_theme.scss" as *;
-
-
-@mixin kendo-textarea--theme() {
-    @include  kendo-textarea--theme-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/textarea/_theme.scss";

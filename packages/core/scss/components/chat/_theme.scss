@@ -4,7 +4,7 @@
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-chat--theme-base() {
+// @mixin kendo-chat--theme-base() {
 
     // Chat
     .k-chat {
@@ -129,9 +129,4 @@
         );
     }
 
-}
-
-
-@mixin kendo-chat--theme() {
-    @include kendo-chat--theme-base();
-}
+// }

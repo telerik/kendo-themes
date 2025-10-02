@@ -4,7 +4,7 @@
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-dialog--theme-base() {
+// @mixin kendo-dialog--theme-base() {
     .k-dialog {
         background-color: $kendo-dialog-bg;
     }
@@ -26,9 +26,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-dialog--theme() {
-    @include kendo-dialog--theme-base();
-}
+// }

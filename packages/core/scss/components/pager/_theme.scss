@@ -1,7 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-pager--theme-base() {
+// @mixin kendo-pager--theme-base() {
 
     // Pager
     .k-pager {
@@ -18,9 +18,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-pager--theme() {
-    @include kendo-pager--theme-base();
-}
+// }

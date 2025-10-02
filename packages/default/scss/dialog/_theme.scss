@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/dialog/_theme.scss" as *;
-
-
-@mixin kendo-dialog--theme() {
-    @include kendo-dialog--theme-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/dialog/_theme.scss";

@@ -2,7 +2,7 @@
 @use "../icons/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-color-preview--layout-base() {
+// @mixin kendo-color-preview--layout-base() {
 
     // Color Preview
     .k-color-preview {
@@ -77,9 +77,9 @@
         background-position: 0 0;
     }
 
-}
+// }
 
 
-@mixin kendo-color-preview--layout() {
-    @include kendo-color-preview--layout-base();
-}
+// @mixin kendo-color-preview--layout() {
+//     @include kendo-color-preview--layout-base();
+// }

@@ -1,6 +1,6 @@
 @use "./variables.scss" as *;
 
-@mixin kendo-chart-wizard--theme-base() {
+// @mixin kendo-chart-wizard--theme-base() {
     .k-chart-wizard {
         .k-icon-text-wrapper {
             &.k-selected {
@@ -29,9 +29,8 @@
             background-color: $kendo-chart-wizard-icon-area-bg;
         }
     }
-}
 
 
-@mixin kendo-chart-wizard--theme() {
-    @include kendo-chart-wizard--theme-base();
-}
+// @mixin kendo-chart-wizard--theme() {
+//     @include kendo-chart-wizard--theme-base();
+// }

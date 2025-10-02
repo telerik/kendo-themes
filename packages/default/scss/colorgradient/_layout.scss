@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/colorgradient/_layout.scss" as *;
-
-
-@mixin kendo-color-gradient--layout() {
-    @include kendo-color-gradient--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/colorgradient/_layout.scss";

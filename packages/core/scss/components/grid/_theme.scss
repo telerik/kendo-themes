@@ -8,7 +8,7 @@
 @use "../list/_variables.scss" as *;
 @use "../popup/_variables.scss" as *;
 
-@mixin kendo-grid--theme-base() {
+// @mixin kendo-grid--theme-base() {
 
     .k-grid-header,
     .k-grid-header-wrap,
@@ -473,9 +473,4 @@
         border-inline-start-color: rgba(0, 0, 0, 0);
         border-inline-end-color: currentColor;
     }
-}
-
-
-@mixin kendo-grid--theme() {
-    @include kendo-grid--theme-base();
-}
+// }

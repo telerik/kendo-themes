@@ -3,7 +3,7 @@
 @use "./_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-badge--layout-base() {
+// @mixin kendo-badge--layout-base() {
 
     .k-badge {
         padding: 0;
@@ -148,9 +148,4 @@
         box-shadow: 0 0 0 2px k-color(surface-alt);
     }
 
-}
-
-
-@mixin kendo-badge--layout() {
-    @include kendo-badge--layout-base();
-}
+// }

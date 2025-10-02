@@ -3,7 +3,7 @@
 @use "./variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 
-@mixin kendo-image-editor--layout-base() {
+// @mixin kendo-image-editor--layout-base() {
 
     // Image Editor
     .k-imageeditor {
@@ -157,9 +157,8 @@
         }
     }
 
-}
 
 
-@mixin kendo-image-editor--layout() {
-    @include kendo-image-editor--layout-base();
-}
+// @mixin kendo-image-editor--layout() {
+//     @include kendo-image-editor--layout-base();
+// }

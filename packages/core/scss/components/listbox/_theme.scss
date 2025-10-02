@@ -2,7 +2,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-listbox--theme-base() {
+// @mixin kendo-listbox--theme-base() {
 
     // Listbox
     .k-listbox {
@@ -18,9 +18,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-listbox--theme() {
-    @include kendo-listbox--theme-base();
-}
+// }

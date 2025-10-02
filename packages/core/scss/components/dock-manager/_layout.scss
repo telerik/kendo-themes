@@ -2,7 +2,7 @@
 @use "./variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-dock-manager--layout-base() {
+// @mixin kendo-dock-manager--layout-base() {
 
     // DockManager
     .k-dock-manager {
@@ -163,9 +163,9 @@
         padding: 0;
     }
 
-}
+// }
 
-@mixin kendo-dock-navigator--layout() {
+// @mixin kendo-dock-navigator--layout() {
 
     // DockNavigator
     .k-dock-navigator-container {
@@ -220,9 +220,9 @@
         grid-area: 2 / 2 / auto;
     }
 
-}
+// }
 
-@mixin kendo-dock-manager--layout() {
-    @include kendo-dock-manager--layout-base();
-    @include kendo-dock-navigator--layout();
-}
+// @mixin kendo-dock-manager--layout() {
+//     @include kendo-dock-manager--layout-base();
+//     @include kendo-dock-navigator--layout();
+// }

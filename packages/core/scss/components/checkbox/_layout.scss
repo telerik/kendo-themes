@@ -5,7 +5,7 @@
 @use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-checkbox--layout-base() {
+// @mixin kendo-checkbox--layout-base() {
 
     // Checkbox
     .k-checkbox {
@@ -223,9 +223,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-checkbox--layout() {
-    @include kendo-checkbox--layout-base();
-}
+// }

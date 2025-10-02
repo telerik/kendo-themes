@@ -1,7 +1,7 @@
 @use "../tooltip/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-validator--layout-base() {
+// @mixin kendo-validator--layout-base() {
 
     // Validator
     .k-validator {}
@@ -23,9 +23,4 @@
         max-width: 300px;
     }
 
-}
-
-
-@mixin kendo-validator--layout() {
-    @include kendo-validator--layout-base();
-}
+// }

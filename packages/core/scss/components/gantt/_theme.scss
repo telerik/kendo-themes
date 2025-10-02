@@ -2,7 +2,7 @@
 @use "../../color-system/_functions.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-gantt--theme-base() {
+// @mixin kendo-gantt--theme-base() {
 
     // Gantt
     .k-gantt {
@@ -277,9 +277,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-gantt--theme() {
-    @include kendo-gantt--theme-base();
-}
+// }

@@ -3,7 +3,7 @@
 @use "../../z-index/index.import.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-popup--layout-base() {
+// @mixin kendo-popup--layout-base() {
 
     // Animation Container
     .k-animation-container {
@@ -11,6 +11,8 @@
         overflow: hidden;
         z-index: k-z-index("animation");
         outline: none;
+
+        @include border-bottom-radius-only( $kendo-border-radius-md );
 
         &-fixed {
             position: fixed;
@@ -21,7 +23,6 @@
             display: inline-block;
         }
 
-        @include border-bottom-radius-only( $kendo-border-radius-md );
     }
 
     .k-animation-container:has(.k-child-animation-container > .k-popup) {
@@ -90,9 +91,4 @@
         box-shadow: $kendo-popup-shadow;
     }
 
-}
-
-
-@mixin kendo-popup--layout() {
-    @include kendo-popup--layout-base();
-}
+// }

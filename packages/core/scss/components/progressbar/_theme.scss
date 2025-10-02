@@ -5,7 +5,7 @@
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-progressbar--theme-base() {
+// @mixin kendo-progressbar--theme-base() {
 
     @keyframes kendo-progressbar-indeterminate-animation {
         from { background-position: 0 0; }
@@ -52,9 +52,4 @@
         transition: stroke .5s ease;
     }
 
-}
-
-
-@mixin kendo-progressbar--theme() {
-    @include kendo-progressbar--theme-base();
-}
+// }

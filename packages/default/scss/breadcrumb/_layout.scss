@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/breadcrumb/_layout.scss" as *;
-
-
-@mixin kendo-breadcrumb--layout() {
-    @include kendo-breadcrumb--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/breadcrumb/_layout.scss";

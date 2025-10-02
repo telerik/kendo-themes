@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/dataviz/_theme.scss" as *;
-
-
-@mixin kendo-dataviz--theme() {
-    @include kendo-dataviz--theme-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/dataviz/_theme.scss";

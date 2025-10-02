@@ -1,6 +1,6 @@
 @use "./_variables.scss" as *;
 
-@mixin kendo-avatar--layout-base() {
+// @mixin kendo-avatar--layout-base() {
 
     // Avatar
     .k-avatar {
@@ -75,9 +75,4 @@
     }
 
 
-}
-
-
-@mixin kendo-avatar--layout() {
-    @include kendo-avatar--layout-base();
-}
+// }

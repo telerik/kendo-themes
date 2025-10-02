@@ -2,7 +2,7 @@
 @use "./variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-drawer--layout-base() {
+// @mixin kendo-drawer--layout-base() {
 
     // Container
     .k-drawer-container {
@@ -204,9 +204,4 @@
     .k-drawer-mini .k-drawer-wrapper {
         width: $kendo-drawer-mini-initial-width;
     }
-}
-
-
-@mixin kendo-drawer--layout() {
-    @include kendo-drawer--layout-base();
-}
+// }

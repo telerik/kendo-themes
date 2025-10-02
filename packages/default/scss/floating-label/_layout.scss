@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/floating-label/_layout.scss" as *;
-
-
-@mixin kendo-floating-label--layout() {
-    @include kendo-floating-label--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/floating-label/_layout.scss";

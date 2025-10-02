@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/tabstrip/_theme.scss" as *;
-
-
-@mixin kendo-tabstrip--theme() {
-    @include kendo-tabstrip--theme-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/tabstrip/_theme.scss";

@@ -10,7 +10,7 @@
 @use "../icons/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-gantt--layout-base() {
+// @mixin kendo-gantt--layout-base() {
 
     $row-height: #{$kendo-line-height-em} + calc( 2 * #{$kendo-table-md-cell-padding-y} ) + #{$kendo-grid-cell-horizontal-border-width};
 
@@ -854,9 +854,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-gantt--layout() {
-    @include kendo-gantt--layout-base();
-}
+// }

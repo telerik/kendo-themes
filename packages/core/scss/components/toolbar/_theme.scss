@@ -2,7 +2,7 @@
 @use "./_variables.scss" as *;
 @use "../menu/_variables.scss" as *;
 
-@mixin kendo-toolbar--theme-base() {
+// @mixin kendo-toolbar--theme-base() {
 
     // Theme
     .k-toolbar {
@@ -185,9 +185,4 @@
             }
         }
     }
-}
-
-
-@mixin kendo-toolbar--theme() {
-    @include kendo-toolbar--theme-base();
-}
+// }

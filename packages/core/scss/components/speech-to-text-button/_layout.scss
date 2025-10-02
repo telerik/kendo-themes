@@ -1,14 +1,13 @@
 @use "./_variables.scss" as *;
 
-@mixin kendo-speech-to-text-button--layout-base() {
+// @mixin kendo-speech-to-text-button--layout-base() {
 
     .k-speech-to-text-button {
         &.k-listening {
             animation: k-button-pulsing 1.5s ease-in-out 0.5s infinite;
         }
     }
-}
 
-@mixin kendo-speech-to-text-button--layout() {
-    @include kendo-speech-to-text-button--layout-base();
-}
+// @mixin kendo-speech-to-text-button--layout() {
+//     @include kendo-speech-to-text-button--layout-base();
+// }
