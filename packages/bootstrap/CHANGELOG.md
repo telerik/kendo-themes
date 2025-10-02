@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.2...v12.1.0-dev.3) (2025-10-02)
+
+
+### Bug Fixes
+
+* **adaptive:** update scheduler time-period text ([8e017d1](https://github.com/telerik/kendo-themes/commit/8e017d1227339070d1387ded85064268920d3a6b))
+* **bootstrap:** update variables to use design tokens ([d60f2f9](https://github.com/telerik/kendo-themes/commit/d60f2f9e277f53dd15c85d4d64dfd16c82eb1ecf))
+* **calendar:** buttons in header should inherit their styles from the flat button ([0c3a700](https://github.com/telerik/kendo-themes/commit/0c3a700e59c86483d5101ff92a79cd1c7b008904))
+* **card:** avatar inside card should adheres to the avatar component's sizing options ([6c590b7](https://github.com/telerik/kendo-themes/commit/6c590b7364e73c2e2cbdfdabd963b2de9776c462))
+* **chip:** update interactive states styles to use correct design tokes ([935a126](https://github.com/telerik/kendo-themes/commit/935a1265a5186264968dd0c58b14102c220a89d9))
+* **drawer:** update scrollbar colors ([f4fb966](https://github.com/telerik/kendo-themes/commit/f4fb966a527f31eb20917476cab73bb46a55ab6b))
+* **filter:** update text colors ([b8cb4d3](https://github.com/telerik/kendo-themes/commit/b8cb4d3becbc80bc698be93f1b172769ac12d0d3))
+* **gantt:** update tokens ([1608df2](https://github.com/telerik/kendo-themes/commit/1608df2ecb8c60833bfbb3111c5fa07cae95da2a))
+* **pdf-viewer:** update annotations colors ([8c15348](https://github.com/telerik/kendo-themes/commit/8c15348fb486a4a8e462c3c5d410ed935599f3ae))
+* **rating:** update colors ([486b790](https://github.com/telerik/kendo-themes/commit/486b790f747c35f7c7ecd423e672f2249caec5bd))
+* **scrollview:** delete unnecessary rules and update navigation colors ([55994d3](https://github.com/telerik/kendo-themes/commit/55994d368b157ec830a8120b15389ceab1cba8e2))
+
+
+
+
+
 # [12.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.1...v12.1.0-dev.2) (2025-09-29)
 
 **Note:** Version bump only for package @progress/kendo-theme-bootstrap

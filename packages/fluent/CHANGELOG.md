@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.2...v12.1.0-dev.3) (2025-10-02)
+
+
+### Bug Fixes
+
+* **adaptive:** update scheduler time-period text ([8e017d1](https://github.com/telerik/kendo-themes/commit/8e017d1227339070d1387ded85064268920d3a6b))
+* **calendar:** buttons in header should inherit their styles from the flat button ([0c3a700](https://github.com/telerik/kendo-themes/commit/0c3a700e59c86483d5101ff92a79cd1c7b008904))
+* **card:** avatar inside card should adheres to the avatar component's sizing options ([6c590b7](https://github.com/telerik/kendo-themes/commit/6c590b7364e73c2e2cbdfdabd963b2de9776c462))
+* **drawer:** update scrollbar colors ([f4fb966](https://github.com/telerik/kendo-themes/commit/f4fb966a527f31eb20917476cab73bb46a55ab6b))
+* **filter:** update text colors ([b8cb4d3](https://github.com/telerik/kendo-themes/commit/b8cb4d3becbc80bc698be93f1b172769ac12d0d3))
+* **fluent:** update main and main dark swatch colors ([84a8f6f](https://github.com/telerik/kendo-themes/commit/84a8f6fa30e2bfcf2bfe3d5a669e972eab0823b6))
+* **gantt:** update tokens ([1608df2](https://github.com/telerik/kendo-themes/commit/1608df2ecb8c60833bfbb3111c5fa07cae95da2a))
+* **pdf-viewer:** update annotations colors ([8c15348](https://github.com/telerik/kendo-themes/commit/8c15348fb486a4a8e462c3c5d410ed935599f3ae))
+
+
+
+
+
 # [12.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.1...v12.1.0-dev.2) (2025-09-29)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent

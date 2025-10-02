@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.2...v12.1.0-dev.3) (2025-10-02)
+
+
+### Bug Fixes
+
+* **badge:** base outline badges should use base-on-surface color ([e1c0fd4](https://github.com/telerik/kendo-themes/commit/e1c0fd45cc7c448587f10b5d068b7b1cfa89b3e9))
+* **calendar:** buttons in header should inherit their styles from the flat button ([0c3a700](https://github.com/telerik/kendo-themes/commit/0c3a700e59c86483d5101ff92a79cd1c7b008904))
+* **card:** avatar inside card should adheres to the avatar component's sizing options ([6c590b7](https://github.com/telerik/kendo-themes/commit/6c590b7364e73c2e2cbdfdabd963b2de9776c462))
+* **chip:** update interactive states styles to use correct design tokes ([935a126](https://github.com/telerik/kendo-themes/commit/935a1265a5186264968dd0c58b14102c220a89d9))
+* **core:** no logical properties should be used with cardinal directions ([8d32f2b](https://github.com/telerik/kendo-themes/commit/8d32f2bc4c800d54320e21fe42cdaef74edfe8dc))
+* **default:** update variables to use design tokens ([18eb632](https://github.com/telerik/kendo-themes/commit/18eb632d806dcb086726873a421aa424aed5c1df))
+* **loader:** should use themeColor-on-surface instead of themeColor ([4a45547](https://github.com/telerik/kendo-themes/commit/4a45547a144b5e0e82efa6dbb93067a09a8bdeb8))
+* **scrollview:** delete unnecessary rules and update navigation colors ([55994d3](https://github.com/telerik/kendo-themes/commit/55994d368b157ec830a8120b15389ceab1cba8e2))
+* **stepper:** prevent item focus indicator clipping ([61391f7](https://github.com/telerik/kendo-themes/commit/61391f7f09032afffbcce3270623c7a2534bb3e8))
+
+
+
+
+
 # [12.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.1...v12.1.0-dev.2) (2025-09-29)
 
 
