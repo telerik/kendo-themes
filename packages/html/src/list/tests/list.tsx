@@ -21,6 +21,7 @@ export default () =>(
                 <ListNormal>
                     <ListItem>List item</ListItem>
                     <ListItem hover>Hover</ListItem>
+                    <ListItem></ListItem>
                     <ListItem focus>Focus</ListItem>
                     <ListItem selected>Selected</ListItem>
                     <ListItem hover selected>Hover selected</ListItem>
@@ -36,6 +37,7 @@ export default () =>(
                 <ListVirtualization>
                     <ListItem>List item</ListItem>
                     <ListItem hover>Hover</ListItem>
+                    <ListItem></ListItem>
                     <ListItem focus>Focus</ListItem>
                     <ListItem selected>Selected</ListItem>
                     <ListItem hover selected>Hover selected</ListItem>
@@ -51,6 +53,7 @@ export default () =>(
                 <ListNormal>
                     <ListItem>List item</ListItem>
                     <ListItem hover>Hover</ListItem>
+                    <ListItem></ListItem>
                     <ListItem focus>Focus</ListItem>
                     <ListItem selected>Selected</ListItem>
                     <ListItem hover selected>Hover selected</ListItem>
@@ -66,6 +69,7 @@ export default () =>(
                 <ListVirtualization>
                     <ListItem>List item</ListItem>
                     <ListItem hover>Hover</ListItem>
+                    <ListItem></ListItem>
                     <ListItem focus>Focus</ListItem>
                     <ListItem selected>Selected</ListItem>
                     <ListItem hover selected>Hover selected</ListItem>
