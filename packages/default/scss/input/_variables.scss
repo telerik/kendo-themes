@@ -14,7 +14,7 @@ $kendo-input-border-width: 1px !default;
 $kendo-input-border-height: ( $kendo-input-border-width * 2 ) !default;
 /// The border radius of the Input components.
 /// @group input
-$kendo-input-border-radius: null !default;
+$kendo-input-border-radius: k-border-radius(md) !default;
 
 /// The horizontal padding of the small Input components.
 /// @group input
@@ -345,7 +345,7 @@ $kendo-picker-disabled-shadow: null !default;
 
 /// The background color of the outline Picker components.
 /// @group picker
-$kendo-picker-outline-bg: null !default;
+$kendo-picker-outline-bg: transparent !default;
 /// The text color of the outline Picker components.
 /// @group picker
 $kendo-picker-outline-text: $kendo-button-text !default;
@@ -388,7 +388,7 @@ $kendo-picker-outline-hover-focus-border: null !default;
 
 /// The background color of the flat Picker components.
 /// @group picker
-$kendo-picker-flat-bg: null !default;
+$kendo-picker-flat-bg: transparent !default;
 /// The text color of the flat Picker components.
 /// @group picker
 $kendo-picker-flat-text: $kendo-button-text !default;
@@ -435,9 +435,9 @@ $kendo-use-input-spinner-icon-offset: false !default;
 
 @forward "@progress/kendo-theme-core/scss/components/input/_variables.scss" with (
     $kendo-input-default-width: $kendo-input-default-width,
+    $kendo-input-border-radius: $kendo-input-border-radius,
     $kendo-input-border-width: $kendo-input-border-width,
     $kendo-input-border-height: $kendo-input-border-height,
-    $kendo-input-border-radius: $kendo-input-border-radius,
     $kendo-input-sm-padding-x: $kendo-input-sm-padding-x,
     $kendo-input-md-padding-x: $kendo-input-md-padding-x,
     $kendo-input-lg-padding-x: $kendo-input-lg-padding-x,

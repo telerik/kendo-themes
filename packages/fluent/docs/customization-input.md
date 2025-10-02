@@ -48,6 +48,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-input-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-input-border-radius, k-border-radius(md) )</code></td>
+    <td><code>var(--kendo-input-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The radius of the border around the Input components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-input-border-height</td>
     <td>Number</td>
     <td><code>calc( $kendo-input-border-width * 2 )</code></td>

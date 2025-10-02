@@ -1,4 +1,4 @@
-import { Switch, SwitchNormal, SwitchChecked } from '../../switch';
+import { Switch, SwitchNormal, SwitchChecked } from "../../switch";
 
 const styles = `
     #test-area {
@@ -15,28 +15,69 @@ const styles = `
     }
 `;
 
-export default () =>(
-    <>
-        <style>{styles}</style>
-        <div id="test-area" className="k-d-grid">
+export default () => (
+  <>
+    <style>{styles}</style>
+    <div id="test-area" className="k-d-grid">
+      <span>
+        <small>Track Rounded + Size</small>
+      </span>
+      <span>small</span>
+      <span>medium</span>
+      <span>large</span>
 
-            <span><small>rounded / size</small></span>
-            <span>small</span>
-            <span>medium</span>
-            <span>large</span>
+      {[...Switch.options.trackRounded].map((roundness) => (
+        <>
+          <span>{roundness}</span>
 
-            {[ null, ...Switch.options.trackRounded ].map((roundness) => (
-                <>
-                    <span>{ roundness || 'none' }</span>
+          {Switch.options.size.map((size) => (
+            <div className="wrapper">
+              <SwitchChecked size={size} trackRounded={roundness} />
+              <SwitchNormal size={size} trackRounded={roundness} />
+            </div>
+          ))}
+        </>
+      ))}
 
-                    { Switch.options.size.map((size) => (
-                        <div className="wrapper">
-                            <SwitchChecked size={size} trackRounded={roundness} thumbRounded={roundness} />
-                            <SwitchNormal size={size} trackRounded={roundness} thumbRounded={roundness} />
-                        </div>
-                    ))}
-                </>
-            ))}
-        </div>
-    </>
+      <span>
+        <small>Thumb Rounded + Size</small>
+      </span>
+      <span>small</span>
+      <span>medium</span>
+      <span>large</span>
+
+      {[...Switch.options.trackRounded].map((roundness) => (
+        <>
+          <span>{roundness}</span>
+
+          {Switch.options.size.map((size) => (
+            <div className="wrapper">
+              <SwitchChecked size={size} thumbRounded={roundness} />
+              <SwitchNormal size={size} thumbRounded={roundness} />
+            </div>
+          ))}
+        </>
+      ))}
+
+      <span>
+        <small>Track & Thumb Rounded + Size</small>
+      </span>
+      <span>small</span>
+      <span>medium</span>
+      <span>large</span>
+
+      {[...Switch.options.trackRounded].map((roundness) => (
+        <>
+          <span>{roundness}</span>
+
+          {Switch.options.size.map((size) => (
+            <div className="wrapper">
+              <SwitchChecked size={size} trackRounded={roundness} thumbRounded={roundness} />
+              <SwitchNormal size={size} trackRounded={roundness} thumbRounded={roundness} />
+            </div>
+          ))}
+        </>
+      ))}
+    </div>
+  </>
 );

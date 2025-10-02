@@ -7,8 +7,19 @@
 
 @mixin kendo-form--layout-base() {
 
-    // Common
-    .k-form,
+    .k-form {
+        font-size: $kendo-form-font-size;
+        line-height: $kendo-form-line-height;
+
+        @extend %k-form-md;
+
+        @each $size, $size-props in $kendo-form-sizes {
+            &.k-form-#{$size} {
+                @extend %k-form-#{$size};
+            }
+        }
+    }
+
     .k-form-inline {
         font-size: $kendo-form-font-size;
         line-height: $kendo-form-line-height;
@@ -213,7 +224,7 @@
     @each $size, $size-props in $kendo-form-sizes {
         $_form-rows-spacing: map.get($size-props, form-rows-spacing);
 
-        .k-form-#{$size} {
+        %k-form-#{$size} {
             .k-form-field,
             .k-form-buttons {
                 margin-block-start: $_form-rows-spacing;

@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <div id="test-area" class="k-d-grid k-grid-cols-6">
+        <span>
+            <small>state / themeColor</small>
+        </span>
+        <span>Base</span>
+        <span>Success</span>
+        <span>Warning</span>
+        <span>Error</span>
+        <span>Info</span>
+        <span>normal</span>
+        <span>
+            <div class="k-chip k-chip-base">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">base</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-success">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">success</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-warning">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">warning</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-error">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">error</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-info">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">info</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>hover</span>
+        <span>
+            <div class="k-chip k-chip-base k-hover">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">base</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-success k-hover">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">success</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-warning k-hover">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">warning</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-error k-hover">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">error</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-info k-hover">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">info</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>focus</span>
+        <span>
+            <div class="k-chip k-chip-base k-focus">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">base</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-success k-focus">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">success</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-warning k-focus">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">warning</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-error k-focus">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">error</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-info k-focus">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">info</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>active</span>
+        <span>
+            <div class="k-chip k-chip-base k-active">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">base</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-success k-active">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">success</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-warning k-active">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">warning</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-error k-active">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">error</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-info k-active">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">info</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>selected</span>
+        <span>
+            <div class="k-chip k-chip-base k-selected">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">base</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-success k-selected">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">success</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-warning k-selected">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">warning</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-error k-selected">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">error</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-info k-selected">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">info</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>disabled</span>
+        <span>
+            <div class="k-chip k-chip-base k-disabled">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">base</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-success k-disabled">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">success</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-warning k-disabled">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">warning</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-error k-disabled">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">error</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-info k-disabled">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">info</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span></span>
+        <span>Text</span>
+        <span>Icon</span>
+        <span>Avatar</span>
+        <span>Icon (rtl)</span>
+        <span>Avatar (rtl)</span>
+        <span></span>
+        <span>
+            <div class="k-chip">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">Text</span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip">
+                <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-map-marker-target">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M256 0C158.8 0 80 78.8 80 176s176 336 176 336 176-238.8 176-336S353.2 0 256 0m0 288c-61.9 0-112-50.1-112-112S194.1 64 256 64s112 50.1 112 112-50.1 112-112 112m48-112c0 26.5-21.5 48-48 48s-48-21.5-48-48 21.5-48 48-48 48 21.5 48 48"></path>
+                    </svg>
+                </span>
+                <span class="k-chip-content">
+                    <span class="k-chip-label">Text</span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip">
+                <div class="k-chip-avatar k-avatar">
+                    <span class="k-avatar-image">
+                        <img src="/packages/html/assets/avatar.jpg">
+                    </span>
+                </div>
+                <span class="k-chip-content">
+                    <span class="k-chip-label">Text</span>
+                </span>
+            </div>
+        </span>
+        <span dir="rtl">
+            <div class="k-chip">
+                <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-map-marker-target">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M256 0C158.8 0 80 78.8 80 176s176 336 176 336 176-238.8 176-336S353.2 0 256 0m0 288c-61.9 0-112-50.1-112-112S194.1 64 256 64s112 50.1 112 112-50.1 112-112 112m48-112c0 26.5-21.5 48-48 48s-48-21.5-48-48 21.5-48 48-48 48 21.5 48 48"></path>
+                    </svg>
+                </span>
+                <span class="k-chip-content">
+                    <span class="k-chip-label">Text</span>
+                </span>
+            </div>
+        </span>
+        <span dir="rtl">
+            <div class="k-chip">
+                <div class="k-chip-avatar k-avatar">
+                    <span class="k-avatar-image">
+                        <img src="/packages/html/assets/avatar.jpg">
+                    </span>
+                </div>
+                <span class="k-chip-content">
+                    <span class="k-chip-label">Text</span>
+                </span>
+            </div>
+        </span>
+    </div>
+</body>
+</html>

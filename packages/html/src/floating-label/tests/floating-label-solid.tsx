@@ -19,42 +19,42 @@ export default () =>(
 
             <div>
                 <FloatingLabelNormal label="Label without placeholder">
-                    <TextboxNormal />
+                    <TextboxNormal fillMode="solid" />
                 </FloatingLabelNormal>
             </div>
             <div dir="rtl">
                 <FloatingLabelNormal label="Label without placeholder">
-                    <TextboxNormal />
+                    <TextboxNormal fillMode="solid" />
                 </FloatingLabelNormal>
             </div>
             <div>
                 <FloatingLabelNormal label="Label with placeholder">
-                    <TextboxNormal placeholder="placeholder" />
+                    <TextboxNormal fillMode="solid" placeholder="placeholder" />
                 </FloatingLabelNormal>
             </div>
             <div dir="rtl">
                 <FloatingLabelNormal label="Label with placeholder">
-                    <TextboxNormal placeholder="placeholder" />
+                    <TextboxNormal fillMode="solid" placeholder="placeholder" />
                 </FloatingLabelNormal>
             </div>
             <div>
                 <FloatingLabelNormal label="Label optional" optional>
-                    <TextboxNormal />
+                    <TextboxNormal fillMode="solid" />
                 </FloatingLabelNormal>
             </div>
             <div dir="rtl">
                 <FloatingLabelNormal label="Label optional" optional>
-                    <TextboxNormal />
+                    <TextboxNormal fillMode="solid" />
                 </FloatingLabelNormal>
             </div>
             <div>
                 <FloatingLabelNormal label="Label with placeholder focused" focus>
-                    <TextboxNormal placeholder="placeholder" focus />
+                    <TextboxNormal fillMode="solid" placeholder="placeholder" focus />
                 </FloatingLabelNormal>
             </div>
             <div dir="rtl">
                 <FloatingLabelNormal label="Label with placeholder focused" focus>
-                    <TextboxNormal placeholder="placeholder" focus />
+                    <TextboxNormal fillMode="solid" placeholder="placeholder" focus />
                 </FloatingLabelNormal>
             </div>
 
@@ -62,12 +62,12 @@ export default () =>(
                 <>
                     <div>
                         <FloatingLabelInputValue label="Label" { ...{ [state]: true }}>
-                            <TextboxNormal value={state === 'empty' ? '' : state} { ...{ [state]: true }}/>
+                            <TextboxNormal fillMode="solid" value={state === 'empty' ? '' : state} { ...{ [state]: true }}/>
                         </FloatingLabelInputValue>
                     </div>
                     <div dir="rtl">
                         <FloatingLabelInputValue label="Label" { ...{ [state]: true }}>
-                            <TextboxNormal value={state === 'empty' ? '' : state} { ...{ [state]: true }} />
+                            <TextboxNormal fillMode="solid" value={state === 'empty' ? '' : state} { ...{ [state]: true }} />
                         </FloatingLabelInputValue>
                     </div>
                 </>

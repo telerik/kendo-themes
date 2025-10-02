@@ -14,14 +14,14 @@ export default () =>(
             {Badge.options.themeColor.map((color) => (
                 <>
                     <span>{color}</span>
-                    <span><BadgeNormal themeColor={color}>Rectangle</BadgeNormal></span>
-                    <span><BadgeNormal themeColor={color}></BadgeNormal></span>
-                    <span><BadgeNormal themeColor={color} rounded="medium">Rounded</BadgeNormal></span>
-                    <span><BadgeNormal themeColor={color} rounded="medium"></BadgeNormal></span>
-                    <span><BadgeNormal themeColor={color} rounded="full">Pill</BadgeNormal></span>
-                    <span><BadgeNormal themeColor={color} rounded="full"></BadgeNormal></span>
-                    <span><BadgeNormal themeColor={color} rounded="full">1</BadgeNormal></span>
-                    <span><BadgeNormal themeColor={color} rounded="full"></BadgeNormal></span>
+                    <span><BadgeNormal fillMode="solid" themeColor={color}>Rectangle</BadgeNormal></span>
+                    <span><BadgeNormal fillMode="solid" themeColor={color}></BadgeNormal></span>
+                    <span><BadgeNormal fillMode="solid" themeColor={color} rounded="medium">Rounded</BadgeNormal></span>
+                    <span><BadgeNormal fillMode="solid" themeColor={color} rounded="medium"></BadgeNormal></span>
+                    <span><BadgeNormal fillMode="solid" themeColor={color} rounded="full">Pill</BadgeNormal></span>
+                    <span><BadgeNormal fillMode="solid" themeColor={color} rounded="full"></BadgeNormal></span>
+                    <span><BadgeNormal fillMode="solid" themeColor={color} rounded="full">1</BadgeNormal></span>
+                    <span><BadgeNormal fillMode="solid" themeColor={color} rounded="full"></BadgeNormal></span>
                 </>
             ))}
         </div>

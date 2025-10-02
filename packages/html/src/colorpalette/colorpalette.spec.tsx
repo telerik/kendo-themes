@@ -27,8 +27,7 @@ export type KendoColorPaletteProps = KendoColorPaletteOptions & {
 export type KendoColorPaletteState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    columns: 10,
-    size: Size.medium
+    columns: 10
 };
 
 export const ColorPalette: KendoComponent<KendoColorPaletteProps & KendoColorPaletteState & React.HTMLAttributes<HTMLDivElement>> = (
@@ -37,7 +36,7 @@ export const ColorPalette: KendoComponent<KendoColorPaletteProps & KendoColorPal
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         palette,
         columns = defaultOptions.columns,
         tileSize,

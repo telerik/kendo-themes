@@ -46,7 +46,6 @@ export type KendoCalendarInfiniteProps = {
 };
 
 const defaultOptions = {
-    size: Size.medium,
     showNavigation: true,
     calendarView: 'month',
     navigationItems: defaultNavigationItems,
@@ -58,7 +57,7 @@ export const CalendarInfinite: KendoComponent<KendoCalendarInfiniteProps & Kendo
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         showNavigation = defaultOptions.showNavigation,
         calendarView = defaultOptions.calendarView,
         navigationItems = defaultOptions.navigationItems,

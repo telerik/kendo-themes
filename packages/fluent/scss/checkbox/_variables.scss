@@ -9,6 +9,10 @@
 /// @group checkbox
 $kendo-checkbox-border-width: var( --kendo-checkbox-border-width, 1px ) !default;
 
+/// The border radius of the CheckBox.
+/// @group checkbox
+$kendo-checkbox-border-radius: var( --kendo-checkbox-border-radius, k-border-radius(md) ) !default;
+
 /// The size of a small CheckBox.
 /// @group checkbox
 $kendo-checkbox-sm-size: var( --kendo-checkbox-sm-size, k-spacing(4) ) !default;
@@ -247,6 +251,7 @@ $kendo-checkbox-ripple-opacity: var( --kendo-checkbox-ripple-opacity, .25 ) !def
 
 @forward "@progress/kendo-theme-core/scss/components/checkbox/_variables.scss" with (
     $kendo-checkbox-border-width: $kendo-checkbox-border-width,
+    $kendo-checkbox-border-radius: $kendo-checkbox-border-radius,
     $kendo-checkbox-sm-size: $kendo-checkbox-sm-size,
     $kendo-checkbox-md-size: $kendo-checkbox-md-size,
     $kendo-checkbox-lg-size: $kendo-checkbox-lg-size,

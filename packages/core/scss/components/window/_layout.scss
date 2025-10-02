@@ -22,25 +22,20 @@
         z-index: k-z-index("modal");
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+        @extend %k-window-md;
 
-        // overlay during dragging
-        // .k-overlay {
-        //    position: absolute;
-        //    opacity: 0;
-        // }
+        @each $name, $size in $kendo-window-sizes {
+            &.k-window-#{$name} {
+                @extend %k-window-#{$name};
+            }
+        }
+
     }
     .k-window.k-window-maximized {
         max-width: 100vw;
         max-height: 100vh;
         box-shadow: none;
     }
-
-
-    // Window sizes
-    @each $size, $width in $kendo-window-sizes {
-        .k-window-#{$size} { width: $width; }
-    }
-
 
     // Title bar
     .k-window-titlebar {
@@ -176,6 +171,10 @@
 
 }
 
+// Window sizes
+@each $size, $width in $kendo-window-sizes {
+    %k-window-#{$size} { width: $width; }
+}
 
 @mixin kendo-window--layout() {
     @include kendo-window--layout-base();

@@ -15,35 +15,35 @@ export default () =>(
             <span>MaskedTextBox RTL</span>
 
             <div>
-                <MaskedTextboxNormal />
+                <MaskedTextboxNormal fillMode="solid" />
             </div>
             <div dir="rtl">
-                <MaskedTextboxNormal />
+                <MaskedTextboxNormal fillMode="solid" />
             </div>
             <div>
-                <MaskedTextboxNormal placeholder="(___) ___-__-__-__" />
+                <MaskedTextboxNormal fillMode="solid" placeholder="(___) ___-__-__-__" />
             </div>
             <div dir="rtl">
-                <MaskedTextboxNormal placeholder="(___) ___-__-__-__" />
+                <MaskedTextboxNormal fillMode="solid" placeholder="(___) ___-__-__-__" />
             </div>
 
             {[ 'normal', ...MaskedTextbox.states ].map((state) => (
                 <>
                     <div>
-                        <MaskedTextboxNormal { ...{ [state]: true }} value={state} />
+                        <MaskedTextboxNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <MaskedTextboxNormal { ...{ [state]: true }} value={state} />
+                        <MaskedTextboxNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <MaskedTextboxNormal value="invalid focus" invalid focus />
+                <MaskedTextboxNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <MaskedTextboxNormal value="invalid focus" invalid focus />
+                <MaskedTextboxNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
         </div>
     </>

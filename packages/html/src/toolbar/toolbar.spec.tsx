@@ -38,8 +38,6 @@ export type KendoToolbarProps = KendoToolbarOptions & {
 export type KendoToolbarState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    size: Size.medium,
-    fillMode: FillMode.solid,
     scrollButtons: 'around'
 };
 
@@ -49,8 +47,8 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        fillMode = defaultOptions.fillMode,
+        size,
+        fillMode,
         focus,
         resizable,
         scrollable,

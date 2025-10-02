@@ -31,14 +31,11 @@ const states = [
 
 const options = {
     size: [Size.small, Size.medium, Size.large],
-    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    rounded: [Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
     fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
 const defaultOptions = {
-    size: Input.defaultOptions.size,
-    rounded: Input.defaultOptions.rounded,
-    fillMode: Input.defaultOptions.fillMode,
     separators: true
 };
 
@@ -72,9 +69,9 @@ export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdown
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
+        size,
+        rounded,
+        fillMode,
         separators = defaultOptions.separators,
         prefix,
         suffix,

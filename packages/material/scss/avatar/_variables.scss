@@ -5,6 +5,9 @@
 /// The border width of the Avatar.
 /// @group avatar
 $kendo-avatar-border-width: 1px !default;
+/// The border radius of the Avatar.
+/// @group avatar
+$kendo-avatar-border-radius: k-border-radius(full) !default;
 
 /// The font family of the Avatar.
 /// @group avatar
@@ -27,6 +30,7 @@ $kendo-avatar-sizes: (
 /// The theme colors map of the Avatar.
 /// @group avatar
 $kendo-avatar-theme-colors: (
+    "base": k-color(base),
     "primary": k-color(primary),
     "secondary": k-color(secondary),
     "tertiary": k-color(tertiary),
@@ -41,6 +45,7 @@ $kendo-avatar-theme-colors: (
 
 @forward "@progress/kendo-theme-core/scss/components/avatar/_variables.scss" with (
     $kendo-avatar-border-width: $kendo-avatar-border-width,
+    $kendo-avatar-border-radius: $kendo-avatar-border-radius,
     $kendo-avatar-font-family: $kendo-avatar-font-family,
     $kendo-avatar-font-size: $kendo-avatar-font-size,
     $kendo-avatar-line-height: $kendo-avatar-line-height,

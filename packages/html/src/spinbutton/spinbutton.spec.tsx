@@ -22,18 +22,15 @@ export type KendoSpinButtonProps = KendoSpinButtonOptions & {
   text?: string;
 };
 
-const defaultOptions = {
-    size: Size.medium,
-    fillMode: FillMode.solid
-};
+const defaultOptions = {};
 
 export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoSpinButtonProps &
         React.HTMLAttributes<HTMLButtonElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        fillMode = defaultOptions.fillMode,
+        size,
+        fillMode,
         ...other
     } = props;
 

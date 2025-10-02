@@ -10,22 +10,22 @@ export default () =>(
                 <>
                     <div>
                         <span>{state}</span>
-                        <DateRangePickerNormal { ...{ [state]: true }} />
+                        <DateRangePickerNormal fillMode="solid" { ...{ [state]: true }} />
                     </div>
                     <div dir="rtl">
                         <span>{state}</span>
-                        <DateRangePickerNormal { ...{ [state]: true }} />
+                        <DateRangePickerNormal fillMode="solid" { ...{ [state]: true }} />
                     </div>
                 </>
             ))}
 
             <div>
                 <span>With Swap Button</span>
-                <DateRangePickerNormal swapButton />
+                <DateRangePickerNormal fillMode="solid" swapButton />
             </div>
             <div dir="rtl">
                 <span>With Swap Button RTL</span>
-                <DateRangePickerNormal swapButton />
+                <DateRangePickerNormal fillMode="solid" swapButton />
             </div>
         </div>
     </>

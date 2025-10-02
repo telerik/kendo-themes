@@ -10,7 +10,7 @@ $kendo-button-border-width: 1px !default;
 
 /// The border radius of the Button.
 /// @group button
-$kendo-button-border-radius: null !default;
+$kendo-button-border-radius: k-border-radius(md) !default;
 
 /// The horizontal padding of the small Button.
 /// @group button
@@ -81,6 +81,12 @@ $kendo-button-lg-inner-calc-size: calc( ( #{$kendo-button-lg-line-height} * 1em 
 /// The sizes map for the Button.
 /// @group button
 $kendo-button-sizes: (
+    DEFAULT: (
+        padding-x: $kendo-button-md-padding-x,
+        padding-y: $kendo-button-md-padding-y,
+        font-size: $kendo-button-md-font-size,
+        line-height: $kendo-button-md-line-height
+    ),
     sm: (
         padding-x: $kendo-button-sm-padding-x,
         padding-y: $kendo-button-sm-padding-y,

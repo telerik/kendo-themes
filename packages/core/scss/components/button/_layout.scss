@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "../../mixins/index.import.scss" as *;
 @use "../../color-system/_constants.scss" as *;
+@use "../../border-radii/index.import.scss" as *;
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
@@ -12,7 +13,6 @@
         box-sizing: border-box;
         border-width: $kendo-button-border-width;
         border-style: solid;
-        border-radius: $kendo-button-border-radius;
         color: inherit;
         background: none;
         font-family: $kendo-button-font-family;
@@ -31,6 +31,7 @@
         -webkit-appearance: none;
         position: relative;
         transition: $kendo-button-transition;
+        border-radius: $kendo-button-border-radius;
 
         *,
         *::before,
@@ -54,6 +55,131 @@
             text-decoration: none;
             outline: 0;
         }
+
+
+        // Flat button
+        &.k-button-flat {
+            border-color: transparent !important; // stylelint-disable-line declaration-no-important
+            color: inherit;
+            background: none !important; // stylelint-disable-line declaration-no-important
+            box-shadow: none !important; // stylelint-disable-line declaration-no-important
+
+            // Overlay background
+            &::before {
+                display: block !important; // stylelint-disable-line declaration-no-important
+            }
+
+            // Focus ring
+            &::after {
+                box-shadow: inset 0 0 0 2px currentColor;
+                display: block !important; // stylelint-disable-line declaration-no-important
+            }
+
+            &:focus::after,
+            &.k-focus::after {
+                opacity: $kendo-flat-button-focus-ring-opacity;
+            }
+        }
+
+
+        // Outline button
+        &.k-button-outline {
+            border-color: currentColor;
+            color: inherit;
+            background: none;
+        }
+
+
+        // Link button
+        &.k-button-link {
+            border-color: transparent !important; // stylelint-disable-line declaration-no-important
+            color: inherit;
+            text-decoration: none;
+            background: none !important; // stylelint-disable-line declaration-no-important
+
+            &:hover,
+            &.k-hover {
+                text-decoration: underline;
+            }
+        }
+
+
+        // Clear button
+        &.k-button-clear {
+            border-color: transparent !important; // stylelint-disable-line declaration-no-important
+            color: inherit;
+            background: none !important; // stylelint-disable-line declaration-no-important
+            box-shadow: none !important; // stylelint-disable-line declaration-no-important
+        }
+
+        // Button sizes
+         @each $size, $size-props in $kendo-button-sizes {
+            $_padding-x: map.get( $size-props, padding-x );
+            $_padding-y: map.get( $size-props, padding-y );
+            $_font-size: map.get( $size-props, font-size );
+            $_line-height: map.get( $size-props, line-height );
+
+            #{if($size == DEFAULT, "&", "&.k-button-#{$size}")} {
+                padding-block: $_padding-y;
+                padding-inline: $_padding-x;
+                font-size: $_font-size;
+                line-height: $_line-height;
+
+                &.k-icon-button {
+                    padding: $_padding-y;
+
+                    .k-button-icon {
+                        min-width: calc( #{$_font-size} * #{$_line-height} );
+                        min-height: calc( #{$_font-size} * #{$_line-height} );
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        &.k-svg-icon > svg,
+                        &.k-icon-md > svg {
+                            width: $kendo-icon-size-md;
+                            height: $kendo-icon-size-md;
+                        }
+
+                        &.k-icon-xs > svg {
+                            width: $kendo-icon-size-xs;
+                            height: $kendo-icon-size-xs;
+                        }
+
+                        &.k-icon-sm > svg {
+                            width: $kendo-icon-size-sm;
+                            height: $kendo-icon-size-sm;
+                        }
+
+                        &.k-icon-lg > svg {
+                            width: $kendo-icon-size-lg;
+                            height: $kendo-icon-size-lg;
+                        }
+
+                        &.k-icon-xl > svg {
+                            width: $kendo-icon-size-xl;
+                            height: $kendo-icon-size-xl;
+                        }
+
+                        &.k-icon-xxl > svg {
+                            width: $kendo-icon-size-xxl;
+                            height: $kendo-icon-size-xxl;
+                        }
+
+                        &.k-icon-xxxl > svg {
+                            width: $kendo-icon-size-xxxl;
+                            height: $kendo-icon-size-xxxl;
+                        }
+                    }
+                }
+            }
+        }
+
+        @each $roundness in $kendo-button-roundness {
+            &.k-rounded-#{$roundness} {
+                border-radius: k-border-radius($roundness);
+            }
+        }
     }
 
 
@@ -72,72 +198,6 @@
         color: inherit;
         align-self: center;
         position: relative;
-    }
-
-    .k-button-text {}
-
-
-    // Sizes
-    @each $size, $size-props in $kendo-button-sizes {
-        $_padding-x: map.get( $size-props, padding-x );
-        $_padding-y: map.get( $size-props, padding-y );
-        $_font-size: map.get( $size-props, font-size );
-        $_line-height: map.get( $size-props, line-height );
-
-        .k-button-#{$size} {
-            padding-block: $_padding-y;
-            padding-inline: $_padding-x;
-            font-size: $_font-size;
-            line-height: $_line-height;
-        }
-
-        .k-button-#{$size}.k-icon-button {
-            padding: $_padding-y;
-
-            .k-button-icon {
-                min-width: calc( #{$_font-size} * #{$_line-height} );
-                min-height: calc( #{$_font-size} * #{$_line-height} );
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-
-                &.k-svg-icon > svg,
-                &.k-icon-md > svg {
-                    width: $kendo-icon-size-md;
-                    height: $kendo-icon-size-md;
-                }
-
-                &.k-icon-xs > svg {
-                    width: $kendo-icon-size-xs;
-                    height: $kendo-icon-size-xs;
-                }
-
-                &.k-icon-sm > svg {
-                    width: $kendo-icon-size-sm;
-                    height: $kendo-icon-size-sm;
-                }
-
-                &.k-icon-lg > svg {
-                    width: $kendo-icon-size-lg;
-                    height: $kendo-icon-size-lg;
-                }
-
-                &.k-icon-xl > svg {
-                    width: $kendo-icon-size-xl;
-                    height: $kendo-icon-size-xl;
-                }
-
-                &.k-icon-xxl > svg {
-                    width: $kendo-icon-size-xxl;
-                    height: $kendo-icon-size-xxl;
-                }
-
-                &.k-icon-xxxl > svg {
-                    width: $kendo-icon-size-xxxl;
-                    height: $kendo-icon-size-xxxl;
-                }
-            }
-        }
     }
 
 
@@ -200,64 +260,6 @@
             overflow: hidden;
         }
     }
-
-
-    // Flat button
-    .k-button-flat {
-        border-color: transparent !important; // stylelint-disable-line declaration-no-important
-        color: inherit;
-        background: none !important; // stylelint-disable-line declaration-no-important
-        box-shadow: none !important; // stylelint-disable-line declaration-no-important
-
-        // Overlay background
-        &::before {
-            display: block !important; // stylelint-disable-line declaration-no-important
-        }
-
-        // Focus ring
-        &::after {
-            box-shadow: inset 0 0 0 2px currentColor;
-            display: block !important; // stylelint-disable-line declaration-no-important
-        }
-
-        &:focus::after,
-        &.k-focus::after {
-            opacity: $kendo-flat-button-focus-ring-opacity;
-        }
-    }
-
-
-    // Outline button
-    .k-button-outline {
-        border-color: currentColor;
-        color: inherit;
-        background: none;
-    }
-
-
-    // Link button
-    .k-button-link {
-        border-color: transparent;
-        color: inherit;
-        text-decoration: none;
-        background: none;
-
-        &:hover,
-        &.k-hover {
-            text-decoration: underline;
-        }
-    }
-
-
-    // Clear button
-    .k-button-clear {
-        border-color: transparent !important; // stylelint-disable-line declaration-no-important
-        color: inherit;
-        background: none !important; // stylelint-disable-line declaration-no-important
-        box-shadow: none !important; // stylelint-disable-line declaration-no-important
-    }
-
-
 
 
     // Button overlay

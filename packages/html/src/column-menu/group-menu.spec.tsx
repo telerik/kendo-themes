@@ -15,7 +15,6 @@ export type KendoGroupMenuOptions = {
 }
 
 const defaultOptions = {
-    size: Size.medium
 };
 
 export const GroupMenu: KendoComponent<KendoGroupMenuOptions & React.HTMLAttributes<HTMLDivElement>> = (
@@ -23,7 +22,7 @@ export const GroupMenu: KendoComponent<KendoGroupMenuOptions & React.HTMLAttribu
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const  {
-        size = defaultOptions.size,
+        size,
         ...other
     } = props;
 

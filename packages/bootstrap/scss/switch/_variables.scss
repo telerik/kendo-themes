@@ -16,6 +16,10 @@ $kendo-switch-track-border-width: 1px !default;
 /// @group switch
 $kendo-switch-thumb-border-width: unset !default;
 
+/// The border radius of the Switch.
+/// @group switch
+$kendo-switch-border-radius: k-border-radius(full) !default;
+
 /// The text transform of the Switch label.
 /// @group switch
 $kendo-switch-label-text-transform: unset !default;
@@ -226,6 +230,7 @@ $kendo-switch-on-thumb-disabled-gradient: null !default;
     $kendo-switch-font-family: $kendo-switch-font-family,
     $kendo-switch-track-border-width: $kendo-switch-track-border-width,
     $kendo-switch-thumb-border-width: $kendo-switch-thumb-border-width,
+    $kendo-switch-border-radius: $kendo-switch-border-radius,
     $kendo-switch-label-text-transform: $kendo-switch-label-text-transform,
     $kendo-switch-label-display: $kendo-switch-label-display,
     $kendo-switch-sizes: $kendo-switch-sizes,

@@ -9,6 +9,7 @@
         padding-inline: $kendo-chip-md-padding-x;
         border-width: $kendo-chip-border-width;
         border-style: solid;
+        border-radius: $kendo-chip-border-radius;
         outline: 0;
         font-family: var( --kendo-font-family, inherit );
         font-weight: $kendo-chip-font-weight;
@@ -23,6 +24,7 @@
         overflow: hidden;
         cursor: pointer;
         user-select: none;
+        @extend %k-chip-md;
 
         *,
         *::before,
@@ -32,6 +34,12 @@
 
         .k-selected-icon-wrapper {
             display: none !important; // stylelint-disable-line declaration-no-important
+        }
+
+        @each $name, $size in $kendo-chip-sizes {
+            &.k-chip-#{$name} {
+                @extend %k-chip-#{$name};
+            }
         }
     }
 
@@ -125,6 +133,13 @@
         flex-wrap: wrap;
         align-items: center;
         position: relative;
+        @extend %k-chip-list-md;
+
+        @each $name, $size in $kendo-chip-list-sizes {
+            &.k-chip-list-#{$name} {
+                @extend %k-chip-list-#{$name};
+            }
+        }
     }
 
     // Sizes
@@ -135,7 +150,7 @@
         $_line-height: map.get( $size-props, line-height );
         $_avatar-size: 1em;
 
-        .k-chip-#{$size} {
+        %k-chip-#{$size} {
             padding-block: $_padding-y;
             padding-inline: $_padding-x;
             font-size: $_font-size;
@@ -156,7 +171,7 @@
 
     // Sizes
     @each $name, $size in $kendo-chip-list-sizes {
-        .k-chip-list-#{$name} {
+        %k-chip-list-#{$name} {
             gap: $size;
         }
     }

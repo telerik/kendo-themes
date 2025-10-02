@@ -61,6 +61,7 @@ $kendo-appbar-dark-text: k-color(on-dark) !default;
 /// The theme colors map for the AppBar variations.
 /// @group appbar
 $kendo-appbar-theme-colors: (
+    "base": k-color(base),
     "primary": k-color(primary),
     "secondary": k-color(secondary),
     "tertiary": k-color(tertiary),

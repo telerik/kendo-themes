@@ -14,6 +14,10 @@
         #test-area {
             grid-template-columns: repeat(3, 1fr);
         }
+        .k-ripple-container .k-checkbox:focus::after,
+        .k-ripple-container .k-checkbox.k-focus::after {
+            transform: translate(-50%, -50%) scale(1);
+        }
 
     </style>
     <div id="test-area" class="k-d-grid">
@@ -22,165 +26,213 @@
         <span>Large</span>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-unchecked-small" class="k-checkbox k-checkbox-sm k-rounded-md" type="checkbox">
+                <input id="ch-unchecked-small" class="k-checkbox k-checkbox-sm" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-unchecked-small">unchecked</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-unchecked-medium" class="k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
+                <input id="ch-unchecked-medium" class="k-checkbox k-checkbox-md" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-unchecked-medium">unchecked</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-unchecked-large" class="k-checkbox k-checkbox-lg k-rounded-md" type="checkbox">
+                <input id="ch-unchecked-large" class="k-checkbox k-checkbox-lg" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-unchecked-large">unchecked</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-hover-small" class="k-checkbox k-checkbox-sm k-rounded-md k-hover" type="checkbox">
+                <input id="ch-hover-small" class="k-checkbox k-checkbox-sm k-hover" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-hover-small">hover</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-hover-medium" class="k-checkbox k-checkbox-md k-rounded-md k-hover" type="checkbox">
+                <input id="ch-hover-medium" class="k-checkbox k-checkbox-md k-hover" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-hover-medium">hover</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-hover-large" class="k-checkbox k-checkbox-lg k-rounded-md k-hover" type="checkbox">
+                <input id="ch-hover-large" class="k-checkbox k-checkbox-lg k-hover" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-hover-large">hover</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-focus-small" class="k-checkbox k-checkbox-sm k-rounded-md k-focus" type="checkbox">
+                <input id="ch-focus-small" class="k-checkbox k-checkbox-sm k-focus" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-focus-small">focus</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-focus-medium" class="k-checkbox k-checkbox-md k-rounded-md k-focus" type="checkbox">
+                <input id="ch-focus-medium" class="k-checkbox k-checkbox-md k-focus" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-focus-medium">focus</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-focus-large" class="k-checkbox k-checkbox-lg k-rounded-md k-focus" type="checkbox">
+                <input id="ch-focus-large" class="k-checkbox k-checkbox-lg k-focus" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-focus-large">focus</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-valid-small" class="k-checkbox k-checkbox-sm k-rounded-md k-valid" type="checkbox">
+                <input id="ch-valid-small" class="k-checkbox k-checkbox-sm k-valid" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-valid-small">valid</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-valid-medium" class="k-checkbox k-checkbox-md k-rounded-md k-valid" type="checkbox">
+                <input id="ch-valid-medium" class="k-checkbox k-checkbox-md k-valid" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-valid-medium">valid</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-valid-large" class="k-checkbox k-checkbox-lg k-rounded-md k-valid" type="checkbox">
+                <input id="ch-valid-large" class="k-checkbox k-checkbox-lg k-valid" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-valid-large">valid</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-invalid-small" class="k-checkbox k-checkbox-sm k-rounded-md k-invalid" type="checkbox">
+                <input id="ch-invalid-small" class="k-checkbox k-checkbox-sm k-invalid" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-invalid-small">invalid</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-invalid-medium" class="k-checkbox k-checkbox-md k-rounded-md k-invalid" type="checkbox">
+                <input id="ch-invalid-medium" class="k-checkbox k-checkbox-md k-invalid" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-invalid-medium">invalid</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-invalid-large" class="k-checkbox k-checkbox-lg k-rounded-md k-invalid" type="checkbox">
+                <input id="ch-invalid-large" class="k-checkbox k-checkbox-lg k-invalid" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-invalid-large">invalid</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-required-small" required="" class="k-checkbox k-checkbox-sm k-rounded-md" type="checkbox">
+                <input id="ch-required-small" required="" class="k-checkbox k-checkbox-sm" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-required-small">required</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-required-medium" required="" class="k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
+                <input id="ch-required-medium" required="" class="k-checkbox k-checkbox-md" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-required-medium">required</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-required-large" required="" class="k-checkbox k-checkbox-lg k-rounded-md" type="checkbox">
+                <input id="ch-required-large" required="" class="k-checkbox k-checkbox-lg" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-required-large">required</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-disabled-small" class="k-checkbox k-checkbox-sm k-rounded-md k-disabled" type="checkbox">
+                <input id="ch-disabled-small" class="k-checkbox k-checkbox-sm k-disabled" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-disabled-small">disabled</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-disabled-medium" class="k-checkbox k-checkbox-md k-rounded-md k-disabled" type="checkbox">
+                <input id="ch-disabled-medium" class="k-checkbox k-checkbox-md k-disabled" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-disabled-medium">disabled</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-disabled-large" class="k-checkbox k-checkbox-lg k-rounded-md k-disabled" type="checkbox">
+                <input id="ch-disabled-large" class="k-checkbox k-checkbox-lg k-disabled" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-disabled-large">disabled</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-checked-small" class="k-checkbox k-checkbox-sm k-rounded-md k-checked" type="checkbox" checked="">
+                <input id="ch-checked-small" class="k-checkbox k-checkbox-sm k-checked" type="checkbox" checked="">
             </span>
             <label class="k-checkbox-label" for="ch-checked-small">checked</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-checked-medium" class="k-checkbox k-checkbox-md k-rounded-md k-checked" type="checkbox" checked="">
+                <input id="ch-checked-medium" class="k-checkbox k-checkbox-md k-checked" type="checkbox" checked="">
             </span>
             <label class="k-checkbox-label" for="ch-checked-medium">checked</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-checked-large" class="k-checkbox k-checkbox-lg k-rounded-md k-checked" type="checkbox" checked="">
+                <input id="ch-checked-large" class="k-checkbox k-checkbox-lg k-checked" type="checkbox" checked="">
             </span>
             <label class="k-checkbox-label" for="ch-checked-large">checked</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-indeterminate-small" class="k-checkbox k-checkbox-sm k-rounded-md k-indeterminate" type="checkbox">
+                <input id="ch-indeterminate-small" class="k-checkbox k-checkbox-sm k-indeterminate" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-indeterminate-small">indeterminate</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-indeterminate-medium" class="k-checkbox k-checkbox-md k-rounded-md k-indeterminate" type="checkbox">
+                <input id="ch-indeterminate-medium" class="k-checkbox k-checkbox-md k-indeterminate" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-indeterminate-medium">indeterminate</label>
         </section>
         <section>
             <span class="k-checkbox-wrap">
-                <input id="ch-indeterminate-large" class="k-checkbox k-checkbox-lg k-rounded-md k-indeterminate" type="checkbox">
+                <input id="ch-indeterminate-large" class="k-checkbox k-checkbox-lg k-indeterminate" type="checkbox">
             </span>
             <label class="k-checkbox-label" for="ch-indeterminate-large">indeterminate</label>
+        </section>
+        <section>
+            <div class="k-ripple-container">
+                <span class="k-checkbox-wrap">
+                    <input class="k-ripple-focus k-checkbox k-checkbox-sm k-focus" id="ch-ripple-small" type="checkbox">
+                </span>
+                <label class="k-checkbox-label" for="ch-ripple-small">ripple</label>
+            </div>
+        </section>
+        <section>
+            <div class="k-ripple-container">
+                <span class="k-checkbox-wrap">
+                    <input class="k-ripple-focus k-checkbox k-checkbox-md k-focus" id="ch-ripple-medium" type="checkbox">
+                </span>
+                <label class="k-checkbox-label" for="ch-ripple-medium">ripple</label>
+            </div>
+        </section>
+        <section>
+            <div class="k-ripple-container">
+                <span class="k-checkbox-wrap">
+                    <input class="k-ripple-focus k-checkbox k-checkbox-lg k-focus" id="ch-ripple-large" type="checkbox">
+                </span>
+                <label class="k-checkbox-label" for="ch-ripple-large">ripple</label>
+            </div>
+        </section>
+        <section>
+            <div class="k-ripple-container">
+                <span class="k-checkbox-wrap">
+                    <input class="k-ripple-focus k-checkbox k-checkbox-sm k-focus k-checked" id="ch-ripple-small" type="checkbox" checked="">
+                </span>
+                <label class="k-checkbox-label" for="ch-ripple-small">ripple checked</label>
+            </div>
+        </section>
+        <section>
+            <div class="k-ripple-container">
+                <span class="k-checkbox-wrap">
+                    <input class="k-ripple-focus k-checkbox k-checkbox-md k-focus k-checked" id="ch-ripple-medium" type="checkbox" checked="">
+                </span>
+                <label class="k-checkbox-label" for="ch-ripple-medium">ripple checked</label>
+            </div>
+        </section>
+        <section>
+            <div class="k-ripple-container">
+                <span class="k-checkbox-wrap">
+                    <input class="k-ripple-focus k-checkbox k-checkbox-lg k-focus k-checked" id="ch-ripple-large" type="checkbox" checked="">
+                </span>
+                <label class="k-checkbox-label" for="ch-ripple-large">ripple checked</label>
+            </div>
         </section>
     </div>
 </body>

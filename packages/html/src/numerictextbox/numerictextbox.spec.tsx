@@ -29,7 +29,7 @@ const states = [
 
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    rounded: [ Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
@@ -54,9 +54,6 @@ export type KendoNumericTextboxState = { [K in (typeof states)[number]]?: boolea
 const defaultOptions = {
     showSpinButton: true,
     showClearButton: true,
-    size: Input.defaultOptions.size,
-    rounded: Input.defaultOptions.rounded,
-    fillMode: Input.defaultOptions.fillMode,
     separators: true
 };
 
@@ -66,9 +63,9 @@ export const NumericTextbox: KendoComponent<KendoNumericTextboxProps & KendoNume
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
+        size,
+        rounded,
+        fillMode,
         separators = defaultOptions.separators,
         showClearButton = defaultOptions.showClearButton,
         showSpinButton = defaultOptions.showSpinButton,

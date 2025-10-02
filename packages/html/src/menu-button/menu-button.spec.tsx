@@ -16,7 +16,7 @@ const states = [
 
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    rounded: [ Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline, FillMode.clear, FillMode.link ],
     themeColor: [
         ThemeColor.base,
@@ -52,10 +52,6 @@ export type KendoMenuButtonProps = KendoMenuButtonOptions & {
 export type KendoMenuButtonState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    size: Size.medium,
-    rounded: Roundness.medium,
-    fillMode: FillMode.solid,
-    themeColor: ThemeColor.base,
     showArrow: true,
     arrowIconName: "caret-alt-down"
 };
@@ -66,10 +62,10 @@ export const MenuButton: KendoComponent<KendoMenuButtonProps & KendoMenuButtonSt
         React.HTMLAttributes<HTMLButtonElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
-        themeColor = defaultOptions.themeColor,
+        size,
+        rounded,
+        fillMode,
+        themeColor,
         hover,
         focus,
         active,

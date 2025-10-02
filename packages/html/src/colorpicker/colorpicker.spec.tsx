@@ -28,7 +28,7 @@ const states = [
 
 const options = {
     size: [Size.small, Size.medium, Size.large],
-    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    rounded: [Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
     fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
@@ -57,10 +57,7 @@ export type KendoColorPickerProps = KendoColorPickerOptions & {
 export type KendoColorPickerState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    arrowIconName: 'caret-alt-down',
-    size: Picker.defaultOptions.size,
-    rounded: Picker.defaultOptions.rounded,
-    fillMode: Picker.defaultOptions.fillMode
+    arrowIconName: 'caret-alt-down'
 };
 
 export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPickerState & React.HTMLAttributes<HTMLSpanElement>> = (
@@ -69,9 +66,9 @@ export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPicke
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
+        size,
+        rounded,
+        fillMode,
         arrowIconName = defaultOptions.arrowIconName,
         prefix,
         suffix,

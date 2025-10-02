@@ -27,7 +27,6 @@ export type KendoFormProps = KendoFormOptions & {
 };
 
 const defaultOptions = {
-    size: Size.medium,
     layout: 'basic',
     tag: 'form'
 };
@@ -37,7 +36,7 @@ export const Form: KendoComponent<KendoFormProps & React.HTMLAttributes<HTMLDivE
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         orientation,
         layout = defaultOptions.layout,
         formButtons,

@@ -30,6 +30,14 @@
         *::after {
             box-sizing: border-box;
         }
+
+        @extend %k-pager-md;
+
+        @each $size, $size-props in $kendo-pager-sizes {
+            &.k-pager-#{$size} {
+                @extend %k-pager-#{$size};
+            }
+        }
     }
 
     .k-pager-responsive {
@@ -145,7 +153,7 @@
         $_item-min-width: map.get($size-props, item-min-width);
         $_pager-dropdown-width: map.get($size-props, pager-dropdown-width);
 
-        .k-pager-#{$size} {
+        %k-pager-#{$size} {
             padding-inline: $_padding-x;
             padding-block: $_padding-y;
             gap: $_item-group-spacing;

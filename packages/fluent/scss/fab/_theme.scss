@@ -45,8 +45,8 @@
         }
     }
 
-    .k-fab-solid-warning,
-    .k-fab-solid-light {
+    .k-fab-warning,
+    .k-fab-light {
         &:focus::after,
         &.k-focus::after {
             outline-color: k-color(app-surface);

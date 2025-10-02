@@ -8,6 +8,13 @@
 
     .k-appbar {
         @include box-shadow( $kendo-appbar-box-shadow );
+        @extend %k-appbar-base;
+
+        @each $name, $color in $kendo-appbar-theme-colors {
+            &.k-appbar-#{$name} {
+                @extend %k-appbar-#{$name};
+            }
+        }
     }
     .k-appbar-bottom {
         @include box-shadow( $kendo-appbar-bottom-box-shadow );
@@ -16,7 +23,7 @@
 
     // AppBar theme colors
     @each $name, $color in $kendo-appbar-theme-colors {
-        .k-appbar-#{$name} {
+        %k-appbar-#{$name} {
             @if $name == "light" {
                 color: $kendo-appbar-light-text;
                 background-color: $kendo-appbar-light-bg;

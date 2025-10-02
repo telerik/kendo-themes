@@ -24,6 +24,21 @@
         position: relative;
         cursor: pointer;
         -webkit-appearance: none;
+
+        border-radius: $kendo-checkbox-border-radius;
+        @extend %k-checkbox-md;
+
+        @each $size, $size-props in $kendo-checkbox-sizes {
+            &.k-checkbox-#{$size} {
+                @extend %k-checkbox-#{$size};
+            }
+        }
+
+        @each $roundness in $kendo-checkbox-roundness {
+            &.k-rounded-#{$roundness} {
+                border-radius: k-border-radius($roundness);
+            }
+        }
     }
 
 
@@ -187,6 +202,8 @@
             transition: opacity 100ms linear, transform 150ms cubic-bezier(.4, 0, .2, 1);
             transform: translate(-50%, -50%) scale(0);
             transform-origin: center center;
+
+            @extend %k-checkbox-ripple-md;
         }
 
         .k-checkbox:focus,
@@ -198,6 +215,11 @@
         .k-checkbox.k-disabled::after {
             display: none;
         }
+        @each $size, $size-props in $kendo-checkbox-sizes {
+            .k-checkbox-#{$size}::after {
+                @extend %k-checkbox-ripple-#{$size};
+            }
+        }
     }
 
 
@@ -207,7 +229,7 @@
         $_glyph-size: map.get( $size-props, glyph-size );
         $_ripple-size: map.get( $size-props, ripple-size );
 
-        .k-checkbox-#{$size} {
+        %k-checkbox-#{$size} {
             width: $_size;
             height: $_size;
 
@@ -215,11 +237,10 @@
                 font-size: $_glyph-size;
             }
         }
-        .k-ripple-container {
-            .k-checkbox-#{$size}::after {
-                width: $_ripple-size;
-                height: $_ripple-size;
-            }
+
+        %k-checkbox-ripple-#{$size} {
+            width: $_ripple-size;
+            height: $_ripple-size;
         }
     }
 

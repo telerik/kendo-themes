@@ -15,6 +15,9 @@
             text-align: center;
             padding-inline: 0;
         }
+        @each $size, $size-props in $kendo-otp-sizes {
+            @extend %k-otp-#{$size};
+        }
     }
 
     @each $size, $size-props in $kendo-otp-sizes {
@@ -22,7 +25,7 @@
         $_separator-padding-x: map.get($size-props, separator-padding-x);
         $_input-width: map.get($size-props, input-width);
 
-        .k-otp-#{$size} {
+        %k-otp-#{$size} {
             gap: $_gap;
 
             .k-otp-input {

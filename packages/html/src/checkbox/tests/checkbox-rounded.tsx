@@ -17,9 +17,9 @@ export default () =>(
             <span>medium</span>
             <span>large</span>
 
-            {[ null,...Checkbox.options.rounded ].map((rounded) => (
+            {[ ...Checkbox.options.rounded ].map((rounded) => (
                 <>
-                    <span>{rounded || 'none'}</span>
+                    <span>{rounded}</span>
                     <span>
                         <CheckboxChecked size="small" rounded={rounded} />
                         checkbox

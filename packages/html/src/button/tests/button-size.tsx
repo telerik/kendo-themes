@@ -24,9 +24,9 @@ export default () => (
             <span>small</span>
             <span>medium</span>
             <span>large</span>
-            {[ null,...Button.options.rounded ].map((roundness) => (
+            {[ ...Button.options.rounded ].map((roundness) => (
                 <>
-                    <span>{roundness || 'null'}</span>
+                    <span>{roundness}</span>
                     {Button.options.size.map((size) => (
                         <section>
                             <TextButton size={size} rounded={roundness}></TextButton>

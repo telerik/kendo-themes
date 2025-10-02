@@ -26,7 +26,6 @@ export type KendoTimeSelectorProps = KendoTimeSelectorOptions & {
 };
 
 const defaultOptions = {
-    size: Size.medium
 } as const;
 
 export const TimeSelector: KendoComponent<KendoTimeSelectorProps & React.HTMLAttributes<HTMLDivElement>> = (
@@ -34,7 +33,7 @@ export const TimeSelector: KendoComponent<KendoTimeSelectorProps & React.HTMLAtt
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         header,
         fastSelection,
         columns,

@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../../color-system/_functions.import.scss" as *;
 @use "../../functions/index.import.scss" as *;
 @use "../../_variables.scss" as *;
@@ -5,23 +6,42 @@
 
 @mixin kendo-avatar--theme-base() {
 
-    // Solid Avatars
+    .k-avatar {
+        @extend %k-avatar-solid-base;
+
+        &.k-avatar-solid {
+            @extend %k-avatar-solid-base;
+        }
+        &.k-avatar-outline {
+            @extend %k-avatar-outline-base;
+        }
+
+        @each $name, $color in $kendo-avatar-theme-colors {
+            &.k-avatar-#{$name} {
+                @extend %k-avatar-solid-#{$name};
+            }
+
+            &.k-avatar-outline.k-avatar-#{$name} {
+                @extend %k-avatar-outline-#{$name};
+            }
+        }
+    }
+
+    // Solid avatar
     @each $name, $color in $kendo-avatar-theme-colors {
-        .k-avatar-solid-#{$name} {
+        %k-avatar-solid-#{$name} {
             border-color: $color;
             color: k-color(on-#{$name});
             background-color: $color;
         }
     }
 
-    // Outline avatars
-    .k-avatar-outline {
-        border-color: currentColor;
-    }
-
-    @each $name, $color in $kendo-avatar-theme-colors {
-        .k-avatar-outline-#{$name} {
+    // Outline avatar
+    @each $name, $color in map.merge($kendo-avatar-theme-colors, ("base": k-color(on-base))) {
+        %k-avatar-outline-#{$name} {
             color: $color;
+            border-color: currentColor;
+            background: none;
         }
     }
 

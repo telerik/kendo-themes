@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            grid-template-columns: 200px repeat(4, 1fr);
+        }
+        .k-avatar-image:empty {
+            background-image: url("/packages/html/assets/avatar.jpg");
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid">
+        <span></span>
+        <span>Image</span>
+        <span>Bg image</span>
+        <span>Icon</span>
+        <span>Text</span>
+        <span>base</span>
+        <div class="k-avatar k-avatar-outline k-avatar-base k-avatar-bordered">
+            <span class="k-avatar-image">
+                <img src="/packages/html/assets/avatar.jpg">
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-base k-avatar-bordered">
+            <span class="k-avatar-image"></span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-base k-avatar-bordered">
+            <span class="k-avatar-icon">
+                <span class="k-icon k-svg-icon k-svg-i-x">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                    </svg>
+                </span>
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-base k-avatar-bordered">
+            <span class="k-avatar-text">JO</span>
+        </div>
+        <span>primary</span>
+        <div class="k-avatar k-avatar-outline k-avatar-primary k-avatar-bordered">
+            <span class="k-avatar-image">
+                <img src="/packages/html/assets/avatar.jpg">
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-primary k-avatar-bordered">
+            <span class="k-avatar-image"></span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-primary k-avatar-bordered">
+            <span class="k-avatar-icon">
+                <span class="k-icon k-svg-icon k-svg-i-x">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                    </svg>
+                </span>
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-primary k-avatar-bordered">
+            <span class="k-avatar-text">JO</span>
+        </div>
+        <span>secondary</span>
+        <div class="k-avatar k-avatar-outline k-avatar-secondary k-avatar-bordered">
+            <span class="k-avatar-image">
+                <img src="/packages/html/assets/avatar.jpg">
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-secondary k-avatar-bordered">
+            <span class="k-avatar-image"></span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-secondary k-avatar-bordered">
+            <span class="k-avatar-icon">
+                <span class="k-icon k-svg-icon k-svg-i-x">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                    </svg>
+                </span>
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-secondary k-avatar-bordered">
+            <span class="k-avatar-text">JO</span>
+        </div>
+        <span>tertiary</span>
+        <div class="k-avatar k-avatar-outline k-avatar-tertiary k-avatar-bordered">
+            <span class="k-avatar-image">
+                <img src="/packages/html/assets/avatar.jpg">
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-tertiary k-avatar-bordered">
+            <span class="k-avatar-image"></span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-tertiary k-avatar-bordered">
+            <span class="k-avatar-icon">
+                <span class="k-icon k-svg-icon k-svg-i-x">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                    </svg>
+                </span>
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-tertiary k-avatar-bordered">
+            <span class="k-avatar-text">JO</span>
+        </div>
+        <span>success</span>
+        <div class="k-avatar k-avatar-outline k-avatar-success k-avatar-bordered">
+            <span class="k-avatar-image">
+                <img src="/packages/html/assets/avatar.jpg">
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-success k-avatar-bordered">
+            <span class="k-avatar-image"></span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-success k-avatar-bordered">
+            <span class="k-avatar-icon">
+                <span class="k-icon k-svg-icon k-svg-i-x">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                    </svg>
+                </span>
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-success k-avatar-bordered">
+            <span class="k-avatar-text">JO</span>
+        </div>
+        <span>warning</span>
+        <div class="k-avatar k-avatar-outline k-avatar-warning k-avatar-bordered">
+            <span class="k-avatar-image">
+                <img src="/packages/html/assets/avatar.jpg">
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-warning k-avatar-bordered">
+            <span class="k-avatar-image"></span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-warning k-avatar-bordered">
+            <span class="k-avatar-icon">
+                <span class="k-icon k-svg-icon k-svg-i-x">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                    </svg>
+                </span>
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-warning k-avatar-bordered">
+            <span class="k-avatar-text">JO</span>
+        </div>
+        <span>error</span>
+        <div class="k-avatar k-avatar-outline k-avatar-error k-avatar-bordered">
+            <span class="k-avatar-image">
+                <img src="/packages/html/assets/avatar.jpg">
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-error k-avatar-bordered">
+            <span class="k-avatar-image"></span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-error k-avatar-bordered">
+            <span class="k-avatar-icon">
+                <span class="k-icon k-svg-icon k-svg-i-x">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                    </svg>
+                </span>
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-error k-avatar-bordered">
+            <span class="k-avatar-text">JO</span>
+        </div>
+        <span>info</span>
+        <div class="k-avatar k-avatar-outline k-avatar-info k-avatar-bordered">
+            <span class="k-avatar-image">
+                <img src="/packages/html/assets/avatar.jpg">
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-info k-avatar-bordered">
+            <span class="k-avatar-image"></span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-info k-avatar-bordered">
+            <span class="k-avatar-icon">
+                <span class="k-icon k-svg-icon k-svg-i-x">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                    </svg>
+                </span>
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-info k-avatar-bordered">
+            <span class="k-avatar-text">JO</span>
+        </div>
+        <span>light</span>
+        <div class="k-avatar k-avatar-outline k-avatar-light k-avatar-bordered">
+            <span class="k-avatar-image">
+                <img src="/packages/html/assets/avatar.jpg">
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-light k-avatar-bordered">
+            <span class="k-avatar-image"></span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-light k-avatar-bordered">
+            <span class="k-avatar-icon">
+                <span class="k-icon k-svg-icon k-svg-i-x">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                    </svg>
+                </span>
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-light k-avatar-bordered">
+            <span class="k-avatar-text">JO</span>
+        </div>
+        <span>dark</span>
+        <div class="k-avatar k-avatar-outline k-avatar-dark k-avatar-bordered">
+            <span class="k-avatar-image">
+                <img src="/packages/html/assets/avatar.jpg">
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-dark k-avatar-bordered">
+            <span class="k-avatar-image"></span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-dark k-avatar-bordered">
+            <span class="k-avatar-icon">
+                <span class="k-icon k-svg-icon k-svg-i-x">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                    </svg>
+                </span>
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-dark k-avatar-bordered">
+            <span class="k-avatar-text">JO</span>
+        </div>
+        <span>inverse</span>
+        <div class="k-avatar k-avatar-outline k-avatar-inverse k-avatar-bordered">
+            <span class="k-avatar-image">
+                <img src="/packages/html/assets/avatar.jpg">
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-inverse k-avatar-bordered">
+            <span class="k-avatar-image"></span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-inverse k-avatar-bordered">
+            <span class="k-avatar-icon">
+                <span class="k-icon k-svg-icon k-svg-i-x">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                    </svg>
+                </span>
+            </span>
+        </div>
+        <div class="k-avatar k-avatar-outline k-avatar-inverse k-avatar-bordered">
+            <span class="k-avatar-text">JO</span>
+        </div>
+    </div>
+</body>
+</html>

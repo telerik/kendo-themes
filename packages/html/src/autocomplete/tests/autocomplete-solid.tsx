@@ -15,35 +15,35 @@ export default () =>(
             <span>Autocomplete RTL</span>
 
             <div>
-                <AutocompleteNormal />
+                <AutocompleteNormal fillMode="solid" />
             </div>
             <div dir="rtl">
-                <AutocompleteNormal />
+                <AutocompleteNormal fillMode="solid" />
             </div>
             <div>
-                <AutocompleteNormal placeholder="placeholder..." />
+                <AutocompleteNormal fillMode="solid" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <AutocompleteNormal placeholder="placeholder..." />
+                <AutocompleteNormal fillMode="solid" placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...Autocomplete.states ].map((state) => (
                 <>
                     <div>
-                        <AutocompleteNormal { ...{ [state]: true }} value={state} />
+                        <AutocompleteNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <AutocompleteNormal { ...{ [state]: true }} value={state} />
+                        <AutocompleteNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <AutocompleteNormal value="invalid focus" invalid focus />
+                <AutocompleteNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <AutocompleteNormal value="invalid focus" invalid focus />
+                <AutocompleteNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
         </div>
     </>

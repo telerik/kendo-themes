@@ -29,36 +29,36 @@ export default () =>(
 
             <span>Inline</span>
             <div className="k-badge-container">
-                <BadgeNormal>Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium">Round</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium">Round</BadgeNormal>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="full">Pill</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="full">Pill</BadgeNormal>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="full">1</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="full">1</BadgeNormal>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="full"></BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="full"></BadgeNormal>
             </div>
 
             <span>Inline RTL</span>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal>Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium">Round</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium">Round</BadgeNormal>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="full">Pill</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="full">Pill</BadgeNormal>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="full">1</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="full">1</BadgeNormal>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="full"></BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="full"></BadgeNormal>
             </div>
 
             <span className="col-6"></span>
@@ -72,31 +72,31 @@ export default () =>(
 
             <span>Inside</span>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="inside" align="top-start">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="inside" align="top-start">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="inside" align="top-end">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="inside" align="top-end">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="inside" align="bottom-start">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="inside" align="bottom-start">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="inside" align="bottom-end">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="inside" align="bottom-end">Rect</BadgeNormal>
             </div>
             <span></span>
 
             <span>Edge</span>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="edge" align="top-start">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="edge" align="top-start">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="edge" align="top-end">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="edge" align="top-end">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="edge" align="bottom-start">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="edge" align="bottom-start">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="edge" align="bottom-end">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="edge" align="bottom-end">Rect</BadgeNormal>
             </div>
             <span></span>
 
@@ -104,16 +104,16 @@ export default () =>(
 
             <span>Outside</span>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="outside" align="top-start">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="outside" align="top-start">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="outside" align="top-end">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="outside" align="top-end">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="outside" align="bottom-start">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="outside" align="bottom-start">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="outside" align="bottom-end">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="outside" align="bottom-end">Rect</BadgeNormal>
             </div>
             <span></span>
 
@@ -121,31 +121,31 @@ export default () =>(
 
             <span>Inside RTL</span>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="inside" align="top-start">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="inside" align="top-start">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="inside" align="top-end">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="inside" align="top-end">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="inside" align="bottom-start">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="inside" align="bottom-start">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="inside" align="bottom-end">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="inside" align="bottom-end">Rect</BadgeNormal>
             </div>
             <span></span>
 
             <span>Edge RTL</span>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="edge" align="top-start">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="edge" align="top-start">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="edge" align="top-end">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="edge" align="top-end">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="edge" align="bottom-start">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="edge" align="bottom-start">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="edge" align="bottom-end">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="edge" align="bottom-end">Rect</BadgeNormal>
             </div>
             <span></span>
 
@@ -153,16 +153,16 @@ export default () =>(
 
             <span>Outside RTL</span>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="outside" align="top-start">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="outside" align="top-start">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="outside" align="top-end">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="outside" align="top-end">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="outside" align="bottom-start">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="outside" align="bottom-start">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="outside" align="bottom-end">Rect</BadgeNormal>
+                <BadgeNormal fillMode="solid" rounded="medium" position="outside" align="bottom-end">Rect</BadgeNormal>
             </div>
             <span></span>
 

@@ -8,14 +8,33 @@
     @include kendo-chip--theme-base();
 
     .k-chip {
+        @extend %k-chip-solid-base;
+
         &:focus,
         &.k-focus {
             border-color: $kendo-chip-focus-border;
             outline-color: $kendo-chip-focus-border;
         }
+
+        &.k-chip-solid {
+            @extend %k-chip-solid-base;
+        }
+        &.k-chip-outline {
+            @extend %k-chip-outline-base;
+        }
+
+        @each $name, $color in $kendo-chip-theme-colors {
+            &.k-chip-#{$name} {
+                @extend %k-chip-solid-#{$name};
+            }
+
+            &.k-chip-outline.k-chip-#{$name} {
+                @extend %k-chip-outline-#{$name};
+            }
+        }
     }
 
-    .k-chip.k-chip-solid-base {
+    .k-chip.k-chip-solid {
         &.k-chip-outline:focus::after,
         &.k-chip-outline.k-focus::after {
             outline-color: $kendo-chip-focus-outline;
@@ -36,7 +55,7 @@
     }
 
     @each $name, $color in $kendo-chip-theme-colors {
-        .k-chip-solid-#{$name} {
+        %k-chip-solid-#{$name} {
             border-color: k-color(#{$name}-subtle);
 
             &:active,
@@ -61,7 +80,7 @@
             }
         }
 
-        .k-chip-outline-#{$name} {
+        %k-chip-outline-#{$name} {
             color: k-color(#{$name}-on-subtle);
 
             &:hover,

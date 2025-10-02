@@ -23,6 +23,14 @@
         *::after {
             box-sizing: border-box;
         }
+
+        @extend %k-colorpalette-md;
+
+        @each $size, $size-props in $kendo-color-palette-sizes {
+            &.k-colorpalette-#{$size} {
+                @extend %k-colorpalette-#{$size};
+            }
+        }
     }
 
     // Table
@@ -35,8 +43,6 @@
 
     // Tile
     .k-colorpalette-tile {
-        width: $kendo-color-palette-tile-width;
-        height: $kendo-color-palette-tile-height;
         box-sizing: border-box;
         overflow: hidden;
         cursor: pointer;
@@ -61,7 +67,7 @@
         $_tile-width: map.get( $size-props, width );
         $_tile-height: map.get( $size-props, height );
 
-        .k-colorpalette-#{$size} {
+        %k-colorpalette-#{$size} {
             .k-colorpalette-tile {
                 width: $_tile-width;
                 height: $_tile-height;

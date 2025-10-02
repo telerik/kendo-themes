@@ -31,10 +31,18 @@
         position: relative;
         overflow: hidden;
 
+        @extend %k-list-md;
+
         *,
         *::before,
         *::after {
             box-sizing: border-box;
+        }
+
+        @each $size, $size-props in $kendo-list-sizes {
+            &.k-list-#{$size} {
+                @extend %k-list-#{$size};
+            }
         }
     }
 
@@ -49,8 +57,6 @@
     // List header
     // .k-list-header,
     .k-list-group-sticky-header {
-        padding-block: $kendo-list-md-header-padding-y;
-        padding-inline: $kendo-list-md-header-padding-x;
         border-width: 0;
         border-width: $kendo-list-header-border-width;
         border-style: solid;
@@ -91,8 +97,6 @@
 
     // List item
     .k-list-item {
-        padding-block: $kendo-list-md-item-padding-y;
-        padding-inline: $kendo-list-md-item-padding-x;
         border: 0;
         font-size: $kendo-list-item-font-size;
         line-height: $kendo-list-item-line-height;
@@ -141,8 +145,6 @@
 
     // List group item
     .k-list-group-item {
-        padding-block: $kendo-list-md-group-item-padding-y;
-        padding-inline: $kendo-list-md-group-item-padding-x;
         border-width: 0;
         border-width: $kendo-list-group-item-border-width;
         border-style: solid;
@@ -227,7 +229,7 @@
         $_filter-padding-x: map.get( $size-props, filter-padding-x );
         $_filter-padding-y: map.get( $size-props, filter-padding-y );
 
-        .k-list-#{$size} {
+        %k-list-#{$size} {
             font-size: $_font-size;
             line-height: $_line-height;
 

@@ -13,8 +13,8 @@ const states = [
 
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
-    trackRounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    thumbRounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ]
+    trackRounded: [ Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    thumbRounded: [ Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ]
 };
 
 export type KendoSwitchOptions = {
@@ -30,11 +30,7 @@ export type KendoSwitchProps = KendoSwitchOptions & {
 
 export type KendoSwitchState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultOptions = {
-    size: Size.medium,
-    trackRounded: Roundness.full,
-    thumbRounded: Roundness.full
-};
+const defaultOptions = {};
 
 export const Switch: KendoComponent<KendoSwitchProps & KendoSwitchState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoSwitchProps &
@@ -45,9 +41,9 @@ export const Switch: KendoComponent<KendoSwitchProps & KendoSwitchState & React.
         checked,
         onLabel,
         offLabel,
-        size = defaultOptions.size,
-        trackRounded = defaultOptions.trackRounded,
-        thumbRounded = defaultOptions.thumbRounded,
+        size,
+        trackRounded,
+        thumbRounded,
         hover,
         focus,
         disabled,

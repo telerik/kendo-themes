@@ -35,7 +35,6 @@ export type KendoNotificationProps = KendoNotificationOptions & {
 };
 
 const defaultOptions = {
-    themeColor: ThemeColor.base,
     closable: false
 };
 
@@ -45,7 +44,7 @@ export const Notification: KendoComponent<KendoNotificationProps & React.HTMLAtt
 ) => {
     const {
         actions,
-        themeColor = defaultOptions.themeColor,
+        themeColor,
         text,
         icon,
         closable = defaultOptions.closable,

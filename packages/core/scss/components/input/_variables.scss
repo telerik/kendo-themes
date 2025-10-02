@@ -3,6 +3,7 @@
 $kendo-input-default-width: null !default;
 
 $kendo-input-border-width: null !default;
+$kendo-input-border-radius: null !default;
 $kendo-input-border-height: null !default;
 $kendo-input-border-radius: null !default;
 
@@ -164,3 +165,5 @@ $kendo-picker-flat-hover-focus-border: null !default;
 $kendo-use-input-button-width: null !default;
 $kendo-use-input-spinner-width: null !default;
 $kendo-use-input-spinner-icon-offset: null !default;
+
+$kendo-input-roundness: ( "none", "sm", "md", "lg", "full" ) !default;

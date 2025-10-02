@@ -27,7 +27,6 @@ export type KendoListProps = KendoListOptions & {
 export type KendoListState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    size: Size.medium
 };
 
 export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAttributes<HTMLDivElement>> = (
@@ -36,7 +35,7 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         virtualization,
         children,
         optionLabel,

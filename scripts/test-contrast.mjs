@@ -25,11 +25,8 @@ const EXCLUDED_ELEMENTS_FOCUS = [
     'k-colorpalette-tile',
     'k-bottom-nav-item',
     'k-button-outline',
-    'k-button-clear-warning',
-    'k-button-flat-warning',
-    'k-button-link-warning',
-    'k-button-solid-warning',
-    'k-fab-solid-warning',
+    'k-button-warning',
+    'k-fab-warning',
     'k-step-last',
     'k-quick-reply'
 ];
@@ -134,23 +131,23 @@ const addViolation = async( output, target, filePath, countField, browser ) => {
                             }
 
                             if (result === null) {
-                                // exclude warning clear buttons
-                                result = document.querySelector(arguments[0]).closest('.k-button-clear-warning');
+                                // exclude warning buttons
+                                result = document.querySelector(arguments[0]).closest('.k-button-clear.k-button-warning');
                             }
 
                             if (result === null) {
                                 // exclude warning link buttons
-                                result = document.querySelector(arguments[0]).closest('.k-button-link-warning');
+                                result = document.querySelector(arguments[0]).closest('.k-button-link.k-button-warning');
                             }
 
                             if (result === null) {
                                 // exclude warning outline buttons
-                                result = document.querySelector(arguments[0]).closest('.k-button-outline-warning');
+                                result = document.querySelector(arguments[0]).closest('.k-button-outline.k-button-warning');
                             }
 
                             if (result === null) {
                                 // exclude warning flat buttons
-                                result = document.querySelector(arguments[0]).closest('.k-button-flat-warning');
+                                result = document.querySelector(arguments[0]).closest('.k-button-flat.k-button-warning');
                             }
 
                             if (result === null) {

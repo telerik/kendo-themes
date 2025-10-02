@@ -30,6 +30,14 @@
         *::after {
             box-sizing: border-box;
         }
+
+        @extend %k-treeview-md;
+
+        @each $size, $size-props in $kendo-treeview-sizes {
+            &.k-treeview-#{$size} {
+                @extend %k-treeview-#{$size};
+            }
+        }
     }
 
 
@@ -153,7 +161,7 @@
         $_checkbox-padding-x: map.get( $size-props, checkbox-padding-x );
         $_checkbox-padding-y: map.get( $size-props, checkbox-padding-y );
 
-        .k-treeview-#{$size} {
+        %k-treeview-#{$size} {
             font-size: $_font-size;
             line-height: $_line-height;
 

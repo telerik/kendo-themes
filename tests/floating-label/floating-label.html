@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            width: 660px;
+        }
+        .k-floating-label-container {
+            width: 100%;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <span>Floating label</span>
+        <span>Floating label RTL</span>
+        <div>
+            <span class="k-floating-label-container k-empty">
+                <span class="k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <label class="k-floating-label">Label without placeholder</label>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-floating-label-container k-empty">
+                <span class="k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <label class="k-floating-label">Label without placeholder</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-empty">
+                <span class="k-textbox k-input">
+                    <input class="k-input-inner" placeholder="placeholder" autocomplete="off" type="text" value="">
+                </span>
+                <label class="k-floating-label">Label with placeholder</label>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-floating-label-container k-empty">
+                <span class="k-textbox k-input">
+                    <input class="k-input-inner" placeholder="placeholder" autocomplete="off" type="text" value="">
+                </span>
+                <label class="k-floating-label">Label with placeholder</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-empty">
+                <span class="k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <label class="k-floating-label">Label optional<span class="k-label-optional">(Optional)</span>
+                </label>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-floating-label-container k-empty">
+                <span class="k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <label class="k-floating-label">Label optional<span class="k-label-optional">(Optional)</span>
+                </label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-focus k-empty">
+                <span class="k-textbox k-input k-focus">
+                    <input class="k-input-inner" placeholder="placeholder" autocomplete="off" type="text" value="">
+                </span>
+                <label class="k-floating-label">Label with placeholder focused</label>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-floating-label-container k-focus k-empty">
+                <span class="k-textbox k-input k-focus">
+                    <input class="k-input-inner" placeholder="placeholder" autocomplete="off" type="text" value="">
+                </span>
+                <label class="k-floating-label">Label with placeholder focused</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container">
+                <span class="k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="normal">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-floating-label-container">
+                <span class="k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="normal">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-hover">
+                <span class="k-textbox k-input k-hover">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="hover">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-floating-label-container k-hover">
+                <span class="k-textbox k-input k-hover">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="hover">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-focus">
+                <span class="k-textbox k-input k-focus">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="focus">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-floating-label-container k-focus">
+                <span class="k-textbox k-input k-focus">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="focus">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-valid">
+                <span class="k-textbox k-input k-valid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="valid">
+                    <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-check-circle">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m-32 352L96 256l45-45 83 83 147-147 45 45z"></path>
+                        </svg>
+                    </span>
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-floating-label-container k-valid">
+                <span class="k-textbox k-input k-valid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="valid">
+                    <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-check-circle">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m-32 352L96 256l45-45 83 83 147-147 45 45z"></path>
+                        </svg>
+                    </span>
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-invalid">
+                <span class="k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="invalid">
+                    <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
+                        </svg>
+                    </span>
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-floating-label-container k-invalid">
+                <span class="k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="invalid">
+                    <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
+                        </svg>
+                    </span>
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-empty">
+                <span class="k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-floating-label-container k-empty">
+                <span class="k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div>
+            <span class="k-floating-label-container k-disabled">
+                <span class="k-textbox k-input k-disabled">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="disabled">
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-floating-label-container k-disabled">
+                <span class="k-textbox k-input k-disabled">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="disabled">
+                </span>
+                <label class="k-floating-label">Label</label>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

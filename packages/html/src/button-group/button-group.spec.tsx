@@ -22,9 +22,7 @@ export type KendoButtonGroupProps = KendoButtonGroupOptions & {
 
 export type KendoButtonGroupState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultOptions = {
-    fillMode: FillMode.solid
-};
+const defaultOptions = {};
 
 export const ButtonGroup: KendoComponent<KendoButtonGroupProps & KendoButtonGroupState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoButtonGroupProps &
@@ -32,7 +30,7 @@ export const ButtonGroup: KendoComponent<KendoButtonGroupProps & KendoButtonGrou
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        fillMode = defaultOptions.fillMode,
+        fillMode,
         disabled,
         stretched,
         ...other

@@ -26,6 +26,14 @@
         position: relative;
         cursor: pointer;
         -webkit-appearance: none;
+
+        @extend %k-radio-md;
+
+        @each $size, $size-props in $kendo-radio-sizes {
+            &.k-radio-#{$size} {
+                @extend %k-radio-#{$size};
+            }
+        }
     }
 
 
@@ -181,6 +189,8 @@
             transition: opacity 100ms linear, transform 150ms cubic-bezier(.4, 0, .2, 1);
             transform: translate(-50%, -50%) scale(0);
             transform-origin: center center;
+
+            @extend %k-radio-ripple-md;
         }
 
         .k-radio:focus,
@@ -192,6 +202,12 @@
         .k-radio.k-disabled::after {
             display: none;
         }
+
+        @each $size, $size-props in $kendo-radio-sizes {
+            .k-radio-#{$size}::after {
+                @extend %k-radio-ripple-#{$size};
+            }
+        }
     }
 
 
@@ -201,7 +217,7 @@
         $_glyph-size: map.get( $size-props, glyph-size );
         $_ripple-size: map.get( $size-props, ripple-size );
 
-        .k-radio-#{$size} {
+        %k-radio-#{$size} {
             width: $_size;
             height: $_size;
 
@@ -209,11 +225,9 @@
                 font-size: $_glyph-size;
             }
         }
-        .k-ripple-container {
-            .k-radio-#{$size}::after {
-                width: $_ripple-size;
-                height: $_ripple-size;
-            }
+        %k-radio-ripple-#{$size} {
+            width: $_ripple-size;
+            height: $_ripple-size;
         }
     }
 
