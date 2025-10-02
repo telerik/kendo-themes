@@ -168,16 +168,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-calendar-header-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-calendar-header-text, #{$kendo-calendar-text} )</code></td>
-    <td><code>var(--kendo-calendar-header-text, var(--kendo-calendar-text, var(--kendo-color-on-app-surface, #242424)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the calendar header.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-calendar-header-border</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-header-border, #{$kendo-calendar-border} )</code></td>
@@ -690,8 +680,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-navigation-text</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-navigation-text, #{$kendo-calendar-header-text} )</code></td>
-    <td><code>var(--kendo-calendar-navigation-text, var(--kendo-calendar-header-text, var(--kendo-calendar-text, var(--kendo-color-on-app-surface, #242424))))</code></td>
+    <td><code>var( --kendo-calendar-navigation-text, k-color(on-app-surface) )</code></td>
+    <td><code>var(--kendo-calendar-navigation-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the navigation in the infinite Calendar.</div></div>
