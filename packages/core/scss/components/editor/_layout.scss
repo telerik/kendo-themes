@@ -44,7 +44,7 @@
         padding-block: $kendo-editor-inline-padding-y;
         padding-inline: $kendo-editor-inline-padding-x;
         border: 1px solid transparent;
-        word-wrap: break-word;
+        overflow-wrap: break-word;
         overflow: auto;
         background: none;
     }

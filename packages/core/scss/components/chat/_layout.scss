@@ -104,7 +104,6 @@
         flex: 1;
         max-width: 100%;
         min-width: 0;
-        word-wrap: break-word;
         overflow-wrap: break-word;
     }
 
@@ -153,7 +152,6 @@
         position: relative;
         transition: margin .2s ease-in-out;
         outline: none;
-        word-wrap: break-word;
         overflow-wrap: break-word;
 
         .k-chat-message-link {
@@ -175,7 +173,7 @@
         overflow: hidden;
         flex-shrink: 0;
 
-        word-wrap: break-word;
+        overflow-wrap: break-word;
         white-space: pre-wrap;
 
         &:has(.k-skeleton-container) {

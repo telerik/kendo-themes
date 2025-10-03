@@ -189,7 +189,7 @@
             text-align: start;
             display: flex;
             flex-flow: row wrap;
-            grid-column-gap: $kendo-file-manager-preview-column-gap;
+            column-gap: $kendo-file-manager-preview-column-gap;
         }
         .k-file-meta-label {
             display: inline-block;
