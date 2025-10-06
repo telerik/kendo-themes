@@ -12,6 +12,8 @@
         z-index: k-z-index("animation");
         outline: none;
 
+        @include border-bottom-radius-only( $kendo-border-radius-md );
+
         &-fixed {
             position: fixed;
         }
@@ -20,8 +22,6 @@
             position: relative;
             display: inline-block;
         }
-
-        @include border-bottom-radius-only( $kendo-border-radius-md );
     }
 
     .k-animation-container:has(.k-child-animation-container > .k-popup) {
