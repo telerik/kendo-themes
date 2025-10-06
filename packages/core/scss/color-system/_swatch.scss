@@ -3,7 +3,7 @@
 @use "../_variables.scss" as *;
 
 // Colors
-$_default-colors: (
+$default-colors: (
     // Misc
     app-surface: map.get( $kendo-palette-gray, "white" ),
     on-app-surface: map.get( $kendo-palette-gray, 12 ),
@@ -421,8 +421,8 @@ $_default-colors: (
 /// @prop {Color} series-f-bolder - The bolder series F color variable.
 /// @prop {Color} series-f-subtle - The subtle series F color variable.
 /// @prop {Color} series-f-subtler - The subtler series F color variable.
-$kendo-colors: $_default-colors !default;
-$kendo-colors: map.merge($_default-colors, $kendo-colors);
+$kendo-colors: $default-colors !default;
+$kendo-colors: map.merge($default-colors, $kendo-colors);
 
 @mixin kendo-color-system--styles() {
     :root {
