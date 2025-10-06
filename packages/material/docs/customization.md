@@ -30098,7 +30098,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-font-weights</td>
     <td>Map</td>
-    <td><code>map.merge( $_default-font-weights, $kendo-font-weights )</code></td>
+    <td><code>$default-font-weights</code></td>
     <td><ul><li>thin: 100</li><li>extra-light: 200</li><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li><li>extra-bold: 800</li><li>black: 900</li></ul></td>
 </tr>
 <tr>

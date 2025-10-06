@@ -29925,7 +29925,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-letter-spacings</td>
     <td>Map</td>
-    <td><code>map.merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
+    <td><code>$default-letter-spacings</code></td>
     <td><ul><li>tightest: -0.15px</li><li>tighter: -0.1px</li><li>tight: -0.5px</li><li>normal: 0px</li><li>wide: 0.5px</li><li>wider: 0.1px</li><li>widest: 0.15px</li></ul></td>
 </tr>
 <tr>

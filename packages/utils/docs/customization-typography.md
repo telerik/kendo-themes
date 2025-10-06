@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-font-sizes</td>
     <td></td>
-    <td><code>map.merge( $_default-font-sizes, $kendo-font-sizes )</code></td>
+    <td><code>$default-font-sizes</code></td>
     <td></td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-line-heights</td>
     <td></td>
-    <td><code>map.merge( $_default-line-heights, $kendo-line-heights )</code></td>
+    <td><code>$default-line-heights</code></td>
     <td></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-font-weights</td>
     <td></td>
-    <td><code>map.merge( $_default-font-weights, $kendo-font-weights )</code></td>
+    <td><code>$default-font-weights</code></td>
     <td></td>
 </tr>
 <tr>
@@ -420,7 +420,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-letter-spacings</td>
     <td></td>
-    <td><code>map.merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
+    <td><code>$default-letter-spacings</code></td>
     <td></td>
 </tr>
 <tr>
@@ -430,7 +430,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-font-families</td>
     <td></td>
-    <td><code>map.merge( $_default-font-families, $kendo-font-families )</code></td>
+    <td><code>$default-font-families</code></td>
     <td></td>
 </tr>
 <tr>

@@ -164,7 +164,7 @@ The following table lists the available variables for customizing the Theme Util
 <tr>
     <td>$kendo-border-radii</td>
     <td></td>
-    <td><code>map.merge($_default-border-radii, $kendo-border-radii)</code></td>
+    <td><code>$default-border-radii</code></td>
     <td></td>
 </tr>
 <tr>
@@ -274,7 +274,7 @@ The following table lists the available variables for customizing the Theme Util
 <tr>
     <td>$kendo-colors</td>
     <td></td>
-    <td><code>$_default-colors</code></td>
+    <td><code>$default-colors</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1149,7 +1149,7 @@ The following table lists the available variables for customizing the Theme Util
 <tbody><tr>
     <td>$kendo-elevation</td>
     <td></td>
-    <td><code>$_default-elevation</code></td>
+    <td><code>$default-elevation</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1319,7 +1319,7 @@ The following table lists the available variables for customizing the Theme Util
 <tbody><tr>
     <td>$kendo-spacing</td>
     <td></td>
-    <td><code>$_default-spacing</code></td>
+    <td><code>$default-spacing</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1709,7 +1709,7 @@ The following table lists the available variables for customizing the Theme Util
 <tr>
     <td>$kendo-font-sizes</td>
     <td></td>
-    <td><code>map.merge( $_default-font-sizes, $kendo-font-sizes )</code></td>
+    <td><code>$default-font-sizes</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1719,7 +1719,7 @@ The following table lists the available variables for customizing the Theme Util
 <tr>
     <td>$kendo-line-heights</td>
     <td></td>
-    <td><code>map.merge( $_default-line-heights, $kendo-line-heights )</code></td>
+    <td><code>$default-line-heights</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1729,7 +1729,7 @@ The following table lists the available variables for customizing the Theme Util
 <tr>
     <td>$kendo-font-weights</td>
     <td></td>
-    <td><code>map.merge( $_default-font-weights, $kendo-font-weights )</code></td>
+    <td><code>$default-font-weights</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1739,7 +1739,7 @@ The following table lists the available variables for customizing the Theme Util
 <tr>
     <td>$kendo-letter-spacings</td>
     <td></td>
-    <td><code>map.merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
+    <td><code>$default-letter-spacings</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1749,7 +1749,7 @@ The following table lists the available variables for customizing the Theme Util
 <tr>
     <td>$kendo-font-families</td>
     <td></td>
-    <td><code>map.merge( $_default-font-families, $kendo-font-families )</code></td>
+    <td><code>$default-font-families</code></td>
     <td></td>
 </tr>
 <tr>
