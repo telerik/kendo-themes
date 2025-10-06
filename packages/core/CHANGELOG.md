@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.1.0-dev.5](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.4...v12.1.0-dev.5) (2025-10-06)
+
+
+### Bug Fixes
+
+* **datetimepicker:** add size specific widths ([0c28e61](https://github.com/telerik/kendo-themes/commit/0c28e61ffd8a35b13d52f8ed96ed086b541e300c))
+* mixed-decls sass warnings ([fecec9a](https://github.com/telerik/kendo-themes/commit/fecec9af10f0e9e3161345e4681ad6e678d19b5e))
+* private variables sass warnings ([ec8ed3d](https://github.com/telerik/kendo-themes/commit/ec8ed3d88c93e4592914bc0329c309e928e9464f))
+
+
+
+
+
 # [12.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.3...v12.1.0-dev.4) (2025-10-06)
 
 **Note:** Version bump only for package @progress/kendo-theme-core
