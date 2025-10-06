@@ -17748,33 +17748,13 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-sm-dropdown-width</td>
+    <td>$kendo-pager-dropdown-width</td>
     <td>Number</td>
     <td><code>5em</code></td>
     <td><code>5em</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DropDowns in the small Pager.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pager-md-dropdown-width</td>
-    <td>Number</td>
-    <td><code>5em</code></td>
-    <td><code>5em</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DropDowns in the medium Pager.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pager-lg-dropdown-width</td>
-    <td>Number</td>
-    <td><code>5em</code></td>
-    <td><code>5em</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DropDowns in the large Pager.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DropDowns in the Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -17786,24 +17766,21 @@ The following table lists the available variables for customizing the Default th
         padding-y: $kendo-pager-sm-padding-y,
         item-group-spacing: $kendo-pager-sm-item-group-spacing,
         item-min-width: $kendo-pager-sm-item-min-width,
-        pager-dropdown-width: $kendo-pager-sm-dropdown-width
     ),
     md: (
         padding-x: $kendo-pager-md-padding-x,
         padding-y: $kendo-pager-md-padding-y,
         item-group-spacing: $kendo-pager-md-item-group-spacing,
         item-min-width: $kendo-pager-md-item-min-width,
-        pager-dropdown-width: $kendo-pager-md-dropdown-width
     ),
     lg: (
         padding-x: $kendo-pager-lg-padding-x,
         padding-y: $kendo-pager-lg-padding-y,
         item-group-spacing: $kendo-pager-lg-item-group-spacing,
         item-min-width: $kendo-pager-lg-item-min-width,
-        pager-dropdown-width: $kendo-pager-lg-dropdown-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","item-group-spacing":"var(--kendo-spacing-3, 0.75rem)","item-min-width":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-0\\.5, 0.125rem) * 2 + 1px * 2)","pager-dropdown-width":"5em"</li><li>md: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","item-group-spacing":"var(--kendo-spacing-3\\.5, 0.875rem)","item-min-width":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)","pager-dropdown-width":"5em"</li><li>lg: "padding-x":"var(--kendo-spacing-2\\.5, 0.625rem)","padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","item-group-spacing":"var(--kendo-spacing-4, 1rem)","item-min-width":"calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + 1px * 2)","pager-dropdown-width":"5em"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","item-group-spacing":"var(--kendo-spacing-3, 0.75rem)","item-min-width":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-0\\.5, 0.125rem) * 2 + 1px * 2)"</li><li>md: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","item-group-spacing":"var(--kendo-spacing-3\\.5, 0.875rem)","item-min-width":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-2\\.5, 0.625rem)","padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","item-group-spacing":"var(--kendo-spacing-4, 1rem)","item-min-width":"calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + 1px * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Pager.</div></div>
