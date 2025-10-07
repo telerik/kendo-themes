@@ -8446,6 +8446,86 @@ The following table lists the available variables for customizing the Material t
 </tbody>
 </table>
 
+### DateTimePicker
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-datetime-width</td>
+    <td>Calculation</td>
+    <td><code>calc( calc( #{$kendo-calendar-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ))</code></td>
+    <td><code>calc(48px * 8 + var(--kendo-spacing-1, 0.25rem) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DateTimePicker.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datetime-sm-width</td>
+    <td>Calculation</td>
+    <td><code>calc( calc( #{$kendo-calendar-sm-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ))</code></td>
+    <td><code>calc(40px * 8 + var(--kendo-spacing-1, 0.25rem) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small DateTimePicker.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datetime-md-width</td>
+    <td>Calculation</td>
+    <td><code>$kendo-datetime-width</code></td>
+    <td><code>calc(48px * 8 + var(--kendo-spacing-1, 0.25rem) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium DateTimePicker.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datetime-lg-width</td>
+    <td>Calculation</td>
+    <td><code>calc( calc( #{$kendo-calendar-lg-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ))</code></td>
+    <td><code>calc(56px * 8 + var(--kendo-spacing-1, 0.25rem) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large DateTimePicker.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datetime-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        width: $kendo-datetime-sm-width
+    ),
+    md: (
+        width: $kendo-datetime-md-width
+    ),
+    lg: (
+        width: $kendo-datetime-lg-width
+    )
+)</code></td>
+    <td><ul><li>sm: "width":"calc(40px * 8 + var(--kendo-spacing-1, 0.25rem) * 2)"</li><li>md: "width":"calc(48px * 8 + var(--kendo-spacing-1, 0.25rem) * 2)"</li><li>lg: "width":"calc(56px * 8 + var(--kendo-spacing-1, 0.25rem) * 2)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the DateTimePicker.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Dialog
 
 <table class="theme-variables">
@@ -30018,7 +30098,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-font-weights</td>
     <td>Map</td>
-    <td><code>map.merge( $_default-font-weights, $kendo-font-weights )</code></td>
+    <td><code>$default-font-weights</code></td>
     <td><ul><li>thin: 100</li><li>extra-light: 200</li><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li><li>extra-bold: 800</li><li>black: 900</li></ul></td>
 </tr>
 <tr>

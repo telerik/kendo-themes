@@ -18,36 +18,36 @@
 
 @forward "@progress/kendo-theme-core/scss/index.scss" with (
     // Color System
-    $_default-colors: $kendo-colors,
+    $default-colors: $kendo-colors,
     $kendo-colors: $kendo-colors !default,
     // Elevation
-    $_default-elevation: $kendo-elevation,
+    $default-elevation: $kendo-elevation,
     $kendo-elevation: $kendo-elevation !default,
     // Typography
-    $_default-font-sizes: $kendo-font-sizes,
+    $default-font-sizes: $kendo-font-sizes,
     $kendo-font-sizes: $kendo-font-sizes !default,
     $kendo-font-size: $kendo-font-size !default,
 
-    $_default-line-heights: $kendo-line-heights,
+    $default-line-heights: $kendo-line-heights,
     $kendo-line-heights: $kendo-line-heights !default,
     $kendo-line-height: $kendo-line-height !default,
 
-    $_default-font-weights: $kendo-font-weights,
+    $default-font-weights: $kendo-font-weights,
     $kendo-font-weights: $kendo-font-weights !default,
     $kendo-font-weight: $kendo-font-weight !default,
 
-    $_default-letter-spacings: $kendo-letter-spacings,
+    $default-letter-spacings: $kendo-letter-spacings,
     $kendo-letter-spacings: $kendo-letter-spacings !default,
     $kendo-letter-spacing: $kendo-letter-spacing !default,
 
-    $_default-font-families: $kendo-font-families,
+    $default-font-families: $kendo-font-families,
     $kendo-font-families: $kendo-font-families !default,
     $kendo-font-family: $kendo-font-family !default,
     // Spacing
-    $_default-spacing: $kendo-spacing,
+    $default-spacing: $kendo-spacing,
     $kendo-spacing: $kendo-spacing !default,
     // Border Radii
-    $_default-border-radii: $kendo-border-radii,
+    $default-border-radii: $kendo-border-radii,
     $kendo-border-radii: $kendo-border-radii !default,
 );
 

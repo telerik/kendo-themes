@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "./variables.scss" as *;
 @use "../action-buttons/_variables.scss" as *;
 
@@ -14,6 +15,7 @@
 
     // Wrap
     .k-datetime-wrap {
+        // TODO: remove width after .k-datetime-wrap-md class is applied by default.
         width: $kendo-datetime-width;
         overflow: hidden;
 
@@ -33,7 +35,22 @@
     .k-datetime-calendar-wrap,
     .k-datetime-time-wrap {
         text-align: center;
+        // TODO: remove flex after .k-datetime-wrap-md class is applied by default.
         flex: 0 0 $kendo-datetime-width;
+    }
+
+    // Sizes
+    @each $size, $size-props in $kendo-datetime-sizes {
+        $_width: map.get($size-props, width);
+
+        .k-datetime-wrap-#{$size} {
+            width: $_width;
+
+            .k-datetime-calendar-wrap,
+            .k-datetime-time-wrap {
+                flex: 0 0 $_width;
+            }
+        }
     }
 
     // Tabs

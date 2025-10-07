@@ -34,7 +34,7 @@
                 height: 1px;
                 border-width: 0;
                 overflow: hidden;
-                clip: rect(0, 0, 0, 0);
+                clip-path: rect(0 0 0 0);
                 position: absolute;
             }
 
@@ -45,7 +45,7 @@
                 height: auto;
                 border-width: 0;
                 overflow: visible;
-                clip: auto;
+                clip-path: none;
                 position: static;
             }
         }
