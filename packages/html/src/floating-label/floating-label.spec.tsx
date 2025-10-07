@@ -1,6 +1,7 @@
 import { classNames, stateClassNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { FLOATING_LABEL_FOLDER_NAME, FLOATING_LABEL_MODULE_NAME } from './constants';
 export const FLOATINGLABEL_CLASSNAME = `k-floating-label-container`;
 
 const states = [
@@ -62,5 +63,7 @@ FloatingLabel.states = states;
 FloatingLabel.options = options;
 FloatingLabel.className = FLOATINGLABEL_CLASSNAME;
 FloatingLabel.defaultOptions = defaultOptions;
+FloatingLabel.moduleName = FLOATING_LABEL_MODULE_NAME;
+FloatingLabel.folderName = FLOATING_LABEL_FOLDER_NAME;
 
 export default FloatingLabel;

@@ -554,17 +554,17 @@
                 "inverse-subtle": {
                     "name": "Inverse Subtle",
                     "type": "color",
-                    "value": "#ADADAD"
+                    "value": "#757575"
                 },
                 "inverse-subtle-hover": {
                     "name": "Inverse Subtle Hover",
                     "type": "color",
-                    "value": "#999999"
+                    "value": "#525252"
                 },
                 "inverse-subtle-active": {
                     "name": "Inverse Subtle Active",
                     "type": "color",
-                    "value": "#757575"
+                    "value": "#666666"
                 },
                 "inverse": {
                     "name": "Inverse",
@@ -574,22 +574,22 @@
                 "inverse-hover": {
                     "name": "Inverse Hover",
                     "type": "color",
-                    "value": "#ADADAD"
+                    "value": "#999999"
                 },
                 "inverse-active": {
                     "name": "Inverse Active",
                     "type": "color",
-                    "value": "#999999"
+                    "value": "#ADADAD"
                 },
                 "inverse-emphasis": {
                     "name": "Inverse Emphasis",
                     "type": "color",
-                    "value": "#525252"
+                    "value": "#666666"
                 },
                 "inverse-on-subtle": {
                     "name": "Inverse On Subtle",
                     "type": "color",
-                    "value": "#292929"
+                    "value": "white"
                 },
                 "on-inverse": {
                     "name": "On Inverse",

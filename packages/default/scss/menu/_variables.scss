@@ -83,7 +83,7 @@ $kendo-menu-item-hover-gradient: null !default;
 $kendo-menu-item-active-bg: null !default;
 /// The text color of active Menu item.
 /// @group menu
-$kendo-menu-item-active-text: k-color(primary) !default;
+$kendo-menu-item-active-text: k-color(primary-on-surface) !default;
 /// The border color of active Menu item.
 /// @group menu
 $kendo-menu-item-active-border: null !default;
@@ -100,7 +100,7 @@ $kendo-menu-item-focus-shadow: $kendo-list-item-focus-shadow !default;
 $kendo-menu-item-selected-bg: null !default;
 /// The text color of selected Menu item.
 /// @group menu
-$kendo-menu-item-selected-text: k-color(primary) !default;
+$kendo-menu-item-selected-text: k-color(primary-on-surface) !default;
 /// The border color of selected Menu item.
 /// @group menu
 $kendo-menu-item-selected-border: null !default;
@@ -241,7 +241,7 @@ $kendo-menu-popup-item-gradient: null !default;
 
 /// The background color of hovered Menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-hover-bg: $kendo-list-item-hover-bg !default;
+$kendo-menu-popup-item-hover-bg: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
 /// The text color of hovered Menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-hover-text: $kendo-list-item-hover-text !default;

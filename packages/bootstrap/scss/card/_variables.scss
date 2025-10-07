@@ -16,7 +16,7 @@ $kendo-card-padding-y: $kendo-card-padding-x !default;
 $kendo-card-border-width: 1px !default;
 /// The border radius of the Card.
 /// @group card
-$kendo-card-border-radius: k-spacing(1.5) !default;
+$kendo-card-border-radius: k-border-radius(md) !default;
 /// The inner border radius of the Card.
 /// @group card
 $kendo-card-inner-border-radius: calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} ) !default;
@@ -36,7 +36,7 @@ $kendo-card-deck-gap: k-spacing(4) !default;
 
 /// The background color of the Card.
 /// @group card
-$kendo-card-bg: k-color(app-surface) !default;
+$kendo-card-bg: k-color(surface-alt) !default;
 /// The text color of the Card.
 /// @group card
 $kendo-card-text: k-color(on-app-surface) !default;
@@ -55,13 +55,13 @@ $kendo-card-focus-bg: null !default;
 $kendo-card-focus-text: null !default;
 /// The border color of the focused Card.
 /// @group card
-$kendo-card-focus-border: $kendo-card-border !default;
+$kendo-card-focus-border: k-color(primary-emphasis) !default;
 
 // TODO: double-check: the default theme is not supposed to elevate the Card on focus
 
 /// The shadow of the focused Card.
 /// @group card
-$kendo-card-focus-shadow: k-elevation(3) !default;
+$kendo-card-focus-shadow: 0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent) !default;
 
 /// The horizontal padding of the Card header.
 /// @group card
@@ -74,7 +74,7 @@ $kendo-card-header-padding-y: k-spacing(2) !default;
 $kendo-card-header-border-width: $kendo-card-border-width !default;
 /// The background color of the Card header.
 /// @group card
-$kendo-card-header-bg: k-color(surface) !default;
+$kendo-card-header-bg: transparent !default;
 /// The text color of the Card header.
 /// @group card
 $kendo-card-header-text: k-color(on-app-surface) !default;
@@ -152,12 +152,9 @@ $kendo-card-subtitle-text: k-color(subtle) !default;
 /// The maximum width of the Card image.
 /// @group card
 $kendo-card-img-max-width: 100px !default;
-/// The size of the Avatar in the Card.
-/// @group card
-$kendo-card-avatar-size: 45px !default;
 /// The spacing between the Avatar and the text in the Card.
 /// @group card
-$kendo-card-avatar-spacing: $kendo-card-header-padding-x !default;
+$kendo-card-avatar-spacing: k-spacing(2) !default;
 
 /// The horizontal padding of the Card actions.
 /// @group card
@@ -245,7 +242,6 @@ $kendo-card-theme-colors: (
     $kendo-card-subtitle-letter-spacing: $kendo-card-subtitle-letter-spacing,
     $kendo-card-subtitle-text: $kendo-card-subtitle-text,
     $kendo-card-img-max-width: $kendo-card-img-max-width,
-    $kendo-card-avatar-size: $kendo-card-avatar-size,
     $kendo-card-avatar-spacing: $kendo-card-avatar-spacing,
     $kendo-card-actions-padding-x: $kendo-card-actions-padding-x,
     $kendo-card-actions-padding-y: $kendo-card-actions-padding-y,

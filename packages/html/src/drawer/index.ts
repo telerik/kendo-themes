@@ -1,4 +1,7 @@
 export * from './drawer.spec';
+export * from './drawer-push.spec';
+export * from './drawer-container.spec';
+export * from './drawer-overlay.spec';
 export * from './drawer-content.spec';
 export * from './drawer-item.spec';
 export * from './drawer-item-separator';

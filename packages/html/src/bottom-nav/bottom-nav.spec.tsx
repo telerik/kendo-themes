@@ -1,6 +1,7 @@
 import { classNames, stateClassNames, optionClassNames, FillMode, ThemeColor, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { BOTTOM_NAV_FOLDER_NAME, BOTTOM_NAV_MODULE_NAME } from './constants';
 export const BOTTOM_NAV_CLASSNAME = 'k-bottom-nav';
 
 const states = [
@@ -85,5 +86,7 @@ BottomNav.states = states;
 BottomNav.options = options;
 BottomNav.className = BOTTOM_NAV_CLASSNAME;
 BottomNav.defaultOptions = defaultOptions;
+BottomNav.moduleName = BOTTOM_NAV_MODULE_NAME;
+BottomNav.folderName = BOTTOM_NAV_FOLDER_NAME;
 
 export default BottomNav;

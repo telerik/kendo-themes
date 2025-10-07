@@ -4,6 +4,7 @@ import { ColorInput } from './color-input';
 import { ColorContrast } from './color-contrast';
 
 import { KendoComponent } from '../_types/component';
+import { COLORGRADIENT_FOLDER_NAME, COLORGRADIENT_MODULE_NAME } from './constants';
 const COLOR_GRADIENT_CLASSNAME = 'k-colorgradient';
 
 const states = [
@@ -144,5 +145,7 @@ ColorGradient.states = states;
 ColorGradient.options = options;
 ColorGradient.className = COLOR_GRADIENT_CLASSNAME;
 ColorGradient.defaultOptions = defaultOptions;
+ColorGradient.moduleName = COLORGRADIENT_MODULE_NAME;
+ColorGradient.folderName = COLORGRADIENT_FOLDER_NAME;
 
 export default ColorGradient;

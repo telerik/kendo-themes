@@ -86,7 +86,7 @@ $kendo-toolbar-scroll-overlay: $kendo-toolbar-bg, color-mix(in srgb, k-color(app
 $kendo-toolbar-outline-text: $kendo-button-text !default;
 /// The color of the border around the outline Toolbar.
 /// @group toolbar
-$kendo-toolbar-outline-border: color-mix(in srgb, k-color(on-base) 50%, transparent) !default;
+$kendo-toolbar-outline-border: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
 /// The box shadow of the outline Toolbar.
 /// @group toolbar
 $kendo-toolbar-outline-shadow: null !default;

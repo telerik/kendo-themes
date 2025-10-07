@@ -1,0 +1,2 @@
+export const DROPZONE_MODULE_NAME = 'dropzone';
+export const DROPZONE_FOLDER_NAME = DROPZONE_MODULE_NAME;

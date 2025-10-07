@@ -3,6 +3,77 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.1.0](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.5...v12.1.0) (2025-10-06)
+
+**Note:** Version bump only for package @progress/kendo-theme-core
+
+
+
+
+
+# [12.1.0-dev.5](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.4...v12.1.0-dev.5) (2025-10-06)
+
+
+### Bug Fixes
+
+* **datetimepicker:** add size specific widths ([0c28e61](https://github.com/telerik/kendo-themes/commit/0c28e61ffd8a35b13d52f8ed96ed086b541e300c))
+* mixed-decls sass warnings ([fecec9a](https://github.com/telerik/kendo-themes/commit/fecec9af10f0e9e3161345e4681ad6e678d19b5e))
+* private variables sass warnings ([ec8ed3d](https://github.com/telerik/kendo-themes/commit/ec8ed3d88c93e4592914bc0329c309e928e9464f))
+
+
+
+
+
+# [12.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.3...v12.1.0-dev.4) (2025-10-06)
+
+**Note:** Version bump only for package @progress/kendo-theme-core
+
+
+
+
+
+# [12.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.2...v12.1.0-dev.3) (2025-10-02)
+
+
+### Bug Fixes
+
+* **badge:** base outline badges should use base-on-surface color ([e1c0fd4](https://github.com/telerik/kendo-themes/commit/e1c0fd45cc7c448587f10b5d068b7b1cfa89b3e9))
+* **calendar:** buttons in header should inherit their styles from the flat button ([0c3a700](https://github.com/telerik/kendo-themes/commit/0c3a700e59c86483d5101ff92a79cd1c7b008904))
+* **card:** avatar inside card should adheres to the avatar component's sizing options ([6c590b7](https://github.com/telerik/kendo-themes/commit/6c590b7364e73c2e2cbdfdabd963b2de9776c462))
+* **chip:** update interactive states styles to use correct design tokes ([935a126](https://github.com/telerik/kendo-themes/commit/935a1265a5186264968dd0c58b14102c220a89d9))
+* **core:** no logical properties should be used with cardinal directions ([8d32f2b](https://github.com/telerik/kendo-themes/commit/8d32f2bc4c800d54320e21fe42cdaef74edfe8dc))
+* **default:** update variables to use design tokens ([18eb632](https://github.com/telerik/kendo-themes/commit/18eb632d806dcb086726873a421aa424aed5c1df))
+* **loader:** should use themeColor-on-surface instead of themeColor ([4a45547](https://github.com/telerik/kendo-themes/commit/4a45547a144b5e0e82efa6dbb93067a09a8bdeb8))
+* **scrollview:** delete unnecessary rules and update navigation colors ([55994d3](https://github.com/telerik/kendo-themes/commit/55994d368b157ec830a8120b15389ceab1cba8e2))
+* **stepper:** prevent item focus indicator clipping ([61391f7](https://github.com/telerik/kendo-themes/commit/61391f7f09032afffbcce3270623c7a2534bb3e8))
+
+
+
+
+
+# [12.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.1...v12.1.0-dev.2) (2025-09-29)
+
+
+### Features
+
+* **pdfviewer:** add annotations and forms styling ([a8d322d](https://github.com/telerik/kendo-themes/commit/a8d322d9ba67dd4e4b804bb33ebfbd8c1b068222))
+
+
+
+
+
+# [12.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.0...v12.1.0-dev.1) (2025-09-22)
+
+
+### Bug Fixes
+
+* **tabstrip:** add position relative to k-tabstrip ([b12666c](https://github.com/telerik/kendo-themes/commit/b12666c954cf42a97a42875c18a8d05c5417d6f6))
+* **window:** not resizing properly from sides in RTL ([a1161cb](https://github.com/telerik/kendo-themes/commit/a1161cbd32bc95e11f244868b0fda2a269179f7d))
+
+
+
+
+
 # [12.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.0.2-dev.1...v12.1.0-dev.0) (2025-09-15)
 
 

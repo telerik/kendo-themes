@@ -1,0 +1,2 @@
+export const TREELIST_MODULE_NAME = 'treelist';
+export const TREELIST_FOLDER_NAME = TREELIST_MODULE_NAME;

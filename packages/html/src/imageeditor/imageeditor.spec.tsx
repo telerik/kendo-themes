@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { ImageEditorToolbar } from './imageeditor-toolbar';
 
 import { KendoComponent } from '../_types/component';
+import { IMAGEEDITOR_FOLDER_NAME, IMAGEEDITOR_MODULE_NAME } from './constants';
 export const IMAGEEDITOR_CLASSNAME = `k-imageeditor`;
 
 const states = [];
@@ -58,5 +59,7 @@ ImageEditor.states = states;
 ImageEditor.options = options;
 ImageEditor.className = IMAGEEDITOR_CLASSNAME;
 ImageEditor.defaultOptions = defaultOptions;
+ImageEditor.moduleName = IMAGEEDITOR_MODULE_NAME;
+ImageEditor.folderName = IMAGEEDITOR_FOLDER_NAME;
 
 export default ImageEditor;

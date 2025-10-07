@@ -59,7 +59,7 @@ $kendo-pdf-viewer-page-spacing: k-spacing(7.5) !default;
 
 /// The background color of the PDFViewer page.
 /// @group pdf-viewer
-$kendo-pdf-viewer-page-bg: white !default;
+$kendo-pdf-viewer-page-bg: k-color(surface-alt) !default;
 /// The text color of the PDFViewer page.
 /// @group pdf-viewer
 $kendo-pdf-viewer-page-text: k-color(on-app-surface) !default;
@@ -134,10 +134,10 @@ $kendo-pdf-viewer-highlight-annotation-hover-border: k-color(primary-hover) !def
 $kendo-pdf-viewer-free-text-annotation-border: k-color(primary) !default;
 /// The placeholder text color of the PDFViewer free text annotation.
 /// @group pdf-viewer
-$kendo-pdf-viewer-free-text-annotation-placeholder-text: rgba(124, 22, 27, 0.5) !default;
+$kendo-pdf-viewer-free-text-annotation-placeholder-text: k-color(primary-on-subtle) !default;
 /// The text color of the PDFViewer free text annotation.
 /// @group pdf-viewer
-$kendo-pdf-viewer-free-text-annotation-text: rgba(124, 22, 27, 0.7) !default;
+$kendo-pdf-viewer-free-text-annotation-text: k-color(primary-on-subtle) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/pdf-viewer/_variables.scss" with (
     $kendo-pdf-viewer-border-width: $kendo-pdf-viewer-border-width,

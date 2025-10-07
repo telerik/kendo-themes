@@ -46,7 +46,7 @@ $kendo-panelbar-item-level-count: 4 !default;
 
 /// The background color of the PanelBar.
 /// @group panelbar
-$kendo-panelbar-bg: k-color(app-surface) !default;
+$kendo-panelbar-bg: k-color(surface-alt) !default;
 /// The text color of the PanelBar.
 /// @group panelbar
 $kendo-panelbar-text: k-color(on-app-surface) !default;
@@ -56,10 +56,10 @@ $kendo-panelbar-border: k-color(border) !default;
 
 /// The background color of the PanelBar header.
 /// @group panelbar
-$kendo-panelbar-header-bg: $kendo-panelbar-bg !default;
+$kendo-panelbar-header-bg: transparent !default;
 /// The text color of the PanelBar header.
 /// @group panelbar
-$kendo-panelbar-header-text: k-color(primary) !default;
+$kendo-panelbar-header-text: k-color(primary-on-surface) !default;
 /// The border color of the PanelBar header.
 /// @group panelbar
 $kendo-panelbar-header-border: null !default;
@@ -69,7 +69,7 @@ $kendo-panelbar-header-gradient: null !default;
 
 /// The background color of the hovered PanelBar header.
 /// @group panelbar
-$kendo-panelbar-header-hover-bg: k-color(base-subtle-hover) !default;
+$kendo-panelbar-header-hover-bg: color-mix(in srgb, $kendo-panelbar-header-text 8%, transparent)  !default;
 /// The text color of the hovered PanelBar header.
 /// @group panelbar
 $kendo-panelbar-header-hover-text: null !default;

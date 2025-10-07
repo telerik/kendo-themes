@@ -14,6 +14,7 @@ import { TimeSelector, TimeSelectorFastSelection } from '../time-selector';
 import { ActionButtons } from '../action-buttons';
 
 import { KendoComponent } from '../_types/component';
+import { TIMEDURATIONPICKER_FOLDER_NAME, TIMEDURATIONPICKER_MODULE_NAME } from './constants';
 export const TIMEDURATIONPICKER_CLASSNAME = `k-timedurationpicker`;
 
 const states = [
@@ -139,5 +140,7 @@ TimeDurationPicker.states = states;
 TimeDurationPicker.options = options;
 TimeDurationPicker.className = TIMEDURATIONPICKER_CLASSNAME;
 TimeDurationPicker.defaultOptions = defaultOptions;
+TimeDurationPicker.moduleName = TIMEDURATIONPICKER_MODULE_NAME;
+TimeDurationPicker.folderName = TIMEDURATIONPICKER_FOLDER_NAME;
 
 export default TimeDurationPicker;

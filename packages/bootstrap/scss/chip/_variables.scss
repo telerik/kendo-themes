@@ -93,16 +93,16 @@ $kendo-chip-sizes: (
 
 /// The base background color of the Chip.
 /// @group chip
-$kendo-chip-base-bg: k-color(base) !default;
+$kendo-chip-base-bg: k-color(base-subtle) !default;
 
 /// The theme colors map for the Chip.
 /// @group chip
 $kendo-chip-theme-colors: (
     "base": $kendo-chip-base-bg,
-    "error": k-color(error),
-    "info": k-color(info),
-    "warning": k-color(warning),
-    "success": k-color(success)
+    "error": k-color(error-subtle),
+    "info": k-color(info-subtle),
+    "warning": k-color(warning-subtle),
+    "success": k-color(success-subtle)
 ) !default;
 
 /// The base background color of the solid Chip.
@@ -110,10 +110,10 @@ $kendo-chip-theme-colors: (
 $kendo-chip-solid-bg: $kendo-chip-base-bg !default;
 /// he base text color of the solid Chip.
 /// @group chip
-$kendo-chip-solid-text: $kendo-button-text !default;
+$kendo-chip-solid-text: k-color(base-on-subtle) !default;
 /// The base border color of the solid Chip.
 /// @group chip
-$kendo-chip-solid-border: $kendo-button-border !default;
+$kendo-chip-solid-border: k-color(base-emphasis) !default;
 /// The base shadow of the solid Chip.
 /// @group chip
 $kendo-chip-solid-shadow: 0 0 0 2px rgba( $kendo-chip-base-bg, .16 ) !default;

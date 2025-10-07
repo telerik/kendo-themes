@@ -3,6 +3,7 @@ import Icon from '../icon/icon.spec';
 
 
 import { KendoComponent } from '../_types/component';
+import { SCHEDULER_FOLDER_NAME, SCHEDULER_MODULE_NAME } from './constants';
 const className = 'k-task';
 
 const states = [];
@@ -57,5 +58,7 @@ SchedulerTask.states = states;
 SchedulerTask.options = options;
 SchedulerTask.defaultOptions = defaultOptions;
 SchedulerTask.className = className;
+SchedulerTask.moduleName = SCHEDULER_MODULE_NAME;
+SchedulerTask.folderName = SCHEDULER_FOLDER_NAME;
 
 export default SchedulerTask;

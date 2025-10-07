@@ -15,6 +15,7 @@ import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action
 import { List, ListCustomValue, ListItem } from '../list';
 
 import { KendoComponent } from '../_types/component';
+import { COMBOBOX_FOLDER_NAME, COMBOBOX_MODULE_NAME } from './constants';
 export const COMBOBOX_CLASSNAME = `k-combobox`;
 
 const states = [
@@ -183,5 +184,7 @@ Combobox.states = states;
 Combobox.options = options;
 Combobox.className = COMBOBOX_CLASSNAME;
 Combobox.defaultOptions = defaultOptions;
+Combobox.moduleName = COMBOBOX_MODULE_NAME;
+Combobox.folderName = COMBOBOX_FOLDER_NAME;
 
 export default Combobox;

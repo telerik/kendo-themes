@@ -1,7 +1,39 @@
 @use "../calendar/_variables.scss" as *;
 
+// DateTime
+
+/// The width of the DateTimePicker.
+/// @group date-time-picker
 $kendo-datetime-width: calc( #{$kendo-calendar-header-min-width} + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ) ) !default;
 
+/// The width of the small DateTimePicker.
+/// @group date-time-picker
+$kendo-datetime-sm-width: calc( calc( #{$kendo-calendar-sm-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 )) !default;
+/// The width of the medium DateTimePicker.
+/// @group date-time-picker
+$kendo-datetime-md-width: $kendo-datetime-width !default;
+/// The width of the large DateTimePicker.
+/// @group date-time-picker
+$kendo-datetime-lg-width: calc( calc( #{$kendo-calendar-lg-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 )) !default;
+
+/// The sizes map for the DateTimePicker.
+/// @group date-time-picker
+$kendo-datetime-sizes: (
+    sm: (
+        width: $kendo-datetime-sm-width
+    ),
+    md: (
+        width: $kendo-datetime-md-width
+    ),
+    lg: (
+        width: $kendo-datetime-lg-width
+    )
+) !default;
+
 @forward "@progress/kendo-theme-core/scss/components/datetimepicker/_variables.scss" with (
-    $kendo-datetime-width: $kendo-datetime-width
+    $kendo-datetime-width: $kendo-datetime-width,
+    $kendo-datetime-sm-width: $kendo-datetime-sm-width,
+    $kendo-datetime-md-width: $kendo-datetime-md-width,
+    $kendo-datetime-lg-width: $kendo-datetime-lg-width,
+    $kendo-datetime-sizes: $kendo-datetime-sizes
 );

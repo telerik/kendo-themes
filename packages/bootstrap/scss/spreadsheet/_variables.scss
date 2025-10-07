@@ -19,7 +19,7 @@ $kendo-spreadsheet-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the Spreadsheet.
 /// @group spreadsheet
-$kendo-spreadsheet-bg: k-color(app-surface) !default;
+$kendo-spreadsheet-bg: k-color(surface-alt) !default;
 /// The text color of the Spreadsheet.
 /// @group spreadsheet
 $kendo-spreadsheet-text: k-color(on-app-surface) !default;
@@ -221,7 +221,7 @@ $kendo-spreadsheet-insert-image-dialog-preview-border: k-color(border) !default;
 $kendo-spreadsheet-insert-image-dialog-preview-border-radius: k-border-radius(md) !default;
 /// The shadow of the Spreadsheet image Dialog preview.
 /// @group spreadsheet
-$kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow: inset 0 0 0 2000px rgba( black, .5 ) !default;
+$kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow: inset 0 0 0 2000px color-mix(in srgb, k-color(inverse) 50%, transparent) !default;
 /// The border radius of the Spreadsheet image Dialog preview overlay.
 /// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-preview-overlay-border-radius: k-border-radius(md) !default;

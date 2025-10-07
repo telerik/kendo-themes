@@ -1,0 +1,2 @@
+export const TREEVIEW_MODULE_NAME = 'treeview';
+export const TREEVIEW_FOLDER_NAME = TREEVIEW_MODULE_NAME;

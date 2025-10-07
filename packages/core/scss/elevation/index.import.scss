@@ -1,6 +1,6 @@
 @use "sass:map";
 
-$_default-elevation: (
+$default-elevation: (
     1: (
         0 2px 3px rgba(0, 0, 0, .04),
         0 4px 16px rgba(0, 0, 0, .12)
@@ -41,9 +41,9 @@ $_default-elevation: (
 
 /// The global default Elevation map.
 /// @group elevation
-$kendo-elevation: $_default-elevation !default;
+$kendo-elevation: $default-elevation !default;
 
-$kendo-elevation: map.merge($_default-elevation, $kendo-elevation);
+$kendo-elevation: map.merge($default-elevation, $kendo-elevation);
 
 @function k-shadow-filter($shadow) {
     $result: '';

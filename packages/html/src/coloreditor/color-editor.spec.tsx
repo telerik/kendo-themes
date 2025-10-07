@@ -8,6 +8,7 @@ import { ColorPreview } from '../color-preview';
 import { PALETTEPRESETS } from '../colorpalette/colorpalette-presets';
 
 import { KendoComponent } from '../_types/component';
+import { COLOREDITOR_FOLDER_NAME, COLOREDITOR_MODULE_NAME } from './constants';
 const COLOREDITOR_CLASSNAME = 'k-coloreditor';
 
 const states = [
@@ -107,5 +108,7 @@ ColorEditor.states = states;
 ColorEditor.options = options;
 ColorEditor.className = COLOREDITOR_CLASSNAME;
 ColorEditor.defaultOptions = defaultOptions;
+ColorEditor.moduleName = COLOREDITOR_MODULE_NAME;
+ColorEditor.folderName = COLOREDITOR_FOLDER_NAME;
 
 export default ColorEditor;

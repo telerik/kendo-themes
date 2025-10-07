@@ -3,12 +3,14 @@ import { classNames, stateClassNames, States } from '../misc';
 import { Icon } from '../icon';
 
 import { KendoComponent } from '../_types/component';
+import { EXPANSION_PANEL_FOLDER_NAME, EXPANSION_PANEL_MODULE_NAME } from './constants';
 const EXPANSION_PANEL_CLASSNAME = 'k-expander';
 
 const states = [
     States.hover,
     States.focus,
-    States.disabled
+    States.disabled,
+    States.expanded
 ];
 
 const options = {};
@@ -16,7 +18,6 @@ const options = {};
 export type KendoExpansionPanelProps = {
     title?: string;
     subtitle?: string;
-    expanded?: boolean;
     dir?: 'ltr' | 'rtl';
     contentStyle?: React.CSSProperties;
 };
@@ -51,11 +52,9 @@ export const ExpansionPanel: KendoComponent<KendoExpansionPanelProps & KendoExpa
                 stateClassNames(EXPANSION_PANEL_CLASSNAME, {
                     hover,
                     focus,
-                    disabled
-                }),
-                {
-                    'k-expanded': expanded,
-                }
+                    disabled,
+                    expanded
+                })
             )} dir={dir}>
             <div className={classNames(
                 'k-expander-header',
@@ -88,5 +87,7 @@ ExpansionPanel.states = states;
 ExpansionPanel.options = options;
 ExpansionPanel.className = EXPANSION_PANEL_CLASSNAME;
 ExpansionPanel.defaultOptions = defaultOptions;
+ExpansionPanel.moduleName = EXPANSION_PANEL_MODULE_NAME;
+ExpansionPanel.folderName = EXPANSION_PANEL_FOLDER_NAME;
 
 export default ExpansionPanel;

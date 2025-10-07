@@ -8,6 +8,7 @@ import { ActionSheet, ActionSheetFooter, ActionSheetHeader, KendoActionSheetProp
 import { Input } from '../input';
 
 import { KendoComponent } from '../_types/component';
+import { DATERANGEPICKER_FOLDER_NAME, DATERANGEPICKER_MODULE_NAME } from './constants';
 export const DATERANGEPICKER_CLASSNAME = `k-daterangepicker`;
 
 const states = [
@@ -142,5 +143,7 @@ DateRangePicker.states = states;
 DateRangePicker.options = options;
 DateRangePicker.className = DATERANGEPICKER_CLASSNAME;
 DateRangePicker.defaultOptions = defaultOptions;
+DateRangePicker.moduleName = DATERANGEPICKER_MODULE_NAME;
+DateRangePicker.folderName = DATERANGEPICKER_FOLDER_NAME;
 
 export default DateRangePicker;

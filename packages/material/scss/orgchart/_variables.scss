@@ -86,7 +86,7 @@ $kendo-orgchart-node-group-subtitle-font-size: var( --kendo-font-size, inherit )
 $kendo-orgchart-node-group-subtitle-margin-bottom: $kendo-orgchart-spacer !default;
 /// The line height of the OrgChart node group subtitle.
 /// @group orgchart
-$kendo-orgchart-node-group-subtitle-text: rgba( black, .54 ) !default;
+$kendo-orgchart-node-group-subtitle-text: k-color(subtle) !default;
 
 /// The width of the OrgChart Card.
 /// @group orgchart
@@ -127,7 +127,7 @@ $kendo-orgchart-card-body-border-color: transparent !default;
 $kendo-orgchart-card-body-vbox-margin-right: list.slash( $kendo-orgchart-spacer, 2 ) !default;
 /// The min height of the OrgChart Card body title wrap.
 /// @group orgchart
-$kendo-orgchart-card-body-vbox-min-height: $kendo-card-avatar-size !default;
+$kendo-orgchart-card-body-vbox-min-height: k-spacing(11) !default;
 
 /// The size of the OrgChart connecting line.
 /// @group orgchart

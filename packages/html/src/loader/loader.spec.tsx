@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, Size, ThemeColor } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { LOADER_FOLDER_NAME, LOADER_MODULE_NAME } from './constants';
 export const LOADER_CLASSNAME = `k-loader`;
 
 export const LoaderAnimationMap = {
@@ -105,5 +106,7 @@ Loader.states = states;
 Loader.options = options;
 Loader.className = LOADER_CLASSNAME;
 Loader.defaultOptions = defaultOptions;
+Loader.moduleName = LOADER_MODULE_NAME;
+Loader.folderName = LOADER_FOLDER_NAME;
 
 export default Loader;

@@ -34,13 +34,13 @@ $kendo-switch-sizes: (
 
 /// The background of the track when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-bg: k-color(app-surface) !default;
+$kendo-switch-off-track-bg: k-color(surface-alt) !default;
 /// The text color of the track when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-track-text: unset !default;
 /// The border color of the track when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-border: k-color(base-emphasis) !default;
+$kendo-switch-off-track-border: k-color(border) !default;
 /// The background gradient of the track when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-track-gradient: null !default;
@@ -76,13 +76,13 @@ $kendo-switch-off-track-focus-ring: .25rem solid color-mix(in srgb, k-color(prim
 
 /// The background of the track when the disabled Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-disabled-bg: k-color(base-subtle) !default;
+$kendo-switch-off-track-disabled-bg: null !default;
 /// The text color of the track when the disabled Switch is not checked.
 /// @group switch
 $kendo-switch-off-track-disabled-text: null !default;
 /// The border color of the track when the disabled Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-disabled-border: null !default;
+$kendo-switch-off-track-disabled-border: color-mix(in srgb, k-color(border) 65%, transparent) !default;
 /// The background gradient of the track when the disabled Switch is not checked.
 /// @group switch
 $kendo-switch-off-track-disabled-gradient: null !default;
@@ -115,7 +115,7 @@ $kendo-switch-off-thumb-hover-gradient: null !default;
 
 /// The background of the thumb when the disabled Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-disabled-bg: null !default;
+$kendo-switch-off-thumb-disabled-bg: color-mix(in srgb, k-color(base-emphasis) 34%, transparent) !default;
 /// The text color of the thumb when the disabled Switch is not checked.
 /// @group switch
 $kendo-switch-off-thumb-disabled-text: null !default;
@@ -177,7 +177,7 @@ $kendo-switch-on-track-disabled-bg: color-mix(in srgb, k-color(primary) 50%, tra
 $kendo-switch-on-track-disabled-text: null !default;
 /// The border color of the track when the disabled Switch is checked.
 /// @group switch
-$kendo-switch-on-track-disabled-border: null !default;
+$kendo-switch-on-track-disabled-border: transparent !default;
 /// The background gradient of the track when the disabled Switch is checked.
 /// @group switch
 $kendo-switch-on-track-disabled-gradient: null !default;

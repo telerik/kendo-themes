@@ -3,6 +3,7 @@ import { classNames, optionClassNames, States, Size, Roundness, FillMode, ThemeC
 import { Popup } from '../popup';
 
 import { KendoComponent } from '../_types/component';
+import { SPLIT_BUTTON_FOLDER_NAME, SPLIT_BUTTON_MODULE_NAME } from './constants';
 export const SPLITBUTTON_CLASSNAME = `k-split-button`;
 
 const states = [
@@ -132,5 +133,7 @@ SplitButton.states = states;
 SplitButton.options = options;
 SplitButton.className = SPLITBUTTON_CLASSNAME;
 SplitButton.defaultOptions = defaultOptions;
+SplitButton.moduleName = SPLIT_BUTTON_MODULE_NAME;
+SplitButton.folderName = SPLIT_BUTTON_FOLDER_NAME;
 
 export default SplitButton;

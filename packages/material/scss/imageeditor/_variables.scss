@@ -29,7 +29,7 @@ $kendo-image-editor-bg: k-color(surface) !default;
 $kendo-image-editor-text: k-color(on-app-surface) !default;
 $kendo-image-editor-border: k-color(border) !default;
 
-$kendo-image-editor-content-bg: #c6c6c6 !default;
+$kendo-image-editor-content-bg: k-color(app-surface) !default;
 $kendo-image-editor-content-text: null !default;
 $kendo-image-editor-content-border: null !default;
 
@@ -41,7 +41,7 @@ $kendo-image-editor-crop-bg: null !default;
 $kendo-image-editor-crop-text: null !default;
 $kendo-image-editor-crop-border: white !default;
 
-$kendo-image-editor-crop-overlay-bg: rgba( black, .3 ) !default;
+$kendo-image-editor-crop-overlay-bg: color-mix(in srgb, k-color(inverse) 30%, transparent) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/imageeditor/_variables.scss" with (
     $kendo-image-editor-margin-y: $kendo-image-editor-margin-y,

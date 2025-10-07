@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { CHECKBOX_FOLDER_NAME, CHECKBOX_MODULE_NAME } from './constants';
 export const CHECKBOXITEM_CLASSNAME = `k-checkbox-list-item`;
 
 const states = [];
@@ -35,5 +36,7 @@ CheckboxItem.states = states;
 CheckboxItem.options = options;
 CheckboxItem.className = CHECKBOXITEM_CLASSNAME;
 CheckboxItem.defaultOptions = defaultOptions;
+CheckboxItem.moduleName = CHECKBOX_MODULE_NAME;
+CheckboxItem.folderName = CHECKBOX_FOLDER_NAME;
 
 export default CheckboxItem;

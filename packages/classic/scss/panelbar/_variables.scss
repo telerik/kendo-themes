@@ -69,7 +69,7 @@ $kendo-panelbar-header-gradient: null !default;
 
 /// The background color of the hovered PanelBar header.
 /// @group panelbar
-$kendo-panelbar-header-hover-bg: k-color(base-hover) !default;
+$kendo-panelbar-header-hover-bg: color-mix( in srgb, k-color(on-app-surface) 8%, transparent ) !default;
 /// The text color of the hovered PanelBar header.
 /// @group panelbar
 $kendo-panelbar-header-hover-text: k-color(on-app-surface) !default;
@@ -163,7 +163,7 @@ $kendo-panelbar-header-selected-hover-focus-gradient: null !default;
 
 /// The background color of the hovered PanelBar items.
 /// @group panelbar
-$kendo-panelbar-item-hover-bg: k-color(base-subtle-hover) !default;
+$kendo-panelbar-item-hover-bg: color-mix( in srgb, k-color(on-app-surface) 8%, transparent ) !default;
 /// The text color of the hovered PanelBar items.
 /// @group panelbar
 $kendo-panelbar-item-hover-text: null !default;

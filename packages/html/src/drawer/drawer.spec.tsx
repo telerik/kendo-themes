@@ -1,7 +1,9 @@
 
 import { classNames } from '../misc';
+import { DrawerContainer } from './drawer-container.spec';
 
 import { KendoComponent } from '../_types/component';
+import { DRAWER_FOLDER_NAME, DRAWER_MODULE_NAME } from './constants';
 export const DRAWER_CLASSNAME = `k-drawer`;
 
 const states = [];
@@ -39,14 +41,14 @@ export const Drawer: KendoComponent<KendoDrawerProps & React.HTMLAttributes<HTML
     } = props;
 
     return (
-        <div className={classNames(
-            "k-drawer-container",
-            {
-                [`k-drawer-mini`]: mini && !expanded,
-                [`k-drawer-${mode}`]: mode,
-                [`k-drawer-expanded`]: expanded
-            }
-        )}>
+        <DrawerContainer
+            className={classNames(
+                {
+                    [`k-drawer-mini`]: mini && !expanded,
+                    [`k-drawer-${mode}`]: mode,
+                    [`k-drawer-expanded`]: expanded
+                }
+            )}>
             { mode === "overlay" &&
                 <div className="k-overlay"></div>
             }
@@ -65,7 +67,7 @@ export const Drawer: KendoComponent<KendoDrawerProps & React.HTMLAttributes<HTML
                 </div>
             </div>
             {props.children}
-        </div>
+        </DrawerContainer>
     );
 };
 
@@ -73,5 +75,7 @@ Drawer.states = states;
 Drawer.options = options;
 Drawer.className = DRAWER_CLASSNAME;
 Drawer.defaultOptions = defaultOptions;
+Drawer.moduleName = DRAWER_MODULE_NAME;
+Drawer.folderName = DRAWER_FOLDER_NAME;
 
 export default Drawer;

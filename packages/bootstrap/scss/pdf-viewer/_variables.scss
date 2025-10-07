@@ -20,7 +20,7 @@ $kendo-pdf-viewer-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the PDFViewer.
 /// @group pdf-viewer
-$kendo-pdf-viewer-bg: k-color(app-surface) !default;
+$kendo-pdf-viewer-bg: k-color(surface-alt) !default;
 /// The text color of the PDFViewer.
 /// @group pdf-viewer
 $kendo-pdf-viewer-text: k-color(on-app-surface) !default;
@@ -82,10 +82,10 @@ $kendo-pdf-viewer-search-panel-spacing: $kendo-toolbar-md-spacing !default;
 $kendo-pdf-viewer-search-panel-border-width: 1px !default;
 /// The border radius of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-border-radius: k-spacing(1) !default;
+$kendo-pdf-viewer-search-panel-border-radius: k-border-radius(md) !default;
 /// The background color of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-bg: k-color(app-surface) !default;
+$kendo-pdf-viewer-search-panel-bg: k-color(surface-alt) !default;
 /// The text color of the PDFViewer search panel.
 /// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-text: k-color(on-app-surface) !default;
@@ -108,7 +108,7 @@ $kendo-pdf-viewer-selection-line-height: 1.2 !default;
 $kendo-pdf-viewer-search-highlight-bg: k-color(on-app-surface) !default;
 /// The background color of the PDFViewer highlight mark.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-highlight-mark-bg: yellow !default;
+$kendo-pdf-viewer-search-highlight-mark-bg: color-mix(in srgb, k-color(warning) 25%, transparent) !default;
 
 /// The text color of the PDFViewer icon.
 /// @group pdf-viewer
@@ -132,10 +132,10 @@ $kendo-pdf-viewer-highlight-annotation-hover-border: k-color(primary-hover) !def
 $kendo-pdf-viewer-free-text-annotation-border: k-color(primary) !default;
 /// The placeholder text color of the PDFViewer free text annotation.
 /// @group pdf-viewer
-$kendo-pdf-viewer-free-text-annotation-placeholder-text: rgba(124, 22, 27, 0.5) !default;
+$kendo-pdf-viewer-free-text-annotation-placeholder-text: k-color(primary-on-subtle) !default;
 /// The text color of the PDFViewer free text annotation.
 /// @group pdf-viewer
-$kendo-pdf-viewer-free-text-annotation-text: rgba(124, 22, 27, 0.7) !default;
+$kendo-pdf-viewer-free-text-annotation-text: k-color(primary-on-subtle) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/pdf-viewer/_variables.scss" with (

@@ -3,6 +3,7 @@ import { ListItem, ListGroup, ListContent } from '../list';
 import { NoData } from '../nodata';
 
 import { KendoComponent } from '../_types/component';
+import { LIST_FOLDER_NAME, LIST_MODULE_NAME } from './constants';
 export const LIST_CLASSNAME = `k-list`;
 
 const states = [];
@@ -122,5 +123,7 @@ List.states = states;
 List.options = options;
 List.className = LIST_CLASSNAME;
 List.defaultOptions = defaultOptions;
+List.moduleName = LIST_MODULE_NAME;
+List.folderName = LIST_FOLDER_NAME;
 
 export default List;

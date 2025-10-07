@@ -51,7 +51,7 @@ $kendo-floating-label-text: k-color(subtle) !default;
 $kendo-floating-label-focus-bg: null !default;
 /// The text color of the focused Floating Label.
 /// @group floating-label
-$kendo-floating-label-focus-text: k-color(primary) !default;
+$kendo-floating-label-focus-text: k-color(primary-on-surface) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/floating-label/_variables.scss" with (
     $kendo-floating-label-scale: $kendo-floating-label-scale,

@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { GRID_FOLDER_NAME, GRID_MODULE_NAME } from './constants';
 export const GRID_CLASSNAME = 'k-grid';
 
 const states = [];
@@ -8,6 +9,8 @@ const states = [];
 const options = {
     size: [ Size.small, Size.medium, Size.large ]
 };
+
+const GRID_VARIANTS = [] as const;
 
 export type KendoGridOptions = {
     size?: (typeof options.size)[number] | null;
@@ -70,7 +73,10 @@ export const Grid: KendoComponent<KendoGridProps & React.HTMLAttributes<HTMLDivE
 
 Grid.states = states;
 Grid.options = options;
+Grid.variants = GRID_VARIANTS;
 Grid.className = GRID_CLASSNAME;
 Grid.defaultOptions = defaultOptions;
+Grid.moduleName = GRID_MODULE_NAME;
+Grid.folderName = GRID_FOLDER_NAME;
 
 export default Grid;

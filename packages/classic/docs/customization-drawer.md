@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-drawer-scrollbar-color</td>
-    <td>Color</td>
-    <td><code>rgba( 156, 156, 156, .7 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(156, 156, 156, 0.7)"></span><code>rgba(156, 156, 156, 0.7)</code></td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(inverse) 70%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-inverse, #404040) 70%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Drawer scrollbar track.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-drawer-scrollbar-bg</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #dedede"></span><code>#dedede</code></td>
-    <td><span class="color-preview" style="background-color: #dedede"></span><code>#dedede</code></td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(inverse-subtle), k-color(on-inverse))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-inverse-subtle, #cacaca), var(--kendo-color-on-inverse, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Drawer scrollbar thumb.</div></div>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-drawer-scrollbar-hover-color</td>
-    <td>Color</td>
-    <td><code>rgba( 156, 156, 156, 1 )</code></td>
-    <td><span class="color-preview" style="background-color: rgb(156, 156, 156)"></span><code>rgb(156, 156, 156)</code></td>
+    <td>String</td>
+    <td><code>$kendo-drawer-scrollbar-color</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-inverse, #404040) 70%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the Drawer scrollbar track.</div></div>
@@ -341,7 +341,7 @@ The following table lists the available variables for customization.
     <td>$kendo-drawer-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Drawer item.</div></div>

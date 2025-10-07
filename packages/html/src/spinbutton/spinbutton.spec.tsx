@@ -2,6 +2,7 @@ import { Button } from '../button';
 import { classNames, Size, FillMode } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { SPINBUTTON_FOLDER_NAME, SPINBUTTON_MODULE_NAME } from './constants';
 export const SPINBUTTON_CLASSNAME = `k-spin-button`;
 
 const states = [];
@@ -65,5 +66,7 @@ SpinButton.states = states;
 SpinButton.options = options;
 SpinButton.className = SPINBUTTON_CLASSNAME;
 SpinButton.defaultOptions = defaultOptions;
+SpinButton.moduleName = SPINBUTTON_MODULE_NAME;
+SpinButton.folderName = SPINBUTTON_FOLDER_NAME;
 
 export default SpinButton;

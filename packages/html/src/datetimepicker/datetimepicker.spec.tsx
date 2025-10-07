@@ -14,6 +14,7 @@ import { DateTimeSelector } from '../datetime-selector';
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 
 import { KendoComponent } from '../_types/component';
+import { DATETIMEPICKER_FOLDER_NAME, DATETIMEPICKER_MODULE_NAME } from './constants';
 export const DATETIMEPICKER_CLASSNAME = `k-datetimepicker`;
 
 const states = [
@@ -138,7 +139,7 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
             </Input>
             {opened &&
                 <Popup className="k-datetime-container k-datetimepicker-popup" dir={dir}>
-                    <DateTimeSelector tab={tab} dir={dir} />
+                    <DateTimeSelector size={size} tab={tab} dir={dir} />
                 </Popup>
             }
             {adaptive &&
@@ -169,5 +170,7 @@ DateTimePicker.states = states;
 DateTimePicker.options = options;
 DateTimePicker.className = DATETIMEPICKER_CLASSNAME;
 DateTimePicker.defaultOptions = defaultOptions;
+DateTimePicker.moduleName = DATETIMEPICKER_MODULE_NAME;
+DateTimePicker.folderName = DATETIMEPICKER_FOLDER_NAME;
 
 export default DateTimePicker;

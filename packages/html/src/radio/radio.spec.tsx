@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, stateClassNames, States, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { RADIO_FOLDER_NAME, RADIO_MODULE_NAME } from './constants';
 export const RADIOBUTTON_CLASSNAME = `k-radio`;
 
 const states = [
@@ -70,5 +71,7 @@ RadioButton.states = states;
 RadioButton.options = options;
 RadioButton.className = RADIOBUTTON_CLASSNAME;
 RadioButton.defaultOptions = defaultOptions;
+RadioButton.moduleName = RADIO_MODULE_NAME;
+RadioButton.folderName = RADIO_FOLDER_NAME;
 
 export default RadioButton;

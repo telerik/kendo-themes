@@ -3,6 +3,7 @@ import { EditorContent } from './editor-content';
 import { EditorToolbar } from './editor-toolbar';
 
 import { KendoComponent } from '../_types/component';
+import { EDITOR_FOLDER_NAME, EDITOR_MODULE_NAME } from './constants';
 export const EDITOR_CLASSNAME = `k-editor`;
 
 const states = [
@@ -73,5 +74,7 @@ Editor.states = states;
 Editor.options = options;
 Editor.className = EDITOR_CLASSNAME;
 Editor.defaultOptions = defaultOptions;
+Editor.moduleName = EDITOR_MODULE_NAME;
+Editor.folderName = EDITOR_FOLDER_NAME;
 
 export default Editor;

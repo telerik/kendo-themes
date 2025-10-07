@@ -24,7 +24,7 @@ $kendo-orgchart-font-size: var( --kendo-font-size, inherit )  !default;
 $kendo-orgchart-line-height: var( --kendo-line-height, normal ) !default;
 /// The background color of the OrgChart.
 /// @group orgchart
-$kendo-orgchart-bg: k-color(app-surface) !default;
+$kendo-orgchart-bg: k-color(surface-alt) !default;
 /// The text color of the OrgChart.
 /// @group orgchart
 $kendo-orgchart-text: k-color(on-app-surface) !default;
@@ -129,7 +129,7 @@ $kendo-orgchart-card-body-border-color: transparent !default;
 $kendo-orgchart-card-body-vbox-margin-right: list.slash( $kendo-orgchart-spacer, 2 ) !default;
 /// The min height of the OrgChart Card body title wrap.
 /// @group orgchart
-$kendo-orgchart-card-body-vbox-min-height: $kendo-card-avatar-size !default;
+$kendo-orgchart-card-body-vbox-min-height: k-spacing(11) !default;
 
 /// The size of the OrgChart connecting line.
 /// @group orgchart

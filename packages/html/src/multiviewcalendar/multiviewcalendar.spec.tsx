@@ -2,6 +2,7 @@ import { classNames, Size } from '../misc';
 import { Calendar } from '../calendar';
 
 import { KendoComponent } from '../_types/component';
+import { MULTIVIEWCALENDAR_FOLDER_NAME, MULTIVIEWCALENDAR_MODULE_NAME } from './constants';
 const MULTIVIEWCALENDAR_CLASSNAME = `k-calendar-range`;
 
 const states = [];
@@ -69,5 +70,7 @@ MultiViewCalendar.states = states;
 MultiViewCalendar.options = options;
 MultiViewCalendar.className = MULTIVIEWCALENDAR_CLASSNAME;
 MultiViewCalendar.defaultOptions = defaultOptions;
+MultiViewCalendar.moduleName = MULTIVIEWCALENDAR_MODULE_NAME;
+MultiViewCalendar.folderName = MULTIVIEWCALENDAR_FOLDER_NAME;
 
 export default MultiViewCalendar;

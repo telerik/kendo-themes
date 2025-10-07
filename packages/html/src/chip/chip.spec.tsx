@@ -3,6 +3,7 @@ import { Avatar } from '../avatar';
 import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { CHIP_FOLDER_NAME, CHIP_MODULE_NAME } from './constants';
 export const CHIP_CLASSNAME = `k-chip`;
 
 const states = [
@@ -120,5 +121,7 @@ Chip.states = states;
 Chip.options = options;
 Chip.className = CHIP_CLASSNAME;
 Chip.defaultOptions = defaultOptions;
+Chip.moduleName = CHIP_MODULE_NAME;
+Chip.folderName = CHIP_FOLDER_NAME;
 
 export default Chip;

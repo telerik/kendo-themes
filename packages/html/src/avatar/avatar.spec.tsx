@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { AVATAR_FOLDER_NAME, AVATAR_MODULE_NAME } from './constants';
 export const AVATAR_CLASSNAME = `k-avatar`;
 
 enum avatarType {
@@ -102,5 +103,7 @@ Avatar.states = states;
 Avatar.options = options;
 Avatar.className = AVATAR_CLASSNAME;
 Avatar.defaultOptions = defaultOptions;
+Avatar.moduleName = AVATAR_MODULE_NAME;
+Avatar.folderName = AVATAR_FOLDER_NAME;
 
 export default Avatar;

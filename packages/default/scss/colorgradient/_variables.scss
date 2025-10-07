@@ -166,13 +166,13 @@ $kendo-color-gradient-draghandle-text: null !default;
 $kendo-color-gradient-draghandle-bg: transparent !default;
 /// The color of the border around the ColorGradient canvas drag handle.
 /// @group color-gradient
-$kendo-color-gradient-draghandle-border: rgba( $kendo-color-white, .8) !default;
+$kendo-color-gradient-draghandle-border: color-mix(in srgb, k-color(light) 80%, transparent) !default;
 /// The focus color of the outline around the ColorGradient canvas drag handle.
 /// @group color-gradient
-$kendo-color-gradient-draghandle-focus-shadow: $kendo-color-black !default;
+$kendo-color-gradient-draghandle-focus-shadow: k-color(dark) !default;
 /// The hover color of the outline around the ColorGradient canvas drag handle.
 /// @group color-gradient
-$kendo-color-gradient-draghandle-hover-shadow: $kendo-color-black !default;
+$kendo-color-gradient-draghandle-hover-shadow: k-color(dark) !default;
 /// The box shadow of the ColorGradient canvas drag handle.
 /// @group color-gradient
 $kendo-color-gradient-draghandle-shadow: k-elevation(2) !default;

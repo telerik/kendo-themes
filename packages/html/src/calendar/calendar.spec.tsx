@@ -2,6 +2,7 @@ import { classNames, optionClassNames, Size } from '../misc';
 import { CalendarView, CalendarHeader, CalendarFooter } from '.';
 
 import { KendoComponent } from '../_types/component';
+import { CALENDAR_FOLDER_NAME, CALENDAR_MODULE_NAME } from './constants';
 const CALENDAR_CLASSNAME = `k-calendar`;
 
 const states = [];
@@ -92,5 +93,7 @@ Calendar.states = states;
 Calendar.options = options;
 Calendar.className = CALENDAR_CLASSNAME;
 Calendar.defaultOptions = defaultOptions;
+Calendar.moduleName = CALENDAR_MODULE_NAME;
+Calendar.folderName = CALENDAR_FOLDER_NAME;
 
 export default Calendar;

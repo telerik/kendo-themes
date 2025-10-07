@@ -2,6 +2,7 @@ import { classNames, optionClassNames, Size } from '../misc';
 import { TimeSelectorColumn } from '.';
 
 import { KendoComponent } from '../_types/component';
+import { TIME_SELECTOR_FOLDER_NAME, TIME_SELECTOR_MODULE_NAME } from './constants';
 export type timeType = 'dd' | 'HH' | 'mm' | 'ss' | 'SSS' | 'tt';
 
 const TIMESELECTOR_CLASSNAME = `k-timeselector`;
@@ -87,5 +88,7 @@ TimeSelector.states = states;
 TimeSelector.options = options;
 TimeSelector.className = TIMESELECTOR_CLASSNAME;
 TimeSelector.defaultOptions = defaultOptions;
+TimeSelector.moduleName = TIME_SELECTOR_MODULE_NAME;
+TimeSelector.folderName = TIME_SELECTOR_FOLDER_NAME;
 
 export default TimeSelector;

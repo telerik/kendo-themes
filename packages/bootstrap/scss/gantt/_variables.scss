@@ -21,7 +21,7 @@ $kendo-gantt-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the Gantt.
 /// @group gantt
-$kendo-gantt-bg: k-color(app-surface) !default;
+$kendo-gantt-bg: k-color(surface-alt) !default;
 /// The text color of the Gantt.
 /// @group gantt
 $kendo-gantt-text: k-color(on-app-surface) !default;
@@ -93,10 +93,10 @@ $kendo-gantt-milestone-selected-border: k-color(primary) !default;
 
 /// The background color of the Gantt summary.
 /// @group gantt
-$kendo-gantt-summary-bg: k-color(subtle) !default;
+$kendo-gantt-summary-bg: k-color(inverse-subtle) !default;
 /// The background color of the Gantt summary progress.
 /// @group gantt
-$kendo-gantt-summary-progress-bg: $kendo-gantt-text !default;
+$kendo-gantt-summary-progress-bg: k-color(inverse) !default;
 /// The background color of the selected Gantt summary.
 /// @group gantt
 $kendo-gantt-summary-selected-bg: k-color(primary-subtle-active) !default;
@@ -228,7 +228,7 @@ $kendo-gantt-validation-tooltip-width: 200px !default;
 $kendo-gantt-validation-tooltip-label-width: 50px !default;
 /// The border color of the Gantt validation Tooltip.
 /// @group gantt
-$kendo-gantt-validation-tooltip-border: #656565 !default;
+$kendo-gantt-validation-tooltip-border: k-color(base) !default;
 /// The border color of the valid Gantt validation Tooltip.
 /// @group gantt
 $kendo-gantt-validation-tooltip-valid-border: k-color(success) !default;

@@ -120,8 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-bg</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ColorGradient.</div></div>
@@ -260,8 +260,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-focus-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
+    <td><code>k-color(border-alt)</code></td>
+    <td><code>var(--kendo-color-border-alt, rgba(33, 37, 41, 0.2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused ColorGradient.</div></div>
@@ -529,9 +529,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-border</td>
-    <td>Color</td>
-    <td><code>rgba( $kendo-color-white, .8)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(255, 255, 255, 0.8)"></span><code>rgba(255, 255, 255, 0.8)</code></td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(light) 80%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-light, #f8f9fa) 80%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the ColorGradient canvas drag handle.</div></div>
@@ -539,9 +539,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-shadow</td>
-    <td>Color</td>
-    <td><code>$kendo-color-black</code></td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
+    <td>String</td>
+    <td><code>k-color(inverse)</code></td>
+    <td><code>var(--kendo-color-inverse, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus color of the outline around the ColorGradient canvas drag handle.</div></div>
@@ -549,9 +549,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-hover-shadow</td>
-    <td>Color</td>
-    <td><code>$kendo-color-black</code></td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
+    <td>String</td>
+    <td><code>k-color(inverse)</code></td>
+    <td><code>var(--kendo-color-inverse, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the outline around the ColorGradient canvas drag handle.</div></div>

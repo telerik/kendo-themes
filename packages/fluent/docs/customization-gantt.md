@@ -260,8 +260,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-summary-bg, k-color(dark-emphasis))</code></td>
-    <td><code>var(--kendo-gantt-summary-bg, var(--kendo-color-dark-emphasis, #616161))</code></td>
+    <td><code>var(--kendo-gantt-summary-bg, k-color(inverse-subtle))</code></td>
+    <td><code>var(--kendo-gantt-summary-bg, var(--kendo-color-inverse-subtle, #616161))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt summary.</div></div>
@@ -270,8 +270,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-progress-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-summary-progress-bg, k-color(dark))</code></td>
-    <td><code>var(--kendo-gantt-summary-progress-bg, var(--kendo-color-dark, #242424))</code></td>
+    <td><code>var(--kendo-gantt-summary-progress-bg, k-color(inverse))</code></td>
+    <td><code>var(--kendo-gantt-summary-progress-bg, var(--kendo-color-inverse, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt summary progress.</div></div>
@@ -330,8 +330,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-task-bg, #{k-color(subtle)})</code></td>
-    <td><code>var(--kendo-gantt-task-bg, var(--kendo-color-subtle, #707070))</code></td>
+    <td><code>var(--kendo-gantt-task-bg, #{k-color(inverse-subtle)})</code></td>
+    <td><code>var(--kendo-gantt-task-bg, var(--kendo-color-inverse-subtle, #616161))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt task.</div></div>
@@ -340,8 +340,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-text</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-task-text, #{k-color(app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-task-text, var(--kendo-color-app-surface, #fafafa))</code></td>
+    <td><code>var(--kendo-gantt-task-text, #{k-color(on-inverse)})</code></td>
+    <td><code>var(--kendo-gantt-task-text, var(--kendo-color-on-inverse, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt task.</div></div>
@@ -360,8 +360,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-progress-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-task-progress-bg, #{k-color(on-app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-task-progress-bg, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-gantt-task-progress-bg, #{k-color(inverse)})</code></td>
+    <td><code>var(--kendo-gantt-task-progress-bg, var(--kendo-color-inverse, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt task progress.</div></div>
@@ -370,8 +370,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-progress-hover-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-task-progress-hover-bg, #{k-color(on-app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-task-progress-hover-bg, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-gantt-task-progress-hover-bg, #{k-color(inverse-hover)})</code></td>
+    <td><code>var(--kendo-gantt-task-progress-hover-bg, var(--kendo-color-inverse-hover, #424242))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Gantt task progress.</div></div>

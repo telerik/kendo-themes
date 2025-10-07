@@ -2,6 +2,7 @@ import { Button, KendoButtonOptions, KendoButtonProps, KendoButtonState } from '
 import { classNames } from "../misc";
 
 import { KendoComponent } from '../_types/component';
+import { SPEECH_TO_TEXT_BUTTON_FOLDER_NAME, SPEECH_TO_TEXT_BUTTON_MODULE_NAME } from './constants';
 export const SPEECH_TO_TEXT_BUTTON_CLASSNAME = "k-speech-to-text-button";
 
 export type KendoSpeechToTextButtonOptions = KendoButtonOptions;
@@ -47,5 +48,7 @@ SpeechToTextButton.states = Button.states;
 SpeechToTextButton.options = Button.options;
 SpeechToTextButton.className = SPEECH_TO_TEXT_BUTTON_CLASSNAME;
 SpeechToTextButton.defaultOptions = defaultOptions;
+SpeechToTextButton.moduleName = SPEECH_TO_TEXT_BUTTON_MODULE_NAME;
+SpeechToTextButton.folderName = SPEECH_TO_TEXT_BUTTON_FOLDER_NAME;
 
 export default SpeechToTextButton;

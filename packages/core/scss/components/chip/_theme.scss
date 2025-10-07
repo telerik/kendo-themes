@@ -43,7 +43,7 @@
 
                 &:focus,
                 &.k-focus {
-                    @include focus-indicator( 0 0 0 2px color-mix(in srgb, k-color($name) 16%, transparent));
+                    @include focus-indicator( 0 0 0 2px color-mix(in srgb, k-color(#{$name}-on-surface) 16%, transparent));
                 }
 
                 &:hover,
@@ -100,28 +100,22 @@
                 }
             } @else if ($name == "warning") {
                 @include fill(
-                    k-color(on-app-surface),
+                    k-color(on-#{$name}),
                     transparent,
-                    $color
+                    k-color(#{$name}-on-surface)
                 );
 
                 &:focus,
                 &.k-focus {
-                    @include focus-indicator( 0 0 0 2px color-mix(in srgb, k-color($name) 16%, transparent));
+                    @include focus-indicator( 0 0 0 2px color-mix(in srgb, k-color(#{$name}-on-surface) 16%, transparent));
                 }
 
                 &:hover,
-                &.k-hover {
-                    @include fill(
-                        $color: k-color(on-#{$name}),
-                        $bg: $color
-                    );
-                }
-
+                &.k-hover,
                 &.k-selected {
                     @include fill(
                         $color: k-color(on-#{$name}),
-                        $bg: $color
+                        $bg: k-color(#{$name}-on-surface)
                     );
                 }
             } @else {
@@ -133,23 +127,16 @@
 
                 &:focus,
                 &.k-focus {
-                    @include focus-indicator( 0 0 0 2px color-mix(in srgb, k-color($name) 16%, transparent));
+                    @include focus-indicator( 0 0 0 2px color-mix(in srgb, k-color(#{$name}-on-surface) 16%, transparent));
                 }
 
                 &:hover,
-                &.k-hover {
-                    @include fill(
-                        k-color(on-#{$name}),
-                        k-color(#{$name}-hover),
-                        k-color(#{$name}-hover)
-                    );
-                }
-
+                &.k-hover,
                 &.k-selected {
                     @include fill(
                         k-color(on-#{$name}),
-                        k-color(#{$name}-active),
-                        k-color(#{$name}-active)
+                        k-color(#{$name}-on-surface),
+                        k-color(#{$name}-on-surface)
                     );
                 }
             }

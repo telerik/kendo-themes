@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { GRID_FOLDER_NAME, GRID_MODULE_NAME } from './constants';
 const className = `k-grid-content`;
 
 export const GridContent: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
@@ -17,3 +18,5 @@ export const GridContent: KendoComponent<React.HTMLAttributes<HTMLDivElement>> =
 );
 
 GridContent.className = className;
+GridContent.moduleName = GRID_MODULE_NAME;
+GridContent.folderName = GRID_FOLDER_NAME;

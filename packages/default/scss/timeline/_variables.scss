@@ -149,10 +149,10 @@ $kendo-timeline-mobile-vertical-padding-with-dates-calc: calc(#{$kendo-timeline-
 
 /// The width of the Timeline circle.
 /// @group timeline
-$kendo-timeline-circle-width: 16px !default;
+$kendo-timeline-circle-width: k-spacing(4) !default;
 /// The height of the Timeline circle.
 /// @group timeline
-$kendo-timeline-circle-height: 16px !default;
+$kendo-timeline-circle-height: $kendo-timeline-circle-width !default;
 /// The background color of the Timeline circle.
 /// @group timeline
 $kendo-timeline-circle-bg: k-color(primary) !default;

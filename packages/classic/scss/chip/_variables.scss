@@ -52,7 +52,7 @@ $kendo-chip-lg-font-size: var( --kendo-font-size, inherit ) !default;
 
 /// The Chip's line height that is related to the $kendo-font-size.
 /// @group chip
-$kendo-chip-line-height: 1 !default;
+$kendo-chip-line-height: var( --kendo-line-height-xs, normal ) !default;
 /// The small Chip's line height that is related to the $kendo-font-size.
 /// @group chip
 $kendo-chip-sm-line-height: $kendo-chip-line-height !default;
@@ -99,10 +99,10 @@ $kendo-chip-base-bg: $kendo-button-bg !default;
 /// @group chip
 $kendo-chip-theme-colors: (
     "base": $kendo-chip-base-bg,
-    "error": k-color(error),
-    "info": k-color(info),
-    "warning": k-color(warning),
-    "success": k-color(success)
+    "error": k-color(error-subtle),
+    "info": k-color(info-subtle),
+    "warning": k-color(warning-subtle),
+    "success": k-color(success-subtle)
 ) !default;
 
 /// The base background color of the solid Chip.
@@ -110,13 +110,13 @@ $kendo-chip-theme-colors: (
 $kendo-chip-solid-bg: $kendo-chip-base-bg !default;
 /// The base text color of the solid Chip.
 /// @group chip
-$kendo-chip-solid-text: $kendo-button-text !default;
+$kendo-chip-solid-text: k-color(base-on-subtle) !default;
 /// The base border color of the solid Chip.
 /// @group chip
-$kendo-chip-solid-border: $kendo-button-border !default;
+$kendo-chip-solid-border: k-color(base-emphasis) !default;
 /// The base shadow of the solid Chip.
 /// @group chip
-$kendo-chip-solid-shadow: 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 16%, transparent) !default;
+$kendo-chip-solid-shadow: 0 0 0 2px color-mix(in srgb, k-color(base-on-surface) 16%, transparent) !default;
 /// The base gradient of the solid Chip.
 /// @group chip
 $kendo-chip-solid-gradient: $kendo-button-gradient !default;
@@ -141,7 +141,7 @@ $kendo-chip-outline-text: k-color(base-on-surface) !default;
 $kendo-chip-outline-border: $kendo-chip-outline-text !default;
 /// The base shadow of the outline Chip.
 /// @group chip
-$kendo-chip-outline-shadow: 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 16%, transparent) !default;
+$kendo-chip-outline-shadow: 0 0 0 2px color-mix(in srgb, k-color(base-on-surface) 16%, transparent) !default;
 
 /// The base background color of the hovered outline Chip.
 /// @group chip

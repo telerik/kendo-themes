@@ -120,8 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-icon-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle, #49454F)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Rating icon.</div></div>
@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-icon-focus-shadow</td>
     <td>List</td>
-    <td><code>0 2px 4px rgba( black, .1 )</code></td>
-    <td><code>(0 2px 4px rgba(0, 0, 0, 0.1))</code></td>
+    <td><code>0 2px 4px color-mix(in srgb, k-color(inverse) 10%, transparent)</code></td>
+    <td><code>(0 2px 4px color-mix(in srgb, var(--kendo-color-inverse, #322F35) 10%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Rating icon.</div></div>
@@ -170,8 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-icon-focus-selected-shadow</td>
     <td>List</td>
-    <td><code>0 2px 4px rgba( black, .1)</code></td>
-    <td><code>(0 2px 4px rgba(0, 0, 0, 0.1))</code></td>
+    <td><code>0 2px 4px color-mix(in srgb, k-color(inverse) 10%, transparent)</code></td>
+    <td><code>(0 2px 4px color-mix(in srgb, var(--kendo-color-inverse, #322F35) 10%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused and selected Rating icon.</div></div>

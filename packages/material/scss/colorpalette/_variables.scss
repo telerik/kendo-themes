@@ -38,13 +38,13 @@ $kendo-color-palette-lg-tile-width: k-spacing(8) !default;
 $kendo-color-palette-lg-tile-height: $kendo-color-palette-lg-tile-width !default;
 /// The shadow of the ColorPalette focused tile.
 /// @group color-palette
-$kendo-color-palette-tile-focus-shadow: 0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .5 ) !default;
+$kendo-color-palette-tile-focus-shadow: 0 0 3px 1px color-mix(in srgb, k-color(dark) 30%, transparent), inset 0 0 0 1px rcolor-mix(in srgb, k-color(light) 50%, transparent) !default;
 /// The shadow of the ColorPalette hovered tile.
 /// @group color-palette
-$kendo-color-palette-tile-hover-shadow: 0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .8 ) !default;
+$kendo-color-palette-tile-hover-shadow: 0 0 3px 1px color-mix(in srgb, k-color(dark) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, k-color(light) 80%, transparent) !default;
 /// The shadow of the ColorPalette selected tile.
 /// @group color-palette
-$kendo-color-palette-tile-selected-shadow: 0 1px 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, 1 ) !default;
+$kendo-color-palette-tile-selected-shadow: 0 1px 3px 1px color-mix(in srgb, k-color(dark) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, k-color(light) 100%, transparent) !default;
 
 /// The size map of the ColorPalette.
 /// @group color-palette

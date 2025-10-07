@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { STEPPER_FOLDER_NAME, STEPPER_MODULE_NAME } from './constants';
 const STEPPER_CLASSNAME = 'k-stepper';
 
 const states = [];
@@ -39,5 +40,7 @@ Stepper.options = options;
 Stepper.states = states;
 Stepper.className = STEPPER_CLASSNAME;
 Stepper.defaultOptions = defaultOptions;
+Stepper.moduleName = STEPPER_MODULE_NAME;
+Stepper.folderName = STEPPER_FOLDER_NAME;
 
 export default Stepper;

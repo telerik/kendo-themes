@@ -291,8 +291,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-appbar-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
-    <td><code>var(--kendo-font-size-lg, inherit)</code></td>
+    <td><code>var( --kendo-font-size-xl, inherit )</code></td>
+    <td><code>var(--kendo-font-size-xl, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the AppBar.</div></div>
@@ -301,8 +301,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-appbar-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
-    <td><code>var(--kendo-line-height, normal)</code></td>
+    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the AppBar.</div></div>
@@ -2722,16 +2722,6 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-calendar-header-text</td>
-    <td>String</td>
-    <td><code>k-color(primary-on-surface)</code></td>
-    <td><code>var(--kendo-color-primary-on-surface, #65558F)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the header in the Calendar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-calendar-header-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
@@ -2994,8 +2984,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-view-gap</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>k-spacing(6)</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the items in the Calendar view.</div></div>
@@ -3034,8 +3024,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-today-color</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #65558F)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the current day in the Calendar.</div></div>
@@ -3253,9 +3243,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-calendar-navigation-width</td>
-    <td>String</td>
-    <td><code>k-spacing(19)</code></td>
-    <td><code>var(--kendo-spacing-19, 4.75rem)</code></td>
+    <td>Number</td>
+    <td><code>5em</code></td>
+    <td><code>5em</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Calendar navigation.</div></div>
@@ -3885,9 +3875,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-card-border</td>
-    <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Card.</div></div>
@@ -3925,9 +3915,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-card-focus-border</td>
-    <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Card.</div></div>
@@ -3995,9 +3985,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-card-header-border</td>
-    <td>String</td>
+    <td>Color</td>
     <td><code>$kendo-card-border</code></td>
-    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Card header.</div></div>
@@ -4075,9 +4065,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-card-footer-border</td>
-    <td>String</td>
+    <td>Color</td>
     <td><code>$kendo-card-border</code></td>
-    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Card footer.</div></div>
@@ -4224,20 +4214,10 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-card-avatar-size</td>
-    <td>Number</td>
-    <td><code>45px</code></td>
-    <td><code>45px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Avatar in the Card.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-card-avatar-spacing</td>
     <td>String</td>
-    <td><code>$kendo-card-header-padding-x</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Avatar and the text in the Card.</div></div>
@@ -4877,7 +4857,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-chat-toolbar-text</td>
     <td>String</td>
     <td><code>$kendo-toolbar-text</code></td>
-    <td><code>var(--kendo-color-base-on-subtle, #4A4459)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat Toolbar.</div></div>
@@ -6031,8 +6011,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-outline-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-base-subtle-hover, #E2DDE5)</code></td>
+    <td><code>color-mix(in srgb, currentColor 8%, transparent)</code></td>
+    <td><code>color-mix(in srgb, currentColor 8%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the hovered outline Chip.</div></div>
@@ -6051,8 +6031,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-outline-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle-active)</code></td>
-    <td><code>var(--kendo-color-base-subtle-active, #EAE5EC)</code></td>
+    <td><code>color-mix(in srgb, currentColor 12%, transparent)</code></td>
+    <td><code>color-mix(in srgb, currentColor 12%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected outline Chip.</div></div>
@@ -7499,9 +7479,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-color-editor-color-gradient-focus-outline-color</td>
-    <td>Color</td>
-    <td><code>rgba(0, 0, 0, .3)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.3)"></span><code>rgba(0, 0, 0, 0.3)</code></td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(dark) 30%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-dark, #322F35) 30%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ColorGradient.</div></div>
@@ -8091,9 +8071,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-border</td>
-    <td>Color</td>
-    <td><code>rgba( white, .8 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(255, 255, 255, 0.8)"></span><code>rgba(255, 255, 255, 0.8)</code></td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(light) 80%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-light, #F7F3FA) 80%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the ColorGradient canvas drag handle.</div></div>
@@ -8101,9 +8081,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-shadow</td>
-    <td>Color</td>
-    <td><code>$kendo-color-black</code></td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
+    <td>String</td>
+    <td><code>k-color(inverse)</code></td>
+    <td><code>var(--kendo-color-inverse, #322F35)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus color of the outline around the ColorGradient canvas drag handle.</div></div>
@@ -8111,9 +8091,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-hover-shadow</td>
-    <td>Color</td>
-    <td><code>$kendo-color-black</code></td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
+    <td>String</td>
+    <td><code>k-color(inverse)</code></td>
+    <td><code>var(--kendo-color-inverse, #322F35)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the outline around the ColorGradient canvas drag handle.</div></div>
@@ -8413,8 +8393,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-palette-tile-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .5 )</code></td>
-    <td><code>(0 0 3px 1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.5))</code></td>
+    <td><code>0 0 3px 1px color-mix(in srgb, k-color(dark) 30%, transparent), inset 0 0 0 1px rcolor-mix(in srgb, k-color(light) 50%, transparent)</code></td>
+    <td><code>(0 0 3px 1px color-mix(in srgb, var(--kendo-color-dark, #322F35) 30%, transparent), inset 0 0 0 1px rcolor-mix(in srgb, var(--kendo-color-light, #F7F3FA) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette focused tile.</div></div>
@@ -8423,8 +8403,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-palette-tile-hover-shadow</td>
     <td>List</td>
-    <td><code>0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .8 )</code></td>
-    <td><code>(0 0 3px 1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.8))</code></td>
+    <td><code>0 0 3px 1px color-mix(in srgb, k-color(dark) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, k-color(light) 80%, transparent)</code></td>
+    <td><code>(0 0 3px 1px color-mix(in srgb, var(--kendo-color-dark, #322F35) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-light, #F7F3FA) 80%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette hovered tile.</div></div>
@@ -8433,8 +8413,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-palette-tile-selected-shadow</td>
     <td>List</td>
-    <td><code>0 1px 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, 1 )</code></td>
-    <td><code>(0 1px 3px 1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px white)</code></td>
+    <td><code>0 1px 3px 1px color-mix(in srgb, k-color(dark) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, k-color(light) 100%, transparent)</code></td>
+    <td><code>(0 1px 3px 1px color-mix(in srgb, var(--kendo-color-dark, #322F35) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-light, #F7F3FA) 100%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette selected tile.</div></div>
@@ -8461,6 +8441,86 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorPalette.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### DateTimePicker
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-datetime-width</td>
+    <td>Calculation</td>
+    <td><code>calc( calc( #{$kendo-calendar-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ))</code></td>
+    <td><code>calc(48px * 8 + var(--kendo-spacing-1, 0.25rem) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DateTimePicker.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datetime-sm-width</td>
+    <td>Calculation</td>
+    <td><code>calc( calc( #{$kendo-calendar-sm-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ))</code></td>
+    <td><code>calc(40px * 8 + var(--kendo-spacing-1, 0.25rem) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small DateTimePicker.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datetime-md-width</td>
+    <td>Calculation</td>
+    <td><code>$kendo-datetime-width</code></td>
+    <td><code>calc(48px * 8 + var(--kendo-spacing-1, 0.25rem) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium DateTimePicker.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datetime-lg-width</td>
+    <td>Calculation</td>
+    <td><code>calc( calc( #{$kendo-calendar-lg-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ))</code></td>
+    <td><code>calc(56px * 8 + var(--kendo-spacing-1, 0.25rem) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large DateTimePicker.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datetime-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        width: $kendo-datetime-sm-width
+    ),
+    md: (
+        width: $kendo-datetime-md-width
+    ),
+    lg: (
+        width: $kendo-datetime-lg-width
+    )
+)</code></td>
+    <td><ul><li>sm: "width":"calc(40px * 8 + var(--kendo-spacing-1, 0.25rem) * 2)"</li><li>md: "width":"calc(48px * 8 + var(--kendo-spacing-1, 0.25rem) * 2)"</li><li>lg: "width":"calc(56px * 8 + var(--kendo-spacing-1, 0.25rem) * 2)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the DateTimePicker.</div></div>
     </td>
 </tr>
 </tbody>
@@ -9690,8 +9750,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-editor-highlighted-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle)</code></td>
-    <td><code>var(--kendo-color-primary-subtle, #E9DDFF)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, #65558F) 25%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The highlighted background color of the Editor.</div></div>
@@ -9970,8 +10030,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-expander-header-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(3.5)</code></td>
-    <td><code>var(--kendo-spacing-3\.5, 0.875rem)</code></td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ExpansionPanel header.</div></div>
@@ -10720,8 +10780,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-filter-preview-field-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #65558F)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Filter preview field.</div></div>
@@ -10730,8 +10790,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-filter-preview-operator-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle, #49454F)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Filter preview operator.</div></div>
@@ -11354,8 +11414,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-floating-label-focus-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #65558F)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Floating Label.</div></div>
@@ -11504,8 +11564,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-form-legend-text-transform</td>
     <td>String</td>
-    <td><code>uppercase</code></td>
-    <td><code>uppercase</code></td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text capitalization of the Form legend.</div></div>
@@ -11564,8 +11624,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-form-md-rows-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(6)</code></td>
-    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
+    <td><code>k-spacing(5)</code></td>
+    <td><code>var(--kendo-spacing-5, 1.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The row spacing of the medium Form.</div></div>
@@ -11574,8 +11634,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-form-lg-rows-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(7)</code></td>
-    <td><code>var(--kendo-spacing-7, 1.75rem)</code></td>
+    <td><code>k-spacing(6)</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The row spacing of the large Form.</div></div>
@@ -11585,7 +11645,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-form-separator-margin</td>
     <td>List</td>
     <td><code>$kendo-form-md-rows-spacing 0 0</code></td>
-    <td><code>(var(--kendo-spacing-6, 1.5rem) 0 0)</code></td>
+    <td><code>(var(--kendo-spacing-5, 1.25rem) 0 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form separator.</div></div>
@@ -11704,8 +11764,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-label-optional-font-style</td>
     <td>String</td>
-    <td><code>italic</code></td>
-    <td><code>italic</code></td>
+    <td><code>normal</code></td>
+    <td><code>normal</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the optional label in the Form.</div></div>
@@ -11785,7 +11845,7 @@ The following table lists the available variables for customizing the Material t
         form-rows-spacing: $kendo-form-lg-rows-spacing
     )
 )</code></td>
-    <td><ul><li>sm: "form-rows-spacing":"var(--kendo-spacing-4, 1rem)"</li><li>md: "form-rows-spacing":"var(--kendo-spacing-6, 1.5rem)"</li><li>lg: "form-rows-spacing":"var(--kendo-spacing-7, 1.75rem)"</li></ul></td>
+    <td><ul><li>sm: "form-rows-spacing":"var(--kendo-spacing-4, 1rem)"</li><li>md: "form-rows-spacing":"var(--kendo-spacing-5, 1.25rem)"</li><li>lg: "form-rows-spacing":"var(--kendo-spacing-6, 1.5rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Form.</div></div>
@@ -12483,9 +12543,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-gantt-validation-tooltip-border</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #656565"></span><code>#656565</code></td>
-    <td><span class="color-preview" style="background-color: #656565"></span><code>#656565</code></td>
+    <td>String</td>
+    <td><code>k-color(base-emphasis)</code></td>
+    <td><code>var(--kendo-color-base-emphasis, #6E687C)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt validation Tooltip.</div></div>
@@ -12494,8 +12554,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-validation-tooltip-valid-border</td>
     <td>String</td>
-    <td><code>k-color(success)</code></td>
-    <td><code>var(--kendo-color-success, #1B7E3F)</code></td>
+    <td><code>k-color(success-emphasis)</code></td>
+    <td><code>var(--kendo-color-success-emphasis, #6BDC94)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the valid Gantt validation Tooltip.</div></div>
@@ -12504,8 +12564,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-validation-tooltip-invalid-border</td>
     <td>String</td>
-    <td><code>k-color(error)</code></td>
-    <td><code>var(--kendo-color-error, #B3261E)</code></td>
+    <td><code>k-color(error-emphasis)</code></td>
+    <td><code>var(--kendo-color-error-emphasis, #E87973)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid Gantt validation Tooltip.</div></div>
@@ -14379,8 +14439,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-list-item-selected-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #65558F)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected List items.</div></div>
@@ -14729,8 +14789,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-listview-item-selected-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #65558F)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected ListView items.</div></div>
@@ -16879,9 +16939,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-orgchart-node-group-subtitle-text</td>
-    <td>Color</td>
-    <td><code>rgba( black, .54 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span><code>rgba(0, 0, 0, 0.54)</code></td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #49454F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart node group subtitle.</div></div>
@@ -16999,9 +17059,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-orgchart-card-body-vbox-min-height</td>
-    <td>Number</td>
-    <td><code>$kendo-card-avatar-size</code></td>
-    <td><code>45px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(11)</code></td>
+    <td><code>var(--kendo-spacing-11, 2.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The min height of the OrgChart Card body title wrap.</div></div>
@@ -17209,9 +17269,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-pdf-viewer-page-bg</td>
-    <td>Color</td>
-    <td><code>white</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+    <td>String</td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer page.</div></div>
@@ -17439,9 +17499,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-pdf-viewer-free-text-annotation-placeholder-text</td>
-    <td>Color</td>
-    <td><code>rgba(124, 22, 27, 0.5)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(124, 22, 27, 0.5)"></span><code>rgba(124, 22, 27, 0.5)</code></td>
+    <td>String</td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle, #4F378A)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The placeholder text color of the PDFViewer free text annotation.</div></div>
@@ -17449,9 +17509,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-pdf-viewer-free-text-annotation-text</td>
-    <td>Color</td>
-    <td><code>rgba(124, 22, 27, 0.7)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(124, 22, 27, 0.7)"></span><code>rgba(124, 22, 27, 0.7)</code></td>
+    <td>String</td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle, #4F378A)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer free text annotation.</div></div>
@@ -20381,9 +20441,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-popover-header-border</td>
-    <td>String</td>
+    <td>Color</td>
     <td><code>$kendo-card-header-border</code></td>
-    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Popover header.</div></div>
@@ -20612,8 +20672,8 @@ The following table lists the available variables for customizing the Material t
 <tbody><tr>
     <td>$kendo-progressbar-height</td>
     <td>Number</td>
-    <td><code>5px</code></td>
-    <td><code>5px</code></td>
+    <td><code>4px</code></td>
+    <td><code>4px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ProgressBar.</div></div>
@@ -21621,8 +21681,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-rating-icon-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle, #49454F)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Rating icon.</div></div>
@@ -21661,8 +21721,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-rating-icon-focus-shadow</td>
     <td>List</td>
-    <td><code>0 2px 4px rgba( black, .1 )</code></td>
-    <td><code>(0 2px 4px rgba(0, 0, 0, 0.1))</code></td>
+    <td><code>0 2px 4px color-mix(in srgb, k-color(inverse) 10%, transparent)</code></td>
+    <td><code>(0 2px 4px color-mix(in srgb, var(--kendo-color-inverse, #322F35) 10%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Rating icon.</div></div>
@@ -21671,8 +21731,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-rating-icon-focus-selected-shadow</td>
     <td>List</td>
-    <td><code>0 2px 4px rgba( black, .1)</code></td>
-    <td><code>(0 2px 4px rgba(0, 0, 0, 0.1))</code></td>
+    <td><code>0 2px 4px color-mix(in srgb, k-color(inverse) 10%, transparent)</code></td>
+    <td><code>(0 2px 4px color-mix(in srgb, var(--kendo-color-inverse, #322F35) 10%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused and selected Rating icon.</div></div>
@@ -22601,8 +22661,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scrollview-pagebutton-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px rgba( black, .13 )</code></td>
-    <td><code>(0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(dark) 13%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-dark, #322F35) 13%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ScrollView page button.</div></div>
@@ -22669,20 +22729,10 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scrollview-navigation-icon-shadow</td>
-    <td>List</td>
-    <td><code>rgba( black, .3 ) 0 0 15px</code></td>
-    <td><code>(rgba(0, 0, 0, 0.3) 0 0 15px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ScrollView navigation arrows.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-scrollview-navigation-bg</td>
     <td>Color</td>
-    <td><code>rgba( black, 0 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0)"></span><code>rgba(0, 0, 0, 0)</code></td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView navigation.</div></div>
@@ -22820,9 +22870,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-skeleton-wave-bg</td>
-    <td>Color</td>
-    <td><code>rgba( black, .04 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(dark) 4%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-dark, #322F35) 4%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Skeleton wave animation.</div></div>
@@ -23470,9 +23520,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-splitter-drag-icon-margin</td>
-    <td>Calculation</td>
-    <td><code>calc( #{k-spacing(3.5)} / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-3\.5, 0.875rem) / 2)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Splitter drag handle icon.</div></div>
@@ -24231,8 +24281,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2000px rgba( black, .5 )</code></td>
-    <td><code>(inset 0 0 0 2000px rgba(0, 0, 0, 0.5))</code></td>
+    <td><code>inset 0 0 0 2000px color-mix(in srgb, k-color(inverse) 50%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2000px color-mix(in srgb, var(--kendo-color-inverse, #322F35) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet image Dialog preview.</div></div>
@@ -24470,9 +24520,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-stepper-label-padding-y</td>
-    <td>Calculation</td>
-    <td><code>calc( #{k-spacing(2.5)} / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-2\.5, 0.625rem) / 2)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding the Stepper label.</div></div>
@@ -26764,8 +26814,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-tabstrip-item-selected-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #65558F)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected TabStrip items.</div></div>
@@ -26895,7 +26945,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-tabstrip-indicator-color</td>
     <td>String</td>
     <td><code>$kendo-tabstrip-item-selected-text</code></td>
-    <td><code>var(--kendo-color-primary, #65558F)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TabStrip ripple.</div></div>
@@ -27752,9 +27802,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-taskboard-drag-placeholder-bg</td>
-    <td>Color</td>
-    <td><code>rgba( white, .2 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(255, 255, 255, 0.2)"></span><code>rgba(255, 255, 255, 0.2)</code></td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(light) 20%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-light, #F7F3FA) 20%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard Card placeholder.</div></div>
@@ -27922,9 +27972,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-current-time-color</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #ff0000"></span><code>#ff0000</code></td>
-    <td><span class="color-preview" style="background-color: #ff0000"></span><code>#ff0000</code></td>
+    <td>String</td>
+    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>var(--kendo-color-error-on-surface, #9C2521)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the current time indicator.</div></div>
@@ -28153,8 +28203,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-timeline-track-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle, #DED8E0)</code></td>
+    <td><code>k-color(primary-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-subtle, #E9DDFF)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline track.</div></div>
@@ -28164,7 +28214,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-timeline-track-border-color</td>
     <td>String</td>
     <td><code>$kendo-timeline-track-bg</code></td>
-    <td><code>var(--kendo-color-base-subtle, #DED8E0)</code></td>
+    <td><code>var(--kendo-color-primary-subtle, #E9DDFF)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Timeline track.</div></div>
@@ -28382,9 +28432,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-timeline-circle-width</td>
-    <td>Number</td>
-    <td><code>16px</code></td>
-    <td><code>16px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Timeline circle.</div></div>
@@ -28392,9 +28442,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-timeline-circle-height</td>
-    <td>Number</td>
-    <td><code>16px</code></td>
-    <td><code>16px</code></td>
+    <td>String</td>
+    <td><code>$kendo-timeline-circle-width</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Timeline circle.</div></div>
@@ -28643,8 +28693,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-toolbar-text</td>
     <td>String</td>
-    <td><code>k-color(base-on-subtle)</code></td>
-    <td><code>var(--kendo-color-base-on-subtle, #4A4459)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Toolbar.</div></div>
@@ -28693,8 +28743,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-toolbar-outline-text</td>
     <td>String</td>
-    <td><code>k-color(base-on-subtle)</code></td>
-    <td><code>var(--kendo-color-base-on-subtle, #4A4459)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline Toolbar.</div></div>
@@ -28743,8 +28793,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-toolbar-flat-text</td>
     <td>String</td>
-    <td><code>k-color(base-on-subtle)</code></td>
-    <td><code>var(--kendo-color-base-on-subtle, #4A4459)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat Toolbar.</div></div>
@@ -29002,8 +29052,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-tooltip-bg</td>
     <td>String</td>
-    <td><code>k-color(inverse-on-surface)</code></td>
-    <td><code>var(--kendo-color-inverse-on-surface, #322F35)</code></td>
+    <td><code>k-color(inverse)</code></td>
+    <td><code>var(--kendo-color-inverse, #322F35)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default background of the Tooltip.</div></div>
@@ -29023,7 +29073,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-tooltip-border</td>
     <td>String</td>
     <td><code>$kendo-tooltip-bg</code></td>
-    <td><code>var(--kendo-color-inverse-on-surface, #322F35)</code></td>
+    <td><code>var(--kendo-color-inverse, #322F35)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default border color of the Tooltip.</div></div>
@@ -29488,8 +29538,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-treeview-item-selected-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #65558F)</code></td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected TreeView items.</div></div>
@@ -30048,7 +30098,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-font-weights</td>
     <td>Map</td>
-    <td><code>map.merge( $_default-font-weights, $kendo-font-weights )</code></td>
+    <td><code>$default-font-weights</code></td>
     <td><ul><li>thin: 100</li><li>extra-light: 200</li><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li><li>extra-bold: 800</li><li>black: 900</li></ul></td>
 </tr>
 <tr>
@@ -31186,8 +31236,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-upload-success-text</td>
     <td>String</td>
-    <td><code>k-color(success)</code></td>
-    <td><code>var(--kendo-color-success, #1B7E3F)</code></td>
+    <td><code>k-color(success-on-surface)</code></td>
+    <td><code>var(--kendo-color-success-on-surface, #186D37)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The success text color of the Upload.</div></div>
@@ -31206,8 +31256,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-upload-error-text</td>
     <td>String</td>
-    <td><code>k-color(error)</code></td>
-    <td><code>var(--kendo-color-error, #B3261E)</code></td>
+    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>var(--kendo-color-error-on-surface, #9C2521)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The error text color of the Upload.</div></div>
@@ -31226,8 +31276,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-upload-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px rgba( black, .13 )</code></td>
-    <td><code>(0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(inverse) 13%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-inverse, #322F35) 13%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Upload button, actions and uploaded items.</div></div>
@@ -31673,9 +31723,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-wizard-step-focus-border</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #656565"></span><code>#656565</code></td>
-    <td><span class="color-preview" style="background-color: #656565"></span><code>#656565</code></td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #49454F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline of the focused Wizard step.</div></div>

@@ -23,13 +23,13 @@ $kendo-captcha-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-captcha-gap: $kendo-captcha-spacer !default;
 /// The background color of the Captcha.
 /// @group captcha
-$kendo-captcha-bg: k-color(app-surface) !default;
+$kendo-captcha-bg: k-color(surface-alt) !default;
 /// The text color of the Captcha.
 /// @group captcha
-$kendo-captcha-text: k-color(app-surface) !default;
+$kendo-captcha-text: k-color(on-app-surface) !default;
 /// The border color of the Captcha.
 /// @group captcha
-$kendo-captcha-border: k-color(app-surface) !default;
+$kendo-captcha-border: k-color(border) !default;
 
 /// The gap of the Captcha image wrapper.
 /// @group captcha

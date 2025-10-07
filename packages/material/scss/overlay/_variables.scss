@@ -13,7 +13,7 @@ $kendo-overlay-theme-colors: (
     "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
 ) !default;
 
-$kendo-overlay-bg: $kendo-color-black !default;
+$kendo-overlay-bg: k-color(inverse) !default;
 $kendo-overlay-opacity: .32 !default;
 
 @forward "@progress/kendo-theme-core/scss/components/overlay/_variables.scss" with (

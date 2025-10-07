@@ -9,6 +9,7 @@ import {
 import { Icon } from '../icon';
 
 import { KendoComponent } from '../_types/component';
+import { SEARCHBOX_FOLDER_NAME, SEARCHBOX_MODULE_NAME } from './constants';
 export const SEARCHBOX_CLASSNAME = `k-searchbox`;
 
 const states = [
@@ -103,5 +104,7 @@ Searchbox.states = states;
 Searchbox.options = options;
 Searchbox.className = SEARCHBOX_CLASSNAME;
 Searchbox.defaultOptions = defaultOptions;
+Searchbox.moduleName = SEARCHBOX_MODULE_NAME;
+Searchbox.folderName = SEARCHBOX_FOLDER_NAME;
 
 export default Searchbox;

@@ -9,8 +9,8 @@ $kendo-color-preview-text: null !default;
 $kendo-color-preview-border: k-color(border) !default;
 $kendo-color-preview-hover-border: k-color(border) !default;
 
-$kendo-color-preview-no-color-bg: $kendo-color-white !default;
-$kendo-color-preview-no-color-text: k-color(error) !default;
+$kendo-color-preview-no-color-bg: k-color(surface-alt) !default;
+$kendo-color-preview-no-color-text: k-color(error-on-surface) !default;
 $kendo-color-preview-no-color-border: null !default;
 
 $kendo-color-preview-no-color-image: k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' version='1.1'><line x1='0' x2='20' y1='0' y2='20' stroke='#{$kendo-color-preview-no-color-text}' stroke-width='1'/></svg>") ) !default;

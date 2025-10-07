@@ -4,6 +4,7 @@ import SvgIcon from './svg-icon';
 import * as SVGIcons from '@progress/kendo-svg-icons';
 
 import { KendoComponent } from '../_types/component';
+import { ICON_FOLDER_NAME, ICON_MODULE_NAME } from './constants';
 
 export const ICON_CLASSNAME = `k-icon`;
 
@@ -100,5 +101,7 @@ Icon.states = states;
 Icon.options = options;
 Icon.defaultOptions = defaultOptions;
 Icon.className = ICON_CLASSNAME;
+Icon.moduleName = ICON_MODULE_NAME;
+Icon.folderName = ICON_FOLDER_NAME;
 
 export default Icon;

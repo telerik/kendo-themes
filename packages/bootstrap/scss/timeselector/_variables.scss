@@ -9,7 +9,7 @@ $kendo-time-selector-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-time-selector-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-time-selector-line-height: var( --kendo-line-height, normal ) !default;
 
-$kendo-time-selector-bg: k-color(app-surface) !default;
+$kendo-time-selector-bg: k-color(surface-alt) !default;
 $kendo-time-selector-text: k-color(on-app-surface) !default;
 $kendo-time-selector-border: k-color(border) !default;
 
@@ -37,7 +37,7 @@ $kendo-time-list-highlight-height: calc( calc( #{$kendo-time-selector-font-size}
 $kendo-time-list-highlight-bg: k-color(app-surface) !default;
 $kendo-time-list-highlight-border: k-color(border) !default;
 
-$kendo-time-list-focus-bg: rgba( black, .02 ) !default;
+$kendo-time-list-focus-bg: color-mix(in srgb, k-color(inverse) 2%, transparent) !default;
 
 
 // Time selector sizes

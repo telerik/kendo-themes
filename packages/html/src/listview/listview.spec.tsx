@@ -2,6 +2,7 @@ import { PagerNormal } from '../pager';
 import { classNames, stateClassNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { LISTVIEW_FOLDER_NAME, LISTVIEW_MODULE_NAME } from './constants';
 export const LISTVIEW_CLASSNAME = `k-listview`;
 
 const states = [
@@ -101,5 +102,7 @@ ListView.states = states;
 ListView.options = options;
 ListView.className = LISTVIEW_CLASSNAME;
 ListView.defaultOptions = defaultOptions;
+ListView.moduleName = LISTVIEW_MODULE_NAME;
+ListView.folderName = LISTVIEW_FOLDER_NAME;
 
 export default ListView;

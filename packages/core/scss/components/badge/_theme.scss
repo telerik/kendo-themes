@@ -15,13 +15,14 @@
 
     // Outline badges
     .k-badge-outline {
+        color: k-color(base-on-surface);
         border-color: currentColor;
         background-color: transparent;
     }
 
     @each $name, $color in $kendo-badge-theme-colors {
         .k-badge-outline-#{$name} {
-            color: $color;
+            color: k-color(#{$name}-on-surface);
         }
     }
 

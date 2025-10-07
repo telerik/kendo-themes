@@ -3,6 +3,7 @@ import { Icon } from '../icon';
 import { ColumnMenuItem, ColumnMenuItemContent } from '../column-menu';
 
 import { KendoComponent } from '../_types/component';
+import { COLUMN_MENU_FOLDER_NAME, COLUMN_MENU_MODULE_NAME } from './constants';
 export const COLUMNMENUEXPANDER_CLASSNAME = `k-expander`;
 
 const states = [];
@@ -67,5 +68,7 @@ ColumnMenuExpander.states = states;
 ColumnMenuExpander.options = options;
 ColumnMenuExpander.className = COLUMNMENUEXPANDER_CLASSNAME;
 ColumnMenuExpander.defaultOptions = defaultOptions;
+ColumnMenuExpander.moduleName = COLUMN_MENU_MODULE_NAME;
+ColumnMenuExpander.folderName = COLUMN_MENU_FOLDER_NAME;
 
 export default ColumnMenuExpander;

@@ -25,11 +25,11 @@ $kendo-filter-operator-dropdown-width: 15em !default;
 $kendo-filter-preview-field-text: k-color(primary) !default;
 /// The text color of the Filter preview operator.
 /// @group filter
-$kendo-filter-preview-operator-text: k-color(subtle) !default;
+$kendo-filter-preview-operator-text: k-color(on-app-surface) !default;
 
 /// The box shadow of the focused Filter toolbar.
 /// @group filter
-$kendo-filter-toolbar-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .08) !default;
+$kendo-filter-toolbar-focus-shadow: 0 0 0 2px k-color(border-alt) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/filter/_variables.scss" with (

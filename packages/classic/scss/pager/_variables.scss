@@ -70,7 +70,7 @@ $kendo-pager-border: k-color(border) !default;
 $kendo-pager-focus-bg: null !default;
 /// The box shadow of the focused Pager.
 /// @group pager
-$kendo-pager-focus-shadow: $kendo-focus-shadow !default;
+$kendo-pager-focus-shadow: inset 0 0 0 2px k-color(border-alt) !default;
 
 /// The border width of the Pager items.
 /// @group pager

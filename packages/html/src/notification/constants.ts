@@ -1,0 +1,2 @@
+export const NOTIFICATION_MODULE_NAME = 'notification';
+export const NOTIFICATION_FOLDER_NAME = NOTIFICATION_MODULE_NAME;

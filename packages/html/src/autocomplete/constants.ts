@@ -1,0 +1,2 @@
+export const AUTOCOMPLETE_MODULE_NAME = 'autocomplete';
+export const AUTOCOMPLETE_FOLDER_NAME = AUTOCOMPLETE_MODULE_NAME;

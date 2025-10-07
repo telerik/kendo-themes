@@ -24,7 +24,7 @@ $kendo-expander-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-expander-text: k-color(on-app-surface) !default;
 /// The background color of the ExpansionPanel.
 /// @group expander
-$kendo-expander-bg: k-color(app-surface) !default;
+$kendo-expander-bg: k-color(surface-alt) !default;
 /// The border color of the ExpansionPanel.
 /// @group expander
 $kendo-expander-border: k-color(border) !default;
@@ -52,7 +52,7 @@ $kendo-expander-header-border: null !default;
 
 /// The background color of the hovered ExpansionPanel header.
 /// @group expander
-$kendo-expander-header-hover-bg: rgba( black, .04 ) !default;
+$kendo-expander-header-hover-bg: $kendo-list-item-hover-bg !default;
 /// The background color of the focused ExpansionPanel header.
 /// @group expander
 $kendo-expander-header-focus-bg: null !default;

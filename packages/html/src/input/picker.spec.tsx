@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { INPUT_FOLDER_NAME, INPUT_MODULE_NAME } from './constants';
 export const PICKER_CLASSNAME = `k-picker`;
 
 export const pickerStates = [
@@ -70,5 +71,7 @@ Picker.states = pickerStates;
 Picker.options = pickerOptions;
 Picker.className = PICKER_CLASSNAME;
 Picker.defaultOptions = defaultOptions;
+Picker.moduleName = INPUT_MODULE_NAME;
+Picker.folderName = INPUT_FOLDER_NAME;
 
 export default Picker;

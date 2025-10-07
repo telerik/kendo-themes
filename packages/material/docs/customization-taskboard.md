@@ -749,9 +749,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-drag-placeholder-bg</td>
-    <td>Color</td>
-    <td><code>rgba( white, .2 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(255, 255, 255, 0.2)"></span><code>rgba(255, 255, 255, 0.2)</code></td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(light) 20%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-light, #F7F3FA) 20%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard Card placeholder.</div></div>

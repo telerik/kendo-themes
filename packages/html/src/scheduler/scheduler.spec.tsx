@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import SchedulerView from './scheduler-view.spec';
 
 import { KendoComponent } from '../_types/component';
+import { SCHEDULER_FOLDER_NAME, SCHEDULER_MODULE_NAME } from './constants';
 const SCHEDULER_CLASSNAME = 'k-scheduler';
 
 const states = [];
@@ -57,5 +58,7 @@ Scheduler.states = states;
 Scheduler.options = options;
 Scheduler.className = SCHEDULER_CLASSNAME;
 Scheduler.defaultOptions = defaultOptions;
+Scheduler.moduleName = SCHEDULER_MODULE_NAME;
+Scheduler.folderName = SCHEDULER_FOLDER_NAME;
 
 export default Scheduler;

@@ -105,7 +105,7 @@ $kendo-input-sizes: (
 
 /// The background color of the Input components.
 /// @group input
-$kendo-input-bg: k-color(app-surface) !default;
+$kendo-input-bg: k-color(surface-alt) !default;
 /// The text color of the Input components.
 /// @group input
 $kendo-input-text: k-color(on-app-surface) !default;
@@ -124,7 +124,7 @@ $kendo-input-hover-bg: null !default;
 $kendo-input-hover-text: null !default;
 /// The border color of the hovered Input components.
 /// @group input
-$kendo-input-hover-border: $kendo-input-border !default;
+$kendo-input-hover-border: k-color(border-alt) !default;
 /// The shadow of the hovered Input components.
 /// @group input
 $kendo-input-hover-shadow: null !default;
@@ -275,7 +275,7 @@ $kendo-input-suffix-bg: k-color(surface) !default;
 
 /// The border color of the invalid Input components.
 /// @group input
-$kendo-input-invalid-border: k-color(error) !default;
+$kendo-input-invalid-border: k-color(error-on-surface) !default;
 /// The shadow of the invalid Input components.
 /// @group input
 $kendo-input-invalid-shadow: 0 0 0 .25rem color-mix(in srgb, k-color(error) 25%, transparent) !default;

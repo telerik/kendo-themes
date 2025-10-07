@@ -6,27 +6,6 @@
 
     @include kendo-chip--theme-base();
 
-    @each $name, $color in $kendo-chip-theme-colors {
-        .k-chip-outline-#{$name} {
-
-            @if ($name == "info") {
-                @include fill (
-                    $color: k-color(on-app-surface),
-                    $border: $color
-                );
-
-                &:hover,
-                &.k-hover,
-                &.k-selected {
-                    @include fill(
-                        k-color(on-app-surface),
-                        $color,
-                        $color
-                    );
-                }
-
-            }
-        }
-    }
+    
 
 }

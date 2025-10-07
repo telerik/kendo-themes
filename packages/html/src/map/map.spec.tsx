@@ -3,6 +3,7 @@ import { Icon } from '../icon';
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { MAP_FOLDER_NAME, MAP_MODULE_NAME } from './constants';
 export const MAP_CLASSNAME = `k-map`;
 
 const states = [];
@@ -84,5 +85,7 @@ Map.states = states;
 Map.options = options;
 Map.className = MAP_CLASSNAME;
 Map.defaultOptions = defaultOptions;
+Map.moduleName = MAP_MODULE_NAME;
+Map.folderName = MAP_FOLDER_NAME;
 
 export default Map;

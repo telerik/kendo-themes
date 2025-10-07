@@ -1,0 +1,2 @@
+export const PANELBAR_MODULE_NAME = 'panelbar';
+export const PANELBAR_FOLDER_NAME = PANELBAR_MODULE_NAME;

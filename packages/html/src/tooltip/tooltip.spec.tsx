@@ -2,6 +2,7 @@ import { classNames, optionClassNames, kendoThemeMaps, ThemeColor } from '../mis
 import { Icon } from '../icon';
 
 import { KendoComponent } from '../_types/component';
+import { TOOLTIP_FOLDER_NAME, TOOLTIP_MODULE_NAME } from './constants';
 export const TOOLTIP_CLASSNAME = `k-tooltip`;
 
 const states = [];
@@ -87,5 +88,7 @@ Tooltip.states = states;
 Tooltip.options = options;
 Tooltip.className = TOOLTIP_CLASSNAME;
 Tooltip.defaultOptions = defaultOptions;
+Tooltip.moduleName = TOOLTIP_MODULE_NAME;
+Tooltip.folderName = TOOLTIP_FOLDER_NAME;
 
 export default Tooltip;

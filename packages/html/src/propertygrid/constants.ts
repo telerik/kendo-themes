@@ -1,0 +1,2 @@
+export const PROPERTYGRID_MODULE_NAME = 'propertygrid';
+export const PROPERTYGRID_FOLDER_NAME = PROPERTYGRID_MODULE_NAME;

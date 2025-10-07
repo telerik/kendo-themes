@@ -21,7 +21,7 @@ $kendo-scrollview-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-scrollview-text: k-color(on-app-surface) !default;
 /// The background color of the ScrollView.
 /// @group scrollview
-$kendo-scrollview-bg: k-color(app-surface) !default;
+$kendo-scrollview-bg: k-color(surface-alt) !default;
 /// The border color of the ScrollView.
 /// @group scrollview
 $kendo-scrollview-border: k-color(border) !default;
@@ -43,7 +43,7 @@ $kendo-scrollview-pagebutton-primary-bg: k-color(primary) !default;
 $kendo-scrollview-pagebutton-primary-border: k-color(primary) !default;
 /// The box shadow of the ScrollView page button.
 /// @group scrollview
-$kendo-scrollview-pagebutton-shadow: 0 0 0 2px rgba( black, .13 ) !default;
+$kendo-scrollview-pagebutton-shadow: 0 0 0 2px color-mix(in srgb, k-color(inverse) 13%, transparent) !default;
 
 /// The offset of the ScrollView pager.
 /// @group scrollview
@@ -64,12 +64,9 @@ $kendo-scrollview-arrow-tap-highlight-color: $kendo-color-rgba-transparent !defa
 /// The color of the ScrollView navigation arrows.
 /// @group scrollview
 $kendo-scrollview-navigation-color: white !default;
-/// The box shadow of the ScrollView navigation arrows.
-/// @group scrollview
-$kendo-scrollview-navigation-icon-shadow: rgba( black, .3 ) 0 0 15px !default;
 /// The background color of the ScrollView navigation.
 /// @group scrollview
-$kendo-scrollview-navigation-bg: rgba( black, 0 ) !default;
+$kendo-scrollview-navigation-bg: transparent !default;
 /// The opacity of the ScrollView navigation.
 /// @group scrollview
 $kendo-scrollview-navigation-default-opacity: .7 !default;
@@ -115,7 +112,6 @@ $kendo-scrollview-transition-timing-function: ease-in-out !default;
     $kendo-scrollview-pager-height: $kendo-scrollview-pager-height,
     $kendo-scrollview-arrow-tap-highlight-color: $kendo-scrollview-arrow-tap-highlight-color,
     $kendo-scrollview-navigation-color: $kendo-scrollview-navigation-color,
-    $kendo-scrollview-navigation-icon-shadow: $kendo-scrollview-navigation-icon-shadow,
     $kendo-scrollview-navigation-bg: $kendo-scrollview-navigation-bg,
     $kendo-scrollview-navigation-default-opacity: $kendo-scrollview-navigation-default-opacity,
     $kendo-scrollview-navigation-hover-opacity: $kendo-scrollview-navigation-hover-opacity,

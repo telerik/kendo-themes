@@ -1,0 +1,2 @@
+export const ORGCHART_MODULE_NAME = 'orgchart';
+export const ORGCHART_FOLDER_NAME = ORGCHART_MODULE_NAME;

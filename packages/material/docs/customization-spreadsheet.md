@@ -680,8 +680,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2000px rgba( black, .5 )</code></td>
-    <td><code>(inset 0 0 0 2000px rgba(0, 0, 0, 0.5))</code></td>
+    <td><code>inset 0 0 0 2000px color-mix(in srgb, k-color(inverse) 50%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2000px color-mix(in srgb, var(--kendo-color-inverse, #322F35) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet image Dialog preview.</div></div>

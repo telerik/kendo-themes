@@ -1,6 +1,7 @@
 import { classNames, optionClassNames, stateClassNames, States, FillMode } from '../misc';
 
 import { KendoComponent } from '../_types/component';
+import { BUTTON_GROUP_FOLDER_NAME, BUTTON_GROUP_MODULE_NAME } from './constants';
 export const BUTTONGROUP_CLASSNAME = `k-button-group`;
 
 const states = [
@@ -63,5 +64,7 @@ ButtonGroup.states = states;
 ButtonGroup.options = options;
 ButtonGroup.className = BUTTONGROUP_CLASSNAME;
 ButtonGroup.defaultOptions = defaultOptions;
+ButtonGroup.moduleName = BUTTON_GROUP_MODULE_NAME;
+ButtonGroup.folderName = BUTTON_GROUP_FOLDER_NAME;
 
 export default ButtonGroup;

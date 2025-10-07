@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.1.0](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.5...v12.1.0) (2025-10-06)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [12.1.0-dev.5](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.4...v12.1.0-dev.5) (2025-10-06)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [12.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.3...v12.1.0-dev.4) (2025-10-06)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [12.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.2...v12.1.0-dev.3) (2025-10-02)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [12.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.1...v12.1.0-dev.2) (2025-09-29)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [12.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.0...v12.1.0-dev.1) (2025-09-22)
+
+
+### Bug Fixes
+
+* **html:** map controls positioning classes ([3f9694b](https://github.com/telerik/kendo-themes/commit/3f9694b00aaa1d5a5dcd9903ff5e2688b5a0b7c2))
+
+
+
+
+
 # [12.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.0.2-dev.1...v12.1.0-dev.0) (2025-09-15)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

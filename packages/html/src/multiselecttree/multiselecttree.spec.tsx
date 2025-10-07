@@ -14,6 +14,7 @@ import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action
 import { TreeviewGroup, TreeviewItem, Treeview } from '../treeview';
 
 import { KendoComponent } from '../_types/component';
+import { MULTISELECTTREE_FOLDER_NAME, MULTISELECTTREE_MODULE_NAME } from './constants';
 export const MULTISELECTTREE_CLASSNAME = `k-multiselecttree`;
 
 const states = [
@@ -198,5 +199,7 @@ MultiSelectTree.states = states;
 MultiSelectTree.options = options;
 MultiSelectTree.className = MULTISELECTTREE_CLASSNAME;
 MultiSelectTree.defaultOptions = defaultOptions;
+MultiSelectTree.moduleName = MULTISELECTTREE_MODULE_NAME;
+MultiSelectTree.folderName = MULTISELECTTREE_FOLDER_NAME;
 
 export default MultiSelectTree;

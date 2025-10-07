@@ -25,7 +25,7 @@ $kendo-upload-max-height: 300px !default;
 $kendo-upload-text: k-color(on-app-surface) !default;
 /// The background color of the Upload.
 /// @group upload
-$kendo-upload-bg: k-color(app-surface) !default;
+$kendo-upload-bg: k-color(surface-alt) !default;
 /// The border color of the Upload.
 /// @group upload
 $kendo-upload-border: k-color(border) !default;
@@ -47,7 +47,7 @@ $kendo-upload-dropzone-bg: k-color(surface) !default;
 $kendo-upload-dropzone-border: $kendo-upload-border !default;
 /// The background color of the hovered Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-hover-bg: k-color(base-subtle) !default;
+$kendo-upload-dropzone-hover-bg: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
 
 /// The text color of the Upload status message.
 /// @group upload
@@ -103,7 +103,7 @@ $kendo-upload-error-bg: k-color(error) !default;
 
 /// The shadow of the focused Upload button, actions and uploaded items.
 /// @group upload
-$kendo-upload-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
+$kendo-upload-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(inverse) 13%, transparent) !default;
 
 $kendo-upload-files-list-margin: calc( -1 * #{k-spacing(2)} ) !default;
 

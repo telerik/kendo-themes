@@ -2,8 +2,10 @@ import { ActionButtons } from '../action-buttons';
 import { Button } from '../button';
 import { MenuButton } from '../menu-button';
 import { classNames, optionClassNames, ThemeColor } from '../misc';
+import { WindowContent } from './window-content.spec';
 
 import { KendoComponent } from '../_types/component';
+import { WINDOW_FOLDER_NAME, WINDOW_MODULE_NAME } from './constants';
 export const WINDOW_CLASSNAME = `k-window`;
 
 const states = [];
@@ -81,14 +83,13 @@ export const Window: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTML
                     </>}
                 </div>
             }
-            <div className={classNames(
-                "k-window-content",
+            <WindowContent className={classNames(
                 {
                     "k-hidden": minimized
                 }
             )}>
                 {props.children}
-            </div>
+            </WindowContent>
             {actionButtons &&
                 <ActionButtons alignment={actionButtonsAlign} className="k-window-actions">
                     {actionButtons}
@@ -102,5 +103,7 @@ Window.states = states;
 Window.options = options;
 Window.className = WINDOW_CLASSNAME;
 Window.defaultOptions = defaultOptions;
+Window.moduleName = WINDOW_MODULE_NAME;
+Window.folderName = WINDOW_FOLDER_NAME;
 
 export default Window;
