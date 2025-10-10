@@ -69,10 +69,6 @@
         display: flex;
         flex-direction: row;
         position: relative;
-
-        select.k-dropdown-list {
-            width: $kendo-pager-md-dropdown-width;
-        }
     }
     .k-pager-numbers {
         display: flex;
@@ -155,22 +151,20 @@
                     min-width: $_item-min-width;
                 }
 
-                .k-pager-input,
-                > select.k-dropdown-list {
+                .k-pager-input {
                     margin-inline-start: $_item-group-spacing;
                     margin-inline-end: $_item-group-spacing;
-                }
-            }
-
-            .k-pager-sizes {
-                .k-dropdown-list,
-                > select {
-                    width: $_pager-dropdown-width;
                 }
             }
         }
     }
 
+    .k-pager-sizes {
+        .k-dropdownlist {
+            min-width: $kendo-pager-dropdown-width;
+            width: fit-content;
+        }
+    }
 }
 
 

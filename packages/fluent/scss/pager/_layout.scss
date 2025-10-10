@@ -11,13 +11,6 @@
         @include border-radius( $kendo-pager-item-border-radius );
     }
 
-    .k-pager-numbers-wrap {
-
-        select.k-dropdown-list {
-            width: $kendo-pager-dropdown-width;
-        }
-    }
-
     .k-pager-numbers {
         .k-button {
             border-radius: $kendo-pager-item-border-radius;
@@ -34,13 +27,6 @@
 
         .k-pager-numbers .k-button-#{$size} {
             padding-inline: $_padding-y;
-        }
-    }
-
-    .k-pager-sizes {
-        .k-dropdown-list,
-        > select {
-            width: $kendo-pager-dropdown-width;
         }
     }
 }
