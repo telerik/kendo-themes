@@ -158,6 +158,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-header-min-width</td>
+    <td>Calculation</td>
+    <td><code>calc(#{$kendo-calendar-cell-size} * 8)</code></td>
+    <td><code>calc(var(--kendo-calendar-cell-size, 32px) * 8)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Calendar header.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-header-bg</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-header-bg, k-color(surface) )</code></td>

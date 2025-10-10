@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-stepper-font-size, var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container">
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Stepper.</div></div>
     </td>
 </tr>
 <tr>
@@ -54,7 +54,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-stepper-font-family, var(--kendo-font-family, inherit))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container">
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Stepper.</div></div>
     </td>
 </tr>
 <tr>
@@ -64,7 +64,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-stepper-line-height, var(--kendo-line-height, normal))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container">
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Stepper.</div></div>
     </td>
 </tr>
 <tr>

@@ -727,6 +727,136 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid treeview.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-pivotgrid-alt-bg</td>
+    <td>String</td>
+    <td><code>$kendo-grid-header-bg</code></td>
+    <td><code>var(--kendo-color-surface, #F7F3FA)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pivotgrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-alt-text</td>
+    <td>String</td>
+    <td><code>$kendo-grid-header-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Pivotgrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-chrome-border</td>
+    <td>String</td>
+    <td><code>$kendo-grid-border</code></td>
+    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Pivotgrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-container-bg</td>
+    <td>String</td>
+    <td><code>$kendo-grid-header-bg</code></td>
+    <td><code>var(--kendo-color-surface, #F7F3FA)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pivotgrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-row-headers-bg</td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pivotgrid row.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-button-bg</td>
+    <td>String</td>
+    <td><code>k-color(base-subtle)</code></td>
+    <td><code>var(--kendo-color-base-subtle, #DED8E0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pivotgrid button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-button-text</td>
+    <td>String</td>
+    <td><code>$kendo-button-text</code></td>
+    <td><code>var(--kendo-color-on-base, #4A4459)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Pivotgrid button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-button-hover-bg</td>
+    <td>String</td>
+    <td><code>k-color(base-subtle-hover)</code></td>
+    <td><code>var(--kendo-color-base-subtle-hover, #E2DDE5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Pivotgrid button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-button-hover-text</td>
+    <td>String</td>
+    <td><code>$kendo-button-text</code></td>
+    <td><code>var(--kendo-color-on-base, #4A4459)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Pivotgrid button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-button-active-bg</td>
+    <td>String</td>
+    <td><code>k-color(base-subtle-active)</code></td>
+    <td><code>var(--kendo-color-base-subtle-active, #EAE5EC)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Pivotgrid button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-button-active-text</td>
+    <td>String</td>
+    <td><code>$kendo-button-text</code></td>
+    <td><code>var(--kendo-color-on-base, #4A4459)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the active Pivotgrid button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-remove-bg</td>
+    <td>String</td>
+    <td><code>$kendo-pivotgrid-button-text</code></td>
+    <td><code>var(--kendo-color-on-base, #4A4459)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pivotgrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-remove-text</td>
+    <td>String</td>
+    <td><code>$kendo-pivotgrid-button-bg</code></td>
+    <td><code>var(--kendo-color-base-subtle, #DED8E0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Pivotgrid.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

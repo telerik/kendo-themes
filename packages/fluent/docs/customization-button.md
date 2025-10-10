@@ -188,6 +188,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-button-sm-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( ( #{$kendo-button-sm-line-height} * 1em ) + ( #{$kendo-button-sm-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) )</code></td>
+    <td><code>calc(var(--kendo-line-height-lg, normal) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sm calc size of the Button button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) )</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The md calc size of the Button button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( ( #{$kendo-button-lg-line-height} * 1em ) + ( #{$kendo-button-lg-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) )</code></td>
+    <td><code>calc(var(--kendo-line-height-sm, normal) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The lg calc size of the Button button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-button-inner-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) )</code></td>
@@ -195,6 +225,36 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated inner height of the Button excluding the border width.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-sm-inner-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( ( #{$kendo-button-sm-line-height} * 1em ) + ( #{$kendo-button-sm-padding-y} * 2 ) )</code></td>
+    <td><code>calc(var(--kendo-line-height-lg, normal) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) + 1px) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sm inner calc size of the Button button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-inner-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) )</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The md inner calc size of the Button button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-inner-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( ( #{$kendo-button-lg-line-height} * 1em ) + ( #{$kendo-button-lg-padding-y} * 2 ) )</code></td>
+    <td><code>calc(var(--kendo-line-height-sm, normal) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2, 0.5rem)) + 1px) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The lg inner calc size of the Button button.</div></div>
     </td>
 </tr>
 <tr>

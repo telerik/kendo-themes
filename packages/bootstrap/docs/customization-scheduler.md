@@ -787,6 +787,16 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The block inset of the Scheduler marquee labels.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-scheduler-header-bg</td>
+    <td>String</td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler header.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

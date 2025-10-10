@@ -218,6 +218,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-button-md-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) )</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The md calc size of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( ( #{$kendo-button-lg-line-height} * 1em ) + ( #{$kendo-button-lg-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) )</code></td>
+    <td><code>calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + 1px * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The lg calc size of the Button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-button-inner-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( ( #{$kendo-button-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) )</code></td>
@@ -225,6 +245,36 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated inner height of the Button excluding the border width.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-sm-inner-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( ( #{$kendo-button-sm-line-height} * 1em ) + ( #{$kendo-button-sm-padding-y} * 2 ) )</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-0\.5, 0.125rem) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sm inner calc size of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-inner-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) )</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The md inner calc size of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-inner-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( ( #{$kendo-button-lg-line-height} * 1em ) + ( #{$kendo-button-lg-padding-y} * 2 ) )</code></td>
+    <td><code>calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-spacing-2, 0.5rem) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The lg inner calc size of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -546,6 +596,246 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the pulsing animation for the generating Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-gradient</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button gradient of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-shade-function</td>
+    <td>String</td>
+    <td><code>"k-try-shade"</code></td>
+    <td><code>"k-try-shade"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shade function of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-shade-text-amount</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shade text amount of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-shade-bg-amount</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shade bg amount of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-shade-border-amount</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shade border amount of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-hover-shade-text-amount</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button hover shade text amount of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-hover-shade-bg-amount</td>
+    <td>Number</td>
+    <td><code>.5</code></td>
+    <td><code>0.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button hover shade bg amount of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-hover-shade-border-amount</td>
+    <td>Number</td>
+    <td><code>.5</code></td>
+    <td><code>0.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button hover shade border amount of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-active-shade-text-amount</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button active shade text amount of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-active-shade-bg-amount</td>
+    <td>Number</td>
+    <td><code>1.5</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button active shade bg amount of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-active-shade-border-amount</td>
+    <td>Number</td>
+    <td><code>1.5</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button active shade border amount of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-shadow</td>
+    <td>Bool</td>
+    <td><code>true</code></td>
+    <td><code>true</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-shadow-blur</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow blur of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-shadow-spread</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow spread of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-shadow-opacity</td>
+    <td>Number</td>
+    <td><code>.3</code></td>
+    <td><code>0.3</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow opacity of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-outline-button-shadow</td>
+    <td>Bool</td>
+    <td><code>true</code></td>
+    <td><code>true</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-outline-button-shadow-blur</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow blur of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-outline-button-shadow-spread</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow spread of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-outline-button-shadow-opacity</td>
+    <td>Number</td>
+    <td><code>.3</code></td>
+    <td><code>0.3</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow opacity of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-button-shadow</td>
+    <td>Bool</td>
+    <td><code>true</code></td>
+    <td><code>true</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-button-shadow-blur</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow blur of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-button-shadow-spread</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow spread of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-button-shadow-opacity</td>
+    <td>Number</td>
+    <td><code>.3</code></td>
+    <td><code>0.3</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow opacity of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-clear-button-focus-opacity</td>
+    <td>Number</td>
+    <td><code>.1</code></td>
+    <td><code>0.1</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button focus opacity of the Button.</div></div>
     </td>
 </tr>
 <tr>
