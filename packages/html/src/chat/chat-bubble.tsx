@@ -33,7 +33,7 @@ export const ChatBubble = (
                 <div className="k-typing-indicator">
                     <span></span><span></span><span></span>
                 </div>
-                : content && <span className="k-chat-bubble-text">{content}</span>
+                : content
             }
             {files}
         </Bubble>

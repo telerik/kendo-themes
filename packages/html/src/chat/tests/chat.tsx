@@ -1,4 +1,4 @@
-import { ChatHeader, ChatMessage, ChatNormal, ChatTimestamp, ChatMessageGroup } from '..';
+import { ChatHeader, ChatMessage, ChatNormal, ChatTimestamp, ChatMessageGroup, ChatEvent } from '..';
 
 
 const styles = `
@@ -88,7 +88,7 @@ export default () =>(
             </section>
 
             <span>Chat with typing indicator</span>
-            <span></span>
+            <span>Chat with event</span>
             <span></span>
 
             <section>
@@ -100,6 +100,13 @@ export default () =>(
                     <ChatMessageGroup>
                         <ChatMessage typing />
                     </ChatMessageGroup>
+                </ChatNormal>
+            </section>
+            <section>
+                <ChatNormal>
+                    <ChatTimestamp>Day, Month 7, 2023</ChatTimestamp>
+                    <ChatEvent></ChatEvent>
+                    <ChatTimestamp>Day, Month 7, 2023</ChatTimestamp>
                 </ChatNormal>
             </section>
 

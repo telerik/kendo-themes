@@ -59,12 +59,12 @@ export default () =>(
                         <ChatMessage />
                     </ChatMessageGroup>
                     <ChatMessageGroup type="sender" avatar={null} author={null}>
-                        <ChatMessage text={
+                        <ChatMessage
+                            text="I really appreciate it. I’ve been trying to diversify, but I’m not sure if I’m on the right track. Would love your input"
+                            content={
                             <>
-                                <ChatMessageReference content={"I really appreciate it. I’ve been trying to diversify, but I’m not sure if I’m on the right track. Would love your input"} />
-                                I really appreciate it. I’ve been trying to diversify, but I’m not sure if I’m on the right track. Would love your input
-                            </>
-                        } />
+                                <ChatMessageReference content={"I really appreciate it. I’ve been trying to diversify, but I’m not sure if I’m on the right track. Would love your input"} /></>
+                            } />
                     </ChatMessageGroup>
                 </ChatNormal>
             </section>
@@ -109,12 +109,12 @@ export default () =>(
                         <ChatMessage />
                     </ChatMessageGroup>
                     <ChatMessageGroup type="sender" avatar={null} author={null}>
-                        <ChatMessage text={
+                        <ChatMessage
+                            text="I really appreciate it. I’ve been trying to diversify, but I’m not sure if I’m on the right track. Would love your input"
+                            content={
                             <>
-                                <ChatMessageReference type="sender" content={"I really appreciate it. I’ve been trying to diversify, but I’m not sure if I’m on the right track. Would love your input"} />
-                                I really appreciate it. I’ve been trying to diversify, but I’m not sure if I’m on the right track. Would love your input
-                            </>
-                        } />
+                                <ChatMessageReference type="sender" content={"I really appreciate it. I’ve been trying to diversify, but I’m not sure if I’m on the right track. Would love your input"} /></>
+                            } />
                     </ChatMessageGroup>
                 </ChatNormal>
             </section>

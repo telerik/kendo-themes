@@ -1,7 +1,7 @@
 import { SuggestionGroup, Suggestion } from "..";
 
 export const SuggestionGroupWrap = (props: any) => (
-    <SuggestionGroup scrollable={false} children={(
+    <SuggestionGroup layout="wrap" children={(
         <>
             <Suggestion text="Suggestion" />
             <Suggestion text="Suggestion" />
