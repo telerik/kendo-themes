@@ -10,15 +10,20 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
-    <style>
-        #test-area {
-            grid-template-columns: 400px 300px;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-2">
+    <style></style>
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
         <span>Suggestion - horizontal scroll (Default)</span>
+        <span>Suggestion - horizontal scroll with buttons</span>
         <span>Suggestions - wrap</span>
+        <section>
+            <div class="k-suggestion-group k-suggestion-group-scrollable">
+                <span class="k-suggestion k-suggestion-base">Suggestion</span>
+                <span class="k-suggestion k-hover k-suggestion-base">Hover</span>
+                <span class="k-suggestion k-focus k-suggestion-base">Focus</span>
+                <span class="k-suggestion k-active k-suggestion-base">Active</span>
+                <span class="k-suggestion k-suggestion-base">Suggestion with very very very very very very very very very very very very very very very long text</span>
+            </div>
+        </section>
         <section>
             <div class="k-suggestion-scrollwrap">
                 <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
@@ -54,6 +59,15 @@
             </div>
         </section>
         <section>
+            <div class="k-suggestion-group k-suggestion-group-scrollable">
+                <span class="k-suggestion k-suggestion-primary">Suggestion</span>
+                <span class="k-suggestion k-hover k-suggestion-primary">Hover</span>
+                <span class="k-suggestion k-focus k-suggestion-primary">Focus</span>
+                <span class="k-suggestion k-active k-suggestion-primary">Active</span>
+                <span class="k-suggestion k-suggestion-primary">Suggestion with very very very very very very very very very very very very very very very long text</span>
+            </div>
+        </section>
+        <section>
             <div class="k-suggestion-scrollwrap">
                 <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left">
@@ -85,6 +99,15 @@
                 <span class="k-suggestion k-focus k-suggestion-primary">Focus</span>
                 <span class="k-suggestion k-active k-suggestion-primary">Active</span>
                 <span class="k-suggestion k-suggestion-primary">Suggestion with very very very very very very very very very very very very very very very long text</span>
+            </div>
+        </section>
+        <section>
+            <div class="k-suggestion-group k-suggestion-group-scrollable">
+                <span class="k-suggestion k-suggestion-secondary">Suggestion</span>
+                <span class="k-suggestion k-hover k-suggestion-secondary">Hover</span>
+                <span class="k-suggestion k-focus k-suggestion-secondary">Focus</span>
+                <span class="k-suggestion k-active k-suggestion-secondary">Active</span>
+                <span class="k-suggestion k-suggestion-secondary">Suggestion with very very very very very very very very very very very very very very very long text</span>
             </div>
         </section>
         <section>
