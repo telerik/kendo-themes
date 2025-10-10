@@ -74,8 +74,14 @@ $kendo-editor-filebrowser-tiles-padding-x: k-spacing(4) !default;
 /// @group editor
 $kendo-editor-filebrowser-tiles-padding-y: k-spacing(2) !default;
 
+/// The text color of the Editor cell.
+/// @group editor
 $kendo-editor-ct-cell-text: k-color(on-primary) !default;
+/// The background color of the Editor cell.
+/// @group editor
 $kendo-editor-ct-cell-bg: k-color(primary) !default;
+/// The border color of the Editor cell.
+/// @group editor
 $kendo-editor-ct-cell-border: k-color(primary) !default;
 
 /// The padding of the Editor content.

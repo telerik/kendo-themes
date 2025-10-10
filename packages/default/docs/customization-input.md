@@ -48,6 +48,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-input-border-height</td>
+    <td>Number</td>
+    <td><code>( $kendo-input-border-width * 2 )</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Input input.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-input-border-radius</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -215,6 +225,26 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Input.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-md-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( ( #{$kendo-input-md-line-height} * 1em ) + ( #{$kendo-input-md-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) )</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + (2px))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The md calc size of the Input input.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-lg-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( ( #{$kendo-input-lg-line-height} * 1em ) + ( #{$kendo-input-lg-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) )</code></td>
+    <td><code>calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + (2px))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The lg calc size of the Input input.</div></div>
     </td>
 </tr>
 <tr>
@@ -790,6 +820,36 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the invalid Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-use-input-button-width</td>
+    <td>Bool</td>
+    <td><code>true</code></td>
+    <td><code>true</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Input button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-use-input-spinner-width</td>
+    <td>Bool</td>
+    <td><code>true</code></td>
+    <td><code>true</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Input input.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-use-input-spinner-icon-offset</td>
+    <td>Bool</td>
+    <td><code>false</code></td>
+    <td><code>false</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spinner offset of the Input icon.</div></div>
     </td>
 </tr>
 </tbody>

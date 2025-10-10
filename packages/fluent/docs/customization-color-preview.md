@@ -117,6 +117,26 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the color preview when no color is selected.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-color-preview-no-color-image</td>
+    <td>String</td>
+    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' version='1.1'><line x1='0' x2='20' y1='0' y2='20' stroke='#{$kendo-color-preview-no-color-text}' stroke-width='1'/></svg>") )</code></td>
+    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' version='1.1'%3e%3cline x1='0' x2='20' y1='0' y2='20' stroke='var%28--kendo-color-preview-no-color-text, var%28--kendo-color-error-on-surface, %23c50f1f%29%29' stroke-width='1'/%3e%3c/svg%3e")</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The preview no color image of the ColorPreview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-preview-transparent-color-image</td>
+    <td>String</td>
+    <td><code>url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAuSURBVHgBxYyxDQAwDMJIL+YT+DjtzFRliUfLcklqBCRT4eCTxbD6kdL2/LgYXqpvCbs3kBv/AAAAAElFTkSuQmCC")</code></td>
+    <td><code>url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAuSURBVHgBxYyxDQAwDMJIL+YT+DjtzFRliUfLcklqBCRT4eCTxbD6kdL2/LgYXqpvCbs3kBv/AAAAAElFTkSuQmCC")</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The preview transparent color image of the ColorPreview.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

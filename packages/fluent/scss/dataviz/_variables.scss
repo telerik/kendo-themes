@@ -4,83 +4,189 @@
 /// The first base series color and its light and dark shades.
 /// @group charts
 $kendo-series-a: k-color(series-a) !default;
+/// The a dark of the Dataviz.
+/// @group dataviz
 $kendo-series-a-dark: k-color(series-a-bold) !default;
+/// The a darker of the Dataviz.
+/// @group dataviz
 $kendo-series-a-darker: k-color(series-a-bolder) !default;
+/// The a light of the Dataviz.
+/// @group dataviz
 $kendo-series-a-light: k-color(series-a-subtle) !default;
+/// The a lighter of the Dataviz.
+/// @group dataviz
 $kendo-series-a-lighter: k-color(series-a-subtler) !default;
 
 /// The second base series color and its light and dark shades.
 /// @group charts
 $kendo-series-b: k-color(series-b) !default;
+/// The b dark of the Dataviz.
+/// @group dataviz
 $kendo-series-b-dark: k-color(series-b-bold) !default;
+/// The b darker of the Dataviz.
+/// @group dataviz
 $kendo-series-b-darker: k-color(series-b-bolder) !default;
+/// The b light of the Dataviz.
+/// @group dataviz
 $kendo-series-b-light: k-color(series-b-subtle) !default;
+/// The b lighter of the Dataviz.
+/// @group dataviz
 $kendo-series-b-lighter: k-color(series-b-subtler) !default;
 
 /// The third base series color and its light and dark shades.
 /// @group charts
 $kendo-series-c: k-color(series-c) !default;
+/// The c dark of the Dataviz.
+/// @group dataviz
 $kendo-series-c-dark: k-color(series-c-bold) !default;
+/// The c darker of the Dataviz.
+/// @group dataviz
 $kendo-series-c-darker: k-color(series-c-bolder) !default;
+/// The c light of the Dataviz.
+/// @group dataviz
 $kendo-series-c-light: k-color(series-c-subtle) !default;
+/// The c lighter of the Dataviz.
+/// @group dataviz
 $kendo-series-c-lighter: k-color(series-c-subtler) !default;
 
 /// The fourth base series color and its light and dark shades.
 /// @group charts
 $kendo-series-d: k-color(series-d) !default;
+/// The d dark of the Dataviz.
+/// @group dataviz
 $kendo-series-d-dark: k-color(series-d-bold) !default;
+/// The d darker of the Dataviz.
+/// @group dataviz
 $kendo-series-d-darker: k-color(series-d-bolder) !default;
+/// The d light of the Dataviz.
+/// @group dataviz
 $kendo-series-d-light: k-color(series-d-subtle) !default;
+/// The d lighter of the Dataviz.
+/// @group dataviz
 $kendo-series-d-lighter: k-color(series-d-subtler) !default;
 
 /// The fifth base series color and its light and dark shades.
 /// @group charts
 $kendo-series-e: k-color(series-e) !default;
+/// The e dark of the Dataviz.
+/// @group dataviz
 $kendo-series-e-dark: k-color(series-e-bold) !default;
+/// The e darker of the Dataviz.
+/// @group dataviz
 $kendo-series-e-darker: k-color(series-e-bolder) !default;
+/// The e light of the Dataviz.
+/// @group dataviz
 $kendo-series-e-light: k-color(series-e-subtle) !default;
+/// The e lighter of the Dataviz.
+/// @group dataviz
 $kendo-series-e-lighter: k-color(series-e-subtler) !default;
 
 /// The sixth base series color and its light and dark shades.
 /// @group charts
 $kendo-series-f: k-color(series-f) !default;
+/// The f dark of the Dataviz.
+/// @group dataviz
 $kendo-series-f-dark: k-color(series-f-bold) !default;
+/// The f darker of the Dataviz.
+/// @group dataviz
 $kendo-series-f-darker: k-color(series-f-bolder) !default;
+/// The f light of the Dataviz.
+/// @group dataviz
 $kendo-series-f-light: k-color(series-f-subtle) !default;
+/// The f lighter of the Dataviz.
+/// @group dataviz
 $kendo-series-f-lighter: k-color(series-f-subtler) !default;
 
 /// The series colors in order:
 /// base, light, dark, lighter, darker
 /// @group charts
 $kendo-series-1: $kendo-series-a !default;
+/// The 2 of the Dataviz.
+/// @group dataviz
 $kendo-series-2: $kendo-series-b !default;
+/// The 3 of the Dataviz.
+/// @group dataviz
 $kendo-series-3: $kendo-series-c !default;
+/// The 4 of the Dataviz.
+/// @group dataviz
 $kendo-series-4: $kendo-series-d !default;
+/// The 5 of the Dataviz.
+/// @group dataviz
 $kendo-series-5: $kendo-series-e !default;
+/// The 6 of the Dataviz.
+/// @group dataviz
 $kendo-series-6: $kendo-series-f !default;
+/// The 7 of the Dataviz.
+/// @group dataviz
 $kendo-series-7: $kendo-series-a-light !default;
+/// The 8 of the Dataviz.
+/// @group dataviz
 $kendo-series-8: $kendo-series-b-light !default;
+/// The 9 of the Dataviz.
+/// @group dataviz
 $kendo-series-9: $kendo-series-c-light !default;
+/// The 10 of the Dataviz.
+/// @group dataviz
 $kendo-series-10: $kendo-series-d-light !default;
+/// The 11 of the Dataviz.
+/// @group dataviz
 $kendo-series-11: $kendo-series-e-light !default;
+/// The 12 of the Dataviz.
+/// @group dataviz
 $kendo-series-12: $kendo-series-f-light !default;
+/// The 13 of the Dataviz.
+/// @group dataviz
 $kendo-series-13: $kendo-series-a-dark !default;
+/// The 14 of the Dataviz.
+/// @group dataviz
 $kendo-series-14: $kendo-series-b-dark !default;
+/// The 15 of the Dataviz.
+/// @group dataviz
 $kendo-series-15: $kendo-series-c-dark !default;
+/// The 16 of the Dataviz.
+/// @group dataviz
 $kendo-series-16: $kendo-series-d-dark !default;
+/// The 17 of the Dataviz.
+/// @group dataviz
 $kendo-series-17: $kendo-series-e-dark !default;
+/// The 18 of the Dataviz.
+/// @group dataviz
 $kendo-series-18: $kendo-series-f-dark !default;
+/// The 19 of the Dataviz.
+/// @group dataviz
 $kendo-series-19: $kendo-series-a-lighter !default;
+/// The 20 of the Dataviz.
+/// @group dataviz
 $kendo-series-20: $kendo-series-b-lighter !default;
+/// The 21 of the Dataviz.
+/// @group dataviz
 $kendo-series-21: $kendo-series-c-lighter !default;
+/// The 22 of the Dataviz.
+/// @group dataviz
 $kendo-series-22: $kendo-series-d-lighter !default;
+/// The 23 of the Dataviz.
+/// @group dataviz
 $kendo-series-23: $kendo-series-e-lighter !default;
+/// The 24 of the Dataviz.
+/// @group dataviz
 $kendo-series-24: $kendo-series-f-lighter !default;
+/// The 25 of the Dataviz.
+/// @group dataviz
 $kendo-series-25: $kendo-series-a-darker !default;
+/// The 26 of the Dataviz.
+/// @group dataviz
 $kendo-series-26: $kendo-series-b-darker !default;
+/// The 27 of the Dataviz.
+/// @group dataviz
 $kendo-series-27: $kendo-series-c-darker !default;
+/// The 28 of the Dataviz.
+/// @group dataviz
 $kendo-series-28: $kendo-series-d-darker !default;
+/// The 29 of the Dataviz.
+/// @group dataviz
 $kendo-series-29: $kendo-series-e-darker !default;
+/// The 30 of the Dataviz.
+/// @group dataviz
 $kendo-series-30: $kendo-series-f-darker !default;
 
 /// The border width of the chart component.

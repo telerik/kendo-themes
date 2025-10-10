@@ -23,13 +23,25 @@ $kendo-table-font-size: null !default;
 /// @group table
 $kendo-table-line-height: null !default;
 
+/// The horizontal padding of the Table cell.
+/// @group table
 $kendo-table-sm-cell-padding-x: k-spacing(1) !default;
+/// The vertical padding of the Table cell.
+/// @group table
 $kendo-table-sm-cell-padding-y: k-spacing(1) !default;
 
+/// The horizontal padding of the Table cell.
+/// @group table
 $kendo-table-md-cell-padding-x: k-spacing(2) !default;
+/// The vertical padding of the Table cell.
+/// @group table
 $kendo-table-md-cell-padding-y: k-spacing(2) !default;
 
+/// The horizontal padding of the Table cell.
+/// @group table
 $kendo-table-lg-cell-padding-x: k-spacing(2) !default;
+/// The vertical padding of the Table cell.
+/// @group table
 $kendo-table-lg-cell-padding-y: k-spacing(2.5) !default;
 
 /// The sizes of the table.

@@ -126,6 +126,8 @@ $kendo-loading-opacity: .3 !default;
 /// @group loading
 $kendo-zindex-loading: 100 !default;
 
+/// The theme colors of the Loader.
+/// @group loader
 $kendo-loader-theme-colors: (
     "primary": k-color(primary),
     "secondary": k-color(secondary),

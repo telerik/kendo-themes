@@ -7,93 +7,217 @@
 /// The first base series color and its light and dark shades.
 /// @group charts
 $kendo-series-a: k-color(series-a) !default;
+/// The a dark of the Dataviz.
+/// @group dataviz
 $kendo-series-a-dark: k-color(series-a-bold) !default;
+/// The a darker of the Dataviz.
+/// @group dataviz
 $kendo-series-a-darker: k-color(series-a-bolder) !default;
+/// The a light of the Dataviz.
+/// @group dataviz
 $kendo-series-a-light: k-color(series-a-subtle) !default;
+/// The a lighter of the Dataviz.
+/// @group dataviz
 $kendo-series-a-lighter: k-color(series-a-subtler) !default;
 
 /// The second base series color and its light and dark shades.
 /// @group charts
 $kendo-series-b: k-color(series-b) !default;
+/// The b dark of the Dataviz.
+/// @group dataviz
 $kendo-series-b-dark: k-color(series-b-bold) !default;
+/// The b darker of the Dataviz.
+/// @group dataviz
 $kendo-series-b-darker: k-color(series-b-bolder) !default;
+/// The b light of the Dataviz.
+/// @group dataviz
 $kendo-series-b-light: k-color(series-b-subtle) !default;
+/// The b lighter of the Dataviz.
+/// @group dataviz
 $kendo-series-b-lighter: k-color(series-b-subtler) !default;
 
 /// The third base series color and its light and dark shades.
 /// @group charts
 $kendo-series-c: k-color(series-c) !default;
+/// The c dark of the Dataviz.
+/// @group dataviz
 $kendo-series-c-dark: k-color(series-c-bold) !default;
+/// The c darker of the Dataviz.
+/// @group dataviz
 $kendo-series-c-darker: k-color(series-c-bolder) !default;
+/// The c light of the Dataviz.
+/// @group dataviz
 $kendo-series-c-light: k-color(series-c-subtle) !default;
+/// The c lighter of the Dataviz.
+/// @group dataviz
 $kendo-series-c-lighter: k-color(series-c-subtler) !default;
 
 /// The fourth base series color and its light and dark shades.
 /// @group charts
 $kendo-series-d: k-color(series-d) !default;
+/// The d dark of the Dataviz.
+/// @group dataviz
 $kendo-series-d-dark: k-color(series-d-bold) !default;
+/// The d darker of the Dataviz.
+/// @group dataviz
 $kendo-series-d-darker: k-color(series-d-bolder) !default;
+/// The d light of the Dataviz.
+/// @group dataviz
 $kendo-series-d-light: k-color(series-d-subtle) !default;
+/// The d lighter of the Dataviz.
+/// @group dataviz
 $kendo-series-d-lighter: k-color(series-d-subtler) !default;
 
 /// The fifth base series color and its light and dark shades.
 /// @group charts
 $kendo-series-e: k-color(series-e) !default;
+/// The e dark of the Dataviz.
+/// @group dataviz
 $kendo-series-e-dark: k-color(series-e-bold) !default;
+/// The e darker of the Dataviz.
+/// @group dataviz
 $kendo-series-e-darker: k-color(series-e-bolder) !default;
+/// The e light of the Dataviz.
+/// @group dataviz
 $kendo-series-e-light: k-color(series-e-subtle) !default;
+/// The e lighter of the Dataviz.
+/// @group dataviz
 $kendo-series-e-lighter: k-color(series-e-subtler) !default;
 
 /// The sixth base series color and its light and dark shades.
 /// @group charts
 $kendo-series-f: k-color(series-f) !default;
+/// The f dark of the Dataviz.
+/// @group dataviz
 $kendo-series-f-dark: k-color(series-f-bold) !default;
+/// The f darker of the Dataviz.
+/// @group dataviz
 $kendo-series-f-darker: k-color(series-f-bolder) !default;
+/// The f light of the Dataviz.
+/// @group dataviz
 $kendo-series-f-light: k-color(series-f-subtle) !default;
+/// The f lighter of the Dataviz.
+/// @group dataviz
 $kendo-series-f-lighter: k-color(series-f-subtler) !default;
 
 /// The series colors in order:
 /// base, light, dark, lighter, darker
 /// @group charts
 $kendo-series-1: $kendo-series-a !default;
+/// The 2 of the Dataviz.
+/// @group dataviz
 $kendo-series-2: $kendo-series-b !default;
+/// The 3 of the Dataviz.
+/// @group dataviz
 $kendo-series-3: $kendo-series-c !default;
+/// The 4 of the Dataviz.
+/// @group dataviz
 $kendo-series-4: $kendo-series-d !default;
+/// The 5 of the Dataviz.
+/// @group dataviz
 $kendo-series-5: $kendo-series-e !default;
+/// The 6 of the Dataviz.
+/// @group dataviz
 $kendo-series-6: $kendo-series-f !default;
+/// The 7 of the Dataviz.
+/// @group dataviz
 $kendo-series-7: $kendo-series-a-light !default;
+/// The 8 of the Dataviz.
+/// @group dataviz
 $kendo-series-8: $kendo-series-b-light !default;
+/// The 9 of the Dataviz.
+/// @group dataviz
 $kendo-series-9: $kendo-series-c-light !default;
+/// The 10 of the Dataviz.
+/// @group dataviz
 $kendo-series-10: $kendo-series-d-light !default;
+/// The 11 of the Dataviz.
+/// @group dataviz
 $kendo-series-11: $kendo-series-e-light !default;
+/// The 12 of the Dataviz.
+/// @group dataviz
 $kendo-series-12: $kendo-series-f-light !default;
+/// The 13 of the Dataviz.
+/// @group dataviz
 $kendo-series-13: $kendo-series-a-dark !default;
+/// The 14 of the Dataviz.
+/// @group dataviz
 $kendo-series-14: $kendo-series-b-dark !default;
+/// The 15 of the Dataviz.
+/// @group dataviz
 $kendo-series-15: $kendo-series-c-dark !default;
+/// The 16 of the Dataviz.
+/// @group dataviz
 $kendo-series-16: $kendo-series-d-dark !default;
+/// The 17 of the Dataviz.
+/// @group dataviz
 $kendo-series-17: $kendo-series-e-dark !default;
+/// The 18 of the Dataviz.
+/// @group dataviz
 $kendo-series-18: $kendo-series-f-dark !default;
+/// The 19 of the Dataviz.
+/// @group dataviz
 $kendo-series-19: $kendo-series-a-lighter !default;
+/// The 20 of the Dataviz.
+/// @group dataviz
 $kendo-series-20: $kendo-series-b-lighter !default;
+/// The 21 of the Dataviz.
+/// @group dataviz
 $kendo-series-21: $kendo-series-c-lighter !default;
+/// The 22 of the Dataviz.
+/// @group dataviz
 $kendo-series-22: $kendo-series-d-lighter !default;
+/// The 23 of the Dataviz.
+/// @group dataviz
 $kendo-series-23: $kendo-series-e-lighter !default;
+/// The 24 of the Dataviz.
+/// @group dataviz
 $kendo-series-24: $kendo-series-f-lighter !default;
+/// The 25 of the Dataviz.
+/// @group dataviz
 $kendo-series-25: $kendo-series-a-darker !default;
+/// The 26 of the Dataviz.
+/// @group dataviz
 $kendo-series-26: $kendo-series-b-darker !default;
+/// The 27 of the Dataviz.
+/// @group dataviz
 $kendo-series-27: $kendo-series-c-darker !default;
+/// The 28 of the Dataviz.
+/// @group dataviz
 $kendo-series-28: $kendo-series-d-darker !default;
+/// The 29 of the Dataviz.
+/// @group dataviz
 $kendo-series-29: $kendo-series-e-darker !default;
+/// The 30 of the Dataviz.
+/// @group dataviz
 $kendo-series-30: $kendo-series-f-darker !default;
 
+/// The width of the border around the Dataviz.
+/// @group dataviz
 $kendo-chart-border-width: 0px !default;
+/// The font family of the Dataviz.
+/// @group dataviz
 $kendo-chart-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the Dataviz.
+/// @group dataviz
 $kendo-chart-font-size: var( --kendo-font-size, inherit ) !default;
+/// The height of the Dataviz.
+/// @group dataviz
 $kendo-chart-line-height: var( --kendo-line-height, normal ) !default;
+/// The font size of the Dataviz.
+/// @group dataviz
 $kendo-chart-tooltip-font-size: calc( #{$kendo-font-size} * .929) !default;
+/// The font size of the Dataviz label.
+/// @group dataviz
 $kendo-chart-label-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// The font size of the Dataviz title.
+/// @group dataviz
 $kendo-chart-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
+/// The font size of the Dataviz title.
+/// @group dataviz
 $kendo-chart-pane-title-font-size: $kendo-chart-label-font-size !default;
+/// The font weight of the Dataviz title.
+/// @group dataviz
 $kendo-chart-pane-title-font-weight: var( --kendo-font-weight-normal, normal ) !default;
 
 /// The color of the Chart grid lines (major).
@@ -104,63 +228,141 @@ $kendo-chart-major-lines: color-mix(in srgb, k-color(on-app-surface) 8%, transpa
 /// @group charts
 $kendo-chart-minor-lines: color-mix(in srgb, k-color(on-app-surface) 4%, transparent) !default;
 
+/// The inactive of the Dataviz.
+/// @group dataviz
 $kendo-chart-inactive: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
+/// The opacity of the Dataviz.
+/// @group dataviz
 $kendo-chart-area-opacity: .6 !default;
+/// The opacity of the Dataviz.
+/// @group dataviz
 $kendo-chart-area-inactive-opacity: .1 !default;
+/// The opacity of the Dataviz.
+/// @group dataviz
 $kendo-chart-line-inactive-opacity: .3 !default;
 
+/// The horizontal padding of the Dataviz.
+/// @group dataviz
 $kendo-chart-tooltip-padding-x: k-spacing(2) !default;
+/// The vertical padding of the Dataviz.
+/// @group dataviz
 $kendo-chart-tooltip-padding-y: k-spacing(0.5) !default;
 
+/// The transition of the Dataviz.
+/// @group dataviz
 $kendo-chart-tooltip-transition: left 300ms cubic-bezier(0, .33, .19, 1), top 300ms cubic-bezier(0, .33, .19, 1) !default;
 
+/// The background color of the Dataviz.
+/// @group dataviz
 $kendo-chart-bg: k-color(surface) !default;
+/// The text color of the Dataviz.
+/// @group dataviz
 $kendo-chart-text: k-color(on-app-surface) !default;
+/// The border color of the Dataviz.
+/// @group dataviz
 $kendo-chart-border: k-color(border) !default;
 
+/// The background color of the Dataviz.
+/// @group dataviz
 $kendo-chart-crosshair-background: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
+/// The text color of the Dataviz.
+/// @group dataviz
 $kendo-chart-crosshair-shared-tooltip-color: $kendo-chart-text !default;
+/// The background color of the Dataviz.
+/// @group dataviz
 $kendo-chart-crosshair-shared-tooltip-background: k-color(base-subtle) !default;
+/// The border color of the Dataviz.
+/// @group dataviz
 $kendo-chart-crosshair-shared-tooltip-border: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
 
+/// The background color of the Dataviz.
+/// @group dataviz
 $kendo-chart-notes-background: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
+/// The border color of the Dataviz.
+/// @group dataviz
 $kendo-chart-notes-border: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
+/// The notes lines of the Dataviz.
+/// @group dataviz
 $kendo-chart-notes-lines: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
 
+/// The background color of the invalid Dataviz.
+/// @group dataviz
 $kendo-chart-error-bars-background: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
 
+/// The selection size of the Dataviz handle.
+/// @group dataviz
 $kendo-chart-selection-handle-size: 22px !default;
+/// The text color of the Dataviz.
+/// @group dataviz
 $kendo-chart-selection-border-color: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
+/// The shadow of the Dataviz.
+/// @group dataviz
 $kendo-chart-selection-shadow: inset 0 1px 7px color-mix(in srgb, k-color(on-app-surface) 15%, transparent) !default;
 
+/// The height of the Dataviz title.
+/// @group dataviz
 $kendo-chart-computed-title-height: 0px !default;
 
 // TreeMap
+/// The font family of the Dataviz.
+/// @group dataviz
 $kendo-treemap-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the Dataviz.
+/// @group dataviz
 $kendo-treemap-font-size: var( --kendo-font-size, inherit ) !default;
+/// The height of the Dataviz.
+/// @group dataviz
 $kendo-treemap-line-height: var( --kendo-line-height, normal ) !default;
 
+/// The horizontal padding of the Dataviz.
+/// @group dataviz
 $kendo-treemap-padding-x: k-spacing(2) !default;
+/// The vertical padding of the Dataviz.
+/// @group dataviz
 $kendo-treemap-padding-y: k-spacing(0.5) !default;
 
+/// The text color of the Dataviz.
+/// @group dataviz
 $kendo-treemap-text: k-color(on-app-surface) !default;
+/// The background color of the Dataviz.
+/// @group dataviz
 $kendo-treemap-bg: k-color(surface-alt) !default;
+/// The border color of the Dataviz.
+/// @group dataviz
 $kendo-treemap-border: k-color(border) !default;
 
+/// The text color of the Dataviz title.
+/// @group dataviz
 $kendo-treemap-title-text: k-color(on-app-surface) !default;
+/// The background color of the Dataviz title.
+/// @group dataviz
 $kendo-treemap-title-bg: k-color(app-surface) !default;
+/// The border color of the Dataviz title.
+/// @group dataviz
 $kendo-treemap-title-border: k-color(border) !default;
 
 // Chart Overlay
+/// The background color of the Dataviz overlay.
+/// @group dataviz
 $kendo-chart-overlay-bg: k-color(surface) !default;
 
 // No Data
+/// The font size of the Dataviz.
+/// @group dataviz
 $kendo-chart-no-data-font-size: var( --kendo-font-size-lg, inherit ) !default;
+/// The font weight of the Dataviz.
+/// @group dataviz
 $kendo-chart-no-data-font-weight: var( --kendo-font-weight, normal ) !default;
+/// The vertical padding of the Dataviz.
+/// @group dataviz
 $kendo-chart-no-data-padding-y: k-spacing( 25 ) !default;
 
 // Gauge
+/// The background color of the Dataviz.
+/// @group dataviz
 $kendo-gauge-pointer-bg: k-color(primary) !default;
+/// The background color of the Dataviz track.
+/// @group dataviz
 $kendo-gauge-track-bg: k-color(primary-subtle) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/dataviz/_variables.scss" with (

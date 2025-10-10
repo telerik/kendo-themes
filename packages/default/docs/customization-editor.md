@@ -237,6 +237,36 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Editor content.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-editor-ct-cell-text</td>
+    <td>String</td>
+    <td><code>k-color(on-primary)</code></td>
+    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Editor cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-editor-ct-cell-bg</td>
+    <td>String</td>
+    <td><code>k-color(primary)</code></td>
+    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Editor cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-editor-ct-cell-border</td>
+    <td>String</td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Editor cell.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

@@ -16,12 +16,20 @@ $kendo-signature-maximized-height: var( --kendo-signature-maximized-height, 252p
 /// The horizontal paddings of the signature component.
 /// @group signature
 $kendo-signature-sm-padding-x: var( --kendo-signature-sm-padding-x, k-spacing(1) ) !default;
+/// The horizontal padding of the Signature.
+/// @group signature
 $kendo-signature-md-padding-x: var( --kendo-signature-md-padding-x, k-spacing(1) ) !default;
+/// The horizontal padding of the Signature.
+/// @group signature
 $kendo-signature-lg-padding-x: var( --kendo-signature-lg-padding-x, k-spacing(1) ) !default;
 /// The vertical paddings of the signature component.
 /// @group signature
 $kendo-signature-sm-padding-y: var( --kendo-signature-sm-padding-y, k-spacing(0.5) ) !default;
+/// The vertical padding of the Signature.
+/// @group signature
 $kendo-signature-md-padding-y: var( --kendo-signature-md-padding-y, k-spacing(1) ) !default;
+/// The vertical padding of the Signature.
+/// @group signature
 $kendo-signature-lg-padding-y: var( --kendo-signature-lg-padding-y, k-spacing(1.5) ) !default;
 
 /// The bottom-border width of the row line of the signature component.
@@ -39,7 +47,11 @@ $kendo-signature-line-disabled-color: var( --kendo-signature-line-disabled-color
 /// The width of the row line of the signature component.
 /// @group signature
 $kendo-signature-sm-line-size: var( --kendo-signature-sm-line-size, calc( 100% - 2 * #{$kendo-signature-sm-padding-x} ) ) !default;
+/// The md line size of the Signature.
+/// @group signature
 $kendo-signature-md-line-size: var( --kendo-signature-md-line-size, calc( 100% - 2 * #{$kendo-signature-md-padding-x} ) ) !default;
+/// The lg line size of the Signature.
+/// @group signature
 $kendo-signature-lg-line-size: var( --kendo-signature-lg-line-size, calc( 100% - 2 * #{$kendo-signature-lg-padding-x} ) ) !default;
 /// The bottom offset of the row line of the signature component.
 /// @group signature

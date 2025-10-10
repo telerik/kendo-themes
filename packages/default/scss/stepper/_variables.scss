@@ -39,13 +39,13 @@ $kendo-stepper-inline-content-padding-x: k-spacing(5) !default;
 /// @group stepper
 $kendo-stepper-inline-content-padding-y: k-spacing(2.5) !default;
 
-// The font size of the Stepper.
+/// The font size of the Stepper.
 /// @group stepper
 $kendo-stepper-font-size: var( --kendo-font-size, inherit ) !default;
-// The line height of the Stepper.
+/// The line height of the Stepper.
 /// @group stepper
 $kendo-stepper-line-height: var( --kendo-line-height, normal ) !default;
-// The font family of the Stepper.
+/// The font family of the Stepper.
 /// @group stepper
 $kendo-stepper-font-family: var( --kendo-font-family, inherit ) !default;
 

@@ -64,6 +64,8 @@ $kendo-suggestion-focus-shadow-spread: var( --kendo-suggestion-focus-shadow-spre
 /// @group suggestion
 $kendo-suggestion-focus-shadow-color: var( --kendo-suggestion-focus-shadow-color, #{k-color(on-base)} ) !default;
 
+/// The theme colors of the Suggestion.
+/// @group suggestion
 $kendo-suggestion-theme-colors: (
     "primary": k-color(primary),
     "secondary": k-color(secondary)

@@ -258,6 +258,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-chip-sm-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-chip-sm-line-height} * 1em + #{$kendo-chip-sm-padding-y} * 2 + #{$kendo-chip-border-width} * 2 )</code></td>
+    <td><code>calc(var(--kendo-line-height-lg, normal) * 1em + calc(var(--kendo-spacing-0\.5, 0.125rem) / 2) * 2 + var(--kendo-chip-border-width, 1px) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sm calc size of the Chip.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chip-sizes</td>
     <td>Map</td>
     <td><code>(
