@@ -43,6 +43,8 @@ $kendo-calendar-header-padding-y: var( --kendo-calendar-header-padding-y, k-spac
 /// Width of the bottom border of the calendar header.
 /// @group calendar
 $kendo-calendar-header-border-width: var( --kendo-calendar-header-border-width, 1px ) !default;
+/// The width of the Calendar header.
+/// @group calendar
 $kendo-calendar-header-min-width: calc(#{$kendo-calendar-cell-size} * 8)  !default;
 
 /// The background color of the calendar header.

@@ -64,6 +64,8 @@ $kendo-bottom-nav-flat-bg: k-color(surface) !default;
 /// @group bottom-navigation
 $kendo-bottom-nav-flat-border: null !default;
 
+/// The navigation theme colors of the BottomNavigation.
+/// @group bottom-navigation
 $kendo-bottom-navigation-theme-colors: (
     "primary": k-color(primary),
     "secondary": k-color(secondary),

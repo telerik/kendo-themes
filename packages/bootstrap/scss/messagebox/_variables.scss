@@ -1,21 +1,45 @@
 @use "../core/_index.scss" as *;
 
 // Message box
+/// The margin of the MessageBox.
+/// @group messagebox
 $kendo-message-box-margin: 0 0 k-spacing(4) 0 !default;
+/// The horizontal padding of the MessageBox.
+/// @group messagebox
 $kendo-message-box-padding-x: k-spacing(5) !default;
+/// The vertical padding of the MessageBox.
+/// @group messagebox
 $kendo-message-box-padding-y: k-spacing(5) !default;
+/// The width of the border around the MessageBox.
+/// @group messagebox
 $kendo-message-box-border-width: 0 0 0 4px !default;
 
+/// The font size of the MessageBox.
+/// @group messagebox
 $kendo-message-box-font-size: var( --kendo-font-size, inherit )  !default;
+/// The line height of the MessageBox.
+/// @group messagebox
 $kendo-message-box-line-height: var( --kendo-line-height, normal ) !default;
 
+/// The background color level of the MessageBox.
+/// @group messagebox
 $kendo-message-box-bg-level: -10 !default;
+/// The text color level of the MessageBox.
+/// @group messagebox
 $kendo-message-box-text-level: 6 !default;
+/// The border color level of the MessageBox.
+/// @group messagebox
 $kendo-message-box-border-level: -9 !default;
 
+/// The font style of the MessageBox link.
+/// @group messagebox
 $kendo-message-box-link-font-style: normal !default;
+/// The text decoration of the MessageBox link.
+/// @group messagebox
 $kendo-message-box-link-text-decoration: underline !default;
 
+/// The theme colors map for the MessageBox.
+/// @group messagebox
 $kendo-message-box-theme-colors: (
     "primary": k-color(primary),
      "secondary": k-color(secondary),
