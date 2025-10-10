@@ -44,7 +44,7 @@
                 $kendo-breadcrumb-link-focus-bg,
                 $kendo-breadcrumb-link-focus-border
             );
-            @include focus-indicator( $kendo-breadcrumb-link-focus-shadow );
+            @include focus-indicator( $kendo-breadcrumb-link-focus-shadow, true );
         }
     }
 
@@ -75,7 +75,7 @@
                 $kendo-breadcrumb-root-link-focus-bg,
                 $kendo-breadcrumb-root-link-focus-border
             );
-            @include focus-indicator( $kendo-breadcrumb-root-link-focus-shadow );
+            @include focus-indicator( $kendo-breadcrumb-root-link-focus-shadow, true );
         }
     }
 
