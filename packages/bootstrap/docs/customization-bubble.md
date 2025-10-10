@@ -40,8 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-border-radius-sm</td>
     <td>String</td>
-    <td><code>k-border-radius(xs)</code></td>
-    <td><code>var(--kendo-border-radius-xs, 0.125rem)</code></td>
+    <td><code>k-border-radius(sm)</code></td>
+    <td><code>var(--kendo-border-radius-sm, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small border radius of the Bubble.</div></div>
