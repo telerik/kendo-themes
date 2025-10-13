@@ -94,11 +94,14 @@
             align-self: flex-end;
         }
 
-        // Add margin to the avatar when the last message is selected
+        // Add margin to the avatar and user status when the last message is selected
         // so that the avatar is aligned to the bubble and not to the status
         &:has(.k-message-group-content .k-message:last-child .k-chat-bubble.k-selected + .k-message-status) .k-avatar {
-            margin-block-end: calc($kendo-chat-message-meta-line-height * $kendo-chat-message-meta-font-size + $kendo-chat-bubble-spacing);
-            transition: margin .2s ease-in-out;
+            &,
+            + .k-chat-user-status {
+                margin-block-end: calc($kendo-chat-message-meta-line-height * $kendo-chat-message-meta-font-size + $kendo-chat-bubble-spacing);
+                transition: margin .2s ease-in-out;
+            }
         }
 
         .k-chat-file-wrapper {
