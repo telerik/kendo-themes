@@ -10,7 +10,6 @@ export const MultiSelectCustomValue = ({ value="Custom value", ...other }: any) 
                     <ListItem>List item</ListItem>
                     <ListItem>List item</ListItem>
                     <ListItem>List item</ListItem>
-                    <ListItem>List item</ListItem>
                 </List>
             </>
         )}
