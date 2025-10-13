@@ -27,7 +27,13 @@ export default () =>(
                     </ChatMessageGroup>
                 </ChatNormal>
             </section>
-            <section></section>
+            <section>
+                <ChatNormal>
+                    <ChatMessageGroup status>
+                        <ChatMessage selected text="Sure :) Send it over whenever you are ready!" />
+                    </ChatMessageGroup>
+                </ChatNormal>
+            </section>
             <section></section>
         </div>
     </>
