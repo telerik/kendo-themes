@@ -136,6 +136,7 @@
         @extend .k-list-item !optional;
         font-style: italic;
         position: sticky;
+        inset-block-start: 0;
     }
 
 
@@ -186,7 +187,8 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    .k-virtual-list .k-list-optionlabel {
+    .k-virtual-list .k-list-optionlabel,
+    .k-virtual-list .k-list-custom-value {
         position: relative;
     }
 

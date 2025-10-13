@@ -10,3 +10,4 @@ export * from "./templates/multiselect-grouping-modern-custom-value";
 export * from "./templates/multiselect-prefix";
 export * from "./templates/multiselect-suffix";
 export * from "./templates/multiselect-custom-value";
+export * from "./templates/multiselect-virtualization-custom-value";
