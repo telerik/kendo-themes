@@ -553,7 +553,7 @@
     }
 
     .k-grid-filter-popup {
-        min-width: $kendo-grid-column-menu-width;
+        width: $kendo-grid-column-menu-width;
         max-width: $kendo-grid-column-menu-max-width;
     }
 
@@ -1276,7 +1276,7 @@
 
     // Filter menu
     .k-filter-menu-popup {
-        min-width: $kendo-grid-column-menu-width;
+        width: $kendo-grid-column-menu-width;
         max-width: $kendo-grid-column-menu-max-width;
     }
     .k-filter-menu {
@@ -1321,7 +1321,7 @@
     .k-grid-filter-popup.k-popup {
 
         .k-filter-menu-container {
-            min-width: $kendo-grid-column-menu-width;
+            width: $kendo-grid-column-menu-width;
             max-width: $kendo-grid-column-menu-max-width;
         }
     }
