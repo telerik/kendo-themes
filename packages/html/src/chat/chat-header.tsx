@@ -14,7 +14,7 @@ export const ChatHeader = (
             props.className,
             className,
         )}
-        themeColor="light"
+        themeColor="inherit"
     >
         {props.children}
     </Appbar>

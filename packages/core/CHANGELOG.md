@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.1.0...v12.2.0-dev.0) (2025-10-13)
+
+
+### Bug Fixes
+
+* **breadcrumb:** wrong focus indicator in Default a11y theme ([5287353](https://github.com/telerik/kendo-themes/commit/52873530c7cdfbf8fc63a6c6e459bc3a2337f99d))
+* **chip:** update color for outline chip with warning themeColor ([dc3b9d3](https://github.com/telerik/kendo-themes/commit/dc3b9d382b74c7e2f3b7fe9eca0e4eeb502b9ed7))
+
+
+### Features
+
+* **chat:** improve styles with new and enhanced features ([f9b4e16](https://github.com/telerik/kendo-themes/commit/f9b4e16d1a9469f6d52d4c9746d4a643858221a7))
+
+
+
+
+
 # [12.1.0](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.5...v12.1.0) (2025-10-06)
 
 **Note:** Version bump only for package @progress/kendo-theme-core

@@ -25,12 +25,12 @@ export default () => (
                         <ChatMessage text="(Full width - Receiver) I’m sending you a file with my portfolio. I’m Full-stack developer with 10 years experience. Would love your input" />
                     </ChatMessageGroup>
                     <ChatMessageGroup type="sender" fullWidth author={null}>
-                        <ChatMessage text="(Full width with Avatar - Sender) Hey Alex, I’m unable to open the file. Could you upload it online and send me the link?" />
+                        <ChatMessage text="(Full width with Avatar - Sender) Hey Alex, I’m unable to open the file. Could you upload it online and send me the link? I’m Full-stack developer with 10 years experience. Would love your input" />
                     </ChatMessageGroup>
                     <ChatMessageGroup fullWidth author={null}>
                         <ChatMessage text="(Full width with Avatar - Receiver) Hey Alex, I’m unable to open the file. Could you upload it online and send me the link?" />
                     </ChatMessageGroup>
-                    <ChatMessageGroup type="sender" avatar={null} author={null}>
+                    <ChatMessageGroup type="sender" fullWidth avatar={null} author={null}>
                         <ChatMessage text="Try now" />
                     </ChatMessageGroup>
                     <ChatMessageGroup fullWidth avatar={null} author={null}>

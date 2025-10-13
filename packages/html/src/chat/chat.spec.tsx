@@ -22,6 +22,7 @@ export type KendoChatProps = {
     generating?: boolean;
     tools?: React.JSX.Element | React.JSX.Element[];
     value?: string;
+    empty?: boolean;
 }
 
 const defaultTools = <>
@@ -47,6 +48,7 @@ export const Chat: KendoComponent<KendoChatProps & React.HTMLAttributes<HTMLDivE
         generating,
         tools = defaultOptions.tools,
         value,
+        empty,
         ...other
     } = props;
 
@@ -59,8 +61,10 @@ export const Chat: KendoComponent<KendoChatProps & React.HTMLAttributes<HTMLDivE
             )} dir={dir}>
             {header}
             {pinned}
-            <div className="k-message-list k-avatars">
-                <div className="k-message-list-content">
+            <div className="k-message-list">
+                <div className={classNames("k-message-list-content",
+                        empty && "k-message-list-content-empty"
+                )}>
                     {props.children}
                 </div>
             </div>

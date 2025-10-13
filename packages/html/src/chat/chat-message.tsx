@@ -32,6 +32,7 @@ const defaultOptions = {
 export type KendoChatMessageProps = {
     time?: null | string,
     text?: null | string | React.JSX.Element,
+    content?: null | React.JSX.Element,
     status?: null | string,
     statusIcon?: string,
     toolbar?: boolean;
@@ -48,11 +49,12 @@ export type KendoChatMessageState = { [K in (typeof states)[number]]?: boolean }
 export const ChatMessage = (
     props: KendoChatMessageProps &
         KendoChatMessageState &
-        React.HTMLAttributes<HTMLDivElement>
+        Omit<React.HTMLAttributes<HTMLDivElement>, 'content'>
 ) => {
     const {
         time = defaultOptions.time,
         text = defaultOptions.text,
+        content,
         status = defaultOptions.status,
         statusIcon = defaultOptions.statusIcon,
         toolbarItems = defaultOptions.toolbarItems,
@@ -87,7 +89,16 @@ export const ChatMessage = (
                 hover={hover}
                 active={active}
                 focus={focus}
-                content={text}
+                content={
+                    <>
+                        {content}
+                        {text &&
+                            <span className="k-chat-bubble-text">
+                                {text}
+                            </span>
+                        }
+                    </>
+                }
                 expandable={expandable}
                 expanded={expanded}
                 files={files}

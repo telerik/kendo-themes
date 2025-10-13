@@ -726,6 +726,26 @@
                     "name": "The color of the Grid stack layout column header",
                     "type": "color",
                     "value": "#424242"
+                },
+                "kendo-chat-file-bg": {
+                    "name": "The background color of the Chat file",
+                    "type": "color",
+                    "value": "transparent"
+                },
+                "kendo-chat-file-border": {
+                    "name": "The border color of the Chat file",
+                    "type": "color",
+                    "value": "#424242"
+                },
+                "kendo-chat-sender-file-bg": {
+                    "name": "The background color of the Chat sender file",
+                    "type": "color",
+                    "value": "transparent"
+                },
+                "kendo-chat-sender-file-border": {
+                    "name": "The border color of the Chat sender file",
+                    "type": "color",
+                    "value": "#fff"
                 }
             }
         }

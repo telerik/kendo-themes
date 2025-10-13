@@ -98,26 +98,6 @@
                         $bg: $kendo-chip-outline-selected-bg
                     );
                 }
-            } @else if ($name == "warning") {
-                @include fill(
-                    k-color(on-#{$name}),
-                    transparent,
-                    k-color(#{$name}-on-surface)
-                );
-
-                &:focus,
-                &.k-focus {
-                    @include focus-indicator( 0 0 0 2px color-mix(in srgb, k-color(#{$name}-on-surface) 16%, transparent));
-                }
-
-                &:hover,
-                &.k-hover,
-                &.k-selected {
-                    @include fill(
-                        $color: k-color(on-#{$name}),
-                        $bg: k-color(#{$name}-on-surface)
-                    );
-                }
             } @else {
                 @include fill(
                     k-color(#{$name}-on-surface),
