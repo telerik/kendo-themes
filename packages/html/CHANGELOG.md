@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.1.0...v12.2.0-dev.0) (2025-10-13)
+
+
+### Bug Fixes
+
+* **chat:** skeleton and message-reference should be rendered outside the text ([699e6cb](https://github.com/telerik/kendo-themes/commit/699e6cb152111dea83c151547e05b17b9a5d25fa))
+* **html:** chat header should use themeColor inherit ([25081c6](https://github.com/telerik/kendo-themes/commit/25081c6b87607aa41792794637b906fc15fb70bd))
+
+
+### Features
+
+* **html:** improve chat spec and tests with new and enhanced features ([c36f931](https://github.com/telerik/kendo-themes/commit/c36f93178484c3d461686ab5261dfe814c9c9fe0))
+
+
+
+
+
 # [12.1.0](https://github.com/telerik/kendo-themes/compare/v12.1.0-dev.5...v12.1.0) (2025-10-06)
 
 **Note:** Version bump only for package @progress/kendo-themes-html
