@@ -438,6 +438,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-item-selected-hover-bg</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #1D1B20) 8%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected hovered List items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-selected-hover-text</td>
+    <td>String</td>
+    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, #65558F)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected hovered List items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-group-item-bg</td>
     <td>Null</td>
     <td><code>null</code></td>

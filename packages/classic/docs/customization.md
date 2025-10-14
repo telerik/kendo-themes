@@ -14497,6 +14497,26 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-item-selected-hover-bg</td>
+    <td>String</td>
+    <td><code>k-color(primary-hover)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #e05100)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected hovered List items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-selected-hover-text</td>
+    <td>String</td>
+    <td><code>k-color(on-primary)</code></td>
+    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected hovered List items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-group-item-bg</td>
     <td>Null</td>
     <td><code>null</code></td>
