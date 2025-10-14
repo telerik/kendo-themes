@@ -63,8 +63,8 @@
         }
         &.k-selected:hover,
         &.k-selected.k-hover {
-            color: $kendo-list-item-selected-text;
-            background-color: k-color(primary-hover);
+            color: $kendo-list-item-selected-hover-text;
+            background-color: $kendo-list-item-selected-hover-bg;
         }
     }
 

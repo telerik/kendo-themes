@@ -6,12 +6,4 @@
 
 @mixin kendo-list--theme() {
     @include kendo-list--theme-base();
-
-    // List item
-    .k-list-item {
-        &.k-selected:hover,
-        &.k-selected.k-hover {
-            background-color: $kendo-list-item-hover-bg;
-        }
-    }
 }

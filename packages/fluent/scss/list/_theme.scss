@@ -9,12 +9,6 @@
     // List item
     .k-list-item {
 
-        &.k-selected:hover,
-        &.k-selected.k-hover {
-            color: $kendo-list-item-selected-hover-text;
-            background-color: $kendo-list-item-selected-hover-bg;
-        }
-
         // Disabled
         &:disabled,
         &.k-disabled {
