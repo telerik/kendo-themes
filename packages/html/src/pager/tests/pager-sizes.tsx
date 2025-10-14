@@ -7,9 +7,9 @@ export default () =>(
             { Pager.options.size.map((size) => (
                 <>
                     <span>{size} numeric</span>
-                    <PagerNormal size={size} />
+                    <PagerNormal size={size} itemsPerPage={500} />
                     <span>{size} input</span>
-                    <PagerInput size={size}/>
+                    <PagerInput size={size} itemsPerPage={500} />
                 </>
             ))}
         </div>

@@ -88,15 +88,9 @@ $kendo-pager-number-border-radius: k-border-radius( md ) !default;
 /// @group pager
 $kendo-pager-input-width: 5em !default;
 
-/// The width of the DropDowns in the small Pager.
+/// The width of the DropDowns in the Pager.
 /// @group pager
-$kendo-pager-sm-dropdown-width: 5em !default;
-/// The width of the DropDowns in the medium Pager.
-/// @group pager
-$kendo-pager-md-dropdown-width: 5em !default;
-/// The width of the DropDowns in the large Pager.
-/// @group pager
-$kendo-pager-lg-dropdown-width: 5em !default;
+$kendo-pager-dropdown-width: 5em !default;
 
 /// The sizes map of the Pager.
 /// @group pager
@@ -106,21 +100,18 @@ $kendo-pager-sizes: (
         padding-y: $kendo-pager-sm-padding-y,
         item-group-spacing: $kendo-pager-sm-item-group-spacing,
         item-min-width: $kendo-pager-sm-item-min-width,
-        pager-dropdown-width: $kendo-pager-sm-dropdown-width
     ),
     md: (
         padding-x: $kendo-pager-md-padding-x,
         padding-y: $kendo-pager-md-padding-y,
         item-group-spacing: $kendo-pager-md-item-group-spacing,
         item-min-width: $kendo-pager-md-item-min-width,
-        pager-dropdown-width: $kendo-pager-md-dropdown-width
     ),
     lg: (
         padding-x: $kendo-pager-lg-padding-x,
         padding-y: $kendo-pager-lg-padding-y,
         item-group-spacing: $kendo-pager-lg-item-group-spacing,
         item-min-width: $kendo-pager-lg-item-min-width,
-        pager-dropdown-width: $kendo-pager-lg-dropdown-width
     )
 ) !default;
 
@@ -149,8 +140,6 @@ $kendo-pager-sizes: (
     $kendo-pager-item-border-width: $kendo-pager-item-border-width,
     $kendo-pager-item-spacing: $kendo-pager-item-spacing,
     $kendo-pager-input-width: $kendo-pager-input-width,
-    $kendo-pager-sm-dropdown-width: $kendo-pager-sm-dropdown-width,
-    $kendo-pager-md-dropdown-width: $kendo-pager-md-dropdown-width,
-    $kendo-pager-lg-dropdown-width: $kendo-pager-lg-dropdown-width,
+    $kendo-pager-dropdown-width: $kendo-pager-dropdown-width,
     $kendo-pager-sizes: $kendo-pager-sizes
 );
