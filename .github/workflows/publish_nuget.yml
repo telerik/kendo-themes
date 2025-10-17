@@ -30,20 +30,20 @@ jobs:
     steps:
       - name: Import Secrets
         id: import-secrets
-        uses: LanceMcCarthy/akeyless-action@v3
+        uses: LanceMcCarthy/akeyless-action@v5
         with:
           access-id: ${{ secrets.GH_AKEYLESS_ACCESS_ID }}
           static-secrets: '{ "/WebComponents/prod/tokens/GH_TOKEN_PUBLISH": "GH_TOKEN_PUBLISH" }'
           export-secrets-to-environment: false
 
       - name: Checkout branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: develop
 
       - name: Setup node
         id: setup-node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 22.x
 
