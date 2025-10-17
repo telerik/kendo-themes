@@ -1,11 +1,11 @@
 import { List, ListGroup, ListItem, ListCustomValue } from "../../list";
 import MultiSelect from "../multiselect.spec";
 
-export const MultiSelectGroupingModernCustomValue = ({ value="Custom value", ...other }: any) => (
+export const MultiSelectGroupingVirtualModernCustomValue = ({ value="Custom value", ...other }: any) => (
     <MultiSelect  value={value}
         opened
         popup={
-            <List customValue={<ListCustomValue text={`Use "${value}"`}/>}>
+            <List virtualization customValue={<ListCustomValue text={`Use "${value}"`}/>}>
                 <ListGroup label={"Group 1"} root>
                     <ListItem>List group 1 item 1</ListItem>
                     <ListItem>List group 1 item 2</ListItem>
@@ -18,5 +18,5 @@ export const MultiSelectGroupingModernCustomValue = ({ value="Custom value", ...
             </List>
         }
         {...other}
-    />
+        />
 );
