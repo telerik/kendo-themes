@@ -29,7 +29,8 @@
 
 
     // List item
-    .k-list-item {
+    .k-list-item,
+    .k-list-custom-value {
         @include fill(
             $kendo-list-item-text,
             $kendo-list-item-bg
