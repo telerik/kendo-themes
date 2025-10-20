@@ -478,6 +478,7 @@
     .k-chat-file-wrapper {
         display: flex;
         flex-flow: column wrap;
+        flex-shrink: 0;
         padding-inline: $kendo-chat-file-padding-x;
         padding-block: $kendo-chat-file-padding-y;
         margin: 0;
