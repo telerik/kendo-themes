@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.2.0-dev.2](https://github.com/telerik/kendo-themes/compare/v12.2.0-dev.1...v12.2.0-dev.2) (2025-10-20)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+# [12.2.0-dev.1](https://github.com/telerik/kendo-themes/compare/v12.2.0-dev.0...v12.2.0-dev.1) (2025-10-20)
+
+
+### Bug Fixes
+
+* **list:** add selected hover state variables for list items ([9a10eae](https://github.com/telerik/kendo-themes/commit/9a10eae08c213c6c91084e98736b1491c6e2bb6b))
+* **pager:** use flexible width for page size ([64ce3bf](https://github.com/telerik/kendo-themes/commit/64ce3bfb66dccce0a62774909fd4b0f936ac5890))
+
+
+
+
+
 # [12.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.1.0...v12.2.0-dev.0) (2025-10-13)
 
 
