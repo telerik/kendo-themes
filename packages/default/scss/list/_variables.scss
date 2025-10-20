@@ -277,6 +277,13 @@ $kendo-list-item-selected-bg: k-color(primary) !default;
 /// @group list
 $kendo-list-item-selected-text: k-color(on-primary) !default;
 
+/// The background color of the selected hovered List items.
+/// @group list
+$kendo-list-item-selected-hover-bg: k-color(primary-hover) !default;
+/// The text color of the selected hovered List items.
+/// @group list
+$kendo-list-item-selected-hover-text: k-color(on-primary) !default;
+
 /// The background color of the List group items.
 /// @group list
 $kendo-list-group-item-bg: null !default;
@@ -385,6 +392,8 @@ $kendo-list-option-label-text: k-color(subtle) !default;
     $kendo-list-item-focus-shadow: $kendo-list-item-focus-shadow,
     $kendo-list-item-selected-bg: $kendo-list-item-selected-bg,
     $kendo-list-item-selected-text: $kendo-list-item-selected-text,
+    $kendo-list-item-selected-hover-bg: $kendo-list-item-selected-hover-bg,
+    $kendo-list-item-selected-hover-text: $kendo-list-item-selected-hover-text,
     $kendo-list-group-item-bg: $kendo-list-group-item-bg,
     $kendo-list-group-item-text: $kendo-list-group-item-text,
     $kendo-list-group-item-border: $kendo-list-group-item-border,
