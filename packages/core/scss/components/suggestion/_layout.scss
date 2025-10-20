@@ -18,7 +18,8 @@
             padding-block: $kendo-suggestion-padding-y;
             flex: 1 1 auto;
             flex-wrap: nowrap;
-            overflow: hidden;
+            overflow-x: auto;
+            scrollbar-width: none;
             white-space: nowrap;
         }
     }
