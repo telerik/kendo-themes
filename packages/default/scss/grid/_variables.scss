@@ -11,9 +11,17 @@
 @use "../popup/_variables.scss" as *;
 
 // Grid
+/// The width of the border around the Grid.
+/// @group grid
 $kendo-grid-border-width: 1px !default;
+/// The font family of the Grid.
+/// @group grid
 $kendo-grid-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the Grid.
+/// @group grid
 $kendo-grid-font-size: var( --kendo-font-size, inherit ) !default;
+/// The height of the Grid.
+/// @group grid
 $kendo-grid-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The horizontal padding of the Grid.
@@ -58,45 +66,115 @@ $kendo-grid-edit-cell-padding-x: $kendo-grid-cell-padding-x !default;
 /// @group grid
 $kendo-grid-edit-cell-padding-y: calc( #{k-spacing(1.5)} / 2 ) !default;
 
+/// The drop hint size of the Grid group.
+/// @group grid
 $kendo-grid-group-drop-hint-size: 6px !default;
+/// The drop hint line size of the Grid group.
+/// @group grid
 $kendo-grid-group-drop-hint-line-size: math.div( $kendo-grid-group-drop-hint-size, 3 ) !default;
+/// The height of the Grid group.
+/// @group grid
 $kendo-grid-group-drop-hint-height: calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
+/// The drop hint top of the Grid group.
+/// @group grid
 $kendo-grid-group-drop-hint-top: 3px !default;
 
+/// The horizontal padding of the Grid.
+/// @group grid
 $kendo-grid-sm-padding-x: k-spacing(2) !default;
+/// The vertical padding of the Grid.
+/// @group grid
 $kendo-grid-sm-padding-y: k-spacing(1) !default;
+/// The horizontal padding of the Grid header.
+/// @group grid
 $kendo-grid-sm-header-padding-x: $kendo-grid-sm-padding-x !default;
+/// The vertical padding of the Grid header.
+/// @group grid
 $kendo-grid-sm-header-padding-y: $kendo-grid-sm-padding-y !default;
+/// The horizontal padding of the Grid header.
+/// @group grid
 $kendo-grid-sm-grouping-header-padding-x: $kendo-grid-sm-padding-x !default;
+/// The vertical padding of the Grid header.
+/// @group grid
 $kendo-grid-sm-grouping-header-padding-y: $kendo-grid-sm-padding-y !default;
+/// The horizontal padding of the Grid cell.
+/// @group grid
 $kendo-grid-sm-cell-padding-x: $kendo-grid-sm-padding-x !default;
+/// The vertical padding of the Grid cell.
+/// @group grid
 $kendo-grid-sm-cell-padding-y: $kendo-grid-sm-padding-y !default;
+/// The horizontal padding of the Grid cell.
+/// @group grid
 $kendo-grid-sm-filter-cell-padding-x: k-spacing(1.5) !default;
+/// The vertical padding of the Grid cell.
+/// @group grid
 $kendo-grid-sm-filter-cell-padding-y: $kendo-grid-sm-filter-cell-padding-x !default;
+/// The horizontal padding of the Grid cell.
+/// @group grid
 $kendo-grid-sm-edit-cell-padding-x: $kendo-grid-sm-cell-padding-x !default;
+/// The vertical padding of the Grid cell.
+/// @group grid
 $kendo-grid-sm-edit-cell-padding-y: k-spacing(0.5) !default;
+/// The height of the Grid group.
+/// @group grid
 $kendo-grid-sm-group-dropclue-height: calc( #{$kendo-chip-sm-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
+/// The horizontal padding of the Grid.
+/// @group grid
 $kendo-grid-sm-selection-aggregates-padding-x: $kendo-grid-sm-padding-y !default;
+/// The vertical padding of the Grid.
+/// @group grid
 $kendo-grid-sm-selection-aggregates-padding-y: $kendo-grid-sm-padding-y !default;
 
+/// The horizontal padding of the Grid.
+/// @group grid
 $kendo-grid-md-padding-x: $kendo-grid-padding-x !default;
+/// The vertical padding of the Grid.
+/// @group grid
 $kendo-grid-md-padding-y: $kendo-grid-padding-y !default;
+/// The horizontal padding of the Grid header.
+/// @group grid
 $kendo-grid-md-header-padding-x: $kendo-grid-header-padding-x !default;
+/// The vertical padding of the Grid header.
+/// @group grid
 $kendo-grid-md-header-padding-y: $kendo-grid-header-padding-y !default;
+/// The horizontal padding of the Grid header.
+/// @group grid
 $kendo-grid-md-grouping-header-padding-x: $kendo-grid-grouping-header-padding-x !default;
+/// The vertical padding of the Grid header.
+/// @group grid
 $kendo-grid-md-grouping-header-padding-y: $kendo-grid-grouping-header-padding-y !default;
+/// The horizontal padding of the Grid cell.
+/// @group grid
 $kendo-grid-md-cell-padding-x: $kendo-grid-cell-padding-x !default;
+/// The vertical padding of the Grid cell.
+/// @group grid
 $kendo-grid-md-cell-padding-y: $kendo-grid-cell-padding-y !default;
+/// The horizontal padding of the Grid cell.
+/// @group grid
 $kendo-grid-md-filter-cell-padding-x: $kendo-grid-filter-cell-padding-x !default;
+/// The vertical padding of the Grid cell.
+/// @group grid
 $kendo-grid-md-filter-cell-padding-y: $kendo-grid-filter-cell-padding-y !default;
+/// The horizontal padding of the Grid cell.
+/// @group grid
 $kendo-grid-md-edit-cell-padding-x: $kendo-grid-edit-cell-padding-x !default;
+/// The vertical padding of the Grid cell.
+/// @group grid
 $kendo-grid-md-edit-cell-padding-y: $kendo-grid-edit-cell-padding-y !default;
+/// The height of the Grid group.
+/// @group grid
 $kendo-grid-md-group-dropclue-height: $kendo-grid-group-drop-hint-height !default;
+/// The horizontal padding of the Grid.
+/// @group grid
 $kendo-grid-md-selection-aggregates-padding-x: $kendo-grid-padding-y !default;
+/// The vertical padding of the Grid.
+/// @group grid
 $kendo-grid-md-selection-aggregates-padding-y: $kendo-grid-padding-y !default;
 
 
 // Kendo Grid sizes
+/// The sizes of the Grid.
+/// @group grid
 $kendo-grid-sizes: (
     sm: (
         header-padding-x: $kendo-grid-sm-header-padding-x,
@@ -134,13 +212,25 @@ $kendo-grid-sizes: (
     ),
 ) !default;
 
+/// The font size of the Grid header.
+/// @group grid
 $kendo-grid-header-font-size: null !default;
+/// The border color of the Grid header.
+/// @group grid
 $kendo-grid-header-first-border: 1px !default;
+/// The spacing of the Grid header.
+/// @group grid
 $kendo-grid-header-menu-icon-spacing: $kendo-icon-spacing !default;
 
+/// The width of the border around the Grid toolbar.
+/// @group grid
 $kendo-grid-toolbar-border-width: $kendo-grid-border-width !default;
 
+/// The width of the border around the Grid cell.
+/// @group grid
 $kendo-grid-cell-horizontal-border-width: $kendo-table-cell-horizontal-border-width !default;
+/// The width of the border around the Grid cell.
+/// @group grid
 $kendo-grid-cell-vertical-border-width: $kendo-table-cell-vertical-border-width !default;
 
 /// The background color of the Grid.
@@ -224,83 +314,187 @@ $kendo-grid-selection-aggregates-line-height: $kendo-grid-line-height !default;
 /// @group grid
 $kendo-grid-selection-aggregates-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 
+/// The background color of the Grid row.
+/// @group grid
 $kendo-grid-grouping-row-bg: k-color(surface) !default;
+/// The text color of the Grid row.
+/// @group grid
 $kendo-grid-grouping-row-text: $kendo-grid-text !default;
 
+/// The spacing of the Grid icon.
+/// @group grid
 $kendo-grid-sorted-icon-spacing: calc( #{k-spacing(2)} - 1px ) !default;
+/// The background color of the Grid.
+/// @group grid
 $kendo-grid-sorted-bg: color-mix(in srgb, k-color(on-app-surface) 3%, transparent) !default;
+/// The text color of the Grid.
+/// @group grid
 $kendo-grid-sorting-indicator-text: k-color(primary) !default;
+/// The font size of the Grid.
+/// @group grid
 $kendo-grid-sorting-index-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// The height of the Grid.
+/// @group grid
 $kendo-grid-sorting-index-height: $kendo-icon-size !default;
+/// The spacing of the Grid.
+/// @group grid
 $kendo-grid-sorting-index-spacing-y: calc( #{$kendo-icon-spacing} / 2 ) !default;
+/// The spacing of the Grid.
+/// @group grid
 $kendo-grid-sorting-index-spacing-x: calc( #{$kendo-grid-sorting-index-spacing-y} * -1) !default;
 
 
+/// The shadow of the Grid.
+/// @group grid
 $kendo-grid-focus-shadow: $kendo-table-focus-shadow !default;
 
+/// The spacing of the Grid button.
+/// @group grid
 $kendo-grid-command-cell-button-spacing: k-spacing(2) !default;
 
 // Must be solid colors
+/// The background color of the Grid.
+/// @group grid
 $kendo-grid-sticky-bg: k-color(surface-alt) !default;
+/// The background color of the hovered Grid.
+/// @group grid
 $kendo-grid-sticky-hover-bg: k-color(base-hover) !default;
+/// The background color of the Grid.
+/// @group grid
 $kendo-grid-sticky-alt-bg: k-color(base) !default;
 
+/// The text color of the Grid.
+/// @group grid
 $kendo-grid-sticky-text: $kendo-grid-text !default;
+/// The border color of the Grid.
+/// @group grid
 $kendo-grid-sticky-border: rgba( black, .3 ) !default;
 
+/// The background color of the Grid header.
+/// @group grid
 $kendo-grid-sticky-header-bg: $kendo-grid-header-bg !default;
+/// The text color of the Grid header.
+/// @group grid
 $kendo-grid-sticky-header-text: $kendo-grid-header-text !default;
+/// The border color of the Grid header.
+/// @group grid
 $kendo-grid-sticky-header-border: $kendo-grid-sticky-border !default;
 
+/// The background color of the Grid footer.
+/// @group grid
 $kendo-grid-sticky-footer-bg: $kendo-grid-header-bg !default;
+/// The background color of the hovered Grid footer.
+/// @group grid
 $kendo-grid-sticky-footer-hover-bg: $kendo-grid-hover-bg !default;
 
 
+/// The width of the Grid.
+/// @group grid
 $kendo-grid-column-menu-width: 230px !default;
+/// The width of the Grid.
+/// @group grid
 $kendo-grid-column-menu-max-width: 320px !default;
 
+/// The width of the Grid.
+/// @group grid
 $kendo-grid-filter-menu-check-all-border-bottom-width: 1px !default;
 
+/// The spacing of the Grid item.
+/// @group grid
 $kendo-grid-filter-menu-item-spacing-x: k-spacing(2) !default;
+/// The spacing of the Grid item.
+/// @group grid
 $kendo-grid-filter-menu-item-spacing-y: $kendo-grid-filter-menu-item-spacing-x !default;
 
+/// The horizontal padding of the Grid popup.
+/// @group grid
 $kendo-grid-column-menu-popup-padding-x: null !default;
+/// The vertical padding of the Grid popup.
+/// @group grid
 $kendo-grid-column-menu-popup-padding-y: null !default;
 
+/// The horizontal padding of the Grid item.
+/// @group grid
 $kendo-grid-column-menu-item-padding-x: $kendo-menu-popup-md-item-padding-x !default;
+/// The vertical padding of the Grid item.
+/// @group grid
 $kendo-grid-column-menu-item-padding-y: $kendo-menu-popup-md-item-padding-y !default;
 
+/// The horizontal padding of the Grid item.
+/// @group grid
 $kendo-grid-column-menu-list-item-padding-x: $kendo-list-md-item-padding-x !default;
+/// The vertical padding of the Grid item.
+/// @group grid
 $kendo-grid-column-menu-list-item-padding-y: $kendo-list-md-item-padding-y !default;
 
+/// The horizontal padding of the Grid.
+/// @group grid
 $kendo-grid-column-menu-items-wrap-padding-x: k-spacing(0) !default;
+/// The vertical padding of the Grid.
+/// @group grid
 $kendo-grid-column-menu-items-wrap-padding-y: k-spacing(1.5) !default;
 
+/// The horizontal padding of the Grid header.
+/// @group grid
 $kendo-grid-column-menu-group-header-padding-x: $kendo-menu-popup-md-item-padding-x !default;
+/// The vertical padding of the Grid header.
+/// @group grid
 $kendo-grid-column-menu-group-header-padding-y: $kendo-menu-popup-md-item-padding-y !default;
 
+/// The font size of the Grid header.
+/// @group grid
 $kendo-grid-column-menu-group-header-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// The height of the Grid header.
+/// @group grid
 $kendo-grid-column-menu-group-header-line-height: var( --kendo-line-height, normal ) !default;
+/// The text color of the Grid header.
+/// @group grid
 $kendo-grid-column-menu-group-header-text-transform: uppercase !default;
+/// The width of the Grid header.
+/// @group grid
 $kendo-grid-column-menu-group-header-border-bottom-width: 1px !default;
 
+/// The background color of the Grid header.
+/// @group grid
 $kendo-grid-column-menu-group-header-bg: null !default;
+/// The text color of the Grid header.
+/// @group grid
 $kendo-grid-column-menu-group-header-text: $kendo-popup-text !default;
+/// The border color of the Grid header.
+/// @group grid
 $kendo-grid-column-menu-group-header-border: $kendo-popup-border !default;
 
+/// The horizontal padding of the Grid content.
+/// @group grid
 $kendo-grid-column-menu-tabbed-tabstrip-content-padding-x: k-spacing(0) !default;
+/// The vertical padding of the Grid content.
+/// @group grid
 $kendo-grid-column-menu-tabbed-tabstrip-content-padding-y: k-spacing(2) !default;
 
+/// The background color of the Grid.
+/// @group grid
 $kendo-grid-column-menu-tabbed-bg: k-color(surface) !default;
 
+/// The width of the Grid cell.
+/// @group grid
 $kendo-grid-drag-cell-width: ($kendo-icon-size * 2.25) !default;
 
+/// The height of the Grid row.
+/// @group grid
 $kendo-grid-row-inner-height: calc( #{$kendo-line-height-em} + calc( #{$kendo-grid-cell-padding-y} * 2 ) ) !default;
 
+/// The width of the Grid.
+/// @group grid
 $kendo-grid-hierarchy-col-width: ($kendo-icon-size * 2) !default;
 
+/// The grouping border top of the Grid row.
+/// @group grid
 $kendo-grid-grouping-row-border-top: 1px !default;
+/// The border y of the Grid footer.
+/// @group grid
 $kendo-grid-group-footer-border-y: 1px !default;
+/// The border color of the Grid footer.
+/// @group grid
 $kendo-grid-group-footer-second-cell-border: 1px !default;
 
 /// The background color of the Grid row resize indicator.

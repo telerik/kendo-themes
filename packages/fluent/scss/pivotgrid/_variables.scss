@@ -231,11 +231,21 @@ $kendo-pivotgrid-treeview-padding-x: var( --kendo-pivotgrid-treeview-padding-x, 
 $kendo-pivotgrid-treeview-padding-y: var( --kendo-pivotgrid-treeview-padding-y, #{k-spacing(0)} ) !default;
 
 // Legacy variables
+/// The background color of the PivotGrid.
+/// @group pivotgrid
 $kendo-pivotgrid-alt-bg: $kendo-grid-header-bg !default;
+/// The text color of the PivotGrid.
+/// @group pivotgrid
 $kendo-pivotgrid-alt-text: $kendo-grid-header-text !default;
+/// The border color of the PivotGrid.
+/// @group pivotgrid
 $kendo-pivotgrid-chrome-border: $kendo-grid-border !default;
 
+/// The background color of the PivotGrid.
+/// @group pivotgrid
 $kendo-pivotgrid-container-bg: var( --kendo-pivotgrid-container-bg, #{k-color(surface-alt)} ) !default;
+/// The background color of the PivotGrid row.
+/// @group pivotgrid
 $kendo-pivotgrid-row-headers-bg: var( --kendo-pivotgrid-row-headers-bg, #{k-color(surface-alt)} ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/pivotgrid/_variables.scss" with (

@@ -106,7 +106,7 @@ $kendo-pivotgrid-selected-border: null !default;
 /// @group pivotgrid
 $kendo-pivotgrid-focus-shadow: $kendo-list-item-focus-shadow !default;
 
-// Pivotgrid Configurator
+// PivotGrid Configurator
 /// The horizontal padding of the PivotGrid configurator.
 /// @group pivotgrid
 $kendo-pivotgrid-configurator-padding-x: null !default;
@@ -246,21 +246,47 @@ $kendo-pivotgrid-treeview-padding-x: calc( #{$kendo-pivotgrid-spacer} / 2) !defa
 $kendo-pivotgrid-treeview-padding-y: k-spacing(0) !default;
 
 // Legacy variables
+/// The background color of the PivotGrid.
+/// @group pivotgrid
 $kendo-pivotgrid-alt-bg: $kendo-grid-header-bg !default;
+/// The text color of the PivotGrid.
+/// @group pivotgrid
 $kendo-pivotgrid-alt-text: $kendo-grid-header-text !default;
+/// The border color of the PivotGrid.
+/// @group pivotgrid
 $kendo-pivotgrid-chrome-border: $kendo-grid-border !default;
 
+/// The background color of the PivotGrid.
+/// @group pivotgrid
 $kendo-pivotgrid-container-bg: k-color(surface-alt) !default;
+/// The background color of the PivotGrid row.
+/// @group pivotgrid
 $kendo-pivotgrid-row-headers-bg: k-color(base) !default;
 
+/// The background color of the PivotGrid button.
+/// @group pivotgrid
 $kendo-pivotgrid-button-bg: null !default;
+/// The text color of the PivotGrid button.
+/// @group pivotgrid
 $kendo-pivotgrid-button-text: null !default;
+/// The background color of the hovered PivotGrid button.
+/// @group pivotgrid
 $kendo-pivotgrid-button-hover-bg: null !default;
+/// The text color of the hovered PivotGrid button.
+/// @group pivotgrid
 $kendo-pivotgrid-button-hover-text: null !default;
+/// The background color of the active PivotGrid button.
+/// @group pivotgrid
 $kendo-pivotgrid-button-active-bg: null !default;
+/// The text color of the active PivotGrid button.
+/// @group pivotgrid
 $kendo-pivotgrid-button-active-text: null !default;
 
+/// The background color of the PivotGrid.
+/// @group pivotgrid
 $kendo-pivotgrid-remove-bg: null !default;
+/// The text color of the PivotGrid.
+/// @group pivotgrid
 $kendo-pivotgrid-remove-text: null !default;
 
 

@@ -4,12 +4,26 @@
 /// @group icon
 $kendo-icon-size: 1rem !default;
 
+/// The size xs of the Icons icon.
+/// @group icons
 $kendo-icon-size-xs: calc( var( --kendo-icon-size, 1rem ) * .75 ) !default;
+/// The size sm of the Icons icon.
+/// @group icons
 $kendo-icon-size-sm: calc( var( --kendo-icon-size, 1rem ) * .875 ) !default;
+/// The size md of the Icons icon.
+/// @group icons
 $kendo-icon-size-md: var( --kendo-icon-size, 1rem ) !default;
+/// The size lg of the Icons icon.
+/// @group icons
 $kendo-icon-size-lg: calc( var( --kendo-icon-size, 1rem ) * 1.25 ) !default;
+/// The size xl of the Icons icon.
+/// @group icons
 $kendo-icon-size-xl: calc( var( --kendo-icon-size, 1rem ) * 1.5 ) !default;
+/// The size xxl of the Icons icon.
+/// @group icons
 $kendo-icon-size-xxl: calc( var( --kendo-icon-size, 1rem ) * 2 ) !default;
+/// The size xxxl of the Icons icon.
+/// @group icons
 $kendo-icon-size-xxxl: calc( var( --kendo-icon-size, 1rem ) * 3 ) !default;
 
 /// Spacing around the icons.

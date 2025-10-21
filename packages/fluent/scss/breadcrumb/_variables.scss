@@ -231,6 +231,8 @@ $kendo-breadcrumb-md-icon-link-padding-x: var( --kendo-breadcrumb-icon-link-padd
 $kendo-breadcrumb-lg-icon-link-padding-x: var( --kendo-breadcrumb-icon-link-padding-x, k-spacing(2.5) ) !default;
 
 // Root link spacing
+/// The spacing of the Breadcrumb icon.
+/// @group breadcrumb
 $kendo-breadcrumb-link-icon-spacing: k-spacing(0.5) !default;
 
 

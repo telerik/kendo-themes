@@ -261,6 +261,8 @@ $kendo-scheduler-marquee-label-inset-x: k-spacing(2) !default;
 /// @group scheduler
 $kendo-scheduler-marquee-label-inset-y: k-spacing(0.5) !default;
 
+/// The background color of the Scheduler header.
+/// @group scheduler
 $kendo-scheduler-header-bg: k-color(app-surface) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/scheduler/_variables.scss" with (

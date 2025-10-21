@@ -6,21 +6,49 @@
 /// @group notification
 $kendo-notification-group-gap: var( --kendo-notification-group-gap, #{k-spacing(2)} ) !default;
 
+/// The horizontal padding of the Notification.
+/// @group notification
 $kendo-notification-padding-x: var( --kendo-notification-padding-x, #{k-spacing(3)} ) !default;
+/// The vertical padding of the Notification.
+/// @group notification
 $kendo-notification-padding-y: var( --kendo-notification-padding-y, calc(#{k-spacing(2)} + 1px) ) !default;
+/// The width of the border around the Notification.
+/// @group notification
 $kendo-notification-border-width: var( --kendo-notification-border-width, 1px ) !default;
+/// The border radius of the Notification.
+/// @group notification
 $kendo-notification-border-radius: var( --kendo-notification-border-radius, #{k-border-radius(md)} ) !default;
+/// The font family of the Notification.
+/// @group notification
 $kendo-notification-font-family: var( --kendo-notification-font-family, var( --kendo-font-family, inherit ) ) !default;
+/// The font size of the Notification.
+/// @group notification
 $kendo-notification-font-size: var( --kendo-notification-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
+/// The height of the Notification.
+/// @group notification
 $kendo-notification-line-height: var( --kendo-notification-line-height, var( --kendo-line-height-lg, normal ) ) !default;
+/// The horizontal padding of the Notification actions.
+/// @group notification
 $kendo-notification-actions-padding-x: var( --kendo-notification-actions-padding-x, null ) !default;
+/// The vertical padding of the Notification actions.
+/// @group notification
 $kendo-notification-actions-padding-y: var( --kendo-notification-actions-padding-y, #{$kendo-notification-actions-padding-x} ) !default;
 
+/// The background color of the Notification.
+/// @group notification
 $kendo-notification-bg: var( --kendo-notification-bg, #{k-color(base-subtle)} ) !default;
+/// The text color of the Notification.
+/// @group notification
 $kendo-notification-text: var( --kendo-notification-text, #{k-color(on-app-surface)} ) !default;
+/// The border color of the Notification.
+/// @group notification
 $kendo-notification-border: var( --kendo-notification-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
+/// The shadow of the Notification.
+/// @group notification
 $kendo-notification-box-shadow: var( --kendo-notification-box-shadow, none ) !default;
 
+/// The spacing of the Notification icon.
+/// @group notification
 $kendo-notification-icon-spacing: var( --kendo-notification-icon-spacing, #{k-spacing(2)} ) !default;
 
 /// The theme colors map for the Notification variations.
