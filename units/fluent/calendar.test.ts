@@ -13,7 +13,8 @@ const expected = [
     "kendo-calendar-sm-cell-size", // Variable customizations work, but is used by another variable.
     "kendo-calendar-md-cell-size", // Variable customizations work, but is used by another variable.
     "kendo-calendar-lg-cell-size", // Variable customizations work, but is used by another variable.
-    "kendo-calendar-cell-padding-y" // Variable customizations work, but is used by another variable in calculations.
+    "kendo-calendar-cell-padding-y", // Variable customizations work, but is used by another variable in calculations.
+    "kendo-calendar-header-min-width" // Variable customizations work, but is used by another variable in DateTimePicker.
 ];
 
 const unexpected = [
