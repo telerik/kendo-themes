@@ -205,36 +205,6 @@ $kendo-button-pulsing-opacity: .4 !default;
 /// The gradient of the solid Button.
 /// @group button
 $kendo-solid-button-gradient: null !default;
-/// The shade function of the solid Button.
-/// @group button
-$kendo-solid-button-shade-function: "k-try-shade" !default;
-/// The text color of the solid Button.
-/// @group button
-$kendo-solid-button-shade-text-amount: 0 !default;
-/// The background color of the solid Button.
-/// @group button
-$kendo-solid-button-shade-bg-amount: 0 !default;
-/// The shade border amount of the solid Button.
-/// @group button
-$kendo-solid-button-shade-border-amount: 2 !default;
-/// The text color of the hovered solid Button.
-/// @group button
-$kendo-solid-button-hover-shade-text-amount: null !default;
-/// The background color of the hovered solid Button.
-/// @group button
-$kendo-solid-button-hover-shade-bg-amount: 1 !default;
-/// The hover shade border amount of the solid Button.
-/// @group button
-$kendo-solid-button-hover-shade-border-amount: 3 !default;
-/// The text color of the active solid Button.
-/// @group button
-$kendo-solid-button-active-shade-text-amount: null !default;
-/// The background color of the active solid Button.
-/// @group button
-$kendo-solid-button-active-shade-bg-amount: 2 !default;
-/// The active shade border amount of the solid Button.
-/// @group button
-$kendo-solid-button-active-shade-border-amount: 4 !default;
 /// The shadow of the solid Button.
 /// @group button
 $kendo-solid-button-shadow: true !default;
@@ -358,16 +328,6 @@ $kendo-button-transition: color .2s ease-in-out !default;
     $kendo-button-disabled-shadow: $kendo-button-disabled-shadow,
     $kendo-button-pulsing-opacity: $kendo-button-pulsing-opacity,
     $kendo-solid-button-gradient: $kendo-solid-button-gradient,
-    $kendo-solid-button-shade-function: $kendo-solid-button-shade-function,
-    $kendo-solid-button-shade-text-amount: $kendo-solid-button-shade-text-amount,
-    $kendo-solid-button-shade-bg-amount: $kendo-solid-button-shade-bg-amount,
-    $kendo-solid-button-shade-border-amount: $kendo-solid-button-shade-border-amount,
-    $kendo-solid-button-hover-shade-text-amount: $kendo-solid-button-hover-shade-text-amount,
-    $kendo-solid-button-hover-shade-bg-amount: $kendo-solid-button-hover-shade-bg-amount,
-    $kendo-solid-button-hover-shade-border-amount: $kendo-solid-button-hover-shade-border-amount,
-    $kendo-solid-button-active-shade-text-amount: $kendo-solid-button-active-shade-text-amount,
-    $kendo-solid-button-active-shade-bg-amount: $kendo-solid-button-active-shade-bg-amount,
-    $kendo-solid-button-active-shade-border-amount: $kendo-solid-button-active-shade-border-amount,
     $kendo-solid-button-shadow: $kendo-solid-button-shadow,
     $kendo-solid-button-shadow-blur: $kendo-solid-button-shadow-blur,
     $kendo-solid-button-shadow-spread: $kendo-solid-button-shadow-spread,

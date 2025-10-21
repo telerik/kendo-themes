@@ -11,9 +11,6 @@ $kendo-input-default-width: 100% !default;
 /// The border width of the Input components.
 /// @group input
 $kendo-input-border-width: 1px !default;
-/// The border height of the Input components.
-/// @group input
-$kendo-input-border-height: ( $kendo-input-border-width * 2 ) !default;
 /// The border radius of the Input components.
 /// @group input
 $kendo-input-border-radius: null !default;
@@ -436,7 +433,6 @@ $kendo-use-input-spinner-icon-offset: false !default;
 @forward "@progress/kendo-theme-core/scss/components/input/_variables.scss" with (
     $kendo-input-default-width: $kendo-input-default-width,
     $kendo-input-border-width: $kendo-input-border-width,
-    $kendo-input-border-height: $kendo-input-border-height,
     $kendo-input-border-radius: $kendo-input-border-radius,
     $kendo-input-sm-padding-x: $kendo-input-sm-padding-x,
     $kendo-input-md-padding-x: $kendo-input-md-padding-x,

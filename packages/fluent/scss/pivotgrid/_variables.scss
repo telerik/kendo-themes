@@ -241,9 +241,6 @@ $kendo-pivotgrid-alt-text: $kendo-grid-header-text !default;
 /// @group pivotgrid
 $kendo-pivotgrid-chrome-border: $kendo-grid-border !default;
 
-/// The background color of the PivotGrid.
-/// @group pivotgrid
-$kendo-pivotgrid-container-bg: var( --kendo-pivotgrid-container-bg, #{k-color(surface-alt)} ) !default;
 /// The background color of the PivotGrid row.
 /// @group pivotgrid
 $kendo-pivotgrid-row-headers-bg: var( --kendo-pivotgrid-row-headers-bg, #{k-color(surface-alt)} ) !default;
@@ -318,6 +315,5 @@ $kendo-pivotgrid-row-headers-bg: var( --kendo-pivotgrid-row-headers-bg, #{k-colo
     $kendo-pivotgrid-alt-bg: $kendo-pivotgrid-alt-bg,
     $kendo-pivotgrid-alt-text: $kendo-pivotgrid-alt-text,
     $kendo-pivotgrid-chrome-border: $kendo-pivotgrid-chrome-border,
-    $kendo-pivotgrid-container-bg: $kendo-pivotgrid-container-bg,
     $kendo-pivotgrid-row-headers-bg: $kendo-pivotgrid-row-headers-bg
 );
