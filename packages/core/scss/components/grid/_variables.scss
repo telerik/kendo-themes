@@ -112,7 +112,6 @@ $kendo-grid-sorted-icon-spacing: null !default;
 $kendo-grid-sorted-bg: null !default;
 $kendo-grid-sorting-indicator-text: null !default;
 $kendo-grid-sorting-index-font-size: null !default;
-$kendo-grid-sorting-index-height: null !default;
 $kendo-grid-sorting-index-spacing-y: null !default;
 $kendo-grid-sorting-index-spacing-x: null !default;
 
@@ -126,7 +125,6 @@ $kendo-grid-sticky-bg: null !default;
 $kendo-grid-sticky-alt-bg: null !default;
 $kendo-grid-sticky-hover-bg: null !default;
 
-$kendo-grid-sticky-text: null !default;
 $kendo-grid-sticky-border: null !default;
 
 $kendo-grid-sticky-header-bg: null !default;
@@ -134,15 +132,9 @@ $kendo-grid-sticky-header-text: null !default;
 $kendo-grid-sticky-header-border: null !default;
 
 $kendo-grid-sticky-footer-bg: null !default;
-$kendo-grid-sticky-footer-hover-bg: null !default;
 
 $kendo-grid-column-menu-width: null !default;
 $kendo-grid-column-menu-max-width: null !default;
-
-$kendo-grid-filter-menu-check-all-border-bottom-width: null !default;
-
-$kendo-grid-filter-menu-item-spacing-x: null !default;
-$kendo-grid-filter-menu-item-spacing-y: null !default;
 
 $kendo-grid-column-menu-popup-padding-x: null !default;
 $kendo-grid-column-menu-popup-padding-y: null !default;
@@ -175,13 +167,11 @@ $kendo-grid-column-menu-tabbed-bg: null !default;
 
 $kendo-grid-drag-cell-width: null !default;
 
-$kendo-grid-row-inner-height: null !default;
 
 $kendo-grid-hierarchy-col-width: null !default;
 
 $kendo-grid-grouping-row-border-top: null !default;
 $kendo-grid-group-footer-border-y: null !default;
-$kendo-grid-group-footer-second-cell-border: null !default;
 
 $kendo-grid-row-resizer-hover-bg: null !default;
 $kendo-grid-row-resizer-active-bg: null !default;

@@ -429,9 +429,6 @@ $kendo-grid-sticky-header-border: var( --kendo-grid-sticky-header-border, #{$ken
 /// The background color of the Grid sticky footer.
 /// @group grid
 $kendo-grid-sticky-footer-bg: var( --kendo-grid-sticky-footer-bg, #{$kendo-grid-header-bg} ) !default;
-/// The background color of the Grid sticky footer.
-/// @group grid
-$kendo-grid-sticky-footer-hover-bg: var( --kendo-grid-sticky-footer-hover-bg, #{$kendo-grid-hover-bg} ) !default;
 
 /// The horizontal padding of the Grid filter menu container.
 /// @group grid
@@ -690,7 +687,6 @@ $kendo-grid-stack-expandable-shadow: var( --kendo-grid-stack-expandable-shadow, 
     $kendo-grid-sticky-header-text: $kendo-grid-sticky-header-text,
     $kendo-grid-sticky-header-border: $kendo-grid-sticky-header-border,
     $kendo-grid-sticky-footer-bg: $kendo-grid-sticky-footer-bg,
-    $kendo-grid-sticky-footer-hover-bg: $kendo-grid-sticky-footer-hover-bg,
     $kendo-grid-column-menu-width: $kendo-grid-column-menu-width,
     $kendo-grid-column-menu-max-width: $kendo-grid-column-menu-max-width,
     $kendo-grid-column-menu-item-padding-x: $kendo-grid-column-menu-item-padding-x,

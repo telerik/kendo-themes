@@ -15,10 +15,6 @@ $kendo-input-border-width: 1px !default;
 /// @group input
 $kendo-input-focus-border-width: var( --kendo-input-focus-border-width, 2px ) !default;
 
-/// The height of the border around the Input components.
-/// @group input
-$kendo-input-border-height: calc( $kendo-input-border-width * 2 ) !default;
-
 /// The horizontal padding of the small Input components.
 /// @group input
 $kendo-input-sm-padding-x: k-spacing(2) !default;
@@ -59,15 +55,9 @@ $kendo-input-md-line-height: var( --kendo-input-line-height, var( --kendo-line-h
 /// @group input
 $kendo-input-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
 
-// The font family of the Input components.
 /// The font family of the Input input.
 /// @group input
 $kendo-input-font-family: var( --kendo-input-font-family, var( --kendo-font-family, inherit) ) !default;
-
-// The font weight of the Input components.
-/// The font weight of the Input input.
-/// @group input
-$kendo-input-font-weight: var( --kendo-input-font-weight, var( --kendo-font-weight, normal ) ) !default;
 
 /// The width of the small Input button.
 /// @group input
@@ -507,7 +497,6 @@ $kendo-use-input-spinner-icon-offset: false !default;
 @forward "@progress/kendo-theme-core/scss/components/input/_variables.scss" with (
     $kendo-input-default-width: $kendo-input-width,
     $kendo-input-border-width: $kendo-input-border-width,
-    $kendo-input-border-height: $kendo-input-border-height,
     $kendo-input-sm-padding-x: $kendo-input-sm-padding-x,
     $kendo-input-md-padding-x: $kendo-input-md-padding-x,
     $kendo-input-lg-padding-x: $kendo-input-lg-padding-x,

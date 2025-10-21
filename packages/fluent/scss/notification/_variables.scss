@@ -43,9 +43,6 @@ $kendo-notification-text: var( --kendo-notification-text, #{k-color(on-app-surfa
 /// The border color of the Notification.
 /// @group notification
 $kendo-notification-border: var( --kendo-notification-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
-/// The shadow of the Notification.
-/// @group notification
-$kendo-notification-box-shadow: var( --kendo-notification-box-shadow, none ) !default;
 
 /// The spacing of the Notification icon.
 /// @group notification

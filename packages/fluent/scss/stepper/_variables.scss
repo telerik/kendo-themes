@@ -201,8 +201,6 @@ $kendo-stepper-content-transition-property: var( --kendo-stepper-content-transit
 $kendo-stepper-content-transition-duration: var( --kendo-stepper-content-transition-duration, 300ms ) !default;
 /// The timing function of the Stepper transition.
 /// @group stepper
-/// The timing function of the Stepper transition.
-/// @group stepper
 $kendo-stepper-content-transition-timing-function: var( --kendo-stepper-content-transition-timing-function, cubic-bezier(.4, 0, .2, 1) 0ms ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/stepper/_variables.scss" with (
