@@ -40,6 +40,8 @@ $kendo-checkbox-md-ripple-size: k-spacing(10) !default;
 $kendo-checkbox-lg-ripple-size: k-spacing(12) !default;
 
 // A map with the different CheckBox sizes.
+/// The sizes of the CheckBox.
+/// @group checkbox
 $kendo-checkbox-sizes: (
     sm: (
         size: $kendo-checkbox-sm-size,
@@ -152,6 +154,8 @@ $kendo-checkbox-indicator-type: image !default;
 /// The font family of the CheckBox indicator glyph.
 /// @group checkbox
 $kendo-checkbox-glyph-font-family: "WebComponentsIcons", monospace !default;
+/// The glyph size of the CheckBox.
+/// @group checkbox
 $kendo-checkbox-glyph-size: 10px !default;
 /// The glyph of the CheckBox indicator.
 /// @group checkbox

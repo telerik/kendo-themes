@@ -65,14 +65,10 @@ $kendo-button-md-line-height: var( --kendo-line-height, normal ) !default;
 /// @group button
 $kendo-button-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
 
-/// The calculated height of the Button.
-/// @group button
 $kendo-button-sm-calc-size: calc( ( #{$kendo-button-sm-line-height} * 1em ) + ( #{$kendo-button-sm-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) ) !default;
 $kendo-button-md-calc-size: calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) ) !default;
 $kendo-button-lg-calc-size: calc( ( #{$kendo-button-lg-line-height} * 1em ) + ( #{$kendo-button-lg-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) ) !default;
 
-/// The calculated inner height of the Button excluding the border width.
-/// @group button
 $kendo-button-inner-calc-size: calc( ( #{$kendo-button-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) ) !default;
 $kendo-button-sm-inner-calc-size: calc( ( #{$kendo-button-sm-line-height} * 1em ) + ( #{$kendo-button-sm-padding-y} * 2 ) ) !default;
 $kendo-button-md-inner-calc-size: calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) ) !default;
@@ -206,35 +202,83 @@ $kendo-button-disabled-shadow: null !default;
 $kendo-button-pulsing-opacity: .4 !default;
 
 // Solid Button
+/// The gradient of the solid Button.
+/// @group button
 $kendo-solid-button-gradient: null !default;
+/// The shade function of the solid Button.
+/// @group button
 $kendo-solid-button-shade-function: "k-try-shade" !default;
+/// The text color of the solid Button.
+/// @group button
 $kendo-solid-button-shade-text-amount: 0 !default;
+/// The background color of the solid Button.
+/// @group button
 $kendo-solid-button-shade-bg-amount: 0 !default;
+/// The shade border amount of the solid Button.
+/// @group button
 $kendo-solid-button-shade-border-amount: 2 !default;
+/// The text color of the hovered solid Button.
+/// @group button
 $kendo-solid-button-hover-shade-text-amount: null !default;
+/// The background color of the hovered solid Button.
+/// @group button
 $kendo-solid-button-hover-shade-bg-amount: 1 !default;
+/// The hover shade border amount of the solid Button.
+/// @group button
 $kendo-solid-button-hover-shade-border-amount: 3 !default;
+/// The text color of the active solid Button.
+/// @group button
 $kendo-solid-button-active-shade-text-amount: null !default;
+/// The background color of the active solid Button.
+/// @group button
 $kendo-solid-button-active-shade-bg-amount: 2 !default;
+/// The active shade border amount of the solid Button.
+/// @group button
 $kendo-solid-button-active-shade-border-amount: 4 !default;
+/// The shadow of the solid Button.
+/// @group button
 $kendo-solid-button-shadow: true !default;
+/// The shadow of the solid Button.
+/// @group button
 $kendo-solid-button-shadow-blur: 4px !default;
+/// The shadow of the solid Button.
+/// @group button
 $kendo-solid-button-shadow-spread: 0px !default;
+/// The shadow of the solid Button.
+/// @group button
 $kendo-solid-button-shadow-opacity: .75 !default;
 
 // Outline Button
+/// The shadow of the outline Button.
+/// @group button
 $kendo-outline-button-shadow: true !default;
+/// The shadow of the outline Button.
+/// @group button
 $kendo-outline-button-shadow-blur: 4px !default;
+/// The shadow of the outline Button.
+/// @group button
 $kendo-outline-button-shadow-spread: 0px !default;
+/// The shadow of the outline Button.
+/// @group button
 $kendo-outline-button-shadow-opacity: .75 !default;
 
 // Link Button
+/// The shadow of the link Button.
+/// @group button
 $kendo-link-button-shadow: true !default;
+/// The shadow of the link Button.
+/// @group button
 $kendo-link-button-shadow-blur: 4px !default;
+/// The shadow of the link Button.
+/// @group button
 $kendo-link-button-shadow-spread: 0px !default;
+/// The shadow of the link Button.
+/// @group button
 $kendo-link-button-shadow-opacity: .75 !default;
 
 // Clear Button
+/// The opacity of the clear Button.
+/// @group button
 $kendo-clear-button-focus-opacity: .1 !default;
 
 /// The overlay opacity of the hovered flat Button. Used to create a background for the flat Button.

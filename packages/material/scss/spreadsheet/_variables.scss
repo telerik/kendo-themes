@@ -275,8 +275,12 @@ $kendo-spreadsheet-dropzone-spacing-y: k-spacing(2) !default;
 /// @group spreadsheet
 $kendo-spreadsheet-filter-padding: k-spacing(1) !default;
 
+/// The horizontal padding of the Spreadsheet filter menu link.
+/// @group spreadsheet
 $kendo-spreadsheet-filter-menu-link-padding-x: calc( #{$kendo-icon-size} + k-spacing(2) ) !default;
 
+/// The margin of the Spreadsheet filter menu icon.
+/// @group spreadsheet
 $kendo-spreadsheet-filter-menu-icon-margin: 0 k-spacing(1) 0 calc(-1 * ( #{$kendo-icon-size} + #{k-spacing(1)} ) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/spreadsheet/_variables.scss" with (

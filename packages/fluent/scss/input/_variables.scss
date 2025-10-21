@@ -11,6 +11,8 @@ $kendo-input-width: var( --kendo-input-width, 100% ) !default;
 $kendo-input-border-width: 1px !default;
 
 // The width of the border around the focused Input components.
+/// The width of the border around the Input input.
+/// @group input
 $kendo-input-focus-border-width: var( --kendo-input-focus-border-width, 2px ) !default;
 
 /// The height of the border around the Input components.
@@ -58,9 +60,13 @@ $kendo-input-md-line-height: var( --kendo-input-line-height, var( --kendo-line-h
 $kendo-input-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
 
 // The font family of the Input components.
+/// The font family of the Input input.
+/// @group input
 $kendo-input-font-family: var( --kendo-input-font-family, var( --kendo-font-family, inherit) ) !default;
 
 // The font weight of the Input components.
+/// The font weight of the Input input.
+/// @group input
 $kendo-input-font-weight: var( --kendo-input-font-weight, var( --kendo-font-weight, normal ) ) !default;
 
 /// The width of the small Input button.
@@ -401,8 +407,6 @@ $kendo-picker-flat-disabled-bg: none !default;
 /// @group input
 $kendo-picker-flat-disabled-border: $kendo-picker-flat-disabled-text !default;
 
-/// The calculated height of the Input.
-/// @group input
 $kendo-input-calc-size: calc( ( #{$kendo-input-md-line-height} * 1em ) + ( #{$kendo-input-md-padding-y} * 2 ) + calc( #{$kendo-input-border-width} * 2 ) ) !default;
 $kendo-input-sm-calc-size: calc( ( #{$kendo-input-sm-line-height} * 1em ) + ( #{$kendo-input-sm-padding-y} * 2 ) + calc( #{$kendo-input-border-width} * 2 ) ) !default;
 $kendo-input-md-calc-size: calc( ( #{$kendo-input-md-line-height} * 1em ) + ( #{$kendo-input-md-padding-y} * 2 ) + calc( #{$kendo-input-border-width} * 2 ) ) !default;

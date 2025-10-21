@@ -57,6 +57,8 @@ $kendo-appbar-box-shadow: k-elevation(4) !default;
 /// @group appbar
 $kendo-appbar-bottom-box-shadow: k-elevation(4) !default;
 
+/// The theme colors of the Appbar.
+/// @group appbar
 $kendo-appbar-theme-colors: (
     "primary": k-color(primary),
     "secondary": k-color(secondary),

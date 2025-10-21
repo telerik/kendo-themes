@@ -78,8 +78,6 @@ $kendo-chip-md-line-height: var( --kendo-chip-line-height, var( --kendo-line-hei
 /// @group chip
 $kendo-chip-lg-line-height: var( --kendo-line-height, normal ) !default;
 
-/// The calculated height of the Chip.
-/// @group chip
 $kendo-chip-calc-size: calc( #{$kendo-chip-md-line-height} * 1em + #{$kendo-chip-md-padding-y} * 2 + #{$kendo-chip-border-width} * 2 ) !default;
 $kendo-chip-sm-calc-size: calc( #{$kendo-chip-sm-line-height} * 1em + #{$kendo-chip-sm-padding-y} * 2 + #{$kendo-chip-border-width} * 2 ) !default;
 
