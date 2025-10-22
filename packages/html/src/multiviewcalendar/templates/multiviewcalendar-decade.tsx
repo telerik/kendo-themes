@@ -1,11 +1,11 @@
 import { MultiViewCalendar } from "..";
 import { CalendarTable, CalendarTableRow, CalendarCell } from "../../calendar";
 
-export const MultiViewCalendarDecade = ({ showOtherDecade, ...props }: any) => (
+export const MultiViewCalendarDecade = ({ showCaptions, showOtherDecade, ...props }: any) => (
     <MultiViewCalendar calendarView="decade" calendarTitleText="2020 - 2039"
         children={
             <>
-                <CalendarTable>
+                <CalendarTable calendarCaption={showCaptions && "2020 - 2029"}>
                     <CalendarTableRow>
                         <CalendarCell text="2019" empty={!showOtherDecade} />
                         <CalendarCell text="2020" />
@@ -25,7 +25,7 @@ export const MultiViewCalendarDecade = ({ showOtherDecade, ...props }: any) => (
                         <CalendarCell text="2030" empty={!showOtherDecade} />
                     </CalendarTableRow>
                 </CalendarTable>
-                <CalendarTable>
+                <CalendarTable calendarCaption={showCaptions && "2030 - 2039"}>
                     <CalendarTableRow>
                         <CalendarCell text="2029" empty={!showOtherDecade} />
                         <CalendarCell text="2030" />

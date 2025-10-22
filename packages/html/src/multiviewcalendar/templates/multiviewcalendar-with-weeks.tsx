@@ -1,11 +1,11 @@
 import { MultiViewCalendar } from "..";
 import { CalendarTable, CalendarTableRow, CalendarCell } from "../../calendar";
 
-export const MultiViewCalendarWithWeeks = ({ showOtherMonth, ...other }: any) => (
+export const MultiViewCalendarWithWeeks = ({ showCaptions, showOtherMonth, ...other }: any) => (
     <MultiViewCalendar calendarView="month" showWeek
         children={
             <>
-                <CalendarTable showTableHead showWeek>
+                <CalendarTable calendarCaption={showCaptions && "October 2021"} showTableHead showWeek>
                     <CalendarTableRow>
                         <CalendarCell text="39" weekCell />
                         <CalendarCell text="26" showOtherMonth={showOtherMonth} empty={!showOtherMonth} weekend={showOtherMonth} />
@@ -67,7 +67,7 @@ export const MultiViewCalendarWithWeeks = ({ showOtherMonth, ...other }: any) =>
                         <CalendarCell text="6" showOtherMonth={showOtherMonth} empty={!showOtherMonth} weekend={showOtherMonth} />
                     </CalendarTableRow>
                 </CalendarTable>
-                <CalendarTable showTableHead showWeek>
+                <CalendarTable calendarCaption={showCaptions && "November 2021"} showTableHead showWeek>
                     <CalendarTableRow>
                         <CalendarCell text="45" weekCell />
                         <CalendarCell text="31" showOtherMonth={showOtherMonth} empty={!showOtherMonth} weekend={showOtherMonth} />
