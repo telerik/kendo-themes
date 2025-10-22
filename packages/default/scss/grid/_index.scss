@@ -1,4 +1,6 @@
 // Dependencies
+@forward "../icons/_index.scss";
+@forward "../popup/_index.scss";
 @forward "../adaptive/_index.scss";
 @forward "../progressbar/_index.scss";
 @forward "../button/_index.scss";
@@ -22,6 +24,7 @@
 @forward "../table/_index.scss";
 @forward "../tabstrip/_index.scss";
 @forward "../column-menu/_index.scss";
+@forward "../forms/_index.scss";
 
 // Component
 @forward "./_variables.scss";
