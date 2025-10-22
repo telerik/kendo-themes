@@ -38,6 +38,76 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-icon-size-xs</td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-icon-size, 1rem ) * .75 )</code></td>
+    <td><code>calc(var(--kendo-icon-size, 1rem) * 0.75)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The xs size of the Icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-size-sm</td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-icon-size, 1rem ) * .875 )</code></td>
+    <td><code>calc(var(--kendo-icon-size, 1rem) * 0.875)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sm size of the Icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-size-md</td>
+    <td>String</td>
+    <td><code>var( --kendo-icon-size, 1rem )</code></td>
+    <td><code>var(--kendo-icon-size, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The md size of the Icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-size-lg</td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-icon-size, 1rem ) * 1.25 )</code></td>
+    <td><code>calc(var(--kendo-icon-size, 1rem) * 1.25)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The lg size of the Icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-size-xl</td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-icon-size, 1rem ) * 1.5 )</code></td>
+    <td><code>calc(var(--kendo-icon-size, 1rem) * 1.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The xl size of the Icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-size-xxl</td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-icon-size, 1rem ) * 2 )</code></td>
+    <td><code>calc(var(--kendo-icon-size, 1rem) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The xxl size of the Icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-size-xxxl</td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-icon-size, 1rem ) * 3 )</code></td>
+    <td><code>calc(var(--kendo-icon-size, 1rem) * 3)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The xxxl size of the Icon.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-icon-spacing</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>

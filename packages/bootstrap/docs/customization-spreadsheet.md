@@ -837,6 +837,26 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Spreadsheet filter.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-spreadsheet-filter-menu-link-padding-x</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-icon-size} + calc( 2 * #{k-spacing(2)} ) )</code></td>
+    <td><code>calc(1rem + 2 * var(--kendo-spacing-2, 0.5rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Spreadsheet filter menu link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-filter-menu-icon-margin</td>
+    <td>List</td>
+    <td><code>0 k-spacing(2) 0 calc(-1 * ( #{$kendo-icon-size} + #{k-spacing(2)} ) )</code></td>
+    <td><code>(0 var(--kendo-spacing-2, 0.5rem) 0 calc(-1 * (1rem + var(--kendo-spacing-2, 0.5rem))))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Spreadsheet filter menu icon.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
