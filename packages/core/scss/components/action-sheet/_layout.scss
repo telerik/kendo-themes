@@ -2,7 +2,7 @@
 @use "./variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-action-sheet--layout-base() {
+// @mixin kendo-action-sheet--layout-base() {
 
     // Action sheet container
     .k-actionsheet-container {
@@ -411,9 +411,9 @@
         transform: translateX(calc(100% * (var(--kendo-actionsheet-view-current, 1) - 1)))
     }
 
-}
+// }
 
 
-@mixin kendo-action-sheet--layout() {
-    @include kendo-action-sheet--layout-base();
-}
+// @mixin kendo-action-sheet--layout() {
+//     @include kendo-action-sheet--layout-base();
+// }

@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/draggable/_layout.scss" as *;
-
-
-@mixin kendo-draggable--layout() {
-    @include kendo-draggable--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/draggable/_layout.scss";

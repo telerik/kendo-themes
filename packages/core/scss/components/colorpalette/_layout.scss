@@ -3,7 +3,7 @@
 @use "./variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-color-palette--layout-base() {
+// @mixin kendo-color-palette--layout-base() {
 
     // ColorPalette
     .k-colorpalette {
@@ -69,9 +69,9 @@
         }
     }
 
-}
+// }
 
 
-@mixin kendo-color-palette--layout() {
-    @include kendo-color-palette--layout-base();
-}
+// @mixin kendo-color-palette--layout() {
+//     @include kendo-color-palette--layout-base();
+// }

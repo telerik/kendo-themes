@@ -2,7 +2,7 @@
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-task-board--theme-base() {
+// @mixin kendo-task-board--theme-base() {
 
     // TaskBoard
     .k-taskboard {
@@ -109,9 +109,8 @@
         );
     }
 
-}
 
 
-@mixin kendo-task-board--theme() {
-    @include kendo-task-board--theme-base();
-}
+// @mixin kendo-task-board--theme() {
+//     @include kendo-task-board--theme-base();
+// }

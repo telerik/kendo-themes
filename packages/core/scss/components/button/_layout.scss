@@ -5,7 +5,7 @@
 @use "../icons/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-button--layout-base() {
+// @mixin kendo-button--layout-base() {
 
     // Button
     .k-button {
@@ -360,9 +360,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-button--layout() {
-    @include kendo-button--layout-base();
-}
+// }

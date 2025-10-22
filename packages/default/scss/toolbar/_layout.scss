@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/toolbar/_layout.scss" as *;
-
-
-@mixin kendo-toolbar--layout() {
-    @include kendo-toolbar--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/toolbar/_layout.scss";

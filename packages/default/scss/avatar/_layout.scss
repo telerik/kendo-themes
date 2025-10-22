@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/avatar/_layout.scss" as *;
-
-
-@mixin kendo-avatar--layout() {
-    @include kendo-avatar--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/avatar/_layout.scss";

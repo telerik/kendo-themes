@@ -6,7 +6,7 @@
 @use "../icons/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-input--layout-base() {
+// @mixin kendo-input--layout-base() {
 
     // Generic input
     .k-input,
@@ -564,9 +564,4 @@
         animation-name: autoFillEnd;
     }
 
-}
-
-
-@mixin kendo-input--layout() {
-    @include kendo-input--layout-base();
-}
+// }

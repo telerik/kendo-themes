@@ -1,6 +1,6 @@
 @use "./variables.scss" as *;
 
-@mixin kendo-chart-wizard--layout-base() {
+// @mixin kendo-chart-wizard--layout-base() {
     // Chart wizard
     .k-chart-wizard {
         .k-icon-text-wrapper {
@@ -38,9 +38,9 @@
     .k-chart-wizard-property-pane {
         padding: $kendo-chart-wizard-property-pane-padding;
     }
-}
+// }
 
 
-@mixin kendo-chart-wizard--layout() {
-    @include kendo-chart-wizard--layout-base();
-}
+// @mixin kendo-chart-wizard--layout() {
+//     @include kendo-chart-wizard--layout-base();
+// }

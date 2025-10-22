@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/action-buttons/_layout.scss" as *;
-
-
-@mixin kendo-action-buttons--layout() {
-    @include kendo-action-buttons--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/action-buttons/_layout.scss";

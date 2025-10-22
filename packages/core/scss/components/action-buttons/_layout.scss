@@ -1,6 +1,6 @@
 @use "./_variables.scss" as *;
 
-@mixin kendo-action-buttons--layout-base() {
+// @mixin kendo-action-buttons--layout-base() {
 
     // Actions
     .k-actions {
@@ -68,9 +68,9 @@
         @extend .k-actions !optional;
     }
 
-}
+// }
 
 
-@mixin kendo-action-buttons--layout() {
-    @include kendo-action-buttons--layout-base();
-}
+// @mixin kendo-action-buttons--layout() {
+//     @include kendo-action-buttons--layout-base();
+// }

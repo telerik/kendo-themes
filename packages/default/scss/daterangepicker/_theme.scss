@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/daterangepicker/_theme.scss" as *;
-
-
-@mixin kendo-date-range-picker--theme() {
-    @include kendo-date-range-picker--theme-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/daterangepicker/_theme.scss";

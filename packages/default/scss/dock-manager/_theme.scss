@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/dock-manager/_theme.scss" as *;
-
-@mixin kendo-dock-manager--theme() {
-    @include kendo-dock-manager--theme-base();
-    @include kendo-dock-navigator--theme();
-}
+@forward "@progress/kendo-theme-core/scss/components/dock-manager/_theme.scss";

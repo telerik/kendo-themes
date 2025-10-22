@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/slider/_layout.scss" as *;
-
-
-@mixin kendo-slider--layout() {
-    @include kendo-slider--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/slider/_layout.scss";

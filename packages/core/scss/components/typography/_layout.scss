@@ -3,7 +3,7 @@
 @use "./_variables.scss" as *;
 @use "../../_variables.scss" as *;
 
-@mixin kendo-typography--layout-base() {
+// @mixin kendo-typography--layout-base() {
 
     @if $kendo-enable-typography {
         body { @extend .k-body !optional; }
@@ -121,9 +121,4 @@
             );
         }
     }
-}
-
-
-@mixin kendo-typography--layout() {
-    @include kendo-typography--layout-base();
-}
+// }

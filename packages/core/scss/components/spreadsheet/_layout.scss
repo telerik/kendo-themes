@@ -9,7 +9,7 @@
 @use "../toolbar/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-spreadsheet--layout-base() {
+// @mixin kendo-spreadsheet--layout-base() {
 
     // Spreadsheet
     .k-spreadsheet {
@@ -906,9 +906,4 @@
         overflow: hidden;
     }
 
-}
-
-
-@mixin kendo-spreadsheet--layout() {
-    @include kendo-spreadsheet--layout-base();
-}
+// }

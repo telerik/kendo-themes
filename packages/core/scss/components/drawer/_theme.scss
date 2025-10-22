@@ -1,7 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-drawer--theme-base() {
+// @mixin kendo-drawer--theme-base() {
 
     .k-drawer {
         @include fill(
@@ -65,9 +65,4 @@
         background-color: $kendo-drawer-border;
     }
 
-}
-
-
-@mixin kendo-drawer--theme() {
-    @include kendo-drawer--theme-base();
-}
+// }

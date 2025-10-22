@@ -5,7 +5,7 @@
 @use "../../color-system/_functions.import.scss" as *;
 @use "../../_variables.scss" as *;
 
-@mixin kendo-bubble--theme-base() {
+// @mixin kendo-bubble--theme-base() {
     .k-bubble {
         @include fill(
             $kendo-bubble-text,
@@ -33,9 +33,4 @@
             @include fill( $bg: $kendo-bubble-hover-bg, $border: $kendo-bubble-hover-border );
         }
     }
-}
-
-
-@mixin kendo-bubble--theme() {
-    @include kendo-bubble--theme-base();
-}
+// }

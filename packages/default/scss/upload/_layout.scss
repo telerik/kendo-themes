@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/upload/_layout.scss" as *;
-
-
-@mixin kendo-upload--layout() {
-    @include kendo-upload--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/upload/_layout.scss";

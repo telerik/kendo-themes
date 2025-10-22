@@ -1,7 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-skeleton--theme-base() {
+// @mixin kendo-skeleton--theme-base() {
 
     .k-skeleton {
         @include fill( $bg: $kendo-skeleton-item-bg );
@@ -22,9 +22,4 @@
 
     }
 
-}
-
-
-@mixin kendo-skeleton--theme() {
-    @include kendo-skeleton--theme-base();
-}
+// }

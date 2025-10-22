@@ -2,7 +2,7 @@
 @use "./variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-appbar--layout-base() {
+// @mixin kendo-appbar--layout-base() {
 
     // Appbar
     .k-appbar {
@@ -113,9 +113,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-appbar--layout() {
-    @include kendo-appbar--layout-base();
-}
+// }

@@ -2,7 +2,7 @@
 @use "../../color-system/_functions.import.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-input--theme-base() {
+// @mixin kendo-input--theme-base() {
 
     // Solid input
     .k-input-solid {
@@ -516,9 +516,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-input--theme() {
-    @include kendo-input--theme-base();
-}
+// }

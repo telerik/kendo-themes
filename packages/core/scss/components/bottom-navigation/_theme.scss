@@ -4,7 +4,7 @@
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-bottom-navigation--theme-base() {
+// @mixin kendo-bottom-navigation--theme-base() {
 
     // Solid
     @each $name, $color in $kendo-bottom-navigation-theme-colors {
@@ -56,9 +56,8 @@
         }
     }
 
-}
 
 
-@mixin kendo-bottom-navigation--theme() {
-    @include kendo-bottom-navigation--theme-base();
-}
+// @mixin kendo-bottom-navigation--theme() {
+//     @include kendo-bottom-navigation--theme-base();
+// }

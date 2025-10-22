@@ -5,7 +5,7 @@
 @use "./_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-tabstrip--layout-base() {
+// @mixin kendo-tabstrip--layout-base() {
 
     // Tabstrip wrapper
     .k-tabstrip-wrapper {
@@ -489,9 +489,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-tabstrip--layout() {
-    @include kendo-tabstrip--layout-base();
-}
+// }

@@ -4,7 +4,7 @@
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-appbar--theme-base() {
+// @mixin kendo-appbar--theme-base() {
 
     .k-appbar {
         @include box-shadow( $kendo-appbar-box-shadow );
@@ -30,9 +30,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-appbar--theme() {
-    @include kendo-appbar--theme-base();
-}
+// }

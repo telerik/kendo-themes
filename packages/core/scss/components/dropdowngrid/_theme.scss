@@ -1,11 +1,10 @@
-@mixin kendo-dropdown-grid--theme-base() {
+// @mixin kendo-dropdown-grid--theme-base() {
 
     // Dropdown grid
     .k-dropdown-grid {}
 
-}
 
 
-@mixin kendo-dropdown-grid--theme() {
-    @include kendo-dropdown-grid--theme-base();
-}
+// @mixin kendo-dropdown-grid--theme() {
+//     @include kendo-dropdown-grid--theme-base();
+// }

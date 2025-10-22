@@ -2,7 +2,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-notification--theme-base() {
+// @mixin kendo-notification--theme-base() {
 
     // Theme
     .k-notification {
@@ -24,9 +24,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-notification--theme() {
-    @include kendo-notification--theme-base();
-}
+// }

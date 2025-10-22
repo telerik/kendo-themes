@@ -1,6 +1,6 @@
 $kendo-prefix: k- !default;
 
-@mixin kendo-core--styles--utils-components() {
+// @mixin kendo-core--styles--utils-components() {
     // Legacy aliases
     .#{$kendo-prefix}top-start,
     .#{$kendo-prefix}pos-top-start {
@@ -57,4 +57,4 @@ $kendo-prefix: k- !default;
         left: 50%;
         transform: translateX(-50%);
     }
-}
+// }

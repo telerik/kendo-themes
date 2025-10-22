@@ -1,6 +1,6 @@
 @use "./_variables.scss" as *;
 
-@mixin kendo-floating-label--layout-base() {
+// @mixin kendo-floating-label--layout-base() {
 
 
     // Floating label
@@ -71,9 +71,9 @@
         }
     }
 
-}
+// }
 
 
-@mixin kendo-floating-label--layout() {
-    @include kendo-floating-label--layout-base();
-}
+// @mixin kendo-floating-label--layout() {
+//     @include kendo-floating-label--layout-base();
+// }

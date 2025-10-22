@@ -2,7 +2,7 @@
 @use "./variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-task-board--layout-base() {
+// @mixin kendo-task-board--layout-base() {
 
     // TaskBoard
     .k-taskboard {
@@ -215,9 +215,8 @@
         position: relative;
     }
 
-}
 
 
-@mixin kendo-task-board--layout() {
-    @include kendo-task-board--layout-base();
-}
+// @mixin kendo-task-board--layout() {
+//     @include kendo-task-board--layout-base();
+// }

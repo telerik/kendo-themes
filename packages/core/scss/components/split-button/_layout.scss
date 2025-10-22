@@ -1,6 +1,6 @@
 @use "./_variables.scss" as *;
 
-@mixin kendo-split-button--layout-base() {
+// @mixin kendo-split-button--layout-base() {
 
     // Split button
     .k-split-button {}
@@ -33,9 +33,8 @@
         }
     }
 
-}
 
 
-@mixin kendo-split-button--layout() {
-    @include kendo-split-button--layout-base();
-}
+// @mixin kendo-split-button--layout() {
+//     @include kendo-split-button--layout-base();
+// }

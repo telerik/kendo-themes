@@ -2,7 +2,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-tooltip--theme-base() {
+// @mixin kendo-tooltip--theme-base() {
     // Default tooltip
     .k-tooltip {
         @include fill(
@@ -33,9 +33,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-tooltip--theme() {
-    @include kendo-tooltip--theme-base();
-}
+// }

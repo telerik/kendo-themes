@@ -1,7 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-dropzone--theme-base() {
+// @mixin kendo-dropzone--theme-base() {
 
     // Dropzone
     .k-dropzone-inner {
@@ -33,9 +33,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-dropzone--theme() {
-    @include kendo-dropzone--theme-base();
-}
+// }

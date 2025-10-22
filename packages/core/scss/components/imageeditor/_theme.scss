@@ -1,7 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-image-editor--theme-base() {
+// @mixin kendo-image-editor--theme-base() {
 
     // Image Editor
     .k-imageeditor {
@@ -51,9 +51,8 @@
         );
     }
 
-}
 
 
-@mixin kendo-image-editor--theme() {
-    @include kendo-image-editor--theme-base();
-}
+// @mixin kendo-image-editor--theme() {
+//     @include kendo-image-editor--theme-base();
+// }

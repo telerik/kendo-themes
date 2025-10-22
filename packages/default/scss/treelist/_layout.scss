@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/treelist/_layout.scss" as *;
-
-
-@mixin kendo-treelist--layout() {
-    @include kendo-treelist--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/treelist/_layout.scss";

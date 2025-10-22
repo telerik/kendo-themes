@@ -1,6 +1,6 @@
 @use "./_variables.scss" as *;
 
-@mixin kendo-time-marker--layout-base() {
+// @mixin kendo-time-marker--layout-base() {
 
     .k-current-time {
         width: $kendo-current-time-width;
@@ -16,8 +16,7 @@
         }
     }
 
-}
 
-@mixin kendo-time-marker--layout() {
-    @include kendo-time-marker--layout-base();
-}
+// @mixin kendo-time-marker--layout() {
+//     @include kendo-time-marker--layout-base();
+// }

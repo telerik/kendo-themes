@@ -5,7 +5,7 @@
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-breadcrumb--layout-base() {
+// @mixin kendo-breadcrumb--layout-base() {
 
     // Breadcrumb
     .k-breadcrumb {
@@ -133,9 +133,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-breadcrumb--layout() {
-    @include kendo-breadcrumb--layout-base();
-}
+// }

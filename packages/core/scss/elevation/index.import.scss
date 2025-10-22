@@ -58,10 +58,10 @@ $kendo-elevation: map.merge($default-elevation, $kendo-elevation);
 }
 
 
-@mixin kendo-elevation--styles() {
+// @mixin kendo-elevation--styles() {
     :root {
         @each $level, $shadow in $kendo-elevation {
             --kendo-elevation-#{$level}: #{$shadow};
         }
     }
-}
+// }

@@ -2,7 +2,7 @@
 @use "./variables.scss" as *;
 @use "../button/_variables.scss" as *;
 
-@mixin kendo-map--theme-base() {
+// @mixin kendo-map--theme-base() {
 
     // Map theme
     .k-map {
@@ -31,9 +31,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-map--theme() {
-    @include kendo-map--theme-base();
-}
+// }

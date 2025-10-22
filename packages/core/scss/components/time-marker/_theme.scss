@@ -1,6 +1,6 @@
 @use "./_variables.scss" as *;
 
-@mixin kendo-time-marker--theme-base() {
+// @mixin kendo-time-marker--theme-base() {
 
     .k-current-time {
         background: $kendo-current-time-color;
@@ -18,9 +18,8 @@
         }
     }
 
-}
 
 
-@mixin kendo-time-marker--theme() {
-    @include kendo-time-marker--theme-base();
-}
+// @mixin kendo-time-marker--theme() {
+//     @include kendo-time-marker--theme-base();
+// }

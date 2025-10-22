@@ -8,7 +8,7 @@
 @use "../icons/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-toolbar--layout-base() {
+// @mixin kendo-toolbar--layout-base() {
 
     // Base
     .k-toolbar {
@@ -366,9 +366,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-toolbar--layout() {
-    @include kendo-toolbar--layout-base();
-}
+// }

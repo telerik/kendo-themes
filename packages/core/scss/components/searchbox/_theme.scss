@@ -1,11 +1,6 @@
-@mixin kendo-searchbox--theme-base() {
+// @mixin kendo-searchbox--theme-base() {
 
     // Searchbox
     .k-searchbox {}
 
-}
-
-
-@mixin kendo-searchbox--theme() {
-    @include kendo-searchbox--theme-base();
-}
+// }

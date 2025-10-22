@@ -2,7 +2,7 @@
 @use "../../color-system/_functions.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-upload--theme-base() {
+// @mixin kendo-upload--theme-base() {
 
     .k-upload {
         @include fill(
@@ -103,9 +103,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-upload--theme() {
-    @include kendo-upload--theme-base();
-}
+// }

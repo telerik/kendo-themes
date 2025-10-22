@@ -1,6 +1,6 @@
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-marquee--layout-base() {
+// @mixin kendo-marquee--layout-base() {
     // Marquee
     .k-marquee {
         position: absolute;
@@ -15,9 +15,4 @@
         width: 100%;
         height: 100%;
     }
-}
-
-
-@mixin kendo-marquee--layout() {
-    @include kendo-marquee--layout-base();
-}
+// }

@@ -1,6 +1,6 @@
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-ripple--layout-base() {
+// @mixin kendo-ripple--layout-base() {
 
     .k-ripple-target {
         position: relative;
@@ -50,9 +50,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-ripple--layout() {
-    @include kendo-ripple--layout-base();
-}
+// }

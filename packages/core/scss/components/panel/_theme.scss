@@ -29,7 +29,3 @@
         );
     }
 }
-
-@mixin kendo-panel--theme() {
-    @include kendo-panel--theme--base();
-}

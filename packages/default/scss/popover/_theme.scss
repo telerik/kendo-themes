@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/popover/_theme.scss" as *;
-
-
-@mixin kendo-popover--theme() {
-    @include kendo-popover--theme-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/popover/_theme.scss";

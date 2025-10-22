@@ -4,7 +4,7 @@
 @use "../../spacing/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-progressbar--layout-base() {
+// @mixin kendo-progressbar--layout-base() {
 
     // Base
     .k-progressbar {
@@ -236,9 +236,4 @@
         margin: 0;
     }
 
-}
-
-
-@mixin kendo-progressbar--layout() {
-    @include kendo-progressbar--layout-base();
-}
+// }

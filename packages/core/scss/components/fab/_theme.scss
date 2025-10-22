@@ -4,7 +4,7 @@
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-fab--theme-base() {
+// @mixin kendo-fab--theme-base() {
 
     // Normal state
     @each $name, $color in $kendo-fab-theme-colors {
@@ -151,9 +151,4 @@
         @include box-shadow( none );
     }
 
-}
-
-
-@mixin kendo-fab--theme() {
-    @include kendo-fab--theme-base();
-}
+// }

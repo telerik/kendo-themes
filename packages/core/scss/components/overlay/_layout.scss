@@ -1,7 +1,7 @@
 @use "./_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-overlay--layout-base() {
+// @mixin kendo-overlay--layout-base() {
 
     // Overlay
     .k-overlay {
@@ -14,9 +14,4 @@
         z-index: k-z-index("overlay");
     }
 
-}
-
-
-@mixin kendo-overlay--layout() {
-    @include kendo-overlay--layout-base();
-}
+// }

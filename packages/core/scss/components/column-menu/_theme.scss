@@ -1,7 +1,7 @@
 @use "../../color-system/_functions.import.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-column-menu--theme-base() {
+// @mixin kendo-column-menu--theme-base() {
     .k-column-menu {}
 
     .k-group-menu-item-action:not(.k-group-menu-item-drag-action).k-hover,
@@ -21,8 +21,7 @@
     .k-group-menu .k-group-menu-item-wrap + .k-group-menu-item-wrap {
         border-block-start-color: $kendo-group-menu-item-border;
     }
-}
 
-@mixin kendo-column-menu--theme() {
-    @include kendo-column-menu--theme-base();
-}
+// @mixin kendo-column-menu--theme() {
+//     @include kendo-column-menu--theme-base();
+// }

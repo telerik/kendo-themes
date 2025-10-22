@@ -4,7 +4,7 @@
 
 @use "../../spacing/index.import.scss" as *;
 
-@mixin kendo-bubble--layout-base() {
+// @mixin kendo-bubble--layout-base() {
     .k-bubble {
         @include border-radius( $kendo-bubble-border-radius );
         border-end-start-radius: $kendo-bubble-border-radius-sm;
@@ -55,8 +55,4 @@
             cursor: pointer;
         }
     }
-}
-
-@mixin kendo-bubble--layout() {
-    @include kendo-bubble--layout-base();
-}
+// }

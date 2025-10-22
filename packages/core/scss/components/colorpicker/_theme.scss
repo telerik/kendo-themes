@@ -1,10 +1,9 @@
-@mixin kendo-color-picker--theme-base() {
+// @mixin kendo-color-picker--theme-base() {
 
     // Color picker
     .k-color-picker {}
 
-}
 
-@mixin kendo-color-picker--theme() {
-    @include kendo-color-picker--theme-base();
-}
+// @mixin kendo-color-picker--theme() {
+//     @include kendo-color-picker--theme-base();
+// }

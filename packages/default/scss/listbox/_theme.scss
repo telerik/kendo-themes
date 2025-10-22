@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/listbox/_theme.scss" as *;
-
-
-@mixin kendo-listbox--theme() {
-    @include kendo-listbox--theme-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/listbox/_theme.scss";

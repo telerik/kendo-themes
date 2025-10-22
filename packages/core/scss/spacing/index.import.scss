@@ -58,14 +58,14 @@ $kendo-spacing: map.merge($default-spacing, $kendo-spacing);
 }
 
 // Generate a CSS variable for each value in the Spacing map
-@mixin kendo-spacing--styles() {
+// @mixin kendo-spacing--styles() {
     :root {
         @each $step, $spacing in $kendo-spacing {
             $_step: k-escape-class-name( $step );
             --kendo-spacing-#{$_step}: #{$spacing};
         }
     }
-}
+// }
 
 $kendo-sizing: map.merge( $kendo-spacing, (
     "auto": auto,

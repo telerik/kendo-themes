@@ -9,7 +9,7 @@
 @use "../button/_variables.scss" as *;
 @use "../../color-system/_functions.import.scss" as *;
 
-@mixin kendo-chat--layout-base() {
+// @mixin kendo-chat--layout-base() {
 
     // Chat
     .k-chat {
@@ -667,9 +667,4 @@
             }
         }
     }
-}
-
-
-@mixin kendo-chat--layout() {
-    @include kendo-chat--layout-base();
-}
+// }

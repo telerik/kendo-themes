@@ -3,7 +3,7 @@
 @use "./variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-menu--layout-base() {
+// @mixin kendo-menu--layout-base() {
 
     // Menu bar
     .k-menu-bar {
@@ -320,9 +320,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-menu--layout() {
-    @include kendo-menu--layout-base();
-}
+// }

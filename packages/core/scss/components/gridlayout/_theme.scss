@@ -1,10 +1,9 @@
-@mixin kendo-grid-layout--theme-base() {
+// @mixin kendo-grid-layout--theme-base() {
 
     // GridLayout
     .k-grid-layout {}
 
-}
 
-@mixin kendo-grid-layout--theme() {
-    @include kendo-grid-layout--theme-base();
-}
+// @mixin kendo-grid-layout--theme() {
+//     @include kendo-grid-layout--theme-base();
+// }

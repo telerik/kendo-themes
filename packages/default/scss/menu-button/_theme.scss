@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/menu-button/_theme.scss" as *;
-
-
-@mixin kendo-menu-button--theme() {
-    @include kendo-menu-button--theme-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/menu-button/_theme.scss";

@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/timeselector/_theme.scss" as *;
-
-
-@mixin kendo-time-selector--theme() {
-    @include kendo-time-selector--theme-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/timeselector/_theme.scss";

@@ -4,7 +4,7 @@
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-scheduler--theme-base() {
+// @mixin kendo-scheduler--theme-base() {
 
     // Appearance
     .k-scheduler {
@@ -235,9 +235,4 @@
     // Scheduler edit form
     .k-scheduler-edit-form {}
 
-}
-
-
-@mixin kendo-scheduler--theme() {
-    @include kendo-scheduler--theme-base();
-}
+// }

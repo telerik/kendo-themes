@@ -1,6 +1,6 @@
 @use "./variables.scss" as *;
 
-@mixin kendo-captcha--layout-base() {
+// @mixin kendo-captcha--layout-base() {
 
     // Captcha
     .k-captcha {
@@ -61,9 +61,4 @@
         font-style: $kendo-captcha-validation-message-font-style;
     }
 
-}
-
-
-@mixin kendo-captcha--layout() {
-    @include kendo-captcha--layout-base();
-}
+// }

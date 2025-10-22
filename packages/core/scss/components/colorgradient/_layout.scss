@@ -5,7 +5,7 @@
 @use "../../z-index/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-color-gradient--layout-base() {
+// @mixin kendo-color-gradient--layout-base() {
 
     // ColorGradient
     .k-colorgradient {
@@ -236,9 +236,9 @@
         overflow: visible;
         pointer-events: none;
     }
-}
+// }
 
 
-@mixin kendo-color-gradient--layout() {
-    @include kendo-color-gradient--layout-base();
-}
+// @mixin kendo-color-gradient--layout() {
+//     @include kendo-color-gradient--layout-base();
+// }

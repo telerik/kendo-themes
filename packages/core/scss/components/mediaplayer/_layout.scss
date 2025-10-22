@@ -3,7 +3,7 @@
 @use "./variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-media-player--layout-base() {
+// @mixin kendo-media-player--layout-base() {
 
     // Base
     .k-mediaplayer {
@@ -103,9 +103,8 @@
         height: 100% !important; // stylelint-disable-line declaration-no-important
     }
 
-}
 
 
-@mixin kendo-media-player--layout() {
-    @include kendo-media-player--layout-base();
-}
+// @mixin kendo-media-player--layout() {
+//     @include kendo-media-player--layout-base();
+// }

@@ -1,4 +1,4 @@
-@mixin kendo-dropdown-grid--layout-base() {
+// @mixin kendo-dropdown-grid--layout-base() {
 
     // Dropdown grid
     .k-dropdown-grid {}
@@ -12,9 +12,9 @@
         border-width: 0;
     }
 
-}
+// }
 
 
-@mixin kendo-dropdown-grid--layout() {
-    @include kendo-dropdown-grid--layout-base();
-}
+// @mixin kendo-dropdown-grid--layout() {
+//     @include kendo-dropdown-grid--layout-base();
+// }

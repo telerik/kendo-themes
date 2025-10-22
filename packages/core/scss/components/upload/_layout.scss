@@ -4,7 +4,7 @@
 @use "../icons/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-upload--layout-base() {
+// @mixin kendo-upload--layout-base() {
 
     .k-upload {
         border-width: $kendo-upload-border-width;
@@ -247,9 +247,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-upload--layout() {
-    @include kendo-upload--layout-base();
-}
+// }

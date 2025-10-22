@@ -3,7 +3,7 @@
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-switch--theme-base() {
+// @mixin kendo-switch--theme-base() {
 
     // Switch
     .k-switch {}
@@ -186,9 +186,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-switch--theme() {
-    @include kendo-switch--theme-base();
-}
+// }

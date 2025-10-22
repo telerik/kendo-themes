@@ -3,7 +3,7 @@
 @use "../../border-radii/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-slider--theme-base() {
+// @mixin kendo-slider--theme-base() {
 
     // Slider
     .k-slider {
@@ -84,9 +84,4 @@
         @include background-image( $kendo-slider-tick-vertical-image );
     }
 
-}
-
-
-@mixin kendo-slider--theme() {
-    @include kendo-slider--theme-base();
-}
+// }

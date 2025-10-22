@@ -1,6 +1,6 @@
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-virtual-scroller--layout-base() {
+// @mixin kendo-virtual-scroller--layout-base() {
 
     // Virtual scroller
     .k-virtual-scroller {
@@ -34,9 +34,8 @@
         z-index: k-z-index("base");
     }
 
-}
 
 
-@mixin kendo-virtual-scroller--layout() {
-    @include kendo-virtual-scroller--layout-base();
-}
+// @mixin kendo-virtual-scroller--layout() {
+//     @include kendo-virtual-scroller--layout-base();
+// }

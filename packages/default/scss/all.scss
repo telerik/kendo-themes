@@ -1,4 +1,171 @@
-@forward "./index.scss";
-@use "./index.scss" as *;
+@use "sass:map";
 
-@include kendo-theme--styles();
+// 1. Test theme import - PASSED
+@use './index.scss' as *;
+
+// 2. Test Foundation modules override - PASSED
+// @use './index.scss' as * with (
+//     $kendo-colors: (
+//         "primary": darkgoldenrod,
+//         "secondary": gainsboro,
+//     ),
+//     $kendo-elevation: (
+//         "1": 0 1px 2px 0 firebrick,
+//         "2": 0 2px 4px 0 oldlace,
+//         "3": 0 4px 8px 0 rgba(0, 0, 0, 0.05),
+//         "4": 0 8px 16px 0 rgba(0, 0, 0, 0.05),
+//         "5": 0 16px 32px 0 rgba(0, 0, 0, 0.05),
+//     ),
+//     $kendo-border-radii: (
+//         md: 3333rem,
+//         lg: 3333rem,
+//         imaginary: 6666rem
+//     ),
+//     $kendo-spacing: (
+//         1: 3333px,
+//         16: 3333px
+//     ),
+//     $kendo-font-sizes: (
+//         xs: 3333px,
+//         imaginary: 6666px
+//     ),
+//     $kendo-line-heights: (
+//         xs: 333,
+//         imaginary: 6.6
+//     ),
+//     $kendo-letter-spacings: (
+//         normal: 3333px,
+//         imaginary: 6666px
+//     ),
+//     $kendo-font-families: (
+//         sans-serif: test-serif,
+//         imaginary: imaginary-serif
+//     ),
+// );
+
+// 3. Test k-generate-color-variations function override - NOT PASSED
+// @use './index.scss' as *;
+// $kendo-colors: map.merge($kendo-colors, k-generate-color-variations("primary", hotpink, "default"));
+
+// :root {
+//     --kendo-color-primary: hotpink;
+// }
+
+// 4. Test components overrides - PASSED
+// @use "./index.scss" as * with (
+//     $kendo-actions-margin-top: 10px,
+//     $kendo-actionsheet-padding-x: null,
+//     $kendo-adaptive-bg: red,
+//     $kendo-appbar-margin-x: null,
+//     $kendo-avatar-border-width: 1px,
+//     $kendo-badge-border-width: 1px,
+//     $kendo-bottom-nav-padding-x: 20px,
+//     $kendo-breadcrumb-border-width: 0px,
+//     $kendo-button-border-width: 1px,
+//     $kendo-calendar-border-width: 1px,
+//     $kendo-captcha-spacer: 20px,
+//     $kendo-card-padding-x: 10px,
+//     $kendo-chart-wizard-icon-area-color: red,
+//     $kendo-chat-padding-x: 10px,
+//     $kendo-checkbox-border-width: 2px,
+//     $kendo-chip-border-width: 1px,
+//     $kendo-color-preview-border-radius: 10px,
+//     $kendo-color-editor-spacer: 20px,
+//     $kendo-color-gradient-spacer: 20px,
+//     $kendo-color-palette-font-family: null,
+//     $kendo-series-a: red,
+//     $kendo-daterange-picker-input-width: 10em,
+//     $kendo-datetime-width: 10px,
+//     $kendo-dialog-titlebar-bg: null,
+//     $kendo-dock-manager-border-width: 1px,
+//     $kendo-drag-hint-padding-x: 10px,
+//     $kendo-drawer-bg: red,
+//     $kendo-dropdowntree-popup-padding-x: 20px,
+//     $kendo-dropzone-padding-x: 20px,
+//     $kendo-editor-border-width: 1px,
+//     $kendo-expander-spacing-y: 20px,
+//     $kendo-fab-border-width: 0px,
+//     $kendo-file-manager-spacer: 10px,
+//     $kendo-filter-padding-x: 20px,
+//     $kendo-floating-label-scale: 1,
+//     $kendo-form-spacer: 10px,
+//     $kendo-gantt-border-width: 1px,
+//     $kendo-grid-border-width: 1px,
+//     $kendo-icon-size: 16px,
+//     $kendo-image-editor-margin-y: null,
+//     $kendo-input-default-width: 100%,
+//     $kendo-list-font-family: null,
+//     $kendo-listbox-spacing: 20px,
+//     $kendo-listgroup-border-width: 1px,
+//     $kendo-listview-padding-x: 20px,
+//     $kendo-loader-segment-border-radius: 50%,
+//     $kendo-map-border-width: 0px,
+//     $kendo-media-player-border-width: 1px,
+//     $kendo-menu-border-width: 0px,
+//     $kendo-menu-button-arrow-padding-x: 20px,
+//     $kendo-message-box-margin: 0 0 10px 0,
+//     $kendo-no-data-min-height: 140px,
+//     $kendo-notification-group-gap: 20px,
+//     $kendo-orgchart-spacer: 10px,
+//     $kendo-overlay-theme-colors: (),
+//     $kendo-pager-md-padding-x: 20px,
+//     $kendo-panel-border-radius: 10px,
+//     $kendo-panelbar-border-width: 20px,
+//     $kendo-pdf-viewer-border-width: 1px,
+//     $kendo-pivotgrid-spacer: 10px,
+//     $kendo-popover-border-width: 1px,
+//     $kendo-popup-border-width: null,
+//     $kendo-progressbar-height: 5px,
+//     $kendo-prompt-text: red,
+//     $kendo-radio-radius: 50%,
+//     $kendo-rating-font-family: null,
+//     $kendo-scheduler-border-width: 1px,
+//     $kendo-scrollview-border-width: 1px,
+//     $kendo-signature-width: 246px,
+//     $kendo-skeleton-text-transform: scale( 1, .6 ),
+//     $kendo-slider-size: 200px,
+//     $kendo-split-button-focus-shadow: null,
+//     $kendo-splitter-border-width: 1px,
+//     $kendo-spreadsheet-border-width: 1px,
+//     $kendo-stepper-margin-x: null,
+//     $kendo-switch-font-family: null,
+//     $kendo-table-border-width: 1px,
+//     $kendo-tabstrip-wrapper-padding-x: 20px,
+//     $kendo-taskboard-spacer: 10px,
+//     $kendo-tile-layout-border-width: 0px,
+//     $kendo-current-time-width: 1px,
+//     $kendo-timeline-spacing-x: 10px,
+//     $kendo-time-selector-border-width: 1px,
+//     $kendo-toolbar-md-padding-x: null,
+//     $kendo-tooltip-padding-y: 5px,
+//     $kendo-treelist-footer-row-bg: null,
+//     $kendo-treeview-font-family: null,
+//     $kendo-h1-font-size: 96px,
+//     $kendo-upload-border-width: 1px,
+//     $kendo-window-border-width: 0px,
+//     $kendo-wizard-padding-x: null
+// )
+
+// 5. Test single component import and override - PASSED
+// @use "./grid/index.scss" as * with (
+//     $kendo-grid-border-width: 100px
+// );
+
+// 6. Test multiple component import - PASSED
+// @forward "./typography/_index.scss";
+// @forward "./icons/_index.scss";
+// @forward "./messagebox/_index.scss";
+// @forward "./draggable/_index.scss";
+// @forward "./list/_index.scss";
+// @forward "./listgroup/_index.scss";
+// @forward "./overlay/_index.scss";
+
+// 6. Test multiple component random order - NOT PASSED
+
+// @forward "./draggable/_index.scss";
+// @forward "./list/_index.scss";
+// @forward "./listgroup/_index.scss";
+// @forward "./overlay/_index.scss";
+// @forward "./typography/_index.scss";
+// @forward "./icons/_index.scss";
+// @forward "./messagebox/_index.scss";

@@ -3,7 +3,7 @@
 @use "./variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-tile-layout--layout-base() {
+// @mixin kendo-tile-layout--layout-base() {
 
     .k-tilelayout {
         border-width: $kendo-tile-layout-border-width;
@@ -46,9 +46,8 @@
         min-height: 0;
     }
 
-}
 
 
-@mixin kendo-tile-layout--layout() {
-    @include kendo-tile-layout--layout-base();
-}
+// @mixin kendo-tile-layout--layout() {
+//     @include kendo-tile-layout--layout-base();
+// }

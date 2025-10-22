@@ -4,7 +4,7 @@
 @use "../button/_variables.scss" as *;
 @use "../list/_variables.scss" as *;
 
-@mixin kendo-spreadsheet--theme-base() {
+// @mixin kendo-spreadsheet--theme-base() {
 
     // Spreadsheet
     .k-spreadsheet {
@@ -210,8 +210,4 @@
     .k-syntax-bool { color: #a9169c; }
     .k-syntax-paren-match { background-color: #caf200; }
 
-}
-
-@mixin kendo-spreadsheet--theme() {
-    @include kendo-spreadsheet--theme-base();
-}
+// }

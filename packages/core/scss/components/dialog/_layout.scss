@@ -3,7 +3,7 @@
 @use "../window/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-dialog--layout-base() {
+// @mixin kendo-dialog--layout-base() {
 
     .k-dialog-wrapper {
         display: flex;
@@ -71,9 +71,4 @@
         overflow: hidden;
     }
 
-}
-
-
-@mixin kendo-dialog--layout() {
-    @include kendo-dialog--layout-base();
-}
+// }

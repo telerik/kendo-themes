@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/orgchart/_layout.scss" as *;
-
-
-@mixin kendo-orgchart--layout() {
-    @include kendo-orgchart--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/orgchart/_layout.scss";

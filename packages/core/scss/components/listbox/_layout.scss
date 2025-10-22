@@ -1,7 +1,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-listbox--layout-base() {
+// @mixin kendo-listbox--layout-base() {
 
     .k-listbox {
         width: $kendo-listbox-width;
@@ -83,9 +83,4 @@
         cursor: default;
     }
 
-}
-
-
-@mixin kendo-listbox--layout() {
-    @include kendo-listbox--layout-base();
-}
+// }

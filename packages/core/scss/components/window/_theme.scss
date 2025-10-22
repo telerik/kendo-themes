@@ -4,7 +4,7 @@
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-window--theme-base() {
+// @mixin kendo-window--theme-base() {
 
     // Window
     .k-window {
@@ -40,9 +40,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-window--theme() {
-    @include kendo-window--theme-base();
-}
+// }

@@ -5,7 +5,7 @@
 @use "./variables.scss" as *;
 @use "../button/_variables.scss" as *;
 
-@mixin kendo-dataviz--theme-base() {
+// @mixin kendo-dataviz--theme-base() {
 
     // Elements
     .k-chart,
@@ -113,9 +113,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-dataviz--theme() {
-    @include kendo-dataviz--theme-base();
-}
+// }

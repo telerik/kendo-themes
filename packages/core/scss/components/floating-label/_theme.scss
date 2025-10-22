@@ -2,7 +2,7 @@
 @use "../../color-system/_functions.import.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-floating-label--theme-base() {
+// @mixin kendo-floating-label--theme-base() {
 
     // Floating label
     .k-floating-label-container {
@@ -28,9 +28,8 @@
         }
     }
 
-}
 
 
-@mixin kendo-floating-label--theme() {
-    @include kendo-floating-label--theme-base();
-}
+// @mixin kendo-floating-label--theme() {
+//     @include kendo-floating-label--theme-base();
+// }

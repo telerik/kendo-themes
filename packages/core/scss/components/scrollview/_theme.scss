@@ -1,7 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-scrollview--theme-base() {
+// @mixin kendo-scrollview--theme-base() {
 
    .k-scrollview {
         @include fill(
@@ -87,9 +87,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-scrollview--theme() {
-    @include kendo-scrollview--theme-base();
-}
+// }

@@ -5,7 +5,7 @@
 @use "./variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 
-@mixin kendo-stepper--layout-base() {
+// @mixin kendo-stepper--layout-base() {
 
     // Base
     .k-stepper {
@@ -261,9 +261,4 @@
             padding-inline: $kendo-stepper-inline-content-padding-y;
         }
     }
-}
-
-
-@mixin kendo-stepper--layout() {
-    @include kendo-stepper--layout-base();
-}
+// }

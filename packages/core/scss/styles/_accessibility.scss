@@ -1,4 +1,4 @@
-@mixin kendo-core--styles--accessibility() {
+// @mixin kendo-core--styles--accessibility() {
 
     /// This class could be assigned to elements which should be visually hidden, but remain accessible for screen readers.
     /// @name .k-sr-only
@@ -11,4 +11,4 @@
         overflow: hidden;
     }
 
-}
+// }

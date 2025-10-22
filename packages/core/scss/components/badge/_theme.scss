@@ -2,7 +2,7 @@
 @use "../../color-system/_functions.import.scss" as *;
 @use "_variables.scss" as *;
 
-@mixin kendo-badge--theme-base() {
+// @mixin kendo-badge--theme-base() {
 
     // Solid badges
     @each $name, $color in $kendo-badge-theme-colors {
@@ -26,9 +26,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-badge--theme() {
-    @include kendo-badge--theme-base();
-}
+// }

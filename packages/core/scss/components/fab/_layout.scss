@@ -2,7 +2,7 @@
 @use "sass:map";
 @use "./variables.scss" as *;
 
-@mixin kendo-fab--layout-base() {
+// @mixin kendo-fab--layout-base() {
 
     // Floating Action Button (FAB)
     .k-fab {
@@ -142,9 +142,4 @@
             flex-direction: row-reverse;
         }
     }
-}
-
-
-@mixin kendo-fab--layout() {
-    @include kendo-fab--layout-base();
-}
+// }

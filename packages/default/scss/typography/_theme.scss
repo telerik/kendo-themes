@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/typography/_theme.scss" as *;
-
-
-@mixin kendo-typography--theme() {
-    @include kendo-typography--theme-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/typography/_theme.scss";

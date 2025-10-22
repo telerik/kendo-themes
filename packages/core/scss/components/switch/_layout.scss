@@ -3,7 +3,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-switch--layout-base() {
+// @mixin kendo-switch--layout-base() {
 
     .k-switch {
         box-sizing: border-box;
@@ -135,9 +135,4 @@
 
     }
 
-}
-
-
-@mixin kendo-switch--layout() {
-    @include kendo-switch--layout-base();
-}
+// }

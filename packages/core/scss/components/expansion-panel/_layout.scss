@@ -1,7 +1,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-expander--layout-base() {
+// @mixin kendo-expander--layout-base() {
 
     // Base
     .k-expander {
@@ -69,9 +69,4 @@
     .k-expander:not(.k-expanded) + .k-expander:not(.k-expanded) {
         border-block-start-width: 0;
     }
-}
-
-
-@mixin kendo-expander--layout() {
-    @include kendo-expander--layout-base();
-}
+// }

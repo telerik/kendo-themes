@@ -6,7 +6,7 @@
 @use "../button/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-time-selector--layout-base() {
+// @mixin kendo-time-selector--layout-base() {
 
     // Time selector
     .k-timeselector {
@@ -247,9 +247,8 @@
         }
     }
 
-}
 
 
-@mixin kendo-time-selector--layout() {
-    @include kendo-time-selector--layout-base();
-}
+// @mixin kendo-time-selector--layout() {
+//     @include kendo-time-selector--layout-base();
+// }

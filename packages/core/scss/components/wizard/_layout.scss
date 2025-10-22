@@ -1,7 +1,7 @@
 @use "sass:list";
 @use "./variables.scss" as *;
 
-@mixin kendo-wizard--layout-base() {
+// @mixin kendo-wizard--layout-base() {
 
     // Wizard
     .k-wizard {
@@ -122,9 +122,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-wizard--layout() {
-    @include kendo-wizard--layout-base();
-}
+// }

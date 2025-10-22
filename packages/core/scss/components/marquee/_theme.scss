@@ -1,6 +1,6 @@
 @use "./_variables.scss" as *;
 
-@mixin kendo-marquee--theme-base() {
+// @mixin kendo-marquee--theme-base() {
     // Marquee
     .k-marquee-color {
         color: $kendo-marquee-text;
@@ -19,9 +19,4 @@
             color: $kendo-marquee-text;
         }
     }
-}
-
-
-@mixin kendo-marquee--theme() {
-    @include kendo-marquee--theme-base();
-}
+// }

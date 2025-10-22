@@ -1,7 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-captcha--theme-base() {
+// @mixin kendo-captcha--theme-base() {
 
     // Captcha
     .k-captcha {
@@ -12,9 +12,4 @@
         );
     }
 
-}
-
-
-@mixin kendo-captcha--theme() {
-    @include kendo-captcha--theme-base();
-}
+// }

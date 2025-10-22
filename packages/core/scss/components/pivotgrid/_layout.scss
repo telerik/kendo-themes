@@ -4,7 +4,7 @@
 @use "../icons/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-pivotgrid--layout-base() {
+// @mixin kendo-pivotgrid--layout-base() {
 
     // Pivotgrid
     .k-pivotgrid {
@@ -653,9 +653,4 @@
         cursor: pointer;
     }
 
-}
-
-
-@mixin kendo-pivotgrid--layout() {
-    @include kendo-pivotgrid--layout-base();
-}
+// }

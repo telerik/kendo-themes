@@ -8,7 +8,7 @@
 @use "../icons/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-scheduler--layout-base() {
+// @mixin kendo-scheduler--layout-base() {
 
     // Layout
     .k-scheduler {
@@ -939,9 +939,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-scheduler--layout() {
-    @include kendo-scheduler--layout-base();
-}
+// }

@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/multiselect/_theme.scss" as *;
-
-
-@mixin kendo-multiselect--theme() {
-    @include kendo-multiselect--theme-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/multiselect/_theme.scss";

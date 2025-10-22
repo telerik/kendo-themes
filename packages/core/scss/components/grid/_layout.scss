@@ -16,7 +16,7 @@
 @use "../popup/_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 
-@mixin kendo-grid--layout-base() {
+// @mixin kendo-grid--layout-base() {
 
     // Grid
     .k-grid {
@@ -1516,9 +1516,4 @@
         flex: 1 1 auto;
     }
 
-}
-
-
-@mixin kendo-grid--layout() {
-    @include kendo-grid--layout-base();
-}
+// }

@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/listview/_layout.scss" as *;
-
-
-@mixin kendo-listview--layout() {
-    @include kendo-listview--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/listview/_layout.scss";

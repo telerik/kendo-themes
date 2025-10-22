@@ -2,7 +2,7 @@
 @use "./variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-map--layout-base() {
+// @mixin kendo-map--layout-base() {
 
     // Map
     .k-map {
@@ -136,9 +136,4 @@
             display: none;
         }
     }
-}
-
-
-@mixin kendo-map--layout() {
-    @include kendo-map--layout-base();
-}
+// }

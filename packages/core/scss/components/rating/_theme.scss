@@ -1,7 +1,7 @@
 @use "../../color-system/_functions.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-rating--theme-base() {
+// @mixin kendo-rating--theme-base() {
 
     .k-rating {
         color: k-color(on-app-surface);
@@ -40,9 +40,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-rating--theme() {
-    @include kendo-rating--theme-base();
-}
+// }

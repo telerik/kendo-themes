@@ -1,10 +1,9 @@
-@mixin kendo-stack-layout--layout-base() {
+// @mixin kendo-stack-layout--layout-base() {
 
     // StackLayout
     .k-stack-layout {}
 
-}
 
-@mixin kendo-stack-layout--layout() {
-    @include kendo-stack-layout--layout-base();
-}
+// @mixin kendo-stack-layout--layout() {
+//     @include kendo-stack-layout--layout-base();
+// }

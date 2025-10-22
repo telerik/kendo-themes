@@ -1,11 +1,10 @@
-@mixin kendo-masked-textbox--layout-base() {
+// @mixin kendo-masked-textbox--layout-base() {
 
     // Masked textbox
     .k-maskedtextbox {}
 
-}
 
 
-@mixin kendo-masked-textbox--layout() {
-    @include kendo-masked-textbox--layout-base();
-}
+// @mixin kendo-masked-textbox--layout() {
+//     @include kendo-masked-textbox--layout-base();
+// }

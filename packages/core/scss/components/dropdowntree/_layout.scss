@@ -1,6 +1,6 @@
 @use "./variables.scss" as *;
 
-@mixin kendo-dropdown-tree--layout-base() {
+// @mixin kendo-dropdown-tree--layout-base() {
 
     // Dropdown tree
     .k-dropdown-tree {}
@@ -36,9 +36,9 @@
         }
     }
 
-}
+// }
 
 
-@mixin kendo-dropdown-tree--layout() {
-    @include kendo-dropdown-tree--layout-base();
-}
+// @mixin kendo-dropdown-tree--layout() {
+//     @include kendo-dropdown-tree--layout-base();
+// }

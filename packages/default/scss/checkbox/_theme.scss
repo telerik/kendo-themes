@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/checkbox/_theme.scss" as *;
-
-
-@mixin kendo-checkbox--theme() {
-    @include kendo-checkbox--theme-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/checkbox/_theme.scss";

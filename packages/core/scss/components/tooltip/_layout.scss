@@ -4,7 +4,7 @@
 @use "./_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-tooltip--layout-base() {
+// @mixin kendo-tooltip--layout-base() {
 
     .k-tooltip {
         @include border-radius( $kendo-tooltip-border-radius );
@@ -115,9 +115,4 @@
         pointer-events: none;
     }
 
-}
-
-
-@mixin kendo-tooltip--layout() {
-    @include kendo-tooltip--layout-base();
-}
+// }
