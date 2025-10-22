@@ -334,14 +334,14 @@ $kendo-grid-sorting-indicator-text: k-color(primary) !default;
 /// The font size of the Grid.
 /// @group grid
 $kendo-grid-sorting-index-font-size: ($kendo-icon-size * .75) !default;
-/// The spacing of the Grid.
+/// The sorting index vertical spacing of the Grid.
 /// @group grid
 $kendo-grid-sorting-index-spacing-y: k-spacing(0.5) !default;
-/// The spacing of the Grid.
+/// The sorting index horizontal spacing of the Grid.
 /// @group grid
 $kendo-grid-sorting-index-spacing-x: calc( #{$kendo-grid-sorting-index-spacing-y} * -1 ) !default;
 
-/// The spacing of the Grid icon.
+/// The sorted icon spacing of the Grid.
 /// @group grid
 $kendo-grid-sorted-icon-spacing: calc( #{k-spacing(4)} - 1px ) !default;
 
@@ -354,41 +354,41 @@ $kendo-grid-focus-shadow: $kendo-table-focus-shadow !default;
 $kendo-grid-command-cell-button-spacing: k-spacing(2) !default;
 
 // Must be solid colors
-/// The background color of the Grid.
+/// The background color of the sticky content in the Grid.
 /// @group grid
 $kendo-grid-sticky-bg: $kendo-grid-bg !default;
-/// The background color of the Grid.
+/// The alternate background color of the sticky content in the Grid.
 /// @group grid
 $kendo-grid-sticky-alt-bg: k-color(base-subtle) !default;
-/// The background color of the hovered Grid.
+/// The background color of the hovered sticky content in the Grid.
 /// @group grid
 $kendo-grid-sticky-hover-bg: k-color(base-subtle-hover) !default;
 
-/// The border color of the Grid.
+/// The border color of the sticky content in the Grid.
 /// @group grid
 $kendo-grid-sticky-border: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
 
-/// The background color of the Grid header.
+/// The background color of the sticky header in the Grid.
 /// @group grid
 $kendo-grid-sticky-header-bg: $kendo-grid-header-bg !default;
-/// The text color of the Grid header.
+/// The text color of the sticky header in the Grid.
 /// @group grid
 $kendo-grid-sticky-header-text: $kendo-grid-header-text !default;
-/// The border color of the Grid header.
+/// The border color of the sticky header in the Grid.
 /// @group grid
 $kendo-grid-sticky-header-border: $kendo-grid-sticky-border !default;
 
-/// The background color of the Grid footer.
+/// The background color of the sticky footer in the Grid.
 /// @group grid
 $kendo-grid-sticky-footer-bg: $kendo-grid-header-bg !default;
-/// The background color of the hovered Grid footer.
+/// The background color of the hovered sticky footer in the Grid.
 /// @group grid
 $kendo-grid-sticky-footer-hover-bg: $kendo-grid-sticky-footer-bg !default;
 
-/// The width of the Grid.
+/// The width of the Grid column menu.
 /// @group grid
 $kendo-grid-column-menu-width: 250px !default;
-/// The width of the Grid.
+/// The maximum width of the Grid column menu.
 /// @group grid
 $kendo-grid-column-menu-max-width: 320px !default;
 
@@ -473,7 +473,7 @@ $kendo-grid-hierarchy-col-width: ($kendo-icon-size * 2) !default;
 /// The grouping border top of the Grid row.
 /// @group grid
 $kendo-grid-grouping-row-border-top: 1px !default;
-/// The border y of the Grid footer.
+/// The vertical border of the Grid footer.
 /// @group grid
 $kendo-grid-group-footer-border-y: 1px !default;
 

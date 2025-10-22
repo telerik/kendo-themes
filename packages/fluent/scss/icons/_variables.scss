@@ -4,25 +4,25 @@
 /// The default size of the Icons.
 /// @group icon
 $kendo-icon-size: 1rem !default;
-/// The size of the extra small Icons.
+/// The xs size of the Icon.
 /// @group icon
 $kendo-icon-size-xs: calc( var( --kendo-icon-size, 1rem ) * .75 ) !default;
-/// The size of the small Icons.
+/// The sm size of the Icon.
 /// @group icon
 $kendo-icon-size-sm: calc( var( --kendo-icon-size-sm, 1rem ) * .875 ) !default;
-/// The size of the medium Icons.
+/// The md size of the Icon.
 /// @group icon
 $kendo-icon-size-md: 1rem !default;
-/// The size of the large Icons.
+/// The lg size of the Icon.
 /// @group icon
 $kendo-icon-size-lg: calc( var( --kendo-icon-size-lg, 1rem ) * 1.25 ) !default;
-/// The size of the extra large Icons.
+/// The xl size of the Icon.
 /// @group icon
 $kendo-icon-size-xl: calc( var( --kendo-icon-size, 1rem ) * 1.5 ) !default;
-/// The size of the double extra large Icons.
+/// The xxl size of the Icon.
 /// @group icon
 $kendo-icon-size-xxl: calc( var( --kendo-icon-size-xxl, 1rem ) * 2 ) !default;
-/// The size of the triple extra large Icons.
+/// The xxxl size of the Icon.
 /// @group icon
 $kendo-icon-size-xxxl: calc( var( --kendo-icon-size-xxxl, 1rem ) * 3 ) !default;
 
