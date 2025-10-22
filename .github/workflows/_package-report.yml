@@ -52,7 +52,7 @@ jobs:
     needs: post-status-comment
     strategy:
       matrix:
-        package: [core, default, classic, bootstrap, material, fluent, utils, html]
+        package: [core, default, utils, html]
     steps:
       - name: Checkout branch
         uses: actions/checkout@v5
@@ -120,7 +120,7 @@ jobs:
     needs: post-status-comment
     strategy:
       matrix:
-        package: [core, default, classic, bootstrap, material, fluent, utils, html]
+        package: [core, default, utils, html]
     steps:
       - name: Checkout branch
         uses: actions/checkout@v5
@@ -200,14 +200,14 @@ jobs:
 
       - name: Generate Comparison Table
         run: |
-          echo "|                | core          | default            | classic               | bootstrap            | material            | fluent          | utils             | html              |" >> size-comparison.md
-          echo "|----------------|---------------|--------------------|-----------------------|----------------------|---------------------|-----------------|-------------------|-------------------|" >> size-comparison.md
+          echo "|                | core          | default            | utils             | html              |" >> size-comparison.md
+          echo "|----------------|---------------|--------------------|-------------------|-------------------|" >> size-comparison.md
 
           size_row="| **Size**       "
           gzip_row="| **Gzip Size**  "
           time_row="| **Compile Time** "
 
-          for package in core default classic bootstrap material fluent utils html; do
+          for package in core default utils html; do
             pr_file="pr-data-$package/data.txt"
             develop_file="develop-data-$package/data.txt"
 
