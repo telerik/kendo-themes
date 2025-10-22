@@ -1,5 +1,16 @@
+// Dependencies
+@forward "../icons/_index.scss";
+@forward "../window/_index.scss";
+@forward "../splitter/_index.scss";
+@forward "../dataviz/_index.scss";
+@forward "../expansion-panel/_index.scss";
+@forward "../grid/_index.scss";
+@forward "../tabstrip/_index.scss";
+@forward "../listview/_index.scss";
+@forward "../forms/_index.scss";
+@forward "../combobox/_index.scss";
+
 // Component
 @forward "./_variables.scss";
 @forward "./_layout.scss";
 @forward "./_theme.scss";
-

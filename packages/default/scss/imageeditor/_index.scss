@@ -1,5 +1,11 @@
+// Dependencies
+@forward "../toolbar/_index.scss";
+@forward "../forms/_index.scss";
+@forward "../dropdownlist/_index.scss";
+@forward "../numerictextbox/_index.scss";
+@forward "../checkbox/_index.scss";
+
 // Component
 @forward "./_variables.scss";
 @forward "./_layout.scss";
 @forward "./_theme.scss";
-

@@ -1,5 +1,9 @@
+// Dependencies
+@forward "../splitter/_index.scss";
+@forward "../toolbar/_index.scss";
+@forward "../tabstrip/_index.scss";
+
 // Component
 @forward "./_variables.scss";
 @forward "./_layout.scss";
 @forward "./_theme.scss";
-

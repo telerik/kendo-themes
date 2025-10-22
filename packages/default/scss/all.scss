@@ -1,7 +1,7 @@
 @use "sass:map";
 
 // 1. Test theme import - PASSED
-@use './index.scss' as *;
+// @use './index.scss' as *;
 
 // 2. Test Foundation modules override - PASSED
 // @use './index.scss' as * with (

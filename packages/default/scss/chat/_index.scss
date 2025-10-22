@@ -1,5 +1,18 @@
+// Dependencies
+@forward "../icons/_index.scss";
+@forward "../textarea/_index.scss";
+@forward "../card/_index.scss";
+@forward "../appbar/_index.scss";
+@forward "../toolbar/_index.scss";
+@forward "../bubble/_index.scss";
+@forward "../upload/_index.scss";
+@forward "../dropzone/_index.scss";
+@forward "../avatar/_index.scss";
+@forward "../speech-to-text-button/_index.scss";
+@forward "../suggestion/_index.scss";
+@forward "../skeleton/_index.scss";
+
 // Component
 @forward "./_variables.scss";
 @forward "./_layout.scss";
 @forward "./_theme.scss";
-

@@ -1,5 +1,10 @@
+// Dependencies
+@forward "../action-buttons/_index.scss";
+@forward "../color-preview/_index.scss";
+@forward "../colorpalette/_index.scss";
+@forward "../colorgradient/_index.scss";
+
 // Component
 @forward "./_variables.scss";
 @forward "./_layout.scss";
 @forward "./_theme.scss";
-

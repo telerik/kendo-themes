@@ -1,5 +1,14 @@
+// Dependencies
+@forward "../icons/_index.scss";
+@forward "../forms/_index.scss";
+@forward "../textbox/_index.scss";
+@forward "../dropdownlist/_index.scss";
+@forward "../upload/_index.scss";
+@forward "../menu/_index.scss";
+@forward "../card/_index.scss";
+@forward "../window/_index.scss";
+
 // Component
 @forward "./_variables.scss";
 @forward "./_layout.scss";
 @forward "./_theme.scss";
-

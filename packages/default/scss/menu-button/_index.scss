@@ -1,5 +1,8 @@
+// Dependencies
+@forward "../button/_index.scss";
+@forward "../menu/_index.scss";
+
 // Component
 @forward "./_variables.scss";
 @forward "./_layout.scss";
 @forward "./_theme.scss";
-

@@ -1,5 +1,10 @@
+// Dependencies
+@forward "../input/_index.scss";
+@forward "../popup/_index.scss";
+@forward "../list/_index.scss";
+@forward "../floating-label/_index.scss";
+
 // Component
 @forward "./_variables.scss";
 @forward "./_layout.scss";
 @forward "./_theme.scss";
-

@@ -1,5 +1,14 @@
+// Dependencies
+@forward "../icons/_index.scss";
+@forward "../adaptive/_index.scss";
+@forward "../button/_index.scss";
+@forward "../datetimepicker/_index.scss";
+@forward "../dropdownlist/_index.scss";
+@forward "../dialog/_index.scss";
+@forward "../tooltip/_index.scss";
+@forward "../time-marker/_index.scss";
+
 // Component
 @forward "./_variables.scss";
 @forward "./_layout.scss";
 @forward "./_theme.scss";
-
