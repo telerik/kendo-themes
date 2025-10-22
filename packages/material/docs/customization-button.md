@@ -208,26 +208,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-sm-calc-size</td>
-    <td>Calculation</td>
-    <td><code>calc( ( #{$kendo-button-sm-line-height} * 1em ) + ( #{$kendo-button-sm-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) )</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-spacing-3\.5, 0.875rem) / 2) * 2 + 1px * 2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-button-inner-calc-size</td>
-    <td>Calculation</td>
-    <td><code>calc( ( #{$kendo-button-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) )</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-spacing-4\.5, 1.125rem) / 2) * 2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated inner height of the Button excluding the border width.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-button-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -556,6 +536,146 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the pulsing animation for the generating Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-gradient</td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the solid Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-shadow</td>
+    <td>Bool</td>
+    <td><code>false</code></td>
+    <td><code>false</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the solid Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-shadow-blur</td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow blur of the solid Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-shadow-spread</td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow spread of the solid Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-solid-button-shadow-opacity</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow opacity of the solid Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-outline-button-shadow</td>
+    <td>Bool</td>
+    <td><code>false</code></td>
+    <td><code>false</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-outline-button-shadow-blur</td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow blur of the outline Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-outline-button-shadow-spread</td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow spread of the outline Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-outline-button-shadow-opacity</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow opacity of the outline Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-button-shadow</td>
+    <td>Bool</td>
+    <td><code>false</code></td>
+    <td><code>false</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the link Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-button-shadow-blur</td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow blur of the link Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-button-shadow-spread</td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow spread of the link Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-button-shadow-opacity</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow opacity of the link Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-clear-button-focus-opacity</td>
+    <td>Number</td>
+    <td><code>.12</code></td>
+    <td><code>0.12</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the clear Button.</div></div>
     </td>
 </tr>
 <tr>

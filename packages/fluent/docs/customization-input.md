@@ -48,13 +48,13 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-border-height</td>
-    <td>Number</td>
-    <td><code>calc( $kendo-input-border-width * 2 )</code></td>
-    <td><code>2px</code></td>
+    <td>$kendo-input-focus-border-width</td>
+    <td>String</td>
+    <td><code>var( --kendo-input-focus-border-width, 2px )</code></td>
+    <td><code>var(--kendo-input-focus-border-width, 2px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the border around the Input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Input input.</div></div>
     </td>
 </tr>
 <tr>
@@ -175,6 +175,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-font-family</td>
+    <td>String</td>
+    <td><code>var( --kendo-input-font-family, var( --kendo-font-family, inherit) )</code></td>
+    <td><code>var(--kendo-input-font-family, var(--kendo-font-family, inherit))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Input input.</div></div>
     </td>
 </tr>
 <tr>
@@ -1035,16 +1045,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled flat Picker components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-input-calc-size</td>
-    <td>Calculation</td>
-    <td><code>calc( ( #{$kendo-input-md-line-height} * 1em ) + ( #{$kendo-input-md-padding-y} * 2 ) + calc( #{$kendo-input-border-width} * 2 ) )</code></td>
-    <td><code>calc(var(--kendo-input-line-height, var(--kendo-line-height, normal)) * 1em + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2 + 1px * 2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Input.</div></div>
     </td>
 </tr>
 <tr>

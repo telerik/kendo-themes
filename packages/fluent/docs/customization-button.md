@@ -178,26 +178,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-calc-size</td>
-    <td>Calculation</td>
-    <td><code>calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) )</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-button-inner-calc-size</td>
-    <td>Calculation</td>
-    <td><code>calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) )</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1, 0.25rem)) + 1px) * 2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated inner height of the Button excluding the border width.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-button-sizes</td>
     <td>Map</td>
     <td><code>(

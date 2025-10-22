@@ -357,6 +357,27 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Loader container.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-loader-theme-colors</td>
+    <td>Map</td>
+    <td><code>(
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+)</code></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #f35800)</li><li>secondary: var(--kendo-color-secondary, #b6b6b6)</li><li>tertiary: var(--kendo-color-tertiary, #03a9f4)</li><li>info: var(--kendo-color-info, #007bc3)</li><li>success: var(--kendo-color-success, #3ea44e)</li><li>warning: var(--kendo-color-warning, #ffa41f)</li><li>error: var(--kendo-color-error, #d92800)</li><li>dark: var(--kendo-color-dark, #404040)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #404040)</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors of the Loader.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

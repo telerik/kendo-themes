@@ -128,6 +128,35 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-checkbox-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        size: $kendo-checkbox-sm-size,
+        glyph-size: $kendo-checkbox-sm-glyph-size,
+        ripple-size: $kendo-checkbox-sm-ripple-size,
+        indicator-size: k-spacing(8)
+    ),
+    md: (
+        size: $kendo-checkbox-md-size,
+        glyph-size: $kendo-checkbox-md-glyph-size,
+        ripple-size: $kendo-checkbox-md-ripple-size,
+        indicator-size: k-spacing(10)
+    ),
+    lg: (
+        size: $kendo-checkbox-lg-size,
+        glyph-size: $kendo-checkbox-lg-glyph-size,
+        ripple-size: $kendo-checkbox-lg-ripple-size,
+        indicator-size: k-spacing(12)
+    )
+)</code></td>
+    <td><ul><li>sm: "size":"var(--kendo-spacing-4, 1rem)","glyph-size":"var(--kendo-spacing-3, 0.75rem)","ripple-size":"var(--kendo-spacing-8, 2rem)","indicator-size":"var(--kendo-spacing-8, 2rem)"</li><li>md: "size":"var(--kendo-spacing-4, 1rem)","glyph-size":"var(--kendo-spacing-4, 1rem)","ripple-size":"var(--kendo-spacing-10, 2.5rem)","indicator-size":"var(--kendo-spacing-10, 2.5rem)"</li><li>lg: "size":"var(--kendo-spacing-5, 1.25rem)","glyph-size":"var(--kendo-spacing-5, 1.25rem)","ripple-size":"var(--kendo-spacing-12, 3rem)","indicator-size":"var(--kendo-spacing-12, 3rem)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-checkbox-bg</td>
     <td>String</td>
     <td><code>unset</code></td>
