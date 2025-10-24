@@ -140,7 +140,7 @@
             position: sticky;
 
             &::before {
-                content: "\200b";
+                content: " ";
                 padding-block: $kendo-table-md-cell-padding-y;
                 padding-inline: 0;
                 width: 0;

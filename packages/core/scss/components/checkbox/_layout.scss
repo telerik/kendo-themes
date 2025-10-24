@@ -99,7 +99,7 @@
         position: relative;
 
         &::before {
-            content: "\200b";
+            content: " ";
             width: 0px;
             overflow: hidden;
             flex: none;

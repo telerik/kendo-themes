@@ -12,7 +12,7 @@
         transform: $kendo-skeleton-text-transform;
 
         &:empty::before {
-            content: "\200b";
+            content: " ";
         }
     }
 

@@ -76,7 +76,7 @@
         flex: 1;
 
         &:empty::before {
-            content: "\200b";
+            content: " ";
         }
     }
 
