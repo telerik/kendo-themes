@@ -4439,8 +4439,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-chat-width</td>
     <td>Number</td>
-    <td><code>320px</code></td>
-    <td><code>320px</code></td>
+    <td><code>280px</code></td>
+    <td><code>280px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the Chat.</div></div>
