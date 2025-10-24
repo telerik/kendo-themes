@@ -415,7 +415,7 @@
             position: relative;
             vertical-align: middle;
         }
-        td::after { content: " "; }
+        td::after { content: ""; }
     }
 
     .k-task-wrap {

@@ -2,6 +2,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "../../spacing/index.import.scss" as *;
 @use "../../z-index/index.import.scss" as *;
+@use "../../typography/index.import.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 
@@ -99,8 +100,9 @@
         position: relative;
 
         &::before {
-            content: " ";
-            width: 0px;
+            content: "";
+            width: 0;
+            height: $kendo-line-height-em;
             overflow: hidden;
             flex: none;
             display: inline-block;

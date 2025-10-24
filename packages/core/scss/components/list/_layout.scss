@@ -1,6 +1,7 @@
 
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../../typography/index.import.scss" as *;
 @use "sass:map";
 
 @mixin kendo-list--layout-base() {
@@ -123,8 +124,9 @@
     .k-list-header-text,
     .k-list-optionlabel {
         &::before {
-            content: " ";
-            width: 0px;
+            content: "";
+            width: 0;
+            height: $kendo-line-height-em;
             overflow: hidden;
         }
     }

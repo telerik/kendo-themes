@@ -119,7 +119,7 @@
             &::before,
             &::after {
                 display: block;
-                content: " ";
+                content: "";
                 position: absolute;
                 width: 100%;
                 inset-inline-start: 0;

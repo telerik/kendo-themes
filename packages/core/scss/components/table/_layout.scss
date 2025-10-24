@@ -140,9 +140,9 @@
             position: sticky;
 
             &::before {
-                content: " ";
-                padding-block: $kendo-table-md-cell-padding-y;
-                padding-inline: 0;
+                content: "";
+                height: calc( #{$kendo-table-md-cell-padding-y} * 2 );
+                min-height: 1em;
                 width: 0;
                 display: block;
                 overflow: hidden;
