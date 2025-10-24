@@ -323,12 +323,15 @@
 
     // Message states
     .k-message:has(.k-selected) {
-        gap: $kendo-chat-bubble-spacing;
-
         .k-message-time,
         .k-message-status {
             height: calc($kendo-chat-message-meta-line-height * $kendo-chat-message-meta-font-size);
         }
+    }
+
+    .k-message:has(.k-selected + .k-message-status),
+    .k-message:has(.k-message-time + .k-selected) {
+        gap: $kendo-chat-bubble-spacing;
     }
 
     .k-message-error,
