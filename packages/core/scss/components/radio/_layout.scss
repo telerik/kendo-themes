@@ -113,8 +113,9 @@
         position: relative;
 
         &::before {
-            content: "\200b";
-            width: 0px;
+            content: "";
+            width: 0;
+            height: 1lh;
             overflow: hidden;
             flex: none;
             display: inline-block;
