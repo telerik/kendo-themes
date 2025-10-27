@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-core",
   "description": "A collection of functions and mixins used for building themes for Kendo UI",
-  "version": "12.2.0-dev.2",
+  "version": "12.2.0-dev.3",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
