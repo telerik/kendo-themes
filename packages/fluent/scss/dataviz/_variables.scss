@@ -210,7 +210,7 @@ $kendo-chart-tooltip-font-size: var( --kendo-chart-tooltip-font-size, var( --ken
 $kendo-chart-tooltip-line-height: var( --kendo-chart-tooltip-line-height, var( --kendo-line-height-sm, normal ) ) !default;
 /// The transition of the tooltip of the chart component.
 /// @group charts
-$kendo-chart-tooltip-transition: left ease-in 80ms, top ease-in 80ms !default;
+$kendo-chart-tooltip-transition: left k-transition(fade-in), top k-transition(fade-in) !default;
 
 /// The font-size of the label of the chart component.
 /// @group chart

@@ -1,4 +1,5 @@
 @use "../../z-index/index.scss" as *;
+@use "../../motion/index.scss" as *;
 
 @mixin kendo-ripple--layout-base() {
 
@@ -23,7 +24,7 @@
         border-radius: 50%;
         padding: 0;
         transform: translate(-50%, -50%) scale(0);
-        transition: opacity 100ms linear, transform 500ms cubic-bezier(.4, 0, .2, 1);
+        transition: opacity k-duration(brief) k-easing(linear), transform k-transition(smooth);
         opacity: .1;
         background-color: currentColor;
     }

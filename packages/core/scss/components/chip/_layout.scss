@@ -1,5 +1,6 @@
-@use "./_variables.scss" as *;
 @use "sass:map";
+@use "./_variables.scss" as *;
+@use "../../motion/index.scss" as *;
 
 @mixin kendo-chip--layout-base() {
 
@@ -23,6 +24,7 @@
         overflow: hidden;
         cursor: pointer;
         user-select: none;
+        transition: color k-transition(rapid), background-color k-transition(rapid), box-shadow k-transition(rapid), opacity k-transition(rapid);
 
         *,
         *::before,

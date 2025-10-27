@@ -3,6 +3,7 @@
 @use "../../mixins/index.scss" as *;
 @use "../../color-system/_constants.scss" as *;
 @use "../../z-index/index.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-color-gradient--layout-base() {
@@ -58,6 +59,7 @@
             left: 50%;
             z-index: k-z-index("base", 1);
             cursor: pointer;
+            transition: outline-color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid);
         }
 
         .k-hsv-controls {
