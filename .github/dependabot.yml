@@ -7,9 +7,6 @@ updates:
     schedule:
       interval: "monthly"
     target-branch: "develop"
-    allow:
-      - dependency-name: "*"
-        dependency-type: "direct"
     groups:
       dev-dependencies:
         patterns:
