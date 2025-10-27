@@ -20,3 +20,11 @@ updates:
       kendo-icons-dependencies:
         patterns:
           - "@progress/kendo-svg-icons"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      all-actions:
+        patterns:
+          - "*"
