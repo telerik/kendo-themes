@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "./variables.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "../action-buttons/_variables.scss" as *;
 
 @mixin kendo-date-time-picker--layout-base() {
@@ -10,7 +11,6 @@
     // Datetime selector
     .k-datetime-selector {
         display: flex;
-        transition: transform .2s;
     }
 
     // Wrap
@@ -56,9 +56,11 @@
     // Tabs
     .k-date-tab .k-datetime-selector {
         transform: translateX(0);
+        transition: transform k-transition(slide-in);
     }
     .k-time-tab .k-datetime-selector {
         transform: translateX(-100%);
+        transition: transform k-transition(slide-out);
     }
 
     :is(.k-rtl, [dir="rtl"]) .k-time-tab .k-datetime-selector,

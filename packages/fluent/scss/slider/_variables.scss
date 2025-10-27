@@ -123,17 +123,19 @@ $kendo-slider-thumb-disabled-border: var( --kendo-slider-thumb-disabled-border, 
 
 /// The transition speed of the Slider.
 /// @group slider
-$kendo-slider-transition-speed: var( --kendo-slider-transition-speed, .3s ) !default;
+$kendo-slider-transition-speed: var( --kendo-slider-transition-speed, k-duration(brisk) ) !default;
 /// The transition function of the Slider.
 /// @group slider
-$kendo-slider-transition-function: var( --kendo-slider-transition-function, ease-out ) !default;
+$kendo-slider-transition-function: var( --kendo-slider-transition-function, k-easing(standard) ) !default;
 
 /// The transition speed of the Slider thumb.
 /// @group slider
-$kendo-slider-thumb-transition-speed: var( --kendo-slider-thumb-transition-speed, .4s ) !default;
+$kendo-slider-thumb-transition-speed: var( --kendo-slider-thumb-transition-speed, k-duration(quick) ) !default;
+$kendo-slider-draghandle-transition-speed: $kendo-slider-thumb-transition-speed !default;
 /// The transition function of the Slider thumb.
 /// @group slider
-$kendo-slider-thumb-transition-function: var( --kendo-slider-thumb-transition-function, cubic-bezier(.25, .8, .25, 1) ) !default;
+$kendo-slider-thumb-transition-function: var( --kendo-slider-thumb-transition-function, k-easing(decelerate) ) !default;
+$kendo-slider-draghandle-transition-function: $kendo-slider-thumb-transition-function !default;
 
 /// The background image of the horizontal Slider tick.
 /// @group slider
@@ -150,6 +152,8 @@ $kendo-slider-tick-v-image: "data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5B
     $kendo-slider-line-height: $kendo-slider-line-height,
     $kendo-slider-transition-speed: $kendo-slider-transition-speed,
     $kendo-slider-transition-function: $kendo-slider-transition-function,
+    $kendo-slider-draghandle-transition-speed: $kendo-slider-draghandle-transition-speed,
+    $kendo-slider-draghandle-transition-function: $kendo-slider-draghandle-transition-function,
     $kendo-slider-track-bg: $kendo-slider-track-bg,
     $kendo-slider-selection-bg: $kendo-slider-selection-bg,
     $kendo-slider-tick-horizontal-image: $kendo-slider-tick-h-image,

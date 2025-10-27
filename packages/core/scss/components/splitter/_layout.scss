@@ -1,6 +1,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
 @use "../../z-index/index.scss" as *;
+@use "../../motion/index.scss" as *;
 
 @mixin kendo-splitter--layout-base() {
 
@@ -52,6 +53,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: background-color k-transition(snappy), color k-transition(snappy);
 
         .k-collapse-prev,
         .k-collapse-next {

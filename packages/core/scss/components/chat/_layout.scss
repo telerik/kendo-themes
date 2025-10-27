@@ -2,6 +2,7 @@
 @use "../../spacing/index.scss" as *;
 @use "../../border-radii/index.scss" as *;
 @use "../../z-index/index.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 @use "../bubble/_variables.scss" as *;
@@ -99,7 +100,7 @@
             &,
             + .k-chat-user-status {
                 margin-block-end: calc($kendo-chat-message-meta-line-height * $kendo-chat-message-meta-font-size + $kendo-chat-bubble-spacing);
-                transition: margin .2s ease-in-out;
+                transition: margin k-transition(fade-out);
             }
         }
 
@@ -192,7 +193,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        transition: margin .2s ease-in-out;
+        transition: margin k-transition(fade-out);
         outline: none;
         overflow-wrap: break-word;
 
@@ -250,7 +251,7 @@
     .k-chat-bubble.k-bubble-expandable {
         .k-bubble-content {
             height: auto;
-            transition: height 2s ease;
+            transition: height k-transition(shrink);
         }
     }
 
@@ -275,7 +276,7 @@
         line-height: $kendo-chat-message-meta-line-height;
         white-space: nowrap;
         pointer-events: none;
-        transition: height .2s ease-in-out;
+        transition: height k-transition(fade-out);
         height: 0;
         overflow: hidden;
     }
@@ -304,7 +305,7 @@
             display: flex;
             flex-direction: column;
             gap: $kendo-chat-message-gap;
-            transition: height .2s ease-in-out;
+            transition: height k-transition(fade-out);
         }
 
         a {
@@ -325,6 +326,7 @@
         .k-message-time,
         .k-message-status {
             height: calc($kendo-chat-message-meta-line-height * $kendo-chat-message-meta-font-size);
+            transition: height k-transition(fade-in);
         }
     }
 

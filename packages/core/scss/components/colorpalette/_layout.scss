@@ -2,6 +2,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
 @use "../../z-index/index.scss" as *;
+@use "../../motion/index.scss" as *;
 
 @mixin kendo-color-palette--layout-base() {
 
@@ -40,6 +41,7 @@
         box-sizing: border-box;
         overflow: hidden;
         cursor: pointer;
+        transition: box-shadow k-transition(rapid);
 
         &:hover,
         &.k-hover {

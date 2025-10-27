@@ -1,6 +1,7 @@
 @use "../../typography/index.scss" as *;
 @use "../../color-system/_constants.scss" as *;
 @use "../../border-radii/index.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../table/_variables.scss" as *;
@@ -499,6 +500,7 @@
         border-style: solid;
         box-sizing: border-box;
         transform: rotate(45deg);
+        transition: background-color k-transition(rapid);
     }
 
 
@@ -512,6 +514,7 @@
     .k-task-summary,
     .k-task-summary-complete {
         background-color: currentColor;
+        transition: color k-transition(rapid);
 
         &::before,
         &::after {
@@ -552,6 +555,7 @@
         border-style: solid;
         box-sizing: border-box;
         cursor: default;
+        transition: background-color k-transition(rapid);
 
         .k-resize-handle {
             opacity: .5;
@@ -594,6 +598,7 @@
         width: 20%;
         position: absolute;
         z-index: k-z-index("base", 1);
+        transition: background-color k-transition(rapid);
         inset-block-start: 0;
         inset-block-end: 0;
         inset-inline-start: 0;

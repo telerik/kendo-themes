@@ -195,6 +195,10 @@ $kendo-button-flat-disabled-text: var( --kendo-button-disabled-text, color-mix(i
 /// @group button
 $kendo-button-flat-disabled-border: var( --kendo-button-disabled-border, initial ) !default;
 
+/// The transition of the Button.
+/// @group button
+$kendo-button-transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid), opacity k-transition(rapid) !default;
+
 @forward "@progress/kendo-theme-core/scss/components/button/_variables.scss" with (
     $kendo-button-border-width: $kendo-button-border-width,
     $kendo-button-sm-padding-x: $kendo-button-sm-padding-x,
@@ -234,5 +238,6 @@ $kendo-button-flat-disabled-border: var( --kendo-button-disabled-border, initial
     $kendo-button-active-border: $kendo-button-active-border,
     $kendo-button-disabled-bg: $kendo-button-disabled-bg,
     $kendo-button-disabled-text: $kendo-button-disabled-text,
-    $kendo-button-disabled-border: $kendo-button-disabled-border
+    $kendo-button-disabled-border: $kendo-button-disabled-border,
+    $kendo-button-transition: $kendo-button-transition
 );

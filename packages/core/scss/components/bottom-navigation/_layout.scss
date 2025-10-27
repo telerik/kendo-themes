@@ -1,5 +1,6 @@
 @use "../../color-system/_constants.scss" as *;
 @use "../../z-index/index.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-bottom-navigation--layout-base() {
@@ -64,6 +65,7 @@
         background-color: inherit;
         border-color: inherit;
         outline: none;
+        transition: background-color k-transition(emphasis), color k-transition(emphasis), font-weight k-transition(emphasis), box-shadow k-transition(emphasis);
 
         &:focus {
             outline: none;
