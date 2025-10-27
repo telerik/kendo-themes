@@ -33,7 +33,7 @@
     "lerna": "^9.0.0",
     "lint-staged": "^16.0.0",
     "nunjucks": "^3.2.3",
-    "nx": "^21.0.3",
+    "nx": "^22.0.1",
     "postcss": "^8.4.47",
     "postcss-calc": "^10.0.2",
     "postcss-cli": "^11.0.0",
