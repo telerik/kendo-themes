@@ -1,0 +1,21 @@
+@use "sass:map";
+
+$default-easings: (
+    linear: cubic-bezier(0, 0, 1, 1),
+    accelerate: cubic-bezier(0.42, 0, 1, 1),
+    decelerate: cubic-bezier(0, 0, 0.58, 1),
+    standard: cubic-bezier(0.42, 0, 0.58, 1),
+    sharp: cubic-bezier(0.75, 0, 0.25, 1),
+    bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    elastic: cubic-bezier(0.5, -0.5, 0.5, 1.5),
+) !default;
+
+/// The global map of motion easing tokens.
+/// @group motion
+$kendo-easings: $default-easings !default;
+$kendo-easings: map.merge($default-easings, $kendo-easings);
+
+@function k-easing($key) {
+    $easing: map.get($kendo-easings, $key);
+    @return var(--kendo-easing-#{$key}, $easing);
+}

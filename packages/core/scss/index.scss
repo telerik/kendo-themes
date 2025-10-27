@@ -15,6 +15,7 @@
 @use "./elevation/index.import.scss" as *;
 @use "./typography/index.import.scss" as *;
 @use "./spacing/index.import.scss" as *;
+@use "./motion/index.import.scss" as *;
 @use "./border-radii/index.import.scss" as *;
 
 @mixin core-styles() {
@@ -25,5 +26,6 @@
         @include kendo-elevation--styles();
         @include kendo-core--typography--styles();
         @include kendo-border-radius--styles();
+        @include kendo-motion--styles();
     }
 }

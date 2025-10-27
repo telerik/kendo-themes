@@ -307,9 +307,6 @@
     // Typography
     @include kendo-typography--styles();
 
-    // Transitions
-    @include kendo-transition--styles();
-
     // Generic content
     @include kendo-icon--styles();
     @include kendo-messagebox--styles();

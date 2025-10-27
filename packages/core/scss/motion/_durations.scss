@@ -1,0 +1,31 @@
+@use "sass:map";
+
+$default-durations: (
+    instant: 0ms,
+    immediate: 50ms,
+    brief: 100ms,
+    quick: 150ms,
+    rapid: 200ms,
+    swift: 250ms,
+    speedy: 300ms,
+    brisk: 350ms,
+    prompt: 400ms,
+    timely: 450ms,
+    moderate: 500ms,
+    measured: 550ms,
+    steady: 600ms,
+    leisurely: 700ms,
+    slow: 800ms,
+    languid: 900ms,
+    sluggish: 1000ms
+) !default;
+
+/// The global map of motion duration tokens.
+/// @group motion
+$kendo-durations: $default-durations !default;
+$kendo-durations: map.merge($default-durations, $kendo-durations);
+
+@function k-duration($key) {
+    $_duration: map.get($kendo-durations, $key);
+    @return var(--kendo-duration-#{$key}, $_duration);
+}
