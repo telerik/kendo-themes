@@ -1,6 +1,5 @@
 @use "../_variables.scss" as *;
 @use "../core/_index.scss" as *;
-@use "../core/motion/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/menu/_layout.scss" as *;
 
 
@@ -9,13 +8,6 @@
     @include kendo-menu--layout-base();
 
     // Menubar
-    .k-menu:not(.k-context-menu) {
-
-        // Root items
-        > .k-menu-item {
-            transition: $kendo-transition;
-        }
-    }
 
     .k-menu-expand-arrow {
         margin-inline-end: 0;

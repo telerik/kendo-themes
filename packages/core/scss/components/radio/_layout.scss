@@ -2,6 +2,7 @@
 @use "../../mixins/index.scss" as *;
 @use "../../spacing/index.scss" as *;
 @use "../../z-index/index.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
@@ -26,6 +27,7 @@
         position: relative;
         cursor: pointer;
         -webkit-appearance: none;
+        transition: background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid), opacity k-transition(rapid);
     }
 
 
@@ -178,7 +180,7 @@
             top: 50%;
             border-radius: 100%;
             z-index: k-z-index("bottom");
-            transition: opacity 100ms linear, transform 150ms cubic-bezier(.4, 0, .2, 1);
+            transition: opacity k-transition(rapid), transform k-transition(rapid);
             transform: translate(-50%, -50%) scale(0);
             transform-origin: center center;
         }

@@ -2,20 +2,21 @@
 @forward "./color-system/index.scss";
 @forward "./mixins/index.scss";
 @forward "./spacing/index.scss";
-@forward "./styles/index.scss";
 @forward "./elevation/index.scss";
 @forward "./typography/index.scss";
 @forward "./border-radii/index.scss";
 @forward "./motion/index.scss";
 @forward "./z-index/index.scss";
+@forward "./styles/index.scss";
 
 @use "./color-system/index.scss" as *;
 @use "./mixins/index.scss" as *;
-@use "./styles/index.scss" as *;
 @use "./elevation/index.scss" as *;
 @use "./typography/index.scss" as *;
 @use "./spacing/index.scss" as *;
+@use "./motion/index.scss" as *;
 @use "./border-radii/index.scss" as *;
+@use "./styles/index.scss" as *;
 
 @mixin core-styles() {
     @include import-once("core-styles") {
@@ -24,6 +25,7 @@
         @include kendo-border-radius--styles();
         @include kendo-elevation--styles();
         @include kendo-core--typography--styles();
+        @include kendo-motion--styles();
         @include kendo-core--styles();
     }
 }

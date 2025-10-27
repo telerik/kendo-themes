@@ -69,14 +69,14 @@
         /* Checkbox Ripple animation */
 
         &::after {
-            animation: ripple-checkbox 225ms cubic-bezier(0, 0, 0.2, 1);
+            animation: ripple-checkbox k-transition(fade-out);
         }
 
         &:checked,
         &.k-checked,
         &.k-indeterminate {
             &::after {
-                animation: ripple-checkbox-checked 225ms cubic-bezier(0, 0, 0.2, 1);
+                animation: ripple-checkbox-checked k-transition(fade-out);
             }
         }
 

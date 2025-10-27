@@ -2,6 +2,7 @@
 @use "../../border-radii/index.scss" as *;
 @use "../../color-system/_constants.scss" as *;
 @use "../../spacing/index.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-progressbar--layout-base() {
@@ -192,7 +193,7 @@
 
         > .k-progressbar-value,
         > .k-progressbar-value > .k-progress-status-wrap {
-            transition: width .1s ease-in-out;
+            transition: width k-duration(brief) k-easing(standard);
         }
     }
 

@@ -198,10 +198,10 @@ $kendo-stepper-progressbar-size: var( --kendo-stepper-progressbar-size, k-spacin
 $kendo-stepper-content-transition-property: var( --kendo-stepper-content-transition-property, none ) !default;
 /// The duration of the Stepper transition.
 /// @group stepper
-$kendo-stepper-content-transition-duration: var( --kendo-stepper-content-transition-duration, 300ms ) !default;
+$kendo-stepper-content-transition-duration: var( --kendo-stepper-content-transition-duration, k-duration(speedy) ) !default;
 /// The timing function of the Stepper transition.
 /// @group stepper
-$kendo-stepper-content-transition-timing-function: var( --kendo-stepper-content-transition-timing-function, cubic-bezier(.4, 0, .2, 1) 0ms ) !default;
+$kendo-stepper-content-transition-timing-function: var( --kendo-stepper-content-transition-timing-function, k-easing(standard) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/stepper/_variables.scss" with (
     $kendo-stepper-label-margin-x: $kendo-stepper-label-margin-x,
