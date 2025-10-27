@@ -1317,11 +1317,10 @@
         }
     }
 
-    .k-filter-menu.k-popup,
-    .k-grid-filter-popup.k-popup {
+    .k-filter-menu.k-popup:not(.k-grid-filter-popup *) {
 
         .k-filter-menu-container {
-            width: $kendo-grid-column-menu-width;
+            min-width: $kendo-grid-column-menu-width;
             max-width: $kendo-grid-column-menu-max-width;
         }
     }
