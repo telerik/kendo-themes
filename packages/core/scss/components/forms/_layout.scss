@@ -5,7 +5,7 @@
 @use "./_variables.scss" as *;
 @use "../input/_variables.scss" as *;
 
-@mixin kendo-form--layout-base() {
+// @mixin kendo-form--layout-base() {
 
     // Common
     .k-form,
@@ -362,9 +362,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-form--layout() {
-    @include kendo-form--layout-base();
-}
+// }

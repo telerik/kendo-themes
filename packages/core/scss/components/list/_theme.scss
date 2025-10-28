@@ -4,7 +4,7 @@
 @use "./_variables.scss" as *;
 @use "../../_variables.scss" as *;
 
-@mixin kendo-list--theme-base() {
+// @mixin kendo-list--theme-base() {
 
     // List
     .k-list {
@@ -95,9 +95,4 @@
         );
     }
 
-}
-
-
-@mixin kendo-list--theme() {
-    @include kendo-list--theme-base();
-}
+// }

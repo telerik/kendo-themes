@@ -5,7 +5,7 @@
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-radio--layout-base() {
+// @mixin kendo-radio--layout-base() {
 
     // Radio
     .k-radio {
@@ -217,9 +217,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-radio--layout() {
-    @include kendo-radio--layout-base();
-}
+// }

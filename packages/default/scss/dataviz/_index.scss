@@ -1,20 +1,9 @@
 // Dependencies
-@use "../core/_index.scss" as *;
-@use "../popup/_index.scss" as *;
-@use "../tooltip/_index.scss" as *;
+@forward "../popup/_index.scss";
+@forward "../tooltip/_index.scss";
+@forward "../button/_index.scss";
 
 // Component
 @forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
-
-// Expose
-@mixin kendo-dataviz--styles() {
-    @include import-once( "dataviz" ) {
-        @include core-styles();
-        @include kendo-popup--styles();
-        @include kendo-tooltip--styles();
-        @include kendo-dataviz--layout();
-        @include kendo-dataviz--theme();
-    }
-}
+@forward "./_layout.scss";
+@forward "./_theme.scss";

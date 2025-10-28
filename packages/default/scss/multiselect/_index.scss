@@ -1,30 +1,13 @@
 // Dependencies
-@use "../core/_index.scss" as *;
-@use "../icons/_index.scss" as *;
-@use "../button/_index.scss" as *;
-@use "../input/_index.scss" as *;
-@use "../chip/_index.scss" as *;
-@use "../floating-label/_index.scss" as *;
-@use "../popup/_index.scss" as *;
-@use "../list/_index.scss" as *;
+@forward "../icons/_index.scss";
+@forward "../button/_index.scss";
+@forward "../input/_index.scss";
+@forward "../chip/_index.scss";
+@forward "../floating-label/_index.scss";
+@forward "../popup/_index.scss";
+@forward "../list/_index.scss";
 
 // Component
 @forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
-
-// Expose
-@mixin kendo-multiselect--styles() {
-    @include import-once( "multiselect" ) {
-        @include core-styles();
-        @include kendo-button--styles();
-        @include kendo-input--styles();
-        @include kendo-chip--styles();
-        @include kendo-floating-label--styles();
-        @include kendo-popup--styles();
-        @include kendo-list--styles();
-        @include kendo-icon--styles();
-        @include kendo-multiselect--layout();
-        @include kendo-multiselect--theme();
-    }
-}
+@forward "./_layout.scss";
+@forward "./_theme.scss";

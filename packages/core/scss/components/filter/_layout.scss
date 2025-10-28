@@ -1,6 +1,6 @@
 @use "./variables.scss" as *;
 
-@mixin kendo-filter--layout-base() {
+// @mixin kendo-filter--layout-base() {
 
     .k-filter {
         box-sizing: border-box;
@@ -90,9 +90,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-filter--layout() {
-    @include kendo-filter--layout-base();
-}
+// }

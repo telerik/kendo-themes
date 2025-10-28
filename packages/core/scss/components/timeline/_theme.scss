@@ -3,7 +3,7 @@
 @use "./variables.scss" as *;
 @use "../card/_variables.scss" as *;
 
-@mixin kendo-timeline--theme-base() {
+// @mixin kendo-timeline--theme-base() {
 
     .k-timeline {
         .k-timeline-flag {
@@ -70,9 +70,4 @@
         @include focus-indicator( $kendo-timeline-track-item-focus-shadow );
     }
 
-}
-
-
-@mixin kendo-timeline--theme() {
-    @include kendo-timeline--theme-base();
-}
+// }

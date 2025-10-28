@@ -6,7 +6,7 @@
 @use "../icons/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-treeview--layout-base() {
+// @mixin kendo-treeview--layout-base() {
 
     // Treeview
     .k-treeview {
@@ -169,9 +169,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-treeview--layout() {
-    @include kendo-treeview--layout-base();
-}
+// }

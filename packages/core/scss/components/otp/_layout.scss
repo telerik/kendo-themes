@@ -3,7 +3,7 @@
 
 @use "../input/_variables.scss" as *;
 
-@mixin kendo-otp--layout-base() {
+// @mixin kendo-otp--layout-base() {
     // OTP
     .k-otp {
         display: flex;
@@ -34,8 +34,4 @@
             }
         }
     }
-}
-
-@mixin kendo-otp--layout() {
-    @include kendo-otp--layout-base();
-}
+// }

@@ -1,7 +1,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-scrollview--layout-base() {
+// @mixin kendo-scrollview--layout-base() {
 
     .k-scrollview {
         border-width: $kendo-scrollview-border-width;
@@ -162,9 +162,4 @@
         transition-duration: .3s;
         transition-timing-function: ease-in-out;
     }
-}
-
-
-@mixin kendo-scrollview--layout() {
-    @include kendo-scrollview--layout-base();
-}
+// }

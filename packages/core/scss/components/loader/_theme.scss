@@ -1,7 +1,7 @@
 @use "../../color-system/_functions.import.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-loader--theme-base() {
+// @mixin kendo-loader--theme-base() {
     .k-loader,
     .k-loader + .k-loader-container-label {
         color: k-color(base-on-surface);
@@ -19,9 +19,4 @@
         border-color: $kendo-loader-container-panel-border-color;
     }
 
-}
-
-
-@mixin kendo-loader--theme() {
-    @include kendo-loader--theme-base();
-}
+// }

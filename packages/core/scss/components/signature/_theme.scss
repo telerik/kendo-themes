@@ -1,6 +1,6 @@
 @use "./variables.scss" as *;
 
-@mixin kendo-signature--theme-base() {
+// @mixin kendo-signature--theme-base() {
 
     // Solid signature
     .k-signature {
@@ -10,9 +10,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-signature--theme() {
-    @include kendo-signature--theme-base();
-}
+// }

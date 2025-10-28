@@ -1,5 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/time-marker/_layout.scss" as *;
-
-@mixin kendo-time-marker--layout() {
-    @include kendo-time-marker--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/time-marker/_layout.scss";

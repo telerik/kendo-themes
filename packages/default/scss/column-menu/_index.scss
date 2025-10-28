@@ -1,16 +1,7 @@
 // Dependencies
-@use "../core/_index.scss" as *;
-@use "../icons/_index.scss" as *;
+@forward "../icons/_index.scss";
 
 // Component
 @forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
-
-// Expose
-@mixin kendo-column-menu--styles() {
-    @include import-once( "column-menu" ) {
-        @include kendo-column-menu--layout();
-        @include kendo-column-menu--theme();
-    }
-}
+@forward "./_layout.scss";
+@forward "./_theme.scss";

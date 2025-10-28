@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/action-buttons/_theme.scss" as *;
-
-
-@mixin kendo-action-buttons--theme() {
-    @include kendo-action-buttons--theme-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/action-buttons/_theme.scss";

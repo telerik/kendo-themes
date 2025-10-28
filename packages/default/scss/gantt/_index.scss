@@ -1,37 +1,19 @@
 // Dependencies
-@use "../core/_index.scss" as *;
-@use "../utils/_index.scss" as *;
-@use "../button/_index.scss" as *;
-@use "../input/_index.scss" as *;
-@use "../validator/_index.scss" as *;
-@use "../datetimepicker/_index.scss" as *;
-@use "../numerictextbox/_index.scss" as *;
-@use "../window/_index.scss" as *;
-@use "../splitter/_index.scss" as *;
-@use "../treelist/_index.scss" as *;
-@use "../time-marker/_index.scss" as *;
+@forward "../icons/_index.scss";
+@forward "../toolbar/_index.scss";
+@forward "../grid/_index.scss";
+@forward "../table/_index.scss";
+@forward "../button/_index.scss";
+@forward "../input/_index.scss";
+@forward "../validator/_index.scss";
+@forward "../datetimepicker/_index.scss";
+@forward "../numerictextbox/_index.scss";
+@forward "../window/_index.scss";
+@forward "../splitter/_index.scss";
+@forward "../treelist/_index.scss";
+@forward "../time-marker/_index.scss";
 
 // Component
 @forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
-
-// Expose
-@mixin kendo-gantt--styles() {
-    @include import-once( "gantt" ) {
-        @include core-styles();
-        @include kendo-button--styles();
-        @include kendo-input--styles();
-        @include kendo-validator--styles();
-        @include kendo-date-time-picker--styles();
-        @include kendo-numeric-textbox--styles();
-        @include kendo-window--styles();
-        @include kendo-splitter--styles();
-        @include kendo-treelist--styles();
-        @include kendo-time-marker--styles();
-        @include kendo-gantt--layout();
-        @include kendo-gantt--theme();
-        @include kendo-utils--typography--white-space();
-        @include kendo-utils--table--table-layout();
-    }
-}
+@forward "./_layout.scss";
+@forward "./_theme.scss";

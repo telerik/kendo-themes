@@ -1,7 +1,7 @@
 @use "./_variables.scss" as *;
 @use "sass:map";
 
-@mixin kendo-table--layout-base() {
+// @mixin kendo-table--layout-base() {
 
     // Table
     .k-table {
@@ -252,9 +252,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-table--layout() {
-    @include kendo-table--layout-base();
-}
+// }

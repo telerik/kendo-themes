@@ -1,7 +1,7 @@
 @use "./_variables.scss" as *;
 @use "sass:map";
 
-@mixin kendo-chip--layout-base() {
+// @mixin kendo-chip--layout-base() {
 
     // Chip
     .k-chip {
@@ -161,9 +161,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-chip--layout() {
-    @include kendo-chip--layout-base();
-}
+// }

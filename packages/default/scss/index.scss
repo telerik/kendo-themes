@@ -1,6 +1,7 @@
 // Forward component modules by dependency order
 
 @forward "./core/_index.scss";
+
 @forward "./typography/_index.scss";
 @forward "./icons/_index.scss";
 @forward "./messagebox/_index.scss";
@@ -123,351 +124,351 @@
 @forward "./marquee/_index.scss";
 
 
-// Use component modules
-@use "./core/_index.scss" as *;
+// // Use component modules
+// @use "./core/_index.scss" as *;
 
 
-// Typography
-@use "./typography/_index.scss" as *;
+// // Typography
+// @use "./typography/_index.scss" as *;
 
 
-// Generic content
-@use "./icons/_index.scss" as *;
-@use "./messagebox/_index.scss" as *;
+// // Generic content
+// @use "./icons/_index.scss" as *;
+// @use "./messagebox/_index.scss" as *;
 
 
-// Primitive components
-@use "./draggable/_index.scss" as *;
-@use "./list/_index.scss" as *;
-@use "./listgroup/_index.scss" as *;
-@use "./overlay/_index.scss" as *;
-@use "./popup/_index.scss" as *;
-@use "./ripple/_index.scss" as *;
-@use "./table/_index.scss" as *;
-@use "./virtual-scroller/_index.scss" as *;
-@use "./no-data/_index.scss" as *;
-@use "./suggestion/_index.scss" as *;
-@use "./bubble/_index.scss" as *;
-@use "./column-menu/_index.scss" as *;
+// // Primitive components
+// @use "./draggable/_index.scss" as *;
+// @use "./list/_index.scss" as *;
+// @use "./listgroup/_index.scss" as *;
+// @use "./overlay/_index.scss" as *;
+// @use "./popup/_index.scss" as *;
+// @use "./ripple/_index.scss" as *;
+// @use "./table/_index.scss" as *;
+// @use "./virtual-scroller/_index.scss" as *;
+// @use "./no-data/_index.scss" as *;
+// @use "./suggestion/_index.scss" as *;
+// @use "./bubble/_index.scss" as *;
+// @use "./column-menu/_index.scss" as *;
 
 
-// Indicators
-@use "./avatar/_index.scss" as *;
-@use "./badge/_index.scss" as *;
-@use "./chip/_index.scss" as *;
-@use "./color-preview/_index.scss" as *;
-@use "./loader/_index.scss" as *;
-@use "./skeleton/_index.scss" as *;
-@use "./time-marker/_index.scss" as *;
-@use "./marquee/_index.scss" as *;
+// // Indicators
+// @use "./avatar/_index.scss" as *;
+// @use "./badge/_index.scss" as *;
+// @use "./chip/_index.scss" as *;
+// @use "./color-preview/_index.scss" as *;
+// @use "./loader/_index.scss" as *;
+// @use "./skeleton/_index.scss" as *;
+// @use "./time-marker/_index.scss" as *;
+// @use "./marquee/_index.scss" as *;
 
 
-// Native forms
-@use "./button/_index.scss" as *;
-@use "./split-button/_index.scss" as *;
-@use "./menu-button/_index.scss" as *;
-@use "./speech-to-text-button/_index.scss" as *;
-@use "./input/_index.scss" as *;
-@use "./textbox/_index.scss" as *;
-@use "./textarea/_index.scss" as *;
-@use "./checkbox/_index.scss" as *;
-@use "./listbox/_index.scss" as *;
-@use "./progressbar/_index.scss" as *;
-@use "./radio/_index.scss" as *;
-@use "./slider/_index.scss" as *;
+// // Native forms
+// @use "./button/_index.scss" as *;
+// @use "./split-button/_index.scss" as *;
+// @use "./menu-button/_index.scss" as *;
+// @use "./speech-to-text-button/_index.scss" as *;
+// @use "./input/_index.scss" as *;
+// @use "./textbox/_index.scss" as *;
+// @use "./textarea/_index.scss" as *;
+// @use "./checkbox/_index.scss" as *;
+// @use "./listbox/_index.scss" as *;
+// @use "./progressbar/_index.scss" as *;
+// @use "./radio/_index.scss" as *;
+// @use "./slider/_index.scss" as *;
 
 
-// Form helpers
-@use "./forms/_index.scss" as *;
-@use "./validator/_index.scss" as *;
-@use "./floating-label/_index.scss" as *;
+// // Form helpers
+// @use "./forms/_index.scss" as *;
+// @use "./validator/_index.scss" as *;
+// @use "./floating-label/_index.scss" as *;
 
-// Form requirements
-@use "./calendar/_index.scss" as *;
-@use "./timeselector/_index.scss" as *;
-
-
-// Augmented forms
-@use "./autocomplete/_index.scss" as *;
-@use "./captcha/_index.scss" as *;
-@use "./colorpalette/_index.scss" as *;
-@use "./colorgradient/_index.scss" as *;
-@use "./coloreditor/_index.scss" as *;
-@use "./colorpicker/_index.scss" as *;
-@use "./combobox/_index.scss" as *;
-@use "./dateinput/_index.scss" as *;
-@use "./datepicker/_index.scss" as *;
-@use "./timepicker/_index.scss" as *;
-@use "./datetimepicker/_index.scss" as *;
-@use "./timedurationpicker/_index.scss" as *;
-@use "./daterangepicker/_index.scss" as *;
-@use "./dropdowngrid/_index.scss" as *;
-@use "./dropdownlist/_index.scss" as *;
-@use "./dropdowntree/_index.scss" as *;
-@use "./maskedtextbox/_index.scss" as *;
-@use "./multiselect/_index.scss" as *;
-@use "./numerictextbox/_index.scss" as *;
-@use "./rating/_index.scss" as *;
-@use "./searchbox/_index.scss" as *;
-@use "./switch/_index.scss" as *;
-@use "./upload/_index.scss" as *;
-@use "./dropzone/_index.scss" as *;
-@use "./otp/_index.scss" as *;
+// // Form requirements
+// @use "./calendar/_index.scss" as *;
+// @use "./timeselector/_index.scss" as *;
 
 
-// Command interfaces
-@use "./action-buttons/_index.scss" as *;
-@use "./appbar/_index.scss" as *;
-@use "./fab/_index.scss" as *;
-@use "./menu/_index.scss" as *;
-@use "./toolbar/_index.scss" as *;
+// // Augmented forms
+// @use "./autocomplete/_index.scss" as *;
+// @use "./captcha/_index.scss" as *;
+// @use "./colorpalette/_index.scss" as *;
+// @use "./colorgradient/_index.scss" as *;
+// @use "./coloreditor/_index.scss" as *;
+// @use "./colorpicker/_index.scss" as *;
+// @use "./combobox/_index.scss" as *;
+// @use "./dateinput/_index.scss" as *;
+// @use "./datepicker/_index.scss" as *;
+// @use "./timepicker/_index.scss" as *;
+// @use "./datetimepicker/_index.scss" as *;
+// @use "./timedurationpicker/_index.scss" as *;
+// @use "./daterangepicker/_index.scss" as *;
+// @use "./dropdowngrid/_index.scss" as *;
+// @use "./dropdownlist/_index.scss" as *;
+// @use "./dropdowntree/_index.scss" as *;
+// @use "./maskedtextbox/_index.scss" as *;
+// @use "./multiselect/_index.scss" as *;
+// @use "./numerictextbox/_index.scss" as *;
+// @use "./rating/_index.scss" as *;
+// @use "./searchbox/_index.scss" as *;
+// @use "./switch/_index.scss" as *;
+// @use "./upload/_index.scss" as *;
+// @use "./dropzone/_index.scss" as *;
+// @use "./otp/_index.scss" as *;
 
 
-// Popups and modals
-@use "./action-sheet/_index.scss" as *;
-@use "./dialog/_index.scss" as *;
-@use "./drawer/_index.scss" as *;
-@use "./notification/_index.scss" as *;
-@use "./popover/_index.scss" as *;
-@use "./responsivepanel/_index.scss" as *;
-@use "./tooltip/_index.scss" as *;
-@use "./window/_index.scss" as *;
+// // Command interfaces
+// @use "./action-buttons/_index.scss" as *;
+// @use "./appbar/_index.scss" as *;
+// @use "./fab/_index.scss" as *;
+// @use "./menu/_index.scss" as *;
+// @use "./toolbar/_index.scss" as *;
 
 
-// Navigation
-@use "./bottom-navigation/_index.scss" as *;
-@use "./breadcrumb/_index.scss" as *;
-@use "./pager/_index.scss" as *;
-@use "./stepper/_index.scss" as *;
-@use "./tabstrip/_index.scss" as *;
-@use "./treeview/_index.scss" as *;
-@use "./wizard/_index.scss" as *;
+// // Popups and modals
+// @use "./action-sheet/_index.scss" as *;
+// @use "./dialog/_index.scss" as *;
+// @use "./drawer/_index.scss" as *;
+// @use "./notification/_index.scss" as *;
+// @use "./popover/_index.scss" as *;
+// @use "./responsivepanel/_index.scss" as *;
+// @use "./tooltip/_index.scss" as *;
+// @use "./window/_index.scss" as *;
 
 
-// Layout & containers
-@use "./card/_index.scss" as *;
-@use "./expansion-panel/_index.scss" as *;
-@use "./panel/_index.scss" as *;
-@use "./panelbar/_index.scss" as *;
-@use "./splitter/_index.scss" as *;
-@use "./tilelayout/_index.scss" as *;
-@use "./gridlayout/_index.scss" as *;
-@use "./stacklayout/_index.scss" as *;
-@use "./dock-manager/_index.scss" as *;
-@use "./chart-wizard/_index.scss" as *;
+// // Navigation
+// @use "./bottom-navigation/_index.scss" as *;
+// @use "./breadcrumb/_index.scss" as *;
+// @use "./pager/_index.scss" as *;
+// @use "./stepper/_index.scss" as *;
+// @use "./tabstrip/_index.scss" as *;
+// @use "./treeview/_index.scss" as *;
+// @use "./wizard/_index.scss" as *;
 
 
-// Data management
-@use "./grid/_index.scss" as *;
-@use "./listview/_index.scss" as *;
-@use "./spreadsheet/_index.scss" as *;
-@use "./pivotgrid/_index.scss" as *;
-@use "./treelist/_index.scss" as *;
-@use "./filter/_index.scss" as *;
-@use "./filemanager/_index.scss" as *;
-@use "./taskboard/_index.scss" as *;
+// // Layout & containers
+// @use "./card/_index.scss" as *;
+// @use "./expansion-panel/_index.scss" as *;
+// @use "./panel/_index.scss" as *;
+// @use "./panelbar/_index.scss" as *;
+// @use "./splitter/_index.scss" as *;
+// @use "./tilelayout/_index.scss" as *;
+// @use "./gridlayout/_index.scss" as *;
+// @use "./stacklayout/_index.scss" as *;
+// @use "./dock-manager/_index.scss" as *;
+// @use "./chart-wizard/_index.scss" as *;
 
 
-// Editors
-@use "./editor/_index.scss" as *;
-@use "./imageeditor/_index.scss" as *;
+// // Data management
+// @use "./grid/_index.scss" as *;
+// @use "./listview/_index.scss" as *;
+// @use "./spreadsheet/_index.scss" as *;
+// @use "./pivotgrid/_index.scss" as *;
+// @use "./treelist/_index.scss" as *;
+// @use "./filter/_index.scss" as *;
+// @use "./filemanager/_index.scss" as *;
+// @use "./taskboard/_index.scss" as *;
 
 
-// Scheduling
-@use "./gantt/_index.scss" as *;
-@use "./scheduler/_index.scss" as *;
+// // Editors
+// @use "./editor/_index.scss" as *;
+// @use "./imageeditor/_index.scss" as *;
 
 
-// Misc
-@use "./adaptive/_index.scss" as *;
-@use "./chat/_index.scss" as *;
-@use "./mediaplayer/_index.scss" as *;
-@use "./timeline/_index.scss" as *;
-@use "./pdf-viewer/_index.scss" as *;
-@use "./scroller/_index.scss" as *;
-@use "./scrollview/_index.scss" as *;
-@use "./prompt/_index.scss" as *;
+// // Scheduling
+// @use "./gantt/_index.scss" as *;
+// @use "./scheduler/_index.scss" as *;
 
 
-// Dataviz
-@use "./dataviz/_index.scss" as *;
-@use "./map/_index.scss" as *;
-@use "./orgchart/_index.scss" as *;
-@use "./signature/_index.scss" as *;
+// // Misc
+// @use "./adaptive/_index.scss" as *;
+// @use "./chat/_index.scss" as *;
+// @use "./mediaplayer/_index.scss" as *;
+// @use "./timeline/_index.scss" as *;
+// @use "./pdf-viewer/_index.scss" as *;
+// @use "./scroller/_index.scss" as *;
+// @use "./scrollview/_index.scss" as *;
+// @use "./prompt/_index.scss" as *;
+
+
+// // Dataviz
+// @use "./dataviz/_index.scss" as *;
+// @use "./map/_index.scss" as *;
+// @use "./orgchart/_index.scss" as *;
+// @use "./signature/_index.scss" as *;
 
 
 // Styles
-@mixin kendo-theme--styles() {
-    // Core
-    @include core-styles();
+// @mixin kendo-theme--styles() {
+    // // Core
+    // @include core-styles();
 
 
-    // Typography
-    @include kendo-typography--styles();
+    // // Typography
+    // @include kendo-typography--styles();
 
 
-    // Generic content
-    @include kendo-icon--styles();
-    @include kendo-messagebox--styles();
+    // // Generic content
+    // @include kendo-icon--styles();
+    // @include kendo-messagebox--styles();
 
 
-    // Primitive components
-    @include kendo-draggable--styles();
-    @include kendo-list--styles();
-    @include kendo-listgroup--styles();
-    @include kendo-action-buttons--styles();
-    @include kendo-overlay--styles();
-    @include kendo-popup--styles();
-    @include kendo-ripple--styles();
-    @include kendo-table--styles();
-    @include kendo-virtual-scroller--styles();
-    @include kendo-no-data--styles();
-    @include kendo-suggestion--styles();
-    @include kendo-bubble--styles();
-    @include kendo-column-menu--styles();
+    // // Primitive components
+    // @include kendo-draggable--styles();
+    // @include kendo-list--styles();
+    // @include kendo-listgroup--styles();
+    // @include kendo-action-buttons--styles();
+    // @include kendo-overlay--styles();
+    // @include kendo-popup--styles();
+    // @include kendo-ripple--styles();
+    // @include kendo-table--styles();
+    // @include kendo-virtual-scroller--styles();
+    // @include kendo-no-data--styles();
+    // @include kendo-suggestion--styles();
+    // @include kendo-bubble--styles();
+    // @include kendo-column-menu--styles();
 
 
-    // Indicators
-    @include kendo-avatar--styles();
-    @include kendo-badge--styles();
-    @include kendo-chip--styles();
-    @include kendo-color-preview--styles();
-    @include kendo-loader--styles();
-    @include kendo-skeleton--styles();
-    @include kendo-tooltip--styles();
-    @include kendo-time-marker--styles();
-    @include kendo-marquee--styles();
+    // // Indicators
+    // @include kendo-avatar--styles();
+    // @include kendo-badge--styles();
+    // @include kendo-chip--styles();
+    // @include kendo-color-preview--styles();
+    // @include kendo-loader--styles();
+    // @include kendo-skeleton--styles();
+    // @include kendo-tooltip--styles();
+    // @include kendo-time-marker--styles();
+    // @include kendo-marquee--styles();
 
 
-    // Form helpers
-    @include kendo-form--styles();
-    @include kendo-validator--styles();
-    @include kendo-floating-label--styles();
+    // // Form helpers
+    // @include kendo-form--styles();
+    // @include kendo-validator--styles();
+    // @include kendo-floating-label--styles();
 
 
-    // Native forms
-    @include kendo-button--styles();
-    @include kendo-split-button--styles();
-    @include kendo-menu-button--styles();
-    @include kendo-speech-to-text-button--styles();
-    @include kendo-input--styles();
-    @include kendo-textbox--styles();
-    @include kendo-textarea--styles();
-    @include kendo-checkbox--styles();
-    @include kendo-listbox--styles();
-    @include kendo-progressbar--styles();
-    @include kendo-radio--styles();
-    @include kendo-slider--styles();
+    // // Native forms
+    // @include kendo-button--styles();
+    // @include kendo-split-button--styles();
+    // @include kendo-menu-button--styles();
+    // @include kendo-speech-to-text-button--styles();
+    // @include kendo-input--styles();
+    // @include kendo-textbox--styles();
+    // @include kendo-textarea--styles();
+    // @include kendo-checkbox--styles();
+    // @include kendo-listbox--styles();
+    // @include kendo-progressbar--styles();
+    // @include kendo-radio--styles();
+    // @include kendo-slider--styles();
 
 
-    // Form requirements
-    @include kendo-calendar--styles();
-    @include kendo-time-selector--styles();
+    // // Form requirements
+    // @include kendo-calendar--styles();
+    // @include kendo-time-selector--styles();
 
 
-    // Augmented forms
-    @include kendo-autocomplete--styles();
-    @include kendo-captcha--styles();
-    @include kendo-color-palette--styles();
-    @include kendo-color-gradient--styles();
-    @include kendo-color-editor--styles();
-    @include kendo-color-picker--styles();
-    @include kendo-combobox--styles();
-    @include kendo-date-input--styles();
-    @include kendo-date-picker--styles();
-    @include kendo-time-picker--styles();
-    @include kendo-time-duration-picker--styles();
-    @include kendo-date-time-picker--styles();
-    @include kendo-date-range-picker--styles();
-    @include kendo-dropdown-grid--styles();
-    @include kendo-dropdown-list--styles();
-    @include kendo-dropdown-tree--styles();
-    @include kendo-masked-textbox--styles();
-    @include kendo-multiselect--styles();
-    @include kendo-numeric-textbox--styles();
-    @include kendo-rating--styles();
-    @include kendo-searchbox--styles();
-    @include kendo-switch--styles();
-    @include kendo-upload--styles();
-    @include kendo-dropzone--styles();
-    @include kendo-otp--styles();
+    // // Augmented forms
+    // @include kendo-autocomplete--styles();
+    // @include kendo-captcha--styles();
+    // @include kendo-color-palette--styles();
+    // @include kendo-color-gradient--styles();
+    // @include kendo-color-editor--styles();
+    // @include kendo-color-picker--styles();
+    // @include kendo-combobox--styles();
+    // @include kendo-date-input--styles();
+    // @include kendo-date-picker--styles();
+    // @include kendo-time-picker--styles();
+    // @include kendo-time-duration-picker--styles();
+    // @include kendo-date-time-picker--styles();
+    // @include kendo-date-range-picker--styles();
+    // @include kendo-dropdown-grid--styles();
+    // @include kendo-dropdown-list--styles();
+    // @include kendo-dropdown-tree--styles();
+    // @include kendo-masked-textbox--styles();
+    // @include kendo-multiselect--styles();
+    // @include kendo-numeric-textbox--styles();
+    // @include kendo-rating--styles();
+    // @include kendo-searchbox--styles();
+    // @include kendo-switch--styles();
+    // @include kendo-upload--styles();
+    // @include kendo-dropzone--styles();
+    // @include kendo-otp--styles();
 
 
-    // Command interfaces
-    @include kendo-appbar--styles();
-    @include kendo-fab--styles();
-    @include kendo-menu--styles();
-    @include kendo-toolbar--styles();
+    // // Command interfaces
+    // @include kendo-appbar--styles();
+    // @include kendo-fab--styles();
+    // @include kendo-menu--styles();
+    // @include kendo-toolbar--styles();
 
 
-    // Popups and modals
-    @include kendo-window--styles();
-    @include kendo-action-sheet--styles();
-    @include kendo-dialog--styles();
-    @include kendo-drawer--styles();
-    @include kendo-notification--styles();
-    @include kendo-popover--styles();
-    @include kendo-responsive-panel--styles();
+    // // Popups and modals
+    // @include kendo-window--styles();
+    // @include kendo-action-sheet--styles();
+    // @include kendo-dialog--styles();
+    // @include kendo-drawer--styles();
+    // @include kendo-notification--styles();
+    // @include kendo-popover--styles();
+    // @include kendo-responsive-panel--styles();
 
 
-    // Navigation
-    @include kendo-bottom-navigation--styles();
-    @include kendo-breadcrumb--styles();
-    @include kendo-pager--styles();
-    @include kendo-stepper--styles();
-    @include kendo-tabstrip--styles();
-    @include kendo-treeview--styles();
-    @include kendo-wizard--styles();
+    // // Navigation
+    // @include kendo-bottom-navigation--styles();
+    // @include kendo-breadcrumb--styles();
+    // @include kendo-pager--styles();
+    // @include kendo-stepper--styles();
+    // @include kendo-tabstrip--styles();
+    // @include kendo-treeview--styles();
+    // @include kendo-wizard--styles();
 
 
-    // Layout & containers
-    @include kendo-card--styles();
-    @include kendo-expander--styles();
-    @include kendo-panel--styles();
-    @include kendo-panelbar--styles();
-    @include kendo-splitter--styles();
-    @include kendo-tile-layout--styles();
-    @include kendo-grid-layout--styles();
-    @include kendo-stack-layout--styles();
-    @include kendo-dock-manager--styles();
-    @include kendo-chart-wizard--styles();
+    // // Layout & containers
+    // @include kendo-card--styles();
+    // @include kendo-expander--styles();
+    // @include kendo-panel--styles();
+    // @include kendo-panelbar--styles();
+    // @include kendo-splitter--styles();
+    // @include kendo-tile-layout--styles();
+    // @include kendo-grid-layout--styles();
+    // @include kendo-stack-layout--styles();
+    // @include kendo-dock-manager--styles();
+    // @include kendo-chart-wizard--styles();
 
 
-    // Data management
-    @include kendo-grid--styles();
-    @include kendo-listview--styles();
-    @include kendo-spreadsheet--styles();
-    @include kendo-pivotgrid--styles();
-    @include kendo-treelist--styles();
-    @include kendo-filter--styles();
-    @include kendo-file-manager--styles();
-    @include kendo-task-board--styles();
+    // // Data management
+    // @include kendo-grid--styles();
+    // @include kendo-listview--styles();
+    // @include kendo-spreadsheet--styles();
+    // @include kendo-pivotgrid--styles();
+    // @include kendo-treelist--styles();
+    // @include kendo-filter--styles();
+    // @include kendo-file-manager--styles();
+    // @include kendo-task-board--styles();
 
 
-    // Editors
-    @include kendo-editor--styles();
-    @include kendo-image-editor--styles();
+    // // Editors
+    // @include kendo-editor--styles();
+    // @include kendo-image-editor--styles();
 
 
-    // Scheduling
-    @include kendo-gantt--styles();
-    @include kendo-scheduler--styles();
+    // // Scheduling
+    // @include kendo-gantt--styles();
+    // @include kendo-scheduler--styles();
 
 
-    // Misc
-    @include kendo-adaptive--styles();
-    @include kendo-chat--styles();
-    @include kendo-media-player--styles();
-    @include kendo-timeline--styles();
-    @include kendo-pdf-viewer--styles();
-    @include kendo-scroller--styles();
-    @include kendo-scrollview--styles();
-    @include kendo-prompt--styles();
+    // // Misc
+    // @include kendo-adaptive--styles();
+    // @include kendo-chat--styles();
+    // @include kendo-media-player--styles();
+    // @include kendo-timeline--styles();
+    // @include kendo-pdf-viewer--styles();
+    // @include kendo-scroller--styles();
+    // @include kendo-scrollview--styles();
+    // @include kendo-prompt--styles();
 
 
-    // Dataviz
-    @include kendo-dataviz--styles();
-    @include kendo-map--styles();
-    @include kendo-orgchart--styles();
-    @include kendo-signature--styles();
-}
+    // // Dataviz
+    // @include kendo-dataviz--styles();
+    // @include kendo-map--styles();
+    // @include kendo-orgchart--styles();
+    // @include kendo-signature--styles();
+// }

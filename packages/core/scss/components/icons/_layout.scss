@@ -4,7 +4,7 @@
     $ki-icon-size: $kendo-icon-size
 );
 
-@mixin kendo-icon--layout-base() {
+// @mixin kendo-icon--layout-base() {
 
     @include kendo-svg-icon-styles();
 
@@ -77,9 +77,4 @@
     .k-image {
         display: inline-block;
     }
-}
-
-
-@mixin kendo-icon--layout() {
-    @include kendo-icon--layout-base();
-}
+// }

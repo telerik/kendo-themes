@@ -1,7 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-tile-layout--theme-base() {
+// @mixin kendo-tile-layout--theme-base() {
 
     .k-tilelayout {
         @include fill(
@@ -21,9 +21,8 @@
         );
     }
 
-}
 
 
-@mixin kendo-tile-layout--theme() {
-    @include kendo-tile-layout--theme-base();
-}
+// @mixin kendo-tile-layout--theme() {
+//     @include kendo-tile-layout--theme-base();
+// }

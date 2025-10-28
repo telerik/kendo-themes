@@ -1,7 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-breadcrumb--theme-base() {
+// @mixin kendo-breadcrumb--theme-base() {
 
     // Breadcrumb
     .k-breadcrumb {
@@ -97,9 +97,4 @@
         @extend .k-breadcrumb-current-item !optional;
     }
 
-}
-
-
-@mixin kendo-breadcrumb--theme() {
-    @include kendo-breadcrumb--theme-base();
-}
+// }

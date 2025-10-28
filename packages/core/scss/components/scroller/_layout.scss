@@ -1,6 +1,6 @@
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-scroller--layout-base() {
+// @mixin kendo-scroller--layout-base() {
 
     // Layout
     .km-scrollview,
@@ -84,9 +84,4 @@
         inset-block-end: 2px;
     }
 
-}
-
-
-@mixin kendo-scroller--layout() {
-    @include kendo-scroller--layout-base();
-}
+// }

@@ -3,7 +3,7 @@
 @use "../button/_variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-pdf-viewer--layout-base() {
+// @mixin kendo-pdf-viewer--layout-base() {
 
     // PDF Viewer
     .k-pdf-viewer {
@@ -357,9 +357,8 @@
 
     }
 
-}
 
 
-@mixin kendo-pdf-viewer--layout() {
-    @include kendo-pdf-viewer--layout-base();
-}
+// @mixin kendo-pdf-viewer--layout() {
+//     @include kendo-pdf-viewer--layout-base();
+// }

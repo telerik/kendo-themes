@@ -1,4 +1,4 @@
-@mixin kendo-time-duration-picker--layout-base() {
+// @mixin kendo-time-duration-picker--layout-base() {
 
     // Time duration picker
     .k-time-duration-picker {}
@@ -9,9 +9,8 @@
         @extend .k-time-duration-picker;
     }
 
-}
 
 
-@mixin kendo-time-duration-picker--layout() {
-    @include kendo-time-duration-picker--layout-base();
-}
+// @mixin kendo-time-duration-picker--layout() {
+//     @include kendo-time-duration-picker--layout-base();
+// }

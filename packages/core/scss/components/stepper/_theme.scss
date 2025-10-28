@@ -3,7 +3,7 @@
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-stepper--theme-base() {
+// @mixin kendo-stepper--theme-base() {
 
     // Base
     .k-stepper {
@@ -214,9 +214,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-stepper--theme() {
-    @include kendo-stepper--theme-base();
-}
+// }

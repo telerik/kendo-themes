@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/dropdowngrid/_layout.scss" as *;
-
-
-@mixin kendo-dropdown-grid--layout() {
-    @include kendo-dropdown-grid--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/dropdowngrid/_layout.scss";
