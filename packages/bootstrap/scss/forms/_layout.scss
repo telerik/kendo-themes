@@ -1,7 +1,6 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
 @use "../input/_variables.scss" as *;
-
 @use "@progress/kendo-theme-core/scss/components/forms/_layout.scss" as *;
 
 @mixin kendo-form--layout() {
