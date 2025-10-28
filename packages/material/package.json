@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-material",
   "description": "Material theme for Kendo UI",
-  "version": "12.2.0-dev.4",
+  "version": "12.2.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -55,8 +55,8 @@
   },
   "dependencies": {
     "@progress/kendo-svg-icons": "^4.5.0",
-    "@progress/kendo-theme-core": "12.2.0-dev.4",
-    "@progress/kendo-theme-utils": "12.2.0-dev.4"
+    "@progress/kendo-theme-core": "12.2.0",
+    "@progress/kendo-theme-utils": "12.2.0"
   },
   "directories": {
     "doc": "docs",
