@@ -37,6 +37,16 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Elevation map.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-elevation-bg</td>
+    <td></td>
+    <td><code>$default-elevation-bg-step</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The lightness step for accessible elevations.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

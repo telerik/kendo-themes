@@ -514,6 +514,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-actionsheet-elevation-step</td>
+    <td>String</td>
+    <td><code>var( --kendo-actionsheet-elevation-step, 7 )</code></td>
+    <td><code>var(--kendo-actionsheet-elevation-step, 7)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Elevation step of the action sheet.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-actionsheet-header-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-actionsheet-header-padding-x, #{k-spacing(4)} )</code></td>
@@ -13258,6 +13268,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Elevation map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-elevation-bg</td>
+    <td>Map</td>
+    <td><code>$default-elevation-bg-step</code></td>
+    <td><ul><li>1: 2%</li><li>2: 4%</li><li>3: 6%</li><li>4: 8%</li><li>5: 10%</li><li>6: 12%</li><li>7: 14%</li><li>8: 16%</li><li>9: 32%</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The lightness step for accessible elevations.</div></div>
     </td>
 </tr>
 </tbody>
