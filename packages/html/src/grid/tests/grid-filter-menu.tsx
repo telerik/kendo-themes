@@ -49,7 +49,7 @@ export default () =>(
                     <form className="k-filter-menu k-popup k-group k-reset">
                         <div className="k-filter-menu-container">
                             <div className="k-filter-help-text">Show items with value that:</div>
-                            <DropdownList value="Is greater than or equal to" />
+                            <DropdownList value="An example of some very very very long filter operator" />
                             <NumericTextbox />
                             <DropdownList value="And" className="k-filter-and" />
                             <DropdownList value="Is equal to" />
