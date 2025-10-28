@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.2.0-dev.4](https://github.com/telerik/kendo-themes/compare/v12.2.0-dev.3...v12.2.0-dev.4) (2025-10-28)
+
+
+### Bug Fixes
+
+* **list:** not working sizing sass variables ([6bd0951](https://github.com/telerik/kendo-themes/commit/6bd0951642c35067dbb87d026ac25bef874c79b5))
+
+
+
+
+
 # [12.2.0-dev.3](https://github.com/telerik/kendo-themes/compare/v12.2.0-dev.2...v12.2.0-dev.3) (2025-10-27)
 
 **Note:** Version bump only for package @progress/kendo-theme-bootstrap
