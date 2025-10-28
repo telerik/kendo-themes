@@ -851,7 +851,7 @@ $kendo-utils: (
         "270": 270deg,
         "315": 315deg
     ),
-    "translate": k-map-remove( $kendo-sizing, "auto", "min", "max", "fit" ),
+    "translate": map.remove( $kendo-sizing, "auto", "min", "max", "fit" ),
     "skew": (
         "0": 0deg,
         "1": 1deg,

@@ -15,48 +15,6 @@ $_kendo-escape-class-name: (
     "/": "\\/"
 );
 
-/// Returns the first index of `$substring` in `$string`, or `null` if `$string` doesn’t contain `$substring`.
-/// @param {String} $string - The string to process.
-/// @param {String} $substring - The substring to look for.
-/// @return {Number} - The first index of `$substring` in `$string`, or `null` if `$string` doesn’t contain `$substring`.
-///
-/// @example scss - Usage
-///   @debug k-string-index( "foo bar", "bar" ); // => 5
-@function k-string-index( $string, $substring ) {
-    @return string.index( $string, $substring );
-}
-
-/// Returns a copy of `$string` with `$insert` inserted at `$index`.
-/// @param {String} $string - The string to process.
-/// @param {String} $insert - The string to insert.
-/// @param {Number} $index - The index at which to insert `$insert`.
-/// @return {String} - The resulting string.
-///
-/// @example scss - Usage
-///   @debug k-string-insert( "foo bar", "baz", 5 ); // => "foo baz bar"
-@function k-string-insert( $string, $insert, $index ) {
-    @return string.insert( $string, $insert, $index );
-}
-
-/// Returns the length of `$string`.
-/// @param {String} $string - The string to process.
-/// @return {Number} - The length of `$string`.
-///
-/// @example scss - Usage
-///   @debug k-string-length( "foo bar" ); // => 7
-@function k-string-length( $string ) {
-    @return string.length( $string );
-}
-
-/// Returns a copy of `$string` with quotes added.
-/// @param {String} $string - The string to process.
-/// @return {String} - The resulting string.
-///
-/// @example scss - Usage
-///   @debug k-string-quote( "foo bar" ); // => "foo bar"
-@function k-string-quote( $string ) {
-    @return string.quote( $string );
-}
 
 /// Returns a copy of `$string` with all occurrences of `$search`
 /// replaced by `$replace`.
@@ -74,73 +32,21 @@ $_kendo-escape-class-name: (
         $string: $string + "";
     }
 
-    $index: k-string-index( $string, $search );
+    $index: string.index( $string, $search );
 
     @if $index {
-        @return k-string-slice( $string, 1, $index - 1 ) + $replace + k-string-replace( k-string-slice( $string, $index + k-string-length( $search ) ), $search, $replace );
+        @return string.slice( $string, 1, $index - 1 ) + $replace + k-string-replace( string.slice( $string, $index + string.length( $search ) ), $search, $replace );
     }
 
     @return $string;
 }
 
-/// Returns a substring of `$string` starting at `$start-at` and ending at `$end-at`.
-/// @param {String} $string - The string to process.
-/// @param {Number} $start-at - The index at which to start the substring.
-/// @param {Number} $end-at - The index at which to end the substring.
-/// @return {String} - The resulting string.
-///
-/// @example scss - Usage
-///   @debug k-string-slice( "foo bar", 5 ); // => "bar"
-@function k-string-slice( $string, $start-at, $end-at: -1 ) {
-    @return string.slice( $string, $start-at, $end-at );
-}
-
-/// Returns a copy of `$string` with all uppercase letters converted to lowercase.
-/// @param {String} $string - The string to process.
-/// @return {String} - The resulting string.
-///
-/// @example scss - Usage
-///   @debug k-string-to-lower-case( "FOO BAR" ); // => "foo bar"
-@function k-string-to-lower-case( $string ) {
-    @return string.to-lower-case( $string );
-}
-
-/// Returns a copy of `$string` with all lowercase letters converted to uppercase.
-/// @param {String} $string - The string to process.
-/// @return {String} - The resulting string.
-///
-/// @example scss - Usage
-///   @debug k-string-to-upper-case( "foo bar" ); // => "FOO BAR"
-@function k-string-to-upper-case( $string ) {
-    @return string.to-upper-case( $string );
-}
-
-/// Returns a unique identifier.
-/// @return {String} - The unique identifier.
-///
-/// @example scss - Usage
-///   @debug k-string-unique-id(); // => UNIQUE_ID
-@function k-string-unique-id() {
-    @return string.unique-id();
-}
-
-/// Returns a copy of `$string` with quotes removed.
-/// @param {String} $string - The string to process.
-/// @return {String} - The resulting string.
-///
-/// @example scss - Usage
-///   @debug k-string-unquote( "foo bar" ); // => foo bar
-@function k-string-unquote( $string ) {
-    @return string.unquote( $string );
-}
-
-
 // See https://www.sassmeister.com/gist/1b4f2da5527830088e4d
 @function str-replace($string, $search, $replace: "") {
-    $index: k-string-index($string, $search);
+    $index: string.index($string, $search);
 
     @if $index {
-        @return k-string-slice($string, 1, $index - 1) + $replace + str-replace(k-string-slice($string, $index + k-string-length($search)), $search, $replace);
+        @return string.slice($string, 1, $index - 1) + $replace + str-replace(string.slice($string, $index + string.length($search)), $search, $replace);
     }
 
     @return $string;
@@ -148,11 +54,11 @@ $_kendo-escape-class-name: (
 
 // See https://codepen.io/kevinweber/pen/dXWoRw
 @function k-escape-svg($string) {
-    @if k-string-index($string, "data:image/svg+xml") {
+    @if string.index($string, "data:image/svg+xml") {
         @each $char, $encoded in $_kendo-svg-escaped-characters {
             // Do not escape the url brackets
-            @if k-string-index($string, "url(") == 1 {
-                $string: url("#{k-string-replace(k-string-slice($string, 6, -3), $char, $encoded)}");
+            @if string.index($string, "url(") == 1 {
+                $string: url("#{k-string-replace(string.slice($string, 6, -3), $char, $encoded)}");
             } @else {
                 $string: k-string-replace($string, $char, $encoded);
             }
@@ -169,7 +75,7 @@ $_kendo-escape-class-name: (
     $_text: $text;
 
     @each $char, $rep in $_kendo-escape-class-name {
-        $_text: k-string-replace( $_text, k-string-unquote( $char ), k-string-unquote( $rep ) );
+        $_text: k-string-replace( $_text, string.unquote( $char ), string.unquote( $rep ) );
     }
 
     @return $_text;

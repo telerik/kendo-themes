@@ -1,34 +1,5 @@
 @use "sass:math";
-
-/// Returns the absolute value of a number.
-/// @param {Number} $number - The number to get the absolute value of.
-/// @return {Number} - The absolute value of `$number`.
-///
-/// @example scss - Usage
-///   @debug k-math-abs( -10 ); // => 10
-@function k-math-abs( $number ) {
-    @return math.abs( $number );
-}
-
-/// Returns the smallest integer greater than or equal to a number.
-/// @param {Number} $number - The number to get the ceiling of.
-/// @return {Number} - The ceiling of `$number`.
-///
-/// @example scss - Usage
-///   @debug k-math-ceil( 10.1 ); // => 11
-@function k-math-ceil( $number ) {
-    @return math.ceil( $number );
-}
-
-/// Returns the largest integer less than or equal to a number.
-/// @param {Number} $number - The number to get the floor of.
-/// @return {Number} - The floor of `$number`.
-///
-/// @example scss - Usage
-///   @debug k-math-floor( 10.9 ); // => 10
-@function k-math-floor( $number ) {
-    @return math.floor( $number );
-}
+@use "sass:meta";
 
 /// Restricts `$number` to the range between `$min` and `$max`. If `$number` is
 /// less than `$min`, `$min` is returned. If `$number` is greater than `$max`,
@@ -40,101 +11,8 @@
 ///
 /// @example scss - Usage
 ///   @debug k-math-clamp( 10, 0, 5 ); // => 5
-@function k-math-clamp( $number, $min, $max ) {
-    @return k-math-max( $min, k-math-min( $max, $number ) );
-}
-
-/// Returns whether two numbers have compatible units.
-/// @param {Number} $a - The first number.
-/// @param {Number} $b - The second number.
-/// @return {Boolean} - Whether the numbers have compatible units.
-///
-/// @example scss - Usage
-///   @debug k-math-compatible( 10px, 10px ); // => true
-///   @debug k-math-compatible( 10px, 10em ); // => false
-@function k-math-compatible( $a, $b ) {
-    @return math.comparable( $a, $b );
-}
-
-/// Returns the quotient of two numbers.
-/// @param {Number} $a - The dividend.
-/// @param {Number} $b - The divisor.
-/// @return {Number} - The quotient of `$a` and `$b`.
-///
-/// @example scss - Usage
-///   @debug k-math-div( 10, 2 ); // => 5
-///   @debug k-math-div( 10px, 2 ); // => 5px
-@function k-math-div( $a, $b )  {
-    @return math.div( $a, $b );
-}
-
-/// Returns whether `$number` has no units.
-/// @param {Number} $number - The number to check.
-/// @return {Boolean} - Whether `$number` has no units.
-///
-/// @example scss - Usage
-///   @debug k-math-is-unitless( 10 ); // => true
-///   @debug k-math-is-unitless( 10px ); // => false
-@function k-math-is-unitless( $number ) {
-    @return math.unitless( $number );
-}
-
-/// Returns the larger of two numbers.
-/// @param {Number} $a - The first number.
-/// @param {Number} $b - The second number.
-/// @return {Number} - The larger of `$a` and `$b`.
-///
-/// @example scss - Usage
-///   @debug k-math-max( 10, 20 ); // => 20
-///   @debug k-math-max( 10px, 20px ); // => 20px
-@function k-math-max( $a, $b ) {
-    @return math.max( $a, $b );
-}
-
-/// Returns the smaller of two numbers.
-/// @param {Number} $a - The first number.
-/// @param {Number} $b - The second number.
-/// @return {Number} - The smaller of `$a` and `$b`.
-///
-/// @example scss - Usage
-///   @debug k-math-min( 10, 20 ); // => 10
-///   @debug k-math-min( 10px, 20px ); // => 10px
-@function k-math-min( $a, $b ) {
-    @return math.min( $a, $b );
-}
-
-/// Returns the remainder of two numbers.
-/// @param {Number} $a - The dividend.
-/// @param {Number} $b - The divisor.
-/// @return {Number} - The remainder of `$a` and `$b`.
-///
-/// @example scss - Usage
-///   @debug k-math-mod( 10, 3 ); // => 1
-///   @debug k-math-mod( 10px, 3 ); // => 1px
-@function k-math-mod( $a, $b ) {
-    @return ( $a % $b );
-}
-
-/// Returns the product of two numbers.
-/// @param {Number} $a - The first number.
-/// @param {Number} $b - The second number.
-/// @return {Number} - The product of `$a` and `$b`.
-///
-/// @example scss - Usage
-///   @debug k-math-mul( 10, 2 ); // => 20
-///   @debug k-math-mul( 10px, 2 ); // => 20px
-@function k-math-mul( $a, $b ) {
-    @return ( $a * $b );
-}
-
-/// Converts a unitless number to a percentage.
-/// @param {Number} $number - The number to convert.
-/// @return {Number} - The percentage.
-///
-/// @example scss - Usage
-///   @debug k-math-percentage( 0.5 ); // => 50%
-@function k-math-percentage( $number ) {
-    @return math.percentage( $number );
+@function k-math-clamp($number, $min, $max) {
+    @return math.max($min, math.min($max, $number));
 }
 
 /// Returns the result of raising `$x` to the power of `$n`.
@@ -144,14 +22,14 @@
 ///
 /// @example scss - Usage
 ///   @debug k-math-pow( 2, 3 ); // => 8
-@function k-math-pow( $x, $n ) {
+@function k-math-pow($x, $n) {
     $ret: 1;
 
-    @if ( $n == 0 ) {
+    @if ($n == 0) {
         @return $ret;
     }
 
-    @if ( $n > 0 ) {
+    @if ($n > 0) {
         @for $i from 1 through $n {
             $ret: $ret * $x;
         }
@@ -159,24 +37,9 @@
     }
 
     @for $i from $n to 0 {
-        $ret: k-math-div( $ret, $x );
+        $ret: math.div($ret, $x);
     }
     @return $ret;
-
-}
-
-/// Returns a random number between 0 and 1.
-/// @param {Number} $limit - The upper limit of the random number.
-/// @return {Number} - A random number between 0 and 1.
-///
-/// @example scss - Usage
-///   @debug k-math-random(); // => 0.123456789
-@function k-math-random( $limit: null ) {
-    @if ( $limit == null ) { // stylelint-disable-line
-        @return math.random();
-    }
-
-    @return math.random( $limit );
 }
 
 /// Returns the result of rounding `$number` to the nearest integer
@@ -187,25 +50,14 @@
 ///
 /// @example scss - Usage
 ///   @debug k-math-round( 10.123456789, 3 ); // => 10.123
-@function k-math-round( $number, $precision: 0 ) {
-
-    @if ( $precision == 0 ) {
-        @return math.round( $number );
+@function k-math-round($number, $precision: 0) {
+    @if ($precision == 0) {
+        @return math.round($number);
     }
 
-    $pow: k-math-pow( 10, $precision );
+    $pow: k-math-pow(10, $precision);
 
-    @return k-math-div( round( $number * $pow ), $pow );
-}
-
-/// Returns a string representation of `$number`'s unit.
-/// @param {Number} $number - The number to get the unit of.
-/// @return {String} - The unit of `$number`.
-///
-/// @example scss - Usage
-///   @debug k-math-unit( 10px ); // => px
-@function k-math-unit( $number ) {
-    @return math.unit( $number );
+    @return math.div(round($number * $pow), $pow);
 }
 
 /// Remove the unit from a number.
@@ -215,8 +67,8 @@
 /// @example scss - Usage
 ///   @debug k-math-strip-unit( 10px ); // => 10
 @function k-math-strip-unit($number) {
-    @if ( k-meta-type-of( $number ) == "number" ) and not k-math-is-unitless( $number ) {
-        @return k-math-div( $number, 1 * k-math-unit( $number) );
+    @if (meta.type-of($number) == "number") and not math.unitless($number) {
+        @return math.div($number, 1 * math.unit($number));
     }
 
     @return $number;
