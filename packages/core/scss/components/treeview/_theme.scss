@@ -80,8 +80,3 @@
     }
 
 }
-
-
-@mixin kendo-treeview--theme() {
-    @include kendo-treeview--theme-base();
-}

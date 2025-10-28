@@ -45,8 +45,3 @@
     }
 
 }
-
-
-@mixin kendo-date-range-picker--layout() {
-    @include kendo-date-range-picker--layout-base();
-}

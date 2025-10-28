@@ -186,8 +186,3 @@
         }
     }
 }
-
-
-@mixin kendo-toolbar--theme() {
-    @include kendo-toolbar--theme-base();
-}

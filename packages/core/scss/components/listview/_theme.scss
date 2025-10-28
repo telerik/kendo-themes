@@ -41,8 +41,3 @@
     }
 
 }
-
-
-@mixin kendo-listview--theme() {
-    @include kendo-listview--theme-base();
-}

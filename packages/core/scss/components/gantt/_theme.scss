@@ -278,8 +278,3 @@
     }
 
 }
-
-
-@mixin kendo-gantt--theme() {
-    @include kendo-gantt--theme-base();
-}

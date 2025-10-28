@@ -207,8 +207,3 @@
     }
 
 }
-
-
-@mixin kendo-panelbar--theme() {
-    @include kendo-panelbar--theme-base();
-}

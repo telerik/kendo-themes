@@ -42,8 +42,3 @@
         color: $kendo-expander-header-sub-title-text;
     }
 }
-
-
-@mixin kendo-expander--theme() {
-    @include kendo-expander--theme-base();
-}

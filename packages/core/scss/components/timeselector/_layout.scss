@@ -248,8 +248,3 @@
     }
 
 }
-
-
-@mixin kendo-time-selector--layout() {
-    @include kendo-time-selector--layout-base();
-}

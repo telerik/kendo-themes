@@ -237,8 +237,3 @@
     }
 
 }
-
-
-@mixin kendo-progressbar--layout() {
-    @include kendo-progressbar--layout-base();
-}

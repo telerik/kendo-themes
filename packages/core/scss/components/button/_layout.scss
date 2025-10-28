@@ -361,8 +361,3 @@
     }
 
 }
-
-
-@mixin kendo-button--layout() {
-    @include kendo-button--layout-base();
-}

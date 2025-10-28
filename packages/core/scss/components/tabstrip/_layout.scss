@@ -490,8 +490,3 @@
     }
 
 }
-
-
-@mixin kendo-tabstrip--layout() {
-    @include kendo-tabstrip--layout-base();
-}

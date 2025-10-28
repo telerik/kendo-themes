@@ -27,8 +27,3 @@
     }
 
 }
-
-
-@mixin kendo-badge--theme() {
-    @include kendo-badge--theme-base();
-}

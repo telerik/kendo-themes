@@ -31,8 +31,3 @@
     }
 
 }
-
-
-@mixin kendo-filter--theme() {
-    @include kendo-filter--theme-base();
-}

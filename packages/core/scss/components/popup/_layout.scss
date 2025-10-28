@@ -91,8 +91,3 @@
     }
 
 }
-
-
-@mixin kendo-popup--layout() {
-    @include kendo-popup--layout-base();
-}

@@ -13,8 +13,3 @@
     }
 
 }
-
-
-@mixin kendo-captcha--theme() {
-    @include kendo-captcha--theme-base();
-}

@@ -341,8 +341,3 @@
     }
 
 }
-
-
-@mixin kendo-card--layout() {
-    @include kendo-card--layout-base();
-}

@@ -462,8 +462,3 @@
         }
     }
 }
-
-
-@mixin kendo-adaptive--layout() {
-    @include kendo-adaptive--layout-base();
-}

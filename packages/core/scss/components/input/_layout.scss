@@ -565,8 +565,3 @@
     }
 
 }
-
-
-@mixin kendo-input--layout() {
-    @include kendo-input--layout-base();
-}

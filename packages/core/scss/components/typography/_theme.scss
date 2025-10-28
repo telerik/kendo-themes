@@ -22,8 +22,3 @@
     }
 
 }
-
-
-@mixin kendo-typography--theme() {
-    @include kendo-typography--theme-base();
-}

@@ -163,8 +163,3 @@
         transition-timing-function: ease-in-out;
     }
 }
-
-
-@mixin kendo-scrollview--layout() {
-    @include kendo-scrollview--layout-base();
-}

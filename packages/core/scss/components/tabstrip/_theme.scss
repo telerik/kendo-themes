@@ -156,8 +156,3 @@
         }
     }
 }
-
-
-@mixin kendo-tabstrip--theme() {
-    @include kendo-tabstrip--theme-base();
-}

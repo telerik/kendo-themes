@@ -82,8 +82,3 @@
     }
 
 }
-
-
-@mixin kendo-skeleton--layout() {
-    @include kendo-skeleton--layout-base();
-}

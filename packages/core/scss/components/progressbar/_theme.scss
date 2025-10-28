@@ -53,8 +53,3 @@
     }
 
 }
-
-
-@mixin kendo-progressbar--theme() {
-    @include kendo-progressbar--theme-base();
-}

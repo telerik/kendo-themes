@@ -4,8 +4,3 @@
     .k-textbox {}
 
 }
-
-
-@mixin kendo-textbox--layout() {
-    @include kendo-textbox--layout-base();
-}

@@ -20,8 +20,3 @@
         }
     }
 }
-
-
-@mixin kendo-marquee--theme() {
-    @include kendo-marquee--theme-base();
-}

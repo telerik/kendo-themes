@@ -16,8 +16,3 @@
         height: 100%;
     }
 }
-
-
-@mixin kendo-marquee--layout() {
-    @include kendo-marquee--layout-base();
-}

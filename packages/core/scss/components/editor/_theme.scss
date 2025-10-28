@@ -102,8 +102,3 @@
     }
 
 }
-
-
-@mixin kendo-editor--theme() {
-    @include kendo-editor--theme-base();
-}

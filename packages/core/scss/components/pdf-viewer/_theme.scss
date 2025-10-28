@@ -95,8 +95,3 @@
     }
 
 }
-
-
-@mixin kendo-pdf-viewer--theme() {
-    @include kendo-pdf-viewer--theme-base();
-}

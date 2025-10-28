@@ -4,8 +4,3 @@
     .k-dateinput {}
 
 }
-
-
-@mixin kendo-date-input--layout() {
-    @include kendo-date-input--layout-base();
-}

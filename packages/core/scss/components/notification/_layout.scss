@@ -75,8 +75,3 @@
     }
 
 }
-
-
-@mixin kendo-notification--layout() {
-    @include kendo-notification--layout-base();
-}

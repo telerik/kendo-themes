@@ -170,8 +170,3 @@
     }
 
 }
-
-
-@mixin kendo-treeview--layout() {
-    @include kendo-treeview--layout-base();
-}

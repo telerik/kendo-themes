@@ -47,8 +47,3 @@
     }
 
 }
-
-
-@mixin kendo-tile-layout--layout() {
-    @include kendo-tile-layout--layout-base();
-}

@@ -98,8 +98,3 @@
     }
 
 }
-
-
-@mixin kendo-breadcrumb--theme() {
-    @include kendo-breadcrumb--theme-base();
-}

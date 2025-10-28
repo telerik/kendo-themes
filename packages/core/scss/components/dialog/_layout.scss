@@ -72,8 +72,3 @@
     }
 
 }
-
-
-@mixin kendo-dialog--layout() {
-    @include kendo-dialog--layout-base();
-}

@@ -27,8 +27,3 @@
     }
 
 }
-
-
-@mixin kendo-dialog--theme() {
-    @include kendo-dialog--theme-base();
-}

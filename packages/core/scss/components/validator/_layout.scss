@@ -24,8 +24,3 @@
     }
 
 }
-
-
-@mixin kendo-validator--layout() {
-    @include kendo-validator--layout-base();
-}

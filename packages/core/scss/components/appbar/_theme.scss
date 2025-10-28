@@ -31,8 +31,3 @@
     }
 
 }
-
-
-@mixin kendo-appbar--theme() {
-    @include kendo-appbar--theme-base();
-}

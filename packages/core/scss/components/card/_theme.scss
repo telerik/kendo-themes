@@ -107,8 +107,3 @@
     }
 
 }
-
-
-@mixin kendo-card--theme() {
-    @include kendo-card--theme-base();
-}

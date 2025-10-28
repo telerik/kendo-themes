@@ -474,8 +474,3 @@
         border-inline-end-color: currentColor;
     }
 }
-
-
-@mixin kendo-grid--theme() {
-    @include kendo-grid--theme-base();
-}

@@ -39,8 +39,3 @@
         padding: $kendo-chart-wizard-property-pane-padding;
     }
 }
-
-
-@mixin kendo-chart-wizard--layout() {
-    @include kendo-chart-wizard--layout-base();
-}

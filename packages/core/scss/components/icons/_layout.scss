@@ -78,8 +78,3 @@
         display: inline-block;
     }
 }
-
-
-@mixin kendo-icon--layout() {
-    @include kendo-icon--layout-base();
-}

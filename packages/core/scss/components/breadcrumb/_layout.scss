@@ -134,8 +134,3 @@
     }
 
 }
-
-
-@mixin kendo-breadcrumb--layout() {
-    @include kendo-breadcrumb--layout-base();
-}

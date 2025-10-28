@@ -26,8 +26,3 @@
     }
 
 }
-
-
-@mixin kendo-messagebox--theme() {
-    @include kendo-messagebox--theme-base();
-}

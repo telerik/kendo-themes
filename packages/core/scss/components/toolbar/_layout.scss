@@ -367,8 +367,3 @@
     }
 
 }
-
-
-@mixin kendo-toolbar--layout() {
-    @include kendo-toolbar--layout-base();
-}

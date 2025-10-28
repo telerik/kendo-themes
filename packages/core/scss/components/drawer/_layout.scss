@@ -205,8 +205,3 @@
         width: $kendo-drawer-mini-initial-width;
     }
 }
-
-
-@mixin kendo-drawer--layout() {
-    @include kendo-drawer--layout-base();
-}

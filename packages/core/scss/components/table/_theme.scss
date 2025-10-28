@@ -90,8 +90,3 @@
     }
 
 }
-
-
-@mixin kendo-table--theme() {
-    @include kendo-table--theme-base();
-}

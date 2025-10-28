@@ -224,8 +224,3 @@
     }
 
 }
-
-
-@mixin kendo-checkbox--layout() {
-    @include kendo-checkbox--layout-base();
-}

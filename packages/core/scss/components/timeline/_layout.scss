@@ -445,8 +445,3 @@
     }
 
 }
-
-
-@mixin kendo-timeline--layout() {
-    @include kendo-timeline--layout-base();
-}

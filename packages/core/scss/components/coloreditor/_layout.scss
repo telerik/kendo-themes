@@ -117,8 +117,3 @@
         margin: 0;
     }
 }
-
-
-@mixin kendo-color-editor--layout() {
-    @include kendo-color-editor--layout-base();
-}

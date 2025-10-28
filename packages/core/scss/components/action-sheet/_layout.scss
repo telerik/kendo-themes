@@ -412,8 +412,3 @@
     }
 
 }
-
-
-@mixin kendo-action-sheet--layout() {
-    @include kendo-action-sheet--layout-base();
-}

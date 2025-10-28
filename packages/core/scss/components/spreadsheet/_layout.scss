@@ -907,8 +907,3 @@
     }
 
 }
-
-
-@mixin kendo-spreadsheet--layout() {
-    @include kendo-spreadsheet--layout-base();
-}

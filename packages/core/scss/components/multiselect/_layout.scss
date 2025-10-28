@@ -4,8 +4,3 @@
     .k-multiselect {}
 
 }
-
-
-@mixin kendo-multiselect--layout() {
-    @include kendo-multiselect--layout-base();
-}

@@ -4,8 +4,3 @@
     .k-combobox {}
 
 }
-
-
-@mixin kendo-combobox--theme() {
-    @include kendo-combobox--theme-base();
-}

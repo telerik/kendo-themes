@@ -39,8 +39,3 @@
     }
 
 }
-
-
-@mixin kendo-popover--theme() {
-    @include kendo-popover--theme-base();
-}

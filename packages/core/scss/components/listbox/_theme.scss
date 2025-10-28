@@ -19,8 +19,3 @@
     }
 
 }
-
-
-@mixin kendo-listbox--theme() {
-    @include kendo-listbox--theme-base();
-}

@@ -15,8 +15,3 @@
     }
 
 }
-
-
-@mixin kendo-overlay--layout() {
-    @include kendo-overlay--layout-base();
-}

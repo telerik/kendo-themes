@@ -940,8 +940,3 @@
     }
 
 }
-
-
-@mixin kendo-scheduler--layout() {
-    @include kendo-scheduler--layout-base();
-}

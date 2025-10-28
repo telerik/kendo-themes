@@ -236,8 +236,3 @@
     .k-scheduler-edit-form {}
 
 }
-
-
-@mixin kendo-scheduler--theme() {
-    @include kendo-scheduler--theme-base();
-}
