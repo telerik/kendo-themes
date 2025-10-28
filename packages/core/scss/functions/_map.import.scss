@@ -7,33 +7,11 @@
 ///
 /// @example scss - Usage
 ///   @debug k-map-get( ( "foo": "bar" ), "foo" ); // => "bar"
-@function k-map-get( $map, $keys... ) {
+@function k-map-get($map, $keys...) {
     @each $key in $keys {
-        $map: map.get( $map, $key ); // stylelint-disable-line
+        $map: map.get($map, $key); // stylelint-disable-line
     }
     @return $map;
-}
-
-/// Returns whether `$map` has a value at `$key`.
-/// @param {Map} $map - The map to check.
-/// @param {Any} $key - The key to check.
-/// @return {Boolean} - Whether `$map` has a value at `$key`.
-///
-/// @example scss - Usage
-///   @debug k-map-has( ( "foo": "bar" ), "foo" ); // => true
-///   @debug k-map-has( ( "foo": "bar" ), "bar" ); // => false
-@function k-map-has-key( $map, $key ) {
-    @return map.has-key( $map, $key );
-}
-
-/// Returns a comma separated list of the keys in `$map`.
-/// @param {Map} $map - The map to get the keys from.
-/// @return {List} - A comma separated list of the keys in `$map`.
-///
-/// @example scss - Usage
-///   @debug k-map-keys( ( "foo": "bar", "baz": "qux" ) ); // => "foo, baz"
-@function k-map-keys( $map ) {
-    @return map.keys( $map );
 }
 
 /// Returns a map with the keys and values from `$map` and `$args`.
@@ -43,9 +21,9 @@
 ///
 /// @example scss - Usage
 ///   @debug k-map-merge( ( "foo": "bar" ), ( "baz": "qux" ) ); // => ( "foo": "bar", "baz": "qux" )
-@function k-map-merge( $map, $args... ) {
+@function k-map-merge($map, $args...) {
     @each $arg in $args {
-        $map: map.merge( $map, $arg ); // stylelint-disable-line
+        $map: map.merge($map, $arg); // stylelint-disable-line
     }
     @return $map;
 }
@@ -60,35 +38,24 @@
     $merged: ();
 
     @each $map in $maps {
-      @each $key, $val in $map {
-        @if (meta.type-of($val) == 'map') {
-          $current: k-map-get($merged, $key);
-          @if (meta.type-of($current) == 'map') {
-            $val: k-map-deep-merge($current, $val);
-            $map: k-map-merge(
-              $map,
-              (
-                $key: $val
-              )
-            );
-          }
+        @each $key, $val in $map {
+            @if (meta.type-of($val) == "map") {
+                $current: k-map-get($merged, $key);
+                @if (meta.type-of($current) == "map") {
+                    $val: k-map-deep-merge($current, $val);
+                    $map: k-map-merge(
+                        $map,
+                        (
+                            $key: $val,
+                        )
+                    );
+                }
+            }
         }
-      }
-      $merged: k-map-merge($merged, $map);
+        $merged: k-map-merge($merged, $map);
     }
 
     @return $merged;
-  }
-
-/// Returns a map with the keys and values from `$map` except for `$keys`.
-/// @param {Map} $map - The map to remove keys from.
-/// @param {Any} $keys - The keys to remove from `$map`.
-/// @return {Map} - A map with the keys and values from `$map` except for `$keys`.
-///
-/// @example scss - Usage
-///   @debug k-map-remove( ( "foo": "bar", "baz": "qux" ), "foo" ); // => ( "baz": "qux" )
-@function k-map-remove( $map, $keys... ) {
-    @return map.remove( $map, $keys... );
 }
 
 /// Sets a single key and value in `$map`.
@@ -99,18 +66,13 @@
 ///
 /// @example scss - Usage
 ///   @debug k-map-set( ( "foo": "bar" ), "baz", "qux" ); // => ( "foo": "bar", "baz": "qux" )
-@function k-map-set( $map, $key, $value ) {
-    @return k-map-merge( $map, ( $key: $value ) );
-}
-
-/// Returns a comma separated list of the values in `$map`.
-/// @param {Map} $map - The map to get the values from.
-/// @return {List} - A comma separated list of the values in `$map`.
-///
-/// @example scss - Usage
-///   @debug k-map-values( ( "foo": "bar", "baz": "qux" ) ); // => "bar, qux"
-@function k-map-values( $map ) {
-    @return map.values( $map );
+@function k-map-set($map, $key, $value) {
+    @return k-map-merge(
+        $map,
+        (
+            $key: $value,
+        )
+    );
 }
 
 /// Returns negative values of a number or numbers in a list.
@@ -122,17 +84,16 @@
 @function k-map-negate($map) {
     $_map-neg: ();
 
-    @if( meta.type-of($map) != map ) {
+    @if (meta.type-of($map) != map) {
         @error "expected type of #{$map} is map, was #{meta.type-of($map)}";
-    };
+    }
     @each $key, $value in $map {
         $_key-neg: "-" + $key;
 
-        @if( meta.type-of($value) == number and $value != 0 and $_key-neg != "-0" ) {
-            $_map-neg: k-map-set($_map-neg, $_key-neg, -1 * $value );
+        @if (meta.type-of($value) == number and $value != 0 and $_key-neg != "-0") {
+            $_map-neg: k-map-set($_map-neg, $_key-neg, -1 * $value);
         }
     }
 
     @return $_map-neg;
-
 }

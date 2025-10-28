@@ -7,17 +7,6 @@
 $kendo-light-color-level-step: 8% !default;
 $kendo-dark-color-level-step: 16% !default;
 
-/// Returns the alpha channel of a color.
-/// @param {Color} $color - The color to get the alpha channel for.
-/// @return {Number} - The alpha channel of the color.
-///
-/// @example scss - Usage
-///   @debug k-color-alpha( rgba( 0, 0, 0, 0.5 ) ); // => 0.5
-///   @debug k-color-alpha( #000 ); // => 1
-@function k-color-alpha( $color ) {
-    @return color.alpha( $color );
-}
-
 /// Returns the red channel of a color.
 /// @param {Color} $color - The color to get the red channel for.
 /// @return {Number} - The red channel of the color.
@@ -163,42 +152,6 @@ $kendo-dark-color-level-step: 16% !default;
     @return color.adjust( $color, $saturation: - $amount );
 }
 
-/// Returns a gray color with the same lightness as the input color.
-/// @param {Color} $color - The color to convert to grayscale.
-/// @return {Color} - The grayscale color.
-///
-/// @example scss - Usage
-///   @debug k-color-grayscale( #f00 ); // => #808080
-@function k-color-grayscale( $color ) {
-    @return color.grayscale( $color );
-}
-
-/// Returns the RGB complement of a color. This identical to adjusting the hue
-/// by 180 degrees.
-/// @param {Color} $color - The color to get the complement for.
-/// @return {Color} - The complement color.
-///
-/// @example scss - Usage
-///   @debug k-color-complement( #f00 ); // => #00ffff
-@function k-color-complement( $color ) {
-    @return color.complement( $color );
-}
-
-/// Returns the inverse of a color.
-/// @param {Color} $color - The color to invert.
-/// @return {Color} - The inverted color.
-///
-/// @example scss - Usage
-///   @debug k-color-invert( #f00 ); // => #00ffff
-@function k-color-invert( $color ) {
-    @return color.invert( $color );
-}
-
-/// Set a specific jump point for requesting color jumps
-/// @group color-system
-/// @access private
-$kendo-color-level-step: 8% !default;
-
 @function k-color-level( $color, $level: 0, $_is-dark-theme: $kendo-is-dark-theme ) {
     $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
     $_color-level-step: if( $_dark-theme, $kendo-dark-color-level-step, $kendo-light-color-level-step );
@@ -316,7 +269,7 @@ $kendo-color-level-step: 8% !default;
 /// @example scss - Usage
 ///   @debug k-rgba-to-mix( rgba( #f00, 0.5 ), #fff ); // => #ff8080
 @function k-rgba-to-mix( $color, $bg ) {
-    $percent: k-color-alpha( $color ) * 100%;
+    $percent: color.alpha( $color ) * 100%;
 
     @return k-color-mix( rgba( $color, 1 ), $bg, $percent );
 }
