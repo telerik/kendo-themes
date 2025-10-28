@@ -116,8 +116,3 @@
     }
 
 }
-
-
-@mixin kendo-tooltip--layout() {
-    @include kendo-tooltip--layout-base();
-}

@@ -517,8 +517,3 @@
     }
 
 }
-
-
-@mixin kendo-input--theme() {
-    @include kendo-input--theme-base();
-}

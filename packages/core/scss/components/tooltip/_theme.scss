@@ -34,8 +34,3 @@
     }
 
 }
-
-
-@mixin kendo-tooltip--theme() {
-    @include kendo-tooltip--theme-base();
-}

@@ -131,8 +131,3 @@
     }
 
 }
-
-
-@mixin kendo-panelbar--layout() {
-    @include kendo-panelbar--layout-base();
-}

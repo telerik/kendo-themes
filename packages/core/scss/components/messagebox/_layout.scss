@@ -21,8 +21,3 @@
     }
 
 }
-
-
-@mixin kendo-messagebox--layout() {
-    @include kendo-messagebox--layout-base();
-}

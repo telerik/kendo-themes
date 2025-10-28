@@ -137,8 +137,3 @@
         }
     }
 }
-
-
-@mixin kendo-map--layout() {
-    @include kendo-map--layout-base();
-}

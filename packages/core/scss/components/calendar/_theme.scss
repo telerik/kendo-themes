@@ -214,8 +214,3 @@
     }
 
 }
-
-
-@mixin kendo-calendar--theme() {
-    @include kendo-calendar--theme-base();
-}

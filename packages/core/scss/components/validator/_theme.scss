@@ -4,8 +4,3 @@
     .k-validator {}
 
 }
-
-
-@mixin kendo-validator--theme() {
-    @include kendo-validator--theme-base();
-}

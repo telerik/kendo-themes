@@ -508,8 +508,3 @@
     }
 
 }
-
-
-@mixin kendo-calendar--layout() {
-    @include kendo-calendar--layout-base();
-}

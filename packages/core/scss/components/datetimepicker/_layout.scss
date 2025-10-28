@@ -66,8 +66,3 @@
         transform: translateX(100%);
     }
 }
-
-
-@mixin kendo-date-time-picker--layout() {
-    @include kendo-date-time-picker--layout-base();
-}

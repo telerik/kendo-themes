@@ -41,8 +41,3 @@
     }
 
 }
-
-
-@mixin kendo-window--theme() {
-    @include kendo-window--theme-base();
-}

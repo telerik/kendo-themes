@@ -102,8 +102,3 @@
     }
 
 }
-
-
-@mixin kendo-checkbox--theme() {
-    @include kendo-checkbox--theme-base();
-}

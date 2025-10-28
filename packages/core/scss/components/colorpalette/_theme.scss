@@ -24,8 +24,3 @@
     }
 
 }
-
-
-@mixin kendo-color-palette--theme() {
-    @include kendo-color-palette--theme-base();
-}

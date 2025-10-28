@@ -110,8 +110,3 @@
     }
 
 }
-
-
-@mixin kendo-task-board--theme() {
-    @include kendo-task-board--theme-base();
-}

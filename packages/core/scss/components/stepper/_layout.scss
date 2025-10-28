@@ -262,8 +262,3 @@
         }
     }
 }
-
-
-@mixin kendo-stepper--layout() {
-    @include kendo-stepper--layout-base();
-}

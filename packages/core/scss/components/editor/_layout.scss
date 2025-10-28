@@ -650,8 +650,3 @@
     }
 
 }
-
-
-@mixin kendo-editor--layout() {
-    @include kendo-editor--layout-base();
-}

@@ -131,8 +131,3 @@
     }
 
 }
-
-
-@mixin kendo-chip--theme() {
-    @include kendo-chip--theme-base();
-}

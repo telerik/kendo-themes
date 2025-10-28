@@ -237,8 +237,3 @@
     }
 
 }
-
-
-@mixin kendo-file-manager--layout() {
-    @include kendo-file-manager--layout-base();
-}

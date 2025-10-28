@@ -175,8 +175,3 @@
     }
 
 }
-
-
-@mixin kendo-window--layout() {
-    @include kendo-window--layout-base();
-}

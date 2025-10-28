@@ -149,8 +149,3 @@
     }
 
 }
-
-
-@mixin kendo-badge--layout() {
-    @include kendo-badge--layout-base();
-}

@@ -85,8 +85,3 @@
     }
 
 }
-
-
-@mixin kendo-color-gradient--theme() {
-    @include kendo-color-gradient--theme-base();
-}

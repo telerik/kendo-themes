@@ -42,8 +42,3 @@
     }
 
 }
-
-
-@mixin kendo-dropzone--layout() {
-    @include kendo-dropzone--layout-base();
-}

@@ -78,8 +78,3 @@
         z-index: k-z-index("base", 2);
     }
 }
-
-
-@mixin kendo-prompt--layout() {
-    @include kendo-prompt--layout-base();
-}

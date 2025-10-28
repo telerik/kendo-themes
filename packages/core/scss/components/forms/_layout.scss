@@ -363,8 +363,3 @@
     }
 
 }
-
-
-@mixin kendo-form--layout() {
-    @include kendo-form--layout-base();
-}

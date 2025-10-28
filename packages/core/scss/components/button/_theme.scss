@@ -331,8 +331,3 @@
 
 
 }
-
-
-@mixin kendo-button--theme() {
-    @include kendo-button--theme-base();
-}

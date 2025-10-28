@@ -85,8 +85,3 @@
     }
 
 }
-
-
-@mixin kendo-scroller--layout() {
-    @include kendo-scroller--layout-base();
-}

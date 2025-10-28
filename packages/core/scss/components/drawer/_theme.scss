@@ -66,8 +66,3 @@
     }
 
 }
-
-
-@mixin kendo-drawer--theme() {
-    @include kendo-drawer--theme-base();
-}

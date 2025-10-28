@@ -96,8 +96,3 @@
     }
 
 }
-
-
-@mixin kendo-list--theme() {
-    @include kendo-list--theme-base();
-}

@@ -358,8 +358,3 @@
     }
 
 }
-
-
-@mixin kendo-pdf-viewer--layout() {
-    @include kendo-pdf-viewer--layout-base();
-}

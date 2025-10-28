@@ -574,8 +574,3 @@
     }
 
 }
-
-
-@mixin kendo-dataviz--layout() {
-    @include kendo-dataviz--layout-base();
-}

@@ -91,8 +91,3 @@
     }
 
 }
-
-
-@mixin kendo-filter--layout() {
-    @include kendo-filter--layout-base();
-}

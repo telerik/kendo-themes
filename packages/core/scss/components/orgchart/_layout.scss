@@ -111,8 +111,3 @@
         z-index: k-z-index("base", 2);
     }
 }
-
-
-@mixin kendo-orgchart--layout() {
-    @include kendo-orgchart--layout-base();
-}

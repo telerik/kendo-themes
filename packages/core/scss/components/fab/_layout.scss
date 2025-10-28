@@ -143,8 +143,3 @@
         }
     }
 }
-
-
-@mixin kendo-fab--layout() {
-    @include kendo-fab--layout-base();
-}

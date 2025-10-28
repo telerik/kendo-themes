@@ -321,8 +321,3 @@
     }
 
 }
-
-
-@mixin kendo-menu--layout() {
-    @include kendo-menu--layout-base();
-}

@@ -4,8 +4,3 @@
     .k-numeric-textbox {}
 
 }
-
-
-@mixin kendo-numeric-textbox--theme() {
-    @include kendo-numeric-textbox--theme-base();
-}

@@ -162,8 +162,3 @@
     }
 
 }
-
-
-@mixin kendo-listgroup--layout() {
-    @include kendo-listgroup--layout-base();
-}

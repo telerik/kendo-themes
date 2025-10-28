@@ -35,8 +35,3 @@
     }
 
 }
-
-
-@mixin kendo-virtual-scroller--layout() {
-    @include kendo-virtual-scroller--layout-base();
-}

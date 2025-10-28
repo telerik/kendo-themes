@@ -385,8 +385,3 @@
     .k-draghandle-start { @extend .k-slider-thumb-start !optional; }
     .k-draghandle-end { @extend .k-slider-thumb-end !optional; }
 }
-
-
-@mixin kendo-slider--layout() {
-    @include kendo-slider--layout-base();
-}

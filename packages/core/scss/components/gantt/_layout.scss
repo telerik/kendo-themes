@@ -855,8 +855,3 @@
     }
 
 }
-
-
-@mixin kendo-gantt--layout() {
-    @include kendo-gantt--layout-base();
-}

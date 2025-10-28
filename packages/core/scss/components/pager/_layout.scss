@@ -166,8 +166,3 @@
         }
     }
 }
-
-
-@mixin kendo-pager--layout() {
-    @include kendo-pager--layout-base();
-}

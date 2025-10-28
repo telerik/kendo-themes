@@ -45,8 +45,3 @@
     }
 
 }
-
-
-@mixin kendo-responsive-panel--layout() {
-    @include kendo-responsive-panel--layout-base();
-}

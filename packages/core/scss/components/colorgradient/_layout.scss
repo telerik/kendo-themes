@@ -237,8 +237,3 @@
         pointer-events: none;
     }
 }
-
-
-@mixin kendo-color-gradient--layout() {
-    @include kendo-color-gradient--layout-base();
-}

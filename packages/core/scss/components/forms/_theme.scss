@@ -38,8 +38,3 @@
     }
 
 }
-
-
-@mixin kendo-form--theme() {
-    @include kendo-form--theme-base();
-}

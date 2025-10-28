@@ -127,8 +127,3 @@
     }
 
 }
-
-
-@mixin kendo-draggable--layout() {
-    @include kendo-draggable--layout-base();
-}

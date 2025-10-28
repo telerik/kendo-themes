@@ -138,8 +138,3 @@
         }
     }
 }
-
-
-@mixin kendo-menu--theme() {
-    @include kendo-menu--theme-base();
-}

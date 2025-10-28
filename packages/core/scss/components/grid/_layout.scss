@@ -1517,8 +1517,3 @@
     }
 
 }
-
-
-@mixin kendo-grid--layout() {
-    @include kendo-grid--layout-base();
-}
