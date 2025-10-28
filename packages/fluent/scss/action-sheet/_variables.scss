@@ -49,6 +49,10 @@ $kendo-actionsheet-border: var( --kendo-actionsheet-border, #{color-mix(in srgb,
 /// Box shadow of the action sheet.
 /// @group action-sheet
 $kendo-actionsheet-shadow: var( --kendo-actionsheet-shadow, var( --kendo-box-shadow-depth-7, none ) ) !default;
+/// Elevation step of the action sheet.
+/// @group action-sheet
+$kendo-actionsheet-elevation-step: var( --kendo-actionsheet-elevation-step, 7 ) !default;
+
 
 /// Horizontal padding of the action sheet header.
 /// @group action-sheet
@@ -239,6 +243,7 @@ $kendo-adaptive-actionsheet-footer-padding-x: var( --kendo-adaptive-actionsheet-
     $kendo-actionsheet-text: $kendo-actionsheet-text,
     $kendo-actionsheet-border: $kendo-actionsheet-border,
     $kendo-actionsheet-shadow: $kendo-actionsheet-shadow,
+    $kendo-actionsheet-elevation-step: $kendo-actionsheet-elevation-step,
     $kendo-actionsheet-titlebar-padding-x: $kendo-actionsheet-header-padding-x,
     $kendo-actionsheet-titlebar-padding-y: $kendo-actionsheet-header-padding-y,
     $kendo-actionsheet-titlebar-border-width: $kendo-actionsheet-header-border-width,
