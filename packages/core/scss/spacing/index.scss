@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "../functions/_string.scss" as *;
 
 $default-spacing: (
     0: 0px,
