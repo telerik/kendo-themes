@@ -1,5 +1,5 @@
 @use "../../mixins/index.scss" as *;
-@use "../../color-system/_functions.import.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-gantt--theme-base() {

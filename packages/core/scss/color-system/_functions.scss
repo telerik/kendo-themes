@@ -3,9 +3,9 @@
 @use "sass:list";
 @use "sass:string";
 @use "sass:meta";
-@use "../functions/_string.import.scss" as *;
-@use "../functions/_map.import.scss" as *;
-@use "../functions/_color.import.scss" as *;
+@use "../functions/_string.scss" as *;
+@use "../functions/_map.scss" as *;
+@use "../functions/_color.scss" as *;
 @use "./_palettes.scss" as *;
 @use "./_swatch.scss" as *;
 @use "../_variables.scss" as *;
