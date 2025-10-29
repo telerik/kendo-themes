@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "sass:string";
 @use "@progress/kendo-theme-core/scss/index.scss" as *;
-@use "@progress/kendo-theme-core/scss/functions/_map.import.scss" as *;
+@use "@progress/kendo-theme-core/scss/functions/_map.scss" as *;
 
 $kendo-theme-colors: () !default;
 

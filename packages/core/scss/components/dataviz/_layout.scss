@@ -1,7 +1,7 @@
 @use "sass:string";
 @use "sass:math";
 @use "sass:meta";
-@use "../../color-system/_functions.import.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "../../color-system/_constants.scss" as *;
 @use "../../typography/index.scss" as *;
 @use "../../border-radii/index.scss" as *;

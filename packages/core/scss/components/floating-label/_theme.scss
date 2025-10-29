@@ -1,5 +1,5 @@
 @use "../../mixins/index.scss" as *;
-@use "../../color-system/_functions.import.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-floating-label--theme-base() {
