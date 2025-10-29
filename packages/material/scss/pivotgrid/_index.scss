@@ -1,6 +1,8 @@
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../icons/_index.scss" as *;
+@use "../popup/_index.scss" as *;
+@use "../table/_index.scss" as *;
 @use "../utils/_index.scss" as *;
 @use "../dialog/_index.scss" as *;
 @use "../treeview/_index.scss" as *;
@@ -16,6 +18,8 @@
 @mixin kendo-pivotgrid--styles() {
     @include import-once( "pivotgrid" ) {
         @include core-styles();
+        @include kendo-popup--styles();
+        @include kendo-table--styles();
         @include kendo-dialog--styles();
         @include kendo-treeview--styles();
         @include kendo-grid--styles();

@@ -1,5 +1,6 @@
 // Dependencies
 @use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
 @use "../button/_index.scss" as *;
 
 // Component
@@ -11,6 +12,7 @@
 @mixin kendo-input--styles() {
     @include import-once( "input" ) {
         @include core-styles();
+        @include kendo-icon--styles();
         @include kendo-button--styles();
         @include kendo-input--layout();
         @include kendo-input--theme();
