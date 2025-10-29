@@ -30,6 +30,7 @@
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         .k-chat-file {
+            width: 100%;
             min-width: $kendo-chat-file-min-width;
             max-width: $kendo-chat-file-max-width;
             flex-shrink: 0;
