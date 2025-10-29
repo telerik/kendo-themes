@@ -1,10 +1,10 @@
 @use "sass:map";
 @use "../../color-system/_constants.scss" as *;
-@use "../../mixins/index.import.scss" as *;
-@use "../../spacing/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "../../spacing/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../icons/_variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 @mixin kendo-treeview--layout-base() {
 

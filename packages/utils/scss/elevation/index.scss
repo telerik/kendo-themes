@@ -1,0 +1,65 @@
+/// Applies elevation level 1 shadow effect.
+/// @example box-shadow: var(--kendo-elevation-1, 0 2px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.12));
+/// @name .k-elevation-1
+/// @group elevation
+/// @contextType css
+
+/// Applies elevation level 2 shadow effect.
+/// @example box-shadow: var(--kendo-elevation-2, 0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12));
+/// @name .k-elevation-2
+/// @group elevation
+/// @contextType css
+
+/// Applies elevation level 3 shadow effect.
+/// @example box-shadow: var(--kendo-elevation-3, 0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12));
+/// @name .k-elevation-3
+/// @group elevation
+/// @contextType css
+
+/// Applies elevation level 4 shadow effect.
+/// @example box-shadow: var(--kendo-elevation-4, 0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12));
+/// @name .k-elevation-4
+/// @group elevation
+/// @contextType css
+
+/// Applies elevation level 5 shadow effect.
+/// @example box-shadow: var(--kendo-elevation-5, 0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12));
+/// @name .k-elevation-5
+/// @group elevation
+/// @contextType css
+
+/// Applies elevation level 6 shadow effect.
+/// @example box-shadow: var(--kendo-elevation-6, 0 12px 14px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.12));
+/// @name .k-elevation-6
+/// @group elevation
+/// @contextType css
+
+/// Applies elevation level 7 shadow effect.
+/// @example box-shadow: var(--kendo-elevation-7, 0 14px 16px rgba(0, 0, 0, 0.24), 0 4px 16px rgba(0, 0, 0, 0.12));
+/// @name .k-elevation-7
+/// @group elevation
+/// @contextType css
+
+/// Applies elevation level 8 shadow effect.
+/// @example box-shadow: var(--kendo-elevation-8, 0 16px 18px rgba(0, 0, 0, 0.28), 0 4px 16px rgba(0, 0, 0, 0.12));
+/// @name .k-elevation-8
+/// @group elevation
+/// @contextType css
+
+/// Applies elevation level 9 shadow effect.
+/// @example box-shadow: var(--kendo-elevation-9, 0 32px 34px rgba(0, 0, 0, 0.32), 0 4px 16px rgba(0, 0, 0, 0.12));
+/// @name .k-elevation-9
+/// @group elevation
+/// @contextType css
+
+@use "@progress/kendo-theme-core/scss/elevation/index.scss" as *;
+@use "../_globals.scss" as *;
+
+// Register
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
+
+@mixin kendo-utils--elevation {
+    @include import-once("utils-elevation") {
+        @include generate-utils(elevation, box-shadow, $kendo-elevation, $css-var: "elevation");
+    }
+}

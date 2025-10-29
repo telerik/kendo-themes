@@ -567,7 +567,7 @@
 /// @contextType css
 
 @use "../_globals.scss" as *;
-@use "@progress/kendo-theme-core/scss/functions/index.import.scss" as *;
+@use "@progress/kendo-theme-core/scss/functions/index.scss" as *;
 @use "sass:map";
 
 @mixin kendo-utils--responsive-layout--col-gap() {

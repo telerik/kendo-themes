@@ -1,8 +1,8 @@
 @use "sass:map";
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../colorpalette/_variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 
 @mixin kendo-color-editor--layout-base() {

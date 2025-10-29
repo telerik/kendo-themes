@@ -1,0 +1,66 @@
+@forward "./_globals.scss";
+@forward "./accessibility/index.scss";
+@forward "./layout/index.scss";
+@forward "./responsive-layout/index.scss";
+@forward "./flex-grid/index.scss";
+@forward "./spacing/index.scss";
+@forward "./sizing/index.scss";
+@forward "./typography/index.scss";
+@forward "./background/index.scss";
+@forward "./border/index.scss";
+@forward "./effects/index.scss";
+@forward "./filter/index.scss";
+@forward "./table/index.scss";
+@forward "./transform/index.scss";
+@forward "./interactivity/index.scss";
+@forward "./svg/index.scss";
+@forward "./elevation/index.scss";
+
+@use "./_globals.scss" as *;
+@use "./accessibility/index.scss" as *;
+@use "./layout/index.scss" as *;
+@use "./responsive-layout/index.scss" as *;
+@use "./flex-grid/index.scss" as *;
+@use "./spacing/index.scss" as *;
+@use "./sizing/index.scss" as *;
+@use "./typography/index.scss" as *;
+@use "./background/index.scss" as *;
+@use "./border/index.scss" as *;
+@use "./effects/index.scss" as *;
+@use "./filter/index.scss" as *;
+@use "./table/index.scss" as *;
+@use "./transform/index.scss" as *;
+@use "./interactivity/index.scss" as *;
+@use "./svg/index.scss" as *;
+@use "./elevation/index.scss" as *;
+
+
+// Mixin for all styles
+@mixin kendo-utils() {
+    @include kendo-utils--accessibility();
+    @include kendo-utils--layout();
+    @include kendo-utils--responsive-layout();
+    @include kendo-utils--flex-grid();
+    @include kendo-utils--spacing();
+    @include kendo-utils--sizing();
+    @include kendo-utils--typography();
+    @include kendo-utils--background();
+    @include kendo-utils--border();
+    @include kendo-utils--effects();
+    @include kendo-utils--filter();
+    @include kendo-utils--table();
+    @include kendo-utils--transform();
+    @include kendo-utils--interactivity();
+    @include kendo-utils--svg();
+
+    @include kendo-utils--elevation();
+
+    // Responsive utils
+    @each $key, $val in $kendo-breakpoints {
+        @include kendo-breakpoint-up($key) {
+            @include kendo-utils--layout--responsive($key);
+            @include kendo-utils--flex-grid--responsive($key);
+            @include kendo-utils--spacing--responsive($key);
+        }
+    }
+}

@@ -1,6 +1,6 @@
 @use "sass:map";
-@use "../../spacing/index.import.scss" as *;
-@use "../../border-radii/index.import.scss" as *;
+@use "../../spacing/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
 @use "_variables.scss" as *;
 
 @mixin kendo-column-menu--layout-base() {
