@@ -1,6 +1,6 @@
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 @mixin kendo-task-board--layout-base() {
 

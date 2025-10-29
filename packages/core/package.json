@@ -11,7 +11,7 @@
     "sass mixins"
   ],
   "main": "dist/all.css",
-  "sass": "scss/index.import.scss",
+  "sass": "scss/index.scss",
   "files": [
     "dist/",
     "scss/"

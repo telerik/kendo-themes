@@ -1,6 +1,6 @@
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 @mixin kendo-color-preview--layout-base() {
 

@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "sass:math";
 @use "../core/_index.scss" as *;
-@use "../core/z-index/index.import.scss" as *;
+@use "../core/z-index/index.scss" as *;
 @use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/button/_layout.scss" as *;
 

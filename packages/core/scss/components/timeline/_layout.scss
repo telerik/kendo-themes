@@ -1,10 +1,10 @@
 @use "sass:math";
 @use "../../color-system/_constants.scss" as *;
-@use "../../border-radii/index.import.scss" as *;
+@use "../../border-radii/index.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "./variables.scss" as *;
 @use "../card/_variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 @mixin kendo-timeline--layout-base() {
 
