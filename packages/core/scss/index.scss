@@ -20,10 +20,10 @@
 @mixin core-styles() {
     @include import-once("core-styles") {
         @include kendo-color-system--styles();
-        @include kendo-core--styles();
         @include kendo-spacing--styles();
+        @include kendo-border-radius--styles();
         @include kendo-elevation--styles();
         @include kendo-core--typography--styles();
-        @include kendo-border-radius--styles();
+        @include kendo-core--styles();
     }
 }
