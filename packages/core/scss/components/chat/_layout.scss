@@ -1,13 +1,11 @@
 @use "../../color-system/_constants.scss" as *;
 @use "../../spacing/index.scss" as *;
 @use "../../border-radii/index.scss" as *;
-@use "../../mixins/index.scss" as *;
 @use "../../z-index/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 @use "../bubble/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
-@use "../../color-system/_functions.import.scss" as *;
 
 @mixin kendo-chat--layout-base() {
 

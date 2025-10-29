@@ -1,7 +1,5 @@
 @use "./_variables.scss" as *;
 @use "../../mixins/index.scss" as *;
-@use "../../color-system/_functions.import.scss" as *;
-
 @use "../../spacing/index.scss" as *;
 
 @mixin kendo-bubble--layout-base() {
