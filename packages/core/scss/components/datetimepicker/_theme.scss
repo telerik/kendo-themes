@@ -4,8 +4,3 @@
     .k-datetimepicker {}
 
 }
-
-
-@mixin kendo-date-time-picker--theme() {
-    @include kendo-date-time-picker--theme-base();
-}

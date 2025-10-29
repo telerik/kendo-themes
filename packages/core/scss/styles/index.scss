@@ -1,0 +1,34 @@
+@forward "./_accessibility.scss";
+@forward "./_animations.scss";
+@forward "./_asp-fallback.scss";
+@forward "./_layout.scss";
+@forward "./_normalize.scss";
+@forward "./_base.scss";
+@forward "./_scrollbar.scss";
+@forward "./_resizing.scss";
+@forward "./_utils-components.scss";
+
+@use "./_accessibility.scss" as *;
+@use "./_animations.scss" as *;
+@use "./_asp-fallback.scss" as *;
+@use "./_layout.scss" as *;
+@use "./_normalize.scss" as *;
+@use "./_base.scss" as *;
+@use "./_scrollbar.scss" as *;
+@use "./_resizing.scss" as *;
+@use "./_utils-components.scss" as *;
+@use "../mixins/index.scss" as *;
+
+@mixin kendo-core--styles() {
+    @include import-once("core--styles") {
+        @include kendo-core--styles--accessibility();
+        @include kendo-core--styles--animations();
+        @include kendo-core--styles--asp-fallback();
+        @include kendo-core--styles--layout();
+        @include kendo-core--styles--normalize();
+        @include kendo-core--styles--base();
+        @include kendo-core--styles--scrollbar();
+        @include kendo-core--styles--resizing();
+        @include kendo-core--styles--utils-components();
+    }
+}

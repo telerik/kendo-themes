@@ -1,4 +1,4 @@
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-color-editor--theme-base() {
@@ -24,9 +24,4 @@
         outline-color: $kendo-color-editor-color-gradient-focus-outline-color;
     }
 
-}
-
-
-@mixin kendo-color-editor--theme() {
-    @include kendo-color-editor--theme-base();
 }

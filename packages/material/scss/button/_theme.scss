@@ -1,6 +1,5 @@
 @use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
-@use "../core/functions/index.import.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/button/_theme.scss" as *;
 
 @mixin kendo-button--theme() {

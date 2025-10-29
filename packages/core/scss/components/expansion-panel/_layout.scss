@@ -70,8 +70,3 @@
         border-block-start-width: 0;
     }
 }
-
-
-@mixin kendo-expander--layout() {
-    @include kendo-expander--layout-base();
-}

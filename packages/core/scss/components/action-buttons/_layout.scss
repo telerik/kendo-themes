@@ -69,8 +69,3 @@
     }
 
 }
-
-
-@mixin kendo-action-buttons--layout() {
-    @include kendo-action-buttons--layout-base();
-}

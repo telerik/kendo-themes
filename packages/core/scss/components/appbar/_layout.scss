@@ -1,6 +1,6 @@
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 @mixin kendo-appbar--layout-base() {
 
@@ -113,9 +113,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-appbar--layout() {
-    @include kendo-appbar--layout-base();
 }

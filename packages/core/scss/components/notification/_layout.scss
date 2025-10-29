@@ -1,7 +1,7 @@
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 @mixin kendo-notification--layout-base() {
 
@@ -74,9 +74,4 @@
         align-self: center;
     }
 
-}
-
-
-@mixin kendo-notification--layout() {
-    @include kendo-notification--layout-base();
 }

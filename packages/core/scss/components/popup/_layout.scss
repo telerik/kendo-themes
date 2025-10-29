@@ -1,6 +1,6 @@
-@use "../../mixins/index.import.scss" as *;
-@use "../../border-radii/index.import.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
+@use "../../z-index/index.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-popup--layout-base() {
@@ -90,9 +90,4 @@
         box-shadow: $kendo-popup-shadow;
     }
 
-}
-
-
-@mixin kendo-popup--layout() {
-    @include kendo-popup--layout-base();
 }

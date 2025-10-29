@@ -1,7 +1,8 @@
+@use "sass:list";
 @use "../_variables.scss" as *;
 
 @mixin box-shadow( $shadow... ) {
-    @if $kendo-enable-shadows and k-list-nth($shadow, 1) {
+    @if $kendo-enable-shadows and list.nth($shadow, 1) {
         box-shadow: $shadow;
     }
 }

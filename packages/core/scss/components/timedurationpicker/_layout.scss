@@ -10,8 +10,3 @@
     }
 
 }
-
-
-@mixin kendo-time-duration-picker--layout() {
-    @include kendo-time-duration-picker--layout-base();
-}

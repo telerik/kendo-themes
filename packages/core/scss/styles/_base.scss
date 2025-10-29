@@ -1,6 +1,6 @@
 @use "sass:map";
 @use "../mixins/_disabled.scss" as *;
-@use "../spacing/index.import.scss" as *;
+@use "../spacing/index.scss" as *;
 @use "../_variables.scss" as *;
 
 @mixin kendo-core--styles--base() {

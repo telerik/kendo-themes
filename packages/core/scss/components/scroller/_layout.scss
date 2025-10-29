@@ -1,4 +1,4 @@
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 @mixin kendo-scroller--layout-base() {
 
@@ -84,9 +84,4 @@
         inset-block-end: 2px;
     }
 
-}
-
-
-@mixin kendo-scroller--layout() {
-    @include kendo-scroller--layout-base();
 }

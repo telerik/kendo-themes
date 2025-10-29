@@ -62,8 +62,3 @@
     }
 
 }
-
-
-@mixin kendo-captcha--layout() {
-    @include kendo-captcha--layout-base();
-}

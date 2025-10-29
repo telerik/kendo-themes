@@ -1,7 +1,7 @@
 @use "sass:list";
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "../../color-system/_constants.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-window--layout-base() {
@@ -174,9 +174,4 @@
         .k-resize-w { left: 0; }
     }
 
-}
-
-
-@mixin kendo-window--layout() {
-    @include kendo-window--layout-base();
 }

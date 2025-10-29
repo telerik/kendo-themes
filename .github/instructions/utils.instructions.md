@@ -40,7 +40,7 @@ Each category follows this structure:
 
 ```
 [utility]/
-├── _index.import.scss              # Entry point with mixins
+├── _index.scss                    # Entry point with mixins
 ├── [variant].scss                  # Specific utility implementations
 └── ...                             # Additional variants
 ```
@@ -48,7 +48,7 @@ Each category follows this structure:
 **Example (background/):**
 ```
 background/
-├── _index.import.scss
+├── _index.scss
 ├── background-color.scss
 ├── background-position.scss
 └── background-size.scss
@@ -74,7 +74,7 @@ Pattern: `k-{property}-{modifier}`
 
 1. Create directory under `scss/[utility]/`
 2. Create variant files for different aspects
-3. Create `_index.import.scss` to include all variants
+3. Create `_index.scss` to include all variants
 4. Define mixins for generating classes
 5. Document variables with SassDoc
 6. Update `scss/all.scss` to include utility

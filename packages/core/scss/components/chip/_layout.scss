@@ -162,8 +162,3 @@
     }
 
 }
-
-
-@mixin kendo-chip--layout() {
-    @include kendo-chip--layout-base();
-}

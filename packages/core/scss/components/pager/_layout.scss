@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 @mixin kendo-pager--layout-base() {
 
@@ -165,9 +165,4 @@
             width: fit-content;
         }
     }
-}
-
-
-@mixin kendo-pager--layout() {
-    @include kendo-pager--layout-base();
 }

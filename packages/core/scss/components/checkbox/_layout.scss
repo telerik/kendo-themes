@@ -1,7 +1,6 @@
 @use "sass:map";
-@use "../../mixins/index.import.scss" as *;
-@use "../../spacing/index.import.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../spacing/index.scss" as *;
+@use "../../z-index/index.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 
@@ -223,9 +222,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-checkbox--layout() {
-    @include kendo-checkbox--layout-base();
 }

@@ -1,6 +1,6 @@
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "../../_variables.scss" as *;
-@use "../../color-system/_functions.import.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-media-player--theme-base() {
@@ -22,9 +22,4 @@
         text-shadow: 0 0 2px color-mix(in srgb, k-color(on-app-surface) 50%, transparent);
     }
 
-}
-
-
-@mixin kendo-media-player--theme() {
-    @include kendo-media-player--theme-base();
 }

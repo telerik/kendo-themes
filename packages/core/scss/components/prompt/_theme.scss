@@ -1,4 +1,4 @@
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-prompt--theme-base() {
@@ -37,9 +37,4 @@
         @include box-shadow( $kendo-prompt-suggestion-shadow );
     }
 
-}
-
-
-@mixin kendo-prompt--theme() {
-    @include kendo-prompt--theme-base();
 }

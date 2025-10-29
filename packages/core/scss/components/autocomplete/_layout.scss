@@ -4,8 +4,3 @@
     .k-autocomplete {}
 
 }
-
-
-@mixin kendo-autocomplete--layout() {
-    @include kendo-autocomplete--layout-base();
-}

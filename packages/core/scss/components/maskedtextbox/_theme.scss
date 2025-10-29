@@ -4,8 +4,3 @@
     .k-maskedtextbox {}
 
 }
-
-
-@mixin kendo-masked-textbox--theme() {
-    @include kendo-masked-textbox--theme-base();
-}

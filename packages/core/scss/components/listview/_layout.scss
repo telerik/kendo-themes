@@ -139,8 +139,3 @@
     }
 
 }
-
-
-@mixin kendo-listview--layout() {
-    @include kendo-listview--layout-base();
-}

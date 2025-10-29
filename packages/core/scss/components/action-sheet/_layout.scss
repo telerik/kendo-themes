@@ -1,6 +1,6 @@
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 @mixin kendo-action-sheet--layout-base() {
 
@@ -411,9 +411,4 @@
         transform: translateX(calc(100% * (var(--kendo-actionsheet-view-current, 1) - 1)))
     }
 
-}
-
-
-@mixin kendo-action-sheet--layout() {
-    @include kendo-action-sheet--layout-base();
 }

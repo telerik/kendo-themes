@@ -36,8 +36,3 @@
     }
 
 }
-
-
-@mixin kendo-dropdown-list--layout() {
-    @include kendo-dropdown-list--layout-base();
-}

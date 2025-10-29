@@ -1,6 +1,6 @@
 @use "../icons/_variables.scss" as *;
 @use "./variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 @mixin kendo-treelist--layout-base() {
 
@@ -103,9 +103,4 @@
         cursor: pointer;
     }
 
-}
-
-
-@mixin kendo-treelist--layout() {
-    @include kendo-treelist--layout-base();
 }

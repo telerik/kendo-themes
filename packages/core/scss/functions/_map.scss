@@ -1,0 +1,99 @@
+@use "sass:meta";
+@use "sass:map";
+
+/// Returns the value at `$key` in `$map`.
+/// @param {Map} $map - The map to get the value from.
+/// @param {Any} $key - The key to get the value for.
+///
+/// @example scss - Usage
+///   @debug k-map-get( ( "foo": "bar" ), "foo" ); // => "bar"
+@function k-map-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map.get($map, $key); // stylelint-disable-line
+    }
+    @return $map;
+}
+
+/// Returns a map with the keys and values from `$map` and `$args`.
+/// @param {Map} $map - The map to merge.
+/// @param {Map} $args - The map to merge into `$map`.
+/// @return {Map} - A map with the keys and values from `$map` and `$args`.
+///
+/// @example scss - Usage
+///   @debug k-map-merge( ( "foo": "bar" ), ( "baz": "qux" ) ); // => ( "foo": "bar", "baz": "qux" )
+@function k-map-merge($map, $args...) {
+    @each $arg in $args {
+        $map: map.merge($map, $arg); // stylelint-disable-line
+    }
+    @return $map;
+}
+
+/// Returns a deep-map with the keys and values from `$map` and `$args`.
+/// @param {Map} $maps - The maps to deep-merge.
+/// @return {Map} - A map with the keys and values from `$map` and `$args`.
+///
+/// @example scss - Usage
+///   @debug k-map-deep-merge( ( "foo": ("bar": "baz", "baz": "qux" ) ), ( "foo": ("bar": "foo") ) ); // => ( "foo": ("bar": "foo", "baz": "qux" ))
+@function k-map-deep-merge($maps...) {
+    $merged: ();
+
+    @each $map in $maps {
+        @each $key, $val in $map {
+            @if (meta.type-of($val) == "map") {
+                $current: k-map-get($merged, $key);
+                @if (meta.type-of($current) == "map") {
+                    $val: k-map-deep-merge($current, $val);
+                    $map: k-map-merge(
+                        $map,
+                        (
+                            $key: $val,
+                        )
+                    );
+                }
+            }
+        }
+        $merged: k-map-merge($merged, $map);
+    }
+
+    @return $merged;
+}
+
+/// Sets a single key and value in `$map`.
+/// @param {Map} $map - The map to set the value in.
+/// @param {Any} $key - The key to set the value for.
+/// @param {Any} $value - The value to set.
+/// @return {Map} - A map with the key and value set.
+///
+/// @example scss - Usage
+///   @debug k-map-set( ( "foo": "bar" ), "baz", "qux" ); // => ( "foo": "bar", "baz": "qux" )
+@function k-map-set($map, $key, $value) {
+    @return k-map-merge(
+        $map,
+        (
+            $key: $value,
+        )
+    );
+}
+
+/// Returns negative values of a number or numbers in a list.
+/// @param {Map} $map - The map to get the values from.
+/// @return {Map} - A comma separated list of the values in `$map`.
+///
+/// @example scss - Usage
+///   @debug k-map-negate( ( 0: 0, 1: 1px, 2: 2px ) ); // => ("-1": -1px, "-2": -2px)
+@function k-map-negate($map) {
+    $_map-neg: ();
+
+    @if (meta.type-of($map) != map) {
+        @error "expected type of #{$map} is map, was #{meta.type-of($map)}";
+    }
+    @each $key, $value in $map {
+        $_key-neg: "-" + $key;
+
+        @if (meta.type-of($value) == number and $value != 0 and $_key-neg != "-0") {
+            $_map-neg: k-map-set($_map-neg, $_key-neg, -1 * $value);
+        }
+    }
+
+    @return $_map-neg;
+}

@@ -1,5 +1,6 @@
 // Dependencies
 @use "../core/_index.scss" as *;
+@use "../button/_index.scss" as *;
 @use "../icons/_index.scss" as *;
 @use "../utils/_index.scss" as *;
 
@@ -12,6 +13,7 @@
 @mixin kendo-chip--styles() {
     @include import-once( "chip" ) {
         @include core-styles();
+        @include kendo-button--styles();
         @include kendo-icon--styles();
         @include kendo-chip--layout();
         @include kendo-chip--theme();

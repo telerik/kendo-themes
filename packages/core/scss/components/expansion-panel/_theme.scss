@@ -1,4 +1,4 @@
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-expander--theme-base() {
@@ -41,9 +41,4 @@
     .k-expander-sub-title {
         color: $kendo-expander-header-sub-title-text;
     }
-}
-
-
-@mixin kendo-expander--theme() {
-    @include kendo-expander--theme-base();
 }

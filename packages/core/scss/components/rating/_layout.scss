@@ -86,8 +86,3 @@
     }
 
 }
-
-
-@mixin kendo-rating--layout() {
-    @include kendo-rating--layout-base();
-}

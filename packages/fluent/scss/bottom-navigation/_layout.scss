@@ -1,5 +1,5 @@
 @use "./_variables.scss" as *;
-@use "../core/z-index/index.import.scss" as *;
+@use "../core/z-index/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/bottom-navigation/_layout.scss" as *;
 
 @mixin kendo-bottom-navigation--layout() {

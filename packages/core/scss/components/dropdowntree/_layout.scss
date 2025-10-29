@@ -37,8 +37,3 @@
     }
 
 }
-
-
-@mixin kendo-dropdown-tree--layout() {
-    @include kendo-dropdown-tree--layout-base();
-}

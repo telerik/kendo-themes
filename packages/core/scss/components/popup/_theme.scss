@@ -1,4 +1,4 @@
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-popup--theme-base() {
@@ -12,9 +12,4 @@
         @include box-shadow( $kendo-popup-shadow );
     }
 
-}
-
-
-@mixin kendo-popup--theme() {
-    @include kendo-popup--theme-base();
 }

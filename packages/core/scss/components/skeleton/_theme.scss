@@ -1,4 +1,4 @@
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-skeleton--theme-base() {
@@ -22,9 +22,4 @@
 
     }
 
-}
-
-
-@mixin kendo-skeleton--theme() {
-    @include kendo-skeleton--theme-base();
 }

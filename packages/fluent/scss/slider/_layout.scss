@@ -1,7 +1,7 @@
 @use "sass:math";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
-@use "../core/z-index/index.import.scss" as *;
+@use "../core/z-index/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/slider/_layout.scss" as *;
 
 @mixin kendo-slider--layout() {

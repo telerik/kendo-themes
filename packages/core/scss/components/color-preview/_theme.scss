@@ -1,4 +1,4 @@
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-color-preview--theme-base() {
@@ -17,9 +17,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-color-preview--theme() {
-    @include kendo-color-preview--theme-base();
 }
