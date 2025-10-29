@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "../_variables.scss" as *;
 
 $default-elevation: (
     1: (
@@ -39,11 +40,31 @@ $default-elevation: (
     )
 ) !default;
 
+$default-elevation-bg-step: (
+    1: 2%,
+    2: 4%,
+    3: 6%,
+    4: 8%,
+    5: 10%,
+    6: 12%,
+    7: 14%,
+    8: 16%,
+    9: 32%
+) !default;
+
 /// The global default Elevation map.
 /// @group elevation
 $kendo-elevation: $default-elevation !default;
 
 $kendo-elevation: map.merge($default-elevation, $kendo-elevation);
+
+
+/// The lightness step for accessible elevations.
+/// @group elevation
+$kendo-elevation-bg: $default-elevation-bg-step !default;
+
+$kendo-elevation-bg: map.merge($default-elevation-bg-step, $kendo-elevation-bg);
+
 
 @function k-shadow-filter($shadow) {
     $result: '';
@@ -57,11 +78,34 @@ $kendo-elevation: map.merge($default-elevation, $kendo-elevation);
     @return var(--kendo-elevation-#{$level}, map.get($kendo-elevation, $level));
 }
 
+@mixin k-elevation-accessible($level, $bg: var(--kendo-component-bg, #1a1a1a), $accessible: false) {
+
+    @if $accessible {
+        @if $kendo-is-dark-theme {
+            // Dark theme: use background elevation
+            $lightness-increase: var(--kendo-elevation-bg-step-#{$level}, map.get($kendo-elevation-bg, $level));
+            box-shadow: none;
+            --kendo-elevation-bg-#{$level}: color-mix(in hsl, #{$bg} calc(100% - #{$lightness-increase}), white #{$lightness-increase});
+            background-color: var(--kendo-elevation-bg-#{$level});
+        } @else {
+            // Light theme: use existing shadow elevation
+            box-shadow: var(--kendo-elevation-#{$level}, map.get($kendo-elevation, $level));
+        }
+    } @else {
+        // Fallback to current elevation
+        box-shadow: var(--kendo-elevation-#{$level}, map.get($kendo-elevation, $level));
+    }
+}
+
 
 @mixin kendo-elevation--styles() {
     :root {
         @each $level, $shadow in $kendo-elevation {
             --kendo-elevation-#{$level}: #{$shadow};
+        }
+
+        @each $level, $value in $kendo-elevation-bg {
+            --kendo-elevation-bg-step-#{$level}: #{$value};
         }
     }
 }
