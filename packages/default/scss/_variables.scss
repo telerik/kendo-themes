@@ -4,3 +4,16 @@ $kendo-zindex-window: 2 !default;
 // TODO: refactor
 /// Box shadow of focused items.
 $kendo-focus-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
+
+// Focus ring configuration for Default theme
+/// Focus ring configuration for the Default theme
+/// Defines the primary focus behavior and styling for all components
+/// @group focus-system
+
+/* $kendo-focus-ring-config: (
+    pattern: "outline",
+    outline: (2px solid pink),
+    shadow: (0 0 0 1px rgba(0,0,0,0.3)),
+    offset: 2px
+) !default;
+ */

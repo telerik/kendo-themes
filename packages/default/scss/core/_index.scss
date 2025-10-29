@@ -1,8 +1,15 @@
-// Core Index
-@forward "@progress/kendo-theme-core/scss/index.scss";
-
 // Variables
 @forward "../_variables.scss";
+
+// Core Index
+@forward "@progress/kendo-theme-core/scss/index.scss" with (
+    $kendo-focus-ring-config: (
+        pattern: "shadow",
+        outline: (2px solid pink),
+        shadow: (0 0 0 1px red),
+        offset: 2px
+    )
+);
 
 // Global disabled styles
 :root {

@@ -8,6 +8,29 @@ $kendo-nested-disabled: true !default;
 $kendo-enable-focus-contrast: false !default;
 $wcag-min-contrast-ratio: 4.5 !default;
 $kendo-enable-typography: false !default;
+
+// Focus ring system configuration
+/// Focus ring pattern types available in the system
+/// @group focus-system
+$kendo-focus-ring-patterns: (
+    shadow: "box-shadow",
+    outline: "outline",
+    mixed: "both"
+) !default;
+
+/// Base focus ring configuration tokens
+/// @group focus-system
+$kendo-focus-ring-width: 2px !default;
+$kendo-focus-ring-style: solid !default;
+$kendo-focus-ring-offset: 0px !default;
+// $kendo-focus-ring-color: rgba(0, 0, 0, .13) !default;
+// $kendo-focus-ring-color: pink !default;
+
+/// Default focus ring configuration map - will be defined by themes
+/// @group focus-system
+$kendo-focus-ring-config: () !default;
+
+
 // Equilateral triangle variables
 // stylelint-disable number-max-precision
 $equilateral-index: 1.7320508076 !default;

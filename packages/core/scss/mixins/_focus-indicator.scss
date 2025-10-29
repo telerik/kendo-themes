@@ -1,10 +1,53 @@
+@use "sass:map";
+@use "sass:meta";
 @use "../_variables.scss" as *;
 @use "./_box-shadow.scss" as *;
 
-@mixin focus-indicator( $indicator, $inset: false, $themeable: false, $type: "box-shadow" ) {
-    @if $kendo-enable-focus-contrast and k-list-nth($indicator, 1) {
-        @include box-shadow( if( $inset, inset, null ) 0 0 0 2px if( $themeable, currentColor, rgb( 0, 0, 0 ) ) );
-    } @else {
-        @include box-shadow( $indicator... );
+@mixin focus-indicator(
+  $indicator: null,
+  $inset: false,
+  $themeable: false,
+  $type: null,
+  $state: "default"
+) {
+  // Get theme focus configuration with fallback to core defaults
+  $config: $kendo-focus-ring-config;
+  $pattern: map.get($config, "pattern");
+  $effective-type: if($type, $type, $pattern);
+
+  // High contrast mode override
+  @if $kendo-enable-focus-contrast and $indicator {
+    @include box-shadow( if( $inset, inset, null ) 0 0 0 2px if( $themeable, currentColor, rgb( 0, 0, 0 ) ) );
+  }
+
+  // Handle different focus ring patterns
+  // If a specific indicator is provided, it takes precedence and uses shadow pattern
+  @if $indicator {
+    @include box-shadow( $indicator... );
+  } @else if $effective-type == "shadow" {
+    $shadow: map.get($config, "shadow");
+    @include box-shadow( $shadow... );
+  } @else if $effective-type == "outline" {
+    $outline: map.get($config, "outline");
+    $offset: map.get($config, "offset");
+
+    outline: $outline;
+    outline-offset: $offset;
+  } @else if $effective-type == "mixed" {
+    $shadow: map.get($config, "shadow");
+    $outline: map.get($config, "outline");
+    $offset: map.get($config, "offset");
+
+    @if $shadow {
+      @include box-shadow( $shadow... );
     }
+    @if $outline {
+      outline: $outline;
+      outline-offset: $offset;
+    }
+  } @else if $effective-type == "both" {
+    @if $indicator {
+      @include box-shadow( $indicator... );
+    }
+  }
 }
