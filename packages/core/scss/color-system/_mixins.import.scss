@@ -1,4 +1,5 @@
 @use "sass:meta";
+@use 'sass:string';
 
 @mixin k-css-vars($map) {
     @each $group, $values in $map {
@@ -8,6 +9,44 @@
             @each $key, $value in $values {
                 --kendo-#{meta.inspect($group)}-#{$key}: #{$value};
             }
+        }
+    }
+}
+
+@mixin k-colors-auto() {
+    :root {
+        --l-threshold: 0.7;
+        --contrast-l: calc(clamp(0, (l / var(--l-threshold) - 1) * -9999, 1) * 0.78 + 0.22);
+        --chroma-factor: 0;
+        --hover-lightness-factor: 0.92;
+        --active-lightness-factor: 0.84;
+
+        --hover-chroma-factor: 0.92;
+        --active-chroma-factor: 0.83;
+
+        --subtle-mix-percent: 8%;
+        --emphasis-mix-percent: 70%;
+
+        /* COLOR FAMILIES */
+        @each $color in base, primary, secondary, tertiary, info, success, warning, error, light, dark {
+            /* #{string.to-upper-case($color)} COLOR FAMILY */
+            --kendo-color-#{$color}-hover: oklch(from var(--kendo-color-#{$color}) calc(l * var(--hover-lightness-factor)) calc(c * var(--hover-chroma-factor)) h);
+            --kendo-color-#{$color}-active: oklch(from var(--kendo-color-#{$color}) calc(l * var(--active-lightness-factor)) calc(c * var(--active-chroma-factor)) h);
+            --kendo-color-#{$color}-subtle: color-mix(in oklch, var(--kendo-color-#{$color}) var(--subtle-mix-percent), white calc(100% - var(--subtle-mix-percent)));
+            --kendo-color-#{$color}-subtle-hover: color-mix(in oklch, var(--kendo-color-#{$color}) 12%, white 88%);
+            --kendo-color-#{$color}-subtle-active: color-mix(in oklch, var(--kendo-color-#{$color}) 20%, white 80%);
+            --kendo-color-#{$color}-emphasis: color-mix(in oklch, var(--kendo-color-#{$color}) var(--emphasis-mix-percent), white calc(100% - var(--emphasis-mix-percent)));
+            --kendo-color-on-#{$color}: oklch(from var(--kendo-color-#{$color}) var(--contrast-l) var(--chroma-factor) h);
+            --kendo-color-#{$color}-on-surface: var(--kendo-color-#{$color});
+            --kendo-color-#{$color}-on-subtle: oklch(from var(--kendo-color-#{$color}-subtle) calc(clamp(0, (l / var(--l-threshold) - 1) * -9999, 1) * 0.78 + 0.22) var(--chroma-factor) h);
+        }
+
+        /* SERIES COLOR FAMILIES */
+        @each $series in a, b, c, d, e, f {
+            --kendo-color-series-#{$series}-bold: oklch(from var(--kendo-color-series-#{$series}) calc(l * 0.75) calc(c * var(--active-chroma-factor)) h);
+            --kendo-color-series-#{$series}-bolder: oklch(from var(--kendo-color-series-#{$series}) calc(l * 0.5) calc(c * 0.6) h);
+            --kendo-color-series-#{$series}-subtle: color-mix(in oklch, var(--kendo-color-series-#{$series}) 30%, white 70%);
+            --kendo-color-series-#{$series}-subtler: color-mix(in oklch, var(--kendo-color-series-#{$series}) 50%, white 50%);
         }
     }
 }
