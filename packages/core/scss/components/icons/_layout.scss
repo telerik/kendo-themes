@@ -1,4 +1,5 @@
 @use "./_variables.scss" as *;
+@use "../../typography/index.import.scss" as *;
 
 @use "@progress/kendo-svg-icons/scss/index.scss" as * with (
     $ki-icon-size: $kendo-icon-size
@@ -20,8 +21,9 @@
         position: relative;
 
         &::before {
-            content: "\200b";
+            content: "";
             width: 0;
+            height: $kendo-line-height-em;
             overflow: hidden;
             flex: none;
             display: inline-block;

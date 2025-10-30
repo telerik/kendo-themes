@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "../../mixins/index.import.scss" as *;
 @use "../../color-system/_constants.scss" as *;
+@use "../../typography/index.import.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
@@ -129,24 +130,22 @@
 
 
     // Input value
-    .k-input-value-icon {
-        flex: none;
-    }
+    // Input value
     .k-input-value-text {
         flex: 1;
         overflow: hidden;
         text-overflow: ellipsis;
-    }
-    .k-input-value-text::before {
-        content: "\200b";
-        width: 0px;
-        overflow: hidden;
-        flex: none;
-        display: inline-block;
-        vertical-align: top;
-    }
 
-
+        &::before {
+            content: "";
+            width: 0;
+            height: $kendo-line-height-em;
+            overflow: hidden;
+            flex: none;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
     // Input multiple values
     .k-input-values {
         min-width: 0px;

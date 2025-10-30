@@ -1,4 +1,5 @@
 @use "./variables.scss" as *;
+@use "../../typography/index.import.scss" as *;
 
 @mixin kendo-dropdown-tree--layout-base() {
 
@@ -27,8 +28,9 @@
         }
 
         .k-input-inner::before {
-            content: "\200b";
-            width: 0px;
+            content: "";
+            width: 0;
+            height: $kendo-line-height-em;
             overflow: hidden;
             flex: none;
             display: inline-block;

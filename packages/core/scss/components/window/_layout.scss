@@ -1,6 +1,7 @@
 @use "sass:list";
 @use "../../mixins/index.import.scss" as *;
 @use "../../color-system/_constants.scss" as *;
+@use "../../typography/index.import.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 @use "./variables.scss" as *;
 
@@ -76,7 +77,9 @@
         flex: 1;
 
         &:empty::before {
-            content: "\200b";
+            content: "";
+            display: inline-block;
+            height: $kendo-line-height-em;
         }
     }
 
