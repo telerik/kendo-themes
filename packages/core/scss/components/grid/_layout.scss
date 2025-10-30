@@ -1423,6 +1423,7 @@
         .k-tabstrip-items {
             margin: (-$kendo-tabstrip-item-border-width) (-$kendo-tabstrip-item-border-width) 0;
 
+            .k-tabstrip-item,
             .k-item {
                 flex: 1;
             }
