@@ -11,8 +11,12 @@
         background-color: $kendo-spreadsheet-view-bg;
     }
 
-    .k-spreadsheet .k-tabstrip-items-wrapper .k-item.k-active {
-        background-color: unset;
+    .k-spreadsheet .k-tabstrip-items-wrapper {
+
+        .k-tabstrip-item.k-active,
+        .k-item.k-active {
+            background-color: unset;
+        }
     }
 
 }
