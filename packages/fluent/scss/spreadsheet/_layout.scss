@@ -59,7 +59,11 @@
         }
     }
 
-    .k-spreadsheet .k-tabstrip-bottom > .k-tabstrip-items-wrapper .k-item.k-active::after {
-        top: unset;
+    .k-spreadsheet .k-tabstrip-bottom > .k-tabstrip-items-wrapper {
+
+        .k-tabstrip-item.k-active::after,
+        .k-item.k-active::after {
+            top: unset;
+        }
     }
 }
