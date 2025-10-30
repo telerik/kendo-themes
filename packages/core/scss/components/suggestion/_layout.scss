@@ -33,7 +33,7 @@
             flex-wrap: nowrap;
             overflow-x: auto;
             scrollbar-width: none;
-            padding-block: calc( #{$kendo-suggestion-padding-y} / 2 )
+            padding-block: calc( #{$kendo-suggestion-padding-y} / 2 );
         }
     }
 
