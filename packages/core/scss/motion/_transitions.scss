@@ -1,0 +1,120 @@
+@use "sass:map";
+@use "sass:list";
+@use "./durations.scss" as *;
+@use "./easings.scss" as *;
+
+$default-transitions: (
+    instant: (
+        duration: k-duration(instant),
+        easing: k-easing(linear)
+    ),
+    rapid: (
+        duration: k-duration(quick),
+        easing: k-easing(decelerate)
+    ),
+    snappy: (
+        duration: k-duration(swift),
+        easing: k-easing(decelerate)
+    ),
+    energetic: (
+        duration: k-duration(swift),
+        easing: k-easing(elastic)
+    ),
+    bouncy: (
+        duration: k-duration(speedy),
+        easing: k-easing(bounce)
+    ),
+    subtle: (
+        duration: k-duration(brisk),
+        easing: k-easing(standard)
+    ),
+    gentle: (
+        duration: k-duration(prompt),
+        easing: k-easing(accelerate)
+    ),
+    smooth: (
+        duration: k-duration(moderate),
+        easing: k-easing(standard)
+    ),
+    fluid: (
+        duration: k-duration(steady),
+        easing: k-easing(standard)
+    ),
+    enter: (
+        duration: k-duration(speedy),
+        easing: k-easing(decelerate)
+    ),
+    exit: (
+        duration: k-duration(rapid),
+        easing: k-easing(accelerate)
+    ),
+    settle: (
+        duration: k-duration(brisk),
+        easing: k-easing(decelerate)
+    ),
+    scale-out: (
+        duration: k-duration(quick),
+        easing: k-easing(accelerate)
+    ),
+    scale-in: (
+        duration: k-duration(rapid),
+        easing: k-easing(decelerate)
+    ),
+    fade-out: (
+        duration: k-duration(rapid),
+        easing: k-easing(standard)
+    ),
+    fade-in: (
+        duration: k-duration(swift),
+        easing: k-easing(standard)
+    ),
+    slide-out: (
+        duration: k-duration(swift),
+        easing: k-easing(accelerate)
+    ),
+    slide-in: (
+        duration: k-duration(speedy),
+        easing: k-easing(decelerate)
+    ),
+    emphasis: (
+        duration: k-duration(quick),
+        easing: k-easing(sharp)
+    ),
+    collapse: (
+        duration: k-duration(speedy),
+        easing: k-easing(accelerate)
+    ),
+    expand: (
+        duration: k-duration(prompt),
+        easing: k-easing(standard)
+    ),
+    shrink: (
+        duration: k-duration(brisk),
+        easing: k-easing(accelerate)
+    ),
+    grow: (
+        duration: k-duration(prompt),
+        easing: k-easing(standard)
+    ),
+    pulse: (
+        duration: k-duration(brisk),
+        easing: k-easing(standard)
+    ),
+    flip: (
+        duration: k-duration(measured),
+        easing: k-easing(standard)
+    ),
+) !default;
+
+/// The global map of motion duration tokens.
+/// @group motion
+$kendo-transitions: $default-transitions !default;
+$kendo-transitions: map.merge($default-transitions, $kendo-transitions);
+
+@function k-transition($key) {
+    @return var(--kendo-transition-#{$key});
+}
+
+/// LEGACY, used across multiple components for consistent hover, focus, and state changes.
+/// @group motion
+$kendo-transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid) !default;

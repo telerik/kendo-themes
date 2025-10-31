@@ -1,7 +1,29 @@
-$kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
 
-@mixin kendo-transition--styles() {
+@forward "./_durations.scss";
+@forward "./_easings.scss";
+@forward "./_transitions.scss";
+
+@use "sass:map";
+@use "./_durations.scss" as *;
+@use "./_easings.scss" as *;
+@use "./_transitions.scss" as *;
+
+@mixin kendo-motion--styles() {
     :root {
         --kendo-transition: #{$kendo-transition};
+
+        @each $key, $value in $kendo-durations {
+            --kendo-duration-#{$key}: #{$value};
+        }
+
+        @each $key, $value in $kendo-easings {
+            --kendo-easing-#{$key}: #{$value};
+        }
+
+        @each $key, $config in $kendo-transitions {
+            $_duration: map.get($config, duration);
+            $_easing: map.get($config, easing);
+            --kendo-transition-#{$key}: #{$_duration} #{$_easing};
+        }
     }
 }
