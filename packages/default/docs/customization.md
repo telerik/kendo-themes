@@ -14285,9 +14285,9 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td>$kendo-floating-label-transition</td>
-    <td>List</td>
-    <td><code>.2s ease-out</code></td>
-    <td><code>(0.2s ease-out)</code></td>
+    <td>String</td>
+    <td><code>k-transition(scale-in)</code></td>
+    <td><code>var(--kendo-transition-scale-in)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the Floating Label.</div></div>
@@ -30663,9 +30663,9 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td>$kendo-stepper-content-transition-duration</td>
-    <td>Number</td>
-    <td><code>300ms</code></td>
-    <td><code>300ms</code></td>
+    <td>String</td>
+    <td><code>k-duration(speedy)</code></td>
+    <td><code>var(--kendo-duration-speedy, 300ms)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The duration of the Stepper transition.</div></div>
@@ -30673,9 +30673,9 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td>$kendo-stepper-content-transition-timing-function</td>
-    <td>List</td>
-    <td><code>cubic-bezier(.4, 0, .2, 1) 0ms</code></td>
-    <td><code>(cubic-bezier(0.4, 0, 0.2, 1) 0ms)</code></td>
+    <td>String</td>
+    <td><code>k-easing(standard)</code></td>
+    <td><code>var(--kendo-easing-standard, cubic-bezier(0.42, 0, 0.58, 1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The timing function of the Stepper transition.</div></div>

@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-floating-label-transition</td>
-    <td>List</td>
-    <td><code>.2s ease-out</code></td>
-    <td><code>(0.2s ease-out)</code></td>
+    <td>String</td>
+    <td><code>k-transition(scale-in)</code></td>
+    <td><code>var(--kendo-transition-scale-in)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the Floating Label.</div></div>
