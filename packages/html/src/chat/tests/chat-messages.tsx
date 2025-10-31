@@ -19,6 +19,9 @@ export default () =>(
                     <ChatMessageGroup type="sender">
                         <ChatMessage selected text="(Selected) Message with Author, Avatar, Time and Status." />
                     </ChatMessageGroup>
+                    <ChatMessageGroup type="sender" author={null}>
+                        <ChatMessage selected time={null} statusIcon='check-circle' text="(Selected) Message with Avatar and Status with icon." />
+                    </ChatMessageGroup>
                     <ChatMessageGroup type="sender">
                         <ChatMessage text="Message with Author and Avatar." />
                     </ChatMessageGroup>
@@ -52,6 +55,9 @@ export default () =>(
                     <ChatTimestamp>6/9/2025 3:42 AM</ChatTimestamp>
                     <ChatMessageGroup>
                         <ChatMessage selected text="(Selected) Message with Author, Avatar, Time and Status." />
+                    </ChatMessageGroup>
+                    <ChatMessageGroup author={null}>
+                        <ChatMessage selected time={null} statusIcon='check-circle' text="(Selected) Message with Avatar and Status with icon." />
                     </ChatMessageGroup>
                     <ChatMessageGroup>
                         <ChatMessage text="Message with Author and Avatar." />
