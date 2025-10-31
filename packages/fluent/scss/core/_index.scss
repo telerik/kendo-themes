@@ -16,6 +16,7 @@
 // Radii
 @use "./border-radii/_index.scss" as *;
 
+// Motion
 @use "./motion/_index.scss" as *;
 
 @forward "@progress/kendo-theme-core/scss/index.scss" with (

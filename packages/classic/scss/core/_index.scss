@@ -13,6 +13,9 @@
 // Border Radius
 @use "./border-radii/index.import.scss" as *;
 
+// Motion
+@use "./motion/index.import.scss" as *;
+
 // Variables
 @forward "../_variables.scss";
 
