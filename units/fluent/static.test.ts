@@ -3,7 +3,7 @@ import * as sass from "sass";
 import * as path from "path";
 import { describe, it, expect } from "@jest/globals";
 
-const functions = ["k-color", "k-elevation", "k-border-radius", "k-spacing", "k-z-index"];
+const functions = ["k-color", "k-elevation", "k-border-radius", "k-spacing", "k-z-index", "k-duration", "k-easing", "k-transition"];
 
 describe("Static theme compilation validation", () => {
   let compiledCSS: string;
