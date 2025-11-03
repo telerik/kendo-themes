@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.2.1-dev.0](https://github.com/telerik/kendo-themes/compare/v12.2.0...v12.2.1-dev.0) (2025-11-03)
+
+
+### Bug Fixes
+
+* **chat:** the attached files are cut out when the chat width is small ([de9abea](https://github.com/telerik/kendo-themes/commit/de9abea4d948fe9fac0c2fa27a17caaa38be9f02))
+
+
+
+
+
 # [12.2.0](https://github.com/telerik/kendo-themes/compare/v12.2.0-dev.4...v12.2.0) (2025-10-28)
 
 **Note:** Version bump only for package @progress/kendo-theme-core

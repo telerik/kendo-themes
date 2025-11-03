@@ -9,11 +9,10 @@
         display: flex;
         align-items: center;
         position: relative;
-        overflow: hidden;
         gap: $kendo-suggestion-spacing;
 
         .k-suggestion-group {
-            padding-block: $kendo-suggestion-padding-y;
+            padding-block: calc( #{$kendo-suggestion-padding-y} / 2 );
             flex: 1 1 auto;
             flex-wrap: nowrap;
             overflow-x: auto;
@@ -32,6 +31,7 @@
             flex-wrap: nowrap;
             overflow-x: auto;
             scrollbar-width: none;
+            padding-block: calc( #{$kendo-suggestion-padding-y} / 2 );
         }
     }
 
