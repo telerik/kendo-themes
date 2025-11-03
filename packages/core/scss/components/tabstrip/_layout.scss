@@ -69,6 +69,7 @@
             box-sizing: border-box;
         }
 
+        .k-tabstrip-item,
         .k-item {
             margin: 0;
             padding: 0;
@@ -112,6 +113,8 @@
 
 
         // Disabled state
+        .k-tabstrip-item.k-disabled,
+        .k-tabstrip-item[disabled],
         .k-item.k-disabled,
         .k-item[disabled] {
             opacity: $kendo-tabstrip-item-disabled-opacity;
@@ -282,6 +285,7 @@
             @extend .k-tabstrip-horizontal !optional;
             border-block-end-width: $kendo-tabstrip-border-width;
 
+            .k-tabstrip-item,
             .k-item {
                 @include border-top-radius( $kendo-tabstrip-item-border-radius );
                 border-block-end-width: 0;
@@ -290,6 +294,8 @@
                     justify-content: center;
                 }
             }
+            .k-tabstrip-item:active,
+            .k-tabstrip-item.k-active,
             .k-item:active,
             .k-item.k-active {
                 margin-block-end: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
@@ -309,6 +315,7 @@
             @extend .k-tabstrip-horizontal !optional;
             border-block-start-width: $kendo-tabstrip-border-width;
 
+            .k-tabstrip-item,
             .k-item {
                 @include border-bottom-radius( $kendo-tabstrip-item-border-radius );
                 border-block-start-width: 0;
@@ -317,6 +324,8 @@
                     justify-content: center;
                 }
             }
+            .k-tabstrip-item:active,
+            .k-tabstrip-item.k-active,
             .k-item:active,
             .k-item.k-active {
                 margin-block-start: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
@@ -338,10 +347,13 @@
             @extend .k-tabstrip-vertical !optional;
             border-right-width: $kendo-tabstrip-border-width;
 
+            .k-tabstrip-item,
             .k-item {
                 border-radius: $kendo-tabstrip-item-border-radius 0 0 $kendo-tabstrip-item-border-radius;
                 border-right-width: 0;
             }
+            .k-tabstrip-item:active,
+            .k-tabstrip-item.k-active,
             .k-item:active,
             .k-item.k-active {
                 margin-right: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
@@ -364,11 +376,14 @@
             @extend .k-tabstrip-vertical !optional;
             border-left-width: $kendo-tabstrip-border-width;
 
+            .k-tabstrip-item,
             .k-item {
                 border-radius: 0 $kendo-tabstrip-item-border-radius $kendo-tabstrip-item-border-radius 0;
                 border-left-width: 0;
             }
 
+            .k-tabstrip-item:active,
+            .k-tabstrip-item.k-active,
             .k-item:active,
             .k-item.k-active {
                 margin-left: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
@@ -408,6 +423,7 @@
 
         .k-tabstrip-items-wrapper {
 
+            .k-tabstrip-item::after,
             .k-item::after {
                 content: "";
                 border-width: 0;
@@ -421,10 +437,12 @@
                 inset-inline-start: 0;
                 pointer-events: none;
             }
+            .k-tabstrip-item.k-active::after,
             .k-item.k-active::after {
                 display: block;
             }
 
+            .k-tabstrip-item > .k-link,
             .k-item > .k-link {
                 z-index: k-z-index("base", 1);
             }
@@ -432,17 +450,29 @@
 
 
         // Variants
-        .k-tabstrip-top > .k-tabstrip-items-wrapper .k-item::after {
-            border-bottom-width: $kendo-tabstrip-indicator-size;
+        .k-tabstrip-top > .k-tabstrip-items-wrapper {
+            .k-tabstrip-item::after,
+            .k-item::after {
+                border-bottom-width: $kendo-tabstrip-indicator-size;
+            }
         }
-        .k-tabstrip-bottom > .k-tabstrip-items-wrapper .k-item::after {
-            border-top-width: $kendo-tabstrip-indicator-size;
+        .k-tabstrip-bottom > .k-tabstrip-items-wrapper {
+            .k-tabstrip-item::after,
+            .k-item::after {
+                border-top-width: $kendo-tabstrip-indicator-size;
+            }
         }
-        .k-tabstrip-left > .k-tabstrip-items-wrapper .k-item::after {
-            border-right-width: $kendo-tabstrip-indicator-size;
+        .k-tabstrip-left > .k-tabstrip-items-wrapper {
+            .k-tabstrip-item::after,
+            .k-item::after {
+                border-right-width: $kendo-tabstrip-indicator-size;
+            }
         }
-        .k-tabstrip-right > .k-tabstrip-items-wrapper .k-item::after {
-            border-left-width: $kendo-tabstrip-indicator-size;
+        .k-tabstrip-right > .k-tabstrip-items-wrapper {
+            .k-tabstrip-item::after,
+            .k-item::after {
+                border-left-width: $kendo-tabstrip-indicator-size;
+            }
         }
     }
 
