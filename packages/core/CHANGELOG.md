@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.2.1-dev.1](https://github.com/telerik/kendo-themes/compare/v12.2.1-dev.0...v12.2.1-dev.1) (2025-11-03)
+
+
+### Bug Fixes
+
+* **suggestion:** button focus indication is not visible at the end ([9f4f417](https://github.com/telerik/kendo-themes/commit/9f4f417e0639a160192394d7bd3da6f8be0eebcf))
+
+
+
+
+
 ## [12.2.1-dev.0](https://github.com/telerik/kendo-themes/compare/v12.2.0...v12.2.1-dev.0) (2025-11-03)
 
 
