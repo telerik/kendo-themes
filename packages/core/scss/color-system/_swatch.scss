@@ -424,7 +424,7 @@ $default-colors: (
 $kendo-colors: $default-colors !default;
 $kendo-colors: map.merge($default-colors, $kendo-colors);
 
-@mixin kendo-color-system--styles() {
+// @mixin kendo-color-system--styles() {
     :root {
         @each $key, $value in $kendo-colors {
             @if($value) {
@@ -432,4 +432,4 @@ $kendo-colors: map.merge($default-colors, $kendo-colors);
             }
         }
     }
-}
+// }

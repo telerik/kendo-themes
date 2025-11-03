@@ -3,7 +3,7 @@
 @use "../../color-system/_functions.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-time-selector--theme-base() {
+// @mixin kendo-time-selector--theme-base() {
 
     // Time selector
     .k-timeselector {
@@ -75,9 +75,8 @@
         );
     }
 
-}
 
 
-@mixin kendo-time-selector--theme() {
-    @include kendo-time-selector--theme-base();
-}
+// @mixin kendo-time-selector--theme() {
+//     @include kendo-time-selector--theme-base();
+// }

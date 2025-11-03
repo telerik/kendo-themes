@@ -2,7 +2,7 @@
 @use "./variables.scss" as *;
 @use "../action-buttons/_variables.scss" as *;
 
-@mixin kendo-date-time-picker--layout-base() {
+// @mixin kendo-date-time-picker--layout-base() {
 
     // Datetime container
     .k-datetime-container {}
@@ -65,9 +65,9 @@
     .k-time-tab .k-datetime-selector:is(.k-rtl, [dir="rtl"]) {
         transform: translateX(100%);
     }
-}
+// }
 
 
-@mixin kendo-date-time-picker--layout() {
-    @include kendo-date-time-picker--layout-base();
-}
+// @mixin kendo-date-time-picker--layout() {
+//     @include kendo-date-time-picker--layout-base();
+// }

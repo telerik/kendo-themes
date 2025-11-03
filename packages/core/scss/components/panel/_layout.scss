@@ -22,7 +22,3 @@
             }
         }
 }
-
-@mixin kendo-panel--layout() {
-    @include kendo-panel--layout--base();
-}

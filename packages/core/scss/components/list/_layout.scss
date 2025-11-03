@@ -3,7 +3,7 @@
 @use "../icons/_variables.scss" as *;
 @use "sass:map";
 
-@mixin kendo-list--layout-base() {
+// @mixin kendo-list--layout-base() {
 
     // List container
     .k-list-container {
@@ -267,9 +267,4 @@
             }
         }
     }
-}
-
-
-@mixin kendo-list--layout() {
-    @include kendo-list--layout-base();
-}
+// }

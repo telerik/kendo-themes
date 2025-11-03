@@ -1,7 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-file-manager--theme-base() {
+// @mixin kendo-file-manager--theme-base() {
 
     // Filemanager
     .k-filemanager {
@@ -109,9 +109,8 @@
 
     }
 
-}
 
 
-@mixin kendo-file-manager--theme() {
-    @include kendo-file-manager--theme-base();
-}
+// @mixin kendo-file-manager--theme() {
+//     @include kendo-file-manager--theme-base();
+// }

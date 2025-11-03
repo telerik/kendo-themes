@@ -195,7 +195,7 @@ $kendo-font-families: map.merge( $default-font-families, $kendo-font-families );
 }
 
 
-@mixin kendo-core--typography--styles() {
+// @mixin kendo-core--typography--styles() {
     :root {
 
         --kendo-font-family: #{meta.inspect($kendo-font-family)};
@@ -224,4 +224,4 @@ $kendo-font-families: map.merge( $default-font-families, $kendo-font-families );
             --kendo-font-family-#{$family}: #{$value};
         }
     }
-}
+// }

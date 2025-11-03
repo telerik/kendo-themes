@@ -5,7 +5,7 @@
 @use "./variables.scss" as *;
 @use "../typography/_variables.scss" as *;
 
-@mixin kendo-card--layout-base() {
+// @mixin kendo-card--layout-base() {
 
 
     // Angular elements
@@ -340,9 +340,4 @@
         @include box-shadow( none );
     }
 
-}
-
-
-@mixin kendo-card--layout() {
-    @include kendo-card--layout-base();
-}
+// }

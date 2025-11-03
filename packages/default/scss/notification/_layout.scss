@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/notification/_layout.scss" as *;
-
-
-@mixin kendo-notification--layout() {
-    @include kendo-notification--layout-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/notification/_layout.scss";

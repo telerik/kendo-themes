@@ -3,7 +3,7 @@
 @use "../../border-radii/index.import.scss" as *;
 @use "_variables.scss" as *;
 
-@mixin kendo-column-menu--layout-base() {
+// @mixin kendo-column-menu--layout-base() {
     .k-column-menu {}
 
     // Sizes
@@ -81,8 +81,8 @@
     .k-group-menu-item-drag-action {
         cursor: move;
     }
-}
+// }
 
-@mixin kendo-column-menu--layout() {
-    @include kendo-column-menu--layout-base();
-}
+// @mixin kendo-column-menu--layout() {
+//     @include kendo-column-menu--layout-base();
+// }

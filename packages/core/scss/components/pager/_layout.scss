@@ -3,7 +3,7 @@
 @use "./variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-pager--layout-base() {
+// @mixin kendo-pager--layout-base() {
 
     .k-pager {
         padding: 0;
@@ -165,9 +165,9 @@
             width: fit-content;
         }
     }
-}
+// }
 
 
-@mixin kendo-pager--layout() {
-    @include kendo-pager--layout-base();
-}
+// @mixin kendo-pager--layout() {
+//     @include kendo-pager--layout-base();
+// }

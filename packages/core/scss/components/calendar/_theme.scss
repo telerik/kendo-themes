@@ -3,7 +3,7 @@
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-calendar--theme-base() {
+// @mixin kendo-calendar--theme-base() {
 
     .k-calendar {
         @include fill(
@@ -213,9 +213,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-calendar--theme() {
-    @include kendo-calendar--theme-base();
-}
+// }

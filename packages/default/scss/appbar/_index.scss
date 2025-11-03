@@ -1,16 +1,4 @@
-// Dependencies
-@use "../core/_index.scss" as *;
-
 // Component
 @forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
-
-// Expose
-@mixin kendo-appbar--styles() {
-    @include import-once( "appbar" ) {
-        @include core-styles();
-        @include kendo-appbar--layout();
-        @include kendo-appbar--theme();
-    }
-}
+@forward "./_layout.scss";
+@forward "./_theme.scss";

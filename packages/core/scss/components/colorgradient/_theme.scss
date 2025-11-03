@@ -2,7 +2,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-color-gradient--theme-base() {
+// @mixin kendo-color-gradient--theme-base() {
 
     // ColorGradient
     .k-colorgradient {
@@ -84,9 +84,8 @@
         }
     }
 
-}
 
 
-@mixin kendo-color-gradient--theme() {
-    @include kendo-color-gradient--theme-base();
-}
+// @mixin kendo-color-gradient--theme() {
+//     @include kendo-color-gradient--theme-base();
+// }

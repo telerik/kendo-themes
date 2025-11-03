@@ -1,7 +1,7 @@
 @use "./_variables.scss" as *;
 @use "../button/_variables.scss" as *;
 
-@mixin kendo-menu-button--layout-base() {
+// @mixin kendo-menu-button--layout-base() {
 
     // Menu button
     .k-menu-button,
@@ -29,9 +29,8 @@
         }
     }
 
-}
 
 
-@mixin kendo-menu-button--layout() {
-    @include kendo-menu-button--layout-base();
-}
+// @mixin kendo-menu-button--layout() {
+//     @include kendo-menu-button--layout-base();
+// }

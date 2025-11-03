@@ -1,6 +1,6 @@
 @use "./_variables.scss" as *;
 
-@mixin kendo-overlay--theme-base() {
+// @mixin kendo-overlay--theme-base() {
 
     // Overlay
     .k-overlay {
@@ -14,9 +14,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-overlay--theme() {
-    @include kendo-overlay--theme-base();
-}
+// }

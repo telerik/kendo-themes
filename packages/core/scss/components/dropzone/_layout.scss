@@ -1,6 +1,6 @@
 @use "./variables.scss" as *;
 
-@mixin kendo-dropzone--layout-base() {
+// @mixin kendo-dropzone--layout-base() {
 
     // Dropzone
     .k-external-dropzone {
@@ -41,9 +41,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-dropzone--layout() {
-    @include kendo-dropzone--layout-base();
-}
+// }

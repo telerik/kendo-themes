@@ -5,7 +5,7 @@
 @use "../../color-system/_functions.import.scss" as *;
 @use "../../_variables.scss" as *;
 
-@mixin kendo-suggestion--theme-base() {
+// @mixin kendo-suggestion--theme-base() {
     .k-suggestion {
         @include fill(
             $kendo-suggestion-text,
@@ -79,9 +79,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-suggestion--theme() {
-    @include kendo-suggestion--theme-base();
-}
+// }

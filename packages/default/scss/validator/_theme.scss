@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/validator/_theme.scss" as *;
-
-
-@mixin kendo-validator--theme() {
-    @include kendo-validator--theme-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/validator/_theme.scss";

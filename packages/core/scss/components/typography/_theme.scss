@@ -2,7 +2,7 @@
 @use "../../color-system/_functions.import.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-typography--theme-base() {
+// @mixin kendo-typography--theme-base() {
 
     .k-body {
         @include fill(
@@ -21,9 +21,4 @@
         );
     }
 
-}
-
-
-@mixin kendo-typography--theme() {
-    @include kendo-typography--theme-base();
-}
+// }

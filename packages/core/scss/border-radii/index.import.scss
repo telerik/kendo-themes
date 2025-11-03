@@ -54,7 +54,7 @@ $kendo-border-radii: map.merge($default-border-radii, $kendo-border-radii);
     @return var(--kendo-border-radius-#{$key}, $_border-radius);
 }
 
-@mixin kendo-border-radius--styles() {
+// @mixin kendo-border-radius--styles() {
     :root {
         @each $key, $value in $kendo-border-radii {
             --kendo-border-radius-#{$key}: #{$value};
@@ -68,4 +68,4 @@ $kendo-border-radii: map.merge($default-border-radii, $kendo-border-radii);
             border-radius: k-border-radius($key);
         }
     }
-}
+// }

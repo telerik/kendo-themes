@@ -1,20 +1,8 @@
 // Dependencies
-@use "../core/_index.scss" as *;
-@use "../icons/_index.scss" as *;
-@use "../utils/_index.scss" as *;
+@forward "../button/_index.scss";
+@forward "../icons/_index.scss";
 
 // Component
 @forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
-
-// Expose
-@mixin kendo-chip--styles() {
-    @include import-once( "chip" ) {
-        @include core-styles();
-        @include kendo-icon--styles();
-        @include kendo-chip--layout();
-        @include kendo-chip--theme();
-        @include kendo-utils--typography--text-overflow();
-    }
-}
+@forward "./_layout.scss";
+@forward "./_theme.scss";

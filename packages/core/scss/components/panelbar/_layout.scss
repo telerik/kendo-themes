@@ -4,7 +4,7 @@
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-panelbar--layout-base() {
+// @mixin kendo-panelbar--layout-base() {
 
     // Base
     .k-panelbar {
@@ -130,9 +130,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-panelbar--layout() {
-    @include kendo-panelbar--layout-base();
-}
+// }

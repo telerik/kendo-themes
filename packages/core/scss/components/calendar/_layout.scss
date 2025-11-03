@@ -5,7 +5,7 @@
 @use "../../z-index/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-calendar--layout-base() {
+// @mixin kendo-calendar--layout-base() {
 
     // Base
     .k-calendar {
@@ -507,9 +507,4 @@
         border-radius: $kendo-calendar-range-cell-border-radius;
     }
 
-}
-
-
-@mixin kendo-calendar--layout() {
-    @include kendo-calendar--layout-base();
-}
+// }

@@ -2,7 +2,7 @@
 @use "./variables.scss" as *;
 @use "../../z-index/index.import.scss" as *;
 
-@mixin kendo-splitter--layout-base() {
+// @mixin kendo-splitter--layout-base() {
 
     // Base
     .k-splitter {
@@ -189,9 +189,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-splitter--layout() {
-    @include kendo-splitter--layout-base();
-}
+// }

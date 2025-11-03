@@ -1,7 +1,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-pdf-viewer--theme-base() {
+// @mixin kendo-pdf-viewer--theme-base() {
 
     // PDF Viewer
     .k-pdf-viewer {
@@ -94,9 +94,8 @@
         @include box-shadow( $kendo-pdf-viewer-search-panel-shadow );
     }
 
-}
 
 
-@mixin kendo-pdf-viewer--theme() {
-    @include kendo-pdf-viewer--theme-base();
-}
+// @mixin kendo-pdf-viewer--theme() {
+//     @include kendo-pdf-viewer--theme-base();
+// }

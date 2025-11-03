@@ -2,7 +2,7 @@
 @use "../../color-system/_functions.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-editor--theme-base() {
+// @mixin kendo-editor--theme-base() {
 
     .k-editor {
         @include fill(
@@ -101,9 +101,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-editor--theme() {
-    @include kendo-editor--theme-base();
-}
+// }

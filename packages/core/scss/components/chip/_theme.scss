@@ -5,7 +5,7 @@
 @use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-chip--theme-base() {
+// @mixin kendo-chip--theme-base() {
 
     // Solid
     @each $name, $color in $kendo-chip-theme-colors {
@@ -130,9 +130,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-chip--theme() {
-    @include kendo-chip--theme-base();
-}
+// }

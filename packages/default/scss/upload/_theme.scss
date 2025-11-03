@@ -1,6 +1,1 @@
-@use "@progress/kendo-theme-core/scss/components/upload/_theme.scss" as *;
-
-
-@mixin kendo-upload--theme() {
-    @include kendo-upload--theme-base();
-}
+@forward "@progress/kendo-theme-core/scss/components/upload/_theme.scss";

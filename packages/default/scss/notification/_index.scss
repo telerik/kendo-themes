@@ -1,20 +1,8 @@
 // Dependencies
-@use "../core/_index.scss" as *;
-@use "../icons/_index.scss" as *;
-@use "../popup/_index.scss" as *;
+@forward "../icons/_index.scss";
+@forward "../popup/_index.scss";
 
 // Component
 @forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
-
-// Expose
-@mixin kendo-notification--styles() {
-    @include import-once( "notification" ) {
-        @include core-styles();
-        @include kendo-popup--styles();
-        @include kendo-icon--styles();
-        @include kendo-notification--layout();
-        @include kendo-notification--theme();
-    }
-}
+@forward "./_layout.scss";
+@forward "./_theme.scss";

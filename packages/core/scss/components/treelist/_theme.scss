@@ -1,6 +1,6 @@
 @use "./variables.scss" as *;
 
-@mixin kendo-treelist--theme-base() {
+// @mixin kendo-treelist--theme-base() {
 
     // Theme
     .k-treelist {
@@ -10,9 +10,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-treelist--theme() {
-    @include kendo-treelist--theme-base();
-}
+// }

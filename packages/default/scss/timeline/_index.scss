@@ -1,22 +1,9 @@
 // Dependencies
-@use "../core/_index.scss" as *;
-@use "../icons/_index.scss" as *;
-@use "../button/_index.scss" as *;
-@use "../card/_index.scss" as *;
+@forward "../icons/_index.scss";
+@forward "../button/_index.scss";
+@forward "../card/_index.scss";
 
 // Component
 @forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
-
-// Expose
-@mixin kendo-timeline--styles() {
-    @include import-once( "timeline" ) {
-        @include core-styles();
-        @include kendo-button--styles();
-        @include kendo-card--styles();
-        @include kendo-icon--styles();
-        @include kendo-timeline--layout();
-        @include kendo-timeline--theme();
-    }
-}
+@forward "./_layout.scss";
+@forward "./_theme.scss";

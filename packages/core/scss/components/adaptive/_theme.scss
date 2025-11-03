@@ -2,7 +2,7 @@
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 
-@mixin kendo-adaptive--theme-base() {
+// @mixin kendo-adaptive--theme-base() {
 
     .k-pane-wrapper,
     .k-view {
@@ -97,9 +97,4 @@
 
     }
 
-}
-
-
-@mixin kendo-adaptive--theme() {
-    @include kendo-adaptive--theme-base();
-}
+// }

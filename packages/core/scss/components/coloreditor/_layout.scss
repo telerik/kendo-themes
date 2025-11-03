@@ -5,7 +5,7 @@
 @use "../../z-index/index.import.scss" as *;
 
 
-@mixin kendo-color-editor--layout-base() {
+// @mixin kendo-color-editor--layout-base() {
 
     // ColorEditor/FlatColorPicker
     .k-coloreditor {
@@ -116,9 +116,9 @@
     .k-coloreditor-footer.k-actions {
         margin: 0;
     }
-}
+// }
 
 
-@mixin kendo-color-editor--layout() {
-    @include kendo-color-editor--layout-base();
-}
+// @mixin kendo-color-editor--layout() {
+//     @include kendo-color-editor--layout-base();
+// }
