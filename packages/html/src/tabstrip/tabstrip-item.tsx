@@ -56,7 +56,6 @@ export const TabStripItem = (
             {...other}
             className={classNames(
                 props.className,
-                `k-item`,
                 TABSTRIPITEM_CLASSNAME,
                 stateClassNames(TABSTRIPITEM_CLASSNAME, {
                     hover,
