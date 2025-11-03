@@ -24,7 +24,8 @@ const styles = `
     /* Simulate the k-animation-container with a popup */
     .k-animation-container {
         position: absolute;
-        z-index: 11500; /* popup layer */
+        /* Using literal value for demonstration purposes in test */
+        z-index: 11500; /* popup layer - matches k-z-index('popup') */
         top: 60px;
         left: 20px;
     }
@@ -64,7 +65,7 @@ export default () =>(
                     <div className="k-popup">
                         <div className="k-list-item">Reply All</div>
                         <div className="k-list-item">Forward</div>
-                        <div className="k-list-item">Reply &amp; Delete</div>
+                        <div className="k-list-item">Reply & Delete</div>
                     </div>
                 </div>
 
