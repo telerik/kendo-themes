@@ -145,7 +145,7 @@
 
     .k-tabstrip-left .k-tabstrip-items-wrapper {
 
-        .k-tabstrip-item.k-active .k-link::after,
+        .k-tabstrip-item.k-active::after,
         .k-item.k-active::after {
             border-radius: var( --kendo-border-radius-full, 9999px ) 0 0 var( --kendo-border-radius-full, 9999px );
         }
@@ -153,7 +153,7 @@
 
     .k-tabstrip-right .k-tabstrip-items-wrapper {
 
-        .k-tabstrip-item.k-active .k-link::after,
+        .k-tabstrip-item.k-active::after,
         .k-item.k-active::after {
             border-radius: 0 var( --kendo-border-radius-full, 9999px ) var( --kendo-border-radius-full, 9999px ) 0;
         }
