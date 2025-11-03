@@ -1,5 +1,6 @@
 // Dependencies
 @use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
@@ -10,6 +11,7 @@
 @mixin kendo-list--styles() {
     @include import-once( "list" ) {
         @include core-styles();
+        @include kendo-icon--styles();
         @include kendo-list--layout();
         @include kendo-list--theme();
     }

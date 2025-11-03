@@ -1,5 +1,6 @@
 // Dependencies
 @use "../core/_index.scss" as *;
+@use "../action-buttons/_index.scss" as *;
 @use "../window/_index.scss" as *;
 
 // Component
@@ -11,6 +12,7 @@
 @mixin kendo-dialog--styles() {
     @include import-once( "dialog" ) {
         @include core-styles();
+        @include kendo-action-buttons--styles();
         @include kendo-window--styles();
         @include kendo-dialog--layout();
         @include kendo-dialog--theme();

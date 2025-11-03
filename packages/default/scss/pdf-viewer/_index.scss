@@ -1,6 +1,7 @@
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../icons/_index.scss" as *;
+@use "../button/_index.scss" as *;
 @use "../utils/_index.scss" as *;
 @use "../combobox/_index.scss" as *;
 @use "../toolbar/_index.scss" as *;
@@ -18,6 +19,7 @@
 @mixin kendo-pdf-viewer--styles() {
     @include import-once( "pdf-viewer" ) {
         @include core-styles();
+        @include kendo-button--styles();
         @include kendo-combobox--styles();
         @include kendo-toolbar--styles();
         @include kendo-dialog--styles();
