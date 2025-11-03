@@ -10,7 +10,7 @@
             $kendo-actionsheet-bg,
             $kendo-actionsheet-border
         );
-        @include box-shadow( $kendo-actionsheet-shadow );
+        @include k-elevation-accessible( $kendo-actionsheet-elevation-step, $kendo-actionsheet-bg, true);
     }
 
 

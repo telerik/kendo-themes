@@ -5058,6 +5058,16 @@ The following table lists the available variables for customizing the Theme Core
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Elevation map.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-elevation-bg</td>
+    <td>Map</td>
+    <td><code>$default-elevation-bg-step</code></td>
+    <td><ul><li>1: 2%</li><li>2: 4%</li><li>3: 6%</li><li>4: 8%</li><li>5: 10%</li><li>6: 12%</li><li>7: 14%</li><li>8: 16%</li><li>9: 32%</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The lightness step for accessible elevations.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

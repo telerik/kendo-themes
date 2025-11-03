@@ -51,6 +51,7 @@ $kendo-actionsheet-border: k-color(border) !default;
 /// The shadow of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-shadow: k-elevation(7) !default;
+$kendo-actionsheet-elevation-step: 7 !default;
 
 
 // Actionsheet header
@@ -253,6 +254,7 @@ $kendo-adaptive-actionsheet-footer-padding-x: k-spacing(3) !default;
     $kendo-actionsheet-text: $kendo-actionsheet-text,
     $kendo-actionsheet-border: $kendo-actionsheet-border,
     $kendo-actionsheet-shadow: $kendo-actionsheet-shadow,
+    $kendo-actionsheet-elevation-step: $kendo-actionsheet-elevation-step,
     $kendo-actionsheet-titlebar-padding-x: $kendo-actionsheet-titlebar-padding-x,
     $kendo-actionsheet-titlebar-padding-y: $kendo-actionsheet-titlebar-padding-y,
     $kendo-actionsheet-titlebar-border-width: $kendo-actionsheet-titlebar-border-width,

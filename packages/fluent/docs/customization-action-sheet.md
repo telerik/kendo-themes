@@ -178,6 +178,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-actionsheet-elevation-step</td>
+    <td>String</td>
+    <td><code>var( --kendo-actionsheet-elevation-step, 7 )</code></td>
+    <td><code>var(--kendo-actionsheet-elevation-step, 7)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Elevation step of the action sheet.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-actionsheet-header-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-actionsheet-header-padding-x, #{k-spacing(4)} )</code></td>
