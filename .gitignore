@@ -5,6 +5,7 @@ node_modules/
 dist/
 modules/
 .parcel-cache/
+tests/
 
 # Log files
 npm-debug.log
