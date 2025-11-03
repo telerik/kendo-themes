@@ -25,7 +25,6 @@ const defaultOptions = {
     time: 'Thu Feb 08 2018',
     text: 'How can I help you?',
     status: 'Seen',
-    statusIcon: 'check-circle',
     toolbarItems: defaultToolbarItems,
 };
 
@@ -56,7 +55,7 @@ export const ChatMessage = (
         text = defaultOptions.text,
         content,
         status = defaultOptions.status,
-        statusIcon = defaultOptions.statusIcon,
+        statusIcon,
         toolbarItems = defaultOptions.toolbarItems,
         hover,
         selected,
@@ -107,7 +106,7 @@ export const ChatMessage = (
 
             {status &&
                 <span className="k-message-status">
-                    <Icon icon={statusIcon} size="xsmall" />
+                    {statusIcon && <Icon icon={statusIcon} size="xsmall" />}
                     {status}
                 </span>
             }
