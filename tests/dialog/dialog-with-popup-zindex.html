@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        .k-dialog {
+            width: 400px;
+            height: 250px;
+        }
+        section {
+            height: 350px;
+            transform: translate(0, 0);
+            position: relative;
+        }
+        /* Position the fake popup at top-left so it's visible */
+        .fake-split-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+        /* Simulate the k-animation-container with a popup */
+        .k-animation-container {
+            position: absolute;
+            /* Using literal value for demonstration purposes in test */
+            z-index: 11500;
+            /* popup layer - matches k-z-index('popup') */
+            top: 60px;
+            left: 20px;
+        }
+        .k-popup {
+            width: 200px;
+            padding: 8px;
+            background: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .k-list-item {
+            padding: 4px 8px;
+            cursor: pointer;
+        }
+        .k-list-item:hover {
+            background: #f0f0f0;
+        }
+
+    </style>
+    <div id="test-area">
+        <section>
+            <div class="fake-split-button">
+                <button class="k-button k-button-solid k-button-solid-primary">
+                    <span class="k-button-text">Reply</span>
+                </button>
+            </div>
+            <div class="k-animation-container">
+                <div class="k-popup">
+                    <div class="k-list-item">Reply All</div>
+                    <div class="k-list-item">Forward</div>
+                    <div class="k-list-item">Reply &amp; Delete</div>
+                </div>
+            </div>
+            <div class="k-dialog-wrapper">
+                <div class="k-overlay"></div>
+                <div class="k-dialog k-window">
+                    <div class="k-window-titlebar k-dialog-titlebar">
+                        <span class="k-window-title k-dialog-title">Title</span>
+                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="k-window-content k-dialog-content">
+                        <p>Dialog should appear above the popup.</p>
+                        <p>The popup dropdown should be hidden behind the dialog overlay.</p>
+                        <p>
+                            <strong>Expected z-index values:</strong>
+                        </p>
+                        <ul>
+                            <li>k-animation-container: 11500 (popup layer)</li>
+                            <li>k-dialog-wrapper: 12000 (modal layer)</li>
+                            <li>k-overlay: 10000 (overlay layer)</li>
+                        </ul>
+                    </div>
+                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Action</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                            <span class="k-button-text">Primary</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
