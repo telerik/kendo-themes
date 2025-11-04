@@ -28,109 +28,109 @@ $default-durations: (
     leisurely: 700ms,
     slow: 800ms,
     languid: 900ms,
-    sluggish: 1000ms
+    sluggish: 1000ms,
 ) !default;
 
 $default-transitions: (
     instant: (
         duration: var(--kendo-duration-instant),
-        easing: var(--kendo-easing-linear)
+        easing: var(--kendo-easing-linear),
     ),
     rapid: (
         duration: var(--kendo-duration-quick),
-        easing: var(--kendo-easing-decelerate)
+        easing: var(--kendo-easing-decelerate),
     ),
     snappy: (
         duration: var(--kendo-duration-swift),
-        easing: var(--kendo-easing-decelerate)
+        easing: var(--kendo-easing-decelerate),
     ),
     energetic: (
         duration: var(--kendo-duration-swift),
-        easing: var(--kendo-easing-elastic)
+        easing: var(--kendo-easing-elastic),
     ),
     bouncy: (
         duration: var(--kendo-duration-speedy),
-        easing: var(--kendo-easing-bounce)
+        easing: var(--kendo-easing-bounce),
     ),
     subtle: (
         duration: var(--kendo-duration-brisk),
-        easing: var(--kendo-easing-standard)
+        easing: var(--kendo-easing-standard),
     ),
     gentle: (
         duration: var(--kendo-duration-prompt),
-        easing: var(--kendo-easing-accelerate)
+        easing: var(--kendo-easing-accelerate),
     ),
     smooth: (
         duration: var(--kendo-duration-moderate),
-        easing: var(--kendo-easing-standard)
+        easing: var(--kendo-easing-standard),
     ),
     fluid: (
         duration: var(--kendo-duration-steady),
-        easing: var(--kendo-easing-standard)
+        easing: var(--kendo-easing-standard),
     ),
     enter: (
         duration: var(--kendo-duration-speedy),
-        easing: var(--kendo-easing-decelerate)
+        easing: var(--kendo-easing-decelerate),
     ),
     exit: (
         duration: var(--kendo-duration-rapid),
-        easing: var(--kendo-easing-accelerate)
+        easing: var(--kendo-easing-accelerate),
     ),
     settle: (
         duration: var(--kendo-duration-brisk),
-        easing: var(--kendo-easing-decelerate)
+        easing: var(--kendo-easing-decelerate),
     ),
     scale-out: (
         duration: var(--kendo-duration-quick),
-        easing: var(--kendo-easing-accelerate)
+        easing: var(--kendo-easing-accelerate),
     ),
     scale-in: (
         duration: var(--kendo-duration-rapid),
-        easing: var(--kendo-easing-decelerate)
+        easing: var(--kendo-easing-decelerate),
     ),
     fade-out: (
         duration: var(--kendo-duration-rapid),
-        easing: var(--kendo-easing-standard)
+        easing: var(--kendo-easing-standard),
     ),
     fade-in: (
         duration: var(--kendo-duration-swift),
-        easing: var(--kendo-easing-standard)
+        easing: var(--kendo-easing-standard),
     ),
     slide-out: (
         duration: var(--kendo-duration-swift),
-        easing: var(--kendo-easing-accelerate)
+        easing: var(--kendo-easing-accelerate),
     ),
     slide-in: (
         duration: var(--kendo-duration-speedy),
-        easing: var(--kendo-easing-decelerate)
+        easing: var(--kendo-easing-decelerate),
     ),
     emphasis: (
         duration: var(--kendo-duration-quick),
-        easing: var(--kendo-easing-sharp)
+        easing: var(--kendo-easing-sharp),
     ),
     collapse: (
         duration: var(--kendo-duration-speedy),
-        easing: var(--kendo-easing-accelerate)
+        easing: var(--kendo-easing-accelerate),
     ),
     expand: (
         duration: var(--kendo-duration-prompt),
-        easing: var(--kendo-easing-standard)
+        easing: var(--kendo-easing-standard),
     ),
     shrink: (
         duration: var(--kendo-duration-brisk),
-        easing: var(--kendo-easing-accelerate)
+        easing: var(--kendo-easing-accelerate),
     ),
     grow: (
         duration: var(--kendo-duration-prompt),
-        easing: var(--kendo-easing-standard)
+        easing: var(--kendo-easing-standard),
     ),
     pulse: (
         duration: var(--kendo-duration-brisk),
-        easing: var(--kendo-easing-standard)
+        easing: var(--kendo-easing-standard),
     ),
     flip: (
         duration: var(--kendo-duration-measured),
-        easing: var(--kendo-easing-standard)
+        easing: var(--kendo-easing-standard),
     ),
 ) !default;
 
@@ -166,7 +166,7 @@ $kendo-transitions: map.merge($default-transitions, $kendo-transitions);
 @mixin kendo-motion--styles() {
     :root {
         @each $key, $value in $kendo-durations {
-            --kendo-duration-#{$key}: #{$value};
+            --kendo-duration-#{$key}: var(--kendo-duration-global, #{$value});
         }
 
         @each $key, $value in $kendo-easings {
@@ -182,9 +182,7 @@ $kendo-transitions: map.merge($default-transitions, $kendo-transitions);
 
     @media (prefers-reduced-motion: reduce) {
         :root {
-            @each $key, $value in $kendo-durations {
-                --kendo-duration-#{$key}: 0.01ms;
-            }
+            --kendo-duration-global: 0.01ms;
         }
     }
 }
