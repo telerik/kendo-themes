@@ -179,4 +179,12 @@ $kendo-transitions: map.merge($default-transitions, $kendo-transitions);
             --kendo-transition-#{$key}: #{$_duration} #{$_easing};
         }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+        :root {
+            @each $key, $value in $kendo-durations {
+                --kendo-duration-#{$key}: 0.01ms;
+            }
+        }
+    }
 }
