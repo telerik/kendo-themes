@@ -285,7 +285,7 @@
         flex-wrap: nowrap;
     }
     .k-context-menu-popup {
-        z-index: k-z-index("popup");
+        z-index: k-z-index("modal", 1);
 
         .k-context-menu {
             border-width: 0;
