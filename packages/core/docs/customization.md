@@ -642,6 +642,222 @@ k-rgba-to-mix($color, $bg) // => Color
 }
 ```
 
+### `focus-ring-pattern`
+
+Gets a focus ring pattern from the available patterns.
+
+
+#### Syntax
+
+```scss
+focus-ring-pattern() // => 
+```
+
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/focus-ring/_functions.scss#L5-L7
+@function focus-ring-pattern() {
+    @return map.get($kendo-focus-ring-patterns, $pattern-key);
+}
+```
+
+### `focus-ring-width`
+
+Gets a focus ring width from the scale.
+
+
+#### Syntax
+
+```scss
+focus-ring-width() // => 
+```
+
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/focus-ring/_functions.scss#L10-L12
+@function focus-ring-width() {
+    @return map.get($kendo-focus-ring-widths, $scale-key);
+}
+```
+
+### `focus-ring-offset`
+
+Gets a focus ring offset from the scale.
+
+
+#### Syntax
+
+```scss
+focus-ring-offset() // => 
+```
+
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/focus-ring/_functions.scss#L15-L17
+@function focus-ring-offset() {
+    @return map.get($kendo-focus-ring-offsets, $scale-key);
+}
+```
+
+### `focus-ring-color`
+
+Resolves a focus ring color based on configuration.
+
+
+#### Syntax
+
+```scss
+focus-ring-color() // => 
+```
+
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/focus-ring/_functions.scss#L20-L43
+@function focus-ring-color() {
+    @if not $config {
+        @return null;
+    }
+
+    $colors: map.get($config, "colors");
+    @if not $colors {
+        @return null;
+    }
+
+    $color-config: map.get($colors, $color-key);
+    @if not $color-config {
+        @return null;
+    }
+
+    $source: map.get($color-config, "source");
+    $opacity: map.get($color-config, "opacity");
+
+    @if $opacity and $opacity < 100% {
+        @return color-mix(in srgb, $source $opacity, transparent);
+    } @else {
+        @return $source;
+    }
+}
+```
+
+### `focus-ring-shadow`
+
+Generates a box-shadow value from focus ring configuration.
+
+
+#### Syntax
+
+```scss
+focus-ring-shadow() // => 
+```
+
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/focus-ring/_functions.scss#L46-L75
+@function focus-ring-shadow() {
+    @if not $config {
+        @return null;
+    }
+
+    $shadow-configs: map.get($config, "shadow");
+    @if not $shadow-configs {
+        @return null;
+    }
+
+    $shadow-config: map.get($shadow-configs, $shadow-key);
+    @if not $shadow-config {
+        @return null;
+    }
+
+    $color-key: map.get($shadow-config, "color-key");
+    $color: focus-ring-color($color-key, $config);
+
+    @if not $color {
+        @return null;
+    }
+
+    $inset: if(map.get($shadow-config, "inset"), inset, null);
+    $x: map.get($shadow-config, "x") or 0;
+    $y: map.get($shadow-config, "y") or 0;
+    $blur: map.get($shadow-config, "blur") or 0;
+    $spread: map.get($shadow-config, "spread") or 0;
+
+    @return ($inset $x $y $blur $spread $color);
+}
+```
+
+### `focus-ring-opacity`
+
+Gets an opacity preset value.
+
+
+#### Syntax
+
+```scss
+focus-ring-opacity() // => 
+```
+
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/focus-ring/_functions.scss#L78-L80
+@function focus-ring-opacity() {
+    @return map.get($kendo-focus-ring-opacity-presets, $preset-key);
+}
+```
+
+### `focus-ring-color-source`
+
+Gets a focus ring color source from the available sources.
+
+
+#### Syntax
+
+```scss
+focus-ring-color-source() // => 
+```
+
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/focus-ring/_functions.scss#L83-L85
+@function focus-ring-color-source() {
+    @return map.get($kendo-focus-ring-color-sources, $source-key);
+}
+```
+
 ### `k-color-alpha`
 
 Returns the alpha channel of a color.
@@ -5668,6 +5884,27 @@ The following table lists the available variables for customizing the Theme Core
 ## Mixins
 
 
+
+### `focus-indicator`
+
+Legacy focus-indicator mixin wrapper for backward compatibility.
+This maintains the old API while leveraging the new focus-ring system when available.
+
+
+#### Syntax
+
+```scss
+@include focus-indicator();
+```
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/focus-ring/_mixins.scss#L12-L14
+@mixin focus-indicator() {
+    @include _focus-indicator-legacy-impl($indicator, $inset, $themeable, $type);
+}
+```
 
 ### `import-once`
 
