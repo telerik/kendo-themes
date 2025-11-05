@@ -1,0 +1,179 @@
+@use "sass:map";
+@use "sass:meta";
+@use "../_variables.scss" as *;
+@use "../mixins/_box-shadow.scss" as *;
+@use "../functions/index.import.scss" as *;
+@use "../color-system/_functions.import.scss" as *;
+@use "./_variables.scss" as *;
+@use "./_functions.scss" as *;
+
+/// Legacy focus-indicator mixin wrapper for backward compatibility.
+/// This maintains the old API while leveraging the new focus-ring system when available.
+@mixin focus-indicator( $indicator, $inset: false, $themeable: false, $type: "box-shadow" ) {
+    @include _focus-indicator-legacy-impl($indicator, $inset, $themeable, $type);
+}
+
+@mixin _focus-indicator-legacy-impl($indicator, $inset: false, $themeable: false, $type: "box-shadow") {
+    @if $kendo-enable-focus-contrast and k-list-nth($indicator, 1) {
+        @include box-shadow( if( $inset, inset, null ) 0 0 0 2px if( $themeable, currentColor, rgb( 0, 0, 0 ) ) );
+    } @else {
+        @include box-shadow( $indicator... );
+    }
+}
+@mixin focus-ring-indicator($options: ()) {
+    // Extract and resolve parameters using the scale variables
+    $state: map.get($options, "state");
+    $pattern-key: map.get($options, "pattern");
+    $color-source-key: map.get($options, "color-source");
+    $width-key: map.get($options, "width");
+    $offset-key: map.get($options, "offset");
+    $opacity-key: map.get($options, "opacity");
+
+    // Direct value overrides
+    $pattern-override: map.get($options, "pattern-value");
+    $color-override: map.get($options, "color");
+    $width-override: map.get($options, "width-value");
+    $offset-override: map.get($options, "offset-value");
+    $opacity-override: map.get($options, "opacity-value");
+
+    // Mixed pattern specific colors
+    $shadow-color-override: map.get($options, "shadow-color");
+    $outline-color-override: map.get($options, "outline-color");
+
+    // Validate that direct values exist in scale maps
+    $validated-width-override: null;
+    $validated-offset-override: null;
+
+    @if $width-override {
+        $width-exists: false;
+        @each $key, $value in $kendo-focus-ring-widths {
+            @if $value == $width-override {
+                $width-exists: true;
+            }
+        }
+        @if $width-exists {
+            $validated-width-override: $width-override;
+        }
+    }
+
+    @if $offset-override {
+        $offset-exists: false;
+        @each $key, $value in $kendo-focus-ring-offsets {
+            @if $value == $offset-override {
+                $offset-exists: true;
+            }
+        }
+        @if $offset-exists {
+            $validated-offset-override: $offset-override;
+        }
+    }
+
+    // Resolve values from scale variables or use validated overrides/defaults
+    $pattern: $pattern-override or focus-ring-pattern($pattern-key) or map.get($kendo-focus-ring-config, "pattern") or "shadow";
+    $base-color: $color-override or focus-ring-color-source($color-source-key) or currentColor;
+    $width: $validated-width-override or focus-ring-width($width-key) or map.get($kendo-focus-ring-config, "width") or focus-ring-width(2) or 2px;
+    $offset: $validated-offset-override or focus-ring-offset($offset-key) or map.get($kendo-focus-ring-config, "offset") or focus-ring-offset(0) or 0;
+    $opacity: $opacity-override or focus-ring-opacity($opacity-key);
+
+    // Apply opacity to color if specified
+    $color: $base-color;
+    @if $opacity and $opacity != 100% and $base-color != currentColor and $base-color != inherit {
+        $color: color-mix(in srgb, $base-color $opacity, transparent);
+    } @else if not $color-override and not $color-source-key {
+        $color: color-mix(in srgb, currentColor 12%, transparent);
+    }
+
+    // Handle state-based configuration with pattern awareness
+    $use-state-based: false;
+    @if $state {
+        @if $pattern == "shadow" {
+            // Use state-based shadow for shadow pattern
+            $shadow: focus-ring-shadow($state);
+            @if $shadow {
+                @include box-shadow($shadow);
+                $use-state-based: true;
+            }
+        } @else if $pattern == "outline" {
+            // For outline pattern with state, try to get the color for that state
+            // The state name should match the color key (e.g., "error" -> "error" color)
+            $state-color: focus-ring-color($state);
+            @if $state-color {
+                outline: $width solid $state-color;
+                @if $offset != 0 {
+                    outline-offset: $offset;
+                }
+                $use-state-based: true;
+            } @else {
+                @if $state == "error" {
+                    outline: $width solid k-color(error);
+                    @if $offset != 0 {
+                        outline-offset: $offset;
+                    }
+                    $use-state-based: true;
+                } @else if $state == "success" {
+                    outline: $width solid k-color(success);
+                    @if $offset != 0 {
+                        outline-offset: $offset;
+                    }
+                    $use-state-based: true;
+                }
+            }
+        } @else if $pattern == "background" or $pattern == "background-color" {
+            $state-color: focus-ring-color($state);
+            @if $state-color {
+                background-color: $state-color;
+                $use-state-based: true;
+            } @else {
+                @if $state == "error" {
+                    background-color: k-color(error);
+                    $use-state-based: true;
+                } @else if $state == "success" {
+                    background-color: k-color(success);
+                    $use-state-based: true;
+                }
+            }
+        }
+    }
+
+    // Pattern-based implementation (fallback when no state config available)
+    @if not $use-state-based {
+        @if $pattern == "outline" {
+            outline: $width solid $color;
+            @if $offset != 0 {
+                outline-offset: $offset;
+            }
+        } @else if $pattern == "mixed" {
+            // Use separate colors for outline and shadow if provided
+            $outline-color: $outline-color-override or $color;
+            $shadow-color: $shadow-color-override or $color;
+
+            // For state-based mixed patterns, try to use different colors
+            @if $state and not $outline-color-override and not $shadow-color-override {
+                $state-shadow-color: focus-ring-color("#{$state}-shadow");
+                $state-outline-color: focus-ring-color("#{$state}-outline");
+
+                @if $state-shadow-color {
+                    $shadow-color: $state-shadow-color;
+                }
+                @if $state-outline-color {
+                    $outline-color: $state-outline-color;
+                }
+            }
+
+            outline: $width solid $outline-color;
+            @if $offset != 0 {
+                outline-offset: $offset;
+            }
+            @include box-shadow(0 0 0 $width $shadow-color);
+        } @else if $pattern == "border" {
+            border: $width solid $color;
+        } @else if $pattern == "background" or $pattern == "background-color" {
+            background-color: $color;
+        } @else {
+            // Default to shadow pattern
+            @include box-shadow(0 0 0 $width $color);
+        }
+    }
+}
+
+

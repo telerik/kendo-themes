@@ -1,0 +1,85 @@
+@use "sass:map";
+@use "./_variables.scss" as *;
+
+/// Gets a focus ring pattern from the available patterns.
+@function focus-ring-pattern($pattern-key) {
+    @return map.get($kendo-focus-ring-patterns, $pattern-key);
+}
+
+/// Gets a focus ring width from the scale.
+@function focus-ring-width($scale-key) {
+    @return map.get($kendo-focus-ring-widths, $scale-key);
+}
+
+/// Gets a focus ring offset from the scale.
+@function focus-ring-offset($scale-key) {
+    @return map.get($kendo-focus-ring-offsets, $scale-key);
+}
+
+/// Resolves a focus ring color based on configuration.
+@function focus-ring-color($color-key, $config: $kendo-focus-ring-config) {
+    @if not $config {
+        @return null;
+    }
+
+    $colors: map.get($config, "colors");
+    @if not $colors {
+        @return null;
+    }
+
+    $color-config: map.get($colors, $color-key);
+    @if not $color-config {
+        @return null;
+    }
+
+    $source: map.get($color-config, "source");
+    $opacity: map.get($color-config, "opacity");
+
+    @if $opacity and $opacity < 100% {
+        @return color-mix(in srgb, $source $opacity, transparent);
+    } @else {
+        @return $source;
+    }
+}
+
+/// Generates a box-shadow value from focus ring configuration.
+@function focus-ring-shadow($shadow-key, $config: $kendo-focus-ring-config) {
+    @if not $config {
+        @return null;
+    }
+
+    $shadow-configs: map.get($config, "shadow");
+    @if not $shadow-configs {
+        @return null;
+    }
+
+    $shadow-config: map.get($shadow-configs, $shadow-key);
+    @if not $shadow-config {
+        @return null;
+    }
+
+    $color-key: map.get($shadow-config, "color-key");
+    $color: focus-ring-color($color-key, $config);
+
+    @if not $color {
+        @return null;
+    }
+
+    $inset: if(map.get($shadow-config, "inset"), inset, null);
+    $x: map.get($shadow-config, "x") or 0;
+    $y: map.get($shadow-config, "y") or 0;
+    $blur: map.get($shadow-config, "blur") or 0;
+    $spread: map.get($shadow-config, "spread") or 0;
+
+    @return ($inset $x $y $blur $spread $color);
+}
+
+/// Gets an opacity preset value.
+@function focus-ring-opacity($preset-key) {
+    @return map.get($kendo-focus-ring-opacity-presets, $preset-key);
+}
+
+/// Gets a focus ring color source from the available sources.
+@function focus-ring-color-source($source-key) {
+    @return map.get($kendo-focus-ring-color-sources, $source-key);
+}

@@ -1,0 +1,108 @@
+@use "sass:map";
+
+$default-focus-ring-patterns: (
+    shadow: "shadow",
+    outline: "outline",
+    mixed: "mixed",
+    // border: "border",
+    // background: "background-color"
+) !default;
+
+$kendo-focus-ring-widths: (
+    0: 0,
+    1: 1px,
+    2: 2px,
+    3: 0.25rem
+) !default;
+
+$kendo-focus-ring-offsets: (
+    0: 0,
+    1: 1px,
+    2: 2px
+) !default;
+
+$kendo-focus-ring-color-sources: (
+    theme: null,
+    current: currentColor,
+    inherit: inherit,
+    custom: null
+) !default;
+
+$kendo-focus-ring-opacity-presets: (
+    subtle: 8%,
+    medium: 12%,
+    strong: 20%,
+    solid: 100%
+) !default;
+
+$default-focus-ring-widths: (
+    0: 0,
+    1: 1px,
+    2: 2px,
+    3: 0.25rem
+) !default;
+
+$default-focus-ring-offsets: (
+    0: 0,
+    1: 1px,
+    2: 2px
+) !default;
+
+$default-focus-ring-config: (
+    pattern: "shadow",
+    colors: (
+        primary: (
+            source: currentColor,
+            opacity: 12%
+        ),
+        error: (
+            source: currentColor,
+            opacity: 100%
+        ),
+        success: (
+            source: currentColor,
+            opacity: 100%
+        )
+    ),
+    shadow: (
+        default: (
+            color-key: "primary",
+            inset: false,
+            x: 0,
+            y: 0,
+            blur: 0,
+            spread: 2px
+        ),
+        error: (
+            color-key: "error",
+            inset: false,
+            x: 0,
+            y: 0,
+            blur: 0,
+            spread: 2px
+        ),
+        success: (
+            color-key: "success",
+            inset: false,
+            x: 0,
+            y: 0,
+            blur: 0,
+            spread: 2px
+        )
+    ),
+    outline: (
+        default: (
+            color-key: "primary",
+            width: 2px,
+            style: solid,
+            offset: 0
+        )
+    ),
+    width: 2px,
+    offset: 0
+) !default;
+
+$kendo-focus-ring-patterns: $default-focus-ring-patterns !default;
+$kendo-focus-ring-widths: $default-focus-ring-widths !default;
+$kendo-focus-ring-offsets: $default-focus-ring-offsets !default;
+$kendo-focus-ring-config: $default-focus-ring-config !default;

@@ -1,0 +1,90 @@
+
+@use "sass:map";
+@forward "@progress/kendo-theme-core/scss/color-system/index.import.scss";
+
+$_default-focus-ring-config: (
+    pattern: "shadow",
+    colors: (
+        primary: (
+            source: k-color(on-app-surface),
+            opacity: 8%
+        ),
+        contextual: (
+            source: currentColor,
+            opacity: 8%
+        ),
+        error: (
+            source: k-color(error),
+            opacity: 100%
+        ),
+        success: (
+            source: k-color(success),
+            opacity: 100%
+        )
+    ),
+    shadow: (
+        default: (
+            color-key: "primary",
+            inset: false,
+            x: 0,
+            y: 0,
+            blur: 0,
+            spread: 2px
+        ),
+        contextual: (
+            color-key: "contextual",
+            inset: true,
+            x: 0,
+            y: 0,
+            blur: 0,
+            spread: 2px
+        ),
+        error: (
+            color-key: "error",
+            inset: false,
+            x: 0,
+            y: 0,
+            blur: 0,
+            spread: 2px
+        ),
+        success: (
+            color-key: "success",
+            inset: false,
+            x: 0,
+            y: 0,
+            blur: 0,
+            spread: 2px
+        )
+    ),
+    outline: (
+        default: (
+            color-key: "primary",
+            width: 2px,
+            style: solid,
+            offset: 0
+        ),
+        contextual: (
+            color-key: "contextual",
+            width: 2px,
+            style: solid,
+            offset: 0
+        ),
+        error: (
+            color-key: "error",
+            width: 2px,
+            style: solid,
+            offset: 0
+        ),
+        success: (
+            color-key: "success",
+            width: 2px,
+            style: solid,
+            offset: 0
+        )
+    ),
+    width: 2px,
+    offset: 0
+) !default;
+
+$kendo-focus-ring-config: $_default-focus-ring-config !default;
+$kendo-focus-ring-config: map.merge($_default-focus-ring-config, $kendo-focus-ring-config);

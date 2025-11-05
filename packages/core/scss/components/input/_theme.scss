@@ -1,5 +1,6 @@
 @use "../../mixins/index.import.scss" as *;
 @use "../../color-system/_functions.import.scss" as *;
+@use "../../focus-ring/index.import.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-input--theme-base() {
@@ -32,7 +33,17 @@
                 $kendo-input-focus-bg,
                 $kendo-input-focus-border
             );
-            @include focus-indicator( $kendo-input-focus-shadow );
+
+            @include focus-ring-indicator();
+
+            /* @include focus-ring-indicator((
+                pattern: "outline",
+                width-value: 2px,
+                offset-value: 1px,
+                color: pink
+            )); */
+            
+            @include focus-ring-indicator(());
         }
         &:focus-within {
             @include fill (
@@ -40,7 +51,7 @@
                 $kendo-input-focus-bg,
                 $kendo-input-focus-border
             );
-            @include focus-indicator( $kendo-input-focus-shadow );
+            @include focus-ring-indicator((pattern: outline));
         }
 
         // Disabled

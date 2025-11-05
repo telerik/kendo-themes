@@ -1,0 +1,143 @@
+@use "sass:map";
+
+$_default-focus-ring-patterns: (
+    shadow: "shadow",
+    outline: "outline",
+    mixed: "mixed",
+    border: "border",
+    background: "background-color"
+) !default;
+
+$_default-focus-ring-widths: (
+    0: 0,
+    1: 1px,
+    2: 2px
+) !default;
+
+$_default-focus-ring-offsets: (
+    0: 0,
+    1: 1px,
+    2: 2px,
+    3: 4px
+) !default;
+
+// Material theme focus ring configuration
+$_default-focus-ring-config: (
+    pattern: "mixed",
+    colors: (
+        primary: (
+            source: var(--kendo-color-primary, #1976d2),
+            opacity: 100%
+        ),
+        contextual: (
+            source: currentColor,
+            opacity: 87%
+        ),
+        error: (
+            source: var(--kendo-color-error, #d32f2f),
+            opacity: 100%
+        ),
+        success: (
+            source: var(--kendo-color-success, #388e3c),
+            opacity: 100%
+        ),
+        primary-shadow: (
+            source: var(--kendo-color-primary, #1976d2),
+            opacity: 12%
+        ),
+        primary-outline: (
+            source: var(--kendo-color-primary, #1976d2),
+            opacity: 100%
+        ),
+        error-shadow: (
+            source: var(--kendo-color-error, #d32f2f),
+            opacity: 16%
+        ),
+        error-outline: (
+            source: var(--kendo-color-error, #d32f2f),
+            opacity: 100%
+        ),
+        success-shadow: (
+            source: var(--kendo-color-success, #388e3c),
+            opacity: 12%
+        ),
+        success-outline: (
+            source: var(--kendo-color-success, #388e3c),
+            opacity: 100%
+        )
+    ),
+    shadow: (
+        default: (
+            color-key: "primary-shadow",
+            inset: false,
+            x: 0,
+            y: 0,
+            blur: 0,
+            spread: 4px
+        ),
+        contextual: (
+            color-key: "contextual",
+            inset: false,
+            x: 0,
+            y: 0,
+            blur: 0,
+            spread: 4px
+        ),
+        error: (
+            color-key: "error-shadow",
+            inset: false,
+            x: 0,
+            y: 0,
+            blur: 0,
+            spread: 4px
+        ),
+        success: (
+            color-key: "success-shadow",
+            inset: false,
+            x: 0,
+            y: 0,
+            blur: 0,
+            spread: 4px
+        )
+    ),
+    outline: (
+        default: (
+            color-key: "primary-outline",
+            width: 4px,
+            style: solid,
+            offset: 2px
+        ),
+        contextual: (
+            color-key: "contextual",
+            width: 4px,
+            style: solid,
+            offset: 2px
+        ),
+        error: (
+            color-key: "error-outline",
+            width: 4px,
+            style: solid,
+            offset: 2px
+        ),
+        success: (
+            color-key: "success-outline",
+            width: 4px,
+            style: solid,
+            offset: 2px
+        )
+    ),
+    width: 4px,
+    offset: 2px
+) !default;
+
+$kendo-focus-ring-widths: $_default-focus-ring-widths !default;
+$kendo-focus-ring-offsets: $_default-focus-ring-offsets !default;
+$kendo-focus-ring-config: $_default-focus-ring-config !default;
+
+$kendo-focus-ring-widths: map.merge($kendo-focus-ring-widths, $_default-focus-ring-widths);
+$kendo-focus-ring-offsets: map.merge($kendo-focus-ring-offsets, $_default-focus-ring-offsets);
+$kendo-focus-ring-config: map.merge($kendo-focus-ring-config, $_default-focus-ring-config);
+
+
+$kendo-focus-ring-patterns: $_default-focus-ring-patterns !default;
+$kendo-focus-ring-patterns: map.merge($_default-focus-ring-patterns, $kendo-focus-ring-patterns);

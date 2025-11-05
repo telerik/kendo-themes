@@ -1,4 +1,5 @@
 @forward "./_variables.scss";
+@forward "./focus-ring/_variables.scss";
 @forward "./color-system/index.import.scss";
 @forward "./mixins/index.import.scss";
 @forward "./spacing/index.import.scss";
@@ -8,6 +9,7 @@
 @forward "./border-radii/index.import.scss";
 @forward "./motion/index.import.scss";
 @forward "./z-index/index.import.scss";
+@forward "./focus-ring/index.import.scss";
 
 @use "./color-system/index.import.scss" as *;
 @use "./mixins/index.import.scss" as *;
@@ -16,6 +18,7 @@
 @use "./typography/index.import.scss" as *;
 @use "./spacing/index.import.scss" as *;
 @use "./border-radii/index.import.scss" as *;
+@use "./focus-ring/index.import.scss" as *;
 
 @mixin core-styles() {
     @include import-once("core-styles") {

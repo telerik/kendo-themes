@@ -13,6 +13,9 @@
 // Radii
 @use "./border-radii/index.import.scss" as *;
 
+// Focus ring
+@use "./focus-ring/index.import.scss" as *;
+
 // Variables
 @forward "../_variables.scss";
 
@@ -45,6 +48,15 @@
     // Spacing
     $default-spacing: $kendo-spacing,
     $kendo-spacing: $kendo-spacing !default,
+    // Focus ring
+    $default-focus-ring-patterns: $kendo-focus-ring-patterns,
+    $kendo-focus-ring-patterns: $kendo-focus-ring-patterns !default,
+    $default-focus-ring-widths: $kendo-focus-ring-widths,
+    $kendo-focus-ring-widths: $kendo-focus-ring-widths !default,
+    $default-focus-ring-offsets: $kendo-focus-ring-offsets,
+    $kendo-focus-ring-offsets: $kendo-focus-ring-offsets !default,
+    $default-focus-ring-config: $kendo-focus-ring-config,
+    $kendo-focus-ring-config: $kendo-focus-ring-config !default,
 );
 
 // Global disabled styles
