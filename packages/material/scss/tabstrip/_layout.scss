@@ -40,7 +40,7 @@
     .k-tabstrip-top,
     .k-tabstrip-bottom {
         .k-tabstrip-items-wrapper {
-            .k-tabstrip-item:active,
+            .k-tabstrip-item::after,
             .k-item::after {
                 display: none;
             }
