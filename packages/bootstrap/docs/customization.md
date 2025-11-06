@@ -6291,6 +6291,26 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-chart-tooltip-color</td>
+    <td>String</td>
+    <td><code>k-color(app-surface)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the chart tooltip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chart-tooltip-color-inverse</td>
+    <td>String</td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inverse text color of the chart tooltip.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chart-bg</td>
     <td>String</td>
     <td><code>k-color(surface-alt)</code></td>
