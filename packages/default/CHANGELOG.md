@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.2.2](https://github.com/telerik/kendo-themes/compare/v12.2.1...v12.2.2) (2025-11-06)
+
+
+### Bug Fixes
+
+* **charts:** use color system for chart tooltip ([92c0ae2](https://github.com/telerik/kendo-themes/commit/92c0ae2758fab10e0cca07df56bd24310a37bdd7))
+
+
+
+
+
 ## [12.2.1](https://github.com/telerik/kendo-themes/compare/v12.2.1-dev.1...v12.2.1) (2025-11-03)
 
 **Note:** Version bump only for package @progress/kendo-theme-default

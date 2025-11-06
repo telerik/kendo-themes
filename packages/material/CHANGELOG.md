@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.2.2](https://github.com/telerik/kendo-themes/compare/v12.2.1...v12.2.2) (2025-11-06)
+
+
+### Bug Fixes
+
+* **charts:** use color system for chart tooltip ([92c0ae2](https://github.com/telerik/kendo-themes/commit/92c0ae2758fab10e0cca07df56bd24310a37bdd7))
+* **material:** button duplicate selectors ([9e2a769](https://github.com/telerik/kendo-themes/commit/9e2a7696e01db72a1904c1f89197f0ee5cac14e7))
+* **tabstrip:** active tabstrip should be visible in material ([356c8f2](https://github.com/telerik/kendo-themes/commit/356c8f20e2a43cfa53ed2fc53c684c8a0b0b34da))
+
+
+
+
+
 ## [12.2.1](https://github.com/telerik/kendo-themes/compare/v12.2.1-dev.1...v12.2.1) (2025-11-03)
 
 **Note:** Version bump only for package @progress/kendo-theme-material
