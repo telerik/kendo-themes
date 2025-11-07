@@ -134,7 +134,7 @@ $kendo-input-focus-text: null !default;
 $kendo-input-focus-border: $kendo-input-hover-border !default;
 /// The shadow of the focused Input components.
 /// @group input
-$kendo-input-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
+$kendo-input-focus-shadow: color-mix(in srgb, k-color(on-app-surface) 12%, transparent) !default;
 
 /// The background color of the disabled Input components.
 /// @group input

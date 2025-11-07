@@ -1,6 +1,7 @@
 @use "../../mixins/index.scss" as *;
 @use "../../color-system/_functions.scss" as *;
 @use "./_variables.scss" as *;
+@use "../../focus-indicator/index.scss" as *;
 
 @mixin kendo-input--theme-base() {
 
@@ -32,7 +33,8 @@
                 $kendo-input-focus-bg,
                 $kendo-input-focus-border
             );
-            @include focus-indicator( $kendo-input-focus-shadow );
+
+            @include focus-indicator-shadow('outset', $kendo-input-focus-shadow);
         }
         &:focus-within {
             @include fill (
@@ -40,7 +42,7 @@
                 $kendo-input-focus-bg,
                 $kendo-input-focus-border
             );
-            @include focus-indicator( $kendo-input-focus-shadow );
+            @include focus-indicator-shadow('outset', $kendo-input-focus-shadow);
         }
 
         // Disabled
@@ -126,7 +128,8 @@
                 $kendo-picker-focus-border,
                 $kendo-picker-focus-gradient
             );
-            @include focus-indicator( $kendo-picker-focus-shadow );
+            // @include focus-indicator( $kendo-picker-focus-shadow );
+            @include focus-indicator-shadow('outset', $kendo-input-focus-shadow);
         }
         &:focus-within {
             @include fill (
@@ -135,7 +138,8 @@
                 $kendo-picker-focus-border,
                 $kendo-picker-focus-gradient
             );
-            @include focus-indicator( $kendo-picker-focus-shadow );
+            // @include focus-indicator( $kendo-picker-focus-shadow );
+            @include focus-indicator-shadow('outset', $kendo-input-focus-shadow);
         }
 
         // Disabled
@@ -211,7 +215,8 @@
                 $kendo-input-outline-focus-bg,
                 $kendo-input-outline-focus-border
              );
-            @include focus-indicator( $kendo-input-outline-focus-shadow );
+            // @include focus-indicator( $kendo-input-outline-focus-shadow );
+            @include focus-indicator-shadow('outset', $kendo-input-focus-shadow);
         }
         &:focus-within {
             @include fill (
@@ -219,7 +224,8 @@
                 $kendo-input-outline-focus-bg,
                 $kendo-input-outline-focus-border
              );
-            @include focus-indicator( $kendo-input-outline-focus-shadow );
+            // @include focus-indicator( $kendo-input-outline-focus-shadow );
+            @include focus-indicator-shadow('outset', $kendo-input-focus-shadow);
         }
 
         // Disabled
