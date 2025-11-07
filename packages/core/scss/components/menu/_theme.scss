@@ -61,6 +61,12 @@
         }
     }
 
+    .k-menu-popup {
+        @include fill(
+            $border: $kendo-menu-popup-border
+        );
+    }
+
     .k-menu-group,
     .k-menu.k-context-menu {
         @include fill(
