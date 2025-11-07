@@ -2,9 +2,10 @@
 @use "../input/_variables.scss" as *;
 
 // Daterangepicker
-/// The width of the DateRangePicker.
+/// The width of the DateRangePicker component.
 /// @group date-range-picker
-$kendo-daterange-picker-width: var( --kendo-input-width, #{$kendo-input-width} ) !default;
+$kendo-daterange-picker-width: auto !default;
+
 /// The width of the DateRangePicker input.
 /// @group date-range-picker
 $kendo-daterange-picker-input-width: 10em !default;
@@ -20,5 +21,6 @@ $kendo-daterange-picker-disabled-bg: var( --kendo-daterange-picker-disabled-bg, 
 $kendo-daterange-picker-disabled-border: var( --kendo-daterange-picker-disabled-border, currentColor ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/daterangepicker/_variables.scss" with (
+    $kendo-daterange-picker-width: $kendo-daterange-picker-width,
     $kendo-daterange-picker-input-width: $kendo-daterange-picker-input-width
 );

@@ -6,8 +6,8 @@
 
     // Daterange picker
     .k-daterange-picker {
-        width: $kendo-input-default-width;
-        display: flex;
+        width: $kendo-daterange-picker-width;
+        display: inline-flex;
         flex-flow: row nowrap;
         align-items: flex-end;
         gap: k-spacing(2);

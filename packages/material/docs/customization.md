@@ -11059,6 +11059,16 @@ The following table lists the available variables for customizing the Material t
     </tr>
 </thead>
 <tbody><tr>
+    <td>$kendo-daterange-picker-width</td>
+    <td>String</td>
+    <td><code>auto</code></td>
+    <td><code>auto</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DateRangePicker component.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-daterange-picker-input-width</td>
     <td>Number</td>
     <td><code>10em</code></td>
