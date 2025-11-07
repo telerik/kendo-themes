@@ -17775,9 +17775,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-focus-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
-    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Input components.</div></div>
@@ -17925,9 +17925,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-outline-focus-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-input-focus-shadow</code></td>
-    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline focused Input components.</div></div>
@@ -18025,9 +18025,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-flat-focus-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-input-focus-shadow</code></td>
-    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the flat focused Input components.</div></div>
@@ -24501,9 +24501,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-picker-focus-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-input-focus-shadow</code></td>
-    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Picker components.</div></div>
@@ -24651,9 +24651,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-picker-outline-focus-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-picker-focus-shadow</code></td>
-    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline focused Picker components.</div></div>
@@ -24781,9 +24781,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-picker-flat-focus-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-picker-focus-shadow</code></td>
-    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the flat focused Picker components.</div></div>
