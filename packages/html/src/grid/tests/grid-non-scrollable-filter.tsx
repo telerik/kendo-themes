@@ -58,7 +58,7 @@ export default () =>(
                 </GridNormal>
             </section>
 
-            <h3>Non-Scrollable Grid (scrollable="none") - Filter Icons (BUG)</h3>
+            <h3>Non-Scrollable Grid (scrollable="none") - Filter Icons (Fixed)</h3>
             <section>
                 <GridNormal className="k-grid-display-block k-grid-no-scrollbar" style={{ width: "600px" }}>
                     <GridHeader>
@@ -112,7 +112,7 @@ export default () =>(
                 </GridNormal>
             </section>
 
-            <h3>Non-Scrollable Grid with Resizable Columns (BUG)</h3>
+            <h3>Non-Scrollable Grid with Resizable Columns (Fixed)</h3>
             <section>
                 <GridNormal className="k-grid-display-block k-grid-no-scrollbar" style={{ width: "600px" }}>
                     <GridHeader>
