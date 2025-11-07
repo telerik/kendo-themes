@@ -219,13 +219,16 @@
             }
         }
 
-        .k-grid-header .k-filterable {
-            > .k-cell-inner {
-                .k-link {
-                    padding-inline-end: 0;
-                }
-            }
-        }
+        // Removed: padding-inline-end: 0 on .k-link inside .k-cell-inner
+        // This was needed for absolutely positioned filter icons, but with
+        // static positioning in .k-cell-inner flex layout, we need the padding
+        // .k-grid-header .k-filterable {
+        //     > .k-cell-inner {
+        //         .k-link {
+        //             padding-inline-end: 0;
+        //         }
+        //     }
+        // }
 
         .k-cell-inner {
             display: flex;
