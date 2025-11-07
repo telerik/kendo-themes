@@ -1,0 +1,168 @@
+@use "sass:map";
+@use "sass:string";
+@use "sass:list";
+@use "../_variables.scss" as *;
+@use "../mixins/_box-shadow.scss" as *;
+
+/// Focus indicator patterns with structure but no colors.
+/// @group focus-indicator
+$default-focus-indicator: (
+    shadow: (
+        outset: (
+            offset-x: 0,
+            offset-y: 0,
+            spread: 0,
+            width: 2px
+        ),
+        inset: (
+            inset: true,
+            offset-x: 0,
+            offset-y: 0,
+            spread: 0,
+            width: 2px
+        )
+    ),
+    border: (
+        width: 2px,
+        style: solid
+    )
+) !default;
+
+/// The global focus indicator patterns map.
+/// @group focus-indicator
+$kendo-focus-indicator: $default-focus-indicator !default;
+
+$kendo-focus-indicator: map.merge($default-focus-indicator, $kendo-focus-indicator);
+
+/// Helper function to convert structured shadow format to CSS box-shadow value
+@function build-shadow-value($shadow-config) {
+    @if not $shadow-config {
+        @return null;
+    }
+
+    $offset-x: map.get($shadow-config, offset-x);
+    $offset-y: map.get($shadow-config, offset-y);
+    $blur: if(map.has-key($shadow-config, blur), map.get($shadow-config, blur), 0);
+    $spread: map.get($shadow-config, spread);
+    $width: map.get($shadow-config, width);
+    $inset: if(map.has-key($shadow-config, inset) and map.get($shadow-config, inset), inset, null);
+
+    @if $inset {
+        @return $inset $offset-x $offset-y $blur ($spread + $width);
+    } @else {
+        @return $offset-x $offset-y $blur ($spread + $width);
+    }
+}
+
+/// Helper function to convert structured border format to CSS border value
+@function build-border-value($border-config) {
+    @if not $border-config {
+        @return null;
+    }
+
+    $width: map.get($border-config, width);
+    $style: map.get($border-config, style);
+
+    @return $width $style;
+}
+
+/// Helper function to convert structured outline format to CSS outline value
+@function build-outline-value($outline-config) {
+    @if not $outline-config {
+        @return null;
+    }
+
+    $width: map.get($outline-config, width);
+    $style: map.get($outline-config, style);
+
+    @return $width $style;
+}
+
+// Old
+@mixin focus-indicator( $indicator, $inset: false, $themeable: false, $type: "box-shadow" ) {
+    @if $kendo-enable-focus-contrast and k-list-nth($indicator, 1) {
+        @include box-shadow( if( $inset, inset, null ) 0 0 0 2px if( $themeable, currentColor, rgb( 0, 0, 0 ) ) );
+    } @else {
+        @include box-shadow( $indicator... );
+    }
+}
+
+
+/// Generate a shadow focus indicator with optional variant support.
+/// @group focus-indicator
+@mixin focus-indicator-shadow($variant: null, $color: currentColor) {
+    $shadow-group: map.get($kendo-focus-indicator, shadow);
+    $shadow-config: null;
+
+    @if $shadow-group {
+        $shadow-config: if($variant, map.get($shadow-group, $variant), $shadow-group);
+    }
+
+    $shadow-value: build-shadow-value($shadow-config);
+    @if $shadow-value {
+        box-shadow: #{$shadow-value} #{$color};
+    }
+}
+
+/// Generate an outline focus indicator with variant support.
+/// @group focus-indicator
+@mixin focus-indicator-outline($variant, $color: currentColor) {
+    $outline-group: map.get($kendo-focus-indicator, outline);
+    $outline-config: if($outline-group, map.get($outline-group, $variant), null);
+
+    @if $outline-config {
+        $width: map.get($outline-config, width);
+        $style: map.get($outline-config, style);
+        outline: #{$width} #{$style} #{$color};
+        outline-offset: map.get($outline-config, offset);
+    }
+}
+
+/// Generate a background focus indicator.
+/// @group focus-indicator
+@mixin focus-indicator-background($color: currentColor) {
+    $bg-config: map.get($kendo-focus-indicator, background);
+
+    @if $bg-config {
+        background: $color;
+    }
+}
+
+/// Generate a border focus indicator.
+/// @group focus-indicator
+@mixin focus-indicator-border($color: currentColor) {
+    $border-config: map.get($kendo-focus-indicator, border);
+    $border-value: build-border-value($border-config);
+    @if $border-value {
+        border: #{$border-value} #{$color};
+    }
+}
+
+/// Generate CSS custom properties for all focus indicator patterns.
+/// @group focus-indicator
+@mixin kendo-focus-indicator--styles() {
+    :root {
+        @each $pattern-name, $pattern-config in $kendo-focus-indicator {
+            @if $pattern-config and ($pattern-name == "shadow" or $pattern-name == "shadow-inset" or $pattern-name == "shadow-rem") {
+                $shadow-value: build-shadow-value($pattern-config);
+                @if $shadow-value {
+                    --kendo-focus-indicator-#{$pattern-name}: #{$shadow-value} currentColor;
+                }
+            } @else if $pattern-config and $pattern-name == "border" {
+                $border-value: build-border-value($pattern-config);
+                @if $border-value {
+                    --kendo-focus-indicator-#{$pattern-name}: #{$border-value} currentColor;
+                }
+            } @else if $pattern-config and map.has-key($pattern-config, "width") and map.has-key($pattern-config, "style") {
+                // Handle outline patterns that have width/style/offset
+                --kendo-focus-indicator-#{$pattern-name}: #{map.get($pattern-config, width)} #{map.get($pattern-config, style)};
+                @if map.has-key($pattern-config, "offset") {
+                    --kendo-focus-indicator-#{$pattern-name}-offset: #{map.get($pattern-config, offset)};
+                }
+            } @else if $pattern-config {
+                // Handle other pattern types (background, etc.)
+                --kendo-focus-indicator-#{$pattern-name}: currentColor;
+            }
+        }
+    }
+}
