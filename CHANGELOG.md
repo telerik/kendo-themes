@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.2.3-dev.0](https://github.com/telerik/kendo-themes/compare/v12.2.2...v12.2.3-dev.0) (2025-11-07)
+
+
+### Bug Fixes
+
+* **bootstrap:** input adornments in Chat should use the same background as input ([be3b94d](https://github.com/telerik/kendo-themes/commit/be3b94d03cafcae7f49fcf1ee821c48e57c0bede))
+* **menu:** add missing border color to popup wrapper ([d20001d](https://github.com/telerik/kendo-themes/commit/d20001dc4f3fd92b301de51560d3e8b4576d7c1d))
+
+
+
+
+
 ## [12.2.2](https://github.com/telerik/kendo-themes/compare/v12.2.1...v12.2.2) (2025-11-06)
 
 
