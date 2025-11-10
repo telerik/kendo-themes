@@ -56,11 +56,11 @@
     // Tabs
     .k-date-tab .k-datetime-selector {
         transform: translateX(0);
-        transition: transform k-transition('slide-in');
+        transition: transform k-transition(slide-in);
     }
     .k-time-tab .k-datetime-selector {
         transform: translateX(-100%);
-        transition: transform k-transition('slide-out');
+        transition: transform k-transition(slide-out);
     }
 
     :is(.k-rtl, [dir="rtl"]) .k-time-tab .k-datetime-selector,

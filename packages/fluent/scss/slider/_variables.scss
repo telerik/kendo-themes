@@ -123,10 +123,10 @@ $kendo-slider-thumb-disabled-border: var( --kendo-slider-thumb-disabled-border, 
 
 /// The transition speed of the Slider.
 /// @group slider
-$kendo-slider-transition-speed: var( --kendo-slider-transition-speed, k-duration(swift) ) !default;
+$kendo-slider-transition-speed: var( --kendo-slider-transition-speed, k-duration(brisk) ) !default;
 /// The transition function of the Slider.
 /// @group slider
-$kendo-slider-transition-function: var( --kendo-slider-transition-function, k-easing(decelerate) ) !default;
+$kendo-slider-transition-function: var( --kendo-slider-transition-function, k-easing(standard) ) !default;
 
 /// The transition speed of the Slider thumb.
 /// @group slider

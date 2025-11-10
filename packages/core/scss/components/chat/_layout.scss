@@ -251,7 +251,7 @@
     .k-chat-bubble.k-bubble-expandable {
         .k-bubble-content {
             height: auto;
-            transition: height k-transition(shrink)
+            transition: height k-transition(shrink);
         }
     }
 

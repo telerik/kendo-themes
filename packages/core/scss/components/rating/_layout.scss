@@ -45,7 +45,7 @@
             margin: 0;
             outline: 0;
             overflow: hidden;
-            transition: k-transition(bouncy);
+            transition: color k-transition(bouncy);
 
             * {
                 pointer-events: none;

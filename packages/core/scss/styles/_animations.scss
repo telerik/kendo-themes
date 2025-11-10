@@ -144,7 +144,7 @@
         &-enter-active,
         &-appear-active {
             opacity: 1;
-            transition: opacity k-duration(moderate) k-easing(standard);
+            transition: opacity k-transition(smooth);
         }
 
         &-exit {
@@ -153,7 +153,7 @@
 
         &-exit-active {
             opacity: 0;
-            transition: opacity k-duration(moderate) k-easing(standard);
+            transition: opacity k-transition(smooth);
         }
 
         &-exit-active + &-exit-active,
@@ -227,7 +227,7 @@
         &-appear-active {
             opacity: 1;
             transform: translate(0, 0);
-            transition: transform k-duration(speedy) k-easing(decelerate), opacity k-duration(speedy) k-easing(decelerate);
+            transition: transform k-transition(slide-in), opacity k-transition(slide-in);
 
             .k-centered {
                 transform: translate(-50%, -50%);

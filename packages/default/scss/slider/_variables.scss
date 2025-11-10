@@ -87,10 +87,10 @@ $kendo-slider-draghandle-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(prim
 
 /// The transition speed of the Slider.
 /// @group slider
-$kendo-slider-transition-speed: k-duration(swift) !default;
+$kendo-slider-transition-speed: k-duration(brisk) !default;
 /// The transition function of the Slider.
 /// @group slider
-$kendo-slider-transition-function: k-easing(decelerate) !default;
+$kendo-slider-transition-function: k-easing(standard) !default;
 /// The transition speed of the Slider drag handle.
 /// @group slider
 $kendo-slider-draghandle-transition-speed: k-duration(quick) !default;

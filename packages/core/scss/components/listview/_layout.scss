@@ -72,7 +72,7 @@
         border-style: solid;
         box-sizing: border-box;
         flex-shrink: 0;
-        transition: color k-transition('snappy'), border-color k-transition('snappy'), background-color k-transition('snappy');
+        transition: color k-transition(snappy), border-color k-transition(snappy), background-color k-transition(snappy);
     }
     .k-listview-item-padding-rectangle {
         padding-block: $kendo-listview-item-padding-y;
