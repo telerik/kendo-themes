@@ -28734,8 +28734,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-slider-transition-speed</td>
     <td>String</td>
-    <td><code>k-duration(swift)</code></td>
-    <td><code>var(--kendo-duration-swift, 250ms)</code></td>
+    <td><code>k-duration(brisk)</code></td>
+    <td><code>var(--kendo-duration-brisk, 350ms)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the Slider.</div></div>
@@ -28744,8 +28744,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-slider-transition-function</td>
     <td>String</td>
-    <td><code>k-easing(decelerate)</code></td>
-    <td><code>var(--kendo-easing-decelerate, cubic-bezier(0, 0, 0.58, 1))</code></td>
+    <td><code>k-easing(standard)</code></td>
+    <td><code>var(--kendo-easing-standard, cubic-bezier(0.42, 0, 0.58, 1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the Slider.</div></div>
