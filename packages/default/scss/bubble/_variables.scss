@@ -56,7 +56,7 @@ $kendo-bubble-focus-bg: k-color(base-subtle) !default;
 $kendo-bubble-focus-border: $kendo-bubble-focus-bg !default;
 /// The box shadow of the focused Bubble.
 /// @group bubble
-$kendo-bubble-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
+$kendo-bubble-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 16%, transparent) !default;
 
 /// The spacing between content and icon in expandable Bubble.
 /// @group bubble
