@@ -660,8 +660,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, currentColor 8%, transparent)</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 8%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, currentColor 12%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused cells in the Calendar.</div></div>
@@ -671,7 +671,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-selected-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-calendar-cell-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 8%, transparent))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected and focused cells in the Calendar.</div></div>

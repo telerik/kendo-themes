@@ -579,9 +579,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-actionsheet-item-focus-shadow</td>
-    <td>List</td>
-    <td><code>$kendo-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 12%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused ActionSheet item.</div></div>

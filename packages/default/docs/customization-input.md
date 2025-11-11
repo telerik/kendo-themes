@@ -345,8 +345,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-focus-border</td>
     <td>String</td>
-    <td><code>$kendo-input-hover-border</code></td>
-    <td><code>var(--kendo-color-border-alt, rgba(0, 0, 0, 0.16))</code></td>
+    <td><code>$kendo-input-border</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Input components.</div></div>
@@ -355,8 +355,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 8%, transparent))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Input components.</div></div>
@@ -506,7 +506,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-outline-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-input-focus-shadow</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 8%, transparent))</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline focused Input components.</div></div>
@@ -606,7 +606,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-flat-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-input-focus-shadow</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 8%, transparent))</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the flat focused Input components.</div></div>
