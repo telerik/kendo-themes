@@ -62,7 +62,7 @@ $kendo-breadcrumb-border: transparent !default;
 
 /// The box shadow of the focused Breadcrumb.
 /// @group breadcrumb
-$kendo-breadcrumb-focus-shadow: 0 0 2px 1px k-color(border) !default;
+$kendo-breadcrumb-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent) !default;
 
 /// The horizontal padding of the small Breadcrumb link.
 /// @group breadcrumb
@@ -146,7 +146,7 @@ $kendo-breadcrumb-link-focus-text: k-color(primary) !default;
 $kendo-breadcrumb-link-focus-border: null !default;
 /// The box shadow of the focused Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-link-focus-shadow: inset 0 0 0 2px k-color(border-alt) !default;
+$kendo-breadcrumb-link-focus-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent) !default;
 
 /// The background color of the Breadcrumb root link.
 /// @group breadcrumb
