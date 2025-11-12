@@ -135,13 +135,13 @@ $kendo-color-editor-lg-views-padding-x: k-spacing(4.5) !default;
 
 /// The outline color of the focused ColorGradient.
 /// @group color-editor
-$kendo-color-editor-color-gradient-focus-outline-color: color-mix(in srgb, k-color(dark) 30%, transparent) !default;
+$kendo-color-editor-color-gradient-focus-outline-color: color-mix(in srgb, k-color(on-app-surface) 30%, transparent) !default;
 /// The outline width of the focused ColorGradient.
 /// @group color-editor
 $kendo-color-editor-color-gradient-focus-outline: 2px !default;
 /// The outline offset of the focused ColorGradient.
 /// @group color-editor
-$kendo-color-editor-color-gradient-focus-outline-offset: 2px !default;
+$kendo-color-editor-color-gradient-focus-outline-offset: 0 !default;
 
 /// The size map of the ColorEditor.
 /// @group color-editor
