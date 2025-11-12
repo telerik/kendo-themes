@@ -81,7 +81,7 @@ $kendo-window-border: k-color(border) !default;
 $kendo-window-shadow: none !default;
 /// The box shadow of the focused Window.
 /// @group window
-$kendo-window-focus-shadow: none !default;
+$kendo-window-focus-shadow: 0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent) !default;
 
 /// The background color of the Window titlebar.
 /// @group window

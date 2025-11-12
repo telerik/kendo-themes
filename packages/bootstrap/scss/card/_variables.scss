@@ -61,7 +61,7 @@ $kendo-card-focus-border: k-color(primary-emphasis) !default;
 
 /// The shadow of the focused Card.
 /// @group card
-$kendo-card-focus-shadow: 0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent) !default;
+$kendo-card-focus-shadow: 0 0 0 .25rem color-mix(in srgb, k-color(on-app-surface) 25%, transparent) !default;
 
 /// The horizontal padding of the Card header.
 /// @group card

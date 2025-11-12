@@ -84,7 +84,7 @@ $kendo-slider-draghandle-pressed-gradient: null !default;
 
 /// The shadow of the focused Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-focus-shadow: 0 0 0 3px color-mix(in srgb, k-color(primary) 50%, transparent) !default;
+$kendo-slider-draghandle-focus-shadow: 0 0 0 .25rem color-mix(in srgb, k-color(primary) 50%, transparent) !default;
 
 /// The transition speed of the Slider.
 /// @group slider

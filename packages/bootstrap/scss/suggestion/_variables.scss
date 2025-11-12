@@ -62,7 +62,7 @@ $kendo-suggestion-focus-shadow-blur: 0 !default;
 $kendo-suggestion-focus-shadow-spread: 2px !default;
 /// The shadow color of the focused Suggestion.
 /// @group suggestion
-$kendo-suggestion-focus-shadow-color: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
+$kendo-suggestion-focus-shadow-color: color-mix(in srgb, k-color(base-on-subtle) 25%, transparent) !default;
 
 /// The theme colors map of the Suggestion.
 /// @group suggestion
