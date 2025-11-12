@@ -966,7 +966,7 @@ The following table lists the available variables for customization.
     <td>$kendo-grid-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-table-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-inverse, #212529) 8%, transparent))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Grid.</div></div>

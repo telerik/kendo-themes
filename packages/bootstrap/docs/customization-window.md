@@ -259,9 +259,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-window-focus-shadow</td>
-    <td>String</td>
-    <td><code>none</code></td>
-    <td><code>none</code></td>
+    <td>List</td>
+    <td><code>0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Window.</div></div>
