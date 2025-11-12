@@ -103,7 +103,7 @@ $kendo-upload-error-bg: k-color(error) !default;
 
 /// The shadow of the focused Upload button, actions and uploaded items.
 /// @group upload
-$kendo-upload-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(inverse) 13%, transparent) !default;
+$kendo-upload-focus-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(primary) 25%, transparent) !default;
 
 /// The margin of the Upload list.
 /// @group upload

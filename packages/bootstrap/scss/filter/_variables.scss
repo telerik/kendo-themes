@@ -29,7 +29,7 @@ $kendo-filter-preview-operator-text: k-color(on-app-surface)  !default;
 
 /// The box shadow of the focused Filter toolbar.
 /// @group filter
-$kendo-filter-toolbar-focus-shadow: 0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent) !default;
+$kendo-filter-toolbar-focus-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(primary) 25%, transparent) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/filter/_variables.scss" with (

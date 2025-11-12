@@ -108,7 +108,7 @@ $kendo-drawer-hover-text: k-color(on-app-surface) !default;
 $kendo-drawer-focus-bg: k-color(base-subtle-hover) !default;
 /// The box shadow of the focused Drawer item.
 /// @group drawer
-$kendo-drawer-focus-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(inverse) 15%, transparent) !default;
+$kendo-drawer-focus-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 25%, transparent) !default;
 
 /// The background color of the selected Drawer item.
 /// @group drawer
