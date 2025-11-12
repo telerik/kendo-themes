@@ -157,7 +157,7 @@ $kendo-chat-alt-bubble-focus-bg: $kendo-chat-alt-bubble-bg !default;
 $kendo-chat-alt-bubble-focus-border: $kendo-chat-alt-bubble-focus-bg !default;
 /// The box shadow of the focused alt Bubble.
 /// @group bubble
-$kendo-chat-alt-bubble-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(primary) 16%, transparent) !default;
+$kendo-chat-alt-bubble-focus-shadow: 0 0 0 .25rem color-mix(in srgb, currentColor 25%, transparent) !default;
 
 /// The color of the typing indicator dots.
 /// @group chat
