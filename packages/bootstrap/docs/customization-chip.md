@@ -285,8 +285,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px rgba( $kendo-chip-base-bg, .16 )</code></td>
-    <td><code>(0 0 0 2px rgba(var(--kendo-color-base-subtle, #e9ecef), 0.16))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(base-on-surface) 50%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-base-on-surface, #212529) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the solid Chip.</div></div>
@@ -355,8 +355,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(base) 16%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-base, #dee2e6) 16%, transparent))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(base-on-surface) 50%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-base-on-surface, #212529) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the outline Chip.</div></div>
