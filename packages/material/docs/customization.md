@@ -9726,8 +9726,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-editor-color-gradient-focus-outline-color</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(dark) 30%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-dark, #322F35) 30%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 30%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #1D1B20) 30%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ColorGradient.</div></div>
@@ -9746,8 +9746,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-editor-color-gradient-focus-outline-offset</td>
     <td>Number</td>
-    <td><code>2px</code></td>
-    <td><code>2px</code></td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ColorGradient.</div></div>
