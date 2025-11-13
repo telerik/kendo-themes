@@ -16,6 +16,9 @@
 // Radii
 @use "./border-radii/_index.scss" as *;
 
+// Focus indicator
+@use "./focus-indicator/index.scss" as *;
+
 @use "./motion/_index.scss" as *;
 
 @forward "@progress/kendo-theme-core/scss/index.scss" with (
@@ -44,6 +47,9 @@
     $default-border-radii: $kendo-border-radii,
     $kendo-border-radii: $kendo-border-radii !default,
     $kendo-transition: $kendo-transition !default,
+    // Focus indicator
+    $default-focus-indicator: $kendo-focus-indicator,
+    $kendo-focus-indicator: $kendo-focus-indicator !default,
 );
 
 // Global disabled styles

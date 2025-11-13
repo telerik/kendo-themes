@@ -1,0 +1,33 @@
+@use "sass:map";
+
+$_default-focus-indicator: (
+    border: (
+        width: 1px,
+        style: solid
+    ),
+    outline: (
+        inner-thin: (
+            width: 2px,
+            style: solid,
+            offset: -2px
+        ),
+        inner-deep: (
+            width: 1px,
+            style: solid,
+            offset: -3px
+        ),
+        edge: (
+            width: 2px,
+            style: solid,
+            offset: 0
+        ),
+        thick: (
+            width: 2px,
+            style: solid,
+            offset: 2px
+        )
+    )
+) !default;
+
+$kendo-focus-indicator: $_default-focus-indicator !default;
+$kendo-focus-indicator: map.merge($_default-focus-indicator, $kendo-focus-indicator);

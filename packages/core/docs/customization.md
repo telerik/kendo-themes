@@ -642,6 +642,107 @@ k-rgba-to-mix($color, $bg) // => Color
 }
 ```
 
+### `build-shadow-value`
+
+Helper function to convert structured shadow format to CSS box-shadow value
+
+
+#### Syntax
+
+```scss
+build-shadow-value() // => 
+```
+
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/focus-indicator/index.scss#L38-L55
+@function build-shadow-value() {
+    @if not $shadow-config {
+        @return null;
+    }
+
+    $offset-x: map.get($shadow-config, offset-x);
+    $offset-y: map.get($shadow-config, offset-y);
+    $blur: if(map.has-key($shadow-config, blur), map.get($shadow-config, blur), 0);
+    $spread: map.get($shadow-config, spread);
+    $width: map.get($shadow-config, width);
+    $inset: if(map.has-key($shadow-config, inset) and map.get($shadow-config, inset), inset, null);
+
+    @if $inset {
+        @return $inset $offset-x $offset-y $blur ($spread + $width);
+    } @else {
+        @return $offset-x $offset-y $blur ($spread + $width);
+    }
+}
+```
+
+### `build-border-value`
+
+Helper function to convert structured border format to CSS border value
+
+
+#### Syntax
+
+```scss
+build-border-value() // => 
+```
+
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/focus-indicator/index.scss#L58-L67
+@function build-border-value() {
+    @if not $border-config {
+        @return null;
+    }
+
+    $width: map.get($border-config, width);
+    $style: map.get($border-config, style);
+
+    @return $width $style;
+}
+```
+
+### `build-outline-value`
+
+Helper function to convert structured outline format to CSS outline value
+
+
+#### Syntax
+
+```scss
+build-outline-value() // => 
+```
+
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/focus-indicator/index.scss#L70-L79
+@function build-outline-value() {
+    @if not $outline-config {
+        @return null;
+    }
+
+    $width: map.get($outline-config, width);
+    $style: map.get($outline-config, style);
+
+    @return $width $style;
+}
+```
+
 ### `k-color-red`
 
 Returns the red channel of a color.
@@ -3356,6 +3457,66 @@ The following table lists the available variables for customizing the Theme Core
 </tbody>
 </table>
 
+### FocusIndicator
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$default-focus-indicator</td>
+    <td>Map</td>
+    <td><code>(
+    shadow: (
+        outset: (
+            offset-x: 0,
+            offset-y: 0,
+            spread: 0,
+            width: 2px
+        ),
+        inset: (
+            inset: true,
+            offset-x: 0,
+            offset-y: 0,
+            spread: 0,
+            width: 2px
+        )
+    ),
+    border: (
+        width: 2px,
+        style: solid
+    )
+)</code></td>
+    <td><ul><li>shadow: "outset":{"offset-x":0,"offset-y":0,"spread":0,"width":"2px"},"inset":{"inset":true,"offset-x":0,"offset-y":0,"spread":0,"width":"2px"}</li><li>border: "width":"2px","style":"solid"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus indicator patterns with structure but no colors.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-focus-indicator</td>
+    <td>Map</td>
+    <td><code>$default-focus-indicator</code></td>
+    <td><ul><li>shadow: "outset":{"offset-x":0,"offset-y":0,"spread":0,"width":"2px"},"inset":{"inset":true,"offset-x":0,"offset-y":0,"spread":0,"width":"2px"}</li><li>border: "width":"2px","style":"solid"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global focus indicator patterns map.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Palette
 
 <table class="theme-variables">
@@ -3963,6 +4124,155 @@ The following table lists the available variables for customizing the Theme Core
 ## Mixins
 
 
+
+### `focus-indicator-shadow`
+
+Generate a shadow focus indicator with optional variant support.
+
+
+#### Syntax
+
+```scss
+@include focus-indicator-shadow();
+```
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/focus-indicator/index.scss#L93-L105
+@mixin focus-indicator-shadow() {
+    $shadow-group: map.get($kendo-focus-indicator, shadow);
+    $shadow-config: null;
+
+    @if $shadow-group {
+        $shadow-config: if($variant, map.get($shadow-group, $variant), $shadow-group);
+    }
+
+    $shadow-value: build-shadow-value($shadow-config);
+    @if $shadow-value {
+        box-shadow: #{$shadow-value} #{$color};
+    }
+}
+```
+
+### `focus-indicator-outline`
+
+Generate an outline focus indicator with variant support.
+
+
+#### Syntax
+
+```scss
+@include focus-indicator-outline();
+```
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/focus-indicator/index.scss#L109-L119
+@mixin focus-indicator-outline() {
+    $outline-group: map.get($kendo-focus-indicator, outline);
+    $outline-config: if($outline-group, map.get($outline-group, $variant), null);
+
+    @if $outline-config {
+        $width: map.get($outline-config, width);
+        $style: map.get($outline-config, style);
+        outline: #{$width} #{$style} #{$color};
+        outline-offset: map.get($outline-config, offset);
+    }
+}
+```
+
+### `focus-indicator-background`
+
+Generate a background focus indicator.
+
+
+#### Syntax
+
+```scss
+@include focus-indicator-background();
+```
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/focus-indicator/index.scss#L123-L129
+@mixin focus-indicator-background() {
+    $bg-config: map.get($kendo-focus-indicator, background);
+
+    @if $bg-config {
+        background: $color;
+    }
+}
+```
+
+### `focus-indicator-border`
+
+Generate a border focus indicator.
+
+
+#### Syntax
+
+```scss
+@include focus-indicator-border();
+```
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/focus-indicator/index.scss#L133-L139
+@mixin focus-indicator-border() {
+    $border-config: map.get($kendo-focus-indicator, border);
+    $border-value: build-border-value($border-config);
+    @if $border-value {
+        border: #{$border-value} #{$color};
+    }
+}
+```
+
+### `kendo-focus-indicator--styles`
+
+Generate CSS custom properties for all focus indicator patterns.
+
+
+#### Syntax
+
+```scss
+@include kendo-focus-indicator--styles();
+```
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/focus-indicator/index.scss#L143-L168
+@mixin kendo-focus-indicator--styles() {
+    :root {
+        @each $pattern-name, $pattern-config in $kendo-focus-indicator {
+            @if $pattern-config and ($pattern-name == "shadow" or $pattern-name == "shadow-inset" or $pattern-name == "shadow-rem") {
+                $shadow-value: build-shadow-value($pattern-config);
+                @if $shadow-value {
+                    --kendo-focus-indicator-#{$pattern-name}: #{$shadow-value} currentColor;
+                }
+            } @else if $pattern-config and $pattern-name == "border" {
+                $border-value: build-border-value($pattern-config);
+                @if $border-value {
+                    --kendo-focus-indicator-#{$pattern-name}: #{$border-value} currentColor;
+                }
+            } @else if $pattern-config and map.has-key($pattern-config, "width") and map.has-key($pattern-config, "style") {
+                // Handle outline patterns that have width/style/offset
+                --kendo-focus-indicator-#{$pattern-name}: #{map.get($pattern-config, width)} #{map.get($pattern-config, style)};
+                @if map.has-key($pattern-config, "offset") {
+                    --kendo-focus-indicator-#{$pattern-name}-offset: #{map.get($pattern-config, offset)};
+                }
+            } @else if $pattern-config {
+                // Handle other pattern types (background, etc.)
+                --kendo-focus-indicator-#{$pattern-name}: currentColor;
+            }
+        }
+    }
+}
+```
 
 ### `import-once`
 

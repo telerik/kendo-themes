@@ -13,6 +13,9 @@
 // Radii
 @use "./border-radii/index.scss" as *;
 
+// Focus indicator
+@use "./focus-indicator/index.scss" as *;
+
 // Variables
 @forward "../_variables.scss";
 
@@ -45,6 +48,9 @@
     // Spacing
     $default-spacing: $kendo-spacing,
     $kendo-spacing: $kendo-spacing !default,
+    // Focus indicator
+    $default-focus-indicator: $kendo-focus-indicator,
+    $kendo-focus-indicator: $kendo-focus-indicator !default,
 );
 
 // Global disabled styles
