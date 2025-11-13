@@ -341,7 +341,7 @@ The following table lists the available variables for customization.
     <td>$kendo-drawer-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Drawer item.</div></div>

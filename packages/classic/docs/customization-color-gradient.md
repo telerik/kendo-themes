@@ -269,9 +269,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3, 0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
+    <td>List</td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient.</div></div>
@@ -559,9 +559,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(2)</code></td>
-    <td><code>var(--kendo-elevation-2, 0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
+    <td>List</td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(dark) 25%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-dark, #404040) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>
