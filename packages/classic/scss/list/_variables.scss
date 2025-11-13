@@ -365,7 +365,7 @@ $kendo-list-item-focus-bg: null !default;
 $kendo-list-item-focus-text: null !default;
 /// The box shadow of the focused List items.
 /// @group list
-$kendo-list-item-focus-shadow: inset 0 0 0 2px k-color(border-alt) !default;
+$kendo-list-item-focus-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent) !default;
 
 /// The background color of the selected List items.
 /// @group list
