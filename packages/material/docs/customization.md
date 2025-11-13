@@ -24733,6 +24733,16 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
+    <td>$kendo-picker-flat-hover-border</td>
+    <td>String</td>
+    <td><code>$kendo-picker-hover-border</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat hovered Picker components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-picker-flat-focus-bg</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -24800,36 +24810,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat hovered and focused Picker components.</div></div>
-    </td>
-</tr>
-</tbody>
-</table>
-
-### Pickers
-
-<table class="theme-variables">
-    <colgroup>
-    <col style="width: 200px; white-space:nowrap;" />
-    <col />
-    <col />
-    <col />
-</colgroup>
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Default value</th>
-        <th>Computed value</th>
-    </tr>
-</thead>
-<tbody><tr>
-    <td>$kendo-picker-flat-hover-border</td>
-    <td>String</td>
-    <td><code>$kendo-picker-hover-border</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat hovered Picker components.</div></div>
     </td>
 </tr>
 </tbody>
