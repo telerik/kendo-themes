@@ -146,7 +146,7 @@ $kendo-treeview-item-selected-gradient: null !default;
 
 /// The box shadow of focused TreeView items.
 /// @group treeview
-$kendo-treeview-item-focus-shadow: inset 0 0 2px 0 k-color(border) !default;
+$kendo-treeview-item-focus-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent) !default;
 
 /// The border color of the Load More button in the TreeView.
 /// @group treeview
