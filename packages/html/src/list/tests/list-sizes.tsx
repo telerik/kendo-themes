@@ -1,4 +1,4 @@
-import { List, ListNormal, ListWithGrouping, AngularListWithGrouping } from '../../list';
+import { List, ListNormal, ListWithGrouping, ListWithGroupingModern } from '../../list';
 
 export default () =>(
     <>
@@ -18,7 +18,7 @@ export default () =>(
 
             <span className="k-colspan-all k-col-span-full">angular grouping</span>
             { List.options.size.map((size) => (
-                <AngularListWithGrouping size={size} ></AngularListWithGrouping>
+                <ListWithGroupingModern size={size} ></ListWithGroupingModern>
             ))}
         </div>
     </>

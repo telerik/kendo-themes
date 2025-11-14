@@ -1,3 +1,3 @@
-import { ListAngular } from "../../list";
+// import { ListAngular } from "../../list";
 
-export const AngularListVirtualization = (props) => <ListAngular virtualization {...props} />;
+// export const AngularListVirtualization = (props) => <ListAngular virtualization {...props} />;
