@@ -11303,11 +11303,11 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-daterange-picker-width</td>
     <td>String</td>
-    <td><code>var( --kendo-input-width, #{$kendo-input-width} )</code></td>
-    <td><code>var(--kendo-input-width, var(--kendo-input-width, 100%))</code></td>
+    <td><code>auto</code></td>
+    <td><code>auto</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DateRangePicker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DateRangePicker component.</div></div>
     </td>
 </tr>
 <tr>
