@@ -1,5 +1,6 @@
 // Dependencies
 @use "../core/_index.scss" as *;
+@use "../button/_index.scss" as *;
 @use "../icons/_index.scss" as *;
 @use "../utils/_index.scss" as *;
 @use "../action-buttons/_index.scss" as *;
@@ -14,6 +15,7 @@
 @mixin kendo-card--styles() {
     @include import-once( "card" ) {
         @include core-styles();
+        @include kendo-button--styles();
         @include kendo-action-buttons--styles();
         @include kendo-icon--styles();
         @include kendo-typography--styles();

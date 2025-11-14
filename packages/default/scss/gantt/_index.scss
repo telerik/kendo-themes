@@ -1,5 +1,9 @@
 // Dependencies
 @use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../toolbar/_index.scss" as *;
+@use "../grid/_index.scss" as *;
+@use "../table/_index.scss" as *;
 @use "../utils/_index.scss" as *;
 @use "../button/_index.scss" as *;
 @use "../input/_index.scss" as *;
@@ -20,6 +24,10 @@
 @mixin kendo-gantt--styles() {
     @include import-once( "gantt" ) {
         @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-toolbar--styles();
+        @include kendo-grid--styles();
+        @include kendo-table--styles();
         @include kendo-button--styles();
         @include kendo-input--styles();
         @include kendo-validator--styles();

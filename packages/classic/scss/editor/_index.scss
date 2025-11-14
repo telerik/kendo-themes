@@ -1,5 +1,6 @@
 // Dependencies
 @use "../core/_index.scss" as *;
+@use "../input/_index.scss" as *;
 @use "../button/_index.scss" as *;
 @use "../checkbox/_index.scss" as *;
 @use "../colorpicker/_index.scss" as *;
@@ -18,6 +19,7 @@
 @mixin kendo-editor--styles() {
     @include import-once( "editor" ) {
         @include core-styles();
+        @include kendo-input--styles();
         @include kendo-button--styles();
         @include kendo-checkbox--styles();
         @include kendo-color-picker--styles();
