@@ -24,6 +24,12 @@
         &.k-hover {
             cursor: pointer;
         }
+
+        &:focus,
+        &:focus-visible,
+        &.k-focus {
+            outline: none;
+        }
     }
 
     .k-bubble-expandable {
