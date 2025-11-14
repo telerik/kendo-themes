@@ -125,16 +125,6 @@
         .k-slider-thumb-end {
             inset-inline-start: calc( var( --kendo-slider-end, 0) * 1% );
         }
-
-        // Transitions
-        &.k-slider-transitions {
-            .k-slider-selection {
-                transition: width $kendo-slider-transition-speed $kendo-slider-transition-function;
-            }
-            .k-slider-thumb {
-                transition: inset-inline-start $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-transition-speed $kendo-slider-transition-function, transform $kendo-slider-thumb-transition-speed $kendo-slider-thumb-transition-function;
-            }
-        }
     }
 
     // Aliases - fluent specific thumb classes

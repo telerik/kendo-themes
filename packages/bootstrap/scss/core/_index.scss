@@ -13,6 +13,9 @@
 // Radii
 @use "./border-radii/index.scss" as *;
 
+// Motion
+@use "./motion/index.scss" as *;
+
 @forward "../_variables.scss";
 
 // Variables
@@ -44,6 +47,15 @@
     // Spacing
     $default-spacing: $kendo-spacing,
     $kendo-spacing: $kendo-spacing !default,
+    // Motion
+    $default-easings: $kendo-easings,
+    $kendo-easings: $kendo-easings !default,
+
+    $default-durations: $kendo-durations,
+    $kendo-durations: $kendo-durations !default,
+
+    $default-transitions: $kendo-transitions,
+    $kendo-transitions: $kendo-transitions !default,
 );
 
 // Global disabled styles

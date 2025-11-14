@@ -5,6 +5,7 @@
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "../../z-index/index.scss" as *;
+@use "../../motion/index.scss" as *;
 
 @mixin kendo-input--layout-base() {
 
@@ -34,6 +35,8 @@
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-appearance: none;
+
+        transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid), opacity k-transition(rapid);
 
         *,
         *::before,

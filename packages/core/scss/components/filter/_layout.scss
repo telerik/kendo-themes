@@ -1,4 +1,5 @@
 @use "./variables.scss" as *;
+@use "../../motion/index.scss" as *;
 
 @mixin kendo-filter--layout-base() {
 
@@ -49,6 +50,7 @@
 
             .k-toolbar {
                 border-style: solid;
+                transition: box-shadow k-transition(snappy);
             }
         }
         .k-filter-operator .k-dropdown-list {

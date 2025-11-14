@@ -1,6 +1,7 @@
 @use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../../z-index/index.scss" as *;
+@use "../../motion/index.scss" as *;
 
 @mixin kendo-action-sheet--layout-base() {
 
@@ -160,6 +161,7 @@
         display: flex;
         flex-flow: row nowrap;
         outline: none;
+        transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid);
     }
     .k-actionsheet-action {
         margin: 0;

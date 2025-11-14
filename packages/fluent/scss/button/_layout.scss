@@ -116,7 +116,7 @@
             inset-block-start: calc(-1 * #{$kendo-button-border-width});
             inset-block-end: calc(-1 * #{$kendo-button-border-width});
             z-index: k-z-index("base");
-            transition: opacity .2s ease-in-out;
+            transition: opacity k-transition(rapid);
         }
 
         // Hovered state

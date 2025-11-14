@@ -1,17 +1,11 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
-@use "../core/motion/index.scss" as *;
 @use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/input/_layout.scss" as *;
 
 @mixin kendo-input--layout() {
 
     @include kendo-input--layout-base();
-
-    // Input, Textbox
-    .k-textbox {
-        transition: $kendo-transition;
-    }
 
      // Sizing
     @each $size, $size-props in $kendo-input-sizes {

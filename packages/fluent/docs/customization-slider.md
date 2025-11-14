@@ -390,8 +390,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-transition-speed</td>
     <td>String</td>
-    <td><code>var( --kendo-slider-transition-speed, .3s )</code></td>
-    <td><code>var(--kendo-slider-transition-speed, 0.3s)</code></td>
+    <td><code>var( --kendo-slider-transition-speed, k-duration(brisk) )</code></td>
+    <td><code>var(--kendo-slider-transition-speed, var(--kendo-duration-brisk, 350ms))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the Slider.</div></div>
@@ -400,8 +400,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-transition-function</td>
     <td>String</td>
-    <td><code>var( --kendo-slider-transition-function, ease-out )</code></td>
-    <td><code>var(--kendo-slider-transition-function, ease-out)</code></td>
+    <td><code>var( --kendo-slider-transition-function, k-easing(standard) )</code></td>
+    <td><code>var(--kendo-slider-transition-function, var(--kendo-easing-standard, cubic-bezier(0.42, 0, 0.58, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the Slider.</div></div>
@@ -410,8 +410,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-thumb-transition-speed</td>
     <td>String</td>
-    <td><code>var( --kendo-slider-thumb-transition-speed, .4s )</code></td>
-    <td><code>var(--kendo-slider-thumb-transition-speed, 0.4s)</code></td>
+    <td><code>var( --kendo-slider-thumb-transition-speed, k-duration(quick) )</code></td>
+    <td><code>var(--kendo-slider-thumb-transition-speed, var(--kendo-duration-quick, 150ms))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the Slider thumb.</div></div>
@@ -420,8 +420,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-thumb-transition-function</td>
     <td>String</td>
-    <td><code>var( --kendo-slider-thumb-transition-function, cubic-bezier(.25, .8, .25, 1) )</code></td>
-    <td><code>var(--kendo-slider-thumb-transition-function, cubic-bezier(0.25, 0.8, 0.25, 1))</code></td>
+    <td><code>var( --kendo-slider-thumb-transition-function, k-easing(decelerate) )</code></td>
+    <td><code>var(--kendo-slider-thumb-transition-function, var(--kendo-easing-decelerate, cubic-bezier(0, 0, 0.58, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the Slider thumb.</div></div>

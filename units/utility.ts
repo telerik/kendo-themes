@@ -38,6 +38,42 @@ function compileSassString(sassString: string): string {
         loadPaths: [themeScssDir, nodeModulesDir],
     }).css;
 }
+
+function generateTestValues(obj: Record<string, any>, prefix: string, path: string = ""): any {
+    const result: Record<string, any> = {};
+    for (const [key, value] of Object.entries(obj)) {
+        const currentPath = path ? `${path}-${key}` : key;
+        if (typeof value === 'object' && value !== null) {
+            result[key] = generateTestValues(value, prefix, currentPath);
+        } else {
+            result[key] = `test-${prefix}-${currentPath}`;
+        }
+    }
+    return result;
+}
+
+function toScssMap(obj: Record<string, any>, indent: number = 4): string {
+    const spaces = ' '.repeat(indent);
+    const entries = Object.entries(obj).map(([key, value]) => {
+        if (typeof value === 'object' && value !== null) {
+            return `${spaces}${key}: (\n${toScssMap(value, indent + 4)}\n${spaces})`;
+        }
+        return `${spaces}${key}: '${value}'`;
+    });
+    return entries.join(',\n');
+}
+
+function getAllValues(obj: Record<string, any>): string[] {
+    const values: string[] = [];
+    for (const value of Object.values(obj)) {
+        if (typeof value === 'object' && value !== null) {
+            values.push(...getAllValues(value));
+        } else {
+            values.push(value);
+        }
+    }
+    return values;
+}
 // #endregion
 
 /**
@@ -53,7 +89,7 @@ function testKendoModule(
     cssVariablePrefix: string,
     testCustomizations: boolean = true
 ): void {
-    let uniqueValues: Record<string, string>;
+    let uniqueValues: Record<string, any>;
     let configuration = "";
 
     if (testCustomizations) {
@@ -67,15 +103,13 @@ function testKendoModule(
             throw new Error(`Module variable "${map}" has no prettyValue`);
         }
 
-        uniqueValues = Object.fromEntries(
-            Object.entries(modulePrettyValue).map(([key]) => [key, `test-${module}-${key.toString()}`])
-        );
+        // Generate nested test values
+        uniqueValues = generateTestValues(modulePrettyValue, module);
 
+        // Convert to SCSS map syntax
         const customizations = `
             $${map}: (
-                ${Object.entries(uniqueValues)
-                    .map(([key, value]) => `${key}: '${value}',`)
-                    .join("\n")}
+                ${toScssMap(uniqueValues)}
             )`;
 
         configuration = ` with (${customizations})`;
@@ -96,11 +130,12 @@ function testKendoModule(
 
         testCustomizations &&
             it("should compile with map customizations", () => {
-                Object.entries(uniqueValues).forEach(([property, value]) => {
+                const allValues = getAllValues(uniqueValues);
+                allValues.forEach((value) => {
                     try {
-                        expect(result).toContain(`${value};`);
+                        expect(result).toContain(value);
                     } catch {
-                        throw new Error(`Missing value for "$${property}": expected "${value}" in the result.`);
+                        throw new Error(`Missing expected value "${value}" in the result.`);
                     }
                 });
             });

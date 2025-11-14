@@ -1,5 +1,6 @@
 @use "../../mixins/index.scss" as *;
 @use "../../functions/index.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "../../color-system/_constants.scss" as *;
 @use "../../color-system/_functions.scss" as *;
 @use "../../_variables.scss" as *;
@@ -49,7 +50,7 @@
 
     .k-circular-progressbar-arc {
         stroke: $kendo-circular-progressbar-arc-stroke;
-        transition: stroke .5s ease;
+        transition: stroke k-transition(smooth);
     }
 
 }

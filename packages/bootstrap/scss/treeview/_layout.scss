@@ -1,19 +1,7 @@
 @use "../core/_index.scss" as *;
-@use "../core/motion/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/treeview/_layout.scss" as *;
 
 
 @mixin kendo-treeview--layout() {
-
     @include kendo-treeview--layout-base();
-
-    // Treeview
-    .k-treeview {}
-
-
-    // Treeview leaf
-    .k-treeview-leaf {
-        transition: $kendo-transition;
-    }
-
 }

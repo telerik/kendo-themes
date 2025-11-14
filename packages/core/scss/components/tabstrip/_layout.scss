@@ -4,6 +4,7 @@
 @use "../icons/_variables.scss" as *;
 @use "./_variables.scss" as *;
 @use "../../z-index/index.scss" as *;
+@use "../../motion/index.scss" as *;
 
 @mixin kendo-tabstrip--layout-base() {
 
@@ -81,6 +82,7 @@
             align-items: stretch;
             justify-items: stretch;
             outline: 0;
+            transition: color k-transition(emphasis), border-color k-transition(emphasis), box-shadow k-transition(emphasis), background-color k-transition(emphasis), font-weight k-transition(emphasis);
 
             // Active state
             &:active,
@@ -162,7 +164,7 @@
         position: absolute;
         inset-block-start: 0;
         inset-inline-start: 0;
-        transition: width .2s linear;
+        transition: width k-duration(rapid) k-easing(linear);
 
         // TODO: a better name
         display: none;
