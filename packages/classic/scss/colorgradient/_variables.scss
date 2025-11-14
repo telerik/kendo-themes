@@ -82,7 +82,7 @@ $kendo-color-gradient-lg-gap: k-spacing(4.5) !default;
 $kendo-color-gradient-focus-border: null !default;
 /// The box shadow of the focused ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-focus-shadow: k-elevation(3) !default;
+$kendo-color-gradient-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent) !default;
 
 /// The border radius of the ColorGradient canvas.
 /// @group color-gradient
@@ -175,7 +175,7 @@ $kendo-color-gradient-draghandle-focus-shadow: $kendo-color-black !default;
 $kendo-color-gradient-draghandle-hover-shadow: $kendo-color-black !default;
 /// The box shadow of the ColorGradient canvas drag handle.
 /// @group color-gradient
-$kendo-color-gradient-draghandle-shadow: k-elevation(2) !default;
+$kendo-color-gradient-draghandle-shadow: 0 0 0 2px color-mix(in srgb, k-color(dark) 25%, transparent) !default;
 
 /// The vertical margin of the ColorGradient canvas drag handle.
 /// @group color-gradient

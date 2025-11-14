@@ -132,10 +132,10 @@ $kendo-input-focus-bg: null !default;
 $kendo-input-focus-text: null !default;
 /// The border color of the focused Input components.
 /// @group input
-$kendo-input-focus-border: rgba( black, .1 ) !default;
+$kendo-input-focus-border: $kendo-input-border !default;
 /// The shadow of the focused Input components.
 /// @group input
-$kendo-input-focus-shadow: 0 2px 4px 0 rgba( black, .03 ), 0 4px 5px 0 rgba( black, .04 ) !default;
+$kendo-input-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent) !default;
 
 /// The background color of the disabled Input components.
 /// @group input

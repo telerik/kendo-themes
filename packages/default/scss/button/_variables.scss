@@ -179,7 +179,7 @@ $kendo-button-selected-shadow: $kendo-button-active-shadow !default;
 
 /// The base shadow of the focused Button.
 /// @group button
-$kendo-button-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
+$kendo-button-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent) !default;
 
 /// The base background of the disabled Button.
 /// @group button

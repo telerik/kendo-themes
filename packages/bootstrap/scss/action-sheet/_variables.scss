@@ -185,7 +185,7 @@ $kendo-actionsheet-item-focus-border: null !default;
 $kendo-actionsheet-item-focus-gradient: null !default;
 /// The shadow of the focused ActionSheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-focus-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(inverse) 13%, transparent) !default;
+$kendo-actionsheet-item-focus-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(primary) 25%, transparent) !default;
 
 /// The background color of the disabled ActionSheet item.
 /// @group action-sheet

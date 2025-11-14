@@ -59,7 +59,7 @@ $kendo-listview-item-focus-bg: null !default;
 $kendo-listview-item-focus-border: null !default;
 /// The box shadow of the focused ListView items.
 /// @group listview
-$kendo-listview-item-focus-shadow: inset 0 0 0 2px k-color(border-alt) !default;
+$kendo-listview-item-focus-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/listview/_variables.scss" with (
     $kendo-listview-padding-x: $kendo-listview-padding-x,
