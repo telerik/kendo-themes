@@ -1,4 +1,4 @@
-import { ListWithGrouping, VirtualListWithGrouping, ListWithGroupingModern, VirtualListWithGroupingModern } from '../../list';
+import { ListWithGrouping, VirtualListWithGrouping, ListWithGroupingModern, VirtualListWithGroupingModern, ListWithGroupingAccessible, VirtualListWithGroupingAccessible } from '../../list';
 
 const style = `
     .k-virtual-list > .k-item,
@@ -34,10 +34,10 @@ export default () =>(
                 <VirtualListWithGrouping></VirtualListWithGrouping>
             </section>
 
-            <span>Angular</span>
-            <span>Angular virtual</span>
-            <span>Angular (rtl)</span>
-            <span>Angular virtual (rtl)</span>
+            <span>Modern</span>
+            <span>Modern virtual</span>
+            <span>Modern (rtl)</span>
+            <span>Modern virtual (rtl)</span>
 
             <section>
                 <ListWithGroupingModern></ListWithGroupingModern>
@@ -53,6 +53,27 @@ export default () =>(
 
             <section dir="rtl">
                 <VirtualListWithGroupingModern></VirtualListWithGroupingModern>
+            </section>
+
+            <span>Accessible</span>
+            <span>Accessible virtual</span>
+            <span>Accessible (rtl)</span>
+            <span>Accessible virtual (rtl)</span>
+
+            <section>
+                <ListWithGroupingAccessible></ListWithGroupingAccessible>
+            </section>
+
+            <section>
+                <VirtualListWithGroupingAccessible></VirtualListWithGroupingAccessible>
+            </section>
+
+            <section dir="rtl">
+                <ListWithGroupingAccessible></ListWithGroupingAccessible>
+            </section>
+
+            <section dir="rtl">
+                <VirtualListWithGroupingAccessible></VirtualListWithGroupingAccessible>
             </section>
         </div>
     </>
