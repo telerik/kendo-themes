@@ -76,7 +76,6 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
 
                         listChildren.push(
                             <ListItem
-                                className={index === 0 ? 'k-first' : ''}
                                 key={`groupLabel-${index}-${new Date().getTime()}`}
                                 {...optChild.props}
                                 groupLabel={groupLabel}

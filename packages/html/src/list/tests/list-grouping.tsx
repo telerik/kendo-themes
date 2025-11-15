@@ -1,4 +1,4 @@
-import { ListWithGrouping, VirtualListWithGrouping, AngularListWithGrouping, AngularVirtualListWithGrouping } from '../../list';
+import { ListWithGrouping, VirtualListWithGrouping, ListWithGroupingModern, VirtualListWithGroupingModern, ListWithGroupingAccessible, VirtualListWithGroupingAccessible } from '../../list';
 
 const style = `
     .k-virtual-list > .k-item,
@@ -34,25 +34,46 @@ export default () =>(
                 <VirtualListWithGrouping></VirtualListWithGrouping>
             </section>
 
-            <span>Angular</span>
-            <span>Angular virtual</span>
-            <span>Angular (rtl)</span>
-            <span>Angular virtual (rtl)</span>
+            <span>Modern</span>
+            <span>Modern virtual</span>
+            <span>Modern (rtl)</span>
+            <span>Modern virtual (rtl)</span>
 
             <section>
-                <AngularListWithGrouping></AngularListWithGrouping>
+                <ListWithGroupingModern></ListWithGroupingModern>
             </section>
 
             <section>
-                <AngularVirtualListWithGrouping></AngularVirtualListWithGrouping>
+                <VirtualListWithGroupingModern></VirtualListWithGroupingModern>
             </section>
 
             <section dir="rtl">
-                <AngularListWithGrouping></AngularListWithGrouping>
+                <ListWithGroupingModern></ListWithGroupingModern>
             </section>
 
             <section dir="rtl">
-                <AngularVirtualListWithGrouping></AngularVirtualListWithGrouping>
+                <VirtualListWithGroupingModern></VirtualListWithGroupingModern>
+            </section>
+
+            <span>Accessible</span>
+            <span>Accessible virtual</span>
+            <span>Accessible (rtl)</span>
+            <span>Accessible virtual (rtl)</span>
+
+            <section>
+                <ListWithGroupingAccessible></ListWithGroupingAccessible>
+            </section>
+
+            <section>
+                <VirtualListWithGroupingAccessible></VirtualListWithGroupingAccessible>
+            </section>
+
+            <section dir="rtl">
+                <ListWithGroupingAccessible></ListWithGroupingAccessible>
+            </section>
+
+            <section dir="rtl">
+                <VirtualListWithGroupingAccessible></VirtualListWithGroupingAccessible>
             </section>
         </div>
     </>
