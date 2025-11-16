@@ -1,5 +1,7 @@
 @use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
+
+@use "../core/focus-indicator/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/button/_theme.scss" as *;
 
 @mixin kendo-button--theme() {
@@ -21,9 +23,15 @@
             // Focus state
             &:focus,
             &.k-focus {
-                outline-color: if( $name == "base" or $name == "secondary", $kendo-button-focus-border, k-color(#{$name}));
-                box-shadow: inset 0 0 0 calc( #{$kendo-button-border-width} * 3 ) k-color(app-surface),
-                            inset 0 0 0 calc( #{$kendo-button-border-width} * 5 ) k-color(#{$name});
+                /*  outline-color: if( $name == "base" or $name == "secondary", $kendo-button-focus-border, k-color(#{$name}));
+                 box-shadow: inset 0 0 0 calc( #{$kendo-button-border-width} * 3 ) k-color(app-surface),
+                             inset 0 0 0 calc( #{$kendo-button-border-width} * 5 ) k-color(#{$name}); */
+
+
+                // @include focus-indicator-updated(outline, red);
+                // @include focus-indicator-background(lightGreen);
+                // @include focus-indicator-outline-4(green);
+                //  @include focus-indicator-outline-edge(red);
             }
 
             &:hover,
