@@ -1,2 +1,8 @@
 // Daterangepicker
+/// The width of the DateRangePicker component.
+/// @group date-range-picker
+$kendo-daterange-picker-width: null !default;
+
+/// The width of each input field within the DateRangePicker.
+/// @group date-range-picker
 $kendo-daterange-picker-input-width: null !default;
