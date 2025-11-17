@@ -111,7 +111,7 @@ import { Icon } from "../packages/html/src/icon/icon.spec";
 import { ImageEditor } from "../packages/html/src/imageeditor/imageeditor.spec";
 import { Input } from "../packages/html/src/input/input.spec";
 import { List } from "../packages/html/src/list/list.spec";
-import { ListAngular } from "../packages/html/src/list/list-angular.spec";
+import { ListAccessible } from "../packages/html/src/list/list-accessible.spec";
 import { ListContainer } from "../packages/html/src/list/list-container.spec";
 // import { ListItem } from "../packages/html/src/list/list-item.spec";
 import { ListBox } from "../packages/html/src/listbox/listbox.spec";
@@ -369,7 +369,7 @@ export const allComponents: SpecComponent[] = [
   ImageEditor,
   Input,
   List,
-  ListAngular,
+  ListAccessible,
   ListContainer,
   // ListItem, - SKIPPED, specificity error
   ListBox,
