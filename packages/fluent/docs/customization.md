@@ -3720,6 +3720,16 @@ The following table lists the available variables for customizing the Fluent the
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the disabled flat Button.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-button-transition</td>
+    <td>List</td>
+    <td><code>color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid), opacity k-transition(rapid)</code></td>
+    <td><code>(color var(--kendo-transition-rapid), background-color var(--kendo-transition-rapid), border-color var(--kendo-transition-rapid), box-shadow var(--kendo-transition-rapid), opacity var(--kendo-transition-rapid))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the Button.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -6288,8 +6298,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-tooltip-transition</td>
     <td>List</td>
-    <td><code>left ease-in 80ms, top ease-in 80ms</code></td>
-    <td><code>(left ease-in 80ms, top ease-in 80ms)</code></td>
+    <td><code>left k-transition(fade-in), top k-transition(fade-in)</code></td>
+    <td><code>(left var(--kendo-transition-fade-in), top var(--kendo-transition-fade-in))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the tooltip of the chart component.</div></div>
@@ -14921,8 +14931,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-floating-label-transition</td>
     <td>String</td>
-    <td><code>var(--kendo-floating-label-transition, .2s ease-out)</code></td>
-    <td><code>var(--kendo-floating-label-transition, 0.2s ease-out)</code></td>
+    <td><code>var(--kendo-floating-label-transition, k-transition(scale-in))</code></td>
+    <td><code>var(--kendo-floating-label-transition, var(--kendo-transition-scale-in))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the Floating Label.</div></div>
@@ -22981,6 +22991,91 @@ The following table lists the available variables for customizing the Fluent the
 </tbody>
 </table>
 
+### Motion
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-easings</td>
+    <td>Map</td>
+    <td><code>$default-easings</code></td>
+    <td><ul><li>linear: cubic-bezier(0, 0, 1, 1)</li><li>accelerate: cubic-bezier(0.42, 0, 1, 1)</li><li>decelerate: cubic-bezier(0, 0, 0.58, 1)</li><li>standard: cubic-bezier(0.42, 0, 0.58, 1)</li><li>sharp: cubic-bezier(0.75, 0, 0.25, 1)</li><li>bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55)</li><li>elastic: cubic-bezier(0.5, -0.5, 0.5, 1.5)</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global map of motion easing tokens.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-durations</td>
+    <td>Map</td>
+    <td><code>$default-durations</code></td>
+    <td><ul><li>instant: 0ms</li><li>immediate: 50ms</li><li>brief: 100ms</li><li>quick: 150ms</li><li>rapid: 200ms</li><li>swift: 250ms</li><li>speedy: 300ms</li><li>brisk: 350ms</li><li>prompt: 400ms</li><li>timely: 450ms</li><li>moderate: 500ms</li><li>measured: 550ms</li><li>steady: 600ms</li><li>leisurely: 700ms</li><li>slow: 800ms</li><li>languid: 900ms</li><li>sluggish: 1000ms</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global map of motion duration tokens.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-transitions</td>
+    <td>Map</td>
+    <td><code>$default-transitions</code></td>
+    <td><ul><li>instant: "duration":"var(--kendo-duration-instant)","easing":"var(--kendo-easing-linear)"</li><li>rapid: "duration":"var(--kendo-duration-quick)","easing":"var(--kendo-easing-decelerate)"</li><li>snappy: "duration":"var(--kendo-duration-swift)","easing":"var(--kendo-easing-decelerate)"</li><li>energetic: "duration":"var(--kendo-duration-swift)","easing":"var(--kendo-easing-elastic)"</li><li>bouncy: "duration":"var(--kendo-duration-speedy)","easing":"var(--kendo-easing-bounce)"</li><li>subtle: "duration":"var(--kendo-duration-brisk)","easing":"var(--kendo-easing-standard)"</li><li>gentle: "duration":"var(--kendo-duration-prompt)","easing":"var(--kendo-easing-accelerate)"</li><li>enter: "duration":"var(--kendo-duration-speedy)","easing":"var(--kendo-easing-decelerate)"</li><li>exit: "duration":"var(--kendo-duration-rapid)","easing":"var(--kendo-easing-accelerate)"</li><li>settle: "duration":"var(--kendo-duration-brisk)","easing":"var(--kendo-easing-decelerate)"</li><li>scale-out: "duration":"var(--kendo-duration-quick)","easing":"var(--kendo-easing-accelerate)"</li><li>scale-in: "duration":"var(--kendo-duration-rapid)","easing":"var(--kendo-easing-decelerate)"</li><li>fade-out: "duration":"var(--kendo-duration-rapid)","easing":"var(--kendo-easing-standard)"</li><li>fade-in: "duration":"var(--kendo-duration-swift)","easing":"var(--kendo-easing-standard)"</li><li>slide-out: "duration":"var(--kendo-duration-swift)","easing":"var(--kendo-easing-accelerate)"</li><li>slide-in: "duration":"var(--kendo-duration-speedy)","easing":"var(--kendo-easing-decelerate)"</li><li>emphasis: "duration":"var(--kendo-duration-quick)","easing":"var(--kendo-easing-sharp)"</li><li>collapse: "duration":"var(--kendo-duration-speedy)","easing":"var(--kendo-easing-accelerate)"</li><li>expand: "duration":"var(--kendo-duration-prompt)","easing":"var(--kendo-easing-standard)"</li><li>shrink: "duration":"var(--kendo-duration-brisk)","easing":"var(--kendo-easing-accelerate)"</li><li>grow: "duration":"var(--kendo-duration-prompt)","easing":"var(--kendo-easing-standard)"</li><li>pulse: "duration":"var(--kendo-duration-brisk)","easing":"var(--kendo-easing-standard)"</li><li>smooth: "duration":"var(--kendo-duration-moderate)","easing":"var(--kendo-easing-standard)"</li><li>flip: "duration":"var(--kendo-duration-measured)","easing":"var(--kendo-easing-standard)"</li><li>fluid: "duration":"var(--kendo-duration-steady)","easing":"var(--kendo-easing-standard)"</li><li>deliberate: "duration":"var(--kendo-duration-slow)","easing":"var(--kendo-easing-standard)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global map of motion transition tokens.</div></div>
+    </td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container">
+        <div><b>Groups</b><div class="theme-variables-description">The groups of the $kendo-transitions Map</div></div>
+    </td>
+</tr>
+<tr>
+    <td>Group</td>
+    <td colspan="2">Values</td>
+    <td>Description</td>
+</tr>
+<tr>
+    <td>fast</td>
+    <td colspan="2"> instant, rapid, snappy, energetic</td>
+    <td>Speed and Responsiveness</td>
+</tr>
+<tr>
+    <td>expressive</td>
+    <td colspan="2"> emphasis, bouncy, pulse, flip</td>
+    <td>Personality and Playfulness</td>
+</tr>
+<tr>
+    <td>calm</td>
+    <td colspan="2"> subtle, gentle, settle, smooth, fluid, deliberate</td>
+    <td>Subtle & Natural</td>
+</tr>
+<tr>
+    <td>visibility</td>
+    <td colspan="2"> slide-in, slide-out, fade-in, fade-out, enter, exit</td>
+    <td>Visibility & Movement Change</td>
+</tr>
+<tr>
+    <td>size</td>
+    <td colspan="2"> scale-in, scale-out, grow, shrink, expand, collapse</td>
+    <td>Size & Scale Adjustments</td>
+</tr>
+</tbody>
+</table>
+
 ### NoData
 
 <table class="theme-variables">
@@ -29869,8 +29964,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-transition-speed</td>
     <td>String</td>
-    <td><code>var( --kendo-slider-transition-speed, .3s )</code></td>
-    <td><code>var(--kendo-slider-transition-speed, 0.3s)</code></td>
+    <td><code>var( --kendo-slider-transition-speed, k-duration(brisk) )</code></td>
+    <td><code>var(--kendo-slider-transition-speed, var(--kendo-duration-brisk, 350ms))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the Slider.</div></div>
@@ -29879,8 +29974,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-transition-function</td>
     <td>String</td>
-    <td><code>var( --kendo-slider-transition-function, ease-out )</code></td>
-    <td><code>var(--kendo-slider-transition-function, ease-out)</code></td>
+    <td><code>var( --kendo-slider-transition-function, k-easing(standard) )</code></td>
+    <td><code>var(--kendo-slider-transition-function, var(--kendo-easing-standard, cubic-bezier(0.42, 0, 0.58, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the Slider.</div></div>
@@ -29889,8 +29984,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-thumb-transition-speed</td>
     <td>String</td>
-    <td><code>var( --kendo-slider-thumb-transition-speed, .4s )</code></td>
-    <td><code>var(--kendo-slider-thumb-transition-speed, 0.4s)</code></td>
+    <td><code>var( --kendo-slider-thumb-transition-speed, k-duration(quick) )</code></td>
+    <td><code>var(--kendo-slider-thumb-transition-speed, var(--kendo-duration-quick, 150ms))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the Slider thumb.</div></div>
@@ -29899,8 +29994,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-thumb-transition-function</td>
     <td>String</td>
-    <td><code>var( --kendo-slider-thumb-transition-function, cubic-bezier(.25, .8, .25, 1) )</code></td>
-    <td><code>var(--kendo-slider-thumb-transition-function, cubic-bezier(0.25, 0.8, 0.25, 1))</code></td>
+    <td><code>var( --kendo-slider-thumb-transition-function, k-easing(decelerate) )</code></td>
+    <td><code>var(--kendo-slider-thumb-transition-function, var(--kendo-easing-decelerate, cubic-bezier(0, 0, 0.58, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the Slider thumb.</div></div>
@@ -31753,8 +31848,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-content-transition-duration</td>
     <td>String</td>
-    <td><code>var( --kendo-stepper-content-transition-duration, 300ms )</code></td>
-    <td><code>var(--kendo-stepper-content-transition-duration, 300ms)</code></td>
+    <td><code>var( --kendo-stepper-content-transition-duration, k-duration(speedy) )</code></td>
+    <td><code>var(--kendo-stepper-content-transition-duration, var(--kendo-duration-speedy, 300ms))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The duration of the Stepper transition.</div></div>
@@ -31763,8 +31858,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-content-transition-timing-function</td>
     <td>String</td>
-    <td><code>var( --kendo-stepper-content-transition-timing-function, cubic-bezier(.4, 0, .2, 1) 0ms )</code></td>
-    <td><code>var(--kendo-stepper-content-transition-timing-function, cubic-bezier(0.4, 0, 0.2, 1) 0ms)</code></td>
+    <td><code>var( --kendo-stepper-content-transition-timing-function, k-easing(standard) )</code></td>
+    <td><code>var(--kendo-stepper-content-transition-timing-function, var(--kendo-easing-standard, cubic-bezier(0.42, 0, 0.58, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The timing function of the Stepper transition.</div></div>

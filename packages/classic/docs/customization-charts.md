@@ -800,8 +800,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-tooltip-transition</td>
     <td>List</td>
-    <td><code>left 300ms cubic-bezier(0, .33, .19, 1), top 300ms cubic-bezier(0, .33, .19, 1)</code></td>
-    <td><code>(left 300ms cubic-bezier(0, 0.33, 0.19, 1), top 300ms cubic-bezier(0, 0.33, 0.19, 1))</code></td>
+    <td><code>left k-transition(fade-in), top k-transition(fade-in)</code></td>
+    <td><code>(left var(--kendo-transition-fade-in), top var(--kendo-transition-fade-in))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the Chart.</div></div>

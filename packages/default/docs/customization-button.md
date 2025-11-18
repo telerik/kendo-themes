@@ -721,11 +721,11 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-transition</td>
     <td>List</td>
-    <td><code>color .2s ease-in-out</code></td>
-    <td><code>(color 0.2s ease-in-out)</code></td>
+    <td><code>color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid), opacity k-transition(rapid)</code></td>
+    <td><code>(color var(--kendo-transition-rapid), background-color var(--kendo-transition-rapid), border-color var(--kendo-transition-rapid), box-shadow var(--kendo-transition-rapid), opacity var(--kendo-transition-rapid))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color transition of the flat Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the Button.</div></div>
     </td>
 </tr>
 </tbody>
