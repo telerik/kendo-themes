@@ -1,6 +1,14 @@
+@use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/colorpalette/_theme.scss" as *;
 
 
 @mixin kendo-color-palette--theme() {
     @include kendo-color-palette--theme-base();
+
+    .k-colorpalette-tile {
+        &:focus,
+        &.k-focus {
+            outline-color: k-color(base-emphasis);
+        }
+    }
 }
