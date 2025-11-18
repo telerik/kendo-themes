@@ -3,4 +3,14 @@
 
 @mixin kendo-color-palette--layout() {
     @include kendo-color-palette--layout-base();
+
+    .k-colorpalette-tile {
+
+        &:focus,
+        &.k-focus {
+            outline-style: solid;
+            outline-width: 2px;
+            outline-offset: -2px;
+        }
+    }
 }

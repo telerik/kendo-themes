@@ -3,4 +3,13 @@
 
 @mixin kendo-listview--layout() {
     @include kendo-listview--layout-base();
+
+    .k-listview-content {
+        > .k-focus {
+            outline-style: solid;
+            outline-width: 2px;
+            outline-offset: -2px;
+        }
+    }
+
 }

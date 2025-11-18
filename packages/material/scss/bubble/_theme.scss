@@ -10,14 +10,7 @@
         &:focus,
         &.k-focus {
             outline-color: k-color(base-emphasis);
-            box-shadow: inset 0 0 0 calc( #{$kendo-bubble-border-width} * 3 ) k-color(app-surface),
-                        inset 0 0 0 calc( #{$kendo-bubble-border-width} * 5 ) $kendo-bubble-border;;
-
-            &:hover,
-            &.k-hover {
-                box-shadow: inset 0 0 0 calc( #{$kendo-bubble-border-width} * 3 ) k-color(app-surface),
-                            inset 0 0 0 calc( #{$kendo-bubble-border-width} * 5 ) $kendo-bubble-hover-border;
-            }
+            box-shadow: inset 0 0 0 calc( #{$kendo-bubble-border-width} * 3 ) k-color(app-surface);
         }
     }
 }

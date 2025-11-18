@@ -5,4 +5,9 @@
 
     @include kendo-listview--theme-base();
 
+    k-listview-content {
+        > .k-focus {
+            outline-color: color-mix(in srgb, k-color(on-app-surface) 20%, transparent);
+        }
+    }
 }

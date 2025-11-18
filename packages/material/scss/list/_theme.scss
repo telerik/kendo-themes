@@ -5,4 +5,12 @@
 
 @mixin kendo-list--theme() {
     @include kendo-list--theme-base();
+
+    .k-list-item,
+    .k-list-custom-value {
+        &:focus,
+        &.k-focus {
+            outline-color: color-mix(in srgb, k-color(on-app-surface) 20%, transparent);
+        }
+    }
 }

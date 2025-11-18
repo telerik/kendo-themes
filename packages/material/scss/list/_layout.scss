@@ -3,4 +3,14 @@
 
 @mixin kendo-list--layout() {
     @include kendo-list--layout-base();
+
+    .k-list-item,
+    .k-list-custom-value {
+        &:focus,
+        &.k-focus {
+            outline-style: solid;
+            outline-width: 2px;
+            outline-offset: -2px;
+        }
+    }
 }
