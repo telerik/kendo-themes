@@ -620,8 +620,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-content-transition-duration</td>
     <td>String</td>
-    <td><code>var( --kendo-stepper-content-transition-duration, 300ms )</code></td>
-    <td><code>var(--kendo-stepper-content-transition-duration, 300ms)</code></td>
+    <td><code>var( --kendo-stepper-content-transition-duration, k-duration(speedy) )</code></td>
+    <td><code>var(--kendo-stepper-content-transition-duration, var(--kendo-duration-speedy, 300ms))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The duration of the Stepper transition.</div></div>
@@ -630,8 +630,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-content-transition-timing-function</td>
     <td>String</td>
-    <td><code>var( --kendo-stepper-content-transition-timing-function, cubic-bezier(.4, 0, .2, 1) 0ms )</code></td>
-    <td><code>var(--kendo-stepper-content-transition-timing-function, cubic-bezier(0.4, 0, 0.2, 1) 0ms)</code></td>
+    <td><code>var( --kendo-stepper-content-transition-timing-function, k-easing(standard) )</code></td>
+    <td><code>var(--kendo-stepper-content-transition-timing-function, var(--kendo-easing-standard, cubic-bezier(0.42, 0, 0.58, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The timing function of the Stepper transition.</div></div>

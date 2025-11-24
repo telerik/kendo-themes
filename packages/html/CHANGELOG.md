@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.3.0-dev.1](https://github.com/telerik/kendo-themes/compare/v12.3.0-dev.0...v12.3.0-dev.1) (2025-11-24)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [12.3.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.2.4-dev.1...v12.3.0-dev.0) (2025-11-19)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
 ## [12.2.4-dev.1](https://github.com/telerik/kendo-themes/compare/v12.2.4-dev.0...v12.2.4-dev.1) (2025-11-17)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

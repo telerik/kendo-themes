@@ -279,9 +279,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-slider-transition-speed</td>
-    <td>Number</td>
-    <td><code>.3s</code></td>
-    <td><code>0.3s</code></td>
+    <td>String</td>
+    <td><code>k-duration(brisk)</code></td>
+    <td><code>var(--kendo-duration-brisk, 350ms)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the Slider.</div></div>
@@ -290,8 +290,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-transition-function</td>
     <td>String</td>
-    <td><code>ease-out</code></td>
-    <td><code>ease-out</code></td>
+    <td><code>k-easing(standard)</code></td>
+    <td><code>var(--kendo-easing-standard, cubic-bezier(0.42, 0, 0.58, 1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the Slider.</div></div>
@@ -299,9 +299,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-slider-draghandle-transition-speed</td>
-    <td>Number</td>
-    <td><code>.4s</code></td>
-    <td><code>0.4s</code></td>
+    <td>String</td>
+    <td><code>k-duration(quick)</code></td>
+    <td><code>var(--kendo-duration-quick, 150ms)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the Slider drag handle.</div></div>
@@ -310,8 +310,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-transition-function</td>
     <td>String</td>
-    <td><code>cubic-bezier(.25, .8, .25, 1)</code></td>
-    <td><code>cubic-bezier(0.25, 0.8, 0.25, 1)</code></td>
+    <td><code>k-easing(decelerate)</code></td>
+    <td><code>var(--kendo-easing-decelerate, cubic-bezier(0, 0, 0.58, 1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the Slider drag handle.</div></div>

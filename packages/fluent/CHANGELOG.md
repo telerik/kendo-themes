@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.3.0-dev.1](https://github.com/telerik/kendo-themes/compare/v12.3.0-dev.0...v12.3.0-dev.1) (2025-11-24)
+
+**Note:** Version bump only for package @progress/kendo-theme-fluent
+
+
+
+
+
+# [12.3.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.2.4-dev.1...v12.3.0-dev.0) (2025-11-19)
+
+
+### Features
+
+* implement motion system ([2354c36](https://github.com/telerik/kendo-themes/commit/2354c36796ea087cb312ce5f85af9ab942999922))
+
+
+
+
+
 ## [12.2.4-dev.1](https://github.com/telerik/kendo-themes/compare/v12.2.4-dev.0...v12.2.4-dev.1) (2025-11-17)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent

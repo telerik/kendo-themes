@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "sass:math";
 @use "../../color-system/_constants.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-switch--layout-base() {
@@ -50,7 +51,7 @@
         flex-flow: row nowrap;
         flex: 1 0 auto;
         position: relative;
-        transition: background-color 200ms ease-in-out;
+        transition: background-color k-transition(rapid), border-color k-transition(rapid), color k-transition(rapid);
     }
 
 
@@ -60,7 +61,6 @@
         height: 0;
         overflow: visible;
         position: absolute;
-        transition: left 200ms ease-in-out;
         inset-block-start: 50%;
     }
     .k-switch-thumb {
@@ -69,6 +69,7 @@
         display: block;
         position: absolute;
         transform: translate( -50%, -50% );
+        transition: all k-transition(rapid);
     }
 
 
@@ -81,6 +82,7 @@
         inset-block-start: 50%;
         transform: translateY( -50% );
         overflow: hidden;
+        transition: color k-transition(snappy);
     }
 
 
@@ -115,9 +117,11 @@
 
             &.k-switch-on .k-switch-thumb-wrap {
                 inset-inline-start: calc( 100% - #{math.div( $_thumb-width, 2 )} - #{$_thumb-offset} );
+                transition: left k-transition(bouncy);
             }
             &.k-switch-off .k-switch-thumb-wrap {
                 inset-inline-start: calc( #{math.div( $_thumb-width, 2 )} + #{$_thumb-offset} );
+                transition: left k-transition(snappy);
             }
         }
     }
