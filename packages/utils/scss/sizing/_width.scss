@@ -142,26 +142,16 @@
 /// @group width
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--sizing--width() {
     @include import-once("utils-sizing-width") {
-
-        // Width utility classes
-        $kendo-utils-width: map.get( $kendo-utils, "width" ) !default;
-        @include generate-utils( w, width, $kendo-utils-width );
-
-        // Min-width utility classes
-        $kendo-utils-min-width: map.get( $kendo-utils, "min-width" ) !default;
-        @include generate-utils( min-w, min-width, $kendo-utils-min-width );
-
-        // Max-width utility classes
-        $kendo-utils-max-width: map.get( $kendo-utils, "max-width" ) !default;
-        @include generate-utils( max-w, max-width, $kendo-utils-max-width );
-
+        @include generate-utils-from-config("width");
+        @include generate-utils-from-config("min-width");
+        @include generate-utils-from-config("max-width");
     }
+}
+
+@mixin kendo-utils--sizing--width--responsive($key) {
+    @include generate-utils-from-config-responsive("width", $key);
 }

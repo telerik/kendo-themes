@@ -16,18 +16,10 @@
 /// @group flex-wrap
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--flex-wrap() {
     @include import-once("utils-flex-grid-flex-wrap") {
-
-        // Flex wrap utility classes
-        $kendo-utils-flex-wrap: map.get( $kendo-utils, "flex-wrap" ) !default;
-        @include generate-utils( flex, flex-wrap, $kendo-utils-flex-wrap );
-
+        @include generate-utils-from-config("flex-wrap");
     }
 }

@@ -22,18 +22,10 @@
 /// @group grid-auto-columns
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--grid-auto-columns() {
     @include import-once("utils-flex-grid-grid-auto-columns") {
-
-        // Grid auto columns utility classes
-        $kendo-utils-grid-auto-columns: map.get( $kendo-utils, "grid-auto-columns" ) !default;
-        @include generate-utils( grid-auto-cols, grid-auto-columns, $kendo-utils-grid-auto-columns );
-
+        @include generate-utils-from-config("grid-auto-columns");
     }
 }

@@ -10,19 +10,11 @@
 /// @group text-overflow
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--typography--text-overflow() {
     @include import-once("utils-typography-text-overflow") {
-
-        // Text overflow utility classes
-        $kendo-utils-text-overflow: map.get( $kendo-utils, "text-overflow" ) !default;
-        @include generate-utils( text, text-overflow, $kendo-utils-text-overflow );
-
+        @include generate-utils-from-config("text-overflow");
 
         // Text truncate utility classes
         .#{$kendo-prefix}text-truncate {
@@ -39,6 +31,5 @@
         // Legacy aliases
         .#{$kendo-prefix}text-ellipsis { @extend .#{$kendo-prefix}text-truncate !optional; }
         .\!#{$kendo-prefix}text-ellipsis { @extend .\!#{$kendo-prefix}text-truncate !optional; }
-
     }
 }

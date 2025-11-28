@@ -19,15 +19,8 @@
 @use "sass:map";
 @use "../_globals.scss" as *;
 
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
-
 @mixin kendo-utils--typography--font-style() {
     @include import-once("utils-typography-font-style") {
-
-        // Font style utility classes
-        $kendo-utils-font-style: map.get( $kendo-utils, "font-style" ) !default;
-        @include generate-utils( font-style, font-style, $kendo-utils-font-style, $css-var: "font-style" );
-
+        @include generate-utils-from-config("font-style");
     }
 }

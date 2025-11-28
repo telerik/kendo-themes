@@ -152,26 +152,14 @@
 /// @group grid-template-columns-responsive
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--grid-template-columns() {
     @include import-once("utils-flex-grid-grid-template-columns") {
-
-        // Grid template columns utility classes
-        $kendo-utils-grid-template-columns: map.get( $kendo-utils, "grid-template-columns" ) !default;
-        @include generate-utils( grid-cols, grid-template-columns, $kendo-utils-grid-template-columns );
-
+        @include generate-utils-from-config("grid-template-columns");
     }
 }
 
 @mixin kendo-utils--flex-grid--grid-template-columns--responsive($key) {
-
-    // Grid template columns responsive utility classes
-    $kendo-utils-grid-template-columns: map.get( $kendo-utils, "grid-template-columns" ) !default;
-    @include generate-utils( grid-cols-#{$key}, grid-template-columns, $kendo-utils-grid-template-columns, $important: false );
-
+    @include generate-utils-from-config("grid-template-columns", $responsive-key: $key);
 }

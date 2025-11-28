@@ -178,9 +178,6 @@
 /// @group gap
 /// @contextType css
 
-// ============================================================================
-// Responsive Gap Utilities
-// ============================================================================
 
 /// This is equivalent to `gap: 0;`.
 /// @example gap: 0;
@@ -362,30 +359,19 @@
 /// @group gap-responsive
 /// @contextType css
 
+// Gap Utility Classes
+// Generated from $kendo-utils config - see _variables.scss for configuration
+
 @use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
 @use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--gap() {
     @include import-once("utils-flex-grid-gap") {
-
-        // Gap utility classes
-        $kendo-utils-gap: map.get( $kendo-utils, "gap" ) !default;
-        @include generate-utils( gap, gap, $kendo-utils-gap, $css-var: "spacing" );
-        @include generate-utils( gap-x, column-gap, $kendo-utils-gap, $css-var: "spacing" );
-        @include generate-utils( gap-y, row-gap, $kendo-utils-gap, $css-var: "spacing" );
-
+        @include generate-utils-from-config("gap");
     }
 }
 
 @mixin kendo-utils--flex-grid--gap--responsive($key) {
-
-    // Gap responsive utility classes
-    $kendo-utils-gap: map.get( $kendo-utils, "gap" ) !default;
-    @include generate-utils( gap-#{$key}, gap, $kendo-utils-gap, $css-var: "spacing", $important: false );
-    @include generate-utils( gap-x-#{$key}, column-gap, $kendo-utils-gap, $css-var: "spacing", $important: false );
-    @include generate-utils( gap-y-#{$key}, row-gap, $kendo-utils-gap, $css-var: "spacing", $important: false );
-
+    @include generate-utils-from-config-responsive("gap", $key);
 }

@@ -10,18 +10,10 @@
 /// @group appearance
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--interactivity--appearance() {
     @include import-once("utils-interactivity-appearance") {
-
-        // Appearance utility classes
-        $kendo-utils-appearance: map.get( $kendo-utils, "appearance" ) !default;
-        @include generate-utils( appearance, appearance, $kendo-utils-appearance );
-
+        @include generate-utils-from-config("appearance");
     }
 }

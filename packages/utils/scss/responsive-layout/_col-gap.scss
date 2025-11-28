@@ -569,11 +569,18 @@
 @use "../_globals.scss" as *;
 @use "@progress/kendo-theme-core/scss/functions/index.scss" as *;
 @use "sass:map";
+@use "sass:meta";
 
 @mixin kendo-utils--responsive-layout--col-gap() {
 
     // Columns gap
-    $kendo-utils-col-gap: map.get( $kendo-utils, "gap" ) !default;
+    $kendo-utils-gap-config: map.get( $kendo-utils, "gap" ) !default;
+    // Handle new nested config format
+    $kendo-utils-col-gap: if(
+        meta.type-of($kendo-utils-gap-config) == map and map.has-key($kendo-utils-gap-config, "values"),
+        map.get($kendo-utils-gap-config, "values"),
+        $kendo-utils-gap-config
+    );
 
     @each $key, $val in $kendo-utils-col-gap {
         $_key: k-escape-class-name( $key );
@@ -587,7 +594,13 @@
 @mixin kendo-utils--responsive-layout--col-gap--responsive($breakpoint) {
 
     // Columns gap responsive
-    $kendo-utils-col-gap: map.get( $kendo-utils, "gap" ) !default;
+    $kendo-utils-gap-config: map.get( $kendo-utils, "gap" ) !default;
+    // Handle new nested config format
+    $kendo-utils-col-gap: if(
+        meta.type-of($kendo-utils-gap-config) == map and map.has-key($kendo-utils-gap-config, "values"),
+        map.get($kendo-utils-gap-config, "values"),
+        $kendo-utils-gap-config
+    );
 
     @each $key, $val in $kendo-utils-col-gap {
         $_key: k-escape-class-name( $key );

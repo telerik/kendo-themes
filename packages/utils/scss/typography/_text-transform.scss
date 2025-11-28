@@ -16,18 +16,10 @@
 /// @group text-transform
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--typography--text-transform() {
     @include import-once("utils-typography-text-transform") {
-
-        // Text transform utility classes
-        $kendo-utils-text-transform: map.get( $kendo-utils, "text-transform" ) !default;
-        @include generate-utils( text, text-transform, $kendo-utils-text-transform );
-
+        @include generate-utils-from-config("text-transform");
     }
 }

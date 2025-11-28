@@ -587,24 +587,15 @@
 /// @group margin
 /// @contextType css
 
+// Margin Utility Classes
+// Generated from $kendo-utils config - see _variables.scss for configuration
+
 @use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
 @use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--spacing--margin() {
     @include import-once("utils-spacing-margin") {
-
-        // Margin utility classes
-        $kendo-utils-margin: map.get( $kendo-utils, "margin" ) !default;
-        @include generate-utils( m, margin, $kendo-utils-margin, $css-var: "spacing" );
-        @include generate-utils( mt, margin-top, $kendo-utils-margin, $css-var: "spacing" );
-        @include generate-utils( mr, margin-right, $kendo-utils-margin, $css-var: "spacing" );
-        @include generate-utils( mb, margin-bottom, $kendo-utils-margin, $css-var: "spacing" );
-        @include generate-utils( ml, margin-left, $kendo-utils-margin, $css-var: "spacing" );
-        @include generate-utils( mx, margin-inline, $kendo-utils-margin, $css-var: "spacing" );
-        @include generate-utils( my, margin-block, $kendo-utils-margin, $css-var: "spacing" );
-
+        @include generate-utils-from-config("margin");
     }
 }

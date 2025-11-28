@@ -322,26 +322,10 @@
 /// @group border-radius
 /// @contextType css
 
-@use "../_mixins.scss" as *;
-
-@use "@progress/kendo-theme-core/scss/border-radii/index.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
+@use "../_globals.scss" as *;
 
 @mixin kendo-utils--border--border-radius() {
-    @include import-once("utils-border-radius") {
-
-        // Border radius utility classes
-        @include generate-utils( rounded, border-radius, $kendo-border-radii, $css-var: "border-radius" );
-        @include generate-utils( rounded-tl, border-top-left-radius, $kendo-border-radii, $css-var: "border-radius" );
-        @include generate-utils( rounded-tr, border-top-right-radius, $kendo-border-radii, $css-var: "border-radius" );
-        @include generate-utils( rounded-br, border-bottom-right-radius, $kendo-border-radii, $css-var: "border-radius" );
-        @include generate-utils( rounded-bl, border-bottom-left-radius, $kendo-border-radii, $css-var: "border-radius" );
-        @include generate-utils( rounded-t, ( border-top-left-radius, border-top-right-radius ), $kendo-border-radii, $css-var: "border-radius" );
-        @include generate-utils( rounded-r, ( border-top-right-radius, border-bottom-right-radius ), $kendo-border-radii, $css-var: "border-radius" );
-        @include generate-utils( rounded-b, ( border-bottom-left-radius, border-bottom-right-radius ), $kendo-border-radii, $css-var: "border-radius" );
-        @include generate-utils( rounded-l, ( border-top-left-radius, border-bottom-left-radius ), $kendo-border-radii, $css-var: "border-radius" );
-
+    @include import-once("utils-border-border-radius") {
+        @include generate-utils-from-config("border-radius");
     }
 }

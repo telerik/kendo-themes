@@ -22,18 +22,10 @@
 /// @group background-clip
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
 
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
-
 @mixin kendo-utils--background--background-clip() {
-    @include import-once("utils-background-clip") {
-
-        // Background color utility classes
-        $kendo-utils-background-clip: map.get( $kendo-utils, "background-clip" ) !default;
-        @include generate-utils( bg-clip, background-clip, $kendo-utils-background-clip );
-
+    @include import-once("utils-background-background-clip") {
+        @include generate-utils-from-config("background-clip");
     }
 }

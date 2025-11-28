@@ -52,18 +52,10 @@
 /// @group background-position
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
 
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
-
 @mixin kendo-utils--background--background-position() {
-    @include import-once("utils-background-position") {
-
-        // Background position utility classes
-        $kendo-utils-background-position: map.get( $kendo-utils, "background-position" ) !default;
-        @include generate-utils( bg, background-position, $kendo-utils-background-position );
-
+    @include import-once("utils-background-background-position") {
+        @include generate-utils-from-config("background-position");
     }
 }

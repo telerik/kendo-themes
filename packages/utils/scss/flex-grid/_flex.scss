@@ -22,18 +22,10 @@
 /// @group flex
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--flex() {
     @include import-once("utils-flex-grid-flex") {
-
-        // Flex utility classes
-        $kendo-utils-flex: map.get( $kendo-utils, "flex" ) !default;
-        @include generate-utils( flex, flex, $kendo-utils-flex );
-
+        @include generate-utils-from-config("flex");
     }
 }

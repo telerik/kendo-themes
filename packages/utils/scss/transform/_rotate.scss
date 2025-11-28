@@ -46,18 +46,10 @@
 /// @group transform
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--transform--rotate() {
     @include import-once("utils-transform-rotate") {
-
-        // Rotate utility classes
-        $kendo-utils-rotate: map.get( $kendo-utils, "rotate" ) !default;
-        @include generate-utils( rotate, transform, $kendo-utils-rotate, k-rotate );
-
+        @include generate-utils-from-config("rotate");
     }
 }

@@ -3,87 +3,14 @@
 @use "@progress/kendo-theme-core/scss/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/functions/_map.scss" as *;
 
-$kendo-theme-colors: () !default;
+// ============================================================================
+// Responsive System Configuration
+// ============================================================================
 
-$kendo-font-sizes: () !default;
-
-$kendo-util-colors-list: (
-    app-surface,
-    on-app-surface,
-    subtle,
-    surface,
-    surface-alt,
-    border,
-    border-alt,
-    base-subtle,
-    base-emphasis,
-    primary-subtle,
-    primary,
-    primary-emphasis,
-    secondary-subtle,
-    secondary,
-    secondary-emphasis,
-    tertiary-subtle,
-    tertiary,
-    tertiary-emphasis,
-    info-subtle,
-    info,
-    info-emphasis,
-    success-subtle,
-    success,
-    success-emphasis,
-    warning-subtle,
-    warning,
-    warning-emphasis,
-    error-subtle,
-    error,
-    error-emphasis,
-    light-subtle,
-    light,
-    light-emphasis,
-    dark-subtle,
-    dark,
-    dark-emphasis,
-) !default;
-
-$kendo-util-colors: () !default;
-@each $name, $color in $kendo-colors {
-    @each $util-color in $kendo-util-colors-list {
-        @if ( $name == $util-color ) {
-            $kendo-util-colors: map.merge( $kendo-util-colors, ( $name: $color) );
-        }
-    }
-}
-
-$kendo-spacing: () !default;
-
-$kendo-sizing: () !default;
-
-$kendo-border-radii: () !default;
-
-$kendo-elevation: () !default;
-
-$kendo-colors: () !default;
-
-$_default-kendo-fraction-classes: (
-    '91-6': 91.6666%,
-    '83-3': 83.3333%,
-    '66-6': 66.6666%,
-    '58-3': 58.3333%,
-    '41-6': 41.6666%,
-    '33-3': 33.3333%,
-    '16-7': 16.6666%,
-    '14-3': 14.2857%,
-    '12-5': 12.5%,
-    '11-1': 11.1111%,
-    '9-1': 9.0909%,
-    '8-3': 8.3333%
-) !default;
-
-$kendo-fraction-classes: $_default-kendo-fraction-classes !default;
-$kendo-fraction-classes: map.merge($_default-kendo-fraction-classes, $kendo-fraction-classes); // stylelint-disable-line scss/dollar-variable-default
-
-$_default-kendo-breakpoints: (
+/// Breakpoints for responsive utilities
+/// @type Map
+/// @group responsive
+$kendo-breakpoints: (
     xs: 0,
     sm: 576px,
     md: 768px,
@@ -92,10 +19,10 @@ $_default-kendo-breakpoints: (
     xxl: 1400px
 ) !default;
 
-$kendo-breakpoints: $_default-kendo-breakpoints !default;
-$kendo-breakpoints: map.merge($_default-kendo-breakpoints, $kendo-breakpoints); // stylelint-disable-line scss/dollar-variable-default
-
-$_default-kendo-container-max-widths: (
+/// Container max-widths per breakpoint
+/// @type Map
+/// @group responsive
+$kendo-container-max-widths: (
     sm: 540px,
     md: 720px,
     lg: 960px,
@@ -103,8 +30,53 @@ $_default-kendo-container-max-widths: (
     xxl: 1320px
 ) !default;
 
-$kendo-container-max-widths: $_default-kendo-container-max-widths !default;
-$kendo-container-max-widths: map.merge($_default-kendo-container-max-widths, $kendo-container-max-widths); // stylelint-disable-line scss/dollar-variable-default
+/// Fraction class values for grid column widths (used in responsive-layout)
+/// @type Map
+/// @group responsive
+$kendo-fraction-classes: (
+    "91-6": 91.6666%,
+    "83-3": 83.3333%,
+    "66-6": 66.6666%,
+    "58-3": 58.3333%,
+    "41-6": 41.6666%,
+    "33-3": 33.3333%,
+    "16-7": 16.6666%,
+    "14-3": 14.2857%,
+    "12-5": 12.5%,
+    "11-1": 11.1111%,
+    "9-1": 9.0909%,
+    "8-3": 8.3333%
+) !default;
+
+// ============================================================================
+// Design Token Defaults
+// ============================================================================
+// These empty maps allow consumers to inject design tokens before compilation.
+// When populated, utilities will use these values instead of hardcoded defaults.
+
+$kendo-theme-colors: () !default;
+$kendo-font-sizes: () !default;
+$kendo-spacing: () !default;
+$kendo-sizing: () !default;
+$kendo-border-radii: () !default;
+$kendo-elevation: () !default;
+$kendo-colors: () !default;
+
+// ============================================================================
+// Utility Configuration Map
+// ============================================================================
+// Each key in $kendo-utils defines a utility class generator.
+// Config format:
+//   property: CSS property or map of (prefix: property) for multi-property utils
+//   prefix: Class name prefix (defaults to key name)
+//   values: Map of (class-suffix: css-value)
+//   responsive: Whether to generate responsive variants (default: false)
+//   responsive-prefixes: List of prefixes to include in responsive (for multi-property)
+//   aliases: Map of (alias-prefix: base-prefix or config)
+//   css-var: CSS custom property namespace
+//   function: Transform function name
+//   group: Documentation group
+//   description: Documentation description
 
 $kendo-utils: (
 
@@ -113,515 +85,884 @@ $kendo-utils: (
 
     // Layout
     "aspect-ratio": (
-        auto: auto,
-        "1": 1,
-        square: string.unquote("1 / 1"),
-        video: string.unquote("16 / 9")
+        property: aspect-ratio,
+        prefix: ratio,
+        group: layout,
+        description: "Controls the aspect ratio of an element.",
+        values: (
+            auto: auto,
+            "1": 1,
+            square: string.unquote("1 / 1"),
+            video: string.unquote("16 / 9")
+        )
     ),
     "container": (),
     "columns": (
-        "1": 1,
-        "2": 2,
-        "3": 3,
-        "4": 4,
-        "5": 5,
-        "6": 6,
-        "7": 7,
-        "8": 8,
-        "9": 9,
-        "10": 10,
-        "11": 11,
-        "12": 12,
-        auto: auto
+        property: columns,
+        prefix: columns,
+        group: layout,
+        description: "Controls the number of columns within an element.",
+        values: (
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5,
+            "6": 6, 
+            "7": 7,
+            "8": 8,
+            "9": 9,
+            "10": 10,
+            "11": 11,
+            "12": 12,
+            auto: auto
+        )
     ),
     "break-after": (),
     "break-before": (),
     "break-inside": (),
     "box-decoration-break": (),
     "box-sizing": (
-        border: border-box,
-        content: content-box
+        property: box-sizing,
+        prefix: box-sizing,
+        group: layout,
+        description: "Controls how the total width and height of an element is calculated.",
+        values: (
+            border: border-box,
+            content: content-box
+        )
     ),
     "display": (
-        none,
-        contents,
-        block,
-        inline,
-        inline-block,
-        flex,
-        inline-flex,
-        grid,
-        inline-grid,
-        table,
-        inline-table,
-        table-row,
-        table-cell,
-        list-item
+        property: display,
+        prefix: d,
+        group: layout,
+        description: "Controls the display box type of an element.",
+        values: (
+            none: none,
+            contents: contents,
+            block: block,
+            inline: inline,
+            inline-block: inline-block,
+            flex: flex,
+            inline-flex: inline-flex,
+            grid: grid,
+            inline-grid: inline-grid,
+            table: table,
+            inline-table: inline-table,
+            table-row: table-row,
+            table-cell: table-cell,
+            list-item: list-item
+        ),
+        aliases: (
+            display: (deprecated: true)
+        )
     ),
     "float": (
-        left,
-        right,
-        none
+        property: float,
+        prefix: float,
+        group: layout,
+        description: "Controls element floating behavior.",
+        values: (
+            left,
+            right,
+            none
+        )
     ),
     "clear": (
-        left,
-        right,
-        both,
-        none
+        property: clear,
+        prefix: clear,
+        group: layout,
+        description: "Controls element clearing behavior.",
+        values: (
+            left,
+            right,
+            both,
+            none
+        )
     ),
     "isolation": (),
     "object-fit": (
-        contain,
-        cover,
-        fill,
-        scale-down,
-        initial,
-        none
+        property: object-fit,
+        prefix: object-fit,
+        group: layout,
+        description: "Controls how replaced elements should be resized.",
+        values: (
+            contain,
+            cover,
+            fill,
+            scale-down,
+            initial,
+            none
+        )
     ),
     "object-position": (
-        center: center,
-        top: top,
-        right: right,
-        bottom: bottom,
-        left: left,
-        top-left: top left,
-        top-right: top right,
-        bottom-left: bottom left,
-        bottom-right: bottom right
+        property: object-position,
+        prefix: object-position,
+        group: layout,
+        description: "Controls the position of replaced element content.",
+        values: (
+            center: center,
+            top: top,
+            right: right,
+            bottom: bottom,
+            left: left,
+            top-left: top left,
+            top-right: top right,
+            bottom-left: bottom left,
+            bottom-right: bottom right
+        )
     ),
     "overflow": (
-        auto: auto,
-        hidden: hidden,
-        visible: visible,
-        scroll: scroll,
-        clip: clip
+        property: (
+            overflow: overflow,
+            overflow-x: overflow-x,
+            overflow-y: overflow-y
+        ),
+        group: layout,
+        description: "Controls how content overflows an element.",
+        values: (
+            auto: auto,
+            hidden: hidden,
+            visible: visible,
+            scroll: scroll,
+            clip: clip
+        )
     ),
     "overscroll": (),
-    "placement": map.merge( $kendo-spacing, (
-        "-1": -1px
-    )),
+    "placement": (
+        property: (
+            top: top,
+            right: right,
+            bottom: bottom,
+            left: left
+        ),
+        group: layout,
+        description: "Controls element positioning coordinates.",
+        values: map.merge( $kendo-spacing, (
+            "-1": -1px
+        ))
+    ),
     "position": (
-        static,
-        relative,
-        absolute,
-        fixed,
-        sticky
+        property: position,
+        prefix: pos,
+        group: layout,
+        description: "Controls element positioning method.",
+        values: (
+            static,
+            relative,
+            absolute,
+            fixed,
+            sticky
+        ),
+        aliases: (
+            "": ()
+        )
     ),
     "inset": (
-        "0": 0,
-        "1": 1px,
-        "-1": -1px
+        property: (
+            inset: inset,
+            inset-x: inset-inline,
+            inset-y: inset-block,
+            top-left: ( top, left ),
+            top-right: ( top, right ),
+            bottom-left: ( bottom, left ),
+            bottom-right: ( bottom, right )
+        ),
+        group: layout,
+        description: "Controls element inset position.",
+        values: (
+            "0": 0,
+            "1": 1px,
+            "-1": -1px
+        )
     ),
     "visibility": (
-        visible: visible,
-        invisible: hidden,
-        collapse: collapse
+        property: visibility,
+        prefix: visibility,
+        group: layout,
+        description: "Controls element visibility.",
+        values: (
+            visible: visible,
+            invisible: hidden,
+            collapse: collapse
+        ),
+        aliases: (
+            "": (
+                visible: visible
+            )
+        )
     ),
     "zindex": (
-        "0": 0,
-        "10": 10,
-        "20": 20,
-        "30": 30,
-        "40": 40,
-        "50": 50,
-        auto: auto
+        property: z-index,
+        prefix: z,
+        group: layout,
+        description: "Controls element stacking order.",
+        values: (
+            "0": 0,
+            "10": 10,
+            "20": 20,
+            "30": 30,
+            "40": 40,
+            "50": 50,
+            auto: auto
+        )
     ),
 
     // Flex / Grid
     "flex-direction": (
-        row: row,
-        row-reverse: row-reverse,
-        col: column,
-        col-reverse: column-reverse
+        property: flex-direction,
+        prefix: flex,
+        responsive: true,
+        group: flex-grid,
+        description: "Controls the direction of flex items.",
+        values: (
+            row: row,
+            row-reverse: row-reverse,
+            col: column,
+            col-reverse: column-reverse
+        )
     ),
     "flex-wrap": (
-        wrap,
-        wrap-reverse,
-        nowrap
+        property: flex-wrap,
+        prefix: flex,
+        group: flex-grid,
+        description: "Controls how flex items wrap.",
+        values: (
+            wrap,
+            wrap-reverse,
+            nowrap
+        )
     ),
     "flex": (
-        "1": 1 1 0%,
-        auto: 1 1 auto,
-        initial: 0 1 auto,
-        none: none
+        property: flex,
+        prefix: flex,
+        group: flex-grid,
+        description: "Controls flex grow, shrink, and basis.",
+        values: (
+            "1": 1 1 0%,
+            auto: 1 1 auto,
+            initial: 0 1 auto,
+            none: none
+        )
     ),
     "flex-grow": (
-        DEFAULT: 1,
-        "0": 0
+        property: flex-grow,
+        prefix: grow,
+        group: flex-grid,
+        description: "Controls flex item growth factor.",
+        values: (
+            DEFAULT: 1,
+            "0": 0
+        ),
+        aliases: (
+            flex-grow: ()
+        )
     ),
     "flex-shrink": (
-        DEFAULT: 1,
-        "0": 0
+        property: flex-shrink,
+        prefix: shrink,
+        group: flex-grid,
+        description: "Controls flex item shrink factor.",
+        values: (
+            DEFAULT: 1,
+            "0": 0
+        ),
+        aliases: (
+            flex-shrink: ()
+        )
     ),
-    "flex-basis": $kendo-sizing,
+    "flex-basis": (
+        property: flex-basis,
+        prefix: basis,
+        group: flex-grid,
+        description: "Controls flex item initial size.",
+        values: $kendo-sizing,
+        aliases: (
+            flex-basis: ()
+        )
+    ),
     "order": (
-        "1": 1,
-        "2": 2,
-        "3": 3,
-        "4": 4,
-        "5": 5,
-        "6": 6,
-        "7": 7,
-        "8": 8,
-        "9": 9,
-        "10": 10,
-        "11": 11,
-        "12": 12,
-        first: -9999,
-        last: 9999,
-        none: 0
+        property: order,
+        prefix: order,
+        group: flex-grid,
+        description: "Controls flex item order.",
+        values: (
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5,
+            "6": 6,
+            "7": 7,
+            "8": 8,
+            "9": 9,
+            "10": 10,
+            "11": 11,
+            "12": 12,
+            first: -9999,
+            last: 9999,
+            none: 0
+        )
     ),
     "grid-template-columns": (
-        "1": repeat( 1, minmax( 0, 1fr ) ),
-        "2": repeat( 2, minmax( 0, 1fr ) ),
-        "3": repeat( 3, minmax( 0, 1fr ) ),
-        "4": repeat( 4, minmax( 0, 1fr ) ),
-        "5": repeat( 5, minmax( 0, 1fr ) ),
-        "6": repeat( 6, minmax( 0, 1fr ) ),
-        "7": repeat( 7, minmax( 0, 1fr ) ),
-        "8": repeat( 8, minmax( 0, 1fr ) ),
-        "9": repeat( 9, minmax( 0, 1fr ) ),
-        "10": repeat( 10, minmax( 0, 1fr ) ),
-        "11": repeat( 11, minmax( 0, 1fr ) ),
-        "12": repeat( 12, minmax( 0, 1fr ) ),
-        none: none
+        property: grid-template-columns,
+        prefix: grid-cols,
+        group: flex-grid,
+        description: "Controls grid column template.",
+        values: (
+            "1": repeat( 1, minmax( 0, 1fr ) ),
+            "2": repeat( 2, minmax( 0, 1fr ) ),
+            "3": repeat( 3, minmax( 0, 1fr ) ),
+            "4": repeat( 4, minmax( 0, 1fr ) ),
+            "5": repeat( 5, minmax( 0, 1fr ) ),
+            "6": repeat( 6, minmax( 0, 1fr ) ),
+            "7": repeat( 7, minmax( 0, 1fr ) ),
+            "8": repeat( 8, minmax( 0, 1fr ) ),
+            "9": repeat( 9, minmax( 0, 1fr ) ),
+            "10": repeat( 10, minmax( 0, 1fr ) ),
+            "11": repeat( 11, minmax( 0, 1fr ) ),
+            "12": repeat( 12, minmax( 0, 1fr ) ),
+            none: none
+        )
     ),
     "grid-template-rows": (
-        "1": repeat( 1, minmax( 0, 1fr ) ),
-        "2": repeat( 2, minmax( 0, 1fr ) ),
-        "3": repeat( 3, minmax( 0, 1fr ) ),
-        "4": repeat( 4, minmax( 0, 1fr ) ),
-        "5": repeat( 5, minmax( 0, 1fr ) ),
-        "6": repeat( 6, minmax( 0, 1fr ) ),
-        "7": repeat( 7, minmax( 0, 1fr ) ),
-        "8": repeat( 8, minmax( 0, 1fr ) ),
-        "9": repeat( 9, minmax( 0, 1fr ) ),
-        "10": repeat( 10, minmax( 0, 1fr ) ),
-        "11": repeat( 11, minmax( 0, 1fr ) ),
-        "12": repeat( 12, minmax( 0, 1fr ) ),
-        none: none
+        property: grid-template-rows,
+        prefix: grid-rows,
+        group: flex-grid,
+        description: "Controls grid row template.",
+        values: (
+            "1": repeat( 1, minmax( 0, 1fr ) ),
+            "2": repeat( 2, minmax( 0, 1fr ) ),
+            "3": repeat( 3, minmax( 0, 1fr ) ),
+            "4": repeat( 4, minmax( 0, 1fr ) ),
+            "5": repeat( 5, minmax( 0, 1fr ) ),
+            "6": repeat( 6, minmax( 0, 1fr ) ),
+            "7": repeat( 7, minmax( 0, 1fr ) ),
+            "8": repeat( 8, minmax( 0, 1fr ) ),
+            "9": repeat( 9, minmax( 0, 1fr ) ),
+            "10": repeat( 10, minmax( 0, 1fr ) ),
+            "11": repeat( 11, minmax( 0, 1fr ) ),
+            "12": repeat( 12, minmax( 0, 1fr ) ),
+            none: none
+        )
     ),
     "grid-column-start": (
-        "1": 1,
-        "2": 2,
-        "3": 3,
-        "4": 4,
-        "5": 5,
-        "6": 6,
-        "7": 7,
-        "8": 8,
-        "9": 9,
-        "10": 10,
-        "11": 11,
-        "12": 12,
-        "13": 13,
-        auto: auto
+        property: grid-column-start,
+        prefix: col-start,
+        responsive: true,
+        group: flex-grid,
+        description: "Controls grid column start position.",
+        values: (
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5,
+            "6": 6,
+            "7": 7,
+            "8": 8,
+            "9": 9,
+            "10": 10,
+            "11": 11,
+            "12": 12,
+            "13": 13,
+            auto: auto
+        )
     ),
     "grid-column-end": (
-        "1": 1,
-        "2": 2,
-        "3": 3,
-        "4": 4,
-        "5": 5,
-        "6": 6,
-        "7": 7,
-        "8": 8,
-        "9": 9,
-        "10": 10,
-        "11": 11,
-        "12": 12,
-        "13": 13,
-        auto: auto
+        property: grid-column-end,
+        prefix: col-end,
+        responsive: true,
+        group: flex-grid,
+        description: "Controls grid column end position.",
+        values: (
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5,
+            "6": 6,
+            "7": 7,
+            "8": 8,
+            "9": 9,
+            "10": 10,
+            "11": 11,
+            "12": 12,
+            "13": 13,
+            auto: auto
+        )
     ),
     "grid-column-span": (
-        "1": span 1 / span 1,
-        "2": span 2 / span 2,
-        "3": span 3 / span 3,
-        "4": span 4 / span 4,
-        "5": span 5 / span 5,
-        "6": span 6 / span 6,
-        "7": span 7 / span 7,
-        "8": span 8 / span 8,
-        "9": span 9 / span 9,
-        "10": span 10 / span 10,
-        "11": span 11 / span 11,
-        "12": span 12 / span 12,
-        full: string.unquote("1 / -1"),
-        auto: auto
+        property: grid-column,
+        prefix: col-span,
+        responsive: true,
+        group: flex-grid,
+        description: "Controls grid column span.",
+        values: (
+            "1": span 1 / span 1,
+            "2": span 2 / span 2,
+            "3": span 3 / span 3,
+            "4": span 4 / span 4,
+            "5": span 5 / span 5,
+            "6": span 6 / span 6,
+            "7": span 7 / span 7,
+            "8": span 8 / span 8,
+            "9": span 9 / span 9,
+            "10": span 10 / span 10,
+            "11": span 11 / span 11,
+            "12": span 12 / span 12,
+            full: string.unquote("1 / -1"),
+            auto: auto
+        ),
+        aliases: (
+            colspan: ()
+        )
     ),
     "grid-row-start": (
-        "1": 1,
-        "2": 2,
-        "3": 3,
-        "4": 4,
-        "5": 5,
-        "6": 6,
-        "7": 7,
-        "8": 8,
-        "9": 9,
-        "10": 10,
-        "11": 11,
-        "12": 12,
-        "13": 13,
-        auto: auto
+        property: grid-row-start,
+        prefix: row-start,
+        responsive: true,
+        group: flex-grid,
+        description: "Controls grid row start position.",
+        values: (
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5,
+            "6": 6,
+            "7": 7,
+            "8": 8,
+            "9": 9,
+            "10": 10,
+            "11": 11,
+            "12": 12,
+            "13": 13,
+            auto: auto
+        )
     ),
     "grid-row-end": (
-        "1": 1,
-        "2": 2,
-        "3": 3,
-        "4": 4,
-        "5": 5,
-        "6": 6,
-        "7": 7,
-        "8": 8,
-        "9": 9,
-        "10": 10,
-        "11": 11,
-        "12": 12,
-        "13": 13,
-        auto: auto
+        property: grid-row-end,
+        prefix: row-end,
+        responsive: true,
+        group: flex-grid,
+        description: "Controls grid row end position.",
+        values: (
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5,
+            "6": 6,
+            "7": 7,
+            "8": 8,
+            "9": 9,
+            "10": 10,
+            "11": 11,
+            "12": 12,
+            "13": 13,
+            auto: auto
+        )
     ),
     "grid-row-span": (
-        "1": span 1 / span 1,
-        "2": span 2 / span 2,
-        "3": span 3 / span 3,
-        "4": span 4 / span 4,
-        "5": span 5 / span 5,
-        "6": span 6 / span 6,
-        "7": span 7 / span 7,
-        "8": span 8 / span 8,
-        "9": span 9 / span 9,
-        "10": span 10 / span 10,
-        "11": span 11 / span 11,
-        "12": span 12 / span 12,
-        full: span 1 / span -1,
-        auto: auto
+        property: grid-row,
+        prefix: row-span,
+        group: flex-grid,
+        description: "Controls grid row span.",
+        values: (
+            "1": span 1 / span 1,
+            "2": span 2 / span 2,
+            "3": span 3 / span 3,
+            "4": span 4 / span 4,
+            "5": span 5 / span 5,
+            "6": span 6 / span 6,
+            "7": span 7 / span 7,
+            "8": span 8 / span 8,
+            "9": span 9 / span 9,
+            "10": span 10 / span 10,
+            "11": span 11 / span 11,
+            "12": span 12 / span 12,
+            full: span 1 / span -1,
+            auto: auto
+        ),
+        aliases: (
+            rowspan: ()
+        )
     ),
     "grid-auto-flow": (
-        row: row,
-        col: column,
-        dense: dense,
-        row-dense: row dense,
-        col-dense: column dense,
-        unset: unset
+        property: grid-auto-flow,
+        prefix: grid-flow,
+        group: flex-grid,
+        description: "Controls grid auto placement.",
+        values: (
+            row: row,
+            col: column,
+            dense: dense,
+            row-dense: row dense,
+            col-dense: column dense,
+            unset: unset
+        )
     ),
     "grid-auto-columns": (
-        auto: auto,
-        min: min-content,
-        max: max-content,
-        fr: minmax( 0, 1fr ),
+        property: grid-auto-columns,
+        prefix: grid-auto-cols,
+        group: flex-grid,
+        description: "Controls grid auto column sizing.",
+        values: (
+            auto: auto,
+            min: min-content,
+            max: max-content,
+            fr: minmax( 0, 1fr )
+        )
     ),
     "grid-auto-rows": (
-        auto: auto,
-        min: min-content,
-        max: max-content,
-        fr: minmax( 0, 1fr ),
+        property: grid-auto-rows,
+        prefix: grid-auto-rows,
+        group: flex-grid,
+        description: "Controls grid auto row sizing.",
+        values: (
+            auto: auto,
+            min: min-content,
+            max: max-content,
+            fr: minmax( 0, 1fr )
+        )
     ),
-    "gap": map.merge( $kendo-spacing, (
-        // TODO: remove this extension once we fix docs
-        xs: k-spacing(1),
-        sm: k-spacing(2),
-        md: k-spacing(3),
-        lg: k-spacing(4),
-        xl: k-spacing(6),
-        thin: k-spacing(0.5),
-        hair: k-spacing(1px)
-    )),
+    "gap": (
+        property: (
+            gap: gap,
+            gap-x: column-gap,
+            gap-y: row-gap
+        ),
+        responsive: true,
+        group: flex-grid,
+        description: "Controls the gap between grid and flex items.",
+        css-var: spacing,
+        values: map.merge( $kendo-spacing, (
+            // TODO: remove this extension once we fix docs
+            xs: k-spacing(1),
+            sm: k-spacing(2),
+            md: k-spacing(3),
+            lg: k-spacing(4),
+            xl: k-spacing(6),
+            thin: k-spacing(0.5),
+            hair: k-spacing(1px)
+        ))
+    ),
     "align-content": (
-        normal: normal,
-        stretch: stretch,
-        center: center,
-        start: start,
-        end: end,
-        flex-start: flex-start,
-        flex-end: flex-end,
-        baseline: baseline,
-        first-baseline: first baseline,
-        last-baseline: last baseline,
-        between: space-between,
-        around: space-around,
-        evenly: space-evenly
+        property: align-content,
+        prefix: align-content,
+        group: flex-grid,
+        description: "Controls content alignment along the cross axis.",
+        values: (
+            normal: normal,
+            stretch: stretch,
+            center: center,
+            start: start,
+            end: end,
+            flex-start: flex-start,
+            flex-end: flex-end,
+            baseline: baseline,
+            first-baseline: first baseline,
+            last-baseline: last baseline,
+            between: space-between,
+            around: space-around,
+            evenly: space-evenly
+        )
     ),
     "align-items": (
-        normal: normal,
-        stretch: stretch,
-        center: center,
-        start: start,
-        end: end,
-        flex-start: flex-start,
-        flex-end: flex-end,
-        baseline: baseline,
-        first-baseline: first baseline,
-        last-baseline: last baseline,
-        self-start: self-start,
-        self-end: self-end
+        property: align-items,
+        prefix: align-items,
+        group: flex-grid,
+        description: "Controls item alignment along the cross axis.",
+        values: (
+            normal: normal,
+            stretch: stretch,
+            center: center,
+            start: start,
+            end: end,
+            flex-start: flex-start,
+            flex-end: flex-end,
+            baseline: baseline,
+            first-baseline: first baseline,
+            last-baseline: last baseline,
+            self-start: self-start,
+            self-end: self-end
+        )
     ),
     "align-self": (
-        auto: auto,
-        normal: normal,
-        stretch: stretch,
-        center: center,
-        start: start,
-        end: end,
-        flex-start: flex-start,
-        flex-end: flex-end,
-        baseline: baseline,
-        first-baseline: first baseline,
-        last-baseline: last baseline,
-        self-start: self-start,
-        self-end: self-end
+        property: align-self,
+        prefix: align-self,
+        group: flex-grid,
+        description: "Controls self alignment along the cross axis.",
+        values: (
+            auto: auto,
+            normal: normal,
+            stretch: stretch,
+            center: center,
+            start: start,
+            end: end,
+            flex-start: flex-start,
+            flex-end: flex-end,
+            baseline: baseline,
+            first-baseline: first baseline,
+            last-baseline: last baseline,
+            self-start: self-start,
+            self-end: self-end
+        )
     ),
     "justify-content": (
-        normal: normal,
-        stretch: stretch,
-        center: center,
-        start: start,
-        end: end,
-        flex-start: flex-start,
-        flex-end: flex-end,
-        left: left,
-        right: right,
-        baseline: baseline,
-        first-baseline: first baseline,
-        last-baseline: last baseline,
-        between: space-between,
-        around: space-around,
-        evenly: space-evenly
+        property: justify-content,
+        prefix: justify-content,
+        group: flex-grid,
+        description: "Controls content justification along the main axis.",
+        values: (
+            normal: normal,
+            stretch: stretch,
+            center: center,
+            start: start,
+            end: end,
+            flex-start: flex-start,
+            flex-end: flex-end,
+            left: left,
+            right: right,
+            baseline: baseline,
+            first-baseline: first baseline,
+            last-baseline: last baseline,
+            between: space-between,
+            around: space-around,
+            evenly: space-evenly
+        )
     ),
     "justify-items": (
-        normal: normal,
-        stretch: stretch,
-        center: center,
-        start: start,
-        end: end,
-        flex-start: flex-start,
-        flex-end: flex-end,
-        self-start: self-start,
-        self-end: self-end,
-        left: left,
-        right: right,
-        baseline: baseline,
-        first-baseline: first baseline,
-        last-baseline: last baseline
+        property: justify-items,
+        prefix: justify-items,
+        group: flex-grid,
+        description: "Controls item justification along the inline axis.",
+        values: (
+            normal: normal,
+            stretch: stretch,
+            center: center,
+            start: start,
+            end: end,
+            flex-start: flex-start,
+            flex-end: flex-end,
+            self-start: self-start,
+            self-end: self-end,
+            left: left,
+            right: right,
+            baseline: baseline,
+            first-baseline: first baseline,
+            last-baseline: last baseline
+        )
     ),
     "justify-self": (
-        auto: auto,
-        normal: normal,
-        stretch: stretch,
-        center: center,
-        start: start,
-        end: end,
-        flex-start: flex-start,
-        flex-end: flex-end,
-        self-start: self-start,
-        self-end: self-end,
-        baseline: baseline,
-        first-baseline: first baseline,
-        last-baseline: last baseline
+        property: justify-self,
+        prefix: justify-self,
+        group: flex-grid,
+        description: "Controls self justification along the inline axis.",
+        values: (
+            auto: auto,
+            normal: normal,
+            stretch: stretch,
+            center: center,
+            start: start,
+            end: end,
+            flex-start: flex-start,
+            flex-end: flex-end,
+            self-start: self-start,
+            self-end: self-end,
+            baseline: baseline,
+            first-baseline: first baseline,
+            last-baseline: last baseline
+        )
     ),
     "place-content": (
-        normal: normal,
-        stretch: stretch,
-        center: center,
-        start: start,
-        end: end,
-        flex-start: flex-start,
-        flex-end: flex-end,
-        baseline: baseline,
-        between: space-between,
-        around: space-around,
-        evenly: space-evenly
+        property: place-content,
+        prefix: place-content,
+        group: flex-grid,
+        description: "Controls content placement alignment.",
+        values: (
+            normal: normal,
+            stretch: stretch,
+            center: center,
+            start: start,
+            end: end,
+            flex-start: flex-start,
+            flex-end: flex-end,
+            baseline: baseline,
+            between: space-between,
+            around: space-around,
+            evenly: space-evenly
+        )
     ),
     "place-items": (
-        normal: normal,
-        stretch: stretch,
-        center: center,
-        start: start,
-        end: end,
-        flex-start: flex-start,
-        flex-end: flex-end,
-        self-start: self-start,
-        self-end: self-end,
-        baseline: baseline
+        property: place-items,
+        prefix: place-items,
+        group: flex-grid,
+        description: "Controls item placement alignment.",
+        values: (
+            normal: normal,
+            stretch: stretch,
+            center: center,
+            start: start,
+            end: end,
+            flex-start: flex-start,
+            flex-end: flex-end,
+            self-start: self-start,
+            self-end: self-end,
+            baseline: baseline
+        )
     ),
     "place-self": (
-        auto: auto,
-        normal: normal,
-        stretch: stretch,
-        center: center,
-        start: start,
-        end: end,
-        flex-start: flex-start,
-        flex-end: flex-end,
-        self-start: self-start,
-        self-end: self-end,
-        baseline: baseline
+        property: place-self,
+        prefix: place-self,
+        group: flex-grid,
+        description: "Controls self placement alignment.",
+        values: (
+            auto: auto,
+            normal: normal,
+            stretch: stretch,
+            center: center,
+            start: start,
+            end: end,
+            flex-start: flex-start,
+            flex-end: flex-end,
+            self-start: self-start,
+            self-end: self-end,
+            baseline: baseline
+        )
     ),
-    "margin": k-map-merge(
-        $kendo-spacing, k-map-negate($kendo-spacing),
-        (
-        // TODO: remove this extension once we fix docs
-        xs: k-spacing(1),
-        sm: k-spacing(2),
-        md: k-spacing(3),
-        lg: k-spacing(4),
-        xl: k-spacing(6),
-        thin: k-spacing(0.5),
-        hair: k-spacing(1px),
-        auto: auto
-    )),
-    "padding": map.merge( $kendo-spacing, (
-        // TODO: remove this extension once we fix docs
-        xs: k-spacing(1),
-        sm: k-spacing(2),
-        md: k-spacing(3),
-        lg: k-spacing(4),
-        xl: k-spacing(6),
-        thin: k-spacing(0.5),
-        hair: k-spacing(1px)
-    )),
+    "margin": (
+        property: (
+            m: margin,
+            mt: margin-top,
+            mr: margin-right,
+            mb: margin-bottom,
+            ml: margin-left,
+            mx: margin-inline,
+            my: margin-block
+        ),
+        group: spacing,
+        description: "Controls the margin spacing around elements.",
+        css-var: spacing,
+        values: k-map-merge(
+            $kendo-spacing, k-map-negate($kendo-spacing),
+            (
+            // TODO: remove this extension once we fix docs
+            xs: k-spacing(1),
+            sm: k-spacing(2),
+            md: k-spacing(3),
+            lg: k-spacing(4),
+            xl: k-spacing(6),
+            thin: k-spacing(0.5),
+            hair: k-spacing(1px),
+            auto: auto
+        ))
+    ),
+    "padding": (
+        property: (
+            p: padding,
+            pt: padding-top,
+            pr: padding-right,
+            pb: padding-bottom,
+            pl: padding-left,
+            px: padding-inline,
+            py: padding-block
+        ),
+        responsive: true,
+        responsive-prefixes: (px, py),
+        group: spacing,
+        description: "Controls the padding spacing inside elements.",
+        css-var: spacing,
+        values: map.merge( $kendo-spacing, (
+            // TODO: remove this extension once we fix docs
+            xs: k-spacing(1),
+            sm: k-spacing(2),
+            md: k-spacing(3),
+            lg: k-spacing(4),
+            xl: k-spacing(6),
+            thin: k-spacing(0.5),
+            hair: k-spacing(1px)
+        ))
+    ),
     "space-between": (),
 
     // Sizing
-    "width": map.merge( $kendo-sizing, (
-        screen: 100vw
-    )),
+    "width": (
+        property: width,
+        prefix: w,
+        group: sizing,
+        description: "Controls element width.",
+        values: map.merge( $kendo-sizing, (
+            screen: 100vw
+        ))
+    ),
     "min-width": (
-        "0": 0,
-        full: 100%,
-        screen: 100vw,
-        min: min-content,
-        max: max-content,
-        fit: fit-content
+        property: min-width,
+        prefix: min-w,
+        group: sizing,
+        description: "Controls element minimum width.",
+        values: (
+            "0": 0,
+            full: 100%,
+            screen: 100vw,
+            min: min-content,
+            max: max-content,
+            fit: fit-content
+        )
     ),
     "max-width": (
-        none: none,
-        "0": 0,
-        full: 100%,
-        screen: 100vw,
-        min: min-content,
-        max: max-content,
-        fit: fit-content
+        property: max-width,
+        prefix: max-w,
+        group: sizing,
+        description: "Controls element maximum width.",
+        values: (
+            none: none,
+            "0": 0,
+            full: 100%,
+            screen: 100vw,
+            min: min-content,
+            max: max-content,
+            fit: fit-content
+        )
     ),
-    "height": map.merge( $kendo-sizing, (
-        screen: 100vh
-    )),
+    "height": (
+        property: height,
+        prefix: h,
+        group: sizing,
+        description: "Controls element height.",
+        values: map.merge( $kendo-sizing, (
+            screen: 100vh
+        ))
+    ),
     "min-height": (
-        "0": 0,
-        full: 100%,
-        screen: 100vh,
-        min: min-content,
-        max: max-content,
-        fit: fit-content
+        property: min-height,
+        prefix: min-h,
+        group: sizing,
+        description: "Controls element minimum height.",
+        values: (
+            "0": 0,
+            full: 100%,
+            screen: 100vh,
+            min: min-content,
+            max: max-content,
+            fit: fit-content
+        )
     ),
     "max-height": (
-        none: none,
-        "0": 0,
-        full: 100%,
-        screen: 100vh,
-        min: min-content,
-        max: max-content,
-        fit: fit-content
+        property: max-height,
+        prefix: max-h,
+        group: sizing,
+        description: "Controls element maximum height.",
+        values: (
+            none: none,
+            "0": 0,
+            full: 100%,
+            screen: 100vh,
+            min: min-content,
+            max: max-content,
+            fit: fit-content
+        )
     ),
 
     // Typography
@@ -629,202 +970,393 @@ $kendo-utils: (
     "font-size": (),
     "font-smoothing": (),
     "font-style": (
-        italic: italic,
-        non-italic: normal,
-        oblique: oblique
+        property: font-style,
+        prefix: font-style,
+        group: typography,
+        description: "Controls font style.",
+        css-var: font-style,
+        values: (
+            italic: italic,
+            non-italic: normal,
+            oblique: oblique
+        )
     ),
     "font-weight": (),
     "font-variant-numeric": (),
     "letter-spacing": (),
     "line-height": (),
     "list-style-type": (
-        none,
-        disc,
-        decimal
+        property: list-style-type,
+        prefix: list,
+        group: typography,
+        description: "Controls list marker style.",
+        values: (
+            none,
+            disc,
+            decimal
+        )
     ),
     "list-style-position": (),
     "text-align": (
-        left,
-        right,
-        center,
-        justify,
-        start,
-        end
+        property: text-align,
+        prefix: text,
+        group: typography,
+        description: "Controls text alignment.",
+        values: (
+            left,
+            right,
+            center,
+            justify,
+            start,
+            end
+        )
     ),
-    "text-color": map.merge( $kendo-util-colors , (
-        "inherit": inherit,
-        "current": currentColor,
-        "transparent": transparent,
-        "black": black,
-        "white": white
-    )),
+    "text-color": (
+        property: color,
+        prefix: text,
+        group: typography,
+        description: "Controls text color.",
+        css-var: color,
+        values: map.merge( $kendo-colors , (
+            "inherit": inherit,
+            "current": currentColor,
+            "transparent": transparent,
+            "black": black,
+            "white": white
+        )),
+        aliases: (
+            color: ()
+        )
+    ),
     "text-decoration": (
-        underline: underline,
-        overline: overline,
-        line-through: line-through,
-        no-underline: none
+        property: text-decoration,
+        prefix: text,
+        group: typography,
+        description: "Controls text decoration.",
+        values: (
+            underline: underline,
+            overline: overline,
+            line-through: line-through,
+            no-underline: none
+        )
     ),
     "text-decoration-width": (),
     "text-decoration-style": (),
     "text-decoration-color": (),
     "text-decoration-offset": (),
     "text-transform": (
-        uppercase: uppercase,
-        lowercase: lowercase,
-        capitalize: capitalize,
-        normal-case: none
+        property: text-transform,
+        prefix: text,
+        group: typography,
+        description: "Controls text capitalization.",
+        values: (
+            uppercase: uppercase,
+            lowercase: lowercase,
+            capitalize: capitalize,
+            normal-case: none
+        )
     ),
     "text-overflow": (
-        clip: clip,
-        ellipsis: ellipsis
+        property: text-overflow,
+        prefix: text,
+        group: typography,
+        description: "Controls text overflow behavior.",
+        values: (
+            clip: clip,
+            ellipsis: ellipsis
+        )
     ),
     "text-indent": (),
     "vertical-align": (
-        baseline,
-        top,
-        middle,
-        bottom,
-        text-top,
-        text-bottom,
-        sub,
-        super
+        property: vertical-align,
+        prefix: align,
+        group: typography,
+        description: "Controls vertical alignment.",
+        values: (
+            baseline,
+            top,
+            middle,
+            bottom,
+            text-top,
+            text-bottom,
+            sub,
+            super
+        )
     ),
     "white-space": (
-        normal,
-        nowrap,
-        pre,
-        pre-line,
-        pre-wrap,
-        break-spaces
+        property: white-space,
+        prefix: white-space,
+        group: typography,
+        description: "Controls white space handling.",
+        values: (
+            normal,
+            nowrap,
+            pre,
+            pre-line,
+            pre-wrap,
+            break-spaces
+        ),
+        aliases: (
+            whitespace: (),
+            text: (
+                nowrap: nowrap
+            )
+        )
     ),
     "word-break": (),
 
     // Background
     "background-clip": (
-        border: border-box,
-        padding: padding-box,
-        content: content-box,
-        text: text
+        property: background-clip,
+        prefix: bg-clip,
+        group: background,
+        description: "Controls background clip area.",
+        values: (
+            border: border-box,
+            padding: padding-box,
+            content: content-box,
+            text: text
+        )
     ),
-    "background-color": map.merge( $kendo-util-colors, (
-        "inherit": inherit,
-        "transparent": transparent,
-        "black": black,
-        "white": white
-    )),
+    "background-color": (
+        property: background-color,
+        prefix: bg,
+        group: background,
+        description: "Controls background color.",
+        css-var: color,
+        values: map.merge( $kendo-colors, (
+            "inherit": inherit,
+            "transparent": transparent,
+            "black": black,
+            "white": white
+        ))
+    ),
     "background-position": (
-        center: center,
-        top: top,
-        right: right,
-        bottom: bottom,
-        left: left,
-        top-left: top left,
-        top-right: top right,
-        bottom-left: bottom left,
-        bottom-right: bottom right
+        property: background-position,
+        prefix: bg,
+        group: background,
+        description: "Controls background position.",
+        values: (
+            center: center,
+            top: top,
+            right: right,
+            bottom: bottom,
+            left: left,
+            top-left: top left,
+            top-right: top right,
+            bottom-left: bottom left,
+            bottom-right: bottom right
+        )
     ),
     "background-size": (
-        auto,
-        cover,
-        contain
+        property: background-size,
+        prefix: bg,
+        group: background,
+        description: "Controls background size.",
+        values: (
+            auto,
+            cover,
+            contain
+        )
     ),
 
     // Border
     "border-width": (
-        DEFAULT: 1px,
-        "0": 0,
-        "2": 2px,
-        "4": 4px,
-        "8": 8px
+        property: (
+            border: border-width,
+            border-t: border-top-width,
+            border-r: border-right-width,
+            border-b: border-bottom-width,
+            border-l: border-left-width,
+            border-x: ( border-left-width, border-right-width ),
+            border-y: ( border-top-width, border-bottom-width )
+        ),
+        group: border,
+        description: "Controls border width.",
+        values: (
+            DEFAULT: 1px,
+            "0": 0,
+            "2": 2px,
+            "4": 4px,
+            "8": 8px
+        )
     ),
     "border-style": (
-        solid,
-        dashed,
-        dotted,
-        double,
-        // groove,
-        // ridge,
-        inset,
-        outset,
-        hidden,
-        none
+        property: (
+            border: border-style,
+            border-t: border-top-style,
+            border-r: border-right-style,
+            border-b: border-bottom-style,
+            border-l: border-left-style,
+            border-x: border-inline-style,
+            border-y: border-block-style
+        ),
+        group: border,
+        description: "Controls border style.",
+        values: (
+            solid,
+            dashed,
+            dotted,
+            double,
+            // groove,
+            // ridge,
+            inset,
+            outset,
+            hidden,
+            none
+        )
     ),
-    "border-color": map.merge( $kendo-util-colors, (
-        "inherit": inherit,
-        "current": currentColor,
-        "transparent": transparent,
-        "black": black,
-        "white": white
-    )),
-    "border-radius": $kendo-border-radii,
+    "border-color": (
+        property: border-color,
+        prefix: border,
+        group: border,
+        description: "Controls border color.",
+        css-var: color,
+        values: map.merge( $kendo-colors, (
+            "inherit": inherit,
+            "current": currentColor,
+            "transparent": transparent,
+            "black": black,
+            "white": white
+        ))
+    ),
+    "border-radius": (
+        property: (
+            rounded: border-radius,
+            rounded-t: ( border-top-left-radius, border-top-right-radius ),
+            rounded-r: ( border-top-right-radius, border-bottom-right-radius ),
+            rounded-b: ( border-bottom-left-radius, border-bottom-right-radius ),
+            rounded-l: ( border-top-left-radius, border-bottom-left-radius ),
+            rounded-tl: border-top-left-radius,
+            rounded-tr: border-top-right-radius,
+            rounded-bl: border-bottom-left-radius,
+            rounded-br: border-bottom-right-radius
+        ),
+        group: border,
+        description: "Controls border radius.",
+        css-var: border-radius,
+        values: $kendo-border-radii
+    ),
     "outline-width": (
-        DEFAULT: 1px,
-        "0": 0,
-        "2": 2px,
-        "4": 4px,
-        "8": 8px
+        property: outline-width,
+        prefix: outline,
+        group: border,
+        description: "Controls outline width.",
+        values: (
+            DEFAULT: 1px,
+            "0": 0,
+            "2": 2px,
+            "4": 4px,
+            "8": 8px
+        )
     ),
     "outline-style": (
-        solid,
-        dashed,
-        dotted,
-        double,
-        // groove,
-        // ridge,
-        inset,
-        outset,
-        none
+        property: outline-style,
+        prefix: outline,
+        group: border,
+        description: "Controls outline style.",
+        values: (
+            solid,
+            dashed,
+            dotted,
+            double,
+            // groove,
+            // ridge,
+            inset,
+            outset,
+            none
+        )
     ),
-    "outline-color": map.merge( $kendo-util-colors, (
-        "inherit": inherit,
-        "current": currentColor,
-        "transparent": transparent,
-        "black": black,
-        "white": white
-    )),
+    "outline-color": (
+        property: outline-color,
+        prefix: outline,
+        group: border,
+        description: "Controls outline color.",
+        css-var: color,
+        values: map.merge( $kendo-colors, (
+            "inherit": inherit,
+            "current": currentColor,
+            "transparent": transparent,
+            "black": black,
+            "white": white
+        ))
+    ),
     "outline-offset": (
-        "0": 0,
-        "1": 1px,
-        "2": 2px,
-        "4": 4px,
-        "8": 8px
+        property: outline-offset,
+        prefix: outline-offset,
+        group: border,
+        description: "Controls outline offset.",
+        values: (
+            "0": 0,
+            "1": 1px,
+            "2": 2px,
+            "4": 4px,
+            "8": 8px
+        )
     ),
 
     // Effects
     "box-shadow": (),
     "box-shadow-color": (),
     "opacity": (
-        "0": 0,
-        "5": 0.05,
-        "10": 0.1,
-        "20": 0.2,
-        "30": 0.3,
-        "40": 0.4,
-        "50": 0.5,
-        "60": 0.6,
-        "70": 0.7,
-        "80": 0.8,
-        "90": 0.9,
-        "100": 1
+        property: opacity,
+        prefix: opacity,
+        group: effects,
+        description: "Controls element opacity.",
+        values: (
+            "0": 0,
+            "5": 0.05,
+            "10": 0.1,
+            "20": 0.2,
+            "30": 0.3,
+            "40": 0.4,
+            "50": 0.5,
+            "60": 0.6,
+            "70": 0.7,
+            "80": 0.8,
+            "90": 0.9,
+            "100": 1
+        )
     ),
 
     // Filter
     "backdrop-blur": (
-        DEFAULT: blur(8px),
-        none: blur(0),
-        sm: blur(4px),
-        md: blur(6px),
-        lg: blur(12px)
+        property: backdrop-filter,
+        prefix: backdrop-blur,
+        group: filter,
+        description: "Controls backdrop blur filter.",
+        values: (
+            DEFAULT: blur(8px),
+            none: blur(0),
+            sm: blur(4px),
+            md: blur(6px),
+            lg: blur(12px)
+        )
     ),
 
     // Table
     "border-collapse": (
-        collapse,
-        separate
+        property: border-collapse,
+        prefix: border,
+        group: table,
+        description: "Controls table border collapse.",
+        values: (
+            collapse,
+            separate
+        )
     ),
     "table-layout": (
-        auto,
-        fixed
+        property: table-layout,
+        prefix: table,
+        group: table,
+        description: "Controls table layout algorithm.",
+        values: (
+            auto,
+            fixed
+        ),
+        aliases: (
+            table-layout: ()
+        )
     ),
 
     // Transition
@@ -832,162 +1364,297 @@ $kendo-utils: (
     // Transform
     "flip": true,
     "scale": (
-        "0": 0,
-        "0.25": .25,
-        "0.5": .5,
-        "0.75": .75,
-        "1": 1,
-        "1.2": 1.25,
-        "1.5": 1.5,
-        "2": 2
+        property: (
+            scale: ( --k-scale-x, --k-scale-y ),
+            scale-x: --k-scale-x,
+            scale-y: --k-scale-y
+        ),
+        group: transform,
+        description: "Controls element scale.",
+        values: (
+            "0": 0,
+            "0.25": .25,
+            "0.5": .5,
+            "0.75": .75,
+            "1": 1,
+            "1.2": 1.25,
+            "1.5": 1.5,
+            "2": 2
+        )
     ),
     "rotate": (
-        "0": 0deg,
-        "45": 45deg,
-        "90": 90deg,
-        "135": 135deg,
-        "180": 180deg,
-        "225": 225deg,
-        "270": 270deg,
-        "315": 315deg
+        property: --k-rotate,
+        prefix: rotate,
+        group: transform,
+        description: "Controls element rotation.",
+        values: (
+            "0": 0deg,
+            "45": 45deg,
+            "90": 90deg,
+            "135": 135deg,
+            "180": 180deg,
+            "225": 225deg,
+            "270": 270deg,
+            "315": 315deg
+        )
     ),
-    "translate": map.remove( $kendo-sizing, "auto", "min", "max", "fit" ),
+    "translate": (
+        property: (
+            translate-x: --k-translate-x,
+            translate-y: --k-translate-y
+        ),
+        group: transform,
+        description: "Controls element translation.",
+        values: map.remove( $kendo-sizing, "auto", "min", "max", "fit" )
+    ),
     "skew": (
-        "0": 0deg,
-        "1": 1deg,
-        "2": 2deg,
-        "3": 3deg,
-        "4": 4deg,
-        "5": 5deg,
-        "6": 6deg,
-        "7": 7deg,
-        "8": 8deg,
-        "9": 9deg,
-        "10": 10deg,
-        "11": 11deg,
-        "12": 12deg
+        property: (
+            skew-x: --k-skew-x,
+            skew-y: --k-skew-y
+        ),
+        group: transform,
+        description: "Controls element skew.",
+        values: (
+            "0": 0deg,
+            "1": 1deg,
+            "2": 2deg,
+            "3": 3deg,
+            "4": 4deg,
+            "5": 5deg,
+            "6": 6deg,
+            "7": 7deg,
+            "8": 8deg,
+            "9": 9deg,
+            "10": 10deg,
+            "11": 11deg,
+            "12": 12deg
+        )
     ),
     "origin": (
-        center: center,
-        top: top,
-        right: right,
-        bottom: bottom,
-        left: left,
-        top-left: top left,
-        top-right: top right,
-        bottom-left: bottom left,
-        bottom-right: bottom right
+        property: transform-origin,
+        prefix: origin,
+        group: transform,
+        description: "Controls transform origin.",
+        values: (
+            center: center,
+            top: top,
+            right: right,
+            bottom: bottom,
+            left: left,
+            top-left: top left,
+            top-right: top right,
+            bottom-left: bottom left,
+            bottom-right: bottom right
+        )
     ),
 
 
     // Interactivity
-    "accent-color": (),
     "appearance": (
-        none,
-        auto
+        property: appearance,
+        prefix: appearance,
+        group: interactivity,
+        description: "Controls native appearance.",
+        values: (
+            none,
+            auto
+        )
     ),
     "cursor": (
-        none,
-        auto,
-        default,
-        context-menu,
-        help,
-        pointer,
-        progress,
-        wait,
-        cell,
-        crosshair,
-        text,
-        vertical-text,
-        alias,
-        copy,
-        move,
-        no-drop,
-        not-allowed,
-        e-resize,
-        n-resize,
-        ne-resize,
-        nw-resize,
-        s-resize,
-        se-resize,
-        sw-resize,
-        w-resize,
-        ew-resize,
-        ns-resize,
-        nesw-resize,
-        nwse-resize,
-        col-resize,
-        row-resize,
-        all-scroll,
-        zoom-in,
-        zoom-out,
-        grab,
-        grabbing
+        property: cursor,
+        prefix: cursor,
+        group: interactivity,
+        description: "Controls cursor style.",
+        values: (
+            none,
+            auto,
+            default,
+            context-menu,
+            help,
+            pointer,
+            progress,
+            wait,
+            cell,
+            crosshair,
+            text,
+            vertical-text,
+            alias,
+            copy,
+            move,
+            no-drop,
+            not-allowed,
+            e-resize,
+            n-resize,
+            ne-resize,
+            nw-resize,
+            s-resize,
+            se-resize,
+            sw-resize,
+            w-resize,
+            ew-resize,
+            ns-resize,
+            nesw-resize,
+            nwse-resize,
+            col-resize,
+            row-resize,
+            all-scroll,
+            zoom-in,
+            zoom-out,
+            grab,
+            grabbing
+        )
     ),
-    "caret-color": (),
     "pointer-events": (
-        none,
-        auto
+        property: pointer-events,
+        prefix: pointer-events,
+        group: interactivity,
+        description: "Controls pointer event behavior.",
+        values: (
+            none,
+            auto
+        )
     ),
     "resize": (
-        DEFAULT: both,
-        none: none,
-        x: horizontal,
-        y: vertical
+        property: resize,
+        prefix: resize,
+        group: interactivity,
+        description: "Controls element resize behavior.",
+        values: (
+            DEFAULT: both,
+            none: none,
+            x: horizontal,
+            y: vertical
+        )
     ),
     "scroll-behavior": (
-        auto,
-        smooth
+        property: scroll-behavior,
+        prefix: scroll,
+        group: interactivity,
+        description: "Controls scroll behavior.",
+        values: (
+            auto,
+            smooth
+        )
     ),
     "scroll-snap-type": (
-        none: none,
-        snap-x: x var(--k-scroll-snap-strictness),
-        snap-y: y var(--k-scroll-snap-strictness),
-        snap-both: both var(--k-scroll-snap-strictness)
+        property: scroll-snap-type,
+        prefix: scroll-snap,
+        group: interactivity,
+        description: "Controls scroll snap type.",
+        values: (
+            none: none,
+            snap-x: x var(--k-scroll-snap-strictness),
+            snap-y: y var(--k-scroll-snap-strictness),
+            snap-both: both var(--k-scroll-snap-strictness)
+        )
     ),
     "scroll-snap-align": (
-        start,
-        end,
-        center,
-        none
+        property: scroll-snap-align,
+        prefix: scroll-snap-align,
+        group: interactivity,
+        description: "Controls scroll snap alignment.",
+        values: (
+            start,
+            end,
+            center,
+            none
+        )
     ),
     "scroll-snap-stop": (
-        normal,
-        always
+        property: scroll-snap-stop,
+        prefix: scroll-snap-stop,
+        group: interactivity,
+        description: "Controls scroll snap stopping behavior.",
+        values: (
+            normal,
+            always
+        )
     ),
-    "scroll-margin": $kendo-spacing,
-    "scroll-padding": $kendo-spacing,
+    "scroll-margin": (
+        property: (
+            scroll-m: scroll-margin,
+            scroll-mt: scroll-margin-top,
+            scroll-mr: scroll-margin-right,
+            scroll-mb: scroll-margin-bottom,
+            scroll-ml: scroll-margin-left,
+            scroll-mx: scroll-margin-inline,
+            scroll-my: scroll-margin-block
+        ),
+        group: interactivity,
+        description: "Controls scroll margin.",
+        values: $kendo-spacing
+    ),
+    "scroll-padding": (
+        property: (
+            scroll-p: scroll-padding,
+            scroll-pt: scroll-padding-top,
+            scroll-pr: scroll-padding-right,
+            scroll-pb: scroll-padding-bottom,
+            scroll-pl: scroll-padding-left,
+            scroll-px: scroll-padding-inline,
+            scroll-py: scroll-padding-block
+        ),
+        group: interactivity,
+        description: "Controls scroll padding.",
+        values: $kendo-spacing
+    ),
     "touch-action": (
-        none,
-        auto,
-        pan-x,
-        pan-left,
-        pan-right,
-        pan-y,
-        pan-up,
-        pan-down,
-        pinch-zoom,
-        manipulation
+        property: touch-action,
+        prefix: touch-action,
+        group: interactivity,
+        description: "Controls touch action behavior.",
+        values: (
+            none,
+            auto,
+            pan-x,
+            pan-left,
+            pan-right,
+            pan-y,
+            pan-up,
+            pan-down,
+            pinch-zoom,
+            manipulation
+        )
     ),
     "user-select": (
-        none,
-        auto,
-        text,
-        all,
-        contain
+        property: user-select,
+        prefix: user-select,
+        group: interactivity,
+        description: "Controls user selection behavior.",
+        values: (
+            none,
+            auto,
+            text,
+            all,
+            contain
+        )
     ),
     "will-change": (
-        auto: auto,
-        scroll: scroll-position,
-        contents: contents,
-        transform: transform
+        property: will-change,
+        prefix: will-change,
+        group: interactivity,
+        description: "Controls will-change hints.",
+        values: (
+            auto: auto,
+            scroll: scroll-position,
+            contents: contents,
+            transform: transform
+        )
     ),
     "fill-stroke": (
-        none: none,
-        inherit: inherit,
-        current: currentColor,
-        "transparent": transparent,
-        "black": black,
-        "white": white
+        property: (
+            fill: fill,
+            stroke: stroke
+        ),
+        group: svg,
+        description: "Controls SVG fill and stroke colors.",
+        values: (
+            none: none,
+            inherit: inherit,
+            current: currentColor,
+            "transparent": transparent,
+            "black": black,
+            "white": white
+        )
     )
 ) !default;

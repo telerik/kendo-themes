@@ -16,20 +16,10 @@
 /// @group transform
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--transform--scale() {
     @include import-once("utils-transform-scale") {
-
-        // Scale utility classes
-        $kendo-utils-scale: map.get( $kendo-utils, "scale" ) !default;
-        @include generate-utils( scale, transform, $kendo-utils-scale, k-scale );
-        @include generate-utils( scale-x, transform, $kendo-utils-scale, k-scale-x );
-        @include generate-utils( scale-y, transform, $kendo-utils-scale, k-scale-y );
-
+        @include generate-utils-from-config("scale");
     }
 }

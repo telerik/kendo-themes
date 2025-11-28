@@ -522,48 +522,21 @@
 /// @group grid-column-responsive
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--grid-column-start-end() {
     @include import-once("utils-flex-grid-grid-column-start-end") {
+        @include generate-utils-from-config("grid-column-start");
+        @include generate-utils-from-config("grid-column-end");
+        @include generate-utils-from-config("grid-column-span");
 
-    // Grid column span utility classes
-    $kendo-utils-grid-column-span: map.get( $kendo-utils, "grid-column-span" ) !default;
-    @include generate-utils( col-span, grid-column, $kendo-utils-grid-column-span );
-
-    // Grid column start utility classes
-    $kendo-utils-grid-column-start: map.get( $kendo-utils, "grid-column-start" ) !default;
-    @include generate-utils( col-start, grid-column-start, $kendo-utils-grid-column-start );
-
-    // Grid column end utility classes
-    $kendo-utils-grid-column-end: map.get( $kendo-utils, "grid-column-end" ) !default;
-    @include generate-utils( col-end, grid-column-end, $kendo-utils-grid-column-end );
-
-
-    // Legacy aliases
-    @include generate-utils( colspan, grid-column, $kendo-utils-grid-column-span );
-    .#{$kendo-prefix}colspan-all { @extend .#{$kendo-prefix}colspan-full !optional; }
-    .\!#{$kendo-prefix}colspan-all { @extend .\!#{$kendo-prefix}colspan-full !optional; }
-
+        // Legacy 'all' alias for 'full' (only for colspan, not col-span)
+        .#{$kendo-prefix}colspan-all { @extend .#{$kendo-prefix}colspan-full !optional; }
     }
 }
 
 @mixin kendo-utils--flex-grid--grid-column-start-end--responsive($key) {
-
-    // Grid column span responsive utility classes
-    $kendo-utils-grid-column-span: map.get( $kendo-utils, "grid-column-span" ) !default;
-    @include generate-utils( col-span-#{$key}, grid-column, $kendo-utils-grid-column-span, $important: false );
-
-    // Grid column start responsive utility classes
-    $kendo-utils-grid-column-start: map.get( $kendo-utils, "grid-column-start" ) !default;
-    @include generate-utils( col-start-#{$key}, grid-column-start, $kendo-utils-grid-column-start, $important: false );
-
-    // Grid column end responsive utility classes
-    $kendo-utils-grid-column-end: map.get( $kendo-utils, "grid-column-end" ) !default;
-    @include generate-utils( col-end-#{$key}, grid-column-end, $kendo-utils-grid-column-end, $important: false );
-
+    @include generate-utils-from-config-responsive("grid-column-start", $key);
+    @include generate-utils-from-config-responsive("grid-column-end", $key);
+    @include generate-utils-from-config-responsive("grid-column-span", $key);
 }

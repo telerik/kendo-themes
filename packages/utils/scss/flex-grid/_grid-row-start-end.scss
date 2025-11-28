@@ -434,46 +434,21 @@
 /// @group grid-row-responsive
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--grid-row-start-end() {
     @include import-once("utils-flex-grid-grid-row-start-end") {
+        @include generate-utils-from-config("grid-row-start");
+        @include generate-utils-from-config("grid-row-end");
+        @include generate-utils-from-config("grid-row-span");
 
-        // Grid row start/end utility classes
-        $kendo-utils-grid-row-start: map.get( $kendo-utils, "grid-row-start" ) !default;
-        @include generate-utils( row-start, grid-row-start, $kendo-utils-grid-row-start );
-
-
-        // Grid row start/end utility classes
-        $kendo-utils-grid-row-end: map.get( $kendo-utils, "grid-row-end" ) !default;
-        @include generate-utils( row-end, grid-row-end, $kendo-utils-grid-row-end );
-
-
-        // Grid row span utility classes
-        $kendo-utils-grid-row-span: map.get( $kendo-utils, "grid-row-span" ) !default;
-        @include generate-utils( row-span, grid-row, $kendo-utils-grid-row-span );
-
-
-        // Legacy aliases
-        @include generate-utils( rowspan, grid-row, $kendo-utils-grid-row-span );
+        // Legacy 'all' alias for 'full' (only for rowspan, not row-span)
         .#{$kendo-prefix}rowspan-all { @extend .#{$kendo-prefix}rowspan-full !optional; }
-        .\!#{$kendo-prefix}rowspan-all { @extend .\!#{$kendo-prefix}rowspan-full !optional; }
-
     }
 }
 
 @mixin kendo-utils--flex-grid--grid-row-start-end--responsive($key) {
-
-    // Grid row start responsive utility classes
-    $kendo-utils-grid-row-start: map.get( $kendo-utils, "grid-row-start" ) !default;
-    @include generate-utils( row-start-#{$key}, grid-row-start, $kendo-utils-grid-row-start, $important: false );
-
-    // Grid row end responsive utility classes
-    $kendo-utils-grid-row-end: map.get( $kendo-utils, "grid-row-end" ) !default;
-    @include generate-utils( row-end-#{$key}, grid-row-end, $kendo-utils-grid-row-end, $important: false );
-
+    @include generate-utils-from-config-responsive("grid-row-start", $key);
+    @include generate-utils-from-config-responsive("grid-row-end", $key);
+    @include generate-utils-from-config-responsive("grid-row-span", $key);
 }

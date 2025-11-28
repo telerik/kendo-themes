@@ -76,18 +76,10 @@
 /// @group align-self
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--align-self() {
     @include import-once("utils-flex-grid-align-self") {
-
-        // Align self utility classes
-        $kendo-utils-align-self: map.get( $kendo-utils, "align-self" ) !default;
-        @include generate-utils( align-self, align-self, $kendo-utils-align-self );
-
+        @include generate-utils-from-config("align-self");
     }
 }

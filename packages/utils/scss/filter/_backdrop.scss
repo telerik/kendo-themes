@@ -28,18 +28,10 @@
 /// @group backdrop-blur
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--filter--backdrop() {
     @include import-once("utils-filter-backdrop") {
-
-        // backdrop utility classes
-        $kendo-utils-backdrop-blur: map.get( $kendo-utils, "backdrop-blur" ) !default;
-        @include generate-utils( backdrop-blur, backdrop-filter, $kendo-utils-backdrop-blur );
-
+        @include generate-utils-from-config("backdrop-blur");
     }
 }

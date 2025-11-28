@@ -64,18 +64,10 @@
 /// @group place-self
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--place-self() {
     @include import-once("utils-flex-grid-place-self") {
-
-        // Place self utility classes
-        $kendo-utils-place-self: map.get( $kendo-utils, "place-self" ) !default;
-        @include generate-utils( place-self, place-self, $kendo-utils-place-self );
-
+        @include generate-utils-from-config("place-self");
     }
 }
