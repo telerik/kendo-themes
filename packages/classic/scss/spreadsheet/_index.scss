@@ -1,6 +1,7 @@
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../icons/_index.scss" as *;
+@use "../input/_index.scss" as *;
 @use "../utils/_index.scss" as *;
 @use "../button/_index.scss" as *;
 @use "../checkbox/_index.scss" as *;
@@ -26,6 +27,7 @@
 @mixin kendo-spreadsheet--styles() {
     @include import-once( "spreadsheet" ) {
         @include core-styles();
+        @include kendo-input--styles();
         @include kendo-button--styles();
         @include kendo-checkbox--styles();
         @include kendo-radio--styles();

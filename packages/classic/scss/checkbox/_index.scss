@@ -1,5 +1,6 @@
 // Dependencies
 @use "../core/_index.scss" as *;
+@use "../list/_index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
@@ -10,6 +11,7 @@
 @mixin kendo-checkbox--styles() {
     @include import-once( "checkbox" ) {
         @include core-styles();
+        @include kendo-list--styles();
         @include kendo-checkbox--layout();
         @include kendo-checkbox--theme();
     }

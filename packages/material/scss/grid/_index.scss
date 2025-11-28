@@ -1,5 +1,7 @@
 // Dependencies
 @use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../popup/_index.scss" as *;
 @use "../utils/_index.scss" as *;
 @use "../adaptive/_index.scss" as *;
 @use "../progressbar/_index.scss" as *;
@@ -24,6 +26,7 @@
 @use "../table/_index.scss" as *;
 @use "../tabstrip/_index.scss" as *;
 @use "../column-menu/_index.scss" as *;
+@use "../forms/_index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
@@ -34,6 +37,8 @@
 @mixin kendo-grid--styles() {
     @include import-once( "grid" ) {
         @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-popup--styles();
         @include kendo-adaptive--styles();
         @include kendo-progressbar--styles();
         @include kendo-button--styles();
@@ -56,6 +61,7 @@
         @include kendo-list--styles();
         @include kendo-table--styles();
         @include kendo-tabstrip--styles();
+        @include kendo-form--styles();
         @include kendo-grid--layout();
         @include kendo-grid--theme();
         @include kendo-utils--interactivity--touch-action();

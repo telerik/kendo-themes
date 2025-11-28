@@ -1,5 +1,6 @@
 // Dependencies
 @use "../core/_index.scss" as *;
+@use "../list/_index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
@@ -10,6 +11,7 @@
 @mixin kendo-table--styles() {
     @include import-once( "table" ) {
         @include core-styles();
+        @include kendo-list--styles();
         @include kendo-table--layout();
         @include kendo-table--theme();
     }

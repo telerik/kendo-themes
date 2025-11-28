@@ -1,5 +1,6 @@
 // Dependencies
 @use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
@@ -10,6 +11,7 @@
 @mixin kendo-color-preview--styles() {
     @include import-once( "color-preview" ) {
         @include core-styles();
+        @include kendo-icon--styles();
         @include kendo-color-preview--layout();
         @include kendo-color-preview--theme();
     }

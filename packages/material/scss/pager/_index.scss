@@ -1,6 +1,7 @@
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../icons/_index.scss" as *;
+@use "../list/_index.scss" as *;
 @use "../dropdownlist/_index.scss" as *;
 @use "../button/_index.scss" as *;
 
@@ -13,6 +14,7 @@
 @mixin kendo-pager--styles() {
     @include import-once( "pager" ) {
         @include core-styles();
+        @include kendo-list--styles();
         @include kendo-dropdown-list--styles();
         @include kendo-icon--styles();
         @include kendo-button--styles();
