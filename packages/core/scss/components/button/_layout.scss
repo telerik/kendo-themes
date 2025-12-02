@@ -1,19 +1,51 @@
 @use "sass:map";
 @use "../../mixins/index.scss" as *;
 @use "../../color-system/_constants.scss" as *;
+@use "../../border-radii/index.scss" as *;
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "../../z-index/index.scss" as *;
 @use "../../motion/index.scss" as *;
 
+@mixin kendo-button-sizes-controller($sizes, $default-size: md) {
+    .k-button {
+        --kendo-button-padding-x: #{map.get(map.get($sizes, $default-size), padding-x)};
+        --kendo-button-padding-y: #{map.get(map.get($sizes, $default-size), padding-y)};
+        --kendo-button-font-size: #{map.get(map.get($sizes, $default-size), font-size)};
+        --kendo-button-line-height: #{map.get(map.get($sizes, $default-size), line-height)};
+
+        @each $size, $size-props in $sizes {
+            &.k-button-#{$size} {
+                --kendo-button-padding-x: #{map.get($size-props, padding-x)};
+                --kendo-button-padding-y: #{map.get($size-props, padding-y)};
+                --kendo-button-font-size: #{map.get($size-props, font-size)};
+                --kendo-button-line-height: #{map.get($size-props, line-height)};
+            }
+        }
+    }
+}
+
+@mixin kendo-button-roundness-controller($roundness, $default-roundness: md) {
+    .k-button {
+        --kendo-button-radius: #{k-border-radius($default-roundness)};
+
+        @each $radius in $roundness {
+            &.k-rounded-#{$radius} {
+                --kendo-button-radius: #{k-border-radius($radius)};
+            }
+        }
+    }
+}
+
 @mixin kendo-button--layout-base() {
+    @include kendo-button-sizes-controller($kendo-button-sizes, md);
+    @include kendo-button-roundness-controller($kendo-button-roundness, md);
 
     // Button
     .k-button {
         box-sizing: border-box;
         border-width: $kendo-button-border-width;
         border-style: solid;
-        border-radius: $kendo-button-border-radius;
         color: inherit;
         background: none;
         font-family: $kendo-button-font-family;
@@ -55,49 +87,22 @@
             text-decoration: none;
             outline: 0;
         }
-    }
 
+        // Button Radius
+        border-radius: var(--kendo-button-radius);
 
-    // Icon Button
-    .k-icon-button {
-        gap: 0;
+        // Button sizes
+        padding-block: var(--kendo-button-padding-y);
+        padding-inline: var(--kendo-button-padding-x);
+        font-size: var(--kendo-button-font-size);
+        line-height: var(--kendo-line-height);
 
-        .k-icon {
-            display: inline-flex;
-        }
-    }
-
-
-    // Content
-    .k-button-icon {
-        color: inherit;
-        align-self: center;
-        position: relative;
-    }
-
-    .k-button-text {}
-
-
-    // Sizes
-    @each $size, $size-props in $kendo-button-sizes {
-        $_padding-x: map.get( $size-props, padding-x );
-        $_padding-y: map.get( $size-props, padding-y );
-        $_font-size: map.get( $size-props, font-size );
-        $_line-height: map.get( $size-props, line-height );
-
-        .k-button-#{$size} {
-            padding-block: $_padding-y;
-            padding-inline: $_padding-x;
-            font-size: $_font-size;
-            line-height: $_line-height;
-        }
-
-        .k-button-#{$size}.k-icon-button {
-            padding: $_padding-y;
+        &.k-icon-button {
+            padding: var(--kendo-button-padding-y);
 
             .k-button-icon {
-                min-width: calc( #{$_font-size} * #{$_line-height} );
-                min-height: calc( #{$_font-size} * #{$_line-height} );
+                min-width: calc(#{var(--kendo-button-font-size)} * #{var(--kendo-line-height)});
+                min-height: calc(#{var(--kendo-button-font-size)} * #{var(--kendo-line-height)});
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
@@ -139,14 +144,89 @@
                 }
             }
         }
+
+        // Flat button
+        &.k-button-flat {
+            // Overlay background
+            &::before {
+                display: block;
+            }
+
+            // Focus ring
+            &::after {
+                box-shadow: inset 0 0 0 2px currentColor;
+                display: block;
+            }
+
+            &:focus::after,
+            &.k-focus::after {
+                opacity: $kendo-flat-button-focus-ring-opacity;
+            }
+        }
+
+        &.k-button-outline {
+
+            &::after {
+                box-shadow: 0 0 0 2px currentColor;
+                display: block;
+            }
+
+            &:focus::after,
+            &.k-focus::after {
+                opacity: $kendo-flat-button-focus-ring-opacity;
+            }
+        }
+
+        // Link button
+        &.k-button-link {
+            &:hover,
+            &.k-hover {
+                text-decoration: underline;
+            }
+
+            &::after {
+                box-shadow: inset 0 0 0 2px currentColor;
+                display: block;
+            }
+
+            &:focus::after,
+            &.k-focus::after {
+                opacity: $kendo-flat-button-focus-ring-opacity;
+            }
+        }
+
+        // Clear button
+        &.k-button-clear:focus,
+        &.k-button-clear.k-focus,
+        &.k-button-clear:active {
+            &::after {
+                background-color: currentColor;
+                opacity: $kendo-clear-button-focus-opacity;
+                display: block;
+            }
+        }
     }
 
+    // Icon Button
+    .k-icon-button {
+        gap: 0;
+
+        .k-icon {
+            display: inline-flex;
+        }
+    }
+
+    // Content
+    .k-button-icon {
+        color: inherit;
+        align-self: center;
+        position: relative;
+    }
 
     // Button shape
     .k-button-square {
         aspect-ratio: 1;
     }
-
 
     // Button group
     .k-button-group {
@@ -164,7 +244,7 @@
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         > .k-button + .k-button {
-            margin-inline-start: if( $kendo-button-border-width == 0, null, calc( -1 * $kendo-button-border-width ) );
+            margin-inline-start: if($kendo-button-border-width == 0, null, calc(-1 * $kendo-button-border-width));
         }
 
         > .k-button:hover,
@@ -202,84 +282,25 @@
         }
     }
 
-
-    // Flat button
-    .k-button-flat {
-        border-color: transparent !important; // stylelint-disable-line declaration-no-important
-        color: inherit;
-        background: none !important; // stylelint-disable-line declaration-no-important
-        box-shadow: none !important; // stylelint-disable-line declaration-no-important
-
-        // Overlay background
-        &::before {
-            display: block !important; // stylelint-disable-line declaration-no-important
-        }
-
-        // Focus ring
-        &::after {
-            box-shadow: inset 0 0 0 2px currentColor;
-            display: block !important; // stylelint-disable-line declaration-no-important
-        }
-
-        &:focus::after,
-        &.k-focus::after {
-            opacity: $kendo-flat-button-focus-ring-opacity;
-        }
-    }
-
-
-    // Outline button
-    .k-button-outline {
-        border-color: currentColor;
-        color: inherit;
-        background: none;
-    }
-
-
-    // Link button
-    .k-button-link {
-        border-color: transparent;
-        color: inherit;
-        text-decoration: none;
-        background: none;
-
-        &:hover,
-        &.k-hover {
-            text-decoration: underline;
-        }
-    }
-
-
-    // Clear button
-    .k-button-clear {
-        border-color: transparent !important; // stylelint-disable-line declaration-no-important
-        color: inherit;
-        background: none !important; // stylelint-disable-line declaration-no-important
-        box-shadow: none !important; // stylelint-disable-line declaration-no-important
-    }
-
-
-
-
     // Button overlay
     .k-button-overlay {
-        @include border-radius( inherit );
+        @include border-radius(inherit);
         content: "";
         background: currentColor;
         opacity: 0;
         display: none;
         pointer-events: none;
         position: absolute;
-        inset-inline-start: calc( -1 * $kendo-button-border-width );
-        inset-inline-end: calc( -1 * $kendo-button-border-width );
-        inset-block-start: calc( -1 * $kendo-button-border-width );
-        inset-block-end: calc( -1 * $kendo-button-border-width );
+        inset-inline-start: calc(-1 * $kendo-button-border-width);
+        inset-inline-end: calc(-1 * $kendo-button-border-width);
+        inset-block-start: calc(-1 * $kendo-button-border-width);
+        inset-block-end: calc(-1 * $kendo-button-border-width);
         z-index: k-z-index("base");
         transition: opacity k-transition(rapid);
     }
 
-
-    .k-button { // stylelint-disable-line
+    .k-button {
+        // stylelint-disable-line
 
         &::before {
             @extend .k-button-overlay !optional;
@@ -321,24 +342,23 @@
                 opacity: $kendo-flat-button-selected-opacity;
             }
         }
-
     }
 
-
     // Button focus ring
-    .k-button { // stylelint-disable-line
+    .k-button {
+        // stylelint-disable-line
 
         &::after {
-            @include border-radius( inherit );
+            @include border-radius(inherit);
             content: "";
             opacity: 0;
             display: none;
             pointer-events: none;
             position: absolute;
-            inset-inline-start: calc( -1 * $kendo-button-border-width );
-            inset-inline-end: calc( -1 * $kendo-button-border-width );
-            inset-block-start: calc( -1 * $kendo-button-border-width );
-            inset-block-end: calc( -1 * $kendo-button-border-width );
+            inset-inline-start: calc(-1 * $kendo-button-border-width);
+            inset-inline-end: calc(-1 * $kendo-button-border-width);
+            inset-block-start: calc(-1 * $kendo-button-border-width);
+            inset-block-end: calc(-1 * $kendo-button-border-width);
             z-index: k-z-index("base");
             transition: opacity k-transition(rapid);
         }
@@ -360,5 +380,4 @@
             opacity: 1;
         }
     }
-
 }

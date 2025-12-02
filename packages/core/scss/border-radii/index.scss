@@ -60,12 +60,4 @@ $kendo-border-radii: map.merge($default-border-radii, $kendo-border-radii);
             --kendo-border-radius-#{$key}: #{$value};
         }
     }
-
-    // Generate k-rounded-* classes
-    // which are part of the components rendering.
-    @each $key, $val in $kendo-border-radii {
-        .k-rounded-#{$key} {
-            border-radius: k-border-radius($key);
-        }
-    }
 }
