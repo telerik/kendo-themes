@@ -7,7 +7,7 @@ import { IconButton } from '../templates/icon-button';
 const styles = `
 #test-area {
     max-width: 1240px;
-    grid-template-columns: 80px 320px 320px 1fr;
+    grid-template-columns: 80px 320px 320px 320px 1fr;
 }
 small,
 section {
@@ -21,12 +21,13 @@ export default () => (
         <div id="test-area" className="k-d-grid">
 
             <span><small>rounded / size</small></span>
+            <span>undefined</span>
             <span>small</span>
             <span>medium</span>
             <span>large</span>
-            {[ null,...Button.options.rounded ].map((roundness) => (
+            {[ ...Button.options.rounded ].map((roundness) => (
                 <>
-                    <span>{roundness || 'null'}</span>
+                    <span>{`${roundness}`}</span>
                     {Button.options.size.map((size) => (
                         <section>
                             <TextButton size={size} rounded={roundness}></TextButton>
