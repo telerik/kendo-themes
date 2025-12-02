@@ -101,3 +101,6 @@ $kendo-flat-button-selected-opacity: null !default;
 $kendo-flat-button-focus-ring-opacity: null !default;
 
 $kendo-button-transition: null !default;
+
+$kendo-button-roundness: ("none", "sm", "md", "lg", "full") !default;
+$kendo-button-theme-colors: ("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse") !default;
