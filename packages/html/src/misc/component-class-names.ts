@@ -14,17 +14,19 @@ export const optionClassNames = (componentClassName: string, props: any) => {
     {
       [`${componentClassName}-${props.fillMode}`]: props.fillMode,
     },
+    // temporary only
     {
       [`${componentClassName}-${props.fillMode}-${props.themeColor}`]: props.fillMode && props.themeColor,
     },
     {
-      [`${componentClassName}-${props.themeColor}`]: props.themeColor && props.fillMode === undefined,
+      [`${componentClassName}-${props.themeColor}`]: props.themeColor,
     },
     {
       "k-rounded-sm": props.rounded === "small",
       "k-rounded-md": props.rounded === "medium",
       "k-rounded-lg": props.rounded === "large",
       "k-rounded-full": props.rounded === "full",
+      "k-rounded-none": props.rounded === "none",
     }
   );
 };
@@ -48,7 +50,7 @@ export const stateClassNames = (_componentClassName: string | undefined, props: 
       "k-highlighted": highlighted,
     },
     Object.keys(other).reduce((acc, key) => {
-      if(key.startsWith("k-")) {
+      if (key.startsWith("k-")) {
         acc[key] = other[key];
       } else {
         acc[`k-${key}`] = other[key];

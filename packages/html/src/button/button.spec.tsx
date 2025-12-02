@@ -17,10 +17,11 @@ const states = [
 ] as const;
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
+    rounded: [ Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline, FillMode.clear, FillMode.link ],
     themeColor: [
+        ThemeColor.undefined,
         ThemeColor.base,
         ThemeColor.primary,
         ThemeColor.secondary,
@@ -54,10 +55,6 @@ export type KendoButtonProps = KendoButtonOptions & {
 export type KendoButtonState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    size: Size.medium,
-    rounded: Roundness.medium,
-    fillMode: FillMode.solid,
-    themeColor: ThemeColor.base,
     showArrow: false,
     arrowIconName: "caret-alt-down"
 };
@@ -68,10 +65,10 @@ export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.
         React.HTMLAttributes<HTMLButtonElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
-        themeColor = defaultOptions.themeColor,
+        size,
+        rounded,
+        fillMode,
+        themeColor,
         showArrow = defaultOptions.showArrow,
         arrowIconName = defaultOptions.arrowIconName,
         variant,
