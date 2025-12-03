@@ -2,6 +2,7 @@
 @use "../icons/_variables.scss" as *;
 @use "./variables.scss" as *;
 @use "../../z-index/index.scss" as *;
+@use "../../motion/index.scss" as *;
 
 @mixin kendo-menu--layout-base() {
 
@@ -39,6 +40,7 @@
         flex: none;
         position: relative;
         user-select: none;
+        transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid);
 
         &.k-selected {
             font-weight: $kendo-menu-item-selected-font-weight;
@@ -320,4 +322,10 @@
         }
     }
 
+    .k-menu-group,
+    .k-menu.k-context-menu {
+        .k-item > .k-link {
+            transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid);
+        }
+    }
 }

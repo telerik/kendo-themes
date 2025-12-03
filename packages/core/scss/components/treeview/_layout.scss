@@ -2,6 +2,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "../../mixins/index.scss" as *;
 @use "../../spacing/index.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "../../z-index/index.scss" as *;
@@ -120,6 +121,7 @@
         align-content: center;
         vertical-align: middle;
         position: relative;
+        transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid);
 
         .k-icon,
         .k-image,

@@ -90,16 +90,16 @@ $kendo-slider-draghandle-focus-shadow: 0 0 0 k-spacing(2.5) color-mix(in srgb, k
 
 /// The transition speed of the Slider.
 /// @group slider
-$kendo-slider-transition-speed: .3s !default;
+$kendo-slider-transition-speed: k-duration(brisk) !default;
 /// The transition function of the Slider.
 /// @group slider
-$kendo-slider-transition-function: ease-out !default;
+$kendo-slider-transition-function: k-easing(standard) !default;
 /// The transition speed of the Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-transition-speed: .4s !default;
+$kendo-slider-draghandle-transition-speed: k-duration(quick) !default;
 /// The transition function of the Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
+$kendo-slider-draghandle-transition-function: k-easing(decelerate) !default;
 
 /// The background color of the Slider track.
 /// @group slider

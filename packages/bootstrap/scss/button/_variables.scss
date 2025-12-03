@@ -1,7 +1,6 @@
 @use "sass:map";
 @use "sass:math";
 @use "../core/_index.scss" as *;
-@use "../core/motion/index.scss" as *;
 
 // Button
 
@@ -268,9 +267,9 @@ $kendo-flat-button-selected-opacity: .2 !default;
 /// @group button
 $kendo-flat-button-focus-ring-opacity: .12 !default;
 
-/// The color transition of the Button.
+/// The transition of the Button.
 /// @group button
-$kendo-button-transition: $kendo-transition !default;
+$kendo-button-transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid), opacity k-transition(rapid) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/button/_variables.scss" with (
     $kendo-button-border-width: $kendo-button-border-width,

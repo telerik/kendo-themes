@@ -53,7 +53,7 @@
                 position: relative;
                 user-select: none;
                 cursor: default;
-                transition: $kendo-transition;
+                transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid);
             }
         }
         > .k-panelbar-header + .k-panelbar-header {
@@ -87,7 +87,7 @@
                 position: relative;
                 user-select: none;
                 cursor: default;
-                transition: $kendo-transition;
+                transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid);
             }
 
             // Hierarchy items

@@ -1,5 +1,6 @@
 @use "./_variables.scss" as *;
 @use "../../mixins/index.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "../../spacing/index.scss" as *;
 
 @mixin kendo-suggestion--layout-base() {
@@ -53,9 +54,7 @@
         border-style: $kendo-suggestion-border-style;
         line-height: $kendo-suggestion-line-height;
         flex: 0 0 auto;
-        transition-property: color, background-color, border-color;
-        transition-duration: .2s;
-        transition-timing-function: ease-in-out;
+        transition: background-color k-transition(rapid), box-shadow k-transition(rapid);
         cursor: pointer;
         outline: none;
         white-space: normal;
