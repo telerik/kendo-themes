@@ -134,10 +134,10 @@ $kendo-button-shadow: null !default;
 $kendo-button-hover-bg: k-color(base-hover) !default;
 /// The base text color of the hovered Button.
 /// @group button
-$kendo-button-hover-text: null !default;
+$kendo-button-hover-text: $kendo-button-text !default;
 /// The base border color of the hovered Button.
 /// @group button
-$kendo-button-hover-border: null !default;
+$kendo-button-hover-border: $kendo-button-border !default;
 /// The base background gradient of the hovered Button.
 /// @group button
 $kendo-button-hover-gradient: null !default;
@@ -150,10 +150,10 @@ $kendo-button-hover-shadow: null !default;
 $kendo-button-active-bg: k-color(base-active) !default;
 /// The base text color of the active Button.
 /// @group button
-$kendo-button-active-text: null !default;
+$kendo-button-active-text: $kendo-button-text !default;
 /// The base border color of the active Button.
 /// @group button
-$kendo-button-active-border: null !default;
+$kendo-button-active-border: $kendo-button-active-bg !default;
 /// The base background gradient of the active Button.
 /// @group button
 $kendo-button-active-gradient: null !default;
