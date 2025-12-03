@@ -36,6 +36,7 @@ export * from './radio/index';
 export * from './listbox/index';
 export * from './progressbar/index';
 export * from './slider/index';
+export * from './prompt-input/index';
 
 // Augmented inputs
 export * from './floating-label/index';
