@@ -6,108 +6,113 @@
 @use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-button-theme-colors-controller($theme-colors, $default-theme-color: md) {
+@mixin kendo-button-appearance-controller($theme-colors) {
     .k-button {
-        --kendo-button-theme-color: #{k-color(#{$default-theme-color})};
-        --kendo-button-on-theme-color: #{k-color(on-#{$default-theme-color})};
-        --kendo-button-theme-color-on-surface: #{k-color(#{$default-theme-color}-on-surface)};
-        --kendo-button-theme-color-hover: #{k-color(#{$default-theme-color}-hover)};
-        --kendo-button-theme-color-active: #{k-color(#{$default-theme-color}-active)};
+
+        // Base (Default)
+        --kendo-button-text: #{$kendo-button-text};
+        --kendo-button-bg: #{$kendo-button-bg};
+        --kendo-button-border: #{$kendo-button-border};
+        --kendo-button-hover-text: #{$kendo-button-hover-text};
+        --kendo-button-hover-bg: #{$kendo-button-hover-bg};
+        --kendo-button-hover-border: #{$kendo-button-hover-border};
+        --kendo-button-active-text: #{$kendo-button-active-text};
+        --kendo-button-active-bg: #{$kendo-button-active-bg};
+        --kendo-button-active-border: #{$kendo-button-active-border};
+
+        // Base (Default) - Selected
+        &.k-selected {
+            --kendo-button-active-text: #{$kendo-button-selected-text};
+            --kendo-button-active-bg: #{$kendo-button-selected-bg};
+            --kendo-button-active-border: #{$kendo-button-selected-border};
+        }
 
         @each $name, $color in $theme-colors {
-            &.k-button-#{$name} {
-                --kendo-button-theme-color: #{k-color($name)};
-                --kendo-button-on-theme-color: #{k-color(on-#{$name})};
-                --kendo-button-theme-color-on-surface: #{k-color(#{$name}-on-surface)};
-                --kendo-button-theme-color-hover: #{k-color(#{$name}-hover)};
-                --kendo-button-theme-color-active: #{k-color(#{$name}-active)};
+
+            // Solid (Default)
+            &.k-button-#{$name},
+            &.k-button-#{$name}.k-button-solid {
+                --kendo-button-text: #{k-color(on-#{$name})};
+                --kendo-button-bg: #{k-color($name)};
+                --kendo-button-border: #{k-color($name)};
+                --kendo-button-hover-text: #{k-color(on-#{$name})};
+                --kendo-button-hover-bg: #{k-color(#{$name}-hover)};
+                --kendo-button-hover-border: #{k-color(#{$name}-hover)};
+                --kendo-button-active-text: #{k-color(on-#{$name})};
+                --kendo-button-active-bg: #{k-color(#{$name}-active)};
+                --kendo-button-active-border: #{k-color(#{$name}-active)};
+            }
+
+            // Outline
+            &.k-button-#{$name}.k-button-outline {
+                --kendo-button-text: #{k-color(#{$name}-on-surface)};
+                --kendo-button-bg: transparent;
+                --kendo-button-border: currentColor;
+                --kendo-button-hover-text: #{k-color(on-#{$name})};
+                --kendo-button-hover-bg: #{k-color($name)};
+                --kendo-button-hover-border: #{k-color($name)};
+                --kendo-button-active-text: #{k-color(on-#{$name})};
+                --kendo-button-active-bg: #{k-color($name)};
+                --kendo-button-active-border: #{k-color($name)};
+            }
+
+            // Flat
+            &.k-button-#{$name}.k-button-flat {
+                --kendo-button-text: #{k-color(#{$name}-on-surface)};
+                --kendo-button-bg: transparent;
+                --kendo-button-border: transparent;
+                --kendo-button-hover-text: #{k-color(#{$name}-on-surface)};
+                --kendo-button-hover-bg: transparent;
+                --kendo-button-hover-border: transparent;
+                --kendo-button-active-text: #{k-color(#{$name}-on-surface)};
+                --kendo-button-active-bg: transparent;
+                --kendo-button-active-border: transparent;
+            }
+
+            // Link
+            &.k-button-#{$name}.k-button-link {
+                --kendo-button-text: #{k-color(#{$name}-on-surface)};
+                --kendo-button-bg: transparent;
+                --kendo-button-border: transparent;
+                --kendo-button-hover-text: #{k-color(#{$name}-on-surface)};
+                --kendo-button-hover-bg: transparent;
+                --kendo-button-hover-border: transparent;
+                --kendo-button-active-text: #{k-color(#{$name}-on-surface)};
+                --kendo-button-active-bg: transparent;
+                --kendo-button-active-border: transparent;
+            }
+
+            // Clear
+            &.k-button-#{$name}.k-button-clear {
+                --kendo-button-text: #{k-color(#{$name}-on-surface)};
+                --kendo-button-bg: transparent;
+                --kendo-button-border: transparent;
+                --kendo-button-hover-text: #{k-color(#{$name}-on-surface)};
+                --kendo-button-hover-bg: transparent;
+                --kendo-button-hover-border: transparent;
+                --kendo-button-active-text: #{k-color(#{$name}-on-surface)};
+                --kendo-button-active-bg: transparent;
+                --kendo-button-active-border: transparent;
+            }
+        }
+
+        // Base (Theme Color)
+        &.k-button-base,
+        &.k-button-base.k-button-solid {
+            --kendo-button-border: #{$kendo-button-border};
+
+            // Base (Theme Color) - Selected
+            &.k-selected {
+                --kendo-button-active-text: #{$kendo-button-selected-text};
+                --kendo-button-active-bg: #{$kendo-button-selected-bg};
+                --kendo-button-active-border: #{$kendo-button-selected-border};
             }
         }
     }
 }
 
-@mixin kendo-button-fill-modes-controller() {
-    .k-button {
-        --kendo-button-text: var(--kendo-button-on-theme-color);
-        --kendo-button-bg: var(--kendo-button-theme-color);
-        --kendo-button-border: var(--kendo-button-theme-color);
-        --kendo-button-hover-text: var(--kendo-button-on-theme-color);
-        --kendo-button-hover-bg: var(--kendo-button-theme-color-hover);
-        --kendo-button-hover-border: var(--kendo-button-theme-color-hover);
-        --kendo-button-active-text: var(--kendo-button-on-theme-color);
-        --kendo-button-active-bg: var(--kendo-button-theme-color-active);
-        --kendo-button-active-border: var(--kendo-button-theme-color-active);
-
-        // Solid fillmode
-        &.k-button-solid {
-            --kendo-button-text: var(--kendo-button-on-theme-color);
-            --kendo-button-bg: var(--kendo-button-theme-color);
-            --kendo-button-border: var(--kendo-button-theme-color);
-            --kendo-button-hover-text: var(--kendo-button-on-theme-color);
-            --kendo-button-hover-bg: var(--kendo-button-theme-color-hover);
-            --kendo-button-hover-border: var(--kendo-button-theme-color-hover);
-            --kendo-button-active-text: var(--kendo-button-on-theme-color);
-            --kendo-button-active-bg: var(--kendo-button-theme-color-active);
-            --kendo-button-active-border: var(--kendo-button-theme-color-active);
-        }
-
-        // Outline fillmode
-        &.k-button-outline {
-            --kendo-button-text: var(--kendo-button-theme-color-on-surface);
-            --kendo-button-bg: transparent;
-            --kendo-button-border: currentColor;
-            --kendo-button-hover-text: var(--kendo-button-on-theme-color);
-            --kendo-button-hover-bg: var(--kendo-button-theme-color);
-            --kendo-button-hover-border: var(--kendo-button-theme-color);
-            --kendo-button-active-text: var(--kendo-button-on-theme-color);
-            --kendo-button-active-bg: var(--kendo-button-theme-color);
-            --kendo-button-active-border: var(--kendo-button-theme-color);
-        }
-
-        // Flat fillmode
-        &.k-button-flat {
-            --kendo-button-text: var(--kendo-button-theme-color-on-surface);
-            --kendo-button-bg: transparent;
-            --kendo-button-border: transparent;
-            --kendo-button-hover-text: var(--kendo-button-theme-color-on-surface);
-            --kendo-button-hover-bg: transparent;
-            --kendo-button-hover-border: transparent;
-            --kendo-button-active-text: var(--kendo-button-theme-color-on-surface);
-            --kendo-button-active-bg: transparent;
-            --kendo-button-active-border: transparent;
-        }
-
-        // Link fillmode
-        &.k-button-link {
-            --kendo-button-text: var(--kendo-button-theme-color-on-surface);
-            --kendo-button-bg: transparent;
-            --kendo-button-border: transparent;
-            --kendo-button-hover-text: var(--kendo-button-theme-color-on-surface);
-            --kendo-button-hover-bg: transparent;
-            --kendo-button-hover-border: transparent;
-            --kendo-button-active-text: var(--kendo-button-theme-color-on-surface);
-            --kendo-button-active-bg: transparent;
-            --kendo-button-active-border: transparent;
-        }
-
-        // Clear fillmode
-        &.k-button-clear {
-            --kendo-button-text: var(--kendo-button-theme-color-on-surface);
-            --kendo-button-bg: transparent;
-            --kendo-button-border: transparent;
-            --kendo-button-hover-text: var(--kendo-button-theme-color-on-surface);
-            --kendo-button-hover-bg: transparent;
-            --kendo-button-hover-border: transparent;
-            --kendo-button-active-text: var(--kendo-button-theme-color-on-surface);
-            --kendo-button-active-bg: transparent;
-            --kendo-button-active-border: transparent;
-        }
-    }
-}
-
 @mixin kendo-button--theme-base() {
-    @include kendo-button-theme-colors-controller($kendo-button-theme-colors, base);
-    @include kendo-button-fill-modes-controller();
+    @include kendo-button-appearance-controller($kendo-button-theme-colors);
 
     // Apply CSS properties from variables
     .k-button {
