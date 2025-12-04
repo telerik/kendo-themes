@@ -17,7 +17,7 @@ export default () => (
             ))}
             {[ ...Button.options.themeColor ].map((themeColor) => (
                 <>
-                    <span>{themeColor}</span>
+                    <span>{`${themeColor}`}</span>
                     {[ 'normal' , ...Button.states ].filter(state => state !== 'generating').map((state) => (
                         <>
                             <span>
