@@ -40,13 +40,13 @@ export default () => (
             <span><IconTextButton disabled={true}>Disabled</IconTextButton></span>
 
             <span>^ icon</span>
-            <span><IconButton></IconButton></span>
-            <span><IconButton hover></IconButton></span>
-            <span><IconButton focus={true}></IconButton></span>
-            <span><IconButton active={true}></IconButton></span>
-            <span><IconButton selected={true}></IconButton></span>
-            <span><IconButton selected={true} focus={true}></IconButton></span>
-            <span><IconButton disabled={true}></IconButton></span>
+            <span><IconButton aria-label="Folder"></IconButton></span>
+            <span><IconButton aria-label="Folder" hover></IconButton></span>
+            <span><IconButton aria-label="Folder" focus={true}></IconButton></span>
+            <span><IconButton aria-label="Folder" active={true}></IconButton></span>
+            <span><IconButton aria-label="Folder" selected={true}></IconButton></span>
+            <span><IconButton aria-label="Folder" selected={true} focus={true}></IconButton></span>
+            <span><IconButton aria-label="Folder" disabled={true}></IconButton></span>
 
             <span>primary</span>
             <span><TextButton themeColor="primary">Normal</TextButton></span>
@@ -67,13 +67,13 @@ export default () => (
             <span><IconTextButton themeColor="primary" disabled={true}>Disabled</IconTextButton></span>
 
             <span>^ icon</span>
-            <span><IconButton themeColor="primary"></IconButton></span>
-            <span><IconButton themeColor="primary" hover></IconButton></span>
-            <span><IconButton themeColor="primary" focus={true}></IconButton></span>
-            <span><IconButton themeColor="primary" active={true}></IconButton></span>
-            <span><IconButton themeColor="primary" selected={true}></IconButton></span>
-            <span><IconButton themeColor="primary" selected={true} focus={true}></IconButton></span>
-            <span><IconButton themeColor="primary" disabled={true}></IconButton></span>
+            <span><IconButton aria-label="Folder" themeColor="primary"></IconButton></span>
+            <span><IconButton aria-label="Folder" themeColor="primary" hover></IconButton></span>
+            <span><IconButton aria-label="Folder" themeColor="primary" focus={true}></IconButton></span>
+            <span><IconButton aria-label="Folder" themeColor="primary" active={true}></IconButton></span>
+            <span><IconButton aria-label="Folder" themeColor="primary" selected={true}></IconButton></span>
+            <span><IconButton aria-label="Folder" themeColor="primary" selected={true} focus={true}></IconButton></span>
+            <span><IconButton aria-label="Folder" themeColor="primary" disabled={true}></IconButton></span>
         </div>
     </>
 );

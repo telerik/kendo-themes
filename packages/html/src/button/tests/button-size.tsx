@@ -31,7 +31,7 @@ export default () => (
                         <section>
                             <TextButton size={size} rounded={roundness}></TextButton>
                             <IconTextButton size={size} rounded={roundness} ></IconTextButton>
-                            <IconButton size={size} rounded={roundness} ></IconButton>
+                            <IconButton aria-label="Folder" size={size} rounded={roundness} ></IconButton>
                         </section>
                     ))}
                 </>
