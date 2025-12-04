@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-12-04T12:25:11.958Z",
+  "lastUpdated": "2025-12-04T12:31:23.817Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -95,7 +95,7 @@
       "notes": ""
     },
     "button": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "simple",
       "complianceScore": null,
@@ -105,7 +105,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2025-12-04T12:31:23.816Z"
     },
     "buttongroup": {
       "status": "pending",

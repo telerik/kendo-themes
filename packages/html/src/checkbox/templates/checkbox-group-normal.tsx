@@ -1,16 +1,16 @@
-import { Checkbox, CheckboxItem, CheckboxGroup } from "..";
+import { CheckboxItem, CheckboxGroup, CheckboxWithLabelAfter } from "..";
 
 export const CheckboxGroupNormal = (props: any) => (
     <CheckboxGroup children={
         <>
             <CheckboxItem>
-                <Checkbox/>
+                <CheckboxWithLabelAfter id="chk-grp-1">Option 1</CheckboxWithLabelAfter>
             </CheckboxItem>
             <CheckboxItem>
-                <Checkbox/>
+                <CheckboxWithLabelAfter id="chk-grp-2">Option 2</CheckboxWithLabelAfter>
             </CheckboxItem>
             <CheckboxItem>
-                <Checkbox/>
+                <CheckboxWithLabelAfter id="chk-grp-3">Option 3</CheckboxWithLabelAfter>
             </CheckboxItem>
         </>
     }
