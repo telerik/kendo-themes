@@ -1,4 +1,4 @@
-import { ComboboxCustomValue, ComboboxGroupingModernCustomValue } from "..";
+import { ComboboxCustomValue, ComboboxGroupingModernCustomValue, ComboboxGroupingAccessibleCustomValue } from "..";
 
 const styles = `
     #test-area {
@@ -32,6 +32,16 @@ export default () => (
             </div>
             <div dir="rtl">
                 <ComboboxGroupingModernCustomValue focus />
+            </div>
+
+            <span>Custom Value and Accessible Combobox Grouping</span>
+            <span>Custom Value and Accessible Combobox Grouping RTL</span>
+
+            <div>
+                <ComboboxGroupingAccessibleCustomValue focus />
+            </div>
+            <div dir="rtl">
+                <ComboboxGroupingAccessibleCustomValue focus />
             </div>
         </div>
     </>

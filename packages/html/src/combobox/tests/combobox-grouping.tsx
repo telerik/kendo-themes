@@ -1,4 +1,4 @@
-import { ComboboxGrouping, ComboboxGroupingModern } from "../../combobox";
+import { ComboboxGrouping, ComboboxGroupingModern, ComboboxGroupingAccessible } from "../../combobox";
 
 const styles = `
     #test-area {
@@ -32,6 +32,16 @@ export default () => (
             </div>
             <div dir="rtl">
                 <ComboboxGroupingModern placeholder="Combobox..." />
+            </div>
+
+            <span>Accessible Combobox Grouping</span>
+            <span>Accessible Combobox Grouping RTL</span>
+
+            <div>
+                <ComboboxGroupingAccessible placeholder="Combobox..." />
+            </div>
+            <div dir="rtl">
+                <ComboboxGroupingAccessible placeholder="Combobox..." />
             </div>
         </div>
     </>

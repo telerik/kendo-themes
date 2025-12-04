@@ -10,7 +10,12 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
-    <div id="test-area" class="k-d-grid k-grid-cols-3">
+    <div id="test-area" class="k-d-grid k-grid-cols-6">
+        <span class="k-col-span-3">normal</span>
+        <span class="k-col-span-3">classic grouping</span>
+        <span>small</span>
+        <span>medium</span>
+        <span>large</span>
         <span>small</span>
         <span>medium</span>
         <span>large</span>
@@ -59,7 +64,6 @@
                 </ul>
             </div>
         </div>
-        <span class="k-colspan-all k-col-span-full">universal grouping</span>
         <div class="k-list k-list-sm">
             <div class="k-list-group-sticky-header">
                 <div class="k-list-header-text">Group 1</div>
@@ -144,7 +148,14 @@
                 </ul>
             </div>
         </div>
-        <span class="k-colspan-all k-col-span-full">angular grouping</span>
+        <span class="k-col-span-3">modern grouping</span>
+        <span class="k-col-span-3">accessible grouping</span>
+        <span>small</span>
+        <span>medium</span>
+        <span>large</span>
+        <span>small</span>
+        <span>medium</span>
+        <span>large</span>
         <div class="k-list k-list-sm">
             <div class="k-list-group-sticky-header">
                 <div class="k-list-header-text">Group 1</div>
@@ -160,11 +171,11 @@
                     <li class="k-list-item">
                         <span class="k-list-item-text">List item 1.3</span>
                     </li>
-                    <li class="k-list-group-item">
+                    <li class="k-first k-list-group-item">
                         <span class="k-list-item-text">Group 2</span>
                     </li>
                     <li class="k-list-item">
-                        <span class="k-list-item-text">List item 2.1</span>
+                        <span class="k-list-item-text">List item 1.2</span>
                     </li>
                     <li class="k-list-item">
                         <span class="k-list-item-text">List item 2.2</span>
@@ -190,11 +201,11 @@
                     <li class="k-list-item">
                         <span class="k-list-item-text">List item 1.3</span>
                     </li>
-                    <li class="k-list-group-item">
+                    <li class="k-first k-list-group-item">
                         <span class="k-list-item-text">Group 2</span>
                     </li>
                     <li class="k-list-item">
-                        <span class="k-list-item-text">List item 2.1</span>
+                        <span class="k-list-item-text">List item 1.2</span>
                     </li>
                     <li class="k-list-item">
                         <span class="k-list-item-text">List item 2.2</span>
@@ -220,11 +231,107 @@
                     <li class="k-list-item">
                         <span class="k-list-item-text">List item 1.3</span>
                     </li>
+                    <li class="k-first k-list-group-item">
+                        <span class="k-list-item-text">Group 2</span>
+                    </li>
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 1.2</span>
+                    </li>
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 2.2</span>
+                    </li>
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 2.3</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="k-list k-list-sm">
+            <div class="k-list-group-sticky-header">
+                <div class="k-list-header-text">Group 1</div>
+            </div>
+            <div class="k-list-content">
+                <ul class="k-list-ul">
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 1.1</span>
+                    </li>
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 1.2</span>
+                    </li>
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 1.3</span>
+                    </li>
+                </ul>
+                <ul class="k-list-ul">
                     <li class="k-list-group-item">
                         <span class="k-list-item-text">Group 2</span>
                     </li>
                     <li class="k-list-item">
-                        <span class="k-list-item-text">List item 2.1</span>
+                        <span class="k-list-item-text">List item 1.2</span>
+                    </li>
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 2.2</span>
+                    </li>
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 2.3</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="k-list k-list-md">
+            <div class="k-list-group-sticky-header">
+                <div class="k-list-header-text">Group 1</div>
+            </div>
+            <div class="k-list-content">
+                <ul class="k-list-ul">
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 1.1</span>
+                    </li>
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 1.2</span>
+                    </li>
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 1.3</span>
+                    </li>
+                </ul>
+                <ul class="k-list-ul">
+                    <li class="k-list-group-item">
+                        <span class="k-list-item-text">Group 2</span>
+                    </li>
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 1.2</span>
+                    </li>
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 2.2</span>
+                    </li>
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 2.3</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="k-list k-list-lg">
+            <div class="k-list-group-sticky-header">
+                <div class="k-list-header-text">Group 1</div>
+            </div>
+            <div class="k-list-content">
+                <ul class="k-list-ul">
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 1.1</span>
+                    </li>
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 1.2</span>
+                    </li>
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 1.3</span>
+                    </li>
+                </ul>
+                <ul class="k-list-ul">
+                    <li class="k-list-group-item">
+                        <span class="k-list-item-text">Group 2</span>
+                    </li>
+                    <li class="k-list-item">
+                        <span class="k-list-item-text">List item 1.2</span>
                     </li>
                     <li class="k-list-item">
                         <span class="k-list-item-text">List item 2.2</span>

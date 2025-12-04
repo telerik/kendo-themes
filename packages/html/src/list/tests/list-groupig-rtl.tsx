@@ -13,16 +13,16 @@ export default () =>(
         <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-4">
 
-            <span>Universal</span>
-            <span>Universal - no sticky header</span>
-            <span>Universal virtual</span>
-            <span>Universal virtual - no sticky header</span>
+            <span>Universal (rtl)</span>
+            <span>Universal - no sticky header (rtl)</span>
+            <span>Universal virtual (rtl)</span>
+            <span>Universal virtual - no sticky header (rtl)</span>
 
-            <section>
+            <section dir="rtl">
                 <ListWithGrouping></ListWithGrouping>
             </section>
 
-            <section>
+            <section dir="rtl">
                 <List>
                     <ListGroup label="Group 1" >
                         <ListItem>List item 1.1</ListItem>
@@ -37,11 +37,11 @@ export default () =>(
                 </List>
             </section>
 
-            <section>
+            <section dir="rtl">
                 <VirtualListWithGrouping></VirtualListWithGrouping>
             </section>
 
-            <section>
+            <section dir="rtl">
                 <List virtualization>
                     <ListGroup label="Group 1" >
                         <ListItem>List item 1.1</ListItem>
@@ -61,11 +61,11 @@ export default () =>(
             <span>Modern virtual</span>
             <span>Modern virtual - no sticky header</span>
 
-            <section>
+            <section dir="rtl">
                 <ListWithGroupingModern></ListWithGroupingModern>
             </section>
 
-            <section>
+            <section dir="rtl">
                 <List>
                     <ListGroup>
                         <ListItem group>Group 1</ListItem>
@@ -82,11 +82,11 @@ export default () =>(
                 </List>
             </section>
 
-            <section>
+            <section dir="rtl">
                 <VirtualListWithGroupingModern></VirtualListWithGroupingModern>
             </section>
 
-            <section>
+            <section dir="rtl">
                 <List virtualization>
                     <ListGroup>
                         <ListItem group>Group 1</ListItem>
@@ -108,11 +108,11 @@ export default () =>(
             <span>Accessible virtual</span>
             <span>Accessible virtual - no sticky header</span>
 
-            <section>
+            <section dir="rtl">
                 <ListWithGroupingAccessible></ListWithGroupingAccessible>
             </section>
 
-            <section>
+            <section dir="rtl">
                 <ListAccessible>
                     <ListGroup>
                         <ListItem group>Group 1</ListItem>
@@ -129,11 +129,11 @@ export default () =>(
                 </ListAccessible>
             </section>
 
-            <section>
+            <section dir="rtl">
                 <VirtualListWithGroupingAccessible></VirtualListWithGroupingAccessible>
             </section>
 
-            <section>
+            <section dir="rtl">
                 <ListAccessible virtualization>
                     <ListGroup>
                         <ListItem group>Group 1</ListItem>
