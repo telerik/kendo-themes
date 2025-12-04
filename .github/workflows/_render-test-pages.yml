@@ -33,7 +33,7 @@ jobs:
     steps:
 
       - name: Checkout branch
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Check for differences in packages/html
         run: |
@@ -86,7 +86,7 @@ jobs:
         run: firefox --version
 
       - name: Checkout branch
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Setup node
         id: setup-node

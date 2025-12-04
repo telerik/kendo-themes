@@ -38,7 +38,7 @@ jobs:
           export-secrets-to-environment: false
 
       - name: Checkout branch
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: ${{ github.event.inputs.ref }}
 
@@ -64,7 +64,7 @@ jobs:
             npm run sass:dist
 
       - name: Checkout artifact repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           repository: telerik/themes-cdn
           token: ${{ steps.import-secrets.outputs.GH_TOKEN }}
