@@ -1,0 +1,2432 @@
+{
+  "meta": {
+    "timestamp": "2025-12-04T11:38:00.215Z",
+    "complianceLevel": "AA",
+    "filesTesteд": 2,
+    "wcagVersion": "2.2"
+  },
+  "summary": {
+    "totalViolations": 6,
+    "totalPasses": 26,
+    "avgScore": 81.3
+  },
+  "criteriaGroups": {},
+  "detailedResults": [
+    {
+      "filePath": "./tests/avatar/avatar.html",
+      "timestamp": "2025-12-04T11:37:54.157Z",
+      "violations": [
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure the document has a main landmark",
+          "help": "Document should have one main landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=webdriverjs",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "page-has-main",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Document does not have a main landmark"
+                }
+              ],
+              "none": [],
+              "impact": "moderate",
+              "html": "<html lang=\"en\" class=\"k-no-animations\" style=\"--kendo-scrollbar-width: 0px;\">",
+              "target": [
+                "html"
+              ],
+              "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ],
+          "wcagCriteria": [],
+          "severity": "moderate"
+        },
+        {
+          "id": "page-has-heading-one",
+          "impact": "moderate",
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+          "help": "Page should contain a level-one heading",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=webdriverjs",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "page-has-heading-one",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Page must have a level-one heading"
+                }
+              ],
+              "none": [],
+              "impact": "moderate",
+              "html": "<html lang=\"en\" class=\"k-no-animations\" style=\"--kendo-scrollbar-width: 0px;\">",
+              "target": [
+                "html"
+              ],
+              "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+            }
+          ],
+          "wcagCriteria": [],
+          "severity": "moderate"
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "tags": [
+            "cat.keyboard",
+            "best-practice"
+          ],
+          "description": "Ensure all page content is contained by landmarks",
+          "help": "All page content should be contained by landmarks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=webdriverjs",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span class=\"col-2\">Image</span>",
+              "target": [
+                ".col-2:nth-child(2)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span class=\"col-2\">Bg image</span>",
+              "target": [
+                ".col-2:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span class=\"col-2\">Icon</span>",
+              "target": [
+                ".col-2:nth-child(4)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span class=\"col-2\">Text</span>",
+              "target": [
+                ".col-2:nth-child(5)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>base</span>",
+              "target": [
+                "span:nth-child(6)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-base k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-base.k-avatar-solid.k-avatar:nth-child(7)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-base k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-base.k-avatar-outline.k-avatar:nth-child(8)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-base k-rounded-full\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-base.k-avatar-solid.k-avatar:nth-child(13)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-base k-rounded-full k-avatar-bordered\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-base.k-avatar-bordered.k-avatar-outline:nth-child(14)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>primary</span>",
+              "target": [
+                "span:nth-child(15)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-primary k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-primary.k-avatar-solid.k-avatar:nth-child(16)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-primary k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-primary.k-avatar-outline.k-avatar:nth-child(17)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-primary k-rounded-full\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-primary.k-avatar-solid.k-avatar:nth-child(22)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-primary k-rounded-full k-avatar-bordered\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-primary.k-avatar-bordered.k-avatar-outline:nth-child(23)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>secondary</span>",
+              "target": [
+                "span:nth-child(24)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-secondary k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-secondary.k-avatar-solid.k-avatar:nth-child(25)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-secondary k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-secondary.k-avatar-outline.k-avatar:nth-child(26)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-secondary k-rounded-full\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-secondary.k-avatar-solid.k-avatar:nth-child(31)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-secondary k-rounded-full k-avatar-bordered\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-secondary.k-avatar-bordered.k-avatar-outline:nth-child(32)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>tertiary</span>",
+              "target": [
+                "span:nth-child(33)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-tertiary k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-tertiary.k-avatar-solid.k-avatar:nth-child(34)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-tertiary k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-tertiary.k-avatar-outline.k-avatar:nth-child(35)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-tertiary k-rounded-full\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-tertiary.k-avatar-solid.k-avatar:nth-child(40)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-tertiary k-rounded-full k-avatar-bordered\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-tertiary.k-avatar-bordered.k-avatar-outline:nth-child(41)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>success</span>",
+              "target": [
+                "span:nth-child(42)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-success k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-success.k-avatar-solid.k-avatar:nth-child(43)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-success k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-success.k-avatar-outline.k-avatar:nth-child(44)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-success k-rounded-full\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-success.k-avatar-solid.k-avatar:nth-child(49)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-success k-rounded-full k-avatar-bordered\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-success.k-avatar-bordered.k-avatar-outline:nth-child(50)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>warning</span>",
+              "target": [
+                "span:nth-child(51)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-warning k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-warning.k-avatar-solid.k-avatar:nth-child(52)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-warning k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-warning.k-avatar-outline.k-avatar:nth-child(53)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-warning k-rounded-full\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-warning.k-avatar-solid.k-avatar:nth-child(58)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-warning k-rounded-full k-avatar-bordered\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-warning.k-avatar-bordered.k-avatar-outline:nth-child(59)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>error</span>",
+              "target": [
+                "span:nth-child(60)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-error k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-error.k-avatar-solid.k-avatar:nth-child(61)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-error k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-error.k-avatar-outline.k-avatar:nth-child(62)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-error k-rounded-full\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-error.k-avatar-solid.k-avatar:nth-child(67)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-error k-rounded-full k-avatar-bordered\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-error.k-avatar-bordered.k-avatar-outline:nth-child(68)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>info</span>",
+              "target": [
+                "span:nth-child(69)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-info k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-info.k-avatar-solid.k-avatar:nth-child(70)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-info k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-info.k-avatar-outline.k-avatar:nth-child(71)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-info k-rounded-full\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-info.k-avatar-solid.k-avatar:nth-child(76)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-info k-rounded-full k-avatar-bordered\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-info.k-avatar-bordered.k-avatar-outline:nth-child(77)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>light</span>",
+              "target": [
+                "span:nth-child(78)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-light k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-light.k-avatar-solid.k-avatar:nth-child(79)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-light k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-light.k-avatar-outline.k-avatar:nth-child(80)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-light k-rounded-full\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-light.k-avatar-solid.k-avatar:nth-child(85)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-light k-rounded-full k-avatar-bordered\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-light.k-avatar-bordered.k-avatar-outline:nth-child(86)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>dark</span>",
+              "target": [
+                "span:nth-child(87)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-dark k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-dark.k-avatar-solid.k-avatar:nth-child(88)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-dark k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-dark.k-avatar-outline.k-avatar:nth-child(89)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-dark k-rounded-full\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-dark.k-avatar-solid.k-avatar:nth-child(94)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-dark k-rounded-full k-avatar-bordered\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-dark.k-avatar-bordered.k-avatar-outline:nth-child(95)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>inverse</span>",
+              "target": [
+                "span:nth-child(96)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-inverse k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-inverse.k-avatar-solid.k-avatar:nth-child(97)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-inverse k-rounded-full\">\n            <span class=\"k-avatar-image\">\n                <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n            </span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-inverse.k-avatar-outline.k-avatar:nth-child(98)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-inverse k-rounded-full\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-solid-inverse.k-avatar-solid.k-avatar:nth-child(103)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-inverse k-rounded-full k-avatar-bordered\">\n            <span class=\"k-avatar-text\">JO</span>\n        </div>",
+              "target": [
+                ".k-avatar-outline-inverse.k-avatar-bordered.k-avatar-outline:nth-child(104)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ],
+          "wcagCriteria": [],
+          "severity": "moderate"
+        }
+      ],
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "wcagCriteria": [
+            "1.4.3"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "image-alt",
+          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+          "wcagCriteria": [
+            "1.1.1"
+          ]
+        },
+        {
+          "id": "image-redundant-alt",
+          "description": "Ensure image alternative is not repeated as text",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        },
+        {
+          "id": "nested-interactive",
+          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 75
+    },
+    {
+      "filePath": "./tests/avatar/avatar-size-rounded.html",
+      "timestamp": "2025-12-04T11:37:59.136Z",
+      "violations": [
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure the document has a main landmark",
+          "help": "Document should have one main landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=webdriverjs",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "page-has-main",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Document does not have a main landmark"
+                }
+              ],
+              "none": [],
+              "impact": "moderate",
+              "html": "<html lang=\"en\" class=\"k-no-animations\" style=\"--kendo-scrollbar-width: 0px;\">",
+              "target": [
+                "html"
+              ],
+              "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ],
+          "wcagCriteria": [],
+          "severity": "moderate"
+        },
+        {
+          "id": "page-has-heading-one",
+          "impact": "moderate",
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+          "help": "Page should contain a level-one heading",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=webdriverjs",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "page-has-heading-one",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Page must have a level-one heading"
+                }
+              ],
+              "none": [],
+              "impact": "moderate",
+              "html": "<html lang=\"en\" class=\"k-no-animations\" style=\"--kendo-scrollbar-width: 0px;\">",
+              "target": [
+                "html"
+              ],
+              "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+            }
+          ],
+          "wcagCriteria": [],
+          "severity": "moderate"
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "tags": [
+            "cat.keyboard",
+            "best-practice"
+          ],
+          "description": "Ensure all page content is contained by landmarks",
+          "help": "All page content should be contained by landmarks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=webdriverjs",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>\n            <small>rounded / size</small>\n        </span>",
+              "target": [
+                "#test-area > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>small</span>",
+              "target": [
+                "span:nth-child(2)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>medium</span>",
+              "target": [
+                "span:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>large</span>",
+              "target": [
+                "span:nth-child(4)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>null</span>",
+              "target": [
+                "span:nth-child(5)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-sm k-avatar-solid k-avatar-solid-primary\">\n                <span class=\"k-avatar-image\">\n                    <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n                </span>\n            </div>",
+              "target": [
+                ".k-d-flex.k-gap-1:nth-child(6) > .k-avatar-sm.k-avatar-solid.k-avatar-solid-primary:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-sm k-avatar-outline k-avatar-outline-primary k-avatar-bordered\">\n                <span class=\"k-avatar-text\">JO</span>\n            </div>",
+              "target": [
+                ".k-d-flex.k-gap-1:nth-child(6) > .k-avatar-sm.k-avatar-outline.k-avatar-outline-primary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-primary\">\n                <span class=\"k-avatar-image\">\n                    <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n                </span>\n            </div>",
+              "target": [
+                ".k-d-flex.k-gap-1:nth-child(7) > .k-avatar-md.k-avatar-solid.k-avatar-solid-primary:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-primary k-avatar-bordered\">\n                <span class=\"k-avatar-text\">JO</span>\n            </div>",
+              "target": [
+                ".k-d-flex.k-gap-1:nth-child(7) > .k-avatar-md.k-avatar-outline.k-avatar-outline-primary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-lg k-avatar-solid k-avatar-solid-primary\">\n                <span class=\"k-avatar-image\">\n                    <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n                </span>\n            </div>",
+              "target": [
+                ".k-d-flex.k-gap-1:nth-child(8) > .k-avatar-lg.k-avatar-solid.k-avatar-solid-primary:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-lg k-avatar-outline k-avatar-outline-primary k-avatar-bordered\">\n                <span class=\"k-avatar-text\">JO</span>\n            </div>",
+              "target": [
+                ".k-d-flex.k-gap-1:nth-child(8) > .k-avatar-lg.k-avatar-outline.k-avatar-outline-primary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>small</span>",
+              "target": [
+                "span:nth-child(9)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-sm k-avatar-solid k-avatar-solid-primary k-rounded-sm\">\n                <span class=\"k-avatar-image\">\n                    <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n                </span>\n            </div>",
+              "target": [
+                ".k-rounded-sm.k-avatar-sm.k-avatar-solid:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-sm k-avatar-outline k-avatar-outline-primary k-rounded-sm k-avatar-bordered\">\n                <span class=\"k-avatar-text\">JO</span>\n            </div>",
+              "target": [
+                ".k-rounded-sm.k-avatar-sm.k-avatar-outline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-primary k-rounded-sm\">\n                <span class=\"k-avatar-image\">\n                    <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n                </span>\n            </div>",
+              "target": [
+                ".k-rounded-sm.k-avatar-md.k-avatar-solid:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-primary k-rounded-sm k-avatar-bordered\">\n                <span class=\"k-avatar-text\">JO</span>\n            </div>",
+              "target": [
+                ".k-rounded-sm.k-avatar-md.k-avatar-outline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-lg k-avatar-solid k-avatar-solid-primary k-rounded-sm\">\n                <span class=\"k-avatar-image\">\n                    <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n                </span>\n            </div>",
+              "target": [
+                ".k-rounded-sm.k-avatar-lg.k-avatar-solid:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-lg k-avatar-outline k-avatar-outline-primary k-rounded-sm k-avatar-bordered\">\n                <span class=\"k-avatar-text\">JO</span>\n            </div>",
+              "target": [
+                ".k-rounded-sm.k-avatar-lg.k-avatar-outline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>medium</span>",
+              "target": [
+                "span:nth-child(13)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-sm k-avatar-solid k-avatar-solid-primary k-rounded-md\">\n                <span class=\"k-avatar-image\">\n                    <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n                </span>\n            </div>",
+              "target": [
+                ".k-rounded-md.k-avatar-sm.k-avatar-solid:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-sm k-avatar-outline k-avatar-outline-primary k-rounded-md k-avatar-bordered\">\n                <span class=\"k-avatar-text\">JO</span>\n            </div>",
+              "target": [
+                ".k-rounded-md.k-avatar-sm.k-avatar-outline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-primary k-rounded-md\">\n                <span class=\"k-avatar-image\">\n                    <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n                </span>\n            </div>",
+              "target": [
+                ".k-rounded-md.k-avatar-md.k-avatar-solid:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-primary k-rounded-md k-avatar-bordered\">\n                <span class=\"k-avatar-text\">JO</span>\n            </div>",
+              "target": [
+                ".k-rounded-md.k-avatar-md.k-avatar-outline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-lg k-avatar-solid k-avatar-solid-primary k-rounded-md\">\n                <span class=\"k-avatar-image\">\n                    <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n                </span>\n            </div>",
+              "target": [
+                ".k-rounded-md.k-avatar-lg.k-avatar-solid:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-lg k-avatar-outline k-avatar-outline-primary k-rounded-md k-avatar-bordered\">\n                <span class=\"k-avatar-text\">JO</span>\n            </div>",
+              "target": [
+                ".k-rounded-md.k-avatar-lg.k-avatar-outline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>large</span>",
+              "target": [
+                "span:nth-child(17)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-sm k-avatar-solid k-avatar-solid-primary k-rounded-lg\">\n                <span class=\"k-avatar-image\">\n                    <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n                </span>\n            </div>",
+              "target": [
+                ".k-rounded-lg.k-avatar-sm.k-avatar-solid:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-sm k-avatar-outline k-avatar-outline-primary k-rounded-lg k-avatar-bordered\">\n                <span class=\"k-avatar-text\">JO</span>\n            </div>",
+              "target": [
+                ".k-rounded-lg.k-avatar-sm.k-avatar-outline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-primary k-rounded-lg\">\n                <span class=\"k-avatar-image\">\n                    <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n                </span>\n            </div>",
+              "target": [
+                ".k-rounded-lg.k-avatar-md.k-avatar-solid:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-primary k-rounded-lg k-avatar-bordered\">\n                <span class=\"k-avatar-text\">JO</span>\n            </div>",
+              "target": [
+                ".k-rounded-lg.k-avatar-md.k-avatar-outline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-lg k-avatar-solid k-avatar-solid-primary k-rounded-lg\">\n                <span class=\"k-avatar-image\">\n                    <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n                </span>\n            </div>",
+              "target": [
+                ".k-rounded-lg.k-avatar-lg.k-avatar-solid:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-lg k-avatar-outline k-avatar-outline-primary k-rounded-lg k-avatar-bordered\">\n                <span class=\"k-avatar-text\">JO</span>\n            </div>",
+              "target": [
+                ".k-rounded-lg.k-avatar-lg.k-avatar-outline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<span>full</span>",
+              "target": [
+                "span:nth-child(21)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-sm k-avatar-solid k-avatar-solid-primary k-rounded-full\">\n                <span class=\"k-avatar-image\">\n                    <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n                </span>\n            </div>",
+              "target": [
+                ".k-rounded-full.k-avatar-sm.k-avatar-solid:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-sm k-avatar-outline k-avatar-outline-primary k-rounded-full k-avatar-bordered\">\n                <span class=\"k-avatar-text\">JO</span>\n            </div>",
+              "target": [
+                ".k-rounded-full.k-avatar-sm.k-avatar-outline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-solid k-avatar-solid-primary k-rounded-full\">\n                <span class=\"k-avatar-image\">\n                    <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n                </span>\n            </div>",
+              "target": [
+                ".k-rounded-full.k-avatar-md.k-avatar-solid:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-md k-avatar-outline k-avatar-outline-primary k-rounded-full k-avatar-bordered\">\n                <span class=\"k-avatar-text\">JO</span>\n            </div>",
+              "target": [
+                ".k-rounded-full.k-avatar-md.k-avatar-outline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-lg k-avatar-solid k-avatar-solid-primary k-rounded-full\">\n                <span class=\"k-avatar-image\">\n                    <img alt=\"User avatar\" src=\"/packages/html/assets/avatar.jpg\">\n                </span>\n            </div>",
+              "target": [
+                ".k-rounded-full.k-avatar-lg.k-avatar-solid:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Some page content is not contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<div class=\"k-avatar k-avatar-lg k-avatar-outline k-avatar-outline-primary k-rounded-full k-avatar-bordered\">\n                <span class=\"k-avatar-text\">JO</span>\n            </div>",
+              "target": [
+                ".k-rounded-full.k-avatar-lg.k-avatar-outline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ],
+          "wcagCriteria": [],
+          "severity": "moderate"
+        }
+      ],
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "wcagCriteria": [
+            "1.4.3"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "image-alt",
+          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+          "wcagCriteria": [
+            "1.1.1"
+          ]
+        },
+        {
+          "id": "image-redundant-alt",
+          "description": "Ensure image alternative is not repeated as text",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        },
+        {
+          "id": "nested-interactive",
+          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 75
+    }
+  ]
+}

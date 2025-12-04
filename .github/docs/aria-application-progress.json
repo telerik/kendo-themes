@@ -1,0 +1,1386 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-12-04T11:45:39.440Z",
+  "components": {
+    "action-sheet": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "ai-prompt": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "appbar": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "navigation",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "autocomplete": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "avatar": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "base",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-04T11:38:33.863Z"
+    },
+    "bottom-navigation": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "breadcrumb": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "navigation",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "button": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "buttongroup": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "button-groups",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "calendar": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "calendars",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "captcha": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "inputs",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "card": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "carousel": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "chart-wizard": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "chart": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "charts",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "chat": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "checkbox": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "chip": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "chiplist": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "chunk-progressbar": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "circular-progressbar": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "colorgradient": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "pickers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "colorpalette": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "pickers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "colorpicker": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "pickers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "column-chooser": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "column-menu": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "combobox": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "context-menu": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "dateinput": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "inputs",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "datepicker": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "pickers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "daterangepicker": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "pickers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "datetimepicker": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "pickers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "dialog": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "dockmanager": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "drawer": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "navigation",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "dropdownbutton": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "button-groups",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "dropdownlist": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "dropdowntree": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "editor": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "expansionpanel": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "filemanager": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "filter-menu": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "filter": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "data",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "flatcolorpicker": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "pickers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "floatingactionbutton": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "button-groups",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "form": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "gantt": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "grid": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "data",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "icon": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "base",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-04T11:45:39.439Z"
+    },
+    "imageeditor": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "infinitecalendar": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "calendars",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "listbox": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "listview": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "maskedtextbox": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "inputs",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "media-player": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "menu": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "navigation",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "multicolumncombobox": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "multiselect": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "multiselecttree": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "multiviewcalendar": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "calendars",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "notification": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "numerictextbox": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "inputs",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "onetimepassword": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "inputs",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "orgchart": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "data",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "pager": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "data",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "panelbar": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "pdfviewer": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "pivotgrid": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "data",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "popover": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "progressbar": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "propertygrid": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "data",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "radiobutton": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "radiogroup": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "range-slider": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "rating": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "sankey": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "charts",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "scheduler": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "signature": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "inputs",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "skeleton": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "base",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "slider": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "sortable": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "speech-to-text-button": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "splitbutton": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "button-groups",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "splitter": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "spreadsheet": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "stepper": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "navigation",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "switch": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "tabstrip": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "navigation",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "taskboard": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "data",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "textarea": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "inputs",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "textbox": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "inputs",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "tilelayout": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "timedurationpicker": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "timeline": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "timepicker": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "pickers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "togglebutton": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "toolbar": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "navigation",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "tooltip": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "treelist": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "data",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "treeview": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "upload": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "validation-message": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "validation-summary": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "validation-tooltip": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "window": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "wizard": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    }
+  }
+}

@@ -89,6 +89,7 @@ export const SvgIcon = (
                     'k-flip-v': flip === 'v' || flip === 'both'
                 }
             )}
+            aria-hidden="true"
         >
             <svg
                 aria-hidden={true}

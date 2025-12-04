@@ -66,6 +66,7 @@ export const FontIcon = (
                     'k-flip-v': flip === 'v' || flip === 'both'
                 }
             )}
+            aria-hidden="true"
         />
     );
 };

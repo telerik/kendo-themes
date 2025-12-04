@@ -1,0 +1,223 @@
+{
+  "timestamp": "2025-12-04T11:36:06.684Z",
+  "summary": {
+    "filesTested": 2,
+    "skipped": 0,
+    "passed": 22,
+    "violations": 15
+  },
+  "results": [
+    {
+      "filePath": "./tests/avatar/avatar.html",
+      "spec": "aria/avatar_aria.md",
+      "totalRules": 1,
+      "violations": [],
+      "passed": 22,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/avatar/avatar-size-rounded.html",
+      "spec": "aria/avatar_aria.md",
+      "totalRules": 1,
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-avatar img",
+            "attribute": "alt",
+            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+          },
+          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "alt",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-avatar img",
+            "attribute": "alt",
+            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+          },
+          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "alt",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-avatar img",
+            "attribute": "alt",
+            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+          },
+          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "alt",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-avatar img",
+            "attribute": "alt",
+            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+          },
+          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "alt",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-avatar img",
+            "attribute": "alt",
+            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+          },
+          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "alt",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-avatar img",
+            "attribute": "alt",
+            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+          },
+          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "alt",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-avatar img",
+            "attribute": "alt",
+            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+          },
+          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "alt",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-avatar img",
+            "attribute": "alt",
+            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+          },
+          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "alt",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-avatar img",
+            "attribute": "alt",
+            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+          },
+          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "alt",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-avatar img",
+            "attribute": "alt",
+            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+          },
+          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "index": 9,
+          "valid": false,
+          "reason": "missing",
+          "expected": "alt",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-avatar img",
+            "attribute": "alt",
+            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+          },
+          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "index": 10,
+          "valid": false,
+          "reason": "missing",
+          "expected": "alt",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-avatar img",
+            "attribute": "alt",
+            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+          },
+          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "index": 11,
+          "valid": false,
+          "reason": "missing",
+          "expected": "alt",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-avatar img",
+            "attribute": "alt",
+            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+          },
+          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "index": 12,
+          "valid": false,
+          "reason": "missing",
+          "expected": "alt",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-avatar img",
+            "attribute": "alt",
+            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+          },
+          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "index": 13,
+          "valid": false,
+          "reason": "missing",
+          "expected": "alt",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-avatar img",
+            "attribute": "alt",
+            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+          },
+          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "index": 14,
+          "valid": false,
+          "reason": "missing",
+          "expected": "alt",
+          "actual": null
+        }
+      ],
+      "passed": 0,
+      "violationCount": 15
+    }
+  ]
+}
