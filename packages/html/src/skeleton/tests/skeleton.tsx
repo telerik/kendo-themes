@@ -15,11 +15,17 @@ export default () => (
         <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
-            <SkeletonNormal style={{ width: '300px' }} />
-            <SkeletonCircle style={{ width: '50px', height: '50px' }} />
-            <SkeletonRectangle style={{ width: '300px', height: '200px' }} />
+            <div aria-busy="true">
+                <SkeletonNormal style={{ width: '300px' }} />
+            </div>
+            <div aria-busy="true">
+                <SkeletonCircle style={{ width: '50px', height: '50px' }} />
+            </div>
+            <div aria-busy="true">
+                <SkeletonRectangle style={{ width: '300px', height: '200px' }} />
+            </div>
 
-            <div className="k-skeleton-container k-d-grid k-skeleton-pulse">
+            <div className="k-skeleton-container k-d-grid k-skeleton-pulse" aria-busy="true" role="alert">
                 <SkeletonCircle animation={false} style={{ gridColumn: "1 / 3", gridRow: "1 / 3" }} />
                 <SkeletonNormal animation={false} style={{ gridColumn: "3 / 10", gridRow: "1 / 2" }} />
                 <SkeletonNormal animation={false} style={{ gridColumn: "3 / 7", gridRow: "2 / 3" }} />

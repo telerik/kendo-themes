@@ -6,10 +6,16 @@
  * Comprehensive WCAG 2.2 Level AA/AAA compliance testing using axe-core.
  * Tests all accessibility rules beyond just color contrast.
  *
+ * By default, filters out page-level violations (landmarks, headings, etc.)
+ * that are not component-specific issues.
+ *
  * Usage:
  *   npm run test:wcag                    # Test all components
  *   npm run test:wcag button             # Test specific component
  *   npm run test:wcag -- --level=aaa     # Test for AAA compliance
+ *   npm run test:wcag -- --include-page-level  # Include page-level violations
+ *   npm run test:wcag -- --summary       # Summary only (no details)
+ *   npm run test:wcag -- --verbose       # Detailed output
  */
 
 import { Browser } from '@progress/kendo-e2e';
@@ -26,6 +32,21 @@ const COMPONENT_PAGE_EXT = '.html';
 const THEME = "default";
 const SWATCH = "default-ocean-blue-a11y";
 
+// Page-level rules to exclude (not component-specific)
+const PAGE_LEVEL_RULES = [
+    'region',              // Page must have at least one landmark
+    'landmark-one-main',   // Document should have one main landmark
+    'landmark-unique',     // Landmarks should have unique roles or labels
+    'page-has-heading-one',// Page should contain a level-one heading
+    'bypass',              // Page should have means to bypass repeated blocks
+    'html-has-lang',       // <html> element must have lang attribute
+    'document-title',      // Documents must have <title> element
+    'landmark-no-duplicate-banner', // Document should not have duplicate banner
+    'landmark-no-duplicate-contentinfo', // Document should not have duplicate contentinfo
+    'meta-viewport',       // Zooming and scaling should not be disabled
+    'duplicate-id',        // IDs used on page must be unique (often test harness issue)
+];
+
 // Get component name and options from command line
 const args = process.argv.slice(2);
 const componentFilter = args.find(a => !a.startsWith('--'));
@@ -33,6 +54,7 @@ const levelArg = args.find(a => a.startsWith('--level='));
 const complianceLevel = levelArg ? levelArg.split('=')[1].toUpperCase() : 'AA';
 const verboseMode = args.includes('--verbose');
 const summaryOnly = args.includes('--summary');
+const includePageLevel = args.includes('--include-page-level');
 
 // WCAG 2.2 Success Criteria mapping
 const WCAG_CRITERIA = {
@@ -109,13 +131,24 @@ async function testPage(filePath, browser) {
     // Run analysis
     const results = await axe.analyze();
 
+    // Filter out page-level violations unless explicitly requested
+    let violations = results.violations;
+    let filteredCount = 0;
+
+    if (!includePageLevel) {
+        const filtered = violations.filter(v => !PAGE_LEVEL_RULES.includes(v.id));
+        filteredCount = violations.length - filtered.length;
+        violations = filtered;
+    }
+
     // Categorize results
     const categorized = {
-        violations: results.violations.map(v => ({
+        violations: violations.map(v => ({
             ...v,
             wcagCriteria: mapToWCAGCriteria(v),
             severity: v.impact
         })),
+        filteredPageLevel: filteredCount,
         passes: results.passes.map(p => ({
             id: p.id,
             description: p.description,
@@ -207,12 +240,16 @@ function printSummary(results, criteriaGroups) {
 
     const totalViolations = results.reduce((sum, r) => sum + r.violations.length, 0);
     const totalPasses = results.reduce((sum, r) => sum + r.passes.length, 0);
+    const totalFiltered = results.reduce((sum, r) => sum + (r.filteredPageLevel || 0), 0);
     const avgScore = results.reduce((sum, r) => sum + calculateComplianceScore(r), 0) / results.length;
 
     console.log(`Compliance Level: WCAG 2.2 Level ${complianceLevel}`);
     console.log(`Pages Tested: ${results.length}`);
     console.log(`Total Checks Passed: ${totalPasses}`);
     console.log(`Total Violations: ${totalViolations}`);
+    if (totalFiltered > 0) {
+        console.log(`  (${totalFiltered} page-level violations filtered out)`);
+    }
     console.log(`Average Compliance Score: ${avgScore.toFixed(1)}%\n`);
 
     // Violations by severity
