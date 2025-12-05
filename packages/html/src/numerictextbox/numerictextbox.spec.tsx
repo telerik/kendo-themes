@@ -90,7 +90,6 @@ export const NumericTextbox: KendoComponent<KendoNumericTextboxProps & KendoNume
 
     return (
         <Input
-            {...other}
             size={size}
             rounded={rounded}
             fillMode={fillMode}
@@ -110,7 +109,21 @@ export const NumericTextbox: KendoComponent<KendoNumericTextboxProps & KendoNume
                     {separators && <InputSeparator/>}
                 </>
             }
-            <InputInnerInput placeholder={placeholder} value={value} />
+            <InputInnerInput
+                {...other}
+                role="spinbutton"
+                placeholder={placeholder}
+                value={value}
+                disabled={disabled}
+                readonly={readonly}
+                required={required}
+                aria-invalid={invalid ? true : undefined}
+                {...(value && !isNaN(Number(value)) && {
+                    'aria-valuenow': Number(value),
+                    'aria-valuemin': 0,
+                    'aria-valuemax': 100
+                })}
+            />
             <InputValidationIcon
                 valid={valid}
                 invalid={invalid}
@@ -135,6 +148,7 @@ export const NumericTextbox: KendoComponent<KendoNumericTextboxProps & KendoNume
                     className="k-input-spinner"
                     size={size}
                     fillMode={fillMode}
+                    disabled={disabled}
                 />
             )}
         </Input>

@@ -86,7 +86,6 @@ export const MaskedTextbox: KendoComponent<KendoMaskedTextboxProps & KendoMasked
 
     return (
         <Input
-            {...other}
             size={size}
             rounded={rounded}
             fillMode={fillMode}
@@ -106,7 +105,15 @@ export const MaskedTextbox: KendoComponent<KendoMaskedTextboxProps & KendoMasked
                 {separators && <InputSeparator/>}
             </>
             }
-            <InputInnerInput placeholder={placeholder} value={value} />
+            <InputInnerInput
+                {...other}
+                placeholder={placeholder}
+                value={value}
+                disabled={disabled}
+                readonly={readonly}
+                required={required}
+                aria-invalid={invalid ? true : undefined}
+            />
             <InputValidationIcon
                 valid={valid}
                 invalid={invalid}

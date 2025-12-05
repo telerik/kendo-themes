@@ -78,6 +78,8 @@ export const Chip: KendoComponent<KendoChipProps & KendoChipState & React.HTMLAt
     return (
         <div
             { ...other }
+            role="button"
+            aria-pressed={selected ? "true" : "false"}
             className={classNames(
                 props.className,
                 CHIP_CLASSNAME,
@@ -99,7 +101,7 @@ export const Chip: KendoComponent<KendoChipProps & KendoChipState & React.HTMLAt
             {icon && <Icon className="k-chip-icon" icon={icon} size="small" /> }
             {showAvatar && (
                 <Avatar className="k-chip-avatar" type="image" >
-                    <img src={avatarImage} />
+                    <img src={avatarImage} alt="" />
                 </Avatar>
             )}
             <span className="k-chip-content">

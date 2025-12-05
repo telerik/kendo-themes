@@ -1,0 +1,1399 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-12-05T16:10:21.190Z",
+  "components": {
+    "action-sheet": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "ai-prompt": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "appbar": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "navigation",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "autocomplete": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "avatar": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "base",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-04T11:38:33.863Z"
+    },
+    "bottom-navigation": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "breadcrumb": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "navigation",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "button": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-04T12:31:23.816Z"
+    },
+    "buttongroup": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "button-groups",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "calendar": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "calendars",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "captcha": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "inputs",
+      "complianceScore": 100,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "100% ARIA + WCAG compliant. Fixed Textbox to pass aria-label and disabled to InputInnerInput. Updated validator to handle boolean attributes correctly."
+    },
+    "card": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "carousel": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "chart-wizard": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "chart": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "charts",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "chat": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "checkbox": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-04T13:36:53.998Z"
+    },
+    "chip": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-05T12:33:56.042Z"
+    },
+    "chiplist": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "chunk-progressbar": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-05T12:43:02.907Z"
+    },
+    "circular-progressbar": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-05T12:45:08.548Z"
+    },
+    "colorgradient": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "pickers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "colorpalette": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "pickers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "colorpicker": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "pickers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "column-chooser": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "column-menu": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "combobox": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "context-menu": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "dateinput": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "inputs",
+      "complianceScore": 98.7,
+      "violations": {
+        "critical": 0,
+        "serious": 1,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "100% ARIA validation. 98.7% WCAG (1 target-size violation on small size variant - design constraint). DateInput passes props to InputInnerInput. SpinButton has titles."
+    },
+    "datepicker": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "pickers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "daterangepicker": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "pickers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "datetimepicker": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "pickers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "dialog": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "dockmanager": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "drawer": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "navigation",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "dropdownbutton": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "button-groups",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "dropdownlist": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "dropdowntree": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "editor": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "expansionpanel": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "filemanager": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "filter-menu": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "filter": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "data",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "flatcolorpicker": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "pickers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "floatingactionbutton": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "button-groups",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "form": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "gantt": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "grid": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "data",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "icon": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "base",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-04T11:45:39.439Z"
+    },
+    "imageeditor": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "infinitecalendar": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "calendars",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "listbox": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "listview": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "maskedtextbox": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "inputs",
+      "complianceScore": 99.2,
+      "violations": {
+        "critical": 0,
+        "serious": 1,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "100% ARIA + 99.2% WCAG (1 color-contrast violation in prefix-suffix test with outline buttons). MaskedTextbox passes props to InputInnerInput. Changed prefix from DropdownList to Icon for simplicity. All test files have labels."
+    },
+    "media-player": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "menu": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "navigation",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "multicolumncombobox": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "multiselect": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "multiselecttree": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "lists",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "multiviewcalendar": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "calendars",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "notification": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "numerictextbox": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "inputs",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-05T15:50:44.656Z"
+    },
+    "onetimepassword": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "inputs",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-05T16:02:04.568Z"
+    },
+    "orgchart": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "data",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "pager": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "data",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "panelbar": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "pdfviewer": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "pivotgrid": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "data",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "popover": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "progressbar": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-05T12:43:02.864Z"
+    },
+    "propertygrid": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "data",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "radiobutton": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "radiogroup": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "range-slider": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "rating": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-05T12:50:00.084Z"
+    },
+    "sankey": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "charts",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "scheduler": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "signature": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "inputs",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-05T16:04:42.319Z"
+    },
+    "skeleton": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "base",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-04T12:25:11.957Z"
+    },
+    "slider": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "sortable": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "speech-to-text-button": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "splitbutton": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "button-groups",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "splitter": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "spreadsheet": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "complex",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "stepper": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "navigation",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "switch": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-05T12:50:00.135Z"
+    },
+    "tabstrip": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "navigation",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "taskboard": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "data",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "textarea": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "inputs",
+      "complianceScore": 100,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "100% ARIA + 100% WCAG compliant. Textarea passes props to InputInnerTextarea. All test files have labels. IconButtons have aria-label."
+    },
+    "textbox": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "inputs",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "",
+      "completedAt": "2025-12-05T16:10:21.189Z"
+    },
+    "tilelayout": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "timedurationpicker": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "timeline": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "timepicker": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "pickers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "togglebutton": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "toolbar": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "navigation",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "tooltip": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "treelist": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "data",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "treeview": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "upload": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "validation-message": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "validation-summary": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "validation-tooltip": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "window": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "containers",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    },
+    "wizard": {
+      "status": "pending",
+      "specExists": true,
+      "priority": "unknown",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": ""
+    }
+  }
+}

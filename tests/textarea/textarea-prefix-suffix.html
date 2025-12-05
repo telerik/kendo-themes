@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -24,20 +24,21 @@
         <span>RTL</span>
         <span>FillMode - solid</span>
         <div>
+            <label for="textarea-prefix-suffix-solid-normal" class="k-label">Enter text</label>
             <span class="k-textarea !k-flex-col k-input k-input-md k-input-solid k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-icon k-svg-icon k-svg-i-envelope">
+                    <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M64 96c-17.7 0-32 14.3-32 32v256c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32zm23.7 32L256 296.3 424.3 128c11 2.9 19.7 11.6 22.6 22.6L342.6 254.9l104.3 104.3c-2.9 11-11.6 19.7-22.6 22.6L320 277.5l-64 64-64-64L87.7 381.8c-11-2.9-19.7-11.6-22.6-22.6l104.3-104.3L65.1 150.6c2.9-11 11.6-19.7 22.6-22.6"></path>
                         </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
+                <textarea id="textarea-prefix-suffix-solid-normal" class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up">
+                    <button aria-label="Play audio" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M0 352h96l128 128V32L96 160H0zm288 28V132c55.2 14.2 96 64.3 96 124s-40.8 109.8-96 124m0-380v44.8c45.2 0 88.3 20.8 121.2 58.4C444.6 143.6 464 197.8 464 256s-19.4 112.4-54.8 152.8c-33 37.7-76 58.4-121.2 58.4V512c123.7 0 224-114.6 224-256S411.7 0 288 0"></path>
                             </svg>
@@ -47,20 +48,21 @@
             </span>
         </div>
         <div>
+            <label for="textarea-prefix-suffix-solid-disabled" class="k-label">Enter text (disabled)</label>
             <span class="k-textarea !k-flex-col k-input k-input-md k-input-solid k-rounded-md k-disabled">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-icon k-svg-icon k-svg-i-envelope">
+                    <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M64 96c-17.7 0-32 14.3-32 32v256c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32zm23.7 32L256 296.3 424.3 128c11 2.9 19.7 11.6 22.6 22.6L342.6 254.9l104.3 104.3c-2.9 11-11.6 19.7-22.6 22.6L320 277.5l-64 64-64-64L87.7 381.8c-11-2.9-19.7-11.6-22.6-22.6l104.3-104.3L65.1 150.6c2.9-11 11.6-19.7 22.6-22.6"></path>
                         </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
+                <textarea id="textarea-prefix-suffix-solid-disabled" class="!k-overflow-auto !k-flex-none k-resize k-input-inner" disabled="" placeholder="">Prefix &amp; Suffix</textarea>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up">
+                    <button aria-label="Play audio" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M0 352h96l128 128V32L96 160H0zm288 28V132c55.2 14.2 96 64.3 96 124s-40.8 109.8-96 124m0-380v44.8c45.2 0 88.3 20.8 121.2 58.4C444.6 143.6 464 197.8 464 256s-19.4 112.4-54.8 152.8c-33 37.7-76 58.4-121.2 58.4V512c123.7 0 224-114.6 224-256S411.7 0 288 0"></path>
                             </svg>
@@ -70,20 +72,21 @@
             </span>
         </div>
         <div>
+            <label for="textarea-prefix-suffix-solid-invalid" class="k-label">Enter text (invalid)</label>
             <span class="k-textarea !k-flex-col k-input k-input-md k-input-solid k-rounded-md k-invalid">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-icon k-svg-icon k-svg-i-envelope">
+                    <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M64 96c-17.7 0-32 14.3-32 32v256c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32zm23.7 32L256 296.3 424.3 128c11 2.9 19.7 11.6 22.6 22.6L342.6 254.9l104.3 104.3c-2.9 11-11.6 19.7-22.6 22.6L320 277.5l-64 64-64-64L87.7 381.8c-11-2.9-19.7-11.6-22.6-22.6l104.3-104.3L65.1 150.6c2.9-11 11.6-19.7 22.6-22.6"></path>
                         </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
+                <textarea id="textarea-prefix-suffix-solid-invalid" class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up">
+                    <button aria-label="Play audio" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M0 352h96l128 128V32L96 160H0zm288 28V132c55.2 14.2 96 64.3 96 124s-40.8 109.8-96 124m0-380v44.8c45.2 0 88.3 20.8 121.2 58.4C444.6 143.6 464 197.8 464 256s-19.4 112.4-54.8 152.8c-33 37.7-76 58.4-121.2 58.4V512c123.7 0 224-114.6 224-256S411.7 0 288 0"></path>
                             </svg>
@@ -93,20 +96,21 @@
             </span>
         </div>
         <div dir="rtl">
+            <label for="textarea-prefix-suffix-solid-rtl" class="k-label">Enter text</label>
             <span class="k-textarea !k-flex-col k-input k-input-md k-input-solid k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-icon k-svg-icon k-svg-i-envelope">
+                    <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M64 96c-17.7 0-32 14.3-32 32v256c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32zm23.7 32L256 296.3 424.3 128c11 2.9 19.7 11.6 22.6 22.6L342.6 254.9l104.3 104.3c-2.9 11-11.6 19.7-22.6 22.6L320 277.5l-64 64-64-64L87.7 381.8c-11-2.9-19.7-11.6-22.6-22.6l104.3-104.3L65.1 150.6c2.9-11 11.6-19.7 22.6-22.6"></path>
                         </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
+                <textarea id="textarea-prefix-suffix-solid-rtl" class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up">
+                    <button aria-label="Play audio" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M0 352h96l128 128V32L96 160H0zm288 28V132c55.2 14.2 96 64.3 96 124s-40.8 109.8-96 124m0-380v44.8c45.2 0 88.3 20.8 121.2 58.4C444.6 143.6 464 197.8 464 256s-19.4 112.4-54.8 152.8c-33 37.7-76 58.4-121.2 58.4V512c123.7 0 224-114.6 224-256S411.7 0 288 0"></path>
                             </svg>
@@ -117,20 +121,21 @@
         </div>
         <span>FillMode - flat</span>
         <div>
+            <label for="textarea-prefix-suffix-flat-normal" class="k-label">Enter text</label>
             <span class="k-textarea !k-flex-col k-input k-input-md k-input-flat k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-icon k-svg-icon k-svg-i-envelope">
+                    <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M64 96c-17.7 0-32 14.3-32 32v256c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32zm23.7 32L256 296.3 424.3 128c11 2.9 19.7 11.6 22.6 22.6L342.6 254.9l104.3 104.3c-2.9 11-11.6 19.7-22.6 22.6L320 277.5l-64 64-64-64L87.7 381.8c-11-2.9-19.7-11.6-22.6-22.6l104.3-104.3L65.1 150.6c2.9-11 11.6-19.7 22.6-22.6"></path>
                         </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
+                <textarea id="textarea-prefix-suffix-flat-normal" class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up">
+                    <button aria-label="Play audio" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M0 352h96l128 128V32L96 160H0zm288 28V132c55.2 14.2 96 64.3 96 124s-40.8 109.8-96 124m0-380v44.8c45.2 0 88.3 20.8 121.2 58.4C444.6 143.6 464 197.8 464 256s-19.4 112.4-54.8 152.8c-33 37.7-76 58.4-121.2 58.4V512c123.7 0 224-114.6 224-256S411.7 0 288 0"></path>
                             </svg>
@@ -140,20 +145,21 @@
             </span>
         </div>
         <div>
+            <label for="textarea-prefix-suffix-flat-disabled" class="k-label">Enter text (disabled)</label>
             <span class="k-textarea !k-flex-col k-input k-input-md k-input-flat k-rounded-md k-disabled">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-icon k-svg-icon k-svg-i-envelope">
+                    <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M64 96c-17.7 0-32 14.3-32 32v256c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32zm23.7 32L256 296.3 424.3 128c11 2.9 19.7 11.6 22.6 22.6L342.6 254.9l104.3 104.3c-2.9 11-11.6 19.7-22.6 22.6L320 277.5l-64 64-64-64L87.7 381.8c-11-2.9-19.7-11.6-22.6-22.6l104.3-104.3L65.1 150.6c2.9-11 11.6-19.7 22.6-22.6"></path>
                         </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
+                <textarea id="textarea-prefix-suffix-flat-disabled" class="!k-overflow-auto !k-flex-none k-resize k-input-inner" disabled="" placeholder="">Prefix &amp; Suffix</textarea>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up">
+                    <button aria-label="Play audio" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M0 352h96l128 128V32L96 160H0zm288 28V132c55.2 14.2 96 64.3 96 124s-40.8 109.8-96 124m0-380v44.8c45.2 0 88.3 20.8 121.2 58.4C444.6 143.6 464 197.8 464 256s-19.4 112.4-54.8 152.8c-33 37.7-76 58.4-121.2 58.4V512c123.7 0 224-114.6 224-256S411.7 0 288 0"></path>
                             </svg>
@@ -163,20 +169,21 @@
             </span>
         </div>
         <div>
+            <label for="textarea-prefix-suffix-flat-invalid" class="k-label">Enter text (invalid)</label>
             <span class="k-textarea !k-flex-col k-input k-input-md k-input-flat k-rounded-md k-invalid">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-icon k-svg-icon k-svg-i-envelope">
+                    <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M64 96c-17.7 0-32 14.3-32 32v256c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32zm23.7 32L256 296.3 424.3 128c11 2.9 19.7 11.6 22.6 22.6L342.6 254.9l104.3 104.3c-2.9 11-11.6 19.7-22.6 22.6L320 277.5l-64 64-64-64L87.7 381.8c-11-2.9-19.7-11.6-22.6-22.6l104.3-104.3L65.1 150.6c2.9-11 11.6-19.7 22.6-22.6"></path>
                         </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
+                <textarea id="textarea-prefix-suffix-flat-invalid" class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up">
+                    <button aria-label="Play audio" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M0 352h96l128 128V32L96 160H0zm288 28V132c55.2 14.2 96 64.3 96 124s-40.8 109.8-96 124m0-380v44.8c45.2 0 88.3 20.8 121.2 58.4C444.6 143.6 464 197.8 464 256s-19.4 112.4-54.8 152.8c-33 37.7-76 58.4-121.2 58.4V512c123.7 0 224-114.6 224-256S411.7 0 288 0"></path>
                             </svg>
@@ -186,20 +193,21 @@
             </span>
         </div>
         <div dir="rtl">
+            <label for="textarea-prefix-suffix-flat-rtl" class="k-label">Enter text</label>
             <span class="k-textarea !k-flex-col k-input k-input-md k-input-flat k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-icon k-svg-icon k-svg-i-envelope">
+                    <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M64 96c-17.7 0-32 14.3-32 32v256c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32zm23.7 32L256 296.3 424.3 128c11 2.9 19.7 11.6 22.6 22.6L342.6 254.9l104.3 104.3c-2.9 11-11.6 19.7-22.6 22.6L320 277.5l-64 64-64-64L87.7 381.8c-11-2.9-19.7-11.6-22.6-22.6l104.3-104.3L65.1 150.6c2.9-11 11.6-19.7 22.6-22.6"></path>
                         </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
+                <textarea id="textarea-prefix-suffix-flat-rtl" class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up">
+                    <button aria-label="Play audio" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M0 352h96l128 128V32L96 160H0zm288 28V132c55.2 14.2 96 64.3 96 124s-40.8 109.8-96 124m0-380v44.8c45.2 0 88.3 20.8 121.2 58.4C444.6 143.6 464 197.8 464 256s-19.4 112.4-54.8 152.8c-33 37.7-76 58.4-121.2 58.4V512c123.7 0 224-114.6 224-256S411.7 0 288 0"></path>
                             </svg>
@@ -210,20 +218,21 @@
         </div>
         <span>FillMode - outline</span>
         <div>
+            <label for="textarea-prefix-suffix-outline-normal" class="k-label">Enter text</label>
             <span class="k-textarea !k-flex-col k-input k-input-md k-input-outline k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-icon k-svg-icon k-svg-i-envelope">
+                    <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M64 96c-17.7 0-32 14.3-32 32v256c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32zm23.7 32L256 296.3 424.3 128c11 2.9 19.7 11.6 22.6 22.6L342.6 254.9l104.3 104.3c-2.9 11-11.6 19.7-22.6 22.6L320 277.5l-64 64-64-64L87.7 381.8c-11-2.9-19.7-11.6-22.6-22.6l104.3-104.3L65.1 150.6c2.9-11 11.6-19.7 22.6-22.6"></path>
                         </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
+                <textarea id="textarea-prefix-suffix-outline-normal" class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up">
+                    <button aria-label="Play audio" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M0 352h96l128 128V32L96 160H0zm288 28V132c55.2 14.2 96 64.3 96 124s-40.8 109.8-96 124m0-380v44.8c45.2 0 88.3 20.8 121.2 58.4C444.6 143.6 464 197.8 464 256s-19.4 112.4-54.8 152.8c-33 37.7-76 58.4-121.2 58.4V512c123.7 0 224-114.6 224-256S411.7 0 288 0"></path>
                             </svg>
@@ -233,20 +242,21 @@
             </span>
         </div>
         <div>
+            <label for="textarea-prefix-suffix-outline-disabled" class="k-label">Enter text (disabled)</label>
             <span class="k-textarea !k-flex-col k-input k-input-md k-input-outline k-rounded-md k-disabled">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-icon k-svg-icon k-svg-i-envelope">
+                    <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M64 96c-17.7 0-32 14.3-32 32v256c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32zm23.7 32L256 296.3 424.3 128c11 2.9 19.7 11.6 22.6 22.6L342.6 254.9l104.3 104.3c-2.9 11-11.6 19.7-22.6 22.6L320 277.5l-64 64-64-64L87.7 381.8c-11-2.9-19.7-11.6-22.6-22.6l104.3-104.3L65.1 150.6c2.9-11 11.6-19.7 22.6-22.6"></path>
                         </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
+                <textarea id="textarea-prefix-suffix-outline-disabled" class="!k-overflow-auto !k-flex-none k-resize k-input-inner" disabled="" placeholder="">Prefix &amp; Suffix</textarea>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up">
+                    <button aria-label="Play audio" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M0 352h96l128 128V32L96 160H0zm288 28V132c55.2 14.2 96 64.3 96 124s-40.8 109.8-96 124m0-380v44.8c45.2 0 88.3 20.8 121.2 58.4C444.6 143.6 464 197.8 464 256s-19.4 112.4-54.8 152.8c-33 37.7-76 58.4-121.2 58.4V512c123.7 0 224-114.6 224-256S411.7 0 288 0"></path>
                             </svg>
@@ -256,20 +266,21 @@
             </span>
         </div>
         <div>
+            <label for="textarea-prefix-suffix-outline-invalid" class="k-label">Enter text (invalid)</label>
             <span class="k-textarea !k-flex-col k-input k-input-md k-input-outline k-rounded-md k-invalid">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-icon k-svg-icon k-svg-i-envelope">
+                    <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M64 96c-17.7 0-32 14.3-32 32v256c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32zm23.7 32L256 296.3 424.3 128c11 2.9 19.7 11.6 22.6 22.6L342.6 254.9l104.3 104.3c-2.9 11-11.6 19.7-22.6 22.6L320 277.5l-64 64-64-64L87.7 381.8c-11-2.9-19.7-11.6-22.6-22.6l104.3-104.3L65.1 150.6c2.9-11 11.6-19.7 22.6-22.6"></path>
                         </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
+                <textarea id="textarea-prefix-suffix-outline-invalid" class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up">
+                    <button aria-label="Play audio" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M0 352h96l128 128V32L96 160H0zm288 28V132c55.2 14.2 96 64.3 96 124s-40.8 109.8-96 124m0-380v44.8c45.2 0 88.3 20.8 121.2 58.4C444.6 143.6 464 197.8 464 256s-19.4 112.4-54.8 152.8c-33 37.7-76 58.4-121.2 58.4V512c123.7 0 224-114.6 224-256S411.7 0 288 0"></path>
                             </svg>
@@ -279,20 +290,21 @@
             </span>
         </div>
         <div dir="rtl">
+            <label for="textarea-prefix-suffix-outline-rtl" class="k-label">Enter text</label>
             <span class="k-textarea !k-flex-col k-input k-input-md k-input-outline k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-icon k-svg-icon k-svg-i-envelope">
+                    <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M64 96c-17.7 0-32 14.3-32 32v256c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32zm23.7 32L256 296.3 424.3 128c11 2.9 19.7 11.6 22.6 22.6L342.6 254.9l104.3 104.3c-2.9 11-11.6 19.7-22.6 22.6L320 277.5l-64 64-64-64L87.7 381.8c-11-2.9-19.7-11.6-22.6-22.6l104.3-104.3L65.1 150.6c2.9-11 11.6-19.7 22.6-22.6"></path>
                         </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
+                <textarea id="textarea-prefix-suffix-outline-rtl" class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Prefix &amp; Suffix</textarea>
                 <span class="k-input-separator k-input-separator-horizontal"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up">
+                    <button aria-label="Play audio" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M0 352h96l128 128V32L96 160H0zm288 28V132c55.2 14.2 96 64.3 96 124s-40.8 109.8-96 124m0-380v44.8c45.2 0 88.3 20.8 121.2 58.4C444.6 143.6 464 197.8 464 256s-19.4 112.4-54.8 152.8c-33 37.7-76 58.4-121.2 58.4V512c123.7 0 224-114.6 224-256S411.7 0 288 0"></path>
                             </svg>

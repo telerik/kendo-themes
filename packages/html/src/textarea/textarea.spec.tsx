@@ -89,7 +89,6 @@ export const Textarea: KendoComponent<KendoTextareaProps & KendoTextareaState & 
 
     return (
         <Input
-            {...other}
             size={size}
             rounded={rounded}
             fillMode={fillMode}
@@ -123,6 +122,7 @@ export const Textarea: KendoComponent<KendoTextareaProps & KendoTextareaState & 
             </>
             }
             <InputInnerTextarea
+                {...other}
                 className={classNames(
                     "!k-overflow-auto",
                     {
@@ -136,6 +136,8 @@ export const Textarea: KendoComponent<KendoTextareaProps & KendoTextareaState & 
                 value={value}
                 placeholder={placeholder}
                 rows={rows}
+                disabled={disabled}
+                required={required}
             />
             {suffix &&
             <>

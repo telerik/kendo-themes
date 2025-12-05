@@ -81,7 +81,12 @@ export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState
                     ['k-signature-maximized']: maximized,
                 }
             )}>
-            <canvas className="k-signature-canvas"></canvas>
+            <canvas
+                className="k-signature-canvas"
+                role="img"
+                aria-label="Signature canvas"
+                tabIndex={0}
+            ></canvas>
             <div
                 className={classNames(
                     'k-signature-actions',
@@ -97,6 +102,7 @@ export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState
                     rounded={rounded}
                     size={size}
                     fillMode="flat"
+                    aria-label="Maximize signature"
                 />
                 <Button
                     className={classNames(
@@ -108,6 +114,7 @@ export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState
                     rounded={rounded}
                     size={size}
                     fillMode="flat"
+                    aria-label="Minimize signature"
                 />
             </div>
             <div className="k-signature-line"></div>
@@ -125,6 +132,7 @@ export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState
                     rounded={props.rounded}
                     size={props.size}
                     fillMode="flat"
+                    aria-label="Clear signature"
                 />
             </div>
         </div>

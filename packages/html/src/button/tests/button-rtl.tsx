@@ -40,13 +40,13 @@ export default () => (
             <span dir="rtl"><IconTextButton disabled={true}>Disabled</IconTextButton></span>
 
             <span>^ icon</span>
-            <span dir="rtl"><IconButton></IconButton></span>
-            <span dir="rtl"><IconButton hover></IconButton></span>
-            <span dir="rtl"><IconButton focus={true}></IconButton></span>
-            <span dir="rtl"><IconButton active={true}></IconButton></span>
-            <span dir="rtl"><IconButton selected={true}></IconButton></span>
-            <span dir="rtl"><IconButton selected={true} focus={true}></IconButton></span>
-            <span dir="rtl"><IconButton disabled={true}></IconButton></span>
+            <span dir="rtl"><IconButton aria-label="Folder"></IconButton></span>
+            <span dir="rtl"><IconButton aria-label="Folder" hover></IconButton></span>
+            <span dir="rtl"><IconButton aria-label="Folder" focus={true}></IconButton></span>
+            <span dir="rtl"><IconButton aria-label="Folder" active={true}></IconButton></span>
+            <span dir="rtl"><IconButton aria-label="Folder" selected={true}></IconButton></span>
+            <span dir="rtl"><IconButton aria-label="Folder" selected={true} focus={true}></IconButton></span>
+            <span dir="rtl"><IconButton aria-label="Folder" disabled={true}></IconButton></span>
 
             <span>primary</span>
             <span dir="rtl"><TextButton themeColor="primary">Normal</TextButton></span>
@@ -67,13 +67,13 @@ export default () => (
             <span dir="rtl"><IconTextButton themeColor="primary" disabled={true}>Disabled</IconTextButton></span>
 
             <span>^ icon</span>
-            <span dir="rtl"><IconButton themeColor="primary"></IconButton></span>
-            <span dir="rtl"><IconButton themeColor="primary" hover></IconButton></span>
-            <span dir="rtl"><IconButton themeColor="primary" focus={true}></IconButton></span>
-            <span dir="rtl"><IconButton themeColor="primary" active={true}></IconButton></span>
-            <span dir="rtl"><IconButton themeColor="primary" selected={true}></IconButton></span>
-            <span dir="rtl"><IconButton themeColor="primary" selected={true} focus={true}></IconButton></span>
-            <span dir="rtl"><IconButton themeColor="primary" disabled={true}></IconButton></span>
+            <span dir="rtl"><IconButton aria-label="Folder" themeColor="primary"></IconButton></span>
+            <span dir="rtl"><IconButton aria-label="Folder" themeColor="primary" hover></IconButton></span>
+            <span dir="rtl"><IconButton aria-label="Folder" themeColor="primary" focus={true}></IconButton></span>
+            <span dir="rtl"><IconButton aria-label="Folder" themeColor="primary" active={true}></IconButton></span>
+            <span dir="rtl"><IconButton aria-label="Folder" themeColor="primary" selected={true}></IconButton></span>
+            <span dir="rtl"><IconButton aria-label="Folder" themeColor="primary" selected={true} focus={true}></IconButton></span>
+            <span dir="rtl"><IconButton aria-label="Folder" themeColor="primary" disabled={true}></IconButton></span>
         </div>
     </>
 );

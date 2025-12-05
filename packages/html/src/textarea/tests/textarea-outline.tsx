@@ -15,42 +15,52 @@ export default () =>(
             <span>TextArea Flat RTL</span>
 
             <div>
-                <Textarea fillMode="outline" />
+                <label htmlFor="textarea-outline-1" className="k-label">Enter text</label>
+                <Textarea id="textarea-outline-1" fillMode="outline" />
             </div>
             <div dir="rtl">
-                <Textarea fillMode="outline" />
+                <label htmlFor="textarea-outline-rtl-1" className="k-label">Enter text</label>
+                <Textarea id="textarea-outline-rtl-1" fillMode="outline" />
             </div>
             <div>
-                <Textarea fillMode="outline" placeholder="placeholder..." />
+                <label htmlFor="textarea-outline-2" className="k-label">Enter text</label>
+                <Textarea id="textarea-outline-2" fillMode="outline" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <Textarea fillMode="outline" placeholder="placeholder..." />
+                <label htmlFor="textarea-outline-rtl-2" className="k-label">Enter text</label>
+                <Textarea id="textarea-outline-rtl-2" fillMode="outline" placeholder="placeholder..." />
             </div>
 
-            {[ 'normal', ...Textarea.states ].map((state) => (
+            {[ 'normal', ...Textarea.states ].map((state, index) => (
                 <>
                     <div>
-                        <TextareaNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                        <label htmlFor={`textarea-outline-${index + 3}`} className="k-label">Enter text ({state})</label>
+                        <TextareaNormal id={`textarea-outline-${index + 3}`} { ...{ [state]: true }} fillMode="outline" value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <TextareaNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                        <label htmlFor={`textarea-outline-rtl-${index + 3}`} className="k-label">Enter text ({state})</label>
+                        <TextareaNormal id={`textarea-outline-rtl-${index + 3}`} { ...{ [state]: true }} fillMode="outline" value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <TextareaNormal value="invalid focus" fillMode="outline" invalid focus />
+                <label htmlFor="textarea-outline-invalid-focus" className="k-label">Enter text (invalid focus)</label>
+                <TextareaNormal id="textarea-outline-invalid-focus" value="invalid focus" fillMode="outline" invalid focus />
             </div>
             <div dir="rtl">
-                <TextareaNormal value="invalid focus" fillMode="outline" invalid focus />
+                <label htmlFor="textarea-outline-rtl-invalid-focus" className="k-label">Enter text (invalid focus)</label>
+                <TextareaNormal id="textarea-outline-rtl-invalid-focus" value="invalid focus" fillMode="outline" invalid focus />
             </div>
 
             <div>
-                <TextareaNormal rows={3} fillMode="outline" value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."'/>
+                <label htmlFor="textarea-outline-long" className="k-label">Long text</label>
+                <TextareaNormal id="textarea-outline-long" rows={3} fillMode="outline" value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."'/>
             </div>
             <div>
-                <TextareaNormal rows={3} fillMode="outline" value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."' />
+                <label htmlFor="textarea-outline-long-rtl" className="k-label">Long text</label>
+                <TextareaNormal id="textarea-outline-long-rtl" rows={3} fillMode="outline" value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."' />
             </div>
         </div>
     </>

@@ -11,6 +11,10 @@ const TESTS_PATH = './packages/html/dist';
 const OUTPUT_PATH = './tests';
 const COMPONENT_PAGE_EXT = 'app.js';
 
+// Get component name from command line arguments
+const componentArg = process.argv[2];
+const componentFilter = componentArg ? `${componentArg}` : null;
+
 function pathUrl(url) {
     return `http://${HOST}:${PORT}/${path.dirname(url).replace('./', '')}`;
 }
@@ -37,7 +41,19 @@ const server = createServer({
 });
 
 server.listen(PORT, HOST, async() => {
-    const files = globSync(`${TESTS_PATH}/!(utils)/**/${COMPONENT_PAGE_EXT}`, { dotRelative: true });
+    // Build glob pattern based on component filter
+    const globPattern = componentFilter 
+        ? `${TESTS_PATH}/${componentFilter}/**/${COMPONENT_PAGE_EXT}`
+        : `${TESTS_PATH}/!(utils)/**/${COMPONENT_PAGE_EXT}`;
+    
+    const files = globSync(globPattern, { dotRelative: true });
+    
+    if (files.length === 0) {
+        await browser.close();
+        server.close();
+        process.exit(1);
+    }
+    
     const pages = files.map(path => [ path, pathUrl(path) ]);
 
     for (let i = 0; i < pages.length; i++) {
@@ -67,7 +83,7 @@ server.listen(PORT, HOST, async() => {
             }
         });
     }
-
+    
     await browser.close();
     server.close();
 });

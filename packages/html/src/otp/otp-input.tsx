@@ -52,6 +52,7 @@ export const OneTimePasswordInput = (
         type,
         value,
         placeholder,
+        autocomplete,
         hover,
         focus,
         valid,
@@ -72,6 +73,7 @@ export const OneTimePasswordInput = (
             type={type}
             value={value}
             placeholder={placeholder}
+            autocomplete={autocomplete}
             hover={hover}
             focus={focus}
             valid={valid}

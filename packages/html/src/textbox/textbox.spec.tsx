@@ -91,7 +91,6 @@ export const Textbox: KendoComponent<KendoTextboxProps & KendoTextboxState & Omi
 
     return (
         <Input
-            {...other}
             size={size}
             rounded={rounded}
             fillMode={fillMode}
@@ -111,7 +110,17 @@ export const Textbox: KendoComponent<KendoTextboxProps & KendoTextboxState & Omi
                 {separators && <InputSeparator/>}
             </>
             }
-            <InputInnerInput placeholder={placeholder} value={value} type={type} />
+            <InputInnerInput
+                {...other}
+                placeholder={placeholder}
+                value={value}
+                type={type}
+                autocomplete={autocomplete}
+                disabled={disabled}
+                readonly={readonly}
+                required={required}
+                aria-invalid={invalid ? true : undefined}
+            />
             { showValidationIcon && <InputValidationIcon
                 valid={valid}
                 invalid={invalid}

@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "timestamp": "2025-12-05T16:06:03.994Z",
+    "complianceLevel": "AA",
+    "filesTesteд": 5,
+    "wcagVersion": "2.2"
+  },
+  "summary": {
+    "totalViolations": 0,
+    "totalPasses": 35,
+    "avgScore": 100
+  },
+  "criteriaGroups": {},
+  "detailedResults": [
+    {
+      "filePath": "./tests/textbox/textbox-solid.html",
+      "timestamp": "2025-12-05T16:05:59.167Z",
+      "violations": [],
+      "filteredPageLevel": 2,
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 81
+    },
+    {
+      "filePath": "./tests/textbox/textbox-size-rounded.html",
+      "timestamp": "2025-12-05T16:06:02.074Z",
+      "violations": [],
+      "filteredPageLevel": 2,
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 81
+    },
+    {
+      "filePath": "./tests/textbox/textbox-prefix-suffix.html",
+      "timestamp": "2025-12-05T16:06:02.919Z",
+      "violations": [],
+      "filteredPageLevel": 2,
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 81
+    },
+    {
+      "filePath": "./tests/textbox/textbox-outline.html",
+      "timestamp": "2025-12-05T16:06:03.364Z",
+      "violations": [],
+      "filteredPageLevel": 2,
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 81
+    },
+    {
+      "filePath": "./tests/textbox/textbox-flat.html",
+      "timestamp": "2025-12-05T16:06:03.740Z",
+      "violations": [],
+      "filteredPageLevel": 2,
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 81
+    }
+  ]
+}

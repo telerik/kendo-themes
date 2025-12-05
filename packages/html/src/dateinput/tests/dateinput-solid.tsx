@@ -16,29 +16,35 @@ export default () =>(
             <span>DateInput RTL</span>
 
             <div>
-                <DateInputNormal showClearButton showSpinButton placeholder="placeholder..." />
+                <label htmlFor="dateinput-1" className="k-label">Select date</label>
+                <DateInputNormal id="dateinput-1" showClearButton showSpinButton placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <DateInputNormal showClearButton showSpinButton placeholder="placeholder..." />
+                <label htmlFor="dateinput-rtl-1" className="k-label">Select date</label>
+                <DateInputNormal id="dateinput-rtl-1" showClearButton showSpinButton placeholder="placeholder..." />
             </div>
 
-            {[ 'normal', ...DateInput.states ].map((state) => (
+            {[ 'normal', ...DateInput.states ].map((state, index) => (
                 <>
                     <div>
-                        <DateInputNormal showClearButton { ...{ [state]: true }} showSpinButton value={state} />
+                        <label htmlFor={`dateinput-${index + 2}`} className="k-label">Select date ({state})</label>
+                        <DateInputNormal id={`dateinput-${index + 2}`} showClearButton { ...{ [state]: true }} showSpinButton value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <DateInputNormal showClearButton { ...{ [state]: true }} showSpinButton value={state} />
+                        <label htmlFor={`dateinput-rtl-${index + 2}`} className="k-label">Select date ({state})</label>
+                        <DateInputNormal id={`dateinput-rtl-${index + 2}`} showClearButton { ...{ [state]: true }} showSpinButton value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <DateInputNormal showClearButton showSpinButton value="invalid focus" invalid focus />
+                <label htmlFor="dateinput-invalid-focus" className="k-label">Select date (invalid focus)</label>
+                <DateInputNormal id="dateinput-invalid-focus" showClearButton showSpinButton value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <DateInputNormal showClearButton showSpinButton value="invalid focus" invalid focus />
+                <label htmlFor="dateinput-rtl-invalid-focus" className="k-label">Select date (invalid focus)</label>
+                <DateInputNormal id="dateinput-rtl-invalid-focus" showClearButton showSpinButton value="invalid focus" invalid focus />
             </div>
         </div>
     </>

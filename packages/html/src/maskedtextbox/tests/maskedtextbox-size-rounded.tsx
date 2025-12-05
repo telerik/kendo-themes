@@ -21,7 +21,8 @@ export default () =>(
                     { MaskedTextbox.options.size.map((size) => (
                         <>
                             <div>
-                                <MaskedTextboxNormal size={size} rounded={rounded} value="MaskedTextbox"/>
+                                <label htmlFor={`maskedtextbox-${rounded}-${size}`} className="k-label">Phone number</label>
+                                <MaskedTextboxNormal id={`maskedtextbox-${rounded}-${size}`} size={size} rounded={rounded} value="MaskedTextbox"/>
                             </div>
                         </>
                     ))}
