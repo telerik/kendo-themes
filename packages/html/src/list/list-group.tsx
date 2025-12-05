@@ -4,6 +4,8 @@ export type KendoListGroupProps = {
     root?: boolean;
     virtualization?: boolean;
     label?: string;
+    groupIcon?: boolean;
+    groupIconName?: string;
 };
 
 export const ListGroup = (
