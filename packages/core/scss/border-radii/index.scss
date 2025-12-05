@@ -1,0 +1,71 @@
+@use "sass:map";
+@use "../spacing/index.scss" as *;
+
+/// The none border radius used across the Components.
+/// @group radii
+$kendo-border-radius-none: map.get($kendo-spacing, 0) !default;
+/// The extra small border radius used across the Components.
+/// @group radii
+$kendo-border-radius-xs: map.get($kendo-spacing, 1px) !default;
+/// The small border radius used across the Components.
+/// @group radii
+$kendo-border-radius-sm: map.get($kendo-spacing, 0.5) !default;
+/// The medium border radius used across the Components.
+/// @group radii
+$kendo-border-radius-md: map.get($kendo-spacing, 1) !default;
+/// The large border radius used across the Components.
+/// @group radii
+$kendo-border-radius-lg: map.get($kendo-spacing, 1.5) !default;
+/// The extra large border radius used across the Components.
+/// @group radii
+$kendo-border-radius-xl: map.get($kendo-spacing, 2) !default;
+/// The third largest border radius used across the Components.
+/// @group radii
+$kendo-border-radius-xxl: map.get($kendo-spacing, 3) !default;
+/// The second largest border radius used across the Components.
+/// @group radii
+$kendo-border-radius-xxxl: map.get($kendo-spacing, 4) !default;
+/// The largest border radius used across the Components.
+/// @group radii
+$kendo-border-radius-full: 9999px !default;
+
+
+$default-border-radii: (
+    none: $kendo-border-radius-none,
+    xs: $kendo-border-radius-xs,
+    sm: $kendo-border-radius-sm,
+    md: $kendo-border-radius-md,
+    lg: $kendo-border-radius-lg,
+    xl: $kendo-border-radius-xl,
+    xxl: $kendo-border-radius-xxl,
+    xxxl: $kendo-border-radius-xxxl,
+    full: $kendo-border-radius-full
+
+) !default;
+
+/// The global radii Map.
+/// @group radii
+$kendo-border-radii: $default-border-radii !default;
+$kendo-border-radii: map.merge($default-border-radii, $kendo-border-radii);
+
+
+@function k-border-radius($key) {
+    $_border-radius: map.get($kendo-border-radii, $key);
+    @return var(--kendo-border-radius-#{$key}, $_border-radius);
+}
+
+@mixin kendo-border-radius--styles() {
+    :root {
+        @each $key, $value in $kendo-border-radii {
+            --kendo-border-radius-#{$key}: #{$value};
+        }
+    }
+
+    // Generate k-rounded-* classes
+    // which are part of the components rendering.
+    @each $key, $val in $kendo-border-radii {
+        .k-rounded-#{$key} {
+            border-radius: k-border-radius($key);
+        }
+    }
+}

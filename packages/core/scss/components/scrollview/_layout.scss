@@ -1,4 +1,5 @@
 @use "../../color-system/_constants.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-scrollview--layout-base() {
@@ -113,6 +114,7 @@
         cursor: pointer;
         pointer-events: all;
         vertical-align: top;
+        transition: background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid);
 
         &::before {
             content: "";
@@ -138,6 +140,7 @@
         text-decoration: none;
         user-select: none;
         cursor: pointer;
+        transition: opacity k-transition(rapid);
 
         .k-icon {
             display: table-cell;
@@ -162,9 +165,4 @@
         transition-duration: .3s;
         transition-timing-function: ease-in-out;
     }
-}
-
-
-@mixin kendo-scrollview--layout() {
-    @include kendo-scrollview--layout-base();
 }

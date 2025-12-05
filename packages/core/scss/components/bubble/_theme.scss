@@ -1,8 +1,8 @@
 @use "./_variables.scss" as *;
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 
-@use "../../spacing/index.import.scss" as *;
-@use "../../color-system/_functions.import.scss" as *;
+@use "../../spacing/index.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "../../_variables.scss" as *;
 
 @mixin kendo-bubble--theme-base() {
@@ -25,7 +25,6 @@
         &.k-focus {
             @include fill( $bg: $kendo-bubble-focus-bg, $border: $kendo-bubble-focus-border );
             @include focus-indicator( $kendo-bubble-focus-shadow, true, true );
-            outline: none;
         }
 
         &:hover,
@@ -33,9 +32,4 @@
             @include fill( $bg: $kendo-bubble-hover-bg, $border: $kendo-bubble-hover-border );
         }
     }
-}
-
-
-@mixin kendo-bubble--theme() {
-    @include kendo-bubble--theme-base();
 }

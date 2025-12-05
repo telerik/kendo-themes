@@ -54,15 +54,11 @@ $kendo-button-font-family: var( --kendo-font-family, inherit ) !default;
 /// @group button
 $kendo-button-font-weight: var( --kendo-font-weight-semibold, normal ) !default;
 
-/// The calculated height of the Button.
-/// @group button
 $kendo-button-calc-size: calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) ) !default;
 $kendo-button-sm-calc-size: calc( ( #{$kendo-button-sm-line-height} * 1em ) + ( #{$kendo-button-sm-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) ) !default;
 $kendo-button-md-calc-size: calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) ) !default;
 $kendo-button-lg-calc-size: calc( ( #{$kendo-button-lg-line-height} * 1em ) + ( #{$kendo-button-lg-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) ) !default;
 
-/// The calculated inner height of the Button excluding the border width.
-/// @group button
 $kendo-button-inner-calc-size: calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) ) !default;
 $kendo-button-sm-inner-calc-size: calc( ( #{$kendo-button-sm-line-height} * 1em ) + ( #{$kendo-button-sm-padding-y} * 2 ) ) !default;
 $kendo-button-md-inner-calc-size: calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) ) !default;
@@ -199,6 +195,10 @@ $kendo-button-flat-disabled-text: var( --kendo-button-disabled-text, color-mix(i
 /// @group button
 $kendo-button-flat-disabled-border: var( --kendo-button-disabled-border, initial ) !default;
 
+/// The transition of the Button.
+/// @group button
+$kendo-button-transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid), opacity k-transition(rapid) !default;
+
 @forward "@progress/kendo-theme-core/scss/components/button/_variables.scss" with (
     $kendo-button-border-width: $kendo-button-border-width,
     $kendo-button-sm-padding-x: $kendo-button-sm-padding-x,
@@ -238,5 +238,6 @@ $kendo-button-flat-disabled-border: var( --kendo-button-disabled-border, initial
     $kendo-button-active-border: $kendo-button-active-border,
     $kendo-button-disabled-bg: $kendo-button-disabled-bg,
     $kendo-button-disabled-text: $kendo-button-disabled-text,
-    $kendo-button-disabled-border: $kendo-button-disabled-border
+    $kendo-button-disabled-border: $kendo-button-disabled-border,
+    $kendo-button-transition: $kendo-button-transition
 );

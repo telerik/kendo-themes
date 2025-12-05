@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "sass:string";
 @use "@progress/kendo-theme-core/scss/index.scss" as *;
-@use "@progress/kendo-theme-core/scss/functions/_map.import.scss" as *;
+@use "@progress/kendo-theme-core/scss/functions/_map.scss" as *;
 
 $kendo-theme-colors: () !default;
 
@@ -851,7 +851,7 @@ $kendo-utils: (
         "270": 270deg,
         "315": 315deg
     ),
-    "translate": k-map-remove( $kendo-sizing, "auto", "min", "max", "fit" ),
+    "translate": map.remove( $kendo-sizing, "auto", "min", "max", "fit" ),
     "skew": (
         "0": 0deg,
         "1": 1deg,

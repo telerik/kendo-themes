@@ -217,6 +217,19 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow color of the focused Suggestion.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-suggestion-theme-colors</td>
+    <td>Map</td>
+    <td><code>(
+    "primary": k-color(primary),
+    "secondary": k-color(secondary)
+)</code></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #f35800)</li><li>secondary: var(--kendo-color-secondary, #b6b6b6)</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Suggestion.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

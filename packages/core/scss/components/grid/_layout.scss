@@ -2,10 +2,10 @@
 @use "sass:math";
 @use "sass:list";
 @use "../../color-system/_constants.scss" as *;
-@use "../../mixins/index.import.scss" as *;
-@use "../../typography/index.import.scss" as *;
-@use "../../spacing/index.import.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "../../typography/index.scss" as *;
+@use "../../spacing/index.scss" as *;
+@use "../../z-index/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "../chip/_variables.scss" as *;
@@ -1317,11 +1317,10 @@
         }
     }
 
-    .k-filter-menu.k-popup,
-    .k-grid-filter-popup.k-popup {
+    .k-filter-menu.k-popup:not(.k-grid-filter-popup *) {
 
         .k-filter-menu-container {
-            width: $kendo-grid-column-menu-width;
+            min-width: $kendo-grid-column-menu-width;
             max-width: $kendo-grid-column-menu-max-width;
         }
     }
@@ -1424,6 +1423,7 @@
         .k-tabstrip-items {
             margin: (-$kendo-tabstrip-item-border-width) (-$kendo-tabstrip-item-border-width) 0;
 
+            .k-tabstrip-item,
             .k-item {
                 flex: 1;
             }
@@ -1516,9 +1516,4 @@
         flex: 1 1 auto;
     }
 
-}
-
-
-@mixin kendo-grid--layout() {
-    @include kendo-grid--layout-base();
 }

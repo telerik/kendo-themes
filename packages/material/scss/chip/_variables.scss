@@ -1,7 +1,6 @@
 @use "sass:map";
 @use "sass:math";
 @use "../core/_index.scss" as *;
-@use "../core/functions/index.import.scss" as *;
 @use"../button/_variables.scss" as *;
 
 
@@ -64,8 +63,6 @@ $kendo-chip-md-line-height: $kendo-chip-line-height !default;
 /// @group chip
 $kendo-chip-lg-line-height: $kendo-chip-line-height !default;
 
-/// The calculated height of the Chip.
-/// @group chip
 $kendo-chip-calc-size: calc( calc( #{$kendo-chip-line-height} * 1em ) + calc( #{$kendo-chip-md-padding-y} * 2 ) + calc( #{$kendo-chip-border-width} * 2 ) ) !default;
 $kendo-chip-sm-calc-size: calc( calc( #{$kendo-chip-sm-line-height  } * 1em) + calc( #{$kendo-chip-sm-padding-y} * 2 ) + calc( #{$kendo-chip-border-width} * 2) ) !default;
 

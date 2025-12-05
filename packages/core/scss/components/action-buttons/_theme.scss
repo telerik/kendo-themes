@@ -1,4 +1,4 @@
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-action-buttons--theme-base() {
@@ -13,9 +13,4 @@
         );
     }
 
-}
-
-
-@mixin kendo-action-buttons--theme() {
-    @include kendo-action-buttons--theme-base();
 }

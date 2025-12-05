@@ -1,6 +1,6 @@
 @use "sass:map";
-@use "../../mixins/index.import.scss" as *;
-@use "../../spacing/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "../../spacing/index.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 @use "../input/_variables.scss" as *;
@@ -362,9 +362,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-form--layout() {
-    @include kendo-form--layout-base();
 }

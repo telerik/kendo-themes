@@ -1,8 +1,6 @@
 @use "sass:map";
 @use "sass:math";
 @use "../core/_index.scss" as *;
-@use "../core/functions/index.import.scss" as *;
-@use "../core/motion/index.import.scss" as *;
 
 // Button
 
@@ -67,14 +65,10 @@ $kendo-button-md-line-height: var( --kendo-line-height, normal ) !default;
 /// @group button
 $kendo-button-lg-line-height: var( --kendo-line-height, normal ) !default;
 
-/// The calculated height of the Button.
-/// @group button
 $kendo-button-sm-calc-size: calc( ( #{$kendo-button-sm-line-height} * 1em ) + ( #{$kendo-button-sm-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) ) !default;
 $kendo-button-md-calc-size: calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) ) !default;
 $kendo-button-lg-calc-size: calc( ( #{$kendo-button-lg-line-height} * 1em ) + ( #{$kendo-button-lg-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) ) !default;
 
-/// The calculated inner height of the Button excluding the border width.
-/// @group button
 $kendo-button-inner-calc-size: calc( ( #{$kendo-button-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) ) !default;
 $kendo-button-sm-inner-calc-size: calc( ( #{$kendo-button-sm-line-height} * 1em ) + ( #{$kendo-button-sm-padding-y} * 2 ) ) !default;
 $kendo-button-md-inner-calc-size: calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) ) !default;
@@ -208,35 +202,53 @@ $kendo-button-disabled-shadow: null !default;
 $kendo-button-pulsing-opacity: .4 !default;
 
 // Solid Button
+/// The gradient of the solid Button.
+/// @group button
 $kendo-solid-button-gradient: none !default;
-$kendo-solid-button-shade-function: "k-color-darken" !default;
-$kendo-solid-button-shade-text-amount: 0 !default;
-$kendo-solid-button-shade-bg-amount: 0 !default;
-$kendo-solid-button-shade-border-amount: 0 !default;
-$kendo-solid-button-hover-shade-text-amount: null !default;
-$kendo-solid-button-hover-shade-bg-amount: 7.5% !default;
-$kendo-solid-button-hover-shade-border-amount: 10% !default;
-$kendo-solid-button-active-shade-text-amount: null !default;
-$kendo-solid-button-active-shade-bg-amount: 10% !default;
-$kendo-solid-button-active-shade-border-amount: 12.5% !default;
+/// The shadow of the solid Button.
+/// @group button
 $kendo-solid-button-shadow: true !default;
+/// The shadow blur of the solid Button.
+/// @group button
 $kendo-solid-button-shadow-blur: 0px !default;
+/// The shadow spread of the solid Button.
+/// @group button
 $kendo-solid-button-shadow-spread: .25rem !default;
+/// The shadow opacity of the solid Button.
+/// @group button
 $kendo-solid-button-shadow-opacity: .5 !default;
 
 // Outline Button
+/// The shadow of the outline Button.
+/// @group button
 $kendo-outline-button-shadow: true !default;
+/// The shadow blur of the outline Button.
+/// @group button
 $kendo-outline-button-shadow-blur: 0px !default;
+/// The shadow spread of the outline Button.
+/// @group button
 $kendo-outline-button-shadow-spread: .25rem !default;
+/// The shadow opacity of the outline Button.
+/// @group button
 $kendo-outline-button-shadow-opacity: .5 !default;
 
 // Link Button
+/// The shadow of the link Button.
+/// @group button
 $kendo-link-button-shadow: true !default;
+/// The shadow blur of the link Button.
+/// @group button
 $kendo-link-button-shadow-blur: 0px !default;
+/// The shadow spread of the link Button.
+/// @group button
 $kendo-link-button-shadow-spread: .25rem !default;
+/// The shadow opacity of the link Button.
+/// @group button
 $kendo-link-button-shadow-opacity: .5 !default;
 
 // Clear Button
+/// The opacity of the clear Button.
+/// @group button
 $kendo-clear-button-focus-opacity: .1 !default;
 
 /// The overlay opacity of the hovered flat Button. Used to create a background for the flat Button.
@@ -255,9 +267,9 @@ $kendo-flat-button-selected-opacity: .2 !default;
 /// @group button
 $kendo-flat-button-focus-ring-opacity: .12 !default;
 
-/// The color transition of the Button.
+/// The transition of the Button.
 /// @group button
-$kendo-button-transition: $kendo-transition !default;
+$kendo-button-transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid), opacity k-transition(rapid) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/button/_variables.scss" with (
     $kendo-button-border-width: $kendo-button-border-width,
@@ -315,16 +327,6 @@ $kendo-button-transition: $kendo-transition !default;
     $kendo-button-disabled-shadow: $kendo-button-disabled-shadow,
     $kendo-button-pulsing-opacity: $kendo-button-pulsing-opacity,
     $kendo-solid-button-gradient: $kendo-solid-button-gradient,
-    $kendo-solid-button-shade-function: $kendo-solid-button-shade-function,
-    $kendo-solid-button-shade-text-amount: $kendo-solid-button-shade-text-amount,
-    $kendo-solid-button-shade-bg-amount: $kendo-solid-button-shade-bg-amount,
-    $kendo-solid-button-shade-border-amount: $kendo-solid-button-shade-border-amount,
-    $kendo-solid-button-hover-shade-text-amount: $kendo-solid-button-hover-shade-text-amount,
-    $kendo-solid-button-hover-shade-bg-amount: $kendo-solid-button-hover-shade-bg-amount,
-    $kendo-solid-button-hover-shade-border-amount: $kendo-solid-button-hover-shade-border-amount,
-    $kendo-solid-button-active-shade-text-amount: $kendo-solid-button-active-shade-text-amount,
-    $kendo-solid-button-active-shade-bg-amount: $kendo-solid-button-active-shade-bg-amount,
-    $kendo-solid-button-active-shade-border-amount: $kendo-solid-button-active-shade-border-amount,
     $kendo-solid-button-shadow: $kendo-solid-button-shadow,
     $kendo-solid-button-shadow-blur: $kendo-solid-button-shadow-blur,
     $kendo-solid-button-shadow-spread: $kendo-solid-button-shadow-spread,

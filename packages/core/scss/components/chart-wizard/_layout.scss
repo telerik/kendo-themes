@@ -1,4 +1,5 @@
 @use "./variables.scss" as *;
+@use "../../motion/index.scss" as *;
 
 @mixin kendo-chart-wizard--layout-base() {
     // Chart wizard
@@ -7,12 +8,14 @@
             display: flex;
             align-items: center;
             gap: $kendo-chart-wizard-icon-text-gap;
+            transition: color k-transition(rapid);
         }
 
         .k-icon-background-area {
             display: flex;
             padding: $kendo-chart-wizard-icon-area-padding;
             border-radius: $kendo-chart-wizard-icon-area-border-radius;
+            transition: box-shadow k-transition(rapid);
         }
     }
 
@@ -38,9 +41,4 @@
     .k-chart-wizard-property-pane {
         padding: $kendo-chart-wizard-property-pane-padding;
     }
-}
-
-
-@mixin kendo-chart-wizard--layout() {
-    @include kendo-chart-wizard--layout-base();
 }

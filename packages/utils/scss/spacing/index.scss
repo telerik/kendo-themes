@@ -1,0 +1,18 @@
+@use "@progress/kendo-theme-core/scss/spacing/index.scss" as *;
+
+@forward "./_margin.scss";
+
+@use "./_margin.scss" as *;
+@use "./_padding.scss" as *;
+@use "./_space-between.scss" as *;
+
+
+@mixin kendo-utils--spacing() {
+    @include kendo-utils--spacing--margin();
+    @include kendo-utils--spacing--padding();
+    @include kendo-utils--spacing--space-between();
+}
+
+@mixin kendo-utils--spacing--responsive($key) {
+    @include kendo-utils--spacing--padding--responsive($key)
+}

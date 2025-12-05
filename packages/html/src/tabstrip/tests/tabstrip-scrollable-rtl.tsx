@@ -5,10 +5,10 @@ const style = `
     /*
         This simulates the element "scroll" (scrollLeft, scrollTop, scrollBy) property
     */
-    .k-tabstrip-scrollable .k-hstack .k-tabstrip-items .k-item:first-child {
+    .k-tabstrip-scrollable .k-hstack .k-tabstrip-items .k-tabstrip-item:first-child {
         margin-right: -30px;
     }
-    .k-tabstrip-scrollable .k-vstack .k-tabstrip-items .k-item:first-child {
+    .k-tabstrip-scrollable .k-vstack .k-tabstrip-items .k-tabstrip-item:first-child {
         margin-top: -34px;
     }
 `;

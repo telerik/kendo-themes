@@ -1,5 +1,5 @@
-@use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_functions.import.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "./variables.scss" as *;
 @use "../popup/_variables.scss" as *;
 
@@ -243,9 +243,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-pivotgrid--theme() {
-    @include kendo-pivotgrid--theme-base();
 }

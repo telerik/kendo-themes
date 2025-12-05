@@ -1,23 +1,22 @@
 @use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
-@use "../core/functions/index.import.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/button/_theme.scss" as *;
 
 @mixin kendo-button--theme() {
 
     @include kendo-button--theme-base();
 
+    .k-button {
+        &:focus,
+        &.k-focus {
+            outline-style: solid;
+            outline-width: calc( (#{$kendo-button-border-width} * 2 ));
+            outline-offset: calc( (#{$kendo-button-border-width} * 2 ) * -1);
+        }
+    }
+
     // Solid button
     @each $name, $color in $kendo-button-theme-colors {
-        .k-button {
-            &:focus,
-            &.k-focus {
-                outline-style: solid;
-                outline-width: calc( (#{$kendo-button-border-width} * 2 ));
-                outline-offset: calc( (#{$kendo-button-border-width} * 2 ) * -1);
-            }
-        }
-
         .k-button-solid-#{$name} {
             // Focus state
             &:focus,

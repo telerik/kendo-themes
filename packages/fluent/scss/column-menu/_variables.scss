@@ -1,24 +1,52 @@
 @use "../core/_index.scss" as *;
 
+/// The horizontal padding of the small ColumnMenu item.
+/// @group column-menu
 $kendo-column-menu-item-sm-padding-x: var( --kendo-column-menu-item-sm-padding-x, k-spacing(1.5) ) !default;
+/// The vertical padding of the small ColumnMenu item.
+/// @group column-menu
 $kendo-column-menu-item-sm-padding-y: var( --kendo-column-menu-item-sm-padding-y, k-spacing(1) ) !default;
 
+/// The horizontal padding of the medium ColumnMenu item.
+/// @group column-menu
 $kendo-column-menu-item-md-padding-x: var( --kendo-column-menu-item-md-padding-x, k-spacing(1.5) ) !default;
+/// The vertical padding of the medium ColumnMenu item.
+/// @group column-menu
 $kendo-column-menu-item-md-padding-y: var( --kendo-column-menu-item-md-padding-y, k-spacing(1.5) ) !default;
 
+/// The horizontal padding of the large ColumnMenu item.
+/// @group column-menu
 $kendo-column-menu-item-lg-padding-x: var( --kendo-column-menu-item-lg-padding-x, k-spacing(1.5) ) !default;
+/// The vertical padding of the large ColumnMenu item.
+/// @group column-menu
 $kendo-column-menu-item-lg-padding-y: var( --kendo-column-menu-item-lg-padding-y, k-spacing(2) ) !default;
 
+/// The font size of the small ColumnMenu.
+/// @group column-menu
 $kendo-column-menu-sm-font-size: var( --kendo-column-menu-sm-font-size, var( --kendo-font-size, inherit ) ) !default;
+/// The font size of the medium ColumnMenu.
+/// @group column-menu
 $kendo-column-menu-md-font-size: var( --kendo-column-menu-md-font-size, var( --kendo-font-size, inherit ) ) !default;
+/// The font size of the large ColumnMenu.
+/// @group column-menu
 $kendo-column-menu-lg-font-size: var( --kendo-column-menu-lg-font-size, var( --kendo-font-size, inherit ) ) !default;
 
+/// The line height of the small ColumnMenu.
+/// @group column-menu
 $kendo-column-menu-sm-line-height: var( --kendo-column-menu-sm-line-height, var( --kendo-line-height, normal ) ) !default;
+/// The line height of the medium ColumnMenu.
+/// @group column-menu
 $kendo-column-menu-md-line-height: var( --kendo-column-menu-md-line-height, var( --kendo-line-height, normal ) ) !default;
+/// The line height of the large ColumnMenu.
+/// @group column-menu
 $kendo-column-menu-lg-line-height: var( --kendo-column-menu-lg-line-height, var( --kendo-line-height, normal ) ) !default;
 
+/// The font family of the ColumnMenu.
+/// @group column-menu
 $kendo-column-menu-font-family: var( --kendo-column-menu-font-family, var( --kendo-font-family, inherit ) ) !default;
 
+/// The sizes map for the ColumnMenu.
+/// @group column-menu
 $kendo-column-menu-sizes: (
     sm: (
         padding-x: $kendo-column-menu-item-sm-padding-x,
@@ -41,9 +69,17 @@ $kendo-column-menu-sizes: (
 ) !default;
 
 // Group Menu
+/// The background color of the hovered ColumnMenu item.
+/// @group column-menu
 $kendo-group-menu-item-action-hover-bg: var( --kendo-group-menu-item-action-hover-bg, color-mix(in srgb, currentColor 5%, transparent) ) !default;
+/// The background color of the selected ColumnMenu item.
+/// @group column-menu
 $kendo-group-menu-item-action-selected-bg: var( --kendo-group-menu-item-action-selected-bg, color-mix(in srgb, currentColor 8%, transparent) ) !default;
+/// The text color of the ColumnMenu item.
+/// @group column-menu
 $kendo-group-menu-item-add-action-text: var( --kendo-group-menu-item-add-action-text, k-color(primary) ) !default;
+/// The border color of the ColumnMenu item.
+/// @group column-menu
 $kendo-group-menu-item-border: var( --kendo-group-menu-item-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/column-menu/_variables.scss" with (

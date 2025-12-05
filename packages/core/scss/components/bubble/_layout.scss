@@ -1,8 +1,7 @@
 @use "./_variables.scss" as *;
-@use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_functions.import.scss" as *;
-
-@use "../../spacing/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "../../motion/index.scss" as *;
+@use "../../spacing/index.scss" as *;
 
 @mixin kendo-bubble--layout-base() {
     .k-bubble {
@@ -16,6 +15,7 @@
         display: flex;
         box-sizing: border-box;
         overflow-wrap: break-word;
+        transition: border-color k-transition(rapid), background-color k-transition(rapid), box-shadow k-transition(rapid);
 
         a {
             color: inherit;
@@ -25,6 +25,12 @@
         &:hover,
         &.k-hover {
             cursor: pointer;
+        }
+
+        &:focus,
+        &:focus-visible,
+        &.k-focus {
+            outline: none;
         }
     }
 

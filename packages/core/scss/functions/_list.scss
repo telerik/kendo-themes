@@ -1,0 +1,36 @@
+@use "sass:list";
+
+/// Checks whether `$list` contains `$value`.
+/// @param {List} $list - The list to check.
+/// @param {Any} $value - The value to check for.
+/// @return {Boolean} - Whether `$list` contains `$value`.
+///
+/// @example scss - Usage
+///   @debug k-list-includes( ( "foo", "bar" ), "foo" ); // => true
+///   @debug k-list-includes( ( "foo", "bar" ), "baz" ); // => false
+@function k-list-includes($list, $value) {
+    @return list.index($list, $value) != null;
+}
+
+/// Reverse the order of items in `$list`.
+/// @param {List} $list - The list to reverse.
+/// @return {List} - The reversed list.
+///
+/// @example scss - Usage
+///   @debug k-list-reverse( ( "foo", "bar" ) ); // => "bar, foo"
+@function k-list-reverse($list: null) {
+    $result: ();
+
+    @if ($list) {
+        $len: list.length($list);
+
+        @for $i from $len through 1 {
+            $result: list.append($result, list.nth($list, $i));
+        }
+
+        @return $result;
+    }
+
+    @warn "No list passed.";
+    @return $result;
+}

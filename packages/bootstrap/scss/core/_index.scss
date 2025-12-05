@@ -2,16 +2,19 @@
 @use "./color-system/_swatch.scss" as *;
 
 // Elevation
-@use "./elevation/index.import.scss" as *;
+@use "./elevation/index.scss" as *;
 
 // Typography
-@use "./typography/index.import.scss" as *;
+@use "./typography/index.scss" as *;
 
 // Spacing
-@use "./spacing/index.import.scss" as *;
+@use "./spacing/index.scss" as *;
 
 // Radii
-@use "./border-radii/index.import.scss" as *;
+@use "./border-radii/index.scss" as *;
+
+// Motion
+@use "./motion/index.scss" as *;
 
 @forward "../_variables.scss";
 
@@ -44,6 +47,15 @@
     // Spacing
     $default-spacing: $kendo-spacing,
     $kendo-spacing: $kendo-spacing !default,
+    // Motion
+    $default-easings: $kendo-easings,
+    $kendo-easings: $kendo-easings !default,
+
+    $default-durations: $kendo-durations,
+    $kendo-durations: $kendo-durations !default,
+
+    $default-transitions: $kendo-transitions,
+    $kendo-transitions: $kendo-transitions !default,
 );
 
 // Global disabled styles

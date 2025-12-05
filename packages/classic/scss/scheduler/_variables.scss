@@ -1,6 +1,5 @@
 @use "sass:math";
 @use "../core/_index.scss" as *;
-@use "../core/functions/index.import.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 @use "../calendar/_variables.scss" as *;
 
@@ -262,6 +261,8 @@ $kendo-scheduler-marquee-label-inset-x: k-spacing(1) !default;
 /// @group scheduler
 $kendo-scheduler-marquee-label-inset-y: k-spacing(0.5) !default;
 
+/// The background color of the Scheduler header.
+/// @group scheduler
 $kendo-scheduler-header-bg: k-color(surface) !default;
 
 

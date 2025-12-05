@@ -253,8 +253,3 @@
     }
 
 }
-
-
-@mixin kendo-table--layout() {
-    @include kendo-table--layout-base();
-}

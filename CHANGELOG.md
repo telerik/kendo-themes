@@ -3,6 +3,153 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.3.0](https://github.com/telerik/kendo-themes/compare/v12.3.0-dev.2...v12.3.0) (2025-12-01)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+# [12.3.0-dev.2](https://github.com/telerik/kendo-themes/compare/v12.3.0-dev.1...v12.3.0-dev.2) (2025-12-01)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+# [12.3.0-dev.1](https://github.com/telerik/kendo-themes/compare/v12.3.0-dev.0...v12.3.0-dev.1) (2025-11-24)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+# [12.3.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.2.4-dev.1...v12.3.0-dev.0) (2025-11-19)
+
+
+### Bug Fixes
+
+* **material:** bubble focus should be more prominent ([61b8e61](https://github.com/telerik/kendo-themes/commit/61b8e619f7d69cb353449af984fb8fe3b6c5057c))
+
+
+### Features
+
+* implement motion system ([2354c36](https://github.com/telerik/kendo-themes/commit/2354c36796ea087cb312ce5f85af9ab942999922))
+
+
+
+
+
+## [12.2.4-dev.1](https://github.com/telerik/kendo-themes/compare/v12.2.4-dev.0...v12.2.4-dev.1) (2025-11-17)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+## [12.2.4-dev.0](https://github.com/telerik/kendo-themes/compare/v12.2.3...v12.2.4-dev.0) (2025-11-10)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+## [12.2.3](https://github.com/telerik/kendo-themes/compare/v12.2.3-dev.0...v12.2.3) (2025-11-07)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+## [12.2.3-dev.0](https://github.com/telerik/kendo-themes/compare/v12.2.2...v12.2.3-dev.0) (2025-11-07)
+
+
+### Bug Fixes
+
+* **bootstrap:** input adornments in Chat should use the same background as input ([be3b94d](https://github.com/telerik/kendo-themes/commit/be3b94d03cafcae7f49fcf1ee821c48e57c0bede))
+* **menu:** add missing border color to popup wrapper ([d20001d](https://github.com/telerik/kendo-themes/commit/d20001dc4f3fd92b301de51560d3e8b4576d7c1d))
+
+
+
+
+
+## [12.2.2](https://github.com/telerik/kendo-themes/compare/v12.2.1...v12.2.2) (2025-11-06)
+
+
+### Bug Fixes
+
+* **charts:** use color system for chart tooltip ([92c0ae2](https://github.com/telerik/kendo-themes/commit/92c0ae2758fab10e0cca07df56bd24310a37bdd7))
+* **material:** button duplicate selectors ([9e2a769](https://github.com/telerik/kendo-themes/commit/9e2a7696e01db72a1904c1f89197f0ee5cac14e7))
+* **tabstrip:** active tabstrip should be visible in material ([356c8f2](https://github.com/telerik/kendo-themes/commit/356c8f20e2a43cfa53ed2fc53c684c8a0b0b34da))
+
+
+
+
+
+## [12.2.1](https://github.com/telerik/kendo-themes/compare/v12.2.1-dev.1...v12.2.1) (2025-11-03)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+## [12.2.1-dev.1](https://github.com/telerik/kendo-themes/compare/v12.2.1-dev.0...v12.2.1-dev.1) (2025-11-03)
+
+
+### Bug Fixes
+
+* **suggestion:** button focus indication is not visible at the end ([9f4f417](https://github.com/telerik/kendo-themes/commit/9f4f417e0639a160192394d7bd3da6f8be0eebcf))
+
+
+
+
+
+## [12.2.1-dev.0](https://github.com/telerik/kendo-themes/compare/v12.2.0...v12.2.1-dev.0) (2025-11-03)
+
+
+### Bug Fixes
+
+* **chat:** the attached files are cut out when the chat width is small ([de9abea](https://github.com/telerik/kendo-themes/commit/de9abea4d948fe9fac0c2fa27a17caaa38be9f02))
+
+
+
+
+
+# [12.2.0](https://github.com/telerik/kendo-themes/compare/v12.2.0-dev.4...v12.2.0) (2025-10-28)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+# [12.2.0-dev.4](https://github.com/telerik/kendo-themes/compare/v12.2.0-dev.3...v12.2.0-dev.4) (2025-10-28)
+
+
+### Bug Fixes
+
+* **fluent:** use correct grid group dropclue height ([e07725c](https://github.com/telerik/kendo-themes/commit/e07725cec4d258a5a7dd54b2ad4caf812c1a2248))
+* **list:** not working sizing sass variables ([6bd0951](https://github.com/telerik/kendo-themes/commit/6bd0951642c35067dbb87d026ac25bef874c79b5))
+
+
+
+
+
+# [12.2.0-dev.3](https://github.com/telerik/kendo-themes/compare/v12.2.0-dev.2...v12.2.0-dev.3) (2025-10-27)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
 # [12.2.0-dev.2](https://github.com/telerik/kendo-themes/compare/v12.2.0-dev.1...v12.2.0-dev.2) (2025-10-20)
 
 **Note:** Version bump only for package kendo-themes.repo

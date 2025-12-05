@@ -4,13 +4,13 @@
 /// The width of the border around the Stepper.
 /// @group stepper
 $kendo-stepper-border-width: var( --kendo-stepper-border-width, 0px ) !default;
-// The font size of the Stepper.
+/// The font size of the Stepper.
 /// @group stepper
 $kendo-stepper-font-size: var( --kendo-stepper-font-size, var( --kendo-font-size, inherit ) ) !default;
-// The font family of the Stepper.
+/// The font family of the Stepper.
 /// @group stepper
 $kendo-stepper-font-family: var( --kendo-stepper-font-family, var( --kendo-font-family, inherit ) ) !default;
-// The line height of the Stepper.
+/// The line height of the Stepper.
 /// @group stepper
 $kendo-stepper-line-height: var( --kendo-stepper-line-height, var( --kendo-line-height, normal ) ) !default;
 
@@ -198,12 +198,10 @@ $kendo-stepper-progressbar-size: var( --kendo-stepper-progressbar-size, k-spacin
 $kendo-stepper-content-transition-property: var( --kendo-stepper-content-transition-property, none ) !default;
 /// The duration of the Stepper transition.
 /// @group stepper
-$kendo-stepper-content-transition-duration: var( --kendo-stepper-content-transition-duration, 300ms ) !default;
+$kendo-stepper-content-transition-duration: var( --kendo-stepper-content-transition-duration, k-duration(speedy) ) !default;
 /// The timing function of the Stepper transition.
 /// @group stepper
-/// The timing function of the Stepper transition.
-/// @group stepper
-$kendo-stepper-content-transition-timing-function: var( --kendo-stepper-content-transition-timing-function, cubic-bezier(.4, 0, .2, 1) 0ms ) !default;
+$kendo-stepper-content-transition-timing-function: var( --kendo-stepper-content-transition-timing-function, k-easing(standard) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/stepper/_variables.scss" with (
     $kendo-stepper-label-margin-x: $kendo-stepper-label-margin-x,

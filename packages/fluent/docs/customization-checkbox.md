@@ -128,6 +128,38 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-checkbox-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        size: $kendo-checkbox-sm-size,
+        glyph-size: $kendo-checkbox-sm-glyph-size,
+        ripple-size: $kendo-checkbox-sm-ripple-size,
+        indicator-size: k-spacing(4),
+        indeterminate-size: k-spacing(3),
+    ),
+    md: (
+        size: $kendo-checkbox-md-size,
+        glyph-size: $kendo-checkbox-md-glyph-size,
+        ripple-size: $kendo-checkbox-md-ripple-size,
+        indicator-size: k-spacing(4),
+        indeterminate-size: k-spacing(4),
+    ),
+    lg: (
+        size: $kendo-checkbox-lg-size,
+        glyph-size: $kendo-checkbox-lg-glyph-size,
+        ripple-size: $kendo-checkbox-lg-ripple-size,
+        indicator-size: k-spacing(4),
+        indeterminate-size: k-spacing(5),
+    )
+)</code></td>
+    <td><ul><li>sm: "size":"var(--kendo-checkbox-sm-size, var(--kendo-spacing-4, 1rem))","glyph-size":"var(--kendo-checkbox-sm-glyph-size, var(--kendo-spacing-3\\.5, 0.875rem))","ripple-size":"var(--kendo-checkbox-sm-ripple-size, 300%)","indicator-size":"var(--kendo-spacing-4, 1rem)","indeterminate-size":"var(--kendo-spacing-3, 0.75rem)"</li><li>md: "size":"var(--kendo-checkbox-md-size, var(--kendo-spacing-5, 1.25rem))","glyph-size":"var(--kendo-checkbox-md-glyph-size, var(--kendo-spacing-4\\.5, 1.125rem))","ripple-size":"var(--kendo-checkbox-md-ripple-size, 300%)","indicator-size":"var(--kendo-spacing-4, 1rem)","indeterminate-size":"var(--kendo-spacing-4, 1rem)"</li><li>lg: "size":"var(--kendo-checkbox-lg-size, var(--kendo-spacing-6, 1.5rem))","glyph-size":"var(--kendo-checkbox-lg-glyph-size, var(--kendo-spacing-5\\.5, 1.375rem))","ripple-size":"var(--kendo-checkbox-lg-ripple-size, 300%)","indicator-size":"var(--kendo-spacing-4, 1rem)","indeterminate-size":"var(--kendo-spacing-5, 1.25rem)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-checkbox-bg</td>
     <td>String</td>
     <td><code>var( --kendo-checkbox-bg, k-color(surface-alt) )</code></td>

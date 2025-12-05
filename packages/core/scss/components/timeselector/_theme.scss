@@ -1,6 +1,6 @@
 @use "sass:math";
-@use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_functions.import.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-time-selector--theme-base() {
@@ -75,9 +75,4 @@
         );
     }
 
-}
-
-
-@mixin kendo-time-selector--theme() {
-    @include kendo-time-selector--theme-base();
 }

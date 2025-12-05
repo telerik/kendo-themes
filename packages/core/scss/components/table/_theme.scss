@@ -1,4 +1,4 @@
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-table--theme-base() {
@@ -89,9 +89,4 @@
         background-color: $kendo-table-selected-bg;
     }
 
-}
-
-
-@mixin kendo-table--theme() {
-    @include kendo-table--theme-base();
 }

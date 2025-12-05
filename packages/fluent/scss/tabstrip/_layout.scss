@@ -17,6 +17,7 @@
 
         .k-tabstrip-items-wrapper {
 
+            .k-tabstrip-item.k-active::after,
             .k-item.k-active::after {
                 border: none;
                 height: $kendo-tabstrip-indicator-size;
@@ -29,6 +30,7 @@
 
            > .k-tabstrip-items-wrapper {
 
+                .k-tabstrip-item.k-active::after,
                 .k-item.k-active::after {
                     top: unset;
                 }
@@ -38,6 +40,7 @@
 
            > .k-tabstrip-items-wrapper {
 
+                .k-tabstrip-item.k-active::after,
                 .k-item.k-active::after {
                     left: unset;
                 }
@@ -47,6 +50,7 @@
 
            > .k-tabstrip-items-wrapper {
 
+                .k-tabstrip-item.k-active::after,
                 .k-item.k-active::after {
                     right: unset;
                 }
@@ -58,6 +62,7 @@
 
             > .k-tabstrip-items-wrapper {
 
+                .k-tabstrip-item.k-active::after,
                 .k-item.k-active::after {
                     width: $kendo-tabstrip-indicator-size;
                     height: auto;

@@ -1,6 +1,12 @@
 @use "@progress/kendo-theme-core/scss/components/chat/_theme.scss" as *;
+@use "../input/_variables.scss" as *;
 
 
 @mixin kendo-chat--theme() {
     @include kendo-chat--theme-base();
+
+    .k-message-box .k-input-prefix,
+    .k-message-box .k-input-suffix {
+        background-color: $kendo-input-bg;
+    }
 }

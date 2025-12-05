@@ -1,5 +1,5 @@
 @use "./variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 @mixin kendo-prompt--layout-base() {
 
@@ -77,9 +77,4 @@
     .k-prompt-stop-fab {
         z-index: k-z-index("base", 2);
     }
-}
-
-
-@mixin kendo-prompt--layout() {
-    @include kendo-prompt--layout-base();
 }

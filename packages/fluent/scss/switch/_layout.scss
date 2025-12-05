@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
-@use "../core/z-index/index.import.scss" as *;
+@use "../core/z-index/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/switch/_layout.scss" as *;
 
 @mixin kendo-switch--layout() {
@@ -16,16 +16,5 @@
             z-index: k-z-index("base", 1);
             border-radius: k-border-radius(md);
         }
-    }
-
-    .k-switch-track {
-        transition: all 100ms ease-in-out;
-    }
-
-    .k-switch-thumb-wrap {
-        transition: inset-inline-start 100ms ease-in-out;
-    }
-    .k-switch-thumb {
-        transition: all 100ms ease-in-out;
     }
 }

@@ -1,5 +1,5 @@
-@use "../../color-system/_functions.import.scss" as *;
-@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_functions.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
@@ -214,9 +214,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-stepper--theme() {
-    @include kendo-stepper--theme-base();
 }

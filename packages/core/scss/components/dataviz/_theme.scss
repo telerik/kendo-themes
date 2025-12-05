@@ -1,7 +1,6 @@
 
-@use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_constants.scss" as *;
-@use "../../color-system/_functions.import.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "./variables.scss" as *;
 @use "../button/_variables.scss" as *;
 
@@ -24,12 +23,11 @@
 
 
     // Tooltip
-    // TODO
     .k-chart-tooltip {
-        color: $kendo-color-white;
+        @include fill( $color: $kendo-chart-tooltip-color );
     }
     .k-chart-tooltip-inverse {
-        color: $kendo-color-black;
+        @include fill( $color: $kendo-chart-tooltip-color-inverse );
     }
 
     .k-chart-crosshair-tooltip,
@@ -113,9 +111,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-dataviz--theme() {
-    @include kendo-dataviz--theme-base();
 }

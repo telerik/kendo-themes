@@ -1,6 +1,7 @@
 @use "sass:math";
 @use "sass:list";
 @use "../../color-system/_constants.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../tooltip/_variables.scss" as *;
 
@@ -320,7 +321,7 @@
     .k-slider-transitions {
         &.k-slider-horizontal {
             .k-draghandle {
-                transition: inset-inline-start $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-transition-speed $kendo-slider-transition-function, transform $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function;
+                transition: inset-inline-start $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function, border-color $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function, box-shadow $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function;
             }
             .k-slider-selection {
                 transition: width $kendo-slider-transition-speed $kendo-slider-transition-function;
@@ -329,7 +330,7 @@
 
         &.k-slider-vertical {
             .k-draghandle {
-                transition: bottom  $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-transition-speed $kendo-slider-transition-function, transform $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function;
+                transition: bottom  $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function, border-color $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function, box-shadow $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function;
             }
 
             .k-slider-selection {
@@ -384,9 +385,4 @@
     .k-draghandle { @extend .k-slider-thumb !optional; }
     .k-draghandle-start { @extend .k-slider-thumb-start !optional; }
     .k-draghandle-end { @extend .k-slider-thumb-end !optional; }
-}
-
-
-@mixin kendo-slider--layout() {
-    @include kendo-slider--layout-base();
 }

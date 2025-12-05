@@ -1,8 +1,8 @@
 @use "sass:map";
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../colorpalette/_variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 
 @mixin kendo-color-editor--layout-base() {
@@ -116,9 +116,4 @@
     .k-coloreditor-footer.k-actions {
         margin: 0;
     }
-}
-
-
-@mixin kendo-color-editor--layout() {
-    @include kendo-color-editor--layout-base();
 }

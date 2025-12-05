@@ -1,8 +1,8 @@
 @use "../../color-system/_constants.scss" as *;
-@use "../../spacing/index.import.scss" as *;
+@use "../../spacing/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../icons/_variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 @mixin kendo-upload--layout-base() {
 
@@ -247,9 +247,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-upload--layout() {
-    @include kendo-upload--layout-base();
 }

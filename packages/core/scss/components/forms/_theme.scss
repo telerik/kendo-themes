@@ -1,5 +1,5 @@
-@use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_functions.import.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-form--theme-base() {
@@ -37,9 +37,4 @@
         @include fill( $border: $kendo-form-separator-border-color );
     }
 
-}
-
-
-@mixin kendo-form--theme() {
-    @include kendo-form--theme-base();
 }

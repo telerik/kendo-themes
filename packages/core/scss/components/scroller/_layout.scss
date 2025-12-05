@@ -1,4 +1,5 @@
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
+@use "../../motion/index.scss" as *;
 
 @mixin kendo-scroller--layout-base() {
 
@@ -44,7 +45,7 @@
         width: 2rem;
         font-size: 2rem;
         transform: rotate(0deg);
-        transition: transform 300ms linear;
+        transition: transform k-duration(speedy) k-easing(linear);
     }
     .km-widget .km-scroller-release .km-icon {
         transform: rotate(180deg);
@@ -63,7 +64,7 @@
         width: .4em;
         opacity: 0;
         transform-origin: 0 0;
-        transition: opacity .3s linear;
+        transition: opacity k-duration(speedy) k-easing(linear);
     }
 
     .k-map,
@@ -84,9 +85,4 @@
         inset-block-end: 2px;
     }
 
-}
-
-
-@mixin kendo-scroller--layout() {
-    @include kendo-scroller--layout-base();
 }

@@ -34,7 +34,7 @@ k-color-luminance($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L621-L627
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L574-L580
 @function k-color-luminance($color) {
     $red: list.nth( $_linear-channel-values, k-color-red( $color ) + 1 );
     $green: list.nth( $_linear-channel-values, k-color-green( $color ) + 1 );
@@ -70,7 +70,7 @@ k-color-contrast-ratio($background, $foreground) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L638-L643
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L591-L596
 @function k-color-contrast-ratio($background, $foreground) {
     $backLum: k-color-luminance( $background ) + .05;
     $foreLum: k-color-luminance( $foreground ) + .05;
@@ -102,7 +102,7 @@ k-is-dark($color) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L650-L652
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L603-L605
 @function k-is-dark($color) {
     @return if( k-color-luminance( $color ) < .5, true, false );
 }
@@ -131,7 +131,7 @@ k-is-light($color) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L659-L661
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L612-L614
 @function k-is-light($color) {
     @return if( k-color-luminance( $color ) < .5, false, true );
 }
@@ -170,7 +170,7 @@ k-contrast-color($background, $dark, $light, $min-ratio) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L673-L692
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L626-L645
 @function k-contrast-color($background, $dark, $light, $min-ratio) {
     $foregrounds: $light, $dark, #ffffff, #000000;
     $max-ratio: 0;
@@ -222,7 +222,7 @@ k-generate-color-variations($name, $color, $theme) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_functions.import.scss#L187-L301
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_functions.scss#L187-L301
 @function k-generate-color-variations($name, $color, $theme) {
     $result: ();
 
@@ -364,7 +364,7 @@ k-color($key) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_functions.import.scss#L309-L317
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_functions.scss#L309-L317
 @function k-color($key) {
     $_color: map.get($kendo-colors, $key);
 
@@ -408,7 +408,7 @@ k-color-tint($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L230-L232
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L183-L185
 @function k-color-tint($color, $level) {
     @return k-color-level( $color, -$level );
 }
@@ -446,7 +446,7 @@ k-color-shade($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L243-L245
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L196-L198
 @function k-color-shade($color, $level) {
     @return k-color-level( $color, $level );
 }
@@ -478,7 +478,7 @@ k-try-shade($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L253-L261
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L206-L214
 @function k-try-shade($color, $level) {
     $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
 
@@ -516,7 +516,7 @@ k-try-tint($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L269-L277
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L222-L230
 @function k-try-tint($color, $level) {
     $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
 
@@ -554,7 +554,7 @@ k-try-darken($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L285-L292
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L238-L245
 @function k-try-darken($color, $level) {
     $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
 
@@ -591,7 +591,7 @@ k-try-lighten($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L300-L307
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L253-L260
 @function k-try-lighten($color, $level) {
     $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
 
@@ -634,47 +634,11 @@ k-rgba-to-mix($color, $bg) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L318-L322
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L271-L275
 @function k-rgba-to-mix($color, $bg) {
-    $percent: k-color-alpha( $color ) * 100%;
+    $percent: color.alpha( $color ) * 100%;
 
     @return k-color-mix( rgba( $color, 1 ), $bg, $percent );
-}
-```
-
-### `k-color-alpha`
-
-Returns the alpha channel of a color.
-
-
-#### Syntax
-
-```scss
-k-color-alpha($color) // => Number
-```
-
-#### Parameters
-
-
-`<Color> $color`
-: The color to get the alpha channel for.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-color-alpha( rgba( 0, 0, 0, 0.5 ) ); // => 0.5
-@debug k-color-alpha( #000 ); // => 1
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L17-L19
-@function k-color-alpha($color) {
-    @return color.alpha( $color );
 }
 ```
 
@@ -707,7 +671,7 @@ k-color-red($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L27-L32
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L16-L21
 @function k-color-red($color) {
     @if meta.function-exists("channel", "color") {
         @return math.round(color.channel( $color, "red" ));
@@ -745,7 +709,7 @@ k-color-green($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L40-L45
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L29-L34
 @function k-color-green($color) {
     @if meta.function-exists("channel", "color") {
         @return math.round(color.channel( $color, "green" ));
@@ -783,7 +747,7 @@ k-color-blue($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L53-L58
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L42-L47
 @function k-color-blue($color) {
     @if meta.function-exists("channel", "color") {
         @return math.round(color.channel( $color, "blue" ));
@@ -821,7 +785,7 @@ k-color-hue($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L66-L71
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L55-L60
 @function k-color-hue($color) {
     @if meta.function-exists("channel", "color") {
         @return color.channel( $color, "hue" );
@@ -859,7 +823,7 @@ k-color-saturation($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L79-L84
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L68-L73
 @function k-color-saturation($color) {
     @if meta.function-exists("channel", "color") {
         @return color.channel( $color, "saturation" );
@@ -897,7 +861,7 @@ k-color-lightness($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L92-L97
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L81-L86
 @function k-color-lightness($color) {
     @if meta.function-exists("channel", "color") {
         @return color.channel( $color, "lightness" );
@@ -941,7 +905,7 @@ k-color-mix($color1, $color2, $weight) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L107-L109
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L96-L98
 @function k-color-mix($color1, $color2, $weight) {
     @return color.mix( $color1, $color2, $weight );
 }
@@ -979,7 +943,7 @@ k-color-darken($color, $amount) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L118-L120
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L107-L109
 @function k-color-darken($color, $amount) {
     @return color.adjust( $color, $lightness: - $amount );
 }
@@ -1017,7 +981,7 @@ k-color-lighten($color, $amount) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L129-L131
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L118-L120
 @function k-color-lighten($color, $amount) {
     @return color.adjust( $color, $lightness: $amount );
 }
@@ -1055,7 +1019,7 @@ k-color-adjust-hue($color, $degrees) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L140-L142
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L129-L131
 @function k-color-adjust-hue($color, $degrees) {
     @return color.adjust( $color, $hue: $degrees );
 }
@@ -1093,7 +1057,7 @@ k-color-saturate($color, $amount) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L151-L153
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L140-L142
 @function k-color-saturate($color, $amount) {
     @return color.adjust( $color, $saturation: $amount );
 }
@@ -1131,115 +1095,9 @@ k-color-desaturate($color, $amount) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L162-L164
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L151-L153
 @function k-color-desaturate($color, $amount) {
     @return color.adjust( $color, $saturation: - $amount );
-}
-```
-
-### `k-color-grayscale`
-
-Returns a gray color with the same lightness as the input color.
-
-
-#### Syntax
-
-```scss
-k-color-grayscale($color) // => Color
-```
-
-#### Parameters
-
-
-`<Color> $color`
-: The color to convert to grayscale.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-color-grayscale( #f00 ); // => #808080
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L172-L174
-@function k-color-grayscale($color) {
-    @return color.grayscale( $color );
-}
-```
-
-### `k-color-complement`
-
-Returns the RGB complement of a color. This identical to adjusting the hue
-by 180 degrees.
-
-
-#### Syntax
-
-```scss
-k-color-complement($color) // => Color
-```
-
-#### Parameters
-
-
-`<Color> $color`
-: The color to get the complement for.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-color-complement( #f00 ); // => #00ffff
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L183-L185
-@function k-color-complement($color) {
-    @return color.complement( $color );
-}
-```
-
-### `k-color-invert`
-
-Returns the inverse of a color.
-
-
-#### Syntax
-
-```scss
-k-color-invert($color) // => Color
-```
-
-#### Parameters
-
-
-`<Color> $color`
-: The color to invert.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-color-invert( #f00 ); // => #00ffff
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L193-L195
-@function k-color-invert($color) {
-    @return color.invert( $color );
 }
 ```
 
@@ -1279,50 +1137,9 @@ $foo: "baz";
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_lang.import.scss#L12-L14
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_lang.scss#L12-L14
 @function k-if-var($var, $fallback) {
     @return if( $var != null, $var, $fallback );
-}
-```
-
-### `k-list-append`
-
-Returns a copy of `$list` with `$val` appended to the end.
-
-
-#### Syntax
-
-```scss
-k-list-append($list, $val, $separator) // => List
-```
-
-#### Parameters
-
-
-`<List> $list`
-: The list to process.
-
-`<Any> $val`
-: The value to append to `$list`.
-
-`<String> $separator`
-: The separator to use between `$list` and `$val`.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-list-append( ( "foo", "bar" ), "baz" ); // => "foo, bar, baz"
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L11-L13
-@function k-list-append($list, $val, $separator) {
-    @return list.append( $list, $val, $separator );
 }
 ```
 
@@ -1359,201 +1176,9 @@ k-list-includes($list, $value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L23-L25
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.scss#L11-L13
 @function k-list-includes($list, $value) {
-    @return k-list-index( $list, $value ) != null;
-}
-```
-
-### `k-list-index`
-
-Returns the index of `$value` in `$list`.
-
-
-#### Syntax
-
-```scss
-k-list-index($list, $value) // => Number
-```
-
-#### Parameters
-
-
-`<List> $list`
-: The list to check.
-
-`<Any> $value`
-: The value to check for.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-list-index( ( "foo", "bar" ), "foo" ); // => 1
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L34-L36
-@function k-list-index($list, $value) {
-    @return list.index( $list, $value );
-}
-```
-
-### `k-list-is-bracketed`
-
-Returns whether `$list` is bracketed.
-
-
-#### Syntax
-
-```scss
-k-list-is-bracketed($list) // => Boolean
-```
-
-#### Parameters
-
-
-`<List> $list`
-: The list to check.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-list-is-bracketed( ( "foo", "bar" ) ); // => false
-@debug k-list-is-bracketed( [ "foo", "bar" ] ); // => true
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L45-L47
-@function k-list-is-bracketed($list) {
-    @return list.is-bracketed( $list );
-}
-```
-
-### `k-list-join`
-
-Joins two lists together.
-
-
-#### Syntax
-
-```scss
-k-list-join($list1, $list2, $separator, $bracketed) // => List
-```
-
-#### Parameters
-
-
-`<List> $list1`
-: The first list to join.
-
-`<List> $list2`
-: The second list to join.
-
-`<String> $separator`
-: The separator to use between `$list1` and `$list2`.
-
-`<Boolean> $bracketed`
-: Whether the result should be bracketed.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-list-join( ( "foo", "bar" ), ( "baz", "qux" ) ); // => "foo, bar, baz, qux"
-@debug k-list-join( ( "foo", "bar" ), ( "baz", "qux" ), " " ); // => "foo bar baz qux"
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L59-L61
-@function k-list-join($list1, $list2, $separator, $bracketed) {
-    @return list.join( $list1, $list2, $separator, $bracketed );
-}
-```
-
-### `k-list-length`
-
-Returns the length of `$list`.
-
-
-#### Syntax
-
-```scss
-k-list-length($list) // => Number
-```
-
-#### Parameters
-
-
-`<List> $list`
-: The list to check.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-list-length( ( "foo", "bar" ) ); // => 2
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L69-L71
-@function k-list-length($list) {
-    @return list.length( $list );
-}
-```
-
-### `k-list-nth`
-
-Returns the nth item in `$list`.
-
-
-#### Syntax
-
-```scss
-k-list-nth($list, $n) // => Any
-```
-
-#### Parameters
-
-
-`<List> $list`
-: The list to check.
-
-`<Number> $n`
-: The index of the item to return.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-list-nth( ( "foo", "bar" ), 1 ); // => "foo"
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L80-L82
-@function k-list-nth($list, $n) {
-    @return list.nth( $list, $n );
+    @return list.index($list, $value) != null;
 }
 ```
 
@@ -1586,15 +1211,15 @@ k-list-reverse($list) // => List
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L90-L105
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.scss#L21-L36
 @function k-list-reverse($list) {
     $result: ();
 
     @if ($list) {
-        $len: k-list-length( $list );
+        $len: list.length($list);
 
         @for $i from $len through 1 {
-            $result: k-list-append( $result, k-list-nth( $list, $i ) );
+            $result: list.append($result, list.nth($list, $i));
         }
 
         @return $result;
@@ -1602,120 +1227,6 @@ k-list-reverse($list) // => List
 
     @warn "No list passed.";
     @return $result;
-}
-```
-
-### `k-list-separator`
-
-Returns the separator of `$list`.
-
-
-#### Syntax
-
-```scss
-k-list-separator($list) // => String
-```
-
-#### Parameters
-
-
-`<List> $list`
-: The list to check.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-list-separator( ( "foo", "bar" ) ); // => ","
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L113-L115
-@function k-list-separator($list) {
-    @return list.list-separator( $list );
-}
-```
-
-### `k-list-set-nth`
-
-Returns a copy of `$list` with `$val` inserted at `$n`.
-
-
-#### Syntax
-
-```scss
-k-list-set-nth($list, $n, $val) // => List
-```
-
-#### Parameters
-
-
-`<List> $list`
-: The list to process.
-
-`<Number> $n`
-: The index at which to insert `$val`.
-
-`<Any> $val`
-: The value to insert.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-list-set-nth( ( "foo", "bar" ), 1, "baz" ); // => "baz, bar"
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L125-L127
-@function k-list-set-nth($list, $n, $val) {
-    @return list.set-nth( $list, $n, $value );
-}
-```
-
-### `k-list-zip`
-
-Combines two lists into a single list of two-item lists.
-
-
-#### Syntax
-
-```scss
-k-list-zip($list1, $list2) // => List
-```
-
-#### Parameters
-
-
-`<List> $list1`
-: The first list to combine.
-
-`<List> $list2`
-: The second list to combine.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-list-zip( ( "foo", "bar" ), ( "baz", "qux" ) ); // => ((foo, baz), (bar, qux))
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L136-L138
-@function k-list-zip($list1, $list2) {
-    @return list.zip( $lists... );
 }
 ```
 
@@ -1752,86 +1263,12 @@ k-map-get($map, $key) // =>
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L10-L15
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.scss#L10-L15
 @function k-map-get($map, $key) {
     @each $key in $keys {
-        $map: map.get( $map, $key ); // stylelint-disable-line
+        $map: map.get($map, $key); // stylelint-disable-line
     }
     @return $map;
-}
-```
-
-### `k-map-has-key`
-
-Returns whether `$map` has a value at `$key`.
-
-
-#### Syntax
-
-```scss
-k-map-has-key($map, $key) // => Boolean
-```
-
-#### Parameters
-
-
-`<Map> $map`
-: The map to check.
-
-`<Any> $key`
-: The key to check.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-map-has( ( "foo": "bar" ), "foo" ); // => true
-@debug k-map-has( ( "foo": "bar" ), "bar" ); // => false
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L25-L27
-@function k-map-has-key($map, $key) {
-    @return map.has-key( $map, $key );
-}
-```
-
-### `k-map-keys`
-
-Returns a comma separated list of the keys in `$map`.
-
-
-#### Syntax
-
-```scss
-k-map-keys($map) // => List
-```
-
-#### Parameters
-
-
-`<Map> $map`
-: The map to get the keys from.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-map-keys( ( "foo": "bar", "baz": "qux" ) ); // => "foo, baz"
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L35-L37
-@function k-map-keys($map) {
-    @return map.keys( $map );
 }
 ```
 
@@ -1867,10 +1304,10 @@ k-map-merge($map, $args) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L46-L51
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.scss#L24-L29
 @function k-map-merge($map, $args) {
     @each $arg in $args {
-        $map: map.merge( $map, $arg ); // stylelint-disable-line
+        $map: map.merge($map, $arg); // stylelint-disable-line
     }
     @return $map;
 }
@@ -1905,67 +1342,29 @@ k-map-deep-merge($maps) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L59-L81
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.scss#L37-L59
 @function k-map-deep-merge($maps) {
     $merged: ();
 
     @each $map in $maps {
-      @each $key, $val in $map {
-        @if (meta.type-of($val) == 'map') {
-          $current: k-map-get($merged, $key);
-          @if (meta.type-of($current) == 'map') {
-            $val: k-map-deep-merge($current, $val);
-            $map: k-map-merge(
-              $map,
-              (
-                $key: $val
-              )
-            );
-          }
+        @each $key, $val in $map {
+            @if (meta.type-of($val) == "map") {
+                $current: k-map-get($merged, $key);
+                @if (meta.type-of($current) == "map") {
+                    $val: k-map-deep-merge($current, $val);
+                    $map: k-map-merge(
+                        $map,
+                        (
+                            $key: $val,
+                        )
+                    );
+                }
+            }
         }
-      }
-      $merged: k-map-merge($merged, $map);
+        $merged: k-map-merge($merged, $map);
     }
 
     @return $merged;
-}
-```
-
-### `k-map-remove`
-
-Returns a map with the keys and values from `$map` except for `$keys`.
-
-
-#### Syntax
-
-```scss
-k-map-remove($map, $keys) // => Map
-```
-
-#### Parameters
-
-
-`<Map> $map`
-: The map to remove keys from.
-
-`<Any> $keys`
-: The keys to remove from `$map`.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-map-remove( ( "foo": "bar", "baz": "qux" ), "foo" ); // => ( "baz": "qux" )
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L90-L92
-@function k-map-remove($map, $keys) {
-    @return map.remove( $map, $keys... );
 }
 ```
 
@@ -2004,44 +1403,14 @@ k-map-set($map, $key, $value) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L102-L104
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.scss#L69-L76
 @function k-map-set($map, $key, $value) {
-    @return k-map-merge( $map, ( $key: $value ) );
-}
-```
-
-### `k-map-values`
-
-Returns a comma separated list of the values in `$map`.
-
-
-#### Syntax
-
-```scss
-k-map-values($map) // => List
-```
-
-#### Parameters
-
-
-`<Map> $map`
-: The map to get the values from.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-map-values( ( "foo": "bar", "baz": "qux" ) ); // => "bar, qux"
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L112-L114
-@function k-map-values($map) {
-    @return map.values( $map );
+    @return k-map-merge(
+        $map,
+        (
+            $key: $value,
+        )
+    );
 }
 ```
 
@@ -2074,127 +1443,22 @@ k-map-negate($map) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L122-L138
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.scss#L84-L99
 @function k-map-negate($map) {
     $_map-neg: ();
 
-    @if( meta.type-of($map) != map ) {
+    @if (meta.type-of($map) != map) {
         @error "expected type of #{$map} is map, was #{meta.type-of($map)}";
-    };
+    }
     @each $key, $value in $map {
         $_key-neg: "-" + $key;
 
-        @if( meta.type-of($value) == number and $value != 0 and $_key-neg != "-0" ) {
-            $_map-neg: k-map-set($_map-neg, $_key-neg, -1 * $value );
+        @if (meta.type-of($value) == number and $value != 0 and $_key-neg != "-0") {
+            $_map-neg: k-map-set($_map-neg, $_key-neg, -1 * $value);
         }
     }
 
     @return $_map-neg;
-}
-```
-
-### `k-math-abs`
-
-Returns the absolute value of a number.
-
-
-#### Syntax
-
-```scss
-k-math-abs($number) // => Number
-```
-
-#### Parameters
-
-
-`<Number> $number`
-: The number to get the absolute value of.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-math-abs( -10 ); // => 10
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L9-L11
-@function k-math-abs($number) {
-    @return math.abs( $number );
-}
-```
-
-### `k-math-ceil`
-
-Returns the smallest integer greater than or equal to a number.
-
-
-#### Syntax
-
-```scss
-k-math-ceil($number) // => Number
-```
-
-#### Parameters
-
-
-`<Number> $number`
-: The number to get the ceiling of.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-math-ceil( 10.1 ); // => 11
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L19-L21
-@function k-math-ceil($number) {
-    @return math.ceil( $number );
-}
-```
-
-### `k-math-floor`
-
-Returns the largest integer less than or equal to a number.
-
-
-#### Syntax
-
-```scss
-k-math-floor($number) // => Number
-```
-
-#### Parameters
-
-
-`<Number> $number`
-: The number to get the floor of.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-math-floor( 10.9 ); // => 10
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L29-L31
-@function k-math-floor($number) {
-    @return math.floor( $number );
 }
 ```
 
@@ -2235,314 +1499,9 @@ k-math-clamp($number, $min, $max) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L43-L45
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.scss#L14-L16
 @function k-math-clamp($number, $min, $max) {
-    @return k-math-max( $min, k-math-min( $max, $number ) );
-}
-```
-
-### `k-math-compatible`
-
-Returns whether two numbers have compatible units.
-
-
-#### Syntax
-
-```scss
-k-math-compatible($a, $b) // => Boolean
-```
-
-#### Parameters
-
-
-`<Number> $a`
-: The first number.
-
-`<Number> $b`
-: The second number.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-math-compatible( 10px, 10px ); // => true
-@debug k-math-compatible( 10px, 10em ); // => false
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L55-L57
-@function k-math-compatible($a, $b) {
-    @return math.comparable( $a, $b );
-}
-```
-
-### `k-math-div`
-
-Returns the quotient of two numbers.
-
-
-#### Syntax
-
-```scss
-k-math-div($a, $b) // => Number
-```
-
-#### Parameters
-
-
-`<Number> $a`
-: The dividend.
-
-`<Number> $b`
-: The divisor.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-math-div( 10, 2 ); // => 5
-@debug k-math-div( 10px, 2 ); // => 5px
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L67-L69
-@function k-math-div($a, $b) {
-    @return math.div( $a, $b );
-}
-```
-
-### `k-math-is-unitless`
-
-Returns whether `$number` has no units.
-
-
-#### Syntax
-
-```scss
-k-math-is-unitless($number) // => Boolean
-```
-
-#### Parameters
-
-
-`<Number> $number`
-: The number to check.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-math-is-unitless( 10 ); // => true
-@debug k-math-is-unitless( 10px ); // => false
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L78-L80
-@function k-math-is-unitless($number) {
-    @return math.unitless( $number );
-}
-```
-
-### `k-math-max`
-
-Returns the larger of two numbers.
-
-
-#### Syntax
-
-```scss
-k-math-max($a, $b) // => Number
-```
-
-#### Parameters
-
-
-`<Number> $a`
-: The first number.
-
-`<Number> $b`
-: The second number.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-math-max( 10, 20 ); // => 20
-@debug k-math-max( 10px, 20px ); // => 20px
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L90-L92
-@function k-math-max($a, $b) {
-    @return math.max( $a, $b );
-}
-```
-
-### `k-math-min`
-
-Returns the smaller of two numbers.
-
-
-#### Syntax
-
-```scss
-k-math-min($a, $b) // => Number
-```
-
-#### Parameters
-
-
-`<Number> $a`
-: The first number.
-
-`<Number> $b`
-: The second number.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-math-min( 10, 20 ); // => 10
-@debug k-math-min( 10px, 20px ); // => 10px
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L102-L104
-@function k-math-min($a, $b) {
-    @return math.min( $a, $b );
-}
-```
-
-### `k-math-mod`
-
-Returns the remainder of two numbers.
-
-
-#### Syntax
-
-```scss
-k-math-mod($a, $b) // => Number
-```
-
-#### Parameters
-
-
-`<Number> $a`
-: The dividend.
-
-`<Number> $b`
-: The divisor.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-math-mod( 10, 3 ); // => 1
-@debug k-math-mod( 10px, 3 ); // => 1px
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L114-L116
-@function k-math-mod($a, $b) {
-    @return ( $a % $b );
-}
-```
-
-### `k-math-mul`
-
-Returns the product of two numbers.
-
-
-#### Syntax
-
-```scss
-k-math-mul($a, $b) // => Number
-```
-
-#### Parameters
-
-
-`<Number> $a`
-: The first number.
-
-`<Number> $b`
-: The second number.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-math-mul( 10, 2 ); // => 20
-@debug k-math-mul( 10px, 2 ); // => 20px
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L126-L128
-@function k-math-mul($a, $b) {
-    @return ( $a * $b );
-}
-```
-
-### `k-math-percentage`
-
-Converts a unitless number to a percentage.
-
-
-#### Syntax
-
-```scss
-k-math-percentage($number) // => Number
-```
-
-#### Parameters
-
-
-`<Number> $number`
-: The number to convert.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-math-percentage( 0.5 ); // => 50%
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L136-L138
-@function k-math-percentage($number) {
-    @return math.percentage( $number );
+    @return math.max($min, math.min($max, $number));
 }
 ```
 
@@ -2578,15 +1537,15 @@ k-math-pow($x, $n) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L147-L166
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.scss#L25-L43
 @function k-math-pow($x, $n) {
     $ret: 1;
 
-    @if ( $n == 0 ) {
+    @if ($n == 0) {
         @return $ret;
     }
 
-    @if ( $n > 0 ) {
+    @if ($n > 0) {
         @for $i from 1 through $n {
             $ret: $ret * $x;
         }
@@ -2594,48 +1553,9 @@ k-math-pow($x, $n) // => Number
     }
 
     @for $i from $n to 0 {
-        $ret: k-math-div( $ret, $x );
+        $ret: math.div($ret, $x);
     }
     @return $ret;
-}
-```
-
-### `k-math-random`
-
-Returns a random number between 0 and 1.
-
-
-#### Syntax
-
-```scss
-k-math-random($limit) // => Number
-```
-
-#### Parameters
-
-
-`<Number> $limit`
-: The upper limit of the random number.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-math-random(); // => 0.123456789
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L174-L180
-@function k-math-random($limit) {
-    @if ( $limit == null ) { // stylelint-disable-line
-        @return math.random();
-    }
-
-    @return math.random( $limit );
 }
 ```
 
@@ -2672,50 +1592,15 @@ k-math-round($number, $precision) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L190-L199
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.scss#L53-L61
 @function k-math-round($number, $precision) {
-    @if ( $precision == 0 ) {
-        @return math.round( $number );
+    @if ($precision == 0) {
+        @return math.round($number);
     }
 
-    $pow: k-math-pow( 10, $precision );
+    $pow: k-math-pow(10, $precision);
 
-    @return k-math-div( round( $number * $pow ), $pow );
-}
-```
-
-### `k-math-unit`
-
-Returns a string representation of `$number`'s unit.
-
-
-#### Syntax
-
-```scss
-k-math-unit($number) // => String
-```
-
-#### Parameters
-
-
-`<Number> $number`
-: The number to get the unit of.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-math-unit( 10px ); // => px
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L207-L209
-@function k-math-unit($number) {
-    @return math.unit( $number );
+    @return math.div(round($number * $pow), $pow);
 }
 ```
 
@@ -2748,278 +1633,13 @@ k-math-strip-unit($number) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L217-L223
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.scss#L69-L75
 @function k-math-strip-unit($number) {
-    @if ( k-meta-type-of( $number ) == "number" ) and not k-math-is-unitless( $number ) {
-        @return k-math-div( $number, 1 * k-math-unit( $number) );
+    @if (meta.type-of($number) == "number") and not math.unitless($number) {
+        @return math.div($number, 1 * math.unit($number));
     }
 
     @return $number;
-}
-```
-
-### `k-meta-call`
-
-A wrapper around the `call()` function.
-Calls the function `$function` with the arguments `$args`.
-
-
-#### Syntax
-
-```scss
-k-meta-call($function, $args) // => Any
-```
-
-#### Parameters
-
-
-`<Function> $function`
-: The function to call.
-
-`<List> $args`
-: The arguments to pass to `$function`.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-meta-call( k-meta-get-function( "k-string-replace" ), "foo bar", "bar", "baz" ); // => "foo baz"
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L13-L15
-@function k-meta-call($function, $args) {
-    @return meta.call( $function, $args... );
-}
-```
-
-### `k-meta-function-exists`
-
-A wrapper around the `function-exists()` function.
-Returns whether a function with the name `$name` exists.
-
-
-#### Syntax
-
-```scss
-k-meta-function-exists($name) // => Boolean
-```
-
-#### Parameters
-
-
-`<String> $name`
-: The name of the function to check.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-meta-function-exists( "k-string-replace" ); // => true
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L24-L30
-@function k-meta-function-exists($name) {
-    @if $name == "" {
-        @return false;
-    }
-
-    @return meta.function-exists( $name );
-}
-```
-
-### `k-meta-get-function`
-
-A wrapper around the `get-function()` function.
-Returns the function with the name `$name`.
-
-
-#### Syntax
-
-```scss
-k-meta-get-function($name, $css, $module) // => Function
-```
-
-#### Parameters
-
-
-`<String> $name`
-: The name of the function to get.
-
-`<Boolean> $css`
-: Whether to return the CSS representation of the function.
-
-`<Module> $module`
-: The module to get the function from.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-meta-get-function( "k-string-replace" ); // => Function
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L41-L43
-@function k-meta-get-function($name, $css, $module) {
-    @return meta.get-function( $name, $args... );
-}
-```
-
-### `k-meta-inspect`
-
-A wrapper around the `inspect()` function.
-Returns a string representation of `$value`.
-
-
-#### Syntax
-
-```scss
-k-meta-inspect($value) // => String
-```
-
-#### Parameters
-
-
-`<Any> $value`
-: The value to inspect.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-meta-inspect( "foo bar" ); // => "foo bar"
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L52-L54
-@function k-meta-inspect($value) {
-    @return meta.inspect( $value );
-}
-```
-
-### `k-meta-keywords`
-
-A wrapper around the `keywords()` function.
-Returns a map of the keywords in `$args`.
-
-
-#### Syntax
-
-```scss
-k-meta-keywords($args) // => Map
-```
-
-#### Parameters
-
-
-`<List> $args`
-: The arguments to process.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-meta-keywords( ( "foo" "bar" "baz" "qux" ) ); // => ( "foo": "bar", "baz": "qux" )
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L63-L65
-@function k-meta-keywords($args) {
-    @return meta.keywords( $args );
-}
-```
-
-### `k-meta-type-of`
-
-A wrapper around the `type-of()` function.
-Returns the type of `$value`.
-
-
-#### Syntax
-
-```scss
-k-meta-type-of($value) // => String
-```
-
-#### Parameters
-
-
-`<Any> $value`
-: The value to get the type of.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-meta-type-of( "foo bar" ); // => "string"
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L74-L76
-@function k-meta-type-of($value) {
-    @return meta.type-of( $value );
-}
-```
-
-### `k-meta-variable-exists`
-
-A wrapper around the `variable-exists()` function.
-Returns whether a variable with the name `$name` exists.
-
-
-#### Syntax
-
-```scss
-k-meta-variable-exists($name) // => Boolean
-```
-
-#### Parameters
-
-
-`<String> $name`
-: The name of the variable to check.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-meta-variable-exists( "foo" ); // => true
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L85-L87
-@function k-meta-variable-exists($name) {
-    @return meta.variable-exists( $name );
 }
 ```
 
@@ -3053,9 +1673,9 @@ k-meta-is-number($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L98-L100
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L16-L18
 @function k-meta-is-number($value) {
-    @return k-meta-type-of( $value ) == "number";
+    @return meta.type-of($value) == "number";
 }
 ```
 
@@ -3089,9 +1709,9 @@ k-meta-is-integer($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L111-L113
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L29-L31
 @function k-meta-is-integer($value) {
-    @return k-meta-is-number( $value ) and k-math-round( $value ) == $value;
+    @return k-meta-is-number($value) and k-math-round($value) == $value;
 }
 ```
 
@@ -3125,9 +1745,9 @@ k-meta-is-time($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L124-L126
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L42-L44
 @function k-meta-is-time($value) {
-    @return k-meta-is-number( $value ) and k-string-index( "ms" "s", k-math-unit( $value ) ) != null;
+    @return k-meta-is-number($value) and string.index("ms" "s", math.unit($value)) != null;
 }
 ```
 
@@ -3161,9 +1781,9 @@ k-meta-is-duration($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L137-L139
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L55-L57
 @function k-meta-is-duration($value) {
-    @return k-meta-is-time( $value );
+    @return k-meta-is-time($value);
 }
 ```
 
@@ -3197,9 +1817,9 @@ k-meta-is-angle($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L150-L152
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L68-L70
 @function k-meta-is-angle($value) {
-    @return k-meta-is-number( $value ) and k-string-index( "deg" "rad" "grad" "turn", k-math-unit( $value ) ) != null;
+    @return k-meta-is-number($value) and string.index("deg" "rad" "grad" "turn", math.unit($value)) != null;
 }
 ```
 
@@ -3233,9 +1853,9 @@ k-meta-is-frequency($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L163-L165
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L81-L83
 @function k-meta-is-frequency($value) {
-    @return k-meta-is-number( $value ) and k-string-index( "Hz" "kHz", k-math-unit( $value ) ) != null;
+    @return k-meta-is-number($value) and string.index("Hz" "kHz", math.unit($value)) != null;
 }
 ```
 
@@ -3270,9 +1890,9 @@ k-meta-is-relative-length($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L178-L180
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L96-L98
 @function k-meta-is-relative-length($value) {
-    @return k-meta-is-number( $value ) and k-string-index( "em" "ex" "ch" "rem" "vw" "vh" "vmin" "vmax", k-math-unit( $value ) ) != null;
+    @return k-meta-is-number($value) and string.index("em" "ex" "ch" "rem" "vw" "vh" "vmin" "vmax", math.unit($value)) != null;
 }
 ```
 
@@ -3306,9 +1926,9 @@ k-meta-is-absolute-length($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L191-L193
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L109-L111
 @function k-meta-is-absolute-length($value) {
-    @return k-meta-is-number( $value ) and k-string-index( "cm" "mm" "in" "px" "pt" "pc", k-math-unit( $value ) ) != null;
+    @return k-meta-is-number($value) and string.index("cm" "mm" "in" "px" "pt" "pc", math.unit($value)) != null;
 }
 ```
 
@@ -3342,9 +1962,9 @@ k-meta-is-percentage($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L204-L206
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L122-L124
 @function k-meta-is-percentage($value) {
-    @return k-meta-is-number( $value ) and k-math-unit( $value ) == "%";
+    @return k-meta-is-number($value) and math.unit($value) == "%";
 }
 ```
 
@@ -3379,9 +1999,9 @@ k-meta-is-length($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L218-L220
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L136-L138
 @function k-meta-is-length($value) {
-    @return k-meta-is-relative-length( $value ) or k-meta-is-absolute-length( $value );
+    @return k-meta-is-relative-length($value) or k-meta-is-absolute-length($value);
 }
 ```
 
@@ -3415,9 +2035,9 @@ k-meta-is-resolution($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L231-L233
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L149-L151
 @function k-meta-is-resolution($value) {
-    @return k-meta-is-number( $value ) and k-string-index( "dpi" "dpcm" "dppx", k-math-unit( $value ) ) != null;
+    @return k-meta-is-number($value) and string.index("dpi" "dpcm" "dppx", math.unit($value)) != null;
 }
 ```
 
@@ -3450,158 +2070,9 @@ k-meta-is-position($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L243-L245
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L161-L163
 @function k-meta-is-position($value) {
-    @return k-meta-is-length( $value ) or k-meta-is-percentage( $value ) or k-string-index( "top" "right" "bottom" "left" "center", $value ) != null;
-}
-```
-
-### `k-string-index`
-
-Returns the first index of `$substring` in `$string`, or `null` if `$string` doesn’t contain `$substring`.
-
-
-#### Syntax
-
-```scss
-k-string-index($string, $substring) // => Number
-```
-
-#### Parameters
-
-
-`<String> $string`
-: The string to process.
-
-`<String> $substring`
-: The substring to look for.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-string-index( "foo bar", "bar" ); // => 5
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L25-L27
-@function k-string-index($string, $substring) {
-    @return string.index( $string, $substring );
-}
-```
-
-### `k-string-insert`
-
-Returns a copy of `$string` with `$insert` inserted at `$index`.
-
-
-#### Syntax
-
-```scss
-k-string-insert($string, $insert, $index) // => String
-```
-
-#### Parameters
-
-
-`<String> $string`
-: The string to process.
-
-`<String> $insert`
-: The string to insert.
-
-`<Number> $index`
-: The index at which to insert `$insert`.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-string-insert( "foo bar", "baz", 5 ); // => "foo baz bar"
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L37-L39
-@function k-string-insert($string, $insert, $index) {
-    @return string.insert( $string, $insert, $index );
-}
-```
-
-### `k-string-length`
-
-Returns the length of `$string`.
-
-
-#### Syntax
-
-```scss
-k-string-length($string) // => Number
-```
-
-#### Parameters
-
-
-`<String> $string`
-: The string to process.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-string-length( "foo bar" ); // => 7
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L47-L49
-@function k-string-length($string) {
-    @return string.length( $string );
-}
-```
-
-### `k-string-quote`
-
-Returns a copy of `$string` with quotes added.
-
-
-#### Syntax
-
-```scss
-k-string-quote($string) // => String
-```
-
-#### Parameters
-
-
-`<String> $string`
-: The string to process.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-string-quote( "foo bar" ); // => "foo bar"
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L57-L59
-@function k-string-quote($string) {
-    @return string.quote( $string );
+    @return k-meta-is-length($value) or k-meta-is-percentage($value) or string.index("top" "right" "bottom" "left" "center", $value) != null;
 }
 ```
 
@@ -3641,195 +2112,19 @@ k-string-replace($string, $search, $replace) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L72-L84
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.scss#L30-L42
 @function k-string-replace($string, $search, $replace) {
     @if meta.type-of( $string ) == number {
         $string: $string + "";
     }
 
-    $index: k-string-index( $string, $search );
+    $index: string.index( $string, $search );
 
     @if $index {
-        @return k-string-slice( $string, 1, $index - 1 ) + $replace + k-string-replace( k-string-slice( $string, $index + k-string-length( $search ) ), $search, $replace );
+        @return string.slice( $string, 1, $index - 1 ) + $replace + k-string-replace( string.slice( $string, $index + string.length( $search ) ), $search, $replace );
     }
 
     @return $string;
-}
-```
-
-### `k-string-slice`
-
-Returns a substring of `$string` starting at `$start-at` and ending at `$end-at`.
-
-
-#### Syntax
-
-```scss
-k-string-slice($string, $start-at, $end-at) // => String
-```
-
-#### Parameters
-
-
-`<String> $string`
-: The string to process.
-
-`<Number> $start-at`
-: The index at which to start the substring.
-
-`<Number> $end-at`
-: The index at which to end the substring.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-string-slice( "foo bar", 5 ); // => "bar"
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L94-L96
-@function k-string-slice($string, $start-at, $end-at) {
-    @return string.slice( $string, $start-at, $end-at );
-}
-```
-
-### `k-string-to-lower-case`
-
-Returns a copy of `$string` with all uppercase letters converted to lowercase.
-
-
-#### Syntax
-
-```scss
-k-string-to-lower-case($string) // => String
-```
-
-#### Parameters
-
-
-`<String> $string`
-: The string to process.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-string-to-lower-case( "FOO BAR" ); // => "foo bar"
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L104-L106
-@function k-string-to-lower-case($string) {
-    @return string.to-lower-case( $string );
-}
-```
-
-### `k-string-to-upper-case`
-
-Returns a copy of `$string` with all lowercase letters converted to uppercase.
-
-
-#### Syntax
-
-```scss
-k-string-to-upper-case($string) // => String
-```
-
-#### Parameters
-
-
-`<String> $string`
-: The string to process.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-string-to-upper-case( "foo bar" ); // => "FOO BAR"
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L114-L116
-@function k-string-to-upper-case($string) {
-    @return string.to-upper-case( $string );
-}
-```
-
-### `k-string-unique-id`
-
-Returns a unique identifier.
-
-
-#### Syntax
-
-```scss
-k-string-unique-id() // => String
-```
-
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-string-unique-id(); // => UNIQUE_ID
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L123-L125
-@function k-string-unique-id() {
-    @return string.unique-id();
-}
-```
-
-### `k-string-unquote`
-
-Returns a copy of `$string` with quotes removed.
-
-
-#### Syntax
-
-```scss
-k-string-unquote($string) // => String
-```
-
-#### Parameters
-
-
-`<String> $string`
-: The string to process.
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-string-unquote( "foo bar" ); // => foo bar
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L133-L135
-@function k-string-unquote($string) {
-    @return string.unquote( $string );
 }
 ```
 
@@ -3856,12 +2151,12 @@ k-escape-class-name($text) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L168-L176
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.scss#L74-L82
 @function k-escape-class-name($text) {
     $_text: $text;
 
     @each $char, $rep in $_kendo-escape-class-name {
-        $_text: k-string-replace( $_text, k-string-unquote( $char ), k-string-unquote( $rep ) );
+        $_text: k-string-replace( $_text, string.unquote( $char ), string.unquote( $rep ) );
     }
 
     @return $_text;
@@ -3897,7 +2192,7 @@ k-z-index($layer, $Number, $Balancing) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/z-index/index.import.scss#L28-L36
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/z-index/index.scss#L28-L36
 @function k-z-index($layer, $Number, $Balancing) {
     $layer-value: map.get($kendo-z-layers, $layer);
 
@@ -5057,6 +3352,91 @@ The following table lists the available variables for customizing the Theme Core
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Elevation map.</div></div>
     </td>
+</tr>
+</tbody>
+</table>
+
+### Motion
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-easings</td>
+    <td>Map</td>
+    <td><code>$default-easings</code></td>
+    <td><ul><li>linear: cubic-bezier(0, 0, 1, 1)</li><li>accelerate: cubic-bezier(0.42, 0, 1, 1)</li><li>decelerate: cubic-bezier(0, 0, 0.58, 1)</li><li>standard: cubic-bezier(0.42, 0, 0.58, 1)</li><li>sharp: cubic-bezier(0.75, 0, 0.25, 1)</li><li>bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55)</li><li>elastic: cubic-bezier(0.5, -0.5, 0.5, 1.5)</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global map of motion easing tokens.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-durations</td>
+    <td>Map</td>
+    <td><code>$default-durations</code></td>
+    <td><ul><li>instant: 0ms</li><li>immediate: 50ms</li><li>brief: 100ms</li><li>quick: 150ms</li><li>rapid: 200ms</li><li>swift: 250ms</li><li>speedy: 300ms</li><li>brisk: 350ms</li><li>prompt: 400ms</li><li>timely: 450ms</li><li>moderate: 500ms</li><li>measured: 550ms</li><li>steady: 600ms</li><li>leisurely: 700ms</li><li>slow: 800ms</li><li>languid: 900ms</li><li>sluggish: 1000ms</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global map of motion duration tokens.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-transitions</td>
+    <td>Map</td>
+    <td><code>$default-transitions</code></td>
+    <td><ul><li>instant: "duration":"var(--kendo-duration-instant)","easing":"var(--kendo-easing-linear)"</li><li>rapid: "duration":"var(--kendo-duration-quick)","easing":"var(--kendo-easing-decelerate)"</li><li>snappy: "duration":"var(--kendo-duration-swift)","easing":"var(--kendo-easing-decelerate)"</li><li>energetic: "duration":"var(--kendo-duration-swift)","easing":"var(--kendo-easing-elastic)"</li><li>bouncy: "duration":"var(--kendo-duration-speedy)","easing":"var(--kendo-easing-bounce)"</li><li>subtle: "duration":"var(--kendo-duration-brisk)","easing":"var(--kendo-easing-standard)"</li><li>gentle: "duration":"var(--kendo-duration-prompt)","easing":"var(--kendo-easing-accelerate)"</li><li>enter: "duration":"var(--kendo-duration-speedy)","easing":"var(--kendo-easing-decelerate)"</li><li>exit: "duration":"var(--kendo-duration-rapid)","easing":"var(--kendo-easing-accelerate)"</li><li>settle: "duration":"var(--kendo-duration-brisk)","easing":"var(--kendo-easing-decelerate)"</li><li>scale-out: "duration":"var(--kendo-duration-quick)","easing":"var(--kendo-easing-accelerate)"</li><li>scale-in: "duration":"var(--kendo-duration-rapid)","easing":"var(--kendo-easing-decelerate)"</li><li>fade-out: "duration":"var(--kendo-duration-rapid)","easing":"var(--kendo-easing-standard)"</li><li>fade-in: "duration":"var(--kendo-duration-swift)","easing":"var(--kendo-easing-standard)"</li><li>slide-out: "duration":"var(--kendo-duration-swift)","easing":"var(--kendo-easing-accelerate)"</li><li>slide-in: "duration":"var(--kendo-duration-speedy)","easing":"var(--kendo-easing-decelerate)"</li><li>emphasis: "duration":"var(--kendo-duration-quick)","easing":"var(--kendo-easing-sharp)"</li><li>collapse: "duration":"var(--kendo-duration-speedy)","easing":"var(--kendo-easing-accelerate)"</li><li>expand: "duration":"var(--kendo-duration-prompt)","easing":"var(--kendo-easing-standard)"</li><li>shrink: "duration":"var(--kendo-duration-brisk)","easing":"var(--kendo-easing-accelerate)"</li><li>grow: "duration":"var(--kendo-duration-prompt)","easing":"var(--kendo-easing-standard)"</li><li>pulse: "duration":"var(--kendo-duration-brisk)","easing":"var(--kendo-easing-standard)"</li><li>smooth: "duration":"var(--kendo-duration-moderate)","easing":"var(--kendo-easing-standard)"</li><li>flip: "duration":"var(--kendo-duration-measured)","easing":"var(--kendo-easing-standard)"</li><li>fluid: "duration":"var(--kendo-duration-steady)","easing":"var(--kendo-easing-standard)"</li><li>deliberate: "duration":"var(--kendo-duration-slow)","easing":"var(--kendo-easing-standard)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global map of motion transition tokens.</div></div>
+    </td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container">
+        <div><b>Groups</b><div class="theme-variables-description">The groups of the $kendo-transitions Map</div></div>
+    </td>
+</tr>
+<tr>
+    <td>Group</td>
+    <td colspan="2">Values</td>
+    <td>Description</td>
+</tr>
+<tr>
+    <td>fast</td>
+    <td colspan="2"> instant, rapid, snappy, energetic</td>
+    <td>Speed and Responsiveness</td>
+</tr>
+<tr>
+    <td>expressive</td>
+    <td colspan="2"> emphasis, bouncy, pulse, flip</td>
+    <td>Personality and Playfulness</td>
+</tr>
+<tr>
+    <td>calm</td>
+    <td colspan="2"> subtle, gentle, settle, smooth, fluid, deliberate</td>
+    <td>Subtle & Natural</td>
+</tr>
+<tr>
+    <td>visibility</td>
+    <td colspan="2"> slide-in, slide-out, fade-in, fade-out, enter, exit</td>
+    <td>Visibility & Movement Change</td>
+</tr>
+<tr>
+    <td>size</td>
+    <td colspan="2"> scale-in, scale-out, grow, shrink, expand, collapse</td>
+    <td>Size & Scale Adjustments</td>
 </tr>
 </tbody>
 </table>

@@ -1,6 +1,6 @@
-@use "../../mixins/index.import.scss" as *;
-@use "../../functions/index.import.scss" as *;
-@use "../../color-system/_functions.import.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "../../functions/index.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
@@ -30,9 +30,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-appbar--theme() {
-    @include kendo-appbar--theme-base();
 }

@@ -7,9 +7,6 @@ updates:
     schedule:
       interval: "monthly"
     target-branch: "develop"
-    allow:
-      - dependency-name: "*"
-        dependency-type: "direct"
     groups:
       dev-dependencies:
         patterns:
@@ -23,3 +20,11 @@ updates:
       kendo-icons-dependencies:
         patterns:
           - "@progress/kendo-svg-icons"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      all-actions:
+        patterns:
+          - "*"

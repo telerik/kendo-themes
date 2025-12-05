@@ -48,7 +48,7 @@ jobs:
           node-version: 22.x
 
       - name: Setup nuget
-        uses: nuget/setup-nuget@v1
+        uses: nuget/setup-nuget@v2
 
       - name: Install
         run: npm ci --no-audit --no-fund

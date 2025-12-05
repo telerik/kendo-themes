@@ -1,8 +1,8 @@
 @use "sass:map";
 @use "sass:meta";
-@use "../../mixins/index.import.scss" as *;
-@use "../../functions/index.import.scss" as *;
-@use "../../color-system/_functions.import.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "../../functions/index.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 
@@ -330,9 +330,4 @@
     .k-button-group {}
 
 
-}
-
-
-@mixin kendo-button--theme() {
-    @include kendo-button--theme-base();
 }

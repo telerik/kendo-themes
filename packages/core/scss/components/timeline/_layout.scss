@@ -1,10 +1,11 @@
 @use "sass:math";
 @use "../../color-system/_constants.scss" as *;
-@use "../../border-radii/index.import.scss" as *;
+@use "../../border-radii/index.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "./variables.scss" as *;
 @use "../card/_variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
+@use "../../motion/index.scss" as *;
 
 @mixin kendo-timeline--layout-base() {
 
@@ -208,7 +209,7 @@
                 margin-block: calc( #{$kendo-icon-spacing} * -1 );
                 margin-inline: 0;
                 transform: rotate(90deg);
-                transition: transform .2s ease-in-out;
+                transition: transform k-transition(subtle);
             }
 
             &.k-collapsed {
@@ -358,7 +359,7 @@
                 z-index: k-z-index("base", 2);
 
                 .k-timeline-scrollable-wrap {
-                    transition: transform 1s ease-in-out;
+                    transition: transform k-duration(sluggish) k-easing(standard);
                 }
             }
 
@@ -444,9 +445,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-timeline--layout() {
-    @include kendo-timeline--layout-base();
 }

@@ -1,13 +1,14 @@
 @use "../../color-system/_constants.scss" as *;
-@use "../../spacing/index.import.scss" as *;
-@use "../../border-radii/index.import.scss" as *;
-@use "../../mixins/index.import.scss" as *;
+@use "../../spacing/index.scss" as *;
+@use "../../motion/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../list/_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "../menu/_variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 @mixin kendo-spreadsheet--layout-base() {
 
@@ -438,6 +439,7 @@
     .k-spreadsheet-active-cell {
         // always show exact active cell border, regardless of inline cell styles
         outline-color: transparent !important; // stylelint-disable-line declaration-no-important
+        transition: box-shadow k-transition(snappy);
         z-index: k-z-index("base", 4);
     }
 
@@ -476,6 +478,8 @@
 
     .k-spreadsheet .k-selection-full,
     .k-spreadsheet .k-selection-partial {
+        transition: background-color k-transition(fade-in);
+
         &::after {
             display: none;
         }
@@ -906,9 +910,4 @@
         overflow: hidden;
     }
 
-}
-
-
-@mixin kendo-spreadsheet--layout() {
-    @include kendo-spreadsheet--layout-base();
 }

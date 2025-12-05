@@ -1,0 +1,163 @@
+@use "sass:meta";
+@use "sass:math";
+@use "sass:string";
+
+// Adapted from https://css-tricks.com/snippets/sass/advanced-type-checking/
+
+/// Checks whether `$value` is a <number> CSS data type.
+/// @param {Any} $value - The value to check.
+/// @return {Boolean} - Whether `$value` is a number.
+///
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/number
+///
+/// @example scss - Usage
+///   @debug k-meta-is-number( 1 ); // => true
+///   @debug k-meta-is-number( "foo" ); // => false
+@function k-meta-is-number($value) {
+    @return meta.type-of($value) == "number";
+}
+
+/// Checks whether `$value` is a <integer> CSS data type.
+/// @param {Any} $value - The value to check.
+/// @return {Boolean} - Whether `$value` is a integer.
+///
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/integer
+///
+/// @example scss - Usage
+///   @debug k-meta-is-integer( 1 ); // => true
+///   @debug k-meta-is-integer( 1.5 ); // => false
+@function k-meta-is-integer($value) {
+    @return k-meta-is-number($value) and k-math-round($value) == $value;
+}
+
+/// Checks whether `$value` is a <time> CSS data type.
+/// @param {Any} $value - The value to check.
+/// @return {Boolean} - Whether `$value` is a time.
+///
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/time
+///
+/// @example scss - Usage
+///   @debug k-meta-is-time( 1s ); // => true
+///   @debug k-meta-is-time( 1 ); // => false
+@function k-meta-is-time($value) {
+    @return k-meta-is-number($value) and string.index("ms" "s", math.unit($value)) != null;
+}
+
+/// Checks whether `$value` is a valid duration period.
+/// @param {Any} $value - The value to check.
+/// @return {Boolean} - Whether `$value` is a duration.
+///
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/time
+///
+/// @example scss - Usage
+///   @debug k-meta-is-duration( 1s ); // => true
+///   @debug k-meta-is-duration( 1 ); // => false
+@function k-meta-is-duration($value) {
+    @return k-meta-is-time($value);
+}
+
+/// Checks whether `$value` is a <angle> CSS data type.
+/// @param {Any} $value - The value to check.
+/// @return {Boolean} - Whether `$value` is a angle.
+///
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/angle
+///
+/// @example scss - Usage
+///   @debug k-meta-is-angle( 1deg ); // => true
+///   @debug k-meta-is-angle( 1 ); // => false
+@function k-meta-is-angle($value) {
+    @return k-meta-is-number($value) and string.index("deg" "rad" "grad" "turn", math.unit($value)) != null;
+}
+
+/// Checks whether `$value` is a <frequency> CSS data type.
+/// @param {Any} $value - The value to check.
+/// @return {Boolean} - Whether `$value` is a frequency.
+///
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/frequency
+///
+/// @example scss - Usage
+///   @debug k-meta-is-frequency( 1Hz ); // => true
+///   @debug k-meta-is-frequency( 1 ); // => false
+@function k-meta-is-frequency($value) {
+    @return k-meta-is-number($value) and string.index("Hz" "kHz", math.unit($value)) != null;
+}
+
+/// Checks whether `$value` is a relative <length> CSS data type.
+/// @param {Any} $value - The value to check.
+/// @return {Boolean} - Whether `$value` is a relative length.
+///
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_font
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport
+///
+/// @example scss - Usage
+///   @debug k-meta-is-relative-length( 1em ); // => true
+///   @debug k-meta-is-relative-length( 1ch ); // => true
+///   @debug k-meta-is-relative-length( 1 ); // => false
+@function k-meta-is-relative-length($value) {
+    @return k-meta-is-number($value) and string.index("em" "ex" "ch" "rem" "vw" "vh" "vmin" "vmax", math.unit($value)) != null;
+}
+
+/// Checks whether `$value` is an absolute <length> CSS data type.
+/// @param {Any} $value - The value to check.
+/// @return {Boolean} - Whether `$value` is an absolute length.
+///
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/length#absolute_length_units
+///
+/// @example scss - Usage
+///   @debug k-meta-is-absolute-length( 1cm ); // => true
+///   @debug k-meta-is-absolute-length( 1 ); // => false
+@function k-meta-is-absolute-length($value) {
+    @return k-meta-is-number($value) and string.index("cm" "mm" "in" "px" "pt" "pc", math.unit($value)) != null;
+}
+
+/// Checks whether `$value` is a <percentage> CSS data type.
+/// @param {Any} $value - The value to check.
+/// @return {Boolean} - Whether `$value` is a percentage.
+///
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/percentage
+///
+/// @example scss - Usage
+///   @debug k-meta-is-percentage( 1% ); // => true
+///   @debug k-meta-is-percentage( 1 ); // => false
+@function k-meta-is-percentage($value) {
+    @return k-meta-is-number($value) and math.unit($value) == "%";
+}
+
+/// Checks whether `$value` is a <length> CSS data type.
+/// @param {Any} $value - The value to check.
+/// @return {Boolean} - Whether `$value` is a length.
+///
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/length
+///
+/// @example scss - Usage
+///   @debug k-meta-is-length( 1em ); // => true
+///   @debug k-meta-is-length( 1cm ); // => true
+///   @debug k-meta-is-length( 1 ); // => false
+@function k-meta-is-length($value) {
+    @return k-meta-is-relative-length($value) or k-meta-is-absolute-length($value);
+}
+
+/// Checks whether `$value` is a <resolution> CSS data type.
+/// @param {Any} $value - The value to check.
+/// @return {Boolean} - Whether `$value` is a resolution.
+///
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/resolution
+///
+/// @example scss - Usage
+///   @debug k-meta-is-resolution( 1dpi ); // => true
+///   @debug k-meta-is-resolution( 1 ); // => false
+@function k-meta-is-resolution($value) {
+    @return k-meta-is-number($value) and string.index("dpi" "dpcm" "dppx", math.unit($value)) != null;
+}
+
+/// Checks whether `$value` is a <position> CSS data type.
+/// @param {Any} $value - The value to check.
+/// @return {Boolean} - Whether `$value` is a position.
+///
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/position
+///
+/// @example scss - Usage
+///   @debug k-meta-is-position( center ); // => true
+@function k-meta-is-position($value) {
+    @return k-meta-is-length($value) or k-meta-is-percentage($value) or string.index("top" "right" "bottom" "left" "center", $value) != null;
+}

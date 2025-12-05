@@ -16,7 +16,10 @@ const expected = [
     "kendo-button-sm-calc-size", // Variable customizations work, but is used by another variable.
     "kendo-button-md-calc-size", // Variable customizations work, but is used by another variable.
     "kendo-button-lg-calc-size", // Variable customizations work, but is used by another variable.
-    "kendo-button-inner-calc-size" // Variable customizations work, but is used by another variable.
+    "kendo-button-inner-calc-size", // Variable customizations work, but is used by another variable.
+    "kendo-solid-button-shadow-opacity", // Variable customizations work, but is used by another variable.
+    "kendo-outline-button-shadow-opacity", // Variable customizations work, but is used by another variable.
+    "kendo-link-button-shadow-opacity" // Variable customizations work, but is used by another variable.
 ];
 
 const unexpected = [];

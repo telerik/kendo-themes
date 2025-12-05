@@ -48,7 +48,7 @@ jobs:
         run: npm ci --no-audit --no-fund
 
       - name: Download artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           path: .tmp
 
@@ -62,7 +62,7 @@ jobs:
         run: tar -cf screenshots-${{ matrix.theme }}.tar tests/_output/${{ matrix.theme }}
 
       - name: Upload screenshots
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: screenshots-${{ matrix.theme }}
           path: screenshots-${{ matrix.theme }}.tar

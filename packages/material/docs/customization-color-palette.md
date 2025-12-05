@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-spacing-5\.5, 1.375rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container">
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small ColorPalette tile.</div></div>
     </td>
 </tr>
 <tr>

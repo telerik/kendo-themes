@@ -1,4 +1,5 @@
 @use "../input/_variables.scss" as *;
+@use "../core/index.scss" as *;
 
 // Floating label
 
@@ -36,7 +37,7 @@ $kendo-floating-label-focus-offset-y: 0 !default;
 
 /// The transition of the Floating Label.
 /// @group floating-label
-$kendo-floating-label-transition: .2s ease-out !default;
+$kendo-floating-label-transition: k-transition(scale-in) !default;
 
 /// The background color of the Floating Label.
 /// @group floating-label

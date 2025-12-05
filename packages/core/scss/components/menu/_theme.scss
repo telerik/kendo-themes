@@ -1,4 +1,4 @@
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-menu--theme-base() {
@@ -59,6 +59,12 @@
                 $border: $kendo-menu-separator-border
             );
         }
+    }
+
+    .k-menu-popup {
+        @include fill(
+            $border: $kendo-menu-popup-border
+        );
     }
 
     .k-menu-group,
@@ -137,9 +143,4 @@
             }
         }
     }
-}
-
-
-@mixin kendo-menu--theme() {
-    @include kendo-menu--theme-base();
 }

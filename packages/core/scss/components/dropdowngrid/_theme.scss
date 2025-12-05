@@ -4,8 +4,3 @@
     .k-dropdown-grid {}
 
 }
-
-
-@mixin kendo-dropdown-grid--theme() {
-    @include kendo-dropdown-grid--theme-base();
-}

@@ -4,7 +4,7 @@
 @use "../list/_variables.scss" as *;
 @use "../grid/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
-@use "../core/functions/index.import.scss" as *;
+
 
 
 // Pivot grid
@@ -109,7 +109,7 @@ $kendo-pivotgrid-selected-border: null !default;
 /// @group pivotgrid
 $kendo-pivotgrid-focus-shadow: $kendo-list-item-focus-shadow !default;
 
-// Pivotgrid Configurator
+// PivotGrid Configurator
 /// The horizontal padding of the PivotGrid configurator.
 /// @group pivotgrid
 $kendo-pivotgrid-configurator-padding-x: null !default;
@@ -245,22 +245,19 @@ $kendo-pivotgrid-treeview-padding-x: $kendo-pivotgrid-spacer !default;
 $kendo-pivotgrid-treeview-padding-y: k-spacing(0) !default;
 
 // Legacy variables
+/// The background color of the PivotGrid.
+/// @group pivotgrid
 $kendo-pivotgrid-alt-bg: $kendo-grid-header-bg !default;
+/// The text color of the PivotGrid.
+/// @group pivotgrid
 $kendo-pivotgrid-alt-text: $kendo-grid-header-text !default;
+/// The border color of the PivotGrid.
+/// @group pivotgrid
 $kendo-pivotgrid-chrome-border: $kendo-grid-border !default;
 
-$kendo-pivotgrid-container-bg: $kendo-grid-header-bg !default;
+/// The background color of the PivotGrid row.
+/// @group pivotgrid
 $kendo-pivotgrid-row-headers-bg: unset !default;
-
-$kendo-pivotgrid-button-bg: k-color(base-subtle) !default;
-$kendo-pivotgrid-button-text: $kendo-button-text !default;
-$kendo-pivotgrid-button-hover-bg: k-color(base-subtle-hover) !default;
-$kendo-pivotgrid-button-hover-text: $kendo-button-text !default;
-$kendo-pivotgrid-button-active-bg: k-color(base-subtle-active) !default;
-$kendo-pivotgrid-button-active-text: $kendo-button-text !default;
-
-$kendo-pivotgrid-remove-bg: $kendo-pivotgrid-button-text !default;
-$kendo-pivotgrid-remove-text: $kendo-pivotgrid-button-bg !default;
 
 @forward "@progress/kendo-theme-core/scss/components/pivotgrid/_variables.scss" with (
     $kendo-pivotgrid-spacer: $kendo-pivotgrid-spacer,
@@ -336,14 +333,5 @@ $kendo-pivotgrid-remove-text: $kendo-pivotgrid-button-bg !default;
     $kendo-pivotgrid-alt-bg: $kendo-pivotgrid-alt-bg,
     $kendo-pivotgrid-alt-text: $kendo-pivotgrid-alt-text,
     $kendo-pivotgrid-chrome-border: $kendo-pivotgrid-chrome-border,
-    $kendo-pivotgrid-container-bg: $kendo-pivotgrid-container-bg,
     $kendo-pivotgrid-row-headers-bg: $kendo-pivotgrid-row-headers-bg,
-    $kendo-pivotgrid-button-bg: $kendo-pivotgrid-button-bg,
-    $kendo-pivotgrid-button-text: $kendo-pivotgrid-button-text,
-    $kendo-pivotgrid-button-hover-bg: $kendo-pivotgrid-button-hover-bg,
-    $kendo-pivotgrid-button-hover-text: $kendo-pivotgrid-button-hover-text,
-    $kendo-pivotgrid-button-active-bg: $kendo-pivotgrid-button-active-bg,
-    $kendo-pivotgrid-button-active-text: $kendo-pivotgrid-button-active-text,
-    $kendo-pivotgrid-remove-bg: $kendo-pivotgrid-remove-bg,
-    $kendo-pivotgrid-remove-text: $kendo-pivotgrid-remove-text
 );

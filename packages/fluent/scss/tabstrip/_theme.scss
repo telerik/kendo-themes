@@ -7,6 +7,9 @@
 
     .k-tabstrip-items-wrapper {
 
+        .k-tabstrip-item:active,
+        .k-tabstrip-item.k-active,
+        .k-tabstrip-item.k-selected,
         .k-item:active,
         .k-item.k-active,
         .k-item.k-selected {
@@ -16,7 +19,8 @@
                 background-color: $kendo-tabstrip-item-hover-bg;
             }
         }
-
+        
+         .k-tabstrip-item.k-tabstrip-dragging,
          .k-item.k-tabstrip-dragging {
             color: $kendo-tabstrip-item-dragging-text;
          }
@@ -25,6 +29,7 @@
         // Selected indicator
     @if ($kendo-tabstrip-indicator-size) {
         .k-tabstrip-items-wrapper {
+            .k-tabstrip-item.k-active::after,
             .k-item.k-active::after {
                 background-color: $kendo-tabstrip-indicator-color;
             }

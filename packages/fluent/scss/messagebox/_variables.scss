@@ -42,6 +42,8 @@ $kendo-message-box-link-text: var( --kendo-message-box-link-text, k-color(primar
 /// @group messagebox
 $kendo-message-box-link-hover-text: var( --kendo-message-box-link-hover-text, k-color(primary-hover) ) !default;
 
+/// The theme colors of the Messagebox.
+/// @group messagebox
 $kendo-messagebox-theme-colors: (
     "primary": k-color(primary),
      "secondary": k-color(secondary),

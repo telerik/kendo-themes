@@ -1,6 +1,6 @@
 @use "../list/_variables.scss" as *;
 @use "../core/_index.scss" as *;
-@use "../core/functions/index.import.scss" as *;
+@use "../core/functions/index.scss" as *;
 
 
 // CheckBox
@@ -40,6 +40,8 @@ $kendo-checkbox-md-ripple-size: 300% !default;
 $kendo-checkbox-lg-ripple-size: 300% !default;
 
 // A map with the different CheckBox sizes.
+/// The sizes of the CheckBox.
+/// @group checkbox
 $kendo-checkbox-sizes: (
     sm: (
         size: $kendo-checkbox-sm-size,

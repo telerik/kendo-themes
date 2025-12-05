@@ -1,14 +1,15 @@
-@use "../../typography/index.import.scss" as *;
+@use "../../typography/index.scss" as *;
 @use "../../color-system/_constants.scss" as *;
-@use "../../border-radii/index.import.scss" as *;
-@use "../../mixins/index.import.scss" as *;
+@use "../../border-radii/index.scss" as *;
+@use "../../motion/index.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../table/_variables.scss" as *;
 @use "../grid/_variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 @mixin kendo-gantt--layout-base() {
 
@@ -499,6 +500,7 @@
         border-style: solid;
         box-sizing: border-box;
         transform: rotate(45deg);
+        transition: background-color k-transition(rapid);
     }
 
 
@@ -512,6 +514,7 @@
     .k-task-summary,
     .k-task-summary-complete {
         background-color: currentColor;
+        transition: color k-transition(rapid);
 
         &::before,
         &::after {
@@ -552,6 +555,7 @@
         border-style: solid;
         box-sizing: border-box;
         cursor: default;
+        transition: background-color k-transition(rapid);
 
         .k-resize-handle {
             opacity: .5;
@@ -594,6 +598,7 @@
         width: 20%;
         position: absolute;
         z-index: k-z-index("base", 1);
+        transition: background-color k-transition(rapid);
         inset-block-start: 0;
         inset-block-end: 0;
         inset-inline-start: 0;
@@ -854,9 +859,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-gantt--layout() {
-    @include kendo-gantt--layout-base();
 }

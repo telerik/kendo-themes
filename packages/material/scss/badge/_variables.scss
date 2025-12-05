@@ -91,6 +91,8 @@ $kendo-badge-sizes: (
     )
 ) !default;
 
+/// The theme colors of the Badge.
+/// @group badge
 $kendo-badge-theme-colors: (
     "primary": k-color(primary),
     "secondary": k-color(secondary),

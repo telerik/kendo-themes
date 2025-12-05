@@ -1,0 +1,75 @@
+@use "sass:math";
+@use "sass:meta";
+
+/// Restricts `$number` to the range between `$min` and `$max`. If `$number` is
+/// less than `$min`, `$min` is returned. If `$number` is greater than `$max`,
+/// `$max` is returned. Otherwise, `$number` is returned.
+/// @param {Number} $number - The number to clamp.
+/// @param {Number} $min - The minimum value.
+/// @param {Number} $max - The maximum value.
+/// @return {Number} - The clamped number.
+///
+/// @example scss - Usage
+///   @debug k-math-clamp( 10, 0, 5 ); // => 5
+@function k-math-clamp($number, $min, $max) {
+    @return math.max($min, math.min($max, $number));
+}
+
+/// Returns the result of raising `$x` to the power of `$n`.
+/// @param {Number} $x - The base.
+/// @param {Number} $n - The exponent.
+/// @return {Number} - The result of raising `$x` to the power of `$n`.
+///
+/// @example scss - Usage
+///   @debug k-math-pow( 2, 3 ); // => 8
+@function k-math-pow($x, $n) {
+    $ret: 1;
+
+    @if ($n == 0) {
+        @return $ret;
+    }
+
+    @if ($n > 0) {
+        @for $i from 1 through $n {
+            $ret: $ret * $x;
+        }
+        @return $ret;
+    }
+
+    @for $i from $n to 0 {
+        $ret: math.div($ret, $x);
+    }
+    @return $ret;
+}
+
+/// Returns the result of rounding `$number` to the nearest integer
+/// using the specified `$precision`.
+/// @param {Number} $number - The number to round.
+/// @param {Number} $precision - The number of decimal places to round to.
+/// @return {Number} - The rounded number.
+///
+/// @example scss - Usage
+///   @debug k-math-round( 10.123456789, 3 ); // => 10.123
+@function k-math-round($number, $precision: 0) {
+    @if ($precision == 0) {
+        @return math.round($number);
+    }
+
+    $pow: k-math-pow(10, $precision);
+
+    @return math.div(round($number * $pow), $pow);
+}
+
+/// Remove the unit from a number.
+/// @param {Number} $number - The number to remove the unit from.
+/// @return {Number} - The unitless number.
+///
+/// @example scss - Usage
+///   @debug k-math-strip-unit( 10px ); // => 10
+@function k-math-strip-unit($number) {
+    @if (meta.type-of($number) == "number") and not math.unitless($number) {
+        @return math.div($number, 1 * math.unit($number));
+    }
+
+    @return $number;
+}

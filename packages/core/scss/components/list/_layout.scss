@@ -1,6 +1,7 @@
 
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "sass:map";
 
 @mixin kendo-list--layout-base() {
@@ -105,9 +106,8 @@
         align-content: center;
         gap: $kendo-icon-spacing;
         position: relative;
-        transition-property: color, background-color, outline-color, box-shadow;
-        transition-duration: 200ms;
-        transition-timing-function: ease;
+
+        transition: color k-transition(snappy), background-color k-transition(snappy), outline-color k-transition(snappy), box-shadow k-transition(snappy);
 
         &.k-first::before {
             content: "";
@@ -270,9 +270,4 @@
             }
         }
     }
-}
-
-
-@mixin kendo-list--layout() {
-    @include kendo-list--layout-base();
 }

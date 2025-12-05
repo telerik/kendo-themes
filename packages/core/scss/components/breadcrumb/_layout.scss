@@ -1,7 +1,7 @@
 @use "sass:map";
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "../../color-system/_constants.scss" as *;
-@use "../../motion/index.import.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
@@ -79,7 +79,7 @@
         align-items: center;
         align-self: stretch;
         overflow: hidden;
-        transition: $kendo-transition;
+        transition: color k-transition(rapid), background-color k-transition(rapid), box-shadow k-transition(rapid);
     }
 
     .k-breadcrumb-link > .k-image,
@@ -133,9 +133,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-breadcrumb--layout() {
-    @include kendo-breadcrumb--layout-base();
 }

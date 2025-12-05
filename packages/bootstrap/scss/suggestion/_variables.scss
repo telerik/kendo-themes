@@ -1,5 +1,5 @@
 @use "../core/_index.scss" as *;
-@use "../core/functions/index.import.scss" as *;
+
 
 /// The vertical padding of the Suggestion wrapper.
 /// @group suggestion
@@ -64,6 +64,8 @@ $kendo-suggestion-focus-shadow-spread: 2px !default;
 /// @group suggestion
 $kendo-suggestion-focus-shadow-color: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
 
+/// The theme colors map of the Suggestion.
+/// @group suggestion
 $kendo-suggestion-theme-colors: (
     "primary": k-color(primary),
     "secondary": k-color(secondary)

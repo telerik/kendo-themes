@@ -1,4 +1,4 @@
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-treeview--theme-base() {
@@ -79,9 +79,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-treeview--theme() {
-    @include kendo-treeview--theme-base();
 }

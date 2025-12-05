@@ -1,9 +1,10 @@
 @use "sass:map";
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "../../color-system/_constants.scss" as *;
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
+@use "../../motion/index.scss" as *;
 
 @mixin kendo-button--layout-base() {
 
@@ -274,7 +275,7 @@
         inset-block-start: calc( -1 * $kendo-button-border-width );
         inset-block-end: calc( -1 * $kendo-button-border-width );
         z-index: k-z-index("base");
-        transition: opacity .2s ease-in-out;
+        transition: opacity k-transition(rapid);
     }
 
 
@@ -339,7 +340,7 @@
             inset-block-start: calc( -1 * $kendo-button-border-width );
             inset-block-end: calc( -1 * $kendo-button-border-width );
             z-index: k-z-index("base");
-            transition: opacity .2s ease-in-out;
+            transition: opacity k-transition(rapid);
         }
     }
 
@@ -360,9 +361,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-button--layout() {
-    @include kendo-button--layout-base();
 }

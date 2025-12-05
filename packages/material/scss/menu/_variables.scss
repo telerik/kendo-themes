@@ -5,7 +5,7 @@
 @use "../button/_variables.scss" as *;
 @use "../popup/_variables.scss" as *;
 @use "../list/_variables.scss" as *;
-@use "../core/functions/index.import.scss" as *;
+
 
 // Menu
 
@@ -171,12 +171,24 @@ $kendo-menu-popup-padding-y: null !default;
 /// @group menu
 $kendo-menu-popup-border-width: $kendo-popup-border-width !default;
 
+/// The font size of the small Menu popup.
+/// @group menu
 $kendo-menu-popup-sm-font-size: var( --kendo-font-size, inherit ) !default;
+/// The font size of the medium Menu popup.
+/// @group menu
 $kendo-menu-popup-md-font-size: var( --kendo-font-size, inherit ) !default;
+/// The font size of the large Menu popup.
+/// @group menu
 $kendo-menu-popup-lg-font-size: var( --kendo-font-size, inherit ) !default;
 
+/// The line height of the small Menu popup.
+/// @group menu
 $kendo-menu-popup-sm-line-height: $kendo-menu-line-height !default;
+/// The line height of the medium Menu popup.
+/// @group menu
 $kendo-menu-popup-md-line-height: $kendo-menu-line-height !default;
+/// The line height of the large Menu popup.
+/// @group menu
 $kendo-menu-popup-lg-line-height: $kendo-menu-line-height !default;
 
 /// The background color of the Menu popup.
@@ -195,34 +207,54 @@ $kendo-menu-popup-gradient: null !default;
 
 // Menu popup item
 
-/// The horizontal padding of the Menu item in popup.
+/// The horizontal padding of the small Menu popup item.
 /// @group menu
 $kendo-menu-popup-sm-item-padding-x: $kendo-menu-item-padding-x !default;
+/// The horizontal padding of the medium Menu popup item.
+/// @group menu
 $kendo-menu-popup-md-item-padding-x: $kendo-menu-item-padding-x !default;
+/// The horizontal padding of the large Menu popup item.
+/// @group menu
 $kendo-menu-popup-lg-item-padding-x: $kendo-menu-item-padding-x !default;
 
-/// The vertical padding of the Menu item in popup.
+/// The vertical padding of the small Menu popup item.
 /// @group menu
 $kendo-menu-popup-sm-item-padding-y: k-spacing(2) !default;
+/// The vertical padding of the medium Menu popup item.
+/// @group menu
 $kendo-menu-popup-md-item-padding-y: $kendo-menu-item-padding-y !default;
+/// The vertical padding of the large Menu popup item.
+/// @group menu
 $kendo-menu-popup-lg-item-padding-y: k-spacing(4) !default;
 
-/// The end padding of the Menu item in popup.
+/// The end padding of the small Menu popup item.
 /// @group menu
 $kendo-menu-popup-sm-item-padding-end: calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 + #{$kendo-icon-size} ) !default;
+/// The end padding of the medium Menu popup item.
+/// @group menu
 $kendo-menu-popup-md-item-padding-end: calc( #{$kendo-menu-popup-md-item-padding-x} * 2 + #{$kendo-icon-size} ) !default;
+/// The end padding of the large Menu popup item.
+/// @group menu
 $kendo-menu-popup-lg-item-padding-end: calc( #{$kendo-menu-popup-lg-item-padding-x} * 2 + #{$kendo-icon-size} ) !default;
 
-/// The start margin of the Menu item expand icon.
+/// The start margin of the small Menu popup item expand icon.
 /// @group menu
 $kendo-menu-popup-sm-item-icon-margin-start: $kendo-menu-popup-sm-item-padding-x !default;
+/// The start margin of the medium Menu popup item expand icon.
+/// @group menu
 $kendo-menu-popup-md-item-icon-margin-start: $kendo-menu-popup-md-item-padding-x !default;
+/// The start margin of the large Menu popup item expand icon.
+/// @group menu
 $kendo-menu-popup-lg-item-icon-margin-start: $kendo-menu-popup-lg-item-padding-x !default;
 
-/// The end margin of the Menu item expand icon.
+/// The end margin of the small Menu popup item expand icon.
 /// @group menu
 $kendo-menu-popup-sm-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-sm-item-padding-end} - #{list.slash( $kendo-menu-popup-sm-item-padding-x, 2 )}) ) !default;
+/// The end margin of the medium Menu popup item expand icon.
+/// @group menu
 $kendo-menu-popup-md-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-md-item-padding-end} - #{list.slash( $kendo-menu-popup-md-item-padding-x, 2 )}) ) !default;
+/// The end margin of the large Menu popup item expand icon.
+/// @group menu
 $kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-lg-item-padding-end} - #{list.slash( $kendo-menu-popup-lg-item-padding-x, 2 )}) ) !default;
 
 /// The spacing between the Menu items in popup.

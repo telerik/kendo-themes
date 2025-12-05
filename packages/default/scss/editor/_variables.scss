@@ -1,6 +1,5 @@
 @use "sass:color";
 @use "../core/_index.scss" as *;
-@use "../core/functions/index.import.scss" as *;
 @use "../input/_variables.scss" as *;
 
 // Editor
@@ -78,8 +77,14 @@ $kendo-editor-filebrowser-tiles-padding-y: k-spacing(1) !default;
 /// @group editor
 $kendo-editor-content-padding: k-spacing(2) !default;
 
+/// The text color of the Editor cell.
+/// @group editor
 $kendo-editor-ct-cell-text: k-color(on-primary) !default;
+/// The background color of the Editor cell.
+/// @group editor
 $kendo-editor-ct-cell-bg: k-color(primary) !default;
+/// The border color of the Editor cell.
+/// @group editor
 $kendo-editor-ct-cell-border: k-color(border) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/editor/_variables.scss" with (

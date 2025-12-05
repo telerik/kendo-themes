@@ -2,7 +2,7 @@
 @use "sass:math";
 @use "sass:map";
 @use "../core/_index.scss" as *;
-@use "../core/functions/index.import.scss" as *;
+
 
 // Stepper
 
@@ -41,13 +41,13 @@ $kendo-stepper-inline-content-padding-x: k-spacing(5) !default;
 /// @group stepper
 $kendo-stepper-inline-content-padding-y: k-spacing(2.5) !default;
 
-// The font size of the Stepper.
+/// The font size of the Stepper.
 /// @group stepper
 $kendo-stepper-font-size: var( --kendo-font-size, inherit ) !default;
-// The line height of the Stepper.
+/// The line height of the Stepper.
 /// @group stepper
 $kendo-stepper-line-height: var( --kendo-line-height, inherit ) !default;
-// The font family of the Stepper.
+/// The font family of the Stepper.
 /// @group stepper
 $kendo-stepper-font-family: var( --kendo-font-family, inherit ) !default;
 
@@ -227,10 +227,10 @@ $kendo-stepper-progressbar-fill-text: null !default;
 $kendo-stepper-content-transition-property: height !default;
 /// The duration of the Stepper transition.
 /// @group stepper
-$kendo-stepper-content-transition-duration: 300ms !default;
+$kendo-stepper-content-transition-duration: k-duration(speedy) !default;
 /// The timing function of the Stepper transition.
 /// @group stepper
-$kendo-stepper-content-transition-timing-function: cubic-bezier(.4, 0, .2, 1) 0ms !default;
+$kendo-stepper-content-transition-timing-function: k-easing(standard) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/stepper/_variables.scss" with (
     $kendo-stepper-margin-x: $kendo-stepper-margin-x,

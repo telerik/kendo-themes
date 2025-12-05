@@ -7,10 +7,8 @@ const className = ["k-chart", "k-stockchart", "k-sparkline"];
 
 const dependencyClassNames = [];
 
-const expected = [
-    "kendo-series-a" // Variable customizations work, but is used by another variable.
-];
+const expected = [];
 
 const unexpected = [];
 
-testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);
+testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected], false);

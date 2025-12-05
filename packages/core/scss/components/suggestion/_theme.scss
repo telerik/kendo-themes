@@ -1,8 +1,8 @@
 @use "./_variables.scss" as *;
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 
-@use "../../spacing/index.import.scss" as *;
-@use "../../color-system/_functions.import.scss" as *;
+@use "../../spacing/index.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "../../_variables.scss" as *;
 
 @mixin kendo-suggestion--theme-base() {
@@ -38,7 +38,7 @@
     }
 
     @each $name, $props in $kendo-suggestion-theme-colors {
-        
+
         $_suggestion-text: k-color(#{$name}-on-subtle);
         $_suggestion-bg: k-color(#{$name}-subtle);
         $_suggestion-border: k-color(#{$name}-emphasis);
@@ -51,7 +51,7 @@
         $_suggestion-active-bg: k-color(#{$name}-subtle-active);
         $_suggestion-active-border: k-color(#{$name}-emphasis);
 
-            
+
         .k-suggestion-#{$name} {
             @include fill(
                 $_suggestion-text,
@@ -79,9 +79,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-suggestion--theme() {
-    @include kendo-suggestion--theme-base();
 }

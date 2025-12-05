@@ -6,13 +6,6 @@
 
     @include kendo-dataviz--theme-base();
 
-    .k-chart-tooltip {
-        @include fill( $color: $kendo-chart-tooltip-color );
-    }
-    .k-chart-tooltip-inverse {
-        @include fill( $color: $kendo-chart-tooltip-color-inverse );
-    }
-
     .k-handle {
         cursor: e-resize;
         @include fill(

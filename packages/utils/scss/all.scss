@@ -1,4 +1,4 @@
-@forward "../scss/index.import.scss";
-@use "./index.import.scss" as *;
+@forward "../scss/index.scss";
+@use "./index.scss" as *;
 
 @include kendo-utils();

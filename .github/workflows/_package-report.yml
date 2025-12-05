@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Post status PR comment
-        uses: actions/github-script@v6
+        uses: actions/github-script@v8
         with:
           script: |
             const { data: comments } = await github.rest.issues.listComments({
@@ -109,7 +109,7 @@ jobs:
           echo "${{ matrix.package }}:$size:$gzip_size:$build_time" >> data.txt
 
       - name: Upload PR data
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: pr-data-${{ matrix.package }}
           path: data.txt
@@ -183,7 +183,7 @@ jobs:
           echo "${{ matrix.package }}:$size:$gzip_size:$build_time" >> data.txt
 
       - name: Upload Develop data
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: develop-data-${{ matrix.package }}
           path: data.txt
@@ -196,7 +196,7 @@ jobs:
       - extract-develop-data
     steps:
       - name: Download Artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
 
       - name: Generate Comparison Table
         run: |
@@ -268,7 +268,7 @@ jobs:
           echo "$time_row|" >> size-comparison.md
 
       - name: Update PR comment
-        uses: actions/github-script@v6
+        uses: actions/github-script@v8
         with:
           script: |
             const fs = require('fs');

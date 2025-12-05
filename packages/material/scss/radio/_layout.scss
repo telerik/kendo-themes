@@ -1,6 +1,6 @@
 @use "sass:map";
 @use "./_variables.scss" as *;
-@use "../core/z-index/index.import.scss" as *;
+@use "../core/z-index/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/radio/_layout.scss" as *;
 
 
@@ -39,11 +39,6 @@
             width: $_indicator-size;
             height: $_indicator-size;
         }
-    }
-
-    .k-radio::before {
-        transition: transform linear 280ms;
-        transform-origin: 0 0;
     }
 
 }

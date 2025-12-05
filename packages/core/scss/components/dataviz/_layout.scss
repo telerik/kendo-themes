@@ -1,13 +1,13 @@
 @use "sass:string";
 @use "sass:math";
 @use "sass:meta";
-@use "../../color-system/_functions.import.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "../../color-system/_constants.scss" as *;
-@use "../../typography/index.import.scss" as *;
-@use "../../border-radii/index.import.scss" as *;
-@use "../../z-index/index.import.scss" as *;
-@use "../../mixins/index.import.scss" as *;
-@use "../../functions/index.import.scss" as *;
+@use "../../typography/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
+@use "../../z-index/index.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 @use "../tooltip/_variables.scss" as *;
@@ -573,9 +573,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-dataviz--layout() {
-    @include kendo-dataviz--layout-base();
 }

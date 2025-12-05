@@ -1,5 +1,5 @@
-@use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_functions.import.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-editor--theme-base() {
@@ -101,9 +101,4 @@
         }
     }
 
-}
-
-
-@mixin kendo-editor--theme() {
-    @include kendo-editor--theme-base();
 }

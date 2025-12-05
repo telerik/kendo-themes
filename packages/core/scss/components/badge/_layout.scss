@@ -1,7 +1,7 @@
 @use "sass:map";
-@use "../../color-system/_functions.import.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "./_variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 @mixin kendo-badge--layout-base() {
 
@@ -148,9 +148,4 @@
         box-shadow: 0 0 0 2px k-color(surface-alt);
     }
 
-}
-
-
-@mixin kendo-badge--layout() {
-    @include kendo-badge--layout-base();
 }

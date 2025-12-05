@@ -38,6 +38,46 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-series-a-dark</td>
+    <td>String</td>
+    <td><code>k-color(series-a-bold)</code></td>
+    <td><code>var(--kendo-color-series-a-bold, #20787b)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-a dark color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-a-darker</td>
+    <td>String</td>
+    <td><code>k-color(series-a-bolder)</code></td>
+    <td><code>var(--kendo-color-series-a-bolder, #155052)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-a darker color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-a-light</td>
+    <td>String</td>
+    <td><code>k-color(series-a-subtle)</code></td>
+    <td><code>var(--kendo-color-series-a-subtle, #5fb8bb)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-a light color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-a-lighter</td>
+    <td>String</td>
+    <td><code>k-color(series-a-subtler)</code></td>
+    <td><code>var(--kendo-color-series-a-subtler, #94cfd1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-a lighter color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-series-b</td>
     <td>String</td>
     <td><code>k-color(series-b)</code></td>
@@ -45,6 +85,46 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The second base series color and its light and dark shades.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-b-dark</td>
+    <td>String</td>
+    <td><code>k-color(series-b-bold)</code></td>
+    <td><code>var(--kendo-color-series-b-bold, #826900)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-b dark color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-b-darker</td>
+    <td>String</td>
+    <td><code>k-color(series-b-bolder)</code></td>
+    <td><code>var(--kendo-color-series-b-bolder, #574600)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-b darker color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-b-light</td>
+    <td>String</td>
+    <td><code>k-color(series-b-subtle)</code></td>
+    <td><code>var(--kendo-color-series-b-subtle, #c2a940)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-b light color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-b-lighter</td>
+    <td>String</td>
+    <td><code>k-color(series-b-subtler)</code></td>
+    <td><code>var(--kendo-color-series-b-subtler, #d7c580)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-b lighter color of the Charts.</div></div>
     </td>
 </tr>
 <tr>
@@ -58,6 +138,46 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-series-c-dark</td>
+    <td>String</td>
+    <td><code>k-color(series-c-bold)</code></td>
+    <td><code>var(--kendo-color-series-c-bold, #aa0069)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-c dark color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-c-darker</td>
+    <td>String</td>
+    <td><code>k-color(series-c-bolder)</code></td>
+    <td><code>var(--kendo-color-series-c-bolder, #720046)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-c darker color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-c-light</td>
+    <td>String</td>
+    <td><code>k-color(series-c-subtle)</code></td>
+    <td><code>var(--kendo-color-series-c-subtle, #ea40a9)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-c light color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-c-lighter</td>
+    <td>String</td>
+    <td><code>k-color(series-c-subtler)</code></td>
+    <td><code>var(--kendo-color-series-c-subtler, #f180c5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-c lighter color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-series-d</td>
     <td>String</td>
     <td><code>k-color(series-d)</code></td>
@@ -65,6 +185,46 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fourth base series color and its light and dark shades.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-d-dark</td>
+    <td>String</td>
+    <td><code>k-color(series-d-bold)</code></td>
+    <td><code>var(--kendo-color-series-d-bold, #0e790b)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-d dark color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-d-darker</td>
+    <td>String</td>
+    <td><code>k-color(series-d-bolder)</code></td>
+    <td><code>var(--kendo-color-series-d-bolder, #0a5107)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-d darker color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-d-light</td>
+    <td>String</td>
+    <td><code>k-color(series-d-subtle)</code></td>
+    <td><code>var(--kendo-color-series-d-subtle, #4eb94a)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-d light color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-d-lighter</td>
+    <td>String</td>
+    <td><code>k-color(series-d-subtler)</code></td>
+    <td><code>var(--kendo-color-series-d-subtler, #89d086)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-d lighter color of the Charts.</div></div>
     </td>
 </tr>
 <tr>
@@ -78,6 +238,46 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-series-e-dark</td>
+    <td>String</td>
+    <td><code>k-color(series-e-bold)</code></td>
+    <td><code>var(--kendo-color-series-e-bold, #4a5db3)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-e dark color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-e-darker</td>
+    <td>String</td>
+    <td><code>k-color(series-e-bolder)</code></td>
+    <td><code>var(--kendo-color-series-e-bolder, #323e78)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-e darker color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-e-light</td>
+    <td>String</td>
+    <td><code>k-color(series-e-subtle)</code></td>
+    <td><code>var(--kendo-color-series-e-subtle, #c3b1db)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-e light color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-e-lighter</td>
+    <td>String</td>
+    <td><code>k-color(series-e-subtler)</code></td>
+    <td><code>var(--kendo-color-series-e-subtler, #a58bca)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-e lighter color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-series-f</td>
     <td>String</td>
     <td><code>k-color(series-f)</code></td>
@@ -88,6 +288,46 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-series-f-dark</td>
+    <td>String</td>
+    <td><code>k-color(series-f-bold)</code></td>
+    <td><code>var(--kendo-color-series-f-bold, #973C0C)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-f dark color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-f-darker</td>
+    <td>String</td>
+    <td><code>k-color(series-f-bolder)</code></td>
+    <td><code>var(--kendo-color-series-f-bolder, #652808)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-f darker color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-f-light</td>
+    <td>String</td>
+    <td><code>k-color(series-f-subtle)</code></td>
+    <td><code>var(--kendo-color-series-f-subtle, #D77C4C)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-f light color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-f-lighter</td>
+    <td>String</td>
+    <td><code>k-color(series-f-subtler)</code></td>
+    <td><code>var(--kendo-color-series-f-subtler, #E5A787)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-f lighter color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-series-1</td>
     <td>String</td>
     <td><code>$kendo-series-a</code></td>
@@ -95,6 +335,296 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series colors in order:<br />base, light, dark, lighter, darker</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-2</td>
+    <td>String</td>
+    <td><code>$kendo-series-b</code></td>
+    <td><code>var(--kendo-color-series-b, #ae8c00)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-2 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-3</td>
+    <td>String</td>
+    <td><code>$kendo-series-c</code></td>
+    <td><code>var(--kendo-color-series-c, #e3008c)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-3 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-4</td>
+    <td>String</td>
+    <td><code>$kendo-series-d</code></td>
+    <td><code>var(--kendo-color-series-d, #13a10e)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-4 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-5</td>
+    <td>String</td>
+    <td><code>$kendo-series-e</code></td>
+    <td><code>var(--kendo-color-series-e, #637cef)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-5 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-6</td>
+    <td>String</td>
+    <td><code>$kendo-series-f</code></td>
+    <td><code>var(--kendo-color-series-f, #CA5010)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-6 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-7</td>
+    <td>String</td>
+    <td><code>$kendo-series-a-light</code></td>
+    <td><code>var(--kendo-color-series-a-subtle, #5fb8bb)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-7 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-8</td>
+    <td>String</td>
+    <td><code>$kendo-series-b-light</code></td>
+    <td><code>var(--kendo-color-series-b-subtle, #c2a940)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-8 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-9</td>
+    <td>String</td>
+    <td><code>$kendo-series-c-light</code></td>
+    <td><code>var(--kendo-color-series-c-subtle, #ea40a9)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-9 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-10</td>
+    <td>String</td>
+    <td><code>$kendo-series-d-light</code></td>
+    <td><code>var(--kendo-color-series-d-subtle, #4eb94a)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-10 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-11</td>
+    <td>String</td>
+    <td><code>$kendo-series-e-light</code></td>
+    <td><code>var(--kendo-color-series-e-subtle, #c3b1db)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-11 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-12</td>
+    <td>String</td>
+    <td><code>$kendo-series-f-light</code></td>
+    <td><code>var(--kendo-color-series-f-subtle, #D77C4C)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-12 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-13</td>
+    <td>String</td>
+    <td><code>$kendo-series-a-dark</code></td>
+    <td><code>var(--kendo-color-series-a-bold, #20787b)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-13 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-14</td>
+    <td>String</td>
+    <td><code>$kendo-series-b-dark</code></td>
+    <td><code>var(--kendo-color-series-b-bold, #826900)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-14 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-15</td>
+    <td>String</td>
+    <td><code>$kendo-series-c-dark</code></td>
+    <td><code>var(--kendo-color-series-c-bold, #aa0069)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-15 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-16</td>
+    <td>String</td>
+    <td><code>$kendo-series-d-dark</code></td>
+    <td><code>var(--kendo-color-series-d-bold, #0e790b)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-16 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-17</td>
+    <td>String</td>
+    <td><code>$kendo-series-e-dark</code></td>
+    <td><code>var(--kendo-color-series-e-bold, #4a5db3)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-17 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-18</td>
+    <td>String</td>
+    <td><code>$kendo-series-f-dark</code></td>
+    <td><code>var(--kendo-color-series-f-bold, #973C0C)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-18 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-19</td>
+    <td>String</td>
+    <td><code>$kendo-series-a-lighter</code></td>
+    <td><code>var(--kendo-color-series-a-subtler, #94cfd1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-19 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-20</td>
+    <td>String</td>
+    <td><code>$kendo-series-b-lighter</code></td>
+    <td><code>var(--kendo-color-series-b-subtler, #d7c580)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-20 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-21</td>
+    <td>String</td>
+    <td><code>$kendo-series-c-lighter</code></td>
+    <td><code>var(--kendo-color-series-c-subtler, #f180c5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-21 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-22</td>
+    <td>String</td>
+    <td><code>$kendo-series-d-lighter</code></td>
+    <td><code>var(--kendo-color-series-d-subtler, #89d086)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-22 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-23</td>
+    <td>String</td>
+    <td><code>$kendo-series-e-lighter</code></td>
+    <td><code>var(--kendo-color-series-e-subtler, #a58bca)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-23 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-24</td>
+    <td>String</td>
+    <td><code>$kendo-series-f-lighter</code></td>
+    <td><code>var(--kendo-color-series-f-subtler, #E5A787)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-24 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-25</td>
+    <td>String</td>
+    <td><code>$kendo-series-a-darker</code></td>
+    <td><code>var(--kendo-color-series-a-bolder, #155052)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-25 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-26</td>
+    <td>String</td>
+    <td><code>$kendo-series-b-darker</code></td>
+    <td><code>var(--kendo-color-series-b-bolder, #574600)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-26 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-27</td>
+    <td>String</td>
+    <td><code>$kendo-series-c-darker</code></td>
+    <td><code>var(--kendo-color-series-c-bolder, #720046)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-27 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-28</td>
+    <td>String</td>
+    <td><code>$kendo-series-d-darker</code></td>
+    <td><code>var(--kendo-color-series-d-bolder, #0a5107)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-28 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-29</td>
+    <td>String</td>
+    <td><code>$kendo-series-e-darker</code></td>
+    <td><code>var(--kendo-color-series-e-bolder, #323e78)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-29 color of the Charts.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-series-30</td>
+    <td>String</td>
+    <td><code>$kendo-series-f-darker</code></td>
+    <td><code>var(--kendo-color-series-f-bolder, #652808)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series-30 color of the Charts.</div></div>
     </td>
 </tr>
 <tr>
@@ -160,8 +690,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-tooltip-transition</td>
     <td>List</td>
-    <td><code>left ease-in 80ms, top ease-in 80ms</code></td>
-    <td><code>(left ease-in 80ms, top ease-in 80ms)</code></td>
+    <td><code>left k-transition(fade-in), top k-transition(fade-in)</code></td>
+    <td><code>(left var(--kendo-transition-fade-in), top var(--kendo-transition-fade-in))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the tooltip of the chart component.</div></div>

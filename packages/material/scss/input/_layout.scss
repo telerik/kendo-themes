@@ -1,6 +1,7 @@
 @use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
-@use "../core/z-index/index.import.scss" as *;
+@use "../core/z-index/index.scss" as *;
+@use "../core/motion/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/input/_layout.scss" as *;
 
 
@@ -79,7 +80,7 @@
             inset: -1px;
             opacity: 0;
             transform: scaleX(0);
-            transition: opacity .3s, transform .3s;
+            transition: opacity k-transition(slide-in), transform k-transition(slide-in);
             pointer-events: none;
         }
 

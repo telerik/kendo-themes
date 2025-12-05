@@ -1,19 +1,21 @@
-@use "@progress/kendo-theme-core/scss/functions/index.import.scss" as *;
+@use "sass:meta";
+@use "sass:map";
+@use "sass:list";
+@use "@progress/kendo-theme-core/scss/functions/index.scss" as *;
 @use "./_variables.scss" as *;
 @use "./_functions.scss" as *;
-@use "sass:meta";
 
 $kendo-prefix: k- !default;
 $kendo-important: true !default;
 
 @mixin generate-utils( $name, $props, $values, $function: "genFunc", $important: $kendo-important, $css-var: null ) {
     @if $values {
-        $_props: if( k-meta-type-of($props) == list, $props, ( $props ) );
+        $_props: if( meta.type-of($props) == list, $props, ( $props ) );
         $_fn: if( meta.function-exists( $function ), meta.get-function( $function ), null );
 
         @each $key, $val in $values {
             $_key: k-escape-class-name( $key );
-            $_val: if( k-meta-type-of($values) == list, $key, $val );
+            $_val: if( meta.type-of($values) == list, $key, $val );
             $_name: k-escape-class-name( $name );
             $_selector: if( $_key == DEFAULT, #{$kendo-prefix}#{$_name}, #{$kendo-prefix}#{$_name}-#{$_key});
             // @debug $_selector;
@@ -23,9 +25,9 @@ $kendo-important: true !default;
                 .#{$_selector} {
                     @each $prop in $_props {
                         @if $css-var {
-                            #{$prop}: if( $_fn, k-meta-call($_fn, $_custom-prop), $_custom-prop );
+                            #{$prop}: if( $_fn, meta.call($_fn, $_custom-prop), $_custom-prop );
                         } @else {
-                            #{$prop}: if( $_fn, k-meta-call($_fn, $_val), $_val );
+                            #{$prop}: if( $_fn, meta.call($_fn, $_val), $_val );
                         }
                     }
                 }
@@ -34,9 +36,9 @@ $kendo-important: true !default;
                 .\!#{$_selector} {
                     @each $prop in $_props {
                         @if $css-var {
-                            #{$prop}: if( $_fn, k-meta-call($_fn, $-custom-prop), $-custom-prop ) !important; // stylelint-disable-line declaration-no-important
+                            #{$prop}: if( $_fn, meta.call($_fn, $-custom-prop), $-custom-prop ) !important; // stylelint-disable-line declaration-no-important
                         } @else {
-                            #{$prop}:  if( $_fn, k-meta-call($_fn, $_val), $_val ) !important; // stylelint-disable-line declaration-no-important
+                            #{$prop}:  if( $_fn, meta.call($_fn, $_val), $_val ) !important; // stylelint-disable-line declaration-no-important
                         }
                     }
                 }
@@ -60,10 +62,10 @@ $kendo-important: true !default;
 }
 
 @mixin kendo-breakpoint-only( $breakpoint, $media: all ) {
-    $breakpoint-index: k-list-index( k-map-keys($kendo-breakpoints), $breakpoint );
+    $breakpoint-index: list.index( map.keys($kendo-breakpoints), $breakpoint );
     $next-breakpoint-index: $breakpoint-index + 1;
 
-    $next-breakpoint: k-list-nth( k-map-keys($kendo-breakpoints), $next-breakpoint-index );
+    $next-breakpoint: list.nth( map.keys($kendo-breakpoints), $next-breakpoint-index );
     @media only #{$media} and (min-width: k-map-get( $kendo-breakpoints, #{$breakpoint} )) and (max-width: ( k-map-get( $kendo-breakpoints, #{$next-breakpoint} ) - .02)) {
         @content;
     }

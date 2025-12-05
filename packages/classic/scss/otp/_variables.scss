@@ -33,6 +33,8 @@ $kendo-otp-md-input-width: $kendo-input-md-calc-size !default;
 /// @group one-time-password
 $kendo-otp-lg-input-width: $kendo-input-lg-calc-size !default;
 
+/// The sizes map of the OTP.
+/// @group otp
 $kendo-otp-sizes: (
     sm: (
         gap: $kendo-otp-sm-gap,

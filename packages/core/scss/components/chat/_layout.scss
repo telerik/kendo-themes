@@ -1,13 +1,12 @@
 @use "../../color-system/_constants.scss" as *;
-@use "../../spacing/index.import.scss" as *;
-@use "../../border-radii/index.import.scss" as *;
-@use "../../mixins/index.import.scss" as *;
-@use "../../z-index/index.import.scss" as *;
+@use "../../spacing/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
+@use "../../z-index/index.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 @use "../bubble/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
-@use "../../color-system/_functions.import.scss" as *;
 
 @mixin kendo-chat--layout-base() {
 
@@ -30,6 +29,7 @@
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         .k-chat-file {
+            width: 100%;
             min-width: $kendo-chat-file-min-width;
             max-width: $kendo-chat-file-max-width;
             flex-shrink: 0;
@@ -100,7 +100,7 @@
             &,
             + .k-chat-user-status {
                 margin-block-end: calc($kendo-chat-message-meta-line-height * $kendo-chat-message-meta-font-size + $kendo-chat-bubble-spacing);
-                transition: margin .2s ease-in-out;
+                transition: margin k-transition(fade-out);
             }
         }
 
@@ -193,7 +193,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        transition: margin .2s ease-in-out;
+        transition: margin k-transition(fade-out);
         outline: none;
         overflow-wrap: break-word;
 
@@ -251,7 +251,7 @@
     .k-chat-bubble.k-bubble-expandable {
         .k-bubble-content {
             height: auto;
-            transition: height 2s ease;
+            transition: height k-transition(shrink);
         }
     }
 
@@ -276,7 +276,7 @@
         line-height: $kendo-chat-message-meta-line-height;
         white-space: nowrap;
         pointer-events: none;
-        transition: height .2s ease-in-out;
+        transition: height k-transition(fade-out);
         height: 0;
         overflow: hidden;
     }
@@ -305,7 +305,7 @@
             display: flex;
             flex-direction: column;
             gap: $kendo-chat-message-gap;
-            transition: height .2s ease-in-out;
+            transition: height k-transition(fade-out);
         }
 
         a {
@@ -323,12 +323,16 @@
 
     // Message states
     .k-message:has(.k-selected) {
-        gap: $kendo-chat-bubble-spacing;
-
         .k-message-time,
         .k-message-status {
             height: calc($kendo-chat-message-meta-line-height * $kendo-chat-message-meta-font-size);
+            transition: height k-transition(fade-in);
         }
+    }
+
+    .k-message:has(.k-selected + .k-message-status),
+    .k-message:has(.k-message-time + .k-selected) {
+        gap: $kendo-chat-bubble-spacing;
     }
 
     .k-message-error,
@@ -667,9 +671,4 @@
             }
         }
     }
-}
-
-
-@mixin kendo-chat--layout() {
-    @include kendo-chat--layout-base();
 }

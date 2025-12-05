@@ -1,6 +1,7 @@
-@use "../../spacing/index.import.scss" as *;
 @use "sass:map";
 @use "./variables.scss" as *;
+@use "../../spacing/index.scss" as *;
+@use "../../motion/index.scss" as *;
 
 @mixin kendo-fab--layout-base() {
 
@@ -26,6 +27,7 @@
         text-overflow: ellipsis;
         cursor: pointer;
         outline: none;
+        transition: background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid), opacity k-transition(rapid);
 
         *,
         *::before,
@@ -142,9 +144,4 @@
             flex-direction: row-reverse;
         }
     }
-}
-
-
-@mixin kendo-fab--layout() {
-    @include kendo-fab--layout-base();
 }

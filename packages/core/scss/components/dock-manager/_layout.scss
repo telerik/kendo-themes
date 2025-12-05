@@ -1,6 +1,7 @@
-@use "../../typography/index.import.scss" as *;
+@use "../../typography/index.scss" as *;
+@use "../../z-index/index.scss" as *;
+@use "../../motion/index.scss" as *;
 @use "./variables.scss" as *;
-@use "../../z-index/index.import.scss" as *;
 
 @mixin kendo-dock-manager--layout-base() {
 
@@ -198,6 +199,7 @@
         outline-width: $kendo-dock-indicator-outline-width;
         outline-style: $kendo-dock-indicator-outline-style;
         z-index: k-z-index("top", 1);
+        transition: color k-transition(emphasis), background-color k-transition(emphasis);
 
         &.k-dock-indicator-middle {
             filter: none;

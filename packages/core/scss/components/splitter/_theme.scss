@@ -1,4 +1,4 @@
-@use "../../mixins/index.import.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-splitter--theme-base() {
@@ -35,9 +35,4 @@
         background-color: $kendo-splitbar-hover-bg;
     }
 
-}
-
-
-@mixin kendo-splitter--theme() {
-    @include kendo-splitter--theme-base();
 }

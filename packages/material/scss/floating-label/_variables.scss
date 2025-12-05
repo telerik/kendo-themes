@@ -37,7 +37,7 @@ $kendo-floating-label-focus-offset-y: 0px !default;
 
 /// The transition of the Floating Label.
 /// @group floating-label
-$kendo-floating-label-transition: .15s cubic-bezier( .4, 0, .2, 1 ) !default;
+$kendo-floating-label-transition: k-transition(scale-in) !default;
 
 /// The background color of the Floating Label.
 /// @group floating-label

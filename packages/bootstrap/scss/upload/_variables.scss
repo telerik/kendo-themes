@@ -1,6 +1,6 @@
 @use "../core/_index.scss" as *;
 @use "../icons/_variables.scss" as *;
-@use "../core/functions/index.import.scss" as *;
+
 
 // Upload
 
@@ -105,8 +105,12 @@ $kendo-upload-error-bg: k-color(error) !default;
 /// @group upload
 $kendo-upload-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(inverse) 13%, transparent) !default;
 
+/// The margin of the Upload list.
+/// @group upload
 $kendo-upload-files-list-margin: calc( -1 * #{k-spacing(2)} ) !default;
 
+/// The margin of the Upload.
+/// @group upload
 $kendo-upload-file-info-margin: k-spacing(4) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/upload/_variables.scss" with (

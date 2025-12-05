@@ -5,129 +5,205 @@
 /// @group list
 $kendo-list-font-family: var( --kendo-list-font-family, var(--kendo-font-family, inherit) ) !default;
 
-/// The font size of the List component.
+/// The font size of the small List.
 /// @group list
 $kendo-list-sm-font-size: var( --kendo-list-sm-font-size, var(--kendo-font-size, inherit) ) !default;
+/// The font size of the medium List.
+/// @group list
 $kendo-list-md-font-size: var( --kendo-list-md-font-size, var(--kendo-font-size, inherit) ) !default;
+/// The font size of the large List.
+/// @group list
 $kendo-list-lg-font-size: var( --kendo-list-lg-font-size, var(--kendo-font-size, inherit) ) !default;
 
-/// The line height of the List component.
+/// The line height of the small List.
 /// @group list
 $kendo-list-sm-line-height: var( --kendo-list-sm-line-height, var(--kendo-line-height, normal) ) !default;
+/// The line height of the medium List.
+/// @group list
 $kendo-list-md-line-height: var( --kendo-list-md-line-height, var(--kendo-line-height, normal) ) !default;
+/// The line height of the large List.
+/// @group list
 $kendo-list-lg-line-height: var( --kendo-list-lg-line-height, var(--kendo-line-height, normal) ) !default;
 
-/// The horizontal padding of the List header.
+/// The horizontal padding of the small List header.
 /// @group list
 $kendo-list-sm-header-padding-x: var( --kendo-list-sm-header-padding-x, #{k-spacing(1)} ) !default;
+/// The horizontal padding of the medium List header.
+/// @group list
 $kendo-list-md-header-padding-x: var( --kendo-list-md-header-padding-x, #{k-spacing(1.5)} ) !default;
+/// The horizontal padding of the large List header.
+/// @group list
 $kendo-list-lg-header-padding-x: var( --kendo-list-lg-header-padding-x, #{k-spacing(2.5)} ) !default;
 
-/// The vertical padding of the List header.
+/// The vertical padding of the small List header.
 /// @group list
 $kendo-list-sm-header-padding-y: var( --kendo-list-sm-header-padding-y, #{k-spacing(1)} ) !default;
+/// The vertical padding of the medium List header.
+/// @group list
 $kendo-list-md-header-padding-y: var( --kendo-list-md-header-padding-y, #{k-spacing(1.5)} ) !default;
+/// The vertical padding of the large List header.
+/// @group list
 $kendo-list-lg-header-padding-y: var( --kendo-list-lg-header-padding-y, #{k-spacing(2.5)} ) !default;
 
 /// The border width of the List header.
 /// @group list
 $kendo-list-header-border-width: var( --kendo-list-header-border-width, 0 ) !default;
 
-/// The font size of the List header.
+/// The font size of the small List header.
 /// @group list
 $kendo-list-sm-header-font-size: var( --kendo-list-sm-header-font-size, var(--kendo-font-size-sm, inherit) ) !default;
+/// The font size of the medium List header.
+/// @group list
 $kendo-list-md-header-font-size: var( --kendo-list-md-header-font-size, var(--kendo-font-size-sm, inherit) ) !default;
+/// The font size of the large List header.
+/// @group list
 $kendo-list-lg-header-font-size: var( --kendo-list-lg-header-font-size, var(--kendo-font-size-sm, inherit) ) !default;
 
-/// The line height of the List header.
+/// The line height of the small List header.
 /// @group list
 $kendo-list-sm-header-line-height: var( --kendo-list-sm-header-line-height, var(--kendo-line-height-lg, normal) ) !default;
+/// The line height of the medium List header.
+/// @group list
 $kendo-list-md-header-line-height: var( --kendo-list-md-header-line-height, var(--kendo-line-height-lg, normal) ) !default;
+/// The line height of the large List header.
+/// @group list
 $kendo-list-lg-header-line-height: var( --kendo-list-lg-header-line-height, var(--kendo-line-height-lg, normal) ) !default;
 
 /// The font weight of the List header.
 /// @group list
 $kendo-list-header-font-weight: var( --kendo-list-header-font-weight, var(--kendo-font-weight-semibold, 600) ) !default;
-/// The horizontal padding of the List filter, when no size is set.
+/// The horizontal padding of the small List filter.
 /// @group list
 $kendo-list-sm-filter-padding-x: var( --kendo-list-sm-filter-padding-x, #{k-spacing(1)} ) !default;
+/// The horizontal padding of the medium List filter.
+/// @group list
 $kendo-list-md-filter-padding-x: var( --kendo-list-md-filter-padding-x, #{k-spacing(1.5)} ) !default;
+/// The horizontal padding of the large List filter.
+/// @group list
 $kendo-list-lg-filter-padding-x: var( --kendo-list-lg-filter-padding-x, #{k-spacing(2.5)} ) !default;
 
-/// The vertical padding of the List filter, when no size is set.
+/// The vertical padding of the small List filter.
 /// @group list
 $kendo-list-sm-filter-padding-y: var( --kendo-list-sm-filter-padding-y, #{k-spacing(1)} ) !default;
+/// The vertical padding of the medium List filter.
+/// @group list
 $kendo-list-md-filter-padding-y: var( --kendo-list-md-filter-padding-y, #{k-spacing(1.5)} ) !default;
+/// The vertical padding of the large List filter.
+/// @group list
 $kendo-list-lg-filter-padding-y: var( --kendo-list-lg-filter-padding-y, calc(#{k-spacing(2)} + 1px) ) !default;
 
-/// The horizontal padding of the List items.
+/// The horizontal padding of the small List item.
 /// @group list
 $kendo-list-sm-item-padding-x: var( --kendo-list-sm-item-padding-x, #{k-spacing(1)} ) !default;
+/// The horizontal padding of the medium List item.
+/// @group list
 $kendo-list-md-item-padding-x: var( --kendo-list-md-item-padding-x, #{k-spacing(1.5)} ) !default;
+/// The horizontal padding of the large List item.
+/// @group list
 $kendo-list-lg-item-padding-x: var( --kendo-list-lg-item-padding-x, #{k-spacing(2.5)} ) !default;
 
-/// The vertical padding of the List items.
+/// The vertical padding of the small List item.
 /// @group list
 $kendo-list-sm-item-padding-y: var( --kendo-list-sm-item-padding-y, #{k-spacing(1)} ) !default;
+/// The vertical padding of the medium List item.
+/// @group list
 $kendo-list-md-item-padding-y: var( --kendo-list-md-item-padding-y, #{k-spacing(1.5)} ) !default;
+/// The vertical padding of the large List item.
+/// @group list
 $kendo-list-lg-item-padding-y: var( --kendo-list-lg-item-padding-y, #{k-spacing(2.5)} ) !default;
 
-/// The font size of the List items.
+/// The font size of the small List item.
 /// @group list
 $kendo-list-sm-item-font-size: var( --kendo-list-sm-item-font-size, var(--kendo-font-size, inherit) ) !default;
+/// The font size of the medium List item.
+/// @group list
 $kendo-list-md-item-font-size: var( --kendo-list-md-item-font-size, var(--kendo-font-size, inherit) ) !default;
+/// The font size of the large List item.
+/// @group list
 $kendo-list-lg-item-font-size: var( --kendo-list-lg-item-font-size, var(--kendo-font-size, inherit) ) !default;
 
-/// The line height of the List items.
+/// The line height of the small List item.
 /// @group list
 $kendo-list-sm-item-line-height: var( --kendo-list-sm-item-line-height, var(--kendo-line-height, normal) ) !default;
+/// The line height of the medium List item.
+/// @group list
 $kendo-list-md-item-line-height: var( --kendo-list-md-item-line-height, var(--kendo-line-height, normal) ) !default;
+/// The line height of the large List item.
+/// @group list
 $kendo-list-lg-item-line-height: var( --kendo-list-lg-item-line-height, var(--kendo-line-height, normal) ) !default;
 
-/// The font size of the List item group label.
+/// The font size of the small List item group label.
 /// @group list
 $kendo-list-item-group-label-sm-font-size: var( --kendo-list-item-group-label-sm-font-size, var(--kendo-font-size-xs, inherit) ) !default;
+/// The font size of the medium List item group label.
+/// @group list
 $kendo-list-item-group-label-md-font-size: var( --kendo-list-item-group-label-md-font-size, var(--kendo-font-size-xs, inherit) ) !default;
+/// The font size of the large List item group label.
+/// @group list
 $kendo-list-item-group-label-lg-font-size: var( --kendo-list-item-group-label-lg-font-size, var(--kendo-font-size-xs, inherit) ) !default;
 
-/// The horizontal padding of the List group items.
+/// The horizontal padding of the small List group item.
 /// @group list
 $kendo-list-sm-group-item-padding-x: var( --kendo-list-sm-group-item-padding-x, #{k-spacing(2)} ) !default;
+/// The horizontal padding of the medium List group item.
+/// @group list
 $kendo-list-md-group-item-padding-x: var( --kendo-list-md-group-item-padding-x, #{k-spacing(2)} ) !default;
+/// The horizontal padding of the large List group item.
+/// @group list
 $kendo-list-lg-group-item-padding-x: var( --kendo-list-lg-group-item-padding-x, #{k-spacing(2)} ) !default;
 
-/// The vertical padding of the List group items.
+/// The vertical padding of the small List group item.
 /// @group list
 $kendo-list-sm-group-item-padding-y: var( --kendo-list-sm-group-item-padding-y, #{k-spacing(1.5)} ) !default;
+/// The vertical padding of the medium List group item.
+/// @group list
 $kendo-list-md-group-item-padding-y: var( --kendo-list-md-group-item-padding-y, #{k-spacing(2)} ) !default;
+/// The vertical padding of the large List group item.
+/// @group list
 $kendo-list-lg-group-item-padding-y: var( --kendo-list-lg-group-item-padding-y, #{k-spacing(2.5)} ) !default;
 
-/// The horizontal padding of the List item group label.
+/// The horizontal padding of the small List item group label.
 /// @group list
 $kendo-list-item-group-label-sm-padding-x: var( --kendo-list-item-group-label-sm-padding-x, #{k-spacing(0.5)} ) !default;
+/// The horizontal padding of the medium List item group label.
+/// @group list
 $kendo-list-item-group-label-md-padding-x: var( --kendo-list-item-group-label-md-padding-x, #{k-spacing(1)} ) !default;
+/// The horizontal padding of the large List item group label.
+/// @group list
 $kendo-list-item-group-label-lg-padding-x: var( --kendo-list-item-group-label-lg-padding-x, #{k-spacing(1.5)} ) !default;
 
-/// The vertical padding of the List item group label.
+/// The vertical padding of the small List item group label.
 /// @group list
 $kendo-list-item-group-label-sm-padding-y: var( --kendo-list-item-group-label-sm-padding-y, #{k-spacing(0.5)} ) !default;
+/// The vertical padding of the medium List item group label.
+/// @group list
 $kendo-list-item-group-label-md-padding-y: var( --kendo-list-item-group-label-md-padding-y, #{k-spacing(1)} ) !default;
+/// The vertical padding of the large List item group label.
+/// @group list
 $kendo-list-item-group-label-lg-padding-y: var( --kendo-list-item-group-label-lg-padding-y, #{k-spacing(1.5)} ) !default;
 
 /// The border width of the List group items.
 /// @group list
 $kendo-list-group-item-border-width: var( --kendo-list-group-item-border-width, 1px 0 0 ) !default;
 
-/// The font size of the List group items.
+/// The font size of the small List group item.
 /// @group list
 $kendo-list-sm-group-item-font-size: var( --kendo-list-sm-group-item-font-size, var(--kendo-font-size-sm, inherit) ) !default;
+/// The font size of the medium List group item.
+/// @group list
 $kendo-list-md-group-item-font-size: var( --kendo-list-md-group-item-font-size, var(--kendo-font-size-sm, inherit) ) !default;
+/// The font size of the large List group item.
+/// @group list
 $kendo-list-lg-group-item-font-size: var( --kendo-list-lg-group-item-font-size, var(--kendo-font-size-sm, inherit) ) !default;
 
-/// The line height of the List group items.
+/// The line height of the small List group item.
 /// @group list
 $kendo-list-sm-group-item-line-height: var( --kendo-list-sm-group-item-line-height, var(--kendo-line-height-lg, normal) ) !default;
+/// The line height of the medium List group item.
+/// @group list
 $kendo-list-md-group-item-line-height: var( --kendo-list-md-group-item-line-height, var(--kendo-line-height-lg, normal) ) !default;
+/// The line height of the large List group item.
+/// @group list
 $kendo-list-lg-group-item-line-height: var( --kendo-list-lg-group-item-line-height, var(--kendo-line-height-lg, normal) ) !default;
 
 /// The font weight of the List group item.
