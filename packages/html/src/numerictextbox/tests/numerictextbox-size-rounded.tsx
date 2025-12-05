@@ -15,13 +15,14 @@ export default () =>(
             <span>medium</span>
             <span>large</span>
 
-            { NumericTextbox.options.rounded.map((rounded) => (
+            { NumericTextbox.options.rounded.map((rounded, rIndex) => (
                 <>
                     <span>{ rounded }</span>
-                    { NumericTextbox.options.size.map((size) => (
+                    { NumericTextbox.options.size.map((size, sIndex) => (
                         <>
                             <div>
-                                <NumericTextboxNormal size={size} rounded={rounded} value="NumericTextbox"/>
+                                <label htmlFor={`numerictextbox-${rounded}-${size}-${rIndex * 3 + sIndex}`} className="k-label">Enter number</label>
+                                <NumericTextboxNormal id={`numerictextbox-${rounded}-${size}-${rIndex * 3 + sIndex}`} size={size} rounded={rounded} value="NumericTextbox"/>
                             </div>
                         </>
                     ))}

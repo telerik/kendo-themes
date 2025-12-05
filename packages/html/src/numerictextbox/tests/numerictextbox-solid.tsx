@@ -15,35 +15,43 @@ export default () =>(
             <span>NumericTextBox RTL</span>
 
             <div>
-                <NumericTextboxNormal />
+                <label htmlFor="numerictextbox-solid-1" className="k-label">Enter number</label>
+                <NumericTextboxNormal id="numerictextbox-solid-1" />
             </div>
             <div dir="rtl">
-                <NumericTextboxNormal />
+                <label htmlFor="numerictextbox-solid-2" className="k-label">Enter number</label>
+                <NumericTextboxNormal id="numerictextbox-solid-2" />
             </div>
             <div>
-                <NumericTextboxNormal placeholder="placeholder..." />
+                <label htmlFor="numerictextbox-solid-3" className="k-label">Enter number</label>
+                <NumericTextboxNormal id="numerictextbox-solid-3" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <NumericTextboxNormal placeholder="placeholder..." />
+                <label htmlFor="numerictextbox-solid-4" className="k-label">Enter number</label>
+                <NumericTextboxNormal id="numerictextbox-solid-4" placeholder="placeholder..." />
             </div>
 
-            {[ 'normal', ...NumericTextbox.states ].map((state) => (
+            {[ 'normal', ...NumericTextbox.states ].map((state, index) => (
                 <>
                     <div>
-                        <NumericTextboxNormal { ...{ [state]: true }} value={state} />
+                        <label htmlFor={`numerictextbox-solid-${state}-${index * 2 + 5}`} className="k-label">Enter number {state !== 'normal' ? `(${state})` : ''}</label>
+                        <NumericTextboxNormal id={`numerictextbox-solid-${state}-${index * 2 + 5}`} { ...{ [state]: true }} value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <NumericTextboxNormal { ...{ [state]: true }} value={state} />
+                        <label htmlFor={`numerictextbox-solid-${state}-${index * 2 + 6}`} className="k-label">Enter number {state !== 'normal' ? `(${state})` : ''}</label>
+                        <NumericTextboxNormal id={`numerictextbox-solid-${state}-${index * 2 + 6}`} { ...{ [state]: true }} value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <NumericTextboxNormal value="invalid focus" invalid focus />
+                <label htmlFor="numerictextbox-solid-invalid-focus" className="k-label">Enter number (invalid focus)</label>
+                <NumericTextboxNormal id="numerictextbox-solid-invalid-focus" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <NumericTextboxNormal value="invalid focus" invalid focus />
+                <label htmlFor="numerictextbox-solid-invalid-focus-rtl" className="k-label">Enter number (invalid focus)</label>
+                <NumericTextboxNormal id="numerictextbox-solid-invalid-focus-rtl" value="invalid focus" invalid focus />
             </div>
         </div>
     </>

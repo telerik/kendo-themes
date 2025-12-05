@@ -110,7 +110,17 @@ export const Textbox: KendoComponent<KendoTextboxProps & KendoTextboxState & Omi
                 {separators && <InputSeparator/>}
             </>
             }
-            <InputInnerInput {...other} placeholder={placeholder} value={value} type={type} disabled={disabled} />
+            <InputInnerInput
+                {...other}
+                placeholder={placeholder}
+                value={value}
+                type={type}
+                autocomplete={autocomplete}
+                disabled={disabled}
+                readonly={readonly}
+                required={required}
+                aria-invalid={invalid ? true : undefined}
+            />
             { showValidationIcon && <InputValidationIcon
                 valid={valid}
                 invalid={invalid}

@@ -1,11 +1,11 @@
 import NumericTextbox from "../numerictextbox.spec";
-import { DropdownList } from "../../dropdownlist";
+import { Icon } from "../../icon";
 
 export const NumericTextboxPrefix = (props) => (
     <NumericTextbox
         prefix={
             <>
-                <DropdownList fillMode="flat" value="mm"></DropdownList>
+                <Icon name="calendar" />
             </>
         }
         {...props}

@@ -36,6 +36,7 @@ export const OneTimePassword: KendoComponent<KendoOneTimePasswordOptions & Kendo
     return (
         <div
             {...other}
+            role="group"
             className={classNames(
                 props.className,
                 ONETIMEPASSWORD_CLASSNAME,

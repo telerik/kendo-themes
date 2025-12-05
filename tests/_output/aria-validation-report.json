@@ -1,81 +1,208 @@
 {
-  "timestamp": "2025-12-05T13:35:02.395Z",
+  "timestamp": "2025-12-05T15:10:48.404Z",
   "summary": {
-    "filesTested": 2,
+    "filesTested": 5,
     "skipped": 0,
-    "passed": 30,
-    "violations": 4
+    "passed": 360,
+    "violations": 12
   },
   "results": [
     {
-      "filePath": "./tests/captcha/captcha.html",
-      "spec": "aria/captcha_aria.md",
-      "totalRules": 6,
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-disabled .k-input-inner",
-            "attribute": "disabled=disabled or aria-disabled=true",
-            "usage": "Attribute is rendered only when the textbox is disabled."
-          },
-          "element": "<input aria-label=\"Enter captcha code\" disabled=\"\" class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"YR890\">",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "disabled or aria-disabled",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-disabled .k-input-inner",
-            "attribute": "disabled=disabled or aria-disabled=true",
-            "usage": "Attribute is rendered only when the textbox is disabled."
-          },
-          "element": "<input aria-label=\"Enter captcha code\" disabled=\"\" class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"YR890\">",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "disabled or aria-disabled",
-          "actual": null
-        }
-      ],
-      "passed": 15,
-      "violationCount": 2
+      "filePath": "./tests/numerictextbox/numerictextbox-solid.html",
+      "spec": "aria/numerictextbox_aria.md",
+      "totalRules": 7,
+      "violations": [],
+      "passed": 72,
+      "violationCount": 0
     },
     {
-      "filePath": "./tests/captcha/captcha-rtl.html",
-      "spec": "aria/captcha_aria.md",
-      "totalRules": 6,
+      "filePath": "./tests/numerictextbox/numerictextbox-size-rounded.html",
+      "spec": "aria/numerictextbox_aria.md",
+      "totalRules": 7,
+      "violations": [],
+      "passed": 36,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/numerictextbox/numerictextbox-prefix-suffix.html",
+      "spec": "aria/numerictextbox_aria.md",
+      "totalRules": 7,
       "violations": [
         {
           "rule": {
-            "selector": ".k-disabled .k-input-inner",
-            "attribute": "disabled=disabled or aria-disabled=true",
-            "usage": "Attribute is rendered only when the textbox is disabled."
+            "selector": ".k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
           },
-          "element": "<input aria-label=\"Enter captcha code\" disabled=\"\" class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"YR890\">",
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
           "index": 0,
           "valid": false,
           "reason": "missing",
-          "expected": "disabled or aria-disabled",
+          "expected": "role",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-disabled .k-input-inner",
-            "attribute": "disabled=disabled or aria-disabled=true",
-            "usage": "Attribute is rendered only when the textbox is disabled."
+            "selector": ".k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
           },
-          "element": "<input aria-label=\"Enter captcha code\" disabled=\"\" class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"YR890\">",
-          "index": 1,
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 4,
           "valid": false,
           "reason": "missing",
-          "expected": "disabled or aria-disabled",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 12,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 16,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 20,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 24,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 28,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 32,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 36,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 40,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 44,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
           "actual": null
         }
       ],
-      "passed": 15,
-      "violationCount": 2
+      "passed": 108,
+      "violationCount": 12
+    },
+    {
+      "filePath": "./tests/numerictextbox/numerictextbox-outline.html",
+      "spec": "aria/numerictextbox_aria.md",
+      "totalRules": 7,
+      "violations": [],
+      "passed": 72,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/numerictextbox/numerictextbox-flat.html",
+      "spec": "aria/numerictextbox_aria.md",
+      "totalRules": 7,
+      "violations": [],
+      "passed": 72,
+      "violationCount": 0
     }
   ]
 }

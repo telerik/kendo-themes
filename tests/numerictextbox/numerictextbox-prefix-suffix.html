@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -20,23 +20,11 @@
         <span class="k-col-span-full k-text-center">solid</span>
         <span>normal</span>
         <div>
+            <label for="numerictextbox-prefix-solid-normal" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
-                <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">mm</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                    </span>
-                </span>
+                <span class="k-input-prefix k-input-prefix-horizontal"></span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="numerictextbox-prefix-solid-normal" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -63,8 +51,9 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-suffix-solid-normal" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="numerictextbox-suffix-solid-normal" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -95,6 +84,7 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-both-solid-normal" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-unlock" aria-hidden="true">
@@ -104,7 +94,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="numerictextbox-both-solid-normal" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -136,24 +126,12 @@
         </div>
         <span>disabled</span>
         <div>
+            <label for="numerictextbox-prefix-solid-disabled" class="k-label">Enter number (disabled)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md k-disabled">
-                <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">mm</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                    </span>
-                </span>
+                <span class="k-input-prefix k-input-prefix-horizontal"></span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
-                <span class="k-spin-button k-input-spinner">
+                <input id="numerictextbox-prefix-solid-disabled" role="spinbutton" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <span class="k-spin-button k-input-spinner" disabled="">
                     <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button" title="Increase value">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -172,13 +150,14 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-suffix-solid-disabled" class="k-label">Enter number (disabled)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md k-disabled">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="numerictextbox-suffix-solid-disabled" role="spinbutton" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
                     <span class="k-input-suffix-text">mm</span>
                 </span>
-                <span class="k-spin-button k-input-spinner">
+                <span class="k-spin-button k-input-spinner" disabled="">
                     <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button" title="Increase value">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -197,6 +176,7 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-both-solid-disabled" class="k-label">Enter number (disabled)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md k-disabled">
                 <span class="k-input-prefix k-input-prefix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-lock" aria-hidden="true">
@@ -206,12 +186,12 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="numerictextbox-both-solid-disabled" role="spinbutton" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
                     <span class="k-input-suffix-text">mm</span>
                 </span>
-                <span class="k-spin-button k-input-spinner">
+                <span class="k-spin-button k-input-spinner" disabled="">
                     <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button" title="Increase value">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -231,23 +211,11 @@
         </div>
         <span>validation</span>
         <div>
+            <label for="numerictextbox-prefix-solid-invalid" class="k-label">Enter number (invalid)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md k-invalid">
-                <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">mm</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                    </span>
-                </span>
+                <span class="k-input-prefix k-input-prefix-horizontal"></span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="numerictextbox-prefix-solid-invalid" role="spinbutton" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -279,8 +247,9 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-suffix-solid-invalid" class="k-label">Enter number (invalid)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md k-invalid">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="numerictextbox-suffix-solid-invalid" role="spinbutton" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -316,6 +285,7 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-both-solid-invalid" class="k-label">Enter number (invalid)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md k-invalid">
                 <span class="k-input-prefix k-input-prefix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-unlock" aria-hidden="true">
@@ -325,7 +295,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="numerictextbox-both-solid-invalid" role="spinbutton" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -362,23 +332,11 @@
         </div>
         <span>RTL</span>
         <div dir="rtl">
+            <label for="numerictextbox-prefix-solid-rtl" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
-                <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">mm</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                    </span>
-                </span>
+                <span class="k-input-prefix k-input-prefix-horizontal"></span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="numerictextbox-prefix-solid-rtl" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -405,8 +363,9 @@
             </span>
         </div>
         <div dir="rtl">
+            <label for="numerictextbox-suffix-solid-rtl" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="numerictextbox-suffix-solid-rtl" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -437,6 +396,7 @@
             </span>
         </div>
         <div dir="rtl">
+            <label for="numerictextbox-both-solid-rtl" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-unlock" aria-hidden="true">
@@ -446,7 +406,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="numerictextbox-both-solid-rtl" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -479,23 +439,11 @@
         <span class="k-col-span-full k-text-center">flat</span>
         <span>normal</span>
         <div>
+            <label for="numerictextbox-prefix-flat-normal" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-flat k-rounded-md">
-                <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">mm</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                    </span>
-                </span>
+                <span class="k-input-prefix k-input-prefix-horizontal"></span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="numerictextbox-prefix-flat-normal" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -522,8 +470,9 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-suffix-flat-normal" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-flat k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="numerictextbox-suffix-flat-normal" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -554,6 +503,7 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-both-flat-normal" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-flat k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-unlock" aria-hidden="true">
@@ -563,7 +513,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="numerictextbox-both-flat-normal" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -595,24 +545,12 @@
         </div>
         <span>disabled</span>
         <div>
+            <label for="numerictextbox-prefix-flat-disabled" class="k-label">Enter number (disabled)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-flat k-rounded-md k-disabled">
-                <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">mm</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                    </span>
-                </span>
+                <span class="k-input-prefix k-input-prefix-horizontal"></span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
-                <span class="k-spin-button k-input-spinner">
+                <input id="numerictextbox-prefix-flat-disabled" role="spinbutton" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <span class="k-spin-button k-input-spinner" disabled="">
                     <button class="k-spinner-increase k-button k-button-md k-button-flat k-button-flat-base k-icon-button" title="Increase value">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -631,13 +569,14 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-suffix-flat-disabled" class="k-label">Enter number (disabled)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-flat k-rounded-md k-disabled">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="numerictextbox-suffix-flat-disabled" role="spinbutton" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
                     <span class="k-input-suffix-text">mm</span>
                 </span>
-                <span class="k-spin-button k-input-spinner">
+                <span class="k-spin-button k-input-spinner" disabled="">
                     <button class="k-spinner-increase k-button k-button-md k-button-flat k-button-flat-base k-icon-button" title="Increase value">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -656,6 +595,7 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-both-flat-disabled" class="k-label">Enter number (disabled)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-flat k-rounded-md k-disabled">
                 <span class="k-input-prefix k-input-prefix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-lock" aria-hidden="true">
@@ -665,12 +605,12 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="numerictextbox-both-flat-disabled" role="spinbutton" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
                     <span class="k-input-suffix-text">mm</span>
                 </span>
-                <span class="k-spin-button k-input-spinner">
+                <span class="k-spin-button k-input-spinner" disabled="">
                     <button class="k-spinner-increase k-button k-button-md k-button-flat k-button-flat-base k-icon-button" title="Increase value">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -690,23 +630,11 @@
         </div>
         <span>validation</span>
         <div>
+            <label for="numerictextbox-prefix-flat-invalid" class="k-label">Enter number (invalid)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-flat k-rounded-md k-invalid">
-                <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">mm</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                    </span>
-                </span>
+                <span class="k-input-prefix k-input-prefix-horizontal"></span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="numerictextbox-prefix-flat-invalid" role="spinbutton" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -738,8 +666,9 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-suffix-flat-invalid" class="k-label">Enter number (invalid)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-flat k-rounded-md k-invalid">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="numerictextbox-suffix-flat-invalid" role="spinbutton" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -775,6 +704,7 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-both-flat-invalid" class="k-label">Enter number (invalid)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-flat k-rounded-md k-invalid">
                 <span class="k-input-prefix k-input-prefix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-unlock" aria-hidden="true">
@@ -784,7 +714,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="numerictextbox-both-flat-invalid" role="spinbutton" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -821,23 +751,11 @@
         </div>
         <span>RTL</span>
         <div dir="rtl">
+            <label for="numerictextbox-prefix-flat-rtl" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-flat k-rounded-md">
-                <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">mm</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                    </span>
-                </span>
+                <span class="k-input-prefix k-input-prefix-horizontal"></span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="numerictextbox-prefix-flat-rtl" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -864,8 +782,9 @@
             </span>
         </div>
         <div dir="rtl">
+            <label for="numerictextbox-suffix-flat-rtl" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-flat k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="numerictextbox-suffix-flat-rtl" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -896,6 +815,7 @@
             </span>
         </div>
         <div dir="rtl">
+            <label for="numerictextbox-both-flat-rtl" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-flat k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-unlock" aria-hidden="true">
@@ -905,7 +825,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="numerictextbox-both-flat-rtl" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -938,23 +858,11 @@
         <span class="k-col-span-full k-text-center">outline</span>
         <span>normal</span>
         <div>
+            <label for="numerictextbox-prefix-outline-normal" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-outline k-rounded-md">
-                <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">mm</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                    </span>
-                </span>
+                <span class="k-input-prefix k-input-prefix-horizontal"></span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="numerictextbox-prefix-outline-normal" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -981,8 +889,9 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-suffix-outline-normal" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-outline k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="numerictextbox-suffix-outline-normal" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1013,6 +922,7 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-both-outline-normal" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-outline k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-unlock" aria-hidden="true">
@@ -1022,7 +932,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="numerictextbox-both-outline-normal" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1054,24 +964,12 @@
         </div>
         <span>disabled</span>
         <div>
+            <label for="numerictextbox-prefix-outline-disabled" class="k-label">Enter number (disabled)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-outline k-rounded-md k-disabled">
-                <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">mm</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                    </span>
-                </span>
+                <span class="k-input-prefix k-input-prefix-horizontal"></span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
-                <span class="k-spin-button k-input-spinner">
+                <input id="numerictextbox-prefix-outline-disabled" role="spinbutton" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <span class="k-spin-button k-input-spinner" disabled="">
                     <button class="k-spinner-increase k-button k-button-md k-button-outline k-button-outline-base k-icon-button" title="Increase value">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1090,13 +988,14 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-suffix-outline-disabled" class="k-label">Enter number (disabled)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-outline k-rounded-md k-disabled">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="numerictextbox-suffix-outline-disabled" role="spinbutton" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
                     <span class="k-input-suffix-text">mm</span>
                 </span>
-                <span class="k-spin-button k-input-spinner">
+                <span class="k-spin-button k-input-spinner" disabled="">
                     <button class="k-spinner-increase k-button k-button-md k-button-outline k-button-outline-base k-icon-button" title="Increase value">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1115,6 +1014,7 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-both-outline-disabled" class="k-label">Enter number (disabled)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-outline k-rounded-md k-disabled">
                 <span class="k-input-prefix k-input-prefix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-lock" aria-hidden="true">
@@ -1124,12 +1024,12 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="numerictextbox-both-outline-disabled" role="spinbutton" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
                     <span class="k-input-suffix-text">mm</span>
                 </span>
-                <span class="k-spin-button k-input-spinner">
+                <span class="k-spin-button k-input-spinner" disabled="">
                     <button class="k-spinner-increase k-button k-button-md k-button-outline k-button-outline-base k-icon-button" title="Increase value">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1149,23 +1049,11 @@
         </div>
         <span>validation</span>
         <div>
+            <label for="numerictextbox-prefix-outline-invalid" class="k-label">Enter number (invalid)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-outline k-rounded-md k-invalid">
-                <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">mm</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                    </span>
-                </span>
+                <span class="k-input-prefix k-input-prefix-horizontal"></span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="numerictextbox-prefix-outline-invalid" role="spinbutton" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -1197,8 +1085,9 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-suffix-outline-invalid" class="k-label">Enter number (invalid)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-outline k-rounded-md k-invalid">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="numerictextbox-suffix-outline-invalid" role="spinbutton" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -1234,6 +1123,7 @@
             </span>
         </div>
         <div>
+            <label for="numerictextbox-both-outline-invalid" class="k-label">Enter number (invalid)</label>
             <span class="k-numerictextbox k-input k-input-md k-input-outline k-rounded-md k-invalid">
                 <span class="k-input-prefix k-input-prefix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-unlock" aria-hidden="true">
@@ -1243,7 +1133,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="numerictextbox-both-outline-invalid" role="spinbutton" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -1280,23 +1170,11 @@
         </div>
         <span>RTL</span>
         <div dir="rtl">
+            <label for="numerictextbox-prefix-outline-rtl" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-outline k-rounded-md">
-                <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">mm</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                    </span>
-                </span>
+                <span class="k-input-prefix k-input-prefix-horizontal"></span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="numerictextbox-prefix-outline-rtl" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1323,8 +1201,9 @@
             </span>
         </div>
         <div dir="rtl">
+            <label for="numerictextbox-suffix-outline-rtl" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-outline k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="numerictextbox-suffix-outline-rtl" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1355,6 +1234,7 @@
             </span>
         </div>
         <div dir="rtl">
+            <label for="numerictextbox-both-outline-rtl" class="k-label">Enter number</label>
             <span class="k-numerictextbox k-input k-input-md k-input-outline k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-unlock" aria-hidden="true">
@@ -1364,7 +1244,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="numerictextbox-both-outline-rtl" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

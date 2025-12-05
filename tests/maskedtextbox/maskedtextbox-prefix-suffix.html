@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -20,23 +20,17 @@
         <span class="k-col-span-full k-text-center">solid</span>
         <span>normal</span>
         <div>
+            <label for="maskedtextbox-solid-prefix" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-solid k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">Choose</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
+                    <span class="k-icon k-svg-icon k-svg-i-globe" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m106.2 314.7c-34.7 10-66.7 64.2-76.4 101.3-17.9-9.4 9.8-90.2 5.4-112.4-4.3-22.1-13-14.4-22.6-27.6-17.8-31.5.9-48.3-5.6-55.9-6.5-7.7-4.9-18.3-45-29.9s-75.9-81.9-87.8-104.1c-11.9-22.1 26.6-47 81.3-52.6 10.3-1 19.7-1.5 28.4-1.5 37.8.1 61.9 9 80 17.5 22.2 10.5 20.1 39.3 8.1 39.3s-35.8-16.6-47.2 23.2-40.1 19.9-59.1 39.3 24.4 37.1 33.6 49.3 33.1-.6 52.6 3.9c32.6 28.8 66.7 41 74.3 54.8 3.3 16.6 4.4 34.9-20 55.4"></path>
+                        </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="maskedtextbox-solid-prefix" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -47,8 +41,9 @@
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-solid-suffix" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-solid k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="maskedtextbox-solid-suffix" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -67,14 +62,15 @@
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-solid-both" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-solid k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <button value="Submit" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md">
+                    <button value="Submit" aria-label="Submit" class="k-button k-button-md k-button-outline k-button-outline-base k-rounded-md">
                         <span class="k-button-text">Button</span>
                     </button>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="maskedtextbox-solid-both" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -94,28 +90,23 @@
         </div>
         <span>disabled</span>
         <div>
+            <label for="maskedtextbox-solid-prefix-disabled" class="k-label">Phone number (disabled)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-solid k-rounded-md k-disabled">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">Choose</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
+                    <span class="k-icon k-svg-icon k-svg-i-globe" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m106.2 314.7c-34.7 10-66.7 64.2-76.4 101.3-17.9-9.4 9.8-90.2 5.4-112.4-4.3-22.1-13-14.4-22.6-27.6-17.8-31.5.9-48.3-5.6-55.9-6.5-7.7-4.9-18.3-45-29.9s-75.9-81.9-87.8-104.1c-11.9-22.1 26.6-47 81.3-52.6 10.3-1 19.7-1.5 28.4-1.5 37.8.1 61.9 9 80 17.5 22.2 10.5 20.1 39.3 8.1 39.3s-35.8-16.6-47.2 23.2-40.1 19.9-59.1 39.3 24.4 37.1 33.6 49.3 33.1-.6 52.6 3.9c32.6 28.8 66.7 41 74.3 54.8 3.3 16.6 4.4 34.9-20 55.4"></path>
+                        </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="maskedtextbox-solid-prefix-disabled" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-solid-suffix-disabled" class="k-label">Phone number (disabled)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-solid k-rounded-md k-disabled">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="maskedtextbox-solid-suffix-disabled" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-lock" aria-hidden="true">
@@ -127,14 +118,15 @@
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-solid-both-disabled" class="k-label">Phone number (disabled)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-solid k-rounded-md k-disabled">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <button value="Submit" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md">
+                    <button value="Submit" aria-label="Submit" class="k-button k-button-md k-button-outline k-button-outline-base k-rounded-md">
                         <span class="k-button-text">Button</span>
                     </button>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="maskedtextbox-solid-both-disabled" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-lock" aria-hidden="true">
@@ -147,23 +139,17 @@
         </div>
         <span>validation</span>
         <div>
+            <label for="maskedtextbox-solid-prefix-invalid" class="k-label">Phone number (invalid)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-solid k-rounded-md k-invalid">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">Choose</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
+                    <span class="k-icon k-svg-icon k-svg-i-globe" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m106.2 314.7c-34.7 10-66.7 64.2-76.4 101.3-17.9-9.4 9.8-90.2 5.4-112.4-4.3-22.1-13-14.4-22.6-27.6-17.8-31.5.9-48.3-5.6-55.9-6.5-7.7-4.9-18.3-45-29.9s-75.9-81.9-87.8-104.1c-11.9-22.1 26.6-47 81.3-52.6 10.3-1 19.7-1.5 28.4-1.5 37.8.1 61.9 9 80 17.5 22.2 10.5 20.1 39.3 8.1 39.3s-35.8-16.6-47.2 23.2-40.1 19.9-59.1 39.3 24.4 37.1 33.6 49.3 33.1-.6 52.6 3.9c32.6 28.8 66.7 41 74.3 54.8 3.3 16.6 4.4 34.9-20 55.4"></path>
+                        </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="maskedtextbox-solid-prefix-invalid" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -179,8 +165,9 @@
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-solid-suffix-invalid" class="k-label">Phone number (invalid)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-solid k-rounded-md k-invalid">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="maskedtextbox-solid-suffix-invalid" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -204,14 +191,15 @@
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-solid-both-invalid" class="k-label">Phone number (invalid)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-solid k-rounded-md k-invalid">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <button value="Submit" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md">
+                    <button value="Submit" aria-label="Submit" class="k-button k-button-md k-button-outline k-button-outline-base k-rounded-md">
                         <span class="k-button-text">Button</span>
                     </button>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="maskedtextbox-solid-both-invalid" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -236,23 +224,17 @@
         </div>
         <span>RTL</span>
         <div dir="rtl">
+            <label for="maskedtextbox-solid-prefix-rtl" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-solid k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">Choose</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
+                    <span class="k-icon k-svg-icon k-svg-i-globe" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m106.2 314.7c-34.7 10-66.7 64.2-76.4 101.3-17.9-9.4 9.8-90.2 5.4-112.4-4.3-22.1-13-14.4-22.6-27.6-17.8-31.5.9-48.3-5.6-55.9-6.5-7.7-4.9-18.3-45-29.9s-75.9-81.9-87.8-104.1c-11.9-22.1 26.6-47 81.3-52.6 10.3-1 19.7-1.5 28.4-1.5 37.8.1 61.9 9 80 17.5 22.2 10.5 20.1 39.3 8.1 39.3s-35.8-16.6-47.2 23.2-40.1 19.9-59.1 39.3 24.4 37.1 33.6 49.3 33.1-.6 52.6 3.9c32.6 28.8 66.7 41 74.3 54.8 3.3 16.6 4.4 34.9-20 55.4"></path>
+                        </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="maskedtextbox-solid-prefix-rtl" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -263,8 +245,9 @@
             </span>
         </div>
         <div dir="rtl">
+            <label for="maskedtextbox-solid-suffix-rtl" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-solid k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="maskedtextbox-solid-suffix-rtl" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -283,14 +266,15 @@
             </span>
         </div>
         <div dir="rtl">
+            <label for="maskedtextbox-solid-both-rtl" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-solid k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <button value="Submit" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md">
+                    <button value="Submit" aria-label="Submit" class="k-button k-button-md k-button-outline k-button-outline-base k-rounded-md">
                         <span class="k-button-text">Button</span>
                     </button>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="maskedtextbox-solid-both-rtl" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -311,23 +295,17 @@
         <span class="k-col-span-full k-text-center">flat</span>
         <span>normal</span>
         <div>
+            <label for="maskedtextbox-flat-prefix" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-flat k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">Choose</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
+                    <span class="k-icon k-svg-icon k-svg-i-globe" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m106.2 314.7c-34.7 10-66.7 64.2-76.4 101.3-17.9-9.4 9.8-90.2 5.4-112.4-4.3-22.1-13-14.4-22.6-27.6-17.8-31.5.9-48.3-5.6-55.9-6.5-7.7-4.9-18.3-45-29.9s-75.9-81.9-87.8-104.1c-11.9-22.1 26.6-47 81.3-52.6 10.3-1 19.7-1.5 28.4-1.5 37.8.1 61.9 9 80 17.5 22.2 10.5 20.1 39.3 8.1 39.3s-35.8-16.6-47.2 23.2-40.1 19.9-59.1 39.3 24.4 37.1 33.6 49.3 33.1-.6 52.6 3.9c32.6 28.8 66.7 41 74.3 54.8 3.3 16.6 4.4 34.9-20 55.4"></path>
+                        </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="maskedtextbox-flat-prefix" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -338,8 +316,9 @@
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-flat-suffix" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-flat k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="maskedtextbox-flat-suffix" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -358,14 +337,15 @@
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-flat-both" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-flat k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <button value="Submit" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md">
+                    <button value="Submit" aria-label="Submit" class="k-button k-button-md k-button-outline k-button-outline-base k-rounded-md">
                         <span class="k-button-text">Button</span>
                     </button>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="maskedtextbox-flat-both" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -385,28 +365,23 @@
         </div>
         <span>disabled</span>
         <div>
+            <label for="maskedtextbox-flat-prefix-disabled" class="k-label">Phone number (disabled)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-flat k-rounded-md k-disabled">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">Choose</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
+                    <span class="k-icon k-svg-icon k-svg-i-globe" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m106.2 314.7c-34.7 10-66.7 64.2-76.4 101.3-17.9-9.4 9.8-90.2 5.4-112.4-4.3-22.1-13-14.4-22.6-27.6-17.8-31.5.9-48.3-5.6-55.9-6.5-7.7-4.9-18.3-45-29.9s-75.9-81.9-87.8-104.1c-11.9-22.1 26.6-47 81.3-52.6 10.3-1 19.7-1.5 28.4-1.5 37.8.1 61.9 9 80 17.5 22.2 10.5 20.1 39.3 8.1 39.3s-35.8-16.6-47.2 23.2-40.1 19.9-59.1 39.3 24.4 37.1 33.6 49.3 33.1-.6 52.6 3.9c32.6 28.8 66.7 41 74.3 54.8 3.3 16.6 4.4 34.9-20 55.4"></path>
+                        </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="maskedtextbox-flat-prefix-disabled" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-flat-suffix-disabled" class="k-label">Phone number (disabled)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-flat k-rounded-md k-disabled">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="maskedtextbox-flat-suffix-disabled" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-lock" aria-hidden="true">
@@ -418,14 +393,15 @@
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-flat-both-disabled" class="k-label">Phone number (disabled)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-flat k-rounded-md k-disabled">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <button value="Submit" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md">
+                    <button value="Submit" aria-label="Submit" class="k-button k-button-md k-button-outline k-button-outline-base k-rounded-md">
                         <span class="k-button-text">Button</span>
                     </button>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="maskedtextbox-flat-both-disabled" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-lock" aria-hidden="true">
@@ -438,23 +414,17 @@
         </div>
         <span>validation</span>
         <div>
+            <label for="maskedtextbox-flat-prefix-invalid" class="k-label">Phone number (invalid)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-flat k-rounded-md k-invalid">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">Choose</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
+                    <span class="k-icon k-svg-icon k-svg-i-globe" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m106.2 314.7c-34.7 10-66.7 64.2-76.4 101.3-17.9-9.4 9.8-90.2 5.4-112.4-4.3-22.1-13-14.4-22.6-27.6-17.8-31.5.9-48.3-5.6-55.9-6.5-7.7-4.9-18.3-45-29.9s-75.9-81.9-87.8-104.1c-11.9-22.1 26.6-47 81.3-52.6 10.3-1 19.7-1.5 28.4-1.5 37.8.1 61.9 9 80 17.5 22.2 10.5 20.1 39.3 8.1 39.3s-35.8-16.6-47.2 23.2-40.1 19.9-59.1 39.3 24.4 37.1 33.6 49.3 33.1-.6 52.6 3.9c32.6 28.8 66.7 41 74.3 54.8 3.3 16.6 4.4 34.9-20 55.4"></path>
+                        </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="maskedtextbox-flat-prefix-invalid" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -470,8 +440,9 @@
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-flat-suffix-invalid" class="k-label">Phone number (invalid)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-flat k-rounded-md k-invalid">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="maskedtextbox-flat-suffix-invalid" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -495,14 +466,15 @@
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-flat-both-invalid" class="k-label">Phone number (invalid)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-flat k-rounded-md k-invalid">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <button value="Submit" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md">
+                    <button value="Submit" aria-label="Submit" class="k-button k-button-md k-button-outline k-button-outline-base k-rounded-md">
                         <span class="k-button-text">Button</span>
                     </button>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="maskedtextbox-flat-both-invalid" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -527,23 +499,17 @@
         </div>
         <span>RTL</span>
         <div dir="rtl">
+            <label for="maskedtextbox-flat-prefix-rtl" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-flat k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">Choose</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
+                    <span class="k-icon k-svg-icon k-svg-i-globe" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m106.2 314.7c-34.7 10-66.7 64.2-76.4 101.3-17.9-9.4 9.8-90.2 5.4-112.4-4.3-22.1-13-14.4-22.6-27.6-17.8-31.5.9-48.3-5.6-55.9-6.5-7.7-4.9-18.3-45-29.9s-75.9-81.9-87.8-104.1c-11.9-22.1 26.6-47 81.3-52.6 10.3-1 19.7-1.5 28.4-1.5 37.8.1 61.9 9 80 17.5 22.2 10.5 20.1 39.3 8.1 39.3s-35.8-16.6-47.2 23.2-40.1 19.9-59.1 39.3 24.4 37.1 33.6 49.3 33.1-.6 52.6 3.9c32.6 28.8 66.7 41 74.3 54.8 3.3 16.6 4.4 34.9-20 55.4"></path>
+                        </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="maskedtextbox-flat-prefix-rtl" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -554,8 +520,9 @@
             </span>
         </div>
         <div dir="rtl">
+            <label for="maskedtextbox-flat-suffix-rtl" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-flat k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="maskedtextbox-flat-suffix-rtl" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -574,14 +541,15 @@
             </span>
         </div>
         <div dir="rtl">
+            <label for="maskedtextbox-flat-both-rtl" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-flat k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <button value="Submit" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md">
+                    <button value="Submit" aria-label="Submit" class="k-button k-button-md k-button-outline k-button-outline-base k-rounded-md">
                         <span class="k-button-text">Button</span>
                     </button>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="maskedtextbox-flat-both-rtl" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -602,23 +570,17 @@
         <span class="k-col-span-full k-text-center">outline</span>
         <span>normal</span>
         <div>
+            <label for="maskedtextbox-outline-prefix" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-outline k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">Choose</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
+                    <span class="k-icon k-svg-icon k-svg-i-globe" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m106.2 314.7c-34.7 10-66.7 64.2-76.4 101.3-17.9-9.4 9.8-90.2 5.4-112.4-4.3-22.1-13-14.4-22.6-27.6-17.8-31.5.9-48.3-5.6-55.9-6.5-7.7-4.9-18.3-45-29.9s-75.9-81.9-87.8-104.1c-11.9-22.1 26.6-47 81.3-52.6 10.3-1 19.7-1.5 28.4-1.5 37.8.1 61.9 9 80 17.5 22.2 10.5 20.1 39.3 8.1 39.3s-35.8-16.6-47.2 23.2-40.1 19.9-59.1 39.3 24.4 37.1 33.6 49.3 33.1-.6 52.6 3.9c32.6 28.8 66.7 41 74.3 54.8 3.3 16.6 4.4 34.9-20 55.4"></path>
+                        </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="maskedtextbox-outline-prefix" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -629,8 +591,9 @@
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-outline-suffix" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-outline k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="maskedtextbox-outline-suffix" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -649,14 +612,15 @@
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-outline-both" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-outline k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <button value="Submit" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md">
+                    <button value="Submit" aria-label="Submit" class="k-button k-button-md k-button-outline k-button-outline-base k-rounded-md">
                         <span class="k-button-text">Button</span>
                     </button>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="maskedtextbox-outline-both" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -676,28 +640,23 @@
         </div>
         <span>disabled</span>
         <div>
+            <label for="maskedtextbox-outline-prefix-disabled" class="k-label">Phone number (disabled)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-outline k-rounded-md k-disabled">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">Choose</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
+                    <span class="k-icon k-svg-icon k-svg-i-globe" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m106.2 314.7c-34.7 10-66.7 64.2-76.4 101.3-17.9-9.4 9.8-90.2 5.4-112.4-4.3-22.1-13-14.4-22.6-27.6-17.8-31.5.9-48.3-5.6-55.9-6.5-7.7-4.9-18.3-45-29.9s-75.9-81.9-87.8-104.1c-11.9-22.1 26.6-47 81.3-52.6 10.3-1 19.7-1.5 28.4-1.5 37.8.1 61.9 9 80 17.5 22.2 10.5 20.1 39.3 8.1 39.3s-35.8-16.6-47.2 23.2-40.1 19.9-59.1 39.3 24.4 37.1 33.6 49.3 33.1-.6 52.6 3.9c32.6 28.8 66.7 41 74.3 54.8 3.3 16.6 4.4 34.9-20 55.4"></path>
+                        </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="maskedtextbox-outline-prefix-disabled" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-outline-suffix-disabled" class="k-label">Phone number (disabled)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-outline k-rounded-md k-disabled">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="maskedtextbox-outline-suffix-disabled" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-lock" aria-hidden="true">
@@ -709,14 +668,15 @@
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-outline-both-disabled" class="k-label">Phone number (disabled)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-outline k-rounded-md k-disabled">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <button value="Submit" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md">
+                    <button value="Submit" aria-label="Submit" class="k-button k-button-md k-button-outline k-button-outline-base k-rounded-md">
                         <span class="k-button-text">Button</span>
                     </button>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="maskedtextbox-outline-both-disabled" disabled="" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
                     <span class="k-icon k-svg-icon k-svg-i-lock" aria-hidden="true">
@@ -729,23 +689,17 @@
         </div>
         <span>validation</span>
         <div>
+            <label for="maskedtextbox-outline-prefix-invalid" class="k-label">Phone number (invalid)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-outline k-rounded-md k-invalid">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">Choose</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
+                    <span class="k-icon k-svg-icon k-svg-i-globe" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m106.2 314.7c-34.7 10-66.7 64.2-76.4 101.3-17.9-9.4 9.8-90.2 5.4-112.4-4.3-22.1-13-14.4-22.6-27.6-17.8-31.5.9-48.3-5.6-55.9-6.5-7.7-4.9-18.3-45-29.9s-75.9-81.9-87.8-104.1c-11.9-22.1 26.6-47 81.3-52.6 10.3-1 19.7-1.5 28.4-1.5 37.8.1 61.9 9 80 17.5 22.2 10.5 20.1 39.3 8.1 39.3s-35.8-16.6-47.2 23.2-40.1 19.9-59.1 39.3 24.4 37.1 33.6 49.3 33.1-.6 52.6 3.9c32.6 28.8 66.7 41 74.3 54.8 3.3 16.6 4.4 34.9-20 55.4"></path>
+                        </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="maskedtextbox-outline-prefix-invalid" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -761,8 +715,9 @@
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-outline-suffix-invalid" class="k-label">Phone number (invalid)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-outline k-rounded-md k-invalid">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="maskedtextbox-outline-suffix-invalid" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -786,14 +741,15 @@
             </span>
         </div>
         <div>
+            <label for="maskedtextbox-outline-both-invalid" class="k-label">Phone number (invalid)</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-outline k-rounded-md k-invalid">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <button value="Submit" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md">
+                    <button value="Submit" aria-label="Submit" class="k-button k-button-md k-button-outline k-button-outline-base k-rounded-md">
                         <span class="k-button-text">Button</span>
                     </button>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="maskedtextbox-outline-both-invalid" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -818,23 +774,17 @@
         </div>
         <span>RTL</span>
         <div dir="rtl">
+            <label for="maskedtextbox-outline-prefix-rtl" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-outline k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <span class="k-dropdownlist k-picker k-picker-md k-picker-flat k-rounded-md">
-                        <span class="k-input-inner">
-                            <span class="k-input-value-text">Choose</span>
-                        </span>
-                        <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 352 128 160h256z"></path>
-                                </svg>
-                            </span>
-                        </button>
+                    <span class="k-icon k-svg-icon k-svg-i-globe" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m106.2 314.7c-34.7 10-66.7 64.2-76.4 101.3-17.9-9.4 9.8-90.2 5.4-112.4-4.3-22.1-13-14.4-22.6-27.6-17.8-31.5.9-48.3-5.6-55.9-6.5-7.7-4.9-18.3-45-29.9s-75.9-81.9-87.8-104.1c-11.9-22.1 26.6-47 81.3-52.6 10.3-1 19.7-1.5 28.4-1.5 37.8.1 61.9 9 80 17.5 22.2 10.5 20.1 39.3 8.1 39.3s-35.8-16.6-47.2 23.2-40.1 19.9-59.1 39.3 24.4 37.1 33.6 49.3 33.1-.6 52.6 3.9c32.6 28.8 66.7 41 74.3 54.8 3.3 16.6 4.4 34.9-20 55.4"></path>
+                        </svg>
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input id="maskedtextbox-outline-prefix-rtl" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -845,8 +795,9 @@
             </span>
         </div>
         <div dir="rtl">
+            <label for="maskedtextbox-outline-suffix-rtl" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-outline k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input id="maskedtextbox-outline-suffix-rtl" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -865,14 +816,15 @@
             </span>
         </div>
         <div dir="rtl">
+            <label for="maskedtextbox-outline-both-rtl" class="k-label">Phone number</label>
             <span class="k-maskedtextbox k-input k-input-md k-input-outline k-rounded-md">
                 <span class="k-input-prefix k-input-prefix-horizontal">
-                    <button value="Submit" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md">
+                    <button value="Submit" aria-label="Submit" class="k-button k-button-md k-button-outline k-button-outline-base k-rounded-md">
                         <span class="k-button-text">Button</span>
                     </button>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input id="maskedtextbox-outline-both-rtl" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

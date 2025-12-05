@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-12-05T14:14:45.892Z",
+  "lastUpdated": "2025-12-05T16:10:21.190Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -699,17 +699,17 @@
       "notes": ""
     },
     "maskedtextbox": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "inputs",
-      "complianceScore": null,
+      "complianceScore": 99.2,
       "violations": {
         "critical": 0,
-        "serious": 0,
+        "serious": 1,
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "100% ARIA + 99.2% WCAG (1 color-contrast violation in prefix-suffix test with outline buttons). MaskedTextbox passes props to InputInnerInput. Changed prefix from DropdownList to Icon for simplicity. All test files have labels."
     },
     "media-player": {
       "status": "pending",
@@ -803,7 +803,7 @@
       "notes": ""
     },
     "numerictextbox": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "inputs",
       "complianceScore": null,
@@ -813,10 +813,11 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2025-12-05T15:50:44.656Z"
     },
     "onetimepassword": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "inputs",
       "complianceScore": null,
@@ -826,7 +827,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2025-12-05T16:02:04.568Z"
     },
     "orgchart": {
       "status": "pending",
@@ -1013,7 +1015,7 @@
       "notes": ""
     },
     "signature": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "inputs",
       "complianceScore": null,
@@ -1023,7 +1025,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2025-12-05T16:04:42.319Z"
     },
     "skeleton": {
       "status": "completed",
@@ -1171,20 +1174,20 @@
       "notes": ""
     },
     "textarea": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "inputs",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "100% ARIA + 100% WCAG compliant. Textarea passes props to InputInnerTextarea. All test files have labels. IconButtons have aria-label."
     },
     "textbox": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "inputs",
       "complianceScore": null,
@@ -1194,7 +1197,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2025-12-05T16:10:21.189Z"
     },
     "tilelayout": {
       "status": "pending",

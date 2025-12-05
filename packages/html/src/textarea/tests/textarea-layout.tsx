@@ -20,7 +20,8 @@ export default () =>(
             <span>Prefix/Suffix - horizontal orientation</span>
 
             <div>
-                <TextareaNormal value="Prefix & Suffix"
+                <label htmlFor="textarea-layout-vertical-horiz-affixes" className="k-label">Enter text</label>
+                <TextareaNormal id="textarea-layout-vertical-horiz-affixes" value="Prefix & Suffix"
                     prefix={
                         <>
                             <Icon icon="envelope"/>
@@ -30,16 +31,17 @@ export default () =>(
                     }
                     suffix={
                         <>
-                            <IconButton icon="volume-up" fillMode="clear" />
-                            <IconButton icon="volume-up" fillMode="clear" />
-                            <IconButton icon="volume-up" fillMode="clear" />
+                            <IconButton icon="volume-up" fillMode="clear" aria-label="Play audio" />
+                            <IconButton icon="volume-up" fillMode="clear" aria-label="Play audio" />
+                            <IconButton icon="volume-up" fillMode="clear" aria-label="Play audio" />
                         </>
                     }
                 />
             </div>
 
             <div>
-                <TextareaNormal flow="horizontal" value="Prefix & Suffix"
+                <label htmlFor="textarea-layout-horizontal-horiz-affixes" className="k-label">Enter text</label>
+                <TextareaNormal id="textarea-layout-horizontal-horiz-affixes" flow="horizontal" value="Prefix & Suffix"
                     prefix={
                         <>
                             <Icon icon="envelope"/>
@@ -49,9 +51,9 @@ export default () =>(
                     }
                     suffix={
                         <>
-                            <IconButton icon="volume-up" fillMode="clear" />
-                            <IconButton icon="volume-up" fillMode="clear" />
-                            <IconButton icon="volume-up" fillMode="clear" />
+                            <IconButton icon="volume-up" fillMode="clear" aria-label="Play audio" />
+                            <IconButton icon="volume-up" fillMode="clear" aria-label="Play audio" />
+                            <IconButton icon="volume-up" fillMode="clear" aria-label="Play audio" />
                         </>
                     }
                 />
@@ -60,7 +62,8 @@ export default () =>(
             <span>Prefix/Suffix - vertical orientation</span>
 
             <div>
-                <TextareaNormal affixesOrientation="vertical" value="Prefix & Suffix"
+                <label htmlFor="textarea-layout-vertical-vert-affixes" className="k-label">Enter text</label>
+                <TextareaNormal id="textarea-layout-vertical-vert-affixes" affixesOrientation="vertical" value="Prefix & Suffix"
                     prefix={
                         <>
                             <Icon icon="envelope"/>
@@ -70,16 +73,17 @@ export default () =>(
                     }
                     suffix={
                         <>
-                            <IconButton icon="volume-up" fillMode="clear" />
-                            <IconButton icon="volume-up" fillMode="clear" />
-                            <IconButton icon="volume-up" fillMode="clear" />
+                            <IconButton icon="volume-up" fillMode="clear" aria-label="Play audio" />
+                            <IconButton icon="volume-up" fillMode="clear" aria-label="Play audio" />
+                            <IconButton icon="volume-up" fillMode="clear" aria-label="Play audio" />
                         </>
                     }
                 />
             </div>
 
             <div>
-                <TextareaNormal affixesOrientation="vertical" flow="horizontal" value="Prefix & Suffix"
+                <label htmlFor="textarea-layout-horizontal-vert-affixes" className="k-label">Enter text</label>
+                <TextareaNormal id="textarea-layout-horizontal-vert-affixes" affixesOrientation="vertical" flow="horizontal" value="Prefix & Suffix"
                     prefix={
                         <>
                             <Icon icon="envelope"/>
@@ -89,9 +93,9 @@ export default () =>(
                     }
                     suffix={
                         <>
-                            <IconButton icon="volume-up" fillMode="clear" />
-                            <IconButton icon="volume-up" fillMode="clear" />
-                            <IconButton icon="volume-up" fillMode="clear" />
+                            <IconButton icon="volume-up" fillMode="clear" aria-label="Play audio" />
+                            <IconButton icon="volume-up" fillMode="clear" aria-label="Play audio" />
+                            <IconButton icon="volume-up" fillMode="clear" aria-label="Play audio" />
                         </>
                     }
                 />

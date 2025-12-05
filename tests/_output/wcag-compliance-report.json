@@ -1,40 +1,22 @@
 {
   "meta": {
-    "timestamp": "2025-12-05T14:14:28.418Z",
+    "timestamp": "2025-12-05T16:06:03.994Z",
     "complianceLevel": "AA",
-    "filesTesteд": 4,
+    "filesTesteд": 5,
     "wcagVersion": "2.2"
   },
   "summary": {
-    "totalViolations": 1,
-    "totalPasses": 72,
-    "avgScore": 98.675
+    "totalViolations": 0,
+    "totalPasses": 35,
+    "avgScore": 100
   },
-  "criteriaGroups": {
-    "2.5.8": {
-      "criterion": "2.5.8",
-      "level": "AA",
-      "violations": [
-        {
-          "page": "./tests/dateinput/dateinput-size-rounded.html",
-          "rule": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "impact": "serious",
-          "nodeCount": 8
-        }
-      ],
-      "affectedPages": [
-        "./tests/dateinput/dateinput-size-rounded.html"
-      ],
-      "pageCount": 1
-    }
-  },
+  "criteriaGroups": {},
   "detailedResults": [
     {
-      "filePath": "./tests/dateinput/dateinput-solid.html",
-      "timestamp": "2025-12-05T14:13:44.680Z",
+      "filePath": "./tests/textbox/textbox-solid.html",
+      "timestamp": "2025-12-05T16:05:59.167Z",
       "violations": [],
-      "filteredPageLevel": 3,
+      "filteredPageLevel": 2,
       "passes": [
         {
           "id": "aria-hidden-body",
@@ -45,20 +27,6 @@
           ]
         },
         {
-          "id": "aria-hidden-focus",
-          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "autocomplete-valid",
-          "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
-          "wcagCriteria": [
-            "1.3.5"
-          ]
-        },
-        {
           "id": "avoid-inline-spacing",
           "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
           "wcagCriteria": [
@@ -66,38 +34,10 @@
           ]
         },
         {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "color-contrast",
-          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
-          "wcagCriteria": [
-            "1.4.3"
-          ]
-        },
-        {
           "id": "document-title",
           "description": "Ensure each HTML document contains a non-empty <title> element",
           "wcagCriteria": [
             "2.4.2"
-          ]
-        },
-        {
-          "id": "duplicate-id-aria",
-          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "form-field-multiple-labels",
-          "description": "Ensure form field does not have multiple label elements",
-          "wcagCriteria": [
-            "3.3.2"
           ]
         },
         {
@@ -115,18 +55,6 @@
           ]
         },
         {
-          "id": "label-title-only",
-          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
-          "wcagCriteria": []
-        },
-        {
-          "id": "label",
-          "description": "Ensure every form element has a label",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "meta-viewport-large",
           "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
           "wcagCriteria": []
@@ -137,383 +65,16 @@
           "wcagCriteria": [
             "1.4.4"
           ]
-        },
-        {
-          "id": "nested-interactive",
-          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "region",
-          "description": "Ensure all page content is contained by landmarks",
-          "wcagCriteria": []
-        },
-        {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ]
         }
       ],
-      "incomplete": [
-        {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ],
-          "nodes": 44
-        }
-      ],
-      "inapplicable": 70
+      "incomplete": [],
+      "inapplicable": 81
     },
     {
-      "filePath": "./tests/dateinput/dateinput-size-rounded.html",
-      "timestamp": "2025-12-05T14:14:03.921Z",
-      "violations": [
-        {
-          "id": "target-size",
-          "impact": "serious",
-          "tags": [
-            "cat.sensory-and-visual-cues",
-            "wcag22aa",
-            "wcag258"
-          ],
-          "description": "Ensure touch targets have sufficient size and space",
-          "help": "All touch targets must be 24px large, or leave sufficient space",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/target-size?application=webdriverjs",
-          "nodes": [
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 30.8,
-                    "height": 20
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (30.8px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<button class=\"k-spinner-decrease k-button k-button-lg k-button-solid k-button-solid-base k-icon-button\" title=\"Decrease value\">",
-                      "target": [
-                        ".k-rounded-sm.k-input-lg.k-dateinput > .k-spin-button.k-input-spinner > .k-button-lg.k-spinner-decrease[title=\"Decrease value\"]"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<button class=\"k-spinner-increase k-button k-button-lg k-button-solid k-button-solid-base k-icon-button\" title=\"Increase value\">",
-              "target": [
-                ".k-rounded-sm.k-input-lg.k-dateinput > .k-spin-button.k-input-spinner > .k-button-lg.k-spinner-increase[title=\"Increase value\"]"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (30.8px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 30.8,
-                    "height": 20
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (30.8px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<button class=\"k-spinner-increase k-button k-button-lg k-button-solid k-button-solid-base k-icon-button\" title=\"Increase value\">",
-                      "target": [
-                        ".k-rounded-sm.k-input-lg.k-dateinput > .k-spin-button.k-input-spinner > .k-button-lg.k-spinner-increase[title=\"Increase value\"]"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<button class=\"k-spinner-decrease k-button k-button-lg k-button-solid k-button-solid-base k-icon-button\" title=\"Decrease value\">",
-              "target": [
-                ".k-rounded-sm.k-input-lg.k-dateinput > .k-spin-button.k-input-spinner > .k-button-lg.k-spinner-decrease[title=\"Decrease value\"]"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (30.8px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 30.8,
-                    "height": 20
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (30.8px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<button class=\"k-spinner-decrease k-button k-button-lg k-button-solid k-button-solid-base k-icon-button\" title=\"Decrease value\">",
-                      "target": [
-                        ".k-rounded-md.k-input-lg.k-dateinput > .k-spin-button.k-input-spinner > .k-button-lg.k-spinner-decrease[title=\"Decrease value\"]"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<button class=\"k-spinner-increase k-button k-button-lg k-button-solid k-button-solid-base k-icon-button\" title=\"Increase value\">",
-              "target": [
-                ".k-rounded-md.k-input-lg.k-dateinput > .k-spin-button.k-input-spinner > .k-button-lg.k-spinner-increase[title=\"Increase value\"]"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (30.8px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 30.8,
-                    "height": 20
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (30.8px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<button class=\"k-spinner-increase k-button k-button-lg k-button-solid k-button-solid-base k-icon-button\" title=\"Increase value\">",
-                      "target": [
-                        ".k-rounded-md.k-input-lg.k-dateinput > .k-spin-button.k-input-spinner > .k-button-lg.k-spinner-increase[title=\"Increase value\"]"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<button class=\"k-spinner-decrease k-button k-button-lg k-button-solid k-button-solid-base k-icon-button\" title=\"Decrease value\">",
-              "target": [
-                ".k-rounded-md.k-input-lg.k-dateinput > .k-spin-button.k-input-spinner > .k-button-lg.k-spinner-decrease[title=\"Decrease value\"]"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (30.8px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 30.8,
-                    "height": 20
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (30.8px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<button class=\"k-spinner-decrease k-button k-button-lg k-button-solid k-button-solid-base k-icon-button\" title=\"Decrease value\">",
-                      "target": [
-                        ".k-rounded-lg.k-input-lg.k-dateinput > .k-spin-button.k-input-spinner > .k-button-lg.k-spinner-decrease[title=\"Decrease value\"]"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<button class=\"k-spinner-increase k-button k-button-lg k-button-solid k-button-solid-base k-icon-button\" title=\"Increase value\">",
-              "target": [
-                ".k-rounded-lg.k-input-lg.k-dateinput > .k-spin-button.k-input-spinner > .k-button-lg.k-spinner-increase[title=\"Increase value\"]"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (30.8px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 30.8,
-                    "height": 20
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (30.8px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<button class=\"k-spinner-increase k-button k-button-lg k-button-solid k-button-solid-base k-icon-button\" title=\"Increase value\">",
-                      "target": [
-                        ".k-rounded-lg.k-input-lg.k-dateinput > .k-spin-button.k-input-spinner > .k-button-lg.k-spinner-increase[title=\"Increase value\"]"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<button class=\"k-spinner-decrease k-button k-button-lg k-button-solid k-button-solid-base k-icon-button\" title=\"Decrease value\">",
-              "target": [
-                ".k-rounded-lg.k-input-lg.k-dateinput > .k-spin-button.k-input-spinner > .k-button-lg.k-spinner-decrease[title=\"Decrease value\"]"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (30.8px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 30.8,
-                    "height": 20
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (30.8px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<button class=\"k-spinner-decrease k-button k-button-lg k-button-solid k-button-solid-base k-icon-button\" title=\"Decrease value\">",
-                      "target": [
-                        ".k-rounded-full.k-input-lg.k-dateinput > .k-spin-button.k-input-spinner > .k-button-lg.k-spinner-decrease[title=\"Decrease value\"]"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<button class=\"k-spinner-increase k-button k-button-lg k-button-solid k-button-solid-base k-icon-button\" title=\"Increase value\">",
-              "target": [
-                ".k-rounded-full.k-input-lg.k-dateinput > .k-spin-button.k-input-spinner > .k-button-lg.k-spinner-increase[title=\"Increase value\"]"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (30.8px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 30.8,
-                    "height": 20
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (30.8px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<button class=\"k-spinner-increase k-button k-button-lg k-button-solid k-button-solid-base k-icon-button\" title=\"Increase value\">",
-                      "target": [
-                        ".k-rounded-full.k-input-lg.k-dateinput > .k-spin-button.k-input-spinner > .k-button-lg.k-spinner-increase[title=\"Increase value\"]"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<button class=\"k-spinner-decrease k-button k-button-lg k-button-solid k-button-solid-base k-icon-button\" title=\"Decrease value\">",
-              "target": [
-                ".k-rounded-full.k-input-lg.k-dateinput > .k-spin-button.k-input-spinner > .k-button-lg.k-spinner-decrease[title=\"Decrease value\"]"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (30.8px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            }
-          ],
-          "wcagCriteria": [
-            "2.5.8"
-          ],
-          "severity": "serious"
-        }
-      ],
-      "filteredPageLevel": 3,
+      "filePath": "./tests/textbox/textbox-size-rounded.html",
+      "timestamp": "2025-12-05T16:06:02.074Z",
+      "violations": [],
+      "filteredPageLevel": 2,
       "passes": [
         {
           "id": "aria-hidden-body",
@@ -524,20 +85,6 @@
           ]
         },
         {
-          "id": "aria-hidden-focus",
-          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "autocomplete-valid",
-          "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
-          "wcagCriteria": [
-            "1.3.5"
-          ]
-        },
-        {
           "id": "avoid-inline-spacing",
           "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
           "wcagCriteria": [
@@ -545,38 +92,10 @@
           ]
         },
         {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "color-contrast",
-          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
-          "wcagCriteria": [
-            "1.4.3"
-          ]
-        },
-        {
           "id": "document-title",
           "description": "Ensure each HTML document contains a non-empty <title> element",
           "wcagCriteria": [
             "2.4.2"
-          ]
-        },
-        {
-          "id": "duplicate-id-aria",
-          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "form-field-multiple-labels",
-          "description": "Ensure form field does not have multiple label elements",
-          "wcagCriteria": [
-            "3.3.2"
           ]
         },
         {
@@ -594,18 +113,6 @@
           ]
         },
         {
-          "id": "label-title-only",
-          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
-          "wcagCriteria": []
-        },
-        {
-          "id": "label",
-          "description": "Ensure every form element has a label",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "meta-viewport-large",
           "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
           "wcagCriteria": []
@@ -616,44 +123,16 @@
           "wcagCriteria": [
             "1.4.4"
           ]
-        },
-        {
-          "id": "nested-interactive",
-          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "region",
-          "description": "Ensure all page content is contained by landmarks",
-          "wcagCriteria": []
-        },
-        {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ]
         }
       ],
-      "incomplete": [
-        {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ],
-          "nodes": 16
-        }
-      ],
-      "inapplicable": 70
+      "incomplete": [],
+      "inapplicable": 81
     },
     {
-      "filePath": "./tests/dateinput/dateinput-outline.html",
-      "timestamp": "2025-12-05T14:14:21.643Z",
+      "filePath": "./tests/textbox/textbox-prefix-suffix.html",
+      "timestamp": "2025-12-05T16:06:02.919Z",
       "violations": [],
-      "filteredPageLevel": 3,
+      "filteredPageLevel": 2,
       "passes": [
         {
           "id": "aria-hidden-body",
@@ -664,20 +143,6 @@
           ]
         },
         {
-          "id": "aria-hidden-focus",
-          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "autocomplete-valid",
-          "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
-          "wcagCriteria": [
-            "1.3.5"
-          ]
-        },
-        {
           "id": "avoid-inline-spacing",
           "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
           "wcagCriteria": [
@@ -685,38 +150,10 @@
           ]
         },
         {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "color-contrast",
-          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
-          "wcagCriteria": [
-            "1.4.3"
-          ]
-        },
-        {
           "id": "document-title",
           "description": "Ensure each HTML document contains a non-empty <title> element",
           "wcagCriteria": [
             "2.4.2"
-          ]
-        },
-        {
-          "id": "duplicate-id-aria",
-          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "form-field-multiple-labels",
-          "description": "Ensure form field does not have multiple label elements",
-          "wcagCriteria": [
-            "3.3.2"
           ]
         },
         {
@@ -734,18 +171,6 @@
           ]
         },
         {
-          "id": "label-title-only",
-          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
-          "wcagCriteria": []
-        },
-        {
-          "id": "label",
-          "description": "Ensure every form element has a label",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "meta-viewport-large",
           "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
           "wcagCriteria": []
@@ -756,44 +181,16 @@
           "wcagCriteria": [
             "1.4.4"
           ]
-        },
-        {
-          "id": "nested-interactive",
-          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "region",
-          "description": "Ensure all page content is contained by landmarks",
-          "wcagCriteria": []
-        },
-        {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ]
         }
       ],
-      "incomplete": [
-        {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ],
-          "nodes": 44
-        }
-      ],
-      "inapplicable": 70
+      "incomplete": [],
+      "inapplicable": 81
     },
     {
-      "filePath": "./tests/dateinput/dateinput-flat.html",
-      "timestamp": "2025-12-05T14:14:27.761Z",
+      "filePath": "./tests/textbox/textbox-outline.html",
+      "timestamp": "2025-12-05T16:06:03.364Z",
       "violations": [],
-      "filteredPageLevel": 3,
+      "filteredPageLevel": 2,
       "passes": [
         {
           "id": "aria-hidden-body",
@@ -804,20 +201,6 @@
           ]
         },
         {
-          "id": "aria-hidden-focus",
-          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "autocomplete-valid",
-          "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
-          "wcagCriteria": [
-            "1.3.5"
-          ]
-        },
-        {
           "id": "avoid-inline-spacing",
           "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
           "wcagCriteria": [
@@ -825,38 +208,10 @@
           ]
         },
         {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "color-contrast",
-          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
-          "wcagCriteria": [
-            "1.4.3"
-          ]
-        },
-        {
           "id": "document-title",
           "description": "Ensure each HTML document contains a non-empty <title> element",
           "wcagCriteria": [
             "2.4.2"
-          ]
-        },
-        {
-          "id": "duplicate-id-aria",
-          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "form-field-multiple-labels",
-          "description": "Ensure form field does not have multiple label elements",
-          "wcagCriteria": [
-            "3.3.2"
           ]
         },
         {
@@ -874,15 +229,61 @@
           ]
         },
         {
-          "id": "label-title-only",
-          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
           "wcagCriteria": []
         },
         {
-          "id": "label",
-          "description": "Ensure every form element has a label",
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
           "wcagCriteria": [
+            "1.4.4"
+          ]
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 81
+    },
+    {
+      "filePath": "./tests/textbox/textbox-flat.html",
+      "timestamp": "2025-12-05T16:06:03.740Z",
+      "violations": [],
+      "filteredPageLevel": 2,
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
             "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
           ]
         },
         {
@@ -896,38 +297,10 @@
           "wcagCriteria": [
             "1.4.4"
           ]
-        },
-        {
-          "id": "nested-interactive",
-          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "region",
-          "description": "Ensure all page content is contained by landmarks",
-          "wcagCriteria": []
-        },
-        {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ]
         }
       ],
-      "incomplete": [
-        {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ],
-          "nodes": 44
-        }
-      ],
-      "inapplicable": 70
+      "incomplete": [],
+      "inapplicable": 81
     }
   ]
 }

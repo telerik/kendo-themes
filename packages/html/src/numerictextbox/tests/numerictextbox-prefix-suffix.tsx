@@ -19,15 +19,18 @@ export default () =>(
 
                     <span>normal</span>
                     <div>
-                        <NumericTextboxPrefix fillMode={fillMode} value="Prefix"/>
+                        <label htmlFor={`numerictextbox-prefix-${fillMode}-normal`} className="k-label">Enter number</label>
+                        <NumericTextboxPrefix id={`numerictextbox-prefix-${fillMode}-normal`} fillMode={fillMode} value="Prefix"/>
                     </div>
 
                     <div>
-                        <NumericTextboxSuffix fillMode={fillMode} value="Suffix"/>
+                        <label htmlFor={`numerictextbox-suffix-${fillMode}-normal`} className="k-label">Enter number</label>
+                        <NumericTextboxSuffix id={`numerictextbox-suffix-${fillMode}-normal`} fillMode={fillMode} value="Suffix"/>
                     </div>
 
                     <div>
-                        <NumericTextboxNormal fillMode={fillMode} value="Prefix & Suffix"
+                        <label htmlFor={`numerictextbox-both-${fillMode}-normal`} className="k-label">Enter number</label>
+                        <NumericTextboxNormal id={`numerictextbox-both-${fillMode}-normal`} fillMode={fillMode} value="Prefix & Suffix"
                             prefix={
                                 <>
                                     <Icon icon="unlock"/>
@@ -43,15 +46,18 @@ export default () =>(
 
                     <span>disabled</span>
                     <div>
-                        <NumericTextboxPrefix fillMode={fillMode} value="Prefix" disabled/>
+                        <label htmlFor={`numerictextbox-prefix-${fillMode}-disabled`} className="k-label">Enter number (disabled)</label>
+                        <NumericTextboxPrefix id={`numerictextbox-prefix-${fillMode}-disabled`} fillMode={fillMode} value="Prefix" disabled/>
                     </div>
 
                     <div>
-                        <NumericTextboxSuffix fillMode={fillMode} value="Suffix" disabled/>
+                        <label htmlFor={`numerictextbox-suffix-${fillMode}-disabled`} className="k-label">Enter number (disabled)</label>
+                        <NumericTextboxSuffix id={`numerictextbox-suffix-${fillMode}-disabled`} fillMode={fillMode} value="Suffix" disabled/>
                     </div>
 
                     <div>
-                        <NumericTextboxNormal fillMode={fillMode} value="Prefix & Suffix" disabled
+                        <label htmlFor={`numerictextbox-both-${fillMode}-disabled`} className="k-label">Enter number (disabled)</label>
+                        <NumericTextboxNormal id={`numerictextbox-both-${fillMode}-disabled`} fillMode={fillMode} value="Prefix & Suffix" disabled
                             prefix={
                                 <>
                                     <Icon icon="lock"/>
@@ -67,15 +73,18 @@ export default () =>(
 
                     <span>validation</span>
                     <div>
-                        <NumericTextboxPrefix fillMode={fillMode} value="Prefix" invalid/>
+                        <label htmlFor={`numerictextbox-prefix-${fillMode}-invalid`} className="k-label">Enter number (invalid)</label>
+                        <NumericTextboxPrefix id={`numerictextbox-prefix-${fillMode}-invalid`} fillMode={fillMode} value="Prefix" invalid/>
                     </div>
 
                     <div>
-                        <NumericTextboxSuffix fillMode={fillMode} value="Suffix" invalid/>
+                        <label htmlFor={`numerictextbox-suffix-${fillMode}-invalid`} className="k-label">Enter number (invalid)</label>
+                        <NumericTextboxSuffix id={`numerictextbox-suffix-${fillMode}-invalid`} fillMode={fillMode} value="Suffix" invalid/>
                     </div>
 
                     <div>
-                        <NumericTextboxNormal fillMode={fillMode} value="Prefix & Suffix" invalid
+                        <label htmlFor={`numerictextbox-both-${fillMode}-invalid`} className="k-label">Enter number (invalid)</label>
+                        <NumericTextboxNormal id={`numerictextbox-both-${fillMode}-invalid`} fillMode={fillMode} value="Prefix & Suffix" invalid
                             prefix={
                                 <>
                                     <Icon icon="unlock"/>
@@ -91,15 +100,18 @@ export default () =>(
 
                     <span>RTL</span>
                     <div dir="rtl">
-                        <NumericTextboxPrefix fillMode={fillMode} value="Prefix"/>
+                        <label htmlFor={`numerictextbox-prefix-${fillMode}-rtl`} className="k-label">Enter number</label>
+                        <NumericTextboxPrefix id={`numerictextbox-prefix-${fillMode}-rtl`} fillMode={fillMode} value="Prefix"/>
                     </div>
 
                     <div dir="rtl">
-                        <NumericTextboxSuffix fillMode={fillMode} value="Suffix"/>
+                        <label htmlFor={`numerictextbox-suffix-${fillMode}-rtl`} className="k-label">Enter number</label>
+                        <NumericTextboxSuffix id={`numerictextbox-suffix-${fillMode}-rtl`} fillMode={fillMode} value="Suffix"/>
                     </div>
 
                     <div dir="rtl">
-                        <NumericTextboxNormal fillMode={fillMode} value="Prefix & Suffix"
+                        <label htmlFor={`numerictextbox-both-${fillMode}-rtl`} className="k-label">Enter number</label>
+                        <NumericTextboxNormal id={`numerictextbox-both-${fillMode}-rtl`} fillMode={fillMode} value="Prefix & Suffix"
                             prefix={
                                 <>
                                     <Icon icon="unlock"/>
