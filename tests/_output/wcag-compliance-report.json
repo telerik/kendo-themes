@@ -1,20 +1,20 @@
 {
   "meta": {
-    "timestamp": "2025-12-05T12:56:09.825Z",
+    "timestamp": "2025-12-05T13:38:10.895Z",
     "complianceLevel": "AA",
     "filesTesteд": 2,
     "wcagVersion": "2.2"
   },
   "summary": {
     "totalViolations": 0,
-    "totalPasses": 44,
+    "totalPasses": 48,
     "avgScore": 100
   },
   "criteriaGroups": {},
   "detailedResults": [
     {
-      "filePath": "./tests/switch/switch.html",
-      "timestamp": "2025-12-05T12:56:02.259Z",
+      "filePath": "./tests/captcha/captcha.html",
+      "timestamp": "2025-12-05T13:38:04.123Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -26,20 +26,8 @@
           ]
         },
         {
-          "id": "aria-allowed-role",
-          "description": "Ensure role attribute has an appropriate value for the element",
-          "wcagCriteria": []
-        },
-        {
           "id": "aria-conditional-attr",
           "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-deprecated-role",
-          "description": "Ensure elements do not use deprecated roles",
           "wcagCriteria": [
             "4.1.2"
           ]
@@ -53,29 +41,15 @@
           ]
         },
         {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
           "id": "aria-prohibited-attr",
           "description": "Ensure ARIA attributes are not prohibited for an element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-required-attr",
-          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-roles",
-          "description": "Ensure all elements with a role attribute use a valid value",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-toggle-field-name",
-          "description": "Ensure every ARIA toggle field has an accessible name",
           "wcagCriteria": [
             "4.1.2"
           ]
@@ -95,10 +69,24 @@
           ]
         },
         {
+          "id": "autocomplete-valid",
+          "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+          "wcagCriteria": [
+            "1.3.5"
+          ]
+        },
+        {
           "id": "avoid-inline-spacing",
           "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
           "wcagCriteria": [
             "1.4.1"
+          ]
+        },
+        {
+          "id": "button-name",
+          "description": "Ensure buttons have discernible text",
+          "wcagCriteria": [
+            "4.1.2"
           ]
         },
         {
@@ -116,6 +104,13 @@
           ]
         },
         {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
+          ]
+        },
+        {
           "id": "html-has-lang",
           "description": "Ensure every HTML document has a lang attribute",
           "wcagCriteria": [
@@ -127,6 +122,30 @@
           "description": "Ensure the lang attribute of the <html> element has a valid value",
           "wcagCriteria": [
             "3.1.1"
+          ]
+        },
+        {
+          "id": "image-alt",
+          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+          "wcagCriteria": [
+            "1.1.1"
+          ]
+        },
+        {
+          "id": "image-redundant-alt",
+          "description": "Ensure image alternative is not repeated as text",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
           ]
         },
         {
@@ -154,11 +173,6 @@
           "wcagCriteria": []
         },
         {
-          "id": "tabindex",
-          "description": "Ensure tabindex attribute values are not greater than 0",
-          "wcagCriteria": []
-        },
-        {
           "id": "target-size",
           "description": "Ensure touch targets have sufficient size and space",
           "wcagCriteria": [
@@ -166,21 +180,12 @@
           ]
         }
       ],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
-          "wcagCriteria": [
-            "1.4.3"
-          ],
-          "nodes": 16
-        }
-      ],
-      "inapplicable": 66
+      "incomplete": [],
+      "inapplicable": 64
     },
     {
-      "filePath": "./tests/switch/switch-size-rounded.html",
-      "timestamp": "2025-12-05T12:56:08.552Z",
+      "filePath": "./tests/captcha/captcha-rtl.html",
+      "timestamp": "2025-12-05T13:38:09.896Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -192,20 +197,8 @@
           ]
         },
         {
-          "id": "aria-allowed-role",
-          "description": "Ensure role attribute has an appropriate value for the element",
-          "wcagCriteria": []
-        },
-        {
           "id": "aria-conditional-attr",
           "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-deprecated-role",
-          "description": "Ensure elements do not use deprecated roles",
           "wcagCriteria": [
             "4.1.2"
           ]
@@ -219,29 +212,15 @@
           ]
         },
         {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
           "id": "aria-prohibited-attr",
           "description": "Ensure ARIA attributes are not prohibited for an element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-required-attr",
-          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-roles",
-          "description": "Ensure all elements with a role attribute use a valid value",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-toggle-field-name",
-          "description": "Ensure every ARIA toggle field has an accessible name",
           "wcagCriteria": [
             "4.1.2"
           ]
@@ -261,10 +240,24 @@
           ]
         },
         {
+          "id": "autocomplete-valid",
+          "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+          "wcagCriteria": [
+            "1.3.5"
+          ]
+        },
+        {
           "id": "avoid-inline-spacing",
           "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
           "wcagCriteria": [
             "1.4.1"
+          ]
+        },
+        {
+          "id": "button-name",
+          "description": "Ensure buttons have discernible text",
+          "wcagCriteria": [
+            "4.1.2"
           ]
         },
         {
@@ -282,6 +275,13 @@
           ]
         },
         {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
+          ]
+        },
+        {
           "id": "html-has-lang",
           "description": "Ensure every HTML document has a lang attribute",
           "wcagCriteria": [
@@ -293,6 +293,30 @@
           "description": "Ensure the lang attribute of the <html> element has a valid value",
           "wcagCriteria": [
             "3.1.1"
+          ]
+        },
+        {
+          "id": "image-alt",
+          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+          "wcagCriteria": [
+            "1.1.1"
+          ]
+        },
+        {
+          "id": "image-redundant-alt",
+          "description": "Ensure image alternative is not repeated as text",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
           ]
         },
         {
@@ -320,11 +344,6 @@
           "wcagCriteria": []
         },
         {
-          "id": "tabindex",
-          "description": "Ensure tabindex attribute values are not greater than 0",
-          "wcagCriteria": []
-        },
-        {
           "id": "target-size",
           "description": "Ensure touch targets have sufficient size and space",
           "wcagCriteria": [
@@ -332,17 +351,8 @@
           ]
         }
       ],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
-          "wcagCriteria": [
-            "1.4.3"
-          ],
-          "nodes": 30
-        }
-      ],
-      "inapplicable": 66
+      "incomplete": [],
+      "inapplicable": 64
     }
   ]
 }

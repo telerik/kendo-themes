@@ -92,47 +92,96 @@ function parseAriaSpec(componentName) {
 async function validateAttribute(element, rule) {
     const { attribute } = rule;
 
-    // Parse attribute (can be role=button, aria-label, etc.)
+    // Check for alternative attributes first (e.g., "aria-label or aria-labelledby")
+    if (attribute.includes(' or ')) {
+        const alternatives = attribute.split(' or ').map(a => a.trim());
+
+        for (const alt of alternatives) {
+            // Special case: nodeName check
+            if (alt.includes('nodeName=')) {
+                const tagName = await element.getTagName();
+                const expectedTag = alt.split('nodeName=')[1].trim();
+                if (tagName.toLowerCase() === expectedTag.toLowerCase()) {
+                    return { valid: true, reason: 'correct-nodename' };
+                }
+                continue; // Try next alternative
+            }
+
+            const parts = alt.split('=');
+            const attrName = parts[0].trim();
+            const expectedValue = parts.length > 1 ? parts[1].trim() : null;
+
+            try {
+                const actualValue = await element.getAttribute(attrName);
+
+                // If attribute exists
+                if (actualValue !== null) {
+                    // For boolean attributes (disabled, readonly, etc.), presence is what matters
+                    if (attrName === 'disabled' || attrName === 'readonly' || attrName === 'required') {
+                        return { valid: true, actual: actualValue, reason: 'boolean-attribute-present' };
+                    }
+
+                    // For ARIA attributes with expected values, validate the value
+                    if (expectedValue && expectedValue !== 'true/false') {
+                        if (actualValue === expectedValue || actualValue === '') {
+                            // Empty string is valid for boolean attributes
+                            return { valid: true, actual: actualValue, reason: 'alternative-match' };
+                        }
+                    } else {
+                        // Attribute exists and no specific value required
+                        return { valid: true, actual: actualValue, reason: 'alternative-present' };
+                    }
+                }
+            } catch {
+                continue; // Try next alternative
+            }
+        }
+
+        // None of the alternatives matched
+        return {
+            valid: false,
+            reason: 'missing',
+            expected: attribute.split(' or ').map(a => a.split('=')[0].trim()).join(' or '),
+            actual: null
+        };
+    }
+
+    // Parse single attribute (can be role=button, aria-label, etc.)
     const parts = attribute.split('=');
     const attrName = parts[0].trim();
     const expectedValue = parts.length > 1 ? parts[1].trim() : null;
 
     try {
+        // Special case: nodeName check
+        if (attribute.includes('nodeName=')) {
+            const tagName = await element.getTagName();
+            const expectedTag = attribute.split('nodeName=')[1].trim();
+            if (tagName.toLowerCase() === expectedTag.toLowerCase()) {
+                return { valid: true, reason: 'correct-nodename' };
+            }
+            return {
+                valid: false,
+                reason: 'incorrect-nodename',
+                expected: expectedTag,
+                actual: tagName
+            };
+        }
+
         const actualValue = await element.getAttribute(attrName);
 
         // Check if attribute exists
-        if (!actualValue) {
-            // Check for alternative attributes (e.g., "aria-label or aria-labelledby")
-            if (attribute.includes(' or ')) {
-                const alternatives = attribute.split(' or ').map(a => a.trim());
-                const hasAnyAlternative = await Promise.all(
-                    alternatives.map(async alt => {
-                        const altName = alt.split('=')[0].trim();
-                        const altValue = await element.getAttribute(altName);
-                        return Boolean(altValue);
-                    })
-                );
-
-                if (hasAnyAlternative.some(has => has)) {
-                    return { valid: true, reason: 'alternative-present' };
-                }
-            }
-
-            // Special case: nodeName check
-            if (attribute.includes('nodeName=')) {
-                const tagName = await element.getTagName();
-                const expectedTag = attribute.split('nodeName=')[1].trim();
-                if (tagName.toLowerCase() === expectedTag.toLowerCase()) {
-                    return { valid: true, reason: 'correct-nodename' };
-                }
-            }
-
+        if (actualValue === null) {
             return {
                 valid: false,
                 reason: 'missing',
                 expected: attrName,
                 actual: null
             };
+        }
+
+        // For boolean HTML attributes, presence is sufficient
+        if (attrName === 'disabled' || attrName === 'readonly' || attrName === 'required') {
+            return { valid: true, actual: actualValue };
         }
 
         // Validate value if specified

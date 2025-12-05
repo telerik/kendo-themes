@@ -1,223 +1,81 @@
 {
-  "timestamp": "2025-12-04T11:36:06.684Z",
+  "timestamp": "2025-12-05T13:35:02.395Z",
   "summary": {
     "filesTested": 2,
     "skipped": 0,
-    "passed": 22,
-    "violations": 15
+    "passed": 30,
+    "violations": 4
   },
   "results": [
     {
-      "filePath": "./tests/avatar/avatar.html",
-      "spec": "aria/avatar_aria.md",
-      "totalRules": 1,
-      "violations": [],
-      "passed": 22,
-      "violationCount": 0
-    },
-    {
-      "filePath": "./tests/avatar/avatar-size-rounded.html",
-      "spec": "aria/avatar_aria.md",
-      "totalRules": 1,
+      "filePath": "./tests/captcha/captcha.html",
+      "spec": "aria/captcha_aria.md",
+      "totalRules": 6,
       "violations": [
         {
           "rule": {
-            "selector": ".k-avatar img",
-            "attribute": "alt",
-            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+            "selector": ".k-disabled .k-input-inner",
+            "attribute": "disabled=disabled or aria-disabled=true",
+            "usage": "Attribute is rendered only when the textbox is disabled."
           },
-          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "element": "<input aria-label=\"Enter captcha code\" disabled=\"\" class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"YR890\">",
           "index": 0,
           "valid": false,
           "reason": "missing",
-          "expected": "alt",
+          "expected": "disabled or aria-disabled",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-avatar img",
-            "attribute": "alt",
-            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
+            "selector": ".k-disabled .k-input-inner",
+            "attribute": "disabled=disabled or aria-disabled=true",
+            "usage": "Attribute is rendered only when the textbox is disabled."
           },
-          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
+          "element": "<input aria-label=\"Enter captcha code\" disabled=\"\" class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"YR890\">",
           "index": 1,
           "valid": false,
           "reason": "missing",
-          "expected": "alt",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-avatar img",
-            "attribute": "alt",
-            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
-          },
-          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "alt",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-avatar img",
-            "attribute": "alt",
-            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
-          },
-          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "alt",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-avatar img",
-            "attribute": "alt",
-            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
-          },
-          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "alt",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-avatar img",
-            "attribute": "alt",
-            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
-          },
-          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "alt",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-avatar img",
-            "attribute": "alt",
-            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
-          },
-          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
-          "index": 6,
-          "valid": false,
-          "reason": "missing",
-          "expected": "alt",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-avatar img",
-            "attribute": "alt",
-            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
-          },
-          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
-          "index": 7,
-          "valid": false,
-          "reason": "missing",
-          "expected": "alt",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-avatar img",
-            "attribute": "alt",
-            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
-          },
-          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
-          "index": 8,
-          "valid": false,
-          "reason": "missing",
-          "expected": "alt",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-avatar img",
-            "attribute": "alt",
-            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
-          },
-          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
-          "index": 9,
-          "valid": false,
-          "reason": "missing",
-          "expected": "alt",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-avatar img",
-            "attribute": "alt",
-            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
-          },
-          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
-          "index": 10,
-          "valid": false,
-          "reason": "missing",
-          "expected": "alt",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-avatar img",
-            "attribute": "alt",
-            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
-          },
-          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
-          "index": 11,
-          "valid": false,
-          "reason": "missing",
-          "expected": "alt",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-avatar img",
-            "attribute": "alt",
-            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
-          },
-          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
-          "index": 12,
-          "valid": false,
-          "reason": "missing",
-          "expected": "alt",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-avatar img",
-            "attribute": "alt",
-            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
-          },
-          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
-          "index": 13,
-          "valid": false,
-          "reason": "missing",
-          "expected": "alt",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-avatar img",
-            "attribute": "alt",
-            "usage": "Assures the presence of an `alt` attribute in a nested `img` tag inside the Avatar."
-          },
-          "element": "<img src=\"/packages/html/assets/avatar.jpg\">",
-          "index": 14,
-          "valid": false,
-          "reason": "missing",
-          "expected": "alt",
+          "expected": "disabled or aria-disabled",
           "actual": null
         }
       ],
-      "passed": 0,
-      "violationCount": 15
+      "passed": 15,
+      "violationCount": 2
+    },
+    {
+      "filePath": "./tests/captcha/captcha-rtl.html",
+      "spec": "aria/captcha_aria.md",
+      "totalRules": 6,
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-disabled .k-input-inner",
+            "attribute": "disabled=disabled or aria-disabled=true",
+            "usage": "Attribute is rendered only when the textbox is disabled."
+          },
+          "element": "<input aria-label=\"Enter captcha code\" disabled=\"\" class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"YR890\">",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "disabled or aria-disabled",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-disabled .k-input-inner",
+            "attribute": "disabled=disabled or aria-disabled=true",
+            "usage": "Attribute is rendered only when the textbox is disabled."
+          },
+          "element": "<input aria-label=\"Enter captcha code\" disabled=\"\" class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"YR890\">",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "disabled or aria-disabled",
+          "actual": null
+        }
+      ],
+      "passed": 15,
+      "violationCount": 2
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-12-05T12:50:00.136Z",
+  "lastUpdated": "2025-12-05T13:38:49.710Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -135,17 +135,17 @@
       "notes": ""
     },
     "captcha": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "inputs",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "100% ARIA + WCAG compliant. Fixed Textbox to pass aria-label and disabled to InputInnerInput. Updated validator to handle boolean attributes correctly."
     },
     "card": {
       "status": "pending",
