@@ -75,12 +75,13 @@ export const Captcha: KendoComponent<KendoCaptchaProps & KendoCaptchaState & Rea
                 </div>
             </div>
             <div className="k-captcha-input k-vstack">
+                <label htmlFor="captcha-input" className="k-label">Enter the code from the image</label>
                 <Textbox
+                    id="captcha-input"
                     value={value}
                     valid={valid}
                     invalid={invalid}
                     disabled={disabled || loading === true}
-                    aria-label="Enter captcha code"
                 />
                 {valid && !loading && (
                     <span className="k-captcha-validation-message !k-text-success">

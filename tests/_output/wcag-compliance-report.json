@@ -1,20 +1,20 @@
 {
   "meta": {
-    "timestamp": "2025-12-05T13:38:10.895Z",
+    "timestamp": "2025-12-05T13:47:08.635Z",
     "complianceLevel": "AA",
     "filesTesteд": 2,
     "wcagVersion": "2.2"
   },
   "summary": {
     "totalViolations": 0,
-    "totalPasses": 48,
+    "totalPasses": 46,
     "avgScore": 100
   },
   "criteriaGroups": {},
   "detailedResults": [
     {
       "filePath": "./tests/captcha/captcha.html",
-      "timestamp": "2025-12-05T13:38:04.123Z",
+      "timestamp": "2025-12-05T13:47:01.393Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -104,13 +104,6 @@
           ]
         },
         {
-          "id": "form-field-multiple-labels",
-          "description": "Ensure form field does not have multiple label elements",
-          "wcagCriteria": [
-            "3.3.2"
-          ]
-        },
-        {
           "id": "html-has-lang",
           "description": "Ensure every HTML document has a lang attribute",
           "wcagCriteria": [
@@ -180,12 +173,37 @@
           ]
         }
       ],
-      "incomplete": [],
-      "inapplicable": 64
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "wcagCriteria": [
+            "1.4.3"
+          ],
+          "nodes": 5
+        },
+        {
+          "id": "duplicate-id-aria",
+          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
+          "wcagCriteria": [
+            "4.1.2"
+          ],
+          "nodes": 1
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
+          ],
+          "nodes": 5
+        }
+      ],
+      "inapplicable": 63
     },
     {
       "filePath": "./tests/captcha/captcha-rtl.html",
-      "timestamp": "2025-12-05T13:38:09.896Z",
+      "timestamp": "2025-12-05T13:47:07.360Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -275,13 +293,6 @@
           ]
         },
         {
-          "id": "form-field-multiple-labels",
-          "description": "Ensure form field does not have multiple label elements",
-          "wcagCriteria": [
-            "3.3.2"
-          ]
-        },
-        {
           "id": "html-has-lang",
           "description": "Ensure every HTML document has a lang attribute",
           "wcagCriteria": [
@@ -351,8 +362,33 @@
           ]
         }
       ],
-      "incomplete": [],
-      "inapplicable": 64
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "wcagCriteria": [
+            "1.4.3"
+          ],
+          "nodes": 5
+        },
+        {
+          "id": "duplicate-id-aria",
+          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
+          "wcagCriteria": [
+            "4.1.2"
+          ],
+          "nodes": 1
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
+          ],
+          "nodes": 5
+        }
+      ],
+      "inapplicable": 63
     }
   ]
 }
