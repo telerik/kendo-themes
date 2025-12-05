@@ -25,6 +25,8 @@ export type KendoListItemProps = {
     iconName?: string;
     checked?: boolean;
     showCheckbox?: boolean;
+    description?: string;
+    endContent?: React.JSX.Element;
 };
 
 export type KendoListItemState = { [K in (typeof states)[number]]?: boolean };
@@ -46,6 +48,8 @@ export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & 
         focus,
         selected,
         disabled,
+        description,
+        endContent,
         ...other
     } = props;
 
@@ -68,8 +72,16 @@ export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & 
             )}
         >
             {showCheckbox && <Checkbox checked={checked} />}
-            {showIcon && <Icon icon={iconName} />}
-            <span className="k-list-item-text">{textOrChildren}</span>
+            {(showIcon || endContent) ? (
+                <div className="k-list-item-wrapper">
+                    {showIcon && <Icon icon={iconName} />}
+                    <span className="k-list-item-text">{textOrChildren}</span>
+                    {endContent && <div className="endContent">{endContent}</div>}
+                </div>
+            ) : (
+                <span className="k-list-item-text">{textOrChildren}</span>
+            )}
+            {description && <span className="k-list-item-description">{description}</span>}
             {groupLabel && groupLabel !== '' && <div className="k-list-item-group-label">{groupLabel}</div>}
         </li>
     );
