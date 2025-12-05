@@ -1,54 +1,103 @@
 {
   "meta": {
-    "timestamp": "2025-12-04T13:32:47.697Z",
+    "timestamp": "2025-12-05T12:33:29.534Z",
     "complianceLevel": "AA",
-    "filesTesteд": 6,
+    "filesTesteд": 5,
     "wcagVersion": "2.2"
   },
   "summary": {
-    "totalViolations": 2,
-    "totalPasses": 91,
-    "avgScore": 98.08333333333333
+    "totalViolations": 0,
+    "totalPasses": 112,
+    "avgScore": 100
   },
-  "criteriaGroups": {
-    "2.5.8": {
-      "criterion": "2.5.8",
-      "level": "AA",
-      "violations": [
-        {
-          "page": "./tests/checkbox/checkbox-label-position.html",
-          "rule": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "impact": "serious",
-          "nodeCount": 6
-        },
-        {
-          "page": "./tests/checkbox/checkbox-group.html",
-          "rule": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "impact": "serious",
-          "nodeCount": 12
-        }
-      ],
-      "affectedPages": [
-        "./tests/checkbox/checkbox-label-position.html",
-        "./tests/checkbox/checkbox-group.html"
-      ],
-      "pageCount": 2
-    }
-  },
+  "criteriaGroups": {},
   "detailedResults": [
     {
-      "filePath": "./tests/checkbox/checkbox.html",
-      "timestamp": "2025-12-04T13:32:36.453Z",
+      "filePath": "./tests/chip/chip-solid.html",
+      "timestamp": "2025-12-05T12:33:18.884Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
         {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-allowed-role",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "wcagCriteria": []
+        },
+        {
+          "id": "aria-command-name",
+          "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-deprecated-role",
+          "description": "Ensure elements do not use deprecated roles",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
           "id": "aria-hidden-body",
           "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
           "wcagCriteria": [
             "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-required-attr",
+          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-roles",
+          "description": "Ensure all elements with a role attribute use a valid value",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
             "4.1.2"
           ]
         },
@@ -74,20 +123,6 @@
           ]
         },
         {
-          "id": "duplicate-id-aria",
-          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "form-field-multiple-labels",
-          "description": "Ensure form field does not have multiple label elements",
-          "wcagCriteria": [
-            "3.3.2"
-          ]
-        },
-        {
           "id": "html-has-lang",
           "description": "Ensure every HTML document has a lang attribute",
           "wcagCriteria": [
@@ -102,16 +137,16 @@
           ]
         },
         {
-          "id": "label-title-only",
-          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
-          "wcagCriteria": []
+          "id": "image-alt",
+          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+          "wcagCriteria": [
+            "1.1.1"
+          ]
         },
         {
-          "id": "label",
-          "description": "Ensure every form element has a label",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
+          "id": "image-redundant-alt",
+          "description": "Ensure image alternative is not repeated as text",
+          "wcagCriteria": []
         },
         {
           "id": "meta-viewport-large",
@@ -133,32 +168,105 @@
           ]
         },
         {
-          "id": "region",
-          "description": "Ensure all page content is contained by landmarks",
+          "id": "presentation-role-conflict",
+          "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
           "wcagCriteria": []
         },
         {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ]
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
         }
       ],
       "incomplete": [],
-      "inapplicable": 73
+      "inapplicable": 64
     },
     {
-      "filePath": "./tests/checkbox/checkbox-states.html",
-      "timestamp": "2025-12-04T13:32:40.919Z",
+      "filePath": "./tests/chip/chip-size-rounded.html",
+      "timestamp": "2025-12-05T12:33:24.152Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
         {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-allowed-role",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "wcagCriteria": []
+        },
+        {
+          "id": "aria-command-name",
+          "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-deprecated-role",
+          "description": "Ensure elements do not use deprecated roles",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
           "id": "aria-hidden-body",
           "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
           "wcagCriteria": [
             "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-required-attr",
+          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-roles",
+          "description": "Ensure all elements with a role attribute use a valid value",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
             "4.1.2"
           ]
         },
@@ -184,13 +292,6 @@
           ]
         },
         {
-          "id": "form-field-multiple-labels",
-          "description": "Ensure form field does not have multiple label elements",
-          "wcagCriteria": [
-            "3.3.2"
-          ]
-        },
-        {
           "id": "html-has-lang",
           "description": "Ensure every HTML document has a lang attribute",
           "wcagCriteria": [
@@ -205,16 +306,16 @@
           ]
         },
         {
-          "id": "label-title-only",
-          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
-          "wcagCriteria": []
+          "id": "image-alt",
+          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+          "wcagCriteria": [
+            "1.1.1"
+          ]
         },
         {
-          "id": "label",
-          "description": "Ensure every form element has a label",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
+          "id": "image-redundant-alt",
+          "description": "Ensure image alternative is not repeated as text",
+          "wcagCriteria": []
         },
         {
           "id": "meta-viewport-large",
@@ -236,32 +337,105 @@
           ]
         },
         {
-          "id": "region",
-          "description": "Ensure all page content is contained by landmarks",
+          "id": "presentation-role-conflict",
+          "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
           "wcagCriteria": []
         },
         {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ]
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
         }
       ],
       "incomplete": [],
-      "inapplicable": 74
+      "inapplicable": 64
     },
     {
-      "filePath": "./tests/checkbox/checkbox-size.html",
-      "timestamp": "2025-12-04T13:32:43.540Z",
+      "filePath": "./tests/chip/chip-outline.html",
+      "timestamp": "2025-12-05T12:33:27.109Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
         {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-allowed-role",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "wcagCriteria": []
+        },
+        {
+          "id": "aria-command-name",
+          "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-deprecated-role",
+          "description": "Ensure elements do not use deprecated roles",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
           "id": "aria-hidden-body",
           "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
           "wcagCriteria": [
             "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-required-attr",
+          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-roles",
+          "description": "Ensure all elements with a role attribute use a valid value",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
             "4.1.2"
           ]
         },
@@ -287,20 +461,6 @@
           ]
         },
         {
-          "id": "duplicate-id-aria",
-          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "form-field-multiple-labels",
-          "description": "Ensure form field does not have multiple label elements",
-          "wcagCriteria": [
-            "3.3.2"
-          ]
-        },
-        {
           "id": "html-has-lang",
           "description": "Ensure every HTML document has a lang attribute",
           "wcagCriteria": [
@@ -315,16 +475,16 @@
           ]
         },
         {
-          "id": "label-title-only",
-          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
-          "wcagCriteria": []
+          "id": "image-alt",
+          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+          "wcagCriteria": [
+            "1.1.1"
+          ]
         },
         {
-          "id": "label",
-          "description": "Ensure every form element has a label",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
+          "id": "image-redundant-alt",
+          "description": "Ensure image alternative is not repeated as text",
+          "wcagCriteria": []
         },
         {
           "id": "meta-viewport-large",
@@ -346,32 +506,98 @@
           ]
         },
         {
-          "id": "region",
-          "description": "Ensure all page content is contained by landmarks",
+          "id": "presentation-role-conflict",
+          "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
           "wcagCriteria": []
         },
         {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ]
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
         }
       ],
       "incomplete": [],
-      "inapplicable": 73
+      "inapplicable": 64
     },
     {
-      "filePath": "./tests/checkbox/checkbox-rounded.html",
-      "timestamp": "2025-12-04T13:32:44.788Z",
+      "filePath": "./tests/chip/chip-list.html",
+      "timestamp": "2025-12-05T12:33:28.273Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
         {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-allowed-role",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "wcagCriteria": []
+        },
+        {
+          "id": "aria-command-name",
+          "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-deprecated-role",
+          "description": "Ensure elements do not use deprecated roles",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
           "id": "aria-hidden-body",
           "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
           "wcagCriteria": [
             "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-required-attr",
+          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-roles",
+          "description": "Ensure all elements with a role attribute use a valid value",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
             "4.1.2"
           ]
         },
@@ -397,13 +623,6 @@
           ]
         },
         {
-          "id": "form-field-multiple-labels",
-          "description": "Ensure form field does not have multiple label elements",
-          "wcagCriteria": [
-            "3.3.2"
-          ]
-        },
-        {
           "id": "html-has-lang",
           "description": "Ensure every HTML document has a lang attribute",
           "wcagCriteria": [
@@ -415,18 +634,6 @@
           "description": "Ensure the lang attribute of the <html> element has a valid value",
           "wcagCriteria": [
             "3.1.1"
-          ]
-        },
-        {
-          "id": "label-title-only",
-          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
-          "wcagCriteria": []
-        },
-        {
-          "id": "label",
-          "description": "Ensure every form element has a label",
-          "wcagCriteria": [
-            "4.1.2"
           ]
         },
         {
@@ -452,300 +659,90 @@
           "id": "region",
           "description": "Ensure all page content is contained by landmarks",
           "wcagCriteria": []
-        },
-        {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ]
         }
       ],
       "incomplete": [],
-      "inapplicable": 74
+      "inapplicable": 68
     },
     {
-      "filePath": "./tests/checkbox/checkbox-label-position.html",
-      "timestamp": "2025-12-04T13:32:46.255Z",
-      "violations": [
-        {
-          "id": "target-size",
-          "impact": "serious",
-          "tags": [
-            "cat.sensory-and-visual-cues",
-            "wcag22aa",
-            "wcag258"
-          ],
-          "description": "Ensure touch targets have sufficient size and space",
-          "help": "All touch targets must be 24px large, or leave sufficient space",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/target-size?application=webdriverjs",
-          "nodes": [
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"vertical-after-two\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#vertical-after-two"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"vertical-after-one\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#vertical-after-one"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"vertical-after-one\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#vertical-after-one"
-                      ]
-                    },
-                    {
-                      "html": "<input id=\"vertical-after-thee\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#vertical-after-thee"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"vertical-after-two\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#vertical-after-two"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"vertical-after-two\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#vertical-after-two"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"vertical-after-thee\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#vertical-after-thee"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"horizontal-after-two\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#horizontal-after-two"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"horizontal-after-one\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#horizontal-after-one"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"horizontal-after-one\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#horizontal-after-one"
-                      ]
-                    },
-                    {
-                      "html": "<input id=\"horizontal-after-three\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#horizontal-after-three"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"horizontal-after-two\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#horizontal-after-two"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"horizontal-after-two\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#horizontal-after-two"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"horizontal-after-three\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#horizontal-after-three"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            }
-          ],
-          "wcagCriteria": [
-            "2.5.8"
-          ],
-          "severity": "serious"
-        }
-      ],
+      "filePath": "./tests/chip/chip-list-size.html",
+      "timestamp": "2025-12-05T12:33:29.226Z",
+      "violations": [],
       "filteredPageLevel": 3,
       "passes": [
         {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-allowed-role",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "wcagCriteria": []
+        },
+        {
+          "id": "aria-command-name",
+          "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-deprecated-role",
+          "description": "Ensure elements do not use deprecated roles",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
           "id": "aria-hidden-body",
           "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
           "wcagCriteria": [
             "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-required-attr",
+          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-roles",
+          "description": "Ensure all elements with a role attribute use a valid value",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
             "4.1.2"
           ]
         },
@@ -771,20 +768,6 @@
           ]
         },
         {
-          "id": "duplicate-id-aria",
-          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "form-field-multiple-labels",
-          "description": "Ensure form field does not have multiple label elements",
-          "wcagCriteria": [
-            "3.3.2"
-          ]
-        },
-        {
           "id": "html-has-lang",
           "description": "Ensure every HTML document has a lang attribute",
           "wcagCriteria": [
@@ -796,679 +779,6 @@
           "description": "Ensure the lang attribute of the <html> element has a valid value",
           "wcagCriteria": [
             "3.1.1"
-          ]
-        },
-        {
-          "id": "label-title-only",
-          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
-          "wcagCriteria": []
-        },
-        {
-          "id": "label",
-          "description": "Ensure every form element has a label",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "list",
-          "description": "Ensure that lists are structured correctly",
-          "wcagCriteria": [
-            "1.3.1"
-          ]
-        },
-        {
-          "id": "listitem",
-          "description": "Ensure <li> elements are used semantically",
-          "wcagCriteria": [
-            "1.3.1"
-          ]
-        },
-        {
-          "id": "meta-viewport-large",
-          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
-          "wcagCriteria": []
-        },
-        {
-          "id": "meta-viewport",
-          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
-          "wcagCriteria": [
-            "1.4.4"
-          ]
-        },
-        {
-          "id": "nested-interactive",
-          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "region",
-          "description": "Ensure all page content is contained by landmarks",
-          "wcagCriteria": []
-        },
-        {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ]
-        }
-      ],
-      "incomplete": [],
-      "inapplicable": 71
-    },
-    {
-      "filePath": "./tests/checkbox/checkbox-group.html",
-      "timestamp": "2025-12-04T13:32:47.380Z",
-      "violations": [
-        {
-          "id": "target-size",
-          "impact": "serious",
-          "tags": [
-            "cat.sensory-and-visual-cues",
-            "wcag22aa",
-            "wcag258"
-          ],
-          "description": "Ensure touch targets have sufficient size and space",
-          "help": "All touch targets must be 24px large, or leave sufficient space",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/target-size?application=webdriverjs",
-          "nodes": [
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"chk-grp-2\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#chk-grp-2"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"chk-grp-1\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#chk-grp-1"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"chk-grp-1\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#chk-grp-1"
-                      ]
-                    },
-                    {
-                      "html": "<input id=\"chk-grp-3\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#chk-grp-3"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"chk-grp-2\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#chk-grp-2"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"chk-grp-2\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#chk-grp-2"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"chk-grp-3\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#chk-grp-3"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"ch2-vert\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#ch2-vert"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"ch1-vert\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#ch1-vert"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"ch1-vert\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#ch1-vert"
-                      ]
-                    },
-                    {
-                      "html": "<input id=\"ch3-vert\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#ch3-vert"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"ch2-vert\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#ch2-vert"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"ch2-vert\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#ch2-vert"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"ch3-vert\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#ch3-vert"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"chk-grp-h-2\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#chk-grp-h-2"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"chk-grp-h-1\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#chk-grp-h-1"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"chk-grp-h-1\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#chk-grp-h-1"
-                      ]
-                    },
-                    {
-                      "html": "<input id=\"chk-grp-h-3\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#chk-grp-h-3"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"chk-grp-h-2\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#chk-grp-h-2"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"chk-grp-h-2\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#chk-grp-h-2"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"chk-grp-h-3\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#chk-grp-h-3"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"ch2-hor\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#ch2-hor"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"ch1-hor\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#ch1-hor"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"ch1-hor\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#ch1-hor"
-                      ]
-                    },
-                    {
-                      "html": "<input id=\"ch3-hor\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#ch3-hor"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"ch2-hor\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#ch2-hor"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "minSize": 24,
-                    "width": 13,
-                    "height": 13
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "Target has insufficient size (13px by 13px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 16,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<input id=\"ch2-hor\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-                      "target": [
-                        "#ch2-hor"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<input id=\"ch3-hor\" class=\"k-checkbox k-checkbox-md k-rounded-md\" type=\"checkbox\">",
-              "target": [
-                "#ch3-hor"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (13px by 13px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            }
-          ],
-          "wcagCriteria": [
-            "2.5.8"
-          ],
-          "severity": "serious"
-        }
-      ],
-      "filteredPageLevel": 3,
-      "passes": [
-        {
-          "id": "aria-hidden-body",
-          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
-          "wcagCriteria": [
-            "1.3.1",
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "avoid-inline-spacing",
-          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-          "wcagCriteria": [
-            "1.4.1"
-          ]
-        },
-        {
-          "id": "color-contrast",
-          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
-          "wcagCriteria": [
-            "1.4.3"
-          ]
-        },
-        {
-          "id": "document-title",
-          "description": "Ensure each HTML document contains a non-empty <title> element",
-          "wcagCriteria": [
-            "2.4.2"
-          ]
-        },
-        {
-          "id": "duplicate-id-aria",
-          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "form-field-multiple-labels",
-          "description": "Ensure form field does not have multiple label elements",
-          "wcagCriteria": [
-            "3.3.2"
-          ]
-        },
-        {
-          "id": "html-has-lang",
-          "description": "Ensure every HTML document has a lang attribute",
-          "wcagCriteria": [
-            "3.1.1"
-          ]
-        },
-        {
-          "id": "html-lang-valid",
-          "description": "Ensure the lang attribute of the <html> element has a valid value",
-          "wcagCriteria": [
-            "3.1.1"
-          ]
-        },
-        {
-          "id": "label-title-only",
-          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
-          "wcagCriteria": []
-        },
-        {
-          "id": "label",
-          "description": "Ensure every form element has a label",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "list",
-          "description": "Ensure that lists are structured correctly",
-          "wcagCriteria": [
-            "1.3.1"
-          ]
-        },
-        {
-          "id": "listitem",
-          "description": "Ensure <li> elements are used semantically",
-          "wcagCriteria": [
-            "1.3.1"
           ]
         },
         {
@@ -1497,7 +807,7 @@
         }
       ],
       "incomplete": [],
-      "inapplicable": 71
+      "inapplicable": 68
     }
   ]
 }
