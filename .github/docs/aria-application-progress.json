@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-12-05T12:45:08.552Z",
+  "lastUpdated": "2025-12-05T12:50:00.136Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -973,7 +973,7 @@
       "notes": ""
     },
     "rating": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "simple",
       "complianceScore": null,
@@ -983,7 +983,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2025-12-05T12:50:00.084Z"
     },
     "sankey": {
       "status": "pending",
@@ -1130,7 +1131,7 @@
       "notes": ""
     },
     "switch": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "simple",
       "complianceScore": null,
@@ -1140,7 +1141,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2025-12-05T12:50:00.135Z"
     },
     "tabstrip": {
       "status": "pending",
