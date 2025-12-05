@@ -1,5 +1,5 @@
 import { classNames, optionClassNames, Size } from '../misc';
-import { ListItem, ListGroup, ListContent } from '../list';
+import { ListItem, ListItemNew, ListGroup, ListContent } from '../list';
 import { NoData } from '../nodata';
 
 import { KendoComponent } from '../_types/component';
@@ -87,8 +87,9 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
 
                 listGroup = <ListGroup label={listHeader} virtualization={virtualization}>{listChildren}</ListGroup>;
 
-            } else if ( child.type === ListItem ) {
-                listChildren.push( <ListItem key={`${child.type}-${index}`} {...child.props} /> );
+            } else if ( child.type === ListItem || child.type === ListItemNew ) {
+                const ItemComponent = child.type === ListItemNew ? ListItemNew : ListItem;
+                listChildren.push( <ItemComponent key={`${child.type}-${index}`} {...child.props} /> );
                 listContent = <ListContent virtualization={virtualization}>{listChildren}</ListContent>;
                 screenReaders && (listNoData = <NoData className="k-sr-only">{listChildren.length} items found.</NoData>);
             }
