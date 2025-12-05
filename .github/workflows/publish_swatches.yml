@@ -7,26 +7,27 @@ on:
   workflow_dispatch:
     inputs:
       ref:
-        description: 'Tag or branch to publish'
+        description: "Tag or branch to publish"
         required: true
-        default: 'master'
+        default: "master"
 
   workflow_run:
     workflows:
       - "Publish to npm"
+    branches:
+      - master
     types:
       - completed
 
 jobs:
-
   publish:
-    runs-on: 'ubuntu-latest'
+    runs-on: "ubuntu-latest"
     if: ${{ github.event.inputs.ref || github.event.workflow_run.conclusion == 'success' }}
 
     permissions:
-        id-token: write # Required by Akeyless
-        contents: read
-        packages: read
+      id-token: write # Required by Akeyless
+      contents: read
+      packages: read
 
     steps:
       - name: Import Secrets
@@ -61,7 +62,7 @@ jobs:
 
       - name: Build themes for dist
         run: |
-            npm run sass:dist
+          npm run sass:dist
 
       - name: Checkout artifact repository
         uses: actions/checkout@v5
