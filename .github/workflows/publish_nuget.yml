@@ -5,7 +5,6 @@ on:
   workflow_run:
     workflows:
       - "Publish to npm"
-      - "Publish to npm (dev)"
     branches:
       - master
       - develop
@@ -17,15 +16,14 @@ env:
   NUGET_FEED: "https://nuget.pkg.github.com/telerik/index.json"
 
 jobs:
-
   nuget-publish:
     runs-on: ubuntu-22.04
     environment: upload
 
     permissions:
-        id-token: write # Required by Akeyless
-        contents: read
-        packages: read
+      id-token: write # Required by Akeyless
+      contents: read
+      packages: read
 
     steps:
       - name: Import Secrets
