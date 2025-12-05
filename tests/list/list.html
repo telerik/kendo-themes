@@ -15,13 +15,58 @@
         .k-virtual-list .k-list-item {
             position: relative;
         }
+        .k-list .k-list-item {
+            align-items: flex-start;
+        }
+        .k-list-item-text {
+            flex: 1;
+            text-overflow: ellipsis;
+            min-width: 0;
+            overflow: hidden;
+        }
+        .k-list-item-text:has(+ .k-icon) {
+            padding-inline-end: calc(var(--icon-offset) + (4px + 8px));
+            overflow: hidden;
+        }
+        .k-list:has(.k-list-item>.k-icon) {
+            --icon-offset: 16px;
+        }
+        .k-list .k-list-item:has(>.k-icon) {
+            padding-inline-start: 8px;
+        }
+        .k-list .k-list-item {
+            padding-inline-start: calc(var(--icon-offset) + (4px + 8px));
+            flex-wrap: wrap;
+        }
+        .k-list .k-list-item:has(>.k-icon) .k-list-item-description {
+            padding-inline-start: calc(var(--icon-offset) + 4px);
+        }
+        .k-list .k-list-item .k-list-item-text {
+            /*  white-space: nowrap; */
+        }
+        .k-list .k-list-item-description {
+            flex-basis: 100%;
+            font-size: 12px;
+            color: gray;
+        }
+        .k-list-group-item {
+            border-top: 0;
+        }
+        .k-virtual-list .k-list-item,
+        .k-virtual-list .k-list-optionlabel,
+        .k-virtual-list .k-list-group-item,
+        .k-virtual-content .k-list-item,
+        .k-virtual-content .k-list-optionlabel,
+        .k-virtual-content .k-list-group-item {
+            position: static;
+        }
 
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-4">
         <span>Static list</span>
+        <span>Grouped list</span>
         <span>Virtual list</span>
-        <span>Static list (rtl)</span>
-        <span>Virtual list (rtl)</span>
+        <span>Virtual Grouped list</span>
         <section>
             <div class="k-list k-list-md">
                 <div class="k-list-content">
@@ -29,20 +74,157 @@
                         <li class="k-list-item">
                             <span class="k-list-item-text">List item</span>
                         </li>
-                        <li class="k-list-item k-hover">
-                            <span class="k-list-item-text">Hover</span>
+                        <li class="k-list-item">
+                            <span class="k-icon k-svg-icon k-svg-i-gear">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="m462.7 317.9-41.5-31.4c1.8-9.9 2.8-20.1 2.8-30.5s-1-20.6-2.8-30.5l41.5-31.4c6.4-4.9 8.2-13.8 4.2-20.8L433 114.6c-4-7-12.6-9.9-20.1-6.7l-48 20.2c-15.4-13.2-33.3-23.6-52.8-30.5L305.8 46c-1-8-7.8-14-15.9-14h-67.8c-8.1 0-14.9 6-15.9 14l-6.5 51.6c-19.5 6.9-37.4 17.3-52.8 30.5l-48-20.2c-7.4-3.1-16-.2-20.1 6.7l-33.9 58.7c-4 7-2.2 15.9 4.2 20.8l41.5 31.4C89 235.4 88 245.6 88 256s1 20.6 2.8 30.5l-41.5 31.4c-6.4 4.9-8.2 13.8-4.2 20.8L79 397.4c4 7 12.6 9.9 20.1 6.7l48-20.2c15.4 13.2 33.3 23.6 52.8 30.5l6.5 51.6c1 8 7.8 14 15.9 14h67.8c8.1 0 14.9-6 15.9-14l6.5-51.6c19.5-6.9 37.4-17.3 52.8-30.5l48 20.2c7.4 3.1 16 .2 20.1-6.7l33.9-58.7c3.7-7 1.9-15.9-4.6-20.8M256 340c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
+                                </svg>
+                            </span>
+                            <span class="k-list-item-text">List item with icon</span>
                         </li>
-                        <li class="k-list-item k-focus">
-                            <span class="k-list-item-text">Focus</span>
+                        <li class="k-list-item">
+                            <span class="k-icon k-svg-icon k-svg-i-gear">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="m462.7 317.9-41.5-31.4c1.8-9.9 2.8-20.1 2.8-30.5s-1-20.6-2.8-30.5l41.5-31.4c6.4-4.9 8.2-13.8 4.2-20.8L433 114.6c-4-7-12.6-9.9-20.1-6.7l-48 20.2c-15.4-13.2-33.3-23.6-52.8-30.5L305.8 46c-1-8-7.8-14-15.9-14h-67.8c-8.1 0-14.9 6-15.9 14l-6.5 51.6c-19.5 6.9-37.4 17.3-52.8 30.5l-48-20.2c-7.4-3.1-16-.2-20.1 6.7l-33.9 58.7c-4 7-2.2 15.9 4.2 20.8l41.5 31.4C89 235.4 88 245.6 88 256s1 20.6 2.8 30.5l-41.5 31.4c-6.4 4.9-8.2 13.8-4.2 20.8L79 397.4c4 7 12.6 9.9 20.1 6.7l48-20.2c15.4 13.2 33.3 23.6 52.8 30.5l6.5 51.6c1 8 7.8 14 15.9 14h67.8c8.1 0 14.9-6 15.9-14l6.5-51.6c19.5-6.9 37.4-17.3 52.8-30.5l48 20.2c7.4 3.1 16 .2 20.1-6.7l33.9-58.7c3.7-7 1.9-15.9-4.6-20.8M256 340c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
+                                </svg>
+                            </span>
+                            <span class="k-list-item-text">List item with looooooooooooooooooo g icon</span>
                         </li>
-                        <li class="k-list-item k-selected">
-                            <span class="k-list-item-text">Selected</span>
+                        <li class="k-list-item">
+                            <span class="k-icon k-svg-icon k-svg-i-gear">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="m462.7 317.9-41.5-31.4c1.8-9.9 2.8-20.1 2.8-30.5s-1-20.6-2.8-30.5l41.5-31.4c6.4-4.9 8.2-13.8 4.2-20.8L433 114.6c-4-7-12.6-9.9-20.1-6.7l-48 20.2c-15.4-13.2-33.3-23.6-52.8-30.5L305.8 46c-1-8-7.8-14-15.9-14h-67.8c-8.1 0-14.9 6-15.9 14l-6.5 51.6c-19.5 6.9-37.4 17.3-52.8 30.5l-48-20.2c-7.4-3.1-16-.2-20.1 6.7l-33.9 58.7c-4 7-2.2 15.9 4.2 20.8l41.5 31.4C89 235.4 88 245.6 88 256s1 20.6 2.8 30.5l-41.5 31.4c-6.4 4.9-8.2 13.8-4.2 20.8L79 397.4c4 7 12.6 9.9 20.1 6.7l48-20.2c15.4 13.2 33.3 23.6 52.8 30.5l6.5 51.6c1 8 7.8 14 15.9 14h67.8c8.1 0 14.9-6 15.9-14l6.5-51.6c19.5-6.9 37.4-17.3 52.8-30.5l48 20.2c7.4 3.1 16 .2 20.1-6.7l33.9-58.7c3.7-7 1.9-15.9-4.6-20.8M256 340c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
+                                </svg>
+                            </span>
+                            <span class="k-list-item-text">Icon + description</span>
+                            <span class="k-list-item-description">Long long long description</span>
                         </li>
-                        <li class="k-list-item k-hover k-selected">
-                            <span class="k-list-item-text">Hover selected</span>
+                        <li class="k-list-item">
+                            <span class="k-icon k-svg-icon k-svg-i-gear">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="m462.7 317.9-41.5-31.4c1.8-9.9 2.8-20.1 2.8-30.5s-1-20.6-2.8-30.5l41.5-31.4c6.4-4.9 8.2-13.8 4.2-20.8L433 114.6c-4-7-12.6-9.9-20.1-6.7l-48 20.2c-15.4-13.2-33.3-23.6-52.8-30.5L305.8 46c-1-8-7.8-14-15.9-14h-67.8c-8.1 0-14.9 6-15.9 14l-6.5 51.6c-19.5 6.9-37.4 17.3-52.8 30.5l-48-20.2c-7.4-3.1-16-.2-20.1 6.7l-33.9 58.7c-4 7-2.2 15.9 4.2 20.8l41.5 31.4C89 235.4 88 245.6 88 256s1 20.6 2.8 30.5l-41.5 31.4c-6.4 4.9-8.2 13.8-4.2 20.8L79 397.4c4 7 12.6 9.9 20.1 6.7l48-20.2c15.4 13.2 33.3 23.6 52.8 30.5l6.5 51.6c1 8 7.8 14 15.9 14h67.8c8.1 0 14.9-6 15.9-14l6.5-51.6c19.5-6.9 37.4-17.3 52.8-30.5l48 20.2c7.4 3.1 16 .2 20.1-6.7l33.9-58.7c3.7-7 1.9-15.9-4.6-20.8M256 340c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
+                                </svg>
+                            </span>
+                            <span class="k-list-item-text">Icon + loooooooooooooooooong description</span>
+                            <span class="k-list-item-description">Long long long description</span>
                         </li>
-                        <li class="k-list-item k-disabled">
-                            <span class="k-list-item-text">Disabled</span>
+                        <li class="k-list-item">
+                            <span class="k-icon k-svg-icon k-svg-i-gear">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="m462.7 317.9-41.5-31.4c1.8-9.9 2.8-20.1 2.8-30.5s-1-20.6-2.8-30.5l41.5-31.4c6.4-4.9 8.2-13.8 4.2-20.8L433 114.6c-4-7-12.6-9.9-20.1-6.7l-48 20.2c-15.4-13.2-33.3-23.6-52.8-30.5L305.8 46c-1-8-7.8-14-15.9-14h-67.8c-8.1 0-14.9 6-15.9 14l-6.5 51.6c-19.5 6.9-37.4 17.3-52.8 30.5l-48-20.2c-7.4-3.1-16-.2-20.1 6.7l-33.9 58.7c-4 7-2.2 15.9 4.2 20.8l41.5 31.4C89 235.4 88 245.6 88 256s1 20.6 2.8 30.5l-41.5 31.4c-6.4 4.9-8.2 13.8-4.2 20.8L79 397.4c4 7 12.6 9.9 20.1 6.7l48-20.2c15.4 13.2 33.3 23.6 52.8 30.5l6.5 51.6c1 8 7.8 14 15.9 14h67.8c8.1 0 14.9-6 15.9-14l6.5-51.6c19.5-6.9 37.4-17.3 52.8-30.5l48 20.2c7.4 3.1 16 .2 20.1-6.7l33.9-58.7c3.7-7 1.9-15.9-4.6-20.8M256 340c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
+                                </svg>
+                            </span>
+                            <span class="k-list-item-text">Item with icons and long long description</span>
+                            <span class="k-icon k-svg-icon k-svg-i-star">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                </svg>
+                            </span>
+                            <span class="k-list-item-description">Long long long description</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item with coooooooooooontent</span>
+                            <div class="endContent">
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <span class="k-icon k-svg-icon k-svg-i-star">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                    </svg>
+                                </span>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-icon k-svg-icon k-svg-i-gear">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="m462.7 317.9-41.5-31.4c1.8-9.9 2.8-20.1 2.8-30.5s-1-20.6-2.8-30.5l41.5-31.4c6.4-4.9 8.2-13.8 4.2-20.8L433 114.6c-4-7-12.6-9.9-20.1-6.7l-48 20.2c-15.4-13.2-33.3-23.6-52.8-30.5L305.8 46c-1-8-7.8-14-15.9-14h-67.8c-8.1 0-14.9 6-15.9 14l-6.5 51.6c-19.5 6.9-37.4 17.3-52.8 30.5l-48-20.2c-7.4-3.1-16-.2-20.1 6.7l-33.9 58.7c-4 7-2.2 15.9 4.2 20.8l41.5 31.4C89 235.4 88 245.6 88 256s1 20.6 2.8 30.5l-41.5 31.4c-6.4 4.9-8.2 13.8-4.2 20.8L79 397.4c4 7 12.6 9.9 20.1 6.7l48-20.2c15.4 13.2 33.3 23.6 52.8 30.5l6.5 51.6c1 8 7.8 14 15.9 14h67.8c8.1 0 14.9-6 15.9-14l6.5-51.6c19.5-6.9 37.4-17.3 52.8-30.5l48 20.2c7.4 3.1 16 .2 20.1-6.7l33.9-58.7c3.7-7 1.9-15.9-4.6-20.8M256 340c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
+                                </svg>
+                            </span>
+                            <span class="k-list-item-text">List item with coooooooooooontent</span>
+                            <div class="endContent">
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <span class="k-icon k-svg-icon k-svg-i-star">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                    </svg>
+                                </span>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item with coooooooooooontent</span>
+                            <div class="endContent">
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <span class="k-icon k-svg-icon k-svg-i-star">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                    </svg>
+                                </span>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <span class="k-list-item-description">Long long long description</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">
+                                <span class="k-separator"></span>
+                            </span>
                         </li>
                         <li class="k-list-item">
                             <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
@@ -77,26 +259,205 @@
             </div>
         </section>
         <section>
+            <div class="k-list k-list-md">
+                <div class="k-list-content">
+                    <ul class="k-list-ul">
+                        <li label="Group 1" class="k-list-group-item">
+                            <span class="k-icon k-svg-icon k-svg-i-star">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                </svg>
+                            </span>
+                            <span class="k-list-item-text">Group 1</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item 1.1</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item 1.2</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item 1.3</span>
+                        </li>
+                        <li label="Group 2" class="k-list-group-item">
+                            <span class="k-icon k-svg-icon k-svg-i-search">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M365.3 320h-22.7l-26.7-26.7C338.5 265.7 352 230.4 352 192c0-88.4-71.6-160-160-160S32 103.6 32 192s71.6 160 160 160c38.4 0 73.7-13.5 101.3-36.1l26.7 26.7v22.7L434.7 480l45.3-45.3zM64 192c0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128S64 262.7 64 192"></path>
+                                </svg>
+                            </span>
+                            <span class="k-list-item-text">Group 2</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item 2.1</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item 2.2</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item 2.3</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
             <div class="k-list k-list-md k-virtual-list">
                 <div class="k-list-content">
                     <ul class="k-list-ul">
                         <li class="k-list-item">
                             <span class="k-list-item-text">List item</span>
                         </li>
-                        <li class="k-list-item k-hover">
-                            <span class="k-list-item-text">Hover</span>
+                        <li class="k-list-item">
+                            <span class="k-icon k-svg-icon k-svg-i-gear">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="m462.7 317.9-41.5-31.4c1.8-9.9 2.8-20.1 2.8-30.5s-1-20.6-2.8-30.5l41.5-31.4c6.4-4.9 8.2-13.8 4.2-20.8L433 114.6c-4-7-12.6-9.9-20.1-6.7l-48 20.2c-15.4-13.2-33.3-23.6-52.8-30.5L305.8 46c-1-8-7.8-14-15.9-14h-67.8c-8.1 0-14.9 6-15.9 14l-6.5 51.6c-19.5 6.9-37.4 17.3-52.8 30.5l-48-20.2c-7.4-3.1-16-.2-20.1 6.7l-33.9 58.7c-4 7-2.2 15.9 4.2 20.8l41.5 31.4C89 235.4 88 245.6 88 256s1 20.6 2.8 30.5l-41.5 31.4c-6.4 4.9-8.2 13.8-4.2 20.8L79 397.4c4 7 12.6 9.9 20.1 6.7l48-20.2c15.4 13.2 33.3 23.6 52.8 30.5l6.5 51.6c1 8 7.8 14 15.9 14h67.8c8.1 0 14.9-6 15.9-14l6.5-51.6c19.5-6.9 37.4-17.3 52.8-30.5l48 20.2c7.4 3.1 16 .2 20.1-6.7l33.9-58.7c3.7-7 1.9-15.9-4.6-20.8M256 340c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
+                                </svg>
+                            </span>
+                            <span class="k-list-item-text">List item with icon</span>
                         </li>
-                        <li class="k-list-item k-focus">
-                            <span class="k-list-item-text">Focus</span>
+                        <li class="k-list-item">
+                            <span class="k-icon k-svg-icon k-svg-i-gear">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="m462.7 317.9-41.5-31.4c1.8-9.9 2.8-20.1 2.8-30.5s-1-20.6-2.8-30.5l41.5-31.4c6.4-4.9 8.2-13.8 4.2-20.8L433 114.6c-4-7-12.6-9.9-20.1-6.7l-48 20.2c-15.4-13.2-33.3-23.6-52.8-30.5L305.8 46c-1-8-7.8-14-15.9-14h-67.8c-8.1 0-14.9 6-15.9 14l-6.5 51.6c-19.5 6.9-37.4 17.3-52.8 30.5l-48-20.2c-7.4-3.1-16-.2-20.1 6.7l-33.9 58.7c-4 7-2.2 15.9 4.2 20.8l41.5 31.4C89 235.4 88 245.6 88 256s1 20.6 2.8 30.5l-41.5 31.4c-6.4 4.9-8.2 13.8-4.2 20.8L79 397.4c4 7 12.6 9.9 20.1 6.7l48-20.2c15.4 13.2 33.3 23.6 52.8 30.5l6.5 51.6c1 8 7.8 14 15.9 14h67.8c8.1 0 14.9-6 15.9-14l6.5-51.6c19.5-6.9 37.4-17.3 52.8-30.5l48 20.2c7.4 3.1 16 .2 20.1-6.7l33.9-58.7c3.7-7 1.9-15.9-4.6-20.8M256 340c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
+                                </svg>
+                            </span>
+                            <span class="k-list-item-text">List item with looooooooooooooooooo g icon</span>
                         </li>
-                        <li class="k-list-item k-selected">
-                            <span class="k-list-item-text">Selected</span>
+                        <li class="k-list-item">
+                            <span class="k-icon k-svg-icon k-svg-i-gear">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="m462.7 317.9-41.5-31.4c1.8-9.9 2.8-20.1 2.8-30.5s-1-20.6-2.8-30.5l41.5-31.4c6.4-4.9 8.2-13.8 4.2-20.8L433 114.6c-4-7-12.6-9.9-20.1-6.7l-48 20.2c-15.4-13.2-33.3-23.6-52.8-30.5L305.8 46c-1-8-7.8-14-15.9-14h-67.8c-8.1 0-14.9 6-15.9 14l-6.5 51.6c-19.5 6.9-37.4 17.3-52.8 30.5l-48-20.2c-7.4-3.1-16-.2-20.1 6.7l-33.9 58.7c-4 7-2.2 15.9 4.2 20.8l41.5 31.4C89 235.4 88 245.6 88 256s1 20.6 2.8 30.5l-41.5 31.4c-6.4 4.9-8.2 13.8-4.2 20.8L79 397.4c4 7 12.6 9.9 20.1 6.7l48-20.2c15.4 13.2 33.3 23.6 52.8 30.5l6.5 51.6c1 8 7.8 14 15.9 14h67.8c8.1 0 14.9-6 15.9-14l6.5-51.6c19.5-6.9 37.4-17.3 52.8-30.5l48 20.2c7.4 3.1 16 .2 20.1-6.7l33.9-58.7c3.7-7 1.9-15.9-4.6-20.8M256 340c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
+                                </svg>
+                            </span>
+                            <span class="k-list-item-text">Icon + description</span>
+                            <span class="k-list-item-description">Long long long description</span>
                         </li>
-                        <li class="k-list-item k-hover k-selected">
-                            <span class="k-list-item-text">Hover selected</span>
+                        <li class="k-list-item">
+                            <span class="k-icon k-svg-icon k-svg-i-gear">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="m462.7 317.9-41.5-31.4c1.8-9.9 2.8-20.1 2.8-30.5s-1-20.6-2.8-30.5l41.5-31.4c6.4-4.9 8.2-13.8 4.2-20.8L433 114.6c-4-7-12.6-9.9-20.1-6.7l-48 20.2c-15.4-13.2-33.3-23.6-52.8-30.5L305.8 46c-1-8-7.8-14-15.9-14h-67.8c-8.1 0-14.9 6-15.9 14l-6.5 51.6c-19.5 6.9-37.4 17.3-52.8 30.5l-48-20.2c-7.4-3.1-16-.2-20.1 6.7l-33.9 58.7c-4 7-2.2 15.9 4.2 20.8l41.5 31.4C89 235.4 88 245.6 88 256s1 20.6 2.8 30.5l-41.5 31.4c-6.4 4.9-8.2 13.8-4.2 20.8L79 397.4c4 7 12.6 9.9 20.1 6.7l48-20.2c15.4 13.2 33.3 23.6 52.8 30.5l6.5 51.6c1 8 7.8 14 15.9 14h67.8c8.1 0 14.9-6 15.9-14l6.5-51.6c19.5-6.9 37.4-17.3 52.8-30.5l48 20.2c7.4 3.1 16 .2 20.1-6.7l33.9-58.7c3.7-7 1.9-15.9-4.6-20.8M256 340c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
+                                </svg>
+                            </span>
+                            <span class="k-list-item-text">Icon + loooooooooooooooooong description</span>
+                            <span class="k-list-item-description">Long long long description</span>
                         </li>
-                        <li class="k-list-item k-disabled">
-                            <span class="k-list-item-text">Disabled</span>
+                        <li class="k-list-item">
+                            <span class="k-icon k-svg-icon k-svg-i-gear">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="m462.7 317.9-41.5-31.4c1.8-9.9 2.8-20.1 2.8-30.5s-1-20.6-2.8-30.5l41.5-31.4c6.4-4.9 8.2-13.8 4.2-20.8L433 114.6c-4-7-12.6-9.9-20.1-6.7l-48 20.2c-15.4-13.2-33.3-23.6-52.8-30.5L305.8 46c-1-8-7.8-14-15.9-14h-67.8c-8.1 0-14.9 6-15.9 14l-6.5 51.6c-19.5 6.9-37.4 17.3-52.8 30.5l-48-20.2c-7.4-3.1-16-.2-20.1 6.7l-33.9 58.7c-4 7-2.2 15.9 4.2 20.8l41.5 31.4C89 235.4 88 245.6 88 256s1 20.6 2.8 30.5l-41.5 31.4c-6.4 4.9-8.2 13.8-4.2 20.8L79 397.4c4 7 12.6 9.9 20.1 6.7l48-20.2c15.4 13.2 33.3 23.6 52.8 30.5l6.5 51.6c1 8 7.8 14 15.9 14h67.8c8.1 0 14.9-6 15.9-14l6.5-51.6c19.5-6.9 37.4-17.3 52.8-30.5l48 20.2c7.4 3.1 16 .2 20.1-6.7l33.9-58.7c3.7-7 1.9-15.9-4.6-20.8M256 340c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
+                                </svg>
+                            </span>
+                            <span class="k-list-item-text">Item with icons and long long description</span>
+                            <span class="k-icon k-svg-icon k-svg-i-star">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                </svg>
+                            </span>
+                            <span class="k-list-item-description">Long long long description</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item with coooooooooooontent</span>
+                            <div class="endContent">
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <span class="k-icon k-svg-icon k-svg-i-star">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                    </svg>
+                                </span>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-icon k-svg-icon k-svg-i-gear">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="m462.7 317.9-41.5-31.4c1.8-9.9 2.8-20.1 2.8-30.5s-1-20.6-2.8-30.5l41.5-31.4c6.4-4.9 8.2-13.8 4.2-20.8L433 114.6c-4-7-12.6-9.9-20.1-6.7l-48 20.2c-15.4-13.2-33.3-23.6-52.8-30.5L305.8 46c-1-8-7.8-14-15.9-14h-67.8c-8.1 0-14.9 6-15.9 14l-6.5 51.6c-19.5 6.9-37.4 17.3-52.8 30.5l-48-20.2c-7.4-3.1-16-.2-20.1 6.7l-33.9 58.7c-4 7-2.2 15.9 4.2 20.8l41.5 31.4C89 235.4 88 245.6 88 256s1 20.6 2.8 30.5l-41.5 31.4c-6.4 4.9-8.2 13.8-4.2 20.8L79 397.4c4 7 12.6 9.9 20.1 6.7l48-20.2c15.4 13.2 33.3 23.6 52.8 30.5l6.5 51.6c1 8 7.8 14 15.9 14h67.8c8.1 0 14.9-6 15.9-14l6.5-51.6c19.5-6.9 37.4-17.3 52.8-30.5l48 20.2c7.4 3.1 16 .2 20.1-6.7l33.9-58.7c3.7-7 1.9-15.9-4.6-20.8M256 340c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
+                                </svg>
+                            </span>
+                            <span class="k-list-item-text">List item with coooooooooooontent</span>
+                            <div class="endContent">
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <span class="k-icon k-svg-icon k-svg-i-star">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                    </svg>
+                                </span>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item with coooooooooooontent</span>
+                            <div class="endContent">
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <span class="k-icon k-svg-icon k-svg-i-star">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                    </svg>
+                                </span>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-star">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <span class="k-list-item-description">Long long long description</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">
+                                <span class="k-separator"></span>
+                            </span>
                         </li>
                         <li class="k-list-item">
                             <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
@@ -133,109 +494,43 @@
                 </div>
             </div>
         </section>
-        <section dir="rtl">
-            <div class="k-list k-list-md">
-                <div class="k-list-content">
-                    <ul class="k-list-ul">
-                        <li class="k-list-item">
-                            <span class="k-list-item-text">List item</span>
-                        </li>
-                        <li class="k-list-item k-hover">
-                            <span class="k-list-item-text">Hover</span>
-                        </li>
-                        <li class="k-list-item k-focus">
-                            <span class="k-list-item-text">Focus</span>
-                        </li>
-                        <li class="k-list-item k-selected">
-                            <span class="k-list-item-text">Selected</span>
-                        </li>
-                        <li class="k-list-item k-hover k-selected">
-                            <span class="k-list-item-text">Hover selected</span>
-                        </li>
-                        <li class="k-list-item k-disabled">
-                            <span class="k-list-item-text">Disabled</span>
-                        </li>
-                        <li class="k-list-item">
-                            <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
-                        </li>
-                        <li class="k-list-item">
-                            <span class="k-checkbox-wrap">
-                                <input class="k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
-                            </span>
-                            <span class="k-list-item-text">Checkbox</span>
-                        </li>
-                        <li class="k-list-item">
-                            <span class="k-icon k-svg-icon k-svg-i-gear">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="m462.7 317.9-41.5-31.4c1.8-9.9 2.8-20.1 2.8-30.5s-1-20.6-2.8-30.5l41.5-31.4c6.4-4.9 8.2-13.8 4.2-20.8L433 114.6c-4-7-12.6-9.9-20.1-6.7l-48 20.2c-15.4-13.2-33.3-23.6-52.8-30.5L305.8 46c-1-8-7.8-14-15.9-14h-67.8c-8.1 0-14.9 6-15.9 14l-6.5 51.6c-19.5 6.9-37.4 17.3-52.8 30.5l-48-20.2c-7.4-3.1-16-.2-20.1 6.7l-33.9 58.7c-4 7-2.2 15.9 4.2 20.8l41.5 31.4C89 235.4 88 245.6 88 256s1 20.6 2.8 30.5l-41.5 31.4c-6.4 4.9-8.2 13.8-4.2 20.8L79 397.4c4 7 12.6 9.9 20.1 6.7l48-20.2c15.4 13.2 33.3 23.6 52.8 30.5l6.5 51.6c1 8 7.8 14 15.9 14h67.8c8.1 0 14.9-6 15.9-14l6.5-51.6c19.5-6.9 37.4-17.3 52.8-30.5l48 20.2c7.4 3.1 16 .2 20.1-6.7l33.9-58.7c3.7-7 1.9-15.9-4.6-20.8M256 340c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
-                                </svg>
-                            </span>
-                            <span class="k-list-item-text">Icon</span>
-                        </li>
-                        <li class="k-list-item">
-                            <span class="k-checkbox-wrap">
-                                <input class="k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
-                            </span>
-                            <span class="k-icon k-svg-icon k-svg-i-gear">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="m462.7 317.9-41.5-31.4c1.8-9.9 2.8-20.1 2.8-30.5s-1-20.6-2.8-30.5l41.5-31.4c6.4-4.9 8.2-13.8 4.2-20.8L433 114.6c-4-7-12.6-9.9-20.1-6.7l-48 20.2c-15.4-13.2-33.3-23.6-52.8-30.5L305.8 46c-1-8-7.8-14-15.9-14h-67.8c-8.1 0-14.9 6-15.9 14l-6.5 51.6c-19.5 6.9-37.4 17.3-52.8 30.5l-48-20.2c-7.4-3.1-16-.2-20.1 6.7l-33.9 58.7c-4 7-2.2 15.9 4.2 20.8l41.5 31.4C89 235.4 88 245.6 88 256s1 20.6 2.8 30.5l-41.5 31.4c-6.4 4.9-8.2 13.8-4.2 20.8L79 397.4c4 7 12.6 9.9 20.1 6.7l48-20.2c15.4 13.2 33.3 23.6 52.8 30.5l6.5 51.6c1 8 7.8 14 15.9 14h67.8c8.1 0 14.9-6 15.9-14l6.5-51.6c19.5-6.9 37.4-17.3 52.8-30.5l48 20.2c7.4 3.1 16 .2 20.1-6.7l33.9-58.7c3.7-7 1.9-15.9-4.6-20.8M256 340c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
-                                </svg>
-                            </span>
-                            <span class="k-list-item-text">Checkbox icon</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section dir="rtl">
+        <section>
             <div class="k-list k-list-md k-virtual-list">
                 <div class="k-list-content">
                     <ul class="k-list-ul">
-                        <li class="k-list-item">
-                            <span class="k-list-item-text">List item</span>
-                        </li>
-                        <li class="k-list-item k-hover">
-                            <span class="k-list-item-text">Hover</span>
-                        </li>
-                        <li class="k-list-item k-focus">
-                            <span class="k-list-item-text">Focus</span>
-                        </li>
-                        <li class="k-list-item k-selected">
-                            <span class="k-list-item-text">Selected</span>
-                        </li>
-                        <li class="k-list-item k-hover k-selected">
-                            <span class="k-list-item-text">Hover selected</span>
-                        </li>
-                        <li class="k-list-item k-disabled">
-                            <span class="k-list-item-text">Disabled</span>
-                        </li>
-                        <li class="k-list-item">
-                            <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
-                        </li>
-                        <li class="k-list-item">
-                            <span class="k-checkbox-wrap">
-                                <input class="k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
-                            </span>
-                            <span class="k-list-item-text">Checkbox</span>
-                        </li>
-                        <li class="k-list-item">
-                            <span class="k-icon k-svg-icon k-svg-i-gear">
+                        <li label="Group 1" class="k-list-group-item">
+                            <span class="k-icon k-svg-icon k-svg-i-star">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="m462.7 317.9-41.5-31.4c1.8-9.9 2.8-20.1 2.8-30.5s-1-20.6-2.8-30.5l41.5-31.4c6.4-4.9 8.2-13.8 4.2-20.8L433 114.6c-4-7-12.6-9.9-20.1-6.7l-48 20.2c-15.4-13.2-33.3-23.6-52.8-30.5L305.8 46c-1-8-7.8-14-15.9-14h-67.8c-8.1 0-14.9 6-15.9 14l-6.5 51.6c-19.5 6.9-37.4 17.3-52.8 30.5l-48-20.2c-7.4-3.1-16-.2-20.1 6.7l-33.9 58.7c-4 7-2.2 15.9 4.2 20.8l41.5 31.4C89 235.4 88 245.6 88 256s1 20.6 2.8 30.5l-41.5 31.4c-6.4 4.9-8.2 13.8-4.2 20.8L79 397.4c4 7 12.6 9.9 20.1 6.7l48-20.2c15.4 13.2 33.3 23.6 52.8 30.5l6.5 51.6c1 8 7.8 14 15.9 14h67.8c8.1 0 14.9-6 15.9-14l6.5-51.6c19.5-6.9 37.4-17.3 52.8-30.5l48 20.2c7.4 3.1 16 .2 20.1-6.7l33.9-58.7c3.7-7 1.9-15.9-4.6-20.8M256 340c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
+                                    <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
                                 </svg>
                             </span>
-                            <span class="k-list-item-text">Icon</span>
+                            <span class="k-list-item-text">Group 1</span>
                         </li>
                         <li class="k-list-item">
-                            <span class="k-checkbox-wrap">
-                                <input class="k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
-                            </span>
-                            <span class="k-icon k-svg-icon k-svg-i-gear">
+                            <span class="k-list-item-text">List item 1.1</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item 1.2</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item 1.3</span>
+                        </li>
+                        <li label="Group 2" class="k-list-group-item">
+                            <span class="k-icon k-svg-icon k-svg-i-search">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="m462.7 317.9-41.5-31.4c1.8-9.9 2.8-20.1 2.8-30.5s-1-20.6-2.8-30.5l41.5-31.4c6.4-4.9 8.2-13.8 4.2-20.8L433 114.6c-4-7-12.6-9.9-20.1-6.7l-48 20.2c-15.4-13.2-33.3-23.6-52.8-30.5L305.8 46c-1-8-7.8-14-15.9-14h-67.8c-8.1 0-14.9 6-15.9 14l-6.5 51.6c-19.5 6.9-37.4 17.3-52.8 30.5l-48-20.2c-7.4-3.1-16-.2-20.1 6.7l-33.9 58.7c-4 7-2.2 15.9 4.2 20.8l41.5 31.4C89 235.4 88 245.6 88 256s1 20.6 2.8 30.5l-41.5 31.4c-6.4 4.9-8.2 13.8-4.2 20.8L79 397.4c4 7 12.6 9.9 20.1 6.7l48-20.2c15.4 13.2 33.3 23.6 52.8 30.5l6.5 51.6c1 8 7.8 14 15.9 14h67.8c8.1 0 14.9-6 15.9-14l6.5-51.6c19.5-6.9 37.4-17.3 52.8-30.5l48 20.2c7.4 3.1 16 .2 20.1-6.7l33.9-58.7c3.7-7 1.9-15.9-4.6-20.8M256 340c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
+                                    <path d="M365.3 320h-22.7l-26.7-26.7C338.5 265.7 352 230.4 352 192c0-88.4-71.6-160-160-160S32 103.6 32 192s71.6 160 160 160c38.4 0 73.7-13.5 101.3-36.1l26.7 26.7v22.7L434.7 480l45.3-45.3zM64 192c0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128S64 262.7 64 192"></path>
                                 </svg>
                             </span>
-                            <span class="k-list-item-text">Checkbox icon</span>
+                            <span class="k-list-item-text">Group 2</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item 2.1</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item 2.2</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item 2.3</span>
                         </li>
                     </ul>
                     <div class="k-height-container">
