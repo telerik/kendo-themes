@@ -54,6 +54,11 @@ export const ProgressBar: KendoComponent<KendoProgressBarProps & KendoProgressBa
     return (
         <div
             {...other}
+            role="progressbar"
+            aria-label={props['aria-label'] || "Progress"}
+            aria-valuenow={indeterminate ? undefined : parseInt(value)}
+            aria-valuemin={indeterminate ? undefined : 0}
+            aria-valuemax={indeterminate ? undefined : 100}
             className={classNames(
                 props.className,
                 PROGRESSBAR_CLASSNAME,

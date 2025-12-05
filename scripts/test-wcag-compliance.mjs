@@ -30,7 +30,7 @@ const HOST = 'localhost';
 const TESTS_PATH = './tests';
 const COMPONENT_PAGE_EXT = '.html';
 const THEME = "default";
-const SWATCH = "default-ocean-blue-a11y";
+const SWATCH = "all";
 
 // Page-level rules to exclude (not component-specific)
 const PAGE_LEVEL_RULES = [

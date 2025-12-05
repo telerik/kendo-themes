@@ -24,7 +24,7 @@ const TESTS_PATH = './tests';
 const ARIA_SPECS_PATH = './aria';
 const COMPONENT_PAGE_EXT = '.html';
 const THEME = "default";
-const SWATCH = "default-ocean-blue";
+const SWATCH = "all";
 
 // Get component name from command line
 const componentArg = process.argv[2];
