@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { Textbox } from '../textbox';
 import { Textarea } from '../textarea';
 import { IconButton } from '../button';
+import { Popup } from '../popup';
 
 
 export const PROMPT_INPUT_CLASSNAME = `k-prompt-input`;
@@ -17,6 +18,8 @@ export type KendoPromptInputOptions = {
 };
 
 export type KendoPromptInputProps = KendoPromptInputOptions & {
+    popup?: React.JSX.Element;
+    opened?: boolean;
 };
 
 const defaultOptions = {
@@ -29,117 +32,147 @@ export const PromptInput = (
     const {
         lineMode = defaultOptions.lineMode,
         isExpanded,
+        popup,
+        opened,
         ...other
     } = props;
 
     // Single line mode - render Textbox
     if (lineMode === 'single') {
         return (
-            <Textbox
-                {...other}
-                className={classNames(
-                    props.className,
-                    PROMPT_INPUT_CLASSNAME,
-                    `${PROMPT_INPUT_CLASSNAME}-single`,
+            <>
+                <Textbox
+                    {...other}
+                    className={classNames(
+                        props.className,
+                        PROMPT_INPUT_CLASSNAME,
+                        `${PROMPT_INPUT_CLASSNAME}-single`,
 
-                )}
-                separators={false}
-                prefix={
-                    <>
-                        <IconButton icon="search" fillMode="clear" />
-                    </>
+                    )}
+                    separators={false}
+                    prefix={
+                        <>
+                            <IconButton icon="search" fillMode="clear" />
+                        </>
+                    }
+                    suffix={
+                        <>
+                            <IconButton icon="arrow-up" fillMode="solid" rounded="full" />
+                        </>
+                    }
+                />
+                {opened && popup &&
+                    <Popup className="k-prompt-input-popup">
+                        {popup}
+                    </Popup>
                 }
-                suffix={
-                    <>
-                        <IconButton icon="arrow-up" fillMode="solid" rounded="full" />
-                    </>
-                }
-            />
+            </>
         );
     }
 
     // Multiline mode - render Textarea with vertical flow
     if (lineMode === 'multi') {
         return (
-            <Textarea
-                {...other}
-                flow="vertical"
-                affixesOrientation="horizontal"
-                resize='none'
-                rows={3}
-                prefixSeparator={false}
-                suffixSeparator={false}
-                className={classNames(
-                    props.className,
-                    PROMPT_INPUT_CLASSNAME,
-                    `${PROMPT_INPUT_CLASSNAME}-multiline`,
+            <>
+                <Textarea
+                    {...other}
+                    flow="vertical"
+                    affixesOrientation="horizontal"
+                    resize='none'
+                    rows={3}
+                    prefixSeparator={false}
+                    suffixSeparator={false}
+                    className={classNames(
+                        props.className,
+                        PROMPT_INPUT_CLASSNAME,
+                        `${PROMPT_INPUT_CLASSNAME}-multiline`,
 
-                )}
-                suffix={
-                    <>
-                        <IconButton icon="search" fillMode="clear" />
-                        <span className="k-spacer" />
-                        <IconButton icon="arrow-up" fillMode="solid" rounded="full" />
-                    </>
+                    )}
+                    suffix={
+                        <>
+                            <IconButton icon="search" fillMode="clear" />
+                            <span className="k-spacer" />
+                            <IconButton icon="arrow-up" fillMode="solid" rounded="full" />
+                        </>
+                    }
+                />
+                {opened && popup &&
+                    <Popup className="k-prompt-input-popup">
+                        {popup}
+                    </Popup>
                 }
-            />
+            </>
         );
     }
 
     // Auto mode expanded
     if (lineMode === 'auto' && isExpanded) {
         return (
-            <Textarea
-                {...other}
-                flow="vertical"
-                affixesOrientation="horizontal"
-                resize='none'
-                rows={3}
-                prefixSeparator={false}
-                suffixSeparator={false}
-                className={classNames(
-                    props.className,
-                    PROMPT_INPUT_CLASSNAME,
-                    `${PROMPT_INPUT_CLASSNAME}-multiline`,
-                )}
-                suffix={
-                    <>
-                        <IconButton icon="search" fillMode="clear" />
-                        <span className="k-spacer" />
-                        <IconButton icon="arrow-up" fillMode="solid" rounded="full" />
-                    </>
+            <>
+                <Textarea
+                    {...other}
+                    flow="vertical"
+                    affixesOrientation="horizontal"
+                    resize='none'
+                    rows={3}
+                    prefixSeparator={false}
+                    suffixSeparator={false}
+                    className={classNames(
+                        props.className,
+                        PROMPT_INPUT_CLASSNAME,
+                        `${PROMPT_INPUT_CLASSNAME}-multiline`,
+                    )}
+                    suffix={
+                        <>
+                            <IconButton icon="search" fillMode="clear" />
+                            <span className="k-spacer" />
+                            <IconButton icon="arrow-up" fillMode="solid" rounded="full" />
+                        </>
+                    }
+                />
+                {opened && popup &&
+                    <Popup className="k-prompt-input-popup">
+                        {popup}
+                    </Popup>
                 }
-            />
+            </>
         );
     }
 
     // Auto mode collapsed
     if (lineMode === 'auto') {
         return (
-            <Textarea
-                {...other}
-                flow="horizontal"
-                affixesOrientation="horizontal"
-                resize='none'
-                rows={1}
-                prefixSeparator={false}
-                suffixSeparator={false}
-                className={classNames(
-                    props.className,
-                    PROMPT_INPUT_CLASSNAME,
-                    `${PROMPT_INPUT_CLASSNAME}-single`,
-                )}
-                prefix={
-                    <>
-                        <IconButton icon="search" fillMode="clear" />
-                    </>
+            <>
+                <Textarea
+                    {...other}
+                    flow="horizontal"
+                    affixesOrientation="horizontal"
+                    resize='none'
+                    rows={1}
+                    prefixSeparator={false}
+                    suffixSeparator={false}
+                    className={classNames(
+                        props.className,
+                        PROMPT_INPUT_CLASSNAME,
+                        `${PROMPT_INPUT_CLASSNAME}-single`,
+                    )}
+                    prefix={
+                        <>
+                            <IconButton icon="search" fillMode="clear" />
+                        </>
+                    }
+                    suffix={
+                        <>
+                            <IconButton icon="arrow-up" fillMode="solid" rounded="full" />
+                        </>
+                    }
+                />
+                {opened && popup &&
+                    <Popup className="k-prompt-input-popup">
+                        {popup}
+                    </Popup>
                 }
-                suffix={
-                    <>
-                        <IconButton icon="arrow-up" fillMode="solid" rounded="full" />
-                    </>
-                }
-            />
+            </>
         );
     }
 };
