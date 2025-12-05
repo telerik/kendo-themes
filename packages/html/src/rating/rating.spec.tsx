@@ -60,6 +60,12 @@ export const Rating: KendoComponent<RatingState & RatingProps & React.HTMLAttrib
     return (
         <span
             {...other}
+            role="slider"
+            aria-label={props['aria-label'] || label || "Rating"}
+            tabIndex={0}
+            aria-valuenow={value}
+            aria-valuemin={0}
+            aria-valuemax={max}
             className={classNames(
                 props.className,
                 RATING_CLASSNAME,
