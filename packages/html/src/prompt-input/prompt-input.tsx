@@ -168,7 +168,7 @@ export const PromptInput = (
                     }
                 />
                 {opened && popup &&
-                    <Popup className="k-prompt-input-popup">
+                    <Popup className="k-list-container k-prompt-input-popup">
                         {popup}
                     </Popup>
                 }
