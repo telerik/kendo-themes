@@ -22,7 +22,8 @@ export default () =>(
                     { DateInput.options.size.map((size) => (
                         <>
                             <div>
-                                <DateInputNormal showSpinButton={true} size={size} rounded={rounded} value="DateInput"/>
+                                <label htmlFor={`dateinput-${rounded}-${size}`} className="k-label">Select date</label>
+                                <DateInputNormal id={`dateinput-${rounded}-${size}`} showSpinButton={true} size={size} rounded={rounded} value="DateInput"/>
                             </div>
                         </>
                     ))}

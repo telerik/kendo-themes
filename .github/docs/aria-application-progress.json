@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-12-05T13:38:49.710Z",
+  "lastUpdated": "2025-12-05T14:14:45.892Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -373,17 +373,17 @@
       "notes": ""
     },
     "dateinput": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "inputs",
-      "complianceScore": null,
+      "complianceScore": 98.7,
       "violations": {
         "critical": 0,
-        "serious": 0,
+        "serious": 1,
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "100% ARIA validation. 98.7% WCAG (1 target-size violation on small size variant - design constraint). DateInput passes props to InputInnerInput. SpinButton has titles."
     },
     "datepicker": {
       "status": "pending",

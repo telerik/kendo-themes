@@ -49,14 +49,16 @@ export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttribu
                 icon="caret-alt-up"
                 rounded={null}
                 size={size}
-                fillMode={fillMode}>
+                fillMode={fillMode}
+                title="Increase value">
             </Button>
             <Button
                 className="k-spinner-decrease"
                 icon="caret-alt-down"
                 rounded={null}
                 size={size}
-                fillMode={fillMode}>
+                fillMode={fillMode}
+                title="Decrease value">
             </Button>
         </span>
     );

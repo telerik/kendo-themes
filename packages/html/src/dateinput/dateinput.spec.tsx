@@ -77,7 +77,6 @@ export const DateInput: KendoComponent<KendoDateInputProps & KendoDateInputState
 
     return (
         <Input
-            {...other}
             size={size}
             rounded={rounded}
             fillMode={fillMode}
@@ -91,7 +90,7 @@ export const DateInput: KendoComponent<KendoDateInputProps & KendoDateInputState
             readonly={readonly}
             className={classNames(props.className, DATEINPUT_CLASSNAME)}
         >
-            <InputInnerInput placeholder={placeholder} value={value} />
+            <InputInnerInput {...other} placeholder={placeholder} value={value} disabled={disabled} readonly={readonly} required={required} />
             <InputValidationIcon
                 valid={valid}
                 invalid={invalid}
