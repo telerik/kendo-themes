@@ -10,54 +10,52 @@ const styles = `
     }
 
     .k-segmented-control {
-        border: 1px solid red;
         display: inline-flex;
         position: relative;
         align-items: center;
-        background-color: #e8e8e8;
-        border-radius: 9999px;
-        padding: 4px;
-        gap: 4px;
+        background-color: var(--kendo-color-base-subtle);
+        border-radius: var(--kendo-border-radius-full);
+        padding: 2px 8px;
+        flex-flow: row nowrap;
+        /* width: 100%; */
+       /*  overflow: hidden; */
+    }
+
+    .k-segmented-control-button-text {
+      white-space: nowrap;
     }
 
     .segmented-control-thumb {
       position: absolute;
-      top: 4px;
-      left: 4px;
-      height: calc(100% - 8px);
-      background-color: #fff;
-      border-radius: 9999px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      top: 2px;
+      left: 2px;
+      height: calc(100% - 4px);
+      border-radius: var(--kendo-border-radius-full);
+      box-shadow: var(--kendo-elevation-3);
       transition: width 300ms var(--cubic-enter), transform 300ms var(--cubic-enter);
+
       pointer-events: none;
+      background: var(--kendo-color-surface);
+
+      width: 220px; /* Dynamically calculated, based on the selected button width */
     }
 
-    .segmented-control-option {
+    .k-segmented-control-button {
       position: relative;
       display: flex;
+      flex: 1;
       align-items: center;
       justify-content: center;
-      padding: 8px 12px;
-      border: none;
-      background: transparent;
-      border-radius: 9999px;
+      padding: 2px 8px;
+      border: 0;
+      border-radius: var(--kendo-border-radius-full);
       cursor: pointer;
-      font-size: 16px;
-      color: #666;
-      transition: color 0.2s ease, transform 0.15s ease;
+      font-size: 14px;
+      line-height: var(--kendo-line-height);
+      color: var(--kendo-color-on-app-surface);
+      background: transparent;
       z-index: 1;
-    }
-
-    .segmented-control-option:hover {
-      color: #333;
-    }
-
-    .segmented-control-option.active {
-      color: #000;
-    }
-
-    .segmented-control-option:active {
-      transform: scale(0.96);
+      gap: var(--kendo-spacing-1);
     }
 
 `;
@@ -65,12 +63,9 @@ const styles = `
 export default () => (
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-1">
+        <div id="test-area" className="k-d-grid k-grid-cols-2">
             <section>
-                <div>
-                    <SegmentedControlNormal />
-
-                </div>
+                <SegmentedControlNormal />
             </section>
         </div>
 

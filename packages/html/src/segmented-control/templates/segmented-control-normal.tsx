@@ -1,11 +1,11 @@
-import { Button } from "../../button";
+import SegmentedControlButton from "../segmented-control-button.spec";
 import SegmentedControl from "../segmented-control.spec";
 
 export const SegmentedControlNormal = (props) => (
     <SegmentedControl children={
         <>
-            <Button icon="search" {...props}>Search</Button>
-            <Button icon="sparkles" {...props}> AI Assisstant</Button>
+            <SegmentedControlButton icon="search" {...props}>Search</SegmentedControlButton>
+            <SegmentedControlButton icon="sparkles" {...props}> AI Assisstant</SegmentedControlButton>
         </>
     } />
 );
