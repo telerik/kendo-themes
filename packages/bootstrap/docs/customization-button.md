@@ -461,8 +461,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 .25rem color-mix(in srgb, k-color(border) 50%, transparent)</code></td>
-    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent))</code></td>
+    <td><code>0 0 0 .25rem color-mix(in srgb, currentColor 50%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, currentColor 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the focused Button.</div></div>

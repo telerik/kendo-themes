@@ -18,14 +18,7 @@
         &:focus,
         &.k-focus {
             outline-color: $kendo-chat-alt-bubble-focus-border;
-            box-shadow: inset 0 0 0 calc( #{$kendo-bubble-border-width} * 3 ) k-color(app-surface),
-                        inset 0 0 0 calc( #{$kendo-bubble-border-width} * 5 ) $kendo-chat-alt-bubble-focus-border;
-
-            &:hover,
-            &.k-hover {
-                box-shadow: inset 0 0 0 calc( #{$kendo-bubble-border-width} * 3 ) k-color(app-surface),
-                            inset 0 0 0 calc( #{$kendo-bubble-border-width} * 5 ) $kendo-chat-alt-bubble-hover-border;
-            }
+            box-shadow: inset 0 0 0 calc( #{$kendo-bubble-border-width} * 3 ) k-color(app-surface);
         }
     }
 

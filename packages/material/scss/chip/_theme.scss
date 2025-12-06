@@ -20,8 +20,7 @@
             &:focus,
             &.k-focus {
                 outline-color: if( $name == "base", k-color(base-emphasis), k-color(#{$name}-active));
-                box-shadow: inset 0 0 0 calc( #{$kendo-chip-border-width} * 3 ) k-color(app-surface),
-                            inset 0 0 0 calc( #{$kendo-chip-border-width} * 5 ) if( $name == "base", k-color(base-subtle-active), k-color(#{$name}-subtle));
+                box-shadow: inset 0 0 0 calc( #{$kendo-chip-border-width} * 3 ) k-color(app-surface);
             }
 
             &:active,

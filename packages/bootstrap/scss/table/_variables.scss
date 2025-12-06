@@ -146,7 +146,7 @@ $kendo-table-focus-text: null !default;
 $kendo-table-focus-border: null !default;
 /// Box shadow of focused rows in table.
 /// @group table
-$kendo-table-focus-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(inverse) 8%, transparent) !default;
+$kendo-table-focus-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 25%, transparent) !default;
 
 
 /// Background color of selected rows in table.

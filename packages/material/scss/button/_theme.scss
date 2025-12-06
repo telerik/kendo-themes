@@ -22,8 +22,7 @@
             &:focus,
             &.k-focus {
                 outline-color: if( $name == "base" or $name == "secondary", $kendo-button-focus-border, k-color(#{$name}));
-                box-shadow: inset 0 0 0 calc( #{$kendo-button-border-width} * 3 ) k-color(app-surface),
-                            inset 0 0 0 calc( #{$kendo-button-border-width} * 5 ) k-color(#{$name});
+                box-shadow: inset 0 0 0 calc( #{$kendo-button-border-width} * 3 ) k-color(app-surface);
             }
 
             &:hover,
@@ -39,7 +38,6 @@
                 &.k-hover {
                     outline-color: if( $name == "base" or $name == "secondary", $kendo-button-focus-border, k-color(#{$name}-hover));
                     box-shadow: inset 0 0 0 calc( #{$kendo-button-border-width} * 3 ) k-color(app-surface),
-                                inset 0 0 0 calc( #{$kendo-button-border-width} * 5 ) k-color(#{$name}-hover),
                                 $kendo-button-hover-shadow;
 
                     &:active,
@@ -47,7 +45,6 @@
                     &.k-selected {
                         background-color: k-color(#{$name}-active);
                         box-shadow: inset 0 0 0 calc( #{$kendo-button-border-width} * 3 ) k-color(app-surface),
-                                    inset 0 0 0 calc( #{$kendo-button-border-width} * 5 ) k-color(#{$name}-active),
                                     $kendo-button-hover-shadow;
                     }
                 }
@@ -56,15 +53,13 @@
                 &.k-active,
                 &.k-selected {
                     outline-color: if( $name == "base" or $name == "secondary", $kendo-button-focus-border, k-color(#{$name}-active));
-                    box-shadow: inset 0 0 0 calc( #{$kendo-button-border-width} * 3 ) k-color(app-surface),
-                                inset 0 0 0 calc( #{$kendo-button-border-width} * 5 ) k-color(#{$name}-active);
+                    box-shadow: inset 0 0 0 calc( #{$kendo-button-border-width} * 3 ) k-color(app-surface);
                 }
 
                 &:disabled,
                 &.k-disabled {
                     background-color: $kendo-button-disabled-bg;
-                    box-shadow: inset 0 0 0 calc( #{$kendo-button-border-width} * 3 ) k-color(app-surface),
-                                inset 0 0 0 calc( #{$kendo-button-border-width} * 5 ) transparent;
+                    box-shadow: inset 0 0 0 calc( #{$kendo-button-border-width} * 3 ) k-color(app-surface);
                 }
             }
 

@@ -219,7 +219,7 @@ $kendo-calendar-cell-selected-hover-gradient: null !default;
 
 /// The shadow of the focused cells in the Calendar.
 /// @group calendar
-$kendo-calendar-cell-focus-shadow: inset 0 0 0 2px rgba( black, .08 ) !default;
+$kendo-calendar-cell-focus-shadow: inset 0 0 0 2px color-mix(in srgb, currentColor 12%, transparent) !default;
 /// The shadow of the selected and focused cells in the Calendar.
 /// @group calendar
 $kendo-calendar-cell-selected-focus-shadow: $kendo-calendar-cell-focus-shadow !default;

@@ -733,9 +733,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-actionsheet-item-focus-shadow</td>
-    <td>List</td>
-    <td><code>$kendo-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused ActionSheet item.</div></div>
@@ -2174,8 +2174,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-breadcrumb-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 2px 1px k-color(border)</code></td>
-    <td><code>(0 0 2px 1px var(--kendo-color-border, #cacaca))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb.</div></div>
@@ -2424,8 +2424,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-breadcrumb-link-focus-shadow</td>
     <td>List</td>
-    <td><code>$kendo-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb link.</div></div>
@@ -2525,7 +2525,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-breadcrumb-root-link-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-breadcrumb-link-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb root link.</div></div>
@@ -2789,8 +2789,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-bubble-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 8%, transparent))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 16%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Bubble.</div></div>
@@ -3350,8 +3350,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-button-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 4px 0 color-mix(in srgb, k-color(border) 75%, transparent)</code></td>
-    <td><code>(0 0 4px 0 color-mix(in srgb, var(--kendo-color-border, #cacaca) 75%, transparent))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the focused Button.</div></div>
@@ -4270,8 +4270,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-calendar-cell-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px rgba( black, .08 )</code></td>
-    <td><code>(inset 0 0 0 2px rgba(0, 0, 0, 0.08))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, currentColor 12%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused cells in the Calendar.</div></div>
@@ -4281,7 +4281,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-calendar-cell-selected-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-calendar-cell-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px rgba(0, 0, 0, 0.08))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected and focused cells in the Calendar.</div></div>
@@ -4952,8 +4952,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-card-focus-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3, 0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 12%, transparent)!default</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Card.</div></div>
@@ -5413,8 +5413,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-chart-wizard-icon-area-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px k-color(primary-emphasis)</code></td>
-    <td><code>(inset 0 0 0 1px var(--kendo-color-primary-emphasis, #ff8b47))</code></td>
+    <td><code>inset 0 0 0 2px k-color(primary-emphasis)</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-primary-emphasis, #ff8b47))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused area around the chart type icon.</div></div>
@@ -8104,8 +8104,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-chip-solid-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(base-on-surface) 16%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-base-on-surface, #272727) 16%, transparent))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(base-on-surface) 12%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-base-on-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the solid Chip.</div></div>
@@ -8174,8 +8174,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-chip-outline-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(base-on-surface) 16%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-base-on-surface, #272727) 16%, transparent))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(base-on-surface) 12%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-base-on-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the outline Chip.</div></div>
@@ -9984,9 +9984,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-color-gradient-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3, 0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
+    <td>List</td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient.</div></div>
@@ -10274,9 +10274,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(2)</code></td>
-    <td><code>var(--kendo-elevation-2, 0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
+    <td>List</td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(dark) 25%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-dark, #404040) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>
@@ -10566,8 +10566,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-color-palette-tile-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .5 )</code></td>
-    <td><code>(0 0 3px 1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.5))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(app-surface) 50%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette focused tile.</div></div>
@@ -12113,7 +12113,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-drawer-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Drawer item.</div></div>
@@ -12813,7 +12813,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-expander-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ExpansionPanel.</div></div>
@@ -12893,7 +12893,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-expander-header-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ExpansionPanel header.</div></div>
@@ -16412,7 +16412,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-grid-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-table-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Grid.</div></div>
@@ -17695,9 +17695,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-input-focus-border</td>
-    <td>Color</td>
-    <td><code>rgba( black, .1 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.1)"></span><code>rgba(0, 0, 0, 0.1)</code></td>
+    <td>String</td>
+    <td><code>$kendo-input-border</code></td>
+    <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Input components.</div></div>
@@ -17706,8 +17706,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-input-focus-shadow</td>
     <td>List</td>
-    <td><code>0 2px 4px 0 rgba( black, .03 ), 0 4px 5px 0 rgba( black, .04 )</code></td>
-    <td><code>(0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Input components.</div></div>
@@ -17857,7 +17857,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-input-outline-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-input-focus-shadow</code></td>
-    <td><code>(0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04))</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline focused Input components.</div></div>
@@ -17957,7 +17957,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-input-flat-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-input-focus-shadow</code></td>
-    <td><code>(0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04))</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the flat focused Input components.</div></div>
@@ -19093,8 +19093,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-list-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px k-color(border-alt)</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused List items.</div></div>
@@ -19643,8 +19643,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-listview-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px k-color(border-alt)</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ListView items.</div></div>
@@ -22142,7 +22142,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-orgchart-node-group-focus-shadow</td>
     <td>String</td>
     <td><code>$kendo-card-focus-shadow</code></td>
-    <td><code>var(--kendo-elevation-3, 0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart node group.</div></div>
@@ -22242,7 +22242,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-orgchart-card-focus-shadow</td>
     <td>String</td>
     <td><code>$kendo-card-focus-shadow</code></td>
-    <td><code>var(--kendo-elevation-3, 0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart Card.</div></div>
@@ -23108,8 +23108,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-pager-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px k-color(border-alt)</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Pager.</div></div>
@@ -23858,7 +23858,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-panelbar-header-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused PanelBar header.</div></div>
@@ -24148,7 +24148,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-panelbar-item-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused PanelBar items.</div></div>
@@ -24558,7 +24558,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-picker-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-button-focus-shadow</code></td>
-    <td><code>(0 0 4px 0 color-mix(in srgb, var(--kendo-color-border, #cacaca) 75%, transparent))</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Picker components.</div></div>
@@ -24708,7 +24708,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-picker-outline-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-picker-focus-shadow</code></td>
-    <td><code>(0 0 4px 0 color-mix(in srgb, var(--kendo-color-border, #cacaca) 75%, transparent))</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline focused Picker components.</div></div>
@@ -24838,7 +24838,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-picker-flat-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-picker-focus-shadow</code></td>
-    <td><code>(0 0 4px 0 color-mix(in srgb, var(--kendo-color-border, #cacaca) 75%, transparent))</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the flat focused Picker components.</div></div>
@@ -25188,7 +25188,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-pivotgrid-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the PivotGrid.</div></div>
@@ -27103,8 +27103,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-rating-icon-focus-shadow</td>
     <td>List</td>
-    <td><code>0 2px 4px rgba( black, .1 )</code></td>
-    <td><code>(0 2px 4px rgba(0, 0, 0, 0.1))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, currentColor 30%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, currentColor 30%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Rating icon.</div></div>
@@ -27113,8 +27113,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-rating-icon-focus-selected-shadow</td>
     <td>List</td>
-    <td><code>0 2px 4px rgba( black, .1)</code></td>
-    <td><code>(0 2px 4px rgba(0, 0, 0, 0.1))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, currentColor 30%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, currentColor 30%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused and selected Rating icon.</div></div>
@@ -28930,7 +28930,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-split-button-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-button-focus-shadow</code></td>
-    <td><code>(0 0 4px 0 color-mix(in srgb, var(--kendo-color-border, #cacaca) 75%, transparent))</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the SplitButton.</div></div>
@@ -32056,7 +32056,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-table-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused rows in table.</div></div>
@@ -32566,7 +32566,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-tabstrip-item-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, #b6b6b6))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused TabStrip items.</div></div>
@@ -33605,7 +33605,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-tile-layout-card-focus-shadow</td>
     <td>String</td>
     <td><code>$kendo-card-focus-shadow</code></td>
-    <td><code>var(--kendo-elevation-3, 0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus box shadow of the TileLayout card.</div></div>
@@ -34392,9 +34392,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-timeline-track-item-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(2)</code></td>
-    <td><code>var(--kendo-elevation-2, 0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
+    <td>List</td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(primary) 30%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #f35800) 30%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Timeline's focused track items.</div></div>
@@ -35024,7 +35024,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-toolbar-item-shadow</td>
     <td>List</td>
     <td><code>$kendo-button-focus-shadow</code></td>
-    <td><code>(0 0 4px 0 color-mix(in srgb, var(--kendo-color-border, #cacaca) 75%, transparent))</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Toolbar item.</div></div>
@@ -35738,8 +35738,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-treeview-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 2px 0 k-color(border)</code></td>
-    <td><code>(inset 0 0 2px 0 var(--kendo-color-border, #cacaca))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of focused TreeView items.</div></div>
@@ -35839,7 +35839,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-treeview-loadmore-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-treeview-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 2px 0 var(--kendo-color-border, #cacaca))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Load More button in the TreeView.</div></div>
@@ -37735,9 +37735,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-window-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(9)</code></td>
-    <td><code>var(--kendo-elevation-9, 0 32px 34px rgba(0, 0, 0, 0.32), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
+    <td>List</td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(primary) 8%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #f35800) 8%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Window.</div></div>

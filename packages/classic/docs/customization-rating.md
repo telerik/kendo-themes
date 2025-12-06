@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-icon-focus-shadow</td>
     <td>List</td>
-    <td><code>0 2px 4px rgba( black, .1 )</code></td>
-    <td><code>(0 2px 4px rgba(0, 0, 0, 0.1))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, currentColor 30%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, currentColor 30%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Rating icon.</div></div>
@@ -170,8 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-icon-focus-selected-shadow</td>
     <td>List</td>
-    <td><code>0 2px 4px rgba( black, .1)</code></td>
-    <td><code>(0 2px 4px rgba(0, 0, 0, 0.1))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, currentColor 30%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, currentColor 30%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused and selected Rating icon.</div></div>
