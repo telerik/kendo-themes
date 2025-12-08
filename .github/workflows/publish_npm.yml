@@ -33,6 +33,14 @@ jobs:
       packages: read
 
     steps:
+      - name: Import Secrets
+        id: import-secrets
+        uses: LanceMcCarthy/akeyless-action@v5
+        with:
+          access-id: ${{ secrets.GH_AKEYLESS_ACCESS_ID }}
+          static-secrets: '{ "/WebComponents/prod/tokens/GH_TOKEN": "GH_TOKEN" }'
+          export-secrets-to-environment: false
+
       - name: Checkout branch
         uses: actions/checkout@v5
         with:
@@ -70,21 +78,21 @@ jobs:
         run: |
           npx lerna publish --conventional-commits --conventional-graduate --create-release github --force-publish --exact
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
 
       - name: Lerna publish (dev)
         if: env.RELEASE_TYPE == 'dev'
         run: |
           npx lerna publish --conventional-commits --conventional-prerelease --create-release github --preid dev --dist-tag dev --allow-branch develop --force-publish --exact --yes
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
 
       - name: Mark checks as successful
         run: |
           commit=$(git rev-parse HEAD)
           ./build/mark-checks.sh $commit
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
 
       - name: Push to GitHub
         if: env.RELEASE_TYPE == 'stable'
