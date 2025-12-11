@@ -7,42 +7,57 @@
 @use "../../z-index/index.scss" as *;
 @use "../../motion/index.scss" as *;
 
-@mixin kendo-button-sizes-controller($sizes, $default-size: md) {
-    .k-button {
-        --kendo-button-padding-x: #{map.get(map.get($sizes, $default-size), padding-x)};
-        --kendo-button-padding-y: #{map.get(map.get($sizes, $default-size), padding-y)};
-        --kendo-button-font-size: #{map.get(map.get($sizes, $default-size), font-size)};
-        --kendo-button-line-height: #{map.get(map.get($sizes, $default-size), line-height)};
+/// Pure setter mixin for button size properties.
+/// @param {Map} $size-props - Map containing padding-x, padding-y, font-size, line-height
+@mixin button-size($size-props) {
+    --kendo-button-padding-x: #{map.get($size-props, padding-x)};
+    --kendo-button-padding-y: #{map.get($size-props, padding-y)};
+    --kendo-button-font-size: #{map.get($size-props, font-size)};
+    --kendo-button-line-height: #{map.get($size-props, line-height)};
+}
 
-        @each $size, $size-props in $sizes {
-            &.k-button-#{$size} {
-                --kendo-button-padding-x: #{map.get($size-props, padding-x)};
-                --kendo-button-padding-y: #{map.get($size-props, padding-y)};
-                --kendo-button-font-size: #{map.get($size-props, font-size)};
-                --kendo-button-line-height: #{map.get($size-props, line-height)};
-            }
+/// Generates button size selectors.
+/// @param {Map} $sizes - Map of size names to size property maps
+/// @param {String} $default-size [md] - The default size to apply on .k-button
+@mixin generate-button-sizes($sizes, $default-size: md) {
+    @include button-size(map.get($sizes, $default-size));
+
+    @each $size, $size-props in $sizes {
+        &.k-button-#{$size} {
+            @include button-size($size-props);
         }
     }
 }
 
-@mixin kendo-button-roundness-controller($roundness, $default-roundness: md) {
-    .k-button {
-        --kendo-button-radius: #{k-border-radius($default-roundness)};
+/// Pure setter mixin for button border radius.
+/// @param {String} $radius - Border radius size key
+@mixin button-roundness($radius) {
+    --kendo-button-radius: #{k-border-radius($radius)};
+}
 
-        @each $radius in $roundness {
-            &.k-rounded-#{$radius} {
-                --kendo-button-radius: #{k-border-radius($radius)};
-            }
+/// Generates button roundness selectors.
+/// @param {List} $roundness - List of roundness keys
+/// @param {String} $default-roundness [md] - The default roundness to apply on .k-button
+@mixin generate-button-roundness($roundness, $default-roundness: md) {
+    @include button-roundness($default-roundness);
+
+    @each $radius in $roundness {
+        &.k-rounded-#{$radius} {
+            @include button-roundness($radius);
         }
     }
 }
 
 @mixin kendo-button--layout-base() {
-    @include kendo-button-sizes-controller($kendo-button-sizes, md);
-    @include kendo-button-roundness-controller($kendo-button-roundness, md);
 
     // Button
     .k-button {
+        // Size defaults and variants
+        @include generate-button-sizes($kendo-button-sizes, md);
+
+        // Roundness defaults and variants
+        @include generate-button-roundness($kendo-button-roundness, md);
+
         box-sizing: border-box;
         border-width: $kendo-button-border-width;
         border-style: solid;
@@ -164,34 +179,11 @@
             }
         }
 
-        &.k-button-outline {
-
-            &::after {
-                box-shadow: 0 0 0 2px currentColor;
-                display: block;
-            }
-
-            &:focus::after,
-            &.k-focus::after {
-                opacity: $kendo-flat-button-focus-ring-opacity;
-            }
-        }
-
         // Link button
         &.k-button-link {
             &:hover,
             &.k-hover {
                 text-decoration: underline;
-            }
-
-            &::after {
-                box-shadow: inset 0 0 0 2px currentColor;
-                display: block;
-            }
-
-            &:focus::after,
-            &.k-focus::after {
-                opacity: $kendo-flat-button-focus-ring-opacity;
             }
         }
 

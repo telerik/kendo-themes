@@ -9,6 +9,7 @@
 $kendo-button-border-width: 1px !default;
 
 /// The border radius of the Button.
+/// @deprecated Use `$kendo-button-roundness` list and `.k-rounded-{size}` classes instead.
 /// @group button
 $kendo-button-border-radius: null !default;
 
@@ -203,6 +204,7 @@ $kendo-button-pulsing-opacity: .4 !default;
 
 // Solid Button
 /// The gradient of the solid Button.
+/// @deprecated Use `$kendo-button-gradient` instead.
 /// @group button
 $kendo-solid-button-gradient: none !default;
 /// The shadow of the solid Button.

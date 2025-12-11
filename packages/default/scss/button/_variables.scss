@@ -9,6 +9,7 @@
 $kendo-button-border-width: 1px !default;
 
 /// The border radius of the Button.
+/// @deprecated Use `$kendo-button-roundness` list and `.k-rounded-{size}` classes instead.
 /// @group button
 $kendo-button-border-radius: null !default;
 
@@ -153,7 +154,7 @@ $kendo-button-active-bg: k-color(base-active) !default;
 $kendo-button-active-text: $kendo-button-text !default;
 /// The base border color of the active Button.
 /// @group button
-$kendo-button-active-border: $kendo-button-active-bg !default;
+$kendo-button-active-border: k-color(border) !default;
 /// The base background gradient of the active Button.
 /// @group button
 $kendo-button-active-gradient: null !default;
@@ -179,7 +180,7 @@ $kendo-button-selected-shadow: $kendo-button-active-shadow !default;
 
 /// The base shadow of the focused Button.
 /// @group button
-$kendo-button-focus-shadow: 0 0 0 2px color-mix(in srgb, var(--kendo-button-bg) 30%, transparent) !default;
+$kendo-button-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
 
 /// The base background of the disabled Button.
 /// @group button
@@ -203,6 +204,7 @@ $kendo-button-pulsing-opacity: .4 !default;
 
 // Solid Button
 /// The button gradient of the Button.
+/// @deprecated Use `$kendo-button-gradient` instead.
 /// @group button
 $kendo-solid-button-gradient: null !default;
 /// The shadow of the Button.

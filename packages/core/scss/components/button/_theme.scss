@@ -6,116 +6,173 @@
 @use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-button-appearance-controller($theme-colors) {
-    .k-button {
+/// Pure setter mixin for button appearance (default/base state).
+/// @param {Color} $text - Text color
+/// @param {Color} $bg - Background color
+/// @param {Color} $border - Border color
+/// @param {Color} $hover-text - Hover text color
+/// @param {Color} $hover-bg - Hover background color
+/// @param {Color} $hover-border - Hover border color
+/// @param {Color} $active-text - Active text color
+/// @param {Color} $active-bg - Active background color
+/// @param {Color} $active-border - Active border color
+/// @param {String} $focus-shadow - Focus shadow
+@mixin button-appearance(
+    $text,
+    $bg,
+    $border,
+    $hover-text,
+    $hover-bg,
+    $hover-border,
+    $active-text,
+    $active-bg,
+    $active-border,
+    $focus-shadow
+) {
+    --kendo-button-text: #{$text};
+    --kendo-button-bg: #{$bg};
+    --kendo-button-border: #{$border};
+    --kendo-button-hover-text: #{$hover-text};
+    --kendo-button-hover-bg: #{$hover-bg};
+    --kendo-button-hover-border: #{$hover-border};
+    --kendo-button-active-text: #{$active-text};
+    --kendo-button-active-bg: #{$active-bg};
+    --kendo-button-active-border: #{$active-border};
+    --kendo-button-focus-shadow: #{$focus-shadow};
+}
 
-        // Base (Default)
-        --kendo-button-text: #{$kendo-button-text};
-        --kendo-button-bg: #{$kendo-button-bg};
-        --kendo-button-border: #{$kendo-button-border};
-        --kendo-button-hover-text: #{$kendo-button-hover-text};
-        --kendo-button-hover-bg: #{$kendo-button-hover-bg};
-        --kendo-button-hover-border: #{$kendo-button-hover-border};
-        --kendo-button-active-text: #{$kendo-button-active-text};
-        --kendo-button-active-bg: #{$kendo-button-active-bg};
-        --kendo-button-active-border: #{$kendo-button-active-border};
+/// Pure setter mixin for solid button appearance based on theme color.
+/// @param {String} $color-name - Theme color name (e.g., primary, secondary)
+@mixin button-appearance-solid($color-name) {
+    @include button-appearance(
+        k-color(on-#{$color-name}),
+        k-color($color-name),
+        k-color($color-name),
+        k-color(on-#{$color-name}),
+        k-color(#{$color-name}-hover),
+        k-color(#{$color-name}-hover),
+        k-color(on-#{$color-name}),
+        k-color(#{$color-name}-active),
+        k-color(#{$color-name}-active),
+        if($kendo-solid-button-shadow, 0 0 $kendo-solid-button-shadow-blur $kendo-solid-button-shadow-spread color-mix(in srgb, k-color($color-name) ($kendo-solid-button-shadow-opacity * 100%), transparent), null)
+    );
+}
 
-        // Base (Default) - Selected
-        &.k-selected {
-            --kendo-button-active-text: #{$kendo-button-selected-text};
-            --kendo-button-active-bg: #{$kendo-button-selected-bg};
-            --kendo-button-active-border: #{$kendo-button-selected-border};
+/// Pure setter mixin for outline button appearance based on theme color.
+/// @param {String} $color-name - Theme color name (e.g., primary, secondary)
+@mixin button-appearance-outline($color-name) {
+    @include button-appearance(
+        k-color(#{$color-name}-on-surface),
+        transparent,
+        currentColor,
+        k-color(on-#{$color-name}),
+        k-color($color-name),
+        k-color($color-name),
+        k-color(on-#{$color-name}),
+        k-color($color-name),
+        k-color($color-name),
+        if($kendo-outline-button-shadow, 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread color-mix(in srgb, k-color($color-name) ($kendo-outline-button-shadow-opacity * 100%), transparent), null)
+    );
+}
+
+/// Pure setter mixin for flat/clear button appearance based on theme color.
+/// @param {String} $color-name - Theme color name (e.g., primary, secondary)
+@mixin button-appearance-flat($color-name) {
+    @include button-appearance(
+        k-color(#{$color-name}-on-surface),
+        transparent,
+        transparent,
+        k-color(#{$color-name}-on-surface),
+        transparent,
+        transparent,
+        k-color(#{$color-name}-on-surface),
+        transparent,
+        transparent,
+        null
+    );
+}
+
+/// Pure setter mixin for link button appearance based on theme color.
+/// @param {String} $color-name - Theme color name (e.g., primary, secondary)
+@mixin button-appearance-link($color-name) {
+    @include button-appearance(
+        k-color($color-name),
+        transparent,
+        transparent,
+        k-color(#{$color-name}-hover),
+        transparent,
+        transparent,
+        k-color(#{$color-name}-active),
+        transparent,
+        transparent,
+        if($kendo-link-button-shadow, 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread color-mix(in srgb, k-color($color-name) ($kendo-link-button-shadow-opacity * 100%), transparent), null)
+    );
+}
+
+/// Generates button appearance selectors for all fill modes and theme colors.
+/// @param {Map} $theme-colors - Map of theme color names to colors
+@mixin generate-button-appearance($theme-colors) {
+    // Default appearance (base solid) - applied directly on .k-button
+    @include button-appearance(
+        $kendo-button-text,
+        $kendo-button-bg,
+        $kendo-button-border,
+        $kendo-button-hover-text,
+        $kendo-button-hover-bg,
+        $kendo-button-hover-border,
+        $kendo-button-active-text,
+        $kendo-button-active-bg,
+        $kendo-button-active-border,
+        $kendo-button-focus-shadow
+    );
+
+    // Default selected state
+    &.k-selected {
+        --kendo-button-active-text: #{$kendo-button-selected-text};
+        --kendo-button-active-bg: #{$kendo-button-selected-bg};
+        --kendo-button-active-border: #{$kendo-button-selected-border};
+    }
+
+    @each $name, $color in $theme-colors {
+        // Solid (default fill mode for theme colors)
+        &.k-button-#{$name},
+        &.k-button-#{$name}.k-button-solid {
+            @include button-appearance-solid($name);
         }
 
-        @each $name, $color in $theme-colors {
-
-            // Solid (Default)
-            &.k-button-#{$name},
-            &.k-button-#{$name}.k-button-solid {
-                --kendo-button-text: #{k-color(on-#{$name})};
-                --kendo-button-bg: #{k-color($name)};
-                --kendo-button-border: #{k-color($name)};
-                --kendo-button-hover-text: #{k-color(on-#{$name})};
-                --kendo-button-hover-bg: #{k-color(#{$name}-hover)};
-                --kendo-button-hover-border: #{k-color(#{$name}-hover)};
-                --kendo-button-active-text: #{k-color(on-#{$name})};
-                --kendo-button-active-bg: #{k-color(#{$name}-active)};
-                --kendo-button-active-border: #{k-color(#{$name}-active)};
-            }
-
-            // Outline
-            &.k-button-#{$name}.k-button-outline {
-                --kendo-button-text: #{k-color(#{$name}-on-surface)};
-                --kendo-button-bg: transparent;
-                --kendo-button-border: currentColor;
-                --kendo-button-hover-text: #{k-color(on-#{$name})};
-                --kendo-button-hover-bg: #{k-color($name)};
-                --kendo-button-hover-border: #{k-color($name)};
-                --kendo-button-active-text: #{k-color(on-#{$name})};
-                --kendo-button-active-bg: #{k-color($name)};
-                --kendo-button-active-border: #{k-color($name)};
-            }
-
-            // Flat
-            &.k-button-#{$name}.k-button-flat {
-                --kendo-button-text: #{k-color(#{$name}-on-surface)};
-                --kendo-button-bg: transparent;
-                --kendo-button-border: transparent;
-                --kendo-button-hover-text: #{k-color(#{$name}-on-surface)};
-                --kendo-button-hover-bg: transparent;
-                --kendo-button-hover-border: transparent;
-                --kendo-button-active-text: #{k-color(#{$name}-on-surface)};
-                --kendo-button-active-bg: transparent;
-                --kendo-button-active-border: transparent;
-            }
-
-            // Link
-            &.k-button-#{$name}.k-button-link {
-                --kendo-button-text: #{k-color(#{$name}-on-surface)};
-                --kendo-button-bg: transparent;
-                --kendo-button-border: transparent;
-                --kendo-button-hover-text: #{k-color(#{$name}-on-surface)};
-                --kendo-button-hover-bg: transparent;
-                --kendo-button-hover-border: transparent;
-                --kendo-button-active-text: #{k-color(#{$name}-on-surface)};
-                --kendo-button-active-bg: transparent;
-                --kendo-button-active-border: transparent;
-            }
-
-            // Clear
-            &.k-button-#{$name}.k-button-clear {
-                --kendo-button-text: #{k-color(#{$name}-on-surface)};
-                --kendo-button-bg: transparent;
-                --kendo-button-border: transparent;
-                --kendo-button-hover-text: #{k-color(#{$name}-on-surface)};
-                --kendo-button-hover-bg: transparent;
-                --kendo-button-hover-border: transparent;
-                --kendo-button-active-text: #{k-color(#{$name}-on-surface)};
-                --kendo-button-active-bg: transparent;
-                --kendo-button-active-border: transparent;
-            }
+        // Outline
+        &.k-button-outline,
+        &.k-button-#{$name}.k-button-outline {
+            @include button-appearance-outline($name);
         }
 
-        // Base (Theme Color)
-        &.k-button-base,
-        &.k-button-base.k-button-solid {
-            --kendo-button-border: #{$kendo-button-border};
+        // Flat
+        &.k-button-flat,
+        &.k-button-#{$name}.k-button-flat {
+            @include button-appearance-flat($name);
+        }
 
-            // Base (Theme Color) - Selected
-            &.k-selected {
-                --kendo-button-active-text: #{$kendo-button-selected-text};
-                --kendo-button-active-bg: #{$kendo-button-selected-bg};
-                --kendo-button-active-border: #{$kendo-button-selected-border};
-            }
+        // Link
+        &.k-button-link,
+        &.k-button-#{$name}.k-button-link {
+            @include button-appearance-link($name);
+        }
+
+        // Clear
+        &.k-button-clear,
+        &.k-button-#{$name}.k-button-clear {
+            @include button-appearance-flat($name);
         }
     }
 }
 
 @mixin kendo-button--theme-base() {
-    @include kendo-button-appearance-controller($kendo-button-theme-colors);
 
     // Apply CSS properties from variables
     .k-button {
+        // Appearance defaults and variants
+        @include generate-button-appearance($kendo-button-theme-colors);
+
         color: var(--kendo-button-text);
         background-color: var(--kendo-button-bg);
         border-color: var(--kendo-button-border);
@@ -133,7 +190,7 @@
         // Focus state
         &:focus,
         &.k-focus {
-            @include focus-indicator($kendo-button-focus-shadow, true, true);
+            @include focus-indicator( var(--kendo-button-focus-shadow), true, true );
         }
 
         // Active state
