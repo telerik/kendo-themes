@@ -1,4 +1,4 @@
-import { MultiSelectGrouping, MultiSelectGroupingModern } from "../../multiselect";
+import { MultiSelectGrouping } from "../../multiselect";
 
 const styles = `
     #test-area {
@@ -22,16 +22,6 @@ export default () => (
             </div>
             <div dir="rtl">
                 <MultiSelectGrouping placeholder="MultiSelect..." />
-            </div>
-
-            <span>Modern MultiSelect Grouping</span>
-            <span>Modern MultiSelect Grouping RTL</span>
-
-            <div>
-                <MultiSelectGroupingModern placeholder="MultiSelect..." />
-            </div>
-            <div dir="rtl">
-                <MultiSelectGroupingModern placeholder="MultiSelect..." />
             </div>
         </div>
     </>

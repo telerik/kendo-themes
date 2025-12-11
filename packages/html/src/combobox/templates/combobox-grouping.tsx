@@ -11,7 +11,8 @@ export const ComboboxGrouping = (props) => (
                     <ListItem>List group 1 item 2</ListItem>
                     <ListItem>List group 1 item 3</ListItem>
                 </ListGroup>
-                <ListGroup label={"Group 2"} >
+                <ListGroup>
+                    <ListItem group>Group 2</ListItem>
                     <ListItem>List group 1 item 1</ListItem>
                     <ListItem>List group 1 item 2</ListItem>
                     <ListItem>List group 1 item 3</ListItem>

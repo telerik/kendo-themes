@@ -20,14 +20,14 @@ export default () =>(
             <span>Static list</span>
             <span>Virtual list</span>
 
-            <section>
+            <section dir="rtl">
                 <ListNormal>
                     <ListItem>List Item</ListItem>
                     <ListItem>List Item</ListItem>
                 </ListNormal>
             </section>
 
-            <section>
+            <section dir="rtl">
                 <ListVirtualization>
                     <ListItem>List Item</ListItem>
                     <ListItem>List Item</ListItem>
@@ -37,7 +37,7 @@ export default () =>(
             <span>Static list with icons and actions</span>
             <span>Virtual list with icons and actions</span>
 
-            <section>
+            <section dir="rtl">
                 <ListNormal>
                     <ListItem iconName="gear">Icon</ListItem>
                     <ListItem iconName="gear"
@@ -92,7 +92,7 @@ export default () =>(
                 </ListNormal>
             </section>
 
-            <section>
+            <section dir="rtl">
                 <ListVirtualization>
                     <ListItem iconName="gear">Icon</ListItem>
                     <ListItem iconName="gear"

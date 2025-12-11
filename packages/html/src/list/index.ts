@@ -1,6 +1,5 @@
 export * from './list.spec';
 export * from './list-container.spec';
-export * from './list-angular.spec';
 export * from './list-item.spec';
 export * from './list-content';
 export * from './list-header';
@@ -11,7 +10,4 @@ export * from './list-custom-value';
 export * from "./templates/list-normal";
 export * from "./templates/list-virtualization";
 export * from "./templates/list-grouping";
-export * from "./templates/list-virualization-grouping";
-export * from "./templates/list-virtualization-angular";
-export * from "./templates/list-grouping-angular";
-export * from "./templates/list-virualization-grouping-angular";
+export * from "./templates/list-virtualization-grouping";

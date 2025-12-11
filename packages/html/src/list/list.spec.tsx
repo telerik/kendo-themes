@@ -1,5 +1,8 @@
 import { classNames, optionClassNames, Size } from '../misc';
-import { ListItem, ListGroup, ListContent } from '../list';
+import { ListItem } from './list-item.spec';
+import { ListGroup } from './list-group';
+import { ListGroupItem } from './list-group-item';
+import { ListHeader } from './list-header';
 import { NoData } from '../nodata';
 
 import { KendoComponent } from '../_types/component';
@@ -48,52 +51,89 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
     let listGroup: string | number | boolean | React.JSX.Element | null | undefined;
     let listContent: string | number | boolean | React.JSX.Element | null | undefined;
     let listNoData: React.JSX.Element | undefined;
-    const listChildren : React.JSX.Element[] = [];
+    const groupElements: React.JSX.Element[] = [];
+    const listChildren: React.JSX.Element[] = [];
 
     if (children) {
-        children.map((child, index) => {
-            if ( child.type === ListGroup) {
-                if (child.props.root === true) {
-                    listHeader = child.props.label;
+        const hasGroups = children.some(child => child.type === ListGroup);
 
-                    child.props.children.map( (optChild, index) => {
-                        listChildren.push(
-                            <ListItem
-                                key={`optChild-${index}-${new Date().getTime()}`}
-                                {...optChild.props}
-                            />
-                        );
-                    });
+        if (hasGroups) {
+            // Handle grouped list
+            children.forEach((child, groupIndex) => {
+                if (child.type === ListGroup) {
+                    const groupChildren: React.JSX.Element[] = [];
+                    if (child.props.root === true) {
+                        listHeader = child.props.label;
 
-                } else {
-                    child.props.children.forEach( ( optChild, index ) => {
-                        let groupLabel = '';
-
-                        if ( index === 0 ) {
-                            groupLabel = child.props.label;
+                        // Add group items directly (no group header item)
+                        if (child.props.children) {
+                            child.props.children.forEach((optChild, itemIndex) => {
+                                groupChildren.push(
+                                    <ListItem
+                                        key={`root-group-item-${itemIndex}`}
+                                        {...optChild.props}
+                                    />
+                                );
+                            });
+                        }
+                    } else {
+                        // Non-root group - add group header as first item
+                        if (child.props.label) {
+                            groupChildren.push(
+                                <ListGroupItem
+                                    key={`group-header-${groupIndex}`}
+                                    groupIconName={child.props.groupIconName}
+                                >
+                                    {child.props.label}
+                                </ListGroupItem>
+                            );
                         }
 
-                        listChildren.push(
-                            <ListItem
-                                className={index === 0 ? 'k-first' : ''}
-                                key={`groupLabel-${index}-${new Date().getTime()}`}
-                                {...optChild.props}
-                                groupLabel={groupLabel}
-                            />
-                        );
-                    });
+                        // Add group items
+                        if (child.props.children) {
+                            child.props.children.forEach((optChild, itemIndex) => {
+                                const listItem = (
+                                    <ListItem
+                                        key={`group-${groupIndex}-item-${itemIndex}`}
+                                        {...optChild.props}
+                                    />
+                                );
+                                groupChildren.push(listItem);
+                                listChildren.push(listItem);
+                            });
+                        }
+                    }
+
+                    groupElements.push(
+                        <ul key={`ul-${groupIndex}`} className="k-list-ul">
+                            {groupChildren}
+                        </ul>
+                    );
                 }
+            });
 
-                listGroup = <ListGroup label={listHeader} virtualization={virtualization}>{listChildren}</ListGroup>;
-
-            } else if ( child.type === ListItem ) {
-                listChildren.push( <ListItem key={`${child.type}-${index}`} {...child.props} /> );
-                listContent = <ListContent virtualization={virtualization}>{listChildren}</ListContent>;
-                screenReaders && (listNoData = <NoData className="k-sr-only">{listChildren.length} items found.</NoData>);
-            }
-        });
+            listGroup = (
+                <>
+                    {listHeader && <ListHeader>{listHeader}</ListHeader>}
+                    <div className="k-list-content">
+                        {groupElements}
+                    </div>
+                </>
+            );
+            screenReaders && (listNoData = <NoData className="k-sr-only">{listChildren.length} items found.</NoData>);
+        } else {
+            // Handle non-grouped list - direct ListItem children
+            listContent = (
+                <div className="k-list-content">
+                    <ul className="k-list-ul">
+                        {children}
+                    </ul>
+                </div>
+            );
+            screenReaders && (listNoData = <NoData className="k-sr-only">{children.length} items found.</NoData>);
+        }
     } else {
-        listNoData = <NoData>No data found.</NoData>;
+        listContent = <NoData>No data found.</NoData>;
     }
 
     return (

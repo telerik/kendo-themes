@@ -1,4 +1,4 @@
-import { List, ListGroup, ListItem } from "../../list";
+import { ListGroup, ListItem, List } from "..";
 
 export const ListWithGrouping = (props) => (
     <List {...props}>
