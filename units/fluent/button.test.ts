@@ -9,6 +9,7 @@ const className = Button.className;
 const dependencyClassNames = ["k-badge", "k-svg-icon"];
 
 const expected = [
+    "kendo-button-border-radius", // Deprecated: Use $kendo-button-roundness and .k-rounded-{size} classes instead.
     "kendo-button-calc-size", // Variable customizations work, but is used by another variable.
     "kendo-button-inner-calc-size", // Variable customizations work, but is used by another variable.
     "kendo-button-border-width", // Variable customizations work, but is used by another variable.
