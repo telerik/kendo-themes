@@ -1,7 +1,7 @@
-import { ListAngular, ListGroup, ListItem } from "../../list";
+import { List, ListGroup, ListItem } from "..";
 
-export const AngularListWithGrouping = (props) => (
-    <ListAngular {...props}>
+export const VirtualListWithGrouping = (props) => (
+    <List {...props} virtualization>
         <ListGroup label="Group 1" root>
             <ListItem>List item 1.1</ListItem>
             <ListItem>List item 1.2</ListItem>
@@ -12,5 +12,5 @@ export const AngularListWithGrouping = (props) => (
             <ListItem>List item 2.2</ListItem>
             <ListItem>List item 2.3</ListItem>
         </ListGroup>
-    </ListAngular>
+    </List>
 );

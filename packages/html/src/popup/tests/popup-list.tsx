@@ -1,4 +1,4 @@
-import { List, ListAngular, ListItem } from '../../list';
+import { List, ListItem } from '../../list';
 import { Popup } from '../../popup';
 
 
@@ -100,71 +100,6 @@ export default () =>(
                         <ListItem>Tennis</ListItem>
                         <ListItem>Volleyball</ListItem>
                     </List>
-                </Popup>
-            </section>
-
-            <span>Angular</span>
-            <span>Angular virtual</span>
-            <span>Angular (rtl)</span>
-            <span>Angular virtual (rtl)</span>
-
-            <section>
-                <Popup className="k-list-container">
-                    <ListAngular>
-                        <ListItem>Baseball</ListItem>
-                        <ListItem>Basketball</ListItem>
-                        <ListItem>Cricket</ListItem>
-                        <ListItem>Field Hockey</ListItem>
-                        <ListItem>Football</ListItem>
-                        <ListItem>Table Tennis</ListItem>
-                        <ListItem>Tennis</ListItem>
-                        <ListItem>Volleyball</ListItem>
-                    </ListAngular>
-                </Popup>
-            </section>
-
-            <section>
-                <Popup className="k-list-container">
-                    <ListAngular virtualization>
-                        <ListItem>Baseball</ListItem>
-                        <ListItem>Basketball</ListItem>
-                        <ListItem>Cricket</ListItem>
-                        <ListItem>Field Hockey</ListItem>
-                        <ListItem>Football</ListItem>
-                        <ListItem>Table Tennis</ListItem>
-                        <ListItem>Tennis</ListItem>
-                        <ListItem>Volleyball</ListItem>
-                    </ListAngular>
-                </Popup>
-            </section>
-
-            <section dir="rtl">
-                <Popup className="k-list-container">
-                    <ListAngular>
-                        <ListItem>Baseball</ListItem>
-                        <ListItem>Basketball</ListItem>
-                        <ListItem>Cricket</ListItem>
-                        <ListItem>Field Hockey</ListItem>
-                        <ListItem>Football</ListItem>
-                        <ListItem>Table Tennis</ListItem>
-                        <ListItem>Tennis</ListItem>
-                        <ListItem>Volleyball</ListItem>
-                    </ListAngular>
-                </Popup>
-            </section>
-
-            <section dir="rtl">
-                <Popup className="k-list-container">
-                    <ListAngular virtualization>
-                        <ListItem>Baseball</ListItem>
-                        <ListItem>Basketball</ListItem>
-                        <ListItem>Cricket</ListItem>
-                        <ListItem>Field Hockey</ListItem>
-                        <ListItem>Football</ListItem>
-                        <ListItem>Table Tennis</ListItem>
-                        <ListItem>Tennis</ListItem>
-                        <ListItem>Volleyball</ListItem>
-                    </ListAngular>
                 </Popup>
             </section>
 

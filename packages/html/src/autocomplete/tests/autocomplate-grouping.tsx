@@ -1,4 +1,4 @@
-import { AutocompleteGrouping, AutocompleteGroupingModern } from "..";
+import { AutocompleteGrouping } from "..";
 
 const styles = `
     #test-area {
@@ -22,16 +22,6 @@ export default () => (
             </div>
             <div dir="rtl">
                 <AutocompleteGrouping placeholder="Autocomplete..." />
-            </div>
-
-            <span>Modern Autocomplete Grouping</span>
-            <span>Modern Autocomplete Grouping RTL</span>
-
-            <div>
-                <AutocompleteGroupingModern placeholder="Autocomplete..." />
-            </div>
-            <div dir="rtl">
-                <AutocompleteGroupingModern placeholder="Autocomplete..." />
             </div>
         </div>
     </>

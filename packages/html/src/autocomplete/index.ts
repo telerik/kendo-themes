@@ -5,6 +5,5 @@ export * from './templates/autocomplete-adaptive';
 export * from './templates/autocomplete-prefix';
 export * from './templates/autocomplete-suffix';
 export * from './templates/autocomplete-grouping';
-export * from './templates/autocomplete-grouping-modern';
 export * from './templates/autocomplete-custom-value';
 export * from './templates/autocomplete-grouping-modern-custom-value';
