@@ -1,4 +1,6 @@
 // List
+$kendo-list-container-padding-block: null !default;
+$kendo-list-container-padding-inline: null !default;
 
 $kendo-list-default-size: null !default;
 
@@ -71,6 +73,9 @@ $kendo-list-item-font-size: null !default;
 $kendo-list-sm-item-font-size: null !default;
 $kendo-list-md-item-font-size: null !default;
 $kendo-list-lg-item-font-size: null !default;
+
+$kendo-list-item-gap: null !default;
+$kendo-list-item-spacing: null !default;
 
 $kendo-list-item-line-height: null !default;
 $kendo-list-sm-item-line-height: null !default;
@@ -185,6 +190,7 @@ $kendo-list-header-shadow: null !default;
 
 $kendo-list-item-bg: null !default;
 $kendo-list-item-text: null !default;
+$kendo-list-item-border-radius: null !default;
 
 $kendo-list-item-hover-bg: null !default;
 $kendo-list-item-hover-text: null !default;
@@ -205,3 +211,8 @@ $kendo-list-group-item-border: null !default;
 $kendo-list-group-item-shadow: null !default;
 
 $kendo-list-option-label-text: null !default;
+
+$kendo-list-item-description-font-size: null !default;
+$kendo-list-item-description-line-height: null !default;
+$kendo-list-item-description-text: null !default;
+
