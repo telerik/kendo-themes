@@ -12,6 +12,10 @@
             $kendo-list-bg,
             $kendo-list-border
         );
+
+        .k-list-ul:first-of-type .k-list-group-item {
+            box-shadow: none;
+        }
     }
 
 
@@ -92,6 +96,10 @@
             $kendo-list-bg,
             $kendo-list-text
         );
+    }
+
+    .k-list .k-list-item-description {
+        color: $kendo-list-item-description-text;
     }
 
 }
