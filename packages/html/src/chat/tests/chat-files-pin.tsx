@@ -1,7 +1,9 @@
-import { ChatHeader, ChatNormal, ChatMessage, ChatFileWrapper, ChatFile, ChatMessageReference, ChatMessageGroup } from '..';
+import { ChatHeader, ChatNormal, ChatMessage, ChatMessageReference, ChatMessageGroup } from '..';
 import { Popup } from '../../popup';
 import { MenuListItem } from '../../menu';
 import { ContextMenu } from '../../context-menu';
+import { ToolbarItem } from '../../toolbar';
+import { FileBoxWrapper, FileBox } from '../../file-box';
 
 const styles = `
     .k-chat {
@@ -35,9 +37,9 @@ export default () => (
                     <ChatMessageGroup avatar={null}>
                         <ChatMessage files={
                             <>
-                                <ChatFileWrapper>
-                                    <ChatFile />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper layout='vertical'>
+                                    <FileBox />
+                                </FileBoxWrapper>
                             </>
                         } />
                     </ChatMessageGroup>
@@ -45,16 +47,16 @@ export default () => (
             </section>
 
             <section>
-                <ChatNormal pinned={<ChatMessageReference pinned content={<ChatFile />} closeable />}>
+                <ChatNormal pinned={<ChatMessageReference pinned content={<FileBox />} closeable />}>
                     <ChatMessageGroup type="sender" avatar={null}>
                         <ChatMessage />
                     </ChatMessageGroup>
                     <ChatMessageGroup avatar={null}>
                         <ChatMessage files={
                             <>
-                                <ChatFileWrapper>
-                                    <ChatFile />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper layout='vertical'>
+                                    <FileBox />
+                                </FileBoxWrapper>
                             </>
                         } />
                     </ChatMessageGroup>
@@ -62,17 +64,17 @@ export default () => (
             </section>
 
             <section>
-                <ChatNormal header={<ChatHeader>Alex</ChatHeader>}
-                    pinned={<ChatMessageReference pinned content={<ChatFile />} closeable />}>
+                <ChatNormal header={<ChatHeader><ToolbarItem>Alex</ToolbarItem></ChatHeader>}
+                    pinned={<ChatMessageReference pinned content={<FileBox />} closeable />}>
                     <ChatMessageGroup type="sender" avatar={null}>
                         <ChatMessage />
                     </ChatMessageGroup>
                     <ChatMessageGroup avatar={null}>
                         <ChatMessage files={
                             <>
-                                <ChatFileWrapper>
-                                    <ChatFile />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper layout='vertical'>
+                                    <FileBox />
+                                </FileBoxWrapper>
                             </>
                         } />
                     </ChatMessageGroup>
@@ -82,7 +84,7 @@ export default () => (
             <Popup className="k-menu-popup receiver">
                 <ContextMenu>
                     <MenuListItem first text="Download" icon="download"></MenuListItem>
-                    <MenuListItem text="Pin" icon="pin" selected></MenuListItem>
+                    <MenuListItem text="Pin" icon="pin-outline" selected></MenuListItem>
                 </ContextMenu>
             </Popup>
 
@@ -97,39 +99,39 @@ export default () => (
                     </ChatMessageGroup>
                     <ChatMessageGroup type="sender" avatar={null}>
                         <ChatMessage files={
-                            <ChatFileWrapper>
-                                <ChatFile />
-                            </ChatFileWrapper>
+                            <FileBoxWrapper layout='vertical'>
+                                <FileBox />
+                            </FileBoxWrapper>
                         } />
                     </ChatMessageGroup>
                 </ChatNormal>
             </section>
             <section>
-                <ChatNormal pinned={<ChatMessageReference type="sender" pinned content={<ChatFile />} closeable />}>
+                <ChatNormal pinned={<ChatMessageReference type="sender" pinned content={<FileBox />} closeable />}>
                     <ChatMessageGroup avatar={null}>
                         <ChatMessage />
                     </ChatMessageGroup>
                     <ChatMessageGroup type="sender" avatar={null}>
                         <ChatMessage files={
-                            <ChatFileWrapper>
-                                <ChatFile />
-                            </ChatFileWrapper>
+                            <FileBoxWrapper layout='vertical'>
+                                <FileBox />
+                            </FileBoxWrapper>
                         } />
                     </ChatMessageGroup>
                 </ChatNormal>
             </section>
 
             <section>
-                <ChatNormal header={<ChatHeader>Alex</ChatHeader>}
-                    pinned={<ChatMessageReference type="sender" pinned content={<ChatFile />} closeable />}>
+                <ChatNormal header={<ChatHeader><ToolbarItem>Alex</ToolbarItem></ChatHeader>}
+                    pinned={<ChatMessageReference type="sender" pinned content={<FileBox />} closeable />}>
                     <ChatMessageGroup avatar={null}>
                         <ChatMessage />
                     </ChatMessageGroup>
                     <ChatMessageGroup type="sender" avatar={null}>
                         <ChatMessage files={
-                            <ChatFileWrapper>
-                                <ChatFile />
-                            </ChatFileWrapper>
+                            <FileBoxWrapper layout='vertical'>
+                                <FileBox />
+                            </FileBoxWrapper>
                         } />
                     </ChatMessageGroup>
                 </ChatNormal>
@@ -138,7 +140,7 @@ export default () => (
             <Popup className="k-menu-popup sender">
                 <ContextMenu>
                     <MenuListItem first text="Download" icon="download"></MenuListItem>
-                    <MenuListItem text="Pin" icon="pin" selected></MenuListItem>
+                    <MenuListItem text="Pin" icon="pin-outline" selected></MenuListItem>
                     <MenuListItem last text="Delete" icon="trash"></MenuListItem>
                 </ContextMenu>
             </Popup>

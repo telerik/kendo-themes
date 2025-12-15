@@ -1,4 +1,4 @@
-import { Button } from '../button';
+import { Button, IconButton } from '../button';
 import { Icon } from '../icon';
 import { Toolbar } from '../toolbar';
 import { classNames, States } from '../misc';
@@ -26,6 +26,7 @@ const defaultOptions = {
     text: 'How can I help you?',
     status: 'Seen',
     toolbarItems: defaultToolbarItems,
+    failed: 'Failed to send'
 };
 
 export type KendoChatMessageProps = {
@@ -41,6 +42,7 @@ export type KendoChatMessageProps = {
     expanded?: boolean;
     removed?: boolean;
     files?: React.JSX.Element | React.JSX.Element[];
+    failed?: boolean | string,
 };
 
 export type KendoChatMessageState = { [K in (typeof states)[number]]?: boolean };
@@ -67,8 +69,11 @@ export const ChatMessage = (
         expanded,
         removed,
         files,
+        failed,
         ...other
     } = props;
+
+    const failedText = failed === true ? defaultOptions.failed : failed;
 
     return (
         <div
@@ -77,11 +82,11 @@ export const ChatMessage = (
                 CHATMESSAGE_CLASSNAME,
                 props.className,
                 {
-                    'k-message-removed': removed
+                    'k-message-removed': removed,
+                    'k-message-failed':  failed
                 }
             )}>
-            {time && <time className="k-message-time">{time}</time>}
-
+            { failed && <IconButton className="k-resend-button" icon="arrow-rotate-cw-outline" size="small" fillMode="clear" />}
             <ChatBubble
                 typing={typing}
                 selected={selected}
@@ -103,13 +108,21 @@ export const ChatMessage = (
                 files={files}
             >
             </ChatBubble>
+            <div className="k-message-info">
+                {status &&
+                    <span className="k-message-status">
+                        {statusIcon && <Icon icon={statusIcon} size="xsmall" />}
+                        {status}
+                    </span>
+                }
 
-            {status &&
-                <span className="k-message-status">
-                    {statusIcon && <Icon icon={statusIcon} size="xsmall" />}
-                    {status}
+                {time && <time className="k-message-time">{time}</time>}
+                { failed && <span className="k-message-failed-content">
+                    { failed && <Icon icon="warning-triangle" size="xsmall" />}
+                    { failed && <span className="k-message-failed-text">{failedText}</span>}
                 </span>
-            }
+                }
+            </div>
             {toolbar &&
                 <Toolbar className="k-chat-message-toolbar" fillMode="flat">
                     {toolbarItems}

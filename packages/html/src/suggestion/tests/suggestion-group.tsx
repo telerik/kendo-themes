@@ -19,7 +19,7 @@ export default () => (
                 <>
                     <section>{`${themeColor}`}</section>
                     <section>
-                        <SuggestionGroupNormal>
+                        <SuggestionGroupNormal scrollingPosition = "start">
                             <Suggestion themeColor={themeColor} text="Suggestion" />
                             <Suggestion themeColor={themeColor} text="Hover" hover />
                             <Suggestion themeColor={themeColor} text="Focus" focus />
@@ -28,7 +28,7 @@ export default () => (
                         </SuggestionGroupNormal>
                     </section>
                     <section>
-                        <SuggestionScrollableButtons>
+                        <SuggestionScrollableButtons scrollingPosition = "start">
                             <Suggestion themeColor={themeColor} text="Suggestion" />
                             <Suggestion themeColor={themeColor} text="Hover" hover />
                             <Suggestion themeColor={themeColor} text="Focus" focus />

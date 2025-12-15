@@ -1,5 +1,6 @@
-import { ChatHeader, ChatNormal, ChatMessage, ChatFileWrapper, ChatFile, ChatMessageReference, ChatMessageGroup } from '..';
-
+import { ChatHeader, ChatNormal, ChatMessage, ChatMessageReference, ChatMessageGroup } from '..';
+import { ToolbarItem } from '../../toolbar';
+import { FileBoxWrapper, FileBox } from '../../file-box';
 
 const styles = `
     .k-chat {
@@ -19,7 +20,7 @@ export default () =>(
             <section>
                  <ChatNormal dir="rtl" header={
                     <ChatHeader>
-                        Alex
+                        <ToolbarItem>Alex</ToolbarItem>
                     </ChatHeader>
                 }>
                     <ChatMessageGroup>
@@ -31,25 +32,25 @@ export default () =>(
                 </ChatNormal>
             </section>
             <section>
-                <ChatNormal dir="rtl" pinned={<ChatMessageReference pinned content={<ChatFile />} closeable />}>
+                <ChatNormal dir="rtl" pinned={<ChatMessageReference pinned content={<FileBox />} closeable />}>
                     <ChatMessageGroup avatar={null}>
                         <ChatMessage files={
                             <>
-                                <ChatFileWrapper>
-                                    <ChatFile />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper>
+                                    <FileBox />
+                                </FileBoxWrapper>
                             </>
                         } />
                     </ChatMessageGroup>
                 </ChatNormal>
             </section>
             <section>
-                <ChatNormal dir="rtl" pinned={<ChatMessageReference type="sender" pinned content={<ChatFile />} closeable />}>
+                <ChatNormal dir="rtl" pinned={<ChatMessageReference type="sender" pinned content={<FileBox />} closeable />}>
                     <ChatMessageGroup type="sender" avatar={null}>
                         <ChatMessage files={
-                            <ChatFileWrapper>
-                                <ChatFile />
-                            </ChatFileWrapper>
+                            <FileBoxWrapper>
+                                <FileBox />
+                            </FileBoxWrapper>
                         } />
                     </ChatMessageGroup>
                 </ChatNormal>
