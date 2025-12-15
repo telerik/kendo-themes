@@ -4049,6 +4049,418 @@ The following table lists the available variables for customizing the Theme Core
 
 
 
+### `button-size`
+
+Pure setter mixin for button size properties.
+
+
+#### Syntax
+
+```scss
+@include button-size($size-props);
+```
+#### Parameters
+
+
+`<Map> $size-props`
+: Map containing padding-x, padding-y, font-size, line-height
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/components/button/_layout.scss#L12-L17
+@mixin button-size($size-props) {
+    --kendo-button-padding-x: #{map.get($size-props, padding-x)};
+    --kendo-button-padding-y: #{map.get($size-props, padding-y)};
+    --kendo-button-font-size: #{map.get($size-props, font-size)};
+    --kendo-button-line-height: #{map.get($size-props, line-height)};
+}
+```
+
+### `generate-button-sizes`
+
+Generates button size selectors.
+
+
+#### Syntax
+
+```scss
+@include generate-button-sizes($sizes, $default-size);
+```
+#### Parameters
+
+
+`<Map> $sizes`
+: Map of size names to size property maps
+
+`<String> $default-size`
+: The default size to apply on .k-button
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/components/button/_layout.scss#L22-L30
+@mixin generate-button-sizes($sizes, $default-size) {
+    @include button-size(map.get($sizes, $default-size));
+
+    @each $size, $size-props in $sizes {
+        &.k-button-#{$size} {
+            @include button-size($size-props);
+        }
+    }
+}
+```
+
+### `button-roundness`
+
+Pure setter mixin for button border radius.
+
+
+#### Syntax
+
+```scss
+@include button-roundness($radius);
+```
+#### Parameters
+
+
+`<String> $radius`
+: Border radius size key
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/components/button/_layout.scss#L34-L36
+@mixin button-roundness($radius) {
+    --kendo-button-radius: #{k-border-radius($radius)};
+}
+```
+
+### `generate-button-roundness`
+
+Generates button roundness selectors.
+
+
+#### Syntax
+
+```scss
+@include generate-button-roundness($roundness, $default-roundness);
+```
+#### Parameters
+
+
+`<List> $roundness`
+: List of roundness keys
+
+`<String> $default-roundness`
+: The default roundness to apply on .k-button
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/components/button/_layout.scss#L41-L49
+@mixin generate-button-roundness($roundness, $default-roundness) {
+    @include button-roundness($default-roundness);
+
+    @each $radius in $roundness {
+        &.k-rounded-#{$radius} {
+            @include button-roundness($radius);
+        }
+    }
+}
+```
+
+### `button-appearance`
+
+Pure setter mixin for button appearance (default/base state).
+
+
+#### Syntax
+
+```scss
+@include button-appearance($text, $bg, $border, $hover-text, $hover-bg, $hover-border, $active-text, $active-bg, $active-border, $focus-shadow);
+```
+#### Parameters
+
+
+`<Color> $text`
+: Text color
+
+`<Color> $bg`
+: Background color
+
+`<Color> $border`
+: Border color
+
+`<Color> $hover-text`
+: Hover text color
+
+`<Color> $hover-bg`
+: Hover background color
+
+`<Color> $hover-border`
+: Hover border color
+
+`<Color> $active-text`
+: Active text color
+
+`<Color> $active-bg`
+: Active background color
+
+`<Color> $active-border`
+: Active border color
+
+`<String> $focus-shadow`
+: Focus shadow
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/components/button/_theme.scss#L20-L42
+@mixin button-appearance($text, $bg, $border, $hover-text, $hover-bg, $hover-border, $active-text, $active-bg, $active-border, $focus-shadow) {
+    --kendo-button-text: #{$text};
+    --kendo-button-bg: #{$bg};
+    --kendo-button-border: #{$border};
+    --kendo-button-hover-text: #{$hover-text};
+    --kendo-button-hover-bg: #{$hover-bg};
+    --kendo-button-hover-border: #{$hover-border};
+    --kendo-button-active-text: #{$active-text};
+    --kendo-button-active-bg: #{$active-bg};
+    --kendo-button-active-border: #{$active-border};
+    --kendo-button-focus-shadow: #{$focus-shadow};
+}
+```
+
+### `button-appearance-solid`
+
+Pure setter mixin for solid button appearance based on theme color.
+
+
+#### Syntax
+
+```scss
+@include button-appearance-solid($color-name);
+```
+#### Parameters
+
+
+`<String> $color-name`
+: Theme color name (e.g., primary, secondary)
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/components/button/_theme.scss#L46-L59
+@mixin button-appearance-solid($color-name) {
+    @include button-appearance(
+        k-color(on-#{$color-name}),
+        k-color($color-name),
+        k-color($color-name),
+        k-color(on-#{$color-name}),
+        k-color(#{$color-name}-hover),
+        k-color(#{$color-name}-hover),
+        k-color(on-#{$color-name}),
+        k-color(#{$color-name}-active),
+        k-color(#{$color-name}-active),
+        if($kendo-solid-button-shadow, 0 0 $kendo-solid-button-shadow-blur $kendo-solid-button-shadow-spread color-mix(in srgb, k-color($color-name) ($kendo-solid-button-shadow-opacity * 100%), transparent), null)
+    );
+}
+```
+
+### `button-appearance-outline`
+
+Pure setter mixin for outline button appearance based on theme color.
+
+
+#### Syntax
+
+```scss
+@include button-appearance-outline($color-name);
+```
+#### Parameters
+
+
+`<String> $color-name`
+: Theme color name (e.g., primary, secondary)
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/components/button/_theme.scss#L63-L76
+@mixin button-appearance-outline($color-name) {
+    @include button-appearance(
+        k-color(#{$color-name}-on-surface),
+        transparent,
+        currentColor,
+        k-color(on-#{$color-name}),
+        k-color($color-name),
+        k-color($color-name),
+        k-color(on-#{$color-name}),
+        k-color($color-name),
+        k-color($color-name),
+        if($kendo-outline-button-shadow, 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread color-mix(in srgb, k-color($color-name) ($kendo-outline-button-shadow-opacity * 100%), transparent), null)
+    );
+}
+```
+
+### `button-appearance-flat`
+
+Pure setter mixin for flat/clear button appearance based on theme color.
+
+
+#### Syntax
+
+```scss
+@include button-appearance-flat($color-name);
+```
+#### Parameters
+
+
+`<String> $color-name`
+: Theme color name (e.g., primary, secondary)
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/components/button/_theme.scss#L80-L93
+@mixin button-appearance-flat($color-name) {
+    @include button-appearance(
+        k-color(#{$color-name}-on-surface),
+        transparent,
+        transparent,
+        k-color(#{$color-name}-on-surface),
+        transparent,
+        transparent,
+        k-color(#{$color-name}-on-surface),
+        transparent,
+        transparent,
+        null
+    );
+}
+```
+
+### `button-appearance-link`
+
+Pure setter mixin for link button appearance based on theme color.
+
+
+#### Syntax
+
+```scss
+@include button-appearance-link($color-name);
+```
+#### Parameters
+
+
+`<String> $color-name`
+: Theme color name (e.g., primary, secondary)
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/components/button/_theme.scss#L97-L110
+@mixin button-appearance-link($color-name) {
+    @include button-appearance(
+        k-color($color-name),
+        transparent,
+        transparent,
+        k-color(#{$color-name}-hover),
+        transparent,
+        transparent,
+        k-color(#{$color-name}-active),
+        transparent,
+        transparent,
+        if($kendo-link-button-shadow, 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread color-mix(in srgb, k-color($color-name) ($kendo-link-button-shadow-opacity * 100%), transparent), null)
+    );
+}
+```
+
+### `generate-button-appearance`
+
+Generates button appearance selectors for all fill modes and theme colors.
+
+
+#### Syntax
+
+```scss
+@include generate-button-appearance($theme-colors);
+```
+#### Parameters
+
+
+`<Map> $theme-colors`
+: Map of theme color names to colors
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/components/button/_theme.scss#L114-L167
+@mixin generate-button-appearance($theme-colors) {
+    // Default appearance (base solid) - applied directly on .k-button
+    @include button-appearance(
+        $kendo-button-text,
+        $kendo-button-bg,
+        $kendo-button-border,
+        $kendo-button-hover-text,
+        $kendo-button-hover-bg,
+        $kendo-button-hover-border,
+        $kendo-button-active-text,
+        $kendo-button-active-bg,
+        $kendo-button-active-border,
+        $kendo-button-focus-shadow
+    );
+
+    // Default selected state
+    &.k-selected {
+        --kendo-button-active-text: #{$kendo-button-selected-text};
+        --kendo-button-active-bg: #{$kendo-button-selected-bg};
+        --kendo-button-active-border: #{$kendo-button-selected-border};
+    }
+
+    @each $name, $color in $theme-colors {
+        // Solid (default fill mode for theme colors)
+        &.k-button-#{$name},
+        &.k-button-#{$name}.k-button-solid {
+            @include button-appearance-solid($name);
+        }
+
+        // Outline
+        &.k-button-outline,
+        &.k-button-#{$name}.k-button-outline {
+            @include button-appearance-outline($name);
+        }
+
+        // Flat
+        &.k-button-flat,
+        &.k-button-#{$name}.k-button-flat {
+            @include button-appearance-flat($name);
+        }
+
+        // Link
+        &.k-button-link,
+        &.k-button-#{$name}.k-button-link {
+            @include button-appearance-link($name);
+        }
+
+        // Clear
+        &.k-button-clear,
+        &.k-button-#{$name}.k-button-clear {
+            @include button-appearance-flat($name);
+        }
+    }
+}
+```
+
 ### `import-once`
 
 Outputs a module once, no matter how many times it is included.

@@ -2933,7 +2933,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-button-roundness` list and `.k-rounded-{size}` classes instead.</div></div><div><b>Description</b><div class="theme-variables-description">The border radius of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3424,7 +3424,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the solid Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-button-gradient` instead.</div></div><div><b>Description</b><div class="theme-variables-description">The gradient of the solid Button.</div></div>
     </td>
 </tr>
 <tr>
