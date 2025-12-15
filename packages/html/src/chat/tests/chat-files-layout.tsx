@@ -1,5 +1,6 @@
-import { ChatNormal, ChatMessage, ChatFileWrapper, ChatFile, ChatMessageGroup } from '..';
+import { ChatNormal, ChatMessage, ChatMessageGroup } from '..';
 import { IconTextButton } from '../../button';
+import { FileBoxWrapper, FileBox } from '../../file-box';
 
 const styles = `
     #test-area {
@@ -27,25 +28,25 @@ export default () =>(
                     <ChatMessageGroup type="sender" avatar={null}>
                         <ChatMessage text={null} files={
                             <>
-                                <ChatFileWrapper layout="horizontal">
-                                    <ChatFile />
-                                    <ChatFile icon="file-psd" name="File with long name" size="5MB" />
-                                    <ChatFile icon="file-csv" name="Another file with even longer name" size="5MB" />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper>
+                                    <FileBox />
+                                    <FileBox icon="file-psd" name="File with long name" size="5MB" />
+                                    <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
+                                </FileBoxWrapper>
                                 <div className="k-chat-download-button-wrapper">
-                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download" />
+                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download-light" size="small" />
                                 </div>
                             </>
                         } />
                         <ChatMessage text="Text + Multiple files" files={
                             <>
-                                <ChatFileWrapper layout="horizontal">
-                                    <ChatFile />
-                                    <ChatFile icon="file-psd" name="File with long name" size="5MB" />
-                                    <ChatFile icon="file-csv" name="Another file with even longer name" size="5MB" />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper>
+                                    <FileBox />
+                                    <FileBox icon="file-psd" name="File with long name" size="5MB" />
+                                    <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
+                                </FileBoxWrapper>
                                 <div className="k-chat-download-button-wrapper">
-                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download" />
+                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download-light" size="small" />
                                 </div>
                             </>
                         } />
@@ -61,25 +62,25 @@ export default () =>(
                     <ChatMessageGroup avatar={null}>
                         <ChatMessage text={null} files={
                             <>
-                                <ChatFileWrapper layout="horizontal">
-                                    <ChatFile />
-                                    <ChatFile icon="file-psd" name="File with long name" size="5MB" />
-                                    <ChatFile icon="file-csv" name="Another file with even longer name" size="5MB" />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper>
+                                    <FileBox />
+                                    <FileBox icon="file-psd" name="File with long name" size="5MB" />
+                                    <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
+                                </FileBoxWrapper>
                                 <div className="k-chat-download-button-wrapper">
-                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download" />
+                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download-light" size="small" />
                                 </div>
                             </>
                         } />
                         <ChatMessage text="Text + Multiple files" files={
                             <>
-                                <ChatFileWrapper layout="horizontal">
-                                    <ChatFile />
-                                    <ChatFile icon="file-psd" name="File with long name" size="5MB" />
-                                    <ChatFile icon="file-csv" name="Another file with even longer name" size="5MB" />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper>
+                                    <FileBox />
+                                    <FileBox icon="file-psd" name="File with long name" size="5MB" />
+                                    <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
+                                </FileBoxWrapper>
                                 <div className="k-chat-download-button-wrapper">
-                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download" />
+                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download-light" size="small" />
                                 </div>
                             </>
                         } />
@@ -98,25 +99,25 @@ export default () =>(
                     <ChatMessageGroup type="sender" avatar={null}>
                         <ChatMessage text={null} files={
                             <>
-                                <ChatFileWrapper layout="wrap">
-                                    <ChatFile />
-                                    <ChatFile icon="file-psd" name="File with long name" size="5MB" />
-                                    <ChatFile icon="file-csv" name="Another file with even longer name" size="5MB" />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper layout="wrap">
+                                    <FileBox />
+                                    <FileBox icon="file-psd" name="File with long name" size="5MB" />
+                                    <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
+                                </FileBoxWrapper>
                                 <div className="k-chat-download-button-wrapper">
-                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download" />
+                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download-light" size="small" />
                                 </div>
                             </>
                         } />
                         <ChatMessage text="Text + Multiple files" files={
                             <>
-                                <ChatFileWrapper layout="wrap">
-                                    <ChatFile />
-                                    <ChatFile icon="file-psd" name="File with long name" size="5MB" />
-                                    <ChatFile icon="file-csv" name="Another file with even longer name" size="5MB" />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper layout="wrap">
+                                    <FileBox />
+                                    <FileBox icon="file-psd" name="File with long name" size="5MB" />
+                                    <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
+                                </FileBoxWrapper>
                                 <div className="k-chat-download-button-wrapper">
-                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download" />
+                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download-light" size="small" />
                                 </div>
                             </>
                         } />
@@ -131,25 +132,25 @@ export default () =>(
                     <ChatMessageGroup avatar={null}>
                         <ChatMessage text={null} files={
                             <>
-                                <ChatFileWrapper layout="wrap">
-                                    <ChatFile />
-                                    <ChatFile icon="file-psd" name="File with long name" size="5MB" />
-                                    <ChatFile icon="file-csv" name="Another file with even longer name" size="5MB" />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper layout="wrap">
+                                    <FileBox />
+                                    <FileBox icon="file-psd" name="File with long name" size="5MB" />
+                                    <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
+                                </FileBoxWrapper>
                                 <div className="k-chat-download-button-wrapper">
-                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download" />
+                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download-light" size="small" />
                                 </div>
                             </>
                         } />
                         <ChatMessage text="Text + Multiple files" files={
                             <>
-                                <ChatFileWrapper layout="wrap">
-                                    <ChatFile />
-                                    <ChatFile icon="file-psd" name="File with long name" size="5MB" />
-                                    <ChatFile icon="file-csv" name="Another file with even longer name" size="5MB" />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper layout="wrap">
+                                    <FileBox />
+                                    <FileBox icon="file-psd" name="File with long name" size="5MB" />
+                                    <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
+                                </FileBoxWrapper>
                                 <div className="k-chat-download-button-wrapper">
-                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download" />
+                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download-light" size="small" />
                                 </div>
                             </>
                         } />

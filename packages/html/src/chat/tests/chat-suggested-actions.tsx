@@ -18,7 +18,7 @@ export default () =>(
             <span>Suggested actions - wrap</span>
             <section>
                 <ChatNormal suggestedActions={
-                    <SuggestionGroup>
+                    <SuggestionGroup scrollingPosition = "start">
                         <Suggestion text="Suggestion" />
                         <Suggestion text="Hover" hover />
                         <Suggestion text="Focus" focus />
@@ -33,7 +33,7 @@ export default () =>(
             </section>
             <section>
                  <ChatNormal suggestedActions={
-                    <SuggestionGroup layout="scrollButtons">
+                    <SuggestionGroup layout="scrollButtons" scrollingPosition = "start">
                         <Suggestion text="Suggestion" />
                         <Suggestion text="Hover" hover />
                         <Suggestion text="Focus" focus />

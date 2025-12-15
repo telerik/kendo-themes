@@ -1,9 +1,7 @@
 import { classNames } from '../misc';
-import { Textarea } from '../textarea';
 import { IconButton } from '../button';
-import { ChatSendButton } from './';
-import { SpeechToTextButton } from '../speech-to-text-button';
-
+import { IconFloatingActionButton } from '../fab';
+import { PromptBox, KendoPromptBoxProps } from '../prompt-box';
 import { KendoComponent } from '../_types/component';
 import { CHAT_FOLDER_NAME, CHAT_MODULE_NAME } from './constants';
 const CHAT_CLASSNAME = 'k-chat';
@@ -23,11 +21,14 @@ export type KendoChatProps = {
     tools?: React.JSX.Element | React.JSX.Element[];
     value?: string;
     empty?: boolean;
+    scrollToBottom?: boolean;
+    scrollbar?: boolean;
+    promptBoxProps?: Partial<KendoPromptBoxProps>;
 }
 
 const defaultTools = <>
-    <SpeechToTextButton fillMode="clear" />
-    <IconButton key="paperclip" icon="paperclip" fillMode="clear" />
+    <IconButton key="paperclip" icon="paperclip-outline-alt-right" fillMode="clear" />
+    <div className="k-spacer"></div>
 </>;
 
 const defaultOptions = {
@@ -49,6 +50,9 @@ export const Chat: KendoComponent<KendoChatProps & React.HTMLAttributes<HTMLDivE
         tools = defaultOptions.tools,
         value,
         empty,
+        scrollToBottom,
+        scrollbar,
+        promptBoxProps,
         ...other
     } = props;
 
@@ -60,25 +64,26 @@ export const Chat: KendoComponent<KendoChatProps & React.HTMLAttributes<HTMLDivE
                 props.className
             )} dir={dir}>
             {header}
-            {pinned}
             <div className="k-message-list">
+                {pinned}
                 <div className={classNames("k-message-list-content",
                         empty && "k-message-list-content-empty"
                 )}>
                     {props.children}
                 </div>
+                {scrollToBottom && <div className="k-chat-scroll-to-bottom-container">
+                        <IconFloatingActionButton themeColor="light" icon="arrow-down-outline" size="small" />
+                    </div>}
             </div>
+            {scrollbar && <div className="k-separator"></div>}
             <div className="k-message-box-wrapper">
                 {suggestedActions}
-                <Textarea
-                    className="k-message-box"
+                <PromptBox
+                    lineMode='multi'
                     placeholder="Type a message"
+                    generating={generating}
                     value={value}
-                    prefixSeparator={false}
-                    suffixSeparator={false}
-                    rows={1}
-                    resize="none"
-                    prefix={
+                    header={
                         files || replied ?
                             <>
                                 {replied}
@@ -86,13 +91,8 @@ export const Chat: KendoComponent<KendoChatProps & React.HTMLAttributes<HTMLDivE
                             </>
                             : undefined
                     }
-                    suffix={
-                        <>
-                            {tools}
-                            <span className="k-spacer" />
-                            <ChatSendButton generating={generating} disabled={!value && !generating} />
-                        </>
-                    }
+                    endAffix={tools}
+                    {...promptBoxProps}
                 />
             </div>
         </div>

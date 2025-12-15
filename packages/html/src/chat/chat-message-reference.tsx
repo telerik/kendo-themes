@@ -40,12 +40,12 @@ export const ChatMessageReference = (
                     ['k-message-pinned']: pinned,
                 }
             )}>
-            {pinned && <Icon icon='pin' size="xlarge" />}
+            {pinned && <Icon icon='pin-outline' />}
             <div className="k-message-reference-content">{content}</div>
             {closeable &&
                 <>
                     <span className="k-spacer"></span>
-                    <Button icon="x" fillMode="flat"></Button>
+                    <Button icon="x-mark-sm-outline" fillMode="flat"></Button>
                 </>}
         </div>
     );
