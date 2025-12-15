@@ -53,4 +53,27 @@
         }
     }
 
+    .k-suggestion-group-scrollable-end::before,
+    .k-suggestion-scrollwrap .k-suggestion-group-scrollable-end::before {
+        background: linear-gradient(270deg, $kendo-suggestion-scroll-gradient);
+    }
+
+    .k-suggestion-group-scrollable-start::after,
+    .k-suggestion-scrollwrap .k-suggestion-group-scrollable-start::after {
+        background: linear-gradient(90deg, $kendo-suggestion-scroll-gradient);
+    }
+
+    .k-rtl,
+    [dir="rtl"] {
+        .k-suggestion-group-scrollable-end::before,
+        .k-suggestion-scrollwrap .k-suggestion-group-scrollable-end::before {
+            background: linear-gradient(90deg, $kendo-suggestion-scroll-gradient);
+        }
+
+        .k-suggestion-group-scrollable-start::after,
+        .k-suggestion-scrollwrap .k-suggestion-group-scrollable-start::after {
+            background: linear-gradient(270deg, $kendo-suggestion-scroll-gradient);
+        }
+    }
+
 }

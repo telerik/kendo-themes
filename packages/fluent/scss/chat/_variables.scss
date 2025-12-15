@@ -6,13 +6,13 @@
 
 /// The horizontal padding of the Chat.
 /// @group chat
-$kendo-chat-padding-x: var( --kendo-chat-padding-x, #{k-spacing(4)} ) !default;
+$kendo-chat-padding-x: var( --kendo-chat-padding-x, #{k-spacing(5)} ) !default;
 /// The vertical padding of the Chat.
 /// @group chat
-$kendo-chat-padding-y: k-spacing(4) !default;
+$kendo-chat-padding-y: var( --kendo-chat-padding-y, #{k-spacing(5)} ) !default;
 /// The minimum width of the Chat.
 /// @group chat
-$kendo-chat-width: 280px !default;
+$kendo-chat-width: var( --kendo-chat-width, 280px ) !default;
 /// The minimum height of the Chat.
 /// @group chat
 $kendo-chat-height: var( --kendo-chat-height, 600px ) !default;
@@ -31,24 +31,31 @@ $kendo-chat-line-height: var( --kendo-chat-line-height, var( --kendo-line-height
 
 /// The vertical spacing between the items of the Chat.
 /// @group chat
-$kendo-chat-item-spacing-y: k-spacing(4) !default;
+$kendo-chat-item-spacing-y: var( --kendo-chat-item-spacing-y, #{k-spacing(4)} ) !default;
 
 /// The maximum width of the Chat message.
 /// @group chat
-$kendo-chat-message-max-width: min(75%, 460px) !default;
+$kendo-chat-message-max-width: var( --kendo-chat-message-max-width, min(75%, 460px) ) !default;
 /// The spacing between the items of the Chat message.
 /// @group chat
-$kendo-chat-message-gap: k-spacing(2) !default;
+$kendo-chat-message-gap: var( --kendo-chat-message-gap, #{k-spacing(2)} ) !default;
+
+/// The border radius of sequential Chat messages.
+/// @group chat
+$kendo-sequential-messages-border-radius: var( --kendo-sequential-messages-border-radius, #{k-border-radius(sm)} ) !default;
 
 /// The horizontal padding of the Chat message list.
 /// @group chat
-$kendo-chat-message-list-padding-x: $kendo-chat-padding-x !default;
+$kendo-chat-message-list-padding-x: var( --kendo-chat-message-list-padding-x, $kendo-chat-padding-x ) !default;
 /// The vertical padding of the Chat message list.
 /// @group chat
-$kendo-chat-message-list-padding-y: $kendo-chat-padding-y !default;
+$kendo-chat-message-list-padding-y: var( --kendo-chat-message-list-padding-y, $kendo-chat-padding-y ) !default;
 /// The spacing of the Chat message list.
 /// @group chat
-$kendo-chat-message-list-spacing: $kendo-chat-item-spacing-y !default;
+$kendo-chat-message-list-spacing: var( --kendo-chat-message-list-spacing, $kendo-chat-item-spacing-y ) !default;
+/// The spacing of the Chat message box wrapper.
+/// @group chat
+$kendo-chat-message-box-wrapper-spacing: var( --kendo-chat-message-box-wrapper-spacing, #{k-spacing(3)} ) !default;
 
 /// The minimum size of the Chat message status.
 /// @group chat
@@ -58,7 +65,7 @@ $kendo-chat-status-min-size: var(--kendo-chat-status-min-size, #{k-spacing(1.5)}
 $kendo-chat-status-max-size: var(--kendo-chat-status-max-size, #{k-spacing(8)}) !default;
 /// The spacing between the icon and text in the Chat message status.
 /// @group chat
-$kendo-chat-message-status-gap: k-spacing(1) !default;
+$kendo-chat-message-status-gap: var( --kendo-chat-message-status-gap, #{k-spacing(1)} ) !default;
 
 /// The font size of the Chat timestamp.
 /// @group chat
@@ -68,55 +75,55 @@ $kendo-chat-timestamp-font-size: var( --kendo-chat-timestamp-font-size, var( --k
 $kendo-chat-timestamp-line-height: var( --kendo-chat-timestamp-line-height, var( --kendo-line-height-lg, normal ) ) !default;
 /// The text transform of the Chat timestamp.
 /// @group chat
-$kendo-chat-timestamp-transform: none !default;
+$kendo-chat-timestamp-transform: var( --kendo-chat-timestamp-transform, none ) !default;
 /// The text color of the Chat timestamp.
 /// @group chat
 $kendo-chat-timestamp-text: var( --kendo-chat-timestamp-text, #{k-color(subtle)} ) !default;
 /// The background color of the Chat timestamp.
 /// @group chat
-$kendo-chat-timestamp-bg: transparent !default;
+$kendo-chat-timestamp-bg: var( --kendo-chat-timestamp-bg, transparent ) !default;
 /// The background color of the Chat timestamp separator.
 /// @group chat
-$kendo-chat-timestamp-separator-bg: color-mix(in srgb, k-color(border) 26%, transparent) !default;
+$kendo-chat-timestamp-separator-bg: var( --kendo-chat-timestamp-separator-bg, #{color-mix(in srgb, k-color(border) 26%, transparent)} ) !default;
 /// The spacing between the Chat timestamp and its separator.
 /// @group chat
-$kendo-chat-timestamp-separator-spacing: k-spacing(1) !default;
+$kendo-chat-timestamp-separator-spacing: var( --kendo-chat-timestamp-separator-spacing, #{k-spacing(1)} ) !default;
 
 /// The font size of the Chat message meta text.
 /// @group chat
 $kendo-chat-message-meta-font-size: var( --kendo-chat-message-meta-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
 /// The line height of the Chat message meta text.
 /// @group chat
-$kendo-chat-message-meta-line-height: var( --kendo-chat-message-meta-line-height, var( --kendo-line-height-lg, normal ) ) !default;
+$kendo-chat-message-meta-line-height: var( --kendo-chat-message-meta-line-height, var( --kendo-line-height-xs, normal ) ) !default;
 
 /// The font size of the Chat author text.
 /// @group chat
 $kendo-chat-author-font-size: var( --kendo-chat-author-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
 /// The line height of the Chat author text.
 /// @group chat
-$kendo-chat-author-line-height: var( --kendo-line-height-xs, normal ) !default;
+$kendo-chat-author-line-height: var( --kendo-chat-author-line-height, var( --kendo-line-height-xs, normal ) ) !default;
 
 /// The text color of the Chat status.
 /// @group chat
-$kendo-chat-status-text: k-color(subtle) !default;
+$kendo-chat-status-text: var( --kendo-chat-status-text, #{k-color(subtle)} ) !default;
 
 /// The spacing of the Chat bubble message.
 /// @group chat
-$kendo-chat-bubble-spacing: k-spacing(2) !default;
+$kendo-chat-bubble-spacing: var( --kendo-chat-bubble-spacing, #{k-spacing(1)} ) !default;
 
 /// The background color of the Chat Toolbar.
 /// @group chat
-$kendo-chat-toolbar-bg: var( --kendo-chat-toolbar-bg, #{$kendo-toolbar-bg} ) !default;
+$kendo-chat-toolbar-bg: var( --kendo-chat-toolbar-bg, $kendo-toolbar-bg ) !default;
 /// The text color of the Chat Toolbar.
 /// @group chat
-$kendo-chat-toolbar-text: var( --kendo-chat-toolbar-text, #{$kendo-toolbar-text} ) !default;
+$kendo-chat-toolbar-text: var( --kendo-chat-toolbar-text, $kendo-toolbar-text ) !default;
 /// The border color of the Chat Toolbar.
 /// @group chat
 $kendo-chat-toolbar-border: var( --kendo-chat-toolbar-border, inherit ) !default;
 
 /// The background color of the Chat.
 /// @group chat
-$kendo-chat-bg: var( --kendo-chat-bg, #{k-color(surface)} ) !default;
+$kendo-chat-bg: var( --kendo-chat-bg, transparent ) !default;
 /// The text color of the Chat.
 /// @group chat
 $kendo-chat-text: var( --kendo-chat-text, #{k-color(on-app-surface)} ) !default;
@@ -132,124 +139,97 @@ $kendo-chat-alt-bubble-bg: var( --kendo-chat-alt-bubble-bg, #{k-color(primary)} 
 $kendo-chat-alt-bubble-text: var( --kendo-chat-alt-bubble-text, #{k-color(surface-alt)} ) !default;
 /// The border color of the Chat alt bubble.
 /// @group chat
-$kendo-chat-alt-bubble-border: var( --kendo-chat-alt-bubble-border, #{$kendo-chat-alt-bubble-bg} ) !default;
+$kendo-chat-alt-bubble-border: var( --kendo-chat-alt-bubble-border, $kendo-chat-alt-bubble-bg ) !default;
 /// The shadow of the Chat alt bubble.
 /// @group chat
-$kendo-chat-alt-bubble-shadow: none !default;
+$kendo-chat-alt-bubble-shadow: var( --kendo-chat-alt-bubble-shadow, none ) !default;
 
 /// The background color of the hovered alt Bubble.
 /// @group bubble
-$kendo-chat-alt-bubble-hover-bg: k-color(primary-hover) !default;
+$kendo-chat-alt-bubble-hover-bg: var( --kendo-chat-alt-bubble-hover-bg, #{k-color(primary-hover)} ) !default;
 /// The border color of the hovered alt Bubble.
 /// @group bubble
-$kendo-chat-alt-bubble-hover-border: $kendo-chat-alt-bubble-hover-bg !default;
+$kendo-chat-alt-bubble-hover-border: var( --kendo-chat-alt-bubble-hover-border, $kendo-chat-alt-bubble-hover-bg ) !default;
 /// The background color of the active Bubble.
 /// @group bubble
-$kendo-chat-alt-bubble-active-bg: k-color(primary-active) !default;
+$kendo-chat-alt-bubble-active-bg: var( --kendo-chat-alt-bubble-active-bg, #{k-color(primary-active)} ) !default;
 /// The border color of the active alt Bubble.
 /// @group bubble
-$kendo-chat-alt-bubble-active-border: $kendo-chat-alt-bubble-active-bg !default;
+$kendo-chat-alt-bubble-active-border: var( --kendo-chat-alt-bubble-active-border, $kendo-chat-alt-bubble-active-bg ) !default;
 /// The background color of the focused alt Bubble.
 /// @group bubble
-$kendo-chat-alt-bubble-focus-bg: $kendo-chat-alt-bubble-bg !default;
+$kendo-chat-alt-bubble-focus-bg: var( --kendo-chat-alt-bubble-focus-bg, $kendo-chat-alt-bubble-bg ) !default;
 /// The border color of the focused alt Bubble.
 /// @group bubble
-$kendo-chat-alt-bubble-focus-border: k-color(on-base) !default;
+$kendo-chat-alt-bubble-focus-border: var( --kendo-chat-alt-bubble-focus-border, #{k-color(on-base)} ) !default;
 /// The box shadow of the focused alt Bubble.
 /// @group bubble
-$kendo-chat-alt-bubble-focus-shadow: inset 0 0 0 #{$kendo-chat-border-width} k-color(on-base), inset 0 0 0 calc( #{$kendo-chat-border-width} * 2 ) k-color(surface) !default;
+$kendo-chat-alt-bubble-focus-shadow: var( --kendo-chat-alt-bubble-focus-shadow, inset 0 0 0 #{$kendo-chat-border-width} k-color(on-base), inset 0 0 0 calc( #{$kendo-chat-border-width} * 2 ) k-color(surface) ) !default;
+
+/// The text color of the bubble of the failed Chat message.
+/// @group chat
+$kendo-chat-failed-bubble-text: var(--kendo-chat-failed-bubble-text, k-color(base-on-subtle)) !default;
+/// The background color of the bubble of the failed Chat message.
+/// @group chat
+$kendo-chat-failed-bubble-bg: var(--kendo-chat-failed-bubble-bg, k-color(error-subtle)) !default;
+/// The border color of the bubble of the failed Chat message.
+/// @group chat
+$kendo-chat-failed-bubble-border: var(--kendo-chat-failed-bubble-border, k-color(error-emphasis)) !default;
+/// The text color of the failed Chat message content.
+/// @group chat
+$kendo-chat-failed-content-color: var(--kendo-chat-failed-content-color, k-color(error-on-surface)) !default;
+
+/// The background color of the hovered bubble of the failed Chat message.
+/// @group chat
+$kendo-chat-failed-bubble-hover-bg: var( --kendo-chat-failed-bubble-hover-bg, #{k-color(error-subtle-hover)} ) !default;
+
+/// The background color of the selected bubble of the failed Chat message.
+/// @group chat
+$kendo-chat-failed-bubble-selected-bg: var( --kendo-chat-failed-bubble-selected-bg, #{k-color(error-subtle-active)} ) !default;
 
 /// The color of the typing indicator dots.
 /// @group chat
-$kendo-chat-typing-indicator-text: k-color(base-on-subtle) !default;
-
-/// The minimum width of a file in the Chat Textarea.
-/// @group chat
-$kendo-chat-file-min-width: var(--kendo-chat-file-min-width, 96px) !default;
-/// The maximum width of a file in the Chat Textarea.
-/// @group chat
-$kendo-chat-file-max-width: var(--kendo-chat-file-max-width, 160px) !default;
-/// The font size of the Chat file name.
-/// @group chat
-$kendo-chat-file-name-font-size: var(--kendo-chat-file-name-font-size, var( --kendo-font-size-sm, inherit )) !default;
-/// The line height of the Chat file name.
-/// @group chat
-$kendo-chat-file-name-line-height: var(--kendo-chat-file-name-line-height, var( --kendo-line-height-lg, normal )) !default;
-/// The font size of the Chat file size.
-/// @group chat
-$kendo-chat-file-size-font-size: var(--kendo-chat-file-size-font-size, var( --kendo-font-size-xs, inherit )) !default;
-/// The line height of the Chat file size.
-/// @group chat
-$kendo-chat-file-size-line-height: var(--kendo-chat-file-size-line-height, var( --kendo-line-height-xs, normal )) !default;
-/// The horizontal padding of the Chat file.
-/// @group chat
-$kendo-chat-file-padding-x: k-spacing(1) !default;
-/// The vertical padding of the Chat file.
-/// @group chat
-$kendo-chat-file-padding-y: k-spacing(1) !default;
-/// The spacing between the elements of the Chat file.
-/// @group chat
-$kendo-chat-file-gap: k-spacing(1) !default;
-
-/// The border width of the Chat file.
-/// @group chat
-$kendo-chat-file-border-width: 1px !default;
-/// The border style of the Chat file.
-/// @group chat
-$kendo-chat-file-border-style: solid !default;
-
-/// The background color of the Chat file.
-/// @group chat
-$kendo-chat-file-bg: color-mix(in srgb, k-color(base-on-subtle) 8%, transparent) !default;
-/// The text color of the Chat file.
-/// @group chat
-$kendo-chat-file-text: k-color(base-on-subtle) !default;
-/// The border color of the Chat file.
-/// @group chat
-$kendo-chat-file-border: $kendo-chat-file-bg !default;
-/// The border-radius of the Chat file.
-/// @group chat
-$kendo-chat-file-border-radius: k-border-radius(md) !default;
+$kendo-chat-typing-indicator-text: var( --kendo-chat-typing-indicator-text, #{k-color(base-on-subtle)} ) !default;
 
 /// The background color of the Chat sender file.
 /// @group chat
-$kendo-chat-sender-file-bg: color-mix(in srgb, k-color(on-primary) 14%, transparent) !default;
+$kendo-chat-sender-file-bg: var( --kendo-chat-sender-file-bg, #{color-mix(in srgb, k-color(on-primary) 14%, transparent)} ) !default;
 /// The text color of the Chat sender file.
 /// @group chat
-$kendo-chat-sender-file-text: k-color(on-primary) !default;
+$kendo-chat-sender-file-text: var( --kendo-chat-sender-file-text, #{k-color(on-primary)} ) !default;
 /// The border color of the Chat sender file.
 /// @group chat
-$kendo-chat-sender-file-border: $kendo-chat-sender-file-bg !default;
+$kendo-chat-sender-file-border: var( --kendo-chat-sender-file-border, $kendo-chat-sender-file-bg ) !default;
 
 /// The border width of the Chat pinned message;
 /// @group chat
-$kendo-chat-message-pinned-border-width: 1px !default;
+$kendo-chat-message-pinned-border-width: var( --kendo-chat-message-pinned-border-width, 1px ) !default;
 /// The border style of the Chat pinned message;
 /// @group chat
-$kendo-chat-message-pinned-border-style: solid !default;
+$kendo-chat-message-pinned-border-style: var( --kendo-chat-message-pinned-border-style, solid ) !default;
 /// The border color of the Chat pinned message;
 /// @group chat
-$kendo-chat-message-pinned-border-color: color-mix(in srgb, k-color(border) 16%, transparent) !default;
+$kendo-chat-message-pinned-border-color: var( --kendo-chat-message-pinned-border-color, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 
 /// The horizontal padding of the Chat message reference.
 /// @group chat
-$kendo-chat-message-reference-padding-x: k-spacing(1) !default;
+$kendo-chat-message-reference-padding-x: var( --kendo-chat-message-reference-padding-x, #{k-spacing(1)} ) !default;
 /// The vertical padding of the Chat message reference.
 /// @group chat
-$kendo-chat-message-reference-padding-y: k-spacing(1) !default;
+$kendo-chat-message-reference-padding-y: var( --kendo-chat-message-reference-padding-y, #{k-spacing(1)} ) !default;
 
 /// The background color of the Chat message reference.
 /// @group chat
-$kendo-chat-message-reference-bg: k-color(surface) !default;
+$kendo-chat-message-reference-bg: var( --kendo-chat-message-reference-bg, #{color-mix(in srgb, k-color(surface) 90%, transparent)} ) !default;
 /// The text color of the Chat message reference.
 /// @group chat
-$kendo-chat-message-reference-text: k-color(on-app-surface) !default;
+$kendo-chat-message-reference-text: var( --kendo-chat-message-reference-text, #{k-color(on-app-surface)} ) !default;
 /// The background color of the message reference marker.
 /// @group chat
-$kendo-chat-message-reference-marker-bg: k-color(base-emphasis) !default;
+$kendo-chat-message-reference-marker-bg: var( --kendo-chat-message-reference-marker-bg, #{k-color(base-emphasis)} ) !default;
 /// The background color of the message reference alt marker.
 /// @group chat
-$kendo-chat-message-reference-marker-alt-bg: k-color(primary) !default;
+$kendo-chat-message-reference-marker-alt-bg: var( --kendo-chat-message-reference-marker-alt-bg, #{k-color(primary)} ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/chat/_variables.scss" with (
     $kendo-chat-padding-x: $kendo-chat-padding-x,
@@ -263,9 +243,11 @@ $kendo-chat-message-reference-marker-alt-bg: k-color(primary) !default;
     $kendo-chat-item-spacing-y: $kendo-chat-item-spacing-y,
     $kendo-chat-message-max-width: $kendo-chat-message-max-width,
     $kendo-chat-message-gap: $kendo-chat-message-gap,
+    $kendo-sequential-messages-border-radius: $kendo-sequential-messages-border-radius,
     $kendo-chat-message-list-padding-x: $kendo-chat-message-list-padding-x,
     $kendo-chat-message-list-padding-y: $kendo-chat-message-list-padding-y,
     $kendo-chat-message-list-spacing: $kendo-chat-message-list-spacing,
+    $kendo-chat-message-box-wrapper-spacing: $kendo-chat-message-box-wrapper-spacing,
     $kendo-chat-status-min-size: $kendo-chat-status-min-size,
     $kendo-chat-status-max-size: $kendo-chat-status-max-size,
     $kendo-chat-message-status-gap: $kendo-chat-message-status-gap,
@@ -299,22 +281,13 @@ $kendo-chat-message-reference-marker-alt-bg: k-color(primary) !default;
     $kendo-chat-alt-bubble-focus-bg: $kendo-chat-alt-bubble-focus-bg,
     $kendo-chat-alt-bubble-focus-border: $kendo-chat-alt-bubble-focus-border,
     $kendo-chat-alt-bubble-focus-shadow: $kendo-chat-alt-bubble-focus-shadow,
+    $kendo-chat-failed-bubble-text: $kendo-chat-failed-bubble-text,
+    $kendo-chat-failed-bubble-bg: $kendo-chat-failed-bubble-bg,
+    $kendo-chat-failed-bubble-border: $kendo-chat-failed-bubble-border,
+    $kendo-chat-failed-content-color: $kendo-chat-failed-content-color,
+    $kendo-chat-failed-bubble-hover-bg: $kendo-chat-failed-bubble-hover-bg,
+    $kendo-chat-failed-bubble-selected-bg: $kendo-chat-failed-bubble-selected-bg,
     $kendo-chat-typing-indicator-text: $kendo-chat-typing-indicator-text,
-    $kendo-chat-file-min-width: $kendo-chat-file-min-width,
-    $kendo-chat-file-max-width: $kendo-chat-file-max-width,
-    $kendo-chat-file-name-font-size: $kendo-chat-file-name-font-size,
-    $kendo-chat-file-name-line-height: $kendo-chat-file-name-line-height,
-    $kendo-chat-file-size-font-size: $kendo-chat-file-size-font-size,
-    $kendo-chat-file-size-line-height: $kendo-chat-file-size-line-height,
-    $kendo-chat-file-padding-x: $kendo-chat-file-padding-x,
-    $kendo-chat-file-padding-y: $kendo-chat-file-padding-y,
-    $kendo-chat-file-gap: $kendo-chat-file-gap,
-    $kendo-chat-file-border-width: $kendo-chat-file-border-width,
-    $kendo-chat-file-border-style: $kendo-chat-file-border-style,
-    $kendo-chat-file-bg: $kendo-chat-file-bg,
-    $kendo-chat-file-text: $kendo-chat-file-text,
-    $kendo-chat-file-border: $kendo-chat-file-border,
-    $kendo-chat-file-border-radius: $kendo-chat-file-border-radius,
     $kendo-chat-sender-file-bg: $kendo-chat-sender-file-bg,
     $kendo-chat-sender-file-text: $kendo-chat-sender-file-text,
     $kendo-chat-sender-file-border: $kendo-chat-sender-file-border,

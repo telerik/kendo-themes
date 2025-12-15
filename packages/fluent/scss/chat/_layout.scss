@@ -29,14 +29,6 @@
     }
 
     // Message states
-    .k-message:has(.k-selected) {
-
-        .k-message-time,
-        .k-message-status {
-            gap: $kendo-chat-bubble-spacing;
-        }
-    }
-
     .k-chat .k-card-deck {
         margin-inline: calc( #{$kendo-chat-message-list-padding-x} * -1 );
         padding-block-start: $kendo-chat-message-list-padding-y;

@@ -5,27 +5,8 @@
 
 @mixin kendo-chat--theme() {
     @include kendo-chat--theme-base();
-
-    // Bubbles
-    .k-message-group-sender .k-chat-bubble {
-
-        &:focus,
-        &.k-focus {
-            @include focus-indicator( $kendo-chat-alt-bubble-focus-shadow, true, true );
-        }
-
-        &:hover,
-        &.k-hover {
-            @include fill( $bg: $kendo-chat-alt-bubble-hover-bg, $border: $kendo-chat-alt-bubble-hover-border );
-        }
-    }
-
+    
     .k-message-time {
         color: $kendo-chat-timestamp-text;
-    }
-
-    .k-message-reference .k-chat-file {
-        background-color: $kendo-chat-file-bg;
-        border-color: $kendo-chat-file-border;
     }
 }
