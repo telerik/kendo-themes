@@ -37,6 +37,7 @@ export * from './listbox/index';
 export * from './progressbar/index';
 export * from './slider/index';
 export * from './segmented-control/index';
+export * from './smart-box/index';
 
 // Augmented inputs
 export * from './floating-label/index';
