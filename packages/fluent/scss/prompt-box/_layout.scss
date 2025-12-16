@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/prompt-box/_layout.scss" as *;
+
+
+@mixin kendo-prompt-box--layout() {
+    @include kendo-prompt-box--layout-base();
+}
