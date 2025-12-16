@@ -114,6 +114,7 @@
 @forward "./speech-to-text-button/_index.scss";
 @forward "./prompt/_index.scss";
 @forward "./segmented-control/_index.scss";
+@forward "./prompt-box/_index.scss";
 @forward "./dataviz/_index.scss";
 @forward "./chart-wizard/_index.scss";
 @forward "./map/_index.scss";
@@ -291,6 +292,7 @@
 @use "./prompt/_index.scss" as *;
 @use "./segmented-control/_index.scss" as *;
 @use "./smart-box/_index.scss" as *;
+@use "./prompt-box/_index.scss" as *;
 
 
 // Dataviz
@@ -469,6 +471,7 @@
     @include kendo-prompt--styles();
     @include kendo-segmented-control--styles();
     @include kendo-smart-box--styles();
+    @include kendo-prompt-box--styles();
 
 
     // Dataviz
