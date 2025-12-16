@@ -1,0 +1,138 @@
+import { PromptBoxLineModeSingle, PromptBoxLineModeMulti, PromptBoxLineModeAuto, PromptBoxLineModeAutoExpanded } from '..';
+
+import { Button, IconButton } from '../../button';
+import { Icon } from '../../icon';
+
+const styles = ``;
+
+export default () =>(
+    <>
+        <style>{styles}</style>
+        <div id="test-area" className="k-d-grid k-grid-cols-4">
+
+            <span>lineMode - auto (Default)</span>
+            <span>lineMode - auto + expanded</span>
+            <span>lineMode - single</span>
+            <span>lineMode - multi</span>
+
+
+            <div>
+                <PromptBoxLineModeAuto
+                    placeholder="Type a message"
+                    startAffix={<>
+                        <Icon icon="plus"/>
+                    </>}
+                    endAffix={<>
+                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                    </>}
+                />
+            </div>
+            <div>
+                <PromptBoxLineModeAutoExpanded
+                    placeholder="Type a message"
+                    startAffix={<>
+                        <Icon icon="plus"/>
+                    </>}
+                    endAffix={<>
+                        <Icon icon="plus"/>
+                        <div className="k-spacer"></div>
+                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                    </>}
+                />
+            </div>
+            <div>
+                <PromptBoxLineModeSingle
+                    placeholder="Type a message"
+                    startAffix={<>
+                        <Icon icon="plus"/>
+                    </>}
+                    endAffix={<>
+                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                    </>}
+                />
+            </div>
+             <div>
+                <PromptBoxLineModeMulti
+                    placeholder="Type a message"
+                    startAffix={<>
+                        <Icon icon="plus"/>
+                    </>}
+                    endAffix={<>
+                        <Icon icon="plus"/>
+                        <div className="k-spacer"></div>
+                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                    </>}
+                />
+            </div>
+
+            <span>lineMode - auto (Default) - affixes and header</span>
+            <span>lineMode - auto + expanded - affixes and header</span>
+            <span>lineMode - single - affixes and header</span>
+            <span>lineMode - multi - affixes and header</span>
+
+
+             <div>
+                <PromptBoxLineModeAuto
+                    placeholder="Type a message"
+                    header={<>
+                    <Button>Button in header</Button>
+                    </>}
+                    startAffix={<>
+                        <Icon icon="plus"/>
+                    </>}
+                    endAffix={<>
+                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                    </>}
+                />
+            </div>
+             <div>
+                <PromptBoxLineModeAutoExpanded
+                    placeholder="Type a message"
+                    header={<>
+                    <Button>Button in header</Button>
+                    </>}
+                    startAffix={<>
+                        <Icon icon="plus"/>
+                    </>}
+                    endAffix={<>
+                        <Icon icon="plus"/>
+                        <div className="k-spacer"></div>
+                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                    </>}
+                />
+            </div>
+            <div>
+                <PromptBoxLineModeSingle
+                    placeholder="Type a message"
+                    header={<>
+                    <Button>Button in header</Button>
+                    </>}
+                    startAffix={<>
+                        <Icon icon="plus"/>
+                    </>}
+                    endAffix={<>
+                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                    </>}
+                />
+            </div>
+             <div>
+                <PromptBoxLineModeMulti
+                    placeholder="Type a message"
+                    header={<>
+                    <Button>Button in header</Button>
+                    </>}
+                    startAffix={<>
+                        <Icon icon="plus"/>
+                    </>}
+                    endAffix={<>
+                        <Icon icon="plus"/>
+                        <span className="k-spacer"></span>
+                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                    </>}
+                />
+            </div>
+
+
+        </div>
+    </>
+);

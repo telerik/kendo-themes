@@ -147,6 +147,7 @@ import { Popover } from "../packages/html/src/popover/popover.spec";
 import { Popup } from "../packages/html/src/popup/popup.spec";
 import { ProgressBar } from "../packages/html/src/progressbar/progressbar.spec";
 import { Prompt } from "../packages/html/src/prompt/prompt.spec";
+import { PromptBox } from "../packages/html/src/prompt-box/prompt-box.spec";
 // import { PropertyGrid } from "../packages/html/src/propertygrid/propertygrid.spec";
 import { RadioButton } from "../packages/html/src/radio/radio.spec";
 import { RadioGroup } from "../packages/html/src/radio/radio-group.spec";
@@ -404,6 +405,7 @@ export const allComponents: SpecComponent[] = [
   Popup,
   ProgressBar,
   Prompt,
+  PromptBox,
   // PropertyGrid, - SKIPPED, class does not have styles
   RadioButton,
   RadioGroup,
