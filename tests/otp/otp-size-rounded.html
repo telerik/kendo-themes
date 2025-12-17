@@ -10,5 +10,634 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: 1240px;
+            grid-template-columns: 80px 320px 320px 1fr;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid">
+        <span>
+            <small>Space, rounded / size</small>
+        </span>
+        <span>small</span>
+        <span>medium</span>
+        <span>large</span>
+        <span>small</span>
+        <div>
+            <div role="group" class="k-otp k-otp-sm">
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-sm">
+                    <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-sm">
+                    <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-sm">
+                    <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-sm">
+                    <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-sm">
+                    <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-sm">
+                    <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+            </div>
+        </div>
+        <div>
+            <div role="group" class="k-otp k-otp-md">
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-sm">
+                    <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-sm">
+                    <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-sm">
+                    <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-sm">
+                    <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-sm">
+                    <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-sm">
+                    <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+            </div>
+        </div>
+        <div>
+            <div role="group" class="k-otp k-otp-lg">
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-sm">
+                    <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-sm">
+                    <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-sm">
+                    <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-sm">
+                    <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-sm">
+                    <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-sm">
+                    <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+            </div>
+        </div>
+        <span>medium</span>
+        <div>
+            <div role="group" class="k-otp k-otp-sm">
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-md">
+                    <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-md">
+                    <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-md">
+                    <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-md">
+                    <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-md">
+                    <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-md">
+                    <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+            </div>
+        </div>
+        <div>
+            <div role="group" class="k-otp k-otp-md">
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                    <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                    <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                    <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                    <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                    <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                    <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+            </div>
+        </div>
+        <div>
+            <div role="group" class="k-otp k-otp-lg">
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-md">
+                    <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-md">
+                    <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-md">
+                    <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-md">
+                    <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-md">
+                    <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-md">
+                    <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+            </div>
+        </div>
+        <span>large</span>
+        <div>
+            <div role="group" class="k-otp k-otp-sm">
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-lg">
+                    <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-lg">
+                    <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-lg">
+                    <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-lg">
+                    <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-lg">
+                    <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-lg">
+                    <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+            </div>
+        </div>
+        <div>
+            <div role="group" class="k-otp k-otp-md">
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-lg">
+                    <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-lg">
+                    <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-lg">
+                    <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-lg">
+                    <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-lg">
+                    <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-lg">
+                    <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+            </div>
+        </div>
+        <div>
+            <div role="group" class="k-otp k-otp-lg">
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-lg">
+                    <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-lg">
+                    <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-lg">
+                    <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-lg">
+                    <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-lg">
+                    <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-lg">
+                    <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+            </div>
+        </div>
+        <span>full</span>
+        <div>
+            <div role="group" class="k-otp k-otp-sm">
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-full">
+                    <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-full">
+                    <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-full">
+                    <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-full">
+                    <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-full">
+                    <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-full">
+                    <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+            </div>
+        </div>
+        <div>
+            <div role="group" class="k-otp k-otp-md">
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-full">
+                    <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-full">
+                    <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-full">
+                    <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-full">
+                    <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-full">
+                    <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-full">
+                    <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+            </div>
+        </div>
+        <div>
+            <div role="group" class="k-otp k-otp-lg">
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-full">
+                    <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-full">
+                    <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-full">
+                    <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-full">
+                    <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-full">
+                    <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-full">
+                    <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+            </div>
+        </div>
+        <span>
+            <small>No Space, rounded / size</small>
+        </span>
+        <span>small</span>
+        <span>medium</span>
+        <span>large</span>
+        <span>small</span>
+        <div>
+            <div role="group" class="k-otp k-otp-sm">
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-sm">
+                        <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-sm">
+                        <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-sm">
+                        <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+                <div class="k-otp-separator">-</div>
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-sm">
+                        <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-sm">
+                        <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-sm">
+                        <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div role="group" class="k-otp k-otp-md">
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-sm">
+                        <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-sm">
+                        <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-sm">
+                        <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+                <div class="k-otp-separator">-</div>
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-sm">
+                        <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-sm">
+                        <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-sm">
+                        <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div role="group" class="k-otp k-otp-lg">
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-sm">
+                        <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-sm">
+                        <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-sm">
+                        <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+                <div class="k-otp-separator">-</div>
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-sm">
+                        <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-sm">
+                        <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-sm">
+                        <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <span>medium</span>
+        <div>
+            <div role="group" class="k-otp k-otp-sm">
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-md">
+                        <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-md">
+                        <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-md">
+                        <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+                <div class="k-otp-separator">-</div>
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-md">
+                        <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-md">
+                        <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-md">
+                        <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div role="group" class="k-otp k-otp-md">
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                        <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                        <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                        <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+                <div class="k-otp-separator">-</div>
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                        <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                        <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                        <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div role="group" class="k-otp k-otp-lg">
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-md">
+                        <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-md">
+                        <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-md">
+                        <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+                <div class="k-otp-separator">-</div>
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-md">
+                        <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-md">
+                        <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-md">
+                        <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <span>large</span>
+        <div>
+            <div role="group" class="k-otp k-otp-sm">
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-lg">
+                        <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-lg">
+                        <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-lg">
+                        <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+                <div class="k-otp-separator">-</div>
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-lg">
+                        <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-lg">
+                        <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-lg">
+                        <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div role="group" class="k-otp k-otp-md">
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-lg">
+                        <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-lg">
+                        <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-lg">
+                        <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+                <div class="k-otp-separator">-</div>
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-lg">
+                        <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-lg">
+                        <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-lg">
+                        <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div role="group" class="k-otp k-otp-lg">
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-lg">
+                        <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-lg">
+                        <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-lg">
+                        <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+                <div class="k-otp-separator">-</div>
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-lg">
+                        <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-lg">
+                        <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-lg">
+                        <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <span>full</span>
+        <div>
+            <div role="group" class="k-otp k-otp-sm">
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-full">
+                        <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-full">
+                        <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-full">
+                        <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+                <div class="k-otp-separator">-</div>
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-full">
+                        <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-full">
+                        <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-sm k-input-solid k-rounded-full">
+                        <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div role="group" class="k-otp k-otp-md">
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-full">
+                        <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-full">
+                        <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-full">
+                        <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+                <div class="k-otp-separator">-</div>
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-full">
+                        <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-full">
+                        <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-full">
+                        <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div role="group" class="k-otp k-otp-lg">
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-full">
+                        <input aria-label="Input 1 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-full">
+                        <input aria-label="Input 2 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-full">
+                        <input aria-label="Input 3 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+                <div class="k-otp-separator">-</div>
+                <div class="k-input-group k-input-group-solid">
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-full">
+                        <input aria-label="Input 4 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-full">
+                        <input aria-label="Input 5 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <span class="k-otp-input k-textbox k-input k-input-lg k-input-solid k-rounded-full">
+                        <input aria-label="Input 6 of 6, current value 111111" class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
