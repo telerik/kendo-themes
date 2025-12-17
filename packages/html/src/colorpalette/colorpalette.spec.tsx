@@ -73,6 +73,10 @@ export const ColorPalette: KendoComponent<KendoColorPaletteProps & KendoColorPal
     return (
         <div
             {...other}
+            role="grid"
+            aria-label="Color palette"
+            tabIndex={0}
+            aria-disabled={disabled ? 'true' : undefined}
             className={classNames(
                 props.className,
                 COLORPALETTE_CLASSNAME,
@@ -82,7 +86,7 @@ export const ColorPalette: KendoComponent<KendoColorPaletteProps & KendoColorPal
                 optionClassNames(COLORPALETTE_CLASSNAME, { size }),
             )}>
 
-            <table className="k-colorpalette-table">
+            <table className="k-colorpalette-table" role="presentation">
                 <tbody>
                     {newChildren.length > 0 ? newChildren : props.children}
                 </tbody>

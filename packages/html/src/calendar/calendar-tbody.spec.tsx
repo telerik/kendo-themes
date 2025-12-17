@@ -14,6 +14,7 @@ export const CalendarTbody: KendoComponent<React.HTMLAttributes<HTMLTableSection
     return (
         <tbody
             {...other}
+            role="rowgroup"
             className={classNames(props.className, className)}>
             {props.children}
         </tbody>

@@ -88,6 +88,13 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
                         size={size}
                         rounded={rounded}
                         fillMode={fillMode}
+                        role="combobox"
+                        aria-label="Start date"
+                        aria-haspopup="grid"
+                        aria-expanded={opened ? 'true' : 'false'}
+                        aria-controls={opened ? 'daterangepicker-calendar' : undefined}
+                        aria-disabled={disabled ? 'true' : undefined}
+                        tabIndex={0}
                     />
                 </FloatingLabel>
                 {swapButton && (
@@ -97,6 +104,7 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
                         fillMode="flat"
                         icon="arrows-swap"
                         iconClassName="k-rotate-90"
+                        aria-label="Swap start and end dates"
                     />
                 )}
                 <FloatingLabel label="End">
@@ -106,11 +114,18 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
                         size={size}
                         rounded={rounded}
                         fillMode={fillMode}
+                        role="combobox"
+                        aria-label="End date"
+                        aria-haspopup="grid"
+                        aria-expanded={opened ? 'true' : 'false'}
+                        aria-controls={opened ? 'daterangepicker-calendar' : undefined}
+                        aria-disabled={disabled ? 'true' : undefined}
+                        tabIndex={0}
                     />
                 </FloatingLabel>
             </span>
             {opened &&
-                <Popup className="k-calendar-container k-daterangepicker-popup">
+                <Popup id="daterangepicker-calendar" className="k-calendar-container k-daterangepicker-popup">
                     <MultiViewCalendarNormal dir={dir} />
                 </Popup>
             }
@@ -118,7 +133,7 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Confirm date range selection" />}
                             title={adaptiveTitle}
                             subtitle={adaptiveSubtitle}
                         />

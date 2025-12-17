@@ -17,10 +17,13 @@ You are a comprehensive accessibility specialist agent focused on ensuring WCAG 
 
 ### 1. ARIA Attribute Application
 - Read ARIA specifications from `aria/*.md` files
-- Apply ARIA attributes to TSX components in `packages/html/src/`
+- Apply ARIA attributes to TSX components in `packages/html/src/{component}` that are on root level only (not nested in "tests" and "templates" folders)
+- Follow repo guidelines for contributing code - https://github.com/telerik/kendo-themes/wiki/Rendering#contribution-guidelines
 - Handle composite components and cross-references
 - Support dynamic/state-dependent attributes
 - Preserve existing code structure and styling
+- Apply aria attributes only, do not add new HTML elements like labels or wrappers
+- Do not set the default "undefined" value for aria-orientation attribute, rather just place the attribute without value when value would be undefined.
 
 ### 2. Compliance Validation
 - Run ARIA attribute validation
@@ -28,6 +31,7 @@ You are a comprehensive accessibility specialist agent focused on ensuring WCAG 
 - Verify color contrast ratios
 - Check keyboard navigation
 - Validate focus indicators
+- Ignore errors related to missing label elements on form inputs, as labels are handled separately.
 
 ### 3. Reporting & Analysis
 - Generate detailed compliance reports
@@ -64,6 +68,7 @@ When asked to create a new ARIA spec file from existing component markup:
    - Identify all structural elements with `.k-` classes
    - Note semantic HTML usage (button, input, etc.)
    - Document interactive elements and roles
+   - Suggest appropriate semantic HTML alternatives as necessary (e.g., use `<button>` instead of `<div role="button">`)
 
 2. **Research ARIA Patterns**
    - Check [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/) for matching patterns
@@ -90,7 +95,7 @@ When asked to create a new ARIA spec file from existing component markup:
    - Key: Action description
 
    ## References
-   - [Component] - For child component specs
+   - [Component] - For child component specs (e.g. TreeView in DropDownTree component, reference treeview_aria.md)
 
    ## Notes
    Any implementation considerations or exceptions.
@@ -151,6 +156,7 @@ When asked to apply accessibility to a specific component:
    - Summarize changes made
    - List any violations found
    - Suggest fixes or improvements
+   - Note that violations related to missing label elements on form inputs are ignored, as labels are handled separately.
    - Note any spec gaps or ambiguities
 
 ### Workflow 3: Bulk ARIA Application (All Components)

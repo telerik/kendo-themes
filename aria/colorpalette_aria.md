@@ -10,7 +10,7 @@ This section lists the selectors, attributes, and behavior patterns supported by
 |  | `aria-activedescendant=.k-colorpalette-tile.k-focus id` | Points to the focused cell in the table. The focused cell is changed via keyboard navigation. |
 |  | `tabindex=0` | The element must be focusable. |
 | `.k-colorpalette.k-disabled` | `aria-disabled=true` | Attribute is rendered only when the ColorPalette is disabled. |
-| `.k-colorpalette-table` | `role=none/presentation` | Negates the default role of the element, as it is wrapped within a `role="grid"` element. |
+| `.k-colorpalette-table` | `role=none or role=presentation` | Negates the default role of the element, as it is wrapped within a `role="grid"` element. |
 | `.k-colorpalette-table>tbody>tr` | `role=row` | Required as the semantic role of its parent `<table>` has been removed. |
 | `.k-colorpalette-tile` | `role=gridcell` | Required as the semantic role of its parent `<table>` has been removed. |
 |  | `aria-label` or `title` | The text representation of the color value for the current cell. |

@@ -23,6 +23,10 @@ export const CalendarTable = (
     return (
         <table
             {...other}
+            role="grid"
+            aria-labelledby="calendar-title-id"
+            aria-activedescendant="focused-cell-id"
+            tabIndex={0}
             className={classNames(
                 props.className,
                 CALENDARTABLE_CLASSNAME

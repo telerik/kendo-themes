@@ -1,3 +1,3 @@
 export const ColorPaletteRow = (props: React.HTMLAttributes<HTMLTableRowElement>) => (
-    <tr>{props.children}</tr>
+    <tr role="row">{props.children}</tr>
 );

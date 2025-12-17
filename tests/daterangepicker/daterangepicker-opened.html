@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -23,20 +23,20 @@
             <span class="k-daterangepicker">
                 <span class="k-floating-label-container">
                     <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                        <input role="combobox" aria-label="Start date" aria-haspopup="grid" aria-expanded="true" aria-controls="daterangepicker-calendar" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                     </span>
                     <label class="k-floating-label">Start</label>
                 </span>
                 <span class="k-floating-label-container">
                     <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                        <input role="combobox" aria-label="End date" aria-haspopup="grid" aria-expanded="true" aria-controls="daterangepicker-calendar" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                     </span>
                     <label class="k-floating-label">End</label>
                 </span>
             </span>
             <div class="k-animation-container k-animation-container-shown">
                 <div class="k-child-animation-container">
-                    <div class="k-calendar-container k-daterangepicker-popup k-popup">
+                    <div id="daterangepicker-calendar" class="k-calendar-container k-daterangepicker-popup k-popup">
                         <div class="k-calendar-range k-calendar k-calendar-md">
                             <div class="k-calendar-header">
                                 <button class="k-calendar-title k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
@@ -334,20 +334,20 @@
             <span dir="rtl" class="k-daterangepicker">
                 <span class="k-floating-label-container">
                     <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                        <input role="combobox" aria-label="Start date" aria-haspopup="grid" aria-expanded="true" aria-controls="daterangepicker-calendar" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                     </span>
                     <label class="k-floating-label">Start</label>
                 </span>
                 <span class="k-floating-label-container">
                     <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                        <input role="combobox" aria-label="End date" aria-haspopup="grid" aria-expanded="true" aria-controls="daterangepicker-calendar" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                     </span>
                     <label class="k-floating-label">End</label>
                 </span>
             </span>
             <div class="k-animation-container k-animation-container-shown">
                 <div class="k-child-animation-container">
-                    <div class="k-calendar-container k-daterangepicker-popup k-popup">
+                    <div id="daterangepicker-calendar" class="k-calendar-container k-daterangepicker-popup k-popup">
                         <div class="k-calendar-range k-calendar k-calendar-md" dir="rtl">
                             <div class="k-calendar-header">
                                 <button class="k-calendar-title k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">

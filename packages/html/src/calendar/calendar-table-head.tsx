@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 import { CalendarCell } from '../calendar';
+import { CalendarTableRow } from './calendar-table-row.spec';
 
 const CALEENDARTABLEHEAD_CLASSNAME = `k-calendar-thead`;
 
@@ -11,6 +12,8 @@ export type KendoCalendarTableHeadProps = {
 const defaultOptions = {
     cellsText: [ 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa' ]
 };
+
+const fullDayNames = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ];
 
 export const CalendarTableHead = (
     props: KendoCalendarTableHeadProps &
@@ -25,11 +28,12 @@ export const CalendarTableHead = (
     return (
         <thead
             {...other}
+            role="rowgroup"
             className={classNames(props.className, CALEENDARTABLEHEAD_CLASSNAME)}>
-            <tr className="k-calendar-tr">
+            <CalendarTableRow>
                 {showWeek && <CalendarCell weekCell headerCell /> }
-                {cellsText.map((text, index) => <CalendarCell key={index} text={text} headerCell />)}
-            </tr>
+                {cellsText.map((text, index) => <CalendarCell key={index} text={text} headerCell ariaLabel={fullDayNames[index]} />)}
+            </CalendarTableRow>
         </thead>
     );
 };

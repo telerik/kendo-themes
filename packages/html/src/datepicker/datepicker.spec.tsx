@@ -111,7 +111,19 @@ export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerSt
                 className={classNames(props.className, DATEPICKER_CLASSNAME)}
             >
                 <InputPrefix>{prefix}</InputPrefix>
-                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputInnerInput
+                    placeholder={placeholder}
+                    value={value}
+                    role="combobox"
+                    aria-label="Date picker"
+                    aria-haspopup="grid"
+                    aria-expanded={opened ? 'true' : 'false'}
+                    aria-controls={opened ? 'datepicker-calendar' : undefined}
+                    aria-required={required ? 'true' : undefined}
+                    aria-invalid={invalid ? 'true' : undefined}
+                    aria-disabled={disabled ? 'true' : undefined}
+                    readonly={readonly}
+                />
                 <InputValidationIcon
                     valid={valid}
                     invalid={invalid}
@@ -132,10 +144,14 @@ export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerSt
                     rounded={null}
                     size={size}
                     fillMode={fillMode}
+                    aria-label="Open calendar"
+                    tabIndex={-1}
+                    disabled={disabled}
+                    aria-disabled={disabled ? 'true' : undefined}
                 />
             </Input>
             {opened &&
-                <Popup className="k-calendar-container k-datepicker-popup">
+                <Popup id="datepicker-calendar" className="k-calendar-container k-datepicker-popup">
                     <CalendarNormal dir={dir} />
                 </Popup>
             }
@@ -143,7 +159,7 @@ export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerSt
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Confirm date selection" />}
                             title={adaptiveTitle}
                             subtitle={adaptiveSubtitle}
                         />

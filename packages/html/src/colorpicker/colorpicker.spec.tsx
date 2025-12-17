@@ -98,6 +98,14 @@ export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPicke
         <>
             <Picker
                 {...other}
+                role="combobox"
+                aria-label="Color picker"
+                aria-haspopup="dialog"
+                aria-expanded={opened ? 'true' : 'false'}
+                aria-controls={opened ? 'colorpicker-popup' : undefined}
+                tabIndex={0}
+                aria-invalid={invalid ? 'true' : undefined}
+                aria-disabled={disabled ? 'true' : undefined}
                 size={size}
                 rounded={rounded}
                 fillMode={fillMode}
@@ -134,10 +142,13 @@ export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPicke
                     rounded={null}
                     size={size}
                     fillMode={fillMode}
+                    disabled={disabled}
+                    aria-disabled={disabled ? 'true' : undefined}
+                    aria-label="Select color"
                 />
             </Picker>
             {opened && popup &&
-                <Popup className="k-colorpicker-popup">
+                <Popup id="colorpicker-popup" className="k-colorpicker-popup">
                     {popup}
                 </Popup>
             }
@@ -145,7 +156,7 @@ export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPicke
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Confirm color selection" />}
                             title={adaptiveTitle}
                             subtitle={adaptiveSubtitle}
                         />

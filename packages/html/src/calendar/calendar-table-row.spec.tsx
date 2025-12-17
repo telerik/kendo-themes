@@ -14,6 +14,7 @@ export const CalendarTableRow: KendoComponent<React.HTMLAttributes<HTMLTableRowE
     return (
         <tr
             {...other}
+            role="row"
             className={classNames(props.className, className)}>
             {props.children}
         </tr>

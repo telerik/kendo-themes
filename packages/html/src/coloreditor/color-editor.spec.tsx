@@ -79,14 +79,14 @@ export const ColorEditor: KendoComponent<KendoColorEditorProps & KendoColorEdito
                 <div className="k-coloreditor-header-actions k-hstack">
                     { group &&
                         <ButtonGroup fillMode="flat">
-                            <Button className="k-group-start" size={size} fillMode="flat" icon="droplet-slider" selected={ view === 'gradient' }></Button>
-                            <Button className="k-group-end" size={size} fillMode="flat" icon="palette" selected={ view === 'palette' }></Button>
+                            <Button className="k-group-start" size={size} fillMode="flat" icon="droplet-slider" selected={ view === 'gradient' } aria-label="Gradient view"></Button>
+                            <Button className="k-group-end" size={size} fillMode="flat" icon="palette" selected={ view === 'palette' } aria-label="Palette view"></Button>
                         </ButtonGroup>
                     }
                 </div>
                 <div className="k-spacer"></div>
                 <div className="k-coloreditor-header-actions k-hstack">
-                    <Button fillMode="flat" icon="droplet-slash" size={size}></Button>
+                    <Button fillMode="flat" icon="droplet-slash" size={size} aria-label="Clear color"></Button>
                     <div className="k-coloreditor-preview k-vstack">
                         <ColorPreview className="k-coloreditor-preview-color" color={color} />
                         <ColorPreview className="k-coloreditor-current-color" color={currentColor} />
@@ -94,7 +94,7 @@ export const ColorEditor: KendoComponent<KendoColorEditorProps & KendoColorEdito
                 </div>
             </div>
             <div className="k-coloreditor-views k-vstack">
-                { view === 'gradient' ? <ColorGradient focus={focusView} size={size} canvasOrientation={canvasOrientation} /> : <ColorPalette palette={palette} size={size} /> }
+                { view === 'gradient' ? <ColorGradient focus={focusView} size={size} canvasOrientation={canvasOrientation} ariaRole={null} ariaLabel={null} tabIndex={-1} /> : <ColorPalette palette={palette} size={size} /> }
             </div>
             {actionButtons && <ActionButtons className="k-coloreditor-footer" alignment="start" >
                 <Button themeColor="primary" size={size} className="k-coloreditor-apply">Apply</Button>

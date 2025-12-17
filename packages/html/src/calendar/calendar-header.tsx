@@ -53,12 +53,12 @@ export const CalendarHeader = (
                     'k-vstack': orientation === 'vertical',
                 }
             )}>
-            <Button disabled={calendarView === "century"} className="k-calendar-title" text={calendarTitleText} size={size} fillMode="flat" themeColor="primary"></Button>
+            <Button disabled={calendarView === "century"} className="k-calendar-title" text={calendarTitleText} size={size} fillMode="flat" themeColor="primary" aria-label={calendarTitleText} tabIndex={-1} aria-disabled={calendarView === "century" ? 'true' : undefined}></Button>
             <span className="k-spacer"></span>
             <span className="k-calendar-nav">
-                {showNavigationButtons && <Button className="k-calendar-nav-prev" icon={iconPrev} size={size} fillMode="flat"></Button>}
-                {showToday && <Button size={size} fillMode="flat" className="k-calendar-nav-today">Today</Button>}
-                {showNavigationButtons && <Button className="k-calendar-nav-next" icon={iconNext} size={size} fillMode="flat"></Button>}
+                {showNavigationButtons && <Button className="k-calendar-nav-prev" icon={iconPrev} size={size} fillMode="flat" aria-label="Previous" tabIndex={-1}></Button>}
+                {showToday && <Button size={size} fillMode="flat" className="k-calendar-nav-today" tabIndex={-1}>Today</Button>}
+                {showNavigationButtons && <Button className="k-calendar-nav-next" icon={iconNext} size={size} fillMode="flat" aria-label="Next" tabIndex={-1}></Button>}
             </span>
         </div>
     );

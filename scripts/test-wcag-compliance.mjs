@@ -379,7 +379,7 @@ async function testWCAGCompliance() {
         meta: {
             timestamp: new Date().toISOString(),
             complianceLevel,
-            filesTesteд: results.length,
+            filesTested: results.length,
             wcagVersion: '2.2'
         },
         summary: {

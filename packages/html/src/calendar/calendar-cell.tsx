@@ -20,6 +20,7 @@ export type KendoCalendarCellProps = {
     rangeEnd?: boolean;
     empty?: boolean;
     dayIndicator?: boolean;
+    ariaLabel?: string;
 };
 
 export type KendoCalendarCellState = { [K in (typeof states)[number]]?: boolean };
@@ -41,6 +42,7 @@ export const CalendarCell = (
         rangeEnd,
         dayIndicator,
         empty,
+        ariaLabel,
         hover,
         focus,
         active,
@@ -77,7 +79,12 @@ export const CalendarCell = (
 
     if (headerCell) {
         return (
-            <th {...other} className={classNames(calendarCellClasses)}>
+            <th
+                {...other}
+                role="columnheader"
+                scope="col"
+                {...(ariaLabel && { 'aria-label': ariaLabel })}
+                className={classNames(calendarCellClasses)}>
                 {text}
             </th>
         );
@@ -85,14 +92,24 @@ export const CalendarCell = (
 
     if (weekCell) {
         return (
-            <td {...other} className={classNames(calendarCellClasses)}>
+            <td
+                {...other}
+                role="gridcell"
+                {...(ariaLabel && { 'aria-label': ariaLabel })}
+                className={classNames(calendarCellClasses)}>
                 {text}
             </td>
         );
     }
 
     return (
-        <td {...other} className={classNames(calendarCellClasses)}>
+        <td
+            {...other}
+            role="gridcell"
+            {...(selected && { 'aria-selected': 'true' })}
+            {...(disabled && { 'aria-disabled': 'true' })}
+            {...(ariaLabel && { 'aria-label': ariaLabel })}
+            className={classNames(calendarCellClasses)}>
             {empty && !showOtherMonth
                 ? <>&nbsp;</>
                 : <span className="k-link">

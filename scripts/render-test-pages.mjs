@@ -42,18 +42,18 @@ const server = createServer({
 
 server.listen(PORT, HOST, async() => {
     // Build glob pattern based on component filter
-    const globPattern = componentFilter 
+    const globPattern = componentFilter
         ? `${TESTS_PATH}/${componentFilter}/**/${COMPONENT_PAGE_EXT}`
         : `${TESTS_PATH}/!(utils)/**/${COMPONENT_PAGE_EXT}`;
-    
+
     const files = globSync(globPattern, { dotRelative: true });
-    
+
     if (files.length === 0) {
         await browser.close();
         server.close();
         process.exit(1);
     }
-    
+
     const pages = files.map(path => [ path, pathUrl(path) ]);
 
     for (let i = 0; i < pages.length; i++) {
@@ -83,7 +83,7 @@ server.listen(PORT, HOST, async() => {
             }
         });
     }
-    
+
     await browser.close();
     server.close();
 });

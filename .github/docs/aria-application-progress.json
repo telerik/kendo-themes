@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-12-05T16:10:21.190Z",
+  "lastUpdated": "2025-12-11T21:01:32.449Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -122,7 +122,7 @@
       "notes": ""
     },
     "calendar": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "calendars",
       "complianceScore": null,
@@ -132,7 +132,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2025-12-11T21:01:32.448Z"
     },
     "captcha": {
       "status": "completed",
@@ -282,7 +283,7 @@
       "completedAt": "2025-12-05T12:45:08.548Z"
     },
     "colorgradient": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "pickers",
       "complianceScore": null,
@@ -292,10 +293,11 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2025-12-08T13:55:07.316Z"
     },
     "colorpalette": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "pickers",
       "complianceScore": null,
@@ -305,10 +307,11 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2025-12-08T14:05:15.880Z"
     },
     "colorpicker": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "pickers",
       "complianceScore": null,
@@ -318,7 +321,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2025-12-08T14:31:03.101Z"
     },
     "column-chooser": {
       "status": "pending",
@@ -386,7 +390,7 @@
       "notes": "100% ARIA validation. 98.7% WCAG (1 target-size violation on small size variant - design constraint). DateInput passes props to InputInnerInput. SpinButton has titles."
     },
     "datepicker": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "pickers",
       "complianceScore": null,
@@ -396,10 +400,11 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2025-12-11T14:38:13.489Z"
     },
     "daterangepicker": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "pickers",
       "complianceScore": null,
@@ -409,7 +414,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2025-12-11T14:41:45.057Z"
     },
     "datetimepicker": {
       "status": "pending",

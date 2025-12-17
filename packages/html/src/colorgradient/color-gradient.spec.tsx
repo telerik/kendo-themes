@@ -33,6 +33,9 @@ export type KendoColorGradientProps = KendoColorGradientOptions & {
     alphaStyle?: React.CSSProperties;
     alphaStyleHorizontal?: React.CSSProperties;
     canvasOrientation?: 'horizontal' | 'vertical';
+    ariaRole?: string | null;
+    ariaLabel?: string | null;
+    tabIndex?: number | null;
 };
 
 export type KendoColorGradientState = { [K in (typeof states)[number]]?: boolean };
@@ -71,12 +74,19 @@ export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorG
         hoverHandle,
         focusHandle,
         canvasOrientation = defaultOptions.canvasOrientation,
+        ariaRole = "textbox",
+        ariaLabel = "Color gradient picker",
+        tabIndex = 0,
         ...other
     } = props;
 
     return (
         <div
             {...other}
+            {...(ariaRole !== null && { role: ariaRole })}
+            {...(ariaLabel !== null && { 'aria-label': ariaLabel })}
+            {...(tabIndex !== null && { tabIndex })}
+            aria-disabled={disabled ? true : undefined}
             className={classNames(
                 props.className,
                 COLOR_GRADIENT_CLASSNAME,
@@ -100,7 +110,12 @@ export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorG
                                     'k-hover': hoverHandle,
                                     'k-focus': focusHandle
                                 }
-                            )} style={dragHandleStyle} ></div>
+                            )}
+                            role="slider"
+                            aria-label="Color well with two-dimensional slider for selecting saturation and lightness"
+                            aria-valuetext="Saturation 50, Lightness 50"
+                            aria-orientation="undefined"
+                            style={dragHandleStyle} ></div>
                         </div>
                     </div>
                     <div className="k-hsv-controls k-hstack">
@@ -123,7 +138,12 @@ export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorG
                                     'k-hover': hoverHandle,
                                     'k-focus': focusHandle
                                 }
-                            )} style={dragHandleStyle} ></div>
+                            )}
+                            role="slider"
+                            aria-label="Color well with two-dimensional slider for selecting saturation and lightness"
+                            aria-valuetext="Saturation 50, Lightness 50"
+                            aria-orientation="undefined"
+                            style={dragHandleStyle} ></div>
                         </div>
                     </div>
                     <div className="k-hsv-controls k-vstack">

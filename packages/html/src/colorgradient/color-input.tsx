@@ -37,24 +37,24 @@ export const ColorInput = (
             {...other}
             className={classNames(COLOR_INPUT_CLASSNAME, 'k-hstack')}>
             <div className="k-vstack">
-                <Button fillMode="flat" icon="caret-alt-expand" className="k-colorgradient-toggle-mode" size={size} />
+                <Button fillMode="flat" icon="caret-alt-expand" className="k-colorgradient-toggle-mode" size={size} aria-label="Toggle color mode" />
             </div>
             { mode === 'rgba' &&
                 <>
                     <div className="k-vstack">
-                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" size={size} />
+                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" size={size} aria-label="Red channel" />
                         <label className="k-colorgradient-input-label">R</label>
                     </div>
                     <div className="k-vstack">
-                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" size={size} />
+                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" size={size} aria-label="Green channel" />
                         <label className="k-colorgradient-input-label">G</label>
                     </div>
                     <div className="k-vstack">
-                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" size={size} />
+                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" size={size} aria-label="Blue channel" />
                         <label className="k-colorgradient-input-label">B</label>
                     </div>
                     <div className="k-vstack">
-                        <NumericTextbox showSpinButton={false} showClearButton={false} value="1.00" size={size} />
+                        <NumericTextbox showSpinButton={false} showClearButton={false} value="1.00" size={size} aria-label="Alpha channel" />
                         <label className="k-colorgradient-input-label">A</label>
                     </div>
                 </>
@@ -62,15 +62,15 @@ export const ColorInput = (
             { mode === 'rgb' &&
                 <>
                     <div className="k-vstack">
-                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" />
+                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" aria-label="Red channel" />
                         <label className="k-colorgradient-input-label">R</label>
                     </div>
                     <div className="k-vstack">
-                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" />
+                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" aria-label="Green channel" />
                         <label className="k-colorgradient-input-label">G</label>
                     </div>
                     <div className="k-vstack">
-                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" />
+                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" aria-label="Blue channel" />
                         <label className="k-colorgradient-input-label">B</label>
                     </div>
                 </>
@@ -78,19 +78,19 @@ export const ColorInput = (
             { mode === 'hsva' &&
                 <>
                     <div className="k-vstack">
-                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" />
+                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" aria-label="Hue channel" />
                         <label className="k-colorgradient-input-label">H</label>
                     </div>
                     <div className="k-vstack">
-                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" />
+                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" aria-label="Saturation channel" />
                         <label className="k-colorgradient-input-label">S</label>
                     </div>
                     <div className="k-vstack">
-                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" />
+                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" aria-label="Value channel" />
                         <label className="k-colorgradient-input-label">V</label>
                     </div>
                     <div className="k-vstack">
-                        <NumericTextbox showSpinButton={false} showClearButton={false} value="1.00" />
+                        <NumericTextbox showSpinButton={false} showClearButton={false} value="1.00" aria-label="Alpha channel" />
                         <label className="k-colorgradient-input-label">A</label>
                     </div>
                 </>
@@ -98,15 +98,15 @@ export const ColorInput = (
             { mode === 'hsv' &&
                 <>
                     <div className="k-vstack">
-                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" />
+                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" aria-label="Hue channel" />
                         <label className="k-colorgradient-input-label">H</label>
                     </div>
                     <div className="k-vstack">
-                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" />
+                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" aria-label="Saturation channel" />
                         <label className="k-colorgradient-input-label">S</label>
                     </div>
                     <div className="k-vstack">
-                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" />
+                        <NumericTextbox showSpinButton={false} showClearButton={false} value="132" aria-label="Value channel" />
                         <label className="k-colorgradient-input-label">V</label>
                     </div>
                 </>
