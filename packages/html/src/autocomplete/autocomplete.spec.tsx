@@ -54,6 +54,7 @@ export type KendoAutocompleteProps = KendoAutocompleteOptions & {
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
     adaptiveCustomValue?: boolean;
+    id?: string;
 };
 
 export type KendoAutocompleteState = { [K in (typeof states)[number]]?: boolean };
@@ -94,6 +95,7 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
         adaptiveTitle,
         adaptiveSubtitle,
         adaptiveCustomValue,
+        id = 'k-autocomplete',
         ...other
     } = props;
 
@@ -121,7 +123,21 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
                         {separators && <InputSeparator />}
                     </>
                 }
-                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputInnerInput
+                    placeholder={placeholder}
+                    value={value}
+                    disabled={disabled}
+                    readonly={readonly}
+                    role="combobox"
+                    aria-haspopup="listbox"
+                    aria-expanded={opened ? 'true' : 'false'}
+                    aria-controls={opened ? `${id}-listbox` : undefined}
+                    aria-autocomplete="list"
+                    {...(readonly && { 'aria-readonly': 'true' })}
+                    {...(loading && { 'aria-busy': 'true' })}
+                    {...(invalid && { 'aria-invalid': 'true' })}
+                    tabIndex={0}
+                />
                 <InputValidationIcon
                     valid={valid}
                     invalid={invalid}
@@ -143,7 +159,12 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
                 }
             </Input>
             {opened && popup &&
-                <Popup className="k-list-container k-autocomplete-popup">
+                <Popup
+                    className="k-list-container k-autocomplete-popup"
+                    id={`${id}-listbox`}
+                    role="region"
+                    aria-label="Autocomplete suggestions"
+                >
                     {popup}
                 </Popup>
             }
@@ -151,7 +172,7 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Confirm" />}
                             input={true}
                             inputValue={value}
                             inputPlaceholder={placeholder}
@@ -161,10 +182,15 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
                     }
                 >
                     <div className="k-list-container">
-                        <List customValue={adaptiveCustomValue ? <ListCustomValue text={`Use "${value}"`}/> : undefined} size="large">
-                            <ListItem text="List item" />
-                            <ListItem text="List item" />
-                            <ListItem text="List item" />
+                        <List
+                            customValue={adaptiveCustomValue ? <ListCustomValue text={`Use "${value}"`}/> : undefined}
+                            size="large"
+                            role="listbox"
+                            aria-label="Autocomplete options"
+                        >
+                            <ListItem role="option" aria-selected="false" tabIndex={-1} text="List item" />
+                            <ListItem role="option" aria-selected="false" tabIndex={-1} text="List item" />
+                            <ListItem role="option" aria-selected="false" tabIndex={-1} text="List item" />
                         </List>
                     </div>
                 </ActionSheet>

@@ -15,6 +15,9 @@ export type KendoAnimationContainerProps = {
         left: number | string;
     };
     animationStyle?: React.CSSProperties;
+    role?: string;
+    'aria-label'?: string;
+    'aria-labelledby'?: string;
 };
 
 const defaultOptions = {
@@ -30,6 +33,9 @@ export const AnimationContainer: KendoComponent<KendoAnimationContainerProps & R
         positionMode = defaultOptions.positionMode,
         animationStyle,
         offset,
+        role,
+        'aria-label': ariaLabel,
+        'aria-labelledby': ariaLabelledby,
         ...other
     } = props;
 
@@ -46,6 +52,9 @@ export const AnimationContainer: KendoComponent<KendoAnimationContainerProps & R
                     ["k-animation-container-fixed"]: positionMode === "fixed"
                 }
             )}
+            {...(role && { role })}
+            {...(ariaLabel && { 'aria-label': ariaLabel })}
+            {...(ariaLabelledby && { 'aria-labelledby': ariaLabelledby })}
         >
             <div className="k-child-animation-container" style={animationStyle}>
                 {props.children}

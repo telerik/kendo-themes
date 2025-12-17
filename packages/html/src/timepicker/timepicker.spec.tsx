@@ -51,6 +51,7 @@ export type KendoTimePickerProps = KendoTimePickerOptions & {
     adaptiveSettings?: KendoActionSheetProps;
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
+    id?: string;
 };
 
 export type KendoTimePickerState = { [K in (typeof states)[number]]?: boolean };
@@ -88,6 +89,7 @@ export const TimePicker: KendoComponent<KendoTimePickerProps & KendoTimePickerSt
         adaptiveSettings,
         adaptiveTitle,
         adaptiveSubtitle,
+        id = 'timepicker-id',
         ...other
     } = props;
 
@@ -110,7 +112,18 @@ export const TimePicker: KendoComponent<KendoTimePickerProps & KendoTimePickerSt
                 className={classNames(props.className, TIMEPICKER_CLASSNAME)}
             >
                 <InputPrefix>{prefix}</InputPrefix>
-                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputInnerInput
+                    placeholder={placeholder}
+                    value={value}
+                    role="combobox"
+                    aria-expanded={opened ? 'true' : 'false'}
+                    aria-haspopup="dialog"
+                    aria-controls={opened ? `${id}-popup` : undefined}
+                    aria-label="Time picker"
+                    disabled={disabled}
+                    readonly={readonly}
+                    required={required}
+                />
                 <InputValidationIcon
                     valid={valid}
                     invalid={invalid}
@@ -131,10 +144,14 @@ export const TimePicker: KendoComponent<KendoTimePickerProps & KendoTimePickerSt
                     rounded={null}
                     size={size}
                     fillMode={fillMode}
+                    role="button"
+                    aria-label="Toggle time picker"
+                    tabIndex={-1}
+                    disabled={disabled}
                 />
             </Input>
             {opened &&
-                <Popup className="k-list-container k-timepicker-popup">
+                <Popup className="k-list-container k-timepicker-popup" id={`${id}-popup`}>
                     <TimeSelector columns={["HH", "mm", "ss", "tt"]} focusedColumn="mm" header={(
                         <TimeSelectorHeader title="10:00:00 AM">
                             <Button fillMode="flat" className="k-time-now">Now</Button>
@@ -150,7 +167,7 @@ export const TimePicker: KendoComponent<KendoTimePickerProps & KendoTimePickerSt
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Confirm" />}
                             title={adaptiveTitle}
                             subtitle={adaptiveSubtitle}
                         />

@@ -22,6 +22,10 @@ export type KendoListProps = KendoListOptions & {
     optionLabel?: React.JSX.Element;
     customValue?: React.JSX.Element;
     screenReaders?: boolean;
+    role?: string;
+    'aria-label'?: string;
+    'aria-labelledby'?: string;
+    'aria-multiselectable'?: 'true' | 'false';
 };
 
 export type KendoListState = { [K in (typeof states)[number]]?: boolean };
@@ -42,6 +46,10 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
         optionLabel,
         customValue,
         screenReaders,
+        role,
+        'aria-label': ariaLabel,
+        'aria-labelledby': ariaLabelledby,
+        'aria-multiselectable': ariaMultiselectable,
         ...other
     } = props;
 
@@ -85,11 +93,24 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
                     });
                 }
 
-                listGroup = <ListGroup label={listHeader} virtualization={virtualization}>{listChildren}</ListGroup>;
+                listGroup = <ListGroup
+                    label={listHeader}
+                    virtualization={virtualization}
+                    role={role}
+                    aria-label={ariaLabel}
+                    aria-labelledby={ariaLabelledby}
+                    aria-multiselectable={ariaMultiselectable}
+                >{listChildren}</ListGroup>;
 
             } else if ( child.type === ListItem ) {
                 listChildren.push( <ListItem key={`${child.type}-${index}`} {...child.props} /> );
-                listContent = <ListContent virtualization={virtualization}>{listChildren}</ListContent>;
+                listContent = <ListContent
+                    virtualization={virtualization}
+                    ulRole="listbox"
+                    aria-label={ariaLabel}
+                    aria-labelledby={ariaLabelledby}
+                    aria-multiselectable={ariaMultiselectable}
+                >{listChildren}</ListContent>;
                 screenReaders && (listNoData = <NoData className="k-sr-only">{listChildren.length} items found.</NoData>);
             }
         });
@@ -109,7 +130,8 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
                 {
                     ['k-virtual-list']: virtualization,
                 }
-            )}>
+            )}
+        >
             {optionLabel}
             {customValue}
             {listGroup}

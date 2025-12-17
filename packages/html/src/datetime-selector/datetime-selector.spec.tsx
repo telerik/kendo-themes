@@ -23,6 +23,7 @@ export type KendoDateTimeSelectorProps = KendoDateTimeSelectorOptions & {
     tab?: 'time' | 'date';
     dir?: 'ltr' | 'rtl';
     actionButtons?: boolean;
+    activeCellId?: string;
 };
 
 const defaultOptions = {
@@ -40,6 +41,7 @@ export const DateTimeSelector: KendoComponent<KendoDateTimeSelectorProps & React
         tab = defaultOptions.tab,
         actionButtons = defaultOptions.actionButtons,
         dir,
+        activeCellId,
         ...other
     } = props;
 
@@ -78,7 +80,7 @@ export const DateTimeSelector: KendoComponent<KendoDateTimeSelectorProps & React
                     </>
                     : <>
                         <div className="k-datetime-calendar-wrap">
-                            <CalendarNormal size={size} showOtherMonth dir={dir}></CalendarNormal>
+                            <CalendarNormal size={size} showOtherMonth dir={dir} activeCellId={activeCellId}></CalendarNormal>
                         </div>
                         <div className="k-datetime-time-wrap"></div>
                     </>

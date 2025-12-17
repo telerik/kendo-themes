@@ -56,6 +56,10 @@ export const RadioButton: KendoComponent<RadioButtonProps & RadioButtonState & R
                 type="radio"
                 checked={checked}
                 required={required}
+                disabled={disabled}
+                aria-required={required ? 'true' : undefined}
+                aria-invalid={invalid ? 'true' : undefined}
+                aria-disabled={disabled ? 'true' : undefined}
                 className={classNames(
                     props.className,
                     RADIOBUTTON_CLASSNAME,

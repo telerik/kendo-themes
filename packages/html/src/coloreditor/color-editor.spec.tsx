@@ -33,6 +33,8 @@ export type KendoColorEditorProps = KendoColorEditorOptions & {
     palette?: Array<string> | any;
     actionButtons?: boolean;
     canvasOrientation?: 'horizontal' | 'vertical';
+    invalid?: boolean;
+    disabled?: boolean;
 };
 
 export type KendoColorEditorState = { [K in (typeof states)[number]]?: boolean };
@@ -62,6 +64,8 @@ export const ColorEditor: KendoComponent<KendoColorEditorProps & KendoColorEdito
         group,
         actionButtons = defaultOptions.actionButtons,
         canvasOrientation = defaultOptions.canvasOrientation,
+        invalid,
+        disabled,
         ...other
     } = props;
 
@@ -74,7 +78,13 @@ export const ColorEditor: KendoComponent<KendoColorEditorProps & KendoColorEdito
                 COLOREDITOR_CLASSNAME,
                 optionClassNames(COLOREDITOR_CLASSNAME, { size }),
                 stateClassNames(COLOREDITOR_CLASSNAME, { focus }),
-            )} dir={dir}>
+            )}
+            role="textbox"
+            aria-label={`Color picker${color ? `, selected color: ${color}` : ''}`}
+            aria-invalid={invalid ? 'true' : undefined}
+            aria-disabled={disabled ? 'true' : undefined}
+            tabIndex={0}
+            dir={dir}>
             <div className="k-coloreditor-header k-hstack">
                 <div className="k-coloreditor-header-actions k-hstack">
                     { group &&

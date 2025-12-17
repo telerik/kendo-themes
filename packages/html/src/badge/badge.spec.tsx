@@ -63,6 +63,7 @@ export const Badge: KendoComponent<KendoBadgeProps & React.HTMLAttributes<HTMLSp
     return (
         <span
             { ...other }
+            aria-hidden={!props.children ? 'true' : undefined}
             className={classNames(
                 props.className,
                 BADGE_CLASSNAME,

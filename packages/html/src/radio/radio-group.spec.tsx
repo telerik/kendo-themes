@@ -28,6 +28,7 @@ export const RadioGroup: KendoComponent<KendoRadioGroupProps & React.HTMLAttribu
     return (
         <ul
             {...other}
+            role="radiogroup"
             className={classNames(
                 props.className,
                 RADIOGROUP_CLASSNAME,

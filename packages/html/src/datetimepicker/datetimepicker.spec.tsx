@@ -52,6 +52,7 @@ export type KendoDateTimePickerProps = KendoDateTimePickerOptions & {
     adaptiveSettings?: KendoActionSheetProps;
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
+    id?: string;
 };
 
 export type KendoDateTimePickerState = { [K in (typeof states)[number]]?: boolean };
@@ -91,6 +92,7 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
         adaptiveSettings,
         adaptiveTitle,
         adaptiveSubtitle,
+        id = 'k-datetimepicker',
         ...other
     } = props;
 
@@ -114,7 +116,21 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
                 className={classNames(props.className, DATETIMEPICKER_CLASSNAME)}
             >
                 <InputPrefix>{prefix}</InputPrefix>
-                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputInnerInput
+                    placeholder={placeholder}
+                    value={value}
+                    disabled={disabled}
+                    readonly={readonly}
+                    role="combobox"
+                    aria-haspopup="dialog"
+                    aria-expanded={opened ? 'true' : 'false'}
+                    aria-controls={opened ? `${id}-popup` : undefined}
+                    {...(opened && { 'aria-activedescendant': `${id}-active` })}
+                    {...(readonly && { 'aria-readonly': 'true' })}
+                    {...(required && { 'aria-required': 'true' })}
+                    {...(invalid && { 'aria-invalid': 'true' })}
+                    tabIndex={0}
+                />
                 <InputValidationIcon
                     valid={valid}
                     invalid={invalid}
@@ -135,18 +151,21 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
                     rounded={null}
                     size={size}
                     fillMode={fillMode}
+                    aria-label={tab === 'time' ? "Select time" : "Select date"}
+                    tabIndex={-1}
+                    {...(disabled && { 'aria-disabled': 'true' })}
                 />
             </Input>
             {opened &&
-                <Popup className="k-datetime-container k-datetimepicker-popup" dir={dir}>
-                    <DateTimeSelector size={size} tab={tab} dir={dir} />
+                <Popup className="k-datetime-container k-datetimepicker-popup" dir={dir} id={`${id}-popup`}>
+                    <DateTimeSelector size={size} tab={tab} dir={dir} activeCellId={`${id}-active`} />
                 </Popup>
             }
             {adaptive &&
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Confirm" />}
                             title={adaptiveTitle}
                             subtitle={adaptiveSubtitle}
                         />

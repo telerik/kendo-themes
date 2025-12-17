@@ -7,6 +7,7 @@ export type KendoCalendarTableProps = {
     calendarCaption?: string;
     showTableHead?: boolean;
     showWeek?: boolean;
+    ariaActivedescendant?: string;
 };
 
 export const CalendarTable = (
@@ -17,6 +18,7 @@ export const CalendarTable = (
         calendarCaption,
         showTableHead,
         showWeek,
+        ariaActivedescendant,
         ...other
     } = props;
 
@@ -25,7 +27,7 @@ export const CalendarTable = (
             {...other}
             role="grid"
             aria-labelledby="calendar-title-id"
-            aria-activedescendant="focused-cell-id"
+            {...(ariaActivedescendant && { 'aria-activedescendant': ariaActivedescendant })}
             tabIndex={0}
             className={classNames(
                 props.className,

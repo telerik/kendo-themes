@@ -84,7 +84,7 @@ export const Slider: KendoComponent<KendoSliderProps & KendoSliderState & React.
                     'k-colorgradient-slider': type === 'gradient',
                 }
             )} dir={dir} >
-            { showButtons && <Button className="k-button-decrease" rounded="full" icon={iconDecrease} /> }
+            { showButtons && <Button className="k-button-decrease" rounded="full" icon={iconDecrease} aria-hidden="true" tabIndex={-1} /> }
             <div className="k-slider-track-wrap">
                 {
                     showTicks &&
@@ -96,7 +96,18 @@ export const Slider: KendoComponent<KendoSliderProps & KendoSliderState & React.
                     <div className="k-slider-selection"></div>
                     { type === 'range' &&
 
-                    <span className={classNames(
+                    <span
+                        role="slider"
+                        aria-label="Range start"
+                        aria-valuenow={0}
+                        aria-valuemin={0}
+                        aria-valuemax={100}
+                        aria-valuetext="0"
+                        aria-orientation={orientation === 'vertical' ? 'vertical' : undefined}
+                        aria-readonly={readonly ? 'true' : undefined}
+                        aria-disabled={disabled ? 'true' : undefined}
+                        tabIndex={0}
+                        className={classNames(
                         'k-draghandle',
                         'k-draghandle-start',
                         stateClassNames(SLIDER_CLASSNAME, {
@@ -106,7 +117,18 @@ export const Slider: KendoComponent<KendoSliderProps & KendoSliderState & React.
                         })
                     )}></span> }
 
-                    <span className={classNames(
+                    <span
+                        role="slider"
+                        aria-label="Value"
+                        aria-valuenow={50}
+                        aria-valuemin={0}
+                        aria-valuemax={100}
+                        aria-valuetext="50"
+                        aria-orientation={orientation === 'vertical' ? 'vertical' : undefined}
+                        aria-readonly={readonly ? 'true' : undefined}
+                        aria-disabled={disabled ? 'true' : undefined}
+                        tabIndex={0}
+                        className={classNames(
                         'k-draghandle',
                         `k-draghandle-${handlePosition}`,
                         stateClassNames(SLIDER_CLASSNAME, {
@@ -117,7 +139,7 @@ export const Slider: KendoComponent<KendoSliderProps & KendoSliderState & React.
                     )}></span>
                 </div>
             </div>
-            { showButtons && <Button className="k-button-increase" rounded="full" icon={iconIncrease} /> }
+            { showButtons && <Button className="k-button-increase" rounded="full" icon={iconIncrease} aria-hidden="true" tabIndex={-1} /> }
         </div>
     );
 };

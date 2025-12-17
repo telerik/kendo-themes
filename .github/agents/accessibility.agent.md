@@ -312,6 +312,75 @@ For state-dependent attributes:
 - Ensure values update correctly
 - Test all state combinations
 
+## Critical Requirements (Must Follow)
+
+### 1. aria-activedescendant MUST Point to Real DOM Elements
+**WRONG**: Using placeholder IDs that don't exist
+```tsx
+// ❌ BAD - ID doesn't exist in DOM
+aria-activedescendant="k-calendar-focused-cell"
+```
+
+**CORRECT**: Use deterministic IDs on actual elements
+```tsx
+// ✅ GOOD - ID exists on real element
+// In parent component:
+<InputInnerInput
+    aria-activedescendant={opened ? `${id}-active` : undefined}
+/>
+
+// In child component (calendar cell):
+<CalendarCell text="12" today id={activeCellId} />
+```
+
+**Implementation pattern**:
+1. Add `id` prop to parent component with default value (e.g., `id = 'k-datetimepicker'`)
+2. Generate child IDs using template strings (e.g., `${id}-popup`, `${id}-active`)
+3. Pass IDs through component hierarchy to the actual DOM elements
+4. Only set `aria-activedescendant` when the target element exists (e.g., when popup is open)
+
+### 2. WCAG Violations Categorization
+**Only label-related violations are acceptable** as labels are handled separately. All other violations MUST be fixed:
+
+**ACCEPTABLE** (can be ignored):
+- ✅ `label`: "Ensure every form element has a label" - Labels handled separately
+
+**NOT ACCEPTABLE** (must fix):
+- ❌ `aria-valid-attr-value`: Invalid or missing ARIA attribute values
+- ❌ `button-name`: Buttons without discernible text or aria-label
+- ❌ `aria-required-attr`: Missing required ARIA attributes
+- ❌ Any other WCAG violations
+
+### 3. Icon-Only Buttons Require Labels
+All buttons without visible text MUST have `aria-label`:
+
+```tsx
+// ❌ BAD - Icon button without label
+<Button icon="check" fillMode="flat" />
+
+// ✅ GOOD - Icon button with aria-label
+<Button icon="check" fillMode="flat" aria-label="Confirm" />
+```
+
+### 4. Disabled State Propagation
+When a component is disabled, the `disabled` prop must be passed to all interactive children:
+
+```tsx
+// ✅ GOOD - Disabled prop passed through
+<InputInnerInput
+    disabled={disabled}
+    readonly={readonly}
+    // ... other props
+/>
+```
+
+### 5. ID Management Best Practices
+- Use deterministic, predictable IDs (not random)
+- Support custom IDs via props with sensible defaults
+- Generate related IDs using template strings: `${baseId}-popup`, `${baseId}-active`
+- Pass IDs through component hierarchy as needed
+- Ensure ID uniqueness within the page context
+
 ## Validation Interpretation
 
 ### ARIA Attribute Validation

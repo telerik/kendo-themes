@@ -92,6 +92,7 @@ export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.
     return (
         <button
             {...other}
+            disabled={disabled ? true : undefined}
             className={classNames(
                 props.className,
                 BUTTON_CLASSNAME,

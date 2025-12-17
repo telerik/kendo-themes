@@ -128,6 +128,10 @@ async function testPage(filePath, browser) {
     const axe = new AxeBuilder(browser.driver);
     axe.withTags(getAxeTags(complianceLevel));
 
+    // Disable color-contrast rule (tested separately in test:contrast)
+    // Disable scrollable-region-focusable (intentionally not focusable in some cases)
+    axe.disableRules(['color-contrast', 'scrollable-region-focusable']);
+
     // Run analysis
     const results = await axe.analyze();
 

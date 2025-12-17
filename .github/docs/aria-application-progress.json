@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-12-11T21:01:32.449Z",
+  "lastUpdated": "2025-12-17T15:05:46.396Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -418,7 +418,7 @@
       "completedAt": "2025-12-11T14:41:45.057Z"
     },
     "datetimepicker": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "pickers",
       "complianceScore": null,
@@ -428,7 +428,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2025-12-17T15:05:46.395Z"
     },
     "dialog": {
       "status": "pending",
@@ -574,7 +575,7 @@
       "notes": ""
     },
     "flatcolorpicker": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "pickers",
       "complianceScore": null,
@@ -584,7 +585,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedDate": "2025-12-17T12:12:16.820Z"
     },
     "floatingactionbutton": {
       "status": "pending",
@@ -968,9 +970,9 @@
       "notes": ""
     },
     "range-slider": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
-      "priority": "unknown",
+      "priority": "interactive",
       "complianceScore": null,
       "violations": {
         "critical": 0,
@@ -978,7 +980,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "Range slider is a variant of slider component with dual handles",
+      "completedAt": "2025-12-17T12:01:01.025Z"
     },
     "rating": {
       "status": "completed",
@@ -1049,9 +1052,9 @@
       "completedAt": "2025-12-04T12:25:11.957Z"
     },
     "slider": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
-      "priority": "unknown",
+      "priority": "interactive",
       "complianceScore": null,
       "violations": {
         "critical": 0,
@@ -1059,7 +1062,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "ARIA attributes applied for slider role, value management, orientation, and button accessibility",
+      "completedAt": "2025-12-17T12:01:01.023Z"
     },
     "sortable": {
       "status": "pending",
@@ -1246,7 +1250,7 @@
       "notes": ""
     },
     "timepicker": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "pickers",
       "complianceScore": null,
@@ -1256,7 +1260,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedDate": "2025-12-17T12:54:52.585Z"
     },
     "togglebutton": {
       "status": "pending",
@@ -1400,6 +1405,48 @@
         "minor": 0
       },
       "notes": ""
+    },
+    "badge": {
+      "status": "completed",
+      "specExists": false,
+      "priority": "base",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "Decorative component - aria-hidden when empty, meaningful content otherwise",
+      "completedAt": "2025-12-17T12:05:20.773Z"
+    },
+    "loader": {
+      "status": "completed",
+      "specExists": false,
+      "priority": "base",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "Status indicator with role=status, aria-label=Loading, aria-live=polite",
+      "completedAt": "2025-12-17T12:05:20.773Z"
+    },
+    "radio": {
+      "status": "completed",
+      "specExists": true,
+      "priority": "simple",
+      "complianceScore": null,
+      "violations": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      },
+      "notes": "Radio button with radiogroup container - full ARIA attributes for form controls",
+      "completedAt": "2025-12-17T12:05:20.773Z"
     }
   }
 }

@@ -25,6 +25,9 @@ export type KendoListItemProps = {
     iconName?: string;
     checked?: boolean;
     showCheckbox?: boolean;
+    role?: string;
+    'aria-selected'?: 'true' | 'false';
+    tabIndex?: number;
 };
 
 export type KendoListItemState = { [K in (typeof states)[number]]?: boolean };
@@ -46,6 +49,9 @@ export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & 
         focus,
         selected,
         disabled,
+        role,
+        'aria-selected': ariaSelected,
+        tabIndex,
         ...other
     } = props;
 
@@ -66,6 +72,9 @@ export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & 
                     selected,
                 })
             )}
+            {...(role && { role })}
+            {...(ariaSelected && { 'aria-selected': ariaSelected })}
+            {...(tabIndex !== undefined && { tabIndex })}
         >
             {showCheckbox && <Checkbox checked={checked} />}
             {showIcon && <Icon icon={iconName} />}

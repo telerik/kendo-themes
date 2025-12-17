@@ -60,6 +60,9 @@ export const Loader: KendoComponent<KendoLoaderProps & React.HTMLAttributes<HTML
     return (
         <div
             {...other}
+            role="status"
+            aria-label="Loading"
+            aria-live="polite"
             className={classNames(
                 props.className,
                 LOADER_CLASSNAME,
