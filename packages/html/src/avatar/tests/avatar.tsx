@@ -24,10 +24,10 @@ export default () => (
                 <>
                     <span>{themeColor}</span>
                     <AvatarImage themeColor={themeColor}>
-                        <img src="/packages/html/assets/avatar.jpg" alt="User avatar" />
+                        <img src="/packages/html/assets/avatar.jpg" />
                     </AvatarImage>
                     <AvatarImage fillMode="outline" themeColor={themeColor}>
-                        <img src="/packages/html/assets/avatar.jpg" alt="User avatar" />
+                        <img src="/packages/html/assets/avatar.jpg" />
                     </AvatarImage>
 
                     <AvatarImage type="image" themeColor={themeColor}></AvatarImage>

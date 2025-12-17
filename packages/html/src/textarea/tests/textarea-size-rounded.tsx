@@ -15,14 +15,13 @@ export default () =>(
             <span>medium</span>
             <span>large</span>
 
-            { Textarea.options.rounded.map((rounded, roundedIndex) => (
+            { Textarea.options.rounded.map((rounded) => (
                 <>
                     <span>{ rounded }</span>
-                    { Textarea.options.size.map((size, sizeIndex) => (
+                    { Textarea.options.size.map((size) => (
                         <>
                             <div>
-                                <label htmlFor={`textarea-size-rounded-${roundedIndex * Textarea.options.size.length + sizeIndex}`} className="k-label">Enter text</label>
-                                <TextareaNormal id={`textarea-size-rounded-${roundedIndex * Textarea.options.size.length + sizeIndex}`} size={size} rounded={rounded} value="Textarea"/>
+                                <TextareaNormal size={size} rounded={rounded} value="Textarea"/>
                             </div>
                         </>
                     ))}

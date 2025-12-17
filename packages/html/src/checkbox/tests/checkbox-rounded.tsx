@@ -21,22 +21,16 @@ export default () =>(
                 <>
                     <span>{rounded || 'none'}</span>
                     <span>
-                        <label className="k-checkbox-label">
-                            <CheckboxChecked size="small" rounded={rounded} />
-                            checkbox
-                        </label>
+                        <CheckboxChecked size="small" rounded={rounded} />
+                        checkbox
                     </span>
                     <span>
-                        <label className="k-checkbox-label">
-                            <CheckboxChecked size="medium" rounded={rounded} />
-                            checkbox
-                        </label>
+                        <CheckboxChecked size="medium" rounded={rounded} />
+                        checkbox
                     </span>
                     <span>
-                        <label className="k-checkbox-label">
-                            <CheckboxChecked size="large" rounded={rounded} />
-                            checkbox
-                        </label>
+                        <CheckboxChecked size="large" rounded={rounded} />
+                        checkbox
                     </span>
                 </>
             ))}
