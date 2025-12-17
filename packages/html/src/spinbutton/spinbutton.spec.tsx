@@ -15,6 +15,7 @@ const options = {
 export type KendoSpinButtonOptions = {
   size?: (typeof options.size)[number] | null;
   fillMode?: (typeof options.fillMode)[number] | null;
+  disabled?: boolean;
 };
 
 export type KendoSpinButtonProps = KendoSpinButtonOptions & {

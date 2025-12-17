@@ -5,7 +5,7 @@ export const NumericTextboxPrefix = (props) => (
     <NumericTextbox
         prefix={
             <>
-                <Icon name="calendar" />
+                <Icon icon="calendar" />
             </>
         }
         {...props}

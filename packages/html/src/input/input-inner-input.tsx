@@ -11,6 +11,9 @@ export type InputInnerInputProps = {
     type?: string;
     placeholder?: string;
     autocomplete?: string;
+    disabled?: boolean;
+    readonly?: boolean;
+    required?: boolean;
 };
 
 const defaultOptions = {

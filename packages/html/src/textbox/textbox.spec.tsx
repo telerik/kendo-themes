@@ -77,6 +77,7 @@ export const Textbox: KendoComponent<KendoTextboxProps & KendoTextboxState & Omi
         type,
         value,
         placeholder,
+        autocomplete,
         hover,
         focus,
         valid,

@@ -10,6 +10,9 @@ export type InputInnerTextareaProps = {
     value?: string;
     placeholder?: string;
     rows?: number;
+    disabled?: boolean;
+    readonly?: boolean;
+    required?: boolean;
 };
 
 const defaultOptions = {
