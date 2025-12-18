@@ -91,6 +91,9 @@
         .k-color-picker {
             width: min-content;
         }
+        .k-smart-box {
+            min-width: $kendo-toolbar-smart-box-min-width;
+        }
 
 
         // Overflow anchor

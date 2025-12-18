@@ -1,0 +1,25 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../input/_index.scss" as *;
+@use "../popup/_index.scss" as *;
+@use "../list/_index.scss" as *;
+@use "../segmented-control/_index.scss" as *;
+
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-smart-box--styles() {
+    @include import-once( "smart-box" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-popup--styles();
+        @include kendo-list--styles();
+        @include kendo-segmented-control--styles();
+        @include kendo-smart-box--layout();
+        @include kendo-smart-box--theme();
+    }
+}
