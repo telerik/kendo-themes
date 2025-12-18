@@ -35,7 +35,7 @@ export default () =>(
                             }
                             suffix={
                                 <>
-                                    <IconButton icon="copy" fillMode="clear"/>
+                                    <IconButton icon="copy" fillMode="clear" aria-label="Copy"/>
                                 </>
                             }
                         />
@@ -59,7 +59,7 @@ export default () =>(
                             }
                             suffix={
                                 <>
-                                    <IconButton icon="copy" fillMode="clear"/>
+                                    <IconButton icon="copy" fillMode="clear" aria-label="Copy"/>
                                 </>
                             }
                         />
@@ -83,7 +83,7 @@ export default () =>(
                             }
                             suffix={
                                 <>
-                                    <IconButton icon="copy" fillMode="clear"/>
+                                    <IconButton icon="copy" fillMode="clear" aria-label="Copy"/>
                                 </>
                             }
                         />
@@ -107,7 +107,7 @@ export default () =>(
                             }
                             suffix={
                                 <>
-                                    <IconButton icon="copy" fillMode="clear"/>
+                                    <IconButton icon="copy" fillMode="clear" aria-label="Copy"/>
                                 </>
                             }
                         />

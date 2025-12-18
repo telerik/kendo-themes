@@ -1,48 +1,40 @@
 {
-  "timestamp": "2025-12-17T15:48:19.489Z",
+  "timestamp": "2025-12-18T13:11:03.172Z",
   "summary": {
-    "filesTested": 8,
+    "filesTested": 9,
     "skipped": 0,
-    "passed": 153,
-    "violations": 16
+    "passed": 193,
+    "violations": 23
   },
   "results": [
     {
-      "filePath": "./tests/autocomplete/autocomplete-solid.html",
-      "spec": "aria/autocomplete_aria.md",
-      "totalRules": 16,
+      "filePath": "./tests/dropdownlist/dropdownlist.html",
+      "spec": "aria/dropdownlist_aria.md",
+      "totalRules": 22,
       "violations": [],
-      "passed": 26,
+      "passed": 42,
       "violationCount": 0
     },
     {
-      "filePath": "./tests/autocomplete/autocomplete-prefix-suffix.html",
-      "spec": "aria/autocomplete_aria.md",
-      "totalRules": 16,
+      "filePath": "./tests/dropdownlist/dropdownlist-outline.html",
+      "spec": "aria/dropdownlist_aria.md",
+      "totalRules": 22,
       "violations": [],
-      "passed": 45,
+      "passed": 42,
       "violationCount": 0
     },
     {
-      "filePath": "./tests/autocomplete/autocomplete-outline.html",
-      "spec": "aria/autocomplete_aria.md",
-      "totalRules": 16,
-      "violations": [],
-      "passed": 26,
-      "violationCount": 0
-    },
-    {
-      "filePath": "./tests/autocomplete/autocomplete-opened.html",
-      "spec": "aria/autocomplete_aria.md",
-      "totalRules": 16,
+      "filePath": "./tests/dropdownlist/dropdownlist-option-label.html",
+      "spec": "aria/dropdownlist_aria.md",
+      "totalRules": 22,
       "violations": [
         {
           "rule": {
             "selector": ".k-list-content",
             "attribute": "role=listbox",
-            "usage": "For grouped lists only, the container element must have `role=listbox`."
+            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
           },
-          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"Autocomplete options\">\n                                    <li class=\"k-list-item\" role=\"o",
+          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\">\n                                    <li class=\"k-list-item\">\n                                        ",
           "index": 0,
           "valid": false,
           "reason": "missing",
@@ -53,40 +45,10 @@
           "rule": {
             "selector": ".k-list-content",
             "attribute": "role=listbox",
-            "usage": "For grouped lists only, the container element must have `role=listbox`."
+            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
           },
-          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"Autocomplete options\">\n                                    <li class=\"k-list-item\" role=\"o",
+          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\">\n                                    <li class=\"k-list-item\">\n                                        ",
           "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        }
-      ],
-      "passed": 4,
-      "violationCount": 2
-    },
-    {
-      "filePath": "./tests/autocomplete/autocomplete-flat.html",
-      "spec": "aria/autocomplete_aria.md",
-      "totalRules": 16,
-      "violations": [],
-      "passed": 26,
-      "violationCount": 0
-    },
-    {
-      "filePath": "./tests/autocomplete/autocomplete-custom-value.html",
-      "spec": "aria/autocomplete_aria.md",
-      "totalRules": 16,
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-list-content",
-            "attribute": "role=listbox",
-            "usage": "For grouped lists only, the container element must have `role=listbox`."
-          },
-          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"Autocomplete options\">\n                                    <li class=\"k-list-item\" role=\"o",
-          "index": 0,
           "valid": false,
           "reason": "missing",
           "expected": "role",
@@ -96,32 +58,10 @@
           "rule": {
             "selector": ".k-list-content",
             "attribute": "role=listbox",
-            "usage": "For grouped lists only, the container element must have `role=listbox`."
+            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
           },
-          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"Autocomplete options\">\n                                    <li class=\"k-list-item\" role=\"o",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        }
-      ],
-      "passed": 10,
-      "violationCount": 2
-    },
-    {
-      "filePath": "./tests/autocomplete/autocomplete-adaptive.html",
-      "spec": "aria/autocomplete_aria.md",
-      "totalRules": 16,
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-input-inner",
-            "attribute": "role=combobox",
-            "usage": "Announces the presence of an AutoComplete as the inner element of the AutoComplete that is used for filtering."
-          },
-          "element": "<input class=\"k-input-inner\" placeholder=\"Placeholder\" autocomplete=\"off\" type=\"text\" value=\"\">",
-          "index": 1,
+          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\">\n                                    <li class=\"k-list-item\">\n                                        ",
+          "index": 2,
           "valid": false,
           "reason": "missing",
           "expected": "role",
@@ -129,11 +69,11 @@
         },
         {
           "rule": {
-            "selector": ".k-input-inner",
-            "attribute": "role=combobox",
-            "usage": "Announces the presence of an AutoComplete as the inner element of the AutoComplete that is used for filtering."
+            "selector": ".k-list-content",
+            "attribute": "role=listbox",
+            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
           },
-          "element": "<input class=\"k-input-inner\" placeholder=\"Placeholder\" autocomplete=\"off\" type=\"text\" value=\"\">",
+          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\">\n                                    <li class=\"k-list-item\">\n                                        ",
           "index": 3,
           "valid": false,
           "reason": "missing",
@@ -142,12 +82,34 @@
         },
         {
           "rule": {
-            "selector": ".k-input-inner",
-            "attribute": "role=combobox",
-            "usage": "Announces the presence of an AutoComplete as the inner element of the AutoComplete that is used for filtering."
+            "selector": ".k-list-content",
+            "attribute": "role=listbox",
+            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
           },
-          "element": "<input class=\"k-input-inner\" placeholder=\"Placeholder\" autocomplete=\"off\" type=\"text\" value=\"Value\">",
-          "index": 5,
+          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\">\n                                    <li class=\"k-list-item\">\n                                        ",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        }
+      ],
+      "passed": 15,
+      "violationCount": 5
+    },
+    {
+      "filePath": "./tests/dropdownlist/dropdownlist-opened.html",
+      "spec": "aria/dropdownlist_aria.md",
+      "totalRules": 22,
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-list-content",
+            "attribute": "role=listbox",
+            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
+          },
+          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"DropdownList options\">\n                                    <li class=\"k-list-item\" role=\"o",
+          "index": 0,
           "valid": false,
           "reason": "missing",
           "expected": "role",
@@ -155,17 +117,164 @@
         },
         {
           "rule": {
-            "selector": ".k-input-inner",
-            "attribute": "role=combobox",
-            "usage": "Announces the presence of an AutoComplete as the inner element of the AutoComplete that is used for filtering."
+            "selector": ".k-list-content",
+            "attribute": "role=listbox",
+            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
           },
-          "element": "<input class=\"k-input-inner\" placeholder=\"Placeholder\" autocomplete=\"off\" type=\"text\" value=\"Value\">",
-          "index": 7,
+          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"DropdownList options\">\n                                    <li class=\"k-list-item\" role=\"o",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        }
+      ],
+      "passed": 6,
+      "violationCount": 2
+    },
+    {
+      "filePath": "./tests/dropdownlist/dropdownlist-grouping.html",
+      "spec": "aria/dropdownlist_aria.md",
+      "totalRules": 22,
+      "violations": [],
+      "passed": 16,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/dropdownlist/dropdownlist-grouping-filtering.html",
+      "spec": "aria/dropdownlist_aria.md",
+      "totalRules": 22,
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-list-filter>.k-searchbox>.k-input-inner",
+            "attribute": "role=searchbox",
+            "usage": "Announces the search box capability of the input."
+          },
+          "element": "<input class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"\">",
+          "index": 0,
           "valid": false,
           "reason": "missing",
           "expected": "role",
           "actual": null
         },
+        {
+          "rule": {
+            "selector": ".k-list-filter>.k-searchbox>.k-input-inner",
+            "attribute": "role=searchbox",
+            "usage": "Announces the search box capability of the input."
+          },
+          "element": "<input class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"\">",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-list-filter>.k-searchbox>.k-input-inner",
+            "attribute": "role=searchbox",
+            "usage": "Announces the search box capability of the input."
+          },
+          "element": "<input class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"\">",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-list-filter>.k-searchbox>.k-input-inner",
+            "attribute": "role=searchbox",
+            "usage": "Announces the search box capability of the input."
+          },
+          "element": "<input class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"\">",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        }
+      ],
+      "passed": 16,
+      "violationCount": 4
+    },
+    {
+      "filePath": "./tests/dropdownlist/dropdownlist-flat.html",
+      "spec": "aria/dropdownlist_aria.md",
+      "totalRules": 22,
+      "violations": [],
+      "passed": 42,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/dropdownlist/dropdownlist-filtering.html",
+      "spec": "aria/dropdownlist_aria.md",
+      "totalRules": 22,
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-list-filter>.k-searchbox>.k-input-inner",
+            "attribute": "role=searchbox",
+            "usage": "Announces the search box capability of the input."
+          },
+          "element": "<input class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"\">",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-list-filter>.k-searchbox>.k-input-inner",
+            "attribute": "role=searchbox",
+            "usage": "Announces the search box capability of the input."
+          },
+          "element": "<input class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"\">",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-list-content",
+            "attribute": "role=listbox",
+            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
+          },
+          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"DropdownList options\">\n                                    <li class=\"k-list-item\" role=\"o",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-list-content",
+            "attribute": "role=listbox",
+            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
+          },
+          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"DropdownList options\">\n                                    <li class=\"k-list-item\" role=\"o",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        }
+      ],
+      "passed": 6,
+      "violationCount": 4
+    },
+    {
+      "filePath": "./tests/dropdownlist/dropdownlist-adaptive.html",
+      "spec": "aria/dropdownlist_aria.md",
+      "totalRules": 22,
+      "violations": [
         {
           "rule": {
             "selector": ".k-animation-container",
@@ -222,9 +331,9 @@
           "rule": {
             "selector": ".k-list-content",
             "attribute": "role=listbox",
-            "usage": "For grouped lists only, the container element must have `role=listbox`."
+            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
           },
-          "element": "<div class=\"k-list-content\">\n                                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"Autocomplete options\">\n                                                   ",
+          "element": "<div class=\"k-list-content\">\n                                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"DropdownList options\">\n                                                   ",
           "index": 0,
           "valid": false,
           "reason": "missing",
@@ -235,9 +344,9 @@
           "rule": {
             "selector": ".k-list-content",
             "attribute": "role=listbox",
-            "usage": "For grouped lists only, the container element must have `role=listbox`."
+            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
           },
-          "element": "<div class=\"k-list-content\">\n                                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"Autocomplete options\">\n                                                   ",
+          "element": "<div class=\"k-list-content\">\n                                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"DropdownList options\">\n                                                   ",
           "index": 1,
           "valid": false,
           "reason": "missing",
@@ -248,9 +357,9 @@
           "rule": {
             "selector": ".k-list-content",
             "attribute": "role=listbox",
-            "usage": "For grouped lists only, the container element must have `role=listbox`."
+            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
           },
-          "element": "<div class=\"k-list-content\">\n                                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"Autocomplete options\">\n                                                   ",
+          "element": "<div class=\"k-list-content\">\n                                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"DropdownList options\">\n                                                   ",
           "index": 2,
           "valid": false,
           "reason": "missing",
@@ -261,9 +370,9 @@
           "rule": {
             "selector": ".k-list-content",
             "attribute": "role=listbox",
-            "usage": "For grouped lists only, the container element must have `role=listbox`."
+            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
           },
-          "element": "<div class=\"k-list-content\">\n                                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"Autocomplete options\">\n                                                   ",
+          "element": "<div class=\"k-list-content\">\n                                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"DropdownList options\">\n                                                   ",
           "index": 3,
           "valid": false,
           "reason": "missing",
@@ -271,16 +380,8 @@
           "actual": null
         }
       ],
-      "passed": 4,
-      "violationCount": 12
-    },
-    {
-      "filePath": "./tests/autocomplete/autocomplate-grouping.html",
-      "spec": "aria/autocomplete_aria.md",
-      "totalRules": 16,
-      "violations": [],
-      "passed": 12,
-      "violationCount": 0
+      "passed": 8,
+      "violationCount": 8
     }
   ]
 }

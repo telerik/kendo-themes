@@ -43,6 +43,7 @@ export type KendoMultiSelectOptions = {
 };
 
 export type KendoMultiSelectProps = KendoMultiSelectOptions & {
+    id?: string;
     prefix?: React.JSX.Element;
     suffix?: React.JSX.Element;
     separators?: boolean;
@@ -75,6 +76,7 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        id = 'k-multiselect',
         size = defaultOptions.size,
         rounded = defaultOptions.rounded,
         fillMode = defaultOptions.fillMode,
@@ -133,7 +135,21 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                             {tags}
                         </>
                     </ChipList>
-                    <InputInnerInput placeholder={placeholder} value={value} />
+                    <InputInnerInput
+                        placeholder={placeholder}
+                        value={value}
+                        disabled={disabled}
+                        readonly={readonly}
+                        role="combobox"
+                        aria-haspopup="listbox"
+                        aria-expanded={opened ? 'true' : 'false'}
+                        aria-controls={`${id}-listbox`}
+                        aria-autocomplete="list"
+                        {...(readonly && { 'aria-readonly': 'true' })}
+                        {...(loading && { 'aria-busy': 'true' })}
+                        {...(invalid && { 'aria-invalid': 'true' })}
+                        tabIndex={0}
+                    />
                 </div>
                 <InputValidationIcon
                     valid={valid}
@@ -161,11 +177,17 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                         rounded={null}
                         size={size}
                         fillMode={fillMode}
+                        aria-label="Open dropdown"
+                        tabIndex={-1}
                     />
                 )}
             </Input>
             {opened && popup &&
-                <Popup className="k-list-container k-multiselect-popup">
+                <Popup
+                    className="k-list-container k-multiselect-popup"
+                    role="region"
+                    aria-label="MultiSelect suggestions"
+                >
                     {popup}
                 </Popup>
             }
@@ -173,7 +195,7 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Confirm" />}
                             input={true}
                             inputValue={value}
                             inputPlaceholder={placeholder}
@@ -183,11 +205,16 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                     }
                 >
                     <div className="k-list-container">
-                        <List customValue={adaptiveCustomValue ? <ListCustomValue text={`Use "${value}"`}/> : undefined} size="large">
-
-                            <ListItem text="List item" />
-                            <ListItem text="List item" />
-                            <ListItem text="List item" />
+                        <List
+                            customValue={adaptiveCustomValue ? <ListCustomValue text={`Use "${value}"`}/> : undefined}
+                            size="large"
+                            role="listbox"
+                            aria-label="MultiSelect options"
+                            aria-multiselectable="true"
+                        >
+                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
+                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
+                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
                         </List>
                     </div>
                 </ActionSheet>

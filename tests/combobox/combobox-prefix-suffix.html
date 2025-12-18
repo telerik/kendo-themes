@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -29,7 +29,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -37,7 +37,7 @@
                         </svg>
                     </span>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -48,7 +48,7 @@
         </div>
         <div>
             <span class="k-combobox k-input k-input-md k-input-solid k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -58,7 +58,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -66,7 +66,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -85,7 +85,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -95,7 +95,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -103,7 +103,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -123,8 +123,8 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -135,10 +135,10 @@
         </div>
         <div>
             <span class="k-combobox k-input k-input-md k-input-solid k-rounded-md k-disabled">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -146,7 +146,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -165,10 +165,10 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -176,7 +176,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -196,7 +196,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -209,7 +209,7 @@
                         </svg>
                     </span>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -220,7 +220,7 @@
         </div>
         <div>
             <span class="k-combobox k-input k-input-md k-input-solid k-rounded-md k-invalid">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -235,7 +235,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -243,7 +243,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -262,7 +262,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -277,7 +277,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -285,7 +285,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -305,7 +305,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -313,7 +313,7 @@
                         </svg>
                     </span>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -324,7 +324,7 @@
         </div>
         <div dir="rtl">
             <span class="k-combobox k-input k-input-md k-input-solid k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -334,7 +334,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -342,7 +342,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -361,7 +361,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -371,7 +371,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -379,7 +379,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -400,7 +400,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -408,7 +408,7 @@
                         </svg>
                     </span>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -419,7 +419,7 @@
         </div>
         <div>
             <span class="k-combobox k-input k-input-md k-input-flat k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -429,7 +429,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -437,7 +437,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -456,7 +456,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -466,7 +466,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -474,7 +474,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -494,8 +494,8 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
-                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -506,10 +506,10 @@
         </div>
         <div>
             <span class="k-combobox k-input k-input-md k-input-flat k-rounded-md k-disabled">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -517,7 +517,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -536,10 +536,10 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -547,7 +547,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -567,7 +567,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -580,7 +580,7 @@
                         </svg>
                     </span>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -591,7 +591,7 @@
         </div>
         <div>
             <span class="k-combobox k-input k-input-md k-input-flat k-rounded-md k-invalid">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -606,7 +606,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -614,7 +614,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -633,7 +633,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -648,7 +648,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -656,7 +656,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -676,7 +676,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -684,7 +684,7 @@
                         </svg>
                     </span>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -695,7 +695,7 @@
         </div>
         <div dir="rtl">
             <span class="k-combobox k-input k-input-md k-input-flat k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -705,7 +705,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -713,7 +713,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -732,7 +732,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -742,7 +742,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -750,7 +750,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -771,7 +771,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -779,7 +779,7 @@
                         </svg>
                     </span>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -790,7 +790,7 @@
         </div>
         <div>
             <span class="k-combobox k-input k-input-md k-input-outline k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -800,7 +800,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -808,7 +808,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -827,7 +827,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -837,7 +837,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -845,7 +845,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -865,8 +865,8 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
-                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button">
+                <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -877,10 +877,10 @@
         </div>
         <div>
             <span class="k-combobox k-input k-input-md k-input-outline k-rounded-md k-disabled">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -888,7 +888,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -907,10 +907,10 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -918,7 +918,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -938,7 +938,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -951,7 +951,7 @@
                         </svg>
                     </span>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -962,7 +962,7 @@
         </div>
         <div>
             <span class="k-combobox k-input k-input-md k-input-outline k-rounded-md k-invalid">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -977,7 +977,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -985,7 +985,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -1004,7 +1004,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
@@ -1019,7 +1019,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -1027,7 +1027,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -1047,7 +1047,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1055,7 +1055,7 @@
                         </svg>
                     </span>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -1066,7 +1066,7 @@
         </div>
         <div dir="rtl">
             <span class="k-combobox k-input k-input-md k-input-outline k-rounded-md">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1076,7 +1076,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -1084,7 +1084,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -1103,7 +1103,7 @@
                     </span>
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Prefix &amp; Suffix">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1113,7 +1113,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
-                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                    <button aria-label="Copy" class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
@@ -1121,7 +1121,7 @@
                         </span>
                     </button>
                 </span>
-                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button">
+                <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>

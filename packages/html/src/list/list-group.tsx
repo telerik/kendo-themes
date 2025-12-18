@@ -20,7 +20,7 @@ export const ListGroup = (
         role,
         'aria-label': ariaLabel,
         'aria-labelledby': ariaLabelledby,
-        'aria-multiselectable': ariaMultiselectable,
+        'aria-multiselectable': _ariaMultiselectable,
     } = props;
 
     return (
@@ -32,7 +32,6 @@ export const ListGroup = (
                 ulRole="group"
                 aria-label={ariaLabel}
                 aria-labelledby={ariaLabelledby}
-                aria-multiselectable={ariaMultiselectable}
             >{props.children}</ListContent>}
         </>
     );

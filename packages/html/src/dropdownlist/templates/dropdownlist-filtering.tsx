@@ -10,10 +10,10 @@ export const DropdownListFiltering = (props) => (
                 <div className="k-list-filter">
                     <Searchbox />
                 </div>
-                <List>
-                    <ListItem>List item</ListItem>
-                    <ListItem>List item</ListItem>
-                    <ListItem>List item</ListItem>
+                <List role="listbox" aria-label="DropdownList options">
+                    <ListItem role="option" aria-selected="false" tabIndex={-1}>List item</ListItem>
+                    <ListItem role="option" aria-selected="false" tabIndex={-1}>List item</ListItem>
+                    <ListItem role="option" aria-selected="false" tabIndex={-1}>List item</ListItem>
                 </List>
             </>
         }

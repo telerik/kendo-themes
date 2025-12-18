@@ -23,6 +23,8 @@ export type KendoListBoxProps = KendoListBoxOptions & {
     actionsPosition?: 'left' | 'right' | 'top' | 'bottom';
     actions?: string[];
     dir?: 'ltr' | 'rtl';
+    id?: string;
+    multiselectable?: boolean;
 };
 
 export type KendoListBoxState = { [K in (typeof states)[number]]?: boolean };
@@ -44,6 +46,8 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
         actionsPosition = defaultOptions.actionsPosition,
         actions,
         dir,
+        id = 'k-listbox',
+        multiselectable,
         ...other
     } = props;
 
@@ -66,7 +70,12 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
             )}
         >
             { actions && (
-                <div className="k-listbox-actions">
+                <div
+                    className="k-listbox-actions"
+                    role="toolbar"
+                    aria-label="ListBox actions"
+                    aria-controls={`${id}-listbox`}
+                >
                     {actions.map(action => {
 
                         const actionsIconMap = {
@@ -79,7 +88,17 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
                             "x": "x"
                         };
 
-                        return <Button key={action} icon={actionsIconMap[action]} size={size} />;
+                        const actionsLabelMap = {
+                            "left": "Move selected item left",
+                            "right": "Move selected item right",
+                            "to": "Transfer selected item to",
+                            "from": "Transfer selected item from",
+                            "up": "Move selected item up",
+                            "down": "Move selected item down",
+                            "x": "Remove selected item"
+                        };
+
+                        return <Button key={action} icon={actionsIconMap[action]} size={size} aria-label={actionsLabelMap[action]} />;
                     })}
                 </div>
             )}
@@ -87,7 +106,14 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
                 'k-list-scroller',
                 'k-selectable'
             )}>
-                <List size={size} children={children} />
+                <List
+                    id={`${id}-listbox`}
+                    size={size}
+                    children={children}
+                    role="listbox"
+                    aria-label="ListBox options"
+                    aria-multiselectable={multiselectable ? 'true' : undefined}
+                />
             </div>
         </div>
     );

@@ -40,6 +40,7 @@ export type KendoDropdownListOptions = {
 };
 
 export type KendoDropdownListProps = KendoDropdownListOptions & {
+    id?: string;
     valueIconName?: string;
     arrowIconName?: string;
     prefix?: React.JSX.Element;
@@ -72,6 +73,7 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
         Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>
 ) => {
     const {
+        id = 'k-dropdownlist',
         size = defaultOptions.size,
         rounded = defaultOptions.rounded,
         fillMode = defaultOptions.fillMode,
@@ -123,6 +125,16 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                         'k-icon-picker': !showValue && valueIconName
                     }
                 )}
+                role="combobox"
+                aria-label="Select option"
+                aria-haspopup="listbox"
+                aria-expanded={opened ? 'true' : 'false'}
+                aria-controls={`${id}-listbox`}
+                {...(readonly && { 'aria-readonly': 'true' })}
+                {...(loading && { 'aria-busy': 'true' })}
+                {...(invalid && { 'aria-invalid': 'true' })}
+                {...(disabled && { 'aria-disabled': 'true' })}
+                tabIndex={0}
             >
                 <InputPrefix>{prefix}</InputPrefix>
                 <InputInnerSpan
@@ -146,10 +158,16 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                     rounded={null}
                     size={props.size}
                     fillMode={props.fillMode}
+                    aria-label="Open dropdown"
+                    tabIndex={-1}
                 />
             </Picker>
             {opened && popup &&
-                <Popup className="k-list-container k-dropdownlist-popup">
+                <Popup
+                    className="k-list-container k-dropdownlist-popup"
+                    role="region"
+                    aria-label="DropdownList suggestions"
+                >
                     {popup}
                 </Popup>
             }
@@ -157,7 +175,7 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Confirm" />}
                             filter={adaptiveFilter}
                             inputValue={value}
                             inputPlaceholder={placeholder}
@@ -167,10 +185,10 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                     }
                 >
                     <div className="k-list-container">
-                        <List size="large">
-                            <ListItem text="List item" />
-                            <ListItem text="List item" />
-                            <ListItem text="List item" />
+                        <List size="large" role="listbox" aria-label="DropdownList options">
+                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
+                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
+                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
                         </List>
                     </div>
                 </ActionSheet>

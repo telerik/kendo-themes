@@ -5,7 +5,7 @@ export const ComboboxSuffix = (props) => (
     <Combobox
         suffix={
             <>
-                <IconButton icon="copy" fillMode="clear"/>
+                <IconButton icon="copy" fillMode="clear" aria-label="Copy"/>
             </>
         }
         {...props}

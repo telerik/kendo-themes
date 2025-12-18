@@ -42,6 +42,7 @@ export type KendoComboboxOptions = {
 };
 
 export type KendoComboboxProps = KendoComboboxOptions & {
+    id?: string;
     prefix?: React.JSX.Element;
     suffix?: React.JSX.Element;
     separators?: boolean;
@@ -71,6 +72,7 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        id = 'k-combobox',
         size = defaultOptions.size,
         rounded = defaultOptions.rounded,
         fillMode = defaultOptions.fillMode,
@@ -121,7 +123,21 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
                         {separators && <InputSeparator />}
                     </>
                 }
-                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputInnerInput
+                    placeholder={placeholder}
+                    value={value}
+                    disabled={disabled}
+                    readonly={readonly}
+                    role="combobox"
+                    aria-haspopup="listbox"
+                    aria-expanded={opened ? 'true' : 'false'}
+                    aria-controls={`${id}-listbox`}
+                    aria-autocomplete="list"
+                    {...(readonly && { 'aria-readonly': 'true' })}
+                    {...(loading && { 'aria-busy': 'true' })}
+                    {...(invalid && { 'aria-invalid': 'true' })}
+                    tabIndex={0}
+                />
                 <InputValidationIcon
                     valid={valid}
                     invalid={invalid}
@@ -147,10 +163,16 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
                     rounded={null}
                     size={size}
                     fillMode={fillMode}
+                    aria-label="Open dropdown"
+                    tabIndex={-1}
                 />
             </Input>
             {opened && popup &&
-                <Popup className="k-list-container k-combobox-popup">
+                <Popup
+                    className="k-list-container k-combobox-popup"
+                    role="region"
+                    aria-label="Combobox suggestions"
+                >
                     {popup}
                 </Popup>
             }
@@ -158,7 +180,7 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Confirm" />}
                             input={true}
                             inputValue={value}
                             inputPlaceholder={placeholder}
@@ -168,10 +190,15 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
                     }
                 >
                     <div className="k-list-container">
-                        <List customValue={adaptiveCustomValue ? <ListCustomValue text={`Use "${value}"`}/> : undefined} size="large">
-                            <ListItem text="List item" />
-                            <ListItem text="List item" />
-                            <ListItem text="List item" />
+                        <List
+                            customValue={adaptiveCustomValue ? <ListCustomValue text={`Use "${value}"`}/> : undefined}
+                            size="large"
+                            role="listbox"
+                            aria-label="Combobox options"
+                        >
+                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
+                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
+                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
                         </List>
                     </div>
                 </ActionSheet>

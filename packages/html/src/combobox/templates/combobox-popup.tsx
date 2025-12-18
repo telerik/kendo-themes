@@ -5,10 +5,10 @@ export const ComboboxPopup = (props) => (
     <Combobox
         opened
         popup={
-            <List>
-                <ListItem>List item</ListItem>
-                <ListItem>List item</ListItem>
-                <ListItem>List item</ListItem>
+            <List role="listbox" aria-label="Combobox options">
+                <ListItem role="option" aria-selected="false" tabIndex={-1}>List item</ListItem>
+                <ListItem role="option" aria-selected="false" tabIndex={-1}>List item</ListItem>
+                <ListItem role="option" aria-selected="false" tabIndex={-1}>List item</ListItem>
             </List>
         }
         {...props}
