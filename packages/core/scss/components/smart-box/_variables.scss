@@ -1,0 +1,40 @@
+// Smart box
+$kendo-smart-box-default-size: null !default;
+$kendo-smart-box-default-roundness: null !default;
+
+$kendo-smart-box-roundness: ( "none", "sm", "md", "lg", "full" ) !default;
+
+$kendo-smart-box-suffix-spacing: null !default;
+
+$kendo-smart-box-sm-padding-x: null !default;
+$kendo-smart-box-md-padding-x: null !default;
+$kendo-smart-box-lg-padding-x: null !default;
+
+$kendo-smart-box-sm-prefix-margin-x: null !default;
+$kendo-smart-box-md-prefix-margin-x: null !default;
+$kendo-smart-box-lg-prefix-margin-x: null !default;
+
+$kendo-smart-box-popup-padding-inline: null !default;
+$kendo-smart-box-popup-padding-block: null !default;
+$kendo-smart-box-popup-border-radius: null !default;
+$kendo-smart-box-popup-spacing: null !default;
+
+$kendo-smart-box-popup-segmented-control-margin: null !default;
+
+/// The sizes map for the Smart box components.
+/// @group smart-box
+$kendo-smart-box-sizes: (
+    sm: (
+        padding-x: $kendo-smart-box-sm-padding-x,
+        prefix-margin-x: $kendo-smart-box-sm-prefix-margin-x,
+    ),
+    md: (
+        padding-x: $kendo-smart-box-md-padding-x,
+        prefix-margin-x: $kendo-smart-box-md-prefix-margin-x,
+    ),
+    lg: (
+        padding-x: $kendo-smart-box-lg-padding-x,
+        prefix-margin-x: $kendo-smart-box-lg-prefix-margin-x,
+
+    )
+) !default;

@@ -111,6 +111,9 @@ $kendo-toolbar-separator-border: var( --kendo-toolbar-separator-border, color-mi
 /// The width of the input in the Toolbar.
 /// @group toolbar
 $kendo-toolbar-input-width: var( --kendo-toolbar-input-width, 10em ) !default;
+/// The minimum width of the Smart ToolBox in the Toolbar.
+/// @group toolbar
+$kendo-toolbar-smart-box-min-width: var( --kendo-toolbar-smart-box-min-width, 350px ) !default;
 
 /// The border width of the focused Toolbar item.
 /// @group toolbar
@@ -153,5 +156,6 @@ $kendo-toolbar-item-focus-outline-color: var( --kendo-toolbar-item-focus-outline
     $kendo-toolbar-flat-border: $kendo-toolbar-flat-border,
     $kendo-toolbar-flat-scroll-overlay: $kendo-toolbar-flat-scroll-overlay,
     $kendo-toolbar-separator-border: $kendo-toolbar-separator-border,
-    $kendo-toolbar-input-width: $kendo-toolbar-input-width
+    $kendo-toolbar-input-width: $kendo-toolbar-input-width,
+    $kendo-toolbar-smart-box-min-width: $kendo-toolbar-smart-box-min-width,
 );
