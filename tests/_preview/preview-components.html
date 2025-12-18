@@ -558,7 +558,7 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                        <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                                     </div>
                                     <span class="k-clear-value">
                                         <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -1519,50 +1519,50 @@
                         </div>
                         <div>
                             <div class="k-listbox k-listbox-md k-listbox-actions-left">
-                                <div class="k-listbox-actions">
-                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <div class="k-listbox-actions" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-listbox">
+                                    <button aria-label="Move selected item up" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="m256 160 128 192H128z"></path>
                                             </svg>
                                         </span>
                                     </button>
-                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <button aria-label="Move selected item down" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M256 352 128 160h256z"></path>
                                             </svg>
                                         </span>
                                     </button>
-                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <button aria-label="Move selected item left" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="m160 256 192-128v256z"></path>
                                             </svg>
                                         </span>
                                     </button>
-                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <button aria-label="Move selected item right" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M352 256 160 384V128z"></path>
                                             </svg>
                                         </span>
                                     </button>
-                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <button aria-label="Transfer selected item to" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-double-alt-right" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="m64 128 192 128L64 384zm384 128L256 128v256z"></path>
                                             </svg>
                                         </span>
                                     </button>
-                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <button aria-label="Transfer selected item from" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-double-alt-left" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M448 384 256 256.001l192-128zM64 256.001 256 384V128z"></path>
                                             </svg>
                                         </span>
                                     </button>
-                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <button aria-label="Remove selected item" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -1571,25 +1571,25 @@
                                     </button>
                                 </div>
                                 <div class="k-list-scroller k-selectable">
-                                    <div class="k-list k-list-md">
+                                    <div id="k-listbox-listbox" class="k-list k-list-md">
                                         <div class="k-list-content">
-                                            <ul class="k-list-ul" role="listbox">
-                                                <li class="k-list-item">
+                                            <ul class="k-list-ul" role="listbox" aria-label="ListBox options">
+                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
                                                     <span class="k-list-item-text">List item 1</span>
                                                 </li>
-                                                <li class="k-list-item">
+                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
                                                     <span class="k-list-item-text">List item 2</span>
                                                 </li>
-                                                <li class="k-list-item">
+                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
                                                     <span class="k-list-item-text">List item 3</span>
                                                 </li>
-                                                <li class="k-list-item">
+                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
                                                     <span class="k-list-item-text">List item 4</span>
                                                 </li>
-                                                <li class="k-list-item">
+                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
                                                     <span class="k-list-item-text">List item 5</span>
                                                 </li>
-                                                <li class="k-list-item">
+                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
                                                     <span class="k-list-item-text">List item 6</span>
                                                 </li>
                                             </ul>
@@ -2238,9 +2238,9 @@
                                                                     </span>
                                                                 </span>
                                                                 <div class="k-filtercell-operator">
-                                                                    <span class="k-dropdown-operator k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                                    <span class="k-dropdown-operator k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-dropdownlist-listbox" tabindex="0">
                                                                         <span class="k-input-inner"></span>
-                                                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                                                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                                     <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -2266,9 +2266,9 @@
                                                                     <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                                                                 </span>
                                                                 <div class="k-filtercell-operator">
-                                                                    <span class="k-dropdown-operator k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                                    <span class="k-dropdown-operator k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-dropdownlist-listbox" tabindex="0">
                                                                         <span class="k-input-inner"></span>
-                                                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                                                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                                     <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -2294,9 +2294,9 @@
                                                                     <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                                                                 </span>
                                                                 <div class="k-filtercell-operator">
-                                                                    <span class="k-dropdown-operator k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                                    <span class="k-dropdown-operator k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-dropdownlist-listbox" tabindex="0">
                                                                         <span class="k-input-inner"></span>
-                                                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                                                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                                     <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -2338,9 +2338,9 @@
                                                                     </span>
                                                                 </span>
                                                                 <div class="k-filtercell-operator">
-                                                                    <span class="k-dropdown-operator k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                                    <span class="k-dropdown-operator k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-dropdownlist-listbox" tabindex="0">
                                                                         <span class="k-input-inner"></span>
-                                                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                                                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                                     <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -2362,9 +2362,9 @@
                                                     <td class="k-table-td">
                                                         <div class="k-filtercell">
                                                             <div class="k-filtercell-wrapper">
-                                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-dropdownlist-listbox" tabindex="0">
                                                                     <span class="k-input-inner"></span>
-                                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                                 <path d="M256 352 128 160h256z"></path>
@@ -2492,11 +2492,11 @@
                                     </button>
                                 </div>
                                 <span class="k-pager-sizes">
-                                    <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                    <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-dropdownlist-listbox" tabindex="0">
                                         <span class="k-input-inner">
                                             <span class="k-input-value-text">5</span>
                                         </span>
-                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M256 352 128 160h256z"></path>
@@ -2729,8 +2729,8 @@
                                 <div class="k-spreadsheet-action-bar">
                                     <div class="k-spreadsheet-name-editor">
                                         <span class="k-combobox k-input k-input-md k-input-flat k-rounded-md">
-                                            <input class="k-input-inner" placeholder="B6" autocomplete="off" type="text" value="">
-                                            <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                                            <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="B6" autocomplete="off" type="text" value="">
+                                            <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M256 352 128 160h256z"></path>
@@ -3912,11 +3912,11 @@
                                                     <div class="k-filter-toolbar">
                                                         <div class="k-toolbar k-toolbar-md k-toolbar-solid">
                                                             <div class="k-filter-field k-toolbar-item">
-                                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-dropdownlist-listbox" tabindex="0">
                                                                     <span class="k-input-inner">
                                                                         <span class="k-input-value-text">Name</span>
                                                                     </span>
-                                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                                 <path d="M256 352 128 160h256z"></path>
@@ -3926,11 +3926,11 @@
                                                                 </span>
                                                             </div>
                                                             <div class="k-filter-operator k-toolbar-item">
-                                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-dropdownlist-listbox" tabindex="0">
                                                                     <span class="k-input-inner">
                                                                         <span class="k-input-value-text">Is equal to</span>
                                                                     </span>
-                                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                                 <path d="M256 352 128 160h256z"></path>
@@ -3958,11 +3958,11 @@
                                                     <div class="k-filter-toolbar">
                                                         <div class="k-toolbar k-toolbar-md k-toolbar-solid">
                                                             <div class="k-filter-field k-toolbar-item">
-                                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-dropdownlist-listbox" tabindex="0">
                                                                     <span class="k-input-inner">
                                                                         <span class="k-input-value-text">Price</span>
                                                                     </span>
-                                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                                 <path d="M256 352 128 160h256z"></path>
@@ -3972,11 +3972,11 @@
                                                                 </span>
                                                             </div>
                                                             <div class="k-filter-operator k-toolbar-item">
-                                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-dropdownlist-listbox" tabindex="0">
                                                                     <span class="k-input-inner">
                                                                         <span class="k-input-value-text">Is greater than</span>
                                                                     </span>
-                                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                                 <path d="M256 352 128 160h256z"></path>
@@ -4020,11 +4020,11 @@
                                                     <div class="k-filter-toolbar">
                                                         <div class="k-toolbar k-toolbar-md k-toolbar-solid">
                                                             <div class="k-filter-field k-toolbar-item">
-                                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-dropdownlist-listbox" tabindex="0">
                                                                     <span class="k-input-inner">
                                                                         <span class="k-input-value-text">First Ordered</span>
                                                                     </span>
-                                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                                 <path d="M256 352 128 160h256z"></path>
@@ -4034,11 +4034,11 @@
                                                                 </span>
                                                             </div>
                                                             <div class="k-filter-operator k-toolbar-item">
-                                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="k-dropdownlist-listbox" tabindex="0">
                                                                     <span class="k-input-inner">
                                                                         <span class="k-input-value-text">Is before</span>
                                                                     </span>
-                                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                                 <path d="M256 352 128 160h256z"></path>
