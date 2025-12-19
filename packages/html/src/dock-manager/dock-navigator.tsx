@@ -19,6 +19,7 @@ export const DockNavigator = (
     return (
         <div
             {...other}
+            aria-hidden="true"
             className={classNames(
                 props.className,
                 DOCKNAVIGATOR_CLASSNAME

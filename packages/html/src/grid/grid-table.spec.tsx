@@ -11,6 +11,7 @@ export const GridTable: KendoComponent<KendoTableOptions & React.HTMLAttributes<
 ) => (
     <Table
         size="medium"
+        role="presentation"
         {...props}
         className={classNames(
             props.className,

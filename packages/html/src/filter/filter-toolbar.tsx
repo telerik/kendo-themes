@@ -19,7 +19,11 @@ export const FilterToolbar = (
     const { children } = props;
 
     return (
-        <div className={classNames(FILTER_TOOLBAR_CLASSNAME)}>
+        <div
+            className={classNames(FILTER_TOOLBAR_CLASSNAME)}
+            role="toolbar"
+            aria-label="Filter toolbar"
+        >
             {children}
         </div>
     );

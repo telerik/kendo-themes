@@ -152,7 +152,12 @@ When asked to apply accessibility to a specific component:
    - Run `npm run test:wcag [component]`
    - Review violations
 
-7. **Generate Report**
+7. **Mark Component Complete**
+   - Run `node scripts/aria-bulk-apply.mjs complete [component]`
+   - This updates the tracking file to reflect completion
+   - **CRITICAL**: Always call this to keep tracking synchronized
+
+8. **Generate Report**
    - Summarize changes made
    - List any violations found
    - Suggest fixes or improvements
@@ -181,6 +186,7 @@ When asked to apply ARIA to all components in the HTML package:
    - Apply ARIA following Workflow 2
    - Run tests after each component
    - Fix violations before moving on
+   - **Mark complete**: Run `node scripts/aria-bulk-apply.mjs complete [component]`
    - Commit after each successful component
 
 4. **Dependency Handling**

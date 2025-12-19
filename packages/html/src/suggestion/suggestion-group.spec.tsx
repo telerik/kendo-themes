@@ -31,6 +31,7 @@ export const SuggestionGroup: KendoComponent<KendoSuggestionGroupProps & React.H
     const suggestionContent = (
         <div
             {...other}
+            role="group"
             className={classNames(
                 SUGGESTIONGROUP_CLASSNAME,
                 {[`k-suggestion-group-scrollable`]: layout =='scrollable'},

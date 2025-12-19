@@ -47,6 +47,8 @@ export const Suggestion = (
     return (
         <span
             {...other}
+            role="button"
+            tabIndex={0}
             className={classNames(
                 props.className,
                 SUGGESTION_CLASSNAME,

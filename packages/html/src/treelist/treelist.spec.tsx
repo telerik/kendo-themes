@@ -17,6 +17,7 @@ export const TreeList: KendoComponent<KendoGridProps & React.HTMLAttributes<HTML
 ) => (
     <Grid
         {...props}
+        aria-root-role="treegrid"
         className={classNames(
             TREELIST_CLASSNAME,
             props.className

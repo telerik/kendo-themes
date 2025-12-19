@@ -19,7 +19,10 @@ export const FilterLines = (
     const { children } = props;
 
     return (
-        <ul className={classNames(FILTER_LINES_CLASSNAME)}>
+        <ul
+            className={classNames(FILTER_LINES_CLASSNAME)}
+            role="group"
+        >
             {children}
         </ul>
     );

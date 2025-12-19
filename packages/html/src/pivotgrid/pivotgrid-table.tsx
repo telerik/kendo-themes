@@ -22,7 +22,9 @@ export const PivotGridTable = (
             className={classNames(
                 props.className,
                 PIVOTGRIDTABLE_CLASSNAME,
-            )}>
+            )}
+            role="presentation"
+        >
             {children}
         </table>
     );

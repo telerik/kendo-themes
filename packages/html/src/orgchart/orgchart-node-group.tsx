@@ -50,8 +50,9 @@ export const OrgchartNodeGroup = (
                 ORGCHARTNODEGROUP_CLASSNAME,
                 'k-vstack',
                 'k-align-items-center',
-            )}>
-
+            )}
+            role="group"
+        >
             {lineTop && <div className="k-orgchart-line k-orgchart-line-v"></div> }
             <div
                 className={classNames(
@@ -77,7 +78,13 @@ export const OrgchartNodeGroup = (
             </div>
             {lineBottom && <div className="k-orgchart-line k-orgchart-line-v"></div> }
             {button && (
-                <Button className="k-orgchart-button" icon={buttonIcon}></Button>
+                <Button
+                    className="k-orgchart-button"
+                    icon={buttonIcon}
+                    role="presentation"
+                    aria-hidden="true"
+                    tabIndex={-1}
+                ></Button>
             )}
         </div>
     );

@@ -52,6 +52,7 @@ export const TaskBoard: KendoComponent<KendoTaskBoardProps & KendoTaskBoardState
     return (
         <div
             {...other}
+            role="application"
             className={classNames(
                 props.className,
                 TASKBOARD_CLASSNAME,

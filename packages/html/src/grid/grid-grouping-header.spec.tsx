@@ -7,6 +7,8 @@ const className = `k-grouping-header`;
 export type KendoGroupingHeaderProps = {
     dropHint?: string;
     dropClue?: boolean;
+    'aria-label'?: string;
+    'aria-controls'?: string;
 };
 
 export const GridGroupingHeader: KendoComponent<KendoGroupingHeaderProps & React.HTMLAttributes<HTMLDivElement>> = (
@@ -16,6 +18,8 @@ export const GridGroupingHeader: KendoComponent<KendoGroupingHeaderProps & React
     const {
         dropHint,
         dropClue,
+        'aria-label': ariaLabel,
+        'aria-controls': ariaControls,
         ...others
     } = props;
 
@@ -26,6 +30,9 @@ export const GridGroupingHeader: KendoComponent<KendoGroupingHeaderProps & React
                 props.className,
                 className,
             )}
+            role="toolbar"
+            {...(ariaLabel && { 'aria-label': ariaLabel })}
+            {...(ariaControls && { 'aria-controls': ariaControls })}
         >
             { dropClue && <div className="k-grouping-dropclue"></div> }
             {props.children}

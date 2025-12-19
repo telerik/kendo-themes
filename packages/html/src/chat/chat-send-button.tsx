@@ -33,6 +33,8 @@ export const ChatSendButton = (
             rounded="full"
             icon={generating ? "stop-sm" : "paper-plane"}
             active={generating}
+            aria-label={generating ? "Stop generating" : "Send message"}
+            {...(props.disabled && { 'aria-disabled': 'true' })}
             className={classNames(
                 props.className,
                 CHAT_SEND_BUTTON_CLASSNAME,

@@ -34,6 +34,8 @@ export type KendoPagerProps = KendoPagerOptions & {
     maxPages?: number;
     currentPage?: number;
     previousNext?: boolean;
+    'aria-label'?: string;
+    'aria-controls'?: string;
 };
 
 export type KendoPagerState = { [K in (typeof states)[number]]?: boolean };
@@ -76,6 +78,8 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
         focus,
         disabled,
         dir,
+        'aria-label': ariaLabel,
+        'aria-controls': ariaControls,
         ...other
     } = props;
 
@@ -85,17 +89,20 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
     for (let i = 1; i <= maxPages; i++) {
         pageButtons.push(
             <Button
+                key={i}
                 selected={i === currentPage ? true : false}
                 fillMode="flat"
                 themeColor="primary"
                 size={size}
                 rounded={null}
+                aria-label={`Page ${i}`}
+                {...(i === currentPage && { 'aria-current': 'page' })}
             >
                 {i}
             </Button>
         );
         options.push(
-            <option selected={i === currentPage ? true : false}>{i}</option>
+            <option key={i} selected={i === currentPage ? true : false}>{i}</option>
         );
     }
 
@@ -116,7 +123,13 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                 {
                     ['k-pager-responsive']: responsive
                 }
-            )}>
+            )}
+            role="application"
+            aria-roledescription="pager"
+            aria-keyshortcuts="Enter ArrowRight ArrowLeft"
+            aria-label={ariaLabel || `Page ${currentPage} of ${maxPages}`}
+            {...(ariaControls && { 'aria-controls': ariaControls })}
+        >
             <div
                 className={classNames(
                     'k-pager-numbers-wrap'
@@ -133,6 +146,8 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         size={size}
                         rounded={null}
                         icon={dir === "rtl" ? "caret-alt-to-right" : "caret-alt-to-left"}
+                        title="Go to the first page"
+                        aria-label="Go to the first page"
                     >
                     </Button><Button
                         className={classNames(
@@ -143,6 +158,8 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         size={size}
                         rounded={null}
                         icon={dir === "rtl" ? "caret-alt-right" : "caret-alt-left"}
+                        title="Go to the previous page"
+                        aria-label="Go to the previous page"
                     >
                     </Button>
                 </>
@@ -161,7 +178,13 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                             'k-pager-input'
                         )}>
                         { pageTitleInfo && <span>Page</span> }
-                        <NumericTextbox value={`${currentPage}`} size={size} showSpinButton={false} showClearButton={false}></NumericTextbox>
+                        <NumericTextbox
+                            value={`${currentPage}`}
+                            size={size}
+                            showSpinButton={false}
+                            showClearButton={false}
+                            aria-label="Page number"
+                        ></NumericTextbox>
                         <span>{ maxPagesInfo && `of ${maxPages}`}</span>
                     </span> }
                 {previousNext &&
@@ -175,6 +198,8 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         size={size}
                         rounded={null}
                         icon={dir === "rtl" ? "caret-alt-left" : "caret-alt-right" }
+                        title="Go to the next page"
+                        aria-label="Go to the next page"
                     >
                     </Button>
                     <Button
@@ -187,6 +212,8 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         size={size}
                         rounded={null}
                         icon={dir === "rtl" ? "caret-alt-to-left" : "caret-alt-to-right" }
+                        title="Go to the last page"
+                        aria-label="Go to the last page"
                     >
                     </Button>
                 </>
@@ -197,7 +224,7 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                     className={classNames(
                         'k-pager-sizes'
                     )}>
-                    <DropdownList value={`${itemsPerPage}`} size={size} />
+                    <DropdownList value={`${itemsPerPage}`} size={size} aria-label="Items per page" />
                     { pagerSizeInfo &&
                         <span>items per page</span>
                     }
@@ -212,6 +239,8 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                     size={size}
                     rounded={null}
                     icon="arrow-rotate-cw"
+                    title="Refresh"
+                    aria-label="Refresh"
                 >
                 </Button>
             }

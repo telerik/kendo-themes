@@ -24,13 +24,14 @@ export const ChatBubble = (
     return (
         <Bubble
             {...other}
+            tabIndex={0}
             className={classNames(
                 props.className,
                 className,
             )}
         >
             {typing ?
-                <div className="k-typing-indicator">
+                <div className="k-typing-indicator" tabIndex={-1}>
                     <span></span><span></span><span></span>
                 </div>
                 : content

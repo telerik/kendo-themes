@@ -11,6 +11,9 @@ export type KendoOrgchartGroupProps = {
     children?: React.JSX.Element | React.JSX.Element[];
     orientation?: 'horizontal' | 'vertical';
     justifyContent?: null | 'start' | 'center' | 'end' | 'stretch' | 'around';
+    level?: number;
+    role?: 'tree' | 'group';
+    'aria-orientation'?: 'horizontal' | 'vertical';
 };
 
 const defaultOptions = {
@@ -25,11 +28,19 @@ export const OrgchartGroup = (
         children,
         orientation = defaultOptions.orientation,
         justifyContent,
+        level,
+        role,
+        'aria-orientation': ariaOrientation,
         ...other
     } = props;
 
     const chartNodes : React.JSX.Element[] = [];
     const chartGroups : React.JSX.Element[] = [];
+
+    // Determine if this is the root level (defaults to true if level not specified)
+    const isLevel1 = level === undefined || level === 1;
+    const groupRole = role || (isLevel1 ? 'tree' : 'group');
+    const groupOrientation = ariaOrientation || (isLevel1 && orientation === 'horizontal' ? 'horizontal' : undefined);
 
     if (children) {
         if (Array.isArray(children)) {
@@ -58,9 +69,13 @@ export const OrgchartGroup = (
                 {
                     [`k-${kendoThemeMaps.orientationMap[orientation!] || orientation}`]: orientation,
                     [`k-justify-content-${justifyContent}`]: justifyContent,
+                    ['k-orgchart-level-1']: isLevel1,
                 }
             )}
-            style={{ width: '100%' }}>
+            style={{ width: '100%' }}
+            role={groupRole}
+            {...(groupOrientation && { 'aria-orientation': groupOrientation })}
+        >
 
             {chartNodes.length > 0 &&
                 <div

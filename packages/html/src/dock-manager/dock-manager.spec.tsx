@@ -31,6 +31,8 @@ export const DockManager: KendoComponent<KendoDockManagerProps & React.HTMLAttri
     return (
         <div
             {...other}
+            role="application"
+            aria-live="polite"
             className={classNames(
                 props.className,
                 DOCKMANAGER_CLASSNAME

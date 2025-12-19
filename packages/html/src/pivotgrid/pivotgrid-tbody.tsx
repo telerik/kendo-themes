@@ -6,12 +6,16 @@ const states = [];
 
 const options = {};
 
-const defaultOptions = {};
+export type KendoPivotGridTbodyProps = {
+    context?: 'headers' | 'values';
+};
 
 export const PivotGridTbody = (
-    props: React.HTMLAttributes<HTMLTableSectionElement>
+    props: KendoPivotGridTbodyProps &
+        React.HTMLAttributes<HTMLTableSectionElement>
 ) => {
     const {
+        context,
         children,
         ...other
     } = props;
@@ -22,7 +26,10 @@ export const PivotGridTbody = (
             className={classNames(
                 props.className,
                 PIVOTGRIDTBODY_CLASSNAME,
-            )}>
+            )}
+            {...(context === 'headers' && { role: 'rowgroup' })}
+            {...(context === 'values' && { role: 'presentation' })}
+        >
             {children}
         </tbody>
     );

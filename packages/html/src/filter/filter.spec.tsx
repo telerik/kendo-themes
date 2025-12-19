@@ -44,8 +44,15 @@ export const Filter: KendoComponent<KendoFilterProps & React.HTMLAttributes<HTML
 
     return (
         <div className={classNames(props.className, FILTER_CLASSNAME)}>
-            <ul className="k-filter-container">
-                <li className="k-filter-group-main">
+            <ul
+                className="k-filter-container"
+                role="tree"
+                aria-label="Filter"
+            >
+                <li
+                    className="k-filter-group-main"
+                    role="treeitem"
+                >
                     {filterChildren}
                 </li>
             </ul>

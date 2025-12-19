@@ -56,7 +56,9 @@ export const PivotGrid: KendoComponent<KendoPivotGridProps & React.HTMLAttribute
                 className={classNames(
                     props.className,
                     PIVOTGRID_CLASSNAME,
-                )}>
+                )}
+                role="grid"
+            >
                 {emptyCell}
                 <div className="k-pivotgrid-column-headers">
                     {columnHeaders}

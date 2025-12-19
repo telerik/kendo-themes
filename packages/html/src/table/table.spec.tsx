@@ -14,6 +14,7 @@ const defaultOptions = {};
 
 export type KendoTableOptions = {
   size?: (typeof options.size)[number] | null;
+  role?: string;
 };
 
 export const Table: KendoComponent<KendoTableOptions & React.HTMLAttributes<HTMLTableElement>> = (
@@ -22,6 +23,7 @@ export const Table: KendoComponent<KendoTableOptions & React.HTMLAttributes<HTML
 ) => {
     const {
         size,
+        role,
         ...other
     } = props;
 
@@ -35,6 +37,7 @@ export const Table: KendoComponent<KendoTableOptions & React.HTMLAttributes<HTML
                     size,
                 }),
             )}
+            {...(role && { role })}
         >
             {props.children}
         </table>

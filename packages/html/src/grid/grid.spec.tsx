@@ -24,6 +24,10 @@ export type KendoGridProps = KendoGridOptions & {
     gridSelectionAggregates?: React.JSX.Element;
     _renderAriaRoot?: boolean;
     resizable?: boolean;
+    id?: string;
+    'aria-colcount'?: number;
+    'aria-rowcount'?: number;
+    'aria-root-role'?: 'grid' | 'treegrid';
 };
 
 const defaultOptions = {
@@ -44,6 +48,10 @@ export const Grid: KendoComponent<KendoGridProps & React.HTMLAttributes<HTMLDivE
         gridSelectionAggregates,
         _renderAriaRoot,
         resizable,
+        id,
+        'aria-colcount': ariaColcount,
+        'aria-rowcount': ariaRowcount,
+        'aria-root-role': ariaRootRole = 'grid',
         ...other
     } = props;
 
@@ -63,7 +71,13 @@ export const Grid: KendoComponent<KendoGridProps & React.HTMLAttributes<HTMLDivE
             {pagerPosition === 'top' && pager}
             {groupingHeader}
             { props.children && _renderAriaRoot ?
-                <div className="k-grid-aria-root">{props.children}</div> : props.children
+                <div
+                    className="k-grid-aria-root"
+                    role={ariaRootRole}
+                    {...(id && { id })}
+                    {...(ariaColcount && { 'aria-colcount': ariaColcount })}
+                    {...(ariaRowcount && { 'aria-rowcount': ariaRowcount })}
+                >{props.children}</div> : props.children
             }
             {gridSelectionAggregates}
             {pagerPosition === 'bottom' && pager}

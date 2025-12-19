@@ -84,14 +84,18 @@ export const GridHeaderCell: KendoComponent<KendoGridHeaderCellProps & KendoGrid
                             )}
                         </span>
                         {menu && (
-                            <a href="#" className={classNames(
-                                'k-grid-header-menu',
-                                {
-                                    [`k-active`]: active,
-                                    [`k-grid-filter-menu`]: menu === "filter",
-                                    [`k-grid-column-menu`]: menu === "column"
-                                }
-                            )}>
+                            <a
+                                href="#"
+                                className={classNames(
+                                    'k-grid-header-menu',
+                                    {
+                                        [`k-active`]: active,
+                                        [`k-grid-filter-menu`]: menu === "filter",
+                                        [`k-grid-column-menu`]: menu === "column"
+                                    }
+                                )}
+                                aria-label={menu === "filter" ? "Filter menu" : "Column menu"}
+                            >
                                 <Icon icon={ menu === "filter" ? "filter" : "more-vertical" } />
                             </a>
                         )}

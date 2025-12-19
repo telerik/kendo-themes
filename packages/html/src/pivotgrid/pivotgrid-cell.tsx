@@ -22,6 +22,12 @@ export type KendoPivotGridCellProps = {
     totalCell?: boolean;
     headerTotalCell?: boolean;
     rowTotalCell?: boolean;
+
+    cellType?: 'columnheader' | 'rowheader' | 'gridcell' | 'emptycell';
+    'aria-expanded'?: 'true' | 'false';
+    'aria-colspan'?: number;
+    'aria-rowspan'?: number;
+    'aria-describedby'?: string;
 };
 
 export type KendoPivotGridCellState = { [K in (typeof states)[number]]?: boolean };
@@ -42,6 +48,11 @@ export const PivotGridCell = (
         totalCell,
         headerTotalCell,
         rowTotalCell,
+        cellType,
+        'aria-expanded': ariaExpanded,
+        'aria-colspan': ariaColspan,
+        'aria-rowspan': ariaRowspan,
+        'aria-describedby': ariaDescribedby,
         focus,
         selected,
         ...other
@@ -69,9 +80,15 @@ export const PivotGridCell = (
                     focus,
                     selected,
                 })
-            )}>
+            )}
+            {...(cellType && { role: cellType })}
+            {...(ariaExpanded && { 'aria-expanded': ariaExpanded })}
+            {...(ariaColspan && { 'aria-colspan': ariaColspan })}
+            {...(ariaRowspan && { 'aria-rowspan': ariaRowspan })}
+            {...(ariaDescribedby && { 'aria-describedby': ariaDescribedby })}
+        >
             {toggle &&
-                <Icon className="k-pivotgrid-toggle" icon={`chevron-${iconMap[toggle]}`} />
+                <Icon className="k-pivotgrid-toggle" icon={`chevron-${iconMap[toggle]}`} aria-hidden="true" />
             }
             {headerTitle && <span className="k-pivotgrid-header-title">{headerTitle}</span>}
             {(content || content === "") && <span className="k-pivotgrid-content">{content}</span>}

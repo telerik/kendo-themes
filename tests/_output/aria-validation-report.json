@@ -1,387 +1,121 @@
 {
-  "timestamp": "2025-12-18T13:11:03.172Z",
+  "timestamp": "2025-12-19T12:58:09.019Z",
   "summary": {
-    "filesTested": 9,
+    "filesTested": 7,
     "skipped": 0,
-    "passed": 193,
-    "violations": 23
+    "passed": 2,
+    "violations": 4
   },
   "results": [
     {
-      "filePath": "./tests/dropdownlist/dropdownlist.html",
-      "spec": "aria/dropdownlist_aria.md",
-      "totalRules": 22,
+      "filePath": "./tests/filemanager/filemanager-listview.html",
+      "spec": "aria/filemanager_aria.md",
+      "totalRules": 1,
       "violations": [],
-      "passed": 42,
+      "passed": 0,
       "violationCount": 0
     },
     {
-      "filePath": "./tests/dropdownlist/dropdownlist-outline.html",
-      "spec": "aria/dropdownlist_aria.md",
-      "totalRules": 22,
-      "violations": [],
-      "passed": 42,
-      "violationCount": 0
-    },
-    {
-      "filePath": "./tests/dropdownlist/dropdownlist-option-label.html",
-      "spec": "aria/dropdownlist_aria.md",
-      "totalRules": 22,
+      "filePath": "./tests/filemanager/filemanager-listview-preview.html",
+      "spec": "aria/filemanager_aria.md",
+      "totalRules": 1,
       "violations": [
         {
           "rule": {
-            "selector": ".k-list-content",
-            "attribute": "role=listbox",
-            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
+            "selector": ".k-filemanager-preview",
+            "attribute": "tabindex=0",
+            "usage": "The element must be focusable, so that its content would be comunicated to the users."
           },
-          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\">\n                                    <li class=\"k-list-item\">\n                                        ",
+          "element": "<div class=\"k-filemanager-preview k-pane k-pane-static k-scrollable\" style=\"flex-basis: 25%;\">\n                        <div class=\"k-file-info\">\n                            <span class=\"k-file-preview",
           "index": 0,
           "valid": false,
           "reason": "missing",
-          "expected": "role",
+          "expected": "tabindex",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-list-content",
-            "attribute": "role=listbox",
-            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
+            "selector": ".k-filemanager-preview",
+            "attribute": "tabindex=0",
+            "usage": "The element must be focusable, so that its content would be comunicated to the users."
           },
-          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\">\n                                    <li class=\"k-list-item\">\n                                        ",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-list-content",
-            "attribute": "role=listbox",
-            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
-          },
-          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\">\n                                    <li class=\"k-list-item\">\n                                        ",
+          "element": "<div class=\"k-filemanager-preview k-pane k-pane-static k-scrollable\" style=\"flex-basis: 25%;\">\n                        <div class=\"k-file-info\">\n                            <span class=\"k-file-preview",
           "index": 2,
           "valid": false,
           "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-list-content",
-            "attribute": "role=listbox",
-            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
-          },
-          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\">\n                                    <li class=\"k-list-item\">\n                                        ",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-list-content",
-            "attribute": "role=listbox",
-            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
-          },
-          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\">\n                                    <li class=\"k-list-item\">\n                                        ",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
+          "expected": "tabindex",
           "actual": null
         }
       ],
-      "passed": 15,
-      "violationCount": 5
-    },
-    {
-      "filePath": "./tests/dropdownlist/dropdownlist-opened.html",
-      "spec": "aria/dropdownlist_aria.md",
-      "totalRules": 22,
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-list-content",
-            "attribute": "role=listbox",
-            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
-          },
-          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"DropdownList options\">\n                                    <li class=\"k-list-item\" role=\"o",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-list-content",
-            "attribute": "role=listbox",
-            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
-          },
-          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"DropdownList options\">\n                                    <li class=\"k-list-item\" role=\"o",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        }
-      ],
-      "passed": 6,
+      "passed": 1,
       "violationCount": 2
     },
     {
-      "filePath": "./tests/dropdownlist/dropdownlist-grouping.html",
-      "spec": "aria/dropdownlist_aria.md",
-      "totalRules": 22,
+      "filePath": "./tests/filemanager/filemanager-gridview.html",
+      "spec": "aria/filemanager_aria.md",
+      "totalRules": 1,
       "violations": [],
-      "passed": 16,
+      "passed": 0,
       "violationCount": 0
     },
     {
-      "filePath": "./tests/dropdownlist/dropdownlist-grouping-filtering.html",
-      "spec": "aria/dropdownlist_aria.md",
-      "totalRules": 22,
+      "filePath": "./tests/filemanager/filemanager-gridview-preview.html",
+      "spec": "aria/filemanager_aria.md",
+      "totalRules": 1,
       "violations": [
         {
           "rule": {
-            "selector": ".k-list-filter>.k-searchbox>.k-input-inner",
-            "attribute": "role=searchbox",
-            "usage": "Announces the search box capability of the input."
+            "selector": ".k-filemanager-preview",
+            "attribute": "tabindex=0",
+            "usage": "The element must be focusable, so that its content would be comunicated to the users."
           },
-          "element": "<input class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"\">",
+          "element": "<div class=\"k-filemanager-preview k-pane k-pane-static k-scrollable\" style=\"flex-basis: 25%;\">\n                        <div class=\"k-file-info\">\n                            <span class=\"k-file-preview",
           "index": 0,
           "valid": false,
           "reason": "missing",
-          "expected": "role",
+          "expected": "tabindex",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-list-filter>.k-searchbox>.k-input-inner",
-            "attribute": "role=searchbox",
-            "usage": "Announces the search box capability of the input."
+            "selector": ".k-filemanager-preview",
+            "attribute": "tabindex=0",
+            "usage": "The element must be focusable, so that its content would be comunicated to the users."
           },
-          "element": "<input class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"\">",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-list-filter>.k-searchbox>.k-input-inner",
-            "attribute": "role=searchbox",
-            "usage": "Announces the search box capability of the input."
-          },
-          "element": "<input class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"\">",
+          "element": "<div class=\"k-filemanager-preview k-pane k-pane-static k-scrollable\" style=\"flex-basis: 25%;\">\n                        <div class=\"k-file-info\">\n                            <span class=\"k-file-preview",
           "index": 2,
           "valid": false,
           "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-list-filter>.k-searchbox>.k-input-inner",
-            "attribute": "role=searchbox",
-            "usage": "Announces the search box capability of the input."
-          },
-          "element": "<input class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"\">",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
+          "expected": "tabindex",
           "actual": null
         }
       ],
-      "passed": 16,
-      "violationCount": 4
+      "passed": 1,
+      "violationCount": 2
     },
     {
-      "filePath": "./tests/dropdownlist/dropdownlist-flat.html",
-      "spec": "aria/dropdownlist_aria.md",
-      "totalRules": 22,
+      "filePath": "./tests/filemanager/filemanager-drag-hint.html",
+      "spec": "aria/filemanager_aria.md",
+      "totalRules": 1,
       "violations": [],
-      "passed": 42,
+      "passed": 0,
       "violationCount": 0
     },
     {
-      "filePath": "./tests/dropdownlist/dropdownlist-filtering.html",
-      "spec": "aria/dropdownlist_aria.md",
-      "totalRules": 22,
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-list-filter>.k-searchbox>.k-input-inner",
-            "attribute": "role=searchbox",
-            "usage": "Announces the search box capability of the input."
-          },
-          "element": "<input class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"\">",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-list-filter>.k-searchbox>.k-input-inner",
-            "attribute": "role=searchbox",
-            "usage": "Announces the search box capability of the input."
-          },
-          "element": "<input class=\"k-input-inner\" placeholder=\"\" autocomplete=\"off\" type=\"text\" value=\"\">",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-list-content",
-            "attribute": "role=listbox",
-            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
-          },
-          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"DropdownList options\">\n                                    <li class=\"k-list-item\" role=\"o",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-list-content",
-            "attribute": "role=listbox",
-            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
-          },
-          "element": "<div class=\"k-list-content\">\n                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"DropdownList options\">\n                                    <li class=\"k-list-item\" role=\"o",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        }
-      ],
-      "passed": 6,
-      "violationCount": 4
+      "filePath": "./tests/filemanager/filemanager-dialogs.html",
+      "spec": "aria/filemanager_aria.md",
+      "totalRules": 1,
+      "violations": [],
+      "passed": 0,
+      "violationCount": 0
     },
     {
-      "filePath": "./tests/dropdownlist/dropdownlist-adaptive.html",
-      "spec": "aria/dropdownlist_aria.md",
-      "totalRules": 22,
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-animation-container",
-            "attribute": "role=region",
-            "usage": "When the component container is appended to the `<body>` element of the document, it requires you to assing a `landmark` role to it. Otherwise, append it to an element with an appropriate `landmark` role."
-          },
-          "element": "<div class=\"k-animation-container k-animation-container-shown\">\n                    <div class=\"k-child-animation-container\" style=\"bottom: 0px; width: 100%;\">\n                        <div class=\"k-ac",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-animation-container",
-            "attribute": "role=region",
-            "usage": "When the component container is appended to the `<body>` element of the document, it requires you to assing a `landmark` role to it. Otherwise, append it to an element with an appropriate `landmark` role."
-          },
-          "element": "<div class=\"k-animation-container k-animation-container-shown\">\n                    <div class=\"k-child-animation-container\" style=\"top: 0px; width: 100%; height: 100%;\">\n                        <div ",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-animation-container",
-            "attribute": "role=region",
-            "usage": "When the component container is appended to the `<body>` element of the document, it requires you to assing a `landmark` role to it. Otherwise, append it to an element with an appropriate `landmark` role."
-          },
-          "element": "<div class=\"k-animation-container k-animation-container-shown\">\n                    <div class=\"k-child-animation-container\" style=\"bottom: 0px; width: 100%;\">\n                        <div class=\"k-ac",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-animation-container",
-            "attribute": "role=region",
-            "usage": "When the component container is appended to the `<body>` element of the document, it requires you to assing a `landmark` role to it. Otherwise, append it to an element with an appropriate `landmark` role."
-          },
-          "element": "<div class=\"k-animation-container k-animation-container-shown\">\n                    <div class=\"k-child-animation-container\" style=\"top: 0px; width: 100%; height: 100%;\">\n                        <div ",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-list-content",
-            "attribute": "role=listbox",
-            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
-          },
-          "element": "<div class=\"k-list-content\">\n                                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"DropdownList options\">\n                                                   ",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-list-content",
-            "attribute": "role=listbox",
-            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
-          },
-          "element": "<div class=\"k-list-content\">\n                                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"DropdownList options\">\n                                                   ",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-list-content",
-            "attribute": "role=listbox",
-            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
-          },
-          "element": "<div class=\"k-list-content\">\n                                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"DropdownList options\">\n                                                   ",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-list-content",
-            "attribute": "role=listbox",
-            "usage": "For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead."
-          },
-          "element": "<div class=\"k-list-content\">\n                                                <ul class=\"k-list-ul\" role=\"listbox\" aria-label=\"DropdownList options\">\n                                                   ",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        }
-      ],
-      "passed": 8,
-      "violationCount": 8
+      "filePath": "./tests/filemanager/filemanager-contextmenu.html",
+      "spec": "aria/filemanager_aria.md",
+      "totalRules": 1,
+      "violations": [],
+      "passed": 0,
+      "violationCount": 0
     }
   ]
 }

@@ -12,6 +12,11 @@ const states = [
 
 export type KendoTableRowProps = {
     alt?: boolean;
+    role?: string;
+    'aria-rowindex'?: number;
+    'aria-selected'?: 'true' | 'false';
+    'aria-expanded'?: 'true' | 'false';
+    'aria-owns'?: string;
 };
 
 export type KendoTableRowState = { [K in (typeof states)[number]]?: boolean };
@@ -29,6 +34,11 @@ export const TableRow = (
         highlighted,
         disabled,
         alt,
+        role,
+        'aria-rowindex': ariaRowindex,
+        'aria-selected': ariaSelected,
+        'aria-expanded': ariaExpanded,
+        'aria-owns': ariaOwns,
         ...other
     } = props;
 
@@ -49,6 +59,11 @@ export const TableRow = (
                     highlighted,
                 })
             )}
+            {...(role && { role })}
+            {...(ariaRowindex && { 'aria-rowindex': ariaRowindex })}
+            {...(ariaSelected && { 'aria-selected': ariaSelected })}
+            {...(ariaExpanded && { 'aria-expanded': ariaExpanded })}
+            {...(ariaOwns && { 'aria-owns': ariaOwns })}
         >
             {props.children}
         </tr>

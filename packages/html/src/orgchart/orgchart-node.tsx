@@ -16,6 +16,11 @@ export type KendoOrgchartNodeProps = {
     buttonIcon?: "plus" | "minus";
     avatar?: string;
     avatarType?: string;
+    'aria-level'?: number;
+    'aria-expanded'?: 'true' | 'false';
+    'aria-owns'?: string;
+    'aria-selected'?: 'true' | 'false';
+    id?: string;
 };
 
 const defaultOptions = {
@@ -38,6 +43,11 @@ export const OrgchartNode = (
         buttonIcon = defaultOptions.buttonIcon,
         avatar,
         avatarType,
+        'aria-level': ariaLevel,
+        'aria-expanded': ariaExpanded,
+        'aria-owns': ariaOwns,
+        'aria-selected': ariaSelected,
+        id,
         ...other
     } = props;
 
@@ -49,7 +59,15 @@ export const OrgchartNode = (
                 ORGCHARTNODE_CLASSNAME,
                 'k-vstack',
                 'k-align-items-center',
-            )}>
+            )}
+            role="treeitem"
+            aria-keyshortcuts="Enter"
+            aria-selected={ariaSelected || 'false'}
+            {...(id && { id })}
+            {...(ariaLevel && { 'aria-level': ariaLevel })}
+            {...(ariaExpanded && { 'aria-expanded': ariaExpanded })}
+            {...(ariaOwns && { 'aria-owns': ariaOwns })}
+        >
 
             {lineTop && <div className="k-orgchart-line k-orgchart-line-v"></div> }
             <Card className="k-orgchart-card">
@@ -57,7 +75,7 @@ export const OrgchartNode = (
 
                     <Avatar type={avatarType} themeColor="secondary">
                         { avatarType === 'image'
-                            ? <img src={avatar} />
+                            ? <img src={avatar} alt={title || ''} />
                             : avatar
                         }
                     </Avatar>
@@ -74,7 +92,13 @@ export const OrgchartNode = (
             </Card>
             {lineBottom && <div className="k-orgchart-line k-orgchart-line-v"></div> }
             {button && (
-                <Button className="k-orgchart-button" icon={buttonIcon}></Button>
+                <Button
+                    className="k-orgchart-button"
+                    icon={buttonIcon}
+                    role="presentation"
+                    aria-hidden="true"
+                    tabIndex={-1}
+                ></Button>
             )}
         </div>
     );

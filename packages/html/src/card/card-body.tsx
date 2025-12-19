@@ -43,6 +43,7 @@ export const CardBody = (
                         size="medium"
                         fillMode="flat"
                         themeColor="base"
+                        aria-label="More actions"
                     />
                 </span>
             }

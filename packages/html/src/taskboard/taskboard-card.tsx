@@ -27,6 +27,8 @@ export const TaskBoardCard = (
     return (
         <Card
             {...other}
+            role="listitem"
+            tabIndex={0}
             className={classNames(
                 props.className,
                 TASKBOARDCARD_CLASSNAME,

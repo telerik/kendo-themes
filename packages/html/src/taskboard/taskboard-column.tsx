@@ -10,6 +10,7 @@ const options = {};
 export type KendoTaskBoardColumnProps = {
     header?: React.JSX.Element;
     edit?: boolean;
+    'aria-labelledby'?: string;
 };
 
 const defaultHeader =
@@ -35,12 +36,16 @@ export const TaskBoardColumn = (
     const {
         header = defaultOptions.header,
         edit,
+        'aria-labelledby': ariaLabelledby,
         ...other
     } = props;
 
     return (
         <div
             {...other}
+            role="list"
+            tabIndex={0}
+            {...(ariaLabelledby && { 'aria-labelledby': ariaLabelledby })}
             className={classNames(
                 props.className,
                 TASKBOARDCOLUMN_CLASSNAME,

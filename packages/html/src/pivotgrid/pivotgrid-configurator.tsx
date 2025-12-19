@@ -13,6 +13,8 @@ export type KendoPivotGridConfiguratorProps = {
     orientation?: "horizontal" | "vertical";
     mode?: "overlay" | "push";
     header?: string;
+    'aria-hidden'?: 'true' | 'false';
+    id?: string;
 };
 
 const defaultActionButtons = (
@@ -38,6 +40,8 @@ export const PivotGridConfigurator = (
         mode = defaultOptions.mode,
         actionButtons = defaultOptions.actionButtons,
         header = defaultOptions.header,
+        'aria-hidden': ariaHidden,
+        id = 'k-pivotgrid-configurator',
         children,
         ...other
     } = props;
@@ -48,7 +52,11 @@ export const PivotGridConfigurator = (
             className={classNames(
                 props.className,
                 PIVOTGRIDCONFIGURATOR_CLASSNAME
-            )}>
+            )}
+            role="dialog"
+            {...(ariaHidden && { 'aria-hidden': ariaHidden })}
+            aria-labelledby={`${id}-header-text`}
+        >
             <div className={classNames(
                 "k-pivotgrid-configurator-panel",
                 {
@@ -57,7 +65,7 @@ export const PivotGridConfigurator = (
                 }
             )}>
                 <div className="k-pivotgrid-configurator-header">
-                    <div className="k-pivotgrid-configurator-header-text">{header}</div>
+                    <div className="k-pivotgrid-configurator-header-text" id={`${id}-header-text`}>{header}</div>
                 </div>
                 <div className="k-pivotgrid-configurator-content">
                     {children}

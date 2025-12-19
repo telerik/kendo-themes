@@ -9,6 +9,11 @@ export type KendoTableThProps = {
     text?: string;
     colspan?: any;
     rowspan?: any;
+    role?: string;
+    'aria-sort'?: 'none' | 'ascending' | 'descending';
+    'aria-colindex'?: number;
+    'aria-haspopup'?: 'dialog' | 'menu';
+    'aria-label'?: string;
 };
 
 export const TableTh: KendoComponent<KendoTableThProps &
@@ -20,6 +25,11 @@ export const TableTh: KendoComponent<KendoTableThProps &
         text,
         colspan,
         rowspan,
+        role,
+        'aria-sort': ariaSort,
+        'aria-colindex': ariaColindex,
+        'aria-haspopup': ariaHaspopup,
+        'aria-label': ariaLabel,
         ...other
     } = props;
 
@@ -36,6 +46,11 @@ export const TableTh: KendoComponent<KendoTableThProps &
                 props.className,
                 className,
             )}
+            {...(role && { role })}
+            {...(ariaSort && { 'aria-sort': ariaSort })}
+            {...(ariaColindex && { 'aria-colindex': ariaColindex })}
+            {...(ariaHaspopup && { 'aria-haspopup': ariaHaspopup })}
+            {...(ariaLabel && { 'aria-label': ariaLabel })}
         >
             {textOrChildren}
         </th>

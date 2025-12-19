@@ -33,6 +33,8 @@ export type KendoToolbarProps = KendoToolbarOptions & {
     scrollButtons?: 'hidden' | 'start' | 'end' | 'around';
     scrollingPosition?: 'start' | 'end' | 'both';
     section?: boolean;
+    'aria-label'?: string;
+    'aria-labelledby'?: string;
 };
 
 export type KendoToolbarState = { [K in (typeof states)[number]]?: boolean };
@@ -57,6 +59,8 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
         scrollButtons,
         scrollingPosition,
         section,
+        'aria-label': ariaLabel,
+        'aria-labelledby': ariaLabelledby,
         ...other
     } = props;
 
@@ -198,6 +202,9 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                     [`${TOOLBAR_CLASSNAME}-section`]: section,
                 }
             )}
+            role="toolbar"
+            {...(ariaLabel && { 'aria-label': ariaLabel })}
+            {...(ariaLabelledby && { 'aria-labelledby': ariaLabelledby })}
         >
             {!scrollable && toolbarChildren}
 

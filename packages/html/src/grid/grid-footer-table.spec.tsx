@@ -11,6 +11,7 @@ export const GridFooterTable: KendoComponent<KendoTableOptions & React.HTMLAttri
 ) => (
     <Table
         size="medium"
+        role="presentation"
         {...props}
         className={classNames(
             props.className,

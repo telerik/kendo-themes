@@ -61,7 +61,7 @@ export const Chat: KendoComponent<KendoChatProps & React.HTMLAttributes<HTMLDivE
             )} dir={dir}>
             {header}
             {pinned}
-            <div className="k-message-list">
+            <div className="k-message-list" role="log" aria-label="Message list" aria-live="polite">
                 <div className={classNames("k-message-list-content",
                         empty && "k-message-list-content-empty"
                 )}>

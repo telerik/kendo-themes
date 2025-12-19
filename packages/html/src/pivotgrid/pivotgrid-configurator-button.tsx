@@ -22,7 +22,9 @@ export const PivotGridConfiguratorButton = (
             className={classNames(
                 props.className,
                 PIVOTGRIDCONFIGURATORBUTTON_CLASSNAME,
-            )}>
+            )}
+            aria-hidden="true"
+        >
             <span>
                 Change settings
                 <Icon icon="gear" />

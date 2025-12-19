@@ -63,7 +63,9 @@ export const Editor: KendoComponent<KendoEditorState & KendoEditorProps & React.
                     stateClassNames(EDITOR_CLASSNAME, {
                         focus,
                     }),
-                )}>
+                )}
+                readonly={readonly}
+            >
                 {props.children}
             </EditorContent>
         </div>

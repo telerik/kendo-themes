@@ -12,6 +12,10 @@ export type KendoTableTdProps = {
     text?: string;
     colspan?: any;
     rowspan?: any;
+    role?: string;
+    'aria-colindex'?: number;
+    'aria-selected'?: 'true' | 'false';
+    'aria-label'?: string;
 };
 
 export type KendoTableTdState = { [K in (typeof states)[number]]?: boolean };
@@ -28,6 +32,10 @@ export const TableTd = (
         text,
         colspan,
         rowspan,
+        role,
+        'aria-colindex': ariaColindex,
+        'aria-selected': ariaSelected,
+        'aria-label': ariaLabel,
         ...other
     } = props;
 
@@ -49,6 +57,10 @@ export const TableTd = (
                     highlighted,
                 })
             )}
+            {...(role && { role })}
+            {...(ariaColindex && { 'aria-colindex': ariaColindex })}
+            {...(ariaSelected && { 'aria-selected': ariaSelected })}
+            {...(ariaLabel && { 'aria-label': ariaLabel })}
         >
             {textOrChildren}
         </td>
