@@ -7,7 +7,7 @@ on:
         description: 'Version of node to use'
         required: false
         type: number
-        default: 22
+        default: 24
       force-render:
         description: 'Always render images, regardless of git changes'
         required: false
