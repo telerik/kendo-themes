@@ -11,11 +11,11 @@
 </head>
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid">
-        <section>TreeList without Scrollbar<div id="treelist" class="k-treelist k-grid-no-scrollbar k-grid k-grid-md">
-                <div class="k-grid-aria-root">
+        <section>TreeList without Scrollbar<div class="k-treelist k-grid-no-scrollbar k-grid k-grid-md">
+                <div class="k-grid-aria-root" role="treegrid" id="treelist">
                     <div class="k-grid-header" style="padding-right: 0px;">
                         <div class="k-grid-header-wrap">
-                            <table class="k-grid-header-table k-table k-table-md">
+                            <table class="k-grid-header-table k-table k-table-md" role="presentation">
                                 <colgroup>
                                     <col style="width: 250px;">
                                     <col>
@@ -27,7 +27,7 @@
                                                 <span class="k-link">
                                                     <span class="k-column-title">First Name</span>
                                                 </span>
-                                                <a href="#" class="k-grid-header-menu k-grid-column-menu">
+                                                <a href="#" class="k-grid-header-menu k-grid-column-menu" aria-label="Column menu">
                                                     <span class="k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -41,7 +41,7 @@
                                                 <span class="k-link">
                                                     <span class="k-column-title">Last Name</span>
                                                 </span>
-                                                <a href="#" class="k-grid-header-menu k-grid-column-menu">
+                                                <a href="#" class="k-grid-header-menu k-grid-column-menu" aria-label="Column menu">
                                                     <span class="k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -57,7 +57,7 @@
                     </div>
                     <div class="k-grid-container">
                         <div class="k-grid-content">
-                            <table class="k-grid-table k-table k-table-md">
+                            <table class="k-grid-table k-table k-table-md" role="presentation">
                                 <colgroup>
                                     <col style="width: 250px;">
                                     <col>
@@ -80,11 +80,11 @@
                 </div>
             </div>
         </section>
-        <section>TreeList Normal<div id="treelist" class="k-treelist k-grid k-grid-md">
-                <div class="k-grid-aria-root">
+        <section>TreeList Normal<div class="k-treelist k-grid k-grid-md">
+                <div class="k-grid-aria-root" role="treegrid" id="treelist">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
-                            <table class="k-grid-header-table k-table k-table-md">
+                            <table class="k-grid-header-table k-table k-table-md" role="presentation">
                                 <colgroup>
                                     <col>
                                     <col>
@@ -120,7 +120,7 @@
                     </div>
                     <div class="k-grid-container">
                         <div class="k-grid-content">
-                            <table class="k-grid-table k-table k-table-md">
+                            <table class="k-grid-table k-table k-table-md" role="presentation">
                                 <colgroup>
                                     <col>
                                     <col>
@@ -217,11 +217,11 @@
                 </div>
             </div>
         </section>
-        <section>TreeList with Column Menu<div id="treelist" class="k-treelist k-grid k-grid-md">
-                <div class="k-grid-aria-root">
+        <section>TreeList with Column Menu<div class="k-treelist k-grid k-grid-md">
+                <div class="k-grid-aria-root" role="treegrid" id="treelist">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
-                            <table class="k-grid-header-table k-table k-table-md">
+                            <table class="k-grid-header-table k-table k-table-md" role="presentation">
                                 <colgroup>
                                     <col>
                                     <col>
@@ -234,7 +234,7 @@
                                                 <span class="k-link">
                                                     <span class="k-column-title">Name</span>
                                                 </span>
-                                                <a href="#" class="k-grid-header-menu k-grid-column-menu">
+                                                <a href="#" class="k-grid-header-menu k-grid-column-menu" aria-label="Column menu">
                                                     <span class="k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -248,7 +248,7 @@
                                                 <span class="k-link">
                                                     <span class="k-column-title">Position</span>
                                                 </span>
-                                                <a href="#" class="k-grid-header-menu k-grid-column-menu">
+                                                <a href="#" class="k-grid-header-menu k-grid-column-menu" aria-label="Column menu">
                                                     <span class="k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -262,7 +262,7 @@
                                                 <span class="k-link">
                                                     <span class="k-column-title">Hire Date</span>
                                                 </span>
-                                                <a href="#" class="k-grid-header-menu k-grid-column-menu">
+                                                <a href="#" class="k-grid-header-menu k-grid-column-menu" aria-label="Column menu">
                                                     <span class="k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -278,7 +278,7 @@
                     </div>
                     <div class="k-grid-container">
                         <div class="k-grid-content">
-                            <table class="k-grid-table k-table k-table-md">
+                            <table class="k-grid-table k-table k-table-md" role="presentation">
                                 <colgroup>
                                     <col>
                                     <col>
@@ -303,11 +303,11 @@
                 </div>
             </div>
         </section>
-        <section>TreeList with Filter Menu<div id="treelist" class="k-treelist k-grid k-grid-md">
-                <div class="k-grid-aria-root">
+        <section>TreeList with Filter Menu<div class="k-treelist k-grid k-grid-md">
+                <div class="k-grid-aria-root" role="treegrid" id="treelist">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
-                            <table class="k-grid-header-table k-table k-table-md">
+                            <table class="k-grid-header-table k-table k-table-md" role="presentation">
                                 <colgroup>
                                     <col>
                                     <col>
@@ -320,7 +320,7 @@
                                                 <span class="k-link">
                                                     <span class="k-column-title">Name</span>
                                                 </span>
-                                                <a href="#" class="k-grid-header-menu k-grid-filter-menu">
+                                                <a href="#" class="k-grid-header-menu k-grid-filter-menu" aria-label="Filter menu">
                                                     <span class="k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -334,7 +334,7 @@
                                                 <span class="k-link">
                                                     <span class="k-column-title">Position</span>
                                                 </span>
-                                                <a href="#" class="k-grid-header-menu k-grid-filter-menu">
+                                                <a href="#" class="k-grid-header-menu k-grid-filter-menu" aria-label="Filter menu">
                                                     <span class="k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -348,7 +348,7 @@
                                                 <span class="k-link">
                                                     <span class="k-column-title">Hire Date</span>
                                                 </span>
-                                                <a href="#" class="k-grid-header-menu k-grid-filter-menu">
+                                                <a href="#" class="k-grid-header-menu k-grid-filter-menu" aria-label="Filter menu">
                                                     <span class="k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -364,7 +364,7 @@
                     </div>
                     <div class="k-grid-container">
                         <div class="k-grid-content">
-                            <table class="k-grid-table k-table k-table-md">
+                            <table class="k-grid-table k-table k-table-md" role="presentation">
                                 <colgroup>
                                     <col>
                                     <col>
@@ -389,11 +389,11 @@
                 </div>
             </div>
         </section>
-        <section>TreeList Sorting<div id="treelist" class="k-treelist k-grid k-grid-md">
-                <div class="k-grid-aria-root">
+        <section>TreeList Sorting<div class="k-treelist k-grid k-grid-md">
+                <div class="k-grid-aria-root" role="treegrid" id="treelist">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
-                            <table class="k-grid-header-table k-table k-table-md">
+                            <table class="k-grid-header-table k-table k-table-md" role="presentation">
                                 <colgroup>
                                     <col>
                                     <col>
@@ -436,7 +436,7 @@
                     </div>
                     <div class="k-grid-container">
                         <div class="k-grid-content">
-                            <table class="k-grid-table k-table k-table-md">
+                            <table class="k-grid-table k-table k-table-md" role="presentation">
                                 <colgroup>
                                     <col>
                                     <col class="k-sorted">
