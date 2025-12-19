@@ -10,6 +10,8 @@ export type KendoPivotGridTbodyProps = {
     context?: 'headers' | 'values';
 };
 
+const defaultOptions = {};
+
 export const PivotGridTbody = (
     props: KendoPivotGridTbodyProps &
         React.HTMLAttributes<HTMLTableSectionElement>
