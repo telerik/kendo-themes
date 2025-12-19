@@ -1,0 +1,73 @@
+// Segmented control
+
+$kendo-segmented-control-default-size: null !default;
+
+$kendo-segmented-control-padding-x: null !default;
+$kendo-segmented-control-padding-y: null !default;
+$kendo-segmented-control-border-radius: null !default;
+
+$kendo-segmented-control-bg: null !default;
+$kendo-segmented-control-text: null !default;
+
+$kendo-segmented-control-sm-font-size: null !default;
+$kendo-segmented-control-md-font-size: null !default;
+$kendo-segmented-control-lg-font-size: null !default;
+
+$kendo-segmented-control-font-family: null !default;
+
+$kendo-segmented-control-sm-line-height: null !default;
+$kendo-segmented-control-md-line-height: null !default;
+$kendo-segmented-control-lg-line-height: null !default;
+
+$kendo-segmented-control-thumb-border-radius: null !default;
+$kendo-segmented-control-thumb-shadow: null !default;
+$kendo-segmented-control-thumb-bg: null !default;
+$kendo-segmented-control-thumb-text: null !default;
+
+$kendo-segmented-control-sm-button-padding-x: null !default;
+$kendo-segmented-control-md-button-padding-x: null !default;
+$kendo-segmented-control-lg-button-padding-x: null !default;
+
+$kendo-segmented-control-sm-button-padding-y: null !default;
+$kendo-segmented-control-md-button-padding-y: null !default;
+$kendo-segmented-control-lg-button-padding-y: null !default;
+
+$kendo-segmented-control-button-border-width: null !default;
+$kendo-segmented-control-button-border-radius: null !default;
+
+$kendo-segmented-control-sm-button-gap: null !default;
+$kendo-segmented-control-md-button-gap: null !default;
+$kendo-segmented-control-lg-button-gap: null !default;
+
+$kendo-segmented-control-button-hover-bg: null !default;
+$kendo-segmented-control-button-focus-indicator: null !default;
+
+/// The map with the sizes of the Segmented Control.
+/// @group segmented-control
+$kendo-segmented-control-sizes: (
+    sm: (
+        font-size: $kendo-segmented-control-sm-font-size,
+        line-height: $kendo-segmented-control-sm-line-height,
+        button-padding-x: $kendo-segmented-control-sm-button-padding-x,
+        button-padding-y: $kendo-segmented-control-sm-button-padding-y,
+        button-gap: $kendo-segmented-control-sm-button-gap
+    ),
+    md: (
+        font-size: $kendo-segmented-control-md-font-size,
+        line-height: $kendo-segmented-control-md-line-height,
+        button-padding-x: $kendo-segmented-control-md-button-padding-x,
+        button-padding-y: $kendo-segmented-control-md-button-padding-y,
+        button-gap: $kendo-segmented-control-md-button-gap
+    ),
+    lg: (
+        font-size: $kendo-segmented-control-lg-font-size,
+        line-height: $kendo-segmented-control-lg-line-height,
+        button-padding-x: $kendo-segmented-control-lg-button-padding-x,
+        button-padding-y: $kendo-segmented-control-lg-button-padding-y,
+        button-gap: $kendo-segmented-control-lg-button-gap
+    )
+) !default;
+
+
+
+
