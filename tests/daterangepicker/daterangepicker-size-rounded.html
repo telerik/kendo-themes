@@ -10,5 +10,218 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
+    <style>
+        #test-area {
+            grid-template-columns: 120px repeat(3, 1fr);
+        }
+        .k-daterangepicker .k-dateinput {
+            width: 5em;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid">
+        <span>
+            <small>rounded / size</small>
+        </span>
+        <span>small</span>
+        <span>medium</span>
+        <span>large</span>
+        <span>small</span>
+        <div>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-sm k-input-solid k-rounded-sm">
+                        <input role="combobox" aria-label="Start date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-sm k-input-solid k-rounded-sm">
+                        <input role="combobox" aria-label="End date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">End</label>
+                </span>
+            </span>
+        </div>
+        <div>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-sm">
+                        <input role="combobox" aria-label="Start date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-sm">
+                        <input role="combobox" aria-label="End date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">End</label>
+                </span>
+            </span>
+        </div>
+        <div>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-lg k-input-solid k-rounded-sm">
+                        <input role="combobox" aria-label="Start date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-lg k-input-solid k-rounded-sm">
+                        <input role="combobox" aria-label="End date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">End</label>
+                </span>
+            </span>
+        </div>
+        <span>medium</span>
+        <div>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-sm k-input-solid k-rounded-md">
+                        <input role="combobox" aria-label="Start date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-sm k-input-solid k-rounded-md">
+                        <input role="combobox" aria-label="End date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">End</label>
+                </span>
+            </span>
+        </div>
+        <div>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
+                        <input role="combobox" aria-label="Start date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
+                        <input role="combobox" aria-label="End date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">End</label>
+                </span>
+            </span>
+        </div>
+        <div>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-lg k-input-solid k-rounded-md">
+                        <input role="combobox" aria-label="Start date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-lg k-input-solid k-rounded-md">
+                        <input role="combobox" aria-label="End date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">End</label>
+                </span>
+            </span>
+        </div>
+        <span>large</span>
+        <div>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-sm k-input-solid k-rounded-lg">
+                        <input role="combobox" aria-label="Start date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-sm k-input-solid k-rounded-lg">
+                        <input role="combobox" aria-label="End date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">End</label>
+                </span>
+            </span>
+        </div>
+        <div>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-lg">
+                        <input role="combobox" aria-label="Start date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-lg">
+                        <input role="combobox" aria-label="End date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">End</label>
+                </span>
+            </span>
+        </div>
+        <div>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-lg k-input-solid k-rounded-lg">
+                        <input role="combobox" aria-label="Start date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-lg k-input-solid k-rounded-lg">
+                        <input role="combobox" aria-label="End date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">End</label>
+                </span>
+            </span>
+        </div>
+        <span>full</span>
+        <div>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-sm k-input-solid k-rounded-full">
+                        <input role="combobox" aria-label="Start date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-sm k-input-solid k-rounded-full">
+                        <input role="combobox" aria-label="End date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">End</label>
+                </span>
+            </span>
+        </div>
+        <div>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-full">
+                        <input role="combobox" aria-label="Start date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-full">
+                        <input role="combobox" aria-label="End date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">End</label>
+                </span>
+            </span>
+        </div>
+        <div>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-lg k-input-solid k-rounded-full">
+                        <input role="combobox" aria-label="Start date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-lg k-input-solid k-rounded-full">
+                        <input role="combobox" aria-label="End date" aria-haspopup="grid" aria-expanded="false" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">End</label>
+                </span>
+            </span>
+        </div>
+    </div>
 </body>
 </html>
