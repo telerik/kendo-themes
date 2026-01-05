@@ -1,0 +1,167 @@
+{
+  "track": "crawl",
+  "level": "assisted",
+  "version": "1.0",
+  "repo": "telerik/kendo-themes",
+  "exercises": [
+    {
+      "id": "01",
+      "slug": "repo-orientation",
+      "title": "Repo Orientation & Architecture Map",
+      "description": "Understand the monorepo structure and produce an architecture diagram",
+      "difficulty": "beginner",
+      "estimatedMinutes": 20,
+      "skills": ["navigation", "documentation", "diagrams"],
+      "files": [
+        ".copilot-track/crawl/01-repo-orientation/HOWTO.md",
+        ".copilot-track/crawl/01-repo-orientation/ACCEPTANCE.md",
+        ".copilot-track/crawl/01-repo-orientation/repo-orientation.prompt.md"
+      ],
+      "testCommand": null,
+      "acceptanceCriteria": [
+        "Architecture diagram created in docs/architecture.mmd",
+        "Developer can explain package dependencies"
+      ]
+    },
+    {
+      "id": "02",
+      "slug": "build-test-baseline",
+      "title": "Build & Test Baseline",
+      "description": "Confirm build and test commands work; document the baseline",
+      "difficulty": "beginner",
+      "estimatedMinutes": 15,
+      "skills": ["build", "testing", "documentation"],
+      "files": [
+        ".copilot-track/crawl/02-build-test-baseline/HOWTO.md",
+        ".copilot-track/crawl/02-build-test-baseline/ACCEPTANCE.md",
+        ".copilot-track/crawl/02-build-test-baseline/build-test-baseline.prompt.md"
+      ],
+      "testCommand": "npm run lint && npm run test:units",
+      "acceptanceCriteria": [
+        "All lint checks pass",
+        "All unit tests pass",
+        "Baseline documented"
+      ]
+    },
+    {
+      "id": "03",
+      "slug": "small-refactor-low-risk",
+      "title": "Small Refactor (Low-Risk Module)",
+      "description": "Refactor a utility in packages/utils with test coverage",
+      "difficulty": "beginner",
+      "estimatedMinutes": 30,
+      "skills": ["refactoring", "scss", "testing"],
+      "files": [
+        ".copilot-track/crawl/03-small-refactor-low-risk/HOWTO.md",
+        ".copilot-track/crawl/03-small-refactor-low-risk/ACCEPTANCE.md",
+        ".copilot-track/crawl/03-small-refactor-low-risk/small-refactor.prompt.md"
+      ],
+      "testCommand": "npm run lint:styles && npm run test:units",
+      "acceptanceCriteria": [
+        "Refactored code passes lint",
+        "Tests validate the change",
+        "Diff is < 50 lines"
+      ]
+    },
+    {
+      "id": "04",
+      "slug": "documentation-sync",
+      "title": "Documentation Sync",
+      "description": "Update SassDoc comments to match current implementation",
+      "difficulty": "beginner",
+      "estimatedMinutes": 25,
+      "skills": ["documentation", "sassdoc", "review"],
+      "files": [
+        ".copilot-track/crawl/04-documentation-sync/HOWTO.md",
+        ".copilot-track/crawl/04-documentation-sync/ACCEPTANCE.md",
+        ".copilot-track/crawl/04-documentation-sync/documentation-sync.prompt.md"
+      ],
+      "testCommand": "npm run docs:check",
+      "acceptanceCriteria": [
+        "SassDoc comments are accurate",
+        "docs:check passes",
+        "No orphaned documentation"
+      ]
+    },
+    {
+      "id": "05",
+      "slug": "api-contract-hardening",
+      "title": "API/Contract Hardening",
+      "description": "Ensure all public variables have !default flags and tests",
+      "difficulty": "intermediate",
+      "estimatedMinutes": 35,
+      "skills": ["scss", "api-design", "testing"],
+      "files": [
+        ".copilot-track/crawl/05-api-contract-hardening/HOWTO.md",
+        ".copilot-track/crawl/05-api-contract-hardening/ACCEPTANCE.md",
+        ".copilot-track/crawl/05-api-contract-hardening/api-hardening.prompt.md"
+      ],
+      "testCommand": "npm run test:units",
+      "acceptanceCriteria": [
+        "All public variables have !default",
+        "Unit test validates customizability",
+        "No breaking changes to API"
+      ]
+    },
+    {
+      "id": "06",
+      "slug": "theme-variable-override",
+      "title": "Theme Variable Override",
+      "status": "planned"
+    },
+    {
+      "id": "07",
+      "slug": "component-style-extension",
+      "title": "Component Style Extension",
+      "status": "planned"
+    },
+    {
+      "id": "08",
+      "slug": "accessibility-contrast-fix",
+      "title": "Accessibility Contrast Fix",
+      "status": "planned"
+    },
+    {
+      "id": "09",
+      "slug": "css-specificity-reduction",
+      "title": "CSS Specificity Reduction",
+      "status": "planned"
+    },
+    {
+      "id": "10",
+      "slug": "cross-theme-consistency",
+      "title": "Cross-Theme Consistency",
+      "status": "planned"
+    },
+    {
+      "id": "11",
+      "slug": "swatch-creation",
+      "title": "Swatch Creation",
+      "status": "planned"
+    },
+    {
+      "id": "12",
+      "slug": "visual-regression-test",
+      "title": "Visual Regression Test",
+      "status": "planned"
+    },
+    {
+      "id": "13",
+      "slug": "bundler-integration",
+      "title": "Bundler Integration Test",
+      "status": "planned"
+    },
+    {
+      "id": "14",
+      "slug": "performance-audit",
+      "title": "Performance Audit",
+      "status": "planned"
+    },
+    {
+      "id": "15",
+      "slug": "deprecation-cleanup",
+      "title": "Deprecation Cleanup",
+      "status": "planned"
+    }
+  ]
+}
