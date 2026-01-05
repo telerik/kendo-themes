@@ -239,7 +239,7 @@
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         > .k-input + .k-input {
-            margin-inline-start: if( $kendo-input-border-width == 0, null, -$kendo-input-border-width );
+            margin-inline-start: if(sass($kendo-input-border-width == 0): null; else: - $kendo-input-border-width);
         }
 
         > .k-input:hover,
@@ -362,7 +362,7 @@
 
     // Input button
     .k-input-button {
-        width: if( $kendo-use-input-button-width, $kendo-input-button-width, auto );
+        width: if(sass($kendo-use-input-button-width): $kendo-input-button-width; else: auto);
         border-width: 0;
         border-inline-start-width: $kendo-input-button-border-width;
         flex: none;
@@ -387,7 +387,7 @@
 
     // Input spinner
     .k-input-spinner {
-        width: if( $kendo-use-input-spinner-width, $kendo-input-spinner-width, auto );
+        width: if(sass($kendo-use-input-spinner-width): $kendo-input-spinner-width; else: auto);
         flex: none;
         display: flex;
         flex-flow: column nowrap;
@@ -409,10 +409,10 @@
             }
         }
         .k-spinner-increase .k-icon {
-            inset-block-end: if( $kendo-use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset}), auto );
+            inset-block-end: if(sass($kendo-use-input-spinner-icon-offset): calc( -1 * #{$kendo-input-spinner-icon-offset}); else: auto);
         }
         .k-spinner-decrease .k-icon {
-            inset-block-start: if( $kendo-use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset}), auto );
+            inset-block-start: if(sass($kendo-use-input-spinner-icon-offset): calc( -1 * #{$kendo-input-spinner-icon-offset}); else: auto);
         }
     }
 

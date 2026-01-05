@@ -2,10 +2,10 @@
 @use "@progress/kendo-theme-core/scss/components/progressbar/_theme.scss" as *;
 
 @function _translate($direction, $value) { // stylelint-disable-line
-    @return if($direction == horizontal, translateX($value), translateY($value));
+    @return if(sass($direction == horizontal): translateX($value); else: translateY($value));
 }
 @function _scale($direction, $value) { // stylelint-disable-line
-    @return if($direction == horizontal, scaleX($value), scaleY($value));
+    @return if(sass($direction == horizontal): scaleX($value); else: scaleY($value));
 }
 
 @mixin kendo-progressbar-indeterminate-animation($direction) {

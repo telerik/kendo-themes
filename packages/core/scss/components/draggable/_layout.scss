@@ -12,7 +12,7 @@
         padding-block: $kendo-drag-hint-padding-y;
         padding-inline: $kendo-drag-hint-padding-x;
         border-width: $kendo-drag-hint-border-width;
-        border-style: if( $kendo-drag-hint-border-width == null, null, solid );
+        border-style: if(sass($kendo-drag-hint-border-width == null): null; else: solid);
         box-sizing: border-box;
         font-size: $kendo-drag-hint-font-size;
         font-family: $kendo-drag-hint-font-family;

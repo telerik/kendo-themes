@@ -65,7 +65,7 @@
         // Step indicator
         .k-step-indicator {
             @include border-radius( $kendo-stepper-indicator-border-radius );
-            margin: if($kendo-stepper-indicator-focus-offset > 0, $kendo-stepper-indicator-focus-offset, null);
+            margin: if(sass($kendo-stepper-indicator-focus-offset > 0): $kendo-stepper-indicator-focus-offset);
             width: $kendo-stepper-indicator-width;
             height: $kendo-stepper-indicator-height;
             border-width: $kendo-stepper-indicator-border-width;
@@ -207,7 +207,7 @@
             text-align: center;
         }
         .k-step-indicator + .k-step-label {
-            margin-block-start: if($kendo-stepper-indicator-focus-offset > 0, k-spacing(1), 8px);
+            margin-block-start: if(sass($kendo-stepper-indicator-focus-offset > 0): k-spacing(1); else: 8px);
         }
 
         // Progressbar

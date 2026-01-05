@@ -10,24 +10,24 @@ $kendo-important: true !default;
 
 @mixin generate-utils( $name, $props, $values, $function: "genFunc", $important: $kendo-important, $css-var: null ) {
     @if $values {
-        $_props: if( meta.type-of($props) == list, $props, ( $props ) );
-        $_fn: if( meta.function-exists( $function ), meta.get-function( $function ), null );
+        $_props: if(sass(meta.type-of($props) == list): $props; else: ( $props ));
+        $_fn: if(sass(meta.function-exists( $function )): meta.get-function( $function ));
 
         @each $key, $val in $values {
             $_key: k-escape-class-name( $key );
-            $_val: if( meta.type-of($values) == list, $key, $val );
+            $_val: if(sass(meta.type-of($values) == list): $key; else: $val);
             $_name: k-escape-class-name( $name );
-            $_selector: if( $_key == DEFAULT, #{$kendo-prefix}#{$_name}, #{$kendo-prefix}#{$_name}-#{$_key});
+            $_selector: if(sass($_key == DEFAULT): #{$kendo-prefix}#{$_name}; else: #{$kendo-prefix}#{$_name}-#{$_key});
             // @debug $_selector;
-            $_custom-prop: if( $_key == DEFAULT, var( --kendo-#{$css-var}, #{$_val} ), var( --kendo-#{$css-var}-#{$_key}, #{$_val} ) );
+            $_custom-prop: if(sass($_key == DEFAULT): var( --kendo-#{$css-var}, #{$_val} ); else: var( --kendo-#{$css-var}-#{$_key}, #{$_val} ));
 
             @if $important != only {
                 .#{$_selector} {
                     @each $prop in $_props {
                         @if $css-var {
-                            #{$prop}: if( $_fn, meta.call($_fn, $_custom-prop), $_custom-prop );
+                            #{$prop}: if(sass($_fn): meta.call($_fn, $_custom-prop); else: $_custom-prop);
                         } @else {
-                            #{$prop}: if( $_fn, meta.call($_fn, $_val), $_val );
+                            #{$prop}: if(sass($_fn): meta.call($_fn, $_val); else: $_val);
                         }
                     }
                 }
@@ -36,9 +36,9 @@ $kendo-important: true !default;
                 .\!#{$_selector} {
                     @each $prop in $_props {
                         @if $css-var {
-                            #{$prop}: if( $_fn, meta.call($_fn, $-custom-prop), $-custom-prop ) !important; // stylelint-disable-line declaration-no-important
+                            #{$prop}: if(sass($_fn): meta.call($_fn, $-custom-prop); else: $-custom-prop) !important; // stylelint-disable-line declaration-no-important
                         } @else {
-                            #{$prop}:  if( $_fn, meta.call($_fn, $_val), $_val ) !important; // stylelint-disable-line declaration-no-important
+                            #{$prop}:  if(sass($_fn): meta.call($_fn, $_val); else: $_val) !important; // stylelint-disable-line declaration-no-important
                         }
                     }
                 }

@@ -10,5 +10,5 @@
 ///   $foo: "baz";
 ///   @debug k-if-var( $foo, "bar" ); // => "baz"
 @function k-if-var( $var, $fallback ) {
-    @return if( $var != null, $var, $fallback );
+    @return if(sass($var != null): $var; else: $fallback);
 }

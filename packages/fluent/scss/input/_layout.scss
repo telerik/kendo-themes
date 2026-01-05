@@ -155,7 +155,7 @@
         .k-picker-#{$size} {
 
             .k-input-spinner {
-                width: if( $kendo-use-input-spinner-width, var( --kendo-input-spinner-width, #{$_button-width} ), auto );
+                width: if(sass($kendo-use-input-spinner-width): var( --kendo-input-spinner-width, #{$_button-width} ); else: auto);
 
                 .k-spinner-increase,
                 .k-spinner-decrease {

@@ -116,7 +116,7 @@
         }
 
         &.k-event-inverse {
-            color: if($kendo-enable-focus-contrast, black, k-color(on-app-surface));
+            color: if(sass($kendo-enable-focus-contrast): black; else: k-color(on-app-surface));
         }
 
         &.k-event-ongoing {

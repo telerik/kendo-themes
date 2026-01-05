@@ -153,14 +153,14 @@ $kendo-dark-color-level-step: 16% !default;
 }
 
 @function k-color-level( $color, $level: 0, $_is-dark-theme: $kendo-is-dark-theme ) {
-    $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
-    $_color-level-step: if( $_dark-theme, $kendo-dark-color-level-step, $kendo-light-color-level-step );
+    $_dark-theme: if(sass(meta.variable-exists( kendo-is-dark-theme )): $_is-dark-theme; else: false);
+    $_color-level-step: if(sass($_dark-theme): $kendo-dark-color-level-step; else: $kendo-light-color-level-step);
 
     @if ( $level == 0 ) or ( $level == 0% ) {
         @return $color;
     }
 
-    $base: if( $level < 0, #ffffff, #000000 );
+    $base: if(sass($level < 0): #ffffff; else: #000000);
     $level: math.abs( $level );
 
 
@@ -204,7 +204,7 @@ $kendo-dark-color-level-step: 16% !default;
 ///
 /// @group color-system
 @function k-try-shade( $color, $level: 1, $_is-dark-theme: $kendo-is-dark-theme ) {
-    $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
+    $_dark-theme: if(sass(meta.variable-exists( kendo-is-dark-theme )): $_is-dark-theme; else: false);
 
     @if $_dark-theme {
         @return k-color-tint( $color, $level );
@@ -220,7 +220,7 @@ $kendo-dark-color-level-step: 16% !default;
 ///
 /// @group color-system
 @function k-try-tint( $color, $level: 1, $_is-dark-theme: $kendo-is-dark-theme ) {
-    $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
+    $_dark-theme: if(sass(meta.variable-exists( kendo-is-dark-theme )): $_is-dark-theme; else: false);
 
     @if $_dark-theme {
         @return k-color-shade( $color, $level );
@@ -236,7 +236,7 @@ $kendo-dark-color-level-step: 16% !default;
 ///
 /// @group color-system
 @function k-try-darken( $color, $amount, $_is-dark-theme: $kendo-is-dark-theme ) {
-    $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
+    $_dark-theme: if(sass(meta.variable-exists( kendo-is-dark-theme )): $_is-dark-theme; else: false);
 
     @if $_dark-theme {
         @return k-color-lighten( $color, $amount );
@@ -251,7 +251,7 @@ $kendo-dark-color-level-step: 16% !default;
 ///
 /// @group color-system
 @function k-try-lighten( $color, $amount, $_is-dark-theme: $kendo-is-dark-theme ) {
-    $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
+    $_dark-theme: if(sass(meta.variable-exists( kendo-is-dark-theme )): $_is-dark-theme; else: false);
 
     @if $_dark-theme {
         @return k-color-darken( $color, $amount );
@@ -601,7 +601,7 @@ $wcag-light: white !default;
 ///
 /// @group accessibility
 @function k-is-dark( $color ) {
-    @return if( k-color-luminance( $color ) < .5, true, false );
+    @return if(sass(k-color-luminance( $color ) < .5): true; else: false);
 }
 
 /// Checks if a color is light
@@ -610,7 +610,7 @@ $wcag-light: white !default;
 ///
 /// @group accessibility
 @function k-is-light( $color ) {
-    @return if( k-color-luminance( $color ) < .5, false, true );
+    @return if(sass(k-color-luminance( $color ) < .5): false; else: true);
 }
 
 
@@ -657,13 +657,13 @@ $wcag-light: white !default;
 }
 @function k-contrast-yiq($color, $dark: $yiq-dark, $light: $yiq-light) {
     $yiq: k-yiq-luma-information($color);
-    $out: if($yiq >= $yiq-threshold, $dark, $light);
+    $out: if(sass($yiq >= $yiq-threshold): $dark; else: $light);
     // @debug yiq;
     @return $out;
 }
 @function k-contrast-legacy($color, $dark: $wcag-dark, $light: $wcag-light) {
     $luma: k-color-luminance($color);
-    $out: if($luma < .5, $light, $dark);
+    $out: if(sass($luma < .5): $light; else: $dark);
     // @debug $luma;
     @return $out;
 }
