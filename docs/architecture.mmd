@@ -1,53 +1,43 @@
 %% Kendo Themes Monorepo Architecture
-%% Generated for Copilot Crawl Track - Exercise 01
 
 graph TD
-    subgraph Foundation["Foundation Layer"]
-        core["@progress/kendo-theme-core<br/>━━━━━━━━━━━━━━━━━━━<br/>• Design tokens<br/>• Variables (null defaults)<br/>• Mixins & Functions<br/>• Component skeletons"]
+    core[core]
+
+    subgraph themes[Theme Implementations]
+        default[default]
+        bootstrap[bootstrap]
+        material[material]
+        classic[classic]
+        fluent[fluent]
     end
 
-    subgraph Themes["Theme Implementations"]
-        default["@progress/kendo-theme-default<br/>Default Theme"]
-        bootstrap["@progress/kendo-theme-bootstrap<br/>Bootstrap Theme"]
-        material["@progress/kendo-theme-material<br/>Material Theme"]
-        classic["@progress/kendo-theme-classic<br/>Classic Theme"]
-        fluent["@progress/kendo-theme-fluent<br/>Fluent Theme"]
-    end
+    utils[utils]
+    html[html specs]
 
-    subgraph Utilities["Standalone Utilities"]
-        utils["@progress/kendo-themes-utils<br/>━━━━━━━━━━━━━━━━━━━<br/>• Utility CSS classes<br/>• Spacing, sizing, flex<br/>• Independent of themes"]
-    end
-
-    subgraph Testing["Testing & Documentation"]
-        html["@progress/kendo-themes-html<br/>━━━━━━━━━━━━━━━━━━━<br/>• React component specs<br/>• Visual regression tests<br/>• Accessibility tests"]
-    end
-
-    subgraph Build["Build Infrastructure"]
-        nx["Nx<br/>Task orchestration"]
-        gulp["Gulp<br/>SCSS compilation"]
-        sassdoc["SassDoc<br/>Documentation"]
-    end
-
-    %% Core dependencies
     default --> core
     bootstrap --> core
     material --> core
     classic --> core
     fluent --> core
-    utils --> core
 
-    %% HTML testing dependencies
-    html --> default
-    html --> bootstrap
-    html --> material
-    html --> classic
-    html --> fluent
+    html -.-> themes
 
-    %% Build dependencies
-    nx --> gulp
-    nx --> sassdoc
-
-    %% Styling
+%%---------------------------------------------------------------
+%% FILE PATH MAPPING
+%%---------------------------------------------------------------
+%% core        → packages/core/scss/**
+%% default     → packages/default/scss/**
+%% bootstrap   → packages/bootstrap/scss/**
+%% material    → packages/material/scss/**
+%% classic     → packages/classic/scss/**
+%% fluent      → packages/fluent/scss/**
+%% utils       → packages/utils/scss/**
+%% html        → packages/html/src/**
+%%
+%% Build entry → gulpfile.js, nx.json
+%% Dev server  → scripts/start-dev-server.js
+%% Tests       → tests/*/, units/
+%%---------------------------------------------------------------
     classDef foundation fill:#e1f5fe,stroke:#01579b,stroke-width:2px
     classDef theme fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
     classDef utility fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px
