@@ -44,7 +44,7 @@ The following table lists the available variables for customizing the Fluent the
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>secondary: var(--kendo-color-secondary, #ebebeb)</li><li>tertiary: var(--kendo-color-tertiary, #c239b3)</li><li>info: var(--kendo-color-info, #3a96dd)</li><li>success: var(--kendo-color-success, #107c10)</li><li>warning: var(--kendo-color-warning, #f7630c)</li><li>error: var(--kendo-color-error, #c50f1f)</li><li>dark: var(--kendo-color-dark, #242424)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #242424)</li></ul></td>
 </tr>
@@ -185,7 +185,7 @@ The following table lists the available variables for customizing the Fluent the
     "error": k-color(error-subtle),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>secondary: var(--kendo-color-secondary-subtle, #f0f0f0)</li><li>tertiary: var(--kendo-color-tertiary-subtle, #fdf5fc)</li><li>info: var(--kendo-color-info-subtle, #f6fafe)</li><li>success: var(--kendo-color-success-subtle, #f1faf1)</li><li>warning: var(--kendo-color-warning-subtle, #fff9f5)</li><li>error: var(--kendo-color-error-subtle, #fdf3f4)</li><li>dark: var(--kendo-color-dark, #242424)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #242424)</li></ul></td>
 </tr>
@@ -1426,7 +1426,7 @@ The following table lists the available variables for customizing the Fluent the
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark)),
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>secondary: var(--kendo-color-secondary, #ebebeb)</li><li>tertiary: var(--kendo-color-tertiary, #c239b3)</li><li>info: var(--kendo-color-info, #3a96dd)</li><li>success: var(--kendo-color-success, #107c10)</li><li>warning: var(--kendo-color-warning, #f7630c)</li><li>error: var(--kendo-color-error, #c50f1f)</li><li>dark: var(--kendo-color-dark, #242424)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #242424)</li></ul></td>
 </tr>
@@ -1521,7 +1521,7 @@ The following table lists the available variables for customizing the Fluent the
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>secondary: var(--kendo-color-secondary, #ebebeb)</li><li>tertiary: var(--kendo-color-tertiary, #c239b3)</li><li>info: var(--kendo-color-info, #3a96dd)</li><li>success: var(--kendo-color-success, #107c10)</li><li>warning: var(--kendo-color-warning, #f7630c)</li><li>error: var(--kendo-color-error, #c50f1f)</li><li>dark: var(--kendo-color-dark, #242424)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #242424)</li></ul></td>
 </tr>
@@ -1794,7 +1794,7 @@ The following table lists the available variables for customizing the Fluent the
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark)),
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>secondary: var(--kendo-color-secondary, #ebebeb)</li><li>tertiary: var(--kendo-color-tertiary, #c239b3)</li><li>info: var(--kendo-color-info, #3a96dd)</li><li>success: var(--kendo-color-success, #107c10)</li><li>warning: var(--kendo-color-warning, #f7630c)</li><li>error: var(--kendo-color-error, #c50f1f)</li><li>dark: var(--kendo-color-dark, #242424)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #242424)</li></ul></td>
 </tr>
@@ -2146,7 +2146,7 @@ The following table lists the available variables for customizing the Fluent the
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>base: var(--kendo-color-base, #ffffff)</li><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>secondary: var(--kendo-color-secondary, #ebebeb)</li><li>tertiary: var(--kendo-color-tertiary, #c239b3)</li><li>info: var(--kendo-color-info, #3a96dd)</li><li>success: var(--kendo-color-success, #107c10)</li><li>warning: var(--kendo-color-warning, #f7630c)</li><li>error: var(--kendo-color-error, #c50f1f)</li><li>dark: var(--kendo-color-dark, #242424)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #242424)</li></ul></td>
 </tr>
@@ -3492,7 +3492,7 @@ The following table lists the available variables for customizing the Fluent the
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>base: var(--kendo-color-base, #ffffff)</li><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>secondary: var(--kendo-color-secondary, #ebebeb)</li><li>tertiary: var(--kendo-color-tertiary, #c239b3)</li><li>info: var(--kendo-color-info, #3a96dd)</li><li>success: var(--kendo-color-success, #107c10)</li><li>warning: var(--kendo-color-warning, #f7630c)</li><li>error: var(--kendo-color-error, #c50f1f)</li><li>dark: var(--kendo-color-dark, #242424)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #242424)</li></ul></td>
 </tr>
@@ -14604,7 +14604,7 @@ The following table lists the available variables for customizing the Fluent the
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>base: var(--kendo-color-base, #ffffff)</li><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>secondary: var(--kendo-color-secondary, #ebebeb)</li><li>tertiary: var(--kendo-color-tertiary, #c239b3)</li><li>info: var(--kendo-color-info, #3a96dd)</li><li>success: var(--kendo-color-success, #107c10)</li><li>warning: var(--kendo-color-warning, #f7630c)</li><li>error: var(--kendo-color-error, #c50f1f)</li><li>dark: var(--kendo-color-dark, #242424)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #242424)</li></ul></td>
 </tr>
@@ -18186,7 +18186,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-action-pane-width</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-action-pane-width, if( #{$kendo-image-editor-content-border-width} == 0, 270px, calc( 270px + #{$kendo-image-editor-content-border-width}) ) )</code></td>
+    <td><code>var( --kendo-image-editor-action-pane-width, if(sass(#{$kendo-image-editor-content-border-width} == 0): 270px; else: calc( 270px + #{$kendo-image-editor-content-border-width})) )</code></td>
     <td><code>var(--kendo-image-editor-action-pane-width, calc(270px + 0))</code></td>
 </tr>
 <tr>
@@ -21461,7 +21461,7 @@ The following table lists the available variables for customizing the Fluent the
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>secondary: var(--kendo-color-secondary, #ebebeb)</li><li>tertiary: var(--kendo-color-tertiary, #c239b3)</li><li>info: var(--kendo-color-info, #3a96dd)</li><li>success: var(--kendo-color-success, #107c10)</li><li>warning: var(--kendo-color-warning, #f7630c)</li><li>error: var(--kendo-color-error, #c50f1f)</li><li>dark: var(--kendo-color-dark, #242424)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #242424)</li></ul></td>
 </tr>
@@ -22980,7 +22980,7 @@ The following table lists the available variables for customizing the Fluent the
      "error": k-color(error),
      "dark": k-color(dark),
      "light": k-color(light),
-     "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
+     "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark)),
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>secondary: var(--kendo-color-secondary, #ebebeb)</li><li>tertiary: var(--kendo-color-tertiary, #c239b3)</li><li>info: var(--kendo-color-info, #3a96dd)</li><li>success: var(--kendo-color-success, #107c10)</li><li>warning: var(--kendo-color-warning, #f7630c)</li><li>error: var(--kendo-color-error, #c50f1f)</li><li>dark: var(--kendo-color-dark, #242424)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #242424)</li></ul></td>
 </tr>
@@ -23286,7 +23286,7 @@ The following table lists the available variables for customizing the Fluent the
     "error": k-color(error-subtle),
     "dark": k-color(dark-subtle),
     "light": k-color(light-subtle),
-    "inverse": if($kendo-is-dark-theme, k-color(light-subtle), k-color(dark-subtle))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light-subtle); else: k-color(dark-subtle))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary-subtle, #ebf3fc)</li><li>secondary: var(--kendo-color-secondary-subtle, #f0f0f0)</li><li>tertiary: var(--kendo-color-tertiary-subtle, #fdf5fc)</li><li>info: var(--kendo-color-info-subtle, #f6fafe)</li><li>success: var(--kendo-color-success-subtle, #f1faf1)</li><li>warning: var(--kendo-color-warning-subtle, #fff9f5)</li><li>error: var(--kendo-color-error-subtle, #fdf3f4)</li><li>dark: var(--kendo-color-dark-subtle, #000000)</li><li>light: var(--kendo-color-light-subtle, #ffffff)</li><li>inverse: var(--kendo-color-dark-subtle, #000000)</li></ul></td>
 </tr>

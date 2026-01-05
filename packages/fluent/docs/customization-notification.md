@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
     "error": k-color(error-subtle),
     "dark": k-color(dark-subtle),
     "light": k-color(light-subtle),
-    "inverse": if($kendo-is-dark-theme, k-color(light-subtle), k-color(dark-subtle))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light-subtle); else: k-color(dark-subtle))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary-subtle, #ebf3fc)</li><li>secondary: var(--kendo-color-secondary-subtle, #f0f0f0)</li><li>tertiary: var(--kendo-color-tertiary-subtle, #fdf5fc)</li><li>info: var(--kendo-color-info-subtle, #f6fafe)</li><li>success: var(--kendo-color-success-subtle, #f1faf1)</li><li>warning: var(--kendo-color-warning-subtle, #fff9f5)</li><li>error: var(--kendo-color-error-subtle, #fdf3f4)</li><li>dark: var(--kendo-color-dark-subtle, #000000)</li><li>light: var(--kendo-color-light-subtle, #ffffff)</li><li>inverse: var(--kendo-color-dark-subtle, #000000)</li></ul></td>
 </tr>

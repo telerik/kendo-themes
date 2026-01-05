@@ -1304,7 +1304,7 @@ The following table lists the available variables for customizing the Material t
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark)),
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #65558F)</li><li>secondary: var(--kendo-color-secondary, #E8DEF8)</li><li>tertiary: var(--kendo-color-tertiary, #7D5260)</li><li>info: var(--kendo-color-info, #2C6DDD)</li><li>success: var(--kendo-color-success, #1B7E3F)</li><li>warning: var(--kendo-color-warning, #F5CA47)</li><li>error: var(--kendo-color-error, #B3261E)</li><li>dark: var(--kendo-color-dark, #322F35)</li><li>light: var(--kendo-color-light, #F7F3FA)</li><li>inverse: var(--kendo-color-dark, #322F35)</li></ul></td>
 </tr>
@@ -1399,7 +1399,7 @@ The following table lists the available variables for customizing the Material t
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #65558F)</li><li>secondary: var(--kendo-color-secondary, #E8DEF8)</li><li>tertiary: var(--kendo-color-tertiary, #7D5260)</li><li>info: var(--kendo-color-info, #2C6DDD)</li><li>success: var(--kendo-color-success, #1B7E3F)</li><li>warning: var(--kendo-color-warning, #F5CA47)</li><li>error: var(--kendo-color-error, #B3261E)</li><li>dark: var(--kendo-color-dark, #322F35)</li><li>light: var(--kendo-color-light, #F7F3FA)</li><li>inverse: var(--kendo-color-dark, #322F35)</li></ul></td>
 </tr>
@@ -1662,7 +1662,7 @@ The following table lists the available variables for customizing the Material t
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark)),
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #65558F)</li><li>secondary: var(--kendo-color-secondary, #E8DEF8)</li><li>tertiary: var(--kendo-color-tertiary, #7D5260)</li><li>info: var(--kendo-color-info, #2C6DDD)</li><li>success: var(--kendo-color-success, #1B7E3F)</li><li>warning: var(--kendo-color-warning, #F5CA47)</li><li>error: var(--kendo-color-error, #B3261E)</li><li>dark: var(--kendo-color-dark, #322F35)</li><li>light: var(--kendo-color-light, #F7F3FA)</li><li>inverse: var(--kendo-color-dark, #322F35)</li></ul></td>
 </tr>
@@ -2013,7 +2013,7 @@ The following table lists the available variables for customizing the Material t
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark)),
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #65558F)</li><li>secondary: var(--kendo-color-secondary, #E8DEF8)</li><li>tertiary: var(--kendo-color-tertiary, #7D5260)</li><li>info: var(--kendo-color-info, #2C6DDD)</li><li>success: var(--kendo-color-success, #1B7E3F)</li><li>warning: var(--kendo-color-warning, #F5CA47)</li><li>error: var(--kendo-color-error, #B3261E)</li><li>dark: var(--kendo-color-dark, #322F35)</li><li>light: var(--kendo-color-light, #F7F3FA)</li><li>inverse: var(--kendo-color-dark, #322F35)</li></ul></td>
 </tr>
@@ -3179,7 +3179,7 @@ The following table lists the available variables for customizing the Material t
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>base: var(--kendo-color-base, #EAE5EC)</li><li>primary: var(--kendo-color-primary, #65558F)</li><li>secondary: var(--kendo-color-secondary, #E8DEF8)</li><li>tertiary: var(--kendo-color-tertiary, #7D5260)</li><li>info: var(--kendo-color-info, #2C6DDD)</li><li>success: var(--kendo-color-success, #1B7E3F)</li><li>warning: var(--kendo-color-warning, #F5CA47)</li><li>error: var(--kendo-color-error, #B3261E)</li><li>dark: var(--kendo-color-dark, #322F35)</li><li>light: var(--kendo-color-light, #F7F3FA)</li><li>inverse: var(--kendo-color-dark, #322F35)</li></ul></td>
 </tr>
@@ -5412,7 +5412,7 @@ The following table lists the available variables for customizing the Material t
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark)),
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #65558F)</li><li>secondary: var(--kendo-color-secondary, #E8DEF8)</li><li>tertiary: var(--kendo-color-tertiary, #7D5260)</li><li>info: var(--kendo-color-info, #2C6DDD)</li><li>success: var(--kendo-color-success, #1B7E3F)</li><li>warning: var(--kendo-color-warning, #F5CA47)</li><li>error: var(--kendo-color-error, #B3261E)</li><li>dark: var(--kendo-color-dark, #322F35)</li><li>light: var(--kendo-color-light, #F7F3FA)</li><li>inverse: var(--kendo-color-dark, #322F35)</li></ul></td>
 </tr>
@@ -13965,7 +13965,7 @@ The following table lists the available variables for customizing the Material t
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #65558F)</li><li>secondary: var(--kendo-color-secondary, #E8DEF8)</li><li>tertiary: var(--kendo-color-tertiary, #7D5260)</li><li>info: var(--kendo-color-info, #2C6DDD)</li><li>success: var(--kendo-color-success, #1B7E3F)</li><li>warning: var(--kendo-color-warning, #F5CA47)</li><li>error: var(--kendo-color-error, #B3261E)</li><li>dark: var(--kendo-color-dark, #322F35)</li><li>light: var(--kendo-color-light, #F7F3FA)</li><li>inverse: var(--kendo-color-dark, #322F35)</li></ul></td>
 </tr>
@@ -17174,7 +17174,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-image-editor-action-pane-width</td>
     <td>Calculation</td>
-    <td><code>if( $kendo-image-editor-content-border-width == null, 280px, calc(280px + #{$kendo-image-editor-content-border-width}) )</code></td>
+    <td><code>if(sass($kendo-image-editor-content-border-width == null): 280px; else: calc(280px + #{$kendo-image-editor-content-border-width}))</code></td>
     <td><code>calc(280px + 1px)</code></td>
 </tr>
 <tr>
@@ -20046,7 +20046,7 @@ The following table lists the available variables for customizing the Material t
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #65558F)</li><li>secondary: var(--kendo-color-secondary, #E8DEF8)</li><li>tertiary: var(--kendo-color-tertiary, #7D5260)</li><li>info: var(--kendo-color-info, #2C6DDD)</li><li>success: var(--kendo-color-success, #1B7E3F)</li><li>warning: var(--kendo-color-warning, #F5CA47)</li><li>error: var(--kendo-color-error, #B3261E)</li><li>dark: var(--kendo-color-dark, #322F35)</li><li>light: var(--kendo-color-light, #F7F3FA)</li><li>inverse: var(--kendo-color-dark, #322F35)</li></ul></td>
 </tr>
@@ -21517,7 +21517,7 @@ The following table lists the available variables for customizing the Material t
      "error": k-color(error),
      "dark": k-color(dark),
      "light": k-color(light),
-     "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
+     "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark)),
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #65558F)</li><li>secondary: var(--kendo-color-secondary, #E8DEF8)</li><li>tertiary: var(--kendo-color-tertiary, #7D5260)</li><li>info: var(--kendo-color-info, #2C6DDD)</li><li>success: var(--kendo-color-success, #1B7E3F)</li><li>warning: var(--kendo-color-warning, #F5CA47)</li><li>error: var(--kendo-color-error, #B3261E)</li><li>dark: var(--kendo-color-dark, #322F35)</li><li>light: var(--kendo-color-light, #F7F3FA)</li><li>inverse: var(--kendo-color-dark, #322F35)</li></ul></td>
 </tr>
@@ -21833,7 +21833,7 @@ The following table lists the available variables for customizing the Material t
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #65558F)</li><li>secondary: var(--kendo-color-secondary, #E8DEF8)</li><li>tertiary: var(--kendo-color-tertiary, #7D5260)</li><li>info: var(--kendo-color-info, #2C6DDD)</li><li>success: var(--kendo-color-success, #1B7E3F)</li><li>warning: var(--kendo-color-warning, #F5CA47)</li><li>error: var(--kendo-color-error, #B3261E)</li><li>dark: var(--kendo-color-dark, #322F35)</li><li>light: var(--kendo-color-light, #F7F3FA)</li><li>inverse: var(--kendo-color-dark, #322F35)</li></ul></td>
 </tr>
@@ -22470,7 +22470,7 @@ The following table lists the available variables for customizing the Material t
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark)),
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #65558F)</li><li>secondary: var(--kendo-color-secondary, #E8DEF8)</li><li>tertiary: var(--kendo-color-tertiary, #7D5260)</li><li>info: var(--kendo-color-info, #2C6DDD)</li><li>success: var(--kendo-color-success, #1B7E3F)</li><li>warning: var(--kendo-color-warning, #F5CA47)</li><li>error: var(--kendo-color-error, #B3261E)</li><li>dark: var(--kendo-color-dark, #322F35)</li><li>light: var(--kendo-color-light, #F7F3FA)</li><li>inverse: var(--kendo-color-dark, #322F35)</li></ul></td>
 </tr>
@@ -35318,7 +35318,7 @@ The following table lists the available variables for customizing the Material t
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #65558F)</li><li>secondary: var(--kendo-color-secondary, #E8DEF8)</li><li>tertiary: var(--kendo-color-tertiary, #7D5260)</li><li>info: var(--kendo-color-info, #2C6DDD)</li><li>success: var(--kendo-color-success, #1B7E3F)</li><li>warning: var(--kendo-color-warning, #F5CA47)</li><li>error: var(--kendo-color-error, #B3261E)</li><li>dark: var(--kendo-color-dark, #322F35)</li><li>light: var(--kendo-color-light, #F7F3FA)</li><li>inverse: var(--kendo-color-dark, #322F35)</li></ul></td>
 </tr>

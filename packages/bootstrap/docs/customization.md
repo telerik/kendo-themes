@@ -1264,7 +1264,7 @@ The following table lists the available variables for customizing the Bootstrap 
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark)),
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li><li>tertiary: var(--kendo-color-tertiary, #6f42c1)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>success: var(--kendo-color-success, #198754)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>dark: var(--kendo-color-dark, #212529)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>inverse: var(--kendo-color-dark, #212529)</li></ul></td>
 </tr>
@@ -1359,7 +1359,7 @@ The following table lists the available variables for customizing the Bootstrap 
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li><li>tertiary: var(--kendo-color-tertiary, #6f42c1)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>success: var(--kendo-color-success, #198754)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>dark: var(--kendo-color-dark, #212529)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>inverse: var(--kendo-color-dark, #212529)</li></ul></td>
 </tr>
@@ -1622,7 +1622,7 @@ The following table lists the available variables for customizing the Bootstrap 
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark)),
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li><li>tertiary: var(--kendo-color-tertiary, #6f42c1)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>success: var(--kendo-color-success, #198754)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>dark: var(--kendo-color-dark, #212529)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>inverse: var(--kendo-color-dark, #212529)</li></ul></td>
 </tr>
@@ -1983,7 +1983,7 @@ The following table lists the available variables for customizing the Bootstrap 
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark)),
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li><li>tertiary: var(--kendo-color-tertiary, #6f42c1)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>success: var(--kendo-color-success, #198754)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>dark: var(--kendo-color-dark, #212529)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>inverse: var(--kendo-color-dark, #212529)</li></ul></td>
 </tr>
@@ -3149,7 +3149,7 @@ The following table lists the available variables for customizing the Bootstrap 
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>base: var(--kendo-color-base, #dee2e6)</li><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li><li>tertiary: var(--kendo-color-tertiary, #6f42c1)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>success: var(--kendo-color-success, #198754)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>dark: var(--kendo-color-dark, #212529)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>inverse: var(--kendo-color-dark, #212529)</li></ul></td>
 </tr>
@@ -5352,7 +5352,7 @@ The following table lists the available variables for customizing the Bootstrap 
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark)),
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li><li>tertiary: var(--kendo-color-tertiary, #6f42c1)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>success: var(--kendo-color-success, #198754)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>dark: var(--kendo-color-dark, #212529)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>inverse: var(--kendo-color-dark, #212529)</li></ul></td>
 </tr>
@@ -13902,7 +13902,7 @@ The following table lists the available variables for customizing the Bootstrap 
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li><li>tertiary: var(--kendo-color-tertiary, #6f42c1)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>success: var(--kendo-color-success, #198754)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>dark: var(--kendo-color-dark, #212529)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>inverse: var(--kendo-color-dark, #212529)</li></ul></td>
 </tr>
@@ -17171,7 +17171,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-image-editor-action-pane-width</td>
     <td>Calculation</td>
-    <td><code>if( $kendo-image-editor-content-border-width == null, 250px, calc( 250px + #{$kendo-image-editor-content-border-width} ) )</code></td>
+    <td><code>if(sass($kendo-image-editor-content-border-width == null): 250px; else: calc( 250px + #{$kendo-image-editor-content-border-width} ))</code></td>
     <td><code>calc(250px + 1px)</code></td>
 </tr>
 <tr>
@@ -20023,7 +20023,7 @@ The following table lists the available variables for customizing the Bootstrap 
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li><li>tertiary: var(--kendo-color-tertiary, #6f42c1)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>success: var(--kendo-color-success, #198754)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>dark: var(--kendo-color-dark, #212529)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>inverse: var(--kendo-color-dark, #212529)</li></ul></td>
 </tr>
@@ -21494,7 +21494,7 @@ The following table lists the available variables for customizing the Bootstrap 
      "error": k-color(error),
      "dark": k-color(dark),
      "light": k-color(light),
-     "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
+     "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark)),
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li><li>tertiary: var(--kendo-color-tertiary, #6f42c1)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>success: var(--kendo-color-success, #198754)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>dark: var(--kendo-color-dark, #212529)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>inverse: var(--kendo-color-dark, #212529)</li></ul></td>
 </tr>
@@ -21810,7 +21810,7 @@ The following table lists the available variables for customizing the Bootstrap 
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li><li>tertiary: var(--kendo-color-tertiary, #6f42c1)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>success: var(--kendo-color-success, #198754)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>dark: var(--kendo-color-dark, #212529)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>inverse: var(--kendo-color-dark, #212529)</li></ul></td>
 </tr>
@@ -22447,7 +22447,7 @@ The following table lists the available variables for customizing the Bootstrap 
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark)),
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li><li>tertiary: var(--kendo-color-tertiary, #6f42c1)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>success: var(--kendo-color-success, #198754)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>dark: var(--kendo-color-dark, #212529)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>inverse: var(--kendo-color-dark, #212529)</li></ul></td>
 </tr>
@@ -35252,7 +35252,7 @@ The following table lists the available variables for customizing the Bootstrap 
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li><li>tertiary: var(--kendo-color-tertiary, #6f42c1)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>success: var(--kendo-color-success, #198754)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>dark: var(--kendo-color-dark, #212529)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>inverse: var(--kendo-color-dark, #212529)</li></ul></td>
 </tr>
