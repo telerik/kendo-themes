@@ -1844,9 +1844,265 @@ The following table lists the available variables for customizing the Theme Util
 </tbody>
 </table>
 
+### UtilsConfig
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-prefix</td>
+    <td>String</td>
+    <td><code>k-</code></td>
+    <td><code>k-</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The prefix used for all utility class names.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-important</td>
+    <td>Boolean | String</td>
+    <td><code>true</code></td>
+    <td><code>true</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Whether to generate `!important` variants of utility classes.<br />When `true`, generates both normal and `!important` variants.<br />When `"only"`, generates only `!important` variants.<br />When `false`, generates only normal variants.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
 
 
 
+
+
+## Mixins
+
+
+
+### `generate-utils`
+
+Generates utility classes for a given CSS property and value map.
+Creates classes like `.k-{name}-{key}` and optionally `.\!k-{name}-{key}` for `!important` variants.
+
+
+#### Syntax
+
+```scss
+@include generate-utils($name, $props, $values, $function, $important, $css-var);
+```
+#### Parameters
+
+
+`<String> $name`
+: The base name for the utility class (e.g., "p" for padding).
+
+`<String | List> $props`
+: The CSS property or list of properties to set.
+
+`<Map | List> $values`
+: A map of key-value pairs or a list of values.
+
+`<String> $function`
+: Optional function name to transform values.
+
+`<Boolean | String> $important`
+: Whether to generate `!important` variants.
+
+`<String> $css-var`
+: Optional CSS custom property name for theming support.
+
+#### Examples
+
+```scss
+Generate padding utilities
+@include generate-utils(p, padding, (0: 0, 1: 0.25rem, 2: 0.5rem));
+// Outputs: .k-p-0 { padding: 0; } .k-p-1 { padding: 0.25rem; } ...
+```
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/utils/scss/_mixins.scss#L33-L70
+@mixin generate-utils($name, $props, $values, $function, $important, $css-var) {
+    @if $values {
+        $_props: if( meta.type-of($props) == list, $props, ( $props ) );
+        $_fn: if( meta.function-exists( $function ), meta.get-function( $function ), null );
+
+        @each $key, $val in $values {
+            $_key: k-escape-class-name( $key );
+            $_val: if( meta.type-of($values) == list, $key, $val );
+            $_name: k-escape-class-name( $name );
+            $_selector: if( $_key == DEFAULT, #{$kendo-prefix}#{$_name}, #{$kendo-prefix}#{$_name}-#{$_key});
+            // @debug $_selector;
+            $_custom-prop: if( $_key == DEFAULT, var( --kendo-#{$css-var}, #{$_val} ), var( --kendo-#{$css-var}-#{$_key}, #{$_val} ) );
+
+            @if $important != only {
+                .#{$_selector} {
+                    @each $prop in $_props {
+                        @if $css-var {
+                            #{$prop}: if( $_fn, meta.call($_fn, $_custom-prop), $_custom-prop );
+                        } @else {
+                            #{$prop}: if( $_fn, meta.call($_fn, $_val), $_val );
+                        }
+                    }
+                }
+            }
+            @if $important {
+                .\!#{$_selector} {
+                    @each $prop in $_props {
+                        @if $css-var {
+                            #{$prop}: if( $_fn, meta.call($_fn, $_custom-prop), $_custom-prop ) !important; // stylelint-disable-line declaration-no-important
+                        } @else {
+                            #{$prop}:  if( $_fn, meta.call($_fn, $_val), $_val ) !important; // stylelint-disable-line declaration-no-important
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+### `kendo-breakpoint-up`
+
+Applies styles for viewports at or above the given breakpoint.
+Uses `min-width` media query.
+
+
+#### Syntax
+
+```scss
+@include kendo-breakpoint-up($breakpoint, $media);
+```
+#### Parameters
+
+
+`<String> $breakpoint`
+: Breakpoint name from `$kendo-breakpoints` (xs, sm, md, lg, xl, xxl).
+
+`<String> $media`
+: Media type (e.g., "screen", "print").
+
+#### Examples
+
+```scss
+Apply styles for medium screens and up
+@include kendo-breakpoint-up(md) {
+  .my-class { display: flex; }
+}
+```
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/utils/scss/_mixins.scss#L82-L86
+@mixin kendo-breakpoint-up($breakpoint, $media) {
+    @media only #{$media} and (min-width: k-map-get( $kendo-breakpoints, #{$breakpoint} )) {
+        @content;
+    }
+}
+```
+
+### `kendo-breakpoint-down`
+
+Applies styles for viewports below the given breakpoint.
+Uses `max-width` media query (breakpoint - 0.02px).
+
+
+#### Syntax
+
+```scss
+@include kendo-breakpoint-down($breakpoint, $media);
+```
+#### Parameters
+
+
+`<String> $breakpoint`
+: Breakpoint name from `$kendo-breakpoints` (sm, md, lg, xl, xxl).
+
+`<String> $media`
+: Media type (e.g., "screen", "print").
+
+#### Examples
+
+```scss
+Apply styles for smaller than medium screens
+@include kendo-breakpoint-down(md) {
+  .my-class { display: block; }
+}
+```
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/utils/scss/_mixins.scss#L97-L101
+@mixin kendo-breakpoint-down($breakpoint, $media) {
+    @media only #{$media} and (max-width: ( k-map-get( $kendo-breakpoints, #{$breakpoint} ) - .02 )) {
+        @content;
+    }
+}
+```
+
+### `kendo-breakpoint-only`
+
+Applies styles for viewports within a single breakpoint range.
+Uses both `min-width` and `max-width` media queries.
+
+
+#### Syntax
+
+```scss
+@include kendo-breakpoint-only($breakpoint, $media);
+```
+#### Parameters
+
+
+`<String> $breakpoint`
+: Breakpoint name from `$kendo-breakpoints` (xs, sm, md, lg, xl).
+
+`<String> $media`
+: Media type (e.g., "screen", "print").
+
+#### Examples
+
+```scss
+Apply styles only for medium screens
+@include kendo-breakpoint-only(md) {
+  .my-class { display: grid; }
+}
+```
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/utils/scss/_mixins.scss#L113-L121
+@mixin kendo-breakpoint-only($breakpoint, $media) {
+    $breakpoint-index: list.index( map.keys($kendo-breakpoints), $breakpoint );
+    $next-breakpoint-index: $breakpoint-index + 1;
+
+    $next-breakpoint: list.nth( map.keys($kendo-breakpoints), $next-breakpoint-index );
+    @media only #{$media} and (min-width: k-map-get( $kendo-breakpoints, #{$breakpoint} )) and (max-width: ( k-map-get( $kendo-breakpoints, #{$next-breakpoint} ) - .02)) {
+        @content;
+    }
+}
+```
 
 
 
