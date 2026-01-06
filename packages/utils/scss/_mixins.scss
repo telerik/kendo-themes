@@ -105,13 +105,26 @@ $kendo-important: true !default;
 /// @param {String} $breakpoint - Breakpoint name from `$kendo-breakpoints` (xs, sm, md, lg, xl).
 /// @param {String} $media [all] - Media type (e.g., "screen", "print").
 /// @group utils-mixins
+/// @throws {Error} If `$breakpoint` is not a valid key in `$kendo-breakpoints`.
+/// @throws {Error} If `$breakpoint` is the last breakpoint (no upper bound available).
 /// @example scss - Apply styles only for medium screens
 ///   @include kendo-breakpoint-only(md) {
 ///     .my-class { display: grid; }
 ///   }
-/// @todo Does not support the last breakpoint (xxl) - would need special handling.
 @mixin kendo-breakpoint-only( $breakpoint, $media: all ) {
+    // Validation: check breakpoint exists
+    @if not map.has-key($kendo-breakpoints, $breakpoint) {
+        @error "kendo-breakpoint-only: Invalid breakpoint '#{$breakpoint}'. Expected one of: #{map.keys($kendo-breakpoints)}";
+    }
+
     $breakpoint-index: list.index( map.keys($kendo-breakpoints), $breakpoint );
+    $breakpoint-count: list.length( map.keys($kendo-breakpoints) );
+
+    // Validation: cannot use last breakpoint (no upper bound)
+    @if $breakpoint-index == $breakpoint-count {
+        @error "kendo-breakpoint-only: Cannot use last breakpoint '#{$breakpoint}'. Use kendo-breakpoint-up('#{$breakpoint}') instead.";
+    }
+
     $next-breakpoint-index: $breakpoint-index + 1;
 
     $next-breakpoint: list.nth( map.keys($kendo-breakpoints), $next-breakpoint-index );
