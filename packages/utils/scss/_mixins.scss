@@ -36,7 +36,7 @@ $kendo-important: true !default;
                 .\!#{$_selector} {
                     @each $prop in $_props {
                         @if $css-var {
-                            #{$prop}: if( $_fn, meta.call($_fn, $-custom-prop), $-custom-prop ) !important; // stylelint-disable-line declaration-no-important
+                            #{$prop}: if( $_fn, meta.call($_fn, $_custom-prop), $_custom-prop ) !important; // stylelint-disable-line declaration-no-important
                         } @else {
                             #{$prop}:  if( $_fn, meta.call($_fn, $_val), $_val ) !important; // stylelint-disable-line declaration-no-important
                         }
