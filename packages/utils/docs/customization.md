@@ -2092,9 +2092,21 @@ Apply styles only for medium screens
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/utils/scss/_mixins.scss#L113-L121
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/utils/scss/_mixins.scss#L114-L134
 @mixin kendo-breakpoint-only($breakpoint, $media) {
+    // Validation: check breakpoint exists
+    @if not map.has-key($kendo-breakpoints, $breakpoint) {
+        @error "kendo-breakpoint-only: Invalid breakpoint '#{$breakpoint}'. Expected one of: #{map.keys($kendo-breakpoints)}";
+    }
+
     $breakpoint-index: list.index( map.keys($kendo-breakpoints), $breakpoint );
+    $breakpoint-count: list.length( map.keys($kendo-breakpoints) );
+
+    // Validation: cannot use last breakpoint (no upper bound)
+    @if $breakpoint-index == $breakpoint-count {
+        @error "kendo-breakpoint-only: Cannot use last breakpoint '#{$breakpoint}'. Use kendo-breakpoint-up('#{$breakpoint}') instead.";
+    }
+
     $next-breakpoint-index: $breakpoint-index + 1;
 
     $next-breakpoint: list.nth( map.keys($kendo-breakpoints), $next-breakpoint-index );
