@@ -5,3 +5,4 @@ export * from './templates/otp-normal';
 export * from './templates/otp-no-space';
 export * from './templates/otp-groups';
 export * from './templates/otp-groups-no-space';
+export * from './demos/otp';

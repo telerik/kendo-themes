@@ -1,4 +1,4 @@
-import { FileManagerToolbar } from '.';
+import { FileManagerToolbar } from './filemanager-toolbar.spec';
 import { classNames, stateClassNames, States } from '../misc';
 import { Button } from '../button';
 import { ButtonGroup } from '../button-group';

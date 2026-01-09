@@ -1,7 +1,7 @@
-import { Editor } from '..';
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
-import { ToolbarSeparator } from '../../toolbar';
+import { Editor } from '../editor.spec';
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { ToolbarSeparator } from '../../toolbar/toolbar-separator';
 
 export const EditorResponsiveToolbar = (props) => (
     <Editor toolbarResizable

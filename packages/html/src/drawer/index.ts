@@ -10,5 +10,4 @@ export * from './templates/drawer-normal';
 export * from './templates/drawer-mini';
 export * from './templates/drawer-with-hierarchy';
 export * from './templates/drawer-with-overlay';
-
-
+export * from './demos/drawer';

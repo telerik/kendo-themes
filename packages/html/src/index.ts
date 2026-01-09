@@ -137,6 +137,7 @@ export * from './file-box/index';
 export * from './map/index';
 export * from './orgchart/index';
 export * from './signature/index';
+export * from './chart/index';
 
 // Editors
 export * from './editor/index';
@@ -157,3 +158,6 @@ export * from './ripple/index';
 
 // PDF
 export * from './pdf/index';
+
+// Configuration Context
+export * from './configuration/configuration-context';

@@ -15,3 +15,4 @@ export * from './templates/prompt-more-actions';
 export * from './templates/prompt-popup';
 export * from './templates/prompt-inline';
 export * from './templates/prompt-inline-input-only';
+export * from './demos/prompt';

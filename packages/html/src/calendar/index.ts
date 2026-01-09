@@ -23,3 +23,4 @@ export * from './templates/calendar-infinite-year';
 export * from './templates/calendar-infinite-decade';
 export * from './templates/calendar-infinite-century';
 export * from './templates/calendar-infinite-week-number';
+export * from './demos/calendar';

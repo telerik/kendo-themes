@@ -10,3 +10,4 @@ export * from './templates/menu-popup';
 export * from './templates/menu-scrollable';
 export * from './templates/menu-vertical';
 export * from './templates/menu-vertical-scrollable';
+export * from './demos/menu';

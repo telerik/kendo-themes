@@ -9,3 +9,4 @@ export * from './templates/action-sheet-normal';
 export * from './templates/action-sheet-top';
 export * from './templates/action-sheet-left';
 export * from './templates/action-sheet-right';
+export * from './demos/action-sheet';

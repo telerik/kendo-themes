@@ -29,3 +29,4 @@ export * from './templates/scheduler-horizontal-grouping';
 export * from './templates/scheduler-vertical-grouping';
 export * from './templates/scheduler-flex-horizontal-grouping';
 export * from './templates/scheduler-flex-vertical-grouping';
+export * from './demos/scheduler';

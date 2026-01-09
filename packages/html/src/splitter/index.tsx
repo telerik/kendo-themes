@@ -3,3 +3,4 @@ export * from './splitter-pane';
 export * from './splitter-splitbar';
 export * from './templates/splitter-normal';
 export * from './templates/splitter-vertical';
+export * from './demos/splitter';

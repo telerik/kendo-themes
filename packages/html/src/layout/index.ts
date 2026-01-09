@@ -4,3 +4,4 @@ export * from './stack-layout.spec';
 export * from './templates/grid-layout-normal';
 export * from './templates/stack-layout-normal';
 export * from './templates/stack-layout-vertical';
+export * from './demos/layout';
