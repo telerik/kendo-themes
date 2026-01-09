@@ -4,6 +4,19 @@ const fs = require('fs');
 const path = require('path');
 const dartSass = require('sass');
 
+// Structured logging utility
+function log(op, phase, status, extra = {}) {
+    const entry = {
+        ts: new Date().toISOString(),
+        op,
+        phase,
+        status,
+        ...extra
+    };
+    // eslint-disable-next-line no-console
+    console.log(JSON.stringify(entry));
+}
+
 const themeDir = process.cwd();
 const srcFile = path.resolve( themeDir, 'scss', 'all.scss' );
 const variablesJson = path.resolve( themeDir, `dist/meta/variables.json` );
@@ -85,6 +98,9 @@ function prettifySassNumber(sassNumber) {
 // #endregion
 
 if (fs.existsSync( srcFile )) {
+    const startTime = Date.now();
+    const themeName = path.basename(themeDir);
+    log('resolve-variables', 'start', 'ok', { theme: themeName, src: srcFile });
 
     fs.writeFileSync( path.resolve( output.path, output.filename), '@forward "../scss/all.scss";');
 
@@ -96,29 +112,41 @@ if (fs.existsSync( srcFile )) {
 
     fs.copyFileSync( path.resolve( __dirname, '../lib/variables.scss' ), variablesScss );
 
-    dartSass.compile(variablesScss, {
-        functions: {
-            'k-resolve-var($key, $type, $value)': ([ rawKey, rawType, rawValue ]) => {
-                const _key = rawKey.toString();
-                const _type = rawType.toString();
-                const _val = rawValue.toString();
-                const prettyValue = prettifySassValue(rawValue);
+    try {
+        log('resolve-variables', 'compile', 'ok', { theme: themeName });
+        dartSass.compile(variablesScss, {
+            functions: {
+                'k-resolve-var($key, $type, $value)': ([ rawKey, rawType, rawValue ]) => {
+                    const _key = rawKey.toString();
+                    const _type = rawType.toString();
+                    const _val = rawValue.toString();
+                    const prettyValue = prettifySassValue(rawValue);
 
-                content[_key] = {
-                    type: _capitalize( _type ),
-                    value: _val
-                };
-                _type === "map" && (content[_key].prettyValue = prettyValue);
+                    content[_key] = {
+                        type: _capitalize( _type ),
+                        value: _val
+                    };
+                    _type === "map" && (content[_key].prettyValue = prettyValue);
 
-                return new dartSass.SassString('');
-            }
-        },
-        logger: dartSass.Logger.silent,
-        loadPaths: [
-            nodeModules
-        ]
-    });
+                    return new dartSass.SassString('');
+                }
+            },
+            logger: dartSass.Logger.silent,
+            loadPaths: [
+                nodeModules
+            ]
+        });
 
-    fs.writeFileSync( variablesJson, JSON.stringify( content, null, 4 ) );
+        fs.writeFileSync( variablesJson, JSON.stringify( content, null, 4 ) );
 
+        const elapsedMs = Date.now() - startTime;
+        const varCount = Object.keys(content).length;
+        log('resolve-variables', 'end', 'ok', { theme: themeName, elapsedMs, variables: varCount });
+    } catch (err) {
+        const elapsedMs = Date.now() - startTime;
+        log('resolve-variables', 'end', 'error', { theme: themeName, elapsedMs, err: err.message });
+        throw err;
+    }
+} else {
+    log('resolve-variables', 'skip', 'ok', { reason: 'srcFile not found', src: srcFile });
 }
