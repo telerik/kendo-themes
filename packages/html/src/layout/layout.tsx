@@ -2,7 +2,12 @@ import { classNames, kendoThemeMaps } from '../misc';
 
 const states = [];
 
-const options = {};
+const options = {
+    orientation: [ 'horizontal', 'vertical' ],
+    alignItems: [ 'start', 'center', 'end', 'stretch' ],
+    justifyContent: [ 'start', 'center', 'end', 'stretch' ],
+    justifyItems: [ 'start', 'center', 'end', 'stretch' ],
+};
 
 export type KendoLayoutProps = {
     gap?: string;
@@ -57,5 +62,6 @@ export const Layout = (
 
 Layout.states = states;
 Layout.options = options;
+Layout.defaultOptions = defaultOptions;
 
 export default Layout;

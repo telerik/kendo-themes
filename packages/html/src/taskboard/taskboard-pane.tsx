@@ -1,4 +1,4 @@
-import { ActionButtons } from '..';
+import { ActionButtons } from '../action-buttons';
 import { Button } from '../button';
 import { classNames } from '../misc';
 

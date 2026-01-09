@@ -10,3 +10,4 @@ export * from './templates/filemanager-normal';
 export * from './templates/filemanager-preview';
 export * from './templates/filemanager-grid';
 export * from './templates/filemanager-grid-preview';
+export * from './demos/filemanager';

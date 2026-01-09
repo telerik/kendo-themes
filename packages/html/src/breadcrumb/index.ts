@@ -8,3 +8,4 @@ export * from './breadcrumb-item-text';
 export * from './templates/breadcrumb-collapsing-auto';
 export * from './templates/breadcrumb-collapsing-none';
 export * from './templates/breadcrumb-collapsing-wrap';
+export * from './demos/breadcrumb';

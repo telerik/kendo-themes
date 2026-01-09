@@ -13,3 +13,4 @@ export * from './gantt-task-content.spec';
 export * from './gantt-line.spec';
 export * from './templates/gantt-normal';
 export * from './templates/gantt-row-reordering';
+export * from './demos/gantt';

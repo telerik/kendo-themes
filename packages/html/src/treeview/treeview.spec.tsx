@@ -1,4 +1,5 @@
-import { TreeviewGroup, TreeviewItem } from '../treeview';
+import { TreeviewGroup } from './treeview-group';
+import { TreeviewItem } from './treeview-item.spec';
 import { classNames, optionClassNames, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';

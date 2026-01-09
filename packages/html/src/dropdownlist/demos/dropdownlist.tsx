@@ -1,0 +1,58 @@
+﻿import { DropdownList, KendoDropdownListProps } from '../dropdownlist.spec';
+import { List, ListItem } from '../../list';
+
+const states = DropdownList.states;
+const defaults = DropdownList.defaultOptions;
+const options = DropdownList.options;
+
+const modifiers = [
+  {
+    name: 'opened',
+    title: 'Opened',
+  },
+];
+const variants = [];
+
+export const DropdownlistDemo = (props: KendoDropdownListProps & {
+  modifiers?: { [key: (typeof modifiers)[number]['name']]: boolean };
+}
+) => {
+  const { modifiers: mods, ...other } = props;
+
+  let additionalProps: KendoDropdownListProps = {};
+
+  const popup = (
+    <List style={{ width: 300 }} size={other.size}>
+      <ListItem>List item</ListItem>
+      <ListItem>List item</ListItem>
+      <ListItem>List item</ListItem>
+    </List>
+  );
+
+  Object.keys(mods || {}).forEach((modifier) => {
+    switch (modifier) {
+      case 'opened':
+        additionalProps.opened = mods?.[modifier] ? true : false;
+        additionalProps.popup = mods?.[modifier] ? popup : undefined;
+        break;
+      default:
+        break;
+    }
+  });
+
+  return (
+    <div>
+      <DropdownList placeholder="Value" style={{ width: 300 }} {...other} {...additionalProps} />
+    </div>
+  );
+}
+
+
+DropdownlistDemo.options = options;
+DropdownlistDemo.states = states;
+DropdownlistDemo.variants = variants;
+DropdownlistDemo.defaultOptions = defaults;
+DropdownlistDemo.modifiers = modifiers;
+
+export default DropdownlistDemo;
+

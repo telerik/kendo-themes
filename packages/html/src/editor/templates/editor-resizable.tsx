@@ -1,6 +1,6 @@
-import { Editor } from '..';
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
+import { Editor } from '../editor.spec';
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
 
 export const EditorResizable = (props) => (
     <Editor
