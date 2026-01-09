@@ -20,3 +20,20 @@ debug.log
 # NX
 .nx/cache
 .nx/workspace-data
+
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Credentials
+.npmrc
+.nuget/
+nuget.config
+
+# IDE and editor secrets
+*.local
