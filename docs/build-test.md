@@ -72,6 +72,17 @@ npm run docs        # Generate metadata (required for unit tests)
 npm run test:units  # Run unit tests
 ```
 
+## Local CI Test Script
+
+Run the full CI test suite locally before pushing:
+
+```bash
+./scripts/run-tests-local.sh          # Full suite (lint, unit, integration)
+./scripts/run-tests-local.sh --quick  # Skip integration tests for faster iteration
+```
+
+This script mirrors CI behavior: installs deps, generates docs, runs lints, then tests.
+
 ## Cleanup
 
 | Command | Description |
