@@ -14,11 +14,11 @@ export const PivotGridWithConfiguratorOpened = ({ formOrientation = "vertical", 
                     <div className="k-form-field">
                         <div className="k-fields-list-wrapper">
                             <Treeview>
-                                <TreeviewItem top checked showCheckbox text="Category" />
+                                <TreeviewItem checked showCheckbox text="Category" />
                                 <TreeviewItem checked showCheckbox text="Product" />
                                 <TreeviewItem checked showCheckbox text="Region" />
                                 <TreeviewItem checked showCheckbox text="Country" />
-                                <TreeviewItem bottom hasChildren text="Measures" />
+                                <TreeviewItem hasChildren text="Measures" />
                             </Treeview>
                         </div>
                     </div>

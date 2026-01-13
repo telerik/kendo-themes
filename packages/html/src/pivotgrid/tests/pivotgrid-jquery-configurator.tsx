@@ -22,9 +22,9 @@ export default () =>(
                                 <strong>Fields</strong>
                                 <div className="k-fields-list-wrapper">
                                     <Treeview>
-                                        <TreeviewItem top hasChildren showIcon icon="arrows-axes" text="Axis" />
+                                        <TreeviewItem hasChildren showIcon icon="arrows-axes" text="Axis" />
                                         <TreeviewItem hasChildren showIcon icon="sum" text="Sum" />
-                                        <TreeviewItem bottom hasChildren showIcon icon="caret-alt-expand" text="KPI" />
+                                        <TreeviewItem hasChildren showIcon icon="caret-alt-expand" text="KPI" />
                                     </Treeview>
                                 </div>
                             </div>
@@ -150,9 +150,9 @@ export default () =>(
                                 <strong>Fields</strong>
                                 <div className="k-fields-list-wrapper">
                                     <Treeview dir="rtl">
-                                        <TreeviewItem top hasChildren showIcon icon="arrows-axes" text="Axis" />
+                                        <TreeviewItem hasChildren showIcon icon="arrows-axes" text="Axis" />
                                         <TreeviewItem hasChildren showIcon icon="sum" text="Sum" />
-                                        <TreeviewItem bottom hasChildren showIcon icon="caret-alt-expand" text="KPI" />
+                                        <TreeviewItem hasChildren showIcon icon="caret-alt-expand" text="KPI" />
                                     </Treeview>
                                 </div>
                             </div>

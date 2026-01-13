@@ -427,7 +427,7 @@ export default () => (
 
                             <div>
                                 <TreeviewNormal>
-                                    <TreeviewItem top text="Normal" />
+                                    <TreeviewItem text="Normal" />
                                     <TreeviewItem text="Hover" hover />
                                     <TreeviewItem text="Focus" focus/>
                                     <TreeviewItem text="Hover + Focus" hover focus/>
@@ -437,7 +437,7 @@ export default () => (
                                     <TreeviewItem text="Selected focus" selected focus/>
                                     <TreeviewItem text="Disabled" disabled/>
                                     <TreeviewItem text="Disabled focus" disabled focus/>
-                                    <TreeviewItem bottom leafClassName="k-treeview-load-more-button" text="Load more..."/>
+                                    <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more..."/>
                                 </TreeviewNormal>
                             </div>
 
