@@ -327,7 +327,7 @@ $kendo-grid-sticky-alt-bg: k-color(base) !default;
 
 /// The border color of the sticky content in the Grid.
 /// @group grid
-$kendo-grid-sticky-border: rgba( black, .3 ) !default;
+$kendo-grid-sticky-border: color-mix(in srgb, k-color(on-app-surface) 30%, transparent) !default;
 
 /// The background color of the sticky header in the Grid.
 /// @group grid
@@ -342,6 +342,10 @@ $kendo-grid-sticky-header-border: $kendo-grid-sticky-border !default;
 /// The background color of the sticky footer in the Grid.
 /// @group grid
 $kendo-grid-sticky-footer-bg: $kendo-grid-header-bg !default;
+
+/// The box shadow of the sticky container in the Grid.
+/// @group grid
+$kendo-grid-sticky-container-shadow: k-elevation(3) !default;
 
 
 /// The width of the Grid column menu.
@@ -623,5 +627,7 @@ $kendo-grid-stack-expandable-shadow: k-elevation(2) !default;
     $kendo-grid-stack-expandable-shadow-height: $kendo-grid-stack-expandable-shadow-height,
     $kendo-grid-stack-header-color: $kendo-grid-stack-header-color,
     $kendo-grid-stack-focus-outline: $kendo-grid-stack-focus-outline,
-    $kendo-grid-stack-expandable-shadow: $kendo-grid-stack-expandable-shadow
+    $kendo-grid-stack-expandable-shadow: $kendo-grid-stack-expandable-shadow,
+    $kendo-grid-pinned-source-font-weight: $kendo-grid-pinned-source-font-weight,
+    $kendo-grid-sticky-container-shadow: $kendo-grid-sticky-container-shadow
 );
