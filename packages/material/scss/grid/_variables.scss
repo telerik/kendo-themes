@@ -492,6 +492,10 @@ $kendo-grid-stack-focus-outline: color-mix(in srgb, k-color(on-app-surface) 20%,
 /// @group grid
 $kendo-grid-stack-expandable-shadow: k-elevation(1) !default;
 
+/// The font weight of the pinned source row in the Grid.
+/// @group grid
+$kendo-grid-pinned-source-font-weight: var( --kendo-font-weight-semibold, 600 ) !default;
+
 @forward "@progress/kendo-theme-core/scss/components/grid/_variables.scss" with (
     $kendo-grid-default-size: $kendo-grid-default-size,
     $kendo-grid-border-width: $kendo-grid-border-width,
