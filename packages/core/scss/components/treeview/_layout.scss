@@ -3,6 +3,7 @@
 @use "../../mixins/index.scss" as *;
 @use "../../functions/index.scss" as *;
 @use "../../spacing/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
 @use "../../motion/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../icons/_variables.scss" as *;
@@ -12,7 +13,7 @@
 
     // Treeview
     .k-treeview {
-        padding: 0;
+        border-radius: $kendo-treeview-border-radius;
         border-width: 0;
         background: none;
         box-sizing: border-box;
@@ -72,6 +73,11 @@
 
     // Treeview group
     .k-treeview-group {
+        display: flex;
+        flex-direction: column;
+        gap: $kendo-treeview-gap;
+        min-width: fit-content;
+
         margin: 0;
         padding: 0;
         list-style: none;
@@ -83,17 +89,21 @@
         &.ng-animating {
             overflow: hidden;
         }
+
+        .k-treeview-group {
+            margin-top: $kendo-treeview-gap;
+        }
     }
 
 
     // Treeview wrappers
-    .k-treeview-top,
-    .k-treeview-mid,
-    .k-treeview-bot {
+    .k-treeview-item-content {
+        @include border-radius( $kendo-treeview-item-border-radius );
         display: flex;
         flex-direction: row;
         align-items: center;
         align-content: center;
+        padding-inline-start: calc( var(--kendo-treeview-level, 0) * #{$kendo-treeview-indent} );
     }
 
 
@@ -102,7 +112,6 @@
         outline-style: none;
         margin: 0;
         padding: 0;
-        padding-inline-start: $kendo-treeview-indent;
         border-width: 0;
         display: block;
     }
@@ -138,7 +147,6 @@
 
     // Treeview leaf
     .k-treeview-leaf {
-        @include border-radius( $kendo-treeview-item-border-radius );
         padding-block: $kendo-treeview-md-item-padding-y;
         padding-inline: $kendo-treeview-md-item-padding-x;
         border: $kendo-treeview-item-border-width solid transparent;
@@ -154,10 +162,6 @@
         .k-image,
         .k-sprite {
             margin-inline-end: $kendo-icon-spacing;
-        }
-
-        &.k-focus {
-            z-index: k-z-index("base", 1);
         }
     }
 

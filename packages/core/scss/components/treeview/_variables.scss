@@ -1,6 +1,8 @@
 // TreeView
 
 $kendo-treeview-default-size: null !default;
+$kendo-treeview-gap: null !default;
+$kendo-treeview-border-radius: null !default;
 
 $kendo-treeview-font-family: null !default;
 $kendo-treeview-font-size: null !default;
@@ -73,6 +75,8 @@ $kendo-treeview-item-selected-bg: null !default;
 $kendo-treeview-item-selected-text: null !default;
 $kendo-treeview-item-selected-border: null !default;
 $kendo-treeview-item-selected-gradient: null !default;
+
+$kendo-treeview-item-selected-hover-bg: null !default;
 
 $kendo-treeview-item-focus-shadow: null !default;
 
