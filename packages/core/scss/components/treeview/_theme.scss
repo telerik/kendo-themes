@@ -13,12 +13,8 @@
     }
 
 
-    // Treeview item
-    .k-treeview-item {}
-
-
-    // Treeview leaf
-    .k-treeview-leaf {
+    // Treeview wrappers
+    .k-treeview-item-content {
 
         // Hover state
         &:hover,
@@ -45,6 +41,11 @@
                 $kendo-treeview-item-selected-border,
                 $kendo-treeview-item-selected-gradient
             );
+
+            &:hover,
+            &.k-hover {
+                background-color: $kendo-treeview-item-selected-hover-bg;
+            }
         }
     }
 
