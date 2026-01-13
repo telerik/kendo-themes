@@ -358,6 +358,20 @@
             }
         }
 
+        .k-pin-cell {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: k-spacing(2);
+            padding: k-spacing(1);
+            cursor: pointer;
+
+            > .k-icon-wrapper-host .k-icon,
+            > .k-icon {
+                flex-shrink: 0;
+            }
+        }
+
         .k-hierarchy-cell + .k-grid-content-sticky {
             border-inline-start-width: $kendo-grid-cell-vertical-border-width;
         }
@@ -425,6 +439,11 @@
         .k-table-td.k-highlighted,
         .k-table-row.k-highlighted > .k-table-td {
             font-weight: $kendo-grid-highlighted-font-weight;
+        }
+
+        // Indicates that the row is a source of a pinned element
+        .k-table-row.k-pinned-source {
+            font-weight: $kendo-grid-pinned-source-font-weight;
         }
     }
 
