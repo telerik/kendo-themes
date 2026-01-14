@@ -30,8 +30,8 @@ export default () => (
                         <img src="/packages/html/assets/avatar.jpg" />
                     </AvatarImage>
 
-                    <AvatarImage type="image" themeColor={themeColor}></AvatarImage>
-                    <AvatarImage type="image" fillMode="outline" themeColor={themeColor}></AvatarImage>
+                    <AvatarImage themeColor={themeColor}></AvatarImage>
+                    <AvatarImage fillMode="outline" themeColor={themeColor}></AvatarImage>
 
                     <AvatarIcon themeColor={themeColor}>
                         <Icon icon="x" />

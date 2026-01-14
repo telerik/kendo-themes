@@ -1,3 +1,3 @@
-import Avatar from "../avatar.spec";
+import Avatar, { KendoAvatarProps, KendoAvatarState } from "../avatar.spec";
 
-export const AvatarIcon = (props: any) => <Avatar type="icon" {...props} />;
+export const AvatarIcon = (props: Omit<KendoAvatarProps & KendoAvatarState & React.HTMLAttributes<HTMLDivElement>, 'type'>) => <Avatar type="icon" {...props} />;

@@ -86,5 +86,16 @@ module.exports = [
             "no-unused-vars": "off",
             "no-undef": 'off'
         }
+    },
+    {
+        name: "html-components-strict-avatar",
+        files: [
+            "packages/html/src/avatar/**/*.ts",
+            "packages/html/src/avatar/**/*.tsx",
+            "packages/html/src/_types/**/*.ts"
+        ],
+        rules: {
+            "@typescript-eslint/no-explicit-any": "error"
+        }
     }
 ]
