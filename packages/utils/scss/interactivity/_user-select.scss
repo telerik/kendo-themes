@@ -34,12 +34,20 @@
 // Register
 @use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
+/// Feature flag to enable/disable user-select utility classes.
+/// Safe default is `true` (enabled). Set to `false` to exclude from CSS output.
+/// @group utils-flags
+/// @type Boolean
+$kendo-enable-user-select-utils: true !default;
+
 @mixin kendo-utils--interactivity--user-select() {
     @include import-once("utils-interactivity-user-select") {
 
-        // User select utility classes
-        $kendo-utils-user-select: map.get( $kendo-utils, "user-select" ) !default;
-        @include generate-utils( user-select, user-select, $kendo-utils-user-select );
+        @if $kendo-enable-user-select-utils {
+            // User select utility classes
+            $kendo-utils-user-select: map.get( $kendo-utils, "user-select" ) !default;
+            @include generate-utils( user-select, user-select, $kendo-utils-user-select );
+        }
 
     }
 }
