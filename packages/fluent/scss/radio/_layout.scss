@@ -2,11 +2,27 @@
 @use "sass:math";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/radio/_layout.scss" as *;
 
 @mixin kendo-radio--layout() {
 
     @include kendo-radio--layout-base();
+
+    .k-radio {
+        // Radio size
+        @each $size, $size-props in $kendo-radio-sizes {
+            $_indicator-size: map.get( $size-props, indicator-size );
+
+            #{k-when-default($kendo-radio-default-size, $size)}
+            &.k-radio-#{$size} {
+                &::before {
+                    width: $_indicator-size;
+                    height: $_indicator-size;
+                }
+            }
+        }
+    }
 
     // Radio indicator
     .k-radio::before {
@@ -77,17 +93,6 @@
             }
         }
     }
-
-    // Radio size
-    @each $size, $size-props in $kendo-radio-sizes {
-        $_indicator-size: map.get( $size-props, indicator-size );
-
-        .k-radio-#{$size}::before {
-            width: $_indicator-size;
-            height: $_indicator-size;
-        }
-    }
-
 
     .k-radio-item,
     .k-radio-list-item {

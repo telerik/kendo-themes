@@ -4,6 +4,11 @@
 
 // Time selector
 
+/// The default size of the TimeSelector.
+/// @group time-selector
+/// @role default
+$kendo-time-selector-default-size: md !default;
+
 /// The width of the border around the TimeSelector.
 /// @group time-selector
 $kendo-time-selector-border-width: 1px !default;
@@ -134,29 +139,6 @@ $kendo-time-selector-lg-list-item-padding-x: $kendo-list-lg-item-padding-x !defa
 /// @group time-selector
 $kendo-time-selector-lg-list-item-padding-y: $kendo-list-lg-item-padding-y !default;
 
-/// The sizes map for the TimeSelector.
-/// @group time-selector
-$kendo-time-selector-sizes: (
-    sm: (
-        font-size: $kendo-time-selector-sm-font-size,
-        line-height: $kendo-time-selector-sm-line-height,
-        list-item-padding-x: $kendo-time-selector-sm-list-item-padding-x,
-        list-item-padding-y: $kendo-time-selector-sm-list-item-padding-y
-    ),
-    md: (
-        font-size: $kendo-time-selector-md-font-size,
-        line-height: $kendo-time-selector-md-line-height,
-        list-item-padding-x: $kendo-time-selector-md-list-item-padding-x,
-        list-item-padding-y: $kendo-time-selector-md-list-item-padding-y
-    ),
-    lg: (
-        font-size: $kendo-time-selector-lg-font-size,
-        line-height: $kendo-time-selector-lg-line-height,
-        list-item-padding-x: $kendo-time-selector-lg-list-item-padding-x,
-        list-item-padding-y: $kendo-time-selector-lg-list-item-padding-y
-    )
-) !default;
-
 /// The text color of the TimeSelector button.
 /// @group time-selector
 $kendo-time-selector-now-button-text: k-color(primary) !default;
@@ -165,6 +147,7 @@ $kendo-time-selector-now-button-text: k-color(primary) !default;
 $kendo-time-selector-now-button-hover-text: k-color(primary-hover) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/timeselector/_variables.scss" with (
+    $kendo-time-selector-default-size: $kendo-time-selector-default-size,
     $kendo-time-selector-border-width: $kendo-time-selector-border-width,
     $kendo-time-selector-font-family: $kendo-time-selector-font-family,
     $kendo-time-selector-font-size: $kendo-time-selector-font-size,
@@ -204,7 +187,6 @@ $kendo-time-selector-now-button-hover-text: k-color(primary-hover) !default;
     $kendo-time-selector-lg-line-height: $kendo-time-selector-lg-line-height,
     $kendo-time-selector-lg-list-item-padding-x: $kendo-time-selector-lg-list-item-padding-x,
     $kendo-time-selector-lg-list-item-padding-y: $kendo-time-selector-lg-list-item-padding-y,
-    $kendo-time-selector-sizes: $kendo-time-selector-sizes,
     $kendo-time-selector-now-button-text: $kendo-time-selector-now-button-text,
     $kendo-time-selector-now-button-hover-text: $kendo-time-selector-now-button-hover-text
 );

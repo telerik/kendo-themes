@@ -7,6 +7,11 @@
 
 // Forms
 
+/// The default size of the Form.
+/// @group form
+/// @role default
+$kendo-form-default-size: "md" !default;
+
 /// The padding of the inline Form.
 /// @group form
 $kendo-form-spacer: calc( #{k-spacing(2)} * 2 ) !default;
@@ -144,22 +149,9 @@ $kendo-form-field-info-margin: k-spacing(2) !default;
 /// @group form
 $kendo-fieldset-legend-text: k-color(on-app-surface) !default;
 
-/// The sizes map for the Form.
-/// @group form
-$kendo-form-sizes: (
-    sm: (
-        form-rows-spacing: $kendo-form-sm-rows-spacing
-    ),
-    md: (
-        form-rows-spacing: $kendo-form-md-rows-spacing
-    ),
-    lg: (
-        form-rows-spacing: $kendo-form-lg-rows-spacing
-    )
-) !default;
-
 
 @forward "@progress/kendo-theme-core/scss/components/forms/_variables.scss" with (
+    $kendo-form-default-size: $kendo-form-default-size,
     $kendo-form-spacer: $kendo-form-spacer,
     $kendo-form-font-size: $kendo-form-font-size,
     $kendo-form-line-height: $kendo-form-line-height,
@@ -198,6 +190,5 @@ $kendo-form-sizes: (
     $kendo-fieldset-legend-margin: $kendo-fieldset-legend-margin,
     $kendo-form-alert-error-margin: $kendo-form-alert-error-margin,
     $kendo-form-field-info-margin: $kendo-form-field-info-margin,
-    $kendo-fieldset-legend-text: $kendo-fieldset-legend-text,
-    $kendo-form-sizes: $kendo-form-sizes
+    $kendo-fieldset-legend-text: $kendo-fieldset-legend-text
 );

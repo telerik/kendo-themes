@@ -15,7 +15,25 @@ $kendo-radio-sm-ripple-size: null !default;
 $kendo-radio-md-ripple-size: null !default;
 $kendo-radio-lg-ripple-size: null !default;
 
-$kendo-radio-sizes: null !default;
+/// The sizes map of the RadioButton.
+/// @group radio
+$kendo-radio-sizes: (
+    sm: (
+        size: $kendo-radio-sm-size,
+        glyph-size: $kendo-radio-sm-glyph-size,
+        ripple-size: $kendo-radio-sm-ripple-size
+    ),
+    md: (
+        size: $kendo-radio-md-size,
+        glyph-size: $kendo-radio-md-glyph-size,
+        ripple-size: $kendo-radio-md-ripple-size
+    ),
+    lg: (
+        size: $kendo-radio-lg-size,
+        glyph-size: $kendo-radio-lg-glyph-size,
+        ripple-size: $kendo-radio-lg-ripple-size
+    )
+) !default;
 
 $kendo-radio-bg: null !default;
 $kendo-radio-text: null !default;
@@ -74,3 +92,5 @@ $kendo-radio-list-item-padding-y: null !default;
 
 $kendo-radio-ripple-bg: null !default;
 $kendo-radio-ripple-opacity: null !default;
+
+$kendo-radio-default-size: null !default;

@@ -1,6 +1,11 @@
 @use "sass:math";
 @use "../core/_index.scss" as *;
 
+/// The default size of the ColumnMenu.
+/// @group column-menu
+/// @role default
+$kendo-column-menu-default-size: "md" !default;
+
 /// The horizontal padding of the small ColumnMenu item.
 /// @group column-menu
 $kendo-column-menu-item-sm-padding-x: k-spacing(4) !default;
@@ -52,29 +57,6 @@ $kendo-column-menu-lg-line-height: var( --kendo-line-height, normal ) !default;
 /// @group column-menu
 $kendo-column-menu-font-family: var( --kendo-font-family, inherit ) !default;
 
-/// The sizes map for the ColumnMenu.
-/// @group column-menu
-$kendo-column-menu-sizes: (
-    sm: (
-        padding-x: $kendo-column-menu-item-sm-padding-x,
-        padding-y: $kendo-column-menu-item-sm-padding-y,
-        font-size: $kendo-column-menu-sm-font-size,
-        line-height: $kendo-column-menu-sm-line-height
-    ),
-    md: (
-        padding-x: $kendo-column-menu-item-md-padding-x,
-        padding-y: $kendo-column-menu-item-md-padding-y,
-        font-size: $kendo-column-menu-md-font-size,
-        line-height: $kendo-column-menu-md-line-height
-    ),
-    lg: (
-        padding-x: $kendo-column-menu-item-lg-padding-x,
-        padding-y: $kendo-column-menu-item-lg-padding-y,
-        font-size: $kendo-column-menu-lg-font-size,
-        line-height: $kendo-column-menu-lg-line-height
-    )
-) !default;
-
 // Group Menu
 /// The background color of the hovered GroupMenu item action.
 /// @group column-menu
@@ -91,6 +73,7 @@ $kendo-group-menu-item-border: k-color(border) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/column-menu/_variables.scss" with (
+    $kendo-column-menu-default-size: $kendo-column-menu-default-size,
     $kendo-column-menu-font-size: $kendo-column-menu-font-size,
     $kendo-column-menu-sm-font-size: $kendo-column-menu-sm-font-size,
     $kendo-column-menu-md-font-size: $kendo-column-menu-md-font-size,
@@ -106,8 +89,6 @@ $kendo-group-menu-item-border: k-color(border) !default;
     $kendo-column-menu-item-md-padding-y: $kendo-column-menu-item-md-padding-y,
     $kendo-column-menu-item-lg-padding-x: $kendo-column-menu-item-lg-padding-x,
     $kendo-column-menu-item-lg-padding-y: $kendo-column-menu-item-lg-padding-y,
-    $kendo-column-menu-sizes: $kendo-column-menu-sizes,
-    // Group Menu
     $kendo-group-menu-item-action-hover-bg: $kendo-group-menu-item-action-hover-bg,
     $kendo-group-menu-item-action-selected-bg: $kendo-group-menu-item-action-selected-bg,
     $kendo-group-menu-item-add-action-text: $kendo-group-menu-item-add-action-text,

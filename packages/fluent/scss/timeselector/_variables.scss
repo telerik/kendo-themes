@@ -2,6 +2,11 @@
 @use "../core/_index.scss" as *;
 @use "../list/_variables.scss" as *;
 
+/// The default size of the TimeSelector.
+/// @group time-selector
+/// @role default
+$kendo-time-selector-default-size: md !default;
+
 /// Width of the border around the time-selector.
 /// @group time-selector
 $kendo-time-selector-border-width: var( --kendo-time-selector-border-width, 1px ) !default;
@@ -139,30 +144,8 @@ $kendo-time-selector-md-list-item-padding-y: var( --kendo-time-selector-md-list-
 /// @group time-selector
 $kendo-time-selector-lg-list-item-padding-y: var( --kendo-time-selector-lg-list-item-padding-y, #{k-spacing(2)} ) !default;
 
-/// Sizes map for the time-selector.
-/// @group time-selector
-$kendo-time-selector-sizes: (
-    sm: (
-        font-size: $kendo-time-selector-sm-font-size,
-        line-height: $kendo-time-selector-sm-line-height,
-        list-item-padding-x: $kendo-time-selector-sm-list-item-padding-x,
-        list-item-padding-y: $kendo-time-selector-sm-list-item-padding-y
-    ),
-    md: (
-        font-size: $kendo-time-selector-md-font-size,
-        line-height: $kendo-time-selector-md-line-height,
-        list-item-padding-x: $kendo-time-selector-md-list-item-padding-x,
-        list-item-padding-y: $kendo-time-selector-md-list-item-padding-y
-    ),
-    lg: (
-        font-size: $kendo-time-selector-lg-font-size,
-        line-height: $kendo-time-selector-lg-line-height,
-        list-item-padding-x: $kendo-time-selector-lg-list-item-padding-x,
-        list-item-padding-y: $kendo-time-selector-lg-list-item-padding-y
-    )
-) !default;
-
 @forward "@progress/kendo-theme-core/scss/components/timeselector/_variables.scss" with (
+    $kendo-time-selector-default-size: $kendo-time-selector-default-size,
     $kendo-time-selector-border-width: $kendo-time-selector-border-width,
     $kendo-time-selector-font-family: $kendo-time-selector-font-family,
     $kendo-time-selector-font-size: $kendo-time-selector-font-size,
@@ -201,6 +184,5 @@ $kendo-time-selector-sizes: (
     $kendo-time-selector-lg-font-size: $kendo-time-selector-lg-font-size,
     $kendo-time-selector-lg-line-height: $kendo-time-selector-lg-line-height,
     $kendo-time-selector-lg-list-item-padding-x: $kendo-time-selector-lg-list-item-padding-x,
-    $kendo-time-selector-lg-list-item-padding-y: $kendo-time-selector-lg-list-item-padding-y,
-    $kendo-time-selector-sizes: $kendo-time-selector-sizes
+    $kendo-time-selector-lg-list-item-padding-y: $kendo-time-selector-lg-list-item-padding-y
 );

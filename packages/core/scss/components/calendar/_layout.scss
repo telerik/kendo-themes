@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "sass:math";
 @use "../../color-system/_constants.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "../../mixins/index.scss" as *;
 @use "../../z-index/index.scss" as *;
 @use "../../motion/index.scss" as *;
@@ -32,6 +33,46 @@
         // Nested calendar
         > .k-calendar {
             border: 0;
+        }
+
+        // Calendar sizes
+        @each $size, $size-props in $kendo-calendar-sizes {
+            $_font-size: map.get( $size-props, font-size );
+            $_line-height: map.get( $size-props, line-height );
+            $_cell-size: map.get( $size-props, cell-size );
+            $_cell-padding-x: map.get( $size-props, cell-padding-x );
+            $_cell-padding-y: map.get( $size-props, cell-padding-y );
+
+            $_month-cell-size: $_cell-size;
+            $_year-cell-size: calc( 2 * #{$_cell-size} );
+            $_decade-cell-size: calc( 2 * #{$_cell-size} );
+            $_century-cell-size: calc( 2 * #{$_cell-size} );
+
+            #{k-when-default($kendo-calendar-default-size, $size)}
+            &.k-calendar-#{$size} {
+                --INTERNAL--kendo-calendar-view-width: calc( 8 * #{$_cell-size} );
+                --INTERNAL--kendo-calendar-cell-padding-x: var( --kendo-calendar-#{$size}-cell-padding-x, #{$_cell-padding-x} );
+                --INTERNAL--kendo-calendar-cell-padding-y: var( --kendo-calendar-#{$size}-cell-padding-y, #{$_cell-padding-y} );
+                font-size: $_font-size;
+                line-height: $_line-height;
+
+                &.k-month-calendar,
+                .k-calendar-monthview {
+                    --INTERNAL--kendo-calendar-cell-size: var( --kendo-calendar-#{$size}-month-cell-size, #{$_month-cell-size} );
+                }
+                &.k-year-calendar,
+                .k-calendar-yearview {
+                    --INTERNAL--kendo-calendar-cell-size: var( --kendo-calendar-#{$size}-year-cell-size, #{$_year-cell-size} );
+                }
+                &.k-decade-calendar,
+                .k-calendar-decadeview {
+                    --INTERNAL--kendo-calendar-cell-size: var( --kendo-calendar-#{$size}-decade-cell-size, #{$_decade-cell-size} );
+                }
+                &.k-century-calendar,
+                .k-calendar-centuryview {
+                    --INTERNAL--kendo-calendar-cell-size: var( --kendo-calendar-#{$size}-century-cell-size, #{$_century-cell-size} );
+                }
+            }
         }
     }
 
@@ -284,54 +325,10 @@
 
 
 
-    // Calendar sizes
-    @each $size, $size-props in $kendo-calendar-sizes {
-        $_font-size: map.get( $size-props, font-size );
-        $_line-height: map.get( $size-props, line-height );
-        $_cell-size: map.get( $size-props, cell-size );
-        $_cell-padding-x: map.get( $size-props, cell-padding-x );
-        $_cell-padding-y: map.get( $size-props, cell-padding-y );
-
-        $_month-cell-size: $_cell-size;
-        $_year-cell-size: calc( 2 * #{$_cell-size} );
-        $_decade-cell-size: calc( 2 * #{$_cell-size} );
-        $_century-cell-size: calc( 2 * #{$_cell-size} );
-
-        .k-calendar-#{$size} {
-            --INTERNAL--kendo-calendar-view-width: calc( 8 * #{$_cell-size} );
-            --INTERNAL--kendo-calendar-cell-padding-x: var( --kendo-calendar-#{$size}-cell-padding-x, #{$_cell-padding-x} );
-            --INTERNAL--kendo-calendar-cell-padding-y: var( --kendo-calendar-#{$size}-cell-padding-y, #{$_cell-padding-y} );
-            font-size: $_font-size;
-            line-height: $_line-height;
-
-            &.k-month-calendar,
-            .k-calendar-monthview {
-                --INTERNAL--kendo-calendar-cell-size: var( --kendo-calendar-#{$size}-month-cell-size, #{$_month-cell-size} );
-            }
-            &.k-year-calendar,
-            .k-calendar-yearview {
-                --INTERNAL--kendo-calendar-cell-size: var( --kendo-calendar-#{$size}-year-cell-size, #{$_year-cell-size} );
-            }
-            &.k-decade-calendar,
-            .k-calendar-decadeview {
-                --INTERNAL--kendo-calendar-cell-size: var( --kendo-calendar-#{$size}-decade-cell-size, #{$_decade-cell-size} );
-            }
-            &.k-century-calendar,
-            .k-calendar-centuryview {
-                --INTERNAL--kendo-calendar-cell-size: var( --kendo-calendar-#{$size}-century-cell-size, #{$_century-cell-size} );
-            }
-        }
-    }
-
-
-
-
     // Legacy aliases
     .k-link {
         @extend .k-calendar-cell-inner !optional;
     }
-
-
 
 
     // Infinite calendar

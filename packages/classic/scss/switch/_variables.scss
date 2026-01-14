@@ -3,6 +3,19 @@
 
 // Switch
 
+/// The default size of the Switch.
+/// @group switch
+/// @role default
+$kendo-switch-default-size: "md" !default;
+/// The default border radius of the Switch track.
+/// @group switch
+/// @role default
+$kendo-switch-default-track-roundness: "full" !default;
+/// The default border radius of the Switch thumb.
+/// @group switch
+/// @role default
+$kendo-switch-default-thumb-roundness: "full" !default;
+
 /// The font family of the Switch.
 /// @group switch
 $kendo-switch-font-family: null !default;
@@ -23,13 +36,71 @@ $kendo-switch-label-text-transform: unset !default;
 /// @group switch
 $kendo-switch-label-display: inline !default;
 
-/// The map with the different Switch sizes.
+/// The font size of the small Switch.
 /// @group switch
-$kendo-switch-sizes: (
-    sm: ( font-size: 12px, track-width: 48px, track-height: 26px, thumb-width: 20px, thumb-height: 20px, thumb-offset: 3px, label-offset: 4px ),
-    md: ( font-size: 12px, track-width: 56px, track-height: 30px, thumb-width: 24px, thumb-height: 24px, thumb-offset: 3px, label-offset: 6px ),
-    lg: ( font-size: 12px, track-width: 64px, track-height: 34px, thumb-width: 28px, thumb-height: 28px, thumb-offset: 3px, label-offset: 8px )
-) !default;
+$kendo-switch-sm-font-size: 12px !default;
+/// The track width of the small Switch.
+/// @group switch
+$kendo-switch-sm-track-width: 48px !default;
+/// The track height of the small Switch.
+/// @group switch
+$kendo-switch-sm-track-height: 26px !default;
+/// The thumb width of the small Switch.
+/// @group switch
+$kendo-switch-sm-thumb-width: 20px !default;
+/// The thumb height of the small Switch.
+/// @group switch
+$kendo-switch-sm-thumb-height: 20px !default;
+/// The thumb offset of the small Switch.
+/// @group switch
+$kendo-switch-sm-thumb-offset: 3px !default;
+/// The label offset of the small Switch.
+/// @group switch
+$kendo-switch-sm-label-offset: 4px !default;
+
+/// The font size of the medium Switch.
+/// @group switch
+$kendo-switch-md-font-size: 12px !default;
+/// The track width of the medium Switch.
+/// @group switch
+$kendo-switch-md-track-width: 56px !default;
+/// The track height of the medium Switch.
+/// @group switch
+$kendo-switch-md-track-height: 30px !default;
+/// The thumb width of the medium Switch.
+/// @group switch
+$kendo-switch-md-thumb-width: 24px !default;
+/// The thumb height of the medium Switch.
+/// @group switch
+$kendo-switch-md-thumb-height: 24px !default;
+/// The thumb offset of the medium Switch.
+/// @group switch
+$kendo-switch-md-thumb-offset: 3px !default;
+/// The label offset of the medium Switch.
+/// @group switch
+$kendo-switch-md-label-offset: 6px !default;
+
+/// The font size of the large Switch.
+/// @group switch
+$kendo-switch-lg-font-size: 12px !default;
+/// The track width of the large Switch.
+/// @group switch
+$kendo-switch-lg-track-width: 64px !default;
+/// The track height of the large Switch.
+/// @group switch
+$kendo-switch-lg-track-height: 34px !default;
+/// The thumb width of the large Switch.
+/// @group switch
+$kendo-switch-lg-thumb-width: 28px !default;
+/// The thumb height of the large Switch.
+/// @group switch
+$kendo-switch-lg-thumb-height: 28px !default;
+/// The thumb offset of the large Switch.
+/// @group switch
+$kendo-switch-lg-thumb-offset: 3px !default;
+/// The label offset of the large Switch.
+/// @group switch
+$kendo-switch-lg-label-offset: 8px !default;
 
 /// The background of the track when the Switch is not checked.
 /// @group switch
@@ -221,12 +292,35 @@ $kendo-switch-on-thumb-disabled-border: null !default;
 $kendo-switch-on-thumb-disabled-gradient: null !default;
 
 @forward "@progress/kendo-theme-core/scss/components/switch/_variables.scss" with (
+    $kendo-switch-default-size: $kendo-switch-default-size,
+    $kendo-switch-default-track-roundness: $kendo-switch-default-track-roundness,
+    $kendo-switch-default-thumb-roundness: $kendo-switch-default-thumb-roundness,
     $kendo-switch-font-family: $kendo-switch-font-family,
     $kendo-switch-track-border-width: $kendo-switch-track-border-width,
     $kendo-switch-thumb-border-width: $kendo-switch-thumb-border-width,
     $kendo-switch-label-text-transform: $kendo-switch-label-text-transform,
     $kendo-switch-label-display: $kendo-switch-label-display,
-    $kendo-switch-sizes: $kendo-switch-sizes,
+    $kendo-switch-sm-font-size: $kendo-switch-sm-font-size,
+    $kendo-switch-sm-track-width: $kendo-switch-sm-track-width,
+    $kendo-switch-sm-track-height: $kendo-switch-sm-track-height,
+    $kendo-switch-sm-thumb-width: $kendo-switch-sm-thumb-width,
+    $kendo-switch-sm-thumb-height: $kendo-switch-sm-thumb-height,
+    $kendo-switch-sm-thumb-offset: $kendo-switch-sm-thumb-offset,
+    $kendo-switch-sm-label-offset: $kendo-switch-sm-label-offset,
+    $kendo-switch-md-font-size: $kendo-switch-md-font-size,
+    $kendo-switch-md-track-width: $kendo-switch-md-track-width,
+    $kendo-switch-md-track-height: $kendo-switch-md-track-height,
+    $kendo-switch-md-thumb-width: $kendo-switch-md-thumb-width,
+    $kendo-switch-md-thumb-height: $kendo-switch-md-thumb-height,
+    $kendo-switch-md-thumb-offset: $kendo-switch-md-thumb-offset,
+    $kendo-switch-md-label-offset: $kendo-switch-md-label-offset,
+    $kendo-switch-lg-font-size: $kendo-switch-lg-font-size,
+    $kendo-switch-lg-track-width: $kendo-switch-lg-track-width,
+    $kendo-switch-lg-track-height: $kendo-switch-lg-track-height,
+    $kendo-switch-lg-thumb-width: $kendo-switch-lg-thumb-width,
+    $kendo-switch-lg-thumb-height: $kendo-switch-lg-thumb-height,
+    $kendo-switch-lg-thumb-offset: $kendo-switch-lg-thumb-offset,
+    $kendo-switch-lg-label-offset: $kendo-switch-lg-label-offset,
     $kendo-switch-off-track-bg: $kendo-switch-off-track-bg,
     $kendo-switch-off-track-text: $kendo-switch-off-track-text,
     $kendo-switch-off-track-border: $kendo-switch-off-track-border,

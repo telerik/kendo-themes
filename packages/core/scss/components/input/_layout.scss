@@ -1,18 +1,19 @@
 @use "sass:map";
 @use "../../mixins/index.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "../../color-system/_constants.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "../../z-index/index.scss" as *;
 @use "../../motion/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
 
 @mixin kendo-input--layout-base() {
 
     // Generic input
     .k-input,
     .k-picker {
-        @include border-radius( $kendo-input-border-radius );
         margin: 0;
         padding: 0;
         width: $kendo-input-default-width;
@@ -66,8 +67,159 @@
         }
     }
 
+    .k-input {
+
+        // Roundness
+        @each $roundness in $kendo-input-roundness {
+            #{k-when-default($kendo-input-default-roundness, $roundness)}
+            &.k-rounded-#{$roundness} {
+                border-radius: k-border-radius($roundness);
+            }
+        }
+        // Null by default, overrides default border-radius
+        border-radius: $kendo-input-border-radius;
+
+        // Sizing
+        @each $size, $size-props in $kendo-input-sizes {
+            $_padding-x: map.get( $size-props, padding-x );
+            $_padding-y: map.get( $size-props, padding-y );
+            $_font-size: map.get( $size-props, font-size );
+            $_line-height: map.get( $size-props, line-height );
+            $_button-padding-x: map.get( $size-props, button-padding-x );
+            $_button-padding-y: map.get( $size-props, button-padding-y );
+
+            #{k-when-default($kendo-input-default-size, $size)}
+            &.k-input-#{$size} {
+                font-size: $_font-size;
+                line-height: $_line-height;
+
+                .k-input-values {
+                    padding: calc( #{$_padding-y} /2 );
+                    gap: calc( #{$_padding-y} / 2 );
+                }
+                .k-input-values > .k-searchbar,
+                .k-input-values > .k-input-inner {
+                    margin: calc( calc( #{$_padding-y} / 2 ) * -1 );
+                }
+
+                .k-input-inner {
+                    padding-block: $_padding-y;
+                    padding-inline: $_padding-x;
+                }
+
+                .k-input-button,
+                .k-spinner-increase,
+                .k-spinner-decrease {
+                    padding-block: $_button-padding-y;
+                    padding-inline: $_button-padding-x;
+                }
+
+                .k-input-icon,
+                .k-input-validation-icon,
+                .k-input-loading-icon,
+                .k-clear-value,
+                .k-input-prefix > .k-icon,
+                .k-input-prefix > .k-icon-wrapper-host .k-icon,
+                .k-input-prefix > .k-input-prefix-text,
+                .k-input-suffix > .k-icon,
+                .k-input-suffix > .k-icon-wrapper-host .k-icon,
+                .k-input-suffix > .k-input-suffix-text {
+                    padding-block: $_padding-y;
+                    padding-inline: $_padding-y;
+                    box-sizing: content-box;
+                }
+
+                .k-input-separator {
+                    &-horizontal {
+                        margin-inline: $_padding-y;
+                    }
+
+                    &-vertical {
+                        margin-block: $_padding-y;
+                    }
+                }
+            }
+        }
+
+        // Fill mode
+        #{k-when-default($kendo-input-default-fill-mode, "flat")}
+        &.k-input-flat {
+            @include border-bottom-radius( 0 !important ); // stylelint-disable-line declaration-no-important
+            border-width: $kendo-input-border-width 0;
+            border-block-start-color: transparent !important; // stylelint-disable-line declaration-no-important
+            background-image: none !important; // stylelint-disable-line declaration-no-important
+        }
+    }
+
+    .k-picker {
+
+        // Roundness
+        @each $roundness in $kendo-picker-roundness {
+            #{k-when-default($kendo-picker-default-roundness, $roundness)}
+            &.k-rounded-#{$roundness} {
+                border-radius: k-border-radius($roundness);
+            }
+        }
+        // Null by default, overrides default border-radius
+        border-radius: $kendo-input-border-radius;
+
+        // Sizing
+        @each $size, $size-props in $kendo-input-sizes {
+            $_padding-x: map.get( $size-props, padding-x );
+            $_padding-y: map.get( $size-props, padding-y );
+            $_font-size: map.get( $size-props, font-size );
+            $_line-height: map.get( $size-props, line-height );
+
+            #{k-when-default($kendo-picker-default-size, $size)}
+            &.k-picker-#{$size} {
+                font-size: $_font-size;
+                line-height: $_line-height;
+
+                .k-input-inner {
+                    padding-block: $_padding-y;
+                    padding-inline: $_padding-x;
+                }
+
+                .k-input-icon,
+                .k-input-validation-icon,
+                .k-input-loading-icon,
+                .k-clear-value,
+                .k-input-prefix > .k-icon,
+                .k-input-prefix > .k-icon-wrapper-host .k-icon,
+                .k-input-prefix > .k-input-prefix-text,
+                .k-input-suffix > .k-icon,
+                .k-input-suffix > .k-icon-wrapper-host .k-icon,
+                .k-input-suffix > .k-input-suffix-text {
+                    padding-block: $_padding-y;
+                    padding-inline: $_padding-y;
+                    box-sizing: content-box;
+                }
+
+                &.k-icon-picker > .k-input-inner {
+                    width: calc( ( #{ $_line-height} * 1em ) );
+                    height: calc( ( #{ $_line-height} * 1em ) );
+                    padding: $_padding-y;
+                    box-sizing: content-box;
+                }
+            }
+
+            select.k-picker-#{$size} {
+                padding-block: $_padding-y;
+                padding-inline: $_padding-x;
+            }
+        }
+
+        // Fill mode
+        #{k-when-default($kendo-picker-default-fill-mode, "flat")}
+        &.k-picker-flat {
+            @include border-bottom-radius( 0 !important ); // stylelint-disable-line declaration-no-important
+            border-width: $kendo-input-border-width 0;
+            border-block-start-color: transparent !important; // stylelint-disable-line declaration-no-important
+            background-image: none !important; // stylelint-disable-line declaration-no-important
+        }
+    }
+
     // Input and Textarea
-    .k-input {}
     input.k-input,
     textarea.k-textarea {
         padding-block: $kendo-input-md-padding-y;
@@ -365,6 +517,7 @@
         width: if( $kendo-use-input-button-width, $kendo-input-button-width, auto );
         border-width: 0;
         border-inline-start-width: $kendo-input-button-border-width;
+        border-radius: 0;
         flex: none;
         aspect-ratio: auto;
         box-shadow: none;
@@ -396,6 +549,7 @@
         .k-spinner-decrease {
             border-width: 0;
             border-inline-start-width: $kendo-input-button-border-width;
+            border-radius: 0;
             flex: 1 1 50%;
             box-shadow: none;
             position: relative;
@@ -441,96 +595,6 @@
         overflow: hidden;
         position: relative;
     }
-
-
-    // Fill mode
-    .k-input-flat,
-    .k-picker-flat {
-        @include border-bottom-radius( 0 !important ); // stylelint-disable-line declaration-no-important
-        border-width: $kendo-input-border-width 0;
-        border-block-start-color: transparent !important; // stylelint-disable-line declaration-no-important
-        background-image: none !important; // stylelint-disable-line declaration-no-important
-    }
-
-    .k-input-outline {
-        background: none !important; // stylelint-disable-line declaration-no-important
-    }
-
-
-    // Sizing
-    @each $size, $size-props in $kendo-input-sizes {
-        $_padding-x: map.get( $size-props, padding-x );
-        $_padding-y: map.get( $size-props, padding-y );
-        $_font-size: map.get( $size-props, font-size );
-        $_line-height: map.get( $size-props, line-height );
-        $_button-padding-x: map.get( $size-props, button-padding-x );
-        $_button-padding-y: map.get( $size-props, button-padding-y );
-
-        .k-input-#{$size},
-        .k-picker-#{$size} {
-            font-size: $_font-size;
-            line-height: $_line-height;
-
-            .k-input-values {
-                padding: calc( #{$_padding-y} /2 );
-                gap: calc( #{$_padding-y} / 2 );
-            }
-            .k-input-values > .k-searchbar,
-            .k-input-values > .k-input-inner {
-                margin: calc( calc( #{$_padding-y} / 2 ) * -1 );
-            }
-
-            .k-input-inner {
-                padding-block: $_padding-y;
-                padding-inline: $_padding-x;
-            }
-
-            .k-input-button,
-            .k-spinner-increase,
-            .k-spinner-decrease {
-                padding-block: $_button-padding-y;
-                padding-inline: $_button-padding-x;
-            }
-
-            .k-input-icon,
-            .k-input-validation-icon,
-            .k-input-loading-icon,
-            .k-clear-value,
-            .k-input-prefix > .k-icon,
-            .k-input-prefix > .k-icon-wrapper-host .k-icon,
-            .k-input-prefix > .k-input-prefix-text,
-            .k-input-suffix > .k-icon,
-            .k-input-suffix > .k-icon-wrapper-host .k-icon,
-            .k-input-suffix > .k-input-suffix-text {
-                padding-block: $_padding-y;
-                padding-inline: $_padding-y;
-                box-sizing: content-box;
-            }
-
-            .k-input-separator {
-                &-horizontal {
-                    margin-inline: $_padding-y;
-                }
-
-                &-vertical {
-                    margin-block: $_padding-y;
-                }
-            }
-
-            &.k-icon-picker > .k-input-inner {
-                width: calc( ( #{ $_line-height} * 1em ) );
-                height: calc( ( #{ $_line-height} * 1em ) );
-                padding: $_padding-y;
-                box-sizing: content-box;
-            }
-        }
-
-        select.k-picker-#{$size} {
-            padding-block: $_padding-y;
-            padding-inline: $_padding-x;
-        }
-    }
-
 
     // Angular specific
     .k-input > kendo-popup,

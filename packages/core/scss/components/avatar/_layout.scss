@@ -1,4 +1,6 @@
 @use "./_variables.scss" as *;
+@use "../../functions/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
 
 @mixin kendo-avatar--layout-base() {
 
@@ -19,6 +21,26 @@
         *::before,
         *::after {
             box-sizing: border-box;
+        }
+
+        // Roundness
+        @each $roundness in $kendo-avatar-roundness {
+            #{k-when-default($kendo-avatar-default-roundness, $roundness)}
+            &.k-rounded-#{$roundness} {
+                border-radius: k-border-radius($roundness);
+            }
+        }
+        // Null by default, overrides default border-radius
+        border-radius: $kendo-avatar-border-radius;
+
+        // Sizes
+        @each $name, $size in $kendo-avatar-sizes {
+            #{k-when-default($kendo-avatar-default-size, $name)}
+            &.k-avatar-#{$name} {
+                width: $size;
+                height: $size;
+                flex-basis: $size;
+            }
         }
     }
 
@@ -56,15 +78,6 @@
         }
     }
 
-
-    // Sizes
-    @each $name, $size in $kendo-avatar-sizes {
-        .k-avatar-#{$name} {
-            width: $size;
-            height: $size;
-            flex-basis: $size;
-        }
-    }
 
     // Shapes
     .k-avatar-square {}

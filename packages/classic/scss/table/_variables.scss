@@ -4,6 +4,11 @@
 
 // Table
 
+/// The default size of the Table.
+/// @group table
+/// @role default
+$kendo-table-default-size: "md" !default;
+
 /// The width of the table border.
 /// @group table
 $kendo-table-border-width: 1px !default;
@@ -42,30 +47,6 @@ $kendo-table-lg-cell-padding-x: k-spacing(2) !default;
 /// The vertical padding of the Table cell.
 /// @group table
 $kendo-table-lg-cell-padding-y: k-spacing(2.5) !default;
-
-/// The sizes of the table.
-/// @group table
-$kendo-table-sizes: (
-    sm: (
-        font-size: var( --kendo-font-size, inherit ),
-        line-height: var( --kendo-line-height, normal ),
-        cell-padding-x: $kendo-table-sm-cell-padding-x,
-        cell-padding-y: $kendo-table-sm-cell-padding-y
-    ),
-    md: (
-        font-size: var( --kendo-font-size, inherit ),
-        line-height: var( --kendo-line-height, normal ),
-        cell-padding-x: $kendo-table-md-cell-padding-x,
-        cell-padding-y: $kendo-table-md-cell-padding-y
-    ),
-    lg: (
-        font-size: var( --kendo-font-size, inherit ),
-        line-height: var( --kendo-line-height, normal ),
-        cell-padding-x: $kendo-table-lg-cell-padding-x,
-        cell-padding-y: $kendo-table-lg-cell-padding-y
-    )
-) !default;
-
 
 /// Background color of tables.
 /// @group table
@@ -177,6 +158,7 @@ $kendo-table-cell-row-span-shadow: inset 0 0 0 1px $kendo-table-border !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/table/_variables.scss" with (
+    $kendo-table-default-size: $kendo-table-default-size,
     $kendo-table-border-width: $kendo-table-border-width,
     $kendo-table-cell-vertical-border-width: $kendo-table-cell-vertical-border-width,
     $kendo-table-cell-horizontal-border-width: $kendo-table-cell-horizontal-border-width,
@@ -188,7 +170,6 @@ $kendo-table-cell-row-span-shadow: inset 0 0 0 1px $kendo-table-border !default;
     $kendo-table-md-cell-padding-y: $kendo-table-md-cell-padding-y,
     $kendo-table-lg-cell-padding-x: $kendo-table-lg-cell-padding-x,
     $kendo-table-lg-cell-padding-y: $kendo-table-lg-cell-padding-y,
-    $kendo-table-sizes: $kendo-table-sizes,
     $kendo-table-bg: $kendo-table-bg,
     $kendo-table-text: $kendo-table-text,
     $kendo-table-border: $kendo-table-border,

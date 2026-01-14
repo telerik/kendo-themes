@@ -1,16 +1,18 @@
-@use "../core/_index.scss" as *;
+/// The default theme color of the Overlay.
+/// @group overlay
+/// @role default
+$kendo-overlay-default-theme-color: inverse !default;
+
+/// Background color of the dark overlay.
+/// @group overlay
+$kendo-overlay-bg: null !default;
 
 /// Opacity of the overlay.
 /// @group overlay
 $kendo-overlay-opacity: var( --kendo-overlay-opacity, .4 ) !default;
 
-/// Background color of the dark overlay.
-/// @group overlay
-$kendo-overlay-dark: var( --kendo-overlay-dark, #{$kendo-color-black} ) !default;
-/// Background color of the light overlay.
-/// @group overlay
-$kendo-overlay-light: var( --kendo-overlay-light, #{$kendo-color-white} ) !default;
-
 @forward "@progress/kendo-theme-core/scss/components/overlay/_variables.scss" with (
+    $kendo-overlay-default-theme-color: $kendo-overlay-default-theme-color,
+    $kendo-overlay-bg: $kendo-overlay-bg,
     $kendo-overlay-opacity: $kendo-overlay-opacity
 );

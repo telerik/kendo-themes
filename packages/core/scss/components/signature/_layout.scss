@@ -1,6 +1,8 @@
 @use "sass:map";
 @use "./variables.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "../../z-index/index.scss" as *;
+@use "../input/_variables.scss" as *;
 
 @mixin kendo-signature--layout-base() {
 
@@ -21,6 +23,30 @@
                 border-block-end-width: $kendo-signature-maximized-line-width;
             }
         }
+
+        // Sizes
+        @each $size, $size-props in $kendo-signature-sizes {
+            $_padding-x: map.get($size-props, padding-x);
+            $_padding-y: map.get($size-props, padding-y);
+            $_line-size: map.get($size-props, line-size);
+            $_line-offset: map.get($size-props, line-offset);
+
+            #{k-when-default($kendo-input-default-size, $size)}
+            &.k-signature-#{$size} {
+                padding-inline: $_padding-x;
+                padding-block: $_padding-y;
+
+                .k-signature-line {
+                    width: $_line-size;
+                }
+            }
+        }
+
+        #{k-when-default($kendo-input-default-size, "lg")}
+        &.k-signature-lg {
+            min-height: $kendo-signature-lg-min-height;
+        }
+
     }
 
     .k-signature-actions {
@@ -49,27 +75,6 @@
         pointer-events: none;
         border-block-end-width: $kendo-signature-line-width;
         border-block-end-style: $kendo-signature-line-style;
-    }
-
-    // Sizes
-    @each $size, $size-props in $kendo-signature-sizes {
-        $_padding-x: map.get($size-props, padding-x);
-        $_padding-y: map.get($size-props, padding-y);
-        $_line-size: map.get($size-props, line-size);
-        $_line-offset: map.get($size-props, line-offset);
-
-        .k-signature-#{$size} {
-            padding-inline: $_padding-x;
-            padding-block: $_padding-y;
-
-            .k-signature-line {
-                width: $_line-size;
-            }
-        }
-    }
-
-    .k-signature-lg {
-        min-height: $kendo-signature-lg-min-height;
     }
 
 }

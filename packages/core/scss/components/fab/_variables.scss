@@ -1,5 +1,10 @@
 // Floating Action Button
 
+$kendo-fab-default-theme-color: null !default;
+$kendo-fab-default-fill-mode: null !default;
+$kendo-fab-default-roundness: null !default;
+$kendo-fab-default-size: null !default;
+
 $kendo-fab-border-width: null !default;
 
 $kendo-fab-font-family: null !default;
@@ -33,10 +38,6 @@ $kendo-fab-item-icon-padding-y: null !default;
 $kendo-fab-item-icon-border-width: null !default;
 $kendo-fab-item-icon-border-radius: null !default;
 
-$kendo-fab-theme-colors: null !default;
-
-$kendo-fab-sizes: null !default;
-
 $kendo-fab-shadow: null !default;
 $kendo-fab-disabled-shadow: null !default;
 $kendo-fab-active-shadow: null !default;
@@ -59,3 +60,27 @@ $kendo-fab-item-outline-width: null !default;
 $kendo-fab-item-outline-color: null !default;
 
 $kendo-fab-generating-opacity: null !default;
+
+$kendo-fab-roundness: ( "none", "sm", "md", "lg", "full" ) !default;
+
+/// The theme colors map of the FloatingActionButton.
+/// @group fab
+$kendo-fab-theme-colors: ("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse") !default;
+
+/// The sizes map of the FloatingActionButton.
+/// @group fab
+$kendo-fab-sizes: (
+    sm: (
+        padding-x: $kendo-fab-sm-padding-x,
+        padding-y: $kendo-fab-sm-padding-y
+    ),
+    md: (
+        padding-x: $kendo-fab-md-padding-x,
+        padding-y: $kendo-fab-md-padding-y
+    ),
+    lg: (
+        padding-x: $kendo-fab-lg-padding-x,
+        padding-y: $kendo-fab-lg-padding-y
+    )
+) !default;
+

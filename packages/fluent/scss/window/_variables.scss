@@ -1,6 +1,16 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
+/// The default size of the Window.
+/// @group window
+/// @role default
+$kendo-window-default-size: auto !default;
+
+/// The default theme color of the Window.
+/// @group window
+/// @role default
+$kendo-window-default-theme-color: null !default;
+
 /// The width of the border around the Window.
 /// @group window
 $kendo-window-border-width: var(--kendo-window-border-width, 0) !default;
@@ -96,23 +106,8 @@ $kendo-window-titlebar-text: var( --kendo-window-titlebar-text, k-color(on-app-s
 /// @group window
 $kendo-window-titlebar-border: var( --kendo-window-titlebar-border, k-color(primary) ) !default;
 
-/// The map of the width of the different Window sizes.
-/// @group window
-$kendo-window-sizes: (
-    sm: 300px,
-    md: 800px,
-    lg: 1200px
-) !default;
-
-/// The theme colors map for the Window.
-/// @group window
-$kendo-window-theme-colors: (
-    "primary": k-color(primary),
-    "light": k-color(light),
-    "dark": k-color(dark)
-) !default;
-
 @forward "@progress/kendo-theme-core/scss/components/window/_variables.scss" with (
+    $kendo-window-default-theme-color: $kendo-window-default-theme-color,
     $kendo-window-border-width: $kendo-window-border-width,
     $kendo-window-border-radius: $kendo-window-border-radius,
     $kendo-window-font-family: $kendo-window-font-family,
@@ -140,7 +135,6 @@ $kendo-window-theme-colors: (
     $kendo-window-titlebar-bg: $kendo-window-titlebar-bg,
     $kendo-window-titlebar-text: $kendo-window-titlebar-text,
     $kendo-window-titlebar-border: $kendo-window-titlebar-border,
-    $kendo-window-sizes: $kendo-window-sizes,
-    $kendo-window-theme-colors: $kendo-window-theme-colors
+    $kendo-window-default-size: $kendo-window-default-size
 );
 

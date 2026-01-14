@@ -24,14 +24,13 @@
             outline-style: $kendo-chip-focus-outline-style;
             outline-offset: $kendo-chip-focus-offset;
         }
-    }
 
-
-    // Chip avatar
-    .k-chip-avatar {
-        width: $kendo-chip-avatar-width;
-        height: $kendo-chip-avatar-height;
-        flex-basis: $kendo-chip-avatar-flex-basis;
+        // Chip avatar
+        &.k-chip-avatar {
+            width: $kendo-chip-avatar-width;
+            height: $kendo-chip-avatar-height;
+            flex-basis: $kendo-chip-avatar-flex-basis;
+        }
     }
 
 }

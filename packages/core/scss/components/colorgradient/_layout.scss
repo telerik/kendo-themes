@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "sass:math";
 @use "../../mixins/index.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "../../color-system/_constants.scss" as *;
 @use "../../z-index/index.scss" as *;
 @use "../../motion/index.scss" as *;
@@ -32,6 +33,48 @@
         *::before,
         *::after {
             box-sizing: border-box;
+        }
+
+        // ColorGradient sizes
+        @each $size, $size-props in $kendo-color-gradient-sizes {
+            $_width: map.get( $size-props, width );
+            $_gap: map.get( $size-props, gap );
+            $_vertical-slider-height: map.get( $size-props, vertical-slider-height );
+            $_rectangle-height: map.get( $size-props, rectangle-height );
+            $_input-width: map.get( $size-props, input-width );
+            $_canvas-gap: map.get( $size-props, canvas-gap );
+            $_padding-x: map.get( $size-props, padding-x );
+            $_padding-y: map.get( $size-props, padding-y );
+
+            #{k-when-default($kendo-color-gradient-default-size, $size)}
+            &.k-colorgradient-#{$size} {
+                width: $_width;
+                gap: $_gap;
+                padding-block: $_padding-y;
+                padding-inline: $_padding-x;
+
+                .k-colorgradient-inputs {
+                    .k-numerictextbox {
+                        width: $_input-width;
+                    }
+                }
+
+                .k-colorgradient-canvas {
+                    gap: $_canvas-gap;
+
+                    .k-hsv-gradient {
+                        height: $_rectangle-height;
+                    }
+
+                    .k-slider-vertical {
+                        height: $_vertical-slider-height;
+                    }
+
+                    .k-hsv-controls {
+                        gap: $_canvas-gap;
+                    }
+                }
+            }
         }
     }
 
@@ -132,47 +175,6 @@
         }
     }
 
-    // ColorGradient sizes
-    @each $size, $size-props in $kendo-color-gradient-sizes {
-        $_width: map.get( $size-props, width );
-        $_gap: map.get( $size-props, gap );
-        $_vertical-slider-height: map.get( $size-props, vertical-slider-height );
-        $_rectangle-height: map.get( $size-props, rectangle-height );
-        $_input-width: map.get( $size-props, input-width );
-        $_canvas-gap: map.get( $size-props, canvas-gap );
-        $_padding-x: map.get( $size-props, padding-x );
-        $_padding-y: map.get( $size-props, padding-y );
-
-        .k-colorgradient-#{$size} {
-            width: $_width;
-            gap: $_gap;
-            padding-block: $_padding-y;
-            padding-inline: $_padding-x;
-
-            .k-colorgradient-inputs {
-                .k-numerictextbox {
-                    width: $_input-width;
-                }
-            }
-
-            .k-colorgradient-canvas {
-                gap: $_canvas-gap;
-
-                .k-hsv-gradient {
-                    height: $_rectangle-height;
-                }
-
-                .k-slider-vertical {
-                    height: $_vertical-slider-height;
-                }
-
-                .k-hsv-controls {
-                    gap: $_canvas-gap;
-                }
-            }
-        }
-    }
-
 
     // Inputs
     .k-colorgradient-inputs {
@@ -190,7 +192,7 @@
             width: $kendo-color-gradient-input-width;
         }
 
-        .k-input-inner {
+        .k-input .k-input-inner {
             padding-inline-start: 2px;
             padding-inline-end: 2px;
             text-align: center;

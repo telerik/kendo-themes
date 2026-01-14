@@ -1,4 +1,6 @@
 @use "sass:map";
+@use "../../functions/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
 @use "../../color-system/_functions.scss" as *;
 @use "./_variables.scss" as *;
 @use "../../z-index/index.scss" as *;
@@ -28,6 +30,37 @@
         *::after {
             box-sizing: border-box;
         }
+
+        // Roundness
+        @each $roundness in $kendo-badge-roundness {
+            #{k-when-default($kendo-badge-default-roundness, $roundness)}
+            &.k-rounded-#{$roundness} {
+                border-radius: k-border-radius($roundness);
+            }
+        }
+
+        // Badge sizes
+        @each $size, $size-props in $kendo-badge-sizes {
+            $_padding-x: map.get( $size-props, padding-x );
+            $_padding-y: map.get( $size-props, padding-y );
+            $_font-size: map.get( $size-props, font-size );
+            $_line-height: map.get( $size-props, line-height );
+            $_min-width: map.get( $size-props, min-width );
+
+            #{k-when-default($kendo-badge-default-size, $size)}
+            &.k-badge-#{$size} {
+                padding-block: $_padding-y;
+                padding-inline: $_padding-x;
+                font-size: $_font-size;
+                line-height: $_line-height;
+                min-width: $_min-width;
+
+                &:empty {
+                    padding: $_padding-y;
+                    min-width: auto;
+                }
+            }
+        }
     }
     .k-badge > * {
         color: inherit;
@@ -55,28 +88,6 @@
         fill: currentColor;
     }
 
-
-    // Badge sizes
-    @each $size, $size-props in $kendo-badge-sizes {
-        $_padding-x: map.get( $size-props, padding-x );
-        $_padding-y: map.get( $size-props, padding-y );
-        $_font-size: map.get( $size-props, font-size );
-        $_line-height: map.get( $size-props, line-height );
-        $_min-width: map.get( $size-props, min-width );
-
-        .k-badge-#{$size} {
-            padding-block: $_padding-y;
-            padding-inline: $_padding-x;
-            font-size: $_font-size;
-            line-height: $_line-height;
-            min-width: $_min-width;
-
-            &:empty {
-                padding: $_padding-y;
-                min-width: auto;
-             }
-        }
-    }
 
     kendo-badge-container {
         display: inline-block;

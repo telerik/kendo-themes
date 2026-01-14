@@ -1,7 +1,8 @@
 @use "./_variables.scss" as *;
 
 @use "@progress/kendo-svg-icons/scss/index.scss" as * with (
-    $ki-icon-size: $kendo-icon-size
+    $ki-icon-size: $kendo-icon-size,
+    $ki-icon-default-size: $kendo-icon-default-size
 );
 
 @mixin kendo-icon--layout-base() {

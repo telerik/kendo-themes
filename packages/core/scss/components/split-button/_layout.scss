@@ -1,4 +1,6 @@
+@use "../../functions/index.scss" as *;
 @use "./_variables.scss" as *;
+@use "../button/_variables.scss" as *;
 
 @mixin kendo-split-button--layout-base() {
 
@@ -13,16 +15,19 @@
         aspect-ratio: auto;
         flex: none;
 
+        #{k-when-default($kendo-button-default-size, "sm")}
         &.k-button-sm {
             padding-block: $kendo-split-button-sm-arrow-padding-y;
             padding-inline: $kendo-split-button-sm-arrow-padding-x;
         }
 
+        #{k-when-default($kendo-button-default-size, "md")}
         &.k-button-md {
             padding-block: $kendo-split-button-md-arrow-padding-y;
             padding-inline: $kendo-split-button-md-arrow-padding-x;
         }
 
+        #{k-when-default($kendo-button-default-size, "lg")}
         &.k-button-lg {
             padding-block: $kendo-split-button-lg-arrow-padding-y;
             padding-inline: $kendo-split-button-lg-arrow-padding-x;

@@ -1,3 +1,5 @@
+$kendo-column-menu-default-size: null !default;
+
 $kendo-column-menu-item-sm-padding-x: null !default;
 $kendo-column-menu-item-sm-padding-y: null !default;
 
@@ -19,23 +21,28 @@ $kendo-column-menu-lg-line-height: null !default;
 
 $kendo-column-menu-font-family: null !default;
 
+/// The sizes map of the ColumnMenu.
+/// @group column-menu
+
+/// The sizes map for the ColumnMenu.
+/// @group column-menu
 $kendo-column-menu-sizes: (
     sm: (
         padding-x: $kendo-column-menu-item-sm-padding-x,
         padding-y: $kendo-column-menu-item-sm-padding-y,
-        font-size: $kendo-column-menu-item-sm-font-size,
+        font-size: $kendo-column-menu-sm-font-size,
         line-height: $kendo-column-menu-sm-line-height
     ),
     md: (
         padding-x: $kendo-column-menu-item-md-padding-x,
         padding-y: $kendo-column-menu-item-md-padding-y,
-        font-size: $kendo-column-menu-item-md-font-size,
+        font-size: $kendo-column-menu-md-font-size,
         line-height: $kendo-column-menu-md-line-height
     ),
     lg: (
         padding-x: $kendo-column-menu-item-lg-padding-x,
         padding-y: $kendo-column-menu-item-lg-padding-y,
-        font-size: $kendo-column-menu-item-lg-font-size,
+        font-size: $kendo-column-menu-lg-font-size,
         line-height: $kendo-column-menu-lg-line-height
     )
 ) !default;

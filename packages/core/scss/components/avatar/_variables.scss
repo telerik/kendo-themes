@@ -2,12 +2,33 @@
 
 // Avatar
 
+$kendo-avatar-default-theme-color: null !default;
+$kendo-avatar-default-fill-mode: null !default;
+$kendo-avatar-default-roundness: null !default;
+$kendo-avatar-default-size: null !default;
+
+$kendo-avatar-roundness: ( "none", "sm", "md", "lg", "full" ) !default;
+
 $kendo-avatar-border-width: null !default;
+$kendo-avatar-border-radius: null !default;
 
 $kendo-avatar-font-family: null !default;
 $kendo-avatar-font-size: null !default;
 $kendo-avatar-line-height: null !default;
 
-$kendo-avatar-sizes: null !default;
 
-$kendo-avatar-theme-colors: null !default;
+$kendo-avatar-sm-size: null !default;
+$kendo-avatar-md-size: null !default;
+$kendo-avatar-lg-size: null !default;
+
+/// The sizes map of the Avatar.
+/// @group avatar
+$kendo-avatar-sizes: (
+    sm: $kendo-avatar-sm-size,
+    md: $kendo-avatar-md-size,
+    lg: $kendo-avatar-lg-size
+) !default;
+
+/// The theme colors map of the Avatar.
+/// @group avatar
+$kendo-avatar-theme-colors: ("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse") !default;

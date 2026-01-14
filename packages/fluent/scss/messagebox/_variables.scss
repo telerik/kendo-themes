@@ -1,6 +1,11 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
+/// The default theme color of the MessageBox.
+/// @group messagebox
+/// @role default
+$kendo-message-box-default-theme-color: null !default;
+
 /// Margin around the message box.
 /// @group messagebox
 $kendo-message-box-margin: var( --kendo-message-box-margin, 0 0 k-spacing(3) 0 ) !default;
@@ -42,28 +47,13 @@ $kendo-message-box-link-text: var( --kendo-message-box-link-text, k-color(primar
 /// @group messagebox
 $kendo-message-box-link-hover-text: var( --kendo-message-box-link-hover-text, k-color(primary-hover) ) !default;
 
-/// The theme colors of the Messagebox.
-/// @group messagebox
-$kendo-messagebox-theme-colors: (
-    "primary": k-color(primary),
-     "secondary": k-color(secondary),
-     "tertiary": k-color(tertiary),
-     "info": k-color(info),
-     "success": k-color(success),
-     "warning": k-color(warning),
-     "error": k-color(error),
-     "dark": k-color(dark),
-     "light": k-color(light),
-     "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
-) !default;
-
 @forward "@progress/kendo-theme-core/scss/components/messagebox/_variables.scss" with (
+    $kendo-message-box-default-theme-color: $kendo-message-box-default-theme-color,
     $kendo-message-box-margin: $kendo-message-box-margin,
     $kendo-message-box-padding-x: $kendo-message-box-padding-x,
     $kendo-message-box-padding-y: $kendo-message-box-padding-y,
     $kendo-message-box-border-width: $kendo-message-box-border-width,
     $kendo-message-box-font-size: $kendo-message-box-font-size,
     $kendo-message-box-line-height: $kendo-message-box-line-height,
-    $kendo-message-box-link-font-style: $kendo-message-box-link-font-style,
-    $kendo-message-box-theme-colors: $kendo-messagebox-theme-colors
+    $kendo-message-box-link-font-style: $kendo-message-box-link-font-style
 );

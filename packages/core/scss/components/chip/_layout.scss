@@ -1,5 +1,7 @@
 @use "sass:map";
 @use "./_variables.scss" as *;
+@use "../../functions/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
 @use "../../motion/index.scss" as *;
 
 @mixin kendo-chip--layout-base() {
@@ -34,6 +36,34 @@
 
         .k-selected-icon-wrapper {
             display: none !important; // stylelint-disable-line declaration-no-important
+        }
+
+        // Roundness
+        @each $roundness in $kendo-chip-roundness {
+            #{k-when-default($kendo-chip-default-roundness, $roundness)}
+            &.k-rounded-#{$roundness} {
+                border-radius: k-border-radius($roundness);
+            }
+        }
+
+        // Sizes
+        @each $size, $size-props in $kendo-chip-sizes {
+            $_padding-x: map.get( $size-props, padding-x );
+            $_padding-y: map.get( $size-props, padding-y );
+            $_font-size: map.get( $size-props, font-size );
+            $_line-height: map.get( $size-props, line-height );
+
+            #{k-when-default($kendo-chip-default-size, $size)}
+            &.k-chip-#{$size} {
+                padding-block: $_padding-y;
+                padding-inline: $_padding-x;
+                font-size: $_font-size;
+                line-height: $_line-height;
+
+                .k-chip-action {
+                    padding: $_padding-y;
+                }
+            }
         }
     }
 
@@ -79,6 +109,9 @@
         background-size: cover;
         background-position: center;
         flex: none;
+        width: 1em;
+        height: 1em;
+        flex-basis: 1em;
     }
 
 
@@ -129,37 +162,13 @@
         position: relative;
     }
 
-    // Sizes
-    @each $size, $size-props in $kendo-chip-sizes {
-        $_padding-x: map.get( $size-props, padding-x );
-        $_padding-y: map.get( $size-props, padding-y );
-        $_font-size: map.get( $size-props, font-size );
-        $_line-height: map.get( $size-props, line-height );
-        $_avatar-size: 1em;
-
-        .k-chip-#{$size} {
-            padding-block: $_padding-y;
-            padding-inline: $_padding-x;
-            font-size: $_font-size;
-            line-height: $_line-height;
-
-            .k-chip-action {
-                padding: $_padding-y;
+    .k-chip-list {
+        // Sizes
+        @each $name, $size in $kendo-chip-list-sizes {
+            #{k-when-default($kendo-chip-default-size, $name)}
+            &.k-chip-list-#{$name} {
+                gap: $size;
             }
-        }
-
-        .k-chip-avatar {
-            width: $_avatar-size;
-            height: $_avatar-size;
-            flex-basis: $_avatar-size;
-        }
-
-    }
-
-    // Sizes
-    @each $name, $size in $kendo-chip-list-sizes {
-        .k-chip-list-#{$name} {
-            gap: $size;
         }
     }
 

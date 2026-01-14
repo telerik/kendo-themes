@@ -182,6 +182,16 @@ $kendo-checkbox-disabled-indeterminate-text: var( --kendo-checkbox-disabled-inde
 /// @group checkbox
 $kendo-checkbox-disabled-indeterminate-border: var( --kendo-checkbox-disabled-indeterminate-border, $kendo-checkbox-disabled-border ) !default;
 
+/// The default size of the Checkbox.
+/// @group checkbox
+/// @role default
+$kendo-checkbox-default-size: md !default;
+
+/// The default roundness of the Checkbox.
+/// @group checkbox
+/// @role default
+$kendo-checkbox-default-roundness: md !default;
+
 // Checkbox indicator
 
 /// The type of the CheckBox indicator.
@@ -294,5 +304,7 @@ $kendo-checkbox-ripple-opacity: var( --kendo-checkbox-ripple-opacity, .25 ) !def
     $kendo-checkbox-list-item-padding-x: $kendo-checkbox-list-item-padding-x,
     $kendo-checkbox-list-item-padding-y: $kendo-checkbox-list-item-padding-y,
     $kendo-checkbox-ripple-bg: $kendo-checkbox-ripple-bg,
-    $kendo-checkbox-ripple-opacity: $kendo-checkbox-ripple-opacity
+    $kendo-checkbox-ripple-opacity: $kendo-checkbox-ripple-opacity,
+    $kendo-checkbox-default-size: $kendo-checkbox-default-size,
+    $kendo-checkbox-default-roundness: $kendo-checkbox-default-roundness
 );

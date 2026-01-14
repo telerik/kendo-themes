@@ -2,6 +2,15 @@
 @use "../core/_index.scss" as *;
 @use "../button/_variables.scss" as *;
 
+/// The default fill mode of the Toolbar.
+/// @group toolbar
+/// @role default
+$kendo-toolbar-default-fill-mode: "solid" !default;
+/// The default size of the Toolbar.
+/// @group toolbar
+/// @role default
+$kendo-toolbar-default-size: "md" !default;
+
 /// The horizontal padding of the small Toolbar.
 /// @group toolbar
 $kendo-toolbar-sm-padding-x: calc( var( --kendo-toolbar-sm-padding-x, #{k-spacing(2)} ) + 1px ) !default;
@@ -113,30 +122,9 @@ $kendo-toolbar-item-focus-outline-style: var( --kendo-toolbar-item-focus-outline
 /// @group toolbar
 $kendo-toolbar-item-focus-outline-color: var( --kendo-toolbar-item-focus-outline-color, #{k-color(base-emphasis)} ) !default;
 
-/// The sizes map for the Toolbar.
-/// @group toolbar
-$kendo-toolbar-sizes: (
-    sm: (
-        padding-x: $kendo-toolbar-sm-padding-x,
-        padding-y: $kendo-toolbar-sm-padding-y,
-        spacing: $kendo-toolbar-sm-spacing,
-        separator-height: $kendo-toolbar-sm-separator-height
-    ),
-    md: (
-        padding-x: $kendo-toolbar-md-padding-x,
-        padding-y: $kendo-toolbar-md-padding-y,
-        spacing: $kendo-toolbar-md-spacing,
-        separator-height: $kendo-toolbar-md-separator-height
-    ),
-    lg: (
-        padding-x: $kendo-toolbar-lg-padding-x,
-        padding-y: $kendo-toolbar-lg-padding-y,
-        spacing: $kendo-toolbar-lg-spacing,
-        separator-height: $kendo-toolbar-lg-separator-height
-    )
-) !default;
-
 @forward "@progress/kendo-theme-core/scss/components/toolbar/_variables.scss" with (
+    $kendo-toolbar-default-fill-mode: $kendo-toolbar-default-fill-mode,
+    $kendo-toolbar-default-size: $kendo-toolbar-default-size,
     $kendo-toolbar-sm-padding-x: $kendo-toolbar-sm-padding-x,
     $kendo-toolbar-md-padding-x: $kendo-toolbar-md-padding-x,
     $kendo-toolbar-lg-padding-x: $kendo-toolbar-lg-padding-x,
@@ -165,6 +153,5 @@ $kendo-toolbar-sizes: (
     $kendo-toolbar-flat-border: $kendo-toolbar-flat-border,
     $kendo-toolbar-flat-scroll-overlay: $kendo-toolbar-flat-scroll-overlay,
     $kendo-toolbar-separator-border: $kendo-toolbar-separator-border,
-    $kendo-toolbar-input-width: $kendo-toolbar-input-width,
-    $kendo-toolbar-sizes: $kendo-toolbar-sizes
+    $kendo-toolbar-input-width: $kendo-toolbar-input-width
 );

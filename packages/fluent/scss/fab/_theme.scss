@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/fab/_theme.scss" as *;
 
@@ -43,13 +44,17 @@
             border-color: $kendo-fab-disabled-border;
             box-shadow: none;
         }
-    }
 
-    .k-fab-solid-warning,
-    .k-fab-solid-light {
-        &:focus::after,
-        &.k-focus::after {
-            outline-color: k-color(app-surface);
+        #{k-when-default($kendo-fab-default-fill-mode, "solid")}
+        &.k-fab-solid {
+            #{k-when-default($kendo-fab-default-theme-color, ("warning", "light"))}
+            &.k-fab-warning,
+            &.k-fab-light {
+                &:focus::after,
+                &.k-focus::after {
+                    outline-color: k-color(app-surface);
+                }
+            }
         }
     }
 
