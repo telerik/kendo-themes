@@ -97,5 +97,29 @@ module.exports = [
         rules: {
             "@typescript-eslint/no-explicit-any": "error"
         }
+    },
+    {
+        name: "units",
+        files: [
+            "units/**/*.ts"
+        ],
+        ignores: [
+            "units/specificity-analyzer.ts"
+        ],
+        plugins: {
+            "@typescript-eslint": tseslint.plugin
+        },
+        languageOptions: {
+            parser: tseslint.parser,
+            globals: {
+                ...globals.node
+            }
+        },
+        rules: {
+            ...tseslint.configs.recommended.rules,
+            "@typescript-eslint/no-unused-vars": ["error", {"varsIgnorePattern": "^_"}],
+            "no-unused-vars": "off",
+            "no-undef": "off"
+        }
     }
 ]

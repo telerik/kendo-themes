@@ -89,3 +89,64 @@ To add stricter linting for a new folder:
 2. Fix any violations in the folder before committing
 
 3. Document the path in the table above
+
+## Resilience Utilities
+
+### Retry with Backoff
+
+Location: `units/lib/retry.ts`
+
+A typed utility for retrying async operations with exponential backoff and timeout support.
+
+**Behavior:**
+- Retries the operation up to `maxRetries` times on failure (default: 3)
+- Uses exponential backoff: delay doubles after each attempt
+- Aborts if total elapsed time exceeds `timeoutMs` (default: 30s)
+- Returns typed errors with codes: `ETIMEDOUT` or `ERETRY_EXHAUSTED`
+
+**Usage:**
+```typescript
+import { retryWithBackoff } from '../lib/retry';
+
+const result = await retryWithBackoff(
+    () => fetchData(),
+    {
+        maxRetries: 3,
+        baseDelayMs: 100,
+        timeoutMs: 30000,
+        operation: 'fetchData'
+    }
+);
+```
+
+**Error Codes:**
+| Code | Meaning |
+|------|---------|
+| `ETIMEDOUT` | Overall timeout exceeded |
+| `ERETRY_EXHAUSTED` | All retry attempts failed |
+
+**Tests:** `units/scripts/retry.test.ts`
+
+### Graceful Cleanup Pattern
+
+Scripts with long-running resources (browser, server) use try/catch with a cleanup handler to ensure resources are released even on errors.
+
+Example from `scripts/render-test-pages.mjs`:
+```javascript
+async function cleanup(browser, server, error) {
+    try { await browser.close(); } catch {}
+    try { server.close(); } catch {}
+    if (error) {
+        console.error('Script failed:', error.message);
+        process.exitCode = 1;
+    }
+}
+
+// Usage in main flow
+try {
+    // ... main logic ...
+    await cleanup(browser, server);
+} catch (error) {
+    await cleanup(browser, server, error);
+}
+```
