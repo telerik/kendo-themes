@@ -12,8 +12,8 @@ Feature flags allow consumers to enable/disable non-critical behaviors at compil
 
 ### `$kendo-enable-user-select-utils`
 
-**Package:** `@progress/kendo-theme-utils`  
-**Location:** `packages/utils/scss/interactivity/_user-select.scss`  
+**Package:** `@progress/kendo-theme-utils`
+**Location:** `packages/utils/scss/interactivity/_user-select.scss`
 **Default:** `true` (enabled)
 
 Controls generation of user-select utility classes (`.k-user-select-none`, `.k-user-select-auto`, etc.).

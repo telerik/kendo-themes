@@ -1884,6 +1884,36 @@ The following table lists the available variables for customizing the Theme Util
 </tbody>
 </table>
 
+### UtilsFlags
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-enable-user-select-utils</td>
+    <td>Boolean</td>
+    <td><code>true</code></td>
+    <td><code>true</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Feature flag to enable/disable user-select utility classes.<br />Safe default is `true` (enabled). Set to `false` to exclude from CSS output.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 
 
 
