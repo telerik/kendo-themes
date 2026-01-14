@@ -28,6 +28,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-column-menu-default-size</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the ColumnMenu.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-column-menu-item-sm-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
@@ -178,35 +188,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-column-menu-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: (
-        padding-x: $kendo-column-menu-item-sm-padding-x,
-        padding-y: $kendo-column-menu-item-sm-padding-y,
-        font-size: $kendo-column-menu-sm-font-size,
-        line-height: $kendo-column-menu-sm-line-height
-    ),
-    md: (
-        padding-x: $kendo-column-menu-item-md-padding-x,
-        padding-y: $kendo-column-menu-item-md-padding-y,
-        font-size: $kendo-column-menu-md-font-size,
-        line-height: $kendo-column-menu-md-line-height
-    ),
-    lg: (
-        padding-x: $kendo-column-menu-item-lg-padding-x,
-        padding-y: $kendo-column-menu-item-lg-padding-y,
-        font-size: $kendo-column-menu-lg-font-size,
-        line-height: $kendo-column-menu-lg-line-height
-    )
-)</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286</li><li>md: "padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height, normal)"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the ColumnMenu.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-group-menu-item-action-hover-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, currentColor 4%, transparent)</code></td>
@@ -244,6 +225,35 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the GroupMenu item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        padding-x: $kendo-column-menu-item-sm-padding-x,
+        padding-y: $kendo-column-menu-item-sm-padding-y,
+        font-size: $kendo-column-menu-sm-font-size,
+        line-height: $kendo-column-menu-sm-line-height
+    ),
+    md: (
+        padding-x: $kendo-column-menu-item-md-padding-x,
+        padding-y: $kendo-column-menu-item-md-padding-y,
+        font-size: $kendo-column-menu-md-font-size,
+        line-height: $kendo-column-menu-md-line-height
+    ),
+    lg: (
+        padding-x: $kendo-column-menu-item-lg-padding-x,
+        padding-y: $kendo-column-menu-item-lg-padding-y,
+        font-size: $kendo-column-menu-lg-font-size,
+        line-height: $kendo-column-menu-lg-line-height
+    )
+)</code></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286</li><li>md: "padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height, normal)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the ColumnMenu.</div></div>
     </td>
 </tr>
 </tbody>

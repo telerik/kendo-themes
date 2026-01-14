@@ -510,6 +510,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-checkbox-default-size</td>
+    <td>String</td>
+    <td><code>md</code></td>
+    <td><code>md</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-default-roundness</td>
+    <td>String</td>
+    <td><code>md</code></td>
+    <td><code>md</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default roundness of the Checkbox.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-checkbox-indicator-type</td>
     <td>String</td>
     <td><code>image</code></td>

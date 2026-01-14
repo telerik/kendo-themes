@@ -28,6 +28,26 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-window-default-size</td>
+    <td>String</td>
+    <td><code>auto</code></td>
+    <td><code>auto</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Window.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-default-theme-color</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the Window.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-window-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -311,28 +331,25 @@ The following table lists the available variables for customization.
     <td>$kendo-window-sizes</td>
     <td>Map</td>
     <td><code>(
+    auto: null,
     sm: 300px,
     md: 800px,
     lg: 1200px
 )</code></td>
-    <td><ul><li>sm: 300px</li><li>md: 800px</li><li>lg: 1200px</li></ul></td>
+    <td><ul><li>auto: null</li><li>sm: 300px</li><li>md: 800px</li><li>lg: 1200px</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map of the width for the different Window sizes.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Window.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-window-theme-colors</td>
-    <td>Map</td>
-    <td><code>(
-    "primary": k-color(primary),
-    "light": k-color(light),
-    "dark": k-color(dark)
-)</code></td>
-    <td><ul><li>primary: var(--kendo-color-primary, #f35800)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>dark: var(--kendo-color-dark, #404040)</li></ul></td>
+    <td>List</td>
+    <td><code>("primary", "light", "dark")</code></td>
+    <td><code>("primary", "light", "dark")</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Window.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Window.</div></div>
     </td>
 </tr>
 </tbody>

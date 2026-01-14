@@ -28,6 +28,46 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-chip-default-theme-color</td>
+    <td>String</td>
+    <td><code>"base"</code></td>
+    <td><code>"base"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the Chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-default-fill-mode</td>
+    <td>String</td>
+    <td><code>"solid"</code></td>
+    <td><code>"solid"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default fill mode of the Chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-default-roundness</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default roundness of the Chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-default-size</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Chip.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chip-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -198,35 +238,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: (
-        padding-x: $kendo-chip-sm-padding-x,
-        padding-y: $kendo-chip-sm-padding-y,
-        font-size: $kendo-chip-sm-font-size,
-        line-height: $kendo-chip-sm-line-height
-    ),
-    md: (
-        padding-x: $kendo-chip-md-padding-x,
-        padding-y: $kendo-chip-md-padding-y,
-        font-size: $kendo-chip-md-font-size,
-        line-height: $kendo-chip-md-line-height
-    ),
-    lg: (
-        padding-x: $kendo-chip-lg-padding-x,
-        padding-y: $kendo-chip-lg-padding-y,
-        font-size: $kendo-chip-lg-font-size,
-        line-height: $kendo-chip-lg-line-height
-    )
-)</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li><li>md: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li><li>lg: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the Chip.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-chip-base-bg</td>
     <td>String</td>
     <td><code>$kendo-button-bg</code></td>
@@ -234,22 +245,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the Chip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chip-theme-colors</td>
-    <td>Map</td>
-    <td><code>(
-    "base": $kendo-chip-base-bg,
-    "error": k-color(error-subtle),
-    "info": k-color(info-subtle),
-    "warning": k-color(warning-subtle),
-    "success": k-color(success-subtle)
-)</code></td>
-    <td><ul><li>base: var(--kendo-color-base, #ebebeb)</li><li>error: var(--kendo-color-error-subtle, #f4c3b8)</li><li>info: var(--kendo-color-info-subtle, #cce5f3)</li><li>warning: var(--kendo-color-warning-subtle, #ffdead)</li><li>success: var(--kendo-color-success-subtle, #bbdfc1)</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -433,17 +428,86 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-chip-list-size-sm</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the small Chip list.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-list-size-md</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the medium Chip list.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-list-size-lg</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the large Chip list.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        padding-x: $kendo-chip-sm-padding-x,
+        padding-y: $kendo-chip-sm-padding-y,
+        font-size: $kendo-chip-sm-font-size,
+        line-height: $kendo-chip-sm-line-height
+    ),
+    md: (
+        padding-x: $kendo-chip-md-padding-x,
+        padding-y: $kendo-chip-md-padding-y,
+        font-size: $kendo-chip-md-font-size,
+        line-height: $kendo-chip-md-line-height
+    ),
+    lg: (
+        padding-x: $kendo-chip-lg-padding-x,
+        padding-y: $kendo-chip-lg-padding-y,
+        font-size: $kendo-chip-lg-font-size,
+        line-height: $kendo-chip-lg-line-height
+    )
+)</code></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li><li>md: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li><li>lg: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Chip.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chip-list-sizes</td>
     <td>Map</td>
     <td><code>(
-    sm: k-spacing(1),
-    md: k-spacing(1),
-    lg: k-spacing(1)
+    sm: $kendo-chip-list-size-sm,
+    md: $kendo-chip-list-size-md,
+    lg: $kendo-chip-list-size-lg
 )</code></td>
     <td><ul><li>sm: var(--kendo-spacing-1, 0.25rem)</li><li>md: var(--kendo-spacing-1, 0.25rem)</li><li>lg: var(--kendo-spacing-1, 0.25rem)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the Chip list.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-theme-colors</td>
+    <td>List</td>
+    <td><code>("base", "error", "info", "warning", "success")</code></td>
+    <td><code>("base", "error", "info", "warning", "success")</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Chip.</div></div>
     </td>
 </tr>
 </tbody>

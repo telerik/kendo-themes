@@ -28,6 +28,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-calendar-default-size</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-border-width</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-border-width, 1px )</code></td>

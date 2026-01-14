@@ -28,6 +28,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-calendar-default-size</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -995,28 +1005,28 @@ The following table lists the available variables for customization.
         font-size: $kendo-calendar-sm-font-size,
         line-height: $kendo-calendar-sm-line-height,
         cell-size: $kendo-calendar-sm-cell-size,
-        cell-padding-x: $kendo-calendar-sm-cell-padding-y,
-        cell-padding-y: $kendo-calendar-sm-cell-padding-x
+        cell-padding-x: $kendo-calendar-sm-cell-padding-x,
+        cell-padding-y: $kendo-calendar-sm-cell-padding-y
     ),
     md: (
         font-size: $kendo-calendar-md-font-size,
         line-height: $kendo-calendar-md-line-height,
         cell-size: $kendo-calendar-md-cell-size,
-        cell-padding-x: $kendo-calendar-md-cell-padding-y,
-        cell-padding-y: $kendo-calendar-md-cell-padding-x
+        cell-padding-x: $kendo-calendar-md-cell-padding-x,
+        cell-padding-y: $kendo-calendar-md-cell-padding-y
     ),
     lg: (
         font-size: $kendo-calendar-lg-font-size,
         line-height: $kendo-calendar-lg-line-height,
         cell-size: $kendo-calendar-lg-cell-size,
-        cell-padding-x: $kendo-calendar-lg-cell-padding-y,
-        cell-padding-y: $kendo-calendar-lg-cell-padding-x
+        cell-padding-x: $kendo-calendar-lg-cell-padding-x,
+        cell-padding-y: $kendo-calendar-lg-cell-padding-y
     )
 )</code></td>
     <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","cell-size":"40px","cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","cell-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li><li>md: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","cell-size":"48px","cell-padding-x":"var(--kendo-spacing-3, 0.75rem)","cell-padding-y":"var(--kendo-spacing-3, 0.75rem)"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","cell-size":"56px","cell-padding-x":"var(--kendo-spacing-4, 1rem)","cell-padding-y":"var(--kendo-spacing-4, 1rem)"</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes Map of the Calendar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Calendar.</div></div>
     </td>
 </tr>
 </tbody>
