@@ -15,6 +15,7 @@ interface Variable {
     };
     group: string[];
     resolvedType?: string;
+    role?: string[];
     prettyValue?: Record<string, any>;
 }
 
@@ -178,7 +179,7 @@ function testKendoComponent(
 
     if (testCustomizations) {
         const componentVariables = data.variables
-            .filter((item) => item.group[0] === group && item.resolvedType !== "Map")
+            .filter((item) => item.group[0] === group && item.resolvedType !== "Map" && !item.role?.includes("default") && !item.context.name.endsWith("-theme-colors"))
             .map((item) => item.context.name)
             .filter((item) => !variableExceptions?.includes(item));
 
