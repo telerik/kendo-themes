@@ -25,11 +25,8 @@ const EXCLUDED_ELEMENTS_FOCUS = [
     'k-colorpalette-tile',
     'k-bottom-nav-item',
     'k-button-outline',
-    'k-button-clear-warning',
-    'k-button-flat-warning',
-    'k-button-link-warning',
-    'k-button-solid-warning',
-    'k-fab-solid-warning',
+    'k-button-warning',
+    'k-fab-warning',
     'k-step-last',
     'k-quick-reply'
 ];
@@ -38,6 +35,7 @@ const EXCLUDED_ELEMENTS_FOCUS = [
 const EXCLUDED_PAGES_TEXT = [
     // BottomNavigation does not cover contrast requirements for the text of its items
     `${TESTS_PATH}/bottom-nav/bottom-nav-solid.html`,
+    `${TESTS_PATH}/bottom-nav/bottom-nav.html`,
     // BottomNavigation does not cover contrast requirements for the text of its items
     `${TESTS_PATH}/bottom-nav/bottom-nav-flat.html`,
     // Colored chips do not cover minimum contrast requirements for text
@@ -53,10 +51,7 @@ const EXCLUDED_PAGES_TEXT = [
     // Editor iframe test page is not actionable
     `${TESTS_PATH}/editor/editor-iFrameContent.html`,
     // Scheduler adaptive month event template text is not visible
-    `${TESTS_PATH}/scheduler/scheduler-adaptive-month.html`,
-    // Scrollview test pages contain customizations that break contrast
-    `${TESTS_PATH}/scrollview/scrollview.html`,
-    `${TESTS_PATH}/scrollview/scrollview-rtl.html`,
+    `${TESTS_PATH}/scheduler/scheduler-adaptive-month.html`
 ];
 
 let count = {
@@ -140,27 +135,27 @@ const addViolation = async( output, target, filePath, countField, browser ) => {
 
                             if (result === null) {
                                 // exclude warning clear buttons
-                                result = document.querySelector(arguments[0]).closest('.k-button-clear-warning');
+                                result = document.querySelector(arguments[0]).closest('.k-button-clear.k-button-warning');
                             }
 
                             if (result === null) {
                                 // exclude warning link buttons
-                                result = document.querySelector(arguments[0]).closest('.k-button-link-warning');
+                                result = document.querySelector(arguments[0]).closest('.k-button-link.k-button-warning');
                             }
 
                             if (result === null) {
                                 // exclude warning outline buttons
-                                result = document.querySelector(arguments[0]).closest('.k-button-outline-warning');
+                                result = document.querySelector(arguments[0]).closest('.k-button-outline.k-button-warning');
                             }
 
                             if (result === null) {
                                 // exclude warning flat buttons
-                                result = document.querySelector(arguments[0]).closest('.k-button-flat-warning');
+                                result = document.querySelector(arguments[0]).closest('.k-button-flat.k-button-warning');
                             }
 
                             if (result === null) {
                                 // exclude warning outline avatar
-                                result = document.querySelector(arguments[0]).closest('.k-avatar-outline-warning');
+                                result = document.querySelector(arguments[0]).closest('.k-avatar-warning');
                             }
 
                             return result;
