@@ -28,6 +28,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-color-palette-default-size</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the ColorPalette.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-palette-font-family</td>
     <td>String</td>
     <td><code>var( --kendo-font-family, inherit )</code></td>

@@ -28,6 +28,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-color-editor-default-size</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the ColorEditor.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-editor-spacer</td>
     <td>String</td>
     <td><code>k-spacing(3)</code></td>
@@ -39,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-editor-min-width</td>
-    <td>Number</td>
-    <td><code>294px</code></td>
-    <td><code>294px</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the ColorEditor.</div></div>
@@ -60,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-md-min-width</td>
     <td>Number</td>
-    <td><code>$kendo-color-editor-min-width</code></td>
+    <td><code>294px</code></td>
     <td><code>294px</code></td>
 </tr>
 <tr>

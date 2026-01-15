@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-formula-input-line-height</td>
     <td>String</td>
-    <td><code>$kendo-input-line-height</code></td>
+    <td><code>$kendo-input-md-line-height</code></td>
     <td><code>var(--kendo-line-height-lg, inherit)</code></td>
 </tr>
 <tr>

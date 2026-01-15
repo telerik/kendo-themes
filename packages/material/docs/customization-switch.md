@@ -28,6 +28,36 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-switch-default-size</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-default-track-roundness</td>
+    <td>String</td>
+    <td><code>"full"</code></td>
+    <td><code>"full"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default border radius of the Switch track.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-default-thumb-roundness</td>
+    <td>String</td>
+    <td><code>"full"</code></td>
+    <td><code>"full"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default border radius of the Switch thumb.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-switch-font-family</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -78,12 +108,252 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-switch-sm-font-size</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-sm-track-width</td>
+    <td>Number</td>
+    <td><code>52px</code></td>
+    <td><code>52px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The track width of the small Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-sm-track-height</td>
+    <td>Number</td>
+    <td><code>28px</code></td>
+    <td><code>28px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The track height of the small Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-sm-thumb-width</td>
+    <td>Number</td>
+    <td><code>20px</code></td>
+    <td><code>20px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thumb width of the small Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-sm-thumb-height</td>
+    <td>Number</td>
+    <td><code>20px</code></td>
+    <td><code>20px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thumb height of the small Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-sm-thumb-offset</td>
+    <td>Number</td>
+    <td><code>4px</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thumb offset of the small Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-sm-label-offset</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The label offset of the small Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-sm-thumb-indicator-size</td>
+    <td>Number</td>
+    <td><code>36px</code></td>
+    <td><code>36px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thumb indicator size of the small Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-md-font-size</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-md-track-width</td>
+    <td>Number</td>
+    <td><code>52px</code></td>
+    <td><code>52px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The track width of the medium Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-md-track-height</td>
+    <td>Number</td>
+    <td><code>32px</code></td>
+    <td><code>32px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The track height of the medium Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-md-thumb-width</td>
+    <td>Number</td>
+    <td><code>24px</code></td>
+    <td><code>24px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thumb width of the medium Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-md-thumb-height</td>
+    <td>Number</td>
+    <td><code>24px</code></td>
+    <td><code>24px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thumb height of the medium Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-md-thumb-offset</td>
+    <td>Number</td>
+    <td><code>4px</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thumb offset of the medium Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-md-label-offset</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The label offset of the medium Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-md-thumb-indicator-size</td>
+    <td>Number</td>
+    <td><code>40px</code></td>
+    <td><code>40px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thumb indicator size of the medium Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-lg-font-size</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-lg-track-width</td>
+    <td>Number</td>
+    <td><code>60px</code></td>
+    <td><code>60px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The track width of the large Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-lg-track-height</td>
+    <td>Number</td>
+    <td><code>36px</code></td>
+    <td><code>36px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The track height of the large Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-lg-thumb-width</td>
+    <td>Number</td>
+    <td><code>28px</code></td>
+    <td><code>28px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thumb width of the large Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-lg-thumb-height</td>
+    <td>Number</td>
+    <td><code>28px</code></td>
+    <td><code>28px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thumb height of the large Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-lg-thumb-offset</td>
+    <td>Number</td>
+    <td><code>4px</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thumb offset of the large Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-lg-label-offset</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The label offset of the large Switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-lg-thumb-indicator-size</td>
+    <td>Number</td>
+    <td><code>44px</code></td>
+    <td><code>44px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thumb indicator size of the large Switch.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-switch-sizes</td>
     <td>Map</td>
     <td><code>(
-    sm: ( font-size: null, track-width: 52px, track-height:  28px, thumb-width: 20px, thumb-height: 20px, thumb-offset: 4px, label-offset: 0px, thumb-indicator-size: 36px ),
-    md: ( font-size: null, track-width: 52px, track-height:  32px, thumb-width: 24px, thumb-height: 24px, thumb-offset: 4px, label-offset: 0px, thumb-indicator-size: 40px ),
-    lg: ( font-size: null, track-width: 60px, track-height:  36px, thumb-width: 28px, thumb-height: 28px, thumb-offset: 4px, label-offset: 0px, thumb-indicator-size: 44px )
+    sm: ( font-size: $kendo-switch-sm-font-size, track-width: $kendo-switch-sm-track-width, track-height: $kendo-switch-sm-track-height, thumb-width: $kendo-switch-sm-thumb-width, thumb-height: $kendo-switch-sm-thumb-height, thumb-offset: $kendo-switch-sm-thumb-offset, label-offset: $kendo-switch-sm-label-offset, thumb-indicator-size: $kendo-switch-sm-thumb-indicator-size ),
+    md: ( font-size: $kendo-switch-md-font-size, track-width: $kendo-switch-md-track-width, track-height: $kendo-switch-md-track-height, thumb-width: $kendo-switch-md-thumb-width, thumb-height: $kendo-switch-md-thumb-height, thumb-offset: $kendo-switch-md-thumb-offset, label-offset: $kendo-switch-md-label-offset, thumb-indicator-size: $kendo-switch-md-thumb-indicator-size ),
+    lg: ( font-size: $kendo-switch-lg-font-size, track-width: $kendo-switch-lg-track-width, track-height: $kendo-switch-lg-track-height, thumb-width: $kendo-switch-lg-thumb-width, thumb-height: $kendo-switch-lg-thumb-height, thumb-offset: $kendo-switch-lg-thumb-offset, label-offset: $kendo-switch-lg-label-offset, thumb-indicator-size: $kendo-switch-lg-thumb-indicator-size )
 )</code></td>
     <td><ul><li>sm: "font-size":null,"track-width":"52px","track-height":"28px","thumb-width":"20px","thumb-height":"20px","thumb-offset":"4px","label-offset":"0px","thumb-indicator-size":"36px"</li><li>md: "font-size":null,"track-width":"52px","track-height":"32px","thumb-width":"24px","thumb-height":"24px","thumb-offset":"4px","label-offset":"0px","thumb-indicator-size":"40px"</li><li>lg: "font-size":null,"track-width":"60px","track-height":"36px","thumb-width":"28px","thumb-height":"28px","thumb-offset":"4px","label-offset":"0px","thumb-indicator-size":"44px"</li></ul></td>
 </tr>
