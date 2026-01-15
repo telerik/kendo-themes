@@ -198,6 +198,16 @@ $kendo-checkbox-ripple-bg: k-color(primary) !default;
 /// @group checkbox
 $kendo-checkbox-ripple-opacity: .2 !default;
 
+/// The default size of the Checkbox.
+/// @group checkbox
+/// @role default
+$kendo-checkbox-default-size: "md" !default;
+
+/// The default border radius of the Checkbox.
+/// @group checkbox
+/// @role default
+$kendo-checkbox-default-roundness: "md" !default;
+
 @forward "@progress/kendo-theme-core/scss/components/checkbox/_variables.scss" with (
     $kendo-checkbox-border-width: $kendo-checkbox-border-width,
     $kendo-checkbox-sm-size: $kendo-checkbox-sm-size,
@@ -245,5 +255,7 @@ $kendo-checkbox-ripple-opacity: .2 !default;
     $kendo-checkbox-list-item-padding-x: $kendo-checkbox-list-item-padding-x,
     $kendo-checkbox-list-item-padding-y: $kendo-checkbox-list-item-padding-y,
     $kendo-checkbox-ripple-bg: $kendo-checkbox-ripple-bg,
-    $kendo-checkbox-ripple-opacity: $kendo-checkbox-ripple-opacity
+    $kendo-checkbox-ripple-opacity: $kendo-checkbox-ripple-opacity,
+    $kendo-checkbox-default-size: $kendo-checkbox-default-size,
+    $kendo-checkbox-default-roundness: $kendo-checkbox-default-roundness
 );

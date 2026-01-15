@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../../color-system/_constants.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../../z-index/index.scss" as *;
 
@@ -29,6 +30,33 @@
         *::before,
         *::after {
             box-sizing: border-box;
+        }
+
+        // Pager sizes
+        @each $size, $size-props in $kendo-pager-sizes {
+            $_padding-x: map.get($size-props, padding-x);
+            $_padding-y: map.get($size-props, padding-y);
+            $_item-group-spacing: map.get($size-props, item-group-spacing);
+            $_item-min-width: map.get($size-props, item-min-width);
+            $_pager-dropdown-width: map.get($size-props, pager-dropdown-width);
+
+            #{k-when-default($kendo-pager-default-size, $size)}
+            &.k-pager-#{$size} {
+                padding-inline: $_padding-x;
+                padding-block: $_padding-y;
+                gap: $_item-group-spacing;
+
+                .k-pager-numbers-wrap {
+                    .k-button {
+                        min-width: $_item-min-width;
+                    }
+
+                    .k-pager-input {
+                        margin-inline-start: $_item-group-spacing;
+                        margin-inline-end: $_item-group-spacing;
+                    }
+                }
+            }
         }
     }
 
@@ -78,6 +106,10 @@
         .k-selected {
             cursor: inherit;
             z-index: k-z-index("base", 2);
+        }
+
+        .k-button {
+            border-radius: 0;
         }
     }
 
@@ -131,32 +163,6 @@
         margin-inline-start: auto;
         color: inherit;
         order: 10;
-    }
-
-    // Pager sizes
-    @each $size, $size-props in $kendo-pager-sizes {
-        $_padding-x: map.get($size-props, padding-x);
-        $_padding-y: map.get($size-props, padding-y);
-        $_item-group-spacing: map.get($size-props, item-group-spacing);
-        $_item-min-width: map.get($size-props, item-min-width);
-        $_pager-dropdown-width: map.get($size-props, pager-dropdown-width);
-
-        .k-pager-#{$size} {
-            padding-inline: $_padding-x;
-            padding-block: $_padding-y;
-            gap: $_item-group-spacing;
-
-            .k-pager-numbers-wrap {
-                .k-button {
-                    min-width: $_item-min-width;
-                }
-
-                .k-pager-input {
-                    margin-inline-start: $_item-group-spacing;
-                    margin-inline-end: $_item-group-spacing;
-                }
-            }
-        }
     }
 
     .k-pager-sizes {

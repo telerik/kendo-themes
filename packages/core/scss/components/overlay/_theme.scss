@@ -1,16 +1,24 @@
+@use "../../color-system/_functions.scss" as *;
+@use "../../functions/default.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-overlay--theme-base() {
-
     // Overlay
     .k-overlay {
+        @each $name in $kendo-overlay-theme-colors {
+            #{k-when-default($kendo-overlay-default-theme-color, $name)}
+            &.k-overlay-#{$name} {
+                background-color: k-color(#{$name});
+            }
+        }
+
         background-color: $kendo-overlay-bg;
     }
 
-
-    @each $name, $color in $kendo-overlay-theme-colors {
+    // Where single k-overlay-{color} is used as a theme element
+    @each $name in $kendo-overlay-theme-colors {
         .k-overlay-#{$name} {
-            background-color: $color;
+            background-color: k-color(#{$name});
         }
     }
 

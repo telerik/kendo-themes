@@ -1,16 +1,17 @@
 @use "../../color-system/_functions.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-loader--theme-base() {
-    .k-loader,
-    .k-loader + .k-loader-container-label {
-        color: k-color(base-on-surface);
-    }
-
-    @each $name, $color in $kendo-loader-theme-colors {
-        .k-loader-#{$name},
-        .k-loader-#{$name} + .k-loader-container-label {
-            color: k-color(#{$name}-on-surface);
+    .k-loader {
+        @each $name in $kendo-loader-theme-colors {
+                #{k-when-default($kendo-loader-default-theme-color, $name)}
+                &.k-loader-#{$name} {
+                    color: k-color(#{$name}-on-surface);
+                    &+.k-loader-container-label {
+                        color: k-color(#{$name}-on-surface);
+                    }
+            }
         }
     }
 
@@ -18,5 +19,4 @@
         background-color: $kendo-loader-container-panel-bg;
         border-color: $kendo-loader-container-panel-border-color;
     }
-
 }

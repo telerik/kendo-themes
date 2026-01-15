@@ -9,7 +9,7 @@
         &:focus,
         &.k-focus {
             outline-offset: -2px;
-            outline: 1px solid $kendo-suggestion-border;
+            outline: 1px solid k-color(base-emphasis);
             box-shadow: inset 0 0 0 2px k-color(surface-alt);
         }
     }

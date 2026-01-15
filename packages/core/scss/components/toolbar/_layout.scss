@@ -2,6 +2,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "../../typography/index.scss" as *;
 @use "../../spacing/index.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "../../mixins/index.scss" as *;
 @use "./_variables.scss" as *;
 @use "../button/_variables.scss" as *;
@@ -13,8 +14,6 @@
     // Base
     .k-toolbar {
         margin: 0;
-        padding-block: $kendo-toolbar-md-padding-y;
-        padding-inline: $kendo-toolbar-md-padding-x;
         border-width: $kendo-toolbar-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -25,7 +24,6 @@
         list-style: none;
         display: flex;
         flex-flow: row wrap;
-        gap: $kendo-toolbar-md-spacing;
         align-items: center;
         justify-content: flex-start;
         position: relative;
@@ -85,23 +83,6 @@
             }
         }
 
-
-        // Button
-        .k-button {}
-
-
-        // Toggle button
-        .k-toggle-button {}
-
-
-        // Button group
-        .k-button-group {}
-
-
-        // Split button
-        .k-split-button {}
-
-
         // Input
         .k-input,
         .k-picker {
@@ -115,6 +96,7 @@
         // Overflow anchor
         .k-toolbar-overflow-button {
             margin-inline-start: auto;
+            border-radius: 0;
         }
 
         // Overflow separator
@@ -155,7 +137,6 @@
     .k-toolbar-items {
         display: flex;
         flex-flow: row nowrap;
-        gap: $kendo-toolbar-md-spacing;
         align-items: center;
         justify-content: flex-start;
         flex: 1 1 auto;
@@ -174,7 +155,6 @@
     .k-toolbar-items-list {
         display: flex;
         flex-flow: row wrap;
-        gap: $kendo-toolbar-md-spacing;
         align-items: center;
         justify-content: flex-start;
         flex: 1 1 auto;
@@ -211,63 +191,81 @@
         $_spacing: map.get( $size-props, spacing );
         $_separator-height: map.get( $size-props, separator-height );
 
-        .k-toolbar-#{$size} {
-            padding-block: $_padding-y;
-            padding-inline: $_padding-x;
-            gap: $_spacing;
+        .k-toolbar {
+
+            #{k-when-default($kendo-toolbar-default-size, $size)}
+            &.k-toolbar-#{$size} {
+                padding-block: $_padding-y;
+                padding-inline: $_padding-x;
+                gap: $_spacing;
+
+                // Remove once we decide to not size empty containers
+                &::before {
+                    margin-inline-start: calc( #{$_spacing} * -1 );
+                }
+
+                &.k-toolbar-scrollable-overlay::before {
+                    inset-inline-start: $_spacing;
+                }
+
+                > * > label {
+                    margin-inline-end: $_spacing;
+                }
+
+                .k-toolbar-items {
+                    gap: $_spacing;
+                }
+
+                .k-toolbar-button-separator {
+                    height: $_separator-height;
+                }
+
+                .k-toolbar-items-scroll {
+                    padding-block: $_padding-y;
+                    margin-block: calc( #{$_padding-y} * -1 );
+                    padding-inline: $_padding-x;
+                    margin-inline: calc( #{$_padding-x} * -1 );
+                }
+
+                &.k-toolbar-scrollable-overlay .k-toolbar-items-scroll:only-child,
+                .k-toolbar-items-scroll:not(:only-child) {
+                    padding-inline-end: 0;
+                    margin-inline-end: 0;
+                }
+
+            }
 
             // Remove once we decide to not size empty containers
-            &::before {
-                margin-inline-start: calc( #{$_spacing} * -1 );
+            #{k-when-default($kendo-toolbar-default-size, "sm")}
+            &.k-toolbar-sm {
+                &::before {
+                    height: $kendo-button-sm-calc-size;
+                }
             }
 
-            &.k-toolbar-scrollable-overlay::before {
-                inset-inline-start: $_spacing;
+            #{k-when-default($kendo-toolbar-default-size, "md")}
+            &.k-toolbar-md {
+                &::before {
+                    height: $kendo-button-md-calc-size;
+                }
             }
 
-            > * > label {
-                margin-inline-end: $_spacing;
+            #{k-when-default($kendo-toolbar-default-size, "lg")}
+            &.k-toolbar-lg {
+                &::before {
+                    height: $kendo-button-lg-calc-size;
+                }
             }
+        }
 
-            .k-toolbar-items {
+        .k-toolbar-items-list {
+            #{k-when-default($kendo-toolbar-default-size, $size)}
+            &.k-toolbar-items-list-#{$size} {
+                padding-block: $_padding-y;
+                padding-inline: $_padding-x;
                 gap: $_spacing;
             }
-
-            .k-toolbar-button-separator {
-                height: $_separator-height;
-            }
-
-            .k-toolbar-items-scroll {
-                padding-block: $_padding-y;
-                margin-block: calc( #{$_padding-y} * -1 );
-                padding-inline: $_padding-x;
-                margin-inline: calc( #{$_padding-x} * -1 );
-            }
-
-            &.k-toolbar-scrollable-overlay .k-toolbar-items-scroll:only-child,
-            .k-toolbar-items-scroll:not(:only-child) {
-                padding-inline-end: 0;
-                margin-inline-end: 0;
-            }
-
         }
-
-        .k-toolbar-items-list-#{$size} {
-            padding-block: $_padding-y;
-            padding-inline: $_padding-x;
-            gap: $_spacing;
-        }
-    }
-
-    // Remove once we decide to not size empty containers
-    .k-toolbar-sm::before {
-        height: $kendo-button-sm-calc-size;
-    }
-    .k-toolbar-md::before {
-        height: $kendo-button-md-calc-size;
-    }
-    .k-toolbar-lg::before {
-        height: $kendo-button-lg-calc-size;
     }
 
     .k-floating-toolbar,

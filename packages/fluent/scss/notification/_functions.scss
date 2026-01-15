@@ -5,10 +5,10 @@
 @function notification-theme( $colors ) {
     $_theme: ();
 
-    @each $name, $color in $colors {
+    @each $name in $colors {
         $_theme: map.merge(( $name: (
             color: k-color(#{$name}-on-subtle),
-            background-color: $color,
+            background-color: k-color(#{$name}-subtle),
             border: k-color(#{$name}-emphasis),
         )), $_theme );
     }

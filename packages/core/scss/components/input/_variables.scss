@@ -1,5 +1,11 @@
 // Input
 
+$kendo-input-default-fill-mode: null !default;
+$kendo-input-default-roundness: null !default;
+$kendo-input-default-size: null !default;
+
+$kendo-input-roundness: ( "none", "sm", "md", "lg", "full" ) !default;
+
 $kendo-input-default-width: null !default;
 
 $kendo-input-border-width: null !default;
@@ -29,7 +35,34 @@ $kendo-input-sm-calc-size: null !default;
 $kendo-input-md-calc-size: null !default;
 $kendo-input-lg-calc-size: null !default;
 
-$kendo-input-sizes: null !default;
+/// The sizes map of the Input.
+/// @group input
+$kendo-input-sizes: (
+    sm: (
+        padding-x: $kendo-input-sm-padding-x,
+        padding-y: $kendo-input-sm-padding-y,
+        font-size: $kendo-input-sm-font-size,
+        line-height: $kendo-input-sm-line-height,
+        button-padding-x: $kendo-input-sm-padding-y,
+        button-padding-y: $kendo-input-sm-padding-y,
+    ),
+    md: (
+        padding-x: $kendo-input-md-padding-x,
+        padding-y: $kendo-input-md-padding-y,
+        font-size: $kendo-input-md-font-size,
+        line-height: $kendo-input-md-line-height,
+        button-padding-x: $kendo-input-md-padding-y,
+        button-padding-y: $kendo-input-md-padding-y,
+    ),
+    lg: (
+        padding-x: $kendo-input-lg-padding-x,
+        padding-y: $kendo-input-lg-padding-y,
+        font-size: $kendo-input-lg-font-size,
+        line-height: $kendo-input-lg-line-height,
+        button-padding-x: $kendo-input-lg-padding-y,
+        button-padding-y: $kendo-input-lg-padding-y
+    )
+) !default;
 
 $kendo-input-bg: null !default;
 $kendo-input-text: null !default;
@@ -101,6 +134,12 @@ $kendo-input-suffix-bg: null !default;
 
 $kendo-input-invalid-border: null !default;
 $kendo-input-invalid-shadow: null !default;
+
+$kendo-picker-default-fill-mode: null !default;
+$kendo-picker-default-roundness: null !default;
+$kendo-picker-default-size: null !default;
+
+$kendo-picker-roundness: ( "none", "sm", "md", "lg", "full" ) !default;
 
 $kendo-picker-bg: null !default;
 $kendo-picker-text: null !default;

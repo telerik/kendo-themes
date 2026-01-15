@@ -4,6 +4,7 @@
 @use "../../z-index/index.scss" as *;
 @use "../../motion/index.scss" as *;
 @use "../../_variables.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-radio--layout-base() {
@@ -28,6 +29,23 @@
         cursor: pointer;
         -webkit-appearance: none;
         transition: background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid), opacity k-transition(rapid);
+
+        // Radio size
+        @each $size, $size-props in $kendo-radio-sizes {
+        $_size: map.get( $size-props, size );
+        $_glyph-size: map.get( $size-props, glyph-size );
+        $_ripple-size: map.get( $size-props, ripple-size );
+
+            #{k-when-default($kendo-radio-default-size, $size)}
+            &.k-radio-#{$size} {
+                width: $_size;
+                height: $_size;
+
+                &::before {
+                    font-size: $_glyph-size;
+                }
+            }
+        }
     }
 
 
@@ -196,25 +214,16 @@
         }
     }
 
+    .k-ripple-container .k-radio {
+        @each $size, $size-props in $kendo-radio-sizes {
+            $_ripple-size: map.get( $size-props, ripple-size );
 
-    // Radio size
-    @each $size, $size-props in $kendo-radio-sizes {
-        $_size: map.get( $size-props, size );
-        $_glyph-size: map.get( $size-props, glyph-size );
-        $_ripple-size: map.get( $size-props, ripple-size );
-
-        .k-radio-#{$size} {
-            width: $_size;
-            height: $_size;
-
-            &::before {
-                font-size: $_glyph-size;
-            }
-        }
-        .k-ripple-container {
-            .k-radio-#{$size}::after {
-                width: $_ripple-size;
-                height: $_ripple-size;
+            #{k-when-default($kendo-radio-default-size, $size)}
+            &.k-radio-#{$size} {
+                &::after {
+                    width: $_ripple-size;
+                    height: $_ripple-size;
+                }
             }
         }
     }

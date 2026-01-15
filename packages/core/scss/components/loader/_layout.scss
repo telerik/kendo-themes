@@ -1,6 +1,7 @@
 @use "./_variables.scss" as *;
 @use "../overlay/_variables.scss" as *;
 @use "../../z-index/index.scss" as *;
+@use "../../functions/index.scss" as *;
 
 @mixin kendo-loader--layout-base() {
 
@@ -13,6 +14,35 @@
         // Prevents the inline elements from being displaced.
         // A good example is the 'pulsing' loader inside a button.
         line-height: 0;
+
+        // Loader sizes
+        #{k-when-default($kendo-loader-default-size, "sm")}
+        &.k-loader-sm {
+            padding: $kendo-loader-sm-padding;
+
+            .k-loader-segment {
+                width: $kendo-loader-sm-segment-size;
+                height: $kendo-loader-sm-segment-size;
+            }
+        }
+        #{k-when-default($kendo-loader-default-size, "md")}
+        &.k-loader-md {
+            padding: $kendo-loader-md-padding;
+
+            .k-loader-segment {
+                width: $kendo-loader-md-segment-size;
+                height: $kendo-loader-md-segment-size;
+            }
+        }
+        #{k-when-default($kendo-loader-default-size, "lg")}
+        &.k-loader-lg {
+            padding: $kendo-loader-lg-padding;
+
+            .k-loader-segment {
+                width: $kendo-loader-lg-segment-size;
+                height: $kendo-loader-lg-segment-size;
+            }
+        }
     }
 
     .k-loader-canvas {
@@ -26,35 +56,6 @@
         background-color: currentColor;
         position: absolute;
     }
-
-    // Loader sizes
-    .k-loader-sm {
-        padding: $kendo-loader-sm-padding;
-
-        .k-loader-segment {
-            width: $kendo-loader-sm-segment-size;
-            height: $kendo-loader-sm-segment-size;
-        }
-    }
-    .k-loader-md {
-        padding: $kendo-loader-md-padding;
-
-        .k-loader-segment {
-            width: $kendo-loader-md-segment-size;
-            height: $kendo-loader-md-segment-size;
-        }
-    }
-    .k-loader-lg {
-        padding: $kendo-loader-lg-padding;
-
-        .k-loader-segment {
-            width: $kendo-loader-lg-segment-size;
-            height: $kendo-loader-lg-segment-size;
-        }
-    }
-
-
-
 
     // Loader pulsing 2
     @keyframes pulsing-2-segment {
@@ -84,6 +85,7 @@
             animation: pulsing-2-segment 1s ease infinite;
         }
 
+        #{k-when-default($kendo-loader-default-size, "sm")}
         &.k-loader-sm {
             .k-loader-canvas {
                 width: calc( #{$kendo-loader-sm-segment-size} * 3 );
@@ -91,6 +93,7 @@
             }
         }
 
+        #{k-when-default($kendo-loader-default-size, "md")}
         &.k-loader-md {
             .k-loader-canvas {
                 width: calc( #{$kendo-loader-md-segment-size} * 3 );
@@ -98,6 +101,7 @@
             }
         }
 
+        #{k-when-default($kendo-loader-default-size, "lg")}
         &.k-loader-lg {
             .k-loader-canvas {
                 width: calc( #{$kendo-loader-lg-segment-size} * 3 );
@@ -163,6 +167,7 @@
         }
 
 
+        #{k-when-default($kendo-loader-default-size, "sm")}
         &.k-loader-sm {
             .k-loader-canvas {
                 margin: calc( #{$kendo-loader-sm-segment-size} / 2 );
@@ -171,6 +176,7 @@
             }
         }
 
+        #{k-when-default($kendo-loader-default-size, "md")}
         &.k-loader-md {
             .k-loader-canvas {
                 margin: calc( #{ $kendo-loader-md-segment-size} / 2 );
@@ -179,6 +185,7 @@
             }
         }
 
+        #{k-when-default($kendo-loader-default-size, "lg")}
         &.k-loader-lg {
             .k-loader-canvas {
                 margin: calc( #{$kendo-loader-lg-segment-size} / 2 );
@@ -337,6 +344,7 @@
             }
         }
 
+        #{k-when-default($kendo-loader-default-size, "sm")}
         &.k-loader-sm {
             .k-loader-canvas {
                 width: $kendo-loader-sm-spinner-4-width;
@@ -344,6 +352,7 @@
             }
         }
 
+        #{k-when-default($kendo-loader-default-size, "md")}
         &.k-loader-md {
             .k-loader-canvas {
                 width: $kendo-loader-md-spinner-4-width;
@@ -351,6 +360,7 @@
             }
         }
 
+        #{k-when-default($kendo-loader-default-size, "lg")}
         &.k-loader-lg {
             .k-loader-canvas {
                 width: $kendo-loader-lg-spinner-4-width;
@@ -372,6 +382,42 @@
         .k-loader {
             padding: 0;
         }
+
+        // Loader Container Sizes
+        #{k-when-default($kendo-loader-default-size, "sm")}
+        &.k-loader-container-sm {
+            .k-loader-container-inner {
+                padding: $kendo-loader-sm-container-padding;
+                gap: $kendo-loader-sm-container-gap;
+            }
+
+            .k-loader-container-label {
+                font-size: $kendo-loader-sm-container-font-size;
+            }
+        }
+        #{k-when-default($kendo-loader-default-size, "md")}
+        &.k-loader-container-md {
+            .k-loader-container-inner {
+                padding: $kendo-loader-md-container-padding;
+                gap: $kendo-loader-md-container-gap;
+            }
+
+            .k-loader-container-label {
+                font-size: $kendo-loader-md-container-font-size;
+            }
+        }
+        #{k-when-default($kendo-loader-default-size, "lg")}
+        &.k-loader-container-lg {
+            .k-loader-container-inner {
+                padding: $kendo-loader-lg-container-padding;
+                gap: $kendo-loader-lg-container-gap;
+            }
+
+            .k-loader-container-label {
+                font-size: $kendo-loader-lg-container-font-size;
+            }
+        }
+
     }
 
     .k-loader-container,
@@ -401,38 +447,6 @@
         border-width: $kendo-loader-container-panel-border-width;
         border-style: $kendo-loader-container-panel-border-style;
         border-radius: $kendo-loader-container-panel-border-radius;
-    }
-
-    // Loader Container Sizes
-    .k-loader-container-sm {
-        .k-loader-container-inner {
-            padding: $kendo-loader-sm-container-padding;
-            gap: $kendo-loader-sm-container-gap;
-        }
-
-        .k-loader-container-label {
-            font-size: $kendo-loader-sm-container-font-size;
-        }
-    }
-    .k-loader-container-md {
-        .k-loader-container-inner {
-            padding: $kendo-loader-md-container-padding;
-            gap: $kendo-loader-md-container-gap;
-        }
-
-        .k-loader-container-label {
-            font-size: $kendo-loader-md-container-font-size;
-        }
-    }
-    .k-loader-container-lg {
-        .k-loader-container-inner {
-            padding: $kendo-loader-lg-container-padding;
-            gap: $kendo-loader-lg-container-gap;
-        }
-
-        .k-loader-container-label {
-            font-size: $kendo-loader-lg-container-font-size;
-        }
     }
 
     // Loader Position

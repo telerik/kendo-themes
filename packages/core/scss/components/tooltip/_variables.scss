@@ -20,19 +20,5 @@ $kendo-tooltip-border: null !default;
 
 $kendo-tooltip-shadow: null !default;
 
-@function tooltip-theme( $colors ) {
-    $_theme: ();
-
-    @each $name, $color in $colors {
-        $_theme: map.merge(( $name: (
-            color: k-color(on-#{$name}),
-            background-color: $color,
-            border: $color,
-        )), $_theme );
-    }
-
-    @return $_theme;
-}
-
 $kendo-tooltip-theme-colors: null !default;
 $kendo-tooltip-theme: null !default;

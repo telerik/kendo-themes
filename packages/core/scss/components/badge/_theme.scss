@@ -1,29 +1,49 @@
+@use "sass:map";
 @use "../../functions/index.scss" as *;
 @use "../../color-system/_functions.scss" as *;
 @use "_variables.scss" as *;
 
 @mixin kendo-badge--theme-base() {
 
-    // Solid badges
-    @each $name, $color in $kendo-badge-theme-colors {
-        .k-badge-solid-#{$name} {
-            border-color: $color;
-            color: k-color(on-#{$name});
-            background-color: $color;
+    .k-badge {
+        // Solid badges
+        #{k-when-default($kendo-badge-default-fill-mode, "solid")}
+        &.k-badge-solid {
+            @each $name in $kendo-badge-theme-colors {
+                #{k-when-default($kendo-badge-default-theme-color, $name)}
+                &.k-badge-#{$name} {
+                    @if ($name == "base") {
+                        background: none;
+                        color: k-color(on-app-surface);
+                        border-color: transparent;
+                    } @else {
+                        border-color: k-color(#{$name});
+                        color: k-color(on-#{$name});
+                        background-color: k-color(#{$name});
+                    }
+                }
+            }
+        }
+
+        // Outline badges
+        #{k-when-default($kendo-badge-default-fill-mode, "outline")}
+        &.k-badge-outline {
+            color: k-color(base-on-surface);
+            border-color: currentColor;
+            background-color: transparent;
+
+            @each $name in $kendo-badge-theme-colors {
+                #{k-when-default($kendo-badge-default-theme-color, $name)}
+                &.k-badge-#{$name} {
+                    @if ($name == "base") {
+                        color: k-color(on-app-surface);
+                    } @else {
+                        color: k-color(#{$name}-on-surface);
+                    }
+                }
+            }
         }
     }
 
-    // Outline badges
-    .k-badge-outline {
-        color: k-color(base-on-surface);
-        border-color: currentColor;
-        background-color: transparent;
-    }
-
-    @each $name, $color in $kendo-badge-theme-colors {
-        .k-badge-outline-#{$name} {
-            color: k-color(#{$name}-on-surface);
-        }
-    }
 
 }

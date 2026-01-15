@@ -1,11 +1,13 @@
 // Notification
 
+$kendo-notification-default-theme-color: null !default;
+
 $kendo-notification-group-gap: null !default;
 
 $kendo-notification-padding-x: null !default;
 $kendo-notification-padding-y: null !default;
 $kendo-notification-border-width: null !default;
-$kendo-notification-border-radius: k-border-radius(md)!default;
+$kendo-notification-border-radius: null !default;
 $kendo-notification-font-family: null !default;
 $kendo-notification-font-size: null !default;
 $kendo-notification-line-height: null !default;
@@ -15,22 +17,7 @@ $kendo-notification-bg: null !default;
 $kendo-notification-text: null !default;
 $kendo-notification-border: null !default;
 $kendo-notification-shadow: null !default;
-
 $kendo-notification-icon-spacing: null !default;
-
-@function notification-theme( $colors ) {
-    $_theme: ();
-
-    @each $name, $color in $colors {
-        $_theme: map.merge(( $name: (
-            color: k-color(on-#{$name}),
-            background-color: $color,
-            border: $color,
-        )), $_theme );
-    }
-
-    @return $_theme;
-}
 
 $kendo-notification-theme-colors: null !default;
 $kendo-notification-theme: null !default;

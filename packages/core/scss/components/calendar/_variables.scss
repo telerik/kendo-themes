@@ -1,5 +1,7 @@
 // Calendar
 
+$kendo-calendar-default-size: null !default;
+
 $kendo-calendar-border-width: null !default;
 
 $kendo-calendar-font-family: null !default;
@@ -138,4 +140,28 @@ $kendo-calendar-lg-cell-size: null !default;
 $kendo-calendar-lg-cell-padding-x: null !default;
 $kendo-calendar-lg-cell-padding-y: null !default;
 
-$kendo-calendar-sizes: null !default;
+/// The sizes map of the Calendar.
+/// @group calendar
+$kendo-calendar-sizes: (
+    sm: (
+        font-size: $kendo-calendar-sm-font-size,
+        line-height: $kendo-calendar-sm-line-height,
+        cell-size: $kendo-calendar-sm-cell-size,
+        cell-padding-x: $kendo-calendar-sm-cell-padding-x,
+        cell-padding-y: $kendo-calendar-sm-cell-padding-y
+    ),
+    md: (
+        font-size: $kendo-calendar-md-font-size,
+        line-height: $kendo-calendar-md-line-height,
+        cell-size: $kendo-calendar-md-cell-size,
+        cell-padding-x: $kendo-calendar-md-cell-padding-x,
+        cell-padding-y: $kendo-calendar-md-cell-padding-y
+    ),
+    lg: (
+        font-size: $kendo-calendar-lg-font-size,
+        line-height: $kendo-calendar-lg-line-height,
+        cell-size: $kendo-calendar-lg-cell-size,
+        cell-padding-x: $kendo-calendar-lg-cell-padding-x,
+        cell-padding-y: $kendo-calendar-lg-cell-padding-y
+    )
+) !default;

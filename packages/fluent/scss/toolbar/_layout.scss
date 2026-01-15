@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "../button/_variables.scss" as *;
 @use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/toolbar/_layout.scss" as *;
@@ -16,19 +17,31 @@
             outline-style: $kendo-toolbar-item-focus-outline-style;
         }
 
-    }
-    .k-toolbar::before {
-        height: $kendo-button-inner-calc-size;
-    }
+        &::before {
+            height: $kendo-button-inner-calc-size;
+        }
 
-    .k-toolbar-sm::before {
-        height: $kendo-button-sm-inner-calc-size;
-    }
-    .k-toolbar-md::before {
-        height: $kendo-button-md-inner-calc-size;
-    }
-    .k-toolbar-lg::before {
-        height: $kendo-button-lg-inner-calc-size;
+        #{k-when-default($kendo-toolbar-default-size, "sm")}
+        &.k-toolbar-sm{
+            &::before {
+                height: $kendo-button-sm-inner-calc-size;
+            }
+        }
+
+        #{k-when-default($kendo-toolbar-default-size, "md")}
+        &.k-toolbar-md {
+            &::before {
+                height: $kendo-button-md-inner-calc-size;
+            }
+        }
+
+        #{k-when-default($kendo-toolbar-default-size, "lg")}
+        &.k-toolbar-lg {
+            &::before {
+                height: $kendo-button-lg-inner-calc-size;
+            }
+        }
+
     }
 
     .k-overflow-container .k-overflow-button {

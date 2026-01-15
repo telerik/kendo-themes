@@ -1,6 +1,21 @@
 // DateTime
+$kendo-datetime-default-size: null !default;
+
 $kendo-datetime-width: null !default;
 $kendo-datetime-sm-width: null !default;
 $kendo-datetime-md-width: null !default;
 $kendo-datetime-lg-width: null !default;
-$kendo-datetime-sizes: null !default;
+
+/// The sizes map of the DateTimePicker.
+/// @group date-time-picker
+$kendo-datetime-sizes: (
+    sm: (
+        width: $kendo-datetime-sm-width
+    ),
+    md: (
+        width: $kendo-datetime-md-width
+    ),
+    lg: (
+        width: $kendo-datetime-lg-width
+    )
+) !default;

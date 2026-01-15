@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../../mixins/index.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-notification--theme-base() {
@@ -12,15 +13,16 @@
             $kendo-notification-border
         );
         @include box-shadow( $kendo-notification-shadow );
-    }
 
-    @each $name, $props in $kendo-notification-theme {
-        .k-notification-#{$name} {
-            @include fill(
-                map.get( $props, color ),
-                map.get( $props, background-color ),
-                map.get( $props, border )
-            );
+        @each $name, $props in $kendo-notification-theme {
+            #{k-when-default($kendo-notification-default-theme-color, $name)}
+            &.k-notification-#{$name} {
+                @include fill(
+                    map.get( $props, color ),
+                    map.get( $props, background-color ),
+                    map.get( $props, border )
+                );
+            }
         }
     }
 

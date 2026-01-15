@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../../mixins/index.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "../../spacing/index.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
@@ -213,10 +214,13 @@
     @each $size, $size-props in $kendo-form-sizes {
         $_form-rows-spacing: map.get($size-props, form-rows-spacing);
 
-        .k-form-#{$size} {
-            .k-form-field,
-            .k-form-buttons {
-                margin-block-start: $_form-rows-spacing;
+        .k-form {
+            #{k-when-default($kendo-form-default-size, $size)}
+            &.k-form-#{$size} {
+                .k-form-field,
+                .k-form-buttons {
+                    margin-block-start: $_form-rows-spacing;
+                }
             }
         }
     }

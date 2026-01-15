@@ -1,5 +1,7 @@
 // TreeView
 
+$kendo-treeview-default-size: null !default;
+
 $kendo-treeview-font-family: null !default;
 $kendo-treeview-font-size: null !default;
 $kendo-treeview-sm-font-size: null !default;
@@ -28,7 +30,34 @@ $kendo-treeview-md-checkbox-padding-y: null !default;
 $kendo-treeview-lg-checkbox-padding-y: null !default;
 
 
-$kendo-treeview-sizes: null !default;
+/// The sizes map of the TreeView.
+/// @group treeview
+$kendo-treeview-sizes: (
+    sm: (
+        font-size: $kendo-treeview-sm-font-size,
+        line-height: $kendo-treeview-sm-line-height,
+        item-padding-x: $kendo-treeview-sm-item-padding-x,
+        item-padding-y: $kendo-treeview-sm-item-padding-y,
+        checkbox-padding-x: $kendo-treeview-sm-checkbox-padding-x,
+        checkbox-padding-y: $kendo-treeview-sm-checkbox-padding-y
+    ),
+    md: (
+        font-size: $kendo-treeview-md-font-size,
+        line-height: $kendo-treeview-md-line-height,
+        item-padding-x: $kendo-treeview-md-item-padding-x,
+        item-padding-y: $kendo-treeview-md-item-padding-y,
+        checkbox-padding-x: $kendo-treeview-md-checkbox-padding-x,
+        checkbox-padding-y: $kendo-treeview-md-checkbox-padding-y
+    ),
+    lg: (
+        font-size: $kendo-treeview-lg-font-size,
+        line-height: $kendo-treeview-lg-line-height,
+        item-padding-x: $kendo-treeview-lg-item-padding-x,
+        item-padding-y: $kendo-treeview-lg-item-padding-y,
+        checkbox-padding-x: $kendo-treeview-lg-checkbox-padding-x,
+        checkbox-padding-y: $kendo-treeview-lg-checkbox-padding-y
+    )
+) !default;
 
 
 $kendo-treeview-bg: null !default;

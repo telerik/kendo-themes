@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "../../functions/index.scss" as *;
 @use "../../color-system/_constants.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "./variables.scss" as *;
@@ -190,77 +192,45 @@
             border-style: solid;
             display: block;
         }
+
+        // Sizes
+        @each $size, $size-props in $kendo-menu-group-sizes {
+            $_font-size: map.get( $size-props, font-size);
+            $_line-height: map.get( $size-props, line-height);
+            $_item-padding-y: map.get( $size-props, item-padding-y);
+            $_item-padding-x: map.get( $size-props, item-padding-x);
+            $_item-padding-end: map.get( $size-props, item-padding-end);
+            $_item-icon-margin-start: map.get( $size-props, item-icon-margin-start);
+            $_item-icon-margin-end: map.get( $size-props, item-icon-margin-end);
+
+            #{k-when-default($kendo-menu-group-default-size, $size)}
+            &.k-menu-group-#{$size} {
+                font-size: $_font-size;
+                line-height: $_line-height;
+
+                // jquery popup overrides those
+                .k-menu-item {
+                    font-size: $_font-size;
+                    line-height: $_line-height;
+                }
+
+                .k-menu-link {
+                    padding-block: $_item-padding-y;
+                    padding-inline: $_item-padding-x;
+                    padding-inline-end: $_item-padding-end;
+                }
+
+                .k-menu-expand-arrow {
+                    margin-inline-start: $_item-icon-margin-start;
+                    margin-inline-end: $_item-icon-margin-end;
+                }
+            }
+        }
+
     }
     .k-menu-popup .k-menu-group {
         position: relative;
     }
-
-
-    // Sizes
-    .k-menu-group-sm {
-        font-size: $kendo-menu-popup-sm-font-size;
-        line-height: $kendo-menu-popup-sm-line-height;
-
-        // jquery popup overrides those
-        .k-menu-item {
-            font-size: $kendo-menu-popup-sm-font-size;
-            line-height: $kendo-menu-popup-sm-line-height;
-        }
-
-        .k-menu-link {
-            padding-block: $kendo-menu-popup-sm-item-padding-y;
-            padding-inline: $kendo-menu-popup-sm-item-padding-x;
-            padding-inline-end: $kendo-menu-popup-sm-item-padding-end;
-        }
-
-        .k-menu-expand-arrow {
-            margin-inline-start: $kendo-menu-popup-sm-item-icon-margin-start;
-            margin-inline-end: $kendo-menu-popup-sm-item-icon-margin-end;
-        }
-    }
-    .k-menu-group-md {
-        font-size: $kendo-menu-popup-md-font-size;
-        line-height: $kendo-menu-popup-md-line-height;
-
-        // jquery popup overrides those
-        .k-menu-item {
-            font-size: $kendo-menu-popup-md-font-size;
-            line-height: $kendo-menu-popup-md-line-height;
-        }
-
-        .k-menu-link {
-            padding-block: $kendo-menu-popup-md-item-padding-y;
-            padding-inline: $kendo-menu-popup-md-item-padding-x;
-            padding-inline-end: $kendo-menu-popup-md-item-padding-end;
-        }
-
-        .k-menu-expand-arrow {
-            margin-inline-start: $kendo-menu-popup-md-item-icon-margin-start;
-            margin-inline-end: $kendo-menu-popup-md-item-icon-margin-end;
-        }
-    }
-    .k-menu-group-lg {
-        font-size: $kendo-menu-popup-lg-font-size;
-        line-height: $kendo-menu-popup-lg-line-height;
-
-        // jquery popup overrides those
-        .k-menu-item {
-            font-size: $kendo-menu-popup-lg-font-size;
-            line-height: $kendo-menu-popup-lg-line-height;
-        }
-
-        .k-menu-link {
-            padding-block: $kendo-menu-popup-lg-item-padding-y;
-            padding-inline: $kendo-menu-popup-lg-item-padding-x;
-            padding-inline-end: $kendo-menu-popup-lg-item-padding-end;
-        }
-
-        .k-menu-expand-arrow {
-            margin-inline-start: $kendo-menu-popup-lg-item-icon-margin-start;
-            margin-inline-end: $kendo-menu-popup-lg-item-icon-margin-end;
-        }
-    }
-
 
     // Context menu
     .k-popups-wrapper {
@@ -288,10 +258,6 @@
     }
     .k-context-menu-popup {
         z-index: k-z-index("popup");
-
-        .k-context-menu {
-            border-width: 0;
-        }
     }
     .k-popup .k-context-menu,
     .k-context-menu-popup .k-context-menu {

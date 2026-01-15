@@ -1,4 +1,7 @@
 // Message box
+
+$kendo-message-box-default-theme-color: null !default;
+
 $kendo-message-box-margin: null !default;
 $kendo-message-box-padding-x: null !default;
 $kendo-message-box-padding-y: null !default;
@@ -14,4 +17,6 @@ $kendo-message-box-border-level: null !default;
 $kendo-message-box-link-font-style: null !default;
 $kendo-message-box-link-text-decoration: null !default;
 
-$kendo-message-box-theme-colors: null !default;
+/// The theme colors map of the MessageBox.
+/// @group message-box
+$kendo-message-box-theme-colors: ("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse") !default;

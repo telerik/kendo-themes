@@ -62,7 +62,7 @@
             font-size: $kendo-color-gradient-input-label-font-size
         }
 
-        .k-input-inner {
+        .k-input .k-input-inner {
             padding-inline: k-spacing(2);
             text-align: start;
             text-overflow: ellipsis;

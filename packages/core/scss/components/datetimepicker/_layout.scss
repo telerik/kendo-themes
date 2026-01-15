@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "./variables.scss" as *;
 @use "../../motion/index.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "../action-buttons/_variables.scss" as *;
 
 @mixin kendo-date-time-picker--layout-base() {
@@ -40,15 +41,18 @@
     }
 
     // Sizes
-    @each $size, $size-props in $kendo-datetime-sizes {
-        $_width: map.get($size-props, width);
+    .k-datetime-wrap {
+        @each $size, $size-props in $kendo-datetime-sizes {
+            $_width: map.get($size-props, width);
 
-        .k-datetime-wrap-#{$size} {
-            width: $_width;
+            #{k-when-default($kendo-datetime-default-size, $size)}
+            &.k-datetime-wrap-#{$size} {
+                width: $_width;
 
-            .k-datetime-calendar-wrap,
-            .k-datetime-time-wrap {
-                flex: 0 0 $_width;
+                .k-datetime-calendar-wrap,
+                .k-datetime-time-wrap {
+                    flex: 0 0 $_width;
+                }
             }
         }
     }
