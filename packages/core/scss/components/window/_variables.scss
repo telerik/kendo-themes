@@ -1,5 +1,8 @@
 // Window
 
+$kendo-window-default-theme-color: null !default;
+$kendo-window-default-size: null !default;
+
 $kendo-window-border-width: null !default;
 $kendo-window-border-radius: null !default;
 $kendo-window-font-family: null !default;
@@ -36,6 +39,15 @@ $kendo-window-titlebar-text: null !default;
 $kendo-window-titlebar-border: null !default;
 $kendo-window-titlebar-gradient: null !default;
 
-$kendo-window-sizes: null !default;
+/// The sizes map of the Window.
+/// @group window
+$kendo-window-sizes: (
+    auto: null,
+    sm: 300px,
+    md: 800px,
+    lg: 1200px
+) !default;
 
-$kendo-window-theme-colors: null !default;
+/// The theme colors map of the Window.
+/// @group window
+$kendo-window-theme-colors: ("primary", "light", "dark") !default;

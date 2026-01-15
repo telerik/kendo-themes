@@ -1,4 +1,5 @@
 @use "../../mixins/index.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "./_variables.scss" as *;
 @use "../menu/_variables.scss" as *;
 
@@ -12,9 +13,74 @@
             @include focus-indicator( $kendo-toolbar-item-shadow );
         }
 
+        // Solid Toolbar
+        #{k-when-default($kendo-toolbar-default-fill-mode, "solid")}
+        &.k-toolbar-solid {
+            @include fill(
+                $kendo-toolbar-text,
+                $kendo-toolbar-bg,
+                $kendo-toolbar-border,
+                $kendo-toolbar-gradient
+            );
+            @include box-shadow( $kendo-toolbar-shadow );
 
-        // Button group
-        .k-button-group {}
+            &.k-toolbar-scrollable-overlay {
+                &::before {
+                    background: linear-gradient(90deg, $kendo-toolbar-scroll-overlay);
+                }
+
+                &::after {
+                    background: linear-gradient(270deg, $kendo-toolbar-scroll-overlay);
+                }
+            }
+        }
+
+        // Outline Toolbar
+        #{k-when-default($kendo-toolbar-default-fill-mode, "outline")}
+        &.k-toolbar-outline {
+            @include fill(
+                $kendo-toolbar-outline-text,
+                transparent,
+                $kendo-toolbar-outline-border
+            );
+            @include box-shadow( $kendo-toolbar-outline-shadow );
+
+            &.k-toolbar-scrollable-overlay {
+                &::before {
+                    background: linear-gradient(90deg, $kendo-toolbar-outline-scroll-overlay);
+                }
+
+                &::after {
+                    background: linear-gradient(270deg, $kendo-toolbar-outline-scroll-overlay);
+                }
+            }
+        }
+
+        // Flat Toolbar
+        #{k-when-default($kendo-toolbar-default-fill-mode, "flat")}
+        &.k-toolbar-flat {
+            @include fill(
+                $color: $kendo-toolbar-flat-text,
+                $border: $kendo-toolbar-flat-border
+            );
+            @include box-shadow( $kendo-toolbar-flat-shadow );
+
+
+            > .k-separator,
+            .k-toolbar-separator {
+                border-inline-color: $kendo-toolbar-flat-border;
+            }
+
+            &.k-toolbar-scrollable-overlay {
+                &::before {
+                    background: linear-gradient(90deg, $kendo-toolbar-flat-scroll-overlay);
+                }
+
+                &::after {
+                    background: linear-gradient(270deg, $kendo-toolbar-flat-scroll-overlay);
+                }
+            }
+        }
 
     }
 
@@ -28,81 +94,23 @@
         border-color: $kendo-toolbar-separator-border;
     }
 
-    // Solid Toolbar
-    .k-toolbar-solid {
-        @include fill(
-            $kendo-toolbar-text,
-            $kendo-toolbar-bg,
-            $kendo-toolbar-border,
-            $kendo-toolbar-gradient
-        );
-        @include box-shadow( $kendo-toolbar-shadow );
 
-        &.k-toolbar-scrollable-overlay {
-            &::before {
-                background: linear-gradient(90deg, $kendo-toolbar-scroll-overlay);
-            }
+    .k-toolbar-items-list {
 
-            &::after {
-                background: linear-gradient(270deg, $kendo-toolbar-scroll-overlay);
-            }
-        }
-    }
-
-    .k-toolbar-items-list-solid {
-        border-color: $kendo-toolbar-border;
-    }
-
-    // Outline Toolbar
-    .k-toolbar-outline {
-        @include fill(
-            $color: $kendo-toolbar-outline-text,
-            $border: $kendo-toolbar-outline-border
-        );
-        @include box-shadow( $kendo-toolbar-outline-shadow );
-
-        &.k-toolbar-scrollable-overlay {
-            &::before {
-                background: linear-gradient(90deg, $kendo-toolbar-outline-scroll-overlay);
-            }
-
-            &::after {
-                background: linear-gradient(270deg, $kendo-toolbar-outline-scroll-overlay);
-            }
-        }
-    }
-
-    .k-toolbar-items-list-outline {
-        border-color: $kendo-toolbar-outline-border;
-    }
-
-    // Flat Toolbar
-    .k-toolbar-flat {
-        @include fill(
-            $color: $kendo-toolbar-flat-text,
-            $border: $kendo-toolbar-flat-border
-        );
-        @include box-shadow( $kendo-toolbar-flat-shadow );
-
-
-        > .k-separator,
-        .k-toolbar-separator {
-            border-inline-color: $kendo-toolbar-flat-border;
+        #{k-when-default($kendo-toolbar-default-fill-mode, "solid")}
+        &.k-toolbar-items-list-solid {
+            border-color: $kendo-toolbar-border;
         }
 
-        &.k-toolbar-scrollable-overlay {
-            &::before {
-                background: linear-gradient(90deg, $kendo-toolbar-flat-scroll-overlay);
-            }
-
-            &::after {
-                background: linear-gradient(270deg, $kendo-toolbar-flat-scroll-overlay);
-            }
+        #{k-when-default($kendo-toolbar-default-fill-mode, "outline")}
+        &.k-toolbar-items-list-outline {
+            border-color: $kendo-toolbar-outline-border;
         }
-    }
 
-    .k-toolbar-items-list-flat {
-        border-color: $kendo-toolbar-flat-border;
+        #{k-when-default($kendo-toolbar-default-fill-mode, "flat")}
+        &.k-toolbar-items-list-flat {
+            border-color: $kendo-toolbar-flat-border;
+        }
     }
 
     .k-floating-toolbar,
@@ -165,6 +173,7 @@
             background: linear-gradient(90deg, $kendo-toolbar-scroll-overlay);
         }
 
+        #{k-when-default($kendo-toolbar-default-fill-mode, "outline")}
         &.k-toolbar-outline {
             &::before {
                 background: linear-gradient(270deg, $kendo-toolbar-outline-scroll-overlay);
@@ -175,6 +184,7 @@
             }
         }
 
+        #{k-when-default($kendo-toolbar-default-fill-mode, "flat")}
         &.k-toolbar-flat {
             &::before {
                 background: linear-gradient(270deg, $kendo-toolbar-flat-scroll-overlay);

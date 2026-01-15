@@ -5,6 +5,23 @@
 
 // Chip
 
+/// The default theme color of the Chip.
+/// @group chip
+/// @role default
+$kendo-chip-default-theme-color: "base" !default;
+/// The default fill mode of the Chip.
+/// @group chip
+/// @role default
+$kendo-chip-default-fill-mode: "solid" !default;
+/// The default roundness of the Chip.
+/// @group chip
+/// @role default
+$kendo-chip-default-roundness: "md" !default;
+/// The default size of the Chip.
+/// @group chip
+/// @role default
+$kendo-chip-default-size: "md" !default;
+
 /// The width of the border around the Chip.
 /// @group chip
 $kendo-chip-border-width: 1px !default;
@@ -38,69 +55,36 @@ $kendo-chip-font-weight: var( --kendo-font-weight-normal, normal ) !default;
 
 /// The font size of the Chip.
 /// @group chip
-$kendo-chip-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-chip-font-size: null !default;
 /// The font size of the small Chip.
 /// @group chip
 $kendo-chip-sm-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the medium Chip.
 /// @group chip
-$kendo-chip-md-font-size: $kendo-chip-font-size !default;
+$kendo-chip-md-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the large Chip.
 /// @group chip
 $kendo-chip-lg-font-size: var( --kendo-font-size, inherit ) !default;
 
 /// The Chip's line height that is related to the $kendo-font-size.
 /// @group chip
-$kendo-chip-line-height: var( --kendo-line-height-xs, normal ) !default;
+$kendo-chip-line-height: null !default;
 /// The small Chip's line height that is related to the $kendo-font-size.
 /// @group chip
-$kendo-chip-sm-line-height: $kendo-chip-line-height !default;
+$kendo-chip-sm-line-height: var( --kendo-line-height-xs, normal )  !default;
 /// The medium Chip's line height that is related to the $kendo-font-size.
 /// @group chip
-$kendo-chip-md-line-height: $kendo-chip-line-height !default;
+$kendo-chip-md-line-height: var( --kendo-line-height-xs, normal )  !default;
 /// The large Chip's line height that is related to the $kendo-font-size.
 /// @group chip
-$kendo-chip-lg-line-height: $kendo-chip-line-height !default;
+$kendo-chip-lg-line-height: var( --kendo-line-height-xs, normal )  !default;
 
-$kendo-chip-calc-size: calc( #{$kendo-chip-line-height} * 1em + calc( #{$kendo-chip-md-padding-y} * 2 ) + #{$kendo-chip-border-width} * 2 ) !default;
+$kendo-chip-calc-size: calc( #{$kendo-chip-md-line-height} * 1em + calc( #{$kendo-chip-md-padding-y} * 2 ) + #{$kendo-chip-border-width} * 2 ) !default;
 $kendo-chip-sm-calc-size: calc( #{$kendo-chip-sm-line-height} * 1em + calc( #{$kendo-chip-sm-padding-y} * 2 ) + #{$kendo-chip-border-width} * 2 ) !default;
-
-/// The map with the sizes of the Chip.
-/// @group chip
-$kendo-chip-sizes: (
-    sm: (
-        padding-x: $kendo-chip-sm-padding-x,
-        padding-y: $kendo-chip-sm-padding-y,
-        font-size: $kendo-chip-sm-font-size,
-        line-height: $kendo-chip-sm-line-height
-    ),
-    md: (
-        padding-x: $kendo-chip-md-padding-x,
-        padding-y: $kendo-chip-md-padding-y,
-        font-size: $kendo-chip-md-font-size,
-        line-height: $kendo-chip-md-line-height
-    ),
-    lg: (
-        padding-x: $kendo-chip-lg-padding-x,
-        padding-y: $kendo-chip-lg-padding-y,
-        font-size: $kendo-chip-lg-font-size,
-        line-height: $kendo-chip-lg-line-height
-    )
-) !default;
 
 /// The base background of the Chip.
 /// @group chip
 $kendo-chip-base-bg: k-color(base-subtle) !default;
-
-/// The theme colors map for the Chip.
-/// @group chip
-$kendo-chip-theme-colors: (
-    "base": $kendo-chip-base-bg,
-    "error": k-color(error-subtle),
-    "info": k-color(info-subtle),
-    "warning": k-color(warning-subtle),
-    "success": k-color(success-subtle)
-) !default;
 
 /// The base background color of the solid Chip.
 /// @group chip
@@ -165,17 +149,21 @@ $kendo-chip-disabled-text: null !default;
 $kendo-chip-disabled-border: $kendo-chip-disabled-bg !default;
 
 
-// Chip List
-
-/// The sizes of the Chip list.
+/// The sizes of the small Chip list.
 /// @group chip
-$kendo-chip-list-sizes: (
-    sm: k-spacing(1),
-    md: k-spacing(1),
-    lg: k-spacing(1)
-) !default;
+$kendo-chip-list-size-sm: k-spacing(1) !default;
+/// The sizes of the medium Chip list.
+/// @group chip
+$kendo-chip-list-size-md: k-spacing(1) !default;
+/// The sizes of the large Chip list.
+/// @group chip
+$kendo-chip-list-size-lg: k-spacing(1) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/chip/_variables.scss" with (
+    $kendo-chip-default-theme-color: $kendo-chip-default-theme-color,
+    $kendo-chip-default-fill-mode: $kendo-chip-default-fill-mode,
+    $kendo-chip-default-roundness: $kendo-chip-default-roundness,
+    $kendo-chip-default-size: $kendo-chip-default-size,
     $kendo-chip-border-width: $kendo-chip-border-width,
     $kendo-chip-spacing: $kendo-chip-spacing,
     $kendo-chip-sm-padding-x: $kendo-chip-sm-padding-x,
@@ -195,9 +183,7 @@ $kendo-chip-list-sizes: (
     $kendo-chip-lg-line-height: $kendo-chip-lg-line-height,
     $kendo-chip-calc-size: $kendo-chip-calc-size,
     $kendo-chip-sm-calc-size: $kendo-chip-sm-calc-size,
-    $kendo-chip-sizes: $kendo-chip-sizes,
     $kendo-chip-base-bg: $kendo-chip-base-bg,
-    $kendo-chip-theme-colors: $kendo-chip-theme-colors,
     $kendo-chip-solid-bg: $kendo-chip-solid-bg,
     $kendo-chip-solid-text: $kendo-chip-solid-text,
     $kendo-chip-solid-border: $kendo-chip-solid-border,
@@ -216,5 +202,7 @@ $kendo-chip-list-sizes: (
     $kendo-chip-disabled-bg: $kendo-chip-disabled-bg,
     $kendo-chip-disabled-text: $kendo-chip-disabled-text,
     $kendo-chip-disabled-border: $kendo-chip-disabled-border,
-    $kendo-chip-list-sizes: $kendo-chip-list-sizes
+    $kendo-chip-list-size-sm: $kendo-chip-list-size-sm,
+    $kendo-chip-list-size-md: $kendo-chip-list-size-md,
+    $kendo-chip-list-size-lg: $kendo-chip-list-size-lg
 );

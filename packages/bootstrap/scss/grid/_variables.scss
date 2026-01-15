@@ -11,6 +11,12 @@
 
 
 // Grid
+
+/// The default size of the Grid.
+/// @group grid
+/// @role default
+$kendo-grid-default-size: "md" !default;
+
 /// The width of the border around the Grid.
 /// @group grid
 $kendo-grid-border-width: 1px !default;
@@ -172,46 +178,6 @@ $kendo-grid-md-selection-aggregates-padding-x: $kendo-grid-padding-y !default;
 /// @group grid
 $kendo-grid-md-selection-aggregates-padding-y: $kendo-grid-padding-y !default;
 
-
-// Kendo Grid sizes
-/// The sizes of the Grid.
-/// @group grid
-$kendo-grid-sizes: (
-    sm: (
-        header-padding-x: $kendo-grid-sm-header-padding-x,
-        header-padding-y: $kendo-grid-sm-header-padding-y,
-        grouping-header-padding-x: $kendo-grid-sm-grouping-header-padding-x,
-        grouping-header-padding-y: $kendo-grid-sm-grouping-header-padding-y,
-        cell-padding-x: $kendo-grid-sm-cell-padding-x,
-        cell-padding-y: $kendo-grid-sm-cell-padding-y,
-        filter-cell-padding-x: $kendo-grid-sm-filter-cell-padding-x,
-        filter-cell-padding-y: $kendo-grid-sm-filter-cell-padding-y,
-        edit-cell-padding-x: $kendo-grid-sm-edit-cell-padding-x,
-        edit-cell-padding-y: $kendo-grid-sm-edit-cell-padding-y,
-        button-padding-y: $kendo-button-sm-padding-y,
-        button-calc-size: $kendo-button-sm-calc-size,
-        group-dropclue-height: $kendo-grid-sm-group-dropclue-height,
-        selection-aggregates-padding-x: $kendo-grid-sm-selection-aggregates-padding-x,
-        selection-aggregates-padding-y: $kendo-grid-sm-selection-aggregates-padding-y
-    ),
-    md: (
-        header-padding-x: $kendo-grid-md-header-padding-x,
-        header-padding-y: $kendo-grid-md-header-padding-y,
-        grouping-header-padding-x: $kendo-grid-md-grouping-header-padding-x,
-        grouping-header-padding-y: $kendo-grid-md-grouping-header-padding-y,
-        cell-padding-x: $kendo-grid-md-cell-padding-x,
-        cell-padding-y: $kendo-grid-md-cell-padding-y,
-        filter-cell-padding-x: $kendo-grid-md-filter-cell-padding-x,
-        filter-cell-padding-y: $kendo-grid-md-filter-cell-padding-y,
-        edit-cell-padding-x: $kendo-grid-md-edit-cell-padding-x,
-        edit-cell-padding-y: $kendo-grid-md-edit-cell-padding-y,
-        button-padding-y: $kendo-button-md-padding-y,
-        button-calc-size: $kendo-button-md-calc-size,
-        group-dropclue-height: $kendo-grid-md-group-dropclue-height,
-        selection-aggregates-padding-x: $kendo-grid-md-selection-aggregates-padding-x,
-        selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-y
-    ),
-) !default;
 
 /// The font size of the Grid header.
 /// @group grid
@@ -528,6 +494,7 @@ $kendo-grid-stack-expandable-shadow: k-elevation(2) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/grid/_variables.scss" with (
+    $kendo-grid-default-size: $kendo-grid-default-size,
     $kendo-grid-border-width: $kendo-grid-border-width,
     $kendo-grid-font-family: $kendo-grid-font-family,
     $kendo-grid-font-size: $kendo-grid-font-size,
@@ -578,7 +545,6 @@ $kendo-grid-stack-expandable-shadow: k-elevation(2) !default;
     $kendo-grid-md-group-dropclue-height: $kendo-grid-md-group-dropclue-height,
     $kendo-grid-md-selection-aggregates-padding-x: $kendo-grid-md-selection-aggregates-padding-x,
     $kendo-grid-md-selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-y,
-    $kendo-grid-sizes: $kendo-grid-sizes,
     $kendo-grid-header-font-size: $kendo-grid-header-font-size,
     $kendo-grid-header-first-border: $kendo-grid-header-first-border,
     $kendo-grid-header-menu-icon-spacing: $kendo-grid-header-menu-icon-spacing,

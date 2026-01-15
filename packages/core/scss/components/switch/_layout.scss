@@ -2,6 +2,8 @@
 @use "sass:math";
 @use "../../color-system/_constants.scss" as *;
 @use "../../motion/index.scss" as *;
+@use "../../functions/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-switch--layout-base() {
@@ -33,6 +35,48 @@
         &[aria-readonly="true"] {
             pointer-events: none;
         }
+
+        // Switch sizes
+        @each $size, $size-props in $kendo-switch-sizes {
+
+            $_font-size: map.get( $size-props, font-size );
+            $_track-width: map.get( $size-props, track-width );
+            $_track-height: map.get( $size-props, track-height );
+            $_thumb-width: map.get( $size-props, thumb-width );
+            $_thumb-height: map.get( $size-props, thumb-height );
+            $_thumb-offset: map.get( $size-props, thumb-offset );
+            $_label-offset: map.get( $size-props, label-offset );
+
+            #{k-when-default($kendo-switch-default-size, $size)}
+            &.k-switch-#{$size} {
+                width: $_track-width;
+                height: $_track-height;
+                font-size: $_font-size;
+
+                .k-switch-track {
+                    width: $_track-width;
+                    height: $_track-height;
+                }
+
+                .k-switch-label-on { inset-inline-start: $_label-offset; }
+                .k-switch-label-off { inset-inline-end: $_label-offset; }
+
+                .k-switch-thumb {
+                    width: $_thumb-width;
+                    height: $_thumb-height;
+                }
+
+                &.k-switch-on .k-switch-thumb-wrap {
+                    inset-inline-start: calc( 100% - #{math.div( $_thumb-width, 2 )} - #{$_thumb-offset} );
+                    transition: left k-transition(bouncy);
+                }
+                &.k-switch-off .k-switch-thumb-wrap {
+                    inset-inline-start: calc( #{math.div( $_thumb-width, 2 )} + #{$_thumb-offset} );
+                    transition: left k-transition(snappy);
+                }
+            }
+        }
+
     }
 
 
@@ -52,6 +96,14 @@
         flex: 1 0 auto;
         position: relative;
         transition: background-color k-transition(rapid), border-color k-transition(rapid), color k-transition(rapid);
+
+        // Roundness
+        @each $roundness in $kendo-switch-track-roundness {
+            #{k-when-default($kendo-switch-default-track-roundness, $roundness)}
+            &.k-rounded-#{$roundness} {
+                border-radius: k-border-radius($roundness);
+            }
+        }
     }
 
 
@@ -70,6 +122,14 @@
         position: absolute;
         transform: translate( -50%, -50% );
         transition: all k-transition(rapid);
+
+        // Roundness
+        @each $roundness in $kendo-switch-track-roundness {
+            #{k-when-default($kendo-switch-default-track-roundness, $roundness)}
+            &.k-rounded-#{$roundness} {
+                border-radius: k-border-radius($roundness);
+            }
+        }
     }
 
 
@@ -83,47 +143,6 @@
         transform: translateY( -50% );
         overflow: hidden;
         transition: color k-transition(snappy);
-    }
-
-
-    // Switch sizes
-    @each $size, $size-props in $kendo-switch-sizes {
-
-        $_font-size: map.get( $size-props, font-size );
-        $_track-width: map.get( $size-props, track-width );
-        $_track-height: map.get( $size-props, track-height );
-        $_thumb-width: map.get( $size-props, thumb-width );
-        $_thumb-height: map.get( $size-props, thumb-height );
-        $_thumb-offset: map.get( $size-props, thumb-offset );
-        $_label-offset: map.get( $size-props, label-offset );
-
-        .k-switch-#{$size} {
-            width: $_track-width;
-            height: $_track-height;
-            font-size: $_font-size;
-
-            .k-switch-track {
-                width: $_track-width;
-                height: $_track-height;
-            }
-
-            .k-switch-label-on { inset-inline-start: $_label-offset; }
-            .k-switch-label-off { inset-inline-end: $_label-offset; }
-
-            .k-switch-thumb {
-                width: $_thumb-width;
-                height: $_thumb-height;
-            }
-
-            &.k-switch-on .k-switch-thumb-wrap {
-                inset-inline-start: calc( 100% - #{math.div( $_thumb-width, 2 )} - #{$_thumb-offset} );
-                transition: left k-transition(bouncy);
-            }
-            &.k-switch-off .k-switch-thumb-wrap {
-                inset-inline-start: calc( #{math.div( $_thumb-width, 2 )} + #{$_thumb-offset} );
-                transition: left k-transition(snappy);
-            }
-        }
     }
 
 

@@ -1,5 +1,7 @@
 @use "sass:map";
 @use "./variables.scss" as *;
+@use "../../functions/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
 @use "../../spacing/index.scss" as *;
 @use "../../motion/index.scss" as *;
 
@@ -7,7 +9,6 @@
 
     // Floating Action Button (FAB)
     .k-fab {
-        padding: 0;
         border-width: 0;
         border-style: solid;
         border-color: transparent;
@@ -38,6 +39,26 @@
         &:focus {
             outline: none;
         }
+
+        // Roundness
+        @each $roundness in $kendo-fab-roundness {
+            #{k-when-default($kendo-fab-default-roundness, $roundness)}
+            &.k-rounded-#{$roundness} {
+                border-radius: k-border-radius($roundness);
+            }
+        }
+
+        // Sizes
+        @each $size, $size-props in $kendo-fab-sizes {
+            $_padding-x: map.get( $size-props, padding-x );
+            $_padding-y: map.get( $size-props, padding-y );
+
+            #{k-when-default($kendo-fab-default-size, $size)}
+            &.k-fab-#{$size} {
+                padding: $_padding-y $_padding-x;
+            }
+
+        }
     }
 
     // FAB Icon
@@ -51,17 +72,6 @@
     .k-fab-icon:not(:only-child) {
         margin-inline-end: $kendo-fab-icon-spacing;
         margin-inline-start: calc( #{$kendo-fab-icon-spacing} * -1 );
-    }
-
-    // Sizes
-    @each $size, $size-props in $kendo-fab-sizes {
-        $_padding-x: map.get( $size-props, padding-x );
-        $_padding-y: map.get( $size-props, padding-y );
-
-        .k-fab-#{$size} {
-            padding: $_padding-y $_padding-x;
-        }
-
     }
 
     // Items

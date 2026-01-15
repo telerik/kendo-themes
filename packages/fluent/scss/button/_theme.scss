@@ -1,153 +1,188 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/button/_theme.scss" as *;
 
 @mixin kendo-button--theme() {
 
     @include kendo-button--theme-base();
-    .k-button-solid {
-        &:focus,
-        &.k-focus {
-            border-color: $kendo-button-focus-border;
-            outline-color: $kendo-button-focus-border;
-            box-shadow: inset 0 0 0 $kendo-button-border-width $kendo-button-focus-border,
-                        inset 0 0 0 calc( #{$kendo-button-border-width} * 2 ) k-color(surface);
-        }
-    }
 
-    .k-button-solid-base {
-        &.k-selected {
-            color: $kendo-button-active-text;
-            background-color: $kendo-button-active-bg;
-            border-color: $kendo-button-active-border;
-        }
-    }
-
-    .k-button-flat {
-        &:disabled,
-        &.k-disabled {
-            @include fill(
-                $kendo-button-flat-disabled-text,
-                $kendo-button-flat-disabled-bg,
-                $kendo-button-flat-disabled-border
-            );
-        }
-    }
-
-    .k-button-outline,
-    .k-button-flat,
-    .k-button-clear,
-    .k-button-link {
-        &:focus,
-        &.k-focus {
-            outline-color: $kendo-button-focus-border;
-        }
-
-        &:disabled,
-        &.k-disabled {
-            @include fill(
-                $kendo-button-outline-disabled-text,
-                $kendo-button-outline-disabled-bg,
-                $kendo-button-outline-disabled-border
-            );
-        }
-    }
-
-    @each $theme-color, $color in $kendo-button-theme-colors {
-        @if($theme-color != "base") {
-            .k-button-flat-#{$theme-color} {
-                background-color: initial !important; // stylelint-disable-line declaration-no-important
-                border-color: transparent;
+    .k-button {
+        #{k-when-default($kendo-button-default-fill-mode, "solid")}
+        &.k-button-solid {
+            &:focus,
+            &.k-focus {
+                border-color: $kendo-button-focus-border;
+                outline-color: $kendo-button-focus-border;
+                box-shadow: inset 0 0 0 $kendo-button-border-width $kendo-button-focus-border,
+                            inset 0 0 0 calc( #{$kendo-button-border-width} * 2 ) k-color(surface);
             }
 
-            .k-button-outline-#{$theme-color} {
-
-                border-color: k-color(#{$theme-color}-on-surface);
-
-                &:hover,
-                &.k-hover,
-                &:active,
-                &.k-active,
+            #{k-when-default($kendo-button-default-theme-color, "base")}
+            &.k-button-base {
                 &.k-selected {
-                    border-color: k-color(#{$theme-color}-on-surface);
-                }
-            }
-
-            .k-button-flat-#{$theme-color},
-            .k-button-outline-#{$theme-color} {
-                color: k-color(#{$theme-color}-on-surface);
-
-                &:hover,
-                &.k-hover {
-                    color: k-color(#{$theme-color}-on-surface);
-                    background-color: color-mix(in srgb, k-color(#{$theme-color}-hover) 3%, transparent) !important; // stylelint-disable-line declaration-no-important
-                }
-
-                &:active,
-                &.k-active,
-                &.k-selected {
-                    color: k-color(#{$theme-color}-on-surface);
-                    background-color: color-mix(in srgb, k-color(#{$theme-color}-active) 13%, transparent) !important; // stylelint-disable-line declaration-no-important
+                    color: $kendo-button-active-text;
+                    background-color: $kendo-button-active-bg;
+                    border-color: $kendo-button-active-border;
                 }
             }
         }
 
-        @if($theme-color == "base") {
-            .k-button-outline-#{$theme-color} {
-                border-color: $kendo-button-border;
-
-                &:hover,
-                &.k-hover {
-                    color: inherit;
-                    background-color: color-mix(in srgb, k-color(on-base) 3%, transparent);
-                    border-color: color-mix( in srgb, k-color(border) 34%, transparent );
-                }
-
-                &:active,
-                &.k-active,
-                &.k-selected {
-                    color: inherit;
-                    background-color: color-mix(in srgb, k-color(on-base) 13%, transparent);
-                    border-color: $kendo-button-border;
-                }
-            }
-
-            .k-button-flat-#{$theme-color} {
-                &:hover,
-                &.k-hover {
-                    background-color: color-mix(in srgb, k-color(on-base) 3%, transparent) !important; // stylelint-disable-line declaration-no-important
-                }
+        #{k-when-default($kendo-button-default-fill-mode, "flat")}
+        &.k-button-flat {
+            &:disabled,
+            &.k-disabled {
+                @include fill(
+                    $kendo-button-flat-disabled-text,
+                    $kendo-button-flat-disabled-bg,
+                    $kendo-button-flat-disabled-border
+                );
             }
         }
 
-        @if($theme-color == "secondary") {
-            .k-button-solid-#{$theme-color} {
-                border-color: currentColor;
+        #{k-when-default($kendo-button-default-fill-mode, ("outline", "flat", "clear", "link"))}
+        &.k-button-outline,
+        &.k-button-flat,
+        &.k-button-clear,
+        &.k-button-link {
+            &:focus,
+            &.k-focus {
+                outline-color: $kendo-button-focus-border;
+            }
 
-                &:hover,
-                &.k-hover,
-                &:active,
-                &.k-active,
-                &.k-selected {
-                    border-color: currentColor;
-                }
-
-                &:focus,
-                &.k-focus {
-                    box-shadow: inset 0 0 0 $kendo-button-border-width $kendo-button-focus-border;
-                }
+            &:disabled,
+            &.k-disabled {
+                @include fill(
+                    $kendo-button-outline-disabled-text,
+                    $kendo-button-outline-disabled-bg,
+                    $kendo-button-outline-disabled-border
+                );
             }
         }
 
-        @if($theme-color == "light") {
-            .k-button-outline-#{$theme-color},
-            .k-button-flat-#{$theme-color},
-            .k-button-clear-#{$theme-color},
-            .k-button-link-#{$theme-color} {
-                &:focus,
-                &.k-focus {
-                    outline-color: k-color(light-on-surface);
+        @each $theme-color in $kendo-button-theme-colors {
+            @if($theme-color != "base") {
+                #{k-when-default($kendo-button-default-fill-mode, "flat")}
+                &.k-button-flat {
+                    #{k-when-default($kendo-button-default-theme-color, $theme-color)}
+                    &.k-button-#{$theme-color} {
+                        background-color: initial !important; // stylelint-disable-line declaration-no-important
+                        border-color: transparent;
+                    }
+                }
+
+                #{k-when-default($kendo-button-default-fill-mode, "outline")}
+                &.k-button-outline {
+                    #{k-when-default($kendo-button-default-theme-color, $theme-color)}
+                    &.k-button-#{$theme-color} {
+                        border-color: k-color(#{$theme-color}-on-surface);
+
+                        &:hover,
+                        &.k-hover,
+                        &:active,
+                        &.k-active,
+                        &.k-selected {
+                            border-color: k-color(#{$theme-color}-on-surface);
+                        }
+                    }
+                }
+
+                #{k-when-default($kendo-button-default-fill-mode, ("flat", "outline"))}
+                &.k-button-flat,
+                &.k-button-outline {
+                    #{k-when-default($kendo-button-default-theme-color, $theme-color)}
+                    &.k-button-#{$theme-color} {
+                        color: k-color(#{$theme-color}-on-surface);
+
+                        &:hover,
+                        &.k-hover {
+                            color: k-color(#{$theme-color}-on-surface);
+                            background-color: color-mix(in srgb, k-color(#{$theme-color}-hover) 3%, transparent) !important; // stylelint-disable-line declaration-no-important
+                        }
+
+                        &:active,
+                        &.k-active,
+                        &.k-selected {
+                            color: k-color(#{$theme-color}-on-surface);
+                            background-color: color-mix(in srgb, k-color(#{$theme-color}-active) 13%, transparent) !important; // stylelint-disable-line declaration-no-important
+                        }
+                    }
+                }
+            }
+
+            @if($theme-color == "base") {
+                #{k-when-default($kendo-button-default-fill-mode, "outline")}
+                &.k-button-outline {
+                    #{k-when-default($kendo-button-default-theme-color, $theme-color)}
+                    &.k-button-#{$theme-color} {
+                        border-color: $kendo-button-border;
+
+                        &:hover,
+                        &.k-hover {
+                            color: inherit;
+                            background-color: color-mix(in srgb, k-color(on-base) 3%, transparent);
+                            border-color: color-mix( in srgb, k-color(border) 34%, transparent );
+                        }
+
+                        &:active,
+                        &.k-active,
+                        &.k-selected {
+                            color: inherit;
+                            background-color: color-mix(in srgb, k-color(on-base) 13%, transparent);
+                            border-color: $kendo-button-border;
+                        }
+                    }
+                }
+
+                #{k-when-default($kendo-button-default-fill-mode, "flat")}
+                &.k-button-flat {
+                    #{k-when-default($kendo-button-default-theme-color, $theme-color)}
+                    &.k-button-#{$theme-color} {
+                        &:hover,
+                        &.k-hover {
+                            background-color: color-mix(in srgb, k-color(on-base) 3%, transparent) !important; // stylelint-disable-line declaration-no-important
+                        }
+                    }
+                }
+            }
+
+            @if($theme-color == "secondary") {
+                #{k-when-default($kendo-button-default-fill-mode, "solid")}
+                &.k-button-solid {
+                    #{k-when-default($kendo-button-default-theme-color, $theme-color)}
+                    &.k-button-#{$theme-color} {
+                        border-color: currentColor;
+
+                        &:hover,
+                        &.k-hover,
+                        &:active,
+                        &.k-active,
+                        &.k-selected {
+                            border-color: currentColor;
+                        }
+
+                        &:focus,
+                        &.k-focus {
+                            box-shadow: inset 0 0 0 $kendo-button-border-width $kendo-button-focus-border;
+                        }
+                    }
+                }
+            }
+
+            @if($theme-color == "light") {
+                #{k-when-default($kendo-button-default-fill-mode, ("outline", "flat", "clear", "link"))}
+                &.k-button-outline,
+                &.k-button-flat,
+                &.k-button-clear,
+                &.k-button-link {
+                    #{k-when-default($kendo-button-default-theme-color, $theme-color)}
+                    &.k-button-#{$theme-color} {
+                        &:focus,
+                        &.k-focus {
+                            outline-color: k-color(light-on-surface);
+                        }
+                    }
                 }
             }
         }
@@ -162,24 +197,37 @@
     :where(.k-disabled),
     :where(:disabled) {
 
-        .k-button-solid {
-            color: $kendo-button-disabled-text;
-            background-color: $kendo-button-disabled-bg;
-            border-color: $kendo-button-disabled-border;
-        }
+        .k-button {
 
-        .k-button-outline {
-            color: $kendo-button-outline-disabled-text;
-            background-color: $kendo-button-outline-disabled-bg;
-            border-color: $kendo-button-outline-disabled-border;
-        }
+            @each $theme-color in $kendo-button-theme-colors {
 
-        .k-button-flat,
-        .k-button-clear,
-        .k-button-link {
-            color: $kendo-button-flat-disabled-text;
-            background-color: $kendo-button-flat-disabled-bg;
-            border-color: $kendo-button-flat-disabled-border;
+                #{k-when-default($kendo-button-default-theme-color, $theme-color)}
+                &.k-button-#{$theme-color} {
+
+                    #{k-when-default($kendo-button-default-fill-mode, "solid")}
+                    &.k-button-solid {
+                        color: $kendo-button-disabled-text;
+                        background-color: $kendo-button-disabled-bg;
+                        border-color: $kendo-button-disabled-border;
+                    }
+
+                    #{k-when-default($kendo-button-default-fill-mode, "outline")}
+                    &.k-button-outline {
+                        color: $kendo-button-outline-disabled-text;
+                        background-color: $kendo-button-outline-disabled-bg;
+                        border-color: $kendo-button-outline-disabled-border;
+                    }
+
+                    #{k-when-default($kendo-button-default-fill-mode, ("flat", "clear", "link"))}
+                    &.k-button-flat,
+                    &.k-button-clear,
+                    &.k-button-link {
+                        color: $kendo-button-flat-disabled-text;
+                        background-color: $kendo-button-flat-disabled-bg;
+                        border-color: $kendo-button-flat-disabled-border;
+                    }
+                }
+            }
         }
     }
 }

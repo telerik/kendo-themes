@@ -14,8 +14,25 @@ $kendo-checkbox-sm-ripple-size: null !default;
 $kendo-checkbox-md-ripple-size: null !default;
 $kendo-checkbox-lg-ripple-size: null !default;
 
-// A map with the different CheckBox sizes.
-$kendo-checkbox-sizes: null !default;
+/// The sizes map of the CheckBox.
+/// @group checkbox
+$kendo-checkbox-sizes: (
+    sm: (
+        size: $kendo-checkbox-sm-size,
+        glyph-size: $kendo-checkbox-sm-glyph-size,
+        ripple-size: $kendo-checkbox-sm-ripple-size
+    ),
+    md: (
+        size: $kendo-checkbox-md-size,
+        glyph-size: $kendo-checkbox-md-glyph-size,
+        ripple-size: $kendo-checkbox-md-ripple-size
+    ),
+    lg: (
+        size: $kendo-checkbox-lg-size,
+        glyph-size: $kendo-checkbox-lg-glyph-size,
+        ripple-size: $kendo-checkbox-lg-ripple-size
+    )
+) !default;
 
 $kendo-checkbox-bg: null !default;
 $kendo-checkbox-text: null !default;
@@ -49,6 +66,10 @@ $kendo-checkbox-disabled-checked-border: null !default;
 $kendo-checkbox-invalid-text: null !default;
 $kendo-checkbox-invalid-border: null !default;
 
+$kendo-checkbox-default-size: null !default;
+$kendo-checkbox-default-roundness: null !default;
+
+$kendo-checkbox-roundness: ( "none", "sm", "md", "lg", "full" ) !default;
 
 // CheckBox indicator
 

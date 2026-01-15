@@ -42,26 +42,6 @@ $kendo-radio-md-ripple-size: 300% !default;
 /// @group radio
 $kendo-radio-lg-ripple-size: 300% !default;
 
-/// The map with the different RadioButton sizes.
-/// @group radio
-$kendo-radio-sizes: (
-    sm: (
-        size: $kendo-radio-sm-size,
-        glyph-size: $kendo-radio-sm-glyph-size,
-        ripple-size: $kendo-radio-sm-ripple-size
-    ),
-    md: (
-        size: $kendo-radio-md-size,
-        glyph-size: $kendo-radio-md-glyph-size,
-        ripple-size: $kendo-radio-md-ripple-size
-    ),
-    lg: (
-        size: $kendo-radio-lg-size,
-        glyph-size: $kendo-radio-lg-glyph-size,
-        ripple-size: $kendo-radio-lg-ripple-size
-    )
-) !default;
-
 /// The background color of the RadioButton.
 /// @group radio
 $kendo-radio-bg: $kendo-checkbox-bg !default;
@@ -184,6 +164,10 @@ $kendo-radio-ripple-bg: $kendo-radio-checked-bg !default;
 /// @group radio
 $kendo-radio-ripple-opacity: .25 !default;
 
+/// The default size of the RadioButton.
+/// @group radio
+/// @role default
+$kendo-radio-default-size: "md" !default;
 
 @forward "@progress/kendo-theme-core/scss/components/radio/_variables.scss" with (
     $kendo-radio-radius: $kendo-radio-radius,
@@ -197,7 +181,6 @@ $kendo-radio-ripple-opacity: .25 !default;
     $kendo-radio-sm-ripple-size: $kendo-radio-sm-ripple-size,
     $kendo-radio-md-ripple-size: $kendo-radio-md-ripple-size,
     $kendo-radio-lg-ripple-size: $kendo-radio-lg-ripple-size,
-    $kendo-radio-sizes: $kendo-radio-sizes,
     $kendo-radio-bg: $kendo-radio-bg,
     $kendo-radio-text: $kendo-radio-text,
     $kendo-radio-border: $kendo-radio-border,
@@ -229,5 +212,6 @@ $kendo-radio-ripple-opacity: .25 !default;
     $kendo-radio-list-item-padding-x: $kendo-radio-list-item-padding-x,
     $kendo-radio-list-item-padding-y: $kendo-radio-list-item-padding-y,
     $kendo-radio-ripple-bg: $kendo-radio-ripple-bg,
-    $kendo-radio-ripple-opacity: $kendo-radio-ripple-opacity
+    $kendo-radio-ripple-opacity: $kendo-radio-ripple-opacity,
+    $kendo-radio-default-size: $kendo-radio-default-size
 );

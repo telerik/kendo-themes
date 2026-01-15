@@ -5,6 +5,11 @@
 
 // Card
 
+/// The default theme color of the Card.
+/// @group card
+/// @role default
+$kendo-card-default-theme-color: null !default;
+
 /// The horizontal padding of the Card.
 /// @group card
 $kendo-card-padding-x: k-spacing(4) !default;
@@ -183,22 +188,8 @@ $kendo-card-callout-width: 1.3em !default;
 /// @group card
 $kendo-card-callout-height: 1.3em !default;
 
-/// The theme colors of the Card.
-/// @group card
-$kendo-card-theme-colors: (
-    "primary": k-color(primary),
-    "secondary": k-color(secondary),
-    "tertiary": k-color(tertiary),
-    "info": k-color(info),
-    "success": k-color(success),
-    "warning": k-color(warning),
-    "error": k-color(error),
-    "dark": k-color(dark),
-    "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
-) !default;
-
 @forward "@progress/kendo-theme-core/scss/components/card/_variables.scss" with (
+    $kendo-card-default-theme-color: $kendo-card-default-theme-color,
     $kendo-card-padding-x: $kendo-card-padding-x,
     $kendo-card-padding-y: $kendo-card-padding-y,
     $kendo-card-border-width: $kendo-card-border-width,
@@ -252,6 +243,5 @@ $kendo-card-theme-colors: (
     $kendo-card-deck-scroll-button-radius: $kendo-card-deck-scroll-button-radius,
     $kendo-card-deck-scroll-button-offset: $kendo-card-deck-scroll-button-offset,
     $kendo-card-callout-width: $kendo-card-callout-width,
-    $kendo-card-callout-height: $kendo-card-callout-height,
-    $kendo-card-theme-colors: $kendo-card-theme-colors
+    $kendo-card-callout-height: $kendo-card-callout-height
 );

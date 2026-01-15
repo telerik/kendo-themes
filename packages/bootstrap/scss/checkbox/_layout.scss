@@ -1,20 +1,26 @@
 @use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
+@use "./variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/checkbox/_layout.scss" as *;
-
 
 @mixin kendo-checkbox--layout() {
 
     @include kendo-checkbox--layout-base();
 
     // Override inherited bootstrap border radius
-    .k-checkbox.k-rounded-sm {
-        border-radius: calc( #{k-border-radius(sm)} / 2 );
-    }
-    .k-checkbox.k-rounded-md {
-        border-radius: k-border-radius(sm);
-    }
-    .k-checkbox.k-rounded-lg {
-        border-radius: k-border-radius(md);
+    .k-checkbox {
+        #{k-when-default($kendo-checkbox-default-roundness, "sm")}
+        &.k-rounded-sm {
+            border-radius: calc( #{k-border-radius(sm)} / 2 );
+        }
+        #{k-when-default($kendo-checkbox-default-roundness, "md")}
+        &.k-rounded-md {
+            border-radius: k-border-radius(sm);
+        }
+        #{k-when-default($kendo-checkbox-default-roundness, "lg")}
+        &.k-rounded-lg {
+            border-radius: k-border-radius(md);
+        }
     }
 
 }

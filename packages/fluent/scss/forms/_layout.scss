@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "sass:math";
 @use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/forms/_layout.scss" as *;
 
@@ -11,14 +12,15 @@
         .k-form-buttons {
             margin-block-start: calc( #{map.get($kendo-form-sizes, md, form-rows-spacing)} * 2 );
         }
-    }
 
-    @each $size, $size-props in $kendo-form-sizes {
-        $_form-rows-spacing: map.get($size-props, form-rows-spacing);
+        @each $size, $size-props in $kendo-form-sizes {
+            $_form-rows-spacing: map.get($size-props, form-rows-spacing);
 
-        .k-form-#{$size} {
-            .k-form-buttons {
-                margin-block-start: calc( #{$_form-rows-spacing} * 2 );
+            #{k-when-default($kendo-form-default-size, $size)}
+            &.k-form-#{$size} {
+                .k-form-buttons {
+                    margin-block-start: calc( #{$_form-rows-spacing} * 2 );
+                }
             }
         }
     }

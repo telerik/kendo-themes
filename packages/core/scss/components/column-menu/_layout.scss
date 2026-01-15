@@ -1,10 +1,10 @@
 @use "sass:map";
+@use "../../functions/index.scss" as *;
 @use "../../spacing/index.scss" as *;
 @use "../../border-radii/index.scss" as *;
 @use "_variables.scss" as *;
 
 @mixin kendo-column-menu--layout-base() {
-    .k-column-menu {}
 
     // Sizes
     @each $size, $value in $kendo-column-menu-sizes {
@@ -13,39 +13,50 @@
         $_font-size: map.get($value, font-size);
         $_line-height: map.get($value, line-height);
 
-        .k-column-menu-#{$size} {
-            font-size: $_font-size;
-            line-height: $_line-height;
-
-            .k-columnmenu-item {
-                padding-block: $_padding-y;
-                padding-inline: $_padding-x;
+        .k-column-menu {
+            #{k-when-default($kendo-column-menu-default-size, $size)}
+            &.k-column-menu-#{$size} {
                 font-size: $_font-size;
                 line-height: $_line-height;
+
+                .k-columnmenu-item {
+                    padding-block: $_padding-y;
+                    padding-inline: $_padding-x;
+                    font-size: $_font-size;
+                    line-height: $_line-height;
+                }
             }
         }
 
-        .k-column-list-#{$size} {
-            font-size: $_font-size;
-            line-height: $_line-height;
+        .k-column-list {
 
-            .k-column-list-item {
-                padding-block: $_padding-y;
-                padding-inline: $_padding-x;
+            #{k-when-default($kendo-column-menu-default-size, $size)}
+            &.k-column-list-#{$size} {
                 font-size: $_font-size;
                 line-height: $_line-height;
+
+                .k-column-list-item {
+                    padding-block: $_padding-y;
+                    padding-inline: $_padding-x;
+                    font-size: $_font-size;
+                    line-height: $_line-height;
+                }
             }
         }
 
-        .k-group-menu-#{$size} {
-            font-size: $_font-size;
-            line-height: $_line-height;
+        .k-group-menu {
 
-            .k-group-menu-item {
-                padding-block: $_padding-y;
-                padding-inline: $_padding-x;
+            #{k-when-default($kendo-column-menu-default-size, $size)}
+            &.k-group-menu-#{$size} {
                 font-size: $_font-size;
                 line-height: $_line-height;
+
+                .k-group-menu-item {
+                    padding-block: $_padding-y;
+                    padding-inline: $_padding-x;
+                    font-size: $_font-size;
+                    line-height: $_line-height;
+                }
             }
         }
     }

@@ -1,6 +1,11 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
+/// The default size of the ColorPalette.
+/// @group color-palette
+/// @role default
+$kendo-color-palette-default-size: "md" !default;
+
 /// The font family of the ColorPalette.
 /// @group color-palette
 $kendo-color-palette-font-family: var( --kendo-color-palette-font-family, var( --kendo-font-family, inherit ) ) !default;
@@ -46,24 +51,8 @@ $kendo-color-palette-tile-hover-shadow: var( --kendo-color-palette-tile-hover-sh
 /// @group color-palette
 $kendo-color-palette-tile-selected-shadow: var( --kendo-color-palette-tile-selected-shadow, inset 0 0 0 3px #{k-color(primary)}, inset 0 0 0 5px #{k-color(app-surface)} ) !default;
 
-/// The size map of the ColorPalette.
-/// @group color-palette
-$kendo-color-palette-sizes: (
-    sm: (
-        width: $kendo-color-palette-sm-tile-width,
-        height: $kendo-color-palette-sm-tile-height
-    ),
-    md: (
-        width: $kendo-color-palette-md-tile-width,
-        height: $kendo-color-palette-md-tile-height
-    ),
-    lg: (
-        width: $kendo-color-palette-lg-tile-width,
-        height: $kendo-color-palette-lg-tile-height
-    )
-) !default;
-
 @forward "@progress/kendo-theme-core/scss/components/colorpalette/_variables.scss" with (
+    $kendo-color-palette-default-size: $kendo-color-palette-default-size,
     $kendo-color-palette-font-family: $kendo-color-palette-font-family,
     $kendo-color-palette-font-size: $kendo-color-palette-font-size,
     $kendo-color-palette-line-height: $kendo-color-palette-line-height,
@@ -77,6 +66,5 @@ $kendo-color-palette-sizes: (
     $kendo-color-palette-lg-tile-height: $kendo-color-palette-lg-tile-height,
     $kendo-color-palette-tile-focus-shadow: $kendo-color-palette-tile-focus-shadow,
     $kendo-color-palette-tile-hover-shadow: $kendo-color-palette-tile-hover-shadow,
-    $kendo-color-palette-tile-selected-shadow: $kendo-color-palette-tile-selected-shadow,
-    $kendo-color-palette-sizes: $kendo-color-palette-sizes
+    $kendo-color-palette-tile-selected-shadow: $kendo-color-palette-tile-selected-shadow
 );

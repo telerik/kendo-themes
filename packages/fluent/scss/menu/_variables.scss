@@ -3,6 +3,11 @@
 @use "../list/_variables.scss"as *;
 @use "../popup/_variables.scss"as *;
 
+/// The default size of the Menu group.
+/// @group menu
+/// @role default
+$kendo-menu-group-default-size: "md" !default;
+
 /// The width of the border around the Menu.
 /// @group menu
 $kendo-menu-border-width: var( --kendo-menu-border-width, #{k-spacing(0)} ) !default;
@@ -217,38 +222,6 @@ $kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (var( --kendo-icon-size, 1
 /// @group menu
 $kendo-menu-popup-item-spacing: var( --kendo-menu-popup-item-spacing, #{k-spacing(0)} ) !default;
 
-/// The sizes map for the Menu.
-/// @group menu
-$kendo-menu-sizes: (
-    sm: (
-        group-font-size: $kendo-menu-popup-sm-font-size,
-        group-line-height: $kendo-menu-popup-sm-line-height,
-        link-padding-x: $kendo-menu-popup-sm-item-padding-x,
-        link-padding-y: $kendo-menu-popup-sm-item-padding-y,
-        link-padding-inline-end: $kendo-menu-popup-sm-item-padding-end,
-        arrow-margin-inline-start: $kendo-menu-popup-sm-item-icon-margin-start,
-        arrow-margin-inline-end: $kendo-menu-popup-sm-item-icon-margin-end,
-    ),
-    md: (
-        group-font-size: $kendo-menu-popup-md-font-size,
-        group-line-height: $kendo-menu-popup-md-line-height,
-        link-padding-x: $kendo-menu-popup-md-item-padding-x,
-        link-padding-y: $kendo-menu-popup-md-item-padding-y,
-        link-padding-inline-end: $kendo-menu-popup-md-item-padding-end,
-        arrow-margin-inline-start: $kendo-menu-popup-item-icon-md-margin-start,
-        arrow-margin-inline-end: $kendo-menu-popup-item-icon-md-margin-end,
-    ),
-    lg: (
-        group-font-size: $kendo-menu-popup-lg-font-size,
-        group-line-height: $kendo-menu-popup-lg-line-height,
-        link-padding-x: $kendo-menu-popup-lg-item-padding-x,
-        link-padding-y: $kendo-menu-popup-lg-item-padding-y,
-        link-padding-inline-end: $kendo-menu-popup-lg-item-padding-end,
-        arrow-margin-inline-start: $kendo-menu-popup-lg-item-icon-margin-start,
-        arrow-margin-inline-end: $kendo-menu-popup-lg-item-icon-margin-end
-    )
-) !default;
-
 /// The text color of the Menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-text: var( --kendo-menu-popup-item-text, #{$kendo-list-item-text} ) !default;
@@ -300,6 +273,7 @@ $kendo-menu-scroll-button-hover-border: var( --kendo-menu-scroll-button-hover-bo
 $kendo-menu-icon-color: var( --kendo-menu-icon-color, #{k-color(primary)} ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/menu/_variables.scss" with (
+    $kendo-menu-group-default-size: $kendo-menu-group-default-size,
     $kendo-menu-border-width: $kendo-menu-border-width,
     $kendo-menu-font-family: $kendo-menu-font-family,
     $kendo-menu-font-size: $kendo-menu-font-size,

@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "./_variables.scss" as *;
 @use "../core/z-index/index.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/fab/_layout.scss" as *;
 
 @mixin kendo-fab--layout() {
@@ -29,6 +30,7 @@
             z-index: k-z-index("base", 1);
         }
 
+        #{k-when-default($kendo-fab-default-roundness, "full")}
         &.k-rounded-full {
             &:focus::before,
             &.k-focus::before,
@@ -36,6 +38,17 @@
             &.k-focus::after {
                border-radius: inherit;
             }
+        }
+
+        // Sizes
+        @each $size, $size-props in $kendo-fab-sizes {
+            $_gap: map.get( $size-props, gap );
+
+            #{k-when-default($kendo-fab-default-size, $size)}
+            &.k-fab-#{$size} {
+                gap: $_gap;
+            }
+
         }
     }
 
@@ -58,15 +71,5 @@
 
     .k-fab-item-icon {
         border-style: $kendo-fab-item-icon-border-style;
-    }
-
-    // Sizes
-    @each $size, $size-props in $kendo-fab-sizes {
-        $_gap: map.get( $size-props, gap );
-
-        .k-fab-#{$size} {
-            gap: $_gap;
-        }
-
     }
 }

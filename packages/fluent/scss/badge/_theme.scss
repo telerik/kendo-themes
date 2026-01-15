@@ -1,24 +1,38 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/badge/_theme.scss" as *;
 
 @mixin kendo-badge--theme() {
     @include kendo-badge--theme-base();
 
-    .k-badge-solid-base {
-        color: $kendo-badge-text;
-        background-color: $kendo-badge-bg;
-        border-color: $kendo-badge-border;
-    }
+    .k-badge {
 
-    .k-badge-outline-base {
-        border-color: $kendo-badge-border;
-    }
+        #{k-when-default($kendo-badge-default-fill-mode, "solid")}
+        &.k-badge-solid {
+            #{k-when-default($kendo-badge-default-theme-color, "base")}
+            &.k-badge-base {
+                color: $kendo-badge-text;
+                background-color: $kendo-badge-bg;
+                border-color: $kendo-badge-border;
+            }
+        }
 
-    @each $name, $color in $kendo-badge-theme-colors {
-        .k-badge-outline-#{$name} {
-            color: k-color(#{$name}-on-surface);
+        #{k-when-default($kendo-badge-default-fill-mode, "outline")}
+        &.k-badge-outline {
+            #{k-when-default($kendo-badge-default-theme-color, "base")}
+            &.k-badge-base {
+                border-color: $kendo-badge-border;
+            }
+
+            @each $name in $kendo-badge-theme-colors {
+                #{k-when-default($kendo-badge-default-theme-color, $name)}
+                &.k-badge-#{$name} {
+                    color: k-color(#{$name}-on-surface);
+                }
+            }
         }
     }
+
 }

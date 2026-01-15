@@ -5,6 +5,23 @@
 
 // Floating Action Button
 
+/// The default theme color of the FAB.
+/// @group floating-action-button
+/// @role default
+$kendo-fab-default-theme-color: "primary" !default;
+/// The default fill mode of the FAB.
+/// @group floating-action-button
+/// @role default
+$kendo-fab-default-fill-mode: "solid" !default;
+/// The default roundness of the FAB.
+/// @group floating-action-button
+/// @role default
+$kendo-fab-default-roundness: "full" !default;
+/// The default size of the FAB.
+/// @group floating-action-button
+/// @role default
+$kendo-fab-default-size: "md" !default;
+
 /// The width of the border around the FAB.
 /// @group floating-action-button
 $kendo-fab-border-width: 1px !default;
@@ -87,38 +104,6 @@ $kendo-fab-item-icon-border-width: 0 !default;
 /// @group floating-action-button
 $kendo-fab-item-icon-border-radius: 50% !default;
 
-/// The theme colors map for the FAB.
-/// @group floating-action-button
-$kendo-fab-theme-colors:  (
-    "primary": k-color(primary),
-    "secondary": k-color(secondary),
-    "tertiary": k-color(tertiary),
-    "info": k-color(info),
-    "success": k-color(success),
-    "warning": k-color(warning),
-    "error": k-color(error),
-    "dark": k-color(dark),
-    "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
-) !default;
-
-/// The size map for the FAB.
-/// @group floating-action-button
-$kendo-fab-sizes: (
-    sm: (
-        padding-x: $kendo-fab-sm-padding-x,
-        padding-y: $kendo-fab-sm-padding-y
-    ),
-    md: (
-        padding-x: $kendo-fab-md-padding-x,
-        padding-y: $kendo-fab-md-padding-y
-    ),
-    lg: (
-        padding-x: $kendo-fab-lg-padding-x,
-        padding-y: $kendo-fab-lg-padding-y
-    )
-) !default;
-
 /// The base shadow of the FAB.
 /// @group floating-action-button
 $kendo-fab-shadow: k-elevation(5) !default;
@@ -180,6 +165,10 @@ $kendo-fab-generating-opacity: 40% !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/fab/_variables.scss" with (
+    $kendo-fab-default-theme-color: $kendo-fab-default-theme-color,
+    $kendo-fab-default-fill-mode: $kendo-fab-default-fill-mode,
+    $kendo-fab-default-roundness: $kendo-fab-default-roundness,
+    $kendo-fab-default-size: $kendo-fab-default-size,
     $kendo-fab-border-width: $kendo-fab-border-width,
     $kendo-fab-font-family: $kendo-fab-font-family,
     $kendo-fab-font-size: $kendo-fab-font-size,
@@ -205,8 +194,6 @@ $kendo-fab-generating-opacity: 40% !default;
     $kendo-fab-item-icon-padding-y: $kendo-fab-item-icon-padding-y,
     $kendo-fab-item-icon-border-width: $kendo-fab-item-icon-border-width,
     $kendo-fab-item-icon-border-radius: $kendo-fab-item-icon-border-radius,
-    $kendo-fab-theme-colors: $kendo-fab-theme-colors,
-    $kendo-fab-sizes: $kendo-fab-sizes,
     $kendo-fab-shadow: $kendo-fab-shadow,
     $kendo-fab-disabled-shadow: $kendo-fab-disabled-shadow,
     $kendo-fab-active-shadow: $kendo-fab-active-shadow,

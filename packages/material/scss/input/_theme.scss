@@ -1,6 +1,80 @@
+@use "../core/functions/index.scss" as *;
+@use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/input/_theme.scss" as *;
 
 
 @mixin kendo-input--theme() {
     @include kendo-input--theme-base();
+
+    .k-input {
+
+        // Fill mode
+        #{k-when-default($kendo-input-default-fill-mode, "solid")}
+        &.k-input-solid {
+            border-block-start-color: transparent;
+
+            .k-input-button,
+            .k-input-spinner .k-spinner-increase,
+            .k-input-spinner .k-spinner-decrease {
+                border-color: transparent;
+                background: none;
+            }
+
+            &:focus-within,
+            &:focus,
+            &.k-focus,
+            &.k-hover,
+            &:hover,
+            &.k-invalid,
+            &.ng-invalid.ng-touched,
+            &.ng-invalid.ng-dirty {
+                border-block-start-color: transparent;
+            }
+        }
+
+        #{k-when-default($kendo-input-default-fill-mode, "flat")}
+        &.k-input-flat {
+
+            .k-input-button,
+            .k-input-spinner .k-spinner-increase,
+            .k-input-spinner .k-spinner-decrease {
+                border-color: transparent;
+                background: none;
+            }
+        }
+    }
+
+    .k-picker {
+
+        // Fill mode
+        #{k-when-default($kendo-picker-default-fill-mode, "solid")}
+        &.k-picker-solid {
+            border-block-start-color: transparent;
+
+            .k-input-button {
+                border-color: transparent;
+            }
+
+
+            &:focus-within,
+            &:focus,
+            &.k-focus,
+            &.k-hover,
+            &:hover,
+            &.k-invalid,
+            &.ng-invalid.ng-touched,
+            &.ng-invalid.ng-dirty {
+                border-block-start-color: transparent;
+            }
+        }
+
+        #{k-when-default($kendo-input-default-fill-mode, "flat")}
+        &.k-picker-flat {
+
+            .k-input-button {
+                border-color: transparent;
+            }
+        }
+    }
+
 }

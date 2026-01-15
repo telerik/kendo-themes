@@ -1,6 +1,11 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
+/// The default size of the TreeView.
+/// @group treeview
+/// @role default
+$kendo-treeview-default-size: "md" !default;
+
 /// The font family of the TreeView.
 /// @group treeview
 $kendo-treeview-font-family: var( --kendo-treeview-font-family, var( --kendo-font-family, normal ) ) !default;
@@ -76,37 +81,6 @@ $kendo-treeview-filter-padding-x: var( --kendo-treeview-filter-padding-x, k-spac
 /// The vertical padding of the TreeViews' filter element.
 /// @group treeview
 $kendo-treeview-filter-padding-y: var( --kendo-treeview-filter-padding-y, k-spacing(2) ) !default;
-
-
-/// The sizes map of the TreeView.
-/// @group treeview
-$kendo-treeview-sizes: (
-    sm: (
-        font-size: $kendo-treeview-sm-font-size,
-        line-height: $kendo-treeview-sm-line-height,
-        item-padding-x: $kendo-treeview-sm-item-padding-x,
-        item-padding-y: $kendo-treeview-sm-item-padding-y,
-        checkbox-padding-x: $kendo-treeview-sm-checkbox-padding-x,
-        checkbox-padding-y: $kendo-treeview-sm-checkbox-padding-y
-    ),
-    md: (
-        font-size: $kendo-treeview-md-font-size,
-        line-height: $kendo-treeview-md-line-height,
-        item-padding-x: $kendo-treeview-md-item-padding-x,
-        item-padding-y: $kendo-treeview-md-item-padding-y,
-        checkbox-padding-x: $kendo-treeview-md-checkbox-padding-x,
-        checkbox-padding-y: $kendo-treeview-md-checkbox-padding-y
-
-    ),
-    lg: (
-        font-size: $kendo-treeview-lg-font-size,
-        line-height: $kendo-treeview-lg-line-height,
-        item-padding-x: $kendo-treeview-lg-item-padding-x,
-        item-padding-y: $kendo-treeview-lg-item-padding-y,
-        checkbox-padding-x: $kendo-treeview-lg-checkbox-padding-x,
-        checkbox-padding-y: $kendo-treeview-lg-checkbox-padding-y
-    )
-) !default;
 
 
 /// The background color of the TreeView.
@@ -198,6 +172,7 @@ $kendo-treeview-loadmore-focus-shadow: var( --kendo-treeview-loadmore-focus-shad
 
 
 @forward "@progress/kendo-theme-core/scss/components/treeview/_variables.scss" with (
+    $kendo-treeview-default-size: $kendo-treeview-default-size,
     $kendo-treeview-font-family: $kendo-treeview-font-family,
     $kendo-treeview-sm-font-size: $kendo-treeview-sm-font-size,
     $kendo-treeview-md-font-size: $kendo-treeview-md-font-size,
@@ -220,7 +195,6 @@ $kendo-treeview-loadmore-focus-shadow: var( --kendo-treeview-loadmore-focus-shad
     $kendo-treeview-sm-checkbox-padding-y: $kendo-treeview-sm-checkbox-padding-y,
     $kendo-treeview-md-checkbox-padding-y: $kendo-treeview-md-checkbox-padding-y,
     $kendo-treeview-lg-checkbox-padding-y: $kendo-treeview-lg-checkbox-padding-y,
-    $kendo-treeview-sizes: $kendo-treeview-sizes,
     $kendo-treeview-bg: $kendo-treeview-bg,
     $kendo-treeview-text: $kendo-treeview-text,
     $kendo-treeview-border: $kendo-treeview-border,

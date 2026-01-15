@@ -7,20 +7,23 @@
 
 @mixin kendo-messagebox--theme-base() {
 
-    @each $color-name, $color in $kendo-message-box-theme-colors {
-        .k-messagebox.k-messagebox-#{$color-name} {
-            @if $color-name == "inverse" {
-                @include fill(
-                    k-color(dark-on-subtle),
-                    k-color(dark-subtle),
-                    k-color(dark-hover)
-                );
-            } @else {
-                @include fill(
-                    k-color(#{$color-name}-on-subtle),
-                    k-color(#{$color-name}-subtle),
-                    k-color(#{$color-name}-emphasis)
-                );
+    @each $color-name in $kendo-message-box-theme-colors {
+        .k-messagebox {
+            #{k-when-default($kendo-message-box-default-theme-color, $color-name)}
+            &.k-messagebox-#{$color-name} {
+                @if $color-name == "inverse" {
+                    @include fill(
+                        k-color(dark-on-subtle),
+                        k-color(dark-subtle),
+                        k-color(dark-hover)
+                    );
+                } @else {
+                    @include fill(
+                        k-color(#{$color-name}-on-subtle),
+                        k-color(#{$color-name}-subtle),
+                        k-color(#{$color-name}-emphasis)
+                    );
+                }
             }
         }
     }

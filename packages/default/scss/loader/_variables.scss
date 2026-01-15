@@ -2,6 +2,16 @@
 
 // Loader
 
+/// The default size of the Loader.
+/// @group loader
+/// @role default
+$kendo-loader-default-size: "md" !default;
+
+/// The default theme color of the Loader.
+/// @group loader
+/// @role default
+$kendo-loader-default-theme-color: "primary" !default;
+
 /// The border radius of the Loader segment.
 /// @group loader
 $kendo-loader-segment-border-radius: 50% !default;
@@ -126,22 +136,9 @@ $kendo-loading-opacity: .3 !default;
 /// @group loading
 $kendo-zindex-loading: 100 !default;
 
-/// The theme colors of the Loader.
-/// @group loader
-$kendo-loader-theme-colors: (
-    "primary": k-color(primary),
-    "secondary": k-color(secondary),
-    "tertiary": k-color(tertiary),
-    "info": k-color(info),
-    "success": k-color(success),
-    "warning": k-color(warning),
-    "error": k-color(error),
-    "dark": k-color(dark),
-    "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
-) !default;
-
 @forward "@progress/kendo-theme-core/scss/components/loader/_variables.scss" with (
+    $kendo-loader-default-size: $kendo-loader-default-size,
+    $kendo-loader-default-theme-color: $kendo-loader-default-theme-color,
     $kendo-loader-segment-border-radius: $kendo-loader-segment-border-radius,
     $kendo-loader-sm-segment-size: $kendo-loader-sm-segment-size,
     $kendo-loader-md-segment-size: $kendo-loader-md-segment-size,
@@ -178,6 +175,5 @@ $kendo-loader-theme-colors: (
     $kendo-loading-bg: $kendo-loading-bg,
     $kendo-loading-text: $kendo-loading-text,
     $kendo-loading-opacity: $kendo-loading-opacity,
-    $kendo-zindex-loading: $kendo-zindex-loading,
-    $kendo-loader-theme-colors: $kendo-loader-theme-colors
+    $kendo-zindex-loading: $kendo-zindex-loading
 );

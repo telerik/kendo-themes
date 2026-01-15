@@ -4,6 +4,16 @@
 
 // Window
 
+/// The default size of the Window.
+/// @group window
+/// @role default
+$kendo-window-default-size: "auto" !default;
+
+/// The default theme color of the Window.
+/// @group window
+/// @role default
+$kendo-window-default-theme-color: null !default;
+
 /// The width of the border around the Window.
 /// @group window
 $kendo-window-border-width: 1px !default;
@@ -96,24 +106,8 @@ $kendo-window-titlebar-border: k-color(border) !default;
 /// @group window
 $kendo-window-titlebar-gradient: null !default;
 
-/// The map of the width for the different Window sizes.
-/// @group window
-$kendo-window-sizes: (
-    sm: 300px,
-    md: 800px,
-    lg: 1200px
-) !default;
-
-/// The theme colors map for the Window.
-/// @group window
-$kendo-window-theme-colors: (
-    "primary": k-color(primary),
-    "light": k-color(light),
-    "dark": k-color(dark)
-) !default;
-
-
 @forward "@progress/kendo-theme-core/scss/components/window/_variables.scss" with (
+    $kendo-window-default-theme-color: $kendo-window-default-theme-color,
     $kendo-window-border-width: $kendo-window-border-width,
     $kendo-window-border-radius: $kendo-window-border-radius,
     $kendo-window-font-family: $kendo-window-font-family,
@@ -142,6 +136,5 @@ $kendo-window-theme-colors: (
     $kendo-window-titlebar-text: $kendo-window-titlebar-text,
     $kendo-window-titlebar-border: $kendo-window-titlebar-border,
     $kendo-window-titlebar-gradient: $kendo-window-titlebar-gradient,
-    $kendo-window-sizes: $kendo-window-sizes,
-    $kendo-window-theme-colors: $kendo-window-theme-colors
+    $kendo-window-default-size: $kendo-window-default-size
 );
