@@ -59,12 +59,11 @@ export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState
                 SIGNATURE_CLASSNAME,
                 'k-input',
                 optionClassNames(SIGNATURE_CLASSNAME, {
-                    size,
-                    rounded,
-                    fillMode,
+                    size
                 }),
                 optionClassNames('k-input', {
                     fillMode,
+                    rounded
                 }),
                 stateClassNames(SIGNATURE_CLASSNAME, {
                     hover,
