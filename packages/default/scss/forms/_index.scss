@@ -1,5 +1,7 @@
 // Dependencies // TODO: extract variables
 @use "../core/_index.scss" as *;
+@use "../input/_index.scss" as *;
+@use "../tooltip/_index.scss" as *;
 @use "../utils/_index.scss" as *;
 @use "../toolbar/_index.scss" as *;
 @use "../action-buttons/_index.scss" as *;
@@ -13,6 +15,8 @@
 @mixin kendo-form--styles() {
     @include import-once( "form" ) {
         @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-tooltip--styles();
         @include kendo-toolbar--styles();
         @include kendo-action-buttons--styles();
         @include kendo-form--layout();

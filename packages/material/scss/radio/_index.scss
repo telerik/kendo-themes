@@ -1,5 +1,7 @@
 // Dependencies
 @use "../core/_index.scss" as *;
+@use "../checkbox/_index.scss" as *;
+@use "../list/_index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
@@ -10,6 +12,8 @@
 @mixin kendo-radio--styles() {
     @include import-once( "radio" ) {
         @include core-styles();
+        @include kendo-checkbox--styles();
+        @include kendo-list--styles();
         @include kendo-radio--layout();
         @include kendo-radio--theme();
     }

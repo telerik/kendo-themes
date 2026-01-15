@@ -1,5 +1,6 @@
 // Dependencies
 @use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
 @use "../input/_index.scss" as *;
 @use "../toolbar/_index.scss" as *;
 @use "../upload/_index.scss" as *;
@@ -21,6 +22,7 @@
 @mixin kendo-file-manager--styles() {
     @include import-once( "file-manager" ) {
         @include core-styles();
+        @include kendo-icon--styles();
         @include kendo-input--styles();
         @include kendo-toolbar--styles();
         @include kendo-upload--styles();

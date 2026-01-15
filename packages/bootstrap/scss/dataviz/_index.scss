@@ -2,6 +2,7 @@
 @use "../core/_index.scss" as *;
 @use "../popup/_index.scss" as *;
 @use "../tooltip/_index.scss" as *;
+@use "../button/_index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
@@ -14,6 +15,7 @@
         @include core-styles();
         @include kendo-popup--styles();
         @include kendo-tooltip--styles();
+        @include kendo-button--styles();
         @include kendo-dataviz--layout();
         @include kendo-dataviz--theme();
     }

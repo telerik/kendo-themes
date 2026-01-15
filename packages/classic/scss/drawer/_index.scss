@@ -1,5 +1,6 @@
 // Dependencies
 @use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
 @use "../overlay/_index.scss" as *;
 @use "../toolbar/_index.scss" as *;
 @use "../list/_index.scss" as *;
@@ -13,6 +14,7 @@
 @mixin kendo-drawer--styles() {
     @include import-once( "drawer" ) {
         @include core-styles();
+        @include kendo-icon--styles();
         @include kendo-overlay--styles();
         @include kendo-toolbar--styles();
         @include kendo-list--styles();
