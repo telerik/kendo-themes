@@ -1,6 +1,6 @@
 import { Button } from '../button';
 import { List } from '../list';
-import { classNames, optionClassNames, stateClassNames, States, Size } from '../misc';
+import { classNames, stateClassNames, States, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { LISTBOX_FOLDER_NAME, LISTBOX_MODULE_NAME } from './constants';
@@ -53,9 +53,6 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
             className={classNames(
                 props.className,
                 LISTBOX_CLASSNAME,
-                optionClassNames(LISTBOX_CLASSNAME, {
-                    size,
-                }),
                 stateClassNames(LISTBOX_CLASSNAME, {
                     disabled,
                 }),
