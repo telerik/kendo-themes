@@ -28,6 +28,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-table-default-size</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Table.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-table-border-width</td>
     <td>String</td>
     <td><code>var( --kendo-table-border-width, 1px )</code></td>
@@ -125,44 +135,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the table header cells.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: (
-        font-size: var( --kendo-font-size, inherit ),
-        line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: $kendo-table-sm-cell-padding-x,
-        cell-padding-y: $kendo-table-sm-cell-padding-y,
-        group-label-padding-x: $kendo-list-item-group-label-sm-padding-x,
-        group-label-padding-y: $kendo-list-item-group-label-sm-padding-y,
-        group-label-font-size: $kendo-list-item-group-label-sm-font-size
-    ),
-    md: (
-        font-size: var( --kendo-font-size, inherit ),
-        line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: $kendo-table-md-cell-padding-x,
-        cell-padding-y: $kendo-table-md-cell-padding-y,
-        group-label-padding-x: $kendo-list-item-group-label-md-padding-x,
-        group-label-padding-y: $kendo-list-item-group-label-md-padding-y,
-        group-label-font-size: $kendo-list-item-group-label-md-font-size
-    ),
-    lg: (
-        font-size: var( --kendo-font-size, inherit ),
-        line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: $kendo-table-lg-cell-padding-x,
-        cell-padding-y: $kendo-table-lg-cell-padding-y,
-        group-label-padding-x: $kendo-list-item-group-label-lg-padding-x,
-        group-label-padding-y: $kendo-list-item-group-label-lg-padding-y,
-        group-label-font-size: $kendo-list-item-group-label-lg-font-size
-    )
-)</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, inherit)","cell-padding-x":"var(--kendo-table-sm-cell-padding-x, var(--kendo-spacing-2, 0.5rem))","cell-padding-y":"var(--kendo-table-sm-cell-padding-y, var(--kendo-spacing-2, 0.5rem))","group-label-padding-x":"var(--kendo-list-item-group-label-sm-padding-x, var(--kendo-spacing-0\\.5, 0.125rem))","group-label-padding-y":"var(--kendo-list-item-group-label-sm-padding-y, var(--kendo-spacing-0\\.5, 0.125rem))","group-label-font-size":"var(--kendo-list-item-group-label-sm-font-size, var(--kendo-font-size-xs, inherit))"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, inherit)","cell-padding-x":"var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-2, 0.5rem))","cell-padding-y":"var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-2\\.5, 0.625rem))","group-label-padding-x":"var(--kendo-list-item-group-label-md-padding-x, var(--kendo-spacing-1, 0.25rem))","group-label-padding-y":"var(--kendo-list-item-group-label-md-padding-y, var(--kendo-spacing-1, 0.25rem))","group-label-font-size":"var(--kendo-list-item-group-label-md-font-size, var(--kendo-font-size-xs, inherit))"</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, inherit)","cell-padding-x":"var(--kendo-table-lg-cell-padding-x, var(--kendo-spacing-2, 0.5rem))","cell-padding-y":"var(--kendo-table-lg-cell-padding-y, var(--kendo-spacing-3, 0.75rem))","group-label-padding-x":"var(--kendo-list-item-group-label-lg-padding-x, var(--kendo-spacing-1\\.5, 0.375rem))","group-label-padding-y":"var(--kendo-list-item-group-label-lg-padding-y, var(--kendo-spacing-1\\.5, 0.375rem))","group-label-font-size":"var(--kendo-list-item-group-label-lg-font-size, var(--kendo-font-size-xs, inherit))"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the table.</div></div>
     </td>
 </tr>
 <tr>
@@ -513,6 +485,35 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the row spanned cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        font-size: var( --kendo-font-size, inherit ),
+        line-height: var( --kendo-line-height, normal ),
+        cell-padding-x: $kendo-table-sm-cell-padding-x,
+        cell-padding-y: $kendo-table-sm-cell-padding-y
+    ),
+    md: (
+        font-size: var( --kendo-font-size, inherit ),
+        line-height: var( --kendo-line-height, normal ),
+        cell-padding-x: $kendo-table-md-cell-padding-x,
+        cell-padding-y: $kendo-table-md-cell-padding-y
+    ),
+    lg: (
+        font-size: var( --kendo-font-size, inherit ),
+        line-height: var( --kendo-line-height, normal ),
+        cell-padding-x: $kendo-table-lg-cell-padding-x,
+        cell-padding-y: $kendo-table-lg-cell-padding-y
+    )
+)</code></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","cell-padding-x":"var(--kendo-table-sm-cell-padding-x, var(--kendo-spacing-2, 0.5rem))","cell-padding-y":"var(--kendo-table-sm-cell-padding-y, var(--kendo-spacing-2, 0.5rem))"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","cell-padding-x":"var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-2, 0.5rem))","cell-padding-y":"var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-2\\.5, 0.625rem))"</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","cell-padding-x":"var(--kendo-table-lg-cell-padding-x, var(--kendo-spacing-2, 0.5rem))","cell-padding-y":"var(--kendo-table-lg-cell-padding-y, var(--kendo-spacing-3, 0.75rem))"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Table.</div></div>
     </td>
 </tr>
 </tbody>

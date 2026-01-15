@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-font-size</td>
     <td>String</td>
-    <td><code>$kendo-input-font-size</code></td>
+    <td><code>$kendo-input-md-font-size</code></td>
     <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-line-height</td>
     <td>String</td>
-    <td><code>$kendo-input-line-height</code></td>
+    <td><code>$kendo-input-md-line-height</code></td>
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>

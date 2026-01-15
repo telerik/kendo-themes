@@ -28,6 +28,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-calendar-default-size</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-border-width</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-border-width, 1px )</code></td>
@@ -49,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-calendar-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-calendar-font-size, var(--kendo-font-size, inherit) )</code></td>
-    <td><code>var(--kendo-calendar-font-size, var(--kendo-font-size, inherit))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Calendar.</div></div>
@@ -59,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-calendar-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-calendar-line-height, var(--kendo-line-height, normal) )</code></td>
-    <td><code>var(--kendo-calendar-line-height, var(--kendo-line-height, normal))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Calendar.</div></div>

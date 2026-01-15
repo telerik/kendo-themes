@@ -28,6 +28,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-notification-default-theme-color</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the Notification.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-notification-group-gap</td>
     <td>String</td>
     <td><code>k-spacing(3)</code></td>
@@ -179,20 +189,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-theme-colors</td>
-    <td>Map</td>
-    <td><code>(
-    "primary": k-color(primary),
-    "secondary": k-color(secondary),
-    "tertiary": k-color(tertiary),
-    "info": k-color(info),
-    "success": k-color(success),
-    "warning": k-color(warning),
-    "error": k-color(error),
-    "dark": k-color(dark),
-    "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
-)</code></td>
-    <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li><li>tertiary: var(--kendo-color-tertiary, #6f42c1)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>success: var(--kendo-color-success, #198754)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>dark: var(--kendo-color-dark, #212529)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>inverse: var(--kendo-color-dark, #212529)</li></ul></td>
+    <td>List</td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Notification.</div></div>
@@ -202,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-notification-theme</td>
     <td>Map</td>
     <td><code>notification-theme( $kendo-notification-theme-colors )</code></td>
-    <td><ul><li>inverse: "color":"var(--kendo-color-inverse-on-subtle, #ffffff)","background-color":"var(--kendo-color-inverse-subtle, #495057)","border":"var(--kendo-color-inverse-emphasis, rgba(33, 37, 41, 0.4))"</li><li>light: "color":"var(--kendo-color-light-on-subtle, #495057)","background-color":"var(--kendo-color-light-subtle, #fcfcfd)","border":"var(--kendo-color-light-emphasis, rgba(33, 37, 41, 0.1))"</li><li>dark: "color":"var(--kendo-color-dark-on-subtle, #495057)","background-color":"var(--kendo-color-dark-subtle, #ced4da)","border":"var(--kendo-color-dark-emphasis, rgba(33, 37, 41, 0.4))"</li><li>error: "color":"var(--kendo-color-error-on-subtle, #58151c)","background-color":"var(--kendo-color-error-subtle, #f8d7da)","border":"var(--kendo-color-error-emphasis, rgba(220, 53, 69, 0.4))"</li><li>warning: "color":"var(--kendo-color-warning-on-subtle, #664d03)","background-color":"var(--kendo-color-warning-subtle, #fff3cd)","border":"var(--kendo-color-warning-emphasis, rgba(255, 193, 7, 0.4))"</li><li>success: "color":"var(--kendo-color-success-on-subtle, #0A3622)","background-color":"var(--kendo-color-success-subtle, #d1e7dd)","border":"var(--kendo-color-success-emphasis, rgba(25, 135, 84, 0.4))"</li><li>info: "color":"var(--kendo-color-info-on-subtle, #055160)","background-color":"var(--kendo-color-info-subtle, #cff4fc)","border":"var(--kendo-color-info-emphasis, rgba(13, 202, 240, 0.4))"</li><li>tertiary: "color":"var(--kendo-color-tertiary-on-subtle, #2c1a4d)","background-color":"var(--kendo-color-tertiary-subtle, #e2d9f3)","border":"var(--kendo-color-tertiary-emphasis, rgba(126, 88, 198, 0.4))"</li><li>secondary: "color":"var(--kendo-color-secondary-on-subtle, #2B2F32)","background-color":"var(--kendo-color-secondary-subtle, #e2e3e5)","border":"var(--kendo-color-secondary-emphasis, rgba(92, 99, 106, 0.4))"</li><li>primary: "color":"var(--kendo-color-primary-on-subtle, #052c65)","background-color":"var(--kendo-color-primary-subtle, #cfe2ff)","border":"var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))"</li></ul></td>
+    <td><ul><li>inverse: "color":"var(--kendo-color-inverse-on-subtle, #ffffff)","background-color":"var(--kendo-color-inverse-subtle, #495057)","border":"var(--kendo-color-inverse-emphasis, rgba(33, 37, 41, 0.4))"</li><li>light: "color":"var(--kendo-color-light-on-subtle, #495057)","background-color":"var(--kendo-color-light-subtle, #fcfcfd)","border":"var(--kendo-color-light-emphasis, rgba(33, 37, 41, 0.1))"</li><li>dark: "color":"var(--kendo-color-dark-on-subtle, #495057)","background-color":"var(--kendo-color-dark-subtle, #ced4da)","border":"var(--kendo-color-dark-emphasis, rgba(33, 37, 41, 0.4))"</li><li>error: "color":"var(--kendo-color-error-on-subtle, #58151c)","background-color":"var(--kendo-color-error-subtle, #f8d7da)","border":"var(--kendo-color-error-emphasis, rgba(220, 53, 69, 0.4))"</li><li>warning: "color":"var(--kendo-color-warning-on-subtle, #664d03)","background-color":"var(--kendo-color-warning-subtle, #fff3cd)","border":"var(--kendo-color-warning-emphasis, rgba(255, 193, 7, 0.4))"</li><li>success: "color":"var(--kendo-color-success-on-subtle, #0A3622)","background-color":"var(--kendo-color-success-subtle, #d1e7dd)","border":"var(--kendo-color-success-emphasis, rgba(25, 135, 84, 0.4))"</li><li>info: "color":"var(--kendo-color-info-on-subtle, #055160)","background-color":"var(--kendo-color-info-subtle, #cff4fc)","border":"var(--kendo-color-info-emphasis, rgba(13, 202, 240, 0.4))"</li><li>tertiary: "color":"var(--kendo-color-tertiary-on-subtle, #2c1a4d)","background-color":"var(--kendo-color-tertiary-subtle, #e2d9f3)","border":"var(--kendo-color-tertiary-emphasis, rgba(126, 88, 198, 0.4))"</li><li>secondary: "color":"var(--kendo-color-secondary-on-subtle, #2B2F32)","background-color":"var(--kendo-color-secondary-subtle, #e2e3e5)","border":"var(--kendo-color-secondary-emphasis, rgba(92, 99, 106, 0.4))"</li><li>primary: "color":"var(--kendo-color-primary-on-subtle, #052c65)","background-color":"var(--kendo-color-primary-subtle, #cfe2ff)","border":"var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))"</li><li>base: "color":"var(--kendo-color-base-on-subtle, #212529)","background-color":"var(--kendo-color-base-subtle, #e9ecef)","border":"var(--kendo-color-base-emphasis, rgba(33, 37, 41, 0.34))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The generated theme colors map for the Notification.</div></div>

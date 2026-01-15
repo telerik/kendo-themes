@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
     <td><ul><li>sm: "gap":"var(--kendo-spacing-1, 0.25rem)","separator-padding-x":"var(--kendo-spacing-1, 0.25rem)","input-width":"calc(var(--kendo-line-height-lg, inherit) * 1em + calc(var(--kendo-spacing-1, 0.25rem) + var(--kendo-spacing-1px, 1px)) * 2 + (2px))"</li><li>md: "gap":"var(--kendo-spacing-1\\.5, 0.375rem)","separator-padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","input-width":"calc(var(--kendo-line-height-lg, inherit) * 1em + calc(var(--kendo-spacing-1\\.5, 0.375rem) + var(--kendo-spacing-1px, 1px)) * 2 + (2px))"</li><li>lg: "gap":"var(--kendo-spacing-2, 0.5rem)","separator-padding-x":"var(--kendo-spacing-2, 0.5rem)","input-width":"calc(var(--kendo-line-height-lg, inherit) * 1em + calc(var(--kendo-spacing-2, 0.5rem) + var(--kendo-spacing-1px, 1px)) * 2 + (2px))"</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the OTP.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the OTPInput.</div></div>
     </td>
 </tr>
 </tbody>

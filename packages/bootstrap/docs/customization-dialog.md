@@ -28,6 +28,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-dialog-default-theme-color</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the Dialog.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-dialog-titlebar-bg</td>
     <td>String</td>
     <td><code>unset</code></td>
@@ -109,16 +119,12 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dialog-theme-colors</td>
-    <td>Map</td>
-    <td><code>(
-    "primary": k-color(primary),
-    "light": k-color(light),
-    "dark": k-color(dark)
-)</code></td>
-    <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>dark: var(--kendo-color-dark, #212529)</li></ul></td>
+    <td>List</td>
+    <td><code>("primary", "light", "dark")</code></td>
+    <td><code>("primary", "light", "dark")</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Dialog.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Dialog.</div></div>
     </td>
 </tr>
 </tbody>
