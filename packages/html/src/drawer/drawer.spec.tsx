@@ -4,6 +4,7 @@ import { DrawerContainer } from './drawer-container.spec';
 
 import { KendoComponent } from '../_types/component';
 import { DRAWER_FOLDER_NAME, DRAWER_MODULE_NAME } from './constants';
+import { Overlay } from '../overlay';
 export const DRAWER_CLASSNAME = `k-drawer`;
 
 const states = [];
@@ -50,7 +51,7 @@ export const Drawer: KendoComponent<KendoDrawerProps & React.HTMLAttributes<HTML
                 }
             )}>
             { mode === "overlay" &&
-                <div className="k-overlay"></div>
+                <Overlay />
             }
             <div {...other}
                 className={classNames(

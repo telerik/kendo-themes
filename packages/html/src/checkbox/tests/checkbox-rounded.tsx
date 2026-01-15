@@ -1,9 +1,9 @@
-import { Checkbox, CheckboxChecked } from '../../checkbox';
+import { Checkbox, CheckboxChecked } from '..';
 
 
 const styles = `
     #test-area {
-        grid-template-columns: 120px repeat(3, 1fr);
+        grid-template-columns: 120px repeat(4, 1fr);
     }
 `;
 
@@ -13,25 +13,20 @@ export default () =>(
         <div id="test-area" className="k-d-grid">
 
             <span><small>rounded / size </small></span>
+            <span>undefined</span>
             <span>small</span>
             <span>medium</span>
             <span>large</span>
 
-            {[ null,...Checkbox.options.rounded ].map((rounded) => (
+            {Checkbox.options.rounded.map((rounded) => (
                 <>
-                    <span>{rounded || 'none'}</span>
-                    <span>
-                        <CheckboxChecked size="small" rounded={rounded} />
-                        checkbox
-                    </span>
-                    <span>
-                        <CheckboxChecked size="medium" rounded={rounded} />
-                        checkbox
-                    </span>
-                    <span>
-                        <CheckboxChecked size="large" rounded={rounded} />
-                        checkbox
-                    </span>
+                    <span>{`${rounded}`}</span>
+                    {Checkbox.options.size.map((size) => (
+                        <span>
+                            <CheckboxChecked size={size} rounded={rounded} />
+                            checkbox
+                        </span>
+                    ))}
                 </>
             ))}
         </div>

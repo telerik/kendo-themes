@@ -29,7 +29,7 @@ export default () =>(
 
             <span>Inline</span>
             <div className="k-badge-container">
-                <BadgeNormal fillMode="outline">Rect</BadgeNormal>
+                <BadgeNormal fillMode="outline" rounded="none">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container">
                 <BadgeNormal fillMode="outline" rounded="medium">Round</BadgeNormal>
@@ -46,7 +46,7 @@ export default () =>(
 
             <span>Inline RTL</span>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal fillMode="outline">Rect</BadgeNormal>
+                <BadgeNormal fillMode="outline" rounded="none">Rect</BadgeNormal>
             </div>
             <div className="k-badge-container k-rtl">
                 <BadgeNormal fillMode="outline" rounded="medium">Round</BadgeNormal>

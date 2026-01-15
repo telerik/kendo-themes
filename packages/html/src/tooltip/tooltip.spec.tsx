@@ -9,6 +9,7 @@ const states = [];
 
 const options = {
     themeColor: [
+        ThemeColor.undefined,
         ThemeColor.primary,
         ThemeColor.secondary,
         ThemeColor.tertiary,

@@ -35,7 +35,7 @@ export default () =>(
             <span>RTL Appbar - sticky and inherit color</span>
             <section>
                 <div style={{ background: "#1976d2", color: "#fff" }}>
-                    <AppbarNormal positionMode={'sticky'} dir="rtl">
+                    <AppbarNormal themeColor="inherit" positionMode={'sticky'} dir="rtl">
                         <AppbarSection>
                             <Icon icon="menu" />
                         </AppbarSection>
@@ -68,9 +68,9 @@ export default () =>(
                 </div>
             </section>
 
-            {[ ...Appbar.options.themeColor ].map((themeColor) => (
+            {Appbar.options.themeColor.map((themeColor) => (
                 <>
-                    <span>RTL Appbar - {themeColor} theme color</span>
+                    <span>RTL Appbar - {`${themeColor}`} theme color</span>
                     <section>
                         <AppbarNormal themeColor={themeColor} dir="rtl">
                             <AppbarSection>

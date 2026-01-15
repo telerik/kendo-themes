@@ -15,10 +15,11 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.outline, ],
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
+    rounded: [ Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    fillMode: [ FillMode.undefined, FillMode.solid, FillMode.outline, ],
     themeColor: [
+        ThemeColor.undefined,
         ThemeColor.base,
         ThemeColor.success,
         ThemeColor.warning,
@@ -45,10 +46,6 @@ export type KendoChipProps = KendoChipOptions & {
 export type KendoChipState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    size: Size.medium,
-    rounded: Roundness.medium,
-    fillMode: FillMode.solid,
-    themeColor: ThemeColor.base,
     avatarImage: "/packages/html/assets/avatar.jpg"
 };
 
@@ -58,10 +55,10 @@ export const Chip: KendoComponent<KendoChipProps & KendoChipState & React.HTMLAt
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
-        themeColor = defaultOptions.themeColor,
+        size,
+        rounded,
+        fillMode,
+        themeColor,
         text,
         icon,
         actions,

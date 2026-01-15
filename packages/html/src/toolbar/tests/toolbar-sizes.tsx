@@ -10,7 +10,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid">
             { Toolbar.options.size.map((size) => (
                 <>
-                    <span className="k-colspan-all k-col-span-full">{size}</span>
+                    <span className="k-colspan-all k-col-span-full">{`${size}`}</span>
                     <section className="k-colspan-all k-col-span-full">
                         <ToolbarResizable size={size}>
                             <Button size={size} icon="bold"></Button>

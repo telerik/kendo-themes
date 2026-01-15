@@ -12,7 +12,7 @@ export default () =>(
 
             {Loader.options.size.map((size) => (
                 <>
-                    <span>{size}</span>
+                    <span>{`${size}`}</span>
                     <span>
                         <LoaderNormal size={size} />
                     </span>

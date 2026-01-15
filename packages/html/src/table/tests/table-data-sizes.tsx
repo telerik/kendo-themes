@@ -6,7 +6,7 @@ const style = `
         max-width: 1200px;
     }
     .k-data-table {
-        width: 372px;
+        width: 280px;
     }
     .k-table-scroller {
         max-height: 200px;
@@ -16,8 +16,9 @@ const style = `
 export default () =>(
     <>
         <style>{style}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-3">
+        <div id="test-area" className="k-d-grid k-grid-cols-4">
 
+            <span>Data table undefined</span>
             <span>Data table small</span>
             <span>Data table medium</span>
             <span>Data table large</span>

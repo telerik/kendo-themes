@@ -6,7 +6,7 @@ import { ChipNormal } from "../templates/chip-normal";
 const styles = `
     #test-area {
         gap: 10px;
-        grid-template-columns: 120px repeat(3, 1fr);
+        grid-template-columns: 120px repeat(4, 1fr);
     }
 `;
 
@@ -17,28 +17,29 @@ export default () => (
             <span>
                 <small>rounded / size</small>
             </span>
+            <span>undefined</span>
             <span>small</span>
             <span>medium</span>
             <span>large</span>
 
-            {[ null, ...Chip.options.rounded ].map((rounded) => (
+            {Chip.options.rounded.map((rounded) => (
                 <>
-                    <span>{rounded || "none"}</span>
+                    <span>{`${rounded}`}</span>
                     {Chip.options.size.map((size) => (
                         <span>
                             <ChipNormal text="Text" size={size} rounded={rounded} />
                         </span>
                     ))}
-                    <span>^ icon</span>
+                    <span></span>
                     {Chip.options.size.map((size) => (
                         <span>
-                            <ChipIcon text="Text" size={size} rounded={rounded} />
+                            <ChipIcon text="Text + Icon" size={size} rounded={rounded} />
                         </span>
                     ))}
-                    <span>^ avatar</span>
+                    <span></span>
                     {Chip.options.size.map((size) => (
                         <span>
-                            <ChipAvatar text="Text" size={size} rounded={rounded} />
+                            <ChipAvatar text="Text + Avatar" size={size} rounded={rounded} />
                         </span>
                     ))}
                 </>

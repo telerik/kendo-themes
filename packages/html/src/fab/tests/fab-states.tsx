@@ -16,9 +16,9 @@ export default () =>(
             {FloatingActionButton.states?.map((state) => (
                 <span key={state}>{state.charAt(0).toUpperCase() + state.slice(1)}</span>
             ))}
-            {[ ...FloatingActionButton.options.themeColor ].map((themeColor) => (
+            {FloatingActionButton.options.themeColor.map((themeColor) => (
                 <>
-                    <span style={{ alignSelf: "center" }}>{themeColor}</span>
+                    <span style={{ alignSelf: "center" }}>{`${themeColor}`}</span>
                     {[ 'normal', ...FloatingActionButton.states ].map((state) => (
                         <>
                             <span style={{ position: "relative" }}>

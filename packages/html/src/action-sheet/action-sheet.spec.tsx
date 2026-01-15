@@ -6,6 +6,7 @@ import { ActionSheetView } from './actionsheet-view';
 
 import { KendoComponent } from '../_types/component';
 import { ACTION_SHEET_FOLDER_NAME, ACTION_SHEET_MODULE_NAME } from './constants';
+import { Overlay } from '../overlay';
 export const ACTIONSHEET_CLASSNAME = `k-actionsheet`;
 
 const states = [];
@@ -48,7 +49,7 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
 
     return (
         <div className="k-actionsheet-container">
-            {overlay && <div className="k-overlay"></div>}
+            {overlay && <Overlay />}
             <AnimationContainer
                 animationStyle={{
                     [`${fullscreen === true ? 'top' : side}`]: 0,

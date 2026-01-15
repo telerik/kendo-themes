@@ -3,7 +3,7 @@ import { Textbox, TextboxNormal } from '../../textbox';
 const styles = `
     #test-area {
         max-width: 1240px;
-        grid-template-columns: 80px 320px 320px 1fr;
+        grid-template-columns: 80px 1fr 1fr 1fr 1fr;;
     }
 `;
 
@@ -14,13 +14,14 @@ export default () =>(
             <span>
                 <small>rounded / size</small>
             </span>
+            <span>undefined</span>
             <span>small</span>
             <span>medium</span>
             <span>large</span>
 
             { Textbox.options.rounded.map((rounded) => (
                 <>
-                    <span>{ rounded }</span>
+                    <span>{ `${rounded}` }</span>
                     { Textbox.options.size.map((size) => (
                         <>
                             <div>

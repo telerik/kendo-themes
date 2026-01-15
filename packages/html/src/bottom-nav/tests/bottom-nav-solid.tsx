@@ -13,9 +13,9 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
             <div className="colors k-d-grid">
-                {[ ...BottomNav.options.themeColor ].map((themeColor) => (
+                {BottomNav.options.themeColor.map((themeColor) => (
                     <>
-                        <span>BottomNav {themeColor} theme color</span>
+                        <span>BottomNav {`${themeColor}`} theme color</span>
                         <section>
                             <BottomNavNormal fillMode="solid" themeColor={themeColor} border flow="vertical">
                                 <BottomNavItem icon="envelope" text="Normal" />

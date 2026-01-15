@@ -16,8 +16,8 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ]
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
+    rounded: [ Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ]
 };
 
 export type CheckboxProps = CheckboxOptions & {
@@ -31,10 +31,7 @@ export type CheckboxOptions = {
   rounded?: (typeof options.rounded)[number] | null;
 };
 
-const defaultOptions = {
-    size: Size.medium,
-    rounded: Roundness.medium
-};
+const defaultOptions = {};
 
 export const Checkbox: KendoComponent<CheckboxProps & CheckboxState & React.HTMLAttributes<HTMLInputElement>> = (
     props: CheckboxProps & CheckboxState & React.HTMLAttributes<HTMLInputElement>
@@ -49,8 +46,8 @@ export const Checkbox: KendoComponent<CheckboxProps & CheckboxState & React.HTML
         invalid,
         valid,
         required,
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
+        size,
+        rounded,
         ...other
     } = props;
 

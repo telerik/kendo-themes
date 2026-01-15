@@ -14,29 +14,29 @@ export default () =>(
             <span>Searchbox RTL</span>
 
             <div>
-                <SearchboxNormal placeholder="placeholder..." />
+                <SearchboxNormal fillMode="solid" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <SearchboxNormal placeholder="placeholder..." />
+                <SearchboxNormal fillMode="solid" placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...Searchbox.states ].map((state) => (
                 <>
                     <div>
-                        <SearchboxNormal { ...{ [state]: true }} value={state} />
+                        <SearchboxNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <SearchboxNormal { ...{ [state]: true }} value={state} />
+                        <SearchboxNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <SearchboxNormal value="invalid focus" invalid focus />
+                <SearchboxNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <SearchboxNormal value="invalid focus" invalid focus />
+                <SearchboxNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
         </div>
     </>

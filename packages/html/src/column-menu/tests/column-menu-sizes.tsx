@@ -6,8 +6,9 @@ import { ColumnListItem, ColumnList, ColumnMenuNormal } from ".."
 
 export default () => (
     <>
-        <div id="test-area" className="k-d-grid k-grid-cols-3">
+        <div id="test-area" className="k-d-grid k-grid-cols-4">
 
+            <span>undefined</span>
             <span>Small</span>
             <span>Medium</span>
             <span>Large</span>

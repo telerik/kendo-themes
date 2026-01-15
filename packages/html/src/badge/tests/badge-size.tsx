@@ -21,13 +21,13 @@ export default () =>(
 
             {Badge.options.fillMode.map((fillMode) => (
                 <>
-                    <div className="k-col-span-full k-text-center">{fillMode}</div>
+                    <div className="k-col-span-full k-text-center">{`${fillMode}`}</div>
 
                     {Badge.options.size.map((size) => (
                         <>
-                            <span>{size}</span>
-                            <span><BadgeNormal fillMode={fillMode} size={size}>Rectangle</BadgeNormal></span>
-                            <span><BadgeNormal fillMode={fillMode} size={size}></BadgeNormal></span>
+                            <span>{`${size}`}</span>
+                            <span><BadgeNormal fillMode={fillMode} size={size} rounded="none">Rectangle</BadgeNormal></span>
+                            <span><BadgeNormal fillMode={fillMode} size={size} rounded="none"></BadgeNormal></span>
                             <span><BadgeNormal fillMode={fillMode} size={size} rounded="small">Rounded</BadgeNormal></span>
                             <span><BadgeNormal fillMode={fillMode} size={size} rounded="small"></BadgeNormal></span>
                             <span><BadgeNormal fillMode={fillMode} size={size} rounded="full">Pill</BadgeNormal></span>

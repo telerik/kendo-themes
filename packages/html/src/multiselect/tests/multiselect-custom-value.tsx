@@ -1,4 +1,4 @@
-import { MultiSelectCustomValue, MultiSelectGroupingModernCustomValue, MultiSelectGroupingVirtualModernCustomValue } from '..';
+import { MultiSelectCustomValue, MultiSelectGroupingVirtualModernCustomValue, MultiSelectGroupingModernCustomValue } from '..';
 
 const styles = `
     #test-area {

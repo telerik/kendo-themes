@@ -8,8 +8,9 @@ export const LOADERCONTAINER_CLASSNAME = `k-loader-container`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
     themeColor: [
+        ThemeColor.undefined,
         ThemeColor.base,
         ThemeColor.primary,
         ThemeColor.secondary,
@@ -37,8 +38,6 @@ export type KendoLoaderContainerProps = KendoLoaderContainerOptions & {
 };
 
 const defaultOptions = {
-    size: Size.medium,
-    themeColor: ThemeColor.primary,
     loaderType: 'pulsing',
     position: 'top',
     overlay: 'dark',
@@ -50,8 +49,8 @@ export const LoaderContainer: KendoComponent<KendoLoaderContainerProps & React.H
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        themeColor = defaultOptions.themeColor,
+        size,
+        themeColor,
         loaderType = defaultOptions.loaderType,
         position = defaultOptions.position,
         overlay = defaultOptions.overlay,
@@ -81,7 +80,7 @@ export const LoaderContainer: KendoComponent<KendoLoaderContainerProps & React.H
                 }
             )}>
                 <Loader size={size} themeColor={themeColor} animation={loaderType} />
-                <div className={`k-loader-container-label`}>
+                <div className={`k-loader-container-label !k-text-${themeColor}`}>
                     Loading...
                 </div>
             </div>

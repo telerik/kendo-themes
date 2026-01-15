@@ -17,17 +17,17 @@ export default () =>(
             <span>Text + Icon</span>
             <span>Icon</span>
 
-            {FloatingActionButton.options.themeColor.map((color) => (
+            {FloatingActionButton.options.themeColor.map((themeColor) => (
                 <>
-                    <span>{color}</span>
+                    <span>{`${themeColor}`}</span>
                     <span>
-                        <TextFloatingActionButton themeColor={color} />
+                        <TextFloatingActionButton themeColor={themeColor} />
                     </span>
                     <span>
-                        <IconTextFloatingActionButton themeColor={color} />
+                        <IconTextFloatingActionButton themeColor={themeColor} />
                     </span>
                     <span>
-                        <IconFloatingActionButton themeColor={color} />
+                        <IconFloatingActionButton themeColor={themeColor} />
                     </span></>
             ))}
         </div>

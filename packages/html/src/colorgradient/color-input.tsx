@@ -8,7 +8,7 @@ const COLOR_INPUT_CLASSNAME = 'k-colorgradient-inputs';
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ]
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ]
 };
 
 export type KendoColorInputOptions = {
