@@ -32,11 +32,11 @@ export default () =>(
 
             {Badge.options.fillMode.map((fillMode) => (
                 <>
-                    <div className="k-col-span-full k-text-center">{fillMode}</div>
+                    <div className="k-col-span-full k-text-center">{`${fillMode}`}</div>
 
                     <span>inline</span>
                     <div className="k-badge-container">
-                        <BadgeNormal fillMode={fillMode} cutoutBorder>Rect</BadgeNormal>
+                        <BadgeNormal fillMode={fillMode} rounded="none" cutoutBorder>Rect</BadgeNormal>
                     </div>
                     <div className="k-badge-container">
                         <BadgeNormal fillMode={fillMode} rounded="medium" cutoutBorder>Round</BadgeNormal>
@@ -53,7 +53,7 @@ export default () =>(
 
                     <span>inside</span>
                     <div className="k-badge-container">
-                        <BadgeNormal fillMode={fillMode} position="inside" align="top-start" cutoutBorder>Rect</BadgeNormal>
+                        <BadgeNormal fillMode={fillMode} rounded="none" position="inside" align="top-start" cutoutBorder>Rect</BadgeNormal>
                     </div>
                     <div className="k-badge-container">
                         <BadgeNormal fillMode={fillMode} rounded="medium" position="inside" align="top-start" cutoutBorder>Round</BadgeNormal>
@@ -70,7 +70,7 @@ export default () =>(
 
                     <span>edge</span>
                     <div className="k-badge-container">
-                        <BadgeNormal fillMode={fillMode} position="edge" align="top-start" cutoutBorder>Rect</BadgeNormal>
+                        <BadgeNormal fillMode={fillMode} rounded="none" position="edge" align="top-start" cutoutBorder>Rect</BadgeNormal>
                     </div>
                     <div className="k-badge-container">
                         <BadgeNormal fillMode={fillMode} rounded="medium" position="edge" align="top-start" cutoutBorder>Round</BadgeNormal>

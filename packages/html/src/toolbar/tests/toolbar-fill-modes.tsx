@@ -11,7 +11,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid">
             { Toolbar.options.fillMode.map((fillMode) => (
                 <>
-                    <span className="k-colspan-all k-col-span-full">{fillMode}</span>
+                    <span className="k-colspan-all k-col-span-full">{`${fillMode}`}</span>
                     <section className="k-colspan-all k-col-span-full">
                       <ToolbarResizable fillMode={fillMode}>
                           <Button icon="arrow-rotate-ccw" fillMode={fillMode}></Button>
@@ -51,7 +51,7 @@ export default () =>(
                           <Button fillMode={fillMode} icon="text-wrap"></Button>
                       </ToolbarResizable>
                     </section>
-                    <span className="k-colspan-all k-col-span-full">{fillMode} with overlay</span>
+                    <span className="k-colspan-all k-col-span-full">{`${fillMode}`} with overlay</span>
                     <section className="k-colspan-all k-col-span-full">
                       <ToolbarScrollableButtonsHidden scrollingPosition="both" fillMode={fillMode}>
                           <Button icon="arrow-rotate-ccw" fillMode={fillMode}></Button>

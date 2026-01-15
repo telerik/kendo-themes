@@ -4,7 +4,7 @@ import { Checkbox } from '../checkbox';
 const className = `k-item`;
 
 const options = {
-    size: [Size.small, Size.medium, Size.large]
+    size: [Size.undefined, Size.small, Size.medium, Size.large]
 };
 
 const states = [];

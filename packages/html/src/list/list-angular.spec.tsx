@@ -9,7 +9,7 @@ export const LISTANGULAR_CLASSNAME = `k-list`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ]
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ]
 };
 
 export type KendoListAngularOptions = {
@@ -24,7 +24,6 @@ export type KendoListAngularProps = KendoListAngularOptions & {
 export type KendoListAngularState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    size: Size.medium
 };
 
 export const ListAngular: KendoComponent<KendoListAngularProps & KendoListAngularState & React.HTMLAttributes<HTMLDivElement>> = (
@@ -33,7 +32,7 @@ export const ListAngular: KendoComponent<KendoListAngularProps & KendoListAngula
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         virtualization,
         children,
         ...other

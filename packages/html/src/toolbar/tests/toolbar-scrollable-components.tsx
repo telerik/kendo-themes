@@ -20,7 +20,7 @@ export default () =>(
 
             { Toolbar.options.size.map((size) => (
                 <>
-                    <span className="k-colspan-all k-col-span-full">{size}</span>
+                    <span className="k-colspan-all k-col-span-full">{`${size}`}</span>
                     <section className="k-colspan-all k-col-span-full">
                         <ToolbarScrollable size={size}>
                             <Button size={size} icon="bold" focus></Button>

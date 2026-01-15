@@ -2,10 +2,10 @@ import { List, ListNormal, ListWithGrouping, AngularListWithGrouping } from '../
 
 export default () =>(
     <>
-        <div id="test-area" className="k-d-grid k-grid-cols-3">
-            <span>small</span>
-            <span>medium</span>
-            <span>large</span>
+        <div id="test-area" className="k-d-grid k-grid-cols-4">
+            { List.options.size.map((size) => (
+                <span>{`${size}`}</span>
+            ))}
 
             { List.options.size.map((size) => (
                 <ListNormal size={size} />

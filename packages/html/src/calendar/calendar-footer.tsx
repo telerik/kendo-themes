@@ -4,7 +4,7 @@ import { Button } from '../button';
 const CALENDARFOOTER_CLASSNAME = `k-calendar-footer`;
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
 };
 
 export type KendoCalendarFooterProps = {

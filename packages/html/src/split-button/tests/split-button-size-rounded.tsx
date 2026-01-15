@@ -1,9 +1,9 @@
-import { SplitButton, TextSplitButton, IconTextSplitButton, IconSplitButton } from '../../split-button';
+import { SplitButton, IconTextSplitButton, IconSplitButton } from '../../split-button';
 
 const styles = `
     #test-area {
         max-width: 1240px;
-        grid-template-columns: 60px 350px 350px 1fr;
+        grid-template-columns: 60px repeat(4, 1fr);
     }
     .wrapper {
         display: flex;
@@ -16,18 +16,18 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
             <span><small>rounded / size</small></span>
+            <span>undefined</span>
             <span>small</span>
             <span>medium</span>
             <span>large</span>
 
             { SplitButton.options.rounded.map((rounded) => (
                 <>
-                    <span>{ rounded }</span>
+                    <span>{ `${rounded}` }</span>
                     { SplitButton.options.size.map((size) => (
                         <>
                             <div className="wrapper">
-                                <TextSplitButton size={size} rounded={rounded} />
-                                <IconTextSplitButton size={size} rounded={rounded} />
+                                <IconTextSplitButton size={size} rounded={rounded}>text</IconTextSplitButton>
                                 <IconSplitButton size={size} rounded={rounded} />
                             </div>
                         </>

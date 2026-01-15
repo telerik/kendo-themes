@@ -11,40 +11,40 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <span>TextBox</span>
-            <span>TextBox RTL</span>
+            <span>TextBox Solid</span>
+            <span>TextBox Solid RTL</span>
 
             <div>
-                <TextboxNormal />
+                <TextboxNormal fillMode="solid" />
             </div>
             <div dir="rtl">
-                <TextboxNormal />
+                <TextboxNormal fillMode="solid" />
             </div>
 
             <div>
-                <TextboxNormal placeholder="placeholder..." />
+                <TextboxNormal fillMode="solid" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <TextboxNormal placeholder="placeholder..." />
+                <TextboxNormal fillMode="solid" placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...Textbox.states ].map((state) => (
                 <>
                     <div>
-                        <TextboxNormal { ...{ [state]: true }} value={state} />
+                        <TextboxNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <TextboxNormal { ...{ [state]: true }} value={state} />
+                        <TextboxNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <TextboxNormal value="invalid focus" invalid focus />
+                <TextboxNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <TextboxNormal value="invalid focus" invalid focus />
+                <TextboxNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
         </div>
     </>

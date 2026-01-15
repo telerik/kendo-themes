@@ -8,7 +8,7 @@ export default () =>(
             <span>Medium</span>
             <span>Large</span>
 
-            { ColorPalette.options.size.map((size) => (
+            { ColorPalette.options.size.filter((size) => size !== undefined).map((size) => (
                 <>
                     <section>
                         <ColorPaletteNormal size={size} />

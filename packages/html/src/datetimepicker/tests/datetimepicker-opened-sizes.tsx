@@ -17,13 +17,13 @@ export default () => (
   <>
     <style>{styles}</style>
     <div id="test-area" className="k-d-grid">
-      {DateTimePicker.options.size.map((size) => (
+      {DateTimePicker.options.size.filter(size => size !== undefined).map((size) => (
         <section key={size}>
           <DateTimePickerNormal size={size} tab="date" value="12/25/2023 10:30 AM" opened />
         </section>
       ))}
 
-      {DateTimePicker.options.size.map((size) => (
+      {DateTimePicker.options.size.filter(size => size !== undefined).map((size) => (
         <section key={size}>
           <DateTimePickerNormal size={size} tab="time" value="12/25/2023 10:30 AM" opened />
         </section>

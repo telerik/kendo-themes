@@ -11,17 +11,17 @@ export default () =>(
             <span className="col">Circle</span>
             <span className="col">Dot</span>
 
-            {Badge.options.themeColor.map((color) => (
+            {Badge.options.themeColor.map((themeColor) => (
                 <>
-                    <span>{color}</span>
-                    <span><BadgeNormal themeColor={color}>Rectangle</BadgeNormal></span>
-                    <span><BadgeNormal themeColor={color}></BadgeNormal></span>
-                    <span><BadgeNormal themeColor={color} rounded="medium">Rounded</BadgeNormal></span>
-                    <span><BadgeNormal themeColor={color} rounded="medium"></BadgeNormal></span>
-                    <span><BadgeNormal themeColor={color} rounded="full">Pill</BadgeNormal></span>
-                    <span><BadgeNormal themeColor={color} rounded="full"></BadgeNormal></span>
-                    <span><BadgeNormal themeColor={color} rounded="full">1</BadgeNormal></span>
-                    <span><BadgeNormal themeColor={color} rounded="full"></BadgeNormal></span>
+                    <span>{`${themeColor}`}</span>
+                    <span><BadgeNormal fillMode="solid" themeColor={themeColor} rounded="none">Rectangle</BadgeNormal></span>
+                    <span><BadgeNormal fillMode="solid" themeColor={themeColor} rounded="none"></BadgeNormal></span>
+                    <span><BadgeNormal fillMode="solid" themeColor={themeColor} rounded="medium">Rounded</BadgeNormal></span>
+                    <span><BadgeNormal fillMode="solid" themeColor={themeColor} rounded="medium"></BadgeNormal></span>
+                    <span><BadgeNormal fillMode="solid" themeColor={themeColor} rounded="full">Pill</BadgeNormal></span>
+                    <span><BadgeNormal fillMode="solid" themeColor={themeColor} rounded="full"></BadgeNormal></span>
+                    <span><BadgeNormal fillMode="solid" themeColor={themeColor} rounded="full">1</BadgeNormal></span>
+                    <span><BadgeNormal fillMode="solid" themeColor={themeColor} rounded="full"></BadgeNormal></span>
                 </>
             ))}
         </div>

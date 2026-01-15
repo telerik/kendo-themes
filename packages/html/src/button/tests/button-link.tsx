@@ -16,9 +16,9 @@ export default () => (
             {Button.states.filter(state => state !== 'generating')?.map((state) => (
                 <span key={state}>{state.charAt(0).toUpperCase() + state.slice(1)}</span>
             ))}
-            {[ ...Button.options.themeColor ].map((themeColor) => (
+            { Button.options.themeColor.map((themeColor) => (
                 <>
-                    <span>{themeColor}</span>
+                    <span>{`${themeColor}`}</span>
                     {[ 'normal' , ...Button.states ].filter(state => state !== 'generating').map((state) => (
                         <>
                             <span>

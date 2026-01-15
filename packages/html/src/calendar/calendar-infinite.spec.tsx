@@ -7,7 +7,7 @@ import { CALENDAR_FOLDER_NAME, CALENDAR_MODULE_NAME } from './constants';
 const CALENDARINFINITE_CLASSNAME = 'k-calendar-infinite';
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
 };
 
 export type KendoCalendarInfiniteOptions = {
@@ -46,7 +46,6 @@ export type KendoCalendarInfiniteProps = {
 };
 
 const defaultOptions = {
-    size: Size.medium,
     showNavigation: true,
     calendarView: 'month',
     navigationItems: defaultNavigationItems,
@@ -58,7 +57,7 @@ export const CalendarInfinite: KendoComponent<KendoCalendarInfiniteProps & Kendo
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         showNavigation = defaultOptions.showNavigation,
         calendarView = defaultOptions.calendarView,
         navigationItems = defaultOptions.navigationItems,

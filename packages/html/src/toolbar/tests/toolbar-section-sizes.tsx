@@ -1,4 +1,5 @@
 import { ToolbarSection } from '../templates/toolbar-section';
+import Toolbar from '../toolbar.spec';
 
 
 const styles = `
@@ -16,22 +17,12 @@ export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
-
+            { Toolbar.options.size.map((size) => (
             <section className="k-colspan-all k-col-span-full toolbar-popup-section">
-                <span>Small Toolbar Popup Section</span>
-                <ToolbarSection size="small" />
+                <span>{`${size}`} Toolbar Popup Section</span>
+                <ToolbarSection size={`${size}`} />
             </section>
-
-            <section className="k-colspan-all k-col-span-full toolbar-popup-section">
-                <span>Medium Toolbar Popup Section</span>
-                <ToolbarSection size="medium" />
-            </section>
-
-            <section className="k-colspan-all k-col-span-full toolbar-popup-section">
-                <span>Large Toolbar Popup Section</span>
-                <ToolbarSection size="large" />
-            </section>
-
+            ))}
         </div>
     </>
 );

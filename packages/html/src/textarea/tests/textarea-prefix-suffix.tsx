@@ -22,7 +22,7 @@ export default () =>(
             {Textarea.options.fillMode.map((fillMode) => (
                 <>
 
-                    <span>FillMode - {fillMode}</span>
+                    <span>FillMode - {`${fillMode}`}</span>
 
                     <div>
                         <TextareaNormal fillMode={fillMode} value="Prefix & Suffix"
