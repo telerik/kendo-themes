@@ -105,6 +105,7 @@
 @forward "./imageeditor/_index.scss";
 @forward "./gantt/_index.scss";
 @forward "./scheduler/_index.scss";
+@forward "./file-box/_index.scss";
 @forward "./chat/_index.scss";
 @forward "./mediaplayer/_index.scss";
 @forward "./timeline/_index.scss";
@@ -281,6 +282,7 @@
 
 // Misc
 @use "./adaptive/_index.scss" as *;
+@use "./file-box/_index.scss" as *;
 @use "./chat/_index.scss" as *;
 @use "./mediaplayer/_index.scss" as *;
 @use "./timeline/_index.scss" as *;
@@ -460,6 +462,7 @@
 
     // Misc
     @include kendo-adaptive--styles();
+    @include kendo-file-box--styles();
     @include kendo-chat--styles();
     @include kendo-media-player--styles();
     @include kendo-timeline--styles();
