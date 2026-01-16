@@ -130,6 +130,7 @@ export * from './message-box/index';
 export * from './scrollview/index';
 export * from './overlay/index';
 export * from './prompt/index';
+export * from './file-box/index';
 
 // Dataviz
 // export * from './dataviz/index';
