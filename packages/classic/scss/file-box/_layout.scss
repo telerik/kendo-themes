@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/file-box/_layout.scss" as *;
+
+
+@mixin kendo-file-box--layout() {
+    @include kendo-file-box--layout-base();
+}
