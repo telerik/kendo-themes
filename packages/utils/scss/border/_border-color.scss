@@ -244,18 +244,10 @@
 /// @group border-color
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
 
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
-
 @mixin kendo-utils--border--border-color() {
-    @include import-once("utils-border-color") {
-
-        // Border color utility classes
-        $kendo-utils-border-color: map.get( $kendo-utils, "border-color" ) !default;
-        @include generate-utils( border, border-color, $kendo-utils-border-color, $css-var: 'color' );
-
+    @include import-once("utils-border-border-color") {
+        @include generate-utils-from-config("border-color");
     }
 }

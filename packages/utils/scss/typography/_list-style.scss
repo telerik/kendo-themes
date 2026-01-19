@@ -16,18 +16,10 @@
 /// @group list-style
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
 
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
-
 @mixin kendo-utils--typography--list-style-type() {
-    @include import-once("utils-typography-list-style") {
-
-        // list-style-type utility classes
-        $kendo-utils-list-style-type: map.get( $kendo-utils, "list-style-type" ) !default;
-        @include generate-utils( list, list-style-type, $kendo-utils-list-style-type );
-
+    @include import-once("utils-typography-list-style-type") {
+        @include generate-utils-from-config("list-style-type");
     }
 }

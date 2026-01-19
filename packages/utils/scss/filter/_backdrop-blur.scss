@@ -1,0 +1,7 @@
+@use "../_globals.scss" as *;
+
+@mixin kendo-utils--filter--backdrop-blur() {
+    @include import-once("utils-filter-backdrop-blur") {
+        @include generate-utils-from-config("backdrop-blur");
+    }
+}

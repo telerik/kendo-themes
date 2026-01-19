@@ -22,18 +22,10 @@
 /// @group clear
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--layout--clear() {
     @include import-once("utils-layout-clear") {
-
-        // Clear utility classes
-        $kendo-utils-clear: map.get( $kendo-utils, "clear" ) !default;
-        @include generate-utils( clear, clear, $kendo-utils-clear );
-
+        @include generate-utils-from-config("clear");
     }
 }

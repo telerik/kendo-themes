@@ -8,37 +8,73 @@
 $kendo-prefix: k- !default;
 $kendo-important: true !default;
 
-@mixin generate-utils( $name, $props, $values, $function: "genFunc", $important: $kendo-important, $css-var: null ) {
+// ============================================================================
+// Selector Builder Helper
+// ============================================================================
+
+/// Builds a selector string from prefix and key
+/// @param {String} $prefix - The class prefix
+/// @param {String} $key - The value key (or DEFAULT)
+/// @return {String} - The full selector without the leading dot
+@function k-build-selector($prefix, $key) {
+    $_key: k-escape-class-name($key);
+    $_prefix: k-escape-class-name($prefix);
+
+    @if $_key == DEFAULT {
+        @return #{$kendo-prefix}#{$_prefix};
+    } @else if $_prefix == "" or $_prefix == null {
+        @return #{$kendo-prefix}#{$_key};
+    } @else {
+        @return #{$kendo-prefix}#{$_prefix}-#{$_key};
+    }
+}
+
+// ============================================================================
+// Core Utility Generator
+// ============================================================================
+
+/// Generates utility classes for a single property
+/// @param {String} $name - The class name prefix
+/// @param {String|List} $props - CSS property or list of properties
+/// @param {Map|List} $values - Values map or list
+/// @param {String} $function ["genFunc"] - Optional transform function name
+/// @param {Bool} $important [$kendo-important] - Generate !important variants
+/// @param {String} $css-var [null] - CSS custom property namespace
+@mixin generate-utils($name, $props, $values, $function: "genFunc", $important: $kendo-important, $css-var: null) {
     @if $values {
-        $_props: if( meta.type-of($props) == list, $props, ( $props ) );
-        $_fn: if( meta.function-exists( $function ), meta.get-function( $function ), null );
+        $_props: if(meta.type-of($props) == list, $props, ($props));
+        $_fn: if(meta.function-exists($function), meta.get-function($function), null);
 
         @each $key, $val in $values {
-            $_key: k-escape-class-name( $key );
-            $_val: if( meta.type-of($values) == list, $key, $val );
-            $_name: k-escape-class-name( $name );
-            $_selector: if( $_key == DEFAULT, #{$kendo-prefix}#{$_name}, #{$kendo-prefix}#{$_name}-#{$_key});
-            // @debug $_selector;
-            $_custom-prop: if( $_key == DEFAULT, var( --kendo-#{$css-var}, #{$_val} ), var( --kendo-#{$css-var}-#{$_key}, #{$_val} ) );
+            $_key: k-escape-class-name($key);
+            $_val: if(meta.type-of($values) == list, $key, $val);
+            $_selector: k-build-selector($name, $key);
+            $_custom-prop: if($_key == DEFAULT,
+                var(--kendo-#{$css-var}, #{$_val}),
+                var(--kendo-#{$css-var}-#{$_key}, #{$_val})
+            );
 
+            // Generate base class
             @if $important != only {
                 .#{$_selector} {
                     @each $prop in $_props {
                         @if $css-var {
-                            #{$prop}: if( $_fn, meta.call($_fn, $_custom-prop), $_custom-prop );
+                            #{$prop}: if($_fn, meta.call($_fn, $_custom-prop), $_custom-prop);
                         } @else {
-                            #{$prop}: if( $_fn, meta.call($_fn, $_val), $_val );
+                            #{$prop}: if($_fn, meta.call($_fn, $_val), $_val);
                         }
                     }
                 }
             }
+
+            // Generate !important variant
             @if $important {
                 .\!#{$_selector} {
                     @each $prop in $_props {
                         @if $css-var {
-                            #{$prop}: if( $_fn, meta.call($_fn, $-custom-prop), $-custom-prop ) !important; // stylelint-disable-line declaration-no-important
+                            #{$prop}: if($_fn, meta.call($_fn, $_custom-prop), $_custom-prop) !important; // stylelint-disable-line declaration-no-important
                         } @else {
-                            #{$prop}:  if( $_fn, meta.call($_fn, $_val), $_val ) !important; // stylelint-disable-line declaration-no-important
+                            #{$prop}: if($_fn, meta.call($_fn, $_val), $_val) !important; // stylelint-disable-line declaration-no-important
                         }
                     }
                 }
@@ -47,26 +83,215 @@ $kendo-important: true !default;
     }
 }
 
+// ============================================================================
+// Alias Generator (using @extend for grouped selectors)
+// ============================================================================
 
+/// Generates alias classes using @extend
+/// @param {String} $alias-prefix - The alias class prefix
+/// @param {String} $base-prefix - The base class prefix to extend
+/// @param {Map} $values - Values map
+/// @param {Bool} $important - Generate !important variants
+@mixin _generate-extend-aliases($alias-prefix, $base-prefix, $values, $important) {
+    @each $key, $val in $values {
+        $_base: k-build-selector($base-prefix, $key);
+        $_alias: k-build-selector($alias-prefix, $key);
+
+        @if $important != only {
+            .#{$_alias} { @extend .#{$_base} !optional; }
+        }
+        @if $important {
+            .\!#{$_alias} { @extend .\!#{$_base} !optional; }
+        }
+    }
+}
+
+// ============================================================================
+// Property Generator Helpers
+// ============================================================================
+
+/// Generates utilities for a single property
+/// @param {String} $prefix - Class prefix
+/// @param {String|List} $property - CSS property
+/// @param {Map} $values - Values map
+/// @param {String} $function - Transform function
+/// @param {Bool} $important - Generate !important variants
+/// @param {String} $css-var - CSS var namespace
+@mixin _generate-single-property($prefix, $property, $values, $function, $important, $css-var) {
+    @if $function {
+        @include generate-utils($prefix, $property, $values, $function, $important, $css-var);
+    } @else {
+        @include generate-utils($prefix, $property, $values, $important: $important, $css-var: $css-var);
+    }
+}
+
+/// Generates utilities for multi-property configs (e.g., margin with m, mt, mr, mb, ml, mx, my)
+/// @param {Map} $property - Property map (prefix: css-property)
+/// @param {Map} $values - Values map
+/// @param {String} $function - Transform function
+/// @param {Bool} $important - Generate !important variants
+/// @param {String} $css-var - CSS var namespace
+/// @param {String} $responsive-key - Responsive breakpoint key
+/// @param {List} $responsive-prefixes - List of prefixes to include for responsive
+@mixin _generate-multi-property($property, $values, $function, $important, $css-var, $responsive-key: null, $responsive-prefixes: null) {
+    @each $prop-prefix, $prop-name in $property {
+        // For responsive, filter by responsive-prefixes if specified
+        $should-generate: true;
+        @if $responsive-key and $responsive-prefixes {
+            $should-generate: list.index($responsive-prefixes, $prop-prefix) != null;
+        }
+
+        @if $should-generate {
+            $full-prefix: if($responsive-key, #{$prop-prefix}-#{$responsive-key}, $prop-prefix);
+            @include _generate-single-property($full-prefix, $prop-name, $values, $function, $important, $css-var);
+        }
+    }
+}
+
+// ============================================================================
+// Alias Processing
+// ============================================================================
+
+/// Processes and generates all aliases for a utility
+/// @param {Map} $aliases - Aliases configuration
+/// @param {String|Map} $property - Property config
+/// @param {String} $prefix - Base prefix
+/// @param {Map} $values - Values map
+/// @param {Bool} $important - Generate !important variants
+/// @param {String} $css-var - CSS var namespace
+@mixin _process-aliases($aliases, $property, $prefix, $values, $important, $css-var) {
+    @if $aliases != null and list.length(map.keys($aliases)) > 0 {
+        @each $alias-prefix, $alias-config in $aliases {
+            @if meta.type-of($alias-config) == string {
+                // Prefix-to-prefix mapping (e.g., "static" maps to "pos" prefix in position utility)
+                @if meta.type-of($property) == map and map.has-key($property, $alias-config) {
+                    @include _generate-extend-aliases($alias-prefix, $alias-config, $values, $important);
+                }
+            } @else {
+                // Simple alias or value subset alias
+                $alias-values: k-get-alias-values($alias-config, $values);
+
+                @if $alias-values == $values and meta.type-of($property) != map {
+                    // Use @extend for simple aliases (same values, single property)
+                    @include _generate-extend-aliases($alias-prefix, $prefix, $values, $important);
+                } @else {
+                    // Generate separate rules for complex cases
+                    @if meta.type-of($property) == map {
+                        @each $prop-prefix, $prop-name in $property {
+                            @include generate-utils($alias-prefix, $prop-name, $alias-values, $important: $important, $css-var: $css-var);
+                        }
+                    } @else {
+                        @include generate-utils($alias-prefix, $property, $alias-values, $important: $important, $css-var: $css-var);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Extracts values for an alias (handles value subsets)
+/// @param {Map|Null} $alias-config - Alias configuration
+/// @param {Map} $default-values - Default values to use
+/// @return {Map} - Values to use for the alias
+@function k-get-alias-values($alias-config, $default-values) {
+    @if meta.type-of($alias-config) != map {
+        @return $default-values;
+    }
+
+    // Check if config has custom values (not just deprecated flag)
+    @if not map.has-key($alias-config, "deprecated") or list.length(map.keys($alias-config)) > 1 {
+        $custom-values: map.remove($alias-config, "deprecated", "maps-to");
+        @if list.length(map.keys($custom-values)) > 0 {
+            @return $custom-values;
+        }
+    }
+
+    @return $default-values;
+}
+
+// ============================================================================
+// Config-Driven Utility Generator (Main Entry Point)
+// ============================================================================
+
+/// Generates utility classes from a config key in $kendo-utils
+/// @param {String} $key - The utility key in $kendo-utils
+/// @param {Map} $utils-map [$kendo-utils] - The utilities config map
+/// @param {Bool} $important [$kendo-important] - Generate !important variants
+/// @param {String} $responsive-key [null] - Breakpoint key for responsive variants
+/// @access public
+@mixin generate-utils-from-config($key, $utils-map: $kendo-utils, $important: $kendo-important, $responsive-key: null) {
+    $config: k-get-util-config($key, $utils-map);
+
+    @if not k-validate-util-config($config, $key) {
+        @warn "Skipping utility '#{$key}' due to invalid config.";
+    } @else if map.get($config, "legacy") == true {
+        @warn "Utility '#{$key}' uses legacy config format. Please migrate to new nested format.";
+    } @else {
+        // Extract config values
+        $property: map.get($config, "property");
+        $prefix: k-get-util-prefix($config, $key);
+        $values: map.get($config, "values");
+        $css-var: map.get($config, "css-var");
+        $function: map.get($config, "function");
+        $aliases: map.get($config, "aliases");
+        $responsive-prefixes: map.get($config, "responsive-prefixes");
+
+        // Adjust prefix for responsive variants
+        @if $responsive-key {
+            $prefix: #{$prefix}-#{$responsive-key};
+        }
+
+        // Generate utility classes
+        @if meta.type-of($property) == map {
+            @include _generate-multi-property($property, $values, $function, $important, $css-var, $responsive-key, $responsive-prefixes);
+        } @else {
+            @include _generate-single-property($prefix, $property, $values, $function, $important, $css-var);
+        }
+
+        // Generate aliases (only for non-responsive, as aliases don't need responsive variants)
+        @if not $responsive-key {
+            @include _process-aliases($aliases, $property, $prefix, $values, $important, $css-var);
+        }
+    }
+}
+
+/// Generates responsive variants for a utility from config
+/// @param {String} $key - The utility key in $kendo-utils
+/// @param {String} $breakpoint-key - The breakpoint key (xs, sm, md, lg, xl, xxl)
+/// @param {Map} $utils-map [$kendo-utils] - The utilities config map
+/// @access public
+@mixin generate-utils-from-config-responsive($key, $breakpoint-key, $utils-map: $kendo-utils) {
+    $config: k-get-util-config($key, $utils-map);
+
+    @if k-validate-util-config($config, $key) {
+        @if map.get($config, "responsive") == true {
+            @include generate-utils-from-config($key, $utils-map, $important: false, $responsive-key: $breakpoint-key);
+        }
+    }
+}
+
+// ============================================================================
 // Responsive Layout Breakpoints
-@mixin kendo-breakpoint-up( $breakpoint, $media: all ) {
-    @media only #{$media} and (min-width: k-map-get( $kendo-breakpoints, #{$breakpoint} )) {
+// ============================================================================
+
+@mixin kendo-breakpoint-up($breakpoint, $media: all) {
+    @media only #{$media} and (min-width: k-map-get($kendo-breakpoints, #{$breakpoint})) {
         @content;
     }
 }
 
-@mixin kendo-breakpoint-down( $breakpoint, $media: all ) {
-    @media only #{$media} and (max-width: ( k-map-get( $kendo-breakpoints, #{$breakpoint} ) - .02 )) {
+@mixin kendo-breakpoint-down($breakpoint, $media: all) {
+    @media only #{$media} and (max-width: (k-map-get($kendo-breakpoints, #{$breakpoint}) - .02)) {
         @content;
     }
 }
 
-@mixin kendo-breakpoint-only( $breakpoint, $media: all ) {
-    $breakpoint-index: list.index( map.keys($kendo-breakpoints), $breakpoint );
+@mixin kendo-breakpoint-only($breakpoint, $media: all) {
+    $breakpoint-index: list.index(map.keys($kendo-breakpoints), $breakpoint);
     $next-breakpoint-index: $breakpoint-index + 1;
+    $next-breakpoint: list.nth(map.keys($kendo-breakpoints), $next-breakpoint-index);
 
-    $next-breakpoint: list.nth( map.keys($kendo-breakpoints), $next-breakpoint-index );
-    @media only #{$media} and (min-width: k-map-get( $kendo-breakpoints, #{$breakpoint} )) and (max-width: ( k-map-get( $kendo-breakpoints, #{$next-breakpoint} ) - .02)) {
+    @media only #{$media} and (min-width: k-map-get($kendo-breakpoints, #{$breakpoint})) and (max-width: (k-map-get($kendo-breakpoints, #{$next-breakpoint}) - .02)) {
         @content;
     }
 }

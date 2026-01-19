@@ -3,9 +3,6 @@
 @use "sass:map";
 @use "../_globals.scss" as *;
 
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
-
 @mixin kendo-utils--spacing--space-between() {
     @include import-once("utils-spacing-space-between") {
 

@@ -28,18 +28,10 @@
 /// @group outline-offset
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
 
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
-
 @mixin kendo-utils--border--outline-offset() {
-    @include import-once("utils-outline-offset") {
-
-        // Outline offset utility classes
-        $kendo-utils-outline-offset: map.get( $kendo-utils, "outline-offset" ) !default;
-        @include generate-utils( outline-offset, outline-offset, $kendo-utils-outline-offset );
-
+    @include import-once("utils-border-outline-offset") {
+        @include generate-utils-from-config("outline-offset");
     }
 }

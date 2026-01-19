@@ -1,5 +1,131 @@
 @forward "@progress/kendo-theme-core/scss/functions/index.scss";
 
+@use "sass:list";
+@use "sass:map";
+@use "sass:meta";
+@use "sass:string";
+
+// ============================================================================
+// Utility Config Helper Functions
+// ============================================================================
+
+/// Checks if a utility config is in the legacy flat format (just values)
+/// vs the new nested config format (with property, prefix, values keys)
+/// @param {*} $config - The config value from $kendo-utils
+/// @return {Bool} - True if legacy format, false if new nested format
+/// @access public
+@function k-is-legacy-config($config) {
+    // Boolean values (like screen-readers: true) are legacy
+    @if meta.type-of($config) == bool {
+        @return true;
+    }
+
+    // Lists are always legacy (e.g., display: (none, block, flex))
+    @if meta.type-of($config) == list {
+        @return true;
+    }
+
+    // Empty maps are legacy
+    @if meta.type-of($config) == map and list.length(map.keys($config)) == 0 {
+        @return true;
+    }
+
+    // Maps with 'property' key are new format
+    @if meta.type-of($config) == map and map.has-key($config, "property") {
+        @return false;
+    }
+
+    // All other maps are legacy (value maps like display: (none: none, block: block))
+    @return true;
+}
+
+/// Gets and normalizes a utility config from $kendo-utils
+/// Returns a standardized config map with all expected keys
+/// @param {String} $key - The utility key in $kendo-utils
+/// @param {Map} $utils-map - The $kendo-utils map to read from
+/// @return {Map|Null} - Normalized config map or null if not found
+/// @access public
+@function k-get-util-config($key, $utils-map) {
+    @if not map.has-key($utils-map, $key) {
+        @warn "Utility config '#{$key}' not found in $kendo-utils.";
+        @return null;
+    }
+
+    $config: map.get($utils-map, $key);
+
+    // If legacy format, return as-is (caller handles it)
+    @if k-is-legacy-config($config) {
+        @return (
+            "legacy": true,
+            "values": $config
+        );
+    }
+
+    // Normalize new format config with defaults
+    $normalized: (
+        "legacy": false,
+        "property": map.get($config, "property"),
+        "prefix": if(map.has-key($config, "prefix"), map.get($config, "prefix"), null),
+        "values": if(map.has-key($config, "values"), map.get($config, "values"), ()),
+        "responsive": if(map.has-key($config, "responsive"), map.get($config, "responsive"), false),
+        "responsive-prefixes": if(map.has-key($config, "responsive-prefixes"), map.get($config, "responsive-prefixes"), null),
+        "group": if(map.has-key($config, "group"), map.get($config, "group"), null),
+        "description": if(map.has-key($config, "description"), map.get($config, "description"), null),
+        "css-var": if(map.has-key($config, "css-var"), map.get($config, "css-var"), null),
+        "aliases": if(map.has-key($config, "aliases"), map.get($config, "aliases"), ()),
+        "function": if(map.has-key($config, "function"), map.get($config, "function"), null)
+    );
+
+    @return $normalized;
+}
+
+/// Validates a utility config and emits warnings/debug info
+/// @param {Map} $config - The config to validate
+/// @param {String} $key - The utility key (for error messages)
+/// @return {Bool} - True if valid, false otherwise
+/// @access public
+@function k-validate-util-config($config, $key) {
+    @if not $config {
+        @return false;
+    }
+
+    // Legacy configs are always valid (handled by existing generate-utils)
+    @if map.get($config, "legacy") == true {
+        @return true;
+    }
+
+    // Required: property
+    @if not map.has-key($config, "property") or not map.get($config, "property") {
+        @warn "Utility '#{$key}' is missing required 'property' key.";
+        @return false;
+    }
+
+    // Debug optional missing keys (only in debug mode)
+    // @if map.get($config, "description") == null {
+    //     @debug "Utility '#{$key}' is missing optional 'description' key.";
+    // }
+
+    @return true;
+}
+
+/// Extracts the class prefix from config, with fallback to key name
+/// @param {Map} $config - The normalized config
+/// @param {String} $key - The utility key as fallback
+/// @return {String} - The prefix to use for class names
+/// @access public
+@function k-get-util-prefix($config, $key) {
+    $prefix: map.get($config, "prefix");
+    @if $prefix {
+        @return $prefix;
+    }
+    // Fallback to key name
+    @return $key;
+}
+
+// ============================================================================
+// Transform Functions
+// ============================================================================
+
 // stylelint-disable scss/at-function-pattern
 @function k-translate( $val ) {
     @return translate( $val );

@@ -22,7 +22,6 @@
 /// @group aspect-ratio
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
 
 // Register
@@ -31,13 +30,7 @@
 @mixin kendo-utils--layout--aspect-ratio() {
     @include import-once("utils-layout-aspect-ratio") {
 
-        // Aspect ratio utility classes
-        $kendo-utils-aspect-ratio: map.get( $kendo-utils, "aspect-ratio" ) !default;
-        @include generate-utils( ratio, aspect-ratio, $kendo-utils-aspect-ratio );
-
-
-        // Legacy aliases
-        @include generate-utils( aspect-ratio, aspect-ratio, $kendo-utils-aspect-ratio );
+        @include generate-utils-from-config("aspect-ratio");
 
     }
 }

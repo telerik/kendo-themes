@@ -22,18 +22,10 @@
 /// @group cursor
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--interactivity--cursor() {
     @include import-once("utils-interactivity-cursor") {
-
-        // Cursor utility classes
-        $kendo-utils-cursor: map.get( $kendo-utils, "cursor" ) !default;
-        @include generate-utils( cursor, cursor, $kendo-utils-cursor );
-
+        @include generate-utils-from-config("cursor");
     }
 }

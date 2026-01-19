@@ -15,9 +15,6 @@
 @use "sass:map";
 @use "../_globals.scss" as *;
 
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
-
 @mixin kendo-utils--transform--flip() {
     @include import-once("utils-transform-flip") {
 

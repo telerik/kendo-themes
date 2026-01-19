@@ -88,38 +88,19 @@
 /// @group placement
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--layout--placement() {
     @include import-once("utils-layout-placement") {
 
-        // Top / right / bottom / left
-        $kendo-utils-placement: map.get( $kendo-utils, "placement" ) !default;
-        @include generate-utils( top, top, $kendo-utils-placement );
-        @include generate-utils( right, right, $kendo-utils-placement );
-        @include generate-utils( bottom, bottom, $kendo-utils-placement );
-        @include generate-utils( left, left, $kendo-utils-placement );
-
+        @include generate-utils-from-config("placement");
+        @include generate-utils-from-config("inset");
 
         // placement length utility classes
         @each $side in (top, right, bottom, left) {
             .#{$kendo-prefix}#{$side},
             .#{$kendo-prefix}pos-#{$side} { #{$side}: 0; }
         }
-
-        // Inset utility classes
-        $kendo-utils-inset: map.get( $kendo-utils, "inset" ) !default;
-        @include generate-utils( inset, inset, $kendo-utils-inset );
-        @include generate-utils( inset-x, inset-inline, $kendo-utils-inset );
-        @include generate-utils( inset-y, inset-block, $kendo-utils-inset );
-        @include generate-utils( top-left, ( top, left ), $kendo-utils-inset );
-        @include generate-utils( top-right, ( top, right ), $kendo-utils-inset );
-        @include generate-utils( bottom-left, ( bottom, left ), $kendo-utils-inset );
-        @include generate-utils( bottom-right, ( bottom, right ), $kendo-utils-inset );
 
     }
 }

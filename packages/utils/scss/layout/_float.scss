@@ -16,18 +16,10 @@
 /// @group float
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--layout--float() {
     @include import-once("utils-layout-float") {
-
-        // Float utility classes
-        $kendo-utils-float: map.get( $kendo-utils, "float" ) !default;
-        @include generate-utils( float, float, $kendo-utils-float );
-
+        @include generate-utils-from-config("float");
     }
 }

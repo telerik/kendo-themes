@@ -22,19 +22,10 @@
 /// @group skew
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--transform--skew() {
     @include import-once("utils-transform-skew") {
-
-        // Transform skew utility classes
-        $kendo-utils-skew: map.get( $kendo-utils, "skew" ) !default;
-        @include generate-utils( skew-x, transform, $kendo-utils-skew, k-skew-x );
-        @include generate-utils( skew-y, transform, $kendo-utils-skew, k-skew-y );
-
+        @include generate-utils-from-config("skew");
     }
 }

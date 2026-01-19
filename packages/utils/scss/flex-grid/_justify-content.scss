@@ -76,23 +76,14 @@
 /// @group justify-content
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--justify-content() {
     @include import-once("utils-flex-grid-justify-content") {
+        @include generate-utils-from-config("justify-content");
 
-        // Justify content utility classes
-        $kendo-utils-justify-content: map.get( $kendo-utils, "justify-content" ) !default;
-        @include generate-utils( justify-content, justify-content, $kendo-utils-justify-content );
-
-
-        // Custom justify-content classes
+        // Custom justify-content-stretch child rule
         .#{$kendo-prefix}justify-content-stretch > * { flex: 1 0 0%; }
-        .\!.#{$kendo-prefix}justify-content-stretch > * { flex: 1 0 0% !important; } // stylelint-disable-line declaration-no-important
-
+        .\!#{$kendo-prefix}justify-content-stretch > * { flex: 1 0 0% !important; } // stylelint-disable-line declaration-no-important
     }
 }

@@ -82,9 +82,6 @@
 /// @group display
 /// @contextType css
 
-// ============================================================================
-// Responsive Display Utilities
-// ============================================================================
 
 /// This is equivalent to `display: none;`.
 /// @example display: none;
@@ -170,34 +167,25 @@
 /// @group display-responsive
 /// @contextType css
 
+// Display Utility Classes
+// Generated from $kendo-utils config - see _variables.scss for configuration
+
 @use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
 @use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--layout--display() {
     @include import-once("utils-layout-display") {
+        @include generate-utils-from-config("display");
 
-        // Display utility classes
-        $kendo-utils-display: map.get( $kendo-utils, "display" ) !default;
-        @include generate-utils( d, display, $kendo-utils-display );
-
-
-        // Legacy aliases
-        @include generate-utils( display, display, $kendo-utils-display );
+        // Legacy compound aliases (cannot be config-driven)
         .#{$kendo-prefix}d-flex-row { @extend .#{$kendo-prefix}d-flex, .#{$kendo-prefix}flex-row !optional; }
         .\!#{$kendo-prefix}d-flex-row { @extend .\!#{$kendo-prefix}d-flex, .\!#{$kendo-prefix}flex-row !optional; }
         .#{$kendo-prefix}d-flex-col { @extend .#{$kendo-prefix}d-flex, .#{$kendo-prefix}flex-col !optional; }
         .\!#{$kendo-prefix}d-flex-col { @extend .\!#{$kendo-prefix}d-flex, .\!#{$kendo-prefix}flex-row !optional; }
-
     }
 }
 
 @mixin kendo-utils--layout--display--responsive($key) {
-
-    // Display responsive utility classes
-    $kendo-utils-display: map.get( $kendo-utils, "display" ) !default;
-    @include generate-utils( d-#{$key}, display, $kendo-utils-display, $important: false );
-
+    @include generate-utils-from-config-responsive("display", $key);
 }

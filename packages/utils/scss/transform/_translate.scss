@@ -55,14 +55,13 @@
 @use "sass:map";
 @use "../_globals.scss" as *;
 
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
+@function k-translate($values...) {
+    @return translate(#{$values});
+}
 
 @mixin kendo-utils--transform--translate() {
     @include import-once("utils-transform-translate") {
-
-        // Translate utility classes
-        $kendo-utils-translate: map.get( $kendo-utils, "translate" ) !default;
+        // XY Translate utility classes
         $kendo-utils-translate-xy: (
             "0": ( 0, 0 ),
             "0-50": ( 0, 50% ),
@@ -73,10 +72,10 @@
             "100-0": ( 100%, 0 ),
             "100-50": ( 100%, 50% ),
             "100-100": ( 100%, 100% )
-        ) !default;
+        );
         @include generate-utils( translate, transform, $kendo-utils-translate-xy, k-translate );
-        @include generate-utils( translate-x, transform, $kendo-utils-translate, k-translate-x );
-        @include generate-utils( translate-y, transform, $kendo-utils-translate, k-translate-y );
 
+        // X/Y Translate utility classes
+        @include generate-utils-from-config("translate");
     }
 }

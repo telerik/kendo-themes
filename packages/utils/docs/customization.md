@@ -7,6 +7,298 @@ position: 9
 
 # Customization
 
+## Functions
+
+
+
+### `k-is-legacy-config`
+
+Checks if a utility config is in the legacy flat format (just values)
+vs the new nested config format (with property, prefix, values keys)
+
+
+#### Syntax
+
+```scss
+k-is-legacy-config($config) // => Bool
+```
+
+#### Parameters
+
+
+`<*> $config`
+: The config value from $kendo-utils
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/utils/scss/_functions.scss#L17-L40
+@function k-is-legacy-config($config) {
+    // Boolean values (like screen-readers: true) are legacy
+    @if meta.type-of($config) == bool {
+        @return true;
+    }
+
+    // Lists are always legacy (e.g., display: (none, block, flex))
+    @if meta.type-of($config) == list {
+        @return true;
+    }
+
+    // Empty maps are legacy
+    @if meta.type-of($config) == map and list.length(map.keys($config)) == 0 {
+        @return true;
+    }
+
+    // Maps with 'property' key are new format
+    @if meta.type-of($config) == map and map.has-key($config, "property") {
+        @return false;
+    }
+
+    // All other maps are legacy (value maps like display: (none: none, block: block))
+    @return true;
+}
+```
+
+### `k-get-util-config`
+
+Gets and normalizes a utility config from $kendo-utils
+Returns a standardized config map with all expected keys
+
+
+#### Syntax
+
+```scss
+k-get-util-config($key, $utils-map) // => Map|Null
+```
+
+#### Parameters
+
+
+`<String> $key`
+: The utility key in $kendo-utils
+
+`<Map> $utils-map`
+: The $kendo-utils map to read from
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/utils/scss/_functions.scss#L48-L80
+@function k-get-util-config($key, $utils-map) {
+    @if not map.has-key($utils-map, $key) {
+        @warn "Utility config '#{$key}' not found in $kendo-utils.";
+        @return null;
+    }
+
+    $config: map.get($utils-map, $key);
+
+    // If legacy format, return as-is (caller handles it)
+    @if k-is-legacy-config($config) {
+        @return (
+            "legacy": true,
+            "values": $config
+        );
+    }
+
+    // Normalize new format config with defaults
+    $normalized: (
+        "legacy": false,
+        "property": map.get($config, "property"),
+        "prefix": if(map.has-key($config, "prefix"), map.get($config, "prefix"), null),
+        "values": if(map.has-key($config, "values"), map.get($config, "values"), ()),
+        "responsive": if(map.has-key($config, "responsive"), map.get($config, "responsive"), false),
+        "responsive-prefixes": if(map.has-key($config, "responsive-prefixes"), map.get($config, "responsive-prefixes"), null),
+        "group": if(map.has-key($config, "group"), map.get($config, "group"), null),
+        "description": if(map.has-key($config, "description"), map.get($config, "description"), null),
+        "css-var": if(map.has-key($config, "css-var"), map.get($config, "css-var"), null),
+        "aliases": if(map.has-key($config, "aliases"), map.get($config, "aliases"), ()),
+        "function": if(map.has-key($config, "function"), map.get($config, "function"), null)
+    );
+
+    @return $normalized;
+}
+```
+
+### `k-validate-util-config`
+
+Validates a utility config and emits warnings/debug info
+
+
+#### Syntax
+
+```scss
+k-validate-util-config($config, $key) // => Bool
+```
+
+#### Parameters
+
+
+`<Map> $config`
+: The config to validate
+
+`<String> $key`
+: The utility key (for error messages)
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/utils/scss/_functions.scss#L87-L109
+@function k-validate-util-config($config, $key) {
+    @if not $config {
+        @return false;
+    }
+
+    // Legacy configs are always valid (handled by existing generate-utils)
+    @if map.get($config, "legacy") == true {
+        @return true;
+    }
+
+    // Required: property
+    @if not map.has-key($config, "property") or not map.get($config, "property") {
+        @warn "Utility '#{$key}' is missing required 'property' key.";
+        @return false;
+    }
+
+    // Debug optional missing keys (only in debug mode)
+    // @if map.get($config, "description") == null {
+    //     @debug "Utility '#{$key}' is missing optional 'description' key.";
+    // }
+
+    @return true;
+}
+```
+
+### `k-get-util-prefix`
+
+Extracts the class prefix from config, with fallback to key name
+
+
+#### Syntax
+
+```scss
+k-get-util-prefix($config, $key) // => String
+```
+
+#### Parameters
+
+
+`<Map> $config`
+: The normalized config
+
+`<String> $key`
+: The utility key as fallback
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/utils/scss/_functions.scss#L116-L123
+@function k-get-util-prefix($config, $key) {
+    $prefix: map.get($config, "prefix");
+    @if $prefix {
+        @return $prefix;
+    }
+    // Fallback to key name
+    @return $key;
+}
+```
+
+### `k-build-selector`
+
+Builds a selector string from prefix and key
+
+
+#### Syntax
+
+```scss
+k-build-selector($prefix, $key) // => String
+```
+
+#### Parameters
+
+
+`<String> $prefix`
+: The class prefix
+
+`<String> $key`
+: The value key (or DEFAULT)
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/utils/scss/_mixins.scss#L19-L30
+@function k-build-selector($prefix, $key) {
+    $_key: k-escape-class-name($key);
+    $_prefix: k-escape-class-name($prefix);
+
+    @if $_key == DEFAULT {
+        @return #{$kendo-prefix}#{$_prefix};
+    } @else if $_prefix == "" or $_prefix == null {
+        @return #{$kendo-prefix}#{$_key};
+    } @else {
+        @return #{$kendo-prefix}#{$_prefix}-#{$_key};
+    }
+}
+```
+
+### `k-get-alias-values`
+
+Extracts values for an alias (handles value subsets)
+
+
+#### Syntax
+
+```scss
+k-get-alias-values($alias-config, $default-values) // => Map
+```
+
+#### Parameters
+
+
+`<Map|Null> $alias-config`
+: Alias configuration
+
+`<Map> $default-values`
+: Default values to use
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/utils/scss/_mixins.scss#L196-L210
+@function k-get-alias-values($alias-config, $default-values) {
+    @if meta.type-of($alias-config) != map {
+        @return $default-values;
+    }
+
+    // Check if config has custom values (not just deprecated flag)
+    @if not map.has-key($alias-config, "deprecated") or list.length(map.keys($alias-config)) > 1 {
+        $custom-values: map.remove($alias-config, "deprecated", "maps-to");
+        @if list.length(map.keys($custom-values)) > 0 {
+            @return $custom-values;
+        }
+    }
+
+    @return $default-values;
+}
+```
+
 
 
 
@@ -1384,6 +1676,82 @@ The following table lists the available variables for customizing the Theme Util
 </tbody>
 </table>
 
+### Responsive
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-breakpoints</td>
+    <td>Map</td>
+    <td><code>(
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+)</code></td>
+    <td><ul><li>xs: 0</li><li>sm: 576px</li><li>md: 768px</li><li>lg: 992px</li><li>xl: 1200px</li><li>xxl: 1400px</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Breakpoints for responsive utilities</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-container-max-widths</td>
+    <td>Map</td>
+    <td><code>(
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
+)</code></td>
+    <td><ul><li>sm: 540px</li><li>md: 720px</li><li>lg: 960px</li><li>xl: 1140px</li><li>xxl: 1320px</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Container max-widths per breakpoint</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fraction-classes</td>
+    <td>Map</td>
+    <td><code>(
+    "91-6": 91.6666%,
+    "83-3": 83.3333%,
+    "66-6": 66.6666%,
+    "58-3": 58.3333%,
+    "41-6": 41.6666%,
+    "33-3": 33.3333%,
+    "16-7": 16.6666%,
+    "14-3": 14.2857%,
+    "12-5": 12.5%,
+    "11-1": 11.1111%,
+    "9-1": 9.0909%,
+    "8-3": 8.3333%
+)</code></td>
+    <td><ul><li>91-6: 91.6666%</li><li>83-3: 83.3333%</li><li>66-6: 66.6666%</li><li>58-3: 58.3333%</li><li>41-6: 41.6666%</li><li>33-3: 33.3333%</li><li>16-7: 16.6666%</li><li>14-3: 14.2857%</li><li>12-5: 12.5%</li><li>11-1: 11.1111%</li><li>9-1: 9.0909%</li><li>8-3: 8.3333%</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Fraction class values for grid column widths (used in responsive-layout)</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Spacing
 
 <table class="theme-variables">
@@ -1847,6 +2215,195 @@ The following table lists the available variables for customizing the Theme Util
 
 
 
+
+## Mixins
+
+
+
+### `generate-utils`
+
+Generates utility classes for a single property
+
+
+#### Syntax
+
+```scss
+@include generate-utils($name, $props, $values, $function, $important, $css-var);
+```
+#### Parameters
+
+
+`<String> $name`
+: The class name prefix
+
+`<String|List> $props`
+: CSS property or list of properties
+
+`<Map|List> $values`
+: Values map or list
+
+`<String> $function`
+: Optional transform function name
+
+`<Bool> $important`
+: Generate !important variants
+
+`<String> $css-var`
+: CSS custom property namespace
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/utils/scss/_mixins.scss#L43-L84
+@mixin generate-utils($name, $props, $values, $function, $important, $css-var) {
+    @if $values {
+        $_props: if(meta.type-of($props) == list, $props, ($props));
+        $_fn: if(meta.function-exists($function), meta.get-function($function), null);
+
+        @each $key, $val in $values {
+            $_key: k-escape-class-name($key);
+            $_val: if(meta.type-of($values) == list, $key, $val);
+            $_selector: k-build-selector($name, $key);
+            $_custom-prop: if($_key == DEFAULT,
+                var(--kendo-#{$css-var}, #{$_val}),
+                var(--kendo-#{$css-var}-#{$_key}, #{$_val})
+            );
+
+            // Generate base class
+            @if $important != only {
+                .#{$_selector} {
+                    @each $prop in $_props {
+                        @if $css-var {
+                            #{$prop}: if($_fn, meta.call($_fn, $_custom-prop), $_custom-prop);
+                        } @else {
+                            #{$prop}: if($_fn, meta.call($_fn, $_val), $_val);
+                        }
+                    }
+                }
+            }
+
+            // Generate !important variant
+            @if $important {
+                .\!#{$_selector} {
+                    @each $prop in $_props {
+                        @if $css-var {
+                            #{$prop}: if($_fn, meta.call($_fn, $_custom-prop), $_custom-prop) !important; // stylelint-disable-line declaration-no-important
+                        } @else {
+                            #{$prop}: if($_fn, meta.call($_fn, $_val), $_val) !important; // stylelint-disable-line declaration-no-important
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+### `generate-utils-from-config`
+
+Generates utility classes from a config key in $kendo-utils
+
+
+#### Syntax
+
+```scss
+@include generate-utils-from-config($key, $utils-map, $important, $responsive-key);
+```
+#### Parameters
+
+
+`<String> $key`
+: The utility key in $kendo-utils
+
+`<Map> $utils-map`
+: The utilities config map
+
+`<Bool> $important`
+: Generate !important variants
+
+`<String> $responsive-key`
+: Breakpoint key for responsive variants
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/utils/scss/_mixins.scss#L222-L256
+@mixin generate-utils-from-config($key, $utils-map, $important, $responsive-key) {
+    $config: k-get-util-config($key, $utils-map);
+
+    @if not k-validate-util-config($config, $key) {
+        @warn "Skipping utility '#{$key}' due to invalid config.";
+    } @else if map.get($config, "legacy") == true {
+        @warn "Utility '#{$key}' uses legacy config format. Please migrate to new nested format.";
+    } @else {
+        // Extract config values
+        $property: map.get($config, "property");
+        $prefix: k-get-util-prefix($config, $key);
+        $values: map.get($config, "values");
+        $css-var: map.get($config, "css-var");
+        $function: map.get($config, "function");
+        $aliases: map.get($config, "aliases");
+        $responsive-prefixes: map.get($config, "responsive-prefixes");
+
+        // Adjust prefix for responsive variants
+        @if $responsive-key {
+            $prefix: #{$prefix}-#{$responsive-key};
+        }
+
+        // Generate utility classes
+        @if meta.type-of($property) == map {
+            @include _generate-multi-property($property, $values, $function, $important, $css-var, $responsive-key, $responsive-prefixes);
+        } @else {
+            @include _generate-single-property($prefix, $property, $values, $function, $important, $css-var);
+        }
+
+        // Generate aliases (only for non-responsive, as aliases don't need responsive variants)
+        @if not $responsive-key {
+            @include _process-aliases($aliases, $property, $prefix, $values, $important, $css-var);
+        }
+    }
+}
+```
+
+### `generate-utils-from-config-responsive`
+
+Generates responsive variants for a utility from config
+
+
+#### Syntax
+
+```scss
+@include generate-utils-from-config-responsive($key, $breakpoint-key, $utils-map);
+```
+#### Parameters
+
+
+`<String> $key`
+: The utility key in $kendo-utils
+
+`<String> $breakpoint-key`
+: The breakpoint key (xs, sm, md, lg, xl, xxl)
+
+`<Map> $utils-map`
+: The utilities config map
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/utils/scss/_mixins.scss#L263-L271
+@mixin generate-utils-from-config-responsive($key, $breakpoint-key, $utils-map) {
+    $config: k-get-util-config($key, $utils-map);
+
+    @if k-validate-util-config($config, $key) {
+        @if map.get($config, "responsive") == true {
+            @include generate-utils-from-config($key, $utils-map, $important: false, $responsive-key: $breakpoint-key);
+        }
+    }
+}
+```
 
 
 
@@ -8435,13 +8992,6 @@ This is equivalent to `margin-block: -0.25rem;`.
 
 
 
-### `.k-my-auto`
-
-This is equivalent to `margin-block: auto;`.
-
-
-
-
 ### `.k-my-{0-30}`
 
 This is equivalent to `margin-block: 0;`.
@@ -8522,6 +9072,13 @@ This is equivalent to `margin-block: 0.125rem;`.
 ### `.k-my-hair`
 
 This is equivalent to `margin-block: 1px;`.
+
+
+
+
+### `.k-my-auto`
+
+This is equivalent to `margin-block: auto;`.
 
 
 
@@ -10360,17 +10917,17 @@ This is equivalent to `resize: horizontal;`.
 
 
 
+### `.k-not-sr-only`
+
+Reverses the effect of .k-sr-only, making the element visible again.
+
+
+
+
 ### `.k-sr-only`
 
 Visually hides an element while keeping it accessible to screen readers.
 This class should be assigned to elements which should be visually hidden, but remain accessible for screen readers.
-
-
-
-
-### `.k-not-sr-only`
-
-Reverses the effect of .k-sr-only, making the element visible again.
 
 
 
@@ -11857,55 +12414,6 @@ This is equivalent to `will-change: scroll-position;`.
 ### `.k-will-change-contents`
 
 This is equivalent to `will-change: contents;`.
-
-
-
-
-### `.k-z-auto`
-
-This is equivalent to `z-index: auto;`.
-
-
-
-
-### `.k-z-0`
-
-This is equivalent to `z-index: 0;`.
-
-
-
-
-### `.k-z-10`
-
-This is equivalent to `z-index: 10;`.
-
-
-
-
-### `.k-z-20`
-
-This is equivalent to `z-index: 20;`.
-
-
-
-
-### `.k-z-30`
-
-This is equivalent to `z-index: 30;`.
-
-
-
-
-### `.k-z-40`
-
-This is equivalent to `z-index: 40;`.
-
-
-
-
-### `.k-z-50`
-
-This is equivalent to `z-index: 50;`.
 
 
 

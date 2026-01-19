@@ -10,18 +10,10 @@
 /// @group pointer-events
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--interactivity--pointer-events() {
     @include import-once("utils-interactivity-pointer-events") {
-
-        // Pointer events utility classes
-        $kendo-utils-pointer-events: map.get( $kendo-utils, "pointer-events" ) !default;
-        @include generate-utils( pointer-events, pointer-events, $kendo-utils-pointer-events );
-
+        @include generate-utils-from-config("pointer-events");
     }
 }

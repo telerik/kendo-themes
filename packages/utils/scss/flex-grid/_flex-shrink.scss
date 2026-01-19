@@ -10,19 +10,10 @@
 /// @group flex-shrink
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--flex-shrink() {
     @include import-once("utils-flex-grid-flex-shrink") {
-
-        // Flex shrink utility classes
-        $kendo-utils-flex-shrink: map.get( $kendo-utils, "flex-shrink" ) !default;
-        @include generate-utils( shrink, flex-shrink, $kendo-utils-flex-shrink );
-        @include generate-utils( flex-shrink, flex-shrink, $kendo-utils-flex-shrink );
-
+        @include generate-utils-from-config("flex-shrink");
     }
 }

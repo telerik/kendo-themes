@@ -34,18 +34,10 @@
 /// @group fill
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--svg--fill() {
     @include import-once("utils-svg-fill") {
-
-        // fill utility classes
-        $kendo-utils-fill: map.get( $kendo-utils, "fill-stroke" ) !default;
-        @include generate-utils( fill, fill, $kendo-utils-fill );
-
+        @include generate-utils-from-config("fill-stroke");
     }
 }

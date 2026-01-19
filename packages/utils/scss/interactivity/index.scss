@@ -1,6 +1,4 @@
-@forward "./_accent-color.scss";
 @forward "./_appearance.scss";
-@forward "./_caret-color.scss";
 @forward "./_cursor.scss";
 @forward "./_pointer-events.scss";
 @forward "./_resize.scss";
@@ -9,9 +7,7 @@
 @forward "./_user-select.scss";
 @forward "./_will-change.scss";
 
-@use "./_accent-color.scss" as *;
 @use "./_appearance.scss" as *;
-@use "./_caret-color.scss" as *;
 @use "./_cursor.scss" as *;
 @use "./_pointer-events.scss" as *;
 @use "./_resize.scss" as *;
@@ -22,9 +18,7 @@
 
 
 @mixin kendo-utils--interactivity() {
-    @include kendo-utils--interactivity--accent-color();
     @include kendo-utils--interactivity--appearance();
-    @include kendo-utils--interactivity--caret-color();
     @include kendo-utils--interactivity--cursor();
     @include kendo-utils--interactivity--pointer-events();
     @include kendo-utils--interactivity--resize();

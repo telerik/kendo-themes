@@ -28,18 +28,10 @@
 /// @group outline-width
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
 
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
-
 @mixin kendo-utils--border--outline-width() {
-    @include import-once("utils-outline-width") {
-
-    // Outline width utility classes
-    $kendo-utils-outline-width: map.get( $kendo-utils, "outline-width" ) !default;
-    @include generate-utils( outline, outline-width, $kendo-utils-outline-width );
-
+    @include import-once("utils-border-outline-width") {
+        @include generate-utils-from-config("outline-width");
     }
 }

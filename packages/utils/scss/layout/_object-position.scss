@@ -52,18 +52,10 @@
 /// @group object-position
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--layout--object-position() {
     @include import-once("utils-layout-object-position") {
-
-        // object-position utility classes
-        $kendo-utils-object-position: map.get( $kendo-utils, "object-position" ) !default;
-        @include generate-utils( object-position, object-position, $kendo-utils-object-position );
-
+        @include generate-utils-from-config("object-position");
     }
 }

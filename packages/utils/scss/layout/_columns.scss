@@ -76,18 +76,10 @@
 /// @group columns
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--layout--columns() {
     @include import-once("utils-layout-columns") {
-
-        // columns utility classes
-        $kendo-utils-columns: map.get( $kendo-utils, "columns" ) !default;
-        @include generate-utils( columns, columns, $kendo-utils-columns );
-
+        @include generate-utils-from-config("columns");
     }
 }

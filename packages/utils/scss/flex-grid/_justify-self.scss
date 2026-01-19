@@ -76,18 +76,10 @@
 /// @group justify-self
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--justify-self() {
     @include import-once("utils-flex-grid-justify-self") {
-
-        // Justify self utility classes
-        $kendo-utils-justify-self: map.get( $kendo-utils, "justify-self" ) !default;
-        @include generate-utils( justify-self, justify-self, $kendo-utils-justify-self );
-
+        @include generate-utils-from-config("justify-self");
     }
 }

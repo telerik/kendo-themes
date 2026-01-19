@@ -10,19 +10,10 @@
 /// @group box-sizing
 /// @contextType css
 
-
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--layout--box-sizing() {
     @include import-once("utils-layout-box-sizing") {
-
-        // box-sizing utility classes
-        $kendo-utils-box-sizing: map.get( $kendo-utils, "box-sizing" ) !default;
-        @include generate-utils( box-sizing, box-sizing, $kendo-utils-box-sizing );
-
+        @include generate-utils-from-config("box-sizing");
     }
 }

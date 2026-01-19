@@ -22,18 +22,10 @@
 /// @group text-decoration
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--typography--text-decoration() {
     @include import-once("utils-typography-text-decoration") {
-
-        // text-decoration utility classes
-        $kendo-utils-text-decoration: map.get( $kendo-utils, "text-decoration" ) !default;
-        @include generate-utils( text, text-decoration, $kendo-utils-text-decoration );
-
+        @include generate-utils-from-config("text-decoration");
     }
 }

@@ -22,9 +22,6 @@
 /// @group flex-direction
 /// @contextType css
 
-// ============================================================================
-// Responsive Flex Direction Utilities
-// ============================================================================
 
 /// This is equivalent to `flex-direction: row; for the specific breakpoint`.
 /// @example flex-direction: row;
@@ -50,31 +47,23 @@
 /// @group flex-direction-responsive
 /// @contextType css
 
+// Flex Direction Utility Classes
+// Generated from $kendo-utils config - see _variables.scss for configuration
+
 @use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
 @use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--flex-direction() {
     @include import-once("utils-flex-grid-flex-direction") {
+        @include generate-utils-from-config("flex-direction");
 
-        // Flex direction utility classes
-        $kendo-utils-flex-direction: map.get( $kendo-utils, "flex-direction" ) !default;
-        @include generate-utils( flex, flex-direction, $kendo-utils-flex-direction );
-
-
-        // Legacy aliases
+        // Legacy aliases using @extend for selector grouping
         .#{$kendo-prefix}flex-column { @extend .#{$kendo-prefix}flex-col !optional; }
         .#{$kendo-prefix}flex-column-reverse { @extend .#{$kendo-prefix}flex-col-reverse !optional; }
-
     }
 }
 
 @mixin kendo-utils--flex-grid--flex-direction--responsive($key) {
-
-    // Flex direction responsive utility classes
-    $kendo-utils-flex-direction: map.get( $kendo-utils, "flex-direction" ) !default;
-    @include generate-utils( flex-#{$key}, flex-direction, $kendo-utils-flex-direction, $important: false );
-
+    @include generate-utils-from-config-responsive("flex-direction", $key);
 }

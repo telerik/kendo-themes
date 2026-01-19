@@ -238,18 +238,10 @@
 /// @group background-color
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
 
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
-
 @mixin kendo-utils--background--background-color() {
-    @include import-once("utils-background-color") {
-
-        // Background color utility classes
-        $kendo-utils-background-color: map.get( $kendo-utils, "background-color" ) !default;
-        @include generate-utils( bg, background-color, $kendo-utils-background-color, $css-var: 'color' );
-
+    @include import-once("utils-background-background-color") {
+        @include generate-utils-from-config("background-color");
     }
 }

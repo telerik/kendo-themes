@@ -82,18 +82,10 @@
 /// @group justify-items
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--justify-items() {
     @include import-once("utils-flex-grid-justify-items") {
-
-        // Justify items utility classes
-        $kendo-utils-justify-items: map.get( $kendo-utils, "justify-items" ) !default;
-        @include generate-utils( justify-items, justify-items, $kendo-utils-justify-items );
-
+        @include generate-utils-from-config("justify-items");
     }
 }

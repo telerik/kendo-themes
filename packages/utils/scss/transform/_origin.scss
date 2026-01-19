@@ -52,18 +52,10 @@
 /// @group transform-origin
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
-
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--transform--origin() {
     @include import-once("utils-transform-origin") {
-
-        // Transform origin utility classes
-        $kendo-utils-origin: map.get( $kendo-utils, "origin" ) !default;
-        @include generate-utils( origin, transform-origin, $kendo-utils-origin );
-
+        @include generate-utils-from-config("origin");
     }
 }

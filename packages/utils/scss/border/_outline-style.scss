@@ -34,18 +34,10 @@
 /// @group outline-style
 /// @contextType css
 
-@use "sass:map";
 @use "../_globals.scss" as *;
 
-// Register
-@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
-
 @mixin kendo-utils--border--outline-style() {
-    @include import-once("utils-outline-style") {
-
-        // Outline style utility classes
-        $kendo-utils-outline-style: map.get( $kendo-utils, "outline-style" ) !default;
-        @include generate-utils( outline, outline-style, $kendo-utils-outline-style );
-
+    @include import-once("utils-border-outline-style") {
+        @include generate-utils-from-config("outline-style");
     }
 }
