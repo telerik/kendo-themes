@@ -67,7 +67,7 @@ $kendo-image-editor-action-pane-padding-y: var( --kendo-image-editor-action-pane
 $kendo-image-editor-action-pane-padding-x: var( --kendo-image-editor-action-pane-padding-x, #{k-spacing(3)} ) !default;
 /// Imageeditor action pane width.
 /// @group image-editor
-$kendo-image-editor-action-pane-width: var( --kendo-image-editor-action-pane-width, if( #{$kendo-image-editor-content-border-width} == 0, 270px, calc( 270px + #{$kendo-image-editor-content-border-width}) ) ) !default;
+$kendo-image-editor-action-pane-width: var( --kendo-image-editor-action-pane-width, if(sass(#{$kendo-image-editor-content-border-width} == 0): 270px; else: calc( 270px + #{$kendo-image-editor-content-border-width})) ) !default;
 
 /// Crop background color of the imageeditor.
 /// @group image-editor

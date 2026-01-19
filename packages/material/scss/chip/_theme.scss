@@ -19,9 +19,9 @@
 
             &:focus,
             &.k-focus {
-                outline-color: if( $name == "base", k-color(base-emphasis), k-color(#{$name}-active));
+                outline-color: if(sass($name == "base"): k-color(base-emphasis); else: k-color(#{$name}-active));
                 box-shadow: inset 0 0 0 calc( #{$kendo-chip-border-width} * 3 ) k-color(app-surface),
-                            inset 0 0 0 calc( #{$kendo-chip-border-width} * 5 ) if( $name == "base", k-color(base-subtle-active), k-color(#{$name}-subtle));
+                            inset 0 0 0 calc( #{$kendo-chip-border-width} * 5 ) if(sass($name == "base"): k-color(base-subtle-active); else: k-color(#{$name}-subtle));
             }
 
             &:active,
@@ -51,12 +51,12 @@
             &:active,
             &.k-active,
             &.k-selected {
-                background-color: if( $name == "base", $kendo-chip-outline-selected-bg, color-mix(in srgb, k-color($name) 12%, transparent));
+                background-color: if(sass($name == "base"): $kendo-chip-outline-selected-bg; else: color-mix(in srgb, k-color($name) 12%, transparent));
             }
 
             &:hover,
             &.k-hover {
-                background-color: if( $name == "base", $kendo-chip-outline-hover-bg, color-mix(in srgb, k-color($name) 8%, transparent));
+                background-color: if(sass($name == "base"): $kendo-chip-outline-hover-bg; else: color-mix(in srgb, k-color($name) 8%, transparent));
             }
 
             &:focus,

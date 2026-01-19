@@ -241,7 +241,7 @@
     .k-chart-overlay {
         margin: 0;
         width: 100%;
-        height: if( --kendo-chart-computed-title-height, calc( 100% - var( --kendo-chart-computed-title-height, #{$kendo-chart-computed-title-height} ) ), 100% );
+        height: if(sass(--kendo-chart-computed-title-height): calc( 100% - var( --kendo-chart-computed-title-height, #{$kendo-chart-computed-title-height} ) ); else: 100%);
         position: absolute;
         inset-block-start: 0;
         inset-inline-start: 0;

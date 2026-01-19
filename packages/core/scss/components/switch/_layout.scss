@@ -45,7 +45,7 @@
     // Switch track
     .k-switch-track {
         border-width: $kendo-switch-track-border-width;
-        border-style: if( $kendo-switch-track-border-width == null, null, solid );
+        border-style: if(sass($kendo-switch-track-border-width == null): null; else: solid);
         outline: 0;
         display: flex;
         flex-flow: row nowrap;
@@ -65,7 +65,7 @@
     }
     .k-switch-thumb {
         border-width: $kendo-switch-thumb-border-width;
-        border-style: if( $kendo-switch-thumb-border-width == null, null, solid );
+        border-style: if(sass($kendo-switch-thumb-border-width == null): null; else: solid);
         display: block;
         position: absolute;
         transform: translate( -50%, -50% );

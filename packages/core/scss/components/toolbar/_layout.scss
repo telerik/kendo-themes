@@ -350,7 +350,7 @@
             flex-flow: column nowrap;
 
             .k-button {
-                margin: if( $kendo-button-border-width == 0, null, 0);
+                margin: if(sass($kendo-button-border-width == 0): null; else: 0);
             }
         }
 

@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-action-pane-width</td>
     <td>Calculation</td>
-    <td><code>if( $kendo-image-editor-content-border-width == null, 280px, calc(280px + #{$kendo-image-editor-content-border-width}) )</code></td>
+    <td><code>if(sass($kendo-image-editor-content-border-width == null): 280px; else: calc(280px + #{$kendo-image-editor-content-border-width}))</code></td>
     <td><code>calc(280px + 1px)</code></td>
 </tr>
 <tr>

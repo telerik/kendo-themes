@@ -300,7 +300,7 @@
             .k-tabstrip-item.k-active,
             .k-item:active,
             .k-item.k-active {
-                margin-block-end: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
+                margin-block-end: if(sass($kendo-tabstrip-border-width): calc( -1 * $kendo-tabstrip-border-width ));
                 border-block-end-width: $kendo-tabstrip-border-width;
                 border-block-end-color: transparent !important; // stylelint-disable-line declaration-no-important
             }
@@ -330,7 +330,7 @@
             .k-tabstrip-item.k-active,
             .k-item:active,
             .k-item.k-active {
-                margin-block-start: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
+                margin-block-start: if(sass($kendo-tabstrip-border-width): calc( -1 * $kendo-tabstrip-border-width ));
                 border-block-start-width: $kendo-tabstrip-border-width;
                 border-block-start-color: transparent !important; // stylelint-disable-line declaration-no-important
             }
@@ -358,7 +358,7 @@
             .k-tabstrip-item.k-active,
             .k-item:active,
             .k-item.k-active {
-                margin-right: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
+                margin-right: if(sass($kendo-tabstrip-border-width): calc( -1 * $kendo-tabstrip-border-width ));
                 border-right-width: $kendo-tabstrip-border-width;
                 border-right-color: transparent !important; // stylelint-disable-line declaration-no-important
             }
@@ -388,7 +388,7 @@
             .k-tabstrip-item.k-active,
             .k-item:active,
             .k-item.k-active {
-                margin-left: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
+                margin-left: if(sass($kendo-tabstrip-border-width): calc( -1 * $kendo-tabstrip-border-width ));
                 border-left-width: $kendo-tabstrip-border-width;
                 border-left-color: transparent !important; // stylelint-disable-line declaration-no-important
             }

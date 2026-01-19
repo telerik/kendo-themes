@@ -14,20 +14,20 @@
     $result: ();
 
     @each $ui-state, $indices in $matrix {
-        $prefix: if( $ui-state == DEFAULT, "", "#{$ui-state}-" );
+        $prefix: if(sass($ui-state == DEFAULT): ""; else: "#{$ui-state}-");
         $indices-count: list.length( $indices );
 
         $bg-prop: list.nth( $indices, 1 );
         $text-prop: list.nth( $indices, 2 );
         $border-prop: list.nth( $indices, 3 );
-        $gradient-prop: if( $indices-count > 3, list.nth( $indices, 4 ), null );
-        $shadow-prop: if( $indices-count > 4, list.nth( $indices, 5 ), null );
-        $outline-prop: if( $indices-count > 5, list.nth( $indices, 6 ), null );
+        $gradient-prop: if(sass($indices-count > 3): list.nth( $indices, 4 ));
+        $shadow-prop: if(sass($indices-count > 4): list.nth( $indices, 5 ));
+        $outline-prop: if(sass($indices-count > 5): list.nth( $indices, 6 ));
 
         // Take value from the palette only if it is a number
-        $bg: if( meta.type-of( $bg-prop ) == number, k-get-theme-color( $src-palette-name, $bg-prop ), $bg-prop );
-        $text: if( meta.type-of( $text-prop ) == number, k-get-theme-color( $src-palette-name, $text-prop ), $text-prop );
-        $border: if( meta.type-of( $border-prop ) == number, k-get-theme-color( $src-palette-name, $border-prop ), $border-prop );
+        $bg: if(sass(meta.type-of( $bg-prop ) == number): k-get-theme-color( $src-palette-name, $bg-prop ); else: $bg-prop);
+        $text: if(sass(meta.type-of( $text-prop ) == number): k-get-theme-color( $src-palette-name, $text-prop ); else: $text-prop);
+        $border: if(sass(meta.type-of( $border-prop ) == number): k-get-theme-color( $src-palette-name, $border-prop ); else: $border-prop);
         $gradient: $gradient-prop;
         $shadow: $shadow-prop;
         $outline: $outline-prop;
@@ -110,14 +110,14 @@
         on-color-disabled: color-mix(in srgb, k-color(on-#{$color}) 46%, transparent)
     );
 
-    @return if( map.has-key( $map, $name ), map.get( $map, $name ), $name );
+    @return if(sass(map.has-key( $map, $name )): map.get( $map, $name ); else: $name);
 };
 
 @function k-generate-theme-variation( $theme-color, $source-palette-name, $mapping ) {
     $temp: ( );
 
     @each $ui-state, $indices in $mapping {
-        $prefix: if( $ui-state == normal, '', '#{$ui-state}-' );
+        $prefix: if(sass($ui-state == normal): ''; else: '#{$ui-state}-');
 
         $bg-prop: list.nth($indices, 1);
         $text-prop: list.nth($indices, 2);
@@ -209,16 +209,16 @@
         // Default
         @if ( $theme == 'default' or $theme == null ) { // stylelint-disable-line
             $_variations: (
-                #{$name}-subtle: if( $name == 'base', k-try-shade( $color, 4% ), k-try-tint( $color, 80% )),
-                #{$name}-subtle-hover: if( $name == 'base', k-try-shade( $color, 8% ), k-try-tint($color, 65% )),
-                #{$name}-subtle-active: if( $name == 'base', k-try-shade( $color, 13% ), k-try-tint( $color, 50% )),
+                #{$name}-subtle: if(sass($name == 'base'): k-try-shade( $color, 4% ); else: k-try-tint( $color, 80% )),
+                #{$name}-subtle-hover: if(sass($name == 'base'): k-try-shade( $color, 8% ); else: k-try-tint($color, 65% )),
+                #{$name}-subtle-active: if(sass($name == 'base'): k-try-shade( $color, 13% ); else: k-try-tint( $color, 50% )),
                 #{$name}: $color,
                 #{$name}-hover: k-try-shade( $color, 0.5 ),
                 #{$name}-active: k-try-shade( $color, 1.5 ),
-                #{$name}-emphasis: if( $name == 'base', k-try-shade( $color, 21% ), k-try-tint( $color, 25% )),
-                #{$name}-on-subtle: if( $name == 'base', k-try-shade( $color, 75% ), k-try-shade( $color, 65% )),
-                on-#{$name}: if( $name == 'base', k-try-shade( $color, 75% ), k-contrast-legacy( $color )),
-                #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 75% ), k-try-shade( $color, 25% )),
+                #{$name}-emphasis: if(sass($name == 'base'): k-try-shade( $color, 21% ); else: k-try-tint( $color, 25% )),
+                #{$name}-on-subtle: if(sass($name == 'base'): k-try-shade( $color, 75% ); else: k-try-shade( $color, 65% )),
+                on-#{$name}: if(sass($name == 'base'): k-try-shade( $color, 75% ); else: k-contrast-legacy( $color )),
+                #{$name}-on-surface: if(sass($name == 'base'): k-try-shade( $color, 75% ); else: k-try-shade( $color, 25% )),
             );
 
             $result: map.merge($result, $_variations);
@@ -227,16 +227,16 @@
         // Bootstrap
         @if ( $theme == 'bootstrap' ) {
             $_variations: (
-                #{$name}-subtle: if( $name == 'base', k-try-tint( $color, 30% ), k-try-tint( $color, 80% )),
-                #{$name}-subtle-hover: if( $name == 'base', $color, k-try-tint($color, 65% )),
-                #{$name}-subtle-active: if( $name == 'base', k-try-shade( $color, 8% ), k-try-tint( $color, 50% )),
+                #{$name}-subtle: if(sass($name == 'base'): k-try-tint( $color, 30% ); else: k-try-tint( $color, 80% )),
+                #{$name}-subtle-hover: if(sass($name == 'base'): $color; else: k-try-tint($color, 65% )),
+                #{$name}-subtle-active: if(sass($name == 'base'): k-try-shade( $color, 8% ); else: k-try-tint( $color, 50% )),
                 #{$name}: $color,
                 #{$name}-hover: k-color-darken( $color, 7.5% ),
                 #{$name}-active: k-color-darken( $color, 10% ),
-                #{$name}-emphasis: if( $name == 'base', k-try-shade( $color, 21% ), k-try-tint( $color, 25% )),
-                #{$name}-on-subtle: if( $name == 'base', k-try-shade( $color, 84% ), k-try-shade( $color, 65% )),
-                on-#{$name}: if( $name == 'base', k-try-shade( $color, 84% ), k-contrast-legacy( $color )),
-                #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 84% ), k-try-shade( $color, 25% )),
+                #{$name}-emphasis: if(sass($name == 'base'): k-try-shade( $color, 21% ); else: k-try-tint( $color, 25% )),
+                #{$name}-on-subtle: if(sass($name == 'base'): k-try-shade( $color, 84% ); else: k-try-shade( $color, 65% )),
+                on-#{$name}: if(sass($name == 'base'): k-try-shade( $color, 84% ); else: k-contrast-legacy( $color )),
+                #{$name}-on-surface: if(sass($name == 'base'): k-try-shade( $color, 84% ); else: k-try-shade( $color, 25% )),
             );
 
             $result: map.merge($result, $_variations);
@@ -245,16 +245,16 @@
         // Material
         @if ( $theme == 'material' ) {
             $_variations: (
-                #{$name}-subtle: if( $name == 'base', k-try-shade( $color, 12% ), k-try-tint( $color, 80% )),
-                #{$name}-subtle-hover: if( $name == 'base', k-try-shade( $color, 16% ), k-try-tint($color, 65% )),
-                #{$name}-subtle-active: if( $name == 'base', k-try-shade( $color, 24% ), k-try-tint( $color, 50% )),
+                #{$name}-subtle: if(sass($name == 'base'): k-try-shade( $color, 12% ); else: k-try-tint( $color, 80% )),
+                #{$name}-subtle-hover: if(sass($name == 'base'): k-try-shade( $color, 16% ); else: k-try-tint($color, 65% )),
+                #{$name}-subtle-active: if(sass($name == 'base'): k-try-shade( $color, 24% ); else: k-try-tint( $color, 50% )),
                 #{$name}: $color,
                 #{$name}-hover: k-try-shade( $color, 0.5 ),
                 #{$name}-active: k-try-shade( $color, 1.5 ),
-                #{$name}-emphasis: if( $name == 'base', k-try-shade( $color, 32% ), k-try-tint( $color, 25% )),
-                #{$name}-on-subtle: if( $name == 'base', k-try-shade( $color, 87% ), k-try-shade( $color, 65% )),
-                on-#{$name}: if( $name == 'base', k-try-shade( $color, 87% ), k-contrast-color( $color )),
-                #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 87% ), k-try-shade( $color, 50% )),
+                #{$name}-emphasis: if(sass($name == 'base'): k-try-shade( $color, 32% ); else: k-try-tint( $color, 25% )),
+                #{$name}-on-subtle: if(sass($name == 'base'): k-try-shade( $color, 87% ); else: k-try-shade( $color, 65% )),
+                on-#{$name}: if(sass($name == 'base'): k-try-shade( $color, 87% ); else: k-contrast-color( $color )),
+                #{$name}-on-surface: if(sass($name == 'base'): k-try-shade( $color, 87% ); else: k-try-shade( $color, 50% )),
             );
 
             $result: map.merge($result, $_variations);
@@ -263,16 +263,16 @@
         // Fluent
         @if ( $theme == 'fluent' ) {
             $_variations: (
-                #{$name}-subtle: if( $name == 'base', k-try-shade( $color, 2% ), k-try-tint( $color, 80% )),
-                #{$name}-subtle-hover: if( $name == 'base', k-try-shade( $color, 8% ), k-try-tint($color, 65% )),
-                #{$name}-subtle-active: if( $name == 'base', k-try-shade( $color, 12% ), k-try-tint( $color, 50% )),
+                #{$name}-subtle: if(sass($name == 'base'): k-try-shade( $color, 2% ); else: k-try-tint( $color, 80% )),
+                #{$name}-subtle-hover: if(sass($name == 'base'): k-try-shade( $color, 8% ); else: k-try-tint($color, 65% )),
+                #{$name}-subtle-active: if(sass($name == 'base'): k-try-shade( $color, 12% ); else: k-try-tint( $color, 50% )),
                 #{$name}: $color,
                 #{$name}-hover: k-try-shade( $color, 0.5 ),
                 #{$name}-active: k-try-shade( $color, 1.5 ),
-                #{$name}-emphasis: if( $name == 'base', k-try-shade( $color, 18% ), k-try-tint( $color, 25% )),
-                #{$name}-on-subtle: if( $name == 'base', k-try-shade( $color, 74% ), k-try-shade( $color, 65% )),
-                on-#{$name}: if( $name == 'base', k-try-shade( $color, 86% ), k-contrast-legacy( $color )),
-                #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 86% ), k-try-shade( $color, 25% )),
+                #{$name}-emphasis: if(sass($name == 'base'): k-try-shade( $color, 18% ); else: k-try-tint( $color, 25% )),
+                #{$name}-on-subtle: if(sass($name == 'base'): k-try-shade( $color, 74% ); else: k-try-shade( $color, 65% )),
+                on-#{$name}: if(sass($name == 'base'): k-try-shade( $color, 86% ); else: k-contrast-legacy( $color )),
+                #{$name}-on-surface: if(sass($name == 'base'): k-try-shade( $color, 86% ); else: k-try-shade( $color, 25% )),
             );
 
             $result: map.merge($result, $_variations);
@@ -281,16 +281,16 @@
         // Classic
         @if ( $theme == 'classic' ) {
             $_variations: (
-                #{$name}-subtle: if( $name == 'base', k-try-tint( $color, 20% ), k-try-tint( $color, 80% )),
-                #{$name}-subtle-hover: if( $name == 'base', k-try-tint( $color, 8% ), k-try-tint($color, 65% )),
-                #{$name}-subtle-active: if( $name == 'base', k-try-shade( $color, 6% ), k-try-tint( $color, 50% )),
+                #{$name}-subtle: if(sass($name == 'base'): k-try-tint( $color, 20% ); else: k-try-tint( $color, 80% )),
+                #{$name}-subtle-hover: if(sass($name == 'base'): k-try-tint( $color, 8% ); else: k-try-tint($color, 65% )),
+                #{$name}-subtle-active: if(sass($name == 'base'): k-try-shade( $color, 6% ); else: k-try-tint( $color, 50% )),
                 #{$name}: $color,
                 #{$name}-hover: k-try-shade( $color, 1 ),
                 #{$name}-active: k-try-shade( $color, 2 ),
-                #{$name}-emphasis: if( $name == 'base', k-try-shade( $color, 14% ), k-try-tint( $color, 25% )),
-                #{$name}-on-subtle: if( $name == 'base', k-try-shade( $color, 84% ), k-try-shade( $color, 65% )),
-                on-#{$name}: if( $name == 'base', k-try-shade( $color, 84% ), k-contrast-legacy( $color )),
-                #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 84% ), k-try-shade( $color, 25% )),
+                #{$name}-emphasis: if(sass($name == 'base'): k-try-shade( $color, 14% ); else: k-try-tint( $color, 25% )),
+                #{$name}-on-subtle: if(sass($name == 'base'): k-try-shade( $color, 84% ); else: k-try-shade( $color, 65% )),
+                on-#{$name}: if(sass($name == 'base'): k-try-shade( $color, 84% ); else: k-contrast-legacy( $color )),
+                #{$name}-on-surface: if(sass($name == 'base'): k-try-shade( $color, 84% ); else: k-try-shade( $color, 25% )),
             );
 
             $result: map.merge($result, $_variations);

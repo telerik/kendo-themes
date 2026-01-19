@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-action-pane-width</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-action-pane-width, if( #{$kendo-image-editor-content-border-width} == 0, 270px, calc( 270px + #{$kendo-image-editor-content-border-width}) ) )</code></td>
+    <td><code>var( --kendo-image-editor-action-pane-width, if(sass(#{$kendo-image-editor-content-border-width} == 0): 270px; else: calc( 270px + #{$kendo-image-editor-content-border-width})) )</code></td>
     <td><code>var(--kendo-image-editor-action-pane-width, calc(270px + 0))</code></td>
 </tr>
 <tr>

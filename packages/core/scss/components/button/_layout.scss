@@ -164,7 +164,7 @@
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         > .k-button + .k-button {
-            margin-inline-start: if( $kendo-button-border-width == 0, null, calc( -1 * $kendo-button-border-width ) );
+            margin-inline-start: if(sass($kendo-button-border-width == 0): null; else: calc( -1 * $kendo-button-border-width ));
         }
 
         > .k-button:hover,

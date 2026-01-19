@@ -60,7 +60,7 @@ $kendo-notification-theme-colors: (
     "error": k-color(error-subtle),
     "dark": k-color(dark-subtle),
     "light": k-color(light-subtle),
-    "inverse": if($kendo-is-dark-theme, k-color(light-subtle), k-color(dark-subtle))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light-subtle); else: k-color(dark-subtle))
 ) !default;
 
 /// The generated theme colors map for the Notification.

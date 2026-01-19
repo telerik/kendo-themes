@@ -359,7 +359,7 @@
 
             .k-draghandle:focus,
             .k-draghandle:active {
-                transform: if( $kendo-slider-draghandle-active-scale, translate(50%, -50%) scale($kendo-slider-draghandle-active-scale), null );
+                transform: if(sass($kendo-slider-draghandle-active-scale): translate(50%, -50%) scale($kendo-slider-draghandle-active-scale));
             }
 
             .k-label {

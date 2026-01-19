@@ -94,7 +94,7 @@ The following table lists the available variables for customization.
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0f6cbd)</li><li>secondary: var(--kendo-color-secondary, #ebebeb)</li><li>tertiary: var(--kendo-color-tertiary, #c239b3)</li><li>info: var(--kendo-color-info, #3a96dd)</li><li>success: var(--kendo-color-success, #107c10)</li><li>warning: var(--kendo-color-warning, #f7630c)</li><li>error: var(--kendo-color-error, #c50f1f)</li><li>dark: var(--kendo-color-dark, #242424)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #242424)</li></ul></td>
 </tr>

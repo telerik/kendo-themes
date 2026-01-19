@@ -100,7 +100,7 @@
     .k-actionsheet-titlebar {
         padding-block: $kendo-actionsheet-titlebar-padding-y;
         padding-inline: $kendo-actionsheet-titlebar-padding-x;
-        border-block-end-width: if( $kendo-actionsheet-titlebar-border-width, $kendo-actionsheet-titlebar-border-width, null );
+        border-block-end-width: if(sass($kendo-actionsheet-titlebar-border-width): $kendo-actionsheet-titlebar-border-width);
         border-block-end-style: solid;
         font-size: $kendo-actionsheet-titlebar-font-size;
         font-family: $kendo-actionsheet-titlebar-font-family;
@@ -201,32 +201,32 @@
     // Action sheet position
     .k-actionsheet-top {
         @include border-bottom-radius( $kendo-actionsheet-border-radius );
-        border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
-        border-block-start-width: if( $kendo-actionsheet-border-width, 0, null );
+        border-width: if(sass($kendo-actionsheet-border-width): $kendo-actionsheet-border-width);
+        border-block-start-width: if(sass($kendo-actionsheet-border-width): 0);
         inset-block-start: 0;
         inset-inline-start: 50%;
         transform: translateX( -50% );
     }
     .k-actionsheet-bottom {
         @include border-top-radius( $kendo-actionsheet-border-radius );
-        border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
-        border-block-end-width: if( $kendo-actionsheet-border-width, 0, null );
+        border-width: if(sass($kendo-actionsheet-border-width): $kendo-actionsheet-border-width);
+        border-block-end-width: if(sass($kendo-actionsheet-border-width): 0);
         inset-block-end: 0;
         inset-inline-start: 50%;
         transform: translateX( -50% );
     }
     .k-actionsheet-left {
         @include border-right-radius( $kendo-actionsheet-border-radius );
-        border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
-        border-inline-start-width: if( $kendo-actionsheet-border-width, 0, null );
+        border-width: if(sass($kendo-actionsheet-border-width): $kendo-actionsheet-border-width);
+        border-inline-start-width: if(sass($kendo-actionsheet-border-width): 0);
         inset-inline-start: 0;
         inset-block-start: 50%;
         transform: translateY( -50% );
     }
     .k-actionsheet-right {
         @include border-left-radius( $kendo-actionsheet-border-radius );
-        border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
-        border-inline-end-width: if( $kendo-actionsheet-border-width, 0, null );
+        border-width: if(sass($kendo-actionsheet-border-width): $kendo-actionsheet-border-width);
+        border-inline-end-width: if(sass($kendo-actionsheet-border-width): 0);
         inset-inline-end: 0;
         inset-block-start: 50%;
         transform: translateY( -50% );

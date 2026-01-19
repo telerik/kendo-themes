@@ -35,7 +35,7 @@ $kendo-avatar-theme-colors: (
     "error": k-color(error),
     "dark": k-color(dark),
     "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+    "inverse": if(sass($kendo-is-dark-theme): k-color(light); else: k-color(dark))
 ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/avatar/_variables.scss" with (
