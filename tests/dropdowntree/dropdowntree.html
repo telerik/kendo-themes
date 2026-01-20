@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: 660px;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <span>DropdownTree</span>
+        <span>DropdownTree RTL</span>
+        <div>
+            <span class="k-dropdowntree k-picker">
+                <span class="k-input-inner"></span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-dropdowntree k-picker">
+                <span class="k-input-inner"></span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div>
+            <span class="k-dropdowntree k-picker">
+                <span class="k-input-inner">placeholder...</span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-dropdowntree k-picker">
+                <span class="k-input-inner">placeholder...</span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div>
+            <span class="k-dropdowntree k-picker">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">normal</span>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-dropdowntree k-picker">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">normal</span>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div>
+            <span class="k-dropdowntree k-picker k-hover">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">hover</span>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-dropdowntree k-picker k-hover">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">hover</span>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div>
+            <span class="k-dropdowntree k-picker k-focus">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">focus</span>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-dropdowntree k-picker k-focus">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">focus</span>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div>
+            <span class="k-dropdowntree k-picker k-valid">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">valid</span>
+                </span>
+                <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-check-circle">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m-32 352L96 256l45-45 83 83 147-147 45 45z"></path>
+                    </svg>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-dropdowntree k-picker k-valid">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">valid</span>
+                </span>
+                <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-check-circle">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m-32 352L96 256l45-45 83 83 147-147 45 45z"></path>
+                    </svg>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div>
+            <span class="k-dropdowntree k-picker k-invalid">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">invalid</span>
+                </span>
+                <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
+                    </svg>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-dropdowntree k-picker k-invalid">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">invalid</span>
+                </span>
+                <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
+                    </svg>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div>
+            <span required="" class="k-dropdowntree k-picker">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">required</span>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span required="" class="k-dropdowntree k-picker">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">required</span>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div>
+            <span class="k-dropdowntree k-picker k-disabled">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">disabled</span>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-dropdowntree k-picker k-disabled">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">disabled</span>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div>
+            <span class="k-dropdowntree k-picker k-loading">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">loading</span>
+                </span>
+                <span class="k-input-loading-icon k-icon k-i-loading"></span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-dropdowntree k-picker k-loading">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">loading</span>
+                </span>
+                <span class="k-input-loading-icon k-icon k-i-loading"></span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div>
+            <span class="k-dropdowntree k-picker k-readonly">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">readonly</span>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-dropdowntree k-picker k-readonly">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">readonly</span>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div>
+            <span class="k-dropdowntree k-picker k-invalid k-focus">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">invalid focus</span>
+                </span>
+                <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
+                    </svg>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-dropdowntree k-picker k-invalid k-focus">
+                <span class="k-input-inner">
+                    <span class="k-input-value-text">invalid focus</span>
+                </span>
+                <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
+                    </svg>
+                </span>
+                <button class="k-input-button k-button k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

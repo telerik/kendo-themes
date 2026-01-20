@@ -10,10 +10,11 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
-    <div id="test-area" class="k-d-grid k-grid-cols-6">
+    <div id="test-area" class="k-d-grid k-grid-cols-7">
         <span>
             <small>state / themeColor</small>
         </span>
+        <span>undefined</span>
         <span>Base</span>
         <span>Success</span>
         <span>Warning</span>
@@ -21,7 +22,23 @@
         <span>Info</span>
         <span>normal</span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-base k-rounded-md">
+            <div class="k-chip k-chip-outline">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">undefined</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-outline k-chip-base">
                 <span class="k-chip-content">
                     <span class="k-chip-label">base</span>
                 </span>
@@ -37,7 +54,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-success k-rounded-md">
+            <div class="k-chip k-chip-outline k-chip-success">
                 <span class="k-chip-content">
                     <span class="k-chip-label">success</span>
                 </span>
@@ -53,7 +70,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-warning k-rounded-md">
+            <div class="k-chip k-chip-outline k-chip-warning">
                 <span class="k-chip-content">
                     <span class="k-chip-label">warning</span>
                 </span>
@@ -69,7 +86,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-error k-rounded-md">
+            <div class="k-chip k-chip-outline k-chip-error">
                 <span class="k-chip-content">
                     <span class="k-chip-label">error</span>
                 </span>
@@ -85,7 +102,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-info k-rounded-md">
+            <div class="k-chip k-chip-outline k-chip-info">
                 <span class="k-chip-content">
                     <span class="k-chip-label">info</span>
                 </span>
@@ -102,7 +119,23 @@
         </span>
         <span>hover</span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-base k-rounded-md k-hover">
+            <div class="k-chip k-chip-outline k-hover">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">undefined</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-outline k-chip-base k-hover">
                 <span class="k-chip-content">
                     <span class="k-chip-label">base</span>
                 </span>
@@ -118,7 +151,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-success k-rounded-md k-hover">
+            <div class="k-chip k-chip-outline k-chip-success k-hover">
                 <span class="k-chip-content">
                     <span class="k-chip-label">success</span>
                 </span>
@@ -134,7 +167,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-warning k-rounded-md k-hover">
+            <div class="k-chip k-chip-outline k-chip-warning k-hover">
                 <span class="k-chip-content">
                     <span class="k-chip-label">warning</span>
                 </span>
@@ -150,7 +183,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-error k-rounded-md k-hover">
+            <div class="k-chip k-chip-outline k-chip-error k-hover">
                 <span class="k-chip-content">
                     <span class="k-chip-label">error</span>
                 </span>
@@ -166,7 +199,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-info k-rounded-md k-hover">
+            <div class="k-chip k-chip-outline k-chip-info k-hover">
                 <span class="k-chip-content">
                     <span class="k-chip-label">info</span>
                 </span>
@@ -183,7 +216,23 @@
         </span>
         <span>focus</span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-base k-rounded-md k-focus">
+            <div class="k-chip k-chip-outline k-focus">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">undefined</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-outline k-chip-base k-focus">
                 <span class="k-chip-content">
                     <span class="k-chip-label">base</span>
                 </span>
@@ -199,7 +248,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-success k-rounded-md k-focus">
+            <div class="k-chip k-chip-outline k-chip-success k-focus">
                 <span class="k-chip-content">
                     <span class="k-chip-label">success</span>
                 </span>
@@ -215,7 +264,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-warning k-rounded-md k-focus">
+            <div class="k-chip k-chip-outline k-chip-warning k-focus">
                 <span class="k-chip-content">
                     <span class="k-chip-label">warning</span>
                 </span>
@@ -231,7 +280,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-error k-rounded-md k-focus">
+            <div class="k-chip k-chip-outline k-chip-error k-focus">
                 <span class="k-chip-content">
                     <span class="k-chip-label">error</span>
                 </span>
@@ -247,7 +296,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-info k-rounded-md k-focus">
+            <div class="k-chip k-chip-outline k-chip-info k-focus">
                 <span class="k-chip-content">
                     <span class="k-chip-label">info</span>
                 </span>
@@ -264,7 +313,23 @@
         </span>
         <span>active</span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-base k-rounded-md k-active">
+            <div class="k-chip k-chip-outline k-active">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">undefined</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-outline k-chip-base k-active">
                 <span class="k-chip-content">
                     <span class="k-chip-label">base</span>
                 </span>
@@ -280,7 +345,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-success k-rounded-md k-active">
+            <div class="k-chip k-chip-outline k-chip-success k-active">
                 <span class="k-chip-content">
                     <span class="k-chip-label">success</span>
                 </span>
@@ -296,7 +361,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-warning k-rounded-md k-active">
+            <div class="k-chip k-chip-outline k-chip-warning k-active">
                 <span class="k-chip-content">
                     <span class="k-chip-label">warning</span>
                 </span>
@@ -312,7 +377,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-error k-rounded-md k-active">
+            <div class="k-chip k-chip-outline k-chip-error k-active">
                 <span class="k-chip-content">
                     <span class="k-chip-label">error</span>
                 </span>
@@ -328,7 +393,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-info k-rounded-md k-active">
+            <div class="k-chip k-chip-outline k-chip-info k-active">
                 <span class="k-chip-content">
                     <span class="k-chip-label">info</span>
                 </span>
@@ -345,7 +410,23 @@
         </span>
         <span>selected</span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-base k-rounded-md k-selected">
+            <div class="k-chip k-chip-outline k-selected">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">undefined</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-outline k-chip-base k-selected">
                 <span class="k-chip-content">
                     <span class="k-chip-label">base</span>
                 </span>
@@ -361,7 +442,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-success k-rounded-md k-selected">
+            <div class="k-chip k-chip-outline k-chip-success k-selected">
                 <span class="k-chip-content">
                     <span class="k-chip-label">success</span>
                 </span>
@@ -377,7 +458,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-warning k-rounded-md k-selected">
+            <div class="k-chip k-chip-outline k-chip-warning k-selected">
                 <span class="k-chip-content">
                     <span class="k-chip-label">warning</span>
                 </span>
@@ -393,7 +474,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-error k-rounded-md k-selected">
+            <div class="k-chip k-chip-outline k-chip-error k-selected">
                 <span class="k-chip-content">
                     <span class="k-chip-label">error</span>
                 </span>
@@ -409,7 +490,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-info k-rounded-md k-selected">
+            <div class="k-chip k-chip-outline k-chip-info k-selected">
                 <span class="k-chip-content">
                     <span class="k-chip-label">info</span>
                 </span>
@@ -426,7 +507,23 @@
         </span>
         <span>disabled</span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-base k-rounded-md k-disabled">
+            <div class="k-chip k-chip-outline k-disabled">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">undefined</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="k-chip k-chip-outline k-chip-base k-disabled">
                 <span class="k-chip-content">
                     <span class="k-chip-label">base</span>
                 </span>
@@ -442,7 +539,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-success k-rounded-md k-disabled">
+            <div class="k-chip k-chip-outline k-chip-success k-disabled">
                 <span class="k-chip-content">
                     <span class="k-chip-label">success</span>
                 </span>
@@ -458,7 +555,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-warning k-rounded-md k-disabled">
+            <div class="k-chip k-chip-outline k-chip-warning k-disabled">
                 <span class="k-chip-content">
                     <span class="k-chip-label">warning</span>
                 </span>
@@ -474,7 +571,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-error k-rounded-md k-disabled">
+            <div class="k-chip k-chip-outline k-chip-error k-disabled">
                 <span class="k-chip-content">
                     <span class="k-chip-label">error</span>
                 </span>
@@ -490,7 +587,7 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-info k-rounded-md k-disabled">
+            <div class="k-chip k-chip-outline k-chip-info k-disabled">
                 <span class="k-chip-content">
                     <span class="k-chip-label">info</span>
                 </span>
@@ -512,15 +609,16 @@
         <span>Icon (rtl)</span>
         <span>Avatar (rtl)</span>
         <span></span>
+        <span></span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-base k-rounded-md">
+            <div class="k-chip k-chip-outline">
                 <span class="k-chip-content">
                     <span class="k-chip-label">Text</span>
                 </span>
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-base k-rounded-md">
+            <div class="k-chip k-chip-outline">
                 <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-map-marker-target">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 0C158.8 0 80 78.8 80 176s176 336 176 336 176-238.8 176-336S353.2 0 256 0m0 288c-61.9 0-112-50.1-112-112S194.1 64 256 64s112 50.1 112 112-50.1 112-112 112m48-112c0 26.5-21.5 48-48 48s-48-21.5-48-48 21.5-48 48-48 48 21.5 48 48"></path>
@@ -532,8 +630,8 @@
             </div>
         </span>
         <span>
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-base k-rounded-md">
-                <div class="k-chip-avatar k-avatar k-avatar-md k-avatar-solid k-avatar-solid-primary k-rounded-full">
+            <div class="k-chip k-chip-outline">
+                <div class="k-chip-avatar k-avatar">
                     <span class="k-avatar-image">
                         <img src="/packages/html/assets/avatar.jpg">
                     </span>
@@ -544,7 +642,7 @@
             </div>
         </span>
         <span dir="rtl">
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-base k-rounded-md">
+            <div class="k-chip k-chip-outline">
                 <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-map-marker-target">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M256 0C158.8 0 80 78.8 80 176s176 336 176 336 176-238.8 176-336S353.2 0 256 0m0 288c-61.9 0-112-50.1-112-112S194.1 64 256 64s112 50.1 112 112-50.1 112-112 112m48-112c0 26.5-21.5 48-48 48s-48-21.5-48-48 21.5-48 48-48 48 21.5 48 48"></path>
@@ -556,8 +654,8 @@
             </div>
         </span>
         <span dir="rtl">
-            <div class="k-chip k-chip-md k-chip-outline k-chip-outline-base k-rounded-md">
-                <div class="k-chip-avatar k-avatar k-avatar-md k-avatar-solid k-avatar-solid-primary k-rounded-full">
+            <div class="k-chip k-chip-outline">
+                <div class="k-chip-avatar k-avatar">
                     <span class="k-avatar-image">
                         <img src="/packages/html/assets/avatar.jpg">
                     </span>
