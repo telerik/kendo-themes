@@ -76,6 +76,14 @@
     }
 
 
+    // Actions
+    .k-tabstrip-actions {
+        > .k-separator {
+            border-color: $kendo-tabstrip-border;
+        }
+    }
+
+
     // Content
     .k-tabstrip-content,
     .k-tabstrip > .k-content {
