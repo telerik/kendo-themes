@@ -1,4 +1,5 @@
 import { Icon } from '../icon';
+import { MenuButton } from '../menu-button';
 import { classNames, FillMode, optionClassNames, Size, ThemeColor } from '../misc';
 import TabStripItems from './tabstrip-items';
 import TabStripItemsWrapper from './tabstrip-items-wrapper';
@@ -25,6 +26,7 @@ export type KendoTabStripProps = KendoTabStripOptions & {
     scrollButtons?: "around" | "start" | "end" | "hidden";
     scrollingPosition?: "start" | "end" | "both";
     dir?: "rtl" | "ltr";
+    overflow?: boolean;
 };
 
 const defaultOptions = {
@@ -47,6 +49,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
         scrollButtons = defaultOptions.scrollButtons,
         dir,
         scrollingPosition,
+        overflow,
         ...other
     } = props;
 
@@ -84,6 +87,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                     [`${TABSTRIP_CLASSNAME}-scrollable`]: scrollable,
                     [`${TABSTRIP_CLASSNAME}-scrollable-overlay`]: (scrollable && (scrollButtons === 'hidden' || !scrollButtons) ),
                     [`${TABSTRIP_CLASSNAME}-scrollable-${scrollingPosition}`]: scrollingPosition  && scrollingPosition !== 'both',
+                    [`${TABSTRIP_CLASSNAME}-overflow`]: overflow,
                 },
                 optionClassNames(TABSTRIP_CLASSNAME, {size})
             )}>
@@ -154,6 +158,18 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                     )}>
                         <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["next"]}`} />
                     </span>
+                }
+                {overflow &&
+                    <div className="k-tabstrip-actions k-hstack">
+                        <MenuButton
+                            className="k-tabstrip-overflow-button"
+                            icon="more-vertical"
+                            fillMode="flat"
+                            rounded="medium"
+                            size={size}
+                            showArrow={false}
+                        />
+                    </div>
                 }
             </TabStripItemsWrapper>
             {position !== "bottom" && children}
