@@ -6,6 +6,8 @@
 @use "./_variables.scss" as *;
 @use "../../z-index/index.scss" as *;
 @use "../../motion/index.scss" as *;
+@use "../../spacing/index.scss" as *;
+@use "../../typography/index.scss" as *;
 
 @mixin kendo-tabstrip--layout-base() {
 
@@ -295,6 +297,34 @@
                     display: none;
                 }
             }
+        }
+    }
+
+
+    // Overflow
+    .k-tabstrip-overflow {
+        > .k-tabstrip-items-wrapper {
+            > .k-tabstrip-items {
+                flex-wrap: nowrap;
+                white-space: nowrap;
+            }
+        }
+
+        .k-tabstrip-overflow-button {
+            flex-shrink: 0;
+        }
+    }
+
+
+    // Actions container
+    .k-tabstrip-actions {
+        flex-shrink: 0;
+        gap: k-spacing(0.5);
+        align-items: center;
+
+        > .k-separator-vertical {
+            height: $kendo-line-height-em;
+            align-self: center;
         }
     }
 
