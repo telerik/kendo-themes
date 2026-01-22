@@ -727,16 +727,6 @@
                     "type": "color",
                     "value": "#424242"
                 },
-                "kendo-chat-file-bg": {
-                    "name": "The background color of the Chat file",
-                    "type": "color",
-                    "value": "transparent"
-                },
-                "kendo-chat-file-border": {
-                    "name": "The border color of the Chat file",
-                    "type": "color",
-                    "value": "#424242"
-                },
                 "kendo-chat-sender-file-bg": {
                     "name": "The background color of the Chat sender file",
                     "type": "color",
@@ -746,6 +736,11 @@
                     "name": "The border color of the Chat sender file",
                     "type": "color",
                     "value": "#fff"
+                },
+                "kendo-chat-failed-bubble-selected-bg": {
+                    "name": "The background color of the Chat failed message selected state",
+                    "type": "color",
+                    "value": "rgba(234, 140, 145, 0.7)"
                 }
             }
         }
