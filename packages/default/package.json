@@ -52,7 +52,7 @@
     "postpublish": "echo 'no postpublish for default theme'"
   },
   "dependencies": {
-    "@progress/kendo-svg-icons": "^4.7.0",
+    "@progress/kendo-svg-icons": "^4.8.0",
     "@progress/kendo-theme-core": "13.0.0-dev.0",
     "@progress/kendo-theme-utils": "13.0.0-dev.0"
   },
