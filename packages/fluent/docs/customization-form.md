@@ -28,6 +28,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-form-default-size</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Form.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-form-spacer</td>
     <td>String</td>
     <td><code>var(--kendo-form-spacer, #{k-spacing(4)})</code></td>
@@ -394,7 +404,7 @@ The following table lists the available variables for customization.
     <td><ul><li>sm: "form-rows-spacing":"var(--kendo-form-sm-rows-spacing, var(--kendo-spacing-3, 0.75rem))"</li><li>md: "form-rows-spacing":"var(--kendo-form-md-rows-spacing, var(--kendo-spacing-3, 0.75rem))"</li><li>lg: "form-rows-spacing":"var(--kendo-form-lg-rows-spacing, var(--kendo-spacing-3, 0.75rem))"</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Form.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Form.</div></div>
     </td>
 </tr>
 </tbody>

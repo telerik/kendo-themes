@@ -1,4 +1,8 @@
-$kendo-overlay-theme-colors: null !default;
+$kendo-overlay-default-theme-color: null !default;
 
 $kendo-overlay-bg: null !default;
 $kendo-overlay-opacity: null !default;
+
+/// The theme colors map of the Overlay.
+/// @group overlay
+$kendo-overlay-theme-colors: ("dark", "light", "inverse") !default;

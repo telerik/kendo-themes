@@ -55,19 +55,9 @@ $kendo-tooltip-shadow: var( --kendo-tooltip-shadow, k-elevation(4) ) !default;
 /// @group tooltip
 $kendo-tooltip-button-text: var( --kendo-tooltip-button-text, #{k-color(subtle)} ) !default;
 
-/// Theme colors map for the tooltip variations.
-$kendo-tooltip-theme-colors: (
-    "primary": k-color(primary),
-    "secondary": k-color(secondary-subtle),
-    "tertiary": k-color(tertiary-subtle),
-    "info": k-color(info-subtle),
-    "success": k-color(success-subtle),
-    "warning": k-color(warning-subtle),
-    "error": k-color(error-subtle),
-    "dark": k-color(dark),
-    "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
-) !default;
+/// The theme colors map for the Tooltip.
+/// @group tooltip
+$kendo-tooltip-theme-colors: ("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse") !default;
 
 /// The generated theme colors map for the Tooltip.
 /// @group tooltip
@@ -88,6 +78,5 @@ $kendo-tooltip-theme: tooltip-theme( $kendo-tooltip-theme-colors ) !default;
     $kendo-tooltip-text: $kendo-tooltip-text,
     $kendo-tooltip-border: $kendo-tooltip-border,
     $kendo-tooltip-shadow: $kendo-tooltip-shadow,
-    $kendo-tooltip-theme-colors: $kendo-tooltip-theme-colors,
     $kendo-tooltip-theme: $kendo-tooltip-theme
 );

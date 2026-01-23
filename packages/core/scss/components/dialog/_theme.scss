@@ -7,6 +7,18 @@
 @mixin kendo-dialog--theme-base() {
     .k-dialog {
         background-color: $kendo-dialog-bg;
+
+        // Dialog theme colors
+        @each $name in $kendo-dialog-theme-colors {
+
+            #{k-when-default($kendo-dialog-default-theme-color, $name)}
+            &.k-dialog-#{$name} {
+                .k-dialog-titlebar {
+                    color: k-color(on-#{$name});
+                    background-color: k-color(#{$name});
+                }
+            }
+        }
     }
 
     // Dialog titlebar
@@ -17,13 +29,4 @@
             $kendo-dialog-titlebar-border
         );
     }
-
-    // Dialog theme colors
-    @each $name, $color in $kendo-dialog-theme-colors {
-        .k-dialog-#{$name} .k-dialog-titlebar {
-            color: k-color(on-#{$name});
-            background-color: $color;
-        }
-    }
-
 }

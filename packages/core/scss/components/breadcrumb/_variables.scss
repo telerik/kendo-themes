@@ -1,5 +1,7 @@
 // Breadcrumb
 
+$kendo-breadcrumb-default-size: null !default;
+
 $kendo-breadcrumb-border-width: null !default;
 
 $kendo-breadcrumb-margin-x: null !default;
@@ -76,4 +78,31 @@ $kendo-breadcrumb-current-item-bg: null !default;
 $kendo-breadcrumb-current-item-text: null !default;
 $kendo-breadcrumb-current-item-border: null !default;
 
-$kendo-breadcrumb-sizes: null !default;
+/// The sizes map of the Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-sizes: (
+    sm: (
+        link-padding-x: $kendo-breadcrumb-sm-link-padding-x,
+        link-padding-y: $kendo-breadcrumb-sm-link-padding-y,
+        icon-link-padding-x: $kendo-breadcrumb-sm-icon-link-padding-x,
+        icon-link-padding-y: $kendo-breadcrumb-sm-icon-link-padding-y,
+        font-size: $kendo-breadcrumb-sm-font-size,
+        line-height: $kendo-breadcrumb-sm-line-height
+    ),
+    md: (
+        link-padding-x: $kendo-breadcrumb-md-link-padding-x,
+        link-padding-y: $kendo-breadcrumb-md-link-padding-y,
+        icon-link-padding-x: $kendo-breadcrumb-md-icon-link-padding-x,
+        icon-link-padding-y: $kendo-breadcrumb-md-icon-link-padding-y,
+        font-size: $kendo-breadcrumb-md-font-size,
+        line-height: $kendo-breadcrumb-md-line-height
+    ),
+    lg: (
+        link-padding-x: $kendo-breadcrumb-lg-link-padding-x,
+        link-padding-y: $kendo-breadcrumb-lg-link-padding-y,
+        icon-link-padding-x: $kendo-breadcrumb-lg-icon-link-padding-x,
+        icon-link-padding-y: $kendo-breadcrumb-lg-icon-link-padding-y,
+        font-size: $kendo-breadcrumb-lg-font-size,
+        line-height: $kendo-breadcrumb-lg-line-height
+    )
+) !default;

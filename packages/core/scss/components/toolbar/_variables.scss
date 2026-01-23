@@ -1,5 +1,8 @@
 // Toolbar
 
+$kendo-toolbar-default-size: null !default;
+$kendo-toolbar-default-fill-mode: null !default;
+
 $kendo-toolbar-sm-padding-x: null !default;
 $kendo-toolbar-md-padding-x: null !default;
 $kendo-toolbar-lg-padding-x: null !default;
@@ -52,4 +55,25 @@ $kendo-toolbar-overflow-container-line-height: null !default;
 $kendo-toolbar-overflow-button-padding-y: null !default;
 $kendo-toolbar-overflow-button-padding-x: null !default;
 
-$kendo-toolbar-sizes: null !default;
+/// The sizes map of the ToolBar.
+/// @group toolbar
+$kendo-toolbar-sizes: (
+    sm: (
+        padding-x: $kendo-toolbar-sm-padding-x,
+        padding-y: $kendo-toolbar-sm-padding-y,
+        spacing: $kendo-toolbar-sm-spacing,
+        separator-height: $kendo-toolbar-sm-separator-height
+    ),
+    md: (
+        padding-x: $kendo-toolbar-md-padding-x,
+        padding-y: $kendo-toolbar-md-padding-y,
+        spacing: $kendo-toolbar-md-spacing,
+        separator-height: $kendo-toolbar-md-separator-height
+    ),
+    lg: (
+        padding-x: $kendo-toolbar-lg-padding-x,
+        padding-y: $kendo-toolbar-lg-padding-y,
+        spacing: $kendo-toolbar-lg-spacing,
+        separator-height: $kendo-toolbar-lg-separator-height
+    )
+) !default;

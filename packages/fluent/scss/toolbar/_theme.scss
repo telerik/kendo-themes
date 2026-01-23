@@ -1,5 +1,6 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/toolbar/_theme.scss" as *;
 
 @mixin kendo-toolbar--theme() {
@@ -10,12 +11,13 @@
         .k-toolbar-item.k-focus {
             outline-color: $kendo-toolbar-item-focus-outline-color;
         }
-    }
 
-    .k-toolbar-flat {
-        > .k-separator,
-        .k-toolbar-separator {
-            border-inline-color: $kendo-toolbar-separator-border;
+        #{k-when-default($kendo-toolbar-default-fill-mode, "flat")}
+        &.k-toolbar-flat {
+            > .k-separator,
+            .k-toolbar-separator {
+                border-inline-color: $kendo-toolbar-separator-border;
+            }
         }
     }
 }

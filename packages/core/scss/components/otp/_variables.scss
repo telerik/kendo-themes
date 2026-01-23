@@ -12,4 +12,22 @@ $kendo-otp-sm-input-width: null !default;
 $kendo-otp-md-input-width: null !default;
 $kendo-otp-lg-input-width: null !default;
 
-$kendo-otp-sizes: null !default;
+/// The sizes map of the OTPInput.
+/// @group otp
+$kendo-otp-sizes: (
+    sm: (
+        gap: $kendo-otp-sm-gap,
+        separator-padding-x: $kendo-otp-sm-separator-padding-x,
+        input-width: $kendo-otp-sm-input-width
+    ),
+    md: (
+        gap: $kendo-otp-md-gap,
+        separator-padding-x: $kendo-otp-md-separator-padding-x,
+        input-width: $kendo-otp-md-input-width
+    ),
+    lg: (
+        gap: $kendo-otp-lg-gap,
+        separator-padding-x: $kendo-otp-lg-separator-padding-x,
+        input-width: $kendo-otp-lg-input-width
+    )
+) !default;

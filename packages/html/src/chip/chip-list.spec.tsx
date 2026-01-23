@@ -7,7 +7,7 @@ export const CHIPLIST_CLASSNAME = `k-chip-list`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ]
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ]
 };
 
 export type KendoChipListOptions = {
@@ -15,7 +15,6 @@ export type KendoChipListOptions = {
 };
 
 const defaultOptions = {
-    size: Size.medium
 };
 
 export const ChipList: KendoComponent<KendoChipListOptions & React.HTMLAttributes<HTMLDivElement>> = (
@@ -23,7 +22,7 @@ export const ChipList: KendoComponent<KendoChipListOptions & React.HTMLAttribute
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         ...other
     } = props;
 

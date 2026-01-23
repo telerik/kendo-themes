@@ -19,11 +19,11 @@ export default () =>(
             { Signature.options.size.map(( size ) =>(
                 <>
                     <div>
-                        <span>{size}</span>
+                        <span>{`${size}`}</span>
                         <SignatureNormal size={size} />
                     </div>
                     <div dir="rtl">
-                        <span>{size}</span>
+                        <span>{`${size}`}</span>
                         <SignatureNormal size={size} />
                     </div>
                 </>

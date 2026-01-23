@@ -8,7 +8,7 @@ const MULTIVIEWCALENDAR_CLASSNAME = `k-calendar-range`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ]
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ]
 };
 
 export type KendoMultiViewCalendarOptions = {
@@ -27,7 +27,6 @@ export type KendoMultiViewCalendarProps = KendoMultiViewCalendarOptions & {
 };
 
 const defaultOptions = {
-    size: Size.medium,
     calendarTitleText: 'October 2021 - November 2021',
     orientation: 'horizontal',
     calendarView: 'month'
@@ -38,7 +37,7 @@ export const MultiViewCalendar: KendoComponent<KendoMultiViewCalendarProps & Rea
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         orientation = defaultOptions.orientation,
         calendarView = defaultOptions.calendarView,
         calendarTitleText = defaultOptions.calendarTitleText,

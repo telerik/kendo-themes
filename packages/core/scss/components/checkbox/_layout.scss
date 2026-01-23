@@ -2,7 +2,9 @@
 @use "../../spacing/index.scss" as *;
 @use "../../z-index/index.scss" as *;
 @use "../../motion/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
 @use "../../_variables.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-checkbox--layout-base() {
@@ -25,8 +27,31 @@
         cursor: pointer;
         -webkit-appearance: none;
         transition: background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid), opacity k-transition(rapid);
-    }
 
+        // Checkbox size
+        @each $size, $size-props in $kendo-checkbox-sizes {
+            $_size: map.get( $size-props, size );
+            $_glyph-size: map.get( $size-props, glyph-size );
+
+            #{k-when-default($kendo-checkbox-default-size, $size)}
+            &.k-checkbox-#{$size} {
+                width: $_size;
+                height: $_size;
+
+                &::before {
+                    font-size: $_glyph-size;
+                }
+            }
+        }
+
+        // Roundness
+        @each $roundness in $kendo-checkbox-roundness {
+            #{k-when-default($kendo-checkbox-default-roundness, $roundness)}
+            &.k-rounded-#{$roundness} {
+                border-radius: k-border-radius($roundness);
+            }
+        }
+    }
 
     // Checkbox indicator
     .k-checkbox::before {
@@ -201,27 +226,17 @@
         }
     }
 
+    .k-ripple-container .k-checkbox {
+        @each $size, $size-props in $kendo-checkbox-sizes {
+            $_ripple-size: map.get( $size-props, ripple-size );
 
-    // Checkbox size
-    @each $size, $size-props in $kendo-checkbox-sizes {
-        $_size: map.get( $size-props, size );
-        $_glyph-size: map.get( $size-props, glyph-size );
-        $_ripple-size: map.get( $size-props, ripple-size );
-
-        .k-checkbox-#{$size} {
-            width: $_size;
-            height: $_size;
-
-            &::before {
-                font-size: $_glyph-size;
-            }
-        }
-        .k-ripple-container {
-            .k-checkbox-#{$size}::after {
-                width: $_ripple-size;
-                height: $_ripple-size;
+            #{k-when-default($kendo-checkbox-default-size, $size)}
+            &.k-checkbox-#{$size} {
+                &::after {
+                    width: $_ripple-size;
+                    height: $_ripple-size;
+                }
             }
         }
     }
-
 }

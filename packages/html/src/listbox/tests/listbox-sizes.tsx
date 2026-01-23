@@ -15,11 +15,11 @@ const styles = `
 export default () =>(
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-3">
+        <div id="test-area" className="k-d-grid k-grid-cols-4">
             {ListBox.options.size.map((size) => (
                 <>
                     <div>
-                        <span>{size}</span>
+                        <span>{`${size}`}</span>
                         <ListBoxNormal size={size} actions={[ 'up', 'down', 'left', 'right' ]} />
                     </div>
                 </>

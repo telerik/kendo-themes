@@ -3,7 +3,7 @@ import { OneTimePasswordGroups, OneTimePasswordGroupsNoSpace, OneTimePasswordInp
 const styles = `
     #test-area {
         max-width: 1240px;
-        grid-template-columns: 80px 320px 320px 1fr;
+        grid-template-columns: 80px 1fr 1fr 1fr;
     }
 `;
 
@@ -20,8 +20,8 @@ export default () => (
 
             {OneTimePasswordInput.options.rounded.map((rounded) => (
                 <>
-                    <span>{rounded}</span>
-                    {OneTimePasswordInput.options.size.map((size) => (
+                    <span>{`${rounded}`}</span>
+                    {OneTimePasswordInput.options.size.filter(size => size !== undefined).map((size) => (
                         <>
                             <div>
                                 <OneTimePasswordGroups size={size} rounded={rounded} value="1" />
@@ -40,8 +40,8 @@ export default () => (
 
             {OneTimePasswordInput.options.rounded.map((rounded) => (
                 <>
-                    <span>{rounded}</span>
-                    {OneTimePasswordInput.options.size.map((size) => (
+                    <span>{`${rounded}`}</span>
+                    {OneTimePasswordInput.options.size.filter(size => size !== undefined).map((size) => (
                         <>
                             <div>
                                 <OneTimePasswordGroupsNoSpace size={size} rounded={rounded} value="1" />

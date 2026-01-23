@@ -5,8 +5,9 @@ export const FONTICON_CLASSNAME = `k-font-icon`;
 const states = [];
 
 const options = {
-    size: [ Size.xsmall, Size.small, Size.medium, Size.large, Size.xlarge, Size.xxlarge, Size.xxxlarge ],
+    size: [ Size.undefined, Size.xsmall, Size.small, Size.medium, Size.large, Size.xlarge, Size.xxlarge, Size.xxxlarge ],
     themeColor: [
+        ThemeColor.undefined,
         ThemeColor.base,
         ThemeColor.primary,
         ThemeColor.secondary,

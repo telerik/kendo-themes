@@ -57,26 +57,6 @@ $kendo-signature-lg-line-size: var( --kendo-signature-lg-line-size, calc( 100% -
 /// @group signature
 $kendo-signature-line-bottom-offset: var( --kendo-signature-line-bottom-offset, 33% ) !default;
 
-/// The sizes map of the signature component.
-/// @group signature
-$kendo-signature-sizes: (
-    sm: (
-        padding-x: $kendo-signature-sm-padding-x,
-        padding-y: $kendo-signature-sm-padding-y,
-        line-size: $kendo-signature-sm-line-size
-    ),
-    md: (
-        padding-x: $kendo-signature-md-padding-x,
-        padding-y: $kendo-signature-md-padding-y,
-        line-size: $kendo-signature-md-line-size
-    ),
-    lg: (
-        padding-x: $kendo-signature-lg-padding-x,
-        padding-y: $kendo-signature-lg-padding-y,
-        line-size: $kendo-signature-lg-line-size
-    )
-) !default;
-
 /// The gap between individual action items of the signature component
 /// @group signature
 $kendo-signature-actions-gap: var( --kendo-signature-actions-gap, k-spacing(1) ) !default;
@@ -108,7 +88,6 @@ $kendo-signature-lg-min-height: var( --kendo-signature-lg-min-height, 110px ) !d
     $kendo-signature-md-line-size: $kendo-signature-md-line-size,
     $kendo-signature-lg-line-size: $kendo-signature-lg-line-size,
     $kendo-signature-line-bottom-offset: $kendo-signature-line-bottom-offset,
-    $kendo-signature-sizes: $kendo-signature-sizes,
     $kendo-signature-actions-gap: $kendo-signature-actions-gap,
     $kendo-signature-maximized-line-width: $kendo-signature-maximized-line-width
 );

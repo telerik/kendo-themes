@@ -188,6 +188,11 @@ $kendo-radio-ripple-bg: k-color(primary) !default;
 /// @group radio
 $kendo-radio-ripple-opacity: .2 !default;
 
+/// The default size of the RadioButton.
+/// @group radio
+/// @role default
+$kendo-radio-default-size: "md" !default;
+
 @forward "@progress/kendo-theme-core/scss/components/radio/_variables.scss" with (
     $kendo-radio-radius: $kendo-radio-radius,
     $kendo-radio-border-width: $kendo-radio-border-width,
@@ -232,5 +237,6 @@ $kendo-radio-ripple-opacity: .2 !default;
     $kendo-radio-list-item-padding-x: $kendo-radio-list-item-padding-x,
     $kendo-radio-list-item-padding-y: $kendo-radio-list-item-padding-y,
     $kendo-radio-ripple-bg: $kendo-radio-ripple-bg,
-    $kendo-radio-ripple-opacity: $kendo-radio-ripple-opacity
+    $kendo-radio-ripple-opacity: $kendo-radio-ripple-opacity,
+    $kendo-radio-default-size: $kendo-radio-default-size
 );

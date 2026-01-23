@@ -9,14 +9,13 @@ const styles = `
 export default () =>(
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-3">
-
-            <span>Native table small</span>
-            <span>Native table medium</span>
-            <span>Native table large</span>
+        <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             { DataTable.options.size.map((size) => (
-                <TableNative size={size} />
+                <section>
+                    <span>Native table {`${size}`}</span>
+                    <TableNative size={size} />
+                </section>
             ))}
         </div>
     </>

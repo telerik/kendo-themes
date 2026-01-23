@@ -1,6 +1,7 @@
 @use "../../color-system/_swatch.scss" as *;
 
 // AppBar
+$kendo-appbar-default-theme-color: null !default;
 
 $kendo-appbar-margin-x: null !default;
 $kendo-appbar-margin-y: null !default;
@@ -23,4 +24,6 @@ $kendo-appbar-dark-text: null !default;
 $kendo-appbar-box-shadow: null !default;
 $kendo-appbar-bottom-box-shadow: null !default;
 
-$kendo-appbar-theme-colors: null !default;
+/// The theme colors map of the AppBar.
+/// @group appbar
+$kendo-appbar-theme-colors: ("inherit", "base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse") !default;

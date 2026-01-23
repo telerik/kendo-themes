@@ -8,7 +8,7 @@ const CALENDAR_CLASSNAME = `k-calendar`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
 };
 
 export type KendoCalendarOptions = {
@@ -28,7 +28,6 @@ export type KendoCalendarProps = KendoCalendarOptions & {
 };
 
 const defaultOptions = {
-    size: Size.medium,
     showCalendarHeader: true,
     orientation: 'horizontal',
     calendarView: 'month',
@@ -40,7 +39,7 @@ export const Calendar: KendoComponent<KendoCalendarProps & React.HTMLAttributes<
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         orientation = defaultOptions.orientation,
         calendarView = defaultOptions.calendarView,
         calendarTitleText = defaultOptions.calendarTitleText,

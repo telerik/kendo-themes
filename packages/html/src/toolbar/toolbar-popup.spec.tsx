@@ -8,8 +8,8 @@ export const TOOLBARPOPUP_CLASSNAME = `k-toolbar-popup`;
 const states = [];
 
 const options = {
-    size: [Size.small, Size.medium, Size.large],
-    fillMode: [FillMode.solid, FillMode.outline, FillMode.flat ]
+    size: [Size.undefined, Size.small, Size.medium, Size.large],
+    fillMode: [FillMode.undefined, FillMode.solid, FillMode.outline, FillMode.flat ]
 };
 
 export type KendoToolbarPopupOptions = {
@@ -22,8 +22,6 @@ export type KendoToolbarPopupProps = KendoToolbarPopupOptions & {
 };
 
 const defaultOptions = {
-    size: Size.medium,
-    fillMode: FillMode.solid
 };
 
 export const ToolbarPopup: KendoComponent<KendoToolbarPopupProps & React.HTMLAttributes<HTMLElement>> = (
@@ -32,8 +30,8 @@ export const ToolbarPopup: KendoComponent<KendoToolbarPopupProps & React.HTMLAtt
 ) => {
 
     const {
-        size=defaultOptions.size,
-        fillMode=defaultOptions.fillMode,
+        size,
+        fillMode,
         section,
         ...other
     } = props;

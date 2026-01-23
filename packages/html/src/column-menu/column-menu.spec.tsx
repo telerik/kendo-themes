@@ -7,7 +7,7 @@ export const COLUMNMENU_CLASSNAME = `k-column-menu`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ]
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ]
 };
 
 export type KendoColumnMenuOptions = {
@@ -19,8 +19,7 @@ export type KendoColumnMenuProps = KendoColumnMenuOptions & {
 };
 
 const defaultOptions = {
-    view: 'list',
-    size: Size.medium
+    view: 'list'
 };
 
 export const ColumnMenu: KendoComponent<KendoColumnMenuProps & React.HTMLAttributes<HTMLDivElement>> = (
@@ -29,7 +28,7 @@ export const ColumnMenu: KendoComponent<KendoColumnMenuProps & React.HTMLAttribu
 ) => {
     const {
         view = defaultOptions.view,
-        size = defaultOptions.size,
+        size,
         ...other
     } = props;
 

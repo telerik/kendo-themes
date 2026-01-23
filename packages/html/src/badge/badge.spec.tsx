@@ -7,10 +7,11 @@ export const BADGE_CLASSNAME = `k-badge`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.outline ],
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
+    rounded: [ Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    fillMode: [ FillMode.undefined, FillMode.solid, FillMode.outline ],
     themeColor: [
+        ThemeColor.undefined,
         ThemeColor.base,
         ThemeColor.primary,
         ThemeColor.secondary,
@@ -39,9 +40,6 @@ export type KendoBadgeProps = KendoBadgeOptions & {
 };
 
 const defaultOptions = {
-    size: Size.medium,
-    fillMode: FillMode.solid,
-    themeColor: ThemeColor.primary,
     cutoutBorder: false,
 };
 
@@ -50,9 +48,9 @@ export const Badge: KendoComponent<KendoBadgeProps & React.HTMLAttributes<HTMLSp
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        fillMode = defaultOptions.fillMode,
-        themeColor = defaultOptions.themeColor,
+        size,
+        fillMode,
+        themeColor,
         cutoutBorder = defaultOptions.cutoutBorder,
         rounded,
         position,

@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "sass:math";
 @use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "../button/_variables.scss" as *;
 @use "../chip/_variables.scss" as *;
 @use "../forms/_variables.scss" as *;
@@ -58,6 +59,20 @@
 
         .k-grid-header .k-cell-inner > .k-link > .k-sort-icon .k-icon {
             display: inline-flex;
+        }
+
+        // Grid Sizes
+        @each $size, $size-props in $kendo-grid-sizes {
+            $_cell-padding-y: map.get( $size-props, cell-padding-y );
+
+            // Resizing wrapper
+            #{k-when-default($kendo-grid-default-size, $size)}
+            &.k-grid-#{$size} {
+                .k-resizer-wrap {
+                    padding-block-start: calc( #{$_cell-padding-y} - #{$kendo-grid-row-resizer-height} );
+                    padding-block-end: $_cell-padding-y;
+                }
+            }
         }
     }
 
@@ -267,17 +282,6 @@
     .k-column-menu-group-header-text {
         border-block-end-style: $kendo-grid-column-menu-group-header-border-style;
         font-weight: $kendo-grid-column-menu-group-header-font-weight;
-    }
-
-    // Grid Sizes
-    @each $size, $size-props in $kendo-grid-sizes {
-        $_cell-padding-y: map.get( $size-props, cell-padding-y );
-
-        // Resizing wrapper
-        .k-grid-#{$size} .k-resizer-wrap {
-            padding-block-start: calc( #{$_cell-padding-y} - #{$kendo-grid-row-resizer-height} );
-            padding-block-end: $_cell-padding-y;
-        }
     }
 
 }

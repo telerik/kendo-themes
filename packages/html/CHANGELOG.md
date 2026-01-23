@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.10...v13.0.0-dev.0) (2026-01-23)
+
+
+### Bug Fixes
+
+* **html:** remove listbox redundant size class ([0ae6956](https://github.com/telerik/kendo-themes/commit/0ae6956a0ae55cca1f801239801f4936369bb5d4))
+* **html:** remove loader container utility text classes ([8fae06a](https://github.com/telerik/kendo-themes/commit/8fae06a9e90838b0795f1c4a1a03cf0be1374e03))
+* **html:** remove redundant signature classes ([06c004a](https://github.com/telerik/kendo-themes/commit/06c004a59f3bf91037dcad8c54b51becf099c0e2))
+
+
+### Features
+
+* **html:** update spec and tests with new default options rendering ([6987a83](https://github.com/telerik/kendo-themes/commit/6987a83f58fc1dc01adf409c2ca7cf275c592056))
+
+
+
+
+
 ## [12.3.1-dev.10](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.9...v12.3.1-dev.10) (2026-01-19)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

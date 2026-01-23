@@ -1,6 +1,7 @@
 
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "../../motion/index.scss" as *;
 @use "sass:map";
 
@@ -36,6 +37,73 @@
         *::before,
         *::after {
             box-sizing: border-box;
+        }
+
+        // Switch sizes
+        @each $size, $size-props in $kendo-list-sizes {
+            $_font-size: map.get( $size-props, font-size );
+            $_line-height: map.get( $size-props, line-height );
+            $_font-size: map.get( $size-props, font-size );
+            $_line-height: map.get( $size-props, line-height );
+            $_header-padding-x: map.get( $size-props, header-padding-x );
+            $_header-padding-y: map.get( $size-props, header-padding-y );
+            $_header-font-size: map.get( $size-props, header-font-size );
+            $_header-line-height: map.get( $size-props, header-line-height );
+            $_item-padding-x: map.get( $size-props, item-padding-x );
+            $_item-padding-y: map.get( $size-props, item-padding-y );
+            $_item-font-size: map.get( $size-props, item-font-size );
+            $_item-line-height: map.get( $size-props, item-line-height );
+            $_group-item-padding-x: map.get( $size-props, group-item-padding-x );
+            $_group-item-padding-y: map.get( $size-props, group-item-padding-y );
+            $_group-item-font-size: map.get( $size-props, group-item-font-size );
+            $_group-item-line-height: map.get( $size-props, group-item-line-height );
+            $_group-label-padding-x: map.get( $size-props, item-group-label-padding-x );
+            $_group-label-padding-y: map.get( $size-props, item-group-label-padding-y );
+            $_group-label-font-size: map.get( $size-props, item-group-label-font-size );
+            $_group-label-line-height: map.get( $size-props, item-group-label-line-height );
+            $_filter-padding-x: map.get( $size-props, filter-padding-x );
+            $_filter-padding-y: map.get( $size-props, filter-padding-y );
+
+            #{k-when-default($kendo-list-default-size, $size)}
+            &.k-list-#{$size} {
+                font-size: $_font-size;
+                line-height: $_line-height;
+
+                // .k-list-header,
+                .k-list-group-sticky-header {
+                    padding-block: $_header-padding-y;
+                    padding-inline: $_header-padding-x;
+                    font-size: $_header-font-size;
+                    line-height: $_header-line-height;
+                }
+
+                .k-list-filter {
+                    padding-inline: $_filter-padding-x;
+                    padding-block: $_filter-padding-y;
+                }
+
+                .k-list-item,
+                .k-list-custom-value {
+                    padding-block: $_item-padding-y;
+                    padding-inline: $_item-padding-x;
+                    font-size: $_item-font-size;
+                    line-height: $_item-line-height;
+                }
+
+                .k-list-group-item {
+                    padding-block: $_group-item-padding-y;
+                    padding-inline: $_group-item-padding-x;
+                    font-size: $_group-item-font-size;
+                    line-height: $_group-item-line-height;
+                }
+
+                .k-list-item-group-label {
+                    padding-block: $_group-label-padding-y;
+                    padding-inline: $_group-label-padding-x;
+                    font-size: $_group-label-font-size;
+                    line-height: $_group-label-line-height;
+                }
+            }
         }
     }
 
@@ -201,70 +269,4 @@
         flex: none;
     }
 
-
-    // Switch sizes
-    @each $size, $size-props in $kendo-list-sizes {
-        $_font-size: map.get( $size-props, font-size );
-        $_line-height: map.get( $size-props, line-height );
-        $_font-size: map.get( $size-props, font-size );
-        $_line-height: map.get( $size-props, line-height );
-        $_header-padding-x: map.get( $size-props, header-padding-x );
-        $_header-padding-y: map.get( $size-props, header-padding-y );
-        $_header-font-size: map.get( $size-props, header-font-size );
-        $_header-line-height: map.get( $size-props, header-line-height );
-        $_item-padding-x: map.get( $size-props, item-padding-x );
-        $_item-padding-y: map.get( $size-props, item-padding-y );
-        $_item-font-size: map.get( $size-props, item-font-size );
-        $_item-line-height: map.get( $size-props, item-line-height );
-        $_group-item-padding-x: map.get( $size-props, group-item-padding-x );
-        $_group-item-padding-y: map.get( $size-props, group-item-padding-y );
-        $_group-item-font-size: map.get( $size-props, group-item-font-size );
-        $_group-item-line-height: map.get( $size-props, group-item-line-height );
-        $_group-label-padding-x: map.get( $size-props, item-group-label-padding-x );
-        $_group-label-padding-y: map.get( $size-props, item-group-label-padding-y );
-        $_group-label-font-size: map.get( $size-props, item-group-label-font-size );
-        $_group-label-line-height: map.get( $size-props, item-group-label-line-height );
-        $_filter-padding-x: map.get( $size-props, filter-padding-x );
-        $_filter-padding-y: map.get( $size-props, filter-padding-y );
-
-        .k-list-#{$size} {
-            font-size: $_font-size;
-            line-height: $_line-height;
-
-            // .k-list-header,
-            .k-list-group-sticky-header {
-                padding-block: $_header-padding-y;
-                padding-inline: $_header-padding-x;
-                font-size: $_header-font-size;
-                line-height: $_header-line-height;
-            }
-
-            .k-list-filter {
-                padding-inline: $_filter-padding-x;
-                padding-block: $_filter-padding-y;
-            }
-
-            .k-list-item,
-            .k-list-custom-value {
-                padding-block: $_item-padding-y;
-                padding-inline: $_item-padding-x;
-                font-size: $_item-font-size;
-                line-height: $_item-line-height;
-            }
-
-            .k-list-group-item {
-                padding-block: $_group-item-padding-y;
-                padding-inline: $_group-item-padding-x;
-                font-size: $_group-item-font-size;
-                line-height: $_group-item-line-height;
-            }
-
-            .k-list-item-group-label {
-                padding-block: $_group-label-padding-y;
-                padding-inline: $_group-label-padding-x;
-                font-size: $_group-label-font-size;
-                line-height: $_group-label-line-height;
-            }
-        }
-    }
 }

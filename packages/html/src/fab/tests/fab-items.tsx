@@ -29,7 +29,7 @@ export default () => (
             <span>Large</span>
 
             <span>Downward - Left Labels</span>
-            {FloatingActionButton.options.size.map((size, index) => (
+            {FloatingActionButton.options.size.filter((size) => size !== undefined).map((size, index) => (
                 <span className="relative-container">
                     <IconFloatingActionButton size={size} position="top-end" style={{ top: "16px", right: "16px" }} />
                     <div className="k-fab-popup k-popup k-popup-transparent" style={{ position: "absolute", top: `calc(16px + ${indexMap[index]}px)`, right: `calc(16px + calc(${indexMap[index]}px / 2) - calc(36px /2))` }}>
@@ -43,7 +43,7 @@ export default () => (
             ))}
 
             <span>Downward - Right Labels</span>
-            {FloatingActionButton.options.size.map((size, index) => (
+            {FloatingActionButton.options.size.filter((size) => size !== undefined).map((size, index) => (
                 <span className="relative-container">
                     <IconFloatingActionButton size={size} position="top-start" style={{ top: "16px", left: "16px" }} />
                     <div className="k-fab-popup k-popup k-popup-transparent" style={{ position: "absolute", top: `calc(16px + ${indexMap[index]}px)`, left: `calc(16px + calc(${indexMap[index]}px / 2) - calc(36px /2))` }}>
@@ -57,7 +57,7 @@ export default () => (
             ))}
 
             <span>Upward - Left Labels</span>
-            {FloatingActionButton.options.size.map((size, index) => (
+            {FloatingActionButton.options.size.filter((size) => size !== undefined).map((size, index) => (
                 <span className="relative-container">
                     <IconFloatingActionButton size={size} position="bottom-end" style={{ bottom: "16px", right: "16px" }} />
                     <div className="k-fab-popup k-popup k-popup-transparent" style={{ position: "absolute", bottom: `calc(16px + ${indexMap[index]}px)`, right: `calc(16px + calc(${indexMap[index]}px / 2) - calc(36px /2))` }}>
@@ -71,7 +71,7 @@ export default () => (
             ))}
 
             <span>Upward - Right Labels</span>
-            {FloatingActionButton.options.size.map((size, index) => (
+            {FloatingActionButton.options.size.filter((size) => size !== undefined).map((size, index) => (
                 <span className="relative-container">
                     <IconFloatingActionButton size={size} position="bottom-start" style={{ bottom: "16px", left: "16px" }} />
                     <div className="k-fab-popup k-popup k-popup-transparent" style={{ position: "absolute", bottom: `calc(16px + ${indexMap[index]}px)`, left: `calc(16px + calc(${indexMap[index]}px / 2) - calc(36px /2))` }}>

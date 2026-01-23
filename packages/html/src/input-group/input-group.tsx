@@ -7,7 +7,7 @@ const states = [
 ];
 
 const options = {
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline, FillMode.clear, FillMode.link ],
+    fillMode: [ FillMode.undefined, FillMode.solid, FillMode.flat, FillMode.outline, FillMode.clear, FillMode.link ],
 };
 
 export type KendoInputGroupOptions = {

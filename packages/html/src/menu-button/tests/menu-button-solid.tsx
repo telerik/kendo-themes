@@ -20,11 +20,11 @@ export default () =>(
             {[ 'normal' , ...MenuButton.states ].map((state) => (
                 <>
                     <span>{state}</span>
-                    <span><TextMenuButton {...{ [state]: true }}>{state}</TextMenuButton></span>
-                    <span><IconTextMenuButton {...{ [state]: true }}>{state}</IconTextMenuButton></span>
-                    <span><IconMenuButton {...{ [state]: true }}>{state}</IconMenuButton></span>
-                    <span><TextMenuButton showArrow={false} {...{ [state]: true }}>{state}</TextMenuButton></span>
-                    <span><IconMenuButton showArrow={false} {...{ [state]: true }}>{state}</IconMenuButton></span>
+                    <span><TextMenuButton fillMode="solid" {...{ [state]: true }}>{state}</TextMenuButton></span>
+                    <span><IconTextMenuButton fillMode="solid" {...{ [state]: true }}>{state}</IconTextMenuButton></span>
+                    <span><IconMenuButton fillMode="solid" {...{ [state]: true }}>{state}</IconMenuButton></span>
+                    <span><TextMenuButton fillMode="solid" showArrow={false} {...{ [state]: true }}>{state}</TextMenuButton></span>
+                    <span><IconMenuButton fillMode="solid" showArrow={false} {...{ [state]: true }}>{state}</IconMenuButton></span>
                 </>
             ))}
         </div>

@@ -1,5 +1,7 @@
 // ColorPalette
 
+$kendo-color-palette-default-size: null !default;
+
 $kendo-color-palette-font-family: null !default;
 $kendo-color-palette-font-size: null !default;
 $kendo-color-palette-line-height: null !default;
@@ -17,4 +19,19 @@ $kendo-color-palette-tile-focus-shadow: null !default;
 $kendo-color-palette-tile-hover-shadow: null !default;
 $kendo-color-palette-tile-selected-shadow: null !default;
 
-$kendo-color-palette-sizes: () !default;
+/// The size map of the ColorPalette.
+/// @group color-palette
+$kendo-color-palette-sizes: (
+    sm: (
+        width: $kendo-color-palette-sm-tile-width,
+        height: $kendo-color-palette-sm-tile-height
+    ),
+    md: (
+        width: $kendo-color-palette-md-tile-width,
+        height: $kendo-color-palette-md-tile-height
+    ),
+    lg: (
+        width: $kendo-color-palette-lg-tile-width,
+        height: $kendo-color-palette-lg-tile-height
+    )
+) !default;

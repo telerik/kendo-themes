@@ -28,6 +28,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-pager-default-size</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Pager.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-pager-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-pager-padding-x, #{k-spacing(2)} )</code></td>
@@ -294,20 +304,23 @@ The following table lists the available variables for customization.
     sm: (
         padding-x: $kendo-pager-sm-padding-x,
         padding-y: $kendo-pager-sm-padding-y,
-        item-group-spacing: $kendo-pager-sm-item-group-spacing
+        item-group-spacing: $kendo-pager-sm-item-group-spacing,
+        item-min-width: $kendo-pager-sm-item-min-width
     ),
     md: (
         padding-x: $kendo-pager-md-padding-x,
         padding-y: $kendo-pager-md-padding-y,
-        item-group-spacing: $kendo-pager-md-item-group-spacing
+        item-group-spacing: $kendo-pager-md-item-group-spacing,
+        item-min-width: $kendo-pager-md-item-min-width
     ),
     lg: (
         padding-x: $kendo-pager-lg-padding-x,
         padding-y: $kendo-pager-lg-padding-y,
-        item-group-spacing: $kendo-pager-lg-item-group-spacing
+        item-group-spacing: $kendo-pager-lg-item-group-spacing,
+        item-min-width: $kendo-pager-lg-item-min-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-pager-sm-padding-x, var(--kendo-spacing-1\\.5, 0.375rem))","padding-y":"var(--kendo-pager-sm-padding-y, var(--kendo-pager-sm-padding-x, var(--kendo-spacing-1\\.5, 0.375rem)))","item-group-spacing":"var(--kendo-pager-sm-item-group-spacing, var(--kendo-spacing-2, 0.5rem))"</li><li>md: "padding-x":"var(--kendo-pager-md-padding-x, var(--kendo-spacing-2, 0.5rem))","padding-y":"var(--kendo-pager-md-padding-y, var(--kendo-pager-md-padding-x, var(--kendo-spacing-2, 0.5rem)))","item-group-spacing":"var(--kendo-pager-md-item-group-spacing, var(--kendo-spacing-2, 0.5rem))"</li><li>lg: "padding-x":"var(--kendo-pager-lg-padding-x, var(--kendo-spacing-2\\.5, 0.625rem))","padding-y":"var(--kendo-pager-lg-padding-y, var(--kendo-pager-lg-padding-x, var(--kendo-spacing-2\\.5, 0.625rem)))","item-group-spacing":"var(--kendo-pager-lg-item-group-spacing, var(--kendo-spacing-2, 0.5rem))"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-pager-sm-padding-x, var(--kendo-spacing-1\\.5, 0.375rem))","padding-y":"var(--kendo-pager-sm-padding-y, var(--kendo-pager-sm-padding-x, var(--kendo-spacing-1\\.5, 0.375rem)))","item-group-spacing":"var(--kendo-pager-sm-item-group-spacing, var(--kendo-spacing-2, 0.5rem))","item-min-width":null</li><li>md: "padding-x":"var(--kendo-pager-md-padding-x, var(--kendo-spacing-2, 0.5rem))","padding-y":"var(--kendo-pager-md-padding-y, var(--kendo-pager-md-padding-x, var(--kendo-spacing-2, 0.5rem)))","item-group-spacing":"var(--kendo-pager-md-item-group-spacing, var(--kendo-spacing-2, 0.5rem))","item-min-width":null</li><li>lg: "padding-x":"var(--kendo-pager-lg-padding-x, var(--kendo-spacing-2\\.5, 0.625rem))","padding-y":"var(--kendo-pager-lg-padding-y, var(--kendo-pager-lg-padding-x, var(--kendo-spacing-2\\.5, 0.625rem)))","item-group-spacing":"var(--kendo-pager-lg-item-group-spacing, var(--kendo-spacing-2, 0.5rem))","item-min-width":null</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Pager.</div></div>

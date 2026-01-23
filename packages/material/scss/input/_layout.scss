@@ -2,6 +2,7 @@
 @use "../core/_index.scss" as *;
 @use "../core/z-index/index.scss" as *;
 @use "../core/motion/index.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/input/_layout.scss" as *;
 
 
@@ -9,35 +10,178 @@
 
     @include kendo-input--layout-base();
 
-    // Fill mode
-    .k-input-solid,
-    .k-picker-solid {
-        @include border-bottom-radius( 0 !important ); // stylelint-disable-line declaration-no-important
-        border-width: $kendo-input-border-width 0;
-        border-block-start-color: transparent !important; // stylelint-disable-line declaration-no-important
+    .k-input {
 
-        .k-input-button,
-        .k-input-spinner .k-spinner-increase,
-        .k-input-spinner .k-spinner-decrease {
-            background: none;
-            border-color: transparent;
+        // Fill mode
+        #{k-when-default($kendo-input-default-fill-mode, "solid")}
+        &.k-input-solid {
+            @include border-bottom-radius( 0 );
+            border-width: $kendo-input-border-width 0;
+
+            // Roundness
+            @each $roundness in $kendo-input-roundness {
+                #{k-when-default($kendo-input-default-roundness, $roundness)}
+                &.k-rounded-#{$roundness} {
+                    @include border-bottom-radius( 0 );
+                    @include border-top-radius( $roundness );
+                }
+            }
+        }
+
+        // Input ripple
+        #{k-when-default($kendo-input-default-fill-mode, ("solid", "flat", "outline"))}
+        &.k-input-solid,
+        &.k-input-flat,
+        &.k-input-outline {
+            $_kendo-input-ripple-border-width: (2 * $kendo-input-border-width);
+
+            &::after {
+                content: "";
+                border-width: 0 0 $_kendo-input-ripple-border-width;
+                border-style: solid;
+                border-color: inherit;
+                border-radius: inherit;
+                display: block;
+                position: absolute;
+                z-index: k-z-index("base", 2);
+                inset: -1px;
+                opacity: 0;
+                transform: scaleX(0);
+                transition: opacity k-transition(slide-in), transform k-transition(slide-in);
+                pointer-events: none;
+            }
+
+            &.k-focus::after {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+            &:focus-within::after {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+        }
+
+        #{k-when-default($kendo-input-default-fill-mode, "outline")}
+        &.k-input-outline {
+            border-width: $kendo-input-border-width;
+            $_kendo-input-ripple-border-width: (2 * $kendo-input-border-width);
+
+            // Roundness
+            @each $roundness in $kendo-input-roundness {
+                #{k-when-default($kendo-input-default-roundness, $roundness)}
+                &.k-rounded-#{$roundness} {
+                    border-radius: k-border-radius($roundness);
+                }
+            }
+
+            @include border-radius( $kendo-input-border-radius );
+
+            &::after {
+                border-width: $_kendo-input-ripple-border-width;
+                transform: none;
+            }
+
+            &.k-focus::after {
+                transform: none;
+            }
+            &:focus-within::after {
+                transform: none;
+            }
         }
     }
 
+    .k-picker {
 
-    .k-input-flat,
-    .k-picker-flat {
+        // Fill mode
+        #{k-when-default($kendo-picker-default-fill-mode, "solid")}
+        &.k-picker-solid {
+            @include border-bottom-radius( 0 );
+            border-width: $kendo-input-border-width 0;
 
-        .k-input-button,
-        .k-input-spinner .k-spinner-increase,
-        .k-input-spinner .k-spinner-decrease {
-            background: none;
-            border-color: transparent;
+            // Roundness
+            @each $roundness in $kendo-picker-roundness {
+                #{k-when-default($kendo-picker-default-roundness, $roundness)}
+                &.k-rounded-#{$roundness} {
+                    @include border-bottom-radius( 0 );
+                    @include border-top-radius( $roundness );
+                }
+            }
+
+            .k-input-button {
+                background: none;
+            }
+        }
+
+        #{k-when-default($kendo-picker-default-fill-mode, "flat")}
+        &.k-picker-flat {
+
+            .k-input-button {
+                background: none;
+            }
+        }
+
+        // Input ripple
+        #{k-when-default($kendo-picker-default-fill-mode, ("solid", "flat", "outline"))}
+        &.k-picker-solid,
+        &.k-picker-flat,
+        &.k-picker-outline {
+            $_kendo-input-ripple-border-width: (2 * $kendo-input-border-width);
+
+            &::after {
+                content: "";
+                border-width: 0 0 $_kendo-input-ripple-border-width;
+                border-style: solid;
+                border-color: inherit;
+                border-radius: inherit;
+                display: block;
+                position: absolute;
+                z-index: k-z-index("base", 2);
+                inset: -1px;
+                opacity: 0;
+                transform: scaleX(0);
+                transition: opacity k-transition(slide-in), transform k-transition(slide-in);
+                pointer-events: none;
+            }
+
+            &.k-focus::after {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+            &:focus-within::after {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+        }
+
+        #{k-when-default($kendo-picker-default-fill-mode, "outline")}
+        &.k-picker-outline {
+            border-width: $kendo-input-border-width;
+            $_kendo-input-ripple-border-width: (2 * $kendo-input-border-width);
+
+             // Roundness
+            @each $roundness in $kendo-picker-roundness {
+                #{k-when-default($kendo-picker-default-roundness, $roundness)}
+                &.k-rounded-#{$roundness} {
+                    border-radius: k-border-radius($roundness);
+                }
+            }
+
+            @include border-radius( $kendo-input-border-radius );
+
+            &::after {
+                border-width: $_kendo-input-ripple-border-width;
+                transform: none;
+            }
+
+            &.k-focus::after {
+                transform: none;
+            }
+            &:focus-within::after {
+                transform: none;
+            }
         }
     }
 
-
-    // Disabled
     .k-input,
     .k-picker {
 
@@ -48,6 +192,8 @@
             &.k-focus {
                 box-shadow: none;
                 outline: none;
+                background-color: inherit;
+                border: none;
             }
         }
 
@@ -56,58 +202,7 @@
         &.k-disabled {
             filter: none;
         }
-    }
 
-
-    // Input ripple
-    .k-input-solid,
-    .k-input-flat,
-    .k-input-outline,
-    .k-picker-solid,
-    .k-picker-flat,
-    .k-picker-outline {
-        $_kendo-input-ripple-border-width: (2 * $kendo-input-border-width);
-
-        &::after {
-            content: "";
-            border-width: 0 0 $_kendo-input-ripple-border-width;
-            border-style: solid;
-            border-color: inherit;
-            border-radius: inherit;
-            display: block;
-            position: absolute;
-            z-index: k-z-index("base", 2);
-            inset: -1px;
-            opacity: 0;
-            transform: scaleX(0);
-            transition: opacity k-transition(slide-in), transform k-transition(slide-in);
-            pointer-events: none;
-        }
-
-        &.k-focus::after {
-            opacity: 1;
-            transform: scaleX(1);
-        }
-        &:focus-within::after {
-            opacity: 1;
-            transform: scaleX(1);
-        }
-    }
-    .k-input-outline,
-    .k-picker-outline {
-        $_kendo-input-ripple-border-width: (2 * $kendo-input-border-width);
-
-        &::after {
-            border-width: $_kendo-input-ripple-border-width;
-            transform: none;
-        }
-
-        &.k-focus::after {
-            transform: none;
-        }
-        &:focus-within::after {
-            transform: none;
-        }
     }
 
 }

@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "./variables.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "../core/z-index/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/switch/_layout.scss" as *;
 
@@ -46,16 +47,19 @@
         &.k-disabled {
             opacity: 1;
         }
-    }
 
-    // Switch sizes
-    @each $size, $size-props in $kendo-switch-sizes {
+        // Switch sizes
+        @each $size, $size-props in $kendo-switch-sizes {
 
-        $_thumb-indicator-size: map.get( $size-props, thumb-indicator-size );
+            $_thumb-indicator-size: map.get( $size-props, thumb-indicator-size );
 
-        .k-switch-#{$size} .k-switch-thumb::before {
-            width: $_thumb-indicator-size;
-            height: $_thumb-indicator-size;
+            #{k-when-default($kendo-switch-default-size, $size)}
+            &.k-switch-#{$size} {
+                .k-switch-thumb::before {
+                    width: $_thumb-indicator-size;
+                    height: $_thumb-indicator-size;
+                }
+            }
         }
     }
 }

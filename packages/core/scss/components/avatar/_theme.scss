@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../../color-system/_functions.scss" as *;
 @use "../../functions/index.scss" as *;
 @use "../../_variables.scss" as *;
@@ -5,23 +6,44 @@
 
 @mixin kendo-avatar--theme-base() {
 
-    // Solid Avatars
-    @each $name, $color in $kendo-avatar-theme-colors {
-        .k-avatar-solid-#{$name} {
-            border-color: $color;
-            color: k-color(on-#{$name});
-            background-color: $color;
+    .k-avatar {
+        // Solid Avatars
+        #{k-when-default($kendo-avatar-default-fill-mode, "solid")}
+        &.k-avatar-solid {
+
+            @each $name in $kendo-avatar-theme-colors {
+                #{k-when-default($kendo-avatar-default-theme-color, $name)}
+                &.k-avatar-#{$name} {
+                    @if ($name == "base") {
+                        border-color: k-color(on-app-surface);
+                        background: none;
+                        color: k-color(on-app-surface);
+                    } @else {
+                        border-color: k-color(#{$name});
+                        color: k-color(on-#{$name});
+                        background-color: k-color(#{$name});
+                    }
+                }
+            }
         }
-    }
 
-    // Outline avatars
-    .k-avatar-outline {
-        border-color: currentColor;
-    }
+        // Outline avatars
+        #{k-when-default($kendo-avatar-default-fill-mode, "outline")}
+        &.k-avatar-outline {
+            border-color: currentColor;
 
-    @each $name, $color in $kendo-avatar-theme-colors {
-        .k-avatar-outline-#{$name} {
-            color: k-color(#{$name}-on-surface);
+            @each $name in $kendo-avatar-theme-colors {
+                #{k-when-default($kendo-avatar-default-theme-color, $name)}
+                &.k-avatar-#{$name} {
+                    background: none;
+
+                    @if ($name == "base") {
+                        color: k-color(on-app-surface);
+                    } @else {
+                        color: k-color(#{$name}-on-surface);
+                    }
+                }
+            }
         }
     }
 

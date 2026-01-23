@@ -4,6 +4,11 @@
 
 // Pager
 
+/// The default size of the Pager.
+/// @group pager
+/// @role default
+$kendo-pager-default-size: "md" !default;
+
 /// The horizontal padding of the small Pager.
 /// @group pager
 $kendo-pager-sm-padding-x: k-spacing(1) !default;
@@ -87,31 +92,8 @@ $kendo-pager-input-width: 5em !default;
 /// @group pager
 $kendo-pager-dropdown-width: 5em !default;
 
-/// The sizes map of the Pager.
-/// @group pager
-$kendo-pager-sizes: (
-    sm: (
-        padding-x: $kendo-pager-sm-padding-x,
-        padding-y: $kendo-pager-sm-padding-y,
-        item-group-spacing: $kendo-pager-sm-item-group-spacing,
-        item-min-width: $kendo-pager-sm-item-min-width,
-    ),
-    md: (
-        padding-x: $kendo-pager-md-padding-x,
-        padding-y: $kendo-pager-md-padding-y,
-        item-group-spacing: $kendo-pager-md-item-group-spacing,
-        item-min-width: $kendo-pager-md-item-min-width,
-    ),
-    lg: (
-        padding-x: $kendo-pager-lg-padding-x,
-        padding-y: $kendo-pager-lg-padding-y,
-        item-group-spacing: $kendo-pager-lg-item-group-spacing,
-        item-min-width: $kendo-pager-lg-item-min-width,
-    )
-) !default;
-
-
 @forward "@progress/kendo-theme-core/scss/components/pager/_variables.scss" with (
+    $kendo-pager-default-size: $kendo-pager-default-size,
     $kendo-pager-sm-padding-x: $kendo-pager-sm-padding-x,
     $kendo-pager-md-padding-x: $kendo-pager-md-padding-x,
     $kendo-pager-lg-padding-x: $kendo-pager-lg-padding-x,
@@ -136,6 +118,5 @@ $kendo-pager-sizes: (
     $kendo-pager-item-border-width: $kendo-pager-item-border-width,
     $kendo-pager-item-spacing: $kendo-pager-item-spacing,
     $kendo-pager-input-width: $kendo-pager-input-width,
-    $kendo-pager-dropdown-width: $kendo-pager-dropdown-width,
-    $kendo-pager-sizes: $kendo-pager-sizes
+    $kendo-pager-dropdown-width: $kendo-pager-dropdown-width
 );

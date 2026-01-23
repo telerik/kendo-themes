@@ -123,7 +123,9 @@ export * from './mediaplayer/index';
 export * from './timeline/index';
 export * from './pdf-viewer/index';
 // export * from './scroller/index';
+export * from './message-box/index';
 export * from './scrollview/index';
+export * from './overlay/index';
 export * from './prompt/index';
 
 // Dataviz

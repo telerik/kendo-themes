@@ -1,11 +1,26 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/checkbox/_layout.scss" as *;
 
 @mixin kendo-checkbox--layout() {
 
     @include kendo-checkbox--layout-base();
+
+    .k-checkbox {
+        // Checkbox size
+        @each $size, $size-props in $kendo-checkbox-sizes {
+            $_indicator-size: map.get( $size-props, indicator-size );
+            $_indeterminate-size: map.get( $size-props, indeterminate-size );
+
+            #{k-when-default($kendo-checkbox-default-size, $size)}
+            &.k-checkbox-#{$size} {
+                --kendo-checkbox-indicator-size: #{$_indicator-size};
+                --kendo-checkbox-indeterminate-size: #{$_indeterminate-size};
+            }
+        }
+    }
 
     .k-checkbox::before {
         @if $kendo-checkbox-indicator-type == "pseudo" {
@@ -135,17 +150,6 @@
         .k-checkbox:focus,
         .k-checkbox.k-focus {
             outline: none !important; // stylelint-disable-line declaration-no-important
-        }
-    }
-
-     // Checkbox size
-    @each $size, $size-props in $kendo-checkbox-sizes {
-        $_indicator-size: map.get( $size-props, indicator-size );
-        $_indeterminate-size: map.get( $size-props, indeterminate-size );
-
-        .k-checkbox-#{$size} {
-            --kendo-checkbox-indicator-size: #{$_indicator-size};
-            --kendo-checkbox-indeterminate-size: #{$_indeterminate-size};
         }
     }
 }

@@ -138,32 +138,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-radio-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: (
-        size: $kendo-radio-sm-size,
-        glyph-size: $kendo-radio-sm-glyph-size,
-        ripple-size: $kendo-radio-sm-ripple-size
-    ),
-    md: (
-        size: $kendo-radio-md-size,
-        glyph-size: $kendo-radio-md-glyph-size,
-        ripple-size: $kendo-radio-md-ripple-size
-    ),
-    lg: (
-        size: $kendo-radio-lg-size,
-        glyph-size: $kendo-radio-lg-glyph-size,
-        ripple-size: $kendo-radio-lg-ripple-size
-    )
-)</code></td>
-    <td><ul><li>sm: "size":"var(--kendo-spacing-3, 0.75rem)","glyph-size":"var(--kendo-spacing-2\\.5, 0.625rem)","ripple-size":"300%"</li><li>md: "size":"var(--kendo-spacing-4, 1rem)","glyph-size":"var(--kendo-spacing-3\\.5, 0.875rem)","ripple-size":"300%"</li><li>lg: "size":"var(--kendo-spacing-5, 1.25rem)","glyph-size":"var(--kendo-spacing-4\\.5, 1.125rem)","ripple-size":"300%"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the different RadioButton sizes.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-radio-bg</td>
     <td>String</td>
     <td><code>$kendo-checkbox-bg</code></td>
@@ -481,6 +455,42 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the RadioButton ripple.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-default-size</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the RadioButton.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        size: $kendo-radio-sm-size,
+        glyph-size: $kendo-radio-sm-glyph-size,
+        ripple-size: $kendo-radio-sm-ripple-size
+    ),
+    md: (
+        size: $kendo-radio-md-size,
+        glyph-size: $kendo-radio-md-glyph-size,
+        ripple-size: $kendo-radio-md-ripple-size
+    ),
+    lg: (
+        size: $kendo-radio-lg-size,
+        glyph-size: $kendo-radio-lg-glyph-size,
+        ripple-size: $kendo-radio-lg-ripple-size
+    )
+)</code></td>
+    <td><ul><li>sm: "size":"var(--kendo-spacing-3, 0.75rem)","glyph-size":"var(--kendo-spacing-2\\.5, 0.625rem)","ripple-size":"300%"</li><li>md: "size":"var(--kendo-spacing-4, 1rem)","glyph-size":"var(--kendo-spacing-3\\.5, 0.875rem)","ripple-size":"300%"</li><li>lg: "size":"var(--kendo-spacing-5, 1.25rem)","glyph-size":"var(--kendo-spacing-4\\.5, 1.125rem)","ripple-size":"300%"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the RadioButton.</div></div>
     </td>
 </tr>
 </tbody>

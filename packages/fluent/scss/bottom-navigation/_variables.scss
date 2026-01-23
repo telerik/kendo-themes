@@ -1,6 +1,15 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
+/// The default theme color of the BottomNavigation.
+/// @group bottom-navigation
+/// @role default
+$kendo-bottom-nav-default-theme-color: "primary" !default;
+/// The default fill mode of the BottomNavigation.
+/// @group bottom-navigation
+/// @role default
+$kendo-bottom-nav-default-fill-mode: "flat" !default;
+
 /// The horizontal padding of the BottomNavigation.
 /// @group bottom-navigation
 $kendo-bottom-nav-padding-x: var( --kendo-bottom-nav-padding-x, k-spacing(1.5) ) !default;
@@ -62,23 +71,9 @@ $kendo-bottom-nav-flat-bg: var( --kendo-bottom-nav-bg, k-color(app-surface) ) !d
 /// @group bottom-navigation
 $kendo-bottom-nav-flat-border: var( --kendo-bottom-nav-border, k-color(border) ) !default;
 
-/// The navigation theme colors of the BottomNavigation.
-/// @group bottom-navigation
-$kendo-bottom-navigation-theme-colors: (
-    "base": k-color(base),
-    "primary": k-color(primary),
-    "secondary": k-color(secondary),
-    "tertiary": k-color(tertiary),
-    "info": k-color(info),
-    "success": k-color(success),
-    "warning": k-color(warning),
-    "error": k-color(error),
-    "dark": k-color(dark),
-    "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
-) !default;
-
 @forward "@progress/kendo-theme-core/scss/components/bottom-navigation/_variables.scss" with (
+    $kendo-bottom-nav-default-theme-color: $kendo-bottom-nav-default-theme-color,
+    $kendo-bottom-nav-default-fill-mode: $kendo-bottom-nav-default-fill-mode,
     $kendo-bottom-nav-padding-x: $kendo-bottom-nav-padding-x,
     $kendo-bottom-nav-padding-y: $kendo-bottom-nav-padding-y,
     $kendo-bottom-nav-gap: $kendo-bottom-nav-gap,
@@ -97,6 +92,5 @@ $kendo-bottom-navigation-theme-colors: (
     $kendo-bottom-nav-shadow: $kendo-bottom-nav-shadow,
     $kendo-bottom-nav-flat-text: $kendo-bottom-nav-flat-text,
     $kendo-bottom-nav-flat-bg: $kendo-bottom-nav-flat-bg,
-    $kendo-bottom-nav-flat-border: $kendo-bottom-nav-flat-border,
-    $kendo-bottom-navigation-theme-colors: $kendo-bottom-navigation-theme-colors
+    $kendo-bottom-nav-flat-border: $kendo-bottom-nav-flat-border
 );

@@ -1,6 +1,11 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
+/// The default size of the Calendar.
+/// @group calendar
+/// @role default
+$kendo-calendar-default-size: "md" !default;
+
 /// The width of the border around the Calendar.
 /// @group calendar
 $kendo-calendar-border-width: var( --kendo-calendar-border-width, 1px ) !default;
@@ -9,10 +14,10 @@ $kendo-calendar-border-width: var( --kendo-calendar-border-width, 1px ) !default
 $kendo-calendar-font-family: var( --kendo-calendar-font-family, var(--kendo-font-family, inherit) ) !default;
 /// The font size of the Calendar.
 /// @group calendar
-$kendo-calendar-font-size: var( --kendo-calendar-font-size, var(--kendo-font-size, inherit) ) !default;
+$kendo-calendar-font-size: null !default;
 /// The line height of the Calendar.
 /// @group calendar
-$kendo-calendar-line-height: var( --kendo-calendar-line-height, var(--kendo-line-height, normal) ) !default;
+$kendo-calendar-line-height: null !default;
 /// The border-radius of the Calendar.
 /// @group calendar
 $kendo-calendar-border-radius: var( --kendo-calendar-border-radius, 0 ) !default;
@@ -359,6 +364,7 @@ $kendo-calendar-sizes: (
 ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/calendar/_variables.scss" with (
+    $kendo-calendar-default-size: $kendo-calendar-default-size,
     $kendo-calendar-border-width: $kendo-calendar-border-width,
     $kendo-calendar-font-family: $kendo-calendar-font-family,
     $kendo-calendar-font-size: $kendo-calendar-font-size,

@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/input/_theme.scss" as *;
 
@@ -49,52 +50,56 @@
                 background: none;
             }
         }
+
+        #{k-when-default($kendo-input-default-fill-mode, "solid")}
+        &.k-input-solid {
+            border-bottom-color: k-color(border);
+
+            &:hover,
+            &.k-hover {
+                border-bottom-color: k-color(border);
+            }
+
+            &:focus,
+            &.k-focus,
+            &:focus-within {
+                border-color: $kendo-input-border;
+                border-bottom-color: $kendo-input-focus-border;
+
+            }
+
+            &.k-invalid,
+            &.ng-invalid.ng-touched,
+            &.ng-invalid.ng-dirty {
+                border-color: $kendo-input-border;
+                border-bottom-color: $kendo-input-invalid-border;
+            }
+        }
+
+
+        #{k-when-default($kendo-input-default-fill-mode, "outline")}
+        &.k-input-outline {
+            &:disabled,
+            &[disabled],
+            &.k-disabled {
+                color: $kendo-input-outline-disabled-text;
+                background: $kendo-input-outline-disabled-bg;
+                border-color: $kendo-input-outline-disabled-border;
+            }
+        }
+
+        #{k-when-default($kendo-input-default-fill-mode, "flat")}
+        &.k-input-flat {
+            &:disabled,
+            &[disabled],
+            &.k-disabled {
+                color: $kendo-input-flat-disabled-text;
+                background: $kendo-input-flat-disabled-bg;
+                border-color: $kendo-input-flat-disabled-border;
+            }
+        }
     }
 
-    .k-input-solid,
-    .k-picker-solid {
-        border-bottom-color: k-color(border);
-
-        &:hover,
-        &.k-hover {
-             border-bottom-color: k-color(border);
-        }
-
-        &:focus,
-        &.k-focus,
-        &:focus-within {
-            border-color: $kendo-input-border;
-            border-bottom-color: $kendo-input-focus-border;
-
-        }
-
-        &.k-invalid,
-        &.ng-invalid.ng-touched,
-        &.ng-invalid.ng-dirty {
-            border-color: $kendo-input-border;
-            border-bottom-color: $kendo-input-invalid-border;
-        }
-    }
-
-    .k-input-outline {
-        &:disabled,
-        &[disabled],
-        &.k-disabled {
-            color: $kendo-input-outline-disabled-text;
-            background: $kendo-input-outline-disabled-bg;
-            border-color: $kendo-input-outline-disabled-border;
-        }
-    }
-
-    .k-input-flat {
-        &:disabled,
-        &[disabled],
-        &.k-disabled {
-            color: $kendo-input-flat-disabled-text;
-            background: $kendo-input-flat-disabled-bg;
-            border-color: $kendo-input-flat-disabled-border;
-        }
-    }
 
     .k-picker {
 
@@ -115,40 +120,70 @@
             }
 
         }
-    }
 
-    .k-picker-solid,
-    .k-picker-flat {
-        // Invalid
-        &.k-invalid,
-        &.ng-invalid.ng-touched,
-        &.ng-invalid.ng-dirty {
-            border-color: $kendo-input-border;
-            border-bottom-color: $kendo-input-invalid-border;
+        #{k-when-default($kendo-picker-default-fill-mode, "solid")}
+        &.k-picker-solid {
+            border-bottom-color: k-color(border);
 
-            &::after {
-                border-color: $kendo-input-invalid-border;
+            &:hover,
+            &.k-hover {
+                border-bottom-color: k-color(border);
+            }
+
+            &:focus,
+            &.k-focus,
+            &:focus-within {
+                border-color: $kendo-input-border;
+                border-bottom-color: $kendo-input-focus-border;
+
+            }
+
+            &.k-invalid,
+            &.ng-invalid.ng-touched,
+            &.ng-invalid.ng-dirty {
+                border-color: $kendo-input-border;
+                border-bottom-color: $kendo-input-invalid-border;
             }
         }
+
+        #{k-when-default($kendo-picker-default-fill-mode, ("solid", "flat"))}
+        &.k-picker-solid,
+        &.k-picker-flat {
+            // Invalid
+            &.k-invalid,
+            &.ng-invalid.ng-touched,
+            &.ng-invalid.ng-dirty {
+                border-color: $kendo-input-border;
+                border-bottom-color: $kendo-input-invalid-border;
+
+                &::after {
+                    border-color: $kendo-input-invalid-border;
+                }
+            }
+        }
+
+        #{k-when-default($kendo-picker-default-fill-mode, "outline")}
+        &.k-picker-outline {
+            &:disabled,
+            &[disabled],
+            &.k-disabled {
+                color: $kendo-picker-outline-disabled-text;
+                background: $kendo-picker-outline-disabled-bg;
+                border-color: $kendo-picker-outline-disabled-border;
+            }
+        }
+
+        #{k-when-default($kendo-picker-default-fill-mode, "flat")}
+        &.k-picker-flat {
+            &:disabled,
+            &[disabled],
+            &.k-disabled {
+                color: $kendo-picker-flat-disabled-text;
+                background: $kendo-picker-flat-disabled-bg;
+                border-color: $kendo-picker-flat-disabled-border;
+            }
+        }
+
     }
 
-    .k-picker-outline {
-        &:disabled,
-        &[disabled],
-        &.k-disabled {
-            color: $kendo-picker-outline-disabled-text;
-            background: $kendo-picker-outline-disabled-bg;
-            border-color: $kendo-picker-outline-disabled-border;
-        }
-    }
-
-    .k-picker-flat {
-        &:disabled,
-        &[disabled],
-        &.k-disabled {
-            color: $kendo-picker-flat-disabled-text;
-            background: $kendo-picker-flat-disabled-bg;
-            border-color: $kendo-picker-flat-disabled-border;
-        }
-    }
 }

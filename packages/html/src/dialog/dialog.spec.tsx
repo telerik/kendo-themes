@@ -5,12 +5,14 @@ import { WindowContent } from '../window/window-content.spec';
 
 import { KendoComponent } from '../_types/component';
 import { DIALOG_FOLDER_NAME, DIALOG_MODULE_NAME } from './constants';
+import { Overlay } from '../overlay';
 export const DIALOG_CLASSNAME = `k-dialog`;
 
 const states = [];
 
 const options = {
     themeColor: [
+        ThemeColor.undefined,
         ThemeColor.primary,
         ThemeColor.light,
         ThemeColor.dark
@@ -51,7 +53,7 @@ export const Dialog: KendoComponent<KendoDialogProps & React.HTMLAttributes<HTML
     return (
         <div className="k-dialog-wrapper">
             { modal &&
-            <div className="k-overlay"></div>}
+            <Overlay />}
             <div
                 {...other}
                 className={classNames(

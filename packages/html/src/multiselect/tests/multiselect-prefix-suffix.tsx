@@ -16,7 +16,7 @@ export default () =>(
 
             {MultiSelect.options.fillMode.map((fillMode) => (
                 <>
-                    <span className="k-col-span-full k-text-center">{fillMode}</span>
+                    <span className="k-col-span-full k-text-center">{`${fillMode}`}</span>
 
                     <span>normal</span>
                     <div>

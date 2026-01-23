@@ -2,6 +2,9 @@ import { LoaderContainer, LoaderContainerNormal } from '../../loader';
 
 
 const styles = `
+    #test-area {
+        grid-template-columns: 30px repeat(4, 1fr);
+    }
     .example {
         width: 100%;
         min-height: 200px;
@@ -12,9 +15,10 @@ const styles = `
 export default () =>(
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-4">
+        <div id="test-area" className="k-d-grid">
 
             <span></span>
+            <span className="col">undefined</span>
             <span className="col">Small</span>
             <span className="col">Medium</span>
             <span className="col">Large</span>

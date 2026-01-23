@@ -15,7 +15,7 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ]
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ]
 };
 
 export type KendoColorGradientOptions = {
@@ -38,7 +38,6 @@ export type KendoColorGradientProps = KendoColorGradientOptions & {
 export type KendoColorGradientState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    size: Size.medium,
     mode: 'rgba',
     readonly: false,
     disabled: false,
@@ -56,7 +55,7 @@ export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorG
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         mode = defaultOptions.mode,
         readonly = defaultOptions.readonly,
         disabled = defaultOptions.disabled,

@@ -7,8 +7,9 @@ import { ChipRemovable } from '../templates/chip-removable';
 
 export default () =>(
     <>
-        <div id="test-area" className="k-d-grid k-grid-cols-6">
+        <div id="test-area" className="k-d-grid k-grid-cols-7">
             <span><small>state / themeColor</small></span>
+            <span>undefined</span>
             <span>Base</span>
             <span>Success</span>
             <span>Warning</span>
@@ -20,7 +21,7 @@ export default () =>(
                     <span>{state}</span>
                     {Chip.options.themeColor.map((themeColor)=> (
                         <span>
-                            <ChipRemovable text={themeColor} fillMode="outline" themeColor={themeColor} {...{ [state]: true }} />
+                            <ChipRemovable text={themeColor === undefined ? 'undefined' : themeColor} fillMode="outline" themeColor={themeColor} {...{ [state]: true }} />
                         </span>
                     ))}
                 </>
@@ -32,6 +33,7 @@ export default () =>(
             <span>Avatar</span>
             <span>Icon (rtl)</span>
             <span>Avatar (rtl)</span>
+            <span></span>
 
             <span></span>
             <span>

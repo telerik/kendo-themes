@@ -6,21 +6,14 @@ $kendo-suggestion-border-width: null !default;
 $kendo-suggestion-border-style: null !default;
 
 $kendo-suggestion-line-height: null !default;
-$kendo-suggestion-bg: null !default;
-$kendo-suggestion-text: null !default;
-$kendo-suggestion-border: null !default;
 $kendo-suggestion-border-radius: null !default;
-
-$kendo-suggestion-hover-bg: null !default;
-$kendo-suggestion-hover-text: null !default;
-$kendo-suggestion-hover-border: null !default;
-
-$kendo-suggestion-active-bg: null !default;
-$kendo-suggestion-active-text: null !default;
-$kendo-suggestion-active-border: null !default;
 
 $kendo-suggestion-focus-shadow-blur: null !default;
 $kendo-suggestion-focus-shadow-spread: null !default;
 $kendo-suggestion-focus-shadow-color: null !default;
 
-$kendo-suggestion-theme-colors: null !default;
+/// The theme colors map of the Suggestion.
+/// @group suggestion
+$kendo-suggestion-theme-colors: ("base", "primary", "secondary") !default;
+
+$kendo-suggestion-default-theme-color: null !default;

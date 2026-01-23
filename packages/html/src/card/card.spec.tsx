@@ -14,6 +14,7 @@ const states = [
 
 const options = {
     themeColor: [
+        ThemeColor.undefined,
         ThemeColor.primary,
         ThemeColor.success,
         ThemeColor.warning,

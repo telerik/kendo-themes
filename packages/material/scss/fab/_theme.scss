@@ -1,82 +1,88 @@
 @use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/fab/_theme.scss" as *;
 
 
 @mixin kendo-fab--theme() {
 
-    // Normal state
-    @each $name, $color in $kendo-fab-theme-colors {
-        .k-fab-solid-#{$name} {
-            @include box-shadow($kendo-fab-shadow);
-            border-color: k-color(#{$name}-subtle);
-            color: k-color(#{$name}-on-subtle);
-            background-color: k-color(#{$name}-subtle);
-        }
-    }
+    .k-fab {
+        // Fillmode: solid
+        #{k-when-default($kendo-fab-default-fill-mode, "solid")}
+        &.k-fab-solid {
 
-    // Hover state
-    @each $name, $color in $kendo-fab-theme-colors {
-        .k-hover.k-fab-solid-#{$name},
-        .k-fab-solid-#{$name}:hover {
-            border-color: k-color(#{$name}-subtle-hover);
-            background-color: k-color(#{$name}-subtle-hover);
-            @include box-shadow(k-elevation(4));
-        }
-    }
+            // Theme colors
+            @each $name in $kendo-fab-theme-colors {
 
-    // Focus state
-    @each $name, $color in $kendo-fab-theme-colors {
-        .k-focus.k-fab-solid-#{$name},
-        .k-fab-solid-#{$name}:focus {
-            border-color: k-color(#{$name}-subtle-active);
-            background-color: k-color(#{$name}-subtle-active);
-        }
-    }
+                // Normal state
+                #{k-when-default($kendo-fab-default-theme-color, $name)}
+                &.k-fab-#{$name} {
+                    @include box-shadow($kendo-fab-shadow);
+                    border-color: k-color(#{$name}-subtle);
+                    color: k-color(#{$name}-on-subtle);
+                    background-color: k-color(#{$name}-subtle);
 
-    // Active state
-    @each $name, $color in $kendo-fab-theme-colors {
-        .k-active.k-fab-solid-#{$name},
-        .k-selected.k-fab-solid-#{$name},
-        .k-fab-solid-#{$name}:active {
-            @include box-shadow($kendo-fab-active-shadow);
-            border-color: k-color(#{$name}-subtle-active);
-            background-color: k-color(#{$name}-subtle-active);
-        }
-    }
+                    // Hover state
+                    &.k-hover,
+                    &:hover {
+                        border-color: k-color(#{$name}-subtle-hover);
+                        background-color: k-color(#{$name}-subtle-hover);
+                        @include box-shadow(k-elevation(4));
+                    }
 
-    // Generating state
-    .k-fab-solid-primary.k-generating {
-        animation: k-fab-generating 1.5s ease-in-out 0.5s infinite;
-    }
+                    // Focus state
+                    &.k-focus,
+                    &:focus {
+                        border-color: k-color(#{$name}-subtle-active);
+                        background-color: k-color(#{$name}-subtle-active);
+                    }
 
-    @keyframes k-fab-generating {
-        0% {
-            color: k-color(primary-on-subtle);
-            background-color: k-color(primary-subtle-active);
-            border: k-color(primary-subtle-active);
-        }
-        50% {
-            color: color-mix(in srgb, k-color(primary-on-subtle) $kendo-fab-generating-opacity, k-color(surface-alt));
-            background-color: color-mix(in srgb, k-color(primary-subtle-active) $kendo-fab-generating-opacity, k-color(surface-alt));
-            border: color-mix(in srgb, k-color(primary-subtle-active) $kendo-fab-generating-opacity, k-color(surface-alt));
-        }
-        100% {
-            color: k-color(primary-on-subtle);
-            background-color: k-color(primary-subtle-active);
-            border: k-color(primary-subtle-active);
-        }
-    }
+                    // Active state
+                    &.k-active,
+                    &.k-selected,
+                    &:active {
+                        @include box-shadow($kendo-fab-active-shadow);
+                        border-color: k-color(#{$name}-subtle-active);
+                        background-color: k-color(#{$name}-subtle-active);
+                    }
 
-    // Disabled state
-    @each $name, $color in $kendo-fab-theme-colors {
-        .k-disabled.k-fab-solid-#{$name},
-        .k-fab-solid-#{$name}:disabled {
-            @include box-shadow($kendo-fab-disabled-shadow);
-            border-color: transparent;
-            background-color: color-mix(in srgb, k-color(on-app-surface) 12%, transparent);
-            color: color-mix(in srgb, k-color(on-app-surface) 38%, transparent);
-            opacity: 1;
+                    // Disabled state
+                    &.k-disabled,
+                    &:disabled {
+                        @include box-shadow($kendo-fab-disabled-shadow);
+                        border-color: transparent;
+                        background-color: color-mix(in srgb, k-color(on-app-surface) 12%, transparent);
+                        color: color-mix(in srgb, k-color(on-app-surface) 38%, transparent);
+                        opacity: 1;
+                    }
+                }
+            }
+
+            // Generating state
+            #{k-when-default($kendo-fab-default-theme-color, "primary")}
+            &.k-fab-primary {
+                &.k-generating {
+                    animation: k-fab-generating 1.5s ease-in-out 0.5s infinite;
+                }
+            }
+
+            @keyframes k-fab-generating {
+                0% {
+                    color: k-color(primary-on-subtle);
+                    background-color: k-color(primary-subtle-active);
+                    border: k-color(primary-subtle-active);
+                }
+                50% {
+                    color: color-mix(in srgb, k-color(primary-on-subtle) $kendo-fab-generating-opacity, k-color(surface-alt));
+                    background-color: color-mix(in srgb, k-color(primary-subtle-active) $kendo-fab-generating-opacity, k-color(surface-alt));
+                    border: color-mix(in srgb, k-color(primary-subtle-active) $kendo-fab-generating-opacity, k-color(surface-alt));
+                }
+                100% {
+                    color: k-color(primary-on-subtle);
+                    background-color: k-color(primary-subtle-active);
+                    border: k-color(primary-subtle-active);
+                }
+            }
         }
     }
 

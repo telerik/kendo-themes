@@ -1,6 +1,6 @@
 import { Button } from '../button';
 import { List } from '../list';
-import { classNames, optionClassNames, stateClassNames, States, Size } from '../misc';
+import { classNames, stateClassNames, States, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { LISTBOX_FOLDER_NAME, LISTBOX_MODULE_NAME } from './constants';
@@ -11,7 +11,7 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ]
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ]
 };
 
 export type KendoListBoxOptions = {
@@ -28,7 +28,6 @@ export type KendoListBoxProps = KendoListBoxOptions & {
 export type KendoListBoxState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    size: Size.medium,
     actionsPosition: 'left'
 } as const;
 
@@ -38,7 +37,7 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         disabled,
         children,
         actionsPosition = defaultOptions.actionsPosition,
@@ -54,9 +53,6 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
             className={classNames(
                 props.className,
                 LISTBOX_CLASSNAME,
-                optionClassNames(LISTBOX_CLASSNAME, {
-                    size,
-                }),
                 stateClassNames(LISTBOX_CLASSNAME, {
                     disabled,
                 }),

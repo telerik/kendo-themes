@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.10...v13.0.0-dev.0) (2026-01-23)
+
+
+### Bug Fixes
+
+* **html:** remove listbox redundant size class ([0ae6956](https://github.com/telerik/kendo-themes/commit/0ae6956a0ae55cca1f801239801f4936369bb5d4))
+* **html:** remove loader container utility text classes ([8fae06a](https://github.com/telerik/kendo-themes/commit/8fae06a9e90838b0795f1c4a1a03cf0be1374e03))
+* **html:** remove redundant signature classes ([06c004a](https://github.com/telerik/kendo-themes/commit/06c004a59f3bf91037dcad8c54b51becf099c0e2))
+
+
+### Features
+
+* add default component options ([00995e4](https://github.com/telerik/kendo-themes/commit/00995e42346853736516f771971e4d1cd4e95f14))
+* **html:** update spec and tests with new default options rendering ([6987a83](https://github.com/telerik/kendo-themes/commit/6987a83f58fc1dc01adf409c2ca7cf275c592056))
+
+
+### BREAKING CHANGES
+
+* Starting with the R1 2026 release, the component
+option classes (size, roundness, fill mode, theme color) are no longer
+rendered in the HTML when they match the default values. The default
+options are now controlled through SCSS variables (e.g.,
+$kendo-button-default-size, $kendo-button-default-roundness) and the
+respective styles are applied directly to the main component class. This
+allows different themes to define their own defaults and enables
+easier customization.
+Additionally, the theme color classes are now separate from the fill mode
+classes (e.g., k-button-solid k-button-primary instead of
+k-button-solid-primary).
+To learn more about these changes, please refer to the dedicated
+* article in the Progress Design System documentation.
+
+
+
+
+
 ## [12.3.1-dev.10](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.9...v12.3.1-dev.10) (2026-01-19)
 
 **Note:** Version bump only for package kendo-themes.repo

@@ -19,59 +19,60 @@ export default () =>(
 
             <div>no placeholder nor value</div>
             <div>
-                <MultiSelectTreeNormal />
+                <MultiSelectTreeNormal fillMode="solid" />
             </div>
             <div dir="rtl">
-                <MultiSelectTreeNormal />
+                <MultiSelectTreeNormal fillMode="solid" />
             </div>
 
             <div>placeholder</div>
             <div>
-                <MultiSelectTreeNormal placeholder="MultiSelectTree..." />
+                <MultiSelectTreeNormal fillMode="solid" placeholder="MultiSelectTree..." />
             </div>
             <div dir="rtl">
-                <MultiSelectTreeNormal placeholder="MultiSelectTree..." />
+                <MultiSelectTreeNormal fillMode="solid" placeholder="MultiSelectTree..." />
             </div>
 
             <div>arrow button</div>
             <div>
-                <MultiSelectTreeArrowButton showArrowButton placeholder="MultiSelectTree with arrow button" />
+                <MultiSelectTreeArrowButton fillMode="solid" showArrowButton placeholder="MultiSelectTree with arrow button" />
             </div>
             <div dir="rtl">
-                <MultiSelectTreeArrowButton showArrowButton placeholder="MultiSelectTree with arrow button" />
+                <MultiSelectTreeArrowButton fillMode="solid" showArrowButton placeholder="MultiSelectTree with arrow button" />
             </div>
 
             {[ 'normal', ...MultiSelectTree.states ].map((state) => (
                 <>
                     <div>{state}</div>
                     <div>
-                        <MultiSelectTreeValue { ...{ [state]: true }}>{state}</MultiSelectTreeValue>
+                        <MultiSelectTreeValue fillMode="solid" { ...{ [state]: true }}>{state}</MultiSelectTreeValue>
                     </div>
                     <div dir="rtl">
-                        <MultiSelectTreeValue { ...{ [state]: true }}>{state}</MultiSelectTreeValue>
+                        <MultiSelectTreeValue fillMode="solid" { ...{ [state]: true }}>{state}</MultiSelectTreeValue>
                     </div>
                 </>
             ))}
 
             <div>invalid + focus</div>
             <div>
-                <MultiSelectTreeValue invalid focus>invalid + focus</MultiSelectTreeValue>
+                <MultiSelectTreeValue fillMode="solid" invalid focus>invalid + focus</MultiSelectTreeValue>
             </div>
             <div dir="rtl">
-                <MultiSelectTreeValue invalid focus>invalid + focus</MultiSelectTreeValue>
+                <MultiSelectTreeValue fillMode="solid" invalid focus>invalid + focus</MultiSelectTreeValue>
             </div>
 
             <div>valid + focus</div>
             <div>
-                <MultiSelectTreeValue valid focus>valid + focus</MultiSelectTreeValue>
+                <MultiSelectTreeValue fillMode="solid" valid focus>valid + focus</MultiSelectTreeValue>
             </div>
             <div dir="rtl">
-                <MultiSelectTreeValue valid focus>valid + focus</MultiSelectTreeValue>
+                <MultiSelectTreeValue fillMode="solid" valid focus>valid + focus</MultiSelectTreeValue>
             </div>
 
             <div>multi line + overflow</div>
             <div>
                 <MultiSelectTreeNormal
+                    fillMode="solid"
                     tags={(
                         <>
                             <Chip text="multi-line" actions={ <ChipAction type="remove"/> } />
@@ -82,6 +83,7 @@ export default () =>(
             </div>
             <div dir="rtl">
                 <MultiSelectTreeNormal
+                    fillMode="solid"
                     tags={(
                         <>
                             <Chip text="multi-line" actions={ <ChipAction type="remove"/> } />
