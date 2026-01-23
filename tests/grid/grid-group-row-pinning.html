@@ -1,0 +1,1065 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
+        <span>Context Menu only</span>
+        <span>Group row pinned to top</span>
+        <span>Group row pinned to bottom</span>
+        <section>
+            <div class="k-grid">
+                <div class="k-grouping-header">
+                    <div class="k-chip-list">
+                        <div class="k-chip">
+                            <span class="k-chip-content">
+                                <span class="k-chip-label">Rating</span>
+                            </span>
+                            <span class="k-chip-actions">
+                                <span class="k-chip-action k-chip-remove-action">
+                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="k-grouping-drop-container"></div>
+                </div>
+                <div class="k-grid-aria-root">
+                    <div class="k-grid-header k-grid-draggable-header">
+                        <div class="k-grid-header-wrap">
+                            <table class="k-grid-header-table k-table">
+                                <colgroup>
+                                    <col class="k-group-col">
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead class="k-table-thead">
+                                    <tr class="k-table-row">
+                                        <th colspan="1" rowspan="1" class="k-group-cell k-header k-table-th"></th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Contact Name</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Job Title</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Rating</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="k-grid-container">
+                        <div class="k-grid-content">
+                            <table class="k-grid-table k-table">
+                                <colgroup>
+                                    <col class="k-group-col">
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="4" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z"></path>
+                                                    </svg>
+                                                </span>Rating 3/5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Sig Jeannel</td>
+                                        <td colspan="1" class="k-table-td">Human Resources Assistant III</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Isadora Plumtree</td>
+                                        <td colspan="1" class="k-table-td">Graphic Designer</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Xerxes Borson</td>
+                                        <td colspan="1" class="k-table-td">Content Writer</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="4" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z"></path>
+                                                    </svg>
+                                                </span>Rating 1/5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Ruthi Bldini</td>
+                                        <td colspan="1" class="k-table-td">Coordinator</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Marcelina Vee</td>
+                                        <td colspan="1" class="k-table-td">Marketing Specialist</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Finnian Bramble</td>
+                                        <td colspan="1" class="k-table-td">Business Analyst</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="k-animation-container k-animation-container-shown" style="left: 145px; top: 395px;">
+                <div class="k-child-animation-container">
+                    <div class="k-menu-popup k-popup">
+                        <ul class="k-context-menu k-menu-group">
+                            <li class="k-menu-item k-item k-first">
+                                <span class="k-link k-menu-link">
+                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-eye-slash">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="m245.43 358.68 24.92 24.92c-4.75.26-9.54.4-14.34.4-94.7 0-179.7-51.5-224-128 13.19-22.83 30.01-43.43 49.65-61.1l23.01 23.01C91.46 229.29 79.51 242.07 69.8 256c26.33 33.77 54.15 53.86 72.6 65.1 39.18 23.88 77.54 33.37 103.03 37.58m131.42-4.44L480 457.39 457.39 480 345.51 368.12s-.07.03-.1.04L232.2 254.94l.11-.03-39.21-39.21-.03.11-26.8-26.8s.04-.05.06-.08l-7.01-7.01s-.06.03-.09.04l-24.17-24.17s.06-.03.09-.05L32 54.61 54.61 32l111.87 111.87A260.2 260.2 0 0 1 256 128c94.8 0 179.8 51.5 224 128-24 41.53-60.05 75.69-103.15 98.24m-7.25-33.14c27.8-16.4 54.1-38.7 72.6-65.1-18.4-26.4-44.8-48.7-72.6-65.1-12.2-7.2-25.1-13.2-38.4-17.9 22.6 20.5 36.8 50.1 36.8 83 0 25.15-8.31 48.37-22.32 67.08l7.01 7.01c5.76-2.76 11.41-5.74 16.91-8.99"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="k-menu-link-text">Hide group</span>
+                                </span>
+                            </li>
+                            <li class="k-menu-item k-item">
+                                <span class="k-link k-menu-link">
+                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-stick">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M192 96c0-17.7-14.3-32-32-32H96c-17.7 0-32 14.3-32 32v32h128zm128 160c0 35.3-28.7 64-64 64s-64-28.7-64-64v-96H64v96c0 106 86 192 192 192s192-86 192-192v-96H320zm96-192h-64c-17.7 0-32 14.3-32 32v32h128V96c0-17.7-14.3-32-32-32"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="k-menu-link-text">Set group sticky</span>
+                                </span>
+                            </li>
+                            <li class="k-menu-item k-item">
+                                <span class="k-link k-menu-link k-active">
+                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-pin-outline">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M351.6 63.99q.1 0 0 0c.1 0 .1.1 0 0l.1 31.89h-32c-17.7 0-32.1 14.4-32.1 32.09v63.99c0 52.39 42.8 95.48 95.1 95.88h.8v63.99H128v-63.99h.1c52.9 1.9 95.7-43.09 95.7-96.08v-63.69c0-17.7-14.4-32.09-32.1-32.09h-31.9V64.09zm0-31.99H160c-17.7 0-32.1 14.4-32.1 32.09v31.89c0 17.7 14.4 32.09 32.1 32.09h31.9s.1 0 .1.1v63.99c0 35.29-28.6 63.89-63.9 63.89-17.7 0-32.1 14.4-32.1 32.09v63.79c0 17.7 14.4 32.09 32.1 32.09h111.8s.1 0 .1.1v79.48c0 8.5 6.5 15.9 15 16.4h1c8.8 0 16-7.2 16-16v-79.88s0-.1.1-.1h111.8c17.7 0 32.1-14.4 32.1-32.09v-63.89c0-17.7-14.4-32.09-32.1-32.09-35.3 0-63.9-28.59-63.9-63.89v-63.99s0-.1.1-.1H352c17.7 0 32.1-14.4 32.1-32.09V64.09C383.7 46.39 369.3 32 351.6 32"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="k-menu-link-text">Pin group</span>
+                                    <span class="k-menu-expand-arrow">
+                                        <span class="k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M352 256 160 384V128z"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="k-animation-container k-animation-container-shown" style="left: 306px; top: 451px;">
+                <div class="k-child-animation-container">
+                    <div class="k-menu-popup k-popup">
+                        <ul class="k-context-menu k-menu-group">
+                            <li class="k-menu-item k-item k-first">
+                                <span class="k-link k-menu-link k-selected">
+                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-pin-outline-top">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M160.4 448q-.15 0 0 0c-.1-.1-.1 0 0 0l-.1-31.9h32c17.7 0 32.1-14.4 32.1-32.1v-64c0-52.4-42.8-95.5-95.1-95.9h-.8v-64H384v64h-.1c-52.9-1.9-95.7 43.1-95.7 96.1v63.7c0 17.7 14.4 32.1 32.1 32.1h31.9v31.9H160.4m0 32.1H352c17.7 0 32.1-14.4 32.1-32.1V416c0-17.7-14.4-32.1-32.1-32.1h-31.9s-.1 0-.1-.1v-64c0-35.3 28.6-63.9 63.9-63.9 17.7 0 32.1-14.4 32.1-32.1V160c0-17.7-14.4-32.1-32.1-32.1H272.1s-.1 0-.1-.1V48.4c0-8.5-6.5-15.9-15-16.4h-1c-8.8 0-16 7.2-16 16v79.9s0 .1-.1.1H128.1c-17.7 0-32.1 14.4-32.1 32.1V224c0 17.7 14.4 32.1 32.1 32.1 35.3 0 63.9 28.6 63.9 63.9v64s0 .1-.1.1H160c-17.7 0-32.1 14.4-32.1 32.1v31.9c.4 17.5 14.8 31.9 32.5 31.9M480 48c0 8.8-7.2 16-16 16H320V32h144c8.8 0 16 7.2 16 16M192 64H48c-8.8 0-16-7.2-16-16s7.2-16 16-16h144z"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="k-menu-link-text">Pin group to top</span>
+                                </span>
+                            </li>
+                            <li class="k-menu-item k-item k-last">
+                                <span class="k-link k-menu-link">
+                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-pin-outline-bottom">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M351.6 63.99q.1 0 0 0c.1.1.1 0 0 0l.1 31.89h-32c-17.7 0-32.1 14.4-32.1 32.09v63.99c0 52.39 42.8 95.48 95.1 95.88h.8v63.99H128v-63.99h.1c52.9 1.9 95.7-43.09 95.7-96.08v-63.69c0-17.7-14.4-32.09-32.1-32.09h-31.9V64.09zm0-31.99H160c-17.7 0-32.1 14.4-32.1 32.09v31.89c0 17.7 14.4 32.09 32.1 32.09h31.9s.1 0 .1.1v63.99c0 35.29-28.6 63.89-63.9 63.89-17.7 0-32.1 14.4-32.1 32.09v63.79c0 17.7 14.4 32.09 32.1 32.09h111.8s.1 0 .1.1v79.48c0 8.5 6.5 15.9 15 16.4h1c8.8 0 16-7.2 16-16v-79.88s0-.1.1-.1h111.8c17.7 0 32.1-14.4 32.1-32.09v-63.89c0-17.7-14.4-32.09-32.1-32.09-35.3 0-63.9-28.59-63.9-63.89v-63.99s0-.1.1-.1H352c17.7 0 32.1-14.4 32.1-32.09V64.09C383.7 46.39 369.3 32 351.6 32M32 463.9c0-8.8 7.2-16 16-16h144v31.99H48c-8.8 0-16-7.2-16-16Zm288-16h144c8.8 0 16 7.2 16 16s-7.2 16-16 16H320v-31.99Z"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="k-menu-link-text">Pin group to bottom</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-grid">
+                <div class="k-grouping-header">
+                    <div class="k-chip-list">
+                        <div class="k-chip">
+                            <span class="k-chip-content">
+                                <span class="k-chip-label">Rating</span>
+                            </span>
+                            <span class="k-chip-actions">
+                                <span class="k-chip-action k-chip-remove-action">
+                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="k-grouping-drop-container"></div>
+                </div>
+                <div class="k-grid-aria-root">
+                    <div class="k-grid-header k-grid-draggable-header">
+                        <div class="k-grid-header-wrap">
+                            <table class="k-grid-header-table k-table">
+                                <colgroup>
+                                    <col class="k-group-col">
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead class="k-table-thead">
+                                    <tr class="k-table-row">
+                                        <th colspan="1" rowspan="1" class="k-group-cell k-header k-table-th"></th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Contact Name</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Job Title</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Rating</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="k-grid-container">
+                        <div class="k-grid-content">
+                            <div class="k-grid-sticky-container k-grid-sticky-top-container">
+                                <table class="k-grid-table k-table">
+                                    <colgroup>
+                                        <col class="k-group-col">
+                                        <col>
+                                    </colgroup>
+                                    <tbody class="k-table-tbody">
+                                        <tr class="k-table-group-row k-grouping-row k-table-row">
+                                            <td colspan="9" class="k-table-td">
+                                                <p class="k-reset">
+                                                    <span class="k-icon k-svg-icon">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                                    </span>Rating 1/5
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <table class="k-grid-table k-table">
+                                <colgroup>
+                                    <col class="k-group-col">
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="4" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z"></path>
+                                                    </svg>
+                                                </span>Rating 3/5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Sig Jeannel</td>
+                                        <td colspan="1" class="k-table-td">Human Resources Assistant III</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Isadora Plumtree</td>
+                                        <td colspan="1" class="k-table-td">Graphic Designer</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Xerxes Borson</td>
+                                        <td colspan="1" class="k-table-td">Content Writer</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="4" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z"></path>
+                                                    </svg>
+                                                </span>Rating 1/5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-pinned-source k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Ruthi Bldini</td>
+                                        <td colspan="1" class="k-table-td">Coordinator</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-pinned-source k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Marcelina Vee</td>
+                                        <td colspan="1" class="k-table-td">Marketing Specialist</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-pinned-source k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Finnian Bramble</td>
+                                        <td colspan="1" class="k-table-td">Business Analyst</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-grid">
+                <div class="k-grouping-header">
+                    <div class="k-chip-list">
+                        <div class="k-chip">
+                            <span class="k-chip-content">
+                                <span class="k-chip-label">Rating</span>
+                            </span>
+                            <span class="k-chip-actions">
+                                <span class="k-chip-action k-chip-remove-action">
+                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="k-grouping-drop-container"></div>
+                </div>
+                <div class="k-grid-aria-root">
+                    <div class="k-grid-header k-grid-draggable-header">
+                        <div class="k-grid-header-wrap">
+                            <table class="k-grid-header-table k-table">
+                                <colgroup>
+                                    <col class="k-group-col">
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead class="k-table-thead">
+                                    <tr class="k-table-row">
+                                        <th colspan="1" rowspan="1" class="k-group-cell k-header k-table-th"></th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Contact Name</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Job Title</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Rating</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="k-grid-container">
+                        <div class="k-grid-content">
+                            <table class="k-grid-table k-table">
+                                <colgroup>
+                                    <col class="k-group-col">
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="4" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z"></path>
+                                                    </svg>
+                                                </span>Rating 3/5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Sig Jeannel</td>
+                                        <td colspan="1" class="k-table-td">Human Resources Assistant III</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Isadora Plumtree</td>
+                                        <td colspan="1" class="k-table-td">Graphic Designer</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Xerxes Borson</td>
+                                        <td colspan="1" class="k-table-td">Content Writer</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="4" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z"></path>
+                                                    </svg>
+                                                </span>Rating 1/5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-pinned-source k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Ruthi Bldini</td>
+                                        <td colspan="1" class="k-table-td">Coordinator</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-pinned-source k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Marcelina Vee</td>
+                                        <td colspan="1" class="k-table-td">Marketing Specialist</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-pinned-source k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Finnian Bramble</td>
+                                        <td colspan="1" class="k-table-td">Business Analyst</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="k-grid-sticky-container k-grid-sticky-bottom-container" style="inset-block-end: 0px;">
+                                <table class="k-grid-table k-table">
+                                    <colgroup>
+                                        <col class="k-group-col">
+                                        <col>
+                                    </colgroup>
+                                    <tbody class="k-table-tbody">
+                                        <tr class="k-table-group-row k-grouping-row k-table-row">
+                                            <td colspan="4" class="k-table-td">
+                                                <p class="k-reset">
+                                                    <span class="k-icon k-svg-icon">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                                    </span>Rating 1/5
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <span>Pinning Icon</span>
+        <span>Group row pinned to top</span>
+        <span>Group row pinned to bottom</span>
+        <section>
+            <div class="k-grid">
+                <div class="k-grouping-header">
+                    <div class="k-chip-list">
+                        <div class="k-chip">
+                            <span class="k-chip-content">
+                                <span class="k-chip-label">Rating</span>
+                            </span>
+                            <span class="k-chip-actions">
+                                <span class="k-chip-action k-chip-remove-action">
+                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="k-grouping-drop-container"></div>
+                </div>
+                <div class="k-grid-aria-root">
+                    <div class="k-grid-header k-grid-draggable-header">
+                        <div class="k-grid-header-wrap">
+                            <table class="k-grid-header-table k-table">
+                                <colgroup>
+                                    <col class="k-group-col">
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead class="k-table-thead">
+                                    <tr class="k-table-row">
+                                        <th colspan="1" rowspan="1" class="k-group-cell k-header k-table-th"></th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Contact Name</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Job Title</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Rating</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="k-grid-container">
+                        <div class="k-grid-content">
+                            <table class="k-grid-table k-table">
+                                <colgroup>
+                                    <col class="k-group-col">
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="4" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-pin-cell">
+                                                    <span class="k-icon k-svg-icon k-svg-i-pin-outline">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M351.6 63.99q.1 0 0 0c.1 0 .1.1 0 0l.1 31.89h-32c-17.7 0-32.1 14.4-32.1 32.09v63.99c0 52.39 42.8 95.48 95.1 95.88h.8v63.99H128v-63.99h.1c52.9 1.9 95.7-43.09 95.7-96.08v-63.69c0-17.7-14.4-32.09-32.1-32.09h-31.9V64.09zm0-31.99H160c-17.7 0-32.1 14.4-32.1 32.09v31.89c0 17.7 14.4 32.09 32.1 32.09h31.9s.1 0 .1.1v63.99c0 35.29-28.6 63.89-63.9 63.89-17.7 0-32.1 14.4-32.1 32.09v63.79c0 17.7 14.4 32.09 32.1 32.09h111.8s.1 0 .1.1v79.48c0 8.5 6.5 15.9 15 16.4h1c8.8 0 16-7.2 16-16v-79.88s0-.1.1-.1h111.8c17.7 0 32.1-14.4 32.1-32.09v-63.89c0-17.7-14.4-32.09-32.1-32.09-35.3 0-63.9-28.59-63.9-63.89v-63.99s0-.1.1-.1H352c17.7 0 32.1-14.4 32.1-32.09V64.09C383.7 46.39 369.3 32 351.6 32"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z"></path>
+                                                    </svg>
+                                                </span>Rating 3/5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Sig Jeannel</td>
+                                        <td colspan="1" class="k-table-td">Human Resources Assistant III</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Isadora Plumtree</td>
+                                        <td colspan="1" class="k-table-td">Graphic Designer</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Xerxes Borson</td>
+                                        <td colspan="1" class="k-table-td">Content Writer</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="4" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-pin-cell">
+                                                    <span class="k-icon k-svg-icon k-svg-i-pin-outline">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M351.6 63.99q.1 0 0 0c.1 0 .1.1 0 0l.1 31.89h-32c-17.7 0-32.1 14.4-32.1 32.09v63.99c0 52.39 42.8 95.48 95.1 95.88h.8v63.99H128v-63.99h.1c52.9 1.9 95.7-43.09 95.7-96.08v-63.69c0-17.7-14.4-32.09-32.1-32.09h-31.9V64.09zm0-31.99H160c-17.7 0-32.1 14.4-32.1 32.09v31.89c0 17.7 14.4 32.09 32.1 32.09h31.9s.1 0 .1.1v63.99c0 35.29-28.6 63.89-63.9 63.89-17.7 0-32.1 14.4-32.1 32.09v63.79c0 17.7 14.4 32.09 32.1 32.09h111.8s.1 0 .1.1v79.48c0 8.5 6.5 15.9 15 16.4h1c8.8 0 16-7.2 16-16v-79.88s0-.1.1-.1h111.8c17.7 0 32.1-14.4 32.1-32.09v-63.89c0-17.7-14.4-32.09-32.1-32.09-35.3 0-63.9-28.59-63.9-63.89v-63.99s0-.1.1-.1H352c17.7 0 32.1-14.4 32.1-32.09V64.09C383.7 46.39 369.3 32 351.6 32"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z"></path>
+                                                    </svg>
+                                                </span>Rating 1/5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Ruthi Bldini</td>
+                                        <td colspan="1" class="k-table-td">Coordinator</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Marcelina Vee</td>
+                                        <td colspan="1" class="k-table-td">Marketing Specialist</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Finnian Bramble</td>
+                                        <td colspan="1" class="k-table-td">Business Analyst</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="k-animation-container k-animation-container-shown" style="left: 45px; top: 1036px;">
+                <div class="k-child-animation-container">
+                    <div class="k-menu-popup k-popup">
+                        <ul class="k-context-menu k-menu-group">
+                            <li class="k-menu-item k-item k-first">
+                                <span class="k-link k-menu-link k-selected">
+                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-pin-outline-top">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M160.4 448q-.15 0 0 0c-.1-.1-.1 0 0 0l-.1-31.9h32c17.7 0 32.1-14.4 32.1-32.1v-64c0-52.4-42.8-95.5-95.1-95.9h-.8v-64H384v64h-.1c-52.9-1.9-95.7 43.1-95.7 96.1v63.7c0 17.7 14.4 32.1 32.1 32.1h31.9v31.9H160.4m0 32.1H352c17.7 0 32.1-14.4 32.1-32.1V416c0-17.7-14.4-32.1-32.1-32.1h-31.9s-.1 0-.1-.1v-64c0-35.3 28.6-63.9 63.9-63.9 17.7 0 32.1-14.4 32.1-32.1V160c0-17.7-14.4-32.1-32.1-32.1H272.1s-.1 0-.1-.1V48.4c0-8.5-6.5-15.9-15-16.4h-1c-8.8 0-16 7.2-16 16v79.9s0 .1-.1.1H128.1c-17.7 0-32.1 14.4-32.1 32.1V224c0 17.7 14.4 32.1 32.1 32.1 35.3 0 63.9 28.6 63.9 63.9v64s0 .1-.1.1H160c-17.7 0-32.1 14.4-32.1 32.1v31.9c.4 17.5 14.8 31.9 32.5 31.9M480 48c0 8.8-7.2 16-16 16H320V32h144c8.8 0 16 7.2 16 16M192 64H48c-8.8 0-16-7.2-16-16s7.2-16 16-16h144z"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="k-menu-link-text">Pin group to top</span>
+                                </span>
+                            </li>
+                            <li class="k-menu-item k-item k-last">
+                                <span class="k-link k-menu-link">
+                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-pin-outline-bottom">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M351.6 63.99q.1 0 0 0c.1.1.1 0 0 0l.1 31.89h-32c-17.7 0-32.1 14.4-32.1 32.09v63.99c0 52.39 42.8 95.48 95.1 95.88h.8v63.99H128v-63.99h.1c52.9 1.9 95.7-43.09 95.7-96.08v-63.69c0-17.7-14.4-32.09-32.1-32.09h-31.9V64.09zm0-31.99H160c-17.7 0-32.1 14.4-32.1 32.09v31.89c0 17.7 14.4 32.09 32.1 32.09h31.9s.1 0 .1.1v63.99c0 35.29-28.6 63.89-63.9 63.89-17.7 0-32.1 14.4-32.1 32.09v63.79c0 17.7 14.4 32.09 32.1 32.09h111.8s.1 0 .1.1v79.48c0 8.5 6.5 15.9 15 16.4h1c8.8 0 16-7.2 16-16v-79.88s0-.1.1-.1h111.8c17.7 0 32.1-14.4 32.1-32.09v-63.89c0-17.7-14.4-32.09-32.1-32.09-35.3 0-63.9-28.59-63.9-63.89v-63.99s0-.1.1-.1H352c17.7 0 32.1-14.4 32.1-32.09V64.09C383.7 46.39 369.3 32 351.6 32M32 463.9c0-8.8 7.2-16 16-16h144v31.99H48c-8.8 0-16-7.2-16-16Zm288-16h144c8.8 0 16 7.2 16 16s-7.2 16-16 16H320v-31.99Z"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="k-menu-link-text">Pin group to bottom</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-grid">
+                <div class="k-grouping-header">
+                    <div class="k-chip-list">
+                        <div class="k-chip">
+                            <span class="k-chip-content">
+                                <span class="k-chip-label">Rating</span>
+                            </span>
+                            <span class="k-chip-actions">
+                                <span class="k-chip-action k-chip-remove-action">
+                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="k-grouping-drop-container"></div>
+                </div>
+                <div class="k-grid-aria-root">
+                    <div class="k-grid-header k-grid-draggable-header">
+                        <div class="k-grid-header-wrap">
+                            <table class="k-grid-header-table k-table">
+                                <colgroup>
+                                    <col class="k-group-col">
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead class="k-table-thead">
+                                    <tr class="k-table-row">
+                                        <th colspan="1" rowspan="1" class="k-group-cell k-header k-table-th"></th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Contact Name</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Job Title</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Rating</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="k-grid-container">
+                        <div class="k-grid-content">
+                            <div class="k-grid-sticky-container k-grid-sticky-top-container">
+                                <table class="k-grid-table k-table">
+                                    <colgroup>
+                                        <col class="k-group-col">
+                                        <col>
+                                    </colgroup>
+                                    <tbody class="k-table-tbody">
+                                        <tr class="k-table-group-row k-grouping-row k-table-row">
+                                            <td colspan="9" class="k-table-td">
+                                                <p class="k-reset">
+                                                    <span class="k-pin-cell">
+                                                        <span class="k-icon k-svg-icon k-svg-i-unpin-outline">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="m333.9 379.03-27.4-27.39H128v-63.99h.1c31.3 1.1 59.1-14.2 76.5-37.79l-3.4-3.3h.1l-19.7-19.7c-11.4 17.5-31.1 29.09-53.6 29.09-8.8 0-16.9 3.6-22.7 9.4s-9.3 13.8-9.3 22.69v63.89c0 17.7 14.4 32.09 32.1 32.09h111.8s.1 0 .1.1v79.48c0 8.5 6.5 15.9 15 16.4h1c8.8 0 16-7.2 16-16v-79.88s0-.1.1-.1h66.7l-4.9-5Zm50-123.07c-17.6 0-33.6-7.1-45.2-18.7-11.5-11.6-18.7-27.49-18.7-45.19v-63.99s0-.1.1-.1H352c17.7 0 32.1-14.4 32.1-32.09V64.1c-.4-17.7-14.8-32.09-32.5-32.09H160c-17.7 0-32.1 14.4-32.1 32.09v18.5l45.5 45.49h18.5s.1 0 .1.1v18.5l31.9 31.89v-50.39c0-17.7-14.4-32.09-32.1-32.09h-31.9V64.11h191.8l.1 31.79h-32c-17.7 0-32.1 14.4-32.1 32.09v63.99c0 52.39 42.8 95.48 95.1 95.88h.8v50.49l28.6 28.59c2.4-4.5 3.7-9.6 3.7-15v-63.89c.1-17.7-14.3-32.09-32-32.09M351.6 64c.1 0 .1.1 0 0M480 457.32l-22.6 22.59L32 54.59 54.6 32z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </span>
+                                                    <span class="k-icon k-svg-icon">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                                    </span>Rating 1/5
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <table class="k-grid-table k-table">
+                                <colgroup>
+                                    <col class="k-group-col">
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="4" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-pin-cell">
+                                                    <span class="k-icon k-svg-icon k-svg-i-pin-outline">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M351.6 63.99q.1 0 0 0c.1 0 .1.1 0 0l.1 31.89h-32c-17.7 0-32.1 14.4-32.1 32.09v63.99c0 52.39 42.8 95.48 95.1 95.88h.8v63.99H128v-63.99h.1c52.9 1.9 95.7-43.09 95.7-96.08v-63.69c0-17.7-14.4-32.09-32.1-32.09h-31.9V64.09zm0-31.99H160c-17.7 0-32.1 14.4-32.1 32.09v31.89c0 17.7 14.4 32.09 32.1 32.09h31.9s.1 0 .1.1v63.99c0 35.29-28.6 63.89-63.9 63.89-17.7 0-32.1 14.4-32.1 32.09v63.79c0 17.7 14.4 32.09 32.1 32.09h111.8s.1 0 .1.1v79.48c0 8.5 6.5 15.9 15 16.4h1c8.8 0 16-7.2 16-16v-79.88s0-.1.1-.1h111.8c17.7 0 32.1-14.4 32.1-32.09v-63.89c0-17.7-14.4-32.09-32.1-32.09-35.3 0-63.9-28.59-63.9-63.89v-63.99s0-.1.1-.1H352c17.7 0 32.1-14.4 32.1-32.09V64.09C383.7 46.39 369.3 32 351.6 32"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z"></path>
+                                                    </svg>
+                                                </span>Rating 3/5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Sig Jeannel</td>
+                                        <td colspan="1" class="k-table-td">Human Resources Assistant III</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Isadora Plumtree</td>
+                                        <td colspan="1" class="k-table-td">Graphic Designer</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Xerxes Borson</td>
+                                        <td colspan="1" class="k-table-td">Content Writer</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="4" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-pin-cell">
+                                                    <span class="k-icon k-svg-icon k-svg-i-unpin-outline">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m333.9 379.03-27.4-27.39H128v-63.99h.1c31.3 1.1 59.1-14.2 76.5-37.79l-3.4-3.3h.1l-19.7-19.7c-11.4 17.5-31.1 29.09-53.6 29.09-8.8 0-16.9 3.6-22.7 9.4s-9.3 13.8-9.3 22.69v63.89c0 17.7 14.4 32.09 32.1 32.09h111.8s.1 0 .1.1v79.48c0 8.5 6.5 15.9 15 16.4h1c8.8 0 16-7.2 16-16v-79.88s0-.1.1-.1h66.7l-4.9-5Zm50-123.07c-17.6 0-33.6-7.1-45.2-18.7-11.5-11.6-18.7-27.49-18.7-45.19v-63.99s0-.1.1-.1H352c17.7 0 32.1-14.4 32.1-32.09V64.1c-.4-17.7-14.8-32.09-32.5-32.09H160c-17.7 0-32.1 14.4-32.1 32.09v18.5l45.5 45.49h18.5s.1 0 .1.1v18.5l31.9 31.89v-50.39c0-17.7-14.4-32.09-32.1-32.09h-31.9V64.11h191.8l.1 31.79h-32c-17.7 0-32.1 14.4-32.1 32.09v63.99c0 52.39 42.8 95.48 95.1 95.88h.8v50.49l28.6 28.59c2.4-4.5 3.7-9.6 3.7-15v-63.89c.1-17.7-14.3-32.09-32-32.09M351.6 64c.1 0 .1.1 0 0M480 457.32l-22.6 22.59L32 54.59 54.6 32z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z"></path>
+                                                    </svg>
+                                                </span>Rating 1/5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-pinned-source k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Ruthi Bldini</td>
+                                        <td colspan="1" class="k-table-td">Coordinator</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-pinned-source k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Marcelina Vee</td>
+                                        <td colspan="1" class="k-table-td">Marketing Specialist</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-pinned-source k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Finnian Bramble</td>
+                                        <td colspan="1" class="k-table-td">Business Analyst</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-grid">
+                <div class="k-grouping-header">
+                    <div class="k-chip-list">
+                        <div class="k-chip">
+                            <span class="k-chip-content">
+                                <span class="k-chip-label">Rating</span>
+                            </span>
+                            <span class="k-chip-actions">
+                                <span class="k-chip-action k-chip-remove-action">
+                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="k-grouping-drop-container"></div>
+                </div>
+                <div class="k-grid-aria-root">
+                    <div class="k-grid-header k-grid-draggable-header">
+                        <div class="k-grid-header-wrap">
+                            <table class="k-grid-header-table k-table">
+                                <colgroup>
+                                    <col class="k-group-col">
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead class="k-table-thead">
+                                    <tr class="k-table-row">
+                                        <th colspan="1" rowspan="1" class="k-group-cell k-header k-table-th"></th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Contact Name</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Job Title</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Rating</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="k-grid-container">
+                        <div class="k-grid-content">
+                            <table class="k-grid-table k-table">
+                                <colgroup>
+                                    <col class="k-group-col">
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="4" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-pin-cell">
+                                                    <span class="k-icon k-svg-icon k-svg-i-pin-outline">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M351.6 63.99q.1 0 0 0c.1 0 .1.1 0 0l.1 31.89h-32c-17.7 0-32.1 14.4-32.1 32.09v63.99c0 52.39 42.8 95.48 95.1 95.88h.8v63.99H128v-63.99h.1c52.9 1.9 95.7-43.09 95.7-96.08v-63.69c0-17.7-14.4-32.09-32.1-32.09h-31.9V64.09zm0-31.99H160c-17.7 0-32.1 14.4-32.1 32.09v31.89c0 17.7 14.4 32.09 32.1 32.09h31.9s.1 0 .1.1v63.99c0 35.29-28.6 63.89-63.9 63.89-17.7 0-32.1 14.4-32.1 32.09v63.79c0 17.7 14.4 32.09 32.1 32.09h111.8s.1 0 .1.1v79.48c0 8.5 6.5 15.9 15 16.4h1c8.8 0 16-7.2 16-16v-79.88s0-.1.1-.1h111.8c17.7 0 32.1-14.4 32.1-32.09v-63.89c0-17.7-14.4-32.09-32.1-32.09-35.3 0-63.9-28.59-63.9-63.89v-63.99s0-.1.1-.1H352c17.7 0 32.1-14.4 32.1-32.09V64.09C383.7 46.39 369.3 32 351.6 32"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z"></path>
+                                                    </svg>
+                                                </span>Rating 3/5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Sig Jeannel</td>
+                                        <td colspan="1" class="k-table-td">Human Resources Assistant III</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Isadora Plumtree</td>
+                                        <td colspan="1" class="k-table-td">Graphic Designer</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Xerxes Borson</td>
+                                        <td colspan="1" class="k-table-td">Content Writer</td>
+                                        <td colspan="1" class="k-table-td">3/5</td>
+                                    </tr>
+                                    <tr class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="4" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-pin-cell">
+                                                    <span class="k-icon k-svg-icon k-svg-i-unpin-outline">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m333.9 379.03-27.4-27.39H128v-63.99h.1c31.3 1.1 59.1-14.2 76.5-37.79l-3.4-3.3h.1l-19.7-19.7c-11.4 17.5-31.1 29.09-53.6 29.09-8.8 0-16.9 3.6-22.7 9.4s-9.3 13.8-9.3 22.69v63.89c0 17.7 14.4 32.09 32.1 32.09h111.8s.1 0 .1.1v79.48c0 8.5 6.5 15.9 15 16.4h1c8.8 0 16-7.2 16-16v-79.88s0-.1.1-.1h66.7l-4.9-5Zm50-123.07c-17.6 0-33.6-7.1-45.2-18.7-11.5-11.6-18.7-27.49-18.7-45.19v-63.99s0-.1.1-.1H352c17.7 0 32.1-14.4 32.1-32.09V64.1c-.4-17.7-14.8-32.09-32.5-32.09H160c-17.7 0-32.1 14.4-32.1 32.09v18.5l45.5 45.49h18.5s.1 0 .1.1v18.5l31.9 31.89v-50.39c0-17.7-14.4-32.09-32.1-32.09h-31.9V64.11h191.8l.1 31.79h-32c-17.7 0-32.1 14.4-32.1 32.09v63.99c0 52.39 42.8 95.48 95.1 95.88h.8v50.49l28.6 28.59c2.4-4.5 3.7-9.6 3.7-15v-63.89c.1-17.7-14.3-32.09-32-32.09M351.6 64c.1 0 .1.1 0 0M480 457.32l-22.6 22.59L32 54.59 54.6 32z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z"></path>
+                                                    </svg>
+                                                </span>Rating 1/5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-pinned-source k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Ruthi Bldini</td>
+                                        <td colspan="1" class="k-table-td">Coordinator</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-pinned-source k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Marcelina Vee</td>
+                                        <td colspan="1" class="k-table-td">Marketing Specialist</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                    <tr class="k-master-row k-pinned-source k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="1" class="k-table-td">Finnian Bramble</td>
+                                        <td colspan="1" class="k-table-td">Business Analyst</td>
+                                        <td colspan="1" class="k-table-td">1/5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="k-grid-sticky-container k-grid-sticky-bottom-container" style="inset-block-end: 0px;">
+                                <table class="k-grid-table k-table">
+                                    <colgroup>
+                                        <col class="k-group-col">
+                                        <col>
+                                    </colgroup>
+                                    <tbody class="k-table-tbody">
+                                        <tr class="k-table-group-row k-grouping-row k-table-row">
+                                            <td colspan="4" class="k-table-td">
+                                                <p class="k-reset">
+                                                    <span class="k-pin-cell">
+                                                        <span class="k-icon k-svg-icon k-svg-i-unpin-outline">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="m333.9 379.03-27.4-27.39H128v-63.99h.1c31.3 1.1 59.1-14.2 76.5-37.79l-3.4-3.3h.1l-19.7-19.7c-11.4 17.5-31.1 29.09-53.6 29.09-8.8 0-16.9 3.6-22.7 9.4s-9.3 13.8-9.3 22.69v63.89c0 17.7 14.4 32.09 32.1 32.09h111.8s.1 0 .1.1v79.48c0 8.5 6.5 15.9 15 16.4h1c8.8 0 16-7.2 16-16v-79.88s0-.1.1-.1h66.7l-4.9-5Zm50-123.07c-17.6 0-33.6-7.1-45.2-18.7-11.5-11.6-18.7-27.49-18.7-45.19v-63.99s0-.1.1-.1H352c17.7 0 32.1-14.4 32.1-32.09V64.1c-.4-17.7-14.8-32.09-32.5-32.09H160c-17.7 0-32.1 14.4-32.1 32.09v18.5l45.5 45.49h18.5s.1 0 .1.1v18.5l31.9 31.89v-50.39c0-17.7-14.4-32.09-32.1-32.09h-31.9V64.11h191.8l.1 31.79h-32c-17.7 0-32.1 14.4-32.1 32.09v63.99c0 52.39 42.8 95.48 95.1 95.88h.8v50.49l28.6 28.59c2.4-4.5 3.7-9.6 3.7-15v-63.89c.1-17.7-14.3-32.09-32-32.09M351.6 64c.1 0 .1.1 0 0M480 457.32l-22.6 22.59L32 54.59 54.6 32z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </span>
+                                                    <span class="k-icon k-svg-icon">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                                    </span>Rating 1/5
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
