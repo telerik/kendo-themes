@@ -394,6 +394,10 @@ $kendo-grid-sticky-header-border: var( --kendo-grid-sticky-header-border, #{$ken
 /// @group grid
 $kendo-grid-sticky-footer-bg: var( --kendo-grid-sticky-footer-bg, #{$kendo-grid-header-bg} ) !default;
 
+/// The box shadow of the sticky container in the Grid.
+/// @group grid
+$kendo-grid-sticky-container-shadow: k-elevation(3) !default;
+
 /// The horizontal padding of the Grid filter menu container.
 /// @group grid
 $kendo-filter-menu-container-padding-y: var( --kendo-filter-menu-container-padding-y, #{k-spacing(3)} ) !default;
@@ -554,6 +558,10 @@ $kendo-grid-stack-focus-outline: var( --kendo-grid-stack-focus-outline, #{k-colo
 /// @group grid
 $kendo-grid-stack-expandable-shadow: var( --kendo-grid-stack-expandable-shadow, #{k-elevation(2)} ) !default;
 
+/// The font weight of the pinned source row in the Grid.
+/// @group grid
+$kendo-grid-pinned-source-font-weight: var( --kendo-font-weight-semibold, 600 ) !default;
+
 @forward "@progress/kendo-theme-core/scss/components/grid/_variables.scss" with (
     $kendo-grid-default-size: $kendo-grid-default-size,
     $kendo-grid-border-width: $kendo-grid-border-width,
@@ -690,5 +698,7 @@ $kendo-grid-stack-expandable-shadow: var( --kendo-grid-stack-expandable-shadow, 
     $kendo-grid-stack-focus-outline: $kendo-grid-stack-focus-outline,
     $kendo-grid-stack-expandable-shadow: $kendo-grid-stack-expandable-shadow,
     $kendo-grid-cell-vertical-border-width: $kendo-grid-cell-border-width-x,
-    $kendo-grid-cell-horizontal-border-width: $kendo-grid-cell-border-width-y
+    $kendo-grid-cell-horizontal-border-width: $kendo-grid-cell-border-width-y,
+    $kendo-grid-pinned-source-font-weight: $kendo-grid-pinned-source-font-weight,
+    $kendo-grid-sticky-container-shadow: $kendo-grid-sticky-container-shadow
 );
