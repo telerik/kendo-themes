@@ -38,6 +38,9 @@ $kendo-icon-spacing: k-spacing(2) !default;
 /// The padding of the action Icons container.
 /// @group icon
 $kendo-icon-padding: k-spacing(1) !default;
+/// The color of accent icons.
+/// @group icon
+$kendo-accent-icon-color: var( --kendo-accent-icon-color, #{k-color(tertiary-active)} ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/icons/_variables.scss" with (
     $kendo-icon-default-size: $kendo-icon-default-size,
@@ -50,7 +53,8 @@ $kendo-icon-padding: k-spacing(1) !default;
     $kendo-icon-size-xxl: $kendo-icon-size-xxl,
     $kendo-icon-size-xxxl: $kendo-icon-size-xxxl,
     $kendo-icon-spacing: $kendo-icon-spacing,
-    $kendo-icon-padding: $kendo-icon-padding
+    $kendo-icon-padding: $kendo-icon-padding,
+    $kendo-accent-icon-color: $kendo-accent-icon-color
 );
 
 :root {
