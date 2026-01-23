@@ -1028,6 +1028,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-sticky-container-shadow</td>
+    <td>String</td>
+    <td><code>k-elevation(2)</code></td>
+    <td><code>var(--kendo-elevation-2, 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the sticky container in the Grid.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-column-menu-width</td>
     <td>Number</td>
     <td><code>250px</code></td>
@@ -1425,6 +1435,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Grid stack layout expandable row shadow.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-pinned-source-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-semibold, 600 )</code></td>
+    <td><code>var(--kendo-font-weight-semibold, 600)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the pinned source row in the Grid.</div></div>
     </td>
 </tr>
 <tr>
