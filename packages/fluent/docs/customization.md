@@ -12994,8 +12994,8 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-dropdowntree-popup-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-popup-content-padding-x</code></td>
-    <td><code>var(--kendo-popup-content-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the DropdownTree popup</div></div>
@@ -13004,11 +13004,31 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dropdowntree-popup-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-popup-content-padding-y</code></td>
-    <td><code>var(--kendo-popup-content-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the DropdownTree popup</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropdowntree-check-all-padding-x</td>
+    <td>String</td>
+    <td><code>var(--kendo-dropdowntree-check-all-padding-x, k-spacing(2))</code></td>
+    <td><code>var(--kendo-dropdowntree-check-all-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the DropdownTree check all</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropdowntree-check-all-padding-y</td>
+    <td>String</td>
+    <td><code>var(--kendo-dropdowntree-check-all-padding-y, k-spacing(2))</code></td>
+    <td><code>var(--kendo-dropdowntree-check-all-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the DropdownTree check all</div></div>
     </td>
 </tr>
 </tbody>
@@ -36914,6 +36934,26 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-treeview-gap</td>
+    <td>String</td>
+    <td><code>var( --kendo-treeview-gap, k-spacing(0.5) )</code></td>
+    <td><code>var(--kendo-treeview-gap, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-treeview-border-radius, k-border-radius(md) )</code></td>
+    <td><code>var(--kendo-treeview-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TreeView.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-treeview-font-family</td>
     <td>String</td>
     <td><code>var( --kendo-treeview-font-family, var( --kendo-font-family, normal ) )</code></td>
@@ -37256,8 +37296,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-item-selected-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-treeview-item-selected-bg, color-mix(in srgb, k-color(on-app-surface) 12%, transparent) )</code></td>
-    <td><code>var(--kendo-treeview-item-selected-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 12%, transparent))</code></td>
+    <td><code>var( --kendo-treeview-item-selected-bg, color-mix(in srgb, k-color(on-app-surface) 13%, transparent) )</code></td>
+    <td><code>var(--kendo-treeview-item-selected-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 13%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected TreeView items.</div></div>
@@ -37281,6 +37321,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected TreeView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-selected-hover-bg</td>
+    <td>String</td>
+    <td><code>var( --kendo-treeview-item-selected-hover-bg, k-color(base-emphasis) )</code></td>
+    <td><code>var(--kendo-treeview-item-selected-hover-bg, var(--kendo-color-base-emphasis, #d1d1d1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected and hovered TreeView items.</div></div>
     </td>
 </tr>
 <tr>
