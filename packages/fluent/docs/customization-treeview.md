@@ -38,6 +38,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-treeview-gap</td>
+    <td>String</td>
+    <td><code>var( --kendo-treeview-gap, k-spacing(0.5) )</code></td>
+    <td><code>var(--kendo-treeview-gap, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-treeview-border-radius, k-border-radius(md) )</code></td>
+    <td><code>var(--kendo-treeview-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TreeView.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-treeview-font-family</td>
     <td>String</td>
     <td><code>var( --kendo-treeview-font-family, var( --kendo-font-family, normal ) )</code></td>
@@ -380,8 +400,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-selected-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-treeview-item-selected-bg, color-mix(in srgb, k-color(on-app-surface) 12%, transparent) )</code></td>
-    <td><code>var(--kendo-treeview-item-selected-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 12%, transparent))</code></td>
+    <td><code>var( --kendo-treeview-item-selected-bg, color-mix(in srgb, k-color(on-app-surface) 13%, transparent) )</code></td>
+    <td><code>var(--kendo-treeview-item-selected-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 13%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected TreeView items.</div></div>
@@ -405,6 +425,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected TreeView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-selected-hover-bg</td>
+    <td>String</td>
+    <td><code>var( --kendo-treeview-item-selected-hover-bg, k-color(base-emphasis) )</code></td>
+    <td><code>var(--kendo-treeview-item-selected-hover-bg, var(--kendo-color-base-emphasis, #d1d1d1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected and hovered TreeView items.</div></div>
     </td>
 </tr>
 <tr>
