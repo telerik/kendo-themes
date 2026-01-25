@@ -2,8 +2,9 @@ import { SmartBox, SmartBoxSendButton }  from "../";
 import { Icon } from '../../icon';
 import { IconButton } from '../../button';
 
-export const SmartBoxNormal = (props) =>
+export const SmartBoxProcessing = (props) =>
     <SmartBox {...props}
+        processing
         separators={false}
         prefix={
             <>
@@ -13,7 +14,7 @@ export const SmartBoxNormal = (props) =>
         suffix={
             <>
                 <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" />
-                <SmartBoxSendButton />
+                <SmartBoxSendButton processing />
             </>
         }
     />;
