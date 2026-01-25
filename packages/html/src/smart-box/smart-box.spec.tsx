@@ -38,6 +38,7 @@ export type KendoSmartBoxProps = KendoSmartBoxOptions & {
     placeholder?: string;
     popup?: React.JSX.Element;
     opened?: boolean;
+    processing?: boolean;
 };
 
 export type KendoSmartBoxState = { [K in (typeof states)[number]]?: boolean };
@@ -65,6 +66,7 @@ export const SmartBox: KendoComponent<KendoSmartBoxProps & KendoSmartBoxState & 
         disabled,
         popup,
         opened,
+        processing,
         ...other
     } = props;
 
@@ -78,6 +80,7 @@ export const SmartBox: KendoComponent<KendoSmartBoxProps & KendoSmartBoxState & 
                 hover={hover}
                 focus={focus}
                 disabled={disabled}
+                loading={processing}
                 className={classNames(props.className, SMART_BOX_CLASSNAME)}
             >
                 {prefix &&
