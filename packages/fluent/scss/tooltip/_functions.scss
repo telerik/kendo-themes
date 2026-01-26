@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "sass:list";
 @use "../core/_index.scss" as *;
 
 
@@ -7,7 +8,7 @@
     $_solid-colors: ("primary", "dark", "light", "inverse");
 
     @each $name in $colors {
-        @if index($_solid-colors, $name) {
+        @if list.index($_solid-colors, $name) {
             $_theme: map.merge(( $name: (
                 color: k-color(on-#{$name}),
                 background-color: k-color(#{$name}),
