@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.0...v13.0.0-dev.1) (2026-01-26)
+
+
+### Features
+
+* **html:** add grid sticky container spec ([254e6af](https://github.com/telerik/kendo-themes/commit/254e6af2eefdfe7c29e87eb3c29ca827a60aa61f))
+
+
+
+
+
 # [13.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.10...v13.0.0-dev.0) (2026-01-23)
 
 

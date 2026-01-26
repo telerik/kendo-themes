@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.0...v13.0.0-dev.1) (2026-01-26)
+
+
+### Features
+
+* **grid:** add pinned row/group row styles ([c173d4e](https://github.com/telerik/kendo-themes/commit/c173d4ebfbefa60a82cac35406268249f5b764a6))
+* **grid:** add sticky group header and footer styles ([df4908f](https://github.com/telerik/kendo-themes/commit/df4908fcdc24fbeb59138768764b1b95dad84a0f))
+
+
+
+
+
 # [13.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.10...v13.0.0-dev.0) (2026-01-23)
 
 
