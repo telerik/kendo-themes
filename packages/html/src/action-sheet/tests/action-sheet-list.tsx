@@ -37,7 +37,7 @@ export default () => (
                     footer={
                         <ActionSheetFooter >
                             <Button text="Apply" size="large" themeColor="primary" />
-                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Cancel" size="large" />
                         </ActionSheetFooter>
                     }
                 >
@@ -70,7 +70,7 @@ export default () => (
                     footer={
                         <ActionSheetFooter >
                             <Button text="Apply" size="large" themeColor="primary" />
-                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Cancel" size="large" />
                         </ActionSheetFooter>
                     }
                 >
@@ -103,7 +103,7 @@ export default () => (
                     footer={
                         <ActionSheetFooter >
                             <Button text="Apply" size="large" themeColor="primary" />
-                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Cancel" size="large" />
                         </ActionSheetFooter>
                     }
                 >
@@ -141,7 +141,7 @@ export default () => (
                     footer={
                         <ActionSheetFooter >
                             <Button text="Apply" size="large" themeColor="primary" />
-                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Cancel" size="large" />
                         </ActionSheetFooter>
                     }
                 >

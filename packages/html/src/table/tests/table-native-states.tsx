@@ -8,7 +8,7 @@ export default () =>(
             <span></span>
 
             <section>
-                <TableNative size="medium">
+                <TableNative>
                     <colgroup>
                         <col style={{ width: '50px' }} />
                         <col />

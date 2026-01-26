@@ -39,10 +39,7 @@ export const CardHeader = (
                     <Button
                         className="k-card-details"
                         icon="more-vertical"
-                        rounded="medium"
-                        size="medium"
                         fillMode="flat"
-                        themeColor="base"
                     />
                 </span>
             }

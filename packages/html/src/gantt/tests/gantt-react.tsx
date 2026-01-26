@@ -27,7 +27,7 @@ export default () =>(
                                 <Button selected>Week</Button>
                                 <Button className="k-group-end">Month</Button>
                             </ButtonGroup>
-                            <select className="k-picker k-picker-solid k-dropdown-list k-dropdown k-views-dropdown k-rounded-md">
+                            <select className="k-picker k-dropdown-list k-dropdown k-views-dropdown">
                                 <option value="day">Day</option>
                                 <option value="week">Week</option>
                                 <option value="month">Month</option>
@@ -38,7 +38,7 @@ export default () =>(
             )}>
                 <GanttContent>
                     <TreeList className="k-treelist-scrollable">
-                        <Table size="medium" className="k-table-layout-fixed" style={{ width: "4500px" }}>
+                        <Table className="k-table-layout-fixed" style={{ width: "4500px" }}>
                             <colgroup>
                                 <col style={{ width: "100px" }} />
                                 <col style={{ width: "200px" }} />
@@ -48,7 +48,7 @@ export default () =>(
                                 <TableRow>
                                     <GridHeaderCell colspan={2} rowspan={1} sticky style={{ left: '0px', right: '0px', borderRightWidth: "1px; top: 0px" }}><a className="k-link">summary</a></GridHeaderCell>
                                     <GridHeaderCell colspan={1} rowspan={2} style={{ top: '0px' }}>
-                                        <Table size="medium">
+                                        <Table>
                                             <TableTbody>
                                                 <TableRow>
                                                     <TableTd colspan={7} className="k-header k-nonwork-hour">Sun, 6/1 - Sun, 6/8</TableTd>

@@ -145,7 +145,7 @@ export default () =>(
                                                 <GridStackCell commandCell cellHeader="Commands" cellContent={
                                                     <>
                                                         <Button text="Save" icon="save" themeColor="primary" />
-                                                        <Button text="Cancel" icon="cancel" themeColor="base" />
+                                                        <Button text="Cancel" icon="cancel" />
                                                     </>
                                                 } />
                                             </GridStackRow>

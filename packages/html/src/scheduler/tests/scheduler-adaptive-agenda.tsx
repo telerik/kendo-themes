@@ -20,7 +20,7 @@ export default () =>(
                                         <Button className="k-create-event k-group-end" icon="plus"></Button>
                                     </ButtonGroup>
                                     <span className="k-spacer"></span>
-                                    <select className="k-views-dropdown k-picker k-picker-solid k-dropdown-list k-dropdown k-rounded-md">
+                                    <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown">
                                         <option>Agenda</option>
                                     </select>
                                 </Toolbar>
