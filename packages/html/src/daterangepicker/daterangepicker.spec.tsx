@@ -121,7 +121,7 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
                     }
                     footer={
                         <ActionSheetFooter>
-                            <Button text="Cancel" size="large" themeColor="base" className="k-time-cancel" />
+                            <Button text="Cancel" size="large" className="k-time-cancel" />
                             <Button text="Set" size="large" themeColor="primary" className="k-time-accept" />
                         </ActionSheetFooter>
                     }

@@ -154,7 +154,7 @@ export const TimePicker: KendoComponent<KendoTimePickerProps & KendoTimePickerSt
                     }
                     footer={
                         <ActionSheetFooter>
-                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Cancel" size="large" />
                             <Button text="Set time" size="large" themeColor="primary" />
                         </ActionSheetFooter>
                     }

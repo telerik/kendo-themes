@@ -17,8 +17,7 @@ export type KendoColorInputOptions = {
 };
 
 const defaultOptions = {
-    mode: 'rgba',
-    size: Size.medium,
+    mode: 'rgba'
 };
 
 export const ColorInput = (

@@ -18,7 +18,7 @@ export default () =>(
 
             <div>no placeholder or value</div>
             <div>
-                <MultiSelectNormal fillMode="solid"/>
+                <MultiSelectNormal />
             </div>
             <div dir="rtl">
                 <MultiSelectNormal />
@@ -72,7 +72,6 @@ export default () =>(
             <div>multi line + overflow</div>
             <div>
                 <MultiSelectNormal
-                    fillMode="solid"
                     tags={(
                         <>
                             <Chip text="multi-line" actions={ <ChipAction type="remove"/> } />
@@ -83,7 +82,6 @@ export default () =>(
             </div>
             <div dir="rtl">
                 <MultiSelectNormal
-                    fillMode="solid"
                     tags={(
                         <>
                             <Chip text="multi-line" actions={ <ChipAction type="remove"/> } />

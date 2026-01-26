@@ -70,26 +70,26 @@ export const Menu: KendoComponent<KendoMenuProps & React.HTMLAttributes<HTMLULis
                 (<MenuScrollableWrapper orientation={orientation} style={wrapperStyles} dir={props.dir}>
                     {scrollButtonsPosition === 'start' &&
                         <>
-                            <Button fillMode="flat" rounded={null} size={"medium"}
+                            <Button fillMode="flat"
                                 icon={`caret-alt-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev"></Button>
-                            <Button fillMode="flat" rounded={null} size={"medium"}
+                            <Button fillMode="flat"
                                 icon={`caret-alt-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next"></Button>
                         </>
                     }
                     {scrollButtonsPosition === 'around' &&
-                        <Button fillMode="flat" rounded={null} size={"medium"}
+                        <Button fillMode="flat"
                             icon={`caret-alt-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev"></Button>}
                     {ulMenu}
                     {scrollButtonsPosition === 'end' &&
                         <>
-                            <Button fillMode="flat" rounded={null} size={"medium"}
+                            <Button fillMode="flat"
                                 icon={`caret-alt-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev"></Button>
-                            <Button fillMode="flat" rounded={null} size={"medium"}
+                            <Button fillMode="flat"
                                 icon={`caret-alt-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next"></Button>
                         </>
                     }
                     {scrollButtonsPosition === 'around' &&
-                        <Button fillMode="flat" rounded={null} size={"medium"}
+                        <Button fillMode="flat"
                             icon={`caret-alt-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next"></Button>}
                 </MenuScrollableWrapper>) :
                 ulMenu

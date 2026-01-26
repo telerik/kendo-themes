@@ -196,10 +196,10 @@ export default () => (
                                         </CardBody>
                                         <ActionButtons className="k-card-actions" alignment="start">
                                             <IconTextButton fillMode="flat" themeColor="primary" icon="copy">Copy</IconTextButton>
-                                            <IconTextButton fillMode="flat" themeColor="base" icon="arrow-rotate-cw">Retry</IconTextButton>
+                                            <IconTextButton fillMode="flat" icon="arrow-rotate-cw">Retry</IconTextButton>
                                             <span className="k-spacer"></span>
-                                            <IconButton fillMode="flat" themeColor="base" icon="thumb-up-outline"></IconButton>
-                                            <IconButton fillMode="flat" themeColor="base" icon="thumb-down-outline"></IconButton>
+                                            <IconButton fillMode="flat" icon="thumb-up-outline"></IconButton>
+                                            <IconButton fillMode="flat" icon="thumb-down-outline"></IconButton>
                                         </ActionButtons>
                                     </Card>
                                 </div>
@@ -229,10 +229,10 @@ export default () => (
                                         </CardBody>
                                         <ActionButtons className="k-card-actions" alignment="start">
                                             <IconTextButton fillMode="flat" themeColor="primary" icon="copy">Copy</IconTextButton>
-                                            <IconTextButton fillMode="flat" themeColor="base" icon="arrow-rotate-cw">Retry</IconTextButton>
+                                            <IconTextButton fillMode="flat" icon="arrow-rotate-cw">Retry</IconTextButton>
                                             <span className="k-spacer"></span>
-                                            <IconButton fillMode="flat" themeColor="base" icon="thumb-up-outline"></IconButton>
-                                            <IconButton fillMode="flat" themeColor="base" icon="thumb-down-outline"></IconButton>
+                                            <IconButton fillMode="flat" icon="thumb-up-outline"></IconButton>
+                                            <IconButton fillMode="flat" icon="thumb-down-outline"></IconButton>
                                         </ActionButtons>
                                     </Card>
                                 </div>

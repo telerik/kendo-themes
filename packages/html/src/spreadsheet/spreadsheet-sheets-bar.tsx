@@ -14,22 +14,22 @@ export type KendoSpreadsheetSheetsBarProps = {
 const defaultTabStripItems = (
     <>
         <TabStripItem first value="Sheet 1" actions={
-            <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
         }></TabStripItem>
         <TabStripItem value="Sheet 2" actions={
-            <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
         }></TabStripItem>
         <TabStripItem value="Sheet 3" actions={
-            <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
         }></TabStripItem>
         <TabStripItem value="Sheet 4" actions={
-            <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
         }></TabStripItem>
         <TabStripItem value="Sheet 5" actions={
-            <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
         }></TabStripItem>
         <TabStripItem last value="Sheet 6" actions={
-            <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
         }></TabStripItem>
     </>
 );

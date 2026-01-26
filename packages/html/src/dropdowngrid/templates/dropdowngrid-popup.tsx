@@ -5,7 +5,7 @@ export const DropdownGridPopup = (props) => (
     <DropdownGrid
         opened={true}
         popup={
-            <DataTable size="medium">
+            <DataTable>
                 <TableHeader>
                     <colgroup>
                         <col style={{ width: '50px' }} />
