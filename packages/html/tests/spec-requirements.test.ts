@@ -1,6 +1,10 @@
-import { describe, it, expect } from "@jest/globals";
+import { describe, it, expect } from "vitest";
 import * as fs from "fs";
 import * as path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Function to extract export paths from index.ts
 function getExportPaths(): string[] {
@@ -14,31 +18,32 @@ function getExportPaths(): string[] {
 }
 
 // Generate test modules dynamically
-function generateTestModules() {
+async function generateTestModules() {
   const testModules: Array<{ module: any; moduleName: string }> = [];
 
-  getExportPaths().forEach((exportPath) => {
+  for (const exportPath of getExportPaths()) {
     const moduleName = exportPath.replace("/index", "");
     const specFile = `${moduleName}/${path.basename(moduleName)}.spec.tsx`;
     const fullSpecPath = path.join(__dirname, "..", "src", specFile);
 
     if (fs.existsSync(fullSpecPath)) {
       try {
-        const specModule = require(`../src/${specFile.replace(".tsx", "")}`);
+        const specModule = await import(`../src/${specFile.replace(".tsx", "")}`);
         testModules.push({ module: specModule, moduleName });
       } catch (error) {
         console.warn(`Could not import spec module for ${moduleName}:`, (error as Error).message);
       }
     }
-  });
+  }
 
   return testModules;
 }
 
-describe("Component Requirements", () => {
+describe("Component Requirements", async () => {
+  const testModules = await generateTestModules();
 
   // Generate tests for each component
-  generateTestModules().forEach(({ module, moduleName }) => {
+  testModules.forEach(({ module, moduleName }) => {
     const components = Object.entries(module).filter(([name, value]) =>
       name[0] === name[0].toUpperCase() && typeof value === "function"
     );

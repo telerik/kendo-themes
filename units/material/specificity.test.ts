@@ -1,4 +1,5 @@
 import "./theme.env.js";
+import { describe } from "vitest";
 import { presets, testSpecificity } from "../specificity-analyzer.js";
 import { allComponents } from "../specificity-specs.js";
 
