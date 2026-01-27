@@ -3,4 +3,17 @@
 
 @mixin kendo-spreadsheet--layout() {
     @include kendo-spreadsheet--layout-base();
+
+    .k-tabstrip.k-spreadsheet-sheets.k-tabstrip-top > .k-tabstrip-items-wrapper .k-tabstrip-item {
+        border-block-end-width: 0;
+    }
+    .k-tabstrip.k-spreadsheet-sheets.k-tabstrip-bottom > .k-tabstrip-items-wrapper .k-tabstrip-item {
+        border-block-start-width: 0;
+    }
+    .k-tabstrip.k-spreadsheet-sheets.k-tabstrip-left > .k-tabstrip-items-wrapper .k-tabstrip-item {
+        border-inline-end-width: 0;
+    }
+    .k-tabstrip.k-spreadsheet-sheets.k-tabstrip-right > .k-tabstrip-items-wrapper .k-tabstrip-item {
+        border-inline-start-width: 0;
+    }
 }

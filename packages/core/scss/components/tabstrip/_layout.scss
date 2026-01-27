@@ -236,6 +236,148 @@
                 overflow-y: auto;
             }
         }
+
+        // Scrollable with buttons (not overlay) - use pseudo-element for border
+        // so tabs can paint over it (overflow:hidden clips negative margin)
+        &:not(.k-tabstrip-scrollable-overlay) {
+            > .k-tabstrip-items-wrapper {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    z-index: k-z-index("base");
+                    border-width: 0;
+                    border-style: solid;
+                    border-color: inherit;
+                }
+            }
+
+            // Top position
+            &.k-tabstrip-top > .k-tabstrip-items-wrapper {
+                border-block-end-width: 0;
+
+                &::after {
+                    inset-inline-start: 0;
+                    inset-inline-end: 0;
+                    inset-block-end: 0;
+                    border-block-end-width: $kendo-tabstrip-border-width;
+                }
+
+                .k-tabstrip-item,
+                .k-item {
+                    z-index: k-z-index("base", 1);
+                }
+            }
+
+            // Bottom position
+            &.k-tabstrip-bottom > .k-tabstrip-items-wrapper {
+                border-block-start-width: 0;
+
+                &::after {
+                    inset-inline-start: 0;
+                    inset-inline-end: 0;
+                    inset-block-start: 0;
+                    border-block-start-width: $kendo-tabstrip-border-width;
+                }
+
+                .k-tabstrip-item,
+                .k-item {
+                    z-index: k-z-index("base", 1);
+                }
+            }
+
+            // Left position
+            &.k-tabstrip-left > .k-tabstrip-items-wrapper {
+                border-right-width: 0;
+
+                &::after {
+                    inset-block-start: 0;
+                    inset-block-end: 0;
+                    right: 0;
+                    border-right-width: $kendo-tabstrip-border-width;
+                }
+
+                .k-tabstrip-item,
+                .k-item {
+                    z-index: k-z-index("base", 1);
+                }
+            }
+
+            // Right position
+            &.k-tabstrip-right > .k-tabstrip-items-wrapper {
+                border-left-width: 0;
+
+                &::after {
+                    inset-block-start: 0;
+                    inset-block-end: 0;
+                    left: 0;
+                    border-left-width: $kendo-tabstrip-border-width;
+                }
+
+                .k-tabstrip-item,
+                .k-item {
+                    z-index: k-z-index("base", 1);
+                }
+            }
+        }
+
+        // Scrollable overlay - use pseudo-element on items for border
+        // (items-wrapper pseudo-elements are used for gradient overlays)
+        &.k-tabstrip-scrollable-overlay {
+            > .k-tabstrip-items-wrapper {
+                border-width: 0;
+
+                > .k-tabstrip-items {
+                    position: relative;
+                    border-color: inherit;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        z-index: k-z-index("base");
+                        border-width: 0;
+                        border-style: solid;
+                        border-color: inherit;
+                    }
+                }
+
+                .k-tabstrip-item,
+                .k-item {
+                    z-index: k-z-index("base", 1);
+                }
+            }
+
+            // Top position
+            &.k-tabstrip-top > .k-tabstrip-items-wrapper > .k-tabstrip-items::after {
+                inset-inline-start: 0;
+                inset-inline-end: 0;
+                inset-block-end: 0;
+                border-block-end-width: $kendo-tabstrip-border-width;
+            }
+
+            // Bottom position
+            &.k-tabstrip-bottom > .k-tabstrip-items-wrapper > .k-tabstrip-items::after {
+                inset-inline-start: 0;
+                inset-inline-end: 0;
+                inset-block-start: 0;
+                border-block-start-width: $kendo-tabstrip-border-width;
+            }
+
+            // Left position
+            &.k-tabstrip-left > .k-tabstrip-items-wrapper > .k-tabstrip-items::after {
+                inset-block-start: 0;
+                inset-block-end: 0;
+                right: 0;
+                border-right-width: $kendo-tabstrip-border-width;
+            }
+
+            // Right position
+            &.k-tabstrip-right > .k-tabstrip-items-wrapper > .k-tabstrip-items::after {
+                inset-block-start: 0;
+                inset-block-end: 0;
+                left: 0;
+                border-left-width: $kendo-tabstrip-border-width;
+            }
+        }
     }
 
     .k-tabstrip-scrollable-overlay {
