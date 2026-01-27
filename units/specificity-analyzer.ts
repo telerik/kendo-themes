@@ -7,7 +7,7 @@ import { SpecComponent } from "./specificity-specs";
 import * as htmlComponents from "../packages/html/src/index";
 import * as sass from "sass";
 import * as path from "path";
-import { it, expect } from "@jest/globals";
+import { describe, it, expect } from "vitest";
 
 const theme = process.env.THEME;
 
@@ -1017,6 +1017,14 @@ function testSpecificity(options: TestSpecificityOptions = {}, components: SpecC
             sourceMap: themeResult.sourceMap,
           });
 
+          // Add a placeholder test if no selectors found (Vitest requires at least one test per suite)
+          if (selectors.length === 0) {
+            it("has no component-specific selectors", () => {
+              expect(true).toBe(true);
+            });
+            return;
+          }
+
           // Generate test cases for each selector
           selectors.forEach(({ selector, specificity, sourceLocation }) => {
             const expectedSpecificity = calculateSpecificityThreshold(selector, Component, thresholdOptions);
@@ -1061,6 +1069,14 @@ function testSpecificity(options: TestSpecificityOptions = {}, components: SpecC
           const selectors = getComponentSelectors(result.css, Component, {
             sourceMap: result.sourceMap,
           });
+
+          // Add a placeholder test if no selectors found (Vitest requires at least one test per suite)
+          if (selectors.length === 0) {
+            it("has no component-specific selectors", () => {
+              expect(true).toBe(true);
+            });
+            return;
+          }
 
           // Generate test cases for each selector
           selectors.forEach(({ selector, specificity, sourceLocation }) => {
