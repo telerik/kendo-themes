@@ -14,6 +14,9 @@
         #test-area {
             grid-template-columns: 250px 250px auto auto;
         }
+        .k-treeview {
+            border: 1px dotted black;
+        }
 
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-4">
@@ -24,78 +27,121 @@
         <section>
             <div class="k-treeview">
                 <ul class="k-treeview-lines k-treeview-group">
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-top">
-                            <span class="k-treeview-leaf">
-                                <span class="k-treeview-leaf-text">Normal</span>
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-hover">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox" type="checkbox">
                             </span>
-                        </span>
-                    </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-treeview-leaf k-hover">
+                            <span class="k-treeview-leaf">
                                 <span class="k-treeview-leaf-text">Hover</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-treeview-leaf k-focus">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-focus">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox" type="checkbox">
+                            </span>
+                            <span class="k-treeview-leaf">
                                 <span class="k-treeview-leaf-text">Focus</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-treeview-leaf k-hover k-focus">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-hover k-focus">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox" type="checkbox">
+                            </span>
+                            <span class="k-treeview-leaf">
                                 <span class="k-treeview-leaf-text">Hover + Focus</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-treeview-leaf k-selected">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox k-checked" type="checkbox" checked="">
+                            </span>
+                            <span class="k-treeview-leaf">
+                                <span class="k-treeview-leaf-text">Checked</span>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-selected">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox" type="checkbox">
+                            </span>
+                            <span class="k-treeview-leaf">
                                 <span class="k-treeview-leaf-text">Selected</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-treeview-leaf k-hover k-selected">
-                                <span class="k-treeview-leaf-text">Selected + Hover</span>
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-selected">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox k-checked" type="checkbox" checked="">
+                            </span>
+                            <span class="k-treeview-leaf">
+                                <span class="k-treeview-leaf-text">Checked + Selected</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-treeview-leaf k-hover k-focus k-selected">
-                                <span class="k-treeview-leaf-text">Selected + Hover + Focus</span>
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-hover k-selected">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox k-checked" type="checkbox" checked="">
+                            </span>
+                            <span class="k-treeview-leaf">
+                                <span class="k-treeview-leaf-text">^ Hover</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-treeview-leaf k-focus k-selected">
-                                <span class="k-treeview-leaf-text">Selected focus</span>
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-focus k-selected">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox k-checked" type="checkbox" checked="">
+                            </span>
+                            <span class="k-treeview-leaf">
+                                <span class="k-treeview-leaf-text">^ Focus</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-disabled k-treeview-leaf">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-hover k-focus k-selected">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox k-checked" type="checkbox" checked="">
+                            </span>
+                            <span class="k-treeview-leaf">
+                                <span class="k-treeview-leaf-text">^ Hover + Focus</span>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-disabled">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox k-disabled" type="checkbox">
+                            </span>
+                            <span class="k-treeview-leaf">
                                 <span class="k-treeview-leaf-text">Disabled</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-disabled k-treeview-leaf k-focus">
-                                <span class="k-treeview-leaf-text">Disabled focus</span>
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-focus k-disabled">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox k-disabled" type="checkbox">
+                            </span>
+                            <span class="k-treeview-leaf">
+                                <span class="k-treeview-leaf-text">Disabled + Focus</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-bot">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox" type="checkbox">
+                            </span>
                             <span class="k-treeview-load-more-button k-treeview-leaf">
                                 <span class="k-treeview-leaf-text">Load more...</span>
                             </span>
@@ -107,79 +153,122 @@
         <section>
             <div dir="rtl" class="k-treeview">
                 <ul class="k-treeview-lines k-treeview-group">
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-top">
-                            <span class="k-treeview-leaf">
-                                <span class="k-treeview-leaf-text">Normal</span>
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-hover">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox" type="checkbox">
                             </span>
-                        </span>
-                    </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-treeview-leaf k-hover">
+                            <span class="k-treeview-leaf">
                                 <span class="k-treeview-leaf-text">Hover</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-treeview-leaf k-focus">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-focus">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox" type="checkbox">
+                            </span>
+                            <span class="k-treeview-leaf">
                                 <span class="k-treeview-leaf-text">Focus</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-treeview-leaf k-hover k-focus">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-hover k-focus">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox" type="checkbox">
+                            </span>
+                            <span class="k-treeview-leaf">
                                 <span class="k-treeview-leaf-text">Hover + Focus</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-treeview-leaf k-selected">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox k-checked" type="checkbox" checked="">
+                            </span>
+                            <span class="k-treeview-leaf">
+                                <span class="k-treeview-leaf-text">Checked</span>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-selected">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox" type="checkbox">
+                            </span>
+                            <span class="k-treeview-leaf">
                                 <span class="k-treeview-leaf-text">Selected</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-treeview-leaf k-hover k-selected">
-                                <span class="k-treeview-leaf-text">Selected + Hover</span>
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-selected">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox k-checked" type="checkbox" checked="">
+                            </span>
+                            <span class="k-treeview-leaf">
+                                <span class="k-treeview-leaf-text">Checked + Selected</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-treeview-leaf k-hover k-focus k-selected">
-                                <span class="k-treeview-leaf-text">Selected + Hover + Focus</span>
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-hover k-selected">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox k-checked" type="checkbox" checked="">
+                            </span>
+                            <span class="k-treeview-leaf">
+                                <span class="k-treeview-leaf-text">^ Hover</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-treeview-leaf k-focus k-selected">
-                                <span class="k-treeview-leaf-text">Selected focus</span>
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-focus k-selected">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox k-checked" type="checkbox" checked="">
+                            </span>
+                            <span class="k-treeview-leaf">
+                                <span class="k-treeview-leaf-text">^ Focus</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-disabled k-treeview-leaf">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-hover k-focus k-selected">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox k-checked" type="checkbox" checked="">
+                            </span>
+                            <span class="k-treeview-leaf">
+                                <span class="k-treeview-leaf-text">^ Hover + Focus</span>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-disabled">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox k-disabled" type="checkbox">
+                            </span>
+                            <span class="k-treeview-leaf">
                                 <span class="k-treeview-leaf-text">Disabled</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
-                            <span class="k-disabled k-treeview-leaf k-focus">
-                                <span class="k-treeview-leaf-text">Disabled focus</span>
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content k-focus k-disabled">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox k-disabled" type="checkbox">
+                            </span>
+                            <span class="k-treeview-leaf">
+                                <span class="k-treeview-leaf-text">Disabled + Focus</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-bot">
-                            <span class="k-treeview-load-more-button k-treeview-leaf k-hover">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox" type="checkbox">
+                            </span>
+                            <span class="k-treeview-load-more-button k-treeview-leaf">
                                 <span class="k-treeview-leaf-text">Load more...</span>
                             </span>
                         </span>
@@ -190,19 +279,19 @@
         <section>
             <div class="k-treeview">
                 <ul class="k-treeview-lines k-treeview-group">
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-top">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-treeview-leaf">
                                 <span class="k-treeview-leaf-text">Root 1</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-treeview-toggle">
-                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M256 352 128 160h256z"></path>
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
                                     </svg>
                                 </span>
                             </span>
@@ -211,19 +300,19 @@
                             </span>
                         </span>
                         <ul class="k-treeview-group">
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-top">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-treeview-leaf">
                                         <span class="k-treeview-leaf-text">Child 2.1</span>
                                     </span>
                                 </span>
                             </li>
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-mid">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-treeview-toggle">
-                                        <span class="k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                        <span class="k-icon k-svg-icon k-svg-i-chevron-right">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="M352 256 160 384V128z"></path>
+                                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
                                             </svg>
                                         </span>
                                     </span>
@@ -232,8 +321,8 @@
                                     </span>
                                 </span>
                             </li>
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-bot">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-treeview-leaf">
                                         <span class="k-treeview-leaf-text">Child 2.3</span>
                                     </span>
@@ -241,12 +330,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-bot">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-treeview-toggle">
-                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-right">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M352 256 160 384V128z"></path>
+                                        <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
                                     </svg>
                                 </span>
                             </span>
@@ -261,19 +350,19 @@
         <section>
             <div dir="rtl" class="k-treeview">
                 <ul class="k-treeview-lines k-treeview-group">
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-top">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-treeview-leaf">
                                 <span class="k-treeview-leaf-text">Root 1</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-treeview-toggle">
-                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M256 352 128 160h256z"></path>
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
                                     </svg>
                                 </span>
                             </span>
@@ -282,19 +371,19 @@
                             </span>
                         </span>
                         <ul class="k-treeview-group">
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-top">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-treeview-leaf">
                                         <span class="k-treeview-leaf-text">Child 2.1</span>
                                     </span>
                                 </span>
                             </li>
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-mid">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-treeview-toggle">
-                                        <span class="k-icon k-svg-icon k-svg-i-caret-alt-left">
+                                        <span class="k-icon k-svg-icon k-svg-i-chevron-left">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="m160 256 192-128v256z"></path>
+                                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
                                             </svg>
                                         </span>
                                     </span>
@@ -303,8 +392,8 @@
                                     </span>
                                 </span>
                             </li>
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-bot">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-treeview-leaf">
                                         <span class="k-treeview-leaf-text">Child 2.3</span>
                                     </span>
@@ -312,12 +401,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-bot">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-treeview-toggle">
-                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-left">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-left">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="m160 256 192-128v256z"></path>
+                                        <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
                                     </svg>
                                 </span>
                             </span>
@@ -336,19 +425,19 @@
         <section>
             <div class="k-treeview">
                 <ul class="k-treeview-lines k-treeview-group">
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-top">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-treeview-leaf">
                                 <span class="k-treeview-leaf-text">Root 1</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-treeview-toggle">
-                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M256 352 128 160h256z"></path>
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
                                     </svg>
                                 </span>
                             </span>
@@ -362,8 +451,8 @@
                             </span>
                         </span>
                         <ul class="k-treeview-group">
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-top">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-treeview-leaf">
                                         <span class="k-icon k-svg-icon k-svg-i-folder">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -374,12 +463,12 @@
                                     </span>
                                 </span>
                             </li>
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-mid">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-treeview-toggle">
-                                        <span class="k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                        <span class="k-icon k-svg-icon k-svg-i-chevron-right">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="M352 256 160 384V128z"></path>
+                                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
                                             </svg>
                                         </span>
                                     </span>
@@ -393,8 +482,8 @@
                                     </span>
                                 </span>
                             </li>
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-bot">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-treeview-leaf">
                                         <span class="k-icon k-svg-icon k-svg-i-folder">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -407,12 +496,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-bot">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-treeview-toggle">
-                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-right">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M352 256 160 384V128z"></path>
+                                        <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
                                     </svg>
                                 </span>
                             </span>
@@ -432,19 +521,19 @@
         <section>
             <div dir="rtl" class="k-treeview">
                 <ul class="k-treeview-lines k-treeview-group">
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-top">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-treeview-leaf">
                                 <span class="k-treeview-leaf-text">Root 1</span>
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-treeview-toggle">
-                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M256 352 128 160h256z"></path>
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
                                     </svg>
                                 </span>
                             </span>
@@ -458,8 +547,8 @@
                             </span>
                         </span>
                         <ul class="k-treeview-group">
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-top">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-treeview-leaf">
                                         <span class="k-icon k-svg-icon k-svg-i-folder">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -470,12 +559,12 @@
                                     </span>
                                 </span>
                             </li>
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-mid">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-treeview-toggle">
-                                        <span class="k-icon k-svg-icon k-svg-i-caret-alt-left">
+                                        <span class="k-icon k-svg-icon k-svg-i-chevron-left">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="m160 256 192-128v256z"></path>
+                                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
                                             </svg>
                                         </span>
                                     </span>
@@ -489,8 +578,8 @@
                                     </span>
                                 </span>
                             </li>
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-bot">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-treeview-leaf">
                                         <span class="k-icon k-svg-icon k-svg-i-folder">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -503,12 +592,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-bot">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-treeview-toggle">
-                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-left">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-left">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="m160 256 192-128v256z"></path>
+                                        <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
                                     </svg>
                                 </span>
                             </span>
@@ -528,8 +617,8 @@
         <section>
             <div class="k-treeview">
                 <ul class="k-treeview-lines k-treeview-group">
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-top">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-checkbox-wrap">
                                 <input class="k-checkbox" type="checkbox">
                             </span>
@@ -538,12 +627,12 @@
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-treeview-toggle">
-                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M256 352 128 160h256z"></path>
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
                                     </svg>
                                 </span>
                             </span>
@@ -555,8 +644,8 @@
                             </span>
                         </span>
                         <ul class="k-treeview-group">
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-top">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-checkbox-wrap">
                                         <input class="k-checkbox" type="checkbox">
                                     </span>
@@ -565,12 +654,12 @@
                                     </span>
                                 </span>
                             </li>
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-mid">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-treeview-toggle">
-                                        <span class="k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                        <span class="k-icon k-svg-icon k-svg-i-chevron-right">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="M352 256 160 384V128z"></path>
+                                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
                                             </svg>
                                         </span>
                                     </span>
@@ -582,8 +671,8 @@
                                     </span>
                                 </span>
                             </li>
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-bot">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-checkbox-wrap">
                                         <input class="k-checkbox" type="checkbox">
                                     </span>
@@ -594,12 +683,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-bot">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-treeview-toggle">
-                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-right">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M352 256 160 384V128z"></path>
+                                        <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
                                     </svg>
                                 </span>
                             </span>
@@ -617,8 +706,8 @@
         <section>
             <div dir="rtl" class="k-treeview">
                 <ul class="k-treeview-lines k-treeview-group">
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-top">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-checkbox-wrap">
                                 <input class="k-checkbox" type="checkbox">
                             </span>
@@ -627,12 +716,12 @@
                             </span>
                         </span>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-mid">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-treeview-toggle">
-                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M256 352 128 160h256z"></path>
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
                                     </svg>
                                 </span>
                             </span>
@@ -644,8 +733,8 @@
                             </span>
                         </span>
                         <ul class="k-treeview-group">
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-top">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-checkbox-wrap">
                                         <input class="k-checkbox" type="checkbox">
                                     </span>
@@ -654,12 +743,12 @@
                                     </span>
                                 </span>
                             </li>
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-mid">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-treeview-toggle">
-                                        <span class="k-icon k-svg-icon k-svg-i-caret-alt-left">
+                                        <span class="k-icon k-svg-icon k-svg-i-chevron-left">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="m160 256 192-128v256z"></path>
+                                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
                                             </svg>
                                         </span>
                                     </span>
@@ -671,8 +760,8 @@
                                     </span>
                                 </span>
                             </li>
-                            <li class="k-treeview-item">
-                                <span class="k-treeview-bot">
+                            <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                <span class="k-treeview-item-content">
                                     <span class="k-checkbox-wrap">
                                         <input class="k-checkbox" type="checkbox">
                                     </span>
@@ -683,12 +772,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="k-treeview-item">
-                        <span class="k-treeview-bot">
+                    <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                        <span class="k-treeview-item-content">
                             <span class="k-treeview-toggle">
-                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-left">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-left">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="m160 256 192-128v256z"></path>
+                                        <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
                                     </svg>
                                 </span>
                             </span>
