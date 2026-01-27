@@ -1,0 +1,14 @@
+@use "@progress/kendo-theme-core/scss/components/segmented-control/_theme.scss" as *;
+@use "./_variables.scss" as *;
+
+
+@mixin kendo-segmented-control--theme() {
+    @include kendo-segmented-control--theme-base();
+
+    .k-segmented-control-button {
+        &:disabled,
+        &.k-disabled {
+            color: $kendo-segmented-control-button-disabled-text;
+        }
+    }
+}

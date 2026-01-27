@@ -1,6 +1,12 @@
 import { ListNormal, ListVirtualization, ListItem } from '../../list';
+import { Icon } from '../../icon';
+import { IconButton } from '../../button';
 
 const style = `
+    #test-area {
+        max-width: 600px;
+    }
+
     .k-virtual-list > .k-item,
     .k-virtual-list .k-list-item {
         position: relative;
@@ -10,72 +16,136 @@ const style = `
 export default () =>(
     <>
         <style>{style}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-4">
-
+        <div id="test-area" className="k-d-grid k-grid-cols-2">
             <span>Static list</span>
             <span>Virtual list</span>
-            <span>Static list (rtl)</span>
-            <span>Virtual list (rtl)</span>
 
             <section>
                 <ListNormal>
-                    <ListItem>List item</ListItem>
-                    <ListItem hover>Hover</ListItem>
-                    <ListItem focus>Focus</ListItem>
-                    <ListItem selected>Selected</ListItem>
-                    <ListItem hover selected>Hover selected</ListItem>
-                    <ListItem disabled>Disabled</ListItem>
-                    <ListItem>List item with very long text, that spans on multiple lines</ListItem>
-                    <ListItem showCheckbox>Checkbox</ListItem>
-                    <ListItem showIcon iconName="gear">Icon</ListItem>
-                    <ListItem showCheckbox showIcon iconName="gear">Checkbox icon</ListItem>
+                    <ListItem>List Item</ListItem>
+                    <ListItem>List Item</ListItem>
                 </ListNormal>
             </section>
 
             <section>
                 <ListVirtualization>
-                    <ListItem>List item</ListItem>
-                    <ListItem hover>Hover</ListItem>
-                    <ListItem focus>Focus</ListItem>
-                    <ListItem selected>Selected</ListItem>
-                    <ListItem hover selected>Hover selected</ListItem>
-                    <ListItem disabled>Disabled</ListItem>
-                    <ListItem>List item with very long text, that spans on multiple lines</ListItem>
-                    <ListItem showCheckbox>Checkbox</ListItem>
-                    <ListItem showIcon iconName="gear">Icon</ListItem>
-                    <ListItem showCheckbox showIcon iconName="gear">Checkbox icon</ListItem>
+                    <ListItem>List Item</ListItem>
+                    <ListItem>List Item</ListItem>
                 </ListVirtualization>
             </section>
 
-            <section dir="rtl">
+            <span>Static list with icons and actions</span>
+            <span>Virtual list with icons and actions</span>
+
+            <section>
                 <ListNormal>
-                    <ListItem>List item</ListItem>
-                    <ListItem hover>Hover</ListItem>
-                    <ListItem focus>Focus</ListItem>
-                    <ListItem selected>Selected</ListItem>
-                    <ListItem hover selected>Hover selected</ListItem>
-                    <ListItem disabled>Disabled</ListItem>
-                    <ListItem>List item with very long text, that spans on multiple lines</ListItem>
-                    <ListItem showCheckbox>Checkbox</ListItem>
-                    <ListItem showIcon iconName="gear">Icon</ListItem>
-                    <ListItem showCheckbox showIcon iconName="gear">Checkbox icon</ListItem>
+                    <ListItem iconName="gear">Icon</ListItem>
+                    <ListItem iconName="gear"
+                              description='Item with description'>
+                    Icon and description</ListItem>
+                    <ListItem actions={
+                        <>
+                            <IconButton icon="bold" size="small" />
+                            <Icon icon="check" />
+
+                        </>
+                    }>Actions</ListItem>
+                    <ListItem iconName="gear"
+                              actions={
+                                <>
+                                    <IconButton icon="bold" size="small" />
+                                    <Icon icon="check" />
+                                </>
+                    }>Icon+Actions</ListItem>
+                    <ListItem description="Item with actions and description"
+                              actions={
+                                <>
+                                    <IconButton icon="bold" size="small" />
+                                    <Icon icon="check" />
+                                </>
+                    }>Actions+description</ListItem>
+                    <ListItem iconName="gear"
+                              description="Item with icon, actions and description"
+                              actions={
+                                <>
+                                    <IconButton icon="bold" size="small" />
+                                    <Icon icon="check" />
+                                </>
+                    }> Icon+Actions+description </ListItem>
+                    <ListItem showCheckbox
+                              iconName="gear">
+                    Checkbox + icon</ListItem>
+                    <ListItem showCheckbox
+                              iconName="gear"
+                              description="Item with actions and description">
+                    Checkbox + icon + description</ListItem>
+                    <ListItem showCheckbox
+                              iconName="gear"
+                              description="Item with actions and description"
+                              actions={
+                                <>
+                                    <IconButton icon="bold" size="small" />
+                                    <Icon icon="check" />
+                                </>
+                                }>
+                    Checkbox + icon + actions + description</ListItem>
                 </ListNormal>
             </section>
 
-            <section dir="rtl">
+            <section>
                 <ListVirtualization>
-                    <ListItem>List item</ListItem>
-                    <ListItem hover>Hover</ListItem>
-                    <ListItem focus>Focus</ListItem>
-                    <ListItem selected>Selected</ListItem>
-                    <ListItem hover selected>Hover selected</ListItem>
-                    <ListItem disabled>Disabled</ListItem>
-                    <ListItem>List item with very long text, that spans on multiple lines</ListItem>
-                    <ListItem showCheckbox>Checkbox</ListItem>
-                    <ListItem showIcon iconName="gear">Icon</ListItem>
-                    <ListItem showCheckbox showIcon iconName="gear">Checkbox icon</ListItem>
+                    <ListItem iconName="gear">Icon</ListItem>
+                    <ListItem iconName="gear"
+                              description='Item with description'>
+                    Icon and description</ListItem>
+                    <ListItem actions={
+                        <>
+                            <Icon icon="check" />
+
+                        </>
+                    }>Actions</ListItem>
+                    <ListItem iconName="gear"
+                              actions={
+                                <>
+                                    <IconButton icon="bold" size="small" />
+                                    <Icon icon="check" />
+                                </>
+                    }>Icon+Actions</ListItem>
+                    <ListItem description="Item with actions and description"
+                              actions={
+                                <>
+                                    <IconButton icon="bold" size="small" />
+                                    <Icon icon="check" />
+                                </>
+                    }>Actions+description</ListItem>
+                    <ListItem iconName="gear"
+                              description="Item with icon, actions and description"
+                              actions={
+                                <>
+                                    <IconButton icon="bold" size="small" />
+                                    <Icon icon="check" />
+                                </>
+                    }> Icon+Actions+description </ListItem>
+                    <ListItem showCheckbox
+                              iconName="gear">
+                    Checkbox + icon</ListItem>
+                    <ListItem showCheckbox
+                              iconName="gear"
+                              description="Item with actions and description">
+                    Checkbox + icon + description</ListItem>
+                    <ListItem showCheckbox
+                              iconName="gear"
+                              description="Item with actions and description"
+                              actions={
+                                <>
+                                    <IconButton icon="bold" size="small" />
+                                    <Icon icon="check" />
+                                </>
+                                }>
+                    Checkbox + icon + actions + description</ListItem>
                 </ListVirtualization>
             </section>
+
         </div>
     </>
 );

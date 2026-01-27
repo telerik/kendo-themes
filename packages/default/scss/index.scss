@@ -113,6 +113,7 @@
 @forward "./scrollview/_index.scss";
 @forward "./speech-to-text-button/_index.scss";
 @forward "./prompt/_index.scss";
+@forward "./segmented-control/_index.scss";
 @forward "./dataviz/_index.scss";
 @forward "./chart-wizard/_index.scss";
 @forward "./map/_index.scss";
@@ -121,6 +122,7 @@
 @forward "./otp/_index.scss";
 @forward "./column-menu/_index.scss";
 @forward "./marquee/_index.scss";
+@forward "./smart-box/_index.scss";
 
 
 // Use component modules
@@ -287,6 +289,8 @@
 @use "./scroller/_index.scss" as *;
 @use "./scrollview/_index.scss" as *;
 @use "./prompt/_index.scss" as *;
+@use "./segmented-control/_index.scss" as *;
+@use "./smart-box/_index.scss" as *;
 
 
 // Dataviz
@@ -463,6 +467,8 @@
     @include kendo-scroller--styles();
     @include kendo-scrollview--styles();
     @include kendo-prompt--styles();
+    @include kendo-segmented-control--styles();
+    @include kendo-smart-box--styles();
 
 
     // Dataviz

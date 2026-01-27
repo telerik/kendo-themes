@@ -137,6 +137,16 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the action Icons container.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-accent-icon-color</td>
+    <td>String</td>
+    <td><code>var( --kendo-accent-icon-color, #{k-color(tertiary-active)} )</code></td>
+    <td><code>var(--kendo-accent-icon-color, var(--kendo-color-tertiary-active, #962c8a))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of accent icons.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

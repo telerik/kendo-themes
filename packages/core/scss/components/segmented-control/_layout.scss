@@ -1,0 +1,85 @@
+@use "sass:map";
+@use "./variables.scss" as *;
+@use "../../functions/index.scss" as *;
+@use "../../motion/index.scss" as *;
+
+@mixin kendo-segmented-control--layout-base() {
+
+    .k-segmented-control {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        flex-flow: row nowrap;
+        padding-inline: $kendo-segmented-control-padding-x;
+        padding-block: $kendo-segmented-control-padding-y;
+        border-radius: $kendo-segmented-control-border-radius;
+        font-family: $kendo-segmented-control-font-family;
+        overflow: auto;
+        scrollbar-width: none;
+        white-space: nowrap;
+        box-sizing: border-box;
+
+        // Sizes
+        @each $size, $size-props in $kendo-segmented-control-sizes {
+            $_font-size: map.get( $size-props, font-size );
+            $_line-height: map.get( $size-props, line-height );
+            $_button-padding-inline: map.get( $size-props, button-padding-x );
+            $_button-padding-block: map.get( $size-props, button-padding-y );
+            $_button-gap: map.get( $size-props, button-gap );
+
+            #{k-when-default($kendo-segmented-control-default-size, $size)}
+            &.k-segmented-control-#{$size} {
+                font-size: $_font-size;
+                line-height: $_line-height;
+
+                .k-segmented-control-button {
+                    padding-inline: $_button-padding-inline;
+                    padding-block: $_button-padding-block;
+                    gap: $_button-gap;
+                }
+            }
+        }
+    }
+
+    .k-segmented-control-stretched {
+        width: 100%;
+
+        .k-segmented-control-button {
+            overflow: hidden;
+        }
+    }
+
+    .k-segmented-control-thumb {
+        position: absolute;
+        height: calc( 100% - ( #{$kendo-segmented-control-padding-y} * 2));
+        border-radius: $kendo-segmented-control-thumb-border-radius;
+        pointer-events: none;
+        transition: all k-transition(settle);
+    }
+
+    .k-segmented-control-button {
+        position: relative;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        border-width: $kendo-segmented-control-button-border-width;
+        border-radius: $kendo-segmented-control-button-border-radius;
+        cursor: pointer;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    .k-segmented-control-button-text {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        min-width: 0
+    }
+
+
+    .k-segmented-control-button-icon {
+        flex-shrink: 0;
+    }
+
+}

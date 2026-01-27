@@ -1,0 +1,85 @@
+@use "sass:map";
+@use "./variables.scss" as *;
+@use "../../color-system/_functions.scss" as *;
+@use "../../functions/index.scss" as *;
+@use "../../spacing/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
+
+@mixin kendo-smart-box--layout-base() {
+
+    .k-smart-box {
+        .k-input-inner {
+            padding-inline: 0;
+        }
+
+        .k-input-prefix {
+            cursor: pointer;
+        }
+
+         // Roundness
+        @each $roundness in $kendo-smart-box-roundness {
+            #{k-when-default($kendo-smart-box-default-roundness, $roundness)}
+            &.k-rounded-#{$roundness} {
+                border-radius: k-border-radius($roundness);
+            }
+        }
+
+        // Sizing
+        @each $size, $size-props in $kendo-smart-box-sizes {
+            $_padding-x: map.get( $size-props, padding-x );
+            $_prefix-margin-x: map.get( $size-props, prefix-margin-x );
+
+            #{k-when-default($kendo-smart-box-default-size, $size)}
+            &.k-input-#{$size} {
+                padding-inline-end: $_padding-x;
+
+                .k-input-prefix {
+                    margin-inline-start: $_prefix-margin-x;
+                }
+
+                .k-input-inner {
+                    padding-inline: 0;
+                }
+            }
+        }
+
+        .k-input-suffix {
+            gap: $kendo-smart-box-suffix-spacing;
+        }
+    }
+
+    .k-smart-box-popup {
+        padding-inline: $kendo-smart-box-popup-padding-inline;
+        padding-block: $kendo-smart-box-popup-padding-block;
+        border-radius: $kendo-smart-box-popup-border-radius;
+        gap: $kendo-smart-box-popup-spacing;
+
+        > .k-list {
+            border-radius: 0;
+        }
+
+        > .k-segmented-control {
+            margin-block-start: $kendo-smart-box-popup-segmented-control-margin;
+            margin-inline: $kendo-smart-box-popup-segmented-control-margin;
+            width: calc(100% - #{$kendo-smart-box-popup-segmented-control-margin} * 2);
+        }
+
+        .k-list-item-text {
+            white-space: nowrap;
+        }
+
+        .k-smart-box-check-icon {
+            color: k-color(success);
+        }
+    }
+
+    .k-smart-box-no-data {
+        flex-direction: column;
+        padding-inline: k-spacing(2);
+        padding-block: k-spacing(4);
+        gap: $kendo-smart-box-popup-spacing;
+        font-size: var(--kendo-font-size-sm, inherit);
+        min-height: auto;
+    }
+
+}

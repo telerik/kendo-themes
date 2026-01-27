@@ -48,6 +48,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-container-padding-inline</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-container-padding-inline, #{k-spacing(1)} )</code></td>
+    <td><code>var(--kendo-list-container-padding-inline, var(--kendo-spacing-1, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the List container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-container-padding-block</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-container-padding-block, #{k-spacing(1)} )</code></td>
+    <td><code>var(--kendo-list-container-padding-block, var(--kendo-spacing-1, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the List container.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-sm-font-size</td>
     <td>String</td>
     <td><code>var( --kendo-list-sm-font-size, var(--kendo-font-size, inherit) )</code></td>
@@ -428,6 +448,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-item-gap</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-item-gap, k-spacing(2) )</code></td>
+    <td><code>var(--kendo-list-item-gap, var(--kendo-spacing-2, 0.5rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the List item components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-item-group-label-sm-font-size</td>
     <td>String</td>
     <td><code>var( --kendo-list-item-group-label-sm-font-size, var(--kendo-font-size-xs, inherit) )</code></td>
@@ -580,8 +610,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-group-item-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-list-group-item-border-width, 1px 0 0 )</code></td>
-    <td><code>var(--kendo-list-group-item-border-width, 1px 0 0)</code></td>
+    <td><code>var( --kendo-list-group-item-border-width, 0 )</code></td>
+    <td><code>var(--kendo-list-group-item-border-width, 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the List group items.</div></div>
@@ -655,16 +685,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the List group item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-list-content-padding</td>
-    <td>String</td>
-    <td><code>var( --kendo-list-content-padding, #{k-spacing(1)} )</code></td>
-    <td><code>var(--kendo-list-content-padding, var(--kendo-spacing-1, 0.25rem))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the List content.</div></div>
     </td>
 </tr>
 <tr>
@@ -910,8 +930,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-group-item-text</td>
     <td>String</td>
-    <td><code>var( --kendo-list-group-item-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-list-group-item-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var( --kendo-list-group-item-text, #{k-color(subtle)} )</code></td>
+    <td><code>var(--kendo-list-group-item-text, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the List group items.</div></div>
@@ -930,8 +950,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-group-item-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-list-group-item-shadow, none )</code></td>
-    <td><code>var(--kendo-list-group-item-shadow, none)</code></td>
+    <td><code>var( --kendo-list-group-item-shadow, inset 0 1px 0 color-mix(in srgb, k-color(border) 55%, transparent) )</code></td>
+    <td><code>var(--kendo-list-group-item-shadow, inset 0 1px 0 color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 55%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the List group items.</div></div>
@@ -955,6 +975,36 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the disabled 'Option Label' text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-description-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-item-description-font-size, var( --kendo-font-size-sm, inherit ) )</code></td>
+    <td><code>var(--kendo-list-item-description-font-size, var(--kendo-font-size-sm, inherit))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the List item description.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-description-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-item-description-line-height, var( --kendo-line-height-lg, normal ) )</code></td>
+    <td><code>var(--kendo-list-item-description-line-height, var(--kendo-line-height-lg, normal))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the list item description.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-description-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-item-description-text, #{k-color(subtle)} )</code></td>
+    <td><code>var(--kendo-list-item-description-text, var(--kendo-color-subtle, #707070))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description.</div></div>
     </td>
 </tr>
 <tr>

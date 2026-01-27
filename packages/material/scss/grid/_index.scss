@@ -24,6 +24,7 @@
 @use "../table/_index.scss" as *;
 @use "../tabstrip/_index.scss" as *;
 @use "../column-menu/_index.scss" as *;
+@use "../smart-box/_index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
@@ -56,6 +57,7 @@
         @include kendo-list--styles();
         @include kendo-table--styles();
         @include kendo-tabstrip--styles();
+        @include kendo-smart-box--styles();
         @include kendo-grid--layout();
         @include kendo-grid--theme();
         @include kendo-utils--interactivity--touch-action();

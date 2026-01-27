@@ -48,6 +48,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-container-padding-inline</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the List container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-container-padding-block</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the List container.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-font-size</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -488,6 +508,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-item-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the List item components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the List items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-sm-group-item-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
@@ -520,8 +560,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-sm-group-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
-    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
+    <td><code>k-spacing(0)</code></td>
+    <td><code>var(--kendo-spacing-0, 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small List group item.</div></div>
@@ -530,8 +570,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-md-group-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium List group item.</div></div>
@@ -549,9 +589,19 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-border-width</td>
-    <td>List</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the List group items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-border-width</td>
+    <td>Number</td>
     <td><code>1px 0 0</code></td>
-    <td><code>(1px 0 0)</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the List group items.</div></div>
@@ -559,9 +609,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-font-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the List group items, if no size is set.</div></div>
@@ -569,9 +619,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-sm-group-item-font-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small List group item.</div></div>
@@ -579,9 +629,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-md-group-item-font-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium List group item.</div></div>
@@ -589,9 +639,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-lg-group-item-font-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large List group item.</div></div>
@@ -599,9 +649,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-line-height</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the List group items, if no size is set.</div></div>
@@ -609,9 +659,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-sm-group-item-line-height</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small List group item.</div></div>
@@ -619,9 +669,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-md-group-item-line-height</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium List group item.</div></div>
@@ -629,9 +679,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-lg-group-item-line-height</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large List group item.</div></div>
@@ -858,6 +908,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-item-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border-radius of the List items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-item-hover-bg</td>
     <td>String</td>
     <td><code>k-color(base-subtle-hover)</code></td>
@@ -959,9 +1019,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #565e64)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the List group items.</div></div>
@@ -979,9 +1039,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>List</td>
+    <td><code>inset 0 1px 0 k-color(border)</code></td>
+    <td><code>(inset 0 1px 0 var(--kendo-color-border, rgba(33, 37, 41, 0.13)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the List group items.</div></div>
@@ -995,6 +1055,36 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the 'Option Label' text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-description-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the List item description.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-description-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line of the list item description.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-description-text</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #565e64)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description.</div></div>
     </td>
 </tr>
 <tr>
@@ -1068,7 +1158,7 @@ The following table lists the available variables for customization.
         filter-padding-y: $kendo-list-lg-filter-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286,"header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","group-item-font-size":null,"group-item-line-height":null,"item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4, 1rem)","filter-padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-1, 0.25rem)","group-item-font-size":null,"group-item-line-height":null,"item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4, 1rem)","filter-padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","group-item-font-size":null,"group-item-line-height":null,"item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4, 1rem)","filter-padding-y":"var(--kendo-spacing-4, 1rem)"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286,"header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-0, 0px)","group-item-font-size":"var(--kendo-font-size-sm, inherit)","group-item-line-height":"var(--kendo-line-height-lg, normal)","item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4, 1rem)","filter-padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","group-item-font-size":"var(--kendo-font-size-sm, inherit)","group-item-line-height":"var(--kendo-line-height-lg, normal)","item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4, 1rem)","filter-padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4, 1rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4, 1rem)","group-item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","group-item-font-size":"var(--kendo-font-size-sm, inherit)","group-item-line-height":"var(--kendo-line-height-lg, normal)","item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"var(--kendo-font-size-xs, inherit)","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4, 1rem)","filter-padding-y":"var(--kendo-spacing-4, 1rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the List.</div></div>
