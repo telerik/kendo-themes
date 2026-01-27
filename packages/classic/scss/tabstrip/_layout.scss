@@ -1,6 +1,19 @@
 @use "@progress/kendo-theme-core/scss/components/tabstrip/_layout.scss" as *;
-
+@use "./variables.scss" as *;
 
 @mixin kendo-tabstrip--layout() {
     @include kendo-tabstrip--layout-base();
+
+    .k-tabstrip-scrollable.k-tabstrip-top > .k-tabstrip-items-wrapper .k-tabstrip-item {
+        border-block-end-width: $kendo-tabstrip-item-border-width;
+    }
+    .k-tabstrip-scrollable.k-tabstrip-bottom > .k-tabstrip-items-wrapper .k-tabstrip-item {
+        border-block-start-width: $kendo-tabstrip-item-border-width;
+    }
+    .k-tabstrip-scrollable.k-tabstrip-left > .k-tabstrip-items-wrapper .k-tabstrip-item {
+        border-inline-end-width: $kendo-tabstrip-item-border-width;
+    }
+    .k-tabstrip-scrollable.k-tabstrip-right > .k-tabstrip-items-wrapper .k-tabstrip-item {
+        border-inline-start-width: $kendo-tabstrip-item-border-width;
+    }
 }
