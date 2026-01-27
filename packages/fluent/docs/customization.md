@@ -2995,8 +2995,8 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-bubble-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(xl)</code></td>
-    <td><code>var(--kendo-border-radius-xl, 0.5rem)</code></td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Bubble.</div></div>
@@ -3015,8 +3015,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-bubble-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5, 0.625rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Bubble.</div></div>
@@ -3205,8 +3205,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-alt-bubble-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover, #115ea3)</code></td>
+    <td><code>var( --kendo-chat-alt-bubble-hover-bg, #{k-color(primary-hover)} )</code></td>
+    <td><code>var(--kendo-chat-alt-bubble-hover-bg, var(--kendo-color-primary-hover, #115ea3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered alt Bubble.</div></div>
@@ -3215,8 +3215,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-alt-bubble-hover-border</td>
     <td>String</td>
-    <td><code>$kendo-chat-alt-bubble-hover-bg</code></td>
-    <td><code>var(--kendo-color-primary-hover, #115ea3)</code></td>
+    <td><code>var( --kendo-chat-alt-bubble-hover-border, $kendo-chat-alt-bubble-hover-bg )</code></td>
+    <td><code>var(--kendo-chat-alt-bubble-hover-border, var(--kendo-chat-alt-bubble-hover-bg, var(--kendo-color-primary-hover, #115ea3)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered alt Bubble.</div></div>
@@ -3225,8 +3225,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-alt-bubble-active-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-active)</code></td>
-    <td><code>var(--kendo-color-primary-active, #0f548c)</code></td>
+    <td><code>var( --kendo-chat-alt-bubble-active-bg, #{k-color(primary-active)} )</code></td>
+    <td><code>var(--kendo-chat-alt-bubble-active-bg, var(--kendo-color-primary-active, #0f548c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Bubble.</div></div>
@@ -3235,8 +3235,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-alt-bubble-active-border</td>
     <td>String</td>
-    <td><code>$kendo-chat-alt-bubble-active-bg</code></td>
-    <td><code>var(--kendo-color-primary-active, #0f548c)</code></td>
+    <td><code>var( --kendo-chat-alt-bubble-active-border, $kendo-chat-alt-bubble-active-bg )</code></td>
+    <td><code>var(--kendo-chat-alt-bubble-active-border, var(--kendo-chat-alt-bubble-active-bg, var(--kendo-color-primary-active, #0f548c)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active alt Bubble.</div></div>
@@ -3245,8 +3245,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-alt-bubble-focus-bg</td>
     <td>String</td>
-    <td><code>$kendo-chat-alt-bubble-bg</code></td>
-    <td><code>var(--kendo-chat-alt-bubble-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
+    <td><code>var( --kendo-chat-alt-bubble-focus-bg, $kendo-chat-alt-bubble-bg )</code></td>
+    <td><code>var(--kendo-chat-alt-bubble-focus-bg, var(--kendo-chat-alt-bubble-bg, var(--kendo-color-primary, #0f6cbd)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused alt Bubble.</div></div>
@@ -3255,8 +3255,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-alt-bubble-focus-border</td>
     <td>String</td>
-    <td><code>k-color(on-base)</code></td>
-    <td><code>var(--kendo-color-on-base, #242424)</code></td>
+    <td><code>var( --kendo-chat-alt-bubble-focus-border, #{k-color(on-base)} )</code></td>
+    <td><code>var(--kendo-chat-alt-bubble-focus-border, var(--kendo-color-on-base, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused alt Bubble.</div></div>
@@ -3264,9 +3264,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-chat-alt-bubble-focus-shadow</td>
-    <td>List</td>
-    <td><code>inset 0 0 0 #{$kendo-chat-border-width} k-color(on-base), inset 0 0 0 calc( #{$kendo-chat-border-width} * 2 ) k-color(surface)</code></td>
-    <td><code>(inset 0 0 0 var(--kendo-chat-border-width, 1px) var(--kendo-color-on-base, #242424), inset 0 0 0 calc(var(--kendo-chat-border-width, 1px) * 2) var(--kendo-color-surface, #ffffff))</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-chat-alt-bubble-focus-shadow, inset 0 0 0 #{$kendo-chat-border-width} k-color(on-base), inset 0 0 0 calc( #{$kendo-chat-border-width} * 2 ) k-color(surface) )</code></td>
+    <td><code>var(--kendo-chat-alt-bubble-focus-shadow, inset 0 0 0 var(--kendo-chat-border-width, 1px) var(--kendo-color-on-base, #242424), inset 0 0 0 calc(var(--kendo-chat-border-width, 1px) * 2) var(--kendo-color-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused alt Bubble.</div></div>
@@ -6919,8 +6919,8 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-chat-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-chat-padding-x, #{k-spacing(4)} )</code></td>
-    <td><code>var(--kendo-chat-padding-x, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>var( --kendo-chat-padding-x, #{k-spacing(5)} )</code></td>
+    <td><code>var(--kendo-chat-padding-x, var(--kendo-spacing-5, 1.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat.</div></div>
@@ -6929,8 +6929,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var( --kendo-chat-padding-y, #{k-spacing(5)} )</code></td>
+    <td><code>var(--kendo-chat-padding-y, var(--kendo-spacing-5, 1.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat.</div></div>
@@ -6938,9 +6938,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-chat-width</td>
-    <td>Number</td>
-    <td><code>280px</code></td>
-    <td><code>280px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-chat-width, 280px )</code></td>
+    <td><code>var(--kendo-chat-width, 280px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the Chat.</div></div>
@@ -6999,8 +6999,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-item-spacing-y</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var( --kendo-chat-item-spacing-y, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-chat-item-spacing-y, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing between the items of the Chat.</div></div>
@@ -7008,9 +7008,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-chat-message-max-width</td>
-    <td>Calculation</td>
-    <td><code>min(75%, 460px)</code></td>
-    <td><code>min(75%, 460px)</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-chat-message-max-width, min(75%, 460px) )</code></td>
+    <td><code>var(--kendo-chat-message-max-width, min(75%, 460px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the Chat message.</div></div>
@@ -7019,18 +7019,28 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-message-gap</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var( --kendo-chat-message-gap, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-chat-message-gap, var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the Chat message.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-sequential-messages-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-sequential-messages-border-radius, #{k-border-radius(sm)} )</code></td>
+    <td><code>var(--kendo-sequential-messages-border-radius, var(--kendo-border-radius-sm, 0.125rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of sequential Chat messages.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chat-message-list-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-chat-padding-x</code></td>
-    <td><code>var(--kendo-chat-padding-x, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>var( --kendo-chat-message-list-padding-x, $kendo-chat-padding-x )</code></td>
+    <td><code>var(--kendo-chat-message-list-padding-x, var(--kendo-chat-padding-x, var(--kendo-spacing-5, 1.25rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat message list.</div></div>
@@ -7039,8 +7049,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-message-list-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-chat-padding-y</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var( --kendo-chat-message-list-padding-y, $kendo-chat-padding-y )</code></td>
+    <td><code>var(--kendo-chat-message-list-padding-y, var(--kendo-chat-padding-y, var(--kendo-spacing-5, 1.25rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat message list.</div></div>
@@ -7049,11 +7059,21 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-message-list-spacing</td>
     <td>String</td>
-    <td><code>$kendo-chat-item-spacing-y</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var( --kendo-chat-message-list-spacing, $kendo-chat-item-spacing-y )</code></td>
+    <td><code>var(--kendo-chat-message-list-spacing, var(--kendo-chat-item-spacing-y, var(--kendo-spacing-4, 1rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat message list.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-message-box-wrapper-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-chat-message-box-wrapper-spacing, #{k-spacing(3)} )</code></td>
+    <td><code>var(--kendo-chat-message-box-wrapper-spacing, var(--kendo-spacing-3, 0.75rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat message box wrapper.</div></div>
     </td>
 </tr>
 <tr>
@@ -7079,8 +7099,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-message-status-gap</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>var( --kendo-chat-message-status-gap, #{k-spacing(1)} )</code></td>
+    <td><code>var(--kendo-chat-message-status-gap, var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the icon and text in the Chat message status.</div></div>
@@ -7109,8 +7129,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-timestamp-transform</td>
     <td>String</td>
-    <td><code>none</code></td>
-    <td><code>none</code></td>
+    <td><code>var( --kendo-chat-timestamp-transform, none )</code></td>
+    <td><code>var(--kendo-chat-timestamp-transform, none)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text transform of the Chat timestamp.</div></div>
@@ -7128,9 +7148,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-chat-timestamp-bg</td>
-    <td>Color</td>
-    <td><code>transparent</code></td>
-    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-chat-timestamp-bg, transparent )</code></td>
+    <td><code>var(--kendo-chat-timestamp-bg, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat timestamp.</div></div>
@@ -7139,8 +7159,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-timestamp-separator-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(border) 26%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent)</code></td>
+    <td><code>var( --kendo-chat-timestamp-separator-bg, #{color-mix(in srgb, k-color(border) 26%, transparent)} )</code></td>
+    <td><code>var(--kendo-chat-timestamp-separator-bg, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat timestamp separator.</div></div>
@@ -7149,8 +7169,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-timestamp-separator-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>var( --kendo-chat-timestamp-separator-spacing, #{k-spacing(1)} )</code></td>
+    <td><code>var(--kendo-chat-timestamp-separator-spacing, var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Chat timestamp and its separator.</div></div>
@@ -7169,8 +7189,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-message-meta-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-chat-message-meta-line-height, var( --kendo-line-height-lg, normal ) )</code></td>
-    <td><code>var(--kendo-chat-message-meta-line-height, var(--kendo-line-height-lg, normal))</code></td>
+    <td><code>var( --kendo-chat-message-meta-line-height, var( --kendo-line-height-xs, normal ) )</code></td>
+    <td><code>var(--kendo-chat-message-meta-line-height, var(--kendo-line-height-xs, normal))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat message meta text.</div></div>
@@ -7189,8 +7209,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-author-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height-xs, normal )</code></td>
-    <td><code>var(--kendo-line-height-xs, normal)</code></td>
+    <td><code>var( --kendo-chat-author-line-height, var( --kendo-line-height-xs, normal ) )</code></td>
+    <td><code>var(--kendo-chat-author-line-height, var(--kendo-line-height-xs, normal))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat author text.</div></div>
@@ -7199,8 +7219,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-status-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle, #707070)</code></td>
+    <td><code>var( --kendo-chat-status-text, #{k-color(subtle)} )</code></td>
+    <td><code>var(--kendo-chat-status-text, var(--kendo-color-subtle, #707070))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat status.</div></div>
@@ -7209,8 +7229,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-bubble-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var( --kendo-chat-bubble-spacing, #{k-spacing(1)} )</code></td>
+    <td><code>var(--kendo-chat-bubble-spacing, var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat bubble message.</div></div>
@@ -7219,7 +7239,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-toolbar-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-chat-toolbar-bg, #{$kendo-toolbar-bg} )</code></td>
+    <td><code>var( --kendo-chat-toolbar-bg, $kendo-toolbar-bg )</code></td>
     <td><code>var(--kendo-chat-toolbar-bg, var(--kendo-toolbar-bg, var(--kendo-color-surface, #ffffff)))</code></td>
 </tr>
 <tr>
@@ -7229,7 +7249,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-toolbar-text</td>
     <td>String</td>
-    <td><code>var( --kendo-chat-toolbar-text, #{$kendo-toolbar-text} )</code></td>
+    <td><code>var( --kendo-chat-toolbar-text, $kendo-toolbar-text )</code></td>
     <td><code>var(--kendo-chat-toolbar-text, var(--kendo-toolbar-text, var(--kendo-color-on-app-surface, #242424)))</code></td>
 </tr>
 <tr>
@@ -7249,8 +7269,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-chat-bg, #{k-color(surface)} )</code></td>
-    <td><code>var(--kendo-chat-bg, var(--kendo-color-surface, #ffffff))</code></td>
+    <td><code>var( --kendo-chat-bg, transparent )</code></td>
+    <td><code>var(--kendo-chat-bg, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat.</div></div>
@@ -7299,7 +7319,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-alt-bubble-border</td>
     <td>String</td>
-    <td><code>var( --kendo-chat-alt-bubble-border, #{$kendo-chat-alt-bubble-bg} )</code></td>
+    <td><code>var( --kendo-chat-alt-bubble-border, $kendo-chat-alt-bubble-bg )</code></td>
     <td><code>var(--kendo-chat-alt-bubble-border, var(--kendo-chat-alt-bubble-bg, var(--kendo-color-primary, #0f6cbd)))</code></td>
 </tr>
 <tr>
@@ -7309,178 +7329,88 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-alt-bubble-shadow</td>
     <td>String</td>
-    <td><code>none</code></td>
-    <td><code>none</code></td>
+    <td><code>var( --kendo-chat-alt-bubble-shadow, none )</code></td>
+    <td><code>var(--kendo-chat-alt-bubble-shadow, none)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Chat alt bubble.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-chat-failed-bubble-text</td>
+    <td>String</td>
+    <td><code>var(--kendo-chat-failed-bubble-text, k-color(base-on-subtle))</code></td>
+    <td><code>var(--kendo-chat-failed-bubble-text, var(--kendo-color-base-on-subtle, #242424))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the bubble of the failed Chat message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-failed-bubble-bg</td>
+    <td>String</td>
+    <td><code>var(--kendo-chat-failed-bubble-bg, k-color(error-subtle))</code></td>
+    <td><code>var(--kendo-chat-failed-bubble-bg, var(--kendo-color-error-subtle, #fdf3f4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the bubble of the failed Chat message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-failed-bubble-border</td>
+    <td>String</td>
+    <td><code>var(--kendo-chat-failed-bubble-border, k-color(error-emphasis))</code></td>
+    <td><code>var(--kendo-chat-failed-bubble-border, var(--kendo-color-error-emphasis, #eeacb2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the bubble of the failed Chat message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-failed-content-color</td>
+    <td>String</td>
+    <td><code>var(--kendo-chat-failed-content-color, k-color(error-on-surface))</code></td>
+    <td><code>var(--kendo-chat-failed-content-color, var(--kendo-color-error-on-surface, #c50f1f))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the failed Chat message content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-failed-bubble-hover-bg</td>
+    <td>String</td>
+    <td><code>var( --kendo-chat-failed-bubble-hover-bg, #{k-color(error-subtle-hover)} )</code></td>
+    <td><code>var(--kendo-chat-failed-bubble-hover-bg, var(--kendo-color-error-subtle-hover, #f6d1d5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered bubble of the failed Chat message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-failed-bubble-selected-bg</td>
+    <td>String</td>
+    <td><code>var( --kendo-chat-failed-bubble-selected-bg, #{k-color(error-subtle-active)} )</code></td>
+    <td><code>var(--kendo-chat-failed-bubble-selected-bg, var(--kendo-color-error-subtle-active, #eeacb2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected bubble of the failed Chat message.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chat-typing-indicator-text</td>
     <td>String</td>
-    <td><code>k-color(base-on-subtle)</code></td>
-    <td><code>var(--kendo-color-base-on-subtle, #242424)</code></td>
+    <td><code>var( --kendo-chat-typing-indicator-text, #{k-color(base-on-subtle)} )</code></td>
+    <td><code>var(--kendo-chat-typing-indicator-text, var(--kendo-color-base-on-subtle, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the typing indicator dots.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-chat-file-min-width</td>
-    <td>String</td>
-    <td><code>var(--kendo-chat-file-min-width, 96px)</code></td>
-    <td><code>var(--kendo-chat-file-min-width, 96px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of a file in the Chat Textarea.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-file-max-width</td>
-    <td>String</td>
-    <td><code>var(--kendo-chat-file-max-width, 160px)</code></td>
-    <td><code>var(--kendo-chat-file-max-width, 160px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of a file in the Chat Textarea.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-file-name-font-size</td>
-    <td>String</td>
-    <td><code>var(--kendo-chat-file-name-font-size, var( --kendo-font-size-sm, inherit ))</code></td>
-    <td><code>var(--kendo-chat-file-name-font-size, var(--kendo-font-size-sm, inherit))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Chat file name.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-file-name-line-height</td>
-    <td>String</td>
-    <td><code>var(--kendo-chat-file-name-line-height, var( --kendo-line-height-lg, normal ))</code></td>
-    <td><code>var(--kendo-chat-file-name-line-height, var(--kendo-line-height-lg, normal))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat file name.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-file-size-font-size</td>
-    <td>String</td>
-    <td><code>var(--kendo-chat-file-size-font-size, var( --kendo-font-size-xs, inherit ))</code></td>
-    <td><code>var(--kendo-chat-file-size-font-size, var(--kendo-font-size-xs, inherit))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Chat file size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-file-size-line-height</td>
-    <td>String</td>
-    <td><code>var(--kendo-chat-file-size-line-height, var( --kendo-line-height-xs, normal ))</code></td>
-    <td><code>var(--kendo-chat-file-size-line-height, var(--kendo-line-height-xs, normal))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat file size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-file-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat file.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-file-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat file.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-file-gap</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the elements of the Chat file.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-file-border-width</td>
-    <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Chat file.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-file-border-style</td>
-    <td>String</td>
-    <td><code>solid</code></td>
-    <td><code>solid</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border style of the Chat file.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-file-bg</td>
-    <td>String</td>
-    <td><code>color-mix(in srgb, k-color(base-on-subtle) 8%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-base-on-subtle, #242424) 8%, transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat file.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-file-text</td>
-    <td>String</td>
-    <td><code>k-color(base-on-subtle)</code></td>
-    <td><code>var(--kendo-color-base-on-subtle, #242424)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat file.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-file-border</td>
-    <td>String</td>
-    <td><code>$kendo-chat-file-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-base-on-subtle, #242424) 8%, transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat file.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-file-border-radius</td>
-    <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border-radius of the Chat file.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-chat-sender-file-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-primary) 14%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-primary, #ffffff) 14%, transparent)</code></td>
+    <td><code>var( --kendo-chat-sender-file-bg, #{color-mix(in srgb, k-color(on-primary) 14%, transparent)} )</code></td>
+    <td><code>var(--kendo-chat-sender-file-bg, color-mix(in srgb, var(--kendo-color-on-primary, #ffffff) 14%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat sender file.</div></div>
@@ -7489,8 +7419,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-sender-file-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
+    <td><code>var( --kendo-chat-sender-file-text, #{k-color(on-primary)} )</code></td>
+    <td><code>var(--kendo-chat-sender-file-text, var(--kendo-color-on-primary, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat sender file.</div></div>
@@ -7499,8 +7429,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-sender-file-border</td>
     <td>String</td>
-    <td><code>$kendo-chat-sender-file-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-primary, #ffffff) 14%, transparent)</code></td>
+    <td><code>var( --kendo-chat-sender-file-border, $kendo-chat-sender-file-bg )</code></td>
+    <td><code>var(--kendo-chat-sender-file-border, var(--kendo-chat-sender-file-bg, color-mix(in srgb, var(--kendo-color-on-primary, #ffffff) 14%, transparent)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat sender file.</div></div>
@@ -7508,9 +7438,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-chat-message-pinned-border-width</td>
-    <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-chat-message-pinned-border-width, 1px )</code></td>
+    <td><code>var(--kendo-chat-message-pinned-border-width, 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Chat pinned message;</div></div>
@@ -7519,8 +7449,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-message-pinned-border-style</td>
     <td>String</td>
-    <td><code>solid</code></td>
-    <td><code>solid</code></td>
+    <td><code>var( --kendo-chat-message-pinned-border-style, solid )</code></td>
+    <td><code>var(--kendo-chat-message-pinned-border-style, solid)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border style of the Chat pinned message;</div></div>
@@ -7529,8 +7459,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-message-pinned-border-color</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent)</code></td>
+    <td><code>var( --kendo-chat-message-pinned-border-color, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
+    <td><code>var(--kendo-chat-message-pinned-border-color, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat pinned message;</div></div>
@@ -7539,8 +7469,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-message-reference-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>var( --kendo-chat-message-reference-padding-x, #{k-spacing(1)} )</code></td>
+    <td><code>var(--kendo-chat-message-reference-padding-x, var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat message reference.</div></div>
@@ -7549,8 +7479,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-message-reference-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>var( --kendo-chat-message-reference-padding-y, #{k-spacing(1)} )</code></td>
+    <td><code>var(--kendo-chat-message-reference-padding-y, var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat message reference.</div></div>
@@ -7559,8 +7489,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-message-reference-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface, #ffffff)</code></td>
+    <td><code>var( --kendo-chat-message-reference-bg, #{color-mix(in srgb, k-color(surface) 90%, transparent)} )</code></td>
+    <td><code>var(--kendo-chat-message-reference-bg, color-mix(in srgb, var(--kendo-color-surface, #ffffff) 90%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat message reference.</div></div>
@@ -7569,8 +7499,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-message-reference-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #242424)</code></td>
+    <td><code>var( --kendo-chat-message-reference-text, #{k-color(on-app-surface)} )</code></td>
+    <td><code>var(--kendo-chat-message-reference-text, var(--kendo-color-on-app-surface, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat message reference.</div></div>
@@ -7579,8 +7509,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-message-reference-marker-bg</td>
     <td>String</td>
-    <td><code>k-color(base-emphasis)</code></td>
-    <td><code>var(--kendo-color-base-emphasis, #d1d1d1)</code></td>
+    <td><code>var( --kendo-chat-message-reference-marker-bg, #{k-color(base-emphasis)} )</code></td>
+    <td><code>var(--kendo-chat-message-reference-marker-bg, var(--kendo-color-base-emphasis, #d1d1d1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the message reference marker.</div></div>
@@ -7589,8 +7519,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-message-reference-marker-alt-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0f6cbd)</code></td>
+    <td><code>var( --kendo-chat-message-reference-marker-alt-bg, #{k-color(primary)} )</code></td>
+    <td><code>var(--kendo-chat-message-reference-marker-alt-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the message reference alt marker.</div></div>
@@ -13849,6 +13779,186 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ExpansionPanel content.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### FileBox
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-file-box-padding-x</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-padding-x, k-spacing(1) )</code></td>
+    <td><code>var(--kendo-file-box-padding-x, var(--kendo-spacing-1, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the File Box.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-padding-y</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-padding-y, k-spacing(1) )</code></td>
+    <td><code>var(--kendo-file-box-padding-y, var(--kendo-spacing-1, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the File Box.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-gap</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-gap, k-spacing(1) )</code></td>
+    <td><code>var(--kendo-file-box-gap, var(--kendo-spacing-1, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the elements of the File Box.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-min-width</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-min-width, var(--kendo-file-box-min-width, 96px) )</code></td>
+    <td><code>var(--kendo-file-box-min-width, var(--kendo-file-box-min-width, 96px))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the File Box.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-max-width</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-max-width, var(--kendo-file-box-max-width, 160px) )</code></td>
+    <td><code>var(--kendo-file-box-max-width, var(--kendo-file-box-max-width, 160px))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the File Box.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-border-width</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-border-width, 1px )</code></td>
+    <td><code>var(--kendo-file-box-border-width, 1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the File Box.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-border-style</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-border-style, solid )</code></td>
+    <td><code>var(--kendo-file-box-border-style, solid)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border style of the File Box.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-border-radius</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-border-radius, k-border-radius(md) )</code></td>
+    <td><code>var(--kendo-file-box-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border-radius of the File Box.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-name-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-name-font-size, var( --kendo-font-size-sm, inherit ))</code></td>
+    <td><code>var(--kendo-file-box-name-font-size, var(--kendo-font-size-sm, inherit))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the File Box file name.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-name-line-height</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-name-line-height, var( --kendo-line-height-lg, normal ))</code></td>
+    <td><code>var(--kendo-file-box-name-line-height, var(--kendo-line-height-lg, normal))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the File Box file name.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-size-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-size-font-size, var( --kendo-font-size-xs, inherit ))</code></td>
+    <td><code>var(--kendo-file-box-size-font-size, var(--kendo-font-size-xs, inherit))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the File Box file size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-size-line-height</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-size-line-height, var( --kendo-line-height-xs, normal ))</code></td>
+    <td><code>var(--kendo-file-box-size-line-height, var(--kendo-line-height-xs, normal))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the File Box file size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-bg</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-bg, color-mix(in srgb, k-color(base-on-subtle) 8%, transparent) )</code></td>
+    <td><code>var(--kendo-file-box-bg, color-mix(in srgb, var(--kendo-color-base-on-subtle, #242424) 8%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the File Box.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-text</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-text, k-color(base-on-subtle) )</code></td>
+    <td><code>var(--kendo-file-box-text, var(--kendo-color-base-on-subtle, #242424))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the File Box.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-border</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-border, $kendo-file-box-bg )</code></td>
+    <td><code>var(--kendo-file-box-border, var(--kendo-file-box-bg, color-mix(in srgb, var(--kendo-color-base-on-subtle, #242424) 8%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the File Box.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-wrapper-scroll-gradient</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-wrapper-scroll-gradient, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 1) 100% )</code></td>
+    <td><code>var(--kendo-file-box-wrapper-scroll-gradient, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient used for the File Box wrapper scrolling indicator.</div></div>
     </td>
 </tr>
 </tbody>
@@ -28121,6 +28231,86 @@ The following table lists the available variables for customizing the Fluent the
 </tbody>
 </table>
 
+### PromptBox
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-prompt-box-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-prompt-box-border-radius, k-border-radius(xxxl) )</code></td>
+    <td><code>var(--kendo-prompt-box-border-radius, var(--kendo-border-radius-xxxl, 1rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the PromptBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-prompt-box-box-shadow</td>
+    <td>String</td>
+    <td><code>var( --kendo-prompt-box-box-shadow, null )</code></td>
+    <td><code>var(--kendo-prompt-box-box-shadow, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the PromptBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-prompt-box-header-padding</td>
+    <td>String</td>
+    <td><code>var( --kendo-prompt-box-header-padding, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-prompt-box-header-padding, var(--kendo-spacing-2, 0.5rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the PromptBox header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-prompt-box-input-inner-padding</td>
+    <td>String</td>
+    <td><code>var( --kendo-prompt-box-input-inner-padding, #{k-spacing(3)} )</code></td>
+    <td><code>var(--kendo-prompt-box-input-inner-padding, var(--kendo-spacing-3, 0.75rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inner padding of the PromptBox input.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-prompt-box-affix-padding</td>
+    <td>String</td>
+    <td><code>var( --kendo-prompt-box-affix-padding, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-prompt-box-affix-padding, var(--kendo-spacing-2, 0.5rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the PromptBox affix.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-prompt-box-affix-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-prompt-box-affix-spacing, #{k-spacing(1)} )</code></td>
+    <td><code>var(--kendo-prompt-box-affix-spacing, var(--kendo-spacing-1, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the PromptBox affixes.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Radio
 
 <table class="theme-variables">
@@ -33032,8 +33222,8 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-suggestion-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-suggestion-padding-y, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-suggestion-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var( --kendo-suggestion-padding-y, #{k-spacing(1.5)} )</code></td>
+    <td><code>var(--kendo-suggestion-padding-y, var(--kendo-spacing-1\.5, 0.375rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Suggestion wrapper.</div></div>
@@ -33080,6 +33270,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-suggestion-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Suggestion.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-suggestion-line-height</td>
     <td>String</td>
     <td><code>var( --kendo-suggestion-line-height, var( --kendo-line-height, normal ) )</code></td>
@@ -33092,8 +33292,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-suggestion-border-radius</td>
     <td>String</td>
-    <td><code>var( --kendo-suggestion-border-radius, #{k-border-radius(xxl)} )</code></td>
-    <td><code>var(--kendo-suggestion-border-radius, var(--kendo-border-radius-xxl, 0.75rem))</code></td>
+    <td><code>var( --kendo-suggestion-border-radius, #{k-border-radius(full)} )</code></td>
+    <td><code>var(--kendo-suggestion-border-radius, var(--kendo-border-radius-full, 9999px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Suggestion.</div></div>
@@ -33137,6 +33337,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the Suggestion.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-suggestion-scroll-gradient</td>
+    <td>String</td>
+    <td><code>var( --kendo-suggestion-scroll-gradient, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 1) 100% )</code></td>
+    <td><code>var(--kendo-suggestion-scroll-gradient, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient used for scroll indicators in the Suggestion group.</div></div>
     </td>
 </tr>
 <tr>
