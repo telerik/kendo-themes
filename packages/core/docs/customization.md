@@ -4983,6 +4983,58 @@ The following table lists the available variables for customizing the Theme Core
 </tbody>
 </table>
 
+### SegmentedControl
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-segmented-control-sizes</td>
+    <td></td>
+    <td><code>(
+    sm: (
+        font-size: $kendo-segmented-control-sm-font-size,
+        line-height: $kendo-segmented-control-sm-line-height,
+        button-padding-x: $kendo-segmented-control-sm-button-padding-x,
+        button-padding-y: $kendo-segmented-control-sm-button-padding-y,
+        button-gap: $kendo-segmented-control-sm-button-gap
+    ),
+    md: (
+        font-size: $kendo-segmented-control-md-font-size,
+        line-height: $kendo-segmented-control-md-line-height,
+        button-padding-x: $kendo-segmented-control-md-button-padding-x,
+        button-padding-y: $kendo-segmented-control-md-button-padding-y,
+        button-gap: $kendo-segmented-control-md-button-gap
+    ),
+    lg: (
+        font-size: $kendo-segmented-control-lg-font-size,
+        line-height: $kendo-segmented-control-lg-line-height,
+        button-padding-x: $kendo-segmented-control-lg-button-padding-x,
+        button-padding-y: $kendo-segmented-control-lg-button-padding-y,
+        button-gap: $kendo-segmented-control-lg-button-gap
+    )
+)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the Segmented Control.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Signature
 
 <table class="theme-variables">
@@ -5024,6 +5076,50 @@ The following table lists the available variables for customizing the Theme Core
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Signature.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### SmartBox
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-smart-box-sizes</td>
+    <td></td>
+    <td><code>(
+    sm: (
+        padding-x: $kendo-smart-box-sm-padding-x,
+        prefix-margin-x: $kendo-smart-box-sm-prefix-margin-x,
+    ),
+    md: (
+        padding-x: $kendo-smart-box-md-padding-x,
+        prefix-margin-x: $kendo-smart-box-md-prefix-margin-x,
+    ),
+    lg: (
+        padding-x: $kendo-smart-box-lg-padding-x,
+        prefix-margin-x: $kendo-smart-box-lg-prefix-margin-x,
+
+    )
+)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Smart box components.</div></div>
     </td>
 </tr>
 </tbody>
