@@ -1,5 +1,4 @@
 import { classNames, optionClassNames, Size } from '../misc';
-import { MenuListItem, MenuSeparator } from '.';
 
 import { KendoComponent } from '../_types/component';
 import { MENU_FOLDER_NAME, MENU_MODULE_NAME } from './constants';
@@ -14,12 +13,9 @@ const options = {
 export type KendoMenuListOptions = {
     children?: React.JSX.Element | React.JSX.Element[];
     size?: (typeof options.size)[number] | null;
-    dir?: "rtl" | "ltr";
 };
 
-const defaultOptions = {
-    dir: 'ltr'
-};
+const defaultOptions = {};
 
 export const MenuList: KendoComponent<KendoMenuListOptions & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoMenuListOptions &
@@ -28,29 +24,8 @@ export const MenuList: KendoComponent<KendoMenuListOptions & React.HTMLAttribute
     const {
         children,
         size,
-        dir = defaultOptions.dir,
         ...other
     } = props;
-
-    const listChildren: React.JSX.Element[] = [];
-
-    if (children) {
-        if (Array.isArray(children)) {
-            children.map((child, index) => {
-                if (child.type === MenuListItem) {
-                    listChildren.push(
-                        <MenuListItem {...child.props} dir={dir} key={index} />
-                    );
-                } else if (child.type === MenuSeparator) {
-                    listChildren.push(
-                        <MenuSeparator />
-                    );
-                } else {
-                    listChildren.push(child);
-                }
-            });
-        }
-    }
 
     return (
         <ul
@@ -62,7 +37,7 @@ export const MenuList: KendoComponent<KendoMenuListOptions & React.HTMLAttribute
                     size,
                 })
             )}>
-            {listChildren}
+            {children}
         </ul>
     );
 };
