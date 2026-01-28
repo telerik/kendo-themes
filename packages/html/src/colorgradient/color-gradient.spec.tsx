@@ -116,7 +116,7 @@ export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorG
                             role="slider"
                             aria-label="Color well with two-dimensional slider for selecting saturation and lightness, Saturation 50, Lightness 50"
                             aria-valuetext="Saturation 50, Lightness 50"
-                            aria-orientation="undefined"
+                            {...({ 'aria-orientation': 'undefined' } as unknown as React.AriaAttributes)}
                             aria-readonly={readonly ? 'true' : undefined}
                             tabIndex={0}
                             style={dragHandleStyle} ></div>
@@ -146,7 +146,7 @@ export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorG
                             role="slider"
                             aria-label="Color well with two-dimensional slider for selecting saturation and lightness, Saturation 50, Lightness 50"
                             aria-valuetext="Saturation 50, Lightness 50"
-                            aria-orientation="undefined"
+                            {...({ 'aria-orientation': 'undefined' } as unknown as React.AriaAttributes)}
                             aria-readonly={readonly ? 'true' : undefined}
                             tabIndex={0}
                             style={dragHandleStyle} ></div>

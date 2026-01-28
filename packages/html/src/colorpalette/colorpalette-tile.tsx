@@ -13,10 +13,21 @@ const options = {};
 export type KendoColorPaletteTileProps = {
     color?: string;
     tileSize?: string;
+    id?: string;
 };
 
 export type KendoColorPaletteTileState = { [K in (typeof states)[number]]?: boolean };
 
+
+export const getColorPaletteTileId = (id: string | undefined, color: string | undefined) => {
+    if (id) {
+        return id;
+    }
+    if (!color) {
+        return undefined;
+    }
+    return `k-colorpalette-tile-${color.replace(/[^a-zA-Z0-9_-]/g, '')}`;
+};
 
 export const ColorPaletteTile = (
     props: KendoColorPaletteTileProps &
@@ -24,6 +35,7 @@ export const ColorPaletteTile = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        id,
         color,
         tileSize,
         hover,
@@ -38,9 +50,12 @@ export const ColorPaletteTile = (
         'height': tileSize ? tileSize + 'px' : ''
     };
 
+    const tileId = getColorPaletteTileId(id, color);
+
     return (
         <td
             {...other}
+            id={tileId}
             role="gridcell"
             aria-label={color}
             aria-selected={selected ? 'true' : undefined}

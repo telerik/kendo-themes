@@ -1,6 +1,7 @@
+import * as React from 'react';
 import { classNames, stateClassNames, States, Size, optionClassNames } from '../misc';
 import { ColorPaletteRow } from './colorpalette-row';
-import { ColorPaletteTile } from './colorpalette-tile';
+import { ColorPaletteTile, getColorPaletteTileId } from './colorpalette-tile';
 
 import { KendoComponent } from '../_types/component';
 import { COLORPALETTE_FOLDER_NAME, COLORPALETTE_MODULE_NAME } from './constants';
@@ -22,6 +23,7 @@ export type KendoColorPaletteProps = KendoColorPaletteOptions & {
     palette?: Array<string> | any;
     columns?: number;
     tileSize?: string;
+    id?: string;
 };
 
 export type KendoColorPaletteState = { [K in (typeof states)[number]]?: boolean };
@@ -41,10 +43,32 @@ export const ColorPalette: KendoComponent<KendoColorPaletteProps & KendoColorPal
         columns = defaultOptions.columns,
         tileSize,
         disabled,
+        id = 'colorpalette',
         ...other
     } = props;
 
     const newChildren : React.JSX.Element[] = [];
+    let activeDescendantId: string | undefined;
+
+    const findFocusedTileId = (children: React.ReactNode): string | undefined => {
+        const items = React.Children.toArray(children);
+        for (const child of items) {
+            if (!React.isValidElement<any>(child)) {
+                continue;
+            }
+            const element = child as React.ReactElement<any>;
+            if (element.type === ColorPaletteTile && element.props.focus) {
+                return getColorPaletteTileId(element.props.id, element.props.color);
+            }
+            if (element.props?.children) {
+                const nested = findFocusedTileId(element.props.children);
+                if (nested) {
+                    return nested;
+                }
+            }
+        }
+        return undefined;
+    };
 
     if (palette) {
 
@@ -58,7 +82,21 @@ export const ColorPalette: KendoComponent<KendoColorPaletteProps & KendoColorPal
 
                 colors.slice(i * cols, (i + 1) * cols)
                     .map((color, index) => {
-                        items.push( <ColorPaletteTile key={index} color={color} tileSize={tileSize} /> );
+                        const tileIndex = (i * cols) + index;
+                        const tileId = `${id}-tile-${tileIndex}`;
+                        const isFocused = tileIndex === 0;
+                        if (isFocused && !activeDescendantId) {
+                            activeDescendantId = tileId;
+                        }
+                        items.push(
+                            <ColorPaletteTile
+                                key={index}
+                                id={tileId}
+                                color={color}
+                                tileSize={tileSize}
+                                focus={isFocused}
+                            />
+                        );
                     });
 
                 const row = <ColorPaletteRow key={i}>{items}</ColorPaletteRow>;
@@ -69,11 +107,17 @@ export const ColorPalette: KendoComponent<KendoColorPaletteProps & KendoColorPal
 
     }
 
+    if (!activeDescendantId) {
+        activeDescendantId = findFocusedTileId(props.children);
+    }
+
     return (
         <div
             {...other}
+            id={id}
             role="grid"
             aria-label="Color palette"
+            aria-activedescendant={activeDescendantId}
             tabIndex={0}
             aria-disabled={disabled ? 'true' : undefined}
             className={classNames(
