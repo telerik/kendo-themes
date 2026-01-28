@@ -1,6 +1,6 @@
 import { SmartBoxOpened } from '../../smart-box';
 import { SegmentedControl, SegmentedControlButton } from '../../segmented-control';
-import { List, ListGroup, ListItem } from '../../list';
+import { List, ListItem, ListGroupItem, ListContent, ListUl } from '../../list';
 import { Icon } from "../../icon";
 import { IconButton } from '../../button';
 import { NoData } from "../../nodata";
@@ -50,15 +50,18 @@ export default () =>(
                                 </>
                             } />
                             <List>
-                                <ListGroup>
-                                    <ListItem iconName="check" iconClassName="k-smart-box-check-icon" description='Fuzzy relevance across fields using similarity scoring'>Search</ListItem>
-                                    <ListItem description='Keyword + semantic ranking for best results'>Semantic Search</ListItem>
-                                </ListGroup>
-                                <ListGroup label="Previously searched" groupIconName="clock-arrow-rotate">
-                                    <ListItem>account</ListItem>
-                                    <ListItem>transactions Long long long long long content</ListItem>
-                                    <ListItem>customer</ListItem>
-                                </ListGroup>
+                                <ListContent grouping>
+                                    <ListUl>
+                                        <ListItem iconName="check" iconClassName="k-smart-box-check-icon" description='Fuzzy relevance across fields using similarity scoring'>Search</ListItem>
+                                        <ListItem description='Keyword + semantic ranking for best results'>Semantic Search</ListItem>
+                                    </ListUl>
+                                    <ListUl>
+                                        <ListGroupItem groupIconName="clock-arrow-rotate">Previously searched</ListGroupItem>
+                                        <ListItem>account</ListItem>
+                                        <ListItem>transactions Long long long long long content</ListItem>
+                                        <ListItem>customer</ListItem>
+                                    </ListUl>
+                                </ListContent>
                             </List>
                     </>} />
             </section>
@@ -86,16 +89,20 @@ export default () =>(
                                 </>
                             } />
                             <List>
-                                <ListGroup label="Suggested prompts" groupIconName="lightbulb-outline">
-                                    <ListItem>Filter by account type</ListItem>
-                                    <ListItem>Show only failed transactions</ListItem>
-                                    <ListItem>Hide Currency column</ListItem>
-                                    <ListItem>Sort by Customer Name ascending</ListItem>
-                                </ListGroup>
-                                <ListGroup label="Previously asked" groupIconName="clock-arrow-rotate">
-                                    <ListItem description="03:07">Sort by amount descending</ListItem>
-                                    <ListItem description="10:02">Sort by amount ascending</ListItem>
-                                </ListGroup>
+                                <ListContent grouping>
+                                    <ListUl>
+                                        <ListGroupItem groupIconName="lightbulb-outline">Suggested prompts</ListGroupItem>
+                                        <ListItem>Filter by account type</ListItem>
+                                        <ListItem>Show only failed transactions</ListItem>
+                                        <ListItem>Hide Currency column</ListItem>
+                                        <ListItem>Sort by Customer Name ascending</ListItem>
+                                    </ListUl>
+                                    <ListUl>
+                                        <ListGroupItem groupIconName="clock-arrow-rotate">Previously asked</ListGroupItem>
+                                        <ListItem description="03:07">Sort by amount descending</ListItem>
+                                        <ListItem description="10:02">Sort by amount ascending</ListItem>
+                                    </ListUl>
+                                </ListContent>
                             </List>
                     </>} />
             </section>

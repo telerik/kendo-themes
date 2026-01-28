@@ -1,4 +1,4 @@
-import { List, ListItem } from "../../list";
+import { List, ListContent, ListItem } from "../../list";
 import { Searchbox } from "../../searchbox";
 import DropdownList from "../dropdownlist.spec";
 
@@ -11,9 +11,11 @@ export const DropdownListFiltering = (props) => (
                     <Searchbox />
                 </div>
                 <List>
-                    <ListItem>List item</ListItem>
-                    <ListItem>List item</ListItem>
-                    <ListItem>List item</ListItem>
+                    <ListContent>
+                        <ListItem>List item</ListItem>
+                        <ListItem>List item</ListItem>
+                        <ListItem>List item</ListItem>
+                    </ListContent>
                 </List>
             </>
         }

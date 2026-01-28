@@ -1,12 +1,17 @@
-import { List, ListItem } from "../../list";
+import { List, ListItem, ListContent } from "../../list";
 
-export const ListNormal = (props) => (
+export const ListNormal = ({ children, ...other }: any) => (
     <List
-        children={[
-            <ListItem key="list-item-1">List item</ListItem>,
-            <ListItem key="list-item-2">List item</ListItem>,
-            <ListItem key="list-item-3">List item</ListItem>
-        ]}
-        {...props}
-    />
+        {...other}
+    >
+        <ListContent>
+            {children || (
+                <>
+                    <ListItem key="list-item-1">List item</ListItem>
+                    <ListItem key="list-item-2">List item</ListItem>
+                    <ListItem key="list-item-3">List item</ListItem>
+                </>
+            )}
+        </ListContent>
+    </List>
 );

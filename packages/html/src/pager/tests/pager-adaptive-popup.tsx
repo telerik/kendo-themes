@@ -1,6 +1,6 @@
 import { ActionSheet, ActionSheetHeader } from '../../action-sheet';
 import { Button } from '../../button';
-import { List, ListItem } from '../../list';
+import { List, ListContent, ListItem } from '../../list';
 import { PagerInput } from '../templates/pager-input';
 
 
@@ -40,9 +40,11 @@ export default () => (
                 >
                     <div className="k-list-container">
                         <List size="large">
-                            <ListItem text="All" />
-                            <ListItem text="5" selected />
-                            <ListItem text="20" />
+                            <ListContent>
+                                <ListItem text="All" />
+                                <ListItem text="5" selected />
+                                <ListItem text="20" />
+                            </ListContent>
                         </List>
                     </div>
                 </ActionSheet>
@@ -62,9 +64,11 @@ export default () => (
                 >
                     <div className="k-list-container">
                         <List size="large">
-                            <ListItem text="All" />
-                            <ListItem text="5" selected />
-                            <ListItem text="20" />
+                            <ListContent>
+                                <ListItem text="All" />
+                                <ListItem text="5" selected />
+                                <ListItem text="20" />
+                            </ListContent>
                         </List>
                     </div>
                 </ActionSheet>

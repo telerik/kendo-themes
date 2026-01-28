@@ -1,4 +1,4 @@
-import { List, ListItem, ListCustomValue } from "../../list";
+import { List, ListContent, ListCustomValue, ListItem } from "../../list";
 import MultiSelect from "../multiselect.spec";
 
 export const MultiSelectCustomValue = ({ value="Custom value", ...other }: any) => (
@@ -7,9 +7,11 @@ export const MultiSelectCustomValue = ({ value="Custom value", ...other }: any) 
         popup={(
             <>
                 <List customValue={<ListCustomValue text={`Use "${value}"`}/>} >
-                    <ListItem>List item</ListItem>
-                    <ListItem>List item</ListItem>
-                    <ListItem>List item</ListItem>
+                    <ListContent>
+                        <ListItem>List item</ListItem>
+                        <ListItem>List item</ListItem>
+                        <ListItem>List item</ListItem>
+                    </ListContent>
                 </List>
             </>
         )}

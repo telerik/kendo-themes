@@ -11,7 +11,7 @@ import {
 } from '../input';
 import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
-import { List, ListCustomValue, ListItem } from '../list';
+import { List, ListContent, ListCustomValue, ListItem } from '../list';
 import { Button } from '../button';
 
 import { KendoComponent } from '../_types/component';
@@ -159,9 +159,11 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
                 >
                     <div className="k-list-container">
                         <List customValue={adaptiveCustomValue ? <ListCustomValue text={`Use "${value}"`}/> : undefined} size="large">
-                            <ListItem text="List item" />
-                            <ListItem text="List item" />
-                            <ListItem text="List item" />
+                            <ListContent>
+                                <ListItem text="List item" />
+                                <ListItem text="List item" />
+                                <ListItem text="List item" />
+                            </ListContent>
                         </List>
                     </div>
                 </ActionSheet>
