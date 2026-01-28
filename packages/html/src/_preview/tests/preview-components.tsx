@@ -139,7 +139,7 @@ export default () => (
                                     <ColorPicker />
                                 </ToolbarItem>
                                 <ToolbarSeparator className="k-toolbar-button-separator" />
-                                <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
+                                <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat"></Button>
                             </ToolbarResizable>
                         </div>
                         <div className="k-d-grid k-grid-cols-3 k-gap-10">

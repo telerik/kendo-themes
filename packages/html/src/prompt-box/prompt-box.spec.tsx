@@ -14,7 +14,7 @@ const states = [
 ];
 
 const options = {
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
+    fillMode: [ FillMode.undefined, FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
 export type KendoPromptBoxOptions = {
@@ -36,7 +36,6 @@ export type KendoPromptBoxState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
     lineMode: 'auto',
-    fillMode: FillMode.solid,
     isExpanded: false,
 } as const;
 
@@ -44,7 +43,7 @@ export const PromptBox = (
     props: KendoPromptBoxProps & KendoPromptBoxState & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        fillMode = defaultOptions.fillMode,
+        fillMode,
         lineMode = defaultOptions.lineMode,
         startAffix,
         endAffix,

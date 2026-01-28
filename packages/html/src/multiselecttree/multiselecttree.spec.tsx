@@ -141,7 +141,6 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
                     <Button
                         className="k-input-button"
                         icon="caret-alt-down"
-                        rounded={null}
                         size={size}
                         fillMode={fillMode}
                     />
