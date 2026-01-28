@@ -15,7 +15,7 @@ export default () =>(
                 <PromptBoxLineModeMulti
                     placeholder="Type a message"
                     endAffix={<>
-                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                        <IconButton icon="paperclip-outline-alt-right" size="small" fillMode="flat" />
                         <div className="k-spacer"></div>
                     </>}
                 />
@@ -34,7 +34,7 @@ export default () =>(
                         </FileBoxWrapper>
                     </>}
                     endAffix={<>
-                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                        <IconButton icon="paperclip-outline-alt-right" size="small" fillMode="flat" />
                         <div className="k-spacer"></div>
                     </>}
                 />
