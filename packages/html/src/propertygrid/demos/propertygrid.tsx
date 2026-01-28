@@ -33,14 +33,14 @@ export const PropertygridDemo = (
     switch (variant) {
         case 'preview':
             return (
-                <Splitter>
-                    <SplitterPane className='k-text-center k-mt-24' scrollable flexBasis="215px">
+                <Splitter panes={[
+                    <SplitterPane className='k-text-center k-mt-24' scrollable flexBasis="215px" key="pane-1">
                         <Button icon="star">Button</Button>
-                    </SplitterPane>
-                    <SplitterPane scrollable>
+                    </SplitterPane>,
+                    <SplitterPane scrollable key="pane-2">
                         <PropertyGridNormal style={{ height: "auto" }} {...other} />
                     </SplitterPane>
-                </Splitter>
+                ]} />
             );
         case 'normal':
         default:

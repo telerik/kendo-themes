@@ -13,14 +13,14 @@ export default () =>(
 
             <span>Preview - File info</span>
             <FileManagerGridPreview>
-                <Splitter className="k-filemanager-splitter">
-                    <SplitterPane className="k-filemanager-navigation" collapsible scrollable flexBasis="25%">
+                <Splitter className="k-filemanager-splitter" panes={[
+                    <SplitterPane className="k-filemanager-navigation" collapsible scrollable flexBasis="25%" key="pane-1">
                         <FileManagerTreeview>
                             <TreeviewItem text="Folder" />
                         </FileManagerTreeview>
-                    </SplitterPane>
+                    </SplitterPane>,
 
-                    <SplitterPane className="k-filemanager-content" scrollable>
+                    <SplitterPane className="k-filemanager-content" scrollable key="pane-2">
                         <FileManagerBreadcrumb>
                             <BreadcrumbContainer>
                                 <BreadcrumbItem root>
@@ -79,13 +79,13 @@ export default () =>(
                                 </GridContent>
                             </GridContainer>
                         </Grid>
-                    </SplitterPane>
+                    </SplitterPane>,
 
-                    <SplitterPane className="k-filemanager-preview" collapsible scrollable flexBasis="25%">
+                    <SplitterPane className="k-filemanager-preview" collapsible scrollable flexBasis="25%" key="pane-3">
                         <FileInfo selection="single" icon="file-image" name="file.png" fileType="Image" fileSize="72 KB" fileDateCreated="13/12/2019 12:22:04 PM" fileDateModified="13/12/2019 12:36:04 PM">
                         </FileInfo>
                     </SplitterPane>
-                </Splitter>
+                ]} />
             </FileManagerGridPreview>
 
             <span>Preview - No file selected</span>
@@ -93,14 +93,14 @@ export default () =>(
 
             <span>Preview - Multiple files selected</span>
             <FileManagerGridPreview>
-                <Splitter className="k-filemanager-splitter">
-                    <SplitterPane className="k-filemanager-navigation" collapsible scrollable flexBasis="25%">
+                <Splitter className="k-filemanager-splitter" panes={[
+                    <SplitterPane className="k-filemanager-navigation" collapsible scrollable flexBasis="25%" key="pane-1">
                         <FileManagerTreeview>
                             <TreeviewItem text="Folder" />
                         </FileManagerTreeview>
-                    </SplitterPane>
+                    </SplitterPane>,
 
-                    <SplitterPane className="k-filemanager-content" scrollable>
+                    <SplitterPane className="k-filemanager-content" scrollable key="pane-2">
                         <FileManagerBreadcrumb>
                             <BreadcrumbContainer>
                                 <BreadcrumbItem root>
@@ -157,13 +157,13 @@ export default () =>(
                                 </GridTable>
                             </GridContent>
                         </Grid>
-                    </SplitterPane>
+                    </SplitterPane>,
 
-                    <SplitterPane className="k-filemanager-preview" collapsible scrollable flexBasis="25%">
+                    <SplitterPane className="k-filemanager-preview" collapsible scrollable flexBasis="25%" key="pane-3">
                         <FileInfo selection="multiple" name="2 items">
                         </FileInfo>
                     </SplitterPane>
-                </Splitter>
+                ]} />
             </FileManagerGridPreview>
 
         </div>
