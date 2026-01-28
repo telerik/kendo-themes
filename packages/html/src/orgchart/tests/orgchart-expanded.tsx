@@ -26,15 +26,15 @@ export default () =>(
 
             <section>
                 <OrgchartVertical width="100%" height="366px">
-                    <OrgchartGroup orientation="vertical" justifyContent="center">
+                    <OrgchartGroup orientation="vertical" justifyContent="center" nodes={
                         <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de" lineBottom button buttonIcon="minus"></OrgchartNode>
-                    </OrgchartGroup>
-                    <OrgchartGroup orientation="vertical" justifyContent="around">
+                    } />
+                    <OrgchartGroup orientation="vertical" justifyContent="around" nodes={
                         <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de" lineTop lineBottom button buttonIcon="minus"></OrgchartNode>
-                    </OrgchartGroup>
-                    <OrgchartGroup orientation="vertical" justifyContent="around">
+                    } />
+                    <OrgchartGroup orientation="vertical" justifyContent="around" nodes={
                         <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de" lineTop lineBottom button></OrgchartNode>
-                    </OrgchartGroup>
+                    } />
                 </OrgchartVertical>
             </section>
 
