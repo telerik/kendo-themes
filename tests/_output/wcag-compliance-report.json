@@ -1,20 +1,20 @@
 {
   "meta": {
-    "timestamp": "2026-01-28T10:12:49.496Z",
+    "timestamp": "2026-01-28T10:20:34.151Z",
     "complianceLevel": "AA",
-    "filesTested": 4,
+    "filesTested": 8,
     "wcagVersion": "2.2"
   },
   "summary": {
     "totalViolations": 0,
-    "totalPasses": 48,
+    "totalPasses": 100,
     "avgScore": 100
   },
   "criteriaGroups": {},
   "detailedResults": [
     {
-      "filePath": "./tests/avatar/avatar.html",
-      "timestamp": "2026-01-28T10:12:48.383Z",
+      "filePath": "./tests/button/button.html",
+      "timestamp": "2026-01-28T10:20:31.625Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -27,17 +27,17 @@
           ]
         },
         {
-          "id": "aria-hidden-focus",
-          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "avoid-inline-spacing",
           "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
           "wcagCriteria": [
             "1.4.1"
+          ]
+        },
+        {
+          "id": "button-name",
+          "description": "Ensure buttons have discernible text",
+          "wcagCriteria": [
+            "4.1.2"
           ]
         },
         {
@@ -62,18 +62,6 @@
           ]
         },
         {
-          "id": "image-alt",
-          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
-          "wcagCriteria": [
-            "1.1.1"
-          ]
-        },
-        {
-          "id": "image-redundant-alt",
-          "description": "Ensure image alternative is not repeated as text",
-          "wcagCriteria": []
-        },
-        {
           "id": "meta-viewport-large",
           "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
           "wcagCriteria": []
@@ -96,17 +84,38 @@
           "id": "region",
           "description": "Ensure all page content is contained by landmarks",
           "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
         }
       ],
       "incomplete": [],
-      "inapplicable": 74
+      "inapplicable": 75
     },
     {
-      "filePath": "./tests/avatar/avatar-solid.html",
-      "timestamp": "2026-01-28T10:12:48.739Z",
+      "filePath": "./tests/button/button-states.html",
+      "timestamp": "2026-01-28T10:20:31.985Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
         {
           "id": "aria-hidden-body",
           "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
@@ -123,10 +132,38 @@
           ]
         },
         {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
           "id": "avoid-inline-spacing",
           "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
           "wcagCriteria": [
             "1.4.1"
+          ]
+        },
+        {
+          "id": "button-name",
+          "description": "Ensure buttons have discernible text",
+          "wcagCriteria": [
+            "4.1.2"
           ]
         },
         {
@@ -151,18 +188,6 @@
           ]
         },
         {
-          "id": "image-alt",
-          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
-          "wcagCriteria": [
-            "1.1.1"
-          ]
-        },
-        {
-          "id": "image-redundant-alt",
-          "description": "Ensure image alternative is not repeated as text",
-          "wcagCriteria": []
-        },
-        {
           "id": "meta-viewport-large",
           "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
           "wcagCriteria": []
@@ -185,14 +210,21 @@
           "id": "region",
           "description": "Ensure all page content is contained by landmarks",
           "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
         }
       ],
       "incomplete": [],
-      "inapplicable": 74
+      "inapplicable": 69
     },
     {
-      "filePath": "./tests/avatar/avatar-size-rounded.html",
-      "timestamp": "2026-01-28T10:12:49.039Z",
+      "filePath": "./tests/button/button-solid.html",
+      "timestamp": "2026-01-28T10:20:32.269Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -205,17 +237,17 @@
           ]
         },
         {
-          "id": "aria-hidden-focus",
-          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "avoid-inline-spacing",
           "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
           "wcagCriteria": [
             "1.4.1"
+          ]
+        },
+        {
+          "id": "button-name",
+          "description": "Ensure buttons have discernible text",
+          "wcagCriteria": [
+            "4.1.2"
           ]
         },
         {
@@ -240,18 +272,6 @@
           ]
         },
         {
-          "id": "image-alt",
-          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
-          "wcagCriteria": [
-            "1.1.1"
-          ]
-        },
-        {
-          "id": "image-redundant-alt",
-          "description": "Ensure image alternative is not repeated as text",
-          "wcagCriteria": []
-        },
-        {
           "id": "meta-viewport-large",
           "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
           "wcagCriteria": []
@@ -274,17 +294,38 @@
           "id": "region",
           "description": "Ensure all page content is contained by landmarks",
           "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
         }
       ],
       "incomplete": [],
-      "inapplicable": 74
+      "inapplicable": 75
     },
     {
-      "filePath": "./tests/avatar/avatar-outline.html",
-      "timestamp": "2026-01-28T10:12:49.300Z",
+      "filePath": "./tests/button/button-size.html",
+      "timestamp": "2026-01-28T10:20:32.565Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
         {
           "id": "aria-hidden-body",
           "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
@@ -301,10 +342,38 @@
           ]
         },
         {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
           "id": "avoid-inline-spacing",
           "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
           "wcagCriteria": [
             "1.4.1"
+          ]
+        },
+        {
+          "id": "button-name",
+          "description": "Ensure buttons have discernible text",
+          "wcagCriteria": [
+            "4.1.2"
           ]
         },
         {
@@ -329,16 +398,88 @@
           ]
         },
         {
-          "id": "image-alt",
-          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
           "wcagCriteria": [
-            "1.1.1"
+            "1.4.4"
           ]
         },
         {
-          "id": "image-redundant-alt",
-          "description": "Ensure image alternative is not repeated as text",
+          "id": "nested-interactive",
+          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
           "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 69
+    },
+    {
+      "filePath": "./tests/button/button-outline.html",
+      "timestamp": "2026-01-28T10:20:32.859Z",
+      "violations": [],
+      "filteredPageLevel": 3,
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "button-name",
+          "description": "Ensure buttons have discernible text",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
         },
         {
           "id": "meta-viewport-large",
@@ -363,10 +504,269 @@
           "id": "region",
           "description": "Ensure all page content is contained by landmarks",
           "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
         }
       ],
       "incomplete": [],
-      "inapplicable": 74
+      "inapplicable": 75
+    },
+    {
+      "filePath": "./tests/button/button-link.html",
+      "timestamp": "2026-01-28T10:20:33.141Z",
+      "violations": [],
+      "filteredPageLevel": 3,
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "button-name",
+          "description": "Ensure buttons have discernible text",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        },
+        {
+          "id": "nested-interactive",
+          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 75
+    },
+    {
+      "filePath": "./tests/button/button-flat.html",
+      "timestamp": "2026-01-28T10:20:33.434Z",
+      "violations": [],
+      "filteredPageLevel": 3,
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "button-name",
+          "description": "Ensure buttons have discernible text",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        },
+        {
+          "id": "nested-interactive",
+          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 75
+    },
+    {
+      "filePath": "./tests/button/button-clear.html",
+      "timestamp": "2026-01-28T10:20:33.717Z",
+      "violations": [],
+      "filteredPageLevel": 3,
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "button-name",
+          "description": "Ensure buttons have discernible text",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        },
+        {
+          "id": "nested-interactive",
+          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 75
     }
   ]
 }
