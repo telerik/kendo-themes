@@ -73,6 +73,7 @@ export default () =>(
                     formButtons={null}
                 >
                     <FormField
+                        orientation="horizontal"
                         label="DateInput:"
                         editor={
                             <DateInput />
@@ -81,6 +82,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         label="DatePicker:"
                         editor={
                             <DatePicker />
@@ -89,6 +91,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         label="DateTimePicker:"
                         editor={
                             <DateTimePicker />
@@ -97,6 +100,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         label="DateRangePicker:"
                         editor={
                             <DateRangePicker />
@@ -105,6 +109,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         label="TimePicker:"
                         editor={
                             <TimePicker />
