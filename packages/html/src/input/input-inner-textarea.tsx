@@ -28,18 +28,19 @@ export const InputInnerTextarea = (
         value = defaultOptions.value,
         placeholder = defaultOptions.placeholder,
         rows,
+        className: customClassName,
         ...other
     } = props;
 
     return (
         <textarea
-            className={classNames(props.className, className, optionClassNames(className, props))}
+            {...other}
+            className={classNames(customClassName, className, optionClassNames(className, props))}
             placeholder={placeholder}
             rows={rows}
             defaultValue={value}
             aria-label={props['aria-label'] || 'Textarea'}
             aria-multiline="true"
-            {...other}
         />
     );
 };
