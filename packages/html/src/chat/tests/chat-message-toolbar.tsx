@@ -31,7 +31,7 @@ export default () =>(
                         <ChatMessage toolbar toolbarItems={[
                             <Button icon="copy" fillMode="flat"></Button>,
                             <Button icon="arrows-rotate-outline" fillMode="flat"></Button>,
-                            <Button icon="download" fillMode="flat"></Button>,
+                            <Button icon="download-light" fillMode="flat"></Button>,
                             <ToolbarSeparator></ToolbarSeparator>,
                             <Button icon="thumb-up-outline" fillMode="flat"></Button>,
                         ]} selected text="(Selected) Message with toolbar" />

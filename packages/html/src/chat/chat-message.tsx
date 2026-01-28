@@ -17,8 +17,8 @@ const options = {};
 
 const defaultToolbarItems = [
     <Button icon="copy" fillMode="flat"></Button>,
-    <Button icon="arrow-rotate-cw" fillMode="flat"></Button>,
-    <Button icon="download" fillMode="flat"></Button>,
+    <Button icon="arrow-rotate-cw-outline" fillMode="flat"></Button>,
+    <Button icon="download-light" fillMode="flat"></Button>,
 ];
 
 const defaultOptions = {

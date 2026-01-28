@@ -23,7 +23,7 @@ export default () =>(
                         <Icon icon="plus"/>
                     </>}
                     endAffix={<>
-                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                        <IconButton icon="paperclip-outline-alt-right" size="small" fillMode="flat" />
                     </>}
                 />
             </div>
@@ -36,7 +36,7 @@ export default () =>(
                     endAffix={<>
                         <Icon icon="plus"/>
                         <div className="k-spacer"></div>
-                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                        <IconButton icon="paperclip-outline-alt-right" size="small" fillMode="flat" />
                     </>}
                 />
             </div>
@@ -47,7 +47,7 @@ export default () =>(
                         <Icon icon="plus"/>
                     </>}
                     endAffix={<>
-                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                        <IconButton icon="paperclip-outline-alt-right" size="small" fillMode="flat" />
                     </>}
                 />
             </div>
@@ -60,7 +60,7 @@ export default () =>(
                     endAffix={<>
                         <Icon icon="plus"/>
                         <div className="k-spacer"></div>
-                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                        <IconButton icon="paperclip-outline-alt-right" size="small" fillMode="flat" />
                     </>}
                 />
             </div>
@@ -81,7 +81,7 @@ export default () =>(
                         <Icon icon="plus"/>
                     </>}
                     endAffix={<>
-                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                        <IconButton icon="paperclip-outline-alt-right" size="small" fillMode="flat" />
                     </>}
                 />
             </div>
@@ -97,7 +97,7 @@ export default () =>(
                     endAffix={<>
                         <Icon icon="plus"/>
                         <div className="k-spacer"></div>
-                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                        <IconButton icon="paperclip-outline-alt-right" size="small" fillMode="flat" />
                     </>}
                 />
             </div>
@@ -111,7 +111,7 @@ export default () =>(
                         <Icon icon="plus"/>
                     </>}
                     endAffix={<>
-                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                        <IconButton icon="paperclip-outline-alt-right" size="small" fillMode="flat" />
                     </>}
                 />
             </div>
@@ -127,7 +127,7 @@ export default () =>(
                     endAffix={<>
                         <Icon icon="plus"/>
                         <span className="k-spacer"></span>
-                        <IconButton icon="paperclip" size="small" fillMode="flat" />
+                        <IconButton icon="paperclip-outline-alt-right" size="small" fillMode="flat" />
                     </>}
                 />
             </div>
