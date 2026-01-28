@@ -1,8 +1,8 @@
 import { Treeview, TreeviewItem, TreeviewGroup } from "../../treeview";
 
-export const TreeviewCheckboxes = (props) => (
-    <Treeview
-        children={[
+export const TreeviewCheckboxes = ({ children, ...other }: any) => (
+    <Treeview {...other}>
+        {children || [
             <TreeviewItem key="treeview-item-1" text="Root 1" showCheckbox />,
             <TreeviewItem key="treeview-item-2" text="Root 2" showCheckbox expanded>
                 <TreeviewGroup>
@@ -21,7 +21,5 @@ export const TreeviewCheckboxes = (props) => (
                 <TreeviewItem text="Child 3.3" />
             </TreeviewItem>
         ]}
-        {...props}
-    >
     </Treeview>
 );
