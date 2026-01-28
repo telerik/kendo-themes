@@ -36,6 +36,7 @@ export type KendoColorGradientProps = KendoColorGradientOptions & {
     ariaRole?: string | null;
     ariaLabel?: string | null;
     tabIndex?: number | null;
+    ariaInvalid?: boolean | null;
 };
 
 export type KendoColorGradientState = { [K in (typeof states)[number]]?: boolean };
@@ -74,8 +75,9 @@ export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorG
         focusHandle,
         canvasOrientation = defaultOptions.canvasOrientation,
         ariaRole = "textbox",
-        ariaLabel = "Color gradient picker",
+        ariaLabel = "Color gradient picker, color #b88484AA",
         tabIndex = 0,
+        ariaInvalid,
         ...other
     } = props;
 
@@ -85,7 +87,8 @@ export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorG
             {...(ariaRole !== null && { role: ariaRole })}
             {...(ariaLabel !== null && { 'aria-label': ariaLabel })}
             {...(tabIndex !== null && { tabIndex })}
-            aria-disabled={disabled ? true : undefined}
+            {...(ariaInvalid && { 'aria-invalid': 'true' })}
+            aria-disabled={disabled ? 'true' : undefined}
             className={classNames(
                 props.className,
                 COLOR_GRADIENT_CLASSNAME,
@@ -111,8 +114,11 @@ export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorG
                                 }
                             )}
                             role="slider"
-                            aria-label="Color well with two-dimensional slider for selecting saturation and lightness"
+                            aria-label="Color well with two-dimensional slider for selecting saturation and lightness, Saturation 50, Lightness 50"
                             aria-valuetext="Saturation 50, Lightness 50"
+                            aria-orientation="undefined"
+                            aria-readonly={readonly ? 'true' : undefined}
+                            tabIndex={0}
                             style={dragHandleStyle} ></div>
                         </div>
                     </div>
@@ -138,8 +144,11 @@ export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorG
                                 }
                             )}
                             role="slider"
-                            aria-label="Color well with two-dimensional slider for selecting saturation and lightness"
+                            aria-label="Color well with two-dimensional slider for selecting saturation and lightness, Saturation 50, Lightness 50"
                             aria-valuetext="Saturation 50, Lightness 50"
+                            aria-orientation="undefined"
+                            aria-readonly={readonly ? 'true' : undefined}
+                            tabIndex={0}
                             style={dragHandleStyle} ></div>
                         </div>
                     </div>

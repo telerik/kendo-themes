@@ -1,129 +1,376 @@
 {
-  "timestamp": "2026-01-28T13:01:28.687Z",
+  "timestamp": "2026-01-28T19:06:33.376Z",
   "summary": {
-    "filesTested": 8,
+    "filesTested": 7,
     "skipped": 0,
-    "passed": 279,
-    "violations": 4
+    "passed": 165,
+    "violations": 19
   },
   "results": [
     {
-      "filePath": "./tests/progressbar/progressbar.html",
-      "spec": "aria/progressbar_aria.md",
-      "totalRules": 5,
-      "violations": [],
-      "passed": 90,
-      "violationCount": 0
-    },
-    {
-      "filePath": "./tests/progressbar/progressbar-vertical.html",
-      "spec": "aria/progressbar_aria.md",
-      "totalRules": 5,
-      "violations": [],
-      "passed": 45,
-      "violationCount": 0
-    },
-    {
-      "filePath": "./tests/progressbar/progressbar-states.html",
-      "spec": "aria/progressbar_aria.md",
-      "totalRules": 5,
+      "filePath": "./tests/colorgradient/colorgradient.html",
+      "spec": "aria/colorgradient_aria.md",
+      "totalRules": 9,
+      "testedRules": 7,
+      "untestedRules": [
+        {
+          "selector": ".k-colorgradient",
+          "attribute": "role=textbox",
+          "usage": "The focusable wrapper of the component should be considered a `textbox`. That signifies it has a value that could be submitted."
+        },
+        {
+          "selector": ".k-colorgradient.k-disabled",
+          "attribute": "aria-disabled=true",
+          "usage": "Attribute is rendered only when the ColorPalette is disabled."
+        }
+      ],
       "violations": [
         {
           "rule": {
-            "selector": ".k-progressbar",
-            "attribute": "aria-valuemin",
-            "usage": "Set to a decimal value representing the minimum value, and less than \"aria-valuemax\". If not present, the default value is 0."
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
           },
-          "element": "<div role=\"progressbar\" aria-label=\"Progress\" class=\"k-progressbar k-progressbar-horizontal k-progressbar-indeterminate\" style=\"--kendo-progressbar-value: 60;\">\n            <span class=\"k-progress-sta",
-          "index": 2,
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
+          "index": 0,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-valuemin",
+          "expected": "aria-orientation",
+          "actual": null
+        }
+      ],
+      "passed": 8,
+      "violationCount": 1
+    },
+    {
+      "filePath": "./tests/colorgradient/colorgradient-states.html",
+      "spec": "aria/colorgradient_aria.md",
+      "totalRules": 9,
+      "testedRules": 9,
+      "untestedRules": [],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
+          },
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-orientation",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-progressbar",
-            "attribute": "aria-valuemax",
-            "usage": "Set to a decimal value representing the maximum value, and greater than \"aria-valuemin\". If not present, the default value is 100."
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
           },
-          "element": "<div role=\"progressbar\" aria-label=\"Progress\" class=\"k-progressbar k-progressbar-horizontal k-progressbar-indeterminate\" style=\"--kendo-progressbar-value: 60;\">\n            <span class=\"k-progress-sta",
-          "index": 2,
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
+          "index": 1,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-valuemax",
-          "actual": null
-        }
-      ],
-      "passed": 12,
-      "violationCount": 2
-    },
-    {
-      "filePath": "./tests/progressbar/progressbar-reverse.html",
-      "spec": "aria/progressbar_aria.md",
-      "totalRules": 5,
-      "violations": [],
-      "passed": 60,
-      "violationCount": 0
-    },
-    {
-      "filePath": "./tests/progressbar/circular-progressbar-angular.html",
-      "spec": "aria/progressbar_aria.md",
-      "totalRules": 5,
-      "violations": [],
-      "passed": 0,
-      "violationCount": 0
-    },
-    {
-      "filePath": "./tests/progressbar/chunk-progressbar.html",
-      "spec": "aria/progressbar_aria.md",
-      "totalRules": 5,
-      "violations": [],
-      "passed": 40,
-      "violationCount": 0
-    },
-    {
-      "filePath": "./tests/progressbar/chunk-progressbar-vertical.html",
-      "spec": "aria/progressbar_aria.md",
-      "totalRules": 5,
-      "violations": [],
-      "passed": 20,
-      "violationCount": 0
-    },
-    {
-      "filePath": "./tests/progressbar/chunk-progressbar-states.html",
-      "spec": "aria/progressbar_aria.md",
-      "totalRules": 5,
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-progressbar",
-            "attribute": "aria-valuemin",
-            "usage": "Set to a decimal value representing the minimum value, and less than \"aria-valuemax\". If not present, the default value is 0."
-          },
-          "element": "<div role=\"progressbar\" aria-label=\"Progress\" class=\"k-progressbar k-chunk-progressbar k-progressbar-horizontal k-progressbar-indeterminate\">\n            <ul class=\"k-progressbar-chunks k-reset\">\n    ",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-valuemin",
+          "expected": "aria-orientation",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-progressbar",
-            "attribute": "aria-valuemax",
-            "usage": "Set to a decimal value representing the maximum value, and greater than \"aria-valuemin\". If not present, the default value is 100."
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
           },
-          "element": "<div role=\"progressbar\" aria-label=\"Progress\" class=\"k-progressbar k-chunk-progressbar k-progressbar-horizontal k-progressbar-indeterminate\">\n            <ul class=\"k-progressbar-chunks k-reset\">\n    ",
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
           "index": 2,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-valuemax",
+          "expected": "aria-orientation",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
+          },
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-orientation",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
+          },
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-orientation",
           "actual": null
         }
       ],
-      "passed": 12,
-      "violationCount": 2
+      "passed": 46,
+      "violationCount": 5
+    },
+    {
+      "filePath": "./tests/colorgradient/colorgradient-sizes.html",
+      "spec": "aria/colorgradient_aria.md",
+      "totalRules": 9,
+      "testedRules": 8,
+      "untestedRules": [
+        {
+          "selector": ".k-colorgradient.k-disabled",
+          "attribute": "aria-disabled=true",
+          "usage": "Attribute is rendered only when the ColorPalette is disabled."
+        }
+      ],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
+          },
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-orientation",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
+          },
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-orientation",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
+          },
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-orientation",
+          "actual": null
+        }
+      ],
+      "passed": 27,
+      "violationCount": 3
+    },
+    {
+      "filePath": "./tests/colorgradient/colorgradient-rtl.html",
+      "spec": "aria/colorgradient_aria.md",
+      "totalRules": 9,
+      "testedRules": 8,
+      "untestedRules": [
+        {
+          "selector": ".k-colorgradient.k-disabled",
+          "attribute": "aria-disabled=true",
+          "usage": "Attribute is rendered only when the ColorPalette is disabled."
+        }
+      ],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
+          },
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-orientation",
+          "actual": null
+        }
+      ],
+      "passed": 9,
+      "violationCount": 1
+    },
+    {
+      "filePath": "./tests/colorgradient/colorgradient-modes.html",
+      "spec": "aria/colorgradient_aria.md",
+      "totalRules": 9,
+      "testedRules": 8,
+      "untestedRules": [
+        {
+          "selector": ".k-colorgradient.k-disabled",
+          "attribute": "aria-disabled=true",
+          "usage": "Attribute is rendered only when the ColorPalette is disabled."
+        }
+      ],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
+          },
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-orientation",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
+          },
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-orientation",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
+          },
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-orientation",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
+          },
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-orientation",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
+          },
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-orientation",
+          "actual": null
+        }
+      ],
+      "passed": 39,
+      "violationCount": 5
+    },
+    {
+      "filePath": "./tests/colorgradient/colorgradient-draghandle.html",
+      "spec": "aria/colorgradient_aria.md",
+      "totalRules": 9,
+      "testedRules": 8,
+      "untestedRules": [
+        {
+          "selector": ".k-colorgradient.k-disabled",
+          "attribute": "aria-disabled=true",
+          "usage": "Attribute is rendered only when the ColorPalette is disabled."
+        }
+      ],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
+          },
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-orientation",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
+          },
+          "element": "<div class=\"k-hsv-draghandle k-draghandle k-focus\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\"",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-orientation",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
+          },
+          "element": "<div class=\"k-hsv-draghandle k-draghandle k-hover\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\"",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-orientation",
+          "actual": null
+        }
+      ],
+      "passed": 27,
+      "violationCount": 3
+    },
+    {
+      "filePath": "./tests/colorgradient/colorgradient-contrast.html",
+      "spec": "aria/colorgradient_aria.md",
+      "totalRules": 9,
+      "testedRules": 8,
+      "untestedRules": [
+        {
+          "selector": ".k-colorgradient.k-disabled",
+          "attribute": "aria-disabled=true",
+          "usage": "Attribute is rendered only when the ColorPalette is disabled."
+        }
+      ],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the `role=\"slider\"` must be removed."
+          },
+          "element": "<div class=\"k-hsv-draghandle k-draghandle\" role=\"slider\" aria-label=\"Color well with two-dimensional slider for selecting saturation and lightness\" aria-valuetext=\"Saturation 50, Lightness 50\" style=\"",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-orientation",
+          "actual": null
+        }
+      ],
+      "passed": 9,
+      "violationCount": 1
     }
   ]
 }
