@@ -23,7 +23,7 @@ $kendo-suggestion-font-size: var( --kendo-font-size, inherit ) !default;
 
 /// The line height of the Suggestion.
 /// @group suggestion
-$kendo-suggestion-line-height: var( --kendo-suggestion-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-suggestion-line-height: var( --kendo-suggestion-line-height, var( --kendo-line-height-lg, normal ) ) !default;
 /// The border radius of the Suggestion.
 /// @group suggestion
 $kendo-suggestion-border-radius: var( --kendo-suggestion-border-radius, #{k-border-radius(full)} ) !default;
