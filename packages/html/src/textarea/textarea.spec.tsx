@@ -80,12 +80,23 @@ export const Textarea: KendoComponent<KendoTextareaProps & KendoTextareaState & 
         invalid,
         required,
         disabled,
+        id,
+        role,
+        tabIndex,
+        'aria-label': ariaLabel,
+        'aria-labelledby': ariaLabelledby,
+        'aria-required': ariaRequired,
+        'aria-describedby': ariaDescribedby,
+        'aria-invalid': ariaInvalid,
+        'aria-multiline': ariaMultiline,
+        'aria-disabled': ariaDisabled,
         ...other
     } = props;
 
 
     return (
         <Input
+            {...other}
             size={size}
             rounded={rounded}
             fillMode={fillMode}
@@ -119,7 +130,16 @@ export const Textarea: KendoComponent<KendoTextareaProps & KendoTextareaState & 
             </>
             }
             <InputInnerTextarea
-                {...other}
+                {...(id && { id })}
+                {...(role && { role })}
+                {...(tabIndex !== undefined && { tabIndex })}
+                {...(ariaLabel && { 'aria-label': ariaLabel })}
+                {...(ariaLabelledby && { 'aria-labelledby': ariaLabelledby })}
+                {...(ariaRequired && { 'aria-required': ariaRequired })}
+                {...(ariaDescribedby && { 'aria-describedby': ariaDescribedby })}
+                {...(ariaInvalid && { 'aria-invalid': ariaInvalid })}
+                {...(ariaMultiline && { 'aria-multiline': ariaMultiline })}
+                {...(ariaDisabled && { 'aria-disabled': ariaDisabled })}
                 className={classNames(
                     "!k-overflow-auto",
                     {
