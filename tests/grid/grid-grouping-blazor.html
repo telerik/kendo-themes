@@ -13,7 +13,7 @@
     <div id="test-area" class="k-d-grid">
         <h3>Base</h3>
         <div class="telerik-blazor k-grid">
-            <div class="k-grouping-header">
+            <div class="k-grouping-header" role="toolbar">
                 <div class="k-grouping-drop-container">Drag a column header and drop it here to group by that column</div>
             </div>
             <div class="k-grid-aria-root" role="grid">
@@ -30,7 +30,7 @@
                                 <tr class="k-table-row">
                                     <th colspan="1" class="k-header k-table-th">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input class="k-checkbox" aria-label="Checkbox" type="checkbox">
                                         </span>
                                     </th>
                                     <th colspan="1" class="k-header k-table-th">
@@ -63,7 +63,7 @@
                     <div class="k-grid-content">
                         <div class="k-pos-relative">
                             <div class="k-virtual-position">
-                                <table role="grid" class="k-grid-table k-table" style="height: auto;">
+                                <table class="k-grid-table k-table" role="grid" style="height: auto;">
                                     <colgroup>
                                         <col style="width: 65px;">
                                         <col>
@@ -75,7 +75,7 @@
                                             <td colspan="0" class="k-table-td">
                                                 <span>
                                                     <span class="k-checkbox-wrap">
-                                                        <input class="k-grid-checkbox k-checkbox" type="checkbox">
+                                                        <input class="k-grid-checkbox" aria-label="Checkbox" type="checkbox">
                                                     </span>
                                                 </span>
                                             </td>
@@ -84,7 +84,7 @@
                                             <td colspan="0" class="k-command-cell k-table-td">
                                                 <span>
                                                     <button class="k-button">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash" aria-hidden="true">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                 <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
                                                             </svg>
@@ -98,7 +98,7 @@
                                             <td colspan="0" class="k-table-td">
                                                 <span>
                                                     <span class="k-checkbox-wrap">
-                                                        <input class="k-grid-checkbox k-checkbox" type="checkbox">
+                                                        <input class="k-grid-checkbox" aria-label="Checkbox" type="checkbox">
                                                     </span>
                                                 </span>
                                             </td>
@@ -107,7 +107,7 @@
                                             <td colspan="0" class="k-command-cell k-table-td">
                                                 <span>
                                                     <button class="k-button">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash" aria-hidden="true">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                 <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
                                                             </svg>
@@ -127,9 +127,9 @@
         </div>
         <h3>Single Group</h3>
         <div class="telerik-blazor k-grid">
-            <div class="k-grouping-header">
+            <div class="k-grouping-header" role="toolbar">
                 <div class="k-chip-list">
-                    <div class="k-chip">
+                    <div role="button" aria-pressed="false" class="k-chip">
                         <span class="k-chip-content">
                             <span class="k-chip-label">Id</span>
                         </span>
@@ -162,7 +162,7 @@
                                     <th colspan="1" rowspan="1" class="k-group-cell k-header k-table-th"></th>
                                     <th colspan="1" class="k-header k-table-th">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input class="k-checkbox" aria-label="Checkbox" type="checkbox">
                                         </span>
                                     </th>
                                     <th colspan="1" class="k-header k-table-th">
@@ -195,7 +195,7 @@
                     <div class="k-grid-content">
                         <div class="k-pos-relative">
                             <div class="k-virtual-position">
-                                <table role="grid" class="k-grid-table k-table" style="height: auto;">
+                                <table class="k-grid-table k-table" role="grid" style="height: auto;">
                                     <colgroup>
                                         <col class="k-group-col">
                                         <col style="width: 65px;">
@@ -220,7 +220,7 @@
                                             <td colspan="0" class="k-table-td">
                                                 <span>
                                                     <span class="k-checkbox-wrap">
-                                                        <input class="k-grid-checkbox k-checkbox" type="checkbox">
+                                                        <input class="k-grid-checkbox" aria-label="Checkbox" type="checkbox">
                                                     </span>
                                                 </span>
                                             </td>
@@ -229,7 +229,7 @@
                                             <td colspan="0" class="k-command-cell k-table-td">
                                                 <span>
                                                     <button class="k-button">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash" aria-hidden="true">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                 <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
                                                             </svg>
@@ -255,7 +255,7 @@
                                             <td colspan="0" class="k-table-td">
                                                 <span>
                                                     <span class="k-checkbox-wrap">
-                                                        <input class="k-grid-checkbox k-checkbox" type="checkbox">
+                                                        <input class="k-grid-checkbox" aria-label="Checkbox" type="checkbox">
                                                     </span>
                                                 </span>
                                             </td>
@@ -264,7 +264,7 @@
                                             <td colspan="0" class="k-command-cell k-table-td">
                                                 <span>
                                                     <button class="k-button">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash" aria-hidden="true">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                 <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
                                                             </svg>
@@ -284,9 +284,9 @@
         </div>
         <h3>Two Groups</h3>
         <div class="telerik-blazor k-grid">
-            <div class="k-grouping-header">
+            <div class="k-grouping-header" role="toolbar">
                 <div class="k-chip-list">
-                    <div class="k-chip">
+                    <div role="button" aria-pressed="false" class="k-chip">
                         <span class="k-chip-content">
                             <span class="k-chip-label">Id</span>
                         </span>
@@ -300,7 +300,7 @@
                             </span>
                         </span>
                     </div>
-                    <div class="k-chip">
+                    <div role="button" aria-pressed="false" class="k-chip">
                         <span class="k-chip-content">
                             <span class="k-chip-label">Name</span>
                         </span>
@@ -335,7 +335,7 @@
                                     <th colspan="1" rowspan="1" class="k-group-cell k-header k-table-th"></th>
                                     <th colspan="1" class="k-header k-table-th">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input class="k-checkbox" aria-label="Checkbox" type="checkbox">
                                         </span>
                                     </th>
                                     <th colspan="1" class="k-header k-table-th">
@@ -368,7 +368,7 @@
                     <div class="k-grid-content">
                         <div class="k-pos-relative">
                             <div class="k-virtual-position">
-                                <table role="grid" class="k-grid-table k-table" style="height: auto;">
+                                <table class="k-grid-table k-table" role="grid" style="height: auto;">
                                     <colgroup>
                                         <col class="k-group-col">
                                         <col class="k-group-col">
@@ -407,7 +407,7 @@
                                             <td colspan="0" class="k-table-td">
                                                 <span>
                                                     <span class="k-checkbox-wrap">
-                                                        <input class="k-grid-checkbox k-checkbox" type="checkbox">
+                                                        <input class="k-grid-checkbox" aria-label="Checkbox" type="checkbox">
                                                     </span>
                                                 </span>
                                             </td>
@@ -416,7 +416,7 @@
                                             <td colspan="0" class="k-command-cell k-table-td">
                                                 <span>
                                                     <button class="k-button">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash" aria-hidden="true">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                 <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
                                                             </svg>
@@ -455,7 +455,7 @@
                                             <td colspan="0" class="k-table-td">
                                                 <span>
                                                     <span class="k-checkbox-wrap">
-                                                        <input class="k-grid-checkbox k-checkbox" type="checkbox">
+                                                        <input class="k-grid-checkbox" aria-label="Checkbox" type="checkbox">
                                                     </span>
                                                 </span>
                                             </td>
@@ -464,7 +464,7 @@
                                             <td colspan="0" class="k-command-cell k-table-td">
                                                 <span>
                                                     <button class="k-button">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash" aria-hidden="true">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                 <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
                                                             </svg>
