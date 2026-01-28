@@ -71,6 +71,7 @@ export default () =>(
                 </div>
                 <FormHorizontal>
                     <FormField
+                        orientation="horizontal"
                         label="Normal:"
                         optional
                         hint="Hint: hint message"
@@ -79,6 +80,7 @@ export default () =>(
                     />
 
                     <FormField
+                        orientation="horizontal"
                         className="k-form-field-error"
                         label="Error:"
                         info="(field info)"
@@ -88,6 +90,7 @@ export default () =>(
                     />
 
                     <FormField
+                        orientation="horizontal"
                         disabled
                         label="Disabled:"
                         hint="Hint: hint message"
@@ -96,6 +99,7 @@ export default () =>(
                     />
 
                     <FormField
+                        orientation="horizontal"
                         label="Checkbox:"
                         hint="Hint: hint message"
                         error="Error: error message"
@@ -103,6 +107,7 @@ export default () =>(
                     />
 
                     <FormField
+                        orientation="horizontal"
                         hint="Hint: hint message"
                         error="Error: error message"
                         editor={
