@@ -31,7 +31,7 @@ export default () =>(
                             </ToolbarItem>
                             <Switch size={size} checked />
                             <ToolbarSeparator className="k-toolbar-button-separator" />
-                            <Button size={size} icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
+                            <Button size={size} icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none"></Button>
                         </ToolbarResizable>
                     </section>
                 </>

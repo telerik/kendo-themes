@@ -1,6 +1,6 @@
 import { Icon } from '../icon';
 import { MenuButton } from '../menu-button';
-import { classNames, FillMode, optionClassNames, Size, ThemeColor } from '../misc';
+import { classNames, FillMode, optionClassNames, Roundness, Size } from '../misc';
 import TabStripItems from './tabstrip-items';
 import TabStripItemsWrapper from './tabstrip-items-wrapper';
 
@@ -101,8 +101,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                         optionClassNames('k-button', {
                             size,
                             fillMode: FillMode.flat,
-                            themeColor: ThemeColor.base,
-                            rounded: null
+                            rounded: Roundness.none
                         }),
                         'k-icon-button',
                     )}>
@@ -116,8 +115,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                         optionClassNames('k-button', {
                             size,
                             fillMode: FillMode.flat,
-                            themeColor: ThemeColor.base,
-                            rounded: null
+                            rounded: Roundness.none
                         }),
                         'k-icon-button',
                     )}>
@@ -135,8 +133,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                         optionClassNames('k-button', {
                             size,
                             fillMode: FillMode.flat,
-                            themeColor: ThemeColor.base,
-                            rounded: null
+                            rounded: Roundness.none
                         }),
                         'k-icon-button',
                     )}>
@@ -151,8 +148,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                         optionClassNames('k-button', {
                             size,
                             fillMode: FillMode.flat,
-                            themeColor: ThemeColor.base,
-                            rounded: null
+                            rounded: Roundness.none
                         }),
                         'k-icon-button',
                     )}>
@@ -165,7 +161,6 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                             className="k-tabstrip-overflow-button"
                             icon="more-vertical"
                             fillMode="flat"
-                            rounded="medium"
                             size={size}
                             showArrow={false}
                         />

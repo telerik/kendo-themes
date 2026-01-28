@@ -145,7 +145,6 @@ export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdown
                 <Button
                     className="k-input-button"
                     icon="caret-alt-down"
-                    rounded={null}
                     size={size}
                     fillMode={fillMode}
                 />
