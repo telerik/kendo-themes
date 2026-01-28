@@ -53,27 +53,48 @@ function parseAriaSpec(componentName) {
 
     // Parse markdown table
     const tableRegex = /\|\s*Selector\s*\|\s*Attribute\s*\|\s*Usage\s*\|[\s\S]*?\n\|(.*?)\n(?=\n|$)/gm;
-    const rowRegex = /^\|\s*(.+?)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|$/gm;
+    const rowRegex = /^\|\s*(.*?)\s*\|\s*(.*?)\s*\|\s*(.*?)\s*\|$/gm;
 
     let match;
+    let lastSelector = null;
+
     while ((match = tableRegex.exec(content)) !== null) {
         const tableContent = match[0];
         let rowMatch;
 
         while ((rowMatch = rowRegex.exec(tableContent)) !== null) {
-            const [, selector, attribute, usage] = rowMatch;
+            let [, selector, attribute, usage] = rowMatch;
 
             // Skip header and separator rows
             if (selector.includes('---') || selector.toLowerCase().includes('selector')) {
                 continue;
             }
 
+            // Clean up values
+            selector = selector.trim().replace(/`/g, '');
+            attribute = attribute.trim().replace(/`/g, '');
+            usage = usage.trim();
+
+            // Handle empty selector cells (inherit from previous row)
+            if (!selector || selector === '') {
+                if (lastSelector) {
+                    selector = lastSelector;
+                } else {
+                    continue; // Skip if no previous selector
+                }
+            } else {
+                lastSelector = selector;
+            }
+
             rules.push({
-                selector: selector.trim().replace(/`/g, ''),
-                attribute: attribute.trim().replace(/`/g, ''),
-                usage: usage.trim()
+                selector,
+                attribute,
+                usage
             });
         }
+
+        // Reset lastSelector between tables
+        lastSelector = null;
     }
 
     return {
@@ -182,6 +203,24 @@ async function validateAttribute(element, rule) {
         // For boolean HTML attributes, presence is sufficient
         if (attrName === 'disabled' || attrName === 'readonly' || attrName === 'required') {
             return { valid: true, actual: actualValue };
+        }
+
+        // For ID reference attributes, check presence not exact value
+        // Spec notation like "aria-labelledby=.k-dialog-titlebar id" describes what it points to, not literal value
+        const isIdReference = (attrName === 'aria-labelledby' || attrName === 'aria-describedby' || attrName === 'aria-controls' || attrName === 'aria-activedescendant') &&
+                              expectedValue && (expectedValue.includes(' id') || expectedValue.startsWith('.k-'));
+        
+        if (isIdReference) {
+            // Just check that the attribute has a non-empty value
+            if (actualValue && actualValue.trim() !== '') {
+                return { valid: true, actual: actualValue, reason: 'id-reference-present' };
+            }
+            return {
+                valid: false,
+                reason: 'missing-id-reference',
+                expected: `ID reference (${expectedValue})`,
+                actual: actualValue
+            };
         }
 
         // Validate value if specified

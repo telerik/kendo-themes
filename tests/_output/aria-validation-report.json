@@ -1,32 +1,46 @@
 {
-  "timestamp": "2026-01-28T11:58:56.907Z",
+  "timestamp": "2026-01-28T12:03:50.289Z",
   "summary": {
     "filesTested": 6,
     "skipped": 0,
-    "passed": 33,
-    "violations": 3
+    "passed": 78,
+    "violations": 4
   },
   "results": [
     {
       "filePath": "./tests/dialog/dialog.html",
       "spec": "aria/dialog_aria.md",
-      "totalRules": 4,
-      "violations": [],
-      "passed": 6,
-      "violationCount": 0
+      "totalRules": 5,
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-dialog",
+            "attribute": "aria-labelledby=.k-dialog-titlebar id",
+            "usage": "Associate the title of the dialog."
+          },
+          "element": "<div class=\"k-dialog k-window\" role=\"dialog\" aria-label=\"Dialog\" aria-describedby=\"k-dialog-content\" aria-modal=\"true\">\n                    <div class=\"k-window-content k-dialog-content\" id=\"k-dialog-",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        }
+      ],
+      "passed": 23,
+      "violationCount": 1
     },
     {
       "filePath": "./tests/dialog/dialog-theme-colors.html",
       "spec": "aria/dialog_aria.md",
-      "totalRules": 4,
+      "totalRules": 5,
       "violations": [],
-      "passed": 8,
+      "passed": 16,
       "violationCount": 0
     },
     {
       "filePath": "./tests/dialog/dialog-predefined.html",
       "spec": "aria/dialog_aria.md",
-      "totalRules": 4,
+      "totalRules": 5,
       "violations": [
         {
           "rule": {
@@ -68,31 +82,31 @@
           "actual": "alertdialog"
         }
       ],
-      "passed": 6,
+      "passed": 12,
       "violationCount": 3
     },
     {
       "filePath": "./tests/dialog/dialog-modal.html",
       "spec": "aria/dialog_aria.md",
-      "totalRules": 4,
+      "totalRules": 5,
       "violations": [],
-      "passed": 3,
+      "passed": 7,
       "violationCount": 0
     },
     {
       "filePath": "./tests/dialog/dialog-in-window.html",
       "spec": "aria/dialog_aria.md",
-      "totalRules": 4,
+      "totalRules": 5,
       "violations": [],
-      "passed": 2,
+      "passed": 4,
       "violationCount": 0
     },
     {
       "filePath": "./tests/dialog/dialog-action-buttons.html",
       "spec": "aria/dialog_aria.md",
-      "totalRules": 4,
+      "totalRules": 5,
       "violations": [],
-      "passed": 8,
+      "passed": 16,
       "violationCount": 0
     }
   ]
