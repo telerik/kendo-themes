@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2026-01-28T11:59:19.814Z",
+    "timestamp": "2026-01-28T12:06:40.582Z",
     "complianceLevel": "AA",
     "filesTested": 6,
     "wcagVersion": "2.2"
@@ -32,7 +32,7 @@
   "detailedResults": [
     {
       "filePath": "./tests/dialog/dialog.html",
-      "timestamp": "2026-01-28T11:59:18.244Z",
+      "timestamp": "2026-01-28T12:06:39.095Z",
       "violations": [],
       "filteredPageLevel": 0,
       "passes": [
@@ -208,7 +208,7 @@
     },
     {
       "filePath": "./tests/dialog/dialog-theme-colors.html",
-      "timestamp": "2026-01-28T11:59:18.639Z",
+      "timestamp": "2026-01-28T12:06:39.425Z",
       "violations": [],
       "filteredPageLevel": 0,
       "passes": [
@@ -384,7 +384,7 @@
     },
     {
       "filePath": "./tests/dialog/dialog-predefined.html",
-      "timestamp": "2026-01-28T11:59:18.916Z",
+      "timestamp": "2026-01-28T12:06:39.695Z",
       "violations": [
         {
           "id": "label",
@@ -663,7 +663,7 @@
     },
     {
       "filePath": "./tests/dialog/dialog-modal.html",
-      "timestamp": "2026-01-28T11:59:19.163Z",
+      "timestamp": "2026-01-28T12:06:39.926Z",
       "violations": [],
       "filteredPageLevel": 0,
       "passes": [
@@ -839,7 +839,7 @@
     },
     {
       "filePath": "./tests/dialog/dialog-in-window.html",
-      "timestamp": "2026-01-28T11:59:19.405Z",
+      "timestamp": "2026-01-28T12:06:40.149Z",
       "violations": [],
       "filteredPageLevel": 0,
       "passes": [
@@ -1013,7 +1013,7 @@
     },
     {
       "filePath": "./tests/dialog/dialog-action-buttons.html",
-      "timestamp": "2026-01-28T11:59:19.631Z",
+      "timestamp": "2026-01-28T12:06:40.388Z",
       "violations": [],
       "filteredPageLevel": 0,
       "passes": [

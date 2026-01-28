@@ -172,6 +172,24 @@ async function validateAttribute(element, rule) {
     const attrName = parts[0].trim();
     const expectedValue = parts.length > 1 ? parts[1].trim() : null;
 
+    // Special case: aria-labelledby and aria-describedby accept aria-label/aria-description as alternatives
+    const labelAlternatives = {
+        'aria-labelledby': 'aria-label',
+        'aria-describedby': 'aria-description'
+    };
+    
+    if (labelAlternatives[attrName]) {
+        const alternative = labelAlternatives[attrName];
+        try {
+            const altValue = await element.getAttribute(alternative);
+            if (altValue !== null && altValue.trim() !== '') {
+                return { valid: true, actual: altValue, reason: 'alternative-label-attribute' };
+            }
+        } catch {
+            // Continue with primary attribute check
+        }
+    }
+
     try {
         // Special case: nodeName check
         if (attribute.includes('nodeName=')) {
@@ -209,7 +227,7 @@ async function validateAttribute(element, rule) {
         // Spec notation like "aria-labelledby=.k-dialog-titlebar id" describes what it points to, not literal value
         const isIdReference = (attrName === 'aria-labelledby' || attrName === 'aria-describedby' || attrName === 'aria-controls' || attrName === 'aria-activedescendant') &&
                               expectedValue && (expectedValue.includes(' id') || expectedValue.startsWith('.k-'));
-        
+
         if (isIdReference) {
             // Just check that the attribute has a non-empty value
             if (actualValue && actualValue.trim() !== '') {
@@ -305,13 +323,51 @@ async function validatePage(filePath, ariaSpec, browser) {
                 const result = await validateAttribute(element, rule, browser);
 
                 if (!result.valid) {
-                    const html = await element.getAttribute('outerHTML');
-                    violations.push({
-                        rule,
-                        element: html.substring(0, 200), // Truncate for readability
-                        index: i,
-                        ...result
-                    });
+                    // Before marking as violation, check if a more specific selector overrides this
+                    // This handles cases like .k-dialog (role=dialog) vs .k-dialog.k-alert (role=alertdialog)
+                    const attrName = rule.attribute.split('=')[0].trim();
+                    let overridden = false;
+
+                    // Find all rules that apply to this element with more specific selectors
+                    for (const otherRule of ariaSpec.rules) {
+                        if (otherRule === rule) {continue;}
+
+                        // Check if this is the same attribute
+                        const otherAttrName = otherRule.attribute.split('=')[0].trim();
+                        if (attrName !== otherAttrName) {continue;}
+
+                        // Check if element matches the other selector (more specific)
+                        try {
+                            const matchesScript = `
+                                const el = arguments[0];
+                                return el.matches(${JSON.stringify(otherRule.selector)});
+                            `;
+                            const matches = await browser.driver.executeScript(matchesScript, element);
+
+                            // If it matches a more specific selector (longer = more specific)
+                            if (matches && otherRule.selector.length > rule.selector.length) {
+                                // Validate against the more specific rule
+                                const specificResult = await validateAttribute(element, otherRule, browser);
+                                if (specificResult.valid) {
+                                    overridden = true;
+                                    passed.push({ rule: otherRule, index: i });
+                                    break;
+                                }
+                            }
+                        } catch {
+                            // Ignore errors in specificity check
+                        }
+                    }
+
+                    if (!overridden) {
+                        const html = await element.getAttribute('outerHTML');
+                        violations.push({
+                            rule,
+                            element: html.substring(0, 200), // Truncate for readability
+                            index: i,
+                            ...result
+                        });
+                    }
                 } else {
                     passed.push({ rule, index: i });
                 }

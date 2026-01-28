@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-01-28T12:03:50.289Z",
+  "timestamp": "2026-01-28T12:05:39.957Z",
   "summary": {
     "filesTested": 6,
     "skipped": 0,
-    "passed": 78,
-    "violations": 4
+    "passed": 81,
+    "violations": 1
   },
   "results": [
     {
@@ -41,49 +41,9 @@
       "filePath": "./tests/dialog/dialog-predefined.html",
       "spec": "aria/dialog_aria.md",
       "totalRules": 5,
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-dialog",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-prompt k-dialog k-window\" role=\"alertdialog\" aria-labelledby=\"k-dialog-titlebar\" aria-describedby=\"k-dialog-content\" aria-modal=\"true\">\n                    <div class=\"k-window-titlebar ",
-          "index": 0,
-          "valid": false,
-          "reason": "incorrect-value",
-          "expected": "dialog",
-          "actual": "alertdialog"
-        },
-        {
-          "rule": {
-            "selector": ".k-dialog",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-alert k-dialog k-window\" role=\"alertdialog\" aria-labelledby=\"k-dialog-titlebar\" aria-describedby=\"k-dialog-content\" aria-modal=\"true\">\n                    <div class=\"k-window-titlebar k",
-          "index": 1,
-          "valid": false,
-          "reason": "incorrect-value",
-          "expected": "dialog",
-          "actual": "alertdialog"
-        },
-        {
-          "rule": {
-            "selector": ".k-dialog",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-confirm k-dialog k-window\" role=\"alertdialog\" aria-labelledby=\"k-dialog-titlebar\" aria-describedby=\"k-dialog-content\" aria-modal=\"true\">\n                    <div class=\"k-window-titlebar",
-          "index": 2,
-          "valid": false,
-          "reason": "incorrect-value",
-          "expected": "dialog",
-          "actual": "alertdialog"
-        }
-      ],
-      "passed": 12,
-      "violationCount": 3
+      "violations": [],
+      "passed": 15,
+      "violationCount": 0
     },
     {
       "filePath": "./tests/dialog/dialog-modal.html",
