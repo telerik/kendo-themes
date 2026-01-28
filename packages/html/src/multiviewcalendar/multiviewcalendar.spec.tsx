@@ -24,6 +24,7 @@ export type KendoMultiViewCalendarProps = KendoMultiViewCalendarOptions & {
     showTableHead?: boolean;
     showWeek?: boolean;
     dir?: 'ltr' | 'rtl';
+    activeCellId?: string;
 };
 
 const defaultOptions = {
@@ -44,6 +45,7 @@ export const MultiViewCalendar: KendoComponent<KendoMultiViewCalendarProps & Rea
         showCalendarFooter,
         showWeek,
         dir,
+        activeCellId,
         ...other
     } = props;
 
@@ -61,6 +63,7 @@ export const MultiViewCalendar: KendoComponent<KendoMultiViewCalendarProps & Rea
             showCalendarFooter={showCalendarFooter}
             showWeek={showWeek}
             dir={dir}
+            activeCellId={activeCellId}
         />
     );
 };

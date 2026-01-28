@@ -14,7 +14,7 @@ This section lists the selectors, attributes, and behavior patterns supported by
 |  | `aria-haspopup=grid` | Indicates the component has a Calendar Popup that implements `role="grid"`. |
 |  | `aria-expanded=true/false` | Announces whether the Popup is visible or not. |
 |  | `aria-controls=.k-calendar-container id` | Points to the popup element. Signifies that the `combobox` element controls the Calendar `grid`. |
-| `.k-input-inner.k-focus` | `aria-activedescendant=.k-calendar-td.k-focus id` | Points to the focused item (date/month/year) in the Calendar Popup. Should only be present when the Popup is open. |
+|  | `aria-activedescendant=.k-calendar-td.k-focus id` | Points to the focused item (date/month/year) in the Calendar Popup. Should only be present when the Popup is open. |
 |  | `readonly=readonly` or `aria-readonly=true` | Attribute is rendered only when the DateRangePicker is readonly. |
 |  | `tabindex=0` | The element should be focusable. |
 | `.k-invalid .k-input-inner,.ng-invalid .k-input-inner` | `aria-invalid=true` | Attribute is rendered only when the combobox is in form and announces the valid state of the component. |

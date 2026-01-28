@@ -37,12 +37,14 @@ export const Popup: KendoComponent<KendoPopupProps & React.HTMLAttributes<HTMLDi
         role,
         'aria-label': ariaLabel,
         'aria-labelledby': ariaLabelledby,
+        id,
         ...other
     } = props;
 
 
     return (
         <AnimationContainer
+            id={id}
             positionMode={positionMode}
             offset={offset}
             animationStyle={animationStyle}

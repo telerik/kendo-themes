@@ -11,7 +11,10 @@ import { DATERANGEPICKER_FOLDER_NAME, DATERANGEPICKER_MODULE_NAME } from './cons
 export const DATERANGEPICKER_CLASSNAME = `k-daterangepicker`;
 
 const states = [
-    States.disabled
+    States.disabled,
+    States.readonly,
+    States.invalid,
+    States.focus
 ];
 
 const options = {
@@ -39,6 +42,7 @@ export type KendoDateRangePickerProps = KendoDateRangePickerOptions & {
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
     dir?: 'ltr' | 'rtl';
+    id?: string;
 };
 
 export type KendoDateRangePickerState = { [K in (typeof states)[number]]?: boolean };
@@ -53,6 +57,9 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
         rounded,
         fillMode,
         disabled,
+        readonly,
+        invalid,
+        focus,
         valueFirst,
         valueSecond,
         swapButton,
@@ -62,6 +69,7 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
         adaptiveTitle,
         adaptiveSubtitle,
         dir,
+        id = 'daterangepicker',
         ...other
     } = props;
 
@@ -84,11 +92,18 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
                         size={size}
                         rounded={rounded}
                         fillMode={fillMode}
+                        disabled={disabled}
+                        readonly={readonly}
+                        invalid={invalid}
+                        focus={focus}
                         role="combobox"
                         aria-label="Start date"
                         aria-haspopup="grid"
                         aria-expanded={opened ? 'true' : 'false'}
-                        aria-controls={opened ? 'daterangepicker-calendar' : undefined}
+                        aria-controls="daterangepicker-calendar"
+                        {...(opened && focus && { 'aria-activedescendant': `${id}-active` })}
+                        aria-readonly={readonly ? 'true' : undefined}
+                        aria-invalid={invalid ? 'true' : undefined}
                         aria-disabled={disabled ? 'true' : undefined}
                         tabIndex={0}
                     />
@@ -110,11 +125,16 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
                         size={size}
                         rounded={rounded}
                         fillMode={fillMode}
+                        disabled={disabled}
+                        readonly={readonly}
+                        invalid={invalid}
                         role="combobox"
                         aria-label="End date"
                         aria-haspopup="grid"
                         aria-expanded={opened ? 'true' : 'false'}
-                        aria-controls={opened ? 'daterangepicker-calendar' : undefined}
+                        aria-controls="daterangepicker-calendar"
+                        aria-readonly={readonly ? 'true' : undefined}
+                        aria-invalid={invalid ? 'true' : undefined}
                         aria-disabled={disabled ? 'true' : undefined}
                         tabIndex={0}
                     />
@@ -122,7 +142,7 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
             </span>
             {opened &&
                 <Popup id="daterangepicker-calendar" className="k-calendar-container k-daterangepicker-popup">
-                    <MultiViewCalendarNormal dir={dir} />
+                    <MultiViewCalendarNormal dir={dir} activeCellId={focus ? `${id}-active` : undefined} />
                 </Popup>
             }
             {adaptive &&

@@ -115,10 +115,12 @@ export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerSt
                     aria-label="Date picker"
                     aria-haspopup="grid"
                     aria-expanded={opened ? 'true' : 'false'}
-                    aria-controls={opened ? 'datepicker-calendar' : undefined}
+                    aria-controls="datepicker-calendar"
                     aria-required={required ? 'true' : undefined}
                     aria-invalid={invalid ? 'true' : undefined}
                     aria-disabled={disabled ? 'true' : undefined}
+                    tabIndex={0}
+                    disabled={disabled}
                     readonly={readonly}
                 />
                 <InputValidationIcon

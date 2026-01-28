@@ -115,11 +115,9 @@ export const NumericTextbox: KendoComponent<KendoNumericTextboxProps & KendoNume
                 readonly={readonly}
                 required={required}
                 aria-invalid={invalid ? true : undefined}
-                {...(value && !isNaN(Number(value)) && {
-                    'aria-valuenow': Number(value),
-                    'aria-valuemin': 0,
-                    'aria-valuemax': 100
-                })}
+                aria-valuenow={value && !isNaN(Number(value)) ? Number(value) : 0}
+                aria-valuemin={0}
+                aria-valuemax={100}
             />
             <InputValidationIcon
                 valid={valid}

@@ -25,6 +25,7 @@ export type KendoCalendarProps = KendoCalendarOptions & {
     showCalendarFooter?: boolean;
     calendarFooterText?: string;
     dir?: 'ltr' | 'rtl';
+    activeCellId?: string;
 };
 
 const defaultOptions = {
@@ -48,6 +49,7 @@ export const Calendar: KendoComponent<KendoCalendarProps & React.HTMLAttributes<
         showCalendarFooter,
         calendarFooterText,
         dir,
+        activeCellId,
         ...other
     } = props;
 
@@ -55,6 +57,7 @@ export const Calendar: KendoComponent<KendoCalendarProps & React.HTMLAttributes<
         <div
             {...other}
             dir={dir}
+            data-active-cell-id={activeCellId}
             className={classNames(
                 props.className,
                 CALENDAR_CLASSNAME,

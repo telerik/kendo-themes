@@ -115,11 +115,14 @@ export const TimePicker: KendoComponent<KendoTimePickerProps & KendoTimePickerSt
                     role="combobox"
                     aria-expanded={opened ? 'true' : 'false'}
                     aria-haspopup="dialog"
-                    aria-controls={opened ? `${id}-popup` : undefined}
+                    aria-controls={`${id}-popup`}
                     aria-label="Time picker"
+                    aria-required={required ? 'true' : undefined}
+                    aria-invalid={invalid ? 'true' : undefined}
+                    aria-disabled={disabled ? 'true' : undefined}
+                    tabIndex={0}
                     disabled={disabled}
                     readonly={readonly}
-                    required={required}
                 />
                 <InputValidationIcon
                     valid={valid}

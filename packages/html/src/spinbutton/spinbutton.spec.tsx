@@ -48,6 +48,8 @@ export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttribu
                 rounded={null}
                 size={size}
                 fillMode={fillMode}
+                disabled={props.disabled}
+                aria-label="Increase value"
                 title="Increase value">
             </Button>
             <Button
@@ -56,6 +58,8 @@ export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttribu
                 rounded={null}
                 size={size}
                 fillMode={fillMode}
+                disabled={props.disabled}
+                aria-label="Decrease value"
                 title="Decrease value">
             </Button>
         </span>

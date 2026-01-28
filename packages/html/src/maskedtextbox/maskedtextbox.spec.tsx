@@ -110,6 +110,7 @@ export const MaskedTextbox: KendoComponent<KendoMaskedTextboxProps & KendoMasked
                 readonly={readonly}
                 required={required}
                 aria-invalid={invalid ? true : undefined}
+                aria-placeholder={placeholder || ''}
             />
             <InputValidationIcon
                 valid={valid}

@@ -243,6 +243,20 @@ async function validateAttribute(element, rule) {
 
         // Validate value if specified
         if (expectedValue && expectedValue !== 'true/false') {
+            // Handle OR values separated by / (e.g., "none/presentation", "readonly/aria-readonly")
+            if (expectedValue.includes('/') && !expectedValue.includes(' ')) {
+                const possibleValues = expectedValue.split('/').map(v => v.trim());
+                if (possibleValues.includes(actualValue)) {
+                    return { valid: true, actual: actualValue, reason: 'or-value-match' };
+                }
+                return {
+                    valid: false,
+                    reason: 'incorrect-value',
+                    expected: expectedValue,
+                    actual: actualValue
+                };
+            }
+
             if (actualValue !== expectedValue) {
                 return {
                     valid: false,
@@ -272,7 +286,7 @@ function isConditionalAttribute(usage) {
     if (!usage) {
         return false;
     }
-    
+
     const conditionalKeywords = [
         'only when',
         'only be present when',
@@ -285,7 +299,7 @@ function isConditionalAttribute(usage) {
         'optional',
         'if not present'
     ];
-    
+
     const lowerUsage = usage.toLowerCase();
     return conditionalKeywords.some(keyword => lowerUsage.includes(keyword));
 }
@@ -313,6 +327,8 @@ async function validatePage(filePath, ariaSpec, browser) {
 
     const violations = [];
     const passed = [];
+    const untestedRules = [];
+    const testedRules = new Set();
 
     for (const rule of ariaSpec.rules) {
         const { selector } = rule;
@@ -337,12 +353,17 @@ async function validatePage(filePath, ariaSpec, browser) {
             }
 
             if (!elements || elements.length === 0) {
-                // Selector not found - might be conditional
+                // Selector not found - track as untested
+                untestedRules.push(rule);
                 if (verboseMode) {
                     console.log(`  ℹ Selector not found: ${selector}`);
                 }
                 continue;
             }
+
+            // Mark rule as tested
+            const ruleKey = `${rule.selector}|${rule.attribute}`;
+            testedRules.add(ruleKey);
 
             // Validate each element
             for (let i = 0; i < elements.length; i++) {
@@ -419,6 +440,8 @@ async function validatePage(filePath, ariaSpec, browser) {
         filePath,
         spec: ariaSpec.specFile,
         totalRules: ariaSpec.rules.length,
+        testedRules: testedRules.size,
+        untestedRules,
         violations,
         passed: passed.length,
         violationCount: violations.length
@@ -520,6 +543,52 @@ async function validateAriaAttributes() {
     await browser.close();
     server.close();
 
+    // Aggregate coverage data across all files for the same component
+    const componentCoverage = {};
+    for (const result of results) {
+        const pathParts = result.filePath.replace(/^\.\//, '').split('/');
+        const componentName = pathParts[1];
+
+        if (!componentCoverage[componentName]) {
+            // Get the full spec for this component
+            const ariaSpec = parseAriaSpec(componentName);
+            componentCoverage[componentName] = {
+                totalRules: result.totalRules,
+                allRules: ariaSpec ? ariaSpec.rules : [],
+                allTestedRules: new Set(),
+                untestedRules: new Map()
+            };
+            // Initialize all rules as untested
+            if (ariaSpec) {
+                for (const rule of ariaSpec.rules) {
+                    const ruleKey = `${rule.selector}|${rule.attribute}`;
+                    componentCoverage[componentName].untestedRules.set(ruleKey, rule);
+                }
+            }
+        }
+
+        // Mark rules as tested if they were found in this file
+        if (result.untestedRules) {
+            for (const rule of componentCoverage[componentName].allRules) {
+                const ruleKey = `${rule.selector}|${rule.attribute}`;
+                const wasUntestedInThisFile = result.untestedRules.some(
+                    ur => `${ur.selector}|${ur.attribute}` === ruleKey
+                );
+                if (!wasUntestedInThisFile) {
+                    // Rule was tested in this file
+                    componentCoverage[componentName].allTestedRules.add(ruleKey);
+                    componentCoverage[componentName].untestedRules.delete(ruleKey);
+                }
+            }
+        }
+    }
+
+    // Calculate actual tested count for each component
+    for (const component in componentCoverage) {
+        const coverage = componentCoverage[component];
+        coverage.actualTested = coverage.allTestedRules.size;
+    }
+
     // Print summary
     console.log('\n' + '='.repeat(60));
     console.log('📊 Summary\n');
@@ -527,6 +596,24 @@ async function validateAriaAttributes() {
     console.log(`Files skipped: ${skipped}`);
     console.log(`Total rules passed: ${totalPassed}`);
     console.log(`Total violations: ${totalViolations}\n`);
+
+    // Print coverage summary
+    const componentsWithGaps = Object.entries(componentCoverage).filter(
+        ([, coverage]) => coverage.untestedRules.size > 0
+    );
+
+    if (componentsWithGaps.length > 0) {
+        console.log('⚠️  Coverage Gaps Detected\n');
+        componentsWithGaps.forEach(([component, coverage]) => {
+            const coveragePercent = ((coverage.actualTested / coverage.totalRules) * 100).toFixed(1);
+            console.log(`   ${component}: ${coverage.actualTested}/${coverage.totalRules} rules tested (${coveragePercent}%)`);
+            console.log(`   Missing ${coverage.untestedRules.size} rule(s):\n`);
+            Array.from(coverage.untestedRules.values()).forEach((rule, idx) => {
+                console.log(`     ${idx + 1}. ${rule.selector} - ${rule.attribute}`);
+                console.log(`        ${rule.usage.substring(0, 70)}${rule.usage.length > 70 ? '...' : ''}\n`);
+            });
+        });
+    }
 
     if (totalViolations > 0) {
         console.log('❌ ARIA attribute validation failed\n');

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-01-28T12:52:42.654Z",
+  "lastUpdated": "2026-01-28T15:13:40.744Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -135,7 +135,7 @@
       "notes": ""
     },
     "captcha": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "inputs",
       "complianceScore": null,
@@ -145,7 +145,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": "100% ARIA + WCAG compliant. Fixed Textbox to pass aria-label and disabled to InputInnerInput. Updated validator to handle boolean attributes correctly."
+      "notes": "100% ARIA + WCAG compliant. Fixed Textbox to pass aria-label and disabled to InputInnerInput. Updated validator to handle boolean attributes correctly.",
+      "completedAt": "2026-01-28T14:11:52.601Z"
     },
     "card": {
       "status": "pending",
@@ -373,7 +374,7 @@
       "notes": ""
     },
     "dateinput": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "inputs",
       "complianceScore": null,
@@ -383,10 +384,11 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": "100% ARIA validation. 98.7% WCAG (1 target-size violation on small size variant - design constraint). DateInput passes props to InputInnerInput. SpinButton has titles."
+      "notes": "100% ARIA validation. 98.7% WCAG (1 target-size violation on small size variant - design constraint). DateInput passes props to InputInnerInput. SpinButton has titles.",
+      "completedAt": "2026-01-28T14:11:52.783Z"
     },
     "datepicker": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "pickers",
       "complianceScore": null,
@@ -396,10 +398,11 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-28T14:40:39.629Z"
     },
     "daterangepicker": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "pickers",
       "complianceScore": null,
@@ -409,10 +412,11 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-28T15:13:40.743Z"
     },
     "datetimepicker": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "pickers",
       "complianceScore": null,
@@ -422,7 +426,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-28T14:51:32.853Z"
     },
     "dialog": {
       "status": "completed",
@@ -701,7 +706,7 @@
       "notes": ""
     },
     "maskedtextbox": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "inputs",
       "complianceScore": null,
@@ -711,7 +716,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": "100% ARIA + 99.2% WCAG (1 color-contrast violation in prefix-suffix test with outline buttons). MaskedTextbox passes props to InputInnerInput. Changed prefix from DropdownList to Icon for simplicity. All test files have labels."
+      "notes": "100% ARIA + 99.2% WCAG (1 color-contrast violation in prefix-suffix test with outline buttons). MaskedTextbox passes props to InputInnerInput. Changed prefix from DropdownList to Icon for simplicity. All test files have labels.",
+      "completedAt": "2026-01-28T14:11:19.293Z"
     },
     "media-player": {
       "status": "pending",
@@ -805,7 +811,7 @@
       "notes": ""
     },
     "numerictextbox": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "inputs",
       "complianceScore": null,
@@ -815,10 +821,11 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-28T14:11:19.244Z"
     },
     "onetimepassword": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "inputs",
       "complianceScore": null,
@@ -828,7 +835,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-28T14:11:23.559Z"
     },
     "orgchart": {
       "status": "pending",
@@ -1015,7 +1023,7 @@
       "notes": ""
     },
     "signature": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "inputs",
       "complianceScore": null,
@@ -1025,7 +1033,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-28T14:11:52.838Z"
     },
     "skeleton": {
       "status": "completed",
@@ -1173,7 +1182,7 @@
       "notes": ""
     },
     "textarea": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "inputs",
       "complianceScore": null,
@@ -1183,10 +1192,11 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": "100% ARIA + 100% WCAG compliant. Textarea passes props to InputInnerTextarea. All test files have labels. IconButtons have aria-label."
+      "notes": "100% ARIA + 100% WCAG compliant. Textarea passes props to InputInnerTextarea. All test files have labels. IconButtons have aria-label.",
+      "completedAt": "2026-01-28T14:11:52.726Z"
     },
     "textbox": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "inputs",
       "complianceScore": null,
@@ -1196,7 +1206,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-28T14:11:52.667Z"
     },
     "tilelayout": {
       "status": "pending",
@@ -1238,7 +1249,7 @@
       "notes": ""
     },
     "timepicker": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "pickers",
       "complianceScore": null,
@@ -1249,7 +1260,8 @@
         "minor": 0
       },
       "notes": "",
-      "completedDate": "2025-12-17T12:54:52.585Z"
+      "completedDate": "2025-12-17T12:54:52.585Z",
+      "completedAt": "2026-01-28T14:45:44.698Z"
     },
     "togglebutton": {
       "status": "pending",

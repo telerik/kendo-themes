@@ -119,13 +119,15 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
                     disabled={disabled}
                     readonly={readonly}
                     role="combobox"
+                    aria-label="Date time picker"
                     aria-haspopup="dialog"
                     aria-expanded={opened ? 'true' : 'false'}
-                    aria-controls={opened ? `${id}-popup` : undefined}
+                    aria-controls={`${id}-popup`}
+                    aria-required={required ? 'true' : undefined}
+                    aria-invalid={invalid ? 'true' : undefined}
+                    aria-disabled={disabled ? 'true' : undefined}
                     {...(opened && { 'aria-activedescendant': `${id}-active` })}
                     {...(readonly && { 'aria-readonly': 'true' })}
-                    {...(required && { 'aria-required': 'true' })}
-                    {...(invalid && { 'aria-invalid': 'true' })}
                     tabIndex={0}
                 />
                 <InputValidationIcon
@@ -150,7 +152,8 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
                     fillMode={fillMode}
                     aria-label={tab === 'time' ? "Select time" : "Select date"}
                     tabIndex={-1}
-                    {...(disabled && { 'aria-disabled': 'true' })}
+                    disabled={disabled}
+                    aria-disabled={disabled ? 'true' : undefined}
                 />
             </Input>
             {opened &&

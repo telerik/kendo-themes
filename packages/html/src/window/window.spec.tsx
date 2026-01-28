@@ -30,6 +30,7 @@ export type KendoWindowProps = KendoWindowOptions & {
     title?: string;
     actions?: string[];
     minimized?: boolean;
+    modal?: boolean;
     actionButtons?: React.JSX.Element;
     actionButtonsAlign?: "start" | "end" | "center" | "stretched";
 };
@@ -43,6 +44,7 @@ export const Window: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTML
         title,
         actions,
         minimized,
+        modal,
         themeColor,
         actionButtons,
         actionButtonsAlign,
@@ -52,6 +54,8 @@ export const Window: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTML
     const titleId = `${id}-title`;
 
     return (
+        <>
+        {modal && <div className="k-overlay"></div>}
         <div
             {...other}
             className={classNames(
@@ -63,6 +67,7 @@ export const Window: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTML
                 }
             )}
             role="dialog"
+            {...(modal && { 'aria-modal': 'true' })}
             {...(title !== undefined
                 ? { 'aria-labelledby': titleId }
                 : props['aria-label'] ? {} : { 'aria-label': 'Window' }
@@ -109,6 +114,7 @@ export const Window: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTML
                 </ActionButtons>
             }
         </div>
+        </>
     );
 };
 

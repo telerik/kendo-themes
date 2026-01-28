@@ -1,8 +1,8 @@
 import { MultiViewCalendar } from "..";
 import { CalendarTable, CalendarTableRow, CalendarCell } from "../../calendar";
 
-export const MultiViewCalendarNormal = ({ showCaptions, showOtherMonth, ...props }: any) => (
-    <MultiViewCalendar calendarView="month"
+export const MultiViewCalendarNormal = ({ showCaptions, showOtherMonth, activeCellId, ...props }: any) => (
+    <MultiViewCalendar calendarView="month" activeCellId={activeCellId}
         children={
             <>
                 <CalendarTable calendarCaption={showCaptions && "October 2021"} showTableHead>
@@ -27,7 +27,7 @@ export const MultiViewCalendarNormal = ({ showCaptions, showOtherMonth, ...props
                     <CalendarTableRow>
                         <CalendarCell text="10" weekend />
                         <CalendarCell text="11" />
-                        <CalendarCell text="12" today />
+                        <CalendarCell text="12" today id={activeCellId} focus={!!activeCellId} />
                         <CalendarCell text="13" />
                         <CalendarCell text="14" />
                         <CalendarCell text="15" />
