@@ -1,8 +1,37 @@
 # ARIA & WCAG Compliance Status Report
 
-**Generated:** December 19, 2025
+**Generated:** January 28, 2026
 **Branch:** poc-apply-aria-to-html-specs
 **Overall Progress:** 78/109 components (72%)
+**Goal:** 100% ARIA rule coverage for all components
+
+## 🎯 Updated Goals & Requirements
+
+### New Requirements (January 2026)
+
+1. ✅ **Template Modification Enabled**
+   - Can now modify files in `src/[component]/templates/` folder
+   - Apply ARIA attributes without changing markup structure
+   - No element addition, removal, or reordering allowed
+
+2. ✅ **100% Rule Coverage Target**
+   - Every rule in ARIA spec must be applied to component
+   - Create new template scenarios as needed
+   - Track coverage percentage (X/Y rules)
+
+3. ✅ **Visual Regression Safety**
+   - No new visual snapshots allowed
+   - All changes must be visually identical
+   - Attribute-only modifications
+
+4. 🔄 **Revisit All Completed Components**
+   - Re-validate 78 components for 100% coverage
+   - Previously targeted ~95%, now aiming for 100%
+   - Update templates where coverage gaps exist
+
+5. 🔄 **Complete Remaining Components**
+   - Apply updated workflow to 31 pending components
+   - Achieve 100% coverage from the start
 
 ## Summary by Priority Level
 
@@ -93,39 +122,105 @@
 
 ## Known Limitations & Future Work
 
-### Test/Template File Violations (Out of Current Scope)
+### Updated Scope (January 2026)
 
-The following types of violations occur in test/template files and are **not addressed in root-level components**:
+**Now In Scope** (Previously Out of Scope):
+1. ✅ **Template Files (`templates/` folder)** - Can now be modified for ARIA compliance
+2. ✅ **Creating New Templates** - Can add new template scenarios to achieve 100% rule coverage
 
-1. **Icon-Only Buttons:** Missing `aria-label` on buttons with only icons (affects Grid, Editor, FileManager toolbars)
-2. **Link Accessibility:** Missing `aria-label` or text on icon-only links
-3. **Form Labels:** Missing `<label>` elements for form inputs in test scenarios
-4. **Frame Titles:** Missing `title` attribute on `<iframe>` elements
-5. **Component-Specific:**
-   - FileManager: `.k-filemanager-preview` needs `tabindex=0` (6 instances in test files)
-   - Grid: Test templates have `aria-required-children` violations
+**Still Out of Scope**:
+1. ❌ **Test Files (`tests/` folder)** - Cannot be modified
+2. ❌ **Markup Structure Changes** - No element addition/removal/reordering
+3. ❌ **Visual Changes** - Must maintain visual consistency with develop branch
 
-### Recommendations for Future Iterations
+### Coverage Gap Analysis (To Be Completed)
 
-1. **Template Enhancement:**
-   - Add `tabindex=0` to FileManager preview panes
-   - Add `aria-label` to icon-only buttons in component templates
-   - Add `title` attributes to iframes in test templates
+The following will be addressed in the revisit phase:
 
-2. **Documentation:**
-   - Create guidelines for proper ARIA usage in test files
-   - Document icon button labeling patterns
+1. **Components Needing Template Updates**
+   - Components with <100% ARIA rule coverage
+   - Missing template scenarios for specific states
+   - Conditional attributes not fully tested
 
-3. **Tooling:**
-   - Consider automated ARIA attribute injection for common patterns
-   - Add linting rules to catch missing aria-label on icon buttons
+2. **New Template Scenarios Needed**
+   - Disabled states
+   - Loading states
+   - Error states
+   - Focus/hover states
+   - State combinations (e.g., disabled + selected)
+
+### Recommendations for Achieving 100% Coverage
+
+1. **Template Enhancement**:
+   - Add missing state props to existing templates
+   - Create new template variants for uncovered states
+   - Ensure all conditional ARIA attributes can be tested
+
+2. **Systematic Verification**:
+   - Run coverage check on each component
+   - Document template gaps
+   - Create templates systematically
+   - Re-validate after updates
+
+3. **Documentation**:
+   - Document which templates test which ARIA rules
+   - Create template naming conventions for states
+   - Link templates to spec rules
 
 ## Testing Methodology
 
 - **ARIA Tests:** Custom validator checking against specs in `aria/` folder
+- **Coverage Tracking:** Reports X/Y rules applied per component
 - **WCAG Tests:** AxeCore Level AA compliance testing
-- **Scope:** Root-level `.spec.tsx` files only (not tests/ or templates/ folders)
-- **Target:** 95%+ WCAG, high ARIA compliance
+- **Scope:** Root-level `.spec.tsx` files AND `templates/` folder files
+- **Target:** 100% ARIA rule coverage + 95%+ WCAG compliance
+- **Visual Regression:** All changes must pass visual diff checks
+
+## Revisit Plan for Previously Completed Components
+
+### Phase 1: Simple Components (Priority: High)
+Components with likely high coverage already, quick wins:
+- [ ] icon, badge, skeleton, avatar
+- [ ] button, checkbox, radio, rating
+- [ ] chip, chiplist, loader, progressbar
+
+**Action**: Run coverage check, update templates if <100%
+
+### Phase 2: Input Components (Priority: High)
+- [ ] textbox, textarea, numerictextbox, maskedtextbox
+- [ ] colorgradient, colorpalette, signature
+
+**Action**: Verify state coverage (disabled, readonly, required, invalid)
+
+### Phase 3: Pickers & Lists (Priority: Medium)
+- [ ] datepicker, timepicker, datetimepicker, daterangepicker
+- [ ] colorpicker, flatcolorpicker
+- [ ] dropdownlist, autocomplete, combobox
+- [ ] listbox, listview, multicolumncombobox, multiselect
+- [ ] dropdowntree, multiselecttree
+
+**Action**: Check popup/dropdown states, focus management
+
+### Phase 4: Navigation & Containers (Priority: Medium)
+- [ ] menu, contextmenu, breadcrumb, stepper, toolbar, tabstrip, drawer
+- [ ] card, window, dialog, popover, notification
+- [ ] splitter, tilelayout, expansionpanel, bottomnavigation
+
+**Action**: Verify interactive states, keyboard navigation attributes
+
+### Phase 5: Complex Data Components (Priority: Low)
+- [ ] pager, filter, orgchart
+- [ ] pivotgrid, grid, treelist, propertygrid, taskboard
+- [ ] calendar, multiviewcalendar, infinitecalendar
+
+**Action**: Check cell-level ARIA, navigation patterns
+
+### Phase 6: Composite Components (Priority: Low)
+- [ ] chat, dockmanager, editor, filemanager
+
+**Action**: Verify cross-component ARIA consistency
+
+**Note**: Gantt, ImageEditor, PDFViewer, Scheduler, Spreadsheet, Chart, Sankey not yet started - will apply updated workflow from the beginning.
 
 ## Key Achievements
 

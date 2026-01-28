@@ -5,18 +5,22 @@ This PR implements a comprehensive accessibility validation and compliance frame
 ## 🎯 What's Included
 
 ### 1. Testing Tools
-- **ARIA Attribute Validator** (`test:aria`) - Validates ARIA attributes against specs
+- **ARIA Attribute Validator** (`test:aria`) - Validates ARIA attributes against specs with coverage metrics
 - **WCAG Compliance Tester** (`test:wcag`) - Comprehensive WCAG 2.2 testing with axe-core
 - **Unified Test Suite** (`test:a11y`) - Runs all accessibility tests
-- **Bulk Application Helper** (`aria:*`) - Manages systematic ARIA application
+- **Bulk Application Helper** (`aria:*`) - Manages systematic ARIA application with progress tracking
+- **Coverage Reporter** - Tracks % of ARIA rules applied per component
 
 ### 2. Enhanced Agent
 - **`@accessibility-specialist`** - GitHub Copilot agent with comprehensive a11y workflows
-- **4 Complete Workflows**:
+- **Updated Workflows (V2)**:
   1. Creating ARIA spec from existing HTML
-  2. Applying ARIA to single component
-  3. Bulk ARIA application (all components)
-  4. End-to-end spec creation + application
+  2. Applying ARIA to single component with **100% rule coverage**
+  3. **New:** Verifying rule coverage and creating test scenarios
+  4. Bulk ARIA application (all components)
+  5. End-to-end spec creation + application
+- **Template modification support** - Can now update `/templates` folders
+- **Visual regression safety** - Ensures no unintended visual changes
 - Systematic ARIA application guidance
 - TypeScript-safe examples
 - State management strategies
@@ -96,9 +100,11 @@ node scripts/aria-bulk-apply.mjs complete button
 
 ## 📊 Key Features
 
-✅ **ARIA Validation**
+✅ **ARIA Validation with Coverage Metrics**
 - Parses ARIA specs from markdown
 - Validates HTML output
+- **Tracks % of rules applied** per component
+- Reports missing/unapplied rules
 - Supports alternative attributes
 - Component-level filtering
 
@@ -108,10 +114,21 @@ node scripts/aria-bulk-apply.mjs complete button
 - Compliance scoring
 - WCAG criteria mapping
 
+✅ **100% Rule Coverage Goal**
+- Verify all ARIA spec rules are applied
+- Create test scenarios for missing attributes
+- Ensure complete accessibility coverage
+
+✅ **Template Modification Support**
+- Can modify `/templates` folders
+- Maintains markup structure integrity
+- No element addition/removal/reordering
+- Visual regression safety built-in
+
 ✅ **Engineer-Friendly**
 - Simple npm commands
-- Clear reports
-- Agent guidance
+- Clear reports with actionable insights
+- Agent guidance for complex tasks
 - No deep a11y expertise needed
 
 ## 📁 Files Added
@@ -143,7 +160,7 @@ scripts/
 
 ## 🔄 Agent Workflows
 
-The `@accessibility-specialist` agent includes 4 comprehensive workflows:
+The `@accessibility-specialist` agent includes comprehensive workflows for accessibility compliance:
 
 ### Workflow 1: Create ARIA Spec from HTML
 **Use when**: You have existing HTML/TSX but no ARIA spec
@@ -159,23 +176,77 @@ Steps:
 4. Document all states and attributes
 5. Add alternatives and notes
 
-### Workflow 2: Apply ARIA to Single Component
-**Use when**: You have an ARIA spec and need to apply it
+### Workflow 2: Apply ARIA to Single Component (Updated V2)
+**Use when**: You have an ARIA spec and need to apply it with **100% coverage**
 
 ```bash
-@accessibility-specialist apply ARIA to [component]
+@accessibility-specialist apply ARIA to [component] with full coverage
+```
+
+**Updated Steps**:
+1. Read ARIA spec and create rule checklist
+2. Apply ARIA attributes to root `.spec.tsx` files
+3. **Check rule coverage** - identify which rules are applied vs. missing
+4. **Analyze missing rules** - determine why they're not applied
+5. **Update templates** - modify files in `templates/` folder to ensure all rules can be tested
+6. **Create new test scenarios** (if needed) - add scenarios in `templates/` that specifically test missing attributes
+7. Build & validate (`npm run build:tests`)
+8. Test compliance (`npm run test:aria [component]`)
+9. **Verify 100% rule coverage** - ensure all spec rules are present in generated HTML
+10. **Visual regression check** - confirm no unintended visual changes
+11. Mark component complete
+
+**Key Requirements**:
+- ✅ Modify root-level `.spec.tsx` files
+- ✅ **Modify `templates/` folder files**
+- ❌ Do NOT modify `tests/` folder files
+- ✅ Apply attributes only (no structure changes)
+- ✅ Achieve 100% rule coverage
+- ✅ Maintain visual consistency
+
+### Workflow 3: Rule Coverage Verification (New)
+**Use when**: Need to verify 100% of ARIA rules are applied to a component
+
+```bash
+@accessibility-specialist verify ARIA coverage for [component]
 ```
 
 Steps:
-1. Create todo list from spec
-2. Analyze component structure
-3. Apply ARIA attributes to TSX
-4. Build & validate
-5. Test compliance
-6. Generate report
+1. **Parse spec file** - extract all rules from `aria/[component]_aria.md`
+2. **Build and render** - generate HTML from TSX components
+3. **Run ARIA validation** - execute `npm run test:aria [component] -- --verbose`
+4. **Calculate coverage** - determine % of rules applied
+5. **Identify gaps** - list rules not found in generated HTML
+6. **Analyze causes**:
+   - Missing template scenarios for specific states
+   - Conditional attributes not triggered
+   - State combinations not covered
+7. **Recommend solutions**:
+   - New template files needed
+   - Props to add to existing templates
+   - Test scenarios to create
+8. **Generate report** with:
+   - Coverage percentage (X/Y rules applied)
+   - List of missing rules with selectors
+   - Actionable fix recommendations
 
-### Workflow 3: Bulk ARIA Application
-**Use when**: Applying ARIA to all components systematically
+**Output Example**:
+```
+Component: button
+ARIA Coverage: 18/20 rules (90%)
+
+Missing Rules:
+✗ .k-button[disabled] → aria-disabled=true
+  Reason: No template with disabled state
+  Fix: Add disabled prop to ButtonSolid template
+
+✗ .k-button-group .k-button → aria-pressed=true/false
+  Reason: No toggle button in group scenario
+  Fix: Create new template: button-group-toggle.tsx
+```
+
+### Workflow 4: Bulk ARIA Application (Updated)
+**Use when**: Applying ARIA to all components systematically with 100% coverage
 
 ```bash
 # Initialize tracking
@@ -187,29 +258,41 @@ npm run aria:status
 # See next component
 npm run aria:next
 
-# Apply ARIA (use agent)
-@accessibility-specialist apply ARIA to [component]
+# Apply ARIA using agent (Workflow 2)
+@accessibility-specialist apply ARIA to [component] with full coverage
 
-# Mark complete
+# Verify coverage (Workflow 3)
+@accessibility-specialist verify ARIA coverage for [component]
+
+# If <100%, iterate with templates/scenarios
+
+# Mark complete when 100%
 node scripts/aria-bulk-apply.mjs complete [component]
 ```
 
+**Dependency-Ordered Rollout**:
 Components are grouped by dependency level (base → simple → complex):
-- Level 1: Base (icon, badge, skeleton)
-- Level 2: Simple (button, checkbox, chip)
-- Level 3: Inputs (textbox, numerictextbox)
-- Level 4: Pickers (datepicker, colorpicker)
-- Level 5: Lists (listbox, dropdownlist)
-- ...through Level 12: Charts
+- **Level 1: base** (icon, badge, skeleton, avatar)
+- **Level 2: simple** (button, checkbox, chip, rating)
+- **Level 3: inputs** (textbox, numerictextbox, textarea)
+- **Level 4: pickers** (datepicker, colorpicker, timepicker)
+- **Level 5: lists** (listbox, dropdownlist, combobox)
+- **Level 6: button-groups** (buttongroup, splitbutton)
+- **Level 7: navigation** (menu, breadcrumb, toolbar)
+- **Level 8: containers** (card, window, dialog, splitter)
+- **Level 9: calendars** (calendar, multiviewcalendar)
+- **Level 10: data** (grid, treelist, pager, pivotgrid)
+- **Level 11: complex** (scheduler, gantt, editor, spreadsheet)
+- **Level 12: charts** (chart, sankey, treemap)
 
-### Workflow 4: End-to-End (Create Spec + Apply)
+### Workflow 5: End-to-End (Create Spec + Apply + Verify)
 **Use when**: Starting from scratch with new component
 
 ```bash
-@accessibility-specialist create spec and apply ARIA to [component]
+@accessibility-specialist create spec, apply, and verify ARIA for [component]
 ```
 
-Combines Workflow 1 and 2 with review gate between them.
+Combines Workflows 1, 2, and 3 with review gates between stages.
 
 ## 🧪 Testing Examples
 
@@ -249,44 +332,117 @@ WCAG Criteria: 23/25 passed
 
 ## 🎯 Requirements Coverage
 
-| Requirement | Status |
-|-------------|--------|
-| Merge A11y & Rendering Specs | ✅ Complete |
-| Single Source of Truth | ✅ Complete |
-| Comprehensive A11y Markups | ✅ Framework ready |
-| Enhanced Testing | ✅ Complete |
-| Compliance Evaluation | ✅ Complete |
-| Engineer-Friendly Workflows | ✅ Complete |
-| WCAG Standards Awareness | ✅ Complete |
-| Full Component Coverage | ⏳ Next phase |
-| CI/CD Integration | ⏳ Next phase |
-| VPAT Generation | ⏳ Future work |
+| Requirement | Status | Notes |
+|-------------|--------|-------|
+| Merge A11y & Rendering Specs | ✅ Complete | ARIA specs in `aria/` folder |
+| Single Source of Truth | ✅ Complete | Markdown specs drive validation |
+| Comprehensive A11y Markups | ✅ Framework ready | Can modify root + templates |
+| Enhanced Testing | ✅ Complete | ARIA + WCAG validation |
+| Compliance Evaluation | ✅ Complete | Scoring + reporting |
+| Engineer-Friendly Workflows | ✅ Complete | 5 complete workflows |
+| WCAG Standards Awareness | ✅ Complete | Level AA/AAA support |
+| **100% Rule Coverage** | ✅ **New Goal** | Verify all rules applied |
+| **Template Modification** | ✅ **Enabled** | Can update templates folder |
+| **Visual Regression Safety** | ✅ **Active** | No new snapshots allowed |
+| Full Component Coverage | 🔄 In Progress | 72% complete, pushing to 100% |
+| CI/CD Integration | ⏳ Next phase | After 100% coverage |
+| VPAT Generation | ⏳ Future work | Post-completion |
+
+## 🚀 Updated Project Goals
+
+### Primary Goals (Current Sprint)
+
+1. **✅ 100% Rule Coverage for All Components**
+   - Every rule in `aria/[component]_aria.md` must be applied
+   - Create new test scenarios in `templates/` as needed
+   - Track coverage metrics per component
+
+2. **✅ Template Folder Modification Enabled**
+   - Can now update files in `src/[component]/templates/`
+   - Apply ARIA attributes without changing markup structure
+   - No element addition, removal, or reordering
+
+3. **✅ Visual Regression Safety**
+   - All changes must be visually identical
+   - No new screenshot diffs from develop branch
+   - Attribute-only modifications
+
+4. **🔄 Revisit All Previously Completed Components**
+   - Re-validate 78 completed components
+   - Ensure 100% rule coverage (previously targeted ~95%)
+   - Update templates where coverage gaps exist
+
+5. **🔄 Complete Remaining 31 Components**
+   - Apply new workflows to pending components
+   - Achieve 100% coverage from the start
+   - Priority: complex > charts
+
+### Success Criteria
+
+✅ **For Each Component**:
+- [ ] 100% of ARIA spec rules applied (X/X rules)
+- [ ] 95%+ WCAG compliance score
+- [ ] 0 critical/serious accessibility violations
+- [ ] All templates updated where needed
+- [ ] Visual regression tests pass (no new diffs)
+- [ ] Component marked complete in tracking
 
 ## 🔄 Next Steps
 
-### Immediate (This Sprint)
-1. **Initialize bulk tracking**: `npm run aria:init`
-2. **Review the plan**: `npm run aria:plan`
-3. **Start with base components**: Apply ARIA to icon, badge, skeleton
-4. **Document patterns**: Create examples for common ARIA patterns
+### Phase 1: Update and Validate (Current Sprint)
 
-### Short-term (Next Sprint)
-1. **Complete Level 1-3**: Base, simple, and input components
-2. **Integrate into CI**: Add ARIA tests to GitHub Actions
-3. **Create dashboard**: Visualize compliance scores
-4. **Train team**: Onboard engineers on workflows
+1. **✅ Update Documentation & Tooling**
+   - [x] Update README with new requirements
+   - [x] Update agent instructions
+   - [ ] Merge latest develop branch
+   - [ ] Resolve conflicts (keep ARIA attributes)
 
-### Medium-term (Next Quarter)
-1. **Complete all components**: Apply ARIA to all 100+ components
-2. **Implement VPAT**: Auto-generate VPAT documentation
-3. **Add keyboard tests**: Simulate keyboard navigation
-4. **State variations**: Test all component states
+2. **🔄 Revisit Completed Components (78 components)**
+   - [ ] Run coverage verification on all completed components
+   - [ ] Identify components with <100% coverage
+   - [ ] Update templates to achieve 100% coverage
+   - [ ] Re-validate WCAG compliance
+   - [ ] Confirm no visual regressions
 
-### Long-term (Next 6 Months)
-1. **Real-time monitoring**: Continuous compliance tracking
-2. **Documentation sync**: Link ARIA to component docs
-3. **Auto-updates**: Update ARIA when specs change
-4. **Cross-framework**: Validate other tech stacks
+3. **🔄 Complete Remaining Components (31 components)**
+   - [ ] Apply updated Workflow 2 to each component
+   - [ ] Ensure 100% rule coverage from start
+   - [ ] Priority order: complex → charts
+   - [ ] Track progress in `aria-application-progress.json`
+
+### Phase 2: Finalization (Next Sprint)
+
+1. **CI/CD Integration**
+   - [ ] Add ARIA validation to GitHub Actions
+   - [ ] Add WCAG compliance checks
+   - [ ] Block PRs with <100% coverage
+   - [ ] Generate coverage reports automatically
+
+2. **Documentation Updates**
+   - [ ] Update component docs with ARIA patterns
+   - [ ] Create "ARIA Best Practices" guide
+   - [ ] Document common patterns and solutions
+   - [ ] Add troubleshooting guide
+
+3. **Dashboard & Reporting**
+   - [ ] Create visual compliance dashboard
+   - [ ] Track metrics over time
+   - [ ] Generate VPAT documentation
+   - [ ] Export compliance reports
+
+### Phase 3: Maintenance (Ongoing)
+
+1. **Continuous Monitoring**
+   - [ ] Run a11y tests on every PR
+   - [ ] Alert on coverage regressions
+   - [ ] Track new WCAG violations
+   - [ ] Update specs as components evolve
+
+2. **Cross-Framework Validation**
+   - [ ] Validate Angular components
+   - [ ] Validate Vue components
+   - [ ] Validate Blazor components
+   - [ ] Ensure consistency across stacks
 
 ## 💡 Usage Tips
 
@@ -302,7 +458,28 @@ WCAG Criteria: 23/25 passed
 2. **Use the agent**: Invoke `@accessibility-specialist` for guidance
 3. **Follow placement**: Add attributes after `className` prop
 4. **Handle state**: Use component props for dynamic attributes
-5. **Validate immediately**: Run tests after each component
+5. **Modify templates**: Update files in `templates/` folder as needed
+6. **Validate immediately**: Run tests after each component
+7. **Check coverage**: Ensure 100% of rules are applied
+8. **Verify visuals**: Confirm no unintended visual changes
+
+### For Achieving 100% Coverage
+1. **Parse the spec**: Count total rules to apply
+2. **Apply to root files**: Update `.spec.tsx` files first
+3. **Check initial coverage**: Run `npm run test:aria [component] -- --verbose`
+4. **Identify gaps**: Note which rules are missing
+5. **Analyze templates**: Determine which scenarios need updating
+6. **Update templates**: Add props/attributes to existing templates
+7. **Create new scenarios**: Add templates for missing state combinations
+8. **Re-validate**: Confirm 100% coverage achieved
+9. **Visual check**: Ensure no screenshot diffs
+
+### For Template Modifications
+1. **Attributes only**: Add/update ARIA attributes only
+2. **No structure changes**: Don't add/remove/reorder elements
+3. **Preserve props**: Maintain existing component props
+4. **Test locally**: Build and render before committing
+5. **Check visuals**: Run visual regression tests
 
 ### For Bulk Application
 1. **Work by level**: Complete all components in one priority level before moving on
@@ -331,14 +508,31 @@ WCAG Criteria: 23/25 passed
 ### When Adding ARIA Attributes
 
 1. **Read the component's ARIA spec**: `cat aria/[component]_aria.md`
-2. **Use `@accessibility-specialist`**: Invoke agent for guidance
-3. **Apply attributes to TSX**: Edit files in `packages/html/src/[component]/`
-4. **Build test pages**: `npm run build:tests && npm run test:render-test-pages [component]`
-5. **Validate ARIA**: `npm run test:aria [component]`
-6. **Test WCAG**: `npm run test:wcag [component]`
-7. **Fix violations**: Address any critical/serious issues
-8. **Update progress**: `node scripts/aria-bulk-apply.mjs complete [component]`
-9. **Commit changes**: Include test results in commit message
+2. **Count total rules**: Know your target (e.g., "20 rules to apply")
+3. **Use `@accessibility-specialist`**: Invoke agent with Workflow 2
+4. **Apply to root files**: Edit `.spec.tsx` in `packages/html/src/[component]/`
+5. **Check coverage**: `npm run test:aria [component] -- --verbose`
+6. **Update templates**: Edit files in `templates/` folder for missing rules
+7. **Create scenarios**: Add new template files if needed for state coverage
+8. **Build test pages**: `npm run build:tests && npm run test:render-test-pages [component]`
+9. **Validate ARIA**: `npm run test:aria [component]` → should show X/X rules (100%)
+10. **Test WCAG**: `npm run test:wcag [component]` → target 95%+
+11. **Visual check**: Ensure no screenshot diffs from develop
+12. **Fix violations**: Address any critical/serious issues
+13. **Update progress**: `node scripts/aria-bulk-apply.mjs complete [component]`
+14. **Commit changes**: Include coverage metrics in commit message
+
+**Commit Message Example**:
+```
+feat(a11y): apply ARIA attributes to button with 100% coverage
+
+- Applied 20/20 ARIA spec rules
+- Updated ButtonSolid template with aria-pressed
+- Created button-group-toggle.tsx for toggle button states
+- WCAG compliance: 96.2%
+- Violations: 0 critical, 0 serious
+- Visual regression: passed (no diffs)
+```
 
 ### For Bulk Application
 
