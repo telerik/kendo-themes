@@ -1,6 +1,5 @@
 import { classNames } from '../misc';
 import { Button } from '../button';
-import { FilterPreview } from './filter-preview';
 
 import { KendoComponent } from '../_types/component';
 import { FILTER_FOLDER_NAME, FILTER_MODULE_NAME } from './constants';
@@ -11,7 +10,8 @@ const states = [];
 const options = {};
 
 export type KendoFilterProps = {
-    children?: React.JSX.Element | React.JSX.Element[];
+    children?: React.ReactNode;
+    expressionPreview?: React.ReactNode;
     showApplyButton?: boolean;
 }
 
@@ -23,30 +23,15 @@ export const Filter: KendoComponent<KendoFilterProps & React.HTMLAttributes<HTML
 ) => {
     const {
         children,
+        expressionPreview,
         showApplyButton
     } = props;
-
-    const filterChildren: React.JSX.Element | React.JSX.Element[] = [];
-
-    let expressionPreview: React.JSX.Element = <></>;
-
-    if (children) {
-        if (Array.isArray(children)) {
-            children.map((child) => {
-                if (child.type !== FilterPreview) {
-                    filterChildren.push(child);
-                } else {
-                    expressionPreview = <FilterPreview {...child.props} />;
-                }
-            });
-        }
-    }
 
     return (
         <div className={classNames(props.className, FILTER_CLASSNAME)}>
             <ul className="k-filter-container">
                 <li className="k-filter-group-main">
-                    {filterChildren}
+                    {children}
                 </li>
             </ul>
             {expressionPreview}

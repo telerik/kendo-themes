@@ -7,11 +7,32 @@ import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { Toolbar, ToolbarItem } from '../../toolbar';
 
-export const FilterWithPreview = (props) => (
+export const FilterWithPreview = ({ children, expressionPreview, ...other }: any) => (
     <Filter
         showApplyButton={true}
-        children={[
-            <FilterToolbar key="filter-toolbar">
+        expressionPreview={expressionPreview ||
+            <FilterPreview
+                fields={[
+                    { name: "bracket", value: "(" },
+                    { name: "field", value: "Price" },
+                    { name: "criteria", value: "Is greater than" },
+                    { name: "value", value: "'100,00'" },
+                    { name: "operator", value: "AND" },
+                    { name: "bracket", value: "(" },
+                    { name: "bracket", value: "(" },
+                    { name: "field", value: "FirstOrdered" },
+                    { name: "criteria", value: "Is before" },
+                    { name: "value", value: "'Thursday Jan 21 2021'" },
+                    { name: "bracket", value: ")" },
+                    { name: "bracket", value: ")" },
+                    { name: "bracket", value: ")" },
+                ]}
+            />
+        }
+        {...other}
+    >
+        {children || <>
+            <FilterToolbar>
                 <Toolbar>
                     <ButtonGroup>
                         <Button className="k-group-start" selected>And</Button>
@@ -21,8 +42,8 @@ export const FilterWithPreview = (props) => (
                     <Button icon="filter-add-group">Add Group</Button>
                     <Button fillMode="flat" icon="x"></Button>
                 </Toolbar>
-            </FilterToolbar>,
-            <FilterLines key="filter-lines">
+            </FilterToolbar>
+            <FilterLines>
                 <FilterItem>
                     <FilterToolbar>
                         <Toolbar>
@@ -71,26 +92,7 @@ export const FilterWithPreview = (props) => (
                         </Toolbar>
                     </FilterToolbar>
                 </FilterItem>
-            </FilterLines>,
-            <FilterPreview key="filter-preview"
-                fields={[
-                    { name: "bracket", value: "(" },
-                    { name: "field", value: "Price" },
-                    { name: "criteria", value: "Is greater than" },
-                    { name: "value", value: "'100,00'" },
-                    { name: "operator", value: "AND" },
-                    { name: "bracket", value: "(" },
-                    { name: "bracket", value: "(" },
-                    { name: "field", value: "FirstOrdered" },
-                    { name: "criteria", value: "Is before" },
-                    { name: "value", value: "'Thursday Jan 21 2021'" },
-                    { name: "bracket", value: ")" },
-                    { name: "bracket", value: ")" },
-                    { name: "bracket", value: ")" },
-                ]}>
-            </FilterPreview>
-        ]}
-        {...props}
-    >
+            </FilterLines>
+        </>}
     </Filter>
 );
