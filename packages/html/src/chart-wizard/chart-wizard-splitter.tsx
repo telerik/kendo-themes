@@ -15,6 +15,7 @@ export const ChartWizardSplitter = (
 ) => {
     const {
         children,
+        panes,
         ...other
     } = props;
 
@@ -25,6 +26,7 @@ export const ChartWizardSplitter = (
                 props.className,
                 CHARTWIZARDSPLITTER_CLASSNAME,
             )}
+            panes={panes}
         >
             {children}
         </Splitter>

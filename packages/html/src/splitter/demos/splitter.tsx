@@ -43,15 +43,15 @@ export const SplitterDemo = (
         collapsible: isCollapsible,
         content: isCollapsible ? "Resizable and collapsible" : "Resizable only"
     });
-    
+
     let firstPaneProps = getDefaultProps(true);
     let secondPaneProps = getDefaultProps(true);
 
     const paneStyles = { display: "flex", justifyContent: "center", alignItems: "center" };
-    
+
     Object.keys(mods || {}).forEach((modifier) => {
         const isCollapsible = mods?.[modifier];
-    
+
         switch (modifier) {
             case 'secondPaneProps':
                 secondPaneProps = getDefaultProps(!!isCollapsible);
@@ -67,26 +67,26 @@ export const SplitterDemo = (
     switch (variant) {
         case 'vertical':
             return (
-                <Splitter style={{ height: "238px" }} {...other} orientation="vertical">
-                    <SplitterPane {...firstPaneProps} flexBasis="50%" style={paneStyles}>
+                <Splitter style={{ height: "238px" }} {...other} orientation="vertical" panes={[
+                    <SplitterPane {...firstPaneProps} flexBasis="50%" style={paneStyles} key="pane-1">
                         <p>{firstPaneProps.content}</p>
-                    </SplitterPane>
-                    <SplitterPane {...secondPaneProps} flexBasis="50%" style={paneStyles}>
+                    </SplitterPane>,
+                    <SplitterPane {...secondPaneProps} flexBasis="50%" style={paneStyles} key="pane-2">
                         <p>{secondPaneProps.content}</p>
                     </SplitterPane>
-                </Splitter>
+                ]} />
             );
         case 'horizontal':
         default:
             return (
-                <Splitter style={{ height: "238px" }} {...other} orientation="horizontal">
-                    <SplitterPane {...firstPaneProps} flexBasis="50%" style={paneStyles}>
+                <Splitter style={{ height: "238px" }} {...other} orientation="horizontal" panes={[
+                    <SplitterPane {...firstPaneProps} flexBasis="50%" style={paneStyles} key="pane-1">
                         <p>{firstPaneProps.content}</p>
-                    </SplitterPane>
-                    <SplitterPane {...secondPaneProps} flexBasis="50%" style={paneStyles}>
+                    </SplitterPane>,
+                    <SplitterPane {...secondPaneProps} flexBasis="50%" style={paneStyles} key="pane-2">
                         <p>{secondPaneProps.content}</p>
                     </SplitterPane>
-                </Splitter>
+                ]} />
             );
     }
 }

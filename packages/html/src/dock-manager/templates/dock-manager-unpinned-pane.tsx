@@ -20,8 +20,8 @@ export const DockManagerUnpinnedPane = (props) => (
         }
         children={
             <>
-                <DockManagerSplitter>
-                    <SplitterPane tabbed flexBasis="40%">
+                <DockManagerSplitter panes={[
+                    <SplitterPane tabbed flexBasis="40%" key="pane-1">
                         <TabStripNormal style={{ height: "100%" }}
                             tabStripItems={
                                 <>
@@ -38,10 +38,10 @@ export const DockManagerUnpinnedPane = (props) => (
                             File 1
                             </TabStripContent>
                         </TabStripNormal>
-                    </SplitterPane>
-                    <SplitterPane>
-                        <DockManagerSplitter orientation="vertical">
-                            <SplitterPane tabbed flexBasis="50%">
+                    </SplitterPane>,
+                    <SplitterPane key="pane-2">
+                        <DockManagerSplitter orientation="vertical" panes={[
+                            <SplitterPane tabbed flexBasis="50%" key="nested-1">
                                 <TabStripNormal style={{ height: "100%" }}
                                     tabStripItems={
                                         <>
@@ -64,13 +64,13 @@ export const DockManagerUnpinnedPane = (props) => (
                                         Properties content.
                                     </TabStripContent>
                                 </TabStripNormal>
-                            </SplitterPane>
-                            <SplitterPane pinned>
+                            </SplitterPane>,
+                            <SplitterPane pinned key="nested-2">
                                 <PaneScrollable title="Layers">Layers content.</PaneScrollable>
                             </SplitterPane>
-                        </DockManagerSplitter>
+                        ]} />
                     </SplitterPane>
-                </DockManagerSplitter>
+                ]} />
             </>
         }
         {...props}

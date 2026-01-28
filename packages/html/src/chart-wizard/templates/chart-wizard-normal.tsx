@@ -8,8 +8,8 @@ export const ChartWizardNormal = (props) => (
     <ChartWizard
         children={
             <>
-                <ChartWizardSplitter>
-                    <SplitterPane className="k-chart-wizard-preview-pane">
+                <ChartWizardSplitter panes={[
+                    <SplitterPane className="k-chart-wizard-preview-pane" key="pane-1">
                         <ChartWizardPreviewPanelContent>
                             <div className="k-chart" style={{ position: "relative", height: "400px" }}>
                                 <svg style={{ width: '100%', height: "100%", overflow: 'hidden', left: '0px', top: "-0.15625px" }} xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -128,8 +128,8 @@ export const ChartWizardNormal = (props) => (
                                 </svg>
                             </div>
                         </ChartWizardPreviewPanelContent>
-                    </SplitterPane>
-                    <SplitterPane className="k-chart-wizard-property-pane" flexBasis="300px" collapsible>
+                    </SplitterPane>,
+                    <SplitterPane className="k-chart-wizard-property-pane" flexBasis="300px" collapsible key="pane-2">
                         <TabStrip
                             tabStripItems={
                                 <>
@@ -178,7 +178,7 @@ export const ChartWizardNormal = (props) => (
                             </TabStripContent>
                         </TabStrip>
                     </SplitterPane>
-                </ChartWizardSplitter>
+                ]} />
             </>
         }
         {...props}

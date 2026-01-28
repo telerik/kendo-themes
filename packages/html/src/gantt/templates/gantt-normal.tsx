@@ -38,7 +38,7 @@ export const GanttNormal = ({ flexBasis = "30%", gridContentHeight = "180px", ta
     >
         <GanttContent>
             {other.children ||
-                <Splitter className="k-gantt-splitter" children={[
+                <Splitter className="k-gantt-splitter" panes={[
                     <SplitterPane key="gantt-treelist-pane" className="k-gantt-treelist" flexBasis={flexBasis}>
                         <TreeList _renderAriaRoot>
                             <GridHeader>
