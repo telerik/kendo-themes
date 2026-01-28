@@ -10,5 +10,262 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: 800px;
+        }
+        .k-listbox {
+            width: 100%;
+            height: auto;
+            align-items: flex-start;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
+        <div>
+            <span>undefined</span>
+            <div class="k-listbox k-listbox-actions-left">
+                <div class="k-listbox-actions" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-listbox">
+                    <button aria-label="Move selected item up" class="k-button k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m256 160 128 192H128z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button aria-label="Move selected item down" class="k-button k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button aria-label="Move selected item left" class="k-button k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m160 256 192-128v256z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button aria-label="Move selected item right" class="k-button k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M352 256 160 384V128z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-list-scroller k-selectable">
+                    <div id="k-listbox-listbox" role="listbox" aria-label="ListBox options" class="k-list">
+                        <div class="k-list-content">
+                            <ul class="k-list-ul">
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 1</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 2</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 3</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 4</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 5</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 6</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span>small</span>
+            <div class="k-listbox k-listbox-actions-left">
+                <div class="k-listbox-actions" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-listbox">
+                    <button aria-label="Move selected item up" class="k-button k-button-sm k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m256 160 128 192H128z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button aria-label="Move selected item down" class="k-button k-button-sm k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button aria-label="Move selected item left" class="k-button k-button-sm k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m160 256 192-128v256z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button aria-label="Move selected item right" class="k-button k-button-sm k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M352 256 160 384V128z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-list-scroller k-selectable">
+                    <div id="k-listbox-listbox" role="listbox" aria-label="ListBox options" class="k-list k-list-sm">
+                        <div class="k-list-content">
+                            <ul class="k-list-ul">
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 1</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 2</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 3</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 4</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 5</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 6</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span>medium</span>
+            <div class="k-listbox k-listbox-actions-left">
+                <div class="k-listbox-actions" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-listbox">
+                    <button aria-label="Move selected item up" class="k-button k-button-md k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m256 160 128 192H128z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button aria-label="Move selected item down" class="k-button k-button-md k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button aria-label="Move selected item left" class="k-button k-button-md k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m160 256 192-128v256z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button aria-label="Move selected item right" class="k-button k-button-md k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M352 256 160 384V128z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-list-scroller k-selectable">
+                    <div id="k-listbox-listbox" role="listbox" aria-label="ListBox options" class="k-list k-list-md">
+                        <div class="k-list-content">
+                            <ul class="k-list-ul">
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 1</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 2</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 3</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 4</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 5</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 6</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span>large</span>
+            <div class="k-listbox k-listbox-actions-left">
+                <div class="k-listbox-actions" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-listbox">
+                    <button aria-label="Move selected item up" class="k-button k-button-lg k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m256 160 128 192H128z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button aria-label="Move selected item down" class="k-button k-button-lg k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button aria-label="Move selected item left" class="k-button k-button-lg k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m160 256 192-128v256z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button aria-label="Move selected item right" class="k-button k-button-lg k-icon-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M352 256 160 384V128z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-list-scroller k-selectable">
+                    <div id="k-listbox-listbox" role="listbox" aria-label="ListBox options" class="k-list k-list-lg">
+                        <div class="k-list-content">
+                            <ul class="k-list-ul">
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 1</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 2</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 3</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 4</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 5</span>
+                                </li>
+                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                    <span class="k-list-item-text">List item 6</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

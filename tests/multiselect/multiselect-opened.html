@@ -10,5 +10,84 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
+    <style>
+        #test-area {
+            grid-template-columns: 160px repeat(2, 300px);
+        }
+        .k-animation-container {
+            position: relative;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid">
+        <span></span>
+        <span>MultiSelect</span>
+        <span>MultiSelect RTL</span>
+        <div>Opened</div>
+        <div>
+            <span class="k-multiselect k-input">
+                <div class="k-input-values">
+                    <div class="k-chip-list"></div>
+                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </div>
+            </span>
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelect suggestions">
+                <div class="k-child-animation-container">
+                    <div class="k-list-container k-multiselect-popup k-popup">
+                        <div role="listbox" aria-label="MultiSelect options" aria-multiselectable="true" class="k-list">
+                            <div class="k-list-content">
+                                <ul class="k-list-ul">
+                                    <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                        <span class="k-list-item-text">List item</span>
+                                    </li>
+                                    <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                        <span class="k-list-item-text">List item</span>
+                                    </li>
+                                    <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                        <span class="k-list-item-text">List item</span>
+                                    </li>
+                                    <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                        <span class="k-list-item-text">List item</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <span class="k-multiselect k-input">
+                <div class="k-input-values">
+                    <div class="k-chip-list"></div>
+                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </div>
+            </span>
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelect suggestions">
+                <div class="k-child-animation-container">
+                    <div class="k-list-container k-multiselect-popup k-popup">
+                        <div role="listbox" aria-label="MultiSelect options" aria-multiselectable="true" class="k-list">
+                            <div class="k-list-content">
+                                <ul class="k-list-ul">
+                                    <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                        <span class="k-list-item-text">List item</span>
+                                    </li>
+                                    <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                        <span class="k-list-item-text">List item</span>
+                                    </li>
+                                    <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                        <span class="k-list-item-text">List item</span>
+                                    </li>
+                                    <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                        <span class="k-list-item-text">List item</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

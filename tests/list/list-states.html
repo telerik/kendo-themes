@@ -10,5 +10,158 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
+    <style>
+        .k-virtual-list>.k-item,
+        .k-virtual-list .k-list-item {
+            position: relative;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
+        <span>Static list</span>
+        <span>Virtual list</span>
+        <span>Static list (rtl)</span>
+        <span>Virtual list (rtl)</span>
+        <section>
+            <div class="k-list">
+                <div class="k-list-content">
+                    <ul class="k-list-ul">
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item</span>
+                        </li>
+                        <li class="k-list-item k-hover">
+                            <span class="k-list-item-text">Hover</span>
+                        </li>
+                        <li class="k-list-item k-focus">
+                            <span class="k-list-item-text">Focus</span>
+                        </li>
+                        <li class="k-list-item k-selected">
+                            <span class="k-list-item-text">Selected</span>
+                        </li>
+                        <li class="k-list-item k-hover k-selected">
+                            <span class="k-list-item-text">Hover selected</span>
+                        </li>
+                        <li class="k-list-item k-disabled">
+                            <span class="k-list-item-text">Disabled</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox" aria-label="Checkbox" type="checkbox">
+                            </span>
+                            <span class="k-list-item-text">Checkbox</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-list k-virtual-list">
+                <div class="k-list-content">
+                    <ul class="k-list-ul">
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item</span>
+                        </li>
+                        <li class="k-list-item k-hover">
+                            <span class="k-list-item-text">Hover</span>
+                        </li>
+                        <li class="k-list-item k-focus">
+                            <span class="k-list-item-text">Focus</span>
+                        </li>
+                        <li class="k-list-item k-selected">
+                            <span class="k-list-item-text">Selected</span>
+                        </li>
+                        <li class="k-list-item k-hover k-selected">
+                            <span class="k-list-item-text">Hover selected</span>
+                        </li>
+                        <li class="k-list-item k-disabled">
+                            <span class="k-list-item-text">Disabled</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox" aria-label="Checkbox" type="checkbox">
+                            </span>
+                            <span class="k-list-item-text">Checkbox</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section dir="rtl">
+            <div class="k-list">
+                <div class="k-list-content">
+                    <ul class="k-list-ul">
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item</span>
+                        </li>
+                        <li class="k-list-item k-hover">
+                            <span class="k-list-item-text">Hover</span>
+                        </li>
+                        <li class="k-list-item k-focus">
+                            <span class="k-list-item-text">Focus</span>
+                        </li>
+                        <li class="k-list-item k-selected">
+                            <span class="k-list-item-text">Selected</span>
+                        </li>
+                        <li class="k-list-item k-hover k-selected">
+                            <span class="k-list-item-text">Hover selected</span>
+                        </li>
+                        <li class="k-list-item k-disabled">
+                            <span class="k-list-item-text">Disabled</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox" aria-label="Checkbox" type="checkbox">
+                            </span>
+                            <span class="k-list-item-text">Checkbox</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section dir="rtl">
+            <div class="k-list k-virtual-list">
+                <div class="k-list-content">
+                    <ul class="k-list-ul">
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item</span>
+                        </li>
+                        <li class="k-list-item k-hover">
+                            <span class="k-list-item-text">Hover</span>
+                        </li>
+                        <li class="k-list-item k-focus">
+                            <span class="k-list-item-text">Focus</span>
+                        </li>
+                        <li class="k-list-item k-selected">
+                            <span class="k-list-item-text">Selected</span>
+                        </li>
+                        <li class="k-list-item k-hover k-selected">
+                            <span class="k-list-item-text">Hover selected</span>
+                        </li>
+                        <li class="k-list-item k-disabled">
+                            <span class="k-list-item-text">Disabled</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-checkbox-wrap">
+                                <input class="k-checkbox" aria-label="Checkbox" type="checkbox">
+                            </span>
+                            <span class="k-list-item-text">Checkbox</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

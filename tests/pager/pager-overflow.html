@@ -10,5 +10,152 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
+    <style>
+        #test-area {
+            width: min-content;
+        }
+
+    </style>
+    <div id="test-area">
+        <span>Numeric overflow</span>
+        <div class="k-pager" role="application" aria-roledescription="pager" aria-keyshortcuts="Enter ArrowRight ArrowLeft" aria-label="Page 1 of 6">
+            <div class="k-pager-numbers-wrap">
+                <button class="k-pager-nav k-pager-first k-button k-button-flat k-disabled k-icon-button" title="Go to the first page" aria-label="Go to the first page" disabled="">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M352 384 160 256l192-128zM128 128v256h32V128z"></path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="k-pager-nav k-button k-button-flat k-disabled k-icon-button" title="Go to the previous page" aria-label="Go to the previous page" disabled="">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m160 256 192-128v256z"></path>
+                        </svg>
+                    </span>
+                </button>
+                <div class="k-pager-numbers">
+                    <button aria-label="Page 1" aria-current="page" class="k-button k-button-flat k-button-primary k-selected">
+                        <span class="k-button-text">1</span>
+                    </button>
+                    <button aria-label="Page 2" class="k-button k-button-flat k-button-primary">
+                        <span class="k-button-text">2</span>
+                    </button>
+                    <button aria-label="Page 3" class="k-button k-button-flat k-button-primary">
+                        <span class="k-button-text">3</span>
+                    </button>
+                    <button aria-label="Page 4" class="k-button k-button-flat k-button-primary">
+                        <span class="k-button-text">4</span>
+                    </button>
+                    <button aria-label="Page 5" class="k-button k-button-flat k-button-primary">
+                        <span class="k-button-text">5</span>
+                    </button>
+                    <button aria-label="Page 6" class="k-button k-button-flat k-button-primary">
+                        <span class="k-button-text">6</span>
+                    </button>
+                </div>
+                <button class="k-pager-nav k-button k-button-flat k-icon-button" title="Go to the next page" aria-label="Go to the next page">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M352 256 160 384V128z"></path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="k-pager-nav k-pager-last k-button k-button-flat k-icon-button" title="Go to the last page" aria-label="Go to the last page">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-right" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m128 128 192 128-192 128zm224 256V128h-32v256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <span class="k-pager-sizes">
+                <span aria-label="Select option" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
+                    <span class="k-input-inner">
+                        <span class="k-input-value-text">5</span>
+                    </span>
+                    <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+                <span>items per page</span>
+            </span>
+            <button class="k-pager-refresh k-button k-button-flat k-icon-button" title="Refresh" aria-label="Refresh">
+                <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-rotate-cw" aria-hidden="true">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M480 288c0 123.7-100.3 224-224 224S32 411.7 32 288 132.3 64 256 64V0l160 96-160 96v-64c-88.2 0-160 71.8-160 160s71.8 160 160 160 160-71.8 160-160c0-29.1-7.8-56.4-21.5-80l55.5-32c19.1 32.9 30 71.2 30 112"></path>
+                    </svg>
+                </span>
+            </button>
+            <span class="k-pager-info">1 - 5 of 20 items</span>
+        </div>
+        <span>Input overflow</span>
+        <div class="k-pager" role="application" aria-roledescription="pager" aria-keyshortcuts="Enter ArrowRight ArrowLeft" aria-label="Page 1 of 6">
+            <div class="k-pager-numbers-wrap">
+                <button class="k-pager-nav k-pager-first k-button k-button-flat k-disabled k-icon-button" title="Go to the first page" aria-label="Go to the first page" disabled="">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M352 384 160 256l192-128zM128 128v256h32V128z"></path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="k-pager-nav k-button k-button-flat k-disabled k-icon-button" title="Go to the previous page" aria-label="Go to the previous page" disabled="">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m160 256 192-128v256z"></path>
+                        </svg>
+                    </span>
+                </button>
+                <span class="k-pager-input">
+                    <span>Page</span>
+                    <span class="k-numerictextbox k-input">
+                        <input aria-label="Page number" role="spinbutton" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                    </span>
+                    <span>of 6</span>
+                </span>
+                <button class="k-pager-nav k-button k-button-flat k-icon-button" title="Go to the next page" aria-label="Go to the next page">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M352 256 160 384V128z"></path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="k-pager-nav k-pager-last k-button k-button-flat k-icon-button" title="Go to the last page" aria-label="Go to the last page">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-right" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m128 128 192 128-192 128zm224 256V128h-32v256z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <span class="k-pager-sizes">
+                <span aria-label="Select option" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
+                    <span class="k-input-inner">
+                        <span class="k-input-value-text">5</span>
+                    </span>
+                    <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+                <span>items per page</span>
+            </span>
+            <button class="k-pager-refresh k-button k-button-flat k-icon-button" title="Refresh" aria-label="Refresh">
+                <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-rotate-cw" aria-hidden="true">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M480 288c0 123.7-100.3 224-224 224S32 411.7 32 288 132.3 64 256 64V0l160 96-160 96v-64c-88.2 0-160 71.8-160 160s71.8 160 160 160 160-71.8 160-160c0-29.1-7.8-56.4-21.5-80l55.5-32c19.1 32.9 30 71.2 30 112"></path>
+                    </svg>
+                </span>
+            </button>
+            <span class="k-pager-info">1 - 5 of 20 items</span>
+        </div>
+    </div>
 </body>
 </html>

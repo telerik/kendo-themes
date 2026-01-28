@@ -10,5 +10,226 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
+    <style>
+        .k-animation-container,
+        .k-popup {
+            position: relative;
+            overflow: visible;
+        }
+        .k-animation-container {
+            display: inline-block;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <span>Normal</span>
+        <span>Long filter operator</span>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <form class="k-filter-menu k-popup k-group k-reset">
+                        <div class="k-filter-menu-container">
+                            <div class="k-filter-help-text">Show items with value that:</div>
+                            <span class="k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
+                                <span class="k-input-inner">
+                                    <span class="k-input-value-text">Is equal to</span>
+                                </span>
+                                <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 352 128 160h256z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </span>
+                            <span class="k-numerictextbox k-input">
+                                <input role="spinbutton" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                <span class="k-spin-button k-input-spinner">
+                                    <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value" title="Increase value">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m256 160 128 192H128z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value" title="Decrease value">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M256 352 128 160h256z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </span>
+                            </span>
+                            <span class="k-filter-and k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
+                                <span class="k-input-inner">
+                                    <span class="k-input-value-text">And</span>
+                                </span>
+                                <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 352 128 160h256z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </span>
+                            <span class="k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
+                                <span class="k-input-inner">
+                                    <span class="k-input-value-text">Is equal to</span>
+                                </span>
+                                <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 352 128 160h256z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </span>
+                            <span class="k-numerictextbox k-input">
+                                <input role="spinbutton" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                <span class="k-spin-button k-input-spinner">
+                                    <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value" title="Increase value">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m256 160 128 192H128z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value" title="Decrease value">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M256 352 128 160h256z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </span>
+                            </span>
+                            <div class="k-actions k-actions-stretched k-actions-horizontal">
+                                <button class="k-button k-button-primary">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="k-button-text">Filter</span>
+                                </button>
+                                <button class="k-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter-clear" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="m143.5 64 168.2 168.2L288 256v160l-64 64V256L64 96V64zm236.1 100.4L448 96V64H279.3l-64-64L192 22l298 298 22-23.3z"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="k-button-text">Clear</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <form class="k-filter-menu k-popup k-group k-reset">
+                        <div class="k-filter-menu-container">
+                            <div class="k-filter-help-text">Show items with value that:</div>
+                            <span class="k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
+                                <span class="k-input-inner">
+                                    <span class="k-input-value-text">An example of some very very very long filter operator</span>
+                                </span>
+                                <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 352 128 160h256z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </span>
+                            <span class="k-numerictextbox k-input">
+                                <input role="spinbutton" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                <span class="k-spin-button k-input-spinner">
+                                    <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value" title="Increase value">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m256 160 128 192H128z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value" title="Decrease value">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M256 352 128 160h256z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </span>
+                            </span>
+                            <span class="k-filter-and k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
+                                <span class="k-input-inner">
+                                    <span class="k-input-value-text">And</span>
+                                </span>
+                                <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 352 128 160h256z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </span>
+                            <span class="k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
+                                <span class="k-input-inner">
+                                    <span class="k-input-value-text">Is equal to</span>
+                                </span>
+                                <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 352 128 160h256z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </span>
+                            <span class="k-numerictextbox k-input">
+                                <input role="spinbutton" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                <span class="k-spin-button k-input-spinner">
+                                    <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value" title="Increase value">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m256 160 128 192H128z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value" title="Decrease value">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M256 352 128 160h256z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </span>
+                            </span>
+                            <div class="k-actions k-actions-stretched k-actions-horizontal">
+                                <button class="k-button k-button-primary">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="k-button-text">Filter</span>
+                                </button>
+                                <button class="k-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter-clear" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="m143.5 64 168.2 168.2L288 256v160l-64 64V256L64 96V64zm236.1 100.4L448 96V64H279.3l-64-64L192 22l298 298 22-23.3z"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="k-button-text">Clear</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
