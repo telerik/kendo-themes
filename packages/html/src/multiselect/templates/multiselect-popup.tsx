@@ -1,4 +1,4 @@
-import { List, ListItem } from "../../list";
+import { List, ListContent, ListItem } from "../../list";
 import MultiSelect from "../multiselect.spec";
 
 export const MultiSelectPopup = (props) => (
@@ -6,10 +6,12 @@ export const MultiSelectPopup = (props) => (
         opened
         popup={(
             <List>
-                <ListItem>List item</ListItem>
-                <ListItem>List item</ListItem>
-                <ListItem>List item</ListItem>
-                <ListItem>List item</ListItem>
+                <ListContent>
+                    <ListItem>List item</ListItem>
+                    <ListItem>List item</ListItem>
+                    <ListItem>List item</ListItem>
+                    <ListItem>List item</ListItem>
+                </ListContent>
             </List>
         )}
         {...props}

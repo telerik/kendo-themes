@@ -1,9 +1,11 @@
 import { classNames } from '../misc';
+import { ListUl } from './list-ul';
 
 const className = `k-list-content`;
 
 export type KendoListContentProps = {
     virtualization?: boolean;
+    grouping?: boolean;
 };
 
 export const ListContent = (
@@ -12,6 +14,7 @@ export const ListContent = (
 ) => {
     const {
         virtualization,
+        grouping,
         ...other
     } = props;
 
@@ -19,9 +22,7 @@ export const ListContent = (
         <div
             {...other}
             className={classNames(className, props.className)}>
-            <ul className={classNames('k-list-ul')}>
-                {props.children}
-            </ul>
+            {grouping ? props.children : <ListUl>{props.children}</ListUl>}
             { virtualization && <div className="k-height-container"><div></div></div> }
         </div>
     );

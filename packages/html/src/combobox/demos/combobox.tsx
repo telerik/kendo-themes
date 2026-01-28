@@ -2,7 +2,7 @@
 import { ComboboxNormal } from '../templates/combobox-normal';
 import { Icon } from '../../icon';
 import { IconButton } from '../../button';
-import { List, ListItem } from '../../list';
+import { List, ListContent, ListItem } from '../../list';
 
 const states = Combobox.states;
 const defaults = Combobox.defaultOptions;
@@ -34,9 +34,11 @@ export const ComboboxDemo = (
 
   const popup = (
     <List style={{ width: 300 }} size={other.size}>
-      <ListItem>List item</ListItem>
-      <ListItem>List item</ListItem>
-      <ListItem>List item</ListItem>
+      <ListContent>
+        <ListItem>List item</ListItem>
+        <ListItem>List item</ListItem>
+        <ListItem>List item</ListItem>
+      </ListContent>
     </List>
   );
 

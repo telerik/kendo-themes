@@ -10,7 +10,7 @@ import {
 } from '../input';
 import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
-import { List, ListItem } from '../list';
+import { List, ListContent, ListItem } from '../list';
 
 import { KendoComponent } from '../_types/component';
 import { DROPDOWNLIST_FOLDER_NAME, DROPDOWNLIST_MODULE_NAME } from './constants';
@@ -164,9 +164,11 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                 >
                     <div className="k-list-container">
                         <List size="large">
-                            <ListItem text="List item" />
-                            <ListItem text="List item" />
-                            <ListItem text="List item" />
+                            <ListContent>
+                                <ListItem text="List item" />
+                                <ListItem text="List item" />
+                                <ListItem text="List item" />
+                            </ListContent>
                         </List>
                     </div>
                 </ActionSheet>

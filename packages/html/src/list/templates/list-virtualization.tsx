@@ -1,13 +1,18 @@
-import { List, ListItem } from "..";
+import { List, ListItem, ListContent } from "..";
 
-export const ListVirtualization = (props) => (
+export const ListVirtualization = ({ children, ...other }: any) => (
     <List
         virtualization
-        children={[
-            <ListItem key="list-item-1">List item</ListItem>,
-            <ListItem key="list-item-2">List item</ListItem>,
-            <ListItem key="list-item-3">List item</ListItem>
-        ]}
-        {...props}
-    />
+        {...other}
+    >
+        <ListContent virtualization>
+            {children || (
+                <>
+                    <ListItem key="list-item-1">List item</ListItem>
+                    <ListItem key="list-item-2">List item</ListItem>
+                    <ListItem key="list-item-3">List item</ListItem>
+                </>
+            )}
+        </ListContent>
+    </List>
 );

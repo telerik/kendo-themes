@@ -3,7 +3,7 @@ import { AutocompleteNormal } from '../templates/autocomplete-normal';
 import { Textbox } from '../../textbox';
 import { Icon } from '../../icon';
 import { TextButton } from '../../button';
-import { List, ListItem } from '../../list';
+import { List, ListContent, ListItem } from '../../list';
 
 const states = Textbox.states;
 const defaults = Textbox.defaultOptions;
@@ -35,9 +35,11 @@ export const AutocompleteDemo = (
 
   const popup = (
     <List style={{ width: 300 }} size={other.size}>
-      <ListItem>List item</ListItem>
-      <ListItem>List item</ListItem>
-      <ListItem>List item</ListItem>
+      <ListContent>
+        <ListItem>List item</ListItem>
+        <ListItem>List item</ListItem>
+        <ListItem>List item</ListItem>
+      </ListContent>
     </List>
   );
 

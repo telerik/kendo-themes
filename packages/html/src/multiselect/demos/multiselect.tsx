@@ -3,7 +3,7 @@ import { MultiSelectNormal } from '../templates/multiselect-normal';
 import { Icon } from '../../icon';
 import { TextButton } from '../../button';
 import { Chip, ChipAction } from '../../chip';
-import { List, ListItem } from '../../list';
+import { List, ListContent, ListItem } from '../../list';
 
 const states = MultiSelect.states;
 const defaults = MultiSelect.defaultOptions;
@@ -37,10 +37,12 @@ export const MultiselectDemo = (
 
   const popup = (
     <List>
-      <ListItem>List item</ListItem>
-      <ListItem>List item</ListItem>
-      <ListItem>List item</ListItem>
-      <ListItem>List item</ListItem>
+      <ListContent>
+        <ListItem>List item</ListItem>
+        <ListItem>List item</ListItem>
+        <ListItem>List item</ListItem>
+        <ListItem>List item</ListItem>
+      </ListContent>
     </List>
   );
 

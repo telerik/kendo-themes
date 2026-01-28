@@ -1,22 +1,24 @@
-import { List, ListGroup, ListItem } from "../../list";
+import { List, ListItem, ListGroupItem, ListContent, ListUl } from "../../list";
 import Combobox from "../combobox.spec";
 
 export const ComboboxGrouping = (props) => (
     <Combobox
         opened
         popup={
-            <List>
-                <ListGroup label={"Group 1"} root>
-                    <ListItem>List group 1 item 1</ListItem>
-                    <ListItem>List group 1 item 2</ListItem>
-                    <ListItem>List group 1 item 3</ListItem>
-                </ListGroup>
-                <ListGroup>
-                    <ListItem group>Group 2</ListItem>
-                    <ListItem>List group 1 item 1</ListItem>
-                    <ListItem>List group 1 item 2</ListItem>
-                    <ListItem>List group 1 item 3</ListItem>
-                </ListGroup>
+            <List header="Group 1">
+                <ListContent grouping>
+                    <ListUl>
+                        <ListItem>List group 1 item 1</ListItem>
+                        <ListItem>List group 1 item 2</ListItem>
+                        <ListItem>List group 1 item 3</ListItem>
+                    </ListUl>
+                    <ListUl>
+                        <ListGroupItem>Group 2</ListGroupItem>
+                        <ListItem>List group 1 item 1</ListItem>
+                        <ListItem>List group 1 item 2</ListItem>
+                        <ListItem>List group 1 item 3</ListItem>
+                    </ListUl>
+                </ListContent>
             </List>
         }
         {...props}
