@@ -1,4 +1,4 @@
-import { MultiSelectCustomValue, MultiSelectGroupingModernCustomValue, MultiSelectGroupingVirtualModernCustomValue } from '..';
+import { MultiSelectCustomValue, MultiSelectGroupingCustomValue, MultiSelectGroupingVirtualCustomValue } from '..';
 
 const styles = `
     #test-area {
@@ -31,24 +31,24 @@ export default () =>(
                 <MultiSelectCustomValue focus />
             </div>
 
-            <span>Custom Value and Modern MultiSelect Grouping</span>
-            <span>Custom Value and Modern MultiSelect Grouping RTL</span>
+            <span>Custom Value and MultiSelect Grouping</span>
+            <span>Custom Value and MultiSelect Grouping RTL</span>
 
             <div>
-                <MultiSelectGroupingModernCustomValue focus />
+                <MultiSelectGroupingCustomValue focus />
             </div>
             <div dir="rtl">
-                <MultiSelectGroupingModernCustomValue focus />
+                <MultiSelectGroupingCustomValue focus />
             </div>
 
-            <span>Custom Value + Virtualization + Modern MultiSelect Grouping</span>
-            <span>Custom Value + Virtualization + Modern MultiSelect Grouping RTL</span>
+            <span>Custom Value + Virtualization + MultiSelect Grouping</span>
+            <span>Custom Value + Virtualization + MultiSelect Grouping RTL</span>
 
             <div>
-                <MultiSelectGroupingVirtualModernCustomValue focus />
+                <MultiSelectGroupingVirtualCustomValue focus />
             </div>
             <div dir="rtl">
-                <MultiSelectGroupingVirtualModernCustomValue focus />
+                <MultiSelectGroupingVirtualCustomValue focus />
             </div>
         </div>
     </>

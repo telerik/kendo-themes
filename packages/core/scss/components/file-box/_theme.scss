@@ -1,0 +1,22 @@
+@use "./_variables.scss" as *;
+@use "../../mixins/index.scss" as *;
+
+@use "../../spacing/index.scss" as *;
+@use "../../color-system/_functions.scss" as *;
+@use "../../_variables.scss" as *;
+
+@mixin kendo-file-box--theme-base() {
+   .k-file-box {
+        background-color: $kendo-file-box-bg;
+        color: $kendo-file-box-text;
+        border-color: $kendo-file-box-border;
+    }
+
+    .k-file-box-wrapper-scrollable-start::after {
+        background: linear-gradient(90deg, $kendo-file-box-wrapper-scroll-gradient);
+    }
+
+    .k-file-box-wrapper-scrollable-end::before {
+        background: linear-gradient(270deg, $kendo-file-box-wrapper-scroll-gradient);
+    }
+}

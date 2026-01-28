@@ -29,15 +29,12 @@ const states = [
 ];
 
 const options = {
-    size: [Size.small, Size.medium, Size.large],
-    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
-    fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
+    size: [Size.undefined, Size.small, Size.medium, Size.large],
+    rounded: [Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    fillMode: [FillMode.undefined, FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
 const defaultOptions = {
-    size: Input.defaultOptions.size,
-    rounded: Input.defaultOptions.rounded,
-    fillMode: Input.defaultOptions.fillMode
 };
 
 export type KendoDatePickerOptions = {
@@ -67,9 +64,9 @@ export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerSt
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
+        size,
+        rounded,
+        fillMode,
         prefix,
         suffix,
         value,

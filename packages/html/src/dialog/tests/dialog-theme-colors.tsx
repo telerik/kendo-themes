@@ -16,10 +16,10 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
-            {[ 'default', ...Dialog.options.themeColor ].map((themeColor) => (
+            {Dialog.options.themeColor.map((themeColor) => (
                 <section>
                     <DialogNormal themeColor={themeColor} actionButtonsAlign="end" >
-                        Dialog with {themeColor} theme color
+                        Dialog with <b>{`${themeColor}`}</b> theme color
                     </DialogNormal>
                 </section>
             ))}

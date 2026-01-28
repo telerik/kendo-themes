@@ -3,6 +3,165 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.1...v13.0.0-dev.2) (2026-01-27)
+
+
+### Bug Fixes
+
+* **fluent:** do not use global built-in index function ([9bbd1de](https://github.com/telerik/kendo-themes/commit/9bbd1dee3c6a44678089bacb82ba0215c7d2530a))
+* **html:** remove reduntant component option classes ([e469603](https://github.com/telerik/kendo-themes/commit/e469603d860545412fc2f352d16149ba23f46dc2))
+
+
+### Features
+
+* **chat:** enhance styles with new and improved features ([873580d](https://github.com/telerik/kendo-themes/commit/873580d18bb30b47c285d1f9926834d6f1250507))
+* **file-box:** add styles ([bf5d9c2](https://github.com/telerik/kendo-themes/commit/bf5d9c2dbc4aa430a5513cf55175ee7eae2d2b57))
+* **html:** add prompt-box component ([814a401](https://github.com/telerik/kendo-themes/commit/814a40172948656b29d39fe6abf1ec53dc0a43aa))
+* **html:** add segmented control rendering and tests ([da0d1e1](https://github.com/telerik/kendo-themes/commit/da0d1e17104e0b34d34479ded52531d7d324cab0))
+* **html:** add smart-box component rendering and tests ([baf91f5](https://github.com/telerik/kendo-themes/commit/baf91f5d514355c6f50224ab01625acffc53cf1d))
+* **html:** add support for overflow menu to tabstrip specs and templates ([03d8a01](https://github.com/telerik/kendo-themes/commit/03d8a018166a12c8508975d64711c21f3be42502))
+* **html:** enhance chat rendering with new and improved features ([252041e](https://github.com/telerik/kendo-themes/commit/252041ef2879517f35926ba2171627656205550d))
+* **html:** enhance treeview rendering ([e164789](https://github.com/telerik/kendo-themes/commit/e164789bcd5076f966e78d4107b1668ca0c0cfbb))
+* **html:** extract file-box component ([f8507e4](https://github.com/telerik/kendo-themes/commit/f8507e436af569568a63854b05ba1a08ec680d20))
+* **list:** enhance rendering with modern grouping, icons and actions ([d458dde](https://github.com/telerik/kendo-themes/commit/d458dde6205c4bbbf5c6f23a4f2c9ab8f0c10f07))
+* **list:** enhance styles ([c1d7740](https://github.com/telerik/kendo-themes/commit/c1d77403f023969cac59060bbb4f0ad6b60f6a0d))
+* **motion:** add stretchy easing ([2c45c46](https://github.com/telerik/kendo-themes/commit/2c45c46504846817e390bc2c2e1c160b90510fa7))
+* **prompt-box:** add styles ([eb646a9](https://github.com/telerik/kendo-themes/commit/eb646a91a41a26cddd142986cebced468548a028))
+* **segmented-contro:** add styles ([c751a50](https://github.com/telerik/kendo-themes/commit/c751a50010aedee661519855488d77397de6bd60))
+* **smart-box:** add styles ([3370960](https://github.com/telerik/kendo-themes/commit/337096071696dc38000f712688c7ef86c17a86b3))
+* **tabstrip:** add overflow menu styles ([34893ae](https://github.com/telerik/kendo-themes/commit/34893ae094663fca07c7ca4b7fa1b55609468c28))
+* **treeview:** enhance styles ([46e15d4](https://github.com/telerik/kendo-themes/commit/46e15d40d6c811d21819e9fe03ac1e0a9ef7fb9a))
+
+
+
+
+
+# [13.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.0...v13.0.0-dev.1) (2026-01-26)
+
+
+### Bug Fixes
+
+* **columnmenu:** add angular-specific icon wrapper spacing in column menu ([626e890](https://github.com/telerik/kendo-themes/commit/626e890d1dac4d9ecc6d9608ec77a80e057e2779))
+
+
+### Features
+
+* **grid:** add pinned row/group row styles ([c173d4e](https://github.com/telerik/kendo-themes/commit/c173d4ebfbefa60a82cac35406268249f5b764a6))
+* **grid:** add sticky group header and footer styles ([df4908f](https://github.com/telerik/kendo-themes/commit/df4908fcdc24fbeb59138768764b1b95dad84a0f))
+* **html:** add grid sticky container spec ([254e6af](https://github.com/telerik/kendo-themes/commit/254e6af2eefdfe7c29e87eb3c29ca827a60aa61f))
+
+
+
+
+
+# [13.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.10...v13.0.0-dev.0) (2026-01-23)
+
+
+### Bug Fixes
+
+* **html:** remove listbox redundant size class ([0ae6956](https://github.com/telerik/kendo-themes/commit/0ae6956a0ae55cca1f801239801f4936369bb5d4))
+* **html:** remove loader container utility text classes ([8fae06a](https://github.com/telerik/kendo-themes/commit/8fae06a9e90838b0795f1c4a1a03cf0be1374e03))
+* **html:** remove redundant signature classes ([06c004a](https://github.com/telerik/kendo-themes/commit/06c004a59f3bf91037dcad8c54b51becf099c0e2))
+
+
+### Features
+
+* add default component options ([00995e4](https://github.com/telerik/kendo-themes/commit/00995e42346853736516f771971e4d1cd4e95f14))
+* **html:** update spec and tests with new default options rendering ([6987a83](https://github.com/telerik/kendo-themes/commit/6987a83f58fc1dc01adf409c2ca7cf275c592056))
+
+
+### BREAKING CHANGES
+
+* Starting with the R1 2026 release, the component
+option classes (size, roundness, fill mode, theme color) are no longer
+rendered in the HTML when they match the default values. The default
+options are now controlled through SCSS variables (e.g.,
+$kendo-button-default-size, $kendo-button-default-roundness) and the
+respective styles are applied directly to the main component class. This
+allows different themes to define their own defaults and enables
+easier customization.
+Additionally, the theme color classes are now separate from the fill mode
+classes (e.g., k-button-solid k-button-primary instead of
+k-button-solid-primary).
+To learn more about these changes, please refer to the dedicated
+* article in the Progress Design System documentation.
+
+
+
+
+
+## [12.3.1-dev.10](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.9...v12.3.1-dev.10) (2026-01-19)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+## [12.3.1-dev.9](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.8...v12.3.1-dev.9) (2026-01-12)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+## [12.3.1-dev.8](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.7...v12.3.1-dev.8) (2026-01-05)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+## [12.3.1-dev.7](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.6...v12.3.1-dev.7) (2025-12-29)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+## [12.3.1-dev.6](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.5...v12.3.1-dev.6) (2025-12-22)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+## [12.3.1-dev.5](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.4...v12.3.1-dev.5) (2025-12-19)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+## [12.3.1-dev.4](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.3...v12.3.1-dev.4) (2025-12-19)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+## [12.3.1-dev.3](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.2...v12.3.1-dev.3) (2025-12-19)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+## [12.3.1-dev.2](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.1...v12.3.1-dev.2) (2025-12-19)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
 ## [12.3.1-dev.1](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.0...v12.3.1-dev.1) (2025-12-17)
 
 **Note:** Version bump only for package kendo-themes.repo

@@ -12,19 +12,4 @@
             outline-color: k-color(on-base);
         }
     }
-
-    // Titlebar
-    .k-window-titlebar {
-        color: inherit;
-    }
-
-    .k-window-title {
-        color: $kendo-window-titlebar-text,
-    }
-
-    @each $name, $color in $kendo-window-theme-colors {
-        .k-window-#{$name} .k-window-title {
-            color: k-color(on-#{$name});
-        }
-    }
 }

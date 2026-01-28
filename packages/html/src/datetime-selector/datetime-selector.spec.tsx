@@ -12,7 +12,7 @@ const DATETIMESELECTOR_CLASSNAME = `k-datetime-wrap`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ]
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ]
 };
 
 export type KendoDateTimeSelectorOptions = {
@@ -28,7 +28,6 @@ export type KendoDateTimeSelectorProps = KendoDateTimeSelectorOptions & {
 
 const defaultOptions = {
     tab: 'date',
-    size: Size.medium,
     actionButtons: true
 } as const;
 
@@ -37,7 +36,7 @@ export const DateTimeSelector: KendoComponent<KendoDateTimeSelectorProps & React
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         tab = defaultOptions.tab,
         actionButtons = defaultOptions.actionButtons,
         dir,

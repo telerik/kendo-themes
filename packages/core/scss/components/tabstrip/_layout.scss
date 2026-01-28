@@ -1,10 +1,13 @@
 @use "sass:map";
 @use "../../color-system/_constants.scss" as *;
 @use "../../mixins/index.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "./_variables.scss" as *;
 @use "../../z-index/index.scss" as *;
 @use "../../motion/index.scss" as *;
+@use "../../spacing/index.scss" as *;
+@use "../../typography/index.scss" as *;
 
 @mixin kendo-tabstrip--layout-base() {
 
@@ -37,7 +40,33 @@
         position: relative;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        // TabStrip sizes
+        @each $size, $size-props in $kendo-tabstrip-sizes {
+            $_font-size: map.get( $size-props, font-size );
+            $_line-height: map.get( $size-props, line-height );
+            $_item-padding-x: map.get( $size-props, item-padding-x );
+            $_item-padding-y: map.get( $size-props, item-padding-y );
+
+            #{k-when-default($kendo-tabstrip-default-size, $size)}
+            &.k-tabstrip-#{$size} {
+                .k-tabstrip-items .k-link {
+                    font-size: $_font-size;
+                    line-height: $_line-height;
+                    padding-block: $_item-padding-y;
+                    padding-inline: $_item-padding-x;
+                }
+
+                :is(&.k-tabstrip-left, &.k-tabstrip-right):is(.k-tabstrip-scrollable-overlay) :is(.k-tabstrip-items-wrapper){
+                    &::before,
+                    &::after {
+                        height: calc( ($_line-height * 1em) + ($kendo-tabstrip-border-width * 2) + ($_item-padding-y * 2) );
+                    }
+                }
+            }
+        }
     }
+
     .k-tabstrip-wrapper > .k-tabstrip {
         flex: 1 1 auto;
     }
@@ -272,6 +301,34 @@
     }
 
 
+    // Overflow
+    .k-tabstrip-overflow {
+        > .k-tabstrip-items-wrapper {
+            > .k-tabstrip-items {
+                flex-wrap: nowrap;
+                white-space: nowrap;
+            }
+        }
+
+        .k-tabstrip-overflow-button {
+            flex-shrink: 0;
+        }
+    }
+
+
+    // Actions container
+    .k-tabstrip-actions {
+        flex-shrink: 0;
+        gap: k-spacing(0.5);
+        align-items: center;
+
+        > .k-separator-vertical {
+            height: $kendo-line-height-em;
+            align-self: center;
+        }
+    }
+
+
     // Tabstrip orientation
     .k-tabstrip-horizontal {
         flex-direction: row;
@@ -497,28 +554,5 @@
 
     }
 
-     // TabStrip sizes
-     @each $size, $size-props in $kendo-tabstrip-sizes {
-        $_font-size: map.get( $size-props, font-size );
-        $_line-height: map.get( $size-props, line-height );
-        $_item-padding-x: map.get( $size-props, item-padding-x );
-        $_item-padding-y: map.get( $size-props, item-padding-y );
-
-        .k-tabstrip-#{$size} {
-            .k-tabstrip-items .k-link {
-                font-size: $_font-size;
-                line-height: $_line-height;
-                padding-block: $_item-padding-y;
-                padding-inline: $_item-padding-x;
-            }
-
-            :is(&.k-tabstrip-left, &.k-tabstrip-right):is(.k-tabstrip-scrollable-overlay) :is(.k-tabstrip-items-wrapper){
-                &::before,
-                &::after {
-                    height: calc( ($_line-height * 1em) + ($kendo-tabstrip-border-width * 2) + ($_item-padding-y * 2) );
-                }
-            }
-        }
-    }
 
 }

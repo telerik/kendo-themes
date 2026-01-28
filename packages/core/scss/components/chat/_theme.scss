@@ -62,6 +62,29 @@
         }
     }
 
+    .k-message-failed .k-chat-bubble {
+        @include fill(
+            $kendo-chat-failed-bubble-text,
+            $kendo-chat-failed-bubble-bg,
+            $kendo-chat-failed-bubble-border
+        );
+
+        &:hover,
+        &.k-hover {
+            background-color: $kendo-chat-failed-bubble-hover-bg;
+            border-color: $kendo-chat-failed-bubble-border;
+        }
+
+        &.k-selected {
+            background-color: $kendo-chat-failed-bubble-selected-bg;
+            border-color: $kendo-chat-failed-bubble-border;
+        }
+    }
+
+    .k-message-failed-content {
+        color: $kendo-chat-failed-content-color;
+    }
+
     // Typing indicator
     .k-typing-indicator {
         @include fill(
@@ -70,25 +93,10 @@
     }
 
     // Chat attachment
-    .k-chat-file {
-        background-color: $kendo-chat-file-bg;
-        color: $kendo-chat-file-text;
-        border-color: $kendo-chat-file-border;
-    }
-
-    .k-message-group-sender .k-chat-file {
+    .k-message-group-sender .k-file-box {
         background-color: $kendo-chat-sender-file-bg;
         color: $kendo-chat-sender-file-text;
         border-color: $kendo-chat-sender-file-border;
-    }
-
-    // Attachment within Textarea prefix
-    .k-message-box-wrapper .k-chat-file {
-        @include fill(
-            $kendo-chat-file-text,
-            $kendo-chat-file-bg,
-            $kendo-chat-file-border
-        );
     }
 
     // Message reference
@@ -97,6 +105,7 @@
             $kendo-chat-message-reference-text,
             $kendo-chat-message-reference-bg
         );
+        backdrop-filter: blur(2px);
     }
 
     .k-message-reference-sender {

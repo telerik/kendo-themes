@@ -1,19 +1,25 @@
 import { SuggestionGroupNormal, SuggestionGroupWrap, SuggestionScrollableButtons, Suggestion } from '..';
 
-const style = ``;
+const style = `
+    #test-area {
+        grid-template-columns: 60px repeat(3, minmax(0, 1fr))
+    }
+`;
 
 export default () => (
     <>
         <style>{style}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-3">
+        <div id="test-area" className="k-d-grid k-grid-cols-4">
+            <span></span>
             <span>Suggestion - horizontal scroll (Default)</span>
             <span>Suggestion - horizontal scroll with buttons</span>
             <span>Suggestions - wrap</span>
 
             {[...Suggestion.options.themeColor].map((themeColor) => (
                 <>
+                    <section>{`${themeColor}`}</section>
                     <section>
-                        <SuggestionGroupNormal>
+                        <SuggestionGroupNormal scrollingPosition = "start">
                             <Suggestion themeColor={themeColor} text="Suggestion" />
                             <Suggestion themeColor={themeColor} text="Hover" hover />
                             <Suggestion themeColor={themeColor} text="Focus" focus />
@@ -22,7 +28,7 @@ export default () => (
                         </SuggestionGroupNormal>
                     </section>
                     <section>
-                        <SuggestionScrollableButtons>
+                        <SuggestionScrollableButtons scrollingPosition = "start">
                             <Suggestion themeColor={themeColor} text="Suggestion" />
                             <Suggestion themeColor={themeColor} text="Hover" hover />
                             <Suggestion themeColor={themeColor} text="Focus" focus />

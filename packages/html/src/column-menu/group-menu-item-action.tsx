@@ -12,16 +12,12 @@ const states = [
 export type KendoGroupMenuItemActionStates = { [K in (typeof states)[number]]?: boolean };
 
 const options = {
-    size: [Size.small, Size.medium, Size.large]
+    size: [Size.undefined, Size.small, Size.medium, Size.large]
 };
 
 export type KendoGroupMenuItemActionOptions = {
     size?: (typeof options.size)[number];
 }
-
-const defaultOptions = {
-    size: Size.medium as KendoGroupMenuItemActionOptions['size']
-};
 
 export enum groupMenuItemActionType {
     REMOVE = 'remove',
@@ -43,7 +39,7 @@ export const GroupMenuItemAction = (
         hover,
         disabled,
         selected,
-        size = defaultOptions.size,
+        size,
         type,
         ...other
     } = props;
@@ -94,6 +90,5 @@ export const GroupMenuItemAction = (
 GroupMenuItemAction.options = states;
 GroupMenuItemAction.options = options;
 GroupMenuItemAction.className = GROUPMENUITEM_ACTION_CLASSNAME;
-GroupMenuItemAction.defaultOptions = defaultOptions;
 
 export default GroupMenuItemAction;

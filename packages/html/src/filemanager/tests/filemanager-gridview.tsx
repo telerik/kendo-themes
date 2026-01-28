@@ -16,7 +16,7 @@ export default () =>(
                 <Splitter className="k-filemanager-splitter">
                     <SplitterPane className="k-filemanager-navigation" resizable={false} scrollable flexBasis="20%">
                         <FileManagerTreeview>
-                            <TreeviewItem top bottom text="Folder" />
+                            <TreeviewItem text="Folder" />
                         </FileManagerTreeview>
                     </SplitterPane>
 

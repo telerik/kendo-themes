@@ -29,9 +29,8 @@ export type KendoTreeviewItemProps = {
     icon?: string;
     showCheckbox?: boolean;
     checked?: boolean;
-    top?: boolean;
-    bottom?: boolean;
     dir?: 'ltr' | 'rtl';
+    level?: number;
 };
 
 export type KendoTreeviewItemState = { [K in (typeof states)[number]]?: boolean };
@@ -55,9 +54,8 @@ export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeview
         focus,
         selected,
         disabled,
-        top,
-        bottom,
         dir,
+        level = 1,
         ...other
     } = props;
 
@@ -70,7 +68,7 @@ export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeview
             children.map((child, index) => {
                 if ( child.type === TreeviewGroup) {
                     listChildren.push(
-                        <TreeviewGroup {...child.props} dir={dir} key={index}>
+                        <TreeviewGroup {...child.props} dir={dir} level={level + 1} key={index}>
                             {child.props.children}
                         </TreeviewGroup>
                     );
@@ -79,7 +77,7 @@ export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeview
         } else {
             if ( children.type === TreeviewGroup) {
                 listChildren.push(
-                    <TreeviewGroup {...children.props} dir={dir}>
+                    <TreeviewGroup {...children.props} dir={dir} level={level + 1}>
                         {children.props.children}
                     </TreeviewGroup>
                 );
@@ -94,37 +92,36 @@ export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeview
                 props.className,
                 TREEVIEWITEM_CLASSNAME
             )}
+            style={{ '--kendo-treeview-level': level } as React.CSSProperties}
         >
-            <span className={classNames(
-                {
-                    ["k-treeview-top"]: top,
-                    ["k-treeview-bot"]: bottom,
-                    ["k-treeview-mid"]: !top && !bottom,
-                }
-            )}>
+            <span
+                className={classNames(
+                    "k-treeview-item-content",
+                    stateClassNames("k-treeview-item-content", {
+                        hover,
+                        focus,
+                        selected,
+                        disabled
+                    })
+                )}
+            >
                 {_hasChildren && (
                     <span
                         className={classNames(
                             "k-treeview-toggle",
                             stateClassNames("k-treeview-toggle", { disabled })
                         )}>
-                        <Icon icon={expanded ? 'caret-alt-down' : dir === 'rtl' ? 'caret-alt-left' : 'caret-alt-right'} />
+                        <Icon icon={expanded ? 'chevron-down' : dir === 'rtl' ? 'chevron-left' : 'chevron-right'} />
                     </span>
                 )}
                 {showCheckbox && (
                     <Checkbox checked={checked} disabled={disabled} />
                 )}
                 <TreeviewLeaf
-                    className={classNames(
-                        leafClassName,
-                        stateClassNames(leafClassName, { disabled })
-                    )}
+                    className={leafClassName}
                     text={text}
                     showIcon={showIcon}
                     icon={icon}
-                    hover={hover}
-                    focus={focus}
-                    selected={selected}
                 />
             </span>
             {expanded && _hasChildren && (

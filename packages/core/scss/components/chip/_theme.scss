@@ -7,125 +7,137 @@
 
 @mixin kendo-chip--theme-base() {
 
-    // Solid
-    @each $name, $color in $kendo-chip-theme-colors {
-        .k-chip-solid-#{$name} {
+    .k-chip {
+        // Fillmode: solid
+        #{k-when-default($kendo-chip-default-fill-mode, "solid")}
+        &.k-chip-solid {
+            // Theme colors
+            @each $name in $kendo-chip-theme-colors {
+                #{k-when-default($kendo-chip-default-theme-color, $name)}
+                &.k-chip-#{$name} {
 
-            @if ($name == "base") {
-                @include fill(
-                    $kendo-chip-solid-text,
-                    $kendo-chip-solid-bg,
-                    $kendo-chip-solid-border,
-                    $kendo-chip-solid-gradient
-                );
+                    @if ($name == "base") {
+                        @include fill(
+                            $kendo-chip-solid-text,
+                            $kendo-chip-solid-bg,
+                            $kendo-chip-solid-border,
+                            $kendo-chip-solid-gradient
+                        );
 
-                &:focus,
-                &.k-focus {
-                    @include fill( $bg: $kendo-chip-solid-focus-bg );
-                    @include focus-indicator( $kendo-chip-solid-shadow );
+                        &:focus,
+                        &.k-focus {
+                            @include fill( $bg: $kendo-chip-solid-focus-bg );
+                            @include focus-indicator( $kendo-chip-solid-shadow );
+                        }
+
+                        &:hover,
+                        &.k-hover {
+                            @include fill( $bg: $kendo-chip-solid-hover-bg );
+                        }
+
+                        &.k-selected {
+                            @include fill( $bg: $kendo-chip-solid-selected-bg );
+                        }
+                    } @else {
+                        @include fill(
+                            k-color(#{$name}-on-subtle),
+                            k-color(#{$name}-subtle),
+                            k-color(#{$name}-emphasis),
+                            $kendo-chip-solid-gradient
+                        );
+
+                        &:focus,
+                        &.k-focus {
+                            @include focus-indicator( 0 0 0 2px color-mix(in srgb, k-color(#{$name}-on-surface) 16%, transparent));
+                        }
+
+                        &:hover,
+                        &.k-hover {
+                            @include fill( $bg: k-color(#{$name}-subtle-hover));
+                        }
+
+                        &.k-selected {
+                            @include fill( $bg: k-color(#{$name}-subtle-active));
+                        }
+                    }
+
+                    // Disabled state
+                    &:disabled,
+                    &.k-disabled {
+                        @include fill(
+                            $kendo-chip-disabled-text,
+                            $kendo-chip-disabled-bg,
+                            $kendo-chip-disabled-border,
+                        );
+                    }
                 }
-
-                &:hover,
-                &.k-hover {
-                    @include fill( $bg: $kendo-chip-solid-hover-bg );
-                }
-
-                &.k-selected {
-                    @include fill( $bg: $kendo-chip-solid-selected-bg );
-                }
-            } @else {
-                @include fill(
-                    k-color(#{$name}-on-subtle),
-                    k-color(#{$name}-subtle),
-                    k-color(#{$name}-emphasis),
-                    $kendo-chip-solid-gradient
-                );
-
-                &:focus,
-                &.k-focus {
-                    @include focus-indicator( 0 0 0 2px color-mix(in srgb, k-color(#{$name}-on-surface) 16%, transparent));
-                }
-
-                &:hover,
-                &.k-hover {
-                    @include fill( $bg: k-color(#{$name}-subtle-hover));
-                }
-
-                &.k-selected {
-                    @include fill( $bg: k-color(#{$name}-subtle-active));
-                }
-            }
-
-            // Disabled state
-            &:disabled,
-            &.k-disabled {
-                @include fill(
-                    $kendo-chip-disabled-text,
-                    $kendo-chip-disabled-bg,
-                    $kendo-chip-disabled-border,
-                );
             }
         }
-    }
 
 
-    // Outline
-    @each $name, $color in $kendo-chip-theme-colors {
-        .k-chip-outline-#{$name} {
-            @if ($name == "base") {
-                @include fill(
-                    $kendo-chip-outline-text,
-                    transparent,
-                    $kendo-chip-outline-border
-                );
+        // Fillmode: outline
+        #{k-when-default($kendo-chip-default-fill-mode, "outline")}
+        &.k-chip-outline {
+            // Theme colors
+            @each $name in $kendo-chip-theme-colors {
+                #{k-when-default($kendo-chip-default-theme-color, $name)}
+                &.k-chip-#{$name} {
+                    @if ($name == "base") {
+                        @include fill(
+                            $kendo-chip-outline-text,
+                            transparent,
+                            $kendo-chip-outline-border
+                        );
 
-                &:focus,
-                &.k-focus {
-                    @include focus-indicator( $kendo-chip-outline-shadow );
+                        &:focus,
+                        &.k-focus {
+                            @include focus-indicator( $kendo-chip-outline-shadow );
+                        }
+
+                        &:hover,
+                        &.k-hover {
+                            @include fill(
+                                $color: $kendo-chip-outline-hover-text,
+                                $bg: $kendo-chip-outline-hover-bg
+                            );
+                        }
+
+                        &.k-selected {
+                            @include fill(
+                                $color: $kendo-chip-outline-selected-text,
+                                $bg: $kendo-chip-outline-selected-bg
+                            );
+                        }
+                    } @else {
+                        @include fill(
+                            k-color(#{$name}-on-surface),
+                            transparent,
+                            k-color(#{$name}-on-surface)
+                        );
+
+                        &:focus,
+                        &.k-focus {
+                            @include focus-indicator( 0 0 0 2px color-mix(in srgb, k-color(#{$name}-on-surface) 16%, transparent));
+                        }
+
+                        &:hover,
+                        &.k-hover,
+                        &.k-selected {
+                            @include fill(
+                                k-color(on-#{$name}),
+                                k-color(#{$name}-on-surface),
+                                k-color(#{$name}-on-surface)
+                            );
+                        }
+                    }
+
+                    // Disabled state
+                    &:disabled,
+                    &.k-disabled {
+                        color: $kendo-chip-disabled-text;
+                        border-color: $kendo-chip-disabled-text;
+                    }
                 }
-
-                &:hover,
-                &.k-hover {
-                    @include fill(
-                        $color: $kendo-chip-outline-hover-text,
-                        $bg: $kendo-chip-outline-hover-bg
-                    );
-                }
-
-                &.k-selected {
-                    @include fill(
-                        $color: $kendo-chip-outline-selected-text,
-                        $bg: $kendo-chip-outline-selected-bg
-                    );
-                }
-            } @else {
-                @include fill(
-                    k-color(#{$name}-on-surface),
-                    transparent,
-                    k-color(#{$name}-on-surface)
-                );
-
-                &:focus,
-                &.k-focus {
-                    @include focus-indicator( 0 0 0 2px color-mix(in srgb, k-color(#{$name}-on-surface) 16%, transparent));
-                }
-
-                &:hover,
-                &.k-hover,
-                &.k-selected {
-                    @include fill(
-                        k-color(on-#{$name}),
-                        k-color(#{$name}-on-surface),
-                        k-color(#{$name}-on-surface)
-                    );
-                }
-            }
-
-            // Disabled state
-            &:disabled,
-            &.k-disabled {
-                color: $kendo-chip-disabled-text;
-                border-color: $kendo-chip-disabled-text;
             }
         }
     }

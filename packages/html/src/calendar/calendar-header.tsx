@@ -4,7 +4,7 @@ import { classNames, Size } from '../misc';
 const CALENDARHEADER_CLASSNAME = `k-calendar-header`;
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
 };
 
 export type KendoCalendarHeaderProps = {
@@ -21,8 +21,7 @@ const defaultOptions = {
     calendarTitleText: 'October 2021',
     showToday: true,
     showNavigationButtons: true,
-    orientation: 'horizontal',
-    size: Size.medium
+    orientation: 'horizontal'
 };
 
 export const CalendarHeader = (
@@ -34,7 +33,7 @@ export const CalendarHeader = (
         showToday = defaultOptions.showToday,
         showNavigationButtons = defaultOptions.showNavigationButtons,
         orientation = defaultOptions.orientation,
-        size = defaultOptions.size,
+        size,
         calendarView,
         dir,
         ...other

@@ -12,296 +12,530 @@
 <body id="app" class="k-body">
     <style>
         #test-area {
-            max-width: 880px;
-            grid-template-columns: 120px repeat(2, 1fr);
+            max-width: 800px;
+            grid-template-columns: 80px repeat(2, 1fr);
         }
 
     </style>
     <div id="test-area" class="k-d-grid">
-        <span>OTP</span>
-        <span>Space</span>
-        <span>No Space</span>
-        <span>Normal</span>
+        <span></span>
+        <span>TextBox</span>
+        <span>TextBox RTL</span>
+        <span>normal</span>
         <div>
-            <div role="group" class="k-otp k-otp-md">
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="A">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="3">
-                </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="C">
-                </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="K">
-                </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="6">
-                </span>
-            </div>
-        </div>
-        <div>
-            <div role="group" class="k-otp k-otp-md">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="A">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="3">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="C">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="K">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="6">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <span>Password</span>
-        <div>
-            <div role="group" class="k-otp k-otp-md">
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="password" value="1">
-                </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="password" value="2">
-                </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="password" value="3">
-                </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="password" value="4">
-                </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="password" value="5">
-                </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="password" value="6">
-                </span>
-            </div>
-        </div>
-        <div>
-            <div role="group" class="k-otp k-otp-md">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="password" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="password" value="2">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="password" value="3">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="password" value="4">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="password" value="5">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="password" value="6">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <span>Groups</span>
-        <div>
-            <div role="group" class="k-otp k-otp-md">
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </span>
                 <div class="k-otp-separator">-</div>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </span>
                 <div class="k-otp-separator">-</div>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </span>
             </div>
         </div>
+        <span>placeholder</span>
         <div>
-            <div role="group" class="k-otp k-otp-md">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                </div>
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                </span>
                 <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                </div>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                </span>
                 <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <span>Groups, No Separator</span>
-        <div>
-            <div role="group" class="k-otp k-otp-md">
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
                 </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
                 </span>
-                <div class="k-otp-separator"></div>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                </span>
-                <div class="k-otp-separator"></div>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
                 </span>
             </div>
         </div>
+        <span>normal</span>
         <div>
-            <div role="group" class="k-otp k-otp-md">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                </div>
-                <div class="k-otp-separator"></div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                </div>
-                <div class="k-otp-separator"></div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <span>Groups, Template Separator</span>
-        <div>
-            <div role="group" class="k-otp k-otp-md">
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
                 </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
                 </span>
-                <div class="k-otp-separator">
-                    <span class="k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
-                        </svg>
-                    </span>
-                </div>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
                 </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
                 </span>
-                <div class="k-otp-separator">
-                    <span class="k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
-                        </svg>
-                    </span>
-                </div>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
                 </span>
-                <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                    <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
                 </span>
             </div>
         </div>
+        <div dir="rtl">
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+            </div>
+        </div>
+        <span>hover</span>
         <div>
-            <div role="group" class="k-otp k-otp-md">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                </div>
-                <div class="k-otp-separator">
-                    <span class="k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
-                        </svg>
-                    </span>
-                </div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                </div>
-                <div class="k-otp-separator">
-                    <span class="k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
-                        </svg>
-                    </span>
-                </div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input class="k-otp-input k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                </div>
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input k-hover">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input k-hover">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+            </div>
+        </div>
+        <span>focus</span>
+        <div>
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input k-focus">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input k-focus">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+            </div>
+        </div>
+        <span>valid</span>
+        <div>
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input k-valid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-valid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-valid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-valid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-valid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-valid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input k-valid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-valid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-valid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-valid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-valid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-valid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+            </div>
+        </div>
+        <span>invalid</span>
+        <div>
+            <div class="k-otp k-invalid">
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp k-invalid">
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+            </div>
+        </div>
+        <span>required</span>
+        <div>
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input" required="">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input" required="">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input" required="">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input" required="">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input" required="">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input" required="">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input" required="">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input" required="">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input" required="">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input" required="">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input" required="">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input" required="">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+            </div>
+        </div>
+        <span>disabled</span>
+        <div>
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input k-disabled">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-disabled">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-disabled">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-disabled">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-disabled">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-disabled">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input k-disabled">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-disabled">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-disabled">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-disabled">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-disabled">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-disabled">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+            </div>
+        </div>
+        <span>readonly</span>
+        <div>
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input k-readonly">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-readonly">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-readonly">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-readonly">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-readonly">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-readonly">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp">
+                <span class="k-otp-input k-textbox k-input k-readonly">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-readonly">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-readonly">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-readonly">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-readonly">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-readonly">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+            </div>
+        </div>
+        <span>invalid focus</span>
+        <div>
+            <div class="k-otp k-invalid">
+                <span class="k-otp-input k-textbox k-input k-invalid k-focus">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp k-invalid">
+                <span class="k-otp-input k-textbox k-input k-invalid k-focus">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
+                <span class="k-otp-input k-textbox k-input k-invalid">
+                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                </span>
             </div>
         </div>
     </div>

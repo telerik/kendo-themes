@@ -28,9 +28,9 @@ const states = [
 ];
 
 const options = {
-    size: [Size.small, Size.medium, Size.large],
-    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
-    fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
+    size: [Size.undefined, Size.small, Size.medium, Size.large],
+    rounded: [Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    fillMode: [FillMode.undefined, FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
 export type KendoDropdownListOptions = {
@@ -62,9 +62,6 @@ export type KendoDropdownListState = { [K in (typeof states)[number]]?: boolean 
 const defaultOptions = {
     showValue: true,
     arrowIconName: 'caret-alt-down',
-    size: Size.medium,
-    rounded: Roundness.medium,
-    fillMode: FillMode.solid,
 };
 
 export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdownListState & Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>> = (
@@ -73,10 +70,9 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
         Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>
 ) => {
     const {
-        id = 'k-dropdownlist',
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
+        size,
+        rounded,
+        fillMode,
         arrowIconName = defaultOptions.arrowIconName,
         showValue = defaultOptions.showValue,
         valueIconName,

@@ -39,11 +39,7 @@ export const CardBody = (
                     <Button
                         className="k-card-details"
                         icon="more-vertical"
-                        rounded="medium"
-                        size="medium"
                         fillMode="flat"
-                        themeColor="base"
-                        aria-label="More actions"
                     />
                 </span>
             }

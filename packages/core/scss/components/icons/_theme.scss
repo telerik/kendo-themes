@@ -1,1 +1,7 @@
-@mixin kendo-icon--theme-base() {}
+@use "./_variables.scss" as *;
+
+@mixin kendo-icon--theme-base() {
+    .k-accent-icon {
+        color: $kendo-accent-icon-color;
+    }
+}

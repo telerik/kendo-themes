@@ -1,29 +1,33 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "../colorpalette/_variables.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/coloreditor/_layout.scss" as *;
 
 @mixin kendo-color-editor--layout() {
     @include kendo-color-editor--layout-base();
 
+    .k-coloreditor {
+        @each $size, $size-props in $kendo-color-editor-sizes {
+            $_views-padding-x: map.get( $size-props, views-padding-x );
+            $_views-padding-y: map.get( $size-props, views-padding-y );
+
+            #{k-when-default($kendo-color-editor-default-size, $size)}
+            &.k-coloreditor-#{$size} {
+
+                .k-coloreditor-header,
+                .k-coloreditor-views {
+                    padding-block: $_views-padding-y;
+                    padding-inline: $_views-padding-x;
+                }
+            }
+        }
+    }
+
     .k-coloreditor-footer.k-actions {
         padding-block: $kendo-color-editor-footer-padding-y;
         padding-inline: $kendo-color-editor-footer-padding-y;
-    }
-
-    @each $size, $size-props in $kendo-color-editor-sizes {
-        $_views-padding-x: map.get( $size-props, views-padding-x );
-        $_views-padding-y: map.get( $size-props, views-padding-y );
-
-        .k-coloreditor-#{$size} {
-
-            .k-coloreditor-header,
-            .k-coloreditor-views {
-                padding-block: $_views-padding-y;
-                padding-inline: $_views-padding-x;
-            }
-        }
     }
 
     .k-coloreditor-preview {

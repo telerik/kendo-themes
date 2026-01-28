@@ -6,6 +6,11 @@
 
 // Notification
 
+/// The default theme color of the Notification.
+/// @group notification
+/// @role default
+$kendo-notification-default-theme-color: null !default;
+
 /// The row-gap between the elements in the Notification group.
 /// @group notification
 $kendo-notification-group-gap: k-spacing(2) !default;
@@ -57,23 +62,13 @@ $kendo-notification-icon-spacing: $kendo-icon-spacing !default;
 
 /// The theme colors map for the Notification.
 /// @group notification
-$kendo-notification-theme-colors: (
-    "primary": k-color(primary),
-    "secondary": k-color(secondary),
-    "tertiary": k-color(tertiary),
-    "info": k-color(info),
-    "success": k-color(success),
-    "warning": k-color(warning),
-    "error": k-color(error),
-    "dark": k-color(dark),
-    "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
-) !default;
+$kendo-notification-theme-colors: ("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse") !default;
 /// The generated theme colors map for the Notification.
 /// @group notification
 $kendo-notification-theme: notification-theme( $kendo-notification-theme-colors ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/notification/_variables.scss" with (
+    $kendo-notification-default-theme-color: $kendo-notification-default-theme-color,
     $kendo-notification-group-gap: $kendo-notification-group-gap,
     $kendo-notification-padding-x: $kendo-notification-padding-x,
     $kendo-notification-padding-y: $kendo-notification-padding-y,
@@ -89,6 +84,5 @@ $kendo-notification-theme: notification-theme( $kendo-notification-theme-colors 
     $kendo-notification-border: $kendo-notification-border,
     $kendo-notification-shadow: $kendo-notification-shadow,
     $kendo-notification-icon-spacing: $kendo-notification-icon-spacing,
-    $kendo-notification-theme-colors: $kendo-notification-theme-colors,
     $kendo-notification-theme: $kendo-notification-theme
 );

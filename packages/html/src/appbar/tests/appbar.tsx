@@ -34,7 +34,7 @@ export default () =>(
             <span>Appbar sticky and inherit color</span>
             <section>
                 <div style={{ background: "#1976d2", color: "#fff" }}>
-                    <AppbarNormal positionMode={'sticky'}>
+                    <AppbarNormal themeColor="inherit" positionMode={'sticky'}>
                         <AppbarSection>
                             <Icon icon="menu" />
                         </AppbarSection>
@@ -67,9 +67,9 @@ export default () =>(
                 </div>
             </section>
 
-            {[ ...Appbar.options.themeColor ].map((themeColor) => (
+            {Appbar.options.themeColor.map((themeColor) => (
                 <>
-                    <span>Appbar {themeColor} theme color</span>
+                    <span>Appbar {`${themeColor}`} theme color</span>
                     <section>
                         <AppbarNormal themeColor={themeColor}>
                             <AppbarSection>

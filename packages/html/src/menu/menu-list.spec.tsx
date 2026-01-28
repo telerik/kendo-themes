@@ -8,7 +8,7 @@ export const MENULIST_CLASSNAME = `k-menu-group`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ]
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ]
 };
 
 export type KendoMenuListOptions = {
@@ -18,7 +18,6 @@ export type KendoMenuListOptions = {
 };
 
 const defaultOptions = {
-    size: Size.medium,
     dir: 'ltr'
 };
 
@@ -28,7 +27,7 @@ export const MenuList: KendoComponent<KendoMenuListOptions & React.HTMLAttribute
 ) => {
     const {
         children,
-        size = defaultOptions.size,
+        size,
         dir = defaultOptions.dir,
         ...other
     } = props;

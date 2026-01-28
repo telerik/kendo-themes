@@ -4,10 +4,7 @@ export type KendoListGroupProps = {
     root?: boolean;
     virtualization?: boolean;
     label?: string;
-    role?: string;
-    'aria-label'?: string;
-    'aria-labelledby'?: string;
-    'aria-multiselectable'?: 'true' | 'false';
+    groupIconName?: string;
 };
 
 export const ListGroup = (

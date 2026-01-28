@@ -16,36 +16,36 @@ export default () =>(
             <span>DropdownTree RTL</span>
 
             <div>
-                <DropdownTreeNormal />
+                <DropdownTreeNormal fillMode="solid" />
             </div>
             <div dir="rtl">
-                <DropdownTreeNormal />
+                <DropdownTreeNormal fillMode="solid" />
             </div>
 
             <div>
-                <DropdownTreeNormal placeholder="placeholder..." />
+                <DropdownTreeNormal fillMode="solid" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <DropdownTreeNormal placeholder="placeholder..." />
+                <DropdownTreeNormal fillMode="solid" placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...DropdownTree.states ].map((state) => (
                 <>
                     <div>
-                        <DropdownTreeNormal { ...{ [state]: true }} value={state} />
+                        <DropdownTreeNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <DropdownTreeNormal { ...{ [state]: true }} value={state} />
+                        <DropdownTreeNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <DropdownTreeNormal value="invalid focus" invalid focus />
+                <DropdownTreeNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <DropdownTreeNormal value="invalid focus" invalid focus />
+                <DropdownTreeNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
         </div>
     </>

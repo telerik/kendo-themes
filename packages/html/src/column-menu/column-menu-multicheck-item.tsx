@@ -4,14 +4,10 @@ import { Checkbox } from '../checkbox';
 const className = `k-item`;
 
 const options = {
-    size: [Size.small, Size.medium, Size.large]
+    size: [Size.undefined, Size.small, Size.medium, Size.large]
 };
 
 const states = [];
-
-const defaultOptions = {
-    size: Size.medium
-};
 
 export type KendoColumnMenuMulticheckItemOptions = {
     size?: (typeof options.size)[number] | null;
@@ -48,6 +44,5 @@ export const ColumnMenuMulticheckItem = (
 
 ColumnMenuMulticheckItem.states = states;
 ColumnMenuMulticheckItem.options = options;
-ColumnMenuMulticheckItem.defaultOptions = defaultOptions;
 
 export default ColumnMenuMulticheckItem;

@@ -1,7 +1,9 @@
-import { Button } from '../../button';
+import { Button, IconButton } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Searchbox } from '../../searchbox';
 import { Grid, GridToolbar } from '../../grid';
+import { SmartBox } from '../../smart-box';
+import { Icon } from '../../icon';
 
 
 const styles = `
@@ -145,6 +147,43 @@ export default () =>(
                         <Button icon="plus">Add new record</Button>
                         <Button icon="check">Save changes</Button>
                         <Button icon="cancel">Cancel changes</Button>
+                    </GridToolbar>
+                )}/>
+            </section>
+            <section></section>
+
+            <span>Semantic search</span>
+            <section>
+                <Grid toolbar={(
+                    <GridToolbar>
+                        <SmartBox
+                            separators={false}
+                            prefix={
+                                <>
+                                    <Icon icon="sparkles" className="k-accent-icon" />
+                                </>
+                            }
+                            suffix={
+                                        <>
+                                            <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" />
+                                            <IconButton icon="arrow-up-outline" rounded="full" size="small" />
+                                        </>
+                                    }
+                            placeholder="Sort, filter or group with AI" />
+                        <SmartBox
+                            separators={false}
+                            prefix={
+                                <>
+                                    <Icon icon="zoom-sparkle" className="k-accent-icon" />
+                                </>
+                            } placeholder="Semantic search" />
+                        <SmartBox
+                            separators={false}
+                            prefix={
+                            <>
+                                <Icon icon="search" />
+                            </>
+                        }  placeholder="Search" />
                     </GridToolbar>
                 )}/>
             </section>

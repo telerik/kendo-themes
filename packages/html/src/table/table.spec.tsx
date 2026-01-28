@@ -7,7 +7,7 @@ export const TABLE_CLASSNAME = `k-table`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ]
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ]
 };
 
 const defaultOptions = {};

@@ -30,7 +30,7 @@ export const TimelineCardTitle = (
             {...other}
         >
             <span className="k-event-title">{children}</span>
-            {collapsible && <span className="k-event-collapse k-button k-button-md k-rounded-md k-button-flat k-button-flat-base k-icon-button"><Icon icon="chevron-right" className="k-button-icon"/></span>}
+            {collapsible && <span className="k-event-collapse k-button k-button-flat k-icon-button"><Icon icon="chevron-right" className="k-button-icon"/></span>}
         </div>
     );
 };

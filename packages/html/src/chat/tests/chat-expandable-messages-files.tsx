@@ -1,5 +1,5 @@
-import { ChatNormal, ChatMessage, ChatFileWrapper, ChatFile, ChatMessageGroup, ChatTimestamp } from '..';
-
+import { ChatNormal, ChatMessage, ChatMessageGroup, ChatTimestamp } from '..';
+import { FileBoxWrapper, FileBox } from '../../file-box';
 
 const styles = `
     .k-chat {
@@ -23,10 +23,10 @@ export default () => (
                     <ChatMessageGroup avatar={null} type="sender">
                         <ChatMessage text="Compare the top 3 AI tools for an image-generation (like Midjourney, DALL·E, and Adobe Firefly). List their pricing, main features." expandable expanded
                             files={
-                                <ChatFileWrapper>
-                                    <ChatFile />
-                                    <ChatFile icon="file-csv" name="Another file with even longer name" size="5MB" />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper layout='vertical'>
+                                    <FileBox />
+                                    <FileBox icon="file-csv" name="Another file with even longer name" size="5MB"></FileBox>
+                                </FileBoxWrapper>
                             }
                         />
                     </ChatMessageGroup>
@@ -38,10 +38,10 @@ export default () => (
                     <ChatMessageGroup avatar={null}>
                         <ChatMessage text="Compare the top 3 AI tools for an image-generation (like Midjourney, DALL·E, and Adobe Firefly). List their pricing, main features." expandable expanded
                             files={
-                                <ChatFileWrapper>
-                                    <ChatFile />
-                                    <ChatFile icon="file-csv" name="Another file with even longer name" size="5MB" />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper layout='vertical'>
+                                    <FileBox />
+                                    <FileBox icon="file-csv" name="Another file with even longer name" size="5MB"></FileBox>
+                                </FileBoxWrapper>
                             }
                         />
                     </ChatMessageGroup>
@@ -56,10 +56,10 @@ export default () => (
                     <ChatMessageGroup avatar={null} type="sender">
                         <ChatMessage text="Compare the top 3 AI tools for an image-generation (like Midjourney, DALL·E, and Adobe Firefly). List their pricing, main features." expandable
                             files={
-                                <ChatFileWrapper>
-                                    <ChatFile />
-                                    <ChatFile icon="file-csv" name="Another file with even longer name" size="5MB" />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper layout='vertical'>
+                                    <FileBox />
+                                    <FileBox icon="file-csv" name="Another file with even longer name" size="5MB"></FileBox>
+                                </FileBoxWrapper>
                             }
                         />
                     </ChatMessageGroup>
@@ -71,10 +71,10 @@ export default () => (
                     <ChatMessageGroup avatar={null}>
                         <ChatMessage text="Compare the top 3 AI tools for an image-generation (like Midjourney, DALL·E, and Adobe Firefly). List their pricing, main features." expandable
                             files={
-                                <ChatFileWrapper>
-                                    <ChatFile />
-                                    <ChatFile icon="file-csv" name="Another file with even longer name" size="5MB" />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper layout='vertical'>
+                                    <FileBox />
+                                    <FileBox icon="file-csv" name="Another file with even longer name" size="5MB"></FileBox>
+                                </FileBoxWrapper>
                             }
                         />
                     </ChatMessageGroup>

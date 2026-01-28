@@ -14,9 +14,9 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
+    rounded: [ Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    fillMode: [ FillMode.undefined, FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
 export type KendoSignatureOptions = {
@@ -31,11 +31,7 @@ export type KendoSignatureProps = KendoSignatureOptions & {
 
 export type KendoSignatureState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultOptions = {
-    size: Size.medium,
-    rounded: Roundness.medium,
-    fillMode: FillMode.solid
-};
+const defaultOptions = {};
 
 export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSignatureProps &
@@ -43,9 +39,9 @@ export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
+        size,
+        rounded,
+        fillMode,
         hover,
         focus,
         valid,
@@ -63,12 +59,11 @@ export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState
                 SIGNATURE_CLASSNAME,
                 'k-input',
                 optionClassNames(SIGNATURE_CLASSNAME, {
-                    size,
-                    rounded,
-                    fillMode,
+                    size
                 }),
                 optionClassNames('k-input', {
                     fillMode,
+                    rounded
                 }),
                 stateClassNames(SIGNATURE_CLASSNAME, {
                     hover,

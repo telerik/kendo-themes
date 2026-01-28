@@ -28,6 +28,36 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-treeview-default-size</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-gap</td>
+    <td>String</td>
+    <td><code>var( --kendo-treeview-gap, k-spacing(0.5) )</code></td>
+    <td><code>var(--kendo-treeview-gap, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-treeview-border-radius, k-border-radius(md) )</code></td>
+    <td><code>var(--kendo-treeview-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TreeView.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-treeview-font-family</td>
     <td>String</td>
     <td><code>var( --kendo-treeview-font-family, var( --kendo-font-family, normal ) )</code></td>
@@ -268,42 +298,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-treeview-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: (
-        font-size: $kendo-treeview-sm-font-size,
-        line-height: $kendo-treeview-sm-line-height,
-        item-padding-x: $kendo-treeview-sm-item-padding-x,
-        item-padding-y: $kendo-treeview-sm-item-padding-y,
-        checkbox-padding-x: $kendo-treeview-sm-checkbox-padding-x,
-        checkbox-padding-y: $kendo-treeview-sm-checkbox-padding-y
-    ),
-    md: (
-        font-size: $kendo-treeview-md-font-size,
-        line-height: $kendo-treeview-md-line-height,
-        item-padding-x: $kendo-treeview-md-item-padding-x,
-        item-padding-y: $kendo-treeview-md-item-padding-y,
-        checkbox-padding-x: $kendo-treeview-md-checkbox-padding-x,
-        checkbox-padding-y: $kendo-treeview-md-checkbox-padding-y
-
-    ),
-    lg: (
-        font-size: $kendo-treeview-lg-font-size,
-        line-height: $kendo-treeview-lg-line-height,
-        item-padding-x: $kendo-treeview-lg-item-padding-x,
-        item-padding-y: $kendo-treeview-lg-item-padding-y,
-        checkbox-padding-x: $kendo-treeview-lg-checkbox-padding-x,
-        checkbox-padding-y: $kendo-treeview-lg-checkbox-padding-y
-    )
-)</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-treeview-sm-font-size, var(--kendo-font-size-sm, inherit))","line-height":"var(--kendo-treeview-sm-line-height, var(--kendo-line-height-lg, normal))","item-padding-x":"var(--kendo-treeview-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-treeview-sm-item-padding-y, var(--kendo-spacing-1\\.5, 0.375rem))","checkbox-padding-x":"var(--kendo-spacing-1, 0.25rem)","checkbox-padding-y":"var(--kendo-spacing-1, 0.25rem)"</li><li>md: "font-size":"var(--kendo-treeview-md-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-treeview-md-line-height, var(--kendo-line-height, normal))","item-padding-x":"var(--kendo-treeview-md-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-treeview-md-item-padding-y, var(--kendo-spacing-1\\.5, 0.375rem))","checkbox-padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","checkbox-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)"</li><li>lg: "font-size":"var(--kendo-treeview-lg-font-size, var(--kendo-font-size-lg, inherit))","line-height":"var(--kendo-treeview-lg-line-height, var(--kendo-line-height-sm, normal))","item-padding-x":"var(--kendo-treeview-lg-item-padding-x, var(--kendo-spacing-3\\.5, 0.875rem))","item-padding-y":"var(--kendo-treeview-lg-item-padding-y, var(--kendo-spacing-2, 0.5rem))","checkbox-padding-x":"var(--kendo-spacing-2, 0.5rem)","checkbox-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the TreeView.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-treeview-bg</td>
     <td>String</td>
     <td><code>var( --kendo-treeview-bg, transparent )</code></td>
@@ -406,8 +400,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-selected-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-treeview-item-selected-bg, color-mix(in srgb, k-color(on-app-surface) 12%, transparent) )</code></td>
-    <td><code>var(--kendo-treeview-item-selected-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 12%, transparent))</code></td>
+    <td><code>var( --kendo-treeview-item-selected-bg, color-mix(in srgb, k-color(on-app-surface) 13%, transparent) )</code></td>
+    <td><code>var(--kendo-treeview-item-selected-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 13%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected TreeView items.</div></div>
@@ -431,6 +425,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected TreeView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-selected-hover-bg</td>
+    <td>String</td>
+    <td><code>var( --kendo-treeview-item-selected-hover-bg, k-color(base-emphasis) )</code></td>
+    <td><code>var(--kendo-treeview-item-selected-hover-bg, var(--kendo-color-base-emphasis, #d1d1d1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected and hovered TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -561,6 +565,41 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Load More button in the TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        font-size: $kendo-treeview-sm-font-size,
+        line-height: $kendo-treeview-sm-line-height,
+        item-padding-x: $kendo-treeview-sm-item-padding-x,
+        item-padding-y: $kendo-treeview-sm-item-padding-y,
+        checkbox-padding-x: $kendo-treeview-sm-checkbox-padding-x,
+        checkbox-padding-y: $kendo-treeview-sm-checkbox-padding-y
+    ),
+    md: (
+        font-size: $kendo-treeview-md-font-size,
+        line-height: $kendo-treeview-md-line-height,
+        item-padding-x: $kendo-treeview-md-item-padding-x,
+        item-padding-y: $kendo-treeview-md-item-padding-y,
+        checkbox-padding-x: $kendo-treeview-md-checkbox-padding-x,
+        checkbox-padding-y: $kendo-treeview-md-checkbox-padding-y
+    ),
+    lg: (
+        font-size: $kendo-treeview-lg-font-size,
+        line-height: $kendo-treeview-lg-line-height,
+        item-padding-x: $kendo-treeview-lg-item-padding-x,
+        item-padding-y: $kendo-treeview-lg-item-padding-y,
+        checkbox-padding-x: $kendo-treeview-lg-checkbox-padding-x,
+        checkbox-padding-y: $kendo-treeview-lg-checkbox-padding-y
+    )
+)</code></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-treeview-sm-font-size, var(--kendo-font-size-sm, inherit))","line-height":"var(--kendo-treeview-sm-line-height, var(--kendo-line-height-lg, normal))","item-padding-x":"var(--kendo-treeview-sm-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-treeview-sm-item-padding-y, var(--kendo-spacing-1\\.5, 0.375rem))","checkbox-padding-x":"var(--kendo-spacing-1, 0.25rem)","checkbox-padding-y":"var(--kendo-spacing-1, 0.25rem)"</li><li>md: "font-size":"var(--kendo-treeview-md-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-treeview-md-line-height, var(--kendo-line-height, normal))","item-padding-x":"var(--kendo-treeview-md-item-padding-x, var(--kendo-spacing-2, 0.5rem))","item-padding-y":"var(--kendo-treeview-md-item-padding-y, var(--kendo-spacing-1\\.5, 0.375rem))","checkbox-padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","checkbox-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)"</li><li>lg: "font-size":"var(--kendo-treeview-lg-font-size, var(--kendo-font-size-lg, inherit))","line-height":"var(--kendo-treeview-lg-line-height, var(--kendo-line-height-sm, normal))","item-padding-x":"var(--kendo-treeview-lg-item-padding-x, var(--kendo-spacing-3\\.5, 0.875rem))","item-padding-y":"var(--kendo-treeview-lg-item-padding-y, var(--kendo-spacing-2, 0.5rem))","checkbox-padding-x":"var(--kendo-spacing-2, 0.5rem)","checkbox-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the TreeView.</div></div>
     </td>
 </tr>
 </tbody>

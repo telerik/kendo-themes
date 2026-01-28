@@ -24,7 +24,7 @@ export default () =>(
             <span>Medium</span>
             <span>Large</span>
 
-            { ColorGradient.options.size.map((size) => (
+            { ColorGradient.options.size.filter((size) => size !== undefined).map((size) => (
                 <>
                     <section>
                         <ColorGradientNormal size={size} />

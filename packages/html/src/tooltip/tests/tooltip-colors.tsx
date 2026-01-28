@@ -21,7 +21,7 @@ export default () =>(
             <span>Closeable Tooltip</span>
             <span>Tooltip with callout</span>
 
-            {[ ...Tooltip.options.themeColor ].map((themeColor) => (
+            {Tooltip.options.themeColor.map((themeColor) => (
                 <>
                     <section>
                         <AnimationContainer>

@@ -1,21 +1,19 @@
 import { classNames } from '../misc';
-import { Appbar,  KendoAppbarProps } from '../appbar';
+import { Toolbar, KendoToolbarProps } from '../toolbar';
 
 const className = 'k-chat-header';
 
 export const ChatHeader = (
-    props: KendoAppbarProps &
+    props: KendoToolbarProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => (
-    <Appbar
+    <Toolbar
         {...props}
-        positionMode='sticky'
         className={classNames(
             props.className,
             className,
         )}
-        themeColor="inherit"
     >
         {props.children}
-    </Appbar>
+    </Toolbar>
 );

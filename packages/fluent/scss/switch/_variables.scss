@@ -1,5 +1,20 @@
 @use "../core/_index.scss" as *;
 
+// Switch
+
+/// The default size of the Switch.
+/// @group switch
+/// @role default
+$kendo-switch-default-size: "md" !default;
+/// The default border radius of the Switch track.
+/// @group switch
+/// @role default
+$kendo-switch-default-track-roundness: "full" !default;
+/// The default border radius of the Switch thumb.
+/// @group switch
+/// @role default
+$kendo-switch-default-thumb-roundness: "full" !default;
+
 /// The font family of the Switch.
 /// @group switch
 $kendo-switch-font-family: var( --kendo-switch-font-family, var( --kendo-font-family, normal ) ) !default;
@@ -20,13 +35,71 @@ $kendo-switch-label-text-transform: var( --kendo-switch-label-text-transform, up
 /// @group switch
 $kendo-switch-label-display: var( --kendo-switch-label-display, none ) !default;
 
-/// The map with the different Switch sizes.
+/// The font size of the small Switch.
 /// @group switch
-$kendo-switch-sizes: (
-    sm: ( font-size: 10px, track-width: 36px, track-height: 16px, thumb-width: 10px, thumb-height: 10px, thumb-offset: 3px, label-offset: 4px ),
-    md: ( font-size: 10px, track-width: 40px, track-height: 20px, thumb-width: 14px, thumb-height: 14px, thumb-offset: 4px, label-offset: 5px ),
-    lg: ( font-size: 10px, track-width: 44px, track-height: 24px, thumb-width: 18px, thumb-height: 18px, thumb-offset: 5px, label-offset: 6px )
-) !default;
+$kendo-switch-sm-font-size: 10px !default;
+/// The track width of the small Switch.
+/// @group switch
+$kendo-switch-sm-track-width: 36px !default;
+/// The track height of the small Switch.
+/// @group switch
+$kendo-switch-sm-track-height: 16px !default;
+/// The thumb width of the small Switch.
+/// @group switch
+$kendo-switch-sm-thumb-width: 10px !default;
+/// The thumb height of the small Switch.
+/// @group switch
+$kendo-switch-sm-thumb-height: 10px !default;
+/// The thumb offset of the small Switch.
+/// @group switch
+$kendo-switch-sm-thumb-offset: 3px !default;
+/// The label offset of the small Switch.
+/// @group switch
+$kendo-switch-sm-label-offset: 4px !default;
+
+/// The font size of the medium Switch.
+/// @group switch
+$kendo-switch-md-font-size: 10px !default;
+/// The track width of the medium Switch.
+/// @group switch
+$kendo-switch-md-track-width: 40px !default;
+/// The track height of the medium Switch.
+/// @group switch
+$kendo-switch-md-track-height: 20px !default;
+/// The thumb width of the medium Switch.
+/// @group switch
+$kendo-switch-md-thumb-width: 14px !default;
+/// The thumb height of the medium Switch.
+/// @group switch
+$kendo-switch-md-thumb-height: 14px !default;
+/// The thumb offset of the medium Switch.
+/// @group switch
+$kendo-switch-md-thumb-offset: 4px !default;
+/// The label offset of the medium Switch.
+/// @group switch
+$kendo-switch-md-label-offset: 5px !default;
+
+/// The font size of the large Switch.
+/// @group switch
+$kendo-switch-lg-font-size: 10px !default;
+/// The track width of the large Switch.
+/// @group switch
+$kendo-switch-lg-track-width: 44px !default;
+/// The track height of the large Switch.
+/// @group switch
+$kendo-switch-lg-track-height: 24px !default;
+/// The thumb width of the large Switch.
+/// @group switch
+$kendo-switch-lg-thumb-width: 18px !default;
+/// The thumb height of the large Switch.
+/// @group switch
+$kendo-switch-lg-thumb-height: 18px !default;
+/// The thumb offset of the large Switch.
+/// @group switch
+$kendo-switch-lg-thumb-offset: 5px !default;
+/// The label offset of the large Switch.
+/// @group switch
+$kendo-switch-lg-label-offset: 6px !default;
 
 /// The ring around the focused Switch.
 /// @group switch
@@ -173,12 +246,35 @@ $kendo-switch-on-thumb-disabled-text: var( --kendo-switch-on-thumb-disabled-text
 $kendo-switch-on-thumb-disabled-border: var( --kendo-switch-on-thumb-disabled-border, color-mix(in srgb, k-color(on-app-surface) 30%, transparent) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/switch/_variables.scss" with (
+    $kendo-switch-default-size: $kendo-switch-default-size,
+    $kendo-switch-default-track-roundness: $kendo-switch-default-track-roundness,
+    $kendo-switch-default-thumb-roundness: $kendo-switch-default-thumb-roundness,
     $kendo-switch-font-family: $kendo-switch-font-family,
     $kendo-switch-track-border-width: $kendo-switch-track-border-width,
     $kendo-switch-thumb-border-width: $kendo-switch-thumb-border-width,
     $kendo-switch-label-text-transform: $kendo-switch-label-text-transform,
     $kendo-switch-label-display: $kendo-switch-label-display,
-    $kendo-switch-sizes: $kendo-switch-sizes,
+    $kendo-switch-sm-font-size: $kendo-switch-sm-font-size,
+    $kendo-switch-sm-track-width: $kendo-switch-sm-track-width,
+    $kendo-switch-sm-track-height: $kendo-switch-sm-track-height,
+    $kendo-switch-sm-thumb-width: $kendo-switch-sm-thumb-width,
+    $kendo-switch-sm-thumb-height: $kendo-switch-sm-thumb-height,
+    $kendo-switch-sm-thumb-offset: $kendo-switch-sm-thumb-offset,
+    $kendo-switch-sm-label-offset: $kendo-switch-sm-label-offset,
+    $kendo-switch-md-font-size: $kendo-switch-md-font-size,
+    $kendo-switch-md-track-width: $kendo-switch-md-track-width,
+    $kendo-switch-md-track-height: $kendo-switch-md-track-height,
+    $kendo-switch-md-thumb-width: $kendo-switch-md-thumb-width,
+    $kendo-switch-md-thumb-height: $kendo-switch-md-thumb-height,
+    $kendo-switch-md-thumb-offset: $kendo-switch-md-thumb-offset,
+    $kendo-switch-md-label-offset: $kendo-switch-md-label-offset,
+    $kendo-switch-lg-font-size: $kendo-switch-lg-font-size,
+    $kendo-switch-lg-track-width: $kendo-switch-lg-track-width,
+    $kendo-switch-lg-track-height: $kendo-switch-lg-track-height,
+    $kendo-switch-lg-thumb-width: $kendo-switch-lg-thumb-width,
+    $kendo-switch-lg-thumb-height: $kendo-switch-lg-thumb-height,
+    $kendo-switch-lg-thumb-offset: $kendo-switch-lg-thumb-offset,
+    $kendo-switch-lg-label-offset: $kendo-switch-lg-label-offset,
     $kendo-switch-off-track-bg: $kendo-switch-off-track-bg,
     $kendo-switch-off-track-text: $kendo-switch-off-track-text,
     $kendo-switch-off-track-border: $kendo-switch-off-track-border,

@@ -28,6 +28,46 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-badge-default-theme-color</td>
+    <td>String</td>
+    <td><code>"primary"</code></td>
+    <td><code>"primary"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-default-fill-mode</td>
+    <td>String</td>
+    <td><code>"solid"</code></td>
+    <td><code>"solid"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default fill mode of the Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-default-size</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-default-roundness</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default roundness of the Badge.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-badge-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -246,28 +286,17 @@ The following table lists the available variables for customization.
     <td><ul><li>sm: "padding-x":"0.325em","padding-y":"0.175em","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.175em * 2 + 1px * 2)"</li><li>md: "padding-x":"0.65em","padding-y":"0.35em","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.35em * 2 + 1px * 2)"</li><li>lg: "padding-x":"0.9750000000000001em","padding-y":"0.5249999999999999em","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.525em * 2 + 1px * 2)"</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Badge.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Badge.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-badge-theme-colors</td>
-    <td>Map</td>
-    <td><code>(
-    "primary": k-color(primary),
-    "secondary": k-color(secondary),
-    "tertiary": k-color(tertiary),
-    "info": k-color(info),
-    "success": k-color(success),
-    "warning": k-color(warning),
-    "error": k-color(error),
-    "dark": k-color(dark),
-    "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
-)</code></td>
-    <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li><li>tertiary: var(--kendo-color-tertiary, #6f42c1)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>success: var(--kendo-color-success, #198754)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>dark: var(--kendo-color-dark, #212529)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>inverse: var(--kendo-color-dark, #212529)</li></ul></td>
+    <td>List</td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors of the Badge.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Badge.</div></div>
     </td>
 </tr>
 </tbody>

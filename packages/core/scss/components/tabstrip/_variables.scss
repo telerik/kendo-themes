@@ -1,5 +1,6 @@
 // TabStrip
 
+$kendo-tabstrip-default-size: null !default;
 
 $kendo-tabstrip-wrapper-padding-x: null !default;
 $kendo-tabstrip-wrapper-padding-y: null !default;
@@ -76,4 +77,25 @@ $kendo-tabstrip-content-focus-border: null !default;
 
 $kendo-tabstrip-scroll-overlay: null !default;
 
-$kendo-tabstrip-sizes: null !default;
+/// The sizes map of the TabStrip.
+/// @group tabstrip
+$kendo-tabstrip-sizes: (
+    sm: (
+        font-size: $kendo-tabstrip-sm-font-size,
+        line-height: $kendo-tabstrip-sm-line-height,
+        item-padding-x: $kendo-tabstrip-sm-item-padding-x,
+        item-padding-y: $kendo-tabstrip-sm-item-padding-y
+    ),
+    md: (
+        font-size: $kendo-tabstrip-md-font-size,
+        line-height: $kendo-tabstrip-md-line-height,
+        item-padding-x: $kendo-tabstrip-md-item-padding-x,
+        item-padding-y: $kendo-tabstrip-md-item-padding-y
+    ),
+    lg: (
+        font-size: $kendo-tabstrip-lg-font-size,
+        line-height: $kendo-tabstrip-lg-line-height,
+        item-padding-x: $kendo-tabstrip-lg-item-padding-x,
+        item-padding-y: $kendo-tabstrip-lg-item-padding-y
+    )
+) !default;

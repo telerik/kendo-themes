@@ -8,8 +8,8 @@ export const SPINBUTTON_CLASSNAME = `k-spin-button`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline, FillMode.clear, FillMode.link ],
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
+    fillMode: [ FillMode.undefined, FillMode.solid, FillMode.flat, FillMode.outline, FillMode.clear, FillMode.link ],
 };
 
 export type KendoSpinButtonOptions = {
@@ -23,18 +23,15 @@ export type KendoSpinButtonProps = KendoSpinButtonOptions & {
   text?: string;
 };
 
-const defaultOptions = {
-    size: Size.medium,
-    fillMode: FillMode.solid
-};
+const defaultOptions = {};
 
 export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoSpinButtonProps &
         React.HTMLAttributes<HTMLButtonElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        fillMode = defaultOptions.fillMode,
+        size,
+        fillMode,
         ...other
     } = props;
 

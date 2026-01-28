@@ -16,35 +16,35 @@ export default () =>(
             <span>ComboBox RTL</span>
 
             <div>
-                <ComboboxNormal />
+                <ComboboxNormal fillMode="solid" />
             </div>
             <div dir="rtl">
-                <ComboboxNormal />
+                <ComboboxNormal fillMode="solid" />
             </div>
             <div>
-                <ComboboxNormal placeholder="placeholder..." />
+                <ComboboxNormal fillMode="solid" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <ComboboxNormal placeholder="placeholder..." />
+                <ComboboxNormal fillMode="solid" placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...Combobox.states ].map((state) => (
                 <>
                     <div>
-                        <ComboboxNormal { ...{ [state]: true }} value={state} />
+                        <ComboboxNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <ComboboxNormal { ...{ [state]: true }} value={state} />
+                        <ComboboxNormal fillMode="solid" { ...{ [state]: true }} value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <ComboboxNormal value="invalid focus" invalid focus />
+                <ComboboxNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <ComboboxNormal value="invalid focus" invalid focus />
+                <ComboboxNormal fillMode="solid" value="invalid focus" invalid focus />
             </div>
         </div>
     </>

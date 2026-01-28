@@ -13,7 +13,7 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ]
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ]
 };
 
 export type KendoPagerOptions = {
@@ -42,7 +42,6 @@ export type KendoPagerState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
     responsive: true,
-    size: Size.medium,
     pagerSizeInfo: true,
     pageTitleInfo: true,
     maxPagesInfo: true,
@@ -63,7 +62,7 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
 ) => {
     const {
         responsive = defaultOptions.responsive,
-        size = defaultOptions.size,
+        size,
         pagerSizeInfo = defaultOptions.pagerSizeInfo,
         pageTitleInfo = defaultOptions.pageTitleInfo,
         maxPagesInfo = defaultOptions.maxPagesInfo,

@@ -3,12 +3,12 @@ import { TabStripContent, TabStripNormal, TabStripItem, TabStrip } from '..';
 
 export default () => (
     <>
-        <div id="test-area" className="k-d-grid k-grid-cols-3">
+        <div id="test-area" className="k-d-grid k-grid-cols-2">
             {
                 TabStrip.options.size.map((size) => (
                     <>
                         <div>
-                            <span>{size}</span>
+                            <span>{`${size}`}</span>
                             <TabStripNormal scrollable size={size}
                                 tabStripItems={
                                     <>

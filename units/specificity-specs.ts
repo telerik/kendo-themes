@@ -111,7 +111,6 @@ import { Icon } from "../packages/html/src/icon/icon.spec";
 import { ImageEditor } from "../packages/html/src/imageeditor/imageeditor.spec";
 import { Input } from "../packages/html/src/input/input.spec";
 import { List } from "../packages/html/src/list/list.spec";
-import { ListAngular } from "../packages/html/src/list/list-angular.spec";
 import { ListContainer } from "../packages/html/src/list/list-container.spec";
 // import { ListItem } from "../packages/html/src/list/list-item.spec";
 import { ListBox } from "../packages/html/src/listbox/listbox.spec";
@@ -148,6 +147,7 @@ import { Popover } from "../packages/html/src/popover/popover.spec";
 import { Popup } from "../packages/html/src/popup/popup.spec";
 import { ProgressBar } from "../packages/html/src/progressbar/progressbar.spec";
 import { Prompt } from "../packages/html/src/prompt/prompt.spec";
+import { PromptBox } from "../packages/html/src/prompt-box/prompt-box.spec";
 // import { PropertyGrid } from "../packages/html/src/propertygrid/propertygrid.spec";
 import { RadioButton } from "../packages/html/src/radio/radio.spec";
 import { RadioGroup } from "../packages/html/src/radio/radio-group.spec";
@@ -369,7 +369,6 @@ export const allComponents: SpecComponent[] = [
   ImageEditor,
   Input,
   List,
-  ListAngular,
   ListContainer,
   // ListItem, - SKIPPED, specificity error
   ListBox,
@@ -406,6 +405,7 @@ export const allComponents: SpecComponent[] = [
   Popup,
   ProgressBar,
   Prompt,
+  PromptBox,
   // PropertyGrid, - SKIPPED, class does not have styles
   RadioButton,
   RadioGroup,

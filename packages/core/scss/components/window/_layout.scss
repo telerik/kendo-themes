@@ -1,5 +1,6 @@
 @use "sass:list";
 @use "../../mixins/index.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "../../color-system/_constants.scss" as *;
 @use "../../z-index/index.scss" as *;
 @use "./variables.scss" as *;
@@ -23,24 +24,19 @@
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
-        // overlay during dragging
-        // .k-overlay {
-        //    position: absolute;
-        //    opacity: 0;
-        // }
+        // Window sizes
+        @each $size, $width in $kendo-window-sizes {
+            #{k-when-default( $kendo-window-default-size, $size )}
+            &.k-window-#{$size} {
+                width: $width;
+            }
+        }
     }
     .k-window.k-window-maximized {
         max-width: 100vw;
         max-height: 100vh;
         box-shadow: none;
     }
-
-
-    // Window sizes
-    @each $size, $width in $kendo-window-sizes {
-        .k-window-#{$size} { width: $width; }
-    }
-
 
     // Title bar
     .k-window-titlebar {

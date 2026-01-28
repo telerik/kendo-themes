@@ -25,16 +25,16 @@ export default () =>(
             <span>PDF Viewer Annotation Selection Popup</span>
 
             <div>
-                <MenuButton icon="menu" fillMode="flat" showArrow={false} opened={true}
-                    popup={
-                        <MenuList>
-                            <MenuListItem first icon="folder-open" text="Open" />
-                            <MenuListItem icon="download" text="Download" />
-                            <MenuListItem icon="print" text="Print" />
-                            <MenuSeparator></MenuSeparator>
-                            <MenuListItem last icon="question" text="Help" />
-                        </MenuList>
-                    } />
+                <MenuButton icon="menu" fillMode="flat" showArrow={false} />
+                <Popup className="k-menu-popup">
+                    <MenuList>
+                        <MenuListItem first icon="folder-open" text="Open" />
+                        <MenuListItem icon="download" text="Download" />
+                        <MenuListItem icon="print" text="Print" />
+                        <MenuSeparator></MenuSeparator>
+                        <MenuListItem last icon="question" text="Help" />
+                    </MenuList>
+                </Popup>
             </div>
 
             <div>

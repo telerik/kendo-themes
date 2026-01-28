@@ -12,14 +12,21 @@
 <body id="app" class="k-body">
     <style>
         #test-area {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
         }
 
     </style>
     <div id="test-area" class="k-d-grid">
+        <span>undefined</span>
         <span>Small</span>
         <span>Medium</span>
         <span>Large</span>
+        <section>
+            <span class="k-radio-wrap">
+                <input id="rad-unchecked-" class="k-radio" type="radio">
+            </span>
+            <label class="k-radio-label" for="rad-unchecked-">unchecked</label>
+        </section>
         <section>
             <span class="k-radio-wrap">
                 <input id="rad-unchecked-small" class="k-radio k-radio-sm" type="radio">
@@ -37,6 +44,12 @@
                 <input id="rad-unchecked-large" class="k-radio k-radio-lg" type="radio">
             </span>
             <label class="k-radio-label" for="rad-unchecked-large">unchecked</label>
+        </section>
+        <section>
+            <span class="k-radio-wrap">
+                <input id="rad-hover-" class="k-radio k-hover" type="radio">
+            </span>
+            <label class="k-radio-label" for="rad-hover-">hover</label>
         </section>
         <section>
             <span class="k-radio-wrap">
@@ -58,6 +71,12 @@
         </section>
         <section>
             <span class="k-radio-wrap">
+                <input id="rad-focus-" class="k-radio k-focus" type="radio">
+            </span>
+            <label class="k-radio-label" for="rad-focus-">focus</label>
+        </section>
+        <section>
+            <span class="k-radio-wrap">
                 <input id="rad-focus-small" class="k-radio k-radio-sm k-focus" type="radio">
             </span>
             <label class="k-radio-label" for="rad-focus-small">focus</label>
@@ -73,6 +92,12 @@
                 <input id="rad-focus-large" class="k-radio k-radio-lg k-focus" type="radio">
             </span>
             <label class="k-radio-label" for="rad-focus-large">focus</label>
+        </section>
+        <section>
+            <span class="k-radio-wrap">
+                <input id="rad-valid-" class="k-radio k-valid" type="radio">
+            </span>
+            <label class="k-radio-label" for="rad-valid-">valid</label>
         </section>
         <section>
             <span class="k-radio-wrap">
@@ -94,7 +119,13 @@
         </section>
         <section>
             <span class="k-radio-wrap">
-                <input id="rad-invalid-small" aria-invalid="true" class="k-radio k-radio-sm k-invalid" type="radio">
+                <input id="rad-invalid-" class="k-radio k-invalid" type="radio">
+            </span>
+            <label class="k-radio-label" for="rad-invalid-">invalid</label>
+        </section>
+        <section>
+            <span class="k-radio-wrap">
+                <input id="rad-invalid-small" class="k-radio k-radio-sm k-invalid" type="radio">
             </span>
             <label class="k-radio-label" for="rad-invalid-small">invalid</label>
         </section>
@@ -112,7 +143,13 @@
         </section>
         <section>
             <span class="k-radio-wrap">
-                <input id="rad-required-small" required="" aria-required="true" class="k-radio k-radio-sm" type="radio">
+                <input id="rad-required-" required="" class="k-radio" type="radio">
+            </span>
+            <label class="k-radio-label" for="rad-required-">required</label>
+        </section>
+        <section>
+            <span class="k-radio-wrap">
+                <input id="rad-required-small" required="" class="k-radio k-radio-sm" type="radio">
             </span>
             <label class="k-radio-label" for="rad-required-small">required</label>
         </section>
@@ -130,7 +167,13 @@
         </section>
         <section>
             <span class="k-radio-wrap">
-                <input id="rad-disabled-small" disabled="" aria-disabled="true" class="k-radio k-radio-sm k-disabled" type="radio">
+                <input id="rad-disabled-" class="k-radio k-disabled" type="radio">
+            </span>
+            <label class="k-radio-label" for="rad-disabled-">disabled</label>
+        </section>
+        <section>
+            <span class="k-radio-wrap">
+                <input id="rad-disabled-small" class="k-radio k-radio-sm k-disabled" type="radio">
             </span>
             <label class="k-radio-label" for="rad-disabled-small">disabled</label>
         </section>
@@ -145,6 +188,12 @@
                 <input id="rad-disabled-large" disabled="" aria-disabled="true" class="k-radio k-radio-lg k-disabled" type="radio">
             </span>
             <label class="k-radio-label" for="rad-disabled-large">disabled</label>
+        </section>
+        <section>
+            <span class="k-radio-wrap">
+                <input id="rad-checked-" class="k-radio k-checked" type="radio" checked="">
+            </span>
+            <label class="k-radio-label" for="rad-checked-">checked</label>
         </section>
         <section>
             <span class="k-radio-wrap">

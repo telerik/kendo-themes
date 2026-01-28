@@ -20,7 +20,7 @@ export default () =>(
                     <ChatMessageGroup avatar={null}>
                         <ChatMessage />
                     </ChatMessageGroup>
-                    <SuggestionGroup>
+                    <SuggestionGroup scrollingPosition = "start">
                         <Suggestion themeColor="primary" text="Quick" />
                         <Suggestion themeColor="primary" text="Hovered" hover />
                         <Suggestion themeColor="primary" text="Focused" focus />
@@ -35,7 +35,7 @@ export default () =>(
                     <ChatMessageGroup avatar={null}>
                         <ChatMessage />
                     </ChatMessageGroup>
-                    <SuggestionGroup layout='scrollButtons'>
+                    <SuggestionGroup layout='scrollButtons' scrollingPosition = "start">
                         <Suggestion themeColor="primary" text="Quick" />
                         <Suggestion themeColor="primary" text="Hovered" hover />
                         <Suggestion themeColor="primary" text="Focused" focus />

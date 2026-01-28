@@ -3,6 +3,135 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.1...v13.0.0-dev.2) (2026-01-27)
+
+
+### Features
+
+* **chat:** enhance styles with new and improved features ([873580d](https://github.com/telerik/kendo-themes/commit/873580d18bb30b47c285d1f9926834d6f1250507))
+* **file-box:** add styles ([bf5d9c2](https://github.com/telerik/kendo-themes/commit/bf5d9c2dbc4aa430a5513cf55175ee7eae2d2b57))
+* **list:** enhance styles ([c1d7740](https://github.com/telerik/kendo-themes/commit/c1d77403f023969cac59060bbb4f0ad6b60f6a0d))
+* **prompt-box:** add styles ([eb646a9](https://github.com/telerik/kendo-themes/commit/eb646a91a41a26cddd142986cebced468548a028))
+* **segmented-contro:** add styles ([c751a50](https://github.com/telerik/kendo-themes/commit/c751a50010aedee661519855488d77397de6bd60))
+* **smart-box:** add styles ([3370960](https://github.com/telerik/kendo-themes/commit/337096071696dc38000f712688c7ef86c17a86b3))
+* **treeview:** enhance styles ([46e15d4](https://github.com/telerik/kendo-themes/commit/46e15d40d6c811d21819e9fe03ac1e0a9ef7fb9a))
+
+
+
+
+
+# [13.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.0...v13.0.0-dev.1) (2026-01-26)
+
+
+### Features
+
+* **grid:** add pinned row/group row styles ([c173d4e](https://github.com/telerik/kendo-themes/commit/c173d4ebfbefa60a82cac35406268249f5b764a6))
+* **grid:** add sticky group header and footer styles ([df4908f](https://github.com/telerik/kendo-themes/commit/df4908fcdc24fbeb59138768764b1b95dad84a0f))
+
+
+
+
+
+# [13.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.10...v13.0.0-dev.0) (2026-01-23)
+
+
+### Features
+
+* add default component options ([00995e4](https://github.com/telerik/kendo-themes/commit/00995e42346853736516f771971e4d1cd4e95f14))
+
+
+### BREAKING CHANGES
+
+* Starting with the R1 2026 release, the component
+option classes (size, roundness, fill mode, theme color) are no longer
+rendered in the HTML when they match the default values. The default
+options are now controlled through SCSS variables (e.g.,
+$kendo-button-default-size, $kendo-button-default-roundness) and the
+respective styles are applied directly to the main component class. This
+allows different themes to define their own defaults and enables
+easier customization.
+Additionally, the theme color classes are now separate from the fill mode
+classes (e.g., k-button-solid k-button-primary instead of
+k-button-solid-primary).
+To learn more about these changes, please refer to the dedicated
+* article in the Progress Design System documentation.
+
+
+
+
+
+## [12.3.1-dev.10](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.9...v12.3.1-dev.10) (2026-01-19)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+## [12.3.1-dev.9](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.8...v12.3.1-dev.9) (2026-01-12)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+## [12.3.1-dev.8](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.7...v12.3.1-dev.8) (2026-01-05)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+## [12.3.1-dev.7](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.6...v12.3.1-dev.7) (2025-12-29)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+## [12.3.1-dev.6](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.5...v12.3.1-dev.6) (2025-12-22)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+## [12.3.1-dev.5](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.4...v12.3.1-dev.5) (2025-12-19)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+## [12.3.1-dev.4](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.3...v12.3.1-dev.4) (2025-12-19)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+## [12.3.1-dev.3](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.2...v12.3.1-dev.3) (2025-12-19)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+## [12.3.1-dev.2](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.1...v12.3.1-dev.2) (2025-12-19)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
 ## [12.3.1-dev.1](https://github.com/telerik/kendo-themes/compare/v12.3.1-dev.0...v12.3.1-dev.1) (2025-12-17)
 
 **Note:** Version bump only for package @progress/kendo-theme-default

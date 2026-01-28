@@ -37,7 +37,7 @@ export default () => (
                     footer={
                         <ActionSheetFooter >
                             <Button text="Apply" size="large" themeColor="primary" />
-                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Cancel" size="large" />
                         </ActionSheetFooter>
                     }
                 >
@@ -51,8 +51,8 @@ export default () => (
                             <ListItem text="Disabled" disabled />
                             <ListItem text="List item with very long text, that spans on multiple lines" />
                             <ListItem text="Checkbox" showCheckbox />
-                            <ListItem text="Icon" showIcon iconName="gear" />
-                            <ListItem text="Checkbox icon" showCheckbox showIcon iconName="gear" />
+                            <ListItem text="Icon" iconName="gear" />
+                            <ListItem text="Checkbox icon" showCheckbox iconName="gear" />
                         </List>
                     </div>
                 </ActionSheet>
@@ -70,7 +70,7 @@ export default () => (
                     footer={
                         <ActionSheetFooter >
                             <Button text="Apply" size="large" themeColor="primary" />
-                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Cancel" size="large" />
                         </ActionSheetFooter>
                     }
                 >
@@ -84,8 +84,8 @@ export default () => (
                             <ListItem text="Disabled" disabled />
                             <ListItem text="List item with very long text, that spans on multiple lines" />
                             <ListItem text="Checkbox" showCheckbox />
-                            <ListItem text="Icon" showIcon iconName="gear" />
-                            <ListItem text="Checkbox icon" showCheckbox showIcon iconName="gear" />
+                            <ListItem text="Icon" iconName="gear" />
+                            <ListItem text="Checkbox icon" showCheckbox iconName="gear" />
                         </List>
                     </div>
                 </ActionSheet>
@@ -103,7 +103,7 @@ export default () => (
                     footer={
                         <ActionSheetFooter >
                             <Button text="Apply" size="large" themeColor="primary" />
-                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Cancel" size="large" />
                         </ActionSheetFooter>
                     }
                 >
@@ -141,7 +141,7 @@ export default () => (
                     footer={
                         <ActionSheetFooter >
                             <Button text="Apply" size="large" themeColor="primary" />
-                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Cancel" size="large" />
                         </ActionSheetFooter>
                     }
                 >

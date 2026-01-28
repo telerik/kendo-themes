@@ -1,0 +1,7 @@
+@use "./variables.scss" as *;
+
+@mixin kendo-prompt-box--theme-base() {
+    .k-prompt-box {
+        box-shadow: $kendo-prompt-box-box-shadow;
+    }
+}

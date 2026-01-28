@@ -63,11 +63,11 @@ jobs:
         id: setup-node
         uses: actions/setup-node@v6
         with:
-          node-version: 22.x
+          node-version: 24.x
 
       - name: Use cache for root node_modules
         id: cache-root-node_modules
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: node_modules
           key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
@@ -109,7 +109,7 @@ jobs:
           echo "${{ matrix.package }}:$size:$gzip_size:$build_time" >> data.txt
 
       - name: Upload PR data
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: pr-data-${{ matrix.package }}
           path: data.txt
@@ -136,11 +136,11 @@ jobs:
         id: setup-node
         uses: actions/setup-node@v6
         with:
-          node-version: 22.x
+          node-version: 24.x
 
       - name: Use cache for develop node_modules
         id: cache-develop-node_modules
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: node_modules
           key: develop-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
@@ -183,7 +183,7 @@ jobs:
           echo "${{ matrix.package }}:$size:$gzip_size:$build_time" >> data.txt
 
       - name: Upload Develop data
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: develop-data-${{ matrix.package }}
           path: data.txt
@@ -196,7 +196,7 @@ jobs:
       - extract-develop-data
     steps:
       - name: Download Artifacts
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
 
       - name: Generate Comparison Table
         run: |

@@ -88,7 +88,7 @@ export default () =>(
             </section>
 
             <section>
-                <DataTable size="medium">
+                <DataTable>
                     <TableHeader>
                         <colgroup>
                             <col style={{ width: '50px' }} />

@@ -33,26 +33,6 @@ $kendo-otp-md-input-width: $kendo-input-md-calc-size !default;
 /// @group one-time-password
 $kendo-otp-lg-input-width: $kendo-input-lg-calc-size !default;
 
-/// The sizes map of the OTP.
-/// @group otp
-$kendo-otp-sizes: (
-    sm: (
-        gap: $kendo-otp-sm-gap,
-        separator-padding-x: $kendo-otp-sm-separator-padding-x,
-        input-width: $kendo-otp-sm-input-width
-    ),
-    md: (
-        gap: $kendo-otp-md-gap,
-        separator-padding-x: $kendo-otp-md-separator-padding-x,
-        input-width: $kendo-otp-md-input-width
-    ),
-    lg: (
-        gap: $kendo-otp-lg-gap,
-        separator-padding-x: $kendo-otp-lg-separator-padding-x,
-        input-width: $kendo-otp-lg-input-width
-    )
-) !default;
-
 @forward "@progress/kendo-theme-core/scss/components/otp/_variables.scss" with (
     $kendo-otp-sm-gap: $kendo-otp-sm-gap,
     $kendo-otp-md-gap: $kendo-otp-md-gap,
@@ -62,6 +42,5 @@ $kendo-otp-sizes: (
     $kendo-otp-lg-separator-padding-x: $kendo-otp-lg-separator-padding-x,
     $kendo-otp-sm-input-width: $kendo-otp-sm-input-width,
     $kendo-otp-md-input-width: $kendo-otp-md-input-width,
-    $kendo-otp-lg-input-width: $kendo-otp-lg-input-width,
-    $kendo-otp-sizes: $kendo-otp-sizes
+    $kendo-otp-lg-input-width: $kendo-otp-lg-input-width
 );

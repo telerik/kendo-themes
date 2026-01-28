@@ -1,0 +1,16 @@
+@use "sass:list";
+@use "sass:meta";
+
+/// Returns a SCSS selector self-reference ("&") when the current value matches the default value,
+/// otherwise returns null. This is useful for conditionally applying styles only when a component
+/// option is set to its default value, allowing default styles to be grouped together.
+/// @param {String} $default - The default value to compare against.
+/// @param {String | List} $current - The current value to check. Can be a single value or a list of values.
+/// @return {String | Null} - Returns "&," when values match, null otherwise.
+
+@function k-when-default($default, $current) {
+  @if meta.type-of($current) == "list" {
+    @return if(list.index($current, $default) != null, "&,", null);
+  }
+  @return if($default == $current, "&,", null);
+}

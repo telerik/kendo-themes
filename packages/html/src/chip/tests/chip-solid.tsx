@@ -3,8 +3,9 @@ import { Chip, ChipAvatar, ChipIcon, ChipNormal, ChipRemovable } from '../../chi
 
 export default () =>(
     <>
-        <div id="test-area" className="k-d-grid k-grid-cols-6">
+        <div id="test-area" className="k-d-grid k-grid-cols-7">
             <span><small>state / themeColor</small></span>
+            <span>undefined</span>
             <span>Base</span>
             <span>Success</span>
             <span>Warning</span>
@@ -16,7 +17,7 @@ export default () =>(
                     <span>{state || 'normal'}</span>
                     {Chip.options.themeColor.map((themeColor) => (
                         <span>
-                            <ChipRemovable text={themeColor} themeColor={themeColor} {...(state ? { [state]: true } : {})} />
+                            <ChipRemovable fillMode="solid" text={themeColor === undefined ? 'undefined' : themeColor} themeColor={themeColor} {...(state ? { [state]: true } : {})} />
                         </span>
                     ))}
                 </>
@@ -29,22 +30,23 @@ export default () =>(
             <span>Avatar</span>
             <span>Icon (rtl)</span>
             <span>Avatar (rtl)</span>
+            <span></span>
 
             <span></span>
             <span>
-                <ChipNormal text="Text" />
+                <ChipNormal fillMode="solid" text="Text" />
             </span>
             <span>
-                <ChipIcon text="Text" />
+                <ChipIcon fillMode="solid" text="Text" />
             </span>
             <span>
-                <ChipAvatar text="Text" />
+                <ChipAvatar fillMode="solid" text="Text" />
             </span>
             <span dir="rtl">
-                <ChipIcon text="Text" />
+                <ChipIcon fillMode="solid" text="Text" />
             </span>
             <span dir="rtl">
-                <ChipAvatar text="Text" />
+                <ChipAvatar fillMode="solid" text="Text" />
             </span>
 
         </div>

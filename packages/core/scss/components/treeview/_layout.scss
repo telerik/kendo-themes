@@ -1,7 +1,9 @@
 @use "sass:map";
 @use "../../color-system/_constants.scss" as *;
 @use "../../mixins/index.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "../../spacing/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
 @use "../../motion/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../icons/_variables.scss" as *;
@@ -11,14 +13,12 @@
 
     // Treeview
     .k-treeview {
-        padding: 0;
+        border-radius: $kendo-treeview-border-radius;
         border-width: 0;
         background: none;
         box-sizing: border-box;
         outline: 0;
         font-family: $kendo-treeview-font-family;
-        font-size: $kendo-treeview-font-size;
-        line-height: $kendo-treeview-line-height;
         display: block;
         cursor: default;
         overflow: auto;
@@ -31,6 +31,34 @@
         *::after {
             box-sizing: border-box;
         }
+
+        @each $size, $size-props in $kendo-treeview-sizes {
+            $_font-size: map.get( $size-props, font-size);
+            $_line-height: map.get( $size-props, line-height);
+            $_item-padding-x: map.get( $size-props, item-padding-x);
+            $_item-padding-y: map.get( $size-props, item-padding-y);
+            $_checkbox-padding-x: map.get( $size-props, checkbox-padding-x );
+            $_checkbox-padding-y: map.get( $size-props, checkbox-padding-y );
+
+            #{k-when-default($kendo-treeview-default-size, $size)}
+            &.k-treeview-#{$size} {
+                font-size: $_font-size;
+                line-height: $_line-height;
+
+                .k-treeview-leaf {
+                    padding-block: $_item-padding-y;
+                    padding-inline: $_item-padding-x;
+                }
+
+                .k-checkbox-wrap {
+                    padding-block: $_checkbox-padding-y;
+                    padding-inline: $_checkbox-padding-x;
+                }
+            }
+        }
+
+        font-size: $kendo-treeview-font-size;
+        line-height: $kendo-treeview-line-height;
     }
 
 
@@ -45,6 +73,11 @@
 
     // Treeview group
     .k-treeview-group {
+        display: flex;
+        flex-direction: column;
+        gap: $kendo-treeview-gap;
+        min-width: fit-content;
+
         margin: 0;
         padding: 0;
         list-style: none;
@@ -56,17 +89,21 @@
         &.ng-animating {
             overflow: hidden;
         }
+
+        .k-treeview-group {
+            margin-top: $kendo-treeview-gap;
+        }
     }
 
 
     // Treeview wrappers
-    .k-treeview-top,
-    .k-treeview-mid,
-    .k-treeview-bot {
+    .k-treeview-item-content {
+        @include border-radius( $kendo-treeview-item-border-radius );
         display: flex;
         flex-direction: row;
         align-items: center;
         align-content: center;
+        padding-inline-start: calc( var(--kendo-treeview-level, 0) * #{$kendo-treeview-indent} );
     }
 
 
@@ -75,7 +112,6 @@
         outline-style: none;
         margin: 0;
         padding: 0;
-        padding-inline-start: $kendo-treeview-indent;
         border-width: 0;
         display: block;
     }
@@ -111,7 +147,6 @@
 
     // Treeview leaf
     .k-treeview-leaf {
-        @include border-radius( $kendo-treeview-item-border-radius );
         padding-block: $kendo-treeview-md-item-padding-y;
         padding-inline: $kendo-treeview-md-item-padding-x;
         border: $kendo-treeview-item-border-width solid transparent;
@@ -128,10 +163,6 @@
         .k-sprite {
             margin-inline-end: $kendo-icon-spacing;
         }
-
-        &.k-focus {
-            z-index: k-z-index("base", 1);
-        }
     }
 
 
@@ -144,30 +175,6 @@
         &:focus,
         &.k-focus {
             text-decoration: underline;
-        }
-    }
-
-    @each $size, $size-props in $kendo-treeview-sizes {
-        $_font-size: map.get( $size-props, font-size);
-        $_line-height: map.get( $size-props, line-height);
-        $_item-padding-x: map.get( $size-props, item-padding-x);
-        $_item-padding-y: map.get( $size-props, item-padding-y);
-        $_checkbox-padding-x: map.get( $size-props, checkbox-padding-x );
-        $_checkbox-padding-y: map.get( $size-props, checkbox-padding-y );
-
-        .k-treeview-#{$size} {
-            font-size: $_font-size;
-            line-height: $_line-height;
-
-            .k-treeview-leaf {
-                padding-block: $_item-padding-y;
-                padding-inline: $_item-padding-x;
-            }
-
-            .k-checkbox-wrap {
-                padding-block: $_checkbox-padding-y;
-                padding-inline: $_checkbox-padding-x;
-            }
         }
     }
 

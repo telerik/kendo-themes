@@ -4,6 +4,15 @@
 
 // Toolbar
 
+/// The default fill mode of the Toolbar.
+/// @group toolbar
+/// @role default
+$kendo-toolbar-default-fill-mode: "solid" !default;
+/// The default size of the Toolbar.
+/// @group toolbar
+/// @role default
+$kendo-toolbar-default-size: "md" !default;
+
 /// The horizontal padding of the small Toolbar.
 /// @group toolbar
 $kendo-toolbar-sm-padding-x: k-spacing(1) !default;
@@ -116,6 +125,9 @@ $kendo-toolbar-separator-border: inherit !default;
 /// The width of the input in the Toolbar.
 /// @group toolbar
 $kendo-toolbar-input-width: 10em !default;
+/// The minimum width of the Smart ToolBox in the Toolbar.
+/// @group toolbar
+$kendo-toolbar-smart-box-min-width: 350px !default;
 
 /// The box shadow of the focused Toolbar item.
 /// @group toolbar
@@ -134,30 +146,9 @@ $kendo-toolbar-overflow-button-padding-y: $kendo-menu-popup-md-item-padding-y !d
 /// @group toolbar
 $kendo-toolbar-overflow-button-padding-x: $kendo-menu-popup-md-item-padding-x !default;
 
-/// The sizes map for the Toolbar.
-/// @group toolbar
-$kendo-toolbar-sizes: (
-    sm: (
-        padding-x: $kendo-toolbar-sm-padding-x,
-        padding-y: $kendo-toolbar-sm-padding-y,
-        spacing: $kendo-toolbar-sm-spacing,
-        separator-height: $kendo-toolbar-sm-separator-height
-    ),
-    md: (
-        padding-x: $kendo-toolbar-md-padding-x,
-        padding-y: $kendo-toolbar-md-padding-y,
-        spacing: $kendo-toolbar-md-spacing,
-        separator-height: $kendo-toolbar-md-separator-height
-    ),
-    lg: (
-        padding-x: $kendo-toolbar-lg-padding-x,
-        padding-y: $kendo-toolbar-lg-padding-y,
-        spacing: $kendo-toolbar-lg-spacing,
-        separator-height: $kendo-toolbar-lg-separator-height
-    )
-) !default;
-
 @forward "@progress/kendo-theme-core/scss/components/toolbar/_variables.scss" with (
+    $kendo-toolbar-default-fill-mode: $kendo-toolbar-default-fill-mode,
+    $kendo-toolbar-default-size: $kendo-toolbar-default-size,
     $kendo-toolbar-sm-padding-x: $kendo-toolbar-sm-padding-x,
     $kendo-toolbar-md-padding-x: $kendo-toolbar-md-padding-x,
     $kendo-toolbar-lg-padding-x: $kendo-toolbar-lg-padding-x,
@@ -192,10 +183,10 @@ $kendo-toolbar-sizes: (
     $kendo-toolbar-flat-scroll-overlay: $kendo-toolbar-flat-scroll-overlay,
     $kendo-toolbar-separator-border: $kendo-toolbar-separator-border,
     $kendo-toolbar-input-width: $kendo-toolbar-input-width,
+    $kendo-toolbar-smart-box-min-width: $kendo-toolbar-smart-box-min-width,
     $kendo-toolbar-item-shadow: $kendo-toolbar-item-shadow,
     $kendo-toolbar-overflow-container-font-size: $kendo-toolbar-overflow-container-font-size,
     $kendo-toolbar-overflow-container-line-height: $kendo-toolbar-overflow-container-line-height,
     $kendo-toolbar-overflow-button-padding-y: $kendo-toolbar-overflow-button-padding-y,
-    $kendo-toolbar-overflow-button-padding-x: $kendo-toolbar-overflow-button-padding-x,
-    $kendo-toolbar-sizes: $kendo-toolbar-sizes
+    $kendo-toolbar-overflow-button-padding-x: $kendo-toolbar-overflow-button-padding-x
 );

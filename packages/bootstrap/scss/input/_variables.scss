@@ -5,6 +5,19 @@
 
 // Input
 
+/// The default fill mode of the Input.
+/// @group input
+/// @role default
+$kendo-input-default-fill-mode: "solid" !default;
+/// The default roundness of the Input.
+/// @group input
+/// @role default
+$kendo-input-default-roundness: "md" !default;
+/// The default size of the Input.
+/// @group input
+/// @role default
+$kendo-input-default-size: "md" !default;
+
 /// The default width of the Input components.
 /// @group input
 $kendo-input-default-width: 100% !default;
@@ -42,7 +55,7 @@ $kendo-input-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The font size of input components.
 /// @group input
-$kendo-input-font-size: var( --kendo-font-size, inherit )  !default;
+$kendo-input-font-size: null  !default;
 /// The font size of the small Input components.
 /// @group input
 $kendo-input-sm-font-size: var( --kendo-font-size-sm, inherit )!default;
@@ -55,7 +68,7 @@ $kendo-input-lg-font-size: var( --kendo-font-size-lg, inherit )  !default;
 
 /// The line height of input components.
 /// @group input
-$kendo-input-line-height: 1.5 !default;
+$kendo-input-line-height: null !default;
 /// The line height of the small Input components.
 /// @group input
 $kendo-input-sm-line-height: math.div( 20, 14 ) !default;
@@ -69,35 +82,6 @@ $kendo-input-lg-line-height: var( --kendo-line-height, normal) !default;
 $kendo-input-sm-calc-size: calc( ( #{$kendo-input-sm-line-height} * 1em ) + ( #{$kendo-input-sm-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) ) !default;
 $kendo-input-md-calc-size: calc( ( #{$kendo-input-md-line-height} * 1em ) + ( #{$kendo-input-md-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) ) !default;
 $kendo-input-lg-calc-size: calc( ( #{$kendo-input-lg-line-height} * 1em ) + ( #{$kendo-input-lg-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) ) !default;
-
-/// The sizes map for the Input components.
-/// @group input
-$kendo-input-sizes: (
-    sm: (
-        padding-x: $kendo-input-sm-padding-x,
-        padding-y: $kendo-input-sm-padding-y,
-        font-size: $kendo-input-sm-font-size,
-        line-height: $kendo-input-sm-line-height,
-        button-padding-x: $kendo-input-sm-padding-y,
-        button-padding-y: $kendo-input-sm-padding-y
-    ),
-    md: (
-        padding-x: $kendo-input-md-padding-x,
-        padding-y: $kendo-input-md-padding-y,
-        font-size: $kendo-input-md-font-size,
-        line-height: $kendo-input-md-line-height,
-        button-padding-x: $kendo-input-md-padding-y,
-        button-padding-y: $kendo-input-md-padding-y
-    ),
-    lg: (
-        padding-x: $kendo-input-lg-padding-x,
-        padding-y: $kendo-input-lg-padding-y,
-        font-size: $kendo-input-lg-font-size,
-        line-height: $kendo-input-lg-line-height,
-        button-padding-x: $kendo-input-lg-padding-y,
-        button-padding-y: $kendo-input-lg-padding-y
-    )
-) !default;
 
 /// The background color of the Input components.
 /// @group input
@@ -276,6 +260,19 @@ $kendo-input-invalid-border: k-color(error-on-surface) !default;
 /// @group input
 $kendo-input-invalid-shadow: 0 0 0 .25rem color-mix(in srgb, k-color(error) 25%, transparent) !default;
 
+/// The default fill mode of the Picker.
+/// @group picker
+/// @role default
+$kendo-picker-default-fill-mode: "solid" !default;
+/// The default roundness of the Picker.
+/// @group picker
+/// @role default
+$kendo-picker-default-roundness: "md" !default;
+/// The default size of the Picker.
+/// @group picker
+/// @role default
+$kendo-picker-default-size: "md" !default;
+
 /// The background color of the Picker components.
 /// @group picker
 $kendo-picker-bg: k-color(surface-alt) !default;
@@ -342,7 +339,7 @@ $kendo-picker-disabled-shadow: null !default;
 
 /// The background color of the outline Picker components.
 /// @group picker
-$kendo-picker-outline-bg: null !default;
+$kendo-picker-outline-bg: transparent !default;
 /// The text color of the outline Picker components.
 /// @group picker
 $kendo-picker-outline-text: $kendo-button-text !default;
@@ -384,7 +381,7 @@ $kendo-picker-outline-hover-focus-border: null !default;
 
 /// The background color of the flat Picker components.
 /// @group picker
-$kendo-picker-flat-bg: null !default;
+$kendo-picker-flat-bg: transparent !default;
 /// The text color of the flat Picker components.
 /// @group picker
 $kendo-picker-flat-text: $kendo-button-text !default;
@@ -431,6 +428,9 @@ $kendo-use-input-spinner-icon-offset: false !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/input/_variables.scss" with (
+    $kendo-input-default-fill-mode: $kendo-input-default-fill-mode,
+    $kendo-input-default-roundness: $kendo-input-default-roundness,
+    $kendo-input-default-size: $kendo-input-default-size,
     $kendo-input-default-width: $kendo-input-default-width,
     $kendo-input-border-width: $kendo-input-border-width,
     $kendo-input-border-radius: $kendo-input-border-radius,
@@ -452,7 +452,6 @@ $kendo-use-input-spinner-icon-offset: false !default;
     $kendo-input-sm-calc-size: $kendo-input-sm-calc-size,
     $kendo-input-md-calc-size: $kendo-input-md-calc-size,
     $kendo-input-lg-calc-size: $kendo-input-lg-calc-size,
-    $kendo-input-sizes: $kendo-input-sizes,
     $kendo-input-bg: $kendo-input-bg,
     $kendo-input-text: $kendo-input-text,
     $kendo-input-border: $kendo-input-border,
@@ -507,6 +506,9 @@ $kendo-use-input-spinner-icon-offset: false !default;
     $kendo-input-suffix-bg: $kendo-input-suffix-bg,
     $kendo-input-invalid-border: $kendo-input-invalid-border,
     $kendo-input-invalid-shadow: $kendo-input-invalid-shadow,
+    $kendo-picker-default-fill-mode: $kendo-picker-default-fill-mode,
+    $kendo-picker-default-roundness: $kendo-picker-default-roundness,
+    $kendo-picker-default-size: $kendo-picker-default-size,
     $kendo-picker-bg: $kendo-picker-bg,
     $kendo-picker-text: $kendo-picker-text,
     $kendo-picker-border: $kendo-picker-border,

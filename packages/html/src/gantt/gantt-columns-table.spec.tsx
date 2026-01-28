@@ -10,7 +10,6 @@ export const GanttColumnsTable: KendoComponent<KendoTableOptions & React.HTMLAtt
         React.HTMLAttributes<HTMLTableElement>
 ) => (
     <Table
-        size="medium"
         {...props}
         className={classNames(
             props.className,

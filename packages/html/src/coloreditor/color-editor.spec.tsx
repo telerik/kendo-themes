@@ -16,7 +16,7 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
 };
 
 export type KendoColorEditorOptions = {
@@ -40,7 +40,6 @@ export type KendoColorEditorProps = KendoColorEditorOptions & {
 export type KendoColorEditorState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    size: Size.medium,
     view: 'gradient',
     palette: PALETTEPRESETS.office,
     actionButtons: true,
@@ -53,7 +52,7 @@ export const ColorEditor: KendoComponent<KendoColorEditorProps & KendoColorEdito
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         view = defaultOptions.view,
         palette = defaultOptions.palette,
         color,

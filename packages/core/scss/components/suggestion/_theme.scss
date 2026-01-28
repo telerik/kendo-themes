@@ -1,81 +1,78 @@
 @use "./_variables.scss" as *;
 @use "../../mixins/index.scss" as *;
-
 @use "../../spacing/index.scss" as *;
 @use "../../color-system/_functions.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "../../_variables.scss" as *;
 
 @mixin kendo-suggestion--theme-base() {
     .k-suggestion {
-        @include fill(
-            $kendo-suggestion-text,
-            $kendo-suggestion-bg,
-            $kendo-suggestion-border
-        );
-
-        &:hover,
-        &.k-hover {
-            @include fill(
-                $kendo-suggestion-hover-text,
-                $kendo-suggestion-hover-bg,
-                $kendo-suggestion-hover-border
-            );
-        }
-
-        &:active,
-        &.k-active {
-            @include fill(
-                $kendo-suggestion-active-text,
-                $kendo-suggestion-active-bg,
-                $kendo-suggestion-active-border
-            );
-        }
 
         &:focus,
         &.k-focus {
             @include focus-indicator( 0 0 $kendo-suggestion-focus-shadow-blur $kendo-suggestion-focus-shadow-spread $kendo-suggestion-focus-shadow-color );
         }
+
+        @each $name, $props in $kendo-suggestion-theme-colors {
+            $_suggestion-text: k-color(#{$name}-on-subtle);
+            $_suggestion-bg: k-color(#{$name}-subtle);
+            $_suggestion-border: k-color(#{$name}-emphasis);
+            $_suggestion-hover-text: k-color(#{$name}-on-subtle);
+            $_suggestion-hover-bg: k-color(#{$name}-subtle-hover);
+            $_suggestion-hover-border: k-color(#{$name}-emphasis);
+            $_suggestion-active-text: k-color(#{$name}-on-subtle);
+            $_suggestion-active-bg: k-color(#{$name}-subtle-active);
+            $_suggestion-active-border: k-color(#{$name}-emphasis);
+
+            #{k-when-default($kendo-suggestion-default-theme-color, $name)}
+            &.k-suggestion-#{$name} {
+                @include fill(
+                    $_suggestion-text,
+                    $_suggestion-bg,
+                    $_suggestion-border
+                );
+
+                &:hover,
+                &.k-hover {
+                    @include fill(
+                        $_suggestion-hover-text,
+                        $_suggestion-hover-bg,
+                        $_suggestion-hover-border
+                    );
+                }
+
+                &:active,
+                &.k-active {
+                    @include fill(
+                        $_suggestion-active-text,
+                        $_suggestion-active-bg,
+                        $_suggestion-active-border
+                    );
+                }
+            }
+        }
     }
 
-    @each $name, $props in $kendo-suggestion-theme-colors {
+    .k-suggestion-group-scrollable-end::before,
+    .k-suggestion-scrollwrap .k-suggestion-group-scrollable-end::before {
+        background: linear-gradient(270deg, $kendo-suggestion-scroll-gradient);
+    }
 
-        $_suggestion-text: k-color(#{$name}-on-subtle);
-        $_suggestion-bg: k-color(#{$name}-subtle);
-        $_suggestion-border: k-color(#{$name}-emphasis);
+    .k-suggestion-group-scrollable-start::after,
+    .k-suggestion-scrollwrap .k-suggestion-group-scrollable-start::after {
+        background: linear-gradient(90deg, $kendo-suggestion-scroll-gradient);
+    }
 
-        $_suggestion-hover-text: k-color(#{$name}-on-subtle);
-        $_suggestion-hover-bg: k-color(#{$name}-subtle-hover);
-        $_suggestion-hover-border: k-color(#{$name}-emphasis);
+    .k-rtl,
+    [dir="rtl"] {
+        .k-suggestion-group-scrollable-end::before,
+        .k-suggestion-scrollwrap .k-suggestion-group-scrollable-end::before {
+            background: linear-gradient(90deg, $kendo-suggestion-scroll-gradient);
+        }
 
-        $_suggestion-active-text: k-color(#{$name}-on-subtle);
-        $_suggestion-active-bg: k-color(#{$name}-subtle-active);
-        $_suggestion-active-border: k-color(#{$name}-emphasis);
-
-
-        .k-suggestion-#{$name} {
-            @include fill(
-                $_suggestion-text,
-                $_suggestion-bg,
-                $_suggestion-border
-            );
-
-            &:hover,
-            &.k-hover {
-                @include fill(
-                    $_suggestion-hover-text,
-                    $_suggestion-hover-bg,
-                    $_suggestion-hover-border
-                );
-            }
-
-            &:active,
-            &.k-active {
-                @include fill(
-                    $_suggestion-active-text,
-                    $_suggestion-active-bg,
-                    $_suggestion-active-border
-                );
-            }
+        .k-suggestion-group-scrollable-start::after,
+        .k-suggestion-scrollwrap .k-suggestion-group-scrollable-start::after {
+            background: linear-gradient(270deg, $kendo-suggestion-scroll-gradient);
         }
     }
 

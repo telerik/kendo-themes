@@ -169,20 +169,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tooltip-theme-colors</td>
-    <td>Map</td>
-    <td><code>(
-    "primary": k-color(primary),
-    "secondary": k-color(secondary),
-    "tertiary": k-color(tertiary),
-    "info": k-color(info),
-    "success": k-color(success),
-    "warning": k-color(warning),
-    "error": k-color(error),
-    "dark": k-color(dark),
-    "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
-)</code></td>
-    <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li><li>tertiary: var(--kendo-color-tertiary, #6f42c1)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>success: var(--kendo-color-success, #198754)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>dark: var(--kendo-color-dark, #212529)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>inverse: var(--kendo-color-dark, #212529)</li></ul></td>
+    <td>List</td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Tooltip.</div></div>
@@ -192,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tooltip-theme</td>
     <td>Map</td>
     <td><code>tooltip-theme( $kendo-tooltip-theme-colors )</code></td>
-    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse, #ffffff)","background-color":"var(--kendo-color-dark, #212529)","border":"var(--kendo-color-dark, #212529)"</li><li>light: "color":"var(--kendo-color-on-light, #000000)","background-color":"var(--kendo-color-light, #f8f9fa)","border":"var(--kendo-color-light, #f8f9fa)"</li><li>dark: "color":"var(--kendo-color-on-dark, #ffffff)","background-color":"var(--kendo-color-dark, #212529)","border":"var(--kendo-color-dark, #212529)"</li><li>error: "color":"var(--kendo-color-on-error, #ffffff)","background-color":"var(--kendo-color-error, #dc3545)","border":"var(--kendo-color-error, #dc3545)"</li><li>warning: "color":"var(--kendo-color-on-warning, #000000)","background-color":"var(--kendo-color-warning, #ffc107)","border":"var(--kendo-color-warning, #ffc107)"</li><li>success: "color":"var(--kendo-color-on-success, #ffffff)","background-color":"var(--kendo-color-success, #198754)","border":"var(--kendo-color-success, #198754)"</li><li>info: "color":"var(--kendo-color-on-info, #000000)","background-color":"var(--kendo-color-info, #0dcaf0)","border":"var(--kendo-color-info, #0dcaf0)"</li><li>tertiary: "color":"var(--kendo-color-on-tertiary, #ffffff)","background-color":"var(--kendo-color-tertiary, #6f42c1)","border":"var(--kendo-color-tertiary, #6f42c1)"</li><li>secondary: "color":"var(--kendo-color-on-secondary, #ffffff)","background-color":"var(--kendo-color-secondary, #6c757d)","border":"var(--kendo-color-secondary, #6c757d)"</li><li>primary: "color":"var(--kendo-color-on-primary, #ffffff)","background-color":"var(--kendo-color-primary, #0d6efd)","border":"var(--kendo-color-primary, #0d6efd)"</li></ul></td>
+    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse, #ffffff)","background-color":"var(--kendo-color-inverse, #212529)","border":"var(--kendo-color-inverse, #212529)"</li><li>light: "color":"var(--kendo-color-on-light, #000000)","background-color":"var(--kendo-color-light, #f8f9fa)","border":"var(--kendo-color-light, #f8f9fa)"</li><li>dark: "color":"var(--kendo-color-on-dark, #ffffff)","background-color":"var(--kendo-color-dark, #212529)","border":"var(--kendo-color-dark, #212529)"</li><li>error: "color":"var(--kendo-color-on-error, #ffffff)","background-color":"var(--kendo-color-error, #dc3545)","border":"var(--kendo-color-error, #dc3545)"</li><li>warning: "color":"var(--kendo-color-on-warning, #000000)","background-color":"var(--kendo-color-warning, #ffc107)","border":"var(--kendo-color-warning, #ffc107)"</li><li>success: "color":"var(--kendo-color-on-success, #ffffff)","background-color":"var(--kendo-color-success, #198754)","border":"var(--kendo-color-success, #198754)"</li><li>info: "color":"var(--kendo-color-on-info, #000000)","background-color":"var(--kendo-color-info, #0dcaf0)","border":"var(--kendo-color-info, #0dcaf0)"</li><li>tertiary: "color":"var(--kendo-color-on-tertiary, #ffffff)","background-color":"var(--kendo-color-tertiary, #6f42c1)","border":"var(--kendo-color-tertiary, #6f42c1)"</li><li>secondary: "color":"var(--kendo-color-on-secondary, #ffffff)","background-color":"var(--kendo-color-secondary, #6c757d)","border":"var(--kendo-color-secondary, #6c757d)"</li><li>primary: "color":"var(--kendo-color-on-primary, #ffffff)","background-color":"var(--kendo-color-primary, #0d6efd)","border":"var(--kendo-color-primary, #0d6efd)"</li><li>base: "color":"var(--kendo-color-on-base, #212529)","background-color":"var(--kendo-color-base, #dee2e6)","border":"var(--kendo-color-base, #dee2e6)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The generated theme colors map for the Tooltip.</div></div>

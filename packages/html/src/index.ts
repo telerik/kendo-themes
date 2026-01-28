@@ -36,6 +36,9 @@ export * from './radio/index';
 export * from './listbox/index';
 export * from './progressbar/index';
 export * from './slider/index';
+export * from './segmented-control/index';
+export * from './smart-box/index';
+export * from './prompt-box/index';
 
 // Augmented inputs
 export * from './floating-label/index';
@@ -123,8 +126,11 @@ export * from './mediaplayer/index';
 export * from './timeline/index';
 export * from './pdf-viewer/index';
 // export * from './scroller/index';
+export * from './message-box/index';
 export * from './scrollview/index';
+export * from './overlay/index';
 export * from './prompt/index';
+export * from './file-box/index';
 
 // Dataviz
 // export * from './dataviz/index';

@@ -29,9 +29,9 @@ const states = [
 ];
 
 const options = {
-    size: [Size.small, Size.medium, Size.large],
-    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
-    fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
+    size: [Size.undefined, Size.small, Size.medium, Size.large],
+    rounded: [Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    fillMode: [FillMode.undefined, FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
 export type KendoDateTimePickerOptions = {
@@ -58,10 +58,7 @@ export type KendoDateTimePickerProps = KendoDateTimePickerOptions & {
 export type KendoDateTimePickerState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    tab: 'date',
-    size: Input.defaultOptions.size,
-    rounded: Input.defaultOptions.rounded,
-    fillMode: Input.defaultOptions.fillMode
+    tab: 'date'
 } as const;
 
 export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDateTimePickerState & React.HTMLAttributes<HTMLSpanElement>> = (
@@ -70,9 +67,9 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
+        size,
+        rounded,
+        fillMode,
         tab = defaultOptions.tab,
         prefix,
         suffix,
@@ -173,7 +170,7 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
                     footer={
 
                         <ActionSheetFooter>
-                            <Button text="Cancel" size="large" themeColor="base" className="k-time-cancel" />
+                            <Button text="Cancel" size="large" className="k-time-cancel" />
                             <Button text="Set" size="large" themeColor="primary" className="k-time-accept" />
                         </ActionSheetFooter>
                     }

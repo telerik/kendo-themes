@@ -28,7 +28,6 @@ export const ChatSendButton = (
     return (
         <Button
             {...other}
-            fillMode="solid"
             themeColor="primary"
             rounded="full"
             icon={generating ? "stop-sm" : "paper-plane"}

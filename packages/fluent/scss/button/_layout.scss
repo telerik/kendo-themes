@@ -2,6 +2,7 @@
 @use "sass:math";
 @use "../core/_index.scss" as *;
 @use "../core/z-index/index.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/button/_layout.scss" as *;
 
@@ -19,197 +20,205 @@
         }
 
         // Fix for focused button with full roundness
+        #{k-when-default($kendo-button-default-roundness, "full")}
         &.k-rounded-full {
             &:focus::after,
             &.k-focus::after {
                border-radius: inherit;
             }
         }
-    }
 
-    .k-button-sm {
-        font-weight: $kendo-font-weight-normal;
-    }
+        #{k-when-default($kendo-button-default-size, "sm")}
+        &.k-button-sm {
+            font-weight: $kendo-font-weight-normal;
+        }
 
+        // Sizing
+        @each $size, $size-props in $kendo-button-sizes {
+            $_padding-x: map.get( $size-props, padding-x );
+            $_padding-y: map.get( $size-props, padding-y );
+            $_font-size: map.get( $size-props, font-size );
+            $_line-height: map.get( $size-props, line-height );
 
-    // Sizing
-    @each $size, $size-props in $kendo-button-sizes {
-        $_padding-x: map.get( $size-props, padding-x );
-        $_padding-y: map.get( $size-props, padding-y );
-        $_font-size: map.get( $size-props, font-size );
-        $_line-height: map.get( $size-props, line-height );
+            #{k-when-default($kendo-button-default-size, $size)}
+            &.k-button-#{$size} {
+                &.k-icon-button {
 
-        .k-icon-button.k-button-#{$size} {
+                    .k-button-icon {
 
-            .k-button-icon {
+                        &.k-svg-icon > svg,
+                        &.k-icon-md > svg {
+                            width: var( --kendo-icon-size-md, 1rem );
+                            height: var( --kendo-icon-size-md, 1rem );
+                        }
 
-                &.k-svg-icon > svg,
-                &.k-icon-md > svg {
-                    width: var( --kendo-icon-size-md, 1rem );
-                    height: var( --kendo-icon-size-md, 1rem );
-                }
+                        &.k-icon-xs > svg {
+                            width: var( --kendo-icon-size-sm, 0.75rem );
+                            height: var( --kendo-icon-size-sm, 0.75rem )s;
+                        }
 
-                &.k-icon-xs > svg {
-                    width: var( --kendo-icon-size-sm, 0.75rem );
-                    height: var( --kendo-icon-size-sm, 0.75rem )s;
-                }
+                        &.k-icon-sm > svg {
+                            width: var( --kendo-icon-size-sm, 0.875rem );
+                            height: var( --kendo-icon-size-sm, 0.875rem );
+                        }
 
-                &.k-icon-sm > svg {
-                    width: var( --kendo-icon-size-sm, 0.875rem );
-                    height: var( --kendo-icon-size-sm, 0.875rem );
-                }
+                        &.k-icon-lg > svg {
+                            width: var( --kendo-icon-size-lg, 1.25rem );
+                            height: var( --kendo-icon-size-lg, 1.25rem );
+                        }
 
-                &.k-icon-lg > svg {
-                    width: var( --kendo-icon-size-lg, 1.25rem );
-                    height: var( --kendo-icon-size-lg, 1.25rem );
-                }
+                        &.k-icon-xl > svg {
+                            width: var( --kendo-icon-size-xl, 1.5rem );
+                            height: var( --kendo-icon-size-xl, 1.5rem );
+                        }
 
-                &.k-icon-xl > svg {
-                    width: var( --kendo-icon-size-xl, 1.5rem );
-                    height: var( --kendo-icon-size-xl, 1.5rem );
-                }
+                        &.k-icon-xxl > svg {
+                            width: var( --kendo-icon-size-xxl, 2rem );
+                            height: var( --kendo-icon-size-xxl, 2rem );
+                        }
 
-                &.k-icon-xxl > svg {
-                    width: var( --kendo-icon-size-xxl, 2rem );
-                    height: var( --kendo-icon-size-xxl, 2rem );
-                }
-
-                &.k-icon-xxxl > svg {
-                    width: var( --kendo-icon-size-xxl, 3rem );
-                    height: var( --kendo-icon-size-xxl, 3rem );
+                        &.k-icon-xxxl > svg {
+                            width: var( --kendo-icon-size-xxl, 3rem );
+                            height: var( --kendo-icon-size-xxl, 3rem );
+                        }
+                    }
                 }
             }
         }
-    }
 
 
-    // Flat button
-    .k-button-flat {
-        color: inherit;
-        border-color: transparent !important; // stylelint-disable-line declaration-no-important
-        box-shadow: none;
-
-        &:focus::after,
-        &.k-focus::after {
-            @include border-radius( inherit );
-            inset: $kendo-button-flat-focus-offset;
+        // Flat button
+        #{k-when-default($kendo-button-default-fill-mode, "flat")}
+        &.k-button-flat {
+            color: inherit;
+            border-color: transparent !important; // stylelint-disable-line declaration-no-important
             box-shadow: none;
-        }
-    }
 
-    .k-button-flat-base {
-        color: inherit;
-        background: none !important; // stylelint-disable-line declaration-no-important
-        border-color: transparent !important; // stylelint-disable-line declaration-no-important
-
-        // Overlay
-        &::before {
-            @include border-radius( inherit );
-            content: "";
-            background: currentColor;
-            opacity: 0;
-            display: block;
-            pointer-events: none;
-            position: absolute;
-            inset-inline-start: calc(-1 * #{$kendo-button-border-width});
-            inset-inline-end: calc(-1 * #{$kendo-button-border-width});
-            inset-block-start: calc(-1 * #{$kendo-button-border-width});
-            inset-block-end: calc(-1 * #{$kendo-button-border-width});
-            z-index: k-z-index("base");
-            transition: opacity k-transition(rapid);
-        }
-
-        // Hovered state
-        &:hover,
-        &.k-hover {
-            &::before {
-                opacity: .03;
-            }
-        }
-
-        // Focused state
-        &:focus,
-        &.k-focus {
-            &::before {
-                opacity: 0;
+            &:focus::after,
+            &.k-focus::after {
+                @include border-radius( inherit );
+                inset: $kendo-button-flat-focus-offset;
+                box-shadow: none;
             }
 
-            &::after {
-                // outline-color: currentColor !important; // stylelint-disable-line declaration-no-important
-                opacity: .13;
-            }
+            #{k-when-default($kendo-button-default-theme-color, "base")}
+            &.k-button-base {
+                color: inherit;
+                background: none !important; // stylelint-disable-line declaration-no-important
+                border-color: transparent !important; // stylelint-disable-line declaration-no-important
 
-            // Focus and hovered state
-            &:hover,
-            &.k-hover {
+                // Overlay
                 &::before {
-                    opacity: .05;
+                    @include border-radius( inherit );
+                    content: "";
+                    background: currentColor;
+                    opacity: 0;
+                    display: block;
+                    pointer-events: none;
+                    position: absolute;
+                    inset-inline-start: calc(-1 * #{$kendo-button-border-width});
+                    inset-inline-end: calc(-1 * #{$kendo-button-border-width});
+                    inset-block-start: calc(-1 * #{$kendo-button-border-width});
+                    inset-block-end: calc(-1 * #{$kendo-button-border-width});
+                    z-index: k-z-index("base");
+                    transition: opacity k-transition(rapid);
+                }
+
+                // Hovered state
+                &:hover,
+                &.k-hover {
+                    &::before {
+                        opacity: .03;
+                    }
+                }
+
+                // Focused state
+                &:focus,
+                &.k-focus {
+                    &::before {
+                        opacity: 0;
+                    }
+
+                    &::after {
+                        // outline-color: currentColor !important; // stylelint-disable-line declaration-no-important
+                        opacity: .13;
+                    }
+
+                    // Focus and hovered state
+                    &:hover,
+                    &.k-hover {
+                        &::before {
+                            opacity: .05;
+                        }
+                    }
+                }
+
+                &.k-no-focus:not(:hover),
+                &.k-no-focus:not(.k-hover) {
+                    &::before {
+                        opacity: 0;
+                    }
+                }
+
+                // Active state
+                &:active,
+                &.k-active {
+                    &::before {
+                        opacity: .08;
+                    }
+
+                    // Active and hovered state
+                    &:hover,
+                    &.k-hover {
+                        &::before {
+                            opacity: .05;
+                        }
+                    }
+                }
+
+                // Selected state
+                &.k-selected {
+                    &::before {
+                        opacity: .08;
+                    }
+
+                    // Selected and hovered state
+                    &:hover,
+                    &.k-hover {
+                        &::before {
+                            opacity: .05;
+                        }
+                    }
                 }
             }
         }
 
-        &.k-no-focus:not(:hover),
-        &.k-no-focus:not(.k-hover) {
-            &::before {
-                opacity: 0;
+
+        // Link button
+        #{k-when-default($kendo-button-default-fill-mode, "link")}
+        &.k-button-link {
+            &:focus::after,
+            &.k-focus::after {
+                @include border-radius( inherit );
+                inset: $kendo-button-link-focus-offset;
+                // outline-width: $kendo-button-link-focus-outline-width;
+            }
+
+            &:focus,
+            &.k-focus {
+                text-decoration: underline;
             }
         }
 
-        // Active state
-        &:active,
-        &.k-active {
-            &::before {
-                opacity: .08;
+
+        // Clear button
+        #{k-when-default($kendo-button-default-fill-mode, "clear")}
+        &.k-button-clear {
+            &:focus::after,
+            &.k-focus::after {
+                inset: auto;
+                // outline-width: 0;
             }
-
-            // Active and hovered state
-            &:hover,
-            &.k-hover {
-                &::before {
-                    opacity: .05;
-                }
-            }
-        }
-
-        // Selected state
-        &.k-selected {
-            &::before {
-                opacity: .08;
-            }
-
-            // Selected and hovered state
-            &:hover,
-            &.k-hover {
-                &::before {
-                    opacity: .05;
-                }
-            }
-        }
-    }
-
-
-    // Link button
-    .k-button-link {
-        &:focus::after,
-        &.k-focus::after {
-            @include border-radius( inherit );
-            inset: $kendo-button-link-focus-offset;
-            // outline-width: $kendo-button-link-focus-outline-width;
-        }
-
-        &:focus,
-        &.k-focus {
-            text-decoration: underline;
-        }
-    }
-
-
-    // Clear button
-    .k-button-clear {
-        &:focus::after,
-        &.k-focus::after {
-            inset: auto;
-            // outline-width: 0;
         }
     }
 }

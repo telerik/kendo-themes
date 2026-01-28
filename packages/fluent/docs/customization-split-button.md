@@ -87,20 +87,6 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large arrow Button.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-split-button-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: $kendo-split-button-sm-arrow-padding-y,
-    md: $kendo-split-button-md-arrow-padding-y,
-    lg: $kendo-split-button-lg-arrow-padding-y
-)</code></td>
-    <td><ul><li>sm: var(--kendo-split-button-sm-arrow-padding-y, calc(var(--kendo-spacing-0\.5, 0.125rem) + 1px))</li><li>md: var(--kendo-split-button-md-arrow-padding-y, calc(var(--kendo-spacing-1, 0.25rem) + 1px))</li><li>lg: var(--kendo-split-button-lg-arrow-padding-y, calc(var(--kendo-spacing-2, 0.5rem) + 1px))</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the SplitButton.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 

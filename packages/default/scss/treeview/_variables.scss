@@ -2,12 +2,23 @@
 
 // TreeView
 
+/// The default size of the TreeView.
+/// @group treeview
+/// @role default
+$kendo-treeview-default-size: "md" !default;
+/// The gap of the TreeView.
+/// @group treeview
+$kendo-treeview-gap: k-spacing(0.5) !default;
+/// The border radius of the TreeView.
+/// @group treeview
+$kendo-treeview-border-radius: k-border-radius(sm) !default;
+
 /// The font family of the TreeView.
 /// @group treeview
 $kendo-treeview-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the TreeView.
 /// @group treeview
-$kendo-treeview-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-treeview-font-size: null !default;
 /// The font size of the small TreeView.
 /// @group treeview
 $kendo-treeview-sm-font-size: var( --kendo-font-size, inherit ) !default;
@@ -19,7 +30,7 @@ $kendo-treeview-md-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-treeview-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
 /// The line height of the TreeView.
 /// @group treeview
-$kendo-treeview-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-treeview-line-height: null !default;
 /// The line height of the small TreeView.
 /// @group treeview
 $kendo-treeview-sm-line-height: var( --kendo-line-height, normal ) !default;
@@ -78,36 +89,6 @@ $kendo-treeview-md-checkbox-padding-y: $kendo-treeview-sm-checkbox-padding-y !de
 $kendo-treeview-lg-checkbox-padding-y: null !default;
 
 
-/// The sizes map of the TreeView.
-/// @group treeview
-$kendo-treeview-sizes: (
-    sm: (
-        font-size: $kendo-treeview-sm-font-size,
-        line-height: $kendo-treeview-sm-line-height,
-        item-padding-x: $kendo-treeview-sm-item-padding-x,
-        item-padding-y: $kendo-treeview-sm-item-padding-y,
-        checkbox-padding-x: $kendo-treeview-sm-checkbox-padding-x,
-        checkbox-padding-y: $kendo-treeview-sm-checkbox-padding-y
-    ),
-    md: (
-        font-size: $kendo-treeview-md-font-size,
-        line-height: $kendo-treeview-md-line-height,
-        item-padding-x: $kendo-treeview-md-item-padding-x,
-        item-padding-y: $kendo-treeview-md-item-padding-y,
-        checkbox-padding-x: $kendo-treeview-md-checkbox-padding-x,
-        checkbox-padding-y: $kendo-treeview-md-checkbox-padding-y
-    ),
-    lg: (
-        font-size: $kendo-treeview-lg-font-size,
-        line-height: $kendo-treeview-lg-line-height,
-        item-padding-x: $kendo-treeview-lg-item-padding-x,
-        item-padding-y: $kendo-treeview-lg-item-padding-y,
-        checkbox-padding-x: $kendo-treeview-lg-checkbox-padding-x,
-        checkbox-padding-y: $kendo-treeview-lg-checkbox-padding-y
-    )
-) !default;
-
-
 /// The background color of the TreeView.
 /// @group treeview
 $kendo-treeview-bg: null !default;
@@ -120,7 +101,7 @@ $kendo-treeview-border: null !default;
 
 /// The background color of hovered TreeView items.
 /// @group treeview
-$kendo-treeview-item-hover-bg: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
+$kendo-treeview-item-hover-bg: color-mix(in srgb, k-color(on-app-surface) 6%, transparent) !default;
 /// The text color of hovered TreeView items.
 /// @group treeview
 $kendo-treeview-item-hover-text: k-color(on-app-surface) !default;
@@ -133,16 +114,20 @@ $kendo-treeview-item-hover-gradient: null !default;
 
 /// The background color of selected TreeView items.
 /// @group treeview
-$kendo-treeview-item-selected-bg: k-color(primary) !default;
+$kendo-treeview-item-selected-bg: color-mix(in srgb, k-color(on-app-surface) 12%, transparent ) !default;
 /// The text color of selected TreeView items.
 /// @group treeview
-$kendo-treeview-item-selected-text: k-color(on-primary) !default;
+$kendo-treeview-item-selected-text: k-color(on-app-surface) !default;
 /// The border color of selected TreeView items.
 /// @group treeview
 $kendo-treeview-item-selected-border: null !default;
 /// The background gradient of selected TreeView items.
 /// @group treeview
 $kendo-treeview-item-selected-gradient: null !default;
+
+/// The background color of selected and hovered TreeView items.
+/// @group treeview
+$kendo-treeview-item-selected-hover-bg: color-mix(in srgb, k-color(on-app-surface) 18%, transparent ) !default;
 
 /// The box shadow of focused TreeView items.
 /// @group treeview
@@ -183,6 +168,9 @@ $kendo-treeview-loadmore-focus-shadow: $kendo-treeview-item-focus-shadow !defaul
 
 
 @forward "@progress/kendo-theme-core/scss/components/treeview/_variables.scss" with (
+    $kendo-treeview-default-size: $kendo-treeview-default-size,
+    $kendo-treeview-gap: $kendo-treeview-gap,
+    $kendo-treeview-border-radius: $kendo-treeview-border-radius,
     $kendo-treeview-font-family: $kendo-treeview-font-family,
     $kendo-treeview-font-size: $kendo-treeview-font-size,
     $kendo-treeview-sm-font-size: $kendo-treeview-sm-font-size,
@@ -207,7 +195,6 @@ $kendo-treeview-loadmore-focus-shadow: $kendo-treeview-item-focus-shadow !defaul
     $kendo-treeview-sm-checkbox-padding-y: $kendo-treeview-sm-checkbox-padding-y,
     $kendo-treeview-md-checkbox-padding-y: $kendo-treeview-md-checkbox-padding-y,
     $kendo-treeview-lg-checkbox-padding-y: $kendo-treeview-lg-checkbox-padding-y,
-    $kendo-treeview-sizes: $kendo-treeview-sizes,
     $kendo-treeview-bg: $kendo-treeview-bg,
     $kendo-treeview-text: $kendo-treeview-text,
     $kendo-treeview-border: $kendo-treeview-border,
@@ -219,6 +206,7 @@ $kendo-treeview-loadmore-focus-shadow: $kendo-treeview-item-focus-shadow !defaul
     $kendo-treeview-item-selected-text: $kendo-treeview-item-selected-text,
     $kendo-treeview-item-selected-border: $kendo-treeview-item-selected-border,
     $kendo-treeview-item-selected-gradient: $kendo-treeview-item-selected-gradient,
+    $kendo-treeview-item-selected-hover-bg: $kendo-treeview-item-selected-hover-bg,
     $kendo-treeview-item-focus-shadow: $kendo-treeview-item-focus-shadow,
     $kendo-treeview-loadmore-bg: $kendo-treeview-loadmore-bg,
     $kendo-treeview-loadmore-text: $kendo-treeview-loadmore-text,

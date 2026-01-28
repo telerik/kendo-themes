@@ -16,7 +16,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                 <Button className="k-gantt-create" icon="plus">Add Task</Button>
                 <span className="k-spacer"></span>
                 <div className="k-gantt-views-wrapper">
-                    <select className="k-picker k-picker-solid k-dropdown-list k-dropdown k-views-dropdown k-rounded-md">
+                    <select className="k-picker k-dropdown-list k-dropdown k-views-dropdown">
                         <option value="day">Day</option>
                         <option value="week">Week</option>
                         <option value="month">Month</option>

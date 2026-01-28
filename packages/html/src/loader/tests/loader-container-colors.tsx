@@ -14,11 +14,11 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
-            {LoaderContainer.options.themeColor.map((color) => (
+            {LoaderContainer.options.themeColor.map((themeColor) => (
                 <>
                     <span className="example">
-                        <span>{color}</span>
-                        <LoaderContainerNormal size={'large'} themeColor={color} panel={true} />
+                        <span>{`${themeColor}`}</span>
+                        <LoaderContainerNormal size={'large'} themeColor={themeColor} panel={true} />
                     </span>
                 </>
             ))}

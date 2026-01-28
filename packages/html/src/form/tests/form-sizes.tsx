@@ -3,7 +3,7 @@ import { Form, FormNormal, FormHorizontal } from '../../form';
 
 const styles = `
     #test-area {
-        grid-template-columns: 80px repeat(3, 1fr);
+        grid-template-columns: 80px repeat(4, 1fr);
     }
 
     section {
@@ -17,6 +17,7 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
             <span></span>
+            <span>undefined</span>
             <span>small</span>
             <span>medium</span>
             <span>large</span>

@@ -6,53 +6,58 @@
 
 @mixin kendo-bottom-navigation--theme-base() {
 
-    // Solid
-    @each $name, $color in $kendo-bottom-navigation-theme-colors {
-        .k-bottom-nav-solid-#{$name} {
-            @include fill(
-                $color: color-mix(in srgb, k-color(on-#{$name}) 65%, transparent),
-                $bg: $color
-            );
+    .k-bottom-nav {
+    // Fillmode: solid
+        #{k-when-default($kendo-bottom-nav-default-fill-mode, "solid")}
+        &.k-bottom-nav-solid {
+            // Theme colors
+            @each $name in $kendo-bottom-navigation-theme-colors {
+                #{k-when-default($kendo-bottom-nav-default-theme-color, $name)}
+                &.k-bottom-nav-#{$name} {
+                    @include fill(
+                        $color: color-mix(in srgb, k-color(on-#{$name}) 65%, transparent),
+                        $bg: k-color(#{$name})
+                    );
 
-            .k-bottom-nav-item.k-focus,
-            .k-bottom-nav-item:focus {
-                @include fill( $bg: color-mix(in srgb, k-color(on-#{$name}) 12.5%, transparent));
-            }
+                    .k-bottom-nav-item.k-focus,
+                    .k-bottom-nav-item:focus {
+                        @include fill( $bg: color-mix(in srgb, k-color(on-#{$name}) 12.5%, transparent));
+                    }
 
-            .k-bottom-nav-item.k-selected {
-                @include fill( $color: k-color(on-#{$name}));
-            }
-        }
-        // TODO: remove when suites update class names
-        .k-bottom-nav-solid.k-bottom-nav-#{$name} {
-            @extend .k-bottom-nav-solid-#{$name} !optional;
-        }
-    }
-
-    // Flat
-    @each $name, $color in $kendo-bottom-navigation-theme-colors {
-        .k-bottom-nav-flat-#{$name} {
-            @include fill(
-                $kendo-bottom-nav-flat-text,
-                $kendo-bottom-nav-flat-bg,
-                $kendo-bottom-nav-flat-border
-            );
-
-            .k-bottom-nav-item.k-focus,
-            .k-bottom-nav-item:focus {
-                @include fill( $bg: color-mix(in srgb, k-color(on-app-surface) 5%, transparent));
-            }
-
-            .k-bottom-nav-item.k-selected {
-                @if $name == "secondary" or $name == "light" {
-                    @include fill( $color: k-color(#{$name}));
-                } @else {
-                    @include fill( $color: $color );
+                    .k-bottom-nav-item.k-selected {
+                        @include fill( $color: k-color(on-#{$name}));
+                    }
                 }
             }
         }
-        .k-bottom-nav-flat.k-bottom-nav-#{$name} {
-            @extend .k-bottom-nav-flat-#{$name} !optional;
+
+        // Fillmode: flat
+        #{k-when-default($kendo-bottom-nav-default-fill-mode, "flat")}
+        &.k-bottom-nav-flat {
+            // Theme colors
+            @each $name in $kendo-bottom-navigation-theme-colors {
+                #{k-when-default($kendo-bottom-nav-default-theme-color, $name)}
+                &.k-bottom-nav-#{$name} {
+                    @include fill(
+                        $kendo-bottom-nav-flat-text,
+                        $kendo-bottom-nav-flat-bg,
+                        $kendo-bottom-nav-flat-border
+                    );
+
+                    .k-bottom-nav-item.k-focus,
+                    .k-bottom-nav-item:focus {
+                        @include fill( $bg: color-mix(in srgb, k-color(on-app-surface) 5%, transparent));
+                    }
+
+                    .k-bottom-nav-item.k-selected {
+                        @if $name == "secondary" or $name == "light" {
+                            @include fill( $color: k-color(#{$name}));
+                        } @else {
+                            @include fill( $color: k-color(#{$name}) );
+                        }
+                    }
+                }
+            }
         }
     }
 

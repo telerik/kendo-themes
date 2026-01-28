@@ -28,6 +28,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-card-default-theme-color</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the Card.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-card-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-card-padding-x, k-spacing(3) )</code></td>
@@ -555,6 +565,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Card callout.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-card-theme-colors</td>
+    <td>List</td>
+    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Card.</div></div>
     </td>
 </tr>
 </tbody>

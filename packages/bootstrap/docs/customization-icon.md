@@ -28,6 +28,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-icon-default-size</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Icon.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-icon-size</td>
     <td>Number</td>
     <td><code>1rem</code></td>
@@ -125,6 +135,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Padding of the action icons container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-accent-icon-color</td>
+    <td>String</td>
+    <td><code>k-color(tertiary)</code></td>
+    <td><code>var(--kendo-color-tertiary, #6f42c1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of accent icons.</div></div>
     </td>
 </tr>
 </tbody>

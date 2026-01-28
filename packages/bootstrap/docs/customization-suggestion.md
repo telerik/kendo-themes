@@ -78,6 +78,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-suggestion-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Suggestion.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-suggestion-line-height</td>
     <td>String</td>
     <td><code>var( --kendo-line-height, normal )</code></td>
@@ -90,101 +100,11 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-suggestion-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(xl)</code></td>
-    <td><code>var(--kendo-border-radius-xl, 1rem)</code></td>
+    <td><code>k-border-radius(full)</code></td>
+    <td><code>var(--kendo-border-radius-full, 50rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Suggestion.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-suggestion-bg</td>
-    <td>String</td>
-    <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Suggestion.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-suggestion-text</td>
-    <td>String</td>
-    <td><code>k-color(base-on-subtle)</code></td>
-    <td><code>var(--kendo-color-base-on-subtle, #212529)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Suggestion.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-suggestion-border</td>
-    <td>String</td>
-    <td><code>k-color(base-emphasis)</code></td>
-    <td><code>var(--kendo-color-base-emphasis, rgba(33, 37, 41, 0.34))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Suggestion.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-suggestion-hover-bg</td>
-    <td>String</td>
-    <td><code>k-color(base-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-base-subtle-hover, #dee2e6)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Suggestion.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-suggestion-hover-text</td>
-    <td>String</td>
-    <td><code>k-color(base-on-subtle)</code></td>
-    <td><code>var(--kendo-color-base-on-subtle, #212529)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Suggestion.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-suggestion-hover-border</td>
-    <td>String</td>
-    <td><code>k-color(base-emphasis)</code></td>
-    <td><code>var(--kendo-color-base-emphasis, rgba(33, 37, 41, 0.34))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Suggestion.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-suggestion-active-bg</td>
-    <td>String</td>
-    <td><code>k-color(base-subtle-active)</code></td>
-    <td><code>var(--kendo-color-base-subtle-active, #ced4da)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Suggestion.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-suggestion-active-text</td>
-    <td>String</td>
-    <td><code>k-color(base-on-subtle)</code></td>
-    <td><code>var(--kendo-color-base-on-subtle, #212529)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the active Suggestion.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-suggestion-active-border</td>
-    <td>String</td>
-    <td><code>k-color(base-emphasis)</code></td>
-    <td><code>var(--kendo-color-base-emphasis, rgba(33, 37, 41, 0.34))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active Suggestion.</div></div>
     </td>
 </tr>
 <tr>
@@ -218,13 +138,30 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-suggestion-default-theme-color</td>
+    <td>String</td>
+    <td><code>"base"</code></td>
+    <td><code>"base"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the Suggestion.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-suggestion-scroll-gradient</td>
+    <td>List</td>
+    <td><code>rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 1) 100%</code></td>
+    <td><code>(rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient used for scroll indicators in the Suggestion group.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-suggestion-theme-colors</td>
-    <td>Map</td>
-    <td><code>(
-    "primary": k-color(primary),
-    "secondary": k-color(secondary)
-)</code></td>
-    <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li></ul></td>
+    <td>List</td>
+    <td><code>("base", "primary", "secondary")</code></td>
+    <td><code>("base", "primary", "secondary")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Suggestion.</div></div>

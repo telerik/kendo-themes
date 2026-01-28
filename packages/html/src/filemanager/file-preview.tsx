@@ -7,7 +7,7 @@ const FILEPREVIEW_CLASSNAME = 'k-file-preview';
 const states = [];
 
 const options = {
-    size: [ Size.xsmall, Size.small, Size.medium, Size.large, Size.xlarge, Size.xxlarge, Size.xxxlarge ],
+    size: [ Size.undefined, Size.xsmall, Size.small, Size.medium, Size.large, Size.xlarge, Size.xxlarge, Size.xxxlarge ],
 };
 
 export type KendoFilePreviewOptions = {

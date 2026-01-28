@@ -19,6 +19,10 @@ const styles = `
         height: 500px;
         transform: translate( 0, 0 );
     }
+
+    .k-chat {
+        min-height: 470px;
+    }
 `;
 
 export default () =>(

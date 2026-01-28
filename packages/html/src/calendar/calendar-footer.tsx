@@ -4,7 +4,7 @@ import { Button } from '../button';
 const CALENDARFOOTER_CLASSNAME = `k-calendar-footer`;
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
 };
 
 export type KendoCalendarFooterProps = {
@@ -13,7 +13,6 @@ export type KendoCalendarFooterProps = {
 };
 
 const defaultOptions = {
-    size: Size.medium,
     calendarFooterText: "Tuesday, October 12, 2021"
 };
 
@@ -22,7 +21,7 @@ export const CalendarFooter = (
         KendoCalendarFooterProps
 ) => {
     const {
-        size = defaultOptions.size,
+        size,
         calendarFooterText = defaultOptions.calendarFooterText,
         ...other
     } = props;

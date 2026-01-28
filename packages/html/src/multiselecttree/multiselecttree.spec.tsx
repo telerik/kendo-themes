@@ -29,9 +29,9 @@ const states = [
 ];
 
 const options = {
-    size: [Size.small, Size.medium, Size.large],
-    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
-    fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
+    size: [Size.undefined, Size.small, Size.medium, Size.large],
+    rounded: [Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    fillMode: [FillMode.undefined, FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
 export type KendoMultiSelectTreeOptions = {
@@ -60,9 +60,6 @@ export type KendoMultiSelectTreeProps = KendoMultiSelectTreeOptions & {
 export type KendoMultiSelectTreeState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    size: Input.defaultOptions.size,
-    rounded: Input.defaultOptions.rounded,
-    fillMode: Input.defaultOptions.fillMode
 };
 
 export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMultiSelectTreeState & React.HTMLAttributes<HTMLSpanElement>> = (
@@ -71,9 +68,9 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
+        size,
+        rounded,
+        fillMode,
         prefix,
         suffix,
         placeholder,
@@ -168,24 +165,24 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
                     }
                 >
                     <Treeview size="large">
-                        <TreeviewItem top text="Root 1" />
+                        <TreeviewItem text="Root 1" />
                         <TreeviewItem text="Root 2" expanded>
                             <TreeviewGroup>
-                                <TreeviewItem top text="Child 2.1" />
+                                <TreeviewItem text="Child 2.1" />
                                 <TreeviewItem text="Child 2.2">
                                     <TreeviewGroup>
-                                        <TreeviewItem bottom text="Child 2.2.1" />
+                                        <TreeviewItem text="Child 2.2.1" />
                                     </TreeviewGroup>
                                 </TreeviewItem>
                                 <TreeviewItem text="Child 2.3" />
-                                <TreeviewItem bottom leafClassName="k-treeview-load-more-button" text="Load more ..." />
+                                <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more ..." />
                             </TreeviewGroup>
                         </TreeviewItem>
-                        <TreeviewItem bottom text="Root 3">
+                        <TreeviewItem text="Root 3">
                             <TreeviewGroup>
-                                <TreeviewItem top text="Child 3.1" />
+                                <TreeviewItem text="Child 3.1" />
                                 <TreeviewItem text="Child 3.2" />
-                                <TreeviewItem bottom text="Child 3.3" />
+                                <TreeviewItem text="Child 3.3" />
                             </TreeviewGroup>
                         </TreeviewItem>
                     </Treeview>

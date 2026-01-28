@@ -2,6 +2,11 @@
 @use "../core/z-index/index.scss" as *;
 @use "../core/_index.scss" as *;
 
+/// The default theme color of the AppBar.
+/// @group appbar
+/// @role default
+$kendo-appbar-default-theme-color: "light" !default;
+
 /// The horizontal margin of the AppBar.
 /// @group appbar
 $kendo-appbar-margin-x: var( --kendo-appbar-margin-x, k-spacing(0) ) !default;
@@ -58,21 +63,6 @@ $kendo-appbar-dark-bg: k-color(dark) !default;
 /// @group appbar
 $kendo-appbar-dark-text: k-color(on-dark) !default;
 
-/// The theme colors map for the AppBar variations.
-/// @group appbar
-$kendo-appbar-theme-colors: (
-    "primary": k-color(primary),
-    "secondary": k-color(secondary),
-    "tertiary": k-color(tertiary),
-    "info": k-color(info),
-    "success": k-color(success),
-    "warning": k-color(warning),
-    "error": k-color(error),
-    "dark": k-color(dark),
-    "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
-) !default;
-
 @forward "@progress/kendo-theme-core/scss/components/appbar/_variables.scss" with (
     $kendo-appbar-margin-x: $kendo-appbar-margin-x,
     $kendo-appbar-margin-y: $kendo-appbar-margin-y,
@@ -88,5 +78,5 @@ $kendo-appbar-theme-colors: (
     $kendo-appbar-dark-bg: $kendo-appbar-dark-bg,
     $kendo-appbar-light-text: $kendo-appbar-light-text,
     $kendo-appbar-dark-text: $kendo-appbar-dark-text,
-    $kendo-appbar-theme-colors: $kendo-appbar-theme-colors
+    $kendo-appbar-default-theme-color: $kendo-appbar-default-theme-color
 );

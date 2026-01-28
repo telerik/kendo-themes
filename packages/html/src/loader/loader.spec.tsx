@@ -13,8 +13,9 @@ export const LoaderAnimationMap = {
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
     themeColor: [
+        ThemeColor.undefined,
         ThemeColor.base,
         ThemeColor.primary,
         ThemeColor.secondary,
@@ -39,8 +40,6 @@ export type KendoLoaderProps = KendoLoaderOptions & {
 };
 
 const defaultOptions = {
-    size: Size.medium,
-    themeColor: ThemeColor.primary,
     animation: 'pulsing'
 } as const;
 
@@ -49,8 +48,8 @@ export const Loader: KendoComponent<KendoLoaderProps & React.HTMLAttributes<HTML
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        themeColor = defaultOptions.themeColor,
+        size,
+        themeColor,
         animation = defaultOptions.animation,
         ...other
     } = props;

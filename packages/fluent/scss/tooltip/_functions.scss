@@ -1,16 +1,26 @@
 @use "sass:map";
+@use "sass:list";
 @use "../core/_index.scss" as *;
 
 
 @function tooltip-theme( $colors ) {
     $_theme: ();
+    $_solid-colors: ("primary", "dark", "light", "inverse");
 
-    @each $name, $color in $colors {
-        $_theme: map.merge(( $name: (
-            color: k-color(on-#{$name}),
-            background-color: $color,
-            border: $color,
-        )), $_theme );
+    @each $name in $colors {
+        @if list.index($_solid-colors, $name) {
+            $_theme: map.merge(( $name: (
+                color: k-color(on-#{$name}),
+                background-color: k-color(#{$name}),
+                border: k-color(#{$name}),
+            )), $_theme );
+        } @else {
+            $_theme: map.merge(( $name: (
+                color: k-color(#{$name}-on-subtle),
+                background-color: k-color(#{$name}-subtle),
+                border: k-color(#{$name}-subtle),
+            )), $_theme );
+        }
     }
 
     @return $_theme;

@@ -30,9 +30,9 @@ const states = [
 ];
 
 const options = {
-    size: [Size.small, Size.medium, Size.large],
-    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
-    fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
+    size: [Size.undefined, Size.small, Size.medium, Size.large],
+    rounded: [Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    fillMode: [FillMode.undefined, FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
 export type KendoTimePickerOptions = {
@@ -57,9 +57,6 @@ export type KendoTimePickerProps = KendoTimePickerOptions & {
 export type KendoTimePickerState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    size: Input.defaultOptions.size,
-    rounded: Input.defaultOptions.rounded,
-    fillMode: Input.defaultOptions.fillMode
 };
 
 
@@ -69,9 +66,9 @@ export const TimePicker: KendoComponent<KendoTimePickerProps & KendoTimePickerSt
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
+        size,
+        rounded,
+        fillMode,
         prefix,
         suffix,
         value,
@@ -174,7 +171,7 @@ export const TimePicker: KendoComponent<KendoTimePickerProps & KendoTimePickerSt
                     }
                     footer={
                         <ActionSheetFooter>
-                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Cancel" size="large" />
                             <Button text="Set time" size="large" themeColor="primary" />
                         </ActionSheetFooter>
                     }

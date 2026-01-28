@@ -40,7 +40,8 @@ function _kebabToPascalCase(string) {
     });
 
     // Add variables from theme core that are not present in the current theme
-    if (meta.name !== 'core') {
+    // Skip for utils package as it's standalone and doesn't inherit from core
+    if (meta.name !== 'core' && meta.name !== 'utils') {
         const coreRawDataFile = path.resolve( themeDir, '../core/dist/meta', 'sassdoc-raw-data.json' );
         if (fs.existsSync( coreRawDataFile ) === false) {
             return;

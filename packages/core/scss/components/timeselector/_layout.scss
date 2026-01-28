@@ -2,6 +2,7 @@
 @use "sass:list";
 @use "../../color-system/_constants.scss" as *;
 @use "../../mixins/index.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../button/_variables.scss" as *;
 @use "../../z-index/index.scss" as *;
@@ -15,8 +16,6 @@
         box-sizing: border-box;
         outline: 0;
         font-family: $kendo-time-selector-font-family;
-        font-size: $kendo-time-selector-font-size;
-        line-height: $kendo-time-selector-line-height;
         position: relative;
         overflow: hidden;
         display: flex;
@@ -24,6 +23,39 @@
         user-select: none;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        // Time selector sizes
+        @each $size, $size-props in $kendo-time-selector-sizes {
+            $_font-size: map.get( $size-props, font-size );
+            $_line-height: map.get( $size-props, line-height );
+            $_list-item-padding-x: map.get( $size-props, list-item-padding-x );
+            $_list-item-padding-y: map.get( $size-props, list-item-padding-y );
+            $_highlight-height: calc( calc( #{$_font-size} * #{$_line-height} ) + calc( #{ $_list-item-padding-y} * 2 ) );
+
+            #{k-when-default( $kendo-time-selector-default-size, $size)}
+            &.k-timeselector-#{$size} {
+                font-size: $_font-size;
+                line-height: $_line-height;
+
+                .k-time-highlight,
+                .k-time-list-highlight {
+                    height: $_highlight-height;
+                }
+
+                .k-time-separator {
+                    height:  $_highlight-height;
+                }
+
+                .k-time-list-item,
+                .k-time-list .k-item {
+                    padding-block: $_list-item-padding-y;
+                    padding-inline: $_list-item-padding-x;
+                }
+            }
+        }
+
+        font-size: $kendo-time-selector-font-size;
+        line-height: $kendo-time-selector-line-height;
     }
 
     .k-popup > .k-timeselector {
@@ -215,36 +247,4 @@
         z-index: k-z-index("base", 1);
         inset-block-start: calc( #{list.slash( $kendo-time-list-title-height, 2 )} );
     }
-
-
-    // Time selector sizes
-    @each $size, $size-props in $kendo-time-selector-sizes {
-        $_font-size: map.get( $size-props, font-size );
-        $_line-height: map.get( $size-props, line-height );
-        $_list-item-padding-x: map.get( $size-props, list-item-padding-x );
-        $_list-item-padding-y: map.get( $size-props, list-item-padding-y );
-        $_highlight-height: calc( calc( #{$_font-size} * #{$_line-height} ) + calc( #{ $_list-item-padding-y} * 2 ) );
-
-
-        .k-timeselector-#{$size} {
-            font-size: $_font-size;
-            line-height: $_line-height;
-
-            .k-time-highlight,
-            .k-time-list-highlight {
-                height: $_highlight-height;
-            }
-
-            .k-time-separator {
-                height:  $_highlight-height;
-            }
-
-            .k-time-list-item,
-            .k-time-list .k-item {
-                padding-block: $_list-item-padding-y;
-                padding-inline: $_list-item-padding-x;
-            }
-        }
-    }
-
 }

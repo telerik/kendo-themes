@@ -28,6 +28,46 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-fab-default-theme-color</td>
+    <td>String</td>
+    <td><code>"primary"</code></td>
+    <td><code>"primary"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-default-fill-mode</td>
+    <td>String</td>
+    <td><code>"solid"</code></td>
+    <td><code>"solid"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default fill mode of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-default-roundness</td>
+    <td>String</td>
+    <td><code>"full"</code></td>
+    <td><code>"full"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default roundness of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-default-size</td>
+    <td>String</td>
+    <td><code>"md"</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-fab-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -278,50 +318,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-theme-colors</td>
-    <td>Map</td>
-    <td><code>(
-    "primary": k-color(primary),
-    "secondary": k-color(secondary),
-    "tertiary": k-color(tertiary),
-    "info": k-color(info),
-    "success": k-color(success),
-    "warning": k-color(warning),
-    "error": k-color(error),
-    "dark": k-color(dark),
-    "light": k-color(light),
-    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
-)</code></td>
-    <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>secondary: var(--kendo-color-secondary, #6c757d)</li><li>tertiary: var(--kendo-color-tertiary, #6f42c1)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>success: var(--kendo-color-success, #198754)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>dark: var(--kendo-color-dark, #212529)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>inverse: var(--kendo-color-dark, #212529)</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: (
-        padding-x: $kendo-fab-sm-padding-x,
-        padding-y: $kendo-fab-sm-padding-y
-    ),
-    md: (
-        padding-x: $kendo-fab-md-padding-x,
-        padding-y: $kendo-fab-md-padding-y
-    ),
-    lg: (
-        padding-x: $kendo-fab-lg-padding-x,
-        padding-y: $kendo-fab-lg-padding-y
-    )
-)</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)"</li><li>md: "padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>lg: "padding-x":"var(--kendo-spacing-6, 1.5rem)","padding-y":"var(--kendo-spacing-6, 1.5rem)"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map for the FAB.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-fab-shadow</td>
     <td>String</td>
     <td><code>k-elevation(5)</code></td>
@@ -499,6 +495,39 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Тhe opacity of the generating FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-theme-colors</td>
+    <td>List</td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the FloatingActionButton.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        padding-x: $kendo-fab-sm-padding-x,
+        padding-y: $kendo-fab-sm-padding-y
+    ),
+    md: (
+        padding-x: $kendo-fab-md-padding-x,
+        padding-y: $kendo-fab-md-padding-y
+    ),
+    lg: (
+        padding-x: $kendo-fab-lg-padding-x,
+        padding-y: $kendo-fab-lg-padding-y
+    )
+)</code></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)"</li><li>md: "padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>lg: "padding-x":"var(--kendo-spacing-6, 1.5rem)","padding-y":"var(--kendo-spacing-6, 1.5rem)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the FloatingActionButton.</div></div>
     </td>
 </tr>
 </tbody>

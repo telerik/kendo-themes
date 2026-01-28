@@ -1,4 +1,5 @@
 @use "./_variables.scss" as *;
+@use "../../functions/index.scss" as *;
 @use "sass:map";
 
 @mixin kendo-table--layout-base() {
@@ -222,33 +223,37 @@
         overflow: hidden;
     }
 
+    .k-table,
+    .k-data-table {
+        // Sizes
+        @each $size, $size-props in $kendo-table-sizes {
+            $_font-size: map.get( $size-props, font-size);
+            $_line-height: map.get( $size-props, line-height);
+            $_cell-padding-x: map.get( $size-props, cell-padding-x);
+            $_cell-padding-y: map.get( $size-props, cell-padding-y);
 
-    // Sizes
-    @each $size, $size-props in $kendo-table-sizes {
-        $_font-size: map.get( $size-props, font-size);
-        $_line-height: map.get( $size-props, line-height);
-        $_cell-padding-x: map.get( $size-props, cell-padding-x);
-        $_cell-padding-y: map.get( $size-props, cell-padding-y);
+            #{k-when-default($kendo-table-default-size, $size)}
+            &.k-table-#{$size} {
+                font-size: $_font-size;
+                line-height: $_line-height;
 
-        .k-table-#{$size} {
-            font-size: $_font-size;
-            line-height: $_line-height;
-        }
+                .k-table-th,
+                .k-table-td {
+                    padding-block: $_cell-padding-y;
+                    padding-inline: $_cell-padding-x;
+                }
 
-        .k-table-#{$size} .k-table-th,
-        .k-table-#{$size} .k-table-td {
-            padding-block: $_cell-padding-y;
-            padding-inline: $_cell-padding-x;
-        }
+                .k-table-list .k-table-group-td > span {
+                    padding-block: 0;
+                    padding-inline: calc( #{$_cell-padding-x} / 2 );
+                }
 
-        .k-table-#{$size} .k-table-list .k-table-group-td > span {
-            padding-block: 0;
-            padding-inline: calc( #{$_cell-padding-x} / 2 );
-        }
+                .k-table-list .k-table-group-row::before {
+                    padding-block: $_cell-padding-y;
+                    padding-inline: 0;
+                }
+            }
 
-        .k-table-#{$size} .k-table-list .k-table-group-row::before {
-            padding-block: $_cell-padding-y;
-            padding-inline: 0;
         }
     }
 

@@ -2,6 +2,11 @@
 @use "../core/_index.scss" as *;
 @use "../list/_variables.scss" as *;
 
+/// The default size of the Table.
+/// @group table
+/// @role default
+$kendo-table-default-size: "md" !default;
+
 /// The width of the table border.
 /// @group table
 $kendo-table-border-width: var( --kendo-table-border-width, 1px ) !default;
@@ -34,38 +39,6 @@ $kendo-table-lg-cell-padding-y: var( --kendo-table-lg-cell-padding-y, #{k-spacin
 /// Font weight of the table header cells.
 /// @group table
 $kendo-table-header-font-weight: var( --kendo-table-header-font-weight, var( --kendo-font-weight-normal, normal ) ) !default;
-
-/// The sizes of the table.
-/// @group table
-$kendo-table-sizes: (
-    sm: (
-        font-size: var( --kendo-font-size, inherit ),
-        line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: $kendo-table-sm-cell-padding-x,
-        cell-padding-y: $kendo-table-sm-cell-padding-y,
-        group-label-padding-x: $kendo-list-item-group-label-sm-padding-x,
-        group-label-padding-y: $kendo-list-item-group-label-sm-padding-y,
-        group-label-font-size: $kendo-list-item-group-label-sm-font-size
-    ),
-    md: (
-        font-size: var( --kendo-font-size, inherit ),
-        line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: $kendo-table-md-cell-padding-x,
-        cell-padding-y: $kendo-table-md-cell-padding-y,
-        group-label-padding-x: $kendo-list-item-group-label-md-padding-x,
-        group-label-padding-y: $kendo-list-item-group-label-md-padding-y,
-        group-label-font-size: $kendo-list-item-group-label-md-font-size
-    ),
-    lg: (
-        font-size: var( --kendo-font-size, inherit ),
-        line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: $kendo-table-lg-cell-padding-x,
-        cell-padding-y: $kendo-table-lg-cell-padding-y,
-        group-label-padding-x: $kendo-list-item-group-label-lg-padding-x,
-        group-label-padding-y: $kendo-list-item-group-label-lg-padding-y,
-        group-label-font-size: $kendo-list-item-group-label-lg-font-size
-    )
-) !default;
 
 /// Background color of tables.
 /// @group table
@@ -186,6 +159,7 @@ $kendo-table-selected-highlighted-bg: var( --kendo-table-selected-highlighted-bg
 $kendo-table-cell-row-span-shadow: var( --kendo-table-cell-row-span-shadow, inset 0 0 0 1px #{$kendo-table-border} ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/table/_variables.scss" with (
+    $kendo-table-default-size: $kendo-table-default-size,
     $kendo-table-border-width: $kendo-table-border-width,
     $kendo-table-cell-vertical-border-width: $kendo-table-cell-vertical-border-width,
     $kendo-table-cell-horizontal-border-width: $kendo-table-cell-horizontal-border-width,
@@ -195,7 +169,6 @@ $kendo-table-cell-row-span-shadow: var( --kendo-table-cell-row-span-shadow, inse
     $kendo-table-md-cell-padding-y: $kendo-table-md-cell-padding-y,
     $kendo-table-lg-cell-padding-x: $kendo-table-lg-cell-padding-x,
     $kendo-table-lg-cell-padding-y: $kendo-table-lg-cell-padding-y,
-    $kendo-table-sizes: $kendo-table-sizes,
     $kendo-table-bg: $kendo-table-bg,
     $kendo-table-text: $kendo-table-text,
     $kendo-table-border: $kendo-table-border,

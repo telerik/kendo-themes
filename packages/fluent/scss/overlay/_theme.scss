@@ -3,13 +3,4 @@
 
 @mixin kendo-overlay--theme() {
     @include kendo-overlay--theme-base();
-
-    .k-overlay,
-    .k-overlay-dark {
-        background-color: $kendo-overlay-dark;
-    }
-
-    .k-overlay-light {
-        background-color: $kendo-overlay-light;
-    }
 }

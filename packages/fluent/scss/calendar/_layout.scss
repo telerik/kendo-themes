@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/calendar/_layout.scss" as *;
 
@@ -12,6 +13,17 @@
             white-space: normal;
             position: relative;
             overflow: hidden;
+        }
+
+        @each $size, $size-props in $kendo-calendar-sizes {
+            $_cell-font-size: map.get($size-props, cell-font-size);
+
+            #{k-when-default($kendo-calendar-default-size, $size)}
+            &.k-calendar-#{$size} {
+                .k-calendar-td {
+                    font-size: $_cell-font-size;
+                }
+            }
         }
     }
 
@@ -111,14 +123,6 @@
 
     .k-calendar-td.k-empty {
         pointer-events: none;
-    }
-
-    @each $size, $size-props in $kendo-calendar-sizes {
-        $_cell-font-size: map.get($size-props, cell-font-size);
-
-        .k-calendar-#{$size} .k-calendar-td {
-            font-size: $_cell-font-size;
-        }
     }
 
 }

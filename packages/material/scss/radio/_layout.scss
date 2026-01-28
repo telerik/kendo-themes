@@ -1,12 +1,27 @@
 @use "sass:map";
 @use "./_variables.scss" as *;
 @use "../core/z-index/index.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/radio/_layout.scss" as *;
 
 
 @mixin kendo-radio--layout() {
 
     @include kendo-radio--layout-base();
+
+    .k-radio {
+        @each $size, $size-props in $kendo-radio-sizes {
+            $_indicator-size: map.get( $size-props, indicator-size );
+
+            #{k-when-default($kendo-radio-default-size, $size)}
+            &.k-radio-#{$size} {
+                &::after {
+                    width: $_indicator-size;
+                    height: $_indicator-size;
+                }
+            }
+        }
+    }
 
     // RadioButton
     // Hover and Focus indicator
@@ -30,15 +45,4 @@
             }
         }
     }
-
-    @each $size, $size-props in $kendo-radio-sizes {
-        $_size: map.get( $size-props, size );
-        $_indicator-size: map.get( $size-props, indicator-size );
-
-        .k-radio-#{$size}::after {
-            width: $_indicator-size;
-            height: $_indicator-size;
-        }
-    }
-
 }

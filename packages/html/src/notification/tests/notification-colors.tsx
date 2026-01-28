@@ -17,10 +17,10 @@ export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
-            {Notification.options.themeColor.map((color) => (
+            {Notification.options.themeColor.map((themeColor) => (
                 <div>
                     <AnimationContainer>
-                        <NotificationClosable themeColor={color} text={`${color} notification`} />
+                        <NotificationClosable themeColor={themeColor} text={`${themeColor} notification`} />
                     </AnimationContainer>
                 </div>
             ))}

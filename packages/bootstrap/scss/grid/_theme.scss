@@ -309,6 +309,15 @@
         @include fill( $kendo-grid-header-text, $kendo-grid-header-bg, $kendo-grid-header-border );
     }
 
+    .k-grid-sticky-container {
+        background-color: inherit;
+    }
+
+    .k-grid-sticky-top-container:has(> .k-grid-group-sticky-header-table),
+    .k-grid-sticky-bottom-container:has(> .k-grid-group-sticky-footer-table) {
+        border-color: $kendo-grid-sticky-border;
+    }
+
     .k-column-list-item:hover,
     .k-columnmenu-item:hover {
         @include fill(

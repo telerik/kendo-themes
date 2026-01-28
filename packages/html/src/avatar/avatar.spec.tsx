@@ -19,10 +19,11 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
+    rounded: [ Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    fillMode: [ FillMode.undefined, FillMode.solid, FillMode.outline ],
     themeColor: [
+        ThemeColor.undefined,
         ThemeColor.base,
         ThemeColor.primary,
         ThemeColor.secondary,
@@ -53,10 +54,6 @@ export type KendoAvatarState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
     type: avatarType.TEXT,
-    size: Size.medium,
-    rounded: Roundness.full,
-    fillMode: FillMode.solid,
-    themeColor: ThemeColor.primary,
     border: false
 };
 
@@ -66,10 +63,10 @@ export const Avatar: KendoComponent<KendoAvatarProps & KendoAvatarState & React.
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultOptions.size,
-        rounded = defaultOptions.rounded,
-        fillMode = defaultOptions.fillMode,
-        themeColor = defaultOptions.themeColor,
+        size,
+        rounded,
+        fillMode,
+        themeColor,
         type = defaultOptions.type,
         border = defaultOptions.border,
         ...other

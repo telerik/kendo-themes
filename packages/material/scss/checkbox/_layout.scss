@@ -1,11 +1,26 @@
 @use "sass:map";
 @use "./_variables.scss" as *;
 @use "../core/z-index/index.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/checkbox/_layout.scss" as *;
 
 
 @mixin kendo-checkbox--layout() {
     @include kendo-checkbox--layout-base();
+
+    .k-checkbox {
+        @each $size, $size-props in $kendo-checkbox-sizes {
+            $_indicator-size: map.get( $size-props, indicator-size );
+
+            #{k-when-default($kendo-checkbox-default-size, $size)}
+            &.k-checkbox-#{$size} {
+                &::after {
+                    width: $_indicator-size;
+                    height: $_indicator-size;
+                }
+            }
+        }
+    }
 
     // Checkbox
     // Hover and Focus indicator
@@ -27,16 +42,6 @@
                 z-index: k-z-index("bottom");
                 transform: translate(-50%, -50%);
             }
-        }
-    }
-
-    @each $size, $size-props in $kendo-checkbox-sizes {
-        $_size: map.get( $size-props, size );
-        $_indicator-size: map.get( $size-props, indicator-size );
-
-        .k-checkbox-#{$size}::after {
-            width: $_indicator-size;
-            height: $_indicator-size;
         }
     }
 }

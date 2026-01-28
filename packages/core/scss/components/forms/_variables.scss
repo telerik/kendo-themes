@@ -1,5 +1,7 @@
 // Forms
 
+$kendo-form-default-size: null !default;
+
 $kendo-form-spacer: null !default;
 
 $kendo-form-font-size: null !default;
@@ -59,5 +61,17 @@ $kendo-form-field-info-margin: null !default;
 
 $kendo-fieldset-legend-text: null !default;
 
-$kendo-form-sizes: null !default;
+/// The sizes map of the Form.
+/// @group form
+$kendo-form-sizes: (
+    sm: (
+        form-rows-spacing: $kendo-form-sm-rows-spacing
+    ),
+    md: (
+        form-rows-spacing: $kendo-form-md-rows-spacing
+    ),
+    lg: (
+        form-rows-spacing: $kendo-form-lg-rows-spacing
+    )
+) !default;
 

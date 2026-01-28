@@ -29,7 +29,7 @@ jobs:
 
     permissions:
       id-token: write # Required by npm OIDC trusted publishing
-      contents: read
+      contents: write # Allows lerna to create tags
       packages: read
 
     steps:
@@ -63,7 +63,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v6
         with:
-          node-version: 22.x
+          node-version: 24.x
           registry-url: "https://registry.npmjs.org"
 
       - name: Install

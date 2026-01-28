@@ -32,7 +32,7 @@ export default () => (
                     }
                     footer={
                         <ActionSheetFooter>
-                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Cancel" size="large" />
                             <Button text="Set" size="large" themeColor="primary" />
                         </ActionSheetFooter>
                     }
@@ -52,7 +52,7 @@ export default () => (
                     }
                     footer={
                         <ActionSheetFooter>
-                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Cancel" size="large" />
                             <Button text="Set" size="large" themeColor="primary" />
                         </ActionSheetFooter>
                     }

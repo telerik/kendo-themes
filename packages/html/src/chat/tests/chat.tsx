@@ -1,9 +1,11 @@
 import { ChatHeader, ChatMessage, ChatNormal, ChatTimestamp, ChatMessageGroup, ChatEvent } from '..';
+import { ToolbarItem } from '../../toolbar';
 
 
 const styles = `
     .k-chat {
         min-height: 370px;
+        max-height: 370px;
         min-width: auto;
     }
 `;
@@ -51,7 +53,7 @@ export default () =>(
             <section>
                 <ChatNormal header={
                     <ChatHeader>
-                        Alex
+                        <ToolbarItem>Alex</ToolbarItem>
                     </ChatHeader>
                 }>
                     <ChatMessageGroup>
@@ -74,7 +76,7 @@ export default () =>(
             <section>
                 <ChatNormal header={
                     <ChatHeader>
-                        Alex
+                        <ToolbarItem>Alex</ToolbarItem>
                     </ChatHeader>
                 }>
                     <ChatTimestamp>Day, Month 7, 2023</ChatTimestamp>
@@ -89,7 +91,7 @@ export default () =>(
 
             <span>Chat with typing indicator</span>
             <span>Chat with event</span>
-            <span></span>
+            <span>Horizontal separator when scrollbar appears</span>
 
             <section>
                 <ChatNormal>
@@ -107,6 +109,27 @@ export default () =>(
                     <ChatTimestamp>Day, Month 7, 2023</ChatTimestamp>
                     <ChatEvent></ChatEvent>
                     <ChatTimestamp>Day, Month 7, 2023</ChatTimestamp>
+                </ChatNormal>
+            </section>
+             <section>
+                <ChatNormal scrollbar={true}>
+                    <ChatTimestamp>Day, Month 7, 2023</ChatTimestamp>
+                    <ChatMessageGroup type="sender">
+                    </ChatMessageGroup>
+                    <ChatMessageGroup>
+                        <ChatMessage />
+                    </ChatMessageGroup><ChatMessageGroup type="sender">
+                        <ChatMessage />
+                    </ChatMessageGroup>
+                    <ChatMessageGroup>
+                        <ChatMessage />
+                    </ChatMessageGroup>
+                    <ChatMessageGroup type="sender">
+                        <ChatMessage />
+                    </ChatMessageGroup>
+                    <ChatMessageGroup>
+                        <ChatMessage />
+                    </ChatMessageGroup>
                 </ChatNormal>
             </section>
 

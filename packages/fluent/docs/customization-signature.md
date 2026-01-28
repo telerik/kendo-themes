@@ -208,32 +208,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-signature-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: (
-        padding-x: $kendo-signature-sm-padding-x,
-        padding-y: $kendo-signature-sm-padding-y,
-        line-size: $kendo-signature-sm-line-size
-    ),
-    md: (
-        padding-x: $kendo-signature-md-padding-x,
-        padding-y: $kendo-signature-md-padding-y,
-        line-size: $kendo-signature-md-line-size
-    ),
-    lg: (
-        padding-x: $kendo-signature-lg-padding-x,
-        padding-y: $kendo-signature-lg-padding-y,
-        line-size: $kendo-signature-lg-line-size
-    )
-)</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-signature-sm-padding-x, var(--kendo-spacing-1, 0.25rem))","padding-y":"var(--kendo-signature-sm-padding-y, var(--kendo-spacing-0\\.5, 0.125rem))","line-size":"var(--kendo-signature-sm-line-size, calc(100% - 2 * var(--kendo-signature-sm-padding-x, var(--kendo-spacing-1, 0.25rem))))"</li><li>md: "padding-x":"var(--kendo-signature-md-padding-x, var(--kendo-spacing-1, 0.25rem))","padding-y":"var(--kendo-signature-md-padding-y, var(--kendo-spacing-1, 0.25rem))","line-size":"var(--kendo-signature-md-line-size, calc(100% - 2 * var(--kendo-signature-md-padding-x, var(--kendo-spacing-1, 0.25rem))))"</li><li>lg: "padding-x":"var(--kendo-signature-lg-padding-x, var(--kendo-spacing-1, 0.25rem))","padding-y":"var(--kendo-signature-lg-padding-y, var(--kendo-spacing-1\\.5, 0.375rem))","line-size":"var(--kendo-signature-lg-line-size, calc(100% - 2 * var(--kendo-signature-lg-padding-x, var(--kendo-spacing-1, 0.25rem))))"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the signature component.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-signature-actions-gap</td>
     <td>String</td>
     <td><code>var( --kendo-signature-actions-gap, k-spacing(1) )</code></td>
@@ -261,6 +235,32 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The min-height of the large size signature component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-signature-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        padding-x: $kendo-signature-sm-padding-x,
+        padding-y: $kendo-signature-sm-padding-y,
+        line-size: $kendo-signature-sm-line-size
+    ),
+    md: (
+        padding-x: $kendo-signature-md-padding-x,
+        padding-y: $kendo-signature-md-padding-y,
+        line-size: $kendo-signature-md-line-size
+    ),
+    lg: (
+        padding-x: $kendo-signature-lg-padding-x,
+        padding-y: $kendo-signature-lg-padding-y,
+        line-size: $kendo-signature-lg-line-size
+    )
+)</code></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-signature-sm-padding-x, var(--kendo-spacing-1, 0.25rem))","padding-y":"var(--kendo-signature-sm-padding-y, var(--kendo-spacing-0\\.5, 0.125rem))","line-size":"var(--kendo-signature-sm-line-size, calc(100% - 2 * var(--kendo-signature-sm-padding-x, var(--kendo-spacing-1, 0.25rem))))"</li><li>md: "padding-x":"var(--kendo-signature-md-padding-x, var(--kendo-spacing-1, 0.25rem))","padding-y":"var(--kendo-signature-md-padding-y, var(--kendo-spacing-1, 0.25rem))","line-size":"var(--kendo-signature-md-line-size, calc(100% - 2 * var(--kendo-signature-md-padding-x, var(--kendo-spacing-1, 0.25rem))))"</li><li>lg: "padding-x":"var(--kendo-signature-lg-padding-x, var(--kendo-spacing-1, 0.25rem))","padding-y":"var(--kendo-signature-lg-padding-y, var(--kendo-spacing-1\\.5, 0.375rem))","line-size":"var(--kendo-signature-lg-line-size, calc(100% - 2 * var(--kendo-signature-lg-padding-x, var(--kendo-spacing-1, 0.25rem))))"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Signature.</div></div>
     </td>
 </tr>
 </tbody>

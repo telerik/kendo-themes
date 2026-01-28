@@ -1,5 +1,9 @@
 // Loader
 
+$kendo-loader-default-size: null !default;
+
+$kendo-loader-default-theme-color: null !default;
+
 $kendo-loader-segment-border-radius: null !default;
 
 $kendo-loader-sm-segment-size: null !default;
@@ -50,4 +54,6 @@ $kendo-loading-text: null !default;
 $kendo-loading-opacity: null !default;
 $kendo-zindex-loading: null !default;
 
-$kendo-loader-theme-colors: null !default;
+/// The theme colors map of the Loader.
+/// @group loader
+$kendo-loader-theme-colors: ("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse") !default;

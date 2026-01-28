@@ -53,9 +53,8 @@
         .k-bubble-expandable-indicator {
             padding-inline: $kendo-bubble-expandable-icon-padding-x;
             padding-block: $kendo-bubble-expandable-icon-padding-y;
-            margin-block-start: calc( #{$kendo-bubble-padding-y} * -1);
             margin-inline-end: calc( #{$kendo-bubble-padding-x} * -1);
-            margin-block-end: calc( ( #{$kendo-bubble-padding-x} / 2 ) * -1);
+            margin-block: calc( (#{$kendo-bubble-expandable-icon-padding-y} - #{$kendo-bubble-border-width} * 2 ) * -1);
             display: flex;
             flex-shrink: 0;
             cursor: pointer;

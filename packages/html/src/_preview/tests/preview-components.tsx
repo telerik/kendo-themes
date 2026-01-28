@@ -265,7 +265,7 @@ export default () => (
 
                             <div className="k-d-grid k-grid-rows k-gap-10">
                                 <div className="k-d-grid k-grid-cols-4 k-gap-2">
-                                    <AvatarIcon fillMode="outline" tthemeColor="primary" border>
+                                    <AvatarIcon fillMode="outline" themeColor="primary" border>
                                         <Icon icon="x" />
                                     </AvatarIcon>
                                     <AvatarIcon themeColor="primary">
@@ -427,7 +427,7 @@ export default () => (
 
                             <div>
                                 <TreeviewNormal>
-                                    <TreeviewItem top text="Normal" />
+                                    <TreeviewItem text="Normal" />
                                     <TreeviewItem text="Hover" hover />
                                     <TreeviewItem text="Focus" focus/>
                                     <TreeviewItem text="Hover + Focus" hover focus/>
@@ -437,7 +437,7 @@ export default () => (
                                     <TreeviewItem text="Selected focus" selected focus/>
                                     <TreeviewItem text="Disabled" disabled/>
                                     <TreeviewItem text="Disabled focus" disabled focus/>
-                                    <TreeviewItem bottom leafClassName="k-treeview-load-more-button" text="Load more..."/>
+                                    <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more..."/>
                                 </TreeviewNormal>
                             </div>
 

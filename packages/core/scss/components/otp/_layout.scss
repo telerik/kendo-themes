@@ -1,6 +1,6 @@
 @use "sass:map";
 @use "./_variables.scss" as *;
-
+@use "../../functions/index.scss" as *;
 @use "../input/_variables.scss" as *;
 
 @mixin kendo-otp--layout-base() {
@@ -15,25 +15,28 @@
             text-align: center;
             padding-inline: 0;
         }
-    }
 
-    @each $size, $size-props in $kendo-otp-sizes {
-        $_gap: map.get($size-props, gap);
-        $_separator-padding-x: map.get($size-props, separator-padding-x);
-        $_input-width: map.get($size-props, input-width);
+        @each $size, $size-props in $kendo-otp-sizes {
+            $_gap: map.get($size-props, gap);
+            $_separator-padding-x: map.get($size-props, separator-padding-x);
+            $_input-width: map.get($size-props, input-width);
 
-        .k-otp-#{$size} {
-            gap: $_gap;
+            #{k-when-default($kendo-input-default-size, $size)}
+            &.k-otp-#{$size} {
+                gap: $_gap;
 
-            .k-otp-input {
-                min-width: $_input-width;
-            }
+                .k-otp-input {
+                    min-width: $_input-width;
+                }
 
-            .k-otp-separator:not(:empty) {
-                padding-inline: $_separator-padding-x;
+                .k-otp-separator:not(:empty) {
+                    padding-inline: $_separator-padding-x;
+                }
             }
         }
     }
+
+
 }
 
 @mixin kendo-otp--layout() {

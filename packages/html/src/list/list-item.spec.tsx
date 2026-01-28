@@ -21,13 +21,12 @@ export type KendoListItemProps = {
     text?: string;
     groupLabel?: string;
     group?: boolean;
-    showIcon?: boolean;
     iconName?: string;
+    iconClassName?: string;
     checked?: boolean;
     showCheckbox?: boolean;
-    role?: string;
-    'aria-selected'?: 'true' | 'false';
-    tabIndex?: number;
+    actions?: React.JSX.Element;
+    description?: string;
 };
 
 export type KendoListItemState = { [K in (typeof states)[number]]?: boolean };
@@ -41,17 +40,16 @@ export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & 
         text,
         groupLabel,
         group,
-        showIcon,
         iconName,
+        iconClassName,
         showCheckbox,
         checked,
         hover,
         focus,
         selected,
         disabled,
-        role,
-        'aria-selected': ariaSelected,
-        tabIndex,
+        actions,
+        description,
         ...other
     } = props;
 
@@ -77,8 +75,10 @@ export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & 
             {...(tabIndex !== undefined && { tabIndex })}
         >
             {showCheckbox && <Checkbox checked={checked} />}
-            {showIcon && <Icon icon={iconName} />}
+            {iconName && <span className="k-list-item-icon-wrapper"><Icon icon={iconName} className={classNames("k-list-item-icon", iconClassName)} /></span>}
             <span className="k-list-item-text">{textOrChildren}</span>
+            {actions && <div className="k-list-item-actions">{actions}</div>}
+            {description && <span className="k-list-item-description">{description}</span>}
             {groupLabel && groupLabel !== '' && <div className="k-list-item-group-label">{groupLabel}</div>}
         </li>
     );

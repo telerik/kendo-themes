@@ -1,4 +1,5 @@
-import { ChatNormal, ChatMessage, ChatFileWrapper, ChatFile, ChatMessageGroup } from '..';
+import { ChatNormal, ChatMessage, ChatMessageGroup } from '..';
+import { FileBoxWrapper, FileBox } from '../../file-box';
 
 
 const styles = `
@@ -22,10 +23,10 @@ export default () => (
                     <ChatMessageGroup fullWidth type="sender" avatar={null} author={null}>
                         <ChatMessage files={
                             <>
-                                <ChatFileWrapper>
-                                    <ChatFile />
-                                    <ChatFile icon="file-csv" name="Another file with even longer name" size="5MB" />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper layout='vertical'>
+                                    <FileBox />
+                                    <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
+                                </FileBoxWrapper>
                             </>
                         }/>
                     </ChatMessageGroup>
@@ -40,10 +41,10 @@ export default () => (
                     <ChatMessageGroup avatar={null} fullWidth author={null}>
                         <ChatMessage files={
                             <>
-                                <ChatFileWrapper>
-                                    <ChatFile />
-                                    <ChatFile icon="file-csv" name="Another file with even longer name" size="5MB" />
-                                </ChatFileWrapper>
+                                <FileBoxWrapper layout='vertical'>
+                                    <FileBox />
+                                    <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
+                                </FileBoxWrapper>
                             </>
                         }/>
                     </ChatMessageGroup>
