@@ -69,6 +69,7 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        id = 'combobox',
         size,
         rounded,
         fillMode,

@@ -73,6 +73,7 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        id = 'multiselect',
         size,
         rounded,
         fillMode,

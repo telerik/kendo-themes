@@ -147,6 +147,10 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
     return (
         <div
             {...other}
+            {...(role && { role })}
+            {...(ariaLabel && { 'aria-label': ariaLabel })}
+            {...(ariaLabelledby && { 'aria-labelledby': ariaLabelledby })}
+            {...(ariaMultiselectable && { 'aria-multiselectable': ariaMultiselectable })}
             className={classNames(
                 props.className,
                 LIST_CLASSNAME,

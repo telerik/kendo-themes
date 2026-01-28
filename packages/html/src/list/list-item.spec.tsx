@@ -50,6 +50,9 @@ export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & 
         disabled,
         actions,
         description,
+        role,
+        'aria-selected': ariaSelected,
+        tabIndex,
         ...other
     } = props;
 

@@ -70,6 +70,7 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
         Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>
 ) => {
     const {
+        id = 'dropdownlist',
         size,
         rounded,
         fillMode,

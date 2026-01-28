@@ -113,7 +113,6 @@ export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorG
                             role="slider"
                             aria-label="Color well with two-dimensional slider for selecting saturation and lightness"
                             aria-valuetext="Saturation 50, Lightness 50"
-                            aria-orientation="undefined"
                             style={dragHandleStyle} ></div>
                         </div>
                     </div>
@@ -141,7 +140,6 @@ export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorG
                             role="slider"
                             aria-label="Color well with two-dimensional slider for selecting saturation and lightness"
                             aria-valuetext="Saturation 50, Lightness 50"
-                            aria-orientation="undefined"
                             style={dragHandleStyle} ></div>
                         </div>
                     </div>
