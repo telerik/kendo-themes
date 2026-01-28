@@ -57,11 +57,14 @@ export const OrgchartDemo = (props: KendoOrgchartProps & { variant?: (typeof var
                     <OrgchartGroup
                         orientation="vertical"
                         justifyContent="center"
-                    >
-                        <OrgchartNode {...nodeProps} lineBottom ></OrgchartNode>
-                        <OrgchartNode {...nodeProps} lineBottom></OrgchartNode>
-                        <OrgchartNode {...nodeProps} lineBottom button></OrgchartNode>
-                    </OrgchartGroup>
+                        nodes={
+                            <>
+                                <OrgchartNode {...nodeProps} lineBottom ></OrgchartNode>
+                                <OrgchartNode {...nodeProps} lineBottom></OrgchartNode>
+                                <OrgchartNode {...nodeProps} lineBottom button></OrgchartNode>
+                            </>
+                        }
+                    />
                 </OrgchartVertical>
             );
     }
