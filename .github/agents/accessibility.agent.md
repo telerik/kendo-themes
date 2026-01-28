@@ -1,7 +1,7 @@
 ---
 name: accessibility-specialist
 description: Comprehensive accessibility agent that applies WAI-ARIA attributes, validates compliance, and generates reports following WCAG 2.2 guidelines.
-tools: ['runCommands', 'edit/editFiles', 'search/fileSearch', 'search/listDirectory', 'search/readFile', 'search/codebase', 'todos', 'runSubagent']
+tools: ['execute/getTerminalOutput', 'execute/runInTerminal', 'read/readFile', 'read/terminalSelection', 'read/terminalLastCommand', 'edit/editFiles', 'search/codebase', 'search/fileSearch', 'search/listDirectory', 'agent', 'todo']
 ---
 
 ## Role
