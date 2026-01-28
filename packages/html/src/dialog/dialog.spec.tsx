@@ -55,6 +55,12 @@ export const Dialog: KendoComponent<KendoDialogProps & React.HTMLAttributes<HTML
     const titlebarId = `${id}-titlebar`;
     const contentId = `${id}-content`;
 
+    // Check if this is a predefined dialog (alert, confirm, prompt)
+    const isPredefinedDialog = props.className &&
+        (props.className.includes('k-alert') ||
+         props.className.includes('k-confirm') ||
+         props.className.includes('k-prompt'));
+
     return (
         <div className="k-dialog-wrapper">
             { modal &&
@@ -67,7 +73,7 @@ export const Dialog: KendoComponent<KendoDialogProps & React.HTMLAttributes<HTML
                     "k-window",
                     optionClassNames(DIALOG_CLASSNAME, { themeColor })
                 )}
-                role="dialog"
+                role={isPredefinedDialog ? "alertdialog" : "dialog"}
                 {...(title !== undefined
                     ? { 'aria-labelledby': titlebarId }
                     : props['aria-label'] ? {} : { 'aria-label': 'Dialog' }

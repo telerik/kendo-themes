@@ -1,20 +1,38 @@
 {
   "meta": {
-    "timestamp": "2026-01-28T11:54:54.991Z",
+    "timestamp": "2026-01-28T11:59:19.814Z",
     "complianceLevel": "AA",
-    "filesTested": 5,
+    "filesTested": 6,
     "wcagVersion": "2.2"
   },
   "summary": {
-    "totalViolations": 0,
-    "totalPasses": 121,
-    "avgScore": 100
+    "totalViolations": 1,
+    "totalPasses": 147,
+    "avgScore": 99.38333333333333
   },
-  "criteriaGroups": {},
+  "criteriaGroups": {
+    "4.1.2": {
+      "criterion": "4.1.2",
+      "level": "A",
+      "violations": [
+        {
+          "page": "./tests/dialog/dialog-predefined.html",
+          "rule": "label",
+          "description": "Ensure every form element has a label",
+          "impact": "critical",
+          "nodeCount": 1
+        }
+      ],
+      "affectedPages": [
+        "./tests/dialog/dialog-predefined.html"
+      ],
+      "pageCount": 1
+    }
+  },
   "detailedResults": [
     {
       "filePath": "./tests/dialog/dialog.html",
-      "timestamp": "2026-01-28T11:54:53.786Z",
+      "timestamp": "2026-01-28T11:59:18.244Z",
       "violations": [],
       "filteredPageLevel": 0,
       "passes": [
@@ -190,7 +208,7 @@
     },
     {
       "filePath": "./tests/dialog/dialog-theme-colors.html",
-      "timestamp": "2026-01-28T11:54:54.102Z",
+      "timestamp": "2026-01-28T11:59:18.639Z",
       "violations": [],
       "filteredPageLevel": 0,
       "passes": [
@@ -365,8 +383,287 @@
       "inapplicable": 63
     },
     {
+      "filePath": "./tests/dialog/dialog-predefined.html",
+      "timestamp": "2026-01-28T11:59:18.916Z",
+      "violations": [
+        {
+          "id": "label",
+          "impact": "critical",
+          "tags": [
+            "cat.forms",
+            "wcag2a",
+            "wcag412",
+            "section508",
+            "section508.22.n",
+            "TTv5",
+            "TT5.c",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "ACT"
+          ],
+          "description": "Ensure every form element has a label",
+          "help": "Form elements must have labels",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label?application=webdriverjs",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "implicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element does not have an implicit (wrapped) <label>"
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element does not have an explicit <label>"
+                },
+                {
+                  "id": "aria-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-label attribute does not exist or is empty"
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no title attribute"
+                },
+                {
+                  "id": "non-empty-placeholder",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no placeholder attribute"
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "critical",
+              "html": "<input class=\"k-input k-input-md k-rounded-md k-input-solid\" type=\"text\">",
+              "target": [
+                "input"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "wcagCriteria": [
+            "4.1.2"
+          ],
+          "severity": "critical"
+        }
+      ],
+      "filteredPageLevel": 0,
+      "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-allowed-role",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "wcagCriteria": []
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-deprecated-role",
+          "description": "Ensure elements do not use deprecated roles",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-dialog-name",
+          "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
+          "wcagCriteria": []
+        },
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-required-attr",
+          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-roles",
+          "description": "Ensure all elements with a role attribute use a valid value",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "button-name",
+          "description": "Ensure buttons have discernible text",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "landmark-one-main",
+          "description": "Ensure the document has a main landmark",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        },
+        {
+          "id": "nested-interactive",
+          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "page-has-heading-one",
+          "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+          "wcagCriteria": []
+        },
+        {
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "duplicate-id-aria",
+          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
+          "wcagCriteria": [
+            "4.1.2"
+          ],
+          "nodes": 2
+        }
+      ],
+      "inapplicable": 60
+    },
+    {
       "filePath": "./tests/dialog/dialog-modal.html",
-      "timestamp": "2026-01-28T11:54:54.336Z",
+      "timestamp": "2026-01-28T11:59:19.163Z",
       "violations": [],
       "filteredPageLevel": 0,
       "passes": [
@@ -542,7 +839,7 @@
     },
     {
       "filePath": "./tests/dialog/dialog-in-window.html",
-      "timestamp": "2026-01-28T11:54:54.558Z",
+      "timestamp": "2026-01-28T11:59:19.405Z",
       "violations": [],
       "filteredPageLevel": 0,
       "passes": [
@@ -716,7 +1013,7 @@
     },
     {
       "filePath": "./tests/dialog/dialog-action-buttons.html",
-      "timestamp": "2026-01-28T11:54:54.787Z",
+      "timestamp": "2026-01-28T11:59:19.631Z",
       "violations": [],
       "filteredPageLevel": 0,
       "passes": [

@@ -1,281 +1,99 @@
 {
-  "timestamp": "2026-01-28T11:45:18.964Z",
+  "timestamp": "2026-01-28T11:58:56.907Z",
   "summary": {
-    "filesTested": 4,
+    "filesTested": 6,
     "skipped": 0,
-    "passed": 0,
-    "violations": 18
+    "passed": 33,
+    "violations": 3
   },
   "results": [
     {
-      "filePath": "./tests/window/window.html",
-      "spec": "aria/window_aria.md",
-      "totalRules": 2,
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-window:not(.k-dialog)",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-window\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\">Title</span>\n                    <div class=\"k-window-titlebar-actions\">\n       ",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-window:not(.k-dialog)",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-window\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\"></span>\n                    <div class=\"k-window-titlebar-actions\">\n            ",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-window:not(.k-dialog)",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-window\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\"></span>\n                </div>\n                <div class=\"k-window-content\">Win",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-window:not(.k-dialog)",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-window\">\n                <div class=\"k-window-content\">Window without a title</div>\n            </div>",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-window:not(.k-dialog)",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-window k-window-minimized\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\">Window minimized</span>\n                    <div class=\"k-win",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        }
-      ],
-      "passed": 0,
-      "violationCount": 5
+      "filePath": "./tests/dialog/dialog.html",
+      "spec": "aria/dialog_aria.md",
+      "totalRules": 4,
+      "violations": [],
+      "passed": 6,
+      "violationCount": 0
     },
     {
-      "filePath": "./tests/window/window-theme-colors.html",
-      "spec": "aria/window_aria.md",
-      "totalRules": 2,
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-window:not(.k-dialog)",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-window\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\">Title</span>\n                    <div class=\"k-window-titlebar-actions\">\n       ",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-window:not(.k-dialog)",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-window k-window-primary\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\">Title</span>\n                    <div class=\"k-window-titlebar-",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-window:not(.k-dialog)",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-window k-window-light\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\">Title</span>\n                    <div class=\"k-window-titlebar-ac",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-window:not(.k-dialog)",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-window k-window-dark\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\">Title</span>\n                    <div class=\"k-window-titlebar-act",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        }
-      ],
-      "passed": 0,
-      "violationCount": 4
+      "filePath": "./tests/dialog/dialog-theme-colors.html",
+      "spec": "aria/dialog_aria.md",
+      "totalRules": 4,
+      "violations": [],
+      "passed": 8,
+      "violationCount": 0
     },
     {
-      "filePath": "./tests/window/window-rtl.html",
-      "spec": "aria/window_aria.md",
-      "totalRules": 2,
+      "filePath": "./tests/dialog/dialog-predefined.html",
+      "spec": "aria/dialog_aria.md",
+      "totalRules": 4,
       "violations": [
         {
           "rule": {
-            "selector": ".k-window:not(.k-dialog)",
+            "selector": ".k-dialog",
             "attribute": "role=dialog",
             "usage": "Announces the dialog role of the component."
           },
-          "element": "<div class=\"k-window\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\">Title</span>\n                    <div class=\"k-window-titlebar-actions\">\n       ",
+          "element": "<div class=\"k-prompt k-dialog k-window\" role=\"alertdialog\" aria-labelledby=\"k-dialog-titlebar\" aria-describedby=\"k-dialog-content\" aria-modal=\"true\">\n                    <div class=\"k-window-titlebar ",
           "index": 0,
           "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
+          "reason": "incorrect-value",
+          "expected": "dialog",
+          "actual": "alertdialog"
         },
         {
           "rule": {
-            "selector": ".k-window:not(.k-dialog)",
+            "selector": ".k-dialog",
             "attribute": "role=dialog",
             "usage": "Announces the dialog role of the component."
           },
-          "element": "<div class=\"k-window\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\"></span>\n                    <div class=\"k-window-titlebar-actions\">\n            ",
+          "element": "<div class=\"k-alert k-dialog k-window\" role=\"alertdialog\" aria-labelledby=\"k-dialog-titlebar\" aria-describedby=\"k-dialog-content\" aria-modal=\"true\">\n                    <div class=\"k-window-titlebar k",
           "index": 1,
           "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
+          "reason": "incorrect-value",
+          "expected": "dialog",
+          "actual": "alertdialog"
         },
         {
           "rule": {
-            "selector": ".k-window:not(.k-dialog)",
+            "selector": ".k-dialog",
             "attribute": "role=dialog",
             "usage": "Announces the dialog role of the component."
           },
-          "element": "<div class=\"k-window\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\"></span>\n                </div>\n                <div class=\"k-window-content\">Win",
+          "element": "<div class=\"k-confirm k-dialog k-window\" role=\"alertdialog\" aria-labelledby=\"k-dialog-titlebar\" aria-describedby=\"k-dialog-content\" aria-modal=\"true\">\n                    <div class=\"k-window-titlebar",
           "index": 2,
           "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-window:not(.k-dialog)",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-window\">\n                <div class=\"k-window-content\">Window without a title</div>\n            </div>",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-window:not(.k-dialog)",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-window k-window-minimized\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\">Window minimized</span>\n                    <div class=\"k-win",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
+          "reason": "incorrect-value",
+          "expected": "dialog",
+          "actual": "alertdialog"
         }
       ],
-      "passed": 0,
-      "violationCount": 5
+      "passed": 6,
+      "violationCount": 3
     },
     {
-      "filePath": "./tests/window/window-action-buttons.html",
-      "spec": "aria/window_aria.md",
-      "totalRules": 2,
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-window:not(.k-dialog)",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-window\">\n            <div class=\"k-window-titlebar\">\n                <span class=\"k-window-title\">Title</span>\n                <div class=\"k-window-titlebar-actions\">\n                   ",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-window:not(.k-dialog)",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-window\">\n            <div class=\"k-window-titlebar\">\n                <span class=\"k-window-title\">Title</span>\n                <div class=\"k-window-titlebar-actions\">\n                   ",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-window:not(.k-dialog)",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-window\">\n            <div class=\"k-window-titlebar\">\n                <span class=\"k-window-title\">Title</span>\n                <div class=\"k-window-titlebar-actions\">\n                   ",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-window:not(.k-dialog)",
-            "attribute": "role=dialog",
-            "usage": "Announces the dialog role of the component."
-          },
-          "element": "<div class=\"k-window\">\n            <div class=\"k-window-titlebar\">\n                <span class=\"k-window-title\">Title</span>\n                <div class=\"k-window-titlebar-actions\">\n                   ",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        }
-      ],
-      "passed": 0,
-      "violationCount": 4
+      "filePath": "./tests/dialog/dialog-modal.html",
+      "spec": "aria/dialog_aria.md",
+      "totalRules": 4,
+      "violations": [],
+      "passed": 3,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/dialog/dialog-in-window.html",
+      "spec": "aria/dialog_aria.md",
+      "totalRules": 4,
+      "violations": [],
+      "passed": 2,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/dialog/dialog-action-buttons.html",
+      "spec": "aria/dialog_aria.md",
+      "totalRules": 4,
+      "violations": [],
+      "passed": 8,
+      "violationCount": 0
     }
   ]
 }
