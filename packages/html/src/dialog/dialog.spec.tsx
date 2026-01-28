@@ -29,6 +29,7 @@ export type KendoDialogOptions = {
 };
 
 export type KendoDialogProps = KendoDialogOptions & {
+    id?: string;
     title?: string;
     actions?: string[];
     actionButtons?: React.JSX.Element;
@@ -41,6 +42,7 @@ export const Dialog: KendoComponent<KendoDialogProps & React.HTMLAttributes<HTML
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        id = 'k-dialog',
         title,
         actions,
         themeColor,
@@ -49,6 +51,9 @@ export const Dialog: KendoComponent<KendoDialogProps & React.HTMLAttributes<HTML
         modal = defaultOptions.modal,
         ...other
     } = props;
+
+    const titlebarId = `${id}-titlebar`;
+    const contentId = `${id}-content`;
 
     return (
         <div className="k-dialog-wrapper">
@@ -61,21 +66,35 @@ export const Dialog: KendoComponent<KendoDialogProps & React.HTMLAttributes<HTML
                     DIALOG_CLASSNAME,
                     "k-window",
                     optionClassNames(DIALOG_CLASSNAME, { themeColor })
-                )}>
+                )}
+                role="dialog"
+                {...(title !== undefined
+                    ? { 'aria-labelledby': titlebarId }
+                    : props['aria-label'] ? {} : { 'aria-label': 'Dialog' }
+                )}
+                aria-describedby={contentId}
+                {...(modal && { 'aria-modal': 'true' })}
+            >
 
                 {(title !== undefined || actions) &&
-                <div className="k-window-titlebar k-dialog-titlebar">
+                <div className="k-window-titlebar k-dialog-titlebar" id={titlebarId}>
                     {title !== undefined && <span className="k-window-title k-dialog-title">{title}</span>}
                     {actions && <>
                         <div className="k-window-titlebar-actions k-dialog-titlebar-actions">
                             {actions.map(actionName =>
-                                <Button key={actionName} icon={actionName} fillMode="flat" className="k-window-titlebar-action k-dialog-titlebar-action"></Button>
+                                <Button
+                                    key={actionName}
+                                    icon={actionName}
+                                    fillMode="flat"
+                                    className="k-window-titlebar-action k-dialog-titlebar-action"
+                                    aria-label={actionName.charAt(0).toUpperCase() + actionName.slice(1)}
+                                ></Button>
                             )}
                         </div>
                     </>}
                 </div>
                 }
-                <WindowContent className="k-dialog-content">
+                <WindowContent className="k-dialog-content" id={contentId}>
                     {props.children}
                 </WindowContent>
                 {actionButtons &&

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -24,12 +24,12 @@
         <section>
             <div class="k-dialog-wrapper">
                 <div class="k-overlay"></div>
-                <div class="k-dialog k-window">
-                    <div class="k-window-titlebar k-dialog-titlebar">
+                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar" aria-describedby="k-dialog-content" aria-modal="true">
+                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar">
                         <span class="k-window-title k-dialog-title">Title g y p t d l</span>
                         <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-flat k-icon-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-flat k-icon-button" aria-label="X">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                     </svg>
@@ -37,7 +37,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="k-window-content k-dialog-content">Dialog content</div>
+                    <div class="k-window-content k-dialog-content" id="k-dialog-content">Dialog content</div>
                     <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
                         <button class="k-button">
                             <span class="k-button-text">Action</span>
@@ -52,11 +52,11 @@
         <section>
             <div class="k-dialog-wrapper">
                 <div class="k-overlay"></div>
-                <div class="k-dialog k-window">
-                    <div class="k-window-titlebar k-dialog-titlebar">
+                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar" aria-describedby="k-dialog-content" aria-modal="true">
+                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar">
                         <span class="k-window-title k-dialog-title">Cursive g y p t d l</span>
                     </div>
-                    <div class="k-window-content k-dialog-content">Dialog without titlebar actions</div>
+                    <div class="k-window-content k-dialog-content" id="k-dialog-content">Dialog without titlebar actions</div>
                     <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
                         <button class="k-button">
                             <span class="k-button-text">Action</span>
@@ -71,12 +71,12 @@
         <section>
             <div class="k-dialog-wrapper">
                 <div class="k-overlay"></div>
-                <div class="k-dialog k-window">
-                    <div class="k-window-titlebar k-dialog-titlebar">
+                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar" aria-describedby="k-dialog-content" aria-modal="true">
+                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar">
                         <span class="k-window-title k-dialog-title"></span>
                         <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-flat k-icon-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-flat k-icon-button" aria-label="X">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                     </svg>
@@ -84,7 +84,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="k-window-content k-dialog-content">Dialog with empty title and actions</div>
+                    <div class="k-window-content k-dialog-content" id="k-dialog-content">Dialog with empty title and actions</div>
                     <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
                         <button class="k-button">
                             <span class="k-button-text">Action</span>
@@ -99,19 +99,19 @@
         <section>
             <div class="k-dialog-wrapper">
                 <div class="k-overlay"></div>
-                <div class="k-dialog k-window">
-                    <div class="k-window-titlebar k-dialog-titlebar">
+                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar" aria-describedby="k-dialog-content" aria-modal="true">
+                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar">
                         <span class="k-window-title k-dialog-title"></span>
                     </div>
-                    <div class="k-window-content k-dialog-content">Dialog with empty title and no actions</div>
+                    <div class="k-window-content k-dialog-content" id="k-dialog-content">Dialog with empty title and no actions</div>
                 </div>
             </div>
         </section>
         <section>
             <div class="k-dialog-wrapper">
                 <div class="k-overlay"></div>
-                <div class="k-dialog k-window">
-                    <div class="k-window-content k-dialog-content">Dialog without title</div>
+                <div class="k-dialog k-window" role="dialog" aria-label="Dialog" aria-describedby="k-dialog-content" aria-modal="true">
+                    <div class="k-window-content k-dialog-content" id="k-dialog-content">Dialog without title</div>
                     <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
                         <button class="k-button">
                             <span class="k-button-text">Action</span>
@@ -126,12 +126,12 @@
         <section>
             <div class="k-dialog-wrapper">
                 <div class="k-overlay"></div>
-                <div class="k-dialog k-window" style="height: 220px;">
-                    <div class="k-window-titlebar k-dialog-titlebar">
+                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar" aria-describedby="k-dialog-content" aria-modal="true" style="height: 220px;">
+                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar">
                         <span class="k-window-title k-dialog-title">Scrolling</span>
                         <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-flat k-icon-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-flat k-icon-button" aria-label="X">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                     </svg>
@@ -139,7 +139,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="k-window-content k-dialog-content">
+                    <div class="k-window-content k-dialog-content" id="k-dialog-content">
                         <p>Dialog content template with long text and vertical scrolling. Dialog content template with long text and vertical scrolling. Dialog content template with long text and vertical scrolling. Dialog content template with long text and vertical scrolling.</p>
                     </div>
                     <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">

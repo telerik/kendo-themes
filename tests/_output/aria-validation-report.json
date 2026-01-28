@@ -1,24 +1,24 @@
 {
-  "timestamp": "2026-01-28T10:00:46.222Z",
+  "timestamp": "2026-01-28T11:45:18.964Z",
   "summary": {
-    "filesTested": 2,
+    "filesTested": 4,
     "skipped": 0,
-    "passed": 25,
-    "violations": 143
+    "passed": 0,
+    "violations": 18
   },
   "results": [
     {
-      "filePath": "./tests/switch/switch.html",
-      "spec": "aria/switch_aria.md",
-      "totalRules": 5,
+      "filePath": "./tests/window/window.html",
+      "spec": "aria/window_aria.md",
+      "totalRules": 2,
       "violations": [
         {
           "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
           },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Of",
+          "element": "<div class=\"k-window\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\">Title</span>\n                    <div class=\"k-window-titlebar-actions\">\n       ",
           "index": 0,
           "valid": false,
           "reason": "missing",
@@ -27,11 +27,11 @@
         },
         {
           "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
           },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Off",
+          "element": "<div class=\"k-window\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\"></span>\n                    <div class=\"k-window-titlebar-actions\">\n            ",
           "index": 1,
           "valid": false,
           "reason": "missing",
@@ -40,11 +40,11 @@
         },
         {
           "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
           },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Of",
+          "element": "<div class=\"k-window\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\"></span>\n                </div>\n                <div class=\"k-window-content\">Win",
           "index": 2,
           "valid": false,
           "reason": "missing",
@@ -53,11 +53,11 @@
         },
         {
           "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
           },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Off",
+          "element": "<div class=\"k-window\">\n                <div class=\"k-window-content\">Window without a title</div>\n            </div>",
           "index": 3,
           "valid": false,
           "reason": "missing",
@@ -66,280 +66,33 @@
         },
         {
           "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
           },
-          "element": "<span class=\"k-switch k-hover k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label",
+          "element": "<div class=\"k-window k-window-minimized\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\">Window minimized</span>\n                    <div class=\"k-win",
           "index": 4,
           "valid": false,
           "reason": "missing",
           "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-hover k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-hover k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label",
-          "index": 6,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-hover k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-",
-          "index": 7,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-focus k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label",
-          "index": 8,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-focus k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-",
-          "index": 9,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-focus k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label",
-          "index": 10,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-focus k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-",
-          "index": 11,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-disabled k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 12,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-disabled k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-lab",
-          "index": 13,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-disabled k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 14,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-disabled k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-lab",
-          "index": 15,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Of",
-          "index": 16,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Off",
-          "index": 17,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Of",
-          "index": 18,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Off",
-          "index": 19,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch.k-disabled",
-            "attribute": "aria-disabled=true",
-            "usage": "The attribute is rendered only when the Switch is disabled."
-          },
-          "element": "<span class=\"k-switch k-disabled k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-disabled",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch.k-disabled",
-            "attribute": "aria-disabled=true",
-            "usage": "The attribute is rendered only when the Switch is disabled."
-          },
-          "element": "<span class=\"k-switch k-disabled k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-lab",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-disabled",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch.k-disabled",
-            "attribute": "aria-disabled=true",
-            "usage": "The attribute is rendered only when the Switch is disabled."
-          },
-          "element": "<span class=\"k-switch k-disabled k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-disabled",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch.k-disabled",
-            "attribute": "aria-disabled=true",
-            "usage": "The attribute is rendered only when the Switch is disabled."
-          },
-          "element": "<span class=\"k-switch k-disabled k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-lab",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-disabled",
           "actual": null
         }
       ],
       "passed": 0,
-      "violationCount": 24
+      "violationCount": 5
     },
     {
-      "filePath": "./tests/switch/switch-size-rounded.html",
-      "spec": "aria/switch_aria.md",
-      "totalRules": 5,
+      "filePath": "./tests/window/window-theme-colors.html",
+      "spec": "aria/window_aria.md",
+      "totalRules": 2,
       "violations": [
         {
           "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
           },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Off",
+          "element": "<div class=\"k-window\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\">Title</span>\n                    <div class=\"k-window-titlebar-actions\">\n       ",
           "index": 0,
           "valid": false,
           "reason": "missing",
@@ -348,11 +101,11 @@
         },
         {
           "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
           },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Of",
+          "element": "<div class=\"k-window k-window-primary\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\">Title</span>\n                    <div class=\"k-window-titlebar-",
           "index": 1,
           "valid": false,
           "reason": "missing",
@@ -361,11 +114,11 @@
         },
         {
           "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
           },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
+          "element": "<div class=\"k-window k-window-light\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\">Title</span>\n                    <div class=\"k-window-titlebar-ac",
           "index": 2,
           "valid": false,
           "reason": "missing",
@@ -374,11 +127,72 @@
         },
         {
           "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
           },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
+          "element": "<div class=\"k-window k-window-dark\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\">Title</span>\n                    <div class=\"k-window-titlebar-act",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        }
+      ],
+      "passed": 0,
+      "violationCount": 4
+    },
+    {
+      "filePath": "./tests/window/window-rtl.html",
+      "spec": "aria/window_aria.md",
+      "totalRules": 2,
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
+          },
+          "element": "<div class=\"k-window\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\">Title</span>\n                    <div class=\"k-window-titlebar-actions\">\n       ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
+          },
+          "element": "<div class=\"k-window\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\"></span>\n                    <div class=\"k-window-titlebar-actions\">\n            ",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
+          },
+          "element": "<div class=\"k-window\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\"></span>\n                </div>\n                <div class=\"k-window-content\">Win",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
+          },
+          "element": "<div class=\"k-window\">\n                <div class=\"k-window-content\">Window without a title</div>\n            </div>",
           "index": 3,
           "valid": false,
           "reason": "missing",
@@ -387,1502 +201,81 @@
         },
         {
           "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
           },
-          "element": "<span class=\"k-switch k-switch-md k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
+          "element": "<div class=\"k-window k-window-minimized\">\n                <div class=\"k-window-titlebar\">\n                    <span class=\"k-window-title\">Window minimized</span>\n                    <div class=\"k-win",
           "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 6,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 7,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track k-rounded-none\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch",
-          "index": 8,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track k-rounded-none\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switc",
-          "index": 9,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track k-rounded-none\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cla",
-          "index": 10,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-off\">\n                <span class=\"k-switch-track k-rounded-none\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cl",
-          "index": 11,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-on\">\n                <span class=\"k-switch-track k-rounded-none\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cla",
-          "index": 12,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-off\">\n                <span class=\"k-switch-track k-rounded-none\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cl",
-          "index": 13,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-on\">\n                <span class=\"k-switch-track k-rounded-none\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cla",
-          "index": 14,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-off\">\n                <span class=\"k-switch-track k-rounded-none\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cl",
-          "index": 15,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track k-rounded-sm\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 16,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track k-rounded-sm\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-",
-          "index": 17,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track k-rounded-sm\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class",
-          "index": 18,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-off\">\n                <span class=\"k-switch-track k-rounded-sm\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span clas",
-          "index": 19,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-on\">\n                <span class=\"k-switch-track k-rounded-sm\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class",
-          "index": 20,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-off\">\n                <span class=\"k-switch-track k-rounded-sm\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span clas",
-          "index": 21,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-on\">\n                <span class=\"k-switch-track k-rounded-sm\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class",
-          "index": 22,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-off\">\n                <span class=\"k-switch-track k-rounded-sm\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span clas",
-          "index": 23,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track k-rounded-md\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 24,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track k-rounded-md\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-",
-          "index": 25,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track k-rounded-md\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class",
-          "index": 26,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-off\">\n                <span class=\"k-switch-track k-rounded-md\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span clas",
-          "index": 27,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-on\">\n                <span class=\"k-switch-track k-rounded-md\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class",
-          "index": 28,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-off\">\n                <span class=\"k-switch-track k-rounded-md\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span clas",
-          "index": 29,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-on\">\n                <span class=\"k-switch-track k-rounded-md\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class",
-          "index": 30,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-off\">\n                <span class=\"k-switch-track k-rounded-md\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span clas",
-          "index": 31,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track k-rounded-lg\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 32,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track k-rounded-lg\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-",
-          "index": 33,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track k-rounded-lg\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class",
-          "index": 34,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-off\">\n                <span class=\"k-switch-track k-rounded-lg\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span clas",
-          "index": 35,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-on\">\n                <span class=\"k-switch-track k-rounded-lg\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class",
-          "index": 36,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-off\">\n                <span class=\"k-switch-track k-rounded-lg\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span clas",
-          "index": 37,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-on\">\n                <span class=\"k-switch-track k-rounded-lg\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class",
-          "index": 38,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-off\">\n                <span class=\"k-switch-track k-rounded-lg\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span clas",
-          "index": 39,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track k-rounded-full\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch",
-          "index": 40,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track k-rounded-full\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switc",
-          "index": 41,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track k-rounded-full\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cla",
-          "index": 42,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-off\">\n                <span class=\"k-switch-track k-rounded-full\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cl",
-          "index": 43,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-on\">\n                <span class=\"k-switch-track k-rounded-full\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cla",
-          "index": 44,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-off\">\n                <span class=\"k-switch-track k-rounded-full\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cl",
-          "index": 45,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-on\">\n                <span class=\"k-switch-track k-rounded-full\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cla",
-          "index": 46,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-off\">\n                <span class=\"k-switch-track k-rounded-full\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cl",
-          "index": 47,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Off",
-          "index": 48,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Of",
-          "index": 49,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 50,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Off",
-          "index": 56,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Of",
-          "index": 57,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 58,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 59,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 60,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 61,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 62,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 63,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Off",
-          "index": 64,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Of",
-          "index": 65,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 66,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 67,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 68,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 69,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 70,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 71,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Off",
-          "index": 72,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Of",
-          "index": 73,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 74,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 75,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 76,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 77,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 78,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 79,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Off",
-          "index": 80,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Of",
-          "index": 81,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 82,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 83,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 84,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 85,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 86,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 87,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Off",
-          "index": 88,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Of",
-          "index": 89,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 90,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 91,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 92,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 93,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 94,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 95,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Off",
-          "index": 96,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-label-off\">Of",
-          "index": 97,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 98,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 99,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 100,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 101,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-on\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-la",
-          "index": 102,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-off\">\n                <span class=\"k-switch-track\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 103,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track k-rounded-none\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch",
-          "index": 104,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track k-rounded-none\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switc",
-          "index": 105,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track k-rounded-none\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cla",
-          "index": 106,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-off\">\n                <span class=\"k-switch-track k-rounded-none\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cl",
-          "index": 107,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-on\">\n                <span class=\"k-switch-track k-rounded-none\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cla",
-          "index": 108,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-md k-switch-off\">\n                <span class=\"k-switch-track k-rounded-none\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cl",
-          "index": 109,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-on\">\n                <span class=\"k-switch-track k-rounded-none\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cla",
-          "index": 110,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-lg k-switch-off\">\n                <span class=\"k-switch-track k-rounded-none\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cl",
-          "index": 111,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track k-rounded-sm\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 112,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track k-rounded-sm\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-",
-          "index": 113,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track k-rounded-sm\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class",
-          "index": 114,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track k-rounded-md\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 120,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track k-rounded-md\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-",
-          "index": 121,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track k-rounded-md\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class",
-          "index": 122,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track k-rounded-lg\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-l",
-          "index": 128,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track k-rounded-lg\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch-",
-          "index": 129,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track k-rounded-lg\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class",
-          "index": 130,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-on\">\n                <span class=\"k-switch-track k-rounded-full\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switch",
-          "index": 136,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-off\">\n                <span class=\"k-switch-track k-rounded-full\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span class=\"k-switc",
-          "index": 137,
-          "valid": false,
-          "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-switch",
-            "attribute": "role=switch",
-            "usage": "Announces the switch role of the element."
-          },
-          "element": "<span class=\"k-switch k-switch-sm k-switch-on\">\n                <span class=\"k-switch-track k-rounded-full\">\n                    <span class=\"k-switch-label-on\">On</span>\n                    <span cla",
-          "index": 138,
           "valid": false,
           "reason": "missing",
           "expected": "role",
           "actual": null
         }
       ],
-      "passed": 25,
-      "violationCount": 119
+      "passed": 0,
+      "violationCount": 5
+    },
+    {
+      "filePath": "./tests/window/window-action-buttons.html",
+      "spec": "aria/window_aria.md",
+      "totalRules": 2,
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
+          },
+          "element": "<div class=\"k-window\">\n            <div class=\"k-window-titlebar\">\n                <span class=\"k-window-title\">Title</span>\n                <div class=\"k-window-titlebar-actions\">\n                   ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
+          },
+          "element": "<div class=\"k-window\">\n            <div class=\"k-window-titlebar\">\n                <span class=\"k-window-title\">Title</span>\n                <div class=\"k-window-titlebar-actions\">\n                   ",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
+          },
+          "element": "<div class=\"k-window\">\n            <div class=\"k-window-titlebar\">\n                <span class=\"k-window-title\">Title</span>\n                <div class=\"k-window-titlebar-actions\">\n                   ",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
+          },
+          "element": "<div class=\"k-window\">\n            <div class=\"k-window-titlebar\">\n                <span class=\"k-window-title\">Title</span>\n                <div class=\"k-window-titlebar-actions\">\n                   ",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        }
+      ],
+      "passed": 0,
+      "violationCount": 4
     }
   ]
 }
