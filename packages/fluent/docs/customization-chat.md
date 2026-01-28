@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-list-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-chat-message-list-padding-x, $kendo-chat-padding-x )</code></td>
-    <td><code>var(--kendo-chat-message-list-padding-x, var(--kendo-chat-padding-x, var(--kendo-spacing-5, 1.25rem)))</code></td>
+    <td><code>var( --kendo-chat-message-list-padding-x, #{k-spacing(5)} )</code></td>
+    <td><code>var(--kendo-chat-message-list-padding-x, var(--kendo-spacing-5, 1.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat message list.</div></div>
@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-list-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-chat-message-list-padding-y, $kendo-chat-padding-y )</code></td>
-    <td><code>var(--kendo-chat-message-list-padding-y, var(--kendo-chat-padding-y, var(--kendo-spacing-5, 1.25rem)))</code></td>
+    <td><code>var( --kendo-chat-message-list-padding-y, #{k-spacing(5)} )</code></td>
+    <td><code>var(--kendo-chat-message-list-padding-y, var(--kendo-spacing-5, 1.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat message list.</div></div>
@@ -170,8 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-list-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-chat-message-list-spacing, $kendo-chat-item-spacing-y )</code></td>
-    <td><code>var(--kendo-chat-message-list-spacing, var(--kendo-chat-item-spacing-y, var(--kendo-spacing-4, 1rem)))</code></td>
+    <td><code>var( --kendo-chat-message-list-spacing, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-chat-message-list-spacing, var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat message list.</div></div>
