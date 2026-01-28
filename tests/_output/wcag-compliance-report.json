@@ -1,38 +1,20 @@
 {
   "meta": {
-    "timestamp": "2026-01-28T11:49:55.109Z",
+    "timestamp": "2026-01-28T11:54:54.991Z",
     "complianceLevel": "AA",
     "filesTested": 5,
     "wcagVersion": "2.2"
   },
   "summary": {
-    "totalViolations": 1,
+    "totalViolations": 0,
     "totalPasses": 121,
-    "avgScore": 99.24
+    "avgScore": 100
   },
-  "criteriaGroups": {
-    "4.1.2": {
-      "criterion": "4.1.2",
-      "level": "A",
-      "violations": [
-        {
-          "page": "./tests/dialog/dialog-in-window.html",
-          "rule": "button-name",
-          "description": "Ensure buttons have discernible text",
-          "impact": "critical",
-          "nodeCount": 3
-        }
-      ],
-      "affectedPages": [
-        "./tests/dialog/dialog-in-window.html"
-      ],
-      "pageCount": 1
-    }
-  },
+  "criteriaGroups": {},
   "detailedResults": [
     {
       "filePath": "./tests/dialog/dialog.html",
-      "timestamp": "2026-01-28T11:49:53.139Z",
+      "timestamp": "2026-01-28T11:54:53.786Z",
       "violations": [],
       "filteredPageLevel": 0,
       "passes": [
@@ -208,7 +190,7 @@
     },
     {
       "filePath": "./tests/dialog/dialog-theme-colors.html",
-      "timestamp": "2026-01-28T11:49:53.710Z",
+      "timestamp": "2026-01-28T11:54:54.102Z",
       "violations": [],
       "filteredPageLevel": 0,
       "passes": [
@@ -384,7 +366,7 @@
     },
     {
       "filePath": "./tests/dialog/dialog-modal.html",
-      "timestamp": "2026-01-28T11:49:53.955Z",
+      "timestamp": "2026-01-28T11:54:54.336Z",
       "violations": [],
       "filteredPageLevel": 0,
       "passes": [
@@ -560,224 +542,9 @@
     },
     {
       "filePath": "./tests/dialog/dialog-in-window.html",
-      "timestamp": "2026-01-28T11:49:54.378Z",
-      "violations": [
-        {
-          "id": "button-name",
-          "impact": "critical",
-          "tags": [
-            "cat.name-role-value",
-            "wcag2a",
-            "wcag412",
-            "section508",
-            "section508.22.a",
-            "TTv5",
-            "TT6.a",
-            "EN-301-549",
-            "EN-9.4.1.2",
-            "ACT"
-          ],
-          "description": "Ensure buttons have discernible text",
-          "help": "Buttons must have discernible text",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=webdriverjs",
-          "nodes": [
-            {
-              "any": [
-                {
-                  "id": "button-has-visible-text",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "Element does not have inner text that is visible to screen readers"
-                },
-                {
-                  "id": "aria-label",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "aria-label attribute does not exist or is empty"
-                },
-                {
-                  "id": "aria-labelledby",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
-                },
-                {
-                  "id": "non-empty-title",
-                  "data": {
-                    "messageKey": "noAttr"
-                  },
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "Element has no title attribute"
-                },
-                {
-                  "id": "implicit-label",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "Element does not have an implicit (wrapped) <label>"
-                },
-                {
-                  "id": "explicit-label",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "Element does not have an explicit <label>"
-                },
-                {
-                  "id": "presentational-role",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "critical",
-              "html": "<button class=\"k-window-titlebar-action k-button k-button-flat k-icon-button\">",
-              "target": [
-                ".k-window-wrapper > .k-window-titlebar > .k-window-titlebar-actions > button:nth-child(1)"
-              ],
-              "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-            },
-            {
-              "any": [
-                {
-                  "id": "button-has-visible-text",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "Element does not have inner text that is visible to screen readers"
-                },
-                {
-                  "id": "aria-label",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "aria-label attribute does not exist or is empty"
-                },
-                {
-                  "id": "aria-labelledby",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
-                },
-                {
-                  "id": "non-empty-title",
-                  "data": {
-                    "messageKey": "noAttr"
-                  },
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "Element has no title attribute"
-                },
-                {
-                  "id": "implicit-label",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "Element does not have an implicit (wrapped) <label>"
-                },
-                {
-                  "id": "explicit-label",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "Element does not have an explicit <label>"
-                },
-                {
-                  "id": "presentational-role",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "critical",
-              "html": "<button class=\"k-window-titlebar-action k-button k-button-flat k-icon-button\">",
-              "target": [
-                "button:nth-child(2)"
-              ],
-              "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-            },
-            {
-              "any": [
-                {
-                  "id": "button-has-visible-text",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "Element does not have inner text that is visible to screen readers"
-                },
-                {
-                  "id": "aria-label",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "aria-label attribute does not exist or is empty"
-                },
-                {
-                  "id": "aria-labelledby",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
-                },
-                {
-                  "id": "non-empty-title",
-                  "data": {
-                    "messageKey": "noAttr"
-                  },
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "Element has no title attribute"
-                },
-                {
-                  "id": "implicit-label",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "Element does not have an implicit (wrapped) <label>"
-                },
-                {
-                  "id": "explicit-label",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "Element does not have an explicit <label>"
-                },
-                {
-                  "id": "presentational-role",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "critical",
-                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "critical",
-              "html": "<button class=\"k-window-titlebar-action k-button k-button-flat k-icon-button\">",
-              "target": [
-                "button:nth-child(3)"
-              ],
-              "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-            }
-          ],
-          "wcagCriteria": [
-            "4.1.2"
-          ],
-          "severity": "critical"
-        }
-      ],
-      "filteredPageLevel": 1,
+      "timestamp": "2026-01-28T11:54:54.558Z",
+      "violations": [],
+      "filteredPageLevel": 0,
       "passes": [
         {
           "id": "aria-allowed-attr",
@@ -949,7 +716,7 @@
     },
     {
       "filePath": "./tests/dialog/dialog-action-buttons.html",
-      "timestamp": "2026-01-28T11:49:54.901Z",
+      "timestamp": "2026-01-28T11:54:54.787Z",
       "violations": [],
       "filteredPageLevel": 0,
       "passes": [

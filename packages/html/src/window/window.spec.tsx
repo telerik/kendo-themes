@@ -26,6 +26,7 @@ export type KendoWindowOptions = {
 };
 
 export type KendoWindowProps = KendoWindowOptions & {
+    id?: string;
     title?: string;
     actions?: string[];
     minimized?: boolean;
@@ -38,6 +39,7 @@ export const Window: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTML
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        id = 'k-window',
         title,
         actions,
         minimized,
@@ -46,6 +48,8 @@ export const Window: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTML
         actionButtonsAlign,
         ...other
     } = props;
+
+    const titleId = `${id}-title`;
 
     return (
         <div
@@ -57,11 +61,17 @@ export const Window: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTML
                 {
                     [`${WINDOW_CLASSNAME}-minimized`]: minimized,
                 }
-            )}>
+            )}
+            role="dialog"
+            {...(title !== undefined
+                ? { 'aria-labelledby': titleId }
+                : props['aria-label'] ? {} : { 'aria-label': 'Window' }
+            )}
+        >
 
             {(title !== undefined || actions) &&
                 <div className="k-window-titlebar">
-                    {title !== undefined && <span className="k-window-title">{title}</span>}
+                    {title !== undefined && <span className="k-window-title" id={titleId}>{title}</span>}
                     {actions && <>
                         <div className="k-window-titlebar-actions">
                             {actions.map(actionName =>
@@ -72,12 +82,14 @@ export const Window: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTML
                                         fillMode="flat"
                                         showArrow={false}
                                         className="k-window-titlebar-action"
+                                        aria-label="More actions"
                                     ></MenuButton> :
                                     <Button
                                         key={actionName}
                                         icon={actionName}
                                         fillMode="flat"
                                         className="k-window-titlebar-action"
+                                        aria-label={actionName.charAt(0).toUpperCase() + actionName.slice(1)}
                                     ></Button>
                             )}
                         </div>
