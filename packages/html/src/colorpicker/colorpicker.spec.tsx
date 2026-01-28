@@ -52,6 +52,7 @@ export type KendoColorPickerProps = KendoColorPickerOptions & {
     adaptiveSettings?: KendoActionSheetProps;
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
+    id?: string;
 };
 
 export type KendoColorPickerState = { [K in (typeof states)[number]]?: boolean };
@@ -87,8 +88,12 @@ export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPicke
         adaptiveSettings,
         adaptiveTitle,
         adaptiveSubtitle,
+        id = 'colorpicker',
         ...other
     } = props;
+
+    const popupId = `${id}-popup`;
+    const ariaLabel = `Color picker${value ? `, selected color: ${value}` : ''}`;
 
 
     return (
@@ -96,10 +101,10 @@ export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPicke
             <Picker
                 {...other}
                 role="combobox"
-                aria-label="Color picker"
+                aria-label={ariaLabel}
                 aria-haspopup="dialog"
                 aria-expanded={opened ? 'true' : 'false'}
-                aria-controls={opened ? 'colorpicker-popup' : undefined}
+                aria-controls={popupId}
                 tabIndex={0}
                 aria-invalid={invalid ? 'true' : undefined}
                 aria-disabled={disabled ? 'true' : undefined}
@@ -145,7 +150,7 @@ export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPicke
                 />
             </Picker>
             {opened && popup &&
-                <Popup id="colorpicker-popup" className="k-colorpicker-popup">
+                <Popup id={popupId} className="k-colorpicker-popup">
                     {popup}
                 </Popup>
             }
