@@ -1,73 +1,129 @@
 {
-  "timestamp": "2026-01-28T12:05:39.957Z",
+  "timestamp": "2026-01-28T13:01:28.687Z",
   "summary": {
-    "filesTested": 6,
+    "filesTested": 8,
     "skipped": 0,
-    "passed": 81,
-    "violations": 1
+    "passed": 279,
+    "violations": 4
   },
   "results": [
     {
-      "filePath": "./tests/dialog/dialog.html",
-      "spec": "aria/dialog_aria.md",
+      "filePath": "./tests/progressbar/progressbar.html",
+      "spec": "aria/progressbar_aria.md",
+      "totalRules": 5,
+      "violations": [],
+      "passed": 90,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/progressbar/progressbar-vertical.html",
+      "spec": "aria/progressbar_aria.md",
+      "totalRules": 5,
+      "violations": [],
+      "passed": 45,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/progressbar/progressbar-states.html",
+      "spec": "aria/progressbar_aria.md",
       "totalRules": 5,
       "violations": [
         {
           "rule": {
-            "selector": ".k-dialog",
-            "attribute": "aria-labelledby=.k-dialog-titlebar id",
-            "usage": "Associate the title of the dialog."
+            "selector": ".k-progressbar",
+            "attribute": "aria-valuemin",
+            "usage": "Set to a decimal value representing the minimum value, and less than \"aria-valuemax\". If not present, the default value is 0."
           },
-          "element": "<div class=\"k-dialog k-window\" role=\"dialog\" aria-label=\"Dialog\" aria-describedby=\"k-dialog-content\" aria-modal=\"true\">\n                    <div class=\"k-window-content k-dialog-content\" id=\"k-dialog-",
-          "index": 4,
+          "element": "<div role=\"progressbar\" aria-label=\"Progress\" class=\"k-progressbar k-progressbar-horizontal k-progressbar-indeterminate\" style=\"--kendo-progressbar-value: 60;\">\n            <span class=\"k-progress-sta",
+          "index": 2,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-labelledby",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-progressbar",
+            "attribute": "aria-valuemax",
+            "usage": "Set to a decimal value representing the maximum value, and greater than \"aria-valuemin\". If not present, the default value is 100."
+          },
+          "element": "<div role=\"progressbar\" aria-label=\"Progress\" class=\"k-progressbar k-progressbar-horizontal k-progressbar-indeterminate\" style=\"--kendo-progressbar-value: 60;\">\n            <span class=\"k-progress-sta",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
           "actual": null
         }
       ],
-      "passed": 23,
-      "violationCount": 1
+      "passed": 12,
+      "violationCount": 2
     },
     {
-      "filePath": "./tests/dialog/dialog-theme-colors.html",
-      "spec": "aria/dialog_aria.md",
+      "filePath": "./tests/progressbar/progressbar-reverse.html",
+      "spec": "aria/progressbar_aria.md",
       "totalRules": 5,
       "violations": [],
-      "passed": 16,
+      "passed": 60,
       "violationCount": 0
     },
     {
-      "filePath": "./tests/dialog/dialog-predefined.html",
-      "spec": "aria/dialog_aria.md",
+      "filePath": "./tests/progressbar/circular-progressbar-angular.html",
+      "spec": "aria/progressbar_aria.md",
       "totalRules": 5,
       "violations": [],
-      "passed": 15,
+      "passed": 0,
       "violationCount": 0
     },
     {
-      "filePath": "./tests/dialog/dialog-modal.html",
-      "spec": "aria/dialog_aria.md",
+      "filePath": "./tests/progressbar/chunk-progressbar.html",
+      "spec": "aria/progressbar_aria.md",
       "totalRules": 5,
       "violations": [],
-      "passed": 7,
+      "passed": 40,
       "violationCount": 0
     },
     {
-      "filePath": "./tests/dialog/dialog-in-window.html",
-      "spec": "aria/dialog_aria.md",
+      "filePath": "./tests/progressbar/chunk-progressbar-vertical.html",
+      "spec": "aria/progressbar_aria.md",
       "totalRules": 5,
       "violations": [],
-      "passed": 4,
+      "passed": 20,
       "violationCount": 0
     },
     {
-      "filePath": "./tests/dialog/dialog-action-buttons.html",
-      "spec": "aria/dialog_aria.md",
+      "filePath": "./tests/progressbar/chunk-progressbar-states.html",
+      "spec": "aria/progressbar_aria.md",
       "totalRules": 5,
-      "violations": [],
-      "passed": 16,
-      "violationCount": 0
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-progressbar",
+            "attribute": "aria-valuemin",
+            "usage": "Set to a decimal value representing the minimum value, and less than \"aria-valuemax\". If not present, the default value is 0."
+          },
+          "element": "<div role=\"progressbar\" aria-label=\"Progress\" class=\"k-progressbar k-chunk-progressbar k-progressbar-horizontal k-progressbar-indeterminate\">\n            <ul class=\"k-progressbar-chunks k-reset\">\n    ",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-progressbar",
+            "attribute": "aria-valuemax",
+            "usage": "Set to a decimal value representing the maximum value, and greater than \"aria-valuemin\". If not present, the default value is 100."
+          },
+          "element": "<div role=\"progressbar\" aria-label=\"Progress\" class=\"k-progressbar k-chunk-progressbar k-progressbar-horizontal k-progressbar-indeterminate\">\n            <ul class=\"k-progressbar-chunks k-reset\">\n    ",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
+          "actual": null
+        }
+      ],
+      "passed": 12,
+      "violationCount": 2
     }
   ]
 }

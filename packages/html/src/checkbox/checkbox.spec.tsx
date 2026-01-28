@@ -54,17 +54,20 @@ export const Checkbox: KendoComponent<CheckboxProps & CheckboxState & React.HTML
     return (
         <span className="k-checkbox-wrap">
             <input
-                {...other}
                 id={id}
                 type="checkbox"
-                defaultChecked={checked}
+                checked={checked}
                 required={required}
+                disabled={disabled}
                 className={classNames(
                     props.className,
                     CHECKBOX_CLASSNAME,
                     optionClassNames(CHECKBOX_CLASSNAME, { size, rounded }),
                     stateClassNames(CHECKBOX_CLASSNAME, { hover, focus, disabled, invalid, valid, indeterminate, checked }),
                 )}
+                aria-label={props['aria-label'] || 'Checkbox'}
+                aria-invalid={invalid ? 'true' : undefined}
+                {...other}
             />
         </span>
     );

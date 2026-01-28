@@ -1,14 +1,14 @@
 {
   "meta": {
-    "timestamp": "2026-01-28T12:06:40.582Z",
+    "timestamp": "2026-01-28T12:52:37.549Z",
     "complianceLevel": "AA",
-    "filesTested": 6,
+    "filesTested": 5,
     "wcagVersion": "2.2"
   },
   "summary": {
-    "totalViolations": 1,
-    "totalPasses": 147,
-    "avgScore": 99.38333333333333
+    "totalViolations": 2,
+    "totalPasses": 89,
+    "avgScore": 98.1
   },
   "criteriaGroups": {
     "4.1.2": {
@@ -16,25 +16,145 @@
       "level": "A",
       "violations": [
         {
-          "page": "./tests/dialog/dialog-predefined.html",
+          "page": "./tests/radio/radio-group.html",
           "rule": "label",
           "description": "Ensure every form element has a label",
           "impact": "critical",
-          "nodeCount": 1
+          "nodeCount": 6
         }
       ],
       "affectedPages": [
-        "./tests/dialog/dialog-predefined.html"
+        "./tests/radio/radio-group.html"
+      ],
+      "pageCount": 1
+    },
+    "2.5.8": {
+      "criterion": "2.5.8",
+      "level": "AA",
+      "violations": [
+        {
+          "page": "./tests/radio/radio-group.html",
+          "rule": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "impact": "serious",
+          "nodeCount": 3
+        }
+      ],
+      "affectedPages": [
+        "./tests/radio/radio-group.html"
       ],
       "pageCount": 1
     }
   },
   "detailedResults": [
     {
-      "filePath": "./tests/dialog/dialog.html",
-      "timestamp": "2026-01-28T12:06:39.095Z",
+      "filePath": "./tests/radio/radio.html",
+      "timestamp": "2026-01-28T12:52:36.274Z",
       "violations": [],
-      "filteredPageLevel": 0,
+      "filteredPageLevel": 3,
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "duplicate-id-aria",
+          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        },
+        {
+          "id": "nested-interactive",
+          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 72
+    },
+    {
+      "filePath": "./tests/radio/radio-states.html",
+      "timestamp": "2026-01-28T12:52:36.579Z",
+      "violations": [],
+      "filteredPageLevel": 3,
       "passes": [
         {
           "id": "aria-allowed-attr",
@@ -44,28 +164,11 @@
           ]
         },
         {
-          "id": "aria-allowed-role",
-          "description": "Ensure role attribute has an appropriate value for the element",
-          "wcagCriteria": []
-        },
-        {
           "id": "aria-conditional-attr",
           "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
           "wcagCriteria": [
             "4.1.2"
           ]
-        },
-        {
-          "id": "aria-deprecated-role",
-          "description": "Ensure elements do not use deprecated roles",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-dialog-name",
-          "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
-          "wcagCriteria": []
         },
         {
           "id": "aria-hidden-body",
@@ -76,29 +179,8 @@
           ]
         },
         {
-          "id": "aria-hidden-focus",
-          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "aria-prohibited-attr",
           "description": "Ensure ARIA attributes are not prohibited for an element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-required-attr",
-          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-roles",
-          "description": "Ensure all elements with a role attribute use a valid value",
           "wcagCriteria": [
             "4.1.2"
           ]
@@ -125,17 +207,17 @@
           ]
         },
         {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "document-title",
           "description": "Ensure each HTML document contains a non-empty <title> element",
           "wcagCriteria": [
             "2.4.2"
+          ]
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
           ]
         },
         {
@@ -153,9 +235,16 @@
           ]
         },
         {
-          "id": "landmark-one-main",
-          "description": "Ensure the document has a main landmark",
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
           "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
         },
         {
           "id": "meta-viewport-large",
@@ -177,11 +266,6 @@
           ]
         },
         {
-          "id": "page-has-heading-one",
-          "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
-          "wcagCriteria": []
-        },
-        {
           "id": "region",
           "description": "Ensure all page content is contained by landmarks",
           "wcagCriteria": []
@@ -194,23 +278,14 @@
           ]
         }
       ],
-      "incomplete": [
-        {
-          "id": "duplicate-id-aria",
-          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-          "wcagCriteria": [
-            "4.1.2"
-          ],
-          "nodes": 2
-        }
-      ],
-      "inapplicable": 63
+      "incomplete": [],
+      "inapplicable": 68
     },
     {
-      "filePath": "./tests/dialog/dialog-theme-colors.html",
-      "timestamp": "2026-01-28T12:06:39.425Z",
+      "filePath": "./tests/radio/radio-size.html",
+      "timestamp": "2026-01-28T12:52:36.849Z",
       "violations": [],
-      "filteredPageLevel": 0,
+      "filteredPageLevel": 3,
       "passes": [
         {
           "id": "aria-allowed-attr",
@@ -220,28 +295,11 @@
           ]
         },
         {
-          "id": "aria-allowed-role",
-          "description": "Ensure role attribute has an appropriate value for the element",
-          "wcagCriteria": []
-        },
-        {
           "id": "aria-conditional-attr",
           "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
           "wcagCriteria": [
             "4.1.2"
           ]
-        },
-        {
-          "id": "aria-deprecated-role",
-          "description": "Ensure elements do not use deprecated roles",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-dialog-name",
-          "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
-          "wcagCriteria": []
         },
         {
           "id": "aria-hidden-body",
@@ -252,29 +310,8 @@
           ]
         },
         {
-          "id": "aria-hidden-focus",
-          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "aria-prohibited-attr",
           "description": "Ensure ARIA attributes are not prohibited for an element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-required-attr",
-          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-roles",
-          "description": "Ensure all elements with a role attribute use a valid value",
           "wcagCriteria": [
             "4.1.2"
           ]
@@ -301,17 +338,24 @@
           ]
         },
         {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "duplicate-id-aria",
+          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
           "wcagCriteria": [
             "4.1.2"
           ]
         },
         {
-          "id": "document-title",
-          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
           "wcagCriteria": [
-            "2.4.2"
+            "3.3.2"
           ]
         },
         {
@@ -329,9 +373,16 @@
           ]
         },
         {
-          "id": "landmark-one-main",
-          "description": "Ensure the document has a main landmark",
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
           "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
         },
         {
           "id": "meta-viewport-large",
@@ -353,8 +404,137 @@
           ]
         },
         {
-          "id": "page-has-heading-one",
-          "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 67
+    },
+    {
+      "filePath": "./tests/radio/radio-label-position.html",
+      "timestamp": "2026-01-28T12:52:37.102Z",
+      "violations": [],
+      "filteredPageLevel": 3,
+      "passes": [
+        {
+          "id": "aria-allowed-role",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "wcagCriteria": []
+        },
+        {
+          "id": "aria-deprecated-role",
+          "description": "Ensure elements do not use deprecated roles",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-required-attr",
+          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-roles",
+          "description": "Ensure all elements with a role attribute use a valid value",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "duplicate-id-aria",
+          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        },
+        {
+          "id": "nested-interactive",
+          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "presentation-role-conflict",
+          "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
           "wcagCriteria": []
         },
         {
@@ -370,21 +550,12 @@
           ]
         }
       ],
-      "incomplete": [
-        {
-          "id": "duplicate-id-aria",
-          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-          "wcagCriteria": [
-            "4.1.2"
-          ],
-          "nodes": 2
-        }
-      ],
-      "inapplicable": 63
+      "incomplete": [],
+      "inapplicable": 67
     },
     {
-      "filePath": "./tests/dialog/dialog-predefined.html",
-      "timestamp": "2026-01-28T12:06:39.695Z",
+      "filePath": "./tests/radio/radio-group.html",
+      "timestamp": "2026-01-28T12:52:37.338Z",
       "violations": [
         {
           "id": "label",
@@ -464,9 +635,334 @@
               "all": [],
               "none": [],
               "impact": "critical",
-              "html": "<input class=\"k-input k-input-md k-rounded-md k-input-solid\" type=\"text\">",
+              "html": "<input class=\"k-radio\" type=\"radio\" name=\"normal-vertical\">",
               "target": [
-                "input"
+                "li:nth-child(1) > .k-radio-wrap > input[name=\"normal-vertical\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "any": [
+                {
+                  "id": "implicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element does not have an implicit (wrapped) <label>"
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element does not have an explicit <label>"
+                },
+                {
+                  "id": "aria-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-label attribute does not exist or is empty"
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no title attribute"
+                },
+                {
+                  "id": "non-empty-placeholder",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no placeholder attribute"
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "critical",
+              "html": "<input class=\"k-radio\" type=\"radio\" name=\"normal-vertical\">",
+              "target": [
+                "li:nth-child(2) > .k-radio-wrap > input[name=\"normal-vertical\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "any": [
+                {
+                  "id": "implicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element does not have an implicit (wrapped) <label>"
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element does not have an explicit <label>"
+                },
+                {
+                  "id": "aria-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-label attribute does not exist or is empty"
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no title attribute"
+                },
+                {
+                  "id": "non-empty-placeholder",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no placeholder attribute"
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "critical",
+              "html": "<input class=\"k-radio\" type=\"radio\" name=\"normal-vertical\">",
+              "target": [
+                "li:nth-child(3) > .k-radio-wrap > input[name=\"normal-vertical\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "any": [
+                {
+                  "id": "implicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element does not have an implicit (wrapped) <label>"
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element does not have an explicit <label>"
+                },
+                {
+                  "id": "aria-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-label attribute does not exist or is empty"
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no title attribute"
+                },
+                {
+                  "id": "non-empty-placeholder",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no placeholder attribute"
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "critical",
+              "html": "<input class=\"k-radio\" type=\"radio\" name=\"normal-horizontal\">",
+              "target": [
+                "li:nth-child(1) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "any": [
+                {
+                  "id": "implicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element does not have an implicit (wrapped) <label>"
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element does not have an explicit <label>"
+                },
+                {
+                  "id": "aria-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-label attribute does not exist or is empty"
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no title attribute"
+                },
+                {
+                  "id": "non-empty-placeholder",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no placeholder attribute"
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "critical",
+              "html": "<input class=\"k-radio\" type=\"radio\" name=\"normal-horizontal\">",
+              "target": [
+                "li:nth-child(2) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "any": [
+                {
+                  "id": "implicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element does not have an implicit (wrapped) <label>"
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element does not have an explicit <label>"
+                },
+                {
+                  "id": "aria-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-label attribute does not exist or is empty"
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no title attribute"
+                },
+                {
+                  "id": "non-empty-placeholder",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no placeholder attribute"
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "critical",
+              "html": "<input class=\"k-radio\" type=\"radio\" name=\"normal-horizontal\">",
+              "target": [
+                "li:nth-child(3) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
               ],
               "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             }
@@ -475,28 +971,158 @@
             "4.1.2"
           ],
           "severity": "critical"
+        },
+        {
+          "id": "target-size",
+          "impact": "serious",
+          "tags": [
+            "cat.sensory-and-visual-cues",
+            "wcag22aa",
+            "wcag258"
+          ],
+          "description": "Ensure touch targets have sufficient size and space",
+          "help": "All touch targets must be 24px large, or leave sufficient space",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/target-size?application=webdriverjs",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "target-size",
+                  "data": {
+                    "minSize": 24,
+                    "width": 2,
+                    "height": 2
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Target has insufficient size (2px by 2px, should be at least 24px by 24px)"
+                },
+                {
+                  "id": "target-offset",
+                  "data": {
+                    "closestOffset": 12,
+                    "minOffset": 24
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<input class=\"k-radio\" type=\"radio\" name=\"normal-horizontal\">",
+                      "target": [
+                        "li:nth-child(2) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 12px instead of at least 24px."
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<input class=\"k-radio\" type=\"radio\" name=\"normal-horizontal\">",
+              "target": [
+                "li:nth-child(1) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Target has insufficient size (2px by 2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 12px instead of at least 24px."
+            },
+            {
+              "any": [
+                {
+                  "id": "target-size",
+                  "data": {
+                    "minSize": 24,
+                    "width": 2,
+                    "height": 2
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Target has insufficient size (2px by 2px, should be at least 24px by 24px)"
+                },
+                {
+                  "id": "target-offset",
+                  "data": {
+                    "closestOffset": 12,
+                    "minOffset": 24
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<input class=\"k-radio\" type=\"radio\" name=\"normal-horizontal\">",
+                      "target": [
+                        "li:nth-child(1) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
+                      ]
+                    },
+                    {
+                      "html": "<input class=\"k-radio\" type=\"radio\" name=\"normal-horizontal\">",
+                      "target": [
+                        "li:nth-child(3) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 12px instead of at least 24px."
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<input class=\"k-radio\" type=\"radio\" name=\"normal-horizontal\">",
+              "target": [
+                "li:nth-child(2) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Target has insufficient size (2px by 2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 12px instead of at least 24px."
+            },
+            {
+              "any": [
+                {
+                  "id": "target-size",
+                  "data": {
+                    "minSize": 24,
+                    "width": 2,
+                    "height": 2
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Target has insufficient size (2px by 2px, should be at least 24px by 24px)"
+                },
+                {
+                  "id": "target-offset",
+                  "data": {
+                    "closestOffset": 12,
+                    "minOffset": 24
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<input class=\"k-radio\" type=\"radio\" name=\"normal-horizontal\">",
+                      "target": [
+                        "li:nth-child(2) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 12px instead of at least 24px."
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<input class=\"k-radio\" type=\"radio\" name=\"normal-horizontal\">",
+              "target": [
+                "li:nth-child(3) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Target has insufficient size (2px by 2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 12px instead of at least 24px."
+            }
+          ],
+          "wcagCriteria": [
+            "2.5.8"
+          ],
+          "severity": "serious"
         }
       ],
-      "filteredPageLevel": 0,
+      "filteredPageLevel": 3,
       "passes": [
-        {
-          "id": "aria-allowed-attr",
-          "description": "Ensure an element's role supports its ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
         {
           "id": "aria-allowed-role",
           "description": "Ensure role attribute has an appropriate value for the element",
           "wcagCriteria": []
-        },
-        {
-          "id": "aria-conditional-attr",
-          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
         },
         {
           "id": "aria-deprecated-role",
@@ -506,29 +1132,10 @@
           ]
         },
         {
-          "id": "aria-dialog-name",
-          "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
-          "wcagCriteria": []
-        },
-        {
           "id": "aria-hidden-body",
           "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
           "wcagCriteria": [
             "1.3.1",
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-hidden-focus",
-          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-prohibited-attr",
-          "description": "Ensure ARIA attributes are not prohibited for an element's role",
-          "wcagCriteria": [
             "4.1.2"
           ]
         },
@@ -547,20 +1154,6 @@
           ]
         },
         {
-          "id": "aria-valid-attr-value",
-          "description": "Ensure all ARIA attributes have valid values",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-valid-attr",
-          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "avoid-inline-spacing",
           "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
           "wcagCriteria": [
@@ -568,17 +1161,17 @@
           ]
         },
         {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "document-title",
           "description": "Ensure each HTML document contains a non-empty <title> element",
           "wcagCriteria": [
             "2.4.2"
+          ]
+        },
+        {
+          "id": "duplicate-id-aria",
+          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
+          "wcagCriteria": [
+            "4.1.2"
           ]
         },
         {
@@ -608,9 +1201,11 @@
           "wcagCriteria": []
         },
         {
-          "id": "landmark-one-main",
-          "description": "Ensure the document has a main landmark",
-          "wcagCriteria": []
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
         },
         {
           "id": "meta-viewport-large",
@@ -632,367 +1227,8 @@
           ]
         },
         {
-          "id": "page-has-heading-one",
-          "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
-          "wcagCriteria": []
-        },
-        {
-          "id": "region",
-          "description": "Ensure all page content is contained by landmarks",
-          "wcagCriteria": []
-        },
-        {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ]
-        }
-      ],
-      "incomplete": [
-        {
-          "id": "duplicate-id-aria",
-          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-          "wcagCriteria": [
-            "4.1.2"
-          ],
-          "nodes": 2
-        }
-      ],
-      "inapplicable": 60
-    },
-    {
-      "filePath": "./tests/dialog/dialog-modal.html",
-      "timestamp": "2026-01-28T12:06:39.926Z",
-      "violations": [],
-      "filteredPageLevel": 0,
-      "passes": [
-        {
-          "id": "aria-allowed-attr",
-          "description": "Ensure an element's role supports its ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-allowed-role",
-          "description": "Ensure role attribute has an appropriate value for the element",
-          "wcagCriteria": []
-        },
-        {
-          "id": "aria-conditional-attr",
-          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-deprecated-role",
-          "description": "Ensure elements do not use deprecated roles",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-dialog-name",
-          "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
-          "wcagCriteria": []
-        },
-        {
-          "id": "aria-hidden-body",
-          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
-          "wcagCriteria": [
-            "1.3.1",
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-hidden-focus",
-          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-prohibited-attr",
-          "description": "Ensure ARIA attributes are not prohibited for an element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-required-attr",
-          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-roles",
-          "description": "Ensure all elements with a role attribute use a valid value",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-valid-attr-value",
-          "description": "Ensure all ARIA attributes have valid values",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-valid-attr",
-          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "avoid-inline-spacing",
-          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-          "wcagCriteria": [
-            "1.4.1"
-          ]
-        },
-        {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "document-title",
-          "description": "Ensure each HTML document contains a non-empty <title> element",
-          "wcagCriteria": [
-            "2.4.2"
-          ]
-        },
-        {
-          "id": "html-has-lang",
-          "description": "Ensure every HTML document has a lang attribute",
-          "wcagCriteria": [
-            "3.1.1"
-          ]
-        },
-        {
-          "id": "html-lang-valid",
-          "description": "Ensure the lang attribute of the <html> element has a valid value",
-          "wcagCriteria": [
-            "3.1.1"
-          ]
-        },
-        {
-          "id": "landmark-one-main",
-          "description": "Ensure the document has a main landmark",
-          "wcagCriteria": []
-        },
-        {
-          "id": "meta-viewport-large",
-          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
-          "wcagCriteria": []
-        },
-        {
-          "id": "meta-viewport",
-          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
-          "wcagCriteria": [
-            "1.4.4"
-          ]
-        },
-        {
-          "id": "nested-interactive",
-          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "page-has-heading-one",
-          "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
-          "wcagCriteria": []
-        },
-        {
-          "id": "region",
-          "description": "Ensure all page content is contained by landmarks",
-          "wcagCriteria": []
-        },
-        {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ]
-        }
-      ],
-      "incomplete": [
-        {
-          "id": "duplicate-id-aria",
-          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-          "wcagCriteria": [
-            "4.1.2"
-          ],
-          "nodes": 2
-        }
-      ],
-      "inapplicable": 63
-    },
-    {
-      "filePath": "./tests/dialog/dialog-in-window.html",
-      "timestamp": "2026-01-28T12:06:40.149Z",
-      "violations": [],
-      "filteredPageLevel": 0,
-      "passes": [
-        {
-          "id": "aria-allowed-attr",
-          "description": "Ensure an element's role supports its ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-allowed-role",
-          "description": "Ensure role attribute has an appropriate value for the element",
-          "wcagCriteria": []
-        },
-        {
-          "id": "aria-conditional-attr",
-          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-deprecated-role",
-          "description": "Ensure elements do not use deprecated roles",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-dialog-name",
-          "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
-          "wcagCriteria": []
-        },
-        {
-          "id": "aria-hidden-body",
-          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
-          "wcagCriteria": [
-            "1.3.1",
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-hidden-focus",
-          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-prohibited-attr",
-          "description": "Ensure ARIA attributes are not prohibited for an element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-required-attr",
-          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-roles",
-          "description": "Ensure all elements with a role attribute use a valid value",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-valid-attr-value",
-          "description": "Ensure all ARIA attributes have valid values",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-valid-attr",
-          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "avoid-inline-spacing",
-          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-          "wcagCriteria": [
-            "1.4.1"
-          ]
-        },
-        {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "document-title",
-          "description": "Ensure each HTML document contains a non-empty <title> element",
-          "wcagCriteria": [
-            "2.4.2"
-          ]
-        },
-        {
-          "id": "duplicate-id-aria",
-          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "html-has-lang",
-          "description": "Ensure every HTML document has a lang attribute",
-          "wcagCriteria": [
-            "3.1.1"
-          ]
-        },
-        {
-          "id": "html-lang-valid",
-          "description": "Ensure the lang attribute of the <html> element has a valid value",
-          "wcagCriteria": [
-            "3.1.1"
-          ]
-        },
-        {
-          "id": "landmark-one-main",
-          "description": "Ensure the document has a main landmark",
-          "wcagCriteria": []
-        },
-        {
-          "id": "meta-viewport-large",
-          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
-          "wcagCriteria": []
-        },
-        {
-          "id": "meta-viewport",
-          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
-          "wcagCriteria": [
-            "1.4.4"
-          ]
-        },
-        {
-          "id": "nested-interactive",
-          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "page-has-heading-one",
-          "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+          "id": "presentation-role-conflict",
+          "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
           "wcagCriteria": []
         },
         {
@@ -1009,183 +1245,7 @@
         }
       ],
       "incomplete": [],
-      "inapplicable": 63
-    },
-    {
-      "filePath": "./tests/dialog/dialog-action-buttons.html",
-      "timestamp": "2026-01-28T12:06:40.388Z",
-      "violations": [],
-      "filteredPageLevel": 0,
-      "passes": [
-        {
-          "id": "aria-allowed-attr",
-          "description": "Ensure an element's role supports its ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-allowed-role",
-          "description": "Ensure role attribute has an appropriate value for the element",
-          "wcagCriteria": []
-        },
-        {
-          "id": "aria-conditional-attr",
-          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-deprecated-role",
-          "description": "Ensure elements do not use deprecated roles",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-dialog-name",
-          "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
-          "wcagCriteria": []
-        },
-        {
-          "id": "aria-hidden-body",
-          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
-          "wcagCriteria": [
-            "1.3.1",
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-hidden-focus",
-          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-prohibited-attr",
-          "description": "Ensure ARIA attributes are not prohibited for an element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-required-attr",
-          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-roles",
-          "description": "Ensure all elements with a role attribute use a valid value",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-valid-attr-value",
-          "description": "Ensure all ARIA attributes have valid values",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-valid-attr",
-          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "avoid-inline-spacing",
-          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-          "wcagCriteria": [
-            "1.4.1"
-          ]
-        },
-        {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "document-title",
-          "description": "Ensure each HTML document contains a non-empty <title> element",
-          "wcagCriteria": [
-            "2.4.2"
-          ]
-        },
-        {
-          "id": "html-has-lang",
-          "description": "Ensure every HTML document has a lang attribute",
-          "wcagCriteria": [
-            "3.1.1"
-          ]
-        },
-        {
-          "id": "html-lang-valid",
-          "description": "Ensure the lang attribute of the <html> element has a valid value",
-          "wcagCriteria": [
-            "3.1.1"
-          ]
-        },
-        {
-          "id": "landmark-one-main",
-          "description": "Ensure the document has a main landmark",
-          "wcagCriteria": []
-        },
-        {
-          "id": "meta-viewport-large",
-          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
-          "wcagCriteria": []
-        },
-        {
-          "id": "meta-viewport",
-          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
-          "wcagCriteria": [
-            "1.4.4"
-          ]
-        },
-        {
-          "id": "nested-interactive",
-          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "page-has-heading-one",
-          "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
-          "wcagCriteria": []
-        },
-        {
-          "id": "region",
-          "description": "Ensure all page content is contained by landmarks",
-          "wcagCriteria": []
-        },
-        {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ]
-        }
-      ],
-      "incomplete": [
-        {
-          "id": "duplicate-id-aria",
-          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-          "wcagCriteria": [
-            "4.1.2"
-          ],
-          "nodes": 2
-        }
-      ],
-      "inapplicable": 63
+      "inapplicable": 67
     }
   ]
 }

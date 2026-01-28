@@ -177,7 +177,7 @@ async function validateAttribute(element, rule) {
         'aria-labelledby': 'aria-label',
         'aria-describedby': 'aria-description'
     };
-    
+
     if (labelAlternatives[attrName]) {
         const alternative = labelAlternatives[attrName];
         try {
@@ -219,7 +219,7 @@ async function validateAttribute(element, rule) {
         }
 
         // For boolean HTML attributes, presence is sufficient
-        if (attrName === 'disabled' || attrName === 'readonly' || attrName === 'required') {
+        if (attrName === 'disabled' || attrName === 'readonly' || attrName === 'required' || attrName === 'checked') {
             return { valid: true, actual: actualValue };
         }
 
@@ -261,6 +261,33 @@ async function validateAttribute(element, rule) {
             error: error.message
         };
     }
+}
+
+/**
+ * Check if an attribute is conditional based on usage text
+ * @param {string} usage - Usage description from spec
+ * @returns {boolean} True if attribute is conditional
+ */
+function isConditionalAttribute(usage) {
+    if (!usage) {
+        return false;
+    }
+    
+    const conditionalKeywords = [
+        'only when',
+        'only be present when',
+        'only if',
+        'only present',
+        'rendered only when',
+        'should only be present',
+        'only present and required if',
+        'if the value is not indeterminate',
+        'optional',
+        'if not present'
+    ];
+    
+    const lowerUsage = usage.toLowerCase();
+    return conditionalKeywords.some(keyword => lowerUsage.includes(keyword));
 }
 
 /**
@@ -323,6 +350,15 @@ async function validatePage(filePath, ariaSpec, browser) {
                 const result = await validateAttribute(element, rule, browser);
 
                 if (!result.valid) {
+                    // Check if this is a conditional attribute that can be omitted
+                    if (isConditionalAttribute(rule.usage) && result.reason === 'missing') {
+                        // Conditional attribute is missing - this is acceptable
+                        if (verboseMode) {
+                            console.log(`  ℹ Conditional attribute ${rule.attribute} not present (acceptable)`);
+                        }
+                        continue;
+                    }
+
                     // Before marking as violation, check if a more specific selector overrides this
                     // This handles cases like .k-dialog (role=dialog) vs .k-dialog.k-alert (role=alertdialog)
                     const attrName = rule.attribute.split('=')[0].trim();
