@@ -61,14 +61,17 @@ export const SvgIcon = (
     }
 
     if (icon === 'none') {
-        <span
-            {...other}
-            className={classNames(
-                props.className,
-                SVGICON_CLASSNAME,
-                'k-none'
-            )}
-        />;
+        return (
+            <span
+                {...other}
+                className={classNames(
+                    props.className,
+                    SVGICON_CLASSNAME,
+                    'k-none'
+                )}
+                aria-hidden="true"
+            />
+        );
     }
 
     const name = (typeof icon === "object" && icon.name) && icon.name;
@@ -76,6 +79,7 @@ export const SvgIcon = (
     return (
         <span
             {...other}
+            aria-hidden="true"
             className={classNames(
                 props.className,
                 SVGICON_CLASSNAME,
@@ -90,7 +94,6 @@ export const SvgIcon = (
                     'k-flip-v': flip === 'v' || flip === 'both'
                 }
             )}
-            aria-hidden="true"
         >
             <svg
                 aria-hidden={true}

@@ -53,6 +53,7 @@ export const FontIcon = (
     return (
         <span
             {...other}
+            aria-hidden="true"
             className={classNames(
                 props.className,
                 FONTICON_CLASSNAME,
@@ -67,7 +68,6 @@ export const FontIcon = (
                     'k-flip-v': flip === 'v' || flip === 'both'
                 }
             )}
-            aria-hidden="true"
         />
     );
 };

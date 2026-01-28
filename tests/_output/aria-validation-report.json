@@ -1,120 +1,491 @@
 {
-  "timestamp": "2025-12-19T12:58:09.019Z",
+  "timestamp": "2026-01-28T09:41:16.644Z",
   "summary": {
-    "filesTested": 7,
+    "filesTested": 3,
     "skipped": 0,
-    "passed": 2,
-    "violations": 4
+    "passed": 813,
+    "violations": 35
   },
   "results": [
     {
-      "filePath": "./tests/filemanager/filemanager-listview.html",
-      "spec": "aria/filemanager_aria.md",
-      "totalRules": 1,
-      "violations": [],
-      "passed": 0,
-      "violationCount": 0
-    },
-    {
-      "filePath": "./tests/filemanager/filemanager-listview-preview.html",
-      "spec": "aria/filemanager_aria.md",
+      "filePath": "./tests/icon/icons-svg.html",
+      "spec": "aria/icon_aria.md",
       "totalRules": 1,
       "violations": [
         {
           "rule": {
-            "selector": ".k-filemanager-preview",
-            "attribute": "tabindex=0",
-            "usage": "The element must be focusable, so that its content would be comunicated to the users."
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
           },
-          "element": "<div class=\"k-filemanager-preview k-pane k-pane-static k-scrollable\" style=\"flex-basis: 25%;\">\n                        <div class=\"k-file-info\">\n                            <span class=\"k-file-preview",
-          "index": 0,
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-arrow-down-outline\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <pat",
+          "index": 35,
           "valid": false,
           "reason": "missing",
-          "expected": "tabindex",
+          "expected": "aria-hidden",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-filemanager-preview",
-            "attribute": "tabindex=0",
-            "usage": "The element must be focusable, so that its content would be comunicated to the users."
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
           },
-          "element": "<div class=\"k-filemanager-preview k-pane k-pane-static k-scrollable\" style=\"flex-basis: 25%;\">\n                        <div class=\"k-file-info\">\n                            <span class=\"k-file-preview",
-          "index": 2,
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-arrow-left\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"M28",
+          "index": 36,
           "valid": false,
           "reason": "missing",
-          "expected": "tabindex",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-arrow-rotate-cw-outline\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                   ",
+          "index": 42,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-arrow-rotate-cw-small\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <",
+          "index": 43,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-arrow-up-outline\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path ",
+          "index": 46,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-arrows-axes\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"M3",
+          "index": 47,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-arrows-rotate-outline\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <",
+          "index": 52,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-arrows-swap\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"M2",
+          "index": 53,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-file-clock-outline\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <pat",
+          "index": 313,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-file-config\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"M3",
+          "index": 314,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-lightbulb-outline\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path",
+          "index": 474,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-line-height\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"m3",
+          "index": 475,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-menu-filter\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"M4",
+          "index": 508,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-menu\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"M480 32v9",
+          "index": 509,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-menu-sort-asc\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"",
+          "index": 510,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-menu-sort-desc\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=",
+          "index": 511,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-microphone-outline\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <pat",
+          "index": 512,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-paperclip-outline-alt-right\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n               ",
+          "index": 554,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-paperclip-outline\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path",
+          "index": 555,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-paragraph-add\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"",
+          "index": 556,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-paste-sparkle\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"",
+          "index": 569,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-patient-outline\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d",
+          "index": 570,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-pin-outline-bottom\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <pat",
+          "index": 581,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-pin-outline\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"M3",
+          "index": 582,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-pin-outline-top\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d",
+          "index": 583,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-pin-solid\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"M319",
+          "index": 584,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-pinterest-box\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"",
+          "index": 585,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-unpin-outline\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"",
+          "index": 777,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-unpin-solid\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"M2",
+          "index": 778,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-unstick\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"M290.6",
+          "index": 779,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-x-mark-outline\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=",
+          "index": 816,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-x-mark-sm-outline\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path",
+          "index": 817,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-x-outline\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"M384",
+          "index": 818,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
+          },
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-zoom-sparkle\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"M",
+          "index": 827,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-hidden",
           "actual": null
         }
       ],
-      "passed": 1,
-      "violationCount": 2
+      "passed": 794,
+      "violationCount": 34
     },
     {
-      "filePath": "./tests/filemanager/filemanager-gridview.html",
-      "spec": "aria/filemanager_aria.md",
-      "totalRules": 1,
-      "violations": [],
-      "passed": 0,
-      "violationCount": 0
-    },
-    {
-      "filePath": "./tests/filemanager/filemanager-gridview-preview.html",
-      "spec": "aria/filemanager_aria.md",
+      "filePath": "./tests/icon/icons-size.html",
+      "spec": "aria/icon_aria.md",
       "totalRules": 1,
       "violations": [
         {
           "rule": {
-            "selector": ".k-filemanager-preview",
-            "attribute": "tabindex=0",
-            "usage": "The element must be focusable, so that its content would be comunicated to the users."
+            "selector": ".k-icon, .k-svg-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the icon element and all its children from assistive technologies."
           },
-          "element": "<div class=\"k-filemanager-preview k-pane k-pane-static k-scrollable\" style=\"flex-basis: 25%;\">\n                        <div class=\"k-file-info\">\n                            <span class=\"k-file-preview",
+          "element": "<span class=\"k-icon k-svg-icon k-svg-i-star\">\n                <svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n                    <path d=\"M256 391.",
           "index": 0,
           "valid": false,
           "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-filemanager-preview",
-            "attribute": "tabindex=0",
-            "usage": "The element must be focusable, so that its content would be comunicated to the users."
-          },
-          "element": "<div class=\"k-filemanager-preview k-pane k-pane-static k-scrollable\" style=\"flex-basis: 25%;\">\n                        <div class=\"k-file-info\">\n                            <span class=\"k-file-preview",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
+          "expected": "aria-hidden",
           "actual": null
         }
       ],
-      "passed": 1,
-      "violationCount": 2
+      "passed": 7,
+      "violationCount": 1
     },
     {
-      "filePath": "./tests/filemanager/filemanager-drag-hint.html",
-      "spec": "aria/filemanager_aria.md",
+      "filePath": "./tests/icon/icons-flip-rotate.html",
+      "spec": "aria/icon_aria.md",
       "totalRules": 1,
       "violations": [],
-      "passed": 0,
-      "violationCount": 0
-    },
-    {
-      "filePath": "./tests/filemanager/filemanager-dialogs.html",
-      "spec": "aria/filemanager_aria.md",
-      "totalRules": 1,
-      "violations": [],
-      "passed": 0,
-      "violationCount": 0
-    },
-    {
-      "filePath": "./tests/filemanager/filemanager-contextmenu.html",
-      "spec": "aria/filemanager_aria.md",
-      "totalRules": 1,
-      "violations": [],
-      "passed": 0,
+      "passed": 12,
       "violationCount": 0
     }
   ]
