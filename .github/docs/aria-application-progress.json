@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-01-28T15:13:40.744Z",
+  "lastUpdated": "2026-01-28T18:43:48.564Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -970,7 +970,7 @@
       "notes": ""
     },
     "range-slider": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "interactive",
       "complianceScore": null,
@@ -980,7 +980,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": "Range slider is a variant of slider component with dual handles"
+      "notes": "Range slider is a variant of slider component with dual handles",
+      "completedAt": "2026-01-28T18:41:12.579Z"
     },
     "rating": {
       "status": "completed",
@@ -1051,7 +1052,7 @@
       "completedAt": "2026-01-28T12:19:34.327Z"
     },
     "slider": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "interactive",
       "complianceScore": null,
@@ -1061,7 +1062,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": "ARIA attributes applied for slider role, value management, orientation, and button accessibility"
+      "notes": "ARIA attributes applied for slider role, value management, orientation, and button accessibility",
+      "completedAt": "2026-01-28T18:43:48.563Z"
     },
     "sortable": {
       "status": "pending",

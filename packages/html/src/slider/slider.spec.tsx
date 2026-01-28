@@ -102,7 +102,7 @@ export const Slider: KendoComponent<KendoSliderProps & KendoSliderState & React.
                         aria-valuenow={0}
                         aria-valuemin={0}
                         aria-valuemax={100}
-                        aria-valuetext="0"
+                        aria-valuetext="0 - 50"
                         aria-orientation={orientation === 'vertical' ? 'vertical' : undefined}
                         aria-readonly={readonly ? 'true' : undefined}
                         aria-disabled={disabled ? 'true' : undefined}
@@ -123,7 +123,7 @@ export const Slider: KendoComponent<KendoSliderProps & KendoSliderState & React.
                         aria-valuenow={50}
                         aria-valuemin={0}
                         aria-valuemax={100}
-                        aria-valuetext="50"
+                        aria-valuetext={type === 'range' ? '0 - 50' : '50'}
                         aria-orientation={orientation === 'vertical' ? 'vertical' : undefined}
                         aria-readonly={readonly ? 'true' : undefined}
                         aria-disabled={disabled ? 'true' : undefined}
