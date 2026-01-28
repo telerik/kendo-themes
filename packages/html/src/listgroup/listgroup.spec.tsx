@@ -1,4 +1,4 @@
-import ListGroupItem from './listgroup-item.spec';
+import React from 'react';
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
@@ -10,7 +10,7 @@ const states = [];
 const options = {};
 
 export type KendoListGroupOptions = {
-    children?: React.JSX.Element | React.JSX.Element[];
+    children?: React.ReactNode;
     dir?: string;
 };
 
@@ -28,22 +28,6 @@ export const ListGroup: KendoComponent<KendoListGroupOptions & React.HTMLAttribu
         ...other
     } = props;
 
-    const listChildren : React.JSX.Element[] = [];
-
-    if (children) {
-        if (Array.isArray(children)) {
-            children.map((child, index) => {
-                if ( child.type === ListGroupItem) {
-                    listChildren.push(
-                        <ListGroupItem {...child.props} dir={dir} key={index} />
-                    );
-                } else {
-                    listChildren.push(child);
-                }
-            });
-        }
-    }
-
     return (
         <ul
             {...other}
@@ -51,7 +35,11 @@ export const ListGroup: KendoComponent<KendoListGroupOptions & React.HTMLAttribu
                 props.className,
                 LISTGROUP_CLASSNAME
             )}>
-            {listChildren}
+            {React.Children.map(children, (child, index) =>
+                React.isValidElement(child)
+                    ? React.cloneElement(child, { dir, key: index } as React.Attributes)
+                    : child
+            )}
         </ul>
     );
 };
