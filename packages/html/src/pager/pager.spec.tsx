@@ -88,7 +88,6 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                 fillMode="flat"
                 themeColor="primary"
                 size={size}
-                rounded={null}
             >
                 {i}
             </Button>
@@ -130,7 +129,6 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         disabled={currentPage === 1 && !disabled}
                         fillMode="flat"
                         size={size}
-                        rounded={null}
                         icon={dir === "rtl" ? "caret-alt-to-right" : "caret-alt-to-left"}
                     >
                     </Button><Button
@@ -140,7 +138,6 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         disabled={currentPage === 1 && !disabled}
                         fillMode="flat"
                         size={size}
-                        rounded={null}
                         icon={dir === "rtl" ? "caret-alt-right" : "caret-alt-left"}
                     >
                     </Button>
@@ -172,7 +169,6 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         disabled={currentPage === maxPages && !disabled}
                         fillMode="flat"
                         size={size}
-                        rounded={null}
                         icon={dir === "rtl" ? "caret-alt-left" : "caret-alt-right" }
                     >
                     </Button>
@@ -184,7 +180,6 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         disabled={currentPage === maxPages && !disabled}
                         fillMode="flat"
                         size={size}
-                        rounded={null}
                         icon={dir === "rtl" ? "caret-alt-to-left" : "caret-alt-to-right" }
                     >
                     </Button>
@@ -209,7 +204,6 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                     )}
                     fillMode="flat"
                     size={size}
-                    rounded={null}
                     icon="arrow-rotate-cw"
                 >
                 </Button>

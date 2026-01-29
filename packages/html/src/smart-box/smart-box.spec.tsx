@@ -20,7 +20,7 @@ const states = [
 
 const options = {
     size: [Size.undefined, Size.small, Size.medium, Size.large],
-    rounded: [Roundness.undefined, Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    rounded: [Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
     fillMode: [FillMode.undefined, FillMode.solid, FillMode.flat, FillMode.outline],
 };
 

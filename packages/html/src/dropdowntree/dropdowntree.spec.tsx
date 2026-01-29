@@ -143,7 +143,6 @@ export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdown
                 <Button
                     className="k-input-button"
                     icon={arrowIconName}
-                    rounded={null}
                     size={props.size}
                     fillMode={props.fillMode}
                 />

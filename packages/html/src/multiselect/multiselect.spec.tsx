@@ -155,7 +155,6 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                     <Button
                         className="k-input-button"
                         icon="caret-alt-down"
-                        rounded={null}
                         size={size}
                         fillMode={fillMode}
                     />

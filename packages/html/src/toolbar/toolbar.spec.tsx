@@ -5,7 +5,7 @@ import { Combobox } from '../combobox';
 import { DropdownList } from '../dropdownlist';
 import { MenuButton } from '../menu-button';
 import SplitButton from '../split-button/split-button.spec';
-import { classNames, optionClassNames, stateClassNames, States, Size, FillMode, ThemeColor, Roundness } from '../misc';
+import { classNames, optionClassNames, stateClassNames, States, Size, FillMode } from '../misc';
 import { ToolbarSeparator } from './toolbar-separator';
 import { Icon } from '../icon';
 
@@ -211,9 +211,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                             'k-button',
                             optionClassNames('k-button', {
                                 size,
-                                fillMode,
-                                themeColor: ThemeColor.base,
-                                rounded: Roundness.medium
+                                fillMode
                             }),
                             'k-icon-button',
                         )}>
@@ -224,9 +222,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                             'k-button',
                             optionClassNames('k-button', {
                                 size,
-                                fillMode,
-                                themeColor: ThemeColor.base,
-                                rounded: Roundness.medium
+                                fillMode
                             }),
                             'k-icon-button',
                         )}>
@@ -248,9 +244,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                             'k-button',
                             optionClassNames('k-button', {
                                 size,
-                                fillMode,
-                                themeColor: ThemeColor.base,
-                                rounded: Roundness.medium
+                                fillMode
                             }),
                             'k-icon-button',
                         )}>
@@ -261,9 +255,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                             'k-button',
                             optionClassNames('k-button', {
                                 size,
-                                fillMode,
-                                themeColor: ThemeColor.base,
-                                rounded: Roundness.medium
+                                fillMode
                             }),
                             'k-icon-button',
                         )}>
@@ -280,9 +272,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                         'k-button',
                         optionClassNames('k-button', {
                             size,
-                            fillMode,
-                            themeColor: ThemeColor.base,
-                            rounded: Roundness.medium
+                            fillMode
                         }),
                         'k-icon-button',
                     )}>
@@ -296,9 +286,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                         'k-button',
                         optionClassNames('k-button', {
                             size,
-                            fillMode,
-                            themeColor: ThemeColor.base,
-                            rounded: Roundness.medium
+                            fillMode
                         }),
                         'k-icon-button',
                     )}>

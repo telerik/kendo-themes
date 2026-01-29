@@ -16,7 +16,7 @@ export const ToolbarSection = ({ fillMode, size, ...other }: any) => (
                 <Button className="k-group-end" icon="align-right" fillMode={fillMode} size={size}>Right</Button>
             </ButtonGroup>,
             <ToolbarSeparator className="k-toolbar-button-separator" />,
-            <Button icon="more-horizontal" className="k-toolbar-overflow-button" fillMode="flat" size={size} rounded={null}></Button>
+            <Button icon="more-horizontal" className="k-toolbar-overflow-button" fillMode="flat" size={size} rounded="none"></Button>
         ]}
         {...other}>
         </Toolbar>

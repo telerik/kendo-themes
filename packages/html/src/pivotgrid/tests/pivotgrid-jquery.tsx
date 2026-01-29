@@ -35,8 +35,8 @@ export default () =>(
                                             }
                                         />
                                     </Toolbar>
-                                    <div className="k-grid k-grid-md" style={{ height: "363px" }}>
-                                        <table className="k-table k-table-md">
+                                    <div className="k-grid" style={{ height: "363px" }}>
+                                        <table className="k-table">
                                             <colgroup>
                                                 <col />
                                             </colgroup>
@@ -71,10 +71,10 @@ export default () =>(
                                             }
                                         />
                                     </Toolbar>
-                                    <div className="k-grid k-grid-md">
+                                    <div className="k-grid">
                                         <div className="k-grid-header">
                                             <div className="k-grid-header-wrap" style={{ height: "110px" }}>
-                                                <table className="k-table k-table-md k-grid-header-table" style={{ width: "199%" }}>
+                                                <table className="k-table k-grid-header-table" style={{ width: "199%" }}>
                                                     <colgroup>
                                                         <col />
                                                         <col />
@@ -181,7 +181,7 @@ export default () =>(
                                             </div>
                                         </div>
                                         <div className="k-grid-content" style={{ height: "380px" }}>
-                                            <table className="k-table k-table-md k-grid-table" style={{ width: "199%" }}>
+                                            <table className="k-table k-grid-table" style={{ width: "199%" }}>
                                                 <colgroup>
                                                     <col />
                                                     <col />
