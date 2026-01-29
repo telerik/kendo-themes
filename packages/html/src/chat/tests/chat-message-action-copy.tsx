@@ -16,7 +16,7 @@ const styles = `
     }
 
     .copy-notification {
-        top: 300px;
+        top: 270px;
         left: 700px;
     }
 `;
