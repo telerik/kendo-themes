@@ -46,6 +46,7 @@ export const OneTimePassword: KendoComponent<KendoOneTimePasswordOptions & Kendo
                 })
             )}
         >
+            <input type="hidden" aria-hidden="true" />
             {props.children}
         </div>
     );

@@ -25,12 +25,21 @@ export const SpeechToTextButton: KendoComponent<KendoSpeechToTextButtonProps & K
     const {
         listening = false,
         icon = defaultOptions.icon,
+        'aria-label': ariaLabel,
+        'aria-labelledby': ariaLabelledby,
         ...other
     } = props;
+
+    const computedAriaLabel = ariaLabelledby
+        ? undefined
+        : (ariaLabel ?? (listening ? 'Stop speech to text' : 'Start speech to text'));
 
     return (
         <Button
             {...other}
+            aria-label={computedAriaLabel}
+            aria-labelledby={ariaLabelledby}
+            aria-pressed={listening ? 'true' : 'false'}
             icon={listening ? "stop-sm" : icon}
             className={classNames(
                 props.className,

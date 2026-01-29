@@ -27,10 +27,10 @@ export default () =>(
                     </>
                 }>
                     <FormNormal formButtons={null}>
-                        <FormField label="Cell Range" editor={ <Textbox value="Input Value" /> }/>
+                        <FormField label="Cell Range" editor={ <Textbox value="Input Value" inputProps={{ 'aria-label': 'Cell range' }} /> }/>
                         <FormField label="Criteria" editor={ <DropdownList value="Number" /> }/>
                         <FormField label="Comparer" editor={ <DropdownList value="Greater than" /> } />
-                        <FormField label="Min" editor={ <Textbox placeholder="Placeholder" /> } />
+                        <FormField label="Min" editor={ <Textbox placeholder="Placeholder" inputProps={{ 'aria-label': 'Minimum' }} /> } />
                         <FormField editor={
                             <>
                                 <CheckboxWithLabelAfter>Ignore blank</CheckboxWithLabelAfter>

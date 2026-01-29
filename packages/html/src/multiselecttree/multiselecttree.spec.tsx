@@ -195,6 +195,10 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
                             inputPlaceholder={placeholder}
                             title={adaptiveTitle}
                             subtitle={adaptiveSubtitle}
+                            filterInputProps={adaptiveFilter ? {
+                                role: 'searchbox',
+                                'aria-label': 'Filter options'
+                            } : undefined}
                         />
                     }
                 >

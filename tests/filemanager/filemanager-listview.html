@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -87,7 +87,7 @@
             </div>
             <div class="k-filemanager-content-container">
                 <div class="k-filemanager-splitter k-splitter k-splitter-horizontal k-splitter-flex">
-                    <div class="k-filemanager-navigation k-pane k-pane-static k-scrollable" style="flex-basis: 20%;">
+                    <div class="k-filemanager-navigation k-pane k-pane-static k-scrollable" role="group" style="flex-basis: 20%;">
                         <div class="k-filemanager-treeview k-treeview">
                             <ul class="k-treeview-lines k-treeview-group">
                                 <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
@@ -100,10 +100,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-static-horizontal">
+                    <div role="separator" aria-label="Splitter separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown" class="k-splitbar k-splitbar-horizontal k-splitbar-static-horizontal">
                         <div class="k-resize-handle"></div>
                     </div>
-                    <div class="k-filemanager-content k-pane k-scrollable">
+                    <div class="k-filemanager-content k-pane k-scrollable" role="group">
                         <nav class="k-filemanager-breadcrumb k-breadcrumb" aria-label="Breadcrumb">
                             <ol class="k-breadcrumb-container">
                                 <li class="k-breadcrumb-item k-breadcrumb-root-item">
@@ -221,7 +221,7 @@
             </div>
             <div class="k-filemanager-content-container">
                 <div class="k-filemanager-splitter k-splitter k-splitter-horizontal k-splitter-flex">
-                    <div class="k-filemanager-navigation k-pane k-pane-static k-scrollable" style="flex-basis: 25%;">
+                    <div class="k-filemanager-navigation k-pane k-pane-static k-scrollable" role="group" style="flex-basis: 25%;">
                         <div class="k-filemanager-treeview k-treeview">
                             <ul class="k-treeview-lines k-treeview-group">
                                 <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
@@ -234,7 +234,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+                    <div role="separator" aria-label="Splitter separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown" class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
                         <div class="k-collapse-prev">
                             <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -244,7 +244,7 @@
                         </div>
                         <div class="k-resize-handle"></div>
                     </div>
-                    <div class="k-filemanager-content k-pane k-scrollable">
+                    <div class="k-filemanager-content k-pane k-scrollable" role="group">
                         <nav class="k-filemanager-breadcrumb k-breadcrumb" aria-label="Breadcrumb">
                             <ol class="k-breadcrumb-container">
                                 <li class="k-breadcrumb-item k-breadcrumb-root-item">

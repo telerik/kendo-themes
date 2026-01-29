@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -50,7 +50,7 @@
             </div>
             <div class="k-gantt-content">
                 <div class="k-gantt-splitter k-splitter k-splitter-horizontal k-splitter-flex">
-                    <div class="k-gantt-treelist k-pane k-pane-static" style="flex-basis: 30%;">
+                    <div class="k-gantt-treelist k-pane k-pane-static" role="group" style="flex-basis: 30%;">
                         <div class="k-treelist k-grid">
                             <div class="k-grid-aria-root" role="treegrid">
                                 <div class="k-grid-header">
@@ -140,10 +140,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+                    <div role="separator" aria-label="Splitter separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown" class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
                         <div class="k-resize-handle"></div>
                     </div>
-                    <div class="k-gantt-timeline-pane k-pane">
+                    <div class="k-gantt-timeline-pane k-pane" role="group">
                         <div class="k-gantt-timeline k-grid">
                             <div class="k-grid-header">
                                 <div class="k-grid-header-wrap">

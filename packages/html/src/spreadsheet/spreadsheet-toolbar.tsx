@@ -14,13 +14,19 @@ export const SpreadsheetToolbar = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        'aria-label': ariaLabel,
+        title,
         children,
         ...other
     } = props;
 
+    const computedAriaLabel = ariaLabel ?? (title ? undefined : 'Spreadsheet toolbar');
+
     return (
         <Toolbar
             {...other}
+            aria-label={computedAriaLabel}
+            title={title}
             resizable
             className={classNames(
                 props.className,

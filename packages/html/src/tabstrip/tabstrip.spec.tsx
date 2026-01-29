@@ -22,6 +22,7 @@ export type KendoTabStripProps = KendoTabStripOptions & {
     position?: "top" | "bottom" | "left" | "right";
     tabAlignment?: "start" | "center" | "end" | "justify" | "stretched";
     tabStripItems?: React.JSX.Element | React.JSX.Element[];
+    tabStripItemsId?: string;
     scrollable?: boolean;
     scrollButtons?: "around" | "start" | "end" | "hidden";
     scrollingPosition?: "start" | "end" | "both";
@@ -44,6 +45,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
         scrollable,
         children,
         tabStripItems,
+        tabStripItemsId,
         position = defaultOptions.position,
         tabAlignment = defaultOptions.tabAlignment,
         scrollButtons = defaultOptions.scrollButtons,
@@ -122,8 +124,11 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                         <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["next"]}`} />
                     </span>
                 }
-                <TabStripItems className={classNames({[`k-tabstrip-items-scroll`]: scrollable && scrollButtons === 'hidden'})}
-                tabAlignment={tabAlignmentMap[tabAlignment]}>
+                <TabStripItems
+                    id={tabStripItemsId}
+                    className={classNames({[`k-tabstrip-items-scroll`]: scrollable && scrollButtons === 'hidden'})}
+                    tabAlignment={tabAlignmentMap[tabAlignment]}
+                >
                     {tabStripItems}
                 </TabStripItems>
                 {scrollable && scrollButtons === 'end' &&

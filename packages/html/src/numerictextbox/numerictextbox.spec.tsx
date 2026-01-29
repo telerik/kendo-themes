@@ -47,6 +47,7 @@ export type KendoNumericTextboxProps = KendoNumericTextboxOptions & {
     placeholder?: string;
     showSpinButton?: boolean;
     showClearButton?: boolean;
+    inputProps?: React.HTMLAttributes<HTMLInputElement>;
 };
 
 export type KendoNumericTextboxState = { [K in (typeof states)[number]]?: boolean };
@@ -81,8 +82,16 @@ export const NumericTextbox: KendoComponent<KendoNumericTextboxProps & KendoNume
         loading,
         disabled,
         readonly,
+        inputProps,
+        'aria-label': ariaLabel,
+        'aria-labelledby': ariaLabelledBy,
         ...other
     } = props;
+
+    const resolvedAriaLabelledBy = inputProps?.['aria-labelledby'] ?? ariaLabelledBy;
+    const resolvedAriaLabel = resolvedAriaLabelledBy
+        ? undefined
+        : (inputProps?.['aria-label'] ?? ariaLabel ?? 'Numeric input');
 
 
     return (
@@ -108,7 +117,10 @@ export const NumericTextbox: KendoComponent<KendoNumericTextboxProps & KendoNume
             }
             <InputInnerInput
                 {...other}
+                {...inputProps}
                 role="spinbutton"
+                aria-label={resolvedAriaLabel}
+                aria-labelledby={resolvedAriaLabelledBy}
                 placeholder={placeholder}
                 value={value}
                 disabled={disabled}

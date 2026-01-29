@@ -61,7 +61,7 @@ export default () =>(
                 }>
                     <FormNormal formButtons={null}>
                         <FormField label="Select link" editor={ <DropdownList value="URL" /> } />
-                        <FormField label="URL address" editor={ <Textbox value="Input value" /> } />
+                        <FormField label="URL address" editor={ <Textbox value="Input value" inputProps={{ 'aria-label': 'URL address' }} /> } />
                     </FormNormal>
                 </WindowNormal>
             </section>
@@ -77,7 +77,7 @@ export default () =>(
                 }>
                     <FormNormal formButtons={null}>
                         <FormField label="Select link" editor={ <DropdownList value="Internal" /> } />
-                        <FormField label="Cell reference" editor={ <Textbox value="B3:B11" /> } />
+                        <FormField label="Cell reference" editor={ <Textbox value="B3:B11" inputProps={{ 'aria-label': 'Cell reference' }} /> } />
                         <FormField label="From sheet" editor={
                             <ListBox style={{ width: "100%" }}>
                                 <ListItem>Sheet 1</ListItem>

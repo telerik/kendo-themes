@@ -1,3 +1,4 @@
+import React from 'react';
 import { classNames, optionClassNames, Size } from '../misc';
 import { ListItem } from './list-item.spec';
 import { ListGroup } from './list-group';
@@ -86,10 +87,15 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
                         // Add group items directly (no group header item)
                         if (child.props.children) {
                             child.props.children.forEach((optChild, itemIndex) => {
+                                const listItemRole = role === 'listbox'
+                                    ? (optChild.props.role ?? 'option')
+                                    : optChild.props.role;
+
                                 groupChildren.push(
                                     <ListItem
                                         key={`root-group-item-${itemIndex}`}
                                         {...optChild.props}
+                                        role={listItemRole}
                                     />
                                 );
                             });
@@ -113,10 +119,15 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
                         // Add group items
                         if (child.props.children) {
                             child.props.children.forEach((optChild, itemIndex) => {
+                                const listItemRole = role === 'listbox'
+                                    ? (optChild.props.role ?? 'option')
+                                    : optChild.props.role;
+
                                 const listItem = (
                                     <ListItem
                                         key={`group-${groupIndex}-item-${itemIndex}`}
                                         {...optChild.props}
+                                        role={listItemRole}
                                     />
                                 );
                                 groupChildren.push(listItem);
@@ -156,6 +167,20 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
             screenReaders && (listNoData = <NoData className="k-sr-only" aria-live="polite">{listChildren.length} items found.</NoData>);
         } else {
             // Handle non-grouped list - direct ListItem children
+            const listBoxChildren = role === 'listbox'
+                ? React.Children.map(children, (child) => {
+                    if (!React.isValidElement(child)) {
+                        return child;
+                    }
+
+                    if (child.type === ListItem && !child.props.role) {
+                        return React.cloneElement(child, { role: 'option' });
+                    }
+
+                    return child;
+                })
+                : children;
+
             listContent = (
                 <ListContent
                     role={role !== 'listbox' ? role : undefined}
@@ -166,7 +191,7 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
                     aria-labelledby={ariaLabelledby}
                     aria-multiselectable={ariaMultiselectable}
                 >
-                    {children}
+                    {listBoxChildren}
                 </ListContent>
             );
             screenReaders && (listNoData = <NoData className="k-sr-only" aria-live="polite">{children.length} items found.</NoData>);

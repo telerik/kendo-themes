@@ -44,6 +44,7 @@ export const SplitterPane = (
     return (
         <div
             {...other}
+            role="group"
             style={{ flexBasis, ...props.style }}
             className={classNames(
                 props.className,

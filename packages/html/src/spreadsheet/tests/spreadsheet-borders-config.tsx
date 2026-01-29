@@ -21,16 +21,16 @@ export default () =>(
                         <span className="k-column-menu-group-header-text">Border type</span>
                     </span>
                     <div className="k-spreadsheet-border-type-palette">
-                        <Button icon="borders-all"></Button>
-                        <Button icon="borders-inside"></Button>
-                        <Button icon="borders-inside-horizontal"></Button>
-                        <Button icon="borders-inside-vertical"></Button>
-                        <Button icon="borders-outside"></Button>
-                        <Button icon="border-left"></Button>
-                        <Button icon="border-top"></Button>
-                        <Button icon="border-right"></Button>
-                        <Button icon="border-bottom"></Button>
-                        <Button icon="borders-none"></Button>
+                        <Button icon="borders-all" aria-label="All borders"></Button>
+                        <Button icon="borders-inside" aria-label="Inside borders"></Button>
+                        <Button icon="borders-inside-horizontal" aria-label="Inside horizontal borders"></Button>
+                        <Button icon="borders-inside-vertical" aria-label="Inside vertical borders"></Button>
+                        <Button icon="borders-outside" aria-label="Outside borders"></Button>
+                        <Button icon="border-left" aria-label="Left border"></Button>
+                        <Button icon="border-top" aria-label="Top border"></Button>
+                        <Button icon="border-right" aria-label="Right border"></Button>
+                        <Button icon="border-bottom" aria-label="Bottom border"></Button>
+                        <Button icon="borders-none" aria-label="No borders"></Button>
                     </div>
                     <span className="k-column-menu-group-header">
                         <span className="k-column-menu-group-header-text">Border color</span>

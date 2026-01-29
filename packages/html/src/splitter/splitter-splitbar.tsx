@@ -36,12 +36,21 @@ export const SplitterSplitbar = (
         draggable = defaultOptions.draggable,
         collapsePrev,
         collapseNext,
+        'aria-label': ariaLabel,
+        'aria-labelledby': ariaLabelledby,
         ...other
     } = props;
+
+    const computedAriaLabel = ariaLabelledby ? undefined : (ariaLabel ?? 'Splitter separator');
 
     return (
         <div
             {...other}
+            role="separator"
+            aria-label={computedAriaLabel}
+            aria-labelledby={ariaLabelledby}
+            aria-orientation={orientation === 'horizontal' ? 'vertical' : undefined}
+            aria-keyshortcuts={orientation === 'horizontal' ? 'ArrowLeft ArrowRight ArrowUp ArrowDown' : undefined}
             className={classNames(
                 props.className,
                 SPLITTERSPLITBAR_CLASSNAME,

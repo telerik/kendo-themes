@@ -77,6 +77,7 @@ export const ColorEditor: KendoComponent<KendoColorEditorProps & KendoColorEdito
                 COLOREDITOR_CLASSNAME,
                 optionClassNames(COLOREDITOR_CLASSNAME, { size }),
                 stateClassNames(COLOREDITOR_CLASSNAME, { focus }),
+                { 'k-disabled': disabled }
             )}
             role="textbox"
             aria-label={`Color picker${color ? `, selected color: ${color}` : ''}`}
@@ -103,7 +104,7 @@ export const ColorEditor: KendoComponent<KendoColorEditorProps & KendoColorEdito
                 </div>
             </div>
             <div className="k-coloreditor-views k-vstack">
-                { view === 'gradient' ? <ColorGradient focus={focusView} size={size} canvasOrientation={canvasOrientation} ariaRole={null} ariaLabel={null} tabIndex={-1} /> : <ColorPalette palette={palette} size={size} /> }
+                { view === 'gradient' ? <ColorGradient focus={focusView} size={size} canvasOrientation={canvasOrientation} ariaRole="none" ariaLabel={null} tabIndex={-1} /> : <ColorPalette palette={palette} size={size} /> }
             </div>
             {actionButtons && <ActionButtons className="k-coloreditor-footer" alignment="start" >
                 <Button themeColor="primary" size={size} className="k-coloreditor-apply">Apply</Button>

@@ -56,6 +56,10 @@ export const Step = (
 
     const iconName = invalid ? 'warning-circle' : 'check-circle';
     const renderValidationIcon = Boolean( valid || invalid );
+    const linkTabIndex = focus ? 0 : -1;
+    const ariaCurrent = current ? 'step' : undefined;
+    const ariaDisabled = disabled ? 'true' : undefined;
+    const ariaLabel = label ?? text ?? (optional ? 'Optional step' : 'Step');
 
     return (
         <li
@@ -76,7 +80,14 @@ export const Step = (
                 stateClassNames(STEP_CLASSNAME, { hover, focus, disabled }),
             )}>
 
-            <a href="#" className="k-step-link">
+            <a
+                href="#"
+                className="k-step-link"
+                aria-current={ariaCurrent}
+                aria-disabled={ariaDisabled}
+                aria-label={ariaLabel}
+                tabIndex={linkTabIndex}
+            >
 
                 { text && !icon &&
                     <span className="k-step-indicator">

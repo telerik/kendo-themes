@@ -21,6 +21,7 @@ export const Spreadsheet: KendoComponent<React.HTMLAttributes<HTMLDivElement>> =
     return (
         <div
             {...other}
+            role="application"
             className={classNames(
                 SPREADSHEET_CLASSNAME,
                 props.className

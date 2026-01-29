@@ -45,6 +45,7 @@ export type KendoMaskedTextboxProps = KendoMaskedTextboxOptions & {
     value?: string;
     placeholder?: string;
     showClearButton?: boolean;
+    inputProps?: React.HTMLAttributes<HTMLInputElement>;
 };
 
 export type KendoMaskedTextboxState = { [K in (typeof states)[number]]?: boolean };
@@ -77,8 +78,16 @@ export const MaskedTextbox: KendoComponent<KendoMaskedTextboxProps & KendoMasked
         loading,
         disabled,
         readonly,
+        inputProps,
+        'aria-label': ariaLabel,
+        'aria-labelledby': ariaLabelledBy,
         ...other
     } = props;
+
+    const resolvedAriaLabelledBy = inputProps?.['aria-labelledby'] ?? ariaLabelledBy;
+    const resolvedAriaLabel = resolvedAriaLabelledBy
+        ? undefined
+        : (inputProps?.['aria-label'] ?? ariaLabel ?? 'Masked input');
 
 
     return (
@@ -104,6 +113,9 @@ export const MaskedTextbox: KendoComponent<KendoMaskedTextboxProps & KendoMasked
             }
             <InputInnerInput
                 {...other}
+                {...inputProps}
+                aria-label={resolvedAriaLabel}
+                aria-labelledby={resolvedAriaLabelledBy}
                 placeholder={placeholder}
                 value={value}
                 disabled={disabled}

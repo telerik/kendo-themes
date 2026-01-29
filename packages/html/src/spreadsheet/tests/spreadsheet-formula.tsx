@@ -16,6 +16,9 @@ export default () =>(
     <>
         <style>{style}</style>
         <div id="test-area">
+            {(() => {
+                const formulaListId = 'k-spreadsheet-formula-list';
+                return (
             <Spreadsheet>
                 <SpreadsheetHeader
                     toolbarItems={[ <Button icon="formula-fx" fillMode="flat">Insert Formula</Button> ]}
@@ -58,7 +61,16 @@ export default () =>(
                 />
                 <SpreadsheetView
                     cellEditor={
-                        <div className="k-spreadsheet-cell-editor k-spreadsheet-formula-input" data-role="formulainput" style={{ whiteSpace: "pre", top: "156px", left: "576px", width: "114px", height: "29px", display: "flex", alignItems: "center" }}>
+                        <div
+                            className="k-spreadsheet-cell-editor k-spreadsheet-formula-input"
+                            data-role="formulainput"
+                            role="combobox"
+                            aria-haspopup="menu"
+                            aria-controls={formulaListId}
+                            aria-expanded={false}
+                            title="Formula"
+                            style={{ whiteSpace: "pre", top: "156px", left: "576px", width: "114px", height: "29px", display: "flex", alignItems: "center" }}
+                        >
                             <span className="k-syntax-startexp">=</span>
                             <span className="k-syntax-func">SUM</span>
                             <span className="k-syntax-punc">(</span>
@@ -83,6 +95,8 @@ export default () =>(
                 />
                 <SpreadsheetSheetsBar />
             </Spreadsheet>
+                );
+            })()}
         </div>
     </>
 );

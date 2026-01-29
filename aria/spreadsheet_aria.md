@@ -71,7 +71,7 @@ The Name editor must implement the spec for a ComboBox component.
 | -------- | --------- | ----- |
 | `.k-spreadsheet-formula-list` | `id` | Unique and deterministic id linked to the "aria-controls" attribute of the corresponding formula input. |
 | `.k-spreadsheet-formula-list` | `role=menu` | Announces the `menu` role of the popup. |
-| `.k-list-item` | `role=menuitem` | Announces the `menuitem` role of the popup items. |
+| `.k-spreadsheet-formula-list .k-list-item` | `role=menuitem` | Announces the `menuitem` role of the popup items. |
 
 ### Sheet area
 
@@ -84,7 +84,7 @@ The Sheet area must implement the spec for a Grid component. The column header c
 
 | Selector | Attribute | Usage |
 | -------- | --------- | ----- |
-| `.k-spreadsheet-sheet-add:not(button)` | `role=button` | The add new sheet element is a button. |
+| `.k-spreadsheet-sheet-add` | `role=button or nodeName=button` | The add new sheet element is a button. |
 | `.k-spreadsheet-sheet-add` | `aria-label` or `title` | The add new sheet element must have a label as it does not have text content. |
 | `.k-spreadsheet-sheet-add` | `aria-controls=.k-tabstrip-items id` | Points to the `ul` element of the TabStrip that contains all tabs. Signifies that the `button` element controls the `tablist` one. |
 

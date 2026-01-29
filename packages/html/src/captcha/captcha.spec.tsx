@@ -77,7 +77,7 @@ export const Captcha: KendoComponent<KendoCaptchaProps & KendoCaptchaState & Rea
             <div className="k-captcha-input k-vstack">
                 <input type="hidden" value="captcha-id-12345" />
                 <Textbox
-                    aria-label="Enter the code from the image"
+                    inputProps={{ 'aria-label': 'Enter the code from the image' }}
                     value={value}
                     valid={valid}
                     invalid={invalid}

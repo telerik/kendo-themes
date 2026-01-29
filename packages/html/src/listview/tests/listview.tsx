@@ -1,4 +1,4 @@
-import { ListViewNormal, ListViewItem } from '../../listview';
+import { ListViewNormal, ListViewItem, ListViewSelectable } from '../../listview';
 
 
 const styles = `
@@ -37,6 +37,11 @@ export default () =>(
                     <ListViewItem selected><div>Selected Item</div></ListViewItem>
                     <ListViewItem focus selected><div>Focus Selected Item</div></ListViewItem>
                 </ListViewNormal>
+            </section>
+
+            <section>
+                <span>Selectable ListView</span>
+                <ListViewSelectable />
             </section>
 
         </div>

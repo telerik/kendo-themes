@@ -1,11 +1,11 @@
 import Textbox from "../maskedtextbox.spec";
-import { DropdownList } from "../../dropdownlist";
+import { Button } from "../../button";
 
 export const MaskedTextboxPrefix = (props) => (
     <Textbox
         prefix={
             <>
-                <DropdownList value="Choose" fillMode="flat" />
+                <Button fillMode="flat" aria-label="Prefix action">Choose</Button>
             </>
         }
         {...props}

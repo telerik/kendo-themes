@@ -30,6 +30,7 @@ export type KendoOneTimePasswordInputProps = KendoOneTimePasswordInputOptions & 
     value?: string;
     placeholder?: string;
     autocomplete?: string;
+    inputProps?: React.HTMLAttributes<HTMLInputElement>;
 };
 
 export type KendoOneTimePasswordInputState = { [K in (typeof states)[number]]?: boolean };
@@ -60,8 +61,17 @@ export const OneTimePasswordInput = (
         required,
         disabled,
         readonly,
+        inputProps,
+        'aria-label': ariaLabel,
+        'aria-labelledby': ariaLabelledBy,
         ...other
     } = props;
+
+    const resolvedAriaLabelledBy = inputProps?.['aria-labelledby'] ?? ariaLabelledBy;
+    const resolvedAriaLabel = resolvedAriaLabelledBy
+        ? undefined
+        : (inputProps?.['aria-label'] ?? ariaLabel ?? 'One-time password digit');
+    const resolvedAutocomplete = autocomplete ?? 'off';
 
 
     return (
@@ -73,7 +83,7 @@ export const OneTimePasswordInput = (
             type={type}
             value={value}
             placeholder={placeholder}
-            autocomplete={autocomplete}
+            autocomplete={resolvedAutocomplete}
             hover={hover}
             focus={focus}
             valid={valid}
@@ -81,6 +91,11 @@ export const OneTimePasswordInput = (
             required={required}
             disabled={disabled}
             readonly={readonly}
+            inputProps={{
+                ...inputProps,
+                'aria-label': resolvedAriaLabel,
+                'aria-labelledby': resolvedAriaLabelledBy
+            }}
             showClearButton={false}
             showValidationIcon={false}
             className={classNames(props.className,

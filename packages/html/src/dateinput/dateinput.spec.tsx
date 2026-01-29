@@ -40,6 +40,7 @@ export type KendoDateInputProps = KendoDateInputOptions & {
     placeholder?: string;
     showSpinButton?: boolean;
     showClearButton?: boolean;
+    inputProps?: React.HTMLAttributes<HTMLInputElement>;
 };
 
 export type KendoDateInputState = { [K in (typeof states)[number]]?: boolean };
@@ -68,8 +69,18 @@ export const DateInput: KendoComponent<KendoDateInputProps & KendoDateInputState
         readonly,
         showClearButton,
         showSpinButton,
+        inputProps,
+        'aria-label': ariaLabel,
+        'aria-labelledby': ariaLabelledBy,
+        tabIndex,
         ...other
     } = props;
+
+    const resolvedAriaLabelledBy = inputProps?.['aria-labelledby'] ?? ariaLabelledBy;
+    const resolvedAriaLabel = resolvedAriaLabelledBy
+        ? undefined
+        : (inputProps?.['aria-label'] ?? ariaLabel ?? 'Date input');
+    const resolvedTabIndex = inputProps?.tabIndex ?? tabIndex ?? 0;
 
 
     return (
@@ -87,7 +98,18 @@ export const DateInput: KendoComponent<KendoDateInputProps & KendoDateInputState
             readonly={readonly}
             className={classNames(props.className, DATEINPUT_CLASSNAME)}
         >
-            <InputInnerInput {...other} placeholder={placeholder} value={value} disabled={disabled} readonly={readonly} required={required} />
+            <InputInnerInput
+                {...other}
+                {...inputProps}
+                aria-label={resolvedAriaLabel}
+                aria-labelledby={resolvedAriaLabelledBy}
+                tabIndex={resolvedTabIndex}
+                placeholder={placeholder}
+                value={value}
+                disabled={disabled}
+                readonly={readonly}
+                required={required}
+            />
             <InputValidationIcon
                 valid={valid}
                 invalid={invalid}

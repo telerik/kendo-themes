@@ -1,5 +1,5 @@
 import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
+import { ButtonGroup, DisabledButtonGroup } from '../../button-group';
 
 
 const styles = `
@@ -15,6 +15,11 @@ export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
+            <section>
+                <div>
+                    <DisabledButtonGroup />
+                </div>
+            </section>
             <section>
                 <div>
                     <ButtonGroup>

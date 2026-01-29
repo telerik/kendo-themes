@@ -14,6 +14,7 @@ export const MultiSelectTreeFiltering = (props) => {
             <>
                 <div className="k-list-filter">
                     <Textbox
+                        inputProps={{ 'aria-label': 'Filter options' }}
                         prefix={
                             <>
                                 <Icon icon="search" />

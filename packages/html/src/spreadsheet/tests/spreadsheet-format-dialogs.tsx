@@ -59,10 +59,10 @@ export default () =>(
                         <FormField label="Apply to range" editor={ <Textbox placeholder="Placeholder" /> }/>
                         <FormField label="Format with" editor={
                             <Toolbar resizable>
-                                <Button icon="bold" />
-                                <Button icon="italic" />
-                                <Button icon="underline" />
-                                <Button icon="strikethrough" />
+                                <Button icon="bold" aria-label="Bold" />
+                                <Button icon="italic" aria-label="Italic" />
+                                <Button icon="underline" aria-label="Underline" />
+                                <Button icon="strikethrough" aria-label="Strikethrough" />
                                 <ColorPicker value="red" valueIconName="foreground-color" />
                                 <ColorPicker value="fuchsia" valueIconName="droplet" />
                             </Toolbar>

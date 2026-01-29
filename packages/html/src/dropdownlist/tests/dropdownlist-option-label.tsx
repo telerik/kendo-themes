@@ -20,12 +20,18 @@ export default () =>(
             <span>Normal</span>
 
             <section>
-                <DropdownList value="-Select item-" opened focus
+                <DropdownList id="dropdownlist-option-label-normal" value="-Select item-" opened focus
                     popup={(
-                        <List optionLabel={<ListOptionLabel text="-Select item-" />}>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
+                        <List
+                            optionLabel={<ListOptionLabel text="-Select item-" />}
+                            role="listbox"
+                            aria-label="DropdownList options"
+                            listboxId="dropdownlist-option-label-normal-listbox"
+                            listboxAriaLive="polite"
+                        >
+                            <ListItem id="dropdownlist-option-label-normal-listbox-item-0" role="option" tabIndex={-1}>List item</ListItem>
+                            <ListItem id="dropdownlist-option-label-normal-listbox-item-1" role="option" tabIndex={-1}>List item</ListItem>
+                            <ListItem id="dropdownlist-option-label-normal-listbox-item-2" role="option" tabIndex={-1}>List item</ListItem>
                         </List>
                     )}
                 />
@@ -34,12 +40,18 @@ export default () =>(
             <span>Hover</span>
 
             <section>
-                <DropdownList value="-Select item-" opened focus
+                <DropdownList id="dropdownlist-option-label-hover" value="-Select item-" opened focus
                     popup={(
-                        <List optionLabel={<ListOptionLabel text="-Select item-" hover />}>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
+                        <List
+                            optionLabel={<ListOptionLabel text="-Select item-" hover />}
+                            role="listbox"
+                            aria-label="DropdownList options"
+                            listboxId="dropdownlist-option-label-hover-listbox"
+                            listboxAriaLive="polite"
+                        >
+                            <ListItem id="dropdownlist-option-label-hover-listbox-item-0" role="option" tabIndex={-1}>List item</ListItem>
+                            <ListItem id="dropdownlist-option-label-hover-listbox-item-1" role="option" tabIndex={-1}>List item</ListItem>
+                            <ListItem id="dropdownlist-option-label-hover-listbox-item-2" role="option" tabIndex={-1}>List item</ListItem>
                         </List>
                     )}
                 />
@@ -48,12 +60,18 @@ export default () =>(
             <span>Focus</span>
 
             <section>
-                <DropdownList value="-Select item-" opened focus
+                <DropdownList id="dropdownlist-option-label-focus" value="-Select item-" opened focus
                     popup={(
-                        <List optionLabel={<ListOptionLabel text="-Select item-" focus />}>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
+                        <List
+                            optionLabel={<ListOptionLabel text="-Select item-" focus />}
+                            role="listbox"
+                            aria-label="DropdownList options"
+                            listboxId="dropdownlist-option-label-focus-listbox"
+                            listboxAriaLive="polite"
+                        >
+                            <ListItem id="dropdownlist-option-label-focus-listbox-item-0" role="option" tabIndex={-1}>List item</ListItem>
+                            <ListItem id="dropdownlist-option-label-focus-listbox-item-1" role="option" tabIndex={-1}>List item</ListItem>
+                            <ListItem id="dropdownlist-option-label-focus-listbox-item-2" role="option" tabIndex={-1}>List item</ListItem>
                         </List>
                     )}
                 />
@@ -62,12 +80,18 @@ export default () =>(
             <span>Selected</span>
 
             <section>
-                <DropdownList value="-Select item-" opened focus
+                <DropdownList id="dropdownlist-option-label-selected" value="-Select item-" opened focus
                     popup={(
-                        <List optionLabel={<ListOptionLabel text="-Select item-" selected />}>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
+                        <List
+                            optionLabel={<ListOptionLabel text="-Select item-" selected />}
+                            role="listbox"
+                            aria-label="DropdownList options"
+                            listboxId="dropdownlist-option-label-selected-listbox"
+                            listboxAriaLive="polite"
+                        >
+                            <ListItem id="dropdownlist-option-label-selected-listbox-item-0" role="option" tabIndex={-1}>List item</ListItem>
+                            <ListItem id="dropdownlist-option-label-selected-listbox-item-1" role="option" tabIndex={-1}>List item</ListItem>
+                            <ListItem id="dropdownlist-option-label-selected-listbox-item-2" role="option" tabIndex={-1}>List item</ListItem>
                         </List>
                     )}
                 />
@@ -76,12 +100,18 @@ export default () =>(
             <span>Disabled</span>
 
             <section>
-                <DropdownList value="-Select item-" opened focus
+                <DropdownList id="dropdownlist-option-label-disabled" value="-Select item-" opened focus
                     popup={(
-                        <List optionLabel={<ListOptionLabel text="-Select item-" disabled />}>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
+                        <List
+                            optionLabel={<ListOptionLabel text="-Select item-" disabled />}
+                            role="listbox"
+                            aria-label="DropdownList options"
+                            listboxId="dropdownlist-option-label-disabled-listbox"
+                            listboxAriaLive="polite"
+                        >
+                            <ListItem id="dropdownlist-option-label-disabled-listbox-item-0" role="option" tabIndex={-1}>List item</ListItem>
+                            <ListItem id="dropdownlist-option-label-disabled-listbox-item-1" role="option" tabIndex={-1}>List item</ListItem>
+                            <ListItem id="dropdownlist-option-label-disabled-listbox-item-2" role="option" tabIndex={-1}>List item</ListItem>
                         </List>
                     )}
                 />

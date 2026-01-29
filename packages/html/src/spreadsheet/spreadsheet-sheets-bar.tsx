@@ -47,6 +47,8 @@ export const SpreadsheetSheetsBar = (
         ...other
     } = props;
 
+    const tabStripItemsId = 'k-spreadsheet-tabstrip-items';
+
     return (
         <div
             {...other}
@@ -54,10 +56,23 @@ export const SpreadsheetSheetsBar = (
                 SPREADSHEETSHEETSBAR_CLASSNAME,
                 props.className
             )}>
-            <Button className="k-spreadsheet-sheet-add" fillMode="flat" icon="plus" />
-            <Button className="k-spreadsheet-sheets-menu" fillMode="flat" icon="menu" />
+            <Button
+                className="k-spreadsheet-sheet-add"
+                fillMode="flat"
+                icon="plus"
+                aria-label="Add sheet"
+                aria-controls={tabStripItemsId}
+            />
+            <Button
+                className="k-spreadsheet-sheets-menu"
+                fillMode="flat"
+                icon="menu"
+                aria-label="Sheets menu"
+                aria-controls={tabStripItemsId}
+            />
             <TabStrip
                 className="k-spreadsheet-sheets"
+                tabStripItemsId={tabStripItemsId}
                 tabStripItems={tabStripItems}
                 position="bottom"
                 scrollable

@@ -37,6 +37,8 @@ export const SpreadsheetView = (
         ...other
     } = props;
 
+    const formulaListId = 'k-spreadsheet-formula-list';
+
     return (
         <div
             {...other}
@@ -87,7 +89,18 @@ export const SpreadsheetView = (
             </div>
 
             {!cellEditor &&
-                <div className="k-spreadsheet-cell-editor k-spreadsheet-formula-input" data-role="formulainput" style={{ whiteSpace: "pre" }}>216321</div>
+                <div
+                    className="k-spreadsheet-cell-editor k-spreadsheet-formula-input"
+                    data-role="formulainput"
+                    role="combobox"
+                    aria-haspopup="menu"
+                    aria-controls={formulaListId}
+                    aria-expanded={false}
+                    title="Formula"
+                    style={{ whiteSpace: "pre" }}
+                >
+                    216321
+                </div>
             }
             <Tooltip content="A1" style={{ position: "absolute", display: "none" }} />
             <div className="k-list-group-sticky-header" style={{ display: "none" }}></div>

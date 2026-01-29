@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -20,6 +20,21 @@
 
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-1">
+        <section>
+            <div>
+                <div role="group" aria-disabled="true" class="k-button-group k-disabled">
+                    <button class="k-group-start k-button k-disabled" aria-pressed="false" disabled="">
+                        <span class="k-button-text">Previous</span>
+                    </button>
+                    <button aria-pressed="false" disabled="" class="k-button k-disabled">
+                        <span class="k-button-text">Today</span>
+                    </button>
+                    <button class="k-group-end k-button k-disabled" aria-pressed="false" disabled="">
+                        <span class="k-button-text">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
         <section>
             <div>
                 <div role="group" class="k-button-group">
