@@ -6,7 +6,6 @@ export * from './chat-bubble';
 export * from './chat-timestamp';
 export * from './chat-event';
 export * from './chat-header';
-export * from './chat-send-button';
 export * from './templates/chat-normal';
 export * from './templates/chat-textarea-file';
 export * from './templates/chat-message-toolbar';
