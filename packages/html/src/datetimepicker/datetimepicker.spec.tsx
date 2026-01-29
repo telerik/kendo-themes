@@ -147,7 +147,6 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
                 <Button
                     className="k-input-button"
                     icon={tab === 'time' ? "clock" : "calendar"}
-                    rounded={null}
                     size={size}
                     fillMode={fillMode}
                     aria-label={tab === 'time' ? "Select time" : "Select date"}

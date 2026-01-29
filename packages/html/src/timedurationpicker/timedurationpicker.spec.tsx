@@ -131,7 +131,6 @@ export const TimeDurationPicker: KendoComponent<KendoTimeDurationPickerProps & K
                 <Button
                     className="k-input-button"
                     icon="clock-arrow-rotate"
-                    rounded={null}
                     size={size}
                     fillMode={fillMode}
                     aria-hidden="true"

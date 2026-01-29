@@ -45,7 +45,6 @@ export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttribu
             <Button
                 className="k-spinner-increase"
                 icon="caret-alt-up"
-                rounded={null}
                 size={size}
                 fillMode={fillMode}
                 disabled={props.disabled}
@@ -55,7 +54,6 @@ export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttribu
             <Button
                 className="k-spinner-decrease"
                 icon="caret-alt-down"
-                rounded={null}
                 size={size}
                 fillMode={fillMode}
                 disabled={props.disabled}

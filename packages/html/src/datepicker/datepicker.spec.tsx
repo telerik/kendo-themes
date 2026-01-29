@@ -140,7 +140,6 @@ export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerSt
                 <Button
                     className="k-input-button"
                     icon="calendar"
-                    rounded={null}
                     size={size}
                     fillMode={fillMode}
                     aria-label="Open calendar"

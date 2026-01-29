@@ -141,7 +141,6 @@ export const TimePicker: KendoComponent<KendoTimePickerProps & KendoTimePickerSt
                 <Button
                     className="k-input-button"
                     icon="clock"
-                    rounded={null}
                     size={size}
                     fillMode={fillMode}
                     role="button"

@@ -141,7 +141,6 @@ export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPicke
                 <Button
                     className="k-input-button"
                     icon={arrowIconName}
-                    rounded={null}
                     size={size}
                     fillMode={fillMode}
                     disabled={disabled}

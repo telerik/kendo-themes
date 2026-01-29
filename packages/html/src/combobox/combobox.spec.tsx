@@ -172,7 +172,6 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
                 <Button
                     className="k-input-button"
                     icon="caret-alt-down"
-                    rounded={null}
                     size={size}
                     fillMode={fillMode}
                     aria-label="Open dropdown"

@@ -32,7 +32,7 @@ export default () =>(
                     </ToolbarItem>
                     <Switch checked />
                     <ToolbarSeparator className="k-toolbar-button-separator" />
-                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none"></Button>
                 </ToolbarResizable>
             </section>
 
@@ -57,7 +57,7 @@ export default () =>(
                     </ToolbarItem>
                     <Switch checked />
                     <ToolbarSeparator className="k-toolbar-button-separator" />
-                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none"></Button>
                 </ToolbarResizable>
             </section>
 
@@ -79,7 +79,7 @@ export default () =>(
                     <Button icon="bold" selected></Button>
                     <Button icon="bold" disabled></Button>
                     <ToolbarSeparator className="k-toolbar-button-separator" />
-                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} hover></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none" hover></Button>
                 </ToolbarResizable>
             </section>
             <section className="k-colspan-all k-col-span-full">
@@ -91,7 +91,7 @@ export default () =>(
                     <Button icon="align-left" selected>Selected</Button>
                     <Button icon="align-left" disabled>Disabled</Button>
                     <ToolbarSeparator className="k-toolbar-button-separator" />
-                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} focus></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none" focus></Button>
                 </ToolbarResizable>
             </section>
             <section className="k-colspan-all k-col-span-full">
@@ -103,7 +103,7 @@ export default () =>(
                     <Button themeColor="primary" icon="align-left" selected>Selected</Button>
                     <Button themeColor="primary" icon="align-left" disabled>Disabled</Button>
                     <ToolbarSeparator className="k-toolbar-button-separator" />
-                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} active></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none" active></Button>
                 </ToolbarResizable>
             </section>
 
@@ -118,7 +118,7 @@ export default () =>(
                         <Button className="k-group-end" icon="align-center" disabled>Button 2</Button>
                     </ButtonGroup>
                     <ToolbarSeparator className="k-toolbar-button-separator" />
-                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} disabled focus></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none" disabled focus></Button>
                 </ToolbarResizable>
             </section>
 

@@ -93,7 +93,6 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                 fillMode="flat"
                 themeColor="primary"
                 size={size}
-                rounded={null}
                 aria-label={`Page ${i}`}
                 {...(i === currentPage && { 'aria-current': 'page' })}
             >
@@ -143,7 +142,6 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         disabled={currentPage === 1 && !disabled}
                         fillMode="flat"
                         size={size}
-                        rounded={null}
                         icon={dir === "rtl" ? "caret-alt-to-right" : "caret-alt-to-left"}
                         title="Go to the first page"
                         aria-label="Go to the first page"
@@ -155,7 +153,6 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         disabled={currentPage === 1 && !disabled}
                         fillMode="flat"
                         size={size}
-                        rounded={null}
                         icon={dir === "rtl" ? "caret-alt-right" : "caret-alt-left"}
                         title="Go to the previous page"
                         aria-label="Go to the previous page"
@@ -195,7 +192,6 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         disabled={currentPage === maxPages && !disabled}
                         fillMode="flat"
                         size={size}
-                        rounded={null}
                         icon={dir === "rtl" ? "caret-alt-left" : "caret-alt-right" }
                         title="Go to the next page"
                         aria-label="Go to the next page"
@@ -209,7 +205,6 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         disabled={currentPage === maxPages && !disabled}
                         fillMode="flat"
                         size={size}
-                        rounded={null}
                         icon={dir === "rtl" ? "caret-alt-to-left" : "caret-alt-to-right" }
                         title="Go to the last page"
                         aria-label="Go to the last page"
@@ -236,7 +231,6 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                     )}
                     fillMode="flat"
                     size={size}
-                    rounded={null}
                     icon="arrow-rotate-cw"
                     title="Refresh"
                     aria-label="Refresh"
