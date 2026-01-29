@@ -37,7 +37,7 @@ export const EditorDemo = (props: KendoEditorProps & {
     });
 
     return (
-        <EditorNormal focus {...other} {...additionalProps} style={{ width: "750px", height: "375px" }}
+        <EditorNormal focus {...additionalProps} style={{ width: "750px", height: "375px" }} {...other}
             toolbarItems={[
                 <ButtonGroup>
                     <Button hover icon="bold"></Button>

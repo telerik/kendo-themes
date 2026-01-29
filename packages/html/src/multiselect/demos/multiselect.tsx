@@ -70,9 +70,9 @@ export const MultiselectDemo = (
 
   return (
     <MultiSelectNormal
+      style={{ width: "300px" }}
       {...other}
       {...additionalProps}
-      style={{ width: "300px" }}
       tags={
         <>
           <Chip size={other.size} text="Chip" actions={<ChipAction type="remove" />} />

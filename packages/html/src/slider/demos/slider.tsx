@@ -6,9 +6,9 @@ import { SliderVertical } from '../templates/slider-vertical';
 const options = Slider.options;
 const states = Slider.states;
 const defaults = {
-  ...Slider.defaultOptions,
-  variant: 'horizontal',
-  label: true,
+    ...Slider.defaultOptions,
+    variant: 'horizontal',
+    label: true,
 };
 
 const variants = [
@@ -69,7 +69,7 @@ export const SliderDemo = (
     switch (variant) {
         case 'vertical':
             return (
-                <SliderVertical {...other} showTicks={showTicks} showButtons={showButtons} orientation="vertical" style={{ height: "300px", ...style }}>
+                <SliderVertical showTicks={showTicks} showButtons={showButtons} orientation="vertical" style={{ height: "300px", ...style }} {...other}>
                     <SliderTick label={label} large orientation="vertical" text="0" style={{ position: "absolute", bottom: "0%" }} />
                     <SliderTick label={label} large orientation="vertical" text="2" style={{ position: "absolute", bottom: "25%" }} />
                     <SliderTick label={label} large orientation="vertical" text="4" style={{ position: "absolute", bottom: "50%" }} />
@@ -80,7 +80,7 @@ export const SliderDemo = (
         case 'horizontal':
         default:
             return (
-                <SliderNormal {...other} showTicks={showTicks} showButtons={showButtons} {...additionalProps} style={{ width: "400px", ...style }}>
+                <SliderNormal showTicks={showTicks} showButtons={showButtons} {...additionalProps} style={{ width: "400px", ...style }} {...other}>
                     <SliderTick label={label} large orientation="horizontal" text="0" style={{ position: "absolute", left: "0%" }} />
                     <SliderTick label={label} large orientation="horizontal" text="2" style={{ position: "absolute", left: "25%" }} />
                     <SliderTick label={label} large orientation="horizontal" text="4" style={{ position: "absolute", left: "50%" }} />
