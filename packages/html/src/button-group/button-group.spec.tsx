@@ -51,9 +51,11 @@ export const ButtonGroup: KendoComponent<KendoButtonGroupProps & KendoButtonGrou
             }
 
             if (child.type === React.Fragment) {
+                const fragmentChild = child as React.ReactElement<{ children?: React.ReactNode }>;
+
                 return (
                     <>
-                        {applyAriaPressed(child.props.children)}
+                        {applyAriaPressed(fragmentChild.props.children)}
                     </>
                 );
             }
@@ -62,8 +64,10 @@ export const ButtonGroup: KendoComponent<KendoButtonGroupProps & KendoButtonGrou
                 return child;
             }
 
-            return React.cloneElement(child, {
-                'aria-pressed': child.props.selected ? 'true' : 'false'
+            const buttonChild = child as React.ReactElement<React.ComponentProps<typeof Button>>;
+
+            return React.cloneElement(buttonChild, {
+                'aria-pressed': buttonChild.props.selected ? 'true' : 'false'
             });
         })
     );

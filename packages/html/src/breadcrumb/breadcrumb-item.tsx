@@ -21,7 +21,9 @@ export const BreadcrumbItem = (
 
     const resolvedChildren = last
         ? React.Children.map(props.children, (child) => {
-            if (React.isValidElement(child) && child.type === BreadcrumbLink) {
+            if (React.isValidElement<React.ComponentProps<typeof BreadcrumbLink>>(child)
+                && child.type === BreadcrumbLink
+            ) {
                 return React.cloneElement(child, {
                     'aria-current': 'page',
                     'aria-disabled': 'true'

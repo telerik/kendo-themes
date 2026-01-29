@@ -152,12 +152,16 @@ When asked to apply accessibility to a specific component:
    - Run `npm run test:wcag [component]`
    - Review violations
 
-7. **Mark Component Complete**
+7. **Typecheck Gate (Required)**
+   - Run `npm run typecheck --prefix packages/html`
+   - Fix any TypeScript errors before marking complete
+
+8. **Mark Component Complete**
    - Run `node scripts/aria-bulk-apply.mjs complete [component]`
    - This updates the tracking file to reflect completion
    - **CRITICAL**: Always call this to keep tracking synchronized
 
-8. **Generate Report**
+9. **Generate Report**
    - Summarize changes made
    - List any violations found
    - Suggest fixes or improvements
