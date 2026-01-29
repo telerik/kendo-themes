@@ -38,7 +38,7 @@ export default () =>(
                     suffix={
                         <>
                             <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" />
-                            <IconButton icon="arrow-up-outline" rounded="full" size="small" />
+                            <IconButton icon="arrow-up-outline" rounded="full" size="small" disabled />
                         </>
                     }
                     popup={
@@ -74,7 +74,7 @@ export default () =>(
                     suffix={
                         <>
                             <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" />
-                            <IconButton icon="arrow-up-outline" rounded="full" size="small" />
+                            <IconButton icon="arrow-up-outline" rounded="full" size="small" disabled />
                         </>
                     }
                     popup={
@@ -111,7 +111,7 @@ export default () =>(
                     suffix={
                         <>
                             <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" />
-                            <IconButton icon="arrow-up-outline" rounded="full" size="small" />
+                            <IconButton icon="arrow-up-outline" rounded="full" size="small" disabled />
                         </>
                     }
                     popup={
