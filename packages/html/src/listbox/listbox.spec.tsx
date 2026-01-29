@@ -1,5 +1,5 @@
 import { Button } from '../button';
-import { List } from '../list';
+import { List, ListContent } from '../list';
 import { classNames, stateClassNames, States, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
@@ -83,7 +83,9 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
                 'k-list-scroller',
                 'k-selectable'
             )}>
-                <List size={size} children={children} />
+                <List size={size}>
+                    <ListContent>{children}</ListContent>
+                </List>
             </div>
         </div>
     );
