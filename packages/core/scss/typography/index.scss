@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "sass:meta";
 @use "sass:math";
+@use "sass:string";
 
 /// The base font size across all components.
 /// @group typography
@@ -213,7 +214,7 @@ $kendo-font-families: map.merge( $default-font-families, $kendo-font-families );
         }
 
         @each $weight, $value in $kendo-font-weights {
-            --kendo-font-weight-#{$weight}: #{$value};
+            --kendo-font-weight-#{string.unquote("" + $weight)}: #{$value};
         }
 
         @each $spacing, $value in $kendo-letter-spacings {
