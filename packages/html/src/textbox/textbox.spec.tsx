@@ -47,6 +47,7 @@ export type KendoTextboxProps = KendoTextboxOptions & {
     autocomplete?: string;
     showClearButton?: boolean;
     showValidationIcon?: boolean;
+    inputProps?: React.HTMLAttributes<HTMLInputElement>;
 };
 
 export type KendoTextboxState = { [K in (typeof states)[number]]?: boolean };
@@ -75,6 +76,7 @@ export const Textbox: KendoComponent<KendoTextboxProps & KendoTextboxState & Omi
         value,
         placeholder,
         autocomplete,
+        inputProps,
         hover,
         focus,
         valid,
@@ -83,7 +85,7 @@ export const Textbox: KendoComponent<KendoTextboxProps & KendoTextboxState & Omi
         loading,
         disabled,
         readonly,
-        ...other
+        ..._other
     } = props;
 
 
@@ -109,7 +111,6 @@ export const Textbox: KendoComponent<KendoTextboxProps & KendoTextboxState & Omi
             </>
             }
             <InputInnerInput
-                {...other}
                 placeholder={placeholder}
                 value={value}
                 type={type}
@@ -118,6 +119,7 @@ export const Textbox: KendoComponent<KendoTextboxProps & KendoTextboxState & Omi
                 readonly={readonly}
                 required={required}
                 aria-invalid={invalid ? true : undefined}
+                {...inputProps}
             />
             { showValidationIcon && <InputValidationIcon
                 valid={valid}

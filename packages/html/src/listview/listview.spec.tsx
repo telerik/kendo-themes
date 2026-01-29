@@ -1,5 +1,7 @@
+import * as React from 'react';
 import { PagerNormal } from '../pager';
 import { classNames, stateClassNames, States } from '../misc';
+import { ListViewItem } from './listview-item.spec';
 
 import { KendoComponent } from '../_types/component';
 import { LISTVIEW_FOLDER_NAME, LISTVIEW_MODULE_NAME } from './constants';
@@ -22,6 +24,7 @@ export type KendoListViewProps = {
     pageable?: boolean;
     pagerPosition?: 'top' | 'bottom';
     bordered?: boolean;
+    selectable?: boolean;
     layout?: 'flex' | 'grid';
     flexDirection?: 'row' | 'row-reverse' | 'col' | 'col-reverse';
     flexWrap?: 'wrap' | 'nowrap' | 'wrap-reverse';
@@ -40,11 +43,13 @@ export const ListView: KendoComponent<KendoListViewProps & KendoListViewState & 
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        itemsCount,
         header,
         footer,
         pageable,
         pagerPosition = defaultOptions.pagerPosition,
         bordered,
+        selectable,
         layout,
         flexDirection,
         flexWrap,
@@ -53,6 +58,24 @@ export const ListView: KendoComponent<KendoListViewProps & KendoListViewState & 
         disabled,
         ...other
     } = props;
+
+    const isSelectable = Boolean(selectable) || (typeof props.className === 'string' && props.className.split(' ').includes('k-selectable'));
+    const listViewItems = React.Children.toArray(props.children).filter((child) => React.isValidElement(child) && child.type === ListViewItem);
+    const totalItems = itemsCount ?? listViewItems.length;
+    let currentItemIndex = 0;
+    const childrenWithAria = React.Children.map(props.children, (child) => {
+        if (!React.isValidElement(child) || child.type !== ListViewItem) {
+            return child;
+        }
+
+        currentItemIndex += 1;
+        return React.cloneElement(child, {
+            role: isSelectable ? 'option' : 'listitem',
+            'aria-setsize': totalItems,
+            'aria-posinset': currentItemIndex,
+            tabIndex: currentItemIndex === 1 ? 0 : undefined
+        });
+    });
 
     const pager = <PagerNormal className={`k-listview-pager k-listview-pager-${ pagerPosition }`} />;
 
@@ -71,7 +94,8 @@ export const ListView: KendoComponent<KendoListViewProps & KendoListViewState & 
                 props.className,
                 LISTVIEW_CLASSNAME,
                 {
-                    'k-listview-bordered': bordered
+                    'k-listview-bordered': bordered,
+                    'k-selectable': selectable
                 },
                 stateClassNames(LISTVIEW_CLASSNAME, {
                     disabled,
@@ -80,7 +104,9 @@ export const ListView: KendoComponent<KendoListViewProps & KendoListViewState & 
             )}>
             {pageable && pagerPosition === "top" && pager}
             {header && <div className="k-listview-header">Header</div>}
-            <div className={classNames(
+            <div
+                role={isSelectable ? 'listbox' : 'list'}
+                className={classNames(
                 "k-listview-content",
                 {
                     [`k-d-${layout}`]: layout,
@@ -88,8 +114,9 @@ export const ListView: KendoComponent<KendoListViewProps & KendoListViewState & 
                     [`k-flex-${flexWrap}`]: flexWrap,
                     [`k-grid-cols-${gridColumns}`]: gridColumns,
                 }
-            )}>
-                { props.children }
+            )}
+                aria-label={isSelectable ? 'ListView items' : undefined}>
+                {childrenWithAria}
             </div>
             { loading && loader }
             {footer && <div className="k-listview-footer">Footer</div>}

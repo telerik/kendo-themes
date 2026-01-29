@@ -14,12 +14,12 @@ The following table summarizes the selectors and attributes supported by the Dro
 |  | `label for` or `aria-label` or `aria-labelledby` | The input requires an accessible name that will be assigned to it. |
 |  | `aria-haspopup=tree` | Indicates the presence of a popup with a tree navigation. |
 |  | `aria-expanded=true/false` | Announces the state of the popup visibility. |
-|  | `aria-controls=.k-treeview id` | Points to the `treeview` element. Signifies that the `combobox` element controls the `treeview` one. |
+| `.k-dropdowntree[aria-expanded="true"]` | `aria-controls=.k-treeview id` | Points to the `treeview` element when the popup is open and the element exists. Signifies that the `combobox` element controls the `treeview` one. |
 |  | `aria-describedby=.k-input-inner id` | Announces the selected value of the drop-down. |
 |  | `aria-readonly=true` | The attribute is rendered only when the drop-down is read-only. |
-|  | `aria-autocomplete=list` | The attribute is rendered and the value is set to `list` when the filtering feature is enabled. |
-|  | `aria-invalid=true` | The attribute is rendered only when the drop-down is in a form and announces the valid state of the component. |
-|  | `aria-busy=true` | The attribute is rendered only when the drop-down is loading data. |
+| `.k-dropdowntree[aria-autocomplete="list"]` | `aria-autocomplete=list` | The attribute is rendered and the value is set to `list` when the filtering feature is enabled. |
+| `.k-dropdowntree.k-invalid` | `aria-invalid=true` | The attribute is rendered only when the drop-down is in a form and announces the valid state of the component. |
+| `.k-dropdowntree.k-loading` | `aria-busy=true` | The attribute is rendered only when the drop-down is loading data. |
 |  | `tabindex=0` | The element must be focusable. |
 | `.k-dropdowntree.k-disabled` | `aria-disabled=true` | The attribute is rendered only when the drop-down is disabled. |
 | `.k-input-button` | `role=button` or `nodeName=button` | The element must either be a `<button>` element or must have `role="button"` assigned. |
@@ -33,7 +33,7 @@ The popup element of the DropDownTree has to implement the WAI-ARIA specificatio
 
 | Selector | Attribute | Usage |
 | -------- | --------- | ----- |
-| `.k-animation-container` | `role=region` | When the component container is appended to the `<body>` element of the document, it requires you to assign a `landmark` role to it. Otherwise, it must be appended to an element with an appropriate `landmark` role. |
+| `.k-dropdowntree-popup-container` | `role=region` | When the component container is appended to the `<body>` element of the document, it requires you to assign a `landmark` role to it. Otherwise, it must be appended to an element with an appropriate `landmark` role. |
 |  | `aria-label` or `aria-labelledby` | Provides a label when the container has a `region` role assigned. |
 
 ### TreeView

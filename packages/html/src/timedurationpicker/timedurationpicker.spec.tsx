@@ -46,6 +46,7 @@ export type KendoTimeDurationPickerProps = KendoTimeDurationPickerOptions & {
     value?: string;
     placeholder?: string;
     opened?: boolean;
+    id?: string;
 };
 
 export type KendoTimeDurationPickerState = { [K in (typeof states)[number]]?: boolean };
@@ -75,9 +76,11 @@ export const TimeDurationPicker: KendoComponent<KendoTimeDurationPickerProps & K
         disabled,
         readonly,
         opened,
+        id = 'timedurationpicker-id',
         ...other
     } = props;
 
+    const popupId = `${id}-popup`;
 
     return (
         <>
@@ -97,7 +100,20 @@ export const TimeDurationPicker: KendoComponent<KendoTimeDurationPickerProps & K
                 className={classNames(props.className, TIMEDURATIONPICKER_CLASSNAME)}
             >
                 <InputPrefix>{prefix}</InputPrefix>
-                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputInnerInput
+                    placeholder={placeholder}
+                    value={value}
+                    role="combobox"
+                    aria-expanded={opened ? 'true' : 'false'}
+                    aria-haspopup="dialog"
+                    aria-controls={popupId}
+                    aria-label="Time duration picker"
+                    aria-invalid={invalid ? 'true' : undefined}
+                    aria-disabled={disabled ? 'true' : undefined}
+                    tabIndex={0}
+                    disabled={disabled}
+                    readonly={readonly}
+                />
                 <InputValidationIcon
                     valid={valid}
                     invalid={invalid}
@@ -118,14 +134,18 @@ export const TimeDurationPicker: KendoComponent<KendoTimeDurationPickerProps & K
                     rounded={null}
                     size={size}
                     fillMode={fillMode}
+                    aria-hidden="true"
+                    tabIndex={-1}
+                    disabled={disabled}
+                    aria-disabled={disabled ? 'true' : undefined}
                 />
             </Input>
             { opened &&
-                <Popup className="k-timedurationpicker-popup">
+                <Popup className="k-timedurationpicker-popup" id={popupId}>
                     <TimeSelector columns={[ "dd", "HH", "mm" ]} focusedColumn="HH" fastSelection={(<TimeSelectorFastSelection/>)}/>
                     <ActionButtons alignment="stretched" className="k-timeduration-footer">
-                        <Button className="k-time-cancel">Cancel</Button>
-                        <Button themeColor="primary" className="k-time-accept">Set</Button>
+                        <Button className="k-time-cancel" disabled={disabled} aria-disabled={disabled ? 'true' : undefined}>Cancel</Button>
+                        <Button themeColor="primary" className="k-time-accept" disabled={disabled} aria-disabled={disabled ? 'true' : undefined}>Set</Button>
                     </ActionButtons>
                 </Popup>
             }

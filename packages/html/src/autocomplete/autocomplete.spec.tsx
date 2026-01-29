@@ -47,6 +47,8 @@ export type KendoAutocompleteProps = KendoAutocompleteOptions & {
     separators?: boolean;
     value?: string;
     placeholder?: string;
+    autocompleteMode?: 'list' | 'both' | 'inline';
+    activeDescendantId?: string | null;
     popup?: React.JSX.Element;
     opened?: boolean;
     adaptive?: boolean;
@@ -77,6 +79,7 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
         suffix,
         value,
         placeholder,
+        autocompleteMode = 'list',
         hover,
         focus,
         valid,
@@ -93,8 +96,17 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
         adaptiveSubtitle,
         adaptiveCustomValue,
         id = 'k-autocomplete',
+        activeDescendantId,
         ...other
     } = props;
+
+    const listboxId = `${id}-listbox`;
+    const popupId = `${id}-popup`;
+    const defaultActiveDescendantId = `${id}-listbox-item-0`;
+    const ariaLabel = placeholder ? `Autocomplete, ${placeholder}` : 'Autocomplete';
+    const resolvedActiveDescendantId = opened && popup
+        ? (activeDescendantId === null ? undefined : (activeDescendantId || defaultActiveDescendantId))
+        : undefined;
 
 
     return (
@@ -126,13 +138,16 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
                     disabled={disabled}
                     readonly={readonly}
                     role="combobox"
+                    aria-label={ariaLabel}
                     aria-haspopup="listbox"
                     aria-expanded={opened ? 'true' : 'false'}
-                    aria-controls={opened ? `${id}-listbox` : undefined}
-                    aria-autocomplete="list"
+                    aria-controls={opened && popup ? listboxId : undefined}
+                    aria-activedescendant={resolvedActiveDescendantId}
+                    aria-autocomplete={autocompleteMode}
                     {...(readonly && { 'aria-readonly': 'true' })}
                     {...(loading && { 'aria-busy': 'true' })}
                     {...(invalid && { 'aria-invalid': 'true' })}
+                    {...(disabled && { 'aria-disabled': 'true' })}
                     tabIndex={0}
                 />
                 <InputValidationIcon
@@ -158,7 +173,8 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
             {opened && popup &&
                 <Popup
                     className="k-list-container k-autocomplete-popup"
-                    id={`${id}-listbox`}
+                    containerClassName="k-autocomplete-popup-container"
+                    id={popupId}
                     role="region"
                     aria-label="Autocomplete suggestions"
                 >

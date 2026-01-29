@@ -40,6 +40,7 @@ export type KendoSearchboxProps = KendoSearchboxOptions & {
     placeholder?: string;
     showIcon?: boolean;
     icon?: string;
+    inputProps?: React.HTMLAttributes<HTMLInputElement>;
 };
 
 export type KendoSearchboxState = { [K in (typeof states)[number]]?: boolean };
@@ -69,6 +70,7 @@ export const Searchbox: KendoComponent<KendoSearchboxProps & KendoSearchboxState
         disabled,
         showIcon = defaultOptions.showIcon,
         icon = defaultOptions.icon,
+        inputProps,
         ...other
     } = props;
 
@@ -89,7 +91,7 @@ export const Searchbox: KendoComponent<KendoSearchboxProps & KendoSearchboxState
             className={classNames(props.className, SEARCHBOX_CLASSNAME)}
         >
             { showIcon && (<Icon className="k-input-icon" icon={icon} />) }
-            <InputInnerInput placeholder={placeholder} value={value} />
+            <InputInnerInput placeholder={placeholder} value={value} {...inputProps} />
             <InputLoadingIcon {...props} />
             <InputValidationIcon {...props} />
             <InputClearValue {...props} />

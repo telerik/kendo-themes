@@ -40,6 +40,7 @@ export type KendoDropdownTreeOptions = {
 };
 
 export type KendoDropdownTreeProps = KendoDropdownTreeOptions & {
+    id?: string;
     valueIconName?: string;
     arrowIconName?: string;
     prefix?: React.JSX.Element;
@@ -47,6 +48,7 @@ export type KendoDropdownTreeProps = KendoDropdownTreeOptions & {
     value?: string;
     placeholder?: string;
     showValue?: boolean;
+    filterable?: boolean;
     popup?: React.JSX.Element;
     opened?: boolean;
     adaptive?: boolean;
@@ -80,6 +82,7 @@ export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdown
         suffix,
         value,
         placeholder,
+        filterable,
         hover,
         focus,
         valid,
@@ -96,8 +99,14 @@ export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdown
         adaptiveSubtitle,
         adaptiveFilter,
         dir,
+        id = 'dropdowntree',
         ...other
     } = props;
+
+    const treeviewId = `${id}-treeview`;
+    const valueId = `${id}-value`;
+    const popupId = `${id}-popup`;
+    const ariaLabel = placeholder ? `Dropdown tree, ${placeholder}` : 'Dropdown tree';
 
 
     return (
@@ -123,9 +132,22 @@ export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdown
                         'k-icon-picker': !showValue && valueIconName
                     }
                 )}
+                role="combobox"
+                aria-label={ariaLabel}
+                aria-haspopup="tree"
+                aria-expanded={opened ? 'true' : 'false'}
+                aria-controls={opened && popup ? treeviewId : undefined}
+                aria-describedby={valueId}
+                aria-readonly={readonly ? 'true' : undefined}
+                aria-autocomplete={filterable ? 'list' : undefined}
+                aria-invalid={invalid ? 'true' : undefined}
+                aria-busy={loading ? 'true' : undefined}
+                aria-disabled={disabled ? 'true' : undefined}
+                tabIndex={0}
             >
                 <InputPrefix>{prefix}</InputPrefix>
                 <InputInnerSpan
+                    id={valueId}
                     placeholder={placeholder}
                     value={value}
                     showValue={showValue}
@@ -146,10 +168,21 @@ export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdown
                     rounded={null}
                     size={props.size}
                     fillMode={props.fillMode}
+                    aria-label="Open dropdown"
+                    tabIndex={-1}
+                    disabled={disabled}
+                    aria-disabled={disabled ? 'true' : undefined}
                 />
             </Picker>
             {opened && popup &&
-                <Popup className="k-list-container k-dropdowntree-popup" dir={dir}>
+                <Popup
+                    className="k-list-container k-dropdowntree-popup"
+                    containerClassName="k-dropdowntree-popup-container"
+                    id={popupId}
+                    role="region"
+                    aria-label="DropdownTree suggestions"
+                    dir={dir}
+                >
                     {popup}
                 </Popup>
             }
@@ -157,16 +190,23 @@ export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdown
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                 header={
                     <ActionSheetHeader
-                        actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                        actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Confirm" />}
                         filter={adaptiveFilter}
                         inputValue={value}
                         inputPlaceholder={placeholder}
                         title={adaptiveTitle}
                         subtitle={adaptiveSubtitle}
+                        filterInputProps={adaptiveFilter ? {
+                            role: 'searchbox',
+                            'aria-label': 'Filter options',
+                            'aria-autocomplete': 'list',
+                            'aria-controls': treeviewId,
+                            'aria-haspopup': 'tree'
+                        } : undefined}
                     />
                 }
                 >
-                    <Treeview size="large">
+                    <Treeview size="large" id={treeviewId}>
                         <TreeviewItem text="Root 1" />
                         <TreeviewItem text="Root 2" expanded>
                             <TreeviewGroup>

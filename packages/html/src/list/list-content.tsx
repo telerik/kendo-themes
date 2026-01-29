@@ -6,6 +6,8 @@ export type KendoListContentProps = {
     virtualization?: boolean;
     role?: string;
     ulRole?: string;
+    ulId?: string;
+    ulAriaLive?: 'polite' | 'off' | 'assertive';
     'aria-label'?: string;
     'aria-labelledby'?: string;
     'aria-multiselectable'?: 'true' | 'false';
@@ -19,6 +21,8 @@ export const ListContent = (
         virtualization,
         role,
         ulRole,
+        ulId,
+        ulAriaLive,
         'aria-label': ariaLabel,
         'aria-labelledby': ariaLabelledby,
         'aria-multiselectable': ariaMultiselectable,
@@ -37,6 +41,8 @@ export const ListContent = (
             <ul
                 className={classNames('k-list-ul')}
                 {...(ulRole && { role: ulRole })}
+                {...(ulId && { id: ulId })}
+                {...(ulAriaLive && { 'aria-live': ulAriaLive })}
                 {...(ulRole && ariaLabel && { 'aria-label': ariaLabel })}
                 {...(ulRole && ariaLabelledby && { 'aria-labelledby': ariaLabelledby })}
                 {...(ulRole && ariaMultiselectable && { 'aria-multiselectable': ariaMultiselectable })}

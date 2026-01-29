@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-01-28T20:06:28.544Z",
+  "lastUpdated": "2026-01-29T07:57:34.705Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -42,7 +42,7 @@
       "notes": ""
     },
     "autocomplete": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "lists",
       "complianceScore": null,
@@ -52,7 +52,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-28T21:41:43.953Z"
     },
     "avatar": {
       "status": "completed",
@@ -351,7 +352,7 @@
       "notes": ""
     },
     "combobox": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "lists",
       "complianceScore": null,
@@ -361,7 +362,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-28T21:49:31.781Z"
     },
     "context-menu": {
       "status": "pending",
@@ -486,7 +488,7 @@
       "notes": ""
     },
     "dropdownlist": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "lists",
       "complianceScore": null,
@@ -496,10 +498,11 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-28T22:11:47.848Z"
     },
     "dropdowntree": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "lists",
       "complianceScore": null,
@@ -509,7 +512,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-29T07:50:49.873Z"
     },
     "editor": {
       "status": "pending",
@@ -577,7 +581,7 @@
       "notes": ""
     },
     "flatcolorpicker": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "pickers",
       "complianceScore": null,
@@ -588,7 +592,8 @@
         "minor": 0
       },
       "notes": "",
-      "completedDate": "2025-12-17T12:12:16.820Z"
+      "completedDate": "2025-12-17T12:12:16.820Z",
+      "completedAt": "2026-01-28T20:40:58.624Z"
     },
     "floatingactionbutton": {
       "status": "pending",
@@ -683,7 +688,7 @@
       "notes": ""
     },
     "listbox": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "lists",
       "complianceScore": null,
@@ -693,7 +698,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-29T07:57:34.705Z"
     },
     "listview": {
       "status": "pending",
@@ -1228,7 +1234,7 @@
       "notes": ""
     },
     "timedurationpicker": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "unknown",
       "complianceScore": null,
@@ -1238,7 +1244,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-28T20:40:34.711Z"
     },
     "timeline": {
       "status": "pending",

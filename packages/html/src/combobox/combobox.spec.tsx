@@ -48,6 +48,8 @@ export type KendoComboboxProps = KendoComboboxOptions & {
     separators?: boolean;
     value?: string;
     placeholder?: string;
+    autocompleteMode?: 'list' | 'both' | 'inline';
+    activeDescendantId?: string | null;
     popup?: React.JSX.Element;
     opened?: boolean;
     adaptive?: boolean;
@@ -78,6 +80,7 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
         suffix,
         value,
         placeholder,
+        autocompleteMode = 'list',
         hover,
         focus,
         valid,
@@ -93,8 +96,17 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
         adaptiveTitle,
         adaptiveSubtitle,
         adaptiveCustomValue,
+        activeDescendantId,
         ...other
     } = props;
+
+    const listboxId = `${id}-listbox`;
+    const popupId = `${id}-popup`;
+    const defaultActiveDescendantId = `${id}-listbox-item-0`;
+    const resolvedActiveDescendantId = opened && popup
+        ? (activeDescendantId === null ? undefined : (activeDescendantId || defaultActiveDescendantId))
+        : undefined;
+    const ariaLabel = placeholder ? `Combobox, ${placeholder}` : 'Combobox';
 
 
     return (
@@ -126,13 +138,16 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
                     disabled={disabled}
                     readonly={readonly}
                     role="combobox"
+                    aria-label={ariaLabel}
                     aria-haspopup="listbox"
                     aria-expanded={opened ? 'true' : 'false'}
-                    aria-controls={`${id}-listbox`}
-                    aria-autocomplete="list"
+                    aria-controls={opened && popup ? listboxId : undefined}
+                    aria-activedescendant={resolvedActiveDescendantId}
+                    aria-autocomplete={autocompleteMode}
                     {...(readonly && { 'aria-readonly': 'true' })}
                     {...(loading && { 'aria-busy': 'true' })}
                     {...(invalid && { 'aria-invalid': 'true' })}
+                    {...(disabled && { 'aria-disabled': 'true' })}
                     tabIndex={0}
                 />
                 <InputValidationIcon
@@ -162,11 +177,15 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
                     fillMode={fillMode}
                     aria-label="Open dropdown"
                     tabIndex={-1}
+                    disabled={disabled}
+                    aria-disabled={disabled ? 'true' : undefined}
                 />
             </Input>
             {opened && popup &&
                 <Popup
                     className="k-list-container k-combobox-popup"
+                    containerClassName="k-combobox-popup-container"
+                    id={popupId}
                     role="region"
                     aria-label="Combobox suggestions"
                 >
@@ -192,10 +211,11 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
                             size="large"
                             role="listbox"
                             aria-label="Combobox options"
+                            listboxId={listboxId}
                         >
-                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
-                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
-                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
+                            <ListItem id={`${id}-listbox-item-0`} text="List item" role="option" aria-selected="true" tabIndex={0} selected focus />
+                            <ListItem id={`${id}-listbox-item-1`} text="List item" role="option" aria-selected="false" tabIndex={-1} />
+                            <ListItem id={`${id}-listbox-item-2`} text="List item" role="option" aria-selected="false" tabIndex={-1} />
                         </List>
                     </div>
                 </ActionSheet>

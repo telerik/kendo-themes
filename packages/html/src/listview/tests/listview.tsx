@@ -39,6 +39,16 @@ export default () =>(
                 </ListViewNormal>
             </section>
 
+            <section>
+                <span>ListView - selectable</span>
+                <ListViewNormal selectable>
+                    <ListViewItem selected><div>Selected Item</div></ListViewItem>
+                    <ListViewItem><div>Listview Item</div></ListViewItem>
+                    <ListViewItem><div>Listview Item</div></ListViewItem>
+                    <ListViewItem><div>Listview Item</div></ListViewItem>
+                </ListViewNormal>
+            </section>
+
         </div>
     </>
 );

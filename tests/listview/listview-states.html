@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -22,11 +22,11 @@
         <div>normal</div>
         <div class="k-listview">
             <div class="k-listview-header">Header</div>
-            <div class="k-listview-content k-d-flex k-flex-col">
-                <div class="k-listview-item">
+            <div role="list" class="k-listview-content k-d-flex k-flex-col">
+                <div role="listitem" aria-setsize="2" aria-posinset="1" tabindex="0" class="k-listview-item">
                     <div>Listview Item</div>
                 </div>
-                <div class="k-listview-item">
+                <div role="listitem" aria-setsize="2" aria-posinset="2" class="k-listview-item">
                     <div>Listview Item</div>
                 </div>
             </div>
@@ -83,8 +83,8 @@
                     </button>
                 </div>
                 <span class="k-pager-sizes">
-                    <span aria-label="Select option" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                        <span class="k-input-inner">
+                    <span aria-label="DropdownList" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                        <span id="dropdownlist-value" class="k-input-inner">
                             <span class="k-input-value-text">5</span>
                         </span>
                         <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
@@ -110,11 +110,11 @@
         <div>loading</div>
         <div class="k-listview k-loading">
             <div class="k-listview-header">Header</div>
-            <div class="k-listview-content k-d-flex k-flex-col">
-                <div class="k-listview-item">
+            <div role="list" class="k-listview-content k-d-flex k-flex-col">
+                <div role="listitem" aria-setsize="2" aria-posinset="1" tabindex="0" class="k-listview-item">
                     <div>Listview Item</div>
                 </div>
-                <div class="k-listview-item">
+                <div role="listitem" aria-setsize="2" aria-posinset="2" class="k-listview-item">
                     <div>Listview Item</div>
                 </div>
             </div>
@@ -176,8 +176,8 @@
                     </button>
                 </div>
                 <span class="k-pager-sizes">
-                    <span aria-label="Select option" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                        <span class="k-input-inner">
+                    <span aria-label="DropdownList" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                        <span id="dropdownlist-value" class="k-input-inner">
                             <span class="k-input-value-text">5</span>
                         </span>
                         <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
@@ -203,11 +203,11 @@
         <div>disabled</div>
         <div class="k-listview k-disabled">
             <div class="k-listview-header">Header</div>
-            <div class="k-listview-content k-d-flex k-flex-col">
-                <div class="k-listview-item">
+            <div role="list" class="k-listview-content k-d-flex k-flex-col">
+                <div role="listitem" aria-setsize="2" aria-posinset="1" tabindex="0" class="k-listview-item">
                     <div>Listview Item</div>
                 </div>
-                <div class="k-listview-item">
+                <div role="listitem" aria-setsize="2" aria-posinset="2" class="k-listview-item">
                     <div>Listview Item</div>
                 </div>
             </div>
@@ -264,8 +264,8 @@
                     </button>
                 </div>
                 <span class="k-pager-sizes">
-                    <span aria-label="Select option" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                        <span class="k-input-inner">
+                    <span aria-label="DropdownList" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                        <span id="dropdownlist-value" class="k-input-inner">
                             <span class="k-input-value-text">5</span>
                         </span>
                         <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">

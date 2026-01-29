@@ -16,6 +16,7 @@ export type KendoPopupProps = {
         left: number | string;
     };
     animationStyle?: React.CSSProperties;
+    containerClassName?: string;
     role?: string;
     'aria-label'?: string;
     'aria-labelledby'?: string;
@@ -34,6 +35,7 @@ export const Popup: KendoComponent<KendoPopupProps & React.HTMLAttributes<HTMLDi
         offset,
         positionMode = defaultOptions.positionMode,
         animationStyle,
+        containerClassName,
         role,
         'aria-label': ariaLabel,
         'aria-labelledby': ariaLabelledby,
@@ -48,6 +50,7 @@ export const Popup: KendoComponent<KendoPopupProps & React.HTMLAttributes<HTMLDi
             positionMode={positionMode}
             offset={offset}
             animationStyle={animationStyle}
+            className={containerClassName}
             {...(role && { role })}
             {...(ariaLabel && { 'aria-label': ariaLabel })}
             {...(ariaLabelledby && { 'aria-labelledby': ariaLabelledby })}

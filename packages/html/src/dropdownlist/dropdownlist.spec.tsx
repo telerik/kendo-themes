@@ -48,6 +48,7 @@ export type KendoDropdownListProps = KendoDropdownListOptions & {
     value?: string;
     placeholder?: string;
     showValue?: boolean;
+    activeDescendantId?: string | null;
     popup?: React.JSX.Element;
     opened?: boolean;
     adaptive?: boolean;
@@ -96,8 +97,18 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
         adaptiveTitle,
         adaptiveSubtitle,
         adaptiveFilter,
+        activeDescendantId,
         ...other
     } = props;
+
+    const listboxId = `${id}-listbox`;
+    const popupId = `${id}-popup`;
+    const valueId = `${id}-value`;
+    const defaultActiveDescendantId = `${id}-listbox-item-0`;
+    const resolvedActiveDescendantId = opened && popup
+        ? (activeDescendantId === null ? undefined : (activeDescendantId || defaultActiveDescendantId))
+        : undefined;
+    const ariaLabel = placeholder ? `DropdownList, ${placeholder}` : 'DropdownList';
 
 
     return (
@@ -123,10 +134,12 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                     }
                 )}
                 role="combobox"
-                aria-label="Select option"
+                aria-label={ariaLabel}
                 aria-haspopup="listbox"
                 aria-expanded={opened ? 'true' : 'false'}
-                aria-controls={`${id}-listbox`}
+                aria-controls={opened && popup ? listboxId : undefined}
+                aria-activedescendant={resolvedActiveDescendantId}
+                aria-describedby={valueId}
                 {...(readonly && { 'aria-readonly': 'true' })}
                 {...(loading && { 'aria-busy': 'true' })}
                 {...(invalid && { 'aria-invalid': 'true' })}
@@ -135,6 +148,7 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
             >
                 <InputPrefix>{prefix}</InputPrefix>
                 <InputInnerSpan
+                    id={valueId}
                     placeholder={placeholder}
                     value={value}
                     showValue={showValue}
@@ -157,11 +171,15 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                     fillMode={props.fillMode}
                     aria-label="Open dropdown"
                     tabIndex={-1}
+                    disabled={disabled}
+                    aria-disabled={disabled ? 'true' : undefined}
                 />
             </Picker>
             {opened && popup &&
                 <Popup
                     className="k-list-container k-dropdownlist-popup"
+                    containerClassName="k-dropdownlist-popup-container"
+                    id={popupId}
                     role="region"
                     aria-label="DropdownList suggestions"
                 >
@@ -178,14 +196,22 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                             inputPlaceholder={placeholder}
                             title={adaptiveTitle}
                             subtitle={adaptiveSubtitle}
+                            filterInputProps={adaptiveFilter ? {
+                                role: 'searchbox',
+                                'aria-label': 'Filter options',
+                                'aria-activedescendant': defaultActiveDescendantId,
+                                'aria-autocomplete': 'list',
+                                'aria-controls': listboxId,
+                                'aria-haspopup': 'listbox'
+                            } : undefined}
                         />
                     }
                 >
                     <div className="k-list-container">
-                        <List size="large" role="listbox" aria-label="DropdownList options">
-                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
-                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
-                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
+                        <List size="large" role="listbox" aria-label="DropdownList options" listboxId={listboxId} listboxAriaLive="polite">
+                            <ListItem id={`${id}-listbox-item-0`} text="List item" role="option" aria-selected="true" tabIndex={0} selected focus />
+                            <ListItem id={`${id}-listbox-item-1`} text="List item" role="option" aria-selected="false" tabIndex={-1} />
+                            <ListItem id={`${id}-listbox-item-2`} text="List item" role="option" aria-selected="false" tabIndex={-1} />
                         </List>
                     </div>
                 </ActionSheet>

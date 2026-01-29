@@ -150,6 +150,10 @@ npm run test:a11y
 
 ## Applying ARIA to Components
 
+## Commit Message Guidance
+
+- Do not use `fix` or `feat` commit types for accessibility work; choose another allowed type (e.g., `chore`, `refactor`, `docs`).
+
 ### Workflow 1: Single Component Application
 
 **Use the Accessibility Agent:**

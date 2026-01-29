@@ -14,6 +14,7 @@ export type KendoActionSheetHeaderProps = {
     inputValue?: string;
     inputPlaceholder?: string;
     adaptive?: boolean;
+    filterInputProps?: React.HTMLAttributes<HTMLInputElement>;
 }
 
 const defaultOptions = {};
@@ -32,6 +33,7 @@ export const ActionSheetHeader = (
         inputValue,
         inputPlaceholder,
         adaptive,
+        filterInputProps,
         children,
         ...other
     } = props;
@@ -67,7 +69,7 @@ export const ActionSheetHeader = (
                     {input ? (
                         <Textbox value={inputValue} placeholder={inputPlaceholder} size={adaptive ? "large" : "medium"} />
                     ) : (
-                        <Searchbox placeholder="Filter" size={adaptive ? "large" : "medium"} />
+                        <Searchbox placeholder="Filter" size={adaptive ? "large" : "medium"} inputProps={filterInputProps} />
                     )}
                 </div>
             )}

@@ -1,12 +1,15 @@
 import DropdownTree from "../dropdowntree.spec";
 import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
 
-export const DropdownTreePopup = (props) => (
-    <DropdownTree
-        opened={true}
-        popup={
-            <>
-                <Treeview dir={props.dir}>
+export const DropdownTreePopup = (props) => {
+    const { id = 'dropdowntree', ...other } = props;
+
+    return (
+        <DropdownTree
+            id={id}
+            opened={true}
+            popup={
+                <Treeview id={`${id}-treeview`} dir={props.dir}>
                     <TreeviewItem text="Root 1" />
                     <TreeviewItem text="Root 2" expanded>
                         <TreeviewGroup>
@@ -20,8 +23,8 @@ export const DropdownTreePopup = (props) => (
                         </TreeviewGroup>
                     </TreeviewItem>
                 </Treeview>
-            </>
-        }
-        {...props}
-    />
-);
+            }
+            {...other}
+        />
+    );
+};
