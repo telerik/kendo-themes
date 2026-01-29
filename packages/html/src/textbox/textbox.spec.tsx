@@ -84,8 +84,7 @@ export const Textbox: KendoComponent<KendoTextboxProps & KendoTextboxState & Omi
         required,
         loading,
         disabled,
-        readonly,
-        ..._other
+        readonly
     } = props;
 
 

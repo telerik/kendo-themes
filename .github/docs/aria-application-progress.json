@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-01-29T07:57:34.705Z",
+  "lastUpdated": "2026-01-29T08:45:49.398Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -702,7 +702,7 @@
       "completedAt": "2026-01-29T07:57:34.705Z"
     },
     "listview": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "lists",
       "complianceScore": null,
@@ -712,7 +712,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-29T08:25:46.417Z"
     },
     "maskedtextbox": {
       "status": "completed",
@@ -755,7 +756,7 @@
       "notes": ""
     },
     "multicolumncombobox": {
-      "status": "pending",
+      "status": "blocked",
       "specExists": true,
       "priority": "lists",
       "complianceScore": null,
@@ -765,10 +766,10 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "No packages/html/src/multicolumncombobox implementation found."
     },
     "multiselect": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "lists",
       "complianceScore": null,
@@ -778,10 +779,11 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-29T08:41:03.343Z"
     },
     "multiselecttree": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "lists",
       "complianceScore": null,
@@ -791,7 +793,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-29T08:45:49.397Z"
     },
     "multiviewcalendar": {
       "status": "pending",

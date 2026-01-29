@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { PagerNormal } from '../pager';
 import { classNames, stateClassNames, States } from '../misc';
-import { ListViewItem } from './listview-item.spec';
+import { ListViewItem, KendoListViewItemState } from './listview-item.spec';
 
 import { KendoComponent } from '../_types/component';
 import { LISTVIEW_FOLDER_NAME, LISTVIEW_MODULE_NAME } from './constants';
@@ -60,7 +60,10 @@ export const ListView: KendoComponent<KendoListViewProps & KendoListViewState & 
     } = props;
 
     const isSelectable = Boolean(selectable) || (typeof props.className === 'string' && props.className.split(' ').includes('k-selectable'));
-    const listViewItems = React.Children.toArray(props.children).filter((child) => React.isValidElement(child) && child.type === ListViewItem);
+    const listViewItems = React.Children.toArray(props.children).filter(
+        (child): child is React.ReactElement<KendoListViewItemState & React.HTMLAttributes<HTMLDivElement>> =>
+            React.isValidElement(child) && child.type === ListViewItem
+    );
     const totalItems = itemsCount ?? listViewItems.length;
     let currentItemIndex = 0;
     const childrenWithAria = React.Children.map(props.children, (child) => {

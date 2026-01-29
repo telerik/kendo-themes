@@ -3,8 +3,11 @@ import { Checkbox } from "../../checkbox";
 import { TreeviewGroup, TreeviewItem, Treeview } from "../../treeview";
 import MultiSelectTree from "../multiselecttree.spec";
 
-export const MultiSelectTreePopup = (props) => (
-    <MultiSelectTree opened
+export const MultiSelectTreePopup = (props) => {
+    const { id = 'multiselecttree', ...other } = props;
+
+    return (
+        <MultiSelectTree id={id} opened
         popup={(
             <>
                 <div className="k-check-all">
@@ -13,7 +16,7 @@ export const MultiSelectTreePopup = (props) => (
                         Check all
                     </span>
                 </div>
-                <Treeview dir={props.dir}>
+                <Treeview id={`${id}-treeview`} dir={props.dir}>
                     <TreeviewItem text="Furniture" showCheckbox >
                         <TreeviewGroup>
                             <TreeviewItem text="Child 1" showCheckbox />
@@ -31,6 +34,7 @@ export const MultiSelectTreePopup = (props) => (
                 </Treeview>
             </>
         )}
-        {...props}
+        {...other}
     />
-);
+    );
+};

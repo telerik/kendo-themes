@@ -50,6 +50,7 @@ export type KendoMultiSelectProps = KendoMultiSelectOptions & {
     type?: string;
     value?: string;
     placeholder?: string;
+    activeDescendantId?: string | null;
     tags?: React.JSX.Element;
     popup?: React.JSX.Element;
     showArrowButton?: boolean;
@@ -99,8 +100,18 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
         adaptiveTitle,
         adaptiveSubtitle,
         adaptiveCustomValue,
+        activeDescendantId,
         ...other
     } = props;
+
+    const listboxId = `${id}-listbox`;
+    const popupId = `${id}-popup`;
+    const chipListId = `${id}-taglist`;
+    const defaultActiveDescendantId = `${id}-listbox-item-0`;
+    const resolvedActiveDescendantId = opened && popup
+        ? (activeDescendantId === null ? undefined : (activeDescendantId || defaultActiveDescendantId))
+        : undefined;
+    const ariaLabel = placeholder ? `MultiSelect, ${placeholder}` : 'MultiSelect';
 
 
     return (
@@ -127,7 +138,7 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                     </>
                 }
                 <div className="k-input-values">
-                    <ChipList size={size}>
+                    <ChipList id={chipListId} size={size}>
                         <>
                             {tags}
                         </>
@@ -138,13 +149,17 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                         disabled={disabled}
                         readonly={readonly}
                         role="combobox"
+                        aria-label={ariaLabel}
                         aria-haspopup="listbox"
                         aria-expanded={opened ? 'true' : 'false'}
-                        aria-controls={`${id}-listbox`}
+                        aria-controls={opened && popup ? listboxId : undefined}
+                        aria-activedescendant={resolvedActiveDescendantId}
                         aria-autocomplete="list"
+                        aria-describedby={chipListId}
                         {...(readonly && { 'aria-readonly': 'true' })}
                         {...(loading && { 'aria-busy': 'true' })}
                         {...(invalid && { 'aria-invalid': 'true' })}
+                        {...(disabled && { 'aria-disabled': 'true' })}
                         tabIndex={0}
                     />
                 </div>
@@ -176,12 +191,16 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                         fillMode={fillMode}
                         aria-label="Open dropdown"
                         tabIndex={-1}
+                        disabled={disabled}
+                        aria-disabled={disabled ? 'true' : undefined}
                     />
                 )}
             </Input>
             {opened && popup &&
                 <Popup
                     className="k-list-container k-multiselect-popup"
+                    containerClassName="k-multiselect-popup-container"
+                    id={popupId}
                     role="region"
                     aria-label="MultiSelect suggestions"
                 >
@@ -208,10 +227,11 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                             role="listbox"
                             aria-label="MultiSelect options"
                             aria-multiselectable="true"
+                            listboxId={listboxId}
                         >
-                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
-                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
-                            <ListItem text="List item" role="option" aria-selected="false" tabIndex={-1} />
+                            <ListItem id={`${id}-listbox-item-0`} text="List item" role="option" aria-selected="true" tabIndex={0} selected focus />
+                            <ListItem id={`${id}-listbox-item-1`} text="List item" role="option" aria-selected="false" tabIndex={-1} />
+                            <ListItem id={`${id}-listbox-item-2`} text="List item" role="option" aria-selected="false" tabIndex={-1} />
                         </List>
                     </div>
                 </ActionSheet>

@@ -41,6 +41,7 @@ export type KendoMultiSelectTreeOptions = {
 };
 
 export type KendoMultiSelectTreeProps = KendoMultiSelectTreeOptions & {
+    id?: string;
     prefix?: React.JSX.Element;
     suffix?: React.JSX.Element;
     type?: string;
@@ -50,6 +51,7 @@ export type KendoMultiSelectTreeProps = KendoMultiSelectTreeOptions & {
     showArrowButton?: boolean;
     opened?: boolean;
     dir?: 'ltr' | 'rtl';
+    filterable?: boolean;
     adaptive?: boolean;
     adaptiveSettings?: KendoActionSheetProps;
     adaptiveTitle?: string;
@@ -68,6 +70,7 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        id = 'multiselecttree',
         size,
         rounded,
         fillMode,
@@ -87,6 +90,7 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
         readonly,
         opened,
         dir,
+        filterable,
         adaptive,
         adaptiveSettings,
         adaptiveTitle,
@@ -94,6 +98,11 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
         adaptiveFilter,
         ...other
     } = props;
+
+    const treeviewId = `${id}-treeview`;
+    const popupId = `${id}-popup`;
+    const chipListId = `${id}-taglist`;
+    const ariaLabel = placeholder ? `MultiSelectTree, ${placeholder}` : 'MultiSelectTree';
 
 
     return (
@@ -114,13 +123,27 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
                 readonly={readonly}
                 className={classNames(props.className, MULTISELECTTREE_CLASSNAME)}
             >
-                <InputPrefix>{prefix}</InputPrefix>
-                <ChipList size={size} className="k-input-values">
+                {prefix && <InputPrefix>{prefix}</InputPrefix>}
+                <ChipList id={chipListId} size={size} className="k-input-values">
                     <>
                         {tags}
                     </>
                 </ChipList>
-                <span className="k-input-inner">
+                <span
+                    className="k-input-inner"
+                    role="combobox"
+                    aria-label={ariaLabel}
+                    aria-haspopup="tree"
+                    aria-expanded={opened ? 'true' : 'false'}
+                    aria-controls={opened && popup ? treeviewId : undefined}
+                    aria-autocomplete={filterable || opened ? 'list' : undefined}
+                    aria-describedby={chipListId}
+                    {...(readonly && { 'aria-readonly': 'true' })}
+                    {...(loading && { 'aria-busy': 'true' })}
+                    {...(invalid && { 'aria-invalid': 'true' })}
+                    {...(disabled && { 'aria-disabled': 'true' })}
+                    tabIndex={0}
+                >
                     {!tags && <span className="k-input-value-text">{placeholder}</span>}
                 </span>
                 <InputValidationIcon
@@ -136,7 +159,7 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
                     disabled={disabled}
                     readonly={readonly}
                     value={tags ? 'value' : ''} />
-                <InputSuffix>{suffix}</InputSuffix>
+                {suffix && <InputSuffix>{suffix}</InputSuffix>}
                 {showArrowButton && (
                     <Button
                         className="k-input-button"
@@ -144,11 +167,23 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
                         rounded={null}
                         size={size}
                         fillMode={fillMode}
+                        role="button"
+                        aria-label="Open dropdown"
+                        tabIndex={-1}
+                        disabled={disabled}
+                        aria-disabled={disabled ? 'true' : undefined}
                     />
                 )}
             </Input>
             {opened && popup &&
-                <Popup className="k-multiselecttree-popup" dir={dir}>
+                <Popup
+                    className="k-multiselecttree-popup"
+                    containerClassName="k-multiselecttree-popup-container"
+                    id={popupId}
+                    role="region"
+                    aria-label="MultiSelectTree options"
+                    dir={dir}
+                >
                     {popup}
                 </Popup>
             }
@@ -156,7 +191,7 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Confirm" />}
                             filter={adaptiveFilter}
                             inputPlaceholder={placeholder}
                             title={adaptiveTitle}
@@ -164,7 +199,7 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
                         />
                     }
                 >
-                    <Treeview size="large">
+                    <Treeview size="large" id={treeviewId}>
                         <TreeviewItem text="Root 1" />
                         <TreeviewItem text="Root 2" expanded>
                             <TreeviewGroup>

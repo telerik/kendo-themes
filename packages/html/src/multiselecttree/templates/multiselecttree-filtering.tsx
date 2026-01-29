@@ -5,8 +5,11 @@ import { Textbox } from "../../textbox";
 import { TreeviewGroup, TreeviewItem, Treeview } from "../../treeview";
 import MultiSelectTree from "../multiselecttree.spec";
 
-export const MultiSelectTreeFiltering = (props) => (
-    <MultiSelectTree opened
+export const MultiSelectTreeFiltering = (props) => {
+    const { id = 'multiselecttree', ...other } = props;
+
+    return (
+        <MultiSelectTree id={id} opened filterable
         popup={(
             <>
                 <div className="k-list-filter">
@@ -24,7 +27,7 @@ export const MultiSelectTreeFiltering = (props) => (
                         Check all
                     </span>
                 </div>
-                <Treeview dir={props.dir}>
+                <Treeview id={`${id}-treeview`} dir={props.dir}>
                     <TreeviewItem text="Furniture" showCheckbox >
                         <TreeviewGroup>
                             <TreeviewItem text="Child 1" showCheckbox />
@@ -42,6 +45,7 @@ export const MultiSelectTreeFiltering = (props) => (
                 </Treeview>
             </>
         )}
-        {...props}
+        {...other}
     />
-);
+    );
+};

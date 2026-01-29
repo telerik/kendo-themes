@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -30,7 +30,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix</span>
@@ -46,7 +46,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -60,7 +60,7 @@
         <div>
             <span class="k-multiselect k-input">
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Suffix</span>
@@ -76,7 +76,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -104,7 +104,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix &amp; Suffix</span>
@@ -120,7 +120,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -149,7 +149,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix</span>
@@ -165,14 +165,14 @@
                             </span>
                         </div>
                     </div>
-                    <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input disabled="" role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-disabled="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
             </span>
         </div>
         <div>
             <span class="k-multiselect k-input k-disabled">
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Suffix</span>
@@ -188,7 +188,7 @@
                             </span>
                         </div>
                     </div>
-                    <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input disabled="" role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-disabled="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
@@ -209,7 +209,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix &amp; Suffix</span>
@@ -225,7 +225,7 @@
                             </span>
                         </div>
                     </div>
-                    <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input disabled="" role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-disabled="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
@@ -247,7 +247,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix</span>
@@ -263,7 +263,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -282,7 +282,7 @@
         <div>
             <span class="k-multiselect k-input k-invalid">
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Suffix</span>
@@ -298,7 +298,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -331,7 +331,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix &amp; Suffix</span>
@@ -347,7 +347,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -381,7 +381,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix</span>
@@ -397,7 +397,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -411,7 +411,7 @@
         <div dir="rtl">
             <span class="k-multiselect k-input">
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Suffix</span>
@@ -427,7 +427,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -455,7 +455,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix &amp; Suffix</span>
@@ -471,7 +471,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -501,7 +501,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix</span>
@@ -517,7 +517,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -531,7 +531,7 @@
         <div>
             <span class="k-multiselect k-input k-input-solid">
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Suffix</span>
@@ -547,7 +547,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -575,7 +575,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix &amp; Suffix</span>
@@ -591,7 +591,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -620,7 +620,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix</span>
@@ -636,14 +636,14 @@
                             </span>
                         </div>
                     </div>
-                    <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input disabled="" role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-disabled="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
             </span>
         </div>
         <div>
             <span class="k-multiselect k-input k-input-solid k-disabled">
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Suffix</span>
@@ -659,7 +659,7 @@
                             </span>
                         </div>
                     </div>
-                    <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input disabled="" role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-disabled="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
@@ -680,7 +680,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix &amp; Suffix</span>
@@ -696,7 +696,7 @@
                             </span>
                         </div>
                     </div>
-                    <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input disabled="" role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-disabled="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
@@ -718,7 +718,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix</span>
@@ -734,7 +734,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -753,7 +753,7 @@
         <div>
             <span class="k-multiselect k-input k-input-solid k-invalid">
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Suffix</span>
@@ -769,7 +769,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -802,7 +802,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix &amp; Suffix</span>
@@ -818,7 +818,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -852,7 +852,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix</span>
@@ -868,7 +868,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -882,7 +882,7 @@
         <div dir="rtl">
             <span class="k-multiselect k-input k-input-solid">
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Suffix</span>
@@ -898,7 +898,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -926,7 +926,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix &amp; Suffix</span>
@@ -942,7 +942,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -972,7 +972,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix</span>
@@ -988,7 +988,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -1002,7 +1002,7 @@
         <div>
             <span class="k-multiselect k-input k-input-flat">
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Suffix</span>
@@ -1018,7 +1018,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -1046,7 +1046,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix &amp; Suffix</span>
@@ -1062,7 +1062,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -1091,7 +1091,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix</span>
@@ -1107,14 +1107,14 @@
                             </span>
                         </div>
                     </div>
-                    <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input disabled="" role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-disabled="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
             </span>
         </div>
         <div>
             <span class="k-multiselect k-input k-input-flat k-disabled">
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Suffix</span>
@@ -1130,7 +1130,7 @@
                             </span>
                         </div>
                     </div>
-                    <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input disabled="" role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-disabled="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
@@ -1151,7 +1151,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix &amp; Suffix</span>
@@ -1167,7 +1167,7 @@
                             </span>
                         </div>
                     </div>
-                    <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input disabled="" role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-disabled="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
@@ -1189,7 +1189,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix</span>
@@ -1205,7 +1205,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1224,7 +1224,7 @@
         <div>
             <span class="k-multiselect k-input k-input-flat k-invalid">
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Suffix</span>
@@ -1240,7 +1240,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1273,7 +1273,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix &amp; Suffix</span>
@@ -1289,7 +1289,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1323,7 +1323,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix</span>
@@ -1339,7 +1339,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -1353,7 +1353,7 @@
         <div dir="rtl">
             <span class="k-multiselect k-input k-input-flat">
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Suffix</span>
@@ -1369,7 +1369,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -1397,7 +1397,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix &amp; Suffix</span>
@@ -1413,7 +1413,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -1443,7 +1443,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix</span>
@@ -1459,7 +1459,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -1473,7 +1473,7 @@
         <div>
             <span class="k-multiselect k-input k-input-outline">
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Suffix</span>
@@ -1489,7 +1489,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -1517,7 +1517,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix &amp; Suffix</span>
@@ -1533,7 +1533,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -1562,7 +1562,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix</span>
@@ -1578,14 +1578,14 @@
                             </span>
                         </div>
                     </div>
-                    <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input disabled="" role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-disabled="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
             </span>
         </div>
         <div>
             <span class="k-multiselect k-input k-input-outline k-disabled">
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Suffix</span>
@@ -1601,7 +1601,7 @@
                             </span>
                         </div>
                     </div>
-                    <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input disabled="" role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-disabled="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
@@ -1622,7 +1622,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix &amp; Suffix</span>
@@ -1638,7 +1638,7 @@
                             </span>
                         </div>
                     </div>
-                    <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input disabled="" role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-disabled="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <span class="k-input-suffix k-input-suffix-horizontal">
@@ -1660,7 +1660,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix</span>
@@ -1676,7 +1676,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1695,7 +1695,7 @@
         <div>
             <span class="k-multiselect k-input k-input-outline k-invalid">
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Suffix</span>
@@ -1711,7 +1711,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1744,7 +1744,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix &amp; Suffix</span>
@@ -1760,7 +1760,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" aria-invalid="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1794,7 +1794,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix</span>
@@ -1810,7 +1810,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -1824,7 +1824,7 @@
         <div dir="rtl">
             <span class="k-multiselect k-input k-input-outline">
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Suffix</span>
@@ -1840,7 +1840,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -1868,7 +1868,7 @@
                 </span>
                 <span class="k-input-separator k-input-separator-vertical"></span>
                 <div class="k-input-values">
-                    <div class="k-chip-list">
+                    <div id="multiselect-taglist" class="k-chip-list">
                         <div role="button" aria-pressed="false" class="k-chip">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Prefix &amp; Suffix</span>
@@ -1884,7 +1884,7 @@
                             </span>
                         </div>
                     </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    <input role="combobox" aria-label="MultiSelect" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-describedby="multiselect-taglist" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
