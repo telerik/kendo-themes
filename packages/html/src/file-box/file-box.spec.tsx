@@ -2,6 +2,7 @@ import { classNames, States } from '../misc';
 import { Icon } from '../icon';
 import { IconButton } from '../button';
 import { MenuButton } from '../menu-button';
+import { FILE_BOX_FOLDER_NAME, FILE_BOX_MODULE_NAME } from './constants';
 
 export const FILE_BOX_CLASSNAME = 'k-file-box';
 
@@ -71,5 +72,7 @@ FileBox.states = states;
 FileBox.options = options;
 FileBox.className = FILE_BOX_CLASSNAME;
 FileBox.defaultOptions = defaultOptions;
+FileBox.moduleName = FILE_BOX_MODULE_NAME;
+FileBox.folderName = FILE_BOX_FOLDER_NAME;
 
 export default FileBox;
