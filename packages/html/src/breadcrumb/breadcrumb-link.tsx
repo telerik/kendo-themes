@@ -28,8 +28,12 @@ export const BreadcrumbLink = (
         hover,
         focus,
         disabled,
+        'aria-label': ariaLabel,
         ...other
     } = props;
+
+    const resolvedAriaLabel = ariaLabel || (icon && !icontext ? 'Breadcrumb item' : undefined);
+    const resolvedStyle = { minWidth: '24px', minHeight: '24px', ...props.style };
 
     return (
         <a
@@ -48,7 +52,9 @@ export const BreadcrumbLink = (
                     'k-breadcrumb-icon-link': icon,
                     'k-breadcrumb-icontext-link': icontext,
                 },
-            )}>
+            )}
+            {...(resolvedAriaLabel && { 'aria-label': resolvedAriaLabel })}
+            style={resolvedStyle}>
             {props.children}
         </a>
     );

@@ -12,19 +12,19 @@ export const BreadcrumbCollapsingNone = ({ dir, ...other }: any) => (
                             <Icon icon="home" />
                             <BreadcrumbItemText text="Home"></BreadcrumbItemText>
                         </BreadcrumbLink>
-                        <Icon className="k-breadcrumb-delimiter-icon" icon={`chevron-${dir === "rtl" ? "left" : "right"}`} size="xsmall" />
+                        <Icon className="k-breadcrumb-delimiter-icon" icon={`chevron-${dir === "rtl" ? "left" : "right"}`} size="xsmall" aria-hidden="true" />
                     </BreadcrumbItem>
                     <BreadcrumbItem>
                         <BreadcrumbLink>
                             <BreadcrumbItemText text="First item"></BreadcrumbItemText>
                         </BreadcrumbLink>
-                        <Icon className="k-breadcrumb-delimiter-icon" icon={`chevron-${dir === "rtl" ? "left" : "right"}`} size="xsmall" />
+                        <Icon className="k-breadcrumb-delimiter-icon" icon={`chevron-${dir === "rtl" ? "left" : "right"}`} size="xsmall" aria-hidden="true" />
                     </BreadcrumbItem>
                     <BreadcrumbItem>
                         <BreadcrumbLink>
                             <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
                         </BreadcrumbLink>
-                        <Icon className="k-breadcrumb-delimiter-icon" icon={`chevron-${dir === "rtl" ? "left" : "right"}`} size="xsmall" />
+                        <Icon className="k-breadcrumb-delimiter-icon" icon={`chevron-${dir === "rtl" ? "left" : "right"}`} size="xsmall" aria-hidden="true" />
                     </BreadcrumbItem>
                     <BreadcrumbItem last>
                         <BreadcrumbLink>

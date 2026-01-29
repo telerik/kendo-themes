@@ -6,3 +6,4 @@ export * from './templates/chip-icon';
 export * from './templates/chip-normal';
 export * from './templates/chip-removable';
 export * from './templates/chip-actions';
+export * from './templates/chip-standalone';

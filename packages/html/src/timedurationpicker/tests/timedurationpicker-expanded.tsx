@@ -25,16 +25,6 @@ export default () =>(
             <div dir="rtl">
                 <TimeDurationPickerPopup placeholder="02 days : 01 hours : 30 mins" />
             </div>
-
-            <span>TimeDurationPicker Disabled</span>
-            <span>TimeDurationPicker RTL Disabled</span>
-
-            <div>
-                <TimeDurationPickerPopup placeholder="02 days : 01 hours : 30 mins" disabled />
-            </div>
-            <div dir="rtl">
-                <TimeDurationPickerPopup placeholder="02 days : 01 hours : 30 mins" disabled />
-            </div>
         </div>
 
     </>

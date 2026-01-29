@@ -42,6 +42,7 @@ export type KendoSplitButtonOptions = {
 };
 
 export type KendoSplitButtonProps = KendoSplitButtonOptions & {
+    id?: string;
   icon?: string;
   text?: string;
   iconClassName?: string;
@@ -49,6 +50,7 @@ export type KendoSplitButtonProps = KendoSplitButtonOptions & {
   arrowIconName?: string;
   popup?: React.JSX.Element;
   opened?: boolean;
+    menuButtonAriaLabel?: string;
 };
 
 export type KendoSplitButtonState = { [K in (typeof states)[number]]?: boolean };
@@ -63,6 +65,7 @@ export const SplitButton: KendoComponent<KendoSplitButtonProps & KendoSplitButto
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        id = 'split-button',
         size,
         rounded,
         fillMode,
@@ -77,8 +80,15 @@ export const SplitButton: KendoComponent<KendoSplitButtonProps & KendoSplitButto
         arrowIconName = defaultOptions.arrowIconName,
         popup,
         opened,
+        menuButtonAriaLabel,
+        'aria-label': ariaLabel,
         ...other
     } = props;
+
+    const menuId = `${id}-menu`;
+    const textLabel = text || (typeof props.children === 'string' ? props.children : undefined);
+    const resolvedMenuButtonAriaLabel = menuButtonAriaLabel || (textLabel ? `Split button menu, ${textLabel}` : 'Split button menu');
+    const menuButtonStyle = size === Size.small ? { minWidth: '24px', minHeight: '24px' } : undefined;
 
     return (
         <>
@@ -94,6 +104,7 @@ export const SplitButton: KendoComponent<KendoSplitButtonProps & KendoSplitButto
                 )}>
                 <Button
                     text={text}
+                    aria-label={ariaLabel}
                     icon={icon}
                     size={size}
                     rounded={rounded}
@@ -108,7 +119,12 @@ export const SplitButton: KendoComponent<KendoSplitButtonProps & KendoSplitButto
                     {props.children}
                 </Button>
                 <Button
-                    className="k-split-button-arrow"
+                    className={classNames("k-split-button-arrow", "k-menu-button")}
+                    aria-label={resolvedMenuButtonAriaLabel}
+                    aria-expanded={opened ? 'true' : 'false'}
+                    aria-controls={menuId}
+                    aria-disabled={disabled ? 'true' : undefined}
+                    style={menuButtonStyle}
                     icon={arrowIconName}
                     size={size}
                     rounded={rounded}

@@ -1,4 +1,6 @@
+import * as React from 'react';
 import { classNames, optionClassNames, stateClassNames, States, FillMode } from '../misc';
+import { Button } from '../button';
 
 import { KendoComponent } from '../_types/component';
 import { BUTTON_GROUP_FOLDER_NAME, BUTTON_GROUP_MODULE_NAME } from './constants';
@@ -36,9 +38,43 @@ export const ButtonGroup: KendoComponent<KendoButtonGroupProps & KendoButtonGrou
         ...other
     } = props;
 
+    const classNameTokens = typeof props.className === 'string' ? props.className.split(' ') : [];
+    const isSplitButtonGroup = classNameTokens.includes('k-split-button');
+    const isSchedulerNavigation = classNameTokens.includes('k-scheduler-navigation');
+    const isZoomControl = classNameTokens.includes('k-zoom-control');
+    const shouldApplyPressed = !(isSplitButtonGroup || isSchedulerNavigation || isZoomControl);
+
+    const applyAriaPressed = (children: React.ReactNode): React.ReactNode => (
+        React.Children.map(children, (child) => {
+            if (!React.isValidElement(child)) {
+                return child;
+            }
+
+            if (child.type === React.Fragment) {
+                return (
+                    <>
+                        {applyAriaPressed(child.props.children)}
+                    </>
+                );
+            }
+
+            if (child.type !== Button) {
+                return child;
+            }
+
+            return React.cloneElement(child, {
+                'aria-pressed': child.props.selected ? 'true' : 'false'
+            });
+        })
+    );
+
+    const childrenWithAria = shouldApplyPressed ? applyAriaPressed(props.children) : props.children;
+
     return (
         <div
             {...other}
+            {...(!isSplitButtonGroup && { role: 'group' })}
+            {...(disabled && { 'aria-disabled': 'true' })}
             className={classNames(
                 props.className,
                 BUTTONGROUP_CLASSNAME,
@@ -53,7 +89,7 @@ export const ButtonGroup: KendoComponent<KendoButtonGroupProps & KendoButtonGrou
                 }
             )}
         >
-            { props.children }
+            { childrenWithAria }
         </div>
     );
 };

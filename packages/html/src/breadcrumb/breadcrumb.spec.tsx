@@ -32,6 +32,7 @@ export const Breadcrumb: KendoComponent<KendoBreadcrumbProps & KendoBreadcrumbSt
         size,
         collapsing = defaultOptions.collapsing,
         focus,
+        'aria-label': ariaLabel,
         ...other
     } = props;
 
@@ -50,7 +51,8 @@ export const Breadcrumb: KendoComponent<KendoBreadcrumbProps & KendoBreadcrumbSt
                 {
                     'k-breadcrumb-wrap': collapsing === 'wrap'
                 }
-            )}>
+            )}
+            aria-label={ariaLabel || 'Breadcrumb'}>
             {props.children}
         </nav>
     );

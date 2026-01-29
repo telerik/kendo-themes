@@ -17,7 +17,7 @@ You are a comprehensive accessibility specialist agent focused on ensuring WCAG 
 
 ### 1. ARIA Attribute Application
 - Read ARIA specifications from `aria/*.md` files
-- Apply ARIA attributes to TSX components in `packages/html/src/{component}` that are on root level only (not nested in "tests" and "templates" folders)
+- Apply ARIA attributes to TSX components in `packages/html/src/{component}` that are on root level only or in "templates" folder (not nested in "tests" folder)
 - Follow repo guidelines for contributing code - https://github.com/telerik/kendo-themes/wiki/Rendering#contribution-guidelines
 - Handle composite components and cross-references
 - Support dynamic/state-dependent attributes

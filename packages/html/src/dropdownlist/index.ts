@@ -5,3 +5,5 @@ export * from "./templates/dropdownlist-filtering";
 export * from "./templates/dropdownlist-adaptive";
 export * from "./templates/dropdownlist-grouping";
 export * from "./templates/dropdownlist-grouping-filtering";
+export * from "./templates/dropdownlist-no-data";
+export * from "./templates/dropdownlist-option-label";

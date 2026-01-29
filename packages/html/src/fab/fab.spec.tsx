@@ -72,6 +72,7 @@ export const FloatingActionButton: KendoComponent<KendoFloatingActionButtonProps
         active,
         selected,
         disabled,
+        'aria-label': ariaLabel,
         ...other
     } = props;
 
@@ -98,7 +99,9 @@ export const FloatingActionButton: KendoComponent<KendoFloatingActionButtonProps
                 {
                     [`!k-pos-absolute k-${position}`]: position,
                 }
-            )}>
+            )}
+            aria-label={ariaLabel}
+            disabled={disabled}>
             {icon && <Icon className="k-fab-icon" icon={icon} /> }
             {text && <span className="k-fab-text">{text}</span>}
         </button>

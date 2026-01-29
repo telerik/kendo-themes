@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-01-29T08:45:49.398Z",
+  "lastUpdated": "2026-01-29T09:57:20.105Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -29,7 +29,7 @@
       "notes": ""
     },
     "appbar": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "navigation",
       "complianceScore": null,
@@ -39,7 +39,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-29T09:45:51.862Z"
     },
     "autocomplete": {
       "status": "completed",
@@ -83,7 +84,7 @@
       "notes": ""
     },
     "breadcrumb": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "navigation",
       "complianceScore": null,
@@ -93,7 +94,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-29T09:57:20.103Z"
     },
     "button": {
       "status": "completed",
@@ -110,7 +112,7 @@
       "completedAt": "2026-01-28T12:21:26.200Z"
     },
     "buttongroup": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "button-groups",
       "complianceScore": null,
@@ -120,7 +122,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-29T09:19:35.262Z"
     },
     "calendar": {
       "status": "pending",
@@ -475,7 +478,7 @@
       "notes": ""
     },
     "dropdownbutton": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "button-groups",
       "complianceScore": null,
@@ -485,7 +488,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-29T09:29:46.944Z"
     },
     "dropdownlist": {
       "status": "completed",
@@ -596,7 +600,7 @@
       "completedAt": "2026-01-28T20:40:58.624Z"
     },
     "floatingactionbutton": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "button-groups",
       "complianceScore": null,
@@ -606,7 +610,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-29T09:35:58.829Z"
     },
     "form": {
       "status": "pending",
@@ -1104,7 +1109,7 @@
       "notes": ""
     },
     "splitbutton": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "button-groups",
       "complianceScore": null,
@@ -1114,7 +1119,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-29T09:43:45.628Z"
     },
     "splitter": {
       "status": "pending",

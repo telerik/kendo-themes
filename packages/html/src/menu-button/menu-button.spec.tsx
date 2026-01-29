@@ -41,10 +41,12 @@ export type KendoMenuButtonOptions = {
 };
 
 export type KendoMenuButtonProps = KendoMenuButtonOptions & {
+    id?: string;
   icon?: string;
   text?: string;
   showArrow?: boolean;
   arrowIconName?: string;
+    opened?: boolean;
 };
 
 export type KendoMenuButtonState = { [K in (typeof states)[number]]?: boolean };
@@ -60,6 +62,7 @@ export const MenuButton: KendoComponent<KendoMenuButtonProps & KendoMenuButtonSt
         React.HTMLAttributes<HTMLButtonElement>
 ) => {
     const {
+        id = 'menu-button',
         size,
         rounded,
         fillMode,
@@ -73,8 +76,13 @@ export const MenuButton: KendoComponent<KendoMenuButtonProps & KendoMenuButtonSt
         text,
         showArrow = defaultOptions.showArrow,
         arrowIconName = defaultOptions.arrowIconName,
+        opened,
         ...other
     } = props;
+
+    const menuId = `${id}-menu`;
+    const textLabel = text || (typeof props.children === 'string' ? props.children : undefined);
+    const ariaLabel = textLabel ? `Menu button, ${textLabel}` : 'Menu button';
 
     return (
         <Button
@@ -84,6 +92,10 @@ export const MenuButton: KendoComponent<KendoMenuButtonProps & KendoMenuButtonSt
                 MENUBUTTON_CLASSNAME,
             )}
             text={text}
+            aria-label={ariaLabel}
+            aria-expanded={opened ? 'true' : 'false'}
+            aria-controls={menuId}
+            aria-disabled={disabled ? 'true' : undefined}
             size={size}
             rounded={rounded}
             fillMode={fillMode}

@@ -1,4 +1,6 @@
+import * as React from 'react';
 import { classNames } from '../misc';
+import { BreadcrumbLink } from './breadcrumb-link';
 
 export const BREADCRUMBITEM_CLASSNAME = `k-breadcrumb-item`;
 
@@ -17,6 +19,19 @@ export const BreadcrumbItem = (
         ...other
     } = props;
 
+    const resolvedChildren = last
+        ? React.Children.map(props.children, (child) => {
+            if (React.isValidElement(child) && child.type === BreadcrumbLink) {
+                return React.cloneElement(child, {
+                    'aria-current': 'page',
+                    'aria-disabled': 'true'
+                });
+            }
+
+            return child;
+        })
+        : props.children;
+
     return (
         <li
             {...other}
@@ -28,7 +43,7 @@ export const BreadcrumbItem = (
                     'k-breadcrumb-last-item': last,
                 }
             )}>
-            {props.children}
+            {resolvedChildren}
         </li>
     );
 };

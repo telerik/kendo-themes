@@ -19,10 +19,10 @@
     <div id="test-area" class="k-d-grid">
         <p>React Grid - Sticky columns - RTL</p>
         <div class="k-rtl k-grid" style="height: 700px; width: 500px;">
-            <div class="k-grouping-header" role="toolbar">
+            <div class="k-grouping-header">
                 <div class="k-chip-list">
-                    <div role="button" aria-pressed="false" class="k-chip">
-                        <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-sort-asc-small" aria-hidden="true">
+                    <div class="k-chip">
+                        <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-sort-asc-small">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
                             </svg>
@@ -32,7 +32,7 @@
                         </span>
                         <span class="k-chip-actions">
                             <span class="k-chip-action k-chip-remove-action">
-                                <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
+                                <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
                                     </svg>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="k-grouping-drop-container"></div>
             </div>
-            <div class="k-grid-aria-root" role="grid">
+            <div class="k-grid-aria-root">
                 <div class="k-grid-header k-grid-draggable-header">
                     <div class="k-grid-header-wrap">
                         <table class="k-grid-header-table k-table" style="width: 1434px;">
@@ -58,7 +58,7 @@
                                 <col width="90px">
                             </colgroup>
                             <thead class="k-table-thead">
-                                <tr class="k-table-row" role="row" style="touch-action: none;">
+                                <tr role="row" class="k-table-row" style="touch-action: none;">
                                     <th colspan="1" rowspan="1" class="k-header k-table-th" style="left: 0px; right: 0px;"></th>
                                     <th colspan="1" rowspan="1" class="k-hierarchy-cell k-header k-table-th" style="left: 0px; right: 0px;"></th>
                                     <th colspan="1" rowspan="1" class="k-header k-grid-header-sticky k-table-th" style="left: 90px; right: 0px;">
@@ -73,7 +73,7 @@
                                             <span class="k-link">
                                                 <span class="k-column-title">customerID</span>
                                                 <span class="k-sort-icon">
-                                                    <span class="k-icon k-svg-icon k-svg-i-sort-desc-small" aria-hidden="true">
+                                                    <span class="k-icon k-svg-icon k-svg-i-sort-desc-small">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M352 288 240 416 128 288h96V64h32v224z"></path>
                                                         </svg>
@@ -133,7 +133,7 @@
                                     <tr class="k-table-group-row k-grouping-row k-table-row" role="row">
                                         <td colspan="8" class="k-table-td" style="left: 0px; right: 0px;">
                                             <p class="k-reset">
-                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M256 352 128 160h256z"></path>
                                                     </svg>
@@ -144,7 +144,7 @@
                                     <tr class="k-master-row k-table-row" role="row">
                                         <td class="k-table-group-td k-group-cell k-table-td" style="left: 0px; right: 0px;"></td>
                                         <td class="k-hierarchy-cell k-table-td">
-                                            <span class="k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-plus">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                                 </svg>
@@ -160,7 +160,7 @@
                                     <tr class="k-master-row k-table-row k-table-alt-row" role="row">
                                         <td class="k-table-group-td k-group-cell k-table-td" style="left: 0px; right: 0px;"></td>
                                         <td class="k-hierarchy-cell k-table-td">
-                                            <span class="k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-plus">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                                 </svg>
@@ -176,7 +176,7 @@
                                     <tr class="k-table-group-row k-grouping-row k-table-row" role="row">
                                         <td colspan="8" class="k-table-td" style="left: 0px; right: 0px;">
                                             <p class="k-reset">
-                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M256 352 128 160h256z"></path>
                                                     </svg>
@@ -187,7 +187,7 @@
                                     <tr class="k-master-row k-table-row" role="row">
                                         <td class="k-table-group-td k-group-cell k-table-td" style="left: 0px; right: 0px;"></td>
                                         <td class="k-hierarchy-cell k-table-td">
-                                            <span class="k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-plus">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                                 </svg>
@@ -203,7 +203,7 @@
                                     <tr class="k-master-row k-table-row k-table-alt-row" role="row">
                                         <td class="k-table-group-td k-group-cell k-table-td" style="left: 0px; right: 0px;"></td>
                                         <td class="k-hierarchy-cell k-table-td">
-                                            <span class="k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-plus">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                                 </svg>
@@ -219,7 +219,7 @@
                                     <tr class="k-table-group-row k-grouping-row k-table-row" role="row">
                                         <td colspan="8" class="k-table-td" style="left: 0px; right: 0px;">
                                             <p class="k-reset">
-                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M256 352 128 160h256z"></path>
                                                     </svg>
@@ -230,7 +230,7 @@
                                     <tr class="k-master-row k-table-row" role="row">
                                         <td class="k-table-group-td k-group-cell k-table-td" style="left: 0px; right: 0px;"></td>
                                         <td class="k-hierarchy-cell k-table-td">
-                                            <span class="k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-plus">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                                 </svg>
@@ -246,7 +246,7 @@
                                     <tr class="k-master-row k-table-row k-table-alt-row" role="row">
                                         <td class="k-table-group-td k-group-cell k-table-td" style="left: 0px; right: 0px;"></td>
                                         <td class="k-hierarchy-cell k-table-td">
-                                            <span class="k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-plus">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                                 </svg>
