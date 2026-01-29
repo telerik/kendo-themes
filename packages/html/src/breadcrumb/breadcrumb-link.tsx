@@ -34,12 +34,17 @@ export const BreadcrumbLink = (
         ...other
     } = props;
 
+    type BreadcrumbChildProps = {
+        text?: React.ReactNode;
+        children?: React.ReactNode;
+    };
+
     const hasTextContent = (node: React.ReactNode): boolean => {
         if (typeof node === 'string' || typeof node === 'number') {
             return true;
         }
 
-        if (React.isValidElement(node)) {
+        if (React.isValidElement<BreadcrumbChildProps>(node)) {
             if (node.type === BreadcrumbItemText) {
                 return true;
             }
@@ -55,7 +60,7 @@ export const BreadcrumbLink = (
     };
 
     const hasImageElement = (node: React.ReactNode): boolean => {
-        if (React.isValidElement(node)) {
+        if (React.isValidElement<BreadcrumbChildProps>(node)) {
             if (node.type === 'img') {
                 return true;
             }
@@ -67,14 +72,14 @@ export const BreadcrumbLink = (
     };
 
     const applyAltToImg = (node: React.ReactNode, altText: string): React.ReactNode => {
-        if (!React.isValidElement(node)) {
+        if (!React.isValidElement<BreadcrumbChildProps>(node)) {
             return node;
         }
 
         if (node.type === 'img') {
-            const imgProps = node.props as React.ImgHTMLAttributes<HTMLImageElement>;
-            if (imgProps.alt == null || imgProps.alt === '') {
-                return React.cloneElement(node, { alt: altText });
+            const imgElement = node as React.ReactElement<React.ImgHTMLAttributes<HTMLImageElement>>;
+            if (imgElement.props.alt == null || imgElement.props.alt === '') {
+                return React.cloneElement(imgElement, { alt: altText });
             }
         }
 

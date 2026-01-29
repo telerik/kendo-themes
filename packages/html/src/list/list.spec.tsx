@@ -169,7 +169,7 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
             // Handle non-grouped list - direct ListItem children
             const listBoxChildren = role === 'listbox'
                 ? React.Children.map(children, (child) => {
-                    if (!React.isValidElement(child)) {
+                    if (!React.isValidElement<React.ComponentProps<typeof ListItem>>(child)) {
                         return child;
                     }
 

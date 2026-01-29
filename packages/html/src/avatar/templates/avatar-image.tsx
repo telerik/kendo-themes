@@ -9,9 +9,8 @@ type AvatarImageProps = KendoAvatarProps &
 	};
 
 const applyAltToImg = (child: React.ReactNode, altText: string) => {
-	if (React.isValidElement(child) && child.type === "img") {
-		const imgProps = child.props as React.ImgHTMLAttributes<HTMLImageElement>;
-		if (imgProps.alt == null || imgProps.alt === "") {
+	if (React.isValidElement<React.ImgHTMLAttributes<HTMLImageElement>>(child) && child.type === "img") {
+		if (child.props.alt == null || child.props.alt === "") {
 			return React.cloneElement(child, { alt: altText });
 		}
 	}
