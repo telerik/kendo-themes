@@ -72,7 +72,8 @@ export const ListView: KendoComponent<KendoListViewProps & KendoListViewState & 
         }
 
         currentItemIndex += 1;
-        return React.cloneElement(child, {
+        const listViewItem = child as React.ReactElement<React.HTMLAttributes<HTMLDivElement>>;
+        return React.cloneElement(listViewItem, {
             role: isSelectable ? 'option' : 'listitem',
             'aria-setsize': totalItems,
             'aria-posinset': currentItemIndex,
