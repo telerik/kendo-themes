@@ -63,9 +63,9 @@ export const MultiselecttreeDemo = (
   });
 
   return <MultiSelectTreeNormal
+    style={{ width: "300px" }}
     {...other}
     {...additionalProps}
-    style={{ width: "300px" }}
     tags={<Chip size={other.size} text="Tables & Chairs"
     />}
   />;

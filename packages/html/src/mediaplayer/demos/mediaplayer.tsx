@@ -11,7 +11,7 @@ const modifiers = [];
 
 export const MediaplayerDemo = (props: KendoMediaPlayerProps) => {
     return (
-        <MediaPlayerNormal style={{ height: "360px", width: "540px", ...sliderStyles }} {...props}>
+        <MediaPlayerNormal  {...props} style={{ height: "360px", width: "540px", ...sliderStyles }}>
             <div className="k-bg-primary-subtle" style={{ width: "100%", height: "100%" }} />
         </MediaPlayerNormal>
     );

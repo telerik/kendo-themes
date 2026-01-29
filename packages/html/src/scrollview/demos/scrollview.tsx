@@ -62,10 +62,10 @@ export const ScrollviewDemo = (
       return (
         <ScrollViewNormal
           className="k-bg-primary-subtle"
-          style={{ width: '467px', height: '307px' }}
           {...other}
           {...additionalProps}
           mode={variant}
+          style={{ width: '467px', height: '307px' }}
         />
       );
     case 'normal':
@@ -73,9 +73,9 @@ export const ScrollviewDemo = (
       return (
         <ScrollViewNormal
           className="k-bg-primary-subtle"
-          style={{ width: '467px', height: '307px' }}
           {...other}
           {...additionalProps}
+          style={{ width: '467px', height: '307px' }}
         />
       );
   }
