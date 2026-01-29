@@ -4,6 +4,7 @@ import { IconButton } from '../../button';
 
 export const SmartBoxNormal = (props) =>
     <SmartBox {...props}
+        value="Smart box"
         separators={false}
         prefix={
             <>
