@@ -34,6 +34,7 @@
     .k-files-scroll {
         display: flex;
         flex-flow: row nowrap;
+        flex: 1;
         overflow-x: auto;
         scrollbar-width: none;
         white-space: nowrap;
