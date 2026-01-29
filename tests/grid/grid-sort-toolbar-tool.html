@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -29,9 +29,9 @@
         <span>No Sorting Applied</span>
         <section>
             <div class="k-grid-no-scrollbar k-grid">
-                <div class="k-grid-toolbar k-toolbar">
+                <div class="k-grid-toolbar k-toolbar" role="toolbar">
                     <button class="k-toolbar-button  k-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
                             </svg>
@@ -39,7 +39,7 @@
                         <span class="k-button-text">Filter</span>
                     </button>
                     <button class="k-toolbar-button  k-button k-selected">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrows-swap">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrows-swap" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 160h-64v224h-32V160H96l80-128zm96 192V128h-32v224h-64l80 128 80-128z"></path>
                             </svg>
@@ -47,7 +47,7 @@
                         <span class="k-button-text">Sort</span>
                     </button>
                     <button class="k-toolbar-button  k-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-group">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-group" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M32 256h192v192H32zm0-32h192V32H32zm224 224h192V256H256zm0-416v192h192V32z"></path>
                             </svg>
@@ -55,7 +55,7 @@
                         <span class="k-button-text">Group</span>
                     </button>
                     <button class="k-toolbar-button  k-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-columns">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-columns" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M64 32h96v448H64zm128 448h96V32h-96zM320 32v448h96V32z"></path>
                             </svg>
@@ -139,51 +139,51 @@
                         </table>
                     </div>
                 </div>
-                <div class="k-grid-pager k-pager k-pager-responsive">
+                <div class="k-grid-pager k-pager k-pager-responsive" role="application" aria-roledescription="pager" aria-keyshortcuts="Enter ArrowRight ArrowLeft" aria-label="Page 1 of 6">
                     <div class="k-pager-numbers-wrap">
-                        <button class="k-pager-nav k-pager-first k-button k-button-flat k-disabled k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left">
+                        <button class="k-pager-nav k-pager-first k-button k-button-flat k-disabled k-icon-button" title="Go to the first page" aria-label="Go to the first page" disabled="">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M352 384 160 256l192-128zM128 128v256h32V128z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-pager-nav k-button k-button-flat k-disabled k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left">
+                        <button class="k-pager-nav k-button k-button-flat k-disabled k-icon-button" title="Go to the previous page" aria-label="Go to the previous page" disabled="">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="m160 256 192-128v256z"></path>
                                 </svg>
                             </span>
                         </button>
                         <div class="k-pager-numbers">
-                            <button class="k-button k-button-flat k-button-primary k-selected">
+                            <button aria-label="Page 1" aria-current="page" class="k-button k-button-flat k-button-primary k-selected">
                                 <span class="k-button-text">1</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button aria-label="Page 2" class="k-button k-button-flat k-button-primary">
                                 <span class="k-button-text">2</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button aria-label="Page 3" class="k-button k-button-flat k-button-primary">
                                 <span class="k-button-text">3</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button aria-label="Page 4" class="k-button k-button-flat k-button-primary">
                                 <span class="k-button-text">4</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button aria-label="Page 5" class="k-button k-button-flat k-button-primary">
                                 <span class="k-button-text">5</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button aria-label="Page 6" class="k-button k-button-flat k-button-primary">
                                 <span class="k-button-text">6</span>
                             </button>
                         </div>
-                        <button class="k-pager-nav k-button k-button-flat k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right">
+                        <button class="k-pager-nav k-button k-button-flat k-icon-button" title="Go to the next page" aria-label="Go to the next page">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M352 256 160 384V128z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-pager-nav k-pager-last k-button k-button-flat k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-right">
+                        <button class="k-pager-nav k-pager-last k-button k-button-flat k-icon-button" title="Go to the last page" aria-label="Go to the last page">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="m128 128 192 128-192 128zm224 256V128h-32v256z"></path>
                                 </svg>
@@ -191,12 +191,12 @@
                         </button>
                     </div>
                     <span class="k-pager-sizes">
-                        <span class="k-dropdownlist k-picker">
-                            <span class="k-input-inner">
+                        <span aria-label="DropdownList" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                            <span id="dropdownlist-value" class="k-input-inner">
                                 <span class="k-input-value-text">3</span>
                             </span>
-                            <button class="k-input-button k-button k-icon-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                            <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M256 352 128 160h256z"></path>
                                     </svg>
@@ -218,8 +218,8 @@
                                 <div class="k-columnmenu-item">Header Name 4</div>
                             </div>
                             <div class="k-actions k-actions-stretched k-actions-horizontal k-column-menu-footer">
-                                <button class="k-button k-disabled">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                <button disabled="" class="k-button k-disabled">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                         </svg>
@@ -235,9 +235,9 @@
         <span>Single Column Sorting</span>
         <section>
             <div class="k-grid-no-scrollbar k-grid">
-                <div class="k-grid-toolbar k-toolbar">
+                <div class="k-grid-toolbar k-toolbar" role="toolbar">
                     <button class="k-toolbar-button  k-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
                             </svg>
@@ -246,17 +246,17 @@
                     </button>
                     <div class="k-badge-container">
                         <button class="k-button k-selected">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrows-swap">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrows-swap" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 160h-64v224h-32V160H96l80-128zm96 192V128h-32v224h-64l80 128 80-128z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Sort</span>
                         </button>
-                        <span class="k-badge k-rounded-full k-badge-edge k-top-end k-badge-border-cutout"></span>
+                        <span aria-hidden="true" class="k-badge k-rounded-full k-badge-edge k-top-end k-badge-border-cutout"></span>
                     </div>
                     <button class="k-toolbar-button  k-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-group">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-group" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M32 256h192v192H32zm0-32h192V32H32zm224 224h192V256H256zm0-416v192h192V32z"></path>
                             </svg>
@@ -264,7 +264,7 @@
                         <span class="k-button-text">Group</span>
                     </button>
                     <button class="k-toolbar-button  k-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-columns">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-columns" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M64 32h96v448H64zm128 448h96V32h-96zM320 32v448h96V32z"></path>
                             </svg>
@@ -302,7 +302,7 @@
                                             <span class="k-link">
                                                 <span class="k-column-title">Header Name 3</span>
                                                 <span class="k-sort-icon">
-                                                    <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
+                                                    <span class="k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
                                                         </svg>
@@ -355,51 +355,51 @@
                         </table>
                     </div>
                 </div>
-                <div class="k-grid-pager k-pager k-pager-responsive">
+                <div class="k-grid-pager k-pager k-pager-responsive" role="application" aria-roledescription="pager" aria-keyshortcuts="Enter ArrowRight ArrowLeft" aria-label="Page 1 of 6">
                     <div class="k-pager-numbers-wrap">
-                        <button class="k-pager-nav k-pager-first k-button k-button-flat k-disabled k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left">
+                        <button class="k-pager-nav k-pager-first k-button k-button-flat k-disabled k-icon-button" title="Go to the first page" aria-label="Go to the first page" disabled="">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M352 384 160 256l192-128zM128 128v256h32V128z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-pager-nav k-button k-button-flat k-disabled k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left">
+                        <button class="k-pager-nav k-button k-button-flat k-disabled k-icon-button" title="Go to the previous page" aria-label="Go to the previous page" disabled="">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="m160 256 192-128v256z"></path>
                                 </svg>
                             </span>
                         </button>
                         <div class="k-pager-numbers">
-                            <button class="k-button k-button-flat k-button-primary k-selected">
+                            <button aria-label="Page 1" aria-current="page" class="k-button k-button-flat k-button-primary k-selected">
                                 <span class="k-button-text">1</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button aria-label="Page 2" class="k-button k-button-flat k-button-primary">
                                 <span class="k-button-text">2</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button aria-label="Page 3" class="k-button k-button-flat k-button-primary">
                                 <span class="k-button-text">3</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button aria-label="Page 4" class="k-button k-button-flat k-button-primary">
                                 <span class="k-button-text">4</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button aria-label="Page 5" class="k-button k-button-flat k-button-primary">
                                 <span class="k-button-text">5</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button aria-label="Page 6" class="k-button k-button-flat k-button-primary">
                                 <span class="k-button-text">6</span>
                             </button>
                         </div>
-                        <button class="k-pager-nav k-button k-button-flat k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right">
+                        <button class="k-pager-nav k-button k-button-flat k-icon-button" title="Go to the next page" aria-label="Go to the next page">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M352 256 160 384V128z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-pager-nav k-pager-last k-button k-button-flat k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-right">
+                        <button class="k-pager-nav k-pager-last k-button k-button-flat k-icon-button" title="Go to the last page" aria-label="Go to the last page">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="m128 128 192 128-192 128zm224 256V128h-32v256z"></path>
                                 </svg>
@@ -407,12 +407,12 @@
                         </button>
                     </div>
                     <span class="k-pager-sizes">
-                        <span class="k-dropdownlist k-picker">
-                            <span class="k-input-inner">
+                        <span aria-label="DropdownList" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                            <span id="dropdownlist-value" class="k-input-inner">
                                 <span class="k-input-value-text">3</span>
                             </span>
-                            <button class="k-input-button k-button k-icon-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                            <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M256 352 128 160h256z"></path>
                                     </svg>
@@ -431,7 +431,7 @@
                                 <div class="k-columnmenu-item">Header Name 1</div>
                                 <div class="k-columnmenu-item">Header Name 2</div>
                                 <div class="k-columnmenu-item">Header Name 3<span class="k-columnmenu-indicators">
-                                        <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
+                                        <span class="k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
                                             </svg>
@@ -442,7 +442,7 @@
                             </div>
                             <div class="k-actions k-actions-stretched k-actions-horizontal k-column-menu-footer">
                                 <button class="k-button">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                         </svg>
@@ -458,9 +458,9 @@
         <span>Multi Column Sorting</span>
         <section>
             <div class="k-grid-no-scrollbar k-grid">
-                <div class="k-grid-toolbar k-toolbar">
+                <div class="k-grid-toolbar k-toolbar" role="toolbar">
                     <button class="k-toolbar-button  k-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
                             </svg>
@@ -469,17 +469,17 @@
                     </button>
                     <div class="k-badge-container">
                         <button class="k-button k-selected">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrows-swap">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrows-swap" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 160h-64v224h-32V160H96l80-128zm96 192V128h-32v224h-64l80 128 80-128z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Sort</span>
                         </button>
-                        <span class="k-badge k-rounded-full k-badge-edge k-top-end k-badge-border-cutout"></span>
+                        <span aria-hidden="true" class="k-badge k-rounded-full k-badge-edge k-top-end k-badge-border-cutout"></span>
                     </div>
                     <button class="k-toolbar-button  k-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-group">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-group" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M32 256h192v192H32zm0-32h192V32H32zm224 224h192V256H256zm0-416v192h192V32z"></path>
                             </svg>
@@ -487,7 +487,7 @@
                         <span class="k-button-text">Group</span>
                     </button>
                     <button class="k-toolbar-button  k-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-columns">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-columns" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M64 32h96v448H64zm128 448h96V32h-96zM320 32v448h96V32z"></path>
                             </svg>
@@ -525,7 +525,7 @@
                                             <span class="k-link">
                                                 <span class="k-column-title">Header Name 3</span>
                                                 <span class="k-sort-icon">
-                                                    <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
+                                                    <span class="k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
                                                         </svg>
@@ -540,7 +540,7 @@
                                             <span class="k-link">
                                                 <span class="k-column-title">Header Name 4</span>
                                                 <span class="k-sort-icon">
-                                                    <span class="k-icon k-svg-icon k-svg-i-sort-desc-small">
+                                                    <span class="k-icon k-svg-icon k-svg-i-sort-desc-small" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M352 288 240 416 128 288h96V64h32v224z"></path>
                                                         </svg>
@@ -587,51 +587,51 @@
                         </table>
                     </div>
                 </div>
-                <div class="k-grid-pager k-pager k-pager-responsive">
+                <div class="k-grid-pager k-pager k-pager-responsive" role="application" aria-roledescription="pager" aria-keyshortcuts="Enter ArrowRight ArrowLeft" aria-label="Page 1 of 6">
                     <div class="k-pager-numbers-wrap">
-                        <button class="k-pager-nav k-pager-first k-button k-button-flat k-disabled k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left">
+                        <button class="k-pager-nav k-pager-first k-button k-button-flat k-disabled k-icon-button" title="Go to the first page" aria-label="Go to the first page" disabled="">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M352 384 160 256l192-128zM128 128v256h32V128z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-pager-nav k-button k-button-flat k-disabled k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left">
+                        <button class="k-pager-nav k-button k-button-flat k-disabled k-icon-button" title="Go to the previous page" aria-label="Go to the previous page" disabled="">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="m160 256 192-128v256z"></path>
                                 </svg>
                             </span>
                         </button>
                         <div class="k-pager-numbers">
-                            <button class="k-button k-button-flat k-button-primary k-selected">
+                            <button aria-label="Page 1" aria-current="page" class="k-button k-button-flat k-button-primary k-selected">
                                 <span class="k-button-text">1</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button aria-label="Page 2" class="k-button k-button-flat k-button-primary">
                                 <span class="k-button-text">2</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button aria-label="Page 3" class="k-button k-button-flat k-button-primary">
                                 <span class="k-button-text">3</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button aria-label="Page 4" class="k-button k-button-flat k-button-primary">
                                 <span class="k-button-text">4</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button aria-label="Page 5" class="k-button k-button-flat k-button-primary">
                                 <span class="k-button-text">5</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button aria-label="Page 6" class="k-button k-button-flat k-button-primary">
                                 <span class="k-button-text">6</span>
                             </button>
                         </div>
-                        <button class="k-pager-nav k-button k-button-flat k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right">
+                        <button class="k-pager-nav k-button k-button-flat k-icon-button" title="Go to the next page" aria-label="Go to the next page">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M352 256 160 384V128z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-pager-nav k-pager-last k-button k-button-flat k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-right">
+                        <button class="k-pager-nav k-pager-last k-button k-button-flat k-icon-button" title="Go to the last page" aria-label="Go to the last page">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="m128 128 192 128-192 128zm224 256V128h-32v256z"></path>
                                 </svg>
@@ -639,12 +639,12 @@
                         </button>
                     </div>
                     <span class="k-pager-sizes">
-                        <span class="k-dropdownlist k-picker">
-                            <span class="k-input-inner">
+                        <span aria-label="DropdownList" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                            <span id="dropdownlist-value" class="k-input-inner">
                                 <span class="k-input-value-text">3</span>
                             </span>
-                            <button class="k-input-button k-button k-icon-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                            <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M256 352 128 160h256z"></path>
                                     </svg>
@@ -663,7 +663,7 @@
                                 <div class="k-columnmenu-item">Header Name 1</div>
                                 <div class="k-columnmenu-item">Header Name 2</div>
                                 <div class="k-columnmenu-item">Header Name 3<span class="k-columnmenu-indicators">
-                                        <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
+                                        <span class="k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
                                             </svg>
@@ -672,7 +672,7 @@
                                     </span>
                                 </div>
                                 <div class="k-columnmenu-item">Header Name 4<span class="k-columnmenu-indicators">
-                                        <span class="k-icon k-svg-icon k-svg-i-sort-desc-small">
+                                        <span class="k-icon k-svg-icon k-svg-i-sort-desc-small" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M352 288 240 416 128 288h96V64h32v224z"></path>
                                             </svg>
@@ -683,7 +683,7 @@
                             </div>
                             <div class="k-actions k-actions-stretched k-actions-horizontal k-column-menu-footer">
                                 <button class="k-button">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                         </svg>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -12,8 +12,8 @@
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid">
         <section>
-            <div id="treelist" class="k-treelist k-grid">
-                <div class="k-grid-aria-root">
+            <div class="k-treelist k-grid">
+                <div class="k-grid-aria-root" role="treegrid" id="treelist">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
                             <table class="k-grid-header-table k-table">
@@ -61,7 +61,7 @@
                                 <tbody class="k-table-tbody">
                                     <tr class="k-table-row">
                                         <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M256 352 128 160h256z"></path>
                                                 </svg>
@@ -72,10 +72,8 @@
                                     </tr>
                                     <tr class="k-table-row k-table-alt-row">
                                         <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                            </span>
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M352 256 160 384V128z"></path>
                                                 </svg>
@@ -86,10 +84,8 @@
                                     </tr>
                                     <tr class="k-table-row">
                                         <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                            </span>
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M352 256 160 384V128z"></path>
                                                 </svg>
@@ -100,10 +96,8 @@
                                     </tr>
                                     <tr class="k-table-row k-table-alt-row">
                                         <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                            </span>
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M256 352 128 160h256z"></path>
                                                 </svg>
@@ -114,13 +108,9 @@
                                     </tr>
                                     <tr class="k-table-row">
                                         <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                            </span>
-                                            <span class="k-treelist-toggle k-icon k-svg-icon">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                            </span>
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M352 256 160 384V128z"></path>
                                                 </svg>
@@ -131,25 +121,17 @@
                                     </tr>
                                     <tr class="k-footer-template k-table-row">
                                         <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                            </span>
-                                            <span class="k-treelist-toggle k-icon k-svg-icon">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                            </span>
-                                            <span class="k-treelist-toggle k-icon k-svg-icon">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                            </span>7 employee(s)
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>7 employee(s)
                                         </td>
                                         <td class="k-table-td"></td>
                                         <td class="k-table-td">Last employee hired on July 30, 2015</td>
                                     </tr>
                                     <tr class="k-table-row k-table-alt-row">
                                         <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                            </span>
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M352 256 160 384V128z"></path>
                                                 </svg>
@@ -160,10 +142,8 @@
                                     </tr>
                                     <tr class="k-table-row">
                                         <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                            </span>
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M352 256 160 384V128z"></path>
                                                 </svg>
@@ -174,21 +154,15 @@
                                     </tr>
                                     <tr class="k-footer-template k-table-row">
                                         <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                            </span>
-                                            <span class="k-treelist-toggle k-icon k-svg-icon">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                            </span>98 employee(s)
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>98 employee(s)
                                         </td>
                                         <td class="k-table-td"></td>
                                         <td class="k-table-td">Last employee hired on August 17, 2015</td>
                                     </tr>
                                     <tr class="k-footer-template k-table-row">
                                         <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                            </span>99 employee(s)
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>99 employee(s)
                                         </td>
                                         <td class="k-table-td"></td>
                                         <td class="k-table-td">Last employee hired on August 17, 2015</td>
@@ -202,7 +176,7 @@
         </section>
         <section>
             <span>jQuery</span>
-            <div id="treelist" class="k-treelist k-grid-display-block k-grid" style="height: 200px;">
+            <div class="k-treelist k-grid-display-block k-grid" style="height: 200px;">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
                         <table class="k-grid-header-table k-table">
@@ -250,7 +224,7 @@
                             <tbody class="k-table-tbody">
                                 <tr class="k-table-row">
                                     <td class="k-table-td" style="white-space: nowrap;">
-                                        <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                        <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M256 352 128 160h256z"></path>
                                             </svg>
@@ -261,9 +235,7 @@
                                 </tr>
                                 <tr class="k-footer-template k-table-row">
                                     <td class="k-focus k-table-td">
-                                        <span class="k-treelist-toggle k-icon k-svg-icon">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                        </span>99 employee(s)
+                                        <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>99 employee(s)
                                     </td>
                                     <td class="k-table-td"></td>
                                     <td class="k-table-td">Last employee hired on August 17, 2015</td>
@@ -276,8 +248,8 @@
         </section>
         <section>
             <span>Angular</span>
-            <div id="treelist" class="k-treelist k-grid" style="height: 200px;">
-                <div class="k-grid-aria-root">
+            <div class="k-treelist k-grid" style="height: 200px;">
+                <div class="k-grid-aria-root" role="treegrid" id="treelist">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
                             <table class="k-grid-header-table k-table">
@@ -327,7 +299,7 @@
                                 <tbody class="k-table-tbody">
                                     <tr class="k-table-row">
                                         <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M256 352 128 160h256z"></path>
                                                 </svg>
@@ -338,9 +310,7 @@
                                     </tr>
                                     <tr class="k-footer k-table-row">
                                         <td class="k-focus k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                            </span>43 employee(s)
+                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>43 employee(s)
                                         </td>
                                         <td class="k-table-td"></td>
                                         <td class="k-table-td">Last employee hired on 10/21/2019</td>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -13,15 +13,15 @@
     <div id="test-area" class="k-d-grid k-grid-cols-2">
         <span class="k-colspan-all k-col-span-full">Toolbar Hidden Buttons Scroll Start</span>
         <section class="k-colspan-all k-col-span-full">
-            <div class="k-toolbar k-toolbar-scrollable k-toolbar-scrollable-overlay k-toolbar-scrollable-start">
+            <div class="k-toolbar k-toolbar-scrollable k-toolbar-scrollable-overlay k-toolbar-scrollable-start" role="toolbar">
                 <div class="k-toolbar-items k-toolbar-items-scroll">
                     <button class="k-toolbar-button  k-button">
                         <span class="k-button-text">Button</span>
                     </button>
-                    <button class="k-toolbar-menu-button  k-menu-button k-button">
+                    <button class="k-toolbar-menu-button  k-menu-button k-button" aria-label="Menu button, Menu button" aria-expanded="false" aria-controls="menu-button-menu">
                         <span class="k-button-text">Menu button</span>
                         <span class="k-menu-button-arrow k-button-arrow">
-                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
                                 </svg>
@@ -32,33 +32,33 @@
                         <button class="k-button">
                             <span class="k-button-text">Split button</span>
                         </button>
-                        <button class="k-split-button-arrow k-button k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <button class="k-split-button-arrow k-menu-button k-button k-icon-button" aria-label="Split button menu, Split button" aria-expanded="false" aria-controls="split-button-menu">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
                                 </svg>
                             </span>
                         </button>
                     </div>
-                    <div class="k-toolbar-button-group  k-button-group">
-                        <button class="k-group-start k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left">
+                    <div class="k-toolbar-button-group  k-button-group" role="group">
+                        <button class="k-group-start k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M448 96H64V64h384zm-96 32H64v32h288zm96 64H64v32h384zm-96 64H64v32h288zm96 64H64v32h384zm-96 64H64v32h288z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Left</span>
                         </button>
-                        <button class="k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center">
+                        <button class="k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M448 96H64V64h384zm-64 64H128v-32h256zm64 64H64v-32h384zm-64 64H128v-32h256zm64 64H64v-32h384zm-64 64H128v-32h256z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Center</span>
                         </button>
-                        <button class="k-group-end k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right">
+                        <button class="k-group-end k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M64 192h384v32H64zm384-96V64H64v32zm-288 64h288v-32H160zM64 320v32h384v-32zm96-32h288v-32H160zm0 96v32h288v-32z"></path>
                                 </svg>
@@ -69,10 +69,10 @@
                     <button class="k-toolbar-button  k-button">
                         <span class="k-button-text">Button</span>
                     </button>
-                    <button class="k-toolbar-menu-button  k-menu-button k-button">
+                    <button class="k-toolbar-menu-button  k-menu-button k-button" aria-label="Menu button, Menu button" aria-expanded="false" aria-controls="menu-button-menu">
                         <span class="k-button-text">Menu button</span>
                         <span class="k-menu-button-arrow k-button-arrow">
-                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
                                 </svg>
@@ -83,33 +83,33 @@
                         <button class="k-button">
                             <span class="k-button-text">Split button</span>
                         </button>
-                        <button class="k-split-button-arrow k-button k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <button class="k-split-button-arrow k-menu-button k-button k-icon-button" aria-label="Split button menu, Split button" aria-expanded="false" aria-controls="split-button-menu">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
                                 </svg>
                             </span>
                         </button>
                     </div>
-                    <div class="k-toolbar-button-group  k-button-group">
-                        <button class="k-group-start k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left">
+                    <div class="k-toolbar-button-group  k-button-group" role="group">
+                        <button class="k-group-start k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M448 96H64V64h384zm-96 32H64v32h288zm96 64H64v32h384zm-96 64H64v32h288zm96 64H64v32h384zm-96 64H64v32h288z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Left</span>
                         </button>
-                        <button class="k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center">
+                        <button class="k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M448 96H64V64h384zm-64 64H128v-32h256zm64 64H64v-32h384zm-64 64H128v-32h256zm64 64H64v-32h384zm-64 64H128v-32h256z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Center</span>
                         </button>
-                        <button class="k-group-end k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right">
+                        <button class="k-group-end k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M64 192h384v32H64zm384-96V64H64v32zm-288 64h288v-32H160zM64 320v32h384v-32zm96-32h288v-32H160zm0 96v32h288v-32z"></path>
                                 </svg>
@@ -122,15 +122,15 @@
         </section>
         <span class="k-colspan-all k-col-span-full">Toolbar Hidden Buttons Scroll End</span>
         <section class="k-colspan-all k-col-span-full">
-            <div class="k-toolbar k-toolbar-scrollable k-toolbar-scrollable-overlay k-toolbar-scrollable-end">
+            <div class="k-toolbar k-toolbar-scrollable k-toolbar-scrollable-overlay k-toolbar-scrollable-end" role="toolbar">
                 <div class="k-toolbar-items k-toolbar-items-scroll">
                     <button class="k-toolbar-button  k-button">
                         <span class="k-button-text">Button</span>
                     </button>
-                    <button class="k-toolbar-menu-button  k-menu-button k-button">
+                    <button class="k-toolbar-menu-button  k-menu-button k-button" aria-label="Menu button, Menu button" aria-expanded="false" aria-controls="menu-button-menu">
                         <span class="k-button-text">Menu button</span>
                         <span class="k-menu-button-arrow k-button-arrow">
-                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
                                 </svg>
@@ -141,33 +141,33 @@
                         <button class="k-button">
                             <span class="k-button-text">Split button</span>
                         </button>
-                        <button class="k-split-button-arrow k-button k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <button class="k-split-button-arrow k-menu-button k-button k-icon-button" aria-label="Split button menu, Split button" aria-expanded="false" aria-controls="split-button-menu">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
                                 </svg>
                             </span>
                         </button>
                     </div>
-                    <div class="k-toolbar-button-group  k-button-group">
-                        <button class="k-group-start k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left">
+                    <div class="k-toolbar-button-group  k-button-group" role="group">
+                        <button class="k-group-start k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M448 96H64V64h384zm-96 32H64v32h288zm96 64H64v32h384zm-96 64H64v32h288zm96 64H64v32h384zm-96 64H64v32h288z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Left</span>
                         </button>
-                        <button class="k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center">
+                        <button class="k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M448 96H64V64h384zm-64 64H128v-32h256zm64 64H64v-32h384zm-64 64H128v-32h256zm64 64H64v-32h384zm-64 64H128v-32h256z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Center</span>
                         </button>
-                        <button class="k-group-end k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right">
+                        <button class="k-group-end k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M64 192h384v32H64zm384-96V64H64v32zm-288 64h288v-32H160zM64 320v32h384v-32zm96-32h288v-32H160zm0 96v32h288v-32z"></path>
                                 </svg>
@@ -178,10 +178,10 @@
                     <button class="k-toolbar-button  k-button">
                         <span class="k-button-text">Button</span>
                     </button>
-                    <button class="k-toolbar-menu-button  k-menu-button k-button">
+                    <button class="k-toolbar-menu-button  k-menu-button k-button" aria-label="Menu button, Menu button" aria-expanded="false" aria-controls="menu-button-menu">
                         <span class="k-button-text">Menu button</span>
                         <span class="k-menu-button-arrow k-button-arrow">
-                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
                                 </svg>
@@ -192,33 +192,33 @@
                         <button class="k-button">
                             <span class="k-button-text">Split button</span>
                         </button>
-                        <button class="k-split-button-arrow k-button k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <button class="k-split-button-arrow k-menu-button k-button k-icon-button" aria-label="Split button menu, Split button" aria-expanded="false" aria-controls="split-button-menu">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
                                 </svg>
                             </span>
                         </button>
                     </div>
-                    <div class="k-toolbar-button-group  k-button-group">
-                        <button class="k-group-start k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left">
+                    <div class="k-toolbar-button-group  k-button-group" role="group">
+                        <button class="k-group-start k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M448 96H64V64h384zm-96 32H64v32h288zm96 64H64v32h384zm-96 64H64v32h288zm96 64H64v32h384zm-96 64H64v32h288z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Left</span>
                         </button>
-                        <button class="k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center">
+                        <button class="k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M448 96H64V64h384zm-64 64H128v-32h256zm64 64H64v-32h384zm-64 64H128v-32h256zm64 64H64v-32h384zm-64 64H128v-32h256z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Center</span>
                         </button>
-                        <button class="k-group-end k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right">
+                        <button class="k-group-end k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M64 192h384v32H64zm384-96V64H64v32zm-288 64h288v-32H160zM64 320v32h384v-32zm96-32h288v-32H160zm0 96v32h288v-32z"></path>
                                 </svg>
@@ -231,15 +231,15 @@
         </section>
         <span class="k-colspan-all k-col-span-full">Toolbar Hidden Buttons Scroll Middle</span>
         <section class="k-colspan-all k-col-span-full">
-            <div class="k-toolbar k-toolbar-scrollable k-toolbar-scrollable-overlay">
+            <div class="k-toolbar k-toolbar-scrollable k-toolbar-scrollable-overlay" role="toolbar">
                 <div class="k-toolbar-items k-toolbar-items-scroll">
                     <button class="k-toolbar-button  k-button">
                         <span class="k-button-text">Button</span>
                     </button>
-                    <button class="k-toolbar-menu-button  k-menu-button k-button">
+                    <button class="k-toolbar-menu-button  k-menu-button k-button" aria-label="Menu button, Menu button" aria-expanded="false" aria-controls="menu-button-menu">
                         <span class="k-button-text">Menu button</span>
                         <span class="k-menu-button-arrow k-button-arrow">
-                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
                                 </svg>
@@ -250,33 +250,33 @@
                         <button class="k-button">
                             <span class="k-button-text">Split button</span>
                         </button>
-                        <button class="k-split-button-arrow k-button k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <button class="k-split-button-arrow k-menu-button k-button k-icon-button" aria-label="Split button menu, Split button" aria-expanded="false" aria-controls="split-button-menu">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
                                 </svg>
                             </span>
                         </button>
                     </div>
-                    <div class="k-toolbar-button-group  k-button-group">
-                        <button class="k-group-start k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left">
+                    <div class="k-toolbar-button-group  k-button-group" role="group">
+                        <button class="k-group-start k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M448 96H64V64h384zm-96 32H64v32h288zm96 64H64v32h384zm-96 64H64v32h288zm96 64H64v32h384zm-96 64H64v32h288z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Left</span>
                         </button>
-                        <button class="k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center">
+                        <button class="k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M448 96H64V64h384zm-64 64H128v-32h256zm64 64H64v-32h384zm-64 64H128v-32h256zm64 64H64v-32h384zm-64 64H128v-32h256z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Center</span>
                         </button>
-                        <button class="k-group-end k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right">
+                        <button class="k-group-end k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M64 192h384v32H64zm384-96V64H64v32zm-288 64h288v-32H160zM64 320v32h384v-32zm96-32h288v-32H160zm0 96v32h288v-32z"></path>
                                 </svg>
@@ -287,10 +287,10 @@
                     <button class="k-toolbar-button  k-button">
                         <span class="k-button-text">Button</span>
                     </button>
-                    <button class="k-toolbar-menu-button  k-menu-button k-button">
+                    <button class="k-toolbar-menu-button  k-menu-button k-button" aria-label="Menu button, Menu button" aria-expanded="false" aria-controls="menu-button-menu">
                         <span class="k-button-text">Menu button</span>
                         <span class="k-menu-button-arrow k-button-arrow">
-                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
                                 </svg>
@@ -301,33 +301,33 @@
                         <button class="k-button">
                             <span class="k-button-text">Split button</span>
                         </button>
-                        <button class="k-split-button-arrow k-button k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <button class="k-split-button-arrow k-menu-button k-button k-icon-button" aria-label="Split button menu, Split button" aria-expanded="false" aria-controls="split-button-menu">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
                                 </svg>
                             </span>
                         </button>
                     </div>
-                    <div class="k-toolbar-button-group  k-button-group">
-                        <button class="k-group-start k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left">
+                    <div class="k-toolbar-button-group  k-button-group" role="group">
+                        <button class="k-group-start k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M448 96H64V64h384zm-96 32H64v32h288zm96 64H64v32h384zm-96 64H64v32h288zm96 64H64v32h384zm-96 64H64v32h288z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Left</span>
                         </button>
-                        <button class="k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center">
+                        <button class="k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M448 96H64V64h384zm-64 64H128v-32h256zm64 64H64v-32h384zm-64 64H128v-32h256zm64 64H64v-32h384zm-64 64H128v-32h256z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Center</span>
                         </button>
-                        <button class="k-group-end k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right">
+                        <button class="k-group-end k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M64 192h384v32H64zm384-96V64H64v32zm-288 64h288v-32H160zM64 320v32h384v-32zm96-32h288v-32H160zm0 96v32h288v-32z"></path>
                                 </svg>
@@ -340,15 +340,15 @@
         </section>
         <span class="k-colspan-all k-col-span-full">Toolbar Hidden Buttons Scroll Middle RTL</span>
         <section class="k-colspan-all k-col-span-full" dir="rtl">
-            <div class="k-toolbar k-toolbar-scrollable k-toolbar-scrollable-overlay">
+            <div class="k-toolbar k-toolbar-scrollable k-toolbar-scrollable-overlay" role="toolbar">
                 <div class="k-toolbar-items k-toolbar-items-scroll">
                     <button class="k-toolbar-button  k-button">
                         <span class="k-button-text">Button</span>
                     </button>
-                    <button class="k-toolbar-menu-button  k-menu-button k-button">
+                    <button class="k-toolbar-menu-button  k-menu-button k-button" aria-label="Menu button, Menu button" aria-expanded="false" aria-controls="menu-button-menu">
                         <span class="k-button-text">Menu button</span>
                         <span class="k-menu-button-arrow k-button-arrow">
-                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
                                 </svg>
@@ -359,33 +359,33 @@
                         <button class="k-button">
                             <span class="k-button-text">Split button</span>
                         </button>
-                        <button class="k-split-button-arrow k-button k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <button class="k-split-button-arrow k-menu-button k-button k-icon-button" aria-label="Split button menu, Split button" aria-expanded="false" aria-controls="split-button-menu">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
                                 </svg>
                             </span>
                         </button>
                     </div>
-                    <div class="k-toolbar-button-group  k-button-group">
-                        <button class="k-group-start k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left">
+                    <div class="k-toolbar-button-group  k-button-group" role="group">
+                        <button class="k-group-start k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M448 96H64V64h384zm-96 32H64v32h288zm96 64H64v32h384zm-96 64H64v32h288zm96 64H64v32h384zm-96 64H64v32h288z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Left</span>
                         </button>
-                        <button class="k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center">
+                        <button class="k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M448 96H64V64h384zm-64 64H128v-32h256zm64 64H64v-32h384zm-64 64H128v-32h256zm64 64H64v-32h384zm-64 64H128v-32h256z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Center</span>
                         </button>
-                        <button class="k-group-end k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right">
+                        <button class="k-group-end k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M64 192h384v32H64zm384-96V64H64v32zm-288 64h288v-32H160zM64 320v32h384v-32zm96-32h288v-32H160zm0 96v32h288v-32z"></path>
                                 </svg>
@@ -396,10 +396,10 @@
                     <button class="k-toolbar-button  k-button">
                         <span class="k-button-text">Button</span>
                     </button>
-                    <button class="k-toolbar-menu-button  k-menu-button k-button">
+                    <button class="k-toolbar-menu-button  k-menu-button k-button" aria-label="Menu button, Menu button" aria-expanded="false" aria-controls="menu-button-menu">
                         <span class="k-button-text">Menu button</span>
                         <span class="k-menu-button-arrow k-button-arrow">
-                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
                                 </svg>
@@ -410,33 +410,33 @@
                         <button class="k-button">
                             <span class="k-button-text">Split button</span>
                         </button>
-                        <button class="k-split-button-arrow k-button k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                        <button class="k-split-button-arrow k-menu-button k-button k-icon-button" aria-label="Split button menu, Split button" aria-expanded="false" aria-controls="split-button-menu">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
                                 </svg>
                             </span>
                         </button>
                     </div>
-                    <div class="k-toolbar-button-group  k-button-group">
-                        <button class="k-group-start k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left">
+                    <div class="k-toolbar-button-group  k-button-group" role="group">
+                        <button class="k-group-start k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M448 96H64V64h384zm-96 32H64v32h288zm96 64H64v32h384zm-96 64H64v32h288zm96 64H64v32h384zm-96 64H64v32h288z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Left</span>
                         </button>
-                        <button class="k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center">
+                        <button class="k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M448 96H64V64h384zm-64 64H128v-32h256zm64 64H64v-32h384zm-64 64H128v-32h256zm64 64H64v-32h384zm-64 64H128v-32h256z"></path>
                                 </svg>
                             </span>
                             <span class="k-button-text">Center</span>
                         </button>
-                        <button class="k-group-end k-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right">
+                        <button class="k-group-end k-button" aria-pressed="false">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M64 192h384v32H64zm384-96V64H64v32zm-288 64h288v-32H160zM64 320v32h384v-32zm96-32h288v-32H160zm0 96v32h288v-32z"></path>
                                 </svg>

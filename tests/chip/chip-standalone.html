@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
+        <span>
+            <small>Standalone Chips (not in ChipList)</small>
+        </span>
+        <span></span>
+        <span></span>
+        <span>Normal (unselected)</span>
+        <span>
+            <div role="button" aria-pressed="false" class="k-chip">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">Standalone Chip</span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div role="button" aria-pressed="false" class="k-chip k-chip-info">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">Info Chip</span>
+                </span>
+            </div>
+        </span>
+        <span>Selected</span>
+        <span>
+            <div role="button" aria-pressed="true" class="k-chip k-selected">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">Selected Chip</span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div role="button" aria-pressed="true" class="k-chip k-chip-info k-selected">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">Selected Info</span>
+                </span>
+            </div>
+        </span>
+        <span>With Icon</span>
+        <span>
+            <div role="button" aria-pressed="false" class="k-chip">
+                <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-star" aria-hidden="true">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                    </svg>
+                </span>
+                <span class="k-chip-content">
+                    <span class="k-chip-label">Icon Chip</span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div role="button" aria-pressed="true" class="k-chip k-selected">
+                <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-star" aria-hidden="true">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                    </svg>
+                </span>
+                <span class="k-chip-content">
+                    <span class="k-chip-label">Selected Icon</span>
+                </span>
+            </div>
+        </span>
+        <span>Disabled States</span>
+        <span>
+            <div role="button" aria-pressed="false" class="k-chip k-disabled">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">Disabled</span>
+                </span>
+            </div>
+        </span>
+        <span>
+            <div role="button" aria-pressed="true" class="k-chip k-selected k-disabled">
+                <span class="k-chip-content">
+                    <span class="k-chip-label">Disabled Selected</span>
+                </span>
+            </div>
+        </span>
+    </div>
+</body>
+</html>

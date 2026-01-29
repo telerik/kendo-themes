@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -18,18 +18,18 @@
     </style>
     <div id="test-area">
         <div class="k-gantt">
-            <div class="k-gantt-header k-gantt-toolbar k-toolbar">
+            <div class="k-gantt-header k-gantt-toolbar k-toolbar" role="toolbar">
                 <span class="k-spacer"></span>
                 <span class="k-gantt-views">
                     <div class="k-gantt-views-wrapper">
-                        <div class="k-gantt-views k-button-group">
-                            <button class="k-group-start k-button">
+                        <div class="k-gantt-views k-button-group" role="group">
+                            <button class="k-group-start k-button" aria-pressed="false">
                                 <span class="k-button-text">Day</span>
                             </button>
-                            <button class="k-button k-selected">
+                            <button aria-pressed="true" class="k-button k-selected">
                                 <span class="k-button-text">Week</span>
                             </button>
-                            <button class="k-group-end k-button">
+                            <button class="k-group-end k-button" aria-pressed="false">
                                 <span class="k-button-text">Month</span>
                             </button>
                         </div>
@@ -125,7 +125,7 @@
                         <tbody class="k-table-tbody">
                             <tr class="k-master-row k-table-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M256 352 128 160h256z"></path>
                                         </svg>
@@ -144,12 +144,8 @@
                             </tr>
                             <tr class="k-master-row k-table-row k-table-alt-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>18
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>18
                                 </td>
                                 <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 100px; right: 0px; border-right-width: 1px;">Project Kickoff</td>
                                 <td class="k-table-td">
@@ -162,10 +158,8 @@
                             </tr>
                             <tr class="k-master-row k-table-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M256 352 128 160h256z"></path>
                                         </svg>
@@ -184,15 +178,9 @@
                             </tr>
                             <tr class="k-master-row k-table-row k-table-alt-row" style="height: 40px;">
                                 <td colspan="1" class=" k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>19
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>19
                                 </td>
                                 <td colspan="1" class=" k-grid-content-sticky k-table-td" style="left: 100px; right: 0px; border-right-width: 1px;">Validation with Customers</td>
                                 <td class="k-table-td">
@@ -201,7 +189,7 @@
                                         <div class="k-task-content">Validation with Customers</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <span class="k-icon k-svg-icon k-svg-i-x">
+                                                <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                                     </svg>
@@ -218,15 +206,9 @@
                             </tr>
                             <tr class="k-master-row k-table-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>20
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>20
                                 </td>
                                 <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 100px; right: 0px; border-right-width: 1px;">Market Research</td>
                                 <td class="k-table-td">
@@ -235,7 +217,7 @@
                                         <div class="k-task-content">Market Research</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <span class="k-icon k-svg-icon k-svg-i-x">
+                                                <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                                     </svg>
@@ -252,15 +234,9 @@
                             </tr>
                             <tr class="k-master-row k-table-row k-table-alt-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>39
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>39
                                 </td>
                                 <td colspan="1" class=" k-grid-content-sticky k-table-td" style="left: 100px; right: 0px; border-right-width: 1px;">Functional and Technical Specification</td>
                                 <td class="k-table-td">
@@ -269,7 +245,7 @@
                                         <div class="k-task-content">Functional and Technical Specification</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <span class="k-icon k-svg-icon k-svg-i-x">
+                                                <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                                     </svg>
@@ -286,10 +262,8 @@
                             </tr>
                             <tr class="k-master-row k-table-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M256 352 128 160h256z"></path>
                                         </svg>
@@ -308,15 +282,9 @@
                             </tr>
                             <tr class="k-master-row k-table-row k-table-alt-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>22
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>22
                                 </td>
                                 <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 100px; right: 0px; border-right-width: 1px;">UI Design</td>
                                 <td class="k-table-td">
@@ -325,7 +293,7 @@
                                         <div class="k-task-content">UI Design</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <span class="k-icon k-svg-icon k-svg-i-x">
+                                                <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                                     </svg>
@@ -342,15 +310,9 @@
                             </tr>
                             <tr class="k-master-row k-table-row k-selected" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>23
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>23
                                 </td>
                                 <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 100px; right: 0px; border-right-width: 1px;">HTML Prototype</td>
                                 <td class="k-table-td">
@@ -359,7 +321,7 @@
                                         <div class="k-task-content">HTML Prototype</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <span class="k-icon k-svg-icon k-svg-i-x">
+                                                <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                                     </svg>
@@ -376,10 +338,8 @@
                             </tr>
                             <tr class="k-master-row k-table-row k-table-alt-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M256 352 128 160h256z"></path>
                                         </svg>
@@ -398,15 +358,9 @@
                             </tr>
                             <tr class="k-master-row k-table-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>24
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>24
                                 </td>
                                 <td colspan="1" class=" k-grid-content-sticky k-table-td" style="left: 100px; right: 0px; border-right-width: 1px;">Prototype</td>
                                 <td class="k-table-td">
@@ -415,7 +369,7 @@
                                         <div class="k-task-content">Prototype</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <span class="k-icon k-svg-icon k-svg-i-x">
+                                                <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                                     </svg>
@@ -432,15 +386,9 @@
                             </tr>
                             <tr class="k-master-row k-table-row k-table-alt-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>26
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>26
                                 </td>
                                 <td colspan="1" class=" k-grid-content-sticky k-table-td" style="left: 100px; right: 0px; border-right-width: 1px;">Architecture</td>
                                 <td class="k-table-td">
@@ -449,7 +397,7 @@
                                         <div class="k-task-content">Architecture</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <span class="k-icon k-svg-icon k-svg-i-x">
+                                                <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                                     </svg>
@@ -466,15 +414,9 @@
                             </tr>
                             <tr class="k-master-row k-table-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>27
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>27
                                 </td>
                                 <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 100px; right: 0px; border-right-width: 1px;">Data Layer</td>
                                 <td class="k-table-td">
@@ -483,7 +425,7 @@
                                         <div class="k-task-content">Data Layer</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <span class="k-icon k-svg-icon k-svg-i-x">
+                                                <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                                     </svg>
@@ -500,15 +442,9 @@
                             </tr>
                             <tr class="k-master-row k-table-row k-table-alt-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>29
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>29
                                 </td>
                                 <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 100px; right: 0px; border-right-width: 1px;">UI and Interaction</td>
                                 <td class="k-table-td">
@@ -517,7 +453,7 @@
                                         <div class="k-task-content">UI and Interaction</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <span class="k-icon k-svg-icon k-svg-i-x">
+                                                <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                                     </svg>
@@ -534,15 +470,9 @@
                             </tr>
                             <tr class="k-master-row k-table-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>28
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>28
                                 </td>
                                 <td colspan="1" class=" k-grid-content-sticky k-table-td" style="left: 100px; right: 0px; border-right-width: 1px;">Unit Tests</td>
                                 <td class="k-table-td">
@@ -551,7 +481,7 @@
                                         <div class="k-task-content">Unit Tests</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <span class="k-icon k-svg-icon k-svg-i-x">
+                                                <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                                     </svg>
@@ -568,10 +498,8 @@
                             </tr>
                             <tr class="k-master-row k-table-row k-table-alt-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M352 256 160 384V128z"></path>
                                         </svg>
@@ -590,10 +518,8 @@
                             </tr>
                             <tr class="k-master-row k-table-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M352 256 160 384V128z"></path>
                                         </svg>
@@ -612,10 +538,8 @@
                             </tr>
                             <tr class="k-master-row k-table-row k-table-alt-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M352 256 160 384V128z"></path>
                                         </svg>
@@ -634,12 +558,8 @@
                             </tr>
                             <tr class="k-table-row k-master-row k-table-row" style="height: 40px;">
                                 <td colspan="1" class="k-grid-content-sticky k-text-nowrap k-table-td" style="left: 0px; right: 200px;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>17
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                    <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>17
                                 </td>
                                 <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 100px; right: 0px; border-right-width: 1px;">Release</td>
                                 <td class="k-table-td">
