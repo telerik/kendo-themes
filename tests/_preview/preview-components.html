@@ -1500,17 +1500,17 @@
                         <div>
                             <div class="k-listview">
                                 <div class="k-listview-header">Header</div>
-                                <div class="k-listview-content">
-                                    <div class="k-listview-item">
+                                <div role="list" class="k-listview-content">
+                                    <div role="listitem" aria-setsize="4" aria-posinset="1" tabindex="0" class="k-listview-item">
                                         <div>Listview Item</div>
                                     </div>
-                                    <div class="k-listview-item k-focus">
+                                    <div role="listitem" aria-setsize="4" aria-posinset="2" class="k-listview-item k-focus">
                                         <div>Focus Item</div>
                                     </div>
-                                    <div class="k-listview-item k-selected">
+                                    <div role="listitem" aria-setsize="4" aria-posinset="3" class="k-listview-item k-selected">
                                         <div>Selected Item</div>
                                     </div>
-                                    <div class="k-listview-item k-focus k-selected">
+                                    <div role="listitem" aria-setsize="4" aria-posinset="4" class="k-listview-item k-focus k-selected">
                                         <div>Focus Selected Item</div>
                                     </div>
                                 </div>
@@ -1571,25 +1571,25 @@
                                     </button>
                                 </div>
                                 <div class="k-list-scroller k-selectable">
-                                    <div id="k-listbox-listbox" role="listbox" aria-label="ListBox options" class="k-list">
+                                    <div id="k-listbox-listbox" class="k-list">
                                         <div class="k-list-content">
-                                            <ul class="k-list-ul">
-                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                            <ul class="k-list-ul" role="listbox" aria-label="ListBox options">
+                                                <li class="k-list-item k-focus k-selected" role="option" aria-selected="true" tabindex="0">
                                                     <span class="k-list-item-text">List item 1</span>
                                                 </li>
-                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="0">
                                                     <span class="k-list-item-text">List item 2</span>
                                                 </li>
-                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="0">
                                                     <span class="k-list-item-text">List item 3</span>
                                                 </li>
-                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="0">
                                                     <span class="k-list-item-text">List item 4</span>
                                                 </li>
-                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="0">
                                                     <span class="k-list-item-text">List item 5</span>
                                                 </li>
-                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="-1">
+                                                <li class="k-list-item" role="option" aria-selected="false" tabindex="0">
                                                     <span class="k-list-item-text">List item 6</span>
                                                 </li>
                                             </ul>
@@ -2238,8 +2238,8 @@
                                                                     </span>
                                                                 </span>
                                                                 <div class="k-filtercell-operator">
-                                                                    <span class="k-dropdown-operator k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                                                                        <span class="k-input-inner"></span>
+                                                                    <span class="k-dropdown-operator k-dropdownlist k-picker" role="combobox" aria-label="DropdownList" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                                                                        <span id="dropdownlist-value" class="k-input-inner"></span>
                                                                         <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                                                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -2266,8 +2266,8 @@
                                                                     <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                                                                 </span>
                                                                 <div class="k-filtercell-operator">
-                                                                    <span class="k-dropdown-operator k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                                                                        <span class="k-input-inner"></span>
+                                                                    <span class="k-dropdown-operator k-dropdownlist k-picker" role="combobox" aria-label="DropdownList" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                                                                        <span id="dropdownlist-value" class="k-input-inner"></span>
                                                                         <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                                                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -2294,8 +2294,8 @@
                                                                     <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                                                                 </span>
                                                                 <div class="k-filtercell-operator">
-                                                                    <span class="k-dropdown-operator k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                                                                        <span class="k-input-inner"></span>
+                                                                    <span class="k-dropdown-operator k-dropdownlist k-picker" role="combobox" aria-label="DropdownList" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                                                                        <span id="dropdownlist-value" class="k-input-inner"></span>
                                                                         <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                                                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -2338,8 +2338,8 @@
                                                                     </span>
                                                                 </span>
                                                                 <div class="k-filtercell-operator">
-                                                                    <span class="k-dropdown-operator k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                                                                        <span class="k-input-inner"></span>
+                                                                    <span class="k-dropdown-operator k-dropdownlist k-picker" role="combobox" aria-label="DropdownList" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                                                                        <span id="dropdownlist-value" class="k-input-inner"></span>
                                                                         <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                                                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -2362,8 +2362,8 @@
                                                     <td class="k-table-td">
                                                         <div class="k-filtercell">
                                                             <div class="k-filtercell-wrapper">
-                                                                <span class="k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                                                                    <span class="k-input-inner"></span>
+                                                                <span class="k-dropdownlist k-picker" role="combobox" aria-label="DropdownList" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                                                                    <span id="dropdownlist-value" class="k-input-inner"></span>
                                                                     <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -2492,8 +2492,8 @@
                                     </button>
                                 </div>
                                 <span class="k-pager-sizes">
-                                    <span aria-label="Select option" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                                        <span class="k-input-inner">
+                                    <span aria-label="DropdownList" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                                        <span id="dropdownlist-value" class="k-input-inner">
                                             <span class="k-input-value-text">5</span>
                                         </span>
                                         <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
@@ -2624,8 +2624,8 @@
                                             </ol>
                                         </nav>
                                         <div class="k-filemanager-listview k-selectable k-listview">
-                                            <div class="k-listview-content k-d-flex k-flex-row k-flex-wrap">
-                                                <div class="k-listview-item">
+                                            <div role="listbox" class="k-listview-content k-d-flex k-flex-row k-flex-wrap" aria-label="ListView items">
+                                                <div role="option" aria-setsize="2" aria-posinset="1" tabindex="0" class="k-listview-item">
                                                     <span class="k-file-preview">
                                                         <span class="k-file-icon k-icon k-svg-icon k-icon-xxxl k-svg-i-folder" aria-hidden="true">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -2635,7 +2635,7 @@
                                                     </span>
                                                     <span class="k-file-name">Folder</span>
                                                 </div>
-                                                <div class="k-listview-item">
+                                                <div role="option" aria-setsize="2" aria-posinset="2" class="k-listview-item">
                                                     <span class="k-file-preview">
                                                         <span class="k-file-icon k-icon k-svg-icon k-icon-xxxl k-svg-i-file-image" aria-hidden="true">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -2729,7 +2729,7 @@
                                 <div class="k-spreadsheet-action-bar">
                                     <div class="k-spreadsheet-name-editor">
                                         <span class="k-combobox k-input k-input-flat">
-                                            <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="B6" autocomplete="off" type="text" value="">
+                                            <input role="combobox" aria-label="Combobox, B6" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="B6" autocomplete="off" type="text" value="">
                                             <button class="k-input-button k-button k-button-flat k-icon-button" aria-label="Open dropdown" tabindex="-1">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -3912,8 +3912,8 @@
                                                     <div class="k-filter-toolbar" role="toolbar" aria-label="Filter toolbar">
                                                         <div class="k-toolbar" role="toolbar">
                                                             <div class="k-filter-field k-toolbar-item">
-                                                                <span class="k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                                                                    <span class="k-input-inner">
+                                                                <span class="k-dropdownlist k-picker" role="combobox" aria-label="DropdownList" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                                                                    <span id="dropdownlist-value" class="k-input-inner">
                                                                         <span class="k-input-value-text">Name</span>
                                                                     </span>
                                                                     <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
@@ -3926,8 +3926,8 @@
                                                                 </span>
                                                             </div>
                                                             <div class="k-filter-operator k-toolbar-item">
-                                                                <span class="k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                                                                    <span class="k-input-inner">
+                                                                <span class="k-dropdownlist k-picker" role="combobox" aria-label="DropdownList" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                                                                    <span id="dropdownlist-value" class="k-input-inner">
                                                                         <span class="k-input-value-text">Is equal to</span>
                                                                     </span>
                                                                     <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
@@ -3958,8 +3958,8 @@
                                                     <div class="k-filter-toolbar" role="toolbar" aria-label="Filter toolbar">
                                                         <div class="k-toolbar" role="toolbar">
                                                             <div class="k-filter-field k-toolbar-item">
-                                                                <span class="k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                                                                    <span class="k-input-inner">
+                                                                <span class="k-dropdownlist k-picker" role="combobox" aria-label="DropdownList" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                                                                    <span id="dropdownlist-value" class="k-input-inner">
                                                                         <span class="k-input-value-text">Price</span>
                                                                     </span>
                                                                     <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
@@ -3972,8 +3972,8 @@
                                                                 </span>
                                                             </div>
                                                             <div class="k-filter-operator k-toolbar-item">
-                                                                <span class="k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                                                                    <span class="k-input-inner">
+                                                                <span class="k-dropdownlist k-picker" role="combobox" aria-label="DropdownList" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                                                                    <span id="dropdownlist-value" class="k-input-inner">
                                                                         <span class="k-input-value-text">Is greater than</span>
                                                                     </span>
                                                                     <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
@@ -4020,8 +4020,8 @@
                                                     <div class="k-filter-toolbar" role="toolbar" aria-label="Filter toolbar">
                                                         <div class="k-toolbar" role="toolbar">
                                                             <div class="k-filter-field k-toolbar-item">
-                                                                <span class="k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                                                                    <span class="k-input-inner">
+                                                                <span class="k-dropdownlist k-picker" role="combobox" aria-label="DropdownList" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                                                                    <span id="dropdownlist-value" class="k-input-inner">
                                                                         <span class="k-input-value-text">First Ordered</span>
                                                                     </span>
                                                                     <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
@@ -4034,8 +4034,8 @@
                                                                 </span>
                                                             </div>
                                                             <div class="k-filter-operator k-toolbar-item">
-                                                                <span class="k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                                                                    <span class="k-input-inner">
+                                                                <span class="k-dropdownlist k-picker" role="combobox" aria-label="DropdownList" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                                                                    <span id="dropdownlist-value" class="k-input-inner">
                                                                         <span class="k-input-value-text">Is before</span>
                                                                     </span>
                                                                     <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">

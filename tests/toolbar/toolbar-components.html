@@ -176,8 +176,8 @@
         <section>
             <div class="k-toolbar" role="toolbar">
                 <div>
-                    <span class="k-dropdownlist k-picker" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                        <span class="k-input-inner">
+                    <span class="k-dropdownlist k-picker" role="combobox" aria-label="DropdownList" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                        <span id="dropdownlist-value" class="k-input-inner">
                             <span class="k-input-value-text">Normal</span>
                         </span>
                         <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
@@ -190,8 +190,8 @@
                     </span>
                 </div>
                 <div>
-                    <span class="k-dropdownlist k-picker k-hover" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                        <span class="k-input-inner">
+                    <span class="k-dropdownlist k-picker k-hover" role="combobox" aria-label="DropdownList" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                        <span id="dropdownlist-value" class="k-input-inner">
                             <span class="k-input-value-text">Hover</span>
                         </span>
                         <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
@@ -204,8 +204,8 @@
                     </span>
                 </div>
                 <div>
-                    <span class="k-dropdownlist k-picker k-focus" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" tabindex="0">
-                        <span class="k-input-inner">
+                    <span class="k-dropdownlist k-picker k-focus" role="combobox" aria-label="DropdownList" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
+                        <span id="dropdownlist-value" class="k-input-inner">
                             <span class="k-input-value-text">Focus</span>
                         </span>
                         <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
@@ -218,11 +218,11 @@
                     </span>
                 </div>
                 <div>
-                    <span class="k-dropdownlist k-picker k-disabled" role="combobox" aria-label="Select option" aria-haspopup="listbox" aria-expanded="false" aria-controls="dropdownlist-listbox" aria-disabled="true" tabindex="0">
-                        <span class="k-input-inner">
+                    <span class="k-dropdownlist k-picker k-disabled" role="combobox" aria-label="DropdownList" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" aria-disabled="true" tabindex="0">
+                        <span id="dropdownlist-value" class="k-input-inner">
                             <span class="k-input-value-text">Disabled</span>
                         </span>
-                        <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
+                        <button class="k-input-button k-button k-disabled k-icon-button" aria-label="Open dropdown" tabindex="-1" aria-disabled="true" disabled="">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
@@ -238,7 +238,7 @@
             <div class="k-toolbar" role="toolbar">
                 <div>
                     <span class="k-combobox k-input">
-                        <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Normal">
+                        <input role="combobox" aria-label="Combobox" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Normal">
                         <span class="k-clear-value">
                             <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -257,7 +257,7 @@
                 </div>
                 <div>
                     <span class="k-combobox k-input k-hover">
-                        <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Hover">
+                        <input role="combobox" aria-label="Combobox" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Hover">
                         <span class="k-clear-value">
                             <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -276,7 +276,7 @@
                 </div>
                 <div>
                     <span class="k-combobox k-input k-focus">
-                        <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Focus">
+                        <input role="combobox" aria-label="Combobox" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Focus">
                         <span class="k-clear-value">
                             <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -295,8 +295,8 @@
                 </div>
                 <div>
                     <span class="k-combobox k-input k-disabled">
-                        <input disabled="" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="combobox-listbox" aria-autocomplete="list" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Disabled">
-                        <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
+                        <input disabled="" role="combobox" aria-label="Combobox" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-disabled="true" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Disabled">
+                        <button class="k-input-button k-button k-disabled k-icon-button" aria-label="Open dropdown" tabindex="-1" aria-disabled="true" disabled="">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
