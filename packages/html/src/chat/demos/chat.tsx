@@ -1,6 +1,5 @@
 ﻿import { Chat, KendoChatProps } from '../chat.spec';
-import { FileBox } from '../../file-box/file-box';
-import { FileBoxWrapper } from '../../file-box/file-box-wrapper';
+import { FileBox, FileBoxWrapper } from '../../file-box';
 import { ChatMessage } from '../chat-message';
 import { ChatMessageGroup } from '../chat-message-group';
 import { ChatMessageReference } from '../chat-message-reference';
