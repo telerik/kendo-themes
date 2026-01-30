@@ -1,4 +1,4 @@
-import { Button } from '..';
+import { Button } from '../button/button.spec';
 import { classNames } from '../misc';
 
 export const PANESCROLLABLE_CLASSNAME = `k-pane-scrollable`;

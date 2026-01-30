@@ -8,3 +8,4 @@ export * from "./templates/combobox-suffix";
 export * from "./templates/combobox-custom-value";
 export * from "./templates/combobox-grouping-modern-custom-value";
 export * from "./templates/combobox-no-data";
+export * from './demos/combobox';

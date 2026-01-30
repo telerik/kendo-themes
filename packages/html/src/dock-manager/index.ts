@@ -6,3 +6,4 @@ export * from './dock-navigator';
 export * from './pane-scrollable';
 export * from './templates/dock-manager-normal';
 export * from './templates/dock-manager-unpinned-pane';
+export * from './demos/dock-manager';

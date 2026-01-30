@@ -1,4 +1,5 @@
-import { Button, Combobox } from '..';
+import { Button } from '../button/button.spec';
+import { Combobox } from '../combobox/combobox.spec';
 import { classNames } from '../misc';
 
 export const SPREADSHEETACTIONBAR_CLASSNAME = `k-spreadsheet-action-bar`;

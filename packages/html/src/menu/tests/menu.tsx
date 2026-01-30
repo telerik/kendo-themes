@@ -72,8 +72,8 @@ export default () =>(
                                 <MenuList dir="rtl" id="menu-popup-rtl">
                                     <MenuListItem first text="Disabled" disabled></MenuListItem>
                                     <MenuListItem text="Normal"></MenuListItem>
-                                    <MenuListItem text="Hover" hover showArrow></MenuListItem>
-                                    <MenuListItem text="Active" active showArrow></MenuListItem>
+                                    <MenuListItem text="Hover" hover showArrow dir="rtl"></MenuListItem>
+                                    <MenuListItem text="Active" active showArrow dir="rtl"></MenuListItem>
                                     <MenuListItem text="Focus" focus></MenuListItem>
                                     <MenuListItem last text="Focus & Active" active focus></MenuListItem>
                                 </MenuList>

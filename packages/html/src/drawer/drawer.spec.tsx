@@ -9,7 +9,10 @@ export const DRAWER_CLASSNAME = `k-drawer`;
 
 const states = [];
 
-const options = { };
+const options = {
+    position: ['start', 'end'],
+    mode: ['overlay', 'push'],
+};
 
 const defaultOptions = {
     mini: false,
@@ -29,7 +32,7 @@ export type KendoDrawerProps = {
 
 export const Drawer: KendoComponent<KendoDrawerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDrawerProps &
-    React.HTMLAttributes<HTMLDivElement>
+        React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
         expanded = defaultOptions.expanded,

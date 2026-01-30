@@ -16,7 +16,7 @@ const styles = `
     }
 
     .copy-notification {
-        top: 300px;
+        top: 270px;
         left: 700px;
     }
 `;
@@ -60,7 +60,7 @@ export default () =>(
                 <ContextMenu>
                     <MenuListItem first text="Reply" icon="undo"></MenuListItem>
                     <MenuListItem text="Copy" icon="copy" selected></MenuListItem>
-                    <MenuListItem last text="Pin" icon="pin"></MenuListItem>
+                    <MenuListItem last text="Pin" icon="pin-outline"></MenuListItem>
                 </ContextMenu>
             </Popup>
 

@@ -1,5 +1,6 @@
-import { DropdownList, Icon } from '..';
-import { Button } from '../button';
+import { DropdownList } from '../dropdownlist/dropdownlist.spec';
+import { Icon } from '../icon/icon.spec';
+import { Button } from '../button/button.spec';
 import { classNames } from '../misc';
 
 export const CALCULATEDFIELD_CLASSNAME = `k-calculated-field`;

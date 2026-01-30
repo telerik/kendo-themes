@@ -62,19 +62,6 @@ export const MenuItem: KendoComponent<KendoMenuItemProps & KendoMenuItemState & 
         ...other
     } = props;
 
-    const contentTemplate = <></>;
-
-    if (children) {
-        children.forEach( child => {
-            const component = child.type;
-
-            if (component === 'MenuItemContent') {
-                contentTemplate.props.children.push( child );
-                return;
-            }
-        });
-    }
-
     let expandArrowName = arrowIconName;
 
     if ( !expandArrowName ) {
@@ -128,7 +115,7 @@ export const MenuItem: KendoComponent<KendoMenuItemProps & KendoMenuItemState & 
                 {icon && iconPosition === 'after' && <Icon className="k-menu-link-icon" icon={icon} />}
                 {showArrow && <span className="k-menu-expand-arrow" aria-hidden="true"><Icon icon={expandArrowName} /></span>}
             </span>
-            {contentTemplate}
+            {children}
         </li>
     );
 };

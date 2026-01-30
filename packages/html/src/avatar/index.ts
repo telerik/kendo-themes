@@ -3,3 +3,4 @@ export * from "./templates/avatar-icon";
 export * from "./templates/avatar-text";
 export * from "./templates/avatar-image";
 export * from "./templates/avatar-image-with-alt";
+export * from './demos/avatar';

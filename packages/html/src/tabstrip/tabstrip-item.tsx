@@ -1,4 +1,4 @@
-import { Icon } from '..';
+import { Icon } from '../icon/icon.spec';
 import { States, classNames, stateClassNames } from '../misc';
 
 export const TABSTRIPITEM_CLASSNAME = `k-tabstrip-item`;

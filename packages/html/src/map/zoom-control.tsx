@@ -1,4 +1,5 @@
-import { Button, ButtonGroup } from '..';
+import { Button } from '../button/button.spec';
+import { ButtonGroup } from '../button-group/button-group.spec';
 import { classNames } from '../misc';
 
 export const ZOOMCONTROL_CLASSNAME = `k-zoom-control`;

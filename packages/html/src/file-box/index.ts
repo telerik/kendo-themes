@@ -1,2 +1,2 @@
-export * from './file-box-wrapper';
-export * from './file-box';
+export * from './file-box-wrapper.spec';
+export * from './file-box.spec';

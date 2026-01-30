@@ -9,4 +9,4 @@ export * from './calculated-field';
 export * from './templates/pivotgrid-normal';
 export * from './templates/pivotgrid-with-configurator';
 export * from './templates/pivotgrid-with-configurator-opened';
-
+export * from './demos/pivotgrid';

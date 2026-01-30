@@ -12,13 +12,13 @@ export default () =>(
             <SplitterVertical />
 
             <span>Splitter nested</span>
-            <Splitter orientation="vertical" style={{ height: "280px" }}>
-                <SplitterPane flex>
-                    <Splitter>
-                        <SplitterPane flexBasis="20%" collapsible>
+            <Splitter orientation="vertical" style={{ height: "280px" }} panes={[
+                <SplitterPane flex key="pane-1">
+                    <Splitter panes={[
+                        <SplitterPane flexBasis="20%" collapsible key="nested-1">
                             <p>Collapsible pane - 20%</p>
-                        </SplitterPane>
-                        <SplitterPane scrollable>
+                        </SplitterPane>,
+                        <SplitterPane scrollable key="nested-2">
                             <p>Fluid, scollable pane</p>
                             <p>Content</p>
                             <p>Content</p>
@@ -26,22 +26,22 @@ export default () =>(
                             <p>Content</p>
                             <p>Content</p>
                             <p>Content</p>
-                        </SplitterPane>
-                        <SplitterPane flexBasis="30%" collapsible>
+                        </SplitterPane>,
+                        <SplitterPane flexBasis="30%" collapsible key="nested-3">
                             <p>Collapsible pane - 30%</p>
                         </SplitterPane>
-                    </Splitter>
-                </SplitterPane>
-                <SplitterPane flexBasis="80px" >
+                    ]} />
+                </SplitterPane>,
+                <SplitterPane flexBasis="80px" key="pane-2">
                     <p>Pane - 80px</p>
-                </SplitterPane>
-                <SplitterPane flexBasis="80px" resizable={false}>
+                </SplitterPane>,
+                <SplitterPane flexBasis="80px" resizable={false} key="pane-3">
                     <p>Non resizable pane - 80px</p>
-                </SplitterPane>
-                <SplitterPane hidden>
+                </SplitterPane>,
+                <SplitterPane hidden key="pane-4">
                     <h2>Hidden pane, should be invisible!</h2>
                 </SplitterPane>
-            </Splitter>
+            ]} />
         </div>
     </>
 );

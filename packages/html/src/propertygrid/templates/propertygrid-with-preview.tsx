@@ -3,12 +3,12 @@ import { Button } from "../../button";
 import { Splitter, SplitterPane } from "../../splitter";
 
 export const PropertyGridWithPreview = ({ content, ...other }: any) => (
-    <Splitter>
-        <SplitterPane scrollable flexBasis="215px">
+    <Splitter panes={[
+        <SplitterPane scrollable flexBasis="215px" key="pane-1">
             <Button icon="star">Button</Button>
-        </SplitterPane>
-        <SplitterPane scrollable>
+        </SplitterPane>,
+        <SplitterPane scrollable key="pane-2">
             <PropertyGridNormal {...other} content={content} />
         </SplitterPane>
-    </Splitter>
+    ]} />
 );

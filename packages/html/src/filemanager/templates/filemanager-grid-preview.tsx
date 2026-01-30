@@ -35,14 +35,14 @@ export const FileManagerGridPreview = (props) => (
     }
     children={
         <>
-            <Splitter className="k-filemanager-splitter">
-                <SplitterPane className="k-filemanager-navigation" collapsible scrollable flexBasis="25%">
+            <Splitter className="k-filemanager-splitter" panes={[
+                <SplitterPane className="k-filemanager-navigation" collapsible scrollable flexBasis="25%" key="pane-1">
                     <FileManagerTreeview>
                         <TreeviewItem text="Folder" />
                     </FileManagerTreeview>
-                </SplitterPane>
+                </SplitterPane>,
 
-                <SplitterPane className="k-filemanager-content" scrollable>
+                <SplitterPane className="k-filemanager-content" scrollable key="pane-2">
                     <FileManagerBreadcrumb>
                         <BreadcrumbContainer>
                             <BreadcrumbItem root>
@@ -101,13 +101,13 @@ export const FileManagerGridPreview = (props) => (
                             </GridContent>
                         </GridContainer>
                     </Grid>
-                </SplitterPane>
+                </SplitterPane>,
 
-                <SplitterPane className="k-filemanager-preview" collapsible scrollable flexBasis="25%">
+                <SplitterPane className="k-filemanager-preview" collapsible scrollable flexBasis="25%" key="pane-3">
                     <FileInfo selection="none" name="No File Selected">
                     </FileInfo>
                 </SplitterPane>
-            </Splitter>
+            ]} />
         </>
     }
     {...props}>

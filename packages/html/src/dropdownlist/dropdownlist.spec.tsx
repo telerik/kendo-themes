@@ -10,7 +10,7 @@ import {
 } from '../input';
 import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
-import { List, ListItem } from '../list';
+import { List, ListContent, ListItem } from '../list';
 
 import { KendoComponent } from '../_types/component';
 import { DROPDOWNLIST_FOLDER_NAME, DROPDOWNLIST_MODULE_NAME } from './constants';
@@ -40,7 +40,6 @@ export type KendoDropdownListOptions = {
 };
 
 export type KendoDropdownListProps = KendoDropdownListOptions & {
-    id?: string;
     valueIconName?: string;
     arrowIconName?: string;
     prefix?: React.JSX.Element;
@@ -48,7 +47,6 @@ export type KendoDropdownListProps = KendoDropdownListOptions & {
     value?: string;
     placeholder?: string;
     showValue?: boolean;
-    activeDescendantId?: string | null;
     popup?: React.JSX.Element;
     opened?: boolean;
     adaptive?: boolean;
@@ -71,7 +69,6 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
         Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>
 ) => {
     const {
-        id = 'dropdownlist',
         size,
         rounded,
         fillMode,
@@ -97,18 +94,8 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
         adaptiveTitle,
         adaptiveSubtitle,
         adaptiveFilter,
-        activeDescendantId,
         ...other
     } = props;
-
-    const listboxId = `${id}-listbox`;
-    const popupId = `${id}-popup`;
-    const valueId = `${id}-value`;
-    const defaultActiveDescendantId = `${id}-listbox-item-0`;
-    const resolvedActiveDescendantId = opened && popup
-        ? (activeDescendantId === null ? undefined : (activeDescendantId || defaultActiveDescendantId))
-        : undefined;
-    const ariaLabel = placeholder ? `DropdownList, ${placeholder}` : 'DropdownList';
 
 
     return (
@@ -133,22 +120,9 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                         'k-icon-picker': !showValue && valueIconName
                     }
                 )}
-                role="combobox"
-                aria-label={ariaLabel}
-                aria-haspopup="listbox"
-                aria-expanded={opened ? 'true' : 'false'}
-                aria-controls={opened && popup ? listboxId : undefined}
-                aria-activedescendant={resolvedActiveDescendantId}
-                aria-describedby={valueId}
-                {...(readonly && { 'aria-readonly': 'true' })}
-                {...(loading && { 'aria-busy': 'true' })}
-                {...(invalid && { 'aria-invalid': 'true' })}
-                {...(disabled && { 'aria-disabled': 'true' })}
-                tabIndex={0}
             >
                 <InputPrefix>{prefix}</InputPrefix>
                 <InputInnerSpan
-                    id={valueId}
                     placeholder={placeholder}
                     value={value}
                     showValue={showValue}
@@ -168,20 +142,10 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                     icon={arrowIconName}
                     size={props.size}
                     fillMode={props.fillMode}
-                    aria-label="Open dropdown"
-                    tabIndex={-1}
-                    disabled={disabled}
-                    aria-disabled={disabled ? 'true' : undefined}
                 />
             </Picker>
             {opened && popup &&
-                <Popup
-                    className="k-list-container k-dropdownlist-popup"
-                    containerClassName="k-dropdownlist-popup-container"
-                    id={popupId}
-                    role="region"
-                    aria-label="DropdownList suggestions"
-                >
+                <Popup className="k-list-container k-dropdownlist-popup">
                     {popup}
                 </Popup>
             }
@@ -189,28 +153,22 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Confirm" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
                             filter={adaptiveFilter}
                             inputValue={value}
                             inputPlaceholder={placeholder}
                             title={adaptiveTitle}
                             subtitle={adaptiveSubtitle}
-                            filterInputProps={adaptiveFilter ? {
-                                role: 'searchbox',
-                                'aria-label': 'Filter options',
-                                'aria-activedescendant': defaultActiveDescendantId,
-                                'aria-autocomplete': 'list',
-                                'aria-controls': listboxId,
-                                'aria-haspopup': 'listbox'
-                            } : undefined}
                         />
                     }
                 >
                     <div className="k-list-container">
-                        <List size="large" role="listbox" aria-label="DropdownList options" listboxId={listboxId} listboxAriaLive="polite">
-                            <ListItem id={`${id}-listbox-item-0`} text="List item" role="option" aria-selected="true" tabIndex={0} selected focus />
-                            <ListItem id={`${id}-listbox-item-1`} text="List item" role="option" aria-selected="false" tabIndex={-1} />
-                            <ListItem id={`${id}-listbox-item-2`} text="List item" role="option" aria-selected="false" tabIndex={-1} />
+                        <List size="large">
+                            <ListContent>
+                                <ListItem text="List item" />
+                                <ListItem text="List item" />
+                                <ListItem text="List item" />
+                            </ListContent>
                         </List>
                     </div>
                 </ActionSheet>

@@ -10,7 +10,8 @@ const options = {};
 
 export type KendoSplitterProps = {
     orientation?: "vertical" | "horizontal";
-    children?: React.JSX.Element | React.JSX.Element[];
+    children?: React.ReactNode;
+    panes?: React.JSX.Element[];
 }
 
 const defaultOptions = {
@@ -24,36 +25,34 @@ export const Splitter: KendoComponent<KendoSplitterProps & React.HTMLAttributes<
     const {
         orientation = defaultOptions.orientation,
         children,
+        panes,
         ...other
     } = props;
 
-    const listChildren: React.JSX.Element | React.JSX.Element[] = [];
+    const renderedPanes: React.ReactNode[] = [];
 
-    if (children) {
-        if (Array.isArray(children)) {
-            children.map((child, index) => {
-                if (child.type === SplitterPane) {
-                    const nextChild = children[index + 1];
-                    const childProps: KendoSplitterPaneProps = child.props;
-                    const nextChildProps: KendoSplitterPaneProps = nextChild?.props;
+    if (panes) {
+        panes.forEach((pane, index) => {
+            const nextPane = panes[index + 1];
+            const paneProps: KendoSplitterPaneProps = pane.props;
+            const nextPaneProps: KendoSplitterPaneProps = nextPane?.props;
 
-                    listChildren.push(
-                        <SplitterPane {...childProps} key={index} />,
+            renderedPanes.push(
+                <SplitterPane {...paneProps} key={index} />
+            );
 
-                        nextChild &&
-                        <SplitterSplitbar
-                            key={`splitbar-${index}`}
-                            draggable={childProps.resizable !== false && nextChildProps.resizable !== false}
-                            collapsePrev={childProps.collapsible}
-                            collapseNext={nextChildProps.collapsible}
-                            orientation={orientation}
-                        />
-                    );
-                } else {
-                    listChildren.push(child);
-                }
-            });
-        }
+            if (nextPane) {
+                renderedPanes.push(
+                    <SplitterSplitbar
+                        key={`splitbar-${index}`}
+                        draggable={paneProps.resizable !== false && nextPaneProps.resizable !== false}
+                        collapsePrev={paneProps.collapsible}
+                        collapseNext={nextPaneProps.collapsible}
+                        orientation={orientation}
+                    />
+                );
+            }
+        });
     }
 
     return (
@@ -67,7 +66,8 @@ export const Splitter: KendoComponent<KendoSplitterProps & React.HTMLAttributes<
                 },
                 "k-splitter-flex",
             )}>
-            {listChildren}
+            {renderedPanes}
+            {children}
         </div>
     );
 };

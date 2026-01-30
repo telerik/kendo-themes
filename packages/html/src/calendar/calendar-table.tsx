@@ -1,4 +1,5 @@
-import { CalendarTableHead, CalendarTbody } from '..';
+import { CalendarTableHead } from './calendar-table-head';
+import { CalendarTbody } from './calendar-tbody.spec';
 import { classNames } from '../misc';
 
 export const CALENDARTABLE_CLASSNAME = `k-calendar-table`;

@@ -14,7 +14,6 @@ export const ListGroup = (
     const {
         virtualization,
         label,
-        role,
         'aria-label': ariaLabel,
         'aria-labelledby': ariaLabelledby,
         'aria-multiselectable': _ariaMultiselectable,
@@ -25,8 +24,7 @@ export const ListGroup = (
             {label && <ListHeader>{label}</ListHeader>}
             {props.children && <ListContent
                 virtualization={virtualization}
-                role={role}
-                ulRole="group"
+                role="group"
                 aria-label={ariaLabel}
                 aria-labelledby={ariaLabelledby}
             >{props.children}</ListContent>}

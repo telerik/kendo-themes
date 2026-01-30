@@ -4,3 +4,4 @@ export * from "./templates/dropdowngrid-popup";
 export * from "./templates/dropdowngrid-adaptive";
 export * from "./templates/dropdowngrid-suffix";
 export * from "./templates/dropdowngrid-prefix";
+export * from './demos/dropdowngrid';

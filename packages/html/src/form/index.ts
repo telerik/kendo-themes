@@ -4,3 +4,4 @@ export * from './fieldset';
 export * from './templates/form-normal';
 export * from './templates/form-horizontal';
 export * from './templates/form-grid-layout';
+export * from './demos/form';

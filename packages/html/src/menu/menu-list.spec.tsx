@@ -1,5 +1,4 @@
 import { classNames, optionClassNames, Size } from '../misc';
-import { MenuListItem, MenuSeparator } from '.';
 
 import { KendoComponent } from '../_types/component';
 import { MENU_FOLDER_NAME, MENU_MODULE_NAME } from './constants';
@@ -19,9 +18,7 @@ export type KendoMenuListOptions = {
     role?: string;
 };
 
-const defaultOptions = {
-    dir: 'ltr'
-};
+const defaultOptions = {};
 
 export const MenuList: KendoComponent<KendoMenuListOptions & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoMenuListOptions &
@@ -30,31 +27,10 @@ export const MenuList: KendoComponent<KendoMenuListOptions & React.HTMLAttribute
     const {
         children,
         size,
-        dir = defaultOptions.dir,
         id,
         role,
         ...other
     } = props;
-
-    const listChildren: React.JSX.Element[] = [];
-
-    if (children) {
-        if (Array.isArray(children)) {
-            children.map((child, index) => {
-                if (child.type === MenuListItem) {
-                    listChildren.push(
-                        <MenuListItem {...child.props} dir={dir} key={index} />
-                    );
-                } else if (child.type === MenuSeparator) {
-                    listChildren.push(
-                        <MenuSeparator />
-                    );
-                } else {
-                    listChildren.push(child);
-                }
-            });
-        }
-    }
 
     return (
         <ul
@@ -68,7 +44,7 @@ export const MenuList: KendoComponent<KendoMenuListOptions & React.HTMLAttribute
             )}
             role={role || 'menu'}
             {...(id && { id })}>
-            {listChildren}
+            {children}
         </ul>
     );
 };

@@ -3,3 +3,4 @@ export * from './dialog-container.spec';
 export * from './templates/dialog-normal';
 export * from './templates/dialog-non-modal';
 export * from './templates/dialog-predefined';
+export * from './demos/dialog';

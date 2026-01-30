@@ -16,7 +16,7 @@ $kendo-chat-padding-y: k-spacing(5) !default;
 $kendo-chat-width: 280px !default;
 /// The minimum height of the Chat.
 /// @group chat
-$kendo-chat-height: 600px !default;
+$kendo-chat-height: 320px !default;
 /// The border width of the Chat.
 /// @group chat
 $kendo-chat-border-width: 1px !default;
@@ -56,7 +56,7 @@ $kendo-chat-message-list-padding-y: $kendo-chat-padding-y !default;
 $kendo-chat-message-list-spacing: $kendo-chat-item-spacing-y !default;
 /// The spacing of the Chat message box wrapper.
 /// @group chat
-$kendo-chat-message-box-wrapper-spacing: k-spacing(3) !default;
+$kendo-chat-message-box-wrapper-spacing: k-spacing(4) !default;
 
 /// The minimum size of the Chat message status.
 /// @group chat

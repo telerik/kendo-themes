@@ -1,6 +1,6 @@
+import React from 'react';
 import { Checkbox } from '../checkbox';
 import { Icon } from '../icon';
-import { TreeviewGroup } from './treeview-group';
 import { classNames, stateClassNames, States } from '../misc';
 import TreeviewLeaf from './treeview-leaf';
 
@@ -21,7 +21,7 @@ const defaultOptions = {};
 
 export type KendoTreeviewItemProps = {
     leafClassName?: string;
-    children?: React.JSX.Element | React.JSX.Element[];
+    children?: React.ReactNode;
     hasChildren?: boolean;
     expanded?: boolean;
     text?: string;
@@ -60,30 +60,6 @@ export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeview
     } = props;
 
     const _hasChildren = hasChildren || children;
-
-    const listChildren : React.JSX.Element[] = [];
-
-    if (children) {
-        if (Array.isArray(children)) {
-            children.map((child, index) => {
-                if ( child.type === TreeviewGroup) {
-                    listChildren.push(
-                        <TreeviewGroup {...child.props} dir={dir} level={level + 1} key={index}>
-                            {child.props.children}
-                        </TreeviewGroup>
-                    );
-                }
-            });
-        } else {
-            if ( children.type === TreeviewGroup) {
-                listChildren.push(
-                    <TreeviewGroup {...children.props} dir={dir} level={level + 1}>
-                        {children.props.children}
-                    </TreeviewGroup>
-                );
-            }
-        }
-    }
 
     return (
         <li
@@ -124,11 +100,13 @@ export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeview
                     icon={icon}
                 />
             </span>
-            {expanded && _hasChildren && (
-                <>
-                    {listChildren}
-                </>
-            )}
+            {expanded && _hasChildren &&
+                React.Children.map(children, (child, index) =>
+                    React.isValidElement(child)
+                        ? React.cloneElement(child, { dir, level: level + 1, key: index } as React.Attributes)
+                        : child
+                )
+            }
         </li>
     );
 };

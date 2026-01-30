@@ -1,5 +1,14 @@
 import { classNames } from '../misc';
-import { Button, ButtonGroup, ColorPicker, DropdownList, MenuButton, MenuItem, SpreadsheetMenu, SpreadsheetToolbar, ToolbarItem, ToolbarSeparator } from '..';
+import { Button } from '../button/button.spec';
+import { ButtonGroup } from '../button-group/button-group.spec';
+import { ColorPicker } from '../colorpicker/colorpicker.spec';
+import { DropdownList } from '../dropdownlist/dropdownlist.spec';
+import { MenuButton } from '../menu-button/menu-button.spec';
+import { MenuItem } from '../menu/menu-item.spec';
+import { SpreadsheetMenu } from './spreadsheet-menu';
+import { SpreadsheetToolbar } from './spreadsheet-toolbar';
+import { ToolbarItem } from '../toolbar/toolbar-item.spec';
+import { ToolbarSeparator } from '../toolbar/toolbar-separator';
 
 export const SPREADSHEETHEADER_CLASSNAME = `k-spreadsheet-header`;
 

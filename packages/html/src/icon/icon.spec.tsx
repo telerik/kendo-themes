@@ -5,6 +5,8 @@ import * as SVGIcons from '@progress/kendo-svg-icons';
 
 import { KendoComponent } from '../_types/component';
 import { ICON_FOLDER_NAME, ICON_MODULE_NAME } from './constants';
+import { useContext } from 'react';
+import { ConfigurationContext } from '../configuration/configuration-context';
 
 export const ICON_CLASSNAME = `k-icon`;
 
@@ -59,11 +61,13 @@ const defaultOptions = {
 export const Icon: KendoComponent<IconProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: IconProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
+    const { iconsType } = useContext(ConfigurationContext);
+
     const {
         size,
         themeColor,
         icon,
-        type = defaultOptions.type,
+        type = iconsType || defaultOptions.type,
         rotate,
         flip,
         viewBox = defaultOptions.viewBox,
@@ -74,7 +78,8 @@ export const Icon: KendoComponent<IconProps & React.HTMLAttributes<HTMLSpanEleme
         return <></>;
     }
 
-    if (type === 'svg') {
+    const iconType = iconsType || type;
+    if (iconType === 'svg') {
 
         if (icon === 'none') {
             return (

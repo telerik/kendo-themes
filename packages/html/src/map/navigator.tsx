@@ -1,4 +1,4 @@
-import { Button } from '..';
+import { Button } from '../button/button.spec';
 import { classNames } from '../misc';
 
 export const NAVIGATOR_CLASSNAME = `k-navigator`;

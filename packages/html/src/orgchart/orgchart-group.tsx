@@ -1,5 +1,4 @@
 import { classNames, kendoThemeMaps } from '../misc';
-import { OrgchartNode } from '../orgchart';
 
 export const ORGCHARTGROUP_CLASSNAME = `k-orgchart-group`;
 
@@ -8,7 +7,8 @@ const states = [];
 const options = {};
 
 export type KendoOrgchartGroupProps = {
-    children?: React.JSX.Element | React.JSX.Element[];
+    children?: React.ReactNode;
+    nodes?: React.ReactNode;
     orientation?: 'horizontal' | 'vertical';
     justifyContent?: null | 'start' | 'center' | 'end' | 'stretch' | 'around';
     level?: number;
@@ -26,6 +26,7 @@ export const OrgchartGroup = (
 ) => {
     const {
         children,
+        nodes,
         orientation = defaultOptions.orientation,
         justifyContent,
         level,
@@ -34,31 +35,10 @@ export const OrgchartGroup = (
         ...other
     } = props;
 
-    const chartNodes : React.JSX.Element[] = [];
-    const chartGroups : React.JSX.Element[] = [];
-
     // Determine if this is the root level (defaults to true if level not specified)
     const isLevel1 = level === undefined || level === 1;
     const groupRole = role || (isLevel1 ? 'tree' : 'group');
     const groupOrientation = ariaOrientation || (isLevel1 && orientation === 'horizontal' ? 'horizontal' : undefined);
-
-    if (children) {
-        if (Array.isArray(children)) {
-            children.map((child) => {
-                if (child.type === OrgchartNode) {
-                    chartNodes.push( child );
-                } else {
-                    chartGroups.push( child );
-                }
-            });
-        } else {
-            if (children.type === OrgchartNode) {
-                chartNodes.push( children );
-            } else {
-                chartGroups.push( children );
-            }
-        }
-    }
 
     return (
         <div
@@ -77,7 +57,7 @@ export const OrgchartGroup = (
             {...(groupOrientation && { 'aria-orientation': groupOrientation })}
         >
 
-            {chartNodes.length > 0 &&
+            {nodes &&
                 <div
                     className={classNames(
                         'k-orgchart-node-container',
@@ -86,10 +66,10 @@ export const OrgchartGroup = (
                             [`k-${kendoThemeMaps.orientationMap[orientation!] || orientation}`]: orientation,
                         }
                     )}>
-                    <>{chartNodes}</>
+                    {nodes}
                 </div>
             }
-            <>{chartGroups}</>
+            {children}
         </div>
     );
 };

@@ -168,6 +168,7 @@ export default () =>(
                     formButtons={null}
                 >
                     <FormField
+                        orientation="horizontal"
                         dir="rtl"
                         label="Textbox:"
                         editor={ <Textbox/> }
@@ -175,6 +176,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         dir="rtl"
                         label="Checkbox:"
                         editor={ <Checkbox/> }
@@ -182,6 +184,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         dir="rtl"
                         editor={
                             <>
@@ -193,6 +196,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         dir="rtl"
                         label="Radio (Y):"
                         editor={
@@ -209,6 +213,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         dir="rtl"
                         label="Radio (X):"
                         editor={
@@ -225,6 +230,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         dir="rtl"
                         label="Colorpicker:"
                         editor={ <ColorPicker/> }
@@ -232,6 +238,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         dir="rtl"
                         label="MaskedTextBox:"
                         editor={ <MaskedTextbox/> }
@@ -239,6 +246,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         dir="rtl"
                         label="NumericTextBox:"
                         editor={ <NumericTextbox/> }
@@ -246,6 +254,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         dir="rtl"
                         label="Switch:"
                         editor={ <Switch onLabel="On" offLabel="Off" checked /> }
@@ -253,6 +262,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         dir="rtl"
                         label="Slider:"
                         editor={
@@ -262,6 +272,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         dir="rtl"
                         editor={
                             <FloatingLabel label="FloatingLabel" empty>
@@ -272,6 +283,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         dir="rtl"
                         editor={
                             <FloatingLabel label="FloatingLabel (Focused)" empty focus>
@@ -282,6 +294,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         dir="rtl"
                         label="Upload"
                         editor={

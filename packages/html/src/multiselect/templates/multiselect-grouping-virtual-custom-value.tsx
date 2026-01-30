@@ -1,21 +1,22 @@
-import { List, ListGroup, ListItem, ListCustomValue } from "../../list";
+import { List, ListItem, ListGroupItem, ListCustomValue, ListContent, ListUl } from "../../list";
 import MultiSelect from "../multiselect.spec";
 
-export const MultiSelectGroupingVirtualCustomValue = ({ value = "Custom value", id = 'multiselect', ...other }: any) => (
-    <MultiSelect value={value}
-        id={id}
+export const MultiSelectGroupingVirtualCustomValue = ({ value="Custom value", ...other }: any) => (
+    <MultiSelect  value={value}
         opened
-        activeDescendantId={`${id}-listbox-item-0`}
         popup={
-            <List virtualization customValue={<ListCustomValue text={`Use "${value}"`}/>} role="listbox" aria-label="MultiSelect options" aria-multiselectable="true" listboxId={`${id}-listbox`}>
-                <ListGroup label={"Group 1"} root>
-                    <ListItem id={`${id}-listbox-item-0`} role="option" aria-selected="true" tabIndex={0} selected focus>List group 1 item 1</ListItem>
-                    <ListItem id={`${id}-listbox-item-1`} role="option" aria-selected="false" tabIndex={-1}>List group 1 item 2</ListItem>
-                </ListGroup>
-                <ListGroup label="Group 2">
-                    <ListItem id={`${id}-listbox-item-2`} role="option" aria-selected="false" tabIndex={-1}>List group 2 item 1</ListItem>
-                    <ListItem id={`${id}-listbox-item-3`} role="option" aria-selected="false" tabIndex={-1}>List group 2 item 2</ListItem>
-                </ListGroup>
+            <List header="Group 1" virtualization customValue={<ListCustomValue text={`Use "${value}"`}/>}>
+                <ListContent grouping virtualization>
+                    <ListUl>
+                        <ListItem>List group 1 item 1</ListItem>
+                        <ListItem>List group 1 item 2</ListItem>
+                    </ListUl>
+                    <ListUl>
+                        <ListGroupItem>Group 2</ListGroupItem>
+                        <ListItem>List group 1 item 1</ListItem>
+                        <ListItem>List group 1 item 2</ListItem>
+                    </ListUl>
+                </ListContent>
             </List>
         }
         {...other}

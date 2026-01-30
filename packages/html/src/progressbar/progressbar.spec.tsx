@@ -9,7 +9,9 @@ const states = [
     States.indeterminate
 ];
 
-const options = {};
+const options = {
+    orientation: ['horizontal', 'vertical'],
+};
 
 export type KendoProgressBarProps = {
     height?: string;
@@ -86,16 +88,16 @@ export const ProgressBar: KendoComponent<KendoProgressBarProps & KendoProgressBa
                 {label && <span className="k-progress-status">{value}%</span>}
             </span>
             {!indeterminate &&
-            <div className="k-progressbar-value k-selected">
-                <span className={classNames(
-                    'k-progress-status-wrap',
-                    {
-                        [`k-progress-${labelPosition}`]: labelPosition
-                    }
-                )}>
-                    {label && <span className="k-progress-status">{props.value}%</span>}
-                </span>
-            </div>
+                <div className="k-progressbar-value k-selected">
+                    <span className={classNames(
+                        'k-progress-status-wrap',
+                        {
+                            [`k-progress-${labelPosition}`]: labelPosition
+                        }
+                    )}>
+                        {label && <span className="k-progress-status">{props.value}%</span>}
+                    </span>
+                </div>
             }
         </div>
     );

@@ -11,7 +11,7 @@ import {
 } from '../input';
 import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
-import { List, ListCustomValue, ListItem } from '../list';
+import { List, ListContent, ListCustomValue, ListItem } from '../list';
 import { Button } from '../button';
 
 import { KendoComponent } from '../_types/component';
@@ -201,9 +201,11 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
                             role="listbox"
                             aria-label="Autocomplete options"
                         >
-                            <ListItem role="option" aria-selected="false" tabIndex={-1} text="List item" />
-                            <ListItem role="option" aria-selected="false" tabIndex={-1} text="List item" />
-                            <ListItem role="option" aria-selected="false" tabIndex={-1} text="List item" />
+                            <ListContent>
+                                <ListItem role="option" aria-selected="false" tabIndex={-1} text="List item" />
+                                <ListItem role="option" aria-selected="false" tabIndex={-1} text="List item" />
+                                <ListItem role="option" aria-selected="false" tabIndex={-1} text="List item" />
+                            </ListContent>
                         </List>
                     </div>
                 </ActionSheet>

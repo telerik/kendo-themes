@@ -1,5 +1,7 @@
 import { classNames, optionClassNames, Size } from '../misc';
-import { CalendarView, CalendarHeader, CalendarFooter } from '.';
+import { CalendarView } from './calendar-view';
+import { CalendarHeader } from './calendar-header';
+import { CalendarFooter } from './calendar-footer';
 
 import { KendoComponent } from '../_types/component';
 import { CALENDAR_FOLDER_NAME, CALENDAR_MODULE_NAME } from './constants';

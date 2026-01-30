@@ -13,7 +13,7 @@ import { Button } from '../button';
 import { ChipList } from '../chip';
 import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
-import { List, ListCustomValue, ListItem } from '../list';
+import { List, ListContent, ListCustomValue, ListItem } from '../list';
 
 import { KendoComponent } from '../_types/component';
 import { MULTISELECT_FOLDER_NAME, MULTISELECT_MODULE_NAME } from './constants';
@@ -228,9 +228,11 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                             aria-multiselectable="true"
                             listboxId={listboxId}
                         >
-                            <ListItem id={`${id}-listbox-item-0`} text="List item" role="option" aria-selected="true" tabIndex={0} selected focus />
-                            <ListItem id={`${id}-listbox-item-1`} text="List item" role="option" aria-selected="false" tabIndex={-1} />
-                            <ListItem id={`${id}-listbox-item-2`} text="List item" role="option" aria-selected="false" tabIndex={-1} />
+                            <ListContent>
+                                <ListItem id={`${id}-listbox-item-0`} text="List item" role="option" aria-selected="true" tabIndex={0} selected focus />
+                                <ListItem id={`${id}-listbox-item-1`} text="List item" role="option" aria-selected="false" tabIndex={-1} />
+                                <ListItem id={`${id}-listbox-item-2`} text="List item" role="option" aria-selected="false" tabIndex={-1} />
+                            </ListContent>
                         </List>
                     </div>
                 </ActionSheet>

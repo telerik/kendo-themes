@@ -463,7 +463,7 @@
 
     .k-message-box-wrapper {
         padding-inline: $kendo-chat-padding-x;
-        padding-block: calc( #{$kendo-chat-padding-y} / 2 ) $kendo-chat-padding-y;
+        padding-block: $kendo-chat-padding-y;
         display: flex;
         flex-direction: column;
         gap: $kendo-chat-message-box-wrapper-spacing;

@@ -13,14 +13,14 @@ export default () =>(
 
             <span>Grid View</span>
             <FileManagerGrid>
-                <Splitter className="k-filemanager-splitter">
-                    <SplitterPane className="k-filemanager-navigation" resizable={false} scrollable flexBasis="20%">
+                <Splitter className="k-filemanager-splitter" panes={[
+                    <SplitterPane className="k-filemanager-navigation" resizable={false} scrollable flexBasis="20%" key="pane-1">
                         <FileManagerTreeview>
                             <TreeviewItem text="Folder" />
                         </FileManagerTreeview>
-                    </SplitterPane>
+                    </SplitterPane>,
 
-                    <SplitterPane className="k-filemanager-content" scrollable>
+                    <SplitterPane className="k-filemanager-content" scrollable key="pane-2">
                         <FileManagerBreadcrumb>
                             <BreadcrumbContainer>
                                 <BreadcrumbItem root>
@@ -80,7 +80,7 @@ export default () =>(
                             </GridContainer>
                         </Grid>
                     </SplitterPane>
-                </Splitter>
+                ]} />
             </FileManagerGrid>
 
             <span>Grid View Resizing</span>

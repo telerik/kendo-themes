@@ -1,5 +1,5 @@
 import { Button } from '../button';
-import { List } from '../list';
+import { List, ListContent } from '../list';
 import { classNames, stateClassNames, States, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
@@ -105,11 +105,12 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
                 <List
                     id={`${id}-listbox`}
                     size={size}
-                    children={children}
                     role="listbox"
                     aria-label="ListBox options"
                     aria-multiselectable={multiselectable ? 'true' : undefined}
-                />
+                >
+                    <ListContent>{children}</ListContent>
+                </List>
             </div>
         </div>
     );

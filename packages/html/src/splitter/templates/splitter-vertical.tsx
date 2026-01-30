@@ -2,7 +2,7 @@ import { Splitter, SplitterPane } from "..";
 
 export const SplitterVertical = (props) => (
     <Splitter
-        children={[
+        panes={[
             <SplitterPane key="pane-1" flexBasis="20%" collapsible>
                 <p>Collapsible pane - 20%</p>
             </SplitterPane>,

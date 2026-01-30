@@ -1,7 +1,12 @@
-import { Grid, GridContainer, GridContent, GridTable, GridPager, GridStackRow } from '..';
-import { Button } from '../../button';
-import { CheckboxNormal } from '../../checkbox';
-import { Icon } from '../../icon';
+import { Grid } from '../grid.spec';
+import { GridContainer } from '../grid-container.spec';
+import { GridContent } from '../grid-content.spec';
+import { GridTable } from '../grid-table.spec';
+import { GridPager } from '../grid-pager.spec';
+import { GridStackRow } from '../grid-stack-row.spec';
+import { Button } from '../../button/button.spec';
+import { CheckboxNormal } from '../../checkbox/templates/checkbox-normal';
+import { Icon } from '../../icon/icon.spec';
 import { TableTbody, TableRow, TableTd } from '../../table';
 import GridStackCell from '../grid-stack-cell.spec';
 

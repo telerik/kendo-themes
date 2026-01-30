@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.2...v13.0.0-dev.3) (2026-01-30)
+
+
+### Bug Fixes
+
+* **chat:** decrease min-height ([127b774](https://github.com/telerik/kendo-themes/commit/127b77455f377d3d5b001dfe1ba4dfb79144635c))
+* **fluent:** resolve calc related parse errors ([274b1b2](https://github.com/telerik/kendo-themes/commit/274b1b2d7fb4987bd130f5ee3d40b5ddfe4b586b))
+* **html:** remove redundant themeColor and roundness from components ([c94dbd1](https://github.com/telerik/kendo-themes/commit/c94dbd10d73ebd1956e298f19e28710b8c72f54c))
+* **material:** resolve unit test sass warnings ([c0cfa8b](https://github.com/telerik/kendo-themes/commit/c0cfa8b0fa4ff36eab2541383b40f84a48a755a1))
+* resolve unit tests sass warnings ([1cc38b0](https://github.com/telerik/kendo-themes/commit/1cc38b0baa09b61279effcf8c9009952cbaa4645))
+
+
+
+
+
 # [13.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.1...v13.0.0-dev.2) (2026-01-27)
 
 

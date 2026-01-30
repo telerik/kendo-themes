@@ -1,8 +1,8 @@
 import { Treeview, TreeviewItem, TreeviewGroup } from "../../treeview";
 
-export const TreeviewHierarchy = (props) => (
-    <Treeview
-        children={[
+export const TreeviewHierarchy = ({ children, ...other }: any) => (
+    <Treeview {...other}>
+        {children || [
             <TreeviewItem key="treeview-item-1" text="Root 1" />,
             <TreeviewItem key="treeview-item-2" text="Root 2" expanded>
                 <TreeviewGroup>
@@ -23,7 +23,5 @@ export const TreeviewHierarchy = (props) => (
                 </TreeviewGroup>
             </TreeviewItem>
         ]}
-        {...props}
-    >
     </Treeview>
 );

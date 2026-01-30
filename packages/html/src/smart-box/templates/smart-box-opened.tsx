@@ -1,4 +1,4 @@
-import { List, ListItem } from "../../list";
+import { List, ListContent, ListItem } from "../../list";
 import SmartBox from "../smart-box.spec";
 
 export const SmartBoxOpened = (props) => (
@@ -7,8 +7,10 @@ export const SmartBoxOpened = (props) => (
         popup={
             <>
                 <List>
-                    <ListItem>List item</ListItem>
-                    <ListItem>List item</ListItem>
+                    <ListContent>
+                        <ListItem>List item</ListItem>
+                        <ListItem>List item</ListItem>
+                    </ListContent>
                 </List>
             </>
         }

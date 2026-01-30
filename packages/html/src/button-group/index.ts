@@ -4,3 +4,4 @@ export * from "./templates/icon-text-button-group";
 export * from "./templates/text-button-group";
 export * from "./templates/mixed-button-group";
 export * from "./templates/disabled-button-group";
+export * from './demos/button-group';

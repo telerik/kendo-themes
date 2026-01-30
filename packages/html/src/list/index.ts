@@ -2,6 +2,7 @@ export * from './list.spec';
 export * from './list-container.spec';
 export * from './list-item.spec';
 export * from './list-content';
+export * from './list-ul';
 export * from './list-header';
 export * from './list-group';
 export * from './list-group-item';

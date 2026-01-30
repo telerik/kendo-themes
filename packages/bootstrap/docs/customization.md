@@ -6836,8 +6836,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-chat-height</td>
     <td>Number</td>
-    <td><code>600px</code></td>
-    <td><code>600px</code></td>
+    <td><code>320px</code></td>
+    <td><code>320px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the Chat.</div></div>
@@ -6956,8 +6956,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-chat-message-box-wrapper-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat message box wrapper.</div></div>

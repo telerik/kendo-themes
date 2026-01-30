@@ -4,7 +4,7 @@ import { FileBoxWrapper, FileBox } from '../../file-box';
 
 const styles = `
     .k-chat {
-        height: 400px;
+        height: 600px;
     }
 `;
 

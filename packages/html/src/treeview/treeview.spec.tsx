@@ -1,4 +1,5 @@
-import { TreeviewGroup, TreeviewItem } from '../treeview';
+import React from 'react';
+import { TreeviewGroup } from './treeview-group';
 import { classNames, optionClassNames, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
@@ -16,7 +17,7 @@ export type KendoTreeviewOptions = {
 };
 
 export type KendoTreeviewProps = KendoTreeviewOptions & {
-    children?: React.JSX.Element | React.JSX.Element[];
+    children?: React.ReactNode;
     dir?: 'ltr' | 'rtl';
 };
 
@@ -37,38 +38,6 @@ export const Treeview: KendoComponent<KendoTreeviewProps & KendoTreeviewState & 
         ...other
     } = props;
 
-    const listChildren : React.JSX.Element[] = [];
-
-    if (children) {
-        if (Array.isArray(children)) {
-            children.map((child, index) => {
-                if ( child.type === TreeviewItem) {
-                    listChildren.push(
-                        <TreeviewItem {...child.props} dir={dir} key={index} />
-                    );
-                }
-
-                if ( child.type === TreeviewGroup) {
-                    listChildren.push(
-                        <TreeviewGroup {...child.props} dir={dir} key={index} />
-                    );
-                }
-            });
-        } else {
-            if ( children.type === TreeviewItem) {
-                listChildren.push(
-                    <TreeviewItem {...children.props} dir={dir} />
-                );
-            }
-
-            if ( children.type === TreeviewGroup) {
-                listChildren.push(
-                    <TreeviewGroup {...children.props} dir={dir} />
-                );
-            }
-        }
-    }
-
     return (
         <div
             {...other}
@@ -82,7 +51,11 @@ export const Treeview: KendoComponent<KendoTreeviewProps & KendoTreeviewState & 
             )}
         >
             <TreeviewGroup className="k-treeview-lines" dir={dir}>
-                {listChildren}
+                {React.Children.map(children, (child, index) =>
+                    React.isValidElement(child)
+                        ? React.cloneElement(child, { dir, key: index } as React.Attributes)
+                        : child
+                )}
             </TreeviewGroup>
         </div>
     );

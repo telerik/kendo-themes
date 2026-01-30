@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.2...v13.0.0-dev.3) (2026-01-30)
+
+
+### Bug Fixes
+
+* **html:** remove redundant themeColor and roundness from components ([c94dbd1](https://github.com/telerik/kendo-themes/commit/c94dbd10d73ebd1956e298f19e28710b8c72f54c))
+
+
+
+
+
 # [13.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.1...v13.0.0-dev.2) (2026-01-27)
 
 

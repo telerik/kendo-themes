@@ -1,6 +1,6 @@
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
 import { Button } from '../../button';
-import { List, ListGroup, ListItem } from '../../list';
+import { List, ListContent, ListGroupItem, ListItem, ListUl } from '../../list';
 
 
 const styles = `
@@ -43,16 +43,18 @@ export default () => (
                 >
                     <div className="k-list-container">
                         <List size="large">
-                            <ListItem text="List item" />
-                            <ListItem text="Hover" hover />
-                            <ListItem text="Focus" focus />
-                            <ListItem text="Selected" selected />
-                            <ListItem text="Hover selected" hover selected />
-                            <ListItem text="Disabled" disabled />
-                            <ListItem text="List item with very long text, that spans on multiple lines" />
-                            <ListItem text="Checkbox" showCheckbox />
-                            <ListItem text="Icon" iconName="gear" />
-                            <ListItem text="Checkbox icon" showCheckbox iconName="gear" />
+                            <ListContent>
+                                <ListItem text="List item" />
+                                <ListItem text="Hover" hover />
+                                <ListItem text="Focus" focus />
+                                <ListItem text="Selected" selected />
+                                <ListItem text="Hover selected" hover selected />
+                                <ListItem text="Disabled" disabled />
+                                <ListItem text="List item with very long text, that spans on multiple lines" />
+                                <ListItem text="Checkbox" showCheckbox />
+                                <ListItem text="Icon" iconName="gear" />
+                                <ListItem text="Checkbox icon" showCheckbox iconName="gear" />
+                            </ListContent>
                         </List>
                     </div>
                 </ActionSheet>
@@ -76,16 +78,18 @@ export default () => (
                 >
                     <div className="k-list-container">
                         <List size="large">
-                            <ListItem text="List item" />
-                            <ListItem text="Hover" hover />
-                            <ListItem text="Focus" focus />
-                            <ListItem text="Selected" selected />
-                            <ListItem text="Hover selected" hover selected />
-                            <ListItem text="Disabled" disabled />
-                            <ListItem text="List item with very long text, that spans on multiple lines" />
-                            <ListItem text="Checkbox" showCheckbox />
-                            <ListItem text="Icon" iconName="gear" />
-                            <ListItem text="Checkbox icon" showCheckbox iconName="gear" />
+                            <ListContent>
+                                <ListItem text="List item" />
+                                <ListItem text="Hover" hover />
+                                <ListItem text="Focus" focus />
+                                <ListItem text="Selected" selected />
+                                <ListItem text="Hover selected" hover selected />
+                                <ListItem text="Disabled" disabled />
+                                <ListItem text="List item with very long text, that spans on multiple lines" />
+                                <ListItem text="Checkbox" showCheckbox />
+                                <ListItem text="Icon" iconName="gear" />
+                                <ListItem text="Checkbox icon" showCheckbox iconName="gear" />
+                            </ListContent>
                         </List>
                     </div>
                 </ActionSheet>
@@ -108,22 +112,26 @@ export default () => (
                     }
                 >
                     <div className="k-list-container">
-                        <List size="large">
-                            <ListGroup label="Group 1" root>
-                                <ListItem text="List item 1.1" />
-                                <ListItem text="List item 1.2" />
-                                <ListItem text="List item 1.3" />
-                            </ListGroup>
-                            <ListGroup label="Group 2">
-                                <ListItem text="List item 2.1" />
-                                <ListItem text="List item 2.2" />
-                                <ListItem text="List item 2.3" />
-                            </ListGroup>
-                            <ListGroup label="Group 3">
-                                <ListItem text="List item 3.1" />
-                                <ListItem text="List item 3.2" />
-                                <ListItem text="List item 3.3" />
-                            </ListGroup>
+                        <List size="large" header="Group 1">
+                            <ListContent grouping>
+                                <ListUl>
+                                    <ListItem text="List item 1.1" />
+                                    <ListItem text="List item 1.2" />
+                                    <ListItem text="List item 1.3" />
+                                </ListUl>
+                                <ListUl>
+                                    <ListGroupItem>Group 2</ListGroupItem>
+                                    <ListItem text="List item 2.1" />
+                                    <ListItem text="List item 2.2" />
+                                    <ListItem text="List item 2.3" />
+                                </ListUl>
+                                <ListUl>
+                                    <ListGroupItem>Group 3</ListGroupItem>
+                                    <ListItem text="List item 3.1" />
+                                    <ListItem text="List item 3.2" />
+                                    <ListItem text="List item 3.3" />
+                                </ListUl>
+                            </ListContent>
                         </List>
                     </div>
                 </ActionSheet>
@@ -146,22 +154,26 @@ export default () => (
                     }
                 >
                     <div className="k-list-container">
-                        <List size="large">
-                            <ListGroup label="Group 1" root>
-                                <ListItem text="List item 1.1" />
-                                <ListItem text="List item 1.2" />
-                                <ListItem text="List item 1.3" />
-                            </ListGroup>
-                            <ListGroup label="Group 2">
-                                <ListItem text="List item 2.1" />
-                                <ListItem text="List item 2.2" />
-                                <ListItem text="List item 2.3" />
-                            </ListGroup>
-                            <ListGroup label="Group 3">
-                                <ListItem text="List item 3.1" />
-                                <ListItem text="List item 3.2" />
-                                <ListItem text="List item 3.3" />
-                            </ListGroup>
+                        <List size="large" header="Group 1">
+                            <ListContent grouping>
+                                <ListUl>
+                                    <ListItem text="List item 1.1" />
+                                    <ListItem text="List item 1.2" />
+                                    <ListItem text="List item 1.3" />
+                                </ListUl>
+                                <ListUl>
+                                    <ListGroupItem>Group 2</ListGroupItem>
+                                    <ListItem text="List item 2.1" />
+                                    <ListItem text="List item 2.2" />
+                                    <ListItem text="List item 2.3" />
+                                </ListUl>
+                                <ListUl>
+                                    <ListGroupItem>Group 3</ListGroupItem>
+                                    <ListItem text="List item 3.1" />
+                                    <ListItem text="List item 3.2" />
+                                    <ListItem text="List item 3.3" />
+                                </ListUl>
+                            </ListContent>
                         </List>
                     </div>
                 </ActionSheet>

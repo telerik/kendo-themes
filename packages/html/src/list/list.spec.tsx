@@ -1,10 +1,6 @@
 import React from 'react';
 import { classNames, optionClassNames, Size } from '../misc';
-import { ListItem } from './list-item.spec';
-import { ListGroup } from './list-group';
-import { ListGroupItem } from './list-group-item';
 import { ListHeader } from './list-header';
-import { ListContent } from './list-content';
 import { NoData } from '../nodata';
 
 import { KendoComponent } from '../_types/component';
@@ -23,9 +19,11 @@ export type KendoListOptions = {
 
 export type KendoListProps = KendoListOptions & {
     virtualization?: boolean;
-    children?: React.JSX.Element[];
-    optionLabel?: React.JSX.Element;
-    customValue?: React.JSX.Element;
+    children?: React.ReactNode;
+    header?: React.ReactNode;
+    optionLabel?: React.ReactNode;
+    customValue?: React.ReactNode;
+    noData?: React.ReactNode;
     screenReaders?: boolean;
     role?: string;
     listboxId?: string;
@@ -49,156 +47,19 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
         size,
         virtualization,
         children,
+        header,
         optionLabel,
         customValue,
+        noData,
         screenReaders,
-        role,
-        listboxId,
-        'aria-label': ariaLabel,
-        'aria-labelledby': ariaLabelledby,
-        'aria-multiselectable': ariaMultiselectable,
-        listboxAriaLive,
         ...other
     } = props;
 
-    let listHeader: string | undefined;
-    let listHeaderId: string | undefined;
-    let listGroup: string | number | boolean | React.JSX.Element | null | undefined;
-    let listContent: string | number | boolean | React.JSX.Element | null | undefined;
-    let listNoData: React.JSX.Element | undefined;
-    const groupElements: React.JSX.Element[] = [];
-    const listChildren: React.JSX.Element[] = [];
-    let hasGroups = false;
-
-    if (children) {
-        hasGroups = children.some(child => child.type === ListGroup);
-
-        if (hasGroups) {
-            // Handle grouped list
-            children.forEach((child, groupIndex) => {
-                const groupHeaderId = listboxId ? `${listboxId}-group-${groupIndex}` : undefined;
-                const hasGroupLabel = Boolean(child.props.label);
-                if (child.type === ListGroup) {
-                    const groupChildren: React.JSX.Element[] = [];
-                    if (child.props.root === true) {
-                        listHeader = child.props.label;
-                        listHeaderId = hasGroupLabel ? groupHeaderId : undefined;
-
-                        // Add group items directly (no group header item)
-                        if (child.props.children) {
-                            child.props.children.forEach((optChild, itemIndex) => {
-                                const listItemRole = role === 'listbox'
-                                    ? (optChild.props.role ?? 'option')
-                                    : optChild.props.role;
-
-                                groupChildren.push(
-                                    <ListItem
-                                        key={`root-group-item-${itemIndex}`}
-                                        {...optChild.props}
-                                        role={listItemRole}
-                                    />
-                                );
-                            });
-                        }
-                    } else {
-                        // Non-root group - add group header as first item
-                        if (child.props.label) {
-                            groupChildren.push(
-                                <ListGroupItem
-                                    key={`group-header-${groupIndex}`}
-                                    groupIconName={child.props.groupIconName}
-                                    id={groupHeaderId}
-                                    role="presentation"
-                                    className="k-list-header"
-                                >
-                                    {child.props.label}
-                                </ListGroupItem>
-                            );
-                        }
-
-                        // Add group items
-                        if (child.props.children) {
-                            child.props.children.forEach((optChild, itemIndex) => {
-                                const listItemRole = role === 'listbox'
-                                    ? (optChild.props.role ?? 'option')
-                                    : optChild.props.role;
-
-                                const listItem = (
-                                    <ListItem
-                                        key={`group-${groupIndex}-item-${itemIndex}`}
-                                        {...optChild.props}
-                                        role={listItemRole}
-                                    />
-                                );
-                                groupChildren.push(listItem);
-                                listChildren.push(listItem);
-                            });
-                        }
-                    }
-
-                    groupElements.push(
-                        <ul
-                            key={`ul-${groupIndex}`}
-                            className="k-list-ul"
-                            role="group"
-                            {...(hasGroupLabel && groupHeaderId && { 'aria-labelledby': groupHeaderId })}
-                        >
-                            {groupChildren}
-                        </ul>
-                    );
-                }
-            });
-
-            listGroup = (
-                <>
-                    {listHeader && <ListHeader role="presentation" id={listHeaderId}>{listHeader}</ListHeader>}
-                    <div
-                        className="k-list-content"
-                        {...(listboxId && { id: listboxId })}
-                        {...(role && { role })}
-                        {...(ariaLabel && { 'aria-label': ariaLabel })}
-                        {...(ariaLabelledby && { 'aria-labelledby': ariaLabelledby })}
-                        {...(ariaMultiselectable && { 'aria-multiselectable': ariaMultiselectable })}
-                    >
-                        {groupElements}
-                    </div>
-                </>
-            );
-            screenReaders && (listNoData = <NoData className="k-sr-only" aria-live="polite">{listChildren.length} items found.</NoData>);
-        } else {
-            // Handle non-grouped list - direct ListItem children
-            const listBoxChildren = role === 'listbox'
-                ? React.Children.map(children, (child) => {
-                    if (!React.isValidElement<React.ComponentProps<typeof ListItem>>(child)) {
-                        return child;
-                    }
-
-                    if (child.type === ListItem && !child.props.role) {
-                        return React.cloneElement(child, { role: 'option' });
-                    }
-
-                    return child;
-                })
-                : children;
-
-            listContent = (
-                <ListContent
-                    role={role !== 'listbox' ? role : undefined}
-                    ulRole={role === 'listbox' ? 'listbox' : undefined}
-                    ulId={role === 'listbox' ? listboxId : undefined}
-                    ulAriaLive={role === 'listbox' ? listboxAriaLive : undefined}
-                    aria-label={ariaLabel}
-                    aria-labelledby={ariaLabelledby}
-                    aria-multiselectable={ariaMultiselectable}
-                >
-                    {listBoxChildren}
-                </ListContent>
-            );
-            screenReaders && (listNoData = <NoData className="k-sr-only" aria-live="polite">{children.length} items found.</NoData>);
-        }
-    } else {
-        listContent = <NoData aria-live="polite">No data found.</NoData>;
-    }
+    const childArray = React.Children.toArray(children);
+    const firstChild = childArray[0] as React.ReactElement<{ children?: React.ReactNode }>;
+    const itemCount = firstChild?.props?.children
+        ? React.Children.count(firstChild.props.children)
+        : React.Children.count(children);
 
     return (
         <div
@@ -212,13 +73,12 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
                 {
                     ['k-virtual-list']: virtualization,
                 }
-            )}
-        >
+            )}>
             {optionLabel}
             {customValue}
-            {listGroup}
-            {listContent}
-            {listNoData}
+            {header && <ListHeader>{header}</ListHeader>}
+            {children ? children : (noData !== undefined ? noData : <NoData>No data found.</NoData>)}
+            {screenReaders && children && <NoData className="k-sr-only">{itemCount} items found.</NoData>}
         </div>
     );
 };
