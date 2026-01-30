@@ -30,6 +30,8 @@
 @forward "./floating-label/_index.scss";
 @forward "./textbox/_index.scss";
 @forward "./textarea/_index.scss";
+@forward "./segmented-control/_index.scss";
+@forward "./smart-box/_index.scss";
 @forward "./checkbox/_index.scss";
 @forward "./listbox/_index.scss";
 @forward "./progressbar/_index.scss";
@@ -106,6 +108,7 @@
 @forward "./gantt/_index.scss";
 @forward "./scheduler/_index.scss";
 @forward "./file-box/_index.scss";
+@forward "./prompt-box/_index.scss";
 @forward "./chat/_index.scss";
 @forward "./mediaplayer/_index.scss";
 @forward "./timeline/_index.scss";
@@ -114,8 +117,6 @@
 @forward "./scrollview/_index.scss";
 @forward "./speech-to-text-button/_index.scss";
 @forward "./prompt/_index.scss";
-@forward "./segmented-control/_index.scss";
-@forward "./prompt-box/_index.scss";
 @forward "./dataviz/_index.scss";
 @forward "./chart-wizard/_index.scss";
 @forward "./map/_index.scss";
@@ -124,7 +125,6 @@
 @forward "./otp/_index.scss";
 @forward "./column-menu/_index.scss";
 @forward "./marquee/_index.scss";
-@forward "./smart-box/_index.scss";
 
 
 // Use component modules
